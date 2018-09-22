@@ -31,38 +31,28 @@
 
     <name>${project.artifactId}</name>
 
-    <profiles>
-        <profile>
-            <id>generate-json-schemas</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <version>1.6.0</version>
-                        <configuration>
-                            <mainClass>shiver.me.timbers.cloudformation.Main</mainClass>
-                            <arguments>
-                                <argument>CloudFormationResourceSpecification.json</argument>
-                                <argument>${project.basedir}/src/main/resources/schemas</argument>
-                            </arguments>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <configuration>
+                    <mainClass>shiver.me.timbers.cloudformation.Main</mainClass>
+                    <arguments>
+                        <argument>CloudFormationResourceSpecification.json</argument>
+                        <argument>${project.basedir}/src/main/resources/schemas</argument>
+                    </arguments>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>

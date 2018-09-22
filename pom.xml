@@ -87,6 +87,7 @@
 
     <modules>
         <module>smt-cloudformation-json-schemas</module>
+        <module>smt-cloudformation-objects</module>
     </modules>
 
     <scm>
