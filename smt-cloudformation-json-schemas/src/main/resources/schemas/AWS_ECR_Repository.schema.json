@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECR_Repository.schema.json",
+  "title" : "Repository",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html",
+  "type" : "object",
+  "javaType" : "aws.ecr.Repository",
+  "properties" : {
+    "LifecyclePolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-lifecyclepolicy",
+      "$ref" : "AWS_ECR_Repository.LifecyclePolicy.schema.json"
+    },
+    "RepositoryName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname",
+      "type" : "string"
+    },
+    "RepositoryPolicyText" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext",
+      "type" : "object"
+    }
+  }
+}

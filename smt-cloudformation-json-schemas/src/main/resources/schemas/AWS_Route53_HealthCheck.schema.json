@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53_HealthCheck.schema.json",
+  "title" : "HealthCheck",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html",
+  "type" : "object",
+  "javaType" : "aws.route53.HealthCheck",
+  "properties" : {
+    "HealthCheckConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthcheckconfig",
+      "$ref" : "AWS_Route53_HealthCheck.HealthCheckConfig.schema.json"
+    },
+    "HealthCheckTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Route53_HealthCheck.HealthCheckTag.schema.json"
+      }
+    }
+  }
+}

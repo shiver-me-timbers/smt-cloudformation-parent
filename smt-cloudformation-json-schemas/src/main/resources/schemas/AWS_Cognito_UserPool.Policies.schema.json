@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPool.Policies.schema.json",
+  "title" : "Policies",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html",
+  "type" : "object",
+  "javaType" : "aws.cognito.Policies",
+  "properties" : {
+    "PasswordPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html#cfn-cognito-userpool-policies-passwordpolicy",
+      "$ref" : "AWS_Cognito_UserPool.PasswordPolicy.schema.json"
+    }
+  }
+}

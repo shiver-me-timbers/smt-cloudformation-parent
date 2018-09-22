@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_Association.InstanceAssociationOutputLocation.schema.json",
+  "title" : "InstanceAssociationOutputLocation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.InstanceAssociationOutputLocation",
+  "properties" : {
+    "S3Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html#cfn-ssm-association-instanceassociationoutputlocation-s3location",
+      "$ref" : "AWS_SSM_Association.S3OutputLocation.schema.json"
+    }
+  }
+}

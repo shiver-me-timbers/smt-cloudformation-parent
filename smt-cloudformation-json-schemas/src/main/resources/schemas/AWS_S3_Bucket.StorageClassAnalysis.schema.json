@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.StorageClassAnalysis.schema.json",
+  "title" : "StorageClassAnalysis",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html",
+  "type" : "object",
+  "javaType" : "aws.s3.StorageClassAnalysis",
+  "properties" : {
+    "DataExport" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html#cfn-s3-bucket-storageclassanalysis-dataexport",
+      "$ref" : "AWS_S3_Bucket.DataExport.schema.json"
+    }
+  }
+}

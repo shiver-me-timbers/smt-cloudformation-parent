@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_Table.GlobalSecondaryIndex.schema.json",
+  "title" : "GlobalSecondaryIndex",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html",
+  "type" : "object",
+  "javaType" : "aws.dynamodb.GlobalSecondaryIndex",
+  "properties" : {
+    "IndexName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname",
+      "type" : "string"
+    },
+    "KeySchema" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-keyschema",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_DynamoDB_Table.KeySchema.schema.json"
+      }
+    },
+    "Projection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-projection",
+      "$ref" : "AWS_DynamoDB_Table.Projection.schema.json"
+    },
+    "ProvisionedThroughput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-provisionedthroughput",
+      "$ref" : "AWS_DynamoDB_Table.ProvisionedThroughput.schema.json"
+    }
+  }
+}

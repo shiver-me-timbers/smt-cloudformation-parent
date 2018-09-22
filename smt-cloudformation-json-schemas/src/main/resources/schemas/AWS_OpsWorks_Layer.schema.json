@@ -1,0 +1,99 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_Layer.schema.json",
+  "title" : "Layer",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html",
+  "type" : "object",
+  "javaType" : "aws.opsworks.Layer",
+  "properties" : {
+    "Attributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "AutoAssignElasticIps" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips",
+      "type" : "boolean"
+    },
+    "AutoAssignPublicIps" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips",
+      "type" : "boolean"
+    },
+    "CustomInstanceProfileArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn",
+      "type" : "string"
+    },
+    "CustomJson" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson",
+      "type" : "object"
+    },
+    "CustomRecipes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customrecipes",
+      "$ref" : "AWS_OpsWorks_Layer.Recipes.schema.json"
+    },
+    "CustomSecurityGroupIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "EnableAutoHealing" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing",
+      "type" : "boolean"
+    },
+    "InstallUpdatesOnBoot" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot",
+      "type" : "boolean"
+    },
+    "LifecycleEventConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-lifecycleeventconfiguration",
+      "$ref" : "AWS_OpsWorks_Layer.LifecycleEventConfiguration.schema.json"
+    },
+    "LoadBasedAutoScaling" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-loadbasedautoscaling",
+      "$ref" : "AWS_OpsWorks_Layer.LoadBasedAutoScaling.schema.json"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name",
+      "type" : "string"
+    },
+    "Packages" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "Shortname" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname",
+      "type" : "string"
+    },
+    "StackId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid",
+      "type" : "string"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type",
+      "type" : "string"
+    },
+    "UseEbsOptimizedInstances" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances",
+      "type" : "boolean"
+    },
+    "VolumeConfigurations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_OpsWorks_Layer.VolumeConfiguration.schema.json"
+      }
+    }
+  }
+}

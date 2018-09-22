@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.AccelerateConfiguration.schema.json",
+  "title" : "AccelerateConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.s3.AccelerateConfiguration",
+  "properties" : {
+    "AccelerationStatus" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html#cfn-s3-bucket-accelerateconfiguration-accelerationstatus",
+      "type" : "string"
+    }
+  }
+}

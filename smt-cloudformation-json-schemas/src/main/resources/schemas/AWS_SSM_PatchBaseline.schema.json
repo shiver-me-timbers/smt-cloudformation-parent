@@ -1,0 +1,66 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_PatchBaseline.schema.json",
+  "title" : "PatchBaseline",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.PatchBaseline",
+  "properties" : {
+    "OperatingSystem" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem",
+      "type" : "string"
+    },
+    "ApprovedPatches" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatches",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "PatchGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-patchgroups",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description",
+      "type" : "string"
+    },
+    "ApprovedPatchesComplianceLevel" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchescompliancelevel",
+      "type" : "string"
+    },
+    "ApprovedPatchesEnableNonSecurity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity",
+      "type" : "boolean"
+    },
+    "ApprovalRules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvalrules",
+      "$ref" : "AWS_SSM_PatchBaseline.RuleGroup.schema.json"
+    },
+    "GlobalFilters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-globalfilters",
+      "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json"
+    },
+    "Sources" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SSM_PatchBaseline.PatchSource.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name",
+      "type" : "string"
+    },
+    "RejectedPatches" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-rejectedpatches",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_Rule.RunCommandParameters.schema.json",
+  "title" : "RunCommandParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html",
+  "type" : "object",
+  "javaType" : "aws.events.RunCommandParameters",
+  "properties" : {
+    "RunCommandTargets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_Events_Rule.RunCommandTarget.schema.json"
+      }
+    }
+  }
+}

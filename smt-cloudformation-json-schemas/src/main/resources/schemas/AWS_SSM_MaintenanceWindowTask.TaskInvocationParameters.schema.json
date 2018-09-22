@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_MaintenanceWindowTask.TaskInvocationParameters.schema.json",
+  "title" : "TaskInvocationParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.TaskInvocationParameters",
+  "properties" : {
+    "MaintenanceWindowRunCommandParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowruncommandparameters",
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowRunCommandParameters.schema.json"
+    },
+    "MaintenanceWindowAutomationParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowautomationparameters",
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowAutomationParameters.schema.json"
+    },
+    "MaintenanceWindowStepFunctionsParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowstepfunctionsparameters",
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters.schema.json"
+    },
+    "MaintenanceWindowLambdaParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowlambdaparameters",
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowLambdaParameters.schema.json"
+    }
+  }
+}

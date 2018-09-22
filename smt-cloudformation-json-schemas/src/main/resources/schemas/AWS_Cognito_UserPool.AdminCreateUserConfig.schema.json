@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPool.AdminCreateUserConfig.schema.json",
+  "title" : "AdminCreateUserConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html",
+  "type" : "object",
+  "javaType" : "aws.cognito.AdminCreateUserConfig",
+  "properties" : {
+    "InviteMessageTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-invitemessagetemplate",
+      "$ref" : "AWS_Cognito_UserPool.InviteMessageTemplate.schema.json"
+    },
+    "UnusedAccountValidityDays" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays",
+      "type" : "number"
+    },
+    "AllowAdminCreateUserOnly" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly",
+      "type" : "boolean"
+    }
+  }
+}

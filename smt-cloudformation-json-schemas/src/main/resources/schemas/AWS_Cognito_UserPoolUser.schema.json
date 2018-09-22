@@ -1,0 +1,47 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolUser.schema.json",
+  "title" : "UserPoolUser",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html",
+  "type" : "object",
+  "javaType" : "aws.cognito.UserPoolUser",
+  "properties" : {
+    "ValidationData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json"
+      }
+    },
+    "UserPoolId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userpoolid",
+      "type" : "string"
+    },
+    "Username" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-username",
+      "type" : "string"
+    },
+    "MessageAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction",
+      "type" : "string"
+    },
+    "DesiredDeliveryMediums" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "ForceAliasCreation" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-forcealiascreation",
+      "type" : "boolean"
+    },
+    "UserAttributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json"
+      }
+    }
+  }
+}

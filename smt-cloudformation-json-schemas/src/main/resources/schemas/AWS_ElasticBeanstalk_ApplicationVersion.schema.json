@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticBeanstalk_ApplicationVersion.schema.json",
+  "title" : "ApplicationVersion",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html",
+  "type" : "object",
+  "javaType" : "aws.elasticbeanstalk.ApplicationVersion",
+  "properties" : {
+    "ApplicationName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname",
+      "type" : "string"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description",
+      "type" : "string"
+    },
+    "SourceBundle" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-sourcebundle",
+      "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.SourceBundle.schema.json"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_Instance.NetworkInterface.schema.json",
+  "title" : "NetworkInterface",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.NetworkInterface",
+  "properties" : {
+    "AssociatePublicIpAddress" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip",
+      "type" : "boolean"
+    },
+    "DeleteOnTermination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete",
+      "type" : "boolean"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description",
+      "type" : "string"
+    },
+    "DeviceIndex" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex",
+      "type" : "string"
+    },
+    "GroupSet" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "Ipv6AddressCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount",
+      "type" : "integer"
+    },
+    "Ipv6Addresses" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json"
+      }
+    },
+    "NetworkInterfaceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface",
+      "type" : "string"
+    },
+    "PrivateIpAddress" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress",
+      "type" : "string"
+    },
+    "PrivateIpAddresses" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_SpotFleet.PrivateIpAddressSpecification.schema.json"
+      }
+    },
+    "SecondaryPrivateIpAddressCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip",
+      "type" : "integer"
+    },
+    "SubnetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid",
+      "type" : "string"
+    }
+  }
+}

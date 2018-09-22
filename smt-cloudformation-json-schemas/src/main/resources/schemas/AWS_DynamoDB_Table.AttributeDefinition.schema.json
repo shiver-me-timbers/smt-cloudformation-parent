@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_Table.AttributeDefinition.schema.json",
+  "title" : "AttributeDefinition",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html",
+  "type" : "object",
+  "javaType" : "aws.dynamodb.AttributeDefinition",
+  "properties" : {
+    "AttributeName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename",
+      "type" : "string"
+    },
+    "AttributeType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype",
+      "type" : "string"
+    }
+  }
+}

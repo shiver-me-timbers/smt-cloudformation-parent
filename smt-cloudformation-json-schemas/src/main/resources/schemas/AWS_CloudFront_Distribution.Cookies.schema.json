@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.Cookies.schema.json",
+  "title" : "Cookies",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html",
+  "type" : "object",
+  "javaType" : "aws.cloudfront.Cookies",
+  "properties" : {
+    "WhitelistedNames" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "Forward" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward",
+      "type" : "string"
+    }
+  }
+}

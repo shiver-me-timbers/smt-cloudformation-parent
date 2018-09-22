@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScaling_ScalingPolicy.TargetTrackingConfiguration.schema.json",
+  "title" : "TargetTrackingConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.autoscaling.TargetTrackingConfiguration",
+  "properties" : {
+    "CustomizedMetricSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-customizedmetricspecification",
+      "$ref" : "AWS_AutoScaling_ScalingPolicy.CustomizedMetricSpecification.schema.json"
+    },
+    "DisableScaleIn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein",
+      "type" : "boolean"
+    },
+    "PredefinedMetricSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-predefinedmetricspecification",
+      "$ref" : "AWS_AutoScaling_ScalingPolicy.PredefinedMetricSpecification.schema.json"
+    },
+    "TargetValue" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue",
+      "type" : "number"
+    }
+  }
+}

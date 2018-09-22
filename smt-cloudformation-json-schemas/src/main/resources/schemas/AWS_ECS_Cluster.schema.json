@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_Cluster.schema.json",
+  "title" : "Cluster",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html",
+  "type" : "object",
+  "javaType" : "aws.ecs.Cluster",
+  "properties" : {
+    "ClusterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername",
+      "type" : "string"
+    }
+  }
+}

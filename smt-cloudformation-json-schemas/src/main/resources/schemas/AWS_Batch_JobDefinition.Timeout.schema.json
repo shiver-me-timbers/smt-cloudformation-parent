@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Batch_JobDefinition.Timeout.schema.json",
+  "title" : "Timeout",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html",
+  "type" : "object",
+  "javaType" : "aws.batch.Timeout",
+  "properties" : {
+    "AttemptDurationSeconds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html#cfn-batch-jobdefinition-timeout-attemptdurationseconds",
+      "type" : "integer"
+    }
+  }
+}

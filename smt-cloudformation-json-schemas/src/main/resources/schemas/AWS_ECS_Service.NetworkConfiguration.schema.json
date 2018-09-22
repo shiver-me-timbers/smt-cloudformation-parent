@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_Service.NetworkConfiguration.schema.json",
+  "title" : "NetworkConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.ecs.NetworkConfiguration",
+  "properties" : {
+    "AwsvpcConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html#cfn-ecs-service-networkconfiguration-awsvpcconfiguration",
+      "$ref" : "AWS_ECS_Service.AwsVpcConfiguration.schema.json"
+    }
+  }
+}

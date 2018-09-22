@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceCatalog_AcceptedPortfolioShare.schema.json",
+  "title" : "AcceptedPortfolioShare",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html",
+  "type" : "object",
+  "javaType" : "aws.servicecatalog.AcceptedPortfolioShare",
+  "properties" : {
+    "AcceptLanguage" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage",
+      "type" : "string"
+    },
+    "PortfolioId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid",
+      "type" : "string"
+    }
+  }
+}

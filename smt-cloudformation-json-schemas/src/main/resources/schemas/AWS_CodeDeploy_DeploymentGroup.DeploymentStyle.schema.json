@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeDeploy_DeploymentGroup.DeploymentStyle.schema.json",
+  "title" : "DeploymentStyle",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html",
+  "type" : "object",
+  "javaType" : "aws.codedeploy.DeploymentStyle",
+  "properties" : {
+    "DeploymentOption" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption",
+      "type" : "string"
+    },
+    "DeploymentType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype",
+      "type" : "string"
+    }
+  }
+}

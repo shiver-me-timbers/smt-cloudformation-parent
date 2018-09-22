@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_Connection.schema.json",
+  "title" : "Connection",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html",
+  "type" : "object",
+  "javaType" : "aws.glue.Connection",
+  "properties" : {
+    "ConnectionInput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-connectioninput",
+      "$ref" : "AWS_Glue_Connection.ConnectionInput.schema.json"
+    },
+    "CatalogId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid",
+      "type" : "string"
+    }
+  }
+}

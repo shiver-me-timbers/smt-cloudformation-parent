@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SpotFleet.LaunchTemplateConfig.schema.json",
+  "title" : "LaunchTemplateConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.LaunchTemplateConfig",
+  "properties" : {
+    "LaunchTemplateSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-launchtemplatespecification",
+      "$ref" : "AWS_EC2_SpotFleet.FleetLaunchTemplateSpecification.schema.json"
+    },
+    "Overrides" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_EC2_SpotFleet.LaunchTemplateOverrides.schema.json"
+      }
+    }
+  }
+}

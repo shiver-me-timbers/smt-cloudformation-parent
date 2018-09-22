@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeDeploy_DeploymentGroup.LoadBalancerInfo.schema.json",
+  "title" : "LoadBalancerInfo",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html",
+  "type" : "object",
+  "javaType" : "aws.codedeploy.LoadBalancerInfo",
+  "properties" : {
+    "ElbInfoList" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_CodeDeploy_DeploymentGroup.ELBInfo.schema.json"
+      }
+    },
+    "TargetGroupInfoList" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_CodeDeploy_DeploymentGroup.TargetGroupInfo.schema.json"
+      }
+    }
+  }
+}

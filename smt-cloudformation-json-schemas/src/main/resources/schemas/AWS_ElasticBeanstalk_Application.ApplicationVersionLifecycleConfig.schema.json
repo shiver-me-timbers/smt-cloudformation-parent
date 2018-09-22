@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticBeanstalk_Application.ApplicationVersionLifecycleConfig.schema.json",
+  "title" : "ApplicationVersionLifecycleConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticbeanstalk.ApplicationVersionLifecycleConfig",
+  "properties" : {
+    "MaxAgeRule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html#cfn-elasticbeanstalk-application-applicationversionlifecycleconfig-maxagerule",
+      "$ref" : "AWS_ElasticBeanstalk_Application.MaxAgeRule.schema.json"
+    },
+    "MaxCountRule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html#cfn-elasticbeanstalk-application-applicationversionlifecycleconfig-maxcountrule",
+      "$ref" : "AWS_ElasticBeanstalk_Application.MaxCountRule.schema.json"
+    }
+  }
+}

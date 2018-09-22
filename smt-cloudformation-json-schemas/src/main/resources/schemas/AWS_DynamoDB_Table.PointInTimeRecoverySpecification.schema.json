@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_Table.PointInTimeRecoverySpecification.schema.json",
+  "title" : "PointInTimeRecoverySpecification",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html",
+  "type" : "object",
+  "javaType" : "aws.dynamodb.PointInTimeRecoverySpecification",
+  "properties" : {
+    "PointInTimeRecoveryEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled",
+      "type" : "boolean"
+    }
+  }
+}

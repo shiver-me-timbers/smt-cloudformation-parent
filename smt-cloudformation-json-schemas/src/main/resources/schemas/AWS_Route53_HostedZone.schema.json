@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53_HostedZone.schema.json",
+  "title" : "HostedZone",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html",
+  "type" : "object",
+  "javaType" : "aws.route53.HostedZone",
+  "properties" : {
+    "HostedZoneConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzoneconfig",
+      "$ref" : "AWS_Route53_HostedZone.HostedZoneConfig.schema.json"
+    },
+    "HostedZoneTags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzonetags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Route53_HostedZone.HostedZoneTag.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-name",
+      "type" : "string"
+    },
+    "QueryLoggingConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-queryloggingconfig",
+      "$ref" : "AWS_Route53_HostedZone.QueryLoggingConfig.schema.json"
+    },
+    "VPCs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-vpcs",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Route53_HostedZone.VPC.schema.json"
+      }
+    }
+  }
+}

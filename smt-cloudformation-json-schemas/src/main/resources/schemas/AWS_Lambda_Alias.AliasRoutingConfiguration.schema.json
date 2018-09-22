@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_Alias.AliasRoutingConfiguration.schema.json",
+  "title" : "AliasRoutingConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.lambda.AliasRoutingConfiguration",
+  "properties" : {
+    "AdditionalVersionWeights" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_Lambda_Alias.VersionWeight.schema.json"
+      }
+    }
+  }
+}

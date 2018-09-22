@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_Method.MethodResponse.schema.json",
+  "title" : "MethodResponse",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html",
+  "type" : "object",
+  "javaType" : "aws.apigateway.MethodResponse",
+  "properties" : {
+    "ResponseModels" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "ResponseParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, Boolean>"
+    },
+    "StatusCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode",
+      "type" : "string"
+    }
+  }
+}

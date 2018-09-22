@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_Layer.LifecycleEventConfiguration.schema.json",
+  "title" : "LifecycleEventConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.opsworks.LifecycleEventConfiguration",
+  "properties" : {
+    "ShutdownEventConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration",
+      "$ref" : "AWS_OpsWorks_Layer.ShutdownEventConfiguration.schema.json"
+    }
+  }
+}

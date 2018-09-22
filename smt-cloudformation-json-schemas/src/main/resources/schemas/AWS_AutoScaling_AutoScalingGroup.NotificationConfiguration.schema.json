@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScaling_AutoScalingGroup.NotificationConfiguration.schema.json",
+  "title" : "NotificationConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html",
+  "type" : "object",
+  "javaType" : "aws.autoscaling.NotificationConfiguration",
+  "properties" : {
+    "NotificationTypes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "TopicARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn",
+      "type" : "string"
+    }
+  }
+}

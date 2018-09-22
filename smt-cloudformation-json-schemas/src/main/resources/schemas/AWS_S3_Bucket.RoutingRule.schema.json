@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.RoutingRule.schema.json",
+  "title" : "RoutingRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html",
+  "type" : "object",
+  "javaType" : "aws.s3.RoutingRule",
+  "properties" : {
+    "RedirectRule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html#cfn-s3-websiteconfiguration-routingrules-redirectrule",
+      "$ref" : "AWS_S3_Bucket.RedirectRule.schema.json"
+    },
+    "RoutingRuleCondition" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition",
+      "$ref" : "AWS_S3_Bucket.RoutingRuleCondition.schema.json"
+    }
+  }
+}

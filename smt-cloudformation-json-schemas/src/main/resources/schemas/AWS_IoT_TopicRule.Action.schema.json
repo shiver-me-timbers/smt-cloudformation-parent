@@ -1,0 +1,58 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_TopicRule.Action.schema.json",
+  "title" : "Action",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html",
+  "type" : "object",
+  "javaType" : "aws.iot.Action",
+  "properties" : {
+    "CloudwatchAlarm" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-cloudwatchalarm",
+      "$ref" : "AWS_IoT_TopicRule.CloudwatchAlarmAction.schema.json"
+    },
+    "CloudwatchMetric" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-cloudwatchmetric",
+      "$ref" : "AWS_IoT_TopicRule.CloudwatchMetricAction.schema.json"
+    },
+    "DynamoDB" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-dynamodb",
+      "$ref" : "AWS_IoT_TopicRule.DynamoDBAction.schema.json"
+    },
+    "DynamoDBv2" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-dynamodbv2",
+      "$ref" : "AWS_IoT_TopicRule.DynamoDBv2Action.schema.json"
+    },
+    "Elasticsearch" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-elasticsearch",
+      "$ref" : "AWS_IoT_TopicRule.ElasticsearchAction.schema.json"
+    },
+    "Firehose" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-firehose",
+      "$ref" : "AWS_IoT_TopicRule.FirehoseAction.schema.json"
+    },
+    "Kinesis" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-kinesis",
+      "$ref" : "AWS_IoT_TopicRule.KinesisAction.schema.json"
+    },
+    "Lambda" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-lambda",
+      "$ref" : "AWS_IoT_TopicRule.LambdaAction.schema.json"
+    },
+    "Republish" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-republish",
+      "$ref" : "AWS_IoT_TopicRule.RepublishAction.schema.json"
+    },
+    "S3" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-s3",
+      "$ref" : "AWS_IoT_TopicRule.S3Action.schema.json"
+    },
+    "Sns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-sns",
+      "$ref" : "AWS_IoT_TopicRule.SnsAction.schema.json"
+    },
+    "Sqs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-sqs",
+      "$ref" : "AWS_IoT_TopicRule.SqsAction.schema.json"
+    }
+  }
+}

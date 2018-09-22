@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_Trigger.Predicate.schema.json",
+  "title" : "Predicate",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html",
+  "type" : "object",
+  "javaType" : "aws.glue.Predicate",
+  "properties" : {
+    "Logical" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-logical",
+      "type" : "string"
+    },
+    "Conditions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-conditions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Glue_Trigger.Condition.schema.json"
+      }
+    }
+  }
+}

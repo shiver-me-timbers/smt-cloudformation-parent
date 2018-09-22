@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_Topic.schema.json",
+  "title" : "Topic",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html",
+  "type" : "object",
+  "javaType" : "aws.sns.Topic",
+  "properties" : {
+    "DisplayName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname",
+      "type" : "string"
+    },
+    "Subscription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SNS_Topic.Subscription.schema.json"
+      }
+    },
+    "TopicName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname",
+      "type" : "string"
+    }
+  }
+}

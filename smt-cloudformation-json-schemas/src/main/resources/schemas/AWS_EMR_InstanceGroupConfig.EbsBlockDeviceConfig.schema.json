@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json",
+  "title" : "EbsBlockDeviceConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html",
+  "type" : "object",
+  "javaType" : "aws.emr.EbsBlockDeviceConfig",
+  "properties" : {
+    "VolumeSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification",
+      "$ref" : "AWS_EMR_InstanceFleetConfig.VolumeSpecification.schema.json"
+    },
+    "VolumesPerInstance" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumesperinstance",
+      "type" : "integer"
+    }
+  }
+}

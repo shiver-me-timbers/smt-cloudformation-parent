@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EMR_InstanceGroupConfig.EbsConfiguration.schema.json",
+  "title" : "EbsConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.emr.EbsConfiguration",
+  "properties" : {
+    "EbsBlockDeviceConfigs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfigs",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json"
+      }
+    },
+    "EbsOptimized" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsoptimized",
+      "type" : "boolean"
+    }
+  }
+}

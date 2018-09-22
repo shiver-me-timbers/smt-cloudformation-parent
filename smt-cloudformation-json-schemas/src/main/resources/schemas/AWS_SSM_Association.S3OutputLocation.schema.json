@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_Association.S3OutputLocation.schema.json",
+  "title" : "S3OutputLocation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html",
+  "type" : "object",
+  "javaType" : "aws.ssm.S3OutputLocation",
+  "properties" : {
+    "OutputS3BucketName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname",
+      "type" : "string"
+    },
+    "OutputS3KeyPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix",
+      "type" : "string"
+    }
+  }
+}

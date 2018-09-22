@@ -1,0 +1,70 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_Table.schema.json",
+  "title" : "Table",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html",
+  "type" : "object",
+  "javaType" : "aws.dynamodb.Table",
+  "properties" : {
+    "AttributeDefinitions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_DynamoDB_Table.AttributeDefinition.schema.json"
+      }
+    },
+    "GlobalSecondaryIndexes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_DynamoDB_Table.GlobalSecondaryIndex.schema.json"
+      }
+    },
+    "KeySchema" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-keyschema",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_DynamoDB_Table.KeySchema.schema.json"
+      }
+    },
+    "LocalSecondaryIndexes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-lsi",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_DynamoDB_Table.LocalSecondaryIndex.schema.json"
+      }
+    },
+    "PointInTimeRecoverySpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-pointintimerecoveryspecification",
+      "$ref" : "AWS_DynamoDB_Table.PointInTimeRecoverySpecification.schema.json"
+    },
+    "ProvisionedThroughput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-provisionedthroughput",
+      "$ref" : "AWS_DynamoDB_Table.ProvisionedThroughput.schema.json"
+    },
+    "SSESpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-ssespecification",
+      "$ref" : "AWS_DynamoDB_Table.SSESpecification.schema.json"
+    },
+    "StreamSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-streamspecification",
+      "$ref" : "AWS_DynamoDB_Table.StreamSpecification.schema.json"
+    },
+    "TableName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename",
+      "type" : "string"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    },
+    "TimeToLiveSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-timetolivespecification",
+      "$ref" : "AWS_DynamoDB_Table.TimeToLiveSpecification.schema.json"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_Instance.TimeBasedAutoScaling.schema.json",
+  "title" : "TimeBasedAutoScaling",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html",
+  "type" : "object",
+  "javaType" : "aws.opsworks.TimeBasedAutoScaling",
+  "properties" : {
+    "Friday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-friday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Monday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-monday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Saturday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-saturday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Sunday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-sunday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Thursday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-thursday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Tuesday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-tuesday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Wednesday" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-wednesday",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    }
+  }
+}

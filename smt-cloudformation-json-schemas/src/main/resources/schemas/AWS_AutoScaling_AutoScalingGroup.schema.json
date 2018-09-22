@@ -1,0 +1,123 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScaling_AutoScalingGroup.schema.json",
+  "title" : "AutoScalingGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html",
+  "type" : "object",
+  "javaType" : "aws.autoscaling.AutoScalingGroup",
+  "properties" : {
+    "AutoScalingGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-autoscalinggroupname",
+      "type" : "string"
+    },
+    "AvailabilityZones" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-availabilityzones",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "Cooldown" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown",
+      "type" : "string"
+    },
+    "DesiredCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-desiredcapacity",
+      "type" : "string"
+    },
+    "HealthCheckGracePeriod" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthcheckgraceperiod",
+      "type" : "integer"
+    },
+    "HealthCheckType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthchecktype",
+      "type" : "string"
+    },
+    "InstanceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-instanceid",
+      "type" : "string"
+    },
+    "LaunchConfigurationName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname",
+      "type" : "string"
+    },
+    "LaunchTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchtemplate",
+      "$ref" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplateSpecification.schema.json"
+    },
+    "LifecycleHookSpecificationList" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScaling_AutoScalingGroup.LifecycleHookSpecification.schema.json"
+      }
+    },
+    "LoadBalancerNames" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-loadbalancernames",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "MaxSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize",
+      "type" : "string"
+    },
+    "MetricsCollection" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-metricscollection",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScaling_AutoScalingGroup.MetricsCollection.schema.json"
+      }
+    },
+    "MinSize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize",
+      "type" : "string"
+    },
+    "NotificationConfigurations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScaling_AutoScalingGroup.NotificationConfiguration.schema.json"
+      }
+    },
+    "PlacementGroup" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-placementgroup",
+      "type" : "string"
+    },
+    "ServiceLinkedRoleARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-servicelinkedrolearn",
+      "type" : "string"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScaling_AutoScalingGroup.TagProperty.schema.json"
+      }
+    },
+    "TargetGroupARNs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-targetgrouparns",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "TerminationPolicies" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-termpolicy",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "VPCZoneIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-vpczoneidentifier",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

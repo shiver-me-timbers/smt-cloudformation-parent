@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_S3_Bucket.VersioningConfiguration.schema.json",
+  "title" : "VersioningConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html",
+  "type" : "object",
+  "javaType" : "aws.s3.VersioningConfiguration",
+  "properties" : {
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html#cfn-s3-bucket-versioningconfig-status",
+      "type" : "string"
+    }
+  }
+}

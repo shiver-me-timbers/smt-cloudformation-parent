@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_Table.StreamSpecification.schema.json",
+  "title" : "StreamSpecification",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html",
+  "type" : "object",
+  "javaType" : "aws.dynamodb.StreamSpecification",
+  "properties" : {
+    "StreamViewType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype",
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Boolean": "boolean",
+  "Integer": "integer",
+  "Double": "number",
+  "Long": "integer",
+  "String": "string",
+  "Json": "object",
+  "Timestamp": "string"
+}

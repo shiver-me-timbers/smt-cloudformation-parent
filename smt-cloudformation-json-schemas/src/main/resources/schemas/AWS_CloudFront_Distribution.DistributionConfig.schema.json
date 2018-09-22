@@ -1,0 +1,82 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_Distribution.DistributionConfig.schema.json",
+  "title" : "DistributionConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html",
+  "type" : "object",
+  "javaType" : "aws.cloudfront.DistributionConfig",
+  "properties" : {
+    "Logging" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-logging",
+      "$ref" : "AWS_CloudFront_StreamingDistribution.Logging.schema.json"
+    },
+    "Comment" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment",
+      "type" : "string"
+    },
+    "DefaultRootObject" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultrootobject",
+      "type" : "string"
+    },
+    "Origins" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudFront_Distribution.Origin.schema.json"
+      }
+    },
+    "ViewerCertificate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-viewercertificate",
+      "$ref" : "AWS_CloudFront_Distribution.ViewerCertificate.schema.json"
+    },
+    "PriceClass" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass",
+      "type" : "string"
+    },
+    "DefaultCacheBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultcachebehavior",
+      "$ref" : "AWS_CloudFront_Distribution.DefaultCacheBehavior.schema.json"
+    },
+    "CustomErrorResponses" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudFront_Distribution.CustomErrorResponse.schema.json"
+      }
+    },
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled",
+      "type" : "boolean"
+    },
+    "Aliases" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-aliases",
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "IPV6Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-ipv6enabled",
+      "type" : "boolean"
+    },
+    "WebACLId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-webaclid",
+      "type" : "string"
+    },
+    "HttpVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-httpversion",
+      "type" : "string"
+    },
+    "Restrictions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-restrictions",
+      "$ref" : "AWS_CloudFront_Distribution.Restrictions.schema.json"
+    },
+    "CacheBehaviors" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudFront_Distribution.CacheBehavior.schema.json"
+      }
+    }
+  }
+}

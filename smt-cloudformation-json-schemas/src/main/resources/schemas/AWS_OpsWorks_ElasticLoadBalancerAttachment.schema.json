@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_ElasticLoadBalancerAttachment.schema.json",
+  "title" : "ElasticLoadBalancerAttachment",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html",
+  "type" : "object",
+  "javaType" : "aws.opsworks.ElasticLoadBalancerAttachment",
+  "properties" : {
+    "ElasticLoadBalancerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname",
+      "type" : "string"
+    },
+    "LayerId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid",
+      "type" : "string"
+    }
+  }
+}

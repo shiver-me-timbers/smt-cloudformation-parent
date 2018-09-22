@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStream.EncryptionConfiguration.schema.json",
+  "title" : "EncryptionConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisfirehose.EncryptionConfiguration",
+  "properties" : {
+    "KMSEncryptionConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-kmsencryptionconfig",
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.KMSEncryptionConfig.schema.json"
+    },
+    "NoEncryptionConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig",
+      "type" : "string"
+    }
+  }
+}
