@@ -21,7 +21,7 @@
     <parent>
         <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
         <artifactId>smt-cloudformation-parent</artifactId>
-        <version>1.0</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>smt-cloudformation-objects</artifactId>
@@ -92,7 +92,7 @@
                 <dependency>
                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
                     <artifactId>smt-cloudformation-json-schemas</artifactId>
-                    <version>1.0</version>
+                    <version>1.1-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
             </dependencies>
