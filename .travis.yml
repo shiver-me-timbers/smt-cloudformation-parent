@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
   - openjdk8
 
-script: mvn clean test
+script: mvn clean package
 
 after_success:
   - mvn clean cobertura:cobertura coveralls:report -P coverage
