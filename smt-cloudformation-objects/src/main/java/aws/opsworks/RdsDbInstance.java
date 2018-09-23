@@ -30,28 +30,28 @@ public class RdsDbInstance {
      */
     @JsonProperty("DbPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword")
-    private String dbPassword;
+    private CharSequence dbPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser
      * 
      */
     @JsonProperty("DbUser")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser")
-    private String dbUser;
+    private CharSequence dbUser;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn
      * 
      */
     @JsonProperty("RdsDbInstanceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn")
-    private String rdsDbInstanceArn;
+    private CharSequence rdsDbInstanceArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword
      * 
      */
     @JsonProperty("DbPassword")
-    public String getDbPassword() {
+    public CharSequence getDbPassword() {
         return dbPassword;
     }
 
@@ -60,11 +60,11 @@ public class RdsDbInstance {
      * 
      */
     @JsonProperty("DbPassword")
-    public void setDbPassword(String dbPassword) {
+    public void setDbPassword(CharSequence dbPassword) {
         this.dbPassword = dbPassword;
     }
 
-    public RdsDbInstance withDbPassword(String dbPassword) {
+    public RdsDbInstance withDbPassword(CharSequence dbPassword) {
         this.dbPassword = dbPassword;
         return this;
     }
@@ -74,7 +74,7 @@ public class RdsDbInstance {
      * 
      */
     @JsonProperty("DbUser")
-    public String getDbUser() {
+    public CharSequence getDbUser() {
         return dbUser;
     }
 
@@ -83,11 +83,11 @@ public class RdsDbInstance {
      * 
      */
     @JsonProperty("DbUser")
-    public void setDbUser(String dbUser) {
+    public void setDbUser(CharSequence dbUser) {
         this.dbUser = dbUser;
     }
 
-    public RdsDbInstance withDbUser(String dbUser) {
+    public RdsDbInstance withDbUser(CharSequence dbUser) {
         this.dbUser = dbUser;
         return this;
     }
@@ -97,7 +97,7 @@ public class RdsDbInstance {
      * 
      */
     @JsonProperty("RdsDbInstanceArn")
-    public String getRdsDbInstanceArn() {
+    public CharSequence getRdsDbInstanceArn() {
         return rdsDbInstanceArn;
     }
 
@@ -106,11 +106,11 @@ public class RdsDbInstance {
      * 
      */
     @JsonProperty("RdsDbInstanceArn")
-    public void setRdsDbInstanceArn(String rdsDbInstanceArn) {
+    public void setRdsDbInstanceArn(CharSequence rdsDbInstanceArn) {
         this.rdsDbInstanceArn = rdsDbInstanceArn;
     }
 
-    public RdsDbInstance withRdsDbInstanceArn(String rdsDbInstanceArn) {
+    public RdsDbInstance withRdsDbInstanceArn(CharSequence rdsDbInstanceArn) {
         this.rdsDbInstanceArn = rdsDbInstanceArn;
         return this;
     }

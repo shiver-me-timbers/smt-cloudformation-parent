@@ -35,7 +35,7 @@ public class AssessmentTemplate {
      */
     @JsonProperty("AssessmentTargetArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn")
-    private String assessmentTargetArn;
+    private CharSequence assessmentTargetArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
      * 
@@ -49,14 +49,14 @@ public class AssessmentTemplate {
      */
     @JsonProperty("AssessmentTemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename")
-    private String assessmentTemplateName;
+    private CharSequence assessmentTemplateName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
      * 
      */
     @JsonProperty("RulesPackageArns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns")
-    private List<String> rulesPackageArns = new ArrayList<String>();
+    private List<CharSequence> rulesPackageArns = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings
      * 
@@ -70,7 +70,7 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("AssessmentTargetArn")
-    public String getAssessmentTargetArn() {
+    public CharSequence getAssessmentTargetArn() {
         return assessmentTargetArn;
     }
 
@@ -79,11 +79,11 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("AssessmentTargetArn")
-    public void setAssessmentTargetArn(String assessmentTargetArn) {
+    public void setAssessmentTargetArn(CharSequence assessmentTargetArn) {
         this.assessmentTargetArn = assessmentTargetArn;
     }
 
-    public AssessmentTemplate withAssessmentTargetArn(String assessmentTargetArn) {
+    public AssessmentTemplate withAssessmentTargetArn(CharSequence assessmentTargetArn) {
         this.assessmentTargetArn = assessmentTargetArn;
         return this;
     }
@@ -116,7 +116,7 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("AssessmentTemplateName")
-    public String getAssessmentTemplateName() {
+    public CharSequence getAssessmentTemplateName() {
         return assessmentTemplateName;
     }
 
@@ -125,11 +125,11 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("AssessmentTemplateName")
-    public void setAssessmentTemplateName(String assessmentTemplateName) {
+    public void setAssessmentTemplateName(CharSequence assessmentTemplateName) {
         this.assessmentTemplateName = assessmentTemplateName;
     }
 
-    public AssessmentTemplate withAssessmentTemplateName(String assessmentTemplateName) {
+    public AssessmentTemplate withAssessmentTemplateName(CharSequence assessmentTemplateName) {
         this.assessmentTemplateName = assessmentTemplateName;
         return this;
     }
@@ -139,7 +139,7 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("RulesPackageArns")
-    public List<String> getRulesPackageArns() {
+    public List<CharSequence> getRulesPackageArns() {
         return rulesPackageArns;
     }
 
@@ -148,11 +148,11 @@ public class AssessmentTemplate {
      * 
      */
     @JsonProperty("RulesPackageArns")
-    public void setRulesPackageArns(List<String> rulesPackageArns) {
+    public void setRulesPackageArns(List<CharSequence> rulesPackageArns) {
         this.rulesPackageArns = rulesPackageArns;
     }
 
-    public AssessmentTemplate withRulesPackageArns(List<String> rulesPackageArns) {
+    public AssessmentTemplate withRulesPackageArns(List<CharSequence> rulesPackageArns) {
         this.rulesPackageArns = rulesPackageArns;
         return this;
     }

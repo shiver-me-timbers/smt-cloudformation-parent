@@ -33,49 +33,49 @@ public class CloudwatchMetricAction {
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace
      * 
      */
     @JsonProperty("MetricNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace")
-    private String metricNamespace;
+    private CharSequence metricNamespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp
      * 
      */
     @JsonProperty("MetricTimestamp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp")
-    private String metricTimestamp;
+    private CharSequence metricTimestamp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricunit
      * 
      */
     @JsonProperty("MetricUnit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricunit")
-    private String metricUnit;
+    private CharSequence metricUnit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue
      * 
      */
     @JsonProperty("MetricValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue")
-    private String metricValue;
+    private CharSequence metricValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -84,11 +84,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public CloudwatchMetricAction withMetricName(String metricName) {
+    public CloudwatchMetricAction withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -98,7 +98,7 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricNamespace")
-    public String getMetricNamespace() {
+    public CharSequence getMetricNamespace() {
         return metricNamespace;
     }
 
@@ -107,11 +107,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricNamespace")
-    public void setMetricNamespace(String metricNamespace) {
+    public void setMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
     }
 
-    public CloudwatchMetricAction withMetricNamespace(String metricNamespace) {
+    public CloudwatchMetricAction withMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
         return this;
     }
@@ -121,7 +121,7 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricTimestamp")
-    public String getMetricTimestamp() {
+    public CharSequence getMetricTimestamp() {
         return metricTimestamp;
     }
 
@@ -130,11 +130,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricTimestamp")
-    public void setMetricTimestamp(String metricTimestamp) {
+    public void setMetricTimestamp(CharSequence metricTimestamp) {
         this.metricTimestamp = metricTimestamp;
     }
 
-    public CloudwatchMetricAction withMetricTimestamp(String metricTimestamp) {
+    public CloudwatchMetricAction withMetricTimestamp(CharSequence metricTimestamp) {
         this.metricTimestamp = metricTimestamp;
         return this;
     }
@@ -144,7 +144,7 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricUnit")
-    public String getMetricUnit() {
+    public CharSequence getMetricUnit() {
         return metricUnit;
     }
 
@@ -153,11 +153,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricUnit")
-    public void setMetricUnit(String metricUnit) {
+    public void setMetricUnit(CharSequence metricUnit) {
         this.metricUnit = metricUnit;
     }
 
-    public CloudwatchMetricAction withMetricUnit(String metricUnit) {
+    public CloudwatchMetricAction withMetricUnit(CharSequence metricUnit) {
         this.metricUnit = metricUnit;
         return this;
     }
@@ -167,7 +167,7 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricValue")
-    public String getMetricValue() {
+    public CharSequence getMetricValue() {
         return metricValue;
     }
 
@@ -176,11 +176,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("MetricValue")
-    public void setMetricValue(String metricValue) {
+    public void setMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
     }
 
-    public CloudwatchMetricAction withMetricValue(String metricValue) {
+    public CloudwatchMetricAction withMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
         return this;
     }
@@ -190,7 +190,7 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -199,11 +199,11 @@ public class CloudwatchMetricAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public CloudwatchMetricAction withRoleArn(String roleArn) {
+    public CloudwatchMetricAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

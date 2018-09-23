@@ -29,21 +29,21 @@ public class ElasticsearchConfig {
      */
     @JsonProperty("AwsRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion")
-    private String awsRegion;
+    private CharSequence awsRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint
      * 
      */
     @JsonProperty("Endpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint")
-    private String endpoint;
+    private CharSequence endpoint;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion
      * 
      */
     @JsonProperty("AwsRegion")
-    public String getAwsRegion() {
+    public CharSequence getAwsRegion() {
         return awsRegion;
     }
 
@@ -52,11 +52,11 @@ public class ElasticsearchConfig {
      * 
      */
     @JsonProperty("AwsRegion")
-    public void setAwsRegion(String awsRegion) {
+    public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
 
-    public ElasticsearchConfig withAwsRegion(String awsRegion) {
+    public ElasticsearchConfig withAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
         return this;
     }
@@ -66,7 +66,7 @@ public class ElasticsearchConfig {
      * 
      */
     @JsonProperty("Endpoint")
-    public String getEndpoint() {
+    public CharSequence getEndpoint() {
         return endpoint;
     }
 
@@ -75,11 +75,11 @@ public class ElasticsearchConfig {
      * 
      */
     @JsonProperty("Endpoint")
-    public void setEndpoint(String endpoint) {
+    public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }
 
-    public ElasticsearchConfig withEndpoint(String endpoint) {
+    public ElasticsearchConfig withEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
         return this;
     }

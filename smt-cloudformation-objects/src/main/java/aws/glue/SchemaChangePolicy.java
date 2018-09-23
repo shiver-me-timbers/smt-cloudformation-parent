@@ -29,21 +29,21 @@ public class SchemaChangePolicy {
      */
     @JsonProperty("UpdateBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior")
-    private String updateBehavior;
+    private CharSequence updateBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
      * 
      */
     @JsonProperty("DeleteBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior")
-    private String deleteBehavior;
+    private CharSequence deleteBehavior;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
      * 
      */
     @JsonProperty("UpdateBehavior")
-    public String getUpdateBehavior() {
+    public CharSequence getUpdateBehavior() {
         return updateBehavior;
     }
 
@@ -52,11 +52,11 @@ public class SchemaChangePolicy {
      * 
      */
     @JsonProperty("UpdateBehavior")
-    public void setUpdateBehavior(String updateBehavior) {
+    public void setUpdateBehavior(CharSequence updateBehavior) {
         this.updateBehavior = updateBehavior;
     }
 
-    public SchemaChangePolicy withUpdateBehavior(String updateBehavior) {
+    public SchemaChangePolicy withUpdateBehavior(CharSequence updateBehavior) {
         this.updateBehavior = updateBehavior;
         return this;
     }
@@ -66,7 +66,7 @@ public class SchemaChangePolicy {
      * 
      */
     @JsonProperty("DeleteBehavior")
-    public String getDeleteBehavior() {
+    public CharSequence getDeleteBehavior() {
         return deleteBehavior;
     }
 
@@ -75,11 +75,11 @@ public class SchemaChangePolicy {
      * 
      */
     @JsonProperty("DeleteBehavior")
-    public void setDeleteBehavior(String deleteBehavior) {
+    public void setDeleteBehavior(CharSequence deleteBehavior) {
         this.deleteBehavior = deleteBehavior;
     }
 
-    public SchemaChangePolicy withDeleteBehavior(String deleteBehavior) {
+    public SchemaChangePolicy withDeleteBehavior(CharSequence deleteBehavior) {
         this.deleteBehavior = deleteBehavior;
         return this;
     }

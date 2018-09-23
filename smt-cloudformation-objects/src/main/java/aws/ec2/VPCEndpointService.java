@@ -31,7 +31,7 @@ public class VPCEndpointService {
      */
     @JsonProperty("NetworkLoadBalancerArns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-networkloadbalancerarns")
-    private List<String> networkLoadBalancerArns = new ArrayList<String>();
+    private List<CharSequence> networkLoadBalancerArns = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-acceptancerequired
      * 
@@ -45,7 +45,7 @@ public class VPCEndpointService {
      * 
      */
     @JsonProperty("NetworkLoadBalancerArns")
-    public List<String> getNetworkLoadBalancerArns() {
+    public List<CharSequence> getNetworkLoadBalancerArns() {
         return networkLoadBalancerArns;
     }
 
@@ -54,11 +54,11 @@ public class VPCEndpointService {
      * 
      */
     @JsonProperty("NetworkLoadBalancerArns")
-    public void setNetworkLoadBalancerArns(List<String> networkLoadBalancerArns) {
+    public void setNetworkLoadBalancerArns(List<CharSequence> networkLoadBalancerArns) {
         this.networkLoadBalancerArns = networkLoadBalancerArns;
     }
 
-    public VPCEndpointService withNetworkLoadBalancerArns(List<String> networkLoadBalancerArns) {
+    public VPCEndpointService withNetworkLoadBalancerArns(List<CharSequence> networkLoadBalancerArns) {
         this.networkLoadBalancerArns = networkLoadBalancerArns;
         return this;
     }

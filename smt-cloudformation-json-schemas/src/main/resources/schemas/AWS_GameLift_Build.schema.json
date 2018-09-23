@@ -8,7 +8,8 @@
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-name",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "StorageLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-storagelocation",
@@ -16,7 +17,8 @@
     },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-version",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

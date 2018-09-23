@@ -37,7 +37,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("BucketARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-bucketarn")
-    private String bucketARN;
+    private CharSequence bucketARN;
     /**
      * ElasticsearchBufferingHints
      * <p>
@@ -62,7 +62,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("CompressionFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-compressionformat")
-    private String compressionFormat;
+    private CharSequence compressionFormat;
     /**
      * EncryptionConfiguration
      * <p>
@@ -78,7 +78,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix")
-    private String prefix;
+    private CharSequence prefix;
     /**
      * ProcessingConfiguration
      * <p>
@@ -94,7 +94,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
     /**
      * S3DestinationConfiguration
      * <p>
@@ -110,14 +110,14 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("S3BackupMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-s3backupmode")
-    private String s3BackupMode;
+    private CharSequence s3BackupMode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-bucketarn
      * 
      */
     @JsonProperty("BucketARN")
-    public String getBucketARN() {
+    public CharSequence getBucketARN() {
         return bucketARN;
     }
 
@@ -126,11 +126,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("BucketARN")
-    public void setBucketARN(String bucketARN) {
+    public void setBucketARN(CharSequence bucketARN) {
         this.bucketARN = bucketARN;
     }
 
-    public ExtendedS3DestinationConfiguration withBucketARN(String bucketARN) {
+    public ExtendedS3DestinationConfiguration withBucketARN(CharSequence bucketARN) {
         this.bucketARN = bucketARN;
         return this;
     }
@@ -194,7 +194,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("CompressionFormat")
-    public String getCompressionFormat() {
+    public CharSequence getCompressionFormat() {
         return compressionFormat;
     }
 
@@ -203,11 +203,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("CompressionFormat")
-    public void setCompressionFormat(String compressionFormat) {
+    public void setCompressionFormat(CharSequence compressionFormat) {
         this.compressionFormat = compressionFormat;
     }
 
-    public ExtendedS3DestinationConfiguration withCompressionFormat(String compressionFormat) {
+    public ExtendedS3DestinationConfiguration withCompressionFormat(CharSequence compressionFormat) {
         this.compressionFormat = compressionFormat;
         return this;
     }
@@ -244,7 +244,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -253,11 +253,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public ExtendedS3DestinationConfiguration withPrefix(String prefix) {
+    public ExtendedS3DestinationConfiguration withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -294,7 +294,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -303,11 +303,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public ExtendedS3DestinationConfiguration withRoleARN(String roleARN) {
+    public ExtendedS3DestinationConfiguration withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }
@@ -344,7 +344,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public String getS3BackupMode() {
+    public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
 
@@ -353,11 +353,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public void setS3BackupMode(String s3BackupMode) {
+    public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }
 
-    public ExtendedS3DestinationConfiguration withS3BackupMode(String s3BackupMode) {
+    public ExtendedS3DestinationConfiguration withS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
         return this;
     }

@@ -8,11 +8,13 @@
   "properties" : {
     "DestinationCidrBlock" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "VpnConnectionId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

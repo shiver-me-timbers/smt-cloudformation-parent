@@ -40,49 +40,49 @@ public class CloudFormationProduct {
      */
     @JsonProperty("Owner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner")
-    private String owner;
+    private CharSequence owner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportdescription
      * 
      */
     @JsonProperty("SupportDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportdescription")
-    private String supportDescription;
+    private CharSequence supportDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-distributor
      * 
      */
     @JsonProperty("Distributor")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-distributor")
-    private String distributor;
+    private CharSequence distributor;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportemail
      * 
      */
     @JsonProperty("SupportEmail")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportemail")
-    private String supportEmail;
+    private CharSequence supportEmail;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supporturl
      * 
      */
     @JsonProperty("SupportUrl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supporturl")
-    private String supportUrl;
+    private CharSequence supportUrl;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-tags
      * 
@@ -96,7 +96,7 @@ public class CloudFormationProduct {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters
      * 
@@ -110,7 +110,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Owner")
-    public String getOwner() {
+    public CharSequence getOwner() {
         return owner;
     }
 
@@ -119,11 +119,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Owner")
-    public void setOwner(String owner) {
+    public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
 
-    public CloudFormationProduct withOwner(String owner) {
+    public CloudFormationProduct withOwner(CharSequence owner) {
         this.owner = owner;
         return this;
     }
@@ -133,7 +133,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportDescription")
-    public String getSupportDescription() {
+    public CharSequence getSupportDescription() {
         return supportDescription;
     }
 
@@ -142,11 +142,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportDescription")
-    public void setSupportDescription(String supportDescription) {
+    public void setSupportDescription(CharSequence supportDescription) {
         this.supportDescription = supportDescription;
     }
 
-    public CloudFormationProduct withSupportDescription(String supportDescription) {
+    public CloudFormationProduct withSupportDescription(CharSequence supportDescription) {
         this.supportDescription = supportDescription;
         return this;
     }
@@ -156,7 +156,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -165,11 +165,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public CloudFormationProduct withDescription(String description) {
+    public CloudFormationProduct withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -179,7 +179,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Distributor")
-    public String getDistributor() {
+    public CharSequence getDistributor() {
         return distributor;
     }
 
@@ -188,11 +188,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Distributor")
-    public void setDistributor(String distributor) {
+    public void setDistributor(CharSequence distributor) {
         this.distributor = distributor;
     }
 
-    public CloudFormationProduct withDistributor(String distributor) {
+    public CloudFormationProduct withDistributor(CharSequence distributor) {
         this.distributor = distributor;
         return this;
     }
@@ -202,7 +202,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportEmail")
-    public String getSupportEmail() {
+    public CharSequence getSupportEmail() {
         return supportEmail;
     }
 
@@ -211,11 +211,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportEmail")
-    public void setSupportEmail(String supportEmail) {
+    public void setSupportEmail(CharSequence supportEmail) {
         this.supportEmail = supportEmail;
     }
 
-    public CloudFormationProduct withSupportEmail(String supportEmail) {
+    public CloudFormationProduct withSupportEmail(CharSequence supportEmail) {
         this.supportEmail = supportEmail;
         return this;
     }
@@ -225,7 +225,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -234,11 +234,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public CloudFormationProduct withAcceptLanguage(String acceptLanguage) {
+    public CloudFormationProduct withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -248,7 +248,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportUrl")
-    public String getSupportUrl() {
+    public CharSequence getSupportUrl() {
         return supportUrl;
     }
 
@@ -257,11 +257,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("SupportUrl")
-    public void setSupportUrl(String supportUrl) {
+    public void setSupportUrl(CharSequence supportUrl) {
         this.supportUrl = supportUrl;
     }
 
-    public CloudFormationProduct withSupportUrl(String supportUrl) {
+    public CloudFormationProduct withSupportUrl(CharSequence supportUrl) {
         this.supportUrl = supportUrl;
         return this;
     }
@@ -294,7 +294,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -303,11 +303,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public CloudFormationProduct withName(String name) {
+    public CloudFormationProduct withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -16,7 +16,8 @@
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "Quota" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-quota",
@@ -28,7 +29,8 @@
     },
     "UsagePlanName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

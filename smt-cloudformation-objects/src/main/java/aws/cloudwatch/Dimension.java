@@ -29,21 +29,21 @@ public class Dimension {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html#cfn-cloudwatch-alarm-dimension-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html#cfn-cloudwatch-alarm-dimension-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html#cfn-cloudwatch-alarm-dimension-value")
-    private String value;
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html#cfn-cloudwatch-alarm-dimension-name
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -52,11 +52,11 @@ public class Dimension {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Dimension withName(String name) {
+    public Dimension withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -66,7 +66,7 @@ public class Dimension {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -75,11 +75,11 @@ public class Dimension {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public Dimension withValue(String value) {
+    public Dimension withValue(CharSequence value) {
         this.value = value;
         return this;
     }

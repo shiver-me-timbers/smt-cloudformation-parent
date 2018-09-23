@@ -30,28 +30,28 @@ public class Certificate {
      */
     @JsonProperty("CertificateIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier")
-    private String certificateIdentifier;
+    private CharSequence certificateIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem
      * 
      */
     @JsonProperty("CertificatePem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem")
-    private String certificatePem;
+    private CharSequence certificatePem;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet
      * 
      */
     @JsonProperty("CertificateWallet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet")
-    private String certificateWallet;
+    private CharSequence certificateWallet;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier
      * 
      */
     @JsonProperty("CertificateIdentifier")
-    public String getCertificateIdentifier() {
+    public CharSequence getCertificateIdentifier() {
         return certificateIdentifier;
     }
 
@@ -60,11 +60,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificateIdentifier")
-    public void setCertificateIdentifier(String certificateIdentifier) {
+    public void setCertificateIdentifier(CharSequence certificateIdentifier) {
         this.certificateIdentifier = certificateIdentifier;
     }
 
-    public Certificate withCertificateIdentifier(String certificateIdentifier) {
+    public Certificate withCertificateIdentifier(CharSequence certificateIdentifier) {
         this.certificateIdentifier = certificateIdentifier;
         return this;
     }
@@ -74,7 +74,7 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificatePem")
-    public String getCertificatePem() {
+    public CharSequence getCertificatePem() {
         return certificatePem;
     }
 
@@ -83,11 +83,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificatePem")
-    public void setCertificatePem(String certificatePem) {
+    public void setCertificatePem(CharSequence certificatePem) {
         this.certificatePem = certificatePem;
     }
 
-    public Certificate withCertificatePem(String certificatePem) {
+    public Certificate withCertificatePem(CharSequence certificatePem) {
         this.certificatePem = certificatePem;
         return this;
     }
@@ -97,7 +97,7 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificateWallet")
-    public String getCertificateWallet() {
+    public CharSequence getCertificateWallet() {
         return certificateWallet;
     }
 
@@ -106,11 +106,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificateWallet")
-    public void setCertificateWallet(String certificateWallet) {
+    public void setCertificateWallet(CharSequence certificateWallet) {
         this.certificateWallet = certificateWallet;
     }
 
-    public Certificate withCertificateWallet(String certificateWallet) {
+    public Certificate withCertificateWallet(CharSequence certificateWallet) {
         this.certificateWallet = certificateWallet;
         return this;
     }

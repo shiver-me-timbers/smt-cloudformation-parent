@@ -43,35 +43,35 @@ public class Integration {
     @JsonProperty("CacheKeyParameters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters")
-    private Set<java.lang.String> cacheKeyParameters = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> cacheKeyParameters = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachenamespace
      * 
      */
     @JsonProperty("CacheNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachenamespace")
-    private java.lang.String cacheNamespace;
+    private CharSequence cacheNamespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling
      * 
      */
     @JsonProperty("ContentHandling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling")
-    private java.lang.String contentHandling;
+    private CharSequence contentHandling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-credentials
      * 
      */
     @JsonProperty("Credentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-credentials")
-    private java.lang.String credentials;
+    private CharSequence credentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationhttpmethod
      * 
      */
     @JsonProperty("IntegrationHttpMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationhttpmethod")
-    private java.lang.String integrationHttpMethod;
+    private CharSequence integrationHttpMethod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationresponses
      * 
@@ -86,7 +86,7 @@ public class Integration {
      */
     @JsonProperty("PassthroughBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-passthroughbehavior")
-    private java.lang.String passthroughBehavior;
+    private CharSequence passthroughBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requestparameters
      * 
@@ -107,21 +107,21 @@ public class Integration {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type")
-    private java.lang.String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-uri
      * 
      */
     @JsonProperty("Uri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-uri")
-    private java.lang.String uri;
+    private CharSequence uri;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters
      * 
      */
     @JsonProperty("CacheKeyParameters")
-    public Set<java.lang.String> getCacheKeyParameters() {
+    public Set<CharSequence> getCacheKeyParameters() {
         return cacheKeyParameters;
     }
 
@@ -130,11 +130,11 @@ public class Integration {
      * 
      */
     @JsonProperty("CacheKeyParameters")
-    public void setCacheKeyParameters(Set<java.lang.String> cacheKeyParameters) {
+    public void setCacheKeyParameters(Set<CharSequence> cacheKeyParameters) {
         this.cacheKeyParameters = cacheKeyParameters;
     }
 
-    public Integration withCacheKeyParameters(Set<java.lang.String> cacheKeyParameters) {
+    public Integration withCacheKeyParameters(Set<CharSequence> cacheKeyParameters) {
         this.cacheKeyParameters = cacheKeyParameters;
         return this;
     }
@@ -144,7 +144,7 @@ public class Integration {
      * 
      */
     @JsonProperty("CacheNamespace")
-    public java.lang.String getCacheNamespace() {
+    public CharSequence getCacheNamespace() {
         return cacheNamespace;
     }
 
@@ -153,11 +153,11 @@ public class Integration {
      * 
      */
     @JsonProperty("CacheNamespace")
-    public void setCacheNamespace(java.lang.String cacheNamespace) {
+    public void setCacheNamespace(CharSequence cacheNamespace) {
         this.cacheNamespace = cacheNamespace;
     }
 
-    public Integration withCacheNamespace(java.lang.String cacheNamespace) {
+    public Integration withCacheNamespace(CharSequence cacheNamespace) {
         this.cacheNamespace = cacheNamespace;
         return this;
     }
@@ -167,7 +167,7 @@ public class Integration {
      * 
      */
     @JsonProperty("ContentHandling")
-    public java.lang.String getContentHandling() {
+    public CharSequence getContentHandling() {
         return contentHandling;
     }
 
@@ -176,11 +176,11 @@ public class Integration {
      * 
      */
     @JsonProperty("ContentHandling")
-    public void setContentHandling(java.lang.String contentHandling) {
+    public void setContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
     }
 
-    public Integration withContentHandling(java.lang.String contentHandling) {
+    public Integration withContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
         return this;
     }
@@ -190,7 +190,7 @@ public class Integration {
      * 
      */
     @JsonProperty("Credentials")
-    public java.lang.String getCredentials() {
+    public CharSequence getCredentials() {
         return credentials;
     }
 
@@ -199,11 +199,11 @@ public class Integration {
      * 
      */
     @JsonProperty("Credentials")
-    public void setCredentials(java.lang.String credentials) {
+    public void setCredentials(CharSequence credentials) {
         this.credentials = credentials;
     }
 
-    public Integration withCredentials(java.lang.String credentials) {
+    public Integration withCredentials(CharSequence credentials) {
         this.credentials = credentials;
         return this;
     }
@@ -213,7 +213,7 @@ public class Integration {
      * 
      */
     @JsonProperty("IntegrationHttpMethod")
-    public java.lang.String getIntegrationHttpMethod() {
+    public CharSequence getIntegrationHttpMethod() {
         return integrationHttpMethod;
     }
 
@@ -222,11 +222,11 @@ public class Integration {
      * 
      */
     @JsonProperty("IntegrationHttpMethod")
-    public void setIntegrationHttpMethod(java.lang.String integrationHttpMethod) {
+    public void setIntegrationHttpMethod(CharSequence integrationHttpMethod) {
         this.integrationHttpMethod = integrationHttpMethod;
     }
 
-    public Integration withIntegrationHttpMethod(java.lang.String integrationHttpMethod) {
+    public Integration withIntegrationHttpMethod(CharSequence integrationHttpMethod) {
         this.integrationHttpMethod = integrationHttpMethod;
         return this;
     }
@@ -259,7 +259,7 @@ public class Integration {
      * 
      */
     @JsonProperty("PassthroughBehavior")
-    public java.lang.String getPassthroughBehavior() {
+    public CharSequence getPassthroughBehavior() {
         return passthroughBehavior;
     }
 
@@ -268,11 +268,11 @@ public class Integration {
      * 
      */
     @JsonProperty("PassthroughBehavior")
-    public void setPassthroughBehavior(java.lang.String passthroughBehavior) {
+    public void setPassthroughBehavior(CharSequence passthroughBehavior) {
         this.passthroughBehavior = passthroughBehavior;
     }
 
-    public Integration withPassthroughBehavior(java.lang.String passthroughBehavior) {
+    public Integration withPassthroughBehavior(CharSequence passthroughBehavior) {
         this.passthroughBehavior = passthroughBehavior;
         return this;
     }
@@ -328,7 +328,7 @@ public class Integration {
      * 
      */
     @JsonProperty("Type")
-    public java.lang.String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -337,11 +337,11 @@ public class Integration {
      * 
      */
     @JsonProperty("Type")
-    public void setType(java.lang.String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Integration withType(java.lang.String type) {
+    public Integration withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -351,7 +351,7 @@ public class Integration {
      * 
      */
     @JsonProperty("Uri")
-    public java.lang.String getUri() {
+    public CharSequence getUri() {
         return uri;
     }
 
@@ -360,11 +360,11 @@ public class Integration {
      * 
      */
     @JsonProperty("Uri")
-    public void setUri(java.lang.String uri) {
+    public void setUri(CharSequence uri) {
         this.uri = uri;
     }
 
-    public Integration withUri(java.lang.String uri) {
+    public Integration withUri(CharSequence uri) {
         this.uri = uri;
         return this;
     }

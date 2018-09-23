@@ -8,7 +8,8 @@
   "properties" : {
     "ServiceToken" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     }
   }
 }

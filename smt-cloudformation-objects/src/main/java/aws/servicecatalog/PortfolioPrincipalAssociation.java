@@ -31,35 +31,35 @@ public class PortfolioPrincipalAssociation {
      */
     @JsonProperty("PrincipalARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principalarn")
-    private String principalARN;
+    private CharSequence principalARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principaltype
      * 
      */
     @JsonProperty("PrincipalType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principaltype")
-    private String principalType;
+    private CharSequence principalType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principalarn
      * 
      */
     @JsonProperty("PrincipalARN")
-    public String getPrincipalARN() {
+    public CharSequence getPrincipalARN() {
         return principalARN;
     }
 
@@ -68,11 +68,11 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("PrincipalARN")
-    public void setPrincipalARN(String principalARN) {
+    public void setPrincipalARN(CharSequence principalARN) {
         this.principalARN = principalARN;
     }
 
-    public PortfolioPrincipalAssociation withPrincipalARN(String principalARN) {
+    public PortfolioPrincipalAssociation withPrincipalARN(CharSequence principalARN) {
         this.principalARN = principalARN;
         return this;
     }
@@ -82,7 +82,7 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -91,11 +91,11 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public PortfolioPrincipalAssociation withAcceptLanguage(String acceptLanguage) {
+    public PortfolioPrincipalAssociation withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -105,7 +105,7 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -114,11 +114,11 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public PortfolioPrincipalAssociation withPortfolioId(String portfolioId) {
+    public PortfolioPrincipalAssociation withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }
@@ -128,7 +128,7 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("PrincipalType")
-    public String getPrincipalType() {
+    public CharSequence getPrincipalType() {
         return principalType;
     }
 
@@ -137,11 +137,11 @@ public class PortfolioPrincipalAssociation {
      * 
      */
     @JsonProperty("PrincipalType")
-    public void setPrincipalType(String principalType) {
+    public void setPrincipalType(CharSequence principalType) {
         this.principalType = principalType;
     }
 
-    public PortfolioPrincipalAssociation withPrincipalType(String principalType) {
+    public PortfolioPrincipalAssociation withPrincipalType(CharSequence principalType) {
         this.principalType = principalType;
         return this;
     }

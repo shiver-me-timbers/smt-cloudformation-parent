@@ -40,14 +40,14 @@ public class ScalingRule {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingrule.html#cfn-elasticmapreduce-instancegroupconfig-scalingrule-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingrule.html#cfn-elasticmapreduce-instancegroupconfig-scalingrule-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingrule.html#cfn-elasticmapreduce-instancegroupconfig-scalingrule-name")
-    private String name;
+    private CharSequence name;
     /**
      * ScalingTrigger
      * <p>
@@ -90,7 +90,7 @@ public class ScalingRule {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -99,11 +99,11 @@ public class ScalingRule {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ScalingRule withDescription(String description) {
+    public ScalingRule withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -113,7 +113,7 @@ public class ScalingRule {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -122,11 +122,11 @@ public class ScalingRule {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ScalingRule withName(String name) {
+    public ScalingRule withName(CharSequence name) {
         this.name = name;
         return this;
     }

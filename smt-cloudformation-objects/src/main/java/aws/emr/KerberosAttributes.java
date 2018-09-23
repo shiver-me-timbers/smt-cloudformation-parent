@@ -32,42 +32,42 @@ public class KerberosAttributes {
      */
     @JsonProperty("ADDomainJoinPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword")
-    private String aDDomainJoinPassword;
+    private CharSequence aDDomainJoinPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser
      * 
      */
     @JsonProperty("ADDomainJoinUser")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser")
-    private String aDDomainJoinUser;
+    private CharSequence aDDomainJoinUser;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword
      * 
      */
     @JsonProperty("CrossRealmTrustPrincipalPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword")
-    private String crossRealmTrustPrincipalPassword;
+    private CharSequence crossRealmTrustPrincipalPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword
      * 
      */
     @JsonProperty("KdcAdminPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword")
-    private String kdcAdminPassword;
+    private CharSequence kdcAdminPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm
      * 
      */
     @JsonProperty("Realm")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm")
-    private String realm;
+    private CharSequence realm;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword
      * 
      */
     @JsonProperty("ADDomainJoinPassword")
-    public String getADDomainJoinPassword() {
+    public CharSequence getADDomainJoinPassword() {
         return aDDomainJoinPassword;
     }
 
@@ -76,11 +76,11 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("ADDomainJoinPassword")
-    public void setADDomainJoinPassword(String aDDomainJoinPassword) {
+    public void setADDomainJoinPassword(CharSequence aDDomainJoinPassword) {
         this.aDDomainJoinPassword = aDDomainJoinPassword;
     }
 
-    public KerberosAttributes withADDomainJoinPassword(String aDDomainJoinPassword) {
+    public KerberosAttributes withADDomainJoinPassword(CharSequence aDDomainJoinPassword) {
         this.aDDomainJoinPassword = aDDomainJoinPassword;
         return this;
     }
@@ -90,7 +90,7 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("ADDomainJoinUser")
-    public String getADDomainJoinUser() {
+    public CharSequence getADDomainJoinUser() {
         return aDDomainJoinUser;
     }
 
@@ -99,11 +99,11 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("ADDomainJoinUser")
-    public void setADDomainJoinUser(String aDDomainJoinUser) {
+    public void setADDomainJoinUser(CharSequence aDDomainJoinUser) {
         this.aDDomainJoinUser = aDDomainJoinUser;
     }
 
-    public KerberosAttributes withADDomainJoinUser(String aDDomainJoinUser) {
+    public KerberosAttributes withADDomainJoinUser(CharSequence aDDomainJoinUser) {
         this.aDDomainJoinUser = aDDomainJoinUser;
         return this;
     }
@@ -113,7 +113,7 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("CrossRealmTrustPrincipalPassword")
-    public String getCrossRealmTrustPrincipalPassword() {
+    public CharSequence getCrossRealmTrustPrincipalPassword() {
         return crossRealmTrustPrincipalPassword;
     }
 
@@ -122,11 +122,11 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("CrossRealmTrustPrincipalPassword")
-    public void setCrossRealmTrustPrincipalPassword(String crossRealmTrustPrincipalPassword) {
+    public void setCrossRealmTrustPrincipalPassword(CharSequence crossRealmTrustPrincipalPassword) {
         this.crossRealmTrustPrincipalPassword = crossRealmTrustPrincipalPassword;
     }
 
-    public KerberosAttributes withCrossRealmTrustPrincipalPassword(String crossRealmTrustPrincipalPassword) {
+    public KerberosAttributes withCrossRealmTrustPrincipalPassword(CharSequence crossRealmTrustPrincipalPassword) {
         this.crossRealmTrustPrincipalPassword = crossRealmTrustPrincipalPassword;
         return this;
     }
@@ -136,7 +136,7 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("KdcAdminPassword")
-    public String getKdcAdminPassword() {
+    public CharSequence getKdcAdminPassword() {
         return kdcAdminPassword;
     }
 
@@ -145,11 +145,11 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("KdcAdminPassword")
-    public void setKdcAdminPassword(String kdcAdminPassword) {
+    public void setKdcAdminPassword(CharSequence kdcAdminPassword) {
         this.kdcAdminPassword = kdcAdminPassword;
     }
 
-    public KerberosAttributes withKdcAdminPassword(String kdcAdminPassword) {
+    public KerberosAttributes withKdcAdminPassword(CharSequence kdcAdminPassword) {
         this.kdcAdminPassword = kdcAdminPassword;
         return this;
     }
@@ -159,7 +159,7 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("Realm")
-    public String getRealm() {
+    public CharSequence getRealm() {
         return realm;
     }
 
@@ -168,11 +168,11 @@ public class KerberosAttributes {
      * 
      */
     @JsonProperty("Realm")
-    public void setRealm(String realm) {
+    public void setRealm(CharSequence realm) {
         this.realm = realm;
     }
 
-    public KerberosAttributes withRealm(String realm) {
+    public KerberosAttributes withRealm(CharSequence realm) {
         this.realm = realm;
         return this;
     }

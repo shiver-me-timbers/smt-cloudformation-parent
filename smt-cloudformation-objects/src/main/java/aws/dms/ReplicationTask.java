@@ -39,49 +39,49 @@ public class ReplicationTask {
      */
     @JsonProperty("ReplicationTaskSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtasksettings")
-    private String replicationTaskSettings;
+    private CharSequence replicationTaskSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tablemappings
      * 
      */
     @JsonProperty("TableMappings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tablemappings")
-    private String tableMappings;
+    private CharSequence tableMappings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier
      * 
      */
     @JsonProperty("ReplicationTaskIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier")
-    private String replicationTaskIdentifier;
+    private CharSequence replicationTaskIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-sourceendpointarn
      * 
      */
     @JsonProperty("SourceEndpointArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-sourceendpointarn")
-    private String sourceEndpointArn;
+    private CharSequence sourceEndpointArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-migrationtype
      * 
      */
     @JsonProperty("MigrationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-migrationtype")
-    private String migrationType;
+    private CharSequence migrationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-targetendpointarn
      * 
      */
     @JsonProperty("TargetEndpointArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-targetendpointarn")
-    private String targetEndpointArn;
+    private CharSequence targetEndpointArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationinstancearn
      * 
      */
     @JsonProperty("ReplicationInstanceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationinstancearn")
-    private String replicationInstanceArn;
+    private CharSequence replicationInstanceArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tags
      * 
@@ -102,7 +102,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationTaskSettings")
-    public String getReplicationTaskSettings() {
+    public CharSequence getReplicationTaskSettings() {
         return replicationTaskSettings;
     }
 
@@ -111,11 +111,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationTaskSettings")
-    public void setReplicationTaskSettings(String replicationTaskSettings) {
+    public void setReplicationTaskSettings(CharSequence replicationTaskSettings) {
         this.replicationTaskSettings = replicationTaskSettings;
     }
 
-    public ReplicationTask withReplicationTaskSettings(String replicationTaskSettings) {
+    public ReplicationTask withReplicationTaskSettings(CharSequence replicationTaskSettings) {
         this.replicationTaskSettings = replicationTaskSettings;
         return this;
     }
@@ -125,7 +125,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("TableMappings")
-    public String getTableMappings() {
+    public CharSequence getTableMappings() {
         return tableMappings;
     }
 
@@ -134,11 +134,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("TableMappings")
-    public void setTableMappings(String tableMappings) {
+    public void setTableMappings(CharSequence tableMappings) {
         this.tableMappings = tableMappings;
     }
 
-    public ReplicationTask withTableMappings(String tableMappings) {
+    public ReplicationTask withTableMappings(CharSequence tableMappings) {
         this.tableMappings = tableMappings;
         return this;
     }
@@ -148,7 +148,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationTaskIdentifier")
-    public String getReplicationTaskIdentifier() {
+    public CharSequence getReplicationTaskIdentifier() {
         return replicationTaskIdentifier;
     }
 
@@ -157,11 +157,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationTaskIdentifier")
-    public void setReplicationTaskIdentifier(String replicationTaskIdentifier) {
+    public void setReplicationTaskIdentifier(CharSequence replicationTaskIdentifier) {
         this.replicationTaskIdentifier = replicationTaskIdentifier;
     }
 
-    public ReplicationTask withReplicationTaskIdentifier(String replicationTaskIdentifier) {
+    public ReplicationTask withReplicationTaskIdentifier(CharSequence replicationTaskIdentifier) {
         this.replicationTaskIdentifier = replicationTaskIdentifier;
         return this;
     }
@@ -171,7 +171,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("SourceEndpointArn")
-    public String getSourceEndpointArn() {
+    public CharSequence getSourceEndpointArn() {
         return sourceEndpointArn;
     }
 
@@ -180,11 +180,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("SourceEndpointArn")
-    public void setSourceEndpointArn(String sourceEndpointArn) {
+    public void setSourceEndpointArn(CharSequence sourceEndpointArn) {
         this.sourceEndpointArn = sourceEndpointArn;
     }
 
-    public ReplicationTask withSourceEndpointArn(String sourceEndpointArn) {
+    public ReplicationTask withSourceEndpointArn(CharSequence sourceEndpointArn) {
         this.sourceEndpointArn = sourceEndpointArn;
         return this;
     }
@@ -194,7 +194,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("MigrationType")
-    public String getMigrationType() {
+    public CharSequence getMigrationType() {
         return migrationType;
     }
 
@@ -203,11 +203,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("MigrationType")
-    public void setMigrationType(String migrationType) {
+    public void setMigrationType(CharSequence migrationType) {
         this.migrationType = migrationType;
     }
 
-    public ReplicationTask withMigrationType(String migrationType) {
+    public ReplicationTask withMigrationType(CharSequence migrationType) {
         this.migrationType = migrationType;
         return this;
     }
@@ -217,7 +217,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("TargetEndpointArn")
-    public String getTargetEndpointArn() {
+    public CharSequence getTargetEndpointArn() {
         return targetEndpointArn;
     }
 
@@ -226,11 +226,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("TargetEndpointArn")
-    public void setTargetEndpointArn(String targetEndpointArn) {
+    public void setTargetEndpointArn(CharSequence targetEndpointArn) {
         this.targetEndpointArn = targetEndpointArn;
     }
 
-    public ReplicationTask withTargetEndpointArn(String targetEndpointArn) {
+    public ReplicationTask withTargetEndpointArn(CharSequence targetEndpointArn) {
         this.targetEndpointArn = targetEndpointArn;
         return this;
     }
@@ -240,7 +240,7 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationInstanceArn")
-    public String getReplicationInstanceArn() {
+    public CharSequence getReplicationInstanceArn() {
         return replicationInstanceArn;
     }
 
@@ -249,11 +249,11 @@ public class ReplicationTask {
      * 
      */
     @JsonProperty("ReplicationInstanceArn")
-    public void setReplicationInstanceArn(String replicationInstanceArn) {
+    public void setReplicationInstanceArn(CharSequence replicationInstanceArn) {
         this.replicationInstanceArn = replicationInstanceArn;
     }
 
-    public ReplicationTask withReplicationInstanceArn(String replicationInstanceArn) {
+    public ReplicationTask withReplicationInstanceArn(CharSequence replicationInstanceArn) {
         this.replicationInstanceArn = replicationInstanceArn;
         return this;
     }

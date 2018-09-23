@@ -29,21 +29,21 @@ public class GitHubLocation {
      */
     @JsonProperty("CommitId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-commitid")
-    private String commitId;
+    private CharSequence commitId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-repository
      * 
      */
     @JsonProperty("Repository")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-repository")
-    private String repository;
+    private CharSequence repository;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-commitid
      * 
      */
     @JsonProperty("CommitId")
-    public String getCommitId() {
+    public CharSequence getCommitId() {
         return commitId;
     }
 
@@ -52,11 +52,11 @@ public class GitHubLocation {
      * 
      */
     @JsonProperty("CommitId")
-    public void setCommitId(String commitId) {
+    public void setCommitId(CharSequence commitId) {
         this.commitId = commitId;
     }
 
-    public GitHubLocation withCommitId(String commitId) {
+    public GitHubLocation withCommitId(CharSequence commitId) {
         this.commitId = commitId;
         return this;
     }
@@ -66,7 +66,7 @@ public class GitHubLocation {
      * 
      */
     @JsonProperty("Repository")
-    public String getRepository() {
+    public CharSequence getRepository() {
         return repository;
     }
 
@@ -75,11 +75,11 @@ public class GitHubLocation {
      * 
      */
     @JsonProperty("Repository")
-    public void setRepository(String repository) {
+    public void setRepository(CharSequence repository) {
         this.repository = repository;
     }
 
-    public GitHubLocation withRepository(String repository) {
+    public GitHubLocation withRepository(CharSequence repository) {
         this.repository = repository;
         return this;
     }

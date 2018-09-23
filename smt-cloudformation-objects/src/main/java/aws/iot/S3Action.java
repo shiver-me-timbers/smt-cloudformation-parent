@@ -30,28 +30,28 @@ public class S3Action {
      */
     @JsonProperty("BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-bucketname")
-    private String bucketName;
+    private CharSequence bucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-key
      * 
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-bucketname
      * 
      */
     @JsonProperty("BucketName")
-    public String getBucketName() {
+    public CharSequence getBucketName() {
         return bucketName;
     }
 
@@ -60,11 +60,11 @@ public class S3Action {
      * 
      */
     @JsonProperty("BucketName")
-    public void setBucketName(String bucketName) {
+    public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
 
-    public S3Action withBucketName(String bucketName) {
+    public S3Action withBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
         return this;
     }
@@ -74,7 +74,7 @@ public class S3Action {
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -83,11 +83,11 @@ public class S3Action {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public S3Action withKey(String key) {
+    public S3Action withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -97,7 +97,7 @@ public class S3Action {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -106,11 +106,11 @@ public class S3Action {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public S3Action withRoleArn(String roleArn) {
+    public S3Action withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

@@ -29,21 +29,21 @@ public class ThingPrincipalAttachment {
      */
     @JsonProperty("Principal")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-principal")
-    private String principal;
+    private CharSequence principal;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-thingname
      * 
      */
     @JsonProperty("ThingName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-thingname")
-    private String thingName;
+    private CharSequence thingName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-principal
      * 
      */
     @JsonProperty("Principal")
-    public String getPrincipal() {
+    public CharSequence getPrincipal() {
         return principal;
     }
 
@@ -52,11 +52,11 @@ public class ThingPrincipalAttachment {
      * 
      */
     @JsonProperty("Principal")
-    public void setPrincipal(String principal) {
+    public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }
 
-    public ThingPrincipalAttachment withPrincipal(String principal) {
+    public ThingPrincipalAttachment withPrincipal(CharSequence principal) {
         this.principal = principal;
         return this;
     }
@@ -66,7 +66,7 @@ public class ThingPrincipalAttachment {
      * 
      */
     @JsonProperty("ThingName")
-    public String getThingName() {
+    public CharSequence getThingName() {
         return thingName;
     }
 
@@ -75,11 +75,11 @@ public class ThingPrincipalAttachment {
      * 
      */
     @JsonProperty("ThingName")
-    public void setThingName(String thingName) {
+    public void setThingName(CharSequence thingName) {
         this.thingName = thingName;
     }
 
-    public ThingPrincipalAttachment withThingName(String thingName) {
+    public ThingPrincipalAttachment withThingName(CharSequence thingName) {
         this.thingName = thingName;
         return this;
     }

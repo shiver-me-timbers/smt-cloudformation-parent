@@ -29,21 +29,21 @@ public class TagFilter {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-tagfilter.html#cfn-s3-bucket-tagfilter-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-tagfilter.html#cfn-s3-bucket-tagfilter-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-tagfilter.html#cfn-s3-bucket-tagfilter-value")
-    private String value;
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-tagfilter.html#cfn-s3-bucket-tagfilter-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -52,11 +52,11 @@ public class TagFilter {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public TagFilter withKey(String key) {
+    public TagFilter withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -66,7 +66,7 @@ public class TagFilter {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -75,11 +75,11 @@ public class TagFilter {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public TagFilter withValue(String value) {
+    public TagFilter withValue(CharSequence value) {
         this.value = value;
         return this;
     }

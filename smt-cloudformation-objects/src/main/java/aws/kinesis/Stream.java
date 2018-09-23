@@ -35,7 +35,7 @@ public class Stream {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-retentionperiodhours
      * 
@@ -72,7 +72,7 @@ public class Stream {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -81,11 +81,11 @@ public class Stream {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Stream withName(String name) {
+    public Stream withName(CharSequence name) {
         this.name = name;
         return this;
     }

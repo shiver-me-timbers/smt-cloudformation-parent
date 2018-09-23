@@ -31,21 +31,21 @@ public class PushSync {
      */
     @JsonProperty("ApplicationArns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-applicationarns")
-    private List<String> applicationArns = new ArrayList<String>();
+    private List<CharSequence> applicationArns = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-applicationarns
      * 
      */
     @JsonProperty("ApplicationArns")
-    public List<String> getApplicationArns() {
+    public List<CharSequence> getApplicationArns() {
         return applicationArns;
     }
 
@@ -54,11 +54,11 @@ public class PushSync {
      * 
      */
     @JsonProperty("ApplicationArns")
-    public void setApplicationArns(List<String> applicationArns) {
+    public void setApplicationArns(List<CharSequence> applicationArns) {
         this.applicationArns = applicationArns;
     }
 
-    public PushSync withApplicationArns(List<String> applicationArns) {
+    public PushSync withApplicationArns(List<CharSequence> applicationArns) {
         this.applicationArns = applicationArns;
         return this;
     }
@@ -68,7 +68,7 @@ public class PushSync {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -77,11 +77,11 @@ public class PushSync {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public PushSync withRoleArn(String roleArn) {
+    public PushSync withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

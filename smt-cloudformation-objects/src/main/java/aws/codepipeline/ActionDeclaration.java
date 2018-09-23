@@ -61,7 +61,7 @@ public class ActionDeclaration {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts
      * 
@@ -76,7 +76,7 @@ public class ActionDeclaration {
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-runorder
      * 
@@ -163,7 +163,7 @@ public class ActionDeclaration {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -172,11 +172,11 @@ public class ActionDeclaration {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ActionDeclaration withName(String name) {
+    public ActionDeclaration withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -209,7 +209,7 @@ public class ActionDeclaration {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -218,11 +218,11 @@ public class ActionDeclaration {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public ActionDeclaration withRoleArn(String roleArn) {
+    public ActionDeclaration withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

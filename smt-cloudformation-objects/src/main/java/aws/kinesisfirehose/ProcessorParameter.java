@@ -29,21 +29,21 @@ public class ProcessorParameter {
      */
     @JsonProperty("ParameterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametername")
-    private String parameterName;
+    private CharSequence parameterName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue
      * 
      */
     @JsonProperty("ParameterValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue")
-    private String parameterValue;
+    private CharSequence parameterValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametername
      * 
      */
     @JsonProperty("ParameterName")
-    public String getParameterName() {
+    public CharSequence getParameterName() {
         return parameterName;
     }
 
@@ -52,11 +52,11 @@ public class ProcessorParameter {
      * 
      */
     @JsonProperty("ParameterName")
-    public void setParameterName(String parameterName) {
+    public void setParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
     }
 
-    public ProcessorParameter withParameterName(String parameterName) {
+    public ProcessorParameter withParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
         return this;
     }
@@ -66,7 +66,7 @@ public class ProcessorParameter {
      * 
      */
     @JsonProperty("ParameterValue")
-    public String getParameterValue() {
+    public CharSequence getParameterValue() {
         return parameterValue;
     }
 
@@ -75,11 +75,11 @@ public class ProcessorParameter {
      * 
      */
     @JsonProperty("ParameterValue")
-    public void setParameterValue(String parameterValue) {
+    public void setParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
     }
 
-    public ProcessorParameter withParameterValue(String parameterValue) {
+    public ProcessorParameter withParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
         return this;
     }

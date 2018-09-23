@@ -36,7 +36,7 @@ public class Policy {
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policyname")
-    private String policyName;
+    private CharSequence policyName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
@@ -66,7 +66,7 @@ public class Policy {
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -75,11 +75,11 @@ public class Policy {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public Policy withPolicyName(String policyName) {
+    public Policy withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }

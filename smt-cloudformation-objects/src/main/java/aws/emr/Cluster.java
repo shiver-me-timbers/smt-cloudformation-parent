@@ -66,7 +66,7 @@ public class Cluster {
      */
     @JsonProperty("AutoScalingRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-autoscalingrole")
-    private String autoScalingRole;
+    private CharSequence autoScalingRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-bootstrapactions
      * 
@@ -89,7 +89,7 @@ public class Cluster {
      */
     @JsonProperty("CustomAmiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-customamiid")
-    private String customAmiId;
+    private CharSequence customAmiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-ebsrootvolumesize
      * 
@@ -112,7 +112,7 @@ public class Cluster {
      */
     @JsonProperty("JobFlowRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-jobflowrole")
-    private String jobFlowRole;
+    private CharSequence jobFlowRole;
     /**
      * KerberosAttributes
      * <p>
@@ -128,42 +128,42 @@ public class Cluster {
      */
     @JsonProperty("LogUri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-loguri")
-    private String logUri;
+    private CharSequence logUri;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-releaselabel
      * 
      */
     @JsonProperty("ReleaseLabel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-releaselabel")
-    private String releaseLabel;
+    private CharSequence releaseLabel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-scaledownbehavior
      * 
      */
     @JsonProperty("ScaleDownBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-scaledownbehavior")
-    private String scaleDownBehavior;
+    private CharSequence scaleDownBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-securityconfiguration
      * 
      */
     @JsonProperty("SecurityConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-securityconfiguration")
-    private String securityConfiguration;
+    private CharSequence securityConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-servicerole
      * 
      */
     @JsonProperty("ServiceRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-servicerole")
-    private String serviceRole;
+    private CharSequence serviceRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
@@ -230,7 +230,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("AutoScalingRole")
-    public String getAutoScalingRole() {
+    public CharSequence getAutoScalingRole() {
         return autoScalingRole;
     }
 
@@ -239,11 +239,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("AutoScalingRole")
-    public void setAutoScalingRole(String autoScalingRole) {
+    public void setAutoScalingRole(CharSequence autoScalingRole) {
         this.autoScalingRole = autoScalingRole;
     }
 
-    public Cluster withAutoScalingRole(String autoScalingRole) {
+    public Cluster withAutoScalingRole(CharSequence autoScalingRole) {
         this.autoScalingRole = autoScalingRole;
         return this;
     }
@@ -299,7 +299,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("CustomAmiId")
-    public String getCustomAmiId() {
+    public CharSequence getCustomAmiId() {
         return customAmiId;
     }
 
@@ -308,11 +308,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("CustomAmiId")
-    public void setCustomAmiId(String customAmiId) {
+    public void setCustomAmiId(CharSequence customAmiId) {
         this.customAmiId = customAmiId;
     }
 
-    public Cluster withCustomAmiId(String customAmiId) {
+    public Cluster withCustomAmiId(CharSequence customAmiId) {
         this.customAmiId = customAmiId;
         return this;
     }
@@ -372,7 +372,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("JobFlowRole")
-    public String getJobFlowRole() {
+    public CharSequence getJobFlowRole() {
         return jobFlowRole;
     }
 
@@ -381,11 +381,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("JobFlowRole")
-    public void setJobFlowRole(String jobFlowRole) {
+    public void setJobFlowRole(CharSequence jobFlowRole) {
         this.jobFlowRole = jobFlowRole;
     }
 
-    public Cluster withJobFlowRole(String jobFlowRole) {
+    public Cluster withJobFlowRole(CharSequence jobFlowRole) {
         this.jobFlowRole = jobFlowRole;
         return this;
     }
@@ -422,7 +422,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("LogUri")
-    public String getLogUri() {
+    public CharSequence getLogUri() {
         return logUri;
     }
 
@@ -431,11 +431,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("LogUri")
-    public void setLogUri(String logUri) {
+    public void setLogUri(CharSequence logUri) {
         this.logUri = logUri;
     }
 
-    public Cluster withLogUri(String logUri) {
+    public Cluster withLogUri(CharSequence logUri) {
         this.logUri = logUri;
         return this;
     }
@@ -445,7 +445,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -454,11 +454,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Cluster withName(String name) {
+    public Cluster withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -468,7 +468,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ReleaseLabel")
-    public String getReleaseLabel() {
+    public CharSequence getReleaseLabel() {
         return releaseLabel;
     }
 
@@ -477,11 +477,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ReleaseLabel")
-    public void setReleaseLabel(String releaseLabel) {
+    public void setReleaseLabel(CharSequence releaseLabel) {
         this.releaseLabel = releaseLabel;
     }
 
-    public Cluster withReleaseLabel(String releaseLabel) {
+    public Cluster withReleaseLabel(CharSequence releaseLabel) {
         this.releaseLabel = releaseLabel;
         return this;
     }
@@ -491,7 +491,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ScaleDownBehavior")
-    public String getScaleDownBehavior() {
+    public CharSequence getScaleDownBehavior() {
         return scaleDownBehavior;
     }
 
@@ -500,11 +500,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ScaleDownBehavior")
-    public void setScaleDownBehavior(String scaleDownBehavior) {
+    public void setScaleDownBehavior(CharSequence scaleDownBehavior) {
         this.scaleDownBehavior = scaleDownBehavior;
     }
 
-    public Cluster withScaleDownBehavior(String scaleDownBehavior) {
+    public Cluster withScaleDownBehavior(CharSequence scaleDownBehavior) {
         this.scaleDownBehavior = scaleDownBehavior;
         return this;
     }
@@ -514,7 +514,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("SecurityConfiguration")
-    public String getSecurityConfiguration() {
+    public CharSequence getSecurityConfiguration() {
         return securityConfiguration;
     }
 
@@ -523,11 +523,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("SecurityConfiguration")
-    public void setSecurityConfiguration(String securityConfiguration) {
+    public void setSecurityConfiguration(CharSequence securityConfiguration) {
         this.securityConfiguration = securityConfiguration;
     }
 
-    public Cluster withSecurityConfiguration(String securityConfiguration) {
+    public Cluster withSecurityConfiguration(CharSequence securityConfiguration) {
         this.securityConfiguration = securityConfiguration;
         return this;
     }
@@ -537,7 +537,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ServiceRole")
-    public String getServiceRole() {
+    public CharSequence getServiceRole() {
         return serviceRole;
     }
 
@@ -546,11 +546,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ServiceRole")
-    public void setServiceRole(String serviceRole) {
+    public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
 
-    public Cluster withServiceRole(String serviceRole) {
+    public Cluster withServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
         return this;
     }

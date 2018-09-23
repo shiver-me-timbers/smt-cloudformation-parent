@@ -11,7 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "AllowedMethods" : {
@@ -19,7 +20,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "AllowedOrigins" : {
@@ -27,7 +29,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "ExposedHeaders" : {
@@ -35,12 +38,14 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id",
-      "type" : "string"
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
     },
     "MaxAge" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage",

@@ -48,7 +48,7 @@ public class RecordingGroup {
     @JsonProperty("ResourceTypes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-resourcetypes")
-    private Set<String> resourceTypes = new LinkedHashSet<String>();
+    private Set<CharSequence> resourceTypes = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported
@@ -101,7 +101,7 @@ public class RecordingGroup {
      * 
      */
     @JsonProperty("ResourceTypes")
-    public Set<String> getResourceTypes() {
+    public Set<CharSequence> getResourceTypes() {
         return resourceTypes;
     }
 
@@ -110,11 +110,11 @@ public class RecordingGroup {
      * 
      */
     @JsonProperty("ResourceTypes")
-    public void setResourceTypes(Set<String> resourceTypes) {
+    public void setResourceTypes(Set<CharSequence> resourceTypes) {
         this.resourceTypes = resourceTypes;
     }
 
-    public RecordingGroup withResourceTypes(Set<String> resourceTypes) {
+    public RecordingGroup withResourceTypes(Set<CharSequence> resourceTypes) {
         this.resourceTypes = resourceTypes;
         return this;
     }

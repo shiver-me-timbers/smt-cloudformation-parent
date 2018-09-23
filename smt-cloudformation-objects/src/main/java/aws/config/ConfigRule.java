@@ -33,14 +33,14 @@ public class ConfigRule {
      */
     @JsonProperty("ConfigRuleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename")
-    private String configRuleName;
+    private CharSequence configRuleName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
@@ -54,7 +54,7 @@ public class ConfigRule {
      */
     @JsonProperty("MaximumExecutionFrequency")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency")
-    private String maximumExecutionFrequency;
+    private CharSequence maximumExecutionFrequency;
     /**
      * Scope
      * <p>
@@ -79,7 +79,7 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("ConfigRuleName")
-    public String getConfigRuleName() {
+    public CharSequence getConfigRuleName() {
         return configRuleName;
     }
 
@@ -88,11 +88,11 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("ConfigRuleName")
-    public void setConfigRuleName(String configRuleName) {
+    public void setConfigRuleName(CharSequence configRuleName) {
         this.configRuleName = configRuleName;
     }
 
-    public ConfigRule withConfigRuleName(String configRuleName) {
+    public ConfigRule withConfigRuleName(CharSequence configRuleName) {
         this.configRuleName = configRuleName;
         return this;
     }
@@ -102,7 +102,7 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -111,11 +111,11 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ConfigRule withDescription(String description) {
+    public ConfigRule withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -148,7 +148,7 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("MaximumExecutionFrequency")
-    public String getMaximumExecutionFrequency() {
+    public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
 
@@ -157,11 +157,11 @@ public class ConfigRule {
      * 
      */
     @JsonProperty("MaximumExecutionFrequency")
-    public void setMaximumExecutionFrequency(String maximumExecutionFrequency) {
+    public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
 
-    public ConfigRule withMaximumExecutionFrequency(String maximumExecutionFrequency) {
+    public ConfigRule withMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
         return this;
     }

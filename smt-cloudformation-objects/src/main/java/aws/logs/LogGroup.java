@@ -29,7 +29,7 @@ public class LogGroup {
      */
     @JsonProperty("LogGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-loggroupname")
-    private String logGroupName;
+    private CharSequence logGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-retentionindays
      * 
@@ -43,7 +43,7 @@ public class LogGroup {
      * 
      */
     @JsonProperty("LogGroupName")
-    public String getLogGroupName() {
+    public CharSequence getLogGroupName() {
         return logGroupName;
     }
 
@@ -52,11 +52,11 @@ public class LogGroup {
      * 
      */
     @JsonProperty("LogGroupName")
-    public void setLogGroupName(String logGroupName) {
+    public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
 
-    public LogGroup withLogGroupName(String logGroupName) {
+    public LogGroup withLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
         return this;
     }

@@ -43,14 +43,14 @@ public class Pipeline {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parameterobjects
      * 
@@ -108,7 +108,7 @@ public class Pipeline {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -117,11 +117,11 @@ public class Pipeline {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Pipeline withDescription(String description) {
+    public Pipeline withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -131,7 +131,7 @@ public class Pipeline {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -140,11 +140,11 @@ public class Pipeline {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Pipeline withName(String name) {
+    public Pipeline withName(CharSequence name) {
         this.name = name;
         return this;
     }

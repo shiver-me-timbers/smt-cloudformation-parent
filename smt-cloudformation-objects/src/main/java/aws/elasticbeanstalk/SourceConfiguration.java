@@ -29,21 +29,21 @@ public class SourceConfiguration {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename
      * 
      */
     @JsonProperty("TemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename")
-    private String templateName;
+    private CharSequence templateName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -52,11 +52,11 @@ public class SourceConfiguration {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public SourceConfiguration withApplicationName(String applicationName) {
+    public SourceConfiguration withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -66,7 +66,7 @@ public class SourceConfiguration {
      * 
      */
     @JsonProperty("TemplateName")
-    public String getTemplateName() {
+    public CharSequence getTemplateName() {
         return templateName;
     }
 
@@ -75,11 +75,11 @@ public class SourceConfiguration {
      * 
      */
     @JsonProperty("TemplateName")
-    public void setTemplateName(String templateName) {
+    public void setTemplateName(CharSequence templateName) {
         this.templateName = templateName;
     }
 
-    public SourceConfiguration withTemplateName(String templateName) {
+    public SourceConfiguration withTemplateName(CharSequence templateName) {
         this.templateName = templateName;
         return this;
     }

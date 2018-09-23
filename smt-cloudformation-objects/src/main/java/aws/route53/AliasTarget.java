@@ -30,7 +30,7 @@ public class AliasTarget {
      */
     @JsonProperty("DNSName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname")
-    private String dNSName;
+    private CharSequence dNSName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth
      * 
@@ -44,14 +44,14 @@ public class AliasTarget {
      */
     @JsonProperty("HostedZoneId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid")
-    private String hostedZoneId;
+    private CharSequence hostedZoneId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname
      * 
      */
     @JsonProperty("DNSName")
-    public String getDNSName() {
+    public CharSequence getDNSName() {
         return dNSName;
     }
 
@@ -60,11 +60,11 @@ public class AliasTarget {
      * 
      */
     @JsonProperty("DNSName")
-    public void setDNSName(String dNSName) {
+    public void setDNSName(CharSequence dNSName) {
         this.dNSName = dNSName;
     }
 
-    public AliasTarget withDNSName(String dNSName) {
+    public AliasTarget withDNSName(CharSequence dNSName) {
         this.dNSName = dNSName;
         return this;
     }
@@ -97,7 +97,7 @@ public class AliasTarget {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public String getHostedZoneId() {
+    public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
 
@@ -106,11 +106,11 @@ public class AliasTarget {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public void setHostedZoneId(String hostedZoneId) {
+    public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
 
-    public AliasTarget withHostedZoneId(String hostedZoneId) {
+    public AliasTarget withHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
         return this;
     }

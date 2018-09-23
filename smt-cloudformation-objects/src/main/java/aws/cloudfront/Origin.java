@@ -42,7 +42,7 @@ public class Origin {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * S3OriginConfig
      * <p>
@@ -58,14 +58,14 @@ public class Origin {
      */
     @JsonProperty("OriginPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath")
-    private String originPath;
+    private CharSequence originPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id
      * 
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id")
-    private String id;
+    private CharSequence id;
     /**
      * CustomOriginConfig
      * <p>
@@ -104,7 +104,7 @@ public class Origin {
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -113,11 +113,11 @@ public class Origin {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public Origin withDomainName(String domainName) {
+    public Origin withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -154,7 +154,7 @@ public class Origin {
      * 
      */
     @JsonProperty("OriginPath")
-    public String getOriginPath() {
+    public CharSequence getOriginPath() {
         return originPath;
     }
 
@@ -163,11 +163,11 @@ public class Origin {
      * 
      */
     @JsonProperty("OriginPath")
-    public void setOriginPath(String originPath) {
+    public void setOriginPath(CharSequence originPath) {
         this.originPath = originPath;
     }
 
-    public Origin withOriginPath(String originPath) {
+    public Origin withOriginPath(CharSequence originPath) {
         this.originPath = originPath;
         return this;
     }
@@ -177,7 +177,7 @@ public class Origin {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -186,11 +186,11 @@ public class Origin {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public Origin withId(String id) {
+    public Origin withId(CharSequence id) {
         this.id = id;
         return this;
     }

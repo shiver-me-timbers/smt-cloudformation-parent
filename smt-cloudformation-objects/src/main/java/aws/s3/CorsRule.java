@@ -37,7 +37,7 @@ public class CorsRule {
     @JsonProperty("AllowedHeaders")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders")
-    private Set<String> allowedHeaders = new LinkedHashSet<String>();
+    private Set<CharSequence> allowedHeaders = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods
      * 
@@ -45,7 +45,7 @@ public class CorsRule {
     @JsonProperty("AllowedMethods")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods")
-    private Set<String> allowedMethods = new LinkedHashSet<String>();
+    private Set<CharSequence> allowedMethods = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins
      * 
@@ -53,7 +53,7 @@ public class CorsRule {
     @JsonProperty("AllowedOrigins")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins")
-    private Set<String> allowedOrigins = new LinkedHashSet<String>();
+    private Set<CharSequence> allowedOrigins = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders
      * 
@@ -61,14 +61,14 @@ public class CorsRule {
     @JsonProperty("ExposedHeaders")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders")
-    private Set<String> exposedHeaders = new LinkedHashSet<String>();
+    private Set<CharSequence> exposedHeaders = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id
      * 
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage
      * 
@@ -82,7 +82,7 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedHeaders")
-    public Set<String> getAllowedHeaders() {
+    public Set<CharSequence> getAllowedHeaders() {
         return allowedHeaders;
     }
 
@@ -91,11 +91,11 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedHeaders")
-    public void setAllowedHeaders(Set<String> allowedHeaders) {
+    public void setAllowedHeaders(Set<CharSequence> allowedHeaders) {
         this.allowedHeaders = allowedHeaders;
     }
 
-    public CorsRule withAllowedHeaders(Set<String> allowedHeaders) {
+    public CorsRule withAllowedHeaders(Set<CharSequence> allowedHeaders) {
         this.allowedHeaders = allowedHeaders;
         return this;
     }
@@ -105,7 +105,7 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedMethods")
-    public Set<String> getAllowedMethods() {
+    public Set<CharSequence> getAllowedMethods() {
         return allowedMethods;
     }
 
@@ -114,11 +114,11 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedMethods")
-    public void setAllowedMethods(Set<String> allowedMethods) {
+    public void setAllowedMethods(Set<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
     }
 
-    public CorsRule withAllowedMethods(Set<String> allowedMethods) {
+    public CorsRule withAllowedMethods(Set<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
         return this;
     }
@@ -128,7 +128,7 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedOrigins")
-    public Set<String> getAllowedOrigins() {
+    public Set<CharSequence> getAllowedOrigins() {
         return allowedOrigins;
     }
 
@@ -137,11 +137,11 @@ public class CorsRule {
      * 
      */
     @JsonProperty("AllowedOrigins")
-    public void setAllowedOrigins(Set<String> allowedOrigins) {
+    public void setAllowedOrigins(Set<CharSequence> allowedOrigins) {
         this.allowedOrigins = allowedOrigins;
     }
 
-    public CorsRule withAllowedOrigins(Set<String> allowedOrigins) {
+    public CorsRule withAllowedOrigins(Set<CharSequence> allowedOrigins) {
         this.allowedOrigins = allowedOrigins;
         return this;
     }
@@ -151,7 +151,7 @@ public class CorsRule {
      * 
      */
     @JsonProperty("ExposedHeaders")
-    public Set<String> getExposedHeaders() {
+    public Set<CharSequence> getExposedHeaders() {
         return exposedHeaders;
     }
 
@@ -160,11 +160,11 @@ public class CorsRule {
      * 
      */
     @JsonProperty("ExposedHeaders")
-    public void setExposedHeaders(Set<String> exposedHeaders) {
+    public void setExposedHeaders(Set<CharSequence> exposedHeaders) {
         this.exposedHeaders = exposedHeaders;
     }
 
-    public CorsRule withExposedHeaders(Set<String> exposedHeaders) {
+    public CorsRule withExposedHeaders(Set<CharSequence> exposedHeaders) {
         this.exposedHeaders = exposedHeaders;
         return this;
     }
@@ -174,7 +174,7 @@ public class CorsRule {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -183,11 +183,11 @@ public class CorsRule {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public CorsRule withId(String id) {
+    public CorsRule withId(CharSequence id) {
         this.id = id;
         return this;
     }

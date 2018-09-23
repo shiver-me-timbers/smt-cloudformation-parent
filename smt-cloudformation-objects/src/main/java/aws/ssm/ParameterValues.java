@@ -32,14 +32,14 @@ public class ParameterValues {
     @JsonProperty("ParameterValues")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues")
-    private Set<String> parameterValues = new LinkedHashSet<String>();
+    private Set<CharSequence> parameterValues = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues
      * 
      */
     @JsonProperty("ParameterValues")
-    public Set<String> getParameterValues() {
+    public Set<CharSequence> getParameterValues() {
         return parameterValues;
     }
 
@@ -48,11 +48,11 @@ public class ParameterValues {
      * 
      */
     @JsonProperty("ParameterValues")
-    public void setParameterValues(Set<String> parameterValues) {
+    public void setParameterValues(Set<CharSequence> parameterValues) {
         this.parameterValues = parameterValues;
     }
 
-    public ParameterValues withParameterValues(Set<String> parameterValues) {
+    public ParameterValues withParameterValues(Set<CharSequence> parameterValues) {
         this.parameterValues = parameterValues;
         return this;
     }

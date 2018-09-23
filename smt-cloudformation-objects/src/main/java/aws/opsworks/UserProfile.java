@@ -38,21 +38,21 @@ public class UserProfile {
      */
     @JsonProperty("IamUserArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-iamuserarn")
-    private String iamUserArn;
+    private CharSequence iamUserArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshpublickey
      * 
      */
     @JsonProperty("SshPublicKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshpublickey")
-    private String sshPublicKey;
+    private CharSequence sshPublicKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshusername
      * 
      */
     @JsonProperty("SshUsername")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshusername")
-    private String sshUsername;
+    private CharSequence sshUsername;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement
@@ -82,7 +82,7 @@ public class UserProfile {
      * 
      */
     @JsonProperty("IamUserArn")
-    public String getIamUserArn() {
+    public CharSequence getIamUserArn() {
         return iamUserArn;
     }
 
@@ -91,11 +91,11 @@ public class UserProfile {
      * 
      */
     @JsonProperty("IamUserArn")
-    public void setIamUserArn(String iamUserArn) {
+    public void setIamUserArn(CharSequence iamUserArn) {
         this.iamUserArn = iamUserArn;
     }
 
-    public UserProfile withIamUserArn(String iamUserArn) {
+    public UserProfile withIamUserArn(CharSequence iamUserArn) {
         this.iamUserArn = iamUserArn;
         return this;
     }
@@ -105,7 +105,7 @@ public class UserProfile {
      * 
      */
     @JsonProperty("SshPublicKey")
-    public String getSshPublicKey() {
+    public CharSequence getSshPublicKey() {
         return sshPublicKey;
     }
 
@@ -114,11 +114,11 @@ public class UserProfile {
      * 
      */
     @JsonProperty("SshPublicKey")
-    public void setSshPublicKey(String sshPublicKey) {
+    public void setSshPublicKey(CharSequence sshPublicKey) {
         this.sshPublicKey = sshPublicKey;
     }
 
-    public UserProfile withSshPublicKey(String sshPublicKey) {
+    public UserProfile withSshPublicKey(CharSequence sshPublicKey) {
         this.sshPublicKey = sshPublicKey;
         return this;
     }
@@ -128,7 +128,7 @@ public class UserProfile {
      * 
      */
     @JsonProperty("SshUsername")
-    public String getSshUsername() {
+    public CharSequence getSshUsername() {
         return sshUsername;
     }
 
@@ -137,11 +137,11 @@ public class UserProfile {
      * 
      */
     @JsonProperty("SshUsername")
-    public void setSshUsername(String sshUsername) {
+    public void setSshUsername(CharSequence sshUsername) {
         this.sshUsername = sshUsername;
     }
 
-    public UserProfile withSshUsername(String sshUsername) {
+    public UserProfile withSshUsername(CharSequence sshUsername) {
         this.sshUsername = sshUsername;
         return this;
     }

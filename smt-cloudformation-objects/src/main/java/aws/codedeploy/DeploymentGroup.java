@@ -52,7 +52,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-applicationname")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * AutoRollbackConfiguration
      * <p>
@@ -69,7 +69,7 @@ public class DeploymentGroup {
     @JsonProperty("AutoScalingGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autoscalinggroups")
-    private Set<String> autoScalingGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> autoScalingGroups = new LinkedHashSet<CharSequence>();
     /**
      * Deployment
      * <p>
@@ -85,14 +85,14 @@ public class DeploymentGroup {
      */
     @JsonProperty("DeploymentConfigName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentconfigname")
-    private String deploymentConfigName;
+    private CharSequence deploymentConfigName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentgroupname
      * 
      */
     @JsonProperty("DeploymentGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentgroupname")
-    private String deploymentGroupName;
+    private CharSequence deploymentGroupName;
     /**
      * DeploymentStyle
      * <p>
@@ -133,7 +133,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("ServiceRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn")
-    private String serviceRoleArn;
+    private CharSequence serviceRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-triggerconfigurations
      * 
@@ -175,7 +175,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -184,11 +184,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public DeploymentGroup withApplicationName(String applicationName) {
+    public DeploymentGroup withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -225,7 +225,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("AutoScalingGroups")
-    public Set<String> getAutoScalingGroups() {
+    public Set<CharSequence> getAutoScalingGroups() {
         return autoScalingGroups;
     }
 
@@ -234,11 +234,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("AutoScalingGroups")
-    public void setAutoScalingGroups(Set<String> autoScalingGroups) {
+    public void setAutoScalingGroups(Set<CharSequence> autoScalingGroups) {
         this.autoScalingGroups = autoScalingGroups;
     }
 
-    public DeploymentGroup withAutoScalingGroups(Set<String> autoScalingGroups) {
+    public DeploymentGroup withAutoScalingGroups(Set<CharSequence> autoScalingGroups) {
         this.autoScalingGroups = autoScalingGroups;
         return this;
     }
@@ -275,7 +275,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("DeploymentConfigName")
-    public String getDeploymentConfigName() {
+    public CharSequence getDeploymentConfigName() {
         return deploymentConfigName;
     }
 
@@ -284,11 +284,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("DeploymentConfigName")
-    public void setDeploymentConfigName(String deploymentConfigName) {
+    public void setDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
     }
 
-    public DeploymentGroup withDeploymentConfigName(String deploymentConfigName) {
+    public DeploymentGroup withDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
         return this;
     }
@@ -298,7 +298,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("DeploymentGroupName")
-    public String getDeploymentGroupName() {
+    public CharSequence getDeploymentGroupName() {
         return deploymentGroupName;
     }
 
@@ -307,11 +307,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("DeploymentGroupName")
-    public void setDeploymentGroupName(String deploymentGroupName) {
+    public void setDeploymentGroupName(CharSequence deploymentGroupName) {
         this.deploymentGroupName = deploymentGroupName;
     }
 
-    public DeploymentGroup withDeploymentGroupName(String deploymentGroupName) {
+    public DeploymentGroup withDeploymentGroupName(CharSequence deploymentGroupName) {
         this.deploymentGroupName = deploymentGroupName;
         return this;
     }
@@ -421,7 +421,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public String getServiceRoleArn() {
+    public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
 
@@ -430,11 +430,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public void setServiceRoleArn(String serviceRoleArn) {
+    public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
 
-    public DeploymentGroup withServiceRoleArn(String serviceRoleArn) {
+    public DeploymentGroup withServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
         return this;
     }

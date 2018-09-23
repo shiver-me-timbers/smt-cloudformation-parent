@@ -34,14 +34,14 @@ public class DBClusterParameterGroup {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-family
      * 
      */
     @JsonProperty("Family")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-family")
-    private String family;
+    private CharSequence family;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-parameters
      * 
@@ -62,7 +62,7 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -71,11 +71,11 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public DBClusterParameterGroup withDescription(String description) {
+    public DBClusterParameterGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -85,7 +85,7 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonProperty("Family")
-    public String getFamily() {
+    public CharSequence getFamily() {
         return family;
     }
 
@@ -94,11 +94,11 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonProperty("Family")
-    public void setFamily(String family) {
+    public void setFamily(CharSequence family) {
         this.family = family;
     }
 
-    public DBClusterParameterGroup withFamily(String family) {
+    public DBClusterParameterGroup withFamily(CharSequence family) {
         this.family = family;
         return this;
     }

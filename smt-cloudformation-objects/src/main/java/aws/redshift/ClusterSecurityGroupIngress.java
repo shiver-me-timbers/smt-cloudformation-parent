@@ -31,35 +31,35 @@ public class ClusterSecurityGroupIngress {
      */
     @JsonProperty("CIDRIP")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-cidrip")
-    private String cIDRIP;
+    private CharSequence cIDRIP;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-clustersecuritygroupname
      * 
      */
     @JsonProperty("ClusterSecurityGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-clustersecuritygroupname")
-    private String clusterSecurityGroupName;
+    private CharSequence clusterSecurityGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupname
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupname")
-    private String eC2SecurityGroupName;
+    private CharSequence eC2SecurityGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupownerid
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupownerid")
-    private String eC2SecurityGroupOwnerId;
+    private CharSequence eC2SecurityGroupOwnerId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-cidrip
      * 
      */
     @JsonProperty("CIDRIP")
-    public String getCIDRIP() {
+    public CharSequence getCIDRIP() {
         return cIDRIP;
     }
 
@@ -68,11 +68,11 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("CIDRIP")
-    public void setCIDRIP(String cIDRIP) {
+    public void setCIDRIP(CharSequence cIDRIP) {
         this.cIDRIP = cIDRIP;
     }
 
-    public ClusterSecurityGroupIngress withCIDRIP(String cIDRIP) {
+    public ClusterSecurityGroupIngress withCIDRIP(CharSequence cIDRIP) {
         this.cIDRIP = cIDRIP;
         return this;
     }
@@ -82,7 +82,7 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("ClusterSecurityGroupName")
-    public String getClusterSecurityGroupName() {
+    public CharSequence getClusterSecurityGroupName() {
         return clusterSecurityGroupName;
     }
 
@@ -91,11 +91,11 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("ClusterSecurityGroupName")
-    public void setClusterSecurityGroupName(String clusterSecurityGroupName) {
+    public void setClusterSecurityGroupName(CharSequence clusterSecurityGroupName) {
         this.clusterSecurityGroupName = clusterSecurityGroupName;
     }
 
-    public ClusterSecurityGroupIngress withClusterSecurityGroupName(String clusterSecurityGroupName) {
+    public ClusterSecurityGroupIngress withClusterSecurityGroupName(CharSequence clusterSecurityGroupName) {
         this.clusterSecurityGroupName = clusterSecurityGroupName;
         return this;
     }
@@ -105,7 +105,7 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
-    public String getEC2SecurityGroupName() {
+    public CharSequence getEC2SecurityGroupName() {
         return eC2SecurityGroupName;
     }
 
@@ -114,11 +114,11 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
-    public void setEC2SecurityGroupName(String eC2SecurityGroupName) {
+    public void setEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
     }
 
-    public ClusterSecurityGroupIngress withEC2SecurityGroupName(String eC2SecurityGroupName) {
+    public ClusterSecurityGroupIngress withEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
         return this;
     }
@@ -128,7 +128,7 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
-    public String getEC2SecurityGroupOwnerId() {
+    public CharSequence getEC2SecurityGroupOwnerId() {
         return eC2SecurityGroupOwnerId;
     }
 
@@ -137,11 +137,11 @@ public class ClusterSecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
-    public void setEC2SecurityGroupOwnerId(String eC2SecurityGroupOwnerId) {
+    public void setEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
     }
 
-    public ClusterSecurityGroupIngress withEC2SecurityGroupOwnerId(String eC2SecurityGroupOwnerId) {
+    public ClusterSecurityGroupIngress withEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
         return this;
     }

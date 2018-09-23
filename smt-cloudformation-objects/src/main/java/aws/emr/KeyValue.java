@@ -29,21 +29,21 @@ public class KeyValue {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html#cfn-elasticmapreduce-step-keyvalue-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html#cfn-elasticmapreduce-step-keyvalue-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html#cfn-elasticmapreduce-step-keyvalue-value")
-    private String value;
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html#cfn-elasticmapreduce-step-keyvalue-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -52,11 +52,11 @@ public class KeyValue {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public KeyValue withKey(String key) {
+    public KeyValue withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -66,7 +66,7 @@ public class KeyValue {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -75,11 +75,11 @@ public class KeyValue {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public KeyValue withValue(String value) {
+    public KeyValue withValue(CharSequence value) {
         this.value = value;
         return this;
     }

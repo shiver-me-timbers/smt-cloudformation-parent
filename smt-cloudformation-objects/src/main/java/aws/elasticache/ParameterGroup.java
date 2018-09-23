@@ -31,14 +31,14 @@ public class ParameterGroup {
      */
     @JsonProperty("CacheParameterGroupFamily")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-cacheparametergroupfamily")
-    private java.lang.String cacheParameterGroupFamily;
+    private CharSequence cacheParameterGroupFamily;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-properties
      * 
@@ -52,7 +52,7 @@ public class ParameterGroup {
      * 
      */
     @JsonProperty("CacheParameterGroupFamily")
-    public java.lang.String getCacheParameterGroupFamily() {
+    public CharSequence getCacheParameterGroupFamily() {
         return cacheParameterGroupFamily;
     }
 
@@ -61,11 +61,11 @@ public class ParameterGroup {
      * 
      */
     @JsonProperty("CacheParameterGroupFamily")
-    public void setCacheParameterGroupFamily(java.lang.String cacheParameterGroupFamily) {
+    public void setCacheParameterGroupFamily(CharSequence cacheParameterGroupFamily) {
         this.cacheParameterGroupFamily = cacheParameterGroupFamily;
     }
 
-    public ParameterGroup withCacheParameterGroupFamily(java.lang.String cacheParameterGroupFamily) {
+    public ParameterGroup withCacheParameterGroupFamily(CharSequence cacheParameterGroupFamily) {
         this.cacheParameterGroupFamily = cacheParameterGroupFamily;
         return this;
     }
@@ -75,7 +75,7 @@ public class ParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -84,11 +84,11 @@ public class ParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ParameterGroup withDescription(java.lang.String description) {
+    public ParameterGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }

@@ -55,7 +55,7 @@ public class InstanceNetworkInterfaceSpecification {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deviceindex
      * 
@@ -70,7 +70,7 @@ public class InstanceNetworkInterfaceSpecification {
     @JsonProperty("Groups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-groups")
-    private Set<String> groups = new LinkedHashSet<String>();
+    private Set<CharSequence> groups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresscount
      * 
@@ -92,7 +92,7 @@ public class InstanceNetworkInterfaceSpecification {
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-networkinterfaceid")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-privateipaddresses
      * 
@@ -114,7 +114,7 @@ public class InstanceNetworkInterfaceSpecification {
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress
@@ -167,7 +167,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -176,11 +176,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public InstanceNetworkInterfaceSpecification withDescription(String description) {
+    public InstanceNetworkInterfaceSpecification withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -213,7 +213,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("Groups")
-    public Set<String> getGroups() {
+    public Set<CharSequence> getGroups() {
         return groups;
     }
 
@@ -222,11 +222,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("Groups")
-    public void setGroups(Set<String> groups) {
+    public void setGroups(Set<CharSequence> groups) {
         this.groups = groups;
     }
 
-    public InstanceNetworkInterfaceSpecification withGroups(Set<String> groups) {
+    public InstanceNetworkInterfaceSpecification withGroups(Set<CharSequence> groups) {
         this.groups = groups;
         return this;
     }
@@ -282,7 +282,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -291,11 +291,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public InstanceNetworkInterfaceSpecification withNetworkInterfaceId(String networkInterfaceId) {
+    public InstanceNetworkInterfaceSpecification withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }
@@ -351,7 +351,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -360,11 +360,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public InstanceNetworkInterfaceSpecification withSubnetId(String subnetId) {
+    public InstanceNetworkInterfaceSpecification withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

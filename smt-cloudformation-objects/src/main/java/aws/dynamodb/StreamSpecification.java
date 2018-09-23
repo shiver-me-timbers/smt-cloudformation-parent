@@ -28,14 +28,14 @@ public class StreamSpecification {
      */
     @JsonProperty("StreamViewType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype")
-    private String streamViewType;
+    private CharSequence streamViewType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype
      * 
      */
     @JsonProperty("StreamViewType")
-    public String getStreamViewType() {
+    public CharSequence getStreamViewType() {
         return streamViewType;
     }
 
@@ -44,11 +44,11 @@ public class StreamSpecification {
      * 
      */
     @JsonProperty("StreamViewType")
-    public void setStreamViewType(String streamViewType) {
+    public void setStreamViewType(CharSequence streamViewType) {
         this.streamViewType = streamViewType;
     }
 
-    public StreamSpecification withStreamViewType(String streamViewType) {
+    public StreamSpecification withStreamViewType(CharSequence streamViewType) {
         this.streamViewType = streamViewType;
         return this;
     }

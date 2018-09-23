@@ -71,7 +71,7 @@ public class Layer {
      */
     @JsonProperty("CustomInstanceProfileArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn")
-    private java.lang.String customInstanceProfileArn;
+    private CharSequence customInstanceProfileArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
@@ -94,7 +94,7 @@ public class Layer {
      */
     @JsonProperty("CustomSecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids")
-    private List<java.lang.String> customSecurityGroupIds = new ArrayList<java.lang.String>();
+    private List<CharSequence> customSecurityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing
      * 
@@ -133,28 +133,28 @@ public class Layer {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages
      * 
      */
     @JsonProperty("Packages")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages")
-    private List<java.lang.String> packages = new ArrayList<java.lang.String>();
+    private List<CharSequence> packages = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname
      * 
      */
     @JsonProperty("Shortname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname")
-    private java.lang.String shortname;
+    private CharSequence shortname;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid
      * 
      */
     @JsonProperty("StackId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid")
-    private java.lang.String stackId;
+    private CharSequence stackId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags
      * 
@@ -168,7 +168,7 @@ public class Layer {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type")
-    private java.lang.String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances
      * 
@@ -258,7 +258,7 @@ public class Layer {
      * 
      */
     @JsonProperty("CustomInstanceProfileArn")
-    public java.lang.String getCustomInstanceProfileArn() {
+    public CharSequence getCustomInstanceProfileArn() {
         return customInstanceProfileArn;
     }
 
@@ -267,11 +267,11 @@ public class Layer {
      * 
      */
     @JsonProperty("CustomInstanceProfileArn")
-    public void setCustomInstanceProfileArn(java.lang.String customInstanceProfileArn) {
+    public void setCustomInstanceProfileArn(CharSequence customInstanceProfileArn) {
         this.customInstanceProfileArn = customInstanceProfileArn;
     }
 
-    public Layer withCustomInstanceProfileArn(java.lang.String customInstanceProfileArn) {
+    public Layer withCustomInstanceProfileArn(CharSequence customInstanceProfileArn) {
         this.customInstanceProfileArn = customInstanceProfileArn;
         return this;
     }
@@ -331,7 +331,7 @@ public class Layer {
      * 
      */
     @JsonProperty("CustomSecurityGroupIds")
-    public List<java.lang.String> getCustomSecurityGroupIds() {
+    public List<CharSequence> getCustomSecurityGroupIds() {
         return customSecurityGroupIds;
     }
 
@@ -340,11 +340,11 @@ public class Layer {
      * 
      */
     @JsonProperty("CustomSecurityGroupIds")
-    public void setCustomSecurityGroupIds(List<java.lang.String> customSecurityGroupIds) {
+    public void setCustomSecurityGroupIds(List<CharSequence> customSecurityGroupIds) {
         this.customSecurityGroupIds = customSecurityGroupIds;
     }
 
-    public Layer withCustomSecurityGroupIds(List<java.lang.String> customSecurityGroupIds) {
+    public Layer withCustomSecurityGroupIds(List<CharSequence> customSecurityGroupIds) {
         this.customSecurityGroupIds = customSecurityGroupIds;
         return this;
     }
@@ -454,7 +454,7 @@ public class Layer {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -463,11 +463,11 @@ public class Layer {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Layer withName(java.lang.String name) {
+    public Layer withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -477,7 +477,7 @@ public class Layer {
      * 
      */
     @JsonProperty("Packages")
-    public List<java.lang.String> getPackages() {
+    public List<CharSequence> getPackages() {
         return packages;
     }
 
@@ -486,11 +486,11 @@ public class Layer {
      * 
      */
     @JsonProperty("Packages")
-    public void setPackages(List<java.lang.String> packages) {
+    public void setPackages(List<CharSequence> packages) {
         this.packages = packages;
     }
 
-    public Layer withPackages(List<java.lang.String> packages) {
+    public Layer withPackages(List<CharSequence> packages) {
         this.packages = packages;
         return this;
     }
@@ -500,7 +500,7 @@ public class Layer {
      * 
      */
     @JsonProperty("Shortname")
-    public java.lang.String getShortname() {
+    public CharSequence getShortname() {
         return shortname;
     }
 
@@ -509,11 +509,11 @@ public class Layer {
      * 
      */
     @JsonProperty("Shortname")
-    public void setShortname(java.lang.String shortname) {
+    public void setShortname(CharSequence shortname) {
         this.shortname = shortname;
     }
 
-    public Layer withShortname(java.lang.String shortname) {
+    public Layer withShortname(CharSequence shortname) {
         this.shortname = shortname;
         return this;
     }
@@ -523,7 +523,7 @@ public class Layer {
      * 
      */
     @JsonProperty("StackId")
-    public java.lang.String getStackId() {
+    public CharSequence getStackId() {
         return stackId;
     }
 
@@ -532,11 +532,11 @@ public class Layer {
      * 
      */
     @JsonProperty("StackId")
-    public void setStackId(java.lang.String stackId) {
+    public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
 
-    public Layer withStackId(java.lang.String stackId) {
+    public Layer withStackId(CharSequence stackId) {
         this.stackId = stackId;
         return this;
     }
@@ -569,7 +569,7 @@ public class Layer {
      * 
      */
     @JsonProperty("Type")
-    public java.lang.String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -578,11 +578,11 @@ public class Layer {
      * 
      */
     @JsonProperty("Type")
-    public void setType(java.lang.String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Layer withType(java.lang.String type) {
+    public Layer withType(CharSequence type) {
         this.type = type;
         return this;
     }

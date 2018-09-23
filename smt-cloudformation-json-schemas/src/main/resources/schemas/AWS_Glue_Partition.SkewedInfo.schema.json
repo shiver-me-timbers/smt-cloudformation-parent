@@ -10,14 +10,16 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-skewedinfo.html#cfn-glue-partition-skewedinfo-skewedcolumnnames",
       "type" : "array",
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "SkewedColumnValues" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-skewedinfo.html#cfn-glue-partition-skewedinfo-skewedcolumnvalues",
       "type" : "array",
       "items" : {
-        "type" : "string"
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
       }
     },
     "SkewedColumnValueLocationMaps" : {

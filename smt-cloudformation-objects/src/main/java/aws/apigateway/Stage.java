@@ -48,35 +48,35 @@ public class Stage {
      */
     @JsonProperty("CacheClusterSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize")
-    private java.lang.String cacheClusterSize;
+    private CharSequence cacheClusterSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
      */
     @JsonProperty("ClientCertificateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid")
-    private java.lang.String clientCertificateId;
+    private CharSequence clientCertificateId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-deploymentid
      * 
      */
     @JsonProperty("DeploymentId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-deploymentid")
-    private java.lang.String deploymentId;
+    private CharSequence deploymentId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-documentationversion
      * 
      */
     @JsonProperty("DocumentationVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-documentationversion")
-    private java.lang.String documentationVersion;
+    private CharSequence documentationVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-methodsettings
      * 
@@ -91,14 +91,14 @@ public class Stage {
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-restapiid")
-    private java.lang.String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename
      * 
      */
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename")
-    private java.lang.String stageName;
+    private CharSequence stageName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
@@ -135,7 +135,7 @@ public class Stage {
      * 
      */
     @JsonProperty("CacheClusterSize")
-    public java.lang.String getCacheClusterSize() {
+    public CharSequence getCacheClusterSize() {
         return cacheClusterSize;
     }
 
@@ -144,11 +144,11 @@ public class Stage {
      * 
      */
     @JsonProperty("CacheClusterSize")
-    public void setCacheClusterSize(java.lang.String cacheClusterSize) {
+    public void setCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
     }
 
-    public Stage withCacheClusterSize(java.lang.String cacheClusterSize) {
+    public Stage withCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
         return this;
     }
@@ -158,7 +158,7 @@ public class Stage {
      * 
      */
     @JsonProperty("ClientCertificateId")
-    public java.lang.String getClientCertificateId() {
+    public CharSequence getClientCertificateId() {
         return clientCertificateId;
     }
 
@@ -167,11 +167,11 @@ public class Stage {
      * 
      */
     @JsonProperty("ClientCertificateId")
-    public void setClientCertificateId(java.lang.String clientCertificateId) {
+    public void setClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
     }
 
-    public Stage withClientCertificateId(java.lang.String clientCertificateId) {
+    public Stage withClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
         return this;
     }
@@ -181,7 +181,7 @@ public class Stage {
      * 
      */
     @JsonProperty("DeploymentId")
-    public java.lang.String getDeploymentId() {
+    public CharSequence getDeploymentId() {
         return deploymentId;
     }
 
@@ -190,11 +190,11 @@ public class Stage {
      * 
      */
     @JsonProperty("DeploymentId")
-    public void setDeploymentId(java.lang.String deploymentId) {
+    public void setDeploymentId(CharSequence deploymentId) {
         this.deploymentId = deploymentId;
     }
 
-    public Stage withDeploymentId(java.lang.String deploymentId) {
+    public Stage withDeploymentId(CharSequence deploymentId) {
         this.deploymentId = deploymentId;
         return this;
     }
@@ -204,7 +204,7 @@ public class Stage {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -213,11 +213,11 @@ public class Stage {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Stage withDescription(java.lang.String description) {
+    public Stage withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -227,7 +227,7 @@ public class Stage {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public java.lang.String getDocumentationVersion() {
+    public CharSequence getDocumentationVersion() {
         return documentationVersion;
     }
 
@@ -236,11 +236,11 @@ public class Stage {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public void setDocumentationVersion(java.lang.String documentationVersion) {
+    public void setDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
     }
 
-    public Stage withDocumentationVersion(java.lang.String documentationVersion) {
+    public Stage withDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
         return this;
     }
@@ -273,7 +273,7 @@ public class Stage {
      * 
      */
     @JsonProperty("RestApiId")
-    public java.lang.String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -282,11 +282,11 @@ public class Stage {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(java.lang.String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Stage withRestApiId(java.lang.String restApiId) {
+    public Stage withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -296,7 +296,7 @@ public class Stage {
      * 
      */
     @JsonProperty("StageName")
-    public java.lang.String getStageName() {
+    public CharSequence getStageName() {
         return stageName;
     }
 
@@ -305,11 +305,11 @@ public class Stage {
      * 
      */
     @JsonProperty("StageName")
-    public void setStageName(java.lang.String stageName) {
+    public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }
 
-    public Stage withStageName(java.lang.String stageName) {
+    public Stage withStageName(CharSequence stageName) {
         this.stageName = stageName;
         return this;
     }

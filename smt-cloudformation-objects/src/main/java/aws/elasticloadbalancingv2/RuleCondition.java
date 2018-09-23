@@ -32,7 +32,7 @@ public class RuleCondition {
      */
     @JsonProperty("Field")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field")
-    private String field;
+    private CharSequence field;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values
      * 
@@ -40,14 +40,14 @@ public class RuleCondition {
     @JsonProperty("Values")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values")
-    private Set<String> values = new LinkedHashSet<String>();
+    private Set<CharSequence> values = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field
      * 
      */
     @JsonProperty("Field")
-    public String getField() {
+    public CharSequence getField() {
         return field;
     }
 
@@ -56,11 +56,11 @@ public class RuleCondition {
      * 
      */
     @JsonProperty("Field")
-    public void setField(String field) {
+    public void setField(CharSequence field) {
         this.field = field;
     }
 
-    public RuleCondition withField(String field) {
+    public RuleCondition withField(CharSequence field) {
         this.field = field;
         return this;
     }
@@ -70,7 +70,7 @@ public class RuleCondition {
      * 
      */
     @JsonProperty("Values")
-    public Set<String> getValues() {
+    public Set<CharSequence> getValues() {
         return values;
     }
 
@@ -79,11 +79,11 @@ public class RuleCondition {
      * 
      */
     @JsonProperty("Values")
-    public void setValues(Set<String> values) {
+    public void setValues(Set<CharSequence> values) {
         this.values = values;
     }
 
-    public RuleCondition withValues(Set<String> values) {
+    public RuleCondition withValues(Set<CharSequence> values) {
         this.values = values;
         return this;
     }

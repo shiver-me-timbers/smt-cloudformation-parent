@@ -29,21 +29,21 @@ public class IamInstanceProfile {
      */
     @JsonProperty("Arn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile-arn")
-    private String arn;
+    private CharSequence arn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile-arn
      * 
      */
     @JsonProperty("Arn")
-    public String getArn() {
+    public CharSequence getArn() {
         return arn;
     }
 
@@ -52,11 +52,11 @@ public class IamInstanceProfile {
      * 
      */
     @JsonProperty("Arn")
-    public void setArn(String arn) {
+    public void setArn(CharSequence arn) {
         this.arn = arn;
     }
 
-    public IamInstanceProfile withArn(String arn) {
+    public IamInstanceProfile withArn(CharSequence arn) {
         this.arn = arn;
         return this;
     }
@@ -66,7 +66,7 @@ public class IamInstanceProfile {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -75,11 +75,11 @@ public class IamInstanceProfile {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public IamInstanceProfile withName(String name) {
+    public IamInstanceProfile withName(CharSequence name) {
         this.name = name;
         return this;
     }

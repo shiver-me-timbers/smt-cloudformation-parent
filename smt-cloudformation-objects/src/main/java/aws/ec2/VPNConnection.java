@@ -39,7 +39,7 @@ public class VPNConnection {
      */
     @JsonProperty("CustomerGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid")
-    private String customerGatewayId;
+    private CharSequence customerGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly
      * 
@@ -60,14 +60,14 @@ public class VPNConnection {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid
      * 
      */
     @JsonProperty("VpnGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid")
-    private String vpnGatewayId;
+    private CharSequence vpnGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications
      * 
@@ -82,7 +82,7 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("CustomerGatewayId")
-    public String getCustomerGatewayId() {
+    public CharSequence getCustomerGatewayId() {
         return customerGatewayId;
     }
 
@@ -91,11 +91,11 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("CustomerGatewayId")
-    public void setCustomerGatewayId(String customerGatewayId) {
+    public void setCustomerGatewayId(CharSequence customerGatewayId) {
         this.customerGatewayId = customerGatewayId;
     }
 
-    public VPNConnection withCustomerGatewayId(String customerGatewayId) {
+    public VPNConnection withCustomerGatewayId(CharSequence customerGatewayId) {
         this.customerGatewayId = customerGatewayId;
         return this;
     }
@@ -151,7 +151,7 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -160,11 +160,11 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public VPNConnection withType(String type) {
+    public VPNConnection withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -174,7 +174,7 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public String getVpnGatewayId() {
+    public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
 
@@ -183,11 +183,11 @@ public class VPNConnection {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public void setVpnGatewayId(String vpnGatewayId) {
+    public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }
 
-    public VPNConnection withVpnGatewayId(String vpnGatewayId) {
+    public VPNConnection withVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
         return this;
     }

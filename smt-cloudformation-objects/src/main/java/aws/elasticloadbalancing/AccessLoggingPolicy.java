@@ -45,14 +45,14 @@ public class AccessLoggingPolicy {
      */
     @JsonProperty("S3BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketname")
-    private String s3BucketName;
+    private CharSequence s3BucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketprefix
      * 
      */
     @JsonProperty("S3BucketPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketprefix")
-    private String s3BucketPrefix;
+    private CharSequence s3BucketPrefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval
@@ -105,7 +105,7 @@ public class AccessLoggingPolicy {
      * 
      */
     @JsonProperty("S3BucketName")
-    public String getS3BucketName() {
+    public CharSequence getS3BucketName() {
         return s3BucketName;
     }
 
@@ -114,11 +114,11 @@ public class AccessLoggingPolicy {
      * 
      */
     @JsonProperty("S3BucketName")
-    public void setS3BucketName(String s3BucketName) {
+    public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
 
-    public AccessLoggingPolicy withS3BucketName(String s3BucketName) {
+    public AccessLoggingPolicy withS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
         return this;
     }
@@ -128,7 +128,7 @@ public class AccessLoggingPolicy {
      * 
      */
     @JsonProperty("S3BucketPrefix")
-    public String getS3BucketPrefix() {
+    public CharSequence getS3BucketPrefix() {
         return s3BucketPrefix;
     }
 
@@ -137,11 +137,11 @@ public class AccessLoggingPolicy {
      * 
      */
     @JsonProperty("S3BucketPrefix")
-    public void setS3BucketPrefix(String s3BucketPrefix) {
+    public void setS3BucketPrefix(CharSequence s3BucketPrefix) {
         this.s3BucketPrefix = s3BucketPrefix;
     }
 
-    public AccessLoggingPolicy withS3BucketPrefix(String s3BucketPrefix) {
+    public AccessLoggingPolicy withS3BucketPrefix(CharSequence s3BucketPrefix) {
         this.s3BucketPrefix = s3BucketPrefix;
         return this;
     }

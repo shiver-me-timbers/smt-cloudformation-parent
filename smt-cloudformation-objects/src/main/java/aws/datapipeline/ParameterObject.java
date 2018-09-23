@@ -38,7 +38,7 @@ public class ParameterObject {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html#cfn-datapipeline-pipeline-parameterobjects-id")
-    private String id;
+    private CharSequence id;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html#cfn-datapipeline-pipeline-parameterobjects-attributes
@@ -68,7 +68,7 @@ public class ParameterObject {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -77,11 +77,11 @@ public class ParameterObject {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public ParameterObject withId(String id) {
+    public ParameterObject withId(CharSequence id) {
         this.id = id;
         return this;
     }

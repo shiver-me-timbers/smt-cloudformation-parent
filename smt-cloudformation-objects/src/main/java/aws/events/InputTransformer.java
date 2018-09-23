@@ -37,7 +37,7 @@ public class InputTransformer {
      */
     @JsonProperty("InputTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputtemplate")
-    private java.lang.String inputTemplate;
+    private CharSequence inputTemplate;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputpathsmap
@@ -67,7 +67,7 @@ public class InputTransformer {
      * 
      */
     @JsonProperty("InputTemplate")
-    public java.lang.String getInputTemplate() {
+    public CharSequence getInputTemplate() {
         return inputTemplate;
     }
 
@@ -76,11 +76,11 @@ public class InputTransformer {
      * 
      */
     @JsonProperty("InputTemplate")
-    public void setInputTemplate(java.lang.String inputTemplate) {
+    public void setInputTemplate(CharSequence inputTemplate) {
         this.inputTemplate = inputTemplate;
     }
 
-    public InputTransformer withInputTemplate(java.lang.String inputTemplate) {
+    public InputTransformer withInputTemplate(CharSequence inputTemplate) {
         this.inputTemplate = inputTemplate;
         return this;
     }

@@ -32,21 +32,21 @@ public class ViewerCertificate {
      */
     @JsonProperty("IamCertificateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid")
-    private String iamCertificateId;
+    private CharSequence iamCertificateId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod
      * 
      */
     @JsonProperty("SslSupportMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod")
-    private String sslSupportMethod;
+    private CharSequence sslSupportMethod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion
      * 
      */
     @JsonProperty("MinimumProtocolVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion")
-    private String minimumProtocolVersion;
+    private CharSequence minimumProtocolVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate
      * 
@@ -60,14 +60,14 @@ public class ViewerCertificate {
      */
     @JsonProperty("AcmCertificateArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn")
-    private String acmCertificateArn;
+    private CharSequence acmCertificateArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid
      * 
      */
     @JsonProperty("IamCertificateId")
-    public String getIamCertificateId() {
+    public CharSequence getIamCertificateId() {
         return iamCertificateId;
     }
 
@@ -76,11 +76,11 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("IamCertificateId")
-    public void setIamCertificateId(String iamCertificateId) {
+    public void setIamCertificateId(CharSequence iamCertificateId) {
         this.iamCertificateId = iamCertificateId;
     }
 
-    public ViewerCertificate withIamCertificateId(String iamCertificateId) {
+    public ViewerCertificate withIamCertificateId(CharSequence iamCertificateId) {
         this.iamCertificateId = iamCertificateId;
         return this;
     }
@@ -90,7 +90,7 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("SslSupportMethod")
-    public String getSslSupportMethod() {
+    public CharSequence getSslSupportMethod() {
         return sslSupportMethod;
     }
 
@@ -99,11 +99,11 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("SslSupportMethod")
-    public void setSslSupportMethod(String sslSupportMethod) {
+    public void setSslSupportMethod(CharSequence sslSupportMethod) {
         this.sslSupportMethod = sslSupportMethod;
     }
 
-    public ViewerCertificate withSslSupportMethod(String sslSupportMethod) {
+    public ViewerCertificate withSslSupportMethod(CharSequence sslSupportMethod) {
         this.sslSupportMethod = sslSupportMethod;
         return this;
     }
@@ -113,7 +113,7 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("MinimumProtocolVersion")
-    public String getMinimumProtocolVersion() {
+    public CharSequence getMinimumProtocolVersion() {
         return minimumProtocolVersion;
     }
 
@@ -122,11 +122,11 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("MinimumProtocolVersion")
-    public void setMinimumProtocolVersion(String minimumProtocolVersion) {
+    public void setMinimumProtocolVersion(CharSequence minimumProtocolVersion) {
         this.minimumProtocolVersion = minimumProtocolVersion;
     }
 
-    public ViewerCertificate withMinimumProtocolVersion(String minimumProtocolVersion) {
+    public ViewerCertificate withMinimumProtocolVersion(CharSequence minimumProtocolVersion) {
         this.minimumProtocolVersion = minimumProtocolVersion;
         return this;
     }
@@ -159,7 +159,7 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("AcmCertificateArn")
-    public String getAcmCertificateArn() {
+    public CharSequence getAcmCertificateArn() {
         return acmCertificateArn;
     }
 
@@ -168,11 +168,11 @@ public class ViewerCertificate {
      * 
      */
     @JsonProperty("AcmCertificateArn")
-    public void setAcmCertificateArn(String acmCertificateArn) {
+    public void setAcmCertificateArn(CharSequence acmCertificateArn) {
         this.acmCertificateArn = acmCertificateArn;
     }
 
-    public ViewerCertificate withAcmCertificateArn(String acmCertificateArn) {
+    public ViewerCertificate withAcmCertificateArn(CharSequence acmCertificateArn) {
         this.acmCertificateArn = acmCertificateArn;
         return this;
     }

@@ -33,49 +33,49 @@ public class Source {
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-pw")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-revision
      * 
      */
     @JsonProperty("Revision")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-revision")
-    private String revision;
+    private CharSequence revision;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-sshkey
      * 
      */
     @JsonProperty("SshKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-sshkey")
-    private String sshKey;
+    private CharSequence sshKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-url
      * 
      */
     @JsonProperty("Url")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-url")
-    private String url;
+    private CharSequence url;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-username
      * 
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-username")
-    private String username;
+    private CharSequence username;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-pw
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -84,11 +84,11 @@ public class Source {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public Source withPassword(String password) {
+    public Source withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -98,7 +98,7 @@ public class Source {
      * 
      */
     @JsonProperty("Revision")
-    public String getRevision() {
+    public CharSequence getRevision() {
         return revision;
     }
 
@@ -107,11 +107,11 @@ public class Source {
      * 
      */
     @JsonProperty("Revision")
-    public void setRevision(String revision) {
+    public void setRevision(CharSequence revision) {
         this.revision = revision;
     }
 
-    public Source withRevision(String revision) {
+    public Source withRevision(CharSequence revision) {
         this.revision = revision;
         return this;
     }
@@ -121,7 +121,7 @@ public class Source {
      * 
      */
     @JsonProperty("SshKey")
-    public String getSshKey() {
+    public CharSequence getSshKey() {
         return sshKey;
     }
 
@@ -130,11 +130,11 @@ public class Source {
      * 
      */
     @JsonProperty("SshKey")
-    public void setSshKey(String sshKey) {
+    public void setSshKey(CharSequence sshKey) {
         this.sshKey = sshKey;
     }
 
-    public Source withSshKey(String sshKey) {
+    public Source withSshKey(CharSequence sshKey) {
         this.sshKey = sshKey;
         return this;
     }
@@ -144,7 +144,7 @@ public class Source {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -153,11 +153,11 @@ public class Source {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Source withType(String type) {
+    public Source withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -167,7 +167,7 @@ public class Source {
      * 
      */
     @JsonProperty("Url")
-    public String getUrl() {
+    public CharSequence getUrl() {
         return url;
     }
 
@@ -176,11 +176,11 @@ public class Source {
      * 
      */
     @JsonProperty("Url")
-    public void setUrl(String url) {
+    public void setUrl(CharSequence url) {
         this.url = url;
     }
 
-    public Source withUrl(String url) {
+    public Source withUrl(CharSequence url) {
         this.url = url;
         return this;
     }
@@ -190,7 +190,7 @@ public class Source {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -199,11 +199,11 @@ public class Source {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public Source withUsername(String username) {
+    public Source withUsername(CharSequence username) {
         this.username = username;
         return this;
     }

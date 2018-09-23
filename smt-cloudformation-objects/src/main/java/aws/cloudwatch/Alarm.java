@@ -54,28 +54,28 @@ public class Alarm {
      */
     @JsonProperty("AlarmActions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmactions")
-    private List<String> alarmActions = new ArrayList<String>();
+    private List<CharSequence> alarmActions = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmdescription
      * 
      */
     @JsonProperty("AlarmDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmdescription")
-    private String alarmDescription;
+    private CharSequence alarmDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmname
      * 
      */
     @JsonProperty("AlarmName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmname")
-    private String alarmName;
+    private CharSequence alarmName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-comparisonoperator
      * 
      */
     @JsonProperty("ComparisonOperator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-comparisonoperator")
-    private String comparisonOperator;
+    private CharSequence comparisonOperator;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension
      * 
@@ -89,7 +89,7 @@ public class Alarm {
      */
     @JsonProperty("EvaluateLowSampleCountPercentile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile")
-    private String evaluateLowSampleCountPercentile;
+    private CharSequence evaluateLowSampleCountPercentile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluationperiods
      * 
@@ -103,35 +103,35 @@ public class Alarm {
      */
     @JsonProperty("ExtendedStatistic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-extendedstatistic")
-    private String extendedStatistic;
+    private CharSequence extendedStatistic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-insufficientdataactions
      * 
      */
     @JsonProperty("InsufficientDataActions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-insufficientdataactions")
-    private List<String> insufficientDataActions = new ArrayList<String>();
+    private List<CharSequence> insufficientDataActions = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-metricname
      * 
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace
      * 
      */
     @JsonProperty("Namespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace")
-    private String namespace;
+    private CharSequence namespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-okactions
      * 
      */
     @JsonProperty("OKActions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-okactions")
-    private List<String> oKActions = new ArrayList<String>();
+    private List<CharSequence> oKActions = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-period
      * 
@@ -145,7 +145,7 @@ public class Alarm {
      */
     @JsonProperty("Statistic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-statistic")
-    private String statistic;
+    private CharSequence statistic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-threshold
      * 
@@ -159,14 +159,14 @@ public class Alarm {
      */
     @JsonProperty("TreatMissingData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata")
-    private String treatMissingData;
+    private CharSequence treatMissingData;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-unit
      * 
      */
     @JsonProperty("Unit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-unit")
-    private String unit;
+    private CharSequence unit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-actionsenabled
@@ -196,7 +196,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmActions")
-    public List<String> getAlarmActions() {
+    public List<CharSequence> getAlarmActions() {
         return alarmActions;
     }
 
@@ -205,11 +205,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmActions")
-    public void setAlarmActions(List<String> alarmActions) {
+    public void setAlarmActions(List<CharSequence> alarmActions) {
         this.alarmActions = alarmActions;
     }
 
-    public Alarm withAlarmActions(List<String> alarmActions) {
+    public Alarm withAlarmActions(List<CharSequence> alarmActions) {
         this.alarmActions = alarmActions;
         return this;
     }
@@ -219,7 +219,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmDescription")
-    public String getAlarmDescription() {
+    public CharSequence getAlarmDescription() {
         return alarmDescription;
     }
 
@@ -228,11 +228,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmDescription")
-    public void setAlarmDescription(String alarmDescription) {
+    public void setAlarmDescription(CharSequence alarmDescription) {
         this.alarmDescription = alarmDescription;
     }
 
-    public Alarm withAlarmDescription(String alarmDescription) {
+    public Alarm withAlarmDescription(CharSequence alarmDescription) {
         this.alarmDescription = alarmDescription;
         return this;
     }
@@ -242,7 +242,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmName")
-    public String getAlarmName() {
+    public CharSequence getAlarmName() {
         return alarmName;
     }
 
@@ -251,11 +251,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("AlarmName")
-    public void setAlarmName(String alarmName) {
+    public void setAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
     }
 
-    public Alarm withAlarmName(String alarmName) {
+    public Alarm withAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
         return this;
     }
@@ -265,7 +265,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public String getComparisonOperator() {
+    public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
 
@@ -274,11 +274,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public void setComparisonOperator(String comparisonOperator) {
+    public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
 
-    public Alarm withComparisonOperator(String comparisonOperator) {
+    public Alarm withComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
         return this;
     }
@@ -311,7 +311,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("EvaluateLowSampleCountPercentile")
-    public String getEvaluateLowSampleCountPercentile() {
+    public CharSequence getEvaluateLowSampleCountPercentile() {
         return evaluateLowSampleCountPercentile;
     }
 
@@ -320,11 +320,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("EvaluateLowSampleCountPercentile")
-    public void setEvaluateLowSampleCountPercentile(String evaluateLowSampleCountPercentile) {
+    public void setEvaluateLowSampleCountPercentile(CharSequence evaluateLowSampleCountPercentile) {
         this.evaluateLowSampleCountPercentile = evaluateLowSampleCountPercentile;
     }
 
-    public Alarm withEvaluateLowSampleCountPercentile(String evaluateLowSampleCountPercentile) {
+    public Alarm withEvaluateLowSampleCountPercentile(CharSequence evaluateLowSampleCountPercentile) {
         this.evaluateLowSampleCountPercentile = evaluateLowSampleCountPercentile;
         return this;
     }
@@ -357,7 +357,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("ExtendedStatistic")
-    public String getExtendedStatistic() {
+    public CharSequence getExtendedStatistic() {
         return extendedStatistic;
     }
 
@@ -366,11 +366,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("ExtendedStatistic")
-    public void setExtendedStatistic(String extendedStatistic) {
+    public void setExtendedStatistic(CharSequence extendedStatistic) {
         this.extendedStatistic = extendedStatistic;
     }
 
-    public Alarm withExtendedStatistic(String extendedStatistic) {
+    public Alarm withExtendedStatistic(CharSequence extendedStatistic) {
         this.extendedStatistic = extendedStatistic;
         return this;
     }
@@ -380,7 +380,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("InsufficientDataActions")
-    public List<String> getInsufficientDataActions() {
+    public List<CharSequence> getInsufficientDataActions() {
         return insufficientDataActions;
     }
 
@@ -389,11 +389,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("InsufficientDataActions")
-    public void setInsufficientDataActions(List<String> insufficientDataActions) {
+    public void setInsufficientDataActions(List<CharSequence> insufficientDataActions) {
         this.insufficientDataActions = insufficientDataActions;
     }
 
-    public Alarm withInsufficientDataActions(List<String> insufficientDataActions) {
+    public Alarm withInsufficientDataActions(List<CharSequence> insufficientDataActions) {
         this.insufficientDataActions = insufficientDataActions;
         return this;
     }
@@ -403,7 +403,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -412,11 +412,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public Alarm withMetricName(String metricName) {
+    public Alarm withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -426,7 +426,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("Namespace")
-    public String getNamespace() {
+    public CharSequence getNamespace() {
         return namespace;
     }
 
@@ -435,11 +435,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("Namespace")
-    public void setNamespace(String namespace) {
+    public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
 
-    public Alarm withNamespace(String namespace) {
+    public Alarm withNamespace(CharSequence namespace) {
         this.namespace = namespace;
         return this;
     }
@@ -449,7 +449,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("OKActions")
-    public List<String> getOKActions() {
+    public List<CharSequence> getOKActions() {
         return oKActions;
     }
 
@@ -458,11 +458,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("OKActions")
-    public void setOKActions(List<String> oKActions) {
+    public void setOKActions(List<CharSequence> oKActions) {
         this.oKActions = oKActions;
     }
 
-    public Alarm withOKActions(List<String> oKActions) {
+    public Alarm withOKActions(List<CharSequence> oKActions) {
         this.oKActions = oKActions;
         return this;
     }
@@ -495,7 +495,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("Statistic")
-    public String getStatistic() {
+    public CharSequence getStatistic() {
         return statistic;
     }
 
@@ -504,11 +504,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("Statistic")
-    public void setStatistic(String statistic) {
+    public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
 
-    public Alarm withStatistic(String statistic) {
+    public Alarm withStatistic(CharSequence statistic) {
         this.statistic = statistic;
         return this;
     }
@@ -541,7 +541,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("TreatMissingData")
-    public String getTreatMissingData() {
+    public CharSequence getTreatMissingData() {
         return treatMissingData;
     }
 
@@ -550,11 +550,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("TreatMissingData")
-    public void setTreatMissingData(String treatMissingData) {
+    public void setTreatMissingData(CharSequence treatMissingData) {
         this.treatMissingData = treatMissingData;
     }
 
-    public Alarm withTreatMissingData(String treatMissingData) {
+    public Alarm withTreatMissingData(CharSequence treatMissingData) {
         this.treatMissingData = treatMissingData;
         return this;
     }
@@ -564,7 +564,7 @@ public class Alarm {
      * 
      */
     @JsonProperty("Unit")
-    public String getUnit() {
+    public CharSequence getUnit() {
         return unit;
     }
 
@@ -573,11 +573,11 @@ public class Alarm {
      * 
      */
     @JsonProperty("Unit")
-    public void setUnit(String unit) {
+    public void setUnit(CharSequence unit) {
         this.unit = unit;
     }
 
-    public Alarm withUnit(String unit) {
+    public Alarm withUnit(CharSequence unit) {
         this.unit = unit;
         return this;
     }

@@ -31,21 +31,21 @@ public class UserToGroupAddition {
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-users
      * 
      */
     @JsonProperty("Users")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-users")
-    private List<String> users = new ArrayList<String>();
+    private List<CharSequence> users = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -54,11 +54,11 @@ public class UserToGroupAddition {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public UserToGroupAddition withGroupName(String groupName) {
+    public UserToGroupAddition withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -68,7 +68,7 @@ public class UserToGroupAddition {
      * 
      */
     @JsonProperty("Users")
-    public List<String> getUsers() {
+    public List<CharSequence> getUsers() {
         return users;
     }
 
@@ -77,11 +77,11 @@ public class UserToGroupAddition {
      * 
      */
     @JsonProperty("Users")
-    public void setUsers(List<String> users) {
+    public void setUsers(List<CharSequence> users) {
         this.users = users;
     }
 
-    public UserToGroupAddition withUsers(List<String> users) {
+    public UserToGroupAddition withUsers(List<CharSequence> users) {
         this.users = users;
         return this;
     }

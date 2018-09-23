@@ -54,7 +54,7 @@ public class Rule {
      */
     @JsonProperty("ComplianceLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel")
-    private String complianceLevel;
+    private CharSequence complianceLevel;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
@@ -134,7 +134,7 @@ public class Rule {
      * 
      */
     @JsonProperty("ComplianceLevel")
-    public String getComplianceLevel() {
+    public CharSequence getComplianceLevel() {
         return complianceLevel;
     }
 
@@ -143,11 +143,11 @@ public class Rule {
      * 
      */
     @JsonProperty("ComplianceLevel")
-    public void setComplianceLevel(String complianceLevel) {
+    public void setComplianceLevel(CharSequence complianceLevel) {
         this.complianceLevel = complianceLevel;
     }
 
-    public Rule withComplianceLevel(String complianceLevel) {
+    public Rule withComplianceLevel(CharSequence complianceLevel) {
         this.complianceLevel = complianceLevel;
         return this;
     }

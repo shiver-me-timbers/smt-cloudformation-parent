@@ -28,14 +28,14 @@ public class S3OriginConfig {
      */
     @JsonProperty("OriginAccessIdentity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity")
-    private String originAccessIdentity;
+    private CharSequence originAccessIdentity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity
      * 
      */
     @JsonProperty("OriginAccessIdentity")
-    public String getOriginAccessIdentity() {
+    public CharSequence getOriginAccessIdentity() {
         return originAccessIdentity;
     }
 
@@ -44,11 +44,11 @@ public class S3OriginConfig {
      * 
      */
     @JsonProperty("OriginAccessIdentity")
-    public void setOriginAccessIdentity(String originAccessIdentity) {
+    public void setOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
     }
 
-    public S3OriginConfig withOriginAccessIdentity(String originAccessIdentity) {
+    public S3OriginConfig withOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
         return this;
     }

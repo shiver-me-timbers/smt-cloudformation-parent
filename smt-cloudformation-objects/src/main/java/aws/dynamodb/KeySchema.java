@@ -29,21 +29,21 @@ public class KeySchema {
      */
     @JsonProperty("AttributeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename")
-    private String attributeName;
+    private CharSequence attributeName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-keytype
      * 
      */
     @JsonProperty("KeyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-keytype")
-    private String keyType;
+    private CharSequence keyType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename
      * 
      */
     @JsonProperty("AttributeName")
-    public String getAttributeName() {
+    public CharSequence getAttributeName() {
         return attributeName;
     }
 
@@ -52,11 +52,11 @@ public class KeySchema {
      * 
      */
     @JsonProperty("AttributeName")
-    public void setAttributeName(String attributeName) {
+    public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
 
-    public KeySchema withAttributeName(String attributeName) {
+    public KeySchema withAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
         return this;
     }
@@ -66,7 +66,7 @@ public class KeySchema {
      * 
      */
     @JsonProperty("KeyType")
-    public String getKeyType() {
+    public CharSequence getKeyType() {
         return keyType;
     }
 
@@ -75,11 +75,11 @@ public class KeySchema {
      * 
      */
     @JsonProperty("KeyType")
-    public void setKeyType(String keyType) {
+    public void setKeyType(CharSequence keyType) {
         this.keyType = keyType;
     }
 
-    public KeySchema withKeyType(String keyType) {
+    public KeySchema withKeyType(CharSequence keyType) {
         this.keyType = keyType;
         return this;
     }

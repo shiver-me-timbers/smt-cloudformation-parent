@@ -37,7 +37,7 @@ public class CustomActionType {
      */
     @JsonProperty("Category")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category")
-    private String category;
+    private CharSequence category;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties
      * 
@@ -70,7 +70,7 @@ public class CustomActionType {
      */
     @JsonProperty("Provider")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider")
-    private String provider;
+    private CharSequence provider;
     /**
      * Settings
      * <p>
@@ -86,14 +86,14 @@ public class CustomActionType {
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version")
-    private String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category
      * 
      */
     @JsonProperty("Category")
-    public String getCategory() {
+    public CharSequence getCategory() {
         return category;
     }
 
@@ -102,11 +102,11 @@ public class CustomActionType {
      * 
      */
     @JsonProperty("Category")
-    public void setCategory(String category) {
+    public void setCategory(CharSequence category) {
         this.category = category;
     }
 
-    public CustomActionType withCategory(String category) {
+    public CustomActionType withCategory(CharSequence category) {
         this.category = category;
         return this;
     }
@@ -193,7 +193,7 @@ public class CustomActionType {
      * 
      */
     @JsonProperty("Provider")
-    public String getProvider() {
+    public CharSequence getProvider() {
         return provider;
     }
 
@@ -202,11 +202,11 @@ public class CustomActionType {
      * 
      */
     @JsonProperty("Provider")
-    public void setProvider(String provider) {
+    public void setProvider(CharSequence provider) {
         this.provider = provider;
     }
 
-    public CustomActionType withProvider(String provider) {
+    public CustomActionType withProvider(CharSequence provider) {
         this.provider = provider;
         return this;
     }
@@ -243,7 +243,7 @@ public class CustomActionType {
      * 
      */
     @JsonProperty("Version")
-    public String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -252,11 +252,11 @@ public class CustomActionType {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public CustomActionType withVersion(String version) {
+    public CustomActionType withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

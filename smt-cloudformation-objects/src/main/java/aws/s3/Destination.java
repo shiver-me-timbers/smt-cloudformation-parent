@@ -31,35 +31,35 @@ public class Destination {
      */
     @JsonProperty("BucketAccountId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid")
-    private String bucketAccountId;
+    private CharSequence bucketAccountId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketarn
      * 
      */
     @JsonProperty("BucketArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketarn")
-    private String bucketArn;
+    private CharSequence bucketArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-format
      * 
      */
     @JsonProperty("Format")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-format")
-    private String format;
+    private CharSequence format;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-prefix
      * 
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-prefix")
-    private String prefix;
+    private CharSequence prefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid
      * 
      */
     @JsonProperty("BucketAccountId")
-    public String getBucketAccountId() {
+    public CharSequence getBucketAccountId() {
         return bucketAccountId;
     }
 
@@ -68,11 +68,11 @@ public class Destination {
      * 
      */
     @JsonProperty("BucketAccountId")
-    public void setBucketAccountId(String bucketAccountId) {
+    public void setBucketAccountId(CharSequence bucketAccountId) {
         this.bucketAccountId = bucketAccountId;
     }
 
-    public Destination withBucketAccountId(String bucketAccountId) {
+    public Destination withBucketAccountId(CharSequence bucketAccountId) {
         this.bucketAccountId = bucketAccountId;
         return this;
     }
@@ -82,7 +82,7 @@ public class Destination {
      * 
      */
     @JsonProperty("BucketArn")
-    public String getBucketArn() {
+    public CharSequence getBucketArn() {
         return bucketArn;
     }
 
@@ -91,11 +91,11 @@ public class Destination {
      * 
      */
     @JsonProperty("BucketArn")
-    public void setBucketArn(String bucketArn) {
+    public void setBucketArn(CharSequence bucketArn) {
         this.bucketArn = bucketArn;
     }
 
-    public Destination withBucketArn(String bucketArn) {
+    public Destination withBucketArn(CharSequence bucketArn) {
         this.bucketArn = bucketArn;
         return this;
     }
@@ -105,7 +105,7 @@ public class Destination {
      * 
      */
     @JsonProperty("Format")
-    public String getFormat() {
+    public CharSequence getFormat() {
         return format;
     }
 
@@ -114,11 +114,11 @@ public class Destination {
      * 
      */
     @JsonProperty("Format")
-    public void setFormat(String format) {
+    public void setFormat(CharSequence format) {
         this.format = format;
     }
 
-    public Destination withFormat(String format) {
+    public Destination withFormat(CharSequence format) {
         this.format = format;
         return this;
     }
@@ -128,7 +128,7 @@ public class Destination {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -137,11 +137,11 @@ public class Destination {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public Destination withPrefix(String prefix) {
+    public Destination withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }

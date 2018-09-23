@@ -39,28 +39,28 @@ public class TableInput {
      */
     @JsonProperty("Owner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner")
-    private String owner;
+    private CharSequence owner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-vieworiginaltext
      * 
      */
     @JsonProperty("ViewOriginalText")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-vieworiginaltext")
-    private String viewOriginalText;
+    private CharSequence viewOriginalText;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-tabletype
      * 
      */
     @JsonProperty("TableType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-tabletype")
-    private String tableType;
+    private CharSequence tableType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters
      * 
@@ -74,7 +74,7 @@ public class TableInput {
      */
     @JsonProperty("ViewExpandedText")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-viewexpandedtext")
-    private String viewExpandedText;
+    private CharSequence viewExpandedText;
     /**
      * StorageDescriptor
      * <p>
@@ -104,14 +104,14 @@ public class TableInput {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner
      * 
      */
     @JsonProperty("Owner")
-    public String getOwner() {
+    public CharSequence getOwner() {
         return owner;
     }
 
@@ -120,11 +120,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("Owner")
-    public void setOwner(String owner) {
+    public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
 
-    public TableInput withOwner(String owner) {
+    public TableInput withOwner(CharSequence owner) {
         this.owner = owner;
         return this;
     }
@@ -134,7 +134,7 @@ public class TableInput {
      * 
      */
     @JsonProperty("ViewOriginalText")
-    public String getViewOriginalText() {
+    public CharSequence getViewOriginalText() {
         return viewOriginalText;
     }
 
@@ -143,11 +143,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("ViewOriginalText")
-    public void setViewOriginalText(String viewOriginalText) {
+    public void setViewOriginalText(CharSequence viewOriginalText) {
         this.viewOriginalText = viewOriginalText;
     }
 
-    public TableInput withViewOriginalText(String viewOriginalText) {
+    public TableInput withViewOriginalText(CharSequence viewOriginalText) {
         this.viewOriginalText = viewOriginalText;
         return this;
     }
@@ -157,7 +157,7 @@ public class TableInput {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -166,11 +166,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public TableInput withDescription(String description) {
+    public TableInput withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -180,7 +180,7 @@ public class TableInput {
      * 
      */
     @JsonProperty("TableType")
-    public String getTableType() {
+    public CharSequence getTableType() {
         return tableType;
     }
 
@@ -189,11 +189,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("TableType")
-    public void setTableType(String tableType) {
+    public void setTableType(CharSequence tableType) {
         this.tableType = tableType;
     }
 
-    public TableInput withTableType(String tableType) {
+    public TableInput withTableType(CharSequence tableType) {
         this.tableType = tableType;
         return this;
     }
@@ -226,7 +226,7 @@ public class TableInput {
      * 
      */
     @JsonProperty("ViewExpandedText")
-    public String getViewExpandedText() {
+    public CharSequence getViewExpandedText() {
         return viewExpandedText;
     }
 
@@ -235,11 +235,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("ViewExpandedText")
-    public void setViewExpandedText(String viewExpandedText) {
+    public void setViewExpandedText(CharSequence viewExpandedText) {
         this.viewExpandedText = viewExpandedText;
     }
 
-    public TableInput withViewExpandedText(String viewExpandedText) {
+    public TableInput withViewExpandedText(CharSequence viewExpandedText) {
         this.viewExpandedText = viewExpandedText;
         return this;
     }
@@ -322,7 +322,7 @@ public class TableInput {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -331,11 +331,11 @@ public class TableInput {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public TableInput withName(String name) {
+    public TableInput withName(CharSequence name) {
         this.name = name;
         return this;
     }

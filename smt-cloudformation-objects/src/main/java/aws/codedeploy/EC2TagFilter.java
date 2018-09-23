@@ -30,28 +30,28 @@ public class EC2TagFilter {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-value")
-    private String value;
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html#cfn-properties-codedeploy-deploymentgroup-ec2tagfilters-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -60,11 +60,11 @@ public class EC2TagFilter {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public EC2TagFilter withKey(String key) {
+    public EC2TagFilter withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -74,7 +74,7 @@ public class EC2TagFilter {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -83,11 +83,11 @@ public class EC2TagFilter {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public EC2TagFilter withType(String type) {
+    public EC2TagFilter withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -97,7 +97,7 @@ public class EC2TagFilter {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -106,11 +106,11 @@ public class EC2TagFilter {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public EC2TagFilter withValue(String value) {
+    public EC2TagFilter withValue(CharSequence value) {
         this.value = value;
         return this;
     }

@@ -32,7 +32,7 @@ public class ClusterSecurityGroup {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html#cfn-redshift-clustersecuritygroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html#cfn-redshift-clustersecuritygroup-tags
      * 
@@ -46,7 +46,7 @@ public class ClusterSecurityGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -55,11 +55,11 @@ public class ClusterSecurityGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ClusterSecurityGroup withDescription(String description) {
+    public ClusterSecurityGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }

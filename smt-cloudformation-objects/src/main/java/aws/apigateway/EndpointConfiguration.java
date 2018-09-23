@@ -32,14 +32,14 @@ public class EndpointConfiguration {
     @JsonProperty("Types")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html#cfn-apigateway-domainname-endpointconfiguration-types")
-    private Set<String> types = new LinkedHashSet<String>();
+    private Set<CharSequence> types = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html#cfn-apigateway-domainname-endpointconfiguration-types
      * 
      */
     @JsonProperty("Types")
-    public Set<String> getTypes() {
+    public Set<CharSequence> getTypes() {
         return types;
     }
 
@@ -48,11 +48,11 @@ public class EndpointConfiguration {
      * 
      */
     @JsonProperty("Types")
-    public void setTypes(Set<String> types) {
+    public void setTypes(Set<CharSequence> types) {
         this.types = types;
     }
 
-    public EndpointConfiguration withTypes(Set<String> types) {
+    public EndpointConfiguration withTypes(Set<CharSequence> types) {
         this.types = types;
         return this;
     }

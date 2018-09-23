@@ -48,7 +48,7 @@ public class PartitionInput {
      */
     @JsonProperty("Values")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-values")
-    private List<String> values = new ArrayList<String>();
+    private List<CharSequence> values = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters
@@ -105,7 +105,7 @@ public class PartitionInput {
      * 
      */
     @JsonProperty("Values")
-    public List<String> getValues() {
+    public List<CharSequence> getValues() {
         return values;
     }
 
@@ -114,11 +114,11 @@ public class PartitionInput {
      * 
      */
     @JsonProperty("Values")
-    public void setValues(List<String> values) {
+    public void setValues(List<CharSequence> values) {
         this.values = values;
     }
 
-    public PartitionInput withValues(List<String> values) {
+    public PartitionInput withValues(List<CharSequence> values) {
         this.values = values;
         return this;
     }

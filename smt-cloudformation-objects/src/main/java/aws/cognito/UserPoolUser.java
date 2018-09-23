@@ -43,28 +43,28 @@ public class UserPoolUser {
      */
     @JsonProperty("UserPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userpoolid")
-    private String userPoolId;
+    private CharSequence userPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-username
      * 
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-username")
-    private String username;
+    private CharSequence username;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction
      * 
      */
     @JsonProperty("MessageAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction")
-    private String messageAction;
+    private CharSequence messageAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums
      * 
      */
     @JsonProperty("DesiredDeliveryMediums")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums")
-    private List<String> desiredDeliveryMediums = new ArrayList<String>();
+    private List<CharSequence> desiredDeliveryMediums = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-forcealiascreation
      * 
@@ -108,7 +108,7 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("UserPoolId")
-    public String getUserPoolId() {
+    public CharSequence getUserPoolId() {
         return userPoolId;
     }
 
@@ -117,11 +117,11 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("UserPoolId")
-    public void setUserPoolId(String userPoolId) {
+    public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
 
-    public UserPoolUser withUserPoolId(String userPoolId) {
+    public UserPoolUser withUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
         return this;
     }
@@ -131,7 +131,7 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -140,11 +140,11 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public UserPoolUser withUsername(String username) {
+    public UserPoolUser withUsername(CharSequence username) {
         this.username = username;
         return this;
     }
@@ -154,7 +154,7 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("MessageAction")
-    public String getMessageAction() {
+    public CharSequence getMessageAction() {
         return messageAction;
     }
 
@@ -163,11 +163,11 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("MessageAction")
-    public void setMessageAction(String messageAction) {
+    public void setMessageAction(CharSequence messageAction) {
         this.messageAction = messageAction;
     }
 
-    public UserPoolUser withMessageAction(String messageAction) {
+    public UserPoolUser withMessageAction(CharSequence messageAction) {
         this.messageAction = messageAction;
         return this;
     }
@@ -177,7 +177,7 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("DesiredDeliveryMediums")
-    public List<String> getDesiredDeliveryMediums() {
+    public List<CharSequence> getDesiredDeliveryMediums() {
         return desiredDeliveryMediums;
     }
 
@@ -186,11 +186,11 @@ public class UserPoolUser {
      * 
      */
     @JsonProperty("DesiredDeliveryMediums")
-    public void setDesiredDeliveryMediums(List<String> desiredDeliveryMediums) {
+    public void setDesiredDeliveryMediums(List<CharSequence> desiredDeliveryMediums) {
         this.desiredDeliveryMediums = desiredDeliveryMediums;
     }
 
-    public UserPoolUser withDesiredDeliveryMediums(List<String> desiredDeliveryMediums) {
+    public UserPoolUser withDesiredDeliveryMediums(List<CharSequence> desiredDeliveryMediums) {
         this.desiredDeliveryMediums = desiredDeliveryMediums;
         return this;
     }

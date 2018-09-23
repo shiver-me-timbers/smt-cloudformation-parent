@@ -52,21 +52,21 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("HECEndpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpoint")
-    private String hECEndpoint;
+    private CharSequence hECEndpoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpointtype
      * 
      */
     @JsonProperty("HECEndpointType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpointtype")
-    private String hECEndpointType;
+    private CharSequence hECEndpointType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hectoken
      * 
      */
     @JsonProperty("HECToken")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hectoken")
-    private String hECToken;
+    private CharSequence hECToken;
     /**
      * ProcessingConfiguration
      * <p>
@@ -91,7 +91,7 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("S3BackupMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3backupmode")
-    private String s3BackupMode;
+    private CharSequence s3BackupMode;
     /**
      * S3DestinationConfiguration
      * <p>
@@ -157,7 +157,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECEndpoint")
-    public String getHECEndpoint() {
+    public CharSequence getHECEndpoint() {
         return hECEndpoint;
     }
 
@@ -166,11 +166,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECEndpoint")
-    public void setHECEndpoint(String hECEndpoint) {
+    public void setHECEndpoint(CharSequence hECEndpoint) {
         this.hECEndpoint = hECEndpoint;
     }
 
-    public SplunkDestinationConfiguration withHECEndpoint(String hECEndpoint) {
+    public SplunkDestinationConfiguration withHECEndpoint(CharSequence hECEndpoint) {
         this.hECEndpoint = hECEndpoint;
         return this;
     }
@@ -180,7 +180,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECEndpointType")
-    public String getHECEndpointType() {
+    public CharSequence getHECEndpointType() {
         return hECEndpointType;
     }
 
@@ -189,11 +189,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECEndpointType")
-    public void setHECEndpointType(String hECEndpointType) {
+    public void setHECEndpointType(CharSequence hECEndpointType) {
         this.hECEndpointType = hECEndpointType;
     }
 
-    public SplunkDestinationConfiguration withHECEndpointType(String hECEndpointType) {
+    public SplunkDestinationConfiguration withHECEndpointType(CharSequence hECEndpointType) {
         this.hECEndpointType = hECEndpointType;
         return this;
     }
@@ -203,7 +203,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECToken")
-    public String getHECToken() {
+    public CharSequence getHECToken() {
         return hECToken;
     }
 
@@ -212,11 +212,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("HECToken")
-    public void setHECToken(String hECToken) {
+    public void setHECToken(CharSequence hECToken) {
         this.hECToken = hECToken;
     }
 
-    public SplunkDestinationConfiguration withHECToken(String hECToken) {
+    public SplunkDestinationConfiguration withHECToken(CharSequence hECToken) {
         this.hECToken = hECToken;
         return this;
     }
@@ -280,7 +280,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public String getS3BackupMode() {
+    public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
 
@@ -289,11 +289,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public void setS3BackupMode(String s3BackupMode) {
+    public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }
 
-    public SplunkDestinationConfiguration withS3BackupMode(String s3BackupMode) {
+    public SplunkDestinationConfiguration withS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
         return this;
     }

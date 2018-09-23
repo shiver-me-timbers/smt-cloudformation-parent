@@ -52,7 +52,7 @@ public class Listener {
      */
     @JsonProperty("LoadBalancerArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn")
-    private String loadBalancerArn;
+    private CharSequence loadBalancerArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
      * 
@@ -66,14 +66,14 @@ public class Listener {
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
      * 
      */
     @JsonProperty("SslPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy")
-    private String sslPolicy;
+    private CharSequence sslPolicy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates
@@ -126,7 +126,7 @@ public class Listener {
      * 
      */
     @JsonProperty("LoadBalancerArn")
-    public String getLoadBalancerArn() {
+    public CharSequence getLoadBalancerArn() {
         return loadBalancerArn;
     }
 
@@ -135,11 +135,11 @@ public class Listener {
      * 
      */
     @JsonProperty("LoadBalancerArn")
-    public void setLoadBalancerArn(String loadBalancerArn) {
+    public void setLoadBalancerArn(CharSequence loadBalancerArn) {
         this.loadBalancerArn = loadBalancerArn;
     }
 
-    public Listener withLoadBalancerArn(String loadBalancerArn) {
+    public Listener withLoadBalancerArn(CharSequence loadBalancerArn) {
         this.loadBalancerArn = loadBalancerArn;
         return this;
     }
@@ -172,7 +172,7 @@ public class Listener {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -181,11 +181,11 @@ public class Listener {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public Listener withProtocol(String protocol) {
+    public Listener withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -195,7 +195,7 @@ public class Listener {
      * 
      */
     @JsonProperty("SslPolicy")
-    public String getSslPolicy() {
+    public CharSequence getSslPolicy() {
         return sslPolicy;
     }
 
@@ -204,11 +204,11 @@ public class Listener {
      * 
      */
     @JsonProperty("SslPolicy")
-    public void setSslPolicy(String sslPolicy) {
+    public void setSslPolicy(CharSequence sslPolicy) {
         this.sslPolicy = sslPolicy;
     }
 
-    public Listener withSslPolicy(String sslPolicy) {
+    public Listener withSslPolicy(CharSequence sslPolicy) {
         this.sslPolicy = sslPolicy;
         return this;
     }

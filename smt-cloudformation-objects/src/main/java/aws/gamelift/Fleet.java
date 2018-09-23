@@ -41,14 +41,14 @@ public class Fleet {
      */
     @JsonProperty("BuildId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-buildid")
-    private String buildId;
+    private CharSequence buildId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-desiredec2instances
      * 
@@ -70,7 +70,7 @@ public class Fleet {
      */
     @JsonProperty("EC2InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2instancetype")
-    private String eC2InstanceType;
+    private CharSequence eC2InstanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-logpaths
      * 
@@ -78,7 +78,7 @@ public class Fleet {
     @JsonProperty("LogPaths")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-logpaths")
-    private Set<String> logPaths = new LinkedHashSet<String>();
+    private Set<CharSequence> logPaths = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-maxsize
      * 
@@ -99,28 +99,28 @@ public class Fleet {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchparameters
      * 
      */
     @JsonProperty("ServerLaunchParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchparameters")
-    private String serverLaunchParameters;
+    private CharSequence serverLaunchParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchpath
      * 
      */
     @JsonProperty("ServerLaunchPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchpath")
-    private String serverLaunchPath;
+    private CharSequence serverLaunchPath;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-buildid
      * 
      */
     @JsonProperty("BuildId")
-    public String getBuildId() {
+    public CharSequence getBuildId() {
         return buildId;
     }
 
@@ -129,11 +129,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("BuildId")
-    public void setBuildId(String buildId) {
+    public void setBuildId(CharSequence buildId) {
         this.buildId = buildId;
     }
 
-    public Fleet withBuildId(String buildId) {
+    public Fleet withBuildId(CharSequence buildId) {
         this.buildId = buildId;
         return this;
     }
@@ -143,7 +143,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -152,11 +152,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Fleet withDescription(String description) {
+    public Fleet withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -212,7 +212,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("EC2InstanceType")
-    public String getEC2InstanceType() {
+    public CharSequence getEC2InstanceType() {
         return eC2InstanceType;
     }
 
@@ -221,11 +221,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("EC2InstanceType")
-    public void setEC2InstanceType(String eC2InstanceType) {
+    public void setEC2InstanceType(CharSequence eC2InstanceType) {
         this.eC2InstanceType = eC2InstanceType;
     }
 
-    public Fleet withEC2InstanceType(String eC2InstanceType) {
+    public Fleet withEC2InstanceType(CharSequence eC2InstanceType) {
         this.eC2InstanceType = eC2InstanceType;
         return this;
     }
@@ -235,7 +235,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("LogPaths")
-    public Set<String> getLogPaths() {
+    public Set<CharSequence> getLogPaths() {
         return logPaths;
     }
 
@@ -244,11 +244,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("LogPaths")
-    public void setLogPaths(Set<String> logPaths) {
+    public void setLogPaths(Set<CharSequence> logPaths) {
         this.logPaths = logPaths;
     }
 
-    public Fleet withLogPaths(Set<String> logPaths) {
+    public Fleet withLogPaths(Set<CharSequence> logPaths) {
         this.logPaths = logPaths;
         return this;
     }
@@ -304,7 +304,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -313,11 +313,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Fleet withName(String name) {
+    public Fleet withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -327,7 +327,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("ServerLaunchParameters")
-    public String getServerLaunchParameters() {
+    public CharSequence getServerLaunchParameters() {
         return serverLaunchParameters;
     }
 
@@ -336,11 +336,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("ServerLaunchParameters")
-    public void setServerLaunchParameters(String serverLaunchParameters) {
+    public void setServerLaunchParameters(CharSequence serverLaunchParameters) {
         this.serverLaunchParameters = serverLaunchParameters;
     }
 
-    public Fleet withServerLaunchParameters(String serverLaunchParameters) {
+    public Fleet withServerLaunchParameters(CharSequence serverLaunchParameters) {
         this.serverLaunchParameters = serverLaunchParameters;
         return this;
     }
@@ -350,7 +350,7 @@ public class Fleet {
      * 
      */
     @JsonProperty("ServerLaunchPath")
-    public String getServerLaunchPath() {
+    public CharSequence getServerLaunchPath() {
         return serverLaunchPath;
     }
 
@@ -359,11 +359,11 @@ public class Fleet {
      * 
      */
     @JsonProperty("ServerLaunchPath")
-    public void setServerLaunchPath(String serverLaunchPath) {
+    public void setServerLaunchPath(CharSequence serverLaunchPath) {
         this.serverLaunchPath = serverLaunchPath;
     }
 
-    public Fleet withServerLaunchPath(String serverLaunchPath) {
+    public Fleet withServerLaunchPath(CharSequence serverLaunchPath) {
         this.serverLaunchPath = serverLaunchPath;
         return this;
     }

@@ -32,42 +32,42 @@ public class S3Location {
      */
     @JsonProperty("Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-bucket")
-    private String bucket;
+    private CharSequence bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-bundletype
      * 
      */
     @JsonProperty("BundleType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-bundletype")
-    private String bundleType;
+    private CharSequence bundleType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-etag
      * 
      */
     @JsonProperty("ETag")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-etag")
-    private String eTag;
+    private CharSequence eTag;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-key
      * 
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-value
      * 
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-value")
-    private String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-s3location-bucket
      * 
      */
     @JsonProperty("Bucket")
-    public String getBucket() {
+    public CharSequence getBucket() {
         return bucket;
     }
 
@@ -76,11 +76,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("Bucket")
-    public void setBucket(String bucket) {
+    public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
 
-    public S3Location withBucket(String bucket) {
+    public S3Location withBucket(CharSequence bucket) {
         this.bucket = bucket;
         return this;
     }
@@ -90,7 +90,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("BundleType")
-    public String getBundleType() {
+    public CharSequence getBundleType() {
         return bundleType;
     }
 
@@ -99,11 +99,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("BundleType")
-    public void setBundleType(String bundleType) {
+    public void setBundleType(CharSequence bundleType) {
         this.bundleType = bundleType;
     }
 
-    public S3Location withBundleType(String bundleType) {
+    public S3Location withBundleType(CharSequence bundleType) {
         this.bundleType = bundleType;
         return this;
     }
@@ -113,7 +113,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("ETag")
-    public String getETag() {
+    public CharSequence getETag() {
         return eTag;
     }
 
@@ -122,11 +122,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("ETag")
-    public void setETag(String eTag) {
+    public void setETag(CharSequence eTag) {
         this.eTag = eTag;
     }
 
-    public S3Location withETag(String eTag) {
+    public S3Location withETag(CharSequence eTag) {
         this.eTag = eTag;
         return this;
     }
@@ -136,7 +136,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -145,11 +145,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public S3Location withKey(String key) {
+    public S3Location withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -159,7 +159,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("Version")
-    public String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -168,11 +168,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public S3Location withVersion(String version) {
+    public S3Location withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

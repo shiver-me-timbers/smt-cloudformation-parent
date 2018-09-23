@@ -40,7 +40,7 @@ public class Document {
      */
     @JsonProperty("DocumentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype")
-    private String documentType;
+    private CharSequence documentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
@@ -77,7 +77,7 @@ public class Document {
      * 
      */
     @JsonProperty("DocumentType")
-    public String getDocumentType() {
+    public CharSequence getDocumentType() {
         return documentType;
     }
 
@@ -86,11 +86,11 @@ public class Document {
      * 
      */
     @JsonProperty("DocumentType")
-    public void setDocumentType(String documentType) {
+    public void setDocumentType(CharSequence documentType) {
         this.documentType = documentType;
     }
 
-    public Document withDocumentType(String documentType) {
+    public Document withDocumentType(CharSequence documentType) {
         this.documentType = documentType;
         return this;
     }

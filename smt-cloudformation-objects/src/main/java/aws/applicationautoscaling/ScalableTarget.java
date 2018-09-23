@@ -51,21 +51,21 @@ public class ScalableTarget {
      */
     @JsonProperty("ResourceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-resourceid")
-    private String resourceId;
+    private CharSequence resourceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-rolearn
      * 
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scalabledimension
      * 
      */
     @JsonProperty("ScalableDimension")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scalabledimension")
-    private String scalableDimension;
+    private CharSequence scalableDimension;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scheduledactions
      * 
@@ -80,7 +80,7 @@ public class ScalableTarget {
      */
     @JsonProperty("ServiceNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace")
-    private String serviceNamespace;
+    private CharSequence serviceNamespace;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity
@@ -133,7 +133,7 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ResourceId")
-    public String getResourceId() {
+    public CharSequence getResourceId() {
         return resourceId;
     }
 
@@ -142,11 +142,11 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ResourceId")
-    public void setResourceId(String resourceId) {
+    public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
 
-    public ScalableTarget withResourceId(String resourceId) {
+    public ScalableTarget withResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
         return this;
     }
@@ -156,7 +156,7 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -165,11 +165,11 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public ScalableTarget withRoleARN(String roleARN) {
+    public ScalableTarget withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }
@@ -179,7 +179,7 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ScalableDimension")
-    public String getScalableDimension() {
+    public CharSequence getScalableDimension() {
         return scalableDimension;
     }
 
@@ -188,11 +188,11 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ScalableDimension")
-    public void setScalableDimension(String scalableDimension) {
+    public void setScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
     }
 
-    public ScalableTarget withScalableDimension(String scalableDimension) {
+    public ScalableTarget withScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
         return this;
     }
@@ -225,7 +225,7 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ServiceNamespace")
-    public String getServiceNamespace() {
+    public CharSequence getServiceNamespace() {
         return serviceNamespace;
     }
 
@@ -234,11 +234,11 @@ public class ScalableTarget {
      * 
      */
     @JsonProperty("ServiceNamespace")
-    public void setServiceNamespace(String serviceNamespace) {
+    public void setServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
     }
 
-    public ScalableTarget withServiceNamespace(String serviceNamespace) {
+    public ScalableTarget withServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
         return this;
     }

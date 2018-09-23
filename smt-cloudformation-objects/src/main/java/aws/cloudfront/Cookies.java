@@ -31,21 +31,21 @@ public class Cookies {
      */
     @JsonProperty("WhitelistedNames")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames")
-    private List<String> whitelistedNames = new ArrayList<String>();
+    private List<CharSequence> whitelistedNames = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward
      * 
      */
     @JsonProperty("Forward")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward")
-    private String forward;
+    private CharSequence forward;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames
      * 
      */
     @JsonProperty("WhitelistedNames")
-    public List<String> getWhitelistedNames() {
+    public List<CharSequence> getWhitelistedNames() {
         return whitelistedNames;
     }
 
@@ -54,11 +54,11 @@ public class Cookies {
      * 
      */
     @JsonProperty("WhitelistedNames")
-    public void setWhitelistedNames(List<String> whitelistedNames) {
+    public void setWhitelistedNames(List<CharSequence> whitelistedNames) {
         this.whitelistedNames = whitelistedNames;
     }
 
-    public Cookies withWhitelistedNames(List<String> whitelistedNames) {
+    public Cookies withWhitelistedNames(List<CharSequence> whitelistedNames) {
         this.whitelistedNames = whitelistedNames;
         return this;
     }
@@ -68,7 +68,7 @@ public class Cookies {
      * 
      */
     @JsonProperty("Forward")
-    public String getForward() {
+    public CharSequence getForward() {
         return forward;
     }
 
@@ -77,11 +77,11 @@ public class Cookies {
      * 
      */
     @JsonProperty("Forward")
-    public void setForward(String forward) {
+    public void setForward(CharSequence forward) {
         this.forward = forward;
     }
 
-    public Cookies withForward(String forward) {
+    public Cookies withForward(CharSequence forward) {
         this.forward = forward;
         return this;
     }

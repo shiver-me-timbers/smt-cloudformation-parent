@@ -29,21 +29,21 @@ public class VpnTunnelOptionsSpecification {
      */
     @JsonProperty("PreSharedKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-presharedkey")
-    private String preSharedKey;
+    private CharSequence preSharedKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-tunnelinsidecidr
      * 
      */
     @JsonProperty("TunnelInsideCidr")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-tunnelinsidecidr")
-    private String tunnelInsideCidr;
+    private CharSequence tunnelInsideCidr;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-presharedkey
      * 
      */
     @JsonProperty("PreSharedKey")
-    public String getPreSharedKey() {
+    public CharSequence getPreSharedKey() {
         return preSharedKey;
     }
 
@@ -52,11 +52,11 @@ public class VpnTunnelOptionsSpecification {
      * 
      */
     @JsonProperty("PreSharedKey")
-    public void setPreSharedKey(String preSharedKey) {
+    public void setPreSharedKey(CharSequence preSharedKey) {
         this.preSharedKey = preSharedKey;
     }
 
-    public VpnTunnelOptionsSpecification withPreSharedKey(String preSharedKey) {
+    public VpnTunnelOptionsSpecification withPreSharedKey(CharSequence preSharedKey) {
         this.preSharedKey = preSharedKey;
         return this;
     }
@@ -66,7 +66,7 @@ public class VpnTunnelOptionsSpecification {
      * 
      */
     @JsonProperty("TunnelInsideCidr")
-    public String getTunnelInsideCidr() {
+    public CharSequence getTunnelInsideCidr() {
         return tunnelInsideCidr;
     }
 
@@ -75,11 +75,11 @@ public class VpnTunnelOptionsSpecification {
      * 
      */
     @JsonProperty("TunnelInsideCidr")
-    public void setTunnelInsideCidr(String tunnelInsideCidr) {
+    public void setTunnelInsideCidr(CharSequence tunnelInsideCidr) {
         this.tunnelInsideCidr = tunnelInsideCidr;
     }
 
-    public VpnTunnelOptionsSpecification withTunnelInsideCidr(String tunnelInsideCidr) {
+    public VpnTunnelOptionsSpecification withTunnelInsideCidr(CharSequence tunnelInsideCidr) {
         this.tunnelInsideCidr = tunnelInsideCidr;
         return this;
     }

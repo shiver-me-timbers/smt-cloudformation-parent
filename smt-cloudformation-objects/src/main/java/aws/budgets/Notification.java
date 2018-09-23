@@ -31,14 +31,14 @@ public class Notification {
      */
     @JsonProperty("ComparisonOperator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-comparisonoperator")
-    private String comparisonOperator;
+    private CharSequence comparisonOperator;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-notificationtype
      * 
      */
     @JsonProperty("NotificationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-notificationtype")
-    private String notificationType;
+    private CharSequence notificationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-threshold
      * 
@@ -52,14 +52,14 @@ public class Notification {
      */
     @JsonProperty("ThresholdType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-thresholdtype")
-    private String thresholdType;
+    private CharSequence thresholdType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-comparisonoperator
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public String getComparisonOperator() {
+    public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
 
@@ -68,11 +68,11 @@ public class Notification {
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public void setComparisonOperator(String comparisonOperator) {
+    public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
 
-    public Notification withComparisonOperator(String comparisonOperator) {
+    public Notification withComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
         return this;
     }
@@ -82,7 +82,7 @@ public class Notification {
      * 
      */
     @JsonProperty("NotificationType")
-    public String getNotificationType() {
+    public CharSequence getNotificationType() {
         return notificationType;
     }
 
@@ -91,11 +91,11 @@ public class Notification {
      * 
      */
     @JsonProperty("NotificationType")
-    public void setNotificationType(String notificationType) {
+    public void setNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
     }
 
-    public Notification withNotificationType(String notificationType) {
+    public Notification withNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
         return this;
     }
@@ -128,7 +128,7 @@ public class Notification {
      * 
      */
     @JsonProperty("ThresholdType")
-    public String getThresholdType() {
+    public CharSequence getThresholdType() {
         return thresholdType;
     }
 
@@ -137,11 +137,11 @@ public class Notification {
      * 
      */
     @JsonProperty("ThresholdType")
-    public void setThresholdType(String thresholdType) {
+    public void setThresholdType(CharSequence thresholdType) {
         this.thresholdType = thresholdType;
     }
 
-    public Notification withThresholdType(String thresholdType) {
+    public Notification withThresholdType(CharSequence thresholdType) {
         this.thresholdType = thresholdType;
         return this;
     }

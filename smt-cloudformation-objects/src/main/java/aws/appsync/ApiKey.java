@@ -30,7 +30,7 @@ public class ApiKey {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-expires
      * 
@@ -44,14 +44,14 @@ public class ApiKey {
      */
     @JsonProperty("ApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-apiid")
-    private String apiId;
+    private CharSequence apiId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -60,11 +60,11 @@ public class ApiKey {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ApiKey withDescription(String description) {
+    public ApiKey withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -97,7 +97,7 @@ public class ApiKey {
      * 
      */
     @JsonProperty("ApiId")
-    public String getApiId() {
+    public CharSequence getApiId() {
         return apiId;
     }
 
@@ -106,11 +106,11 @@ public class ApiKey {
      * 
      */
     @JsonProperty("ApiId")
-    public void setApiId(String apiId) {
+    public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
 
-    public ApiKey withApiId(String apiId) {
+    public ApiKey withApiId(CharSequence apiId) {
         this.apiId = apiId;
         return this;
     }

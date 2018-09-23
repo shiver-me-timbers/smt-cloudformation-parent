@@ -39,21 +39,21 @@ public class Crawler {
      */
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-role")
-    private String role;
+    private CharSequence role;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-classifiers
      * 
      */
     @JsonProperty("Classifiers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-classifiers")
-    private List<String> classifiers = new ArrayList<String>();
+    private List<CharSequence> classifiers = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-description")
-    private String description;
+    private CharSequence description;
     /**
      * SchemaChangePolicy
      * <p>
@@ -69,7 +69,7 @@ public class Crawler {
      */
     @JsonProperty("Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration")
-    private String configuration;
+    private CharSequence configuration;
     /**
      * Schedule
      * <p>
@@ -85,7 +85,7 @@ public class Crawler {
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * Targets
      * <p>
@@ -101,21 +101,21 @@ public class Crawler {
      */
     @JsonProperty("TablePrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix")
-    private String tablePrefix;
+    private CharSequence tablePrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-role
      * 
      */
     @JsonProperty("Role")
-    public String getRole() {
+    public CharSequence getRole() {
         return role;
     }
 
@@ -124,11 +124,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("Role")
-    public void setRole(String role) {
+    public void setRole(CharSequence role) {
         this.role = role;
     }
 
-    public Crawler withRole(String role) {
+    public Crawler withRole(CharSequence role) {
         this.role = role;
         return this;
     }
@@ -138,7 +138,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("Classifiers")
-    public List<String> getClassifiers() {
+    public List<CharSequence> getClassifiers() {
         return classifiers;
     }
 
@@ -147,11 +147,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("Classifiers")
-    public void setClassifiers(List<String> classifiers) {
+    public void setClassifiers(List<CharSequence> classifiers) {
         this.classifiers = classifiers;
     }
 
-    public Crawler withClassifiers(List<String> classifiers) {
+    public Crawler withClassifiers(List<CharSequence> classifiers) {
         this.classifiers = classifiers;
         return this;
     }
@@ -161,7 +161,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -170,11 +170,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Crawler withDescription(String description) {
+    public Crawler withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -211,7 +211,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("Configuration")
-    public String getConfiguration() {
+    public CharSequence getConfiguration() {
         return configuration;
     }
 
@@ -220,11 +220,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("Configuration")
-    public void setConfiguration(String configuration) {
+    public void setConfiguration(CharSequence configuration) {
         this.configuration = configuration;
     }
 
-    public Crawler withConfiguration(String configuration) {
+    public Crawler withConfiguration(CharSequence configuration) {
         this.configuration = configuration;
         return this;
     }
@@ -261,7 +261,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -270,11 +270,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public Crawler withDatabaseName(String databaseName) {
+    public Crawler withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -311,7 +311,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("TablePrefix")
-    public String getTablePrefix() {
+    public CharSequence getTablePrefix() {
         return tablePrefix;
     }
 
@@ -320,11 +320,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("TablePrefix")
-    public void setTablePrefix(String tablePrefix) {
+    public void setTablePrefix(CharSequence tablePrefix) {
         this.tablePrefix = tablePrefix;
     }
 
-    public Crawler withTablePrefix(String tablePrefix) {
+    public Crawler withTablePrefix(CharSequence tablePrefix) {
         this.tablePrefix = tablePrefix;
         return this;
     }
@@ -334,7 +334,7 @@ public class Crawler {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -343,11 +343,11 @@ public class Crawler {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Crawler withName(String name) {
+    public Crawler withName(CharSequence name) {
         this.name = name;
         return this;
     }

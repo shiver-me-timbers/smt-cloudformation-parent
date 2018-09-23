@@ -39,7 +39,7 @@ public class DHCPOptions {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers
      * 
@@ -47,7 +47,7 @@ public class DHCPOptions {
     @JsonProperty("DomainNameServers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers")
-    private Set<String> domainNameServers = new LinkedHashSet<String>();
+    private Set<CharSequence> domainNameServers = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers
      * 
@@ -55,7 +55,7 @@ public class DHCPOptions {
     @JsonProperty("NetbiosNameServers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers")
-    private Set<String> netbiosNameServers = new LinkedHashSet<String>();
+    private Set<CharSequence> netbiosNameServers = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype
      * 
@@ -69,7 +69,7 @@ public class DHCPOptions {
      */
     @JsonProperty("NtpServers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers")
-    private List<String> ntpServers = new ArrayList<String>();
+    private List<CharSequence> ntpServers = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-tags
      * 
@@ -83,7 +83,7 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -92,11 +92,11 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public DHCPOptions withDomainName(String domainName) {
+    public DHCPOptions withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -106,7 +106,7 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("DomainNameServers")
-    public Set<String> getDomainNameServers() {
+    public Set<CharSequence> getDomainNameServers() {
         return domainNameServers;
     }
 
@@ -115,11 +115,11 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("DomainNameServers")
-    public void setDomainNameServers(Set<String> domainNameServers) {
+    public void setDomainNameServers(Set<CharSequence> domainNameServers) {
         this.domainNameServers = domainNameServers;
     }
 
-    public DHCPOptions withDomainNameServers(Set<String> domainNameServers) {
+    public DHCPOptions withDomainNameServers(Set<CharSequence> domainNameServers) {
         this.domainNameServers = domainNameServers;
         return this;
     }
@@ -129,7 +129,7 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("NetbiosNameServers")
-    public Set<String> getNetbiosNameServers() {
+    public Set<CharSequence> getNetbiosNameServers() {
         return netbiosNameServers;
     }
 
@@ -138,11 +138,11 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("NetbiosNameServers")
-    public void setNetbiosNameServers(Set<String> netbiosNameServers) {
+    public void setNetbiosNameServers(Set<CharSequence> netbiosNameServers) {
         this.netbiosNameServers = netbiosNameServers;
     }
 
-    public DHCPOptions withNetbiosNameServers(Set<String> netbiosNameServers) {
+    public DHCPOptions withNetbiosNameServers(Set<CharSequence> netbiosNameServers) {
         this.netbiosNameServers = netbiosNameServers;
         return this;
     }
@@ -175,7 +175,7 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("NtpServers")
-    public List<String> getNtpServers() {
+    public List<CharSequence> getNtpServers() {
         return ntpServers;
     }
 
@@ -184,11 +184,11 @@ public class DHCPOptions {
      * 
      */
     @JsonProperty("NtpServers")
-    public void setNtpServers(List<String> ntpServers) {
+    public void setNtpServers(List<CharSequence> ntpServers) {
         this.ntpServers = ntpServers;
     }
 
-    public DHCPOptions withNtpServers(List<String> ntpServers) {
+    public DHCPOptions withNtpServers(List<CharSequence> ntpServers) {
         this.ntpServers = ntpServers;
         return this;
     }

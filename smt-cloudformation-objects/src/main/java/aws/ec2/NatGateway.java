@@ -33,14 +33,14 @@ public class NatGateway {
      */
     @JsonProperty("AllocationId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-allocationid")
-    private String allocationId;
+    private CharSequence allocationId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-tags
      * 
@@ -54,7 +54,7 @@ public class NatGateway {
      * 
      */
     @JsonProperty("AllocationId")
-    public String getAllocationId() {
+    public CharSequence getAllocationId() {
         return allocationId;
     }
 
@@ -63,11 +63,11 @@ public class NatGateway {
      * 
      */
     @JsonProperty("AllocationId")
-    public void setAllocationId(String allocationId) {
+    public void setAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
     }
 
-    public NatGateway withAllocationId(String allocationId) {
+    public NatGateway withAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
         return this;
     }
@@ -77,7 +77,7 @@ public class NatGateway {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -86,11 +86,11 @@ public class NatGateway {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public NatGateway withSubnetId(String subnetId) {
+    public NatGateway withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

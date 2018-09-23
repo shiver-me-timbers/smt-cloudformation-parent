@@ -32,21 +32,21 @@ public class ComputeEnvironment {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-servicerole
      * 
      */
     @JsonProperty("ServiceRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-servicerole")
-    private String serviceRole;
+    private CharSequence serviceRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname
      * 
      */
     @JsonProperty("ComputeEnvironmentName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname")
-    private String computeEnvironmentName;
+    private CharSequence computeEnvironmentName;
     /**
      * ComputeResources
      * <p>
@@ -62,14 +62,14 @@ public class ComputeEnvironment {
      */
     @JsonProperty("State")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state")
-    private String state;
+    private CharSequence state;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-type
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -78,11 +78,11 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public ComputeEnvironment withType(String type) {
+    public ComputeEnvironment withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -92,7 +92,7 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("ServiceRole")
-    public String getServiceRole() {
+    public CharSequence getServiceRole() {
         return serviceRole;
     }
 
@@ -101,11 +101,11 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("ServiceRole")
-    public void setServiceRole(String serviceRole) {
+    public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
 
-    public ComputeEnvironment withServiceRole(String serviceRole) {
+    public ComputeEnvironment withServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
         return this;
     }
@@ -115,7 +115,7 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("ComputeEnvironmentName")
-    public String getComputeEnvironmentName() {
+    public CharSequence getComputeEnvironmentName() {
         return computeEnvironmentName;
     }
 
@@ -124,11 +124,11 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("ComputeEnvironmentName")
-    public void setComputeEnvironmentName(String computeEnvironmentName) {
+    public void setComputeEnvironmentName(CharSequence computeEnvironmentName) {
         this.computeEnvironmentName = computeEnvironmentName;
     }
 
-    public ComputeEnvironment withComputeEnvironmentName(String computeEnvironmentName) {
+    public ComputeEnvironment withComputeEnvironmentName(CharSequence computeEnvironmentName) {
         this.computeEnvironmentName = computeEnvironmentName;
         return this;
     }
@@ -165,7 +165,7 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("State")
-    public String getState() {
+    public CharSequence getState() {
         return state;
     }
 
@@ -174,11 +174,11 @@ public class ComputeEnvironment {
      * 
      */
     @JsonProperty("State")
-    public void setState(String state) {
+    public void setState(CharSequence state) {
         this.state = state;
     }
 
-    public ComputeEnvironment withState(String state) {
+    public ComputeEnvironment withState(CharSequence state) {
         this.state = state;
         return this;
     }

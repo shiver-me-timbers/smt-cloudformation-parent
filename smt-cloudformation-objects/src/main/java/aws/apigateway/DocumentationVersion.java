@@ -30,28 +30,28 @@ public class DocumentationVersion {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-documentationversion
      * 
      */
     @JsonProperty("DocumentationVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-documentationversion")
-    private String documentationVersion;
+    private CharSequence documentationVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -60,11 +60,11 @@ public class DocumentationVersion {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public DocumentationVersion withDescription(String description) {
+    public DocumentationVersion withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -74,7 +74,7 @@ public class DocumentationVersion {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public String getDocumentationVersion() {
+    public CharSequence getDocumentationVersion() {
         return documentationVersion;
     }
 
@@ -83,11 +83,11 @@ public class DocumentationVersion {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public void setDocumentationVersion(String documentationVersion) {
+    public void setDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
     }
 
-    public DocumentationVersion withDocumentationVersion(String documentationVersion) {
+    public DocumentationVersion withDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
         return this;
     }
@@ -97,7 +97,7 @@ public class DocumentationVersion {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -106,11 +106,11 @@ public class DocumentationVersion {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public DocumentationVersion withRestApiId(String restApiId) {
+    public DocumentationVersion withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }

@@ -48,7 +48,7 @@ public class SchemaAttribute {
      */
     @JsonProperty("AttributeDataType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-attributedatatype")
-    private String attributeDataType;
+    private CharSequence attributeDataType;
     /**
      * StringAttributeConstraints
      * <p>
@@ -80,7 +80,7 @@ public class SchemaAttribute {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute
@@ -133,7 +133,7 @@ public class SchemaAttribute {
      * 
      */
     @JsonProperty("AttributeDataType")
-    public String getAttributeDataType() {
+    public CharSequence getAttributeDataType() {
         return attributeDataType;
     }
 
@@ -142,11 +142,11 @@ public class SchemaAttribute {
      * 
      */
     @JsonProperty("AttributeDataType")
-    public void setAttributeDataType(String attributeDataType) {
+    public void setAttributeDataType(CharSequence attributeDataType) {
         this.attributeDataType = attributeDataType;
     }
 
-    public SchemaAttribute withAttributeDataType(String attributeDataType) {
+    public SchemaAttribute withAttributeDataType(CharSequence attributeDataType) {
         this.attributeDataType = attributeDataType;
         return this;
     }
@@ -233,7 +233,7 @@ public class SchemaAttribute {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -242,11 +242,11 @@ public class SchemaAttribute {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public SchemaAttribute withName(String name) {
+    public SchemaAttribute withName(CharSequence name) {
         this.name = name;
         return this;
     }

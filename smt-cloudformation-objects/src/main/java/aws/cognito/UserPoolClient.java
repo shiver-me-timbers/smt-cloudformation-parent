@@ -43,21 +43,21 @@ public class UserPoolClient {
      */
     @JsonProperty("ClientName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-clientname")
-    private String clientName;
+    private CharSequence clientName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-userpoolid
      * 
      */
     @JsonProperty("UserPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-userpoolid")
-    private String userPoolId;
+    private CharSequence userPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows
      * 
      */
     @JsonProperty("ExplicitAuthFlows")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows")
-    private List<String> explicitAuthFlows = new ArrayList<String>();
+    private List<CharSequence> explicitAuthFlows = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity
      * 
@@ -71,14 +71,14 @@ public class UserPoolClient {
      */
     @JsonProperty("ReadAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes")
-    private List<String> readAttributes = new ArrayList<String>();
+    private List<CharSequence> readAttributes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes
      * 
      */
     @JsonProperty("WriteAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes")
-    private List<String> writeAttributes = new ArrayList<String>();
+    private List<CharSequence> writeAttributes = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret
@@ -108,7 +108,7 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ClientName")
-    public String getClientName() {
+    public CharSequence getClientName() {
         return clientName;
     }
 
@@ -117,11 +117,11 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ClientName")
-    public void setClientName(String clientName) {
+    public void setClientName(CharSequence clientName) {
         this.clientName = clientName;
     }
 
-    public UserPoolClient withClientName(String clientName) {
+    public UserPoolClient withClientName(CharSequence clientName) {
         this.clientName = clientName;
         return this;
     }
@@ -131,7 +131,7 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("UserPoolId")
-    public String getUserPoolId() {
+    public CharSequence getUserPoolId() {
         return userPoolId;
     }
 
@@ -140,11 +140,11 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("UserPoolId")
-    public void setUserPoolId(String userPoolId) {
+    public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
 
-    public UserPoolClient withUserPoolId(String userPoolId) {
+    public UserPoolClient withUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
         return this;
     }
@@ -154,7 +154,7 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ExplicitAuthFlows")
-    public List<String> getExplicitAuthFlows() {
+    public List<CharSequence> getExplicitAuthFlows() {
         return explicitAuthFlows;
     }
 
@@ -163,11 +163,11 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ExplicitAuthFlows")
-    public void setExplicitAuthFlows(List<String> explicitAuthFlows) {
+    public void setExplicitAuthFlows(List<CharSequence> explicitAuthFlows) {
         this.explicitAuthFlows = explicitAuthFlows;
     }
 
-    public UserPoolClient withExplicitAuthFlows(List<String> explicitAuthFlows) {
+    public UserPoolClient withExplicitAuthFlows(List<CharSequence> explicitAuthFlows) {
         this.explicitAuthFlows = explicitAuthFlows;
         return this;
     }
@@ -200,7 +200,7 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ReadAttributes")
-    public List<String> getReadAttributes() {
+    public List<CharSequence> getReadAttributes() {
         return readAttributes;
     }
 
@@ -209,11 +209,11 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("ReadAttributes")
-    public void setReadAttributes(List<String> readAttributes) {
+    public void setReadAttributes(List<CharSequence> readAttributes) {
         this.readAttributes = readAttributes;
     }
 
-    public UserPoolClient withReadAttributes(List<String> readAttributes) {
+    public UserPoolClient withReadAttributes(List<CharSequence> readAttributes) {
         this.readAttributes = readAttributes;
         return this;
     }
@@ -223,7 +223,7 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("WriteAttributes")
-    public List<String> getWriteAttributes() {
+    public List<CharSequence> getWriteAttributes() {
         return writeAttributes;
     }
 
@@ -232,11 +232,11 @@ public class UserPoolClient {
      * 
      */
     @JsonProperty("WriteAttributes")
-    public void setWriteAttributes(List<String> writeAttributes) {
+    public void setWriteAttributes(List<CharSequence> writeAttributes) {
         this.writeAttributes = writeAttributes;
     }
 
-    public UserPoolClient withWriteAttributes(List<String> writeAttributes) {
+    public UserPoolClient withWriteAttributes(List<CharSequence> writeAttributes) {
         this.writeAttributes = writeAttributes;
         return this;
     }

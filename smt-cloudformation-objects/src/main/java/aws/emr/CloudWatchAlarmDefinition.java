@@ -39,7 +39,7 @@ public class CloudWatchAlarmDefinition {
      */
     @JsonProperty("ComparisonOperator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-comparisonoperator")
-    private String comparisonOperator;
+    private CharSequence comparisonOperator;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-dimensions
      * 
@@ -61,14 +61,14 @@ public class CloudWatchAlarmDefinition {
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-namespace
      * 
      */
     @JsonProperty("Namespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-namespace")
-    private String namespace;
+    private CharSequence namespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-period
      * 
@@ -82,7 +82,7 @@ public class CloudWatchAlarmDefinition {
      */
     @JsonProperty("Statistic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-statistic")
-    private String statistic;
+    private CharSequence statistic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-threshold
      * 
@@ -96,14 +96,14 @@ public class CloudWatchAlarmDefinition {
      */
     @JsonProperty("Unit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-unit")
-    private String unit;
+    private CharSequence unit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-comparisonoperator
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public String getComparisonOperator() {
+    public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
 
@@ -112,11 +112,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public void setComparisonOperator(String comparisonOperator) {
+    public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
 
-    public CloudWatchAlarmDefinition withComparisonOperator(String comparisonOperator) {
+    public CloudWatchAlarmDefinition withComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
         return this;
     }
@@ -172,7 +172,7 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -181,11 +181,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public CloudWatchAlarmDefinition withMetricName(String metricName) {
+    public CloudWatchAlarmDefinition withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -195,7 +195,7 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Namespace")
-    public String getNamespace() {
+    public CharSequence getNamespace() {
         return namespace;
     }
 
@@ -204,11 +204,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Namespace")
-    public void setNamespace(String namespace) {
+    public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
 
-    public CloudWatchAlarmDefinition withNamespace(String namespace) {
+    public CloudWatchAlarmDefinition withNamespace(CharSequence namespace) {
         this.namespace = namespace;
         return this;
     }
@@ -241,7 +241,7 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Statistic")
-    public String getStatistic() {
+    public CharSequence getStatistic() {
         return statistic;
     }
 
@@ -250,11 +250,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Statistic")
-    public void setStatistic(String statistic) {
+    public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
 
-    public CloudWatchAlarmDefinition withStatistic(String statistic) {
+    public CloudWatchAlarmDefinition withStatistic(CharSequence statistic) {
         this.statistic = statistic;
         return this;
     }
@@ -287,7 +287,7 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Unit")
-    public String getUnit() {
+    public CharSequence getUnit() {
         return unit;
     }
 
@@ -296,11 +296,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonProperty("Unit")
-    public void setUnit(String unit) {
+    public void setUnit(CharSequence unit) {
         this.unit = unit;
     }
 
-    public CloudWatchAlarmDefinition withUnit(String unit) {
+    public CloudWatchAlarmDefinition withUnit(CharSequence unit) {
         this.unit = unit;
         return this;
     }

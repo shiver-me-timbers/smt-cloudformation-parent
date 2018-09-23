@@ -34,14 +34,14 @@ public class MountTarget {
      */
     @JsonProperty("FileSystemId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid")
-    private String fileSystemId;
+    private CharSequence fileSystemId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
      * 
      */
     @JsonProperty("IpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress")
-    private String ipAddress;
+    private CharSequence ipAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
      * 
@@ -49,21 +49,21 @@ public class MountTarget {
     @JsonProperty("SecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups")
-    private Set<String> securityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
      * 
      */
     @JsonProperty("FileSystemId")
-    public String getFileSystemId() {
+    public CharSequence getFileSystemId() {
         return fileSystemId;
     }
 
@@ -72,11 +72,11 @@ public class MountTarget {
      * 
      */
     @JsonProperty("FileSystemId")
-    public void setFileSystemId(String fileSystemId) {
+    public void setFileSystemId(CharSequence fileSystemId) {
         this.fileSystemId = fileSystemId;
     }
 
-    public MountTarget withFileSystemId(String fileSystemId) {
+    public MountTarget withFileSystemId(CharSequence fileSystemId) {
         this.fileSystemId = fileSystemId;
         return this;
     }
@@ -86,7 +86,7 @@ public class MountTarget {
      * 
      */
     @JsonProperty("IpAddress")
-    public String getIpAddress() {
+    public CharSequence getIpAddress() {
         return ipAddress;
     }
 
@@ -95,11 +95,11 @@ public class MountTarget {
      * 
      */
     @JsonProperty("IpAddress")
-    public void setIpAddress(String ipAddress) {
+    public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
 
-    public MountTarget withIpAddress(String ipAddress) {
+    public MountTarget withIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
         return this;
     }
@@ -109,7 +109,7 @@ public class MountTarget {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public Set<String> getSecurityGroups() {
+    public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -118,11 +118,11 @@ public class MountTarget {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(Set<String> securityGroups) {
+    public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public MountTarget withSecurityGroups(Set<String> securityGroups) {
+    public MountTarget withSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -132,7 +132,7 @@ public class MountTarget {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -141,11 +141,11 @@ public class MountTarget {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public MountTarget withSubnetId(String subnetId) {
+    public MountTarget withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

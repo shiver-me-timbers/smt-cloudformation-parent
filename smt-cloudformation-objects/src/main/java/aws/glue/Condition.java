@@ -30,28 +30,28 @@ public class Condition {
      */
     @JsonProperty("State")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state")
-    private String state;
+    private CharSequence state;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
      */
     @JsonProperty("LogicalOperator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator")
-    private String logicalOperator;
+    private CharSequence logicalOperator;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname
      * 
      */
     @JsonProperty("JobName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname")
-    private String jobName;
+    private CharSequence jobName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
     @JsonProperty("State")
-    public String getState() {
+    public CharSequence getState() {
         return state;
     }
 
@@ -60,11 +60,11 @@ public class Condition {
      * 
      */
     @JsonProperty("State")
-    public void setState(String state) {
+    public void setState(CharSequence state) {
         this.state = state;
     }
 
-    public Condition withState(String state) {
+    public Condition withState(CharSequence state) {
         this.state = state;
         return this;
     }
@@ -74,7 +74,7 @@ public class Condition {
      * 
      */
     @JsonProperty("LogicalOperator")
-    public String getLogicalOperator() {
+    public CharSequence getLogicalOperator() {
         return logicalOperator;
     }
 
@@ -83,11 +83,11 @@ public class Condition {
      * 
      */
     @JsonProperty("LogicalOperator")
-    public void setLogicalOperator(String logicalOperator) {
+    public void setLogicalOperator(CharSequence logicalOperator) {
         this.logicalOperator = logicalOperator;
     }
 
-    public Condition withLogicalOperator(String logicalOperator) {
+    public Condition withLogicalOperator(CharSequence logicalOperator) {
         this.logicalOperator = logicalOperator;
         return this;
     }
@@ -97,7 +97,7 @@ public class Condition {
      * 
      */
     @JsonProperty("JobName")
-    public String getJobName() {
+    public CharSequence getJobName() {
         return jobName;
     }
 
@@ -106,11 +106,11 @@ public class Condition {
      * 
      */
     @JsonProperty("JobName")
-    public void setJobName(String jobName) {
+    public void setJobName(CharSequence jobName) {
         this.jobName = jobName;
     }
 
-    public Condition withJobName(String jobName) {
+    public Condition withJobName(CharSequence jobName) {
         this.jobName = jobName;
         return this;
     }

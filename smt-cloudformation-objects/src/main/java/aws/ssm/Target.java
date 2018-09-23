@@ -32,7 +32,7 @@ public class Target {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-values
      * 
@@ -40,14 +40,14 @@ public class Target {
     @JsonProperty("Values")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-values")
-    private Set<String> values = new LinkedHashSet<String>();
+    private Set<CharSequence> values = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -56,11 +56,11 @@ public class Target {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public Target withKey(String key) {
+    public Target withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -70,7 +70,7 @@ public class Target {
      * 
      */
     @JsonProperty("Values")
-    public Set<String> getValues() {
+    public Set<CharSequence> getValues() {
         return values;
     }
 
@@ -79,11 +79,11 @@ public class Target {
      * 
      */
     @JsonProperty("Values")
-    public void setValues(Set<String> values) {
+    public void setValues(Set<CharSequence> values) {
         this.values = values;
     }
 
-    public Target withValues(Set<String> values) {
+    public Target withValues(Set<CharSequence> values) {
         this.values = values;
         return this;
     }

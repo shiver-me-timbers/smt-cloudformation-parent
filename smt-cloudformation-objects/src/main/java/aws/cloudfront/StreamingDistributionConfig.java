@@ -45,14 +45,14 @@ public class StreamingDistributionConfig {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-priceclass
      * 
      */
     @JsonProperty("PriceClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-priceclass")
-    private String priceClass;
+    private CharSequence priceClass;
     /**
      * S3Origin
      * <p>
@@ -75,7 +75,7 @@ public class StreamingDistributionConfig {
      */
     @JsonProperty("Aliases")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases")
-    private List<String> aliases = new ArrayList<String>();
+    private List<CharSequence> aliases = new ArrayList<CharSequence>();
     /**
      * TrustedSigners
      * <p>
@@ -118,7 +118,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -127,11 +127,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public StreamingDistributionConfig withComment(String comment) {
+    public StreamingDistributionConfig withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -141,7 +141,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("PriceClass")
-    public String getPriceClass() {
+    public CharSequence getPriceClass() {
         return priceClass;
     }
 
@@ -150,11 +150,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("PriceClass")
-    public void setPriceClass(String priceClass) {
+    public void setPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
     }
 
-    public StreamingDistributionConfig withPriceClass(String priceClass) {
+    public StreamingDistributionConfig withPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
         return this;
     }
@@ -214,7 +214,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("Aliases")
-    public List<String> getAliases() {
+    public List<CharSequence> getAliases() {
         return aliases;
     }
 
@@ -223,11 +223,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonProperty("Aliases")
-    public void setAliases(List<String> aliases) {
+    public void setAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
     }
 
-    public StreamingDistributionConfig withAliases(List<String> aliases) {
+    public StreamingDistributionConfig withAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
         return this;
     }

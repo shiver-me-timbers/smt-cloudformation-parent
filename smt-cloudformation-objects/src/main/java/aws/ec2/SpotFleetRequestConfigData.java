@@ -42,21 +42,21 @@ public class SpotFleetRequestConfigData {
      */
     @JsonProperty("AllocationStrategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy")
-    private String allocationStrategy;
+    private CharSequence allocationStrategy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-excesscapacityterminationpolicy
      * 
      */
     @JsonProperty("ExcessCapacityTerminationPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-excesscapacityterminationpolicy")
-    private String excessCapacityTerminationPolicy;
+    private CharSequence excessCapacityTerminationPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-iamfleetrole
      * 
      */
     @JsonProperty("IamFleetRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-iamfleetrole")
-    private String iamFleetRole;
+    private CharSequence iamFleetRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications
      * 
@@ -86,7 +86,7 @@ public class SpotFleetRequestConfigData {
      */
     @JsonProperty("SpotPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-spotprice")
-    private String spotPrice;
+    private CharSequence spotPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-targetcapacity
      * 
@@ -107,28 +107,28 @@ public class SpotFleetRequestConfigData {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validfrom
      * 
      */
     @JsonProperty("ValidFrom")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validfrom")
-    private String validFrom;
+    private CharSequence validFrom;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validuntil
      * 
      */
     @JsonProperty("ValidUntil")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validuntil")
-    private String validUntil;
+    private CharSequence validUntil;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy
      * 
      */
     @JsonProperty("AllocationStrategy")
-    public String getAllocationStrategy() {
+    public CharSequence getAllocationStrategy() {
         return allocationStrategy;
     }
 
@@ -137,11 +137,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("AllocationStrategy")
-    public void setAllocationStrategy(String allocationStrategy) {
+    public void setAllocationStrategy(CharSequence allocationStrategy) {
         this.allocationStrategy = allocationStrategy;
     }
 
-    public SpotFleetRequestConfigData withAllocationStrategy(String allocationStrategy) {
+    public SpotFleetRequestConfigData withAllocationStrategy(CharSequence allocationStrategy) {
         this.allocationStrategy = allocationStrategy;
         return this;
     }
@@ -151,7 +151,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ExcessCapacityTerminationPolicy")
-    public String getExcessCapacityTerminationPolicy() {
+    public CharSequence getExcessCapacityTerminationPolicy() {
         return excessCapacityTerminationPolicy;
     }
 
@@ -160,11 +160,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ExcessCapacityTerminationPolicy")
-    public void setExcessCapacityTerminationPolicy(String excessCapacityTerminationPolicy) {
+    public void setExcessCapacityTerminationPolicy(CharSequence excessCapacityTerminationPolicy) {
         this.excessCapacityTerminationPolicy = excessCapacityTerminationPolicy;
     }
 
-    public SpotFleetRequestConfigData withExcessCapacityTerminationPolicy(String excessCapacityTerminationPolicy) {
+    public SpotFleetRequestConfigData withExcessCapacityTerminationPolicy(CharSequence excessCapacityTerminationPolicy) {
         this.excessCapacityTerminationPolicy = excessCapacityTerminationPolicy;
         return this;
     }
@@ -174,7 +174,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("IamFleetRole")
-    public String getIamFleetRole() {
+    public CharSequence getIamFleetRole() {
         return iamFleetRole;
     }
 
@@ -183,11 +183,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("IamFleetRole")
-    public void setIamFleetRole(String iamFleetRole) {
+    public void setIamFleetRole(CharSequence iamFleetRole) {
         this.iamFleetRole = iamFleetRole;
     }
 
-    public SpotFleetRequestConfigData withIamFleetRole(String iamFleetRole) {
+    public SpotFleetRequestConfigData withIamFleetRole(CharSequence iamFleetRole) {
         this.iamFleetRole = iamFleetRole;
         return this;
     }
@@ -266,7 +266,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("SpotPrice")
-    public String getSpotPrice() {
+    public CharSequence getSpotPrice() {
         return spotPrice;
     }
 
@@ -275,11 +275,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("SpotPrice")
-    public void setSpotPrice(String spotPrice) {
+    public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
 
-    public SpotFleetRequestConfigData withSpotPrice(String spotPrice) {
+    public SpotFleetRequestConfigData withSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
         return this;
     }
@@ -335,7 +335,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -344,11 +344,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public SpotFleetRequestConfigData withType(String type) {
+    public SpotFleetRequestConfigData withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -358,7 +358,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ValidFrom")
-    public String getValidFrom() {
+    public CharSequence getValidFrom() {
         return validFrom;
     }
 
@@ -367,11 +367,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ValidFrom")
-    public void setValidFrom(String validFrom) {
+    public void setValidFrom(CharSequence validFrom) {
         this.validFrom = validFrom;
     }
 
-    public SpotFleetRequestConfigData withValidFrom(String validFrom) {
+    public SpotFleetRequestConfigData withValidFrom(CharSequence validFrom) {
         this.validFrom = validFrom;
         return this;
     }
@@ -381,7 +381,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ValidUntil")
-    public String getValidUntil() {
+    public CharSequence getValidUntil() {
         return validUntil;
     }
 
@@ -390,11 +390,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonProperty("ValidUntil")
-    public void setValidUntil(String validUntil) {
+    public void setValidUntil(CharSequence validUntil) {
         this.validUntil = validUntil;
     }
 
-    public SpotFleetRequestConfigData withValidUntil(String validUntil) {
+    public SpotFleetRequestConfigData withValidUntil(CharSequence validUntil) {
         this.validUntil = validUntil;
         return this;
     }

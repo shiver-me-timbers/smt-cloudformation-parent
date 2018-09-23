@@ -31,35 +31,35 @@ public class Volume {
      */
     @JsonProperty("Ec2VolumeId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-ec2volumeid")
-    private String ec2VolumeId;
+    private CharSequence ec2VolumeId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-mountpoint
      * 
      */
     @JsonProperty("MountPoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-mountpoint")
-    private String mountPoint;
+    private CharSequence mountPoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-stackid
      * 
      */
     @JsonProperty("StackId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-stackid")
-    private String stackId;
+    private CharSequence stackId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-ec2volumeid
      * 
      */
     @JsonProperty("Ec2VolumeId")
-    public String getEc2VolumeId() {
+    public CharSequence getEc2VolumeId() {
         return ec2VolumeId;
     }
 
@@ -68,11 +68,11 @@ public class Volume {
      * 
      */
     @JsonProperty("Ec2VolumeId")
-    public void setEc2VolumeId(String ec2VolumeId) {
+    public void setEc2VolumeId(CharSequence ec2VolumeId) {
         this.ec2VolumeId = ec2VolumeId;
     }
 
-    public Volume withEc2VolumeId(String ec2VolumeId) {
+    public Volume withEc2VolumeId(CharSequence ec2VolumeId) {
         this.ec2VolumeId = ec2VolumeId;
         return this;
     }
@@ -82,7 +82,7 @@ public class Volume {
      * 
      */
     @JsonProperty("MountPoint")
-    public String getMountPoint() {
+    public CharSequence getMountPoint() {
         return mountPoint;
     }
 
@@ -91,11 +91,11 @@ public class Volume {
      * 
      */
     @JsonProperty("MountPoint")
-    public void setMountPoint(String mountPoint) {
+    public void setMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
     }
 
-    public Volume withMountPoint(String mountPoint) {
+    public Volume withMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
         return this;
     }
@@ -105,7 +105,7 @@ public class Volume {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -114,11 +114,11 @@ public class Volume {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Volume withName(String name) {
+    public Volume withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -128,7 +128,7 @@ public class Volume {
      * 
      */
     @JsonProperty("StackId")
-    public String getStackId() {
+    public CharSequence getStackId() {
         return stackId;
     }
 
@@ -137,11 +137,11 @@ public class Volume {
      * 
      */
     @JsonProperty("StackId")
-    public void setStackId(String stackId) {
+    public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
 
-    public Volume withStackId(String stackId) {
+    public Volume withStackId(CharSequence stackId) {
         this.stackId = stackId;
         return this;
     }

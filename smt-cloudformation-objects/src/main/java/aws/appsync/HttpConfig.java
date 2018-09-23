@@ -28,14 +28,14 @@ public class HttpConfig {
      */
     @JsonProperty("Endpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint")
-    private String endpoint;
+    private CharSequence endpoint;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
      * 
      */
     @JsonProperty("Endpoint")
-    public String getEndpoint() {
+    public CharSequence getEndpoint() {
         return endpoint;
     }
 
@@ -44,11 +44,11 @@ public class HttpConfig {
      * 
      */
     @JsonProperty("Endpoint")
-    public void setEndpoint(String endpoint) {
+    public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }
 
-    public HttpConfig withEndpoint(String endpoint) {
+    public HttpConfig withEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
         return this;
     }

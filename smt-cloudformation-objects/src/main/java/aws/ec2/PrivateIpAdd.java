@@ -29,7 +29,7 @@ public class PrivateIpAdd {
      */
     @JsonProperty("PrivateIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress")
-    private String privateIpAddress;
+    private CharSequence privateIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary
      * 
@@ -43,7 +43,7 @@ public class PrivateIpAdd {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public String getPrivateIpAddress() {
+    public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
 
@@ -52,11 +52,11 @@ public class PrivateIpAdd {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public void setPrivateIpAddress(String privateIpAddress) {
+    public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
 
-    public PrivateIpAdd withPrivateIpAddress(String privateIpAddress) {
+    public PrivateIpAdd withPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
         return this;
     }

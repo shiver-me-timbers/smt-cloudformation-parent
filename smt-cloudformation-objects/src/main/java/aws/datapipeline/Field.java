@@ -30,28 +30,28 @@ public class Field {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-refvalue
      * 
      */
     @JsonProperty("RefValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-refvalue")
-    private String refValue;
+    private CharSequence refValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-stringvalue
      * 
      */
     @JsonProperty("StringValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-stringvalue")
-    private String stringValue;
+    private CharSequence stringValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -60,11 +60,11 @@ public class Field {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public Field withKey(String key) {
+    public Field withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -74,7 +74,7 @@ public class Field {
      * 
      */
     @JsonProperty("RefValue")
-    public String getRefValue() {
+    public CharSequence getRefValue() {
         return refValue;
     }
 
@@ -83,11 +83,11 @@ public class Field {
      * 
      */
     @JsonProperty("RefValue")
-    public void setRefValue(String refValue) {
+    public void setRefValue(CharSequence refValue) {
         this.refValue = refValue;
     }
 
-    public Field withRefValue(String refValue) {
+    public Field withRefValue(CharSequence refValue) {
         this.refValue = refValue;
         return this;
     }
@@ -97,7 +97,7 @@ public class Field {
      * 
      */
     @JsonProperty("StringValue")
-    public String getStringValue() {
+    public CharSequence getStringValue() {
         return stringValue;
     }
 
@@ -106,11 +106,11 @@ public class Field {
      * 
      */
     @JsonProperty("StringValue")
-    public void setStringValue(String stringValue) {
+    public void setStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
     }
 
-    public Field withStringValue(String stringValue) {
+    public Field withStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
         return this;
     }

@@ -46,7 +46,7 @@ public class EbsBlockDevice {
      */
     @JsonProperty("SnapshotId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-snapshotid")
-    private String snapshotId;
+    private CharSequence snapshotId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumesize
      * 
@@ -60,7 +60,7 @@ public class EbsBlockDevice {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-deleteontermination
@@ -113,7 +113,7 @@ public class EbsBlockDevice {
      * 
      */
     @JsonProperty("SnapshotId")
-    public String getSnapshotId() {
+    public CharSequence getSnapshotId() {
         return snapshotId;
     }
 
@@ -122,11 +122,11 @@ public class EbsBlockDevice {
      * 
      */
     @JsonProperty("SnapshotId")
-    public void setSnapshotId(String snapshotId) {
+    public void setSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
     }
 
-    public EbsBlockDevice withSnapshotId(String snapshotId) {
+    public EbsBlockDevice withSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
         return this;
     }
@@ -159,7 +159,7 @@ public class EbsBlockDevice {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -168,11 +168,11 @@ public class EbsBlockDevice {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public EbsBlockDevice withVolumeType(String volumeType) {
+    public EbsBlockDevice withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

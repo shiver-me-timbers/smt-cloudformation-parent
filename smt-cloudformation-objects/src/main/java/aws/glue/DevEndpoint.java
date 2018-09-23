@@ -37,21 +37,21 @@ public class DevEndpoint {
      */
     @JsonProperty("ExtraJarsS3Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrajarss3path")
-    private String extraJarsS3Path;
+    private CharSequence extraJarsS3Path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-endpointname
      * 
      */
     @JsonProperty("EndpointName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-endpointname")
-    private String endpointName;
+    private CharSequence endpointName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-publickey
      * 
      */
     @JsonProperty("PublicKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-publickey")
-    private String publicKey;
+    private CharSequence publicKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-numberofnodes
      * 
@@ -65,35 +65,35 @@ public class DevEndpoint {
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrapythonlibss3path
      * 
      */
     @JsonProperty("ExtraPythonLibsS3Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrapythonlibss3path")
-    private String extraPythonLibsS3Path;
+    private CharSequence extraPythonLibsS3Path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids")
-    private List<String> securityGroupIds = new ArrayList<String>();
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrajarss3path
      * 
      */
     @JsonProperty("ExtraJarsS3Path")
-    public String getExtraJarsS3Path() {
+    public CharSequence getExtraJarsS3Path() {
         return extraJarsS3Path;
     }
 
@@ -102,11 +102,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("ExtraJarsS3Path")
-    public void setExtraJarsS3Path(String extraJarsS3Path) {
+    public void setExtraJarsS3Path(CharSequence extraJarsS3Path) {
         this.extraJarsS3Path = extraJarsS3Path;
     }
 
-    public DevEndpoint withExtraJarsS3Path(String extraJarsS3Path) {
+    public DevEndpoint withExtraJarsS3Path(CharSequence extraJarsS3Path) {
         this.extraJarsS3Path = extraJarsS3Path;
         return this;
     }
@@ -116,7 +116,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("EndpointName")
-    public String getEndpointName() {
+    public CharSequence getEndpointName() {
         return endpointName;
     }
 
@@ -125,11 +125,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("EndpointName")
-    public void setEndpointName(String endpointName) {
+    public void setEndpointName(CharSequence endpointName) {
         this.endpointName = endpointName;
     }
 
-    public DevEndpoint withEndpointName(String endpointName) {
+    public DevEndpoint withEndpointName(CharSequence endpointName) {
         this.endpointName = endpointName;
         return this;
     }
@@ -139,7 +139,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("PublicKey")
-    public String getPublicKey() {
+    public CharSequence getPublicKey() {
         return publicKey;
     }
 
@@ -148,11 +148,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("PublicKey")
-    public void setPublicKey(String publicKey) {
+    public void setPublicKey(CharSequence publicKey) {
         this.publicKey = publicKey;
     }
 
-    public DevEndpoint withPublicKey(String publicKey) {
+    public DevEndpoint withPublicKey(CharSequence publicKey) {
         this.publicKey = publicKey;
         return this;
     }
@@ -185,7 +185,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -194,11 +194,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public DevEndpoint withSubnetId(String subnetId) {
+    public DevEndpoint withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }
@@ -208,7 +208,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("ExtraPythonLibsS3Path")
-    public String getExtraPythonLibsS3Path() {
+    public CharSequence getExtraPythonLibsS3Path() {
         return extraPythonLibsS3Path;
     }
 
@@ -217,11 +217,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("ExtraPythonLibsS3Path")
-    public void setExtraPythonLibsS3Path(String extraPythonLibsS3Path) {
+    public void setExtraPythonLibsS3Path(CharSequence extraPythonLibsS3Path) {
         this.extraPythonLibsS3Path = extraPythonLibsS3Path;
     }
 
-    public DevEndpoint withExtraPythonLibsS3Path(String extraPythonLibsS3Path) {
+    public DevEndpoint withExtraPythonLibsS3Path(CharSequence extraPythonLibsS3Path) {
         this.extraPythonLibsS3Path = extraPythonLibsS3Path;
         return this;
     }
@@ -231,7 +231,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public List<String> getSecurityGroupIds() {
+    public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -240,11 +240,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(List<String> securityGroupIds) {
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public DevEndpoint withSecurityGroupIds(List<String> securityGroupIds) {
+    public DevEndpoint withSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -254,7 +254,7 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -263,11 +263,11 @@ public class DevEndpoint {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public DevEndpoint withRoleArn(String roleArn) {
+    public DevEndpoint withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

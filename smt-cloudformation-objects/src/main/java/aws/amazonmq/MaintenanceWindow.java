@@ -30,28 +30,28 @@ public class MaintenanceWindow {
      */
     @JsonProperty("DayOfWeek")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek")
-    private String dayOfWeek;
+    private CharSequence dayOfWeek;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday
      * 
      */
     @JsonProperty("TimeOfDay")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday")
-    private String timeOfDay;
+    private CharSequence timeOfDay;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone
      * 
      */
     @JsonProperty("TimeZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone")
-    private String timeZone;
+    private CharSequence timeZone;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek
      * 
      */
     @JsonProperty("DayOfWeek")
-    public String getDayOfWeek() {
+    public CharSequence getDayOfWeek() {
         return dayOfWeek;
     }
 
@@ -60,11 +60,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonProperty("DayOfWeek")
-    public void setDayOfWeek(String dayOfWeek) {
+    public void setDayOfWeek(CharSequence dayOfWeek) {
         this.dayOfWeek = dayOfWeek;
     }
 
-    public MaintenanceWindow withDayOfWeek(String dayOfWeek) {
+    public MaintenanceWindow withDayOfWeek(CharSequence dayOfWeek) {
         this.dayOfWeek = dayOfWeek;
         return this;
     }
@@ -74,7 +74,7 @@ public class MaintenanceWindow {
      * 
      */
     @JsonProperty("TimeOfDay")
-    public String getTimeOfDay() {
+    public CharSequence getTimeOfDay() {
         return timeOfDay;
     }
 
@@ -83,11 +83,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonProperty("TimeOfDay")
-    public void setTimeOfDay(String timeOfDay) {
+    public void setTimeOfDay(CharSequence timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
 
-    public MaintenanceWindow withTimeOfDay(String timeOfDay) {
+    public MaintenanceWindow withTimeOfDay(CharSequence timeOfDay) {
         this.timeOfDay = timeOfDay;
         return this;
     }
@@ -97,7 +97,7 @@ public class MaintenanceWindow {
      * 
      */
     @JsonProperty("TimeZone")
-    public String getTimeZone() {
+    public CharSequence getTimeZone() {
         return timeZone;
     }
 
@@ -106,11 +106,11 @@ public class MaintenanceWindow {
      * 
      */
     @JsonProperty("TimeZone")
-    public void setTimeZone(String timeZone) {
+    public void setTimeZone(CharSequence timeZone) {
         this.timeZone = timeZone;
     }
 
-    public MaintenanceWindow withTimeZone(String timeZone) {
+    public MaintenanceWindow withTimeZone(CharSequence timeZone) {
         this.timeZone = timeZone;
         return this;
     }

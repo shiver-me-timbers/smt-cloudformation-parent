@@ -44,35 +44,35 @@ public class ReplicationInstance {
      */
     @JsonProperty("ReplicationInstanceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceidentifier")
-    private String replicationInstanceIdentifier;
+    private CharSequence replicationInstanceIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-kmskeyid
      * 
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-preferredmaintenancewindow
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-autominorversionupgrade
      * 
@@ -86,7 +86,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationsubnetgroupidentifier")
-    private String replicationSubnetGroupIdentifier;
+    private CharSequence replicationSubnetGroupIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allocatedstorage
      * 
@@ -100,7 +100,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("VpcSecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-vpcsecuritygroupids")
-    private List<String> vpcSecurityGroupIds = new ArrayList<String>();
+    private List<CharSequence> vpcSecurityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allowmajorversionupgrade
      * 
@@ -114,7 +114,7 @@ public class ReplicationInstance {
      */
     @JsonProperty("ReplicationInstanceClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceclass")
-    private String replicationInstanceClass;
+    private CharSequence replicationInstanceClass;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-publiclyaccessible
      * 
@@ -142,7 +142,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationInstanceIdentifier")
-    public String getReplicationInstanceIdentifier() {
+    public CharSequence getReplicationInstanceIdentifier() {
         return replicationInstanceIdentifier;
     }
 
@@ -151,11 +151,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationInstanceIdentifier")
-    public void setReplicationInstanceIdentifier(String replicationInstanceIdentifier) {
+    public void setReplicationInstanceIdentifier(CharSequence replicationInstanceIdentifier) {
         this.replicationInstanceIdentifier = replicationInstanceIdentifier;
     }
 
-    public ReplicationInstance withReplicationInstanceIdentifier(String replicationInstanceIdentifier) {
+    public ReplicationInstance withReplicationInstanceIdentifier(CharSequence replicationInstanceIdentifier) {
         this.replicationInstanceIdentifier = replicationInstanceIdentifier;
         return this;
     }
@@ -165,7 +165,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -174,11 +174,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public ReplicationInstance withEngineVersion(String engineVersion) {
+    public ReplicationInstance withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -188,7 +188,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -197,11 +197,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public ReplicationInstance withKmsKeyId(String kmsKeyId) {
+    public ReplicationInstance withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -211,7 +211,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -220,11 +220,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public ReplicationInstance withAvailabilityZone(String availabilityZone) {
+    public ReplicationInstance withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -234,7 +234,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -243,11 +243,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public ReplicationInstance withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public ReplicationInstance withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -280,7 +280,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
-    public String getReplicationSubnetGroupIdentifier() {
+    public CharSequence getReplicationSubnetGroupIdentifier() {
         return replicationSubnetGroupIdentifier;
     }
 
@@ -289,11 +289,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
-    public void setReplicationSubnetGroupIdentifier(String replicationSubnetGroupIdentifier) {
+    public void setReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
     }
 
-    public ReplicationInstance withReplicationSubnetGroupIdentifier(String replicationSubnetGroupIdentifier) {
+    public ReplicationInstance withReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
         return this;
     }
@@ -326,7 +326,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public List<String> getVpcSecurityGroupIds() {
+    public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
 
@@ -335,11 +335,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public void setVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
 
-    public ReplicationInstance withVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public ReplicationInstance withVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
         return this;
     }
@@ -372,7 +372,7 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationInstanceClass")
-    public String getReplicationInstanceClass() {
+    public CharSequence getReplicationInstanceClass() {
         return replicationInstanceClass;
     }
 
@@ -381,11 +381,11 @@ public class ReplicationInstance {
      * 
      */
     @JsonProperty("ReplicationInstanceClass")
-    public void setReplicationInstanceClass(String replicationInstanceClass) {
+    public void setReplicationInstanceClass(CharSequence replicationInstanceClass) {
         this.replicationInstanceClass = replicationInstanceClass;
     }
 
-    public ReplicationInstance withReplicationInstanceClass(String replicationInstanceClass) {
+    public ReplicationInstance withReplicationInstanceClass(CharSequence replicationInstanceClass) {
         this.replicationInstanceClass = replicationInstanceClass;
         return this;
     }

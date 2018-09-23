@@ -29,7 +29,7 @@ public class ApplicationResourceLifecycleConfig {
      */
     @JsonProperty("ServiceRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole")
-    private String serviceRole;
+    private CharSequence serviceRole;
     /**
      * ApplicationVersionLifecycleConfig
      * <p>
@@ -45,7 +45,7 @@ public class ApplicationResourceLifecycleConfig {
      * 
      */
     @JsonProperty("ServiceRole")
-    public String getServiceRole() {
+    public CharSequence getServiceRole() {
         return serviceRole;
     }
 
@@ -54,11 +54,11 @@ public class ApplicationResourceLifecycleConfig {
      * 
      */
     @JsonProperty("ServiceRole")
-    public void setServiceRole(String serviceRole) {
+    public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
 
-    public ApplicationResourceLifecycleConfig withServiceRole(String serviceRole) {
+    public ApplicationResourceLifecycleConfig withServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
         return this;
     }

@@ -33,21 +33,21 @@ public class VpcSettings {
     @JsonProperty("SubnetIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids")
-    private Set<String> subnetIds = new LinkedHashSet<String>();
+    private Set<CharSequence> subnetIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-vpcid
      * 
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids
      * 
      */
     @JsonProperty("SubnetIds")
-    public Set<String> getSubnetIds() {
+    public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -56,11 +56,11 @@ public class VpcSettings {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(Set<String> subnetIds) {
+    public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public VpcSettings withSubnetIds(Set<String> subnetIds) {
+    public VpcSettings withSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }
@@ -70,7 +70,7 @@ public class VpcSettings {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -79,11 +79,11 @@ public class VpcSettings {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VpcSettings withVpcId(String vpcId) {
+    public VpcSettings withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

@@ -29,21 +29,21 @@ public class ServerSideEncryptionByDefault {
      */
     @JsonProperty("KMSMasterKeyID")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid")
-    private String kMSMasterKeyID;
+    private CharSequence kMSMasterKeyID;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm
      * 
      */
     @JsonProperty("SSEAlgorithm")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm")
-    private String sSEAlgorithm;
+    private CharSequence sSEAlgorithm;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid
      * 
      */
     @JsonProperty("KMSMasterKeyID")
-    public String getKMSMasterKeyID() {
+    public CharSequence getKMSMasterKeyID() {
         return kMSMasterKeyID;
     }
 
@@ -52,11 +52,11 @@ public class ServerSideEncryptionByDefault {
      * 
      */
     @JsonProperty("KMSMasterKeyID")
-    public void setKMSMasterKeyID(String kMSMasterKeyID) {
+    public void setKMSMasterKeyID(CharSequence kMSMasterKeyID) {
         this.kMSMasterKeyID = kMSMasterKeyID;
     }
 
-    public ServerSideEncryptionByDefault withKMSMasterKeyID(String kMSMasterKeyID) {
+    public ServerSideEncryptionByDefault withKMSMasterKeyID(CharSequence kMSMasterKeyID) {
         this.kMSMasterKeyID = kMSMasterKeyID;
         return this;
     }
@@ -66,7 +66,7 @@ public class ServerSideEncryptionByDefault {
      * 
      */
     @JsonProperty("SSEAlgorithm")
-    public String getSSEAlgorithm() {
+    public CharSequence getSSEAlgorithm() {
         return sSEAlgorithm;
     }
 
@@ -75,11 +75,11 @@ public class ServerSideEncryptionByDefault {
      * 
      */
     @JsonProperty("SSEAlgorithm")
-    public void setSSEAlgorithm(String sSEAlgorithm) {
+    public void setSSEAlgorithm(CharSequence sSEAlgorithm) {
         this.sSEAlgorithm = sSEAlgorithm;
     }
 
-    public ServerSideEncryptionByDefault withSSEAlgorithm(String sSEAlgorithm) {
+    public ServerSideEncryptionByDefault withSSEAlgorithm(CharSequence sSEAlgorithm) {
         this.sSEAlgorithm = sSEAlgorithm;
         return this;
     }

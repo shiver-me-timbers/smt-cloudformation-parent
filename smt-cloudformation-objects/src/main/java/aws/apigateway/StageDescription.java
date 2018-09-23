@@ -53,7 +53,7 @@ public class StageDescription {
      */
     @JsonProperty("CacheClusterSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclustersize")
-    private java.lang.String cacheClusterSize;
+    private CharSequence cacheClusterSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachedataencrypted
      * 
@@ -81,7 +81,7 @@ public class StageDescription {
      */
     @JsonProperty("ClientCertificateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid")
-    private java.lang.String clientCertificateId;
+    private CharSequence clientCertificateId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-datatraceenabled
      * 
@@ -95,21 +95,21 @@ public class StageDescription {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-documentationversion
      * 
      */
     @JsonProperty("DocumentationVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-documentationversion")
-    private java.lang.String documentationVersion;
+    private CharSequence documentationVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-logginglevel
      * 
      */
     @JsonProperty("LoggingLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-logginglevel")
-    private java.lang.String loggingLevel;
+    private CharSequence loggingLevel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-methodsettings
      * 
@@ -175,7 +175,7 @@ public class StageDescription {
      * 
      */
     @JsonProperty("CacheClusterSize")
-    public java.lang.String getCacheClusterSize() {
+    public CharSequence getCacheClusterSize() {
         return cacheClusterSize;
     }
 
@@ -184,11 +184,11 @@ public class StageDescription {
      * 
      */
     @JsonProperty("CacheClusterSize")
-    public void setCacheClusterSize(java.lang.String cacheClusterSize) {
+    public void setCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
     }
 
-    public StageDescription withCacheClusterSize(java.lang.String cacheClusterSize) {
+    public StageDescription withCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
         return this;
     }
@@ -267,7 +267,7 @@ public class StageDescription {
      * 
      */
     @JsonProperty("ClientCertificateId")
-    public java.lang.String getClientCertificateId() {
+    public CharSequence getClientCertificateId() {
         return clientCertificateId;
     }
 
@@ -276,11 +276,11 @@ public class StageDescription {
      * 
      */
     @JsonProperty("ClientCertificateId")
-    public void setClientCertificateId(java.lang.String clientCertificateId) {
+    public void setClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
     }
 
-    public StageDescription withClientCertificateId(java.lang.String clientCertificateId) {
+    public StageDescription withClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
         return this;
     }
@@ -313,7 +313,7 @@ public class StageDescription {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -322,11 +322,11 @@ public class StageDescription {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public StageDescription withDescription(java.lang.String description) {
+    public StageDescription withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -336,7 +336,7 @@ public class StageDescription {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public java.lang.String getDocumentationVersion() {
+    public CharSequence getDocumentationVersion() {
         return documentationVersion;
     }
 
@@ -345,11 +345,11 @@ public class StageDescription {
      * 
      */
     @JsonProperty("DocumentationVersion")
-    public void setDocumentationVersion(java.lang.String documentationVersion) {
+    public void setDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
     }
 
-    public StageDescription withDocumentationVersion(java.lang.String documentationVersion) {
+    public StageDescription withDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
         return this;
     }
@@ -359,7 +359,7 @@ public class StageDescription {
      * 
      */
     @JsonProperty("LoggingLevel")
-    public java.lang.String getLoggingLevel() {
+    public CharSequence getLoggingLevel() {
         return loggingLevel;
     }
 
@@ -368,11 +368,11 @@ public class StageDescription {
      * 
      */
     @JsonProperty("LoggingLevel")
-    public void setLoggingLevel(java.lang.String loggingLevel) {
+    public void setLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
     }
 
-    public StageDescription withLoggingLevel(java.lang.String loggingLevel) {
+    public StageDescription withLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
         return this;
     }

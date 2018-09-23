@@ -29,21 +29,21 @@ public class StreamEncryption {
      */
     @JsonProperty("EncryptionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype")
-    private String encryptionType;
+    private CharSequence encryptionType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid
      * 
      */
     @JsonProperty("KeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid")
-    private String keyId;
+    private CharSequence keyId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype
      * 
      */
     @JsonProperty("EncryptionType")
-    public String getEncryptionType() {
+    public CharSequence getEncryptionType() {
         return encryptionType;
     }
 
@@ -52,11 +52,11 @@ public class StreamEncryption {
      * 
      */
     @JsonProperty("EncryptionType")
-    public void setEncryptionType(String encryptionType) {
+    public void setEncryptionType(CharSequence encryptionType) {
         this.encryptionType = encryptionType;
     }
 
-    public StreamEncryption withEncryptionType(String encryptionType) {
+    public StreamEncryption withEncryptionType(CharSequence encryptionType) {
         this.encryptionType = encryptionType;
         return this;
     }
@@ -66,7 +66,7 @@ public class StreamEncryption {
      * 
      */
     @JsonProperty("KeyId")
-    public String getKeyId() {
+    public CharSequence getKeyId() {
         return keyId;
     }
 
@@ -75,11 +75,11 @@ public class StreamEncryption {
      * 
      */
     @JsonProperty("KeyId")
-    public void setKeyId(String keyId) {
+    public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }
 
-    public StreamEncryption withKeyId(String keyId) {
+    public StreamEncryption withKeyId(CharSequence keyId) {
         this.keyId = keyId;
         return this;
     }

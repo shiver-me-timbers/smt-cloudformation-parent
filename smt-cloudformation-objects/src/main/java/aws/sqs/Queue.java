@@ -70,7 +70,7 @@ public class Queue {
      */
     @JsonProperty("KmsMasterKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsmasterkeyid")
-    private String kmsMasterKeyId;
+    private CharSequence kmsMasterKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-maxmesgsize
      * 
@@ -91,7 +91,7 @@ public class Queue {
      */
     @JsonProperty("QueueName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-name")
-    private String queueName;
+    private CharSequence queueName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-receivemsgwaittime
      * 
@@ -218,7 +218,7 @@ public class Queue {
      * 
      */
     @JsonProperty("KmsMasterKeyId")
-    public String getKmsMasterKeyId() {
+    public CharSequence getKmsMasterKeyId() {
         return kmsMasterKeyId;
     }
 
@@ -227,11 +227,11 @@ public class Queue {
      * 
      */
     @JsonProperty("KmsMasterKeyId")
-    public void setKmsMasterKeyId(String kmsMasterKeyId) {
+    public void setKmsMasterKeyId(CharSequence kmsMasterKeyId) {
         this.kmsMasterKeyId = kmsMasterKeyId;
     }
 
-    public Queue withKmsMasterKeyId(String kmsMasterKeyId) {
+    public Queue withKmsMasterKeyId(CharSequence kmsMasterKeyId) {
         this.kmsMasterKeyId = kmsMasterKeyId;
         return this;
     }
@@ -287,7 +287,7 @@ public class Queue {
      * 
      */
     @JsonProperty("QueueName")
-    public String getQueueName() {
+    public CharSequence getQueueName() {
         return queueName;
     }
 
@@ -296,11 +296,11 @@ public class Queue {
      * 
      */
     @JsonProperty("QueueName")
-    public void setQueueName(String queueName) {
+    public void setQueueName(CharSequence queueName) {
         this.queueName = queueName;
     }
 
-    public Queue withQueueName(String queueName) {
+    public Queue withQueueName(CharSequence queueName) {
         this.queueName = queueName;
         return this;
     }

@@ -29,7 +29,7 @@ public class ChefConfiguration {
      */
     @JsonProperty("BerkshelfVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion")
-    private String berkshelfVersion;
+    private CharSequence berkshelfVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
@@ -43,7 +43,7 @@ public class ChefConfiguration {
      * 
      */
     @JsonProperty("BerkshelfVersion")
-    public String getBerkshelfVersion() {
+    public CharSequence getBerkshelfVersion() {
         return berkshelfVersion;
     }
 
@@ -52,11 +52,11 @@ public class ChefConfiguration {
      * 
      */
     @JsonProperty("BerkshelfVersion")
-    public void setBerkshelfVersion(String berkshelfVersion) {
+    public void setBerkshelfVersion(CharSequence berkshelfVersion) {
         this.berkshelfVersion = berkshelfVersion;
     }
 
-    public ChefConfiguration withBerkshelfVersion(String berkshelfVersion) {
+    public ChefConfiguration withBerkshelfVersion(CharSequence berkshelfVersion) {
         this.berkshelfVersion = berkshelfVersion;
         return this;
     }

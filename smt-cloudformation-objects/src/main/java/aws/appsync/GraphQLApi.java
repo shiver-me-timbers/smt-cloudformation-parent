@@ -50,14 +50,14 @@ public class GraphQLApi {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype
      * 
      */
     @JsonProperty("AuthenticationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype")
-    private String authenticationType;
+    private CharSequence authenticationType;
     /**
      * LogConfig
      * <p>
@@ -127,7 +127,7 @@ public class GraphQLApi {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -136,11 +136,11 @@ public class GraphQLApi {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public GraphQLApi withName(String name) {
+    public GraphQLApi withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -150,7 +150,7 @@ public class GraphQLApi {
      * 
      */
     @JsonProperty("AuthenticationType")
-    public String getAuthenticationType() {
+    public CharSequence getAuthenticationType() {
         return authenticationType;
     }
 
@@ -159,11 +159,11 @@ public class GraphQLApi {
      * 
      */
     @JsonProperty("AuthenticationType")
-    public void setAuthenticationType(String authenticationType) {
+    public void setAuthenticationType(CharSequence authenticationType) {
         this.authenticationType = authenticationType;
     }
 
-    public GraphQLApi withAuthenticationType(String authenticationType) {
+    public GraphQLApi withAuthenticationType(CharSequence authenticationType) {
         this.authenticationType = authenticationType;
         return this;
     }

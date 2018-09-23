@@ -36,14 +36,14 @@ public class SecurityGroup {
      */
     @JsonProperty("GroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription")
-    private String groupDescription;
+    private CharSequence groupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname
      * 
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress
      * 
@@ -71,14 +71,14 @@ public class SecurityGroup {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription
      * 
      */
     @JsonProperty("GroupDescription")
-    public String getGroupDescription() {
+    public CharSequence getGroupDescription() {
         return groupDescription;
     }
 
@@ -87,11 +87,11 @@ public class SecurityGroup {
      * 
      */
     @JsonProperty("GroupDescription")
-    public void setGroupDescription(String groupDescription) {
+    public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
 
-    public SecurityGroup withGroupDescription(String groupDescription) {
+    public SecurityGroup withGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
         return this;
     }
@@ -101,7 +101,7 @@ public class SecurityGroup {
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -110,11 +110,11 @@ public class SecurityGroup {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public SecurityGroup withGroupName(String groupName) {
+    public SecurityGroup withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -193,7 +193,7 @@ public class SecurityGroup {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -202,11 +202,11 @@ public class SecurityGroup {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public SecurityGroup withVpcId(String vpcId) {
+    public SecurityGroup withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

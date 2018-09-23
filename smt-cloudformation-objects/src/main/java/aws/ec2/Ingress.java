@@ -36,21 +36,21 @@ public class Ingress {
      */
     @JsonProperty("CidrIp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip")
-    private String cidrIp;
+    private CharSequence cidrIp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6
      * 
      */
     @JsonProperty("CidrIpv6")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6")
-    private String cidrIpv6;
+    private CharSequence cidrIpv6;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport
      * 
@@ -64,28 +64,28 @@ public class Ingress {
      */
     @JsonProperty("IpProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol")
-    private String ipProtocol;
+    private CharSequence ipProtocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupid
      * 
      */
     @JsonProperty("SourceSecurityGroupId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupid")
-    private String sourceSecurityGroupId;
+    private CharSequence sourceSecurityGroupId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupname
      * 
      */
     @JsonProperty("SourceSecurityGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupname")
-    private String sourceSecurityGroupName;
+    private CharSequence sourceSecurityGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupownerid
      * 
      */
     @JsonProperty("SourceSecurityGroupOwnerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupownerid")
-    private String sourceSecurityGroupOwnerId;
+    private CharSequence sourceSecurityGroupOwnerId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport
      * 
@@ -99,7 +99,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("CidrIp")
-    public String getCidrIp() {
+    public CharSequence getCidrIp() {
         return cidrIp;
     }
 
@@ -108,11 +108,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("CidrIp")
-    public void setCidrIp(String cidrIp) {
+    public void setCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
     }
 
-    public Ingress withCidrIp(String cidrIp) {
+    public Ingress withCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
         return this;
     }
@@ -122,7 +122,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("CidrIpv6")
-    public String getCidrIpv6() {
+    public CharSequence getCidrIpv6() {
         return cidrIpv6;
     }
 
@@ -131,11 +131,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("CidrIpv6")
-    public void setCidrIpv6(String cidrIpv6) {
+    public void setCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
     }
 
-    public Ingress withCidrIpv6(String cidrIpv6) {
+    public Ingress withCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
         return this;
     }
@@ -145,7 +145,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -154,11 +154,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Ingress withDescription(String description) {
+    public Ingress withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -191,7 +191,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("IpProtocol")
-    public String getIpProtocol() {
+    public CharSequence getIpProtocol() {
         return ipProtocol;
     }
 
@@ -200,11 +200,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("IpProtocol")
-    public void setIpProtocol(String ipProtocol) {
+    public void setIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
     }
 
-    public Ingress withIpProtocol(String ipProtocol) {
+    public Ingress withIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
         return this;
     }
@@ -214,7 +214,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupId")
-    public String getSourceSecurityGroupId() {
+    public CharSequence getSourceSecurityGroupId() {
         return sourceSecurityGroupId;
     }
 
@@ -223,11 +223,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupId")
-    public void setSourceSecurityGroupId(String sourceSecurityGroupId) {
+    public void setSourceSecurityGroupId(CharSequence sourceSecurityGroupId) {
         this.sourceSecurityGroupId = sourceSecurityGroupId;
     }
 
-    public Ingress withSourceSecurityGroupId(String sourceSecurityGroupId) {
+    public Ingress withSourceSecurityGroupId(CharSequence sourceSecurityGroupId) {
         this.sourceSecurityGroupId = sourceSecurityGroupId;
         return this;
     }
@@ -237,7 +237,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupName")
-    public String getSourceSecurityGroupName() {
+    public CharSequence getSourceSecurityGroupName() {
         return sourceSecurityGroupName;
     }
 
@@ -246,11 +246,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupName")
-    public void setSourceSecurityGroupName(String sourceSecurityGroupName) {
+    public void setSourceSecurityGroupName(CharSequence sourceSecurityGroupName) {
         this.sourceSecurityGroupName = sourceSecurityGroupName;
     }
 
-    public Ingress withSourceSecurityGroupName(String sourceSecurityGroupName) {
+    public Ingress withSourceSecurityGroupName(CharSequence sourceSecurityGroupName) {
         this.sourceSecurityGroupName = sourceSecurityGroupName;
         return this;
     }
@@ -260,7 +260,7 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupOwnerId")
-    public String getSourceSecurityGroupOwnerId() {
+    public CharSequence getSourceSecurityGroupOwnerId() {
         return sourceSecurityGroupOwnerId;
     }
 
@@ -269,11 +269,11 @@ public class Ingress {
      * 
      */
     @JsonProperty("SourceSecurityGroupOwnerId")
-    public void setSourceSecurityGroupOwnerId(String sourceSecurityGroupOwnerId) {
+    public void setSourceSecurityGroupOwnerId(CharSequence sourceSecurityGroupOwnerId) {
         this.sourceSecurityGroupOwnerId = sourceSecurityGroupOwnerId;
     }
 
-    public Ingress withSourceSecurityGroupOwnerId(String sourceSecurityGroupOwnerId) {
+    public Ingress withSourceSecurityGroupOwnerId(CharSequence sourceSecurityGroupOwnerId) {
         this.sourceSecurityGroupOwnerId = sourceSecurityGroupOwnerId;
         return this;
     }

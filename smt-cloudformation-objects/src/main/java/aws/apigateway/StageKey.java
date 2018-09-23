@@ -29,21 +29,21 @@ public class StageKey {
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-apikey-stagekey.html#cfn-apigateway-apikey-stagekey-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-apikey-stagekey.html#cfn-apigateway-apikey-stagekey-stagename
      * 
      */
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-apikey-stagekey.html#cfn-apigateway-apikey-stagekey-stagename")
-    private String stageName;
+    private CharSequence stageName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-apikey-stagekey.html#cfn-apigateway-apikey-stagekey-restapiid
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -52,11 +52,11 @@ public class StageKey {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public StageKey withRestApiId(String restApiId) {
+    public StageKey withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -66,7 +66,7 @@ public class StageKey {
      * 
      */
     @JsonProperty("StageName")
-    public String getStageName() {
+    public CharSequence getStageName() {
         return stageName;
     }
 
@@ -75,11 +75,11 @@ public class StageKey {
      * 
      */
     @JsonProperty("StageName")
-    public void setStageName(String stageName) {
+    public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }
 
-    public StageKey withStageName(String stageName) {
+    public StageKey withStageName(CharSequence stageName) {
         this.stageName = stageName;
         return this;
     }

@@ -30,28 +30,28 @@ public class SpotOptions {
      */
     @JsonProperty("SpotInstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-spotinstancetype")
-    private String spotInstanceType;
+    private CharSequence spotInstanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-instanceinterruptionbehavior
      * 
      */
     @JsonProperty("InstanceInterruptionBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-instanceinterruptionbehavior")
-    private String instanceInterruptionBehavior;
+    private CharSequence instanceInterruptionBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-maxprice
      * 
      */
     @JsonProperty("MaxPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-maxprice")
-    private String maxPrice;
+    private CharSequence maxPrice;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-spotinstancetype
      * 
      */
     @JsonProperty("SpotInstanceType")
-    public String getSpotInstanceType() {
+    public CharSequence getSpotInstanceType() {
         return spotInstanceType;
     }
 
@@ -60,11 +60,11 @@ public class SpotOptions {
      * 
      */
     @JsonProperty("SpotInstanceType")
-    public void setSpotInstanceType(String spotInstanceType) {
+    public void setSpotInstanceType(CharSequence spotInstanceType) {
         this.spotInstanceType = spotInstanceType;
     }
 
-    public SpotOptions withSpotInstanceType(String spotInstanceType) {
+    public SpotOptions withSpotInstanceType(CharSequence spotInstanceType) {
         this.spotInstanceType = spotInstanceType;
         return this;
     }
@@ -74,7 +74,7 @@ public class SpotOptions {
      * 
      */
     @JsonProperty("InstanceInterruptionBehavior")
-    public String getInstanceInterruptionBehavior() {
+    public CharSequence getInstanceInterruptionBehavior() {
         return instanceInterruptionBehavior;
     }
 
@@ -83,11 +83,11 @@ public class SpotOptions {
      * 
      */
     @JsonProperty("InstanceInterruptionBehavior")
-    public void setInstanceInterruptionBehavior(String instanceInterruptionBehavior) {
+    public void setInstanceInterruptionBehavior(CharSequence instanceInterruptionBehavior) {
         this.instanceInterruptionBehavior = instanceInterruptionBehavior;
     }
 
-    public SpotOptions withInstanceInterruptionBehavior(String instanceInterruptionBehavior) {
+    public SpotOptions withInstanceInterruptionBehavior(CharSequence instanceInterruptionBehavior) {
         this.instanceInterruptionBehavior = instanceInterruptionBehavior;
         return this;
     }
@@ -97,7 +97,7 @@ public class SpotOptions {
      * 
      */
     @JsonProperty("MaxPrice")
-    public String getMaxPrice() {
+    public CharSequence getMaxPrice() {
         return maxPrice;
     }
 
@@ -106,11 +106,11 @@ public class SpotOptions {
      * 
      */
     @JsonProperty("MaxPrice")
-    public void setMaxPrice(String maxPrice) {
+    public void setMaxPrice(CharSequence maxPrice) {
         this.maxPrice = maxPrice;
     }
 
-    public SpotOptions withMaxPrice(String maxPrice) {
+    public SpotOptions withMaxPrice(CharSequence maxPrice) {
         this.maxPrice = maxPrice;
         return this;
     }

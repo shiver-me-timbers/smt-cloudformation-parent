@@ -30,28 +30,28 @@ public class SecurityGroupIngress {
      */
     @JsonProperty("CacheSecurityGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-cachesecuritygroupname")
-    private String cacheSecurityGroupName;
+    private CharSequence cacheSecurityGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupname
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupname")
-    private String eC2SecurityGroupName;
+    private CharSequence eC2SecurityGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupownerid
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupownerid")
-    private String eC2SecurityGroupOwnerId;
+    private CharSequence eC2SecurityGroupOwnerId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-cachesecuritygroupname
      * 
      */
     @JsonProperty("CacheSecurityGroupName")
-    public String getCacheSecurityGroupName() {
+    public CharSequence getCacheSecurityGroupName() {
         return cacheSecurityGroupName;
     }
 
@@ -60,11 +60,11 @@ public class SecurityGroupIngress {
      * 
      */
     @JsonProperty("CacheSecurityGroupName")
-    public void setCacheSecurityGroupName(String cacheSecurityGroupName) {
+    public void setCacheSecurityGroupName(CharSequence cacheSecurityGroupName) {
         this.cacheSecurityGroupName = cacheSecurityGroupName;
     }
 
-    public SecurityGroupIngress withCacheSecurityGroupName(String cacheSecurityGroupName) {
+    public SecurityGroupIngress withCacheSecurityGroupName(CharSequence cacheSecurityGroupName) {
         this.cacheSecurityGroupName = cacheSecurityGroupName;
         return this;
     }
@@ -74,7 +74,7 @@ public class SecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
-    public String getEC2SecurityGroupName() {
+    public CharSequence getEC2SecurityGroupName() {
         return eC2SecurityGroupName;
     }
 
@@ -83,11 +83,11 @@ public class SecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupName")
-    public void setEC2SecurityGroupName(String eC2SecurityGroupName) {
+    public void setEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
     }
 
-    public SecurityGroupIngress withEC2SecurityGroupName(String eC2SecurityGroupName) {
+    public SecurityGroupIngress withEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
         return this;
     }
@@ -97,7 +97,7 @@ public class SecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
-    public String getEC2SecurityGroupOwnerId() {
+    public CharSequence getEC2SecurityGroupOwnerId() {
         return eC2SecurityGroupOwnerId;
     }
 
@@ -106,11 +106,11 @@ public class SecurityGroupIngress {
      * 
      */
     @JsonProperty("EC2SecurityGroupOwnerId")
-    public void setEC2SecurityGroupOwnerId(String eC2SecurityGroupOwnerId) {
+    public void setEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
     }
 
-    public SecurityGroupIngress withEC2SecurityGroupOwnerId(String eC2SecurityGroupOwnerId) {
+    public SecurityGroupIngress withEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
         return this;
     }

@@ -65,7 +65,7 @@ public class Rule {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversionexpirationindays
      * 
@@ -96,14 +96,14 @@ public class Rule {
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-prefix")
-    private String prefix;
+    private CharSequence prefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-status
      * 
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-status")
-    private String status;
+    private CharSequence status;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-tagfilters
      * 
@@ -208,7 +208,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -217,11 +217,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public Rule withId(String id) {
+    public Rule withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -304,7 +304,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -313,11 +313,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public Rule withPrefix(String prefix) {
+    public Rule withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -327,7 +327,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -336,11 +336,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public Rule withStatus(String status) {
+    public Rule withStatus(CharSequence status) {
         this.status = status;
         return this;
     }

@@ -109,7 +109,7 @@ public class Table {
      */
     @JsonProperty("TableName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename")
-    private String tableName;
+    private CharSequence tableName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tags
      * 
@@ -332,7 +332,7 @@ public class Table {
      * 
      */
     @JsonProperty("TableName")
-    public String getTableName() {
+    public CharSequence getTableName() {
         return tableName;
     }
 
@@ -341,11 +341,11 @@ public class Table {
      * 
      */
     @JsonProperty("TableName")
-    public void setTableName(String tableName) {
+    public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
 
-    public Table withTableName(String tableName) {
+    public Table withTableName(CharSequence tableName) {
         this.tableName = tableName;
         return this;
     }

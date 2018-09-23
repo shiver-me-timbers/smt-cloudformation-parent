@@ -29,7 +29,7 @@ public class SecurityConfiguration {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-securityconfiguration
      * 
@@ -43,7 +43,7 @@ public class SecurityConfiguration {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -52,11 +52,11 @@ public class SecurityConfiguration {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public SecurityConfiguration withName(String name) {
+    public SecurityConfiguration withName(CharSequence name) {
         this.name = name;
         return this;
     }

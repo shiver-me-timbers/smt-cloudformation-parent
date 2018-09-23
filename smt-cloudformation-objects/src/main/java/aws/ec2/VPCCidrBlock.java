@@ -37,14 +37,14 @@ public class VPCCidrBlock {
      */
     @JsonProperty("CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock")
-    private String cidrBlock;
+    private CharSequence cidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid
      * 
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock
@@ -74,7 +74,7 @@ public class VPCCidrBlock {
      * 
      */
     @JsonProperty("CidrBlock")
-    public String getCidrBlock() {
+    public CharSequence getCidrBlock() {
         return cidrBlock;
     }
 
@@ -83,11 +83,11 @@ public class VPCCidrBlock {
      * 
      */
     @JsonProperty("CidrBlock")
-    public void setCidrBlock(String cidrBlock) {
+    public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
 
-    public VPCCidrBlock withCidrBlock(String cidrBlock) {
+    public VPCCidrBlock withCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
         return this;
     }
@@ -97,7 +97,7 @@ public class VPCCidrBlock {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -106,11 +106,11 @@ public class VPCCidrBlock {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VPCCidrBlock withVpcId(String vpcId) {
+    public VPCCidrBlock withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

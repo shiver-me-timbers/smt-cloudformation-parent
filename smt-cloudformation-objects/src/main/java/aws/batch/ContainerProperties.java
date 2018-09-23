@@ -48,7 +48,7 @@ public class ContainerProperties {
      */
     @JsonProperty("User")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user")
-    private String user;
+    private CharSequence user;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
      * 
@@ -62,7 +62,7 @@ public class ContainerProperties {
      */
     @JsonProperty("Command")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command")
-    private List<String> command = new ArrayList<String>();
+    private List<CharSequence> command = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory
      * 
@@ -90,7 +90,7 @@ public class ContainerProperties {
      */
     @JsonProperty("JobRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn")
-    private String jobRoleArn;
+    private CharSequence jobRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem
      * 
@@ -118,7 +118,7 @@ public class ContainerProperties {
      */
     @JsonProperty("Image")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image")
-    private String image;
+    private CharSequence image;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
@@ -148,7 +148,7 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("User")
-    public String getUser() {
+    public CharSequence getUser() {
         return user;
     }
 
@@ -157,11 +157,11 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("User")
-    public void setUser(String user) {
+    public void setUser(CharSequence user) {
         this.user = user;
     }
 
-    public ContainerProperties withUser(String user) {
+    public ContainerProperties withUser(CharSequence user) {
         this.user = user;
         return this;
     }
@@ -194,7 +194,7 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("Command")
-    public List<String> getCommand() {
+    public List<CharSequence> getCommand() {
         return command;
     }
 
@@ -203,11 +203,11 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("Command")
-    public void setCommand(List<String> command) {
+    public void setCommand(List<CharSequence> command) {
         this.command = command;
     }
 
-    public ContainerProperties withCommand(List<String> command) {
+    public ContainerProperties withCommand(List<CharSequence> command) {
         this.command = command;
         return this;
     }
@@ -286,7 +286,7 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("JobRoleArn")
-    public String getJobRoleArn() {
+    public CharSequence getJobRoleArn() {
         return jobRoleArn;
     }
 
@@ -295,11 +295,11 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("JobRoleArn")
-    public void setJobRoleArn(String jobRoleArn) {
+    public void setJobRoleArn(CharSequence jobRoleArn) {
         this.jobRoleArn = jobRoleArn;
     }
 
-    public ContainerProperties withJobRoleArn(String jobRoleArn) {
+    public ContainerProperties withJobRoleArn(CharSequence jobRoleArn) {
         this.jobRoleArn = jobRoleArn;
         return this;
     }
@@ -378,7 +378,7 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("Image")
-    public String getImage() {
+    public CharSequence getImage() {
         return image;
     }
 
@@ -387,11 +387,11 @@ public class ContainerProperties {
      * 
      */
     @JsonProperty("Image")
-    public void setImage(String image) {
+    public void setImage(CharSequence image) {
         this.image = image;
     }
 
-    public ContainerProperties withImage(String image) {
+    public ContainerProperties withImage(CharSequence image) {
         this.image = image;
         return this;
     }

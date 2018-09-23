@@ -32,28 +32,28 @@ public class PatchSource {
      */
     @JsonProperty("Products")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products")
-    private List<String> products = new ArrayList<String>();
+    private List<CharSequence> products = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-configuration
      * 
      */
     @JsonProperty("Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-configuration")
-    private String configuration;
+    private CharSequence configuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products
      * 
      */
     @JsonProperty("Products")
-    public List<String> getProducts() {
+    public List<CharSequence> getProducts() {
         return products;
     }
 
@@ -62,11 +62,11 @@ public class PatchSource {
      * 
      */
     @JsonProperty("Products")
-    public void setProducts(List<String> products) {
+    public void setProducts(List<CharSequence> products) {
         this.products = products;
     }
 
-    public PatchSource withProducts(List<String> products) {
+    public PatchSource withProducts(List<CharSequence> products) {
         this.products = products;
         return this;
     }
@@ -76,7 +76,7 @@ public class PatchSource {
      * 
      */
     @JsonProperty("Configuration")
-    public String getConfiguration() {
+    public CharSequence getConfiguration() {
         return configuration;
     }
 
@@ -85,11 +85,11 @@ public class PatchSource {
      * 
      */
     @JsonProperty("Configuration")
-    public void setConfiguration(String configuration) {
+    public void setConfiguration(CharSequence configuration) {
         this.configuration = configuration;
     }
 
-    public PatchSource withConfiguration(String configuration) {
+    public PatchSource withConfiguration(CharSequence configuration) {
         this.configuration = configuration;
         return this;
     }
@@ -99,7 +99,7 @@ public class PatchSource {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -108,11 +108,11 @@ public class PatchSource {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public PatchSource withName(String name) {
+    public PatchSource withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -39,14 +39,14 @@ public class Table {
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid
      * 
      */
     @JsonProperty("CatalogId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid")
-    private String catalogId;
+    private CharSequence catalogId;
 
     /**
      * TableInput
@@ -80,7 +80,7 @@ public class Table {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -89,11 +89,11 @@ public class Table {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public Table withDatabaseName(String databaseName) {
+    public Table withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -103,7 +103,7 @@ public class Table {
      * 
      */
     @JsonProperty("CatalogId")
-    public String getCatalogId() {
+    public CharSequence getCatalogId() {
         return catalogId;
     }
 
@@ -112,11 +112,11 @@ public class Table {
      * 
      */
     @JsonProperty("CatalogId")
-    public void setCatalogId(String catalogId) {
+    public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }
 
-    public Table withCatalogId(String catalogId) {
+    public Table withCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
         return this;
     }

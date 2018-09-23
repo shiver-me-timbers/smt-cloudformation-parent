@@ -39,14 +39,14 @@ public class ArtifactStore {
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location")
-    private String location;
+    private CharSequence location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * EncryptionKey
@@ -80,7 +80,7 @@ public class ArtifactStore {
      * 
      */
     @JsonProperty("Location")
-    public String getLocation() {
+    public CharSequence getLocation() {
         return location;
     }
 
@@ -89,11 +89,11 @@ public class ArtifactStore {
      * 
      */
     @JsonProperty("Location")
-    public void setLocation(String location) {
+    public void setLocation(CharSequence location) {
         this.location = location;
     }
 
-    public ArtifactStore withLocation(String location) {
+    public ArtifactStore withLocation(CharSequence location) {
         this.location = location;
         return this;
     }
@@ -103,7 +103,7 @@ public class ArtifactStore {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -112,11 +112,11 @@ public class ArtifactStore {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public ArtifactStore withType(String type) {
+    public ArtifactStore withType(CharSequence type) {
         this.type = type;
         return this;
     }

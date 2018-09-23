@@ -32,42 +32,42 @@ public class LaunchTemplateConstraint {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-productid
      * 
      */
     @JsonProperty("ProductId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-productid")
-    private String productId;
+    private CharSequence productId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-rules
      * 
      */
     @JsonProperty("Rules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-rules")
-    private String rules;
+    private CharSequence rules;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html#cfn-servicecatalog-launchtemplateconstraint-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -76,11 +76,11 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public LaunchTemplateConstraint withDescription(String description) {
+    public LaunchTemplateConstraint withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -90,7 +90,7 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -99,11 +99,11 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public LaunchTemplateConstraint withAcceptLanguage(String acceptLanguage) {
+    public LaunchTemplateConstraint withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -113,7 +113,7 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -122,11 +122,11 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public LaunchTemplateConstraint withPortfolioId(String portfolioId) {
+    public LaunchTemplateConstraint withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }
@@ -136,7 +136,7 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public String getProductId() {
+    public CharSequence getProductId() {
         return productId;
     }
 
@@ -145,11 +145,11 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public void setProductId(String productId) {
+    public void setProductId(CharSequence productId) {
         this.productId = productId;
     }
 
-    public LaunchTemplateConstraint withProductId(String productId) {
+    public LaunchTemplateConstraint withProductId(CharSequence productId) {
         this.productId = productId;
         return this;
     }
@@ -159,7 +159,7 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("Rules")
-    public String getRules() {
+    public CharSequence getRules() {
         return rules;
     }
 
@@ -168,11 +168,11 @@ public class LaunchTemplateConstraint {
      * 
      */
     @JsonProperty("Rules")
-    public void setRules(String rules) {
+    public void setRules(CharSequence rules) {
         this.rules = rules;
     }
 
-    public LaunchTemplateConstraint withRules(String rules) {
+    public LaunchTemplateConstraint withRules(CharSequence rules) {
         this.rules = rules;
         return this;
     }

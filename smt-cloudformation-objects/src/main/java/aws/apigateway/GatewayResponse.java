@@ -47,21 +47,21 @@ public class GatewayResponse {
      */
     @JsonProperty("ResponseType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetype")
-    private java.lang.String responseType;
+    private CharSequence responseType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-restapiid")
-    private java.lang.String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-statuscode
      * 
      */
     @JsonProperty("StatusCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-statuscode")
-    private java.lang.String statusCode;
+    private CharSequence statusCode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responseparameters
@@ -114,7 +114,7 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("ResponseType")
-    public java.lang.String getResponseType() {
+    public CharSequence getResponseType() {
         return responseType;
     }
 
@@ -123,11 +123,11 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("ResponseType")
-    public void setResponseType(java.lang.String responseType) {
+    public void setResponseType(CharSequence responseType) {
         this.responseType = responseType;
     }
 
-    public GatewayResponse withResponseType(java.lang.String responseType) {
+    public GatewayResponse withResponseType(CharSequence responseType) {
         this.responseType = responseType;
         return this;
     }
@@ -137,7 +137,7 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("RestApiId")
-    public java.lang.String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -146,11 +146,11 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(java.lang.String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public GatewayResponse withRestApiId(java.lang.String restApiId) {
+    public GatewayResponse withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -160,7 +160,7 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public java.lang.String getStatusCode() {
+    public CharSequence getStatusCode() {
         return statusCode;
     }
 
@@ -169,11 +169,11 @@ public class GatewayResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public void setStatusCode(java.lang.String statusCode) {
+    public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }
 
-    public GatewayResponse withStatusCode(java.lang.String statusCode) {
+    public GatewayResponse withStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
         return this;
     }

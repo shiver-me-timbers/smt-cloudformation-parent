@@ -29,21 +29,21 @@ public class TaskDefinitionPlacementConstraint {
      */
     @JsonProperty("Expression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint.html#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-expression")
-    private String expression;
+    private CharSequence expression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint.html#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint.html#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-taskdefinitionplacementconstraint.html#cfn-ecs-taskdefinition-taskdefinitionplacementconstraint-expression
      * 
      */
     @JsonProperty("Expression")
-    public String getExpression() {
+    public CharSequence getExpression() {
         return expression;
     }
 
@@ -52,11 +52,11 @@ public class TaskDefinitionPlacementConstraint {
      * 
      */
     @JsonProperty("Expression")
-    public void setExpression(String expression) {
+    public void setExpression(CharSequence expression) {
         this.expression = expression;
     }
 
-    public TaskDefinitionPlacementConstraint withExpression(String expression) {
+    public TaskDefinitionPlacementConstraint withExpression(CharSequence expression) {
         this.expression = expression;
         return this;
     }
@@ -66,7 +66,7 @@ public class TaskDefinitionPlacementConstraint {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -75,11 +75,11 @@ public class TaskDefinitionPlacementConstraint {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public TaskDefinitionPlacementConstraint withType(String type) {
+    public TaskDefinitionPlacementConstraint withType(CharSequence type) {
         this.type = type;
         return this;
     }

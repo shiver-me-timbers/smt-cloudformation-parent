@@ -32,21 +32,21 @@ public class UserPoolGroup {
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-userpoolid
      * 
      */
     @JsonProperty("UserPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-userpoolid")
-    private String userPoolId;
+    private CharSequence userPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-precedence
      * 
@@ -60,14 +60,14 @@ public class UserPoolGroup {
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolgroup.html#cfn-cognito-userpoolgroup-groupname
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -76,11 +76,11 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public UserPoolGroup withGroupName(String groupName) {
+    public UserPoolGroup withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -90,7 +90,7 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -99,11 +99,11 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public UserPoolGroup withDescription(String description) {
+    public UserPoolGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -113,7 +113,7 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("UserPoolId")
-    public String getUserPoolId() {
+    public CharSequence getUserPoolId() {
         return userPoolId;
     }
 
@@ -122,11 +122,11 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("UserPoolId")
-    public void setUserPoolId(String userPoolId) {
+    public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
 
-    public UserPoolGroup withUserPoolId(String userPoolId) {
+    public UserPoolGroup withUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
         return this;
     }
@@ -159,7 +159,7 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -168,11 +168,11 @@ public class UserPoolGroup {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public UserPoolGroup withRoleArn(String roleArn) {
+    public UserPoolGroup withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

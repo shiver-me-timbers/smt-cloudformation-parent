@@ -30,28 +30,28 @@ public class SslConfiguration {
      */
     @JsonProperty("Certificate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate")
-    private String certificate;
+    private CharSequence certificate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
      * 
      */
     @JsonProperty("Chain")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain")
-    private String chain;
+    private CharSequence chain;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
      * 
      */
     @JsonProperty("PrivateKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey")
-    private String privateKey;
+    private CharSequence privateKey;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
      * 
      */
     @JsonProperty("Certificate")
-    public String getCertificate() {
+    public CharSequence getCertificate() {
         return certificate;
     }
 
@@ -60,11 +60,11 @@ public class SslConfiguration {
      * 
      */
     @JsonProperty("Certificate")
-    public void setCertificate(String certificate) {
+    public void setCertificate(CharSequence certificate) {
         this.certificate = certificate;
     }
 
-    public SslConfiguration withCertificate(String certificate) {
+    public SslConfiguration withCertificate(CharSequence certificate) {
         this.certificate = certificate;
         return this;
     }
@@ -74,7 +74,7 @@ public class SslConfiguration {
      * 
      */
     @JsonProperty("Chain")
-    public String getChain() {
+    public CharSequence getChain() {
         return chain;
     }
 
@@ -83,11 +83,11 @@ public class SslConfiguration {
      * 
      */
     @JsonProperty("Chain")
-    public void setChain(String chain) {
+    public void setChain(CharSequence chain) {
         this.chain = chain;
     }
 
-    public SslConfiguration withChain(String chain) {
+    public SslConfiguration withChain(CharSequence chain) {
         this.chain = chain;
         return this;
     }
@@ -97,7 +97,7 @@ public class SslConfiguration {
      * 
      */
     @JsonProperty("PrivateKey")
-    public String getPrivateKey() {
+    public CharSequence getPrivateKey() {
         return privateKey;
     }
 
@@ -106,11 +106,11 @@ public class SslConfiguration {
      * 
      */
     @JsonProperty("PrivateKey")
-    public void setPrivateKey(String privateKey) {
+    public void setPrivateKey(CharSequence privateKey) {
         this.privateKey = privateKey;
     }
 
-    public SslConfiguration withPrivateKey(String privateKey) {
+    public SslConfiguration withPrivateKey(CharSequence privateKey) {
         this.privateKey = privateKey;
         return this;
     }

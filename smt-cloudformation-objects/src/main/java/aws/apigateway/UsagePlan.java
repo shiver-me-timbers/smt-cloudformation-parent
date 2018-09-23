@@ -43,7 +43,7 @@ public class UsagePlan {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description")
-    private String description;
+    private CharSequence description;
     /**
      * QuotaSettings
      * <p>
@@ -68,7 +68,7 @@ public class UsagePlan {
      */
     @JsonProperty("UsagePlanName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname")
-    private String usagePlanName;
+    private CharSequence usagePlanName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-apistages
@@ -98,7 +98,7 @@ public class UsagePlan {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -107,11 +107,11 @@ public class UsagePlan {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public UsagePlan withDescription(String description) {
+    public UsagePlan withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -175,7 +175,7 @@ public class UsagePlan {
      * 
      */
     @JsonProperty("UsagePlanName")
-    public String getUsagePlanName() {
+    public CharSequence getUsagePlanName() {
         return usagePlanName;
     }
 
@@ -184,11 +184,11 @@ public class UsagePlan {
      * 
      */
     @JsonProperty("UsagePlanName")
-    public void setUsagePlanName(String usagePlanName) {
+    public void setUsagePlanName(CharSequence usagePlanName) {
         this.usagePlanName = usagePlanName;
     }
 
-    public UsagePlan withUsagePlanName(String usagePlanName) {
+    public UsagePlan withUsagePlanName(CharSequence usagePlanName) {
         this.usagePlanName = usagePlanName;
         return this;
     }

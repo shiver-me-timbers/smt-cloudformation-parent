@@ -34,7 +34,7 @@ public class ScheduledAction {
      */
     @JsonProperty("AutoScalingGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-asgname")
-    private String autoScalingGroupName;
+    private CharSequence autoScalingGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-desiredcapacity
      * 
@@ -48,7 +48,7 @@ public class ScheduledAction {
      */
     @JsonProperty("EndTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-endtime")
-    private String endTime;
+    private CharSequence endTime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-maxsize
      * 
@@ -69,21 +69,21 @@ public class ScheduledAction {
      */
     @JsonProperty("Recurrence")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-recurrence")
-    private String recurrence;
+    private CharSequence recurrence;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-starttime
      * 
      */
     @JsonProperty("StartTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-starttime")
-    private String startTime;
+    private CharSequence startTime;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-asgname
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public String getAutoScalingGroupName() {
+    public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
 
@@ -92,11 +92,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public void setAutoScalingGroupName(String autoScalingGroupName) {
+    public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
 
-    public ScheduledAction withAutoScalingGroupName(String autoScalingGroupName) {
+    public ScheduledAction withAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
         return this;
     }
@@ -129,7 +129,7 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("EndTime")
-    public String getEndTime() {
+    public CharSequence getEndTime() {
         return endTime;
     }
 
@@ -138,11 +138,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("EndTime")
-    public void setEndTime(String endTime) {
+    public void setEndTime(CharSequence endTime) {
         this.endTime = endTime;
     }
 
-    public ScheduledAction withEndTime(String endTime) {
+    public ScheduledAction withEndTime(CharSequence endTime) {
         this.endTime = endTime;
         return this;
     }
@@ -198,7 +198,7 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("Recurrence")
-    public String getRecurrence() {
+    public CharSequence getRecurrence() {
         return recurrence;
     }
 
@@ -207,11 +207,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("Recurrence")
-    public void setRecurrence(String recurrence) {
+    public void setRecurrence(CharSequence recurrence) {
         this.recurrence = recurrence;
     }
 
-    public ScheduledAction withRecurrence(String recurrence) {
+    public ScheduledAction withRecurrence(CharSequence recurrence) {
         this.recurrence = recurrence;
         return this;
     }
@@ -221,7 +221,7 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("StartTime")
-    public String getStartTime() {
+    public CharSequence getStartTime() {
         return startTime;
     }
 
@@ -230,11 +230,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("StartTime")
-    public void setStartTime(String startTime) {
+    public void setStartTime(CharSequence startTime) {
         this.startTime = startTime;
     }
 
-    public ScheduledAction withStartTime(String startTime) {
+    public ScheduledAction withStartTime(CharSequence startTime) {
         this.startTime = startTime;
         return this;
     }

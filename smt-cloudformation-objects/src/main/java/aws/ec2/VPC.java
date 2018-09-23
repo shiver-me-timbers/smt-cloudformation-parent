@@ -35,7 +35,7 @@ public class VPC {
      */
     @JsonProperty("CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock")
-    private String cidrBlock;
+    private CharSequence cidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
      * 
@@ -56,7 +56,7 @@ public class VPC {
      */
     @JsonProperty("InstanceTenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy")
-    private String instanceTenancy;
+    private CharSequence instanceTenancy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-tags
      * 
@@ -70,7 +70,7 @@ public class VPC {
      * 
      */
     @JsonProperty("CidrBlock")
-    public String getCidrBlock() {
+    public CharSequence getCidrBlock() {
         return cidrBlock;
     }
 
@@ -79,11 +79,11 @@ public class VPC {
      * 
      */
     @JsonProperty("CidrBlock")
-    public void setCidrBlock(String cidrBlock) {
+    public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
 
-    public VPC withCidrBlock(String cidrBlock) {
+    public VPC withCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
         return this;
     }
@@ -139,7 +139,7 @@ public class VPC {
      * 
      */
     @JsonProperty("InstanceTenancy")
-    public String getInstanceTenancy() {
+    public CharSequence getInstanceTenancy() {
         return instanceTenancy;
     }
 
@@ -148,11 +148,11 @@ public class VPC {
      * 
      */
     @JsonProperty("InstanceTenancy")
-    public void setInstanceTenancy(String instanceTenancy) {
+    public void setInstanceTenancy(CharSequence instanceTenancy) {
         this.instanceTenancy = instanceTenancy;
     }
 
-    public VPC withInstanceTenancy(String instanceTenancy) {
+    public VPC withInstanceTenancy(CharSequence instanceTenancy) {
         this.instanceTenancy = instanceTenancy;
         return this;
     }

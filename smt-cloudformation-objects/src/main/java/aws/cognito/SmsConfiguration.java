@@ -29,21 +29,21 @@ public class SmsConfiguration {
      */
     @JsonProperty("ExternalId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid")
-    private String externalId;
+    private CharSequence externalId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn
      * 
      */
     @JsonProperty("SnsCallerArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn")
-    private String snsCallerArn;
+    private CharSequence snsCallerArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid
      * 
      */
     @JsonProperty("ExternalId")
-    public String getExternalId() {
+    public CharSequence getExternalId() {
         return externalId;
     }
 
@@ -52,11 +52,11 @@ public class SmsConfiguration {
      * 
      */
     @JsonProperty("ExternalId")
-    public void setExternalId(String externalId) {
+    public void setExternalId(CharSequence externalId) {
         this.externalId = externalId;
     }
 
-    public SmsConfiguration withExternalId(String externalId) {
+    public SmsConfiguration withExternalId(CharSequence externalId) {
         this.externalId = externalId;
         return this;
     }
@@ -66,7 +66,7 @@ public class SmsConfiguration {
      * 
      */
     @JsonProperty("SnsCallerArn")
-    public String getSnsCallerArn() {
+    public CharSequence getSnsCallerArn() {
         return snsCallerArn;
     }
 
@@ -75,11 +75,11 @@ public class SmsConfiguration {
      * 
      */
     @JsonProperty("SnsCallerArn")
-    public void setSnsCallerArn(String snsCallerArn) {
+    public void setSnsCallerArn(CharSequence snsCallerArn) {
         this.snsCallerArn = snsCallerArn;
     }
 
-    public SmsConfiguration withSnsCallerArn(String snsCallerArn) {
+    public SmsConfiguration withSnsCallerArn(CharSequence snsCallerArn) {
         this.snsCallerArn = snsCallerArn;
         return this;
     }

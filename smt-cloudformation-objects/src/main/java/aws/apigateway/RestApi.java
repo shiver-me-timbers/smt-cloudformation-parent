@@ -43,7 +43,7 @@ public class RestApi {
      */
     @JsonProperty("ApiKeySourceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype")
-    private java.lang.String apiKeySourceType;
+    private CharSequence apiKeySourceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-binarymediatypes
      * 
@@ -51,7 +51,7 @@ public class RestApi {
     @JsonProperty("BinaryMediaTypes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-binarymediatypes")
-    private Set<java.lang.String> binaryMediaTypes = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> binaryMediaTypes = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body
      * 
@@ -74,14 +74,14 @@ public class RestApi {
      */
     @JsonProperty("CloneFrom")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom")
-    private java.lang.String cloneFrom;
+    private CharSequence cloneFrom;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * EndpointConfiguration
      * <p>
@@ -111,7 +111,7 @@ public class RestApi {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-parameters
      * 
@@ -132,7 +132,7 @@ public class RestApi {
      * 
      */
     @JsonProperty("ApiKeySourceType")
-    public java.lang.String getApiKeySourceType() {
+    public CharSequence getApiKeySourceType() {
         return apiKeySourceType;
     }
 
@@ -141,11 +141,11 @@ public class RestApi {
      * 
      */
     @JsonProperty("ApiKeySourceType")
-    public void setApiKeySourceType(java.lang.String apiKeySourceType) {
+    public void setApiKeySourceType(CharSequence apiKeySourceType) {
         this.apiKeySourceType = apiKeySourceType;
     }
 
-    public RestApi withApiKeySourceType(java.lang.String apiKeySourceType) {
+    public RestApi withApiKeySourceType(CharSequence apiKeySourceType) {
         this.apiKeySourceType = apiKeySourceType;
         return this;
     }
@@ -155,7 +155,7 @@ public class RestApi {
      * 
      */
     @JsonProperty("BinaryMediaTypes")
-    public Set<java.lang.String> getBinaryMediaTypes() {
+    public Set<CharSequence> getBinaryMediaTypes() {
         return binaryMediaTypes;
     }
 
@@ -164,11 +164,11 @@ public class RestApi {
      * 
      */
     @JsonProperty("BinaryMediaTypes")
-    public void setBinaryMediaTypes(Set<java.lang.String> binaryMediaTypes) {
+    public void setBinaryMediaTypes(Set<CharSequence> binaryMediaTypes) {
         this.binaryMediaTypes = binaryMediaTypes;
     }
 
-    public RestApi withBinaryMediaTypes(Set<java.lang.String> binaryMediaTypes) {
+    public RestApi withBinaryMediaTypes(Set<CharSequence> binaryMediaTypes) {
         this.binaryMediaTypes = binaryMediaTypes;
         return this;
     }
@@ -228,7 +228,7 @@ public class RestApi {
      * 
      */
     @JsonProperty("CloneFrom")
-    public java.lang.String getCloneFrom() {
+    public CharSequence getCloneFrom() {
         return cloneFrom;
     }
 
@@ -237,11 +237,11 @@ public class RestApi {
      * 
      */
     @JsonProperty("CloneFrom")
-    public void setCloneFrom(java.lang.String cloneFrom) {
+    public void setCloneFrom(CharSequence cloneFrom) {
         this.cloneFrom = cloneFrom;
     }
 
-    public RestApi withCloneFrom(java.lang.String cloneFrom) {
+    public RestApi withCloneFrom(CharSequence cloneFrom) {
         this.cloneFrom = cloneFrom;
         return this;
     }
@@ -251,7 +251,7 @@ public class RestApi {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -260,11 +260,11 @@ public class RestApi {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public RestApi withDescription(java.lang.String description) {
+    public RestApi withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -347,7 +347,7 @@ public class RestApi {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -356,11 +356,11 @@ public class RestApi {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public RestApi withName(java.lang.String name) {
+    public RestApi withName(CharSequence name) {
         this.name = name;
         return this;
     }

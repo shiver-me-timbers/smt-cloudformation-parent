@@ -28,6 +28,6 @@ public class PrimitiveTypeTransformer implements PropertyTransformer {
         CloudformationProperty cloudformationProperty,
         Map<String, Object> property
     ) {
-        property.put("type", converter.convert(cloudformationProperty.getPrimitiveType()));
+        property.putAll(converter.convert(cloudformationProperty.getPrimitiveType()));
     }
 }

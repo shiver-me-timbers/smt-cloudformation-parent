@@ -43,28 +43,28 @@ public class CustomizedMetricSpecification {
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace
      * 
      */
     @JsonProperty("Namespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace")
-    private String namespace;
+    private CharSequence namespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic
      * 
      */
     @JsonProperty("Statistic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic")
-    private String statistic;
+    private CharSequence statistic;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit
      * 
      */
     @JsonProperty("Unit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit")
-    private String unit;
+    private CharSequence unit;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions
@@ -94,7 +94,7 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -103,11 +103,11 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public CustomizedMetricSpecification withMetricName(String metricName) {
+    public CustomizedMetricSpecification withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -117,7 +117,7 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Namespace")
-    public String getNamespace() {
+    public CharSequence getNamespace() {
         return namespace;
     }
 
@@ -126,11 +126,11 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Namespace")
-    public void setNamespace(String namespace) {
+    public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
 
-    public CustomizedMetricSpecification withNamespace(String namespace) {
+    public CustomizedMetricSpecification withNamespace(CharSequence namespace) {
         this.namespace = namespace;
         return this;
     }
@@ -140,7 +140,7 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Statistic")
-    public String getStatistic() {
+    public CharSequence getStatistic() {
         return statistic;
     }
 
@@ -149,11 +149,11 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Statistic")
-    public void setStatistic(String statistic) {
+    public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
 
-    public CustomizedMetricSpecification withStatistic(String statistic) {
+    public CustomizedMetricSpecification withStatistic(CharSequence statistic) {
         this.statistic = statistic;
         return this;
     }
@@ -163,7 +163,7 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Unit")
-    public String getUnit() {
+    public CharSequence getUnit() {
         return unit;
     }
 
@@ -172,11 +172,11 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonProperty("Unit")
-    public void setUnit(String unit) {
+    public void setUnit(CharSequence unit) {
         this.unit = unit;
     }
 
-    public CustomizedMetricSpecification withUnit(String unit) {
+    public CustomizedMetricSpecification withUnit(CharSequence unit) {
         this.unit = unit;
         return this;
     }

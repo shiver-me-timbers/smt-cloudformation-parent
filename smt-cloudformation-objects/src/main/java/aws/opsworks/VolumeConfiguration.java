@@ -40,7 +40,7 @@ public class VolumeConfiguration {
      */
     @JsonProperty("MountPoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint")
-    private String mountPoint;
+    private CharSequence mountPoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks
      * 
@@ -68,7 +68,7 @@ public class VolumeConfiguration {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
@@ -98,7 +98,7 @@ public class VolumeConfiguration {
      * 
      */
     @JsonProperty("MountPoint")
-    public String getMountPoint() {
+    public CharSequence getMountPoint() {
         return mountPoint;
     }
 
@@ -107,11 +107,11 @@ public class VolumeConfiguration {
      * 
      */
     @JsonProperty("MountPoint")
-    public void setMountPoint(String mountPoint) {
+    public void setMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
     }
 
-    public VolumeConfiguration withMountPoint(String mountPoint) {
+    public VolumeConfiguration withMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
         return this;
     }
@@ -190,7 +190,7 @@ public class VolumeConfiguration {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -199,11 +199,11 @@ public class VolumeConfiguration {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public VolumeConfiguration withVolumeType(String volumeType) {
+    public VolumeConfiguration withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

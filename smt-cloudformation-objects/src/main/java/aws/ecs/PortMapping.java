@@ -44,7 +44,7 @@ public class PortMapping {
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-sourcevolume")
-    private String protocol;
+    private CharSequence protocol;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport
@@ -97,7 +97,7 @@ public class PortMapping {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -106,11 +106,11 @@ public class PortMapping {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public PortMapping withProtocol(String protocol) {
+    public PortMapping withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }

@@ -33,49 +33,49 @@ public class ResourceDataSync {
      */
     @JsonProperty("KMSKeyArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-kmskeyarn")
-    private String kMSKeyArn;
+    private CharSequence kMSKeyArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketname
      * 
      */
     @JsonProperty("BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketname")
-    private String bucketName;
+    private CharSequence bucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketregion
      * 
      */
     @JsonProperty("BucketRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketregion")
-    private String bucketRegion;
+    private CharSequence bucketRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncformat
      * 
      */
     @JsonProperty("SyncFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncformat")
-    private String syncFormat;
+    private CharSequence syncFormat;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncname
      * 
      */
     @JsonProperty("SyncName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncname")
-    private String syncName;
+    private CharSequence syncName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketprefix
      * 
      */
     @JsonProperty("BucketPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketprefix")
-    private String bucketPrefix;
+    private CharSequence bucketPrefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-kmskeyarn
      * 
      */
     @JsonProperty("KMSKeyArn")
-    public String getKMSKeyArn() {
+    public CharSequence getKMSKeyArn() {
         return kMSKeyArn;
     }
 
@@ -84,11 +84,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("KMSKeyArn")
-    public void setKMSKeyArn(String kMSKeyArn) {
+    public void setKMSKeyArn(CharSequence kMSKeyArn) {
         this.kMSKeyArn = kMSKeyArn;
     }
 
-    public ResourceDataSync withKMSKeyArn(String kMSKeyArn) {
+    public ResourceDataSync withKMSKeyArn(CharSequence kMSKeyArn) {
         this.kMSKeyArn = kMSKeyArn;
         return this;
     }
@@ -98,7 +98,7 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketName")
-    public String getBucketName() {
+    public CharSequence getBucketName() {
         return bucketName;
     }
 
@@ -107,11 +107,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketName")
-    public void setBucketName(String bucketName) {
+    public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
 
-    public ResourceDataSync withBucketName(String bucketName) {
+    public ResourceDataSync withBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
         return this;
     }
@@ -121,7 +121,7 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketRegion")
-    public String getBucketRegion() {
+    public CharSequence getBucketRegion() {
         return bucketRegion;
     }
 
@@ -130,11 +130,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketRegion")
-    public void setBucketRegion(String bucketRegion) {
+    public void setBucketRegion(CharSequence bucketRegion) {
         this.bucketRegion = bucketRegion;
     }
 
-    public ResourceDataSync withBucketRegion(String bucketRegion) {
+    public ResourceDataSync withBucketRegion(CharSequence bucketRegion) {
         this.bucketRegion = bucketRegion;
         return this;
     }
@@ -144,7 +144,7 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("SyncFormat")
-    public String getSyncFormat() {
+    public CharSequence getSyncFormat() {
         return syncFormat;
     }
 
@@ -153,11 +153,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("SyncFormat")
-    public void setSyncFormat(String syncFormat) {
+    public void setSyncFormat(CharSequence syncFormat) {
         this.syncFormat = syncFormat;
     }
 
-    public ResourceDataSync withSyncFormat(String syncFormat) {
+    public ResourceDataSync withSyncFormat(CharSequence syncFormat) {
         this.syncFormat = syncFormat;
         return this;
     }
@@ -167,7 +167,7 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("SyncName")
-    public String getSyncName() {
+    public CharSequence getSyncName() {
         return syncName;
     }
 
@@ -176,11 +176,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("SyncName")
-    public void setSyncName(String syncName) {
+    public void setSyncName(CharSequence syncName) {
         this.syncName = syncName;
     }
 
-    public ResourceDataSync withSyncName(String syncName) {
+    public ResourceDataSync withSyncName(CharSequence syncName) {
         this.syncName = syncName;
         return this;
     }
@@ -190,7 +190,7 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketPrefix")
-    public String getBucketPrefix() {
+    public CharSequence getBucketPrefix() {
         return bucketPrefix;
     }
 
@@ -199,11 +199,11 @@ public class ResourceDataSync {
      * 
      */
     @JsonProperty("BucketPrefix")
-    public void setBucketPrefix(String bucketPrefix) {
+    public void setBucketPrefix(CharSequence bucketPrefix) {
         this.bucketPrefix = bucketPrefix;
     }
 
-    public ResourceDataSync withBucketPrefix(String bucketPrefix) {
+    public ResourceDataSync withBucketPrefix(CharSequence bucketPrefix) {
         this.bucketPrefix = bucketPrefix;
         return this;
     }

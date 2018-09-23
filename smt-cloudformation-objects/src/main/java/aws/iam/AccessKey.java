@@ -37,14 +37,14 @@ public class AccessKey {
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status")
-    private String status;
+    private CharSequence status;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
      * 
      */
     @JsonProperty("UserName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username")
-    private String userName;
+    private CharSequence userName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
@@ -74,7 +74,7 @@ public class AccessKey {
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -83,11 +83,11 @@ public class AccessKey {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public AccessKey withStatus(String status) {
+    public AccessKey withStatus(CharSequence status) {
         this.status = status;
         return this;
     }
@@ -97,7 +97,7 @@ public class AccessKey {
      * 
      */
     @JsonProperty("UserName")
-    public String getUserName() {
+    public CharSequence getUserName() {
         return userName;
     }
 
@@ -106,11 +106,11 @@ public class AccessKey {
      * 
      */
     @JsonProperty("UserName")
-    public void setUserName(String userName) {
+    public void setUserName(CharSequence userName) {
         this.userName = userName;
     }
 
-    public AccessKey withUserName(String userName) {
+    public AccessKey withUserName(CharSequence userName) {
         this.userName = userName;
         return this;
     }

@@ -41,14 +41,14 @@ public class ReplicationRule {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-prefix
      * 
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-prefix")
-    private String prefix;
+    private CharSequence prefix;
     /**
      * SourceSelectionCriteria
      * <p>
@@ -64,7 +64,7 @@ public class ReplicationRule {
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-status")
-    private String status;
+    private CharSequence status;
 
     /**
      * ReplicationDestination
@@ -98,7 +98,7 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -107,11 +107,11 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public ReplicationRule withId(String id) {
+    public ReplicationRule withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -121,7 +121,7 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -130,11 +130,11 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public ReplicationRule withPrefix(String prefix) {
+    public ReplicationRule withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -171,7 +171,7 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -180,11 +180,11 @@ public class ReplicationRule {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public ReplicationRule withStatus(String status) {
+    public ReplicationRule withStatus(CharSequence status) {
         this.status = status;
         return this;
     }

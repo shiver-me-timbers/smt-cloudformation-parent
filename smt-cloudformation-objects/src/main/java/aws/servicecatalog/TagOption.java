@@ -37,14 +37,14 @@ public class TagOption {
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-value")
-    private String value;
+    private CharSequence value;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-key
      * 
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-key")
-    private String key;
+    private CharSequence key;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-active
@@ -74,7 +74,7 @@ public class TagOption {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -83,11 +83,11 @@ public class TagOption {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public TagOption withValue(String value) {
+    public TagOption withValue(CharSequence value) {
         this.value = value;
         return this;
     }
@@ -97,7 +97,7 @@ public class TagOption {
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -106,11 +106,11 @@ public class TagOption {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public TagOption withKey(String key) {
+    public TagOption withKey(CharSequence key) {
         this.key = key;
         return this;
     }

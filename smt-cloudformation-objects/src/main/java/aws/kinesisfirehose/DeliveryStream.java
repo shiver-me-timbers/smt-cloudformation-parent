@@ -35,14 +35,14 @@ public class DeliveryStream {
      */
     @JsonProperty("DeliveryStreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamname")
-    private String deliveryStreamName;
+    private CharSequence deliveryStreamName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamtype
      * 
      */
     @JsonProperty("DeliveryStreamType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamtype")
-    private String deliveryStreamType;
+    private CharSequence deliveryStreamType;
     /**
      * ElasticsearchDestinationConfiguration
      * <p>
@@ -103,7 +103,7 @@ public class DeliveryStream {
      * 
      */
     @JsonProperty("DeliveryStreamName")
-    public String getDeliveryStreamName() {
+    public CharSequence getDeliveryStreamName() {
         return deliveryStreamName;
     }
 
@@ -112,11 +112,11 @@ public class DeliveryStream {
      * 
      */
     @JsonProperty("DeliveryStreamName")
-    public void setDeliveryStreamName(String deliveryStreamName) {
+    public void setDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
     }
 
-    public DeliveryStream withDeliveryStreamName(String deliveryStreamName) {
+    public DeliveryStream withDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
         return this;
     }
@@ -126,7 +126,7 @@ public class DeliveryStream {
      * 
      */
     @JsonProperty("DeliveryStreamType")
-    public String getDeliveryStreamType() {
+    public CharSequence getDeliveryStreamType() {
         return deliveryStreamType;
     }
 
@@ -135,11 +135,11 @@ public class DeliveryStream {
      * 
      */
     @JsonProperty("DeliveryStreamType")
-    public void setDeliveryStreamType(String deliveryStreamType) {
+    public void setDeliveryStreamType(CharSequence deliveryStreamType) {
         this.deliveryStreamType = deliveryStreamType;
     }
 
-    public DeliveryStream withDeliveryStreamType(String deliveryStreamType) {
+    public DeliveryStream withDeliveryStreamType(CharSequence deliveryStreamType) {
         this.deliveryStreamType = deliveryStreamType;
         return this;
     }

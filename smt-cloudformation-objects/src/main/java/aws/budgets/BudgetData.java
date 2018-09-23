@@ -52,7 +52,7 @@ public class BudgetData {
      */
     @JsonProperty("TimeUnit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit")
-    private String timeUnit;
+    private CharSequence timeUnit;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
@@ -66,7 +66,7 @@ public class BudgetData {
      */
     @JsonProperty("BudgetName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetname")
-    private String budgetName;
+    private CharSequence budgetName;
     /**
      * CostTypes
      * <p>
@@ -82,7 +82,7 @@ public class BudgetData {
      */
     @JsonProperty("BudgetType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype")
-    private String budgetType;
+    private CharSequence budgetType;
 
     /**
      * Spend
@@ -143,7 +143,7 @@ public class BudgetData {
      * 
      */
     @JsonProperty("TimeUnit")
-    public String getTimeUnit() {
+    public CharSequence getTimeUnit() {
         return timeUnit;
     }
 
@@ -152,11 +152,11 @@ public class BudgetData {
      * 
      */
     @JsonProperty("TimeUnit")
-    public void setTimeUnit(String timeUnit) {
+    public void setTimeUnit(CharSequence timeUnit) {
         this.timeUnit = timeUnit;
     }
 
-    public BudgetData withTimeUnit(String timeUnit) {
+    public BudgetData withTimeUnit(CharSequence timeUnit) {
         this.timeUnit = timeUnit;
         return this;
     }
@@ -189,7 +189,7 @@ public class BudgetData {
      * 
      */
     @JsonProperty("BudgetName")
-    public String getBudgetName() {
+    public CharSequence getBudgetName() {
         return budgetName;
     }
 
@@ -198,11 +198,11 @@ public class BudgetData {
      * 
      */
     @JsonProperty("BudgetName")
-    public void setBudgetName(String budgetName) {
+    public void setBudgetName(CharSequence budgetName) {
         this.budgetName = budgetName;
     }
 
-    public BudgetData withBudgetName(String budgetName) {
+    public BudgetData withBudgetName(CharSequence budgetName) {
         this.budgetName = budgetName;
         return this;
     }
@@ -239,7 +239,7 @@ public class BudgetData {
      * 
      */
     @JsonProperty("BudgetType")
-    public String getBudgetType() {
+    public CharSequence getBudgetType() {
         return budgetType;
     }
 
@@ -248,11 +248,11 @@ public class BudgetData {
      * 
      */
     @JsonProperty("BudgetType")
-    public void setBudgetType(String budgetType) {
+    public void setBudgetType(CharSequence budgetType) {
         this.budgetType = budgetType;
     }
 
-    public BudgetData withBudgetType(String budgetType) {
+    public BudgetData withBudgetType(CharSequence budgetType) {
         this.budgetType = budgetType;
         return this;
     }

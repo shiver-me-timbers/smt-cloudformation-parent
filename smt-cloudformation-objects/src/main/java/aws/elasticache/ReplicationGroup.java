@@ -69,7 +69,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("AuthToken")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-authtoken")
-    private String authToken;
+    private CharSequence authToken;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-autominorversionupgrade
      * 
@@ -90,14 +90,14 @@ public class ReplicationGroup {
      */
     @JsonProperty("CacheNodeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachenodetype")
-    private String cacheNodeType;
+    private CharSequence cacheNodeType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cacheparametergroupname
      * 
      */
     @JsonProperty("CacheParameterGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cacheparametergroupname")
-    private String cacheParameterGroupName;
+    private CharSequence cacheParameterGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesecuritygroupnames
      * 
@@ -105,28 +105,28 @@ public class ReplicationGroup {
     @JsonProperty("CacheSecurityGroupNames")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesecuritygroupnames")
-    private Set<String> cacheSecurityGroupNames = new LinkedHashSet<String>();
+    private Set<CharSequence> cacheSecurityGroupNames = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesubnetgroupname
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesubnetgroupname")
-    private String cacheSubnetGroupName;
+    private CharSequence cacheSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engine
      * 
      */
     @JsonProperty("Engine")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engine")
-    private String engine;
+    private CharSequence engine;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration
      * 
@@ -141,7 +141,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("NotificationTopicArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-notificationtopicarn")
-    private String notificationTopicArn;
+    private CharSequence notificationTopicArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numcacheclusters
      * 
@@ -170,21 +170,21 @@ public class ReplicationGroup {
     @JsonProperty("PreferredCacheClusterAZs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredcacheclusterazs")
-    private Set<String> preferredCacheClusterAZs = new LinkedHashSet<String>();
+    private Set<CharSequence> preferredCacheClusterAZs = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredmaintenancewindow
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-primaryclusterid
      * 
      */
     @JsonProperty("PrimaryClusterId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-primaryclusterid")
-    private String primaryClusterId;
+    private CharSequence primaryClusterId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicaspernodegroup
      * 
@@ -198,14 +198,14 @@ public class ReplicationGroup {
      */
     @JsonProperty("ReplicationGroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupdescription")
-    private String replicationGroupDescription;
+    private CharSequence replicationGroupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupid
      * 
      */
     @JsonProperty("ReplicationGroupId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupid")
-    private String replicationGroupId;
+    private CharSequence replicationGroupId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-securitygroupids
      * 
@@ -213,7 +213,7 @@ public class ReplicationGroup {
     @JsonProperty("SecurityGroupIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-securitygroupids")
-    private Set<String> securityGroupIds = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroupIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotarns
      * 
@@ -221,14 +221,14 @@ public class ReplicationGroup {
     @JsonProperty("SnapshotArns")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotarns")
-    private Set<String> snapshotArns = new LinkedHashSet<String>();
+    private Set<CharSequence> snapshotArns = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotname
      * 
      */
     @JsonProperty("SnapshotName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotname")
-    private String snapshotName;
+    private CharSequence snapshotName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotretentionlimit
      * 
@@ -242,14 +242,14 @@ public class ReplicationGroup {
      */
     @JsonProperty("SnapshotWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotwindow")
-    private String snapshotWindow;
+    private CharSequence snapshotWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshottingclusterid
      * 
      */
     @JsonProperty("SnapshottingClusterId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshottingclusterid")
-    private String snapshottingClusterId;
+    private CharSequence snapshottingClusterId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-tags
      * 
@@ -293,7 +293,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("AuthToken")
-    public String getAuthToken() {
+    public CharSequence getAuthToken() {
         return authToken;
     }
 
@@ -302,11 +302,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("AuthToken")
-    public void setAuthToken(String authToken) {
+    public void setAuthToken(CharSequence authToken) {
         this.authToken = authToken;
     }
 
-    public ReplicationGroup withAuthToken(String authToken) {
+    public ReplicationGroup withAuthToken(CharSequence authToken) {
         this.authToken = authToken;
         return this;
     }
@@ -362,7 +362,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheNodeType")
-    public String getCacheNodeType() {
+    public CharSequence getCacheNodeType() {
         return cacheNodeType;
     }
 
@@ -371,11 +371,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheNodeType")
-    public void setCacheNodeType(String cacheNodeType) {
+    public void setCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
     }
 
-    public ReplicationGroup withCacheNodeType(String cacheNodeType) {
+    public ReplicationGroup withCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
         return this;
     }
@@ -385,7 +385,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheParameterGroupName")
-    public String getCacheParameterGroupName() {
+    public CharSequence getCacheParameterGroupName() {
         return cacheParameterGroupName;
     }
 
@@ -394,11 +394,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheParameterGroupName")
-    public void setCacheParameterGroupName(String cacheParameterGroupName) {
+    public void setCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
     }
 
-    public ReplicationGroup withCacheParameterGroupName(String cacheParameterGroupName) {
+    public ReplicationGroup withCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
         return this;
     }
@@ -408,7 +408,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheSecurityGroupNames")
-    public Set<String> getCacheSecurityGroupNames() {
+    public Set<CharSequence> getCacheSecurityGroupNames() {
         return cacheSecurityGroupNames;
     }
 
@@ -417,11 +417,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheSecurityGroupNames")
-    public void setCacheSecurityGroupNames(Set<String> cacheSecurityGroupNames) {
+    public void setCacheSecurityGroupNames(Set<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
     }
 
-    public ReplicationGroup withCacheSecurityGroupNames(Set<String> cacheSecurityGroupNames) {
+    public ReplicationGroup withCacheSecurityGroupNames(Set<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
         return this;
     }
@@ -431,7 +431,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public String getCacheSubnetGroupName() {
+    public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
 
@@ -440,11 +440,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public void setCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
 
-    public ReplicationGroup withCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public ReplicationGroup withCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
         return this;
     }
@@ -454,7 +454,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("Engine")
-    public String getEngine() {
+    public CharSequence getEngine() {
         return engine;
     }
 
@@ -463,11 +463,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("Engine")
-    public void setEngine(String engine) {
+    public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
 
-    public ReplicationGroup withEngine(String engine) {
+    public ReplicationGroup withEngine(CharSequence engine) {
         this.engine = engine;
         return this;
     }
@@ -477,7 +477,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -486,11 +486,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public ReplicationGroup withEngineVersion(String engineVersion) {
+    public ReplicationGroup withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -523,7 +523,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("NotificationTopicArn")
-    public String getNotificationTopicArn() {
+    public CharSequence getNotificationTopicArn() {
         return notificationTopicArn;
     }
 
@@ -532,11 +532,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("NotificationTopicArn")
-    public void setNotificationTopicArn(String notificationTopicArn) {
+    public void setNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
     }
 
-    public ReplicationGroup withNotificationTopicArn(String notificationTopicArn) {
+    public ReplicationGroup withNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
         return this;
     }
@@ -615,7 +615,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PreferredCacheClusterAZs")
-    public Set<String> getPreferredCacheClusterAZs() {
+    public Set<CharSequence> getPreferredCacheClusterAZs() {
         return preferredCacheClusterAZs;
     }
 
@@ -624,11 +624,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PreferredCacheClusterAZs")
-    public void setPreferredCacheClusterAZs(Set<String> preferredCacheClusterAZs) {
+    public void setPreferredCacheClusterAZs(Set<CharSequence> preferredCacheClusterAZs) {
         this.preferredCacheClusterAZs = preferredCacheClusterAZs;
     }
 
-    public ReplicationGroup withPreferredCacheClusterAZs(Set<String> preferredCacheClusterAZs) {
+    public ReplicationGroup withPreferredCacheClusterAZs(Set<CharSequence> preferredCacheClusterAZs) {
         this.preferredCacheClusterAZs = preferredCacheClusterAZs;
         return this;
     }
@@ -638,7 +638,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -647,11 +647,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public ReplicationGroup withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public ReplicationGroup withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -661,7 +661,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PrimaryClusterId")
-    public String getPrimaryClusterId() {
+    public CharSequence getPrimaryClusterId() {
         return primaryClusterId;
     }
 
@@ -670,11 +670,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("PrimaryClusterId")
-    public void setPrimaryClusterId(String primaryClusterId) {
+    public void setPrimaryClusterId(CharSequence primaryClusterId) {
         this.primaryClusterId = primaryClusterId;
     }
 
-    public ReplicationGroup withPrimaryClusterId(String primaryClusterId) {
+    public ReplicationGroup withPrimaryClusterId(CharSequence primaryClusterId) {
         this.primaryClusterId = primaryClusterId;
         return this;
     }
@@ -707,7 +707,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("ReplicationGroupDescription")
-    public String getReplicationGroupDescription() {
+    public CharSequence getReplicationGroupDescription() {
         return replicationGroupDescription;
     }
 
@@ -716,11 +716,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("ReplicationGroupDescription")
-    public void setReplicationGroupDescription(String replicationGroupDescription) {
+    public void setReplicationGroupDescription(CharSequence replicationGroupDescription) {
         this.replicationGroupDescription = replicationGroupDescription;
     }
 
-    public ReplicationGroup withReplicationGroupDescription(String replicationGroupDescription) {
+    public ReplicationGroup withReplicationGroupDescription(CharSequence replicationGroupDescription) {
         this.replicationGroupDescription = replicationGroupDescription;
         return this;
     }
@@ -730,7 +730,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("ReplicationGroupId")
-    public String getReplicationGroupId() {
+    public CharSequence getReplicationGroupId() {
         return replicationGroupId;
     }
 
@@ -739,11 +739,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("ReplicationGroupId")
-    public void setReplicationGroupId(String replicationGroupId) {
+    public void setReplicationGroupId(CharSequence replicationGroupId) {
         this.replicationGroupId = replicationGroupId;
     }
 
-    public ReplicationGroup withReplicationGroupId(String replicationGroupId) {
+    public ReplicationGroup withReplicationGroupId(CharSequence replicationGroupId) {
         this.replicationGroupId = replicationGroupId;
         return this;
     }
@@ -753,7 +753,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public Set<String> getSecurityGroupIds() {
+    public Set<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -762,11 +762,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(Set<String> securityGroupIds) {
+    public void setSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public ReplicationGroup withSecurityGroupIds(Set<String> securityGroupIds) {
+    public ReplicationGroup withSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -776,7 +776,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotArns")
-    public Set<String> getSnapshotArns() {
+    public Set<CharSequence> getSnapshotArns() {
         return snapshotArns;
     }
 
@@ -785,11 +785,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotArns")
-    public void setSnapshotArns(Set<String> snapshotArns) {
+    public void setSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
     }
 
-    public ReplicationGroup withSnapshotArns(Set<String> snapshotArns) {
+    public ReplicationGroup withSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
         return this;
     }
@@ -799,7 +799,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotName")
-    public String getSnapshotName() {
+    public CharSequence getSnapshotName() {
         return snapshotName;
     }
 
@@ -808,11 +808,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotName")
-    public void setSnapshotName(String snapshotName) {
+    public void setSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
     }
 
-    public ReplicationGroup withSnapshotName(String snapshotName) {
+    public ReplicationGroup withSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
         return this;
     }
@@ -845,7 +845,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotWindow")
-    public String getSnapshotWindow() {
+    public CharSequence getSnapshotWindow() {
         return snapshotWindow;
     }
 
@@ -854,11 +854,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshotWindow")
-    public void setSnapshotWindow(String snapshotWindow) {
+    public void setSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
     }
 
-    public ReplicationGroup withSnapshotWindow(String snapshotWindow) {
+    public ReplicationGroup withSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
         return this;
     }
@@ -868,7 +868,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshottingClusterId")
-    public String getSnapshottingClusterId() {
+    public CharSequence getSnapshottingClusterId() {
         return snapshottingClusterId;
     }
 
@@ -877,11 +877,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonProperty("SnapshottingClusterId")
-    public void setSnapshottingClusterId(String snapshottingClusterId) {
+    public void setSnapshottingClusterId(CharSequence snapshottingClusterId) {
         this.snapshottingClusterId = snapshottingClusterId;
     }
 
-    public ReplicationGroup withSnapshottingClusterId(String snapshottingClusterId) {
+    public ReplicationGroup withSnapshottingClusterId(CharSequence snapshottingClusterId) {
         this.snapshottingClusterId = snapshottingClusterId;
         return this;
     }

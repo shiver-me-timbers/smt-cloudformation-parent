@@ -29,21 +29,21 @@ public class SubnetCidrBlock {
      */
     @JsonProperty("Ipv6CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html#cfn-ec2-subnetcidrblock-ipv6cidrblock")
-    private String ipv6CidrBlock;
+    private CharSequence ipv6CidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html#cfn-ec2-subnetcidrblock-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html#cfn-ec2-subnetcidrblock-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html#cfn-ec2-subnetcidrblock-ipv6cidrblock
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public String getIpv6CidrBlock() {
+    public CharSequence getIpv6CidrBlock() {
         return ipv6CidrBlock;
     }
 
@@ -52,11 +52,11 @@ public class SubnetCidrBlock {
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public void setIpv6CidrBlock(String ipv6CidrBlock) {
+    public void setIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
     }
 
-    public SubnetCidrBlock withIpv6CidrBlock(String ipv6CidrBlock) {
+    public SubnetCidrBlock withIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
         return this;
     }
@@ -66,7 +66,7 @@ public class SubnetCidrBlock {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -75,11 +75,11 @@ public class SubnetCidrBlock {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public SubnetCidrBlock withSubnetId(String subnetId) {
+    public SubnetCidrBlock withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

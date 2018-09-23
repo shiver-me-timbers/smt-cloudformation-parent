@@ -34,14 +34,14 @@ public class WebsiteConfiguration {
      */
     @JsonProperty("ErrorDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument")
-    private String errorDocument;
+    private CharSequence errorDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-indexdocument
      * 
      */
     @JsonProperty("IndexDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-indexdocument")
-    private String indexDocument;
+    private CharSequence indexDocument;
     /**
      * RedirectAllRequestsTo
      * <p>
@@ -65,7 +65,7 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonProperty("ErrorDocument")
-    public String getErrorDocument() {
+    public CharSequence getErrorDocument() {
         return errorDocument;
     }
 
@@ -74,11 +74,11 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonProperty("ErrorDocument")
-    public void setErrorDocument(String errorDocument) {
+    public void setErrorDocument(CharSequence errorDocument) {
         this.errorDocument = errorDocument;
     }
 
-    public WebsiteConfiguration withErrorDocument(String errorDocument) {
+    public WebsiteConfiguration withErrorDocument(CharSequence errorDocument) {
         this.errorDocument = errorDocument;
         return this;
     }
@@ -88,7 +88,7 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonProperty("IndexDocument")
-    public String getIndexDocument() {
+    public CharSequence getIndexDocument() {
         return indexDocument;
     }
 
@@ -97,11 +97,11 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonProperty("IndexDocument")
-    public void setIndexDocument(String indexDocument) {
+    public void setIndexDocument(CharSequence indexDocument) {
         this.indexDocument = indexDocument;
     }
 
-    public WebsiteConfiguration withIndexDocument(String indexDocument) {
+    public WebsiteConfiguration withIndexDocument(CharSequence indexDocument) {
         this.indexDocument = indexDocument;
         return this;
     }

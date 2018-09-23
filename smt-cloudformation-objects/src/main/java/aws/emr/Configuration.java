@@ -34,7 +34,7 @@ public class Configuration {
      */
     @JsonProperty("Classification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification")
-    private java.lang.String classification;
+    private CharSequence classification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurationproperties
      * 
@@ -56,7 +56,7 @@ public class Configuration {
      * 
      */
     @JsonProperty("Classification")
-    public java.lang.String getClassification() {
+    public CharSequence getClassification() {
         return classification;
     }
 
@@ -65,11 +65,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("Classification")
-    public void setClassification(java.lang.String classification) {
+    public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
 
-    public Configuration withClassification(java.lang.String classification) {
+    public Configuration withClassification(CharSequence classification) {
         this.classification = classification;
         return this;
     }

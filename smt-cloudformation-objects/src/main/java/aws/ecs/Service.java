@@ -44,7 +44,7 @@ public class Service {
      */
     @JsonProperty("Cluster")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-cluster")
-    private String cluster;
+    private CharSequence cluster;
     /**
      * DeploymentConfiguration
      * <p>
@@ -74,7 +74,7 @@ public class Service {
      */
     @JsonProperty("LaunchType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-launchtype")
-    private String launchType;
+    private CharSequence launchType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-loadbalancers
      * 
@@ -114,21 +114,21 @@ public class Service {
      */
     @JsonProperty("PlatformVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion")
-    private String platformVersion;
+    private CharSequence platformVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role
      * 
      */
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role")
-    private String role;
+    private CharSequence role;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename
      * 
      */
     @JsonProperty("ServiceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename")
-    private String serviceName;
+    private CharSequence serviceName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries
      * 
@@ -143,14 +143,14 @@ public class Service {
      */
     @JsonProperty("TaskDefinition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition")
-    private String taskDefinition;
+    private CharSequence taskDefinition;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-cluster
      * 
      */
     @JsonProperty("Cluster")
-    public String getCluster() {
+    public CharSequence getCluster() {
         return cluster;
     }
 
@@ -159,11 +159,11 @@ public class Service {
      * 
      */
     @JsonProperty("Cluster")
-    public void setCluster(String cluster) {
+    public void setCluster(CharSequence cluster) {
         this.cluster = cluster;
     }
 
-    public Service withCluster(String cluster) {
+    public Service withCluster(CharSequence cluster) {
         this.cluster = cluster;
         return this;
     }
@@ -246,7 +246,7 @@ public class Service {
      * 
      */
     @JsonProperty("LaunchType")
-    public String getLaunchType() {
+    public CharSequence getLaunchType() {
         return launchType;
     }
 
@@ -255,11 +255,11 @@ public class Service {
      * 
      */
     @JsonProperty("LaunchType")
-    public void setLaunchType(String launchType) {
+    public void setLaunchType(CharSequence launchType) {
         this.launchType = launchType;
     }
 
-    public Service withLaunchType(String launchType) {
+    public Service withLaunchType(CharSequence launchType) {
         this.launchType = launchType;
         return this;
     }
@@ -365,7 +365,7 @@ public class Service {
      * 
      */
     @JsonProperty("PlatformVersion")
-    public String getPlatformVersion() {
+    public CharSequence getPlatformVersion() {
         return platformVersion;
     }
 
@@ -374,11 +374,11 @@ public class Service {
      * 
      */
     @JsonProperty("PlatformVersion")
-    public void setPlatformVersion(String platformVersion) {
+    public void setPlatformVersion(CharSequence platformVersion) {
         this.platformVersion = platformVersion;
     }
 
-    public Service withPlatformVersion(String platformVersion) {
+    public Service withPlatformVersion(CharSequence platformVersion) {
         this.platformVersion = platformVersion;
         return this;
     }
@@ -388,7 +388,7 @@ public class Service {
      * 
      */
     @JsonProperty("Role")
-    public String getRole() {
+    public CharSequence getRole() {
         return role;
     }
 
@@ -397,11 +397,11 @@ public class Service {
      * 
      */
     @JsonProperty("Role")
-    public void setRole(String role) {
+    public void setRole(CharSequence role) {
         this.role = role;
     }
 
-    public Service withRole(String role) {
+    public Service withRole(CharSequence role) {
         this.role = role;
         return this;
     }
@@ -411,7 +411,7 @@ public class Service {
      * 
      */
     @JsonProperty("ServiceName")
-    public String getServiceName() {
+    public CharSequence getServiceName() {
         return serviceName;
     }
 
@@ -420,11 +420,11 @@ public class Service {
      * 
      */
     @JsonProperty("ServiceName")
-    public void setServiceName(String serviceName) {
+    public void setServiceName(CharSequence serviceName) {
         this.serviceName = serviceName;
     }
 
-    public Service withServiceName(String serviceName) {
+    public Service withServiceName(CharSequence serviceName) {
         this.serviceName = serviceName;
         return this;
     }
@@ -457,7 +457,7 @@ public class Service {
      * 
      */
     @JsonProperty("TaskDefinition")
-    public String getTaskDefinition() {
+    public CharSequence getTaskDefinition() {
         return taskDefinition;
     }
 
@@ -466,11 +466,11 @@ public class Service {
      * 
      */
     @JsonProperty("TaskDefinition")
-    public void setTaskDefinition(String taskDefinition) {
+    public void setTaskDefinition(CharSequence taskDefinition) {
         this.taskDefinition = taskDefinition;
     }
 
-    public Service withTaskDefinition(String taskDefinition) {
+    public Service withTaskDefinition(CharSequence taskDefinition) {
         this.taskDefinition = taskDefinition;
         return this;
     }

@@ -56,21 +56,21 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("DomainARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-domainarn")
-    private String domainARN;
+    private CharSequence domainARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexname
      * 
      */
     @JsonProperty("IndexName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexname")
-    private String indexName;
+    private CharSequence indexName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexrotationperiod
      * 
      */
     @JsonProperty("IndexRotationPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexrotationperiod")
-    private String indexRotationPeriod;
+    private CharSequence indexRotationPeriod;
     /**
      * ProcessingConfiguration
      * <p>
@@ -95,14 +95,14 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-s3backupmode
      * 
      */
     @JsonProperty("S3BackupMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-s3backupmode")
-    private String s3BackupMode;
+    private CharSequence s3BackupMode;
     /**
      * S3DestinationConfiguration
      * <p>
@@ -118,7 +118,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("TypeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename")
-    private String typeName;
+    private CharSequence typeName;
 
     /**
      * ElasticsearchBufferingHints
@@ -179,7 +179,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("DomainARN")
-    public String getDomainARN() {
+    public CharSequence getDomainARN() {
         return domainARN;
     }
 
@@ -188,11 +188,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("DomainARN")
-    public void setDomainARN(String domainARN) {
+    public void setDomainARN(CharSequence domainARN) {
         this.domainARN = domainARN;
     }
 
-    public ElasticsearchDestinationConfiguration withDomainARN(String domainARN) {
+    public ElasticsearchDestinationConfiguration withDomainARN(CharSequence domainARN) {
         this.domainARN = domainARN;
         return this;
     }
@@ -202,7 +202,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("IndexName")
-    public String getIndexName() {
+    public CharSequence getIndexName() {
         return indexName;
     }
 
@@ -211,11 +211,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("IndexName")
-    public void setIndexName(String indexName) {
+    public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
 
-    public ElasticsearchDestinationConfiguration withIndexName(String indexName) {
+    public ElasticsearchDestinationConfiguration withIndexName(CharSequence indexName) {
         this.indexName = indexName;
         return this;
     }
@@ -225,7 +225,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("IndexRotationPeriod")
-    public String getIndexRotationPeriod() {
+    public CharSequence getIndexRotationPeriod() {
         return indexRotationPeriod;
     }
 
@@ -234,11 +234,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("IndexRotationPeriod")
-    public void setIndexRotationPeriod(String indexRotationPeriod) {
+    public void setIndexRotationPeriod(CharSequence indexRotationPeriod) {
         this.indexRotationPeriod = indexRotationPeriod;
     }
 
-    public ElasticsearchDestinationConfiguration withIndexRotationPeriod(String indexRotationPeriod) {
+    public ElasticsearchDestinationConfiguration withIndexRotationPeriod(CharSequence indexRotationPeriod) {
         this.indexRotationPeriod = indexRotationPeriod;
         return this;
     }
@@ -302,7 +302,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -311,11 +311,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public ElasticsearchDestinationConfiguration withRoleARN(String roleARN) {
+    public ElasticsearchDestinationConfiguration withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }
@@ -325,7 +325,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public String getS3BackupMode() {
+    public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
 
@@ -334,11 +334,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("S3BackupMode")
-    public void setS3BackupMode(String s3BackupMode) {
+    public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }
 
-    public ElasticsearchDestinationConfiguration withS3BackupMode(String s3BackupMode) {
+    public ElasticsearchDestinationConfiguration withS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
         return this;
     }
@@ -375,7 +375,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("TypeName")
-    public String getTypeName() {
+    public CharSequence getTypeName() {
         return typeName;
     }
 
@@ -384,11 +384,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonProperty("TypeName")
-    public void setTypeName(String typeName) {
+    public void setTypeName(CharSequence typeName) {
         this.typeName = typeName;
     }
 
-    public ElasticsearchDestinationConfiguration withTypeName(String typeName) {
+    public ElasticsearchDestinationConfiguration withTypeName(CharSequence typeName) {
         this.typeName = typeName;
         return this;
     }

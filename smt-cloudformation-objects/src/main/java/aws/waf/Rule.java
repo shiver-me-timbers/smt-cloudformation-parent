@@ -33,14 +33,14 @@ public class Rule {
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-predicates
      * 
@@ -55,7 +55,7 @@ public class Rule {
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -64,11 +64,11 @@ public class Rule {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public Rule withMetricName(String metricName) {
+    public Rule withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -78,7 +78,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -87,11 +87,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Rule withName(String name) {
+    public Rule withName(CharSequence name) {
         this.name = name;
         return this;
     }

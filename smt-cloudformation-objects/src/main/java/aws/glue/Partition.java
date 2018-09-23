@@ -31,21 +31,21 @@ public class Partition {
      */
     @JsonProperty("TableName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename")
-    private String tableName;
+    private CharSequence tableName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-databasename
      * 
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid
      * 
      */
     @JsonProperty("CatalogId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid")
-    private String catalogId;
+    private CharSequence catalogId;
     /**
      * PartitionInput
      * <p>
@@ -61,7 +61,7 @@ public class Partition {
      * 
      */
     @JsonProperty("TableName")
-    public String getTableName() {
+    public CharSequence getTableName() {
         return tableName;
     }
 
@@ -70,11 +70,11 @@ public class Partition {
      * 
      */
     @JsonProperty("TableName")
-    public void setTableName(String tableName) {
+    public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
 
-    public Partition withTableName(String tableName) {
+    public Partition withTableName(CharSequence tableName) {
         this.tableName = tableName;
         return this;
     }
@@ -84,7 +84,7 @@ public class Partition {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -93,11 +93,11 @@ public class Partition {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public Partition withDatabaseName(String databaseName) {
+    public Partition withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -107,7 +107,7 @@ public class Partition {
      * 
      */
     @JsonProperty("CatalogId")
-    public String getCatalogId() {
+    public CharSequence getCatalogId() {
         return catalogId;
     }
 
@@ -116,11 +116,11 @@ public class Partition {
      * 
      */
     @JsonProperty("CatalogId")
-    public void setCatalogId(String catalogId) {
+    public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }
 
-    public Partition withCatalogId(String catalogId) {
+    public Partition withCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
         return this;
     }

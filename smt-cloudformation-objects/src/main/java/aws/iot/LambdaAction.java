@@ -28,14 +28,14 @@ public class LambdaAction {
      */
     @JsonProperty("FunctionArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html#cfn-iot-topicrule-lambdaaction-functionarn")
-    private String functionArn;
+    private CharSequence functionArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html#cfn-iot-topicrule-lambdaaction-functionarn
      * 
      */
     @JsonProperty("FunctionArn")
-    public String getFunctionArn() {
+    public CharSequence getFunctionArn() {
         return functionArn;
     }
 
@@ -44,11 +44,11 @@ public class LambdaAction {
      * 
      */
     @JsonProperty("FunctionArn")
-    public void setFunctionArn(String functionArn) {
+    public void setFunctionArn(CharSequence functionArn) {
         this.functionArn = functionArn;
     }
 
-    public LambdaAction withFunctionArn(String functionArn) {
+    public LambdaAction withFunctionArn(CharSequence functionArn) {
         this.functionArn = functionArn;
         return this;
     }

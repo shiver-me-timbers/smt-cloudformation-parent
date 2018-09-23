@@ -31,35 +31,35 @@ public class GrokClassifier {
      */
     @JsonProperty("CustomPatterns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-custompatterns")
-    private String customPatterns;
+    private CharSequence customPatterns;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-grokpattern
      * 
      */
     @JsonProperty("GrokPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-grokpattern")
-    private String grokPattern;
+    private CharSequence grokPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-classification
      * 
      */
     @JsonProperty("Classification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-classification")
-    private String classification;
+    private CharSequence classification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-custompatterns
      * 
      */
     @JsonProperty("CustomPatterns")
-    public String getCustomPatterns() {
+    public CharSequence getCustomPatterns() {
         return customPatterns;
     }
 
@@ -68,11 +68,11 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("CustomPatterns")
-    public void setCustomPatterns(String customPatterns) {
+    public void setCustomPatterns(CharSequence customPatterns) {
         this.customPatterns = customPatterns;
     }
 
-    public GrokClassifier withCustomPatterns(String customPatterns) {
+    public GrokClassifier withCustomPatterns(CharSequence customPatterns) {
         this.customPatterns = customPatterns;
         return this;
     }
@@ -82,7 +82,7 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("GrokPattern")
-    public String getGrokPattern() {
+    public CharSequence getGrokPattern() {
         return grokPattern;
     }
 
@@ -91,11 +91,11 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("GrokPattern")
-    public void setGrokPattern(String grokPattern) {
+    public void setGrokPattern(CharSequence grokPattern) {
         this.grokPattern = grokPattern;
     }
 
-    public GrokClassifier withGrokPattern(String grokPattern) {
+    public GrokClassifier withGrokPattern(CharSequence grokPattern) {
         this.grokPattern = grokPattern;
         return this;
     }
@@ -105,7 +105,7 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("Classification")
-    public String getClassification() {
+    public CharSequence getClassification() {
         return classification;
     }
 
@@ -114,11 +114,11 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("Classification")
-    public void setClassification(String classification) {
+    public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
 
-    public GrokClassifier withClassification(String classification) {
+    public GrokClassifier withClassification(CharSequence classification) {
         this.classification = classification;
         return this;
     }
@@ -128,7 +128,7 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -137,11 +137,11 @@ public class GrokClassifier {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public GrokClassifier withName(String name) {
+    public GrokClassifier withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -37,14 +37,14 @@ public class MountPoints {
      */
     @JsonProperty("SourceVolume")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume")
-    private String sourceVolume;
+    private CharSequence sourceVolume;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath
      * 
      */
     @JsonProperty("ContainerPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath")
-    private String containerPath;
+    private CharSequence containerPath;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly
@@ -74,7 +74,7 @@ public class MountPoints {
      * 
      */
     @JsonProperty("SourceVolume")
-    public String getSourceVolume() {
+    public CharSequence getSourceVolume() {
         return sourceVolume;
     }
 
@@ -83,11 +83,11 @@ public class MountPoints {
      * 
      */
     @JsonProperty("SourceVolume")
-    public void setSourceVolume(String sourceVolume) {
+    public void setSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
     }
 
-    public MountPoints withSourceVolume(String sourceVolume) {
+    public MountPoints withSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
         return this;
     }
@@ -97,7 +97,7 @@ public class MountPoints {
      * 
      */
     @JsonProperty("ContainerPath")
-    public String getContainerPath() {
+    public CharSequence getContainerPath() {
         return containerPath;
     }
 
@@ -106,11 +106,11 @@ public class MountPoints {
      * 
      */
     @JsonProperty("ContainerPath")
-    public void setContainerPath(String containerPath) {
+    public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
 
-    public MountPoints withContainerPath(String containerPath) {
+    public MountPoints withContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
         return this;
     }

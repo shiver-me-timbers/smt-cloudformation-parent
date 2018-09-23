@@ -36,7 +36,7 @@ public class EncryptionAtRestOptions {
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-enabled
@@ -66,7 +66,7 @@ public class EncryptionAtRestOptions {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -75,11 +75,11 @@ public class EncryptionAtRestOptions {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public EncryptionAtRestOptions withKmsKeyId(String kmsKeyId) {
+    public EncryptionAtRestOptions withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }

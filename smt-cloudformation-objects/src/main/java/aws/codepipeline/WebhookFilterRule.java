@@ -29,21 +29,21 @@ public class WebhookFilterRule {
      */
     @JsonProperty("JsonPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath")
-    private String jsonPath;
+    private CharSequence jsonPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals
      * 
      */
     @JsonProperty("MatchEquals")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals")
-    private String matchEquals;
+    private CharSequence matchEquals;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath
      * 
      */
     @JsonProperty("JsonPath")
-    public String getJsonPath() {
+    public CharSequence getJsonPath() {
         return jsonPath;
     }
 
@@ -52,11 +52,11 @@ public class WebhookFilterRule {
      * 
      */
     @JsonProperty("JsonPath")
-    public void setJsonPath(String jsonPath) {
+    public void setJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
     }
 
-    public WebhookFilterRule withJsonPath(String jsonPath) {
+    public WebhookFilterRule withJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
         return this;
     }
@@ -66,7 +66,7 @@ public class WebhookFilterRule {
      * 
      */
     @JsonProperty("MatchEquals")
-    public String getMatchEquals() {
+    public CharSequence getMatchEquals() {
         return matchEquals;
     }
 
@@ -75,11 +75,11 @@ public class WebhookFilterRule {
      * 
      */
     @JsonProperty("MatchEquals")
-    public void setMatchEquals(String matchEquals) {
+    public void setMatchEquals(CharSequence matchEquals) {
         this.matchEquals = matchEquals;
     }
 
-    public WebhookFilterRule withMatchEquals(String matchEquals) {
+    public WebhookFilterRule withMatchEquals(CharSequence matchEquals) {
         this.matchEquals = matchEquals;
         return this;
     }

@@ -76,63 +76,63 @@ public class Cluster {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusteridentifier
      * 
      */
     @JsonProperty("ClusterIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusteridentifier")
-    private String clusterIdentifier;
+    private CharSequence clusterIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterparametergroupname
      * 
      */
     @JsonProperty("ClusterParameterGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterparametergroupname")
-    private String clusterParameterGroupName;
+    private CharSequence clusterParameterGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersecuritygroups
      * 
      */
     @JsonProperty("ClusterSecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersecuritygroups")
-    private List<String> clusterSecurityGroups = new ArrayList<String>();
+    private List<CharSequence> clusterSecurityGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersubnetgroupname
      * 
      */
     @JsonProperty("ClusterSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersubnetgroupname")
-    private String clusterSubnetGroupName;
+    private CharSequence clusterSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustertype
      * 
      */
     @JsonProperty("ClusterType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustertype")
-    private String clusterType;
+    private CharSequence clusterType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterversion
      * 
      */
     @JsonProperty("ClusterVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterversion")
-    private String clusterVersion;
+    private CharSequence clusterVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-dbname
      * 
      */
     @JsonProperty("DBName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-dbname")
-    private String dBName;
+    private CharSequence dBName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-elasticip
      * 
      */
     @JsonProperty("ElasticIp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-elasticip")
-    private String elasticIp;
+    private CharSequence elasticIp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-encrypted
      * 
@@ -146,14 +146,14 @@ public class Cluster {
      */
     @JsonProperty("HsmClientCertificateIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-hsmclientcertidentifier")
-    private String hsmClientCertificateIdentifier;
+    private CharSequence hsmClientCertificateIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-HsmConfigurationIdentifier
      * 
      */
     @JsonProperty("HsmConfigurationIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-HsmConfigurationIdentifier")
-    private String hsmConfigurationIdentifier;
+    private CharSequence hsmConfigurationIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-iamroles
      * 
@@ -161,14 +161,14 @@ public class Cluster {
     @JsonProperty("IamRoles")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-iamroles")
-    private Set<String> iamRoles = new LinkedHashSet<String>();
+    private Set<CharSequence> iamRoles = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-kmskeyid
      * 
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * LoggingProperties
      * <p>
@@ -184,21 +184,21 @@ public class Cluster {
      */
     @JsonProperty("MasterUserPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword")
-    private String masterUserPassword;
+    private CharSequence masterUserPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masterusername
      * 
      */
     @JsonProperty("MasterUsername")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masterusername")
-    private String masterUsername;
+    private CharSequence masterUsername;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
      */
     @JsonProperty("NodeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype")
-    private String nodeType;
+    private CharSequence nodeType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
@@ -212,7 +212,7 @@ public class Cluster {
      */
     @JsonProperty("OwnerAccount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-owneraccount")
-    private String ownerAccount;
+    private CharSequence ownerAccount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-port
      * 
@@ -226,7 +226,7 @@ public class Cluster {
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-publiclyaccessible
      * 
@@ -240,14 +240,14 @@ public class Cluster {
      */
     @JsonProperty("SnapshotClusterIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotclusteridentifier")
-    private String snapshotClusterIdentifier;
+    private CharSequence snapshotClusterIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotidentifier
      * 
      */
     @JsonProperty("SnapshotIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotidentifier")
-    private String snapshotIdentifier;
+    private CharSequence snapshotIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-tags
      * 
@@ -261,7 +261,7 @@ public class Cluster {
      */
     @JsonProperty("VpcSecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-vpcsecuritygroupids")
-    private List<String> vpcSecurityGroupIds = new ArrayList<String>();
+    private List<CharSequence> vpcSecurityGroupIds = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade
@@ -314,7 +314,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -323,11 +323,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Cluster withAvailabilityZone(String availabilityZone) {
+    public Cluster withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -337,7 +337,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterIdentifier")
-    public String getClusterIdentifier() {
+    public CharSequence getClusterIdentifier() {
         return clusterIdentifier;
     }
 
@@ -346,11 +346,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterIdentifier")
-    public void setClusterIdentifier(String clusterIdentifier) {
+    public void setClusterIdentifier(CharSequence clusterIdentifier) {
         this.clusterIdentifier = clusterIdentifier;
     }
 
-    public Cluster withClusterIdentifier(String clusterIdentifier) {
+    public Cluster withClusterIdentifier(CharSequence clusterIdentifier) {
         this.clusterIdentifier = clusterIdentifier;
         return this;
     }
@@ -360,7 +360,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterParameterGroupName")
-    public String getClusterParameterGroupName() {
+    public CharSequence getClusterParameterGroupName() {
         return clusterParameterGroupName;
     }
 
@@ -369,11 +369,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterParameterGroupName")
-    public void setClusterParameterGroupName(String clusterParameterGroupName) {
+    public void setClusterParameterGroupName(CharSequence clusterParameterGroupName) {
         this.clusterParameterGroupName = clusterParameterGroupName;
     }
 
-    public Cluster withClusterParameterGroupName(String clusterParameterGroupName) {
+    public Cluster withClusterParameterGroupName(CharSequence clusterParameterGroupName) {
         this.clusterParameterGroupName = clusterParameterGroupName;
         return this;
     }
@@ -383,7 +383,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterSecurityGroups")
-    public List<String> getClusterSecurityGroups() {
+    public List<CharSequence> getClusterSecurityGroups() {
         return clusterSecurityGroups;
     }
 
@@ -392,11 +392,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterSecurityGroups")
-    public void setClusterSecurityGroups(List<String> clusterSecurityGroups) {
+    public void setClusterSecurityGroups(List<CharSequence> clusterSecurityGroups) {
         this.clusterSecurityGroups = clusterSecurityGroups;
     }
 
-    public Cluster withClusterSecurityGroups(List<String> clusterSecurityGroups) {
+    public Cluster withClusterSecurityGroups(List<CharSequence> clusterSecurityGroups) {
         this.clusterSecurityGroups = clusterSecurityGroups;
         return this;
     }
@@ -406,7 +406,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterSubnetGroupName")
-    public String getClusterSubnetGroupName() {
+    public CharSequence getClusterSubnetGroupName() {
         return clusterSubnetGroupName;
     }
 
@@ -415,11 +415,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterSubnetGroupName")
-    public void setClusterSubnetGroupName(String clusterSubnetGroupName) {
+    public void setClusterSubnetGroupName(CharSequence clusterSubnetGroupName) {
         this.clusterSubnetGroupName = clusterSubnetGroupName;
     }
 
-    public Cluster withClusterSubnetGroupName(String clusterSubnetGroupName) {
+    public Cluster withClusterSubnetGroupName(CharSequence clusterSubnetGroupName) {
         this.clusterSubnetGroupName = clusterSubnetGroupName;
         return this;
     }
@@ -429,7 +429,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterType")
-    public String getClusterType() {
+    public CharSequence getClusterType() {
         return clusterType;
     }
 
@@ -438,11 +438,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterType")
-    public void setClusterType(String clusterType) {
+    public void setClusterType(CharSequence clusterType) {
         this.clusterType = clusterType;
     }
 
-    public Cluster withClusterType(String clusterType) {
+    public Cluster withClusterType(CharSequence clusterType) {
         this.clusterType = clusterType;
         return this;
     }
@@ -452,7 +452,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterVersion")
-    public String getClusterVersion() {
+    public CharSequence getClusterVersion() {
         return clusterVersion;
     }
 
@@ -461,11 +461,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterVersion")
-    public void setClusterVersion(String clusterVersion) {
+    public void setClusterVersion(CharSequence clusterVersion) {
         this.clusterVersion = clusterVersion;
     }
 
-    public Cluster withClusterVersion(String clusterVersion) {
+    public Cluster withClusterVersion(CharSequence clusterVersion) {
         this.clusterVersion = clusterVersion;
         return this;
     }
@@ -475,7 +475,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("DBName")
-    public String getDBName() {
+    public CharSequence getDBName() {
         return dBName;
     }
 
@@ -484,11 +484,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("DBName")
-    public void setDBName(String dBName) {
+    public void setDBName(CharSequence dBName) {
         this.dBName = dBName;
     }
 
-    public Cluster withDBName(String dBName) {
+    public Cluster withDBName(CharSequence dBName) {
         this.dBName = dBName;
         return this;
     }
@@ -498,7 +498,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("ElasticIp")
-    public String getElasticIp() {
+    public CharSequence getElasticIp() {
         return elasticIp;
     }
 
@@ -507,11 +507,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ElasticIp")
-    public void setElasticIp(String elasticIp) {
+    public void setElasticIp(CharSequence elasticIp) {
         this.elasticIp = elasticIp;
     }
 
-    public Cluster withElasticIp(String elasticIp) {
+    public Cluster withElasticIp(CharSequence elasticIp) {
         this.elasticIp = elasticIp;
         return this;
     }
@@ -544,7 +544,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("HsmClientCertificateIdentifier")
-    public String getHsmClientCertificateIdentifier() {
+    public CharSequence getHsmClientCertificateIdentifier() {
         return hsmClientCertificateIdentifier;
     }
 
@@ -553,11 +553,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("HsmClientCertificateIdentifier")
-    public void setHsmClientCertificateIdentifier(String hsmClientCertificateIdentifier) {
+    public void setHsmClientCertificateIdentifier(CharSequence hsmClientCertificateIdentifier) {
         this.hsmClientCertificateIdentifier = hsmClientCertificateIdentifier;
     }
 
-    public Cluster withHsmClientCertificateIdentifier(String hsmClientCertificateIdentifier) {
+    public Cluster withHsmClientCertificateIdentifier(CharSequence hsmClientCertificateIdentifier) {
         this.hsmClientCertificateIdentifier = hsmClientCertificateIdentifier;
         return this;
     }
@@ -567,7 +567,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("HsmConfigurationIdentifier")
-    public String getHsmConfigurationIdentifier() {
+    public CharSequence getHsmConfigurationIdentifier() {
         return hsmConfigurationIdentifier;
     }
 
@@ -576,11 +576,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("HsmConfigurationIdentifier")
-    public void setHsmConfigurationIdentifier(String hsmConfigurationIdentifier) {
+    public void setHsmConfigurationIdentifier(CharSequence hsmConfigurationIdentifier) {
         this.hsmConfigurationIdentifier = hsmConfigurationIdentifier;
     }
 
-    public Cluster withHsmConfigurationIdentifier(String hsmConfigurationIdentifier) {
+    public Cluster withHsmConfigurationIdentifier(CharSequence hsmConfigurationIdentifier) {
         this.hsmConfigurationIdentifier = hsmConfigurationIdentifier;
         return this;
     }
@@ -590,7 +590,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("IamRoles")
-    public Set<String> getIamRoles() {
+    public Set<CharSequence> getIamRoles() {
         return iamRoles;
     }
 
@@ -599,11 +599,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("IamRoles")
-    public void setIamRoles(Set<String> iamRoles) {
+    public void setIamRoles(Set<CharSequence> iamRoles) {
         this.iamRoles = iamRoles;
     }
 
-    public Cluster withIamRoles(Set<String> iamRoles) {
+    public Cluster withIamRoles(Set<CharSequence> iamRoles) {
         this.iamRoles = iamRoles;
         return this;
     }
@@ -613,7 +613,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -622,11 +622,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public Cluster withKmsKeyId(String kmsKeyId) {
+    public Cluster withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -663,7 +663,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public String getMasterUserPassword() {
+    public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
 
@@ -672,11 +672,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public void setMasterUserPassword(String masterUserPassword) {
+    public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
 
-    public Cluster withMasterUserPassword(String masterUserPassword) {
+    public Cluster withMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
         return this;
     }
@@ -686,7 +686,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("MasterUsername")
-    public String getMasterUsername() {
+    public CharSequence getMasterUsername() {
         return masterUsername;
     }
 
@@ -695,11 +695,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("MasterUsername")
-    public void setMasterUsername(String masterUsername) {
+    public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
 
-    public Cluster withMasterUsername(String masterUsername) {
+    public Cluster withMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
         return this;
     }
@@ -709,7 +709,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("NodeType")
-    public String getNodeType() {
+    public CharSequence getNodeType() {
         return nodeType;
     }
 
@@ -718,11 +718,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("NodeType")
-    public void setNodeType(String nodeType) {
+    public void setNodeType(CharSequence nodeType) {
         this.nodeType = nodeType;
     }
 
-    public Cluster withNodeType(String nodeType) {
+    public Cluster withNodeType(CharSequence nodeType) {
         this.nodeType = nodeType;
         return this;
     }
@@ -755,7 +755,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("OwnerAccount")
-    public String getOwnerAccount() {
+    public CharSequence getOwnerAccount() {
         return ownerAccount;
     }
 
@@ -764,11 +764,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("OwnerAccount")
-    public void setOwnerAccount(String ownerAccount) {
+    public void setOwnerAccount(CharSequence ownerAccount) {
         this.ownerAccount = ownerAccount;
     }
 
-    public Cluster withOwnerAccount(String ownerAccount) {
+    public Cluster withOwnerAccount(CharSequence ownerAccount) {
         this.ownerAccount = ownerAccount;
         return this;
     }
@@ -801,7 +801,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -810,11 +810,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public Cluster withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public Cluster withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -847,7 +847,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("SnapshotClusterIdentifier")
-    public String getSnapshotClusterIdentifier() {
+    public CharSequence getSnapshotClusterIdentifier() {
         return snapshotClusterIdentifier;
     }
 
@@ -856,11 +856,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("SnapshotClusterIdentifier")
-    public void setSnapshotClusterIdentifier(String snapshotClusterIdentifier) {
+    public void setSnapshotClusterIdentifier(CharSequence snapshotClusterIdentifier) {
         this.snapshotClusterIdentifier = snapshotClusterIdentifier;
     }
 
-    public Cluster withSnapshotClusterIdentifier(String snapshotClusterIdentifier) {
+    public Cluster withSnapshotClusterIdentifier(CharSequence snapshotClusterIdentifier) {
         this.snapshotClusterIdentifier = snapshotClusterIdentifier;
         return this;
     }
@@ -870,7 +870,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("SnapshotIdentifier")
-    public String getSnapshotIdentifier() {
+    public CharSequence getSnapshotIdentifier() {
         return snapshotIdentifier;
     }
 
@@ -879,11 +879,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("SnapshotIdentifier")
-    public void setSnapshotIdentifier(String snapshotIdentifier) {
+    public void setSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
     }
 
-    public Cluster withSnapshotIdentifier(String snapshotIdentifier) {
+    public Cluster withSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
         return this;
     }
@@ -916,7 +916,7 @@ public class Cluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public List<String> getVpcSecurityGroupIds() {
+    public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
 
@@ -925,11 +925,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public void setVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
 
-    public Cluster withVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public Cluster withVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
         return this;
     }

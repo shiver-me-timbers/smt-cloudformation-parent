@@ -40,21 +40,21 @@ public class ScalingPolicy {
      */
     @JsonProperty("AdjustmentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-adjustmenttype")
-    private String adjustmentType;
+    private CharSequence adjustmentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-autoscalinggroupname
      * 
      */
     @JsonProperty("AutoScalingGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-autoscalinggroupname")
-    private String autoScalingGroupName;
+    private CharSequence autoScalingGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-cooldown
      * 
      */
     @JsonProperty("Cooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-cooldown")
-    private String cooldown;
+    private CharSequence cooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-estimatedinstancewarmup
      * 
@@ -68,7 +68,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("MetricAggregationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-metricaggregationtype")
-    private String metricAggregationType;
+    private CharSequence metricAggregationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-minadjustmentmagnitude
      * 
@@ -82,7 +82,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("PolicyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-policytype")
-    private String policyType;
+    private CharSequence policyType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-scalingadjustment
      * 
@@ -113,7 +113,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public String getAdjustmentType() {
+    public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
 
@@ -122,11 +122,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public void setAdjustmentType(String adjustmentType) {
+    public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
 
-    public ScalingPolicy withAdjustmentType(String adjustmentType) {
+    public ScalingPolicy withAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
         return this;
     }
@@ -136,7 +136,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public String getAutoScalingGroupName() {
+    public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
 
@@ -145,11 +145,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public void setAutoScalingGroupName(String autoScalingGroupName) {
+    public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
 
-    public ScalingPolicy withAutoScalingGroupName(String autoScalingGroupName) {
+    public ScalingPolicy withAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
         return this;
     }
@@ -159,7 +159,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("Cooldown")
-    public String getCooldown() {
+    public CharSequence getCooldown() {
         return cooldown;
     }
 
@@ -168,11 +168,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("Cooldown")
-    public void setCooldown(String cooldown) {
+    public void setCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
     }
 
-    public ScalingPolicy withCooldown(String cooldown) {
+    public ScalingPolicy withCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
         return this;
     }
@@ -205,7 +205,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("MetricAggregationType")
-    public String getMetricAggregationType() {
+    public CharSequence getMetricAggregationType() {
         return metricAggregationType;
     }
 
@@ -214,11 +214,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("MetricAggregationType")
-    public void setMetricAggregationType(String metricAggregationType) {
+    public void setMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
     }
 
-    public ScalingPolicy withMetricAggregationType(String metricAggregationType) {
+    public ScalingPolicy withMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
         return this;
     }
@@ -251,7 +251,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyType")
-    public String getPolicyType() {
+    public CharSequence getPolicyType() {
         return policyType;
     }
 
@@ -260,11 +260,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyType")
-    public void setPolicyType(String policyType) {
+    public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }
 
-    public ScalingPolicy withPolicyType(String policyType) {
+    public ScalingPolicy withPolicyType(CharSequence policyType) {
         this.policyType = policyType;
         return this;
     }

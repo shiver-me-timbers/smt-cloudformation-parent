@@ -29,21 +29,21 @@ public class RepublishAction {
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-topic
      * 
      */
     @JsonProperty("Topic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-topic")
-    private String topic;
+    private CharSequence topic;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html#cfn-iot-topicrule-republishaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -52,11 +52,11 @@ public class RepublishAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public RepublishAction withRoleArn(String roleArn) {
+    public RepublishAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -66,7 +66,7 @@ public class RepublishAction {
      * 
      */
     @JsonProperty("Topic")
-    public String getTopic() {
+    public CharSequence getTopic() {
         return topic;
     }
 
@@ -75,11 +75,11 @@ public class RepublishAction {
      * 
      */
     @JsonProperty("Topic")
-    public void setTopic(String topic) {
+    public void setTopic(CharSequence topic) {
         this.topic = topic;
     }
 
-    public RepublishAction withTopic(String topic) {
+    public RepublishAction withTopic(CharSequence topic) {
         this.topic = topic;
         return this;
     }

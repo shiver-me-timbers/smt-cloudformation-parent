@@ -31,21 +31,21 @@ public class Projection {
      */
     @JsonProperty("NonKeyAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt")
-    private List<String> nonKeyAttributes = new ArrayList<String>();
+    private List<CharSequence> nonKeyAttributes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype
      * 
      */
     @JsonProperty("ProjectionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype")
-    private String projectionType;
+    private CharSequence projectionType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt
      * 
      */
     @JsonProperty("NonKeyAttributes")
-    public List<String> getNonKeyAttributes() {
+    public List<CharSequence> getNonKeyAttributes() {
         return nonKeyAttributes;
     }
 
@@ -54,11 +54,11 @@ public class Projection {
      * 
      */
     @JsonProperty("NonKeyAttributes")
-    public void setNonKeyAttributes(List<String> nonKeyAttributes) {
+    public void setNonKeyAttributes(List<CharSequence> nonKeyAttributes) {
         this.nonKeyAttributes = nonKeyAttributes;
     }
 
-    public Projection withNonKeyAttributes(List<String> nonKeyAttributes) {
+    public Projection withNonKeyAttributes(List<CharSequence> nonKeyAttributes) {
         this.nonKeyAttributes = nonKeyAttributes;
         return this;
     }
@@ -68,7 +68,7 @@ public class Projection {
      * 
      */
     @JsonProperty("ProjectionType")
-    public String getProjectionType() {
+    public CharSequence getProjectionType() {
         return projectionType;
     }
 
@@ -77,11 +77,11 @@ public class Projection {
      * 
      */
     @JsonProperty("ProjectionType")
-    public void setProjectionType(String projectionType) {
+    public void setProjectionType(CharSequence projectionType) {
         this.projectionType = projectionType;
     }
 
-    public Projection withProjectionType(String projectionType) {
+    public Projection withProjectionType(CharSequence projectionType) {
         this.projectionType = projectionType;
         return this;
     }

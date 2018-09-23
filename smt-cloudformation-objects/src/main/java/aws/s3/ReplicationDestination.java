@@ -41,14 +41,14 @@ public class ReplicationDestination {
      */
     @JsonProperty("Account")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account")
-    private String account;
+    private CharSequence account;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-bucket
      * 
      */
     @JsonProperty("Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-bucket")
-    private String bucket;
+    private CharSequence bucket;
     /**
      * EncryptionConfiguration
      * <p>
@@ -64,7 +64,7 @@ public class ReplicationDestination {
      */
     @JsonProperty("StorageClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass")
-    private String storageClass;
+    private CharSequence storageClass;
 
     /**
      * AccessControlTranslation
@@ -98,7 +98,7 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("Account")
-    public String getAccount() {
+    public CharSequence getAccount() {
         return account;
     }
 
@@ -107,11 +107,11 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("Account")
-    public void setAccount(String account) {
+    public void setAccount(CharSequence account) {
         this.account = account;
     }
 
-    public ReplicationDestination withAccount(String account) {
+    public ReplicationDestination withAccount(CharSequence account) {
         this.account = account;
         return this;
     }
@@ -121,7 +121,7 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("Bucket")
-    public String getBucket() {
+    public CharSequence getBucket() {
         return bucket;
     }
 
@@ -130,11 +130,11 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("Bucket")
-    public void setBucket(String bucket) {
+    public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
 
-    public ReplicationDestination withBucket(String bucket) {
+    public ReplicationDestination withBucket(CharSequence bucket) {
         this.bucket = bucket;
         return this;
     }
@@ -171,7 +171,7 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("StorageClass")
-    public String getStorageClass() {
+    public CharSequence getStorageClass() {
         return storageClass;
     }
 
@@ -180,11 +180,11 @@ public class ReplicationDestination {
      * 
      */
     @JsonProperty("StorageClass")
-    public void setStorageClass(String storageClass) {
+    public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }
 
-    public ReplicationDestination withStorageClass(String storageClass) {
+    public ReplicationDestination withStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
         return this;
     }

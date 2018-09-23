@@ -41,7 +41,7 @@ public class Subscription {
      */
     @JsonProperty("Endpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-endpoint")
-    private String endpoint;
+    private CharSequence endpoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy
      * 
@@ -55,7 +55,7 @@ public class Subscription {
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery
      * 
@@ -69,14 +69,14 @@ public class Subscription {
      */
     @JsonProperty("Region")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region")
-    private String region;
+    private CharSequence region;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#topicarn
      * 
      */
     @JsonProperty("TopicArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#topicarn")
-    private String topicArn;
+    private CharSequence topicArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy
@@ -106,7 +106,7 @@ public class Subscription {
      * 
      */
     @JsonProperty("Endpoint")
-    public String getEndpoint() {
+    public CharSequence getEndpoint() {
         return endpoint;
     }
 
@@ -115,11 +115,11 @@ public class Subscription {
      * 
      */
     @JsonProperty("Endpoint")
-    public void setEndpoint(String endpoint) {
+    public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }
 
-    public Subscription withEndpoint(String endpoint) {
+    public Subscription withEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
         return this;
     }
@@ -152,7 +152,7 @@ public class Subscription {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -161,11 +161,11 @@ public class Subscription {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public Subscription withProtocol(String protocol) {
+    public Subscription withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -198,7 +198,7 @@ public class Subscription {
      * 
      */
     @JsonProperty("Region")
-    public String getRegion() {
+    public CharSequence getRegion() {
         return region;
     }
 
@@ -207,11 +207,11 @@ public class Subscription {
      * 
      */
     @JsonProperty("Region")
-    public void setRegion(String region) {
+    public void setRegion(CharSequence region) {
         this.region = region;
     }
 
-    public Subscription withRegion(String region) {
+    public Subscription withRegion(CharSequence region) {
         this.region = region;
         return this;
     }
@@ -221,7 +221,7 @@ public class Subscription {
      * 
      */
     @JsonProperty("TopicArn")
-    public String getTopicArn() {
+    public CharSequence getTopicArn() {
         return topicArn;
     }
 
@@ -230,11 +230,11 @@ public class Subscription {
      * 
      */
     @JsonProperty("TopicArn")
-    public void setTopicArn(String topicArn) {
+    public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }
 
-    public Subscription withTopicArn(String topicArn) {
+    public Subscription withTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
         return this;
     }

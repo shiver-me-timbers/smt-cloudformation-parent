@@ -30,28 +30,28 @@ public class Host {
      */
     @JsonProperty("AutoPlacement")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-autoplacement")
-    private String autoPlacement;
+    private CharSequence autoPlacement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
      * 
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-autoplacement
      * 
      */
     @JsonProperty("AutoPlacement")
-    public String getAutoPlacement() {
+    public CharSequence getAutoPlacement() {
         return autoPlacement;
     }
 
@@ -60,11 +60,11 @@ public class Host {
      * 
      */
     @JsonProperty("AutoPlacement")
-    public void setAutoPlacement(String autoPlacement) {
+    public void setAutoPlacement(CharSequence autoPlacement) {
         this.autoPlacement = autoPlacement;
     }
 
-    public Host withAutoPlacement(String autoPlacement) {
+    public Host withAutoPlacement(CharSequence autoPlacement) {
         this.autoPlacement = autoPlacement;
         return this;
     }
@@ -74,7 +74,7 @@ public class Host {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -83,11 +83,11 @@ public class Host {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Host withAvailabilityZone(String availabilityZone) {
+    public Host withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -97,7 +97,7 @@ public class Host {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -106,11 +106,11 @@ public class Host {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public Host withInstanceType(String instanceType) {
+    public Host withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }

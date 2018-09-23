@@ -30,28 +30,28 @@ public class VolumeAttachment {
      */
     @JsonProperty("Device")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-device")
-    private String device;
+    private CharSequence device;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-volumeid
      * 
      */
     @JsonProperty("VolumeId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-volumeid")
-    private String volumeId;
+    private CharSequence volumeId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-device
      * 
      */
     @JsonProperty("Device")
-    public String getDevice() {
+    public CharSequence getDevice() {
         return device;
     }
 
@@ -60,11 +60,11 @@ public class VolumeAttachment {
      * 
      */
     @JsonProperty("Device")
-    public void setDevice(String device) {
+    public void setDevice(CharSequence device) {
         this.device = device;
     }
 
-    public VolumeAttachment withDevice(String device) {
+    public VolumeAttachment withDevice(CharSequence device) {
         this.device = device;
         return this;
     }
@@ -74,7 +74,7 @@ public class VolumeAttachment {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -83,11 +83,11 @@ public class VolumeAttachment {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public VolumeAttachment withInstanceId(String instanceId) {
+    public VolumeAttachment withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -97,7 +97,7 @@ public class VolumeAttachment {
      * 
      */
     @JsonProperty("VolumeId")
-    public String getVolumeId() {
+    public CharSequence getVolumeId() {
         return volumeId;
     }
 
@@ -106,11 +106,11 @@ public class VolumeAttachment {
      * 
      */
     @JsonProperty("VolumeId")
-    public void setVolumeId(String volumeId) {
+    public void setVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
     }
 
-    public VolumeAttachment withVolumeId(String volumeId) {
+    public VolumeAttachment withVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
         return this;
     }

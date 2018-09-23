@@ -30,28 +30,28 @@ public class RoutingStrategy {
      */
     @JsonProperty("FleetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid")
-    private String fleetId;
+    private CharSequence fleetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message
      * 
      */
     @JsonProperty("Message")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message")
-    private String message;
+    private CharSequence message;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid
      * 
      */
     @JsonProperty("FleetId")
-    public String getFleetId() {
+    public CharSequence getFleetId() {
         return fleetId;
     }
 
@@ -60,11 +60,11 @@ public class RoutingStrategy {
      * 
      */
     @JsonProperty("FleetId")
-    public void setFleetId(String fleetId) {
+    public void setFleetId(CharSequence fleetId) {
         this.fleetId = fleetId;
     }
 
-    public RoutingStrategy withFleetId(String fleetId) {
+    public RoutingStrategy withFleetId(CharSequence fleetId) {
         this.fleetId = fleetId;
         return this;
     }
@@ -74,7 +74,7 @@ public class RoutingStrategy {
      * 
      */
     @JsonProperty("Message")
-    public String getMessage() {
+    public CharSequence getMessage() {
         return message;
     }
 
@@ -83,11 +83,11 @@ public class RoutingStrategy {
      * 
      */
     @JsonProperty("Message")
-    public void setMessage(String message) {
+    public void setMessage(CharSequence message) {
         this.message = message;
     }
 
-    public RoutingStrategy withMessage(String message) {
+    public RoutingStrategy withMessage(CharSequence message) {
         this.message = message;
         return this;
     }
@@ -97,7 +97,7 @@ public class RoutingStrategy {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -106,11 +106,11 @@ public class RoutingStrategy {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public RoutingStrategy withType(String type) {
+    public RoutingStrategy withType(CharSequence type) {
         this.type = type;
         return this;
     }

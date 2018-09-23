@@ -36,7 +36,7 @@ public class Target {
      */
     @JsonProperty("Arn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn")
-    private String arn;
+    private CharSequence arn;
     /**
      * EcsParameters
      * <p>
@@ -52,21 +52,21 @@ public class Target {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input
      * 
      */
     @JsonProperty("Input")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input")
-    private String input;
+    private CharSequence input;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath
      * 
      */
     @JsonProperty("InputPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath")
-    private String inputPath;
+    private CharSequence inputPath;
     /**
      * InputTransformer
      * <p>
@@ -91,7 +91,7 @@ public class Target {
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * RunCommandParameters
      * <p>
@@ -107,7 +107,7 @@ public class Target {
      * 
      */
     @JsonProperty("Arn")
-    public String getArn() {
+    public CharSequence getArn() {
         return arn;
     }
 
@@ -116,11 +116,11 @@ public class Target {
      * 
      */
     @JsonProperty("Arn")
-    public void setArn(String arn) {
+    public void setArn(CharSequence arn) {
         this.arn = arn;
     }
 
-    public Target withArn(String arn) {
+    public Target withArn(CharSequence arn) {
         this.arn = arn;
         return this;
     }
@@ -157,7 +157,7 @@ public class Target {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -166,11 +166,11 @@ public class Target {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public Target withId(String id) {
+    public Target withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -180,7 +180,7 @@ public class Target {
      * 
      */
     @JsonProperty("Input")
-    public String getInput() {
+    public CharSequence getInput() {
         return input;
     }
 
@@ -189,11 +189,11 @@ public class Target {
      * 
      */
     @JsonProperty("Input")
-    public void setInput(String input) {
+    public void setInput(CharSequence input) {
         this.input = input;
     }
 
-    public Target withInput(String input) {
+    public Target withInput(CharSequence input) {
         this.input = input;
         return this;
     }
@@ -203,7 +203,7 @@ public class Target {
      * 
      */
     @JsonProperty("InputPath")
-    public String getInputPath() {
+    public CharSequence getInputPath() {
         return inputPath;
     }
 
@@ -212,11 +212,11 @@ public class Target {
      * 
      */
     @JsonProperty("InputPath")
-    public void setInputPath(String inputPath) {
+    public void setInputPath(CharSequence inputPath) {
         this.inputPath = inputPath;
     }
 
-    public Target withInputPath(String inputPath) {
+    public Target withInputPath(CharSequence inputPath) {
         this.inputPath = inputPath;
         return this;
     }
@@ -280,7 +280,7 @@ public class Target {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -289,11 +289,11 @@ public class Target {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public Target withRoleArn(String roleArn) {
+    public Target withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

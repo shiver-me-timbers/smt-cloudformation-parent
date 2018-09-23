@@ -28,14 +28,14 @@ public class PlacementType {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html#cfn-elasticmapreduce-cluster-placementtype-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html#cfn-elasticmapreduce-cluster-placementtype-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -44,11 +44,11 @@ public class PlacementType {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public PlacementType withAvailabilityZone(String availabilityZone) {
+    public PlacementType withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }

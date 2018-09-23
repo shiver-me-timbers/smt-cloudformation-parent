@@ -36,7 +36,7 @@ public class Key {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enablekeyrotation
      * 
@@ -64,7 +64,7 @@ public class Key {
      */
     @JsonProperty("KeyUsage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keyusage")
-    private String keyUsage;
+    private CharSequence keyUsage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
@@ -78,7 +78,7 @@ public class Key {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -87,11 +87,11 @@ public class Key {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Key withDescription(String description) {
+    public Key withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -170,7 +170,7 @@ public class Key {
      * 
      */
     @JsonProperty("KeyUsage")
-    public String getKeyUsage() {
+    public CharSequence getKeyUsage() {
         return keyUsage;
     }
 
@@ -179,11 +179,11 @@ public class Key {
      * 
      */
     @JsonProperty("KeyUsage")
-    public void setKeyUsage(String keyUsage) {
+    public void setKeyUsage(CharSequence keyUsage) {
         this.keyUsage = keyUsage;
     }
 
-    public Key withKeyUsage(String keyUsage) {
+    public Key withKeyUsage(CharSequence keyUsage) {
         this.keyUsage = keyUsage;
         return this;
     }

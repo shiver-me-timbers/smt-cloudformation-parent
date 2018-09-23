@@ -53,28 +53,28 @@ public class AutoScalingGroup {
      */
     @JsonProperty("AutoScalingGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-autoscalinggroupname")
-    private String autoScalingGroupName;
+    private CharSequence autoScalingGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-availabilityzones
      * 
      */
     @JsonProperty("AvailabilityZones")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-availabilityzones")
-    private List<String> availabilityZones = new ArrayList<String>();
+    private List<CharSequence> availabilityZones = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown
      * 
      */
     @JsonProperty("Cooldown")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown")
-    private String cooldown;
+    private CharSequence cooldown;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-desiredcapacity
      * 
      */
     @JsonProperty("DesiredCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-desiredcapacity")
-    private String desiredCapacity;
+    private CharSequence desiredCapacity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthcheckgraceperiod
      * 
@@ -88,21 +88,21 @@ public class AutoScalingGroup {
      */
     @JsonProperty("HealthCheckType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthchecktype")
-    private String healthCheckType;
+    private CharSequence healthCheckType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname
      * 
      */
     @JsonProperty("LaunchConfigurationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname")
-    private String launchConfigurationName;
+    private CharSequence launchConfigurationName;
     /**
      * LaunchTemplateSpecification
      * <p>
@@ -125,14 +125,14 @@ public class AutoScalingGroup {
      */
     @JsonProperty("LoadBalancerNames")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-loadbalancernames")
-    private List<String> loadBalancerNames = new ArrayList<String>();
+    private List<CharSequence> loadBalancerNames = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize
      * 
      */
     @JsonProperty("MaxSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize")
-    private String maxSize;
+    private CharSequence maxSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-metricscollection
      * 
@@ -146,7 +146,7 @@ public class AutoScalingGroup {
      */
     @JsonProperty("MinSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize")
-    private String minSize;
+    private CharSequence minSize;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
@@ -160,14 +160,14 @@ public class AutoScalingGroup {
      */
     @JsonProperty("PlacementGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-placementgroup")
-    private String placementGroup;
+    private CharSequence placementGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-servicelinkedrolearn
      * 
      */
     @JsonProperty("ServiceLinkedRoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-servicelinkedrolearn")
-    private String serviceLinkedRoleARN;
+    private CharSequence serviceLinkedRoleARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-tags
      * 
@@ -182,7 +182,7 @@ public class AutoScalingGroup {
     @JsonProperty("TargetGroupARNs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-targetgrouparns")
-    private Set<String> targetGroupARNs = new LinkedHashSet<String>();
+    private Set<CharSequence> targetGroupARNs = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-termpolicy
      * 
@@ -190,21 +190,21 @@ public class AutoScalingGroup {
     @JsonProperty("TerminationPolicies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-termpolicy")
-    private Set<String> terminationPolicies = new LinkedHashSet<String>();
+    private Set<CharSequence> terminationPolicies = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-vpczoneidentifier
      * 
      */
     @JsonProperty("VPCZoneIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-vpczoneidentifier")
-    private List<String> vPCZoneIdentifier = new ArrayList<String>();
+    private List<CharSequence> vPCZoneIdentifier = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-autoscalinggroupname
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public String getAutoScalingGroupName() {
+    public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
 
@@ -213,11 +213,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public void setAutoScalingGroupName(String autoScalingGroupName) {
+    public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
 
-    public AutoScalingGroup withAutoScalingGroupName(String autoScalingGroupName) {
+    public AutoScalingGroup withAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
         return this;
     }
@@ -227,7 +227,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public List<String> getAvailabilityZones() {
+    public List<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
 
@@ -236,11 +236,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public void setAvailabilityZones(List<String> availabilityZones) {
+    public void setAvailabilityZones(List<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
 
-    public AutoScalingGroup withAvailabilityZones(List<String> availabilityZones) {
+    public AutoScalingGroup withAvailabilityZones(List<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
         return this;
     }
@@ -250,7 +250,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("Cooldown")
-    public String getCooldown() {
+    public CharSequence getCooldown() {
         return cooldown;
     }
 
@@ -259,11 +259,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("Cooldown")
-    public void setCooldown(String cooldown) {
+    public void setCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
     }
 
-    public AutoScalingGroup withCooldown(String cooldown) {
+    public AutoScalingGroup withCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
         return this;
     }
@@ -273,7 +273,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("DesiredCapacity")
-    public String getDesiredCapacity() {
+    public CharSequence getDesiredCapacity() {
         return desiredCapacity;
     }
 
@@ -282,11 +282,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("DesiredCapacity")
-    public void setDesiredCapacity(String desiredCapacity) {
+    public void setDesiredCapacity(CharSequence desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
     }
 
-    public AutoScalingGroup withDesiredCapacity(String desiredCapacity) {
+    public AutoScalingGroup withDesiredCapacity(CharSequence desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
         return this;
     }
@@ -319,7 +319,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("HealthCheckType")
-    public String getHealthCheckType() {
+    public CharSequence getHealthCheckType() {
         return healthCheckType;
     }
 
@@ -328,11 +328,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("HealthCheckType")
-    public void setHealthCheckType(String healthCheckType) {
+    public void setHealthCheckType(CharSequence healthCheckType) {
         this.healthCheckType = healthCheckType;
     }
 
-    public AutoScalingGroup withHealthCheckType(String healthCheckType) {
+    public AutoScalingGroup withHealthCheckType(CharSequence healthCheckType) {
         this.healthCheckType = healthCheckType;
         return this;
     }
@@ -342,7 +342,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -351,11 +351,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public AutoScalingGroup withInstanceId(String instanceId) {
+    public AutoScalingGroup withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -365,7 +365,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("LaunchConfigurationName")
-    public String getLaunchConfigurationName() {
+    public CharSequence getLaunchConfigurationName() {
         return launchConfigurationName;
     }
 
@@ -374,11 +374,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("LaunchConfigurationName")
-    public void setLaunchConfigurationName(String launchConfigurationName) {
+    public void setLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
     }
 
-    public AutoScalingGroup withLaunchConfigurationName(String launchConfigurationName) {
+    public AutoScalingGroup withLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
         return this;
     }
@@ -438,7 +438,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("LoadBalancerNames")
-    public List<String> getLoadBalancerNames() {
+    public List<CharSequence> getLoadBalancerNames() {
         return loadBalancerNames;
     }
 
@@ -447,11 +447,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("LoadBalancerNames")
-    public void setLoadBalancerNames(List<String> loadBalancerNames) {
+    public void setLoadBalancerNames(List<CharSequence> loadBalancerNames) {
         this.loadBalancerNames = loadBalancerNames;
     }
 
-    public AutoScalingGroup withLoadBalancerNames(List<String> loadBalancerNames) {
+    public AutoScalingGroup withLoadBalancerNames(List<CharSequence> loadBalancerNames) {
         this.loadBalancerNames = loadBalancerNames;
         return this;
     }
@@ -461,7 +461,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("MaxSize")
-    public String getMaxSize() {
+    public CharSequence getMaxSize() {
         return maxSize;
     }
 
@@ -470,11 +470,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("MaxSize")
-    public void setMaxSize(String maxSize) {
+    public void setMaxSize(CharSequence maxSize) {
         this.maxSize = maxSize;
     }
 
-    public AutoScalingGroup withMaxSize(String maxSize) {
+    public AutoScalingGroup withMaxSize(CharSequence maxSize) {
         this.maxSize = maxSize;
         return this;
     }
@@ -507,7 +507,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("MinSize")
-    public String getMinSize() {
+    public CharSequence getMinSize() {
         return minSize;
     }
 
@@ -516,11 +516,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("MinSize")
-    public void setMinSize(String minSize) {
+    public void setMinSize(CharSequence minSize) {
         this.minSize = minSize;
     }
 
-    public AutoScalingGroup withMinSize(String minSize) {
+    public AutoScalingGroup withMinSize(CharSequence minSize) {
         this.minSize = minSize;
         return this;
     }
@@ -553,7 +553,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("PlacementGroup")
-    public String getPlacementGroup() {
+    public CharSequence getPlacementGroup() {
         return placementGroup;
     }
 
@@ -562,11 +562,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("PlacementGroup")
-    public void setPlacementGroup(String placementGroup) {
+    public void setPlacementGroup(CharSequence placementGroup) {
         this.placementGroup = placementGroup;
     }
 
-    public AutoScalingGroup withPlacementGroup(String placementGroup) {
+    public AutoScalingGroup withPlacementGroup(CharSequence placementGroup) {
         this.placementGroup = placementGroup;
         return this;
     }
@@ -576,7 +576,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("ServiceLinkedRoleARN")
-    public String getServiceLinkedRoleARN() {
+    public CharSequence getServiceLinkedRoleARN() {
         return serviceLinkedRoleARN;
     }
 
@@ -585,11 +585,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("ServiceLinkedRoleARN")
-    public void setServiceLinkedRoleARN(String serviceLinkedRoleARN) {
+    public void setServiceLinkedRoleARN(CharSequence serviceLinkedRoleARN) {
         this.serviceLinkedRoleARN = serviceLinkedRoleARN;
     }
 
-    public AutoScalingGroup withServiceLinkedRoleARN(String serviceLinkedRoleARN) {
+    public AutoScalingGroup withServiceLinkedRoleARN(CharSequence serviceLinkedRoleARN) {
         this.serviceLinkedRoleARN = serviceLinkedRoleARN;
         return this;
     }
@@ -622,7 +622,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("TargetGroupARNs")
-    public Set<String> getTargetGroupARNs() {
+    public Set<CharSequence> getTargetGroupARNs() {
         return targetGroupARNs;
     }
 
@@ -631,11 +631,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("TargetGroupARNs")
-    public void setTargetGroupARNs(Set<String> targetGroupARNs) {
+    public void setTargetGroupARNs(Set<CharSequence> targetGroupARNs) {
         this.targetGroupARNs = targetGroupARNs;
     }
 
-    public AutoScalingGroup withTargetGroupARNs(Set<String> targetGroupARNs) {
+    public AutoScalingGroup withTargetGroupARNs(Set<CharSequence> targetGroupARNs) {
         this.targetGroupARNs = targetGroupARNs;
         return this;
     }
@@ -645,7 +645,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("TerminationPolicies")
-    public Set<String> getTerminationPolicies() {
+    public Set<CharSequence> getTerminationPolicies() {
         return terminationPolicies;
     }
 
@@ -654,11 +654,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("TerminationPolicies")
-    public void setTerminationPolicies(Set<String> terminationPolicies) {
+    public void setTerminationPolicies(Set<CharSequence> terminationPolicies) {
         this.terminationPolicies = terminationPolicies;
     }
 
-    public AutoScalingGroup withTerminationPolicies(Set<String> terminationPolicies) {
+    public AutoScalingGroup withTerminationPolicies(Set<CharSequence> terminationPolicies) {
         this.terminationPolicies = terminationPolicies;
         return this;
     }
@@ -668,7 +668,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("VPCZoneIdentifier")
-    public List<String> getVPCZoneIdentifier() {
+    public List<CharSequence> getVPCZoneIdentifier() {
         return vPCZoneIdentifier;
     }
 
@@ -677,11 +677,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonProperty("VPCZoneIdentifier")
-    public void setVPCZoneIdentifier(List<String> vPCZoneIdentifier) {
+    public void setVPCZoneIdentifier(List<CharSequence> vPCZoneIdentifier) {
         this.vPCZoneIdentifier = vPCZoneIdentifier;
     }
 
-    public AutoScalingGroup withVPCZoneIdentifier(List<String> vPCZoneIdentifier) {
+    public AutoScalingGroup withVPCZoneIdentifier(List<CharSequence> vPCZoneIdentifier) {
         this.vPCZoneIdentifier = vPCZoneIdentifier;
         return this;
     }

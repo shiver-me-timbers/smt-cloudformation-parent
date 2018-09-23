@@ -37,7 +37,7 @@ public class IdentityPoolRoleAttachment {
      */
     @JsonProperty("IdentityPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid")
-    private String identityPoolId;
+    private CharSequence identityPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
@@ -74,7 +74,7 @@ public class IdentityPoolRoleAttachment {
      * 
      */
     @JsonProperty("IdentityPoolId")
-    public String getIdentityPoolId() {
+    public CharSequence getIdentityPoolId() {
         return identityPoolId;
     }
 
@@ -83,11 +83,11 @@ public class IdentityPoolRoleAttachment {
      * 
      */
     @JsonProperty("IdentityPoolId")
-    public void setIdentityPoolId(String identityPoolId) {
+    public void setIdentityPoolId(CharSequence identityPoolId) {
         this.identityPoolId = identityPoolId;
     }
 
-    public IdentityPoolRoleAttachment withIdentityPoolId(String identityPoolId) {
+    public IdentityPoolRoleAttachment withIdentityPoolId(CharSequence identityPoolId) {
         this.identityPoolId = identityPoolId;
         return this;
     }

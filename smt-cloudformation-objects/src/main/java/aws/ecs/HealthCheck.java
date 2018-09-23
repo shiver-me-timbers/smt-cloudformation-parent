@@ -36,7 +36,7 @@ public class HealthCheck {
     @JsonProperty("Command")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command")
-    private Set<String> command = new LinkedHashSet<String>();
+    private Set<CharSequence> command = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-interval
      * 
@@ -71,7 +71,7 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Command")
-    public Set<String> getCommand() {
+    public Set<CharSequence> getCommand() {
         return command;
     }
 
@@ -80,11 +80,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Command")
-    public void setCommand(Set<String> command) {
+    public void setCommand(Set<CharSequence> command) {
         this.command = command;
     }
 
-    public HealthCheck withCommand(Set<String> command) {
+    public HealthCheck withCommand(Set<CharSequence> command) {
         this.command = command;
         return this;
     }

@@ -40,35 +40,35 @@ public class PatchBaseline {
      */
     @JsonProperty("OperatingSystem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem")
-    private String operatingSystem;
+    private CharSequence operatingSystem;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatches
      * 
      */
     @JsonProperty("ApprovedPatches")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatches")
-    private List<String> approvedPatches = new ArrayList<String>();
+    private List<CharSequence> approvedPatches = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-patchgroups
      * 
      */
     @JsonProperty("PatchGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-patchgroups")
-    private List<String> patchGroups = new ArrayList<String>();
+    private List<CharSequence> patchGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchescompliancelevel
      * 
      */
     @JsonProperty("ApprovedPatchesComplianceLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchescompliancelevel")
-    private String approvedPatchesComplianceLevel;
+    private CharSequence approvedPatchesComplianceLevel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity
      * 
@@ -107,21 +107,21 @@ public class PatchBaseline {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-rejectedpatches
      * 
      */
     @JsonProperty("RejectedPatches")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-rejectedpatches")
-    private List<String> rejectedPatches = new ArrayList<String>();
+    private List<CharSequence> rejectedPatches = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem
      * 
      */
     @JsonProperty("OperatingSystem")
-    public String getOperatingSystem() {
+    public CharSequence getOperatingSystem() {
         return operatingSystem;
     }
 
@@ -130,11 +130,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("OperatingSystem")
-    public void setOperatingSystem(String operatingSystem) {
+    public void setOperatingSystem(CharSequence operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
 
-    public PatchBaseline withOperatingSystem(String operatingSystem) {
+    public PatchBaseline withOperatingSystem(CharSequence operatingSystem) {
         this.operatingSystem = operatingSystem;
         return this;
     }
@@ -144,7 +144,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("ApprovedPatches")
-    public List<String> getApprovedPatches() {
+    public List<CharSequence> getApprovedPatches() {
         return approvedPatches;
     }
 
@@ -153,11 +153,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("ApprovedPatches")
-    public void setApprovedPatches(List<String> approvedPatches) {
+    public void setApprovedPatches(List<CharSequence> approvedPatches) {
         this.approvedPatches = approvedPatches;
     }
 
-    public PatchBaseline withApprovedPatches(List<String> approvedPatches) {
+    public PatchBaseline withApprovedPatches(List<CharSequence> approvedPatches) {
         this.approvedPatches = approvedPatches;
         return this;
     }
@@ -167,7 +167,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("PatchGroups")
-    public List<String> getPatchGroups() {
+    public List<CharSequence> getPatchGroups() {
         return patchGroups;
     }
 
@@ -176,11 +176,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("PatchGroups")
-    public void setPatchGroups(List<String> patchGroups) {
+    public void setPatchGroups(List<CharSequence> patchGroups) {
         this.patchGroups = patchGroups;
     }
 
-    public PatchBaseline withPatchGroups(List<String> patchGroups) {
+    public PatchBaseline withPatchGroups(List<CharSequence> patchGroups) {
         this.patchGroups = patchGroups;
         return this;
     }
@@ -190,7 +190,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -199,11 +199,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public PatchBaseline withDescription(String description) {
+    public PatchBaseline withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -213,7 +213,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("ApprovedPatchesComplianceLevel")
-    public String getApprovedPatchesComplianceLevel() {
+    public CharSequence getApprovedPatchesComplianceLevel() {
         return approvedPatchesComplianceLevel;
     }
 
@@ -222,11 +222,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("ApprovedPatchesComplianceLevel")
-    public void setApprovedPatchesComplianceLevel(String approvedPatchesComplianceLevel) {
+    public void setApprovedPatchesComplianceLevel(CharSequence approvedPatchesComplianceLevel) {
         this.approvedPatchesComplianceLevel = approvedPatchesComplianceLevel;
     }
 
-    public PatchBaseline withApprovedPatchesComplianceLevel(String approvedPatchesComplianceLevel) {
+    public PatchBaseline withApprovedPatchesComplianceLevel(CharSequence approvedPatchesComplianceLevel) {
         this.approvedPatchesComplianceLevel = approvedPatchesComplianceLevel;
         return this;
     }
@@ -336,7 +336,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -345,11 +345,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public PatchBaseline withName(String name) {
+    public PatchBaseline withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -359,7 +359,7 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("RejectedPatches")
-    public List<String> getRejectedPatches() {
+    public List<CharSequence> getRejectedPatches() {
         return rejectedPatches;
     }
 
@@ -368,11 +368,11 @@ public class PatchBaseline {
      * 
      */
     @JsonProperty("RejectedPatches")
-    public void setRejectedPatches(List<String> rejectedPatches) {
+    public void setRejectedPatches(List<CharSequence> rejectedPatches) {
         this.rejectedPatches = rejectedPatches;
     }
 
-    public PatchBaseline withRejectedPatches(List<String> rejectedPatches) {
+    public PatchBaseline withRejectedPatches(List<CharSequence> rejectedPatches) {
         this.rejectedPatches = rejectedPatches;
         return this;
     }

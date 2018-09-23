@@ -29,21 +29,21 @@ public class ApiStage {
      */
     @JsonProperty("ApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid")
-    private String apiId;
+    private CharSequence apiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage
      * 
      */
     @JsonProperty("Stage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage")
-    private String stage;
+    private CharSequence stage;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
      * 
      */
     @JsonProperty("ApiId")
-    public String getApiId() {
+    public CharSequence getApiId() {
         return apiId;
     }
 
@@ -52,11 +52,11 @@ public class ApiStage {
      * 
      */
     @JsonProperty("ApiId")
-    public void setApiId(String apiId) {
+    public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
 
-    public ApiStage withApiId(String apiId) {
+    public ApiStage withApiId(CharSequence apiId) {
         this.apiId = apiId;
         return this;
     }
@@ -66,7 +66,7 @@ public class ApiStage {
      * 
      */
     @JsonProperty("Stage")
-    public String getStage() {
+    public CharSequence getStage() {
         return stage;
     }
 
@@ -75,11 +75,11 @@ public class ApiStage {
      * 
      */
     @JsonProperty("Stage")
-    public void setStage(String stage) {
+    public void setStage(CharSequence stage) {
         this.stage = stage;
     }
 
-    public ApiStage withStage(String stage) {
+    public ApiStage withStage(CharSequence stage) {
         this.stage = stage;
         return this;
     }

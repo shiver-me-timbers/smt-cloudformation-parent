@@ -4,13 +4,13 @@ import java.util.Map;
 
 public class PrimitiveTypeConverter {
 
-    private final Map<String, String> typeMap;
+    private final Map<String, Map<String, Object>> typeMap;
 
-    public PrimitiveTypeConverter(Map<String, String> typeMap) {
+    public PrimitiveTypeConverter(Map<String, Map<String, Object>> typeMap) {
         this.typeMap = typeMap;
     }
 
-    public String convert(String type) {
+    public Map<String, Object> convert(String type) {
         return typeMap.get(type);
     }
 }

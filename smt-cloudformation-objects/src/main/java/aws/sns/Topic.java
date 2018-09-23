@@ -32,7 +32,7 @@ public class Topic {
      */
     @JsonProperty("DisplayName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname")
-    private String displayName;
+    private CharSequence displayName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
@@ -46,14 +46,14 @@ public class Topic {
      */
     @JsonProperty("TopicName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname")
-    private String topicName;
+    private CharSequence topicName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
      */
     @JsonProperty("DisplayName")
-    public String getDisplayName() {
+    public CharSequence getDisplayName() {
         return displayName;
     }
 
@@ -62,11 +62,11 @@ public class Topic {
      * 
      */
     @JsonProperty("DisplayName")
-    public void setDisplayName(String displayName) {
+    public void setDisplayName(CharSequence displayName) {
         this.displayName = displayName;
     }
 
-    public Topic withDisplayName(String displayName) {
+    public Topic withDisplayName(CharSequence displayName) {
         this.displayName = displayName;
         return this;
     }
@@ -99,7 +99,7 @@ public class Topic {
      * 
      */
     @JsonProperty("TopicName")
-    public String getTopicName() {
+    public CharSequence getTopicName() {
         return topicName;
     }
 
@@ -108,11 +108,11 @@ public class Topic {
      * 
      */
     @JsonProperty("TopicName")
-    public void setTopicName(String topicName) {
+    public void setTopicName(CharSequence topicName) {
         this.topicName = topicName;
     }
 
-    public Topic withTopicName(String topicName) {
+    public Topic withTopicName(CharSequence topicName) {
         this.topicName = topicName;
         return this;
     }

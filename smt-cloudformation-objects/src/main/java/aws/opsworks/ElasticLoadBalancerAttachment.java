@@ -29,21 +29,21 @@ public class ElasticLoadBalancerAttachment {
      */
     @JsonProperty("ElasticLoadBalancerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname")
-    private String elasticLoadBalancerName;
+    private CharSequence elasticLoadBalancerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
      * 
      */
     @JsonProperty("LayerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid")
-    private String layerId;
+    private CharSequence layerId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
      * 
      */
     @JsonProperty("ElasticLoadBalancerName")
-    public String getElasticLoadBalancerName() {
+    public CharSequence getElasticLoadBalancerName() {
         return elasticLoadBalancerName;
     }
 
@@ -52,11 +52,11 @@ public class ElasticLoadBalancerAttachment {
      * 
      */
     @JsonProperty("ElasticLoadBalancerName")
-    public void setElasticLoadBalancerName(String elasticLoadBalancerName) {
+    public void setElasticLoadBalancerName(CharSequence elasticLoadBalancerName) {
         this.elasticLoadBalancerName = elasticLoadBalancerName;
     }
 
-    public ElasticLoadBalancerAttachment withElasticLoadBalancerName(String elasticLoadBalancerName) {
+    public ElasticLoadBalancerAttachment withElasticLoadBalancerName(CharSequence elasticLoadBalancerName) {
         this.elasticLoadBalancerName = elasticLoadBalancerName;
         return this;
     }
@@ -66,7 +66,7 @@ public class ElasticLoadBalancerAttachment {
      * 
      */
     @JsonProperty("LayerId")
-    public String getLayerId() {
+    public CharSequence getLayerId() {
         return layerId;
     }
 
@@ -75,11 +75,11 @@ public class ElasticLoadBalancerAttachment {
      * 
      */
     @JsonProperty("LayerId")
-    public void setLayerId(String layerId) {
+    public void setLayerId(CharSequence layerId) {
         this.layerId = layerId;
     }
 
-    public ElasticLoadBalancerAttachment withLayerId(String layerId) {
+    public ElasticLoadBalancerAttachment withLayerId(CharSequence layerId) {
         this.layerId = layerId;
         return this;
     }

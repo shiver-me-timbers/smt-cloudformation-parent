@@ -32,28 +32,28 @@ public class VpcLink {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-targetarns
      * 
      */
     @JsonProperty("TargetArns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-targetarns")
-    private List<String> targetArns = new ArrayList<String>();
+    private List<CharSequence> targetArns = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html#cfn-apigateway-vpclink-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -62,11 +62,11 @@ public class VpcLink {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public VpcLink withDescription(String description) {
+    public VpcLink withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -76,7 +76,7 @@ public class VpcLink {
      * 
      */
     @JsonProperty("TargetArns")
-    public List<String> getTargetArns() {
+    public List<CharSequence> getTargetArns() {
         return targetArns;
     }
 
@@ -85,11 +85,11 @@ public class VpcLink {
      * 
      */
     @JsonProperty("TargetArns")
-    public void setTargetArns(List<String> targetArns) {
+    public void setTargetArns(List<CharSequence> targetArns) {
         this.targetArns = targetArns;
     }
 
-    public VpcLink withTargetArns(List<String> targetArns) {
+    public VpcLink withTargetArns(List<CharSequence> targetArns) {
         this.targetArns = targetArns;
         return this;
     }
@@ -99,7 +99,7 @@ public class VpcLink {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -108,11 +108,11 @@ public class VpcLink {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public VpcLink withName(String name) {
+    public VpcLink withName(CharSequence name) {
         this.name = name;
         return this;
     }

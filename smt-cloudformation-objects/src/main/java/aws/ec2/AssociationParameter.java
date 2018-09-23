@@ -31,21 +31,21 @@ public class AssociationParameter {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-value")
-    private List<String> value = new ArrayList<String>();
+    private List<CharSequence> value = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -54,11 +54,11 @@ public class AssociationParameter {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public AssociationParameter withKey(String key) {
+    public AssociationParameter withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -68,7 +68,7 @@ public class AssociationParameter {
      * 
      */
     @JsonProperty("Value")
-    public List<String> getValue() {
+    public List<CharSequence> getValue() {
         return value;
     }
 
@@ -77,11 +77,11 @@ public class AssociationParameter {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(List<String> value) {
+    public void setValue(List<CharSequence> value) {
         this.value = value;
     }
 
-    public AssociationParameter withValue(List<String> value) {
+    public AssociationParameter withValue(List<CharSequence> value) {
         this.value = value;
         return this;
     }

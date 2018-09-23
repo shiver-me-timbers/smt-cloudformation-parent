@@ -39,14 +39,14 @@ public class DocumentationPart {
      */
     @JsonProperty("Properties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties")
-    private String properties;
+    private CharSequence properties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
 
     /**
      * Location
@@ -80,7 +80,7 @@ public class DocumentationPart {
      * 
      */
     @JsonProperty("Properties")
-    public String getProperties() {
+    public CharSequence getProperties() {
         return properties;
     }
 
@@ -89,11 +89,11 @@ public class DocumentationPart {
      * 
      */
     @JsonProperty("Properties")
-    public void setProperties(String properties) {
+    public void setProperties(CharSequence properties) {
         this.properties = properties;
     }
 
-    public DocumentationPart withProperties(String properties) {
+    public DocumentationPart withProperties(CharSequence properties) {
         this.properties = properties;
         return this;
     }
@@ -103,7 +103,7 @@ public class DocumentationPart {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -112,11 +112,11 @@ public class DocumentationPart {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public DocumentationPart withRestApiId(String restApiId) {
+    public DocumentationPart withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }

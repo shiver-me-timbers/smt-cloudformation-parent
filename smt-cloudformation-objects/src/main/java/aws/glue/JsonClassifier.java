@@ -29,21 +29,21 @@ public class JsonClassifier {
      */
     @JsonProperty("JsonPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-jsonpath")
-    private String jsonPath;
+    private CharSequence jsonPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-jsonpath
      * 
      */
     @JsonProperty("JsonPath")
-    public String getJsonPath() {
+    public CharSequence getJsonPath() {
         return jsonPath;
     }
 
@@ -52,11 +52,11 @@ public class JsonClassifier {
      * 
      */
     @JsonProperty("JsonPath")
-    public void setJsonPath(String jsonPath) {
+    public void setJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
     }
 
-    public JsonClassifier withJsonPath(String jsonPath) {
+    public JsonClassifier withJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
         return this;
     }
@@ -66,7 +66,7 @@ public class JsonClassifier {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -75,11 +75,11 @@ public class JsonClassifier {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public JsonClassifier withName(String name) {
+    public JsonClassifier withName(CharSequence name) {
         this.name = name;
         return this;
     }

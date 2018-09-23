@@ -52,7 +52,7 @@ public class CustomErrorResponse {
      */
     @JsonProperty("ResponsePagePath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsepagepath")
-    private String responsePagePath;
+    private CharSequence responsePagePath;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsecode
@@ -128,7 +128,7 @@ public class CustomErrorResponse {
      * 
      */
     @JsonProperty("ResponsePagePath")
-    public String getResponsePagePath() {
+    public CharSequence getResponsePagePath() {
         return responsePagePath;
     }
 
@@ -137,11 +137,11 @@ public class CustomErrorResponse {
      * 
      */
     @JsonProperty("ResponsePagePath")
-    public void setResponsePagePath(String responsePagePath) {
+    public void setResponsePagePath(CharSequence responsePagePath) {
         this.responsePagePath = responsePagePath;
     }
 
-    public CustomErrorResponse withResponsePagePath(String responsePagePath) {
+    public CustomErrorResponse withResponsePagePath(CharSequence responsePagePath) {
         this.responsePagePath = responsePagePath;
         return this;
     }

@@ -51,14 +51,14 @@ public class FileSystem {
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
     @JsonProperty("PerformanceMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode")
-    private String performanceMode;
+    private CharSequence performanceMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
      * 
@@ -72,7 +72,7 @@ public class FileSystem {
      */
     @JsonProperty("ThroughputMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode")
-    private String throughputMode;
+    private CharSequence throughputMode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
@@ -125,7 +125,7 @@ public class FileSystem {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -134,11 +134,11 @@ public class FileSystem {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public FileSystem withKmsKeyId(String kmsKeyId) {
+    public FileSystem withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -148,7 +148,7 @@ public class FileSystem {
      * 
      */
     @JsonProperty("PerformanceMode")
-    public String getPerformanceMode() {
+    public CharSequence getPerformanceMode() {
         return performanceMode;
     }
 
@@ -157,11 +157,11 @@ public class FileSystem {
      * 
      */
     @JsonProperty("PerformanceMode")
-    public void setPerformanceMode(String performanceMode) {
+    public void setPerformanceMode(CharSequence performanceMode) {
         this.performanceMode = performanceMode;
     }
 
-    public FileSystem withPerformanceMode(String performanceMode) {
+    public FileSystem withPerformanceMode(CharSequence performanceMode) {
         this.performanceMode = performanceMode;
         return this;
     }
@@ -194,7 +194,7 @@ public class FileSystem {
      * 
      */
     @JsonProperty("ThroughputMode")
-    public String getThroughputMode() {
+    public CharSequence getThroughputMode() {
         return throughputMode;
     }
 
@@ -203,11 +203,11 @@ public class FileSystem {
      * 
      */
     @JsonProperty("ThroughputMode")
-    public void setThroughputMode(String throughputMode) {
+    public void setThroughputMode(CharSequence throughputMode) {
         this.throughputMode = throughputMode;
     }
 
-    public FileSystem withThroughputMode(String throughputMode) {
+    public FileSystem withThroughputMode(CharSequence throughputMode) {
         this.throughputMode = throughputMode;
         return this;
     }

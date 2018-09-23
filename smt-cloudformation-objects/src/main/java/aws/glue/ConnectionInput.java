@@ -35,21 +35,21 @@ public class ConnectionInput {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectiontype
      * 
      */
     @JsonProperty("ConnectionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectiontype")
-    private String connectionType;
+    private CharSequence connectionType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-matchcriteria
      * 
      */
     @JsonProperty("MatchCriteria")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-matchcriteria")
-    private List<String> matchCriteria = new ArrayList<String>();
+    private List<CharSequence> matchCriteria = new ArrayList<CharSequence>();
     /**
      * PhysicalConnectionRequirements
      * <p>
@@ -72,14 +72,14 @@ public class ConnectionInput {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -88,11 +88,11 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ConnectionInput withDescription(String description) {
+    public ConnectionInput withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -102,7 +102,7 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("ConnectionType")
-    public String getConnectionType() {
+    public CharSequence getConnectionType() {
         return connectionType;
     }
 
@@ -111,11 +111,11 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("ConnectionType")
-    public void setConnectionType(String connectionType) {
+    public void setConnectionType(CharSequence connectionType) {
         this.connectionType = connectionType;
     }
 
-    public ConnectionInput withConnectionType(String connectionType) {
+    public ConnectionInput withConnectionType(CharSequence connectionType) {
         this.connectionType = connectionType;
         return this;
     }
@@ -125,7 +125,7 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("MatchCriteria")
-    public List<String> getMatchCriteria() {
+    public List<CharSequence> getMatchCriteria() {
         return matchCriteria;
     }
 
@@ -134,11 +134,11 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("MatchCriteria")
-    public void setMatchCriteria(List<String> matchCriteria) {
+    public void setMatchCriteria(List<CharSequence> matchCriteria) {
         this.matchCriteria = matchCriteria;
     }
 
-    public ConnectionInput withMatchCriteria(List<String> matchCriteria) {
+    public ConnectionInput withMatchCriteria(List<CharSequence> matchCriteria) {
         this.matchCriteria = matchCriteria;
         return this;
     }
@@ -198,7 +198,7 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -207,11 +207,11 @@ public class ConnectionInput {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ConnectionInput withName(String name) {
+    public ConnectionInput withName(CharSequence name) {
         this.name = name;
         return this;
     }

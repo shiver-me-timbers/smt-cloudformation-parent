@@ -39,7 +39,7 @@ public class RevisionLocation {
      */
     @JsonProperty("RevisionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype")
-    private String revisionType;
+    private CharSequence revisionType;
     /**
      * S3Location
      * <p>
@@ -82,7 +82,7 @@ public class RevisionLocation {
      * 
      */
     @JsonProperty("RevisionType")
-    public String getRevisionType() {
+    public CharSequence getRevisionType() {
         return revisionType;
     }
 
@@ -91,11 +91,11 @@ public class RevisionLocation {
      * 
      */
     @JsonProperty("RevisionType")
-    public void setRevisionType(String revisionType) {
+    public void setRevisionType(CharSequence revisionType) {
         this.revisionType = revisionType;
     }
 
-    public RevisionLocation withRevisionType(String revisionType) {
+    public RevisionLocation withRevisionType(CharSequence revisionType) {
         this.revisionType = revisionType;
         return this;
     }

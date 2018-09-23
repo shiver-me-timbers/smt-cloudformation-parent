@@ -42,14 +42,14 @@ public class Broker {
      */
     @JsonProperty("SecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups")
-    private List<String> securityGroups = new ArrayList<String>();
+    private List<CharSequence> securityGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * ConfigurationId
      * <p>
@@ -74,7 +74,7 @@ public class Broker {
      */
     @JsonProperty("HostInstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype")
-    private String hostInstanceType;
+    private CharSequence hostInstanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-autominorversionupgrade
      * 
@@ -104,28 +104,28 @@ public class Broker {
      */
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids")
-    private List<String> subnetIds = new ArrayList<String>();
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-brokername
      * 
      */
     @JsonProperty("BrokerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-brokername")
-    private String brokerName;
+    private CharSequence brokerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-deploymentmode
      * 
      */
     @JsonProperty("DeploymentMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-deploymentmode")
-    private String deploymentMode;
+    private CharSequence deploymentMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-enginetype
      * 
      */
     @JsonProperty("EngineType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-enginetype")
-    private String engineType;
+    private CharSequence engineType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible
      * 
@@ -139,7 +139,7 @@ public class Broker {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public List<String> getSecurityGroups() {
+    public List<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -148,11 +148,11 @@ public class Broker {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(List<String> securityGroups) {
+    public void setSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public Broker withSecurityGroups(List<String> securityGroups) {
+    public Broker withSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -162,7 +162,7 @@ public class Broker {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -171,11 +171,11 @@ public class Broker {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public Broker withEngineVersion(String engineVersion) {
+    public Broker withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -239,7 +239,7 @@ public class Broker {
      * 
      */
     @JsonProperty("HostInstanceType")
-    public String getHostInstanceType() {
+    public CharSequence getHostInstanceType() {
         return hostInstanceType;
     }
 
@@ -248,11 +248,11 @@ public class Broker {
      * 
      */
     @JsonProperty("HostInstanceType")
-    public void setHostInstanceType(String hostInstanceType) {
+    public void setHostInstanceType(CharSequence hostInstanceType) {
         this.hostInstanceType = hostInstanceType;
     }
 
-    public Broker withHostInstanceType(String hostInstanceType) {
+    public Broker withHostInstanceType(CharSequence hostInstanceType) {
         this.hostInstanceType = hostInstanceType;
         return this;
     }
@@ -335,7 +335,7 @@ public class Broker {
      * 
      */
     @JsonProperty("SubnetIds")
-    public List<String> getSubnetIds() {
+    public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -344,11 +344,11 @@ public class Broker {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(List<String> subnetIds) {
+    public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public Broker withSubnetIds(List<String> subnetIds) {
+    public Broker withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }
@@ -358,7 +358,7 @@ public class Broker {
      * 
      */
     @JsonProperty("BrokerName")
-    public String getBrokerName() {
+    public CharSequence getBrokerName() {
         return brokerName;
     }
 
@@ -367,11 +367,11 @@ public class Broker {
      * 
      */
     @JsonProperty("BrokerName")
-    public void setBrokerName(String brokerName) {
+    public void setBrokerName(CharSequence brokerName) {
         this.brokerName = brokerName;
     }
 
-    public Broker withBrokerName(String brokerName) {
+    public Broker withBrokerName(CharSequence brokerName) {
         this.brokerName = brokerName;
         return this;
     }
@@ -381,7 +381,7 @@ public class Broker {
      * 
      */
     @JsonProperty("DeploymentMode")
-    public String getDeploymentMode() {
+    public CharSequence getDeploymentMode() {
         return deploymentMode;
     }
 
@@ -390,11 +390,11 @@ public class Broker {
      * 
      */
     @JsonProperty("DeploymentMode")
-    public void setDeploymentMode(String deploymentMode) {
+    public void setDeploymentMode(CharSequence deploymentMode) {
         this.deploymentMode = deploymentMode;
     }
 
-    public Broker withDeploymentMode(String deploymentMode) {
+    public Broker withDeploymentMode(CharSequence deploymentMode) {
         this.deploymentMode = deploymentMode;
         return this;
     }
@@ -404,7 +404,7 @@ public class Broker {
      * 
      */
     @JsonProperty("EngineType")
-    public String getEngineType() {
+    public CharSequence getEngineType() {
         return engineType;
     }
 
@@ -413,11 +413,11 @@ public class Broker {
      * 
      */
     @JsonProperty("EngineType")
-    public void setEngineType(String engineType) {
+    public void setEngineType(CharSequence engineType) {
         this.engineType = engineType;
     }
 
-    public Broker withEngineType(String engineType) {
+    public Broker withEngineType(CharSequence engineType) {
         this.engineType = engineType;
         return this;
     }

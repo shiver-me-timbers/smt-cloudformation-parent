@@ -32,28 +32,28 @@ public class LaunchTemplateOverrides {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-instancetype
      * 
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-spotprice
      * 
      */
     @JsonProperty("SpotPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-spotprice")
-    private String spotPrice;
+    private CharSequence spotPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-weightedcapacity
      * 
@@ -67,7 +67,7 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -76,11 +76,11 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public LaunchTemplateOverrides withAvailabilityZone(String availabilityZone) {
+    public LaunchTemplateOverrides withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -90,7 +90,7 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -99,11 +99,11 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public LaunchTemplateOverrides withInstanceType(String instanceType) {
+    public LaunchTemplateOverrides withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -113,7 +113,7 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("SpotPrice")
-    public String getSpotPrice() {
+    public CharSequence getSpotPrice() {
         return spotPrice;
     }
 
@@ -122,11 +122,11 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("SpotPrice")
-    public void setSpotPrice(String spotPrice) {
+    public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
 
-    public LaunchTemplateOverrides withSpotPrice(String spotPrice) {
+    public LaunchTemplateOverrides withSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
         return this;
     }
@@ -136,7 +136,7 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -145,11 +145,11 @@ public class LaunchTemplateOverrides {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public LaunchTemplateOverrides withSubnetId(String subnetId) {
+    public LaunchTemplateOverrides withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

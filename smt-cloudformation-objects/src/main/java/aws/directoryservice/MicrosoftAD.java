@@ -41,7 +41,7 @@ public class MicrosoftAD {
      */
     @JsonProperty("Edition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-edition")
-    private String edition;
+    private CharSequence edition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-enablesso
      * 
@@ -55,21 +55,21 @@ public class MicrosoftAD {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-password
      * 
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-password")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-shortname
      * 
      */
     @JsonProperty("ShortName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-shortname")
-    private String shortName;
+    private CharSequence shortName;
     /**
      * VpcSettings
      * <p>
@@ -108,7 +108,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Edition")
-    public String getEdition() {
+    public CharSequence getEdition() {
         return edition;
     }
 
@@ -117,11 +117,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Edition")
-    public void setEdition(String edition) {
+    public void setEdition(CharSequence edition) {
         this.edition = edition;
     }
 
-    public MicrosoftAD withEdition(String edition) {
+    public MicrosoftAD withEdition(CharSequence edition) {
         this.edition = edition;
         return this;
     }
@@ -154,7 +154,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -163,11 +163,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public MicrosoftAD withName(String name) {
+    public MicrosoftAD withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -177,7 +177,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -186,11 +186,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public MicrosoftAD withPassword(String password) {
+    public MicrosoftAD withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -200,7 +200,7 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("ShortName")
-    public String getShortName() {
+    public CharSequence getShortName() {
         return shortName;
     }
 
@@ -209,11 +209,11 @@ public class MicrosoftAD {
      * 
      */
     @JsonProperty("ShortName")
-    public void setShortName(String shortName) {
+    public void setShortName(CharSequence shortName) {
         this.shortName = shortName;
     }
 
-    public MicrosoftAD withShortName(String shortName) {
+    public MicrosoftAD withShortName(CharSequence shortName) {
         this.shortName = shortName;
         return this;
     }

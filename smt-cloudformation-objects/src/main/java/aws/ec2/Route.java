@@ -36,70 +36,70 @@ public class Route {
      */
     @JsonProperty("DestinationCidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock")
-    private String destinationCidrBlock;
+    private CharSequence destinationCidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationipv6cidrblock
      * 
      */
     @JsonProperty("DestinationIpv6CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationipv6cidrblock")
-    private String destinationIpv6CidrBlock;
+    private CharSequence destinationIpv6CidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-egressonlyinternetgatewayid
      * 
      */
     @JsonProperty("EgressOnlyInternetGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-egressonlyinternetgatewayid")
-    private String egressOnlyInternetGatewayId;
+    private CharSequence egressOnlyInternetGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-gatewayid
      * 
      */
     @JsonProperty("GatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-gatewayid")
-    private String gatewayId;
+    private CharSequence gatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-natgatewayid
      * 
      */
     @JsonProperty("NatGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-natgatewayid")
-    private String natGatewayId;
+    private CharSequence natGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-networkinterfaceid
      * 
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-networkinterfaceid")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-routetableid
      * 
      */
     @JsonProperty("RouteTableId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-routetableid")
-    private String routeTableId;
+    private CharSequence routeTableId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid
      * 
      */
     @JsonProperty("VpcPeeringConnectionId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid")
-    private String vpcPeeringConnectionId;
+    private CharSequence vpcPeeringConnectionId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock
      * 
      */
     @JsonProperty("DestinationCidrBlock")
-    public String getDestinationCidrBlock() {
+    public CharSequence getDestinationCidrBlock() {
         return destinationCidrBlock;
     }
 
@@ -108,11 +108,11 @@ public class Route {
      * 
      */
     @JsonProperty("DestinationCidrBlock")
-    public void setDestinationCidrBlock(String destinationCidrBlock) {
+    public void setDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
     }
 
-    public Route withDestinationCidrBlock(String destinationCidrBlock) {
+    public Route withDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
         return this;
     }
@@ -122,7 +122,7 @@ public class Route {
      * 
      */
     @JsonProperty("DestinationIpv6CidrBlock")
-    public String getDestinationIpv6CidrBlock() {
+    public CharSequence getDestinationIpv6CidrBlock() {
         return destinationIpv6CidrBlock;
     }
 
@@ -131,11 +131,11 @@ public class Route {
      * 
      */
     @JsonProperty("DestinationIpv6CidrBlock")
-    public void setDestinationIpv6CidrBlock(String destinationIpv6CidrBlock) {
+    public void setDestinationIpv6CidrBlock(CharSequence destinationIpv6CidrBlock) {
         this.destinationIpv6CidrBlock = destinationIpv6CidrBlock;
     }
 
-    public Route withDestinationIpv6CidrBlock(String destinationIpv6CidrBlock) {
+    public Route withDestinationIpv6CidrBlock(CharSequence destinationIpv6CidrBlock) {
         this.destinationIpv6CidrBlock = destinationIpv6CidrBlock;
         return this;
     }
@@ -145,7 +145,7 @@ public class Route {
      * 
      */
     @JsonProperty("EgressOnlyInternetGatewayId")
-    public String getEgressOnlyInternetGatewayId() {
+    public CharSequence getEgressOnlyInternetGatewayId() {
         return egressOnlyInternetGatewayId;
     }
 
@@ -154,11 +154,11 @@ public class Route {
      * 
      */
     @JsonProperty("EgressOnlyInternetGatewayId")
-    public void setEgressOnlyInternetGatewayId(String egressOnlyInternetGatewayId) {
+    public void setEgressOnlyInternetGatewayId(CharSequence egressOnlyInternetGatewayId) {
         this.egressOnlyInternetGatewayId = egressOnlyInternetGatewayId;
     }
 
-    public Route withEgressOnlyInternetGatewayId(String egressOnlyInternetGatewayId) {
+    public Route withEgressOnlyInternetGatewayId(CharSequence egressOnlyInternetGatewayId) {
         this.egressOnlyInternetGatewayId = egressOnlyInternetGatewayId;
         return this;
     }
@@ -168,7 +168,7 @@ public class Route {
      * 
      */
     @JsonProperty("GatewayId")
-    public String getGatewayId() {
+    public CharSequence getGatewayId() {
         return gatewayId;
     }
 
@@ -177,11 +177,11 @@ public class Route {
      * 
      */
     @JsonProperty("GatewayId")
-    public void setGatewayId(String gatewayId) {
+    public void setGatewayId(CharSequence gatewayId) {
         this.gatewayId = gatewayId;
     }
 
-    public Route withGatewayId(String gatewayId) {
+    public Route withGatewayId(CharSequence gatewayId) {
         this.gatewayId = gatewayId;
         return this;
     }
@@ -191,7 +191,7 @@ public class Route {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -200,11 +200,11 @@ public class Route {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public Route withInstanceId(String instanceId) {
+    public Route withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -214,7 +214,7 @@ public class Route {
      * 
      */
     @JsonProperty("NatGatewayId")
-    public String getNatGatewayId() {
+    public CharSequence getNatGatewayId() {
         return natGatewayId;
     }
 
@@ -223,11 +223,11 @@ public class Route {
      * 
      */
     @JsonProperty("NatGatewayId")
-    public void setNatGatewayId(String natGatewayId) {
+    public void setNatGatewayId(CharSequence natGatewayId) {
         this.natGatewayId = natGatewayId;
     }
 
-    public Route withNatGatewayId(String natGatewayId) {
+    public Route withNatGatewayId(CharSequence natGatewayId) {
         this.natGatewayId = natGatewayId;
         return this;
     }
@@ -237,7 +237,7 @@ public class Route {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -246,11 +246,11 @@ public class Route {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public Route withNetworkInterfaceId(String networkInterfaceId) {
+    public Route withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }
@@ -260,7 +260,7 @@ public class Route {
      * 
      */
     @JsonProperty("RouteTableId")
-    public String getRouteTableId() {
+    public CharSequence getRouteTableId() {
         return routeTableId;
     }
 
@@ -269,11 +269,11 @@ public class Route {
      * 
      */
     @JsonProperty("RouteTableId")
-    public void setRouteTableId(String routeTableId) {
+    public void setRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
     }
 
-    public Route withRouteTableId(String routeTableId) {
+    public Route withRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
         return this;
     }
@@ -283,7 +283,7 @@ public class Route {
      * 
      */
     @JsonProperty("VpcPeeringConnectionId")
-    public String getVpcPeeringConnectionId() {
+    public CharSequence getVpcPeeringConnectionId() {
         return vpcPeeringConnectionId;
     }
 
@@ -292,11 +292,11 @@ public class Route {
      * 
      */
     @JsonProperty("VpcPeeringConnectionId")
-    public void setVpcPeeringConnectionId(String vpcPeeringConnectionId) {
+    public void setVpcPeeringConnectionId(CharSequence vpcPeeringConnectionId) {
         this.vpcPeeringConnectionId = vpcPeeringConnectionId;
     }
 
-    public Route withVpcPeeringConnectionId(String vpcPeeringConnectionId) {
+    public Route withVpcPeeringConnectionId(CharSequence vpcPeeringConnectionId) {
         this.vpcPeeringConnectionId = vpcPeeringConnectionId;
         return this;
     }

@@ -29,21 +29,21 @@ public class AssessmentTarget {
      */
     @JsonProperty("AssessmentTargetName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname")
-    private String assessmentTargetName;
+    private CharSequence assessmentTargetName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn
      * 
      */
     @JsonProperty("ResourceGroupArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn")
-    private String resourceGroupArn;
+    private CharSequence resourceGroupArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname
      * 
      */
     @JsonProperty("AssessmentTargetName")
-    public String getAssessmentTargetName() {
+    public CharSequence getAssessmentTargetName() {
         return assessmentTargetName;
     }
 
@@ -52,11 +52,11 @@ public class AssessmentTarget {
      * 
      */
     @JsonProperty("AssessmentTargetName")
-    public void setAssessmentTargetName(String assessmentTargetName) {
+    public void setAssessmentTargetName(CharSequence assessmentTargetName) {
         this.assessmentTargetName = assessmentTargetName;
     }
 
-    public AssessmentTarget withAssessmentTargetName(String assessmentTargetName) {
+    public AssessmentTarget withAssessmentTargetName(CharSequence assessmentTargetName) {
         this.assessmentTargetName = assessmentTargetName;
         return this;
     }
@@ -66,7 +66,7 @@ public class AssessmentTarget {
      * 
      */
     @JsonProperty("ResourceGroupArn")
-    public String getResourceGroupArn() {
+    public CharSequence getResourceGroupArn() {
         return resourceGroupArn;
     }
 
@@ -75,11 +75,11 @@ public class AssessmentTarget {
      * 
      */
     @JsonProperty("ResourceGroupArn")
-    public void setResourceGroupArn(String resourceGroupArn) {
+    public void setResourceGroupArn(CharSequence resourceGroupArn) {
         this.resourceGroupArn = resourceGroupArn;
     }
 
-    public AssessmentTarget withResourceGroupArn(String resourceGroupArn) {
+    public AssessmentTarget withResourceGroupArn(CharSequence resourceGroupArn) {
         this.resourceGroupArn = resourceGroupArn;
         return this;
     }

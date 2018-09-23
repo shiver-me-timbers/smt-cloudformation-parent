@@ -36,70 +36,70 @@ public class DynamoDBAction {
      */
     @JsonProperty("HashKeyField")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyfield")
-    private String hashKeyField;
+    private CharSequence hashKeyField;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeytype
      * 
      */
     @JsonProperty("HashKeyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeytype")
-    private String hashKeyType;
+    private CharSequence hashKeyType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyvalue
      * 
      */
     @JsonProperty("HashKeyValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyvalue")
-    private String hashKeyValue;
+    private CharSequence hashKeyValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-payloadfield
      * 
      */
     @JsonProperty("PayloadField")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-payloadfield")
-    private String payloadField;
+    private CharSequence payloadField;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyfield
      * 
      */
     @JsonProperty("RangeKeyField")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyfield")
-    private String rangeKeyField;
+    private CharSequence rangeKeyField;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeytype
      * 
      */
     @JsonProperty("RangeKeyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeytype")
-    private String rangeKeyType;
+    private CharSequence rangeKeyType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyvalue
      * 
      */
     @JsonProperty("RangeKeyValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyvalue")
-    private String rangeKeyValue;
+    private CharSequence rangeKeyValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-tablename
      * 
      */
     @JsonProperty("TableName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-tablename")
-    private String tableName;
+    private CharSequence tableName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyfield
      * 
      */
     @JsonProperty("HashKeyField")
-    public String getHashKeyField() {
+    public CharSequence getHashKeyField() {
         return hashKeyField;
     }
 
@@ -108,11 +108,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("HashKeyField")
-    public void setHashKeyField(String hashKeyField) {
+    public void setHashKeyField(CharSequence hashKeyField) {
         this.hashKeyField = hashKeyField;
     }
 
-    public DynamoDBAction withHashKeyField(String hashKeyField) {
+    public DynamoDBAction withHashKeyField(CharSequence hashKeyField) {
         this.hashKeyField = hashKeyField;
         return this;
     }
@@ -122,7 +122,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("HashKeyType")
-    public String getHashKeyType() {
+    public CharSequence getHashKeyType() {
         return hashKeyType;
     }
 
@@ -131,11 +131,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("HashKeyType")
-    public void setHashKeyType(String hashKeyType) {
+    public void setHashKeyType(CharSequence hashKeyType) {
         this.hashKeyType = hashKeyType;
     }
 
-    public DynamoDBAction withHashKeyType(String hashKeyType) {
+    public DynamoDBAction withHashKeyType(CharSequence hashKeyType) {
         this.hashKeyType = hashKeyType;
         return this;
     }
@@ -145,7 +145,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("HashKeyValue")
-    public String getHashKeyValue() {
+    public CharSequence getHashKeyValue() {
         return hashKeyValue;
     }
 
@@ -154,11 +154,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("HashKeyValue")
-    public void setHashKeyValue(String hashKeyValue) {
+    public void setHashKeyValue(CharSequence hashKeyValue) {
         this.hashKeyValue = hashKeyValue;
     }
 
-    public DynamoDBAction withHashKeyValue(String hashKeyValue) {
+    public DynamoDBAction withHashKeyValue(CharSequence hashKeyValue) {
         this.hashKeyValue = hashKeyValue;
         return this;
     }
@@ -168,7 +168,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("PayloadField")
-    public String getPayloadField() {
+    public CharSequence getPayloadField() {
         return payloadField;
     }
 
@@ -177,11 +177,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("PayloadField")
-    public void setPayloadField(String payloadField) {
+    public void setPayloadField(CharSequence payloadField) {
         this.payloadField = payloadField;
     }
 
-    public DynamoDBAction withPayloadField(String payloadField) {
+    public DynamoDBAction withPayloadField(CharSequence payloadField) {
         this.payloadField = payloadField;
         return this;
     }
@@ -191,7 +191,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyField")
-    public String getRangeKeyField() {
+    public CharSequence getRangeKeyField() {
         return rangeKeyField;
     }
 
@@ -200,11 +200,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyField")
-    public void setRangeKeyField(String rangeKeyField) {
+    public void setRangeKeyField(CharSequence rangeKeyField) {
         this.rangeKeyField = rangeKeyField;
     }
 
-    public DynamoDBAction withRangeKeyField(String rangeKeyField) {
+    public DynamoDBAction withRangeKeyField(CharSequence rangeKeyField) {
         this.rangeKeyField = rangeKeyField;
         return this;
     }
@@ -214,7 +214,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyType")
-    public String getRangeKeyType() {
+    public CharSequence getRangeKeyType() {
         return rangeKeyType;
     }
 
@@ -223,11 +223,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyType")
-    public void setRangeKeyType(String rangeKeyType) {
+    public void setRangeKeyType(CharSequence rangeKeyType) {
         this.rangeKeyType = rangeKeyType;
     }
 
-    public DynamoDBAction withRangeKeyType(String rangeKeyType) {
+    public DynamoDBAction withRangeKeyType(CharSequence rangeKeyType) {
         this.rangeKeyType = rangeKeyType;
         return this;
     }
@@ -237,7 +237,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyValue")
-    public String getRangeKeyValue() {
+    public CharSequence getRangeKeyValue() {
         return rangeKeyValue;
     }
 
@@ -246,11 +246,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RangeKeyValue")
-    public void setRangeKeyValue(String rangeKeyValue) {
+    public void setRangeKeyValue(CharSequence rangeKeyValue) {
         this.rangeKeyValue = rangeKeyValue;
     }
 
-    public DynamoDBAction withRangeKeyValue(String rangeKeyValue) {
+    public DynamoDBAction withRangeKeyValue(CharSequence rangeKeyValue) {
         this.rangeKeyValue = rangeKeyValue;
         return this;
     }
@@ -260,7 +260,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -269,11 +269,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public DynamoDBAction withRoleArn(String roleArn) {
+    public DynamoDBAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -283,7 +283,7 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("TableName")
-    public String getTableName() {
+    public CharSequence getTableName() {
         return tableName;
     }
 
@@ -292,11 +292,11 @@ public class DynamoDBAction {
      * 
      */
     @JsonProperty("TableName")
-    public void setTableName(String tableName) {
+    public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
 
-    public DynamoDBAction withTableName(String tableName) {
+    public DynamoDBAction withTableName(CharSequence tableName) {
         this.tableName = tableName;
         return this;
     }

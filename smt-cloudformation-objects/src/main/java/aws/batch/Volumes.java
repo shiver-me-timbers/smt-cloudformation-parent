@@ -38,7 +38,7 @@ public class Volumes {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumes.html#cfn-batch-jobdefinition-volumes-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * VolumesHost
@@ -72,7 +72,7 @@ public class Volumes {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -81,11 +81,11 @@ public class Volumes {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Volumes withName(String name) {
+    public Volumes withName(CharSequence name) {
         this.name = name;
         return this;
     }

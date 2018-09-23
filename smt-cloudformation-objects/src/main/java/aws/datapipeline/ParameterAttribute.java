@@ -29,21 +29,21 @@ public class ParameterAttribute {
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects-attributes.html#cfn-datapipeline-pipeline-parameterobjects-attribtues-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects-attributes.html#cfn-datapipeline-pipeline-parameterobjects-attribtues-stringvalue
      * 
      */
     @JsonProperty("StringValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects-attributes.html#cfn-datapipeline-pipeline-parameterobjects-attribtues-stringvalue")
-    private String stringValue;
+    private CharSequence stringValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects-attributes.html#cfn-datapipeline-pipeline-parameterobjects-attribtues-key
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -52,11 +52,11 @@ public class ParameterAttribute {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public ParameterAttribute withKey(String key) {
+    public ParameterAttribute withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -66,7 +66,7 @@ public class ParameterAttribute {
      * 
      */
     @JsonProperty("StringValue")
-    public String getStringValue() {
+    public CharSequence getStringValue() {
         return stringValue;
     }
 
@@ -75,11 +75,11 @@ public class ParameterAttribute {
      * 
      */
     @JsonProperty("StringValue")
-    public void setStringValue(String stringValue) {
+    public void setStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
     }
 
-    public ParameterAttribute withStringValue(String stringValue) {
+    public ParameterAttribute withStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
         return this;
     }

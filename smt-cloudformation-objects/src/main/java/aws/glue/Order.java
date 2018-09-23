@@ -29,7 +29,7 @@ public class Order {
      */
     @JsonProperty("Column")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-column")
-    private String column;
+    private CharSequence column;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-sortorder
      * 
@@ -43,7 +43,7 @@ public class Order {
      * 
      */
     @JsonProperty("Column")
-    public String getColumn() {
+    public CharSequence getColumn() {
         return column;
     }
 
@@ -52,11 +52,11 @@ public class Order {
      * 
      */
     @JsonProperty("Column")
-    public void setColumn(String column) {
+    public void setColumn(CharSequence column) {
         this.column = column;
     }
 
-    public Order withColumn(String column) {
+    public Order withColumn(CharSequence column) {
         this.column = column;
         return this;
     }

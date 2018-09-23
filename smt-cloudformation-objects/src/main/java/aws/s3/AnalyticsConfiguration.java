@@ -34,14 +34,14 @@ public class AnalyticsConfiguration {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-prefix
      * 
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-prefix")
-    private String prefix;
+    private CharSequence prefix;
     /**
      * StorageClassAnalysis
      * <p>
@@ -65,7 +65,7 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -74,11 +74,11 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public AnalyticsConfiguration withId(String id) {
+    public AnalyticsConfiguration withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -88,7 +88,7 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -97,11 +97,11 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public AnalyticsConfiguration withPrefix(String prefix) {
+    public AnalyticsConfiguration withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }

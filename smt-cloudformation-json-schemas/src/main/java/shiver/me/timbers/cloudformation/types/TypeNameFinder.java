@@ -1,6 +1,5 @@
 package shiver.me.timbers.cloudformation.types;
 
-import shiver.me.timbers.cloudformation.CloudformationType;
 import shiver.me.timbers.cloudformation.PropertyType;
 
 import java.util.Map;

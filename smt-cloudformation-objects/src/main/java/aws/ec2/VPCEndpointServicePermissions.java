@@ -31,21 +31,21 @@ public class VPCEndpointServicePermissions {
      */
     @JsonProperty("AllowedPrincipals")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals")
-    private List<String> allowedPrincipals = new ArrayList<String>();
+    private List<CharSequence> allowedPrincipals = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid
      * 
      */
     @JsonProperty("ServiceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid")
-    private String serviceId;
+    private CharSequence serviceId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals
      * 
      */
     @JsonProperty("AllowedPrincipals")
-    public List<String> getAllowedPrincipals() {
+    public List<CharSequence> getAllowedPrincipals() {
         return allowedPrincipals;
     }
 
@@ -54,11 +54,11 @@ public class VPCEndpointServicePermissions {
      * 
      */
     @JsonProperty("AllowedPrincipals")
-    public void setAllowedPrincipals(List<String> allowedPrincipals) {
+    public void setAllowedPrincipals(List<CharSequence> allowedPrincipals) {
         this.allowedPrincipals = allowedPrincipals;
     }
 
-    public VPCEndpointServicePermissions withAllowedPrincipals(List<String> allowedPrincipals) {
+    public VPCEndpointServicePermissions withAllowedPrincipals(List<CharSequence> allowedPrincipals) {
         this.allowedPrincipals = allowedPrincipals;
         return this;
     }
@@ -68,7 +68,7 @@ public class VPCEndpointServicePermissions {
      * 
      */
     @JsonProperty("ServiceId")
-    public String getServiceId() {
+    public CharSequence getServiceId() {
         return serviceId;
     }
 
@@ -77,11 +77,11 @@ public class VPCEndpointServicePermissions {
      * 
      */
     @JsonProperty("ServiceId")
-    public void setServiceId(String serviceId) {
+    public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }
 
-    public VPCEndpointServicePermissions withServiceId(String serviceId) {
+    public VPCEndpointServicePermissions withServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
         return this;
     }

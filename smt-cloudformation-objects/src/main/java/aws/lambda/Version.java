@@ -30,28 +30,28 @@ public class Version {
      */
     @JsonProperty("CodeSha256")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256")
-    private String codeSha256;
+    private CharSequence codeSha256;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
      * 
      */
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname")
-    private String functionName;
+    private CharSequence functionName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
      * 
      */
     @JsonProperty("CodeSha256")
-    public String getCodeSha256() {
+    public CharSequence getCodeSha256() {
         return codeSha256;
     }
 
@@ -60,11 +60,11 @@ public class Version {
      * 
      */
     @JsonProperty("CodeSha256")
-    public void setCodeSha256(String codeSha256) {
+    public void setCodeSha256(CharSequence codeSha256) {
         this.codeSha256 = codeSha256;
     }
 
-    public Version withCodeSha256(String codeSha256) {
+    public Version withCodeSha256(CharSequence codeSha256) {
         this.codeSha256 = codeSha256;
         return this;
     }
@@ -74,7 +74,7 @@ public class Version {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -83,11 +83,11 @@ public class Version {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Version withDescription(String description) {
+    public Version withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -97,7 +97,7 @@ public class Version {
      * 
      */
     @JsonProperty("FunctionName")
-    public String getFunctionName() {
+    public CharSequence getFunctionName() {
         return functionName;
     }
 
@@ -106,11 +106,11 @@ public class Version {
      * 
      */
     @JsonProperty("FunctionName")
-    public void setFunctionName(String functionName) {
+    public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
 
-    public Version withFunctionName(String functionName) {
+    public Version withFunctionName(CharSequence functionName) {
         this.functionName = functionName;
         return this;
     }

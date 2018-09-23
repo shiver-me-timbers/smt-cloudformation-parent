@@ -31,21 +31,21 @@ public class PatchFilter {
      */
     @JsonProperty("Values")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values")
-    private List<String> values = new ArrayList<String>();
+    private List<CharSequence> values = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-key
      * 
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-key")
-    private String key;
+    private CharSequence key;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values
      * 
      */
     @JsonProperty("Values")
-    public List<String> getValues() {
+    public List<CharSequence> getValues() {
         return values;
     }
 
@@ -54,11 +54,11 @@ public class PatchFilter {
      * 
      */
     @JsonProperty("Values")
-    public void setValues(List<String> values) {
+    public void setValues(List<CharSequence> values) {
         this.values = values;
     }
 
-    public PatchFilter withValues(List<String> values) {
+    public PatchFilter withValues(List<CharSequence> values) {
         this.values = values;
         return this;
     }
@@ -68,7 +68,7 @@ public class PatchFilter {
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -77,11 +77,11 @@ public class PatchFilter {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public PatchFilter withKey(String key) {
+    public PatchFilter withKey(CharSequence key) {
         this.key = key;
         return this;
     }

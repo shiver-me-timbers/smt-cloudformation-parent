@@ -30,28 +30,28 @@ public class NetworkInterfacePermission {
      */
     @JsonProperty("AwsAccountId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid")
-    private String awsAccountId;
+    private CharSequence awsAccountId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid
      * 
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission
      * 
      */
     @JsonProperty("Permission")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission")
-    private String permission;
+    private CharSequence permission;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid
      * 
      */
     @JsonProperty("AwsAccountId")
-    public String getAwsAccountId() {
+    public CharSequence getAwsAccountId() {
         return awsAccountId;
     }
 
@@ -60,11 +60,11 @@ public class NetworkInterfacePermission {
      * 
      */
     @JsonProperty("AwsAccountId")
-    public void setAwsAccountId(String awsAccountId) {
+    public void setAwsAccountId(CharSequence awsAccountId) {
         this.awsAccountId = awsAccountId;
     }
 
-    public NetworkInterfacePermission withAwsAccountId(String awsAccountId) {
+    public NetworkInterfacePermission withAwsAccountId(CharSequence awsAccountId) {
         this.awsAccountId = awsAccountId;
         return this;
     }
@@ -74,7 +74,7 @@ public class NetworkInterfacePermission {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -83,11 +83,11 @@ public class NetworkInterfacePermission {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public NetworkInterfacePermission withNetworkInterfaceId(String networkInterfaceId) {
+    public NetworkInterfacePermission withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }
@@ -97,7 +97,7 @@ public class NetworkInterfacePermission {
      * 
      */
     @JsonProperty("Permission")
-    public String getPermission() {
+    public CharSequence getPermission() {
         return permission;
     }
 
@@ -106,11 +106,11 @@ public class NetworkInterfacePermission {
      * 
      */
     @JsonProperty("Permission")
-    public void setPermission(String permission) {
+    public void setPermission(CharSequence permission) {
         this.permission = permission;
     }
 
-    public NetworkInterfacePermission withPermission(String permission) {
+    public NetworkInterfacePermission withPermission(CharSequence permission) {
         this.permission = permission;
         return this;
     }

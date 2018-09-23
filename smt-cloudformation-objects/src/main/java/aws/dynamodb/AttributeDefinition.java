@@ -29,21 +29,21 @@ public class AttributeDefinition {
      */
     @JsonProperty("AttributeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename")
-    private String attributeName;
+    private CharSequence attributeName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
      * 
      */
     @JsonProperty("AttributeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype")
-    private String attributeType;
+    private CharSequence attributeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
      * 
      */
     @JsonProperty("AttributeName")
-    public String getAttributeName() {
+    public CharSequence getAttributeName() {
         return attributeName;
     }
 
@@ -52,11 +52,11 @@ public class AttributeDefinition {
      * 
      */
     @JsonProperty("AttributeName")
-    public void setAttributeName(String attributeName) {
+    public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
 
-    public AttributeDefinition withAttributeName(String attributeName) {
+    public AttributeDefinition withAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
         return this;
     }
@@ -66,7 +66,7 @@ public class AttributeDefinition {
      * 
      */
     @JsonProperty("AttributeType")
-    public String getAttributeType() {
+    public CharSequence getAttributeType() {
         return attributeType;
     }
 
@@ -75,11 +75,11 @@ public class AttributeDefinition {
      * 
      */
     @JsonProperty("AttributeType")
-    public void setAttributeType(String attributeType) {
+    public void setAttributeType(CharSequence attributeType) {
         this.attributeType = attributeType;
     }
 
-    public AttributeDefinition withAttributeType(String attributeType) {
+    public AttributeDefinition withAttributeType(CharSequence attributeType) {
         this.attributeType = attributeType;
         return this;
     }

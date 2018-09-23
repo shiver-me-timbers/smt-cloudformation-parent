@@ -41,7 +41,7 @@ public class CustomerGateway {
      */
     @JsonProperty("IpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-ipaddress")
-    private String ipAddress;
+    private CharSequence ipAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-tags
      * 
@@ -55,7 +55,7 @@ public class CustomerGateway {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-bgpasn
@@ -85,7 +85,7 @@ public class CustomerGateway {
      * 
      */
     @JsonProperty("IpAddress")
-    public String getIpAddress() {
+    public CharSequence getIpAddress() {
         return ipAddress;
     }
 
@@ -94,11 +94,11 @@ public class CustomerGateway {
      * 
      */
     @JsonProperty("IpAddress")
-    public void setIpAddress(String ipAddress) {
+    public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
 
-    public CustomerGateway withIpAddress(String ipAddress) {
+    public CustomerGateway withIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
         return this;
     }
@@ -131,7 +131,7 @@ public class CustomerGateway {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -140,11 +140,11 @@ public class CustomerGateway {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public CustomerGateway withType(String type) {
+    public CustomerGateway withType(CharSequence type) {
         this.type = type;
         return this;
     }

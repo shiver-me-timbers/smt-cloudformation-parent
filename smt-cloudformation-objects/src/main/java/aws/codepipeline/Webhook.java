@@ -53,28 +53,28 @@ public class Webhook {
      */
     @JsonProperty("Authentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authentication")
-    private String authentication;
+    private CharSequence authentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipeline
      * 
      */
     @JsonProperty("TargetPipeline")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipeline")
-    private String targetPipeline;
+    private CharSequence targetPipeline;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetaction
      * 
      */
     @JsonProperty("TargetAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetaction")
-    private String targetAction;
+    private CharSequence targetAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipelineversion
      * 
@@ -145,7 +145,7 @@ public class Webhook {
      * 
      */
     @JsonProperty("Authentication")
-    public String getAuthentication() {
+    public CharSequence getAuthentication() {
         return authentication;
     }
 
@@ -154,11 +154,11 @@ public class Webhook {
      * 
      */
     @JsonProperty("Authentication")
-    public void setAuthentication(String authentication) {
+    public void setAuthentication(CharSequence authentication) {
         this.authentication = authentication;
     }
 
-    public Webhook withAuthentication(String authentication) {
+    public Webhook withAuthentication(CharSequence authentication) {
         this.authentication = authentication;
         return this;
     }
@@ -168,7 +168,7 @@ public class Webhook {
      * 
      */
     @JsonProperty("TargetPipeline")
-    public String getTargetPipeline() {
+    public CharSequence getTargetPipeline() {
         return targetPipeline;
     }
 
@@ -177,11 +177,11 @@ public class Webhook {
      * 
      */
     @JsonProperty("TargetPipeline")
-    public void setTargetPipeline(String targetPipeline) {
+    public void setTargetPipeline(CharSequence targetPipeline) {
         this.targetPipeline = targetPipeline;
     }
 
-    public Webhook withTargetPipeline(String targetPipeline) {
+    public Webhook withTargetPipeline(CharSequence targetPipeline) {
         this.targetPipeline = targetPipeline;
         return this;
     }
@@ -191,7 +191,7 @@ public class Webhook {
      * 
      */
     @JsonProperty("TargetAction")
-    public String getTargetAction() {
+    public CharSequence getTargetAction() {
         return targetAction;
     }
 
@@ -200,11 +200,11 @@ public class Webhook {
      * 
      */
     @JsonProperty("TargetAction")
-    public void setTargetAction(String targetAction) {
+    public void setTargetAction(CharSequence targetAction) {
         this.targetAction = targetAction;
     }
 
-    public Webhook withTargetAction(String targetAction) {
+    public Webhook withTargetAction(CharSequence targetAction) {
         this.targetAction = targetAction;
         return this;
     }
@@ -214,7 +214,7 @@ public class Webhook {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -223,11 +223,11 @@ public class Webhook {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Webhook withName(String name) {
+    public Webhook withName(CharSequence name) {
         this.name = name;
         return this;
     }

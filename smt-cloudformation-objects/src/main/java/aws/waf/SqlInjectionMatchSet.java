@@ -32,7 +32,7 @@ public class SqlInjectionMatchSet {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples
      * 
@@ -47,7 +47,7 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -56,11 +56,11 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public SqlInjectionMatchSet withName(String name) {
+    public SqlInjectionMatchSet withName(CharSequence name) {
         this.name = name;
         return this;
     }

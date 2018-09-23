@@ -32,7 +32,7 @@ public class DataResource {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html#cfn-cloudtrail-trail-dataresource-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html#cfn-cloudtrail-trail-dataresource-values
      * 
@@ -40,14 +40,14 @@ public class DataResource {
     @JsonProperty("Values")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html#cfn-cloudtrail-trail-dataresource-values")
-    private Set<String> values = new LinkedHashSet<String>();
+    private Set<CharSequence> values = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html#cfn-cloudtrail-trail-dataresource-type
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -56,11 +56,11 @@ public class DataResource {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public DataResource withType(String type) {
+    public DataResource withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -70,7 +70,7 @@ public class DataResource {
      * 
      */
     @JsonProperty("Values")
-    public Set<String> getValues() {
+    public Set<CharSequence> getValues() {
         return values;
     }
 
@@ -79,11 +79,11 @@ public class DataResource {
      * 
      */
     @JsonProperty("Values")
-    public void setValues(Set<String> values) {
+    public void setValues(Set<CharSequence> values) {
         this.values = values;
     }
 
-    public DataResource withValues(Set<String> values) {
+    public DataResource withValues(Set<CharSequence> values) {
         this.values = values;
         return this;
     }

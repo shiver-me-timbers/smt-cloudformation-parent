@@ -30,14 +30,14 @@ public class DynamoDBConfig {
      */
     @JsonProperty("TableName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-tablename")
-    private String tableName;
+    private CharSequence tableName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-awsregion
      * 
      */
     @JsonProperty("AwsRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-awsregion")
-    private String awsRegion;
+    private CharSequence awsRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials
      * 
@@ -51,7 +51,7 @@ public class DynamoDBConfig {
      * 
      */
     @JsonProperty("TableName")
-    public String getTableName() {
+    public CharSequence getTableName() {
         return tableName;
     }
 
@@ -60,11 +60,11 @@ public class DynamoDBConfig {
      * 
      */
     @JsonProperty("TableName")
-    public void setTableName(String tableName) {
+    public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
 
-    public DynamoDBConfig withTableName(String tableName) {
+    public DynamoDBConfig withTableName(CharSequence tableName) {
         this.tableName = tableName;
         return this;
     }
@@ -74,7 +74,7 @@ public class DynamoDBConfig {
      * 
      */
     @JsonProperty("AwsRegion")
-    public String getAwsRegion() {
+    public CharSequence getAwsRegion() {
         return awsRegion;
     }
 
@@ -83,11 +83,11 @@ public class DynamoDBConfig {
      * 
      */
     @JsonProperty("AwsRegion")
-    public void setAwsRegion(String awsRegion) {
+    public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
 
-    public DynamoDBConfig withAwsRegion(String awsRegion) {
+    public DynamoDBConfig withAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
         return this;
     }

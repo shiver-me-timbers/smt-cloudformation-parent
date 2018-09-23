@@ -16,16 +16,16 @@ public class PrimitiveTypeConverterTest {
     @SuppressWarnings("unchecked")
     public void Can_convert_a_primitive_type() {
 
-        final Map<String, String> typeMap = mock(Map.class);
+        final Map<String, Map<String, Object>> typeMap = mock(Map.class);
         final String type = someString();
 
-        final String expected = someString();
+        final Map<String, Object> expected = mock(Map.class);
 
         // Given
         given(typeMap.get(type)).willReturn(expected);
 
         // When
-        final String actual = new PrimitiveTypeConverter(typeMap).convert(type);
+        final Map<String, Object> actual = new PrimitiveTypeConverter(typeMap).convert(type);
 
         // Then
         assertThat(actual, is(expected));

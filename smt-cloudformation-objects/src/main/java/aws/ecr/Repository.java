@@ -39,7 +39,7 @@ public class Repository {
      */
     @JsonProperty("RepositoryName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname")
-    private String repositoryName;
+    private CharSequence repositoryName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
@@ -80,7 +80,7 @@ public class Repository {
      * 
      */
     @JsonProperty("RepositoryName")
-    public String getRepositoryName() {
+    public CharSequence getRepositoryName() {
         return repositoryName;
     }
 
@@ -89,11 +89,11 @@ public class Repository {
      * 
      */
     @JsonProperty("RepositoryName")
-    public void setRepositoryName(String repositoryName) {
+    public void setRepositoryName(CharSequence repositoryName) {
         this.repositoryName = repositoryName;
     }
 
-    public Repository withRepositoryName(String repositoryName) {
+    public Repository withRepositoryName(CharSequence repositoryName) {
         this.repositoryName = repositoryName;
         return this;
     }

@@ -29,21 +29,21 @@ public class ParameterValue {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-stringvalue
      * 
      */
     @JsonProperty("StringValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-stringvalue")
-    private String stringValue;
+    private CharSequence stringValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-id
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -52,11 +52,11 @@ public class ParameterValue {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public ParameterValue withId(String id) {
+    public ParameterValue withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -66,7 +66,7 @@ public class ParameterValue {
      * 
      */
     @JsonProperty("StringValue")
-    public String getStringValue() {
+    public CharSequence getStringValue() {
         return stringValue;
     }
 
@@ -75,11 +75,11 @@ public class ParameterValue {
      * 
      */
     @JsonProperty("StringValue")
-    public void setStringValue(String stringValue) {
+    public void setStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
     }
 
-    public ParameterValue withStringValue(String stringValue) {
+    public ParameterValue withStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
         return this;
     }

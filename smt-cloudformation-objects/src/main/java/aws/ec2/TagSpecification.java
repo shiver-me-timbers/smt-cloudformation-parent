@@ -32,7 +32,7 @@ public class TagSpecification {
      */
     @JsonProperty("ResourceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-tagspecification.html#cfn-ec2-launchtemplate-tagspecification-resourcetype")
-    private String resourceType;
+    private CharSequence resourceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-tagspecification.html#cfn-ec2-launchtemplate-tagspecification-tags
      * 
@@ -46,7 +46,7 @@ public class TagSpecification {
      * 
      */
     @JsonProperty("ResourceType")
-    public String getResourceType() {
+    public CharSequence getResourceType() {
         return resourceType;
     }
 
@@ -55,11 +55,11 @@ public class TagSpecification {
      * 
      */
     @JsonProperty("ResourceType")
-    public void setResourceType(String resourceType) {
+    public void setResourceType(CharSequence resourceType) {
         this.resourceType = resourceType;
     }
 
-    public TagSpecification withResourceType(String resourceType) {
+    public TagSpecification withResourceType(CharSequence resourceType) {
         this.resourceType = resourceType;
         return this;
     }

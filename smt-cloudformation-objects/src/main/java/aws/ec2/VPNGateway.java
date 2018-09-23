@@ -47,7 +47,7 @@ public class VPNGateway {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-amazonsideasn
@@ -100,7 +100,7 @@ public class VPNGateway {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -109,11 +109,11 @@ public class VPNGateway {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public VPNGateway withType(String type) {
+    public VPNGateway withType(CharSequence type) {
         this.type = type;
         return this;
     }

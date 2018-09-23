@@ -36,7 +36,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-cidrblock")
-    private String cidrBlock;
+    private CharSequence cidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-egress
      * 
@@ -59,14 +59,14 @@ public class NetworkAclEntry {
      */
     @JsonProperty("Ipv6CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock")
-    private String ipv6CidrBlock;
+    private CharSequence ipv6CidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-networkaclid
      * 
      */
     @JsonProperty("NetworkAclId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-networkaclid")
-    private String networkAclId;
+    private CharSequence networkAclId;
     /**
      * PortRange
      * <p>
@@ -89,7 +89,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("RuleAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ruleaction")
-    private String ruleAction;
+    private CharSequence ruleAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-rulenumber
      * 
@@ -103,7 +103,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("CidrBlock")
-    public String getCidrBlock() {
+    public CharSequence getCidrBlock() {
         return cidrBlock;
     }
 
@@ -112,11 +112,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("CidrBlock")
-    public void setCidrBlock(String cidrBlock) {
+    public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
 
-    public NetworkAclEntry withCidrBlock(String cidrBlock) {
+    public NetworkAclEntry withCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
         return this;
     }
@@ -176,7 +176,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public String getIpv6CidrBlock() {
+    public CharSequence getIpv6CidrBlock() {
         return ipv6CidrBlock;
     }
 
@@ -185,11 +185,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public void setIpv6CidrBlock(String ipv6CidrBlock) {
+    public void setIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
     }
 
-    public NetworkAclEntry withIpv6CidrBlock(String ipv6CidrBlock) {
+    public NetworkAclEntry withIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
         return this;
     }
@@ -199,7 +199,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("NetworkAclId")
-    public String getNetworkAclId() {
+    public CharSequence getNetworkAclId() {
         return networkAclId;
     }
 
@@ -208,11 +208,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("NetworkAclId")
-    public void setNetworkAclId(String networkAclId) {
+    public void setNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
     }
 
-    public NetworkAclEntry withNetworkAclId(String networkAclId) {
+    public NetworkAclEntry withNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
         return this;
     }
@@ -272,7 +272,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("RuleAction")
-    public String getRuleAction() {
+    public CharSequence getRuleAction() {
         return ruleAction;
     }
 
@@ -281,11 +281,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonProperty("RuleAction")
-    public void setRuleAction(String ruleAction) {
+    public void setRuleAction(CharSequence ruleAction) {
         this.ruleAction = ruleAction;
     }
 
-    public NetworkAclEntry withRuleAction(String ruleAction) {
+    public NetworkAclEntry withRuleAction(CharSequence ruleAction) {
         this.ruleAction = ruleAction;
         return this;
     }

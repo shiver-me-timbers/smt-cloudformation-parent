@@ -40,7 +40,7 @@ public class AutoRollbackConfiguration {
     @JsonProperty("Events")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events")
-    private Set<String> events = new LinkedHashSet<String>();
+    private Set<CharSequence> events = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled
@@ -70,7 +70,7 @@ public class AutoRollbackConfiguration {
      * 
      */
     @JsonProperty("Events")
-    public Set<String> getEvents() {
+    public Set<CharSequence> getEvents() {
         return events;
     }
 
@@ -79,11 +79,11 @@ public class AutoRollbackConfiguration {
      * 
      */
     @JsonProperty("Events")
-    public void setEvents(Set<String> events) {
+    public void setEvents(Set<CharSequence> events) {
         this.events = events;
     }
 
-    public AutoRollbackConfiguration withEvents(Set<String> events) {
+    public AutoRollbackConfiguration withEvents(Set<CharSequence> events) {
         this.events = events;
         return this;
     }

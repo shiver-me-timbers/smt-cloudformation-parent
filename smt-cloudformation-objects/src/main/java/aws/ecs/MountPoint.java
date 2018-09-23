@@ -30,7 +30,7 @@ public class MountPoint {
      */
     @JsonProperty("ContainerPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-containerpath")
-    private String containerPath;
+    private CharSequence containerPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-readonly
      * 
@@ -44,14 +44,14 @@ public class MountPoint {
      */
     @JsonProperty("SourceVolume")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-sourcevolume")
-    private String sourceVolume;
+    private CharSequence sourceVolume;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-containerpath
      * 
      */
     @JsonProperty("ContainerPath")
-    public String getContainerPath() {
+    public CharSequence getContainerPath() {
         return containerPath;
     }
 
@@ -60,11 +60,11 @@ public class MountPoint {
      * 
      */
     @JsonProperty("ContainerPath")
-    public void setContainerPath(String containerPath) {
+    public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
 
-    public MountPoint withContainerPath(String containerPath) {
+    public MountPoint withContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
         return this;
     }
@@ -97,7 +97,7 @@ public class MountPoint {
      * 
      */
     @JsonProperty("SourceVolume")
-    public String getSourceVolume() {
+    public CharSequence getSourceVolume() {
         return sourceVolume;
     }
 
@@ -106,11 +106,11 @@ public class MountPoint {
      * 
      */
     @JsonProperty("SourceVolume")
-    public void setSourceVolume(String sourceVolume) {
+    public void setSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
     }
 
-    public MountPoint withSourceVolume(String sourceVolume) {
+    public MountPoint withSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
         return this;
     }

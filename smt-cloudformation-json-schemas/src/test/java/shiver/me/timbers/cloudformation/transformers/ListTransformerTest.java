@@ -46,7 +46,7 @@ public class ListTransformerTest {
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
 
         final String itemType = someString();
-        final String primitiveType = someString();
+        final Map<String, Object> primitiveType = mock(Map.class);
 
         final Map<String, Object> actual = new HashMap<>();
 
@@ -61,7 +61,7 @@ public class ListTransformerTest {
         // Then
         assertThat(actual, hasEntry("type", "array"));
         assertThat(actual, not(hasKey("uniqueItems")));
-        assertThat(actual, hasEntry("items", singletonMap("type", primitiveType)));
+        assertThat(actual, hasEntry("items", primitiveType));
     }
 
     @Test
@@ -71,7 +71,7 @@ public class ListTransformerTest {
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
 
         final String itemType = someString();
-        final String primitiveType = someString();
+        final Map<String, Object> primitiveType = mock(Map.class);
 
         final Map<String, Object> actual = new HashMap<>();
 
@@ -86,7 +86,7 @@ public class ListTransformerTest {
         // Then
         assertThat(actual, hasEntry("type", "array"));
         assertThat(actual, hasEntry("uniqueItems", true));
-        assertThat(actual, hasEntry("items", singletonMap("type", primitiveType)));
+        assertThat(actual, hasEntry("items", primitiveType));
     }
 
     @Test

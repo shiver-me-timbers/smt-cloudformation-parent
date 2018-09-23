@@ -29,21 +29,21 @@ public class KinesisStreamSourceConfiguration {
      */
     @JsonProperty("KinesisStreamARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn")
-    private String kinesisStreamARN;
+    private CharSequence kinesisStreamARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn
      * 
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn
      * 
      */
     @JsonProperty("KinesisStreamARN")
-    public String getKinesisStreamARN() {
+    public CharSequence getKinesisStreamARN() {
         return kinesisStreamARN;
     }
 
@@ -52,11 +52,11 @@ public class KinesisStreamSourceConfiguration {
      * 
      */
     @JsonProperty("KinesisStreamARN")
-    public void setKinesisStreamARN(String kinesisStreamARN) {
+    public void setKinesisStreamARN(CharSequence kinesisStreamARN) {
         this.kinesisStreamARN = kinesisStreamARN;
     }
 
-    public KinesisStreamSourceConfiguration withKinesisStreamARN(String kinesisStreamARN) {
+    public KinesisStreamSourceConfiguration withKinesisStreamARN(CharSequence kinesisStreamARN) {
         this.kinesisStreamARN = kinesisStreamARN;
         return this;
     }
@@ -66,7 +66,7 @@ public class KinesisStreamSourceConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -75,11 +75,11 @@ public class KinesisStreamSourceConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public KinesisStreamSourceConfiguration withRoleARN(String roleARN) {
+    public KinesisStreamSourceConfiguration withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }

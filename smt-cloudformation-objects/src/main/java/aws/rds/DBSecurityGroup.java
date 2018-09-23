@@ -45,14 +45,14 @@ public class DBSecurityGroup {
      */
     @JsonProperty("EC2VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid")
-    private String eC2VpcId;
+    private CharSequence eC2VpcId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription
      * 
      */
     @JsonProperty("GroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription")
-    private String groupDescription;
+    private CharSequence groupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags
      * 
@@ -89,7 +89,7 @@ public class DBSecurityGroup {
      * 
      */
     @JsonProperty("EC2VpcId")
-    public String getEC2VpcId() {
+    public CharSequence getEC2VpcId() {
         return eC2VpcId;
     }
 
@@ -98,11 +98,11 @@ public class DBSecurityGroup {
      * 
      */
     @JsonProperty("EC2VpcId")
-    public void setEC2VpcId(String eC2VpcId) {
+    public void setEC2VpcId(CharSequence eC2VpcId) {
         this.eC2VpcId = eC2VpcId;
     }
 
-    public DBSecurityGroup withEC2VpcId(String eC2VpcId) {
+    public DBSecurityGroup withEC2VpcId(CharSequence eC2VpcId) {
         this.eC2VpcId = eC2VpcId;
         return this;
     }
@@ -112,7 +112,7 @@ public class DBSecurityGroup {
      * 
      */
     @JsonProperty("GroupDescription")
-    public String getGroupDescription() {
+    public CharSequence getGroupDescription() {
         return groupDescription;
     }
 
@@ -121,11 +121,11 @@ public class DBSecurityGroup {
      * 
      */
     @JsonProperty("GroupDescription")
-    public void setGroupDescription(String groupDescription) {
+    public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
 
-    public DBSecurityGroup withGroupDescription(String groupDescription) {
+    public DBSecurityGroup withGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
         return this;
     }

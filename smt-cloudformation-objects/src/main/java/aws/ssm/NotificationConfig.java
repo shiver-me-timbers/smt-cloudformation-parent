@@ -32,28 +32,28 @@ public class NotificationConfig {
      */
     @JsonProperty("NotificationArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn")
-    private String notificationArn;
+    private CharSequence notificationArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationtype
      * 
      */
     @JsonProperty("NotificationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationtype")
-    private String notificationType;
+    private CharSequence notificationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents
      * 
      */
     @JsonProperty("NotificationEvents")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents")
-    private List<String> notificationEvents = new ArrayList<String>();
+    private List<CharSequence> notificationEvents = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn
      * 
      */
     @JsonProperty("NotificationArn")
-    public String getNotificationArn() {
+    public CharSequence getNotificationArn() {
         return notificationArn;
     }
 
@@ -62,11 +62,11 @@ public class NotificationConfig {
      * 
      */
     @JsonProperty("NotificationArn")
-    public void setNotificationArn(String notificationArn) {
+    public void setNotificationArn(CharSequence notificationArn) {
         this.notificationArn = notificationArn;
     }
 
-    public NotificationConfig withNotificationArn(String notificationArn) {
+    public NotificationConfig withNotificationArn(CharSequence notificationArn) {
         this.notificationArn = notificationArn;
         return this;
     }
@@ -76,7 +76,7 @@ public class NotificationConfig {
      * 
      */
     @JsonProperty("NotificationType")
-    public String getNotificationType() {
+    public CharSequence getNotificationType() {
         return notificationType;
     }
 
@@ -85,11 +85,11 @@ public class NotificationConfig {
      * 
      */
     @JsonProperty("NotificationType")
-    public void setNotificationType(String notificationType) {
+    public void setNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
     }
 
-    public NotificationConfig withNotificationType(String notificationType) {
+    public NotificationConfig withNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
         return this;
     }
@@ -99,7 +99,7 @@ public class NotificationConfig {
      * 
      */
     @JsonProperty("NotificationEvents")
-    public List<String> getNotificationEvents() {
+    public List<CharSequence> getNotificationEvents() {
         return notificationEvents;
     }
 
@@ -108,11 +108,11 @@ public class NotificationConfig {
      * 
      */
     @JsonProperty("NotificationEvents")
-    public void setNotificationEvents(List<String> notificationEvents) {
+    public void setNotificationEvents(List<CharSequence> notificationEvents) {
         this.notificationEvents = notificationEvents;
     }
 
-    public NotificationConfig withNotificationEvents(List<String> notificationEvents) {
+    public NotificationConfig withNotificationEvents(List<CharSequence> notificationEvents) {
         this.notificationEvents = notificationEvents;
         return this;
     }

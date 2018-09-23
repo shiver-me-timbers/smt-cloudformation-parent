@@ -28,14 +28,14 @@ public class IamInstanceProfileSpecification {
      */
     @JsonProperty("Arn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html#cfn-ec2-spotfleet-iaminstanceprofilespecification-arn")
-    private String arn;
+    private CharSequence arn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html#cfn-ec2-spotfleet-iaminstanceprofilespecification-arn
      * 
      */
     @JsonProperty("Arn")
-    public String getArn() {
+    public CharSequence getArn() {
         return arn;
     }
 
@@ -44,11 +44,11 @@ public class IamInstanceProfileSpecification {
      * 
      */
     @JsonProperty("Arn")
-    public void setArn(String arn) {
+    public void setArn(CharSequence arn) {
         this.arn = arn;
     }
 
-    public IamInstanceProfileSpecification withArn(String arn) {
+    public IamInstanceProfileSpecification withArn(CharSequence arn) {
         this.arn = arn;
         return this;
     }

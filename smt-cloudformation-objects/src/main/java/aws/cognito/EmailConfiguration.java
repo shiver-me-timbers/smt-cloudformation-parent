@@ -29,21 +29,21 @@ public class EmailConfiguration {
      */
     @JsonProperty("ReplyToEmailAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress")
-    private String replyToEmailAddress;
+    private CharSequence replyToEmailAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
     @JsonProperty("SourceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn")
-    private String sourceArn;
+    private CharSequence sourceArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
      * 
      */
     @JsonProperty("ReplyToEmailAddress")
-    public String getReplyToEmailAddress() {
+    public CharSequence getReplyToEmailAddress() {
         return replyToEmailAddress;
     }
 
@@ -52,11 +52,11 @@ public class EmailConfiguration {
      * 
      */
     @JsonProperty("ReplyToEmailAddress")
-    public void setReplyToEmailAddress(String replyToEmailAddress) {
+    public void setReplyToEmailAddress(CharSequence replyToEmailAddress) {
         this.replyToEmailAddress = replyToEmailAddress;
     }
 
-    public EmailConfiguration withReplyToEmailAddress(String replyToEmailAddress) {
+    public EmailConfiguration withReplyToEmailAddress(CharSequence replyToEmailAddress) {
         this.replyToEmailAddress = replyToEmailAddress;
         return this;
     }
@@ -66,7 +66,7 @@ public class EmailConfiguration {
      * 
      */
     @JsonProperty("SourceArn")
-    public String getSourceArn() {
+    public CharSequence getSourceArn() {
         return sourceArn;
     }
 
@@ -75,11 +75,11 @@ public class EmailConfiguration {
      * 
      */
     @JsonProperty("SourceArn")
-    public void setSourceArn(String sourceArn) {
+    public void setSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
     }
 
-    public EmailConfiguration withSourceArn(String sourceArn) {
+    public EmailConfiguration withSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
         return this;
     }

@@ -43,14 +43,14 @@ public class MaintenanceWindowRunCommandParameters {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3keyprefix
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3keyprefix")
-    private String outputS3KeyPrefix;
+    private CharSequence outputS3KeyPrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters
      * 
@@ -64,14 +64,14 @@ public class MaintenanceWindowRunCommandParameters {
      */
     @JsonProperty("DocumentHashType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthashtype")
-    private String documentHashType;
+    private CharSequence documentHashType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-servicerolearn
      * 
      */
     @JsonProperty("ServiceRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-servicerolearn")
-    private String serviceRoleArn;
+    private CharSequence serviceRoleArn;
     /**
      * NotificationConfig
      * <p>
@@ -87,14 +87,14 @@ public class MaintenanceWindowRunCommandParameters {
      */
     @JsonProperty("OutputS3BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3bucketname")
-    private String outputS3BucketName;
+    private CharSequence outputS3BucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthash
      * 
      */
     @JsonProperty("DocumentHash")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthash")
-    private String documentHash;
+    private CharSequence documentHash;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds
@@ -124,7 +124,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -133,11 +133,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public MaintenanceWindowRunCommandParameters withComment(String comment) {
+    public MaintenanceWindowRunCommandParameters withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -147,7 +147,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
-    public String getOutputS3KeyPrefix() {
+    public CharSequence getOutputS3KeyPrefix() {
         return outputS3KeyPrefix;
     }
 
@@ -156,11 +156,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
-    public void setOutputS3KeyPrefix(String outputS3KeyPrefix) {
+    public void setOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
     }
 
-    public MaintenanceWindowRunCommandParameters withOutputS3KeyPrefix(String outputS3KeyPrefix) {
+    public MaintenanceWindowRunCommandParameters withOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
         return this;
     }
@@ -193,7 +193,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("DocumentHashType")
-    public String getDocumentHashType() {
+    public CharSequence getDocumentHashType() {
         return documentHashType;
     }
 
@@ -202,11 +202,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("DocumentHashType")
-    public void setDocumentHashType(String documentHashType) {
+    public void setDocumentHashType(CharSequence documentHashType) {
         this.documentHashType = documentHashType;
     }
 
-    public MaintenanceWindowRunCommandParameters withDocumentHashType(String documentHashType) {
+    public MaintenanceWindowRunCommandParameters withDocumentHashType(CharSequence documentHashType) {
         this.documentHashType = documentHashType;
         return this;
     }
@@ -216,7 +216,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public String getServiceRoleArn() {
+    public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
 
@@ -225,11 +225,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public void setServiceRoleArn(String serviceRoleArn) {
+    public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
 
-    public MaintenanceWindowRunCommandParameters withServiceRoleArn(String serviceRoleArn) {
+    public MaintenanceWindowRunCommandParameters withServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
         return this;
     }
@@ -266,7 +266,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("OutputS3BucketName")
-    public String getOutputS3BucketName() {
+    public CharSequence getOutputS3BucketName() {
         return outputS3BucketName;
     }
 
@@ -275,11 +275,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("OutputS3BucketName")
-    public void setOutputS3BucketName(String outputS3BucketName) {
+    public void setOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
     }
 
-    public MaintenanceWindowRunCommandParameters withOutputS3BucketName(String outputS3BucketName) {
+    public MaintenanceWindowRunCommandParameters withOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
         return this;
     }
@@ -289,7 +289,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("DocumentHash")
-    public String getDocumentHash() {
+    public CharSequence getDocumentHash() {
         return documentHash;
     }
 
@@ -298,11 +298,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonProperty("DocumentHash")
-    public void setDocumentHash(String documentHash) {
+    public void setDocumentHash(CharSequence documentHash) {
         this.documentHash = documentHash;
     }
 
-    public MaintenanceWindowRunCommandParameters withDocumentHash(String documentHash) {
+    public MaintenanceWindowRunCommandParameters withDocumentHash(CharSequence documentHash) {
         this.documentHash = documentHash;
         return this;
     }

@@ -29,7 +29,7 @@ public class TimeToLiveSpecification {
      */
     @JsonProperty("AttributeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename")
-    private String attributeName;
+    private CharSequence attributeName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-enabled
      * 
@@ -43,7 +43,7 @@ public class TimeToLiveSpecification {
      * 
      */
     @JsonProperty("AttributeName")
-    public String getAttributeName() {
+    public CharSequence getAttributeName() {
         return attributeName;
     }
 
@@ -52,11 +52,11 @@ public class TimeToLiveSpecification {
      * 
      */
     @JsonProperty("AttributeName")
-    public void setAttributeName(String attributeName) {
+    public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
 
-    public TimeToLiveSpecification withAttributeName(String attributeName) {
+    public TimeToLiveSpecification withAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
         return this;
     }

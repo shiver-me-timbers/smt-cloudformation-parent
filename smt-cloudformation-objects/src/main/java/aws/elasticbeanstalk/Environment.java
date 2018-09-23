@@ -41,28 +41,28 @@ public class Environment {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-applicationname")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-cnameprefix
      * 
      */
     @JsonProperty("CNAMEPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-cnameprefix")
-    private String cNAMEPrefix;
+    private CharSequence cNAMEPrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-name
      * 
      */
     @JsonProperty("EnvironmentName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-name")
-    private String environmentName;
+    private CharSequence environmentName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings
      * 
@@ -76,14 +76,14 @@ public class Environment {
      */
     @JsonProperty("PlatformArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn")
-    private String platformArn;
+    private CharSequence platformArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-solutionstackname
      * 
      */
     @JsonProperty("SolutionStackName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-solutionstackname")
-    private String solutionStackName;
+    private CharSequence solutionStackName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-elasticbeanstalk-environment-tags
      * 
@@ -97,7 +97,7 @@ public class Environment {
      */
     @JsonProperty("TemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-templatename")
-    private String templateName;
+    private CharSequence templateName;
     /**
      * Tier
      * <p>
@@ -113,14 +113,14 @@ public class Environment {
      */
     @JsonProperty("VersionLabel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel")
-    private String versionLabel;
+    private CharSequence versionLabel;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-applicationname
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -129,11 +129,11 @@ public class Environment {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public Environment withApplicationName(String applicationName) {
+    public Environment withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -143,7 +143,7 @@ public class Environment {
      * 
      */
     @JsonProperty("CNAMEPrefix")
-    public String getCNAMEPrefix() {
+    public CharSequence getCNAMEPrefix() {
         return cNAMEPrefix;
     }
 
@@ -152,11 +152,11 @@ public class Environment {
      * 
      */
     @JsonProperty("CNAMEPrefix")
-    public void setCNAMEPrefix(String cNAMEPrefix) {
+    public void setCNAMEPrefix(CharSequence cNAMEPrefix) {
         this.cNAMEPrefix = cNAMEPrefix;
     }
 
-    public Environment withCNAMEPrefix(String cNAMEPrefix) {
+    public Environment withCNAMEPrefix(CharSequence cNAMEPrefix) {
         this.cNAMEPrefix = cNAMEPrefix;
         return this;
     }
@@ -166,7 +166,7 @@ public class Environment {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -175,11 +175,11 @@ public class Environment {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Environment withDescription(String description) {
+    public Environment withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -189,7 +189,7 @@ public class Environment {
      * 
      */
     @JsonProperty("EnvironmentName")
-    public String getEnvironmentName() {
+    public CharSequence getEnvironmentName() {
         return environmentName;
     }
 
@@ -198,11 +198,11 @@ public class Environment {
      * 
      */
     @JsonProperty("EnvironmentName")
-    public void setEnvironmentName(String environmentName) {
+    public void setEnvironmentName(CharSequence environmentName) {
         this.environmentName = environmentName;
     }
 
-    public Environment withEnvironmentName(String environmentName) {
+    public Environment withEnvironmentName(CharSequence environmentName) {
         this.environmentName = environmentName;
         return this;
     }
@@ -235,7 +235,7 @@ public class Environment {
      * 
      */
     @JsonProperty("PlatformArn")
-    public String getPlatformArn() {
+    public CharSequence getPlatformArn() {
         return platformArn;
     }
 
@@ -244,11 +244,11 @@ public class Environment {
      * 
      */
     @JsonProperty("PlatformArn")
-    public void setPlatformArn(String platformArn) {
+    public void setPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
     }
 
-    public Environment withPlatformArn(String platformArn) {
+    public Environment withPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
         return this;
     }
@@ -258,7 +258,7 @@ public class Environment {
      * 
      */
     @JsonProperty("SolutionStackName")
-    public String getSolutionStackName() {
+    public CharSequence getSolutionStackName() {
         return solutionStackName;
     }
 
@@ -267,11 +267,11 @@ public class Environment {
      * 
      */
     @JsonProperty("SolutionStackName")
-    public void setSolutionStackName(String solutionStackName) {
+    public void setSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
     }
 
-    public Environment withSolutionStackName(String solutionStackName) {
+    public Environment withSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
         return this;
     }
@@ -304,7 +304,7 @@ public class Environment {
      * 
      */
     @JsonProperty("TemplateName")
-    public String getTemplateName() {
+    public CharSequence getTemplateName() {
         return templateName;
     }
 
@@ -313,11 +313,11 @@ public class Environment {
      * 
      */
     @JsonProperty("TemplateName")
-    public void setTemplateName(String templateName) {
+    public void setTemplateName(CharSequence templateName) {
         this.templateName = templateName;
     }
 
-    public Environment withTemplateName(String templateName) {
+    public Environment withTemplateName(CharSequence templateName) {
         this.templateName = templateName;
         return this;
     }
@@ -354,7 +354,7 @@ public class Environment {
      * 
      */
     @JsonProperty("VersionLabel")
-    public String getVersionLabel() {
+    public CharSequence getVersionLabel() {
         return versionLabel;
     }
 
@@ -363,11 +363,11 @@ public class Environment {
      * 
      */
     @JsonProperty("VersionLabel")
-    public void setVersionLabel(String versionLabel) {
+    public void setVersionLabel(CharSequence versionLabel) {
         this.versionLabel = versionLabel;
     }
 
-    public Environment withVersionLabel(String versionLabel) {
+    public Environment withVersionLabel(CharSequence versionLabel) {
         this.versionLabel = versionLabel;
         return this;
     }

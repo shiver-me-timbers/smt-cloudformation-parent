@@ -29,21 +29,21 @@ public class LogConfig {
      */
     @JsonProperty("CloudWatchLogsRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn")
-    private String cloudWatchLogsRoleArn;
+    private CharSequence cloudWatchLogsRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
     @JsonProperty("FieldLogLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel")
-    private String fieldLogLevel;
+    private CharSequence fieldLogLevel;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn
      * 
      */
     @JsonProperty("CloudWatchLogsRoleArn")
-    public String getCloudWatchLogsRoleArn() {
+    public CharSequence getCloudWatchLogsRoleArn() {
         return cloudWatchLogsRoleArn;
     }
 
@@ -52,11 +52,11 @@ public class LogConfig {
      * 
      */
     @JsonProperty("CloudWatchLogsRoleArn")
-    public void setCloudWatchLogsRoleArn(String cloudWatchLogsRoleArn) {
+    public void setCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
     }
 
-    public LogConfig withCloudWatchLogsRoleArn(String cloudWatchLogsRoleArn) {
+    public LogConfig withCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
         return this;
     }
@@ -66,7 +66,7 @@ public class LogConfig {
      * 
      */
     @JsonProperty("FieldLogLevel")
-    public String getFieldLogLevel() {
+    public CharSequence getFieldLogLevel() {
         return fieldLogLevel;
     }
 
@@ -75,11 +75,11 @@ public class LogConfig {
      * 
      */
     @JsonProperty("FieldLogLevel")
-    public void setFieldLogLevel(String fieldLogLevel) {
+    public void setFieldLogLevel(CharSequence fieldLogLevel) {
         this.fieldLogLevel = fieldLogLevel;
     }
 
-    public LogConfig withFieldLogLevel(String fieldLogLevel) {
+    public LogConfig withFieldLogLevel(CharSequence fieldLogLevel) {
         this.fieldLogLevel = fieldLogLevel;
         return this;
     }

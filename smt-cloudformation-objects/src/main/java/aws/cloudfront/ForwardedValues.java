@@ -42,7 +42,7 @@ public class ForwardedValues {
      */
     @JsonProperty("Headers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers")
-    private List<String> headers = new ArrayList<String>();
+    private List<CharSequence> headers = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystring
      * 
@@ -56,7 +56,7 @@ public class ForwardedValues {
      */
     @JsonProperty("QueryStringCacheKeys")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystringcachekeys")
-    private List<String> queryStringCacheKeys = new ArrayList<String>();
+    private List<CharSequence> queryStringCacheKeys = new ArrayList<CharSequence>();
 
     /**
      * Cookies
@@ -90,7 +90,7 @@ public class ForwardedValues {
      * 
      */
     @JsonProperty("Headers")
-    public List<String> getHeaders() {
+    public List<CharSequence> getHeaders() {
         return headers;
     }
 
@@ -99,11 +99,11 @@ public class ForwardedValues {
      * 
      */
     @JsonProperty("Headers")
-    public void setHeaders(List<String> headers) {
+    public void setHeaders(List<CharSequence> headers) {
         this.headers = headers;
     }
 
-    public ForwardedValues withHeaders(List<String> headers) {
+    public ForwardedValues withHeaders(List<CharSequence> headers) {
         this.headers = headers;
         return this;
     }
@@ -136,7 +136,7 @@ public class ForwardedValues {
      * 
      */
     @JsonProperty("QueryStringCacheKeys")
-    public List<String> getQueryStringCacheKeys() {
+    public List<CharSequence> getQueryStringCacheKeys() {
         return queryStringCacheKeys;
     }
 
@@ -145,11 +145,11 @@ public class ForwardedValues {
      * 
      */
     @JsonProperty("QueryStringCacheKeys")
-    public void setQueryStringCacheKeys(List<String> queryStringCacheKeys) {
+    public void setQueryStringCacheKeys(List<CharSequence> queryStringCacheKeys) {
         this.queryStringCacheKeys = queryStringCacheKeys;
     }
 
-    public ForwardedValues withQueryStringCacheKeys(List<String> queryStringCacheKeys) {
+    public ForwardedValues withQueryStringCacheKeys(List<CharSequence> queryStringCacheKeys) {
         this.queryStringCacheKeys = queryStringCacheKeys;
         return this;
     }

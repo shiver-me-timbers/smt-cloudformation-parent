@@ -34,14 +34,14 @@ public class ClusterParameterGroup {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parametergroupfamily
      * 
      */
     @JsonProperty("ParameterGroupFamily")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parametergroupfamily")
-    private String parameterGroupFamily;
+    private CharSequence parameterGroupFamily;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parameters
      * 
@@ -62,7 +62,7 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -71,11 +71,11 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ClusterParameterGroup withDescription(String description) {
+    public ClusterParameterGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -85,7 +85,7 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonProperty("ParameterGroupFamily")
-    public String getParameterGroupFamily() {
+    public CharSequence getParameterGroupFamily() {
         return parameterGroupFamily;
     }
 
@@ -94,11 +94,11 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonProperty("ParameterGroupFamily")
-    public void setParameterGroupFamily(String parameterGroupFamily) {
+    public void setParameterGroupFamily(CharSequence parameterGroupFamily) {
         this.parameterGroupFamily = parameterGroupFamily;
     }
 
-    public ClusterParameterGroup withParameterGroupFamily(String parameterGroupFamily) {
+    public ClusterParameterGroup withParameterGroupFamily(CharSequence parameterGroupFamily) {
         this.parameterGroupFamily = parameterGroupFamily;
         return this;
     }

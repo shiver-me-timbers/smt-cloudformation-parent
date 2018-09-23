@@ -33,28 +33,28 @@ public class Member {
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-status")
-    private String status;
+    private CharSequence status;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-memberid
      * 
      */
     @JsonProperty("MemberId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-memberid")
-    private String memberId;
+    private CharSequence memberId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-email
      * 
      */
     @JsonProperty("Email")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-email")
-    private String email;
+    private CharSequence email;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-message
      * 
      */
     @JsonProperty("Message")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-message")
-    private String message;
+    private CharSequence message;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-disableemailnotification
      * 
@@ -68,14 +68,14 @@ public class Member {
      */
     @JsonProperty("DetectorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-detectorid")
-    private String detectorId;
+    private CharSequence detectorId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-status
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -84,11 +84,11 @@ public class Member {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public Member withStatus(String status) {
+    public Member withStatus(CharSequence status) {
         this.status = status;
         return this;
     }
@@ -98,7 +98,7 @@ public class Member {
      * 
      */
     @JsonProperty("MemberId")
-    public String getMemberId() {
+    public CharSequence getMemberId() {
         return memberId;
     }
 
@@ -107,11 +107,11 @@ public class Member {
      * 
      */
     @JsonProperty("MemberId")
-    public void setMemberId(String memberId) {
+    public void setMemberId(CharSequence memberId) {
         this.memberId = memberId;
     }
 
-    public Member withMemberId(String memberId) {
+    public Member withMemberId(CharSequence memberId) {
         this.memberId = memberId;
         return this;
     }
@@ -121,7 +121,7 @@ public class Member {
      * 
      */
     @JsonProperty("Email")
-    public String getEmail() {
+    public CharSequence getEmail() {
         return email;
     }
 
@@ -130,11 +130,11 @@ public class Member {
      * 
      */
     @JsonProperty("Email")
-    public void setEmail(String email) {
+    public void setEmail(CharSequence email) {
         this.email = email;
     }
 
-    public Member withEmail(String email) {
+    public Member withEmail(CharSequence email) {
         this.email = email;
         return this;
     }
@@ -144,7 +144,7 @@ public class Member {
      * 
      */
     @JsonProperty("Message")
-    public String getMessage() {
+    public CharSequence getMessage() {
         return message;
     }
 
@@ -153,11 +153,11 @@ public class Member {
      * 
      */
     @JsonProperty("Message")
-    public void setMessage(String message) {
+    public void setMessage(CharSequence message) {
         this.message = message;
     }
 
-    public Member withMessage(String message) {
+    public Member withMessage(CharSequence message) {
         this.message = message;
         return this;
     }
@@ -190,7 +190,7 @@ public class Member {
      * 
      */
     @JsonProperty("DetectorId")
-    public String getDetectorId() {
+    public CharSequence getDetectorId() {
         return detectorId;
     }
 
@@ -199,11 +199,11 @@ public class Member {
      * 
      */
     @JsonProperty("DetectorId")
-    public void setDetectorId(String detectorId) {
+    public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
 
-    public Member withDetectorId(String detectorId) {
+    public Member withDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
         return this;
     }

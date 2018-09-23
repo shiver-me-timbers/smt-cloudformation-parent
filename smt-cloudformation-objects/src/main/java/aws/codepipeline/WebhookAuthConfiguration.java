@@ -29,21 +29,21 @@ public class WebhookAuthConfiguration {
      */
     @JsonProperty("AllowedIPRange")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange")
-    private String allowedIPRange;
+    private CharSequence allowedIPRange;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken
      * 
      */
     @JsonProperty("SecretToken")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken")
-    private String secretToken;
+    private CharSequence secretToken;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange
      * 
      */
     @JsonProperty("AllowedIPRange")
-    public String getAllowedIPRange() {
+    public CharSequence getAllowedIPRange() {
         return allowedIPRange;
     }
 
@@ -52,11 +52,11 @@ public class WebhookAuthConfiguration {
      * 
      */
     @JsonProperty("AllowedIPRange")
-    public void setAllowedIPRange(String allowedIPRange) {
+    public void setAllowedIPRange(CharSequence allowedIPRange) {
         this.allowedIPRange = allowedIPRange;
     }
 
-    public WebhookAuthConfiguration withAllowedIPRange(String allowedIPRange) {
+    public WebhookAuthConfiguration withAllowedIPRange(CharSequence allowedIPRange) {
         this.allowedIPRange = allowedIPRange;
         return this;
     }
@@ -66,7 +66,7 @@ public class WebhookAuthConfiguration {
      * 
      */
     @JsonProperty("SecretToken")
-    public String getSecretToken() {
+    public CharSequence getSecretToken() {
         return secretToken;
     }
 
@@ -75,11 +75,11 @@ public class WebhookAuthConfiguration {
      * 
      */
     @JsonProperty("SecretToken")
-    public void setSecretToken(String secretToken) {
+    public void setSecretToken(CharSequence secretToken) {
         this.secretToken = secretToken;
     }
 
-    public WebhookAuthConfiguration withSecretToken(String secretToken) {
+    public WebhookAuthConfiguration withSecretToken(CharSequence secretToken) {
         this.secretToken = secretToken;
         return this;
     }

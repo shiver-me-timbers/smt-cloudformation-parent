@@ -31,35 +31,35 @@ public class MappingRule {
      */
     @JsonProperty("MatchType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype")
-    private String matchType;
+    private CharSequence matchType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-value")
-    private String value;
+    private CharSequence value;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-claim
      * 
      */
     @JsonProperty("Claim")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-claim")
-    private String claim;
+    private CharSequence claim;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-rolearn
      * 
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype
      * 
      */
     @JsonProperty("MatchType")
-    public String getMatchType() {
+    public CharSequence getMatchType() {
         return matchType;
     }
 
@@ -68,11 +68,11 @@ public class MappingRule {
      * 
      */
     @JsonProperty("MatchType")
-    public void setMatchType(String matchType) {
+    public void setMatchType(CharSequence matchType) {
         this.matchType = matchType;
     }
 
-    public MappingRule withMatchType(String matchType) {
+    public MappingRule withMatchType(CharSequence matchType) {
         this.matchType = matchType;
         return this;
     }
@@ -82,7 +82,7 @@ public class MappingRule {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -91,11 +91,11 @@ public class MappingRule {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public MappingRule withValue(String value) {
+    public MappingRule withValue(CharSequence value) {
         this.value = value;
         return this;
     }
@@ -105,7 +105,7 @@ public class MappingRule {
      * 
      */
     @JsonProperty("Claim")
-    public String getClaim() {
+    public CharSequence getClaim() {
         return claim;
     }
 
@@ -114,11 +114,11 @@ public class MappingRule {
      * 
      */
     @JsonProperty("Claim")
-    public void setClaim(String claim) {
+    public void setClaim(CharSequence claim) {
         this.claim = claim;
     }
 
-    public MappingRule withClaim(String claim) {
+    public MappingRule withClaim(CharSequence claim) {
         this.claim = claim;
         return this;
     }
@@ -128,7 +128,7 @@ public class MappingRule {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -137,11 +137,11 @@ public class MappingRule {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public MappingRule withRoleARN(String roleARN) {
+    public MappingRule withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }

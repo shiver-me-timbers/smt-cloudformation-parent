@@ -53,7 +53,7 @@ public class DBCluster {
     @JsonProperty("AvailabilityZones")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones")
-    private Set<String> availabilityZones = new LinkedHashSet<String>();
+    private Set<CharSequence> availabilityZones = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod
      * 
@@ -67,63 +67,63 @@ public class DBCluster {
      */
     @JsonProperty("DBClusterIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusteridentifier")
-    private String dBClusterIdentifier;
+    private CharSequence dBClusterIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusterparametergroupname
      * 
      */
     @JsonProperty("DBClusterParameterGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusterparametergroupname")
-    private String dBClusterParameterGroupName;
+    private CharSequence dBClusterParameterGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbsubnetgroupname
      * 
      */
     @JsonProperty("DBSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbsubnetgroupname")
-    private String dBSubnetGroupName;
+    private CharSequence dBSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename
      * 
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine
      * 
      */
     @JsonProperty("Engine")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine")
-    private String engine;
+    private CharSequence engine;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-kmskeyid
      * 
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masteruserpassword
      * 
      */
     @JsonProperty("MasterUserPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masteruserpassword")
-    private String masterUserPassword;
+    private CharSequence masterUserPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masterusername
      * 
      */
     @JsonProperty("MasterUsername")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masterusername")
-    private String masterUsername;
+    private CharSequence masterUsername;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-port
      * 
@@ -137,28 +137,28 @@ public class DBCluster {
      */
     @JsonProperty("PreferredBackupWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredbackupwindow")
-    private String preferredBackupWindow;
+    private CharSequence preferredBackupWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredmaintenancewindow
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier
      * 
      */
     @JsonProperty("ReplicationSourceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier")
-    private String replicationSourceIdentifier;
+    private CharSequence replicationSourceIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
      */
     @JsonProperty("SnapshotIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier")
-    private String snapshotIdentifier;
+    private CharSequence snapshotIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted
      * 
@@ -180,14 +180,14 @@ public class DBCluster {
     @JsonProperty("VpcSecurityGroupIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-vpcsecuritygroupids")
-    private Set<String> vpcSecurityGroupIds = new LinkedHashSet<String>();
+    private Set<CharSequence> vpcSecurityGroupIds = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public Set<String> getAvailabilityZones() {
+    public Set<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
 
@@ -196,11 +196,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public void setAvailabilityZones(Set<String> availabilityZones) {
+    public void setAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
 
-    public DBCluster withAvailabilityZones(Set<String> availabilityZones) {
+    public DBCluster withAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
         return this;
     }
@@ -233,7 +233,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBClusterIdentifier")
-    public String getDBClusterIdentifier() {
+    public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
 
@@ -242,11 +242,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBClusterIdentifier")
-    public void setDBClusterIdentifier(String dBClusterIdentifier) {
+    public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
 
-    public DBCluster withDBClusterIdentifier(String dBClusterIdentifier) {
+    public DBCluster withDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
         return this;
     }
@@ -256,7 +256,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBClusterParameterGroupName")
-    public String getDBClusterParameterGroupName() {
+    public CharSequence getDBClusterParameterGroupName() {
         return dBClusterParameterGroupName;
     }
 
@@ -265,11 +265,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBClusterParameterGroupName")
-    public void setDBClusterParameterGroupName(String dBClusterParameterGroupName) {
+    public void setDBClusterParameterGroupName(CharSequence dBClusterParameterGroupName) {
         this.dBClusterParameterGroupName = dBClusterParameterGroupName;
     }
 
-    public DBCluster withDBClusterParameterGroupName(String dBClusterParameterGroupName) {
+    public DBCluster withDBClusterParameterGroupName(CharSequence dBClusterParameterGroupName) {
         this.dBClusterParameterGroupName = dBClusterParameterGroupName;
         return this;
     }
@@ -279,7 +279,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public String getDBSubnetGroupName() {
+    public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
 
@@ -288,11 +288,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public void setDBSubnetGroupName(String dBSubnetGroupName) {
+    public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
 
-    public DBCluster withDBSubnetGroupName(String dBSubnetGroupName) {
+    public DBCluster withDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
         return this;
     }
@@ -302,7 +302,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -311,11 +311,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public DBCluster withDatabaseName(String databaseName) {
+    public DBCluster withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -325,7 +325,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("Engine")
-    public String getEngine() {
+    public CharSequence getEngine() {
         return engine;
     }
 
@@ -334,11 +334,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("Engine")
-    public void setEngine(String engine) {
+    public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
 
-    public DBCluster withEngine(String engine) {
+    public DBCluster withEngine(CharSequence engine) {
         this.engine = engine;
         return this;
     }
@@ -348,7 +348,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -357,11 +357,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public DBCluster withEngineVersion(String engineVersion) {
+    public DBCluster withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -371,7 +371,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -380,11 +380,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public DBCluster withKmsKeyId(String kmsKeyId) {
+    public DBCluster withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -394,7 +394,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public String getMasterUserPassword() {
+    public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
 
@@ -403,11 +403,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public void setMasterUserPassword(String masterUserPassword) {
+    public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
 
-    public DBCluster withMasterUserPassword(String masterUserPassword) {
+    public DBCluster withMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
         return this;
     }
@@ -417,7 +417,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("MasterUsername")
-    public String getMasterUsername() {
+    public CharSequence getMasterUsername() {
         return masterUsername;
     }
 
@@ -426,11 +426,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("MasterUsername")
-    public void setMasterUsername(String masterUsername) {
+    public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
 
-    public DBCluster withMasterUsername(String masterUsername) {
+    public DBCluster withMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
         return this;
     }
@@ -463,7 +463,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("PreferredBackupWindow")
-    public String getPreferredBackupWindow() {
+    public CharSequence getPreferredBackupWindow() {
         return preferredBackupWindow;
     }
 
@@ -472,11 +472,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("PreferredBackupWindow")
-    public void setPreferredBackupWindow(String preferredBackupWindow) {
+    public void setPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
     }
 
-    public DBCluster withPreferredBackupWindow(String preferredBackupWindow) {
+    public DBCluster withPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
         return this;
     }
@@ -486,7 +486,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -495,11 +495,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public DBCluster withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public DBCluster withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -509,7 +509,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("ReplicationSourceIdentifier")
-    public String getReplicationSourceIdentifier() {
+    public CharSequence getReplicationSourceIdentifier() {
         return replicationSourceIdentifier;
     }
 
@@ -518,11 +518,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("ReplicationSourceIdentifier")
-    public void setReplicationSourceIdentifier(String replicationSourceIdentifier) {
+    public void setReplicationSourceIdentifier(CharSequence replicationSourceIdentifier) {
         this.replicationSourceIdentifier = replicationSourceIdentifier;
     }
 
-    public DBCluster withReplicationSourceIdentifier(String replicationSourceIdentifier) {
+    public DBCluster withReplicationSourceIdentifier(CharSequence replicationSourceIdentifier) {
         this.replicationSourceIdentifier = replicationSourceIdentifier;
         return this;
     }
@@ -532,7 +532,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("SnapshotIdentifier")
-    public String getSnapshotIdentifier() {
+    public CharSequence getSnapshotIdentifier() {
         return snapshotIdentifier;
     }
 
@@ -541,11 +541,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("SnapshotIdentifier")
-    public void setSnapshotIdentifier(String snapshotIdentifier) {
+    public void setSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
     }
 
-    public DBCluster withSnapshotIdentifier(String snapshotIdentifier) {
+    public DBCluster withSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
         return this;
     }
@@ -601,7 +601,7 @@ public class DBCluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public Set<String> getVpcSecurityGroupIds() {
+    public Set<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
 
@@ -610,11 +610,11 @@ public class DBCluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public void setVpcSecurityGroupIds(Set<String> vpcSecurityGroupIds) {
+    public void setVpcSecurityGroupIds(Set<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
 
-    public DBCluster withVpcSecurityGroupIds(Set<String> vpcSecurityGroupIds) {
+    public DBCluster withVpcSecurityGroupIds(Set<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
         return this;
     }

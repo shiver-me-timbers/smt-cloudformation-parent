@@ -29,21 +29,21 @@ public class LambdaFunctionAssociation {
      */
     @JsonProperty("EventType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype")
-    private String eventType;
+    private CharSequence eventType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn
      * 
      */
     @JsonProperty("LambdaFunctionARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn")
-    private String lambdaFunctionARN;
+    private CharSequence lambdaFunctionARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype
      * 
      */
     @JsonProperty("EventType")
-    public String getEventType() {
+    public CharSequence getEventType() {
         return eventType;
     }
 
@@ -52,11 +52,11 @@ public class LambdaFunctionAssociation {
      * 
      */
     @JsonProperty("EventType")
-    public void setEventType(String eventType) {
+    public void setEventType(CharSequence eventType) {
         this.eventType = eventType;
     }
 
-    public LambdaFunctionAssociation withEventType(String eventType) {
+    public LambdaFunctionAssociation withEventType(CharSequence eventType) {
         this.eventType = eventType;
         return this;
     }
@@ -66,7 +66,7 @@ public class LambdaFunctionAssociation {
      * 
      */
     @JsonProperty("LambdaFunctionARN")
-    public String getLambdaFunctionARN() {
+    public CharSequence getLambdaFunctionARN() {
         return lambdaFunctionARN;
     }
 
@@ -75,11 +75,11 @@ public class LambdaFunctionAssociation {
      * 
      */
     @JsonProperty("LambdaFunctionARN")
-    public void setLambdaFunctionARN(String lambdaFunctionARN) {
+    public void setLambdaFunctionARN(CharSequence lambdaFunctionARN) {
         this.lambdaFunctionARN = lambdaFunctionARN;
     }
 
-    public LambdaFunctionAssociation withLambdaFunctionARN(String lambdaFunctionARN) {
+    public LambdaFunctionAssociation withLambdaFunctionARN(CharSequence lambdaFunctionARN) {
         this.lambdaFunctionARN = lambdaFunctionARN;
         return this;
     }

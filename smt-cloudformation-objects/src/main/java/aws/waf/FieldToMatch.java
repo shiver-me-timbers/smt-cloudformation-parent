@@ -29,21 +29,21 @@ public class FieldToMatch {
      */
     @JsonProperty("Data")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html#cfn-waf-sizeconstraintset-sizeconstraint-fieldtomatch-data")
-    private String data;
+    private CharSequence data;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html#cfn-waf-sizeconstraintset-sizeconstraint-fieldtomatch-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html#cfn-waf-sizeconstraintset-sizeconstraint-fieldtomatch-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html#cfn-waf-sizeconstraintset-sizeconstraint-fieldtomatch-data
      * 
      */
     @JsonProperty("Data")
-    public String getData() {
+    public CharSequence getData() {
         return data;
     }
 
@@ -52,11 +52,11 @@ public class FieldToMatch {
      * 
      */
     @JsonProperty("Data")
-    public void setData(String data) {
+    public void setData(CharSequence data) {
         this.data = data;
     }
 
-    public FieldToMatch withData(String data) {
+    public FieldToMatch withData(CharSequence data) {
         this.data = data;
         return this;
     }
@@ -66,7 +66,7 @@ public class FieldToMatch {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -75,11 +75,11 @@ public class FieldToMatch {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public FieldToMatch withType(String type) {
+    public FieldToMatch withType(CharSequence type) {
         this.type = type;
         return this;
     }

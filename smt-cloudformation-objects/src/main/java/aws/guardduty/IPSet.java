@@ -32,7 +32,7 @@ public class IPSet {
      */
     @JsonProperty("Format")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-format")
-    private String format;
+    private CharSequence format;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-activate
      * 
@@ -46,28 +46,28 @@ public class IPSet {
      */
     @JsonProperty("DetectorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-detectorid")
-    private String detectorId;
+    private CharSequence detectorId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-location
      * 
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-location")
-    private String location;
+    private CharSequence location;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-format
      * 
      */
     @JsonProperty("Format")
-    public String getFormat() {
+    public CharSequence getFormat() {
         return format;
     }
 
@@ -76,11 +76,11 @@ public class IPSet {
      * 
      */
     @JsonProperty("Format")
-    public void setFormat(String format) {
+    public void setFormat(CharSequence format) {
         this.format = format;
     }
 
-    public IPSet withFormat(String format) {
+    public IPSet withFormat(CharSequence format) {
         this.format = format;
         return this;
     }
@@ -113,7 +113,7 @@ public class IPSet {
      * 
      */
     @JsonProperty("DetectorId")
-    public String getDetectorId() {
+    public CharSequence getDetectorId() {
         return detectorId;
     }
 
@@ -122,11 +122,11 @@ public class IPSet {
      * 
      */
     @JsonProperty("DetectorId")
-    public void setDetectorId(String detectorId) {
+    public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
 
-    public IPSet withDetectorId(String detectorId) {
+    public IPSet withDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
         return this;
     }
@@ -136,7 +136,7 @@ public class IPSet {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -145,11 +145,11 @@ public class IPSet {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public IPSet withName(String name) {
+    public IPSet withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -159,7 +159,7 @@ public class IPSet {
      * 
      */
     @JsonProperty("Location")
-    public String getLocation() {
+    public CharSequence getLocation() {
         return location;
     }
 
@@ -168,11 +168,11 @@ public class IPSet {
      * 
      */
     @JsonProperty("Location")
-    public void setLocation(String location) {
+    public void setLocation(CharSequence location) {
         this.location = location;
     }
 
-    public IPSet withLocation(String location) {
+    public IPSet withLocation(CharSequence location) {
         this.location = location;
         return this;
     }

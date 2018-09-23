@@ -38,7 +38,7 @@ public class TrustedSigners {
      */
     @JsonProperty("AwsAccountNumbers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers")
-    private List<String> awsAccountNumbers = new ArrayList<String>();
+    private List<CharSequence> awsAccountNumbers = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-enabled
@@ -68,7 +68,7 @@ public class TrustedSigners {
      * 
      */
     @JsonProperty("AwsAccountNumbers")
-    public List<String> getAwsAccountNumbers() {
+    public List<CharSequence> getAwsAccountNumbers() {
         return awsAccountNumbers;
     }
 
@@ -77,11 +77,11 @@ public class TrustedSigners {
      * 
      */
     @JsonProperty("AwsAccountNumbers")
-    public void setAwsAccountNumbers(List<String> awsAccountNumbers) {
+    public void setAwsAccountNumbers(List<CharSequence> awsAccountNumbers) {
         this.awsAccountNumbers = awsAccountNumbers;
     }
 
-    public TrustedSigners withAwsAccountNumbers(List<String> awsAccountNumbers) {
+    public TrustedSigners withAwsAccountNumbers(List<CharSequence> awsAccountNumbers) {
         this.awsAccountNumbers = awsAccountNumbers;
         return this;
     }

@@ -33,7 +33,7 @@ public class LocalSecondaryIndex {
      */
     @JsonProperty("IndexName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname")
-    private String indexName;
+    private CharSequence indexName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema
      * 
@@ -57,7 +57,7 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonProperty("IndexName")
-    public String getIndexName() {
+    public CharSequence getIndexName() {
         return indexName;
     }
 
@@ -66,11 +66,11 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonProperty("IndexName")
-    public void setIndexName(String indexName) {
+    public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
 
-    public LocalSecondaryIndex withIndexName(String indexName) {
+    public LocalSecondaryIndex withIndexName(CharSequence indexName) {
         this.indexName = indexName;
         return this;
     }

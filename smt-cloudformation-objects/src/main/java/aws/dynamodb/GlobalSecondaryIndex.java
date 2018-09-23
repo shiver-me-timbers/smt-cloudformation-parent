@@ -34,7 +34,7 @@ public class GlobalSecondaryIndex {
      */
     @JsonProperty("IndexName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname")
-    private String indexName;
+    private CharSequence indexName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-keyschema
      * 
@@ -67,7 +67,7 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonProperty("IndexName")
-    public String getIndexName() {
+    public CharSequence getIndexName() {
         return indexName;
     }
 
@@ -76,11 +76,11 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonProperty("IndexName")
-    public void setIndexName(String indexName) {
+    public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
 
-    public GlobalSecondaryIndex withIndexName(String indexName) {
+    public GlobalSecondaryIndex withIndexName(CharSequence indexName) {
         this.indexName = indexName;
         return this;
     }

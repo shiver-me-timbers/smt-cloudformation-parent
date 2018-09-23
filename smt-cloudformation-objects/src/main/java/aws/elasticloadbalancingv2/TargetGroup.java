@@ -56,21 +56,21 @@ public class TargetGroup {
      */
     @JsonProperty("HealthCheckPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckpath")
-    private String healthCheckPath;
+    private CharSequence healthCheckPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckport
      * 
      */
     @JsonProperty("HealthCheckPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckport")
-    private String healthCheckPort;
+    private CharSequence healthCheckPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckprotocol
      * 
      */
     @JsonProperty("HealthCheckProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckprotocol")
-    private String healthCheckProtocol;
+    private CharSequence healthCheckProtocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthchecktimeoutseconds
      * 
@@ -100,7 +100,7 @@ public class TargetGroup {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-port
      * 
@@ -114,7 +114,7 @@ public class TargetGroup {
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-tags
      * 
@@ -136,7 +136,7 @@ public class TargetGroup {
      */
     @JsonProperty("TargetType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targettype")
-    private String targetType;
+    private CharSequence targetType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targets
      * 
@@ -158,7 +158,7 @@ public class TargetGroup {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
@@ -188,7 +188,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckPath")
-    public String getHealthCheckPath() {
+    public CharSequence getHealthCheckPath() {
         return healthCheckPath;
     }
 
@@ -197,11 +197,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckPath")
-    public void setHealthCheckPath(String healthCheckPath) {
+    public void setHealthCheckPath(CharSequence healthCheckPath) {
         this.healthCheckPath = healthCheckPath;
     }
 
-    public TargetGroup withHealthCheckPath(String healthCheckPath) {
+    public TargetGroup withHealthCheckPath(CharSequence healthCheckPath) {
         this.healthCheckPath = healthCheckPath;
         return this;
     }
@@ -211,7 +211,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckPort")
-    public String getHealthCheckPort() {
+    public CharSequence getHealthCheckPort() {
         return healthCheckPort;
     }
 
@@ -220,11 +220,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckPort")
-    public void setHealthCheckPort(String healthCheckPort) {
+    public void setHealthCheckPort(CharSequence healthCheckPort) {
         this.healthCheckPort = healthCheckPort;
     }
 
-    public TargetGroup withHealthCheckPort(String healthCheckPort) {
+    public TargetGroup withHealthCheckPort(CharSequence healthCheckPort) {
         this.healthCheckPort = healthCheckPort;
         return this;
     }
@@ -234,7 +234,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckProtocol")
-    public String getHealthCheckProtocol() {
+    public CharSequence getHealthCheckProtocol() {
         return healthCheckProtocol;
     }
 
@@ -243,11 +243,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("HealthCheckProtocol")
-    public void setHealthCheckProtocol(String healthCheckProtocol) {
+    public void setHealthCheckProtocol(CharSequence healthCheckProtocol) {
         this.healthCheckProtocol = healthCheckProtocol;
     }
 
-    public TargetGroup withHealthCheckProtocol(String healthCheckProtocol) {
+    public TargetGroup withHealthCheckProtocol(CharSequence healthCheckProtocol) {
         this.healthCheckProtocol = healthCheckProtocol;
         return this;
     }
@@ -330,7 +330,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -339,11 +339,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public TargetGroup withName(String name) {
+    public TargetGroup withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -376,7 +376,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -385,11 +385,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public TargetGroup withProtocol(String protocol) {
+    public TargetGroup withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -445,7 +445,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("TargetType")
-    public String getTargetType() {
+    public CharSequence getTargetType() {
         return targetType;
     }
 
@@ -454,11 +454,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("TargetType")
-    public void setTargetType(String targetType) {
+    public void setTargetType(CharSequence targetType) {
         this.targetType = targetType;
     }
 
-    public TargetGroup withTargetType(String targetType) {
+    public TargetGroup withTargetType(CharSequence targetType) {
         this.targetType = targetType;
         return this;
     }
@@ -514,7 +514,7 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -523,11 +523,11 @@ public class TargetGroup {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public TargetGroup withVpcId(String vpcId) {
+    public TargetGroup withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

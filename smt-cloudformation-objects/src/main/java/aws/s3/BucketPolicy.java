@@ -29,7 +29,7 @@ public class BucketPolicy {
      */
     @JsonProperty("Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket")
-    private String bucket;
+    private CharSequence bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
@@ -43,7 +43,7 @@ public class BucketPolicy {
      * 
      */
     @JsonProperty("Bucket")
-    public String getBucket() {
+    public CharSequence getBucket() {
         return bucket;
     }
 
@@ -52,11 +52,11 @@ public class BucketPolicy {
      * 
      */
     @JsonProperty("Bucket")
-    public void setBucket(String bucket) {
+    public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
 
-    public BucketPolicy withBucket(String bucket) {
+    public BucketPolicy withBucket(CharSequence bucket) {
         this.bucket = bucket;
         return this;
     }

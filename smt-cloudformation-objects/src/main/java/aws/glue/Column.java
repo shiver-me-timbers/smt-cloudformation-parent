@@ -30,28 +30,28 @@ public class Column {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-column.html#cfn-glue-partition-column-comment
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -60,11 +60,11 @@ public class Column {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public Column withComment(String comment) {
+    public Column withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -74,7 +74,7 @@ public class Column {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -83,11 +83,11 @@ public class Column {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Column withType(String type) {
+    public Column withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -97,7 +97,7 @@ public class Column {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -106,11 +106,11 @@ public class Column {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Column withName(String name) {
+    public Column withName(CharSequence name) {
         this.name = name;
         return this;
     }

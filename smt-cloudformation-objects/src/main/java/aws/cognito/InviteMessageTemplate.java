@@ -30,28 +30,28 @@ public class InviteMessageTemplate {
      */
     @JsonProperty("EmailMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailmessage")
-    private String emailMessage;
+    private CharSequence emailMessage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-smsmessage
      * 
      */
     @JsonProperty("SMSMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-smsmessage")
-    private String sMSMessage;
+    private CharSequence sMSMessage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailsubject
      * 
      */
     @JsonProperty("EmailSubject")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailsubject")
-    private String emailSubject;
+    private CharSequence emailSubject;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailmessage
      * 
      */
     @JsonProperty("EmailMessage")
-    public String getEmailMessage() {
+    public CharSequence getEmailMessage() {
         return emailMessage;
     }
 
@@ -60,11 +60,11 @@ public class InviteMessageTemplate {
      * 
      */
     @JsonProperty("EmailMessage")
-    public void setEmailMessage(String emailMessage) {
+    public void setEmailMessage(CharSequence emailMessage) {
         this.emailMessage = emailMessage;
     }
 
-    public InviteMessageTemplate withEmailMessage(String emailMessage) {
+    public InviteMessageTemplate withEmailMessage(CharSequence emailMessage) {
         this.emailMessage = emailMessage;
         return this;
     }
@@ -74,7 +74,7 @@ public class InviteMessageTemplate {
      * 
      */
     @JsonProperty("SMSMessage")
-    public String getSMSMessage() {
+    public CharSequence getSMSMessage() {
         return sMSMessage;
     }
 
@@ -83,11 +83,11 @@ public class InviteMessageTemplate {
      * 
      */
     @JsonProperty("SMSMessage")
-    public void setSMSMessage(String sMSMessage) {
+    public void setSMSMessage(CharSequence sMSMessage) {
         this.sMSMessage = sMSMessage;
     }
 
-    public InviteMessageTemplate withSMSMessage(String sMSMessage) {
+    public InviteMessageTemplate withSMSMessage(CharSequence sMSMessage) {
         this.sMSMessage = sMSMessage;
         return this;
     }
@@ -97,7 +97,7 @@ public class InviteMessageTemplate {
      * 
      */
     @JsonProperty("EmailSubject")
-    public String getEmailSubject() {
+    public CharSequence getEmailSubject() {
         return emailSubject;
     }
 
@@ -106,11 +106,11 @@ public class InviteMessageTemplate {
      * 
      */
     @JsonProperty("EmailSubject")
-    public void setEmailSubject(String emailSubject) {
+    public void setEmailSubject(CharSequence emailSubject) {
         this.emailSubject = emailSubject;
     }
 
-    public InviteMessageTemplate withEmailSubject(String emailSubject) {
+    public InviteMessageTemplate withEmailSubject(CharSequence emailSubject) {
         this.emailSubject = emailSubject;
         return this;
     }

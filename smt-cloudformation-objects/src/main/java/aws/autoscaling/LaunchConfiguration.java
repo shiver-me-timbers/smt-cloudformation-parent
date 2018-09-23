@@ -63,7 +63,7 @@ public class LaunchConfiguration {
      */
     @JsonProperty("ClassicLinkVPCId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcid")
-    private String classicLinkVPCId;
+    private CharSequence classicLinkVPCId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcsecuritygroups
      * 
@@ -71,7 +71,7 @@ public class LaunchConfiguration {
     @JsonProperty("ClassicLinkVPCSecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcsecuritygroups")
-    private Set<String> classicLinkVPCSecurityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> classicLinkVPCSecurityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ebsoptimized
      * 
@@ -85,21 +85,21 @@ public class LaunchConfiguration {
      */
     @JsonProperty("IamInstanceProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-iaminstanceprofile")
-    private String iamInstanceProfile;
+    private CharSequence iamInstanceProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-imageid
      * 
      */
     @JsonProperty("ImageId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-imageid")
-    private String imageId;
+    private CharSequence imageId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancemonitoring
      * 
@@ -113,42 +113,42 @@ public class LaunchConfiguration {
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-kernelid
      * 
      */
     @JsonProperty("KernelId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-kernelid")
-    private String kernelId;
+    private CharSequence kernelId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-keyname
      * 
      */
     @JsonProperty("KeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-keyname")
-    private String keyName;
+    private CharSequence keyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-autoscaling-launchconfig-launchconfigurationname
      * 
      */
     @JsonProperty("LaunchConfigurationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-autoscaling-launchconfig-launchconfigurationname")
-    private String launchConfigurationName;
+    private CharSequence launchConfigurationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-placementtenancy
      * 
      */
     @JsonProperty("PlacementTenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-placementtenancy")
-    private String placementTenancy;
+    private CharSequence placementTenancy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ramdiskid
      * 
      */
     @JsonProperty("RamDiskId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ramdiskid")
-    private String ramDiskId;
+    private CharSequence ramDiskId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-securitygroups
      * 
@@ -156,21 +156,21 @@ public class LaunchConfiguration {
     @JsonProperty("SecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-securitygroups")
-    private Set<String> securityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-spotprice
      * 
      */
     @JsonProperty("SpotPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-spotprice")
-    private String spotPrice;
+    private CharSequence spotPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-userdata
      * 
      */
     @JsonProperty("UserData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-userdata")
-    private String userData;
+    private CharSequence userData;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cf-as-launchconfig-associatepubip
@@ -223,7 +223,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ClassicLinkVPCId")
-    public String getClassicLinkVPCId() {
+    public CharSequence getClassicLinkVPCId() {
         return classicLinkVPCId;
     }
 
@@ -232,11 +232,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ClassicLinkVPCId")
-    public void setClassicLinkVPCId(String classicLinkVPCId) {
+    public void setClassicLinkVPCId(CharSequence classicLinkVPCId) {
         this.classicLinkVPCId = classicLinkVPCId;
     }
 
-    public LaunchConfiguration withClassicLinkVPCId(String classicLinkVPCId) {
+    public LaunchConfiguration withClassicLinkVPCId(CharSequence classicLinkVPCId) {
         this.classicLinkVPCId = classicLinkVPCId;
         return this;
     }
@@ -246,7 +246,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ClassicLinkVPCSecurityGroups")
-    public Set<String> getClassicLinkVPCSecurityGroups() {
+    public Set<CharSequence> getClassicLinkVPCSecurityGroups() {
         return classicLinkVPCSecurityGroups;
     }
 
@@ -255,11 +255,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ClassicLinkVPCSecurityGroups")
-    public void setClassicLinkVPCSecurityGroups(Set<String> classicLinkVPCSecurityGroups) {
+    public void setClassicLinkVPCSecurityGroups(Set<CharSequence> classicLinkVPCSecurityGroups) {
         this.classicLinkVPCSecurityGroups = classicLinkVPCSecurityGroups;
     }
 
-    public LaunchConfiguration withClassicLinkVPCSecurityGroups(Set<String> classicLinkVPCSecurityGroups) {
+    public LaunchConfiguration withClassicLinkVPCSecurityGroups(Set<CharSequence> classicLinkVPCSecurityGroups) {
         this.classicLinkVPCSecurityGroups = classicLinkVPCSecurityGroups;
         return this;
     }
@@ -292,7 +292,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("IamInstanceProfile")
-    public String getIamInstanceProfile() {
+    public CharSequence getIamInstanceProfile() {
         return iamInstanceProfile;
     }
 
@@ -301,11 +301,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("IamInstanceProfile")
-    public void setIamInstanceProfile(String iamInstanceProfile) {
+    public void setIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
 
-    public LaunchConfiguration withIamInstanceProfile(String iamInstanceProfile) {
+    public LaunchConfiguration withIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
         return this;
     }
@@ -315,7 +315,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ImageId")
-    public String getImageId() {
+    public CharSequence getImageId() {
         return imageId;
     }
 
@@ -324,11 +324,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("ImageId")
-    public void setImageId(String imageId) {
+    public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
 
-    public LaunchConfiguration withImageId(String imageId) {
+    public LaunchConfiguration withImageId(CharSequence imageId) {
         this.imageId = imageId;
         return this;
     }
@@ -338,7 +338,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -347,11 +347,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public LaunchConfiguration withInstanceId(String instanceId) {
+    public LaunchConfiguration withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -384,7 +384,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -393,11 +393,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public LaunchConfiguration withInstanceType(String instanceType) {
+    public LaunchConfiguration withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -407,7 +407,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("KernelId")
-    public String getKernelId() {
+    public CharSequence getKernelId() {
         return kernelId;
     }
 
@@ -416,11 +416,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("KernelId")
-    public void setKernelId(String kernelId) {
+    public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
 
-    public LaunchConfiguration withKernelId(String kernelId) {
+    public LaunchConfiguration withKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
         return this;
     }
@@ -430,7 +430,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("KeyName")
-    public String getKeyName() {
+    public CharSequence getKeyName() {
         return keyName;
     }
 
@@ -439,11 +439,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("KeyName")
-    public void setKeyName(String keyName) {
+    public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
 
-    public LaunchConfiguration withKeyName(String keyName) {
+    public LaunchConfiguration withKeyName(CharSequence keyName) {
         this.keyName = keyName;
         return this;
     }
@@ -453,7 +453,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("LaunchConfigurationName")
-    public String getLaunchConfigurationName() {
+    public CharSequence getLaunchConfigurationName() {
         return launchConfigurationName;
     }
 
@@ -462,11 +462,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("LaunchConfigurationName")
-    public void setLaunchConfigurationName(String launchConfigurationName) {
+    public void setLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
     }
 
-    public LaunchConfiguration withLaunchConfigurationName(String launchConfigurationName) {
+    public LaunchConfiguration withLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
         return this;
     }
@@ -476,7 +476,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("PlacementTenancy")
-    public String getPlacementTenancy() {
+    public CharSequence getPlacementTenancy() {
         return placementTenancy;
     }
 
@@ -485,11 +485,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("PlacementTenancy")
-    public void setPlacementTenancy(String placementTenancy) {
+    public void setPlacementTenancy(CharSequence placementTenancy) {
         this.placementTenancy = placementTenancy;
     }
 
-    public LaunchConfiguration withPlacementTenancy(String placementTenancy) {
+    public LaunchConfiguration withPlacementTenancy(CharSequence placementTenancy) {
         this.placementTenancy = placementTenancy;
         return this;
     }
@@ -499,7 +499,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("RamDiskId")
-    public String getRamDiskId() {
+    public CharSequence getRamDiskId() {
         return ramDiskId;
     }
 
@@ -508,11 +508,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("RamDiskId")
-    public void setRamDiskId(String ramDiskId) {
+    public void setRamDiskId(CharSequence ramDiskId) {
         this.ramDiskId = ramDiskId;
     }
 
-    public LaunchConfiguration withRamDiskId(String ramDiskId) {
+    public LaunchConfiguration withRamDiskId(CharSequence ramDiskId) {
         this.ramDiskId = ramDiskId;
         return this;
     }
@@ -522,7 +522,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public Set<String> getSecurityGroups() {
+    public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -531,11 +531,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(Set<String> securityGroups) {
+    public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public LaunchConfiguration withSecurityGroups(Set<String> securityGroups) {
+    public LaunchConfiguration withSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -545,7 +545,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("SpotPrice")
-    public String getSpotPrice() {
+    public CharSequence getSpotPrice() {
         return spotPrice;
     }
 
@@ -554,11 +554,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("SpotPrice")
-    public void setSpotPrice(String spotPrice) {
+    public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
 
-    public LaunchConfiguration withSpotPrice(String spotPrice) {
+    public LaunchConfiguration withSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
         return this;
     }
@@ -568,7 +568,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("UserData")
-    public String getUserData() {
+    public CharSequence getUserData() {
         return userData;
     }
 
@@ -577,11 +577,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonProperty("UserData")
-    public void setUserData(String userData) {
+    public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
 
-    public LaunchConfiguration withUserData(String userData) {
+    public LaunchConfiguration withUserData(CharSequence userData) {
         this.userData = userData;
         return this;
     }

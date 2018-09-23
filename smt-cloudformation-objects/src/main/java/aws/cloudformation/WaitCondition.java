@@ -37,14 +37,14 @@ public class WaitCondition {
      */
     @JsonProperty("Handle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle")
-    private String handle;
+    private CharSequence handle;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
      * 
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout")
-    private String timeout;
+    private CharSequence timeout;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
@@ -74,7 +74,7 @@ public class WaitCondition {
      * 
      */
     @JsonProperty("Handle")
-    public String getHandle() {
+    public CharSequence getHandle() {
         return handle;
     }
 
@@ -83,11 +83,11 @@ public class WaitCondition {
      * 
      */
     @JsonProperty("Handle")
-    public void setHandle(String handle) {
+    public void setHandle(CharSequence handle) {
         this.handle = handle;
     }
 
-    public WaitCondition withHandle(String handle) {
+    public WaitCondition withHandle(CharSequence handle) {
         this.handle = handle;
         return this;
     }
@@ -97,7 +97,7 @@ public class WaitCondition {
      * 
      */
     @JsonProperty("Timeout")
-    public String getTimeout() {
+    public CharSequence getTimeout() {
         return timeout;
     }
 
@@ -106,11 +106,11 @@ public class WaitCondition {
      * 
      */
     @JsonProperty("Timeout")
-    public void setTimeout(String timeout) {
+    public void setTimeout(CharSequence timeout) {
         this.timeout = timeout;
     }
 
-    public WaitCondition withTimeout(String timeout) {
+    public WaitCondition withTimeout(CharSequence timeout) {
         this.timeout = timeout;
         return this;
     }

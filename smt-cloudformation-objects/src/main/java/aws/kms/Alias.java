@@ -29,21 +29,21 @@ public class Alias {
      */
     @JsonProperty("AliasName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname")
-    private String aliasName;
+    private CharSequence aliasName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid
      * 
      */
     @JsonProperty("TargetKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid")
-    private String targetKeyId;
+    private CharSequence targetKeyId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname
      * 
      */
     @JsonProperty("AliasName")
-    public String getAliasName() {
+    public CharSequence getAliasName() {
         return aliasName;
     }
 
@@ -52,11 +52,11 @@ public class Alias {
      * 
      */
     @JsonProperty("AliasName")
-    public void setAliasName(String aliasName) {
+    public void setAliasName(CharSequence aliasName) {
         this.aliasName = aliasName;
     }
 
-    public Alias withAliasName(String aliasName) {
+    public Alias withAliasName(CharSequence aliasName) {
         this.aliasName = aliasName;
         return this;
     }
@@ -66,7 +66,7 @@ public class Alias {
      * 
      */
     @JsonProperty("TargetKeyId")
-    public String getTargetKeyId() {
+    public CharSequence getTargetKeyId() {
         return targetKeyId;
     }
 
@@ -75,11 +75,11 @@ public class Alias {
      * 
      */
     @JsonProperty("TargetKeyId")
-    public void setTargetKeyId(String targetKeyId) {
+    public void setTargetKeyId(CharSequence targetKeyId) {
         this.targetKeyId = targetKeyId;
     }
 
-    public Alias withTargetKeyId(String targetKeyId) {
+    public Alias withTargetKeyId(CharSequence targetKeyId) {
         this.targetKeyId = targetKeyId;
         return this;
     }

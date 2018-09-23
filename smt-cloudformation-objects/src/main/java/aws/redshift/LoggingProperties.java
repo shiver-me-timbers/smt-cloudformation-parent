@@ -29,21 +29,21 @@ public class LoggingProperties {
      */
     @JsonProperty("BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-bucketname")
-    private String bucketName;
+    private CharSequence bucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-s3keyprefix
      * 
      */
     @JsonProperty("S3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-s3keyprefix")
-    private String s3KeyPrefix;
+    private CharSequence s3KeyPrefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-bucketname
      * 
      */
     @JsonProperty("BucketName")
-    public String getBucketName() {
+    public CharSequence getBucketName() {
         return bucketName;
     }
 
@@ -52,11 +52,11 @@ public class LoggingProperties {
      * 
      */
     @JsonProperty("BucketName")
-    public void setBucketName(String bucketName) {
+    public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
 
-    public LoggingProperties withBucketName(String bucketName) {
+    public LoggingProperties withBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
         return this;
     }
@@ -66,7 +66,7 @@ public class LoggingProperties {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public String getS3KeyPrefix() {
+    public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
 
@@ -75,11 +75,11 @@ public class LoggingProperties {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public void setS3KeyPrefix(String s3KeyPrefix) {
+    public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }
 
-    public LoggingProperties withS3KeyPrefix(String s3KeyPrefix) {
+    public LoggingProperties withS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
         return this;
     }

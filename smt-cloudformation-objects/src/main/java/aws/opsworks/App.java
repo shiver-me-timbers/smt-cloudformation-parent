@@ -69,14 +69,14 @@ public class App {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-domains
      * 
      */
     @JsonProperty("Domains")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-domains")
-    private List<java.lang.String> domains = new ArrayList<java.lang.String>();
+    private List<CharSequence> domains = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-enablessl
      * 
@@ -97,14 +97,14 @@ public class App {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname
      * 
      */
     @JsonProperty("Shortname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname")
-    private java.lang.String shortname;
+    private CharSequence shortname;
     /**
      * SslConfiguration
      * <p>
@@ -120,14 +120,14 @@ public class App {
      */
     @JsonProperty("StackId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid")
-    private java.lang.String stackId;
+    private CharSequence stackId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-type")
-    private java.lang.String type;
+    private CharSequence type;
 
     /**
      * DataSource
@@ -207,7 +207,7 @@ public class App {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -216,11 +216,11 @@ public class App {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public App withDescription(java.lang.String description) {
+    public App withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -230,7 +230,7 @@ public class App {
      * 
      */
     @JsonProperty("Domains")
-    public List<java.lang.String> getDomains() {
+    public List<CharSequence> getDomains() {
         return domains;
     }
 
@@ -239,11 +239,11 @@ public class App {
      * 
      */
     @JsonProperty("Domains")
-    public void setDomains(List<java.lang.String> domains) {
+    public void setDomains(List<CharSequence> domains) {
         this.domains = domains;
     }
 
-    public App withDomains(List<java.lang.String> domains) {
+    public App withDomains(List<CharSequence> domains) {
         this.domains = domains;
         return this;
     }
@@ -299,7 +299,7 @@ public class App {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -308,11 +308,11 @@ public class App {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public App withName(java.lang.String name) {
+    public App withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -322,7 +322,7 @@ public class App {
      * 
      */
     @JsonProperty("Shortname")
-    public java.lang.String getShortname() {
+    public CharSequence getShortname() {
         return shortname;
     }
 
@@ -331,11 +331,11 @@ public class App {
      * 
      */
     @JsonProperty("Shortname")
-    public void setShortname(java.lang.String shortname) {
+    public void setShortname(CharSequence shortname) {
         this.shortname = shortname;
     }
 
-    public App withShortname(java.lang.String shortname) {
+    public App withShortname(CharSequence shortname) {
         this.shortname = shortname;
         return this;
     }
@@ -372,7 +372,7 @@ public class App {
      * 
      */
     @JsonProperty("StackId")
-    public java.lang.String getStackId() {
+    public CharSequence getStackId() {
         return stackId;
     }
 
@@ -381,11 +381,11 @@ public class App {
      * 
      */
     @JsonProperty("StackId")
-    public void setStackId(java.lang.String stackId) {
+    public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
 
-    public App withStackId(java.lang.String stackId) {
+    public App withStackId(CharSequence stackId) {
         this.stackId = stackId;
         return this;
     }
@@ -395,7 +395,7 @@ public class App {
      * 
      */
     @JsonProperty("Type")
-    public java.lang.String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -404,11 +404,11 @@ public class App {
      * 
      */
     @JsonProperty("Type")
-    public void setType(java.lang.String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public App withType(java.lang.String type) {
+    public App withType(CharSequence type) {
         this.type = type;
         return this;
     }

@@ -44,21 +44,21 @@ public class Subnet {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-cidrblock
      * 
      */
     @JsonProperty("CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-cidrblock")
-    private String cidrBlock;
+    private CharSequence cidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-ipv6cidrblock
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-ipv6cidrblock")
-    private String ipv6CidrBlock;
+    private CharSequence ipv6CidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch
      * 
@@ -79,7 +79,7 @@ public class Subnet {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-awsec2subnet-prop-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-assignipv6addressoncreation
@@ -109,7 +109,7 @@ public class Subnet {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -118,11 +118,11 @@ public class Subnet {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Subnet withAvailabilityZone(String availabilityZone) {
+    public Subnet withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -132,7 +132,7 @@ public class Subnet {
      * 
      */
     @JsonProperty("CidrBlock")
-    public String getCidrBlock() {
+    public CharSequence getCidrBlock() {
         return cidrBlock;
     }
 
@@ -141,11 +141,11 @@ public class Subnet {
      * 
      */
     @JsonProperty("CidrBlock")
-    public void setCidrBlock(String cidrBlock) {
+    public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
 
-    public Subnet withCidrBlock(String cidrBlock) {
+    public Subnet withCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
         return this;
     }
@@ -155,7 +155,7 @@ public class Subnet {
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public String getIpv6CidrBlock() {
+    public CharSequence getIpv6CidrBlock() {
         return ipv6CidrBlock;
     }
 
@@ -164,11 +164,11 @@ public class Subnet {
      * 
      */
     @JsonProperty("Ipv6CidrBlock")
-    public void setIpv6CidrBlock(String ipv6CidrBlock) {
+    public void setIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
     }
 
-    public Subnet withIpv6CidrBlock(String ipv6CidrBlock) {
+    public Subnet withIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
         return this;
     }
@@ -224,7 +224,7 @@ public class Subnet {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -233,11 +233,11 @@ public class Subnet {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public Subnet withVpcId(String vpcId) {
+    public Subnet withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

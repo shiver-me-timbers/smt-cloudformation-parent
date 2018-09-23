@@ -33,21 +33,21 @@ public class Filter {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-action")
-    private String action;
+    private CharSequence action;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-detectorid
      * 
      */
     @JsonProperty("DetectorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-detectorid")
-    private String detectorId;
+    private CharSequence detectorId;
     /**
      * FindingCriteria
      * <p>
@@ -70,14 +70,14 @@ public class Filter {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-action
      * 
      */
     @JsonProperty("Action")
-    public String getAction() {
+    public CharSequence getAction() {
         return action;
     }
 
@@ -86,11 +86,11 @@ public class Filter {
      * 
      */
     @JsonProperty("Action")
-    public void setAction(String action) {
+    public void setAction(CharSequence action) {
         this.action = action;
     }
 
-    public Filter withAction(String action) {
+    public Filter withAction(CharSequence action) {
         this.action = action;
         return this;
     }
@@ -100,7 +100,7 @@ public class Filter {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -109,11 +109,11 @@ public class Filter {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Filter withDescription(String description) {
+    public Filter withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -123,7 +123,7 @@ public class Filter {
      * 
      */
     @JsonProperty("DetectorId")
-    public String getDetectorId() {
+    public CharSequence getDetectorId() {
         return detectorId;
     }
 
@@ -132,11 +132,11 @@ public class Filter {
      * 
      */
     @JsonProperty("DetectorId")
-    public void setDetectorId(String detectorId) {
+    public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
 
-    public Filter withDetectorId(String detectorId) {
+    public Filter withDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
         return this;
     }
@@ -196,7 +196,7 @@ public class Filter {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -205,11 +205,11 @@ public class Filter {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Filter withName(String name) {
+    public Filter withName(CharSequence name) {
         this.name = name;
         return this;
     }

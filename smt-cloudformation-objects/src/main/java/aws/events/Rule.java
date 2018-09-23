@@ -37,7 +37,7 @@ public class Rule {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
@@ -51,28 +51,28 @@ public class Rule {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-scheduleexpression
      * 
      */
     @JsonProperty("ScheduleExpression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-scheduleexpression")
-    private String scheduleExpression;
+    private CharSequence scheduleExpression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-state
      * 
      */
     @JsonProperty("State")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-state")
-    private String state;
+    private CharSequence state;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-targets
      * 
@@ -87,7 +87,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -96,11 +96,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Rule withDescription(String description) {
+    public Rule withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -133,7 +133,7 @@ public class Rule {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -142,11 +142,11 @@ public class Rule {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Rule withName(String name) {
+    public Rule withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -156,7 +156,7 @@ public class Rule {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -165,11 +165,11 @@ public class Rule {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public Rule withRoleArn(String roleArn) {
+    public Rule withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -179,7 +179,7 @@ public class Rule {
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public String getScheduleExpression() {
+    public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
 
@@ -188,11 +188,11 @@ public class Rule {
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public void setScheduleExpression(String scheduleExpression) {
+    public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }
 
-    public Rule withScheduleExpression(String scheduleExpression) {
+    public Rule withScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
         return this;
     }
@@ -202,7 +202,7 @@ public class Rule {
      * 
      */
     @JsonProperty("State")
-    public String getState() {
+    public CharSequence getState() {
         return state;
     }
 
@@ -211,11 +211,11 @@ public class Rule {
      * 
      */
     @JsonProperty("State")
-    public void setState(String state) {
+    public void setState(CharSequence state) {
         this.state = state;
     }
 
-    public Rule withState(String state) {
+    public Rule withState(CharSequence state) {
         this.state = state;
         return this;
     }

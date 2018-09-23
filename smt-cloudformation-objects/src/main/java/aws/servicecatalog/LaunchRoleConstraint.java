@@ -32,42 +32,42 @@ public class LaunchRoleConstraint {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-productid
      * 
      */
     @JsonProperty("ProductId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-productid")
-    private String productId;
+    private CharSequence productId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -76,11 +76,11 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public LaunchRoleConstraint withDescription(String description) {
+    public LaunchRoleConstraint withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -90,7 +90,7 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -99,11 +99,11 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public LaunchRoleConstraint withAcceptLanguage(String acceptLanguage) {
+    public LaunchRoleConstraint withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -113,7 +113,7 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -122,11 +122,11 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public LaunchRoleConstraint withPortfolioId(String portfolioId) {
+    public LaunchRoleConstraint withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }
@@ -136,7 +136,7 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public String getProductId() {
+    public CharSequence getProductId() {
         return productId;
     }
 
@@ -145,11 +145,11 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public void setProductId(String productId) {
+    public void setProductId(CharSequence productId) {
         this.productId = productId;
     }
 
-    public LaunchRoleConstraint withProductId(String productId) {
+    public LaunchRoleConstraint withProductId(CharSequence productId) {
         this.productId = productId;
         return this;
     }
@@ -159,7 +159,7 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -168,11 +168,11 @@ public class LaunchRoleConstraint {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public LaunchRoleConstraint withRoleArn(String roleArn) {
+    public LaunchRoleConstraint withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

@@ -30,7 +30,7 @@ public class ConfigurationRecorder {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-name")
-    private String name;
+    private CharSequence name;
     /**
      * RecordingGroup
      * <p>
@@ -46,14 +46,14 @@ public class ConfigurationRecorder {
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-name
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -62,11 +62,11 @@ public class ConfigurationRecorder {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ConfigurationRecorder withName(String name) {
+    public ConfigurationRecorder withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -103,7 +103,7 @@ public class ConfigurationRecorder {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -112,11 +112,11 @@ public class ConfigurationRecorder {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public ConfigurationRecorder withRoleARN(String roleARN) {
+    public ConfigurationRecorder withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }

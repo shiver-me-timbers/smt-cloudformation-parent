@@ -29,21 +29,21 @@ public class DomainValidationOption {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
     @JsonProperty("ValidationDomain")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain")
-    private String validationDomain;
+    private CharSequence validationDomain;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -52,11 +52,11 @@ public class DomainValidationOption {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public DomainValidationOption withDomainName(String domainName) {
+    public DomainValidationOption withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -66,7 +66,7 @@ public class DomainValidationOption {
      * 
      */
     @JsonProperty("ValidationDomain")
-    public String getValidationDomain() {
+    public CharSequence getValidationDomain() {
         return validationDomain;
     }
 
@@ -75,11 +75,11 @@ public class DomainValidationOption {
      * 
      */
     @JsonProperty("ValidationDomain")
-    public void setValidationDomain(String validationDomain) {
+    public void setValidationDomain(CharSequence validationDomain) {
         this.validationDomain = validationDomain;
     }
 
-    public DomainValidationOption withValidationDomain(String validationDomain) {
+    public DomainValidationOption withValidationDomain(CharSequence validationDomain) {
         this.validationDomain = validationDomain;
         return this;
     }

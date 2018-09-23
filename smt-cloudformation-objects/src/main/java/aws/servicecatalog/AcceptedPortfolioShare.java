@@ -29,21 +29,21 @@ public class AcceptedPortfolioShare {
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -52,11 +52,11 @@ public class AcceptedPortfolioShare {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public AcceptedPortfolioShare withAcceptLanguage(String acceptLanguage) {
+    public AcceptedPortfolioShare withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -66,7 +66,7 @@ public class AcceptedPortfolioShare {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -75,11 +75,11 @@ public class AcceptedPortfolioShare {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public AcceptedPortfolioShare withPortfolioId(String portfolioId) {
+    public AcceptedPortfolioShare withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }

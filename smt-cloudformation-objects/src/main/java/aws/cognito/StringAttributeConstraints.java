@@ -29,21 +29,21 @@ public class StringAttributeConstraints {
      */
     @JsonProperty("MinLength")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength")
-    private String minLength;
+    private CharSequence minLength;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength
      * 
      */
     @JsonProperty("MaxLength")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength")
-    private String maxLength;
+    private CharSequence maxLength;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength
      * 
      */
     @JsonProperty("MinLength")
-    public String getMinLength() {
+    public CharSequence getMinLength() {
         return minLength;
     }
 
@@ -52,11 +52,11 @@ public class StringAttributeConstraints {
      * 
      */
     @JsonProperty("MinLength")
-    public void setMinLength(String minLength) {
+    public void setMinLength(CharSequence minLength) {
         this.minLength = minLength;
     }
 
-    public StringAttributeConstraints withMinLength(String minLength) {
+    public StringAttributeConstraints withMinLength(CharSequence minLength) {
         this.minLength = minLength;
         return this;
     }
@@ -66,7 +66,7 @@ public class StringAttributeConstraints {
      * 
      */
     @JsonProperty("MaxLength")
-    public String getMaxLength() {
+    public CharSequence getMaxLength() {
         return maxLength;
     }
 
@@ -75,11 +75,11 @@ public class StringAttributeConstraints {
      * 
      */
     @JsonProperty("MaxLength")
-    public void setMaxLength(String maxLength) {
+    public void setMaxLength(CharSequence maxLength) {
         this.maxLength = maxLength;
     }
 
-    public StringAttributeConstraints withMaxLength(String maxLength) {
+    public StringAttributeConstraints withMaxLength(CharSequence maxLength) {
         this.maxLength = maxLength;
         return this;
     }

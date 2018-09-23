@@ -30,28 +30,28 @@ public class PortfolioShare {
      */
     @JsonProperty("AccountId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-accountid")
-    private String accountId;
+    private CharSequence accountId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-accountid
      * 
      */
     @JsonProperty("AccountId")
-    public String getAccountId() {
+    public CharSequence getAccountId() {
         return accountId;
     }
 
@@ -60,11 +60,11 @@ public class PortfolioShare {
      * 
      */
     @JsonProperty("AccountId")
-    public void setAccountId(String accountId) {
+    public void setAccountId(CharSequence accountId) {
         this.accountId = accountId;
     }
 
-    public PortfolioShare withAccountId(String accountId) {
+    public PortfolioShare withAccountId(CharSequence accountId) {
         this.accountId = accountId;
         return this;
     }
@@ -74,7 +74,7 @@ public class PortfolioShare {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -83,11 +83,11 @@ public class PortfolioShare {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public PortfolioShare withAcceptLanguage(String acceptLanguage) {
+    public PortfolioShare withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -97,7 +97,7 @@ public class PortfolioShare {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -106,11 +106,11 @@ public class PortfolioShare {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public PortfolioShare withPortfolioId(String portfolioId) {
+    public PortfolioShare withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }

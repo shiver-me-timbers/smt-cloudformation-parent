@@ -33,14 +33,14 @@ public class Device {
      */
     @JsonProperty("ContainerPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath")
-    private String containerPath;
+    private CharSequence containerPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath
      * 
      */
     @JsonProperty("HostPath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath")
-    private String hostPath;
+    private CharSequence hostPath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions
      * 
@@ -48,14 +48,14 @@ public class Device {
     @JsonProperty("Permissions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions")
-    private Set<String> permissions = new LinkedHashSet<String>();
+    private Set<CharSequence> permissions = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath
      * 
      */
     @JsonProperty("ContainerPath")
-    public String getContainerPath() {
+    public CharSequence getContainerPath() {
         return containerPath;
     }
 
@@ -64,11 +64,11 @@ public class Device {
      * 
      */
     @JsonProperty("ContainerPath")
-    public void setContainerPath(String containerPath) {
+    public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
 
-    public Device withContainerPath(String containerPath) {
+    public Device withContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
         return this;
     }
@@ -78,7 +78,7 @@ public class Device {
      * 
      */
     @JsonProperty("HostPath")
-    public String getHostPath() {
+    public CharSequence getHostPath() {
         return hostPath;
     }
 
@@ -87,11 +87,11 @@ public class Device {
      * 
      */
     @JsonProperty("HostPath")
-    public void setHostPath(String hostPath) {
+    public void setHostPath(CharSequence hostPath) {
         this.hostPath = hostPath;
     }
 
-    public Device withHostPath(String hostPath) {
+    public Device withHostPath(CharSequence hostPath) {
         this.hostPath = hostPath;
         return this;
     }
@@ -101,7 +101,7 @@ public class Device {
      * 
      */
     @JsonProperty("Permissions")
-    public Set<String> getPermissions() {
+    public Set<CharSequence> getPermissions() {
         return permissions;
     }
 
@@ -110,11 +110,11 @@ public class Device {
      * 
      */
     @JsonProperty("Permissions")
-    public void setPermissions(Set<String> permissions) {
+    public void setPermissions(Set<CharSequence> permissions) {
         this.permissions = permissions;
     }
 
-    public Device withPermissions(Set<String> permissions) {
+    public Device withPermissions(Set<CharSequence> permissions) {
         this.permissions = permissions;
         return this;
     }

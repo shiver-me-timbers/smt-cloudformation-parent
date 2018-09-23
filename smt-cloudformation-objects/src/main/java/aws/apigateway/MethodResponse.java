@@ -45,7 +45,7 @@ public class MethodResponse {
      */
     @JsonProperty("StatusCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode")
-    private java.lang.String statusCode;
+    private CharSequence statusCode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels
@@ -98,7 +98,7 @@ public class MethodResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public java.lang.String getStatusCode() {
+    public CharSequence getStatusCode() {
         return statusCode;
     }
 
@@ -107,11 +107,11 @@ public class MethodResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public void setStatusCode(java.lang.String statusCode) {
+    public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }
 
-    public MethodResponse withStatusCode(java.lang.String statusCode) {
+    public MethodResponse withStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
         return this;
     }

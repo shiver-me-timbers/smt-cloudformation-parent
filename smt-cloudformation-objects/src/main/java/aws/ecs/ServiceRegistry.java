@@ -36,7 +36,7 @@ public class ServiceRegistry {
      */
     @JsonProperty("RegistryArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-registryarn")
-    private String registryArn;
+    private CharSequence registryArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
@@ -66,7 +66,7 @@ public class ServiceRegistry {
      * 
      */
     @JsonProperty("RegistryArn")
-    public String getRegistryArn() {
+    public CharSequence getRegistryArn() {
         return registryArn;
     }
 
@@ -75,11 +75,11 @@ public class ServiceRegistry {
      * 
      */
     @JsonProperty("RegistryArn")
-    public void setRegistryArn(String registryArn) {
+    public void setRegistryArn(CharSequence registryArn) {
         this.registryArn = registryArn;
     }
 
-    public ServiceRegistry withRegistryArn(String registryArn) {
+    public ServiceRegistry withRegistryArn(CharSequence registryArn) {
         this.registryArn = registryArn;
         return this;
     }

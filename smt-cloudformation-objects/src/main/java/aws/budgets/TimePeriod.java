@@ -29,21 +29,21 @@ public class TimePeriod {
      */
     @JsonProperty("Start")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start")
-    private String start;
+    private CharSequence start;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end
      * 
      */
     @JsonProperty("End")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end")
-    private String end;
+    private CharSequence end;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start
      * 
      */
     @JsonProperty("Start")
-    public String getStart() {
+    public CharSequence getStart() {
         return start;
     }
 
@@ -52,11 +52,11 @@ public class TimePeriod {
      * 
      */
     @JsonProperty("Start")
-    public void setStart(String start) {
+    public void setStart(CharSequence start) {
         this.start = start;
     }
 
-    public TimePeriod withStart(String start) {
+    public TimePeriod withStart(CharSequence start) {
         this.start = start;
         return this;
     }
@@ -66,7 +66,7 @@ public class TimePeriod {
      * 
      */
     @JsonProperty("End")
-    public String getEnd() {
+    public CharSequence getEnd() {
         return end;
     }
 
@@ -75,11 +75,11 @@ public class TimePeriod {
      * 
      */
     @JsonProperty("End")
-    public void setEnd(String end) {
+    public void setEnd(CharSequence end) {
         this.end = end;
     }
 
-    public TimePeriod withEnd(String end) {
+    public TimePeriod withEnd(CharSequence end) {
         this.end = end;
         return this;
     }

@@ -34,7 +34,7 @@ public class NodeGroupConfiguration {
      */
     @JsonProperty("PrimaryAvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone")
-    private String primaryAvailabilityZone;
+    private CharSequence primaryAvailabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicaavailabilityzones
      * 
@@ -42,7 +42,7 @@ public class NodeGroupConfiguration {
     @JsonProperty("ReplicaAvailabilityZones")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicaavailabilityzones")
-    private Set<String> replicaAvailabilityZones = new LinkedHashSet<String>();
+    private Set<CharSequence> replicaAvailabilityZones = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicacount
      * 
@@ -56,14 +56,14 @@ public class NodeGroupConfiguration {
      */
     @JsonProperty("Slots")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-slots")
-    private String slots;
+    private CharSequence slots;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone
      * 
      */
     @JsonProperty("PrimaryAvailabilityZone")
-    public String getPrimaryAvailabilityZone() {
+    public CharSequence getPrimaryAvailabilityZone() {
         return primaryAvailabilityZone;
     }
 
@@ -72,11 +72,11 @@ public class NodeGroupConfiguration {
      * 
      */
     @JsonProperty("PrimaryAvailabilityZone")
-    public void setPrimaryAvailabilityZone(String primaryAvailabilityZone) {
+    public void setPrimaryAvailabilityZone(CharSequence primaryAvailabilityZone) {
         this.primaryAvailabilityZone = primaryAvailabilityZone;
     }
 
-    public NodeGroupConfiguration withPrimaryAvailabilityZone(String primaryAvailabilityZone) {
+    public NodeGroupConfiguration withPrimaryAvailabilityZone(CharSequence primaryAvailabilityZone) {
         this.primaryAvailabilityZone = primaryAvailabilityZone;
         return this;
     }
@@ -86,7 +86,7 @@ public class NodeGroupConfiguration {
      * 
      */
     @JsonProperty("ReplicaAvailabilityZones")
-    public Set<String> getReplicaAvailabilityZones() {
+    public Set<CharSequence> getReplicaAvailabilityZones() {
         return replicaAvailabilityZones;
     }
 
@@ -95,11 +95,11 @@ public class NodeGroupConfiguration {
      * 
      */
     @JsonProperty("ReplicaAvailabilityZones")
-    public void setReplicaAvailabilityZones(Set<String> replicaAvailabilityZones) {
+    public void setReplicaAvailabilityZones(Set<CharSequence> replicaAvailabilityZones) {
         this.replicaAvailabilityZones = replicaAvailabilityZones;
     }
 
-    public NodeGroupConfiguration withReplicaAvailabilityZones(Set<String> replicaAvailabilityZones) {
+    public NodeGroupConfiguration withReplicaAvailabilityZones(Set<CharSequence> replicaAvailabilityZones) {
         this.replicaAvailabilityZones = replicaAvailabilityZones;
         return this;
     }
@@ -132,7 +132,7 @@ public class NodeGroupConfiguration {
      * 
      */
     @JsonProperty("Slots")
-    public String getSlots() {
+    public CharSequence getSlots() {
         return slots;
     }
 
@@ -141,11 +141,11 @@ public class NodeGroupConfiguration {
      * 
      */
     @JsonProperty("Slots")
-    public void setSlots(String slots) {
+    public void setSlots(CharSequence slots) {
         this.slots = slots;
     }
 
-    public NodeGroupConfiguration withSlots(String slots) {
+    public NodeGroupConfiguration withSlots(CharSequence slots) {
         this.slots = slots;
         return this;
     }

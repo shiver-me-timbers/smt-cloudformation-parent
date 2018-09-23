@@ -46,7 +46,7 @@ public class Endpoint {
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-port
      * 
@@ -60,7 +60,7 @@ public class Endpoint {
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * S3Settings
      * <p>
@@ -76,7 +76,7 @@ public class Endpoint {
      */
     @JsonProperty("EngineName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename")
-    private String engineName;
+    private CharSequence engineName;
     /**
      * DynamoDbSettings
      * <p>
@@ -92,35 +92,35 @@ public class Endpoint {
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username")
-    private String username;
+    private CharSequence username;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-sslmode
      * 
      */
     @JsonProperty("SslMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-sslmode")
-    private String sslMode;
+    private CharSequence sslMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-servername
      * 
      */
     @JsonProperty("ServerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-servername")
-    private String serverName;
+    private CharSequence serverName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-extraconnectionattributes
      * 
      */
     @JsonProperty("ExtraConnectionAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-extraconnectionattributes")
-    private String extraConnectionAttributes;
+    private CharSequence extraConnectionAttributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointtype
      * 
      */
     @JsonProperty("EndpointType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointtype")
-    private String endpointType;
+    private CharSequence endpointType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-tags
      * 
@@ -134,21 +134,21 @@ public class Endpoint {
      */
     @JsonProperty("EndpointIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointidentifier")
-    private String endpointIdentifier;
+    private CharSequence endpointIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-password
      * 
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-password")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-certificatearn
      * 
      */
     @JsonProperty("CertificateArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-certificatearn")
-    private String certificateArn;
+    private CharSequence certificateArn;
     /**
      * MongoDbSettings
      * <p>
@@ -164,7 +164,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -173,11 +173,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public Endpoint withKmsKeyId(String kmsKeyId) {
+    public Endpoint withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -210,7 +210,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -219,11 +219,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public Endpoint withDatabaseName(String databaseName) {
+    public Endpoint withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -260,7 +260,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EngineName")
-    public String getEngineName() {
+    public CharSequence getEngineName() {
         return engineName;
     }
 
@@ -269,11 +269,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EngineName")
-    public void setEngineName(String engineName) {
+    public void setEngineName(CharSequence engineName) {
         this.engineName = engineName;
     }
 
-    public Endpoint withEngineName(String engineName) {
+    public Endpoint withEngineName(CharSequence engineName) {
         this.engineName = engineName;
         return this;
     }
@@ -310,7 +310,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -319,11 +319,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public Endpoint withUsername(String username) {
+    public Endpoint withUsername(CharSequence username) {
         this.username = username;
         return this;
     }
@@ -333,7 +333,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("SslMode")
-    public String getSslMode() {
+    public CharSequence getSslMode() {
         return sslMode;
     }
 
@@ -342,11 +342,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("SslMode")
-    public void setSslMode(String sslMode) {
+    public void setSslMode(CharSequence sslMode) {
         this.sslMode = sslMode;
     }
 
-    public Endpoint withSslMode(String sslMode) {
+    public Endpoint withSslMode(CharSequence sslMode) {
         this.sslMode = sslMode;
         return this;
     }
@@ -356,7 +356,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("ServerName")
-    public String getServerName() {
+    public CharSequence getServerName() {
         return serverName;
     }
 
@@ -365,11 +365,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("ServerName")
-    public void setServerName(String serverName) {
+    public void setServerName(CharSequence serverName) {
         this.serverName = serverName;
     }
 
-    public Endpoint withServerName(String serverName) {
+    public Endpoint withServerName(CharSequence serverName) {
         this.serverName = serverName;
         return this;
     }
@@ -379,7 +379,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("ExtraConnectionAttributes")
-    public String getExtraConnectionAttributes() {
+    public CharSequence getExtraConnectionAttributes() {
         return extraConnectionAttributes;
     }
 
@@ -388,11 +388,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("ExtraConnectionAttributes")
-    public void setExtraConnectionAttributes(String extraConnectionAttributes) {
+    public void setExtraConnectionAttributes(CharSequence extraConnectionAttributes) {
         this.extraConnectionAttributes = extraConnectionAttributes;
     }
 
-    public Endpoint withExtraConnectionAttributes(String extraConnectionAttributes) {
+    public Endpoint withExtraConnectionAttributes(CharSequence extraConnectionAttributes) {
         this.extraConnectionAttributes = extraConnectionAttributes;
         return this;
     }
@@ -402,7 +402,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EndpointType")
-    public String getEndpointType() {
+    public CharSequence getEndpointType() {
         return endpointType;
     }
 
@@ -411,11 +411,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EndpointType")
-    public void setEndpointType(String endpointType) {
+    public void setEndpointType(CharSequence endpointType) {
         this.endpointType = endpointType;
     }
 
-    public Endpoint withEndpointType(String endpointType) {
+    public Endpoint withEndpointType(CharSequence endpointType) {
         this.endpointType = endpointType;
         return this;
     }
@@ -448,7 +448,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EndpointIdentifier")
-    public String getEndpointIdentifier() {
+    public CharSequence getEndpointIdentifier() {
         return endpointIdentifier;
     }
 
@@ -457,11 +457,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("EndpointIdentifier")
-    public void setEndpointIdentifier(String endpointIdentifier) {
+    public void setEndpointIdentifier(CharSequence endpointIdentifier) {
         this.endpointIdentifier = endpointIdentifier;
     }
 
-    public Endpoint withEndpointIdentifier(String endpointIdentifier) {
+    public Endpoint withEndpointIdentifier(CharSequence endpointIdentifier) {
         this.endpointIdentifier = endpointIdentifier;
         return this;
     }
@@ -471,7 +471,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -480,11 +480,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public Endpoint withPassword(String password) {
+    public Endpoint withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -494,7 +494,7 @@ public class Endpoint {
      * 
      */
     @JsonProperty("CertificateArn")
-    public String getCertificateArn() {
+    public CharSequence getCertificateArn() {
         return certificateArn;
     }
 
@@ -503,11 +503,11 @@ public class Endpoint {
      * 
      */
     @JsonProperty("CertificateArn")
-    public void setCertificateArn(String certificateArn) {
+    public void setCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
     }
 
-    public Endpoint withCertificateArn(String certificateArn) {
+    public Endpoint withCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
         return this;
     }

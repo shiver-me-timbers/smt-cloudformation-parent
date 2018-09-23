@@ -65,21 +65,21 @@ public class Instance {
      */
     @JsonProperty("AdditionalInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-additionalinfo")
-    private String additionalInfo;
+    private CharSequence additionalInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-affinity
      * 
      */
     @JsonProperty("Affinity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-affinity")
-    private String affinity;
+    private CharSequence affinity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-blockdevicemappings
      * 
@@ -124,35 +124,35 @@ public class Instance {
      */
     @JsonProperty("HostId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid")
-    private String hostId;
+    private CharSequence hostId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-iaminstanceprofile
      * 
      */
     @JsonProperty("IamInstanceProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-iaminstanceprofile")
-    private String iamInstanceProfile;
+    private CharSequence iamInstanceProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid
      * 
      */
     @JsonProperty("ImageId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid")
-    private String imageId;
+    private CharSequence imageId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instanceinitiatedshutdownbehavior
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instanceinitiatedshutdownbehavior")
-    private String instanceInitiatedShutdownBehavior;
+    private CharSequence instanceInitiatedShutdownBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instancetype
      * 
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresscount
      * 
@@ -173,14 +173,14 @@ public class Instance {
      */
     @JsonProperty("KernelId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-kernelid")
-    private String kernelId;
+    private CharSequence kernelId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-keyname
      * 
      */
     @JsonProperty("KeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-keyname")
-    private String keyName;
+    private CharSequence keyName;
     /**
      * FleetLaunchTemplateSpecification
      * <p>
@@ -210,35 +210,35 @@ public class Instance {
      */
     @JsonProperty("PlacementGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-placementgroupname")
-    private String placementGroupName;
+    private CharSequence placementGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-privateipaddress
      * 
      */
     @JsonProperty("PrivateIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-privateipaddress")
-    private String privateIpAddress;
+    private CharSequence privateIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ramdiskid
      * 
      */
     @JsonProperty("RamdiskId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ramdiskid")
-    private String ramdiskId;
+    private CharSequence ramdiskId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroupids")
-    private List<String> securityGroupIds = new ArrayList<String>();
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroups
      * 
      */
     @JsonProperty("SecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroups")
-    private List<String> securityGroups = new ArrayList<String>();
+    private List<CharSequence> securityGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-sourcedestcheck
      * 
@@ -259,7 +259,7 @@ public class Instance {
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tags
      * 
@@ -273,14 +273,14 @@ public class Instance {
      */
     @JsonProperty("Tenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tenancy")
-    private String tenancy;
+    private CharSequence tenancy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-userdata
      * 
      */
     @JsonProperty("UserData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-userdata")
-    private String userData;
+    private CharSequence userData;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-volumes
      * 
@@ -294,7 +294,7 @@ public class Instance {
      * 
      */
     @JsonProperty("AdditionalInfo")
-    public String getAdditionalInfo() {
+    public CharSequence getAdditionalInfo() {
         return additionalInfo;
     }
 
@@ -303,11 +303,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AdditionalInfo")
-    public void setAdditionalInfo(String additionalInfo) {
+    public void setAdditionalInfo(CharSequence additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
 
-    public Instance withAdditionalInfo(String additionalInfo) {
+    public Instance withAdditionalInfo(CharSequence additionalInfo) {
         this.additionalInfo = additionalInfo;
         return this;
     }
@@ -317,7 +317,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Affinity")
-    public String getAffinity() {
+    public CharSequence getAffinity() {
         return affinity;
     }
 
@@ -326,11 +326,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Affinity")
-    public void setAffinity(String affinity) {
+    public void setAffinity(CharSequence affinity) {
         this.affinity = affinity;
     }
 
-    public Instance withAffinity(String affinity) {
+    public Instance withAffinity(CharSequence affinity) {
         this.affinity = affinity;
         return this;
     }
@@ -340,7 +340,7 @@ public class Instance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -349,11 +349,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Instance withAvailabilityZone(String availabilityZone) {
+    public Instance withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -482,7 +482,7 @@ public class Instance {
      * 
      */
     @JsonProperty("HostId")
-    public String getHostId() {
+    public CharSequence getHostId() {
         return hostId;
     }
 
@@ -491,11 +491,11 @@ public class Instance {
      * 
      */
     @JsonProperty("HostId")
-    public void setHostId(String hostId) {
+    public void setHostId(CharSequence hostId) {
         this.hostId = hostId;
     }
 
-    public Instance withHostId(String hostId) {
+    public Instance withHostId(CharSequence hostId) {
         this.hostId = hostId;
         return this;
     }
@@ -505,7 +505,7 @@ public class Instance {
      * 
      */
     @JsonProperty("IamInstanceProfile")
-    public String getIamInstanceProfile() {
+    public CharSequence getIamInstanceProfile() {
         return iamInstanceProfile;
     }
 
@@ -514,11 +514,11 @@ public class Instance {
      * 
      */
     @JsonProperty("IamInstanceProfile")
-    public void setIamInstanceProfile(String iamInstanceProfile) {
+    public void setIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
 
-    public Instance withIamInstanceProfile(String iamInstanceProfile) {
+    public Instance withIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
         return this;
     }
@@ -528,7 +528,7 @@ public class Instance {
      * 
      */
     @JsonProperty("ImageId")
-    public String getImageId() {
+    public CharSequence getImageId() {
         return imageId;
     }
 
@@ -537,11 +537,11 @@ public class Instance {
      * 
      */
     @JsonProperty("ImageId")
-    public void setImageId(String imageId) {
+    public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
 
-    public Instance withImageId(String imageId) {
+    public Instance withImageId(CharSequence imageId) {
         this.imageId = imageId;
         return this;
     }
@@ -551,7 +551,7 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
-    public String getInstanceInitiatedShutdownBehavior() {
+    public CharSequence getInstanceInitiatedShutdownBehavior() {
         return instanceInitiatedShutdownBehavior;
     }
 
@@ -560,11 +560,11 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
-    public void setInstanceInitiatedShutdownBehavior(String instanceInitiatedShutdownBehavior) {
+    public void setInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
         this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
     }
 
-    public Instance withInstanceInitiatedShutdownBehavior(String instanceInitiatedShutdownBehavior) {
+    public Instance withInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
         this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
         return this;
     }
@@ -574,7 +574,7 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -583,11 +583,11 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public Instance withInstanceType(String instanceType) {
+    public Instance withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -643,7 +643,7 @@ public class Instance {
      * 
      */
     @JsonProperty("KernelId")
-    public String getKernelId() {
+    public CharSequence getKernelId() {
         return kernelId;
     }
 
@@ -652,11 +652,11 @@ public class Instance {
      * 
      */
     @JsonProperty("KernelId")
-    public void setKernelId(String kernelId) {
+    public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
 
-    public Instance withKernelId(String kernelId) {
+    public Instance withKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
         return this;
     }
@@ -666,7 +666,7 @@ public class Instance {
      * 
      */
     @JsonProperty("KeyName")
-    public String getKeyName() {
+    public CharSequence getKeyName() {
         return keyName;
     }
 
@@ -675,11 +675,11 @@ public class Instance {
      * 
      */
     @JsonProperty("KeyName")
-    public void setKeyName(String keyName) {
+    public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
 
-    public Instance withKeyName(String keyName) {
+    public Instance withKeyName(CharSequence keyName) {
         this.keyName = keyName;
         return this;
     }
@@ -762,7 +762,7 @@ public class Instance {
      * 
      */
     @JsonProperty("PlacementGroupName")
-    public String getPlacementGroupName() {
+    public CharSequence getPlacementGroupName() {
         return placementGroupName;
     }
 
@@ -771,11 +771,11 @@ public class Instance {
      * 
      */
     @JsonProperty("PlacementGroupName")
-    public void setPlacementGroupName(String placementGroupName) {
+    public void setPlacementGroupName(CharSequence placementGroupName) {
         this.placementGroupName = placementGroupName;
     }
 
-    public Instance withPlacementGroupName(String placementGroupName) {
+    public Instance withPlacementGroupName(CharSequence placementGroupName) {
         this.placementGroupName = placementGroupName;
         return this;
     }
@@ -785,7 +785,7 @@ public class Instance {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public String getPrivateIpAddress() {
+    public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
 
@@ -794,11 +794,11 @@ public class Instance {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public void setPrivateIpAddress(String privateIpAddress) {
+    public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
 
-    public Instance withPrivateIpAddress(String privateIpAddress) {
+    public Instance withPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
         return this;
     }
@@ -808,7 +808,7 @@ public class Instance {
      * 
      */
     @JsonProperty("RamdiskId")
-    public String getRamdiskId() {
+    public CharSequence getRamdiskId() {
         return ramdiskId;
     }
 
@@ -817,11 +817,11 @@ public class Instance {
      * 
      */
     @JsonProperty("RamdiskId")
-    public void setRamdiskId(String ramdiskId) {
+    public void setRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
     }
 
-    public Instance withRamdiskId(String ramdiskId) {
+    public Instance withRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
         return this;
     }
@@ -831,7 +831,7 @@ public class Instance {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public List<String> getSecurityGroupIds() {
+    public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -840,11 +840,11 @@ public class Instance {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(List<String> securityGroupIds) {
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public Instance withSecurityGroupIds(List<String> securityGroupIds) {
+    public Instance withSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -854,7 +854,7 @@ public class Instance {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public List<String> getSecurityGroups() {
+    public List<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -863,11 +863,11 @@ public class Instance {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(List<String> securityGroups) {
+    public void setSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public Instance withSecurityGroups(List<String> securityGroups) {
+    public Instance withSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -923,7 +923,7 @@ public class Instance {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -932,11 +932,11 @@ public class Instance {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public Instance withSubnetId(String subnetId) {
+    public Instance withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }
@@ -969,7 +969,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Tenancy")
-    public String getTenancy() {
+    public CharSequence getTenancy() {
         return tenancy;
     }
 
@@ -978,11 +978,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Tenancy")
-    public void setTenancy(String tenancy) {
+    public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
 
-    public Instance withTenancy(String tenancy) {
+    public Instance withTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
         return this;
     }
@@ -992,7 +992,7 @@ public class Instance {
      * 
      */
     @JsonProperty("UserData")
-    public String getUserData() {
+    public CharSequence getUserData() {
         return userData;
     }
 
@@ -1001,11 +1001,11 @@ public class Instance {
      * 
      */
     @JsonProperty("UserData")
-    public void setUserData(String userData) {
+    public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
 
-    public Instance withUserData(String userData) {
+    public Instance withUserData(CharSequence userData) {
         this.userData = userData;
         return this;
     }

@@ -29,21 +29,21 @@ public class S3Origin {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity
      * 
      */
     @JsonProperty("OriginAccessIdentity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity")
-    private String originAccessIdentity;
+    private CharSequence originAccessIdentity;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -52,11 +52,11 @@ public class S3Origin {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public S3Origin withDomainName(String domainName) {
+    public S3Origin withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -66,7 +66,7 @@ public class S3Origin {
      * 
      */
     @JsonProperty("OriginAccessIdentity")
-    public String getOriginAccessIdentity() {
+    public CharSequence getOriginAccessIdentity() {
         return originAccessIdentity;
     }
 
@@ -75,11 +75,11 @@ public class S3Origin {
      * 
      */
     @JsonProperty("OriginAccessIdentity")
-    public void setOriginAccessIdentity(String originAccessIdentity) {
+    public void setOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
     }
 
-    public S3Origin withOriginAccessIdentity(String originAccessIdentity) {
+    public S3Origin withOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
         return this;
     }

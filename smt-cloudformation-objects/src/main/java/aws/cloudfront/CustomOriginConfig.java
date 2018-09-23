@@ -56,7 +56,7 @@ public class CustomOriginConfig {
      */
     @JsonProperty("OriginSSLProtocols")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originsslprotocols")
-    private List<String> originSSLProtocols = new ArrayList<String>();
+    private List<CharSequence> originSSLProtocols = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpport
      * 
@@ -70,7 +70,7 @@ public class CustomOriginConfig {
      */
     @JsonProperty("OriginProtocolPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originprotocolpolicy")
-    private String originProtocolPolicy;
+    private CharSequence originProtocolPolicy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originreadtimeout
@@ -146,7 +146,7 @@ public class CustomOriginConfig {
      * 
      */
     @JsonProperty("OriginSSLProtocols")
-    public List<String> getOriginSSLProtocols() {
+    public List<CharSequence> getOriginSSLProtocols() {
         return originSSLProtocols;
     }
 
@@ -155,11 +155,11 @@ public class CustomOriginConfig {
      * 
      */
     @JsonProperty("OriginSSLProtocols")
-    public void setOriginSSLProtocols(List<String> originSSLProtocols) {
+    public void setOriginSSLProtocols(List<CharSequence> originSSLProtocols) {
         this.originSSLProtocols = originSSLProtocols;
     }
 
-    public CustomOriginConfig withOriginSSLProtocols(List<String> originSSLProtocols) {
+    public CustomOriginConfig withOriginSSLProtocols(List<CharSequence> originSSLProtocols) {
         this.originSSLProtocols = originSSLProtocols;
         return this;
     }
@@ -192,7 +192,7 @@ public class CustomOriginConfig {
      * 
      */
     @JsonProperty("OriginProtocolPolicy")
-    public String getOriginProtocolPolicy() {
+    public CharSequence getOriginProtocolPolicy() {
         return originProtocolPolicy;
     }
 
@@ -201,11 +201,11 @@ public class CustomOriginConfig {
      * 
      */
     @JsonProperty("OriginProtocolPolicy")
-    public void setOriginProtocolPolicy(String originProtocolPolicy) {
+    public void setOriginProtocolPolicy(CharSequence originProtocolPolicy) {
         this.originProtocolPolicy = originProtocolPolicy;
     }
 
-    public CustomOriginConfig withOriginProtocolPolicy(String originProtocolPolicy) {
+    public CustomOriginConfig withOriginProtocolPolicy(CharSequence originProtocolPolicy) {
         this.originProtocolPolicy = originProtocolPolicy;
         return this;
     }

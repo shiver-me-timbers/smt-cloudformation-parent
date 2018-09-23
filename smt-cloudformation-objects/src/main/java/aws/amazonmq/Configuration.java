@@ -32,42 +32,42 @@ public class Configuration {
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-enginetype
      * 
      */
     @JsonProperty("EngineType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-enginetype")
-    private String engineType;
+    private CharSequence engineType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-data
      * 
      */
     @JsonProperty("Data")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-data")
-    private String data;
+    private CharSequence data;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -76,11 +76,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public Configuration withEngineVersion(String engineVersion) {
+    public Configuration withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -90,7 +90,7 @@ public class Configuration {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -99,11 +99,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Configuration withDescription(String description) {
+    public Configuration withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -113,7 +113,7 @@ public class Configuration {
      * 
      */
     @JsonProperty("EngineType")
-    public String getEngineType() {
+    public CharSequence getEngineType() {
         return engineType;
     }
 
@@ -122,11 +122,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("EngineType")
-    public void setEngineType(String engineType) {
+    public void setEngineType(CharSequence engineType) {
         this.engineType = engineType;
     }
 
-    public Configuration withEngineType(String engineType) {
+    public Configuration withEngineType(CharSequence engineType) {
         this.engineType = engineType;
         return this;
     }
@@ -136,7 +136,7 @@ public class Configuration {
      * 
      */
     @JsonProperty("Data")
-    public String getData() {
+    public CharSequence getData() {
         return data;
     }
 
@@ -145,11 +145,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("Data")
-    public void setData(String data) {
+    public void setData(CharSequence data) {
         this.data = data;
     }
 
-    public Configuration withData(String data) {
+    public Configuration withData(CharSequence data) {
         this.data = data;
         return this;
     }
@@ -159,7 +159,7 @@ public class Configuration {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -168,11 +168,11 @@ public class Configuration {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Configuration withName(String name) {
+    public Configuration withName(CharSequence name) {
         this.name = name;
         return this;
     }

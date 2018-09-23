@@ -29,7 +29,7 @@ public class NoncurrentVersionTransition {
      */
     @JsonProperty("StorageClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-storageclass")
-    private String storageClass;
+    private CharSequence storageClass;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-transitionindays
      * 
@@ -43,7 +43,7 @@ public class NoncurrentVersionTransition {
      * 
      */
     @JsonProperty("StorageClass")
-    public String getStorageClass() {
+    public CharSequence getStorageClass() {
         return storageClass;
     }
 
@@ -52,11 +52,11 @@ public class NoncurrentVersionTransition {
      * 
      */
     @JsonProperty("StorageClass")
-    public void setStorageClass(String storageClass) {
+    public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }
 
-    public NoncurrentVersionTransition withStorageClass(String storageClass) {
+    public NoncurrentVersionTransition withStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
         return this;
     }

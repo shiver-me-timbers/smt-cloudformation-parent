@@ -45,7 +45,7 @@ public class JobFlowInstancesConfig {
     @JsonProperty("AdditionalMasterSecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalmastersecuritygroups")
-    private Set<String> additionalMasterSecurityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> additionalMasterSecurityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalslavesecuritygroups
      * 
@@ -53,7 +53,7 @@ public class JobFlowInstancesConfig {
     @JsonProperty("AdditionalSlaveSecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalslavesecuritygroups")
-    private Set<String> additionalSlaveSecurityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> additionalSlaveSecurityGroups = new LinkedHashSet<CharSequence>();
     /**
      * InstanceFleetConfig
      * <p>
@@ -78,35 +78,35 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("Ec2KeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2keyname")
-    private String ec2KeyName;
+    private CharSequence ec2KeyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2subnetid
      * 
      */
     @JsonProperty("Ec2SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2subnetid")
-    private String ec2SubnetId;
+    private CharSequence ec2SubnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedmastersecuritygroup
      * 
      */
     @JsonProperty("EmrManagedMasterSecurityGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedmastersecuritygroup")
-    private String emrManagedMasterSecurityGroup;
+    private CharSequence emrManagedMasterSecurityGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedslavesecuritygroup
      * 
      */
     @JsonProperty("EmrManagedSlaveSecurityGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedslavesecuritygroup")
-    private String emrManagedSlaveSecurityGroup;
+    private CharSequence emrManagedSlaveSecurityGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-hadoopversion
      * 
      */
     @JsonProperty("HadoopVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-hadoopversion")
-    private String hadoopVersion;
+    private CharSequence hadoopVersion;
     /**
      * InstanceFleetConfig
      * <p>
@@ -140,7 +140,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("ServiceAccessSecurityGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-serviceaccesssecuritygroup")
-    private String serviceAccessSecurityGroup;
+    private CharSequence serviceAccessSecurityGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-terminationprotected
      * 
@@ -154,7 +154,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("AdditionalMasterSecurityGroups")
-    public Set<String> getAdditionalMasterSecurityGroups() {
+    public Set<CharSequence> getAdditionalMasterSecurityGroups() {
         return additionalMasterSecurityGroups;
     }
 
@@ -163,11 +163,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("AdditionalMasterSecurityGroups")
-    public void setAdditionalMasterSecurityGroups(Set<String> additionalMasterSecurityGroups) {
+    public void setAdditionalMasterSecurityGroups(Set<CharSequence> additionalMasterSecurityGroups) {
         this.additionalMasterSecurityGroups = additionalMasterSecurityGroups;
     }
 
-    public JobFlowInstancesConfig withAdditionalMasterSecurityGroups(Set<String> additionalMasterSecurityGroups) {
+    public JobFlowInstancesConfig withAdditionalMasterSecurityGroups(Set<CharSequence> additionalMasterSecurityGroups) {
         this.additionalMasterSecurityGroups = additionalMasterSecurityGroups;
         return this;
     }
@@ -177,7 +177,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("AdditionalSlaveSecurityGroups")
-    public Set<String> getAdditionalSlaveSecurityGroups() {
+    public Set<CharSequence> getAdditionalSlaveSecurityGroups() {
         return additionalSlaveSecurityGroups;
     }
 
@@ -186,11 +186,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("AdditionalSlaveSecurityGroups")
-    public void setAdditionalSlaveSecurityGroups(Set<String> additionalSlaveSecurityGroups) {
+    public void setAdditionalSlaveSecurityGroups(Set<CharSequence> additionalSlaveSecurityGroups) {
         this.additionalSlaveSecurityGroups = additionalSlaveSecurityGroups;
     }
 
-    public JobFlowInstancesConfig withAdditionalSlaveSecurityGroups(Set<String> additionalSlaveSecurityGroups) {
+    public JobFlowInstancesConfig withAdditionalSlaveSecurityGroups(Set<CharSequence> additionalSlaveSecurityGroups) {
         this.additionalSlaveSecurityGroups = additionalSlaveSecurityGroups;
         return this;
     }
@@ -254,7 +254,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("Ec2KeyName")
-    public String getEc2KeyName() {
+    public CharSequence getEc2KeyName() {
         return ec2KeyName;
     }
 
@@ -263,11 +263,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("Ec2KeyName")
-    public void setEc2KeyName(String ec2KeyName) {
+    public void setEc2KeyName(CharSequence ec2KeyName) {
         this.ec2KeyName = ec2KeyName;
     }
 
-    public JobFlowInstancesConfig withEc2KeyName(String ec2KeyName) {
+    public JobFlowInstancesConfig withEc2KeyName(CharSequence ec2KeyName) {
         this.ec2KeyName = ec2KeyName;
         return this;
     }
@@ -277,7 +277,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("Ec2SubnetId")
-    public String getEc2SubnetId() {
+    public CharSequence getEc2SubnetId() {
         return ec2SubnetId;
     }
 
@@ -286,11 +286,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("Ec2SubnetId")
-    public void setEc2SubnetId(String ec2SubnetId) {
+    public void setEc2SubnetId(CharSequence ec2SubnetId) {
         this.ec2SubnetId = ec2SubnetId;
     }
 
-    public JobFlowInstancesConfig withEc2SubnetId(String ec2SubnetId) {
+    public JobFlowInstancesConfig withEc2SubnetId(CharSequence ec2SubnetId) {
         this.ec2SubnetId = ec2SubnetId;
         return this;
     }
@@ -300,7 +300,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("EmrManagedMasterSecurityGroup")
-    public String getEmrManagedMasterSecurityGroup() {
+    public CharSequence getEmrManagedMasterSecurityGroup() {
         return emrManagedMasterSecurityGroup;
     }
 
@@ -309,11 +309,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("EmrManagedMasterSecurityGroup")
-    public void setEmrManagedMasterSecurityGroup(String emrManagedMasterSecurityGroup) {
+    public void setEmrManagedMasterSecurityGroup(CharSequence emrManagedMasterSecurityGroup) {
         this.emrManagedMasterSecurityGroup = emrManagedMasterSecurityGroup;
     }
 
-    public JobFlowInstancesConfig withEmrManagedMasterSecurityGroup(String emrManagedMasterSecurityGroup) {
+    public JobFlowInstancesConfig withEmrManagedMasterSecurityGroup(CharSequence emrManagedMasterSecurityGroup) {
         this.emrManagedMasterSecurityGroup = emrManagedMasterSecurityGroup;
         return this;
     }
@@ -323,7 +323,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("EmrManagedSlaveSecurityGroup")
-    public String getEmrManagedSlaveSecurityGroup() {
+    public CharSequence getEmrManagedSlaveSecurityGroup() {
         return emrManagedSlaveSecurityGroup;
     }
 
@@ -332,11 +332,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("EmrManagedSlaveSecurityGroup")
-    public void setEmrManagedSlaveSecurityGroup(String emrManagedSlaveSecurityGroup) {
+    public void setEmrManagedSlaveSecurityGroup(CharSequence emrManagedSlaveSecurityGroup) {
         this.emrManagedSlaveSecurityGroup = emrManagedSlaveSecurityGroup;
     }
 
-    public JobFlowInstancesConfig withEmrManagedSlaveSecurityGroup(String emrManagedSlaveSecurityGroup) {
+    public JobFlowInstancesConfig withEmrManagedSlaveSecurityGroup(CharSequence emrManagedSlaveSecurityGroup) {
         this.emrManagedSlaveSecurityGroup = emrManagedSlaveSecurityGroup;
         return this;
     }
@@ -346,7 +346,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("HadoopVersion")
-    public String getHadoopVersion() {
+    public CharSequence getHadoopVersion() {
         return hadoopVersion;
     }
 
@@ -355,11 +355,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("HadoopVersion")
-    public void setHadoopVersion(String hadoopVersion) {
+    public void setHadoopVersion(CharSequence hadoopVersion) {
         this.hadoopVersion = hadoopVersion;
     }
 
-    public JobFlowInstancesConfig withHadoopVersion(String hadoopVersion) {
+    public JobFlowInstancesConfig withHadoopVersion(CharSequence hadoopVersion) {
         this.hadoopVersion = hadoopVersion;
         return this;
     }
@@ -450,7 +450,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("ServiceAccessSecurityGroup")
-    public String getServiceAccessSecurityGroup() {
+    public CharSequence getServiceAccessSecurityGroup() {
         return serviceAccessSecurityGroup;
     }
 
@@ -459,11 +459,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonProperty("ServiceAccessSecurityGroup")
-    public void setServiceAccessSecurityGroup(String serviceAccessSecurityGroup) {
+    public void setServiceAccessSecurityGroup(CharSequence serviceAccessSecurityGroup) {
         this.serviceAccessSecurityGroup = serviceAccessSecurityGroup;
     }
 
-    public JobFlowInstancesConfig withServiceAccessSecurityGroup(String serviceAccessSecurityGroup) {
+    public JobFlowInstancesConfig withServiceAccessSecurityGroup(CharSequence serviceAccessSecurityGroup) {
         this.serviceAccessSecurityGroup = serviceAccessSecurityGroup;
         return this;
     }

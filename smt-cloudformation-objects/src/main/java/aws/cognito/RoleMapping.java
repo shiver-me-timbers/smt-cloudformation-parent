@@ -30,14 +30,14 @@ public class RoleMapping {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution
      * 
      */
     @JsonProperty("AmbiguousRoleResolution")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution")
-    private String ambiguousRoleResolution;
+    private CharSequence ambiguousRoleResolution;
     /**
      * RulesConfigurationType
      * <p>
@@ -53,7 +53,7 @@ public class RoleMapping {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -62,11 +62,11 @@ public class RoleMapping {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public RoleMapping withType(String type) {
+    public RoleMapping withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -76,7 +76,7 @@ public class RoleMapping {
      * 
      */
     @JsonProperty("AmbiguousRoleResolution")
-    public String getAmbiguousRoleResolution() {
+    public CharSequence getAmbiguousRoleResolution() {
         return ambiguousRoleResolution;
     }
 
@@ -85,11 +85,11 @@ public class RoleMapping {
      * 
      */
     @JsonProperty("AmbiguousRoleResolution")
-    public void setAmbiguousRoleResolution(String ambiguousRoleResolution) {
+    public void setAmbiguousRoleResolution(CharSequence ambiguousRoleResolution) {
         this.ambiguousRoleResolution = ambiguousRoleResolution;
     }
 
-    public RoleMapping withAmbiguousRoleResolution(String ambiguousRoleResolution) {
+    public RoleMapping withAmbiguousRoleResolution(CharSequence ambiguousRoleResolution) {
         this.ambiguousRoleResolution = ambiguousRoleResolution;
         return this;
     }

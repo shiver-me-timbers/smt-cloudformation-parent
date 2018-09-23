@@ -32,28 +32,28 @@ public class JdbcTarget {
      */
     @JsonProperty("ConnectionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname")
-    private String connectionName;
+    private CharSequence connectionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions
      * 
      */
     @JsonProperty("Exclusions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions")
-    private List<String> exclusions = new ArrayList<String>();
+    private List<CharSequence> exclusions = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname
      * 
      */
     @JsonProperty("ConnectionName")
-    public String getConnectionName() {
+    public CharSequence getConnectionName() {
         return connectionName;
     }
 
@@ -62,11 +62,11 @@ public class JdbcTarget {
      * 
      */
     @JsonProperty("ConnectionName")
-    public void setConnectionName(String connectionName) {
+    public void setConnectionName(CharSequence connectionName) {
         this.connectionName = connectionName;
     }
 
-    public JdbcTarget withConnectionName(String connectionName) {
+    public JdbcTarget withConnectionName(CharSequence connectionName) {
         this.connectionName = connectionName;
         return this;
     }
@@ -76,7 +76,7 @@ public class JdbcTarget {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -85,11 +85,11 @@ public class JdbcTarget {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public JdbcTarget withPath(String path) {
+    public JdbcTarget withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -99,7 +99,7 @@ public class JdbcTarget {
      * 
      */
     @JsonProperty("Exclusions")
-    public List<String> getExclusions() {
+    public List<CharSequence> getExclusions() {
         return exclusions;
     }
 
@@ -108,11 +108,11 @@ public class JdbcTarget {
      * 
      */
     @JsonProperty("Exclusions")
-    public void setExclusions(List<String> exclusions) {
+    public void setExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
     }
 
-    public JdbcTarget withExclusions(List<String> exclusions) {
+    public JdbcTarget withExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
         return this;
     }

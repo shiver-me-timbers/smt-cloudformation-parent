@@ -35,14 +35,14 @@ public class DBParameterGroup {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-description")
-    private java.lang.String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-family
      * 
      */
     @JsonProperty("Family")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-family")
-    private java.lang.String family;
+    private CharSequence family;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-parameters
      * 
@@ -63,7 +63,7 @@ public class DBParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public java.lang.String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -72,11 +72,11 @@ public class DBParameterGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(java.lang.String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public DBParameterGroup withDescription(java.lang.String description) {
+    public DBParameterGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -86,7 +86,7 @@ public class DBParameterGroup {
      * 
      */
     @JsonProperty("Family")
-    public java.lang.String getFamily() {
+    public CharSequence getFamily() {
         return family;
     }
 
@@ -95,11 +95,11 @@ public class DBParameterGroup {
      * 
      */
     @JsonProperty("Family")
-    public void setFamily(java.lang.String family) {
+    public void setFamily(CharSequence family) {
         this.family = family;
     }
 
-    public DBParameterGroup withFamily(java.lang.String family) {
+    public DBParameterGroup withFamily(CharSequence family) {
         this.family = family;
         return this;
     }

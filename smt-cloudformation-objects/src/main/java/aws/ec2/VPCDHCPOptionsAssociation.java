@@ -29,21 +29,21 @@ public class VPCDHCPOptionsAssociation {
      */
     @JsonProperty("DhcpOptionsId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid")
-    private String dhcpOptionsId;
+    private CharSequence dhcpOptionsId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid
      * 
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid
      * 
      */
     @JsonProperty("DhcpOptionsId")
-    public String getDhcpOptionsId() {
+    public CharSequence getDhcpOptionsId() {
         return dhcpOptionsId;
     }
 
@@ -52,11 +52,11 @@ public class VPCDHCPOptionsAssociation {
      * 
      */
     @JsonProperty("DhcpOptionsId")
-    public void setDhcpOptionsId(String dhcpOptionsId) {
+    public void setDhcpOptionsId(CharSequence dhcpOptionsId) {
         this.dhcpOptionsId = dhcpOptionsId;
     }
 
-    public VPCDHCPOptionsAssociation withDhcpOptionsId(String dhcpOptionsId) {
+    public VPCDHCPOptionsAssociation withDhcpOptionsId(CharSequence dhcpOptionsId) {
         this.dhcpOptionsId = dhcpOptionsId;
         return this;
     }
@@ -66,7 +66,7 @@ public class VPCDHCPOptionsAssociation {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -75,11 +75,11 @@ public class VPCDHCPOptionsAssociation {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VPCDHCPOptionsAssociation withVpcId(String vpcId) {
+    public VPCDHCPOptionsAssociation withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

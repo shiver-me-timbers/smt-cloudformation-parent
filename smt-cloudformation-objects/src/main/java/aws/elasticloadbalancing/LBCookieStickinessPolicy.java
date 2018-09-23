@@ -29,21 +29,21 @@ public class LBCookieStickinessPolicy {
      */
     @JsonProperty("CookieExpirationPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod")
-    private String cookieExpirationPeriod;
+    private CharSequence cookieExpirationPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname
      * 
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname")
-    private String policyName;
+    private CharSequence policyName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod
      * 
      */
     @JsonProperty("CookieExpirationPeriod")
-    public String getCookieExpirationPeriod() {
+    public CharSequence getCookieExpirationPeriod() {
         return cookieExpirationPeriod;
     }
 
@@ -52,11 +52,11 @@ public class LBCookieStickinessPolicy {
      * 
      */
     @JsonProperty("CookieExpirationPeriod")
-    public void setCookieExpirationPeriod(String cookieExpirationPeriod) {
+    public void setCookieExpirationPeriod(CharSequence cookieExpirationPeriod) {
         this.cookieExpirationPeriod = cookieExpirationPeriod;
     }
 
-    public LBCookieStickinessPolicy withCookieExpirationPeriod(String cookieExpirationPeriod) {
+    public LBCookieStickinessPolicy withCookieExpirationPeriod(CharSequence cookieExpirationPeriod) {
         this.cookieExpirationPeriod = cookieExpirationPeriod;
         return this;
     }
@@ -66,7 +66,7 @@ public class LBCookieStickinessPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -75,11 +75,11 @@ public class LBCookieStickinessPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public LBCookieStickinessPolicy withPolicyName(String policyName) {
+    public LBCookieStickinessPolicy withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }

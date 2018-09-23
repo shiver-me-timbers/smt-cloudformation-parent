@@ -29,21 +29,21 @@ public class Certificate {
      */
     @JsonProperty("CertificateSigningRequest")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest")
-    private String certificateSigningRequest;
+    private CharSequence certificateSigningRequest;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status
      * 
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status")
-    private String status;
+    private CharSequence status;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest
      * 
      */
     @JsonProperty("CertificateSigningRequest")
-    public String getCertificateSigningRequest() {
+    public CharSequence getCertificateSigningRequest() {
         return certificateSigningRequest;
     }
 
@@ -52,11 +52,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("CertificateSigningRequest")
-    public void setCertificateSigningRequest(String certificateSigningRequest) {
+    public void setCertificateSigningRequest(CharSequence certificateSigningRequest) {
         this.certificateSigningRequest = certificateSigningRequest;
     }
 
-    public Certificate withCertificateSigningRequest(String certificateSigningRequest) {
+    public Certificate withCertificateSigningRequest(CharSequence certificateSigningRequest) {
         this.certificateSigningRequest = certificateSigningRequest;
         return this;
     }
@@ -66,7 +66,7 @@ public class Certificate {
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -75,11 +75,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public Certificate withStatus(String status) {
+    public Certificate withStatus(CharSequence status) {
         this.status = status;
         return this;
     }

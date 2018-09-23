@@ -33,49 +33,49 @@ public class Permission {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-action")
-    private String action;
+    private CharSequence action;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-eventsourcetoken
      * 
      */
     @JsonProperty("EventSourceToken")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-eventsourcetoken")
-    private String eventSourceToken;
+    private CharSequence eventSourceToken;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-functionname
      * 
      */
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-functionname")
-    private String functionName;
+    private CharSequence functionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-principal
      * 
      */
     @JsonProperty("Principal")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-principal")
-    private String principal;
+    private CharSequence principal;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourceaccount
      * 
      */
     @JsonProperty("SourceAccount")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourceaccount")
-    private String sourceAccount;
+    private CharSequence sourceAccount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourcearn
      * 
      */
     @JsonProperty("SourceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourcearn")
-    private String sourceArn;
+    private CharSequence sourceArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-action
      * 
      */
     @JsonProperty("Action")
-    public String getAction() {
+    public CharSequence getAction() {
         return action;
     }
 
@@ -84,11 +84,11 @@ public class Permission {
      * 
      */
     @JsonProperty("Action")
-    public void setAction(String action) {
+    public void setAction(CharSequence action) {
         this.action = action;
     }
 
-    public Permission withAction(String action) {
+    public Permission withAction(CharSequence action) {
         this.action = action;
         return this;
     }
@@ -98,7 +98,7 @@ public class Permission {
      * 
      */
     @JsonProperty("EventSourceToken")
-    public String getEventSourceToken() {
+    public CharSequence getEventSourceToken() {
         return eventSourceToken;
     }
 
@@ -107,11 +107,11 @@ public class Permission {
      * 
      */
     @JsonProperty("EventSourceToken")
-    public void setEventSourceToken(String eventSourceToken) {
+    public void setEventSourceToken(CharSequence eventSourceToken) {
         this.eventSourceToken = eventSourceToken;
     }
 
-    public Permission withEventSourceToken(String eventSourceToken) {
+    public Permission withEventSourceToken(CharSequence eventSourceToken) {
         this.eventSourceToken = eventSourceToken;
         return this;
     }
@@ -121,7 +121,7 @@ public class Permission {
      * 
      */
     @JsonProperty("FunctionName")
-    public String getFunctionName() {
+    public CharSequence getFunctionName() {
         return functionName;
     }
 
@@ -130,11 +130,11 @@ public class Permission {
      * 
      */
     @JsonProperty("FunctionName")
-    public void setFunctionName(String functionName) {
+    public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
 
-    public Permission withFunctionName(String functionName) {
+    public Permission withFunctionName(CharSequence functionName) {
         this.functionName = functionName;
         return this;
     }
@@ -144,7 +144,7 @@ public class Permission {
      * 
      */
     @JsonProperty("Principal")
-    public String getPrincipal() {
+    public CharSequence getPrincipal() {
         return principal;
     }
 
@@ -153,11 +153,11 @@ public class Permission {
      * 
      */
     @JsonProperty("Principal")
-    public void setPrincipal(String principal) {
+    public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }
 
-    public Permission withPrincipal(String principal) {
+    public Permission withPrincipal(CharSequence principal) {
         this.principal = principal;
         return this;
     }
@@ -167,7 +167,7 @@ public class Permission {
      * 
      */
     @JsonProperty("SourceAccount")
-    public String getSourceAccount() {
+    public CharSequence getSourceAccount() {
         return sourceAccount;
     }
 
@@ -176,11 +176,11 @@ public class Permission {
      * 
      */
     @JsonProperty("SourceAccount")
-    public void setSourceAccount(String sourceAccount) {
+    public void setSourceAccount(CharSequence sourceAccount) {
         this.sourceAccount = sourceAccount;
     }
 
-    public Permission withSourceAccount(String sourceAccount) {
+    public Permission withSourceAccount(CharSequence sourceAccount) {
         this.sourceAccount = sourceAccount;
         return this;
     }
@@ -190,7 +190,7 @@ public class Permission {
      * 
      */
     @JsonProperty("SourceArn")
-    public String getSourceArn() {
+    public CharSequence getSourceArn() {
         return sourceArn;
     }
 
@@ -199,11 +199,11 @@ public class Permission {
      * 
      */
     @JsonProperty("SourceArn")
-    public void setSourceArn(String sourceArn) {
+    public void setSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
     }
 
-    public Permission withSourceArn(String sourceArn) {
+    public Permission withSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
         return this;
     }

@@ -31,35 +31,35 @@ public class NamedQuery {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-querystring
      * 
      */
     @JsonProperty("QueryString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-querystring")
-    private String queryString;
+    private CharSequence queryString;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database
      * 
      */
     @JsonProperty("Database")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-database")
-    private String database;
+    private CharSequence database;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html#cfn-athena-namedquery-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -68,11 +68,11 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public NamedQuery withDescription(String description) {
+    public NamedQuery withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -82,7 +82,7 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("QueryString")
-    public String getQueryString() {
+    public CharSequence getQueryString() {
         return queryString;
     }
 
@@ -91,11 +91,11 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("QueryString")
-    public void setQueryString(String queryString) {
+    public void setQueryString(CharSequence queryString) {
         this.queryString = queryString;
     }
 
-    public NamedQuery withQueryString(String queryString) {
+    public NamedQuery withQueryString(CharSequence queryString) {
         this.queryString = queryString;
         return this;
     }
@@ -105,7 +105,7 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("Database")
-    public String getDatabase() {
+    public CharSequence getDatabase() {
         return database;
     }
 
@@ -114,11 +114,11 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("Database")
-    public void setDatabase(String database) {
+    public void setDatabase(CharSequence database) {
         this.database = database;
     }
 
-    public NamedQuery withDatabase(String database) {
+    public NamedQuery withDatabase(CharSequence database) {
         this.database = database;
         return this;
     }
@@ -128,7 +128,7 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -137,11 +137,11 @@ public class NamedQuery {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public NamedQuery withName(String name) {
+    public NamedQuery withName(CharSequence name) {
         this.name = name;
         return this;
     }

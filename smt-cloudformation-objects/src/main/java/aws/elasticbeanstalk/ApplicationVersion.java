@@ -30,14 +30,14 @@ public class ApplicationVersion {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description")
-    private String description;
+    private CharSequence description;
     /**
      * SourceBundle
      * <p>
@@ -53,7 +53,7 @@ public class ApplicationVersion {
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -62,11 +62,11 @@ public class ApplicationVersion {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public ApplicationVersion withApplicationName(String applicationName) {
+    public ApplicationVersion withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -76,7 +76,7 @@ public class ApplicationVersion {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -85,11 +85,11 @@ public class ApplicationVersion {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ApplicationVersion withDescription(String description) {
+    public ApplicationVersion withDescription(CharSequence description) {
         this.description = description;
         return this;
     }

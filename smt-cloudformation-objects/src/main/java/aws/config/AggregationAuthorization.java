@@ -29,21 +29,21 @@ public class AggregationAuthorization {
      */
     @JsonProperty("AuthorizedAccountId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid")
-    private String authorizedAccountId;
+    private CharSequence authorizedAccountId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion
      * 
      */
     @JsonProperty("AuthorizedAwsRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion")
-    private String authorizedAwsRegion;
+    private CharSequence authorizedAwsRegion;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid
      * 
      */
     @JsonProperty("AuthorizedAccountId")
-    public String getAuthorizedAccountId() {
+    public CharSequence getAuthorizedAccountId() {
         return authorizedAccountId;
     }
 
@@ -52,11 +52,11 @@ public class AggregationAuthorization {
      * 
      */
     @JsonProperty("AuthorizedAccountId")
-    public void setAuthorizedAccountId(String authorizedAccountId) {
+    public void setAuthorizedAccountId(CharSequence authorizedAccountId) {
         this.authorizedAccountId = authorizedAccountId;
     }
 
-    public AggregationAuthorization withAuthorizedAccountId(String authorizedAccountId) {
+    public AggregationAuthorization withAuthorizedAccountId(CharSequence authorizedAccountId) {
         this.authorizedAccountId = authorizedAccountId;
         return this;
     }
@@ -66,7 +66,7 @@ public class AggregationAuthorization {
      * 
      */
     @JsonProperty("AuthorizedAwsRegion")
-    public String getAuthorizedAwsRegion() {
+    public CharSequence getAuthorizedAwsRegion() {
         return authorizedAwsRegion;
     }
 
@@ -75,11 +75,11 @@ public class AggregationAuthorization {
      * 
      */
     @JsonProperty("AuthorizedAwsRegion")
-    public void setAuthorizedAwsRegion(String authorizedAwsRegion) {
+    public void setAuthorizedAwsRegion(CharSequence authorizedAwsRegion) {
         this.authorizedAwsRegion = authorizedAwsRegion;
     }
 
-    public AggregationAuthorization withAuthorizedAwsRegion(String authorizedAwsRegion) {
+    public AggregationAuthorization withAuthorizedAwsRegion(CharSequence authorizedAwsRegion) {
         this.authorizedAwsRegion = authorizedAwsRegion;
         return this;
     }

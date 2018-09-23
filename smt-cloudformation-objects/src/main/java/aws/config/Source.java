@@ -33,7 +33,7 @@ public class Source {
      */
     @JsonProperty("Owner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner")
-    private String owner;
+    private CharSequence owner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails
      * 
@@ -48,14 +48,14 @@ public class Source {
      */
     @JsonProperty("SourceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier")
-    private String sourceIdentifier;
+    private CharSequence sourceIdentifier;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
      * 
      */
     @JsonProperty("Owner")
-    public String getOwner() {
+    public CharSequence getOwner() {
         return owner;
     }
 
@@ -64,11 +64,11 @@ public class Source {
      * 
      */
     @JsonProperty("Owner")
-    public void setOwner(String owner) {
+    public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
 
-    public Source withOwner(String owner) {
+    public Source withOwner(CharSequence owner) {
         this.owner = owner;
         return this;
     }
@@ -101,7 +101,7 @@ public class Source {
      * 
      */
     @JsonProperty("SourceIdentifier")
-    public String getSourceIdentifier() {
+    public CharSequence getSourceIdentifier() {
         return sourceIdentifier;
     }
 
@@ -110,11 +110,11 @@ public class Source {
      * 
      */
     @JsonProperty("SourceIdentifier")
-    public void setSourceIdentifier(String sourceIdentifier) {
+    public void setSourceIdentifier(CharSequence sourceIdentifier) {
         this.sourceIdentifier = sourceIdentifier;
     }
 
-    public Source withSourceIdentifier(String sourceIdentifier) {
+    public Source withSourceIdentifier(CharSequence sourceIdentifier) {
         this.sourceIdentifier = sourceIdentifier;
         return this;
     }

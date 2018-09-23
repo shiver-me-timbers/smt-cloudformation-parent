@@ -44,7 +44,7 @@ public class VolumeSpecification {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops
@@ -97,7 +97,7 @@ public class VolumeSpecification {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -106,11 +106,11 @@ public class VolumeSpecification {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public VolumeSpecification withVolumeType(String volumeType) {
+    public VolumeSpecification withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

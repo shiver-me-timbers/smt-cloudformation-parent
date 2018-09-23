@@ -35,14 +35,14 @@ public class LifecycleHook {
      */
     @JsonProperty("AutoScalingGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-autoscalinggroupname")
-    private String autoScalingGroupName;
+    private CharSequence autoScalingGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-defaultresult
      * 
      */
     @JsonProperty("DefaultResult")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-defaultresult")
-    private String defaultResult;
+    private CharSequence defaultResult;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-heartbeattimeout
      * 
@@ -56,42 +56,42 @@ public class LifecycleHook {
      */
     @JsonProperty("LifecycleHookName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-autoscaling-lifecyclehook-lifecyclehookname")
-    private String lifecycleHookName;
+    private CharSequence lifecycleHookName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-lifecycletransition
      * 
      */
     @JsonProperty("LifecycleTransition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-lifecycletransition")
-    private String lifecycleTransition;
+    private CharSequence lifecycleTransition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationmetadata
      * 
      */
     @JsonProperty("NotificationMetadata")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationmetadata")
-    private String notificationMetadata;
+    private CharSequence notificationMetadata;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationtargetarn
      * 
      */
     @JsonProperty("NotificationTargetARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationtargetarn")
-    private String notificationTargetARN;
+    private CharSequence notificationTargetARN;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-rolearn
      * 
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-autoscalinggroupname
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public String getAutoScalingGroupName() {
+    public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
 
@@ -100,11 +100,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("AutoScalingGroupName")
-    public void setAutoScalingGroupName(String autoScalingGroupName) {
+    public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
 
-    public LifecycleHook withAutoScalingGroupName(String autoScalingGroupName) {
+    public LifecycleHook withAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
         return this;
     }
@@ -114,7 +114,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("DefaultResult")
-    public String getDefaultResult() {
+    public CharSequence getDefaultResult() {
         return defaultResult;
     }
 
@@ -123,11 +123,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("DefaultResult")
-    public void setDefaultResult(String defaultResult) {
+    public void setDefaultResult(CharSequence defaultResult) {
         this.defaultResult = defaultResult;
     }
 
-    public LifecycleHook withDefaultResult(String defaultResult) {
+    public LifecycleHook withDefaultResult(CharSequence defaultResult) {
         this.defaultResult = defaultResult;
         return this;
     }
@@ -160,7 +160,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("LifecycleHookName")
-    public String getLifecycleHookName() {
+    public CharSequence getLifecycleHookName() {
         return lifecycleHookName;
     }
 
@@ -169,11 +169,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("LifecycleHookName")
-    public void setLifecycleHookName(String lifecycleHookName) {
+    public void setLifecycleHookName(CharSequence lifecycleHookName) {
         this.lifecycleHookName = lifecycleHookName;
     }
 
-    public LifecycleHook withLifecycleHookName(String lifecycleHookName) {
+    public LifecycleHook withLifecycleHookName(CharSequence lifecycleHookName) {
         this.lifecycleHookName = lifecycleHookName;
         return this;
     }
@@ -183,7 +183,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("LifecycleTransition")
-    public String getLifecycleTransition() {
+    public CharSequence getLifecycleTransition() {
         return lifecycleTransition;
     }
 
@@ -192,11 +192,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("LifecycleTransition")
-    public void setLifecycleTransition(String lifecycleTransition) {
+    public void setLifecycleTransition(CharSequence lifecycleTransition) {
         this.lifecycleTransition = lifecycleTransition;
     }
 
-    public LifecycleHook withLifecycleTransition(String lifecycleTransition) {
+    public LifecycleHook withLifecycleTransition(CharSequence lifecycleTransition) {
         this.lifecycleTransition = lifecycleTransition;
         return this;
     }
@@ -206,7 +206,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("NotificationMetadata")
-    public String getNotificationMetadata() {
+    public CharSequence getNotificationMetadata() {
         return notificationMetadata;
     }
 
@@ -215,11 +215,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("NotificationMetadata")
-    public void setNotificationMetadata(String notificationMetadata) {
+    public void setNotificationMetadata(CharSequence notificationMetadata) {
         this.notificationMetadata = notificationMetadata;
     }
 
-    public LifecycleHook withNotificationMetadata(String notificationMetadata) {
+    public LifecycleHook withNotificationMetadata(CharSequence notificationMetadata) {
         this.notificationMetadata = notificationMetadata;
         return this;
     }
@@ -229,7 +229,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("NotificationTargetARN")
-    public String getNotificationTargetARN() {
+    public CharSequence getNotificationTargetARN() {
         return notificationTargetARN;
     }
 
@@ -238,11 +238,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("NotificationTargetARN")
-    public void setNotificationTargetARN(String notificationTargetARN) {
+    public void setNotificationTargetARN(CharSequence notificationTargetARN) {
         this.notificationTargetARN = notificationTargetARN;
     }
 
-    public LifecycleHook withNotificationTargetARN(String notificationTargetARN) {
+    public LifecycleHook withNotificationTargetARN(CharSequence notificationTargetARN) {
         this.notificationTargetARN = notificationTargetARN;
         return this;
     }
@@ -252,7 +252,7 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -261,11 +261,11 @@ public class LifecycleHook {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public LifecycleHook withRoleARN(String roleARN) {
+    public LifecycleHook withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }

@@ -29,21 +29,21 @@ public class PredefinedMetricSpecification {
      */
     @JsonProperty("PredefinedMetricType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype")
-    private String predefinedMetricType;
+    private CharSequence predefinedMetricType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-resourcelabel
      * 
      */
     @JsonProperty("ResourceLabel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-resourcelabel")
-    private String resourceLabel;
+    private CharSequence resourceLabel;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype
      * 
      */
     @JsonProperty("PredefinedMetricType")
-    public String getPredefinedMetricType() {
+    public CharSequence getPredefinedMetricType() {
         return predefinedMetricType;
     }
 
@@ -52,11 +52,11 @@ public class PredefinedMetricSpecification {
      * 
      */
     @JsonProperty("PredefinedMetricType")
-    public void setPredefinedMetricType(String predefinedMetricType) {
+    public void setPredefinedMetricType(CharSequence predefinedMetricType) {
         this.predefinedMetricType = predefinedMetricType;
     }
 
-    public PredefinedMetricSpecification withPredefinedMetricType(String predefinedMetricType) {
+    public PredefinedMetricSpecification withPredefinedMetricType(CharSequence predefinedMetricType) {
         this.predefinedMetricType = predefinedMetricType;
         return this;
     }
@@ -66,7 +66,7 @@ public class PredefinedMetricSpecification {
      * 
      */
     @JsonProperty("ResourceLabel")
-    public String getResourceLabel() {
+    public CharSequence getResourceLabel() {
         return resourceLabel;
     }
 
@@ -75,11 +75,11 @@ public class PredefinedMetricSpecification {
      * 
      */
     @JsonProperty("ResourceLabel")
-    public void setResourceLabel(String resourceLabel) {
+    public void setResourceLabel(CharSequence resourceLabel) {
         this.resourceLabel = resourceLabel;
     }
 
-    public PredefinedMetricSpecification withResourceLabel(String resourceLabel) {
+    public PredefinedMetricSpecification withResourceLabel(CharSequence resourceLabel) {
         this.resourceLabel = resourceLabel;
         return this;
     }

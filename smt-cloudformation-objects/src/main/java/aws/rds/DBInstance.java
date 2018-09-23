@@ -69,7 +69,7 @@ public class DBInstance {
      */
     @JsonProperty("AllocatedStorage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allocatedstorage")
-    private String allocatedStorage;
+    private CharSequence allocatedStorage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allowmajorversionupgrade
      * 
@@ -90,21 +90,21 @@ public class DBInstance {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-backupretentionperiod
      * 
      */
     @JsonProperty("BackupRetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-backupretentionperiod")
-    private String backupRetentionPeriod;
+    private CharSequence backupRetentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname
      * 
      */
     @JsonProperty("CharacterSetName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname")
-    private String characterSetName;
+    private CharSequence characterSetName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-copytagstosnapshot
      * 
@@ -118,84 +118,84 @@ public class DBInstance {
      */
     @JsonProperty("DBClusterIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbclusteridentifier")
-    private String dBClusterIdentifier;
+    private CharSequence dBClusterIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceclass
      * 
      */
     @JsonProperty("DBInstanceClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceclass")
-    private String dBInstanceClass;
+    private CharSequence dBInstanceClass;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceidentifier
      * 
      */
     @JsonProperty("DBInstanceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceidentifier")
-    private String dBInstanceIdentifier;
+    private CharSequence dBInstanceIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbname
      * 
      */
     @JsonProperty("DBName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbname")
-    private String dBName;
+    private CharSequence dBName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbparametergroupname
      * 
      */
     @JsonProperty("DBParameterGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbparametergroupname")
-    private String dBParameterGroupName;
+    private CharSequence dBParameterGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsecuritygroups
      * 
      */
     @JsonProperty("DBSecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsecuritygroups")
-    private List<String> dBSecurityGroups = new ArrayList<String>();
+    private List<CharSequence> dBSecurityGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsnapshotidentifier
      * 
      */
     @JsonProperty("DBSnapshotIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsnapshotidentifier")
-    private String dBSnapshotIdentifier;
+    private CharSequence dBSnapshotIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsubnetgroupname
      * 
      */
     @JsonProperty("DBSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsubnetgroupname")
-    private String dBSubnetGroupName;
+    private CharSequence dBSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
      */
     @JsonProperty("Domain")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain")
-    private String domain;
+    private CharSequence domain;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domainiamrolename
      * 
      */
     @JsonProperty("DomainIAMRoleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domainiamrolename")
-    private String domainIAMRoleName;
+    private CharSequence domainIAMRoleName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine
      * 
      */
     @JsonProperty("Engine")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine")
-    private String engine;
+    private CharSequence engine;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-iops
      * 
@@ -209,28 +209,28 @@ public class DBInstance {
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-kmskeyid")
-    private String kmsKeyId;
+    private CharSequence kmsKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-licensemodel
      * 
      */
     @JsonProperty("LicenseModel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-licensemodel")
-    private String licenseModel;
+    private CharSequence licenseModel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masteruserpassword
      * 
      */
     @JsonProperty("MasterUserPassword")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masteruserpassword")
-    private String masterUserPassword;
+    private CharSequence masterUserPassword;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masterusername
      * 
      */
     @JsonProperty("MasterUsername")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masterusername")
-    private String masterUsername;
+    private CharSequence masterUsername;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringinterval
      * 
@@ -244,7 +244,7 @@ public class DBInstance {
      */
     @JsonProperty("MonitoringRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringrolearn")
-    private String monitoringRoleArn;
+    private CharSequence monitoringRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-multiaz
      * 
@@ -258,28 +258,28 @@ public class DBInstance {
      */
     @JsonProperty("OptionGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-optiongroupname")
-    private String optionGroupName;
+    private CharSequence optionGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
      */
     @JsonProperty("Port")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port")
-    private String port;
+    private CharSequence port;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredbackupwindow
      * 
      */
     @JsonProperty("PreferredBackupWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredbackupwindow")
-    private String preferredBackupWindow;
+    private CharSequence preferredBackupWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredmaintenancewindow
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible
      * 
@@ -293,14 +293,14 @@ public class DBInstance {
      */
     @JsonProperty("SourceDBInstanceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourcedbinstanceidentifier")
-    private String sourceDBInstanceIdentifier;
+    private CharSequence sourceDBInstanceIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourceregion
      * 
      */
     @JsonProperty("SourceRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourceregion")
-    private String sourceRegion;
+    private CharSequence sourceRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storageencrypted
      * 
@@ -314,7 +314,7 @@ public class DBInstance {
      */
     @JsonProperty("StorageType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storagetype")
-    private String storageType;
+    private CharSequence storageType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-tags
      * 
@@ -328,21 +328,21 @@ public class DBInstance {
      */
     @JsonProperty("Timezone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-timezone")
-    private String timezone;
+    private CharSequence timezone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
      */
     @JsonProperty("VPCSecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups")
-    private List<String> vPCSecurityGroups = new ArrayList<String>();
+    private List<CharSequence> vPCSecurityGroups = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allocatedstorage
      * 
      */
     @JsonProperty("AllocatedStorage")
-    public String getAllocatedStorage() {
+    public CharSequence getAllocatedStorage() {
         return allocatedStorage;
     }
 
@@ -351,11 +351,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("AllocatedStorage")
-    public void setAllocatedStorage(String allocatedStorage) {
+    public void setAllocatedStorage(CharSequence allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
     }
 
-    public DBInstance withAllocatedStorage(String allocatedStorage) {
+    public DBInstance withAllocatedStorage(CharSequence allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
         return this;
     }
@@ -411,7 +411,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -420,11 +420,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public DBInstance withAvailabilityZone(String availabilityZone) {
+    public DBInstance withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -434,7 +434,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("BackupRetentionPeriod")
-    public String getBackupRetentionPeriod() {
+    public CharSequence getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
 
@@ -443,11 +443,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("BackupRetentionPeriod")
-    public void setBackupRetentionPeriod(String backupRetentionPeriod) {
+    public void setBackupRetentionPeriod(CharSequence backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
 
-    public DBInstance withBackupRetentionPeriod(String backupRetentionPeriod) {
+    public DBInstance withBackupRetentionPeriod(CharSequence backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
         return this;
     }
@@ -457,7 +457,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("CharacterSetName")
-    public String getCharacterSetName() {
+    public CharSequence getCharacterSetName() {
         return characterSetName;
     }
 
@@ -466,11 +466,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("CharacterSetName")
-    public void setCharacterSetName(String characterSetName) {
+    public void setCharacterSetName(CharSequence characterSetName) {
         this.characterSetName = characterSetName;
     }
 
-    public DBInstance withCharacterSetName(String characterSetName) {
+    public DBInstance withCharacterSetName(CharSequence characterSetName) {
         this.characterSetName = characterSetName;
         return this;
     }
@@ -503,7 +503,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBClusterIdentifier")
-    public String getDBClusterIdentifier() {
+    public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
 
@@ -512,11 +512,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBClusterIdentifier")
-    public void setDBClusterIdentifier(String dBClusterIdentifier) {
+    public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
 
-    public DBInstance withDBClusterIdentifier(String dBClusterIdentifier) {
+    public DBInstance withDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
         return this;
     }
@@ -526,7 +526,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBInstanceClass")
-    public String getDBInstanceClass() {
+    public CharSequence getDBInstanceClass() {
         return dBInstanceClass;
     }
 
@@ -535,11 +535,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBInstanceClass")
-    public void setDBInstanceClass(String dBInstanceClass) {
+    public void setDBInstanceClass(CharSequence dBInstanceClass) {
         this.dBInstanceClass = dBInstanceClass;
     }
 
-    public DBInstance withDBInstanceClass(String dBInstanceClass) {
+    public DBInstance withDBInstanceClass(CharSequence dBInstanceClass) {
         this.dBInstanceClass = dBInstanceClass;
         return this;
     }
@@ -549,7 +549,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBInstanceIdentifier")
-    public String getDBInstanceIdentifier() {
+    public CharSequence getDBInstanceIdentifier() {
         return dBInstanceIdentifier;
     }
 
@@ -558,11 +558,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBInstanceIdentifier")
-    public void setDBInstanceIdentifier(String dBInstanceIdentifier) {
+    public void setDBInstanceIdentifier(CharSequence dBInstanceIdentifier) {
         this.dBInstanceIdentifier = dBInstanceIdentifier;
     }
 
-    public DBInstance withDBInstanceIdentifier(String dBInstanceIdentifier) {
+    public DBInstance withDBInstanceIdentifier(CharSequence dBInstanceIdentifier) {
         this.dBInstanceIdentifier = dBInstanceIdentifier;
         return this;
     }
@@ -572,7 +572,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBName")
-    public String getDBName() {
+    public CharSequence getDBName() {
         return dBName;
     }
 
@@ -581,11 +581,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBName")
-    public void setDBName(String dBName) {
+    public void setDBName(CharSequence dBName) {
         this.dBName = dBName;
     }
 
-    public DBInstance withDBName(String dBName) {
+    public DBInstance withDBName(CharSequence dBName) {
         this.dBName = dBName;
         return this;
     }
@@ -595,7 +595,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBParameterGroupName")
-    public String getDBParameterGroupName() {
+    public CharSequence getDBParameterGroupName() {
         return dBParameterGroupName;
     }
 
@@ -604,11 +604,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBParameterGroupName")
-    public void setDBParameterGroupName(String dBParameterGroupName) {
+    public void setDBParameterGroupName(CharSequence dBParameterGroupName) {
         this.dBParameterGroupName = dBParameterGroupName;
     }
 
-    public DBInstance withDBParameterGroupName(String dBParameterGroupName) {
+    public DBInstance withDBParameterGroupName(CharSequence dBParameterGroupName) {
         this.dBParameterGroupName = dBParameterGroupName;
         return this;
     }
@@ -618,7 +618,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSecurityGroups")
-    public List<String> getDBSecurityGroups() {
+    public List<CharSequence> getDBSecurityGroups() {
         return dBSecurityGroups;
     }
 
@@ -627,11 +627,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSecurityGroups")
-    public void setDBSecurityGroups(List<String> dBSecurityGroups) {
+    public void setDBSecurityGroups(List<CharSequence> dBSecurityGroups) {
         this.dBSecurityGroups = dBSecurityGroups;
     }
 
-    public DBInstance withDBSecurityGroups(List<String> dBSecurityGroups) {
+    public DBInstance withDBSecurityGroups(List<CharSequence> dBSecurityGroups) {
         this.dBSecurityGroups = dBSecurityGroups;
         return this;
     }
@@ -641,7 +641,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSnapshotIdentifier")
-    public String getDBSnapshotIdentifier() {
+    public CharSequence getDBSnapshotIdentifier() {
         return dBSnapshotIdentifier;
     }
 
@@ -650,11 +650,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSnapshotIdentifier")
-    public void setDBSnapshotIdentifier(String dBSnapshotIdentifier) {
+    public void setDBSnapshotIdentifier(CharSequence dBSnapshotIdentifier) {
         this.dBSnapshotIdentifier = dBSnapshotIdentifier;
     }
 
-    public DBInstance withDBSnapshotIdentifier(String dBSnapshotIdentifier) {
+    public DBInstance withDBSnapshotIdentifier(CharSequence dBSnapshotIdentifier) {
         this.dBSnapshotIdentifier = dBSnapshotIdentifier;
         return this;
     }
@@ -664,7 +664,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public String getDBSubnetGroupName() {
+    public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
 
@@ -673,11 +673,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public void setDBSubnetGroupName(String dBSubnetGroupName) {
+    public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
 
-    public DBInstance withDBSubnetGroupName(String dBSubnetGroupName) {
+    public DBInstance withDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
         return this;
     }
@@ -687,7 +687,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Domain")
-    public String getDomain() {
+    public CharSequence getDomain() {
         return domain;
     }
 
@@ -696,11 +696,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Domain")
-    public void setDomain(String domain) {
+    public void setDomain(CharSequence domain) {
         this.domain = domain;
     }
 
-    public DBInstance withDomain(String domain) {
+    public DBInstance withDomain(CharSequence domain) {
         this.domain = domain;
         return this;
     }
@@ -710,7 +710,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DomainIAMRoleName")
-    public String getDomainIAMRoleName() {
+    public CharSequence getDomainIAMRoleName() {
         return domainIAMRoleName;
     }
 
@@ -719,11 +719,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("DomainIAMRoleName")
-    public void setDomainIAMRoleName(String domainIAMRoleName) {
+    public void setDomainIAMRoleName(CharSequence domainIAMRoleName) {
         this.domainIAMRoleName = domainIAMRoleName;
     }
 
-    public DBInstance withDomainIAMRoleName(String domainIAMRoleName) {
+    public DBInstance withDomainIAMRoleName(CharSequence domainIAMRoleName) {
         this.domainIAMRoleName = domainIAMRoleName;
         return this;
     }
@@ -733,7 +733,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Engine")
-    public String getEngine() {
+    public CharSequence getEngine() {
         return engine;
     }
 
@@ -742,11 +742,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Engine")
-    public void setEngine(String engine) {
+    public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
 
-    public DBInstance withEngine(String engine) {
+    public DBInstance withEngine(CharSequence engine) {
         this.engine = engine;
         return this;
     }
@@ -756,7 +756,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -765,11 +765,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public DBInstance withEngineVersion(String engineVersion) {
+    public DBInstance withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -802,7 +802,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public String getKmsKeyId() {
+    public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
 
@@ -811,11 +811,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("KmsKeyId")
-    public void setKmsKeyId(String kmsKeyId) {
+    public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
 
-    public DBInstance withKmsKeyId(String kmsKeyId) {
+    public DBInstance withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
         return this;
     }
@@ -825,7 +825,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("LicenseModel")
-    public String getLicenseModel() {
+    public CharSequence getLicenseModel() {
         return licenseModel;
     }
 
@@ -834,11 +834,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("LicenseModel")
-    public void setLicenseModel(String licenseModel) {
+    public void setLicenseModel(CharSequence licenseModel) {
         this.licenseModel = licenseModel;
     }
 
-    public DBInstance withLicenseModel(String licenseModel) {
+    public DBInstance withLicenseModel(CharSequence licenseModel) {
         this.licenseModel = licenseModel;
         return this;
     }
@@ -848,7 +848,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public String getMasterUserPassword() {
+    public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
 
@@ -857,11 +857,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MasterUserPassword")
-    public void setMasterUserPassword(String masterUserPassword) {
+    public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
 
-    public DBInstance withMasterUserPassword(String masterUserPassword) {
+    public DBInstance withMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
         return this;
     }
@@ -871,7 +871,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MasterUsername")
-    public String getMasterUsername() {
+    public CharSequence getMasterUsername() {
         return masterUsername;
     }
 
@@ -880,11 +880,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MasterUsername")
-    public void setMasterUsername(String masterUsername) {
+    public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
 
-    public DBInstance withMasterUsername(String masterUsername) {
+    public DBInstance withMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
         return this;
     }
@@ -917,7 +917,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MonitoringRoleArn")
-    public String getMonitoringRoleArn() {
+    public CharSequence getMonitoringRoleArn() {
         return monitoringRoleArn;
     }
 
@@ -926,11 +926,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("MonitoringRoleArn")
-    public void setMonitoringRoleArn(String monitoringRoleArn) {
+    public void setMonitoringRoleArn(CharSequence monitoringRoleArn) {
         this.monitoringRoleArn = monitoringRoleArn;
     }
 
-    public DBInstance withMonitoringRoleArn(String monitoringRoleArn) {
+    public DBInstance withMonitoringRoleArn(CharSequence monitoringRoleArn) {
         this.monitoringRoleArn = monitoringRoleArn;
         return this;
     }
@@ -963,7 +963,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("OptionGroupName")
-    public String getOptionGroupName() {
+    public CharSequence getOptionGroupName() {
         return optionGroupName;
     }
 
@@ -972,11 +972,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("OptionGroupName")
-    public void setOptionGroupName(String optionGroupName) {
+    public void setOptionGroupName(CharSequence optionGroupName) {
         this.optionGroupName = optionGroupName;
     }
 
-    public DBInstance withOptionGroupName(String optionGroupName) {
+    public DBInstance withOptionGroupName(CharSequence optionGroupName) {
         this.optionGroupName = optionGroupName;
         return this;
     }
@@ -986,7 +986,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Port")
-    public String getPort() {
+    public CharSequence getPort() {
         return port;
     }
 
@@ -995,11 +995,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Port")
-    public void setPort(String port) {
+    public void setPort(CharSequence port) {
         this.port = port;
     }
 
-    public DBInstance withPort(String port) {
+    public DBInstance withPort(CharSequence port) {
         this.port = port;
         return this;
     }
@@ -1009,7 +1009,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("PreferredBackupWindow")
-    public String getPreferredBackupWindow() {
+    public CharSequence getPreferredBackupWindow() {
         return preferredBackupWindow;
     }
 
@@ -1018,11 +1018,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("PreferredBackupWindow")
-    public void setPreferredBackupWindow(String preferredBackupWindow) {
+    public void setPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
     }
 
-    public DBInstance withPreferredBackupWindow(String preferredBackupWindow) {
+    public DBInstance withPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
         return this;
     }
@@ -1032,7 +1032,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -1041,11 +1041,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public DBInstance withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public DBInstance withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -1078,7 +1078,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("SourceDBInstanceIdentifier")
-    public String getSourceDBInstanceIdentifier() {
+    public CharSequence getSourceDBInstanceIdentifier() {
         return sourceDBInstanceIdentifier;
     }
 
@@ -1087,11 +1087,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("SourceDBInstanceIdentifier")
-    public void setSourceDBInstanceIdentifier(String sourceDBInstanceIdentifier) {
+    public void setSourceDBInstanceIdentifier(CharSequence sourceDBInstanceIdentifier) {
         this.sourceDBInstanceIdentifier = sourceDBInstanceIdentifier;
     }
 
-    public DBInstance withSourceDBInstanceIdentifier(String sourceDBInstanceIdentifier) {
+    public DBInstance withSourceDBInstanceIdentifier(CharSequence sourceDBInstanceIdentifier) {
         this.sourceDBInstanceIdentifier = sourceDBInstanceIdentifier;
         return this;
     }
@@ -1101,7 +1101,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("SourceRegion")
-    public String getSourceRegion() {
+    public CharSequence getSourceRegion() {
         return sourceRegion;
     }
 
@@ -1110,11 +1110,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("SourceRegion")
-    public void setSourceRegion(String sourceRegion) {
+    public void setSourceRegion(CharSequence sourceRegion) {
         this.sourceRegion = sourceRegion;
     }
 
-    public DBInstance withSourceRegion(String sourceRegion) {
+    public DBInstance withSourceRegion(CharSequence sourceRegion) {
         this.sourceRegion = sourceRegion;
         return this;
     }
@@ -1147,7 +1147,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("StorageType")
-    public String getStorageType() {
+    public CharSequence getStorageType() {
         return storageType;
     }
 
@@ -1156,11 +1156,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("StorageType")
-    public void setStorageType(String storageType) {
+    public void setStorageType(CharSequence storageType) {
         this.storageType = storageType;
     }
 
-    public DBInstance withStorageType(String storageType) {
+    public DBInstance withStorageType(CharSequence storageType) {
         this.storageType = storageType;
         return this;
     }
@@ -1193,7 +1193,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Timezone")
-    public String getTimezone() {
+    public CharSequence getTimezone() {
         return timezone;
     }
 
@@ -1202,11 +1202,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("Timezone")
-    public void setTimezone(String timezone) {
+    public void setTimezone(CharSequence timezone) {
         this.timezone = timezone;
     }
 
-    public DBInstance withTimezone(String timezone) {
+    public DBInstance withTimezone(CharSequence timezone) {
         this.timezone = timezone;
         return this;
     }
@@ -1216,7 +1216,7 @@ public class DBInstance {
      * 
      */
     @JsonProperty("VPCSecurityGroups")
-    public List<String> getVPCSecurityGroups() {
+    public List<CharSequence> getVPCSecurityGroups() {
         return vPCSecurityGroups;
     }
 
@@ -1225,11 +1225,11 @@ public class DBInstance {
      * 
      */
     @JsonProperty("VPCSecurityGroups")
-    public void setVPCSecurityGroups(List<String> vPCSecurityGroups) {
+    public void setVPCSecurityGroups(List<CharSequence> vPCSecurityGroups) {
         this.vPCSecurityGroups = vPCSecurityGroups;
     }
 
-    public DBInstance withVPCSecurityGroups(List<String> vPCSecurityGroups) {
+    public DBInstance withVPCSecurityGroups(List<CharSequence> vPCSecurityGroups) {
         this.vPCSecurityGroups = vPCSecurityGroups;
         return this;
     }

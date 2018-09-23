@@ -59,7 +59,7 @@ public class Stack {
      */
     @JsonProperty("AgentVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion")
-    private java.lang.String agentVersion;
+    private CharSequence agentVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes
      * 
@@ -83,7 +83,7 @@ public class Stack {
     @JsonProperty("CloneAppIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids")
-    private Set<java.lang.String> cloneAppIds = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> cloneAppIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions
      * 
@@ -122,49 +122,49 @@ public class Stack {
      */
     @JsonProperty("DefaultAvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz")
-    private java.lang.String defaultAvailabilityZone;
+    private CharSequence defaultAvailabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultinstanceprof
      * 
      */
     @JsonProperty("DefaultInstanceProfileArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultinstanceprof")
-    private java.lang.String defaultInstanceProfileArn;
+    private CharSequence defaultInstanceProfileArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultos
      * 
      */
     @JsonProperty("DefaultOs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultos")
-    private java.lang.String defaultOs;
+    private CharSequence defaultOs;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultrootdevicetype
      * 
      */
     @JsonProperty("DefaultRootDeviceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultrootdevicetype")
-    private java.lang.String defaultRootDeviceType;
+    private CharSequence defaultRootDeviceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultsshkeyname
      * 
      */
     @JsonProperty("DefaultSshKeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultsshkeyname")
-    private java.lang.String defaultSshKeyName;
+    private CharSequence defaultSshKeyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#defaultsubnet
      * 
      */
     @JsonProperty("DefaultSubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#defaultsubnet")
-    private java.lang.String defaultSubnetId;
+    private CharSequence defaultSubnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-ecsclusterarn
      * 
      */
     @JsonProperty("EcsClusterArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-ecsclusterarn")
-    private java.lang.String ecsClusterArn;
+    private CharSequence ecsClusterArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips
      * 
@@ -179,14 +179,14 @@ public class Stack {
      */
     @JsonProperty("HostnameTheme")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme")
-    private java.lang.String hostnameTheme;
+    private CharSequence hostnameTheme;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances
      * 
@@ -201,14 +201,14 @@ public class Stack {
      */
     @JsonProperty("ServiceRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn")
-    private java.lang.String serviceRoleArn;
+    private CharSequence serviceRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-sourcestackid
      * 
      */
     @JsonProperty("SourceStackId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-sourcestackid")
-    private java.lang.String sourceStackId;
+    private CharSequence sourceStackId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags
      * 
@@ -236,14 +236,14 @@ public class Stack {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-vpcid")
-    private java.lang.String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion
      * 
      */
     @JsonProperty("AgentVersion")
-    public java.lang.String getAgentVersion() {
+    public CharSequence getAgentVersion() {
         return agentVersion;
     }
 
@@ -252,11 +252,11 @@ public class Stack {
      * 
      */
     @JsonProperty("AgentVersion")
-    public void setAgentVersion(java.lang.String agentVersion) {
+    public void setAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
     }
 
-    public Stack withAgentVersion(java.lang.String agentVersion) {
+    public Stack withAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
         return this;
     }
@@ -316,7 +316,7 @@ public class Stack {
      * 
      */
     @JsonProperty("CloneAppIds")
-    public Set<java.lang.String> getCloneAppIds() {
+    public Set<CharSequence> getCloneAppIds() {
         return cloneAppIds;
     }
 
@@ -325,11 +325,11 @@ public class Stack {
      * 
      */
     @JsonProperty("CloneAppIds")
-    public void setCloneAppIds(Set<java.lang.String> cloneAppIds) {
+    public void setCloneAppIds(Set<CharSequence> cloneAppIds) {
         this.cloneAppIds = cloneAppIds;
     }
 
-    public Stack withCloneAppIds(Set<java.lang.String> cloneAppIds) {
+    public Stack withCloneAppIds(Set<CharSequence> cloneAppIds) {
         this.cloneAppIds = cloneAppIds;
         return this;
     }
@@ -439,7 +439,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultAvailabilityZone")
-    public java.lang.String getDefaultAvailabilityZone() {
+    public CharSequence getDefaultAvailabilityZone() {
         return defaultAvailabilityZone;
     }
 
@@ -448,11 +448,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultAvailabilityZone")
-    public void setDefaultAvailabilityZone(java.lang.String defaultAvailabilityZone) {
+    public void setDefaultAvailabilityZone(CharSequence defaultAvailabilityZone) {
         this.defaultAvailabilityZone = defaultAvailabilityZone;
     }
 
-    public Stack withDefaultAvailabilityZone(java.lang.String defaultAvailabilityZone) {
+    public Stack withDefaultAvailabilityZone(CharSequence defaultAvailabilityZone) {
         this.defaultAvailabilityZone = defaultAvailabilityZone;
         return this;
     }
@@ -462,7 +462,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultInstanceProfileArn")
-    public java.lang.String getDefaultInstanceProfileArn() {
+    public CharSequence getDefaultInstanceProfileArn() {
         return defaultInstanceProfileArn;
     }
 
@@ -471,11 +471,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultInstanceProfileArn")
-    public void setDefaultInstanceProfileArn(java.lang.String defaultInstanceProfileArn) {
+    public void setDefaultInstanceProfileArn(CharSequence defaultInstanceProfileArn) {
         this.defaultInstanceProfileArn = defaultInstanceProfileArn;
     }
 
-    public Stack withDefaultInstanceProfileArn(java.lang.String defaultInstanceProfileArn) {
+    public Stack withDefaultInstanceProfileArn(CharSequence defaultInstanceProfileArn) {
         this.defaultInstanceProfileArn = defaultInstanceProfileArn;
         return this;
     }
@@ -485,7 +485,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultOs")
-    public java.lang.String getDefaultOs() {
+    public CharSequence getDefaultOs() {
         return defaultOs;
     }
 
@@ -494,11 +494,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultOs")
-    public void setDefaultOs(java.lang.String defaultOs) {
+    public void setDefaultOs(CharSequence defaultOs) {
         this.defaultOs = defaultOs;
     }
 
-    public Stack withDefaultOs(java.lang.String defaultOs) {
+    public Stack withDefaultOs(CharSequence defaultOs) {
         this.defaultOs = defaultOs;
         return this;
     }
@@ -508,7 +508,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultRootDeviceType")
-    public java.lang.String getDefaultRootDeviceType() {
+    public CharSequence getDefaultRootDeviceType() {
         return defaultRootDeviceType;
     }
 
@@ -517,11 +517,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultRootDeviceType")
-    public void setDefaultRootDeviceType(java.lang.String defaultRootDeviceType) {
+    public void setDefaultRootDeviceType(CharSequence defaultRootDeviceType) {
         this.defaultRootDeviceType = defaultRootDeviceType;
     }
 
-    public Stack withDefaultRootDeviceType(java.lang.String defaultRootDeviceType) {
+    public Stack withDefaultRootDeviceType(CharSequence defaultRootDeviceType) {
         this.defaultRootDeviceType = defaultRootDeviceType;
         return this;
     }
@@ -531,7 +531,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultSshKeyName")
-    public java.lang.String getDefaultSshKeyName() {
+    public CharSequence getDefaultSshKeyName() {
         return defaultSshKeyName;
     }
 
@@ -540,11 +540,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultSshKeyName")
-    public void setDefaultSshKeyName(java.lang.String defaultSshKeyName) {
+    public void setDefaultSshKeyName(CharSequence defaultSshKeyName) {
         this.defaultSshKeyName = defaultSshKeyName;
     }
 
-    public Stack withDefaultSshKeyName(java.lang.String defaultSshKeyName) {
+    public Stack withDefaultSshKeyName(CharSequence defaultSshKeyName) {
         this.defaultSshKeyName = defaultSshKeyName;
         return this;
     }
@@ -554,7 +554,7 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultSubnetId")
-    public java.lang.String getDefaultSubnetId() {
+    public CharSequence getDefaultSubnetId() {
         return defaultSubnetId;
     }
 
@@ -563,11 +563,11 @@ public class Stack {
      * 
      */
     @JsonProperty("DefaultSubnetId")
-    public void setDefaultSubnetId(java.lang.String defaultSubnetId) {
+    public void setDefaultSubnetId(CharSequence defaultSubnetId) {
         this.defaultSubnetId = defaultSubnetId;
     }
 
-    public Stack withDefaultSubnetId(java.lang.String defaultSubnetId) {
+    public Stack withDefaultSubnetId(CharSequence defaultSubnetId) {
         this.defaultSubnetId = defaultSubnetId;
         return this;
     }
@@ -577,7 +577,7 @@ public class Stack {
      * 
      */
     @JsonProperty("EcsClusterArn")
-    public java.lang.String getEcsClusterArn() {
+    public CharSequence getEcsClusterArn() {
         return ecsClusterArn;
     }
 
@@ -586,11 +586,11 @@ public class Stack {
      * 
      */
     @JsonProperty("EcsClusterArn")
-    public void setEcsClusterArn(java.lang.String ecsClusterArn) {
+    public void setEcsClusterArn(CharSequence ecsClusterArn) {
         this.ecsClusterArn = ecsClusterArn;
     }
 
-    public Stack withEcsClusterArn(java.lang.String ecsClusterArn) {
+    public Stack withEcsClusterArn(CharSequence ecsClusterArn) {
         this.ecsClusterArn = ecsClusterArn;
         return this;
     }
@@ -623,7 +623,7 @@ public class Stack {
      * 
      */
     @JsonProperty("HostnameTheme")
-    public java.lang.String getHostnameTheme() {
+    public CharSequence getHostnameTheme() {
         return hostnameTheme;
     }
 
@@ -632,11 +632,11 @@ public class Stack {
      * 
      */
     @JsonProperty("HostnameTheme")
-    public void setHostnameTheme(java.lang.String hostnameTheme) {
+    public void setHostnameTheme(CharSequence hostnameTheme) {
         this.hostnameTheme = hostnameTheme;
     }
 
-    public Stack withHostnameTheme(java.lang.String hostnameTheme) {
+    public Stack withHostnameTheme(CharSequence hostnameTheme) {
         this.hostnameTheme = hostnameTheme;
         return this;
     }
@@ -646,7 +646,7 @@ public class Stack {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -655,11 +655,11 @@ public class Stack {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Stack withName(java.lang.String name) {
+    public Stack withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -692,7 +692,7 @@ public class Stack {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public java.lang.String getServiceRoleArn() {
+    public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
 
@@ -701,11 +701,11 @@ public class Stack {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public void setServiceRoleArn(java.lang.String serviceRoleArn) {
+    public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
 
-    public Stack withServiceRoleArn(java.lang.String serviceRoleArn) {
+    public Stack withServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
         return this;
     }
@@ -715,7 +715,7 @@ public class Stack {
      * 
      */
     @JsonProperty("SourceStackId")
-    public java.lang.String getSourceStackId() {
+    public CharSequence getSourceStackId() {
         return sourceStackId;
     }
 
@@ -724,11 +724,11 @@ public class Stack {
      * 
      */
     @JsonProperty("SourceStackId")
-    public void setSourceStackId(java.lang.String sourceStackId) {
+    public void setSourceStackId(CharSequence sourceStackId) {
         this.sourceStackId = sourceStackId;
     }
 
-    public Stack withSourceStackId(java.lang.String sourceStackId) {
+    public Stack withSourceStackId(CharSequence sourceStackId) {
         this.sourceStackId = sourceStackId;
         return this;
     }
@@ -807,7 +807,7 @@ public class Stack {
      * 
      */
     @JsonProperty("VpcId")
-    public java.lang.String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -816,11 +816,11 @@ public class Stack {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(java.lang.String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public Stack withVpcId(java.lang.String vpcId) {
+    public Stack withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

@@ -35,21 +35,21 @@ public class HadoopJarStepConfig {
     @JsonProperty("Args")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-args")
-    private Set<String> args = new LinkedHashSet<String>();
+    private Set<CharSequence> args = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-jar
      * 
      */
     @JsonProperty("Jar")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-jar")
-    private String jar;
+    private CharSequence jar;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-mainclass
      * 
      */
     @JsonProperty("MainClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-mainclass")
-    private String mainClass;
+    private CharSequence mainClass;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-stepproperties
      * 
@@ -64,7 +64,7 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("Args")
-    public Set<String> getArgs() {
+    public Set<CharSequence> getArgs() {
         return args;
     }
 
@@ -73,11 +73,11 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("Args")
-    public void setArgs(Set<String> args) {
+    public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
 
-    public HadoopJarStepConfig withArgs(Set<String> args) {
+    public HadoopJarStepConfig withArgs(Set<CharSequence> args) {
         this.args = args;
         return this;
     }
@@ -87,7 +87,7 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("Jar")
-    public String getJar() {
+    public CharSequence getJar() {
         return jar;
     }
 
@@ -96,11 +96,11 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("Jar")
-    public void setJar(String jar) {
+    public void setJar(CharSequence jar) {
         this.jar = jar;
     }
 
-    public HadoopJarStepConfig withJar(String jar) {
+    public HadoopJarStepConfig withJar(CharSequence jar) {
         this.jar = jar;
         return this;
     }
@@ -110,7 +110,7 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("MainClass")
-    public String getMainClass() {
+    public CharSequence getMainClass() {
         return mainClass;
     }
 
@@ -119,11 +119,11 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonProperty("MainClass")
-    public void setMainClass(String mainClass) {
+    public void setMainClass(CharSequence mainClass) {
         this.mainClass = mainClass;
     }
 
-    public HadoopJarStepConfig withMainClass(String mainClass) {
+    public HadoopJarStepConfig withMainClass(CharSequence mainClass) {
         this.mainClass = mainClass;
         return this;
     }

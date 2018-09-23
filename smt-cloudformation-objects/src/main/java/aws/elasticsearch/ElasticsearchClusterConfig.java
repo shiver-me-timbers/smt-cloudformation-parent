@@ -47,7 +47,7 @@ public class ElasticsearchClusterConfig {
      */
     @JsonProperty("DedicatedMasterType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastertype")
-    private String dedicatedMasterType;
+    private CharSequence dedicatedMasterType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instancecount
      * 
@@ -61,7 +61,7 @@ public class ElasticsearchClusterConfig {
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instnacetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled
      * 
@@ -121,7 +121,7 @@ public class ElasticsearchClusterConfig {
      * 
      */
     @JsonProperty("DedicatedMasterType")
-    public String getDedicatedMasterType() {
+    public CharSequence getDedicatedMasterType() {
         return dedicatedMasterType;
     }
 
@@ -130,11 +130,11 @@ public class ElasticsearchClusterConfig {
      * 
      */
     @JsonProperty("DedicatedMasterType")
-    public void setDedicatedMasterType(String dedicatedMasterType) {
+    public void setDedicatedMasterType(CharSequence dedicatedMasterType) {
         this.dedicatedMasterType = dedicatedMasterType;
     }
 
-    public ElasticsearchClusterConfig withDedicatedMasterType(String dedicatedMasterType) {
+    public ElasticsearchClusterConfig withDedicatedMasterType(CharSequence dedicatedMasterType) {
         this.dedicatedMasterType = dedicatedMasterType;
         return this;
     }
@@ -167,7 +167,7 @@ public class ElasticsearchClusterConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -176,11 +176,11 @@ public class ElasticsearchClusterConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public ElasticsearchClusterConfig withInstanceType(String instanceType) {
+    public ElasticsearchClusterConfig withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }

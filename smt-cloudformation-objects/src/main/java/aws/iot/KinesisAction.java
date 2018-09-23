@@ -30,28 +30,28 @@ public class KinesisAction {
      */
     @JsonProperty("PartitionKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey")
-    private String partitionKey;
+    private CharSequence partitionKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname
      * 
      */
     @JsonProperty("StreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname")
-    private String streamName;
+    private CharSequence streamName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey
      * 
      */
     @JsonProperty("PartitionKey")
-    public String getPartitionKey() {
+    public CharSequence getPartitionKey() {
         return partitionKey;
     }
 
@@ -60,11 +60,11 @@ public class KinesisAction {
      * 
      */
     @JsonProperty("PartitionKey")
-    public void setPartitionKey(String partitionKey) {
+    public void setPartitionKey(CharSequence partitionKey) {
         this.partitionKey = partitionKey;
     }
 
-    public KinesisAction withPartitionKey(String partitionKey) {
+    public KinesisAction withPartitionKey(CharSequence partitionKey) {
         this.partitionKey = partitionKey;
         return this;
     }
@@ -74,7 +74,7 @@ public class KinesisAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -83,11 +83,11 @@ public class KinesisAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public KinesisAction withRoleArn(String roleArn) {
+    public KinesisAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -97,7 +97,7 @@ public class KinesisAction {
      * 
      */
     @JsonProperty("StreamName")
-    public String getStreamName() {
+    public CharSequence getStreamName() {
         return streamName;
     }
 
@@ -106,11 +106,11 @@ public class KinesisAction {
      * 
      */
     @JsonProperty("StreamName")
-    public void setStreamName(String streamName) {
+    public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }
 
-    public KinesisAction withStreamName(String streamName) {
+    public KinesisAction withStreamName(CharSequence streamName) {
         this.streamName = streamName;
         return this;
     }

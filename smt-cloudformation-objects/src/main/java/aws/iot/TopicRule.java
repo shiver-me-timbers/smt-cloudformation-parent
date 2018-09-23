@@ -29,7 +29,7 @@ public class TopicRule {
      */
     @JsonProperty("RuleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename")
-    private String ruleName;
+    private CharSequence ruleName;
     /**
      * TopicRulePayload
      * <p>
@@ -45,7 +45,7 @@ public class TopicRule {
      * 
      */
     @JsonProperty("RuleName")
-    public String getRuleName() {
+    public CharSequence getRuleName() {
         return ruleName;
     }
 
@@ -54,11 +54,11 @@ public class TopicRule {
      * 
      */
     @JsonProperty("RuleName")
-    public void setRuleName(String ruleName) {
+    public void setRuleName(CharSequence ruleName) {
         this.ruleName = ruleName;
     }
 
-    public TopicRule withRuleName(String ruleName) {
+    public TopicRule withRuleName(CharSequence ruleName) {
         this.ruleName = ruleName;
         return this;
     }

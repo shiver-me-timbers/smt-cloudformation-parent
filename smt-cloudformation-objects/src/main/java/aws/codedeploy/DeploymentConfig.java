@@ -29,7 +29,7 @@ public class DeploymentConfig {
      */
     @JsonProperty("DeploymentConfigName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname")
-    private String deploymentConfigName;
+    private CharSequence deploymentConfigName;
     /**
      * MinimumHealthyHosts
      * <p>
@@ -45,7 +45,7 @@ public class DeploymentConfig {
      * 
      */
     @JsonProperty("DeploymentConfigName")
-    public String getDeploymentConfigName() {
+    public CharSequence getDeploymentConfigName() {
         return deploymentConfigName;
     }
 
@@ -54,11 +54,11 @@ public class DeploymentConfig {
      * 
      */
     @JsonProperty("DeploymentConfigName")
-    public void setDeploymentConfigName(String deploymentConfigName) {
+    public void setDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
     }
 
-    public DeploymentConfig withDeploymentConfigName(String deploymentConfigName) {
+    public DeploymentConfig withDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
         return this;
     }

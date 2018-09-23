@@ -46,7 +46,7 @@ public class Role {
     @JsonProperty("ManagedPolicyArns")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns")
-    private Set<String> managedPolicyArns = new LinkedHashSet<String>();
+    private Set<CharSequence> managedPolicyArns = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-maxsessionduration
      * 
@@ -60,7 +60,7 @@ public class Role {
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies
      * 
@@ -74,7 +74,7 @@ public class Role {
      */
     @JsonProperty("RoleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename")
-    private String roleName;
+    private CharSequence roleName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
@@ -104,7 +104,7 @@ public class Role {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public Set<String> getManagedPolicyArns() {
+    public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
 
@@ -113,11 +113,11 @@ public class Role {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public void setManagedPolicyArns(Set<String> managedPolicyArns) {
+    public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
 
-    public Role withManagedPolicyArns(Set<String> managedPolicyArns) {
+    public Role withManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
         return this;
     }
@@ -150,7 +150,7 @@ public class Role {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -159,11 +159,11 @@ public class Role {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public Role withPath(String path) {
+    public Role withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -196,7 +196,7 @@ public class Role {
      * 
      */
     @JsonProperty("RoleName")
-    public String getRoleName() {
+    public CharSequence getRoleName() {
         return roleName;
     }
 
@@ -205,11 +205,11 @@ public class Role {
      * 
      */
     @JsonProperty("RoleName")
-    public void setRoleName(String roleName) {
+    public void setRoleName(CharSequence roleName) {
         this.roleName = roleName;
     }
 
-    public Role withRoleName(String roleName) {
+    public Role withRoleName(CharSequence roleName) {
         this.roleName = roleName;
         return this;
     }

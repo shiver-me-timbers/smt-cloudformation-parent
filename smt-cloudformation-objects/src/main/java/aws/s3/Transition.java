@@ -30,7 +30,7 @@ public class Transition {
      */
     @JsonProperty("StorageClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-storageclass")
-    private String storageClass;
+    private CharSequence storageClass;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitiondate
      * 
@@ -51,7 +51,7 @@ public class Transition {
      * 
      */
     @JsonProperty("StorageClass")
-    public String getStorageClass() {
+    public CharSequence getStorageClass() {
         return storageClass;
     }
 
@@ -60,11 +60,11 @@ public class Transition {
      * 
      */
     @JsonProperty("StorageClass")
-    public void setStorageClass(String storageClass) {
+    public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }
 
-    public Transition withStorageClass(String storageClass) {
+    public Transition withStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
         return this;
     }

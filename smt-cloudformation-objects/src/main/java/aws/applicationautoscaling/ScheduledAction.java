@@ -48,14 +48,14 @@ public class ScheduledAction {
      */
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule")
-    private String schedule;
+    private CharSequence schedule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname
      * 
      */
     @JsonProperty("ScheduledActionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname")
-    private String scheduledActionName;
+    private CharSequence scheduledActionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime
      * 
@@ -119,7 +119,7 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("Schedule")
-    public String getSchedule() {
+    public CharSequence getSchedule() {
         return schedule;
     }
 
@@ -128,11 +128,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("Schedule")
-    public void setSchedule(String schedule) {
+    public void setSchedule(CharSequence schedule) {
         this.schedule = schedule;
     }
 
-    public ScheduledAction withSchedule(String schedule) {
+    public ScheduledAction withSchedule(CharSequence schedule) {
         this.schedule = schedule;
         return this;
     }
@@ -142,7 +142,7 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("ScheduledActionName")
-    public String getScheduledActionName() {
+    public CharSequence getScheduledActionName() {
         return scheduledActionName;
     }
 
@@ -151,11 +151,11 @@ public class ScheduledAction {
      * 
      */
     @JsonProperty("ScheduledActionName")
-    public void setScheduledActionName(String scheduledActionName) {
+    public void setScheduledActionName(CharSequence scheduledActionName) {
         this.scheduledActionName = scheduledActionName;
     }
 
-    public ScheduledAction withScheduledActionName(String scheduledActionName) {
+    public ScheduledAction withScheduledActionName(CharSequence scheduledActionName) {
         this.scheduledActionName = scheduledActionName;
         return this;
     }

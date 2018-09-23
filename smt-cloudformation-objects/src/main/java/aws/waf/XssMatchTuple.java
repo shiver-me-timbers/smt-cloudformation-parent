@@ -38,7 +38,7 @@ public class XssMatchTuple {
      */
     @JsonProperty("TextTransformation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation")
-    private String textTransformation;
+    private CharSequence textTransformation;
 
     /**
      * FieldToMatch
@@ -72,7 +72,7 @@ public class XssMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public String getTextTransformation() {
+    public CharSequence getTextTransformation() {
         return textTransformation;
     }
 
@@ -81,11 +81,11 @@ public class XssMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public void setTextTransformation(String textTransformation) {
+    public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
 
-    public XssMatchTuple withTextTransformation(String textTransformation) {
+    public XssMatchTuple withTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
         return this;
     }

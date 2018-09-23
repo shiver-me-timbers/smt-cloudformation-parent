@@ -46,21 +46,21 @@ public class EventSourceMapping {
      */
     @JsonProperty("EventSourceArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn")
-    private String eventSourceArn;
+    private CharSequence eventSourceArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname
      * 
      */
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname")
-    private String functionName;
+    private CharSequence functionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
     @JsonProperty("StartingPosition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition")
-    private String startingPosition;
+    private CharSequence startingPosition;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize
@@ -113,7 +113,7 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("EventSourceArn")
-    public String getEventSourceArn() {
+    public CharSequence getEventSourceArn() {
         return eventSourceArn;
     }
 
@@ -122,11 +122,11 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("EventSourceArn")
-    public void setEventSourceArn(String eventSourceArn) {
+    public void setEventSourceArn(CharSequence eventSourceArn) {
         this.eventSourceArn = eventSourceArn;
     }
 
-    public EventSourceMapping withEventSourceArn(String eventSourceArn) {
+    public EventSourceMapping withEventSourceArn(CharSequence eventSourceArn) {
         this.eventSourceArn = eventSourceArn;
         return this;
     }
@@ -136,7 +136,7 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("FunctionName")
-    public String getFunctionName() {
+    public CharSequence getFunctionName() {
         return functionName;
     }
 
@@ -145,11 +145,11 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("FunctionName")
-    public void setFunctionName(String functionName) {
+    public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
 
-    public EventSourceMapping withFunctionName(String functionName) {
+    public EventSourceMapping withFunctionName(CharSequence functionName) {
         this.functionName = functionName;
         return this;
     }
@@ -159,7 +159,7 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("StartingPosition")
-    public String getStartingPosition() {
+    public CharSequence getStartingPosition() {
         return startingPosition;
     }
 
@@ -168,11 +168,11 @@ public class EventSourceMapping {
      * 
      */
     @JsonProperty("StartingPosition")
-    public void setStartingPosition(String startingPosition) {
+    public void setStartingPosition(CharSequence startingPosition) {
         this.startingPosition = startingPosition;
     }
 
-    public EventSourceMapping withStartingPosition(String startingPosition) {
+    public EventSourceMapping withStartingPosition(CharSequence startingPosition) {
         this.startingPosition = startingPosition;
         return this;
     }

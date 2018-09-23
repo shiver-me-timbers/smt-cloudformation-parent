@@ -52,7 +52,7 @@ public class EBSOptions {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled
@@ -128,7 +128,7 @@ public class EBSOptions {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -137,11 +137,11 @@ public class EBSOptions {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public EBSOptions withVolumeType(String volumeType) {
+    public EBSOptions withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

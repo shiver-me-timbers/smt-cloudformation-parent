@@ -54,7 +54,7 @@ public class Ebs {
      */
     @JsonProperty("SnapshotId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid")
-    private String snapshotId;
+    private CharSequence snapshotId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumesize
      * 
@@ -68,7 +68,7 @@ public class Ebs {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-deleteontermination
@@ -144,7 +144,7 @@ public class Ebs {
      * 
      */
     @JsonProperty("SnapshotId")
-    public String getSnapshotId() {
+    public CharSequence getSnapshotId() {
         return snapshotId;
     }
 
@@ -153,11 +153,11 @@ public class Ebs {
      * 
      */
     @JsonProperty("SnapshotId")
-    public void setSnapshotId(String snapshotId) {
+    public void setSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
     }
 
-    public Ebs withSnapshotId(String snapshotId) {
+    public Ebs withSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
         return this;
     }
@@ -190,7 +190,7 @@ public class Ebs {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -199,11 +199,11 @@ public class Ebs {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public Ebs withVolumeType(String volumeType) {
+    public Ebs withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

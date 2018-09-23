@@ -47,14 +47,14 @@ public class JobQueue {
      */
     @JsonProperty("State")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-state")
-    private String state;
+    private CharSequence state;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-jobqueuename
      * 
      */
     @JsonProperty("JobQueueName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-jobqueuename")
-    private String jobQueueName;
+    private CharSequence jobQueueName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-computeenvironmentorder
@@ -107,7 +107,7 @@ public class JobQueue {
      * 
      */
     @JsonProperty("State")
-    public String getState() {
+    public CharSequence getState() {
         return state;
     }
 
@@ -116,11 +116,11 @@ public class JobQueue {
      * 
      */
     @JsonProperty("State")
-    public void setState(String state) {
+    public void setState(CharSequence state) {
         this.state = state;
     }
 
-    public JobQueue withState(String state) {
+    public JobQueue withState(CharSequence state) {
         this.state = state;
         return this;
     }
@@ -130,7 +130,7 @@ public class JobQueue {
      * 
      */
     @JsonProperty("JobQueueName")
-    public String getJobQueueName() {
+    public CharSequence getJobQueueName() {
         return jobQueueName;
     }
 
@@ -139,11 +139,11 @@ public class JobQueue {
      * 
      */
     @JsonProperty("JobQueueName")
-    public void setJobQueueName(String jobQueueName) {
+    public void setJobQueueName(CharSequence jobQueueName) {
         this.jobQueueName = jobQueueName;
     }
 
-    public JobQueue withJobQueueName(String jobQueueName) {
+    public JobQueue withJobQueueName(CharSequence jobQueueName) {
         this.jobQueueName = jobQueueName;
         return this;
     }

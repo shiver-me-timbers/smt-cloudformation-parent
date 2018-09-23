@@ -29,21 +29,21 @@ public class Parameter {
      */
     @JsonProperty("ParameterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametername")
-    private String parameterName;
+    private CharSequence parameterName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametervalue
      * 
      */
     @JsonProperty("ParameterValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametervalue")
-    private String parameterValue;
+    private CharSequence parameterValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametername
      * 
      */
     @JsonProperty("ParameterName")
-    public String getParameterName() {
+    public CharSequence getParameterName() {
         return parameterName;
     }
 
@@ -52,11 +52,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("ParameterName")
-    public void setParameterName(String parameterName) {
+    public void setParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
     }
 
-    public Parameter withParameterName(String parameterName) {
+    public Parameter withParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
         return this;
     }
@@ -66,7 +66,7 @@ public class Parameter {
      * 
      */
     @JsonProperty("ParameterValue")
-    public String getParameterValue() {
+    public CharSequence getParameterValue() {
         return parameterValue;
     }
 
@@ -75,11 +75,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("ParameterValue")
-    public void setParameterValue(String parameterValue) {
+    public void setParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
     }
 
-    public Parameter withParameterValue(String parameterValue) {
+    public Parameter withParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
         return this;
     }

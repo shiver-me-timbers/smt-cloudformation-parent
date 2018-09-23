@@ -29,21 +29,21 @@ public class ElasticIp {
      */
     @JsonProperty("Ip")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip")
-    private String ip;
+    private CharSequence ip;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip
      * 
      */
     @JsonProperty("Ip")
-    public String getIp() {
+    public CharSequence getIp() {
         return ip;
     }
 
@@ -52,11 +52,11 @@ public class ElasticIp {
      * 
      */
     @JsonProperty("Ip")
-    public void setIp(String ip) {
+    public void setIp(CharSequence ip) {
         this.ip = ip;
     }
 
-    public ElasticIp withIp(String ip) {
+    public ElasticIp withIp(CharSequence ip) {
         this.ip = ip;
         return this;
     }
@@ -66,7 +66,7 @@ public class ElasticIp {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -75,11 +75,11 @@ public class ElasticIp {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ElasticIp withName(String name) {
+    public ElasticIp withName(CharSequence name) {
         this.name = name;
         return this;
     }

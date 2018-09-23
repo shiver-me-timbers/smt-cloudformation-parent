@@ -33,14 +33,14 @@ public class Workspace {
      */
     @JsonProperty("BundleId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid")
-    private String bundleId;
+    private CharSequence bundleId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-directoryid
      * 
      */
     @JsonProperty("DirectoryId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-directoryid")
-    private String directoryId;
+    private CharSequence directoryId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-rootvolumeencryptionenabled
      * 
@@ -54,7 +54,7 @@ public class Workspace {
      */
     @JsonProperty("UserName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-username")
-    private String userName;
+    private CharSequence userName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-uservolumeencryptionenabled
      * 
@@ -68,14 +68,14 @@ public class Workspace {
      */
     @JsonProperty("VolumeEncryptionKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey")
-    private String volumeEncryptionKey;
+    private CharSequence volumeEncryptionKey;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
      * 
      */
     @JsonProperty("BundleId")
-    public String getBundleId() {
+    public CharSequence getBundleId() {
         return bundleId;
     }
 
@@ -84,11 +84,11 @@ public class Workspace {
      * 
      */
     @JsonProperty("BundleId")
-    public void setBundleId(String bundleId) {
+    public void setBundleId(CharSequence bundleId) {
         this.bundleId = bundleId;
     }
 
-    public Workspace withBundleId(String bundleId) {
+    public Workspace withBundleId(CharSequence bundleId) {
         this.bundleId = bundleId;
         return this;
     }
@@ -98,7 +98,7 @@ public class Workspace {
      * 
      */
     @JsonProperty("DirectoryId")
-    public String getDirectoryId() {
+    public CharSequence getDirectoryId() {
         return directoryId;
     }
 
@@ -107,11 +107,11 @@ public class Workspace {
      * 
      */
     @JsonProperty("DirectoryId")
-    public void setDirectoryId(String directoryId) {
+    public void setDirectoryId(CharSequence directoryId) {
         this.directoryId = directoryId;
     }
 
-    public Workspace withDirectoryId(String directoryId) {
+    public Workspace withDirectoryId(CharSequence directoryId) {
         this.directoryId = directoryId;
         return this;
     }
@@ -144,7 +144,7 @@ public class Workspace {
      * 
      */
     @JsonProperty("UserName")
-    public String getUserName() {
+    public CharSequence getUserName() {
         return userName;
     }
 
@@ -153,11 +153,11 @@ public class Workspace {
      * 
      */
     @JsonProperty("UserName")
-    public void setUserName(String userName) {
+    public void setUserName(CharSequence userName) {
         this.userName = userName;
     }
 
-    public Workspace withUserName(String userName) {
+    public Workspace withUserName(CharSequence userName) {
         this.userName = userName;
         return this;
     }
@@ -190,7 +190,7 @@ public class Workspace {
      * 
      */
     @JsonProperty("VolumeEncryptionKey")
-    public String getVolumeEncryptionKey() {
+    public CharSequence getVolumeEncryptionKey() {
         return volumeEncryptionKey;
     }
 
@@ -199,11 +199,11 @@ public class Workspace {
      * 
      */
     @JsonProperty("VolumeEncryptionKey")
-    public void setVolumeEncryptionKey(String volumeEncryptionKey) {
+    public void setVolumeEncryptionKey(CharSequence volumeEncryptionKey) {
         this.volumeEncryptionKey = volumeEncryptionKey;
     }
 
-    public Workspace withVolumeEncryptionKey(String volumeEncryptionKey) {
+    public Workspace withVolumeEncryptionKey(CharSequence volumeEncryptionKey) {
         this.volumeEncryptionKey = volumeEncryptionKey;
         return this;
     }

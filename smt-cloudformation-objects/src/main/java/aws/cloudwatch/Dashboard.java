@@ -29,21 +29,21 @@ public class Dashboard {
      */
     @JsonProperty("DashboardName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname")
-    private String dashboardName;
+    private CharSequence dashboardName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody
      * 
      */
     @JsonProperty("DashboardBody")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody")
-    private String dashboardBody;
+    private CharSequence dashboardBody;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname
      * 
      */
     @JsonProperty("DashboardName")
-    public String getDashboardName() {
+    public CharSequence getDashboardName() {
         return dashboardName;
     }
 
@@ -52,11 +52,11 @@ public class Dashboard {
      * 
      */
     @JsonProperty("DashboardName")
-    public void setDashboardName(String dashboardName) {
+    public void setDashboardName(CharSequence dashboardName) {
         this.dashboardName = dashboardName;
     }
 
-    public Dashboard withDashboardName(String dashboardName) {
+    public Dashboard withDashboardName(CharSequence dashboardName) {
         this.dashboardName = dashboardName;
         return this;
     }
@@ -66,7 +66,7 @@ public class Dashboard {
      * 
      */
     @JsonProperty("DashboardBody")
-    public String getDashboardBody() {
+    public CharSequence getDashboardBody() {
         return dashboardBody;
     }
 
@@ -75,11 +75,11 @@ public class Dashboard {
      * 
      */
     @JsonProperty("DashboardBody")
-    public void setDashboardBody(String dashboardBody) {
+    public void setDashboardBody(CharSequence dashboardBody) {
         this.dashboardBody = dashboardBody;
     }
 
-    public Dashboard withDashboardBody(String dashboardBody) {
+    public Dashboard withDashboardBody(CharSequence dashboardBody) {
         this.dashboardBody = dashboardBody;
         return this;
     }

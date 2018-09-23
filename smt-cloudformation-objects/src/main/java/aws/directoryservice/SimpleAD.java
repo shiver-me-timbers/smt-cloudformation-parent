@@ -42,7 +42,7 @@ public class SimpleAD {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-enablesso
      * 
@@ -56,28 +56,28 @@ public class SimpleAD {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-password
      * 
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-password")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-shortname
      * 
      */
     @JsonProperty("ShortName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-shortname")
-    private String shortName;
+    private CharSequence shortName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-size
      * 
      */
     @JsonProperty("Size")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-size")
-    private String size;
+    private CharSequence size;
     /**
      * VpcSettings
      * <p>
@@ -116,7 +116,7 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -125,11 +125,11 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public SimpleAD withDescription(String description) {
+    public SimpleAD withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -162,7 +162,7 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -171,11 +171,11 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public SimpleAD withName(String name) {
+    public SimpleAD withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -185,7 +185,7 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -194,11 +194,11 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public SimpleAD withPassword(String password) {
+    public SimpleAD withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -208,7 +208,7 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("ShortName")
-    public String getShortName() {
+    public CharSequence getShortName() {
         return shortName;
     }
 
@@ -217,11 +217,11 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("ShortName")
-    public void setShortName(String shortName) {
+    public void setShortName(CharSequence shortName) {
         this.shortName = shortName;
     }
 
-    public SimpleAD withShortName(String shortName) {
+    public SimpleAD withShortName(CharSequence shortName) {
         this.shortName = shortName;
         return this;
     }
@@ -231,7 +231,7 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Size")
-    public String getSize() {
+    public CharSequence getSize() {
         return size;
     }
 
@@ -240,11 +240,11 @@ public class SimpleAD {
      * 
      */
     @JsonProperty("Size")
-    public void setSize(String size) {
+    public void setSize(CharSequence size) {
         this.size = size;
     }
 
-    public SimpleAD withSize(String size) {
+    public SimpleAD withSize(CharSequence size) {
         this.size = size;
         return this;
     }

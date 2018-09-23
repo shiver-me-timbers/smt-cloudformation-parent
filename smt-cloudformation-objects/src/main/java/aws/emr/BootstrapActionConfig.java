@@ -29,7 +29,7 @@ public class BootstrapActionConfig {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name")
-    private String name;
+    private CharSequence name;
     /**
      * ScriptBootstrapActionConfig
      * <p>
@@ -45,7 +45,7 @@ public class BootstrapActionConfig {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -54,11 +54,11 @@ public class BootstrapActionConfig {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public BootstrapActionConfig withName(String name) {
+    public BootstrapActionConfig withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -31,35 +31,35 @@ public class Settings {
      */
     @JsonProperty("EntityUrlTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-entityurltemplate")
-    private String entityUrlTemplate;
+    private CharSequence entityUrlTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-executionurltemplate
      * 
      */
     @JsonProperty("ExecutionUrlTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-executionurltemplate")
-    private String executionUrlTemplate;
+    private CharSequence executionUrlTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-revisionurltemplate
      * 
      */
     @JsonProperty("RevisionUrlTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-revisionurltemplate")
-    private String revisionUrlTemplate;
+    private CharSequence revisionUrlTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-thirdpartyconfigurationurl
      * 
      */
     @JsonProperty("ThirdPartyConfigurationUrl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-thirdpartyconfigurationurl")
-    private String thirdPartyConfigurationUrl;
+    private CharSequence thirdPartyConfigurationUrl;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-entityurltemplate
      * 
      */
     @JsonProperty("EntityUrlTemplate")
-    public String getEntityUrlTemplate() {
+    public CharSequence getEntityUrlTemplate() {
         return entityUrlTemplate;
     }
 
@@ -68,11 +68,11 @@ public class Settings {
      * 
      */
     @JsonProperty("EntityUrlTemplate")
-    public void setEntityUrlTemplate(String entityUrlTemplate) {
+    public void setEntityUrlTemplate(CharSequence entityUrlTemplate) {
         this.entityUrlTemplate = entityUrlTemplate;
     }
 
-    public Settings withEntityUrlTemplate(String entityUrlTemplate) {
+    public Settings withEntityUrlTemplate(CharSequence entityUrlTemplate) {
         this.entityUrlTemplate = entityUrlTemplate;
         return this;
     }
@@ -82,7 +82,7 @@ public class Settings {
      * 
      */
     @JsonProperty("ExecutionUrlTemplate")
-    public String getExecutionUrlTemplate() {
+    public CharSequence getExecutionUrlTemplate() {
         return executionUrlTemplate;
     }
 
@@ -91,11 +91,11 @@ public class Settings {
      * 
      */
     @JsonProperty("ExecutionUrlTemplate")
-    public void setExecutionUrlTemplate(String executionUrlTemplate) {
+    public void setExecutionUrlTemplate(CharSequence executionUrlTemplate) {
         this.executionUrlTemplate = executionUrlTemplate;
     }
 
-    public Settings withExecutionUrlTemplate(String executionUrlTemplate) {
+    public Settings withExecutionUrlTemplate(CharSequence executionUrlTemplate) {
         this.executionUrlTemplate = executionUrlTemplate;
         return this;
     }
@@ -105,7 +105,7 @@ public class Settings {
      * 
      */
     @JsonProperty("RevisionUrlTemplate")
-    public String getRevisionUrlTemplate() {
+    public CharSequence getRevisionUrlTemplate() {
         return revisionUrlTemplate;
     }
 
@@ -114,11 +114,11 @@ public class Settings {
      * 
      */
     @JsonProperty("RevisionUrlTemplate")
-    public void setRevisionUrlTemplate(String revisionUrlTemplate) {
+    public void setRevisionUrlTemplate(CharSequence revisionUrlTemplate) {
         this.revisionUrlTemplate = revisionUrlTemplate;
     }
 
-    public Settings withRevisionUrlTemplate(String revisionUrlTemplate) {
+    public Settings withRevisionUrlTemplate(CharSequence revisionUrlTemplate) {
         this.revisionUrlTemplate = revisionUrlTemplate;
         return this;
     }
@@ -128,7 +128,7 @@ public class Settings {
      * 
      */
     @JsonProperty("ThirdPartyConfigurationUrl")
-    public String getThirdPartyConfigurationUrl() {
+    public CharSequence getThirdPartyConfigurationUrl() {
         return thirdPartyConfigurationUrl;
     }
 
@@ -137,11 +137,11 @@ public class Settings {
      * 
      */
     @JsonProperty("ThirdPartyConfigurationUrl")
-    public void setThirdPartyConfigurationUrl(String thirdPartyConfigurationUrl) {
+    public void setThirdPartyConfigurationUrl(CharSequence thirdPartyConfigurationUrl) {
         this.thirdPartyConfigurationUrl = thirdPartyConfigurationUrl;
     }
 
-    public Settings withThirdPartyConfigurationUrl(String thirdPartyConfigurationUrl) {
+    public Settings withThirdPartyConfigurationUrl(CharSequence thirdPartyConfigurationUrl) {
         this.thirdPartyConfigurationUrl = thirdPartyConfigurationUrl;
         return this;
     }

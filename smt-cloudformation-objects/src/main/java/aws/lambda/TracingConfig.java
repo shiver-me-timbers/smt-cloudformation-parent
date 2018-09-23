@@ -28,14 +28,14 @@ public class TracingConfig {
      */
     @JsonProperty("Mode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode")
-    private String mode;
+    private CharSequence mode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode
      * 
      */
     @JsonProperty("Mode")
-    public String getMode() {
+    public CharSequence getMode() {
         return mode;
     }
 
@@ -44,11 +44,11 @@ public class TracingConfig {
      * 
      */
     @JsonProperty("Mode")
-    public void setMode(String mode) {
+    public void setMode(CharSequence mode) {
         this.mode = mode;
     }
 
-    public TracingConfig withMode(String mode) {
+    public TracingConfig withMode(CharSequence mode) {
         this.mode = mode;
         return this;
     }

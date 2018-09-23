@@ -39,28 +39,28 @@ public class Association {
      */
     @JsonProperty("AssociationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-associationname")
-    private java.lang.String associationName;
+    private CharSequence associationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-documentversion
      * 
      */
     @JsonProperty("DocumentVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-documentversion")
-    private java.lang.String documentVersion;
+    private CharSequence documentVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-instanceid")
-    private java.lang.String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * InstanceAssociationOutputLocation
      * <p>
@@ -83,7 +83,7 @@ public class Association {
      */
     @JsonProperty("ScheduleExpression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression")
-    private java.lang.String scheduleExpression;
+    private CharSequence scheduleExpression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets
      * 
@@ -98,7 +98,7 @@ public class Association {
      * 
      */
     @JsonProperty("AssociationName")
-    public java.lang.String getAssociationName() {
+    public CharSequence getAssociationName() {
         return associationName;
     }
 
@@ -107,11 +107,11 @@ public class Association {
      * 
      */
     @JsonProperty("AssociationName")
-    public void setAssociationName(java.lang.String associationName) {
+    public void setAssociationName(CharSequence associationName) {
         this.associationName = associationName;
     }
 
-    public Association withAssociationName(java.lang.String associationName) {
+    public Association withAssociationName(CharSequence associationName) {
         this.associationName = associationName;
         return this;
     }
@@ -121,7 +121,7 @@ public class Association {
      * 
      */
     @JsonProperty("DocumentVersion")
-    public java.lang.String getDocumentVersion() {
+    public CharSequence getDocumentVersion() {
         return documentVersion;
     }
 
@@ -130,11 +130,11 @@ public class Association {
      * 
      */
     @JsonProperty("DocumentVersion")
-    public void setDocumentVersion(java.lang.String documentVersion) {
+    public void setDocumentVersion(CharSequence documentVersion) {
         this.documentVersion = documentVersion;
     }
 
-    public Association withDocumentVersion(java.lang.String documentVersion) {
+    public Association withDocumentVersion(CharSequence documentVersion) {
         this.documentVersion = documentVersion;
         return this;
     }
@@ -144,7 +144,7 @@ public class Association {
      * 
      */
     @JsonProperty("InstanceId")
-    public java.lang.String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -153,11 +153,11 @@ public class Association {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(java.lang.String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public Association withInstanceId(java.lang.String instanceId) {
+    public Association withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -167,7 +167,7 @@ public class Association {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -176,11 +176,11 @@ public class Association {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Association withName(java.lang.String name) {
+    public Association withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -240,7 +240,7 @@ public class Association {
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public java.lang.String getScheduleExpression() {
+    public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
 
@@ -249,11 +249,11 @@ public class Association {
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public void setScheduleExpression(java.lang.String scheduleExpression) {
+    public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }
 
-    public Association withScheduleExpression(java.lang.String scheduleExpression) {
+    public Association withScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
         return this;
     }

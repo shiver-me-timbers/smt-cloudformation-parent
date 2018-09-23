@@ -32,28 +32,28 @@ public class SubnetGroup {
      */
     @JsonProperty("CacheSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-cachesubnetgroupname")
-    private String cacheSubnetGroupName;
+    private CharSequence cacheSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-subnetids
      * 
      */
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-subnetids")
-    private List<String> subnetIds = new ArrayList<String>();
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-cachesubnetgroupname
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public String getCacheSubnetGroupName() {
+    public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
 
@@ -62,11 +62,11 @@ public class SubnetGroup {
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public void setCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
 
-    public SubnetGroup withCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public SubnetGroup withCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
         return this;
     }
@@ -76,7 +76,7 @@ public class SubnetGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -85,11 +85,11 @@ public class SubnetGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public SubnetGroup withDescription(String description) {
+    public SubnetGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -99,7 +99,7 @@ public class SubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public List<String> getSubnetIds() {
+    public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -108,11 +108,11 @@ public class SubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(List<String> subnetIds) {
+    public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public SubnetGroup withSubnetIds(List<String> subnetIds) {
+    public SubnetGroup withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }

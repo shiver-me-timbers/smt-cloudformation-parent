@@ -30,7 +30,7 @@ public class LogConfiguration {
      */
     @JsonProperty("LogDriver")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver")
-    private java.lang.String logDriver;
+    private CharSequence logDriver;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options
      * 
@@ -44,7 +44,7 @@ public class LogConfiguration {
      * 
      */
     @JsonProperty("LogDriver")
-    public java.lang.String getLogDriver() {
+    public CharSequence getLogDriver() {
         return logDriver;
     }
 
@@ -53,11 +53,11 @@ public class LogConfiguration {
      * 
      */
     @JsonProperty("LogDriver")
-    public void setLogDriver(java.lang.String logDriver) {
+    public void setLogDriver(CharSequence logDriver) {
         this.logDriver = logDriver;
     }
 
-    public LogConfiguration withLogDriver(java.lang.String logDriver) {
+    public LogConfiguration withLogDriver(CharSequence logDriver) {
         this.logDriver = logDriver;
         return this;
     }

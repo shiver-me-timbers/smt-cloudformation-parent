@@ -30,28 +30,28 @@ public class FirehoseAction {
      */
     @JsonProperty("DeliveryStreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-deliverystreamname")
-    private String deliveryStreamName;
+    private CharSequence deliveryStreamName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-separator
      * 
      */
     @JsonProperty("Separator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-separator")
-    private String separator;
+    private CharSequence separator;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-deliverystreamname
      * 
      */
     @JsonProperty("DeliveryStreamName")
-    public String getDeliveryStreamName() {
+    public CharSequence getDeliveryStreamName() {
         return deliveryStreamName;
     }
 
@@ -60,11 +60,11 @@ public class FirehoseAction {
      * 
      */
     @JsonProperty("DeliveryStreamName")
-    public void setDeliveryStreamName(String deliveryStreamName) {
+    public void setDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
     }
 
-    public FirehoseAction withDeliveryStreamName(String deliveryStreamName) {
+    public FirehoseAction withDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
         return this;
     }
@@ -74,7 +74,7 @@ public class FirehoseAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -83,11 +83,11 @@ public class FirehoseAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public FirehoseAction withRoleArn(String roleArn) {
+    public FirehoseAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -97,7 +97,7 @@ public class FirehoseAction {
      * 
      */
     @JsonProperty("Separator")
-    public String getSeparator() {
+    public CharSequence getSeparator() {
         return separator;
     }
 
@@ -106,11 +106,11 @@ public class FirehoseAction {
      * 
      */
     @JsonProperty("Separator")
-    public void setSeparator(String separator) {
+    public void setSeparator(CharSequence separator) {
         this.separator = separator;
     }
 
-    public FirehoseAction withSeparator(String separator) {
+    public FirehoseAction withSeparator(CharSequence separator) {
         this.separator = separator;
         return this;
     }

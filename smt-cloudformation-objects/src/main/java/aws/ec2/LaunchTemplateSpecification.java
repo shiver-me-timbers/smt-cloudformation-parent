@@ -30,28 +30,28 @@ public class LaunchTemplateSpecification {
      */
     @JsonProperty("LaunchTemplateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplateid")
-    private String launchTemplateId;
+    private CharSequence launchTemplateId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplatename
      * 
      */
     @JsonProperty("LaunchTemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplatename")
-    private String launchTemplateName;
+    private CharSequence launchTemplateName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-version
      * 
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-version")
-    private String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplateid
      * 
      */
     @JsonProperty("LaunchTemplateId")
-    public String getLaunchTemplateId() {
+    public CharSequence getLaunchTemplateId() {
         return launchTemplateId;
     }
 
@@ -60,11 +60,11 @@ public class LaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateId")
-    public void setLaunchTemplateId(String launchTemplateId) {
+    public void setLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
     }
 
-    public LaunchTemplateSpecification withLaunchTemplateId(String launchTemplateId) {
+    public LaunchTemplateSpecification withLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
         return this;
     }
@@ -74,7 +74,7 @@ public class LaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public String getLaunchTemplateName() {
+    public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
 
@@ -83,11 +83,11 @@ public class LaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public void setLaunchTemplateName(String launchTemplateName) {
+    public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
 
-    public LaunchTemplateSpecification withLaunchTemplateName(String launchTemplateName) {
+    public LaunchTemplateSpecification withLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
         return this;
     }
@@ -97,7 +97,7 @@ public class LaunchTemplateSpecification {
      * 
      */
     @JsonProperty("Version")
-    public String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -106,11 +106,11 @@ public class LaunchTemplateSpecification {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public LaunchTemplateSpecification withVersion(String version) {
+    public LaunchTemplateSpecification withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

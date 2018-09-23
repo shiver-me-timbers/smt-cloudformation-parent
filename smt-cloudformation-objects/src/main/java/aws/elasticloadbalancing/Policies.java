@@ -44,7 +44,7 @@ public class Policies {
     @JsonProperty("InstancePorts")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports")
-    private Set<String> instancePorts = new LinkedHashSet<String>();
+    private Set<CharSequence> instancePorts = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports
      * 
@@ -52,21 +52,21 @@ public class Policies {
     @JsonProperty("LoadBalancerPorts")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports")
-    private Set<String> loadBalancerPorts = new LinkedHashSet<String>();
+    private Set<CharSequence> loadBalancerPorts = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname
      * 
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname")
-    private String policyName;
+    private CharSequence policyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype
      * 
      */
     @JsonProperty("PolicyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype")
-    private String policyType;
+    private CharSequence policyType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
@@ -96,7 +96,7 @@ public class Policies {
      * 
      */
     @JsonProperty("InstancePorts")
-    public Set<String> getInstancePorts() {
+    public Set<CharSequence> getInstancePorts() {
         return instancePorts;
     }
 
@@ -105,11 +105,11 @@ public class Policies {
      * 
      */
     @JsonProperty("InstancePorts")
-    public void setInstancePorts(Set<String> instancePorts) {
+    public void setInstancePorts(Set<CharSequence> instancePorts) {
         this.instancePorts = instancePorts;
     }
 
-    public Policies withInstancePorts(Set<String> instancePorts) {
+    public Policies withInstancePorts(Set<CharSequence> instancePorts) {
         this.instancePorts = instancePorts;
         return this;
     }
@@ -119,7 +119,7 @@ public class Policies {
      * 
      */
     @JsonProperty("LoadBalancerPorts")
-    public Set<String> getLoadBalancerPorts() {
+    public Set<CharSequence> getLoadBalancerPorts() {
         return loadBalancerPorts;
     }
 
@@ -128,11 +128,11 @@ public class Policies {
      * 
      */
     @JsonProperty("LoadBalancerPorts")
-    public void setLoadBalancerPorts(Set<String> loadBalancerPorts) {
+    public void setLoadBalancerPorts(Set<CharSequence> loadBalancerPorts) {
         this.loadBalancerPorts = loadBalancerPorts;
     }
 
-    public Policies withLoadBalancerPorts(Set<String> loadBalancerPorts) {
+    public Policies withLoadBalancerPorts(Set<CharSequence> loadBalancerPorts) {
         this.loadBalancerPorts = loadBalancerPorts;
         return this;
     }
@@ -142,7 +142,7 @@ public class Policies {
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -151,11 +151,11 @@ public class Policies {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public Policies withPolicyName(String policyName) {
+    public Policies withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }
@@ -165,7 +165,7 @@ public class Policies {
      * 
      */
     @JsonProperty("PolicyType")
-    public String getPolicyType() {
+    public CharSequence getPolicyType() {
         return policyType;
     }
 
@@ -174,11 +174,11 @@ public class Policies {
      * 
      */
     @JsonProperty("PolicyType")
-    public void setPolicyType(String policyType) {
+    public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }
 
-    public Policies withPolicyType(String policyType) {
+    public Policies withPolicyType(CharSequence policyType) {
         this.policyType = policyType;
         return this;
     }

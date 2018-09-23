@@ -31,14 +31,14 @@ public class DatabaseInput {
      */
     @JsonProperty("LocationUri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-locationuri")
-    private String locationUri;
+    private CharSequence locationUri;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters
      * 
@@ -52,14 +52,14 @@ public class DatabaseInput {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-locationuri
      * 
      */
     @JsonProperty("LocationUri")
-    public String getLocationUri() {
+    public CharSequence getLocationUri() {
         return locationUri;
     }
 
@@ -68,11 +68,11 @@ public class DatabaseInput {
      * 
      */
     @JsonProperty("LocationUri")
-    public void setLocationUri(String locationUri) {
+    public void setLocationUri(CharSequence locationUri) {
         this.locationUri = locationUri;
     }
 
-    public DatabaseInput withLocationUri(String locationUri) {
+    public DatabaseInput withLocationUri(CharSequence locationUri) {
         this.locationUri = locationUri;
         return this;
     }
@@ -82,7 +82,7 @@ public class DatabaseInput {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -91,11 +91,11 @@ public class DatabaseInput {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public DatabaseInput withDescription(String description) {
+    public DatabaseInput withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -128,7 +128,7 @@ public class DatabaseInput {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -137,11 +137,11 @@ public class DatabaseInput {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public DatabaseInput withName(String name) {
+    public DatabaseInput withName(CharSequence name) {
         this.name = name;
         return this;
     }

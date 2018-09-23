@@ -67,7 +67,7 @@ public class LoadBalancer {
     @JsonProperty("AvailabilityZones")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-availabilityzones")
-    private Set<String> availabilityZones = new LinkedHashSet<String>();
+    private Set<CharSequence> availabilityZones = new LinkedHashSet<CharSequence>();
     /**
      * ConnectionDrainingPolicy
      * <p>
@@ -109,7 +109,7 @@ public class LoadBalancer {
     @JsonProperty("Instances")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances")
-    private Set<String> instances = new LinkedHashSet<String>();
+    private Set<CharSequence> instances = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-lbcookiestickinesspolicy
      * 
@@ -132,7 +132,7 @@ public class LoadBalancer {
      */
     @JsonProperty("LoadBalancerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-elbname")
-    private String loadBalancerName;
+    private CharSequence loadBalancerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-policies
      * 
@@ -147,7 +147,7 @@ public class LoadBalancer {
      */
     @JsonProperty("Scheme")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-scheme")
-    private String scheme;
+    private CharSequence scheme;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-securitygroups
      * 
@@ -155,7 +155,7 @@ public class LoadBalancer {
     @JsonProperty("SecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-securitygroups")
-    private Set<String> securityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-subnets
      * 
@@ -163,7 +163,7 @@ public class LoadBalancer {
     @JsonProperty("Subnets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-subnets")
-    private Set<String> subnets = new LinkedHashSet<String>();
+    private Set<CharSequence> subnets = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-elasticloadbalancing-loadbalancer-tags
      * 
@@ -227,7 +227,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public Set<String> getAvailabilityZones() {
+    public Set<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
 
@@ -236,11 +236,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("AvailabilityZones")
-    public void setAvailabilityZones(Set<String> availabilityZones) {
+    public void setAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
 
-    public LoadBalancer withAvailabilityZones(Set<String> availabilityZones) {
+    public LoadBalancer withAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
         return this;
     }
@@ -354,7 +354,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Instances")
-    public Set<String> getInstances() {
+    public Set<CharSequence> getInstances() {
         return instances;
     }
 
@@ -363,11 +363,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Instances")
-    public void setInstances(Set<String> instances) {
+    public void setInstances(Set<CharSequence> instances) {
         this.instances = instances;
     }
 
-    public LoadBalancer withInstances(Set<String> instances) {
+    public LoadBalancer withInstances(Set<CharSequence> instances) {
         this.instances = instances;
         return this;
     }
@@ -423,7 +423,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("LoadBalancerName")
-    public String getLoadBalancerName() {
+    public CharSequence getLoadBalancerName() {
         return loadBalancerName;
     }
 
@@ -432,11 +432,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("LoadBalancerName")
-    public void setLoadBalancerName(String loadBalancerName) {
+    public void setLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
     }
 
-    public LoadBalancer withLoadBalancerName(String loadBalancerName) {
+    public LoadBalancer withLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
         return this;
     }
@@ -469,7 +469,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Scheme")
-    public String getScheme() {
+    public CharSequence getScheme() {
         return scheme;
     }
 
@@ -478,11 +478,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Scheme")
-    public void setScheme(String scheme) {
+    public void setScheme(CharSequence scheme) {
         this.scheme = scheme;
     }
 
-    public LoadBalancer withScheme(String scheme) {
+    public LoadBalancer withScheme(CharSequence scheme) {
         this.scheme = scheme;
         return this;
     }
@@ -492,7 +492,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public Set<String> getSecurityGroups() {
+    public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -501,11 +501,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(Set<String> securityGroups) {
+    public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public LoadBalancer withSecurityGroups(Set<String> securityGroups) {
+    public LoadBalancer withSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -515,7 +515,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Subnets")
-    public Set<String> getSubnets() {
+    public Set<CharSequence> getSubnets() {
         return subnets;
     }
 
@@ -524,11 +524,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("Subnets")
-    public void setSubnets(Set<String> subnets) {
+    public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }
 
-    public LoadBalancer withSubnets(Set<String> subnets) {
+    public LoadBalancer withSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
         return this;
     }

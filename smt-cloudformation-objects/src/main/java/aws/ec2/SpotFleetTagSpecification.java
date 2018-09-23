@@ -28,14 +28,14 @@ public class SpotFleetTagSpecification {
      */
     @JsonProperty("ResourceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype")
-    private String resourceType;
+    private CharSequence resourceType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype
      * 
      */
     @JsonProperty("ResourceType")
-    public String getResourceType() {
+    public CharSequence getResourceType() {
         return resourceType;
     }
 
@@ -44,11 +44,11 @@ public class SpotFleetTagSpecification {
      * 
      */
     @JsonProperty("ResourceType")
-    public void setResourceType(String resourceType) {
+    public void setResourceType(CharSequence resourceType) {
         this.resourceType = resourceType;
     }
 
-    public SpotFleetTagSpecification withResourceType(String resourceType) {
+    public SpotFleetTagSpecification withResourceType(CharSequence resourceType) {
         this.resourceType = resourceType;
         return this;
     }

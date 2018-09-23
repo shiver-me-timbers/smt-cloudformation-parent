@@ -38,7 +38,7 @@ public class DataExport {
      */
     @JsonProperty("OutputSchemaVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-outputschemaversion")
-    private String outputSchemaVersion;
+    private CharSequence outputSchemaVersion;
 
     /**
      * Destination
@@ -72,7 +72,7 @@ public class DataExport {
      * 
      */
     @JsonProperty("OutputSchemaVersion")
-    public String getOutputSchemaVersion() {
+    public CharSequence getOutputSchemaVersion() {
         return outputSchemaVersion;
     }
 
@@ -81,11 +81,11 @@ public class DataExport {
      * 
      */
     @JsonProperty("OutputSchemaVersion")
-    public void setOutputSchemaVersion(String outputSchemaVersion) {
+    public void setOutputSchemaVersion(CharSequence outputSchemaVersion) {
         this.outputSchemaVersion = outputSchemaVersion;
     }
 
-    public DataExport withOutputSchemaVersion(String outputSchemaVersion) {
+    public DataExport withOutputSchemaVersion(CharSequence outputSchemaVersion) {
         this.outputSchemaVersion = outputSchemaVersion;
         return this;
     }

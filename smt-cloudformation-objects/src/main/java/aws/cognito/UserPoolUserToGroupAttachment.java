@@ -30,28 +30,28 @@ public class UserPoolUserToGroupAttachment {
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-userpoolid
      * 
      */
     @JsonProperty("UserPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-userpoolid")
-    private String userPoolId;
+    private CharSequence userPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-username
      * 
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-username")
-    private String username;
+    private CharSequence username;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-groupname
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -60,11 +60,11 @@ public class UserPoolUserToGroupAttachment {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public UserPoolUserToGroupAttachment withGroupName(String groupName) {
+    public UserPoolUserToGroupAttachment withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -74,7 +74,7 @@ public class UserPoolUserToGroupAttachment {
      * 
      */
     @JsonProperty("UserPoolId")
-    public String getUserPoolId() {
+    public CharSequence getUserPoolId() {
         return userPoolId;
     }
 
@@ -83,11 +83,11 @@ public class UserPoolUserToGroupAttachment {
      * 
      */
     @JsonProperty("UserPoolId")
-    public void setUserPoolId(String userPoolId) {
+    public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
 
-    public UserPoolUserToGroupAttachment withUserPoolId(String userPoolId) {
+    public UserPoolUserToGroupAttachment withUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
         return this;
     }
@@ -97,7 +97,7 @@ public class UserPoolUserToGroupAttachment {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -106,11 +106,11 @@ public class UserPoolUserToGroupAttachment {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public UserPoolUserToGroupAttachment withUsername(String username) {
+    public UserPoolUserToGroupAttachment withUsername(CharSequence username) {
         this.username = username;
         return this;
     }

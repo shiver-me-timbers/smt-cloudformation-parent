@@ -31,7 +31,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("DeviceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename")
-    private String deviceName;
+    private CharSequence deviceName;
     /**
      * EbsBlockDevice
      * <p>
@@ -47,21 +47,21 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("NoDevice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-nodevice")
-    private String noDevice;
+    private CharSequence noDevice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-virtualname
      * 
      */
     @JsonProperty("VirtualName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-virtualname")
-    private String virtualName;
+    private CharSequence virtualName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename
      * 
      */
     @JsonProperty("DeviceName")
-    public String getDeviceName() {
+    public CharSequence getDeviceName() {
         return deviceName;
     }
 
@@ -70,11 +70,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("DeviceName")
-    public void setDeviceName(String deviceName) {
+    public void setDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
     }
 
-    public BlockDeviceMapping withDeviceName(String deviceName) {
+    public BlockDeviceMapping withDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
         return this;
     }
@@ -111,7 +111,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("NoDevice")
-    public String getNoDevice() {
+    public CharSequence getNoDevice() {
         return noDevice;
     }
 
@@ -120,11 +120,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("NoDevice")
-    public void setNoDevice(String noDevice) {
+    public void setNoDevice(CharSequence noDevice) {
         this.noDevice = noDevice;
     }
 
-    public BlockDeviceMapping withNoDevice(String noDevice) {
+    public BlockDeviceMapping withNoDevice(CharSequence noDevice) {
         this.noDevice = noDevice;
         return this;
     }
@@ -134,7 +134,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("VirtualName")
-    public String getVirtualName() {
+    public CharSequence getVirtualName() {
         return virtualName;
     }
 
@@ -143,11 +143,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("VirtualName")
-    public void setVirtualName(String virtualName) {
+    public void setVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
     }
 
-    public BlockDeviceMapping withVirtualName(String virtualName) {
+    public BlockDeviceMapping withVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
         return this;
     }

@@ -50,7 +50,7 @@ public class ListenerRule {
      */
     @JsonProperty("ListenerArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-listenerarn")
-    private String listenerArn;
+    private CharSequence listenerArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-priority
      * 
@@ -110,7 +110,7 @@ public class ListenerRule {
      * 
      */
     @JsonProperty("ListenerArn")
-    public String getListenerArn() {
+    public CharSequence getListenerArn() {
         return listenerArn;
     }
 
@@ -119,11 +119,11 @@ public class ListenerRule {
      * 
      */
     @JsonProperty("ListenerArn")
-    public void setListenerArn(String listenerArn) {
+    public void setListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
     }
 
-    public ListenerRule withListenerArn(String listenerArn) {
+    public ListenerRule withListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
         return this;
     }

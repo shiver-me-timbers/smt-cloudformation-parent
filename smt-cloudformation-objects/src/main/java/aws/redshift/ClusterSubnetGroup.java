@@ -33,14 +33,14 @@ public class ClusterSubnetGroup {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html#cfn-redshift-clustersubnetgroup-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html#cfn-redshift-clustersubnetgroup-subnetids
      * 
      */
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html#cfn-redshift-clustersubnetgroup-subnetids")
-    private List<String> subnetIds = new ArrayList<String>();
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html#cfn-redshift-clustersubnetgroup-tags
      * 
@@ -54,7 +54,7 @@ public class ClusterSubnetGroup {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -63,11 +63,11 @@ public class ClusterSubnetGroup {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ClusterSubnetGroup withDescription(String description) {
+    public ClusterSubnetGroup withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -77,7 +77,7 @@ public class ClusterSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public List<String> getSubnetIds() {
+    public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -86,11 +86,11 @@ public class ClusterSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(List<String> subnetIds) {
+    public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public ClusterSubnetGroup withSubnetIds(List<String> subnetIds) {
+    public ClusterSubnetGroup withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }

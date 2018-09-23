@@ -31,35 +31,35 @@ public class ActionTypeId {
      */
     @JsonProperty("Category")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category")
-    private String category;
+    private CharSequence category;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
      * 
      */
     @JsonProperty("Owner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner")
-    private String owner;
+    private CharSequence owner;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
      * 
      */
     @JsonProperty("Provider")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider")
-    private String provider;
+    private CharSequence provider;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
      * 
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version")
-    private String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
      * 
      */
     @JsonProperty("Category")
-    public String getCategory() {
+    public CharSequence getCategory() {
         return category;
     }
 
@@ -68,11 +68,11 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Category")
-    public void setCategory(String category) {
+    public void setCategory(CharSequence category) {
         this.category = category;
     }
 
-    public ActionTypeId withCategory(String category) {
+    public ActionTypeId withCategory(CharSequence category) {
         this.category = category;
         return this;
     }
@@ -82,7 +82,7 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Owner")
-    public String getOwner() {
+    public CharSequence getOwner() {
         return owner;
     }
 
@@ -91,11 +91,11 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Owner")
-    public void setOwner(String owner) {
+    public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
 
-    public ActionTypeId withOwner(String owner) {
+    public ActionTypeId withOwner(CharSequence owner) {
         this.owner = owner;
         return this;
     }
@@ -105,7 +105,7 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Provider")
-    public String getProvider() {
+    public CharSequence getProvider() {
         return provider;
     }
 
@@ -114,11 +114,11 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Provider")
-    public void setProvider(String provider) {
+    public void setProvider(CharSequence provider) {
         this.provider = provider;
     }
 
-    public ActionTypeId withProvider(String provider) {
+    public ActionTypeId withProvider(CharSequence provider) {
         this.provider = provider;
         return this;
     }
@@ -128,7 +128,7 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Version")
-    public String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -137,11 +137,11 @@ public class ActionTypeId {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public ActionTypeId withVersion(String version) {
+    public ActionTypeId withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

@@ -63,7 +63,7 @@ public class Function {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description")
-    private String description;
+    private CharSequence description;
     /**
      * Environment
      * <p>
@@ -79,21 +79,21 @@ public class Function {
      */
     @JsonProperty("FunctionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname")
-    private String functionName;
+    private CharSequence functionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-handler
      * 
      */
     @JsonProperty("Handler")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-handler")
-    private String handler;
+    private CharSequence handler;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-kmskeyarn
      * 
      */
     @JsonProperty("KmsKeyArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-kmskeyarn")
-    private String kmsKeyArn;
+    private CharSequence kmsKeyArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize
      * 
@@ -114,14 +114,14 @@ public class Function {
      */
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-role")
-    private String role;
+    private CharSequence role;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime
      * 
      */
     @JsonProperty("Runtime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime")
-    private String runtime;
+    private CharSequence runtime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tags
      * 
@@ -214,7 +214,7 @@ public class Function {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -223,11 +223,11 @@ public class Function {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Function withDescription(String description) {
+    public Function withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -264,7 +264,7 @@ public class Function {
      * 
      */
     @JsonProperty("FunctionName")
-    public String getFunctionName() {
+    public CharSequence getFunctionName() {
         return functionName;
     }
 
@@ -273,11 +273,11 @@ public class Function {
      * 
      */
     @JsonProperty("FunctionName")
-    public void setFunctionName(String functionName) {
+    public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
 
-    public Function withFunctionName(String functionName) {
+    public Function withFunctionName(CharSequence functionName) {
         this.functionName = functionName;
         return this;
     }
@@ -287,7 +287,7 @@ public class Function {
      * 
      */
     @JsonProperty("Handler")
-    public String getHandler() {
+    public CharSequence getHandler() {
         return handler;
     }
 
@@ -296,11 +296,11 @@ public class Function {
      * 
      */
     @JsonProperty("Handler")
-    public void setHandler(String handler) {
+    public void setHandler(CharSequence handler) {
         this.handler = handler;
     }
 
-    public Function withHandler(String handler) {
+    public Function withHandler(CharSequence handler) {
         this.handler = handler;
         return this;
     }
@@ -310,7 +310,7 @@ public class Function {
      * 
      */
     @JsonProperty("KmsKeyArn")
-    public String getKmsKeyArn() {
+    public CharSequence getKmsKeyArn() {
         return kmsKeyArn;
     }
 
@@ -319,11 +319,11 @@ public class Function {
      * 
      */
     @JsonProperty("KmsKeyArn")
-    public void setKmsKeyArn(String kmsKeyArn) {
+    public void setKmsKeyArn(CharSequence kmsKeyArn) {
         this.kmsKeyArn = kmsKeyArn;
     }
 
-    public Function withKmsKeyArn(String kmsKeyArn) {
+    public Function withKmsKeyArn(CharSequence kmsKeyArn) {
         this.kmsKeyArn = kmsKeyArn;
         return this;
     }
@@ -379,7 +379,7 @@ public class Function {
      * 
      */
     @JsonProperty("Role")
-    public String getRole() {
+    public CharSequence getRole() {
         return role;
     }
 
@@ -388,11 +388,11 @@ public class Function {
      * 
      */
     @JsonProperty("Role")
-    public void setRole(String role) {
+    public void setRole(CharSequence role) {
         this.role = role;
     }
 
-    public Function withRole(String role) {
+    public Function withRole(CharSequence role) {
         this.role = role;
         return this;
     }
@@ -402,7 +402,7 @@ public class Function {
      * 
      */
     @JsonProperty("Runtime")
-    public String getRuntime() {
+    public CharSequence getRuntime() {
         return runtime;
     }
 
@@ -411,11 +411,11 @@ public class Function {
      * 
      */
     @JsonProperty("Runtime")
-    public void setRuntime(String runtime) {
+    public void setRuntime(CharSequence runtime) {
         this.runtime = runtime;
     }
 
-    public Function withRuntime(String runtime) {
+    public Function withRuntime(CharSequence runtime) {
         this.runtime = runtime;
         return this;
     }

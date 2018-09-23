@@ -43,21 +43,21 @@ public class Application {
     @JsonProperty("Args")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-args")
-    private Set<java.lang.String> args = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> args = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-version
      * 
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-version")
-    private java.lang.String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo
@@ -87,7 +87,7 @@ public class Application {
      * 
      */
     @JsonProperty("Args")
-    public Set<java.lang.String> getArgs() {
+    public Set<CharSequence> getArgs() {
         return args;
     }
 
@@ -96,11 +96,11 @@ public class Application {
      * 
      */
     @JsonProperty("Args")
-    public void setArgs(Set<java.lang.String> args) {
+    public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
 
-    public Application withArgs(Set<java.lang.String> args) {
+    public Application withArgs(Set<CharSequence> args) {
         this.args = args;
         return this;
     }
@@ -110,7 +110,7 @@ public class Application {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -119,11 +119,11 @@ public class Application {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Application withName(java.lang.String name) {
+    public Application withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -133,7 +133,7 @@ public class Application {
      * 
      */
     @JsonProperty("Version")
-    public java.lang.String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -142,11 +142,11 @@ public class Application {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(java.lang.String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public Application withVersion(java.lang.String version) {
+    public Application withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

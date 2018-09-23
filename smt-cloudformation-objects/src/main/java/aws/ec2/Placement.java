@@ -32,42 +32,42 @@ public class Placement {
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy
      * 
      */
     @JsonProperty("Tenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy")
-    private String tenancy;
+    private CharSequence tenancy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-affinity
      * 
      */
     @JsonProperty("Affinity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-affinity")
-    private String affinity;
+    private CharSequence affinity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid
      * 
      */
     @JsonProperty("HostId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid")
-    private String hostId;
+    private CharSequence hostId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -76,11 +76,11 @@ public class Placement {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public Placement withGroupName(String groupName) {
+    public Placement withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -90,7 +90,7 @@ public class Placement {
      * 
      */
     @JsonProperty("Tenancy")
-    public String getTenancy() {
+    public CharSequence getTenancy() {
         return tenancy;
     }
 
@@ -99,11 +99,11 @@ public class Placement {
      * 
      */
     @JsonProperty("Tenancy")
-    public void setTenancy(String tenancy) {
+    public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
 
-    public Placement withTenancy(String tenancy) {
+    public Placement withTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
         return this;
     }
@@ -113,7 +113,7 @@ public class Placement {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -122,11 +122,11 @@ public class Placement {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Placement withAvailabilityZone(String availabilityZone) {
+    public Placement withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -136,7 +136,7 @@ public class Placement {
      * 
      */
     @JsonProperty("Affinity")
-    public String getAffinity() {
+    public CharSequence getAffinity() {
         return affinity;
     }
 
@@ -145,11 +145,11 @@ public class Placement {
      * 
      */
     @JsonProperty("Affinity")
-    public void setAffinity(String affinity) {
+    public void setAffinity(CharSequence affinity) {
         this.affinity = affinity;
     }
 
-    public Placement withAffinity(String affinity) {
+    public Placement withAffinity(CharSequence affinity) {
         this.affinity = affinity;
         return this;
     }
@@ -159,7 +159,7 @@ public class Placement {
      * 
      */
     @JsonProperty("HostId")
-    public String getHostId() {
+    public CharSequence getHostId() {
         return hostId;
     }
 
@@ -168,11 +168,11 @@ public class Placement {
      * 
      */
     @JsonProperty("HostId")
-    public void setHostId(String hostId) {
+    public void setHostId(CharSequence hostId) {
         this.hostId = hostId;
     }
 
-    public Placement withHostId(String hostId) {
+    public Placement withHostId(CharSequence hostId) {
         this.hostId = hostId;
         return this;
     }

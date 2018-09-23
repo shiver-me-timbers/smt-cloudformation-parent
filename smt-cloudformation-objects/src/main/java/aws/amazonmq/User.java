@@ -33,14 +33,14 @@ public class User {
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username")
-    private String username;
+    private CharSequence username;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-groups
      * 
      */
     @JsonProperty("Groups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-groups")
-    private List<String> groups = new ArrayList<String>();
+    private List<CharSequence> groups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-consoleaccess
      * 
@@ -54,14 +54,14 @@ public class User {
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-password")
-    private String password;
+    private CharSequence password;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -70,11 +70,11 @@ public class User {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public User withUsername(String username) {
+    public User withUsername(CharSequence username) {
         this.username = username;
         return this;
     }
@@ -84,7 +84,7 @@ public class User {
      * 
      */
     @JsonProperty("Groups")
-    public List<String> getGroups() {
+    public List<CharSequence> getGroups() {
         return groups;
     }
 
@@ -93,11 +93,11 @@ public class User {
      * 
      */
     @JsonProperty("Groups")
-    public void setGroups(List<String> groups) {
+    public void setGroups(List<CharSequence> groups) {
         this.groups = groups;
     }
 
-    public User withGroups(List<String> groups) {
+    public User withGroups(List<CharSequence> groups) {
         this.groups = groups;
         return this;
     }
@@ -130,7 +130,7 @@ public class User {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -139,11 +139,11 @@ public class User {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public User withPassword(String password) {
+    public User withPassword(CharSequence password) {
         this.password = password;
         return this;
     }

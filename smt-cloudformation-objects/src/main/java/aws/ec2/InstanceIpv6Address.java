@@ -28,14 +28,14 @@ public class InstanceIpv6Address {
      */
     @JsonProperty("Ipv6Address")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-instanceipv6address.html#cfn-ec2-instance-instanceipv6address-ipv6address")
-    private String ipv6Address;
+    private CharSequence ipv6Address;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-instanceipv6address.html#cfn-ec2-instance-instanceipv6address-ipv6address
      * 
      */
     @JsonProperty("Ipv6Address")
-    public String getIpv6Address() {
+    public CharSequence getIpv6Address() {
         return ipv6Address;
     }
 
@@ -44,11 +44,11 @@ public class InstanceIpv6Address {
      * 
      */
     @JsonProperty("Ipv6Address")
-    public void setIpv6Address(String ipv6Address) {
+    public void setIpv6Address(CharSequence ipv6Address) {
         this.ipv6Address = ipv6Address;
     }
 
-    public InstanceIpv6Address withIpv6Address(String ipv6Address) {
+    public InstanceIpv6Address withIpv6Address(CharSequence ipv6Address) {
         this.ipv6Address = ipv6Address;
         return this;
     }

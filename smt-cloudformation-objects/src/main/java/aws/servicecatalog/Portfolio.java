@@ -35,28 +35,28 @@ public class Portfolio {
      */
     @JsonProperty("ProviderName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-providername")
-    private String providerName;
+    private CharSequence providerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-displayname
      * 
      */
     @JsonProperty("DisplayName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-displayname")
-    private String displayName;
+    private CharSequence displayName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-tags
      * 
@@ -70,7 +70,7 @@ public class Portfolio {
      * 
      */
     @JsonProperty("ProviderName")
-    public String getProviderName() {
+    public CharSequence getProviderName() {
         return providerName;
     }
 
@@ -79,11 +79,11 @@ public class Portfolio {
      * 
      */
     @JsonProperty("ProviderName")
-    public void setProviderName(String providerName) {
+    public void setProviderName(CharSequence providerName) {
         this.providerName = providerName;
     }
 
-    public Portfolio withProviderName(String providerName) {
+    public Portfolio withProviderName(CharSequence providerName) {
         this.providerName = providerName;
         return this;
     }
@@ -93,7 +93,7 @@ public class Portfolio {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -102,11 +102,11 @@ public class Portfolio {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Portfolio withDescription(String description) {
+    public Portfolio withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -116,7 +116,7 @@ public class Portfolio {
      * 
      */
     @JsonProperty("DisplayName")
-    public String getDisplayName() {
+    public CharSequence getDisplayName() {
         return displayName;
     }
 
@@ -125,11 +125,11 @@ public class Portfolio {
      * 
      */
     @JsonProperty("DisplayName")
-    public void setDisplayName(String displayName) {
+    public void setDisplayName(CharSequence displayName) {
         this.displayName = displayName;
     }
 
-    public Portfolio withDisplayName(String displayName) {
+    public Portfolio withDisplayName(CharSequence displayName) {
         this.displayName = displayName;
         return this;
     }
@@ -139,7 +139,7 @@ public class Portfolio {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -148,11 +148,11 @@ public class Portfolio {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public Portfolio withAcceptLanguage(String acceptLanguage) {
+    public Portfolio withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }

@@ -30,28 +30,28 @@ public class Master {
      */
     @JsonProperty("DetectorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid")
-    private String detectorId;
+    private CharSequence detectorId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid
      * 
      */
     @JsonProperty("MasterId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid")
-    private String masterId;
+    private CharSequence masterId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid
      * 
      */
     @JsonProperty("InvitationId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid")
-    private String invitationId;
+    private CharSequence invitationId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid
      * 
      */
     @JsonProperty("DetectorId")
-    public String getDetectorId() {
+    public CharSequence getDetectorId() {
         return detectorId;
     }
 
@@ -60,11 +60,11 @@ public class Master {
      * 
      */
     @JsonProperty("DetectorId")
-    public void setDetectorId(String detectorId) {
+    public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
 
-    public Master withDetectorId(String detectorId) {
+    public Master withDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
         return this;
     }
@@ -74,7 +74,7 @@ public class Master {
      * 
      */
     @JsonProperty("MasterId")
-    public String getMasterId() {
+    public CharSequence getMasterId() {
         return masterId;
     }
 
@@ -83,11 +83,11 @@ public class Master {
      * 
      */
     @JsonProperty("MasterId")
-    public void setMasterId(String masterId) {
+    public void setMasterId(CharSequence masterId) {
         this.masterId = masterId;
     }
 
-    public Master withMasterId(String masterId) {
+    public Master withMasterId(CharSequence masterId) {
         this.masterId = masterId;
         return this;
     }
@@ -97,7 +97,7 @@ public class Master {
      * 
      */
     @JsonProperty("InvitationId")
-    public String getInvitationId() {
+    public CharSequence getInvitationId() {
         return invitationId;
     }
 
@@ -106,11 +106,11 @@ public class Master {
      * 
      */
     @JsonProperty("InvitationId")
-    public void setInvitationId(String invitationId) {
+    public void setInvitationId(CharSequence invitationId) {
         this.invitationId = invitationId;
     }
 
-    public Master withInvitationId(String invitationId) {
+    public Master withInvitationId(CharSequence invitationId) {
         this.invitationId = invitationId;
         return this;
     }

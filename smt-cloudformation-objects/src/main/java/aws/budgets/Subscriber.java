@@ -29,21 +29,21 @@ public class Subscriber {
      */
     @JsonProperty("SubscriptionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype")
-    private String subscriptionType;
+    private CharSequence subscriptionType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address
      * 
      */
     @JsonProperty("Address")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address")
-    private String address;
+    private CharSequence address;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype
      * 
      */
     @JsonProperty("SubscriptionType")
-    public String getSubscriptionType() {
+    public CharSequence getSubscriptionType() {
         return subscriptionType;
     }
 
@@ -52,11 +52,11 @@ public class Subscriber {
      * 
      */
     @JsonProperty("SubscriptionType")
-    public void setSubscriptionType(String subscriptionType) {
+    public void setSubscriptionType(CharSequence subscriptionType) {
         this.subscriptionType = subscriptionType;
     }
 
-    public Subscriber withSubscriptionType(String subscriptionType) {
+    public Subscriber withSubscriptionType(CharSequence subscriptionType) {
         this.subscriptionType = subscriptionType;
         return this;
     }
@@ -66,7 +66,7 @@ public class Subscriber {
      * 
      */
     @JsonProperty("Address")
-    public String getAddress() {
+    public CharSequence getAddress() {
         return address;
     }
 
@@ -75,11 +75,11 @@ public class Subscriber {
      * 
      */
     @JsonProperty("Address")
-    public void setAddress(String address) {
+    public void setAddress(CharSequence address) {
         this.address = address;
     }
 
-    public Subscriber withAddress(String address) {
+    public Subscriber withAddress(CharSequence address) {
         this.address = address;
         return this;
     }

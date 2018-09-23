@@ -28,14 +28,14 @@ public class LambdaConfig {
      */
     @JsonProperty("LambdaFunctionArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn")
-    private String lambdaFunctionArn;
+    private CharSequence lambdaFunctionArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn
      * 
      */
     @JsonProperty("LambdaFunctionArn")
-    public String getLambdaFunctionArn() {
+    public CharSequence getLambdaFunctionArn() {
         return lambdaFunctionArn;
     }
 
@@ -44,11 +44,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("LambdaFunctionArn")
-    public void setLambdaFunctionArn(String lambdaFunctionArn) {
+    public void setLambdaFunctionArn(CharSequence lambdaFunctionArn) {
         this.lambdaFunctionArn = lambdaFunctionArn;
     }
 
-    public LambdaConfig withLambdaFunctionArn(String lambdaFunctionArn) {
+    public LambdaConfig withLambdaFunctionArn(CharSequence lambdaFunctionArn) {
         this.lambdaFunctionArn = lambdaFunctionArn;
         return this;
     }

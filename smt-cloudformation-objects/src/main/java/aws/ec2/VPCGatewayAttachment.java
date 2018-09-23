@@ -30,28 +30,28 @@ public class VPCGatewayAttachment {
      */
     @JsonProperty("InternetGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-internetgatewayid")
-    private String internetGatewayId;
+    private CharSequence internetGatewayId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpcid
      * 
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpngatewayid
      * 
      */
     @JsonProperty("VpnGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpngatewayid")
-    private String vpnGatewayId;
+    private CharSequence vpnGatewayId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-internetgatewayid
      * 
      */
     @JsonProperty("InternetGatewayId")
-    public String getInternetGatewayId() {
+    public CharSequence getInternetGatewayId() {
         return internetGatewayId;
     }
 
@@ -60,11 +60,11 @@ public class VPCGatewayAttachment {
      * 
      */
     @JsonProperty("InternetGatewayId")
-    public void setInternetGatewayId(String internetGatewayId) {
+    public void setInternetGatewayId(CharSequence internetGatewayId) {
         this.internetGatewayId = internetGatewayId;
     }
 
-    public VPCGatewayAttachment withInternetGatewayId(String internetGatewayId) {
+    public VPCGatewayAttachment withInternetGatewayId(CharSequence internetGatewayId) {
         this.internetGatewayId = internetGatewayId;
         return this;
     }
@@ -74,7 +74,7 @@ public class VPCGatewayAttachment {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -83,11 +83,11 @@ public class VPCGatewayAttachment {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VPCGatewayAttachment withVpcId(String vpcId) {
+    public VPCGatewayAttachment withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }
@@ -97,7 +97,7 @@ public class VPCGatewayAttachment {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public String getVpnGatewayId() {
+    public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
 
@@ -106,11 +106,11 @@ public class VPCGatewayAttachment {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public void setVpnGatewayId(String vpnGatewayId) {
+    public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }
 
-    public VPCGatewayAttachment withVpnGatewayId(String vpnGatewayId) {
+    public VPCGatewayAttachment withVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
         return this;
     }

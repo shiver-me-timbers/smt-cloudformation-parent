@@ -30,7 +30,7 @@ public class TopicConfiguration {
      */
     @JsonProperty("Event")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event")
-    private String event;
+    private CharSequence event;
     /**
      * NotificationFilter
      * <p>
@@ -46,14 +46,14 @@ public class TopicConfiguration {
      */
     @JsonProperty("Topic")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic")
-    private String topic;
+    private CharSequence topic;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event
      * 
      */
     @JsonProperty("Event")
-    public String getEvent() {
+    public CharSequence getEvent() {
         return event;
     }
 
@@ -62,11 +62,11 @@ public class TopicConfiguration {
      * 
      */
     @JsonProperty("Event")
-    public void setEvent(String event) {
+    public void setEvent(CharSequence event) {
         this.event = event;
     }
 
-    public TopicConfiguration withEvent(String event) {
+    public TopicConfiguration withEvent(CharSequence event) {
         this.event = event;
         return this;
     }
@@ -103,7 +103,7 @@ public class TopicConfiguration {
      * 
      */
     @JsonProperty("Topic")
-    public String getTopic() {
+    public CharSequence getTopic() {
         return topic;
     }
 
@@ -112,11 +112,11 @@ public class TopicConfiguration {
      * 
      */
     @JsonProperty("Topic")
-    public void setTopic(String topic) {
+    public void setTopic(CharSequence topic) {
         this.topic = topic;
     }
 
-    public TopicConfiguration withTopic(String topic) {
+    public TopicConfiguration withTopic(CharSequence topic) {
         this.topic = topic;
         return this;
     }

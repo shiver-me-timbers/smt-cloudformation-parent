@@ -36,21 +36,21 @@ public class Listeners {
      */
     @JsonProperty("InstancePort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport")
-    private String instancePort;
+    private CharSequence instancePort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol
      * 
      */
     @JsonProperty("InstanceProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol")
-    private String instanceProtocol;
+    private CharSequence instanceProtocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport
      * 
      */
     @JsonProperty("LoadBalancerPort")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport")
-    private String loadBalancerPort;
+    private CharSequence loadBalancerPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames
      * 
@@ -58,28 +58,28 @@ public class Listeners {
     @JsonProperty("PolicyNames")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames")
-    private Set<String> policyNames = new LinkedHashSet<String>();
+    private Set<CharSequence> policyNames = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol
      * 
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid
      * 
      */
     @JsonProperty("SSLCertificateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid")
-    private String sSLCertificateId;
+    private CharSequence sSLCertificateId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport
      * 
      */
     @JsonProperty("InstancePort")
-    public String getInstancePort() {
+    public CharSequence getInstancePort() {
         return instancePort;
     }
 
@@ -88,11 +88,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("InstancePort")
-    public void setInstancePort(String instancePort) {
+    public void setInstancePort(CharSequence instancePort) {
         this.instancePort = instancePort;
     }
 
-    public Listeners withInstancePort(String instancePort) {
+    public Listeners withInstancePort(CharSequence instancePort) {
         this.instancePort = instancePort;
         return this;
     }
@@ -102,7 +102,7 @@ public class Listeners {
      * 
      */
     @JsonProperty("InstanceProtocol")
-    public String getInstanceProtocol() {
+    public CharSequence getInstanceProtocol() {
         return instanceProtocol;
     }
 
@@ -111,11 +111,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("InstanceProtocol")
-    public void setInstanceProtocol(String instanceProtocol) {
+    public void setInstanceProtocol(CharSequence instanceProtocol) {
         this.instanceProtocol = instanceProtocol;
     }
 
-    public Listeners withInstanceProtocol(String instanceProtocol) {
+    public Listeners withInstanceProtocol(CharSequence instanceProtocol) {
         this.instanceProtocol = instanceProtocol;
         return this;
     }
@@ -125,7 +125,7 @@ public class Listeners {
      * 
      */
     @JsonProperty("LoadBalancerPort")
-    public String getLoadBalancerPort() {
+    public CharSequence getLoadBalancerPort() {
         return loadBalancerPort;
     }
 
@@ -134,11 +134,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("LoadBalancerPort")
-    public void setLoadBalancerPort(String loadBalancerPort) {
+    public void setLoadBalancerPort(CharSequence loadBalancerPort) {
         this.loadBalancerPort = loadBalancerPort;
     }
 
-    public Listeners withLoadBalancerPort(String loadBalancerPort) {
+    public Listeners withLoadBalancerPort(CharSequence loadBalancerPort) {
         this.loadBalancerPort = loadBalancerPort;
         return this;
     }
@@ -148,7 +148,7 @@ public class Listeners {
      * 
      */
     @JsonProperty("PolicyNames")
-    public Set<String> getPolicyNames() {
+    public Set<CharSequence> getPolicyNames() {
         return policyNames;
     }
 
@@ -157,11 +157,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("PolicyNames")
-    public void setPolicyNames(Set<String> policyNames) {
+    public void setPolicyNames(Set<CharSequence> policyNames) {
         this.policyNames = policyNames;
     }
 
-    public Listeners withPolicyNames(Set<String> policyNames) {
+    public Listeners withPolicyNames(Set<CharSequence> policyNames) {
         this.policyNames = policyNames;
         return this;
     }
@@ -171,7 +171,7 @@ public class Listeners {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -180,11 +180,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public Listeners withProtocol(String protocol) {
+    public Listeners withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -194,7 +194,7 @@ public class Listeners {
      * 
      */
     @JsonProperty("SSLCertificateId")
-    public String getSSLCertificateId() {
+    public CharSequence getSSLCertificateId() {
         return sSLCertificateId;
     }
 
@@ -203,11 +203,11 @@ public class Listeners {
      * 
      */
     @JsonProperty("SSLCertificateId")
-    public void setSSLCertificateId(String sSLCertificateId) {
+    public void setSSLCertificateId(CharSequence sSLCertificateId) {
         this.sSLCertificateId = sSLCertificateId;
     }
 
-    public Listeners withSSLCertificateId(String sSLCertificateId) {
+    public Listeners withSSLCertificateId(CharSequence sSLCertificateId) {
         this.sSLCertificateId = sSLCertificateId;
         return this;
     }

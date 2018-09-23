@@ -46,14 +46,14 @@ public class Trail {
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn")
-    private String cloudWatchLogsLogGroupArn;
+    private CharSequence cloudWatchLogsLogGroupArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsrolearn
      * 
      */
     @JsonProperty("CloudWatchLogsRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsrolearn")
-    private String cloudWatchLogsRoleArn;
+    private CharSequence cloudWatchLogsRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-enablelogfilevalidation
      * 
@@ -96,28 +96,28 @@ public class Trail {
      */
     @JsonProperty("KMSKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-kmskeyid")
-    private String kMSKeyId;
+    private CharSequence kMSKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3bucketname
      * 
      */
     @JsonProperty("S3BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3bucketname")
-    private String s3BucketName;
+    private CharSequence s3BucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3keyprefix
      * 
      */
     @JsonProperty("S3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3keyprefix")
-    private String s3KeyPrefix;
+    private CharSequence s3KeyPrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-snstopicname
      * 
      */
     @JsonProperty("SnsTopicName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-snstopicname")
-    private String snsTopicName;
+    private CharSequence snsTopicName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-tags
      * 
@@ -131,14 +131,14 @@ public class Trail {
      */
     @JsonProperty("TrailName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-trailname")
-    private String trailName;
+    private CharSequence trailName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn
      * 
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
-    public String getCloudWatchLogsLogGroupArn() {
+    public CharSequence getCloudWatchLogsLogGroupArn() {
         return cloudWatchLogsLogGroupArn;
     }
 
@@ -147,11 +147,11 @@ public class Trail {
      * 
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
-    public void setCloudWatchLogsLogGroupArn(String cloudWatchLogsLogGroupArn) {
+    public void setCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
     }
 
-    public Trail withCloudWatchLogsLogGroupArn(String cloudWatchLogsLogGroupArn) {
+    public Trail withCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
         return this;
     }
@@ -161,7 +161,7 @@ public class Trail {
      * 
      */
     @JsonProperty("CloudWatchLogsRoleArn")
-    public String getCloudWatchLogsRoleArn() {
+    public CharSequence getCloudWatchLogsRoleArn() {
         return cloudWatchLogsRoleArn;
     }
 
@@ -170,11 +170,11 @@ public class Trail {
      * 
      */
     @JsonProperty("CloudWatchLogsRoleArn")
-    public void setCloudWatchLogsRoleArn(String cloudWatchLogsRoleArn) {
+    public void setCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
     }
 
-    public Trail withCloudWatchLogsRoleArn(String cloudWatchLogsRoleArn) {
+    public Trail withCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
         return this;
     }
@@ -299,7 +299,7 @@ public class Trail {
      * 
      */
     @JsonProperty("KMSKeyId")
-    public String getKMSKeyId() {
+    public CharSequence getKMSKeyId() {
         return kMSKeyId;
     }
 
@@ -308,11 +308,11 @@ public class Trail {
      * 
      */
     @JsonProperty("KMSKeyId")
-    public void setKMSKeyId(String kMSKeyId) {
+    public void setKMSKeyId(CharSequence kMSKeyId) {
         this.kMSKeyId = kMSKeyId;
     }
 
-    public Trail withKMSKeyId(String kMSKeyId) {
+    public Trail withKMSKeyId(CharSequence kMSKeyId) {
         this.kMSKeyId = kMSKeyId;
         return this;
     }
@@ -322,7 +322,7 @@ public class Trail {
      * 
      */
     @JsonProperty("S3BucketName")
-    public String getS3BucketName() {
+    public CharSequence getS3BucketName() {
         return s3BucketName;
     }
 
@@ -331,11 +331,11 @@ public class Trail {
      * 
      */
     @JsonProperty("S3BucketName")
-    public void setS3BucketName(String s3BucketName) {
+    public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
 
-    public Trail withS3BucketName(String s3BucketName) {
+    public Trail withS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
         return this;
     }
@@ -345,7 +345,7 @@ public class Trail {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public String getS3KeyPrefix() {
+    public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
 
@@ -354,11 +354,11 @@ public class Trail {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public void setS3KeyPrefix(String s3KeyPrefix) {
+    public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }
 
-    public Trail withS3KeyPrefix(String s3KeyPrefix) {
+    public Trail withS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
         return this;
     }
@@ -368,7 +368,7 @@ public class Trail {
      * 
      */
     @JsonProperty("SnsTopicName")
-    public String getSnsTopicName() {
+    public CharSequence getSnsTopicName() {
         return snsTopicName;
     }
 
@@ -377,11 +377,11 @@ public class Trail {
      * 
      */
     @JsonProperty("SnsTopicName")
-    public void setSnsTopicName(String snsTopicName) {
+    public void setSnsTopicName(CharSequence snsTopicName) {
         this.snsTopicName = snsTopicName;
     }
 
-    public Trail withSnsTopicName(String snsTopicName) {
+    public Trail withSnsTopicName(CharSequence snsTopicName) {
         this.snsTopicName = snsTopicName;
         return this;
     }
@@ -414,7 +414,7 @@ public class Trail {
      * 
      */
     @JsonProperty("TrailName")
-    public String getTrailName() {
+    public CharSequence getTrailName() {
         return trailName;
     }
 
@@ -423,11 +423,11 @@ public class Trail {
      * 
      */
     @JsonProperty("TrailName")
-    public void setTrailName(String trailName) {
+    public void setTrailName(CharSequence trailName) {
         this.trailName = trailName;
     }
 
-    public Trail withTrailName(String trailName) {
+    public Trail withTrailName(CharSequence trailName) {
         this.trailName = trailName;
         return this;
     }

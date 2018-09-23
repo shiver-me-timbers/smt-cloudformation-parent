@@ -50,21 +50,21 @@ public class Method {
      */
     @JsonProperty("AuthorizationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationtype")
-    private java.lang.String authorizationType;
+    private CharSequence authorizationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizerid
      * 
      */
     @JsonProperty("AuthorizerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizerid")
-    private java.lang.String authorizerId;
+    private CharSequence authorizerId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-httpmethod
      * 
      */
     @JsonProperty("HttpMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-httpmethod")
-    private java.lang.String httpMethod;
+    private CharSequence httpMethod;
     /**
      * Integration
      * <p>
@@ -88,7 +88,7 @@ public class Method {
      */
     @JsonProperty("OperationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-operationname")
-    private java.lang.String operationName;
+    private CharSequence operationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestmodels
      * 
@@ -109,21 +109,21 @@ public class Method {
      */
     @JsonProperty("RequestValidatorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid")
-    private java.lang.String requestValidatorId;
+    private CharSequence requestValidatorId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-resourceid
      * 
      */
     @JsonProperty("ResourceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-resourceid")
-    private java.lang.String resourceId;
+    private CharSequence resourceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-restapiid")
-    private java.lang.String restApiId;
+    private CharSequence restApiId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired
@@ -153,7 +153,7 @@ public class Method {
      * 
      */
     @JsonProperty("AuthorizationType")
-    public java.lang.String getAuthorizationType() {
+    public CharSequence getAuthorizationType() {
         return authorizationType;
     }
 
@@ -162,11 +162,11 @@ public class Method {
      * 
      */
     @JsonProperty("AuthorizationType")
-    public void setAuthorizationType(java.lang.String authorizationType) {
+    public void setAuthorizationType(CharSequence authorizationType) {
         this.authorizationType = authorizationType;
     }
 
-    public Method withAuthorizationType(java.lang.String authorizationType) {
+    public Method withAuthorizationType(CharSequence authorizationType) {
         this.authorizationType = authorizationType;
         return this;
     }
@@ -176,7 +176,7 @@ public class Method {
      * 
      */
     @JsonProperty("AuthorizerId")
-    public java.lang.String getAuthorizerId() {
+    public CharSequence getAuthorizerId() {
         return authorizerId;
     }
 
@@ -185,11 +185,11 @@ public class Method {
      * 
      */
     @JsonProperty("AuthorizerId")
-    public void setAuthorizerId(java.lang.String authorizerId) {
+    public void setAuthorizerId(CharSequence authorizerId) {
         this.authorizerId = authorizerId;
     }
 
-    public Method withAuthorizerId(java.lang.String authorizerId) {
+    public Method withAuthorizerId(CharSequence authorizerId) {
         this.authorizerId = authorizerId;
         return this;
     }
@@ -199,7 +199,7 @@ public class Method {
      * 
      */
     @JsonProperty("HttpMethod")
-    public java.lang.String getHttpMethod() {
+    public CharSequence getHttpMethod() {
         return httpMethod;
     }
 
@@ -208,11 +208,11 @@ public class Method {
      * 
      */
     @JsonProperty("HttpMethod")
-    public void setHttpMethod(java.lang.String httpMethod) {
+    public void setHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
     }
 
-    public Method withHttpMethod(java.lang.String httpMethod) {
+    public Method withHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
         return this;
     }
@@ -272,7 +272,7 @@ public class Method {
      * 
      */
     @JsonProperty("OperationName")
-    public java.lang.String getOperationName() {
+    public CharSequence getOperationName() {
         return operationName;
     }
 
@@ -281,11 +281,11 @@ public class Method {
      * 
      */
     @JsonProperty("OperationName")
-    public void setOperationName(java.lang.String operationName) {
+    public void setOperationName(CharSequence operationName) {
         this.operationName = operationName;
     }
 
-    public Method withOperationName(java.lang.String operationName) {
+    public Method withOperationName(CharSequence operationName) {
         this.operationName = operationName;
         return this;
     }
@@ -341,7 +341,7 @@ public class Method {
      * 
      */
     @JsonProperty("RequestValidatorId")
-    public java.lang.String getRequestValidatorId() {
+    public CharSequence getRequestValidatorId() {
         return requestValidatorId;
     }
 
@@ -350,11 +350,11 @@ public class Method {
      * 
      */
     @JsonProperty("RequestValidatorId")
-    public void setRequestValidatorId(java.lang.String requestValidatorId) {
+    public void setRequestValidatorId(CharSequence requestValidatorId) {
         this.requestValidatorId = requestValidatorId;
     }
 
-    public Method withRequestValidatorId(java.lang.String requestValidatorId) {
+    public Method withRequestValidatorId(CharSequence requestValidatorId) {
         this.requestValidatorId = requestValidatorId;
         return this;
     }
@@ -364,7 +364,7 @@ public class Method {
      * 
      */
     @JsonProperty("ResourceId")
-    public java.lang.String getResourceId() {
+    public CharSequence getResourceId() {
         return resourceId;
     }
 
@@ -373,11 +373,11 @@ public class Method {
      * 
      */
     @JsonProperty("ResourceId")
-    public void setResourceId(java.lang.String resourceId) {
+    public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
 
-    public Method withResourceId(java.lang.String resourceId) {
+    public Method withResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
         return this;
     }
@@ -387,7 +387,7 @@ public class Method {
      * 
      */
     @JsonProperty("RestApiId")
-    public java.lang.String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -396,11 +396,11 @@ public class Method {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(java.lang.String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Method withRestApiId(java.lang.String restApiId) {
+    public Method withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }

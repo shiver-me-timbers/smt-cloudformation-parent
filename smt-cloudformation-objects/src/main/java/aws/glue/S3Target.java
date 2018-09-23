@@ -31,21 +31,21 @@ public class S3Target {
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-exclusions
      * 
      */
     @JsonProperty("Exclusions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-exclusions")
-    private List<String> exclusions = new ArrayList<String>();
+    private List<CharSequence> exclusions = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-path
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -54,11 +54,11 @@ public class S3Target {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public S3Target withPath(String path) {
+    public S3Target withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -68,7 +68,7 @@ public class S3Target {
      * 
      */
     @JsonProperty("Exclusions")
-    public List<String> getExclusions() {
+    public List<CharSequence> getExclusions() {
         return exclusions;
     }
 
@@ -77,11 +77,11 @@ public class S3Target {
      * 
      */
     @JsonProperty("Exclusions")
-    public void setExclusions(List<String> exclusions) {
+    public void setExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
     }
 
-    public S3Target withExclusions(List<String> exclusions) {
+    public S3Target withExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
         return this;
     }

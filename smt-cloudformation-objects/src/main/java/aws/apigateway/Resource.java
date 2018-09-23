@@ -30,28 +30,28 @@ public class Resource {
      */
     @JsonProperty("ParentId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid")
-    private String parentId;
+    private CharSequence parentId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart
      * 
      */
     @JsonProperty("PathPart")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart")
-    private String pathPart;
+    private CharSequence pathPart;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid
      * 
      */
     @JsonProperty("ParentId")
-    public String getParentId() {
+    public CharSequence getParentId() {
         return parentId;
     }
 
@@ -60,11 +60,11 @@ public class Resource {
      * 
      */
     @JsonProperty("ParentId")
-    public void setParentId(String parentId) {
+    public void setParentId(CharSequence parentId) {
         this.parentId = parentId;
     }
 
-    public Resource withParentId(String parentId) {
+    public Resource withParentId(CharSequence parentId) {
         this.parentId = parentId;
         return this;
     }
@@ -74,7 +74,7 @@ public class Resource {
      * 
      */
     @JsonProperty("PathPart")
-    public String getPathPart() {
+    public CharSequence getPathPart() {
         return pathPart;
     }
 
@@ -83,11 +83,11 @@ public class Resource {
      * 
      */
     @JsonProperty("PathPart")
-    public void setPathPart(String pathPart) {
+    public void setPathPart(CharSequence pathPart) {
         this.pathPart = pathPart;
     }
 
-    public Resource withPathPart(String pathPart) {
+    public Resource withPathPart(CharSequence pathPart) {
         this.pathPart = pathPart;
         return this;
     }
@@ -97,7 +97,7 @@ public class Resource {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -106,11 +106,11 @@ public class Resource {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Resource withRestApiId(String restApiId) {
+    public Resource withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }

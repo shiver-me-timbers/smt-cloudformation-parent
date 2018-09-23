@@ -31,7 +31,7 @@ public class TrunkInterfaceAssociation {
      */
     @JsonProperty("BranchInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-branchinterfaceid")
-    private String branchInterfaceId;
+    private CharSequence branchInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-grekey
      * 
@@ -45,7 +45,7 @@ public class TrunkInterfaceAssociation {
      */
     @JsonProperty("TrunkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-trunkinterfaceid")
-    private String trunkInterfaceId;
+    private CharSequence trunkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-vlanid
      * 
@@ -59,7 +59,7 @@ public class TrunkInterfaceAssociation {
      * 
      */
     @JsonProperty("BranchInterfaceId")
-    public String getBranchInterfaceId() {
+    public CharSequence getBranchInterfaceId() {
         return branchInterfaceId;
     }
 
@@ -68,11 +68,11 @@ public class TrunkInterfaceAssociation {
      * 
      */
     @JsonProperty("BranchInterfaceId")
-    public void setBranchInterfaceId(String branchInterfaceId) {
+    public void setBranchInterfaceId(CharSequence branchInterfaceId) {
         this.branchInterfaceId = branchInterfaceId;
     }
 
-    public TrunkInterfaceAssociation withBranchInterfaceId(String branchInterfaceId) {
+    public TrunkInterfaceAssociation withBranchInterfaceId(CharSequence branchInterfaceId) {
         this.branchInterfaceId = branchInterfaceId;
         return this;
     }
@@ -105,7 +105,7 @@ public class TrunkInterfaceAssociation {
      * 
      */
     @JsonProperty("TrunkInterfaceId")
-    public String getTrunkInterfaceId() {
+    public CharSequence getTrunkInterfaceId() {
         return trunkInterfaceId;
     }
 
@@ -114,11 +114,11 @@ public class TrunkInterfaceAssociation {
      * 
      */
     @JsonProperty("TrunkInterfaceId")
-    public void setTrunkInterfaceId(String trunkInterfaceId) {
+    public void setTrunkInterfaceId(CharSequence trunkInterfaceId) {
         this.trunkInterfaceId = trunkInterfaceId;
     }
 
-    public TrunkInterfaceAssociation withTrunkInterfaceId(String trunkInterfaceId) {
+    public TrunkInterfaceAssociation withTrunkInterfaceId(CharSequence trunkInterfaceId) {
         this.trunkInterfaceId = trunkInterfaceId;
         return this;
     }

@@ -39,7 +39,7 @@ public class ManagedPolicy {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-groups
      * 
@@ -47,21 +47,21 @@ public class ManagedPolicy {
     @JsonProperty("Groups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-groups")
-    private Set<String> groups = new LinkedHashSet<String>();
+    private Set<CharSequence> groups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-managedpolicyname
      * 
      */
     @JsonProperty("ManagedPolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-managedpolicyname")
-    private String managedPolicyName;
+    private CharSequence managedPolicyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-ec2-dhcpoptions-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-ec2-dhcpoptions-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument
      * 
@@ -75,21 +75,21 @@ public class ManagedPolicy {
      */
     @JsonProperty("Roles")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles")
-    private List<String> roles = new ArrayList<String>();
+    private List<CharSequence> roles = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-users
      * 
      */
     @JsonProperty("Users")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-users")
-    private List<String> users = new ArrayList<String>();
+    private List<CharSequence> users = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -98,11 +98,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ManagedPolicy withDescription(String description) {
+    public ManagedPolicy withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -112,7 +112,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Groups")
-    public Set<String> getGroups() {
+    public Set<CharSequence> getGroups() {
         return groups;
     }
 
@@ -121,11 +121,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Groups")
-    public void setGroups(Set<String> groups) {
+    public void setGroups(Set<CharSequence> groups) {
         this.groups = groups;
     }
 
-    public ManagedPolicy withGroups(Set<String> groups) {
+    public ManagedPolicy withGroups(Set<CharSequence> groups) {
         this.groups = groups;
         return this;
     }
@@ -135,7 +135,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("ManagedPolicyName")
-    public String getManagedPolicyName() {
+    public CharSequence getManagedPolicyName() {
         return managedPolicyName;
     }
 
@@ -144,11 +144,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("ManagedPolicyName")
-    public void setManagedPolicyName(String managedPolicyName) {
+    public void setManagedPolicyName(CharSequence managedPolicyName) {
         this.managedPolicyName = managedPolicyName;
     }
 
-    public ManagedPolicy withManagedPolicyName(String managedPolicyName) {
+    public ManagedPolicy withManagedPolicyName(CharSequence managedPolicyName) {
         this.managedPolicyName = managedPolicyName;
         return this;
     }
@@ -158,7 +158,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -167,11 +167,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public ManagedPolicy withPath(String path) {
+    public ManagedPolicy withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -204,7 +204,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Roles")
-    public List<String> getRoles() {
+    public List<CharSequence> getRoles() {
         return roles;
     }
 
@@ -213,11 +213,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Roles")
-    public void setRoles(List<String> roles) {
+    public void setRoles(List<CharSequence> roles) {
         this.roles = roles;
     }
 
-    public ManagedPolicy withRoles(List<String> roles) {
+    public ManagedPolicy withRoles(List<CharSequence> roles) {
         this.roles = roles;
         return this;
     }
@@ -227,7 +227,7 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Users")
-    public List<String> getUsers() {
+    public List<CharSequence> getUsers() {
         return users;
     }
 
@@ -236,11 +236,11 @@ public class ManagedPolicy {
      * 
      */
     @JsonProperty("Users")
-    public void setUsers(List<String> users) {
+    public void setUsers(List<CharSequence> users) {
         this.users = users;
     }
 
-    public ManagedPolicy withUsers(List<String> users) {
+    public ManagedPolicy withUsers(List<CharSequence> users) {
         this.users = users;
         return this;
     }

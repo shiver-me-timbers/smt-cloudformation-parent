@@ -33,7 +33,7 @@ public class JobDefinition {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters
      * 
@@ -65,7 +65,7 @@ public class JobDefinition {
      */
     @JsonProperty("JobDefinitionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname")
-    private String jobDefinitionName;
+    private CharSequence jobDefinitionName;
     /**
      * RetryStrategy
      * <p>
@@ -81,7 +81,7 @@ public class JobDefinition {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -90,11 +90,11 @@ public class JobDefinition {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public JobDefinition withType(String type) {
+    public JobDefinition withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -181,7 +181,7 @@ public class JobDefinition {
      * 
      */
     @JsonProperty("JobDefinitionName")
-    public String getJobDefinitionName() {
+    public CharSequence getJobDefinitionName() {
         return jobDefinitionName;
     }
 
@@ -190,11 +190,11 @@ public class JobDefinition {
      * 
      */
     @JsonProperty("JobDefinitionName")
-    public void setJobDefinitionName(String jobDefinitionName) {
+    public void setJobDefinitionName(CharSequence jobDefinitionName) {
         this.jobDefinitionName = jobDefinitionName;
     }
 
-    public JobDefinition withJobDefinitionName(String jobDefinitionName) {
+    public JobDefinition withJobDefinitionName(CharSequence jobDefinitionName) {
         this.jobDefinitionName = jobDefinitionName;
         return this;
     }

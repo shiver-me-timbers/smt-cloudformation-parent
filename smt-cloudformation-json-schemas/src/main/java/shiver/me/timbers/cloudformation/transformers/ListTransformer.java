@@ -40,7 +40,7 @@ public class ListTransformer implements PropertyTransformer {
         }
         final String primitiveItemType = cloudformationProperty.getPrimitiveItemType();
         if (primitiveItemType != null) {
-            property.put("items", singletonMap("type", primitiveTypeConverter.convert(primitiveItemType)));
+            property.put("items", primitiveTypeConverter.convert(primitiveItemType));
             return;
         }
         final String itemType = cloudformationProperty.getItemType();

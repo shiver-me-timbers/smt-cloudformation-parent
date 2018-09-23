@@ -29,21 +29,21 @@ public class StageTransition {
      */
     @JsonProperty("Reason")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason")
-    private String reason;
+    private CharSequence reason;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename
      * 
      */
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename")
-    private String stageName;
+    private CharSequence stageName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason
      * 
      */
     @JsonProperty("Reason")
-    public String getReason() {
+    public CharSequence getReason() {
         return reason;
     }
 
@@ -52,11 +52,11 @@ public class StageTransition {
      * 
      */
     @JsonProperty("Reason")
-    public void setReason(String reason) {
+    public void setReason(CharSequence reason) {
         this.reason = reason;
     }
 
-    public StageTransition withReason(String reason) {
+    public StageTransition withReason(CharSequence reason) {
         this.reason = reason;
         return this;
     }
@@ -66,7 +66,7 @@ public class StageTransition {
      * 
      */
     @JsonProperty("StageName")
-    public String getStageName() {
+    public CharSequence getStageName() {
         return stageName;
     }
 
@@ -75,11 +75,11 @@ public class StageTransition {
      * 
      */
     @JsonProperty("StageName")
-    public void setStageName(String stageName) {
+    public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }
 
-    public StageTransition withStageName(String stageName) {
+    public StageTransition withStageName(CharSequence stageName) {
         this.stageName = stageName;
         return this;
     }

@@ -36,28 +36,28 @@ public class VPCPeeringConnection {
      */
     @JsonProperty("PeerOwnerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid")
-    private String peerOwnerId;
+    private CharSequence peerOwnerId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion
      * 
      */
     @JsonProperty("PeerRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion")
-    private String peerRegion;
+    private CharSequence peerRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn
      * 
      */
     @JsonProperty("PeerRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn")
-    private String peerRoleArn;
+    private CharSequence peerRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid
      * 
      */
     @JsonProperty("PeerVpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid")
-    private String peerVpcId;
+    private CharSequence peerVpcId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-tags
      * 
@@ -71,14 +71,14 @@ public class VPCPeeringConnection {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid
      * 
      */
     @JsonProperty("PeerOwnerId")
-    public String getPeerOwnerId() {
+    public CharSequence getPeerOwnerId() {
         return peerOwnerId;
     }
 
@@ -87,11 +87,11 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerOwnerId")
-    public void setPeerOwnerId(String peerOwnerId) {
+    public void setPeerOwnerId(CharSequence peerOwnerId) {
         this.peerOwnerId = peerOwnerId;
     }
 
-    public VPCPeeringConnection withPeerOwnerId(String peerOwnerId) {
+    public VPCPeeringConnection withPeerOwnerId(CharSequence peerOwnerId) {
         this.peerOwnerId = peerOwnerId;
         return this;
     }
@@ -101,7 +101,7 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerRegion")
-    public String getPeerRegion() {
+    public CharSequence getPeerRegion() {
         return peerRegion;
     }
 
@@ -110,11 +110,11 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerRegion")
-    public void setPeerRegion(String peerRegion) {
+    public void setPeerRegion(CharSequence peerRegion) {
         this.peerRegion = peerRegion;
     }
 
-    public VPCPeeringConnection withPeerRegion(String peerRegion) {
+    public VPCPeeringConnection withPeerRegion(CharSequence peerRegion) {
         this.peerRegion = peerRegion;
         return this;
     }
@@ -124,7 +124,7 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerRoleArn")
-    public String getPeerRoleArn() {
+    public CharSequence getPeerRoleArn() {
         return peerRoleArn;
     }
 
@@ -133,11 +133,11 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerRoleArn")
-    public void setPeerRoleArn(String peerRoleArn) {
+    public void setPeerRoleArn(CharSequence peerRoleArn) {
         this.peerRoleArn = peerRoleArn;
     }
 
-    public VPCPeeringConnection withPeerRoleArn(String peerRoleArn) {
+    public VPCPeeringConnection withPeerRoleArn(CharSequence peerRoleArn) {
         this.peerRoleArn = peerRoleArn;
         return this;
     }
@@ -147,7 +147,7 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerVpcId")
-    public String getPeerVpcId() {
+    public CharSequence getPeerVpcId() {
         return peerVpcId;
     }
 
@@ -156,11 +156,11 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("PeerVpcId")
-    public void setPeerVpcId(String peerVpcId) {
+    public void setPeerVpcId(CharSequence peerVpcId) {
         this.peerVpcId = peerVpcId;
     }
 
-    public VPCPeeringConnection withPeerVpcId(String peerVpcId) {
+    public VPCPeeringConnection withPeerVpcId(CharSequence peerVpcId) {
         this.peerVpcId = peerVpcId;
         return this;
     }
@@ -193,7 +193,7 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -202,11 +202,11 @@ public class VPCPeeringConnection {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VPCPeeringConnection withVpcId(String vpcId) {
+    public VPCPeeringConnection withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }

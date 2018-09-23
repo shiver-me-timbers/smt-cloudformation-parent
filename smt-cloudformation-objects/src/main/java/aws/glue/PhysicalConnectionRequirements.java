@@ -32,28 +32,28 @@ public class PhysicalConnectionRequirements {
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist
      * 
      */
     @JsonProperty("SecurityGroupIdList")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist")
-    private List<String> securityGroupIdList = new ArrayList<String>();
+    private List<CharSequence> securityGroupIdList = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -62,11 +62,11 @@ public class PhysicalConnectionRequirements {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public PhysicalConnectionRequirements withAvailabilityZone(String availabilityZone) {
+    public PhysicalConnectionRequirements withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -76,7 +76,7 @@ public class PhysicalConnectionRequirements {
      * 
      */
     @JsonProperty("SecurityGroupIdList")
-    public List<String> getSecurityGroupIdList() {
+    public List<CharSequence> getSecurityGroupIdList() {
         return securityGroupIdList;
     }
 
@@ -85,11 +85,11 @@ public class PhysicalConnectionRequirements {
      * 
      */
     @JsonProperty("SecurityGroupIdList")
-    public void setSecurityGroupIdList(List<String> securityGroupIdList) {
+    public void setSecurityGroupIdList(List<CharSequence> securityGroupIdList) {
         this.securityGroupIdList = securityGroupIdList;
     }
 
-    public PhysicalConnectionRequirements withSecurityGroupIdList(List<String> securityGroupIdList) {
+    public PhysicalConnectionRequirements withSecurityGroupIdList(List<CharSequence> securityGroupIdList) {
         this.securityGroupIdList = securityGroupIdList;
         return this;
     }
@@ -99,7 +99,7 @@ public class PhysicalConnectionRequirements {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -108,11 +108,11 @@ public class PhysicalConnectionRequirements {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public PhysicalConnectionRequirements withSubnetId(String subnetId) {
+    public PhysicalConnectionRequirements withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

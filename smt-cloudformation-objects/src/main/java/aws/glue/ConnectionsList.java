@@ -30,14 +30,14 @@ public class ConnectionsList {
      */
     @JsonProperty("Connections")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections")
-    private List<String> connections = new ArrayList<String>();
+    private List<CharSequence> connections = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections
      * 
      */
     @JsonProperty("Connections")
-    public List<String> getConnections() {
+    public List<CharSequence> getConnections() {
         return connections;
     }
 
@@ -46,11 +46,11 @@ public class ConnectionsList {
      * 
      */
     @JsonProperty("Connections")
-    public void setConnections(List<String> connections) {
+    public void setConnections(List<CharSequence> connections) {
         this.connections = connections;
     }
 
-    public ConnectionsList withConnections(List<String> connections) {
+    public ConnectionsList withConnections(List<CharSequence> connections) {
         this.connections = connections;
         return this;
     }

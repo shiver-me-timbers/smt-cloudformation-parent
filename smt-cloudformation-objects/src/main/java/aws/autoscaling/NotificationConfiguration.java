@@ -31,21 +31,21 @@ public class NotificationConfiguration {
      */
     @JsonProperty("NotificationTypes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes")
-    private List<String> notificationTypes = new ArrayList<String>();
+    private List<CharSequence> notificationTypes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn
      * 
      */
     @JsonProperty("TopicARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn")
-    private String topicARN;
+    private CharSequence topicARN;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes
      * 
      */
     @JsonProperty("NotificationTypes")
-    public List<String> getNotificationTypes() {
+    public List<CharSequence> getNotificationTypes() {
         return notificationTypes;
     }
 
@@ -54,11 +54,11 @@ public class NotificationConfiguration {
      * 
      */
     @JsonProperty("NotificationTypes")
-    public void setNotificationTypes(List<String> notificationTypes) {
+    public void setNotificationTypes(List<CharSequence> notificationTypes) {
         this.notificationTypes = notificationTypes;
     }
 
-    public NotificationConfiguration withNotificationTypes(List<String> notificationTypes) {
+    public NotificationConfiguration withNotificationTypes(List<CharSequence> notificationTypes) {
         this.notificationTypes = notificationTypes;
         return this;
     }
@@ -68,7 +68,7 @@ public class NotificationConfiguration {
      * 
      */
     @JsonProperty("TopicARN")
-    public String getTopicARN() {
+    public CharSequence getTopicARN() {
         return topicARN;
     }
 
@@ -77,11 +77,11 @@ public class NotificationConfiguration {
      * 
      */
     @JsonProperty("TopicARN")
-    public void setTopicARN(String topicARN) {
+    public void setTopicARN(CharSequence topicARN) {
         this.topicARN = topicARN;
     }
 
-    public NotificationConfiguration withTopicARN(String topicARN) {
+    public NotificationConfiguration withTopicARN(CharSequence topicARN) {
         this.topicARN = topicARN;
         return this;
     }

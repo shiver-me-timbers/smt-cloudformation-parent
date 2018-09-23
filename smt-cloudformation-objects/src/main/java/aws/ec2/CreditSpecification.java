@@ -28,14 +28,14 @@ public class CreditSpecification {
      */
     @JsonProperty("CPUCredits")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html#cfn-ec2-instance-creditspecification-cpucredits")
-    private String cPUCredits;
+    private CharSequence cPUCredits;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html#cfn-ec2-instance-creditspecification-cpucredits
      * 
      */
     @JsonProperty("CPUCredits")
-    public String getCPUCredits() {
+    public CharSequence getCPUCredits() {
         return cPUCredits;
     }
 
@@ -44,11 +44,11 @@ public class CreditSpecification {
      * 
      */
     @JsonProperty("CPUCredits")
-    public void setCPUCredits(String cPUCredits) {
+    public void setCPUCredits(CharSequence cPUCredits) {
         this.cPUCredits = cPUCredits;
     }
 
-    public CreditSpecification withCPUCredits(String cPUCredits) {
+    public CreditSpecification withCPUCredits(CharSequence cPUCredits) {
         this.cPUCredits = cPUCredits;
         return this;
     }

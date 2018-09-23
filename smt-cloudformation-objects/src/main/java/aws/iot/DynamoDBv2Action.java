@@ -38,7 +38,7 @@ public class DynamoDBv2Action {
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * PutItemInput
@@ -72,7 +72,7 @@ public class DynamoDBv2Action {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -81,11 +81,11 @@ public class DynamoDBv2Action {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public DynamoDBv2Action withRoleArn(String roleArn) {
+    public DynamoDBv2Action withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

@@ -35,14 +35,14 @@ public class OptionConfiguration {
      */
     @JsonProperty("DBSecurityGroupMemberships")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships")
-    private List<String> dBSecurityGroupMemberships = new ArrayList<String>();
+    private List<CharSequence> dBSecurityGroupMemberships = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname
      * 
      */
     @JsonProperty("OptionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname")
-    private String optionName;
+    private CharSequence optionName;
     /**
      * OptionSetting
      * <p>
@@ -58,7 +58,7 @@ public class OptionConfiguration {
      */
     @JsonProperty("OptionVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion")
-    private String optionVersion;
+    private CharSequence optionVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-port
      * 
@@ -72,14 +72,14 @@ public class OptionConfiguration {
      */
     @JsonProperty("VpcSecurityGroupMemberships")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-vpcsecuritygroupmemberships")
-    private List<String> vpcSecurityGroupMemberships = new ArrayList<String>();
+    private List<CharSequence> vpcSecurityGroupMemberships = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships
      * 
      */
     @JsonProperty("DBSecurityGroupMemberships")
-    public List<String> getDBSecurityGroupMemberships() {
+    public List<CharSequence> getDBSecurityGroupMemberships() {
         return dBSecurityGroupMemberships;
     }
 
@@ -88,11 +88,11 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("DBSecurityGroupMemberships")
-    public void setDBSecurityGroupMemberships(List<String> dBSecurityGroupMemberships) {
+    public void setDBSecurityGroupMemberships(List<CharSequence> dBSecurityGroupMemberships) {
         this.dBSecurityGroupMemberships = dBSecurityGroupMemberships;
     }
 
-    public OptionConfiguration withDBSecurityGroupMemberships(List<String> dBSecurityGroupMemberships) {
+    public OptionConfiguration withDBSecurityGroupMemberships(List<CharSequence> dBSecurityGroupMemberships) {
         this.dBSecurityGroupMemberships = dBSecurityGroupMemberships;
         return this;
     }
@@ -102,7 +102,7 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("OptionName")
-    public String getOptionName() {
+    public CharSequence getOptionName() {
         return optionName;
     }
 
@@ -111,11 +111,11 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("OptionName")
-    public void setOptionName(String optionName) {
+    public void setOptionName(CharSequence optionName) {
         this.optionName = optionName;
     }
 
-    public OptionConfiguration withOptionName(String optionName) {
+    public OptionConfiguration withOptionName(CharSequence optionName) {
         this.optionName = optionName;
         return this;
     }
@@ -152,7 +152,7 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("OptionVersion")
-    public String getOptionVersion() {
+    public CharSequence getOptionVersion() {
         return optionVersion;
     }
 
@@ -161,11 +161,11 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("OptionVersion")
-    public void setOptionVersion(String optionVersion) {
+    public void setOptionVersion(CharSequence optionVersion) {
         this.optionVersion = optionVersion;
     }
 
-    public OptionConfiguration withOptionVersion(String optionVersion) {
+    public OptionConfiguration withOptionVersion(CharSequence optionVersion) {
         this.optionVersion = optionVersion;
         return this;
     }
@@ -198,7 +198,7 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("VpcSecurityGroupMemberships")
-    public List<String> getVpcSecurityGroupMemberships() {
+    public List<CharSequence> getVpcSecurityGroupMemberships() {
         return vpcSecurityGroupMemberships;
     }
 
@@ -207,11 +207,11 @@ public class OptionConfiguration {
      * 
      */
     @JsonProperty("VpcSecurityGroupMemberships")
-    public void setVpcSecurityGroupMemberships(List<String> vpcSecurityGroupMemberships) {
+    public void setVpcSecurityGroupMemberships(List<CharSequence> vpcSecurityGroupMemberships) {
         this.vpcSecurityGroupMemberships = vpcSecurityGroupMemberships;
     }
 
-    public OptionConfiguration withVpcSecurityGroupMemberships(List<String> vpcSecurityGroupMemberships) {
+    public OptionConfiguration withVpcSecurityGroupMemberships(List<CharSequence> vpcSecurityGroupMemberships) {
         this.vpcSecurityGroupMemberships = vpcSecurityGroupMemberships;
         return this;
     }

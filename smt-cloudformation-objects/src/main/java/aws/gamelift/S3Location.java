@@ -30,28 +30,28 @@ public class S3Location {
      */
     @JsonProperty("Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket")
-    private String bucket;
+    private CharSequence bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key
      * 
      */
     @JsonProperty("Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key")
-    private String key;
+    private CharSequence key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket
      * 
      */
     @JsonProperty("Bucket")
-    public String getBucket() {
+    public CharSequence getBucket() {
         return bucket;
     }
 
@@ -60,11 +60,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("Bucket")
-    public void setBucket(String bucket) {
+    public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
 
-    public S3Location withBucket(String bucket) {
+    public S3Location withBucket(CharSequence bucket) {
         this.bucket = bucket;
         return this;
     }
@@ -74,7 +74,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("Key")
-    public String getKey() {
+    public CharSequence getKey() {
         return key;
     }
 
@@ -83,11 +83,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("Key")
-    public void setKey(String key) {
+    public void setKey(CharSequence key) {
         this.key = key;
     }
 
-    public S3Location withKey(String key) {
+    public S3Location withKey(CharSequence key) {
         this.key = key;
         return this;
     }
@@ -97,7 +97,7 @@ public class S3Location {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -106,11 +106,11 @@ public class S3Location {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public S3Location withRoleArn(String roleArn) {
+    public S3Location withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

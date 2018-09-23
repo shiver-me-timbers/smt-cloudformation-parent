@@ -62,7 +62,7 @@ public class UserPool {
      */
     @JsonProperty("MfaConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration")
-    private String mfaConfiguration;
+    private CharSequence mfaConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-schema
      * 
@@ -85,21 +85,21 @@ public class UserPool {
      */
     @JsonProperty("SmsAuthenticationMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage")
-    private String smsAuthenticationMessage;
+    private CharSequence smsAuthenticationMessage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname
      * 
      */
     @JsonProperty("UserPoolName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname")
-    private String userPoolName;
+    private CharSequence userPoolName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage
      * 
      */
     @JsonProperty("SmsVerificationMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage")
-    private String smsVerificationMessage;
+    private CharSequence smsVerificationMessage;
     /**
      * EmailConfiguration
      * <p>
@@ -124,14 +124,14 @@ public class UserPool {
      */
     @JsonProperty("AliasAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes")
-    private List<String> aliasAttributes = new ArrayList<String>();
+    private List<CharSequence> aliasAttributes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject
      * 
      */
     @JsonProperty("EmailVerificationSubject")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject")
-    private String emailVerificationSubject;
+    private CharSequence emailVerificationSubject;
     /**
      * LambdaConfig
      * <p>
@@ -147,14 +147,14 @@ public class UserPool {
      */
     @JsonProperty("UsernameAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes")
-    private List<String> usernameAttributes = new ArrayList<String>();
+    private List<CharSequence> usernameAttributes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-autoverifiedattributes
      * 
      */
     @JsonProperty("AutoVerifiedAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-autoverifiedattributes")
-    private List<String> autoVerifiedAttributes = new ArrayList<String>();
+    private List<CharSequence> autoVerifiedAttributes = new ArrayList<CharSequence>();
     /**
      * DeviceConfiguration
      * <p>
@@ -170,7 +170,7 @@ public class UserPool {
      */
     @JsonProperty("EmailVerificationMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage")
-    private String emailVerificationMessage;
+    private CharSequence emailVerificationMessage;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
@@ -227,7 +227,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("MfaConfiguration")
-    public String getMfaConfiguration() {
+    public CharSequence getMfaConfiguration() {
         return mfaConfiguration;
     }
 
@@ -236,11 +236,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("MfaConfiguration")
-    public void setMfaConfiguration(String mfaConfiguration) {
+    public void setMfaConfiguration(CharSequence mfaConfiguration) {
         this.mfaConfiguration = mfaConfiguration;
     }
 
-    public UserPool withMfaConfiguration(String mfaConfiguration) {
+    public UserPool withMfaConfiguration(CharSequence mfaConfiguration) {
         this.mfaConfiguration = mfaConfiguration;
         return this;
     }
@@ -300,7 +300,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("SmsAuthenticationMessage")
-    public String getSmsAuthenticationMessage() {
+    public CharSequence getSmsAuthenticationMessage() {
         return smsAuthenticationMessage;
     }
 
@@ -309,11 +309,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("SmsAuthenticationMessage")
-    public void setSmsAuthenticationMessage(String smsAuthenticationMessage) {
+    public void setSmsAuthenticationMessage(CharSequence smsAuthenticationMessage) {
         this.smsAuthenticationMessage = smsAuthenticationMessage;
     }
 
-    public UserPool withSmsAuthenticationMessage(String smsAuthenticationMessage) {
+    public UserPool withSmsAuthenticationMessage(CharSequence smsAuthenticationMessage) {
         this.smsAuthenticationMessage = smsAuthenticationMessage;
         return this;
     }
@@ -323,7 +323,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("UserPoolName")
-    public String getUserPoolName() {
+    public CharSequence getUserPoolName() {
         return userPoolName;
     }
 
@@ -332,11 +332,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("UserPoolName")
-    public void setUserPoolName(String userPoolName) {
+    public void setUserPoolName(CharSequence userPoolName) {
         this.userPoolName = userPoolName;
     }
 
-    public UserPool withUserPoolName(String userPoolName) {
+    public UserPool withUserPoolName(CharSequence userPoolName) {
         this.userPoolName = userPoolName;
         return this;
     }
@@ -346,7 +346,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("SmsVerificationMessage")
-    public String getSmsVerificationMessage() {
+    public CharSequence getSmsVerificationMessage() {
         return smsVerificationMessage;
     }
 
@@ -355,11 +355,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("SmsVerificationMessage")
-    public void setSmsVerificationMessage(String smsVerificationMessage) {
+    public void setSmsVerificationMessage(CharSequence smsVerificationMessage) {
         this.smsVerificationMessage = smsVerificationMessage;
     }
 
-    public UserPool withSmsVerificationMessage(String smsVerificationMessage) {
+    public UserPool withSmsVerificationMessage(CharSequence smsVerificationMessage) {
         this.smsVerificationMessage = smsVerificationMessage;
         return this;
     }
@@ -423,7 +423,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("AliasAttributes")
-    public List<String> getAliasAttributes() {
+    public List<CharSequence> getAliasAttributes() {
         return aliasAttributes;
     }
 
@@ -432,11 +432,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("AliasAttributes")
-    public void setAliasAttributes(List<String> aliasAttributes) {
+    public void setAliasAttributes(List<CharSequence> aliasAttributes) {
         this.aliasAttributes = aliasAttributes;
     }
 
-    public UserPool withAliasAttributes(List<String> aliasAttributes) {
+    public UserPool withAliasAttributes(List<CharSequence> aliasAttributes) {
         this.aliasAttributes = aliasAttributes;
         return this;
     }
@@ -446,7 +446,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("EmailVerificationSubject")
-    public String getEmailVerificationSubject() {
+    public CharSequence getEmailVerificationSubject() {
         return emailVerificationSubject;
     }
 
@@ -455,11 +455,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("EmailVerificationSubject")
-    public void setEmailVerificationSubject(String emailVerificationSubject) {
+    public void setEmailVerificationSubject(CharSequence emailVerificationSubject) {
         this.emailVerificationSubject = emailVerificationSubject;
     }
 
-    public UserPool withEmailVerificationSubject(String emailVerificationSubject) {
+    public UserPool withEmailVerificationSubject(CharSequence emailVerificationSubject) {
         this.emailVerificationSubject = emailVerificationSubject;
         return this;
     }
@@ -496,7 +496,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("UsernameAttributes")
-    public List<String> getUsernameAttributes() {
+    public List<CharSequence> getUsernameAttributes() {
         return usernameAttributes;
     }
 
@@ -505,11 +505,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("UsernameAttributes")
-    public void setUsernameAttributes(List<String> usernameAttributes) {
+    public void setUsernameAttributes(List<CharSequence> usernameAttributes) {
         this.usernameAttributes = usernameAttributes;
     }
 
-    public UserPool withUsernameAttributes(List<String> usernameAttributes) {
+    public UserPool withUsernameAttributes(List<CharSequence> usernameAttributes) {
         this.usernameAttributes = usernameAttributes;
         return this;
     }
@@ -519,7 +519,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("AutoVerifiedAttributes")
-    public List<String> getAutoVerifiedAttributes() {
+    public List<CharSequence> getAutoVerifiedAttributes() {
         return autoVerifiedAttributes;
     }
 
@@ -528,11 +528,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("AutoVerifiedAttributes")
-    public void setAutoVerifiedAttributes(List<String> autoVerifiedAttributes) {
+    public void setAutoVerifiedAttributes(List<CharSequence> autoVerifiedAttributes) {
         this.autoVerifiedAttributes = autoVerifiedAttributes;
     }
 
-    public UserPool withAutoVerifiedAttributes(List<String> autoVerifiedAttributes) {
+    public UserPool withAutoVerifiedAttributes(List<CharSequence> autoVerifiedAttributes) {
         this.autoVerifiedAttributes = autoVerifiedAttributes;
         return this;
     }
@@ -569,7 +569,7 @@ public class UserPool {
      * 
      */
     @JsonProperty("EmailVerificationMessage")
-    public String getEmailVerificationMessage() {
+    public CharSequence getEmailVerificationMessage() {
         return emailVerificationMessage;
     }
 
@@ -578,11 +578,11 @@ public class UserPool {
      * 
      */
     @JsonProperty("EmailVerificationMessage")
-    public void setEmailVerificationMessage(String emailVerificationMessage) {
+    public void setEmailVerificationMessage(CharSequence emailVerificationMessage) {
         this.emailVerificationMessage = emailVerificationMessage;
     }
 
-    public UserPool withEmailVerificationMessage(String emailVerificationMessage) {
+    public UserPool withEmailVerificationMessage(CharSequence emailVerificationMessage) {
         this.emailVerificationMessage = emailVerificationMessage;
         return this;
     }

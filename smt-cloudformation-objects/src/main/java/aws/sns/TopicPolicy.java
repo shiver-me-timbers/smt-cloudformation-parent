@@ -38,7 +38,7 @@ public class TopicPolicy {
      */
     @JsonProperty("Topics")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics")
-    private List<String> topics = new ArrayList<String>();
+    private List<CharSequence> topics = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
@@ -68,7 +68,7 @@ public class TopicPolicy {
      * 
      */
     @JsonProperty("Topics")
-    public List<String> getTopics() {
+    public List<CharSequence> getTopics() {
         return topics;
     }
 
@@ -77,11 +77,11 @@ public class TopicPolicy {
      * 
      */
     @JsonProperty("Topics")
-    public void setTopics(List<String> topics) {
+    public void setTopics(List<CharSequence> topics) {
         this.topics = topics;
     }
 
-    public TopicPolicy withTopics(List<String> topics) {
+    public TopicPolicy withTopics(List<CharSequence> topics) {
         this.topics = topics;
         return this;
     }

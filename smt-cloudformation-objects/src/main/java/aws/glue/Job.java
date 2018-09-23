@@ -37,7 +37,7 @@ public class Job {
      */
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role")
-    private String role;
+    private CharSequence role;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments
      * 
@@ -67,14 +67,14 @@ public class Job {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri
      * 
      */
     @JsonProperty("LogUri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri")
-    private String logUri;
+    private CharSequence logUri;
     /**
      * JobCommand
      * <p>
@@ -106,14 +106,14 @@ public class Job {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role
      * 
      */
     @JsonProperty("Role")
-    public String getRole() {
+    public CharSequence getRole() {
         return role;
     }
 
@@ -122,11 +122,11 @@ public class Job {
      * 
      */
     @JsonProperty("Role")
-    public void setRole(String role) {
+    public void setRole(CharSequence role) {
         this.role = role;
     }
 
-    public Job withRole(String role) {
+    public Job withRole(CharSequence role) {
         this.role = role;
         return this;
     }
@@ -209,7 +209,7 @@ public class Job {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -218,11 +218,11 @@ public class Job {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Job withDescription(String description) {
+    public Job withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -232,7 +232,7 @@ public class Job {
      * 
      */
     @JsonProperty("LogUri")
-    public String getLogUri() {
+    public CharSequence getLogUri() {
         return logUri;
     }
 
@@ -241,11 +241,11 @@ public class Job {
      * 
      */
     @JsonProperty("LogUri")
-    public void setLogUri(String logUri) {
+    public void setLogUri(CharSequence logUri) {
         this.logUri = logUri;
     }
 
-    public Job withLogUri(String logUri) {
+    public Job withLogUri(CharSequence logUri) {
         this.logUri = logUri;
         return this;
     }
@@ -332,7 +332,7 @@ public class Job {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -341,11 +341,11 @@ public class Job {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Job withName(String name) {
+    public Job withName(CharSequence name) {
         this.name = name;
         return this;
     }

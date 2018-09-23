@@ -34,21 +34,21 @@ public class ReplicationSubnetGroup {
      */
     @JsonProperty("ReplicationSubnetGroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupdescription")
-    private String replicationSubnetGroupDescription;
+    private CharSequence replicationSubnetGroupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupidentifier
      * 
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupidentifier")
-    private String replicationSubnetGroupIdentifier;
+    private CharSequence replicationSubnetGroupIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-subnetids
      * 
      */
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-subnetids")
-    private List<String> subnetIds = new ArrayList<String>();
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-tags
      * 
@@ -62,7 +62,7 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupDescription")
-    public String getReplicationSubnetGroupDescription() {
+    public CharSequence getReplicationSubnetGroupDescription() {
         return replicationSubnetGroupDescription;
     }
 
@@ -71,11 +71,11 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupDescription")
-    public void setReplicationSubnetGroupDescription(String replicationSubnetGroupDescription) {
+    public void setReplicationSubnetGroupDescription(CharSequence replicationSubnetGroupDescription) {
         this.replicationSubnetGroupDescription = replicationSubnetGroupDescription;
     }
 
-    public ReplicationSubnetGroup withReplicationSubnetGroupDescription(String replicationSubnetGroupDescription) {
+    public ReplicationSubnetGroup withReplicationSubnetGroupDescription(CharSequence replicationSubnetGroupDescription) {
         this.replicationSubnetGroupDescription = replicationSubnetGroupDescription;
         return this;
     }
@@ -85,7 +85,7 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
-    public String getReplicationSubnetGroupIdentifier() {
+    public CharSequence getReplicationSubnetGroupIdentifier() {
         return replicationSubnetGroupIdentifier;
     }
 
@@ -94,11 +94,11 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("ReplicationSubnetGroupIdentifier")
-    public void setReplicationSubnetGroupIdentifier(String replicationSubnetGroupIdentifier) {
+    public void setReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
     }
 
-    public ReplicationSubnetGroup withReplicationSubnetGroupIdentifier(String replicationSubnetGroupIdentifier) {
+    public ReplicationSubnetGroup withReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
         return this;
     }
@@ -108,7 +108,7 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public List<String> getSubnetIds() {
+    public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -117,11 +117,11 @@ public class ReplicationSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(List<String> subnetIds) {
+    public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public ReplicationSubnetGroup withSubnetIds(List<String> subnetIds) {
+    public ReplicationSubnetGroup withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }

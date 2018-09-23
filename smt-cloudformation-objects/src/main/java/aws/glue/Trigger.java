@@ -35,14 +35,14 @@ public class Trigger {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions
      * 
@@ -56,14 +56,14 @@ public class Trigger {
      */
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule")
-    private String schedule;
+    private CharSequence schedule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name")
-    private String name;
+    private CharSequence name;
     /**
      * Predicate
      * <p>
@@ -79,7 +79,7 @@ public class Trigger {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -88,11 +88,11 @@ public class Trigger {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Trigger withType(String type) {
+    public Trigger withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -102,7 +102,7 @@ public class Trigger {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -111,11 +111,11 @@ public class Trigger {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Trigger withDescription(String description) {
+    public Trigger withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -148,7 +148,7 @@ public class Trigger {
      * 
      */
     @JsonProperty("Schedule")
-    public String getSchedule() {
+    public CharSequence getSchedule() {
         return schedule;
     }
 
@@ -157,11 +157,11 @@ public class Trigger {
      * 
      */
     @JsonProperty("Schedule")
-    public void setSchedule(String schedule) {
+    public void setSchedule(CharSequence schedule) {
         this.schedule = schedule;
     }
 
-    public Trigger withSchedule(String schedule) {
+    public Trigger withSchedule(CharSequence schedule) {
         this.schedule = schedule;
         return this;
     }
@@ -171,7 +171,7 @@ public class Trigger {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -180,11 +180,11 @@ public class Trigger {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Trigger withName(String name) {
+    public Trigger withName(CharSequence name) {
         this.name = name;
         return this;
     }

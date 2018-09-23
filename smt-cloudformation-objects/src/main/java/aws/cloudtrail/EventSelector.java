@@ -48,7 +48,7 @@ public class EventSelector {
      */
     @JsonProperty("ReadWriteType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-readwritetype")
-    private String readWriteType;
+    private CharSequence readWriteType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources
@@ -101,7 +101,7 @@ public class EventSelector {
      * 
      */
     @JsonProperty("ReadWriteType")
-    public String getReadWriteType() {
+    public CharSequence getReadWriteType() {
         return readWriteType;
     }
 
@@ -110,11 +110,11 @@ public class EventSelector {
      * 
      */
     @JsonProperty("ReadWriteType")
-    public void setReadWriteType(String readWriteType) {
+    public void setReadWriteType(CharSequence readWriteType) {
         this.readWriteType = readWriteType;
     }
 
-    public EventSelector withReadWriteType(String readWriteType) {
+    public EventSelector withReadWriteType(CharSequence readWriteType) {
         this.readWriteType = readWriteType;
         return this;
     }

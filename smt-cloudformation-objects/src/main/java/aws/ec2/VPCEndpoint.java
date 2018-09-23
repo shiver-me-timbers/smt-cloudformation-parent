@@ -37,21 +37,21 @@ public class VPCEndpoint {
      */
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid")
-    private String vpcId;
+    private CharSequence vpcId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids
      * 
      */
     @JsonProperty("RouteTableIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids")
-    private List<String> routeTableIds = new ArrayList<String>();
+    private List<CharSequence> routeTableIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename
      * 
      */
     @JsonProperty("ServiceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename")
-    private String serviceName;
+    private CharSequence serviceName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
      * 
@@ -72,28 +72,28 @@ public class VPCEndpoint {
      */
     @JsonProperty("SubnetIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids")
-    private List<String> subnetIds = new ArrayList<String>();
+    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids")
-    private List<String> securityGroupIds = new ArrayList<String>();
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcendpointtype
      * 
      */
     @JsonProperty("VPCEndpointType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcendpointtype")
-    private String vPCEndpointType;
+    private CharSequence vPCEndpointType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
      * 
      */
     @JsonProperty("VpcId")
-    public String getVpcId() {
+    public CharSequence getVpcId() {
         return vpcId;
     }
 
@@ -102,11 +102,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("VpcId")
-    public void setVpcId(String vpcId) {
+    public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
 
-    public VPCEndpoint withVpcId(String vpcId) {
+    public VPCEndpoint withVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
         return this;
     }
@@ -116,7 +116,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("RouteTableIds")
-    public List<String> getRouteTableIds() {
+    public List<CharSequence> getRouteTableIds() {
         return routeTableIds;
     }
 
@@ -125,11 +125,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("RouteTableIds")
-    public void setRouteTableIds(List<String> routeTableIds) {
+    public void setRouteTableIds(List<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
     }
 
-    public VPCEndpoint withRouteTableIds(List<String> routeTableIds) {
+    public VPCEndpoint withRouteTableIds(List<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
         return this;
     }
@@ -139,7 +139,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("ServiceName")
-    public String getServiceName() {
+    public CharSequence getServiceName() {
         return serviceName;
     }
 
@@ -148,11 +148,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("ServiceName")
-    public void setServiceName(String serviceName) {
+    public void setServiceName(CharSequence serviceName) {
         this.serviceName = serviceName;
     }
 
-    public VPCEndpoint withServiceName(String serviceName) {
+    public VPCEndpoint withServiceName(CharSequence serviceName) {
         this.serviceName = serviceName;
         return this;
     }
@@ -208,7 +208,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("SubnetIds")
-    public List<String> getSubnetIds() {
+    public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -217,11 +217,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(List<String> subnetIds) {
+    public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public VPCEndpoint withSubnetIds(List<String> subnetIds) {
+    public VPCEndpoint withSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }
@@ -231,7 +231,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public List<String> getSecurityGroupIds() {
+    public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -240,11 +240,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(List<String> securityGroupIds) {
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public VPCEndpoint withSecurityGroupIds(List<String> securityGroupIds) {
+    public VPCEndpoint withSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -254,7 +254,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("VPCEndpointType")
-    public String getVPCEndpointType() {
+    public CharSequence getVPCEndpointType() {
         return vPCEndpointType;
     }
 
@@ -263,11 +263,11 @@ public class VPCEndpoint {
      * 
      */
     @JsonProperty("VPCEndpointType")
-    public void setVPCEndpointType(String vPCEndpointType) {
+    public void setVPCEndpointType(CharSequence vPCEndpointType) {
         this.vPCEndpointType = vPCEndpointType;
     }
 
-    public VPCEndpoint withVPCEndpointType(String vPCEndpointType) {
+    public VPCEndpoint withVPCEndpointType(CharSequence vPCEndpointType) {
         this.vPCEndpointType = vPCEndpointType;
         return this;
     }

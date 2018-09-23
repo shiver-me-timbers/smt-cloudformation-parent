@@ -31,7 +31,7 @@ public class SizeConstraint {
      */
     @JsonProperty("ComparisonOperator")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-comparisonoperator")
-    private String comparisonOperator;
+    private CharSequence comparisonOperator;
     /**
      * FieldToMatch
      * <p>
@@ -54,14 +54,14 @@ public class SizeConstraint {
      */
     @JsonProperty("TextTransformation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-texttransformation")
-    private String textTransformation;
+    private CharSequence textTransformation;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-comparisonoperator
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public String getComparisonOperator() {
+    public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
 
@@ -70,11 +70,11 @@ public class SizeConstraint {
      * 
      */
     @JsonProperty("ComparisonOperator")
-    public void setComparisonOperator(String comparisonOperator) {
+    public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
 
-    public SizeConstraint withComparisonOperator(String comparisonOperator) {
+    public SizeConstraint withComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
         return this;
     }
@@ -134,7 +134,7 @@ public class SizeConstraint {
      * 
      */
     @JsonProperty("TextTransformation")
-    public String getTextTransformation() {
+    public CharSequence getTextTransformation() {
         return textTransformation;
     }
 
@@ -143,11 +143,11 @@ public class SizeConstraint {
      * 
      */
     @JsonProperty("TextTransformation")
-    public void setTextTransformation(String textTransformation) {
+    public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
 
-    public SizeConstraint withTextTransformation(String textTransformation) {
+    public SizeConstraint withTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
         return this;
     }

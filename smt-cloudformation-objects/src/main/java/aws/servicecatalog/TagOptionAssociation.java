@@ -29,21 +29,21 @@ public class TagOptionAssociation {
      */
     @JsonProperty("TagOptionId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid")
-    private String tagOptionId;
+    private CharSequence tagOptionId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
      * 
      */
     @JsonProperty("ResourceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid")
-    private String resourceId;
+    private CharSequence resourceId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
      * 
      */
     @JsonProperty("TagOptionId")
-    public String getTagOptionId() {
+    public CharSequence getTagOptionId() {
         return tagOptionId;
     }
 
@@ -52,11 +52,11 @@ public class TagOptionAssociation {
      * 
      */
     @JsonProperty("TagOptionId")
-    public void setTagOptionId(String tagOptionId) {
+    public void setTagOptionId(CharSequence tagOptionId) {
         this.tagOptionId = tagOptionId;
     }
 
-    public TagOptionAssociation withTagOptionId(String tagOptionId) {
+    public TagOptionAssociation withTagOptionId(CharSequence tagOptionId) {
         this.tagOptionId = tagOptionId;
         return this;
     }
@@ -66,7 +66,7 @@ public class TagOptionAssociation {
      * 
      */
     @JsonProperty("ResourceId")
-    public String getResourceId() {
+    public CharSequence getResourceId() {
         return resourceId;
     }
 
@@ -75,11 +75,11 @@ public class TagOptionAssociation {
      * 
      */
     @JsonProperty("ResourceId")
-    public void setResourceId(String resourceId) {
+    public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
 
-    public TagOptionAssociation withResourceId(String resourceId) {
+    public TagOptionAssociation withResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
         return this;
     }

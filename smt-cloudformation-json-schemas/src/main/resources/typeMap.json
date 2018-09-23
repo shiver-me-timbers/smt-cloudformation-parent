@@ -1,9 +1,24 @@
 {
-  "Boolean": "boolean",
-  "Integer": "integer",
-  "Double": "number",
-  "Long": "integer",
-  "String": "string",
-  "Json": "object",
-  "Timestamp": "string"
+  "Boolean": {
+    "type": "boolean"
+  },
+  "Integer": {
+    "type": "integer"
+  },
+  "Double": {
+    "type": "number"
+  },
+  "Long": {
+    "type": "integer"
+  },
+  "String": {
+    "type": "string",
+    "javaType": "java.lang.CharSequence"
+  },
+  "Json": {
+    "type": "object"
+  },
+  "Timestamp": {
+    "type": "string"
+  }
 }

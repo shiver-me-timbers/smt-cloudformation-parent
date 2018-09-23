@@ -53,35 +53,35 @@ public class Instance {
      */
     @JsonProperty("AgentVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-agentversion")
-    private String agentVersion;
+    private CharSequence agentVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-amiid
      * 
      */
     @JsonProperty("AmiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-amiid")
-    private String amiId;
+    private CharSequence amiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-architecture
      * 
      */
     @JsonProperty("Architecture")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-architecture")
-    private String architecture;
+    private CharSequence architecture;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-autoscalingtype
      * 
      */
     @JsonProperty("AutoScalingType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-autoscalingtype")
-    private String autoScalingType;
+    private CharSequence autoScalingType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-availabilityzone
      * 
      */
     @JsonProperty("AvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-availabilityzone")
-    private String availabilityZone;
+    private CharSequence availabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-blockdevicemappings
      * 
@@ -104,14 +104,14 @@ public class Instance {
     @JsonProperty("ElasticIps")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-elasticips")
-    private Set<String> elasticIps = new LinkedHashSet<String>();
+    private Set<CharSequence> elasticIps = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-hostname
      * 
      */
     @JsonProperty("Hostname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-hostname")
-    private String hostname;
+    private CharSequence hostname;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-installupdatesonboot
      * 
@@ -125,56 +125,56 @@ public class Instance {
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-layerids
      * 
      */
     @JsonProperty("LayerIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-layerids")
-    private List<String> layerIds = new ArrayList<String>();
+    private List<CharSequence> layerIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-os
      * 
      */
     @JsonProperty("Os")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-os")
-    private String os;
+    private CharSequence os;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-rootdevicetype
      * 
      */
     @JsonProperty("RootDeviceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-rootdevicetype")
-    private String rootDeviceType;
+    private CharSequence rootDeviceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-sshkeyname
      * 
      */
     @JsonProperty("SshKeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-sshkeyname")
-    private String sshKeyName;
+    private CharSequence sshKeyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-stackid
      * 
      */
     @JsonProperty("StackId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-stackid")
-    private String stackId;
+    private CharSequence stackId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-tenancy
      * 
      */
     @JsonProperty("Tenancy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-tenancy")
-    private String tenancy;
+    private CharSequence tenancy;
     /**
      * TimeBasedAutoScaling
      * <p>
@@ -190,7 +190,7 @@ public class Instance {
      */
     @JsonProperty("VirtualizationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype")
-    private String virtualizationType;
+    private CharSequence virtualizationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-volumes
      * 
@@ -198,14 +198,14 @@ public class Instance {
     @JsonProperty("Volumes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-volumes")
-    private Set<String> volumes = new LinkedHashSet<String>();
+    private Set<CharSequence> volumes = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-agentversion
      * 
      */
     @JsonProperty("AgentVersion")
-    public String getAgentVersion() {
+    public CharSequence getAgentVersion() {
         return agentVersion;
     }
 
@@ -214,11 +214,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AgentVersion")
-    public void setAgentVersion(String agentVersion) {
+    public void setAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
     }
 
-    public Instance withAgentVersion(String agentVersion) {
+    public Instance withAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
         return this;
     }
@@ -228,7 +228,7 @@ public class Instance {
      * 
      */
     @JsonProperty("AmiId")
-    public String getAmiId() {
+    public CharSequence getAmiId() {
         return amiId;
     }
 
@@ -237,11 +237,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AmiId")
-    public void setAmiId(String amiId) {
+    public void setAmiId(CharSequence amiId) {
         this.amiId = amiId;
     }
 
-    public Instance withAmiId(String amiId) {
+    public Instance withAmiId(CharSequence amiId) {
         this.amiId = amiId;
         return this;
     }
@@ -251,7 +251,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Architecture")
-    public String getArchitecture() {
+    public CharSequence getArchitecture() {
         return architecture;
     }
 
@@ -260,11 +260,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Architecture")
-    public void setArchitecture(String architecture) {
+    public void setArchitecture(CharSequence architecture) {
         this.architecture = architecture;
     }
 
-    public Instance withArchitecture(String architecture) {
+    public Instance withArchitecture(CharSequence architecture) {
         this.architecture = architecture;
         return this;
     }
@@ -274,7 +274,7 @@ public class Instance {
      * 
      */
     @JsonProperty("AutoScalingType")
-    public String getAutoScalingType() {
+    public CharSequence getAutoScalingType() {
         return autoScalingType;
     }
 
@@ -283,11 +283,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AutoScalingType")
-    public void setAutoScalingType(String autoScalingType) {
+    public void setAutoScalingType(CharSequence autoScalingType) {
         this.autoScalingType = autoScalingType;
     }
 
-    public Instance withAutoScalingType(String autoScalingType) {
+    public Instance withAutoScalingType(CharSequence autoScalingType) {
         this.autoScalingType = autoScalingType;
         return this;
     }
@@ -297,7 +297,7 @@ public class Instance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public String getAvailabilityZone() {
+    public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
 
@@ -306,11 +306,11 @@ public class Instance {
      * 
      */
     @JsonProperty("AvailabilityZone")
-    public void setAvailabilityZone(String availabilityZone) {
+    public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
 
-    public Instance withAvailabilityZone(String availabilityZone) {
+    public Instance withAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
         return this;
     }
@@ -366,7 +366,7 @@ public class Instance {
      * 
      */
     @JsonProperty("ElasticIps")
-    public Set<String> getElasticIps() {
+    public Set<CharSequence> getElasticIps() {
         return elasticIps;
     }
 
@@ -375,11 +375,11 @@ public class Instance {
      * 
      */
     @JsonProperty("ElasticIps")
-    public void setElasticIps(Set<String> elasticIps) {
+    public void setElasticIps(Set<CharSequence> elasticIps) {
         this.elasticIps = elasticIps;
     }
 
-    public Instance withElasticIps(Set<String> elasticIps) {
+    public Instance withElasticIps(Set<CharSequence> elasticIps) {
         this.elasticIps = elasticIps;
         return this;
     }
@@ -389,7 +389,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Hostname")
-    public String getHostname() {
+    public CharSequence getHostname() {
         return hostname;
     }
 
@@ -398,11 +398,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Hostname")
-    public void setHostname(String hostname) {
+    public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
 
-    public Instance withHostname(String hostname) {
+    public Instance withHostname(CharSequence hostname) {
         this.hostname = hostname;
         return this;
     }
@@ -435,7 +435,7 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -444,11 +444,11 @@ public class Instance {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public Instance withInstanceType(String instanceType) {
+    public Instance withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -458,7 +458,7 @@ public class Instance {
      * 
      */
     @JsonProperty("LayerIds")
-    public List<String> getLayerIds() {
+    public List<CharSequence> getLayerIds() {
         return layerIds;
     }
 
@@ -467,11 +467,11 @@ public class Instance {
      * 
      */
     @JsonProperty("LayerIds")
-    public void setLayerIds(List<String> layerIds) {
+    public void setLayerIds(List<CharSequence> layerIds) {
         this.layerIds = layerIds;
     }
 
-    public Instance withLayerIds(List<String> layerIds) {
+    public Instance withLayerIds(List<CharSequence> layerIds) {
         this.layerIds = layerIds;
         return this;
     }
@@ -481,7 +481,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Os")
-    public String getOs() {
+    public CharSequence getOs() {
         return os;
     }
 
@@ -490,11 +490,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Os")
-    public void setOs(String os) {
+    public void setOs(CharSequence os) {
         this.os = os;
     }
 
-    public Instance withOs(String os) {
+    public Instance withOs(CharSequence os) {
         this.os = os;
         return this;
     }
@@ -504,7 +504,7 @@ public class Instance {
      * 
      */
     @JsonProperty("RootDeviceType")
-    public String getRootDeviceType() {
+    public CharSequence getRootDeviceType() {
         return rootDeviceType;
     }
 
@@ -513,11 +513,11 @@ public class Instance {
      * 
      */
     @JsonProperty("RootDeviceType")
-    public void setRootDeviceType(String rootDeviceType) {
+    public void setRootDeviceType(CharSequence rootDeviceType) {
         this.rootDeviceType = rootDeviceType;
     }
 
-    public Instance withRootDeviceType(String rootDeviceType) {
+    public Instance withRootDeviceType(CharSequence rootDeviceType) {
         this.rootDeviceType = rootDeviceType;
         return this;
     }
@@ -527,7 +527,7 @@ public class Instance {
      * 
      */
     @JsonProperty("SshKeyName")
-    public String getSshKeyName() {
+    public CharSequence getSshKeyName() {
         return sshKeyName;
     }
 
@@ -536,11 +536,11 @@ public class Instance {
      * 
      */
     @JsonProperty("SshKeyName")
-    public void setSshKeyName(String sshKeyName) {
+    public void setSshKeyName(CharSequence sshKeyName) {
         this.sshKeyName = sshKeyName;
     }
 
-    public Instance withSshKeyName(String sshKeyName) {
+    public Instance withSshKeyName(CharSequence sshKeyName) {
         this.sshKeyName = sshKeyName;
         return this;
     }
@@ -550,7 +550,7 @@ public class Instance {
      * 
      */
     @JsonProperty("StackId")
-    public String getStackId() {
+    public CharSequence getStackId() {
         return stackId;
     }
 
@@ -559,11 +559,11 @@ public class Instance {
      * 
      */
     @JsonProperty("StackId")
-    public void setStackId(String stackId) {
+    public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
 
-    public Instance withStackId(String stackId) {
+    public Instance withStackId(CharSequence stackId) {
         this.stackId = stackId;
         return this;
     }
@@ -573,7 +573,7 @@ public class Instance {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -582,11 +582,11 @@ public class Instance {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public Instance withSubnetId(String subnetId) {
+    public Instance withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }
@@ -596,7 +596,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Tenancy")
-    public String getTenancy() {
+    public CharSequence getTenancy() {
         return tenancy;
     }
 
@@ -605,11 +605,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Tenancy")
-    public void setTenancy(String tenancy) {
+    public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
 
-    public Instance withTenancy(String tenancy) {
+    public Instance withTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
         return this;
     }
@@ -646,7 +646,7 @@ public class Instance {
      * 
      */
     @JsonProperty("VirtualizationType")
-    public String getVirtualizationType() {
+    public CharSequence getVirtualizationType() {
         return virtualizationType;
     }
 
@@ -655,11 +655,11 @@ public class Instance {
      * 
      */
     @JsonProperty("VirtualizationType")
-    public void setVirtualizationType(String virtualizationType) {
+    public void setVirtualizationType(CharSequence virtualizationType) {
         this.virtualizationType = virtualizationType;
     }
 
-    public Instance withVirtualizationType(String virtualizationType) {
+    public Instance withVirtualizationType(CharSequence virtualizationType) {
         this.virtualizationType = virtualizationType;
         return this;
     }
@@ -669,7 +669,7 @@ public class Instance {
      * 
      */
     @JsonProperty("Volumes")
-    public Set<String> getVolumes() {
+    public Set<CharSequence> getVolumes() {
         return volumes;
     }
 
@@ -678,11 +678,11 @@ public class Instance {
      * 
      */
     @JsonProperty("Volumes")
-    public void setVolumes(Set<String> volumes) {
+    public void setVolumes(Set<CharSequence> volumes) {
         this.volumes = volumes;
     }
 
-    public Instance withVolumes(Set<String> volumes) {
+    public Instance withVolumes(Set<CharSequence> volumes) {
         this.volumes = volumes;
         return this;
     }

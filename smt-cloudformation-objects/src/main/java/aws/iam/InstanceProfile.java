@@ -32,28 +32,28 @@ public class InstanceProfile {
      */
     @JsonProperty("InstanceProfileName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename")
-    private String instanceProfileName;
+    private CharSequence instanceProfileName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles
      * 
      */
     @JsonProperty("Roles")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles")
-    private List<String> roles = new ArrayList<String>();
+    private List<CharSequence> roles = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename
      * 
      */
     @JsonProperty("InstanceProfileName")
-    public String getInstanceProfileName() {
+    public CharSequence getInstanceProfileName() {
         return instanceProfileName;
     }
 
@@ -62,11 +62,11 @@ public class InstanceProfile {
      * 
      */
     @JsonProperty("InstanceProfileName")
-    public void setInstanceProfileName(String instanceProfileName) {
+    public void setInstanceProfileName(CharSequence instanceProfileName) {
         this.instanceProfileName = instanceProfileName;
     }
 
-    public InstanceProfile withInstanceProfileName(String instanceProfileName) {
+    public InstanceProfile withInstanceProfileName(CharSequence instanceProfileName) {
         this.instanceProfileName = instanceProfileName;
         return this;
     }
@@ -76,7 +76,7 @@ public class InstanceProfile {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -85,11 +85,11 @@ public class InstanceProfile {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public InstanceProfile withPath(String path) {
+    public InstanceProfile withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -99,7 +99,7 @@ public class InstanceProfile {
      * 
      */
     @JsonProperty("Roles")
-    public List<String> getRoles() {
+    public List<CharSequence> getRoles() {
         return roles;
     }
 
@@ -108,11 +108,11 @@ public class InstanceProfile {
      * 
      */
     @JsonProperty("Roles")
-    public void setRoles(List<String> roles) {
+    public void setRoles(List<CharSequence> roles) {
         this.roles = roles;
     }
 
-    public InstanceProfile withRoles(List<String> roles) {
+    public InstanceProfile withRoles(List<CharSequence> roles) {
         this.roles = roles;
         return this;
     }

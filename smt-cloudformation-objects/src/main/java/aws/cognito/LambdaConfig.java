@@ -35,63 +35,63 @@ public class LambdaConfig {
      */
     @JsonProperty("CreateAuthChallenge")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge")
-    private String createAuthChallenge;
+    private CharSequence createAuthChallenge;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication
      * 
      */
     @JsonProperty("PreAuthentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication")
-    private String preAuthentication;
+    private CharSequence preAuthentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge
      * 
      */
     @JsonProperty("DefineAuthChallenge")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge")
-    private String defineAuthChallenge;
+    private CharSequence defineAuthChallenge;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup
      * 
      */
     @JsonProperty("PreSignUp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup")
-    private String preSignUp;
+    private CharSequence preSignUp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
     @JsonProperty("PostAuthentication")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication")
-    private String postAuthentication;
+    private CharSequence postAuthentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation
      * 
      */
     @JsonProperty("PostConfirmation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation")
-    private String postConfirmation;
+    private CharSequence postConfirmation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage
      * 
      */
     @JsonProperty("CustomMessage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage")
-    private String customMessage;
+    private CharSequence customMessage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse
      * 
      */
     @JsonProperty("VerifyAuthChallengeResponse")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse")
-    private String verifyAuthChallengeResponse;
+    private CharSequence verifyAuthChallengeResponse;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge
      * 
      */
     @JsonProperty("CreateAuthChallenge")
-    public String getCreateAuthChallenge() {
+    public CharSequence getCreateAuthChallenge() {
         return createAuthChallenge;
     }
 
@@ -100,11 +100,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("CreateAuthChallenge")
-    public void setCreateAuthChallenge(String createAuthChallenge) {
+    public void setCreateAuthChallenge(CharSequence createAuthChallenge) {
         this.createAuthChallenge = createAuthChallenge;
     }
 
-    public LambdaConfig withCreateAuthChallenge(String createAuthChallenge) {
+    public LambdaConfig withCreateAuthChallenge(CharSequence createAuthChallenge) {
         this.createAuthChallenge = createAuthChallenge;
         return this;
     }
@@ -114,7 +114,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PreAuthentication")
-    public String getPreAuthentication() {
+    public CharSequence getPreAuthentication() {
         return preAuthentication;
     }
 
@@ -123,11 +123,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PreAuthentication")
-    public void setPreAuthentication(String preAuthentication) {
+    public void setPreAuthentication(CharSequence preAuthentication) {
         this.preAuthentication = preAuthentication;
     }
 
-    public LambdaConfig withPreAuthentication(String preAuthentication) {
+    public LambdaConfig withPreAuthentication(CharSequence preAuthentication) {
         this.preAuthentication = preAuthentication;
         return this;
     }
@@ -137,7 +137,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("DefineAuthChallenge")
-    public String getDefineAuthChallenge() {
+    public CharSequence getDefineAuthChallenge() {
         return defineAuthChallenge;
     }
 
@@ -146,11 +146,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("DefineAuthChallenge")
-    public void setDefineAuthChallenge(String defineAuthChallenge) {
+    public void setDefineAuthChallenge(CharSequence defineAuthChallenge) {
         this.defineAuthChallenge = defineAuthChallenge;
     }
 
-    public LambdaConfig withDefineAuthChallenge(String defineAuthChallenge) {
+    public LambdaConfig withDefineAuthChallenge(CharSequence defineAuthChallenge) {
         this.defineAuthChallenge = defineAuthChallenge;
         return this;
     }
@@ -160,7 +160,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PreSignUp")
-    public String getPreSignUp() {
+    public CharSequence getPreSignUp() {
         return preSignUp;
     }
 
@@ -169,11 +169,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PreSignUp")
-    public void setPreSignUp(String preSignUp) {
+    public void setPreSignUp(CharSequence preSignUp) {
         this.preSignUp = preSignUp;
     }
 
-    public LambdaConfig withPreSignUp(String preSignUp) {
+    public LambdaConfig withPreSignUp(CharSequence preSignUp) {
         this.preSignUp = preSignUp;
         return this;
     }
@@ -183,7 +183,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PostAuthentication")
-    public String getPostAuthentication() {
+    public CharSequence getPostAuthentication() {
         return postAuthentication;
     }
 
@@ -192,11 +192,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PostAuthentication")
-    public void setPostAuthentication(String postAuthentication) {
+    public void setPostAuthentication(CharSequence postAuthentication) {
         this.postAuthentication = postAuthentication;
     }
 
-    public LambdaConfig withPostAuthentication(String postAuthentication) {
+    public LambdaConfig withPostAuthentication(CharSequence postAuthentication) {
         this.postAuthentication = postAuthentication;
         return this;
     }
@@ -206,7 +206,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PostConfirmation")
-    public String getPostConfirmation() {
+    public CharSequence getPostConfirmation() {
         return postConfirmation;
     }
 
@@ -215,11 +215,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("PostConfirmation")
-    public void setPostConfirmation(String postConfirmation) {
+    public void setPostConfirmation(CharSequence postConfirmation) {
         this.postConfirmation = postConfirmation;
     }
 
-    public LambdaConfig withPostConfirmation(String postConfirmation) {
+    public LambdaConfig withPostConfirmation(CharSequence postConfirmation) {
         this.postConfirmation = postConfirmation;
         return this;
     }
@@ -229,7 +229,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("CustomMessage")
-    public String getCustomMessage() {
+    public CharSequence getCustomMessage() {
         return customMessage;
     }
 
@@ -238,11 +238,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("CustomMessage")
-    public void setCustomMessage(String customMessage) {
+    public void setCustomMessage(CharSequence customMessage) {
         this.customMessage = customMessage;
     }
 
-    public LambdaConfig withCustomMessage(String customMessage) {
+    public LambdaConfig withCustomMessage(CharSequence customMessage) {
         this.customMessage = customMessage;
         return this;
     }
@@ -252,7 +252,7 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("VerifyAuthChallengeResponse")
-    public String getVerifyAuthChallengeResponse() {
+    public CharSequence getVerifyAuthChallengeResponse() {
         return verifyAuthChallengeResponse;
     }
 
@@ -261,11 +261,11 @@ public class LambdaConfig {
      * 
      */
     @JsonProperty("VerifyAuthChallengeResponse")
-    public void setVerifyAuthChallengeResponse(String verifyAuthChallengeResponse) {
+    public void setVerifyAuthChallengeResponse(CharSequence verifyAuthChallengeResponse) {
         this.verifyAuthChallengeResponse = verifyAuthChallengeResponse;
     }
 
-    public LambdaConfig withVerifyAuthChallengeResponse(String verifyAuthChallengeResponse) {
+    public LambdaConfig withVerifyAuthChallengeResponse(CharSequence verifyAuthChallengeResponse) {
         this.verifyAuthChallengeResponse = verifyAuthChallengeResponse;
         return this;
     }

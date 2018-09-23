@@ -39,7 +39,7 @@ public class ConfigurationAggregator {
      */
     @JsonProperty("ConfigurationAggregatorName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-configurationaggregatorname")
-    private String configurationAggregatorName;
+    private CharSequence configurationAggregatorName;
     /**
      * OrganizationAggregationSource
      * <p>
@@ -78,7 +78,7 @@ public class ConfigurationAggregator {
      * 
      */
     @JsonProperty("ConfigurationAggregatorName")
-    public String getConfigurationAggregatorName() {
+    public CharSequence getConfigurationAggregatorName() {
         return configurationAggregatorName;
     }
 
@@ -87,11 +87,11 @@ public class ConfigurationAggregator {
      * 
      */
     @JsonProperty("ConfigurationAggregatorName")
-    public void setConfigurationAggregatorName(String configurationAggregatorName) {
+    public void setConfigurationAggregatorName(CharSequence configurationAggregatorName) {
         this.configurationAggregatorName = configurationAggregatorName;
     }
 
-    public ConfigurationAggregator withConfigurationAggregatorName(String configurationAggregatorName) {
+    public ConfigurationAggregator withConfigurationAggregatorName(CharSequence configurationAggregatorName) {
         this.configurationAggregatorName = configurationAggregatorName;
         return this;
     }

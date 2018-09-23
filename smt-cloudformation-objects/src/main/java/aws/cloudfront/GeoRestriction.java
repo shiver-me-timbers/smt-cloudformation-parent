@@ -31,21 +31,21 @@ public class GeoRestriction {
      */
     @JsonProperty("Locations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-locations")
-    private List<String> locations = new ArrayList<String>();
+    private List<CharSequence> locations = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-restrictiontype
      * 
      */
     @JsonProperty("RestrictionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-restrictiontype")
-    private String restrictionType;
+    private CharSequence restrictionType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-locations
      * 
      */
     @JsonProperty("Locations")
-    public List<String> getLocations() {
+    public List<CharSequence> getLocations() {
         return locations;
     }
 
@@ -54,11 +54,11 @@ public class GeoRestriction {
      * 
      */
     @JsonProperty("Locations")
-    public void setLocations(List<String> locations) {
+    public void setLocations(List<CharSequence> locations) {
         this.locations = locations;
     }
 
-    public GeoRestriction withLocations(List<String> locations) {
+    public GeoRestriction withLocations(List<CharSequence> locations) {
         this.locations = locations;
         return this;
     }
@@ -68,7 +68,7 @@ public class GeoRestriction {
      * 
      */
     @JsonProperty("RestrictionType")
-    public String getRestrictionType() {
+    public CharSequence getRestrictionType() {
         return restrictionType;
     }
 
@@ -77,11 +77,11 @@ public class GeoRestriction {
      * 
      */
     @JsonProperty("RestrictionType")
-    public void setRestrictionType(String restrictionType) {
+    public void setRestrictionType(CharSequence restrictionType) {
         this.restrictionType = restrictionType;
     }
 
-    public GeoRestriction withRestrictionType(String restrictionType) {
+    public GeoRestriction withRestrictionType(CharSequence restrictionType) {
         this.restrictionType = restrictionType;
         return this;
     }

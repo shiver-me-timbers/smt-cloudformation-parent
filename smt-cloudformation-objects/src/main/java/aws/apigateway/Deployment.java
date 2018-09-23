@@ -31,14 +31,14 @@ public class Deployment {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
     /**
      * StageDescription
      * <p>
@@ -54,14 +54,14 @@ public class Deployment {
      */
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename")
-    private String stageName;
+    private CharSequence stageName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -70,11 +70,11 @@ public class Deployment {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Deployment withDescription(String description) {
+    public Deployment withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -84,7 +84,7 @@ public class Deployment {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -93,11 +93,11 @@ public class Deployment {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Deployment withRestApiId(String restApiId) {
+    public Deployment withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -134,7 +134,7 @@ public class Deployment {
      * 
      */
     @JsonProperty("StageName")
-    public String getStageName() {
+    public CharSequence getStageName() {
         return stageName;
     }
 
@@ -143,11 +143,11 @@ public class Deployment {
      * 
      */
     @JsonProperty("StageName")
-    public void setStageName(String stageName) {
+    public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }
 
-    public Deployment withStageName(String stageName) {
+    public Deployment withStageName(CharSequence stageName) {
         this.stageName = stageName;
         return this;
     }

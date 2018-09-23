@@ -37,14 +37,14 @@ public class SerdeInfo {
      */
     @JsonProperty("SerializationLibrary")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary")
-    private String serializationLibrary;
+    private CharSequence serializationLibrary;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
@@ -74,7 +74,7 @@ public class SerdeInfo {
      * 
      */
     @JsonProperty("SerializationLibrary")
-    public String getSerializationLibrary() {
+    public CharSequence getSerializationLibrary() {
         return serializationLibrary;
     }
 
@@ -83,11 +83,11 @@ public class SerdeInfo {
      * 
      */
     @JsonProperty("SerializationLibrary")
-    public void setSerializationLibrary(String serializationLibrary) {
+    public void setSerializationLibrary(CharSequence serializationLibrary) {
         this.serializationLibrary = serializationLibrary;
     }
 
-    public SerdeInfo withSerializationLibrary(String serializationLibrary) {
+    public SerdeInfo withSerializationLibrary(CharSequence serializationLibrary) {
         this.serializationLibrary = serializationLibrary;
         return this;
     }
@@ -97,7 +97,7 @@ public class SerdeInfo {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -106,11 +106,11 @@ public class SerdeInfo {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public SerdeInfo withName(String name) {
+    public SerdeInfo withName(CharSequence name) {
         this.name = name;
         return this;
     }

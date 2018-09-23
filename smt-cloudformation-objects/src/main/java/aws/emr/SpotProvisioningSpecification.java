@@ -37,7 +37,7 @@ public class SpotProvisioningSpecification {
      */
     @JsonProperty("TimeoutAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutaction")
-    private String timeoutAction;
+    private CharSequence timeoutAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutdurationminutes
      * 
@@ -74,7 +74,7 @@ public class SpotProvisioningSpecification {
      * 
      */
     @JsonProperty("TimeoutAction")
-    public String getTimeoutAction() {
+    public CharSequence getTimeoutAction() {
         return timeoutAction;
     }
 
@@ -83,11 +83,11 @@ public class SpotProvisioningSpecification {
      * 
      */
     @JsonProperty("TimeoutAction")
-    public void setTimeoutAction(String timeoutAction) {
+    public void setTimeoutAction(CharSequence timeoutAction) {
         this.timeoutAction = timeoutAction;
     }
 
-    public SpotProvisioningSpecification withTimeoutAction(String timeoutAction) {
+    public SpotProvisioningSpecification withTimeoutAction(CharSequence timeoutAction) {
         this.timeoutAction = timeoutAction;
         return this;
     }

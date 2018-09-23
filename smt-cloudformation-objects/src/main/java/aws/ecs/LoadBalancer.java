@@ -31,7 +31,7 @@ public class LoadBalancer {
      */
     @JsonProperty("ContainerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containername")
-    private String containerName;
+    private CharSequence containerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containerport
      * 
@@ -45,21 +45,21 @@ public class LoadBalancer {
      */
     @JsonProperty("LoadBalancerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-loadbalancername")
-    private String loadBalancerName;
+    private CharSequence loadBalancerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-targetgrouparn
      * 
      */
     @JsonProperty("TargetGroupArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-targetgrouparn")
-    private String targetGroupArn;
+    private CharSequence targetGroupArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containername
      * 
      */
     @JsonProperty("ContainerName")
-    public String getContainerName() {
+    public CharSequence getContainerName() {
         return containerName;
     }
 
@@ -68,11 +68,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("ContainerName")
-    public void setContainerName(String containerName) {
+    public void setContainerName(CharSequence containerName) {
         this.containerName = containerName;
     }
 
-    public LoadBalancer withContainerName(String containerName) {
+    public LoadBalancer withContainerName(CharSequence containerName) {
         this.containerName = containerName;
         return this;
     }
@@ -105,7 +105,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("LoadBalancerName")
-    public String getLoadBalancerName() {
+    public CharSequence getLoadBalancerName() {
         return loadBalancerName;
     }
 
@@ -114,11 +114,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("LoadBalancerName")
-    public void setLoadBalancerName(String loadBalancerName) {
+    public void setLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
     }
 
-    public LoadBalancer withLoadBalancerName(String loadBalancerName) {
+    public LoadBalancer withLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
         return this;
     }
@@ -128,7 +128,7 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("TargetGroupArn")
-    public String getTargetGroupArn() {
+    public CharSequence getTargetGroupArn() {
         return targetGroupArn;
     }
 
@@ -137,11 +137,11 @@ public class LoadBalancer {
      * 
      */
     @JsonProperty("TargetGroupArn")
-    public void setTargetGroupArn(String targetGroupArn) {
+    public void setTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
     }
 
-    public LoadBalancer withTargetGroupArn(String targetGroupArn) {
+    public LoadBalancer withTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
         return this;
     }

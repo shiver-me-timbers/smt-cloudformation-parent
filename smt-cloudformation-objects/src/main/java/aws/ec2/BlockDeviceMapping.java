@@ -31,7 +31,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("DeviceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename")
-    private String deviceName;
+    private CharSequence deviceName;
     /**
      * Ebs
      * <p>
@@ -56,14 +56,14 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("VirtualName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-virtualname")
-    private String virtualName;
+    private CharSequence virtualName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename
      * 
      */
     @JsonProperty("DeviceName")
-    public String getDeviceName() {
+    public CharSequence getDeviceName() {
         return deviceName;
     }
 
@@ -72,11 +72,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("DeviceName")
-    public void setDeviceName(String deviceName) {
+    public void setDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
     }
 
-    public BlockDeviceMapping withDeviceName(String deviceName) {
+    public BlockDeviceMapping withDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
         return this;
     }
@@ -140,7 +140,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("VirtualName")
-    public String getVirtualName() {
+    public CharSequence getVirtualName() {
         return virtualName;
     }
 
@@ -149,11 +149,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonProperty("VirtualName")
-    public void setVirtualName(String virtualName) {
+    public void setVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
     }
 
-    public BlockDeviceMapping withVirtualName(String virtualName) {
+    public BlockDeviceMapping withVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
         return this;
     }

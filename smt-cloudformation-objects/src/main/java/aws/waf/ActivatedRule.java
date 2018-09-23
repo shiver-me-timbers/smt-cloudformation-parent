@@ -46,7 +46,7 @@ public class ActivatedRule {
      */
     @JsonProperty("RuleId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-ruleid")
-    private String ruleId;
+    private CharSequence ruleId;
 
     /**
      * WafAction
@@ -103,7 +103,7 @@ public class ActivatedRule {
      * 
      */
     @JsonProperty("RuleId")
-    public String getRuleId() {
+    public CharSequence getRuleId() {
         return ruleId;
     }
 
@@ -112,11 +112,11 @@ public class ActivatedRule {
      * 
      */
     @JsonProperty("RuleId")
-    public void setRuleId(String ruleId) {
+    public void setRuleId(CharSequence ruleId) {
         this.ruleId = ruleId;
     }
 
-    public ActivatedRule withRuleId(String ruleId) {
+    public ActivatedRule withRuleId(CharSequence ruleId) {
         this.ruleId = ruleId;
         return this;
     }

@@ -33,14 +33,14 @@ public class MetricFilter {
      */
     @JsonProperty("FilterPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern")
-    private String filterPattern;
+    private CharSequence filterPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
      * 
      */
     @JsonProperty("LogGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname")
-    private String logGroupName;
+    private CharSequence logGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations
      * 
@@ -55,7 +55,7 @@ public class MetricFilter {
      * 
      */
     @JsonProperty("FilterPattern")
-    public String getFilterPattern() {
+    public CharSequence getFilterPattern() {
         return filterPattern;
     }
 
@@ -64,11 +64,11 @@ public class MetricFilter {
      * 
      */
     @JsonProperty("FilterPattern")
-    public void setFilterPattern(String filterPattern) {
+    public void setFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
     }
 
-    public MetricFilter withFilterPattern(String filterPattern) {
+    public MetricFilter withFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
         return this;
     }
@@ -78,7 +78,7 @@ public class MetricFilter {
      * 
      */
     @JsonProperty("LogGroupName")
-    public String getLogGroupName() {
+    public CharSequence getLogGroupName() {
         return logGroupName;
     }
 
@@ -87,11 +87,11 @@ public class MetricFilter {
      * 
      */
     @JsonProperty("LogGroupName")
-    public void setLogGroupName(String logGroupName) {
+    public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
 
-    public MetricFilter withLogGroupName(String logGroupName) {
+    public MetricFilter withLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
         return this;
     }

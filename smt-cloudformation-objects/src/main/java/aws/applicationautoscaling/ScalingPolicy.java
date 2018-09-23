@@ -35,42 +35,42 @@ public class ScalingPolicy {
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname")
-    private String policyName;
+    private CharSequence policyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policytype
      * 
      */
     @JsonProperty("PolicyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policytype")
-    private String policyType;
+    private CharSequence policyType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-resourceid
      * 
      */
     @JsonProperty("ResourceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-resourceid")
-    private String resourceId;
+    private CharSequence resourceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalabledimension
      * 
      */
     @JsonProperty("ScalableDimension")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalabledimension")
-    private String scalableDimension;
+    private CharSequence scalableDimension;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalingtargetid
      * 
      */
     @JsonProperty("ScalingTargetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalingtargetid")
-    private String scalingTargetId;
+    private CharSequence scalingTargetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace
      * 
      */
     @JsonProperty("ServiceNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace")
-    private String serviceNamespace;
+    private CharSequence serviceNamespace;
     /**
      * StepScalingPolicyConfiguration
      * <p>
@@ -95,7 +95,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -104,11 +104,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public ScalingPolicy withPolicyName(String policyName) {
+    public ScalingPolicy withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }
@@ -118,7 +118,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyType")
-    public String getPolicyType() {
+    public CharSequence getPolicyType() {
         return policyType;
     }
 
@@ -127,11 +127,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("PolicyType")
-    public void setPolicyType(String policyType) {
+    public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }
 
-    public ScalingPolicy withPolicyType(String policyType) {
+    public ScalingPolicy withPolicyType(CharSequence policyType) {
         this.policyType = policyType;
         return this;
     }
@@ -141,7 +141,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ResourceId")
-    public String getResourceId() {
+    public CharSequence getResourceId() {
         return resourceId;
     }
 
@@ -150,11 +150,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ResourceId")
-    public void setResourceId(String resourceId) {
+    public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
 
-    public ScalingPolicy withResourceId(String resourceId) {
+    public ScalingPolicy withResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
         return this;
     }
@@ -164,7 +164,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ScalableDimension")
-    public String getScalableDimension() {
+    public CharSequence getScalableDimension() {
         return scalableDimension;
     }
 
@@ -173,11 +173,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ScalableDimension")
-    public void setScalableDimension(String scalableDimension) {
+    public void setScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
     }
 
-    public ScalingPolicy withScalableDimension(String scalableDimension) {
+    public ScalingPolicy withScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
         return this;
     }
@@ -187,7 +187,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ScalingTargetId")
-    public String getScalingTargetId() {
+    public CharSequence getScalingTargetId() {
         return scalingTargetId;
     }
 
@@ -196,11 +196,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ScalingTargetId")
-    public void setScalingTargetId(String scalingTargetId) {
+    public void setScalingTargetId(CharSequence scalingTargetId) {
         this.scalingTargetId = scalingTargetId;
     }
 
-    public ScalingPolicy withScalingTargetId(String scalingTargetId) {
+    public ScalingPolicy withScalingTargetId(CharSequence scalingTargetId) {
         this.scalingTargetId = scalingTargetId;
         return this;
     }
@@ -210,7 +210,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ServiceNamespace")
-    public String getServiceNamespace() {
+    public CharSequence getServiceNamespace() {
         return serviceNamespace;
     }
 
@@ -219,11 +219,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonProperty("ServiceNamespace")
-    public void setServiceNamespace(String serviceNamespace) {
+    public void setServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
     }
 
-    public ScalingPolicy withServiceNamespace(String serviceNamespace) {
+    public ScalingPolicy withServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
         return this;
     }

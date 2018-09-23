@@ -29,21 +29,21 @@ public class LogStream {
      */
     @JsonProperty("LogGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-loggroupname")
-    private String logGroupName;
+    private CharSequence logGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-logstreamname
      * 
      */
     @JsonProperty("LogStreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-logstreamname")
-    private String logStreamName;
+    private CharSequence logStreamName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-loggroupname
      * 
      */
     @JsonProperty("LogGroupName")
-    public String getLogGroupName() {
+    public CharSequence getLogGroupName() {
         return logGroupName;
     }
 
@@ -52,11 +52,11 @@ public class LogStream {
      * 
      */
     @JsonProperty("LogGroupName")
-    public void setLogGroupName(String logGroupName) {
+    public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
 
-    public LogStream withLogGroupName(String logGroupName) {
+    public LogStream withLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
         return this;
     }
@@ -66,7 +66,7 @@ public class LogStream {
      * 
      */
     @JsonProperty("LogStreamName")
-    public String getLogStreamName() {
+    public CharSequence getLogStreamName() {
         return logStreamName;
     }
 
@@ -75,11 +75,11 @@ public class LogStream {
      * 
      */
     @JsonProperty("LogStreamName")
-    public void setLogStreamName(String logStreamName) {
+    public void setLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
     }
 
-    public LogStream withLogStreamName(String logStreamName) {
+    public LogStream withLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
         return this;
     }

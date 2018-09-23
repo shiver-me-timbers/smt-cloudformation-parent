@@ -32,7 +32,7 @@ public class ThreatIntelSet {
      */
     @JsonProperty("Format")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-format")
-    private String format;
+    private CharSequence format;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-activate
      * 
@@ -46,28 +46,28 @@ public class ThreatIntelSet {
      */
     @JsonProperty("DetectorId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-detectorid")
-    private String detectorId;
+    private CharSequence detectorId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-location
      * 
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-location")
-    private String location;
+    private CharSequence location;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html#cfn-guardduty-threatintelset-format
      * 
      */
     @JsonProperty("Format")
-    public String getFormat() {
+    public CharSequence getFormat() {
         return format;
     }
 
@@ -76,11 +76,11 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("Format")
-    public void setFormat(String format) {
+    public void setFormat(CharSequence format) {
         this.format = format;
     }
 
-    public ThreatIntelSet withFormat(String format) {
+    public ThreatIntelSet withFormat(CharSequence format) {
         this.format = format;
         return this;
     }
@@ -113,7 +113,7 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("DetectorId")
-    public String getDetectorId() {
+    public CharSequence getDetectorId() {
         return detectorId;
     }
 
@@ -122,11 +122,11 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("DetectorId")
-    public void setDetectorId(String detectorId) {
+    public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
 
-    public ThreatIntelSet withDetectorId(String detectorId) {
+    public ThreatIntelSet withDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
         return this;
     }
@@ -136,7 +136,7 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -145,11 +145,11 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ThreatIntelSet withName(String name) {
+    public ThreatIntelSet withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -159,7 +159,7 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("Location")
-    public String getLocation() {
+    public CharSequence getLocation() {
         return location;
     }
 
@@ -168,11 +168,11 @@ public class ThreatIntelSet {
      * 
      */
     @JsonProperty("Location")
-    public void setLocation(String location) {
+    public void setLocation(CharSequence location) {
         this.location = location;
     }
 
-    public ThreatIntelSet withLocation(String location) {
+    public ThreatIntelSet withLocation(CharSequence location) {
         this.location = location;
         return this;
     }

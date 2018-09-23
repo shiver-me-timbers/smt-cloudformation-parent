@@ -29,21 +29,21 @@ public class EIP {
      */
     @JsonProperty("Domain")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain")
-    private String domain;
+    private CharSequence domain;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
      * 
      */
     @JsonProperty("Domain")
-    public String getDomain() {
+    public CharSequence getDomain() {
         return domain;
     }
 
@@ -52,11 +52,11 @@ public class EIP {
      * 
      */
     @JsonProperty("Domain")
-    public void setDomain(String domain) {
+    public void setDomain(CharSequence domain) {
         this.domain = domain;
     }
 
-    public EIP withDomain(String domain) {
+    public EIP withDomain(CharSequence domain) {
         this.domain = domain;
         return this;
     }
@@ -66,7 +66,7 @@ public class EIP {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -75,11 +75,11 @@ public class EIP {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public EIP withInstanceId(String instanceId) {
+    public EIP withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }

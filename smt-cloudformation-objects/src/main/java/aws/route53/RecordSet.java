@@ -52,14 +52,14 @@ public class RecordSet {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-failover
      * 
      */
     @JsonProperty("Failover")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-failover")
-    private String failover;
+    private CharSequence failover;
     /**
      * GeoLocation
      * <p>
@@ -75,63 +75,63 @@ public class RecordSet {
      */
     @JsonProperty("HealthCheckId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid")
-    private String healthCheckId;
+    private CharSequence healthCheckId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzoneid
      * 
      */
     @JsonProperty("HostedZoneId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzoneid")
-    private String hostedZoneId;
+    private CharSequence hostedZoneId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzonename
      * 
      */
     @JsonProperty("HostedZoneName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzonename")
-    private String hostedZoneName;
+    private CharSequence hostedZoneName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-region
      * 
      */
     @JsonProperty("Region")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-region")
-    private String region;
+    private CharSequence region;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-resourcerecords
      * 
      */
     @JsonProperty("ResourceRecords")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-resourcerecords")
-    private List<String> resourceRecords = new ArrayList<String>();
+    private List<CharSequence> resourceRecords = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-setidentifier
      * 
      */
     @JsonProperty("SetIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-setidentifier")
-    private String setIdentifier;
+    private CharSequence setIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-ttl
      * 
      */
     @JsonProperty("TTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-ttl")
-    private String tTL;
+    private CharSequence tTL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-weight
      * 
@@ -172,7 +172,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -181,11 +181,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public RecordSet withComment(String comment) {
+    public RecordSet withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -195,7 +195,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Failover")
-    public String getFailover() {
+    public CharSequence getFailover() {
         return failover;
     }
 
@@ -204,11 +204,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Failover")
-    public void setFailover(String failover) {
+    public void setFailover(CharSequence failover) {
         this.failover = failover;
     }
 
-    public RecordSet withFailover(String failover) {
+    public RecordSet withFailover(CharSequence failover) {
         this.failover = failover;
         return this;
     }
@@ -245,7 +245,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HealthCheckId")
-    public String getHealthCheckId() {
+    public CharSequence getHealthCheckId() {
         return healthCheckId;
     }
 
@@ -254,11 +254,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HealthCheckId")
-    public void setHealthCheckId(String healthCheckId) {
+    public void setHealthCheckId(CharSequence healthCheckId) {
         this.healthCheckId = healthCheckId;
     }
 
-    public RecordSet withHealthCheckId(String healthCheckId) {
+    public RecordSet withHealthCheckId(CharSequence healthCheckId) {
         this.healthCheckId = healthCheckId;
         return this;
     }
@@ -268,7 +268,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public String getHostedZoneId() {
+    public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
 
@@ -277,11 +277,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public void setHostedZoneId(String hostedZoneId) {
+    public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
 
-    public RecordSet withHostedZoneId(String hostedZoneId) {
+    public RecordSet withHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
         return this;
     }
@@ -291,7 +291,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HostedZoneName")
-    public String getHostedZoneName() {
+    public CharSequence getHostedZoneName() {
         return hostedZoneName;
     }
 
@@ -300,11 +300,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("HostedZoneName")
-    public void setHostedZoneName(String hostedZoneName) {
+    public void setHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
     }
 
-    public RecordSet withHostedZoneName(String hostedZoneName) {
+    public RecordSet withHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
         return this;
     }
@@ -314,7 +314,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -323,11 +323,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public RecordSet withName(String name) {
+    public RecordSet withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -337,7 +337,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Region")
-    public String getRegion() {
+    public CharSequence getRegion() {
         return region;
     }
 
@@ -346,11 +346,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Region")
-    public void setRegion(String region) {
+    public void setRegion(CharSequence region) {
         this.region = region;
     }
 
-    public RecordSet withRegion(String region) {
+    public RecordSet withRegion(CharSequence region) {
         this.region = region;
         return this;
     }
@@ -360,7 +360,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("ResourceRecords")
-    public List<String> getResourceRecords() {
+    public List<CharSequence> getResourceRecords() {
         return resourceRecords;
     }
 
@@ -369,11 +369,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("ResourceRecords")
-    public void setResourceRecords(List<String> resourceRecords) {
+    public void setResourceRecords(List<CharSequence> resourceRecords) {
         this.resourceRecords = resourceRecords;
     }
 
-    public RecordSet withResourceRecords(List<String> resourceRecords) {
+    public RecordSet withResourceRecords(List<CharSequence> resourceRecords) {
         this.resourceRecords = resourceRecords;
         return this;
     }
@@ -383,7 +383,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("SetIdentifier")
-    public String getSetIdentifier() {
+    public CharSequence getSetIdentifier() {
         return setIdentifier;
     }
 
@@ -392,11 +392,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("SetIdentifier")
-    public void setSetIdentifier(String setIdentifier) {
+    public void setSetIdentifier(CharSequence setIdentifier) {
         this.setIdentifier = setIdentifier;
     }
 
-    public RecordSet withSetIdentifier(String setIdentifier) {
+    public RecordSet withSetIdentifier(CharSequence setIdentifier) {
         this.setIdentifier = setIdentifier;
         return this;
     }
@@ -406,7 +406,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("TTL")
-    public String getTTL() {
+    public CharSequence getTTL() {
         return tTL;
     }
 
@@ -415,11 +415,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("TTL")
-    public void setTTL(String tTL) {
+    public void setTTL(CharSequence tTL) {
         this.tTL = tTL;
     }
 
-    public RecordSet withTTL(String tTL) {
+    public RecordSet withTTL(CharSequence tTL) {
         this.tTL = tTL;
         return this;
     }
@@ -429,7 +429,7 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -438,11 +438,11 @@ public class RecordSet {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public RecordSet withType(String type) {
+    public RecordSet withType(CharSequence type) {
         this.type = type;
         return this;
     }

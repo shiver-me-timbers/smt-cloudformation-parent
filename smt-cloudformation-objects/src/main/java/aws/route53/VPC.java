@@ -29,21 +29,21 @@ public class VPC {
      */
     @JsonProperty("VPCId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcid")
-    private String vPCId;
+    private CharSequence vPCId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcregion
      * 
      */
     @JsonProperty("VPCRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcregion")
-    private String vPCRegion;
+    private CharSequence vPCRegion;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcid
      * 
      */
     @JsonProperty("VPCId")
-    public String getVPCId() {
+    public CharSequence getVPCId() {
         return vPCId;
     }
 
@@ -52,11 +52,11 @@ public class VPC {
      * 
      */
     @JsonProperty("VPCId")
-    public void setVPCId(String vPCId) {
+    public void setVPCId(CharSequence vPCId) {
         this.vPCId = vPCId;
     }
 
-    public VPC withVPCId(String vPCId) {
+    public VPC withVPCId(CharSequence vPCId) {
         this.vPCId = vPCId;
         return this;
     }
@@ -66,7 +66,7 @@ public class VPC {
      * 
      */
     @JsonProperty("VPCRegion")
-    public String getVPCRegion() {
+    public CharSequence getVPCRegion() {
         return vPCRegion;
     }
 
@@ -75,11 +75,11 @@ public class VPC {
      * 
      */
     @JsonProperty("VPCRegion")
-    public void setVPCRegion(String vPCRegion) {
+    public void setVPCRegion(CharSequence vPCRegion) {
         this.vPCRegion = vPCRegion;
     }
 
-    public VPC withVPCRegion(String vPCRegion) {
+    public VPC withVPCRegion(CharSequence vPCRegion) {
         this.vPCRegion = vPCRegion;
         return this;
     }

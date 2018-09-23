@@ -29,7 +29,7 @@ public class ScalingAction {
      */
     @JsonProperty("Market")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingaction.html#cfn-elasticmapreduce-cluster-scalingaction-market")
-    private String market;
+    private CharSequence market;
     /**
      * SimpleScalingPolicyConfiguration
      * <p>
@@ -45,7 +45,7 @@ public class ScalingAction {
      * 
      */
     @JsonProperty("Market")
-    public String getMarket() {
+    public CharSequence getMarket() {
         return market;
     }
 
@@ -54,11 +54,11 @@ public class ScalingAction {
      * 
      */
     @JsonProperty("Market")
-    public void setMarket(String market) {
+    public void setMarket(CharSequence market) {
         this.market = market;
     }
 
-    public ScalingAction withMarket(String market) {
+    public ScalingAction withMarket(CharSequence market) {
         this.market = market;
         return this;
     }

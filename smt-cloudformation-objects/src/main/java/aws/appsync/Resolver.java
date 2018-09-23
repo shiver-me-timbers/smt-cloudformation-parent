@@ -35,63 +35,63 @@ public class Resolver {
      */
     @JsonProperty("ResponseMappingTemplateS3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplates3location")
-    private String responseMappingTemplateS3Location;
+    private CharSequence responseMappingTemplateS3Location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename
      * 
      */
     @JsonProperty("TypeName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename")
-    private String typeName;
+    private CharSequence typeName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
      */
     @JsonProperty("DataSourceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename")
-    private String dataSourceName;
+    private CharSequence dataSourceName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplate
      * 
      */
     @JsonProperty("RequestMappingTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplate")
-    private String requestMappingTemplate;
+    private CharSequence requestMappingTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate
      * 
      */
     @JsonProperty("ResponseMappingTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate")
-    private String responseMappingTemplate;
+    private CharSequence responseMappingTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
      */
     @JsonProperty("RequestMappingTemplateS3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location")
-    private String requestMappingTemplateS3Location;
+    private CharSequence requestMappingTemplateS3Location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-apiid
      * 
      */
     @JsonProperty("ApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-apiid")
-    private String apiId;
+    private CharSequence apiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-fieldname
      * 
      */
     @JsonProperty("FieldName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-fieldname")
-    private String fieldName;
+    private CharSequence fieldName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplates3location
      * 
      */
     @JsonProperty("ResponseMappingTemplateS3Location")
-    public String getResponseMappingTemplateS3Location() {
+    public CharSequence getResponseMappingTemplateS3Location() {
         return responseMappingTemplateS3Location;
     }
 
@@ -100,11 +100,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("ResponseMappingTemplateS3Location")
-    public void setResponseMappingTemplateS3Location(String responseMappingTemplateS3Location) {
+    public void setResponseMappingTemplateS3Location(CharSequence responseMappingTemplateS3Location) {
         this.responseMappingTemplateS3Location = responseMappingTemplateS3Location;
     }
 
-    public Resolver withResponseMappingTemplateS3Location(String responseMappingTemplateS3Location) {
+    public Resolver withResponseMappingTemplateS3Location(CharSequence responseMappingTemplateS3Location) {
         this.responseMappingTemplateS3Location = responseMappingTemplateS3Location;
         return this;
     }
@@ -114,7 +114,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("TypeName")
-    public String getTypeName() {
+    public CharSequence getTypeName() {
         return typeName;
     }
 
@@ -123,11 +123,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("TypeName")
-    public void setTypeName(String typeName) {
+    public void setTypeName(CharSequence typeName) {
         this.typeName = typeName;
     }
 
-    public Resolver withTypeName(String typeName) {
+    public Resolver withTypeName(CharSequence typeName) {
         this.typeName = typeName;
         return this;
     }
@@ -137,7 +137,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("DataSourceName")
-    public String getDataSourceName() {
+    public CharSequence getDataSourceName() {
         return dataSourceName;
     }
 
@@ -146,11 +146,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("DataSourceName")
-    public void setDataSourceName(String dataSourceName) {
+    public void setDataSourceName(CharSequence dataSourceName) {
         this.dataSourceName = dataSourceName;
     }
 
-    public Resolver withDataSourceName(String dataSourceName) {
+    public Resolver withDataSourceName(CharSequence dataSourceName) {
         this.dataSourceName = dataSourceName;
         return this;
     }
@@ -160,7 +160,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("RequestMappingTemplate")
-    public String getRequestMappingTemplate() {
+    public CharSequence getRequestMappingTemplate() {
         return requestMappingTemplate;
     }
 
@@ -169,11 +169,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("RequestMappingTemplate")
-    public void setRequestMappingTemplate(String requestMappingTemplate) {
+    public void setRequestMappingTemplate(CharSequence requestMappingTemplate) {
         this.requestMappingTemplate = requestMappingTemplate;
     }
 
-    public Resolver withRequestMappingTemplate(String requestMappingTemplate) {
+    public Resolver withRequestMappingTemplate(CharSequence requestMappingTemplate) {
         this.requestMappingTemplate = requestMappingTemplate;
         return this;
     }
@@ -183,7 +183,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("ResponseMappingTemplate")
-    public String getResponseMappingTemplate() {
+    public CharSequence getResponseMappingTemplate() {
         return responseMappingTemplate;
     }
 
@@ -192,11 +192,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("ResponseMappingTemplate")
-    public void setResponseMappingTemplate(String responseMappingTemplate) {
+    public void setResponseMappingTemplate(CharSequence responseMappingTemplate) {
         this.responseMappingTemplate = responseMappingTemplate;
     }
 
-    public Resolver withResponseMappingTemplate(String responseMappingTemplate) {
+    public Resolver withResponseMappingTemplate(CharSequence responseMappingTemplate) {
         this.responseMappingTemplate = responseMappingTemplate;
         return this;
     }
@@ -206,7 +206,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("RequestMappingTemplateS3Location")
-    public String getRequestMappingTemplateS3Location() {
+    public CharSequence getRequestMappingTemplateS3Location() {
         return requestMappingTemplateS3Location;
     }
 
@@ -215,11 +215,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("RequestMappingTemplateS3Location")
-    public void setRequestMappingTemplateS3Location(String requestMappingTemplateS3Location) {
+    public void setRequestMappingTemplateS3Location(CharSequence requestMappingTemplateS3Location) {
         this.requestMappingTemplateS3Location = requestMappingTemplateS3Location;
     }
 
-    public Resolver withRequestMappingTemplateS3Location(String requestMappingTemplateS3Location) {
+    public Resolver withRequestMappingTemplateS3Location(CharSequence requestMappingTemplateS3Location) {
         this.requestMappingTemplateS3Location = requestMappingTemplateS3Location;
         return this;
     }
@@ -229,7 +229,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("ApiId")
-    public String getApiId() {
+    public CharSequence getApiId() {
         return apiId;
     }
 
@@ -238,11 +238,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("ApiId")
-    public void setApiId(String apiId) {
+    public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
 
-    public Resolver withApiId(String apiId) {
+    public Resolver withApiId(CharSequence apiId) {
         this.apiId = apiId;
         return this;
     }
@@ -252,7 +252,7 @@ public class Resolver {
      * 
      */
     @JsonProperty("FieldName")
-    public String getFieldName() {
+    public CharSequence getFieldName() {
         return fieldName;
     }
 
@@ -261,11 +261,11 @@ public class Resolver {
      * 
      */
     @JsonProperty("FieldName")
-    public void setFieldName(String fieldName) {
+    public void setFieldName(CharSequence fieldName) {
         this.fieldName = fieldName;
     }
 
-    public Resolver withFieldName(String fieldName) {
+    public Resolver withFieldName(CharSequence fieldName) {
         this.fieldName = fieldName;
         return this;
     }

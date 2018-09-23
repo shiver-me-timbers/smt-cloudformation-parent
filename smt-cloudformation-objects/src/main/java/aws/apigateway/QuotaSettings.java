@@ -44,7 +44,7 @@ public class QuotaSettings {
      */
     @JsonProperty("Period")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period")
-    private String period;
+    private CharSequence period;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit
@@ -97,7 +97,7 @@ public class QuotaSettings {
      * 
      */
     @JsonProperty("Period")
-    public String getPeriod() {
+    public CharSequence getPeriod() {
         return period;
     }
 
@@ -106,11 +106,11 @@ public class QuotaSettings {
      * 
      */
     @JsonProperty("Period")
-    public void setPeriod(String period) {
+    public void setPeriod(CharSequence period) {
         this.period = period;
     }
 
-    public QuotaSettings withPeriod(String period) {
+    public QuotaSettings withPeriod(CharSequence period) {
         this.period = period;
         return this;
     }

@@ -29,21 +29,21 @@ public class SubnetRouteTableAssociation {
      */
     @JsonProperty("RouteTableId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid")
-    private String routeTableId;
+    private CharSequence routeTableId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid
      * 
      */
     @JsonProperty("RouteTableId")
-    public String getRouteTableId() {
+    public CharSequence getRouteTableId() {
         return routeTableId;
     }
 
@@ -52,11 +52,11 @@ public class SubnetRouteTableAssociation {
      * 
      */
     @JsonProperty("RouteTableId")
-    public void setRouteTableId(String routeTableId) {
+    public void setRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
     }
 
-    public SubnetRouteTableAssociation withRouteTableId(String routeTableId) {
+    public SubnetRouteTableAssociation withRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
         return this;
     }
@@ -66,7 +66,7 @@ public class SubnetRouteTableAssociation {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -75,11 +75,11 @@ public class SubnetRouteTableAssociation {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public SubnetRouteTableAssociation withSubnetId(String subnetId) {
+    public SubnetRouteTableAssociation withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

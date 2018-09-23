@@ -65,14 +65,14 @@ public class MethodSetting {
      */
     @JsonProperty("HttpMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-httpmethod")
-    private String httpMethod;
+    private CharSequence httpMethod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-logginglevel
      * 
      */
     @JsonProperty("LoggingLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-logginglevel")
-    private String loggingLevel;
+    private CharSequence loggingLevel;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-metricsenabled
      * 
@@ -86,7 +86,7 @@ public class MethodSetting {
      */
     @JsonProperty("ResourcePath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-resourcepath")
-    private String resourcePath;
+    private CharSequence resourcePath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-throttlingburstlimit
      * 
@@ -199,7 +199,7 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("HttpMethod")
-    public String getHttpMethod() {
+    public CharSequence getHttpMethod() {
         return httpMethod;
     }
 
@@ -208,11 +208,11 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("HttpMethod")
-    public void setHttpMethod(String httpMethod) {
+    public void setHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
     }
 
-    public MethodSetting withHttpMethod(String httpMethod) {
+    public MethodSetting withHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
         return this;
     }
@@ -222,7 +222,7 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("LoggingLevel")
-    public String getLoggingLevel() {
+    public CharSequence getLoggingLevel() {
         return loggingLevel;
     }
 
@@ -231,11 +231,11 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("LoggingLevel")
-    public void setLoggingLevel(String loggingLevel) {
+    public void setLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
     }
 
-    public MethodSetting withLoggingLevel(String loggingLevel) {
+    public MethodSetting withLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
         return this;
     }
@@ -268,7 +268,7 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("ResourcePath")
-    public String getResourcePath() {
+    public CharSequence getResourcePath() {
         return resourcePath;
     }
 
@@ -277,11 +277,11 @@ public class MethodSetting {
      * 
      */
     @JsonProperty("ResourcePath")
-    public void setResourcePath(String resourcePath) {
+    public void setResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
     }
 
-    public MethodSetting withResourcePath(String resourcePath) {
+    public MethodSetting withResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
         return this;
     }

@@ -28,14 +28,14 @@ public class CloudFrontOriginAccessIdentityConfig {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html#cfn-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig-comment")
-    private String comment;
+    private CharSequence comment;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html#cfn-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig-comment
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -44,11 +44,11 @@ public class CloudFrontOriginAccessIdentityConfig {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public CloudFrontOriginAccessIdentityConfig withComment(String comment) {
+    public CloudFrontOriginAccessIdentityConfig withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }

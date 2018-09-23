@@ -29,21 +29,21 @@ public class LifecyclePolicy {
      */
     @JsonProperty("LifecyclePolicyText")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext")
-    private String lifecyclePolicyText;
+    private CharSequence lifecyclePolicyText;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid
      * 
      */
     @JsonProperty("RegistryId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid")
-    private String registryId;
+    private CharSequence registryId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext
      * 
      */
     @JsonProperty("LifecyclePolicyText")
-    public String getLifecyclePolicyText() {
+    public CharSequence getLifecyclePolicyText() {
         return lifecyclePolicyText;
     }
 
@@ -52,11 +52,11 @@ public class LifecyclePolicy {
      * 
      */
     @JsonProperty("LifecyclePolicyText")
-    public void setLifecyclePolicyText(String lifecyclePolicyText) {
+    public void setLifecyclePolicyText(CharSequence lifecyclePolicyText) {
         this.lifecyclePolicyText = lifecyclePolicyText;
     }
 
-    public LifecyclePolicy withLifecyclePolicyText(String lifecyclePolicyText) {
+    public LifecyclePolicy withLifecyclePolicyText(CharSequence lifecyclePolicyText) {
         this.lifecyclePolicyText = lifecyclePolicyText;
         return this;
     }
@@ -66,7 +66,7 @@ public class LifecyclePolicy {
      * 
      */
     @JsonProperty("RegistryId")
-    public String getRegistryId() {
+    public CharSequence getRegistryId() {
         return registryId;
     }
 
@@ -75,11 +75,11 @@ public class LifecyclePolicy {
      * 
      */
     @JsonProperty("RegistryId")
-    public void setRegistryId(String registryId) {
+    public void setRegistryId(CharSequence registryId) {
         this.registryId = registryId;
     }
 
-    public LifecyclePolicy withRegistryId(String registryId) {
+    public LifecyclePolicy withRegistryId(CharSequence registryId) {
         this.registryId = registryId;
         return this;
     }

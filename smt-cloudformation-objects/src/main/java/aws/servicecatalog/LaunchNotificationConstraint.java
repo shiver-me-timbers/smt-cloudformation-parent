@@ -34,42 +34,42 @@ public class LaunchNotificationConstraint {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-notificationarns
      * 
      */
     @JsonProperty("NotificationArns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-notificationarns")
-    private List<String> notificationArns = new ArrayList<String>();
+    private List<CharSequence> notificationArns = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-productid
      * 
      */
     @JsonProperty("ProductId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-productid")
-    private String productId;
+    private CharSequence productId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-description
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -78,11 +78,11 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public LaunchNotificationConstraint withDescription(String description) {
+    public LaunchNotificationConstraint withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -92,7 +92,7 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("NotificationArns")
-    public List<String> getNotificationArns() {
+    public List<CharSequence> getNotificationArns() {
         return notificationArns;
     }
 
@@ -101,11 +101,11 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("NotificationArns")
-    public void setNotificationArns(List<String> notificationArns) {
+    public void setNotificationArns(List<CharSequence> notificationArns) {
         this.notificationArns = notificationArns;
     }
 
-    public LaunchNotificationConstraint withNotificationArns(List<String> notificationArns) {
+    public LaunchNotificationConstraint withNotificationArns(List<CharSequence> notificationArns) {
         this.notificationArns = notificationArns;
         return this;
     }
@@ -115,7 +115,7 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -124,11 +124,11 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public LaunchNotificationConstraint withAcceptLanguage(String acceptLanguage) {
+    public LaunchNotificationConstraint withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -138,7 +138,7 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -147,11 +147,11 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public LaunchNotificationConstraint withPortfolioId(String portfolioId) {
+    public LaunchNotificationConstraint withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }
@@ -161,7 +161,7 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public String getProductId() {
+    public CharSequence getProductId() {
         return productId;
     }
 
@@ -170,11 +170,11 @@ public class LaunchNotificationConstraint {
      * 
      */
     @JsonProperty("ProductId")
-    public void setProductId(String productId) {
+    public void setProductId(CharSequence productId) {
         this.productId = productId;
     }
 
-    public LaunchNotificationConstraint withProductId(String productId) {
+    public LaunchNotificationConstraint withProductId(CharSequence productId) {
         this.productId = productId;
         return this;
     }

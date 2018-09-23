@@ -31,14 +31,14 @@ public class OpenIDConnectConfig {
      */
     @JsonProperty("Issuer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-issuer")
-    private String issuer;
+    private CharSequence issuer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-clientid
      * 
      */
     @JsonProperty("ClientId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-clientid")
-    private String clientId;
+    private CharSequence clientId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-authttl
      * 
@@ -59,7 +59,7 @@ public class OpenIDConnectConfig {
      * 
      */
     @JsonProperty("Issuer")
-    public String getIssuer() {
+    public CharSequence getIssuer() {
         return issuer;
     }
 
@@ -68,11 +68,11 @@ public class OpenIDConnectConfig {
      * 
      */
     @JsonProperty("Issuer")
-    public void setIssuer(String issuer) {
+    public void setIssuer(CharSequence issuer) {
         this.issuer = issuer;
     }
 
-    public OpenIDConnectConfig withIssuer(String issuer) {
+    public OpenIDConnectConfig withIssuer(CharSequence issuer) {
         this.issuer = issuer;
         return this;
     }
@@ -82,7 +82,7 @@ public class OpenIDConnectConfig {
      * 
      */
     @JsonProperty("ClientId")
-    public String getClientId() {
+    public CharSequence getClientId() {
         return clientId;
     }
 
@@ -91,11 +91,11 @@ public class OpenIDConnectConfig {
      * 
      */
     @JsonProperty("ClientId")
-    public void setClientId(String clientId) {
+    public void setClientId(CharSequence clientId) {
         this.clientId = clientId;
     }
 
-    public OpenIDConnectConfig withClientId(String clientId) {
+    public OpenIDConnectConfig withClientId(CharSequence clientId) {
         this.clientId = clientId;
         return this;
     }

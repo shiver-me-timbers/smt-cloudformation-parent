@@ -38,7 +38,7 @@ public class SsmAssociation {
      */
     @JsonProperty("DocumentName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname")
-    private String documentName;
+    private CharSequence documentName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
@@ -68,7 +68,7 @@ public class SsmAssociation {
      * 
      */
     @JsonProperty("DocumentName")
-    public String getDocumentName() {
+    public CharSequence getDocumentName() {
         return documentName;
     }
 
@@ -77,11 +77,11 @@ public class SsmAssociation {
      * 
      */
     @JsonProperty("DocumentName")
-    public void setDocumentName(String documentName) {
+    public void setDocumentName(CharSequence documentName) {
         this.documentName = documentName;
     }
 
-    public SsmAssociation withDocumentName(String documentName) {
+    public SsmAssociation withDocumentName(CharSequence documentName) {
         this.documentName = documentName;
         return this;
     }

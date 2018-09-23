@@ -29,21 +29,21 @@ public class HostEntry {
      */
     @JsonProperty("Hostname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname")
-    private String hostname;
+    private CharSequence hostname;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress
      * 
      */
     @JsonProperty("IpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress")
-    private String ipAddress;
+    private CharSequence ipAddress;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname
      * 
      */
     @JsonProperty("Hostname")
-    public String getHostname() {
+    public CharSequence getHostname() {
         return hostname;
     }
 
@@ -52,11 +52,11 @@ public class HostEntry {
      * 
      */
     @JsonProperty("Hostname")
-    public void setHostname(String hostname) {
+    public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
 
-    public HostEntry withHostname(String hostname) {
+    public HostEntry withHostname(CharSequence hostname) {
         this.hostname = hostname;
         return this;
     }
@@ -66,7 +66,7 @@ public class HostEntry {
      * 
      */
     @JsonProperty("IpAddress")
-    public String getIpAddress() {
+    public CharSequence getIpAddress() {
         return ipAddress;
     }
 
@@ -75,11 +75,11 @@ public class HostEntry {
      * 
      */
     @JsonProperty("IpAddress")
-    public void setIpAddress(String ipAddress) {
+    public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
 
-    public HostEntry withIpAddress(String ipAddress) {
+    public HostEntry withIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
         return this;
     }

@@ -36,14 +36,14 @@ public class ApiKey {
      */
     @JsonProperty("CustomerId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-customerid")
-    private String customerId;
+    private CharSequence customerId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-enabled
      * 
@@ -64,7 +64,7 @@ public class ApiKey {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-stagekeys
      * 
@@ -79,7 +79,7 @@ public class ApiKey {
      * 
      */
     @JsonProperty("CustomerId")
-    public String getCustomerId() {
+    public CharSequence getCustomerId() {
         return customerId;
     }
 
@@ -88,11 +88,11 @@ public class ApiKey {
      * 
      */
     @JsonProperty("CustomerId")
-    public void setCustomerId(String customerId) {
+    public void setCustomerId(CharSequence customerId) {
         this.customerId = customerId;
     }
 
-    public ApiKey withCustomerId(String customerId) {
+    public ApiKey withCustomerId(CharSequence customerId) {
         this.customerId = customerId;
         return this;
     }
@@ -102,7 +102,7 @@ public class ApiKey {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -111,11 +111,11 @@ public class ApiKey {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ApiKey withDescription(String description) {
+    public ApiKey withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -171,7 +171,7 @@ public class ApiKey {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -180,11 +180,11 @@ public class ApiKey {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ApiKey withName(String name) {
+    public ApiKey withName(CharSequence name) {
         this.name = name;
         return this;
     }

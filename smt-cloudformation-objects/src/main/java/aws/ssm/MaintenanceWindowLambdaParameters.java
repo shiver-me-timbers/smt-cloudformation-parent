@@ -30,28 +30,28 @@ public class MaintenanceWindowLambdaParameters {
      */
     @JsonProperty("ClientContext")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext")
-    private String clientContext;
+    private CharSequence clientContext;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier
      * 
      */
     @JsonProperty("Qualifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier")
-    private String qualifier;
+    private CharSequence qualifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload
      * 
      */
     @JsonProperty("Payload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload")
-    private String payload;
+    private CharSequence payload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext
      * 
      */
     @JsonProperty("ClientContext")
-    public String getClientContext() {
+    public CharSequence getClientContext() {
         return clientContext;
     }
 
@@ -60,11 +60,11 @@ public class MaintenanceWindowLambdaParameters {
      * 
      */
     @JsonProperty("ClientContext")
-    public void setClientContext(String clientContext) {
+    public void setClientContext(CharSequence clientContext) {
         this.clientContext = clientContext;
     }
 
-    public MaintenanceWindowLambdaParameters withClientContext(String clientContext) {
+    public MaintenanceWindowLambdaParameters withClientContext(CharSequence clientContext) {
         this.clientContext = clientContext;
         return this;
     }
@@ -74,7 +74,7 @@ public class MaintenanceWindowLambdaParameters {
      * 
      */
     @JsonProperty("Qualifier")
-    public String getQualifier() {
+    public CharSequence getQualifier() {
         return qualifier;
     }
 
@@ -83,11 +83,11 @@ public class MaintenanceWindowLambdaParameters {
      * 
      */
     @JsonProperty("Qualifier")
-    public void setQualifier(String qualifier) {
+    public void setQualifier(CharSequence qualifier) {
         this.qualifier = qualifier;
     }
 
-    public MaintenanceWindowLambdaParameters withQualifier(String qualifier) {
+    public MaintenanceWindowLambdaParameters withQualifier(CharSequence qualifier) {
         this.qualifier = qualifier;
         return this;
     }
@@ -97,7 +97,7 @@ public class MaintenanceWindowLambdaParameters {
      * 
      */
     @JsonProperty("Payload")
-    public String getPayload() {
+    public CharSequence getPayload() {
         return payload;
     }
 
@@ -106,11 +106,11 @@ public class MaintenanceWindowLambdaParameters {
      * 
      */
     @JsonProperty("Payload")
-    public void setPayload(String payload) {
+    public void setPayload(CharSequence payload) {
         this.payload = payload;
     }
 
-    public MaintenanceWindowLambdaParameters withPayload(String payload) {
+    public MaintenanceWindowLambdaParameters withPayload(CharSequence payload) {
         this.payload = payload;
         return this;
     }

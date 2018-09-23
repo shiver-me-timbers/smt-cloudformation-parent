@@ -29,21 +29,21 @@ public class RoutingRuleCondition {
      */
     @JsonProperty("HttpErrorCodeReturnedEquals")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals")
-    private String httpErrorCodeReturnedEquals;
+    private CharSequence httpErrorCodeReturnedEquals;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals
      * 
      */
     @JsonProperty("KeyPrefixEquals")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals")
-    private String keyPrefixEquals;
+    private CharSequence keyPrefixEquals;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals
      * 
      */
     @JsonProperty("HttpErrorCodeReturnedEquals")
-    public String getHttpErrorCodeReturnedEquals() {
+    public CharSequence getHttpErrorCodeReturnedEquals() {
         return httpErrorCodeReturnedEquals;
     }
 
@@ -52,11 +52,11 @@ public class RoutingRuleCondition {
      * 
      */
     @JsonProperty("HttpErrorCodeReturnedEquals")
-    public void setHttpErrorCodeReturnedEquals(String httpErrorCodeReturnedEquals) {
+    public void setHttpErrorCodeReturnedEquals(CharSequence httpErrorCodeReturnedEquals) {
         this.httpErrorCodeReturnedEquals = httpErrorCodeReturnedEquals;
     }
 
-    public RoutingRuleCondition withHttpErrorCodeReturnedEquals(String httpErrorCodeReturnedEquals) {
+    public RoutingRuleCondition withHttpErrorCodeReturnedEquals(CharSequence httpErrorCodeReturnedEquals) {
         this.httpErrorCodeReturnedEquals = httpErrorCodeReturnedEquals;
         return this;
     }
@@ -66,7 +66,7 @@ public class RoutingRuleCondition {
      * 
      */
     @JsonProperty("KeyPrefixEquals")
-    public String getKeyPrefixEquals() {
+    public CharSequence getKeyPrefixEquals() {
         return keyPrefixEquals;
     }
 
@@ -75,11 +75,11 @@ public class RoutingRuleCondition {
      * 
      */
     @JsonProperty("KeyPrefixEquals")
-    public void setKeyPrefixEquals(String keyPrefixEquals) {
+    public void setKeyPrefixEquals(CharSequence keyPrefixEquals) {
         this.keyPrefixEquals = keyPrefixEquals;
     }
 
-    public RoutingRuleCondition withKeyPrefixEquals(String keyPrefixEquals) {
+    public RoutingRuleCondition withKeyPrefixEquals(CharSequence keyPrefixEquals) {
         this.keyPrefixEquals = keyPrefixEquals;
         return this;
     }

@@ -33,7 +33,7 @@ public class KernelCapabilities {
     @JsonProperty("Add")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add")
-    private Set<String> add = new LinkedHashSet<String>();
+    private Set<CharSequence> add = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop
      * 
@@ -41,14 +41,14 @@ public class KernelCapabilities {
     @JsonProperty("Drop")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop")
-    private Set<String> drop = new LinkedHashSet<String>();
+    private Set<CharSequence> drop = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add
      * 
      */
     @JsonProperty("Add")
-    public Set<String> getAdd() {
+    public Set<CharSequence> getAdd() {
         return add;
     }
 
@@ -57,11 +57,11 @@ public class KernelCapabilities {
      * 
      */
     @JsonProperty("Add")
-    public void setAdd(Set<String> add) {
+    public void setAdd(Set<CharSequence> add) {
         this.add = add;
     }
 
-    public KernelCapabilities withAdd(Set<String> add) {
+    public KernelCapabilities withAdd(Set<CharSequence> add) {
         this.add = add;
         return this;
     }
@@ -71,7 +71,7 @@ public class KernelCapabilities {
      * 
      */
     @JsonProperty("Drop")
-    public Set<String> getDrop() {
+    public Set<CharSequence> getDrop() {
         return drop;
     }
 
@@ -80,11 +80,11 @@ public class KernelCapabilities {
      * 
      */
     @JsonProperty("Drop")
-    public void setDrop(Set<String> drop) {
+    public void setDrop(Set<CharSequence> drop) {
         this.drop = drop;
     }
 
-    public KernelCapabilities withDrop(Set<String> drop) {
+    public KernelCapabilities withDrop(Set<CharSequence> drop) {
         this.drop = drop;
         return this;
     }

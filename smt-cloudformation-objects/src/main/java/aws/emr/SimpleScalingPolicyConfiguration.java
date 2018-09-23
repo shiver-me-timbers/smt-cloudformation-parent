@@ -30,7 +30,7 @@ public class SimpleScalingPolicyConfiguration {
      */
     @JsonProperty("AdjustmentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-adjustmenttype")
-    private String adjustmentType;
+    private CharSequence adjustmentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-cooldown
      * 
@@ -51,7 +51,7 @@ public class SimpleScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public String getAdjustmentType() {
+    public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
 
@@ -60,11 +60,11 @@ public class SimpleScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public void setAdjustmentType(String adjustmentType) {
+    public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
 
-    public SimpleScalingPolicyConfiguration withAdjustmentType(String adjustmentType) {
+    public SimpleScalingPolicyConfiguration withAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
         return this;
     }

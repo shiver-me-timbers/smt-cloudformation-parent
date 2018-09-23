@@ -31,7 +31,7 @@ public class Step {
      */
     @JsonProperty("ActionOnFailure")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-actiononfailure")
-    private String actionOnFailure;
+    private CharSequence actionOnFailure;
     /**
      * HadoopJarStepConfig
      * <p>
@@ -47,21 +47,21 @@ public class Step {
      */
     @JsonProperty("JobFlowId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-jobflowid")
-    private String jobFlowId;
+    private CharSequence jobFlowId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-actiononfailure
      * 
      */
     @JsonProperty("ActionOnFailure")
-    public String getActionOnFailure() {
+    public CharSequence getActionOnFailure() {
         return actionOnFailure;
     }
 
@@ -70,11 +70,11 @@ public class Step {
      * 
      */
     @JsonProperty("ActionOnFailure")
-    public void setActionOnFailure(String actionOnFailure) {
+    public void setActionOnFailure(CharSequence actionOnFailure) {
         this.actionOnFailure = actionOnFailure;
     }
 
-    public Step withActionOnFailure(String actionOnFailure) {
+    public Step withActionOnFailure(CharSequence actionOnFailure) {
         this.actionOnFailure = actionOnFailure;
         return this;
     }
@@ -111,7 +111,7 @@ public class Step {
      * 
      */
     @JsonProperty("JobFlowId")
-    public String getJobFlowId() {
+    public CharSequence getJobFlowId() {
         return jobFlowId;
     }
 
@@ -120,11 +120,11 @@ public class Step {
      * 
      */
     @JsonProperty("JobFlowId")
-    public void setJobFlowId(String jobFlowId) {
+    public void setJobFlowId(CharSequence jobFlowId) {
         this.jobFlowId = jobFlowId;
     }
 
-    public Step withJobFlowId(String jobFlowId) {
+    public Step withJobFlowId(CharSequence jobFlowId) {
         this.jobFlowId = jobFlowId;
         return this;
     }
@@ -134,7 +134,7 @@ public class Step {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -143,11 +143,11 @@ public class Step {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Step withName(String name) {
+    public Step withName(CharSequence name) {
         this.name = name;
         return this;
     }

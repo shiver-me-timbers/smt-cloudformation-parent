@@ -38,7 +38,7 @@ public class SqlInjectionMatchTuple {
      */
     @JsonProperty("TextTransformation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation")
-    private String textTransformation;
+    private CharSequence textTransformation;
 
     /**
      * FieldToMatch
@@ -72,7 +72,7 @@ public class SqlInjectionMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public String getTextTransformation() {
+    public CharSequence getTextTransformation() {
         return textTransformation;
     }
 
@@ -81,11 +81,11 @@ public class SqlInjectionMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public void setTextTransformation(String textTransformation) {
+    public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
 
-    public SqlInjectionMatchTuple withTextTransformation(String textTransformation) {
+    public SqlInjectionMatchTuple withTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
         return this;
     }

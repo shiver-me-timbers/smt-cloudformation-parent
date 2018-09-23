@@ -29,21 +29,21 @@ public class NumberAttributeConstraints {
      */
     @JsonProperty("MinValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue")
-    private String minValue;
+    private CharSequence minValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue
      * 
      */
     @JsonProperty("MaxValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue")
-    private String maxValue;
+    private CharSequence maxValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue
      * 
      */
     @JsonProperty("MinValue")
-    public String getMinValue() {
+    public CharSequence getMinValue() {
         return minValue;
     }
 
@@ -52,11 +52,11 @@ public class NumberAttributeConstraints {
      * 
      */
     @JsonProperty("MinValue")
-    public void setMinValue(String minValue) {
+    public void setMinValue(CharSequence minValue) {
         this.minValue = minValue;
     }
 
-    public NumberAttributeConstraints withMinValue(String minValue) {
+    public NumberAttributeConstraints withMinValue(CharSequence minValue) {
         this.minValue = minValue;
         return this;
     }
@@ -66,7 +66,7 @@ public class NumberAttributeConstraints {
      * 
      */
     @JsonProperty("MaxValue")
-    public String getMaxValue() {
+    public CharSequence getMaxValue() {
         return maxValue;
     }
 
@@ -75,11 +75,11 @@ public class NumberAttributeConstraints {
      * 
      */
     @JsonProperty("MaxValue")
-    public void setMaxValue(String maxValue) {
+    public void setMaxValue(CharSequence maxValue) {
         this.maxValue = maxValue;
     }
 
-    public NumberAttributeConstraints withMaxValue(String maxValue) {
+    public NumberAttributeConstraints withMaxValue(CharSequence maxValue) {
         this.maxValue = maxValue;
         return this;
     }

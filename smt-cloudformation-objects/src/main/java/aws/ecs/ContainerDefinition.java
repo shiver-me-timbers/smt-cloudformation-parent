@@ -60,7 +60,7 @@ public class ContainerDefinition {
     @JsonProperty("Command")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command")
-    private Set<java.lang.String> command = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> command = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-cpu
      * 
@@ -82,7 +82,7 @@ public class ContainerDefinition {
     @JsonProperty("DnsSearchDomains")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnssearchdomains")
-    private Set<java.lang.String> dnsSearchDomains = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> dnsSearchDomains = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnsservers
      * 
@@ -90,7 +90,7 @@ public class ContainerDefinition {
     @JsonProperty("DnsServers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnsservers")
-    private Set<java.lang.String> dnsServers = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> dnsServers = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockerlabels
      * 
@@ -105,7 +105,7 @@ public class ContainerDefinition {
     @JsonProperty("DockerSecurityOptions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockersecurityoptions")
-    private Set<java.lang.String> dockerSecurityOptions = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> dockerSecurityOptions = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-entrypoint
      * 
@@ -113,7 +113,7 @@ public class ContainerDefinition {
     @JsonProperty("EntryPoint")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-entrypoint")
-    private Set<java.lang.String> entryPoint = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> entryPoint = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-environment
      * 
@@ -152,14 +152,14 @@ public class ContainerDefinition {
      */
     @JsonProperty("Hostname")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname")
-    private java.lang.String hostname;
+    private CharSequence hostname;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-image
      * 
      */
     @JsonProperty("Image")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-image")
-    private java.lang.String image;
+    private CharSequence image;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-links
      * 
@@ -167,7 +167,7 @@ public class ContainerDefinition {
     @JsonProperty("Links")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-links")
-    private Set<java.lang.String> links = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> links = new LinkedHashSet<CharSequence>();
     /**
      * LinuxParameters
      * <p>
@@ -214,7 +214,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-name")
-    private java.lang.String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-portmappings
      * 
@@ -251,7 +251,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("User")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-user")
-    private java.lang.String user;
+    private CharSequence user;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom
      * 
@@ -266,14 +266,14 @@ public class ContainerDefinition {
      */
     @JsonProperty("WorkingDirectory")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-workingdirectory")
-    private java.lang.String workingDirectory;
+    private CharSequence workingDirectory;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command
      * 
      */
     @JsonProperty("Command")
-    public Set<java.lang.String> getCommand() {
+    public Set<CharSequence> getCommand() {
         return command;
     }
 
@@ -282,11 +282,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Command")
-    public void setCommand(Set<java.lang.String> command) {
+    public void setCommand(Set<CharSequence> command) {
         this.command = command;
     }
 
-    public ContainerDefinition withCommand(Set<java.lang.String> command) {
+    public ContainerDefinition withCommand(Set<CharSequence> command) {
         this.command = command;
         return this;
     }
@@ -342,7 +342,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DnsSearchDomains")
-    public Set<java.lang.String> getDnsSearchDomains() {
+    public Set<CharSequence> getDnsSearchDomains() {
         return dnsSearchDomains;
     }
 
@@ -351,11 +351,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DnsSearchDomains")
-    public void setDnsSearchDomains(Set<java.lang.String> dnsSearchDomains) {
+    public void setDnsSearchDomains(Set<CharSequence> dnsSearchDomains) {
         this.dnsSearchDomains = dnsSearchDomains;
     }
 
-    public ContainerDefinition withDnsSearchDomains(Set<java.lang.String> dnsSearchDomains) {
+    public ContainerDefinition withDnsSearchDomains(Set<CharSequence> dnsSearchDomains) {
         this.dnsSearchDomains = dnsSearchDomains;
         return this;
     }
@@ -365,7 +365,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DnsServers")
-    public Set<java.lang.String> getDnsServers() {
+    public Set<CharSequence> getDnsServers() {
         return dnsServers;
     }
 
@@ -374,11 +374,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DnsServers")
-    public void setDnsServers(Set<java.lang.String> dnsServers) {
+    public void setDnsServers(Set<CharSequence> dnsServers) {
         this.dnsServers = dnsServers;
     }
 
-    public ContainerDefinition withDnsServers(Set<java.lang.String> dnsServers) {
+    public ContainerDefinition withDnsServers(Set<CharSequence> dnsServers) {
         this.dnsServers = dnsServers;
         return this;
     }
@@ -411,7 +411,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DockerSecurityOptions")
-    public Set<java.lang.String> getDockerSecurityOptions() {
+    public Set<CharSequence> getDockerSecurityOptions() {
         return dockerSecurityOptions;
     }
 
@@ -420,11 +420,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("DockerSecurityOptions")
-    public void setDockerSecurityOptions(Set<java.lang.String> dockerSecurityOptions) {
+    public void setDockerSecurityOptions(Set<CharSequence> dockerSecurityOptions) {
         this.dockerSecurityOptions = dockerSecurityOptions;
     }
 
-    public ContainerDefinition withDockerSecurityOptions(Set<java.lang.String> dockerSecurityOptions) {
+    public ContainerDefinition withDockerSecurityOptions(Set<CharSequence> dockerSecurityOptions) {
         this.dockerSecurityOptions = dockerSecurityOptions;
         return this;
     }
@@ -434,7 +434,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("EntryPoint")
-    public Set<java.lang.String> getEntryPoint() {
+    public Set<CharSequence> getEntryPoint() {
         return entryPoint;
     }
 
@@ -443,11 +443,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("EntryPoint")
-    public void setEntryPoint(Set<java.lang.String> entryPoint) {
+    public void setEntryPoint(Set<CharSequence> entryPoint) {
         this.entryPoint = entryPoint;
     }
 
-    public ContainerDefinition withEntryPoint(Set<java.lang.String> entryPoint) {
+    public ContainerDefinition withEntryPoint(Set<CharSequence> entryPoint) {
         this.entryPoint = entryPoint;
         return this;
     }
@@ -553,7 +553,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Hostname")
-    public java.lang.String getHostname() {
+    public CharSequence getHostname() {
         return hostname;
     }
 
@@ -562,11 +562,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Hostname")
-    public void setHostname(java.lang.String hostname) {
+    public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
 
-    public ContainerDefinition withHostname(java.lang.String hostname) {
+    public ContainerDefinition withHostname(CharSequence hostname) {
         this.hostname = hostname;
         return this;
     }
@@ -576,7 +576,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Image")
-    public java.lang.String getImage() {
+    public CharSequence getImage() {
         return image;
     }
 
@@ -585,11 +585,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Image")
-    public void setImage(java.lang.String image) {
+    public void setImage(CharSequence image) {
         this.image = image;
     }
 
-    public ContainerDefinition withImage(java.lang.String image) {
+    public ContainerDefinition withImage(CharSequence image) {
         this.image = image;
         return this;
     }
@@ -599,7 +599,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Links")
-    public Set<java.lang.String> getLinks() {
+    public Set<CharSequence> getLinks() {
         return links;
     }
 
@@ -608,11 +608,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Links")
-    public void setLinks(Set<java.lang.String> links) {
+    public void setLinks(Set<CharSequence> links) {
         this.links = links;
     }
 
-    public ContainerDefinition withLinks(Set<java.lang.String> links) {
+    public ContainerDefinition withLinks(Set<CharSequence> links) {
         this.links = links;
         return this;
     }
@@ -745,7 +745,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Name")
-    public java.lang.String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -754,11 +754,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("Name")
-    public void setName(java.lang.String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public ContainerDefinition withName(java.lang.String name) {
+    public ContainerDefinition withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -860,7 +860,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("User")
-    public java.lang.String getUser() {
+    public CharSequence getUser() {
         return user;
     }
 
@@ -869,11 +869,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("User")
-    public void setUser(java.lang.String user) {
+    public void setUser(CharSequence user) {
         this.user = user;
     }
 
-    public ContainerDefinition withUser(java.lang.String user) {
+    public ContainerDefinition withUser(CharSequence user) {
         this.user = user;
         return this;
     }
@@ -906,7 +906,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("WorkingDirectory")
-    public java.lang.String getWorkingDirectory() {
+    public CharSequence getWorkingDirectory() {
         return workingDirectory;
     }
 
@@ -915,11 +915,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonProperty("WorkingDirectory")
-    public void setWorkingDirectory(java.lang.String workingDirectory) {
+    public void setWorkingDirectory(CharSequence workingDirectory) {
         this.workingDirectory = workingDirectory;
     }
 
-    public ContainerDefinition withWorkingDirectory(java.lang.String workingDirectory) {
+    public ContainerDefinition withWorkingDirectory(CharSequence workingDirectory) {
         this.workingDirectory = workingDirectory;
         return this;
     }

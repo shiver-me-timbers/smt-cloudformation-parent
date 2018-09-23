@@ -13,6 +13,7 @@ import static org.hamcrest.Matchers.hasEntry;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
@@ -36,21 +37,21 @@ public class PrimitiveTypeTransformerTest {
         final CloudformationType cloudformationType = mock(CloudformationType.class);
         final String propertyName = someString();
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
+        final Map<String, Object> property = mock(Map.class);
 
         final String type = someString();
-        final String schemaType = someString();
+        final Map<String, Object> schemaAttributes = mock(Map.class);
 
-        final Map<String, Object> actual = new HashMap<>();
 
         // Given
         given(cloudformationProperty.getPrimitiveType()).willReturn(type);
-        given(converter.convert(type)).willReturn(schemaType);
+        given(converter.convert(type)).willReturn(schemaAttributes);
 
         // When
-        transformer.transform(resourceName, cloudformationType, propertyName, cloudformationProperty, actual);
+        transformer.transform(resourceName, cloudformationType, propertyName, cloudformationProperty, property);
 
         // Then
-        assertThat(actual, hasEntry("type", schemaType));
+        then(property).should().putAll(schemaAttributes);
     }
 
     @Test

@@ -29,7 +29,7 @@ public class LaunchTemplate {
      */
     @JsonProperty("LaunchTemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename")
-    private String launchTemplateName;
+    private CharSequence launchTemplateName;
     /**
      * LaunchTemplateData
      * <p>
@@ -45,7 +45,7 @@ public class LaunchTemplate {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public String getLaunchTemplateName() {
+    public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
 
@@ -54,11 +54,11 @@ public class LaunchTemplate {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public void setLaunchTemplateName(String launchTemplateName) {
+    public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
 
-    public LaunchTemplate withLaunchTemplateName(String launchTemplateName) {
+    public LaunchTemplate withLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
         return this;
     }

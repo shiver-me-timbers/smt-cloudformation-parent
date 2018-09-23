@@ -41,28 +41,28 @@ public class DeliveryChannel {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3bucketname
      * 
      */
     @JsonProperty("S3BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3bucketname")
-    private String s3BucketName;
+    private CharSequence s3BucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3keyprefix
      * 
      */
     @JsonProperty("S3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3keyprefix")
-    private String s3KeyPrefix;
+    private CharSequence s3KeyPrefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-snstopicarn
      * 
      */
     @JsonProperty("SnsTopicARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-snstopicarn")
-    private String snsTopicARN;
+    private CharSequence snsTopicARN;
 
     /**
      * ConfigSnapshotDeliveryProperties
@@ -96,7 +96,7 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -105,11 +105,11 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public DeliveryChannel withName(String name) {
+    public DeliveryChannel withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -119,7 +119,7 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("S3BucketName")
-    public String getS3BucketName() {
+    public CharSequence getS3BucketName() {
         return s3BucketName;
     }
 
@@ -128,11 +128,11 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("S3BucketName")
-    public void setS3BucketName(String s3BucketName) {
+    public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
 
-    public DeliveryChannel withS3BucketName(String s3BucketName) {
+    public DeliveryChannel withS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
         return this;
     }
@@ -142,7 +142,7 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public String getS3KeyPrefix() {
+    public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
 
@@ -151,11 +151,11 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("S3KeyPrefix")
-    public void setS3KeyPrefix(String s3KeyPrefix) {
+    public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }
 
-    public DeliveryChannel withS3KeyPrefix(String s3KeyPrefix) {
+    public DeliveryChannel withS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
         return this;
     }
@@ -165,7 +165,7 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("SnsTopicARN")
-    public String getSnsTopicARN() {
+    public CharSequence getSnsTopicARN() {
         return snsTopicARN;
     }
 
@@ -174,11 +174,11 @@ public class DeliveryChannel {
      * 
      */
     @JsonProperty("SnsTopicARN")
-    public void setSnsTopicARN(String snsTopicARN) {
+    public void setSnsTopicARN(CharSequence snsTopicARN) {
         this.snsTopicARN = snsTopicARN;
     }
 
-    public DeliveryChannel withSnsTopicARN(String snsTopicARN) {
+    public DeliveryChannel withSnsTopicARN(CharSequence snsTopicARN) {
         this.snsTopicARN = snsTopicARN;
         return this;
     }

@@ -33,7 +33,7 @@ public class VpcConfig {
     @JsonProperty("SecurityGroupIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-securitygroupids")
-    private Set<String> securityGroupIds = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroupIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-subnetids
      * 
@@ -41,14 +41,14 @@ public class VpcConfig {
     @JsonProperty("SubnetIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-subnetids")
-    private Set<String> subnetIds = new LinkedHashSet<String>();
+    private Set<CharSequence> subnetIds = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public Set<String> getSecurityGroupIds() {
+    public Set<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -57,11 +57,11 @@ public class VpcConfig {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(Set<String> securityGroupIds) {
+    public void setSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public VpcConfig withSecurityGroupIds(Set<String> securityGroupIds) {
+    public VpcConfig withSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -71,7 +71,7 @@ public class VpcConfig {
      * 
      */
     @JsonProperty("SubnetIds")
-    public Set<String> getSubnetIds() {
+    public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -80,11 +80,11 @@ public class VpcConfig {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(Set<String> subnetIds) {
+    public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public VpcConfig withSubnetIds(Set<String> subnetIds) {
+    public VpcConfig withSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }

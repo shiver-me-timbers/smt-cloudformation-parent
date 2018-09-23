@@ -31,14 +31,14 @@ public class DomainName {
      */
     @JsonProperty("CertificateArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn")
-    private String certificateArn;
+    private CharSequence certificateArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname
      * 
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * EndpointConfiguration
      * <p>
@@ -54,14 +54,14 @@ public class DomainName {
      */
     @JsonProperty("RegionalCertificateArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn")
-    private String regionalCertificateArn;
+    private CharSequence regionalCertificateArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn
      * 
      */
     @JsonProperty("CertificateArn")
-    public String getCertificateArn() {
+    public CharSequence getCertificateArn() {
         return certificateArn;
     }
 
@@ -70,11 +70,11 @@ public class DomainName {
      * 
      */
     @JsonProperty("CertificateArn")
-    public void setCertificateArn(String certificateArn) {
+    public void setCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
     }
 
-    public DomainName withCertificateArn(String certificateArn) {
+    public DomainName withCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
         return this;
     }
@@ -84,7 +84,7 @@ public class DomainName {
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -93,11 +93,11 @@ public class DomainName {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public DomainName withDomainName(String domainName) {
+    public DomainName withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -134,7 +134,7 @@ public class DomainName {
      * 
      */
     @JsonProperty("RegionalCertificateArn")
-    public String getRegionalCertificateArn() {
+    public CharSequence getRegionalCertificateArn() {
         return regionalCertificateArn;
     }
 
@@ -143,11 +143,11 @@ public class DomainName {
      * 
      */
     @JsonProperty("RegionalCertificateArn")
-    public void setRegionalCertificateArn(String regionalCertificateArn) {
+    public void setRegionalCertificateArn(CharSequence regionalCertificateArn) {
         this.regionalCertificateArn = regionalCertificateArn;
     }
 
-    public DomainName withRegionalCertificateArn(String regionalCertificateArn) {
+    public DomainName withRegionalCertificateArn(CharSequence regionalCertificateArn) {
         this.regionalCertificateArn = regionalCertificateArn;
         return this;
     }

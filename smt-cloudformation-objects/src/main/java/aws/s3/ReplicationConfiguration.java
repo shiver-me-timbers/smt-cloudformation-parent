@@ -32,7 +32,7 @@ public class ReplicationConfiguration {
      */
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role")
-    private String role;
+    private CharSequence role;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules
      * 
@@ -47,7 +47,7 @@ public class ReplicationConfiguration {
      * 
      */
     @JsonProperty("Role")
-    public String getRole() {
+    public CharSequence getRole() {
         return role;
     }
 
@@ -56,11 +56,11 @@ public class ReplicationConfiguration {
      * 
      */
     @JsonProperty("Role")
-    public void setRole(String role) {
+    public void setRole(CharSequence role) {
         this.role = role;
     }
 
-    public ReplicationConfiguration withRole(String role) {
+    public ReplicationConfiguration withRole(CharSequence role) {
         this.role = role;
         return this;
     }

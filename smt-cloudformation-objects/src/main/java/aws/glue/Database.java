@@ -38,7 +38,7 @@ public class Database {
      */
     @JsonProperty("CatalogId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid")
-    private String catalogId;
+    private CharSequence catalogId;
 
     /**
      * DatabaseInput
@@ -72,7 +72,7 @@ public class Database {
      * 
      */
     @JsonProperty("CatalogId")
-    public String getCatalogId() {
+    public CharSequence getCatalogId() {
         return catalogId;
     }
 
@@ -81,11 +81,11 @@ public class Database {
      * 
      */
     @JsonProperty("CatalogId")
-    public void setCatalogId(String catalogId) {
+    public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }
 
-    public Database withCatalogId(String catalogId) {
+    public Database withCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
         return this;
     }

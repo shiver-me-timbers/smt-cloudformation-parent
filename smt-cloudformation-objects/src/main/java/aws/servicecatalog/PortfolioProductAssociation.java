@@ -31,35 +31,35 @@ public class PortfolioProductAssociation {
      */
     @JsonProperty("SourcePortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid")
-    private String sourcePortfolioId;
+    private CharSequence sourcePortfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-acceptlanguage
      * 
      */
     @JsonProperty("AcceptLanguage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-acceptlanguage")
-    private String acceptLanguage;
+    private CharSequence acceptLanguage;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-portfolioid
      * 
      */
     @JsonProperty("PortfolioId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-portfolioid")
-    private String portfolioId;
+    private CharSequence portfolioId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-productid
      * 
      */
     @JsonProperty("ProductId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-productid")
-    private String productId;
+    private CharSequence productId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid
      * 
      */
     @JsonProperty("SourcePortfolioId")
-    public String getSourcePortfolioId() {
+    public CharSequence getSourcePortfolioId() {
         return sourcePortfolioId;
     }
 
@@ -68,11 +68,11 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("SourcePortfolioId")
-    public void setSourcePortfolioId(String sourcePortfolioId) {
+    public void setSourcePortfolioId(CharSequence sourcePortfolioId) {
         this.sourcePortfolioId = sourcePortfolioId;
     }
 
-    public PortfolioProductAssociation withSourcePortfolioId(String sourcePortfolioId) {
+    public PortfolioProductAssociation withSourcePortfolioId(CharSequence sourcePortfolioId) {
         this.sourcePortfolioId = sourcePortfolioId;
         return this;
     }
@@ -82,7 +82,7 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public String getAcceptLanguage() {
+    public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
 
@@ -91,11 +91,11 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("AcceptLanguage")
-    public void setAcceptLanguage(String acceptLanguage) {
+    public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
 
-    public PortfolioProductAssociation withAcceptLanguage(String acceptLanguage) {
+    public PortfolioProductAssociation withAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
         return this;
     }
@@ -105,7 +105,7 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("PortfolioId")
-    public String getPortfolioId() {
+    public CharSequence getPortfolioId() {
         return portfolioId;
     }
 
@@ -114,11 +114,11 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("PortfolioId")
-    public void setPortfolioId(String portfolioId) {
+    public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
 
-    public PortfolioProductAssociation withPortfolioId(String portfolioId) {
+    public PortfolioProductAssociation withPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
         return this;
     }
@@ -128,7 +128,7 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("ProductId")
-    public String getProductId() {
+    public CharSequence getProductId() {
         return productId;
     }
 
@@ -137,11 +137,11 @@ public class PortfolioProductAssociation {
      * 
      */
     @JsonProperty("ProductId")
-    public void setProductId(String productId) {
+    public void setProductId(CharSequence productId) {
         this.productId = productId;
     }
 
-    public PortfolioProductAssociation withProductId(String productId) {
+    public PortfolioProductAssociation withProductId(CharSequence productId) {
         this.productId = productId;
         return this;
     }

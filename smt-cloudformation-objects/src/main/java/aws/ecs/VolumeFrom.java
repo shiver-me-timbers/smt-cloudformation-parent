@@ -36,7 +36,7 @@ public class VolumeFrom {
      */
     @JsonProperty("SourceContainer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer")
-    private String sourceContainer;
+    private CharSequence sourceContainer;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly
@@ -66,7 +66,7 @@ public class VolumeFrom {
      * 
      */
     @JsonProperty("SourceContainer")
-    public String getSourceContainer() {
+    public CharSequence getSourceContainer() {
         return sourceContainer;
     }
 
@@ -75,11 +75,11 @@ public class VolumeFrom {
      * 
      */
     @JsonProperty("SourceContainer")
-    public void setSourceContainer(String sourceContainer) {
+    public void setSourceContainer(CharSequence sourceContainer) {
         this.sourceContainer = sourceContainer;
     }
 
-    public VolumeFrom withSourceContainer(String sourceContainer) {
+    public VolumeFrom withSourceContainer(CharSequence sourceContainer) {
         this.sourceContainer = sourceContainer;
         return this;
     }

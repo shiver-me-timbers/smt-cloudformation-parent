@@ -51,7 +51,7 @@ public class MainTest {
         final InputStream typeStream = mock(InputStream.class);
         final ObjectMapper objectMapper = mock(ObjectMapper.class);
         final CloudFormationResourceSpecification specification = mock(CloudFormationResourceSpecification.class);
-        final Map<String, String> typeMap = mock(Map.class);
+        final Map<String, Map<String, Object>> typeMap = mock(Map.class);
         final CloudformationTypes cloudformationTypes = mock(CloudformationTypes.class);
         final CloudformationSpecTransformer transformer = mock(CloudformationSpecTransformer.class);
         final Map<String, Object> jsonSchemas = mock(Map.class);

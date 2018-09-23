@@ -55,7 +55,7 @@ public class Domain {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname")
-    private java.lang.String domainName;
+    private CharSequence domainName;
     /**
      * EBSOptions
      * <p>
@@ -80,7 +80,7 @@ public class Domain {
      */
     @JsonProperty("ElasticsearchVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion")
-    private java.lang.String elasticsearchVersion;
+    private CharSequence elasticsearchVersion;
     /**
      * EncryptionAtRestOptions
      * <p>
@@ -167,7 +167,7 @@ public class Domain {
      * 
      */
     @JsonProperty("DomainName")
-    public java.lang.String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -176,11 +176,11 @@ public class Domain {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(java.lang.String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public Domain withDomainName(java.lang.String domainName) {
+    public Domain withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -244,7 +244,7 @@ public class Domain {
      * 
      */
     @JsonProperty("ElasticsearchVersion")
-    public java.lang.String getElasticsearchVersion() {
+    public CharSequence getElasticsearchVersion() {
         return elasticsearchVersion;
     }
 
@@ -253,11 +253,11 @@ public class Domain {
      * 
      */
     @JsonProperty("ElasticsearchVersion")
-    public void setElasticsearchVersion(java.lang.String elasticsearchVersion) {
+    public void setElasticsearchVersion(CharSequence elasticsearchVersion) {
         this.elasticsearchVersion = elasticsearchVersion;
     }
 
-    public Domain withElasticsearchVersion(java.lang.String elasticsearchVersion) {
+    public Domain withElasticsearchVersion(CharSequence elasticsearchVersion) {
         this.elasticsearchVersion = elasticsearchVersion;
         return this;
     }

@@ -37,14 +37,14 @@ public class DBSubnetGroup {
      */
     @JsonProperty("DBSubnetGroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupdescription")
-    private String dBSubnetGroupDescription;
+    private CharSequence dBSubnetGroupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupname
      * 
      */
     @JsonProperty("DBSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupname")
-    private String dBSubnetGroupName;
+    private CharSequence dBSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-subnetids
      * 
@@ -52,7 +52,7 @@ public class DBSubnetGroup {
     @JsonProperty("SubnetIds")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-subnetids")
-    private Set<String> subnetIds = new LinkedHashSet<String>();
+    private Set<CharSequence> subnetIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-tags
      * 
@@ -66,7 +66,7 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("DBSubnetGroupDescription")
-    public String getDBSubnetGroupDescription() {
+    public CharSequence getDBSubnetGroupDescription() {
         return dBSubnetGroupDescription;
     }
 
@@ -75,11 +75,11 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("DBSubnetGroupDescription")
-    public void setDBSubnetGroupDescription(String dBSubnetGroupDescription) {
+    public void setDBSubnetGroupDescription(CharSequence dBSubnetGroupDescription) {
         this.dBSubnetGroupDescription = dBSubnetGroupDescription;
     }
 
-    public DBSubnetGroup withDBSubnetGroupDescription(String dBSubnetGroupDescription) {
+    public DBSubnetGroup withDBSubnetGroupDescription(CharSequence dBSubnetGroupDescription) {
         this.dBSubnetGroupDescription = dBSubnetGroupDescription;
         return this;
     }
@@ -89,7 +89,7 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public String getDBSubnetGroupName() {
+    public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
 
@@ -98,11 +98,11 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("DBSubnetGroupName")
-    public void setDBSubnetGroupName(String dBSubnetGroupName) {
+    public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
 
-    public DBSubnetGroup withDBSubnetGroupName(String dBSubnetGroupName) {
+    public DBSubnetGroup withDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
         return this;
     }
@@ -112,7 +112,7 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public Set<String> getSubnetIds() {
+    public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -121,11 +121,11 @@ public class DBSubnetGroup {
      * 
      */
     @JsonProperty("SubnetIds")
-    public void setSubnetIds(Set<String> subnetIds) {
+    public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public DBSubnetGroup withSubnetIds(Set<String> subnetIds) {
+    public DBSubnetGroup withSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
         return this;
     }

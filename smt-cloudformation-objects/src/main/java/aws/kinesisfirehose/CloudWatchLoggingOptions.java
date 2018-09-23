@@ -37,14 +37,14 @@ public class CloudWatchLoggingOptions {
      */
     @JsonProperty("LogGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-loggroupname")
-    private String logGroupName;
+    private CharSequence logGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-logstreamname
      * 
      */
     @JsonProperty("LogStreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-logstreamname")
-    private String logStreamName;
+    private CharSequence logStreamName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-enabled
@@ -74,7 +74,7 @@ public class CloudWatchLoggingOptions {
      * 
      */
     @JsonProperty("LogGroupName")
-    public String getLogGroupName() {
+    public CharSequence getLogGroupName() {
         return logGroupName;
     }
 
@@ -83,11 +83,11 @@ public class CloudWatchLoggingOptions {
      * 
      */
     @JsonProperty("LogGroupName")
-    public void setLogGroupName(String logGroupName) {
+    public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
 
-    public CloudWatchLoggingOptions withLogGroupName(String logGroupName) {
+    public CloudWatchLoggingOptions withLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
         return this;
     }
@@ -97,7 +97,7 @@ public class CloudWatchLoggingOptions {
      * 
      */
     @JsonProperty("LogStreamName")
-    public String getLogStreamName() {
+    public CharSequence getLogStreamName() {
         return logStreamName;
     }
 
@@ -106,11 +106,11 @@ public class CloudWatchLoggingOptions {
      * 
      */
     @JsonProperty("LogStreamName")
-    public void setLogStreamName(String logStreamName) {
+    public void setLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
     }
 
-    public CloudWatchLoggingOptions withLogStreamName(String logStreamName) {
+    public CloudWatchLoggingOptions withLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
         return this;
     }

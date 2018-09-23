@@ -36,7 +36,7 @@ public class PrivateIpAddressSpecification {
      */
     @JsonProperty("PrivateIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress")
-    private String privateIpAddress;
+    private CharSequence privateIpAddress;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-primary
@@ -66,7 +66,7 @@ public class PrivateIpAddressSpecification {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public String getPrivateIpAddress() {
+    public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
 
@@ -75,11 +75,11 @@ public class PrivateIpAddressSpecification {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public void setPrivateIpAddress(String privateIpAddress) {
+    public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
 
-    public PrivateIpAddressSpecification withPrivateIpAddress(String privateIpAddress) {
+    public PrivateIpAddressSpecification withPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
         return this;
     }

@@ -31,35 +31,35 @@ public class CloudwatchAlarmAction {
      */
     @JsonProperty("AlarmName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-alarmname")
-    private String alarmName;
+    private CharSequence alarmName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statereason
      * 
      */
     @JsonProperty("StateReason")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statereason")
-    private String stateReason;
+    private CharSequence stateReason;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statevalue
      * 
      */
     @JsonProperty("StateValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statevalue")
-    private String stateValue;
+    private CharSequence stateValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-alarmname
      * 
      */
     @JsonProperty("AlarmName")
-    public String getAlarmName() {
+    public CharSequence getAlarmName() {
         return alarmName;
     }
 
@@ -68,11 +68,11 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("AlarmName")
-    public void setAlarmName(String alarmName) {
+    public void setAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
     }
 
-    public CloudwatchAlarmAction withAlarmName(String alarmName) {
+    public CloudwatchAlarmAction withAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
         return this;
     }
@@ -82,7 +82,7 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -91,11 +91,11 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public CloudwatchAlarmAction withRoleArn(String roleArn) {
+    public CloudwatchAlarmAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -105,7 +105,7 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("StateReason")
-    public String getStateReason() {
+    public CharSequence getStateReason() {
         return stateReason;
     }
 
@@ -114,11 +114,11 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("StateReason")
-    public void setStateReason(String stateReason) {
+    public void setStateReason(CharSequence stateReason) {
         this.stateReason = stateReason;
     }
 
-    public CloudwatchAlarmAction withStateReason(String stateReason) {
+    public CloudwatchAlarmAction withStateReason(CharSequence stateReason) {
         this.stateReason = stateReason;
         return this;
     }
@@ -128,7 +128,7 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("StateValue")
-    public String getStateValue() {
+    public CharSequence getStateValue() {
         return stateValue;
     }
 
@@ -137,11 +137,11 @@ public class CloudwatchAlarmAction {
      * 
      */
     @JsonProperty("StateValue")
-    public void setStateValue(String stateValue) {
+    public void setStateValue(CharSequence stateValue) {
         this.stateValue = stateValue;
     }
 
-    public CloudwatchAlarmAction withStateValue(String stateValue) {
+    public CloudwatchAlarmAction withStateValue(CharSequence stateValue) {
         this.stateValue = stateValue;
         return this;
     }

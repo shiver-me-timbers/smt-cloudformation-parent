@@ -31,35 +31,35 @@ public class OptionSetting {
      */
     @JsonProperty("Namespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-namespace")
-    private String namespace;
+    private CharSequence namespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-optionname
      * 
      */
     @JsonProperty("OptionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-optionname")
-    private String optionName;
+    private CharSequence optionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-elasticbeanstalk-environment-optionsetting-resourcename
      * 
      */
     @JsonProperty("ResourceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-elasticbeanstalk-environment-optionsetting-resourcename")
-    private String resourceName;
+    private CharSequence resourceName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-value")
-    private String value;
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-namespace
      * 
      */
     @JsonProperty("Namespace")
-    public String getNamespace() {
+    public CharSequence getNamespace() {
         return namespace;
     }
 
@@ -68,11 +68,11 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("Namespace")
-    public void setNamespace(String namespace) {
+    public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
 
-    public OptionSetting withNamespace(String namespace) {
+    public OptionSetting withNamespace(CharSequence namespace) {
         this.namespace = namespace;
         return this;
     }
@@ -82,7 +82,7 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("OptionName")
-    public String getOptionName() {
+    public CharSequence getOptionName() {
         return optionName;
     }
 
@@ -91,11 +91,11 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("OptionName")
-    public void setOptionName(String optionName) {
+    public void setOptionName(CharSequence optionName) {
         this.optionName = optionName;
     }
 
-    public OptionSetting withOptionName(String optionName) {
+    public OptionSetting withOptionName(CharSequence optionName) {
         this.optionName = optionName;
         return this;
     }
@@ -105,7 +105,7 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("ResourceName")
-    public String getResourceName() {
+    public CharSequence getResourceName() {
         return resourceName;
     }
 
@@ -114,11 +114,11 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("ResourceName")
-    public void setResourceName(String resourceName) {
+    public void setResourceName(CharSequence resourceName) {
         this.resourceName = resourceName;
     }
 
-    public OptionSetting withResourceName(String resourceName) {
+    public OptionSetting withResourceName(CharSequence resourceName) {
         this.resourceName = resourceName;
         return this;
     }
@@ -128,7 +128,7 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -137,11 +137,11 @@ public class OptionSetting {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public OptionSetting withValue(String value) {
+    public OptionSetting withValue(CharSequence value) {
         this.value = value;
         return this;
     }

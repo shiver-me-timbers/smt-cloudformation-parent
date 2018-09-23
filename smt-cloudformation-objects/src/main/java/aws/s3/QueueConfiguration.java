@@ -30,7 +30,7 @@ public class QueueConfiguration {
      */
     @JsonProperty("Event")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-event")
-    private String event;
+    private CharSequence event;
     /**
      * NotificationFilter
      * <p>
@@ -46,14 +46,14 @@ public class QueueConfiguration {
      */
     @JsonProperty("Queue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-queue")
-    private String queue;
+    private CharSequence queue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-event
      * 
      */
     @JsonProperty("Event")
-    public String getEvent() {
+    public CharSequence getEvent() {
         return event;
     }
 
@@ -62,11 +62,11 @@ public class QueueConfiguration {
      * 
      */
     @JsonProperty("Event")
-    public void setEvent(String event) {
+    public void setEvent(CharSequence event) {
         this.event = event;
     }
 
-    public QueueConfiguration withEvent(String event) {
+    public QueueConfiguration withEvent(CharSequence event) {
         this.event = event;
         return this;
     }
@@ -103,7 +103,7 @@ public class QueueConfiguration {
      * 
      */
     @JsonProperty("Queue")
-    public String getQueue() {
+    public CharSequence getQueue() {
         return queue;
     }
 
@@ -112,11 +112,11 @@ public class QueueConfiguration {
      * 
      */
     @JsonProperty("Queue")
-    public void setQueue(String queue) {
+    public void setQueue(CharSequence queue) {
         this.queue = queue;
     }
 
-    public QueueConfiguration withQueue(String queue) {
+    public QueueConfiguration withQueue(CharSequence queue) {
         this.queue = queue;
         return this;
     }

@@ -30,7 +30,7 @@ public class LambdaConfiguration {
      */
     @JsonProperty("Event")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-event")
-    private String event;
+    private CharSequence event;
     /**
      * NotificationFilter
      * <p>
@@ -46,14 +46,14 @@ public class LambdaConfiguration {
      */
     @JsonProperty("Function")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-function")
-    private String function;
+    private CharSequence function;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-event
      * 
      */
     @JsonProperty("Event")
-    public String getEvent() {
+    public CharSequence getEvent() {
         return event;
     }
 
@@ -62,11 +62,11 @@ public class LambdaConfiguration {
      * 
      */
     @JsonProperty("Event")
-    public void setEvent(String event) {
+    public void setEvent(CharSequence event) {
         this.event = event;
     }
 
-    public LambdaConfiguration withEvent(String event) {
+    public LambdaConfiguration withEvent(CharSequence event) {
         this.event = event;
         return this;
     }
@@ -103,7 +103,7 @@ public class LambdaConfiguration {
      * 
      */
     @JsonProperty("Function")
-    public String getFunction() {
+    public CharSequence getFunction() {
         return function;
     }
 
@@ -112,11 +112,11 @@ public class LambdaConfiguration {
      * 
      */
     @JsonProperty("Function")
-    public void setFunction(String function) {
+    public void setFunction(CharSequence function) {
         this.function = function;
     }
 
-    public LambdaConfiguration withFunction(String function) {
+    public LambdaConfiguration withFunction(CharSequence function) {
         this.function = function;
         return this;
     }

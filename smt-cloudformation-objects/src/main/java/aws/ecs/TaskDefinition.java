@@ -48,35 +48,35 @@ public class TaskDefinition {
      */
     @JsonProperty("Cpu")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-cpu")
-    private String cpu;
+    private CharSequence cpu;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-executionrolearn
      * 
      */
     @JsonProperty("ExecutionRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-executionrolearn")
-    private String executionRoleArn;
+    private CharSequence executionRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family
      * 
      */
     @JsonProperty("Family")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family")
-    private String family;
+    private CharSequence family;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory
      * 
      */
     @JsonProperty("Memory")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory")
-    private String memory;
+    private CharSequence memory;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode
      * 
      */
     @JsonProperty("NetworkMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode")
-    private String networkMode;
+    private CharSequence networkMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints
      * 
@@ -92,14 +92,14 @@ public class TaskDefinition {
     @JsonProperty("RequiresCompatibilities")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities")
-    private Set<String> requiresCompatibilities = new LinkedHashSet<String>();
+    private Set<CharSequence> requiresCompatibilities = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-taskrolearn
      * 
      */
     @JsonProperty("TaskRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-taskrolearn")
-    private String taskRoleArn;
+    private CharSequence taskRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-volumes
      * 
@@ -137,7 +137,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Cpu")
-    public String getCpu() {
+    public CharSequence getCpu() {
         return cpu;
     }
 
@@ -146,11 +146,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Cpu")
-    public void setCpu(String cpu) {
+    public void setCpu(CharSequence cpu) {
         this.cpu = cpu;
     }
 
-    public TaskDefinition withCpu(String cpu) {
+    public TaskDefinition withCpu(CharSequence cpu) {
         this.cpu = cpu;
         return this;
     }
@@ -160,7 +160,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("ExecutionRoleArn")
-    public String getExecutionRoleArn() {
+    public CharSequence getExecutionRoleArn() {
         return executionRoleArn;
     }
 
@@ -169,11 +169,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("ExecutionRoleArn")
-    public void setExecutionRoleArn(String executionRoleArn) {
+    public void setExecutionRoleArn(CharSequence executionRoleArn) {
         this.executionRoleArn = executionRoleArn;
     }
 
-    public TaskDefinition withExecutionRoleArn(String executionRoleArn) {
+    public TaskDefinition withExecutionRoleArn(CharSequence executionRoleArn) {
         this.executionRoleArn = executionRoleArn;
         return this;
     }
@@ -183,7 +183,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Family")
-    public String getFamily() {
+    public CharSequence getFamily() {
         return family;
     }
 
@@ -192,11 +192,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Family")
-    public void setFamily(String family) {
+    public void setFamily(CharSequence family) {
         this.family = family;
     }
 
-    public TaskDefinition withFamily(String family) {
+    public TaskDefinition withFamily(CharSequence family) {
         this.family = family;
         return this;
     }
@@ -206,7 +206,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Memory")
-    public String getMemory() {
+    public CharSequence getMemory() {
         return memory;
     }
 
@@ -215,11 +215,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("Memory")
-    public void setMemory(String memory) {
+    public void setMemory(CharSequence memory) {
         this.memory = memory;
     }
 
-    public TaskDefinition withMemory(String memory) {
+    public TaskDefinition withMemory(CharSequence memory) {
         this.memory = memory;
         return this;
     }
@@ -229,7 +229,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("NetworkMode")
-    public String getNetworkMode() {
+    public CharSequence getNetworkMode() {
         return networkMode;
     }
 
@@ -238,11 +238,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("NetworkMode")
-    public void setNetworkMode(String networkMode) {
+    public void setNetworkMode(CharSequence networkMode) {
         this.networkMode = networkMode;
     }
 
-    public TaskDefinition withNetworkMode(String networkMode) {
+    public TaskDefinition withNetworkMode(CharSequence networkMode) {
         this.networkMode = networkMode;
         return this;
     }
@@ -275,7 +275,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("RequiresCompatibilities")
-    public Set<String> getRequiresCompatibilities() {
+    public Set<CharSequence> getRequiresCompatibilities() {
         return requiresCompatibilities;
     }
 
@@ -284,11 +284,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("RequiresCompatibilities")
-    public void setRequiresCompatibilities(Set<String> requiresCompatibilities) {
+    public void setRequiresCompatibilities(Set<CharSequence> requiresCompatibilities) {
         this.requiresCompatibilities = requiresCompatibilities;
     }
 
-    public TaskDefinition withRequiresCompatibilities(Set<String> requiresCompatibilities) {
+    public TaskDefinition withRequiresCompatibilities(Set<CharSequence> requiresCompatibilities) {
         this.requiresCompatibilities = requiresCompatibilities;
         return this;
     }
@@ -298,7 +298,7 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("TaskRoleArn")
-    public String getTaskRoleArn() {
+    public CharSequence getTaskRoleArn() {
         return taskRoleArn;
     }
 
@@ -307,11 +307,11 @@ public class TaskDefinition {
      * 
      */
     @JsonProperty("TaskRoleArn")
-    public void setTaskRoleArn(String taskRoleArn) {
+    public void setTaskRoleArn(CharSequence taskRoleArn) {
         this.taskRoleArn = taskRoleArn;
     }
 
-    public TaskDefinition withTaskRoleArn(String taskRoleArn) {
+    public TaskDefinition withTaskRoleArn(CharSequence taskRoleArn) {
         this.taskRoleArn = taskRoleArn;
         return this;
     }

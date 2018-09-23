@@ -56,7 +56,7 @@ public class HealthCheckConfig {
     @JsonProperty("ChildHealthChecks")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks")
-    private Set<String> childHealthChecks = new LinkedHashSet<String>();
+    private Set<CharSequence> childHealthChecks = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-enablesni
      * 
@@ -77,7 +77,7 @@ public class HealthCheckConfig {
      */
     @JsonProperty("FullyQualifiedDomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname")
-    private String fullyQualifiedDomainName;
+    private CharSequence fullyQualifiedDomainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-healththreshold
      * 
@@ -91,14 +91,14 @@ public class HealthCheckConfig {
      */
     @JsonProperty("IPAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-ipaddress")
-    private String iPAddress;
+    private CharSequence iPAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus
      * 
      */
     @JsonProperty("InsufficientDataHealthStatus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus")
-    private String insufficientDataHealthStatus;
+    private CharSequence insufficientDataHealthStatus;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-inverted
      * 
@@ -127,7 +127,7 @@ public class HealthCheckConfig {
     @JsonProperty("Regions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-regions")
-    private Set<String> regions = new LinkedHashSet<String>();
+    private Set<CharSequence> regions = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-requestinterval
      * 
@@ -141,21 +141,21 @@ public class HealthCheckConfig {
      */
     @JsonProperty("ResourcePath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-resourcepath")
-    private String resourcePath;
+    private CharSequence resourcePath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-searchstring
      * 
      */
     @JsonProperty("SearchString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-searchstring")
-    private String searchString;
+    private CharSequence searchString;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * AlarmIdentifier
@@ -189,7 +189,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("ChildHealthChecks")
-    public Set<String> getChildHealthChecks() {
+    public Set<CharSequence> getChildHealthChecks() {
         return childHealthChecks;
     }
 
@@ -198,11 +198,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("ChildHealthChecks")
-    public void setChildHealthChecks(Set<String> childHealthChecks) {
+    public void setChildHealthChecks(Set<CharSequence> childHealthChecks) {
         this.childHealthChecks = childHealthChecks;
     }
 
-    public HealthCheckConfig withChildHealthChecks(Set<String> childHealthChecks) {
+    public HealthCheckConfig withChildHealthChecks(Set<CharSequence> childHealthChecks) {
         this.childHealthChecks = childHealthChecks;
         return this;
     }
@@ -258,7 +258,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("FullyQualifiedDomainName")
-    public String getFullyQualifiedDomainName() {
+    public CharSequence getFullyQualifiedDomainName() {
         return fullyQualifiedDomainName;
     }
 
@@ -267,11 +267,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("FullyQualifiedDomainName")
-    public void setFullyQualifiedDomainName(String fullyQualifiedDomainName) {
+    public void setFullyQualifiedDomainName(CharSequence fullyQualifiedDomainName) {
         this.fullyQualifiedDomainName = fullyQualifiedDomainName;
     }
 
-    public HealthCheckConfig withFullyQualifiedDomainName(String fullyQualifiedDomainName) {
+    public HealthCheckConfig withFullyQualifiedDomainName(CharSequence fullyQualifiedDomainName) {
         this.fullyQualifiedDomainName = fullyQualifiedDomainName;
         return this;
     }
@@ -304,7 +304,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("IPAddress")
-    public String getIPAddress() {
+    public CharSequence getIPAddress() {
         return iPAddress;
     }
 
@@ -313,11 +313,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("IPAddress")
-    public void setIPAddress(String iPAddress) {
+    public void setIPAddress(CharSequence iPAddress) {
         this.iPAddress = iPAddress;
     }
 
-    public HealthCheckConfig withIPAddress(String iPAddress) {
+    public HealthCheckConfig withIPAddress(CharSequence iPAddress) {
         this.iPAddress = iPAddress;
         return this;
     }
@@ -327,7 +327,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("InsufficientDataHealthStatus")
-    public String getInsufficientDataHealthStatus() {
+    public CharSequence getInsufficientDataHealthStatus() {
         return insufficientDataHealthStatus;
     }
 
@@ -336,11 +336,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("InsufficientDataHealthStatus")
-    public void setInsufficientDataHealthStatus(String insufficientDataHealthStatus) {
+    public void setInsufficientDataHealthStatus(CharSequence insufficientDataHealthStatus) {
         this.insufficientDataHealthStatus = insufficientDataHealthStatus;
     }
 
-    public HealthCheckConfig withInsufficientDataHealthStatus(String insufficientDataHealthStatus) {
+    public HealthCheckConfig withInsufficientDataHealthStatus(CharSequence insufficientDataHealthStatus) {
         this.insufficientDataHealthStatus = insufficientDataHealthStatus;
         return this;
     }
@@ -419,7 +419,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("Regions")
-    public Set<String> getRegions() {
+    public Set<CharSequence> getRegions() {
         return regions;
     }
 
@@ -428,11 +428,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("Regions")
-    public void setRegions(Set<String> regions) {
+    public void setRegions(Set<CharSequence> regions) {
         this.regions = regions;
     }
 
-    public HealthCheckConfig withRegions(Set<String> regions) {
+    public HealthCheckConfig withRegions(Set<CharSequence> regions) {
         this.regions = regions;
         return this;
     }
@@ -465,7 +465,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("ResourcePath")
-    public String getResourcePath() {
+    public CharSequence getResourcePath() {
         return resourcePath;
     }
 
@@ -474,11 +474,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("ResourcePath")
-    public void setResourcePath(String resourcePath) {
+    public void setResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
     }
 
-    public HealthCheckConfig withResourcePath(String resourcePath) {
+    public HealthCheckConfig withResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
         return this;
     }
@@ -488,7 +488,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("SearchString")
-    public String getSearchString() {
+    public CharSequence getSearchString() {
         return searchString;
     }
 
@@ -497,11 +497,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("SearchString")
-    public void setSearchString(String searchString) {
+    public void setSearchString(CharSequence searchString) {
         this.searchString = searchString;
     }
 
-    public HealthCheckConfig withSearchString(String searchString) {
+    public HealthCheckConfig withSearchString(CharSequence searchString) {
         this.searchString = searchString;
         return this;
     }
@@ -511,7 +511,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -520,11 +520,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public HealthCheckConfig withType(String type) {
+    public HealthCheckConfig withType(CharSequence type) {
         this.type = type;
         return this;
     }

@@ -29,7 +29,7 @@ public class LoginProfile {
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-password")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-passwordresetrequired
      * 
@@ -43,7 +43,7 @@ public class LoginProfile {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -52,11 +52,11 @@ public class LoginProfile {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public LoginProfile withPassword(String password) {
+    public LoginProfile withPassword(CharSequence password) {
         this.password = password;
         return this;
     }

@@ -29,21 +29,21 @@ public class DeploymentStyle {
      */
     @JsonProperty("DeploymentOption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption")
-    private String deploymentOption;
+    private CharSequence deploymentOption;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
      * 
      */
     @JsonProperty("DeploymentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype")
-    private String deploymentType;
+    private CharSequence deploymentType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
      * 
      */
     @JsonProperty("DeploymentOption")
-    public String getDeploymentOption() {
+    public CharSequence getDeploymentOption() {
         return deploymentOption;
     }
 
@@ -52,11 +52,11 @@ public class DeploymentStyle {
      * 
      */
     @JsonProperty("DeploymentOption")
-    public void setDeploymentOption(String deploymentOption) {
+    public void setDeploymentOption(CharSequence deploymentOption) {
         this.deploymentOption = deploymentOption;
     }
 
-    public DeploymentStyle withDeploymentOption(String deploymentOption) {
+    public DeploymentStyle withDeploymentOption(CharSequence deploymentOption) {
         this.deploymentOption = deploymentOption;
         return this;
     }
@@ -66,7 +66,7 @@ public class DeploymentStyle {
      * 
      */
     @JsonProperty("DeploymentType")
-    public String getDeploymentType() {
+    public CharSequence getDeploymentType() {
         return deploymentType;
     }
 
@@ -75,11 +75,11 @@ public class DeploymentStyle {
      * 
      */
     @JsonProperty("DeploymentType")
-    public void setDeploymentType(String deploymentType) {
+    public void setDeploymentType(CharSequence deploymentType) {
         this.deploymentType = deploymentType;
     }
 
-    public DeploymentStyle withDeploymentType(String deploymentType) {
+    public DeploymentStyle withDeploymentType(CharSequence deploymentType) {
         this.deploymentType = deploymentType;
         return this;
     }

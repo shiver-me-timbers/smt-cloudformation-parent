@@ -29,21 +29,21 @@ public class SourceBundle {
      */
     @JsonProperty("S3Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket")
-    private String s3Bucket;
+    private CharSequence s3Bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3key
      * 
      */
     @JsonProperty("S3Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3key")
-    private String s3Key;
+    private CharSequence s3Key;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket
      * 
      */
     @JsonProperty("S3Bucket")
-    public String getS3Bucket() {
+    public CharSequence getS3Bucket() {
         return s3Bucket;
     }
 
@@ -52,11 +52,11 @@ public class SourceBundle {
      * 
      */
     @JsonProperty("S3Bucket")
-    public void setS3Bucket(String s3Bucket) {
+    public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
 
-    public SourceBundle withS3Bucket(String s3Bucket) {
+    public SourceBundle withS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
         return this;
     }
@@ -66,7 +66,7 @@ public class SourceBundle {
      * 
      */
     @JsonProperty("S3Key")
-    public String getS3Key() {
+    public CharSequence getS3Key() {
         return s3Key;
     }
 
@@ -75,11 +75,11 @@ public class SourceBundle {
      * 
      */
     @JsonProperty("S3Key")
-    public void setS3Key(String s3Key) {
+    public void setS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
     }
 
-    public SourceBundle withS3Key(String s3Key) {
+    public SourceBundle withS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
         return this;
     }

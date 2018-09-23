@@ -29,21 +29,21 @@ public class VPNConnectionRoute {
      */
     @JsonProperty("DestinationCidrBlock")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock")
-    private String destinationCidrBlock;
+    private CharSequence destinationCidrBlock;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid
      * 
      */
     @JsonProperty("VpnConnectionId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid")
-    private String vpnConnectionId;
+    private CharSequence vpnConnectionId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock
      * 
      */
     @JsonProperty("DestinationCidrBlock")
-    public String getDestinationCidrBlock() {
+    public CharSequence getDestinationCidrBlock() {
         return destinationCidrBlock;
     }
 
@@ -52,11 +52,11 @@ public class VPNConnectionRoute {
      * 
      */
     @JsonProperty("DestinationCidrBlock")
-    public void setDestinationCidrBlock(String destinationCidrBlock) {
+    public void setDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
     }
 
-    public VPNConnectionRoute withDestinationCidrBlock(String destinationCidrBlock) {
+    public VPNConnectionRoute withDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
         return this;
     }
@@ -66,7 +66,7 @@ public class VPNConnectionRoute {
      * 
      */
     @JsonProperty("VpnConnectionId")
-    public String getVpnConnectionId() {
+    public CharSequence getVpnConnectionId() {
         return vpnConnectionId;
     }
 
@@ -75,11 +75,11 @@ public class VPNConnectionRoute {
      * 
      */
     @JsonProperty("VpnConnectionId")
-    public void setVpnConnectionId(String vpnConnectionId) {
+    public void setVpnConnectionId(CharSequence vpnConnectionId) {
         this.vpnConnectionId = vpnConnectionId;
     }
 
-    public VPNConnectionRoute withVpnConnectionId(String vpnConnectionId) {
+    public VPNConnectionRoute withVpnConnectionId(CharSequence vpnConnectionId) {
         this.vpnConnectionId = vpnConnectionId;
         return this;
     }

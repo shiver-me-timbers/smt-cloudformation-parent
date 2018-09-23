@@ -37,14 +37,14 @@ public class EventSubscription {
      */
     @JsonProperty("SourceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourcetype")
-    private String sourceType;
+    private CharSequence sourceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-eventcategories
      * 
      */
     @JsonProperty("EventCategories")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-eventcategories")
-    private List<String> eventCategories = new ArrayList<String>();
+    private List<CharSequence> eventCategories = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-enabled
      * 
@@ -58,21 +58,21 @@ public class EventSubscription {
      */
     @JsonProperty("SubscriptionName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-subscriptionname")
-    private String subscriptionName;
+    private CharSequence subscriptionName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-snstopicarn
      * 
      */
     @JsonProperty("SnsTopicArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-snstopicarn")
-    private String snsTopicArn;
+    private CharSequence snsTopicArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourceids
      * 
      */
     @JsonProperty("SourceIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourceids")
-    private List<String> sourceIds = new ArrayList<String>();
+    private List<CharSequence> sourceIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-tags
      * 
@@ -86,7 +86,7 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SourceType")
-    public String getSourceType() {
+    public CharSequence getSourceType() {
         return sourceType;
     }
 
@@ -95,11 +95,11 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SourceType")
-    public void setSourceType(String sourceType) {
+    public void setSourceType(CharSequence sourceType) {
         this.sourceType = sourceType;
     }
 
-    public EventSubscription withSourceType(String sourceType) {
+    public EventSubscription withSourceType(CharSequence sourceType) {
         this.sourceType = sourceType;
         return this;
     }
@@ -109,7 +109,7 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("EventCategories")
-    public List<String> getEventCategories() {
+    public List<CharSequence> getEventCategories() {
         return eventCategories;
     }
 
@@ -118,11 +118,11 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("EventCategories")
-    public void setEventCategories(List<String> eventCategories) {
+    public void setEventCategories(List<CharSequence> eventCategories) {
         this.eventCategories = eventCategories;
     }
 
-    public EventSubscription withEventCategories(List<String> eventCategories) {
+    public EventSubscription withEventCategories(List<CharSequence> eventCategories) {
         this.eventCategories = eventCategories;
         return this;
     }
@@ -155,7 +155,7 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SubscriptionName")
-    public String getSubscriptionName() {
+    public CharSequence getSubscriptionName() {
         return subscriptionName;
     }
 
@@ -164,11 +164,11 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SubscriptionName")
-    public void setSubscriptionName(String subscriptionName) {
+    public void setSubscriptionName(CharSequence subscriptionName) {
         this.subscriptionName = subscriptionName;
     }
 
-    public EventSubscription withSubscriptionName(String subscriptionName) {
+    public EventSubscription withSubscriptionName(CharSequence subscriptionName) {
         this.subscriptionName = subscriptionName;
         return this;
     }
@@ -178,7 +178,7 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SnsTopicArn")
-    public String getSnsTopicArn() {
+    public CharSequence getSnsTopicArn() {
         return snsTopicArn;
     }
 
@@ -187,11 +187,11 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SnsTopicArn")
-    public void setSnsTopicArn(String snsTopicArn) {
+    public void setSnsTopicArn(CharSequence snsTopicArn) {
         this.snsTopicArn = snsTopicArn;
     }
 
-    public EventSubscription withSnsTopicArn(String snsTopicArn) {
+    public EventSubscription withSnsTopicArn(CharSequence snsTopicArn) {
         this.snsTopicArn = snsTopicArn;
         return this;
     }
@@ -201,7 +201,7 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SourceIds")
-    public List<String> getSourceIds() {
+    public List<CharSequence> getSourceIds() {
         return sourceIds;
     }
 
@@ -210,11 +210,11 @@ public class EventSubscription {
      * 
      */
     @JsonProperty("SourceIds")
-    public void setSourceIds(List<String> sourceIds) {
+    public void setSourceIds(List<CharSequence> sourceIds) {
         this.sourceIds = sourceIds;
     }
 
-    public EventSubscription withSourceIds(List<String> sourceIds) {
+    public EventSubscription withSourceIds(List<CharSequence> sourceIds) {
         this.sourceIds = sourceIds;
         return this;
     }

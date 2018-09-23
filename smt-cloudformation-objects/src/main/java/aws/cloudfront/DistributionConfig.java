@@ -53,14 +53,14 @@ public class DistributionConfig {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultrootobject
      * 
      */
     @JsonProperty("DefaultRootObject")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultrootobject")
-    private String defaultRootObject;
+    private CharSequence defaultRootObject;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins
      * 
@@ -83,7 +83,7 @@ public class DistributionConfig {
      */
     @JsonProperty("PriceClass")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass")
-    private String priceClass;
+    private CharSequence priceClass;
     /**
      * DefaultCacheBehavior
      * <p>
@@ -113,7 +113,7 @@ public class DistributionConfig {
      */
     @JsonProperty("Aliases")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-aliases")
-    private List<String> aliases = new ArrayList<String>();
+    private List<CharSequence> aliases = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-ipv6enabled
      * 
@@ -127,14 +127,14 @@ public class DistributionConfig {
      */
     @JsonProperty("WebACLId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-webaclid")
-    private String webACLId;
+    private CharSequence webACLId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-httpversion
      * 
      */
     @JsonProperty("HttpVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-httpversion")
-    private String httpVersion;
+    private CharSequence httpVersion;
     /**
      * Restrictions
      * <p>
@@ -184,7 +184,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -193,11 +193,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public DistributionConfig withComment(String comment) {
+    public DistributionConfig withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -207,7 +207,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("DefaultRootObject")
-    public String getDefaultRootObject() {
+    public CharSequence getDefaultRootObject() {
         return defaultRootObject;
     }
 
@@ -216,11 +216,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("DefaultRootObject")
-    public void setDefaultRootObject(String defaultRootObject) {
+    public void setDefaultRootObject(CharSequence defaultRootObject) {
         this.defaultRootObject = defaultRootObject;
     }
 
-    public DistributionConfig withDefaultRootObject(String defaultRootObject) {
+    public DistributionConfig withDefaultRootObject(CharSequence defaultRootObject) {
         this.defaultRootObject = defaultRootObject;
         return this;
     }
@@ -280,7 +280,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("PriceClass")
-    public String getPriceClass() {
+    public CharSequence getPriceClass() {
         return priceClass;
     }
 
@@ -289,11 +289,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("PriceClass")
-    public void setPriceClass(String priceClass) {
+    public void setPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
     }
 
-    public DistributionConfig withPriceClass(String priceClass) {
+    public DistributionConfig withPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
         return this;
     }
@@ -376,7 +376,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("Aliases")
-    public List<String> getAliases() {
+    public List<CharSequence> getAliases() {
         return aliases;
     }
 
@@ -385,11 +385,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("Aliases")
-    public void setAliases(List<String> aliases) {
+    public void setAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
     }
 
-    public DistributionConfig withAliases(List<String> aliases) {
+    public DistributionConfig withAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
         return this;
     }
@@ -422,7 +422,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("WebACLId")
-    public String getWebACLId() {
+    public CharSequence getWebACLId() {
         return webACLId;
     }
 
@@ -431,11 +431,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("WebACLId")
-    public void setWebACLId(String webACLId) {
+    public void setWebACLId(CharSequence webACLId) {
         this.webACLId = webACLId;
     }
 
-    public DistributionConfig withWebACLId(String webACLId) {
+    public DistributionConfig withWebACLId(CharSequence webACLId) {
         this.webACLId = webACLId;
         return this;
     }
@@ -445,7 +445,7 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("HttpVersion")
-    public String getHttpVersion() {
+    public CharSequence getHttpVersion() {
         return httpVersion;
     }
 
@@ -454,11 +454,11 @@ public class DistributionConfig {
      * 
      */
     @JsonProperty("HttpVersion")
-    public void setHttpVersion(String httpVersion) {
+    public void setHttpVersion(CharSequence httpVersion) {
         this.httpVersion = httpVersion;
     }
 
-    public DistributionConfig withHttpVersion(String httpVersion) {
+    public DistributionConfig withHttpVersion(CharSequence httpVersion) {
         this.httpVersion = httpVersion;
         return this;
     }

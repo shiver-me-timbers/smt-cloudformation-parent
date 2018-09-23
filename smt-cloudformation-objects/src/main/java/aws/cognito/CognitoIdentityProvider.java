@@ -37,14 +37,14 @@ public class CognitoIdentityProvider {
      */
     @JsonProperty("ProviderName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername")
-    private String providerName;
+    private CharSequence providerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
      * 
      */
     @JsonProperty("ClientId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid")
-    private String clientId;
+    private CharSequence clientId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
@@ -74,7 +74,7 @@ public class CognitoIdentityProvider {
      * 
      */
     @JsonProperty("ProviderName")
-    public String getProviderName() {
+    public CharSequence getProviderName() {
         return providerName;
     }
 
@@ -83,11 +83,11 @@ public class CognitoIdentityProvider {
      * 
      */
     @JsonProperty("ProviderName")
-    public void setProviderName(String providerName) {
+    public void setProviderName(CharSequence providerName) {
         this.providerName = providerName;
     }
 
-    public CognitoIdentityProvider withProviderName(String providerName) {
+    public CognitoIdentityProvider withProviderName(CharSequence providerName) {
         this.providerName = providerName;
         return this;
     }
@@ -97,7 +97,7 @@ public class CognitoIdentityProvider {
      * 
      */
     @JsonProperty("ClientId")
-    public String getClientId() {
+    public CharSequence getClientId() {
         return clientId;
     }
 
@@ -106,11 +106,11 @@ public class CognitoIdentityProvider {
      * 
      */
     @JsonProperty("ClientId")
-    public void setClientId(String clientId) {
+    public void setClientId(CharSequence clientId) {
         this.clientId = clientId;
     }
 
-    public CognitoIdentityProvider withClientId(String clientId) {
+    public CognitoIdentityProvider withClientId(CharSequence clientId) {
         this.clientId = clientId;
         return this;
     }

@@ -38,7 +38,7 @@ public class Thing {
      */
     @JsonProperty("ThingName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html#cfn-iot-thing-thingname")
-    private String thingName;
+    private CharSequence thingName;
 
     /**
      * AttributePayload
@@ -72,7 +72,7 @@ public class Thing {
      * 
      */
     @JsonProperty("ThingName")
-    public String getThingName() {
+    public CharSequence getThingName() {
         return thingName;
     }
 
@@ -81,11 +81,11 @@ public class Thing {
      * 
      */
     @JsonProperty("ThingName")
-    public void setThingName(String thingName) {
+    public void setThingName(CharSequence thingName) {
         this.thingName = thingName;
     }
 
-    public Thing withThingName(String thingName) {
+    public Thing withThingName(CharSequence thingName) {
         this.thingName = thingName;
         return this;
     }

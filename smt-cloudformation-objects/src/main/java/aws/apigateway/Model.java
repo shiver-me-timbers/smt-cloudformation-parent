@@ -32,28 +32,28 @@ public class Model {
      */
     @JsonProperty("ContentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-contenttype")
-    private String contentType;
+    private CharSequence contentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema
      * 
@@ -67,7 +67,7 @@ public class Model {
      * 
      */
     @JsonProperty("ContentType")
-    public String getContentType() {
+    public CharSequence getContentType() {
         return contentType;
     }
 
@@ -76,11 +76,11 @@ public class Model {
      * 
      */
     @JsonProperty("ContentType")
-    public void setContentType(String contentType) {
+    public void setContentType(CharSequence contentType) {
         this.contentType = contentType;
     }
 
-    public Model withContentType(String contentType) {
+    public Model withContentType(CharSequence contentType) {
         this.contentType = contentType;
         return this;
     }
@@ -90,7 +90,7 @@ public class Model {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -99,11 +99,11 @@ public class Model {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Model withDescription(String description) {
+    public Model withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -113,7 +113,7 @@ public class Model {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -122,11 +122,11 @@ public class Model {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Model withName(String name) {
+    public Model withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -136,7 +136,7 @@ public class Model {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -145,11 +145,11 @@ public class Model {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Model withRestApiId(String restApiId) {
+    public Model withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }

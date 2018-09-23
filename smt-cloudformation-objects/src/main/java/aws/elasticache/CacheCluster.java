@@ -54,7 +54,7 @@ public class CacheCluster {
      */
     @JsonProperty("AZMode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode")
-    private String aZMode;
+    private CharSequence aZMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade
      * 
@@ -68,56 +68,56 @@ public class CacheCluster {
      */
     @JsonProperty("CacheNodeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype")
-    private String cacheNodeType;
+    private CharSequence cacheNodeType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname
      * 
      */
     @JsonProperty("CacheParameterGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname")
-    private String cacheParameterGroupName;
+    private CharSequence cacheParameterGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames
      * 
      */
     @JsonProperty("CacheSecurityGroupNames")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames")
-    private List<String> cacheSecurityGroupNames = new ArrayList<String>();
+    private List<CharSequence> cacheSecurityGroupNames = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname")
-    private String cacheSubnetGroupName;
+    private CharSequence cacheSubnetGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername
      * 
      */
     @JsonProperty("ClusterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername")
-    private String clusterName;
+    private CharSequence clusterName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine
      * 
      */
     @JsonProperty("Engine")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine")
-    private String engine;
+    private CharSequence engine;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion
      * 
      */
     @JsonProperty("EngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion")
-    private String engineVersion;
+    private CharSequence engineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn
      * 
      */
     @JsonProperty("NotificationTopicArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn")
-    private String notificationTopicArn;
+    private CharSequence notificationTopicArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes
      * 
@@ -138,7 +138,7 @@ public class CacheCluster {
      */
     @JsonProperty("PreferredAvailabilityZone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone")
-    private String preferredAvailabilityZone;
+    private CharSequence preferredAvailabilityZone;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones
      * 
@@ -146,14 +146,14 @@ public class CacheCluster {
     @JsonProperty("PreferredAvailabilityZones")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones")
-    private Set<String> preferredAvailabilityZones = new LinkedHashSet<String>();
+    private Set<CharSequence> preferredAvailabilityZones = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow")
-    private String preferredMaintenanceWindow;
+    private CharSequence preferredMaintenanceWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns
      * 
@@ -161,14 +161,14 @@ public class CacheCluster {
     @JsonProperty("SnapshotArns")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns")
-    private Set<String> snapshotArns = new LinkedHashSet<String>();
+    private Set<CharSequence> snapshotArns = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname
      * 
      */
     @JsonProperty("SnapshotName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname")
-    private String snapshotName;
+    private CharSequence snapshotName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit
      * 
@@ -182,7 +182,7 @@ public class CacheCluster {
      */
     @JsonProperty("SnapshotWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow")
-    private String snapshotWindow;
+    private CharSequence snapshotWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-tags
      * 
@@ -196,14 +196,14 @@ public class CacheCluster {
      */
     @JsonProperty("VpcSecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-vpcsecuritygroupids")
-    private List<String> vpcSecurityGroupIds = new ArrayList<String>();
+    private List<CharSequence> vpcSecurityGroupIds = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode
      * 
      */
     @JsonProperty("AZMode")
-    public String getAZMode() {
+    public CharSequence getAZMode() {
         return aZMode;
     }
 
@@ -212,11 +212,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("AZMode")
-    public void setAZMode(String aZMode) {
+    public void setAZMode(CharSequence aZMode) {
         this.aZMode = aZMode;
     }
 
-    public CacheCluster withAZMode(String aZMode) {
+    public CacheCluster withAZMode(CharSequence aZMode) {
         this.aZMode = aZMode;
         return this;
     }
@@ -249,7 +249,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheNodeType")
-    public String getCacheNodeType() {
+    public CharSequence getCacheNodeType() {
         return cacheNodeType;
     }
 
@@ -258,11 +258,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheNodeType")
-    public void setCacheNodeType(String cacheNodeType) {
+    public void setCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
     }
 
-    public CacheCluster withCacheNodeType(String cacheNodeType) {
+    public CacheCluster withCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
         return this;
     }
@@ -272,7 +272,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheParameterGroupName")
-    public String getCacheParameterGroupName() {
+    public CharSequence getCacheParameterGroupName() {
         return cacheParameterGroupName;
     }
 
@@ -281,11 +281,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheParameterGroupName")
-    public void setCacheParameterGroupName(String cacheParameterGroupName) {
+    public void setCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
     }
 
-    public CacheCluster withCacheParameterGroupName(String cacheParameterGroupName) {
+    public CacheCluster withCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
         return this;
     }
@@ -295,7 +295,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheSecurityGroupNames")
-    public List<String> getCacheSecurityGroupNames() {
+    public List<CharSequence> getCacheSecurityGroupNames() {
         return cacheSecurityGroupNames;
     }
 
@@ -304,11 +304,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheSecurityGroupNames")
-    public void setCacheSecurityGroupNames(List<String> cacheSecurityGroupNames) {
+    public void setCacheSecurityGroupNames(List<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
     }
 
-    public CacheCluster withCacheSecurityGroupNames(List<String> cacheSecurityGroupNames) {
+    public CacheCluster withCacheSecurityGroupNames(List<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
         return this;
     }
@@ -318,7 +318,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public String getCacheSubnetGroupName() {
+    public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
 
@@ -327,11 +327,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("CacheSubnetGroupName")
-    public void setCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
 
-    public CacheCluster withCacheSubnetGroupName(String cacheSubnetGroupName) {
+    public CacheCluster withCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
         return this;
     }
@@ -341,7 +341,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("ClusterName")
-    public String getClusterName() {
+    public CharSequence getClusterName() {
         return clusterName;
     }
 
@@ -350,11 +350,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("ClusterName")
-    public void setClusterName(String clusterName) {
+    public void setClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
     }
 
-    public CacheCluster withClusterName(String clusterName) {
+    public CacheCluster withClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
         return this;
     }
@@ -364,7 +364,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("Engine")
-    public String getEngine() {
+    public CharSequence getEngine() {
         return engine;
     }
 
@@ -373,11 +373,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("Engine")
-    public void setEngine(String engine) {
+    public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
 
-    public CacheCluster withEngine(String engine) {
+    public CacheCluster withEngine(CharSequence engine) {
         this.engine = engine;
         return this;
     }
@@ -387,7 +387,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("EngineVersion")
-    public String getEngineVersion() {
+    public CharSequence getEngineVersion() {
         return engineVersion;
     }
 
@@ -396,11 +396,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("EngineVersion")
-    public void setEngineVersion(String engineVersion) {
+    public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
 
-    public CacheCluster withEngineVersion(String engineVersion) {
+    public CacheCluster withEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
         return this;
     }
@@ -410,7 +410,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("NotificationTopicArn")
-    public String getNotificationTopicArn() {
+    public CharSequence getNotificationTopicArn() {
         return notificationTopicArn;
     }
 
@@ -419,11 +419,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("NotificationTopicArn")
-    public void setNotificationTopicArn(String notificationTopicArn) {
+    public void setNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
     }
 
-    public CacheCluster withNotificationTopicArn(String notificationTopicArn) {
+    public CacheCluster withNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
         return this;
     }
@@ -479,7 +479,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredAvailabilityZone")
-    public String getPreferredAvailabilityZone() {
+    public CharSequence getPreferredAvailabilityZone() {
         return preferredAvailabilityZone;
     }
 
@@ -488,11 +488,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredAvailabilityZone")
-    public void setPreferredAvailabilityZone(String preferredAvailabilityZone) {
+    public void setPreferredAvailabilityZone(CharSequence preferredAvailabilityZone) {
         this.preferredAvailabilityZone = preferredAvailabilityZone;
     }
 
-    public CacheCluster withPreferredAvailabilityZone(String preferredAvailabilityZone) {
+    public CacheCluster withPreferredAvailabilityZone(CharSequence preferredAvailabilityZone) {
         this.preferredAvailabilityZone = preferredAvailabilityZone;
         return this;
     }
@@ -502,7 +502,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredAvailabilityZones")
-    public Set<String> getPreferredAvailabilityZones() {
+    public Set<CharSequence> getPreferredAvailabilityZones() {
         return preferredAvailabilityZones;
     }
 
@@ -511,11 +511,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredAvailabilityZones")
-    public void setPreferredAvailabilityZones(Set<String> preferredAvailabilityZones) {
+    public void setPreferredAvailabilityZones(Set<CharSequence> preferredAvailabilityZones) {
         this.preferredAvailabilityZones = preferredAvailabilityZones;
     }
 
-    public CacheCluster withPreferredAvailabilityZones(Set<String> preferredAvailabilityZones) {
+    public CacheCluster withPreferredAvailabilityZones(Set<CharSequence> preferredAvailabilityZones) {
         this.preferredAvailabilityZones = preferredAvailabilityZones;
         return this;
     }
@@ -525,7 +525,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public String getPreferredMaintenanceWindow() {
+    public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
 
@@ -534,11 +534,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("PreferredMaintenanceWindow")
-    public void setPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
 
-    public CacheCluster withPreferredMaintenanceWindow(String preferredMaintenanceWindow) {
+    public CacheCluster withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
         return this;
     }
@@ -548,7 +548,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotArns")
-    public Set<String> getSnapshotArns() {
+    public Set<CharSequence> getSnapshotArns() {
         return snapshotArns;
     }
 
@@ -557,11 +557,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotArns")
-    public void setSnapshotArns(Set<String> snapshotArns) {
+    public void setSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
     }
 
-    public CacheCluster withSnapshotArns(Set<String> snapshotArns) {
+    public CacheCluster withSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
         return this;
     }
@@ -571,7 +571,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotName")
-    public String getSnapshotName() {
+    public CharSequence getSnapshotName() {
         return snapshotName;
     }
 
@@ -580,11 +580,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotName")
-    public void setSnapshotName(String snapshotName) {
+    public void setSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
     }
 
-    public CacheCluster withSnapshotName(String snapshotName) {
+    public CacheCluster withSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
         return this;
     }
@@ -617,7 +617,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotWindow")
-    public String getSnapshotWindow() {
+    public CharSequence getSnapshotWindow() {
         return snapshotWindow;
     }
 
@@ -626,11 +626,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("SnapshotWindow")
-    public void setSnapshotWindow(String snapshotWindow) {
+    public void setSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
     }
 
-    public CacheCluster withSnapshotWindow(String snapshotWindow) {
+    public CacheCluster withSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
         return this;
     }
@@ -663,7 +663,7 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public List<String> getVpcSecurityGroupIds() {
+    public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
 
@@ -672,11 +672,11 @@ public class CacheCluster {
      * 
      */
     @JsonProperty("VpcSecurityGroupIds")
-    public void setVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
 
-    public CacheCluster withVpcSecurityGroupIds(List<String> vpcSecurityGroupIds) {
+    public CacheCluster withVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
         return this;
     }

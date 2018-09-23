@@ -44,7 +44,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("ClusterJDBCURL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-clusterjdbcurl")
-    private String clusterJDBCURL;
+    private CharSequence clusterJDBCURL;
     /**
      * CopyCommand
      * <p>
@@ -60,7 +60,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-password")
-    private String password;
+    private CharSequence password;
     /**
      * ProcessingConfiguration
      * <p>
@@ -76,7 +76,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("RoleARN")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn")
-    private String roleARN;
+    private CharSequence roleARN;
     /**
      * S3DestinationConfiguration
      * <p>
@@ -92,7 +92,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username")
-    private String username;
+    private CharSequence username;
 
     /**
      * CloudWatchLoggingOptions
@@ -126,7 +126,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("ClusterJDBCURL")
-    public String getClusterJDBCURL() {
+    public CharSequence getClusterJDBCURL() {
         return clusterJDBCURL;
     }
 
@@ -135,11 +135,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("ClusterJDBCURL")
-    public void setClusterJDBCURL(String clusterJDBCURL) {
+    public void setClusterJDBCURL(CharSequence clusterJDBCURL) {
         this.clusterJDBCURL = clusterJDBCURL;
     }
 
-    public RedshiftDestinationConfiguration withClusterJDBCURL(String clusterJDBCURL) {
+    public RedshiftDestinationConfiguration withClusterJDBCURL(CharSequence clusterJDBCURL) {
         this.clusterJDBCURL = clusterJDBCURL;
         return this;
     }
@@ -176,7 +176,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -185,11 +185,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public RedshiftDestinationConfiguration withPassword(String password) {
+    public RedshiftDestinationConfiguration withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -226,7 +226,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public String getRoleARN() {
+    public CharSequence getRoleARN() {
         return roleARN;
     }
 
@@ -235,11 +235,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("RoleARN")
-    public void setRoleARN(String roleARN) {
+    public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
 
-    public RedshiftDestinationConfiguration withRoleARN(String roleARN) {
+    public RedshiftDestinationConfiguration withRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
         return this;
     }
@@ -276,7 +276,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -285,11 +285,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public RedshiftDestinationConfiguration withUsername(String username) {
+    public RedshiftDestinationConfiguration withUsername(CharSequence username) {
         this.username = username;
         return this;
     }

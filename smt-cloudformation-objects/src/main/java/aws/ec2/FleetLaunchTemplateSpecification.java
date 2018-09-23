@@ -30,28 +30,28 @@ public class FleetLaunchTemplateSpecification {
      */
     @JsonProperty("LaunchTemplateId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid")
-    private String launchTemplateId;
+    private CharSequence launchTemplateId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename
      * 
      */
     @JsonProperty("LaunchTemplateName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplatename")
-    private String launchTemplateName;
+    private CharSequence launchTemplateName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version
      * 
      */
     @JsonProperty("Version")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-version")
-    private String version;
+    private CharSequence version;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid
      * 
      */
     @JsonProperty("LaunchTemplateId")
-    public String getLaunchTemplateId() {
+    public CharSequence getLaunchTemplateId() {
         return launchTemplateId;
     }
 
@@ -60,11 +60,11 @@ public class FleetLaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateId")
-    public void setLaunchTemplateId(String launchTemplateId) {
+    public void setLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
     }
 
-    public FleetLaunchTemplateSpecification withLaunchTemplateId(String launchTemplateId) {
+    public FleetLaunchTemplateSpecification withLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
         return this;
     }
@@ -74,7 +74,7 @@ public class FleetLaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public String getLaunchTemplateName() {
+    public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
 
@@ -83,11 +83,11 @@ public class FleetLaunchTemplateSpecification {
      * 
      */
     @JsonProperty("LaunchTemplateName")
-    public void setLaunchTemplateName(String launchTemplateName) {
+    public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
 
-    public FleetLaunchTemplateSpecification withLaunchTemplateName(String launchTemplateName) {
+    public FleetLaunchTemplateSpecification withLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
         return this;
     }
@@ -97,7 +97,7 @@ public class FleetLaunchTemplateSpecification {
      * 
      */
     @JsonProperty("Version")
-    public String getVersion() {
+    public CharSequence getVersion() {
         return version;
     }
 
@@ -106,11 +106,11 @@ public class FleetLaunchTemplateSpecification {
      * 
      */
     @JsonProperty("Version")
-    public void setVersion(String version) {
+    public void setVersion(CharSequence version) {
         this.version = version;
     }
 
-    public FleetLaunchTemplateSpecification withVersion(String version) {
+    public FleetLaunchTemplateSpecification withVersion(CharSequence version) {
         this.version = version;
         return this;
     }

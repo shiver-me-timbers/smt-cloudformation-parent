@@ -29,21 +29,21 @@ public class RedirectAllRequestsTo {
      */
     @JsonProperty("HostName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname")
-    private String hostName;
+    private CharSequence hostName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol
      * 
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol")
-    private String protocol;
+    private CharSequence protocol;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname
      * 
      */
     @JsonProperty("HostName")
-    public String getHostName() {
+    public CharSequence getHostName() {
         return hostName;
     }
 
@@ -52,11 +52,11 @@ public class RedirectAllRequestsTo {
      * 
      */
     @JsonProperty("HostName")
-    public void setHostName(String hostName) {
+    public void setHostName(CharSequence hostName) {
         this.hostName = hostName;
     }
 
-    public RedirectAllRequestsTo withHostName(String hostName) {
+    public RedirectAllRequestsTo withHostName(CharSequence hostName) {
         this.hostName = hostName;
         return this;
     }
@@ -66,7 +66,7 @@ public class RedirectAllRequestsTo {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -75,11 +75,11 @@ public class RedirectAllRequestsTo {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public RedirectAllRequestsTo withProtocol(String protocol) {
+    public RedirectAllRequestsTo withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }

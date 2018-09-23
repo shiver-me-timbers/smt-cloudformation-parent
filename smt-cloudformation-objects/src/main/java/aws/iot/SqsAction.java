@@ -30,14 +30,14 @@ public class SqsAction {
      */
     @JsonProperty("QueueUrl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl")
-    private String queueUrl;
+    private CharSequence queueUrl;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-usebase64
      * 
@@ -51,7 +51,7 @@ public class SqsAction {
      * 
      */
     @JsonProperty("QueueUrl")
-    public String getQueueUrl() {
+    public CharSequence getQueueUrl() {
         return queueUrl;
     }
 
@@ -60,11 +60,11 @@ public class SqsAction {
      * 
      */
     @JsonProperty("QueueUrl")
-    public void setQueueUrl(String queueUrl) {
+    public void setQueueUrl(CharSequence queueUrl) {
         this.queueUrl = queueUrl;
     }
 
-    public SqsAction withQueueUrl(String queueUrl) {
+    public SqsAction withQueueUrl(CharSequence queueUrl) {
         this.queueUrl = queueUrl;
         return this;
     }
@@ -74,7 +74,7 @@ public class SqsAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -83,11 +83,11 @@ public class SqsAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public SqsAction withRoleArn(String roleArn) {
+    public SqsAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

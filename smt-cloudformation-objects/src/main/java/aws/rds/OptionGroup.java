@@ -35,14 +35,14 @@ public class OptionGroup {
      */
     @JsonProperty("EngineName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-enginename")
-    private String engineName;
+    private CharSequence engineName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-majorengineversion
      * 
      */
     @JsonProperty("MajorEngineVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-majorengineversion")
-    private String majorEngineVersion;
+    private CharSequence majorEngineVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optionconfigurations
      * 
@@ -56,7 +56,7 @@ public class OptionGroup {
      */
     @JsonProperty("OptionGroupDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription")
-    private String optionGroupDescription;
+    private CharSequence optionGroupDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-tags
      * 
@@ -70,7 +70,7 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("EngineName")
-    public String getEngineName() {
+    public CharSequence getEngineName() {
         return engineName;
     }
 
@@ -79,11 +79,11 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("EngineName")
-    public void setEngineName(String engineName) {
+    public void setEngineName(CharSequence engineName) {
         this.engineName = engineName;
     }
 
-    public OptionGroup withEngineName(String engineName) {
+    public OptionGroup withEngineName(CharSequence engineName) {
         this.engineName = engineName;
         return this;
     }
@@ -93,7 +93,7 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("MajorEngineVersion")
-    public String getMajorEngineVersion() {
+    public CharSequence getMajorEngineVersion() {
         return majorEngineVersion;
     }
 
@@ -102,11 +102,11 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("MajorEngineVersion")
-    public void setMajorEngineVersion(String majorEngineVersion) {
+    public void setMajorEngineVersion(CharSequence majorEngineVersion) {
         this.majorEngineVersion = majorEngineVersion;
     }
 
-    public OptionGroup withMajorEngineVersion(String majorEngineVersion) {
+    public OptionGroup withMajorEngineVersion(CharSequence majorEngineVersion) {
         this.majorEngineVersion = majorEngineVersion;
         return this;
     }
@@ -139,7 +139,7 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("OptionGroupDescription")
-    public String getOptionGroupDescription() {
+    public CharSequence getOptionGroupDescription() {
         return optionGroupDescription;
     }
 
@@ -148,11 +148,11 @@ public class OptionGroup {
      * 
      */
     @JsonProperty("OptionGroupDescription")
-    public void setOptionGroupDescription(String optionGroupDescription) {
+    public void setOptionGroupDescription(CharSequence optionGroupDescription) {
         this.optionGroupDescription = optionGroupDescription;
     }
 
-    public OptionGroup withOptionGroupDescription(String optionGroupDescription) {
+    public OptionGroup withOptionGroupDescription(CharSequence optionGroupDescription) {
         this.optionGroupDescription = optionGroupDescription;
         return this;
     }

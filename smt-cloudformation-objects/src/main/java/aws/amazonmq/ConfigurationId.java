@@ -36,7 +36,7 @@ public class ConfigurationId {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-id")
-    private String id;
+    private CharSequence id;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-revision
@@ -66,7 +66,7 @@ public class ConfigurationId {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -75,11 +75,11 @@ public class ConfigurationId {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public ConfigurationId withId(String id) {
+    public ConfigurationId withId(CharSequence id) {
         this.id = id;
         return this;
     }

@@ -34,7 +34,7 @@ public class Scope {
      */
     @JsonProperty("ComplianceResourceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid")
-    private String complianceResourceId;
+    private CharSequence complianceResourceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes
      * 
@@ -42,28 +42,28 @@ public class Scope {
     @JsonProperty("ComplianceResourceTypes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes")
-    private Set<String> complianceResourceTypes = new LinkedHashSet<String>();
+    private Set<CharSequence> complianceResourceTypes = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey
      * 
      */
     @JsonProperty("TagKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey")
-    private String tagKey;
+    private CharSequence tagKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue
      * 
      */
     @JsonProperty("TagValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue")
-    private String tagValue;
+    private CharSequence tagValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid
      * 
      */
     @JsonProperty("ComplianceResourceId")
-    public String getComplianceResourceId() {
+    public CharSequence getComplianceResourceId() {
         return complianceResourceId;
     }
 
@@ -72,11 +72,11 @@ public class Scope {
      * 
      */
     @JsonProperty("ComplianceResourceId")
-    public void setComplianceResourceId(String complianceResourceId) {
+    public void setComplianceResourceId(CharSequence complianceResourceId) {
         this.complianceResourceId = complianceResourceId;
     }
 
-    public Scope withComplianceResourceId(String complianceResourceId) {
+    public Scope withComplianceResourceId(CharSequence complianceResourceId) {
         this.complianceResourceId = complianceResourceId;
         return this;
     }
@@ -86,7 +86,7 @@ public class Scope {
      * 
      */
     @JsonProperty("ComplianceResourceTypes")
-    public Set<String> getComplianceResourceTypes() {
+    public Set<CharSequence> getComplianceResourceTypes() {
         return complianceResourceTypes;
     }
 
@@ -95,11 +95,11 @@ public class Scope {
      * 
      */
     @JsonProperty("ComplianceResourceTypes")
-    public void setComplianceResourceTypes(Set<String> complianceResourceTypes) {
+    public void setComplianceResourceTypes(Set<CharSequence> complianceResourceTypes) {
         this.complianceResourceTypes = complianceResourceTypes;
     }
 
-    public Scope withComplianceResourceTypes(Set<String> complianceResourceTypes) {
+    public Scope withComplianceResourceTypes(Set<CharSequence> complianceResourceTypes) {
         this.complianceResourceTypes = complianceResourceTypes;
         return this;
     }
@@ -109,7 +109,7 @@ public class Scope {
      * 
      */
     @JsonProperty("TagKey")
-    public String getTagKey() {
+    public CharSequence getTagKey() {
         return tagKey;
     }
 
@@ -118,11 +118,11 @@ public class Scope {
      * 
      */
     @JsonProperty("TagKey")
-    public void setTagKey(String tagKey) {
+    public void setTagKey(CharSequence tagKey) {
         this.tagKey = tagKey;
     }
 
-    public Scope withTagKey(String tagKey) {
+    public Scope withTagKey(CharSequence tagKey) {
         this.tagKey = tagKey;
         return this;
     }
@@ -132,7 +132,7 @@ public class Scope {
      * 
      */
     @JsonProperty("TagValue")
-    public String getTagValue() {
+    public CharSequence getTagValue() {
         return tagValue;
     }
 
@@ -141,11 +141,11 @@ public class Scope {
      * 
      */
     @JsonProperty("TagValue")
-    public void setTagValue(String tagValue) {
+    public void setTagValue(CharSequence tagValue) {
         this.tagValue = tagValue;
     }
 
-    public Scope withTagValue(String tagValue) {
+    public Scope withTagValue(CharSequence tagValue) {
         this.tagValue = tagValue;
         return this;
     }

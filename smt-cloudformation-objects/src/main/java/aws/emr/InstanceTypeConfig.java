@@ -36,7 +36,7 @@ public class InstanceTypeConfig {
      */
     @JsonProperty("BidPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice")
-    private String bidPrice;
+    private CharSequence bidPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice
      * 
@@ -67,7 +67,7 @@ public class InstanceTypeConfig {
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-weightedcapacity
      * 
@@ -81,7 +81,7 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonProperty("BidPrice")
-    public String getBidPrice() {
+    public CharSequence getBidPrice() {
         return bidPrice;
     }
 
@@ -90,11 +90,11 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonProperty("BidPrice")
-    public void setBidPrice(String bidPrice) {
+    public void setBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
     }
 
-    public InstanceTypeConfig withBidPrice(String bidPrice) {
+    public InstanceTypeConfig withBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
         return this;
     }
@@ -177,7 +177,7 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -186,11 +186,11 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public InstanceTypeConfig withInstanceType(String instanceType) {
+    public InstanceTypeConfig withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }

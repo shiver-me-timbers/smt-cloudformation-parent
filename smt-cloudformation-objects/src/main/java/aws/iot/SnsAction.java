@@ -30,28 +30,28 @@ public class SnsAction {
      */
     @JsonProperty("MessageFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat")
-    private String messageFormat;
+    private CharSequence messageFormat;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-targetarn
      * 
      */
     @JsonProperty("TargetArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-targetarn")
-    private String targetArn;
+    private CharSequence targetArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat
      * 
      */
     @JsonProperty("MessageFormat")
-    public String getMessageFormat() {
+    public CharSequence getMessageFormat() {
         return messageFormat;
     }
 
@@ -60,11 +60,11 @@ public class SnsAction {
      * 
      */
     @JsonProperty("MessageFormat")
-    public void setMessageFormat(String messageFormat) {
+    public void setMessageFormat(CharSequence messageFormat) {
         this.messageFormat = messageFormat;
     }
 
-    public SnsAction withMessageFormat(String messageFormat) {
+    public SnsAction withMessageFormat(CharSequence messageFormat) {
         this.messageFormat = messageFormat;
         return this;
     }
@@ -74,7 +74,7 @@ public class SnsAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -83,11 +83,11 @@ public class SnsAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public SnsAction withRoleArn(String roleArn) {
+    public SnsAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -97,7 +97,7 @@ public class SnsAction {
      * 
      */
     @JsonProperty("TargetArn")
-    public String getTargetArn() {
+    public CharSequence getTargetArn() {
         return targetArn;
     }
 
@@ -106,11 +106,11 @@ public class SnsAction {
      * 
      */
     @JsonProperty("TargetArn")
-    public void setTargetArn(String targetArn) {
+    public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }
 
-    public SnsAction withTargetArn(String targetArn) {
+    public SnsAction withTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
         return this;
     }

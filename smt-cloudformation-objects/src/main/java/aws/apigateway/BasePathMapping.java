@@ -31,35 +31,35 @@ public class BasePathMapping {
      */
     @JsonProperty("BasePath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-basepath")
-    private String basePath;
+    private CharSequence basePath;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-domainname
      * 
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-stage
      * 
      */
     @JsonProperty("Stage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-stage")
-    private String stage;
+    private CharSequence stage;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-basepath
      * 
      */
     @JsonProperty("BasePath")
-    public String getBasePath() {
+    public CharSequence getBasePath() {
         return basePath;
     }
 
@@ -68,11 +68,11 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("BasePath")
-    public void setBasePath(String basePath) {
+    public void setBasePath(CharSequence basePath) {
         this.basePath = basePath;
     }
 
-    public BasePathMapping withBasePath(String basePath) {
+    public BasePathMapping withBasePath(CharSequence basePath) {
         this.basePath = basePath;
         return this;
     }
@@ -82,7 +82,7 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -91,11 +91,11 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public BasePathMapping withDomainName(String domainName) {
+    public BasePathMapping withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -105,7 +105,7 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -114,11 +114,11 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public BasePathMapping withRestApiId(String restApiId) {
+    public BasePathMapping withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -128,7 +128,7 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("Stage")
-    public String getStage() {
+    public CharSequence getStage() {
         return stage;
     }
 
@@ -137,11 +137,11 @@ public class BasePathMapping {
      * 
      */
     @JsonProperty("Stage")
-    public void setStage(String stage) {
+    public void setStage(CharSequence stage) {
         this.stage = stage;
     }
 
-    public BasePathMapping withStage(String stage) {
+    public BasePathMapping withStage(CharSequence stage) {
         this.stage = stage;
         return this;
     }

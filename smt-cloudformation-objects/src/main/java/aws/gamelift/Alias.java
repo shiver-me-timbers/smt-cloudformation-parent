@@ -30,14 +30,14 @@ public class Alias {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-name")
-    private String name;
+    private CharSequence name;
     /**
      * RoutingStrategy
      * <p>
@@ -53,7 +53,7 @@ public class Alias {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -62,11 +62,11 @@ public class Alias {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Alias withDescription(String description) {
+    public Alias withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -76,7 +76,7 @@ public class Alias {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -85,11 +85,11 @@ public class Alias {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Alias withName(String name) {
+    public Alias withName(CharSequence name) {
         this.name = name;
         return this;
     }

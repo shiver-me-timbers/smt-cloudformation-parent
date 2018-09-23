@@ -39,14 +39,14 @@ public class OrganizationAggregationSource {
      */
     @JsonProperty("AwsRegions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-awsregions")
-    private List<String> awsRegions = new ArrayList<String>();
+    private List<CharSequence> awsRegions = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions
@@ -76,7 +76,7 @@ public class OrganizationAggregationSource {
      * 
      */
     @JsonProperty("AwsRegions")
-    public List<String> getAwsRegions() {
+    public List<CharSequence> getAwsRegions() {
         return awsRegions;
     }
 
@@ -85,11 +85,11 @@ public class OrganizationAggregationSource {
      * 
      */
     @JsonProperty("AwsRegions")
-    public void setAwsRegions(List<String> awsRegions) {
+    public void setAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
     }
 
-    public OrganizationAggregationSource withAwsRegions(List<String> awsRegions) {
+    public OrganizationAggregationSource withAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
         return this;
     }
@@ -99,7 +99,7 @@ public class OrganizationAggregationSource {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -108,11 +108,11 @@ public class OrganizationAggregationSource {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public OrganizationAggregationSource withRoleArn(String roleArn) {
+    public OrganizationAggregationSource withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

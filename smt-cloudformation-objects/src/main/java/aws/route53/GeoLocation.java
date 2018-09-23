@@ -30,28 +30,28 @@ public class GeoLocation {
      */
     @JsonProperty("ContinentCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode")
-    private String continentCode;
+    private CharSequence continentCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode
      * 
      */
     @JsonProperty("CountryCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode")
-    private String countryCode;
+    private CharSequence countryCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode
      * 
      */
     @JsonProperty("SubdivisionCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode")
-    private String subdivisionCode;
+    private CharSequence subdivisionCode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode
      * 
      */
     @JsonProperty("ContinentCode")
-    public String getContinentCode() {
+    public CharSequence getContinentCode() {
         return continentCode;
     }
 
@@ -60,11 +60,11 @@ public class GeoLocation {
      * 
      */
     @JsonProperty("ContinentCode")
-    public void setContinentCode(String continentCode) {
+    public void setContinentCode(CharSequence continentCode) {
         this.continentCode = continentCode;
     }
 
-    public GeoLocation withContinentCode(String continentCode) {
+    public GeoLocation withContinentCode(CharSequence continentCode) {
         this.continentCode = continentCode;
         return this;
     }
@@ -74,7 +74,7 @@ public class GeoLocation {
      * 
      */
     @JsonProperty("CountryCode")
-    public String getCountryCode() {
+    public CharSequence getCountryCode() {
         return countryCode;
     }
 
@@ -83,11 +83,11 @@ public class GeoLocation {
      * 
      */
     @JsonProperty("CountryCode")
-    public void setCountryCode(String countryCode) {
+    public void setCountryCode(CharSequence countryCode) {
         this.countryCode = countryCode;
     }
 
-    public GeoLocation withCountryCode(String countryCode) {
+    public GeoLocation withCountryCode(CharSequence countryCode) {
         this.countryCode = countryCode;
         return this;
     }
@@ -97,7 +97,7 @@ public class GeoLocation {
      * 
      */
     @JsonProperty("SubdivisionCode")
-    public String getSubdivisionCode() {
+    public CharSequence getSubdivisionCode() {
         return subdivisionCode;
     }
 
@@ -106,11 +106,11 @@ public class GeoLocation {
      * 
      */
     @JsonProperty("SubdivisionCode")
-    public void setSubdivisionCode(String subdivisionCode) {
+    public void setSubdivisionCode(CharSequence subdivisionCode) {
         this.subdivisionCode = subdivisionCode;
     }
 
-    public GeoLocation withSubdivisionCode(String subdivisionCode) {
+    public GeoLocation withSubdivisionCode(CharSequence subdivisionCode) {
         this.subdivisionCode = subdivisionCode;
         return this;
     }

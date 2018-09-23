@@ -30,28 +30,28 @@ public class GraphQLSchema {
      */
     @JsonProperty("Definition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition")
-    private String definition;
+    private CharSequence definition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location
      * 
      */
     @JsonProperty("DefinitionS3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location")
-    private String definitionS3Location;
+    private CharSequence definitionS3Location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid
      * 
      */
     @JsonProperty("ApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid")
-    private String apiId;
+    private CharSequence apiId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition
      * 
      */
     @JsonProperty("Definition")
-    public String getDefinition() {
+    public CharSequence getDefinition() {
         return definition;
     }
 
@@ -60,11 +60,11 @@ public class GraphQLSchema {
      * 
      */
     @JsonProperty("Definition")
-    public void setDefinition(String definition) {
+    public void setDefinition(CharSequence definition) {
         this.definition = definition;
     }
 
-    public GraphQLSchema withDefinition(String definition) {
+    public GraphQLSchema withDefinition(CharSequence definition) {
         this.definition = definition;
         return this;
     }
@@ -74,7 +74,7 @@ public class GraphQLSchema {
      * 
      */
     @JsonProperty("DefinitionS3Location")
-    public String getDefinitionS3Location() {
+    public CharSequence getDefinitionS3Location() {
         return definitionS3Location;
     }
 
@@ -83,11 +83,11 @@ public class GraphQLSchema {
      * 
      */
     @JsonProperty("DefinitionS3Location")
-    public void setDefinitionS3Location(String definitionS3Location) {
+    public void setDefinitionS3Location(CharSequence definitionS3Location) {
         this.definitionS3Location = definitionS3Location;
     }
 
-    public GraphQLSchema withDefinitionS3Location(String definitionS3Location) {
+    public GraphQLSchema withDefinitionS3Location(CharSequence definitionS3Location) {
         this.definitionS3Location = definitionS3Location;
         return this;
     }
@@ -97,7 +97,7 @@ public class GraphQLSchema {
      * 
      */
     @JsonProperty("ApiId")
-    public String getApiId() {
+    public CharSequence getApiId() {
         return apiId;
     }
 
@@ -106,11 +106,11 @@ public class GraphQLSchema {
      * 
      */
     @JsonProperty("ApiId")
-    public void setApiId(String apiId) {
+    public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
 
-    public GraphQLSchema withApiId(String apiId) {
+    public GraphQLSchema withApiId(CharSequence apiId) {
         this.apiId = apiId;
         return this;
     }

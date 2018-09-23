@@ -38,21 +38,21 @@ public class NetworkInterfaceAttachment {
      */
     @JsonProperty("DeviceIndex")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deviceindex")
-    private String deviceIndex;
+    private CharSequence deviceIndex;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-networkinterfaceid
      * 
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-networkinterfaceid")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deleteonterm
@@ -82,7 +82,7 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("DeviceIndex")
-    public String getDeviceIndex() {
+    public CharSequence getDeviceIndex() {
         return deviceIndex;
     }
 
@@ -91,11 +91,11 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("DeviceIndex")
-    public void setDeviceIndex(String deviceIndex) {
+    public void setDeviceIndex(CharSequence deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
 
-    public NetworkInterfaceAttachment withDeviceIndex(String deviceIndex) {
+    public NetworkInterfaceAttachment withDeviceIndex(CharSequence deviceIndex) {
         this.deviceIndex = deviceIndex;
         return this;
     }
@@ -105,7 +105,7 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -114,11 +114,11 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public NetworkInterfaceAttachment withInstanceId(String instanceId) {
+    public NetworkInterfaceAttachment withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -128,7 +128,7 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -137,11 +137,11 @@ public class NetworkInterfaceAttachment {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public NetworkInterfaceAttachment withNetworkInterfaceId(String networkInterfaceId) {
+    public NetworkInterfaceAttachment withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }

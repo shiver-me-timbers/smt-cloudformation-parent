@@ -35,7 +35,7 @@ public class StepScalingPolicyConfiguration {
      */
     @JsonProperty("AdjustmentType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype")
-    private String adjustmentType;
+    private CharSequence adjustmentType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown
      * 
@@ -49,7 +49,7 @@ public class StepScalingPolicyConfiguration {
      */
     @JsonProperty("MetricAggregationType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype")
-    private String metricAggregationType;
+    private CharSequence metricAggregationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude
      * 
@@ -71,7 +71,7 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public String getAdjustmentType() {
+    public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
 
@@ -80,11 +80,11 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("AdjustmentType")
-    public void setAdjustmentType(String adjustmentType) {
+    public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
 
-    public StepScalingPolicyConfiguration withAdjustmentType(String adjustmentType) {
+    public StepScalingPolicyConfiguration withAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
         return this;
     }
@@ -117,7 +117,7 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("MetricAggregationType")
-    public String getMetricAggregationType() {
+    public CharSequence getMetricAggregationType() {
         return metricAggregationType;
     }
 
@@ -126,11 +126,11 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonProperty("MetricAggregationType")
-    public void setMetricAggregationType(String metricAggregationType) {
+    public void setMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
     }
 
-    public StepScalingPolicyConfiguration withMetricAggregationType(String metricAggregationType) {
+    public StepScalingPolicyConfiguration withMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
         return this;
     }

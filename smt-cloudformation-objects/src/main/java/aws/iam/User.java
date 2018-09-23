@@ -38,7 +38,7 @@ public class User {
      */
     @JsonProperty("Groups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups")
-    private List<String> groups = new ArrayList<String>();
+    private List<CharSequence> groups = new ArrayList<CharSequence>();
     /**
      * LoginProfile
      * <p>
@@ -55,14 +55,14 @@ public class User {
     @JsonProperty("ManagedPolicyArns")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns")
-    private Set<String> managedPolicyArns = new LinkedHashSet<String>();
+    private Set<CharSequence> managedPolicyArns = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies
      * 
@@ -76,14 +76,14 @@ public class User {
      */
     @JsonProperty("UserName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username")
-    private String userName;
+    private CharSequence userName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups
      * 
      */
     @JsonProperty("Groups")
-    public List<String> getGroups() {
+    public List<CharSequence> getGroups() {
         return groups;
     }
 
@@ -92,11 +92,11 @@ public class User {
      * 
      */
     @JsonProperty("Groups")
-    public void setGroups(List<String> groups) {
+    public void setGroups(List<CharSequence> groups) {
         this.groups = groups;
     }
 
-    public User withGroups(List<String> groups) {
+    public User withGroups(List<CharSequence> groups) {
         this.groups = groups;
         return this;
     }
@@ -133,7 +133,7 @@ public class User {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public Set<String> getManagedPolicyArns() {
+    public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
 
@@ -142,11 +142,11 @@ public class User {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public void setManagedPolicyArns(Set<String> managedPolicyArns) {
+    public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
 
-    public User withManagedPolicyArns(Set<String> managedPolicyArns) {
+    public User withManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
         return this;
     }
@@ -156,7 +156,7 @@ public class User {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -165,11 +165,11 @@ public class User {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public User withPath(String path) {
+    public User withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -202,7 +202,7 @@ public class User {
      * 
      */
     @JsonProperty("UserName")
-    public String getUserName() {
+    public CharSequence getUserName() {
         return userName;
     }
 
@@ -211,11 +211,11 @@ public class User {
      * 
      */
     @JsonProperty("UserName")
-    public void setUserName(String userName) {
+    public void setUserName(CharSequence userName) {
         this.userName = userName;
     }
 
-    public User withUserName(String userName) {
+    public User withUserName(CharSequence userName) {
         this.userName = userName;
         return this;
     }

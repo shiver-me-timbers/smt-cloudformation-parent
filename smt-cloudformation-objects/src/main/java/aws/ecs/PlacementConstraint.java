@@ -29,21 +29,21 @@ public class PlacementConstraint {
      */
     @JsonProperty("Expression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-expression")
-    private String expression;
+    private CharSequence expression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-expression
      * 
      */
     @JsonProperty("Expression")
-    public String getExpression() {
+    public CharSequence getExpression() {
         return expression;
     }
 
@@ -52,11 +52,11 @@ public class PlacementConstraint {
      * 
      */
     @JsonProperty("Expression")
-    public void setExpression(String expression) {
+    public void setExpression(CharSequence expression) {
         this.expression = expression;
     }
 
-    public PlacementConstraint withExpression(String expression) {
+    public PlacementConstraint withExpression(CharSequence expression) {
         this.expression = expression;
         return this;
     }
@@ -66,7 +66,7 @@ public class PlacementConstraint {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -75,11 +75,11 @@ public class PlacementConstraint {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public PlacementConstraint withType(String type) {
+    public PlacementConstraint withType(CharSequence type) {
         this.type = type;
         return this;
     }

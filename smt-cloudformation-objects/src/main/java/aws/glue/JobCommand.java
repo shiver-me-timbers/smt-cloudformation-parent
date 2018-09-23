@@ -29,21 +29,21 @@ public class JobCommand {
      */
     @JsonProperty("ScriptLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-scriptlocation")
-    private String scriptLocation;
+    private CharSequence scriptLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html#cfn-glue-job-jobcommand-scriptlocation
      * 
      */
     @JsonProperty("ScriptLocation")
-    public String getScriptLocation() {
+    public CharSequence getScriptLocation() {
         return scriptLocation;
     }
 
@@ -52,11 +52,11 @@ public class JobCommand {
      * 
      */
     @JsonProperty("ScriptLocation")
-    public void setScriptLocation(String scriptLocation) {
+    public void setScriptLocation(CharSequence scriptLocation) {
         this.scriptLocation = scriptLocation;
     }
 
-    public JobCommand withScriptLocation(String scriptLocation) {
+    public JobCommand withScriptLocation(CharSequence scriptLocation) {
         this.scriptLocation = scriptLocation;
         return this;
     }
@@ -66,7 +66,7 @@ public class JobCommand {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -75,11 +75,11 @@ public class JobCommand {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public JobCommand withName(String name) {
+    public JobCommand withName(CharSequence name) {
         this.name = name;
         return this;
     }

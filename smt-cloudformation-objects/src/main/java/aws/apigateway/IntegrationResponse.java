@@ -33,7 +33,7 @@ public class IntegrationResponse {
      */
     @JsonProperty("ContentHandling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integrationresponse-contenthandling")
-    private java.lang.String contentHandling;
+    private CharSequence contentHandling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responseparameters
      * 
@@ -54,21 +54,21 @@ public class IntegrationResponse {
      */
     @JsonProperty("SelectionPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-selectionpattern")
-    private java.lang.String selectionPattern;
+    private CharSequence selectionPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-statuscode
      * 
      */
     @JsonProperty("StatusCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-statuscode")
-    private java.lang.String statusCode;
+    private CharSequence statusCode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integrationresponse-contenthandling
      * 
      */
     @JsonProperty("ContentHandling")
-    public java.lang.String getContentHandling() {
+    public CharSequence getContentHandling() {
         return contentHandling;
     }
 
@@ -77,11 +77,11 @@ public class IntegrationResponse {
      * 
      */
     @JsonProperty("ContentHandling")
-    public void setContentHandling(java.lang.String contentHandling) {
+    public void setContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
     }
 
-    public IntegrationResponse withContentHandling(java.lang.String contentHandling) {
+    public IntegrationResponse withContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
         return this;
     }
@@ -137,7 +137,7 @@ public class IntegrationResponse {
      * 
      */
     @JsonProperty("SelectionPattern")
-    public java.lang.String getSelectionPattern() {
+    public CharSequence getSelectionPattern() {
         return selectionPattern;
     }
 
@@ -146,11 +146,11 @@ public class IntegrationResponse {
      * 
      */
     @JsonProperty("SelectionPattern")
-    public void setSelectionPattern(java.lang.String selectionPattern) {
+    public void setSelectionPattern(CharSequence selectionPattern) {
         this.selectionPattern = selectionPattern;
     }
 
-    public IntegrationResponse withSelectionPattern(java.lang.String selectionPattern) {
+    public IntegrationResponse withSelectionPattern(CharSequence selectionPattern) {
         this.selectionPattern = selectionPattern;
         return this;
     }
@@ -160,7 +160,7 @@ public class IntegrationResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public java.lang.String getStatusCode() {
+    public CharSequence getStatusCode() {
         return statusCode;
     }
 
@@ -169,11 +169,11 @@ public class IntegrationResponse {
      * 
      */
     @JsonProperty("StatusCode")
-    public void setStatusCode(java.lang.String statusCode) {
+    public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }
 
-    public IntegrationResponse withStatusCode(java.lang.String statusCode) {
+    public IntegrationResponse withStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
         return this;
     }

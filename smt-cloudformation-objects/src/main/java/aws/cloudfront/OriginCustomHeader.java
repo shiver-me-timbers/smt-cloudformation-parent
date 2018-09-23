@@ -29,21 +29,21 @@ public class OriginCustomHeader {
      */
     @JsonProperty("HeaderValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headervalue")
-    private String headerValue;
+    private CharSequence headerValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headername
      * 
      */
     @JsonProperty("HeaderName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headername")
-    private String headerName;
+    private CharSequence headerName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headervalue
      * 
      */
     @JsonProperty("HeaderValue")
-    public String getHeaderValue() {
+    public CharSequence getHeaderValue() {
         return headerValue;
     }
 
@@ -52,11 +52,11 @@ public class OriginCustomHeader {
      * 
      */
     @JsonProperty("HeaderValue")
-    public void setHeaderValue(String headerValue) {
+    public void setHeaderValue(CharSequence headerValue) {
         this.headerValue = headerValue;
     }
 
-    public OriginCustomHeader withHeaderValue(String headerValue) {
+    public OriginCustomHeader withHeaderValue(CharSequence headerValue) {
         this.headerValue = headerValue;
         return this;
     }
@@ -66,7 +66,7 @@ public class OriginCustomHeader {
      * 
      */
     @JsonProperty("HeaderName")
-    public String getHeaderName() {
+    public CharSequence getHeaderName() {
         return headerName;
     }
 
@@ -75,11 +75,11 @@ public class OriginCustomHeader {
      * 
      */
     @JsonProperty("HeaderName")
-    public void setHeaderName(String headerName) {
+    public void setHeaderName(CharSequence headerName) {
         this.headerName = headerName;
     }
 
-    public OriginCustomHeader withHeaderName(String headerName) {
+    public OriginCustomHeader withHeaderName(CharSequence headerName) {
         this.headerName = headerName;
         return this;
     }

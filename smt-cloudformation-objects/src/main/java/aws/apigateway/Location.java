@@ -32,42 +32,42 @@ public class Location {
      */
     @JsonProperty("Method")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-method")
-    private String method;
+    private CharSequence method;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-statuscode
      * 
      */
     @JsonProperty("StatusCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-statuscode")
-    private String statusCode;
+    private CharSequence statusCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-method
      * 
      */
     @JsonProperty("Method")
-    public String getMethod() {
+    public CharSequence getMethod() {
         return method;
     }
 
@@ -76,11 +76,11 @@ public class Location {
      * 
      */
     @JsonProperty("Method")
-    public void setMethod(String method) {
+    public void setMethod(CharSequence method) {
         this.method = method;
     }
 
-    public Location withMethod(String method) {
+    public Location withMethod(CharSequence method) {
         this.method = method;
         return this;
     }
@@ -90,7 +90,7 @@ public class Location {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -99,11 +99,11 @@ public class Location {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Location withName(String name) {
+    public Location withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -113,7 +113,7 @@ public class Location {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -122,11 +122,11 @@ public class Location {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public Location withPath(String path) {
+    public Location withPath(CharSequence path) {
         this.path = path;
         return this;
     }
@@ -136,7 +136,7 @@ public class Location {
      * 
      */
     @JsonProperty("StatusCode")
-    public String getStatusCode() {
+    public CharSequence getStatusCode() {
         return statusCode;
     }
 
@@ -145,11 +145,11 @@ public class Location {
      * 
      */
     @JsonProperty("StatusCode")
-    public void setStatusCode(String statusCode) {
+    public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }
 
-    public Location withStatusCode(String statusCode) {
+    public Location withStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
         return this;
     }
@@ -159,7 +159,7 @@ public class Location {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -168,11 +168,11 @@ public class Location {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Location withType(String type) {
+    public Location withType(CharSequence type) {
         this.type = type;
         return this;
     }

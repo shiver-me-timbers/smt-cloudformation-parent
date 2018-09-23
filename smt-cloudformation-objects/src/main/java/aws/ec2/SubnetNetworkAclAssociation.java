@@ -29,21 +29,21 @@ public class SubnetNetworkAclAssociation {
      */
     @JsonProperty("NetworkAclId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid")
-    private String networkAclId;
+    private CharSequence networkAclId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-associationid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-associationid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid
      * 
      */
     @JsonProperty("NetworkAclId")
-    public String getNetworkAclId() {
+    public CharSequence getNetworkAclId() {
         return networkAclId;
     }
 
@@ -52,11 +52,11 @@ public class SubnetNetworkAclAssociation {
      * 
      */
     @JsonProperty("NetworkAclId")
-    public void setNetworkAclId(String networkAclId) {
+    public void setNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
     }
 
-    public SubnetNetworkAclAssociation withNetworkAclId(String networkAclId) {
+    public SubnetNetworkAclAssociation withNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
         return this;
     }
@@ -66,7 +66,7 @@ public class SubnetNetworkAclAssociation {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -75,11 +75,11 @@ public class SubnetNetworkAclAssociation {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public SubnetNetworkAclAssociation withSubnetId(String subnetId) {
+    public SubnetNetworkAclAssociation withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

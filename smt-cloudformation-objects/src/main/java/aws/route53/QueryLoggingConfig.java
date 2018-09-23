@@ -28,14 +28,14 @@ public class QueryLoggingConfig {
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn")
-    private String cloudWatchLogsLogGroupArn;
+    private CharSequence cloudWatchLogsLogGroupArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn
      * 
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
-    public String getCloudWatchLogsLogGroupArn() {
+    public CharSequence getCloudWatchLogsLogGroupArn() {
         return cloudWatchLogsLogGroupArn;
     }
 
@@ -44,11 +44,11 @@ public class QueryLoggingConfig {
      * 
      */
     @JsonProperty("CloudWatchLogsLogGroupArn")
-    public void setCloudWatchLogsLogGroupArn(String cloudWatchLogsLogGroupArn) {
+    public void setCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
     }
 
-    public QueryLoggingConfig withCloudWatchLogsLogGroupArn(String cloudWatchLogsLogGroupArn) {
+    public QueryLoggingConfig withCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
         return this;
     }

@@ -38,7 +38,7 @@ public class QueuePolicy {
      */
     @JsonProperty("Queues")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-queues")
-    private List<String> queues = new ArrayList<String>();
+    private List<CharSequence> queues = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc
@@ -68,7 +68,7 @@ public class QueuePolicy {
      * 
      */
     @JsonProperty("Queues")
-    public List<String> getQueues() {
+    public List<CharSequence> getQueues() {
         return queues;
     }
 
@@ -77,11 +77,11 @@ public class QueuePolicy {
      * 
      */
     @JsonProperty("Queues")
-    public void setQueues(List<String> queues) {
+    public void setQueues(List<CharSequence> queues) {
         this.queues = queues;
     }
 
-    public QueuePolicy withQueues(List<String> queues) {
+    public QueuePolicy withQueues(List<CharSequence> queues) {
         this.queues = queues;
         return this;
     }

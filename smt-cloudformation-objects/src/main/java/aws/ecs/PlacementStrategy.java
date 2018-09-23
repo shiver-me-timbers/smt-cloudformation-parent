@@ -29,21 +29,21 @@ public class PlacementStrategy {
      */
     @JsonProperty("Field")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementstrategy.html#cfn-ecs-service-placementstrategy-field")
-    private String field;
+    private CharSequence field;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementstrategy.html#cfn-ecs-service-placementstrategy-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementstrategy.html#cfn-ecs-service-placementstrategy-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementstrategy.html#cfn-ecs-service-placementstrategy-field
      * 
      */
     @JsonProperty("Field")
-    public String getField() {
+    public CharSequence getField() {
         return field;
     }
 
@@ -52,11 +52,11 @@ public class PlacementStrategy {
      * 
      */
     @JsonProperty("Field")
-    public void setField(String field) {
+    public void setField(CharSequence field) {
         this.field = field;
     }
 
-    public PlacementStrategy withField(String field) {
+    public PlacementStrategy withField(CharSequence field) {
         this.field = field;
         return this;
     }
@@ -66,7 +66,7 @@ public class PlacementStrategy {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -75,11 +75,11 @@ public class PlacementStrategy {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public PlacementStrategy withType(String type) {
+    public PlacementStrategy withType(CharSequence type) {
         this.type = type;
         return this;
     }

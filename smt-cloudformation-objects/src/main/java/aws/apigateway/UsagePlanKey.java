@@ -30,28 +30,28 @@ public class UsagePlanKey {
      */
     @JsonProperty("KeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid")
-    private String keyId;
+    private CharSequence keyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype
      * 
      */
     @JsonProperty("KeyType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype")
-    private String keyType;
+    private CharSequence keyType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid
      * 
      */
     @JsonProperty("UsagePlanId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid")
-    private String usagePlanId;
+    private CharSequence usagePlanId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid
      * 
      */
     @JsonProperty("KeyId")
-    public String getKeyId() {
+    public CharSequence getKeyId() {
         return keyId;
     }
 
@@ -60,11 +60,11 @@ public class UsagePlanKey {
      * 
      */
     @JsonProperty("KeyId")
-    public void setKeyId(String keyId) {
+    public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }
 
-    public UsagePlanKey withKeyId(String keyId) {
+    public UsagePlanKey withKeyId(CharSequence keyId) {
         this.keyId = keyId;
         return this;
     }
@@ -74,7 +74,7 @@ public class UsagePlanKey {
      * 
      */
     @JsonProperty("KeyType")
-    public String getKeyType() {
+    public CharSequence getKeyType() {
         return keyType;
     }
 
@@ -83,11 +83,11 @@ public class UsagePlanKey {
      * 
      */
     @JsonProperty("KeyType")
-    public void setKeyType(String keyType) {
+    public void setKeyType(CharSequence keyType) {
         this.keyType = keyType;
     }
 
-    public UsagePlanKey withKeyType(String keyType) {
+    public UsagePlanKey withKeyType(CharSequence keyType) {
         this.keyType = keyType;
         return this;
     }
@@ -97,7 +97,7 @@ public class UsagePlanKey {
      * 
      */
     @JsonProperty("UsagePlanId")
-    public String getUsagePlanId() {
+    public CharSequence getUsagePlanId() {
         return usagePlanId;
     }
 
@@ -106,11 +106,11 @@ public class UsagePlanKey {
      * 
      */
     @JsonProperty("UsagePlanId")
-    public void setUsagePlanId(String usagePlanId) {
+    public void setUsagePlanId(CharSequence usagePlanId) {
         this.usagePlanId = usagePlanId;
     }
 
-    public UsagePlanKey withUsagePlanId(String usagePlanId) {
+    public UsagePlanKey withUsagePlanId(CharSequence usagePlanId) {
         this.usagePlanId = usagePlanId;
         return this;
     }

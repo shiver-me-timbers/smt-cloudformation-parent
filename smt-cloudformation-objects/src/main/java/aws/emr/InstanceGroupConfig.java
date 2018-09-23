@@ -47,7 +47,7 @@ public class InstanceGroupConfig {
      */
     @JsonProperty("BidPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice")
-    private String bidPrice;
+    private CharSequence bidPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations
      * 
@@ -78,21 +78,21 @@ public class InstanceGroupConfig {
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market
      * 
      */
     @JsonProperty("Market")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market")
-    private String market;
+    private CharSequence market;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * AutoScalingPolicy
@@ -126,7 +126,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("BidPrice")
-    public String getBidPrice() {
+    public CharSequence getBidPrice() {
         return bidPrice;
     }
 
@@ -135,11 +135,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("BidPrice")
-    public void setBidPrice(String bidPrice) {
+    public void setBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
     }
 
-    public InstanceGroupConfig withBidPrice(String bidPrice) {
+    public InstanceGroupConfig withBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
         return this;
     }
@@ -222,7 +222,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -231,11 +231,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public InstanceGroupConfig withInstanceType(String instanceType) {
+    public InstanceGroupConfig withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -245,7 +245,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("Market")
-    public String getMarket() {
+    public CharSequence getMarket() {
         return market;
     }
 
@@ -254,11 +254,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("Market")
-    public void setMarket(String market) {
+    public void setMarket(CharSequence market) {
         this.market = market;
     }
 
-    public InstanceGroupConfig withMarket(String market) {
+    public InstanceGroupConfig withMarket(CharSequence market) {
         this.market = market;
         return this;
     }
@@ -268,7 +268,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -277,11 +277,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public InstanceGroupConfig withName(String name) {
+    public InstanceGroupConfig withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -38,35 +38,35 @@ public class MongoDbSettings {
      */
     @JsonProperty("AuthSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authsource")
-    private String authSource;
+    private CharSequence authSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authmechanism
      * 
      */
     @JsonProperty("AuthMechanism")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authmechanism")
-    private String authMechanism;
+    private CharSequence authMechanism;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-username
      * 
      */
     @JsonProperty("Username")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-username")
-    private String username;
+    private CharSequence username;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-docstoinvestigate
      * 
      */
     @JsonProperty("DocsToInvestigate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-docstoinvestigate")
-    private String docsToInvestigate;
+    private CharSequence docsToInvestigate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-servername
      * 
      */
     @JsonProperty("ServerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-servername")
-    private String serverName;
+    private CharSequence serverName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-port
      * 
@@ -80,42 +80,42 @@ public class MongoDbSettings {
      */
     @JsonProperty("ExtractDocId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-extractdocid")
-    private String extractDocId;
+    private CharSequence extractDocId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-databasename
      * 
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authtype
      * 
      */
     @JsonProperty("AuthType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authtype")
-    private String authType;
+    private CharSequence authType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-password
      * 
      */
     @JsonProperty("Password")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-password")
-    private String password;
+    private CharSequence password;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-nestinglevel
      * 
      */
     @JsonProperty("NestingLevel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-nestinglevel")
-    private String nestingLevel;
+    private CharSequence nestingLevel;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authsource
      * 
      */
     @JsonProperty("AuthSource")
-    public String getAuthSource() {
+    public CharSequence getAuthSource() {
         return authSource;
     }
 
@@ -124,11 +124,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("AuthSource")
-    public void setAuthSource(String authSource) {
+    public void setAuthSource(CharSequence authSource) {
         this.authSource = authSource;
     }
 
-    public MongoDbSettings withAuthSource(String authSource) {
+    public MongoDbSettings withAuthSource(CharSequence authSource) {
         this.authSource = authSource;
         return this;
     }
@@ -138,7 +138,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("AuthMechanism")
-    public String getAuthMechanism() {
+    public CharSequence getAuthMechanism() {
         return authMechanism;
     }
 
@@ -147,11 +147,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("AuthMechanism")
-    public void setAuthMechanism(String authMechanism) {
+    public void setAuthMechanism(CharSequence authMechanism) {
         this.authMechanism = authMechanism;
     }
 
-    public MongoDbSettings withAuthMechanism(String authMechanism) {
+    public MongoDbSettings withAuthMechanism(CharSequence authMechanism) {
         this.authMechanism = authMechanism;
         return this;
     }
@@ -161,7 +161,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("Username")
-    public String getUsername() {
+    public CharSequence getUsername() {
         return username;
     }
 
@@ -170,11 +170,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("Username")
-    public void setUsername(String username) {
+    public void setUsername(CharSequence username) {
         this.username = username;
     }
 
-    public MongoDbSettings withUsername(String username) {
+    public MongoDbSettings withUsername(CharSequence username) {
         this.username = username;
         return this;
     }
@@ -184,7 +184,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("DocsToInvestigate")
-    public String getDocsToInvestigate() {
+    public CharSequence getDocsToInvestigate() {
         return docsToInvestigate;
     }
 
@@ -193,11 +193,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("DocsToInvestigate")
-    public void setDocsToInvestigate(String docsToInvestigate) {
+    public void setDocsToInvestigate(CharSequence docsToInvestigate) {
         this.docsToInvestigate = docsToInvestigate;
     }
 
-    public MongoDbSettings withDocsToInvestigate(String docsToInvestigate) {
+    public MongoDbSettings withDocsToInvestigate(CharSequence docsToInvestigate) {
         this.docsToInvestigate = docsToInvestigate;
         return this;
     }
@@ -207,7 +207,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("ServerName")
-    public String getServerName() {
+    public CharSequence getServerName() {
         return serverName;
     }
 
@@ -216,11 +216,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("ServerName")
-    public void setServerName(String serverName) {
+    public void setServerName(CharSequence serverName) {
         this.serverName = serverName;
     }
 
-    public MongoDbSettings withServerName(String serverName) {
+    public MongoDbSettings withServerName(CharSequence serverName) {
         this.serverName = serverName;
         return this;
     }
@@ -253,7 +253,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("ExtractDocId")
-    public String getExtractDocId() {
+    public CharSequence getExtractDocId() {
         return extractDocId;
     }
 
@@ -262,11 +262,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("ExtractDocId")
-    public void setExtractDocId(String extractDocId) {
+    public void setExtractDocId(CharSequence extractDocId) {
         this.extractDocId = extractDocId;
     }
 
-    public MongoDbSettings withExtractDocId(String extractDocId) {
+    public MongoDbSettings withExtractDocId(CharSequence extractDocId) {
         this.extractDocId = extractDocId;
         return this;
     }
@@ -276,7 +276,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -285,11 +285,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public MongoDbSettings withDatabaseName(String databaseName) {
+    public MongoDbSettings withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -299,7 +299,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("AuthType")
-    public String getAuthType() {
+    public CharSequence getAuthType() {
         return authType;
     }
 
@@ -308,11 +308,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("AuthType")
-    public void setAuthType(String authType) {
+    public void setAuthType(CharSequence authType) {
         this.authType = authType;
     }
 
-    public MongoDbSettings withAuthType(String authType) {
+    public MongoDbSettings withAuthType(CharSequence authType) {
         this.authType = authType;
         return this;
     }
@@ -322,7 +322,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("Password")
-    public String getPassword() {
+    public CharSequence getPassword() {
         return password;
     }
 
@@ -331,11 +331,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("Password")
-    public void setPassword(String password) {
+    public void setPassword(CharSequence password) {
         this.password = password;
     }
 
-    public MongoDbSettings withPassword(String password) {
+    public MongoDbSettings withPassword(CharSequence password) {
         this.password = password;
         return this;
     }
@@ -345,7 +345,7 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("NestingLevel")
-    public String getNestingLevel() {
+    public CharSequence getNestingLevel() {
         return nestingLevel;
     }
 
@@ -354,11 +354,11 @@ public class MongoDbSettings {
      * 
      */
     @JsonProperty("NestingLevel")
-    public void setNestingLevel(String nestingLevel) {
+    public void setNestingLevel(CharSequence nestingLevel) {
         this.nestingLevel = nestingLevel;
     }
 
-    public MongoDbSettings withNestingLevel(String nestingLevel) {
+    public MongoDbSettings withNestingLevel(CharSequence nestingLevel) {
         this.nestingLevel = nestingLevel;
         return this;
     }

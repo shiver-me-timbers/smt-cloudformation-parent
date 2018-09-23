@@ -31,35 +31,35 @@ public class UserPoolConfig {
      */
     @JsonProperty("AppIdClientRegex")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-appidclientregex")
-    private String appIdClientRegex;
+    private CharSequence appIdClientRegex;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-userpoolid
      * 
      */
     @JsonProperty("UserPoolId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-userpoolid")
-    private String userPoolId;
+    private CharSequence userPoolId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-awsregion
      * 
      */
     @JsonProperty("AwsRegion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-awsregion")
-    private String awsRegion;
+    private CharSequence awsRegion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-defaultaction
      * 
      */
     @JsonProperty("DefaultAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-defaultaction")
-    private String defaultAction;
+    private CharSequence defaultAction;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-appidclientregex
      * 
      */
     @JsonProperty("AppIdClientRegex")
-    public String getAppIdClientRegex() {
+    public CharSequence getAppIdClientRegex() {
         return appIdClientRegex;
     }
 
@@ -68,11 +68,11 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("AppIdClientRegex")
-    public void setAppIdClientRegex(String appIdClientRegex) {
+    public void setAppIdClientRegex(CharSequence appIdClientRegex) {
         this.appIdClientRegex = appIdClientRegex;
     }
 
-    public UserPoolConfig withAppIdClientRegex(String appIdClientRegex) {
+    public UserPoolConfig withAppIdClientRegex(CharSequence appIdClientRegex) {
         this.appIdClientRegex = appIdClientRegex;
         return this;
     }
@@ -82,7 +82,7 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("UserPoolId")
-    public String getUserPoolId() {
+    public CharSequence getUserPoolId() {
         return userPoolId;
     }
 
@@ -91,11 +91,11 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("UserPoolId")
-    public void setUserPoolId(String userPoolId) {
+    public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
 
-    public UserPoolConfig withUserPoolId(String userPoolId) {
+    public UserPoolConfig withUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
         return this;
     }
@@ -105,7 +105,7 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("AwsRegion")
-    public String getAwsRegion() {
+    public CharSequence getAwsRegion() {
         return awsRegion;
     }
 
@@ -114,11 +114,11 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("AwsRegion")
-    public void setAwsRegion(String awsRegion) {
+    public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
 
-    public UserPoolConfig withAwsRegion(String awsRegion) {
+    public UserPoolConfig withAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
         return this;
     }
@@ -128,7 +128,7 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("DefaultAction")
-    public String getDefaultAction() {
+    public CharSequence getDefaultAction() {
         return defaultAction;
     }
 
@@ -137,11 +137,11 @@ public class UserPoolConfig {
      * 
      */
     @JsonProperty("DefaultAction")
-    public void setDefaultAction(String defaultAction) {
+    public void setDefaultAction(CharSequence defaultAction) {
         this.defaultAction = defaultAction;
     }
 
-    public UserPoolConfig withDefaultAction(String defaultAction) {
+    public UserPoolConfig withDefaultAction(CharSequence defaultAction) {
         this.defaultAction = defaultAction;
         return this;
     }

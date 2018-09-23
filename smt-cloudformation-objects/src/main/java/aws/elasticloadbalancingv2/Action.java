@@ -29,21 +29,21 @@ public class Action {
      */
     @JsonProperty("TargetGroupArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-targetgrouparn")
-    private String targetGroupArn;
+    private CharSequence targetGroupArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-targetgrouparn
      * 
      */
     @JsonProperty("TargetGroupArn")
-    public String getTargetGroupArn() {
+    public CharSequence getTargetGroupArn() {
         return targetGroupArn;
     }
 
@@ -52,11 +52,11 @@ public class Action {
      * 
      */
     @JsonProperty("TargetGroupArn")
-    public void setTargetGroupArn(String targetGroupArn) {
+    public void setTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
     }
 
-    public Action withTargetGroupArn(String targetGroupArn) {
+    public Action withTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
         return this;
     }
@@ -66,7 +66,7 @@ public class Action {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -75,11 +75,11 @@ public class Action {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Action withType(String type) {
+    public Action withType(CharSequence type) {
         this.type = type;
         return this;
     }

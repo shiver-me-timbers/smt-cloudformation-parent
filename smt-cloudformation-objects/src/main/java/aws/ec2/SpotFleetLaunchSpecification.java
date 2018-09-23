@@ -71,28 +71,28 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("ImageId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-imageid")
-    private String imageId;
+    private CharSequence imageId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-instancetype
      * 
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-kernelid
      * 
      */
     @JsonProperty("KernelId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-kernelid")
-    private String kernelId;
+    private CharSequence kernelId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-keyname
      * 
      */
     @JsonProperty("KeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-keyname")
-    private String keyName;
+    private CharSequence keyName;
     /**
      * SpotFleetMonitoring
      * <p>
@@ -125,7 +125,7 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("RamdiskId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ramdiskid")
-    private String ramdiskId;
+    private CharSequence ramdiskId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-securitygroups
      * 
@@ -140,14 +140,14 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("SpotPrice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-spotprice")
-    private String spotPrice;
+    private CharSequence spotPrice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-subnetid
      * 
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-tagspecifications
      * 
@@ -162,7 +162,7 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("UserData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-userdata")
-    private String userData;
+    private CharSequence userData;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-weightedcapacity
      * 
@@ -249,7 +249,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("ImageId")
-    public String getImageId() {
+    public CharSequence getImageId() {
         return imageId;
     }
 
@@ -258,11 +258,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("ImageId")
-    public void setImageId(String imageId) {
+    public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
 
-    public SpotFleetLaunchSpecification withImageId(String imageId) {
+    public SpotFleetLaunchSpecification withImageId(CharSequence imageId) {
         this.imageId = imageId;
         return this;
     }
@@ -272,7 +272,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -281,11 +281,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public SpotFleetLaunchSpecification withInstanceType(String instanceType) {
+    public SpotFleetLaunchSpecification withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -295,7 +295,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("KernelId")
-    public String getKernelId() {
+    public CharSequence getKernelId() {
         return kernelId;
     }
 
@@ -304,11 +304,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("KernelId")
-    public void setKernelId(String kernelId) {
+    public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
 
-    public SpotFleetLaunchSpecification withKernelId(String kernelId) {
+    public SpotFleetLaunchSpecification withKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
         return this;
     }
@@ -318,7 +318,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("KeyName")
-    public String getKeyName() {
+    public CharSequence getKeyName() {
         return keyName;
     }
 
@@ -327,11 +327,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("KeyName")
-    public void setKeyName(String keyName) {
+    public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
 
-    public SpotFleetLaunchSpecification withKeyName(String keyName) {
+    public SpotFleetLaunchSpecification withKeyName(CharSequence keyName) {
         this.keyName = keyName;
         return this;
     }
@@ -418,7 +418,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("RamdiskId")
-    public String getRamdiskId() {
+    public CharSequence getRamdiskId() {
         return ramdiskId;
     }
 
@@ -427,11 +427,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("RamdiskId")
-    public void setRamdiskId(String ramdiskId) {
+    public void setRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
     }
 
-    public SpotFleetLaunchSpecification withRamdiskId(String ramdiskId) {
+    public SpotFleetLaunchSpecification withRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
         return this;
     }
@@ -464,7 +464,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("SpotPrice")
-    public String getSpotPrice() {
+    public CharSequence getSpotPrice() {
         return spotPrice;
     }
 
@@ -473,11 +473,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("SpotPrice")
-    public void setSpotPrice(String spotPrice) {
+    public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
 
-    public SpotFleetLaunchSpecification withSpotPrice(String spotPrice) {
+    public SpotFleetLaunchSpecification withSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
         return this;
     }
@@ -487,7 +487,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -496,11 +496,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public SpotFleetLaunchSpecification withSubnetId(String subnetId) {
+    public SpotFleetLaunchSpecification withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }
@@ -533,7 +533,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("UserData")
-    public String getUserData() {
+    public CharSequence getUserData() {
         return userData;
     }
 
@@ -542,11 +542,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonProperty("UserData")
-    public void setUserData(String userData) {
+    public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
 
-    public SpotFleetLaunchSpecification withUserData(String userData) {
+    public SpotFleetLaunchSpecification withUserData(CharSequence userData) {
         this.userData = userData;
         return this;
     }

@@ -32,42 +32,42 @@ public class RedirectRule {
      */
     @JsonProperty("HostName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-hostname")
-    private String hostName;
+    private CharSequence hostName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-httpredirectcode
      * 
      */
     @JsonProperty("HttpRedirectCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-httpredirectcode")
-    private String httpRedirectCode;
+    private CharSequence httpRedirectCode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-protocol
      * 
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeyprefixwith
      * 
      */
     @JsonProperty("ReplaceKeyPrefixWith")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeyprefixwith")
-    private String replaceKeyPrefixWith;
+    private CharSequence replaceKeyPrefixWith;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeywith
      * 
      */
     @JsonProperty("ReplaceKeyWith")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeywith")
-    private String replaceKeyWith;
+    private CharSequence replaceKeyWith;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-hostname
      * 
      */
     @JsonProperty("HostName")
-    public String getHostName() {
+    public CharSequence getHostName() {
         return hostName;
     }
 
@@ -76,11 +76,11 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("HostName")
-    public void setHostName(String hostName) {
+    public void setHostName(CharSequence hostName) {
         this.hostName = hostName;
     }
 
-    public RedirectRule withHostName(String hostName) {
+    public RedirectRule withHostName(CharSequence hostName) {
         this.hostName = hostName;
         return this;
     }
@@ -90,7 +90,7 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("HttpRedirectCode")
-    public String getHttpRedirectCode() {
+    public CharSequence getHttpRedirectCode() {
         return httpRedirectCode;
     }
 
@@ -99,11 +99,11 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("HttpRedirectCode")
-    public void setHttpRedirectCode(String httpRedirectCode) {
+    public void setHttpRedirectCode(CharSequence httpRedirectCode) {
         this.httpRedirectCode = httpRedirectCode;
     }
 
-    public RedirectRule withHttpRedirectCode(String httpRedirectCode) {
+    public RedirectRule withHttpRedirectCode(CharSequence httpRedirectCode) {
         this.httpRedirectCode = httpRedirectCode;
         return this;
     }
@@ -113,7 +113,7 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -122,11 +122,11 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public RedirectRule withProtocol(String protocol) {
+    public RedirectRule withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }
@@ -136,7 +136,7 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("ReplaceKeyPrefixWith")
-    public String getReplaceKeyPrefixWith() {
+    public CharSequence getReplaceKeyPrefixWith() {
         return replaceKeyPrefixWith;
     }
 
@@ -145,11 +145,11 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("ReplaceKeyPrefixWith")
-    public void setReplaceKeyPrefixWith(String replaceKeyPrefixWith) {
+    public void setReplaceKeyPrefixWith(CharSequence replaceKeyPrefixWith) {
         this.replaceKeyPrefixWith = replaceKeyPrefixWith;
     }
 
-    public RedirectRule withReplaceKeyPrefixWith(String replaceKeyPrefixWith) {
+    public RedirectRule withReplaceKeyPrefixWith(CharSequence replaceKeyPrefixWith) {
         this.replaceKeyPrefixWith = replaceKeyPrefixWith;
         return this;
     }
@@ -159,7 +159,7 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("ReplaceKeyWith")
-    public String getReplaceKeyWith() {
+    public CharSequence getReplaceKeyWith() {
         return replaceKeyWith;
     }
 
@@ -168,11 +168,11 @@ public class RedirectRule {
      * 
      */
     @JsonProperty("ReplaceKeyWith")
-    public void setReplaceKeyWith(String replaceKeyWith) {
+    public void setReplaceKeyWith(CharSequence replaceKeyWith) {
         this.replaceKeyWith = replaceKeyWith;
     }
 
-    public RedirectRule withReplaceKeyWith(String replaceKeyWith) {
+    public RedirectRule withReplaceKeyWith(CharSequence replaceKeyWith) {
         this.replaceKeyWith = replaceKeyWith;
         return this;
     }

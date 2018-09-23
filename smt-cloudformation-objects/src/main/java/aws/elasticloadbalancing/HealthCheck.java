@@ -32,42 +32,42 @@ public class HealthCheck {
      */
     @JsonProperty("HealthyThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-healthythreshold")
-    private String healthyThreshold;
+    private CharSequence healthyThreshold;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-interval
      * 
      */
     @JsonProperty("Interval")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-interval")
-    private String interval;
+    private CharSequence interval;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-target
      * 
      */
     @JsonProperty("Target")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-target")
-    private String target;
+    private CharSequence target;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-timeout
      * 
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-timeout")
-    private String timeout;
+    private CharSequence timeout;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-unhealthythreshold
      * 
      */
     @JsonProperty("UnhealthyThreshold")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-unhealthythreshold")
-    private String unhealthyThreshold;
+    private CharSequence unhealthyThreshold;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-healthythreshold
      * 
      */
     @JsonProperty("HealthyThreshold")
-    public String getHealthyThreshold() {
+    public CharSequence getHealthyThreshold() {
         return healthyThreshold;
     }
 
@@ -76,11 +76,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("HealthyThreshold")
-    public void setHealthyThreshold(String healthyThreshold) {
+    public void setHealthyThreshold(CharSequence healthyThreshold) {
         this.healthyThreshold = healthyThreshold;
     }
 
-    public HealthCheck withHealthyThreshold(String healthyThreshold) {
+    public HealthCheck withHealthyThreshold(CharSequence healthyThreshold) {
         this.healthyThreshold = healthyThreshold;
         return this;
     }
@@ -90,7 +90,7 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Interval")
-    public String getInterval() {
+    public CharSequence getInterval() {
         return interval;
     }
 
@@ -99,11 +99,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Interval")
-    public void setInterval(String interval) {
+    public void setInterval(CharSequence interval) {
         this.interval = interval;
     }
 
-    public HealthCheck withInterval(String interval) {
+    public HealthCheck withInterval(CharSequence interval) {
         this.interval = interval;
         return this;
     }
@@ -113,7 +113,7 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Target")
-    public String getTarget() {
+    public CharSequence getTarget() {
         return target;
     }
 
@@ -122,11 +122,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Target")
-    public void setTarget(String target) {
+    public void setTarget(CharSequence target) {
         this.target = target;
     }
 
-    public HealthCheck withTarget(String target) {
+    public HealthCheck withTarget(CharSequence target) {
         this.target = target;
         return this;
     }
@@ -136,7 +136,7 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Timeout")
-    public String getTimeout() {
+    public CharSequence getTimeout() {
         return timeout;
     }
 
@@ -145,11 +145,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("Timeout")
-    public void setTimeout(String timeout) {
+    public void setTimeout(CharSequence timeout) {
         this.timeout = timeout;
     }
 
-    public HealthCheck withTimeout(String timeout) {
+    public HealthCheck withTimeout(CharSequence timeout) {
         this.timeout = timeout;
         return this;
     }
@@ -159,7 +159,7 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("UnhealthyThreshold")
-    public String getUnhealthyThreshold() {
+    public CharSequence getUnhealthyThreshold() {
         return unhealthyThreshold;
     }
 
@@ -168,11 +168,11 @@ public class HealthCheck {
      * 
      */
     @JsonProperty("UnhealthyThreshold")
-    public void setUnhealthyThreshold(String unhealthyThreshold) {
+    public void setUnhealthyThreshold(CharSequence unhealthyThreshold) {
         this.unhealthyThreshold = unhealthyThreshold;
     }
 
-    public HealthCheck withUnhealthyThreshold(String unhealthyThreshold) {
+    public HealthCheck withUnhealthyThreshold(CharSequence unhealthyThreshold) {
         this.unhealthyThreshold = unhealthyThreshold;
         return this;
     }

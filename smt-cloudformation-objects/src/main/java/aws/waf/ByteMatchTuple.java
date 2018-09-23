@@ -41,28 +41,28 @@ public class ByteMatchTuple {
      */
     @JsonProperty("PositionalConstraint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-positionalconstraint")
-    private String positionalConstraint;
+    private CharSequence positionalConstraint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstring
      * 
      */
     @JsonProperty("TargetString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstring")
-    private String targetString;
+    private CharSequence targetString;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstringbase64
      * 
      */
     @JsonProperty("TargetStringBase64")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-targetstringbase64")
-    private String targetStringBase64;
+    private CharSequence targetStringBase64;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-texttransformation
      * 
      */
     @JsonProperty("TextTransformation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-texttransformation")
-    private String textTransformation;
+    private CharSequence textTransformation;
 
     /**
      * FieldToMatch
@@ -96,7 +96,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("PositionalConstraint")
-    public String getPositionalConstraint() {
+    public CharSequence getPositionalConstraint() {
         return positionalConstraint;
     }
 
@@ -105,11 +105,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("PositionalConstraint")
-    public void setPositionalConstraint(String positionalConstraint) {
+    public void setPositionalConstraint(CharSequence positionalConstraint) {
         this.positionalConstraint = positionalConstraint;
     }
 
-    public ByteMatchTuple withPositionalConstraint(String positionalConstraint) {
+    public ByteMatchTuple withPositionalConstraint(CharSequence positionalConstraint) {
         this.positionalConstraint = positionalConstraint;
         return this;
     }
@@ -119,7 +119,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TargetString")
-    public String getTargetString() {
+    public CharSequence getTargetString() {
         return targetString;
     }
 
@@ -128,11 +128,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TargetString")
-    public void setTargetString(String targetString) {
+    public void setTargetString(CharSequence targetString) {
         this.targetString = targetString;
     }
 
-    public ByteMatchTuple withTargetString(String targetString) {
+    public ByteMatchTuple withTargetString(CharSequence targetString) {
         this.targetString = targetString;
         return this;
     }
@@ -142,7 +142,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TargetStringBase64")
-    public String getTargetStringBase64() {
+    public CharSequence getTargetStringBase64() {
         return targetStringBase64;
     }
 
@@ -151,11 +151,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TargetStringBase64")
-    public void setTargetStringBase64(String targetStringBase64) {
+    public void setTargetStringBase64(CharSequence targetStringBase64) {
         this.targetStringBase64 = targetStringBase64;
     }
 
-    public ByteMatchTuple withTargetStringBase64(String targetStringBase64) {
+    public ByteMatchTuple withTargetStringBase64(CharSequence targetStringBase64) {
         this.targetStringBase64 = targetStringBase64;
         return this;
     }
@@ -165,7 +165,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public String getTextTransformation() {
+    public CharSequence getTextTransformation() {
         return textTransformation;
     }
 
@@ -174,11 +174,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonProperty("TextTransformation")
-    public void setTextTransformation(String textTransformation) {
+    public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
 
-    public ByteMatchTuple withTextTransformation(String textTransformation) {
+    public ByteMatchTuple withTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
         return this;
     }

@@ -28,14 +28,14 @@ public class VolumesHost {
      */
     @JsonProperty("SourcePath")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html#cfn-batch-jobdefinition-volumeshost-sourcepath")
-    private String sourcePath;
+    private CharSequence sourcePath;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html#cfn-batch-jobdefinition-volumeshost-sourcepath
      * 
      */
     @JsonProperty("SourcePath")
-    public String getSourcePath() {
+    public CharSequence getSourcePath() {
         return sourcePath;
     }
 
@@ -44,11 +44,11 @@ public class VolumesHost {
      * 
      */
     @JsonProperty("SourcePath")
-    public void setSourcePath(String sourcePath) {
+    public void setSourcePath(CharSequence sourcePath) {
         this.sourcePath = sourcePath;
     }
 
-    public VolumesHost withSourcePath(String sourcePath) {
+    public VolumesHost withSourcePath(CharSequence sourcePath) {
         this.sourcePath = sourcePath;
         return this;
     }

@@ -28,14 +28,14 @@ public class Cluster {
      */
     @JsonProperty("ClusterName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername")
-    private String clusterName;
+    private CharSequence clusterName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
      * 
      */
     @JsonProperty("ClusterName")
-    public String getClusterName() {
+    public CharSequence getClusterName() {
         return clusterName;
     }
 
@@ -44,11 +44,11 @@ public class Cluster {
      * 
      */
     @JsonProperty("ClusterName")
-    public void setClusterName(String clusterName) {
+    public void setClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
     }
 
-    public Cluster withClusterName(String clusterName) {
+    public Cluster withClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
         return this;
     }

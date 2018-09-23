@@ -34,56 +34,56 @@ public class S3Settings {
      */
     @JsonProperty("ExternalTableDefinition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-externaltabledefinition")
-    private String externalTableDefinition;
+    private CharSequence externalTableDefinition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketname
      * 
      */
     @JsonProperty("BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketname")
-    private String bucketName;
+    private CharSequence bucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketfolder
      * 
      */
     @JsonProperty("BucketFolder")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketfolder")
-    private String bucketFolder;
+    private CharSequence bucketFolder;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvrowdelimiter
      * 
      */
     @JsonProperty("CsvRowDelimiter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvrowdelimiter")
-    private String csvRowDelimiter;
+    private CharSequence csvRowDelimiter;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvdelimiter
      * 
      */
     @JsonProperty("CsvDelimiter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvdelimiter")
-    private String csvDelimiter;
+    private CharSequence csvDelimiter;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-serviceaccessrolearn
      * 
      */
     @JsonProperty("ServiceAccessRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-serviceaccessrolearn")
-    private String serviceAccessRoleArn;
+    private CharSequence serviceAccessRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-compressiontype
      * 
      */
     @JsonProperty("CompressionType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-compressiontype")
-    private String compressionType;
+    private CharSequence compressionType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-externaltabledefinition
      * 
      */
     @JsonProperty("ExternalTableDefinition")
-    public String getExternalTableDefinition() {
+    public CharSequence getExternalTableDefinition() {
         return externalTableDefinition;
     }
 
@@ -92,11 +92,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("ExternalTableDefinition")
-    public void setExternalTableDefinition(String externalTableDefinition) {
+    public void setExternalTableDefinition(CharSequence externalTableDefinition) {
         this.externalTableDefinition = externalTableDefinition;
     }
 
-    public S3Settings withExternalTableDefinition(String externalTableDefinition) {
+    public S3Settings withExternalTableDefinition(CharSequence externalTableDefinition) {
         this.externalTableDefinition = externalTableDefinition;
         return this;
     }
@@ -106,7 +106,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("BucketName")
-    public String getBucketName() {
+    public CharSequence getBucketName() {
         return bucketName;
     }
 
@@ -115,11 +115,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("BucketName")
-    public void setBucketName(String bucketName) {
+    public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
 
-    public S3Settings withBucketName(String bucketName) {
+    public S3Settings withBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
         return this;
     }
@@ -129,7 +129,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("BucketFolder")
-    public String getBucketFolder() {
+    public CharSequence getBucketFolder() {
         return bucketFolder;
     }
 
@@ -138,11 +138,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("BucketFolder")
-    public void setBucketFolder(String bucketFolder) {
+    public void setBucketFolder(CharSequence bucketFolder) {
         this.bucketFolder = bucketFolder;
     }
 
-    public S3Settings withBucketFolder(String bucketFolder) {
+    public S3Settings withBucketFolder(CharSequence bucketFolder) {
         this.bucketFolder = bucketFolder;
         return this;
     }
@@ -152,7 +152,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CsvRowDelimiter")
-    public String getCsvRowDelimiter() {
+    public CharSequence getCsvRowDelimiter() {
         return csvRowDelimiter;
     }
 
@@ -161,11 +161,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CsvRowDelimiter")
-    public void setCsvRowDelimiter(String csvRowDelimiter) {
+    public void setCsvRowDelimiter(CharSequence csvRowDelimiter) {
         this.csvRowDelimiter = csvRowDelimiter;
     }
 
-    public S3Settings withCsvRowDelimiter(String csvRowDelimiter) {
+    public S3Settings withCsvRowDelimiter(CharSequence csvRowDelimiter) {
         this.csvRowDelimiter = csvRowDelimiter;
         return this;
     }
@@ -175,7 +175,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CsvDelimiter")
-    public String getCsvDelimiter() {
+    public CharSequence getCsvDelimiter() {
         return csvDelimiter;
     }
 
@@ -184,11 +184,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CsvDelimiter")
-    public void setCsvDelimiter(String csvDelimiter) {
+    public void setCsvDelimiter(CharSequence csvDelimiter) {
         this.csvDelimiter = csvDelimiter;
     }
 
-    public S3Settings withCsvDelimiter(String csvDelimiter) {
+    public S3Settings withCsvDelimiter(CharSequence csvDelimiter) {
         this.csvDelimiter = csvDelimiter;
         return this;
     }
@@ -198,7 +198,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("ServiceAccessRoleArn")
-    public String getServiceAccessRoleArn() {
+    public CharSequence getServiceAccessRoleArn() {
         return serviceAccessRoleArn;
     }
 
@@ -207,11 +207,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("ServiceAccessRoleArn")
-    public void setServiceAccessRoleArn(String serviceAccessRoleArn) {
+    public void setServiceAccessRoleArn(CharSequence serviceAccessRoleArn) {
         this.serviceAccessRoleArn = serviceAccessRoleArn;
     }
 
-    public S3Settings withServiceAccessRoleArn(String serviceAccessRoleArn) {
+    public S3Settings withServiceAccessRoleArn(CharSequence serviceAccessRoleArn) {
         this.serviceAccessRoleArn = serviceAccessRoleArn;
         return this;
     }
@@ -221,7 +221,7 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CompressionType")
-    public String getCompressionType() {
+    public CharSequence getCompressionType() {
         return compressionType;
     }
 
@@ -230,11 +230,11 @@ public class S3Settings {
      * 
      */
     @JsonProperty("CompressionType")
-    public void setCompressionType(String compressionType) {
+    public void setCompressionType(CharSequence compressionType) {
         this.compressionType = compressionType;
     }
 
-    public S3Settings withCompressionType(String compressionType) {
+    public S3Settings withCompressionType(CharSequence compressionType) {
         this.compressionType = compressionType;
         return this;
     }

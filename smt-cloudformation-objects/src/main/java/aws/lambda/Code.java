@@ -31,35 +31,35 @@ public class Code {
      */
     @JsonProperty("S3Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket")
-    private String s3Bucket;
+    private CharSequence s3Bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key
      * 
      */
     @JsonProperty("S3Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key")
-    private String s3Key;
+    private CharSequence s3Key;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion
      * 
      */
     @JsonProperty("S3ObjectVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion")
-    private String s3ObjectVersion;
+    private CharSequence s3ObjectVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile
      * 
      */
     @JsonProperty("ZipFile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile")
-    private String zipFile;
+    private CharSequence zipFile;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket
      * 
      */
     @JsonProperty("S3Bucket")
-    public String getS3Bucket() {
+    public CharSequence getS3Bucket() {
         return s3Bucket;
     }
 
@@ -68,11 +68,11 @@ public class Code {
      * 
      */
     @JsonProperty("S3Bucket")
-    public void setS3Bucket(String s3Bucket) {
+    public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
 
-    public Code withS3Bucket(String s3Bucket) {
+    public Code withS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
         return this;
     }
@@ -82,7 +82,7 @@ public class Code {
      * 
      */
     @JsonProperty("S3Key")
-    public String getS3Key() {
+    public CharSequence getS3Key() {
         return s3Key;
     }
 
@@ -91,11 +91,11 @@ public class Code {
      * 
      */
     @JsonProperty("S3Key")
-    public void setS3Key(String s3Key) {
+    public void setS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
     }
 
-    public Code withS3Key(String s3Key) {
+    public Code withS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
         return this;
     }
@@ -105,7 +105,7 @@ public class Code {
      * 
      */
     @JsonProperty("S3ObjectVersion")
-    public String getS3ObjectVersion() {
+    public CharSequence getS3ObjectVersion() {
         return s3ObjectVersion;
     }
 
@@ -114,11 +114,11 @@ public class Code {
      * 
      */
     @JsonProperty("S3ObjectVersion")
-    public void setS3ObjectVersion(String s3ObjectVersion) {
+    public void setS3ObjectVersion(CharSequence s3ObjectVersion) {
         this.s3ObjectVersion = s3ObjectVersion;
     }
 
-    public Code withS3ObjectVersion(String s3ObjectVersion) {
+    public Code withS3ObjectVersion(CharSequence s3ObjectVersion) {
         this.s3ObjectVersion = s3ObjectVersion;
         return this;
     }
@@ -128,7 +128,7 @@ public class Code {
      * 
      */
     @JsonProperty("ZipFile")
-    public String getZipFile() {
+    public CharSequence getZipFile() {
         return zipFile;
     }
 
@@ -137,11 +137,11 @@ public class Code {
      * 
      */
     @JsonProperty("ZipFile")
-    public void setZipFile(String zipFile) {
+    public void setZipFile(CharSequence zipFile) {
         this.zipFile = zipFile;
     }
 
-    public Code withZipFile(String zipFile) {
+    public Code withZipFile(CharSequence zipFile) {
         this.zipFile = zipFile;
         return this;
     }

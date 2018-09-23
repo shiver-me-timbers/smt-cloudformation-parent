@@ -32,14 +32,14 @@ public class SkewedInfo {
      */
     @JsonProperty("SkewedColumnNames")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnnames")
-    private List<String> skewedColumnNames = new ArrayList<String>();
+    private List<CharSequence> skewedColumnNames = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvalues
      * 
      */
     @JsonProperty("SkewedColumnValues")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvalues")
-    private List<String> skewedColumnValues = new ArrayList<String>();
+    private List<CharSequence> skewedColumnValues = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvaluelocationmaps
      * 
@@ -53,7 +53,7 @@ public class SkewedInfo {
      * 
      */
     @JsonProperty("SkewedColumnNames")
-    public List<String> getSkewedColumnNames() {
+    public List<CharSequence> getSkewedColumnNames() {
         return skewedColumnNames;
     }
 
@@ -62,11 +62,11 @@ public class SkewedInfo {
      * 
      */
     @JsonProperty("SkewedColumnNames")
-    public void setSkewedColumnNames(List<String> skewedColumnNames) {
+    public void setSkewedColumnNames(List<CharSequence> skewedColumnNames) {
         this.skewedColumnNames = skewedColumnNames;
     }
 
-    public SkewedInfo withSkewedColumnNames(List<String> skewedColumnNames) {
+    public SkewedInfo withSkewedColumnNames(List<CharSequence> skewedColumnNames) {
         this.skewedColumnNames = skewedColumnNames;
         return this;
     }
@@ -76,7 +76,7 @@ public class SkewedInfo {
      * 
      */
     @JsonProperty("SkewedColumnValues")
-    public List<String> getSkewedColumnValues() {
+    public List<CharSequence> getSkewedColumnValues() {
         return skewedColumnValues;
     }
 
@@ -85,11 +85,11 @@ public class SkewedInfo {
      * 
      */
     @JsonProperty("SkewedColumnValues")
-    public void setSkewedColumnValues(List<String> skewedColumnValues) {
+    public void setSkewedColumnValues(List<CharSequence> skewedColumnValues) {
         this.skewedColumnValues = skewedColumnValues;
     }
 
-    public SkewedInfo withSkewedColumnValues(List<String> skewedColumnValues) {
+    public SkewedInfo withSkewedColumnValues(List<CharSequence> skewedColumnValues) {
         this.skewedColumnValues = skewedColumnValues;
         return this;
     }

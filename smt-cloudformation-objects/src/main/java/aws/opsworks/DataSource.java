@@ -30,28 +30,28 @@ public class DataSource {
      */
     @JsonProperty("Arn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn")
-    private String arn;
+    private CharSequence arn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-databasename
      * 
      */
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-databasename")
-    private String databaseName;
+    private CharSequence databaseName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn
      * 
      */
     @JsonProperty("Arn")
-    public String getArn() {
+    public CharSequence getArn() {
         return arn;
     }
 
@@ -60,11 +60,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("Arn")
-    public void setArn(String arn) {
+    public void setArn(CharSequence arn) {
         this.arn = arn;
     }
 
-    public DataSource withArn(String arn) {
+    public DataSource withArn(CharSequence arn) {
         this.arn = arn;
         return this;
     }
@@ -74,7 +74,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("DatabaseName")
-    public String getDatabaseName() {
+    public CharSequence getDatabaseName() {
         return databaseName;
     }
 
@@ -83,11 +83,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("DatabaseName")
-    public void setDatabaseName(String databaseName) {
+    public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
 
-    public DataSource withDatabaseName(String databaseName) {
+    public DataSource withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
         return this;
     }
@@ -97,7 +97,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -106,11 +106,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public DataSource withType(String type) {
+    public DataSource withType(CharSequence type) {
         this.type = type;
         return this;
     }

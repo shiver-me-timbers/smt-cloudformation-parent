@@ -36,21 +36,21 @@ public class DataSource {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn
      * 
      */
     @JsonProperty("ServiceRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn")
-    private String serviceRoleArn;
+    private CharSequence serviceRoleArn;
     /**
      * HttpConfig
      * <p>
@@ -75,14 +75,14 @@ public class DataSource {
      */
     @JsonProperty("ApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid")
-    private String apiId;
+    private CharSequence apiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name")
-    private String name;
+    private CharSequence name;
     /**
      * DynamoDBConfig
      * <p>
@@ -107,7 +107,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -116,11 +116,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public DataSource withType(String type) {
+    public DataSource withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -130,7 +130,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -139,11 +139,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public DataSource withDescription(String description) {
+    public DataSource withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -153,7 +153,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public String getServiceRoleArn() {
+    public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
 
@@ -162,11 +162,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public void setServiceRoleArn(String serviceRoleArn) {
+    public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
 
-    public DataSource withServiceRoleArn(String serviceRoleArn) {
+    public DataSource withServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
         return this;
     }
@@ -230,7 +230,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("ApiId")
-    public String getApiId() {
+    public CharSequence getApiId() {
         return apiId;
     }
 
@@ -239,11 +239,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("ApiId")
-    public void setApiId(String apiId) {
+    public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
 
-    public DataSource withApiId(String apiId) {
+    public DataSource withApiId(CharSequence apiId) {
         this.apiId = apiId;
         return this;
     }
@@ -253,7 +253,7 @@ public class DataSource {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -262,11 +262,11 @@ public class DataSource {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public DataSource withName(String name) {
+    public DataSource withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -30,7 +30,7 @@ public class Predicate {
      */
     @JsonProperty("DataId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-dataid")
-    private String dataId;
+    private CharSequence dataId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-negated
      * 
@@ -44,14 +44,14 @@ public class Predicate {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-dataid
      * 
      */
     @JsonProperty("DataId")
-    public String getDataId() {
+    public CharSequence getDataId() {
         return dataId;
     }
 
@@ -60,11 +60,11 @@ public class Predicate {
      * 
      */
     @JsonProperty("DataId")
-    public void setDataId(String dataId) {
+    public void setDataId(CharSequence dataId) {
         this.dataId = dataId;
     }
 
-    public Predicate withDataId(String dataId) {
+    public Predicate withDataId(CharSequence dataId) {
         this.dataId = dataId;
         return this;
     }
@@ -97,7 +97,7 @@ public class Predicate {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -106,11 +106,11 @@ public class Predicate {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Predicate withType(String type) {
+    public Predicate withType(CharSequence type) {
         this.type = type;
         return this;
     }

@@ -31,35 +31,35 @@ public class Destination {
      */
     @JsonProperty("DestinationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationname")
-    private String destinationName;
+    private CharSequence destinationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationpolicy
      * 
      */
     @JsonProperty("DestinationPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationpolicy")
-    private String destinationPolicy;
+    private CharSequence destinationPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-targetarn
      * 
      */
     @JsonProperty("TargetArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-targetarn")
-    private String targetArn;
+    private CharSequence targetArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationname
      * 
      */
     @JsonProperty("DestinationName")
-    public String getDestinationName() {
+    public CharSequence getDestinationName() {
         return destinationName;
     }
 
@@ -68,11 +68,11 @@ public class Destination {
      * 
      */
     @JsonProperty("DestinationName")
-    public void setDestinationName(String destinationName) {
+    public void setDestinationName(CharSequence destinationName) {
         this.destinationName = destinationName;
     }
 
-    public Destination withDestinationName(String destinationName) {
+    public Destination withDestinationName(CharSequence destinationName) {
         this.destinationName = destinationName;
         return this;
     }
@@ -82,7 +82,7 @@ public class Destination {
      * 
      */
     @JsonProperty("DestinationPolicy")
-    public String getDestinationPolicy() {
+    public CharSequence getDestinationPolicy() {
         return destinationPolicy;
     }
 
@@ -91,11 +91,11 @@ public class Destination {
      * 
      */
     @JsonProperty("DestinationPolicy")
-    public void setDestinationPolicy(String destinationPolicy) {
+    public void setDestinationPolicy(CharSequence destinationPolicy) {
         this.destinationPolicy = destinationPolicy;
     }
 
-    public Destination withDestinationPolicy(String destinationPolicy) {
+    public Destination withDestinationPolicy(CharSequence destinationPolicy) {
         this.destinationPolicy = destinationPolicy;
         return this;
     }
@@ -105,7 +105,7 @@ public class Destination {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -114,11 +114,11 @@ public class Destination {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public Destination withRoleArn(String roleArn) {
+    public Destination withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -128,7 +128,7 @@ public class Destination {
      * 
      */
     @JsonProperty("TargetArn")
-    public String getTargetArn() {
+    public CharSequence getTargetArn() {
         return targetArn;
     }
 
@@ -137,11 +137,11 @@ public class Destination {
      * 
      */
     @JsonProperty("TargetArn")
-    public void setTargetArn(String targetArn) {
+    public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }
 
-    public Destination withTargetArn(String targetArn) {
+    public Destination withTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
         return this;
     }

@@ -33,7 +33,7 @@ public class AwsVpcConfiguration {
      */
     @JsonProperty("AssignPublicIp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip")
-    private String assignPublicIp;
+    private CharSequence assignPublicIp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
      * 
@@ -41,7 +41,7 @@ public class AwsVpcConfiguration {
     @JsonProperty("SecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups")
-    private Set<String> securityGroups = new LinkedHashSet<String>();
+    private Set<CharSequence> securityGroups = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
      * 
@@ -49,14 +49,14 @@ public class AwsVpcConfiguration {
     @JsonProperty("Subnets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets")
-    private Set<String> subnets = new LinkedHashSet<String>();
+    private Set<CharSequence> subnets = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
      * 
      */
     @JsonProperty("AssignPublicIp")
-    public String getAssignPublicIp() {
+    public CharSequence getAssignPublicIp() {
         return assignPublicIp;
     }
 
@@ -65,11 +65,11 @@ public class AwsVpcConfiguration {
      * 
      */
     @JsonProperty("AssignPublicIp")
-    public void setAssignPublicIp(String assignPublicIp) {
+    public void setAssignPublicIp(CharSequence assignPublicIp) {
         this.assignPublicIp = assignPublicIp;
     }
 
-    public AwsVpcConfiguration withAssignPublicIp(String assignPublicIp) {
+    public AwsVpcConfiguration withAssignPublicIp(CharSequence assignPublicIp) {
         this.assignPublicIp = assignPublicIp;
         return this;
     }
@@ -79,7 +79,7 @@ public class AwsVpcConfiguration {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public Set<String> getSecurityGroups() {
+    public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -88,11 +88,11 @@ public class AwsVpcConfiguration {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(Set<String> securityGroups) {
+    public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public AwsVpcConfiguration withSecurityGroups(Set<String> securityGroups) {
+    public AwsVpcConfiguration withSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -102,7 +102,7 @@ public class AwsVpcConfiguration {
      * 
      */
     @JsonProperty("Subnets")
-    public Set<String> getSubnets() {
+    public Set<CharSequence> getSubnets() {
         return subnets;
     }
 
@@ -111,11 +111,11 @@ public class AwsVpcConfiguration {
      * 
      */
     @JsonProperty("Subnets")
-    public void setSubnets(Set<String> subnets) {
+    public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }
 
-    public AwsVpcConfiguration withSubnets(Set<String> subnets) {
+    public AwsVpcConfiguration withSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
         return this;
     }

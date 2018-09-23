@@ -30,14 +30,14 @@ public class Application {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description")
-    private String description;
+    private CharSequence description;
     /**
      * ApplicationResourceLifecycleConfig
      * <p>
@@ -53,7 +53,7 @@ public class Application {
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -62,11 +62,11 @@ public class Application {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public Application withApplicationName(String applicationName) {
+    public Application withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -76,7 +76,7 @@ public class Application {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -85,11 +85,11 @@ public class Application {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Application withDescription(String description) {
+    public Application withDescription(CharSequence description) {
         this.description = description;
         return this;
     }

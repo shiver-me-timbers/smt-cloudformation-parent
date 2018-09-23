@@ -57,7 +57,7 @@ public class Bucket {
      */
     @JsonProperty("AccessControl")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol")
-    private String accessControl;
+    private CharSequence accessControl;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-analyticsconfigurations
      * 
@@ -81,7 +81,7 @@ public class Bucket {
      */
     @JsonProperty("BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name")
-    private String bucketName;
+    private CharSequence bucketName;
     /**
      * CorsConfiguration
      * <p>
@@ -201,7 +201,7 @@ public class Bucket {
      * 
      */
     @JsonProperty("AccessControl")
-    public String getAccessControl() {
+    public CharSequence getAccessControl() {
         return accessControl;
     }
 
@@ -210,11 +210,11 @@ public class Bucket {
      * 
      */
     @JsonProperty("AccessControl")
-    public void setAccessControl(String accessControl) {
+    public void setAccessControl(CharSequence accessControl) {
         this.accessControl = accessControl;
     }
 
-    public Bucket withAccessControl(String accessControl) {
+    public Bucket withAccessControl(CharSequence accessControl) {
         this.accessControl = accessControl;
         return this;
     }
@@ -274,7 +274,7 @@ public class Bucket {
      * 
      */
     @JsonProperty("BucketName")
-    public String getBucketName() {
+    public CharSequence getBucketName() {
         return bucketName;
     }
 
@@ -283,11 +283,11 @@ public class Bucket {
      * 
      */
     @JsonProperty("BucketName")
-    public void setBucketName(String bucketName) {
+    public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
 
-    public Bucket withBucketName(String bucketName) {
+    public Bucket withBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
         return this;
     }

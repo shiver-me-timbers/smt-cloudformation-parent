@@ -29,7 +29,7 @@ public class Action {
      */
     @JsonProperty("JobName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname")
-    private String jobName;
+    private CharSequence jobName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments
      * 
@@ -43,7 +43,7 @@ public class Action {
      * 
      */
     @JsonProperty("JobName")
-    public String getJobName() {
+    public CharSequence getJobName() {
         return jobName;
     }
 
@@ -52,11 +52,11 @@ public class Action {
      * 
      */
     @JsonProperty("JobName")
-    public void setJobName(String jobName) {
+    public void setJobName(CharSequence jobName) {
         this.jobName = jobName;
     }
 
-    public Action withJobName(String jobName) {
+    public Action withJobName(CharSequence jobName) {
         this.jobName = jobName;
         return this;
     }

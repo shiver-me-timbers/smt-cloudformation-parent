@@ -29,21 +29,21 @@ public class PolicyPrincipalAttachment {
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-policyname")
-    private String policyName;
+    private CharSequence policyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-principal
      * 
      */
     @JsonProperty("Principal")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-principal")
-    private String principal;
+    private CharSequence principal;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-policyname
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -52,11 +52,11 @@ public class PolicyPrincipalAttachment {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public PolicyPrincipalAttachment withPolicyName(String policyName) {
+    public PolicyPrincipalAttachment withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }
@@ -66,7 +66,7 @@ public class PolicyPrincipalAttachment {
      * 
      */
     @JsonProperty("Principal")
-    public String getPrincipal() {
+    public CharSequence getPrincipal() {
         return principal;
     }
 
@@ -75,11 +75,11 @@ public class PolicyPrincipalAttachment {
      * 
      */
     @JsonProperty("Principal")
-    public void setPrincipal(String principal) {
+    public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }
 
-    public PolicyPrincipalAttachment withPrincipal(String principal) {
+    public PolicyPrincipalAttachment withPrincipal(CharSequence principal) {
         this.principal = principal;
         return this;
     }

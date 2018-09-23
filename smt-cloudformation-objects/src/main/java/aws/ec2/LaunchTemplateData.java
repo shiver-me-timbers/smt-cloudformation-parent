@@ -49,7 +49,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("SecurityGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroups")
-    private List<String> securityGroups = new ArrayList<String>();
+    private List<CharSequence> securityGroups = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications
      * 
@@ -63,14 +63,14 @@ public class LaunchTemplateData {
      */
     @JsonProperty("UserData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-userdata")
-    private String userData;
+    private CharSequence userData;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior")
-    private String instanceInitiatedShutdownBehavior;
+    private CharSequence instanceInitiatedShutdownBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings
      * 
@@ -93,14 +93,14 @@ public class LaunchTemplateData {
      */
     @JsonProperty("KernelId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-kernelid")
-    private String kernelId;
+    private CharSequence kernelId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids")
-    private List<String> securityGroupIds = new ArrayList<String>();
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ebsoptimized
      * 
@@ -114,7 +114,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("KeyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname")
-    private String keyName;
+    private CharSequence keyName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
      * 
@@ -160,21 +160,21 @@ public class LaunchTemplateData {
      */
     @JsonProperty("ImageId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-imageid")
-    private String imageId;
+    private CharSequence imageId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instancetype
      * 
      */
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instancetype")
-    private String instanceType;
+    private CharSequence instanceType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid
      * 
      */
     @JsonProperty("RamDiskId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid")
-    private String ramDiskId;
+    private CharSequence ramDiskId;
     /**
      * Monitoring
      * <p>
@@ -199,7 +199,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public List<String> getSecurityGroups() {
+    public List<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -208,11 +208,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("SecurityGroups")
-    public void setSecurityGroups(List<String> securityGroups) {
+    public void setSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public LaunchTemplateData withSecurityGroups(List<String> securityGroups) {
+    public LaunchTemplateData withSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -245,7 +245,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("UserData")
-    public String getUserData() {
+    public CharSequence getUserData() {
         return userData;
     }
 
@@ -254,11 +254,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("UserData")
-    public void setUserData(String userData) {
+    public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
 
-    public LaunchTemplateData withUserData(String userData) {
+    public LaunchTemplateData withUserData(CharSequence userData) {
         this.userData = userData;
         return this;
     }
@@ -268,7 +268,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
-    public String getInstanceInitiatedShutdownBehavior() {
+    public CharSequence getInstanceInitiatedShutdownBehavior() {
         return instanceInitiatedShutdownBehavior;
     }
 
@@ -277,11 +277,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("InstanceInitiatedShutdownBehavior")
-    public void setInstanceInitiatedShutdownBehavior(String instanceInitiatedShutdownBehavior) {
+    public void setInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
         this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
     }
 
-    public LaunchTemplateData withInstanceInitiatedShutdownBehavior(String instanceInitiatedShutdownBehavior) {
+    public LaunchTemplateData withInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
         this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
         return this;
     }
@@ -341,7 +341,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("KernelId")
-    public String getKernelId() {
+    public CharSequence getKernelId() {
         return kernelId;
     }
 
@@ -350,11 +350,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("KernelId")
-    public void setKernelId(String kernelId) {
+    public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
 
-    public LaunchTemplateData withKernelId(String kernelId) {
+    public LaunchTemplateData withKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
         return this;
     }
@@ -364,7 +364,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public List<String> getSecurityGroupIds() {
+    public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -373,11 +373,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(List<String> securityGroupIds) {
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public LaunchTemplateData withSecurityGroupIds(List<String> securityGroupIds) {
+    public LaunchTemplateData withSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -410,7 +410,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("KeyName")
-    public String getKeyName() {
+    public CharSequence getKeyName() {
         return keyName;
     }
 
@@ -419,11 +419,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("KeyName")
-    public void setKeyName(String keyName) {
+    public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
 
-    public LaunchTemplateData withKeyName(String keyName) {
+    public LaunchTemplateData withKeyName(CharSequence keyName) {
         this.keyName = keyName;
         return this;
     }
@@ -556,7 +556,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("ImageId")
-    public String getImageId() {
+    public CharSequence getImageId() {
         return imageId;
     }
 
@@ -565,11 +565,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("ImageId")
-    public void setImageId(String imageId) {
+    public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
 
-    public LaunchTemplateData withImageId(String imageId) {
+    public LaunchTemplateData withImageId(CharSequence imageId) {
         this.imageId = imageId;
         return this;
     }
@@ -579,7 +579,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("InstanceType")
-    public String getInstanceType() {
+    public CharSequence getInstanceType() {
         return instanceType;
     }
 
@@ -588,11 +588,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("InstanceType")
-    public void setInstanceType(String instanceType) {
+    public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
 
-    public LaunchTemplateData withInstanceType(String instanceType) {
+    public LaunchTemplateData withInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
         return this;
     }
@@ -602,7 +602,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("RamDiskId")
-    public String getRamDiskId() {
+    public CharSequence getRamDiskId() {
         return ramDiskId;
     }
 
@@ -611,11 +611,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonProperty("RamDiskId")
-    public void setRamDiskId(String ramDiskId) {
+    public void setRamDiskId(CharSequence ramDiskId) {
         this.ramDiskId = ramDiskId;
     }
 
-    public LaunchTemplateData withRamDiskId(String ramDiskId) {
+    public LaunchTemplateData withRamDiskId(CharSequence ramDiskId) {
         this.ramDiskId = ramDiskId;
         return this;
     }

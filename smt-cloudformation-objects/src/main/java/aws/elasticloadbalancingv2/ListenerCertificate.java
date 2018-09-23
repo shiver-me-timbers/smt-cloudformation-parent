@@ -40,7 +40,7 @@ public class ListenerCertificate {
      */
     @JsonProperty("ListenerArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn")
-    private String listenerArn;
+    private CharSequence listenerArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
@@ -70,7 +70,7 @@ public class ListenerCertificate {
      * 
      */
     @JsonProperty("ListenerArn")
-    public String getListenerArn() {
+    public CharSequence getListenerArn() {
         return listenerArn;
     }
 
@@ -79,11 +79,11 @@ public class ListenerCertificate {
      * 
      */
     @JsonProperty("ListenerArn")
-    public void setListenerArn(String listenerArn) {
+    public void setListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
     }
 
-    public ListenerCertificate withListenerArn(String listenerArn) {
+    public ListenerCertificate withListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
         return this;
     }

@@ -36,7 +36,7 @@ public class Recipes {
     @JsonProperty("Configure")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-configure")
-    private Set<String> configure = new LinkedHashSet<String>();
+    private Set<CharSequence> configure = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-deploy
      * 
@@ -44,7 +44,7 @@ public class Recipes {
     @JsonProperty("Deploy")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-deploy")
-    private Set<String> deploy = new LinkedHashSet<String>();
+    private Set<CharSequence> deploy = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-setup
      * 
@@ -52,7 +52,7 @@ public class Recipes {
     @JsonProperty("Setup")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-setup")
-    private Set<String> setup = new LinkedHashSet<String>();
+    private Set<CharSequence> setup = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-shutdown
      * 
@@ -60,7 +60,7 @@ public class Recipes {
     @JsonProperty("Shutdown")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-shutdown")
-    private Set<String> shutdown = new LinkedHashSet<String>();
+    private Set<CharSequence> shutdown = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-undeploy
      * 
@@ -68,14 +68,14 @@ public class Recipes {
     @JsonProperty("Undeploy")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-undeploy")
-    private Set<String> undeploy = new LinkedHashSet<String>();
+    private Set<CharSequence> undeploy = new LinkedHashSet<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-configure
      * 
      */
     @JsonProperty("Configure")
-    public Set<String> getConfigure() {
+    public Set<CharSequence> getConfigure() {
         return configure;
     }
 
@@ -84,11 +84,11 @@ public class Recipes {
      * 
      */
     @JsonProperty("Configure")
-    public void setConfigure(Set<String> configure) {
+    public void setConfigure(Set<CharSequence> configure) {
         this.configure = configure;
     }
 
-    public Recipes withConfigure(Set<String> configure) {
+    public Recipes withConfigure(Set<CharSequence> configure) {
         this.configure = configure;
         return this;
     }
@@ -98,7 +98,7 @@ public class Recipes {
      * 
      */
     @JsonProperty("Deploy")
-    public Set<String> getDeploy() {
+    public Set<CharSequence> getDeploy() {
         return deploy;
     }
 
@@ -107,11 +107,11 @@ public class Recipes {
      * 
      */
     @JsonProperty("Deploy")
-    public void setDeploy(Set<String> deploy) {
+    public void setDeploy(Set<CharSequence> deploy) {
         this.deploy = deploy;
     }
 
-    public Recipes withDeploy(Set<String> deploy) {
+    public Recipes withDeploy(Set<CharSequence> deploy) {
         this.deploy = deploy;
         return this;
     }
@@ -121,7 +121,7 @@ public class Recipes {
      * 
      */
     @JsonProperty("Setup")
-    public Set<String> getSetup() {
+    public Set<CharSequence> getSetup() {
         return setup;
     }
 
@@ -130,11 +130,11 @@ public class Recipes {
      * 
      */
     @JsonProperty("Setup")
-    public void setSetup(Set<String> setup) {
+    public void setSetup(Set<CharSequence> setup) {
         this.setup = setup;
     }
 
-    public Recipes withSetup(Set<String> setup) {
+    public Recipes withSetup(Set<CharSequence> setup) {
         this.setup = setup;
         return this;
     }
@@ -144,7 +144,7 @@ public class Recipes {
      * 
      */
     @JsonProperty("Shutdown")
-    public Set<String> getShutdown() {
+    public Set<CharSequence> getShutdown() {
         return shutdown;
     }
 
@@ -153,11 +153,11 @@ public class Recipes {
      * 
      */
     @JsonProperty("Shutdown")
-    public void setShutdown(Set<String> shutdown) {
+    public void setShutdown(Set<CharSequence> shutdown) {
         this.shutdown = shutdown;
     }
 
-    public Recipes withShutdown(Set<String> shutdown) {
+    public Recipes withShutdown(Set<CharSequence> shutdown) {
         this.shutdown = shutdown;
         return this;
     }
@@ -167,7 +167,7 @@ public class Recipes {
      * 
      */
     @JsonProperty("Undeploy")
-    public Set<String> getUndeploy() {
+    public Set<CharSequence> getUndeploy() {
         return undeploy;
     }
 
@@ -176,11 +176,11 @@ public class Recipes {
      * 
      */
     @JsonProperty("Undeploy")
-    public void setUndeploy(Set<String> undeploy) {
+    public void setUndeploy(Set<CharSequence> undeploy) {
         this.undeploy = undeploy;
     }
 
-    public Recipes withUndeploy(Set<String> undeploy) {
+    public Recipes withUndeploy(Set<CharSequence> undeploy) {
         this.undeploy = undeploy;
         return this;
     }

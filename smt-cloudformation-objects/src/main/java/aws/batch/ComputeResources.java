@@ -42,7 +42,7 @@ public class ComputeResources {
      */
     @JsonProperty("SpotIamFleetRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-spotiamfleetrole")
-    private String spotIamFleetRole;
+    private CharSequence spotIamFleetRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-maxvcpus
      * 
@@ -63,21 +63,21 @@ public class ComputeResources {
      */
     @JsonProperty("SecurityGroupIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-securitygroupids")
-    private List<String> securityGroupIds = new ArrayList<String>();
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-subnets
      * 
      */
     @JsonProperty("Subnets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-subnets")
-    private List<String> subnets = new ArrayList<String>();
+    private List<CharSequence> subnets = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus
      * 
@@ -91,28 +91,28 @@ public class ComputeResources {
      */
     @JsonProperty("ImageId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-imageid")
-    private String imageId;
+    private CharSequence imageId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancerole
      * 
      */
     @JsonProperty("InstanceRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancerole")
-    private String instanceRole;
+    private CharSequence instanceRole;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancetypes
      * 
      */
     @JsonProperty("InstanceTypes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancetypes")
-    private List<String> instanceTypes = new ArrayList<String>();
+    private List<CharSequence> instanceTypes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-ec2keypair
      * 
      */
     @JsonProperty("Ec2KeyPair")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-ec2keypair")
-    private String ec2KeyPair;
+    private CharSequence ec2KeyPair;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags
      * 
@@ -133,7 +133,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("SpotIamFleetRole")
-    public String getSpotIamFleetRole() {
+    public CharSequence getSpotIamFleetRole() {
         return spotIamFleetRole;
     }
 
@@ -142,11 +142,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("SpotIamFleetRole")
-    public void setSpotIamFleetRole(String spotIamFleetRole) {
+    public void setSpotIamFleetRole(CharSequence spotIamFleetRole) {
         this.spotIamFleetRole = spotIamFleetRole;
     }
 
-    public ComputeResources withSpotIamFleetRole(String spotIamFleetRole) {
+    public ComputeResources withSpotIamFleetRole(CharSequence spotIamFleetRole) {
         this.spotIamFleetRole = spotIamFleetRole;
         return this;
     }
@@ -202,7 +202,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public List<String> getSecurityGroupIds() {
+    public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
 
@@ -211,11 +211,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("SecurityGroupIds")
-    public void setSecurityGroupIds(List<String> securityGroupIds) {
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
 
-    public ComputeResources withSecurityGroupIds(List<String> securityGroupIds) {
+    public ComputeResources withSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
         return this;
     }
@@ -225,7 +225,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Subnets")
-    public List<String> getSubnets() {
+    public List<CharSequence> getSubnets() {
         return subnets;
     }
 
@@ -234,11 +234,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Subnets")
-    public void setSubnets(List<String> subnets) {
+    public void setSubnets(List<CharSequence> subnets) {
         this.subnets = subnets;
     }
 
-    public ComputeResources withSubnets(List<String> subnets) {
+    public ComputeResources withSubnets(List<CharSequence> subnets) {
         this.subnets = subnets;
         return this;
     }
@@ -248,7 +248,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -257,11 +257,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public ComputeResources withType(String type) {
+    public ComputeResources withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -294,7 +294,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("ImageId")
-    public String getImageId() {
+    public CharSequence getImageId() {
         return imageId;
     }
 
@@ -303,11 +303,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("ImageId")
-    public void setImageId(String imageId) {
+    public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
 
-    public ComputeResources withImageId(String imageId) {
+    public ComputeResources withImageId(CharSequence imageId) {
         this.imageId = imageId;
         return this;
     }
@@ -317,7 +317,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("InstanceRole")
-    public String getInstanceRole() {
+    public CharSequence getInstanceRole() {
         return instanceRole;
     }
 
@@ -326,11 +326,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("InstanceRole")
-    public void setInstanceRole(String instanceRole) {
+    public void setInstanceRole(CharSequence instanceRole) {
         this.instanceRole = instanceRole;
     }
 
-    public ComputeResources withInstanceRole(String instanceRole) {
+    public ComputeResources withInstanceRole(CharSequence instanceRole) {
         this.instanceRole = instanceRole;
         return this;
     }
@@ -340,7 +340,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("InstanceTypes")
-    public List<String> getInstanceTypes() {
+    public List<CharSequence> getInstanceTypes() {
         return instanceTypes;
     }
 
@@ -349,11 +349,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("InstanceTypes")
-    public void setInstanceTypes(List<String> instanceTypes) {
+    public void setInstanceTypes(List<CharSequence> instanceTypes) {
         this.instanceTypes = instanceTypes;
     }
 
-    public ComputeResources withInstanceTypes(List<String> instanceTypes) {
+    public ComputeResources withInstanceTypes(List<CharSequence> instanceTypes) {
         this.instanceTypes = instanceTypes;
         return this;
     }
@@ -363,7 +363,7 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Ec2KeyPair")
-    public String getEc2KeyPair() {
+    public CharSequence getEc2KeyPair() {
         return ec2KeyPair;
     }
 
@@ -372,11 +372,11 @@ public class ComputeResources {
      * 
      */
     @JsonProperty("Ec2KeyPair")
-    public void setEc2KeyPair(String ec2KeyPair) {
+    public void setEc2KeyPair(CharSequence ec2KeyPair) {
         this.ec2KeyPair = ec2KeyPair;
     }
 
-    public ComputeResources withEc2KeyPair(String ec2KeyPair) {
+    public ComputeResources withEc2KeyPair(CharSequence ec2KeyPair) {
         this.ec2KeyPair = ec2KeyPair;
         return this;
     }

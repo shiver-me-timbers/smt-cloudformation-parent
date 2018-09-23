@@ -30,28 +30,28 @@ public class XMLClassifier {
      */
     @JsonProperty("RowTag")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag")
-    private String rowTag;
+    private CharSequence rowTag;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification
      * 
      */
     @JsonProperty("Classification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification")
-    private String classification;
+    private CharSequence classification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag
      * 
      */
     @JsonProperty("RowTag")
-    public String getRowTag() {
+    public CharSequence getRowTag() {
         return rowTag;
     }
 
@@ -60,11 +60,11 @@ public class XMLClassifier {
      * 
      */
     @JsonProperty("RowTag")
-    public void setRowTag(String rowTag) {
+    public void setRowTag(CharSequence rowTag) {
         this.rowTag = rowTag;
     }
 
-    public XMLClassifier withRowTag(String rowTag) {
+    public XMLClassifier withRowTag(CharSequence rowTag) {
         this.rowTag = rowTag;
         return this;
     }
@@ -74,7 +74,7 @@ public class XMLClassifier {
      * 
      */
     @JsonProperty("Classification")
-    public String getClassification() {
+    public CharSequence getClassification() {
         return classification;
     }
 
@@ -83,11 +83,11 @@ public class XMLClassifier {
      * 
      */
     @JsonProperty("Classification")
-    public void setClassification(String classification) {
+    public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
 
-    public XMLClassifier withClassification(String classification) {
+    public XMLClassifier withClassification(CharSequence classification) {
         this.classification = classification;
         return this;
     }
@@ -97,7 +97,7 @@ public class XMLClassifier {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -106,11 +106,11 @@ public class XMLClassifier {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public XMLClassifier withName(String name) {
+    public XMLClassifier withName(CharSequence name) {
         this.name = name;
         return this;
     }

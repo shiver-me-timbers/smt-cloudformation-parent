@@ -57,21 +57,21 @@ public class CacheBehavior {
      */
     @JsonProperty("TargetOriginId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-targetoriginid")
-    private String targetOriginId;
+    private CharSequence targetOriginId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-viewerprotocolpolicy
      * 
      */
     @JsonProperty("ViewerProtocolPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-viewerprotocolpolicy")
-    private String viewerProtocolPolicy;
+    private CharSequence viewerProtocolPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-trustedsigners
      * 
      */
     @JsonProperty("TrustedSigners")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-trustedsigners")
-    private List<String> trustedSigners = new ArrayList<String>();
+    private List<CharSequence> trustedSigners = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-defaultttl
      * 
@@ -85,28 +85,28 @@ public class CacheBehavior {
      */
     @JsonProperty("FieldLevelEncryptionId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-fieldlevelencryptionid")
-    private String fieldLevelEncryptionId;
+    private CharSequence fieldLevelEncryptionId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-allowedmethods
      * 
      */
     @JsonProperty("AllowedMethods")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-allowedmethods")
-    private List<String> allowedMethods = new ArrayList<String>();
+    private List<CharSequence> allowedMethods = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-pathpattern
      * 
      */
     @JsonProperty("PathPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-pathpattern")
-    private String pathPattern;
+    private CharSequence pathPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-cachedmethods
      * 
      */
     @JsonProperty("CachedMethods")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-cachedmethods")
-    private List<String> cachedMethods = new ArrayList<String>();
+    private List<CharSequence> cachedMethods = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-smoothstreaming
      * 
@@ -189,7 +189,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("TargetOriginId")
-    public String getTargetOriginId() {
+    public CharSequence getTargetOriginId() {
         return targetOriginId;
     }
 
@@ -198,11 +198,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("TargetOriginId")
-    public void setTargetOriginId(String targetOriginId) {
+    public void setTargetOriginId(CharSequence targetOriginId) {
         this.targetOriginId = targetOriginId;
     }
 
-    public CacheBehavior withTargetOriginId(String targetOriginId) {
+    public CacheBehavior withTargetOriginId(CharSequence targetOriginId) {
         this.targetOriginId = targetOriginId;
         return this;
     }
@@ -212,7 +212,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("ViewerProtocolPolicy")
-    public String getViewerProtocolPolicy() {
+    public CharSequence getViewerProtocolPolicy() {
         return viewerProtocolPolicy;
     }
 
@@ -221,11 +221,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("ViewerProtocolPolicy")
-    public void setViewerProtocolPolicy(String viewerProtocolPolicy) {
+    public void setViewerProtocolPolicy(CharSequence viewerProtocolPolicy) {
         this.viewerProtocolPolicy = viewerProtocolPolicy;
     }
 
-    public CacheBehavior withViewerProtocolPolicy(String viewerProtocolPolicy) {
+    public CacheBehavior withViewerProtocolPolicy(CharSequence viewerProtocolPolicy) {
         this.viewerProtocolPolicy = viewerProtocolPolicy;
         return this;
     }
@@ -235,7 +235,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("TrustedSigners")
-    public List<String> getTrustedSigners() {
+    public List<CharSequence> getTrustedSigners() {
         return trustedSigners;
     }
 
@@ -244,11 +244,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("TrustedSigners")
-    public void setTrustedSigners(List<String> trustedSigners) {
+    public void setTrustedSigners(List<CharSequence> trustedSigners) {
         this.trustedSigners = trustedSigners;
     }
 
-    public CacheBehavior withTrustedSigners(List<String> trustedSigners) {
+    public CacheBehavior withTrustedSigners(List<CharSequence> trustedSigners) {
         this.trustedSigners = trustedSigners;
         return this;
     }
@@ -281,7 +281,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("FieldLevelEncryptionId")
-    public String getFieldLevelEncryptionId() {
+    public CharSequence getFieldLevelEncryptionId() {
         return fieldLevelEncryptionId;
     }
 
@@ -290,11 +290,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("FieldLevelEncryptionId")
-    public void setFieldLevelEncryptionId(String fieldLevelEncryptionId) {
+    public void setFieldLevelEncryptionId(CharSequence fieldLevelEncryptionId) {
         this.fieldLevelEncryptionId = fieldLevelEncryptionId;
     }
 
-    public CacheBehavior withFieldLevelEncryptionId(String fieldLevelEncryptionId) {
+    public CacheBehavior withFieldLevelEncryptionId(CharSequence fieldLevelEncryptionId) {
         this.fieldLevelEncryptionId = fieldLevelEncryptionId;
         return this;
     }
@@ -304,7 +304,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("AllowedMethods")
-    public List<String> getAllowedMethods() {
+    public List<CharSequence> getAllowedMethods() {
         return allowedMethods;
     }
 
@@ -313,11 +313,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("AllowedMethods")
-    public void setAllowedMethods(List<String> allowedMethods) {
+    public void setAllowedMethods(List<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
     }
 
-    public CacheBehavior withAllowedMethods(List<String> allowedMethods) {
+    public CacheBehavior withAllowedMethods(List<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
         return this;
     }
@@ -327,7 +327,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("PathPattern")
-    public String getPathPattern() {
+    public CharSequence getPathPattern() {
         return pathPattern;
     }
 
@@ -336,11 +336,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("PathPattern")
-    public void setPathPattern(String pathPattern) {
+    public void setPathPattern(CharSequence pathPattern) {
         this.pathPattern = pathPattern;
     }
 
-    public CacheBehavior withPathPattern(String pathPattern) {
+    public CacheBehavior withPathPattern(CharSequence pathPattern) {
         this.pathPattern = pathPattern;
         return this;
     }
@@ -350,7 +350,7 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("CachedMethods")
-    public List<String> getCachedMethods() {
+    public List<CharSequence> getCachedMethods() {
         return cachedMethods;
     }
 
@@ -359,11 +359,11 @@ public class CacheBehavior {
      * 
      */
     @JsonProperty("CachedMethods")
-    public void setCachedMethods(List<String> cachedMethods) {
+    public void setCachedMethods(List<CharSequence> cachedMethods) {
         this.cachedMethods = cachedMethods;
     }
 
-    public CacheBehavior withCachedMethods(List<String> cachedMethods) {
+    public CacheBehavior withCachedMethods(List<CharSequence> cachedMethods) {
         this.cachedMethods = cachedMethods;
         return this;
     }

@@ -31,21 +31,21 @@ public class VPNGatewayRoutePropagation {
      */
     @JsonProperty("RouteTableIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-routetableids")
-    private List<String> routeTableIds = new ArrayList<String>();
+    private List<CharSequence> routeTableIds = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-vpngatewayid
      * 
      */
     @JsonProperty("VpnGatewayId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-vpngatewayid")
-    private String vpnGatewayId;
+    private CharSequence vpnGatewayId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-routetableids
      * 
      */
     @JsonProperty("RouteTableIds")
-    public List<String> getRouteTableIds() {
+    public List<CharSequence> getRouteTableIds() {
         return routeTableIds;
     }
 
@@ -54,11 +54,11 @@ public class VPNGatewayRoutePropagation {
      * 
      */
     @JsonProperty("RouteTableIds")
-    public void setRouteTableIds(List<String> routeTableIds) {
+    public void setRouteTableIds(List<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
     }
 
-    public VPNGatewayRoutePropagation withRouteTableIds(List<String> routeTableIds) {
+    public VPNGatewayRoutePropagation withRouteTableIds(List<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
         return this;
     }
@@ -68,7 +68,7 @@ public class VPNGatewayRoutePropagation {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public String getVpnGatewayId() {
+    public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
 
@@ -77,11 +77,11 @@ public class VPNGatewayRoutePropagation {
      * 
      */
     @JsonProperty("VpnGatewayId")
-    public void setVpnGatewayId(String vpnGatewayId) {
+    public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }
 
-    public VPNGatewayRoutePropagation withVpnGatewayId(String vpnGatewayId) {
+    public VPNGatewayRoutePropagation withVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
         return this;
     }

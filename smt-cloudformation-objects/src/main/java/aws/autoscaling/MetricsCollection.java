@@ -31,21 +31,21 @@ public class MetricsCollection {
      */
     @JsonProperty("Granularity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity")
-    private String granularity;
+    private CharSequence granularity;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics
      * 
      */
     @JsonProperty("Metrics")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics")
-    private List<String> metrics = new ArrayList<String>();
+    private List<CharSequence> metrics = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity
      * 
      */
     @JsonProperty("Granularity")
-    public String getGranularity() {
+    public CharSequence getGranularity() {
         return granularity;
     }
 
@@ -54,11 +54,11 @@ public class MetricsCollection {
      * 
      */
     @JsonProperty("Granularity")
-    public void setGranularity(String granularity) {
+    public void setGranularity(CharSequence granularity) {
         this.granularity = granularity;
     }
 
-    public MetricsCollection withGranularity(String granularity) {
+    public MetricsCollection withGranularity(CharSequence granularity) {
         this.granularity = granularity;
         return this;
     }
@@ -68,7 +68,7 @@ public class MetricsCollection {
      * 
      */
     @JsonProperty("Metrics")
-    public List<String> getMetrics() {
+    public List<CharSequence> getMetrics() {
         return metrics;
     }
 
@@ -77,11 +77,11 @@ public class MetricsCollection {
      * 
      */
     @JsonProperty("Metrics")
-    public void setMetrics(List<String> metrics) {
+    public void setMetrics(List<CharSequence> metrics) {
         this.metrics = metrics;
     }
 
-    public MetricsCollection withMetrics(List<String> metrics) {
+    public MetricsCollection withMetrics(List<CharSequence> metrics) {
         this.metrics = metrics;
         return this;
     }

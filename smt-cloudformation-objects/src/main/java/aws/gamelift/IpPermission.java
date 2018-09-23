@@ -38,14 +38,14 @@ public class IpPermission {
      */
     @JsonProperty("IpRange")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-iprange")
-    private String ipRange;
+    private CharSequence ipRange;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-protocol
      * 
      */
     @JsonProperty("Protocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-protocol")
-    private String protocol;
+    private CharSequence protocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-toport
      * 
@@ -82,7 +82,7 @@ public class IpPermission {
      * 
      */
     @JsonProperty("IpRange")
-    public String getIpRange() {
+    public CharSequence getIpRange() {
         return ipRange;
     }
 
@@ -91,11 +91,11 @@ public class IpPermission {
      * 
      */
     @JsonProperty("IpRange")
-    public void setIpRange(String ipRange) {
+    public void setIpRange(CharSequence ipRange) {
         this.ipRange = ipRange;
     }
 
-    public IpPermission withIpRange(String ipRange) {
+    public IpPermission withIpRange(CharSequence ipRange) {
         this.ipRange = ipRange;
         return this;
     }
@@ -105,7 +105,7 @@ public class IpPermission {
      * 
      */
     @JsonProperty("Protocol")
-    public String getProtocol() {
+    public CharSequence getProtocol() {
         return protocol;
     }
 
@@ -114,11 +114,11 @@ public class IpPermission {
      * 
      */
     @JsonProperty("Protocol")
-    public void setProtocol(String protocol) {
+    public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
 
-    public IpPermission withProtocol(String protocol) {
+    public IpPermission withProtocol(CharSequence protocol) {
         this.protocol = protocol;
         return this;
     }

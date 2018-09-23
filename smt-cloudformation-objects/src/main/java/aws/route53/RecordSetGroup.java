@@ -34,21 +34,21 @@ public class RecordSetGroup {
      */
     @JsonProperty("Comment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment")
-    private String comment;
+    private CharSequence comment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid
      * 
      */
     @JsonProperty("HostedZoneId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid")
-    private String hostedZoneId;
+    private CharSequence hostedZoneId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename
      * 
      */
     @JsonProperty("HostedZoneName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename")
-    private String hostedZoneName;
+    private CharSequence hostedZoneName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets
      * 
@@ -63,7 +63,7 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("Comment")
-    public String getComment() {
+    public CharSequence getComment() {
         return comment;
     }
 
@@ -72,11 +72,11 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("Comment")
-    public void setComment(String comment) {
+    public void setComment(CharSequence comment) {
         this.comment = comment;
     }
 
-    public RecordSetGroup withComment(String comment) {
+    public RecordSetGroup withComment(CharSequence comment) {
         this.comment = comment;
         return this;
     }
@@ -86,7 +86,7 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public String getHostedZoneId() {
+    public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
 
@@ -95,11 +95,11 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("HostedZoneId")
-    public void setHostedZoneId(String hostedZoneId) {
+    public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
 
-    public RecordSetGroup withHostedZoneId(String hostedZoneId) {
+    public RecordSetGroup withHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
         return this;
     }
@@ -109,7 +109,7 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("HostedZoneName")
-    public String getHostedZoneName() {
+    public CharSequence getHostedZoneName() {
         return hostedZoneName;
     }
 
@@ -118,11 +118,11 @@ public class RecordSetGroup {
      * 
      */
     @JsonProperty("HostedZoneName")
-    public void setHostedZoneName(String hostedZoneName) {
+    public void setHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
     }
 
-    public RecordSetGroup withHostedZoneName(String hostedZoneName) {
+    public RecordSetGroup withHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
         return this;
     }

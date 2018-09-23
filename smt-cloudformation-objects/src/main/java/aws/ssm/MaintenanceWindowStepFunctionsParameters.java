@@ -29,21 +29,21 @@ public class MaintenanceWindowStepFunctionsParameters {
      */
     @JsonProperty("Input")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input")
-    private String input;
+    private CharSequence input;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input
      * 
      */
     @JsonProperty("Input")
-    public String getInput() {
+    public CharSequence getInput() {
         return input;
     }
 
@@ -52,11 +52,11 @@ public class MaintenanceWindowStepFunctionsParameters {
      * 
      */
     @JsonProperty("Input")
-    public void setInput(String input) {
+    public void setInput(CharSequence input) {
         this.input = input;
     }
 
-    public MaintenanceWindowStepFunctionsParameters withInput(String input) {
+    public MaintenanceWindowStepFunctionsParameters withInput(CharSequence input) {
         this.input = input;
         return this;
     }
@@ -66,7 +66,7 @@ public class MaintenanceWindowStepFunctionsParameters {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -75,11 +75,11 @@ public class MaintenanceWindowStepFunctionsParameters {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public MaintenanceWindowStepFunctionsParameters withName(String name) {
+    public MaintenanceWindowStepFunctionsParameters withName(CharSequence name) {
         this.name = name;
         return this;
     }

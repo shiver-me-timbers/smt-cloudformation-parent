@@ -28,14 +28,14 @@ public class Schedule {
      */
     @JsonProperty("ScheduleExpression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html#cfn-glue-crawler-schedule-scheduleexpression")
-    private String scheduleExpression;
+    private CharSequence scheduleExpression;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html#cfn-glue-crawler-schedule-scheduleexpression
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public String getScheduleExpression() {
+    public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
 
@@ -44,11 +44,11 @@ public class Schedule {
      * 
      */
     @JsonProperty("ScheduleExpression")
-    public void setScheduleExpression(String scheduleExpression) {
+    public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }
 
-    public Schedule withScheduleExpression(String scheduleExpression) {
+    public Schedule withScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
         return this;
     }

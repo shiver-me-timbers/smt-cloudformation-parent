@@ -36,35 +36,35 @@ public class SecurityGroupEgress {
      */
     @JsonProperty("CidrIp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-cidrip")
-    private String cidrIp;
+    private CharSequence cidrIp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-cidripv6
      * 
      */
     @JsonProperty("CidrIpv6")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-cidripv6")
-    private String cidrIpv6;
+    private CharSequence cidrIpv6;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-destinationprefixlistid
      * 
      */
     @JsonProperty("DestinationPrefixListId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-destinationprefixlistid")
-    private String destinationPrefixListId;
+    private CharSequence destinationPrefixListId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-destinationsecuritygroupid
      * 
      */
     @JsonProperty("DestinationSecurityGroupId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-destinationsecuritygroupid")
-    private String destinationSecurityGroupId;
+    private CharSequence destinationSecurityGroupId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-fromport
      * 
@@ -78,14 +78,14 @@ public class SecurityGroupEgress {
      */
     @JsonProperty("GroupId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-groupid")
-    private String groupId;
+    private CharSequence groupId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-ipprotocol
      * 
      */
     @JsonProperty("IpProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-ipprotocol")
-    private String ipProtocol;
+    private CharSequence ipProtocol;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html#cfn-ec2-securitygroupegress-toport
      * 
@@ -99,7 +99,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("CidrIp")
-    public String getCidrIp() {
+    public CharSequence getCidrIp() {
         return cidrIp;
     }
 
@@ -108,11 +108,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("CidrIp")
-    public void setCidrIp(String cidrIp) {
+    public void setCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
     }
 
-    public SecurityGroupEgress withCidrIp(String cidrIp) {
+    public SecurityGroupEgress withCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
         return this;
     }
@@ -122,7 +122,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("CidrIpv6")
-    public String getCidrIpv6() {
+    public CharSequence getCidrIpv6() {
         return cidrIpv6;
     }
 
@@ -131,11 +131,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("CidrIpv6")
-    public void setCidrIpv6(String cidrIpv6) {
+    public void setCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
     }
 
-    public SecurityGroupEgress withCidrIpv6(String cidrIpv6) {
+    public SecurityGroupEgress withCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
         return this;
     }
@@ -145,7 +145,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -154,11 +154,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public SecurityGroupEgress withDescription(String description) {
+    public SecurityGroupEgress withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -168,7 +168,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("DestinationPrefixListId")
-    public String getDestinationPrefixListId() {
+    public CharSequence getDestinationPrefixListId() {
         return destinationPrefixListId;
     }
 
@@ -177,11 +177,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("DestinationPrefixListId")
-    public void setDestinationPrefixListId(String destinationPrefixListId) {
+    public void setDestinationPrefixListId(CharSequence destinationPrefixListId) {
         this.destinationPrefixListId = destinationPrefixListId;
     }
 
-    public SecurityGroupEgress withDestinationPrefixListId(String destinationPrefixListId) {
+    public SecurityGroupEgress withDestinationPrefixListId(CharSequence destinationPrefixListId) {
         this.destinationPrefixListId = destinationPrefixListId;
         return this;
     }
@@ -191,7 +191,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("DestinationSecurityGroupId")
-    public String getDestinationSecurityGroupId() {
+    public CharSequence getDestinationSecurityGroupId() {
         return destinationSecurityGroupId;
     }
 
@@ -200,11 +200,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("DestinationSecurityGroupId")
-    public void setDestinationSecurityGroupId(String destinationSecurityGroupId) {
+    public void setDestinationSecurityGroupId(CharSequence destinationSecurityGroupId) {
         this.destinationSecurityGroupId = destinationSecurityGroupId;
     }
 
-    public SecurityGroupEgress withDestinationSecurityGroupId(String destinationSecurityGroupId) {
+    public SecurityGroupEgress withDestinationSecurityGroupId(CharSequence destinationSecurityGroupId) {
         this.destinationSecurityGroupId = destinationSecurityGroupId;
         return this;
     }
@@ -237,7 +237,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("GroupId")
-    public String getGroupId() {
+    public CharSequence getGroupId() {
         return groupId;
     }
 
@@ -246,11 +246,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("GroupId")
-    public void setGroupId(String groupId) {
+    public void setGroupId(CharSequence groupId) {
         this.groupId = groupId;
     }
 
-    public SecurityGroupEgress withGroupId(String groupId) {
+    public SecurityGroupEgress withGroupId(CharSequence groupId) {
         this.groupId = groupId;
         return this;
     }
@@ -260,7 +260,7 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("IpProtocol")
-    public String getIpProtocol() {
+    public CharSequence getIpProtocol() {
         return ipProtocol;
     }
 
@@ -269,11 +269,11 @@ public class SecurityGroupEgress {
      * 
      */
     @JsonProperty("IpProtocol")
-    public void setIpProtocol(String ipProtocol) {
+    public void setIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
     }
 
-    public SecurityGroupEgress withIpProtocol(String ipProtocol) {
+    public SecurityGroupEgress withIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
         return this;
     }

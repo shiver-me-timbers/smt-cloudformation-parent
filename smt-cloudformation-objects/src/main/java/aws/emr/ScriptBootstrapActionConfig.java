@@ -33,21 +33,21 @@ public class ScriptBootstrapActionConfig {
     @JsonProperty("Args")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-args")
-    private Set<String> args = new LinkedHashSet<String>();
+    private Set<CharSequence> args = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-path")
-    private String path;
+    private CharSequence path;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-args
      * 
      */
     @JsonProperty("Args")
-    public Set<String> getArgs() {
+    public Set<CharSequence> getArgs() {
         return args;
     }
 
@@ -56,11 +56,11 @@ public class ScriptBootstrapActionConfig {
      * 
      */
     @JsonProperty("Args")
-    public void setArgs(Set<String> args) {
+    public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
 
-    public ScriptBootstrapActionConfig withArgs(Set<String> args) {
+    public ScriptBootstrapActionConfig withArgs(Set<CharSequence> args) {
         this.args = args;
         return this;
     }
@@ -70,7 +70,7 @@ public class ScriptBootstrapActionConfig {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -79,11 +79,11 @@ public class ScriptBootstrapActionConfig {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public ScriptBootstrapActionConfig withPath(String path) {
+    public ScriptBootstrapActionConfig withPath(CharSequence path) {
         this.path = path;
         return this;
     }

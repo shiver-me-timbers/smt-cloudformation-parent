@@ -39,14 +39,14 @@ public class AccountAggregationSource {
      */
     @JsonProperty("AwsRegions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-awsregions")
-    private List<String> awsRegions = new ArrayList<String>();
+    private List<CharSequence> awsRegions = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-accountids
      * 
      */
     @JsonProperty("AccountIds")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-accountids")
-    private List<String> accountIds = new ArrayList<String>();
+    private List<CharSequence> accountIds = new ArrayList<CharSequence>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-allawsregions
@@ -76,7 +76,7 @@ public class AccountAggregationSource {
      * 
      */
     @JsonProperty("AwsRegions")
-    public List<String> getAwsRegions() {
+    public List<CharSequence> getAwsRegions() {
         return awsRegions;
     }
 
@@ -85,11 +85,11 @@ public class AccountAggregationSource {
      * 
      */
     @JsonProperty("AwsRegions")
-    public void setAwsRegions(List<String> awsRegions) {
+    public void setAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
     }
 
-    public AccountAggregationSource withAwsRegions(List<String> awsRegions) {
+    public AccountAggregationSource withAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
         return this;
     }
@@ -99,7 +99,7 @@ public class AccountAggregationSource {
      * 
      */
     @JsonProperty("AccountIds")
-    public List<String> getAccountIds() {
+    public List<CharSequence> getAccountIds() {
         return accountIds;
     }
 
@@ -108,11 +108,11 @@ public class AccountAggregationSource {
      * 
      */
     @JsonProperty("AccountIds")
-    public void setAccountIds(List<String> accountIds) {
+    public void setAccountIds(List<CharSequence> accountIds) {
         this.accountIds = accountIds;
     }
 
-    public AccountAggregationSource withAccountIds(List<String> accountIds) {
+    public AccountAggregationSource withAccountIds(List<CharSequence> accountIds) {
         this.accountIds = accountIds;
         return this;
     }

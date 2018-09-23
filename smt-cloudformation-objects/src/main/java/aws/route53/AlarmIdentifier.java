@@ -29,21 +29,21 @@ public class AlarmIdentifier {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-region
      * 
      */
     @JsonProperty("Region")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-region")
-    private String region;
+    private CharSequence region;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -52,11 +52,11 @@ public class AlarmIdentifier {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public AlarmIdentifier withName(String name) {
+    public AlarmIdentifier withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -66,7 +66,7 @@ public class AlarmIdentifier {
      * 
      */
     @JsonProperty("Region")
-    public String getRegion() {
+    public CharSequence getRegion() {
         return region;
     }
 
@@ -75,11 +75,11 @@ public class AlarmIdentifier {
      * 
      */
     @JsonProperty("Region")
-    public void setRegion(String region) {
+    public void setRegion(CharSequence region) {
         this.region = region;
     }
 
-    public AlarmIdentifier withRegion(String region) {
+    public AlarmIdentifier withRegion(CharSequence region) {
         this.region = region;
         return this;
     }

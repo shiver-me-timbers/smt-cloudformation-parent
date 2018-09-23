@@ -30,7 +30,7 @@ public class Logging {
      */
     @JsonProperty("Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket")
-    private String bucket;
+    private CharSequence bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-enabled
      * 
@@ -44,14 +44,14 @@ public class Logging {
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-prefix")
-    private String prefix;
+    private CharSequence prefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket
      * 
      */
     @JsonProperty("Bucket")
-    public String getBucket() {
+    public CharSequence getBucket() {
         return bucket;
     }
 
@@ -60,11 +60,11 @@ public class Logging {
      * 
      */
     @JsonProperty("Bucket")
-    public void setBucket(String bucket) {
+    public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
 
-    public Logging withBucket(String bucket) {
+    public Logging withBucket(CharSequence bucket) {
         this.bucket = bucket;
         return this;
     }
@@ -97,7 +97,7 @@ public class Logging {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -106,11 +106,11 @@ public class Logging {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public Logging withPrefix(String prefix) {
+    public Logging withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }

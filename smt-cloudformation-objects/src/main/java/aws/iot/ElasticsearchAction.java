@@ -32,42 +32,42 @@ public class ElasticsearchAction {
      */
     @JsonProperty("Endpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-endpoint")
-    private String endpoint;
+    private CharSequence endpoint;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-id
      * 
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-index
      * 
      */
     @JsonProperty("Index")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-index")
-    private String index;
+    private CharSequence index;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-endpoint
      * 
      */
     @JsonProperty("Endpoint")
-    public String getEndpoint() {
+    public CharSequence getEndpoint() {
         return endpoint;
     }
 
@@ -76,11 +76,11 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Endpoint")
-    public void setEndpoint(String endpoint) {
+    public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }
 
-    public ElasticsearchAction withEndpoint(String endpoint) {
+    public ElasticsearchAction withEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
         return this;
     }
@@ -90,7 +90,7 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -99,11 +99,11 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public ElasticsearchAction withId(String id) {
+    public ElasticsearchAction withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -113,7 +113,7 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Index")
-    public String getIndex() {
+    public CharSequence getIndex() {
         return index;
     }
 
@@ -122,11 +122,11 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Index")
-    public void setIndex(String index) {
+    public void setIndex(CharSequence index) {
         this.index = index;
     }
 
-    public ElasticsearchAction withIndex(String index) {
+    public ElasticsearchAction withIndex(CharSequence index) {
         this.index = index;
         return this;
     }
@@ -136,7 +136,7 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -145,11 +145,11 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public ElasticsearchAction withRoleArn(String roleArn) {
+    public ElasticsearchAction withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }
@@ -159,7 +159,7 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -168,11 +168,11 @@ public class ElasticsearchAction {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public ElasticsearchAction withType(String type) {
+    public ElasticsearchAction withType(CharSequence type) {
         this.type = type;
         return this;
     }

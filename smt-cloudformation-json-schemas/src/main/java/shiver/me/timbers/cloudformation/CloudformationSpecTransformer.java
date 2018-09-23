@@ -28,7 +28,7 @@ public class CloudformationSpecTransformer {
 
     public static CloudformationSpecTransformer instance(
         String defaultPackageName,
-        Map<String, String> typeMap,
+        Map<String, Map<String, Object>> typeMap,
         Map<String, PropertyType> properties
     ) {
         final JavaTypes javaTypes = new JavaTypes(defaultPackageName);

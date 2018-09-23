@@ -28,14 +28,14 @@ public class PlacementGroup {
      */
     @JsonProperty("Strategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html#cfn-ec2-placementgroup-strategy")
-    private String strategy;
+    private CharSequence strategy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html#cfn-ec2-placementgroup-strategy
      * 
      */
     @JsonProperty("Strategy")
-    public String getStrategy() {
+    public CharSequence getStrategy() {
         return strategy;
     }
 
@@ -44,11 +44,11 @@ public class PlacementGroup {
      * 
      */
     @JsonProperty("Strategy")
-    public void setStrategy(String strategy) {
+    public void setStrategy(CharSequence strategy) {
         this.strategy = strategy;
     }
 
-    public PlacementGroup withStrategy(String strategy) {
+    public PlacementGroup withStrategy(CharSequence strategy) {
         this.strategy = strategy;
         return this;
     }

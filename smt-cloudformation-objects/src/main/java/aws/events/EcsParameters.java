@@ -36,7 +36,7 @@ public class EcsParameters {
      */
     @JsonProperty("TaskDefinitionArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskdefinitionarn")
-    private String taskDefinitionArn;
+    private CharSequence taskDefinitionArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskcount
@@ -66,7 +66,7 @@ public class EcsParameters {
      * 
      */
     @JsonProperty("TaskDefinitionArn")
-    public String getTaskDefinitionArn() {
+    public CharSequence getTaskDefinitionArn() {
         return taskDefinitionArn;
     }
 
@@ -75,11 +75,11 @@ public class EcsParameters {
      * 
      */
     @JsonProperty("TaskDefinitionArn")
-    public void setTaskDefinitionArn(String taskDefinitionArn) {
+    public void setTaskDefinitionArn(CharSequence taskDefinitionArn) {
         this.taskDefinitionArn = taskDefinitionArn;
     }
 
-    public EcsParameters withTaskDefinitionArn(String taskDefinitionArn) {
+    public EcsParameters withTaskDefinitionArn(CharSequence taskDefinitionArn) {
         this.taskDefinitionArn = taskDefinitionArn;
         return this;
     }

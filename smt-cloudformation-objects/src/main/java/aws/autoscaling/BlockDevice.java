@@ -54,7 +54,7 @@ public class BlockDevice {
      */
     @JsonProperty("SnapshotId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html#cfn-as-launchconfig-blockdev-template-snapshotid")
-    private String snapshotId;
+    private CharSequence snapshotId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html#cfn-as-launchconfig-blockdev-template-volumesize
      * 
@@ -68,7 +68,7 @@ public class BlockDevice {
      */
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html#cfn-as-launchconfig-blockdev-template-volumetype")
-    private String volumeType;
+    private CharSequence volumeType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html#cfn-as-launchconfig-blockdev-template-deleteonterm
@@ -144,7 +144,7 @@ public class BlockDevice {
      * 
      */
     @JsonProperty("SnapshotId")
-    public String getSnapshotId() {
+    public CharSequence getSnapshotId() {
         return snapshotId;
     }
 
@@ -153,11 +153,11 @@ public class BlockDevice {
      * 
      */
     @JsonProperty("SnapshotId")
-    public void setSnapshotId(String snapshotId) {
+    public void setSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
     }
 
-    public BlockDevice withSnapshotId(String snapshotId) {
+    public BlockDevice withSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
         return this;
     }
@@ -190,7 +190,7 @@ public class BlockDevice {
      * 
      */
     @JsonProperty("VolumeType")
-    public String getVolumeType() {
+    public CharSequence getVolumeType() {
         return volumeType;
     }
 
@@ -199,11 +199,11 @@ public class BlockDevice {
      * 
      */
     @JsonProperty("VolumeType")
-    public void setVolumeType(String volumeType) {
+    public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }
 
-    public BlockDevice withVolumeType(String volumeType) {
+    public BlockDevice withVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
         return this;
     }

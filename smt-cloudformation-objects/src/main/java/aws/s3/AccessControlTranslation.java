@@ -28,14 +28,14 @@ public class AccessControlTranslation {
      */
     @JsonProperty("Owner")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner")
-    private String owner;
+    private CharSequence owner;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner
      * 
      */
     @JsonProperty("Owner")
-    public String getOwner() {
+    public CharSequence getOwner() {
         return owner;
     }
 
@@ -44,11 +44,11 @@ public class AccessControlTranslation {
      * 
      */
     @JsonProperty("Owner")
-    public void setOwner(String owner) {
+    public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
 
-    public AccessControlTranslation withOwner(String owner) {
+    public AccessControlTranslation withOwner(CharSequence owner) {
         this.owner = owner;
         return this;
     }

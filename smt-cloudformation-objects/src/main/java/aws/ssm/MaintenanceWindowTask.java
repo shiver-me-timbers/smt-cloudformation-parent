@@ -42,21 +42,21 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("MaxErrors")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors")
-    private String maxErrors;
+    private CharSequence maxErrors;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-servicerolearn
      * 
      */
     @JsonProperty("ServiceRoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-servicerolearn")
-    private String serviceRoleArn;
+    private CharSequence serviceRoleArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-priority
      * 
@@ -70,7 +70,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("MaxConcurrency")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxconcurrency")
-    private String maxConcurrency;
+    private CharSequence maxConcurrency;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets
      * 
@@ -84,14 +84,14 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskarn
      * 
      */
     @JsonProperty("TaskArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskarn")
-    private String taskArn;
+    private CharSequence taskArn;
     /**
      * TaskInvocationParameters
      * <p>
@@ -107,7 +107,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("WindowId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid")
-    private String windowId;
+    private CharSequence windowId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters
      * 
@@ -121,7 +121,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("TaskType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype")
-    private String taskType;
+    private CharSequence taskType;
     /**
      * LoggingInfo
      * <p>
@@ -137,7 +137,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("MaxErrors")
-    public String getMaxErrors() {
+    public CharSequence getMaxErrors() {
         return maxErrors;
     }
 
@@ -146,11 +146,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("MaxErrors")
-    public void setMaxErrors(String maxErrors) {
+    public void setMaxErrors(CharSequence maxErrors) {
         this.maxErrors = maxErrors;
     }
 
-    public MaintenanceWindowTask withMaxErrors(String maxErrors) {
+    public MaintenanceWindowTask withMaxErrors(CharSequence maxErrors) {
         this.maxErrors = maxErrors;
         return this;
     }
@@ -160,7 +160,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -169,11 +169,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public MaintenanceWindowTask withDescription(String description) {
+    public MaintenanceWindowTask withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -183,7 +183,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public String getServiceRoleArn() {
+    public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
 
@@ -192,11 +192,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("ServiceRoleArn")
-    public void setServiceRoleArn(String serviceRoleArn) {
+    public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
 
-    public MaintenanceWindowTask withServiceRoleArn(String serviceRoleArn) {
+    public MaintenanceWindowTask withServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
         return this;
     }
@@ -229,7 +229,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("MaxConcurrency")
-    public String getMaxConcurrency() {
+    public CharSequence getMaxConcurrency() {
         return maxConcurrency;
     }
 
@@ -238,11 +238,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("MaxConcurrency")
-    public void setMaxConcurrency(String maxConcurrency) {
+    public void setMaxConcurrency(CharSequence maxConcurrency) {
         this.maxConcurrency = maxConcurrency;
     }
 
-    public MaintenanceWindowTask withMaxConcurrency(String maxConcurrency) {
+    public MaintenanceWindowTask withMaxConcurrency(CharSequence maxConcurrency) {
         this.maxConcurrency = maxConcurrency;
         return this;
     }
@@ -275,7 +275,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -284,11 +284,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public MaintenanceWindowTask withName(String name) {
+    public MaintenanceWindowTask withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -298,7 +298,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("TaskArn")
-    public String getTaskArn() {
+    public CharSequence getTaskArn() {
         return taskArn;
     }
 
@@ -307,11 +307,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("TaskArn")
-    public void setTaskArn(String taskArn) {
+    public void setTaskArn(CharSequence taskArn) {
         this.taskArn = taskArn;
     }
 
-    public MaintenanceWindowTask withTaskArn(String taskArn) {
+    public MaintenanceWindowTask withTaskArn(CharSequence taskArn) {
         this.taskArn = taskArn;
         return this;
     }
@@ -348,7 +348,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("WindowId")
-    public String getWindowId() {
+    public CharSequence getWindowId() {
         return windowId;
     }
 
@@ -357,11 +357,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("WindowId")
-    public void setWindowId(String windowId) {
+    public void setWindowId(CharSequence windowId) {
         this.windowId = windowId;
     }
 
-    public MaintenanceWindowTask withWindowId(String windowId) {
+    public MaintenanceWindowTask withWindowId(CharSequence windowId) {
         this.windowId = windowId;
         return this;
     }
@@ -394,7 +394,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("TaskType")
-    public String getTaskType() {
+    public CharSequence getTaskType() {
         return taskType;
     }
 
@@ -403,11 +403,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonProperty("TaskType")
-    public void setTaskType(String taskType) {
+    public void setTaskType(CharSequence taskType) {
         this.taskType = taskType;
     }
 
-    public MaintenanceWindowTask withTaskType(String taskType) {
+    public MaintenanceWindowTask withTaskType(CharSequence taskType) {
         this.taskType = taskType;
         return this;
     }

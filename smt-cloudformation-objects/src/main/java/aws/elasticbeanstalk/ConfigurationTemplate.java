@@ -36,21 +36,21 @@ public class ConfigurationTemplate {
      */
     @JsonProperty("ApplicationName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname")
-    private String applicationName;
+    private CharSequence applicationName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-environmentid
      * 
      */
     @JsonProperty("EnvironmentId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-environmentid")
-    private String environmentId;
+    private CharSequence environmentId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-optionsettings
      * 
@@ -64,14 +64,14 @@ public class ConfigurationTemplate {
      */
     @JsonProperty("PlatformArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-platformarn")
-    private String platformArn;
+    private CharSequence platformArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-solutionstackname
      * 
      */
     @JsonProperty("SolutionStackName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-solutionstackname")
-    private String solutionStackName;
+    private CharSequence solutionStackName;
     /**
      * SourceConfiguration
      * <p>
@@ -87,7 +87,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("ApplicationName")
-    public String getApplicationName() {
+    public CharSequence getApplicationName() {
         return applicationName;
     }
 
@@ -96,11 +96,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("ApplicationName")
-    public void setApplicationName(String applicationName) {
+    public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
 
-    public ConfigurationTemplate withApplicationName(String applicationName) {
+    public ConfigurationTemplate withApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
         return this;
     }
@@ -110,7 +110,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -119,11 +119,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ConfigurationTemplate withDescription(String description) {
+    public ConfigurationTemplate withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -133,7 +133,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("EnvironmentId")
-    public String getEnvironmentId() {
+    public CharSequence getEnvironmentId() {
         return environmentId;
     }
 
@@ -142,11 +142,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("EnvironmentId")
-    public void setEnvironmentId(String environmentId) {
+    public void setEnvironmentId(CharSequence environmentId) {
         this.environmentId = environmentId;
     }
 
-    public ConfigurationTemplate withEnvironmentId(String environmentId) {
+    public ConfigurationTemplate withEnvironmentId(CharSequence environmentId) {
         this.environmentId = environmentId;
         return this;
     }
@@ -179,7 +179,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("PlatformArn")
-    public String getPlatformArn() {
+    public CharSequence getPlatformArn() {
         return platformArn;
     }
 
@@ -188,11 +188,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("PlatformArn")
-    public void setPlatformArn(String platformArn) {
+    public void setPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
     }
 
-    public ConfigurationTemplate withPlatformArn(String platformArn) {
+    public ConfigurationTemplate withPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
         return this;
     }
@@ -202,7 +202,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("SolutionStackName")
-    public String getSolutionStackName() {
+    public CharSequence getSolutionStackName() {
         return solutionStackName;
     }
 
@@ -211,11 +211,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonProperty("SolutionStackName")
-    public void setSolutionStackName(String solutionStackName) {
+    public void setSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
     }
 
-    public ConfigurationTemplate withSolutionStackName(String solutionStackName) {
+    public ConfigurationTemplate withSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
         return this;
     }

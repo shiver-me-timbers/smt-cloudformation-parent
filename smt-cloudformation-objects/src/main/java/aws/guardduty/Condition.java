@@ -48,14 +48,14 @@ public class Condition {
      */
     @JsonProperty("Neq")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-neq")
-    private List<String> neq = new ArrayList<String>();
+    private List<CharSequence> neq = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-eq
      * 
      */
     @JsonProperty("Eq")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-eq")
-    private List<String> eq = new ArrayList<String>();
+    private List<CharSequence> eq = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lte
      * 
@@ -115,7 +115,7 @@ public class Condition {
      * 
      */
     @JsonProperty("Neq")
-    public List<String> getNeq() {
+    public List<CharSequence> getNeq() {
         return neq;
     }
 
@@ -124,11 +124,11 @@ public class Condition {
      * 
      */
     @JsonProperty("Neq")
-    public void setNeq(List<String> neq) {
+    public void setNeq(List<CharSequence> neq) {
         this.neq = neq;
     }
 
-    public Condition withNeq(List<String> neq) {
+    public Condition withNeq(List<CharSequence> neq) {
         this.neq = neq;
         return this;
     }
@@ -138,7 +138,7 @@ public class Condition {
      * 
      */
     @JsonProperty("Eq")
-    public List<String> getEq() {
+    public List<CharSequence> getEq() {
         return eq;
     }
 
@@ -147,11 +147,11 @@ public class Condition {
      * 
      */
     @JsonProperty("Eq")
-    public void setEq(List<String> eq) {
+    public void setEq(List<CharSequence> eq) {
         this.eq = eq;
     }
 
-    public Condition withEq(List<String> eq) {
+    public Condition withEq(List<CharSequence> eq) {
         this.eq = eq;
         return this;
     }

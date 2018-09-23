@@ -38,21 +38,21 @@ public class MetricTransformation {
      */
     @JsonProperty("MetricName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricname")
-    private String metricName;
+    private CharSequence metricName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricnamespace
      * 
      */
     @JsonProperty("MetricNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricnamespace")
-    private String metricNamespace;
+    private CharSequence metricNamespace;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricvalue
      * 
      */
     @JsonProperty("MetricValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricvalue")
-    private String metricValue;
+    private CharSequence metricValue;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-defaultvalue
@@ -82,7 +82,7 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricName")
-    public String getMetricName() {
+    public CharSequence getMetricName() {
         return metricName;
     }
 
@@ -91,11 +91,11 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricName")
-    public void setMetricName(String metricName) {
+    public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
 
-    public MetricTransformation withMetricName(String metricName) {
+    public MetricTransformation withMetricName(CharSequence metricName) {
         this.metricName = metricName;
         return this;
     }
@@ -105,7 +105,7 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricNamespace")
-    public String getMetricNamespace() {
+    public CharSequence getMetricNamespace() {
         return metricNamespace;
     }
 
@@ -114,11 +114,11 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricNamespace")
-    public void setMetricNamespace(String metricNamespace) {
+    public void setMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
     }
 
-    public MetricTransformation withMetricNamespace(String metricNamespace) {
+    public MetricTransformation withMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
         return this;
     }
@@ -128,7 +128,7 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricValue")
-    public String getMetricValue() {
+    public CharSequence getMetricValue() {
         return metricValue;
     }
 
@@ -137,11 +137,11 @@ public class MetricTransformation {
      * 
      */
     @JsonProperty("MetricValue")
-    public void setMetricValue(String metricValue) {
+    public void setMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
     }
 
-    public MetricTransformation withMetricValue(String metricValue) {
+    public MetricTransformation withMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
         return this;
     }

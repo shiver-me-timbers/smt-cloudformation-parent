@@ -28,14 +28,14 @@ public class Matcher {
      */
     @JsonProperty("HttpCode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode")
-    private String httpCode;
+    private CharSequence httpCode;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode
      * 
      */
     @JsonProperty("HttpCode")
-    public String getHttpCode() {
+    public CharSequence getHttpCode() {
         return httpCode;
     }
 
@@ -44,11 +44,11 @@ public class Matcher {
      * 
      */
     @JsonProperty("HttpCode")
-    public void setHttpCode(String httpCode) {
+    public void setHttpCode(CharSequence httpCode) {
         this.httpCode = httpCode;
     }
 
-    public Matcher withHttpCode(String httpCode) {
+    public Matcher withHttpCode(CharSequence httpCode) {
         this.httpCode = httpCode;
         return this;
     }

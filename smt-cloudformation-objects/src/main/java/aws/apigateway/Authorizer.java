@@ -40,14 +40,14 @@ public class Authorizer {
      */
     @JsonProperty("AuthType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authtype")
-    private String authType;
+    private CharSequence authType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizercredentials
      * 
      */
     @JsonProperty("AuthorizerCredentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizercredentials")
-    private String authorizerCredentials;
+    private CharSequence authorizerCredentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizerresultttlinseconds
      * 
@@ -61,28 +61,28 @@ public class Authorizer {
      */
     @JsonProperty("AuthorizerUri")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizeruri")
-    private String authorizerUri;
+    private CharSequence authorizerUri;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identitysource
      * 
      */
     @JsonProperty("IdentitySource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identitysource")
-    private String identitySource;
+    private CharSequence identitySource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identityvalidationexpression
      * 
      */
     @JsonProperty("IdentityValidationExpression")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identityvalidationexpression")
-    private String identityValidationExpression;
+    private CharSequence identityValidationExpression;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-name")
-    private String name;
+    private CharSequence name;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-providerarns
      * 
@@ -90,28 +90,28 @@ public class Authorizer {
     @JsonProperty("ProviderARNs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-providerarns")
-    private Set<String> providerARNs = new LinkedHashSet<String>();
+    private Set<CharSequence> providerARNs = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-restapiid
      * 
      */
     @JsonProperty("RestApiId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-restapiid")
-    private String restApiId;
+    private CharSequence restApiId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type
      * 
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type")
-    private String type;
+    private CharSequence type;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authtype
      * 
      */
     @JsonProperty("AuthType")
-    public String getAuthType() {
+    public CharSequence getAuthType() {
         return authType;
     }
 
@@ -120,11 +120,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("AuthType")
-    public void setAuthType(String authType) {
+    public void setAuthType(CharSequence authType) {
         this.authType = authType;
     }
 
-    public Authorizer withAuthType(String authType) {
+    public Authorizer withAuthType(CharSequence authType) {
         this.authType = authType;
         return this;
     }
@@ -134,7 +134,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("AuthorizerCredentials")
-    public String getAuthorizerCredentials() {
+    public CharSequence getAuthorizerCredentials() {
         return authorizerCredentials;
     }
 
@@ -143,11 +143,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("AuthorizerCredentials")
-    public void setAuthorizerCredentials(String authorizerCredentials) {
+    public void setAuthorizerCredentials(CharSequence authorizerCredentials) {
         this.authorizerCredentials = authorizerCredentials;
     }
 
-    public Authorizer withAuthorizerCredentials(String authorizerCredentials) {
+    public Authorizer withAuthorizerCredentials(CharSequence authorizerCredentials) {
         this.authorizerCredentials = authorizerCredentials;
         return this;
     }
@@ -180,7 +180,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("AuthorizerUri")
-    public String getAuthorizerUri() {
+    public CharSequence getAuthorizerUri() {
         return authorizerUri;
     }
 
@@ -189,11 +189,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("AuthorizerUri")
-    public void setAuthorizerUri(String authorizerUri) {
+    public void setAuthorizerUri(CharSequence authorizerUri) {
         this.authorizerUri = authorizerUri;
     }
 
-    public Authorizer withAuthorizerUri(String authorizerUri) {
+    public Authorizer withAuthorizerUri(CharSequence authorizerUri) {
         this.authorizerUri = authorizerUri;
         return this;
     }
@@ -203,7 +203,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("IdentitySource")
-    public String getIdentitySource() {
+    public CharSequence getIdentitySource() {
         return identitySource;
     }
 
@@ -212,11 +212,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("IdentitySource")
-    public void setIdentitySource(String identitySource) {
+    public void setIdentitySource(CharSequence identitySource) {
         this.identitySource = identitySource;
     }
 
-    public Authorizer withIdentitySource(String identitySource) {
+    public Authorizer withIdentitySource(CharSequence identitySource) {
         this.identitySource = identitySource;
         return this;
     }
@@ -226,7 +226,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("IdentityValidationExpression")
-    public String getIdentityValidationExpression() {
+    public CharSequence getIdentityValidationExpression() {
         return identityValidationExpression;
     }
 
@@ -235,11 +235,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("IdentityValidationExpression")
-    public void setIdentityValidationExpression(String identityValidationExpression) {
+    public void setIdentityValidationExpression(CharSequence identityValidationExpression) {
         this.identityValidationExpression = identityValidationExpression;
     }
 
-    public Authorizer withIdentityValidationExpression(String identityValidationExpression) {
+    public Authorizer withIdentityValidationExpression(CharSequence identityValidationExpression) {
         this.identityValidationExpression = identityValidationExpression;
         return this;
     }
@@ -249,7 +249,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -258,11 +258,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Authorizer withName(String name) {
+    public Authorizer withName(CharSequence name) {
         this.name = name;
         return this;
     }
@@ -272,7 +272,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("ProviderARNs")
-    public Set<String> getProviderARNs() {
+    public Set<CharSequence> getProviderARNs() {
         return providerARNs;
     }
 
@@ -281,11 +281,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("ProviderARNs")
-    public void setProviderARNs(Set<String> providerARNs) {
+    public void setProviderARNs(Set<CharSequence> providerARNs) {
         this.providerARNs = providerARNs;
     }
 
-    public Authorizer withProviderARNs(Set<String> providerARNs) {
+    public Authorizer withProviderARNs(Set<CharSequence> providerARNs) {
         this.providerARNs = providerARNs;
         return this;
     }
@@ -295,7 +295,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("RestApiId")
-    public String getRestApiId() {
+    public CharSequence getRestApiId() {
         return restApiId;
     }
 
@@ -304,11 +304,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("RestApiId")
-    public void setRestApiId(String restApiId) {
+    public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
 
-    public Authorizer withRestApiId(String restApiId) {
+    public Authorizer withRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
         return this;
     }
@@ -318,7 +318,7 @@ public class Authorizer {
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -327,11 +327,11 @@ public class Authorizer {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Authorizer withType(String type) {
+    public Authorizer withType(CharSequence type) {
         this.type = type;
         return this;
     }

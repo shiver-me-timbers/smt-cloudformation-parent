@@ -34,7 +34,7 @@ public class Group {
      */
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname")
-    private String groupName;
+    private CharSequence groupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-managepolicyarns
      * 
@@ -42,14 +42,14 @@ public class Group {
     @JsonProperty("ManagedPolicyArns")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-managepolicyarns")
-    private Set<String> managedPolicyArns = new LinkedHashSet<String>();
+    private Set<CharSequence> managedPolicyArns = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-path
      * 
      */
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-path")
-    private String path;
+    private CharSequence path;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-policies
      * 
@@ -64,7 +64,7 @@ public class Group {
      * 
      */
     @JsonProperty("GroupName")
-    public String getGroupName() {
+    public CharSequence getGroupName() {
         return groupName;
     }
 
@@ -73,11 +73,11 @@ public class Group {
      * 
      */
     @JsonProperty("GroupName")
-    public void setGroupName(String groupName) {
+    public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
 
-    public Group withGroupName(String groupName) {
+    public Group withGroupName(CharSequence groupName) {
         this.groupName = groupName;
         return this;
     }
@@ -87,7 +87,7 @@ public class Group {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public Set<String> getManagedPolicyArns() {
+    public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
 
@@ -96,11 +96,11 @@ public class Group {
      * 
      */
     @JsonProperty("ManagedPolicyArns")
-    public void setManagedPolicyArns(Set<String> managedPolicyArns) {
+    public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
 
-    public Group withManagedPolicyArns(Set<String> managedPolicyArns) {
+    public Group withManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
         return this;
     }
@@ -110,7 +110,7 @@ public class Group {
      * 
      */
     @JsonProperty("Path")
-    public String getPath() {
+    public CharSequence getPath() {
         return path;
     }
 
@@ -119,11 +119,11 @@ public class Group {
      * 
      */
     @JsonProperty("Path")
-    public void setPath(String path) {
+    public void setPath(CharSequence path) {
         this.path = path;
     }
 
-    public Group withPath(String path) {
+    public Group withPath(CharSequence path) {
         this.path = path;
         return this;
     }

@@ -30,28 +30,28 @@ public class CopyCommand {
      */
     @JsonProperty("CopyOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions")
-    private String copyOptions;
+    private CharSequence copyOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns
      * 
      */
     @JsonProperty("DataTableColumns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns")
-    private String dataTableColumns;
+    private CharSequence dataTableColumns;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablename
      * 
      */
     @JsonProperty("DataTableName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablename")
-    private String dataTableName;
+    private CharSequence dataTableName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions
      * 
      */
     @JsonProperty("CopyOptions")
-    public String getCopyOptions() {
+    public CharSequence getCopyOptions() {
         return copyOptions;
     }
 
@@ -60,11 +60,11 @@ public class CopyCommand {
      * 
      */
     @JsonProperty("CopyOptions")
-    public void setCopyOptions(String copyOptions) {
+    public void setCopyOptions(CharSequence copyOptions) {
         this.copyOptions = copyOptions;
     }
 
-    public CopyCommand withCopyOptions(String copyOptions) {
+    public CopyCommand withCopyOptions(CharSequence copyOptions) {
         this.copyOptions = copyOptions;
         return this;
     }
@@ -74,7 +74,7 @@ public class CopyCommand {
      * 
      */
     @JsonProperty("DataTableColumns")
-    public String getDataTableColumns() {
+    public CharSequence getDataTableColumns() {
         return dataTableColumns;
     }
 
@@ -83,11 +83,11 @@ public class CopyCommand {
      * 
      */
     @JsonProperty("DataTableColumns")
-    public void setDataTableColumns(String dataTableColumns) {
+    public void setDataTableColumns(CharSequence dataTableColumns) {
         this.dataTableColumns = dataTableColumns;
     }
 
-    public CopyCommand withDataTableColumns(String dataTableColumns) {
+    public CopyCommand withDataTableColumns(CharSequence dataTableColumns) {
         this.dataTableColumns = dataTableColumns;
         return this;
     }
@@ -97,7 +97,7 @@ public class CopyCommand {
      * 
      */
     @JsonProperty("DataTableName")
-    public String getDataTableName() {
+    public CharSequence getDataTableName() {
         return dataTableName;
     }
 
@@ -106,11 +106,11 @@ public class CopyCommand {
      * 
      */
     @JsonProperty("DataTableName")
-    public void setDataTableName(String dataTableName) {
+    public void setDataTableName(CharSequence dataTableName) {
         this.dataTableName = dataTableName;
     }
 
-    public CopyCommand withDataTableName(String dataTableName) {
+    public CopyCommand withDataTableName(CharSequence dataTableName) {
         this.dataTableName = dataTableName;
         return this;
     }

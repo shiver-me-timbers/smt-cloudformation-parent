@@ -62,7 +62,7 @@ public class IdentityPool {
      */
     @JsonProperty("DeveloperProviderName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername")
-    private String developerProviderName;
+    private CharSequence developerProviderName;
     /**
      * CognitoStreams
      * <p>
@@ -78,7 +78,7 @@ public class IdentityPool {
      */
     @JsonProperty("IdentityPoolName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname")
-    private String identityPoolName;
+    private CharSequence identityPoolName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowunauthenticatedidentities
      * 
@@ -99,14 +99,14 @@ public class IdentityPool {
      */
     @JsonProperty("SamlProviderARNs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-samlproviderarns")
-    private List<String> samlProviderARNs = new ArrayList<String>();
+    private List<CharSequence> samlProviderARNs = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-openidconnectproviderarns
      * 
      */
     @JsonProperty("OpenIdConnectProviderARNs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-openidconnectproviderarns")
-    private List<String> openIdConnectProviderARNs = new ArrayList<String>();
+    private List<CharSequence> openIdConnectProviderARNs = new ArrayList<CharSequence>();
 
     /**
      * PushSync
@@ -186,7 +186,7 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("DeveloperProviderName")
-    public String getDeveloperProviderName() {
+    public CharSequence getDeveloperProviderName() {
         return developerProviderName;
     }
 
@@ -195,11 +195,11 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("DeveloperProviderName")
-    public void setDeveloperProviderName(String developerProviderName) {
+    public void setDeveloperProviderName(CharSequence developerProviderName) {
         this.developerProviderName = developerProviderName;
     }
 
-    public IdentityPool withDeveloperProviderName(String developerProviderName) {
+    public IdentityPool withDeveloperProviderName(CharSequence developerProviderName) {
         this.developerProviderName = developerProviderName;
         return this;
     }
@@ -236,7 +236,7 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("IdentityPoolName")
-    public String getIdentityPoolName() {
+    public CharSequence getIdentityPoolName() {
         return identityPoolName;
     }
 
@@ -245,11 +245,11 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("IdentityPoolName")
-    public void setIdentityPoolName(String identityPoolName) {
+    public void setIdentityPoolName(CharSequence identityPoolName) {
         this.identityPoolName = identityPoolName;
     }
 
-    public IdentityPool withIdentityPoolName(String identityPoolName) {
+    public IdentityPool withIdentityPoolName(CharSequence identityPoolName) {
         this.identityPoolName = identityPoolName;
         return this;
     }
@@ -305,7 +305,7 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("SamlProviderARNs")
-    public List<String> getSamlProviderARNs() {
+    public List<CharSequence> getSamlProviderARNs() {
         return samlProviderARNs;
     }
 
@@ -314,11 +314,11 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("SamlProviderARNs")
-    public void setSamlProviderARNs(List<String> samlProviderARNs) {
+    public void setSamlProviderARNs(List<CharSequence> samlProviderARNs) {
         this.samlProviderARNs = samlProviderARNs;
     }
 
-    public IdentityPool withSamlProviderARNs(List<String> samlProviderARNs) {
+    public IdentityPool withSamlProviderARNs(List<CharSequence> samlProviderARNs) {
         this.samlProviderARNs = samlProviderARNs;
         return this;
     }
@@ -328,7 +328,7 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("OpenIdConnectProviderARNs")
-    public List<String> getOpenIdConnectProviderARNs() {
+    public List<CharSequence> getOpenIdConnectProviderARNs() {
         return openIdConnectProviderARNs;
     }
 
@@ -337,11 +337,11 @@ public class IdentityPool {
      * 
      */
     @JsonProperty("OpenIdConnectProviderARNs")
-    public void setOpenIdConnectProviderARNs(List<String> openIdConnectProviderARNs) {
+    public void setOpenIdConnectProviderARNs(List<CharSequence> openIdConnectProviderARNs) {
         this.openIdConnectProviderARNs = openIdConnectProviderARNs;
     }
 
-    public IdentityPool withOpenIdConnectProviderARNs(List<String> openIdConnectProviderARNs) {
+    public IdentityPool withOpenIdConnectProviderARNs(List<CharSequence> openIdConnectProviderARNs) {
         this.openIdConnectProviderARNs = openIdConnectProviderARNs;
         return this;
     }

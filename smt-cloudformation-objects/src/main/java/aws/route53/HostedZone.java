@@ -50,7 +50,7 @@ public class HostedZone {
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-name")
-    private String name;
+    private CharSequence name;
     /**
      * QueryLoggingConfig
      * <p>
@@ -123,7 +123,7 @@ public class HostedZone {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -132,11 +132,11 @@ public class HostedZone {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public HostedZone withName(String name) {
+    public HostedZone withName(CharSequence name) {
         this.name = name;
         return this;
     }

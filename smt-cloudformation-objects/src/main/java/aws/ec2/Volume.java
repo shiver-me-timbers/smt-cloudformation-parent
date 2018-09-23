@@ -29,21 +29,21 @@ public class Volume {
      */
     @JsonProperty("Device")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-device")
-    private String device;
+    private CharSequence device;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-volumeid
      * 
      */
     @JsonProperty("VolumeId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-volumeid")
-    private String volumeId;
+    private CharSequence volumeId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-device
      * 
      */
     @JsonProperty("Device")
-    public String getDevice() {
+    public CharSequence getDevice() {
         return device;
     }
 
@@ -52,11 +52,11 @@ public class Volume {
      * 
      */
     @JsonProperty("Device")
-    public void setDevice(String device) {
+    public void setDevice(CharSequence device) {
         this.device = device;
     }
 
-    public Volume withDevice(String device) {
+    public Volume withDevice(CharSequence device) {
         this.device = device;
         return this;
     }
@@ -66,7 +66,7 @@ public class Volume {
      * 
      */
     @JsonProperty("VolumeId")
-    public String getVolumeId() {
+    public CharSequence getVolumeId() {
         return volumeId;
     }
 
@@ -75,11 +75,11 @@ public class Volume {
      * 
      */
     @JsonProperty("VolumeId")
-    public void setVolumeId(String volumeId) {
+    public void setVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
     }
 
-    public Volume withVolumeId(String volumeId) {
+    public Volume withVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
         return this;
     }

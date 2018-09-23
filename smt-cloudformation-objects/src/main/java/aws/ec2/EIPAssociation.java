@@ -32,42 +32,42 @@ public class EIPAssociation {
      */
     @JsonProperty("AllocationId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-allocationid")
-    private String allocationId;
+    private CharSequence allocationId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-eip
      * 
      */
     @JsonProperty("EIP")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-eip")
-    private String eIP;
+    private CharSequence eIP;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-instanceid
      * 
      */
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-instanceid")
-    private String instanceId;
+    private CharSequence instanceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-networkinterfaceid
      * 
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-networkinterfaceid")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-PrivateIpAddress
      * 
      */
     @JsonProperty("PrivateIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-PrivateIpAddress")
-    private String privateIpAddress;
+    private CharSequence privateIpAddress;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-allocationid
      * 
      */
     @JsonProperty("AllocationId")
-    public String getAllocationId() {
+    public CharSequence getAllocationId() {
         return allocationId;
     }
 
@@ -76,11 +76,11 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("AllocationId")
-    public void setAllocationId(String allocationId) {
+    public void setAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
     }
 
-    public EIPAssociation withAllocationId(String allocationId) {
+    public EIPAssociation withAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
         return this;
     }
@@ -90,7 +90,7 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("EIP")
-    public String getEIP() {
+    public CharSequence getEIP() {
         return eIP;
     }
 
@@ -99,11 +99,11 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("EIP")
-    public void setEIP(String eIP) {
+    public void setEIP(CharSequence eIP) {
         this.eIP = eIP;
     }
 
-    public EIPAssociation withEIP(String eIP) {
+    public EIPAssociation withEIP(CharSequence eIP) {
         this.eIP = eIP;
         return this;
     }
@@ -113,7 +113,7 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("InstanceId")
-    public String getInstanceId() {
+    public CharSequence getInstanceId() {
         return instanceId;
     }
 
@@ -122,11 +122,11 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("InstanceId")
-    public void setInstanceId(String instanceId) {
+    public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
 
-    public EIPAssociation withInstanceId(String instanceId) {
+    public EIPAssociation withInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
         return this;
     }
@@ -136,7 +136,7 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -145,11 +145,11 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public EIPAssociation withNetworkInterfaceId(String networkInterfaceId) {
+    public EIPAssociation withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }
@@ -159,7 +159,7 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public String getPrivateIpAddress() {
+    public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
 
@@ -168,11 +168,11 @@ public class EIPAssociation {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public void setPrivateIpAddress(String privateIpAddress) {
+    public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
 
-    public EIPAssociation withPrivateIpAddress(String privateIpAddress) {
+    public EIPAssociation withPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
         return this;
     }

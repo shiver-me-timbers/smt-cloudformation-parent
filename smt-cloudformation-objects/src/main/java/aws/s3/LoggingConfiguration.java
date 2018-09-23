@@ -29,21 +29,21 @@ public class LoggingConfiguration {
      */
     @JsonProperty("DestinationBucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname")
-    private String destinationBucketName;
+    private CharSequence destinationBucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix
      * 
      */
     @JsonProperty("LogFilePrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix")
-    private String logFilePrefix;
+    private CharSequence logFilePrefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname
      * 
      */
     @JsonProperty("DestinationBucketName")
-    public String getDestinationBucketName() {
+    public CharSequence getDestinationBucketName() {
         return destinationBucketName;
     }
 
@@ -52,11 +52,11 @@ public class LoggingConfiguration {
      * 
      */
     @JsonProperty("DestinationBucketName")
-    public void setDestinationBucketName(String destinationBucketName) {
+    public void setDestinationBucketName(CharSequence destinationBucketName) {
         this.destinationBucketName = destinationBucketName;
     }
 
-    public LoggingConfiguration withDestinationBucketName(String destinationBucketName) {
+    public LoggingConfiguration withDestinationBucketName(CharSequence destinationBucketName) {
         this.destinationBucketName = destinationBucketName;
         return this;
     }
@@ -66,7 +66,7 @@ public class LoggingConfiguration {
      * 
      */
     @JsonProperty("LogFilePrefix")
-    public String getLogFilePrefix() {
+    public CharSequence getLogFilePrefix() {
         return logFilePrefix;
     }
 
@@ -75,11 +75,11 @@ public class LoggingConfiguration {
      * 
      */
     @JsonProperty("LogFilePrefix")
-    public void setLogFilePrefix(String logFilePrefix) {
+    public void setLogFilePrefix(CharSequence logFilePrefix) {
         this.logFilePrefix = logFilePrefix;
     }
 
-    public LoggingConfiguration withLogFilePrefix(String logFilePrefix) {
+    public LoggingConfiguration withLogFilePrefix(CharSequence logFilePrefix) {
         this.logFilePrefix = logFilePrefix;
         return this;
     }

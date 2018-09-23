@@ -29,7 +29,7 @@ public class ComputeEnvironmentOrder {
      */
     @JsonProperty("ComputeEnvironment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment")
-    private String computeEnvironment;
+    private CharSequence computeEnvironment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order
      * 
@@ -43,7 +43,7 @@ public class ComputeEnvironmentOrder {
      * 
      */
     @JsonProperty("ComputeEnvironment")
-    public String getComputeEnvironment() {
+    public CharSequence getComputeEnvironment() {
         return computeEnvironment;
     }
 
@@ -52,11 +52,11 @@ public class ComputeEnvironmentOrder {
      * 
      */
     @JsonProperty("ComputeEnvironment")
-    public void setComputeEnvironment(String computeEnvironment) {
+    public void setComputeEnvironment(CharSequence computeEnvironment) {
         this.computeEnvironment = computeEnvironment;
     }
 
-    public ComputeEnvironmentOrder withComputeEnvironment(String computeEnvironment) {
+    public ComputeEnvironmentOrder withComputeEnvironment(CharSequence computeEnvironment) {
         this.computeEnvironment = computeEnvironment;
         return this;
     }

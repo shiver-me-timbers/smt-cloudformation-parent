@@ -30,28 +30,28 @@ public class ServiceLinkedRole {
      */
     @JsonProperty("CustomSuffix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix")
-    private String customSuffix;
+    private CharSequence customSuffix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
      * 
      */
     @JsonProperty("AWSServiceName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename")
-    private String aWSServiceName;
+    private CharSequence aWSServiceName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
      * 
      */
     @JsonProperty("CustomSuffix")
-    public String getCustomSuffix() {
+    public CharSequence getCustomSuffix() {
         return customSuffix;
     }
 
@@ -60,11 +60,11 @@ public class ServiceLinkedRole {
      * 
      */
     @JsonProperty("CustomSuffix")
-    public void setCustomSuffix(String customSuffix) {
+    public void setCustomSuffix(CharSequence customSuffix) {
         this.customSuffix = customSuffix;
     }
 
-    public ServiceLinkedRole withCustomSuffix(String customSuffix) {
+    public ServiceLinkedRole withCustomSuffix(CharSequence customSuffix) {
         this.customSuffix = customSuffix;
         return this;
     }
@@ -74,7 +74,7 @@ public class ServiceLinkedRole {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -83,11 +83,11 @@ public class ServiceLinkedRole {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public ServiceLinkedRole withDescription(String description) {
+    public ServiceLinkedRole withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -97,7 +97,7 @@ public class ServiceLinkedRole {
      * 
      */
     @JsonProperty("AWSServiceName")
-    public String getAWSServiceName() {
+    public CharSequence getAWSServiceName() {
         return aWSServiceName;
     }
 
@@ -106,11 +106,11 @@ public class ServiceLinkedRole {
      * 
      */
     @JsonProperty("AWSServiceName")
-    public void setAWSServiceName(String aWSServiceName) {
+    public void setAWSServiceName(CharSequence aWSServiceName) {
         this.aWSServiceName = aWSServiceName;
     }
 
-    public ServiceLinkedRole withAWSServiceName(String aWSServiceName) {
+    public ServiceLinkedRole withAWSServiceName(CharSequence aWSServiceName) {
         this.aWSServiceName = aWSServiceName;
         return this;
     }

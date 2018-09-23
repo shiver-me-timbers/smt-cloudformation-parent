@@ -30,28 +30,28 @@ public class CognitoStreams {
      */
     @JsonProperty("StreamingStatus")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus")
-    private String streamingStatus;
+    private CharSequence streamingStatus;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname
      * 
      */
     @JsonProperty("StreamName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname")
-    private String streamName;
+    private CharSequence streamName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus
      * 
      */
     @JsonProperty("StreamingStatus")
-    public String getStreamingStatus() {
+    public CharSequence getStreamingStatus() {
         return streamingStatus;
     }
 
@@ -60,11 +60,11 @@ public class CognitoStreams {
      * 
      */
     @JsonProperty("StreamingStatus")
-    public void setStreamingStatus(String streamingStatus) {
+    public void setStreamingStatus(CharSequence streamingStatus) {
         this.streamingStatus = streamingStatus;
     }
 
-    public CognitoStreams withStreamingStatus(String streamingStatus) {
+    public CognitoStreams withStreamingStatus(CharSequence streamingStatus) {
         this.streamingStatus = streamingStatus;
         return this;
     }
@@ -74,7 +74,7 @@ public class CognitoStreams {
      * 
      */
     @JsonProperty("StreamName")
-    public String getStreamName() {
+    public CharSequence getStreamName() {
         return streamName;
     }
 
@@ -83,11 +83,11 @@ public class CognitoStreams {
      * 
      */
     @JsonProperty("StreamName")
-    public void setStreamName(String streamName) {
+    public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }
 
-    public CognitoStreams withStreamName(String streamName) {
+    public CognitoStreams withStreamName(CharSequence streamName) {
         this.streamName = streamName;
         return this;
     }
@@ -97,7 +97,7 @@ public class CognitoStreams {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -106,11 +106,11 @@ public class CognitoStreams {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public CognitoStreams withRoleArn(String roleArn) {
+    public CognitoStreams withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

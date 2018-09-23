@@ -28,14 +28,14 @@ public class CustomResource {
      */
     @JsonProperty("ServiceToken")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken")
-    private String serviceToken;
+    private CharSequence serviceToken;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken
      * 
      */
     @JsonProperty("ServiceToken")
-    public String getServiceToken() {
+    public CharSequence getServiceToken() {
         return serviceToken;
     }
 
@@ -44,11 +44,11 @@ public class CustomResource {
      * 
      */
     @JsonProperty("ServiceToken")
-    public void setServiceToken(String serviceToken) {
+    public void setServiceToken(CharSequence serviceToken) {
         this.serviceToken = serviceToken;
     }
 
-    public CustomResource withServiceToken(String serviceToken) {
+    public CustomResource withServiceToken(CharSequence serviceToken) {
         this.serviceToken = serviceToken;
         return this;
     }

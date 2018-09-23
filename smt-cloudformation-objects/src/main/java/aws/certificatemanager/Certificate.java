@@ -38,7 +38,7 @@ public class Certificate {
      */
     @JsonProperty("DomainName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname")
-    private String domainName;
+    private CharSequence domainName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainvalidationoptions
      * 
@@ -54,7 +54,7 @@ public class Certificate {
     @JsonProperty("SubjectAlternativeNames")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-subjectalternativenames")
-    private Set<String> subjectAlternativeNames = new LinkedHashSet<String>();
+    private Set<CharSequence> subjectAlternativeNames = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-tags
      * 
@@ -68,14 +68,14 @@ public class Certificate {
      */
     @JsonProperty("ValidationMethod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-validationmethod")
-    private String validationMethod;
+    private CharSequence validationMethod;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname
      * 
      */
     @JsonProperty("DomainName")
-    public String getDomainName() {
+    public CharSequence getDomainName() {
         return domainName;
     }
 
@@ -84,11 +84,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("DomainName")
-    public void setDomainName(String domainName) {
+    public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
 
-    public Certificate withDomainName(String domainName) {
+    public Certificate withDomainName(CharSequence domainName) {
         this.domainName = domainName;
         return this;
     }
@@ -121,7 +121,7 @@ public class Certificate {
      * 
      */
     @JsonProperty("SubjectAlternativeNames")
-    public Set<String> getSubjectAlternativeNames() {
+    public Set<CharSequence> getSubjectAlternativeNames() {
         return subjectAlternativeNames;
     }
 
@@ -130,11 +130,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("SubjectAlternativeNames")
-    public void setSubjectAlternativeNames(Set<String> subjectAlternativeNames) {
+    public void setSubjectAlternativeNames(Set<CharSequence> subjectAlternativeNames) {
         this.subjectAlternativeNames = subjectAlternativeNames;
     }
 
-    public Certificate withSubjectAlternativeNames(Set<String> subjectAlternativeNames) {
+    public Certificate withSubjectAlternativeNames(Set<CharSequence> subjectAlternativeNames) {
         this.subjectAlternativeNames = subjectAlternativeNames;
         return this;
     }
@@ -167,7 +167,7 @@ public class Certificate {
      * 
      */
     @JsonProperty("ValidationMethod")
-    public String getValidationMethod() {
+    public CharSequence getValidationMethod() {
         return validationMethod;
     }
 
@@ -176,11 +176,11 @@ public class Certificate {
      * 
      */
     @JsonProperty("ValidationMethod")
-    public void setValidationMethod(String validationMethod) {
+    public void setValidationMethod(CharSequence validationMethod) {
         this.validationMethod = validationMethod;
     }
 
-    public Certificate withValidationMethod(String validationMethod) {
+    public Certificate withValidationMethod(CharSequence validationMethod) {
         this.validationMethod = validationMethod;
         return this;
     }

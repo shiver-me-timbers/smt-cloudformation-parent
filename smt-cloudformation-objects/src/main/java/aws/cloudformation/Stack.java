@@ -40,7 +40,7 @@ public class Stack {
     @JsonProperty("NotificationARNs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns")
-    private Set<java.lang.String> notificationARNs = new LinkedHashSet<java.lang.String>();
+    private Set<CharSequence> notificationARNs = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters
      * 
@@ -61,7 +61,7 @@ public class Stack {
      */
     @JsonProperty("TemplateURL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl")
-    private java.lang.String templateURL;
+    private CharSequence templateURL;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes
      * 
@@ -75,7 +75,7 @@ public class Stack {
      * 
      */
     @JsonProperty("NotificationARNs")
-    public Set<java.lang.String> getNotificationARNs() {
+    public Set<CharSequence> getNotificationARNs() {
         return notificationARNs;
     }
 
@@ -84,11 +84,11 @@ public class Stack {
      * 
      */
     @JsonProperty("NotificationARNs")
-    public void setNotificationARNs(Set<java.lang.String> notificationARNs) {
+    public void setNotificationARNs(Set<CharSequence> notificationARNs) {
         this.notificationARNs = notificationARNs;
     }
 
-    public Stack withNotificationARNs(Set<java.lang.String> notificationARNs) {
+    public Stack withNotificationARNs(Set<CharSequence> notificationARNs) {
         this.notificationARNs = notificationARNs;
         return this;
     }
@@ -144,7 +144,7 @@ public class Stack {
      * 
      */
     @JsonProperty("TemplateURL")
-    public java.lang.String getTemplateURL() {
+    public CharSequence getTemplateURL() {
         return templateURL;
     }
 
@@ -153,11 +153,11 @@ public class Stack {
      * 
      */
     @JsonProperty("TemplateURL")
-    public void setTemplateURL(java.lang.String templateURL) {
+    public void setTemplateURL(CharSequence templateURL) {
         this.templateURL = templateURL;
     }
 
-    public Stack withTemplateURL(java.lang.String templateURL) {
+    public Stack withTemplateURL(CharSequence templateURL) {
         this.templateURL = templateURL;
         return this;
     }

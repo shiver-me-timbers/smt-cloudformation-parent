@@ -29,21 +29,21 @@ public class AppCookieStickinessPolicy {
      */
     @JsonProperty("CookieName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename")
-    private String cookieName;
+    private CharSequence cookieName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname
      * 
      */
     @JsonProperty("PolicyName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname")
-    private String policyName;
+    private CharSequence policyName;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename
      * 
      */
     @JsonProperty("CookieName")
-    public String getCookieName() {
+    public CharSequence getCookieName() {
         return cookieName;
     }
 
@@ -52,11 +52,11 @@ public class AppCookieStickinessPolicy {
      * 
      */
     @JsonProperty("CookieName")
-    public void setCookieName(String cookieName) {
+    public void setCookieName(CharSequence cookieName) {
         this.cookieName = cookieName;
     }
 
-    public AppCookieStickinessPolicy withCookieName(String cookieName) {
+    public AppCookieStickinessPolicy withCookieName(CharSequence cookieName) {
         this.cookieName = cookieName;
         return this;
     }
@@ -66,7 +66,7 @@ public class AppCookieStickinessPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public String getPolicyName() {
+    public CharSequence getPolicyName() {
         return policyName;
     }
 
@@ -75,11 +75,11 @@ public class AppCookieStickinessPolicy {
      * 
      */
     @JsonProperty("PolicyName")
-    public void setPolicyName(String policyName) {
+    public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
 
-    public AppCookieStickinessPolicy withPolicyName(String policyName) {
+    public AppCookieStickinessPolicy withPolicyName(CharSequence policyName) {
         this.policyName = policyName;
         return this;
     }

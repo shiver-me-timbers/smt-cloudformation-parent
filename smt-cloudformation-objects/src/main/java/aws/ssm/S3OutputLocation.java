@@ -29,21 +29,21 @@ public class S3OutputLocation {
      */
     @JsonProperty("OutputS3BucketName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname")
-    private String outputS3BucketName;
+    private CharSequence outputS3BucketName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix")
-    private String outputS3KeyPrefix;
+    private CharSequence outputS3KeyPrefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
      */
     @JsonProperty("OutputS3BucketName")
-    public String getOutputS3BucketName() {
+    public CharSequence getOutputS3BucketName() {
         return outputS3BucketName;
     }
 
@@ -52,11 +52,11 @@ public class S3OutputLocation {
      * 
      */
     @JsonProperty("OutputS3BucketName")
-    public void setOutputS3BucketName(String outputS3BucketName) {
+    public void setOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
     }
 
-    public S3OutputLocation withOutputS3BucketName(String outputS3BucketName) {
+    public S3OutputLocation withOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
         return this;
     }
@@ -66,7 +66,7 @@ public class S3OutputLocation {
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
-    public String getOutputS3KeyPrefix() {
+    public CharSequence getOutputS3KeyPrefix() {
         return outputS3KeyPrefix;
     }
 
@@ -75,11 +75,11 @@ public class S3OutputLocation {
      * 
      */
     @JsonProperty("OutputS3KeyPrefix")
-    public void setOutputS3KeyPrefix(String outputS3KeyPrefix) {
+    public void setOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
     }
 
-    public S3OutputLocation withOutputS3KeyPrefix(String outputS3KeyPrefix) {
+    public S3OutputLocation withOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
         return this;
     }

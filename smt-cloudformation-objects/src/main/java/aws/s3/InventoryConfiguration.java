@@ -53,14 +53,14 @@ public class InventoryConfiguration {
      */
     @JsonProperty("Id")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-id")
-    private String id;
+    private CharSequence id;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-includedobjectversions
      * 
      */
     @JsonProperty("IncludedObjectVersions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-includedobjectversions")
-    private String includedObjectVersions;
+    private CharSequence includedObjectVersions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-optionalfields
      * 
@@ -68,21 +68,21 @@ public class InventoryConfiguration {
     @JsonProperty("OptionalFields")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-optionalfields")
-    private Set<String> optionalFields = new LinkedHashSet<String>();
+    private Set<CharSequence> optionalFields = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-prefix
      * 
      */
     @JsonProperty("Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-prefix")
-    private String prefix;
+    private CharSequence prefix;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-schedulefrequency
      * 
      */
     @JsonProperty("ScheduleFrequency")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-schedulefrequency")
-    private String scheduleFrequency;
+    private CharSequence scheduleFrequency;
 
     /**
      * Destination
@@ -139,7 +139,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("Id")
-    public String getId() {
+    public CharSequence getId() {
         return id;
     }
 
@@ -148,11 +148,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("Id")
-    public void setId(String id) {
+    public void setId(CharSequence id) {
         this.id = id;
     }
 
-    public InventoryConfiguration withId(String id) {
+    public InventoryConfiguration withId(CharSequence id) {
         this.id = id;
         return this;
     }
@@ -162,7 +162,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("IncludedObjectVersions")
-    public String getIncludedObjectVersions() {
+    public CharSequence getIncludedObjectVersions() {
         return includedObjectVersions;
     }
 
@@ -171,11 +171,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("IncludedObjectVersions")
-    public void setIncludedObjectVersions(String includedObjectVersions) {
+    public void setIncludedObjectVersions(CharSequence includedObjectVersions) {
         this.includedObjectVersions = includedObjectVersions;
     }
 
-    public InventoryConfiguration withIncludedObjectVersions(String includedObjectVersions) {
+    public InventoryConfiguration withIncludedObjectVersions(CharSequence includedObjectVersions) {
         this.includedObjectVersions = includedObjectVersions;
         return this;
     }
@@ -185,7 +185,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("OptionalFields")
-    public Set<String> getOptionalFields() {
+    public Set<CharSequence> getOptionalFields() {
         return optionalFields;
     }
 
@@ -194,11 +194,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("OptionalFields")
-    public void setOptionalFields(Set<String> optionalFields) {
+    public void setOptionalFields(Set<CharSequence> optionalFields) {
         this.optionalFields = optionalFields;
     }
 
-    public InventoryConfiguration withOptionalFields(Set<String> optionalFields) {
+    public InventoryConfiguration withOptionalFields(Set<CharSequence> optionalFields) {
         this.optionalFields = optionalFields;
         return this;
     }
@@ -208,7 +208,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public String getPrefix() {
+    public CharSequence getPrefix() {
         return prefix;
     }
 
@@ -217,11 +217,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("Prefix")
-    public void setPrefix(String prefix) {
+    public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
 
-    public InventoryConfiguration withPrefix(String prefix) {
+    public InventoryConfiguration withPrefix(CharSequence prefix) {
         this.prefix = prefix;
         return this;
     }
@@ -231,7 +231,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("ScheduleFrequency")
-    public String getScheduleFrequency() {
+    public CharSequence getScheduleFrequency() {
         return scheduleFrequency;
     }
 
@@ -240,11 +240,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonProperty("ScheduleFrequency")
-    public void setScheduleFrequency(String scheduleFrequency) {
+    public void setScheduleFrequency(CharSequence scheduleFrequency) {
         this.scheduleFrequency = scheduleFrequency;
     }
 
-    public InventoryConfiguration withScheduleFrequency(String scheduleFrequency) {
+    public InventoryConfiguration withScheduleFrequency(CharSequence scheduleFrequency) {
         this.scheduleFrequency = scheduleFrequency;
         return this;
     }

@@ -55,21 +55,21 @@ public class NetworkInterface {
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex
      * 
      */
     @JsonProperty("DeviceIndex")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex")
-    private String deviceIndex;
+    private CharSequence deviceIndex;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset
      * 
      */
     @JsonProperty("GroupSet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset")
-    private List<String> groupSet = new ArrayList<String>();
+    private List<CharSequence> groupSet = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount
      * 
@@ -90,14 +90,14 @@ public class NetworkInterface {
      */
     @JsonProperty("NetworkInterfaceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface")
-    private String networkInterfaceId;
+    private CharSequence networkInterfaceId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress
      * 
      */
     @JsonProperty("PrivateIpAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress")
-    private String privateIpAddress;
+    private CharSequence privateIpAddress;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses
      * 
@@ -118,7 +118,7 @@ public class NetworkInterface {
      */
     @JsonProperty("SubnetId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid")
-    private String subnetId;
+    private CharSequence subnetId;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip
@@ -171,7 +171,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -180,11 +180,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public NetworkInterface withDescription(String description) {
+    public NetworkInterface withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -194,7 +194,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("DeviceIndex")
-    public String getDeviceIndex() {
+    public CharSequence getDeviceIndex() {
         return deviceIndex;
     }
 
@@ -203,11 +203,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("DeviceIndex")
-    public void setDeviceIndex(String deviceIndex) {
+    public void setDeviceIndex(CharSequence deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
 
-    public NetworkInterface withDeviceIndex(String deviceIndex) {
+    public NetworkInterface withDeviceIndex(CharSequence deviceIndex) {
         this.deviceIndex = deviceIndex;
         return this;
     }
@@ -217,7 +217,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("GroupSet")
-    public List<String> getGroupSet() {
+    public List<CharSequence> getGroupSet() {
         return groupSet;
     }
 
@@ -226,11 +226,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("GroupSet")
-    public void setGroupSet(List<String> groupSet) {
+    public void setGroupSet(List<CharSequence> groupSet) {
         this.groupSet = groupSet;
     }
 
-    public NetworkInterface withGroupSet(List<String> groupSet) {
+    public NetworkInterface withGroupSet(List<CharSequence> groupSet) {
         this.groupSet = groupSet;
         return this;
     }
@@ -286,7 +286,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public String getNetworkInterfaceId() {
+    public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
 
@@ -295,11 +295,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("NetworkInterfaceId")
-    public void setNetworkInterfaceId(String networkInterfaceId) {
+    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
 
-    public NetworkInterface withNetworkInterfaceId(String networkInterfaceId) {
+    public NetworkInterface withNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
         return this;
     }
@@ -309,7 +309,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public String getPrivateIpAddress() {
+    public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
 
@@ -318,11 +318,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    public void setPrivateIpAddress(String privateIpAddress) {
+    public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
 
-    public NetworkInterface withPrivateIpAddress(String privateIpAddress) {
+    public NetworkInterface withPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
         return this;
     }
@@ -378,7 +378,7 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("SubnetId")
-    public String getSubnetId() {
+    public CharSequence getSubnetId() {
         return subnetId;
     }
 
@@ -387,11 +387,11 @@ public class NetworkInterface {
      * 
      */
     @JsonProperty("SubnetId")
-    public void setSubnetId(String subnetId) {
+    public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
 
-    public NetworkInterface withSubnetId(String subnetId) {
+    public NetworkInterface withSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
         return this;
     }

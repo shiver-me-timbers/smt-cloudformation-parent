@@ -38,7 +38,7 @@ public class Connection {
      */
     @JsonProperty("CatalogId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid")
-    private String catalogId;
+    private CharSequence catalogId;
 
     /**
      * ConnectionInput
@@ -72,7 +72,7 @@ public class Connection {
      * 
      */
     @JsonProperty("CatalogId")
-    public String getCatalogId() {
+    public CharSequence getCatalogId() {
         return catalogId;
     }
 
@@ -81,11 +81,11 @@ public class Connection {
      * 
      */
     @JsonProperty("CatalogId")
-    public void setCatalogId(String catalogId) {
+    public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }
 
-    public Connection withCatalogId(String catalogId) {
+    public Connection withCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
         return this;
     }

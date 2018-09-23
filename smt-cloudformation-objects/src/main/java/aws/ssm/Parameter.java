@@ -32,42 +32,42 @@ public class Parameter {
      */
     @JsonProperty("Type")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-type")
-    private String type;
+    private CharSequence type;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-description
      * 
      */
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-description")
-    private String description;
+    private CharSequence description;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern
      * 
      */
     @JsonProperty("AllowedPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-allowedpattern")
-    private String allowedPattern;
+    private CharSequence allowedPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-value
      * 
      */
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-value")
-    private String value;
+    private CharSequence value;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-name
      * 
      */
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-name")
-    private String name;
+    private CharSequence name;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-type
      * 
      */
     @JsonProperty("Type")
-    public String getType() {
+    public CharSequence getType() {
         return type;
     }
 
@@ -76,11 +76,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("Type")
-    public void setType(String type) {
+    public void setType(CharSequence type) {
         this.type = type;
     }
 
-    public Parameter withType(String type) {
+    public Parameter withType(CharSequence type) {
         this.type = type;
         return this;
     }
@@ -90,7 +90,7 @@ public class Parameter {
      * 
      */
     @JsonProperty("Description")
-    public String getDescription() {
+    public CharSequence getDescription() {
         return description;
     }
 
@@ -99,11 +99,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("Description")
-    public void setDescription(String description) {
+    public void setDescription(CharSequence description) {
         this.description = description;
     }
 
-    public Parameter withDescription(String description) {
+    public Parameter withDescription(CharSequence description) {
         this.description = description;
         return this;
     }
@@ -113,7 +113,7 @@ public class Parameter {
      * 
      */
     @JsonProperty("AllowedPattern")
-    public String getAllowedPattern() {
+    public CharSequence getAllowedPattern() {
         return allowedPattern;
     }
 
@@ -122,11 +122,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("AllowedPattern")
-    public void setAllowedPattern(String allowedPattern) {
+    public void setAllowedPattern(CharSequence allowedPattern) {
         this.allowedPattern = allowedPattern;
     }
 
-    public Parameter withAllowedPattern(String allowedPattern) {
+    public Parameter withAllowedPattern(CharSequence allowedPattern) {
         this.allowedPattern = allowedPattern;
         return this;
     }
@@ -136,7 +136,7 @@ public class Parameter {
      * 
      */
     @JsonProperty("Value")
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
@@ -145,11 +145,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("Value")
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public Parameter withValue(String value) {
+    public Parameter withValue(CharSequence value) {
         this.value = value;
         return this;
     }
@@ -159,7 +159,7 @@ public class Parameter {
      * 
      */
     @JsonProperty("Name")
-    public String getName() {
+    public CharSequence getName() {
         return name;
     }
 
@@ -168,11 +168,11 @@ public class Parameter {
      * 
      */
     @JsonProperty("Name")
-    public void setName(String name) {
+    public void setName(CharSequence name) {
         this.name = name;
     }
 
-    public Parameter withName(String name) {
+    public Parameter withName(CharSequence name) {
         this.name = name;
         return this;
     }

@@ -30,28 +30,28 @@ public class SourceDetail {
      */
     @JsonProperty("EventSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource")
-    private String eventSource;
+    private CharSequence eventSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency
      * 
      */
     @JsonProperty("MaximumExecutionFrequency")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency")
-    private String maximumExecutionFrequency;
+    private CharSequence maximumExecutionFrequency;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype
      * 
      */
     @JsonProperty("MessageType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype")
-    private String messageType;
+    private CharSequence messageType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource
      * 
      */
     @JsonProperty("EventSource")
-    public String getEventSource() {
+    public CharSequence getEventSource() {
         return eventSource;
     }
 
@@ -60,11 +60,11 @@ public class SourceDetail {
      * 
      */
     @JsonProperty("EventSource")
-    public void setEventSource(String eventSource) {
+    public void setEventSource(CharSequence eventSource) {
         this.eventSource = eventSource;
     }
 
-    public SourceDetail withEventSource(String eventSource) {
+    public SourceDetail withEventSource(CharSequence eventSource) {
         this.eventSource = eventSource;
         return this;
     }
@@ -74,7 +74,7 @@ public class SourceDetail {
      * 
      */
     @JsonProperty("MaximumExecutionFrequency")
-    public String getMaximumExecutionFrequency() {
+    public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
 
@@ -83,11 +83,11 @@ public class SourceDetail {
      * 
      */
     @JsonProperty("MaximumExecutionFrequency")
-    public void setMaximumExecutionFrequency(String maximumExecutionFrequency) {
+    public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
 
-    public SourceDetail withMaximumExecutionFrequency(String maximumExecutionFrequency) {
+    public SourceDetail withMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
         return this;
     }
@@ -97,7 +97,7 @@ public class SourceDetail {
      * 
      */
     @JsonProperty("MessageType")
-    public String getMessageType() {
+    public CharSequence getMessageType() {
         return messageType;
     }
 
@@ -106,11 +106,11 @@ public class SourceDetail {
      * 
      */
     @JsonProperty("MessageType")
-    public void setMessageType(String messageType) {
+    public void setMessageType(CharSequence messageType) {
         this.messageType = messageType;
     }
 
-    public SourceDetail withMessageType(String messageType) {
+    public SourceDetail withMessageType(CharSequence messageType) {
         this.messageType = messageType;
         return this;
     }

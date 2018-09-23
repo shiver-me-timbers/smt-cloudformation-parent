@@ -34,28 +34,28 @@ public class TriggerConfig {
     @JsonProperty("TriggerEvents")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents")
-    private Set<String> triggerEvents = new LinkedHashSet<String>();
+    private Set<CharSequence> triggerEvents = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggername
      * 
      */
     @JsonProperty("TriggerName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggername")
-    private String triggerName;
+    private CharSequence triggerName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn
      * 
      */
     @JsonProperty("TriggerTargetArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn")
-    private String triggerTargetArn;
+    private CharSequence triggerTargetArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents
      * 
      */
     @JsonProperty("TriggerEvents")
-    public Set<String> getTriggerEvents() {
+    public Set<CharSequence> getTriggerEvents() {
         return triggerEvents;
     }
 
@@ -64,11 +64,11 @@ public class TriggerConfig {
      * 
      */
     @JsonProperty("TriggerEvents")
-    public void setTriggerEvents(Set<String> triggerEvents) {
+    public void setTriggerEvents(Set<CharSequence> triggerEvents) {
         this.triggerEvents = triggerEvents;
     }
 
-    public TriggerConfig withTriggerEvents(Set<String> triggerEvents) {
+    public TriggerConfig withTriggerEvents(Set<CharSequence> triggerEvents) {
         this.triggerEvents = triggerEvents;
         return this;
     }
@@ -78,7 +78,7 @@ public class TriggerConfig {
      * 
      */
     @JsonProperty("TriggerName")
-    public String getTriggerName() {
+    public CharSequence getTriggerName() {
         return triggerName;
     }
 
@@ -87,11 +87,11 @@ public class TriggerConfig {
      * 
      */
     @JsonProperty("TriggerName")
-    public void setTriggerName(String triggerName) {
+    public void setTriggerName(CharSequence triggerName) {
         this.triggerName = triggerName;
     }
 
-    public TriggerConfig withTriggerName(String triggerName) {
+    public TriggerConfig withTriggerName(CharSequence triggerName) {
         this.triggerName = triggerName;
         return this;
     }
@@ -101,7 +101,7 @@ public class TriggerConfig {
      * 
      */
     @JsonProperty("TriggerTargetArn")
-    public String getTriggerTargetArn() {
+    public CharSequence getTriggerTargetArn() {
         return triggerTargetArn;
     }
 
@@ -110,11 +110,11 @@ public class TriggerConfig {
      * 
      */
     @JsonProperty("TriggerTargetArn")
-    public void setTriggerTargetArn(String triggerTargetArn) {
+    public void setTriggerTargetArn(CharSequence triggerTargetArn) {
         this.triggerTargetArn = triggerTargetArn;
     }
 
-    public TriggerConfig withTriggerTargetArn(String triggerTargetArn) {
+    public TriggerConfig withTriggerTargetArn(CharSequence triggerTargetArn) {
         this.triggerTargetArn = triggerTargetArn;
         return this;
     }

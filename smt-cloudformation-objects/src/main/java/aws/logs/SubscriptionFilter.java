@@ -31,35 +31,35 @@ public class SubscriptionFilter {
      */
     @JsonProperty("DestinationArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-destinationarn")
-    private String destinationArn;
+    private CharSequence destinationArn;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-filterpattern
      * 
      */
     @JsonProperty("FilterPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-filterpattern")
-    private String filterPattern;
+    private CharSequence filterPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-loggroupname
      * 
      */
     @JsonProperty("LogGroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-loggroupname")
-    private String logGroupName;
+    private CharSequence logGroupName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-rolearn
      * 
      */
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-rolearn")
-    private String roleArn;
+    private CharSequence roleArn;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-destinationarn
      * 
      */
     @JsonProperty("DestinationArn")
-    public String getDestinationArn() {
+    public CharSequence getDestinationArn() {
         return destinationArn;
     }
 
@@ -68,11 +68,11 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("DestinationArn")
-    public void setDestinationArn(String destinationArn) {
+    public void setDestinationArn(CharSequence destinationArn) {
         this.destinationArn = destinationArn;
     }
 
-    public SubscriptionFilter withDestinationArn(String destinationArn) {
+    public SubscriptionFilter withDestinationArn(CharSequence destinationArn) {
         this.destinationArn = destinationArn;
         return this;
     }
@@ -82,7 +82,7 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("FilterPattern")
-    public String getFilterPattern() {
+    public CharSequence getFilterPattern() {
         return filterPattern;
     }
 
@@ -91,11 +91,11 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("FilterPattern")
-    public void setFilterPattern(String filterPattern) {
+    public void setFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
     }
 
-    public SubscriptionFilter withFilterPattern(String filterPattern) {
+    public SubscriptionFilter withFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
         return this;
     }
@@ -105,7 +105,7 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("LogGroupName")
-    public String getLogGroupName() {
+    public CharSequence getLogGroupName() {
         return logGroupName;
     }
 
@@ -114,11 +114,11 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("LogGroupName")
-    public void setLogGroupName(String logGroupName) {
+    public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
 
-    public SubscriptionFilter withLogGroupName(String logGroupName) {
+    public SubscriptionFilter withLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
         return this;
     }
@@ -128,7 +128,7 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("RoleArn")
-    public String getRoleArn() {
+    public CharSequence getRoleArn() {
         return roleArn;
     }
 
@@ -137,11 +137,11 @@ public class SubscriptionFilter {
      * 
      */
     @JsonProperty("RoleArn")
-    public void setRoleArn(String roleArn) {
+    public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
 
-    public SubscriptionFilter withRoleArn(String roleArn) {
+    public SubscriptionFilter withRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
         return this;
     }

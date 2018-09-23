@@ -55,7 +55,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("BucketColumns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-bucketcolumns")
-    private List<String> bucketColumns = new ArrayList<String>();
+    private List<CharSequence> bucketColumns = new ArrayList<CharSequence>();
     /**
      * SkewedInfo
      * <p>
@@ -71,7 +71,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("InputFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat")
-    private String inputFormat;
+    private CharSequence inputFormat;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-numberofbuckets
      * 
@@ -85,7 +85,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("OutputFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-outputformat")
-    private String outputFormat;
+    private CharSequence outputFormat;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-columns
      * 
@@ -122,7 +122,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-location")
-    private String location;
+    private CharSequence location;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories
@@ -175,7 +175,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("BucketColumns")
-    public List<String> getBucketColumns() {
+    public List<CharSequence> getBucketColumns() {
         return bucketColumns;
     }
 
@@ -184,11 +184,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("BucketColumns")
-    public void setBucketColumns(List<String> bucketColumns) {
+    public void setBucketColumns(List<CharSequence> bucketColumns) {
         this.bucketColumns = bucketColumns;
     }
 
-    public StorageDescriptor withBucketColumns(List<String> bucketColumns) {
+    public StorageDescriptor withBucketColumns(List<CharSequence> bucketColumns) {
         this.bucketColumns = bucketColumns;
         return this;
     }
@@ -225,7 +225,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("InputFormat")
-    public String getInputFormat() {
+    public CharSequence getInputFormat() {
         return inputFormat;
     }
 
@@ -234,11 +234,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("InputFormat")
-    public void setInputFormat(String inputFormat) {
+    public void setInputFormat(CharSequence inputFormat) {
         this.inputFormat = inputFormat;
     }
 
-    public StorageDescriptor withInputFormat(String inputFormat) {
+    public StorageDescriptor withInputFormat(CharSequence inputFormat) {
         this.inputFormat = inputFormat;
         return this;
     }
@@ -271,7 +271,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("OutputFormat")
-    public String getOutputFormat() {
+    public CharSequence getOutputFormat() {
         return outputFormat;
     }
 
@@ -280,11 +280,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("OutputFormat")
-    public void setOutputFormat(String outputFormat) {
+    public void setOutputFormat(CharSequence outputFormat) {
         this.outputFormat = outputFormat;
     }
 
-    public StorageDescriptor withOutputFormat(String outputFormat) {
+    public StorageDescriptor withOutputFormat(CharSequence outputFormat) {
         this.outputFormat = outputFormat;
         return this;
     }
@@ -390,7 +390,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("Location")
-    public String getLocation() {
+    public CharSequence getLocation() {
         return location;
     }
 
@@ -399,11 +399,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonProperty("Location")
-    public void setLocation(String location) {
+    public void setLocation(CharSequence location) {
         this.location = location;
     }
 
-    public StorageDescriptor withLocation(String location) {
+    public StorageDescriptor withLocation(CharSequence location) {
         this.location = location;
         return this;
     }

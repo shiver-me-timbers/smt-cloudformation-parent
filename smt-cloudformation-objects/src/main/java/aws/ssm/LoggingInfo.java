@@ -30,28 +30,28 @@ public class LoggingInfo {
      */
     @JsonProperty("S3Bucket")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket")
-    private String s3Bucket;
+    private CharSequence s3Bucket;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region
      * 
      */
     @JsonProperty("Region")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region")
-    private String region;
+    private CharSequence region;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix
      * 
      */
     @JsonProperty("S3Prefix")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix")
-    private String s3Prefix;
+    private CharSequence s3Prefix;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket
      * 
      */
     @JsonProperty("S3Bucket")
-    public String getS3Bucket() {
+    public CharSequence getS3Bucket() {
         return s3Bucket;
     }
 
@@ -60,11 +60,11 @@ public class LoggingInfo {
      * 
      */
     @JsonProperty("S3Bucket")
-    public void setS3Bucket(String s3Bucket) {
+    public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
 
-    public LoggingInfo withS3Bucket(String s3Bucket) {
+    public LoggingInfo withS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
         return this;
     }
@@ -74,7 +74,7 @@ public class LoggingInfo {
      * 
      */
     @JsonProperty("Region")
-    public String getRegion() {
+    public CharSequence getRegion() {
         return region;
     }
 
@@ -83,11 +83,11 @@ public class LoggingInfo {
      * 
      */
     @JsonProperty("Region")
-    public void setRegion(String region) {
+    public void setRegion(CharSequence region) {
         this.region = region;
     }
 
-    public LoggingInfo withRegion(String region) {
+    public LoggingInfo withRegion(CharSequence region) {
         this.region = region;
         return this;
     }
@@ -97,7 +97,7 @@ public class LoggingInfo {
      * 
      */
     @JsonProperty("S3Prefix")
-    public String getS3Prefix() {
+    public CharSequence getS3Prefix() {
         return s3Prefix;
     }
 
@@ -106,11 +106,11 @@ public class LoggingInfo {
      * 
      */
     @JsonProperty("S3Prefix")
-    public void setS3Prefix(String s3Prefix) {
+    public void setS3Prefix(CharSequence s3Prefix) {
         this.s3Prefix = s3Prefix;
     }
 
-    public LoggingInfo withS3Prefix(String s3Prefix) {
+    public LoggingInfo withS3Prefix(CharSequence s3Prefix) {
         this.s3Prefix = s3Prefix;
         return this;
     }

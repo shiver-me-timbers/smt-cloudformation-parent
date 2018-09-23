@@ -28,14 +28,14 @@ public class SseKmsEncryptedObjects {
      */
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-ssekmsencryptedobjects.html#cfn-s3-bucket-ssekmsencryptedobjects-status")
-    private String status;
+    private CharSequence status;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-ssekmsencryptedobjects.html#cfn-s3-bucket-ssekmsencryptedobjects-status
      * 
      */
     @JsonProperty("Status")
-    public String getStatus() {
+    public CharSequence getStatus() {
         return status;
     }
 
@@ -44,11 +44,11 @@ public class SseKmsEncryptedObjects {
      * 
      */
     @JsonProperty("Status")
-    public void setStatus(String status) {
+    public void setStatus(CharSequence status) {
         this.status = status;
     }
 
-    public SseKmsEncryptedObjects withStatus(String status) {
+    public SseKmsEncryptedObjects withStatus(CharSequence status) {
         this.status = status;
         return this;
     }
