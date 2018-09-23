@@ -43,7 +43,8 @@ public class TypeNameFinderTest {
             new HashMap<String, PropertyType>() {{
                 put(someString(), mock(PropertyType.class));
                 put(expected, mock(PropertyType.class));
-                put(someString(), mock(PropertyType.class));
+                put(packageName + someString(), mock(PropertyType.class));
+                put(someString() + propertyName, mock(PropertyType.class));
             }},
             javaTypes
         ).find(resourceName, propertyName);

@@ -31,6 +31,78 @@
 
     <name>${project.artifactId}</name>
 
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <version>3.1.1</version>
+                        <executions>
+                            <execution>
+                                <id>extract-json-schemas</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>unpack</goal>
+                                </goals>
+                                <configuration>
+                                    <artifactItems>
+                                        <artifactItem>
+                                            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                            <artifactId>smt-cloudformation-json-schemas</artifactId>
+                                            <version>${project.version}</version>
+                                            <type>jar</type>
+                                            <includes>schemas/**/*.json</includes>
+                                            <overWrite>true</overWrite>
+                                        </artifactItem>
+                                    </artifactItems>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.jsonschema2pojo</groupId>
+                        <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                        <version>0.5.1</version>
+                        <configuration>
+                            <sourceDirectory>${project.build.directory}/schemas</sourceDirectory>
+                            <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                            <includeAdditionalProperties>false</includeAdditionalProperties>
+                            <generateBuilders>true</generateBuilders>
+                            <customDateTimePattern>yyyy-MM-ddThh:mm:ssZ</customDateTimePattern>
+                            <includeToString>true</includeToString>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+            <dependencies>
+                <dependency>
+                    <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                    <artifactId>smt-cloudformation-json-schemas</artifactId>
+                    <version>0.1-SNAPSHOT</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>coverage</id>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -48,54 +120,6 @@
                     <skip>true</skip>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
-                <executions>
-                    <execution>
-                        <id>extract-json-schemas</id>
-                        <phase>initialize</phase>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
-                                    <artifactId>smt-cloudformation-json-schemas</artifactId>
-                                    <version>${project.version}</version>
-                                    <type>jar</type>
-                                    <includes>schemas/**/*.json</includes>
-                                    <overWrite>true</overWrite>
-                                </artifactItem>
-                            </artifactItems>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.jsonschema2pojo</groupId>
-                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-                <version>0.5.1</version>
-                <configuration>
-                    <sourceDirectory>${project.build.directory}/schemas</sourceDirectory>
-                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-                    <includeAdditionalProperties>false</includeAdditionalProperties>
-                    <generateBuilders>true</generateBuilders>
-                    <customDateTimePattern>yyyy-MM-ddThh:mm:ssZ</customDateTimePattern>
-                    <includeToString>true</includeToString>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
@@ -105,16 +129,13 @@
             <artifactId>jackson-annotations</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
-            <artifactId>smt-cloudformation-json-schemas</artifactId>
-            <version>0.1-SNAPSHOT</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

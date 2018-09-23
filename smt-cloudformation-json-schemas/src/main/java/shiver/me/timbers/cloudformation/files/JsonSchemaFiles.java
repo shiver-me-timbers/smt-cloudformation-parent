@@ -8,6 +8,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
+import static java.lang.String.format;
+
 public class JsonSchemaFiles {
 
     private final ObjectMapper mapper;
@@ -31,7 +33,7 @@ public class JsonSchemaFiles {
                     resource
                 );
             } catch (IOException e) {
-                throw new UnsupportedOperationException();
+                throw new SchemaFileException(format("Could not write the schema file for resource (%s).", name), e);
             }
         });
     }

@@ -31,6 +31,11 @@ import static shiver.me.timbers.data.random.RandomStrings.someString;
 public class MainTest {
 
     @Test
+    public void Instantiation_for_coverage() {
+        new Main();
+    }
+
+    @Test
     @SuppressWarnings("unchecked")
     public void Can_transform_the_cloudformation_spec() throws IOException {
         PowerMockito.mockStatic(Resources.class);
