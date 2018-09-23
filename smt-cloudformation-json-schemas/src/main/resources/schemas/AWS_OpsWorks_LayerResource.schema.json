@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_LayerResource.schema.json",
+  "title" : "LayerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.opsworks.LayerResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_OpsWorks_Layer.schema.json"
+    }
+  }
+}

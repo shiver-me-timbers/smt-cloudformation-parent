@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_DevEndpointResource.schema.json",
+  "title" : "DevEndpointResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.DevEndpointResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Glue_DevEndpoint.schema.json"
+    }
+  }
+}

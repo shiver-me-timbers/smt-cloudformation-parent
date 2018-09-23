@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBSecurityGroupResource.schema.json",
+  "title" : "DBSecurityGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.rds.DBSecurityGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_RDS_DBSecurityGroup.schema.json"
+    }
+  }
+}

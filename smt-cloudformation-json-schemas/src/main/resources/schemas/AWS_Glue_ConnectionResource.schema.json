@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_ConnectionResource.schema.json",
+  "title" : "ConnectionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.ConnectionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Glue_Connection.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_VpcLinkResource.schema.json",
+  "title" : "VpcLinkResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigateway.VpcLinkResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApiGateway_VpcLink.schema.json"
+    }
+  }
+}

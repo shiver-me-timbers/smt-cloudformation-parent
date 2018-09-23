@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_PermissionResource.schema.json",
+  "title" : "PermissionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.lambda.PermissionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Lambda_Permission.schema.json"
+    }
+  }
+}

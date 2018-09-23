@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SDB_DomainResource.schema.json",
+  "title" : "DomainResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-simpledb.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sdb.DomainResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SDB_Domain.schema.json"
+    }
+  }
+}

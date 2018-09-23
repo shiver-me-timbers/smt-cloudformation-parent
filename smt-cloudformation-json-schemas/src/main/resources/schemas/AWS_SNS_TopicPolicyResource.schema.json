@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_TopicPolicyResource.schema.json",
+  "title" : "TopicPolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sns.TopicPolicyResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SNS_TopicPolicy.schema.json"
+    }
+  }
+}

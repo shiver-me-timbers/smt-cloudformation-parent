@@ -1,6 +1,7 @@
 package shiver.me.timbers.cloudformation.types;
 
 import shiver.me.timbers.cloudformation.CloudformationType;
+import shiver.me.timbers.cloudformation.PropertyType;
 
 import java.util.Map;
 import java.util.Set;
@@ -13,7 +14,7 @@ public class TypeNameFinder {
     private final Set<String> propertyNames;
     private final JavaTypes javaTypes;
 
-    public TypeNameFinder(Map<String, CloudformationType> properties, JavaTypes javaTypes) {
+    public TypeNameFinder(Map<String, PropertyType> properties, JavaTypes javaTypes) {
         this.propertyNames = properties.keySet();
         this.javaTypes = javaTypes;
     }

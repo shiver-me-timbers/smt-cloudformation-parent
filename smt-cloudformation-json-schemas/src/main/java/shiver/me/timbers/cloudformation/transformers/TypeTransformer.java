@@ -8,5 +8,5 @@ import static java.util.Map.Entry;
 
 public interface TypeTransformer {
 
-    Entry<String, Map<String, Object>> transform(Entry<String, CloudformationType> resource);
+    Entry<String, Map<String, Object>> transform(Entry<String, ? extends CloudformationType> type);
 }

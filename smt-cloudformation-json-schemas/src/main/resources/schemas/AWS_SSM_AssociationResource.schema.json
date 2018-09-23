@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_AssociationResource.schema.json",
+  "title" : "AssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.AssociationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_Association.schema.json"
+    }
+  }
+}

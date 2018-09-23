@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EMR_SecurityConfigurationResource.schema.json",
+  "title" : "SecurityConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.emr.SecurityConfigurationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EMR_SecurityConfiguration.schema.json"
+    }
+  }
+}

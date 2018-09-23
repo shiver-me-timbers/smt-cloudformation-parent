@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeDeploy_ApplicationResource.schema.json",
+  "title" : "ApplicationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.codedeploy.ApplicationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CodeDeploy_Application.schema.json"
+    }
+  }
+}

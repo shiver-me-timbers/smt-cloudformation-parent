@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_SubscriptionResource.schema.json",
+  "title" : "SubscriptionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sns.SubscriptionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SNS_Subscription.schema.json"
+    }
+  }
+}

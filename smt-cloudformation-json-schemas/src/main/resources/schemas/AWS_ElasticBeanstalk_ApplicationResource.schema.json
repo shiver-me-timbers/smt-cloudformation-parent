@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticBeanstalk_ApplicationResource.schema.json",
+  "title" : "ApplicationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.elasticbeanstalk.ApplicationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ElasticBeanstalk_Application.schema.json"
+    }
+  }
+}

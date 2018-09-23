@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_PartitionResource.schema.json",
+  "title" : "PartitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.PartitionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Glue_Partition.schema.json"
+    }
+  }
+}

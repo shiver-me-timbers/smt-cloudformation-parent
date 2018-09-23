@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Logs_SubscriptionFilterResource.schema.json",
+  "title" : "SubscriptionFilterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.logs.SubscriptionFilterResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Logs_SubscriptionFilter.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAF_IPSetResource.schema.json",
+  "title" : "IPSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.waf.IPSetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_WAF_IPSet.schema.json"
+    }
+  }
+}

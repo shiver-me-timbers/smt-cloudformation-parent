@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_DocumentationVersionResource.schema.json",
+  "title" : "DocumentationVersionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigateway.DocumentationVersionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApiGateway_DocumentationVersion.schema.json"
+    }
+  }
+}

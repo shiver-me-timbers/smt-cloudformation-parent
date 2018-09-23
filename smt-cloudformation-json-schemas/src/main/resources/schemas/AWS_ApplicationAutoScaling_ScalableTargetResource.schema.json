@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApplicationAutoScaling_ScalableTargetResource.schema.json",
+  "title" : "ScalableTargetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.applicationautoscaling.ScalableTargetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.schema.json"
+    }
+  }
+}

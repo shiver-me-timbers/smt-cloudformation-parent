@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_NetworkAclEntryResource.schema.json",
+  "title" : "NetworkAclEntryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.NetworkAclEntryResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_NetworkAclEntry.schema.json"
+    }
+  }
+}

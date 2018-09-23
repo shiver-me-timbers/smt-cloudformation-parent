@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_OptionGroupResource.schema.json",
+  "title" : "OptionGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.rds.OptionGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_RDS_OptionGroup.schema.json"
+    }
+  }
+}

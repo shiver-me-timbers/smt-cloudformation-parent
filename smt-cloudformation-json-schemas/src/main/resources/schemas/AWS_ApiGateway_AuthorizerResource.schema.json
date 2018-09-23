@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_AuthorizerResource.schema.json",
+  "title" : "AuthorizerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigateway.AuthorizerResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApiGateway_Authorizer.schema.json"
+    }
+  }
+}

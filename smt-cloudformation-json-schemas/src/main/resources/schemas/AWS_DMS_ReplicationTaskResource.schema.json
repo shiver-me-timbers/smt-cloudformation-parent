@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DMS_ReplicationTaskResource.schema.json",
+  "title" : "ReplicationTaskResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.dms.ReplicationTaskResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DMS_ReplicationTask.schema.json"
+    }
+  }
+}

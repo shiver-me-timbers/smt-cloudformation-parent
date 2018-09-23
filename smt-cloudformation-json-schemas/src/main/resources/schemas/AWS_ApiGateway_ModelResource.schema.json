@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_ModelResource.schema.json",
+  "title" : "ModelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigateway.ModelResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApiGateway_Model.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GuardDuty_FilterResource.schema.json",
+  "title" : "FilterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.guardduty.FilterResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_GuardDuty_Filter.schema.json"
+    }
+  }
+}

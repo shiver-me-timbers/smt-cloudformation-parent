@@ -3,6 +3,7 @@ package shiver.me.timbers.cloudformation.types;
 import org.junit.Before;
 import org.junit.Test;
 import shiver.me.timbers.cloudformation.CloudformationType;
+import shiver.me.timbers.cloudformation.PropertyType;
 
 import java.util.HashMap;
 
@@ -39,10 +40,10 @@ public class TypeNameFinderTest {
 
         // When
         final String actual = new TypeNameFinder(
-            new HashMap<String, CloudformationType>() {{
-                put(someString(), mock(CloudformationType.class));
-                put(expected, mock(CloudformationType.class));
-                put(someString(), mock(CloudformationType.class));
+            new HashMap<String, PropertyType>() {{
+                put(someString(), mock(PropertyType.class));
+                put(expected, mock(PropertyType.class));
+                put(someString(), mock(PropertyType.class));
             }},
             javaTypes
         ).find(resourceName, propertyName);
@@ -65,10 +66,10 @@ public class TypeNameFinderTest {
 
         // When
         final String actual = new TypeNameFinder(
-            new HashMap<String, CloudformationType>() {{
-                put(someString(), mock(CloudformationType.class));
-                put(expected, mock(CloudformationType.class));
-                put(someString(), mock(CloudformationType.class));
+            new HashMap<String, PropertyType>() {{
+                put(someString(), mock(PropertyType.class));
+                put(expected, mock(PropertyType.class));
+                put(someString(), mock(PropertyType.class));
             }},
             javaTypes
         ).find(resourceName, expected);
@@ -92,10 +93,10 @@ public class TypeNameFinderTest {
         // When
         final Throwable actual = catchThrowable(
             () -> new TypeNameFinder(
-                new HashMap<String, CloudformationType>() {{
-                    put(someString(), mock(CloudformationType.class));
-                    put(someString(), mock(CloudformationType.class));
-                    put(someString(), mock(CloudformationType.class));
+                new HashMap<String, PropertyType>() {{
+                    put(someString(), mock(PropertyType.class));
+                    put(someString(), mock(PropertyType.class));
+                    put(someString(), mock(PropertyType.class));
                 }},
                 javaTypes
             ).find(resourceName, propertyType)

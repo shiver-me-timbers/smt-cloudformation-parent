@@ -23,26 +23,26 @@ public class TypesTransformerTest {
     @Test
     public void Can_transform_cloudformation_types() {
 
-        final CloudformationTypes cloudformationTypes = new CloudformationTypes();
+        final CloudformationTypes<CloudformationType> cloudformationTypes = new CloudformationTypes<>();
         final TypeTransformer transformer1 = mock(TypeTransformer.class);
         final TypeTransformer transformer2 = mock(TypeTransformer.class);
         final TypeTransformer transformer3 = mock(TypeTransformer.class);
 
-        final String typeName1 = "typeName1";
-        final String typeName2 = "typeName2";
-        final String typeName3 = "typeName3";
+        final String typeName1 = someString();
+        final String typeName2 = someString();
+        final String typeName3 = someString();
         final CloudformationType type1 = mock(CloudformationType.class);
         final CloudformationType type2 = mock(CloudformationType.class);
         final CloudformationType type3 = mock(CloudformationType.class);
-        final Map<String, Object> schema1 = singletonMap("schema1", "schemaValue1");
-        final Map<String, Object> schema2 = singletonMap("schema2", "schemaValue2");
-        final Map<String, Object> schema3 = singletonMap("schema3", "schemaValue3");
-        final Map<String, Object> schema4 = singletonMap("schema4", "schemaValue4");
-        final Map<String, Object> schema5 = singletonMap("schema5", "schemaValue5");
-        final Map<String, Object> schema6 = singletonMap("schema6", "schemaValue6");
-        final Map<String, Object> schema7 = singletonMap("schema7", "schemaValue7");
-        final Map<String, Object> schema8 = singletonMap("schema8", "schemaValue8");
-        final Map<String, Object> schema9 = singletonMap("schema9", "schemaValue9");
+        final Map<String, Object> schema1 = singletonMap(someString(), someString());
+        final Map<String, Object> schema2 = singletonMap(someString(), someString());
+        final Map<String, Object> schema3 = singletonMap(someString(), someString());
+        final Map<String, Object> schema4 = singletonMap(someString(), someString());
+        final Map<String, Object> schema5 = singletonMap(someString(), someString());
+        final Map<String, Object> schema6 = singletonMap(someString(), someString());
+        final Map<String, Object> schema7 = singletonMap(someString(), someString());
+        final Map<String, Object> schema8 = singletonMap(someString(), someString());
+        final Map<String, Object> schema9 = singletonMap(someString(), someString());
 
         final Map<String, Object> expected = new HashMap<String, Object>() {{
             putAll(singletonMap(typeName1, new HashMap<String, Object>() {{

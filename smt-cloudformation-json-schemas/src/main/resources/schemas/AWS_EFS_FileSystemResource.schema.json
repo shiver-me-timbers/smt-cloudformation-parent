@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EFS_FileSystemResource.schema.json",
+  "title" : "FileSystemResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.efs.FileSystemResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EFS_FileSystem.schema.json"
+    }
+  }
+}

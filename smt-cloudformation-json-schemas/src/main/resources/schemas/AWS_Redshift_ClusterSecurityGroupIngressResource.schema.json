@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Redshift_ClusterSecurityGroupIngressResource.schema.json",
+  "title" : "ClusterSecurityGroupIngressResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.redshift.ClusterSecurityGroupIngressResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Redshift_ClusterSecurityGroupIngress.schema.json"
+    }
+  }
+}

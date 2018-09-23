@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApplicationAutoScaling_ScalingPolicyResource.schema.json",
+  "title" : "ScalingPolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.applicationautoscaling.ScalingPolicyResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.schema.json"
+    }
+  }
+}

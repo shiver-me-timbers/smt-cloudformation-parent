@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_ResourceDataSyncResource.schema.json",
+  "title" : "ResourceDataSyncResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.ResourceDataSyncResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_ResourceDataSync.schema.json"
+    }
+  }
+}

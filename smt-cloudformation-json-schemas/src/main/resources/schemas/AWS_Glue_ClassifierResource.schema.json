@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Glue_ClassifierResource.schema.json",
+  "title" : "ClassifierResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.glue.ClassifierResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Glue_Classifier.schema.json"
+    }
+  }
+}

@@ -14,6 +14,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasEntry;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
@@ -24,8 +25,10 @@ public class MetaDataTransformerTest {
 
         final FileNames fileNames = mock(FileNames.class);
         final JavaTypes javaTypes = mock(JavaTypes.class);
+        final MetaDataApplier metaDataApplier = mock(MetaDataApplier.class);
         final String name = someString();
         final CloudformationType cloudformationType = mock(CloudformationType.class);
+        final HashMap<String, Object> schema = new HashMap<>();
 
         final String documentation = someString();
         final String fileName = someString();
@@ -36,16 +39,10 @@ public class MetaDataTransformerTest {
         given(fileNames.parse(name)).willReturn(fileName);
         given(javaTypes.extractClassName(name)).willReturn(className);
 
-        final HashMap<String, Object> actual = new HashMap<>();
-
         // When
-        new MetaDataTransformer(fileNames, javaTypes).transform(name, cloudformationType, actual);
+        new MetaDataTransformer(fileNames, javaTypes, metaDataApplier).transform(name, cloudformationType, schema);
 
         // Then
-        assertThat(actual, hasEntry("$schema", "http://json-schema.org/draft-07/schema#"));
-        assertThat(actual, hasEntry("$id", fileName));
-        assertThat(actual, hasEntry("title", className));
-        assertThat(actual, hasEntry("description", documentation));
-        assertThat(actual, hasEntry("type", "object"));
+        then(metaDataApplier).should().apply(fileName, className, documentation, schema);
     }
 }

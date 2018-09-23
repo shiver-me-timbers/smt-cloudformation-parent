@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CertificateManager_CertificateResource.schema.json",
+  "title" : "CertificateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.certificatemanager.CertificateResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CertificateManager_Certificate.schema.json"
+    }
+  }
+}

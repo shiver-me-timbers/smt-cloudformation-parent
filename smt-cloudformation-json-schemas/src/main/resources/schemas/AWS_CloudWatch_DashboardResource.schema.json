@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_DashboardResource.schema.json",
+  "title" : "DashboardResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cloudwatch.DashboardResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CloudWatch_Dashboard.schema.json"
+    }
+  }
+}

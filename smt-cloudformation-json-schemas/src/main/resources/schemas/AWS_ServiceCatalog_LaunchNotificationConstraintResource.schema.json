@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceCatalog_LaunchNotificationConstraintResource.schema.json",
+  "title" : "LaunchNotificationConstraintResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.servicecatalog.LaunchNotificationConstraintResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ServiceCatalog_LaunchNotificationConstraint.schema.json"
+    }
+  }
+}

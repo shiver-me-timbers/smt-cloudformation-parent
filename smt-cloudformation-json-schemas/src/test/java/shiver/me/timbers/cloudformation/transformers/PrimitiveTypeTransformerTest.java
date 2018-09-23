@@ -60,7 +60,7 @@ public class PrimitiveTypeTransformerTest {
         final CloudformationProperty property = mock(CloudformationProperty.class);
 
         // Given
-        given(property.getPrimitiveType()).willReturn(someString());
+        given(property.getPrimitiveType()).willReturn(someString(13));
 
         // When
         final boolean actual = transformer.supports(property);

@@ -1,0 +1,46 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "Parameter.schema.json",
+  "title" : "Parameter",
+  "description" : "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html",
+  "type" : "object",
+  "javaType" : "aws.Parameter",
+  "properties" : {
+    "AllowedPattern" : {
+      "type" : "string"
+    },
+    "AllowedValues" : {
+      "type" : "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ConstraintDescription" : {
+      "type" : "string"
+    },
+    "Default" : {
+      "type" : "string"
+    },
+    "Description" : {
+      "type" : "string"
+    },
+    "MaxLength" : {
+      "type" : "integer"
+    },
+    "MaxValue" : {
+      "type" : "integer"
+    },
+    "MinLength" : {
+      "type" : "integer"
+    },
+    "MinValue" : {
+      "type" : "integer"
+    },
+    "NoEcho" : {
+      "type" : "boolean"
+    },
+    "Type" : {
+      "type" : "string"
+    }
+  }
+}

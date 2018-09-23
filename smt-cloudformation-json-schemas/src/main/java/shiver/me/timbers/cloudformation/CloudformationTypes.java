@@ -2,5 +2,5 @@ package shiver.me.timbers.cloudformation;
 
 import java.util.LinkedHashMap;
 
-public class CloudformationTypes extends LinkedHashMap<String, CloudformationType> {
+public class CloudformationTypes<T extends CloudformationType> extends LinkedHashMap<String, T> {
 }

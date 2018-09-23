@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SpotFleetResource.schema.json",
+  "title" : "SpotFleetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.SpotFleetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_SpotFleet.schema.json"
+    }
+  }
+}

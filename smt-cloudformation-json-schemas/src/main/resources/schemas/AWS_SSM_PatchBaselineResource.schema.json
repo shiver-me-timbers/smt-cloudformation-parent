@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_PatchBaselineResource.schema.json",
+  "title" : "PatchBaselineResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.PatchBaselineResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_PatchBaseline.schema.json"
+    }
+  }
+}

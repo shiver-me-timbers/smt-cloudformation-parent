@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScaling_ScheduledActionResource.schema.json",
+  "title" : "ScheduledActionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.autoscaling.ScheduledActionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_AutoScaling_ScheduledAction.schema.json"
+    }
+  }
+}

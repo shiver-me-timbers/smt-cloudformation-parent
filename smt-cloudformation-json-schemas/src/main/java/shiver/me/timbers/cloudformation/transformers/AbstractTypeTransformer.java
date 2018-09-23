@@ -11,10 +11,10 @@ import static java.util.Map.Entry;
 public abstract class AbstractTypeTransformer implements TypeTransformer {
 
     @Override
-    public Entry<String, Map<String, Object>> transform(Entry<String, CloudformationType> resource) {
-        final String resourceName = resource.getKey();
+    public Entry<String, Map<String, Object>> transform(Entry<String, ? extends CloudformationType> type) {
+        final String resourceName = type.getKey();
         final Map<String, Object> schema = new LinkedHashMap<>();
-        transform(resourceName, resource.getValue(), schema);
+        transform(resourceName, type.getValue(), schema);
         return new SimpleEntry<>(resourceName, schema);
     }
 

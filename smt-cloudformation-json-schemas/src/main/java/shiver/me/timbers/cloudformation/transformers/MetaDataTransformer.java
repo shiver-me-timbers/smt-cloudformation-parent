@@ -10,18 +10,21 @@ public class MetaDataTransformer extends AbstractTypeTransformer {
 
     private final FileNames fileNames;
     private final JavaTypes javaTypes;
+    private final MetaDataApplier metaDataApplier;
 
-    public MetaDataTransformer(FileNames fileNames, JavaTypes javaTypes) {
+    public MetaDataTransformer(FileNames fileNames, JavaTypes javaTypes, MetaDataApplier metaDataApplier) {
         this.fileNames = fileNames;
         this.javaTypes = javaTypes;
+        this.metaDataApplier = metaDataApplier;
     }
 
     @Override
     protected void transform(String resourceName, CloudformationType type, Map<String, Object> schema) {
-        schema.put("$schema", "http://json-schema.org/draft-07/schema#");
-        schema.put("$id", fileNames.parse(resourceName));
-        schema.put("title", javaTypes.extractClassName(resourceName));
-        schema.put("description", type.getDocumentation());
-        schema.put("type", "object");
+        metaDataApplier.apply(
+            fileNames.parse(resourceName),
+            javaTypes.extractClassName(resourceName),
+            type.getDocumentation(),
+            schema
+        );
     }
 }

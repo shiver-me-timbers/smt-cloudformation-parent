@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_PolicyPrincipalAttachmentResource.schema.json",
+  "title" : "PolicyPrincipalAttachmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iot.PolicyPrincipalAttachmentResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IoT_PolicyPrincipalAttachment.schema.json"
+    }
+  }
+}

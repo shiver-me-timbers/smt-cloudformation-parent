@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_MethodResource.schema.json",
+  "title" : "MethodResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigateway.MethodResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ApiGateway_Method.schema.json"
+    }
+  }
+}

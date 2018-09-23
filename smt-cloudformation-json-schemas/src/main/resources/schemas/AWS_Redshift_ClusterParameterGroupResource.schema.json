@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Redshift_ClusterParameterGroupResource.schema.json",
+  "title" : "ClusterParameterGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.redshift.ClusterParameterGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Redshift_ClusterParameterGroup.schema.json"
+    }
+  }
+}

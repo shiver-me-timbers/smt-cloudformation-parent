@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Batch_JobQueueResource.schema.json",
+  "title" : "JobQueueResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.batch.JobQueueResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Batch_JobQueue.schema.json"
+    }
+  }
+}

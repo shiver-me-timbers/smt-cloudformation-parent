@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SQS_QueuePolicyResource.schema.json",
+  "title" : "QueuePolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sqs.QueuePolicyResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SQS_QueuePolicy.schema.json"
+    }
+  }
+}

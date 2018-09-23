@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_VPCDHCPOptionsAssociationResource.schema.json",
+  "title" : "VPCDHCPOptionsAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.VPCDHCPOptionsAssociationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_VPCDHCPOptionsAssociation.schema.json"
+    }
+  }
+}

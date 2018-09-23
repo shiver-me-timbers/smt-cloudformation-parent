@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SecurityGroupIngressResource.schema.json",
+  "title" : "SecurityGroupIngressResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.SecurityGroupIngressResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_SecurityGroupIngress.schema.json"
+    }
+  }
+}

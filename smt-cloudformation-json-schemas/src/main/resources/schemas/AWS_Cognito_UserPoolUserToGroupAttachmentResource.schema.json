@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolUserToGroupAttachmentResource.schema.json",
+  "title" : "UserPoolUserToGroupAttachmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cognito.UserPoolUserToGroupAttachmentResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Cognito_UserPoolUserToGroupAttachment.schema.json"
+    }
+  }
+}

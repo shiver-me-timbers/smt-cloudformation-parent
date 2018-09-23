@@ -31,10 +31,6 @@
 
     <name>${project.artifactId}</name>
 
-    <properties>
-        <json.schemas.dir>${project.build.directory}/schemas</json.schemas.dir>
-    </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -68,13 +64,13 @@
                                 <artifactItem>
                                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
                                     <artifactId>smt-cloudformation-json-schemas</artifactId>
-                                    <version>0.1-SNAPSHOT</version>
+                                    <version>${project.version}</version>
                                     <type>jar</type>
                                     <includes>schemas/**/*.json</includes>
                                     <overWrite>true</overWrite>
                                 </artifactItem>
                             </artifactItems>
-                            <outputDirectory>${json.schemas.dir}</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -84,7 +80,7 @@
                 <artifactId>jsonschema2pojo-maven-plugin</artifactId>
                 <version>0.5.1</version>
                 <configuration>
-                    <sourceDirectory>${json.schemas.dir}</sourceDirectory>
+                    <sourceDirectory>${project.build.directory}/schemas</sourceDirectory>
                     <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
                     <includeAdditionalProperties>false</includeAdditionalProperties>
                     <generateBuilders>true</generateBuilders>

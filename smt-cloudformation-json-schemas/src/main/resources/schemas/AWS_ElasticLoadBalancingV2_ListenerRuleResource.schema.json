@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_ListenerRuleResource.schema.json",
+  "title" : "ListenerRuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Budgets_BudgetResource.schema.json",
+  "title" : "BudgetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.budgets.BudgetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Budgets_Budget.schema.json"
+    }
+  }
+}

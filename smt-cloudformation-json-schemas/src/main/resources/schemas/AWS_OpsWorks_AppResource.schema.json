@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_AppResource.schema.json",
+  "title" : "AppResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.opsworks.AppResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_OpsWorks_App.schema.json"
+    }
+  }
+}

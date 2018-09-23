@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_NetworkInterfaceAttachmentResource.schema.json",
+  "title" : "NetworkInterfaceAttachmentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.NetworkInterfaceAttachmentResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_NetworkInterfaceAttachment.schema.json"
+    }
+  }
+}

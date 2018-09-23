@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53_HealthCheckResource.schema.json",
+  "title" : "HealthCheckResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.route53.HealthCheckResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Route53_HealthCheck.schema.json"
+    }
+  }
+}

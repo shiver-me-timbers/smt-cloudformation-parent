@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskDefinitionResource.schema.json",
+  "title" : "TaskDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ecs.TaskDefinitionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ECS_TaskDefinition.schema.json"
+    }
+  }
+}

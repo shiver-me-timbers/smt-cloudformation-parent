@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Config_ConfigurationRecorderResource.schema.json",
+  "title" : "ConfigurationRecorderResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.config.ConfigurationRecorderResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Config_ConfigurationRecorder.schema.json"
+    }
+  }
+}

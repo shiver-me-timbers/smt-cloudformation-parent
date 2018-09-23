@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_VolumeResource.schema.json",
+  "title" : "VolumeResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.VolumeResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_Volume.schema.json"
+    }
+  }
+}

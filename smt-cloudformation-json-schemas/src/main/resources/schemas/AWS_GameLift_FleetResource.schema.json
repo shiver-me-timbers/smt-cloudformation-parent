@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_FleetResource.schema.json",
+  "title" : "FleetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.gamelift.FleetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_GameLift_Fleet.schema.json"
+    }
+  }
+}

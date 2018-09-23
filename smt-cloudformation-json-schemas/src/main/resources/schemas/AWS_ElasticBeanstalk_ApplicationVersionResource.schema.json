@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticBeanstalk_ApplicationVersionResource.schema.json",
+  "title" : "ApplicationVersionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.elasticbeanstalk.ApplicationVersionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.schema.json"
+    }
+  }
+}

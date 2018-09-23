@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DataPipeline_PipelineResource.schema.json",
+  "title" : "PipelineResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.datapipeline.PipelineResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DataPipeline_Pipeline.schema.json"
+    }
+  }
+}

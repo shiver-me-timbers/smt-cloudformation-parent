@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Redshift_ClusterSecurityGroupResource.schema.json",
+  "title" : "ClusterSecurityGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.redshift.ClusterSecurityGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Redshift_ClusterSecurityGroup.schema.json"
+    }
+  }
+}

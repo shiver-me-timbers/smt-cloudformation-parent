@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_MaintenanceWindowTaskResource.schema.json",
+  "title" : "MaintenanceWindowTaskResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.MaintenanceWindowTaskResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_DocumentResource.schema.json",
+  "title" : "DocumentResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.DocumentResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_Document.schema.json"
+    }
+  }
+}

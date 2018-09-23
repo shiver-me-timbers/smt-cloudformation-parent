@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_EventSubscriptionResource.schema.json",
+  "title" : "EventSubscriptionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.rds.EventSubscriptionResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_RDS_EventSubscription.schema.json"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_GameLift_AliasResource.schema.json",
+  "title" : "AliasResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.gamelift.AliasResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_GameLift_Alias.schema.json"
+    }
+  }
+}
