@@ -42,7 +42,6 @@ public class OriginCustomHeader {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headervalue
      * 
      */
-    @JsonProperty("HeaderValue")
     public CharSequence getHeaderValue() {
         return headerValue;
     }
@@ -51,7 +50,6 @@ public class OriginCustomHeader {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headervalue
      * 
      */
-    @JsonProperty("HeaderValue")
     public void setHeaderValue(CharSequence headerValue) {
         this.headerValue = headerValue;
     }
@@ -65,7 +63,6 @@ public class OriginCustomHeader {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headername
      * 
      */
-    @JsonProperty("HeaderName")
     public CharSequence getHeaderName() {
         return headerName;
     }
@@ -74,7 +71,6 @@ public class OriginCustomHeader {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origincustomheader.html#cfn-cloudfront-distribution-origincustomheader-headername
      * 
      */
-    @JsonProperty("HeaderName")
     public void setHeaderName(CharSequence headerName) {
         this.headerName = headerName;
     }

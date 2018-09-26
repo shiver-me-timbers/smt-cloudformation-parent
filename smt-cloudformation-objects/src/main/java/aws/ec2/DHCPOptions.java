@@ -82,7 +82,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -91,7 +90,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -105,7 +103,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers
      * 
      */
-    @JsonProperty("DomainNameServers")
     public Set<CharSequence> getDomainNameServers() {
         return domainNameServers;
     }
@@ -114,7 +111,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers
      * 
      */
-    @JsonProperty("DomainNameServers")
     public void setDomainNameServers(Set<CharSequence> domainNameServers) {
         this.domainNameServers = domainNameServers;
     }
@@ -128,7 +124,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers
      * 
      */
-    @JsonProperty("NetbiosNameServers")
     public Set<CharSequence> getNetbiosNameServers() {
         return netbiosNameServers;
     }
@@ -137,7 +132,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers
      * 
      */
-    @JsonProperty("NetbiosNameServers")
     public void setNetbiosNameServers(Set<CharSequence> netbiosNameServers) {
         this.netbiosNameServers = netbiosNameServers;
     }
@@ -151,7 +145,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype
      * 
      */
-    @JsonProperty("NetbiosNodeType")
     public Integer getNetbiosNodeType() {
         return netbiosNodeType;
     }
@@ -160,7 +153,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype
      * 
      */
-    @JsonProperty("NetbiosNodeType")
     public void setNetbiosNodeType(Integer netbiosNodeType) {
         this.netbiosNodeType = netbiosNodeType;
     }
@@ -174,7 +166,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers
      * 
      */
-    @JsonProperty("NtpServers")
     public List<CharSequence> getNtpServers() {
         return ntpServers;
     }
@@ -183,7 +174,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers
      * 
      */
-    @JsonProperty("NtpServers")
     public void setNtpServers(List<CharSequence> ntpServers) {
         this.ntpServers = ntpServers;
     }
@@ -197,7 +187,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -206,7 +195,6 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

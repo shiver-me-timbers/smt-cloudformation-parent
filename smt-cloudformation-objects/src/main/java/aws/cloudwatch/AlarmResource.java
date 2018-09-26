@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class AlarmResource
     extends Resource
+    implements HasAttributes<AlarmAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class AlarmResource
     private Alarm properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AlarmResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AlarmResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Alarm
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html
      * 
      */
-    @JsonProperty("Properties")
     public Alarm getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class AlarmResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Alarm properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class AlarmResource
     @Override
     public AlarmResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AlarmResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

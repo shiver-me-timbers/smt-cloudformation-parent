@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudTrail_TrailAttributes.schema.json",
+  "title" : "TrailAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "SnsTopicArn" ],
+  "javaType" : "aws.cloudtrail.TrailAttributes"
+}

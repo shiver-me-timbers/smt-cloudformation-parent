@@ -38,7 +38,6 @@ public class BucketEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html#cfn-s3-bucket-bucketencryption-serversideencryptionconfiguration
      * 
      */
-    @JsonProperty("ServerSideEncryptionConfiguration")
     public Set<ServerSideEncryptionRule> getServerSideEncryptionConfiguration() {
         return serverSideEncryptionConfiguration;
     }
@@ -47,7 +46,6 @@ public class BucketEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html#cfn-s3-bucket-bucketencryption-serversideencryptionconfiguration
      * 
      */
-    @JsonProperty("ServerSideEncryptionConfiguration")
     public void setServerSideEncryptionConfiguration(Set<ServerSideEncryptionRule> serverSideEncryptionConfiguration) {
         this.serverSideEncryptionConfiguration = serverSideEncryptionConfiguration;
     }

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolAttributes.schema.json",
+  "title" : "UserPoolAttributes",
+  "type" : "string",
+  "enum" : [ "ProviderName", "ProviderURL", "Arn" ],
+  "javaType" : "aws.cognito.UserPoolAttributes"
+}

@@ -62,7 +62,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
      * 
      */
-    @JsonProperty("Comment")
     public CharSequence getComment() {
         return comment;
     }
@@ -71,7 +70,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
      * 
      */
-    @JsonProperty("Comment")
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -85,7 +83,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid
      * 
      */
-    @JsonProperty("HostedZoneId")
     public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
@@ -94,7 +91,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid
      * 
      */
-    @JsonProperty("HostedZoneId")
     public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
@@ -108,7 +104,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename
      * 
      */
-    @JsonProperty("HostedZoneName")
     public CharSequence getHostedZoneName() {
         return hostedZoneName;
     }
@@ -117,7 +112,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename
      * 
      */
-    @JsonProperty("HostedZoneName")
     public void setHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
     }
@@ -131,7 +125,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets
      * 
      */
-    @JsonProperty("RecordSets")
     public Set<RecordSet> getRecordSets() {
         return recordSets;
     }
@@ -140,7 +133,6 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets
      * 
      */
-    @JsonProperty("RecordSets")
     public void setRecordSets(Set<RecordSet> recordSets) {
         this.recordSets = recordSets;
     }

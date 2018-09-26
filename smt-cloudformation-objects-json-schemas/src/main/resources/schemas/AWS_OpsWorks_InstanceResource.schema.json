@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorks_InstanceResource.schema.json",
+  "title" : "InstanceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.opsworks.InstanceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<InstanceAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_OpsWorks_Instance.schema.json"
+    }
+  }
+}

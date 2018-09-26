@@ -112,7 +112,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role
      * 
      */
-    @JsonProperty("Role")
     public CharSequence getRole() {
         return role;
     }
@@ -121,7 +120,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-role
      * 
      */
-    @JsonProperty("Role")
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -135,7 +133,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments
      * 
      */
-    @JsonProperty("DefaultArguments")
     public DefaultArguments getDefaultArguments() {
         return defaultArguments;
     }
@@ -144,7 +141,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments
      * 
      */
-    @JsonProperty("DefaultArguments")
     public void setDefaultArguments(DefaultArguments defaultArguments) {
         this.defaultArguments = defaultArguments;
     }
@@ -160,7 +156,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html
      * 
      */
-    @JsonProperty("Connections")
     public ConnectionsList getConnections() {
         return connections;
     }
@@ -171,7 +166,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html
      * 
      */
-    @JsonProperty("Connections")
     public void setConnections(ConnectionsList connections) {
         this.connections = connections;
     }
@@ -185,7 +179,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries
      * 
      */
-    @JsonProperty("MaxRetries")
     public Double getMaxRetries() {
         return maxRetries;
     }
@@ -194,7 +187,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries
      * 
      */
-    @JsonProperty("MaxRetries")
     public void setMaxRetries(Double maxRetries) {
         this.maxRetries = maxRetries;
     }
@@ -208,7 +200,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -217,7 +208,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -231,7 +221,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri
      * 
      */
-    @JsonProperty("LogUri")
     public CharSequence getLogUri() {
         return logUri;
     }
@@ -240,7 +229,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri
      * 
      */
-    @JsonProperty("LogUri")
     public void setLogUri(CharSequence logUri) {
         this.logUri = logUri;
     }
@@ -256,7 +244,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html
      * 
      */
-    @JsonProperty("Command")
     public JobCommand getCommand() {
         return command;
     }
@@ -267,7 +254,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html
      * 
      */
-    @JsonProperty("Command")
     public void setCommand(JobCommand command) {
         this.command = command;
     }
@@ -281,7 +267,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
      */
-    @JsonProperty("AllocatedCapacity")
     public Double getAllocatedCapacity() {
         return allocatedCapacity;
     }
@@ -290,7 +275,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
      */
-    @JsonProperty("AllocatedCapacity")
     public void setAllocatedCapacity(Double allocatedCapacity) {
         this.allocatedCapacity = allocatedCapacity;
     }
@@ -306,7 +290,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html
      * 
      */
-    @JsonProperty("ExecutionProperty")
     public ExecutionProperty getExecutionProperty() {
         return executionProperty;
     }
@@ -317,7 +300,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html
      * 
      */
-    @JsonProperty("ExecutionProperty")
     public void setExecutionProperty(ExecutionProperty executionProperty) {
         this.executionProperty = executionProperty;
     }
@@ -331,7 +313,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -340,7 +321,6 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

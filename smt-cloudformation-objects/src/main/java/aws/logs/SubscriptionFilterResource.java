@@ -41,12 +41,26 @@ public class SubscriptionFilterResource
     private SubscriptionFilter properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SubscriptionFilterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SubscriptionFilterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SubscriptionFilter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html
      * 
      */
-    @JsonProperty("Properties")
     public SubscriptionFilter getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SubscriptionFilterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SubscriptionFilter properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SubscriptionFilterResource
     @Override
     public SubscriptionFilterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SubscriptionFilterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

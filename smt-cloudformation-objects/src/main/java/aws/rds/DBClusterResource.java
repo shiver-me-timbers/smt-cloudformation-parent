@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class DBClusterResource
     extends Resource
+    implements HasAttributes<DBClusterAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class DBClusterResource
     private DBCluster properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBClusterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBClusterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBCluster
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
      * 
      */
-    @JsonProperty("Properties")
     public DBCluster getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class DBClusterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBCluster properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class DBClusterResource
     @Override
     public DBClusterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBClusterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

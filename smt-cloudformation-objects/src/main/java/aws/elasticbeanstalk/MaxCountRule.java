@@ -50,7 +50,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3
      * 
      */
-    @JsonProperty("DeleteSourceFromS3")
     public Boolean getDeleteSourceFromS3() {
         return deleteSourceFromS3;
     }
@@ -59,7 +58,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3
      * 
      */
-    @JsonProperty("DeleteSourceFromS3")
     public void setDeleteSourceFromS3(Boolean deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
     }
@@ -73,7 +71,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -82,7 +79,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -96,7 +92,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-maxcount
      * 
      */
-    @JsonProperty("MaxCount")
     public Integer getMaxCount() {
         return maxCount;
     }
@@ -105,7 +100,6 @@ public class MaxCountRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-maxcount
      * 
      */
-    @JsonProperty("MaxCount")
     public void setMaxCount(Integer maxCount) {
         this.maxCount = maxCount;
     }

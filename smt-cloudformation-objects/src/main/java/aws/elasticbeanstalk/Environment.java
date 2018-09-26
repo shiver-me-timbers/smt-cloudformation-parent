@@ -119,7 +119,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -128,7 +127,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -142,7 +140,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-cnameprefix
      * 
      */
-    @JsonProperty("CNAMEPrefix")
     public CharSequence getCNAMEPrefix() {
         return cNAMEPrefix;
     }
@@ -151,7 +148,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-cnameprefix
      * 
      */
-    @JsonProperty("CNAMEPrefix")
     public void setCNAMEPrefix(CharSequence cNAMEPrefix) {
         this.cNAMEPrefix = cNAMEPrefix;
     }
@@ -165,7 +161,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -174,7 +169,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -188,7 +182,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-name
      * 
      */
-    @JsonProperty("EnvironmentName")
     public CharSequence getEnvironmentName() {
         return environmentName;
     }
@@ -197,7 +190,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-name
      * 
      */
-    @JsonProperty("EnvironmentName")
     public void setEnvironmentName(CharSequence environmentName) {
         this.environmentName = environmentName;
     }
@@ -211,7 +203,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings
      * 
      */
-    @JsonProperty("OptionSettings")
     public List<OptionSetting> getOptionSettings() {
         return optionSettings;
     }
@@ -220,7 +211,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings
      * 
      */
-    @JsonProperty("OptionSettings")
     public void setOptionSettings(List<OptionSetting> optionSettings) {
         this.optionSettings = optionSettings;
     }
@@ -234,7 +224,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn
      * 
      */
-    @JsonProperty("PlatformArn")
     public CharSequence getPlatformArn() {
         return platformArn;
     }
@@ -243,7 +232,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn
      * 
      */
-    @JsonProperty("PlatformArn")
     public void setPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
     }
@@ -257,7 +245,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-solutionstackname
      * 
      */
-    @JsonProperty("SolutionStackName")
     public CharSequence getSolutionStackName() {
         return solutionStackName;
     }
@@ -266,7 +253,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-solutionstackname
      * 
      */
-    @JsonProperty("SolutionStackName")
     public void setSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
     }
@@ -280,7 +266,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-elasticbeanstalk-environment-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -289,7 +274,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-elasticbeanstalk-environment-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -303,7 +287,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-templatename
      * 
      */
-    @JsonProperty("TemplateName")
     public CharSequence getTemplateName() {
         return templateName;
     }
@@ -312,7 +295,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-templatename
      * 
      */
-    @JsonProperty("TemplateName")
     public void setTemplateName(CharSequence templateName) {
         this.templateName = templateName;
     }
@@ -328,7 +310,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html
      * 
      */
-    @JsonProperty("Tier")
     public Tier getTier() {
         return tier;
     }
@@ -339,7 +320,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html
      * 
      */
-    @JsonProperty("Tier")
     public void setTier(Tier tier) {
         this.tier = tier;
     }
@@ -353,7 +333,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel
      * 
      */
-    @JsonProperty("VersionLabel")
     public CharSequence getVersionLabel() {
         return versionLabel;
     }
@@ -362,7 +341,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel
      * 
      */
-    @JsonProperty("VersionLabel")
     public void setVersionLabel(CharSequence versionLabel) {
         this.versionLabel = versionLabel;
     }

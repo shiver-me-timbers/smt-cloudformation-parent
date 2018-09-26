@@ -52,7 +52,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions
      * 
      */
-    @JsonProperty("AllAwsRegions")
     public Boolean getAllAwsRegions() {
         return allAwsRegions;
     }
@@ -61,7 +60,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions
      * 
      */
-    @JsonProperty("AllAwsRegions")
     public void setAllAwsRegions(Boolean allAwsRegions) {
         this.allAwsRegions = allAwsRegions;
     }
@@ -75,7 +73,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-awsregions
      * 
      */
-    @JsonProperty("AwsRegions")
     public List<CharSequence> getAwsRegions() {
         return awsRegions;
     }
@@ -84,7 +81,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-awsregions
      * 
      */
-    @JsonProperty("AwsRegions")
     public void setAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
     }
@@ -98,7 +94,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -107,7 +102,6 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

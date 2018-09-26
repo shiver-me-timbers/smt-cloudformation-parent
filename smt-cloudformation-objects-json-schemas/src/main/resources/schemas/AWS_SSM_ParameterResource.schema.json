@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_ParameterResource.schema.json",
+  "title" : "ParameterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ssm.ParameterResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ParameterAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SSM_Parameter.schema.json"
+    }
+  }
+}

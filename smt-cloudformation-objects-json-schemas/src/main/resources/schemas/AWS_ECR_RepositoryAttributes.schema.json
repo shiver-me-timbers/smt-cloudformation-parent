@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECR_RepositoryAttributes.schema.json",
+  "title" : "RepositoryAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "aws.ecr.RepositoryAttributes"
+}

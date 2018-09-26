@@ -44,7 +44,6 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity
      * 
      */
-    @JsonProperty("Granularity")
     public CharSequence getGranularity() {
         return granularity;
     }
@@ -53,7 +52,6 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity
      * 
      */
-    @JsonProperty("Granularity")
     public void setGranularity(CharSequence granularity) {
         this.granularity = granularity;
     }
@@ -67,7 +65,6 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics
      * 
      */
-    @JsonProperty("Metrics")
     public List<CharSequence> getMetrics() {
         return metrics;
     }
@@ -76,7 +73,6 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics
      * 
      */
-    @JsonProperty("Metrics")
     public void setMetrics(List<CharSequence> metrics) {
         this.metrics = metrics;
     }

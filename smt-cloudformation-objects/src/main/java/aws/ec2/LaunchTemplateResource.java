@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class LaunchTemplateResource
     extends Resource
+    implements HasAttributes<LaunchTemplateAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class LaunchTemplateResource
     private LaunchTemplate properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LaunchTemplateResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LaunchTemplateResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LaunchTemplate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
      * 
      */
-    @JsonProperty("Properties")
     public LaunchTemplate getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class LaunchTemplateResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LaunchTemplate properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class LaunchTemplateResource
     @Override
     public LaunchTemplateResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LaunchTemplateResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

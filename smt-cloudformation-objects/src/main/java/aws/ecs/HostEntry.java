@@ -42,7 +42,6 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname
      * 
      */
-    @JsonProperty("Hostname")
     public CharSequence getHostname() {
         return hostname;
     }
@@ -51,7 +50,6 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname
      * 
      */
-    @JsonProperty("Hostname")
     public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
@@ -65,7 +63,6 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public CharSequence getIpAddress() {
         return ipAddress;
     }
@@ -74,7 +71,6 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }

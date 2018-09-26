@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class RoleResource
     extends Resource
+    implements HasAttributes<RoleAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class RoleResource
     private Role properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RoleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RoleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Role
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
      * 
      */
-    @JsonProperty("Properties")
     public Role getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class RoleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Role properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class RoleResource
     @Override
     public RoleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RoleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

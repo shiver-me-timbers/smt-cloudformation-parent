@@ -41,12 +41,26 @@ public class VPCCidrBlockResource
     private VPCCidrBlock properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCCidrBlockResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCCidrBlockResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCCidrBlock
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCCidrBlock getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCCidrBlockResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCCidrBlock properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCCidrBlockResource
     @Override
     public VPCCidrBlockResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCCidrBlockResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

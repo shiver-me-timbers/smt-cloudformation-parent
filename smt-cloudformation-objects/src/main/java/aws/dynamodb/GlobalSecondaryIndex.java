@@ -66,7 +66,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname
      * 
      */
-    @JsonProperty("IndexName")
     public CharSequence getIndexName() {
         return indexName;
     }
@@ -75,7 +74,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname
      * 
      */
-    @JsonProperty("IndexName")
     public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
@@ -89,7 +87,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public Set<KeySchema> getKeySchema() {
         return keySchema;
     }
@@ -98,7 +95,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public void setKeySchema(Set<KeySchema> keySchema) {
         this.keySchema = keySchema;
     }
@@ -114,7 +110,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
-    @JsonProperty("Projection")
     public Projection getProjection() {
         return projection;
     }
@@ -125,7 +120,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
-    @JsonProperty("Projection")
     public void setProjection(Projection projection) {
         this.projection = projection;
     }
@@ -141,7 +135,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html
      * 
      */
-    @JsonProperty("ProvisionedThroughput")
     public ProvisionedThroughput getProvisionedThroughput() {
         return provisionedThroughput;
     }
@@ -152,7 +145,6 @@ public class GlobalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html
      * 
      */
-    @JsonProperty("ProvisionedThroughput")
     public void setProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
     }

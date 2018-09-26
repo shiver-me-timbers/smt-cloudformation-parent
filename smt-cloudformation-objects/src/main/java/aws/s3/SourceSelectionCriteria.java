@@ -38,7 +38,6 @@ public class SourceSelectionCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-ssekmsencryptedobjects.html
      * 
      */
-    @JsonProperty("SseKmsEncryptedObjects")
     public SseKmsEncryptedObjects getSseKmsEncryptedObjects() {
         return sseKmsEncryptedObjects;
     }
@@ -49,7 +48,6 @@ public class SourceSelectionCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-ssekmsencryptedobjects.html
      * 
      */
-    @JsonProperty("SseKmsEncryptedObjects")
     public void setSseKmsEncryptedObjects(SseKmsEncryptedObjects sseKmsEncryptedObjects) {
         this.sseKmsEncryptedObjects = sseKmsEncryptedObjects;
     }

@@ -46,7 +46,6 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html
      * 
      */
-    @JsonProperty("SpotOptions")
     public SpotOptions getSpotOptions() {
         return spotOptions;
     }
@@ -57,7 +56,6 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html
      * 
      */
-    @JsonProperty("SpotOptions")
     public void setSpotOptions(SpotOptions spotOptions) {
         this.spotOptions = spotOptions;
     }
@@ -71,7 +69,6 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-markettype
      * 
      */
-    @JsonProperty("MarketType")
     public CharSequence getMarketType() {
         return marketType;
     }
@@ -80,7 +77,6 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-markettype
      * 
      */
-    @JsonProperty("MarketType")
     public void setMarketType(CharSequence marketType) {
         this.marketType = marketType;
     }

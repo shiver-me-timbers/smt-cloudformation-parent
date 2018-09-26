@@ -21,7 +21,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Value",
     "Export"
 })
-public class Output {
+public class Output
+    extends Named
+{
 
     @JsonProperty("Description")
     private String description;
@@ -30,12 +32,25 @@ public class Output {
     @JsonProperty("Export")
     private Export export;
 
-    @JsonProperty("Description")
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Output() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public Output(String name) {
+        super(name);
+    }
+
     public String getDescription() {
         return description;
     }
 
-    @JsonProperty("Description")
     public void setDescription(String description) {
         this.description = description;
     }
@@ -45,12 +60,10 @@ public class Output {
         return this;
     }
 
-    @JsonProperty("Value")
     public String getValue() {
         return value;
     }
 
-    @JsonProperty("Value")
     public void setValue(String value) {
         this.value = value;
     }
@@ -60,12 +73,10 @@ public class Output {
         return this;
     }
 
-    @JsonProperty("Export")
     public Export getExport() {
         return export;
     }
 
-    @JsonProperty("Export")
     public void setExport(Export export) {
         this.export = export;
     }
@@ -76,13 +87,19 @@ public class Output {
     }
 
     @Override
+    public Output withName(String name) {
+        super.withName(name);
+        return this;
+    }
+
+    @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("value", value).append("export", export).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("description", description).append("value", value).append("export", export).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(description).append(value).append(export).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(description).append(value).append(export).toHashCode();
     }
 
     @Override
@@ -94,7 +111,7 @@ public class Output {
             return false;
         }
         Output rhs = ((Output) other);
-        return new EqualsBuilder().append(description, rhs.description).append(value, rhs.value).append(export, rhs.export).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(description, rhs.description).append(value, rhs.value).append(export, rhs.export).isEquals();
     }
 
 }

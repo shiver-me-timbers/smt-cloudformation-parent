@@ -41,12 +41,26 @@ public class OptionGroupResource
     private OptionGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public OptionGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public OptionGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * OptionGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
      * 
      */
-    @JsonProperty("Properties")
     public OptionGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class OptionGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(OptionGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class OptionGroupResource
     @Override
     public OptionGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public OptionGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

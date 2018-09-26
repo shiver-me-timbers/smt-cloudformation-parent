@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class InstanceProfileResource
     extends Resource
+    implements HasAttributes<InstanceProfileAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class InstanceProfileResource
     private InstanceProfile properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public InstanceProfileResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public InstanceProfileResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * InstanceProfile
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html
      * 
      */
-    @JsonProperty("Properties")
     public InstanceProfile getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class InstanceProfileResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(InstanceProfile properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class InstanceProfileResource
     @Override
     public InstanceProfileResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public InstanceProfileResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

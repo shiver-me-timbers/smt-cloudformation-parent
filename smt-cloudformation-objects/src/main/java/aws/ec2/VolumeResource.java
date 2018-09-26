@@ -41,12 +41,26 @@ public class VolumeResource
     private Volume properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VolumeResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VolumeResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Volume
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html
      * 
      */
-    @JsonProperty("Properties")
     public Volume getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VolumeResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volume.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Volume properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VolumeResource
     @Override
     public VolumeResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VolumeResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Resource.schema.json",
+  "title": "Resource",
+  "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html",
+  "type": "object",
+  "extends": {
+    "$ref": "Named.schema.json"
+  },
+  "javaType": "aws.Resource",
+  "properties": {
+    "Type": {
+      "type": "string"
+    },
+    "CreationPolicy": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html",
+      "$ref": "#/definitions/CreationPolicy"
+    },
+    "UpdatePolicy": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html",
+      "$ref": "#/definitions/UpdatePolicy"
+    },
+    "DeletionPolicy": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html",
+      "$ref": "DeletionPolicy.schema.json"
+    },
+    "DependsOn": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Metadata": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html",
+      "type": "object",
+      "javaType": "java.util.Map<String, Object>"
+    }
+  },
+  "definitions": {
+    "CreationPolicy": {
+      "type": "object",
+      "properties": {
+        "AutoScalingCreationPolicy": {
+          "$ref": "#/definitions/AutoScalingCreationPolicy"
+        },
+        "ResourceSignal": {
+          "$ref": "#/definitions/ResourceSignal"
+        }
+      }
+    },
+    "UpdatePolicy": {
+      "type": "object",
+      "properties": {
+        "AutoScalingReplacingUpdate": {
+          "$ref": "#/definitions/AutoScalingReplacingUpdate"
+        }
+      }
+    },
+    "AutoScalingCreationPolicy": {
+      "type": "object",
+      "properties": {
+        "MinSuccessfulInstancesPercent": {
+          "type": "integer"
+        }
+      }
+    },
+    "ResourceSignal": {
+      "type": "object",
+      "properties": {
+        "Count": {
+          "type": "integer"
+        },
+        "Timeout": {
+          "type": "string"
+        }
+      }
+    },
+    "AutoScalingReplacingUpdate": {
+      "type": "object",
+      "properties": {
+        "WillReplace": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

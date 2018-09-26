@@ -52,7 +52,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
      */
-    @JsonProperty("DisplayName")
     public CharSequence getDisplayName() {
         return displayName;
     }
@@ -61,7 +60,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
      */
-    @JsonProperty("DisplayName")
     public void setDisplayName(CharSequence displayName) {
         this.displayName = displayName;
     }
@@ -75,7 +73,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
      */
-    @JsonProperty("Subscription")
     public List<Subscription> getSubscription() {
         return subscription;
     }
@@ -84,7 +81,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
      */
-    @JsonProperty("Subscription")
     public void setSubscription(List<Subscription> subscription) {
         this.subscription = subscription;
     }
@@ -98,7 +94,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
-    @JsonProperty("TopicName")
     public CharSequence getTopicName() {
         return topicName;
     }
@@ -107,7 +102,6 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
-    @JsonProperty("TopicName")
     public void setTopicName(CharSequence topicName) {
         this.topicName = topicName;
     }

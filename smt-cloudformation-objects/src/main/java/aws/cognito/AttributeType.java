@@ -42,7 +42,6 @@ public class AttributeType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -51,7 +50,6 @@ public class AttributeType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }
@@ -65,7 +63,6 @@ public class AttributeType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -74,7 +71,6 @@ public class AttributeType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

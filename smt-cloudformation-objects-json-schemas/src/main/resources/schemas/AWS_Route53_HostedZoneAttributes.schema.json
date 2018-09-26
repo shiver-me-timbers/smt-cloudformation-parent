@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53_HostedZoneAttributes.schema.json",
+  "title" : "HostedZoneAttributes",
+  "type" : "string",
+  "enum" : [ "NameServers" ],
+  "javaType" : "aws.route53.HostedZoneAttributes"
+}

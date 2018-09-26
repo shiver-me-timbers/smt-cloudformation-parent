@@ -34,7 +34,6 @@ public class ClientCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-clientcertificate.html#cfn-apigateway-clientcertificate-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -43,7 +42,6 @@ public class ClientCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-clientcertificate.html#cfn-apigateway-clientcertificate-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }

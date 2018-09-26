@@ -58,7 +58,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -67,7 +66,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
@@ -81,7 +79,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-optionname
      * 
      */
-    @JsonProperty("OptionName")
     public CharSequence getOptionName() {
         return optionName;
     }
@@ -90,7 +87,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-optionname
      * 
      */
-    @JsonProperty("OptionName")
     public void setOptionName(CharSequence optionName) {
         this.optionName = optionName;
     }
@@ -104,7 +100,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-resourcename
      * 
      */
-    @JsonProperty("ResourceName")
     public CharSequence getResourceName() {
         return resourceName;
     }
@@ -113,7 +108,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-resourcename
      * 
      */
-    @JsonProperty("ResourceName")
     public void setResourceName(CharSequence resourceName) {
         this.resourceName = resourceName;
     }
@@ -127,7 +121,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -136,7 +129,6 @@ public class ConfigurationOptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-configurationoptionsetting.html#cfn-elasticbeanstalk-configurationtemplate-configurationoptionsetting-value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }

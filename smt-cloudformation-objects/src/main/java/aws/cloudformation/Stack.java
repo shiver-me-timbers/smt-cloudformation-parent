@@ -74,7 +74,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns
      * 
      */
-    @JsonProperty("NotificationARNs")
     public Set<CharSequence> getNotificationARNs() {
         return notificationARNs;
     }
@@ -83,7 +82,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns
      * 
      */
-    @JsonProperty("NotificationARNs")
     public void setNotificationARNs(Set<CharSequence> notificationARNs) {
         this.notificationARNs = notificationARNs;
     }
@@ -97,7 +95,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Map<String, String> getParameters() {
         return parameters;
     }
@@ -106,7 +103,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
@@ -120,7 +116,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -129,7 +124,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -143,7 +137,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl
      * 
      */
-    @JsonProperty("TemplateURL")
     public CharSequence getTemplateURL() {
         return templateURL;
     }
@@ -152,7 +145,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl
      * 
      */
-    @JsonProperty("TemplateURL")
     public void setTemplateURL(CharSequence templateURL) {
         this.templateURL = templateURL;
     }
@@ -166,7 +158,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes
      * 
      */
-    @JsonProperty("TimeoutInMinutes")
     public Integer getTimeoutInMinutes() {
         return timeoutInMinutes;
     }
@@ -175,7 +166,6 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes
      * 
      */
-    @JsonProperty("TimeoutInMinutes")
     public void setTimeoutInMinutes(Integer timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
     }

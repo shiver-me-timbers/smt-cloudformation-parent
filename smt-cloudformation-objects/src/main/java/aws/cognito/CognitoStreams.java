@@ -50,7 +50,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus
      * 
      */
-    @JsonProperty("StreamingStatus")
     public CharSequence getStreamingStatus() {
         return streamingStatus;
     }
@@ -59,7 +58,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus
      * 
      */
-    @JsonProperty("StreamingStatus")
     public void setStreamingStatus(CharSequence streamingStatus) {
         this.streamingStatus = streamingStatus;
     }
@@ -73,7 +71,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname
      * 
      */
-    @JsonProperty("StreamName")
     public CharSequence getStreamName() {
         return streamName;
     }
@@ -82,7 +79,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname
      * 
      */
-    @JsonProperty("StreamName")
     public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }
@@ -96,7 +92,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -105,7 +100,6 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

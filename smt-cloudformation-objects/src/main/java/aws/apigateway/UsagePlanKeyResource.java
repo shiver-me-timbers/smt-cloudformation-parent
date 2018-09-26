@@ -41,12 +41,26 @@ public class UsagePlanKeyResource
     private UsagePlanKey properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UsagePlanKeyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UsagePlanKeyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UsagePlanKey
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html
      * 
      */
-    @JsonProperty("Properties")
     public UsagePlanKey getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class UsagePlanKeyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UsagePlanKey properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class UsagePlanKeyResource
     @Override
     public UsagePlanKeyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UsagePlanKeyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

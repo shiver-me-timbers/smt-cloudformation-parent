@@ -42,7 +42,6 @@ public class NoncurrentVersionTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-storageclass
      * 
      */
-    @JsonProperty("StorageClass")
     public CharSequence getStorageClass() {
         return storageClass;
     }
@@ -51,7 +50,6 @@ public class NoncurrentVersionTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-storageclass
      * 
      */
-    @JsonProperty("StorageClass")
     public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }
@@ -65,7 +63,6 @@ public class NoncurrentVersionTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-transitionindays
      * 
      */
-    @JsonProperty("TransitionInDays")
     public Integer getTransitionInDays() {
         return transitionInDays;
     }
@@ -74,7 +71,6 @@ public class NoncurrentVersionTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition-transitionindays
      * 
      */
-    @JsonProperty("TransitionInDays")
     public void setTransitionInDays(Integer transitionInDays) {
         this.transitionInDays = transitionInDays;
     }

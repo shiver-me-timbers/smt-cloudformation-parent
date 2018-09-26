@@ -42,7 +42,6 @@ public class HealthCheckTag {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html#cfn-route53-healthchecktags-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -51,7 +50,6 @@ public class HealthCheckTag {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html#cfn-route53-healthchecktags-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -65,7 +63,6 @@ public class HealthCheckTag {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html#cfn-route53-healthchecktags-value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -74,7 +71,6 @@ public class HealthCheckTag {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktag.html#cfn-route53-healthchecktags-value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }

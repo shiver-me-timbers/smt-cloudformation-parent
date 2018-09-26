@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class QueueResource
     extends Resource
+    implements HasAttributes<QueueAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class QueueResource
     private Queue properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public QueueResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public QueueResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Queue
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html
      * 
      */
-    @JsonProperty("Properties")
     public Queue getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class QueueResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Queue properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class QueueResource
     @Override
     public QueueResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public QueueResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

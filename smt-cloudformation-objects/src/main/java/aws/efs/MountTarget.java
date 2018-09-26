@@ -62,7 +62,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
      * 
      */
-    @JsonProperty("FileSystemId")
     public CharSequence getFileSystemId() {
         return fileSystemId;
     }
@@ -71,7 +70,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
      * 
      */
-    @JsonProperty("FileSystemId")
     public void setFileSystemId(CharSequence fileSystemId) {
         this.fileSystemId = fileSystemId;
     }
@@ -85,7 +83,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public CharSequence getIpAddress() {
         return ipAddress;
     }
@@ -94,7 +91,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
@@ -108,7 +104,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -117,7 +112,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -131,7 +125,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -140,7 +133,6 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

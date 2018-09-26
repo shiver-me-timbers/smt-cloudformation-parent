@@ -153,7 +153,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalmastersecuritygroups
      * 
      */
-    @JsonProperty("AdditionalMasterSecurityGroups")
     public Set<CharSequence> getAdditionalMasterSecurityGroups() {
         return additionalMasterSecurityGroups;
     }
@@ -162,7 +161,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalmastersecuritygroups
      * 
      */
-    @JsonProperty("AdditionalMasterSecurityGroups")
     public void setAdditionalMasterSecurityGroups(Set<CharSequence> additionalMasterSecurityGroups) {
         this.additionalMasterSecurityGroups = additionalMasterSecurityGroups;
     }
@@ -176,7 +174,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalslavesecuritygroups
      * 
      */
-    @JsonProperty("AdditionalSlaveSecurityGroups")
     public Set<CharSequence> getAdditionalSlaveSecurityGroups() {
         return additionalSlaveSecurityGroups;
     }
@@ -185,7 +182,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalslavesecuritygroups
      * 
      */
-    @JsonProperty("AdditionalSlaveSecurityGroups")
     public void setAdditionalSlaveSecurityGroups(Set<CharSequence> additionalSlaveSecurityGroups) {
         this.additionalSlaveSecurityGroups = additionalSlaveSecurityGroups;
     }
@@ -201,7 +197,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
      * 
      */
-    @JsonProperty("CoreInstanceFleet")
     public InstanceFleetConfig getCoreInstanceFleet() {
         return coreInstanceFleet;
     }
@@ -212,7 +207,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
      * 
      */
-    @JsonProperty("CoreInstanceFleet")
     public void setCoreInstanceFleet(InstanceFleetConfig coreInstanceFleet) {
         this.coreInstanceFleet = coreInstanceFleet;
     }
@@ -228,7 +222,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html
      * 
      */
-    @JsonProperty("CoreInstanceGroup")
     public InstanceGroupConfig getCoreInstanceGroup() {
         return coreInstanceGroup;
     }
@@ -239,7 +232,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html
      * 
      */
-    @JsonProperty("CoreInstanceGroup")
     public void setCoreInstanceGroup(InstanceGroupConfig coreInstanceGroup) {
         this.coreInstanceGroup = coreInstanceGroup;
     }
@@ -253,7 +245,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2keyname
      * 
      */
-    @JsonProperty("Ec2KeyName")
     public CharSequence getEc2KeyName() {
         return ec2KeyName;
     }
@@ -262,7 +253,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2keyname
      * 
      */
-    @JsonProperty("Ec2KeyName")
     public void setEc2KeyName(CharSequence ec2KeyName) {
         this.ec2KeyName = ec2KeyName;
     }
@@ -276,7 +266,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2subnetid
      * 
      */
-    @JsonProperty("Ec2SubnetId")
     public CharSequence getEc2SubnetId() {
         return ec2SubnetId;
     }
@@ -285,7 +274,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2subnetid
      * 
      */
-    @JsonProperty("Ec2SubnetId")
     public void setEc2SubnetId(CharSequence ec2SubnetId) {
         this.ec2SubnetId = ec2SubnetId;
     }
@@ -299,7 +287,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedmastersecuritygroup
      * 
      */
-    @JsonProperty("EmrManagedMasterSecurityGroup")
     public CharSequence getEmrManagedMasterSecurityGroup() {
         return emrManagedMasterSecurityGroup;
     }
@@ -308,7 +295,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedmastersecuritygroup
      * 
      */
-    @JsonProperty("EmrManagedMasterSecurityGroup")
     public void setEmrManagedMasterSecurityGroup(CharSequence emrManagedMasterSecurityGroup) {
         this.emrManagedMasterSecurityGroup = emrManagedMasterSecurityGroup;
     }
@@ -322,7 +308,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedslavesecuritygroup
      * 
      */
-    @JsonProperty("EmrManagedSlaveSecurityGroup")
     public CharSequence getEmrManagedSlaveSecurityGroup() {
         return emrManagedSlaveSecurityGroup;
     }
@@ -331,7 +316,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-emrmanagedslavesecuritygroup
      * 
      */
-    @JsonProperty("EmrManagedSlaveSecurityGroup")
     public void setEmrManagedSlaveSecurityGroup(CharSequence emrManagedSlaveSecurityGroup) {
         this.emrManagedSlaveSecurityGroup = emrManagedSlaveSecurityGroup;
     }
@@ -345,7 +329,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-hadoopversion
      * 
      */
-    @JsonProperty("HadoopVersion")
     public CharSequence getHadoopVersion() {
         return hadoopVersion;
     }
@@ -354,7 +337,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-hadoopversion
      * 
      */
-    @JsonProperty("HadoopVersion")
     public void setHadoopVersion(CharSequence hadoopVersion) {
         this.hadoopVersion = hadoopVersion;
     }
@@ -370,7 +352,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
      * 
      */
-    @JsonProperty("MasterInstanceFleet")
     public InstanceFleetConfig getMasterInstanceFleet() {
         return masterInstanceFleet;
     }
@@ -381,7 +362,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
      * 
      */
-    @JsonProperty("MasterInstanceFleet")
     public void setMasterInstanceFleet(InstanceFleetConfig masterInstanceFleet) {
         this.masterInstanceFleet = masterInstanceFleet;
     }
@@ -397,7 +377,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html
      * 
      */
-    @JsonProperty("MasterInstanceGroup")
     public InstanceGroupConfig getMasterInstanceGroup() {
         return masterInstanceGroup;
     }
@@ -408,7 +387,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html
      * 
      */
-    @JsonProperty("MasterInstanceGroup")
     public void setMasterInstanceGroup(InstanceGroupConfig masterInstanceGroup) {
         this.masterInstanceGroup = masterInstanceGroup;
     }
@@ -424,7 +402,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html
      * 
      */
-    @JsonProperty("Placement")
     public PlacementType getPlacement() {
         return placement;
     }
@@ -435,7 +412,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html
      * 
      */
-    @JsonProperty("Placement")
     public void setPlacement(PlacementType placement) {
         this.placement = placement;
     }
@@ -449,7 +425,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-serviceaccesssecuritygroup
      * 
      */
-    @JsonProperty("ServiceAccessSecurityGroup")
     public CharSequence getServiceAccessSecurityGroup() {
         return serviceAccessSecurityGroup;
     }
@@ -458,7 +433,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-serviceaccesssecuritygroup
      * 
      */
-    @JsonProperty("ServiceAccessSecurityGroup")
     public void setServiceAccessSecurityGroup(CharSequence serviceAccessSecurityGroup) {
         this.serviceAccessSecurityGroup = serviceAccessSecurityGroup;
     }
@@ -472,7 +446,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-terminationprotected
      * 
      */
-    @JsonProperty("TerminationProtected")
     public Boolean getTerminationProtected() {
         return terminationProtected;
     }
@@ -481,7 +454,6 @@ public class JobFlowInstancesConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-terminationprotected
      * 
      */
-    @JsonProperty("TerminationProtected")
     public void setTerminationProtected(Boolean terminationProtected) {
         this.terminationProtected = terminationProtected;
     }

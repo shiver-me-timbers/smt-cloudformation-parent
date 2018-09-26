@@ -50,7 +50,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervallowerbound
      * 
      */
-    @JsonProperty("MetricIntervalLowerBound")
     public Double getMetricIntervalLowerBound() {
         return metricIntervalLowerBound;
     }
@@ -59,7 +58,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervallowerbound
      * 
      */
-    @JsonProperty("MetricIntervalLowerBound")
     public void setMetricIntervalLowerBound(Double metricIntervalLowerBound) {
         this.metricIntervalLowerBound = metricIntervalLowerBound;
     }
@@ -73,7 +71,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervalupperbound
      * 
      */
-    @JsonProperty("MetricIntervalUpperBound")
     public Double getMetricIntervalUpperBound() {
         return metricIntervalUpperBound;
     }
@@ -82,7 +79,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-metricintervalupperbound
      * 
      */
-    @JsonProperty("MetricIntervalUpperBound")
     public void setMetricIntervalUpperBound(Double metricIntervalUpperBound) {
         this.metricIntervalUpperBound = metricIntervalUpperBound;
     }
@@ -96,7 +92,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-scalingadjustment
      * 
      */
-    @JsonProperty("ScalingAdjustment")
     public Integer getScalingAdjustment() {
         return scalingAdjustment;
     }
@@ -105,7 +100,6 @@ public class StepAdjustment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html#cfn-autoscaling-scalingpolicy-stepadjustment-scalingadjustment
      * 
      */
-    @JsonProperty("ScalingAdjustment")
     public void setScalingAdjustment(Integer scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Elasticsearch_DomainResource.schema.json",
+  "title" : "DomainResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.elasticsearch.DomainResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DomainAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Elasticsearch_Domain.schema.json"
+    }
+  }
+}

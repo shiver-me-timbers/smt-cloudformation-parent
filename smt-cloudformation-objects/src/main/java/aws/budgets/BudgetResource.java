@@ -41,12 +41,26 @@ public class BudgetResource
     private Budget properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BudgetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BudgetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Budget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html
      * 
      */
-    @JsonProperty("Properties")
     public Budget getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class BudgetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Budget properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class BudgetResource
     @Override
     public BudgetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BudgetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -41,12 +41,26 @@ public class WaitConditionHandleResource
     private WaitConditionHandle properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WaitConditionHandleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public WaitConditionHandleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * WaitConditionHandle
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitconditionhandle.html
      * 
      */
-    @JsonProperty("Properties")
     public WaitConditionHandle getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class WaitConditionHandleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitconditionhandle.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(WaitConditionHandle properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class WaitConditionHandleResource
     @Override
     public WaitConditionHandleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public WaitConditionHandleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

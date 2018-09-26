@@ -34,7 +34,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn
      * 
      */
-    @JsonProperty("LambdaFunctionArn")
     public CharSequence getLambdaFunctionArn() {
         return lambdaFunctionArn;
     }
@@ -43,7 +42,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn
      * 
      */
-    @JsonProperty("LambdaFunctionArn")
     public void setLambdaFunctionArn(CharSequence lambdaFunctionArn) {
         this.lambdaFunctionArn = lambdaFunctionArn;
     }

@@ -45,7 +45,6 @@ public class RouteTable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html#cfn-ec2-routetable-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -54,7 +53,6 @@ public class RouteTable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html#cfn-ec2-routetable-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -68,7 +66,6 @@ public class RouteTable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html#cfn-ec2-routetable-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -77,7 +74,6 @@ public class RouteTable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html#cfn-ec2-routetable-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

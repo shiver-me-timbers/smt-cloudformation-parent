@@ -42,7 +42,6 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters getParameters() {
         return parameters;
     }
@@ -51,7 +50,6 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters parameters) {
         this.parameters = parameters;
     }
@@ -65,7 +63,6 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-documentversion
      * 
      */
-    @JsonProperty("DocumentVersion")
     public CharSequence getDocumentVersion() {
         return documentVersion;
     }
@@ -74,7 +71,6 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-documentversion
      * 
      */
-    @JsonProperty("DocumentVersion")
     public void setDocumentVersion(CharSequence documentVersion) {
         this.documentVersion = documentVersion;
     }

@@ -42,7 +42,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest
      * 
      */
-    @JsonProperty("CertificateSigningRequest")
     public CharSequence getCertificateSigningRequest() {
         return certificateSigningRequest;
     }
@@ -51,7 +50,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest
      * 
      */
-    @JsonProperty("CertificateSigningRequest")
     public void setCertificateSigningRequest(CharSequence certificateSigningRequest) {
         this.certificateSigningRequest = certificateSigningRequest;
     }
@@ -65,7 +63,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status
      * 
      */
-    @JsonProperty("Status")
     public CharSequence getStatus() {
         return status;
     }
@@ -74,7 +71,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status
      * 
      */
-    @JsonProperty("Status")
     public void setStatus(CharSequence status) {
         this.status = status;
     }

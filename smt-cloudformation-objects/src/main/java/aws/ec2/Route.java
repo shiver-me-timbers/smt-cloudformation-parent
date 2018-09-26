@@ -98,7 +98,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock
      * 
      */
-    @JsonProperty("DestinationCidrBlock")
     public CharSequence getDestinationCidrBlock() {
         return destinationCidrBlock;
     }
@@ -107,7 +106,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationcidrblock
      * 
      */
-    @JsonProperty("DestinationCidrBlock")
     public void setDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
     }
@@ -121,7 +119,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationipv6cidrblock
      * 
      */
-    @JsonProperty("DestinationIpv6CidrBlock")
     public CharSequence getDestinationIpv6CidrBlock() {
         return destinationIpv6CidrBlock;
     }
@@ -130,7 +127,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-destinationipv6cidrblock
      * 
      */
-    @JsonProperty("DestinationIpv6CidrBlock")
     public void setDestinationIpv6CidrBlock(CharSequence destinationIpv6CidrBlock) {
         this.destinationIpv6CidrBlock = destinationIpv6CidrBlock;
     }
@@ -144,7 +140,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-egressonlyinternetgatewayid
      * 
      */
-    @JsonProperty("EgressOnlyInternetGatewayId")
     public CharSequence getEgressOnlyInternetGatewayId() {
         return egressOnlyInternetGatewayId;
     }
@@ -153,7 +148,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-egressonlyinternetgatewayid
      * 
      */
-    @JsonProperty("EgressOnlyInternetGatewayId")
     public void setEgressOnlyInternetGatewayId(CharSequence egressOnlyInternetGatewayId) {
         this.egressOnlyInternetGatewayId = egressOnlyInternetGatewayId;
     }
@@ -167,7 +161,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-gatewayid
      * 
      */
-    @JsonProperty("GatewayId")
     public CharSequence getGatewayId() {
         return gatewayId;
     }
@@ -176,7 +169,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-gatewayid
      * 
      */
-    @JsonProperty("GatewayId")
     public void setGatewayId(CharSequence gatewayId) {
         this.gatewayId = gatewayId;
     }
@@ -190,7 +182,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -199,7 +190,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -213,7 +203,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-natgatewayid
      * 
      */
-    @JsonProperty("NatGatewayId")
     public CharSequence getNatGatewayId() {
         return natGatewayId;
     }
@@ -222,7 +211,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-natgatewayid
      * 
      */
-    @JsonProperty("NatGatewayId")
     public void setNatGatewayId(CharSequence natGatewayId) {
         this.natGatewayId = natGatewayId;
     }
@@ -236,7 +224,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -245,7 +232,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
@@ -259,7 +245,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-routetableid
      * 
      */
-    @JsonProperty("RouteTableId")
     public CharSequence getRouteTableId() {
         return routeTableId;
     }
@@ -268,7 +253,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-routetableid
      * 
      */
-    @JsonProperty("RouteTableId")
     public void setRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
     }
@@ -282,7 +266,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid
      * 
      */
-    @JsonProperty("VpcPeeringConnectionId")
     public CharSequence getVpcPeeringConnectionId() {
         return vpcPeeringConnectionId;
     }
@@ -291,7 +274,6 @@ public class Route {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html#cfn-ec2-route-vpcpeeringconnectionid
      * 
      */
-    @JsonProperty("VpcPeeringConnectionId")
     public void setVpcPeeringConnectionId(CharSequence vpcPeeringConnectionId) {
         this.vpcPeeringConnectionId = vpcPeeringConnectionId;
     }

@@ -66,7 +66,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -75,7 +74,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -89,7 +87,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public CharSequence getTenancy() {
         return tenancy;
     }
@@ -98,7 +95,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
@@ -112,7 +108,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -121,7 +116,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -135,7 +129,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-affinity
      * 
      */
-    @JsonProperty("Affinity")
     public CharSequence getAffinity() {
         return affinity;
     }
@@ -144,7 +137,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-affinity
      * 
      */
-    @JsonProperty("Affinity")
     public void setAffinity(CharSequence affinity) {
         this.affinity = affinity;
     }
@@ -158,7 +150,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid
      * 
      */
-    @JsonProperty("HostId")
     public CharSequence getHostId() {
         return hostId;
     }
@@ -167,7 +158,6 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid
      * 
      */
-    @JsonProperty("HostId")
     public void setHostId(CharSequence hostId) {
         this.hostId = hostId;
     }

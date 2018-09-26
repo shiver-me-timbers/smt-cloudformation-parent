@@ -108,7 +108,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-ipaddresstype
      * 
      */
-    @JsonProperty("IpAddressType")
     public CharSequence getIpAddressType() {
         return ipAddressType;
     }
@@ -117,7 +116,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-ipaddresstype
      * 
      */
-    @JsonProperty("IpAddressType")
     public void setIpAddressType(CharSequence ipAddressType) {
         this.ipAddressType = ipAddressType;
     }
@@ -131,7 +129,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattributes
      * 
      */
-    @JsonProperty("LoadBalancerAttributes")
     public Set<LoadBalancerAttribute> getLoadBalancerAttributes() {
         return loadBalancerAttributes;
     }
@@ -140,7 +137,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattributes
      * 
      */
-    @JsonProperty("LoadBalancerAttributes")
     public void setLoadBalancerAttributes(Set<LoadBalancerAttribute> loadBalancerAttributes) {
         this.loadBalancerAttributes = loadBalancerAttributes;
     }
@@ -154,7 +150,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -163,7 +158,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -177,7 +171,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-scheme
      * 
      */
-    @JsonProperty("Scheme")
     public CharSequence getScheme() {
         return scheme;
     }
@@ -186,7 +179,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-scheme
      * 
      */
-    @JsonProperty("Scheme")
     public void setScheme(CharSequence scheme) {
         this.scheme = scheme;
     }
@@ -200,7 +192,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -209,7 +200,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -223,7 +213,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmappings
      * 
      */
-    @JsonProperty("SubnetMappings")
     public Set<SubnetMapping> getSubnetMappings() {
         return subnetMappings;
     }
@@ -232,7 +221,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmappings
      * 
      */
-    @JsonProperty("SubnetMappings")
     public void setSubnetMappings(Set<SubnetMapping> subnetMappings) {
         this.subnetMappings = subnetMappings;
     }
@@ -246,7 +234,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public Set<CharSequence> getSubnets() {
         return subnets;
     }
@@ -255,7 +242,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }
@@ -269,7 +255,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -278,7 +263,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -292,7 +276,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -301,7 +284,6 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

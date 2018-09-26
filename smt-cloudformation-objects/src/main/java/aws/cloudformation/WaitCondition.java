@@ -50,7 +50,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
      * 
      */
-    @JsonProperty("Count")
     public Integer getCount() {
         return count;
     }
@@ -59,7 +58,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
      * 
      */
-    @JsonProperty("Count")
     public void setCount(Integer count) {
         this.count = count;
     }
@@ -73,7 +71,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
      * 
      */
-    @JsonProperty("Handle")
     public CharSequence getHandle() {
         return handle;
     }
@@ -82,7 +79,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
      * 
      */
-    @JsonProperty("Handle")
     public void setHandle(CharSequence handle) {
         this.handle = handle;
     }
@@ -96,7 +92,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public CharSequence getTimeout() {
         return timeout;
     }
@@ -105,7 +100,6 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public void setTimeout(CharSequence timeout) {
         this.timeout = timeout;
     }

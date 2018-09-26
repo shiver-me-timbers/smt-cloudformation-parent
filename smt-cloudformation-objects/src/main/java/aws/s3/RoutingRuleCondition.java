@@ -42,7 +42,6 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals
      * 
      */
-    @JsonProperty("HttpErrorCodeReturnedEquals")
     public CharSequence getHttpErrorCodeReturnedEquals() {
         return httpErrorCodeReturnedEquals;
     }
@@ -51,7 +50,6 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals
      * 
      */
-    @JsonProperty("HttpErrorCodeReturnedEquals")
     public void setHttpErrorCodeReturnedEquals(CharSequence httpErrorCodeReturnedEquals) {
         this.httpErrorCodeReturnedEquals = httpErrorCodeReturnedEquals;
     }
@@ -65,7 +63,6 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals
      * 
      */
-    @JsonProperty("KeyPrefixEquals")
     public CharSequence getKeyPrefixEquals() {
         return keyPrefixEquals;
     }
@@ -74,7 +71,6 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals
      * 
      */
-    @JsonProperty("KeyPrefixEquals")
     public void setKeyPrefixEquals(CharSequence keyPrefixEquals) {
         this.keyPrefixEquals = keyPrefixEquals;
     }

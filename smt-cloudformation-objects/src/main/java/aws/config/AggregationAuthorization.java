@@ -42,7 +42,6 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid
      * 
      */
-    @JsonProperty("AuthorizedAccountId")
     public CharSequence getAuthorizedAccountId() {
         return authorizedAccountId;
     }
@@ -51,7 +50,6 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid
      * 
      */
-    @JsonProperty("AuthorizedAccountId")
     public void setAuthorizedAccountId(CharSequence authorizedAccountId) {
         this.authorizedAccountId = authorizedAccountId;
     }
@@ -65,7 +63,6 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion
      * 
      */
-    @JsonProperty("AuthorizedAwsRegion")
     public CharSequence getAuthorizedAwsRegion() {
         return authorizedAwsRegion;
     }
@@ -74,7 +71,6 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion
      * 
      */
-    @JsonProperty("AuthorizedAwsRegion")
     public void setAuthorizedAwsRegion(CharSequence authorizedAwsRegion) {
         this.authorizedAwsRegion = authorizedAwsRegion;
     }

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_TableResource.schema.json",
+  "title" : "TableResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.dynamodb.TableResource",
+  "javaInterfaces" : [ "aws.HasAttributes<TableAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DynamoDB_Table.schema.json"
+    }
+  }
+}

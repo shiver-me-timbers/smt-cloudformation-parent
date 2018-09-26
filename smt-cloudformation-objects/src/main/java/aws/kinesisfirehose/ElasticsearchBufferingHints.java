@@ -42,7 +42,6 @@ public class ElasticsearchBufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds
      * 
      */
-    @JsonProperty("IntervalInSeconds")
     public Integer getIntervalInSeconds() {
         return intervalInSeconds;
     }
@@ -51,7 +50,6 @@ public class ElasticsearchBufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds
      * 
      */
-    @JsonProperty("IntervalInSeconds")
     public void setIntervalInSeconds(Integer intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
     }
@@ -65,7 +63,6 @@ public class ElasticsearchBufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs
      * 
      */
-    @JsonProperty("SizeInMBs")
     public Integer getSizeInMBs() {
         return sizeInMBs;
     }
@@ -74,7 +71,6 @@ public class ElasticsearchBufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-sizeinmbs
      * 
      */
-    @JsonProperty("SizeInMBs")
     public void setSizeInMBs(Integer sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
     }

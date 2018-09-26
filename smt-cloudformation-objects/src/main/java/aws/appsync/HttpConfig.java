@@ -34,7 +34,6 @@ public class HttpConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public CharSequence getEndpoint() {
         return endpoint;
     }
@@ -43,7 +42,6 @@ public class HttpConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }

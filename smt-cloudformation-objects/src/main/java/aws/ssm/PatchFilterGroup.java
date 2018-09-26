@@ -36,7 +36,6 @@ public class PatchFilterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
      * 
      */
-    @JsonProperty("PatchFilters")
     public List<PatchFilter> getPatchFilters() {
         return patchFilters;
     }
@@ -45,7 +44,6 @@ public class PatchFilterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
      * 
      */
-    @JsonProperty("PatchFilters")
     public void setPatchFilters(List<PatchFilter> patchFilters) {
         this.patchFilters = patchFilters;
     }

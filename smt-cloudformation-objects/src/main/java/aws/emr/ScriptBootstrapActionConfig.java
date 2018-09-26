@@ -46,7 +46,6 @@ public class ScriptBootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-args
      * 
      */
-    @JsonProperty("Args")
     public Set<CharSequence> getArgs() {
         return args;
     }
@@ -55,7 +54,6 @@ public class ScriptBootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-args
      * 
      */
-    @JsonProperty("Args")
     public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
@@ -69,7 +67,6 @@ public class ScriptBootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -78,7 +75,6 @@ public class ScriptBootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html#cfn-elasticmapreduce-cluster-scriptbootstrapactionconfig-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }

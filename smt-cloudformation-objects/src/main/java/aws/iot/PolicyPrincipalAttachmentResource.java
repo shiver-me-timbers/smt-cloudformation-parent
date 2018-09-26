@@ -41,12 +41,26 @@ public class PolicyPrincipalAttachmentResource
     private PolicyPrincipalAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PolicyPrincipalAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PolicyPrincipalAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * PolicyPrincipalAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public PolicyPrincipalAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PolicyPrincipalAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(PolicyPrincipalAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PolicyPrincipalAttachmentResource
     @Override
     public PolicyPrincipalAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PolicyPrincipalAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

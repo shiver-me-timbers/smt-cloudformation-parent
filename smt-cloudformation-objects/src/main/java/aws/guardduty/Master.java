@@ -50,7 +50,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public CharSequence getDetectorId() {
         return detectorId;
     }
@@ -59,7 +58,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
@@ -73,7 +71,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid
      * 
      */
-    @JsonProperty("MasterId")
     public CharSequence getMasterId() {
         return masterId;
     }
@@ -82,7 +79,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid
      * 
      */
-    @JsonProperty("MasterId")
     public void setMasterId(CharSequence masterId) {
         this.masterId = masterId;
     }
@@ -96,7 +92,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid
      * 
      */
-    @JsonProperty("InvitationId")
     public CharSequence getInvitationId() {
         return invitationId;
     }
@@ -105,7 +100,6 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid
      * 
      */
-    @JsonProperty("InvitationId")
     public void setInvitationId(CharSequence invitationId) {
         this.invitationId = invitationId;
     }

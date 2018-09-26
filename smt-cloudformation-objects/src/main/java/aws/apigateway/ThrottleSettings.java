@@ -42,7 +42,6 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit
      * 
      */
-    @JsonProperty("BurstLimit")
     public Integer getBurstLimit() {
         return burstLimit;
     }
@@ -51,7 +50,6 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit
      * 
      */
-    @JsonProperty("BurstLimit")
     public void setBurstLimit(Integer burstLimit) {
         this.burstLimit = burstLimit;
     }
@@ -65,7 +63,6 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit
      * 
      */
-    @JsonProperty("RateLimit")
     public Double getRateLimit() {
         return rateLimit;
     }
@@ -74,7 +71,6 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit
      * 
      */
-    @JsonProperty("RateLimit")
     public void setRateLimit(Double rateLimit) {
         this.rateLimit = rateLimit;
     }

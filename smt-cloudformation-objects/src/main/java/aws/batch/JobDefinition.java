@@ -80,7 +80,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -89,7 +88,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -103,7 +101,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters getParameters() {
         return parameters;
     }
@@ -112,7 +109,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters parameters) {
         this.parameters = parameters;
     }
@@ -128,7 +124,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html
      * 
      */
-    @JsonProperty("Timeout")
     public Timeout getTimeout() {
         return timeout;
     }
@@ -139,7 +134,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html
      * 
      */
-    @JsonProperty("Timeout")
     public void setTimeout(Timeout timeout) {
         this.timeout = timeout;
     }
@@ -155,7 +149,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html
      * 
      */
-    @JsonProperty("ContainerProperties")
     public ContainerProperties getContainerProperties() {
         return containerProperties;
     }
@@ -166,7 +159,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html
      * 
      */
-    @JsonProperty("ContainerProperties")
     public void setContainerProperties(ContainerProperties containerProperties) {
         this.containerProperties = containerProperties;
     }
@@ -180,7 +172,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname
      * 
      */
-    @JsonProperty("JobDefinitionName")
     public CharSequence getJobDefinitionName() {
         return jobDefinitionName;
     }
@@ -189,7 +180,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname
      * 
      */
-    @JsonProperty("JobDefinitionName")
     public void setJobDefinitionName(CharSequence jobDefinitionName) {
         this.jobDefinitionName = jobDefinitionName;
     }
@@ -205,7 +195,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html
      * 
      */
-    @JsonProperty("RetryStrategy")
     public RetryStrategy getRetryStrategy() {
         return retryStrategy;
     }
@@ -216,7 +205,6 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html
      * 
      */
-    @JsonProperty("RetryStrategy")
     public void setRetryStrategy(RetryStrategy retryStrategy) {
         this.retryStrategy = retryStrategy;
     }

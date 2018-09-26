@@ -42,7 +42,6 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname
      * 
      */
-    @JsonProperty("DashboardName")
     public CharSequence getDashboardName() {
         return dashboardName;
     }
@@ -51,7 +50,6 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname
      * 
      */
-    @JsonProperty("DashboardName")
     public void setDashboardName(CharSequence dashboardName) {
         this.dashboardName = dashboardName;
     }
@@ -65,7 +63,6 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody
      * 
      */
-    @JsonProperty("DashboardBody")
     public CharSequence getDashboardBody() {
         return dashboardBody;
     }
@@ -74,7 +71,6 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody
      * 
      */
-    @JsonProperty("DashboardBody")
     public void setDashboardBody(CharSequence dashboardBody) {
         this.dashboardBody = dashboardBody;
     }

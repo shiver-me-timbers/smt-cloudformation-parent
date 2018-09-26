@@ -38,7 +38,6 @@ public class StorageClassAnalysis {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html
      * 
      */
-    @JsonProperty("DataExport")
     public DataExport getDataExport() {
         return dataExport;
     }
@@ -49,7 +48,6 @@ public class StorageClassAnalysis {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html
      * 
      */
-    @JsonProperty("DataExport")
     public void setDataExport(DataExport dataExport) {
         this.dataExport = dataExport;
     }

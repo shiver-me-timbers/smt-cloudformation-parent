@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class RestApiResource
     extends Resource
+    implements HasAttributes<RestApiAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class RestApiResource
     private RestApi properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RestApiResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RestApiResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * RestApi
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
      * 
      */
-    @JsonProperty("Properties")
     public RestApi getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class RestApiResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(RestApi properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class RestApiResource
     @Override
     public RestApiResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RestApiResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

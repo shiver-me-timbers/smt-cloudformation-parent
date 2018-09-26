@@ -50,7 +50,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-deliverystreamname
      * 
      */
-    @JsonProperty("DeliveryStreamName")
     public CharSequence getDeliveryStreamName() {
         return deliveryStreamName;
     }
@@ -59,7 +58,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-deliverystreamname
      * 
      */
-    @JsonProperty("DeliveryStreamName")
     public void setDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
     }
@@ -73,7 +71,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -82,7 +79,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -96,7 +92,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-separator
      * 
      */
-    @JsonProperty("Separator")
     public CharSequence getSeparator() {
         return separator;
     }
@@ -105,7 +100,6 @@ public class FirehoseAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html#cfn-iot-topicrule-firehoseaction-separator
      * 
      */
-    @JsonProperty("Separator")
     public void setSeparator(CharSequence separator) {
         this.separator = separator;
     }

@@ -17,12 +17,10 @@ public class UpdatePolicy {
     @JsonProperty("AutoScalingReplacingUpdate")
     private AutoScalingReplacingUpdate autoScalingReplacingUpdate;
 
-    @JsonProperty("AutoScalingReplacingUpdate")
     public AutoScalingReplacingUpdate getAutoScalingReplacingUpdate() {
         return autoScalingReplacingUpdate;
     }
 
-    @JsonProperty("AutoScalingReplacingUpdate")
     public void setAutoScalingReplacingUpdate(AutoScalingReplacingUpdate autoScalingReplacingUpdate) {
         this.autoScalingReplacingUpdate = autoScalingReplacingUpdate;
     }

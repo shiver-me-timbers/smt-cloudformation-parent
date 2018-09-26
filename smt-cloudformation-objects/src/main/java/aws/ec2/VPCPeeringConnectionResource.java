@@ -41,12 +41,26 @@ public class VPCPeeringConnectionResource
     private VPCPeeringConnection properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCPeeringConnectionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCPeeringConnectionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCPeeringConnection
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCPeeringConnection getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCPeeringConnectionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCPeeringConnection properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCPeeringConnectionResource
     @Override
     public VPCPeeringConnectionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCPeeringConnectionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

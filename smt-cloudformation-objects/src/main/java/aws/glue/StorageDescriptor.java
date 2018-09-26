@@ -128,7 +128,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories
      * 
      */
-    @JsonProperty("StoredAsSubDirectories")
     public Boolean getStoredAsSubDirectories() {
         return storedAsSubDirectories;
     }
@@ -137,7 +136,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories
      * 
      */
-    @JsonProperty("StoredAsSubDirectories")
     public void setStoredAsSubDirectories(Boolean storedAsSubDirectories) {
         this.storedAsSubDirectories = storedAsSubDirectories;
     }
@@ -151,7 +149,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters__ getParameters() {
         return parameters;
     }
@@ -160,7 +157,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters__ parameters) {
         this.parameters = parameters;
     }
@@ -174,7 +170,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-bucketcolumns
      * 
      */
-    @JsonProperty("BucketColumns")
     public List<CharSequence> getBucketColumns() {
         return bucketColumns;
     }
@@ -183,7 +178,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-bucketcolumns
      * 
      */
-    @JsonProperty("BucketColumns")
     public void setBucketColumns(List<CharSequence> bucketColumns) {
         this.bucketColumns = bucketColumns;
     }
@@ -199,7 +193,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html
      * 
      */
-    @JsonProperty("SkewedInfo")
     public SkewedInfo getSkewedInfo() {
         return skewedInfo;
     }
@@ -210,7 +203,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html
      * 
      */
-    @JsonProperty("SkewedInfo")
     public void setSkewedInfo(SkewedInfo skewedInfo) {
         this.skewedInfo = skewedInfo;
     }
@@ -224,7 +216,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat
      * 
      */
-    @JsonProperty("InputFormat")
     public CharSequence getInputFormat() {
         return inputFormat;
     }
@@ -233,7 +224,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat
      * 
      */
-    @JsonProperty("InputFormat")
     public void setInputFormat(CharSequence inputFormat) {
         this.inputFormat = inputFormat;
     }
@@ -247,7 +237,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-numberofbuckets
      * 
      */
-    @JsonProperty("NumberOfBuckets")
     public Integer getNumberOfBuckets() {
         return numberOfBuckets;
     }
@@ -256,7 +245,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-numberofbuckets
      * 
      */
-    @JsonProperty("NumberOfBuckets")
     public void setNumberOfBuckets(Integer numberOfBuckets) {
         this.numberOfBuckets = numberOfBuckets;
     }
@@ -270,7 +258,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-outputformat
      * 
      */
-    @JsonProperty("OutputFormat")
     public CharSequence getOutputFormat() {
         return outputFormat;
     }
@@ -279,7 +266,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-outputformat
      * 
      */
-    @JsonProperty("OutputFormat")
     public void setOutputFormat(CharSequence outputFormat) {
         this.outputFormat = outputFormat;
     }
@@ -293,7 +279,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-columns
      * 
      */
-    @JsonProperty("Columns")
     public List<Column> getColumns() {
         return columns;
     }
@@ -302,7 +287,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-columns
      * 
      */
-    @JsonProperty("Columns")
     public void setColumns(List<Column> columns) {
         this.columns = columns;
     }
@@ -318,7 +302,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html
      * 
      */
-    @JsonProperty("SerdeInfo")
     public SerdeInfo getSerdeInfo() {
         return serdeInfo;
     }
@@ -329,7 +312,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html
      * 
      */
-    @JsonProperty("SerdeInfo")
     public void setSerdeInfo(SerdeInfo serdeInfo) {
         this.serdeInfo = serdeInfo;
     }
@@ -343,7 +325,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns
      * 
      */
-    @JsonProperty("SortColumns")
     public List<Order> getSortColumns() {
         return sortColumns;
     }
@@ -352,7 +333,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns
      * 
      */
-    @JsonProperty("SortColumns")
     public void setSortColumns(List<Order> sortColumns) {
         this.sortColumns = sortColumns;
     }
@@ -366,7 +346,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-compressed
      * 
      */
-    @JsonProperty("Compressed")
     public Boolean getCompressed() {
         return compressed;
     }
@@ -375,7 +354,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-compressed
      * 
      */
-    @JsonProperty("Compressed")
     public void setCompressed(Boolean compressed) {
         this.compressed = compressed;
     }
@@ -389,7 +367,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-location
      * 
      */
-    @JsonProperty("Location")
     public CharSequence getLocation() {
         return location;
     }
@@ -398,7 +375,6 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-location
      * 
      */
-    @JsonProperty("Location")
     public void setLocation(CharSequence location) {
         this.location = location;
     }

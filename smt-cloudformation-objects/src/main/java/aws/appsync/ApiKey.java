@@ -50,7 +50,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -59,7 +58,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -73,7 +71,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-expires
      * 
      */
-    @JsonProperty("Expires")
     public Double getExpires() {
         return expires;
     }
@@ -82,7 +79,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-expires
      * 
      */
-    @JsonProperty("Expires")
     public void setExpires(Double expires) {
         this.expires = expires;
     }
@@ -96,7 +92,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public CharSequence getApiId() {
         return apiId;
     }
@@ -105,7 +100,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }

@@ -34,7 +34,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid
      * 
      */
-    @JsonProperty("ReplicaKmsKeyID")
     public CharSequence getReplicaKmsKeyID() {
         return replicaKmsKeyID;
     }
@@ -43,7 +42,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html#cfn-s3-bucket-encryptionconfiguration-replicakmskeyid
      * 
      */
-    @JsonProperty("ReplicaKmsKeyID")
     public void setReplicaKmsKeyID(CharSequence replicaKmsKeyID) {
         this.replicaKmsKeyID = replicaKmsKeyID;
     }

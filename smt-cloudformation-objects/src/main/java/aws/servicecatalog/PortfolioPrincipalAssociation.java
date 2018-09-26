@@ -58,7 +58,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principalarn
      * 
      */
-    @JsonProperty("PrincipalARN")
     public CharSequence getPrincipalARN() {
         return principalARN;
     }
@@ -67,7 +66,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principalarn
      * 
      */
-    @JsonProperty("PrincipalARN")
     public void setPrincipalARN(CharSequence principalARN) {
         this.principalARN = principalARN;
     }
@@ -81,7 +79,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -90,7 +87,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -104,7 +100,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -113,7 +108,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
@@ -127,7 +121,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principaltype
      * 
      */
-    @JsonProperty("PrincipalType")
     public CharSequence getPrincipalType() {
         return principalType;
     }
@@ -136,7 +129,6 @@ public class PortfolioPrincipalAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html#cfn-servicecatalog-portfolioprincipalassociation-principaltype
      * 
      */
-    @JsonProperty("PrincipalType")
     public void setPrincipalType(CharSequence principalType) {
         this.principalType = principalType;
     }

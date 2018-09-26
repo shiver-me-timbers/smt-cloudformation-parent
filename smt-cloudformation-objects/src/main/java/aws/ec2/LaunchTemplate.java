@@ -44,7 +44,6 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
      * 
      */
-    @JsonProperty("LaunchTemplateName")
     public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
@@ -53,7 +52,6 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
      * 
      */
-    @JsonProperty("LaunchTemplateName")
     public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
@@ -69,7 +67,6 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
-    @JsonProperty("LaunchTemplateData")
     public LaunchTemplateData getLaunchTemplateData() {
         return launchTemplateData;
     }
@@ -80,7 +77,6 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
-    @JsonProperty("LaunchTemplateData")
     public void setLaunchTemplateData(LaunchTemplateData launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
     }

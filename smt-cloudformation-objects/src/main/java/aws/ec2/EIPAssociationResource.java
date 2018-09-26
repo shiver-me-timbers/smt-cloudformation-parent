@@ -41,12 +41,26 @@ public class EIPAssociationResource
     private EIPAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EIPAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EIPAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * EIPAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html
      * 
      */
-    @JsonProperty("Properties")
     public EIPAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class EIPAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(EIPAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class EIPAssociationResource
     @Override
     public EIPAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EIPAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

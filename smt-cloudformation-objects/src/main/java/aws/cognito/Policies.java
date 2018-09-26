@@ -38,7 +38,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html
      * 
      */
-    @JsonProperty("PasswordPolicy")
     public PasswordPolicy getPasswordPolicy() {
         return passwordPolicy;
     }
@@ -49,7 +48,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html
      * 
      */
-    @JsonProperty("PasswordPolicy")
     public void setPasswordPolicy(PasswordPolicy passwordPolicy) {
         this.passwordPolicy = passwordPolicy;
     }

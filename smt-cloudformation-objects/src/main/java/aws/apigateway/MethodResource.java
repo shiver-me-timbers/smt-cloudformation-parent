@@ -41,12 +41,26 @@ public class MethodResource
     private Method properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MethodResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MethodResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Method
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
      * 
      */
-    @JsonProperty("Properties")
     public Method getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MethodResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Method properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MethodResource
     @Override
     public MethodResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MethodResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

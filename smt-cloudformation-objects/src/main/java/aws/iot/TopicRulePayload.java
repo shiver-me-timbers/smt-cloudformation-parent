@@ -70,7 +70,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-actions
      * 
      */
-    @JsonProperty("Actions")
     public Set<S3Action> getActions() {
         return actions;
     }
@@ -79,7 +78,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-actions
      * 
      */
-    @JsonProperty("Actions")
     public void setActions(Set<S3Action> actions) {
         this.actions = actions;
     }
@@ -93,7 +91,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-awsiotsqlversion
      * 
      */
-    @JsonProperty("AwsIotSqlVersion")
     public CharSequence getAwsIotSqlVersion() {
         return awsIotSqlVersion;
     }
@@ -102,7 +99,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-awsiotsqlversion
      * 
      */
-    @JsonProperty("AwsIotSqlVersion")
     public void setAwsIotSqlVersion(CharSequence awsIotSqlVersion) {
         this.awsIotSqlVersion = awsIotSqlVersion;
     }
@@ -116,7 +112,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -125,7 +120,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -139,7 +133,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled
      * 
      */
-    @JsonProperty("RuleDisabled")
     public Boolean getRuleDisabled() {
         return ruleDisabled;
     }
@@ -148,7 +141,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled
      * 
      */
-    @JsonProperty("RuleDisabled")
     public void setRuleDisabled(Boolean ruleDisabled) {
         this.ruleDisabled = ruleDisabled;
     }
@@ -162,7 +154,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-sql
      * 
      */
-    @JsonProperty("Sql")
     public CharSequence getSql() {
         return sql;
     }
@@ -171,7 +162,6 @@ public class TopicRulePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-sql
      * 
      */
-    @JsonProperty("Sql")
     public void setSql(CharSequence sql) {
         this.sql = sql;
     }

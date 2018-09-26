@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class UserPoolClientResource
     extends Resource
+    implements HasAttributes<UserPoolClientAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class UserPoolClientResource
     private UserPoolClient properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserPoolClientResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserPoolClientResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UserPoolClient
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
      * 
      */
-    @JsonProperty("Properties")
     public UserPoolClient getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class UserPoolClientResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UserPoolClient properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class UserPoolClientResource
     @Override
     public UserPoolClientResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserPoolClientResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

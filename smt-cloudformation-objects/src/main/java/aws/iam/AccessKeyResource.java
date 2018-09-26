@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class AccessKeyResource
     extends Resource
+    implements HasAttributes<AccessKeyAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class AccessKeyResource
     private AccessKey properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AccessKeyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AccessKeyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * AccessKey
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html
      * 
      */
-    @JsonProperty("Properties")
     public AccessKey getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class AccessKeyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(AccessKey properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class AccessKeyResource
     @Override
     public AccessKeyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AccessKeyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -80,7 +80,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
      * 
      */
-    @JsonProperty("AssumeRolePolicyDocument")
     public AssumeRolePolicyDocument getAssumeRolePolicyDocument() {
         return assumeRolePolicyDocument;
     }
@@ -89,7 +88,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
      * 
      */
-    @JsonProperty("AssumeRolePolicyDocument")
     public void setAssumeRolePolicyDocument(AssumeRolePolicyDocument assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
     }
@@ -103,7 +101,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
@@ -112,7 +109,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
@@ -126,7 +122,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-maxsessionduration
      * 
      */
-    @JsonProperty("MaxSessionDuration")
     public Integer getMaxSessionDuration() {
         return maxSessionDuration;
     }
@@ -135,7 +130,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-maxsessionduration
      * 
      */
-    @JsonProperty("MaxSessionDuration")
     public void setMaxSessionDuration(Integer maxSessionDuration) {
         this.maxSessionDuration = maxSessionDuration;
     }
@@ -149,7 +143,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -158,7 +151,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -172,7 +164,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies
      * 
      */
-    @JsonProperty("Policies")
     public List<Policy> getPolicies() {
         return policies;
     }
@@ -181,7 +172,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies
      * 
      */
-    @JsonProperty("Policies")
     public void setPolicies(List<Policy> policies) {
         this.policies = policies;
     }
@@ -195,7 +185,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename
      * 
      */
-    @JsonProperty("RoleName")
     public CharSequence getRoleName() {
         return roleName;
     }
@@ -204,7 +193,6 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename
      * 
      */
-    @JsonProperty("RoleName")
     public void setRoleName(CharSequence roleName) {
         this.roleName = roleName;
     }

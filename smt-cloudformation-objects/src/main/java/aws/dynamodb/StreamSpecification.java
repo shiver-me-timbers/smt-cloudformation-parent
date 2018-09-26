@@ -34,7 +34,6 @@ public class StreamSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype
      * 
      */
-    @JsonProperty("StreamViewType")
     public CharSequence getStreamViewType() {
         return streamViewType;
     }
@@ -43,7 +42,6 @@ public class StreamSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype
      * 
      */
-    @JsonProperty("StreamViewType")
     public void setStreamViewType(CharSequence streamViewType) {
         this.streamViewType = streamViewType;
     }

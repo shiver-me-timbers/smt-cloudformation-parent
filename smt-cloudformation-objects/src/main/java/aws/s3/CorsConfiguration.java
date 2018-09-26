@@ -38,7 +38,6 @@ public class CorsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule
      * 
      */
-    @JsonProperty("CorsRules")
     public Set<CorsRule> getCorsRules() {
         return corsRules;
     }
@@ -47,7 +46,6 @@ public class CorsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule
      * 
      */
-    @JsonProperty("CorsRules")
     public void setCorsRules(Set<CorsRule> corsRules) {
         this.corsRules = corsRules;
     }

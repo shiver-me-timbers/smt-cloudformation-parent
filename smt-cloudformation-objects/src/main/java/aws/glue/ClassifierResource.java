@@ -41,12 +41,26 @@ public class ClassifierResource
     private Classifier properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClassifierResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClassifierResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Classifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
      * 
      */
-    @JsonProperty("Properties")
     public Classifier getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ClassifierResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Classifier properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ClassifierResource
     @Override
     public ClassifierResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClassifierResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

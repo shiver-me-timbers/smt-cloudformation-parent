@@ -50,7 +50,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition
      * 
      */
-    @JsonProperty("Definition")
     public CharSequence getDefinition() {
         return definition;
     }
@@ -59,7 +58,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition
      * 
      */
-    @JsonProperty("Definition")
     public void setDefinition(CharSequence definition) {
         this.definition = definition;
     }
@@ -73,7 +71,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location
      * 
      */
-    @JsonProperty("DefinitionS3Location")
     public CharSequence getDefinitionS3Location() {
         return definitionS3Location;
     }
@@ -82,7 +79,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location
      * 
      */
-    @JsonProperty("DefinitionS3Location")
     public void setDefinitionS3Location(CharSequence definitionS3Location) {
         this.definitionS3Location = definitionS3Location;
     }
@@ -96,7 +92,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public CharSequence getApiId() {
         return apiId;
     }
@@ -105,7 +100,6 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }

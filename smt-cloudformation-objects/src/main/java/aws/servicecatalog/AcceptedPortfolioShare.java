@@ -42,7 +42,6 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -51,7 +50,6 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -65,7 +63,6 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -74,7 +71,6 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }

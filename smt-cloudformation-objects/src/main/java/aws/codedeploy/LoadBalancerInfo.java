@@ -47,7 +47,6 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist
      * 
      */
-    @JsonProperty("ElbInfoList")
     public Set<ELBInfo> getElbInfoList() {
         return elbInfoList;
     }
@@ -56,7 +55,6 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist
      * 
      */
-    @JsonProperty("ElbInfoList")
     public void setElbInfoList(Set<ELBInfo> elbInfoList) {
         this.elbInfoList = elbInfoList;
     }
@@ -70,7 +68,6 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist
      * 
      */
-    @JsonProperty("TargetGroupInfoList")
     public Set<TargetGroupInfo> getTargetGroupInfoList() {
         return targetGroupInfoList;
     }
@@ -79,7 +76,6 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist
      * 
      */
-    @JsonProperty("TargetGroupInfoList")
     public void setTargetGroupInfoList(Set<TargetGroupInfo> targetGroupInfoList) {
         this.targetGroupInfoList = targetGroupInfoList;
     }

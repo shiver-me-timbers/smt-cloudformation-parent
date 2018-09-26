@@ -58,7 +58,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -67,7 +66,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -81,7 +79,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -90,7 +87,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -104,7 +100,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestbody
      * 
      */
-    @JsonProperty("ValidateRequestBody")
     public Boolean getValidateRequestBody() {
         return validateRequestBody;
     }
@@ -113,7 +108,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestbody
      * 
      */
-    @JsonProperty("ValidateRequestBody")
     public void setValidateRequestBody(Boolean validateRequestBody) {
         this.validateRequestBody = validateRequestBody;
     }
@@ -127,7 +121,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestparameters
      * 
      */
-    @JsonProperty("ValidateRequestParameters")
     public Boolean getValidateRequestParameters() {
         return validateRequestParameters;
     }
@@ -136,7 +129,6 @@ public class RequestValidator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html#cfn-apigateway-requestvalidator-validaterequestparameters
      * 
      */
-    @JsonProperty("ValidateRequestParameters")
     public void setValidateRequestParameters(Boolean validateRequestParameters) {
         this.validateRequestParameters = validateRequestParameters;
     }

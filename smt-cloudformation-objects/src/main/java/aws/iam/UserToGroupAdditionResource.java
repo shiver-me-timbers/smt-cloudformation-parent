@@ -41,12 +41,26 @@ public class UserToGroupAdditionResource
     private UserToGroupAddition properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserToGroupAdditionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserToGroupAdditionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UserToGroupAddition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html
      * 
      */
-    @JsonProperty("Properties")
     public UserToGroupAddition getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class UserToGroupAdditionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UserToGroupAddition properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class UserToGroupAdditionResource
     @Override
     public UserToGroupAdditionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserToGroupAdditionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

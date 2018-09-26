@@ -50,7 +50,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-tablename
      * 
      */
-    @JsonProperty("TableName")
     public CharSequence getTableName() {
         return tableName;
     }
@@ -59,7 +58,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-tablename
      * 
      */
-    @JsonProperty("TableName")
     public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
@@ -73,7 +71,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public CharSequence getAwsRegion() {
         return awsRegion;
     }
@@ -82,7 +79,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
@@ -96,7 +92,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials
      * 
      */
-    @JsonProperty("UseCallerCredentials")
     public Boolean getUseCallerCredentials() {
         return useCallerCredentials;
     }
@@ -105,7 +100,6 @@ public class DynamoDBConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html#cfn-appsync-datasource-dynamodbconfig-usecallercredentials
      * 
      */
-    @JsonProperty("UseCallerCredentials")
     public void setUseCallerCredentials(Boolean useCallerCredentials) {
         this.useCallerCredentials = useCallerCredentials;
     }

@@ -41,12 +41,26 @@ public class TaskDefinitionResource
     private TaskDefinition properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TaskDefinitionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TaskDefinitionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TaskDefinition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
      * 
      */
-    @JsonProperty("Properties")
     public TaskDefinition getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TaskDefinitionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TaskDefinition properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TaskDefinitionResource
     @Override
     public TaskDefinitionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TaskDefinitionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

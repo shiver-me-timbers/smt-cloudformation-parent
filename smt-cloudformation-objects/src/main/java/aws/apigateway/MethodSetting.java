@@ -106,7 +106,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachedataencrypted
      * 
      */
-    @JsonProperty("CacheDataEncrypted")
     public Boolean getCacheDataEncrypted() {
         return cacheDataEncrypted;
     }
@@ -115,7 +114,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachedataencrypted
      * 
      */
-    @JsonProperty("CacheDataEncrypted")
     public void setCacheDataEncrypted(Boolean cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
     }
@@ -129,7 +127,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachettlinseconds
      * 
      */
-    @JsonProperty("CacheTtlInSeconds")
     public Integer getCacheTtlInSeconds() {
         return cacheTtlInSeconds;
     }
@@ -138,7 +135,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachettlinseconds
      * 
      */
-    @JsonProperty("CacheTtlInSeconds")
     public void setCacheTtlInSeconds(Integer cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
     }
@@ -152,7 +148,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachingenabled
      * 
      */
-    @JsonProperty("CachingEnabled")
     public Boolean getCachingEnabled() {
         return cachingEnabled;
     }
@@ -161,7 +156,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachingenabled
      * 
      */
-    @JsonProperty("CachingEnabled")
     public void setCachingEnabled(Boolean cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
     }
@@ -175,7 +169,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-datatraceenabled
      * 
      */
-    @JsonProperty("DataTraceEnabled")
     public Boolean getDataTraceEnabled() {
         return dataTraceEnabled;
     }
@@ -184,7 +177,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-datatraceenabled
      * 
      */
-    @JsonProperty("DataTraceEnabled")
     public void setDataTraceEnabled(Boolean dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
     }
@@ -198,7 +190,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-httpmethod
      * 
      */
-    @JsonProperty("HttpMethod")
     public CharSequence getHttpMethod() {
         return httpMethod;
     }
@@ -207,7 +198,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-httpmethod
      * 
      */
-    @JsonProperty("HttpMethod")
     public void setHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
     }
@@ -221,7 +211,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-logginglevel
      * 
      */
-    @JsonProperty("LoggingLevel")
     public CharSequence getLoggingLevel() {
         return loggingLevel;
     }
@@ -230,7 +219,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-logginglevel
      * 
      */
-    @JsonProperty("LoggingLevel")
     public void setLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
     }
@@ -244,7 +232,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-metricsenabled
      * 
      */
-    @JsonProperty("MetricsEnabled")
     public Boolean getMetricsEnabled() {
         return metricsEnabled;
     }
@@ -253,7 +240,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-metricsenabled
      * 
      */
-    @JsonProperty("MetricsEnabled")
     public void setMetricsEnabled(Boolean metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
     }
@@ -267,7 +253,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-resourcepath
      * 
      */
-    @JsonProperty("ResourcePath")
     public CharSequence getResourcePath() {
         return resourcePath;
     }
@@ -276,7 +261,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-resourcepath
      * 
      */
-    @JsonProperty("ResourcePath")
     public void setResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
     }
@@ -290,7 +274,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-throttlingburstlimit
      * 
      */
-    @JsonProperty("ThrottlingBurstLimit")
     public Integer getThrottlingBurstLimit() {
         return throttlingBurstLimit;
     }
@@ -299,7 +282,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-throttlingburstlimit
      * 
      */
-    @JsonProperty("ThrottlingBurstLimit")
     public void setThrottlingBurstLimit(Integer throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
     }
@@ -313,7 +295,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-throttlingratelimit
      * 
      */
-    @JsonProperty("ThrottlingRateLimit")
     public Double getThrottlingRateLimit() {
         return throttlingRateLimit;
     }
@@ -322,7 +303,6 @@ public class MethodSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-throttlingratelimit
      * 
      */
-    @JsonProperty("ThrottlingRateLimit")
     public void setThrottlingRateLimit(Double throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
     }

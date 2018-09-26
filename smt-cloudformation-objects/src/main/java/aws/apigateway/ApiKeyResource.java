@@ -41,12 +41,26 @@ public class ApiKeyResource
     private ApiKey properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ApiKeyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ApiKeyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ApiKey
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
      * 
      */
-    @JsonProperty("Properties")
     public ApiKey getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ApiKeyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ApiKey properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ApiKeyResource
     @Override
     public ApiKeyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ApiKeyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

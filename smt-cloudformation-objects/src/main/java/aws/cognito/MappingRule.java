@@ -58,7 +58,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype
      * 
      */
-    @JsonProperty("MatchType")
     public CharSequence getMatchType() {
         return matchType;
     }
@@ -67,7 +66,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype
      * 
      */
-    @JsonProperty("MatchType")
     public void setMatchType(CharSequence matchType) {
         this.matchType = matchType;
     }
@@ -81,7 +79,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -90,7 +87,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }
@@ -104,7 +100,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-claim
      * 
      */
-    @JsonProperty("Claim")
     public CharSequence getClaim() {
         return claim;
     }
@@ -113,7 +108,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-claim
      * 
      */
-    @JsonProperty("Claim")
     public void setClaim(CharSequence claim) {
         this.claim = claim;
     }
@@ -127,7 +121,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -136,7 +129,6 @@ public class MappingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

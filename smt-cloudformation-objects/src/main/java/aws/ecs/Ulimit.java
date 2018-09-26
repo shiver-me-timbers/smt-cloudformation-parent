@@ -50,7 +50,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-hardlimit
      * 
      */
-    @JsonProperty("HardLimit")
     public Integer getHardLimit() {
         return hardLimit;
     }
@@ -59,7 +58,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-hardlimit
      * 
      */
-    @JsonProperty("HardLimit")
     public void setHardLimit(Integer hardLimit) {
         this.hardLimit = hardLimit;
     }
@@ -73,7 +71,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -82,7 +79,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -96,7 +92,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-softlimit
      * 
      */
-    @JsonProperty("SoftLimit")
     public Integer getSoftLimit() {
         return softLimit;
     }
@@ -105,7 +100,6 @@ public class Ulimit {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html#cfn-ecs-taskdefinition-containerdefinition-ulimit-softlimit
      * 
      */
-    @JsonProperty("SoftLimit")
     public void setSoftLimit(Integer softLimit) {
         this.softLimit = softLimit;
     }

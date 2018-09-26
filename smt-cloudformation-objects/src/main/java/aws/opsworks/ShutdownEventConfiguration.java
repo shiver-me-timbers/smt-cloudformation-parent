@@ -42,7 +42,6 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
      * 
      */
-    @JsonProperty("DelayUntilElbConnectionsDrained")
     public Boolean getDelayUntilElbConnectionsDrained() {
         return delayUntilElbConnectionsDrained;
     }
@@ -51,7 +50,6 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
      * 
      */
-    @JsonProperty("DelayUntilElbConnectionsDrained")
     public void setDelayUntilElbConnectionsDrained(Boolean delayUntilElbConnectionsDrained) {
         this.delayUntilElbConnectionsDrained = delayUntilElbConnectionsDrained;
     }
@@ -65,7 +63,6 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
      * 
      */
-    @JsonProperty("ExecutionTimeout")
     public Integer getExecutionTimeout() {
         return executionTimeout;
     }
@@ -74,7 +71,6 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
      * 
      */
-    @JsonProperty("ExecutionTimeout")
     public void setExecutionTimeout(Integer executionTimeout) {
         this.executionTimeout = executionTimeout;
     }

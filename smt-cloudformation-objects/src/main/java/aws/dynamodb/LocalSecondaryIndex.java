@@ -56,7 +56,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
      * 
      */
-    @JsonProperty("IndexName")
     public CharSequence getIndexName() {
         return indexName;
     }
@@ -65,7 +64,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
      * 
      */
-    @JsonProperty("IndexName")
     public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
@@ -79,7 +77,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public Set<KeySchema> getKeySchema() {
         return keySchema;
     }
@@ -88,7 +85,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public void setKeySchema(Set<KeySchema> keySchema) {
         this.keySchema = keySchema;
     }
@@ -104,7 +100,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
-    @JsonProperty("Projection")
     public Projection getProjection() {
         return projection;
     }
@@ -115,7 +110,6 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
-    @JsonProperty("Projection")
     public void setProjection(Projection projection) {
         this.projection = projection;
     }

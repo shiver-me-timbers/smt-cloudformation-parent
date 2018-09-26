@@ -41,12 +41,26 @@ public class SpotFleetResource
     private SpotFleet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SpotFleetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SpotFleetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SpotFleet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html
      * 
      */
-    @JsonProperty("Properties")
     public SpotFleet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SpotFleetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SpotFleet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SpotFleetResource
     @Override
     public SpotFleetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SpotFleetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

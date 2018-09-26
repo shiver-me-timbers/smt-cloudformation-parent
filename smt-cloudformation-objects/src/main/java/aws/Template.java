@@ -27,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Resources",
     "Outputs"
 })
-public class Template {
+public class Template implements HasOutputs<Template, Output> , HasParameters<Template, Parameter> , HasResources<Template, Resource>
+{
 
     @JsonProperty("AWSTemplateFormatVersion")
     private java.lang.String aWSTemplateFormatVersion = "2010-09-09";
@@ -46,12 +47,10 @@ public class Template {
     @JsonProperty("Outputs")
     private Map<String, Output> outputs;
 
-    @JsonProperty("AWSTemplateFormatVersion")
     public java.lang.String getAWSTemplateFormatVersion() {
         return aWSTemplateFormatVersion;
     }
 
-    @JsonProperty("AWSTemplateFormatVersion")
     public void setAWSTemplateFormatVersion(java.lang.String aWSTemplateFormatVersion) {
         this.aWSTemplateFormatVersion = aWSTemplateFormatVersion;
     }
@@ -61,12 +60,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Description")
     public java.lang.String getDescription() {
         return description;
     }
 
-    @JsonProperty("Description")
     public void setDescription(java.lang.String description) {
         this.description = description;
     }
@@ -76,12 +73,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Metadata")
     public Map<String, Object> getMetadata() {
         return metadata;
     }
 
-    @JsonProperty("Metadata")
     public void setMetadata(Map<String, Object> metadata) {
         this.metadata = metadata;
     }
@@ -91,12 +86,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Parameters")
     public Map<String, Parameter> getParameters() {
         return parameters;
     }
 
-    @JsonProperty("Parameters")
     public void setParameters(Map<String, Parameter> parameters) {
         this.parameters = parameters;
     }
@@ -106,12 +99,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Mappings")
     public Map<String, Map<String, Map<String, String>>> getMappings() {
         return mappings;
     }
 
-    @JsonProperty("Mappings")
     public void setMappings(Map<String, Map<String, Map<String, String>>> mappings) {
         this.mappings = mappings;
     }
@@ -121,12 +112,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Conditions")
     public Map<String, Object> getConditions() {
         return conditions;
     }
 
-    @JsonProperty("Conditions")
     public void setConditions(Map<String, Object> conditions) {
         this.conditions = conditions;
     }
@@ -136,12 +125,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Resources")
     public Map<String, Resource> getResources() {
         return resources;
     }
 
-    @JsonProperty("Resources")
     public void setResources(Map<String, Resource> resources) {
         this.resources = resources;
     }
@@ -151,12 +138,10 @@ public class Template {
         return this;
     }
 
-    @JsonProperty("Outputs")
     public Map<String, Output> getOutputs() {
         return outputs;
     }
 
-    @JsonProperty("Outputs")
     public void setOutputs(Map<String, Output> outputs) {
         this.outputs = outputs;
     }

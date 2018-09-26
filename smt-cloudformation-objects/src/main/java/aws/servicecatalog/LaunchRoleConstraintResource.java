@@ -41,12 +41,26 @@ public class LaunchRoleConstraintResource
     private LaunchRoleConstraint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LaunchRoleConstraintResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LaunchRoleConstraintResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LaunchRoleConstraint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public LaunchRoleConstraint getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LaunchRoleConstraintResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LaunchRoleConstraint properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LaunchRoleConstraintResource
     @Override
     public LaunchRoleConstraintResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LaunchRoleConstraintResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

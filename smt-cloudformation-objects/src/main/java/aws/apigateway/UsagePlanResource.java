@@ -41,12 +41,26 @@ public class UsagePlanResource
     private UsagePlan properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UsagePlanResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UsagePlanResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UsagePlan
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html
      * 
      */
-    @JsonProperty("Properties")
     public UsagePlan getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class UsagePlanResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UsagePlan properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class UsagePlanResource
     @Override
     public UsagePlanResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UsagePlanResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

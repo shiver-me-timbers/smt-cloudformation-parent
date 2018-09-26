@@ -42,7 +42,6 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
@@ -51,7 +50,6 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
@@ -65,7 +63,6 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -74,7 +71,6 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }

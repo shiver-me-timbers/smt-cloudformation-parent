@@ -42,7 +42,6 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason
      * 
      */
-    @JsonProperty("Reason")
     public CharSequence getReason() {
         return reason;
     }
@@ -51,7 +50,6 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason
      * 
      */
-    @JsonProperty("Reason")
     public void setReason(CharSequence reason) {
         this.reason = reason;
     }
@@ -65,7 +63,6 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename
      * 
      */
-    @JsonProperty("StageName")
     public CharSequence getStageName() {
         return stageName;
     }
@@ -74,7 +71,6 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename
      * 
      */
-    @JsonProperty("StageName")
     public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }

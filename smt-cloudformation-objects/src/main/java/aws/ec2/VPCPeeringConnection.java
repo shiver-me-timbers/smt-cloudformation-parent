@@ -77,7 +77,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid
      * 
      */
-    @JsonProperty("PeerOwnerId")
     public CharSequence getPeerOwnerId() {
         return peerOwnerId;
     }
@@ -86,7 +85,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid
      * 
      */
-    @JsonProperty("PeerOwnerId")
     public void setPeerOwnerId(CharSequence peerOwnerId) {
         this.peerOwnerId = peerOwnerId;
     }
@@ -100,7 +98,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion
      * 
      */
-    @JsonProperty("PeerRegion")
     public CharSequence getPeerRegion() {
         return peerRegion;
     }
@@ -109,7 +106,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion
      * 
      */
-    @JsonProperty("PeerRegion")
     public void setPeerRegion(CharSequence peerRegion) {
         this.peerRegion = peerRegion;
     }
@@ -123,7 +119,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn
      * 
      */
-    @JsonProperty("PeerRoleArn")
     public CharSequence getPeerRoleArn() {
         return peerRoleArn;
     }
@@ -132,7 +127,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn
      * 
      */
-    @JsonProperty("PeerRoleArn")
     public void setPeerRoleArn(CharSequence peerRoleArn) {
         this.peerRoleArn = peerRoleArn;
     }
@@ -146,7 +140,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid
      * 
      */
-    @JsonProperty("PeerVpcId")
     public CharSequence getPeerVpcId() {
         return peerVpcId;
     }
@@ -155,7 +148,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid
      * 
      */
-    @JsonProperty("PeerVpcId")
     public void setPeerVpcId(CharSequence peerVpcId) {
         this.peerVpcId = peerVpcId;
     }
@@ -169,7 +161,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -178,7 +169,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -192,7 +182,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -201,7 +190,6 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

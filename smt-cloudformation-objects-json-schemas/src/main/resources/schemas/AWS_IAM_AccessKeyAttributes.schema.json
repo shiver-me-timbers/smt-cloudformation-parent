@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IAM_AccessKeyAttributes.schema.json",
+  "title" : "AccessKeyAttributes",
+  "type" : "string",
+  "enum" : [ "SecretAccessKey" ],
+  "javaType" : "aws.iam.AccessKeyAttributes"
+}

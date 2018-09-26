@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFormation_WaitConditionResource.schema.json",
+  "title" : "WaitConditionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cloudformation.WaitConditionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<WaitConditionAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CloudFormation_WaitCondition.schema.json"
+    }
+  }
+}

@@ -41,12 +41,26 @@ public class FlowLogResource
     private FlowLog properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FlowLogResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public FlowLogResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * FlowLog
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
      * 
      */
-    @JsonProperty("Properties")
     public FlowLog getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class FlowLogResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(FlowLog properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class FlowLogResource
     @Override
     public FlowLogResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public FlowLogResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

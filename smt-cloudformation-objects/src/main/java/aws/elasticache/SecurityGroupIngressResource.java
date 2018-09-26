@@ -41,12 +41,26 @@ public class SecurityGroupIngressResource
     private SecurityGroupIngress properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SecurityGroupIngressResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SecurityGroupIngressResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SecurityGroupIngress
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html
      * 
      */
-    @JsonProperty("Properties")
     public SecurityGroupIngress getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SecurityGroupIngressResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SecurityGroupIngress properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SecurityGroupIngressResource
     @Override
     public SecurityGroupIngressResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SecurityGroupIngressResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

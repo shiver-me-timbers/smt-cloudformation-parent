@@ -58,7 +58,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-appidclientregex
      * 
      */
-    @JsonProperty("AppIdClientRegex")
     public CharSequence getAppIdClientRegex() {
         return appIdClientRegex;
     }
@@ -67,7 +66,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-appidclientregex
      * 
      */
-    @JsonProperty("AppIdClientRegex")
     public void setAppIdClientRegex(CharSequence appIdClientRegex) {
         this.appIdClientRegex = appIdClientRegex;
     }
@@ -81,7 +79,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-userpoolid
      * 
      */
-    @JsonProperty("UserPoolId")
     public CharSequence getUserPoolId() {
         return userPoolId;
     }
@@ -90,7 +87,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-userpoolid
      * 
      */
-    @JsonProperty("UserPoolId")
     public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
@@ -104,7 +100,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public CharSequence getAwsRegion() {
         return awsRegion;
     }
@@ -113,7 +108,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
@@ -127,7 +121,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-defaultaction
      * 
      */
-    @JsonProperty("DefaultAction")
     public CharSequence getDefaultAction() {
         return defaultAction;
     }
@@ -136,7 +129,6 @@ public class UserPoolConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-defaultaction
      * 
      */
-    @JsonProperty("DefaultAction")
     public void setDefaultAction(CharSequence defaultAction) {
         this.defaultAction = defaultAction;
     }

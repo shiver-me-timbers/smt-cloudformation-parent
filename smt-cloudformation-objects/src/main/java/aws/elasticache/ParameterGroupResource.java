@@ -41,12 +41,26 @@ public class ParameterGroupResource
     private ParameterGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ParameterGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ParameterGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ParameterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html
      * 
      */
-    @JsonProperty("Properties")
     public ParameterGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ParameterGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ParameterGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ParameterGroupResource
     @Override
     public ParameterGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ParameterGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -90,7 +90,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge
      * 
      */
-    @JsonProperty("CreateAuthChallenge")
     public CharSequence getCreateAuthChallenge() {
         return createAuthChallenge;
     }
@@ -99,7 +98,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge
      * 
      */
-    @JsonProperty("CreateAuthChallenge")
     public void setCreateAuthChallenge(CharSequence createAuthChallenge) {
         this.createAuthChallenge = createAuthChallenge;
     }
@@ -113,7 +111,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication
      * 
      */
-    @JsonProperty("PreAuthentication")
     public CharSequence getPreAuthentication() {
         return preAuthentication;
     }
@@ -122,7 +119,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication
      * 
      */
-    @JsonProperty("PreAuthentication")
     public void setPreAuthentication(CharSequence preAuthentication) {
         this.preAuthentication = preAuthentication;
     }
@@ -136,7 +132,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge
      * 
      */
-    @JsonProperty("DefineAuthChallenge")
     public CharSequence getDefineAuthChallenge() {
         return defineAuthChallenge;
     }
@@ -145,7 +140,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge
      * 
      */
-    @JsonProperty("DefineAuthChallenge")
     public void setDefineAuthChallenge(CharSequence defineAuthChallenge) {
         this.defineAuthChallenge = defineAuthChallenge;
     }
@@ -159,7 +153,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup
      * 
      */
-    @JsonProperty("PreSignUp")
     public CharSequence getPreSignUp() {
         return preSignUp;
     }
@@ -168,7 +161,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup
      * 
      */
-    @JsonProperty("PreSignUp")
     public void setPreSignUp(CharSequence preSignUp) {
         this.preSignUp = preSignUp;
     }
@@ -182,7 +174,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
-    @JsonProperty("PostAuthentication")
     public CharSequence getPostAuthentication() {
         return postAuthentication;
     }
@@ -191,7 +182,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
-    @JsonProperty("PostAuthentication")
     public void setPostAuthentication(CharSequence postAuthentication) {
         this.postAuthentication = postAuthentication;
     }
@@ -205,7 +195,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation
      * 
      */
-    @JsonProperty("PostConfirmation")
     public CharSequence getPostConfirmation() {
         return postConfirmation;
     }
@@ -214,7 +203,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation
      * 
      */
-    @JsonProperty("PostConfirmation")
     public void setPostConfirmation(CharSequence postConfirmation) {
         this.postConfirmation = postConfirmation;
     }
@@ -228,7 +216,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage
      * 
      */
-    @JsonProperty("CustomMessage")
     public CharSequence getCustomMessage() {
         return customMessage;
     }
@@ -237,7 +224,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage
      * 
      */
-    @JsonProperty("CustomMessage")
     public void setCustomMessage(CharSequence customMessage) {
         this.customMessage = customMessage;
     }
@@ -251,7 +237,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse
      * 
      */
-    @JsonProperty("VerifyAuthChallengeResponse")
     public CharSequence getVerifyAuthChallengeResponse() {
         return verifyAuthChallengeResponse;
     }
@@ -260,7 +245,6 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse
      * 
      */
-    @JsonProperty("VerifyAuthChallengeResponse")
     public void setVerifyAuthChallengeResponse(CharSequence verifyAuthChallengeResponse) {
         this.verifyAuthChallengeResponse = verifyAuthChallengeResponse;
     }

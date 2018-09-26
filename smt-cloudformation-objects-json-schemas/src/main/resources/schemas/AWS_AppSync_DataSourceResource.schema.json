@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_DataSourceResource.schema.json",
+  "title" : "DataSourceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appsync.DataSourceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DataSourceAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_AppSync_DataSource.schema.json"
+    }
+  }
+}

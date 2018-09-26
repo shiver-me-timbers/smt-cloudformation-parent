@@ -58,7 +58,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
      * 
      */
-    @JsonProperty("Category")
     public CharSequence getCategory() {
         return category;
     }
@@ -67,7 +66,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category
      * 
      */
-    @JsonProperty("Category")
     public void setCategory(CharSequence category) {
         this.category = category;
     }
@@ -81,7 +79,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
      * 
      */
-    @JsonProperty("Owner")
     public CharSequence getOwner() {
         return owner;
     }
@@ -90,7 +87,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-owner
      * 
      */
-    @JsonProperty("Owner")
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
@@ -104,7 +100,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
      * 
      */
-    @JsonProperty("Provider")
     public CharSequence getProvider() {
         return provider;
     }
@@ -113,7 +108,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-provider
      * 
      */
-    @JsonProperty("Provider")
     public void setProvider(CharSequence provider) {
         this.provider = provider;
     }
@@ -127,7 +121,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
      * 
      */
-    @JsonProperty("Version")
     public CharSequence getVersion() {
         return version;
     }
@@ -136,7 +129,6 @@ public class ActionTypeId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-version
      * 
      */
-    @JsonProperty("Version")
     public void setVersion(CharSequence version) {
         this.version = version;
     }

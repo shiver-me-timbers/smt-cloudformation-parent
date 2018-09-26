@@ -49,7 +49,6 @@ public class StreamingDistribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html
      * 
      */
-    @JsonProperty("StreamingDistributionConfig")
     public StreamingDistributionConfig getStreamingDistributionConfig() {
         return streamingDistributionConfig;
     }
@@ -60,7 +59,6 @@ public class StreamingDistribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html
      * 
      */
-    @JsonProperty("StreamingDistributionConfig")
     public void setStreamingDistributionConfig(StreamingDistributionConfig streamingDistributionConfig) {
         this.streamingDistributionConfig = streamingDistributionConfig;
     }
@@ -74,7 +72,6 @@ public class StreamingDistribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -83,7 +80,6 @@ public class StreamingDistribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

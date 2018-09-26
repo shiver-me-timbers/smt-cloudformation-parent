@@ -50,7 +50,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname
      * 
      */
-    @JsonProperty("DNSName")
     public CharSequence getDNSName() {
         return dNSName;
     }
@@ -59,7 +58,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname
      * 
      */
-    @JsonProperty("DNSName")
     public void setDNSName(CharSequence dNSName) {
         this.dNSName = dNSName;
     }
@@ -73,7 +71,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth
      * 
      */
-    @JsonProperty("EvaluateTargetHealth")
     public Boolean getEvaluateTargetHealth() {
         return evaluateTargetHealth;
     }
@@ -82,7 +79,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth
      * 
      */
-    @JsonProperty("EvaluateTargetHealth")
     public void setEvaluateTargetHealth(Boolean evaluateTargetHealth) {
         this.evaluateTargetHealth = evaluateTargetHealth;
     }
@@ -96,7 +92,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid
      * 
      */
-    @JsonProperty("HostedZoneId")
     public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
@@ -105,7 +100,6 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid
      * 
      */
-    @JsonProperty("HostedZoneId")
     public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }

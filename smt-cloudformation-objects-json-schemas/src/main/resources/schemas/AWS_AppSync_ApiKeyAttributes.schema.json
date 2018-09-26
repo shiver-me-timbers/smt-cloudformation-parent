@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_ApiKeyAttributes.schema.json",
+  "title" : "ApiKeyAttributes",
+  "type" : "string",
+  "enum" : [ "ApiKey", "Arn" ],
+  "javaType" : "aws.appsync.ApiKeyAttributes"
+}

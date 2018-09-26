@@ -46,7 +46,6 @@ public class ProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -55,7 +54,6 @@ public class ProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -69,7 +67,6 @@ public class ProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors
      * 
      */
-    @JsonProperty("Processors")
     public Set<Processor> getProcessors() {
         return processors;
     }
@@ -78,7 +75,6 @@ public class ProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors
      * 
      */
-    @JsonProperty("Processors")
     public void setProcessors(Set<Processor> processors) {
         this.processors = processors;
     }

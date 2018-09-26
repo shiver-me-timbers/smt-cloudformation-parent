@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SubnetNetworkAclAssociationResource.schema.json",
+  "title" : "SubnetNetworkAclAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.SubnetNetworkAclAssociationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_SubnetNetworkAclAssociation.schema.json"
+    }
+  }
+}

@@ -58,7 +58,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-alarmname
      * 
      */
-    @JsonProperty("AlarmName")
     public CharSequence getAlarmName() {
         return alarmName;
     }
@@ -67,7 +66,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-alarmname
      * 
      */
-    @JsonProperty("AlarmName")
     public void setAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
     }
@@ -81,7 +79,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -90,7 +87,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -104,7 +100,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statereason
      * 
      */
-    @JsonProperty("StateReason")
     public CharSequence getStateReason() {
         return stateReason;
     }
@@ -113,7 +108,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statereason
      * 
      */
-    @JsonProperty("StateReason")
     public void setStateReason(CharSequence stateReason) {
         this.stateReason = stateReason;
     }
@@ -127,7 +121,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statevalue
      * 
      */
-    @JsonProperty("StateValue")
     public CharSequence getStateValue() {
         return stateValue;
     }
@@ -136,7 +129,6 @@ public class CloudwatchAlarmAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html#cfn-iot-topicrule-cloudwatchalarmaction-statevalue
      * 
      */
-    @JsonProperty("StateValue")
     public void setStateValue(CharSequence stateValue) {
         this.stateValue = stateValue;
     }

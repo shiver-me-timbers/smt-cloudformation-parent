@@ -50,7 +50,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-autoplacement
      * 
      */
-    @JsonProperty("AutoPlacement")
     public CharSequence getAutoPlacement() {
         return autoPlacement;
     }
@@ -59,7 +58,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-autoplacement
      * 
      */
-    @JsonProperty("AutoPlacement")
     public void setAutoPlacement(CharSequence autoPlacement) {
         this.autoPlacement = autoPlacement;
     }
@@ -73,7 +71,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -82,7 +79,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -96,7 +92,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -105,7 +100,6 @@ public class Host {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }

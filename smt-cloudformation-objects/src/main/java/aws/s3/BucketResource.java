@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class BucketResource
     extends Resource
+    implements HasAttributes<BucketAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class BucketResource
     private Bucket properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BucketResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BucketResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Bucket
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
      * 
      */
-    @JsonProperty("Properties")
     public Bucket getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class BucketResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Bucket properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class BucketResource
     @Override
     public BucketResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BucketResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

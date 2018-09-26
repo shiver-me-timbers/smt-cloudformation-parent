@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EIPAttributes.schema.json",
+  "title" : "EIPAttributes",
+  "type" : "string",
+  "enum" : [ "AllocationId" ],
+  "javaType" : "aws.ec2.EIPAttributes"
+}

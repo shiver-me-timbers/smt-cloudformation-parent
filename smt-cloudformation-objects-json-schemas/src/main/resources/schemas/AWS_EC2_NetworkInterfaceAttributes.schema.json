@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_NetworkInterfaceAttributes.schema.json",
+  "title" : "NetworkInterfaceAttributes",
+  "type" : "string",
+  "enum" : [ "PrimaryPrivateIpAddress", "SecondaryPrivateIpAddresses" ],
+  "javaType" : "aws.ec2.NetworkInterfaceAttributes"
+}

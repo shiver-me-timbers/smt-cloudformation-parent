@@ -44,7 +44,6 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals
      * 
      */
-    @JsonProperty("AllowedPrincipals")
     public List<CharSequence> getAllowedPrincipals() {
         return allowedPrincipals;
     }
@@ -53,7 +52,6 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals
      * 
      */
-    @JsonProperty("AllowedPrincipals")
     public void setAllowedPrincipals(List<CharSequence> allowedPrincipals) {
         this.allowedPrincipals = allowedPrincipals;
     }
@@ -67,7 +65,6 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid
      * 
      */
-    @JsonProperty("ServiceId")
     public CharSequence getServiceId() {
         return serviceId;
     }
@@ -76,7 +73,6 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid
      * 
      */
-    @JsonProperty("ServiceId")
     public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }

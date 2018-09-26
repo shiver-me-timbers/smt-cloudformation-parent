@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class IdentityPoolResource
     extends Resource
+    implements HasAttributes<IdentityPoolAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class IdentityPoolResource
     private IdentityPool properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public IdentityPoolResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public IdentityPoolResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * IdentityPool
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
      * 
      */
-    @JsonProperty("Properties")
     public IdentityPool getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class IdentityPoolResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(IdentityPool properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class IdentityPoolResource
     @Override
     public IdentityPoolResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public IdentityPoolResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

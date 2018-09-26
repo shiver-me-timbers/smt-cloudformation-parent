@@ -50,7 +50,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
-    @JsonProperty("RoleMappings")
     public RoleMappings getRoleMappings() {
         return roleMappings;
     }
@@ -59,7 +58,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
-    @JsonProperty("RoleMappings")
     public void setRoleMappings(RoleMappings roleMappings) {
         this.roleMappings = roleMappings;
     }
@@ -73,7 +71,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid
      * 
      */
-    @JsonProperty("IdentityPoolId")
     public CharSequence getIdentityPoolId() {
         return identityPoolId;
     }
@@ -82,7 +79,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid
      * 
      */
-    @JsonProperty("IdentityPoolId")
     public void setIdentityPoolId(CharSequence identityPoolId) {
         this.identityPoolId = identityPoolId;
     }
@@ -96,7 +92,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
-    @JsonProperty("Roles")
     public Roles getRoles() {
         return roles;
     }
@@ -105,7 +100,6 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
-    @JsonProperty("Roles")
     public void setRoles(Roles roles) {
         this.roles = roles;
     }

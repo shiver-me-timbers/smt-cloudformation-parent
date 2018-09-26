@@ -42,7 +42,6 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public CharSequence getAwsRegion() {
         return awsRegion;
     }
@@ -51,7 +50,6 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion
      * 
      */
-    @JsonProperty("AwsRegion")
     public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
@@ -65,7 +63,6 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public CharSequence getEndpoint() {
         return endpoint;
     }
@@ -74,7 +71,6 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }

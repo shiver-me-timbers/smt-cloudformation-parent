@@ -42,7 +42,6 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code
      * 
      */
-    @JsonProperty("Code")
     public Integer getCode() {
         return code;
     }
@@ -51,7 +50,6 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code
      * 
      */
-    @JsonProperty("Code")
     public void setCode(Integer code) {
         this.code = code;
     }
@@ -65,7 +63,6 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type
      * 
      */
-    @JsonProperty("Type")
     public Integer getType() {
         return type;
     }
@@ -74,7 +71,6 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(Integer type) {
         this.type = type;
     }

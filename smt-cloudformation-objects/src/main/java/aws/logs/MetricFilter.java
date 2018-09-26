@@ -54,7 +54,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
      * 
      */
-    @JsonProperty("FilterPattern")
     public CharSequence getFilterPattern() {
         return filterPattern;
     }
@@ -63,7 +62,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
      * 
      */
-    @JsonProperty("FilterPattern")
     public void setFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
     }
@@ -77,7 +75,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -86,7 +83,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -100,7 +96,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations
      * 
      */
-    @JsonProperty("MetricTransformations")
     public Set<MetricTransformation> getMetricTransformations() {
         return metricTransformations;
     }
@@ -109,7 +104,6 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations
      * 
      */
-    @JsonProperty("MetricTransformations")
     public void setMetricTransformations(Set<MetricTransformation> metricTransformations) {
         this.metricTransformations = metricTransformations;
     }

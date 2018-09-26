@@ -50,7 +50,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplateid
      * 
      */
-    @JsonProperty("LaunchTemplateId")
     public CharSequence getLaunchTemplateId() {
         return launchTemplateId;
     }
@@ -59,7 +58,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplateid
      * 
      */
-    @JsonProperty("LaunchTemplateId")
     public void setLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
     }
@@ -73,7 +71,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplatename
      * 
      */
-    @JsonProperty("LaunchTemplateName")
     public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
@@ -82,7 +79,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-launchtemplatename
      * 
      */
-    @JsonProperty("LaunchTemplateName")
     public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
@@ -96,7 +92,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-version
      * 
      */
-    @JsonProperty("Version")
     public CharSequence getVersion() {
         return version;
     }
@@ -105,7 +100,6 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-launchtemplatespecification.html#cfn-ec2-instance-launchtemplatespecification-version
      * 
      */
-    @JsonProperty("Version")
     public void setVersion(CharSequence version) {
         this.version = version;
     }

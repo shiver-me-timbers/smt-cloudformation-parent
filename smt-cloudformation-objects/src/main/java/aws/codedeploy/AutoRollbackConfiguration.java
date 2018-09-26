@@ -46,7 +46,6 @@ public class AutoRollbackConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -55,7 +54,6 @@ public class AutoRollbackConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -69,7 +67,6 @@ public class AutoRollbackConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events
      * 
      */
-    @JsonProperty("Events")
     public Set<CharSequence> getEvents() {
         return events;
     }
@@ -78,7 +75,6 @@ public class AutoRollbackConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-events
      * 
      */
-    @JsonProperty("Events")
     public void setEvents(Set<CharSequence> events) {
         this.events = events;
     }

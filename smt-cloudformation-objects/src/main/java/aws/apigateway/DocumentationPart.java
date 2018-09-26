@@ -54,7 +54,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
-    @JsonProperty("Location")
     public Location getLocation() {
         return location;
     }
@@ -65,7 +64,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
-    @JsonProperty("Location")
     public void setLocation(Location location) {
         this.location = location;
     }
@@ -79,7 +77,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
      */
-    @JsonProperty("Properties")
     public CharSequence getProperties() {
         return properties;
     }
@@ -88,7 +85,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CharSequence properties) {
         this.properties = properties;
     }
@@ -102,7 +98,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -111,7 +106,6 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }

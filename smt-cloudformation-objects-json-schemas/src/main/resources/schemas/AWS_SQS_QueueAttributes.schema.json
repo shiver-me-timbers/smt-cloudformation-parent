@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SQS_QueueAttributes.schema.json",
+  "title" : "QueueAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "QueueName" ],
+  "javaType" : "aws.sqs.QueueAttributes"
+}

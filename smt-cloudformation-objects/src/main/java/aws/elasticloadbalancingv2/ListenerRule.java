@@ -63,7 +63,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-actions
      * 
      */
-    @JsonProperty("Actions")
     public Set<Action> getActions() {
         return actions;
     }
@@ -72,7 +71,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-actions
      * 
      */
-    @JsonProperty("Actions")
     public void setActions(Set<Action> actions) {
         this.actions = actions;
     }
@@ -86,7 +84,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-conditions
      * 
      */
-    @JsonProperty("Conditions")
     public Set<RuleCondition> getConditions() {
         return conditions;
     }
@@ -95,7 +92,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-conditions
      * 
      */
-    @JsonProperty("Conditions")
     public void setConditions(Set<RuleCondition> conditions) {
         this.conditions = conditions;
     }
@@ -109,7 +105,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-listenerarn
      * 
      */
-    @JsonProperty("ListenerArn")
     public CharSequence getListenerArn() {
         return listenerArn;
     }
@@ -118,7 +113,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-listenerarn
      * 
      */
-    @JsonProperty("ListenerArn")
     public void setListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
     }
@@ -132,7 +126,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-priority
      * 
      */
-    @JsonProperty("Priority")
     public Integer getPriority() {
         return priority;
     }
@@ -141,7 +134,6 @@ public class ListenerRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-priority
      * 
      */
-    @JsonProperty("Priority")
     public void setPriority(Integer priority) {
         this.priority = priority;
     }

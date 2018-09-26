@@ -114,7 +114,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesupport
      * 
      */
-    @JsonProperty("IncludeSupport")
     public Boolean getIncludeSupport() {
         return includeSupport;
     }
@@ -123,7 +122,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesupport
      * 
      */
-    @JsonProperty("IncludeSupport")
     public void setIncludeSupport(Boolean includeSupport) {
         this.includeSupport = includeSupport;
     }
@@ -137,7 +135,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeothersubscription
      * 
      */
-    @JsonProperty("IncludeOtherSubscription")
     public Boolean getIncludeOtherSubscription() {
         return includeOtherSubscription;
     }
@@ -146,7 +143,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeothersubscription
      * 
      */
-    @JsonProperty("IncludeOtherSubscription")
     public void setIncludeOtherSubscription(Boolean includeOtherSubscription) {
         this.includeOtherSubscription = includeOtherSubscription;
     }
@@ -160,7 +156,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includetax
      * 
      */
-    @JsonProperty("IncludeTax")
     public Boolean getIncludeTax() {
         return includeTax;
     }
@@ -169,7 +164,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includetax
      * 
      */
-    @JsonProperty("IncludeTax")
     public void setIncludeTax(Boolean includeTax) {
         this.includeTax = includeTax;
     }
@@ -183,7 +177,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesubscription
      * 
      */
-    @JsonProperty("IncludeSubscription")
     public Boolean getIncludeSubscription() {
         return includeSubscription;
     }
@@ -192,7 +185,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesubscription
      * 
      */
-    @JsonProperty("IncludeSubscription")
     public void setIncludeSubscription(Boolean includeSubscription) {
         this.includeSubscription = includeSubscription;
     }
@@ -206,7 +198,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useblended
      * 
      */
-    @JsonProperty("UseBlended")
     public Boolean getUseBlended() {
         return useBlended;
     }
@@ -215,7 +206,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useblended
      * 
      */
-    @JsonProperty("UseBlended")
     public void setUseBlended(Boolean useBlended) {
         this.useBlended = useBlended;
     }
@@ -229,7 +219,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeupfront
      * 
      */
-    @JsonProperty("IncludeUpfront")
     public Boolean getIncludeUpfront() {
         return includeUpfront;
     }
@@ -238,7 +227,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includeupfront
      * 
      */
-    @JsonProperty("IncludeUpfront")
     public void setIncludeUpfront(Boolean includeUpfront) {
         this.includeUpfront = includeUpfront;
     }
@@ -252,7 +240,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includediscount
      * 
      */
-    @JsonProperty("IncludeDiscount")
     public Boolean getIncludeDiscount() {
         return includeDiscount;
     }
@@ -261,7 +248,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includediscount
      * 
      */
-    @JsonProperty("IncludeDiscount")
     public void setIncludeDiscount(Boolean includeDiscount) {
         this.includeDiscount = includeDiscount;
     }
@@ -275,7 +261,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includecredit
      * 
      */
-    @JsonProperty("IncludeCredit")
     public Boolean getIncludeCredit() {
         return includeCredit;
     }
@@ -284,7 +269,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includecredit
      * 
      */
-    @JsonProperty("IncludeCredit")
     public void setIncludeCredit(Boolean includeCredit) {
         this.includeCredit = includeCredit;
     }
@@ -298,7 +282,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerecurring
      * 
      */
-    @JsonProperty("IncludeRecurring")
     public Boolean getIncludeRecurring() {
         return includeRecurring;
     }
@@ -307,7 +290,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerecurring
      * 
      */
-    @JsonProperty("IncludeRecurring")
     public void setIncludeRecurring(Boolean includeRecurring) {
         this.includeRecurring = includeRecurring;
     }
@@ -321,7 +303,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useamortized
      * 
      */
-    @JsonProperty("UseAmortized")
     public Boolean getUseAmortized() {
         return useAmortized;
     }
@@ -330,7 +311,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-useamortized
      * 
      */
-    @JsonProperty("UseAmortized")
     public void setUseAmortized(Boolean useAmortized) {
         this.useAmortized = useAmortized;
     }
@@ -344,7 +324,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerefund
      * 
      */
-    @JsonProperty("IncludeRefund")
     public Boolean getIncludeRefund() {
         return includeRefund;
     }
@@ -353,7 +332,6 @@ public class CostTypes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includerefund
      * 
      */
-    @JsonProperty("IncludeRefund")
     public void setIncludeRefund(Boolean includeRefund) {
         this.includeRefund = includeRefund;
     }

@@ -52,7 +52,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
@@ -61,7 +60,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
@@ -75,7 +73,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -84,7 +81,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -98,7 +94,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -107,7 +102,6 @@ public class SubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html#cfn-elasticache-subnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }

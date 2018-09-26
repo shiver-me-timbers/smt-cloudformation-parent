@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ReplicationGroupResource
     extends Resource
+    implements HasAttributes<ReplicationGroupAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ReplicationGroupResource
     private ReplicationGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ReplicationGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ReplicationGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ReplicationGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ReplicationGroup getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ReplicationGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ReplicationGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ReplicationGroupResource
     @Override
     public ReplicationGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ReplicationGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -50,7 +50,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket
      * 
      */
-    @JsonProperty("Bucket")
     public CharSequence getBucket() {
         return bucket;
     }
@@ -59,7 +58,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket
      * 
      */
-    @JsonProperty("Bucket")
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -73,7 +71,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -82,7 +79,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -96,7 +92,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -105,7 +100,6 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

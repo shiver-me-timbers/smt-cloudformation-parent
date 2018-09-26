@@ -131,7 +131,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef
      * 
      */
-    @JsonProperty("AttributeDefinitions")
     public List<AttributeDefinition> getAttributeDefinitions() {
         return attributeDefinitions;
     }
@@ -140,7 +139,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef
      * 
      */
-    @JsonProperty("AttributeDefinitions")
     public void setAttributeDefinitions(List<AttributeDefinition> attributeDefinitions) {
         this.attributeDefinitions = attributeDefinitions;
     }
@@ -154,7 +152,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi
      * 
      */
-    @JsonProperty("GlobalSecondaryIndexes")
     public List<GlobalSecondaryIndex> getGlobalSecondaryIndexes() {
         return globalSecondaryIndexes;
     }
@@ -163,7 +160,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi
      * 
      */
-    @JsonProperty("GlobalSecondaryIndexes")
     public void setGlobalSecondaryIndexes(List<GlobalSecondaryIndex> globalSecondaryIndexes) {
         this.globalSecondaryIndexes = globalSecondaryIndexes;
     }
@@ -177,7 +173,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public Set<KeySchema> getKeySchema() {
         return keySchema;
     }
@@ -186,7 +181,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-keyschema
      * 
      */
-    @JsonProperty("KeySchema")
     public void setKeySchema(Set<KeySchema> keySchema) {
         this.keySchema = keySchema;
     }
@@ -200,7 +194,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-lsi
      * 
      */
-    @JsonProperty("LocalSecondaryIndexes")
     public List<LocalSecondaryIndex> getLocalSecondaryIndexes() {
         return localSecondaryIndexes;
     }
@@ -209,7 +202,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-lsi
      * 
      */
-    @JsonProperty("LocalSecondaryIndexes")
     public void setLocalSecondaryIndexes(List<LocalSecondaryIndex> localSecondaryIndexes) {
         this.localSecondaryIndexes = localSecondaryIndexes;
     }
@@ -225,7 +217,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html
      * 
      */
-    @JsonProperty("PointInTimeRecoverySpecification")
     public PointInTimeRecoverySpecification getPointInTimeRecoverySpecification() {
         return pointInTimeRecoverySpecification;
     }
@@ -236,7 +227,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html
      * 
      */
-    @JsonProperty("PointInTimeRecoverySpecification")
     public void setPointInTimeRecoverySpecification(PointInTimeRecoverySpecification pointInTimeRecoverySpecification) {
         this.pointInTimeRecoverySpecification = pointInTimeRecoverySpecification;
     }
@@ -252,7 +242,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html
      * 
      */
-    @JsonProperty("ProvisionedThroughput")
     public ProvisionedThroughput getProvisionedThroughput() {
         return provisionedThroughput;
     }
@@ -263,7 +252,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html
      * 
      */
-    @JsonProperty("ProvisionedThroughput")
     public void setProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
     }
@@ -279,7 +267,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html
      * 
      */
-    @JsonProperty("SSESpecification")
     public SSESpecification getSSESpecification() {
         return sSESpecification;
     }
@@ -290,7 +277,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html
      * 
      */
-    @JsonProperty("SSESpecification")
     public void setSSESpecification(SSESpecification sSESpecification) {
         this.sSESpecification = sSESpecification;
     }
@@ -306,7 +292,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html
      * 
      */
-    @JsonProperty("StreamSpecification")
     public StreamSpecification getStreamSpecification() {
         return streamSpecification;
     }
@@ -317,7 +302,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html
      * 
      */
-    @JsonProperty("StreamSpecification")
     public void setStreamSpecification(StreamSpecification streamSpecification) {
         this.streamSpecification = streamSpecification;
     }
@@ -331,7 +315,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename
      * 
      */
-    @JsonProperty("TableName")
     public CharSequence getTableName() {
         return tableName;
     }
@@ -340,7 +323,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename
      * 
      */
-    @JsonProperty("TableName")
     public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
@@ -354,7 +336,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -363,7 +344,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -379,7 +359,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html
      * 
      */
-    @JsonProperty("TimeToLiveSpecification")
     public TimeToLiveSpecification getTimeToLiveSpecification() {
         return timeToLiveSpecification;
     }
@@ -390,7 +369,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html
      * 
      */
-    @JsonProperty("TimeToLiveSpecification")
     public void setTimeToLiveSpecification(TimeToLiveSpecification timeToLiveSpecification) {
         this.timeToLiveSpecification = timeToLiveSpecification;
     }

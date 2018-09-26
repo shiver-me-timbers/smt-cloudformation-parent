@@ -172,7 +172,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-actionsenabled
      * 
      */
-    @JsonProperty("ActionsEnabled")
     public Boolean getActionsEnabled() {
         return actionsEnabled;
     }
@@ -181,7 +180,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-actionsenabled
      * 
      */
-    @JsonProperty("ActionsEnabled")
     public void setActionsEnabled(Boolean actionsEnabled) {
         this.actionsEnabled = actionsEnabled;
     }
@@ -195,7 +193,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmactions
      * 
      */
-    @JsonProperty("AlarmActions")
     public List<CharSequence> getAlarmActions() {
         return alarmActions;
     }
@@ -204,7 +201,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmactions
      * 
      */
-    @JsonProperty("AlarmActions")
     public void setAlarmActions(List<CharSequence> alarmActions) {
         this.alarmActions = alarmActions;
     }
@@ -218,7 +214,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmdescription
      * 
      */
-    @JsonProperty("AlarmDescription")
     public CharSequence getAlarmDescription() {
         return alarmDescription;
     }
@@ -227,7 +222,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmdescription
      * 
      */
-    @JsonProperty("AlarmDescription")
     public void setAlarmDescription(CharSequence alarmDescription) {
         this.alarmDescription = alarmDescription;
     }
@@ -241,7 +235,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmname
      * 
      */
-    @JsonProperty("AlarmName")
     public CharSequence getAlarmName() {
         return alarmName;
     }
@@ -250,7 +243,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-alarmname
      * 
      */
-    @JsonProperty("AlarmName")
     public void setAlarmName(CharSequence alarmName) {
         this.alarmName = alarmName;
     }
@@ -264,7 +256,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
@@ -273,7 +264,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
@@ -287,7 +277,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension
      * 
      */
-    @JsonProperty("Dimensions")
     public List<Dimension> getDimensions() {
         return dimensions;
     }
@@ -296,7 +285,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension
      * 
      */
-    @JsonProperty("Dimensions")
     public void setDimensions(List<Dimension> dimensions) {
         this.dimensions = dimensions;
     }
@@ -310,7 +298,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile
      * 
      */
-    @JsonProperty("EvaluateLowSampleCountPercentile")
     public CharSequence getEvaluateLowSampleCountPercentile() {
         return evaluateLowSampleCountPercentile;
     }
@@ -319,7 +306,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile
      * 
      */
-    @JsonProperty("EvaluateLowSampleCountPercentile")
     public void setEvaluateLowSampleCountPercentile(CharSequence evaluateLowSampleCountPercentile) {
         this.evaluateLowSampleCountPercentile = evaluateLowSampleCountPercentile;
     }
@@ -333,7 +319,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluationperiods
      * 
      */
-    @JsonProperty("EvaluationPeriods")
     public Integer getEvaluationPeriods() {
         return evaluationPeriods;
     }
@@ -342,7 +327,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluationperiods
      * 
      */
-    @JsonProperty("EvaluationPeriods")
     public void setEvaluationPeriods(Integer evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
     }
@@ -356,7 +340,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-extendedstatistic
      * 
      */
-    @JsonProperty("ExtendedStatistic")
     public CharSequence getExtendedStatistic() {
         return extendedStatistic;
     }
@@ -365,7 +348,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-extendedstatistic
      * 
      */
-    @JsonProperty("ExtendedStatistic")
     public void setExtendedStatistic(CharSequence extendedStatistic) {
         this.extendedStatistic = extendedStatistic;
     }
@@ -379,7 +361,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-insufficientdataactions
      * 
      */
-    @JsonProperty("InsufficientDataActions")
     public List<CharSequence> getInsufficientDataActions() {
         return insufficientDataActions;
     }
@@ -388,7 +369,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-insufficientdataactions
      * 
      */
-    @JsonProperty("InsufficientDataActions")
     public void setInsufficientDataActions(List<CharSequence> insufficientDataActions) {
         this.insufficientDataActions = insufficientDataActions;
     }
@@ -402,7 +382,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -411,7 +390,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -425,7 +403,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -434,7 +411,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
@@ -448,7 +424,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-okactions
      * 
      */
-    @JsonProperty("OKActions")
     public List<CharSequence> getOKActions() {
         return oKActions;
     }
@@ -457,7 +432,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-okactions
      * 
      */
-    @JsonProperty("OKActions")
     public void setOKActions(List<CharSequence> oKActions) {
         this.oKActions = oKActions;
     }
@@ -471,7 +445,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-period
      * 
      */
-    @JsonProperty("Period")
     public Integer getPeriod() {
         return period;
     }
@@ -480,7 +453,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-period
      * 
      */
-    @JsonProperty("Period")
     public void setPeriod(Integer period) {
         this.period = period;
     }
@@ -494,7 +466,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public CharSequence getStatistic() {
         return statistic;
     }
@@ -503,7 +474,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
@@ -517,7 +487,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-threshold
      * 
      */
-    @JsonProperty("Threshold")
     public Double getThreshold() {
         return threshold;
     }
@@ -526,7 +495,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-threshold
      * 
      */
-    @JsonProperty("Threshold")
     public void setThreshold(Double threshold) {
         this.threshold = threshold;
     }
@@ -540,7 +508,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata
      * 
      */
-    @JsonProperty("TreatMissingData")
     public CharSequence getTreatMissingData() {
         return treatMissingData;
     }
@@ -549,7 +516,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-treatmissingdata
      * 
      */
-    @JsonProperty("TreatMissingData")
     public void setTreatMissingData(CharSequence treatMissingData) {
         this.treatMissingData = treatMissingData;
     }
@@ -563,7 +529,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-unit
      * 
      */
-    @JsonProperty("Unit")
     public CharSequence getUnit() {
         return unit;
     }
@@ -572,7 +537,6 @@ public class Alarm {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-unit
      * 
      */
-    @JsonProperty("Unit")
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }

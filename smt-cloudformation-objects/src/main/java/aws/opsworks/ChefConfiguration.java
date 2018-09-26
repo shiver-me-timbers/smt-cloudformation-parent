@@ -42,7 +42,6 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
-    @JsonProperty("BerkshelfVersion")
     public CharSequence getBerkshelfVersion() {
         return berkshelfVersion;
     }
@@ -51,7 +50,6 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
-    @JsonProperty("BerkshelfVersion")
     public void setBerkshelfVersion(CharSequence berkshelfVersion) {
         this.berkshelfVersion = berkshelfVersion;
     }
@@ -65,7 +63,6 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
-    @JsonProperty("ManageBerkshelf")
     public Boolean getManageBerkshelf() {
         return manageBerkshelf;
     }
@@ -74,7 +71,6 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
-    @JsonProperty("ManageBerkshelf")
     public void setManageBerkshelf(Boolean manageBerkshelf) {
         this.manageBerkshelf = manageBerkshelf;
     }

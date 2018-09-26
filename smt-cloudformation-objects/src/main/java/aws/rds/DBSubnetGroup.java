@@ -65,7 +65,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupdescription
      * 
      */
-    @JsonProperty("DBSubnetGroupDescription")
     public CharSequence getDBSubnetGroupDescription() {
         return dBSubnetGroupDescription;
     }
@@ -74,7 +73,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupdescription
      * 
      */
-    @JsonProperty("DBSubnetGroupDescription")
     public void setDBSubnetGroupDescription(CharSequence dBSubnetGroupDescription) {
         this.dBSubnetGroupDescription = dBSubnetGroupDescription;
     }
@@ -88,7 +86,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupname
      * 
      */
-    @JsonProperty("DBSubnetGroupName")
     public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
@@ -97,7 +94,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-dbsubnetgroupname
      * 
      */
-    @JsonProperty("DBSubnetGroupName")
     public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
@@ -111,7 +107,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -120,7 +115,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
@@ -134,7 +128,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -143,7 +136,6 @@ public class DBSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html#cfn-rds-dbsubnetgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

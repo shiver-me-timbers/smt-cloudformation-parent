@@ -132,7 +132,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-spotiamfleetrole
      * 
      */
-    @JsonProperty("SpotIamFleetRole")
     public CharSequence getSpotIamFleetRole() {
         return spotIamFleetRole;
     }
@@ -141,7 +140,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-spotiamfleetrole
      * 
      */
-    @JsonProperty("SpotIamFleetRole")
     public void setSpotIamFleetRole(CharSequence spotIamFleetRole) {
         this.spotIamFleetRole = spotIamFleetRole;
     }
@@ -155,7 +153,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-maxvcpus
      * 
      */
-    @JsonProperty("MaxvCpus")
     public Integer getMaxvCpus() {
         return maxvCpus;
     }
@@ -164,7 +161,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-maxvcpus
      * 
      */
-    @JsonProperty("MaxvCpus")
     public void setMaxvCpus(Integer maxvCpus) {
         this.maxvCpus = maxvCpus;
     }
@@ -178,7 +174,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-bidpercentage
      * 
      */
-    @JsonProperty("BidPercentage")
     public Integer getBidPercentage() {
         return bidPercentage;
     }
@@ -187,7 +182,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-bidpercentage
      * 
      */
-    @JsonProperty("BidPercentage")
     public void setBidPercentage(Integer bidPercentage) {
         this.bidPercentage = bidPercentage;
     }
@@ -201,7 +195,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -210,7 +203,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -224,7 +216,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public List<CharSequence> getSubnets() {
         return subnets;
     }
@@ -233,7 +224,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public void setSubnets(List<CharSequence> subnets) {
         this.subnets = subnets;
     }
@@ -247,7 +237,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -256,7 +245,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -270,7 +258,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus
      * 
      */
-    @JsonProperty("MinvCpus")
     public Integer getMinvCpus() {
         return minvCpus;
     }
@@ -279,7 +266,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus
      * 
      */
-    @JsonProperty("MinvCpus")
     public void setMinvCpus(Integer minvCpus) {
         this.minvCpus = minvCpus;
     }
@@ -293,7 +279,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public CharSequence getImageId() {
         return imageId;
     }
@@ -302,7 +287,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
@@ -316,7 +300,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancerole
      * 
      */
-    @JsonProperty("InstanceRole")
     public CharSequence getInstanceRole() {
         return instanceRole;
     }
@@ -325,7 +308,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancerole
      * 
      */
-    @JsonProperty("InstanceRole")
     public void setInstanceRole(CharSequence instanceRole) {
         this.instanceRole = instanceRole;
     }
@@ -339,7 +321,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancetypes
      * 
      */
-    @JsonProperty("InstanceTypes")
     public List<CharSequence> getInstanceTypes() {
         return instanceTypes;
     }
@@ -348,7 +329,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-instancetypes
      * 
      */
-    @JsonProperty("InstanceTypes")
     public void setInstanceTypes(List<CharSequence> instanceTypes) {
         this.instanceTypes = instanceTypes;
     }
@@ -362,7 +342,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-ec2keypair
      * 
      */
-    @JsonProperty("Ec2KeyPair")
     public CharSequence getEc2KeyPair() {
         return ec2KeyPair;
     }
@@ -371,7 +350,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-ec2keypair
      * 
      */
-    @JsonProperty("Ec2KeyPair")
     public void setEc2KeyPair(CharSequence ec2KeyPair) {
         this.ec2KeyPair = ec2KeyPair;
     }
@@ -385,7 +363,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags
      * 
      */
-    @JsonProperty("Tags")
     public Tags getTags() {
         return tags;
     }
@@ -394,7 +371,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(Tags tags) {
         this.tags = tags;
     }
@@ -408,7 +384,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-desiredvcpus
      * 
      */
-    @JsonProperty("DesiredvCpus")
     public Integer getDesiredvCpus() {
         return desiredvCpus;
     }
@@ -417,7 +392,6 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-desiredvcpus
      * 
      */
-    @JsonProperty("DesiredvCpus")
     public void setDesiredvCpus(Integer desiredvCpus) {
         this.desiredvCpus = desiredvCpus;
     }

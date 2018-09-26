@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class VersionResource
     extends Resource
+    implements HasAttributes<VersionAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class VersionResource
     private Version properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VersionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VersionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Version
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html
      * 
      */
-    @JsonProperty("Properties")
     public Version getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class VersionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Version properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class VersionResource
     @Override
     public VersionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VersionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

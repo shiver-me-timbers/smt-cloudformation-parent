@@ -42,7 +42,6 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input
      * 
      */
-    @JsonProperty("Input")
     public CharSequence getInput() {
         return input;
     }
@@ -51,7 +50,6 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input
      * 
      */
-    @JsonProperty("Input")
     public void setInput(CharSequence input) {
         this.input = input;
     }
@@ -65,7 +63,6 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -74,7 +71,6 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

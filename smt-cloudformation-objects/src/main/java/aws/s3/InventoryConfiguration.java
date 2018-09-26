@@ -90,7 +90,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public Destination getDestination() {
         return destination;
     }
@@ -101,7 +100,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public void setDestination(Destination destination) {
         this.destination = destination;
     }
@@ -115,7 +113,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -124,7 +121,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -138,7 +134,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -147,7 +142,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -161,7 +155,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-includedobjectversions
      * 
      */
-    @JsonProperty("IncludedObjectVersions")
     public CharSequence getIncludedObjectVersions() {
         return includedObjectVersions;
     }
@@ -170,7 +163,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-includedobjectversions
      * 
      */
-    @JsonProperty("IncludedObjectVersions")
     public void setIncludedObjectVersions(CharSequence includedObjectVersions) {
         this.includedObjectVersions = includedObjectVersions;
     }
@@ -184,7 +176,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-optionalfields
      * 
      */
-    @JsonProperty("OptionalFields")
     public Set<CharSequence> getOptionalFields() {
         return optionalFields;
     }
@@ -193,7 +184,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-optionalfields
      * 
      */
-    @JsonProperty("OptionalFields")
     public void setOptionalFields(Set<CharSequence> optionalFields) {
         this.optionalFields = optionalFields;
     }
@@ -207,7 +197,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -216,7 +205,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -230,7 +218,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-schedulefrequency
      * 
      */
-    @JsonProperty("ScheduleFrequency")
     public CharSequence getScheduleFrequency() {
         return scheduleFrequency;
     }
@@ -239,7 +226,6 @@ public class InventoryConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-schedulefrequency
      * 
      */
-    @JsonProperty("ScheduleFrequency")
     public void setScheduleFrequency(CharSequence scheduleFrequency) {
         this.scheduleFrequency = scheduleFrequency;
     }

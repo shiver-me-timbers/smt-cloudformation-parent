@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_CloudFrontOriginAccessIdentityResource.schema.json",
+  "title" : "CloudFrontOriginAccessIdentityResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentityResource",
+  "javaInterfaces" : [ "aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CloudFront_CloudFrontOriginAccessIdentity.schema.json"
+    }
+  }
+}

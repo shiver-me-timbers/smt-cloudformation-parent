@@ -42,7 +42,6 @@ public class SecurityConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -51,7 +50,6 @@ public class SecurityConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -65,7 +63,6 @@ public class SecurityConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-securityconfiguration
      * 
      */
-    @JsonProperty("SecurityConfiguration")
     public SecurityConfiguration_ getSecurityConfiguration() {
         return securityConfiguration;
     }
@@ -74,7 +71,6 @@ public class SecurityConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html#cfn-emr-securityconfiguration-securityconfiguration
      * 
      */
-    @JsonProperty("SecurityConfiguration")
     public void setSecurityConfiguration(SecurityConfiguration_ securityConfiguration) {
         this.securityConfiguration = securityConfiguration;
     }

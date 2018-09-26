@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class RuleResource
     extends Resource
+    implements HasAttributes<RuleAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class RuleResource
     private Rule properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RuleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RuleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Rule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
      * 
      */
-    @JsonProperty("Properties")
     public Rule getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class RuleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Rule properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class RuleResource
     @Override
     public RuleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RuleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

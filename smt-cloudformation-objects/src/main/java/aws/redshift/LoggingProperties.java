@@ -42,7 +42,6 @@ public class LoggingProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-bucketname
      * 
      */
-    @JsonProperty("BucketName")
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -51,7 +50,6 @@ public class LoggingProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-bucketname
      * 
      */
-    @JsonProperty("BucketName")
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -65,7 +63,6 @@ public class LoggingProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-s3keyprefix
      * 
      */
-    @JsonProperty("S3KeyPrefix")
     public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
@@ -74,7 +71,6 @@ public class LoggingProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html#cfn-redshift-cluster-loggingproperties-s3keyprefix
      * 
      */
-    @JsonProperty("S3KeyPrefix")
     public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }

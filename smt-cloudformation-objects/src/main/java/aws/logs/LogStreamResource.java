@@ -41,12 +41,26 @@ public class LogStreamResource
     private LogStream properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LogStreamResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LogStreamResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LogStream
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html
      * 
      */
-    @JsonProperty("Properties")
     public LogStream getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LogStreamResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LogStream properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LogStreamResource
     @Override
     public LogStreamResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LogStreamResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

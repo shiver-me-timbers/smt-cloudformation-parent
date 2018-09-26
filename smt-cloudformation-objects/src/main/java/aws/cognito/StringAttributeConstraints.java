@@ -42,7 +42,6 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength
      * 
      */
-    @JsonProperty("MinLength")
     public CharSequence getMinLength() {
         return minLength;
     }
@@ -51,7 +50,6 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength
      * 
      */
-    @JsonProperty("MinLength")
     public void setMinLength(CharSequence minLength) {
         this.minLength = minLength;
     }
@@ -65,7 +63,6 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength
      * 
      */
-    @JsonProperty("MaxLength")
     public CharSequence getMaxLength() {
         return maxLength;
     }
@@ -74,7 +71,6 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength
      * 
      */
-    @JsonProperty("MaxLength")
     public void setMaxLength(CharSequence maxLength) {
         this.maxLength = maxLength;
     }

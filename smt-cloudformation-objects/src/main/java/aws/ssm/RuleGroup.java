@@ -36,7 +36,6 @@ public class RuleGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html#cfn-ssm-patchbaseline-rulegroup-patchrules
      * 
      */
-    @JsonProperty("PatchRules")
     public List<Rule> getPatchRules() {
         return patchRules;
     }
@@ -45,7 +44,6 @@ public class RuleGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html#cfn-ssm-patchbaseline-rulegroup-patchrules
      * 
      */
-    @JsonProperty("PatchRules")
     public void setPatchRules(List<Rule> patchRules) {
         this.patchRules = patchRules;
     }

@@ -42,7 +42,6 @@ public class PlacementConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-expression
      * 
      */
-    @JsonProperty("Expression")
     public CharSequence getExpression() {
         return expression;
     }
@@ -51,7 +50,6 @@ public class PlacementConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-expression
      * 
      */
-    @JsonProperty("Expression")
     public void setExpression(CharSequence expression) {
         this.expression = expression;
     }
@@ -65,7 +63,6 @@ public class PlacementConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -74,7 +71,6 @@ public class PlacementConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-placementconstraint.html#cfn-ecs-service-placementconstraint-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

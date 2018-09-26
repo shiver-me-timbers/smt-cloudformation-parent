@@ -58,7 +58,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-destinationarn
      * 
      */
-    @JsonProperty("DestinationArn")
     public CharSequence getDestinationArn() {
         return destinationArn;
     }
@@ -67,7 +66,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-destinationarn
      * 
      */
-    @JsonProperty("DestinationArn")
     public void setDestinationArn(CharSequence destinationArn) {
         this.destinationArn = destinationArn;
     }
@@ -81,7 +79,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-filterpattern
      * 
      */
-    @JsonProperty("FilterPattern")
     public CharSequence getFilterPattern() {
         return filterPattern;
     }
@@ -90,7 +87,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-filterpattern
      * 
      */
-    @JsonProperty("FilterPattern")
     public void setFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
     }
@@ -104,7 +100,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -113,7 +108,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -127,7 +121,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -136,7 +129,6 @@ public class SubscriptionFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-subscriptionfilter.html#cfn-cwl-subscriptionfilter-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

@@ -41,12 +41,26 @@ public class VPCGatewayAttachmentResource
     private VPCGatewayAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCGatewayAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCGatewayAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCGatewayAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCGatewayAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCGatewayAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCGatewayAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCGatewayAttachmentResource
     @Override
     public VPCGatewayAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCGatewayAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

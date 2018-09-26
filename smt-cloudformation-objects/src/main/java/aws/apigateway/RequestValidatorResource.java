@@ -41,12 +41,26 @@ public class RequestValidatorResource
     private RequestValidator properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RequestValidatorResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RequestValidatorResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * RequestValidator
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
      * 
      */
-    @JsonProperty("Properties")
     public RequestValidator getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class RequestValidatorResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-requestvalidator.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(RequestValidator properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class RequestValidatorResource
     @Override
     public RequestValidatorResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RequestValidatorResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

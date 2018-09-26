@@ -32,7 +32,7 @@
 
     <profiles>
         <profile>
-            <id>default</id>
+            <id>generate-java-classes</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -53,7 +53,15 @@
                                     <artifactItems>
                                         <artifactItem>
                                             <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
-                                            <artifactId>smt-cloudformation-json-schemas</artifactId>
+                                            <artifactId>smt-cloudformation-base-json-schemas</artifactId>
+                                            <version>${project.version}</version>
+                                            <type>jar</type>
+                                            <includes>schemas/**/*.json</includes>
+                                            <overWrite>true</overWrite>
+                                        </artifactItem>
+                                        <artifactItem>
+                                            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                            <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
                                             <version>${project.version}</version>
                                             <type>jar</type>
                                             <includes>schemas/**/*.json</includes>
@@ -73,9 +81,15 @@
                             <sourceDirectory>${project.build.directory}/schemas</sourceDirectory>
                             <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
                             <includeAdditionalProperties>false</includeAdditionalProperties>
+                            <constructorsRequiredPropertiesOnly>true</constructorsRequiredPropertiesOnly>
+                            <includeConstructors>true</includeConstructors>
                             <generateBuilders>true</generateBuilders>
                             <customDateTimePattern>yyyy-MM-ddThh:mm:ssZ</customDateTimePattern>
                             <includeToString>true</includeToString>
+                            <annotationStyle>none</annotationStyle>
+                            <customAnnotator>
+                                shiver.me.timbers.cloudformation.annotator.CloudformationAnnotator
+                            </customAnnotator>
                         </configuration>
                         <executions>
                             <execution>
@@ -85,13 +99,26 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                                <artifactId>smt-cloudformation-generation</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                 </plugins>
             </build>
             <dependencies>
                 <dependency>
                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
-                    <artifactId>smt-cloudformation-json-schemas</artifactId>
+                    <artifactId>smt-cloudformation-base-json-schemas</artifactId>
+                    <version>1.1-SNAPSHOT</version>
+                    <scope>provided</scope>
+                </dependency>
+                <dependency>
+                    <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+                    <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
                     <version>1.1-SNAPSHOT</version>
                     <scope>provided</scope>
                 </dependency>
@@ -123,6 +150,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
+            <artifactId>smt-cloudformation-base</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>

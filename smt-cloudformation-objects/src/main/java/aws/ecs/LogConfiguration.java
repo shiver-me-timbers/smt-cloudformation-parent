@@ -43,7 +43,6 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver
      * 
      */
-    @JsonProperty("LogDriver")
     public CharSequence getLogDriver() {
         return logDriver;
     }
@@ -52,7 +51,6 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver
      * 
      */
-    @JsonProperty("LogDriver")
     public void setLogDriver(CharSequence logDriver) {
         this.logDriver = logDriver;
     }
@@ -66,7 +64,6 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options
      * 
      */
-    @JsonProperty("Options")
     public Map<String, String> getOptions() {
         return options;
     }
@@ -75,7 +72,6 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options
      * 
      */
-    @JsonProperty("Options")
     public void setOptions(Map<String, String> options) {
         this.options = options;
     }

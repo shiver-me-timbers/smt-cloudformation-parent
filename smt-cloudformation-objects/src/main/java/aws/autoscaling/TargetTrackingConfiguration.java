@@ -64,7 +64,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html
      * 
      */
-    @JsonProperty("CustomizedMetricSpecification")
     public CustomizedMetricSpecification getCustomizedMetricSpecification() {
         return customizedMetricSpecification;
     }
@@ -75,7 +74,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html
      * 
      */
-    @JsonProperty("CustomizedMetricSpecification")
     public void setCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
     }
@@ -89,7 +87,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein
      * 
      */
-    @JsonProperty("DisableScaleIn")
     public Boolean getDisableScaleIn() {
         return disableScaleIn;
     }
@@ -98,7 +95,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein
      * 
      */
-    @JsonProperty("DisableScaleIn")
     public void setDisableScaleIn(Boolean disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
@@ -114,7 +110,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html
      * 
      */
-    @JsonProperty("PredefinedMetricSpecification")
     public PredefinedMetricSpecification getPredefinedMetricSpecification() {
         return predefinedMetricSpecification;
     }
@@ -125,7 +120,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html
      * 
      */
-    @JsonProperty("PredefinedMetricSpecification")
     public void setPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
     }
@@ -139,7 +133,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue
      * 
      */
-    @JsonProperty("TargetValue")
     public Double getTargetValue() {
         return targetValue;
     }
@@ -148,7 +141,6 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue
      * 
      */
-    @JsonProperty("TargetValue")
     public void setTargetValue(Double targetValue) {
         this.targetValue = targetValue;
     }

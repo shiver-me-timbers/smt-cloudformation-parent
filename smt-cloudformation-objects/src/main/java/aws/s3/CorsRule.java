@@ -81,7 +81,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders
      * 
      */
-    @JsonProperty("AllowedHeaders")
     public Set<CharSequence> getAllowedHeaders() {
         return allowedHeaders;
     }
@@ -90,7 +89,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders
      * 
      */
-    @JsonProperty("AllowedHeaders")
     public void setAllowedHeaders(Set<CharSequence> allowedHeaders) {
         this.allowedHeaders = allowedHeaders;
     }
@@ -104,7 +102,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods
      * 
      */
-    @JsonProperty("AllowedMethods")
     public Set<CharSequence> getAllowedMethods() {
         return allowedMethods;
     }
@@ -113,7 +110,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods
      * 
      */
-    @JsonProperty("AllowedMethods")
     public void setAllowedMethods(Set<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
     }
@@ -127,7 +123,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins
      * 
      */
-    @JsonProperty("AllowedOrigins")
     public Set<CharSequence> getAllowedOrigins() {
         return allowedOrigins;
     }
@@ -136,7 +131,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins
      * 
      */
-    @JsonProperty("AllowedOrigins")
     public void setAllowedOrigins(Set<CharSequence> allowedOrigins) {
         this.allowedOrigins = allowedOrigins;
     }
@@ -150,7 +144,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders
      * 
      */
-    @JsonProperty("ExposedHeaders")
     public Set<CharSequence> getExposedHeaders() {
         return exposedHeaders;
     }
@@ -159,7 +152,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders
      * 
      */
-    @JsonProperty("ExposedHeaders")
     public void setExposedHeaders(Set<CharSequence> exposedHeaders) {
         this.exposedHeaders = exposedHeaders;
     }
@@ -173,7 +165,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -182,7 +173,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -196,7 +186,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage
      * 
      */
-    @JsonProperty("MaxAge")
     public Integer getMaxAge() {
         return maxAge;
     }
@@ -205,7 +194,6 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage
      * 
      */
-    @JsonProperty("MaxAge")
     public void setMaxAge(Integer maxAge) {
         this.maxAge = maxAge;
     }

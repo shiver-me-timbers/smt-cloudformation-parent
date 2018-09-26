@@ -34,7 +34,6 @@ public class DynamoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html#cfn-dms-endpoint-dynamodbsettings-serviceaccessrolearn
      * 
      */
-    @JsonProperty("ServiceAccessRoleArn")
     public CharSequence getServiceAccessRoleArn() {
         return serviceAccessRoleArn;
     }
@@ -43,7 +42,6 @@ public class DynamoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html#cfn-dms-endpoint-dynamodbsettings-serviceaccessrolearn
      * 
      */
-    @JsonProperty("ServiceAccessRoleArn")
     public void setServiceAccessRoleArn(CharSequence serviceAccessRoleArn) {
         this.serviceAccessRoleArn = serviceAccessRoleArn;
     }

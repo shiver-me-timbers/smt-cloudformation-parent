@@ -50,7 +50,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-dataid
      * 
      */
-    @JsonProperty("DataId")
     public CharSequence getDataId() {
         return dataId;
     }
@@ -59,7 +58,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-dataid
      * 
      */
-    @JsonProperty("DataId")
     public void setDataId(CharSequence dataId) {
         this.dataId = dataId;
     }
@@ -73,7 +71,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-negated
      * 
      */
-    @JsonProperty("Negated")
     public Boolean getNegated() {
         return negated;
     }
@@ -82,7 +79,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-negated
      * 
      */
-    @JsonProperty("Negated")
     public void setNegated(Boolean negated) {
         this.negated = negated;
     }
@@ -96,7 +92,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -105,7 +100,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

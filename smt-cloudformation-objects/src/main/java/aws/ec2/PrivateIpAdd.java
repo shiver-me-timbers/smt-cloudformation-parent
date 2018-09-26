@@ -42,7 +42,6 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
@@ -51,7 +50,6 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
@@ -65,7 +63,6 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary
      * 
      */
-    @JsonProperty("Primary")
     public Boolean getPrimary() {
         return primary;
     }
@@ -74,7 +71,6 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary
      * 
      */
-    @JsonProperty("Primary")
     public void setPrimary(Boolean primary) {
         this.primary = primary;
     }

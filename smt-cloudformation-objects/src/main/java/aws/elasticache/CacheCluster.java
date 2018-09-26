@@ -202,7 +202,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode
      * 
      */
-    @JsonProperty("AZMode")
     public CharSequence getAZMode() {
         return aZMode;
     }
@@ -211,7 +210,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode
      * 
      */
-    @JsonProperty("AZMode")
     public void setAZMode(CharSequence aZMode) {
         this.aZMode = aZMode;
     }
@@ -225,7 +223,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -234,7 +231,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -248,7 +244,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype
      * 
      */
-    @JsonProperty("CacheNodeType")
     public CharSequence getCacheNodeType() {
         return cacheNodeType;
     }
@@ -257,7 +252,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype
      * 
      */
-    @JsonProperty("CacheNodeType")
     public void setCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
     }
@@ -271,7 +265,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname
      * 
      */
-    @JsonProperty("CacheParameterGroupName")
     public CharSequence getCacheParameterGroupName() {
         return cacheParameterGroupName;
     }
@@ -280,7 +273,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname
      * 
      */
-    @JsonProperty("CacheParameterGroupName")
     public void setCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
     }
@@ -294,7 +286,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames
      * 
      */
-    @JsonProperty("CacheSecurityGroupNames")
     public List<CharSequence> getCacheSecurityGroupNames() {
         return cacheSecurityGroupNames;
     }
@@ -303,7 +294,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames
      * 
      */
-    @JsonProperty("CacheSecurityGroupNames")
     public void setCacheSecurityGroupNames(List<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
     }
@@ -317,7 +307,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
@@ -326,7 +315,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
@@ -340,7 +328,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername
      * 
      */
-    @JsonProperty("ClusterName")
     public CharSequence getClusterName() {
         return clusterName;
     }
@@ -349,7 +336,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername
      * 
      */
-    @JsonProperty("ClusterName")
     public void setClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
     }
@@ -363,7 +349,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine
      * 
      */
-    @JsonProperty("Engine")
     public CharSequence getEngine() {
         return engine;
     }
@@ -372,7 +357,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine
      * 
      */
-    @JsonProperty("Engine")
     public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
@@ -386,7 +370,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -395,7 +378,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -409,7 +391,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn
      * 
      */
-    @JsonProperty("NotificationTopicArn")
     public CharSequence getNotificationTopicArn() {
         return notificationTopicArn;
     }
@@ -418,7 +399,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn
      * 
      */
-    @JsonProperty("NotificationTopicArn")
     public void setNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
     }
@@ -432,7 +412,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes
      * 
      */
-    @JsonProperty("NumCacheNodes")
     public Integer getNumCacheNodes() {
         return numCacheNodes;
     }
@@ -441,7 +420,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes
      * 
      */
-    @JsonProperty("NumCacheNodes")
     public void setNumCacheNodes(Integer numCacheNodes) {
         this.numCacheNodes = numCacheNodes;
     }
@@ -455,7 +433,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -464,7 +441,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -478,7 +454,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone
      * 
      */
-    @JsonProperty("PreferredAvailabilityZone")
     public CharSequence getPreferredAvailabilityZone() {
         return preferredAvailabilityZone;
     }
@@ -487,7 +462,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone
      * 
      */
-    @JsonProperty("PreferredAvailabilityZone")
     public void setPreferredAvailabilityZone(CharSequence preferredAvailabilityZone) {
         this.preferredAvailabilityZone = preferredAvailabilityZone;
     }
@@ -501,7 +475,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones
      * 
      */
-    @JsonProperty("PreferredAvailabilityZones")
     public Set<CharSequence> getPreferredAvailabilityZones() {
         return preferredAvailabilityZones;
     }
@@ -510,7 +483,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones
      * 
      */
-    @JsonProperty("PreferredAvailabilityZones")
     public void setPreferredAvailabilityZones(Set<CharSequence> preferredAvailabilityZones) {
         this.preferredAvailabilityZones = preferredAvailabilityZones;
     }
@@ -524,7 +496,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow
      * 
      */
-    @JsonProperty("PreferredMaintenanceWindow")
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -533,7 +504,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow
      * 
      */
-    @JsonProperty("PreferredMaintenanceWindow")
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -547,7 +517,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns
      * 
      */
-    @JsonProperty("SnapshotArns")
     public Set<CharSequence> getSnapshotArns() {
         return snapshotArns;
     }
@@ -556,7 +525,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns
      * 
      */
-    @JsonProperty("SnapshotArns")
     public void setSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
     }
@@ -570,7 +538,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname
      * 
      */
-    @JsonProperty("SnapshotName")
     public CharSequence getSnapshotName() {
         return snapshotName;
     }
@@ -579,7 +546,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname
      * 
      */
-    @JsonProperty("SnapshotName")
     public void setSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
     }
@@ -593,7 +559,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit
      * 
      */
-    @JsonProperty("SnapshotRetentionLimit")
     public Integer getSnapshotRetentionLimit() {
         return snapshotRetentionLimit;
     }
@@ -602,7 +567,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit
      * 
      */
-    @JsonProperty("SnapshotRetentionLimit")
     public void setSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
     }
@@ -616,7 +580,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow
      * 
      */
-    @JsonProperty("SnapshotWindow")
     public CharSequence getSnapshotWindow() {
         return snapshotWindow;
     }
@@ -625,7 +588,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow
      * 
      */
-    @JsonProperty("SnapshotWindow")
     public void setSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
     }
@@ -639,7 +601,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -648,7 +609,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -662,7 +622,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-vpcsecuritygroupids
      * 
      */
-    @JsonProperty("VpcSecurityGroupIds")
     public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
@@ -671,7 +630,6 @@ public class CacheCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-vpcsecuritygroupids
      * 
      */
-    @JsonProperty("VpcSecurityGroupIds")
     public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }

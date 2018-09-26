@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DirectoryService_SimpleADResource.schema.json",
+  "title" : "SimpleADResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.directoryservice.SimpleADResource",
+  "javaInterfaces" : [ "aws.HasAttributes<SimpleADAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DirectoryService_SimpleAD.schema.json"
+    }
+  }
+}

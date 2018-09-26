@@ -34,7 +34,6 @@ public class ConnectionSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html#cfn-elb-connectionsettings-idletimeout
      * 
      */
-    @JsonProperty("IdleTimeout")
     public Integer getIdleTimeout() {
         return idleTimeout;
     }
@@ -43,7 +42,6 @@ public class ConnectionSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html#cfn-elb-connectionsettings-idletimeout
      * 
      */
-    @JsonProperty("IdleTimeout")
     public void setIdleTimeout(Integer idleTimeout) {
         this.idleTimeout = idleTimeout;
     }

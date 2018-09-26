@@ -50,7 +50,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-accountid
      * 
      */
-    @JsonProperty("AccountId")
     public CharSequence getAccountId() {
         return accountId;
     }
@@ -59,7 +58,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-accountid
      * 
      */
-    @JsonProperty("AccountId")
     public void setAccountId(CharSequence accountId) {
         this.accountId = accountId;
     }
@@ -73,7 +71,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -82,7 +79,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -96,7 +92,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -105,7 +100,6 @@ public class PortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html#cfn-servicecatalog-portfolioshare-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }

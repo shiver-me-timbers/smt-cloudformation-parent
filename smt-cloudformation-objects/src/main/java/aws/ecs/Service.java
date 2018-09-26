@@ -149,7 +149,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-cluster
      * 
      */
-    @JsonProperty("Cluster")
     public CharSequence getCluster() {
         return cluster;
     }
@@ -158,7 +157,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-cluster
      * 
      */
-    @JsonProperty("Cluster")
     public void setCluster(CharSequence cluster) {
         this.cluster = cluster;
     }
@@ -174,7 +172,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html
      * 
      */
-    @JsonProperty("DeploymentConfiguration")
     public DeploymentConfiguration getDeploymentConfiguration() {
         return deploymentConfiguration;
     }
@@ -185,7 +182,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html
      * 
      */
-    @JsonProperty("DeploymentConfiguration")
     public void setDeploymentConfiguration(DeploymentConfiguration deploymentConfiguration) {
         this.deploymentConfiguration = deploymentConfiguration;
     }
@@ -199,7 +195,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount
      * 
      */
-    @JsonProperty("DesiredCount")
     public Integer getDesiredCount() {
         return desiredCount;
     }
@@ -208,7 +203,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount
      * 
      */
-    @JsonProperty("DesiredCount")
     public void setDesiredCount(Integer desiredCount) {
         this.desiredCount = desiredCount;
     }
@@ -222,7 +216,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds
      * 
      */
-    @JsonProperty("HealthCheckGracePeriodSeconds")
     public Integer getHealthCheckGracePeriodSeconds() {
         return healthCheckGracePeriodSeconds;
     }
@@ -231,7 +224,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-healthcheckgraceperiodseconds
      * 
      */
-    @JsonProperty("HealthCheckGracePeriodSeconds")
     public void setHealthCheckGracePeriodSeconds(Integer healthCheckGracePeriodSeconds) {
         this.healthCheckGracePeriodSeconds = healthCheckGracePeriodSeconds;
     }
@@ -245,7 +237,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-launchtype
      * 
      */
-    @JsonProperty("LaunchType")
     public CharSequence getLaunchType() {
         return launchType;
     }
@@ -254,7 +245,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-launchtype
      * 
      */
-    @JsonProperty("LaunchType")
     public void setLaunchType(CharSequence launchType) {
         this.launchType = launchType;
     }
@@ -268,7 +258,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-loadbalancers
      * 
      */
-    @JsonProperty("LoadBalancers")
     public Set<LoadBalancer> getLoadBalancers() {
         return loadBalancers;
     }
@@ -277,7 +266,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-loadbalancers
      * 
      */
-    @JsonProperty("LoadBalancers")
     public void setLoadBalancers(Set<LoadBalancer> loadBalancers) {
         this.loadBalancers = loadBalancers;
     }
@@ -293,7 +281,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html
      * 
      */
-    @JsonProperty("NetworkConfiguration")
     public NetworkConfiguration getNetworkConfiguration() {
         return networkConfiguration;
     }
@@ -304,7 +291,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html
      * 
      */
-    @JsonProperty("NetworkConfiguration")
     public void setNetworkConfiguration(NetworkConfiguration networkConfiguration) {
         this.networkConfiguration = networkConfiguration;
     }
@@ -318,7 +304,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints
      * 
      */
-    @JsonProperty("PlacementConstraints")
     public Set<TaskDefinitionPlacementConstraint> getPlacementConstraints() {
         return placementConstraints;
     }
@@ -327,7 +312,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints
      * 
      */
-    @JsonProperty("PlacementConstraints")
     public void setPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
         this.placementConstraints = placementConstraints;
     }
@@ -341,7 +325,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies
      * 
      */
-    @JsonProperty("PlacementStrategies")
     public Set<PlacementStrategy> getPlacementStrategies() {
         return placementStrategies;
     }
@@ -350,7 +333,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies
      * 
      */
-    @JsonProperty("PlacementStrategies")
     public void setPlacementStrategies(Set<PlacementStrategy> placementStrategies) {
         this.placementStrategies = placementStrategies;
     }
@@ -364,7 +346,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion
      * 
      */
-    @JsonProperty("PlatformVersion")
     public CharSequence getPlatformVersion() {
         return platformVersion;
     }
@@ -373,7 +354,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion
      * 
      */
-    @JsonProperty("PlatformVersion")
     public void setPlatformVersion(CharSequence platformVersion) {
         this.platformVersion = platformVersion;
     }
@@ -387,7 +367,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role
      * 
      */
-    @JsonProperty("Role")
     public CharSequence getRole() {
         return role;
     }
@@ -396,7 +375,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role
      * 
      */
-    @JsonProperty("Role")
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -410,7 +388,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename
      * 
      */
-    @JsonProperty("ServiceName")
     public CharSequence getServiceName() {
         return serviceName;
     }
@@ -419,7 +396,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename
      * 
      */
-    @JsonProperty("ServiceName")
     public void setServiceName(CharSequence serviceName) {
         this.serviceName = serviceName;
     }
@@ -433,7 +409,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries
      * 
      */
-    @JsonProperty("ServiceRegistries")
     public Set<ServiceRegistry> getServiceRegistries() {
         return serviceRegistries;
     }
@@ -442,7 +417,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries
      * 
      */
-    @JsonProperty("ServiceRegistries")
     public void setServiceRegistries(Set<ServiceRegistry> serviceRegistries) {
         this.serviceRegistries = serviceRegistries;
     }
@@ -456,7 +430,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
      */
-    @JsonProperty("TaskDefinition")
     public CharSequence getTaskDefinition() {
         return taskDefinition;
     }
@@ -465,7 +438,6 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
      */
-    @JsonProperty("TaskDefinition")
     public void setTaskDefinition(CharSequence taskDefinition) {
         this.taskDefinition = taskDefinition;
     }

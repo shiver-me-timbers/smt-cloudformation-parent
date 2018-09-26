@@ -82,7 +82,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups
      * 
      */
-    @JsonProperty("Groups")
     public List<CharSequence> getGroups() {
         return groups;
     }
@@ -91,7 +90,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups
      * 
      */
-    @JsonProperty("Groups")
     public void setGroups(List<CharSequence> groups) {
         this.groups = groups;
     }
@@ -107,7 +105,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html
      * 
      */
-    @JsonProperty("LoginProfile")
     public LoginProfile getLoginProfile() {
         return loginProfile;
     }
@@ -118,7 +115,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html
      * 
      */
-    @JsonProperty("LoginProfile")
     public void setLoginProfile(LoginProfile loginProfile) {
         this.loginProfile = loginProfile;
     }
@@ -132,7 +128,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
@@ -141,7 +136,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
@@ -155,7 +149,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -164,7 +157,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -178,7 +170,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies
      * 
      */
-    @JsonProperty("Policies")
     public List<Policy> getPolicies() {
         return policies;
     }
@@ -187,7 +178,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies
      * 
      */
-    @JsonProperty("Policies")
     public void setPolicies(List<Policy> policies) {
         this.policies = policies;
     }
@@ -201,7 +191,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
      */
-    @JsonProperty("UserName")
     public CharSequence getUserName() {
         return userName;
     }
@@ -210,7 +199,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
      */
-    @JsonProperty("UserName")
     public void setUserName(CharSequence userName) {
         this.userName = userName;
     }

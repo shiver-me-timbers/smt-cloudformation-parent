@@ -42,7 +42,6 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -51,7 +50,6 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -65,7 +63,6 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity
      * 
      */
-    @JsonProperty("OriginAccessIdentity")
     public CharSequence getOriginAccessIdentity() {
         return originAccessIdentity;
     }
@@ -74,7 +71,6 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity
      * 
      */
-    @JsonProperty("OriginAccessIdentity")
     public void setOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
     }

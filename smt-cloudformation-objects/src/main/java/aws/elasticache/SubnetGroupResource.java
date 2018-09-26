@@ -41,12 +41,26 @@ public class SubnetGroupResource
     private SubnetGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SubnetGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SubnetGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SubnetGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public SubnetGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SubnetGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-subnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SubnetGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SubnetGroupResource
     @Override
     public SubnetGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SubnetGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -41,12 +41,26 @@ public class DBSecurityGroupIngressResource
     private DBSecurityGroupIngress properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBSecurityGroupIngressResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBSecurityGroupIngressResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBSecurityGroupIngress
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html
      * 
      */
-    @JsonProperty("Properties")
     public DBSecurityGroupIngress getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DBSecurityGroupIngressResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBSecurityGroupIngress properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DBSecurityGroupIngressResource
     @Override
     public DBSecurityGroupIngressResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBSecurityGroupIngressResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

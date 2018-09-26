@@ -46,7 +46,6 @@ public class DataExport {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public Destination getDestination() {
         return destination;
     }
@@ -57,7 +56,6 @@ public class DataExport {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public void setDestination(Destination destination) {
         this.destination = destination;
     }
@@ -71,7 +69,6 @@ public class DataExport {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-outputschemaversion
      * 
      */
-    @JsonProperty("OutputSchemaVersion")
     public CharSequence getOutputSchemaVersion() {
         return outputSchemaVersion;
     }
@@ -80,7 +77,6 @@ public class DataExport {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-outputschemaversion
      * 
      */
-    @JsonProperty("OutputSchemaVersion")
     public void setOutputSchemaVersion(CharSequence outputSchemaVersion) {
         this.outputSchemaVersion = outputSchemaVersion;
     }

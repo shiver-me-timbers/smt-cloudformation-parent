@@ -41,12 +41,26 @@ public class ReplicationSubnetGroupResource
     private ReplicationSubnetGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ReplicationSubnetGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ReplicationSubnetGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ReplicationSubnetGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ReplicationSubnetGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ReplicationSubnetGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ReplicationSubnetGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ReplicationSubnetGroupResource
     @Override
     public ReplicationSubnetGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ReplicationSubnetGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

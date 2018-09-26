@@ -42,7 +42,6 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
      * 
      */
-    @JsonProperty("Bucket")
     public CharSequence getBucket() {
         return bucket;
     }
@@ -51,7 +50,6 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
      * 
      */
-    @JsonProperty("Bucket")
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -65,7 +63,6 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
@@ -74,7 +71,6 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }

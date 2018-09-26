@@ -90,7 +90,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html
      * 
      */
-    @JsonProperty("BudgetLimit")
     public Spend getBudgetLimit() {
         return budgetLimit;
     }
@@ -101,7 +100,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html
      * 
      */
-    @JsonProperty("BudgetLimit")
     public void setBudgetLimit(Spend budgetLimit) {
         this.budgetLimit = budgetLimit;
     }
@@ -117,7 +115,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html
      * 
      */
-    @JsonProperty("TimePeriod")
     public TimePeriod getTimePeriod() {
         return timePeriod;
     }
@@ -128,7 +125,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html
      * 
      */
-    @JsonProperty("TimePeriod")
     public void setTimePeriod(TimePeriod timePeriod) {
         this.timePeriod = timePeriod;
     }
@@ -142,7 +138,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit
      * 
      */
-    @JsonProperty("TimeUnit")
     public CharSequence getTimeUnit() {
         return timeUnit;
     }
@@ -151,7 +146,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit
      * 
      */
-    @JsonProperty("TimeUnit")
     public void setTimeUnit(CharSequence timeUnit) {
         this.timeUnit = timeUnit;
     }
@@ -165,7 +159,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
      */
-    @JsonProperty("CostFilters")
     public CostFilters getCostFilters() {
         return costFilters;
     }
@@ -174,7 +167,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
      */
-    @JsonProperty("CostFilters")
     public void setCostFilters(CostFilters costFilters) {
         this.costFilters = costFilters;
     }
@@ -188,7 +180,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetname
      * 
      */
-    @JsonProperty("BudgetName")
     public CharSequence getBudgetName() {
         return budgetName;
     }
@@ -197,7 +188,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetname
      * 
      */
-    @JsonProperty("BudgetName")
     public void setBudgetName(CharSequence budgetName) {
         this.budgetName = budgetName;
     }
@@ -213,7 +203,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html
      * 
      */
-    @JsonProperty("CostTypes")
     public CostTypes getCostTypes() {
         return costTypes;
     }
@@ -224,7 +213,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html
      * 
      */
-    @JsonProperty("CostTypes")
     public void setCostTypes(CostTypes costTypes) {
         this.costTypes = costTypes;
     }
@@ -238,7 +226,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype
      * 
      */
-    @JsonProperty("BudgetType")
     public CharSequence getBudgetType() {
         return budgetType;
     }
@@ -247,7 +234,6 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype
      * 
      */
-    @JsonProperty("BudgetType")
     public void setBudgetType(CharSequence budgetType) {
         this.budgetType = budgetType;
     }

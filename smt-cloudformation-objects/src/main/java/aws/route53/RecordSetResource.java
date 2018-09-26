@@ -41,12 +41,26 @@ public class RecordSetResource
     private RecordSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RecordSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RecordSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * RecordSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html
      * 
      */
-    @JsonProperty("Properties")
     public RecordSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class RecordSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(RecordSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class RecordSetResource
     @Override
     public RecordSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RecordSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

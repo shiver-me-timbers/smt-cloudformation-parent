@@ -163,7 +163,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid
      * 
      */
-    @JsonProperty("KmsKeyId")
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -172,7 +171,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid
      * 
      */
-    @JsonProperty("KmsKeyId")
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -186,7 +184,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -195,7 +192,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -209,7 +205,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -218,7 +213,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -234,7 +228,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
      * 
      */
-    @JsonProperty("S3Settings")
     public S3Settings getS3Settings() {
         return s3Settings;
     }
@@ -245,7 +238,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
      * 
      */
-    @JsonProperty("S3Settings")
     public void setS3Settings(S3Settings s3Settings) {
         this.s3Settings = s3Settings;
     }
@@ -259,7 +251,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename
      * 
      */
-    @JsonProperty("EngineName")
     public CharSequence getEngineName() {
         return engineName;
     }
@@ -268,7 +259,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename
      * 
      */
-    @JsonProperty("EngineName")
     public void setEngineName(CharSequence engineName) {
         this.engineName = engineName;
     }
@@ -284,7 +274,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html
      * 
      */
-    @JsonProperty("DynamoDbSettings")
     public DynamoDbSettings getDynamoDbSettings() {
         return dynamoDbSettings;
     }
@@ -295,7 +284,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html
      * 
      */
-    @JsonProperty("DynamoDbSettings")
     public void setDynamoDbSettings(DynamoDbSettings dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
     }
@@ -309,7 +297,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username
      * 
      */
-    @JsonProperty("Username")
     public CharSequence getUsername() {
         return username;
     }
@@ -318,7 +305,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username
      * 
      */
-    @JsonProperty("Username")
     public void setUsername(CharSequence username) {
         this.username = username;
     }
@@ -332,7 +318,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-sslmode
      * 
      */
-    @JsonProperty("SslMode")
     public CharSequence getSslMode() {
         return sslMode;
     }
@@ -341,7 +326,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-sslmode
      * 
      */
-    @JsonProperty("SslMode")
     public void setSslMode(CharSequence sslMode) {
         this.sslMode = sslMode;
     }
@@ -355,7 +339,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-servername
      * 
      */
-    @JsonProperty("ServerName")
     public CharSequence getServerName() {
         return serverName;
     }
@@ -364,7 +347,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-servername
      * 
      */
-    @JsonProperty("ServerName")
     public void setServerName(CharSequence serverName) {
         this.serverName = serverName;
     }
@@ -378,7 +360,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-extraconnectionattributes
      * 
      */
-    @JsonProperty("ExtraConnectionAttributes")
     public CharSequence getExtraConnectionAttributes() {
         return extraConnectionAttributes;
     }
@@ -387,7 +368,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-extraconnectionattributes
      * 
      */
-    @JsonProperty("ExtraConnectionAttributes")
     public void setExtraConnectionAttributes(CharSequence extraConnectionAttributes) {
         this.extraConnectionAttributes = extraConnectionAttributes;
     }
@@ -401,7 +381,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointtype
      * 
      */
-    @JsonProperty("EndpointType")
     public CharSequence getEndpointType() {
         return endpointType;
     }
@@ -410,7 +389,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointtype
      * 
      */
-    @JsonProperty("EndpointType")
     public void setEndpointType(CharSequence endpointType) {
         this.endpointType = endpointType;
     }
@@ -424,7 +402,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -433,7 +410,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -447,7 +423,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointidentifier
      * 
      */
-    @JsonProperty("EndpointIdentifier")
     public CharSequence getEndpointIdentifier() {
         return endpointIdentifier;
     }
@@ -456,7 +431,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointidentifier
      * 
      */
-    @JsonProperty("EndpointIdentifier")
     public void setEndpointIdentifier(CharSequence endpointIdentifier) {
         this.endpointIdentifier = endpointIdentifier;
     }
@@ -470,7 +444,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-password
      * 
      */
-    @JsonProperty("Password")
     public CharSequence getPassword() {
         return password;
     }
@@ -479,7 +452,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-password
      * 
      */
-    @JsonProperty("Password")
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -493,7 +465,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-certificatearn
      * 
      */
-    @JsonProperty("CertificateArn")
     public CharSequence getCertificateArn() {
         return certificateArn;
     }
@@ -502,7 +473,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-certificatearn
      * 
      */
-    @JsonProperty("CertificateArn")
     public void setCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
     }
@@ -518,7 +488,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html
      * 
      */
-    @JsonProperty("MongoDbSettings")
     public MongoDbSettings getMongoDbSettings() {
         return mongoDbSettings;
     }
@@ -529,7 +498,6 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html
      * 
      */
-    @JsonProperty("MongoDbSettings")
     public void setMongoDbSettings(MongoDbSettings mongoDbSettings) {
         this.mongoDbSettings = mongoDbSettings;
     }

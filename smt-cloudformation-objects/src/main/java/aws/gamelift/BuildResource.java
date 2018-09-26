@@ -41,12 +41,26 @@ public class BuildResource
     private Build properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BuildResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BuildResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Build
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
      * 
      */
-    @JsonProperty("Properties")
     public Build getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class BuildResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Build properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class BuildResource
     @Override
     public BuildResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BuildResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

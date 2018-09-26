@@ -50,7 +50,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn
      * 
      */
-    @JsonProperty("Arn")
     public CharSequence getArn() {
         return arn;
     }
@@ -59,7 +58,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn
      * 
      */
-    @JsonProperty("Arn")
     public void setArn(CharSequence arn) {
         this.arn = arn;
     }
@@ -73,7 +71,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -82,7 +79,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -96,7 +92,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -105,7 +100,6 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

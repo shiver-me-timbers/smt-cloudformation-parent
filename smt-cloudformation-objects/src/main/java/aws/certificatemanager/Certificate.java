@@ -74,7 +74,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -83,7 +82,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -97,7 +95,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainvalidationoptions
      * 
      */
-    @JsonProperty("DomainValidationOptions")
     public Set<DomainValidationOption> getDomainValidationOptions() {
         return domainValidationOptions;
     }
@@ -106,7 +103,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainvalidationoptions
      * 
      */
-    @JsonProperty("DomainValidationOptions")
     public void setDomainValidationOptions(Set<DomainValidationOption> domainValidationOptions) {
         this.domainValidationOptions = domainValidationOptions;
     }
@@ -120,7 +116,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-subjectalternativenames
      * 
      */
-    @JsonProperty("SubjectAlternativeNames")
     public Set<CharSequence> getSubjectAlternativeNames() {
         return subjectAlternativeNames;
     }
@@ -129,7 +124,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-subjectalternativenames
      * 
      */
-    @JsonProperty("SubjectAlternativeNames")
     public void setSubjectAlternativeNames(Set<CharSequence> subjectAlternativeNames) {
         this.subjectAlternativeNames = subjectAlternativeNames;
     }
@@ -143,7 +137,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -152,7 +145,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -166,7 +158,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-validationmethod
      * 
      */
-    @JsonProperty("ValidationMethod")
     public CharSequence getValidationMethod() {
         return validationMethod;
     }
@@ -175,7 +166,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-validationmethod
      * 
      */
-    @JsonProperty("ValidationMethod")
     public void setValidationMethod(CharSequence validationMethod) {
         this.validationMethod = validationMethod;
     }

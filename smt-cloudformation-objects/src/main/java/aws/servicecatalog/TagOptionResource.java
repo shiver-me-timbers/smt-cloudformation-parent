@@ -41,12 +41,26 @@ public class TagOptionResource
     private TagOption properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TagOptionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TagOptionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TagOption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html
      * 
      */
-    @JsonProperty("Properties")
     public TagOption getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TagOptionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TagOption properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TagOptionResource
     @Override
     public TagOptionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TagOptionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

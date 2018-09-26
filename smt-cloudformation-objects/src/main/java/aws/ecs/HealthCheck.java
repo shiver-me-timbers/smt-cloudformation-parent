@@ -70,7 +70,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command
      * 
      */
-    @JsonProperty("Command")
     public Set<CharSequence> getCommand() {
         return command;
     }
@@ -79,7 +78,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command
      * 
      */
-    @JsonProperty("Command")
     public void setCommand(Set<CharSequence> command) {
         this.command = command;
     }
@@ -93,7 +91,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-interval
      * 
      */
-    @JsonProperty("Interval")
     public Integer getInterval() {
         return interval;
     }
@@ -102,7 +99,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-interval
      * 
      */
-    @JsonProperty("Interval")
     public void setInterval(Integer interval) {
         this.interval = interval;
     }
@@ -116,7 +112,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-retries
      * 
      */
-    @JsonProperty("Retries")
     public Integer getRetries() {
         return retries;
     }
@@ -125,7 +120,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-retries
      * 
      */
-    @JsonProperty("Retries")
     public void setRetries(Integer retries) {
         this.retries = retries;
     }
@@ -139,7 +133,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-startperiod
      * 
      */
-    @JsonProperty("StartPeriod")
     public Integer getStartPeriod() {
         return startPeriod;
     }
@@ -148,7 +141,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-startperiod
      * 
      */
-    @JsonProperty("StartPeriod")
     public void setStartPeriod(Integer startPeriod) {
         this.startPeriod = startPeriod;
     }
@@ -162,7 +154,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public Integer getTimeout() {
         return timeout;
     }
@@ -171,7 +162,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public void setTimeout(Integer timeout) {
         this.timeout = timeout;
     }

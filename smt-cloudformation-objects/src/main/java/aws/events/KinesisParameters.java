@@ -34,7 +34,6 @@ public class KinesisParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath
      * 
      */
-    @JsonProperty("PartitionKeyPath")
     public CharSequence getPartitionKeyPath() {
         return partitionKeyPath;
     }
@@ -43,7 +42,6 @@ public class KinesisParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath
      * 
      */
-    @JsonProperty("PartitionKeyPath")
     public void setPartitionKeyPath(CharSequence partitionKeyPath) {
         this.partitionKeyPath = partitionKeyPath;
     }

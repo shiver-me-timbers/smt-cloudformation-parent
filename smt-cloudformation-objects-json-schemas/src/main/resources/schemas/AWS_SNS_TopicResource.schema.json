@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_TopicResource.schema.json",
+  "title" : "TopicResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sns.TopicResource",
+  "javaInterfaces" : [ "aws.HasAttributes<TopicAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SNS_Topic.schema.json"
+    }
+  }
+}

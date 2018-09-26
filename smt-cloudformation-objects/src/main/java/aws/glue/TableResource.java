@@ -41,12 +41,26 @@ public class TableResource
     private Table properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TableResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TableResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Table
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html
      * 
      */
-    @JsonProperty("Properties")
     public Table getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TableResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Table properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TableResource
     @Override
     public TableResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TableResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

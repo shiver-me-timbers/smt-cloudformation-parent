@@ -42,7 +42,6 @@ public class ServiceRegistry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -51,7 +50,6 @@ public class ServiceRegistry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -65,7 +63,6 @@ public class ServiceRegistry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-registryarn
      * 
      */
-    @JsonProperty("RegistryArn")
     public CharSequence getRegistryArn() {
         return registryArn;
     }
@@ -74,7 +71,6 @@ public class ServiceRegistry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-registryarn
      * 
      */
-    @JsonProperty("RegistryArn")
     public void setRegistryArn(CharSequence registryArn) {
         this.registryArn = registryArn;
     }

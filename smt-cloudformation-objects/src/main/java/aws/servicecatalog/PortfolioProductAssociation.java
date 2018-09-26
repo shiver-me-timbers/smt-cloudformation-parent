@@ -58,7 +58,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid
      * 
      */
-    @JsonProperty("SourcePortfolioId")
     public CharSequence getSourcePortfolioId() {
         return sourcePortfolioId;
     }
@@ -67,7 +66,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid
      * 
      */
-    @JsonProperty("SourcePortfolioId")
     public void setSourcePortfolioId(CharSequence sourcePortfolioId) {
         this.sourcePortfolioId = sourcePortfolioId;
     }
@@ -81,7 +79,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -90,7 +87,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -104,7 +100,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -113,7 +108,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
@@ -127,7 +121,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-productid
      * 
      */
-    @JsonProperty("ProductId")
     public CharSequence getProductId() {
         return productId;
     }
@@ -136,7 +129,6 @@ public class PortfolioProductAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-productid
      * 
      */
-    @JsonProperty("ProductId")
     public void setProductId(CharSequence productId) {
         this.productId = productId;
     }

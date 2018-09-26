@@ -58,7 +58,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html
      * 
      */
-    @JsonProperty("Capabilities")
     public KernelCapabilities getCapabilities() {
         return capabilities;
     }
@@ -69,7 +68,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html
      * 
      */
-    @JsonProperty("Capabilities")
     public void setCapabilities(KernelCapabilities capabilities) {
         this.capabilities = capabilities;
     }
@@ -83,7 +81,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices
      * 
      */
-    @JsonProperty("Devices")
     public Set<Device> getDevices() {
         return devices;
     }
@@ -92,7 +89,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices
      * 
      */
-    @JsonProperty("Devices")
     public void setDevices(Set<Device> devices) {
         this.devices = devices;
     }
@@ -106,7 +102,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
      * 
      */
-    @JsonProperty("InitProcessEnabled")
     public Boolean getInitProcessEnabled() {
         return initProcessEnabled;
     }
@@ -115,7 +110,6 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
      * 
      */
-    @JsonProperty("InitProcessEnabled")
     public void setInitProcessEnabled(Boolean initProcessEnabled) {
         this.initProcessEnabled = initProcessEnabled;
     }

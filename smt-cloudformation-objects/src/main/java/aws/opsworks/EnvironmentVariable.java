@@ -50,7 +50,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -59,7 +58,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -73,7 +71,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-secure
      * 
      */
-    @JsonProperty("Secure")
     public Boolean getSecure() {
         return secure;
     }
@@ -82,7 +79,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-secure
      * 
      */
-    @JsonProperty("Secure")
     public void setSecure(Boolean secure) {
         this.secure = secure;
     }
@@ -96,7 +92,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -105,7 +100,6 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }

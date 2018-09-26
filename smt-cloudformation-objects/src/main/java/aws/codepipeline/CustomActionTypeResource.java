@@ -41,12 +41,26 @@ public class CustomActionTypeResource
     private CustomActionType properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CustomActionTypeResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CustomActionTypeResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CustomActionType
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
      * 
      */
-    @JsonProperty("Properties")
     public CustomActionType getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class CustomActionTypeResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CustomActionType properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class CustomActionTypeResource
     @Override
     public CustomActionTypeResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CustomActionTypeResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

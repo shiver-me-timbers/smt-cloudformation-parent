@@ -66,7 +66,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirenumbers
      * 
      */
-    @JsonProperty("RequireNumbers")
     public Boolean getRequireNumbers() {
         return requireNumbers;
     }
@@ -75,7 +74,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirenumbers
      * 
      */
-    @JsonProperty("RequireNumbers")
     public void setRequireNumbers(Boolean requireNumbers) {
         this.requireNumbers = requireNumbers;
     }
@@ -89,7 +87,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-minimumlength
      * 
      */
-    @JsonProperty("MinimumLength")
     public Integer getMinimumLength() {
         return minimumLength;
     }
@@ -98,7 +95,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-minimumlength
      * 
      */
-    @JsonProperty("MinimumLength")
     public void setMinimumLength(Integer minimumLength) {
         this.minimumLength = minimumLength;
     }
@@ -112,7 +108,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requireuppercase
      * 
      */
-    @JsonProperty("RequireUppercase")
     public Boolean getRequireUppercase() {
         return requireUppercase;
     }
@@ -121,7 +116,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requireuppercase
      * 
      */
-    @JsonProperty("RequireUppercase")
     public void setRequireUppercase(Boolean requireUppercase) {
         this.requireUppercase = requireUppercase;
     }
@@ -135,7 +129,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirelowercase
      * 
      */
-    @JsonProperty("RequireLowercase")
     public Boolean getRequireLowercase() {
         return requireLowercase;
     }
@@ -144,7 +137,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requirelowercase
      * 
      */
-    @JsonProperty("RequireLowercase")
     public void setRequireLowercase(Boolean requireLowercase) {
         this.requireLowercase = requireLowercase;
     }
@@ -158,7 +150,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requiresymbols
      * 
      */
-    @JsonProperty("RequireSymbols")
     public Boolean getRequireSymbols() {
         return requireSymbols;
     }
@@ -167,7 +158,6 @@ public class PasswordPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html#cfn-cognito-userpool-passwordpolicy-requiresymbols
      * 
      */
-    @JsonProperty("RequireSymbols")
     public void setRequireSymbols(Boolean requireSymbols) {
         this.requireSymbols = requireSymbols;
     }

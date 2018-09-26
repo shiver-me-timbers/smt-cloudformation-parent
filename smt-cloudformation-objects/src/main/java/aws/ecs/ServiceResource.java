@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ServiceResource
     extends Resource
+    implements HasAttributes<ServiceAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ServiceResource
     private Service properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ServiceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ServiceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Service
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
      * 
      */
-    @JsonProperty("Properties")
     public Service getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ServiceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Service properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ServiceResource
     @Override
     public ServiceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ServiceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

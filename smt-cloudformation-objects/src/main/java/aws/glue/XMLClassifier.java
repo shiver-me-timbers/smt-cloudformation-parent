@@ -50,7 +50,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag
      * 
      */
-    @JsonProperty("RowTag")
     public CharSequence getRowTag() {
         return rowTag;
     }
@@ -59,7 +58,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag
      * 
      */
-    @JsonProperty("RowTag")
     public void setRowTag(CharSequence rowTag) {
         this.rowTag = rowTag;
     }
@@ -73,7 +71,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification
      * 
      */
-    @JsonProperty("Classification")
     public CharSequence getClassification() {
         return classification;
     }
@@ -82,7 +79,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification
      * 
      */
-    @JsonProperty("Classification")
     public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
@@ -96,7 +92,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -105,7 +100,6 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

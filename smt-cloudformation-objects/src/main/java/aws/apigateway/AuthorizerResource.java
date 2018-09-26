@@ -41,12 +41,26 @@ public class AuthorizerResource
     private Authorizer properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AuthorizerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AuthorizerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Authorizer
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html
      * 
      */
-    @JsonProperty("Properties")
     public Authorizer getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AuthorizerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Authorizer properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AuthorizerResource
     @Override
     public AuthorizerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AuthorizerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

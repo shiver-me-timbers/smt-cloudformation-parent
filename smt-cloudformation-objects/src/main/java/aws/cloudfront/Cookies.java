@@ -44,7 +44,6 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames
      * 
      */
-    @JsonProperty("WhitelistedNames")
     public List<CharSequence> getWhitelistedNames() {
         return whitelistedNames;
     }
@@ -53,7 +52,6 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames
      * 
      */
-    @JsonProperty("WhitelistedNames")
     public void setWhitelistedNames(List<CharSequence> whitelistedNames) {
         this.whitelistedNames = whitelistedNames;
     }
@@ -67,7 +65,6 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward
      * 
      */
-    @JsonProperty("Forward")
     public CharSequence getForward() {
         return forward;
     }
@@ -76,7 +73,6 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward
      * 
      */
-    @JsonProperty("Forward")
     public void setForward(CharSequence forward) {
         this.forward = forward;
     }

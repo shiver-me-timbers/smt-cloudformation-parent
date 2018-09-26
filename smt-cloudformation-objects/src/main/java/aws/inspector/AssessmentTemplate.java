@@ -69,7 +69,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
      * 
      */
-    @JsonProperty("AssessmentTargetArn")
     public CharSequence getAssessmentTargetArn() {
         return assessmentTargetArn;
     }
@@ -78,7 +77,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
      * 
      */
-    @JsonProperty("AssessmentTargetArn")
     public void setAssessmentTargetArn(CharSequence assessmentTargetArn) {
         this.assessmentTargetArn = assessmentTargetArn;
     }
@@ -92,7 +90,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
      * 
      */
-    @JsonProperty("DurationInSeconds")
     public Integer getDurationInSeconds() {
         return durationInSeconds;
     }
@@ -101,7 +98,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
      * 
      */
-    @JsonProperty("DurationInSeconds")
     public void setDurationInSeconds(Integer durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }
@@ -115,7 +111,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
      * 
      */
-    @JsonProperty("AssessmentTemplateName")
     public CharSequence getAssessmentTemplateName() {
         return assessmentTemplateName;
     }
@@ -124,7 +119,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
      * 
      */
-    @JsonProperty("AssessmentTemplateName")
     public void setAssessmentTemplateName(CharSequence assessmentTemplateName) {
         this.assessmentTemplateName = assessmentTemplateName;
     }
@@ -138,7 +132,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
      * 
      */
-    @JsonProperty("RulesPackageArns")
     public List<CharSequence> getRulesPackageArns() {
         return rulesPackageArns;
     }
@@ -147,7 +140,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
      * 
      */
-    @JsonProperty("RulesPackageArns")
     public void setRulesPackageArns(List<CharSequence> rulesPackageArns) {
         this.rulesPackageArns = rulesPackageArns;
     }
@@ -161,7 +153,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings
      * 
      */
-    @JsonProperty("UserAttributesForFindings")
     public List<Tag> getUserAttributesForFindings() {
         return userAttributesForFindings;
     }
@@ -170,7 +161,6 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings
      * 
      */
-    @JsonProperty("UserAttributesForFindings")
     public void setUserAttributesForFindings(List<Tag> userAttributesForFindings) {
         this.userAttributesForFindings = userAttributesForFindings;
     }

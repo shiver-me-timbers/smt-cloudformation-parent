@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Named.schema.json",
+  "title": "Named",
+  "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html",
+  "type": "object",
+  "javaType": "aws.Named",
+  "javaInterfaces": ["aws.HasName"],
+  "properties": {
+    "Name": {
+      "type": "string"
+    }
+  },
+  "required": ["Name"]
+}

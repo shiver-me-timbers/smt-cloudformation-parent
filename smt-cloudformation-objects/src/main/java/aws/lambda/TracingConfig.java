@@ -34,7 +34,6 @@ public class TracingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode
      * 
      */
-    @JsonProperty("Mode")
     public CharSequence getMode() {
         return mode;
     }
@@ -43,7 +42,6 @@ public class TracingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode
      * 
      */
-    @JsonProperty("Mode")
     public void setMode(CharSequence mode) {
         this.mode = mode;
     }

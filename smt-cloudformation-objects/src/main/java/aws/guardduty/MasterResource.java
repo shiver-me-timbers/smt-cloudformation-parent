@@ -41,12 +41,26 @@ public class MasterResource
     private Master properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MasterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MasterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Master
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html
      * 
      */
-    @JsonProperty("Properties")
     public Master getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MasterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Master properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MasterResource
     @Override
     public MasterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MasterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

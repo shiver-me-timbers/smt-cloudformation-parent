@@ -41,12 +41,26 @@ public class SizeConstraintSetResource
     private SizeConstraintSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SizeConstraintSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SizeConstraintSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SizeConstraintSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html
      * 
      */
-    @JsonProperty("Properties")
     public SizeConstraintSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SizeConstraintSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SizeConstraintSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SizeConstraintSetResource
     @Override
     public SizeConstraintSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SizeConstraintSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

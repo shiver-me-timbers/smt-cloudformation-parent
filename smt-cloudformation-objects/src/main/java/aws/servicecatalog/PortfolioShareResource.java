@@ -41,12 +41,26 @@ public class PortfolioShareResource
     private PortfolioShare properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PortfolioShareResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PortfolioShareResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * PortfolioShare
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
      * 
      */
-    @JsonProperty("Properties")
     public PortfolioShare getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PortfolioShareResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioshare.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(PortfolioShare properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PortfolioShareResource
     @Override
     public PortfolioShareResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PortfolioShareResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

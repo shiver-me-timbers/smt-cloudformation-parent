@@ -50,7 +50,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-spotinstancetype
      * 
      */
-    @JsonProperty("SpotInstanceType")
     public CharSequence getSpotInstanceType() {
         return spotInstanceType;
     }
@@ -59,7 +58,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-spotinstancetype
      * 
      */
-    @JsonProperty("SpotInstanceType")
     public void setSpotInstanceType(CharSequence spotInstanceType) {
         this.spotInstanceType = spotInstanceType;
     }
@@ -73,7 +71,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-instanceinterruptionbehavior
      * 
      */
-    @JsonProperty("InstanceInterruptionBehavior")
     public CharSequence getInstanceInterruptionBehavior() {
         return instanceInterruptionBehavior;
     }
@@ -82,7 +79,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-instanceinterruptionbehavior
      * 
      */
-    @JsonProperty("InstanceInterruptionBehavior")
     public void setInstanceInterruptionBehavior(CharSequence instanceInterruptionBehavior) {
         this.instanceInterruptionBehavior = instanceInterruptionBehavior;
     }
@@ -96,7 +92,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-maxprice
      * 
      */
-    @JsonProperty("MaxPrice")
     public CharSequence getMaxPrice() {
         return maxPrice;
     }
@@ -105,7 +100,6 @@ public class SpotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions-maxprice
      * 
      */
-    @JsonProperty("MaxPrice")
     public void setMaxPrice(CharSequence maxPrice) {
         this.maxPrice = maxPrice;
     }

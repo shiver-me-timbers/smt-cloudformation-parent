@@ -41,12 +41,26 @@ public class ConfigurationRecorderResource
     private ConfigurationRecorder properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConfigurationRecorderResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ConfigurationRecorderResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ConfigurationRecorder
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html
      * 
      */
-    @JsonProperty("Properties")
     public ConfigurationRecorder getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ConfigurationRecorderResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ConfigurationRecorder properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ConfigurationRecorderResource
     @Override
     public ConfigurationRecorderResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ConfigurationRecorderResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

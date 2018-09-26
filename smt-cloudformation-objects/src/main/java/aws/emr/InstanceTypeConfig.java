@@ -80,7 +80,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice
      * 
      */
-    @JsonProperty("BidPrice")
     public CharSequence getBidPrice() {
         return bidPrice;
     }
@@ -89,7 +88,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice
      * 
      */
-    @JsonProperty("BidPrice")
     public void setBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
     }
@@ -103,7 +101,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice
      * 
      */
-    @JsonProperty("BidPriceAsPercentageOfOnDemandPrice")
     public Double getBidPriceAsPercentageOfOnDemandPrice() {
         return bidPriceAsPercentageOfOnDemandPrice;
     }
@@ -112,7 +109,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice
      * 
      */
-    @JsonProperty("BidPriceAsPercentageOfOnDemandPrice")
     public void setBidPriceAsPercentageOfOnDemandPrice(Double bidPriceAsPercentageOfOnDemandPrice) {
         this.bidPriceAsPercentageOfOnDemandPrice = bidPriceAsPercentageOfOnDemandPrice;
     }
@@ -126,7 +122,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-configurations
      * 
      */
-    @JsonProperty("Configurations")
     public Set<Configuration> getConfigurations() {
         return configurations;
     }
@@ -135,7 +130,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-configurations
      * 
      */
-    @JsonProperty("Configurations")
     public void setConfigurations(Set<Configuration> configurations) {
         this.configurations = configurations;
     }
@@ -151,7 +145,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
-    @JsonProperty("EbsConfiguration")
     public EbsConfiguration getEbsConfiguration() {
         return ebsConfiguration;
     }
@@ -162,7 +155,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
-    @JsonProperty("EbsConfiguration")
     public void setEbsConfiguration(EbsConfiguration ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
     }
@@ -176,7 +168,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -185,7 +176,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -199,7 +189,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-weightedcapacity
      * 
      */
-    @JsonProperty("WeightedCapacity")
     public Integer getWeightedCapacity() {
         return weightedCapacity;
     }
@@ -208,7 +197,6 @@ public class InstanceTypeConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-weightedcapacity
      * 
      */
-    @JsonProperty("WeightedCapacity")
     public void setWeightedCapacity(Integer weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }

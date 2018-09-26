@@ -41,12 +41,26 @@ public class CrawlerResource
     private Crawler properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CrawlerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CrawlerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Crawler
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
      * 
      */
-    @JsonProperty("Properties")
     public Crawler getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class CrawlerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Crawler properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class CrawlerResource
     @Override
     public CrawlerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CrawlerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

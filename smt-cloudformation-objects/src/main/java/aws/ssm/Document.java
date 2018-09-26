@@ -53,7 +53,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
-    @JsonProperty("Content")
     public Content getContent() {
         return content;
     }
@@ -62,7 +61,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
-    @JsonProperty("Content")
     public void setContent(Content content) {
         this.content = content;
     }
@@ -76,7 +74,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
      * 
      */
-    @JsonProperty("DocumentType")
     public CharSequence getDocumentType() {
         return documentType;
     }
@@ -85,7 +82,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
      * 
      */
-    @JsonProperty("DocumentType")
     public void setDocumentType(CharSequence documentType) {
         this.documentType = documentType;
     }
@@ -99,7 +95,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -108,7 +103,6 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

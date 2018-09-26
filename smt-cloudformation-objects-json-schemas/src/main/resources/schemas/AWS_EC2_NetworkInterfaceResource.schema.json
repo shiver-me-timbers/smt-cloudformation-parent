@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_NetworkInterfaceResource.schema.json",
+  "title" : "NetworkInterfaceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.NetworkInterfaceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<NetworkInterfaceAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_NetworkInterface.schema.json"
+    }
+  }
+}

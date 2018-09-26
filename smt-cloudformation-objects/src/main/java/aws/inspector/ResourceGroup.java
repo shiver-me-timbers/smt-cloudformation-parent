@@ -37,7 +37,6 @@ public class ResourceGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html#cfn-inspector-resourcegroup-resourcegrouptags
      * 
      */
-    @JsonProperty("ResourceGroupTags")
     public List<Tag> getResourceGroupTags() {
         return resourceGroupTags;
     }
@@ -46,7 +45,6 @@ public class ResourceGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html#cfn-inspector-resourcegroup-resourcegrouptags
      * 
      */
-    @JsonProperty("ResourceGroupTags")
     public void setResourceGroupTags(List<Tag> resourceGroupTags) {
         this.resourceGroupTags = resourceGroupTags;
     }

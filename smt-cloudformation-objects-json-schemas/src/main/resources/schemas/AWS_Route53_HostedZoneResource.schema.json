@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53_HostedZoneResource.schema.json",
+  "title" : "HostedZoneResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.route53.HostedZoneResource",
+  "javaInterfaces" : [ "aws.HasAttributes<HostedZoneAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Route53_HostedZone.schema.json"
+    }
+  }
+}

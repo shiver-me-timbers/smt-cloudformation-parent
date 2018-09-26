@@ -42,7 +42,6 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid
      * 
      */
-    @JsonProperty("DhcpOptionsId")
     public CharSequence getDhcpOptionsId() {
         return dhcpOptionsId;
     }
@@ -51,7 +50,6 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid
      * 
      */
-    @JsonProperty("DhcpOptionsId")
     public void setDhcpOptionsId(CharSequence dhcpOptionsId) {
         this.dhcpOptionsId = dhcpOptionsId;
     }
@@ -65,7 +63,6 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -74,7 +71,6 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

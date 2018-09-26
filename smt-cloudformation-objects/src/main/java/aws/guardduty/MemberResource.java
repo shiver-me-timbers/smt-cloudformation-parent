@@ -41,12 +41,26 @@ public class MemberResource
     private Member properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MemberResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MemberResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Member
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
      * 
      */
-    @JsonProperty("Properties")
     public Member getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MemberResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Member properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MemberResource
     @Override
     public MemberResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MemberResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

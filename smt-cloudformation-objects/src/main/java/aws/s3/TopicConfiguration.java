@@ -52,7 +52,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event
      * 
      */
-    @JsonProperty("Event")
     public CharSequence getEvent() {
         return event;
     }
@@ -61,7 +60,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event
      * 
      */
-    @JsonProperty("Event")
     public void setEvent(CharSequence event) {
         this.event = event;
     }
@@ -77,7 +75,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
-    @JsonProperty("Filter")
     public NotificationFilter getFilter() {
         return filter;
     }
@@ -88,7 +85,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
-    @JsonProperty("Filter")
     public void setFilter(NotificationFilter filter) {
         this.filter = filter;
     }
@@ -102,7 +98,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic
      * 
      */
-    @JsonProperty("Topic")
     public CharSequence getTopic() {
         return topic;
     }
@@ -111,7 +106,6 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic
      * 
      */
-    @JsonProperty("Topic")
     public void setTopic(CharSequence topic) {
         this.topic = topic;
     }

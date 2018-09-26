@@ -52,7 +52,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname
      * 
      */
-    @JsonProperty("ConnectionName")
     public CharSequence getConnectionName() {
         return connectionName;
     }
@@ -61,7 +60,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname
      * 
      */
-    @JsonProperty("ConnectionName")
     public void setConnectionName(CharSequence connectionName) {
         this.connectionName = connectionName;
     }
@@ -75,7 +73,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -84,7 +81,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -98,7 +94,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions
      * 
      */
-    @JsonProperty("Exclusions")
     public List<CharSequence> getExclusions() {
         return exclusions;
     }
@@ -107,7 +102,6 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions
      * 
      */
-    @JsonProperty("Exclusions")
     public void setExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
     }

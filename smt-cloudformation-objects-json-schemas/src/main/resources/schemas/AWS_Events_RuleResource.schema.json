@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Events_RuleResource.schema.json",
+  "title" : "RuleResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.events.RuleResource",
+  "javaInterfaces" : [ "aws.HasAttributes<RuleAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Events_Rule.schema.json"
+    }
+  }
+}

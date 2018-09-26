@@ -114,7 +114,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html
      * 
      */
-    @JsonProperty("PushSync")
     public PushSync getPushSync() {
         return pushSync;
     }
@@ -125,7 +124,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html
      * 
      */
-    @JsonProperty("PushSync")
     public void setPushSync(PushSync pushSync) {
         this.pushSync = pushSync;
     }
@@ -139,7 +137,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders
      * 
      */
-    @JsonProperty("CognitoIdentityProviders")
     public List<CognitoIdentityProvider> getCognitoIdentityProviders() {
         return cognitoIdentityProviders;
     }
@@ -148,7 +145,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders
      * 
      */
-    @JsonProperty("CognitoIdentityProviders")
     public void setCognitoIdentityProviders(List<CognitoIdentityProvider> cognitoIdentityProviders) {
         this.cognitoIdentityProviders = cognitoIdentityProviders;
     }
@@ -162,7 +158,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
      */
-    @JsonProperty("CognitoEvents")
     public CognitoEvents getCognitoEvents() {
         return cognitoEvents;
     }
@@ -171,7 +166,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
      */
-    @JsonProperty("CognitoEvents")
     public void setCognitoEvents(CognitoEvents cognitoEvents) {
         this.cognitoEvents = cognitoEvents;
     }
@@ -185,7 +179,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername
      * 
      */
-    @JsonProperty("DeveloperProviderName")
     public CharSequence getDeveloperProviderName() {
         return developerProviderName;
     }
@@ -194,7 +187,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername
      * 
      */
-    @JsonProperty("DeveloperProviderName")
     public void setDeveloperProviderName(CharSequence developerProviderName) {
         this.developerProviderName = developerProviderName;
     }
@@ -210,7 +202,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html
      * 
      */
-    @JsonProperty("CognitoStreams")
     public CognitoStreams getCognitoStreams() {
         return cognitoStreams;
     }
@@ -221,7 +212,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html
      * 
      */
-    @JsonProperty("CognitoStreams")
     public void setCognitoStreams(CognitoStreams cognitoStreams) {
         this.cognitoStreams = cognitoStreams;
     }
@@ -235,7 +225,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname
      * 
      */
-    @JsonProperty("IdentityPoolName")
     public CharSequence getIdentityPoolName() {
         return identityPoolName;
     }
@@ -244,7 +233,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname
      * 
      */
-    @JsonProperty("IdentityPoolName")
     public void setIdentityPoolName(CharSequence identityPoolName) {
         this.identityPoolName = identityPoolName;
     }
@@ -258,7 +246,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowunauthenticatedidentities
      * 
      */
-    @JsonProperty("AllowUnauthenticatedIdentities")
     public Boolean getAllowUnauthenticatedIdentities() {
         return allowUnauthenticatedIdentities;
     }
@@ -267,7 +254,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-allowunauthenticatedidentities
      * 
      */
-    @JsonProperty("AllowUnauthenticatedIdentities")
     public void setAllowUnauthenticatedIdentities(Boolean allowUnauthenticatedIdentities) {
         this.allowUnauthenticatedIdentities = allowUnauthenticatedIdentities;
     }
@@ -281,7 +267,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders
      * 
      */
-    @JsonProperty("SupportedLoginProviders")
     public SupportedLoginProviders getSupportedLoginProviders() {
         return supportedLoginProviders;
     }
@@ -290,7 +275,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders
      * 
      */
-    @JsonProperty("SupportedLoginProviders")
     public void setSupportedLoginProviders(SupportedLoginProviders supportedLoginProviders) {
         this.supportedLoginProviders = supportedLoginProviders;
     }
@@ -304,7 +288,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-samlproviderarns
      * 
      */
-    @JsonProperty("SamlProviderARNs")
     public List<CharSequence> getSamlProviderARNs() {
         return samlProviderARNs;
     }
@@ -313,7 +296,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-samlproviderarns
      * 
      */
-    @JsonProperty("SamlProviderARNs")
     public void setSamlProviderARNs(List<CharSequence> samlProviderARNs) {
         this.samlProviderARNs = samlProviderARNs;
     }
@@ -327,7 +309,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-openidconnectproviderarns
      * 
      */
-    @JsonProperty("OpenIdConnectProviderARNs")
     public List<CharSequence> getOpenIdConnectProviderARNs() {
         return openIdConnectProviderARNs;
     }
@@ -336,7 +317,6 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-openidconnectproviderarns
      * 
      */
-    @JsonProperty("OpenIdConnectProviderARNs")
     public void setOpenIdConnectProviderARNs(List<CharSequence> openIdConnectProviderARNs) {
         this.openIdConnectProviderARNs = openIdConnectProviderARNs;
     }

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBInstanceAttributes.schema.json",
+  "title" : "DBInstanceAttributes",
+  "type" : "string",
+  "enum" : [ "Endpoint.Address", "Endpoint.Port" ],
+  "javaType" : "aws.rds.DBInstanceAttributes"
+}

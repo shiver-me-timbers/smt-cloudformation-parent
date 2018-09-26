@@ -46,7 +46,6 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
      * 
      */
-    @JsonProperty("Certificates")
     public Set<Certificate> getCertificates() {
         return certificates;
     }
@@ -55,7 +54,6 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
      * 
      */
-    @JsonProperty("Certificates")
     public void setCertificates(Set<Certificate> certificates) {
         this.certificates = certificates;
     }
@@ -69,7 +67,6 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
      * 
      */
-    @JsonProperty("ListenerArn")
     public CharSequence getListenerArn() {
         return listenerArn;
     }
@@ -78,7 +75,6 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
      * 
      */
-    @JsonProperty("ListenerArn")
     public void setListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
     }

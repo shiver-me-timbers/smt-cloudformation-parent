@@ -50,7 +50,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -59,7 +58,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -73,7 +71,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -82,7 +79,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -96,7 +92,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-logstreamname
      * 
      */
-    @JsonProperty("LogStreamName")
     public CharSequence getLogStreamName() {
         return logStreamName;
     }
@@ -105,7 +100,6 @@ public class CloudWatchLoggingOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html#cfn-kinesisfirehose-deliverystream-cloudwatchloggingoptions-logstreamname
      * 
      */
-    @JsonProperty("LogStreamName")
     public void setLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
     }

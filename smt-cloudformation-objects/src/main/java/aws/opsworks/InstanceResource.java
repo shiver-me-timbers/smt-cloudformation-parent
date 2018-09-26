@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class InstanceResource
     extends Resource
+    implements HasAttributes<InstanceAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class InstanceResource
     private Instance properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public InstanceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public InstanceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Instance
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
      * 
      */
-    @JsonProperty("Properties")
     public Instance getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class InstanceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Instance properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class InstanceResource
     @Override
     public InstanceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public InstanceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

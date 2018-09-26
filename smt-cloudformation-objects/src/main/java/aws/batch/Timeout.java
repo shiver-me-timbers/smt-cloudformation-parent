@@ -34,7 +34,6 @@ public class Timeout {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html#cfn-batch-jobdefinition-timeout-attemptdurationseconds
      * 
      */
-    @JsonProperty("AttemptDurationSeconds")
     public Integer getAttemptDurationSeconds() {
         return attemptDurationSeconds;
     }
@@ -43,7 +42,6 @@ public class Timeout {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html#cfn-batch-jobdefinition-timeout-attemptdurationseconds
      * 
      */
-    @JsonProperty("AttemptDurationSeconds")
     public void setAttemptDurationSeconds(Integer attemptDurationSeconds) {
         this.attemptDurationSeconds = attemptDurationSeconds;
     }

@@ -110,7 +110,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner
      * 
      */
-    @JsonProperty("Owner")
     public CharSequence getOwner() {
         return owner;
     }
@@ -119,7 +118,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner
      * 
      */
-    @JsonProperty("Owner")
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
@@ -133,7 +131,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-vieworiginaltext
      * 
      */
-    @JsonProperty("ViewOriginalText")
     public CharSequence getViewOriginalText() {
         return viewOriginalText;
     }
@@ -142,7 +139,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-vieworiginaltext
      * 
      */
-    @JsonProperty("ViewOriginalText")
     public void setViewOriginalText(CharSequence viewOriginalText) {
         this.viewOriginalText = viewOriginalText;
     }
@@ -156,7 +152,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -165,7 +160,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -179,7 +173,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-tabletype
      * 
      */
-    @JsonProperty("TableType")
     public CharSequence getTableType() {
         return tableType;
     }
@@ -188,7 +181,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-tabletype
      * 
      */
-    @JsonProperty("TableType")
     public void setTableType(CharSequence tableType) {
         this.tableType = tableType;
     }
@@ -202,7 +194,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters____ getParameters() {
         return parameters;
     }
@@ -211,7 +202,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters____ parameters) {
         this.parameters = parameters;
     }
@@ -225,7 +215,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-viewexpandedtext
      * 
      */
-    @JsonProperty("ViewExpandedText")
     public CharSequence getViewExpandedText() {
         return viewExpandedText;
     }
@@ -234,7 +223,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-viewexpandedtext
      * 
      */
-    @JsonProperty("ViewExpandedText")
     public void setViewExpandedText(CharSequence viewExpandedText) {
         this.viewExpandedText = viewExpandedText;
     }
@@ -250,7 +238,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html
      * 
      */
-    @JsonProperty("StorageDescriptor")
     public StorageDescriptor getStorageDescriptor() {
         return storageDescriptor;
     }
@@ -261,7 +248,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html
      * 
      */
-    @JsonProperty("StorageDescriptor")
     public void setStorageDescriptor(StorageDescriptor storageDescriptor) {
         this.storageDescriptor = storageDescriptor;
     }
@@ -275,7 +261,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-partitionkeys
      * 
      */
-    @JsonProperty("PartitionKeys")
     public List<Column> getPartitionKeys() {
         return partitionKeys;
     }
@@ -284,7 +269,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-partitionkeys
      * 
      */
-    @JsonProperty("PartitionKeys")
     public void setPartitionKeys(List<Column> partitionKeys) {
         this.partitionKeys = partitionKeys;
     }
@@ -298,7 +282,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-retention
      * 
      */
-    @JsonProperty("Retention")
     public Integer getRetention() {
         return retention;
     }
@@ -307,7 +290,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-retention
      * 
      */
-    @JsonProperty("Retention")
     public void setRetention(Integer retention) {
         this.retention = retention;
     }
@@ -321,7 +303,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -330,7 +311,6 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

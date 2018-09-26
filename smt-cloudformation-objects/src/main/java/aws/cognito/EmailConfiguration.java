@@ -42,7 +42,6 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
      * 
      */
-    @JsonProperty("ReplyToEmailAddress")
     public CharSequence getReplyToEmailAddress() {
         return replyToEmailAddress;
     }
@@ -51,7 +50,6 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
      * 
      */
-    @JsonProperty("ReplyToEmailAddress")
     public void setReplyToEmailAddress(CharSequence replyToEmailAddress) {
         this.replyToEmailAddress = replyToEmailAddress;
     }
@@ -65,7 +63,6 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
-    @JsonProperty("SourceArn")
     public CharSequence getSourceArn() {
         return sourceArn;
     }
@@ -74,7 +71,6 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
-    @JsonProperty("SourceArn")
     public void setSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
     }

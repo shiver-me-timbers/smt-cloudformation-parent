@@ -44,7 +44,6 @@ public class AssociationParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -53,7 +52,6 @@ public class AssociationParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -67,7 +65,6 @@ public class AssociationParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-value
      * 
      */
-    @JsonProperty("Value")
     public List<CharSequence> getValue() {
         return value;
     }
@@ -76,7 +73,6 @@ public class AssociationParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html#cfn-ec2-instance-ssmassociations-associationparameters-value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(List<CharSequence> value) {
         this.value = value;
     }

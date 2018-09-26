@@ -42,7 +42,6 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock
      * 
      */
-    @JsonProperty("DestinationCidrBlock")
     public CharSequence getDestinationCidrBlock() {
         return destinationCidrBlock;
     }
@@ -51,7 +50,6 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock
      * 
      */
-    @JsonProperty("DestinationCidrBlock")
     public void setDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
     }
@@ -65,7 +63,6 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid
      * 
      */
-    @JsonProperty("VpnConnectionId")
     public CharSequence getVpnConnectionId() {
         return vpnConnectionId;
     }
@@ -74,7 +71,6 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid
      * 
      */
-    @JsonProperty("VpnConnectionId")
     public void setVpnConnectionId(CharSequence vpnConnectionId) {
         this.vpnConnectionId = vpnConnectionId;
     }

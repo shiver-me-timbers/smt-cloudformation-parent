@@ -42,7 +42,6 @@ public class ElasticIp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip
      * 
      */
-    @JsonProperty("Ip")
     public CharSequence getIp() {
         return ip;
     }
@@ -51,7 +50,6 @@ public class ElasticIp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip
      * 
      */
-    @JsonProperty("Ip")
     public void setIp(CharSequence ip) {
         this.ip = ip;
     }
@@ -65,7 +63,6 @@ public class ElasticIp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -74,7 +71,6 @@ public class ElasticIp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

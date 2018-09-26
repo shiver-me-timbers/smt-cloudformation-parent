@@ -42,7 +42,6 @@ public class LambdaFunctionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype
      * 
      */
-    @JsonProperty("EventType")
     public CharSequence getEventType() {
         return eventType;
     }
@@ -51,7 +50,6 @@ public class LambdaFunctionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype
      * 
      */
-    @JsonProperty("EventType")
     public void setEventType(CharSequence eventType) {
         this.eventType = eventType;
     }
@@ -65,7 +63,6 @@ public class LambdaFunctionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn
      * 
      */
-    @JsonProperty("LambdaFunctionARN")
     public CharSequence getLambdaFunctionARN() {
         return lambdaFunctionARN;
     }
@@ -74,7 +71,6 @@ public class LambdaFunctionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-lambdafunctionarn
      * 
      */
-    @JsonProperty("LambdaFunctionARN")
     public void setLambdaFunctionARN(CharSequence lambdaFunctionARN) {
         this.lambdaFunctionARN = lambdaFunctionARN;
     }

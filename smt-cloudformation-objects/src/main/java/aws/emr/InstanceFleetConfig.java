@@ -72,7 +72,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
      * 
      */
-    @JsonProperty("InstanceTypeConfigs")
     public Set<InstanceTypeConfig> getInstanceTypeConfigs() {
         return instanceTypeConfigs;
     }
@@ -81,7 +80,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
      * 
      */
-    @JsonProperty("InstanceTypeConfigs")
     public void setInstanceTypeConfigs(Set<InstanceTypeConfig> instanceTypeConfigs) {
         this.instanceTypeConfigs = instanceTypeConfigs;
     }
@@ -97,7 +95,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
      * 
      */
-    @JsonProperty("LaunchSpecifications")
     public InstanceFleetProvisioningSpecifications getLaunchSpecifications() {
         return launchSpecifications;
     }
@@ -108,7 +105,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
      * 
      */
-    @JsonProperty("LaunchSpecifications")
     public void setLaunchSpecifications(InstanceFleetProvisioningSpecifications launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
     }
@@ -122,7 +118,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -131,7 +126,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -145,7 +139,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
      * 
      */
-    @JsonProperty("TargetOnDemandCapacity")
     public Integer getTargetOnDemandCapacity() {
         return targetOnDemandCapacity;
     }
@@ -154,7 +147,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
      * 
      */
-    @JsonProperty("TargetOnDemandCapacity")
     public void setTargetOnDemandCapacity(Integer targetOnDemandCapacity) {
         this.targetOnDemandCapacity = targetOnDemandCapacity;
     }
@@ -168,7 +160,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
      * 
      */
-    @JsonProperty("TargetSpotCapacity")
     public Integer getTargetSpotCapacity() {
         return targetSpotCapacity;
     }
@@ -177,7 +168,6 @@ public class InstanceFleetConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
      * 
      */
-    @JsonProperty("TargetSpotCapacity")
     public void setTargetSpotCapacity(Integer targetSpotCapacity) {
         this.targetSpotCapacity = targetSpotCapacity;
     }

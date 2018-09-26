@@ -50,7 +50,6 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html
      * 
      */
-    @JsonProperty("Constraints")
     public ScalingConstraints getConstraints() {
         return constraints;
     }
@@ -61,7 +60,6 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html
      * 
      */
-    @JsonProperty("Constraints")
     public void setConstraints(ScalingConstraints constraints) {
         this.constraints = constraints;
     }
@@ -75,7 +73,6 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules
      * 
      */
-    @JsonProperty("Rules")
     public Set<ScalingRule> getRules() {
         return rules;
     }
@@ -84,7 +81,6 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules
      * 
      */
-    @JsonProperty("Rules")
     public void setRules(Set<ScalingRule> rules) {
         this.rules = rules;
     }

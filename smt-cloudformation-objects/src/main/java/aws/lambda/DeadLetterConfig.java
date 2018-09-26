@@ -34,7 +34,6 @@ public class DeadLetterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html#cfn-lambda-function-deadletterconfig-targetarn
      * 
      */
-    @JsonProperty("TargetArn")
     public CharSequence getTargetArn() {
         return targetArn;
     }
@@ -43,7 +42,6 @@ public class DeadLetterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html#cfn-lambda-function-deadletterconfig-targetarn
      * 
      */
-    @JsonProperty("TargetArn")
     public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }

@@ -50,7 +50,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
-    @JsonProperty("State")
     public CharSequence getState() {
         return state;
     }
@@ -59,7 +58,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
-    @JsonProperty("State")
     public void setState(CharSequence state) {
         this.state = state;
     }
@@ -73,7 +71,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
      */
-    @JsonProperty("LogicalOperator")
     public CharSequence getLogicalOperator() {
         return logicalOperator;
     }
@@ -82,7 +79,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
      */
-    @JsonProperty("LogicalOperator")
     public void setLogicalOperator(CharSequence logicalOperator) {
         this.logicalOperator = logicalOperator;
     }
@@ -96,7 +92,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname
      * 
      */
-    @JsonProperty("JobName")
     public CharSequence getJobName() {
         return jobName;
     }
@@ -105,7 +100,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname
      * 
      */
-    @JsonProperty("JobName")
     public void setJobName(CharSequence jobName) {
         this.jobName = jobName;
     }

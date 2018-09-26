@@ -44,7 +44,6 @@ public class ScalingAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingaction.html#cfn-elasticmapreduce-cluster-scalingaction-market
      * 
      */
-    @JsonProperty("Market")
     public CharSequence getMarket() {
         return market;
     }
@@ -53,7 +52,6 @@ public class ScalingAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingaction.html#cfn-elasticmapreduce-cluster-scalingaction-market
      * 
      */
-    @JsonProperty("Market")
     public void setMarket(CharSequence market) {
         this.market = market;
     }
@@ -69,7 +67,6 @@ public class ScalingAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("SimpleScalingPolicyConfiguration")
     public SimpleScalingPolicyConfiguration getSimpleScalingPolicyConfiguration() {
         return simpleScalingPolicyConfiguration;
     }
@@ -80,7 +77,6 @@ public class ScalingAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("SimpleScalingPolicyConfiguration")
     public void setSimpleScalingPolicyConfiguration(SimpleScalingPolicyConfiguration simpleScalingPolicyConfiguration) {
         this.simpleScalingPolicyConfiguration = simpleScalingPolicyConfiguration;
     }

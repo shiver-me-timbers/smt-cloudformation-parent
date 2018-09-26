@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Elasticsearch_DomainAttributes.schema.json",
+  "title" : "DomainAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "DomainArn", "DomainEndpoint" ],
+  "javaType" : "aws.elasticsearch.DomainAttributes"
+}

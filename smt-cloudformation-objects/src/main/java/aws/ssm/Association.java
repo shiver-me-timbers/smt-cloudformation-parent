@@ -97,7 +97,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-associationname
      * 
      */
-    @JsonProperty("AssociationName")
     public CharSequence getAssociationName() {
         return associationName;
     }
@@ -106,7 +105,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-associationname
      * 
      */
-    @JsonProperty("AssociationName")
     public void setAssociationName(CharSequence associationName) {
         this.associationName = associationName;
     }
@@ -120,7 +118,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-documentversion
      * 
      */
-    @JsonProperty("DocumentVersion")
     public CharSequence getDocumentVersion() {
         return documentVersion;
     }
@@ -129,7 +126,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-documentversion
      * 
      */
-    @JsonProperty("DocumentVersion")
     public void setDocumentVersion(CharSequence documentVersion) {
         this.documentVersion = documentVersion;
     }
@@ -143,7 +139,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -152,7 +147,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -166,7 +160,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -175,7 +168,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -191,7 +183,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html
      * 
      */
-    @JsonProperty("OutputLocation")
     public InstanceAssociationOutputLocation getOutputLocation() {
         return outputLocation;
     }
@@ -202,7 +193,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html
      * 
      */
-    @JsonProperty("OutputLocation")
     public void setOutputLocation(InstanceAssociationOutputLocation outputLocation) {
         this.outputLocation = outputLocation;
     }
@@ -216,7 +206,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Map<String, ParameterValues> getParameters() {
         return parameters;
     }
@@ -225,7 +214,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Map<String, ParameterValues> parameters) {
         this.parameters = parameters;
     }
@@ -239,7 +227,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
@@ -248,7 +235,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }
@@ -262,7 +248,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets
      * 
      */
-    @JsonProperty("Targets")
     public Set<Target> getTargets() {
         return targets;
     }
@@ -271,7 +256,6 @@ public class Association {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets
      * 
      */
-    @JsonProperty("Targets")
     public void setTargets(Set<Target> targets) {
         this.targets = targets;
     }

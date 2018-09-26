@@ -50,7 +50,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier
      * 
      */
-    @JsonProperty("CertificateIdentifier")
     public CharSequence getCertificateIdentifier() {
         return certificateIdentifier;
     }
@@ -59,7 +58,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier
      * 
      */
-    @JsonProperty("CertificateIdentifier")
     public void setCertificateIdentifier(CharSequence certificateIdentifier) {
         this.certificateIdentifier = certificateIdentifier;
     }
@@ -73,7 +71,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem
      * 
      */
-    @JsonProperty("CertificatePem")
     public CharSequence getCertificatePem() {
         return certificatePem;
     }
@@ -82,7 +79,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem
      * 
      */
-    @JsonProperty("CertificatePem")
     public void setCertificatePem(CharSequence certificatePem) {
         this.certificatePem = certificatePem;
     }
@@ -96,7 +92,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet
      * 
      */
-    @JsonProperty("CertificateWallet")
     public CharSequence getCertificateWallet() {
         return certificateWallet;
     }
@@ -105,7 +100,6 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet
      * 
      */
-    @JsonProperty("CertificateWallet")
     public void setCertificateWallet(CharSequence certificateWallet) {
         this.certificateWallet = certificateWallet;
     }

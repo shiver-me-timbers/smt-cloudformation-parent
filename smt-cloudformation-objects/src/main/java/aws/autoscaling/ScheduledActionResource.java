@@ -41,12 +41,26 @@ public class ScheduledActionResource
     private ScheduledAction properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ScheduledActionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ScheduledActionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ScheduledAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html
      * 
      */
-    @JsonProperty("Properties")
     public ScheduledAction getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ScheduledActionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ScheduledAction properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ScheduledActionResource
     @Override
     public ScheduledActionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ScheduledActionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -163,7 +163,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html
      * 
      */
-    @JsonProperty("AlarmIdentifier")
     public AlarmIdentifier getAlarmIdentifier() {
         return alarmIdentifier;
     }
@@ -174,7 +173,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html
      * 
      */
-    @JsonProperty("AlarmIdentifier")
     public void setAlarmIdentifier(AlarmIdentifier alarmIdentifier) {
         this.alarmIdentifier = alarmIdentifier;
     }
@@ -188,7 +186,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks
      * 
      */
-    @JsonProperty("ChildHealthChecks")
     public Set<CharSequence> getChildHealthChecks() {
         return childHealthChecks;
     }
@@ -197,7 +194,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks
      * 
      */
-    @JsonProperty("ChildHealthChecks")
     public void setChildHealthChecks(Set<CharSequence> childHealthChecks) {
         this.childHealthChecks = childHealthChecks;
     }
@@ -211,7 +207,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-enablesni
      * 
      */
-    @JsonProperty("EnableSNI")
     public Boolean getEnableSNI() {
         return enableSNI;
     }
@@ -220,7 +215,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-enablesni
      * 
      */
-    @JsonProperty("EnableSNI")
     public void setEnableSNI(Boolean enableSNI) {
         this.enableSNI = enableSNI;
     }
@@ -234,7 +228,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-failurethreshold
      * 
      */
-    @JsonProperty("FailureThreshold")
     public Integer getFailureThreshold() {
         return failureThreshold;
     }
@@ -243,7 +236,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-failurethreshold
      * 
      */
-    @JsonProperty("FailureThreshold")
     public void setFailureThreshold(Integer failureThreshold) {
         this.failureThreshold = failureThreshold;
     }
@@ -257,7 +249,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname
      * 
      */
-    @JsonProperty("FullyQualifiedDomainName")
     public CharSequence getFullyQualifiedDomainName() {
         return fullyQualifiedDomainName;
     }
@@ -266,7 +257,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-fullyqualifieddomainname
      * 
      */
-    @JsonProperty("FullyQualifiedDomainName")
     public void setFullyQualifiedDomainName(CharSequence fullyQualifiedDomainName) {
         this.fullyQualifiedDomainName = fullyQualifiedDomainName;
     }
@@ -280,7 +270,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-healththreshold
      * 
      */
-    @JsonProperty("HealthThreshold")
     public Integer getHealthThreshold() {
         return healthThreshold;
     }
@@ -289,7 +278,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-healththreshold
      * 
      */
-    @JsonProperty("HealthThreshold")
     public void setHealthThreshold(Integer healthThreshold) {
         this.healthThreshold = healthThreshold;
     }
@@ -303,7 +291,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-ipaddress
      * 
      */
-    @JsonProperty("IPAddress")
     public CharSequence getIPAddress() {
         return iPAddress;
     }
@@ -312,7 +299,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-ipaddress
      * 
      */
-    @JsonProperty("IPAddress")
     public void setIPAddress(CharSequence iPAddress) {
         this.iPAddress = iPAddress;
     }
@@ -326,7 +312,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus
      * 
      */
-    @JsonProperty("InsufficientDataHealthStatus")
     public CharSequence getInsufficientDataHealthStatus() {
         return insufficientDataHealthStatus;
     }
@@ -335,7 +320,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-insufficientdatahealthstatus
      * 
      */
-    @JsonProperty("InsufficientDataHealthStatus")
     public void setInsufficientDataHealthStatus(CharSequence insufficientDataHealthStatus) {
         this.insufficientDataHealthStatus = insufficientDataHealthStatus;
     }
@@ -349,7 +333,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-inverted
      * 
      */
-    @JsonProperty("Inverted")
     public Boolean getInverted() {
         return inverted;
     }
@@ -358,7 +341,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-inverted
      * 
      */
-    @JsonProperty("Inverted")
     public void setInverted(Boolean inverted) {
         this.inverted = inverted;
     }
@@ -372,7 +354,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-measurelatency
      * 
      */
-    @JsonProperty("MeasureLatency")
     public Boolean getMeasureLatency() {
         return measureLatency;
     }
@@ -381,7 +362,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-measurelatency
      * 
      */
-    @JsonProperty("MeasureLatency")
     public void setMeasureLatency(Boolean measureLatency) {
         this.measureLatency = measureLatency;
     }
@@ -395,7 +375,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -404,7 +383,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -418,7 +396,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-regions
      * 
      */
-    @JsonProperty("Regions")
     public Set<CharSequence> getRegions() {
         return regions;
     }
@@ -427,7 +404,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-regions
      * 
      */
-    @JsonProperty("Regions")
     public void setRegions(Set<CharSequence> regions) {
         this.regions = regions;
     }
@@ -441,7 +417,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-requestinterval
      * 
      */
-    @JsonProperty("RequestInterval")
     public Integer getRequestInterval() {
         return requestInterval;
     }
@@ -450,7 +425,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-requestinterval
      * 
      */
-    @JsonProperty("RequestInterval")
     public void setRequestInterval(Integer requestInterval) {
         this.requestInterval = requestInterval;
     }
@@ -464,7 +438,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-resourcepath
      * 
      */
-    @JsonProperty("ResourcePath")
     public CharSequence getResourcePath() {
         return resourcePath;
     }
@@ -473,7 +446,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-resourcepath
      * 
      */
-    @JsonProperty("ResourcePath")
     public void setResourcePath(CharSequence resourcePath) {
         this.resourcePath = resourcePath;
     }
@@ -487,7 +459,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-searchstring
      * 
      */
-    @JsonProperty("SearchString")
     public CharSequence getSearchString() {
         return searchString;
     }
@@ -496,7 +467,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-searchstring
      * 
      */
-    @JsonProperty("SearchString")
     public void setSearchString(CharSequence searchString) {
         this.searchString = searchString;
     }
@@ -510,7 +480,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -519,7 +488,6 @@ public class HealthCheckConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IAM_AccessKeyResource.schema.json",
+  "title" : "AccessKeyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iam.AccessKeyResource",
+  "javaInterfaces" : [ "aws.HasAttributes<AccessKeyAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IAM_AccessKey.schema.json"
+    }
+  }
+}

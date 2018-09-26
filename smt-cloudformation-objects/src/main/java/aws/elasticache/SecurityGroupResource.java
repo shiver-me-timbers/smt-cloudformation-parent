@@ -41,12 +41,26 @@ public class SecurityGroupResource
     private SecurityGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SecurityGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SecurityGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SecurityGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public SecurityGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SecurityGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SecurityGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SecurityGroupResource
     @Override
     public SecurityGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SecurityGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

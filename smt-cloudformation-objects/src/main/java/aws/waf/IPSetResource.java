@@ -41,12 +41,26 @@ public class IPSetResource
     private IPSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public IPSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public IPSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * IPSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html
      * 
      */
-    @JsonProperty("Properties")
     public IPSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class IPSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(IPSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class IPSetResource
     @Override
     public IPSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public IPSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

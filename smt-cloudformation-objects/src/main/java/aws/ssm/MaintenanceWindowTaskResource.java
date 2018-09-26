@@ -41,12 +41,26 @@ public class MaintenanceWindowTaskResource
     private MaintenanceWindowTask properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MaintenanceWindowTaskResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MaintenanceWindowTaskResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * MaintenanceWindowTask
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
      * 
      */
-    @JsonProperty("Properties")
     public MaintenanceWindowTask getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MaintenanceWindowTaskResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(MaintenanceWindowTask properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MaintenanceWindowTaskResource
     @Override
     public MaintenanceWindowTaskResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MaintenanceWindowTaskResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

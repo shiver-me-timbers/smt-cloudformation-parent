@@ -54,7 +54,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
-    @JsonProperty("TableInput")
     public TableInput getTableInput() {
         return tableInput;
     }
@@ -65,7 +64,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
-    @JsonProperty("TableInput")
     public void setTableInput(TableInput tableInput) {
         this.tableInput = tableInput;
     }
@@ -79,7 +77,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -88,7 +85,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -102,7 +98,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -111,7 +106,6 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

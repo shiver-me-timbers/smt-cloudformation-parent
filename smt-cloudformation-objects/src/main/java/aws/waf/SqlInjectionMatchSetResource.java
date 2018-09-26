@@ -41,12 +41,26 @@ public class SqlInjectionMatchSetResource
     private SqlInjectionMatchSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SqlInjectionMatchSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SqlInjectionMatchSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SqlInjectionMatchSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html
      * 
      */
-    @JsonProperty("Properties")
     public SqlInjectionMatchSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SqlInjectionMatchSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SqlInjectionMatchSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SqlInjectionMatchSetResource
     @Override
     public SqlInjectionMatchSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SqlInjectionMatchSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

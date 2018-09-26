@@ -46,7 +46,6 @@ public class VpcSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -55,7 +54,6 @@ public class VpcSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
@@ -69,7 +67,6 @@ public class VpcSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -78,7 +75,6 @@ public class VpcSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

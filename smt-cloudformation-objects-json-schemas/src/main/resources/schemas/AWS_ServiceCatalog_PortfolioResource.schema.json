@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceCatalog_PortfolioResource.schema.json",
+  "title" : "PortfolioResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.servicecatalog.PortfolioResource",
+  "javaInterfaces" : [ "aws.HasAttributes<PortfolioAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ServiceCatalog_Portfolio.schema.json"
+    }
+  }
+}

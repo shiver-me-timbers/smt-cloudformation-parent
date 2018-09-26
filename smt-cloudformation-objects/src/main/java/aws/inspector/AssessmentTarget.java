@@ -42,7 +42,6 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname
      * 
      */
-    @JsonProperty("AssessmentTargetName")
     public CharSequence getAssessmentTargetName() {
         return assessmentTargetName;
     }
@@ -51,7 +50,6 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname
      * 
      */
-    @JsonProperty("AssessmentTargetName")
     public void setAssessmentTargetName(CharSequence assessmentTargetName) {
         this.assessmentTargetName = assessmentTargetName;
     }
@@ -65,7 +63,6 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn
      * 
      */
-    @JsonProperty("ResourceGroupArn")
     public CharSequence getResourceGroupArn() {
         return resourceGroupArn;
     }
@@ -74,7 +71,6 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn
      * 
      */
-    @JsonProperty("ResourceGroupArn")
     public void setResourceGroupArn(CharSequence resourceGroupArn) {
         this.resourceGroupArn = resourceGroupArn;
     }

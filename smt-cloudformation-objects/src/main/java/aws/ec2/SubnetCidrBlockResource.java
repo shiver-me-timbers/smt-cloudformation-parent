@@ -41,12 +41,26 @@ public class SubnetCidrBlockResource
     private SubnetCidrBlock properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SubnetCidrBlockResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SubnetCidrBlockResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SubnetCidrBlock
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html
      * 
      */
-    @JsonProperty("Properties")
     public SubnetCidrBlock getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SubnetCidrBlockResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnetcidrblock.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SubnetCidrBlock properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SubnetCidrBlockResource
     @Override
     public SubnetCidrBlockResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SubnetCidrBlockResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

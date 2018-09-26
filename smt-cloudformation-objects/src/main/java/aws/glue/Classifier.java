@@ -58,7 +58,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
-    @JsonProperty("XMLClassifier")
     public XMLClassifier getXMLClassifier() {
         return xMLClassifier;
     }
@@ -69,7 +68,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
-    @JsonProperty("XMLClassifier")
     public void setXMLClassifier(XMLClassifier xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
     }
@@ -85,7 +83,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
-    @JsonProperty("JsonClassifier")
     public JsonClassifier getJsonClassifier() {
         return jsonClassifier;
     }
@@ -96,7 +93,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
-    @JsonProperty("JsonClassifier")
     public void setJsonClassifier(JsonClassifier jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
     }
@@ -112,7 +108,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
-    @JsonProperty("GrokClassifier")
     public GrokClassifier getGrokClassifier() {
         return grokClassifier;
     }
@@ -123,7 +118,6 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
-    @JsonProperty("GrokClassifier")
     public void setGrokClassifier(GrokClassifier grokClassifier) {
         this.grokClassifier = grokClassifier;
     }

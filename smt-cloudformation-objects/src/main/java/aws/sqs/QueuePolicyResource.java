@@ -41,12 +41,26 @@ public class QueuePolicyResource
     private QueuePolicy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public QueuePolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public QueuePolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * QueuePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public QueuePolicy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class QueuePolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(QueuePolicy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class QueuePolicyResource
     @Override
     public QueuePolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public QueuePolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

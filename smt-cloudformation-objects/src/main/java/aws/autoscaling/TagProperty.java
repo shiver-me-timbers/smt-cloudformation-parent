@@ -50,7 +50,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -59,7 +58,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -73,7 +71,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-PropagateAtLaunch
      * 
      */
-    @JsonProperty("PropagateAtLaunch")
     public Boolean getPropagateAtLaunch() {
         return propagateAtLaunch;
     }
@@ -82,7 +79,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-PropagateAtLaunch
      * 
      */
-    @JsonProperty("PropagateAtLaunch")
     public void setPropagateAtLaunch(Boolean propagateAtLaunch) {
         this.propagateAtLaunch = propagateAtLaunch;
     }
@@ -96,7 +92,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Value
      * 
      */
-    @JsonProperty("Value")
     public CharSequence getValue() {
         return value;
     }
@@ -105,7 +100,6 @@ public class TagProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html#cfn-as-tags-Value
      * 
      */
-    @JsonProperty("Value")
     public void setValue(CharSequence value) {
         this.value = value;
     }

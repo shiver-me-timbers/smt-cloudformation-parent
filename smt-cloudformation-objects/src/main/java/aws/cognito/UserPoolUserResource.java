@@ -41,12 +41,26 @@ public class UserPoolUserResource
     private UserPoolUser properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserPoolUserResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserPoolUserResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UserPoolUser
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html
      * 
      */
-    @JsonProperty("Properties")
     public UserPoolUser getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class UserPoolUserResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UserPoolUser properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class UserPoolUserResource
     @Override
     public UserPoolUserResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserPoolUserResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

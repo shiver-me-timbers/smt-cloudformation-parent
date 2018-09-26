@@ -62,7 +62,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid
      * 
      */
-    @JsonProperty("ComplianceResourceId")
     public CharSequence getComplianceResourceId() {
         return complianceResourceId;
     }
@@ -71,7 +70,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid
      * 
      */
-    @JsonProperty("ComplianceResourceId")
     public void setComplianceResourceId(CharSequence complianceResourceId) {
         this.complianceResourceId = complianceResourceId;
     }
@@ -85,7 +83,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes
      * 
      */
-    @JsonProperty("ComplianceResourceTypes")
     public Set<CharSequence> getComplianceResourceTypes() {
         return complianceResourceTypes;
     }
@@ -94,7 +91,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes
      * 
      */
-    @JsonProperty("ComplianceResourceTypes")
     public void setComplianceResourceTypes(Set<CharSequence> complianceResourceTypes) {
         this.complianceResourceTypes = complianceResourceTypes;
     }
@@ -108,7 +104,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey
      * 
      */
-    @JsonProperty("TagKey")
     public CharSequence getTagKey() {
         return tagKey;
     }
@@ -117,7 +112,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey
      * 
      */
-    @JsonProperty("TagKey")
     public void setTagKey(CharSequence tagKey) {
         this.tagKey = tagKey;
     }
@@ -131,7 +125,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue
      * 
      */
-    @JsonProperty("TagValue")
     public CharSequence getTagValue() {
         return tagValue;
     }
@@ -140,7 +133,6 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue
      * 
      */
-    @JsonProperty("TagValue")
     public void setTagValue(CharSequence tagValue) {
         this.tagValue = tagValue;
     }

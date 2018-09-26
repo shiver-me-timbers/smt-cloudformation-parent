@@ -92,7 +92,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html
      * 
      */
-    @JsonProperty("Logging")
     public Logging getLogging() {
         return logging;
     }
@@ -103,7 +102,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html
      * 
      */
-    @JsonProperty("Logging")
     public void setLogging(Logging logging) {
         this.logging = logging;
     }
@@ -117,7 +115,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment
      * 
      */
-    @JsonProperty("Comment")
     public CharSequence getComment() {
         return comment;
     }
@@ -126,7 +123,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment
      * 
      */
-    @JsonProperty("Comment")
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -140,7 +136,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-priceclass
      * 
      */
-    @JsonProperty("PriceClass")
     public CharSequence getPriceClass() {
         return priceClass;
     }
@@ -149,7 +144,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-priceclass
      * 
      */
-    @JsonProperty("PriceClass")
     public void setPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
     }
@@ -165,7 +159,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html
      * 
      */
-    @JsonProperty("S3Origin")
     public S3Origin getS3Origin() {
         return s3Origin;
     }
@@ -176,7 +169,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html
      * 
      */
-    @JsonProperty("S3Origin")
     public void setS3Origin(S3Origin s3Origin) {
         this.s3Origin = s3Origin;
     }
@@ -190,7 +182,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -199,7 +190,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -213,7 +203,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases
      * 
      */
-    @JsonProperty("Aliases")
     public List<CharSequence> getAliases() {
         return aliases;
     }
@@ -222,7 +211,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-aliases
      * 
      */
-    @JsonProperty("Aliases")
     public void setAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
     }
@@ -238,7 +226,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html
      * 
      */
-    @JsonProperty("TrustedSigners")
     public TrustedSigners getTrustedSigners() {
         return trustedSigners;
     }
@@ -249,7 +236,6 @@ public class StreamingDistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html
      * 
      */
-    @JsonProperty("TrustedSigners")
     public void setTrustedSigners(TrustedSigners trustedSigners) {
         this.trustedSigners = trustedSigners;
     }

@@ -34,7 +34,6 @@ public class PutItemInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-putiteminput.html#cfn-iot-topicrule-putiteminput-tablename
      * 
      */
-    @JsonProperty("TableName")
     public CharSequence getTableName() {
         return tableName;
     }
@@ -43,7 +42,6 @@ public class PutItemInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-putiteminput.html#cfn-iot-topicrule-putiteminput-tablename
      * 
      */
-    @JsonProperty("TableName")
     public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }

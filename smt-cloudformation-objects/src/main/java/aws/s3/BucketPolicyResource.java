@@ -41,12 +41,26 @@ public class BucketPolicyResource
     private BucketPolicy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BucketPolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BucketPolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * BucketPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public BucketPolicy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class BucketPolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(BucketPolicy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class BucketPolicyResource
     @Override
     public BucketPolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BucketPolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

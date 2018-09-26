@@ -60,7 +60,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username
      * 
      */
-    @JsonProperty("Username")
     public CharSequence getUsername() {
         return username;
     }
@@ -69,7 +68,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username
      * 
      */
-    @JsonProperty("Username")
     public void setUsername(CharSequence username) {
         this.username = username;
     }
@@ -83,7 +81,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-groups
      * 
      */
-    @JsonProperty("Groups")
     public List<CharSequence> getGroups() {
         return groups;
     }
@@ -92,7 +89,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-groups
      * 
      */
-    @JsonProperty("Groups")
     public void setGroups(List<CharSequence> groups) {
         this.groups = groups;
     }
@@ -106,7 +102,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-consoleaccess
      * 
      */
-    @JsonProperty("ConsoleAccess")
     public Boolean getConsoleAccess() {
         return consoleAccess;
     }
@@ -115,7 +110,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-consoleaccess
      * 
      */
-    @JsonProperty("ConsoleAccess")
     public void setConsoleAccess(Boolean consoleAccess) {
         this.consoleAccess = consoleAccess;
     }
@@ -129,7 +123,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-password
      * 
      */
-    @JsonProperty("Password")
     public CharSequence getPassword() {
         return password;
     }
@@ -138,7 +131,6 @@ public class User {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-password
      * 
      */
-    @JsonProperty("Password")
     public void setPassword(CharSequence password) {
         this.password = password;
     }

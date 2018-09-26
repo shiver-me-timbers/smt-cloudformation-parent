@@ -42,7 +42,6 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod
      * 
      */
-    @JsonProperty("CookieExpirationPeriod")
     public CharSequence getCookieExpirationPeriod() {
         return cookieExpirationPeriod;
     }
@@ -51,7 +50,6 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod
      * 
      */
-    @JsonProperty("CookieExpirationPeriod")
     public void setCookieExpirationPeriod(CharSequence cookieExpirationPeriod) {
         this.cookieExpirationPeriod = cookieExpirationPeriod;
     }
@@ -65,7 +63,6 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -74,7 +71,6 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }

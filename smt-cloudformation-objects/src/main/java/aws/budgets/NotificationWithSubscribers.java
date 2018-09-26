@@ -46,7 +46,6 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
      * 
      */
-    @JsonProperty("Subscribers")
     public List<Subscriber> getSubscribers() {
         return subscribers;
     }
@@ -55,7 +54,6 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
      * 
      */
-    @JsonProperty("Subscribers")
     public void setSubscribers(List<Subscriber> subscribers) {
         this.subscribers = subscribers;
     }
@@ -71,7 +69,6 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html
      * 
      */
-    @JsonProperty("Notification")
     public Notification getNotification() {
         return notification;
     }
@@ -82,7 +79,6 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html
      * 
      */
-    @JsonProperty("Notification")
     public void setNotification(Notification notification) {
         this.notification = notification;
     }

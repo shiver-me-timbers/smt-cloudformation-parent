@@ -41,12 +41,26 @@ public class CustomerGatewayResource
     private CustomerGateway properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CustomerGatewayResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CustomerGatewayResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CustomerGateway
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html
      * 
      */
-    @JsonProperty("Properties")
     public CustomerGateway getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class CustomerGatewayResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CustomerGateway properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class CustomerGatewayResource
     @Override
     public CustomerGatewayResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CustomerGatewayResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

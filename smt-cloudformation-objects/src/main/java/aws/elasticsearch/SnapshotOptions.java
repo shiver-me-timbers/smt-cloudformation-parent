@@ -34,7 +34,6 @@ public class SnapshotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html#cfn-elasticsearch-domain-snapshotoptions-automatedsnapshotstarthour
      * 
      */
-    @JsonProperty("AutomatedSnapshotStartHour")
     public Integer getAutomatedSnapshotStartHour() {
         return automatedSnapshotStartHour;
     }
@@ -43,7 +42,6 @@ public class SnapshotOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html#cfn-elasticsearch-domain-snapshotoptions-automatedsnapshotstarthour
      * 
      */
-    @JsonProperty("AutomatedSnapshotStartHour")
     public void setAutomatedSnapshotStartHour(Integer automatedSnapshotStartHour) {
         this.automatedSnapshotStartHour = automatedSnapshotStartHour;
     }

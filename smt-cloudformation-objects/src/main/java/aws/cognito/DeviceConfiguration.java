@@ -42,7 +42,6 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt
      * 
      */
-    @JsonProperty("DeviceOnlyRememberedOnUserPrompt")
     public Boolean getDeviceOnlyRememberedOnUserPrompt() {
         return deviceOnlyRememberedOnUserPrompt;
     }
@@ -51,7 +50,6 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt
      * 
      */
-    @JsonProperty("DeviceOnlyRememberedOnUserPrompt")
     public void setDeviceOnlyRememberedOnUserPrompt(Boolean deviceOnlyRememberedOnUserPrompt) {
         this.deviceOnlyRememberedOnUserPrompt = deviceOnlyRememberedOnUserPrompt;
     }
@@ -65,7 +63,6 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice
      * 
      */
-    @JsonProperty("ChallengeRequiredOnNewDevice")
     public Boolean getChallengeRequiredOnNewDevice() {
         return challengeRequiredOnNewDevice;
     }
@@ -74,7 +71,6 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice
      * 
      */
-    @JsonProperty("ChallengeRequiredOnNewDevice")
     public void setChallengeRequiredOnNewDevice(Boolean challengeRequiredOnNewDevice) {
         this.challengeRequiredOnNewDevice = challengeRequiredOnNewDevice;
     }

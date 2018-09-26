@@ -68,7 +68,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -77,7 +76,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -91,7 +89,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-notificationarns
      * 
      */
-    @JsonProperty("NotificationArns")
     public List<CharSequence> getNotificationArns() {
         return notificationArns;
     }
@@ -100,7 +97,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-notificationarns
      * 
      */
-    @JsonProperty("NotificationArns")
     public void setNotificationArns(List<CharSequence> notificationArns) {
         this.notificationArns = notificationArns;
     }
@@ -114,7 +110,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -123,7 +118,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -137,7 +131,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -146,7 +139,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-portfolioid
      * 
      */
-    @JsonProperty("PortfolioId")
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }
@@ -160,7 +152,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-productid
      * 
      */
-    @JsonProperty("ProductId")
     public CharSequence getProductId() {
         return productId;
     }
@@ -169,7 +160,6 @@ public class LaunchNotificationConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html#cfn-servicecatalog-launchnotificationconstraint-productid
      * 
      */
-    @JsonProperty("ProductId")
     public void setProductId(CharSequence productId) {
         this.productId = productId;
     }

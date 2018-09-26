@@ -41,12 +41,26 @@ public class ServiceLinkedRoleResource
     private ServiceLinkedRole properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ServiceLinkedRoleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ServiceLinkedRoleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ServiceLinkedRole
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html
      * 
      */
-    @JsonProperty("Properties")
     public ServiceLinkedRole getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ServiceLinkedRoleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ServiceLinkedRole properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ServiceLinkedRoleResource
     @Override
     public ServiceLinkedRoleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ServiceLinkedRoleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -34,7 +34,6 @@ public class SSESpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled
      * 
      */
-    @JsonProperty("SSEEnabled")
     public Boolean getSSEEnabled() {
         return sSEEnabled;
     }
@@ -43,7 +42,6 @@ public class SSESpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled
      * 
      */
-    @JsonProperty("SSEEnabled")
     public void setSSEEnabled(Boolean sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
     }

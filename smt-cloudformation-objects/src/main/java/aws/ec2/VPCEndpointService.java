@@ -44,7 +44,6 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-networkloadbalancerarns
      * 
      */
-    @JsonProperty("NetworkLoadBalancerArns")
     public List<CharSequence> getNetworkLoadBalancerArns() {
         return networkLoadBalancerArns;
     }
@@ -53,7 +52,6 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-networkloadbalancerarns
      * 
      */
-    @JsonProperty("NetworkLoadBalancerArns")
     public void setNetworkLoadBalancerArns(List<CharSequence> networkLoadBalancerArns) {
         this.networkLoadBalancerArns = networkLoadBalancerArns;
     }
@@ -67,7 +65,6 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-acceptancerequired
      * 
      */
-    @JsonProperty("AcceptanceRequired")
     public Boolean getAcceptanceRequired() {
         return acceptanceRequired;
     }
@@ -76,7 +73,6 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-acceptancerequired
      * 
      */
-    @JsonProperty("AcceptanceRequired")
     public void setAcceptanceRequired(Boolean acceptanceRequired) {
         this.acceptanceRequired = acceptanceRequired;
     }

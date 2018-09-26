@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_ResolverAttributes.schema.json",
+  "title" : "ResolverAttributes",
+  "type" : "string",
+  "enum" : [ "TypeName", "ResolverArn", "FieldName" ],
+  "javaType" : "aws.appsync.ResolverAttributes"
+}

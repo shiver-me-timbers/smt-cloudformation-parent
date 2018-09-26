@@ -61,7 +61,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-bgpasn
      * 
      */
-    @JsonProperty("BgpAsn")
     public Integer getBgpAsn() {
         return bgpAsn;
     }
@@ -70,7 +69,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-bgpasn
      * 
      */
-    @JsonProperty("BgpAsn")
     public void setBgpAsn(Integer bgpAsn) {
         this.bgpAsn = bgpAsn;
     }
@@ -84,7 +82,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public CharSequence getIpAddress() {
         return ipAddress;
     }
@@ -93,7 +90,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-ipaddress
      * 
      */
-    @JsonProperty("IpAddress")
     public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
@@ -107,7 +103,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -116,7 +111,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -130,7 +124,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -139,7 +132,6 @@ public class CustomerGateway {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-customer-gateway.html#cfn-ec2-customergateway-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

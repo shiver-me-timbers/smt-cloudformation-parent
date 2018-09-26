@@ -34,7 +34,6 @@ public class PlacementType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html#cfn-elasticmapreduce-cluster-placementtype-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -43,7 +42,6 @@ public class PlacementType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html#cfn-elasticmapreduce-cluster-placementtype-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }

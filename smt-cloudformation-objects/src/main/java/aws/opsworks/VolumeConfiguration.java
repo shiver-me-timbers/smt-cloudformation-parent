@@ -74,7 +74,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
      */
-    @JsonProperty("Iops")
     public Integer getIops() {
         return iops;
     }
@@ -83,7 +82,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
      */
-    @JsonProperty("Iops")
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -97,7 +95,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint
      * 
      */
-    @JsonProperty("MountPoint")
     public CharSequence getMountPoint() {
         return mountPoint;
     }
@@ -106,7 +103,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint
      * 
      */
-    @JsonProperty("MountPoint")
     public void setMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
     }
@@ -120,7 +116,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks
      * 
      */
-    @JsonProperty("NumberOfDisks")
     public Integer getNumberOfDisks() {
         return numberOfDisks;
     }
@@ -129,7 +124,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks
      * 
      */
-    @JsonProperty("NumberOfDisks")
     public void setNumberOfDisks(Integer numberOfDisks) {
         this.numberOfDisks = numberOfDisks;
     }
@@ -143,7 +137,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel
      * 
      */
-    @JsonProperty("RaidLevel")
     public Integer getRaidLevel() {
         return raidLevel;
     }
@@ -152,7 +145,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel
      * 
      */
-    @JsonProperty("RaidLevel")
     public void setRaidLevel(Integer raidLevel) {
         this.raidLevel = raidLevel;
     }
@@ -166,7 +158,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size
      * 
      */
-    @JsonProperty("Size")
     public Integer getSize() {
         return size;
     }
@@ -175,7 +166,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size
      * 
      */
-    @JsonProperty("Size")
     public void setSize(Integer size) {
         this.size = size;
     }
@@ -189,7 +179,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype
      * 
      */
-    @JsonProperty("VolumeType")
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -198,7 +187,6 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype
      * 
      */
-    @JsonProperty("VolumeType")
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

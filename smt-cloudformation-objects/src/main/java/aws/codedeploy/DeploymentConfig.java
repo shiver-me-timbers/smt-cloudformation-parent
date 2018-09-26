@@ -44,7 +44,6 @@ public class DeploymentConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname
      * 
      */
-    @JsonProperty("DeploymentConfigName")
     public CharSequence getDeploymentConfigName() {
         return deploymentConfigName;
     }
@@ -53,7 +52,6 @@ public class DeploymentConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname
      * 
      */
-    @JsonProperty("DeploymentConfigName")
     public void setDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
     }
@@ -69,7 +67,6 @@ public class DeploymentConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html
      * 
      */
-    @JsonProperty("MinimumHealthyHosts")
     public MinimumHealthyHosts getMinimumHealthyHosts() {
         return minimumHealthyHosts;
     }
@@ -80,7 +77,6 @@ public class DeploymentConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html
      * 
      */
-    @JsonProperty("MinimumHealthyHosts")
     public void setMinimumHealthyHosts(MinimumHealthyHosts minimumHealthyHosts) {
         this.minimumHealthyHosts = minimumHealthyHosts;
     }

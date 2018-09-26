@@ -78,7 +78,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-customerid
      * 
      */
-    @JsonProperty("CustomerId")
     public CharSequence getCustomerId() {
         return customerId;
     }
@@ -87,7 +86,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-customerid
      * 
      */
-    @JsonProperty("CustomerId")
     public void setCustomerId(CharSequence customerId) {
         this.customerId = customerId;
     }
@@ -101,7 +99,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -110,7 +107,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -124,7 +120,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -133,7 +128,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -147,7 +141,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-generatedistinctid
      * 
      */
-    @JsonProperty("GenerateDistinctId")
     public Boolean getGenerateDistinctId() {
         return generateDistinctId;
     }
@@ -156,7 +149,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-generatedistinctid
      * 
      */
-    @JsonProperty("GenerateDistinctId")
     public void setGenerateDistinctId(Boolean generateDistinctId) {
         this.generateDistinctId = generateDistinctId;
     }
@@ -170,7 +162,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -179,7 +170,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -193,7 +183,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-stagekeys
      * 
      */
-    @JsonProperty("StageKeys")
     public Set<StageKey> getStageKeys() {
         return stageKeys;
     }
@@ -202,7 +191,6 @@ public class ApiKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-stagekeys
      * 
      */
-    @JsonProperty("StageKeys")
     public void setStageKeys(Set<StageKey> stageKeys) {
         this.stageKeys = stageKeys;
     }

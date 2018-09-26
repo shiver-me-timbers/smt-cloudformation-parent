@@ -34,7 +34,6 @@ public class AccessControlTranslation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner
      * 
      */
-    @JsonProperty("Owner")
     public CharSequence getOwner() {
         return owner;
     }
@@ -43,7 +42,6 @@ public class AccessControlTranslation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner
      * 
      */
-    @JsonProperty("Owner")
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }

@@ -46,7 +46,6 @@ public class SizeConstraintSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -55,7 +54,6 @@ public class SizeConstraintSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -69,7 +67,6 @@ public class SizeConstraintSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-sizeconstraints
      * 
      */
-    @JsonProperty("SizeConstraints")
     public Set<SizeConstraint> getSizeConstraints() {
         return sizeConstraints;
     }
@@ -78,7 +75,6 @@ public class SizeConstraintSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-sizeconstraints
      * 
      */
-    @JsonProperty("SizeConstraints")
     public void setSizeConstraints(Set<SizeConstraint> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
     }

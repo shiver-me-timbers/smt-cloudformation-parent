@@ -86,7 +86,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -95,7 +94,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -109,7 +107,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
      */
-    @JsonProperty("EventPattern")
     public EventPattern getEventPattern() {
         return eventPattern;
     }
@@ -118,7 +115,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
      */
-    @JsonProperty("EventPattern")
     public void setEventPattern(EventPattern eventPattern) {
         this.eventPattern = eventPattern;
     }
@@ -132,7 +128,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -141,7 +136,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -155,7 +149,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -164,7 +157,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -178,7 +170,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
@@ -187,7 +178,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }
@@ -201,7 +191,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-state
      * 
      */
-    @JsonProperty("State")
     public CharSequence getState() {
         return state;
     }
@@ -210,7 +199,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-state
      * 
      */
-    @JsonProperty("State")
     public void setState(CharSequence state) {
         this.state = state;
     }
@@ -224,7 +212,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-targets
      * 
      */
-    @JsonProperty("Targets")
     public Set<Target> getTargets() {
         return targets;
     }
@@ -233,7 +220,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-targets
      * 
      */
-    @JsonProperty("Targets")
     public void setTargets(Set<Target> targets) {
         this.targets = targets;
     }

@@ -34,7 +34,6 @@ public class SplunkRetryOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds
      * 
      */
-    @JsonProperty("DurationInSeconds")
     public Integer getDurationInSeconds() {
         return durationInSeconds;
     }
@@ -43,7 +42,6 @@ public class SplunkRetryOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html#cfn-kinesisfirehose-deliverystream-splunkretryoptions-durationinseconds
      * 
      */
-    @JsonProperty("DurationInSeconds")
     public void setDurationInSeconds(Integer durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }

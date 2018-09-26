@@ -41,12 +41,26 @@ public class DocumentResource
     private Document properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DocumentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DocumentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Document
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
      * 
      */
-    @JsonProperty("Properties")
     public Document getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DocumentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Document properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DocumentResource
     @Override
     public DocumentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DocumentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

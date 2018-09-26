@@ -84,7 +84,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias
      * 
      */
-    @JsonProperty("CreateAlias")
     public Boolean getCreateAlias() {
         return createAlias;
     }
@@ -93,7 +92,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias
      * 
      */
-    @JsonProperty("CreateAlias")
     public void setCreateAlias(Boolean createAlias) {
         this.createAlias = createAlias;
     }
@@ -107,7 +105,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-edition
      * 
      */
-    @JsonProperty("Edition")
     public CharSequence getEdition() {
         return edition;
     }
@@ -116,7 +113,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-edition
      * 
      */
-    @JsonProperty("Edition")
     public void setEdition(CharSequence edition) {
         this.edition = edition;
     }
@@ -130,7 +126,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-enablesso
      * 
      */
-    @JsonProperty("EnableSso")
     public Boolean getEnableSso() {
         return enableSso;
     }
@@ -139,7 +134,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-enablesso
      * 
      */
-    @JsonProperty("EnableSso")
     public void setEnableSso(Boolean enableSso) {
         this.enableSso = enableSso;
     }
@@ -153,7 +147,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -162,7 +155,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -176,7 +168,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-password
      * 
      */
-    @JsonProperty("Password")
     public CharSequence getPassword() {
         return password;
     }
@@ -185,7 +176,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-password
      * 
      */
-    @JsonProperty("Password")
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -199,7 +189,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-shortname
      * 
      */
-    @JsonProperty("ShortName")
     public CharSequence getShortName() {
         return shortName;
     }
@@ -208,7 +197,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-shortname
      * 
      */
-    @JsonProperty("ShortName")
     public void setShortName(CharSequence shortName) {
         this.shortName = shortName;
     }
@@ -224,7 +212,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
-    @JsonProperty("VpcSettings")
     public VpcSettings getVpcSettings() {
         return vpcSettings;
     }
@@ -235,7 +222,6 @@ public class MicrosoftAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
-    @JsonProperty("VpcSettings")
     public void setVpcSettings(VpcSettings vpcSettings) {
         this.vpcSettings = vpcSettings;
     }

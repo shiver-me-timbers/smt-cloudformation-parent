@@ -41,12 +41,26 @@ public class LaunchTemplateConstraintResource
     private LaunchTemplateConstraint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LaunchTemplateConstraintResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LaunchTemplateConstraintResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LaunchTemplateConstraint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public LaunchTemplateConstraint getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LaunchTemplateConstraintResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchtemplateconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LaunchTemplateConstraint properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LaunchTemplateConstraintResource
     @Override
     public LaunchTemplateConstraintResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LaunchTemplateConstraintResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

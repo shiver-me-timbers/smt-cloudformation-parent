@@ -74,7 +74,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html
      * 
      */
-    @JsonProperty("HostedZoneConfig")
     public HostedZoneConfig getHostedZoneConfig() {
         return hostedZoneConfig;
     }
@@ -85,7 +84,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html
      * 
      */
-    @JsonProperty("HostedZoneConfig")
     public void setHostedZoneConfig(HostedZoneConfig hostedZoneConfig) {
         this.hostedZoneConfig = hostedZoneConfig;
     }
@@ -99,7 +97,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzonetags
      * 
      */
-    @JsonProperty("HostedZoneTags")
     public List<HostedZoneTag> getHostedZoneTags() {
         return hostedZoneTags;
     }
@@ -108,7 +105,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzonetags
      * 
      */
-    @JsonProperty("HostedZoneTags")
     public void setHostedZoneTags(List<HostedZoneTag> hostedZoneTags) {
         this.hostedZoneTags = hostedZoneTags;
     }
@@ -122,7 +118,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -131,7 +126,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -147,7 +141,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html
      * 
      */
-    @JsonProperty("QueryLoggingConfig")
     public QueryLoggingConfig getQueryLoggingConfig() {
         return queryLoggingConfig;
     }
@@ -158,7 +151,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html
      * 
      */
-    @JsonProperty("QueryLoggingConfig")
     public void setQueryLoggingConfig(QueryLoggingConfig queryLoggingConfig) {
         this.queryLoggingConfig = queryLoggingConfig;
     }
@@ -172,7 +164,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-vpcs
      * 
      */
-    @JsonProperty("VPCs")
     public List<VPC> getVPCs() {
         return vPCs;
     }
@@ -181,7 +172,6 @@ public class HostedZone {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-vpcs
      * 
      */
-    @JsonProperty("VPCs")
     public void setVPCs(List<VPC> vPCs) {
         this.vPCs = vPCs;
     }

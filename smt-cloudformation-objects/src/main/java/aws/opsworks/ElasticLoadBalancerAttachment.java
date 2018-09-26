@@ -42,7 +42,6 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
      * 
      */
-    @JsonProperty("ElasticLoadBalancerName")
     public CharSequence getElasticLoadBalancerName() {
         return elasticLoadBalancerName;
     }
@@ -51,7 +50,6 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
      * 
      */
-    @JsonProperty("ElasticLoadBalancerName")
     public void setElasticLoadBalancerName(CharSequence elasticLoadBalancerName) {
         this.elasticLoadBalancerName = elasticLoadBalancerName;
     }
@@ -65,7 +63,6 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
      * 
      */
-    @JsonProperty("LayerId")
     public CharSequence getLayerId() {
         return layerId;
     }
@@ -74,7 +71,6 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
      * 
      */
-    @JsonProperty("LayerId")
     public void setLayerId(CharSequence layerId) {
         this.layerId = layerId;
     }

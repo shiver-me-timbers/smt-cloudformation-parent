@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class TopicRuleResource
     extends Resource
+    implements HasAttributes<TopicRuleAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class TopicRuleResource
     private TopicRule properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TopicRuleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TopicRuleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TopicRule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html
      * 
      */
-    @JsonProperty("Properties")
     public TopicRule getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class TopicRuleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TopicRule properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class TopicRuleResource
     @Override
     public TopicRuleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TopicRuleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

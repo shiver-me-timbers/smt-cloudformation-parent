@@ -41,12 +41,26 @@ public class EventSubscriptionResource
     private EventSubscription properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EventSubscriptionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EventSubscriptionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * EventSubscription
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
      * 
      */
-    @JsonProperty("Properties")
     public EventSubscription getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class EventSubscriptionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(EventSubscription properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class EventSubscriptionResource
     @Override
     public EventSubscriptionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EventSubscriptionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

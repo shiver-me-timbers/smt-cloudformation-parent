@@ -50,7 +50,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid
      * 
      */
-    @JsonProperty("KeyId")
     public CharSequence getKeyId() {
         return keyId;
     }
@@ -59,7 +58,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid
      * 
      */
-    @JsonProperty("KeyId")
     public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }
@@ -73,7 +71,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype
      * 
      */
-    @JsonProperty("KeyType")
     public CharSequence getKeyType() {
         return keyType;
     }
@@ -82,7 +79,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype
      * 
      */
-    @JsonProperty("KeyType")
     public void setKeyType(CharSequence keyType) {
         this.keyType = keyType;
     }
@@ -96,7 +92,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid
      * 
      */
-    @JsonProperty("UsagePlanId")
     public CharSequence getUsagePlanId() {
         return usagePlanId;
     }
@@ -105,7 +100,6 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid
      * 
      */
-    @JsonProperty("UsagePlanId")
     public void setUsagePlanId(CharSequence usagePlanId) {
         this.usagePlanId = usagePlanId;
     }

@@ -85,7 +85,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-assignipv6addressoncreation
      * 
      */
-    @JsonProperty("AssignIpv6AddressOnCreation")
     public Boolean getAssignIpv6AddressOnCreation() {
         return assignIpv6AddressOnCreation;
     }
@@ -94,7 +93,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-assignipv6addressoncreation
      * 
      */
-    @JsonProperty("AssignIpv6AddressOnCreation")
     public void setAssignIpv6AddressOnCreation(Boolean assignIpv6AddressOnCreation) {
         this.assignIpv6AddressOnCreation = assignIpv6AddressOnCreation;
     }
@@ -108,7 +106,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -117,7 +114,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -131,7 +127,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -140,7 +135,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -154,7 +148,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-ipv6cidrblock
      * 
      */
-    @JsonProperty("Ipv6CidrBlock")
     public CharSequence getIpv6CidrBlock() {
         return ipv6CidrBlock;
     }
@@ -163,7 +156,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-ipv6cidrblock
      * 
      */
-    @JsonProperty("Ipv6CidrBlock")
     public void setIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
     }
@@ -177,7 +169,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch
      * 
      */
-    @JsonProperty("MapPublicIpOnLaunch")
     public Boolean getMapPublicIpOnLaunch() {
         return mapPublicIpOnLaunch;
     }
@@ -186,7 +177,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-mappubliciponlaunch
      * 
      */
-    @JsonProperty("MapPublicIpOnLaunch")
     public void setMapPublicIpOnLaunch(Boolean mapPublicIpOnLaunch) {
         this.mapPublicIpOnLaunch = mapPublicIpOnLaunch;
     }
@@ -200,7 +190,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -209,7 +198,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-ec2-subnet-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -223,7 +211,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-awsec2subnet-prop-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -232,7 +219,6 @@ public class Subnet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet.html#cfn-awsec2subnet-prop-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

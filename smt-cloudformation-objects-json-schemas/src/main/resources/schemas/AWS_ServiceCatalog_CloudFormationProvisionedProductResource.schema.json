@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceCatalog_CloudFormationProvisionedProductResource.schema.json",
+  "title" : "CloudFormationProvisionedProductResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductResource",
+  "javaInterfaces" : [ "aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.schema.json"
+    }
+  }
+}

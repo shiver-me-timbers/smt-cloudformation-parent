@@ -55,7 +55,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
      * 
      */
-    @JsonProperty("AssignPublicIp")
     public CharSequence getAssignPublicIp() {
         return assignPublicIp;
     }
@@ -64,7 +63,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
      * 
      */
-    @JsonProperty("AssignPublicIp")
     public void setAssignPublicIp(CharSequence assignPublicIp) {
         this.assignPublicIp = assignPublicIp;
     }
@@ -78,7 +76,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -87,7 +84,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -101,7 +97,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public Set<CharSequence> getSubnets() {
         return subnets;
     }
@@ -110,7 +105,6 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
      * 
      */
-    @JsonProperty("Subnets")
     public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }

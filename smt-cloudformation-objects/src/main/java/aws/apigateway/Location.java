@@ -66,7 +66,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-method
      * 
      */
-    @JsonProperty("Method")
     public CharSequence getMethod() {
         return method;
     }
@@ -75,7 +74,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-method
      * 
      */
-    @JsonProperty("Method")
     public void setMethod(CharSequence method) {
         this.method = method;
     }
@@ -89,7 +87,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -98,7 +95,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -112,7 +108,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -121,7 +116,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -135,7 +129,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -144,7 +137,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }
@@ -158,7 +150,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -167,7 +158,6 @@ public class Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html#cfn-apigateway-documentationpart-location-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

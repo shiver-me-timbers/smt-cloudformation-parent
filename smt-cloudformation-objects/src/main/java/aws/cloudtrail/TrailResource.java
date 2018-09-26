@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class TrailResource
     extends Resource
+    implements HasAttributes<TrailAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class TrailResource
     private Trail properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TrailResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TrailResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Trail
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
      * 
      */
-    @JsonProperty("Properties")
     public Trail getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class TrailResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Trail properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class TrailResource
     @Override
     public TrailResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TrailResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -52,7 +52,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename
      * 
      */
-    @JsonProperty("InstanceProfileName")
     public CharSequence getInstanceProfileName() {
         return instanceProfileName;
     }
@@ -61,7 +60,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename
      * 
      */
-    @JsonProperty("InstanceProfileName")
     public void setInstanceProfileName(CharSequence instanceProfileName) {
         this.instanceProfileName = instanceProfileName;
     }
@@ -75,7 +73,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -84,7 +81,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -98,7 +94,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles
      * 
      */
-    @JsonProperty("Roles")
     public List<CharSequence> getRoles() {
         return roles;
     }
@@ -107,7 +102,6 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles
      * 
      */
-    @JsonProperty("Roles")
     public void setRoles(List<CharSequence> roles) {
         this.roles = roles;
     }

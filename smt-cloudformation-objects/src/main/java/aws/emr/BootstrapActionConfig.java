@@ -44,7 +44,6 @@ public class BootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -53,7 +52,6 @@ public class BootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -69,7 +67,6 @@ public class BootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html
      * 
      */
-    @JsonProperty("ScriptBootstrapAction")
     public ScriptBootstrapActionConfig getScriptBootstrapAction() {
         return scriptBootstrapAction;
     }
@@ -80,7 +77,6 @@ public class BootstrapActionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html
      * 
      */
-    @JsonProperty("ScriptBootstrapAction")
     public void setScriptBootstrapAction(ScriptBootstrapActionConfig scriptBootstrapAction) {
         this.scriptBootstrapAction = scriptBootstrapAction;
     }

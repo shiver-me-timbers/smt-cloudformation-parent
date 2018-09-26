@@ -41,12 +41,26 @@ public class DBClusterParameterGroupResource
     private DBClusterParameterGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBClusterParameterGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBClusterParameterGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBClusterParameterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public DBClusterParameterGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DBClusterParameterGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBClusterParameterGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DBClusterParameterGroupResource
     @Override
     public DBClusterParameterGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBClusterParameterGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

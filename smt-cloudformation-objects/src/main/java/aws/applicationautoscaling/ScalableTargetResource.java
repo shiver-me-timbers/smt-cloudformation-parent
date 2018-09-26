@@ -41,12 +41,26 @@ public class ScalableTargetResource
     private ScalableTarget properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ScalableTargetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ScalableTargetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ScalableTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
      * 
      */
-    @JsonProperty("Properties")
     public ScalableTarget getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ScalableTargetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ScalableTarget properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ScalableTargetResource
     @Override
     public ScalableTargetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ScalableTargetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

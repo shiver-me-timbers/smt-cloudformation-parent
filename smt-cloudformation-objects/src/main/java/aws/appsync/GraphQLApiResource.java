@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class GraphQLApiResource
     extends Resource
+    implements HasAttributes<GraphQLApiAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class GraphQLApiResource
     private GraphQLApi properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public GraphQLApiResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public GraphQLApiResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * GraphQLApi
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
      * 
      */
-    @JsonProperty("Properties")
     public GraphQLApi getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class GraphQLApiResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(GraphQLApi properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class GraphQLApiResource
     @Override
     public GraphQLApiResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public GraphQLApiResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

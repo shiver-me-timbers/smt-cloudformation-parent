@@ -50,7 +50,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -59,7 +58,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -73,7 +71,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -82,7 +79,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -96,7 +92,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -105,7 +100,6 @@ public class TargetDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }

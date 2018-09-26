@@ -50,7 +50,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-cachesecuritygroupname
      * 
      */
-    @JsonProperty("CacheSecurityGroupName")
     public CharSequence getCacheSecurityGroupName() {
         return cacheSecurityGroupName;
     }
@@ -59,7 +58,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-cachesecuritygroupname
      * 
      */
-    @JsonProperty("CacheSecurityGroupName")
     public void setCacheSecurityGroupName(CharSequence cacheSecurityGroupName) {
         this.cacheSecurityGroupName = cacheSecurityGroupName;
     }
@@ -73,7 +71,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupname
      * 
      */
-    @JsonProperty("EC2SecurityGroupName")
     public CharSequence getEC2SecurityGroupName() {
         return eC2SecurityGroupName;
     }
@@ -82,7 +79,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupname
      * 
      */
-    @JsonProperty("EC2SecurityGroupName")
     public void setEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
     }
@@ -96,7 +92,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupownerid
      * 
      */
-    @JsonProperty("EC2SecurityGroupOwnerId")
     public CharSequence getEC2SecurityGroupOwnerId() {
         return eC2SecurityGroupOwnerId;
     }
@@ -105,7 +100,6 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupownerid
      * 
      */
-    @JsonProperty("EC2SecurityGroupOwnerId")
     public void setEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
     }

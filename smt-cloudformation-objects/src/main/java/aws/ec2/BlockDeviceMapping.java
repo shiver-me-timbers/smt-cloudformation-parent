@@ -62,7 +62,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename
      * 
      */
-    @JsonProperty("DeviceName")
     public CharSequence getDeviceName() {
         return deviceName;
     }
@@ -71,7 +70,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename
      * 
      */
-    @JsonProperty("DeviceName")
     public void setDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
     }
@@ -87,7 +85,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html
      * 
      */
-    @JsonProperty("Ebs")
     public Ebs getEbs() {
         return ebs;
     }
@@ -98,7 +95,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html
      * 
      */
-    @JsonProperty("Ebs")
     public void setEbs(Ebs ebs) {
         this.ebs = ebs;
     }
@@ -114,7 +110,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-nodevice.html
      * 
      */
-    @JsonProperty("NoDevice")
     public NoDevice getNoDevice() {
         return noDevice;
     }
@@ -125,7 +120,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-nodevice.html
      * 
      */
-    @JsonProperty("NoDevice")
     public void setNoDevice(NoDevice noDevice) {
         this.noDevice = noDevice;
     }
@@ -139,7 +133,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-virtualname
      * 
      */
-    @JsonProperty("VirtualName")
     public CharSequence getVirtualName() {
         return virtualName;
     }
@@ -148,7 +141,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-virtualname
      * 
      */
-    @JsonProperty("VirtualName")
     public void setVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
     }

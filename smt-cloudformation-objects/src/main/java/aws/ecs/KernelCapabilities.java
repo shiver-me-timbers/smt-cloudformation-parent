@@ -47,7 +47,6 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add
      * 
      */
-    @JsonProperty("Add")
     public Set<CharSequence> getAdd() {
         return add;
     }
@@ -56,7 +55,6 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add
      * 
      */
-    @JsonProperty("Add")
     public void setAdd(Set<CharSequence> add) {
         this.add = add;
     }
@@ -70,7 +68,6 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop
      * 
      */
-    @JsonProperty("Drop")
     public Set<CharSequence> getDrop() {
         return drop;
     }
@@ -79,7 +76,6 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop
      * 
      */
-    @JsonProperty("Drop")
     public void setDrop(Set<CharSequence> drop) {
         this.drop = drop;
     }

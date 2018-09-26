@@ -35,7 +35,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables
      * 
      */
-    @JsonProperty("Variables")
     public Map<String, String> getVariables() {
         return variables;
     }
@@ -44,7 +43,6 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables
      * 
      */
-    @JsonProperty("Variables")
     public void setVariables(Map<String, String> variables) {
         this.variables = variables;
     }

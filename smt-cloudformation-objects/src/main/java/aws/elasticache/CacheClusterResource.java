@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class CacheClusterResource
     extends Resource
+    implements HasAttributes<CacheClusterAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class CacheClusterResource
     private CacheCluster properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CacheClusterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CacheClusterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CacheCluster
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
      * 
      */
-    @JsonProperty("Properties")
     public CacheCluster getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class CacheClusterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CacheCluster properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class CacheClusterResource
     @Override
     public CacheClusterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CacheClusterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

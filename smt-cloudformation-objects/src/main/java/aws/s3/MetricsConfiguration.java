@@ -54,7 +54,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -63,7 +62,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -77,7 +75,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -86,7 +83,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -100,7 +96,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-tagfilters
      * 
      */
-    @JsonProperty("TagFilters")
     public Set<TagFilter> getTagFilters() {
         return tagFilters;
     }
@@ -109,7 +104,6 @@ public class MetricsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-tagfilters
      * 
      */
-    @JsonProperty("TagFilters")
     public void setTagFilters(Set<TagFilter> tagFilters) {
         this.tagFilters = tagFilters;
     }

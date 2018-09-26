@@ -52,7 +52,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-event
      * 
      */
-    @JsonProperty("Event")
     public CharSequence getEvent() {
         return event;
     }
@@ -61,7 +60,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-event
      * 
      */
-    @JsonProperty("Event")
     public void setEvent(CharSequence event) {
         this.event = event;
     }
@@ -77,7 +75,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
-    @JsonProperty("Filter")
     public NotificationFilter getFilter() {
         return filter;
     }
@@ -88,7 +85,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
-    @JsonProperty("Filter")
     public void setFilter(NotificationFilter filter) {
         this.filter = filter;
     }
@@ -102,7 +98,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-queue
      * 
      */
-    @JsonProperty("Queue")
     public CharSequence getQueue() {
         return queue;
     }
@@ -111,7 +106,6 @@ public class QueueConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-queue
      * 
      */
-    @JsonProperty("Queue")
     public void setQueue(CharSequence queue) {
         this.queue = queue;
     }

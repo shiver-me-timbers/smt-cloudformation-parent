@@ -61,7 +61,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -70,7 +69,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -84,7 +82,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parametergroupfamily
      * 
      */
-    @JsonProperty("ParameterGroupFamily")
     public CharSequence getParameterGroupFamily() {
         return parameterGroupFamily;
     }
@@ -93,7 +90,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parametergroupfamily
      * 
      */
-    @JsonProperty("ParameterGroupFamily")
     public void setParameterGroupFamily(CharSequence parameterGroupFamily) {
         this.parameterGroupFamily = parameterGroupFamily;
     }
@@ -107,7 +103,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public List<Parameter> getParameters() {
         return parameters;
     }
@@ -116,7 +111,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(List<Parameter> parameters) {
         this.parameters = parameters;
     }
@@ -130,7 +124,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -139,7 +132,6 @@ public class ClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

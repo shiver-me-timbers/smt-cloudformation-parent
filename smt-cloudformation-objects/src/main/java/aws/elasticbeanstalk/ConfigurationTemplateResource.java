@@ -41,12 +41,26 @@ public class ConfigurationTemplateResource
     private ConfigurationTemplate properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConfigurationTemplateResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ConfigurationTemplateResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ConfigurationTemplate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html
      * 
      */
-    @JsonProperty("Properties")
     public ConfigurationTemplate getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ConfigurationTemplateResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ConfigurationTemplate properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ConfigurationTemplateResource
     @Override
     public ConfigurationTemplateResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ConfigurationTemplateResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -58,7 +58,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid
      * 
      */
-    @JsonProperty("BucketAccountId")
     public CharSequence getBucketAccountId() {
         return bucketAccountId;
     }
@@ -67,7 +66,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid
      * 
      */
-    @JsonProperty("BucketAccountId")
     public void setBucketAccountId(CharSequence bucketAccountId) {
         this.bucketAccountId = bucketAccountId;
     }
@@ -81,7 +79,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketarn
      * 
      */
-    @JsonProperty("BucketArn")
     public CharSequence getBucketArn() {
         return bucketArn;
     }
@@ -90,7 +87,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketarn
      * 
      */
-    @JsonProperty("BucketArn")
     public void setBucketArn(CharSequence bucketArn) {
         this.bucketArn = bucketArn;
     }
@@ -104,7 +100,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-format
      * 
      */
-    @JsonProperty("Format")
     public CharSequence getFormat() {
         return format;
     }
@@ -113,7 +108,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-format
      * 
      */
-    @JsonProperty("Format")
     public void setFormat(CharSequence format) {
         this.format = format;
     }
@@ -127,7 +121,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -136,7 +129,6 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }

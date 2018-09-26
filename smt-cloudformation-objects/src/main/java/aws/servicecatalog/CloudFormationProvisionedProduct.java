@@ -109,7 +109,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-pathid
      * 
      */
-    @JsonProperty("PathId")
     public CharSequence getPathId() {
         return pathId;
     }
@@ -118,7 +117,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-pathid
      * 
      */
-    @JsonProperty("PathId")
     public void setPathId(CharSequence pathId) {
         this.pathId = pathId;
     }
@@ -132,7 +130,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters
      * 
      */
-    @JsonProperty("ProvisioningParameters")
     public List<ProvisioningParameter> getProvisioningParameters() {
         return provisioningParameters;
     }
@@ -141,7 +138,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters
      * 
      */
-    @JsonProperty("ProvisioningParameters")
     public void setProvisioningParameters(List<ProvisioningParameter> provisioningParameters) {
         this.provisioningParameters = provisioningParameters;
     }
@@ -155,7 +151,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname
      * 
      */
-    @JsonProperty("ProductName")
     public CharSequence getProductName() {
         return productName;
     }
@@ -164,7 +159,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname
      * 
      */
-    @JsonProperty("ProductName")
     public void setProductName(CharSequence productName) {
         this.productName = productName;
     }
@@ -178,7 +172,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactname
      * 
      */
-    @JsonProperty("ProvisioningArtifactName")
     public CharSequence getProvisioningArtifactName() {
         return provisioningArtifactName;
     }
@@ -187,7 +180,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactname
      * 
      */
-    @JsonProperty("ProvisioningArtifactName")
     public void setProvisioningArtifactName(CharSequence provisioningArtifactName) {
         this.provisioningArtifactName = provisioningArtifactName;
     }
@@ -201,7 +193,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-notificationarns
      * 
      */
-    @JsonProperty("NotificationArns")
     public List<CharSequence> getNotificationArns() {
         return notificationArns;
     }
@@ -210,7 +201,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-notificationarns
      * 
      */
-    @JsonProperty("NotificationArns")
     public void setNotificationArns(List<CharSequence> notificationArns) {
         this.notificationArns = notificationArns;
     }
@@ -224,7 +214,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -233,7 +222,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-acceptlanguage
      * 
      */
-    @JsonProperty("AcceptLanguage")
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -247,7 +235,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productid
      * 
      */
-    @JsonProperty("ProductId")
     public CharSequence getProductId() {
         return productId;
     }
@@ -256,7 +243,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productid
      * 
      */
-    @JsonProperty("ProductId")
     public void setProductId(CharSequence productId) {
         this.productId = productId;
     }
@@ -270,7 +256,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -279,7 +264,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -293,7 +277,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisionedproductname
      * 
      */
-    @JsonProperty("ProvisionedProductName")
     public CharSequence getProvisionedProductName() {
         return provisionedProductName;
     }
@@ -302,7 +285,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisionedproductname
      * 
      */
-    @JsonProperty("ProvisionedProductName")
     public void setProvisionedProductName(CharSequence provisionedProductName) {
         this.provisionedProductName = provisionedProductName;
     }
@@ -316,7 +298,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactid
      * 
      */
-    @JsonProperty("ProvisioningArtifactId")
     public CharSequence getProvisioningArtifactId() {
         return provisioningArtifactId;
     }
@@ -325,7 +306,6 @@ public class CloudFormationProvisionedProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningartifactid
      * 
      */
-    @JsonProperty("ProvisioningArtifactId")
     public void setProvisioningArtifactId(CharSequence provisioningArtifactId) {
         this.provisioningArtifactId = provisioningArtifactId;
     }

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RDS_DBClusterAttributes.schema.json",
+  "title" : "DBClusterAttributes",
+  "type" : "string",
+  "enum" : [ "Endpoint.Address", "Endpoint.Port", "ReadEndpoint.Address" ],
+  "javaType" : "aws.rds.DBClusterAttributes"
+}

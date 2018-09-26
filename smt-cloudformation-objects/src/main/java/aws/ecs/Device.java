@@ -54,7 +54,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath
      * 
      */
-    @JsonProperty("ContainerPath")
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -63,7 +62,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath
      * 
      */
-    @JsonProperty("ContainerPath")
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
@@ -77,7 +75,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath
      * 
      */
-    @JsonProperty("HostPath")
     public CharSequence getHostPath() {
         return hostPath;
     }
@@ -86,7 +83,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath
      * 
      */
-    @JsonProperty("HostPath")
     public void setHostPath(CharSequence hostPath) {
         this.hostPath = hostPath;
     }
@@ -100,7 +96,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions
      * 
      */
-    @JsonProperty("Permissions")
     public Set<CharSequence> getPermissions() {
         return permissions;
     }
@@ -109,7 +104,6 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions
      * 
      */
-    @JsonProperty("Permissions")
     public void setPermissions(Set<CharSequence> permissions) {
         this.permissions = permissions;
     }

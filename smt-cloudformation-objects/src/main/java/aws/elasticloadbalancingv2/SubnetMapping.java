@@ -42,7 +42,6 @@ public class SubnetMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid
      * 
      */
-    @JsonProperty("AllocationId")
     public CharSequence getAllocationId() {
         return allocationId;
     }
@@ -51,7 +50,6 @@ public class SubnetMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-allocationid
      * 
      */
-    @JsonProperty("AllocationId")
     public void setAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
     }
@@ -65,7 +63,6 @@ public class SubnetMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -74,7 +71,6 @@ public class SubnetMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-subnetmapping.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmapping-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

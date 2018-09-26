@@ -34,7 +34,6 @@ public class RetryStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts
      * 
      */
-    @JsonProperty("Attempts")
     public Integer getAttempts() {
         return attempts;
     }
@@ -43,7 +42,6 @@ public class RetryStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts
      * 
      */
-    @JsonProperty("Attempts")
     public void setAttempts(Integer attempts) {
         this.attempts = attempts;
     }

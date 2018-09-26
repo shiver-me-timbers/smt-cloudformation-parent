@@ -78,7 +78,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
      * 
      */
-    @JsonProperty("Encrypted")
     public Boolean getEncrypted() {
         return encrypted;
     }
@@ -87,7 +86,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
      * 
      */
-    @JsonProperty("Encrypted")
     public void setEncrypted(Boolean encrypted) {
         this.encrypted = encrypted;
     }
@@ -101,7 +99,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags
      * 
      */
-    @JsonProperty("FileSystemTags")
     public Set<ElasticFileSystemTag> getFileSystemTags() {
         return fileSystemTags;
     }
@@ -110,7 +107,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags
      * 
      */
-    @JsonProperty("FileSystemTags")
     public void setFileSystemTags(Set<ElasticFileSystemTag> fileSystemTags) {
         this.fileSystemTags = fileSystemTags;
     }
@@ -124,7 +120,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid
      * 
      */
-    @JsonProperty("KmsKeyId")
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -133,7 +128,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid
      * 
      */
-    @JsonProperty("KmsKeyId")
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -147,7 +141,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
-    @JsonProperty("PerformanceMode")
     public CharSequence getPerformanceMode() {
         return performanceMode;
     }
@@ -156,7 +149,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
-    @JsonProperty("PerformanceMode")
     public void setPerformanceMode(CharSequence performanceMode) {
         this.performanceMode = performanceMode;
     }
@@ -170,7 +162,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
      * 
      */
-    @JsonProperty("ProvisionedThroughputInMibps")
     public Double getProvisionedThroughputInMibps() {
         return provisionedThroughputInMibps;
     }
@@ -179,7 +170,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
      * 
      */
-    @JsonProperty("ProvisionedThroughputInMibps")
     public void setProvisionedThroughputInMibps(Double provisionedThroughputInMibps) {
         this.provisionedThroughputInMibps = provisionedThroughputInMibps;
     }
@@ -193,7 +183,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
      * 
      */
-    @JsonProperty("ThroughputMode")
     public CharSequence getThroughputMode() {
         return throughputMode;
     }
@@ -202,7 +191,6 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
      * 
      */
-    @JsonProperty("ThroughputMode")
     public void setThroughputMode(CharSequence throughputMode) {
         this.throughputMode = throughputMode;
     }

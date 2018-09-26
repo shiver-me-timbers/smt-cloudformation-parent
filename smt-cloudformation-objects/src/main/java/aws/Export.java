@@ -17,12 +17,10 @@ public class Export {
     @JsonProperty("Name")
     private String name;
 
-    @JsonProperty("Name")
     public String getName() {
         return name;
     }
 
-    @JsonProperty("Name")
     public void setName(String name) {
         this.name = name;
     }

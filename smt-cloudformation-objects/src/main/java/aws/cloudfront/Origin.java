@@ -80,7 +80,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
-    @JsonProperty("OriginCustomHeaders")
     public List<OriginCustomHeader> getOriginCustomHeaders() {
         return originCustomHeaders;
     }
@@ -89,7 +88,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
-    @JsonProperty("OriginCustomHeaders")
     public void setOriginCustomHeaders(List<OriginCustomHeader> originCustomHeaders) {
         this.originCustomHeaders = originCustomHeaders;
     }
@@ -103,7 +101,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -112,7 +109,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -128,7 +124,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html
      * 
      */
-    @JsonProperty("S3OriginConfig")
     public S3OriginConfig getS3OriginConfig() {
         return s3OriginConfig;
     }
@@ -139,7 +134,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html
      * 
      */
-    @JsonProperty("S3OriginConfig")
     public void setS3OriginConfig(S3OriginConfig s3OriginConfig) {
         this.s3OriginConfig = s3OriginConfig;
     }
@@ -153,7 +147,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath
      * 
      */
-    @JsonProperty("OriginPath")
     public CharSequence getOriginPath() {
         return originPath;
     }
@@ -162,7 +155,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath
      * 
      */
-    @JsonProperty("OriginPath")
     public void setOriginPath(CharSequence originPath) {
         this.originPath = originPath;
     }
@@ -176,7 +168,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -185,7 +176,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -201,7 +191,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html
      * 
      */
-    @JsonProperty("CustomOriginConfig")
     public CustomOriginConfig getCustomOriginConfig() {
         return customOriginConfig;
     }
@@ -212,7 +201,6 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html
      * 
      */
-    @JsonProperty("CustomOriginConfig")
     public void setCustomOriginConfig(CustomOriginConfig customOriginConfig) {
         this.customOriginConfig = customOriginConfig;
     }

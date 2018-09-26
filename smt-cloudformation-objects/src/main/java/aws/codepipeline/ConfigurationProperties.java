@@ -82,7 +82,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -91,7 +90,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -105,7 +103,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-key
      * 
      */
-    @JsonProperty("Key")
     public Boolean getKey() {
         return key;
     }
@@ -114,7 +111,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(Boolean key) {
         this.key = key;
     }
@@ -128,7 +124,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -137,7 +132,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -151,7 +145,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-queryable
      * 
      */
-    @JsonProperty("Queryable")
     public Boolean getQueryable() {
         return queryable;
     }
@@ -160,7 +153,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-queryable
      * 
      */
-    @JsonProperty("Queryable")
     public void setQueryable(Boolean queryable) {
         this.queryable = queryable;
     }
@@ -174,7 +166,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-required
      * 
      */
-    @JsonProperty("Required")
     public Boolean getRequired() {
         return required;
     }
@@ -183,7 +174,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-required
      * 
      */
-    @JsonProperty("Required")
     public void setRequired(Boolean required) {
         this.required = required;
     }
@@ -197,7 +187,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-secret
      * 
      */
-    @JsonProperty("Secret")
     public Boolean getSecret() {
         return secret;
     }
@@ -206,7 +195,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-secret
      * 
      */
-    @JsonProperty("Secret")
     public void setSecret(Boolean secret) {
         this.secret = secret;
     }
@@ -220,7 +208,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -229,7 +216,6 @@ public class ConfigurationProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

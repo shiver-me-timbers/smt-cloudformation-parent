@@ -52,7 +52,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -61,7 +60,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -75,7 +73,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-ignoreapplicationstopfailures
      * 
      */
-    @JsonProperty("IgnoreApplicationStopFailures")
     public Boolean getIgnoreApplicationStopFailures() {
         return ignoreApplicationStopFailures;
     }
@@ -84,7 +81,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-ignoreapplicationstopfailures
      * 
      */
-    @JsonProperty("IgnoreApplicationStopFailures")
     public void setIgnoreApplicationStopFailures(Boolean ignoreApplicationStopFailures) {
         this.ignoreApplicationStopFailures = ignoreApplicationStopFailures;
     }
@@ -100,7 +96,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html
      * 
      */
-    @JsonProperty("Revision")
     public RevisionLocation getRevision() {
         return revision;
     }
@@ -111,7 +106,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html
      * 
      */
-    @JsonProperty("Revision")
     public void setRevision(RevisionLocation revision) {
         this.revision = revision;
     }

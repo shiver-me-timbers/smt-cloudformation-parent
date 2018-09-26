@@ -44,7 +44,6 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
      * 
      */
-    @JsonProperty("Criterion")
     public Criterion getCriterion() {
         return criterion;
     }
@@ -53,7 +52,6 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
      * 
      */
-    @JsonProperty("Criterion")
     public void setCriterion(Criterion criterion) {
         this.criterion = criterion;
     }
@@ -69,7 +67,6 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html
      * 
      */
-    @JsonProperty("ItemType")
     public Condition getItemType() {
         return itemType;
     }
@@ -80,7 +77,6 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html
      * 
      */
-    @JsonProperty("ItemType")
     public void setItemType(Condition itemType) {
         this.itemType = itemType;
     }

@@ -46,7 +46,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html
      * 
      */
-    @JsonProperty("KMSEncryptionConfig")
     public KMSEncryptionConfig getKMSEncryptionConfig() {
         return kMSEncryptionConfig;
     }
@@ -57,7 +56,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html
      * 
      */
-    @JsonProperty("KMSEncryptionConfig")
     public void setKMSEncryptionConfig(KMSEncryptionConfig kMSEncryptionConfig) {
         this.kMSEncryptionConfig = kMSEncryptionConfig;
     }
@@ -71,7 +69,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig
      * 
      */
-    @JsonProperty("NoEncryptionConfig")
     public CharSequence getNoEncryptionConfig() {
         return noEncryptionConfig;
     }
@@ -80,7 +77,6 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig
      * 
      */
-    @JsonProperty("NoEncryptionConfig")
     public void setNoEncryptionConfig(CharSequence noEncryptionConfig) {
         this.noEncryptionConfig = noEncryptionConfig;
     }

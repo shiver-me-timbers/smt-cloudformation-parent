@@ -40,12 +40,26 @@ public class ResourceResource
     private aws.apigateway.Resource properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ResourceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ResourceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Resource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
      * 
      */
-    @JsonProperty("Properties")
     public aws.apigateway.Resource getProperties() {
         return properties;
     }
@@ -56,7 +70,6 @@ public class ResourceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(aws.apigateway.Resource properties) {
         this.properties = properties;
     }
@@ -99,6 +112,12 @@ public class ResourceResource
     @Override
     public ResourceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ResourceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

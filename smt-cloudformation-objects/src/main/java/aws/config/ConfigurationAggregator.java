@@ -54,7 +54,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources
      * 
      */
-    @JsonProperty("AccountAggregationSources")
     public List<AccountAggregationSource> getAccountAggregationSources() {
         return accountAggregationSources;
     }
@@ -63,7 +62,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources
      * 
      */
-    @JsonProperty("AccountAggregationSources")
     public void setAccountAggregationSources(List<AccountAggregationSource> accountAggregationSources) {
         this.accountAggregationSources = accountAggregationSources;
     }
@@ -77,7 +75,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-configurationaggregatorname
      * 
      */
-    @JsonProperty("ConfigurationAggregatorName")
     public CharSequence getConfigurationAggregatorName() {
         return configurationAggregatorName;
     }
@@ -86,7 +83,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-configurationaggregatorname
      * 
      */
-    @JsonProperty("ConfigurationAggregatorName")
     public void setConfigurationAggregatorName(CharSequence configurationAggregatorName) {
         this.configurationAggregatorName = configurationAggregatorName;
     }
@@ -102,7 +98,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
-    @JsonProperty("OrganizationAggregationSource")
     public OrganizationAggregationSource getOrganizationAggregationSource() {
         return organizationAggregationSource;
     }
@@ -113,7 +108,6 @@ public class ConfigurationAggregator {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
-    @JsonProperty("OrganizationAggregationSource")
     public void setOrganizationAggregationSource(OrganizationAggregationSource organizationAggregationSource) {
         this.organizationAggregationSource = organizationAggregationSource;
     }

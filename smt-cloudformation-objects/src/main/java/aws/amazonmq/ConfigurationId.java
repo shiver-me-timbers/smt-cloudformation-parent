@@ -42,7 +42,6 @@ public class ConfigurationId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-revision
      * 
      */
-    @JsonProperty("Revision")
     public Integer getRevision() {
         return revision;
     }
@@ -51,7 +50,6 @@ public class ConfigurationId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-revision
      * 
      */
-    @JsonProperty("Revision")
     public void setRevision(Integer revision) {
         this.revision = revision;
     }
@@ -65,7 +63,6 @@ public class ConfigurationId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -74,7 +71,6 @@ public class ConfigurationId {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }

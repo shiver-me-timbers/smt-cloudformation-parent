@@ -41,12 +41,26 @@ public class ApplicationVersionResource
     private ApplicationVersion properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ApplicationVersionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ApplicationVersionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ApplicationVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html
      * 
      */
-    @JsonProperty("Properties")
     public ApplicationVersion getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ApplicationVersionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ApplicationVersion properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ApplicationVersionResource
     @Override
     public ApplicationVersionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ApplicationVersionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

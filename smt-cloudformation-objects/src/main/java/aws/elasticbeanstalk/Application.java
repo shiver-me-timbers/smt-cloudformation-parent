@@ -52,7 +52,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name
      * 
      */
-    @JsonProperty("ApplicationName")
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -61,7 +60,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name
      * 
      */
-    @JsonProperty("ApplicationName")
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -75,7 +73,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -84,7 +81,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -100,7 +96,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html
      * 
      */
-    @JsonProperty("ResourceLifecycleConfig")
     public ApplicationResourceLifecycleConfig getResourceLifecycleConfig() {
         return resourceLifecycleConfig;
     }
@@ -111,7 +106,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html
      * 
      */
-    @JsonProperty("ResourceLifecycleConfig")
     public void setResourceLifecycleConfig(ApplicationResourceLifecycleConfig resourceLifecycleConfig) {
         this.resourceLifecycleConfig = resourceLifecycleConfig;
     }

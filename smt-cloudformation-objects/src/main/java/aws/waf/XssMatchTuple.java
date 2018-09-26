@@ -46,7 +46,6 @@ public class XssMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -57,7 +56,6 @@ public class XssMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
@@ -71,7 +69,6 @@ public class XssMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -80,7 +77,6 @@ public class XssMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }

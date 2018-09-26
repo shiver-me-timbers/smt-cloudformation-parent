@@ -42,7 +42,6 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype
      * 
      */
-    @JsonProperty("EncryptionType")
     public CharSequence getEncryptionType() {
         return encryptionType;
     }
@@ -51,7 +50,6 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype
      * 
      */
-    @JsonProperty("EncryptionType")
     public void setEncryptionType(CharSequence encryptionType) {
         this.encryptionType = encryptionType;
     }
@@ -65,7 +63,6 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid
      * 
      */
-    @JsonProperty("KeyId")
     public CharSequence getKeyId() {
         return keyId;
     }
@@ -74,7 +71,6 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid
      * 
      */
-    @JsonProperty("KeyId")
     public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }

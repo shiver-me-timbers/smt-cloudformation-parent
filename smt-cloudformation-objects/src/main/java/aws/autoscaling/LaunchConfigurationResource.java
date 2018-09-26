@@ -41,12 +41,26 @@ public class LaunchConfigurationResource
     private LaunchConfiguration properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LaunchConfigurationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LaunchConfigurationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LaunchConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public LaunchConfiguration getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LaunchConfigurationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LaunchConfiguration properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LaunchConfigurationResource
     @Override
     public LaunchConfigurationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LaunchConfigurationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

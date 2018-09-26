@@ -38,7 +38,6 @@ public class RunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
      * 
      */
-    @JsonProperty("RunCommandTargets")
     public Set<RunCommandTarget> getRunCommandTargets() {
         return runCommandTargets;
     }
@@ -47,7 +46,6 @@ public class RunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
      * 
      */
-    @JsonProperty("RunCommandTargets")
     public void setRunCommandTargets(Set<RunCommandTarget> runCommandTargets) {
         this.runCommandTargets = runCommandTargets;
     }

@@ -50,7 +50,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey
      * 
      */
-    @JsonProperty("PartitionKey")
     public CharSequence getPartitionKey() {
         return partitionKey;
     }
@@ -59,7 +58,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey
      * 
      */
-    @JsonProperty("PartitionKey")
     public void setPartitionKey(CharSequence partitionKey) {
         this.partitionKey = partitionKey;
     }
@@ -73,7 +71,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -82,7 +79,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -96,7 +92,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname
      * 
      */
-    @JsonProperty("StreamName")
     public CharSequence getStreamName() {
         return streamName;
     }
@@ -105,7 +100,6 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname
      * 
      */
-    @JsonProperty("StreamName")
     public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }

@@ -46,7 +46,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-ipsetdescriptors
      * 
      */
-    @JsonProperty("IPSetDescriptors")
     public Set<IPSetDescriptor> getIPSetDescriptors() {
         return iPSetDescriptors;
     }
@@ -55,7 +54,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-ipsetdescriptors
      * 
      */
-    @JsonProperty("IPSetDescriptors")
     public void setIPSetDescriptors(Set<IPSetDescriptor> iPSetDescriptors) {
         this.iPSetDescriptors = iPSetDescriptors;
     }
@@ -69,7 +67,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -78,7 +75,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

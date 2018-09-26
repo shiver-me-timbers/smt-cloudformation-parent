@@ -15,14 +15,15 @@
   ~    limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.github.shiver-me-timbers</groupId>
         <artifactId>smt-parent-spring-boot</artifactId>
         <version>2.0.5.0</version>
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
@@ -34,8 +35,8 @@
     <name>${project.artifactId}</name>
 
     <description>
-	    This library contains Java objects for building Cloudformation template components.
-	    These objects can then be serialised to a JSON or YAML template using the Jackson library.
+        This library contains Java objects for building Cloudformation template components.
+        These objects can then be serialised to a JSON or YAML template using the Jackson library.
     </description>
 
     <url>https://github.com/shiver-me-timbers/smt-cloudformation-objects/</url>
@@ -90,8 +91,10 @@
     </dependencies>
 
     <modules>
-        <module>smt-cloudformation-json-schemas</module>
+        <module>smt-cloudformation-generation</module>
+        <module>smt-cloudformation-base-json-schemas</module>
         <module>smt-cloudformation-base</module>
+        <module>smt-cloudformation-objects-json-schemas</module>
         <module>smt-cloudformation-objects</module>
     </modules>
 
@@ -99,6 +102,6 @@
         <connection>scm:git:https://github.com/shiver-me-timbers/${project.artifactId}.git</connection>
         <developerConnection>scm:git:git@github.com:shiver-me-timbers/${project.artifactId}.git</developerConnection>
         <url>https://github.com/shiver-me-timbers/${project.artifactId}</url>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 </project>

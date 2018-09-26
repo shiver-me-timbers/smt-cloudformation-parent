@@ -20,12 +20,10 @@ public class ResourceSignal {
     @JsonProperty("Timeout")
     private String timeout;
 
-    @JsonProperty("Count")
     public Integer getCount() {
         return count;
     }
 
-    @JsonProperty("Count")
     public void setCount(Integer count) {
         this.count = count;
     }
@@ -35,12 +33,10 @@ public class ResourceSignal {
         return this;
     }
 
-    @JsonProperty("Timeout")
     public String getTimeout() {
         return timeout;
     }
 
-    @JsonProperty("Timeout")
     public void setTimeout(String timeout) {
         this.timeout = timeout;
     }

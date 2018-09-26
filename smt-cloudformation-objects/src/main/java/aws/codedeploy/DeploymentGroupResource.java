@@ -41,12 +41,26 @@ public class DeploymentGroupResource
     private DeploymentGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DeploymentGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DeploymentGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DeploymentGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public DeploymentGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DeploymentGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DeploymentGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DeploymentGroupResource
     @Override
     public DeploymentGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DeploymentGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

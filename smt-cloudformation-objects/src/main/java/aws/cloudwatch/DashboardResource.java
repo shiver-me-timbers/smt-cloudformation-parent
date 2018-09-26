@@ -41,12 +41,26 @@ public class DashboardResource
     private Dashboard properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DashboardResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DashboardResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Dashboard
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html
      * 
      */
-    @JsonProperty("Properties")
     public Dashboard getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DashboardResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Dashboard properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DashboardResource
     @Override
     public DashboardResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DashboardResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

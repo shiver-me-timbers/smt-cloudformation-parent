@@ -66,7 +66,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-contenttype
      * 
      */
-    @JsonProperty("ContentType")
     public CharSequence getContentType() {
         return contentType;
     }
@@ -75,7 +74,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-contenttype
      * 
      */
-    @JsonProperty("ContentType")
     public void setContentType(CharSequence contentType) {
         this.contentType = contentType;
     }
@@ -89,7 +87,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -98,7 +95,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -112,7 +108,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -121,7 +116,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -135,7 +129,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -144,7 +137,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -158,7 +150,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema
      * 
      */
-    @JsonProperty("Schema")
     public Schema getSchema() {
         return schema;
     }
@@ -167,7 +158,6 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema
      * 
      */
-    @JsonProperty("Schema")
     public void setSchema(Schema schema) {
         this.schema = schema;
     }

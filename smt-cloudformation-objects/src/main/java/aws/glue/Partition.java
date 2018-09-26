@@ -60,7 +60,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename
      * 
      */
-    @JsonProperty("TableName")
     public CharSequence getTableName() {
         return tableName;
     }
@@ -69,7 +68,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename
      * 
      */
-    @JsonProperty("TableName")
     public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }
@@ -83,7 +81,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -92,7 +89,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-databasename
      * 
      */
-    @JsonProperty("DatabaseName")
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -106,7 +102,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -115,7 +110,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }
@@ -131,7 +125,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html
      * 
      */
-    @JsonProperty("PartitionInput")
     public PartitionInput getPartitionInput() {
         return partitionInput;
     }
@@ -142,7 +135,6 @@ public class Partition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html
      * 
      */
-    @JsonProperty("PartitionInput")
     public void setPartitionInput(PartitionInput partitionInput) {
         this.partitionInput = partitionInput;
     }

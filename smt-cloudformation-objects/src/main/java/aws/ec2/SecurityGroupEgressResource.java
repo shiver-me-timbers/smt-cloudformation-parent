@@ -41,12 +41,26 @@ public class SecurityGroupEgressResource
     private SecurityGroupEgress properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SecurityGroupEgressResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SecurityGroupEgressResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SecurityGroupEgress
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
      * 
      */
-    @JsonProperty("Properties")
     public SecurityGroupEgress getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SecurityGroupEgressResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-security-group-egress.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SecurityGroupEgress properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SecurityGroupEgressResource
     @Override
     public SecurityGroupEgressResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SecurityGroupEgressResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -42,7 +42,6 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public CharSequence getApiId() {
         return apiId;
     }
@@ -51,7 +50,6 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
      * 
      */
-    @JsonProperty("ApiId")
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
@@ -65,7 +63,6 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage
      * 
      */
-    @JsonProperty("Stage")
     public CharSequence getStage() {
         return stage;
     }
@@ -74,7 +71,6 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage
      * 
      */
-    @JsonProperty("Stage")
     public void setStage(CharSequence stage) {
         this.stage = stage;
     }

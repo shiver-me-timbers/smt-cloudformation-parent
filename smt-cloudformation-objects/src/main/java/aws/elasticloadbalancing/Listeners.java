@@ -78,7 +78,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport
      * 
      */
-    @JsonProperty("InstancePort")
     public CharSequence getInstancePort() {
         return instancePort;
     }
@@ -87,7 +86,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport
      * 
      */
-    @JsonProperty("InstancePort")
     public void setInstancePort(CharSequence instancePort) {
         this.instancePort = instancePort;
     }
@@ -101,7 +99,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol
      * 
      */
-    @JsonProperty("InstanceProtocol")
     public CharSequence getInstanceProtocol() {
         return instanceProtocol;
     }
@@ -110,7 +107,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol
      * 
      */
-    @JsonProperty("InstanceProtocol")
     public void setInstanceProtocol(CharSequence instanceProtocol) {
         this.instanceProtocol = instanceProtocol;
     }
@@ -124,7 +120,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport
      * 
      */
-    @JsonProperty("LoadBalancerPort")
     public CharSequence getLoadBalancerPort() {
         return loadBalancerPort;
     }
@@ -133,7 +128,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport
      * 
      */
-    @JsonProperty("LoadBalancerPort")
     public void setLoadBalancerPort(CharSequence loadBalancerPort) {
         this.loadBalancerPort = loadBalancerPort;
     }
@@ -147,7 +141,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames
      * 
      */
-    @JsonProperty("PolicyNames")
     public Set<CharSequence> getPolicyNames() {
         return policyNames;
     }
@@ -156,7 +149,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames
      * 
      */
-    @JsonProperty("PolicyNames")
     public void setPolicyNames(Set<CharSequence> policyNames) {
         this.policyNames = policyNames;
     }
@@ -170,7 +162,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -179,7 +170,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -193,7 +183,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid
      * 
      */
-    @JsonProperty("SSLCertificateId")
     public CharSequence getSSLCertificateId() {
         return sSLCertificateId;
     }
@@ -202,7 +191,6 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid
      * 
      */
-    @JsonProperty("SSLCertificateId")
     public void setSSLCertificateId(CharSequence sSLCertificateId) {
         this.sSLCertificateId = sSLCertificateId;
     }

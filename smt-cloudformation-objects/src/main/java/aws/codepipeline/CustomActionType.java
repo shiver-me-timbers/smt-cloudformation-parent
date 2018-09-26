@@ -92,7 +92,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category
      * 
      */
-    @JsonProperty("Category")
     public CharSequence getCategory() {
         return category;
     }
@@ -101,7 +100,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category
      * 
      */
-    @JsonProperty("Category")
     public void setCategory(CharSequence category) {
         this.category = category;
     }
@@ -115,7 +113,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties
      * 
      */
-    @JsonProperty("ConfigurationProperties")
     public Set<ConfigurationProperties> getConfigurationProperties() {
         return configurationProperties;
     }
@@ -124,7 +121,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties
      * 
      */
-    @JsonProperty("ConfigurationProperties")
     public void setConfigurationProperties(Set<ConfigurationProperties> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
@@ -140,7 +136,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
-    @JsonProperty("InputArtifactDetails")
     public ArtifactDetails getInputArtifactDetails() {
         return inputArtifactDetails;
     }
@@ -151,7 +146,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
-    @JsonProperty("InputArtifactDetails")
     public void setInputArtifactDetails(ArtifactDetails inputArtifactDetails) {
         this.inputArtifactDetails = inputArtifactDetails;
     }
@@ -167,7 +161,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
-    @JsonProperty("OutputArtifactDetails")
     public ArtifactDetails getOutputArtifactDetails() {
         return outputArtifactDetails;
     }
@@ -178,7 +171,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
-    @JsonProperty("OutputArtifactDetails")
     public void setOutputArtifactDetails(ArtifactDetails outputArtifactDetails) {
         this.outputArtifactDetails = outputArtifactDetails;
     }
@@ -192,7 +184,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider
      * 
      */
-    @JsonProperty("Provider")
     public CharSequence getProvider() {
         return provider;
     }
@@ -201,7 +192,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider
      * 
      */
-    @JsonProperty("Provider")
     public void setProvider(CharSequence provider) {
         this.provider = provider;
     }
@@ -217,7 +207,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html
      * 
      */
-    @JsonProperty("Settings")
     public Settings getSettings() {
         return settings;
     }
@@ -228,7 +217,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html
      * 
      */
-    @JsonProperty("Settings")
     public void setSettings(Settings settings) {
         this.settings = settings;
     }
@@ -242,7 +230,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
      */
-    @JsonProperty("Version")
     public CharSequence getVersion() {
         return version;
     }
@@ -251,7 +238,6 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
      */
-    @JsonProperty("Version")
     public void setVersion(CharSequence version) {
         this.version = version;
     }

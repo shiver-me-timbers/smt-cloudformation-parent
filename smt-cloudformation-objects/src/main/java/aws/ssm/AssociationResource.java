@@ -41,12 +41,26 @@ public class AssociationResource
     private Association properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Association
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
      * 
      */
-    @JsonProperty("Properties")
     public Association getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Association properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AssociationResource
     @Override
     public AssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

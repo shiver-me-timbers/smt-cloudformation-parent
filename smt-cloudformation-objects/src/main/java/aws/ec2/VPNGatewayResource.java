@@ -41,12 +41,26 @@ public class VPNGatewayResource
     private VPNGateway properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPNGatewayResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPNGatewayResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPNGateway
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html
      * 
      */
-    @JsonProperty("Properties")
     public VPNGateway getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPNGatewayResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPNGateway properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPNGatewayResource
     @Override
     public VPNGatewayResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPNGatewayResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

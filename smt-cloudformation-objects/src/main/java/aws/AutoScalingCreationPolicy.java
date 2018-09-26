@@ -17,12 +17,10 @@ public class AutoScalingCreationPolicy {
     @JsonProperty("MinSuccessfulInstancesPercent")
     private Integer minSuccessfulInstancesPercent;
 
-    @JsonProperty("MinSuccessfulInstancesPercent")
     public Integer getMinSuccessfulInstancesPercent() {
         return minSuccessfulInstancesPercent;
     }
 
-    @JsonProperty("MinSuccessfulInstancesPercent")
     public void setMinSuccessfulInstancesPercent(Integer minSuccessfulInstancesPercent) {
         this.minSuccessfulInstancesPercent = minSuccessfulInstancesPercent;
     }

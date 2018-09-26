@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class EnvironmentResource
     extends Resource
+    implements HasAttributes<EnvironmentAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class EnvironmentResource
     private Environment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EnvironmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EnvironmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Environment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html
      * 
      */
-    @JsonProperty("Properties")
     public Environment getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class EnvironmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Environment properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class EnvironmentResource
     @Override
     public EnvironmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EnvironmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

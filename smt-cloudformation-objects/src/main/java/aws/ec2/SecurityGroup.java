@@ -77,7 +77,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription
      * 
      */
-    @JsonProperty("GroupDescription")
     public CharSequence getGroupDescription() {
         return groupDescription;
     }
@@ -86,7 +85,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription
      * 
      */
-    @JsonProperty("GroupDescription")
     public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
@@ -100,7 +98,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -109,7 +106,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -123,7 +119,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress
      * 
      */
-    @JsonProperty("SecurityGroupEgress")
     public List<Egress> getSecurityGroupEgress() {
         return securityGroupEgress;
     }
@@ -132,7 +127,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress
      * 
      */
-    @JsonProperty("SecurityGroupEgress")
     public void setSecurityGroupEgress(List<Egress> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
     }
@@ -146,7 +140,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
-    @JsonProperty("SecurityGroupIngress")
     public List<Ingress> getSecurityGroupIngress() {
         return securityGroupIngress;
     }
@@ -155,7 +148,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
-    @JsonProperty("SecurityGroupIngress")
     public void setSecurityGroupIngress(List<Ingress> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
     }
@@ -169,7 +161,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -178,7 +169,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -192,7 +182,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -201,7 +190,6 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

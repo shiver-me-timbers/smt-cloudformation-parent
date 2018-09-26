@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudFront_StreamingDistributionResource.schema.json",
+  "title" : "StreamingDistributionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cloudfront.StreamingDistributionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<StreamingDistributionAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_CloudFront_StreamingDistribution.schema.json"
+    }
+  }
+}

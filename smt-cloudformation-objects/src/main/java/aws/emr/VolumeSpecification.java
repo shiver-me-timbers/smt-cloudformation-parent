@@ -50,7 +50,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops
      * 
      */
-    @JsonProperty("Iops")
     public Integer getIops() {
         return iops;
     }
@@ -59,7 +58,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops
      * 
      */
-    @JsonProperty("Iops")
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -73,7 +71,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-sizeingb
      * 
      */
-    @JsonProperty("SizeInGB")
     public Integer getSizeInGB() {
         return sizeInGB;
     }
@@ -82,7 +79,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-sizeingb
      * 
      */
-    @JsonProperty("SizeInGB")
     public void setSizeInGB(Integer sizeInGB) {
         this.sizeInGB = sizeInGB;
     }
@@ -96,7 +92,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-volumetype
      * 
      */
-    @JsonProperty("VolumeType")
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -105,7 +100,6 @@ public class VolumeSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-volumetype
      * 
      */
-    @JsonProperty("VolumeType")
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

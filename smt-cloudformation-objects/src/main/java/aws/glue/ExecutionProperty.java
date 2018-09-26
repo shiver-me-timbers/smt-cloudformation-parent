@@ -34,7 +34,6 @@ public class ExecutionProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns
      * 
      */
-    @JsonProperty("MaxConcurrentRuns")
     public Double getMaxConcurrentRuns() {
         return maxConcurrentRuns;
     }
@@ -43,7 +42,6 @@ public class ExecutionProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns
      * 
      */
-    @JsonProperty("MaxConcurrentRuns")
     public void setMaxConcurrentRuns(Double maxConcurrentRuns) {
         this.maxConcurrentRuns = maxConcurrentRuns;
     }

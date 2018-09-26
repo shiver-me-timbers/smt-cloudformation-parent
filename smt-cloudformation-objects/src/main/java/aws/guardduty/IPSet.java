@@ -66,7 +66,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-format
      * 
      */
-    @JsonProperty("Format")
     public CharSequence getFormat() {
         return format;
     }
@@ -75,7 +74,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-format
      * 
      */
-    @JsonProperty("Format")
     public void setFormat(CharSequence format) {
         this.format = format;
     }
@@ -89,7 +87,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-activate
      * 
      */
-    @JsonProperty("Activate")
     public Boolean getActivate() {
         return activate;
     }
@@ -98,7 +95,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-activate
      * 
      */
-    @JsonProperty("Activate")
     public void setActivate(Boolean activate) {
         this.activate = activate;
     }
@@ -112,7 +108,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public CharSequence getDetectorId() {
         return detectorId;
     }
@@ -121,7 +116,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
@@ -135,7 +129,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -144,7 +137,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -158,7 +150,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-location
      * 
      */
-    @JsonProperty("Location")
     public CharSequence getLocation() {
         return location;
     }
@@ -167,7 +158,6 @@ public class IPSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html#cfn-guardduty-ipset-location
      * 
      */
-    @JsonProperty("Location")
     public void setLocation(CharSequence location) {
         this.location = location;
     }

@@ -42,7 +42,6 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn
      * 
      */
-    @JsonProperty("KinesisStreamARN")
     public CharSequence getKinesisStreamARN() {
         return kinesisStreamARN;
     }
@@ -51,7 +50,6 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn
      * 
      */
-    @JsonProperty("KinesisStreamARN")
     public void setKinesisStreamARN(CharSequence kinesisStreamARN) {
         this.kinesisStreamARN = kinesisStreamARN;
     }
@@ -65,7 +63,6 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -74,7 +71,6 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

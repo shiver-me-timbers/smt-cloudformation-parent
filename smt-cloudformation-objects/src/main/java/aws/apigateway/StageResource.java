@@ -41,12 +41,26 @@ public class StageResource
     private Stage properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public StageResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public StageResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Stage
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
      * 
      */
-    @JsonProperty("Properties")
     public Stage getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class StageResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Stage properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class StageResource
     @Override
     public StageResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public StageResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -78,7 +78,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -87,7 +86,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -101,7 +99,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -110,7 +107,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -124,7 +120,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions
      * 
      */
-    @JsonProperty("Actions")
     public List<Action> getActions() {
         return actions;
     }
@@ -133,7 +128,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions
      * 
      */
-    @JsonProperty("Actions")
     public void setActions(List<Action> actions) {
         this.actions = actions;
     }
@@ -147,7 +141,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule
      * 
      */
-    @JsonProperty("Schedule")
     public CharSequence getSchedule() {
         return schedule;
     }
@@ -156,7 +149,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule
      * 
      */
-    @JsonProperty("Schedule")
     public void setSchedule(CharSequence schedule) {
         this.schedule = schedule;
     }
@@ -170,7 +162,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -179,7 +170,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -195,7 +185,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html
      * 
      */
-    @JsonProperty("Predicate")
     public Predicate getPredicate() {
         return predicate;
     }
@@ -206,7 +195,6 @@ public class Trigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html
      * 
      */
-    @JsonProperty("Predicate")
     public void setPredicate(Predicate predicate) {
         this.predicate = predicate;
     }

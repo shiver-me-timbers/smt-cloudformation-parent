@@ -48,7 +48,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html
      * 
      */
-    @JsonProperty("HealthCheckConfig")
     public HealthCheckConfig getHealthCheckConfig() {
         return healthCheckConfig;
     }
@@ -59,7 +58,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html
      * 
      */
-    @JsonProperty("HealthCheckConfig")
     public void setHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
     }
@@ -73,7 +71,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags
      * 
      */
-    @JsonProperty("HealthCheckTags")
     public List<HealthCheckTag> getHealthCheckTags() {
         return healthCheckTags;
     }
@@ -82,7 +79,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags
      * 
      */
-    @JsonProperty("HealthCheckTags")
     public void setHealthCheckTags(List<HealthCheckTag> healthCheckTags) {
         this.healthCheckTags = healthCheckTags;
     }

@@ -46,7 +46,6 @@ public class Processor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Set<ProcessorParameter> getParameters() {
         return parameters;
     }
@@ -55,7 +54,6 @@ public class Processor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Set<ProcessorParameter> parameters) {
         this.parameters = parameters;
     }
@@ -69,7 +67,6 @@ public class Processor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -78,7 +75,6 @@ public class Processor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

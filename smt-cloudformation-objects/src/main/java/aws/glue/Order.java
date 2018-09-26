@@ -42,7 +42,6 @@ public class Order {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-column
      * 
      */
-    @JsonProperty("Column")
     public CharSequence getColumn() {
         return column;
     }
@@ -51,7 +50,6 @@ public class Order {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-column
      * 
      */
-    @JsonProperty("Column")
     public void setColumn(CharSequence column) {
         this.column = column;
     }
@@ -65,7 +63,6 @@ public class Order {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-sortorder
      * 
      */
-    @JsonProperty("SortOrder")
     public Integer getSortOrder() {
         return sortOrder;
     }
@@ -74,7 +71,6 @@ public class Order {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-sortorder
      * 
      */
-    @JsonProperty("SortOrder")
     public void setSortOrder(Integer sortOrder) {
         this.sortOrder = sortOrder;
     }

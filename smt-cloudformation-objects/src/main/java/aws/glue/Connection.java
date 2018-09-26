@@ -46,7 +46,6 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
-    @JsonProperty("ConnectionInput")
     public ConnectionInput getConnectionInput() {
         return connectionInput;
     }
@@ -57,7 +56,6 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
-    @JsonProperty("ConnectionInput")
     public void setConnectionInput(ConnectionInput connectionInput) {
         this.connectionInput = connectionInput;
     }
@@ -71,7 +69,6 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -80,7 +77,6 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

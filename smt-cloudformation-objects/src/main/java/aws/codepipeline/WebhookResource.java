@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class WebhookResource
     extends Resource
+    implements HasAttributes<WebhookAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class WebhookResource
     private Webhook properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WebhookResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public WebhookResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Webhook
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
      * 
      */
-    @JsonProperty("Properties")
     public Webhook getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class WebhookResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Webhook properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class WebhookResource
     @Override
     public WebhookResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public WebhookResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

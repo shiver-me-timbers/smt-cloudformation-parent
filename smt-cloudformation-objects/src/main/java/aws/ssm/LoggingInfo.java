@@ -50,7 +50,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public CharSequence getS3Bucket() {
         return s3Bucket;
     }
@@ -59,7 +58,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
@@ -73,7 +71,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region
      * 
      */
-    @JsonProperty("Region")
     public CharSequence getRegion() {
         return region;
     }
@@ -82,7 +79,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region
      * 
      */
-    @JsonProperty("Region")
     public void setRegion(CharSequence region) {
         this.region = region;
     }
@@ -96,7 +92,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix
      * 
      */
-    @JsonProperty("S3Prefix")
     public CharSequence getS3Prefix() {
         return s3Prefix;
     }
@@ -105,7 +100,6 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix
      * 
      */
-    @JsonProperty("S3Prefix")
     public void setS3Prefix(CharSequence s3Prefix) {
         this.s3Prefix = s3Prefix;
     }

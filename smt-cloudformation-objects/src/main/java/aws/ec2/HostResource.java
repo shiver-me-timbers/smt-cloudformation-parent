@@ -41,12 +41,26 @@ public class HostResource
     private Host properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public HostResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public HostResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Host
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html
      * 
      */
-    @JsonProperty("Properties")
     public Host getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class HostResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Host properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class HostResource
     @Override
     public HostResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public HostResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

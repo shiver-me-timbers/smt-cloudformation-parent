@@ -66,7 +66,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -75,7 +74,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -89,7 +87,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -98,7 +95,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -112,7 +108,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-enginetype
      * 
      */
-    @JsonProperty("EngineType")
     public CharSequence getEngineType() {
         return engineType;
     }
@@ -121,7 +116,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-enginetype
      * 
      */
-    @JsonProperty("EngineType")
     public void setEngineType(CharSequence engineType) {
         this.engineType = engineType;
     }
@@ -135,7 +129,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-data
      * 
      */
-    @JsonProperty("Data")
     public CharSequence getData() {
         return data;
     }
@@ -144,7 +137,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-data
      * 
      */
-    @JsonProperty("Data")
     public void setData(CharSequence data) {
         this.data = data;
     }
@@ -158,7 +150,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -167,7 +158,6 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

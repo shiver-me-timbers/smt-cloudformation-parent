@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class VPCResource
     extends Resource
+    implements HasAttributes<VPCAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class VPCResource
     private VPC properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPC
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
      * 
      */
-    @JsonProperty("Properties")
     public VPC getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class VPCResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPC properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class VPCResource
     @Override
     public VPCResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

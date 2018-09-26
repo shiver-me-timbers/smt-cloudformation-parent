@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class CloudFrontOriginAccessIdentityResource
     extends Resource
+    implements HasAttributes<CloudFrontOriginAccessIdentityAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class CloudFrontOriginAccessIdentityResource
     private CloudFrontOriginAccessIdentity properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CloudFrontOriginAccessIdentityResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CloudFrontOriginAccessIdentityResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CloudFrontOriginAccessIdentity
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html
      * 
      */
-    @JsonProperty("Properties")
     public CloudFrontOriginAccessIdentity getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class CloudFrontOriginAccessIdentityResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-cloudfrontoriginaccessidentity.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CloudFrontOriginAccessIdentity properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class CloudFrontOriginAccessIdentityResource
     @Override
     public CloudFrontOriginAccessIdentityResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CloudFrontOriginAccessIdentityResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

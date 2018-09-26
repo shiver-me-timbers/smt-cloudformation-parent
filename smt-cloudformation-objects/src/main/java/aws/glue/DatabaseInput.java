@@ -58,7 +58,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-locationuri
      * 
      */
-    @JsonProperty("LocationUri")
     public CharSequence getLocationUri() {
         return locationUri;
     }
@@ -67,7 +66,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-locationuri
      * 
      */
-    @JsonProperty("LocationUri")
     public void setLocationUri(CharSequence locationUri) {
         this.locationUri = locationUri;
     }
@@ -81,7 +79,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -90,7 +87,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -104,7 +100,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters getParameters() {
         return parameters;
     }
@@ -113,7 +108,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters parameters) {
         this.parameters = parameters;
     }
@@ -127,7 +121,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -136,7 +129,6 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

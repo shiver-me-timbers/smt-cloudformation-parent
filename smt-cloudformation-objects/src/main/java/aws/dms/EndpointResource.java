@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class EndpointResource
     extends Resource
+    implements HasAttributes<EndpointAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class EndpointResource
     private Endpoint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EndpointResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EndpointResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Endpoint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public Endpoint getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class EndpointResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Endpoint properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class EndpointResource
     @Override
     public EndpointResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EndpointResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

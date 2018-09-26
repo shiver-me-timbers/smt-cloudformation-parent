@@ -42,7 +42,6 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent
      * 
      */
-    @JsonProperty("MaximumPercent")
     public Integer getMaximumPercent() {
         return maximumPercent;
     }
@@ -51,7 +50,6 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent
      * 
      */
-    @JsonProperty("MaximumPercent")
     public void setMaximumPercent(Integer maximumPercent) {
         this.maximumPercent = maximumPercent;
     }
@@ -65,7 +63,6 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent
      * 
      */
-    @JsonProperty("MinimumHealthyPercent")
     public Integer getMinimumHealthyPercent() {
         return minimumHealthyPercent;
     }
@@ -74,7 +71,6 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent
      * 
      */
-    @JsonProperty("MinimumHealthyPercent")
     public void setMinimumHealthyPercent(Integer minimumHealthyPercent) {
         this.minimumHealthyPercent = minimumHealthyPercent;
     }

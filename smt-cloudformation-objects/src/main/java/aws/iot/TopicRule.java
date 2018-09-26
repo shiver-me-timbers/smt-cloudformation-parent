@@ -44,7 +44,6 @@ public class TopicRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename
      * 
      */
-    @JsonProperty("RuleName")
     public CharSequence getRuleName() {
         return ruleName;
     }
@@ -53,7 +52,6 @@ public class TopicRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename
      * 
      */
-    @JsonProperty("RuleName")
     public void setRuleName(CharSequence ruleName) {
         this.ruleName = ruleName;
     }
@@ -69,7 +67,6 @@ public class TopicRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html
      * 
      */
-    @JsonProperty("TopicRulePayload")
     public TopicRulePayload getTopicRulePayload() {
         return topicRulePayload;
     }
@@ -80,7 +77,6 @@ public class TopicRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html
      * 
      */
-    @JsonProperty("TopicRulePayload")
     public void setTopicRulePayload(TopicRulePayload topicRulePayload) {
         this.topicRulePayload = topicRulePayload;
     }

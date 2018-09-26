@@ -41,12 +41,26 @@ public class ModelResource
     private Model properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ModelResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ModelResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Model
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html
      * 
      */
-    @JsonProperty("Properties")
     public Model getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ModelResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Model properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ModelResource
     @Override
     public ModelResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ModelResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

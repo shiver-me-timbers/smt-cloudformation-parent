@@ -92,7 +92,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-createalias
      * 
      */
-    @JsonProperty("CreateAlias")
     public Boolean getCreateAlias() {
         return createAlias;
     }
@@ -101,7 +100,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-createalias
      * 
      */
-    @JsonProperty("CreateAlias")
     public void setCreateAlias(Boolean createAlias) {
         this.createAlias = createAlias;
     }
@@ -115,7 +113,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -124,7 +121,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -138,7 +134,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-enablesso
      * 
      */
-    @JsonProperty("EnableSso")
     public Boolean getEnableSso() {
         return enableSso;
     }
@@ -147,7 +142,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-enablesso
      * 
      */
-    @JsonProperty("EnableSso")
     public void setEnableSso(Boolean enableSso) {
         this.enableSso = enableSso;
     }
@@ -161,7 +155,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -170,7 +163,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -184,7 +176,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-password
      * 
      */
-    @JsonProperty("Password")
     public CharSequence getPassword() {
         return password;
     }
@@ -193,7 +184,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-password
      * 
      */
-    @JsonProperty("Password")
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -207,7 +197,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-shortname
      * 
      */
-    @JsonProperty("ShortName")
     public CharSequence getShortName() {
         return shortName;
     }
@@ -216,7 +205,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-shortname
      * 
      */
-    @JsonProperty("ShortName")
     public void setShortName(CharSequence shortName) {
         this.shortName = shortName;
     }
@@ -230,7 +218,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-size
      * 
      */
-    @JsonProperty("Size")
     public CharSequence getSize() {
         return size;
     }
@@ -239,7 +226,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-size
      * 
      */
-    @JsonProperty("Size")
     public void setSize(CharSequence size) {
         this.size = size;
     }
@@ -255,7 +241,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
-    @JsonProperty("VpcSettings")
     public VpcSettings getVpcSettings() {
         return vpcSettings;
     }
@@ -266,7 +251,6 @@ public class SimpleAD {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
-    @JsonProperty("VpcSettings")
     public void setVpcSettings(VpcSettings vpcSettings) {
         this.vpcSettings = vpcSettings;
     }

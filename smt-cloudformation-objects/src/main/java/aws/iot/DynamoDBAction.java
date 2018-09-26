@@ -98,7 +98,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyfield
      * 
      */
-    @JsonProperty("HashKeyField")
     public CharSequence getHashKeyField() {
         return hashKeyField;
     }
@@ -107,7 +106,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyfield
      * 
      */
-    @JsonProperty("HashKeyField")
     public void setHashKeyField(CharSequence hashKeyField) {
         this.hashKeyField = hashKeyField;
     }
@@ -121,7 +119,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeytype
      * 
      */
-    @JsonProperty("HashKeyType")
     public CharSequence getHashKeyType() {
         return hashKeyType;
     }
@@ -130,7 +127,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeytype
      * 
      */
-    @JsonProperty("HashKeyType")
     public void setHashKeyType(CharSequence hashKeyType) {
         this.hashKeyType = hashKeyType;
     }
@@ -144,7 +140,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyvalue
      * 
      */
-    @JsonProperty("HashKeyValue")
     public CharSequence getHashKeyValue() {
         return hashKeyValue;
     }
@@ -153,7 +148,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyvalue
      * 
      */
-    @JsonProperty("HashKeyValue")
     public void setHashKeyValue(CharSequence hashKeyValue) {
         this.hashKeyValue = hashKeyValue;
     }
@@ -167,7 +161,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-payloadfield
      * 
      */
-    @JsonProperty("PayloadField")
     public CharSequence getPayloadField() {
         return payloadField;
     }
@@ -176,7 +169,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-payloadfield
      * 
      */
-    @JsonProperty("PayloadField")
     public void setPayloadField(CharSequence payloadField) {
         this.payloadField = payloadField;
     }
@@ -190,7 +182,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyfield
      * 
      */
-    @JsonProperty("RangeKeyField")
     public CharSequence getRangeKeyField() {
         return rangeKeyField;
     }
@@ -199,7 +190,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyfield
      * 
      */
-    @JsonProperty("RangeKeyField")
     public void setRangeKeyField(CharSequence rangeKeyField) {
         this.rangeKeyField = rangeKeyField;
     }
@@ -213,7 +203,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeytype
      * 
      */
-    @JsonProperty("RangeKeyType")
     public CharSequence getRangeKeyType() {
         return rangeKeyType;
     }
@@ -222,7 +211,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeytype
      * 
      */
-    @JsonProperty("RangeKeyType")
     public void setRangeKeyType(CharSequence rangeKeyType) {
         this.rangeKeyType = rangeKeyType;
     }
@@ -236,7 +224,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyvalue
      * 
      */
-    @JsonProperty("RangeKeyValue")
     public CharSequence getRangeKeyValue() {
         return rangeKeyValue;
     }
@@ -245,7 +232,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rangekeyvalue
      * 
      */
-    @JsonProperty("RangeKeyValue")
     public void setRangeKeyValue(CharSequence rangeKeyValue) {
         this.rangeKeyValue = rangeKeyValue;
     }
@@ -259,7 +245,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -268,7 +253,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -282,7 +266,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-tablename
      * 
      */
-    @JsonProperty("TableName")
     public CharSequence getTableName() {
         return tableName;
     }
@@ -291,7 +274,6 @@ public class DynamoDBAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-tablename
      * 
      */
-    @JsonProperty("TableName")
     public void setTableName(CharSequence tableName) {
         this.tableName = tableName;
     }

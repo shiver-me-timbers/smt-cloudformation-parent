@@ -42,7 +42,6 @@ public class KeySchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public CharSequence getAttributeName() {
         return attributeName;
     }
@@ -51,7 +50,6 @@ public class KeySchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
@@ -65,7 +63,6 @@ public class KeySchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-keytype
      * 
      */
-    @JsonProperty("KeyType")
     public CharSequence getKeyType() {
         return keyType;
     }
@@ -74,7 +71,6 @@ public class KeySchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-keytype
      * 
      */
-    @JsonProperty("KeyType")
     public void setKeyType(CharSequence keyType) {
         this.keyType = keyType;
     }

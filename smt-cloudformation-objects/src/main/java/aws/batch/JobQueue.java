@@ -60,7 +60,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-computeenvironmentorder
      * 
      */
-    @JsonProperty("ComputeEnvironmentOrder")
     public List<ComputeEnvironmentOrder> getComputeEnvironmentOrder() {
         return computeEnvironmentOrder;
     }
@@ -69,7 +68,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-computeenvironmentorder
      * 
      */
-    @JsonProperty("ComputeEnvironmentOrder")
     public void setComputeEnvironmentOrder(List<ComputeEnvironmentOrder> computeEnvironmentOrder) {
         this.computeEnvironmentOrder = computeEnvironmentOrder;
     }
@@ -83,7 +81,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-priority
      * 
      */
-    @JsonProperty("Priority")
     public Integer getPriority() {
         return priority;
     }
@@ -92,7 +89,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-priority
      * 
      */
-    @JsonProperty("Priority")
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
@@ -106,7 +102,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-state
      * 
      */
-    @JsonProperty("State")
     public CharSequence getState() {
         return state;
     }
@@ -115,7 +110,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-state
      * 
      */
-    @JsonProperty("State")
     public void setState(CharSequence state) {
         this.state = state;
     }
@@ -129,7 +123,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-jobqueuename
      * 
      */
-    @JsonProperty("JobQueueName")
     public CharSequence getJobQueueName() {
         return jobQueueName;
     }
@@ -138,7 +131,6 @@ public class JobQueue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-jobqueuename
      * 
      */
-    @JsonProperty("JobQueueName")
     public void setJobQueueName(CharSequence jobQueueName) {
         this.jobQueueName = jobQueueName;
     }

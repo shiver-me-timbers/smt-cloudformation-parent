@@ -66,7 +66,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-cidrip
      * 
      */
-    @JsonProperty("CIDRIP")
     public CharSequence getCIDRIP() {
         return cIDRIP;
     }
@@ -75,7 +74,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-cidrip
      * 
      */
-    @JsonProperty("CIDRIP")
     public void setCIDRIP(CharSequence cIDRIP) {
         this.cIDRIP = cIDRIP;
     }
@@ -89,7 +87,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-dbsecuritygroupname
      * 
      */
-    @JsonProperty("DBSecurityGroupName")
     public CharSequence getDBSecurityGroupName() {
         return dBSecurityGroupName;
     }
@@ -98,7 +95,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-dbsecuritygroupname
      * 
      */
-    @JsonProperty("DBSecurityGroupName")
     public void setDBSecurityGroupName(CharSequence dBSecurityGroupName) {
         this.dBSecurityGroupName = dBSecurityGroupName;
     }
@@ -112,7 +108,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupid
      * 
      */
-    @JsonProperty("EC2SecurityGroupId")
     public CharSequence getEC2SecurityGroupId() {
         return eC2SecurityGroupId;
     }
@@ -121,7 +116,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupid
      * 
      */
-    @JsonProperty("EC2SecurityGroupId")
     public void setEC2SecurityGroupId(CharSequence eC2SecurityGroupId) {
         this.eC2SecurityGroupId = eC2SecurityGroupId;
     }
@@ -135,7 +129,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupname
      * 
      */
-    @JsonProperty("EC2SecurityGroupName")
     public CharSequence getEC2SecurityGroupName() {
         return eC2SecurityGroupName;
     }
@@ -144,7 +137,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupname
      * 
      */
-    @JsonProperty("EC2SecurityGroupName")
     public void setEC2SecurityGroupName(CharSequence eC2SecurityGroupName) {
         this.eC2SecurityGroupName = eC2SecurityGroupName;
     }
@@ -158,7 +150,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupownerid
      * 
      */
-    @JsonProperty("EC2SecurityGroupOwnerId")
     public CharSequence getEC2SecurityGroupOwnerId() {
         return eC2SecurityGroupOwnerId;
     }
@@ -167,7 +158,6 @@ public class DBSecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-security-group-ingress.html#cfn-rds-securitygroup-ingress-ec2securitygroupownerid
      * 
      */
-    @JsonProperty("EC2SecurityGroupOwnerId")
     public void setEC2SecurityGroupOwnerId(CharSequence eC2SecurityGroupOwnerId) {
         this.eC2SecurityGroupOwnerId = eC2SecurityGroupOwnerId;
     }

@@ -41,12 +41,26 @@ public class CustomResourceResource
     private CustomResource properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CustomResourceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CustomResourceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CustomResource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
      * 
      */
-    @JsonProperty("Properties")
     public CustomResource getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class CustomResourceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CustomResource properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class CustomResourceResource
     @Override
     public CustomResourceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CustomResourceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

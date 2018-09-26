@@ -44,7 +44,6 @@ public class S3Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -53,7 +52,6 @@ public class S3Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -67,7 +65,6 @@ public class S3Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-exclusions
      * 
      */
-    @JsonProperty("Exclusions")
     public List<CharSequence> getExclusions() {
         return exclusions;
     }
@@ -76,7 +73,6 @@ public class S3Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-exclusions
      * 
      */
-    @JsonProperty("Exclusions")
     public void setExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
     }

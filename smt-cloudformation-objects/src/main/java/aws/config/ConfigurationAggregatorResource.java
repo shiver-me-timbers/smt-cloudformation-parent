@@ -41,12 +41,26 @@ public class ConfigurationAggregatorResource
     private ConfigurationAggregator properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConfigurationAggregatorResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ConfigurationAggregatorResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ConfigurationAggregator
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
      * 
      */
-    @JsonProperty("Properties")
     public ConfigurationAggregator getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ConfigurationAggregatorResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ConfigurationAggregator properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ConfigurationAggregatorResource
     @Override
     public ConfigurationAggregatorResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ConfigurationAggregatorResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -41,12 +41,26 @@ public class ClusterParameterGroupResource
     private ClusterParameterGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClusterParameterGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClusterParameterGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ClusterParameterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ClusterParameterGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ClusterParameterGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ClusterParameterGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ClusterParameterGroupResource
     @Override
     public ClusterParameterGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClusterParameterGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

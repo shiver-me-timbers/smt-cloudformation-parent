@@ -41,12 +41,26 @@ public class HealthCheckResource
     private HealthCheck properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public HealthCheckResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public HealthCheckResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * HealthCheck
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html
      * 
      */
-    @JsonProperty("Properties")
     public HealthCheck getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class HealthCheckResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(HealthCheck properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class HealthCheckResource
     @Override
     public HealthCheckResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public HealthCheckResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

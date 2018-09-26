@@ -68,7 +68,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -77,7 +76,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -91,7 +89,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -100,7 +97,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
@@ -114,7 +110,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-functionversion
      * 
      */
-    @JsonProperty("FunctionVersion")
     public CharSequence getFunctionVersion() {
         return functionVersion;
     }
@@ -123,7 +118,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-functionversion
      * 
      */
-    @JsonProperty("FunctionVersion")
     public void setFunctionVersion(CharSequence functionVersion) {
         this.functionVersion = functionVersion;
     }
@@ -137,7 +131,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -146,7 +139,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -162,7 +154,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
      * 
      */
-    @JsonProperty("RoutingConfig")
     public AliasRoutingConfiguration getRoutingConfig() {
         return routingConfig;
     }
@@ -173,7 +164,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
      * 
      */
-    @JsonProperty("RoutingConfig")
     public void setRoutingConfig(AliasRoutingConfiguration routingConfig) {
         this.routingConfig = routingConfig;
     }

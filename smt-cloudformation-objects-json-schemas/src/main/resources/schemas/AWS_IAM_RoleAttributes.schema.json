@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IAM_RoleAttributes.schema.json",
+  "title" : "RoleAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "RoleId" ],
+  "javaType" : "aws.iam.RoleAttributes"
+}

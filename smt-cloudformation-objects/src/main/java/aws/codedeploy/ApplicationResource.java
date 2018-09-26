@@ -41,12 +41,26 @@ public class ApplicationResource
     private Application properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ApplicationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ApplicationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Application
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html
      * 
      */
-    @JsonProperty("Properties")
     public Application getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ApplicationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Application properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ApplicationResource
     @Override
     public ApplicationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ApplicationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

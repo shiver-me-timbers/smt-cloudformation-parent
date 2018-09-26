@@ -41,12 +41,26 @@ public class DeliveryChannelResource
     private DeliveryChannel properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DeliveryChannelResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DeliveryChannelResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DeliveryChannel
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
      * 
      */
-    @JsonProperty("Properties")
     public DeliveryChannel getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DeliveryChannelResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DeliveryChannel properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DeliveryChannelResource
     @Override
     public DeliveryChannelResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DeliveryChannelResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

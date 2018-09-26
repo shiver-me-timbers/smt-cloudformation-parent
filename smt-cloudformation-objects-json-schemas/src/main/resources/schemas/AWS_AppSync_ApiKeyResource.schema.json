@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_ApiKeyResource.schema.json",
+  "title" : "ApiKeyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appsync.ApiKeyResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ApiKeyAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_AppSync_ApiKey.schema.json"
+    }
+  }
+}

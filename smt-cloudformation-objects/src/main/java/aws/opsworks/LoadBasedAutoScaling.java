@@ -56,7 +56,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
-    @JsonProperty("DownScaling")
     public AutoScalingThresholds getDownScaling() {
         return downScaling;
     }
@@ -67,7 +66,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
-    @JsonProperty("DownScaling")
     public void setDownScaling(AutoScalingThresholds downScaling) {
         this.downScaling = downScaling;
     }
@@ -81,7 +79,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable
      * 
      */
-    @JsonProperty("Enable")
     public Boolean getEnable() {
         return enable;
     }
@@ -90,7 +87,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable
      * 
      */
-    @JsonProperty("Enable")
     public void setEnable(Boolean enable) {
         this.enable = enable;
     }
@@ -106,7 +102,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
-    @JsonProperty("UpScaling")
     public AutoScalingThresholds getUpScaling() {
         return upScaling;
     }
@@ -117,7 +112,6 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
-    @JsonProperty("UpScaling")
     public void setUpScaling(AutoScalingThresholds upScaling) {
         this.upScaling = upScaling;
     }

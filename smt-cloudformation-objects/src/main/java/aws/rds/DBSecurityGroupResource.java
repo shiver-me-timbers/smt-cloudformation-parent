@@ -41,12 +41,26 @@ public class DBSecurityGroupResource
     private DBSecurityGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBSecurityGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBSecurityGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBSecurityGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public DBSecurityGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DBSecurityGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBSecurityGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DBSecurityGroupResource
     @Override
     public DBSecurityGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBSecurityGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

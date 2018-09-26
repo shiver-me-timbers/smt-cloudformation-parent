@@ -54,7 +54,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
      * 
      */
-    @JsonProperty("Owner")
     public CharSequence getOwner() {
         return owner;
     }
@@ -63,7 +62,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
      * 
      */
-    @JsonProperty("Owner")
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
@@ -77,7 +75,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails
      * 
      */
-    @JsonProperty("SourceDetails")
     public Set<SourceDetail> getSourceDetails() {
         return sourceDetails;
     }
@@ -86,7 +83,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails
      * 
      */
-    @JsonProperty("SourceDetails")
     public void setSourceDetails(Set<SourceDetail> sourceDetails) {
         this.sourceDetails = sourceDetails;
     }
@@ -100,7 +96,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier
      * 
      */
-    @JsonProperty("SourceIdentifier")
     public CharSequence getSourceIdentifier() {
         return sourceIdentifier;
     }
@@ -109,7 +104,6 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier
      * 
      */
-    @JsonProperty("SourceIdentifier")
     public void setSourceIdentifier(CharSequence sourceIdentifier) {
         this.sourceIdentifier = sourceIdentifier;
     }

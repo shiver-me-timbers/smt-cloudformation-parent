@@ -42,7 +42,6 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange
      * 
      */
-    @JsonProperty("AllowedIPRange")
     public CharSequence getAllowedIPRange() {
         return allowedIPRange;
     }
@@ -51,7 +50,6 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange
      * 
      */
-    @JsonProperty("AllowedIPRange")
     public void setAllowedIPRange(CharSequence allowedIPRange) {
         this.allowedIPRange = allowedIPRange;
     }
@@ -65,7 +63,6 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken
      * 
      */
-    @JsonProperty("SecretToken")
     public CharSequence getSecretToken() {
         return secretToken;
     }
@@ -74,7 +71,6 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken
      * 
      */
-    @JsonProperty("SecretToken")
     public void setSecretToken(CharSequence secretToken) {
         this.secretToken = secretToken;
     }

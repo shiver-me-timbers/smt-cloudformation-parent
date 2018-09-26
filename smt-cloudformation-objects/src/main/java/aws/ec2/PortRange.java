@@ -42,7 +42,6 @@ public class PortRange {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-from
      * 
      */
-    @JsonProperty("From")
     public Integer getFrom() {
         return from;
     }
@@ -51,7 +50,6 @@ public class PortRange {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-from
      * 
      */
-    @JsonProperty("From")
     public void setFrom(Integer from) {
         this.from = from;
     }
@@ -65,7 +63,6 @@ public class PortRange {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-to
      * 
      */
-    @JsonProperty("To")
     public Integer getTo() {
         return to;
     }
@@ -74,7 +71,6 @@ public class PortRange {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html#cfn-ec2-networkaclentry-portrange-to
      * 
      */
-    @JsonProperty("To")
     public void setTo(Integer to) {
         this.to = to;
     }

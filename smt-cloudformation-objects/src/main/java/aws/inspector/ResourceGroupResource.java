@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ResourceGroupResource
     extends Resource
+    implements HasAttributes<ResourceGroupAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ResourceGroupResource
     private ResourceGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ResourceGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ResourceGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ResourceGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ResourceGroup getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ResourceGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ResourceGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ResourceGroupResource
     @Override
     public ResourceGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ResourceGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

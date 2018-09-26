@@ -41,12 +41,26 @@ public class VPCEndpointResource
     private VPCEndpoint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCEndpointResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCEndpointResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCEndpoint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCEndpoint getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCEndpointResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCEndpoint properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCEndpointResource
     @Override
     public VPCEndpointResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCEndpointResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

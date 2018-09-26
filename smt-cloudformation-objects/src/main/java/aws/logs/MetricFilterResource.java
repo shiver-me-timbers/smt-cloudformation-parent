@@ -41,12 +41,26 @@ public class MetricFilterResource
     private MetricFilter properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MetricFilterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MetricFilterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * MetricFilter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
      * 
      */
-    @JsonProperty("Properties")
     public MetricFilter getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MetricFilterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(MetricFilter properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MetricFilterResource
     @Override
     public MetricFilterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MetricFilterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

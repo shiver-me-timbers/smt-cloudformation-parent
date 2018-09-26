@@ -42,7 +42,6 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid
      * 
      */
-    @JsonProperty("KMSMasterKeyID")
     public CharSequence getKMSMasterKeyID() {
         return kMSMasterKeyID;
     }
@@ -51,7 +50,6 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid
      * 
      */
-    @JsonProperty("KMSMasterKeyID")
     public void setKMSMasterKeyID(CharSequence kMSMasterKeyID) {
         this.kMSMasterKeyID = kMSMasterKeyID;
     }
@@ -65,7 +63,6 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm
      * 
      */
-    @JsonProperty("SSEAlgorithm")
     public CharSequence getSSEAlgorithm() {
         return sSEAlgorithm;
     }
@@ -74,7 +71,6 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm
      * 
      */
-    @JsonProperty("SSEAlgorithm")
     public void setSSEAlgorithm(CharSequence sSEAlgorithm) {
         this.sSEAlgorithm = sSEAlgorithm;
     }

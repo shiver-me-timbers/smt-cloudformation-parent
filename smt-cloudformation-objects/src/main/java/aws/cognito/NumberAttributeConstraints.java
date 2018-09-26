@@ -42,7 +42,6 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue
      * 
      */
-    @JsonProperty("MinValue")
     public CharSequence getMinValue() {
         return minValue;
     }
@@ -51,7 +50,6 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue
      * 
      */
-    @JsonProperty("MinValue")
     public void setMinValue(CharSequence minValue) {
         this.minValue = minValue;
     }
@@ -65,7 +63,6 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue
      * 
      */
-    @JsonProperty("MaxValue")
     public CharSequence getMaxValue() {
         return maxValue;
     }
@@ -74,7 +71,6 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue
      * 
      */
-    @JsonProperty("MaxValue")
     public void setMaxValue(CharSequence maxValue) {
         this.maxValue = maxValue;
     }

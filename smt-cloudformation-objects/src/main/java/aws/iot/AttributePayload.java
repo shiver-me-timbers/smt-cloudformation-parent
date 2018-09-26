@@ -35,7 +35,6 @@ public class AttributePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -44,7 +43,6 @@ public class AttributePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }

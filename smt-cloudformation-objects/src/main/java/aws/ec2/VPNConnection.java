@@ -81,7 +81,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid
      * 
      */
-    @JsonProperty("CustomerGatewayId")
     public CharSequence getCustomerGatewayId() {
         return customerGatewayId;
     }
@@ -90,7 +89,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid
      * 
      */
-    @JsonProperty("CustomerGatewayId")
     public void setCustomerGatewayId(CharSequence customerGatewayId) {
         this.customerGatewayId = customerGatewayId;
     }
@@ -104,7 +102,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly
      * 
      */
-    @JsonProperty("StaticRoutesOnly")
     public Boolean getStaticRoutesOnly() {
         return staticRoutesOnly;
     }
@@ -113,7 +110,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly
      * 
      */
-    @JsonProperty("StaticRoutesOnly")
     public void setStaticRoutesOnly(Boolean staticRoutesOnly) {
         this.staticRoutesOnly = staticRoutesOnly;
     }
@@ -127,7 +123,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -136,7 +131,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -150,7 +144,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -159,7 +152,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -173,7 +165,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
@@ -182,7 +173,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }
@@ -196,7 +186,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications
      * 
      */
-    @JsonProperty("VpnTunnelOptionsSpecifications")
     public Set<VpnTunnelOptionsSpecification> getVpnTunnelOptionsSpecifications() {
         return vpnTunnelOptionsSpecifications;
     }
@@ -205,7 +194,6 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications
      * 
      */
-    @JsonProperty("VpnTunnelOptionsSpecifications")
     public void setVpnTunnelOptionsSpecifications(Set<VpnTunnelOptionsSpecification> vpnTunnelOptionsSpecifications) {
         this.vpnTunnelOptionsSpecifications = vpnTunnelOptionsSpecifications;
     }

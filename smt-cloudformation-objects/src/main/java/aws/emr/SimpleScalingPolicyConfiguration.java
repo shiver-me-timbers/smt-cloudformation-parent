@@ -50,7 +50,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-adjustmenttype
      * 
      */
-    @JsonProperty("AdjustmentType")
     public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
@@ -59,7 +58,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-adjustmenttype
      * 
      */
-    @JsonProperty("AdjustmentType")
     public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
@@ -73,7 +71,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-cooldown
      * 
      */
-    @JsonProperty("CoolDown")
     public Integer getCoolDown() {
         return coolDown;
     }
@@ -82,7 +79,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-cooldown
      * 
      */
-    @JsonProperty("CoolDown")
     public void setCoolDown(Integer coolDown) {
         this.coolDown = coolDown;
     }
@@ -96,7 +92,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-scalingadjustment
      * 
      */
-    @JsonProperty("ScalingAdjustment")
     public Integer getScalingAdjustment() {
         return scalingAdjustment;
     }
@@ -105,7 +100,6 @@ public class SimpleScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html#cfn-elasticmapreduce-cluster-simplescalingpolicyconfiguration-scalingadjustment
      * 
      */
-    @JsonProperty("ScalingAdjustment")
     public void setScalingAdjustment(Integer scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }

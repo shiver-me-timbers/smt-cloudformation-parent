@@ -41,12 +41,26 @@ public class VolumeAttachmentResource
     private VolumeAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VolumeAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VolumeAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VolumeAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public VolumeAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VolumeAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VolumeAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VolumeAttachmentResource
     @Override
     public VolumeAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VolumeAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -44,7 +44,6 @@ public class TrustedSigners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -53,7 +52,6 @@ public class TrustedSigners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -67,7 +65,6 @@ public class TrustedSigners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers
      * 
      */
-    @JsonProperty("AwsAccountNumbers")
     public List<CharSequence> getAwsAccountNumbers() {
         return awsAccountNumbers;
     }
@@ -76,7 +73,6 @@ public class TrustedSigners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html#cfn-cloudfront-streamingdistribution-trustedsigners-awsaccountnumbers
      * 
      */
-    @JsonProperty("AwsAccountNumbers")
     public void setAwsAccountNumbers(List<CharSequence> awsAccountNumbers) {
         this.awsAccountNumbers = awsAccountNumbers;
     }

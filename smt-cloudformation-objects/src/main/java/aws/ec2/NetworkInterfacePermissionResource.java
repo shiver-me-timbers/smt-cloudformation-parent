@@ -41,12 +41,26 @@ public class NetworkInterfacePermissionResource
     private NetworkInterfacePermission properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NetworkInterfacePermissionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NetworkInterfacePermissionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NetworkInterfacePermission
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html
      * 
      */
-    @JsonProperty("Properties")
     public NetworkInterfacePermission getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NetworkInterfacePermissionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NetworkInterfacePermission properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NetworkInterfacePermissionResource
     @Override
     public NetworkInterfacePermissionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NetworkInterfacePermissionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

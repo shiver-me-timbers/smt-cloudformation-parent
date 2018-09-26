@@ -50,7 +50,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly
      * 
      */
-    @JsonProperty("ReadOnly")
     public Boolean getReadOnly() {
         return readOnly;
     }
@@ -59,7 +58,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly
      * 
      */
-    @JsonProperty("ReadOnly")
     public void setReadOnly(Boolean readOnly) {
         this.readOnly = readOnly;
     }
@@ -73,7 +71,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume
      * 
      */
-    @JsonProperty("SourceVolume")
     public CharSequence getSourceVolume() {
         return sourceVolume;
     }
@@ -82,7 +79,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume
      * 
      */
-    @JsonProperty("SourceVolume")
     public void setSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
     }
@@ -96,7 +92,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath
      * 
      */
-    @JsonProperty("ContainerPath")
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -105,7 +100,6 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath
      * 
      */
-    @JsonProperty("ContainerPath")
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }

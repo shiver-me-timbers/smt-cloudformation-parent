@@ -34,7 +34,6 @@ public class QueryLoggingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn
      * 
      */
-    @JsonProperty("CloudWatchLogsLogGroupArn")
     public CharSequence getCloudWatchLogsLogGroupArn() {
         return cloudWatchLogsLogGroupArn;
     }
@@ -43,7 +42,6 @@ public class QueryLoggingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn
      * 
      */
-    @JsonProperty("CloudWatchLogsLogGroupArn")
     public void setCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
     }

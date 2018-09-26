@@ -38,7 +38,6 @@ public class S3KeyFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html#cfn-s3-bucket-notificationconfiguraiton-config-filter-s3key-rules
      * 
      */
-    @JsonProperty("Rules")
     public Set<FilterRule> getRules() {
         return rules;
     }
@@ -47,7 +46,6 @@ public class S3KeyFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html#cfn-s3-bucket-notificationconfiguraiton-config-filter-s3key-rules
      * 
      */
-    @JsonProperty("Rules")
     public void setRules(Set<FilterRule> rules) {
         this.rules = rules;
     }

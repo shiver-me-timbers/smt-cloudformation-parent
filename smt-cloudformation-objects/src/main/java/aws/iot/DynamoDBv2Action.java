@@ -46,7 +46,6 @@ public class DynamoDBv2Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-putiteminput.html
      * 
      */
-    @JsonProperty("PutItem")
     public PutItemInput getPutItem() {
         return putItem;
     }
@@ -57,7 +56,6 @@ public class DynamoDBv2Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-putiteminput.html
      * 
      */
-    @JsonProperty("PutItem")
     public void setPutItem(PutItemInput putItem) {
         this.putItem = putItem;
     }
@@ -71,7 +69,6 @@ public class DynamoDBv2Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -80,7 +77,6 @@ public class DynamoDBv2Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

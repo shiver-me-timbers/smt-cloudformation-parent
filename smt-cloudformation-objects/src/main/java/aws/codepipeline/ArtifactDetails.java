@@ -42,7 +42,6 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount
      * 
      */
-    @JsonProperty("MaximumCount")
     public Integer getMaximumCount() {
         return maximumCount;
     }
@@ -51,7 +50,6 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount
      * 
      */
-    @JsonProperty("MaximumCount")
     public void setMaximumCount(Integer maximumCount) {
         this.maximumCount = maximumCount;
     }
@@ -65,7 +63,6 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount
      * 
      */
-    @JsonProperty("MinimumCount")
     public Integer getMinimumCount() {
         return minimumCount;
     }
@@ -74,7 +71,6 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount
      * 
      */
-    @JsonProperty("MinimumCount")
     public void setMinimumCount(Integer minimumCount) {
         this.minimumCount = minimumCount;
     }

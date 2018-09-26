@@ -42,7 +42,6 @@ public class SubnetNetworkAclAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid
      * 
      */
-    @JsonProperty("NetworkAclId")
     public CharSequence getNetworkAclId() {
         return networkAclId;
     }
@@ -51,7 +50,6 @@ public class SubnetNetworkAclAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid
      * 
      */
-    @JsonProperty("NetworkAclId")
     public void setNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
     }
@@ -65,7 +63,6 @@ public class SubnetNetworkAclAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-associationid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -74,7 +71,6 @@ public class SubnetNetworkAclAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-associationid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

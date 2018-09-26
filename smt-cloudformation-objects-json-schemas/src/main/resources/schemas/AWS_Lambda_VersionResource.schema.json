@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_VersionResource.schema.json",
+  "title" : "VersionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.lambda.VersionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<VersionAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Lambda_Version.schema.json"
+    }
+  }
+}

@@ -44,7 +44,6 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
      * 
      */
-    @JsonProperty("AssociationParameters")
     public List<AssociationParameter> getAssociationParameters() {
         return associationParameters;
     }
@@ -53,7 +52,6 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
      * 
      */
-    @JsonProperty("AssociationParameters")
     public void setAssociationParameters(List<AssociationParameter> associationParameters) {
         this.associationParameters = associationParameters;
     }
@@ -67,7 +65,6 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname
      * 
      */
-    @JsonProperty("DocumentName")
     public CharSequence getDocumentName() {
         return documentName;
     }
@@ -76,7 +73,6 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname
      * 
      */
-    @JsonProperty("DocumentName")
     public void setDocumentName(CharSequence documentName) {
         this.documentName = documentName;
     }

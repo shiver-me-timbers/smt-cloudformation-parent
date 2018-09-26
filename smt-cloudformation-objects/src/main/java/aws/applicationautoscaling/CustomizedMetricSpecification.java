@@ -70,7 +70,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions
      * 
      */
-    @JsonProperty("Dimensions")
     public Set<MetricDimension> getDimensions() {
         return dimensions;
     }
@@ -79,7 +78,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-dimensions
      * 
      */
-    @JsonProperty("Dimensions")
     public void setDimensions(Set<MetricDimension> dimensions) {
         this.dimensions = dimensions;
     }
@@ -93,7 +91,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -102,7 +99,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -116,7 +112,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -125,7 +120,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
@@ -139,7 +133,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public CharSequence getStatistic() {
         return statistic;
     }
@@ -148,7 +141,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
@@ -162,7 +154,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit
      * 
      */
-    @JsonProperty("Unit")
     public CharSequence getUnit() {
         return unit;
     }
@@ -171,7 +162,6 @@ public class CustomizedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html#cfn-applicationautoscaling-scalingpolicy-customizedmetricspecification-unit
      * 
      */
-    @JsonProperty("Unit")
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }

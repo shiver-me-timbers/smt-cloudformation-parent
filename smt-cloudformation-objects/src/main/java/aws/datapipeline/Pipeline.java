@@ -84,7 +84,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-activate
      * 
      */
-    @JsonProperty("Activate")
     public Boolean getActivate() {
         return activate;
     }
@@ -93,7 +92,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-activate
      * 
      */
-    @JsonProperty("Activate")
     public void setActivate(Boolean activate) {
         this.activate = activate;
     }
@@ -107,7 +105,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -116,7 +113,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -130,7 +126,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -139,7 +134,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -153,7 +147,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parameterobjects
      * 
      */
-    @JsonProperty("ParameterObjects")
     public List<ParameterObject> getParameterObjects() {
         return parameterObjects;
     }
@@ -162,7 +155,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parameterobjects
      * 
      */
-    @JsonProperty("ParameterObjects")
     public void setParameterObjects(List<ParameterObject> parameterObjects) {
         this.parameterObjects = parameterObjects;
     }
@@ -176,7 +168,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parametervalues
      * 
      */
-    @JsonProperty("ParameterValues")
     public List<ParameterValue> getParameterValues() {
         return parameterValues;
     }
@@ -185,7 +176,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parametervalues
      * 
      */
-    @JsonProperty("ParameterValues")
     public void setParameterValues(List<ParameterValue> parameterValues) {
         this.parameterValues = parameterValues;
     }
@@ -199,7 +189,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelineobjects
      * 
      */
-    @JsonProperty("PipelineObjects")
     public List<PipelineObject> getPipelineObjects() {
         return pipelineObjects;
     }
@@ -208,7 +197,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelineobjects
      * 
      */
-    @JsonProperty("PipelineObjects")
     public void setPipelineObjects(List<PipelineObject> pipelineObjects) {
         this.pipelineObjects = pipelineObjects;
     }
@@ -222,7 +210,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelinetags
      * 
      */
-    @JsonProperty("PipelineTags")
     public List<PipelineTag> getPipelineTags() {
         return pipelineTags;
     }
@@ -231,7 +218,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelinetags
      * 
      */
-    @JsonProperty("PipelineTags")
     public void setPipelineTags(List<PipelineTag> pipelineTags) {
         this.pipelineTags = pipelineTags;
     }

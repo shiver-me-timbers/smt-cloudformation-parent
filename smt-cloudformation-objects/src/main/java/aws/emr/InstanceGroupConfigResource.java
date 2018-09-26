@@ -41,12 +41,26 @@ public class InstanceGroupConfigResource
     private InstanceGroupConfig properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public InstanceGroupConfigResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public InstanceGroupConfigResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * InstanceGroupConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public InstanceGroupConfig getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class InstanceGroupConfigResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(InstanceGroupConfig properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class InstanceGroupConfigResource
     @Override
     public InstanceGroupConfigResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public InstanceGroupConfigResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

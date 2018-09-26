@@ -38,7 +38,6 @@ public class AliasRoutingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
      * 
      */
-    @JsonProperty("AdditionalVersionWeights")
     public Set<VersionWeight> getAdditionalVersionWeights() {
         return additionalVersionWeights;
     }
@@ -47,7 +46,6 @@ public class AliasRoutingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
      * 
      */
-    @JsonProperty("AdditionalVersionWeights")
     public void setAdditionalVersionWeights(Set<VersionWeight> additionalVersionWeights) {
         this.additionalVersionWeights = additionalVersionWeights;
     }

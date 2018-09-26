@@ -65,7 +65,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress
      * 
      */
-    @JsonProperty("DBSecurityGroupIngress")
     public Set<Ingress> getDBSecurityGroupIngress() {
         return dBSecurityGroupIngress;
     }
@@ -74,7 +73,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress
      * 
      */
-    @JsonProperty("DBSecurityGroupIngress")
     public void setDBSecurityGroupIngress(Set<Ingress> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
     }
@@ -88,7 +86,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
      */
-    @JsonProperty("EC2VpcId")
     public CharSequence getEC2VpcId() {
         return eC2VpcId;
     }
@@ -97,7 +94,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
      */
-    @JsonProperty("EC2VpcId")
     public void setEC2VpcId(CharSequence eC2VpcId) {
         this.eC2VpcId = eC2VpcId;
     }
@@ -111,7 +107,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription
      * 
      */
-    @JsonProperty("GroupDescription")
     public CharSequence getGroupDescription() {
         return groupDescription;
     }
@@ -120,7 +115,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription
      * 
      */
-    @JsonProperty("GroupDescription")
     public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
@@ -134,7 +128,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -143,7 +136,6 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

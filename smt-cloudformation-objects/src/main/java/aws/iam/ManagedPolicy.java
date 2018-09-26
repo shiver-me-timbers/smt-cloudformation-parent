@@ -88,7 +88,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -97,7 +96,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -111,7 +109,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-groups
      * 
      */
-    @JsonProperty("Groups")
     public Set<CharSequence> getGroups() {
         return groups;
     }
@@ -120,7 +117,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-groups
      * 
      */
-    @JsonProperty("Groups")
     public void setGroups(Set<CharSequence> groups) {
         this.groups = groups;
     }
@@ -134,7 +130,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-managedpolicyname
      * 
      */
-    @JsonProperty("ManagedPolicyName")
     public CharSequence getManagedPolicyName() {
         return managedPolicyName;
     }
@@ -143,7 +138,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-managedpolicyname
      * 
      */
-    @JsonProperty("ManagedPolicyName")
     public void setManagedPolicyName(CharSequence managedPolicyName) {
         this.managedPolicyName = managedPolicyName;
     }
@@ -157,7 +151,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-ec2-dhcpoptions-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -166,7 +159,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-ec2-dhcpoptions-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -180,7 +172,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public PolicyDocument_ getPolicyDocument() {
         return policyDocument;
     }
@@ -189,7 +180,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public void setPolicyDocument(PolicyDocument_ policyDocument) {
         this.policyDocument = policyDocument;
     }
@@ -203,7 +193,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles
      * 
      */
-    @JsonProperty("Roles")
     public List<CharSequence> getRoles() {
         return roles;
     }
@@ -212,7 +201,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles
      * 
      */
-    @JsonProperty("Roles")
     public void setRoles(List<CharSequence> roles) {
         this.roles = roles;
     }
@@ -226,7 +214,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-users
      * 
      */
-    @JsonProperty("Users")
     public List<CharSequence> getUsers() {
         return users;
     }
@@ -235,7 +222,6 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-users
      * 
      */
-    @JsonProperty("Users")
     public void setUsers(List<CharSequence> users) {
         this.users = users;
     }

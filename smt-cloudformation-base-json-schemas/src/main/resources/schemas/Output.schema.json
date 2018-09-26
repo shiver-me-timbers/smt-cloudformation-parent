@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Output.schema.json",
+  "title": "Output",
+  "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html",
+  "type": "object",
+  "extends": {
+    "$ref": "Named.schema.json"
+  },
+  "javaType": "aws.Output",
+  "properties": {
+    "Description": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    },
+    "Export": {
+      "$ref": "#/definitions/Export"
+    }
+  },
+  "definitions": {
+    "Export": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

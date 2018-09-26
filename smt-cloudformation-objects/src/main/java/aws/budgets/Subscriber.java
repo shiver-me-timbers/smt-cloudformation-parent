@@ -42,7 +42,6 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype
      * 
      */
-    @JsonProperty("SubscriptionType")
     public CharSequence getSubscriptionType() {
         return subscriptionType;
     }
@@ -51,7 +50,6 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype
      * 
      */
-    @JsonProperty("SubscriptionType")
     public void setSubscriptionType(CharSequence subscriptionType) {
         this.subscriptionType = subscriptionType;
     }
@@ -65,7 +63,6 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address
      * 
      */
-    @JsonProperty("Address")
     public CharSequence getAddress() {
         return address;
     }
@@ -74,7 +71,6 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address
      * 
      */
-    @JsonProperty("Address")
     public void setAddress(CharSequence address) {
         this.address = address;
     }

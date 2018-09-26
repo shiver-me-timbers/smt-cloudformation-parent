@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SSM_ParameterAttributes.schema.json",
+  "title" : "ParameterAttributes",
+  "type" : "string",
+  "enum" : [ "Type", "Value" ],
+  "javaType" : "aws.ssm.ParameterAttributes"
+}

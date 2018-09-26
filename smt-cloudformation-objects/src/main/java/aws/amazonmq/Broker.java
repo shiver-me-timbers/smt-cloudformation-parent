@@ -138,7 +138,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public List<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -147,7 +146,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -161,7 +159,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -170,7 +167,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -186,7 +182,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html
      * 
      */
-    @JsonProperty("Configuration")
     public ConfigurationId getConfiguration() {
         return configuration;
     }
@@ -197,7 +192,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html
      * 
      */
-    @JsonProperty("Configuration")
     public void setConfiguration(ConfigurationId configuration) {
         this.configuration = configuration;
     }
@@ -213,7 +207,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html
      * 
      */
-    @JsonProperty("MaintenanceWindowStartTime")
     public MaintenanceWindow getMaintenanceWindowStartTime() {
         return maintenanceWindowStartTime;
     }
@@ -224,7 +217,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html
      * 
      */
-    @JsonProperty("MaintenanceWindowStartTime")
     public void setMaintenanceWindowStartTime(MaintenanceWindow maintenanceWindowStartTime) {
         this.maintenanceWindowStartTime = maintenanceWindowStartTime;
     }
@@ -238,7 +230,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype
      * 
      */
-    @JsonProperty("HostInstanceType")
     public CharSequence getHostInstanceType() {
         return hostInstanceType;
     }
@@ -247,7 +238,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype
      * 
      */
-    @JsonProperty("HostInstanceType")
     public void setHostInstanceType(CharSequence hostInstanceType) {
         this.hostInstanceType = hostInstanceType;
     }
@@ -261,7 +251,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -270,7 +259,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -284,7 +272,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-users
      * 
      */
-    @JsonProperty("Users")
     public List<User> getUsers() {
         return users;
     }
@@ -293,7 +280,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-users
      * 
      */
-    @JsonProperty("Users")
     public void setUsers(List<User> users) {
         this.users = users;
     }
@@ -309,7 +295,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html
      * 
      */
-    @JsonProperty("Logs")
     public LogList getLogs() {
         return logs;
     }
@@ -320,7 +305,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html
      * 
      */
-    @JsonProperty("Logs")
     public void setLogs(LogList logs) {
         this.logs = logs;
     }
@@ -334,7 +318,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -343,7 +326,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
@@ -357,7 +339,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-brokername
      * 
      */
-    @JsonProperty("BrokerName")
     public CharSequence getBrokerName() {
         return brokerName;
     }
@@ -366,7 +347,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-brokername
      * 
      */
-    @JsonProperty("BrokerName")
     public void setBrokerName(CharSequence brokerName) {
         this.brokerName = brokerName;
     }
@@ -380,7 +360,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-deploymentmode
      * 
      */
-    @JsonProperty("DeploymentMode")
     public CharSequence getDeploymentMode() {
         return deploymentMode;
     }
@@ -389,7 +368,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-deploymentmode
      * 
      */
-    @JsonProperty("DeploymentMode")
     public void setDeploymentMode(CharSequence deploymentMode) {
         this.deploymentMode = deploymentMode;
     }
@@ -403,7 +381,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-enginetype
      * 
      */
-    @JsonProperty("EngineType")
     public CharSequence getEngineType() {
         return engineType;
     }
@@ -412,7 +389,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-enginetype
      * 
      */
-    @JsonProperty("EngineType")
     public void setEngineType(CharSequence engineType) {
         this.engineType = engineType;
     }
@@ -426,7 +402,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible
      * 
      */
-    @JsonProperty("PubliclyAccessible")
     public Boolean getPubliclyAccessible() {
         return publiclyAccessible;
     }
@@ -435,7 +410,6 @@ public class Broker {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible
      * 
      */
-    @JsonProperty("PubliclyAccessible")
     public void setPubliclyAccessible(Boolean publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }

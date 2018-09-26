@@ -41,12 +41,26 @@ public class JobQueueResource
     private JobQueue properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public JobQueueResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public JobQueueResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * JobQueue
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html
      * 
      */
-    @JsonProperty("Properties")
     public JobQueue getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class JobQueueResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(JobQueue properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class JobQueueResource
     @Override
     public JobQueueResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public JobQueueResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

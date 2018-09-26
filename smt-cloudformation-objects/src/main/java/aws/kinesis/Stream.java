@@ -71,7 +71,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -80,7 +79,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -94,7 +92,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-retentionperiodhours
      * 
      */
-    @JsonProperty("RetentionPeriodHours")
     public Integer getRetentionPeriodHours() {
         return retentionPeriodHours;
     }
@@ -103,7 +100,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-retentionperiodhours
      * 
      */
-    @JsonProperty("RetentionPeriodHours")
     public void setRetentionPeriodHours(Integer retentionPeriodHours) {
         this.retentionPeriodHours = retentionPeriodHours;
     }
@@ -117,7 +113,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount
      * 
      */
-    @JsonProperty("ShardCount")
     public Integer getShardCount() {
         return shardCount;
     }
@@ -126,7 +121,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount
      * 
      */
-    @JsonProperty("ShardCount")
     public void setShardCount(Integer shardCount) {
         this.shardCount = shardCount;
     }
@@ -142,7 +136,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html
      * 
      */
-    @JsonProperty("StreamEncryption")
     public StreamEncryption getStreamEncryption() {
         return streamEncryption;
     }
@@ -153,7 +146,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html
      * 
      */
-    @JsonProperty("StreamEncryption")
     public void setStreamEncryption(StreamEncryption streamEncryption) {
         this.streamEncryption = streamEncryption;
     }
@@ -167,7 +159,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -176,7 +167,6 @@ public class Stream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

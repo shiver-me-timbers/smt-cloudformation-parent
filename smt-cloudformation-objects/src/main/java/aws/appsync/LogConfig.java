@@ -42,7 +42,6 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn
      * 
      */
-    @JsonProperty("CloudWatchLogsRoleArn")
     public CharSequence getCloudWatchLogsRoleArn() {
         return cloudWatchLogsRoleArn;
     }
@@ -51,7 +50,6 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn
      * 
      */
-    @JsonProperty("CloudWatchLogsRoleArn")
     public void setCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
     }
@@ -65,7 +63,6 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
-    @JsonProperty("FieldLogLevel")
     public CharSequence getFieldLogLevel() {
         return fieldLogLevel;
     }
@@ -74,7 +71,6 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
-    @JsonProperty("FieldLogLevel")
     public void setFieldLogLevel(CharSequence fieldLogLevel) {
         this.fieldLogLevel = fieldLogLevel;
     }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class DomainResource
     extends Resource
+    implements HasAttributes<DomainAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class DomainResource
     private Domain properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DomainResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DomainResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Domain
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
      * 
      */
-    @JsonProperty("Properties")
     public Domain getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class DomainResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Domain properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class DomainResource
     @Override
     public DomainResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DomainResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

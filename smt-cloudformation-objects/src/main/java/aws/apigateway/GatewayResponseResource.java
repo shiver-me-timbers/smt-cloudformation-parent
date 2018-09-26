@@ -41,12 +41,26 @@ public class GatewayResponseResource
     private GatewayResponse properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public GatewayResponseResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public GatewayResponseResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * GatewayResponse
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
      * 
      */
-    @JsonProperty("Properties")
     public GatewayResponse getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class GatewayResponseResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(GatewayResponse properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class GatewayResponseResource
     @Override
     public GatewayResponseResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public GatewayResponseResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

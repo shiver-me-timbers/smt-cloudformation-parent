@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ParameterResource
     extends Resource
+    implements HasAttributes<ParameterAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ParameterResource
     private Parameter properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ParameterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ParameterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Parameter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
      * 
      */
-    @JsonProperty("Properties")
     public Parameter getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ParameterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Parameter properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ParameterResource
     @Override
     public ParameterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ParameterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

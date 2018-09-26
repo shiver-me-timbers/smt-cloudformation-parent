@@ -42,7 +42,6 @@ public class PrivateIpAddressSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-primary
      * 
      */
-    @JsonProperty("Primary")
     public Boolean getPrimary() {
         return primary;
     }
@@ -51,7 +50,6 @@ public class PrivateIpAddressSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-primary
      * 
      */
-    @JsonProperty("Primary")
     public void setPrimary(Boolean primary) {
         this.primary = primary;
     }
@@ -65,7 +63,6 @@ public class PrivateIpAddressSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
@@ -74,7 +71,6 @@ public class PrivateIpAddressSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }

@@ -46,7 +46,6 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -57,7 +56,6 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
@@ -71,7 +69,6 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -80,7 +77,6 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }

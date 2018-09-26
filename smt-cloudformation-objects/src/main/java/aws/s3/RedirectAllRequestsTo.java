@@ -42,7 +42,6 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname
      * 
      */
-    @JsonProperty("HostName")
     public CharSequence getHostName() {
         return hostName;
     }
@@ -51,7 +50,6 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname
      * 
      */
-    @JsonProperty("HostName")
     public void setHostName(CharSequence hostName) {
         this.hostName = hostName;
     }
@@ -65,7 +63,6 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -74,7 +71,6 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }

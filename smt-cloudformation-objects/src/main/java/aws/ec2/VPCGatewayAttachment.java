@@ -50,7 +50,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-internetgatewayid
      * 
      */
-    @JsonProperty("InternetGatewayId")
     public CharSequence getInternetGatewayId() {
         return internetGatewayId;
     }
@@ -59,7 +58,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-internetgatewayid
      * 
      */
-    @JsonProperty("InternetGatewayId")
     public void setInternetGatewayId(CharSequence internetGatewayId) {
         this.internetGatewayId = internetGatewayId;
     }
@@ -73,7 +71,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -82,7 +79,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }
@@ -96,7 +92,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
@@ -105,7 +100,6 @@ public class VPCGatewayAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }

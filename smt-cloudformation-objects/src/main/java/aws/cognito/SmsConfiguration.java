@@ -42,7 +42,6 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid
      * 
      */
-    @JsonProperty("ExternalId")
     public CharSequence getExternalId() {
         return externalId;
     }
@@ -51,7 +50,6 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid
      * 
      */
-    @JsonProperty("ExternalId")
     public void setExternalId(CharSequence externalId) {
         this.externalId = externalId;
     }
@@ -65,7 +63,6 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn
      * 
      */
-    @JsonProperty("SnsCallerArn")
     public CharSequence getSnsCallerArn() {
         return snsCallerArn;
     }
@@ -74,7 +71,6 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn
      * 
      */
-    @JsonProperty("SnsCallerArn")
     public void setSnsCallerArn(CharSequence snsCallerArn) {
         this.snsCallerArn = snsCallerArn;
     }

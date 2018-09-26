@@ -41,12 +41,26 @@ public class PortfolioPrincipalAssociationResource
     private PortfolioPrincipalAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PortfolioPrincipalAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PortfolioPrincipalAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * PortfolioPrincipalAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public PortfolioPrincipalAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PortfolioPrincipalAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioprincipalassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(PortfolioPrincipalAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PortfolioPrincipalAssociationResource
     @Override
     public PortfolioPrincipalAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PortfolioPrincipalAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

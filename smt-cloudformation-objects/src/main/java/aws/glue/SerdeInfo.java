@@ -50,7 +50,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Parameters___ getParameters() {
         return parameters;
     }
@@ -59,7 +58,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Parameters___ parameters) {
         this.parameters = parameters;
     }
@@ -73,7 +71,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary
      * 
      */
-    @JsonProperty("SerializationLibrary")
     public CharSequence getSerializationLibrary() {
         return serializationLibrary;
     }
@@ -82,7 +79,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary
      * 
      */
-    @JsonProperty("SerializationLibrary")
     public void setSerializationLibrary(CharSequence serializationLibrary) {
         this.serializationLibrary = serializationLibrary;
     }
@@ -96,7 +92,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -105,7 +100,6 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -20,12 +20,10 @@ public class CreationPolicy {
     @JsonProperty("ResourceSignal")
     private ResourceSignal resourceSignal;
 
-    @JsonProperty("AutoScalingCreationPolicy")
     public AutoScalingCreationPolicy getAutoScalingCreationPolicy() {
         return autoScalingCreationPolicy;
     }
 
-    @JsonProperty("AutoScalingCreationPolicy")
     public void setAutoScalingCreationPolicy(AutoScalingCreationPolicy autoScalingCreationPolicy) {
         this.autoScalingCreationPolicy = autoScalingCreationPolicy;
     }
@@ -35,12 +33,10 @@ public class CreationPolicy {
         return this;
     }
 
-    @JsonProperty("ResourceSignal")
     public ResourceSignal getResourceSignal() {
         return resourceSignal;
     }
 
-    @JsonProperty("ResourceSignal")
     public void setResourceSignal(ResourceSignal resourceSignal) {
         this.resourceSignal = resourceSignal;
     }

@@ -76,7 +76,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-action
      * 
      */
-    @JsonProperty("Action")
     public CharSequence getAction() {
         return action;
     }
@@ -85,7 +84,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-action
      * 
      */
-    @JsonProperty("Action")
     public void setAction(CharSequence action) {
         this.action = action;
     }
@@ -99,7 +97,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -108,7 +105,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -122,7 +118,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public CharSequence getDetectorId() {
         return detectorId;
     }
@@ -131,7 +126,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-detectorid
      * 
      */
-    @JsonProperty("DetectorId")
     public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
@@ -147,7 +141,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html
      * 
      */
-    @JsonProperty("FindingCriteria")
     public FindingCriteria getFindingCriteria() {
         return findingCriteria;
     }
@@ -158,7 +151,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html
      * 
      */
-    @JsonProperty("FindingCriteria")
     public void setFindingCriteria(FindingCriteria findingCriteria) {
         this.findingCriteria = findingCriteria;
     }
@@ -172,7 +164,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank
      * 
      */
-    @JsonProperty("Rank")
     public Integer getRank() {
         return rank;
     }
@@ -181,7 +172,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank
      * 
      */
-    @JsonProperty("Rank")
     public void setRank(Integer rank) {
         this.rank = rank;
     }
@@ -195,7 +185,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -204,7 +193,6 @@ public class Filter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

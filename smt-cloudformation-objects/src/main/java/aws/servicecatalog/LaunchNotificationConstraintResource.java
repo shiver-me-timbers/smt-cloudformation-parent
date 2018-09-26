@@ -41,12 +41,26 @@ public class LaunchNotificationConstraintResource
     private LaunchNotificationConstraint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LaunchNotificationConstraintResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LaunchNotificationConstraintResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LaunchNotificationConstraint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public LaunchNotificationConstraint getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LaunchNotificationConstraintResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchnotificationconstraint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LaunchNotificationConstraint properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LaunchNotificationConstraintResource
     @Override
     public LaunchNotificationConstraintResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LaunchNotificationConstraintResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

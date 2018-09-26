@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class SimpleADResource
     extends Resource
+    implements HasAttributes<SimpleADAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class SimpleADResource
     private SimpleAD properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SimpleADResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SimpleADResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SimpleAD
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html
      * 
      */
-    @JsonProperty("Properties")
     public SimpleAD getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class SimpleADResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SimpleAD properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class SimpleADResource
     @Override
     public SimpleADResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SimpleADResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

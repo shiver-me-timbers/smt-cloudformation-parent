@@ -41,12 +41,26 @@ public class TagOptionAssociationResource
     private TagOptionAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TagOptionAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TagOptionAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TagOptionAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public TagOptionAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TagOptionAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TagOptionAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TagOptionAssociationResource
     @Override
     public TagOptionAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TagOptionAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

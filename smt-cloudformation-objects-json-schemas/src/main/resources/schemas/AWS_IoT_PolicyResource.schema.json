@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT_PolicyResource.schema.json",
+  "title" : "PolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iot.PolicyResource",
+  "javaInterfaces" : [ "aws.HasAttributes<PolicyAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IoT_Policy.schema.json"
+    }
+  }
+}

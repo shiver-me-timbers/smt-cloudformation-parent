@@ -41,12 +41,26 @@ public class FleetResource
     private Fleet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FleetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public FleetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Fleet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
      * 
      */
-    @JsonProperty("Properties")
     public Fleet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class FleetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Fleet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class FleetResource
     @Override
     public FleetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public FleetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

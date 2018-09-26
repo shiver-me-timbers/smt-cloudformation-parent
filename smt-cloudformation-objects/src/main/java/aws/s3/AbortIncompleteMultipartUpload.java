@@ -34,7 +34,6 @@ public class AbortIncompleteMultipartUpload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation
      * 
      */
-    @JsonProperty("DaysAfterInitiation")
     public Integer getDaysAfterInitiation() {
         return daysAfterInitiation;
     }
@@ -43,7 +42,6 @@ public class AbortIncompleteMultipartUpload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation
      * 
      */
-    @JsonProperty("DaysAfterInitiation")
     public void setDaysAfterInitiation(Integer daysAfterInitiation) {
         this.daysAfterInitiation = daysAfterInitiation;
     }

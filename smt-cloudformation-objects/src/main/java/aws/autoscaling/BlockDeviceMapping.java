@@ -60,7 +60,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-devicename
      * 
      */
-    @JsonProperty("DeviceName")
     public CharSequence getDeviceName() {
         return deviceName;
     }
@@ -69,7 +68,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-devicename
      * 
      */
-    @JsonProperty("DeviceName")
     public void setDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
     }
@@ -85,7 +83,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html
      * 
      */
-    @JsonProperty("Ebs")
     public BlockDevice getEbs() {
         return ebs;
     }
@@ -96,7 +93,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html
      * 
      */
-    @JsonProperty("Ebs")
     public void setEbs(BlockDevice ebs) {
         this.ebs = ebs;
     }
@@ -110,7 +106,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-nodevice
      * 
      */
-    @JsonProperty("NoDevice")
     public Boolean getNoDevice() {
         return noDevice;
     }
@@ -119,7 +114,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-nodevice
      * 
      */
-    @JsonProperty("NoDevice")
     public void setNoDevice(Boolean noDevice) {
         this.noDevice = noDevice;
     }
@@ -133,7 +127,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-virtualname
      * 
      */
-    @JsonProperty("VirtualName")
     public CharSequence getVirtualName() {
         return virtualName;
     }
@@ -142,7 +135,6 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-virtualname
      * 
      */
-    @JsonProperty("VirtualName")
     public void setVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
     }

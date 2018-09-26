@@ -66,7 +66,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid
      * 
      */
-    @JsonProperty("IamCertificateId")
     public CharSequence getIamCertificateId() {
         return iamCertificateId;
     }
@@ -75,7 +74,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid
      * 
      */
-    @JsonProperty("IamCertificateId")
     public void setIamCertificateId(CharSequence iamCertificateId) {
         this.iamCertificateId = iamCertificateId;
     }
@@ -89,7 +87,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod
      * 
      */
-    @JsonProperty("SslSupportMethod")
     public CharSequence getSslSupportMethod() {
         return sslSupportMethod;
     }
@@ -98,7 +95,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-sslsupportmethod
      * 
      */
-    @JsonProperty("SslSupportMethod")
     public void setSslSupportMethod(CharSequence sslSupportMethod) {
         this.sslSupportMethod = sslSupportMethod;
     }
@@ -112,7 +108,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion
      * 
      */
-    @JsonProperty("MinimumProtocolVersion")
     public CharSequence getMinimumProtocolVersion() {
         return minimumProtocolVersion;
     }
@@ -121,7 +116,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-minimumprotocolversion
      * 
      */
-    @JsonProperty("MinimumProtocolVersion")
     public void setMinimumProtocolVersion(CharSequence minimumProtocolVersion) {
         this.minimumProtocolVersion = minimumProtocolVersion;
     }
@@ -135,7 +129,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate
      * 
      */
-    @JsonProperty("CloudFrontDefaultCertificate")
     public Boolean getCloudFrontDefaultCertificate() {
         return cloudFrontDefaultCertificate;
     }
@@ -144,7 +137,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-cloudfrontdefaultcertificate
      * 
      */
-    @JsonProperty("CloudFrontDefaultCertificate")
     public void setCloudFrontDefaultCertificate(Boolean cloudFrontDefaultCertificate) {
         this.cloudFrontDefaultCertificate = cloudFrontDefaultCertificate;
     }
@@ -158,7 +150,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn
      * 
      */
-    @JsonProperty("AcmCertificateArn")
     public CharSequence getAcmCertificateArn() {
         return acmCertificateArn;
     }
@@ -167,7 +158,6 @@ public class ViewerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-acmcertificatearn
      * 
      */
-    @JsonProperty("AcmCertificateArn")
     public void setAcmCertificateArn(CharSequence acmCertificateArn) {
         this.acmCertificateArn = acmCertificateArn;
     }

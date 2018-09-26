@@ -58,7 +58,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deleteonterm
      * 
      */
-    @JsonProperty("DeleteOnTermination")
     public Boolean getDeleteOnTermination() {
         return deleteOnTermination;
     }
@@ -67,7 +66,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deleteonterm
      * 
      */
-    @JsonProperty("DeleteOnTermination")
     public void setDeleteOnTermination(Boolean deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
@@ -81,7 +79,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deviceindex
      * 
      */
-    @JsonProperty("DeviceIndex")
     public CharSequence getDeviceIndex() {
         return deviceIndex;
     }
@@ -90,7 +87,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-deviceindex
      * 
      */
-    @JsonProperty("DeviceIndex")
     public void setDeviceIndex(CharSequence deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
@@ -104,7 +100,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -113,7 +108,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -127,7 +121,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -136,7 +129,6 @@ public class NetworkInterfaceAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html#cfn-ec2-network-interface-attachment-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }

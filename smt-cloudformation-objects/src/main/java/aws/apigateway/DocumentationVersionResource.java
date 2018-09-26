@@ -41,12 +41,26 @@ public class DocumentationVersionResource
     private DocumentationVersion properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DocumentationVersionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DocumentationVersionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DocumentationVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html
      * 
      */
-    @JsonProperty("Properties")
     public DocumentationVersion getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DocumentationVersionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DocumentationVersion properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DocumentationVersionResource
     @Override
     public DocumentationVersionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DocumentationVersionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -38,7 +38,6 @@ public class InstanceFleetProvisioningSpecifications {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html
      * 
      */
-    @JsonProperty("SpotSpecification")
     public SpotProvisioningSpecification getSpotSpecification() {
         return spotSpecification;
     }
@@ -49,7 +48,6 @@ public class InstanceFleetProvisioningSpecifications {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html
      * 
      */
-    @JsonProperty("SpotSpecification")
     public void setSpotSpecification(SpotProvisioningSpecification spotSpecification) {
         this.spotSpecification = spotSpecification;
     }

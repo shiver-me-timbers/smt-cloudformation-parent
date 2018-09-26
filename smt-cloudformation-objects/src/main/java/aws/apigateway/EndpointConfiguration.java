@@ -38,7 +38,6 @@ public class EndpointConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html#cfn-apigateway-domainname-endpointconfiguration-types
      * 
      */
-    @JsonProperty("Types")
     public Set<CharSequence> getTypes() {
         return types;
     }
@@ -47,7 +46,6 @@ public class EndpointConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html#cfn-apigateway-domainname-endpointconfiguration-types
      * 
      */
-    @JsonProperty("Types")
     public void setTypes(Set<CharSequence> types) {
         this.types = types;
     }

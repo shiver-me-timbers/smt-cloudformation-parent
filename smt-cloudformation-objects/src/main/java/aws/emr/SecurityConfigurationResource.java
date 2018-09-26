@@ -41,12 +41,26 @@ public class SecurityConfigurationResource
     private SecurityConfiguration properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SecurityConfigurationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SecurityConfigurationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SecurityConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html
      * 
      */
-    @JsonProperty("Properties")
     public SecurityConfiguration getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SecurityConfigurationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-securityconfiguration.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SecurityConfiguration properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SecurityConfigurationResource
     @Override
     public SecurityConfigurationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SecurityConfigurationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

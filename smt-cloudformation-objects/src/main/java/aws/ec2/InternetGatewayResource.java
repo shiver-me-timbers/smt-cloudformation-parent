@@ -41,12 +41,26 @@ public class InternetGatewayResource
     private InternetGateway properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public InternetGatewayResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public InternetGatewayResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * InternetGateway
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-internetgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public InternetGateway getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class InternetGatewayResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-internetgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(InternetGateway properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class InternetGatewayResource
     @Override
     public InternetGatewayResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public InternetGatewayResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -62,7 +62,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone
      * 
      */
-    @JsonProperty("PrimaryAvailabilityZone")
     public CharSequence getPrimaryAvailabilityZone() {
         return primaryAvailabilityZone;
     }
@@ -71,7 +70,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone
      * 
      */
-    @JsonProperty("PrimaryAvailabilityZone")
     public void setPrimaryAvailabilityZone(CharSequence primaryAvailabilityZone) {
         this.primaryAvailabilityZone = primaryAvailabilityZone;
     }
@@ -85,7 +83,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicaavailabilityzones
      * 
      */
-    @JsonProperty("ReplicaAvailabilityZones")
     public Set<CharSequence> getReplicaAvailabilityZones() {
         return replicaAvailabilityZones;
     }
@@ -94,7 +91,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicaavailabilityzones
      * 
      */
-    @JsonProperty("ReplicaAvailabilityZones")
     public void setReplicaAvailabilityZones(Set<CharSequence> replicaAvailabilityZones) {
         this.replicaAvailabilityZones = replicaAvailabilityZones;
     }
@@ -108,7 +104,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicacount
      * 
      */
-    @JsonProperty("ReplicaCount")
     public Integer getReplicaCount() {
         return replicaCount;
     }
@@ -117,7 +112,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-replicacount
      * 
      */
-    @JsonProperty("ReplicaCount")
     public void setReplicaCount(Integer replicaCount) {
         this.replicaCount = replicaCount;
     }
@@ -131,7 +125,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-slots
      * 
      */
-    @JsonProperty("Slots")
     public CharSequence getSlots() {
         return slots;
     }
@@ -140,7 +133,6 @@ public class NodeGroupConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-slots
      * 
      */
-    @JsonProperty("Slots")
     public void setSlots(CharSequence slots) {
         this.slots = slots;
     }

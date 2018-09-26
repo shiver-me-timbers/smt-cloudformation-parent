@@ -41,12 +41,26 @@ public class LifecycleHookResource
     private LifecycleHook properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LifecycleHookResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LifecycleHookResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * LifecycleHook
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html
      * 
      */
-    @JsonProperty("Properties")
     public LifecycleHook getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LifecycleHookResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(LifecycleHook properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LifecycleHookResource
     @Override
     public LifecycleHookResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LifecycleHookResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

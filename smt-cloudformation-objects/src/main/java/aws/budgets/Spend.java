@@ -42,7 +42,6 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount
      * 
      */
-    @JsonProperty("Amount")
     public Double getAmount() {
         return amount;
     }
@@ -51,7 +50,6 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount
      * 
      */
-    @JsonProperty("Amount")
     public void setAmount(Double amount) {
         this.amount = amount;
     }
@@ -65,7 +63,6 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit
      * 
      */
-    @JsonProperty("Unit")
     public CharSequence getUnit() {
         return unit;
     }
@@ -74,7 +71,6 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit
      * 
      */
-    @JsonProperty("Unit")
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }

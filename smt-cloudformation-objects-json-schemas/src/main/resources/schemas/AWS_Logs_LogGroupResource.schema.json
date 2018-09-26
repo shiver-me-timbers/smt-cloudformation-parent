@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Logs_LogGroupResource.schema.json",
+  "title" : "LogGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.logs.LogGroupResource",
+  "javaInterfaces" : [ "aws.HasAttributes<LogGroupAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Logs_LogGroup.schema.json"
+    }
+  }
+}

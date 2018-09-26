@@ -34,7 +34,6 @@ public class PlacementGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html#cfn-ec2-placementgroup-strategy
      * 
      */
-    @JsonProperty("Strategy")
     public CharSequence getStrategy() {
         return strategy;
     }
@@ -43,7 +42,6 @@ public class PlacementGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html#cfn-ec2-placementgroup-strategy
      * 
      */
-    @JsonProperty("Strategy")
     public void setStrategy(CharSequence strategy) {
         this.strategy = strategy;
     }

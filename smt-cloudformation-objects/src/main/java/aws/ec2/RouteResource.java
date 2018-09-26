@@ -41,12 +41,26 @@ public class RouteResource
     private Route properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RouteResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RouteResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Route
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
      * 
      */
-    @JsonProperty("Properties")
     public Route getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class RouteResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Route properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class RouteResource
     @Override
     public RouteResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RouteResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

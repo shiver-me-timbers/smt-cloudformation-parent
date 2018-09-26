@@ -44,7 +44,6 @@ public class UserToGroupAddition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -53,7 +52,6 @@ public class UserToGroupAddition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -67,7 +65,6 @@ public class UserToGroupAddition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-users
      * 
      */
-    @JsonProperty("Users")
     public List<CharSequence> getUsers() {
         return users;
     }
@@ -76,7 +73,6 @@ public class UserToGroupAddition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-users
      * 
      */
-    @JsonProperty("Users")
     public void setUsers(List<CharSequence> users) {
         this.users = users;
     }

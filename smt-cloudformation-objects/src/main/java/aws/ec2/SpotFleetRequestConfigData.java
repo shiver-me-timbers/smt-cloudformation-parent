@@ -127,7 +127,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy
      * 
      */
-    @JsonProperty("AllocationStrategy")
     public CharSequence getAllocationStrategy() {
         return allocationStrategy;
     }
@@ -136,7 +135,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy
      * 
      */
-    @JsonProperty("AllocationStrategy")
     public void setAllocationStrategy(CharSequence allocationStrategy) {
         this.allocationStrategy = allocationStrategy;
     }
@@ -150,7 +148,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-excesscapacityterminationpolicy
      * 
      */
-    @JsonProperty("ExcessCapacityTerminationPolicy")
     public CharSequence getExcessCapacityTerminationPolicy() {
         return excessCapacityTerminationPolicy;
     }
@@ -159,7 +156,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-excesscapacityterminationpolicy
      * 
      */
-    @JsonProperty("ExcessCapacityTerminationPolicy")
     public void setExcessCapacityTerminationPolicy(CharSequence excessCapacityTerminationPolicy) {
         this.excessCapacityTerminationPolicy = excessCapacityTerminationPolicy;
     }
@@ -173,7 +169,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-iamfleetrole
      * 
      */
-    @JsonProperty("IamFleetRole")
     public CharSequence getIamFleetRole() {
         return iamFleetRole;
     }
@@ -182,7 +177,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-iamfleetrole
      * 
      */
-    @JsonProperty("IamFleetRole")
     public void setIamFleetRole(CharSequence iamFleetRole) {
         this.iamFleetRole = iamFleetRole;
     }
@@ -196,7 +190,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications
      * 
      */
-    @JsonProperty("LaunchSpecifications")
     public Set<SpotFleetLaunchSpecification> getLaunchSpecifications() {
         return launchSpecifications;
     }
@@ -205,7 +198,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications
      * 
      */
-    @JsonProperty("LaunchSpecifications")
     public void setLaunchSpecifications(Set<SpotFleetLaunchSpecification> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
     }
@@ -219,7 +211,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs
      * 
      */
-    @JsonProperty("LaunchTemplateConfigs")
     public Set<LaunchTemplateConfig> getLaunchTemplateConfigs() {
         return launchTemplateConfigs;
     }
@@ -228,7 +219,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs
      * 
      */
-    @JsonProperty("LaunchTemplateConfigs")
     public void setLaunchTemplateConfigs(Set<LaunchTemplateConfig> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
     }
@@ -242,7 +232,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances
      * 
      */
-    @JsonProperty("ReplaceUnhealthyInstances")
     public Boolean getReplaceUnhealthyInstances() {
         return replaceUnhealthyInstances;
     }
@@ -251,7 +240,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances
      * 
      */
-    @JsonProperty("ReplaceUnhealthyInstances")
     public void setReplaceUnhealthyInstances(Boolean replaceUnhealthyInstances) {
         this.replaceUnhealthyInstances = replaceUnhealthyInstances;
     }
@@ -265,7 +253,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-spotprice
      * 
      */
-    @JsonProperty("SpotPrice")
     public CharSequence getSpotPrice() {
         return spotPrice;
     }
@@ -274,7 +261,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-spotprice
      * 
      */
-    @JsonProperty("SpotPrice")
     public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
@@ -288,7 +274,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-targetcapacity
      * 
      */
-    @JsonProperty("TargetCapacity")
     public Integer getTargetCapacity() {
         return targetCapacity;
     }
@@ -297,7 +282,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-targetcapacity
      * 
      */
-    @JsonProperty("TargetCapacity")
     public void setTargetCapacity(Integer targetCapacity) {
         this.targetCapacity = targetCapacity;
     }
@@ -311,7 +295,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-terminateinstanceswithexpiration
      * 
      */
-    @JsonProperty("TerminateInstancesWithExpiration")
     public Boolean getTerminateInstancesWithExpiration() {
         return terminateInstancesWithExpiration;
     }
@@ -320,7 +303,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-terminateinstanceswithexpiration
      * 
      */
-    @JsonProperty("TerminateInstancesWithExpiration")
     public void setTerminateInstancesWithExpiration(Boolean terminateInstancesWithExpiration) {
         this.terminateInstancesWithExpiration = terminateInstancesWithExpiration;
     }
@@ -334,7 +316,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -343,7 +324,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -357,7 +337,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validfrom
      * 
      */
-    @JsonProperty("ValidFrom")
     public CharSequence getValidFrom() {
         return validFrom;
     }
@@ -366,7 +345,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validfrom
      * 
      */
-    @JsonProperty("ValidFrom")
     public void setValidFrom(CharSequence validFrom) {
         this.validFrom = validFrom;
     }
@@ -380,7 +358,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validuntil
      * 
      */
-    @JsonProperty("ValidUntil")
     public CharSequence getValidUntil() {
         return validUntil;
     }
@@ -389,7 +366,6 @@ public class SpotFleetRequestConfigData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-validuntil
      * 
      */
-    @JsonProperty("ValidUntil")
     public void setValidUntil(CharSequence validUntil) {
         this.validUntil = validUntil;
     }

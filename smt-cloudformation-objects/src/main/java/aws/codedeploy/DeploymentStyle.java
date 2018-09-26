@@ -42,7 +42,6 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
      * 
      */
-    @JsonProperty("DeploymentOption")
     public CharSequence getDeploymentOption() {
         return deploymentOption;
     }
@@ -51,7 +50,6 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
      * 
      */
-    @JsonProperty("DeploymentOption")
     public void setDeploymentOption(CharSequence deploymentOption) {
         this.deploymentOption = deploymentOption;
     }
@@ -65,7 +63,6 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
      * 
      */
-    @JsonProperty("DeploymentType")
     public CharSequence getDeploymentType() {
         return deploymentType;
     }
@@ -74,7 +71,6 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
      * 
      */
-    @JsonProperty("DeploymentType")
     public void setDeploymentType(CharSequence deploymentType) {
         this.deploymentType = deploymentType;
     }

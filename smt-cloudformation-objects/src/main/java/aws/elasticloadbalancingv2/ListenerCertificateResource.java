@@ -41,12 +41,26 @@ public class ListenerCertificateResource
     private ListenerCertificate properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ListenerCertificateResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ListenerCertificateResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ListenerCertificate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
      * 
      */
-    @JsonProperty("Properties")
     public ListenerCertificate getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ListenerCertificateResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ListenerCertificate properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ListenerCertificateResource
     @Override
     public ListenerCertificateResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ListenerCertificateResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

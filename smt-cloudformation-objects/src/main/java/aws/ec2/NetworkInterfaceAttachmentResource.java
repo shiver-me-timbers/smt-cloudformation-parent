@@ -41,12 +41,26 @@ public class NetworkInterfaceAttachmentResource
     private NetworkInterfaceAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NetworkInterfaceAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NetworkInterfaceAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NetworkInterfaceAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
      * 
      */
-    @JsonProperty("Properties")
     public NetworkInterfaceAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NetworkInterfaceAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface-attachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NetworkInterfaceAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NetworkInterfaceAttachmentResource
     @Override
     public NetworkInterfaceAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NetworkInterfaceAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

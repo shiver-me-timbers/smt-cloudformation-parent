@@ -50,7 +50,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode
      * 
      */
-    @JsonProperty("ContinentCode")
     public CharSequence getContinentCode() {
         return continentCode;
     }
@@ -59,7 +58,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode
      * 
      */
-    @JsonProperty("ContinentCode")
     public void setContinentCode(CharSequence continentCode) {
         this.continentCode = continentCode;
     }
@@ -73,7 +71,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode
      * 
      */
-    @JsonProperty("CountryCode")
     public CharSequence getCountryCode() {
         return countryCode;
     }
@@ -82,7 +79,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode
      * 
      */
-    @JsonProperty("CountryCode")
     public void setCountryCode(CharSequence countryCode) {
         this.countryCode = countryCode;
     }
@@ -96,7 +92,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode
      * 
      */
-    @JsonProperty("SubdivisionCode")
     public CharSequence getSubdivisionCode() {
         return subdivisionCode;
     }
@@ -105,7 +100,6 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode
      * 
      */
-    @JsonProperty("SubdivisionCode")
     public void setSubdivisionCode(CharSequence subdivisionCode) {
         this.subdivisionCode = subdivisionCode;
     }

@@ -46,7 +46,6 @@ public class Thing {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html
      * 
      */
-    @JsonProperty("AttributePayload")
     public AttributePayload getAttributePayload() {
         return attributePayload;
     }
@@ -57,7 +56,6 @@ public class Thing {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html
      * 
      */
-    @JsonProperty("AttributePayload")
     public void setAttributePayload(AttributePayload attributePayload) {
         this.attributePayload = attributePayload;
     }
@@ -71,7 +69,6 @@ public class Thing {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html#cfn-iot-thing-thingname
      * 
      */
-    @JsonProperty("ThingName")
     public CharSequence getThingName() {
         return thingName;
     }
@@ -80,7 +77,6 @@ public class Thing {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html#cfn-iot-thing-thingname
      * 
      */
-    @JsonProperty("ThingName")
     public void setThingName(CharSequence thingName) {
         this.thingName = thingName;
     }

@@ -31,7 +31,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NoEcho",
     "Type"
 })
-public class Parameter {
+public class Parameter
+    extends Named
+{
 
     @JsonProperty("AllowedPattern")
     private String allowedPattern;
@@ -56,12 +58,25 @@ public class Parameter {
     @JsonProperty("Type")
     private String type;
 
-    @JsonProperty("AllowedPattern")
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Parameter() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public Parameter(String name) {
+        super(name);
+    }
+
     public String getAllowedPattern() {
         return allowedPattern;
     }
 
-    @JsonProperty("AllowedPattern")
     public void setAllowedPattern(String allowedPattern) {
         this.allowedPattern = allowedPattern;
     }
@@ -71,12 +86,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("AllowedValues")
     public List<String> getAllowedValues() {
         return allowedValues;
     }
 
-    @JsonProperty("AllowedValues")
     public void setAllowedValues(List<String> allowedValues) {
         this.allowedValues = allowedValues;
     }
@@ -86,12 +99,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("ConstraintDescription")
     public String getConstraintDescription() {
         return constraintDescription;
     }
 
-    @JsonProperty("ConstraintDescription")
     public void setConstraintDescription(String constraintDescription) {
         this.constraintDescription = constraintDescription;
     }
@@ -101,12 +112,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("Default")
     public String getDefault() {
         return _default;
     }
 
-    @JsonProperty("Default")
     public void setDefault(String _default) {
         this._default = _default;
     }
@@ -116,12 +125,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("Description")
     public String getDescription() {
         return description;
     }
 
-    @JsonProperty("Description")
     public void setDescription(String description) {
         this.description = description;
     }
@@ -131,12 +138,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("MaxLength")
     public Integer getMaxLength() {
         return maxLength;
     }
 
-    @JsonProperty("MaxLength")
     public void setMaxLength(Integer maxLength) {
         this.maxLength = maxLength;
     }
@@ -146,12 +151,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("MaxValue")
     public Integer getMaxValue() {
         return maxValue;
     }
 
-    @JsonProperty("MaxValue")
     public void setMaxValue(Integer maxValue) {
         this.maxValue = maxValue;
     }
@@ -161,12 +164,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("MinLength")
     public Integer getMinLength() {
         return minLength;
     }
 
-    @JsonProperty("MinLength")
     public void setMinLength(Integer minLength) {
         this.minLength = minLength;
     }
@@ -176,12 +177,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("MinValue")
     public Integer getMinValue() {
         return minValue;
     }
 
-    @JsonProperty("MinValue")
     public void setMinValue(Integer minValue) {
         this.minValue = minValue;
     }
@@ -191,12 +190,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("NoEcho")
     public Boolean getNoEcho() {
         return noEcho;
     }
 
-    @JsonProperty("NoEcho")
     public void setNoEcho(Boolean noEcho) {
         this.noEcho = noEcho;
     }
@@ -206,12 +203,10 @@ public class Parameter {
         return this;
     }
 
-    @JsonProperty("Type")
     public String getType() {
         return type;
     }
 
-    @JsonProperty("Type")
     public void setType(String type) {
         this.type = type;
     }
@@ -222,13 +217,19 @@ public class Parameter {
     }
 
     @Override
+    public Parameter withName(String name) {
+        super.withName(name);
+        return this;
+    }
+
+    @Override
     public String toString() {
-        return new ToStringBuilder(this).append("allowedPattern", allowedPattern).append("allowedValues", allowedValues).append("constraintDescription", constraintDescription).append("_default", _default).append("description", description).append("maxLength", maxLength).append("maxValue", maxValue).append("minLength", minLength).append("minValue", minValue).append("noEcho", noEcho).append("type", type).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("allowedPattern", allowedPattern).append("allowedValues", allowedValues).append("constraintDescription", constraintDescription).append("_default", _default).append("description", description).append("maxLength", maxLength).append("maxValue", maxValue).append("minLength", minLength).append("minValue", minValue).append("noEcho", noEcho).append("type", type).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(allowedValues).append(_default).append(minValue).append(noEcho).append(maxValue).append(minLength).append(description).append(constraintDescription).append(type).append(allowedPattern).append(maxLength).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(allowedValues).append(_default).append(minValue).append(noEcho).append(maxValue).append(minLength).append(description).append(constraintDescription).append(type).append(allowedPattern).append(maxLength).toHashCode();
     }
 
     @Override
@@ -240,7 +241,7 @@ public class Parameter {
             return false;
         }
         Parameter rhs = ((Parameter) other);
-        return new EqualsBuilder().append(allowedValues, rhs.allowedValues).append(_default, rhs._default).append(minValue, rhs.minValue).append(noEcho, rhs.noEcho).append(maxValue, rhs.maxValue).append(minLength, rhs.minLength).append(description, rhs.description).append(constraintDescription, rhs.constraintDescription).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(maxLength, rhs.maxLength).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(allowedValues, rhs.allowedValues).append(_default, rhs._default).append(minValue, rhs.minValue).append(noEcho, rhs.noEcho).append(maxValue, rhs.maxValue).append(minLength, rhs.minLength).append(description, rhs.description).append(constraintDescription, rhs.constraintDescription).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(maxLength, rhs.maxLength).isEquals();
     }
 
 }

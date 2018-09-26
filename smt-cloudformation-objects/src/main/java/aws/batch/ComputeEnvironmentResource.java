@@ -41,12 +41,26 @@ public class ComputeEnvironmentResource
     private ComputeEnvironment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ComputeEnvironmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ComputeEnvironmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ComputeEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
      * 
      */
-    @JsonProperty("Properties")
     public ComputeEnvironment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ComputeEnvironmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ComputeEnvironment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ComputeEnvironmentResource
     @Override
     public ComputeEnvironmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ComputeEnvironmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

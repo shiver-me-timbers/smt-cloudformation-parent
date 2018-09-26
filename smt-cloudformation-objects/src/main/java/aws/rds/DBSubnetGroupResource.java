@@ -41,12 +41,26 @@ public class DBSubnetGroupResource
     private DBSubnetGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBSubnetGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBSubnetGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBSubnetGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html
      * 
      */
-    @JsonProperty("Properties")
     public DBSubnetGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DBSubnetGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbsubnet-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBSubnetGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DBSubnetGroupResource
     @Override
     public DBSubnetGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBSubnetGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -41,12 +41,26 @@ public class DatabaseResource
     private Database properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DatabaseResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DatabaseResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Database
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html
      * 
      */
-    @JsonProperty("Properties")
     public Database getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DatabaseResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Database properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DatabaseResource
     @Override
     public DatabaseResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DatabaseResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

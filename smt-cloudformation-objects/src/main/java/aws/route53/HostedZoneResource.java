@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class HostedZoneResource
     extends Resource
+    implements HasAttributes<HostedZoneAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class HostedZoneResource
     private HostedZone properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public HostedZoneResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public HostedZoneResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * HostedZone
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
      * 
      */
-    @JsonProperty("Properties")
     public HostedZone getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class HostedZoneResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(HostedZone properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class HostedZoneResource
     @Override
     public HostedZoneResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public HostedZoneResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

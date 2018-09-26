@@ -41,12 +41,26 @@ public class UserPoolUserToGroupAttachmentResource
     private UserPoolUserToGroupAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserPoolUserToGroupAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserPoolUserToGroupAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UserPoolUserToGroupAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public UserPoolUserToGroupAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class UserPoolUserToGroupAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UserPoolUserToGroupAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class UserPoolUserToGroupAttachmentResource
     @Override
     public UserPoolUserToGroupAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserPoolUserToGroupAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

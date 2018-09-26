@@ -38,7 +38,6 @@ public class LifecycleEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html
      * 
      */
-    @JsonProperty("ShutdownEventConfiguration")
     public ShutdownEventConfiguration getShutdownEventConfiguration() {
         return shutdownEventConfiguration;
     }
@@ -49,7 +48,6 @@ public class LifecycleEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html
      * 
      */
-    @JsonProperty("ShutdownEventConfiguration")
     public void setShutdownEventConfiguration(ShutdownEventConfiguration shutdownEventConfiguration) {
         this.shutdownEventConfiguration = shutdownEventConfiguration;
     }

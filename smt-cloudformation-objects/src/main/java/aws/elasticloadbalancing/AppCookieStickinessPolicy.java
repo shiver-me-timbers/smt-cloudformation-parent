@@ -42,7 +42,6 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename
      * 
      */
-    @JsonProperty("CookieName")
     public CharSequence getCookieName() {
         return cookieName;
     }
@@ -51,7 +50,6 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename
      * 
      */
-    @JsonProperty("CookieName")
     public void setCookieName(CharSequence cookieName) {
         this.cookieName = cookieName;
     }
@@ -65,7 +63,6 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -74,7 +71,6 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }

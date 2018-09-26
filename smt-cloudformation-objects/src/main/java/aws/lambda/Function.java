@@ -161,7 +161,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html
      * 
      */
-    @JsonProperty("Code")
     public Code getCode() {
         return code;
     }
@@ -172,7 +171,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html
      * 
      */
-    @JsonProperty("Code")
     public void setCode(Code code) {
         this.code = code;
     }
@@ -188,7 +186,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html
      * 
      */
-    @JsonProperty("DeadLetterConfig")
     public DeadLetterConfig getDeadLetterConfig() {
         return deadLetterConfig;
     }
@@ -199,7 +196,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html
      * 
      */
-    @JsonProperty("DeadLetterConfig")
     public void setDeadLetterConfig(DeadLetterConfig deadLetterConfig) {
         this.deadLetterConfig = deadLetterConfig;
     }
@@ -213,7 +209,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -222,7 +217,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -238,7 +232,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html
      * 
      */
-    @JsonProperty("Environment")
     public Environment getEnvironment() {
         return environment;
     }
@@ -249,7 +242,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html
      * 
      */
-    @JsonProperty("Environment")
     public void setEnvironment(Environment environment) {
         this.environment = environment;
     }
@@ -263,7 +255,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -272,7 +263,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
@@ -286,7 +276,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-handler
      * 
      */
-    @JsonProperty("Handler")
     public CharSequence getHandler() {
         return handler;
     }
@@ -295,7 +284,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-handler
      * 
      */
-    @JsonProperty("Handler")
     public void setHandler(CharSequence handler) {
         this.handler = handler;
     }
@@ -309,7 +297,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-kmskeyarn
      * 
      */
-    @JsonProperty("KmsKeyArn")
     public CharSequence getKmsKeyArn() {
         return kmsKeyArn;
     }
@@ -318,7 +305,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-kmskeyarn
      * 
      */
-    @JsonProperty("KmsKeyArn")
     public void setKmsKeyArn(CharSequence kmsKeyArn) {
         this.kmsKeyArn = kmsKeyArn;
     }
@@ -332,7 +318,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize
      * 
      */
-    @JsonProperty("MemorySize")
     public Integer getMemorySize() {
         return memorySize;
     }
@@ -341,7 +326,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize
      * 
      */
-    @JsonProperty("MemorySize")
     public void setMemorySize(Integer memorySize) {
         this.memorySize = memorySize;
     }
@@ -355,7 +339,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-reservedconcurrentexecutions
      * 
      */
-    @JsonProperty("ReservedConcurrentExecutions")
     public Integer getReservedConcurrentExecutions() {
         return reservedConcurrentExecutions;
     }
@@ -364,7 +347,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-reservedconcurrentexecutions
      * 
      */
-    @JsonProperty("ReservedConcurrentExecutions")
     public void setReservedConcurrentExecutions(Integer reservedConcurrentExecutions) {
         this.reservedConcurrentExecutions = reservedConcurrentExecutions;
     }
@@ -378,7 +360,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-role
      * 
      */
-    @JsonProperty("Role")
     public CharSequence getRole() {
         return role;
     }
@@ -387,7 +368,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-role
      * 
      */
-    @JsonProperty("Role")
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -401,7 +381,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime
      * 
      */
-    @JsonProperty("Runtime")
     public CharSequence getRuntime() {
         return runtime;
     }
@@ -410,7 +389,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-runtime
      * 
      */
-    @JsonProperty("Runtime")
     public void setRuntime(CharSequence runtime) {
         this.runtime = runtime;
     }
@@ -424,7 +402,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -433,7 +410,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -447,7 +423,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public Integer getTimeout() {
         return timeout;
     }
@@ -456,7 +431,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public void setTimeout(Integer timeout) {
         this.timeout = timeout;
     }
@@ -472,7 +446,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html
      * 
      */
-    @JsonProperty("TracingConfig")
     public TracingConfig getTracingConfig() {
         return tracingConfig;
     }
@@ -483,7 +456,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html
      * 
      */
-    @JsonProperty("TracingConfig")
     public void setTracingConfig(TracingConfig tracingConfig) {
         this.tracingConfig = tracingConfig;
     }
@@ -499,7 +471,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html
      * 
      */
-    @JsonProperty("VpcConfig")
     public VpcConfig getVpcConfig() {
         return vpcConfig;
     }
@@ -510,7 +481,6 @@ public class Function {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html
      * 
      */
-    @JsonProperty("VpcConfig")
     public void setVpcConfig(VpcConfig vpcConfig) {
         this.vpcConfig = vpcConfig;
     }

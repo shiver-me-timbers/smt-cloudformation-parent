@@ -41,12 +41,26 @@ public class PartitionResource
     private Partition properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PartitionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PartitionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Partition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html
      * 
      */
-    @JsonProperty("Properties")
     public Partition getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PartitionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Partition properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PartitionResource
     @Override
     public PartitionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PartitionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

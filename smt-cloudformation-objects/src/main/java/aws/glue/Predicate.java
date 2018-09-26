@@ -44,7 +44,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-logical
      * 
      */
-    @JsonProperty("Logical")
     public CharSequence getLogical() {
         return logical;
     }
@@ -53,7 +52,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-logical
      * 
      */
-    @JsonProperty("Logical")
     public void setLogical(CharSequence logical) {
         this.logical = logical;
     }
@@ -67,7 +65,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-conditions
      * 
      */
-    @JsonProperty("Conditions")
     public List<Condition> getConditions() {
         return conditions;
     }
@@ -76,7 +73,6 @@ public class Predicate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-conditions
      * 
      */
-    @JsonProperty("Conditions")
     public void setConditions(List<Condition> conditions) {
         this.conditions = conditions;
     }

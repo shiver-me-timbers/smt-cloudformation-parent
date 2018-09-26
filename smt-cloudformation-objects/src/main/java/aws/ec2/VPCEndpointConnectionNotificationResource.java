@@ -41,12 +41,26 @@ public class VPCEndpointConnectionNotificationResource
     private VPCEndpointConnectionNotification properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCEndpointConnectionNotificationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCEndpointConnectionNotificationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCEndpointConnectionNotification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCEndpointConnectionNotification getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCEndpointConnectionNotificationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCEndpointConnectionNotification properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCEndpointConnectionNotificationResource
     @Override
     public VPCEndpointConnectionNotificationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCEndpointConnectionNotificationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

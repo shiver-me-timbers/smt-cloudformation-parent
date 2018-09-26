@@ -46,7 +46,6 @@ public class Volumes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html
      * 
      */
-    @JsonProperty("Host")
     public VolumesHost getHost() {
         return host;
     }
@@ -57,7 +56,6 @@ public class Volumes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html
      * 
      */
-    @JsonProperty("Host")
     public void setHost(VolumesHost host) {
         this.host = host;
     }
@@ -71,7 +69,6 @@ public class Volumes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumes.html#cfn-batch-jobdefinition-volumes-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -80,7 +77,6 @@ public class Volumes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumes.html#cfn-batch-jobdefinition-volumes-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

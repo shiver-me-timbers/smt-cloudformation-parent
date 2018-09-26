@@ -41,12 +41,26 @@ public class FileSystemResource
     private FileSystem properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FileSystemResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public FileSystemResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * FileSystem
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
      * 
      */
-    @JsonProperty("Properties")
     public FileSystem getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class FileSystemResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(FileSystem properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class FileSystemResource
     @Override
     public FileSystemResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public FileSystemResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

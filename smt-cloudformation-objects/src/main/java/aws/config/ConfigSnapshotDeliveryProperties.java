@@ -34,7 +34,6 @@ public class ConfigSnapshotDeliveryProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html#cfn-config-deliverychannel-configsnapshotdeliveryproperties-deliveryfrequency
      * 
      */
-    @JsonProperty("DeliveryFrequency")
     public CharSequence getDeliveryFrequency() {
         return deliveryFrequency;
     }
@@ -43,7 +42,6 @@ public class ConfigSnapshotDeliveryProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html#cfn-config-deliverychannel-configsnapshotdeliveryproperties-deliveryfrequency
      * 
      */
-    @JsonProperty("DeliveryFrequency")
     public void setDeliveryFrequency(CharSequence deliveryFrequency) {
         this.deliveryFrequency = deliveryFrequency;
     }

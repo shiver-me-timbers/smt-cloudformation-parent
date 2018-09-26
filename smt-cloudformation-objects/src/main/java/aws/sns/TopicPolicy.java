@@ -44,7 +44,6 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
@@ -53,7 +52,6 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
-    @JsonProperty("PolicyDocument")
     public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
@@ -67,7 +65,6 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
      */
-    @JsonProperty("Topics")
     public List<CharSequence> getTopics() {
         return topics;
     }
@@ -76,7 +73,6 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
      */
-    @JsonProperty("Topics")
     public void setTopics(List<CharSequence> topics) {
         this.topics = topics;
     }

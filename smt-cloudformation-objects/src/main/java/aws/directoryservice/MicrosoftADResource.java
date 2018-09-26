@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class MicrosoftADResource
     extends Resource
+    implements HasAttributes<MicrosoftADAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class MicrosoftADResource
     private MicrosoftAD properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MicrosoftADResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MicrosoftADResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * MicrosoftAD
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
      * 
      */
-    @JsonProperty("Properties")
     public MicrosoftAD getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class MicrosoftADResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(MicrosoftAD properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class MicrosoftADResource
     @Override
     public MicrosoftADResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MicrosoftADResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

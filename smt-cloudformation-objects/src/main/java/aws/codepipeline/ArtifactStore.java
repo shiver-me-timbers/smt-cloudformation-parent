@@ -54,7 +54,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
      * 
      */
-    @JsonProperty("EncryptionKey")
     public EncryptionKey getEncryptionKey() {
         return encryptionKey;
     }
@@ -65,7 +64,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
      * 
      */
-    @JsonProperty("EncryptionKey")
     public void setEncryptionKey(EncryptionKey encryptionKey) {
         this.encryptionKey = encryptionKey;
     }
@@ -79,7 +77,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
      * 
      */
-    @JsonProperty("Location")
     public CharSequence getLocation() {
         return location;
     }
@@ -88,7 +85,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
      * 
      */
-    @JsonProperty("Location")
     public void setLocation(CharSequence location) {
         this.location = location;
     }
@@ -102,7 +98,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -111,7 +106,6 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

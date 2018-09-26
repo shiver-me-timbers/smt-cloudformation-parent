@@ -34,7 +34,6 @@ public class VolumesHost {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html#cfn-batch-jobdefinition-volumeshost-sourcepath
      * 
      */
-    @JsonProperty("SourcePath")
     public CharSequence getSourcePath() {
         return sourcePath;
     }
@@ -43,7 +42,6 @@ public class VolumesHost {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html#cfn-batch-jobdefinition-volumeshost-sourcepath
      * 
      */
-    @JsonProperty("SourcePath")
     public void setSourcePath(CharSequence sourcePath) {
         this.sourcePath = sourcePath;
     }

@@ -149,7 +149,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html
      * 
      */
-    @JsonProperty("AlarmConfiguration")
     public AlarmConfiguration getAlarmConfiguration() {
         return alarmConfiguration;
     }
@@ -160,7 +159,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html
      * 
      */
-    @JsonProperty("AlarmConfiguration")
     public void setAlarmConfiguration(AlarmConfiguration alarmConfiguration) {
         this.alarmConfiguration = alarmConfiguration;
     }
@@ -174,7 +172,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -183,7 +180,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -199,7 +195,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html
      * 
      */
-    @JsonProperty("AutoRollbackConfiguration")
     public AutoRollbackConfiguration getAutoRollbackConfiguration() {
         return autoRollbackConfiguration;
     }
@@ -210,7 +205,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html
      * 
      */
-    @JsonProperty("AutoRollbackConfiguration")
     public void setAutoRollbackConfiguration(AutoRollbackConfiguration autoRollbackConfiguration) {
         this.autoRollbackConfiguration = autoRollbackConfiguration;
     }
@@ -224,7 +218,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autoscalinggroups
      * 
      */
-    @JsonProperty("AutoScalingGroups")
     public Set<CharSequence> getAutoScalingGroups() {
         return autoScalingGroups;
     }
@@ -233,7 +226,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autoscalinggroups
      * 
      */
-    @JsonProperty("AutoScalingGroups")
     public void setAutoScalingGroups(Set<CharSequence> autoScalingGroups) {
         this.autoScalingGroups = autoScalingGroups;
     }
@@ -249,7 +241,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html
      * 
      */
-    @JsonProperty("Deployment")
     public Deployment getDeployment() {
         return deployment;
     }
@@ -260,7 +251,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html
      * 
      */
-    @JsonProperty("Deployment")
     public void setDeployment(Deployment deployment) {
         this.deployment = deployment;
     }
@@ -274,7 +264,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentconfigname
      * 
      */
-    @JsonProperty("DeploymentConfigName")
     public CharSequence getDeploymentConfigName() {
         return deploymentConfigName;
     }
@@ -283,7 +272,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentconfigname
      * 
      */
-    @JsonProperty("DeploymentConfigName")
     public void setDeploymentConfigName(CharSequence deploymentConfigName) {
         this.deploymentConfigName = deploymentConfigName;
     }
@@ -297,7 +285,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentgroupname
      * 
      */
-    @JsonProperty("DeploymentGroupName")
     public CharSequence getDeploymentGroupName() {
         return deploymentGroupName;
     }
@@ -306,7 +293,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentgroupname
      * 
      */
-    @JsonProperty("DeploymentGroupName")
     public void setDeploymentGroupName(CharSequence deploymentGroupName) {
         this.deploymentGroupName = deploymentGroupName;
     }
@@ -322,7 +308,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html
      * 
      */
-    @JsonProperty("DeploymentStyle")
     public DeploymentStyle getDeploymentStyle() {
         return deploymentStyle;
     }
@@ -333,7 +318,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html
      * 
      */
-    @JsonProperty("DeploymentStyle")
     public void setDeploymentStyle(DeploymentStyle deploymentStyle) {
         this.deploymentStyle = deploymentStyle;
     }
@@ -347,7 +331,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters
      * 
      */
-    @JsonProperty("Ec2TagFilters")
     public Set<EC2TagFilter> getEc2TagFilters() {
         return ec2TagFilters;
     }
@@ -356,7 +339,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters
      * 
      */
-    @JsonProperty("Ec2TagFilters")
     public void setEc2TagFilters(Set<EC2TagFilter> ec2TagFilters) {
         this.ec2TagFilters = ec2TagFilters;
     }
@@ -372,7 +354,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html
      * 
      */
-    @JsonProperty("LoadBalancerInfo")
     public LoadBalancerInfo getLoadBalancerInfo() {
         return loadBalancerInfo;
     }
@@ -383,7 +364,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html
      * 
      */
-    @JsonProperty("LoadBalancerInfo")
     public void setLoadBalancerInfo(LoadBalancerInfo loadBalancerInfo) {
         this.loadBalancerInfo = loadBalancerInfo;
     }
@@ -397,7 +377,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters
      * 
      */
-    @JsonProperty("OnPremisesInstanceTagFilters")
     public Set<TagFilter> getOnPremisesInstanceTagFilters() {
         return onPremisesInstanceTagFilters;
     }
@@ -406,7 +385,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters
      * 
      */
-    @JsonProperty("OnPremisesInstanceTagFilters")
     public void setOnPremisesInstanceTagFilters(Set<TagFilter> onPremisesInstanceTagFilters) {
         this.onPremisesInstanceTagFilters = onPremisesInstanceTagFilters;
     }
@@ -420,7 +398,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn
      * 
      */
-    @JsonProperty("ServiceRoleArn")
     public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
@@ -429,7 +406,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn
      * 
      */
-    @JsonProperty("ServiceRoleArn")
     public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
@@ -443,7 +419,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-triggerconfigurations
      * 
      */
-    @JsonProperty("TriggerConfigurations")
     public Set<TriggerConfig> getTriggerConfigurations() {
         return triggerConfigurations;
     }
@@ -452,7 +427,6 @@ public class DeploymentGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-triggerconfigurations
      * 
      */
-    @JsonProperty("TriggerConfigurations")
     public void setTriggerConfigurations(Set<TriggerConfig> triggerConfigurations) {
         this.triggerConfigurations = triggerConfigurations;
     }

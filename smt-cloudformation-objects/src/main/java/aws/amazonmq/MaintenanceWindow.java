@@ -50,7 +50,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek
      * 
      */
-    @JsonProperty("DayOfWeek")
     public CharSequence getDayOfWeek() {
         return dayOfWeek;
     }
@@ -59,7 +58,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek
      * 
      */
-    @JsonProperty("DayOfWeek")
     public void setDayOfWeek(CharSequence dayOfWeek) {
         this.dayOfWeek = dayOfWeek;
     }
@@ -73,7 +71,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday
      * 
      */
-    @JsonProperty("TimeOfDay")
     public CharSequence getTimeOfDay() {
         return timeOfDay;
     }
@@ -82,7 +79,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday
      * 
      */
-    @JsonProperty("TimeOfDay")
     public void setTimeOfDay(CharSequence timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
@@ -96,7 +92,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone
      * 
      */
-    @JsonProperty("TimeZone")
     public CharSequence getTimeZone() {
         return timeZone;
     }
@@ -105,7 +100,6 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone
      * 
      */
-    @JsonProperty("TimeZone")
     public void setTimeZone(CharSequence timeZone) {
         this.timeZone = timeZone;
     }

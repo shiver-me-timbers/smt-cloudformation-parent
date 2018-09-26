@@ -42,7 +42,6 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-targetgrouparn
      * 
      */
-    @JsonProperty("TargetGroupArn")
     public CharSequence getTargetGroupArn() {
         return targetGroupArn;
     }
@@ -51,7 +50,6 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-targetgrouparn
      * 
      */
-    @JsonProperty("TargetGroupArn")
     public void setTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
     }
@@ -65,7 +63,6 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -74,7 +71,6 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

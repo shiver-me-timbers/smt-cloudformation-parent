@@ -41,12 +41,26 @@ public class SubscriptionResource
     private Subscription properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SubscriptionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SubscriptionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Subscription
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
      * 
      */
-    @JsonProperty("Properties")
     public Subscription getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SubscriptionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Subscription properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SubscriptionResource
     @Override
     public SubscriptionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SubscriptionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

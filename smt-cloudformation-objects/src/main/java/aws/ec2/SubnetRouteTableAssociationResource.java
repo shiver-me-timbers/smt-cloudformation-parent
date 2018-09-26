@@ -41,12 +41,26 @@ public class SubnetRouteTableAssociationResource
     private SubnetRouteTableAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SubnetRouteTableAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SubnetRouteTableAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SubnetRouteTableAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html
      * 
      */
-    @JsonProperty("Properties")
     public SubnetRouteTableAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class SubnetRouteTableAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SubnetRouteTableAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class SubnetRouteTableAssociationResource
     @Override
     public SubnetRouteTableAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SubnetRouteTableAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

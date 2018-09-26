@@ -50,7 +50,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
      * 
      */
-    @JsonProperty("CustomSuffix")
     public CharSequence getCustomSuffix() {
         return customSuffix;
     }
@@ -59,7 +58,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
      * 
      */
-    @JsonProperty("CustomSuffix")
     public void setCustomSuffix(CharSequence customSuffix) {
         this.customSuffix = customSuffix;
     }
@@ -73,7 +71,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -82,7 +79,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -96,7 +92,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
      * 
      */
-    @JsonProperty("AWSServiceName")
     public CharSequence getAWSServiceName() {
         return aWSServiceName;
     }
@@ -105,7 +100,6 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
      * 
      */
-    @JsonProperty("AWSServiceName")
     public void setAWSServiceName(CharSequence aWSServiceName) {
         this.aWSServiceName = aWSServiceName;
     }

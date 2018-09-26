@@ -42,7 +42,6 @@ public class LogStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -51,7 +50,6 @@ public class LogStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -65,7 +63,6 @@ public class LogStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-logstreamname
      * 
      */
-    @JsonProperty("LogStreamName")
     public CharSequence getLogStreamName() {
         return logStreamName;
     }
@@ -74,7 +71,6 @@ public class LogStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-logstream.html#cfn-logs-logstream-logstreamname
      * 
      */
-    @JsonProperty("LogStreamName")
     public void setLogStreamName(CharSequence logStreamName) {
         this.logStreamName = logStreamName;
     }

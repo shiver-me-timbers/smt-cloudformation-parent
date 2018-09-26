@@ -38,7 +38,6 @@ public class LifecycleConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html#cfn-s3-bucket-lifecycleconfig-rules
      * 
      */
-    @JsonProperty("Rules")
     public Set<ReplicationRule> getRules() {
         return rules;
     }
@@ -47,7 +46,6 @@ public class LifecycleConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html#cfn-s3-bucket-lifecycleconfig-rules
      * 
      */
-    @JsonProperty("Rules")
     public void setRules(Set<ReplicationRule> rules) {
         this.rules = rules;
     }

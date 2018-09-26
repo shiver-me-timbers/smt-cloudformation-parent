@@ -42,7 +42,6 @@ public class ThingPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-principal
      * 
      */
-    @JsonProperty("Principal")
     public CharSequence getPrincipal() {
         return principal;
     }
@@ -51,7 +50,6 @@ public class ThingPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-principal
      * 
      */
-    @JsonProperty("Principal")
     public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }
@@ -65,7 +63,6 @@ public class ThingPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-thingname
      * 
      */
-    @JsonProperty("ThingName")
     public CharSequence getThingName() {
         return thingName;
     }
@@ -74,7 +71,6 @@ public class ThingPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-thingname
      * 
      */
-    @JsonProperty("ThingName")
     public void setThingName(CharSequence thingName) {
         this.thingName = thingName;
     }

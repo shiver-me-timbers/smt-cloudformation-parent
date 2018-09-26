@@ -41,12 +41,26 @@ public class PlacementGroupResource
     private PlacementGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PlacementGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PlacementGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * PlacementGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public PlacementGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PlacementGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-placementgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(PlacementGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PlacementGroupResource
     @Override
     public PlacementGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PlacementGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

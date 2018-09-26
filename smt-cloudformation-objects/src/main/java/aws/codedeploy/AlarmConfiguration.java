@@ -54,7 +54,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
      * 
      */
-    @JsonProperty("Alarms")
     public Set<Alarm> getAlarms() {
         return alarms;
     }
@@ -63,7 +62,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
      * 
      */
-    @JsonProperty("Alarms")
     public void setAlarms(Set<Alarm> alarms) {
         this.alarms = alarms;
     }
@@ -77,7 +75,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -86,7 +83,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -100,7 +96,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
      * 
      */
-    @JsonProperty("IgnorePollAlarmFailure")
     public Boolean getIgnorePollAlarmFailure() {
         return ignorePollAlarmFailure;
     }
@@ -109,7 +104,6 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
      * 
      */
-    @JsonProperty("IgnorePollAlarmFailure")
     public void setIgnorePollAlarmFailure(Boolean ignorePollAlarmFailure) {
         this.ignorePollAlarmFailure = ignorePollAlarmFailure;
     }

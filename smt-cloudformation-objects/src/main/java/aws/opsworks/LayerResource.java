@@ -41,12 +41,26 @@ public class LayerResource
     private Layer properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public LayerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public LayerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Layer
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
      * 
      */
-    @JsonProperty("Properties")
     public Layer getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class LayerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Layer properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class LayerResource
     @Override
     public LayerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public LayerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

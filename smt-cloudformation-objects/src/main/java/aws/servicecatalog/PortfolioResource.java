@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class PortfolioResource
     extends Resource
+    implements HasAttributes<PortfolioAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class PortfolioResource
     private Portfolio properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PortfolioResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PortfolioResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Portfolio
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
      * 
      */
-    @JsonProperty("Properties")
     public Portfolio getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class PortfolioResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Portfolio properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class PortfolioResource
     @Override
     public PortfolioResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PortfolioResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

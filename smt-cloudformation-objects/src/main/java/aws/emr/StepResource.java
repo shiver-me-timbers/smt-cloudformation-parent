@@ -41,12 +41,26 @@ public class StepResource
     private Step properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public StepResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public StepResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Step
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
      * 
      */
-    @JsonProperty("Properties")
     public Step getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class StepResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Step properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class StepResource
     @Override
     public StepResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public StepResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

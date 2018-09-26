@@ -41,12 +41,26 @@ public class InstanceFleetConfigResource
     private InstanceFleetConfig properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public InstanceFleetConfigResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public InstanceFleetConfigResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * InstanceFleetConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public InstanceFleetConfig getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class InstanceFleetConfigResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(InstanceFleetConfig properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class InstanceFleetConfigResource
     @Override
     public InstanceFleetConfigResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public InstanceFleetConfigResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

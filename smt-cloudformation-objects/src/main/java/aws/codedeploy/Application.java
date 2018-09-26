@@ -42,7 +42,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html#cfn-codedeploy-application-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -51,7 +50,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html#cfn-codedeploy-application-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -65,7 +63,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html#cfn-codedeploy-application-computeplatform
      * 
      */
-    @JsonProperty("ComputePlatform")
     public CharSequence getComputePlatform() {
         return computePlatform;
     }
@@ -74,7 +71,6 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-application.html#cfn-codedeploy-application-computeplatform
      * 
      */
-    @JsonProperty("ComputePlatform")
     public void setComputePlatform(CharSequence computePlatform) {
         this.computePlatform = computePlatform;
     }

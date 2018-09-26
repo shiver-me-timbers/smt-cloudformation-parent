@@ -50,7 +50,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource
      * 
      */
-    @JsonProperty("EventSource")
     public CharSequence getEventSource() {
         return eventSource;
     }
@@ -59,7 +58,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource
      * 
      */
-    @JsonProperty("EventSource")
     public void setEventSource(CharSequence eventSource) {
         this.eventSource = eventSource;
     }
@@ -73,7 +71,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency
      * 
      */
-    @JsonProperty("MaximumExecutionFrequency")
     public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
@@ -82,7 +79,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency
      * 
      */
-    @JsonProperty("MaximumExecutionFrequency")
     public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
@@ -96,7 +92,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype
      * 
      */
-    @JsonProperty("MessageType")
     public CharSequence getMessageType() {
         return messageType;
     }
@@ -105,7 +100,6 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype
      * 
      */
-    @JsonProperty("MessageType")
     public void setMessageType(CharSequence messageType) {
         this.messageType = messageType;
     }

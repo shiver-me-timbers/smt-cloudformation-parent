@@ -46,7 +46,6 @@ public class RuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field
      * 
      */
-    @JsonProperty("Field")
     public CharSequence getField() {
         return field;
     }
@@ -55,7 +54,6 @@ public class RuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field
      * 
      */
-    @JsonProperty("Field")
     public void setField(CharSequence field) {
         this.field = field;
     }
@@ -69,7 +67,6 @@ public class RuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values
      * 
      */
-    @JsonProperty("Values")
     public Set<CharSequence> getValues() {
         return values;
     }
@@ -78,7 +75,6 @@ public class RuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-values
      * 
      */
-    @JsonProperty("Values")
     public void setValues(Set<CharSequence> values) {
         this.values = values;
     }

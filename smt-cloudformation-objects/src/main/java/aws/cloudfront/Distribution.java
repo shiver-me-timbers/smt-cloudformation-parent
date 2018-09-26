@@ -49,7 +49,6 @@ public class Distribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html
      * 
      */
-    @JsonProperty("DistributionConfig")
     public DistributionConfig getDistributionConfig() {
         return distributionConfig;
     }
@@ -60,7 +59,6 @@ public class Distribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html
      * 
      */
-    @JsonProperty("DistributionConfig")
     public void setDistributionConfig(DistributionConfig distributionConfig) {
         this.distributionConfig = distributionConfig;
     }
@@ -74,7 +72,6 @@ public class Distribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html#cfn-cloudfront-distribution-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -83,7 +80,6 @@ public class Distribution {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html#cfn-cloudfront-distribution-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

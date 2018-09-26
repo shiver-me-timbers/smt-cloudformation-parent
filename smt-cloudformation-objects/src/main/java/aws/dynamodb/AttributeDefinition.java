@@ -42,7 +42,6 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public CharSequence getAttributeName() {
         return attributeName;
     }
@@ -51,7 +50,6 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
@@ -65,7 +63,6 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
      * 
      */
-    @JsonProperty("AttributeType")
     public CharSequence getAttributeType() {
         return attributeType;
     }
@@ -74,7 +71,6 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
      * 
      */
-    @JsonProperty("AttributeType")
     public void setAttributeType(CharSequence attributeType) {
         this.attributeType = attributeType;
     }

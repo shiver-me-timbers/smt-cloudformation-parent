@@ -38,7 +38,6 @@ public class InstanceAssociationOutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html
      * 
      */
-    @JsonProperty("S3Location")
     public S3OutputLocation getS3Location() {
         return s3Location;
     }
@@ -49,7 +48,6 @@ public class InstanceAssociationOutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html
      * 
      */
-    @JsonProperty("S3Location")
     public void setS3Location(S3OutputLocation s3Location) {
         this.s3Location = s3Location;
     }

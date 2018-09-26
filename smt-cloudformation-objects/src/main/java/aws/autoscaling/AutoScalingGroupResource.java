@@ -41,12 +41,26 @@ public class AutoScalingGroupResource
     private AutoScalingGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AutoScalingGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AutoScalingGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * AutoScalingGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
      * 
      */
-    @JsonProperty("Properties")
     public AutoScalingGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AutoScalingGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(AutoScalingGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AutoScalingGroupResource
     @Override
     public AutoScalingGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AutoScalingGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

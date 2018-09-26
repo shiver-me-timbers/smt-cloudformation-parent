@@ -34,7 +34,6 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html#cfn-iot-topicrule-lambdaaction-functionarn
      * 
      */
-    @JsonProperty("FunctionArn")
     public CharSequence getFunctionArn() {
         return functionArn;
     }
@@ -43,7 +42,6 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html#cfn-iot-topicrule-lambdaaction-functionarn
      * 
      */
-    @JsonProperty("FunctionArn")
     public void setFunctionArn(CharSequence functionArn) {
         this.functionArn = functionArn;
     }

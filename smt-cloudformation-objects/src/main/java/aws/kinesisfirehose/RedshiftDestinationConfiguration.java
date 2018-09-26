@@ -100,7 +100,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
-    @JsonProperty("CloudWatchLoggingOptions")
     public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
@@ -111,7 +110,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
-    @JsonProperty("CloudWatchLoggingOptions")
     public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
@@ -125,7 +123,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-clusterjdbcurl
      * 
      */
-    @JsonProperty("ClusterJDBCURL")
     public CharSequence getClusterJDBCURL() {
         return clusterJDBCURL;
     }
@@ -134,7 +131,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-clusterjdbcurl
      * 
      */
-    @JsonProperty("ClusterJDBCURL")
     public void setClusterJDBCURL(CharSequence clusterJDBCURL) {
         this.clusterJDBCURL = clusterJDBCURL;
     }
@@ -150,7 +146,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html
      * 
      */
-    @JsonProperty("CopyCommand")
     public CopyCommand getCopyCommand() {
         return copyCommand;
     }
@@ -161,7 +156,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html
      * 
      */
-    @JsonProperty("CopyCommand")
     public void setCopyCommand(CopyCommand copyCommand) {
         this.copyCommand = copyCommand;
     }
@@ -175,7 +169,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-password
      * 
      */
-    @JsonProperty("Password")
     public CharSequence getPassword() {
         return password;
     }
@@ -184,7 +177,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-password
      * 
      */
-    @JsonProperty("Password")
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -200,7 +192,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
-    @JsonProperty("ProcessingConfiguration")
     public ProcessingConfiguration getProcessingConfiguration() {
         return processingConfiguration;
     }
@@ -211,7 +202,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
-    @JsonProperty("ProcessingConfiguration")
     public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
@@ -225,7 +215,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -234,7 +223,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
@@ -250,7 +238,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
-    @JsonProperty("S3Configuration")
     public S3DestinationConfiguration getS3Configuration() {
         return s3Configuration;
     }
@@ -261,7 +248,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
-    @JsonProperty("S3Configuration")
     public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
@@ -275,7 +261,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username
      * 
      */
-    @JsonProperty("Username")
     public CharSequence getUsername() {
         return username;
     }
@@ -284,7 +269,6 @@ public class RedshiftDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username
      * 
      */
-    @JsonProperty("Username")
     public void setUsername(CharSequence username) {
         this.username = username;
     }

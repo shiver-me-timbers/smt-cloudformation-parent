@@ -42,7 +42,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcid
      * 
      */
-    @JsonProperty("VPCId")
     public CharSequence getVPCId() {
         return vPCId;
     }
@@ -51,7 +50,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcid
      * 
      */
-    @JsonProperty("VPCId")
     public void setVPCId(CharSequence vPCId) {
         this.vPCId = vPCId;
     }
@@ -65,7 +63,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcregion
      * 
      */
-    @JsonProperty("VPCRegion")
     public CharSequence getVPCRegion() {
         return vPCRegion;
     }
@@ -74,7 +71,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html#cfn-route53-hostedzone-hostedzonevpcs-vpcregion
      * 
      */
-    @JsonProperty("VPCRegion")
     public void setVPCRegion(CharSequence vPCRegion) {
         this.vPCRegion = vPCRegion;
     }

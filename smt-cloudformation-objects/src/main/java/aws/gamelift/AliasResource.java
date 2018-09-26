@@ -41,12 +41,26 @@ public class AliasResource
     private Alias properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AliasResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AliasResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Alias
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html
      * 
      */
-    @JsonProperty("Properties")
     public Alias getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AliasResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Alias properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AliasResource
     @Override
     public AliasResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AliasResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

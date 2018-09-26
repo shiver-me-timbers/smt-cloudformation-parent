@@ -51,7 +51,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels
      * 
      */
-    @JsonProperty("ResponseModels")
     public Map<String, String> getResponseModels() {
         return responseModels;
     }
@@ -60,7 +59,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels
      * 
      */
-    @JsonProperty("ResponseModels")
     public void setResponseModels(Map<String, String> responseModels) {
         this.responseModels = responseModels;
     }
@@ -74,7 +72,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters
      * 
      */
-    @JsonProperty("ResponseParameters")
     public Map<String, Boolean> getResponseParameters() {
         return responseParameters;
     }
@@ -83,7 +80,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters
      * 
      */
-    @JsonProperty("ResponseParameters")
     public void setResponseParameters(Map<String, Boolean> responseParameters) {
         this.responseParameters = responseParameters;
     }
@@ -97,7 +93,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -106,7 +101,6 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }

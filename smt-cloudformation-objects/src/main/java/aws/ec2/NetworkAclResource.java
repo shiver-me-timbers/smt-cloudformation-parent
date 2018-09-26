@@ -41,12 +41,26 @@ public class NetworkAclResource
     private NetworkAcl properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NetworkAclResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NetworkAclResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NetworkAcl
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html
      * 
      */
-    @JsonProperty("Properties")
     public NetworkAcl getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NetworkAclResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NetworkAcl properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NetworkAclResource
     @Override
     public NetworkAclResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NetworkAclResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -44,7 +44,6 @@ public class VPNGatewayRoutePropagation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-routetableids
      * 
      */
-    @JsonProperty("RouteTableIds")
     public List<CharSequence> getRouteTableIds() {
         return routeTableIds;
     }
@@ -53,7 +52,6 @@ public class VPNGatewayRoutePropagation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-routetableids
      * 
      */
-    @JsonProperty("RouteTableIds")
     public void setRouteTableIds(List<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
     }
@@ -67,7 +65,6 @@ public class VPNGatewayRoutePropagation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
@@ -76,7 +73,6 @@ public class VPNGatewayRoutePropagation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gatewayrouteprop.html#cfn-ec2-vpngatewayrouteprop-vpngatewayid
      * 
      */
-    @JsonProperty("VpnGatewayId")
     public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }

@@ -60,7 +60,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
@@ -69,7 +68,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
@@ -85,7 +83,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -96,7 +93,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
-    @JsonProperty("FieldToMatch")
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
@@ -110,7 +106,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-size
      * 
      */
-    @JsonProperty("Size")
     public Integer getSize() {
         return size;
     }
@@ -119,7 +114,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-size
      * 
      */
-    @JsonProperty("Size")
     public void setSize(Integer size) {
         this.size = size;
     }
@@ -133,7 +127,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -142,7 +135,6 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-texttransformation
      * 
      */
-    @JsonProperty("TextTransformation")
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }

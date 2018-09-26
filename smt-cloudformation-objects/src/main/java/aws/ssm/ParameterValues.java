@@ -38,7 +38,6 @@ public class ParameterValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues
      * 
      */
-    @JsonProperty("ParameterValues")
     public Set<CharSequence> getParameterValues() {
         return parameterValues;
     }
@@ -47,7 +46,6 @@ public class ParameterValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues
      * 
      */
-    @JsonProperty("ParameterValues")
     public void setParameterValues(Set<CharSequence> parameterValues) {
         this.parameterValues = parameterValues;
     }

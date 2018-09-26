@@ -188,7 +188,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -197,7 +196,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }
@@ -211,7 +209,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips
      * 
      */
-    @JsonProperty("AutoAssignElasticIps")
     public Boolean getAutoAssignElasticIps() {
         return autoAssignElasticIps;
     }
@@ -220,7 +217,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips
      * 
      */
-    @JsonProperty("AutoAssignElasticIps")
     public void setAutoAssignElasticIps(Boolean autoAssignElasticIps) {
         this.autoAssignElasticIps = autoAssignElasticIps;
     }
@@ -234,7 +230,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips
      * 
      */
-    @JsonProperty("AutoAssignPublicIps")
     public Boolean getAutoAssignPublicIps() {
         return autoAssignPublicIps;
     }
@@ -243,7 +238,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips
      * 
      */
-    @JsonProperty("AutoAssignPublicIps")
     public void setAutoAssignPublicIps(Boolean autoAssignPublicIps) {
         this.autoAssignPublicIps = autoAssignPublicIps;
     }
@@ -257,7 +251,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn
      * 
      */
-    @JsonProperty("CustomInstanceProfileArn")
     public CharSequence getCustomInstanceProfileArn() {
         return customInstanceProfileArn;
     }
@@ -266,7 +259,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn
      * 
      */
-    @JsonProperty("CustomInstanceProfileArn")
     public void setCustomInstanceProfileArn(CharSequence customInstanceProfileArn) {
         this.customInstanceProfileArn = customInstanceProfileArn;
     }
@@ -280,7 +272,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
-    @JsonProperty("CustomJson")
     public CustomJson getCustomJson() {
         return customJson;
     }
@@ -289,7 +280,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
-    @JsonProperty("CustomJson")
     public void setCustomJson(CustomJson customJson) {
         this.customJson = customJson;
     }
@@ -305,7 +295,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
-    @JsonProperty("CustomRecipes")
     public Recipes getCustomRecipes() {
         return customRecipes;
     }
@@ -316,7 +305,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
-    @JsonProperty("CustomRecipes")
     public void setCustomRecipes(Recipes customRecipes) {
         this.customRecipes = customRecipes;
     }
@@ -330,7 +318,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
      */
-    @JsonProperty("CustomSecurityGroupIds")
     public List<CharSequence> getCustomSecurityGroupIds() {
         return customSecurityGroupIds;
     }
@@ -339,7 +326,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
      */
-    @JsonProperty("CustomSecurityGroupIds")
     public void setCustomSecurityGroupIds(List<CharSequence> customSecurityGroupIds) {
         this.customSecurityGroupIds = customSecurityGroupIds;
     }
@@ -353,7 +339,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing
      * 
      */
-    @JsonProperty("EnableAutoHealing")
     public Boolean getEnableAutoHealing() {
         return enableAutoHealing;
     }
@@ -362,7 +347,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing
      * 
      */
-    @JsonProperty("EnableAutoHealing")
     public void setEnableAutoHealing(Boolean enableAutoHealing) {
         this.enableAutoHealing = enableAutoHealing;
     }
@@ -376,7 +360,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot
      * 
      */
-    @JsonProperty("InstallUpdatesOnBoot")
     public Boolean getInstallUpdatesOnBoot() {
         return installUpdatesOnBoot;
     }
@@ -385,7 +368,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot
      * 
      */
-    @JsonProperty("InstallUpdatesOnBoot")
     public void setInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
     }
@@ -401,7 +383,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
-    @JsonProperty("LifecycleEventConfiguration")
     public LifecycleEventConfiguration getLifecycleEventConfiguration() {
         return lifecycleEventConfiguration;
     }
@@ -412,7 +393,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
-    @JsonProperty("LifecycleEventConfiguration")
     public void setLifecycleEventConfiguration(LifecycleEventConfiguration lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
     }
@@ -428,7 +408,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
-    @JsonProperty("LoadBasedAutoScaling")
     public LoadBasedAutoScaling getLoadBasedAutoScaling() {
         return loadBasedAutoScaling;
     }
@@ -439,7 +418,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
-    @JsonProperty("LoadBasedAutoScaling")
     public void setLoadBasedAutoScaling(LoadBasedAutoScaling loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
     }
@@ -453,7 +431,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -462,7 +439,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -476,7 +452,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages
      * 
      */
-    @JsonProperty("Packages")
     public List<CharSequence> getPackages() {
         return packages;
     }
@@ -485,7 +460,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages
      * 
      */
-    @JsonProperty("Packages")
     public void setPackages(List<CharSequence> packages) {
         this.packages = packages;
     }
@@ -499,7 +473,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname
      * 
      */
-    @JsonProperty("Shortname")
     public CharSequence getShortname() {
         return shortname;
     }
@@ -508,7 +481,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname
      * 
      */
-    @JsonProperty("Shortname")
     public void setShortname(CharSequence shortname) {
         this.shortname = shortname;
     }
@@ -522,7 +494,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid
      * 
      */
-    @JsonProperty("StackId")
     public CharSequence getStackId() {
         return stackId;
     }
@@ -531,7 +502,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid
      * 
      */
-    @JsonProperty("StackId")
     public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
@@ -545,7 +515,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -554,7 +523,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -568,7 +536,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -577,7 +544,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -591,7 +557,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances
      * 
      */
-    @JsonProperty("UseEbsOptimizedInstances")
     public Boolean getUseEbsOptimizedInstances() {
         return useEbsOptimizedInstances;
     }
@@ -600,7 +565,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances
      * 
      */
-    @JsonProperty("UseEbsOptimizedInstances")
     public void setUseEbsOptimizedInstances(Boolean useEbsOptimizedInstances) {
         this.useEbsOptimizedInstances = useEbsOptimizedInstances;
     }
@@ -614,7 +578,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations
      * 
      */
-    @JsonProperty("VolumeConfigurations")
     public List<VolumeConfiguration> getVolumeConfigurations() {
         return volumeConfigurations;
     }
@@ -623,7 +586,6 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations
      * 
      */
-    @JsonProperty("VolumeConfigurations")
     public void setVolumeConfigurations(List<VolumeConfiguration> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
     }

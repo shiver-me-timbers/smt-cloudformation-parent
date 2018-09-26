@@ -42,7 +42,6 @@ public class SourceBundle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public CharSequence getS3Bucket() {
         return s3Bucket;
     }
@@ -51,7 +50,6 @@ public class SourceBundle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
@@ -65,7 +63,6 @@ public class SourceBundle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3key
      * 
      */
-    @JsonProperty("S3Key")
     public CharSequence getS3Key() {
         return s3Key;
     }
@@ -74,7 +71,6 @@ public class SourceBundle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3key
      * 
      */
-    @JsonProperty("S3Key")
     public void setS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
     }

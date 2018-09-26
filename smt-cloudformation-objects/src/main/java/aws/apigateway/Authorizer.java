@@ -110,7 +110,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authtype
      * 
      */
-    @JsonProperty("AuthType")
     public CharSequence getAuthType() {
         return authType;
     }
@@ -119,7 +118,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authtype
      * 
      */
-    @JsonProperty("AuthType")
     public void setAuthType(CharSequence authType) {
         this.authType = authType;
     }
@@ -133,7 +131,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizercredentials
      * 
      */
-    @JsonProperty("AuthorizerCredentials")
     public CharSequence getAuthorizerCredentials() {
         return authorizerCredentials;
     }
@@ -142,7 +139,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizercredentials
      * 
      */
-    @JsonProperty("AuthorizerCredentials")
     public void setAuthorizerCredentials(CharSequence authorizerCredentials) {
         this.authorizerCredentials = authorizerCredentials;
     }
@@ -156,7 +152,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizerresultttlinseconds
      * 
      */
-    @JsonProperty("AuthorizerResultTtlInSeconds")
     public Integer getAuthorizerResultTtlInSeconds() {
         return authorizerResultTtlInSeconds;
     }
@@ -165,7 +160,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizerresultttlinseconds
      * 
      */
-    @JsonProperty("AuthorizerResultTtlInSeconds")
     public void setAuthorizerResultTtlInSeconds(Integer authorizerResultTtlInSeconds) {
         this.authorizerResultTtlInSeconds = authorizerResultTtlInSeconds;
     }
@@ -179,7 +173,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizeruri
      * 
      */
-    @JsonProperty("AuthorizerUri")
     public CharSequence getAuthorizerUri() {
         return authorizerUri;
     }
@@ -188,7 +181,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizeruri
      * 
      */
-    @JsonProperty("AuthorizerUri")
     public void setAuthorizerUri(CharSequence authorizerUri) {
         this.authorizerUri = authorizerUri;
     }
@@ -202,7 +194,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identitysource
      * 
      */
-    @JsonProperty("IdentitySource")
     public CharSequence getIdentitySource() {
         return identitySource;
     }
@@ -211,7 +202,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identitysource
      * 
      */
-    @JsonProperty("IdentitySource")
     public void setIdentitySource(CharSequence identitySource) {
         this.identitySource = identitySource;
     }
@@ -225,7 +215,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identityvalidationexpression
      * 
      */
-    @JsonProperty("IdentityValidationExpression")
     public CharSequence getIdentityValidationExpression() {
         return identityValidationExpression;
     }
@@ -234,7 +223,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identityvalidationexpression
      * 
      */
-    @JsonProperty("IdentityValidationExpression")
     public void setIdentityValidationExpression(CharSequence identityValidationExpression) {
         this.identityValidationExpression = identityValidationExpression;
     }
@@ -248,7 +236,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -257,7 +244,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -271,7 +257,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-providerarns
      * 
      */
-    @JsonProperty("ProviderARNs")
     public Set<CharSequence> getProviderARNs() {
         return providerARNs;
     }
@@ -280,7 +265,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-providerarns
      * 
      */
-    @JsonProperty("ProviderARNs")
     public void setProviderARNs(Set<CharSequence> providerARNs) {
         this.providerARNs = providerARNs;
     }
@@ -294,7 +278,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -303,7 +286,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -317,7 +299,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -326,7 +307,6 @@ public class Authorizer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

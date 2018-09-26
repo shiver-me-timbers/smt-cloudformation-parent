@@ -41,12 +41,26 @@ public class AggregationAuthorizationResource
     private AggregationAuthorization properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AggregationAuthorizationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AggregationAuthorizationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * AggregationAuthorization
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html
      * 
      */
-    @JsonProperty("Properties")
     public AggregationAuthorization getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AggregationAuthorizationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(AggregationAuthorization properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AggregationAuthorizationResource
     @Override
     public AggregationAuthorizationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AggregationAuthorizationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

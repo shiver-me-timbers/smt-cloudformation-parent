@@ -82,7 +82,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy
      * 
      */
-    @JsonProperty("DeliveryPolicy")
     public DeliveryPolicy getDeliveryPolicy() {
         return deliveryPolicy;
     }
@@ -91,7 +90,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy
      * 
      */
-    @JsonProperty("DeliveryPolicy")
     public void setDeliveryPolicy(DeliveryPolicy deliveryPolicy) {
         this.deliveryPolicy = deliveryPolicy;
     }
@@ -105,7 +103,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public CharSequence getEndpoint() {
         return endpoint;
     }
@@ -114,7 +111,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-endpoint
      * 
      */
-    @JsonProperty("Endpoint")
     public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }
@@ -128,7 +124,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy
      * 
      */
-    @JsonProperty("FilterPolicy")
     public FilterPolicy getFilterPolicy() {
         return filterPolicy;
     }
@@ -137,7 +132,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy
      * 
      */
-    @JsonProperty("FilterPolicy")
     public void setFilterPolicy(FilterPolicy filterPolicy) {
         this.filterPolicy = filterPolicy;
     }
@@ -151,7 +145,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -160,7 +153,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -174,7 +166,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery
      * 
      */
-    @JsonProperty("RawMessageDelivery")
     public Boolean getRawMessageDelivery() {
         return rawMessageDelivery;
     }
@@ -183,7 +174,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-rawmessagedelivery
      * 
      */
-    @JsonProperty("RawMessageDelivery")
     public void setRawMessageDelivery(Boolean rawMessageDelivery) {
         this.rawMessageDelivery = rawMessageDelivery;
     }
@@ -197,7 +187,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region
      * 
      */
-    @JsonProperty("Region")
     public CharSequence getRegion() {
         return region;
     }
@@ -206,7 +195,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-region
      * 
      */
-    @JsonProperty("Region")
     public void setRegion(CharSequence region) {
         this.region = region;
     }
@@ -220,7 +208,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#topicarn
      * 
      */
-    @JsonProperty("TopicArn")
     public CharSequence getTopicArn() {
         return topicArn;
     }
@@ -229,7 +216,6 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#topicarn
      * 
      */
-    @JsonProperty("TopicArn")
     public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }

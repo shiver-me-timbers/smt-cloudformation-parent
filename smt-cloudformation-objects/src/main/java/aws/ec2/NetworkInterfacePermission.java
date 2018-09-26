@@ -50,7 +50,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid
      * 
      */
-    @JsonProperty("AwsAccountId")
     public CharSequence getAwsAccountId() {
         return awsAccountId;
     }
@@ -59,7 +58,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid
      * 
      */
-    @JsonProperty("AwsAccountId")
     public void setAwsAccountId(CharSequence awsAccountId) {
         this.awsAccountId = awsAccountId;
     }
@@ -73,7 +71,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -82,7 +79,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid
      * 
      */
-    @JsonProperty("NetworkInterfaceId")
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
@@ -96,7 +92,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission
      * 
      */
-    @JsonProperty("Permission")
     public CharSequence getPermission() {
         return permission;
     }
@@ -105,7 +100,6 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission
      * 
      */
-    @JsonProperty("Permission")
     public void setPermission(CharSequence permission) {
         this.permission = permission;
     }

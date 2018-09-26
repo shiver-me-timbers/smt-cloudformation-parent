@@ -63,7 +63,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-args
      * 
      */
-    @JsonProperty("Args")
     public Set<CharSequence> getArgs() {
         return args;
     }
@@ -72,7 +71,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-args
      * 
      */
-    @JsonProperty("Args")
     public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
@@ -86,7 +84,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-jar
      * 
      */
-    @JsonProperty("Jar")
     public CharSequence getJar() {
         return jar;
     }
@@ -95,7 +92,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-jar
      * 
      */
-    @JsonProperty("Jar")
     public void setJar(CharSequence jar) {
         this.jar = jar;
     }
@@ -109,7 +105,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-mainclass
      * 
      */
-    @JsonProperty("MainClass")
     public CharSequence getMainClass() {
         return mainClass;
     }
@@ -118,7 +113,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-mainclass
      * 
      */
-    @JsonProperty("MainClass")
     public void setMainClass(CharSequence mainClass) {
         this.mainClass = mainClass;
     }
@@ -132,7 +126,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-stepproperties
      * 
      */
-    @JsonProperty("StepProperties")
     public Set<KeyValue> getStepProperties() {
         return stepProperties;
     }
@@ -141,7 +134,6 @@ public class HadoopJarStepConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-stepproperties
      * 
      */
-    @JsonProperty("StepProperties")
     public void setStepProperties(Set<KeyValue> stepProperties) {
         this.stepProperties = stepProperties;
     }

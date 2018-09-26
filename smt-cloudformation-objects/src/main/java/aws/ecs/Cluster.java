@@ -34,7 +34,6 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
      * 
      */
-    @JsonProperty("ClusterName")
     public CharSequence getClusterName() {
         return clusterName;
     }
@@ -43,7 +42,6 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-cluster.html#cfn-ecs-cluster-clustername
      * 
      */
-    @JsonProperty("ClusterName")
     public void setClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
     }

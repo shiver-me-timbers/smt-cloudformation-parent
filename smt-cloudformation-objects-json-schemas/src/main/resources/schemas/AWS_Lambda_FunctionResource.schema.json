@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_FunctionResource.schema.json",
+  "title" : "FunctionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.lambda.FunctionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<FunctionAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Lambda_Function.schema.json"
+    }
+  }
+}

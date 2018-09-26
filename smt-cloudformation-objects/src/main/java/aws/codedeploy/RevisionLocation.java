@@ -56,7 +56,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html
      * 
      */
-    @JsonProperty("GitHubLocation")
     public GitHubLocation getGitHubLocation() {
         return gitHubLocation;
     }
@@ -67,7 +66,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html
      * 
      */
-    @JsonProperty("GitHubLocation")
     public void setGitHubLocation(GitHubLocation gitHubLocation) {
         this.gitHubLocation = gitHubLocation;
     }
@@ -81,7 +79,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype
      * 
      */
-    @JsonProperty("RevisionType")
     public CharSequence getRevisionType() {
         return revisionType;
     }
@@ -90,7 +87,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype
      * 
      */
-    @JsonProperty("RevisionType")
     public void setRevisionType(CharSequence revisionType) {
         this.revisionType = revisionType;
     }
@@ -106,7 +102,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html
      * 
      */
-    @JsonProperty("S3Location")
     public S3Location getS3Location() {
         return s3Location;
     }
@@ -117,7 +112,6 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html
      * 
      */
-    @JsonProperty("S3Location")
     public void setS3Location(S3Location s3Location) {
         this.s3Location = s3Location;
     }

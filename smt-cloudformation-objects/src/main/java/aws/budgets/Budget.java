@@ -46,7 +46,6 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
-    @JsonProperty("NotificationsWithSubscribers")
     public List<NotificationWithSubscribers> getNotificationsWithSubscribers() {
         return notificationsWithSubscribers;
     }
@@ -55,7 +54,6 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
-    @JsonProperty("NotificationsWithSubscribers")
     public void setNotificationsWithSubscribers(List<NotificationWithSubscribers> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
     }
@@ -71,7 +69,6 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
-    @JsonProperty("Budget")
     public BudgetData getBudget() {
         return budget;
     }
@@ -82,7 +79,6 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
-    @JsonProperty("Budget")
     public void setBudget(BudgetData budget) {
         this.budget = budget;
     }

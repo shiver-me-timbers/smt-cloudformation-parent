@@ -38,7 +38,6 @@ public class ScalingTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html
      * 
      */
-    @JsonProperty("CloudWatchAlarmDefinition")
     public CloudWatchAlarmDefinition getCloudWatchAlarmDefinition() {
         return cloudWatchAlarmDefinition;
     }
@@ -49,7 +48,6 @@ public class ScalingTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html
      * 
      */
-    @JsonProperty("CloudWatchAlarmDefinition")
     public void setCloudWatchAlarmDefinition(CloudWatchAlarmDefinition cloudWatchAlarmDefinition) {
         this.cloudWatchAlarmDefinition = cloudWatchAlarmDefinition;
     }

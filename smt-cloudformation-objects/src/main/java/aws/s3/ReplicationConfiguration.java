@@ -46,7 +46,6 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
      * 
      */
-    @JsonProperty("Role")
     public CharSequence getRole() {
         return role;
     }
@@ -55,7 +54,6 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
      * 
      */
-    @JsonProperty("Role")
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -69,7 +67,6 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules
      * 
      */
-    @JsonProperty("Rules")
     public Set<ReplicationRule> getRules() {
         return rules;
     }
@@ -78,7 +75,6 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules
      * 
      */
-    @JsonProperty("Rules")
     public void setRules(Set<ReplicationRule> rules) {
         this.rules = rules;
     }

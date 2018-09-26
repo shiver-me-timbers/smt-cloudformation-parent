@@ -17,12 +17,10 @@ public class AutoScalingReplacingUpdate {
     @JsonProperty("WillReplace")
     private Boolean willReplace;
 
-    @JsonProperty("WillReplace")
     public Boolean getWillReplace() {
         return willReplace;
     }
 
-    @JsonProperty("WillReplace")
     public void setWillReplace(Boolean willReplace) {
         this.willReplace = willReplace;
     }

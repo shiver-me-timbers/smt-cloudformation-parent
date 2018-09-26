@@ -46,7 +46,6 @@ public class XssMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -55,7 +54,6 @@ public class XssMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -69,7 +67,6 @@ public class XssMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-xssmatchtuples
      * 
      */
-    @JsonProperty("XssMatchTuples")
     public Set<XssMatchTuple> getXssMatchTuples() {
         return xssMatchTuples;
     }
@@ -78,7 +75,6 @@ public class XssMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-xssmatchtuples
      * 
      */
-    @JsonProperty("XssMatchTuples")
     public void setXssMatchTuples(Set<XssMatchTuple> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
     }

@@ -63,7 +63,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -72,7 +71,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname
      * 
      */
-    @JsonProperty("GroupName")
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -86,7 +84,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public Set<CharSequence> getManagedPolicyArns() {
         return managedPolicyArns;
     }
@@ -95,7 +92,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-managepolicyarns
      * 
      */
-    @JsonProperty("ManagedPolicyArns")
     public void setManagedPolicyArns(Set<CharSequence> managedPolicyArns) {
         this.managedPolicyArns = managedPolicyArns;
     }
@@ -109,7 +105,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-path
      * 
      */
-    @JsonProperty("Path")
     public CharSequence getPath() {
         return path;
     }
@@ -118,7 +113,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-path
      * 
      */
-    @JsonProperty("Path")
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -132,7 +126,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-policies
      * 
      */
-    @JsonProperty("Policies")
     public Set<Policy> getPolicies() {
         return policies;
     }
@@ -141,7 +134,6 @@ public class Group {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-policies
      * 
      */
-    @JsonProperty("Policies")
     public void setPolicies(Set<Policy> policies) {
         this.policies = policies;
     }

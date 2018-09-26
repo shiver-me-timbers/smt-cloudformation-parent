@@ -41,12 +41,26 @@ public class VPCDHCPOptionsAssociationResource
     private VPCDHCPOptionsAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCDHCPOptionsAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCDHCPOptionsAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCDHCPOptionsAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCDHCPOptionsAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCDHCPOptionsAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCDHCPOptionsAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCDHCPOptionsAssociationResource
     @Override
     public VPCDHCPOptionsAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCDHCPOptionsAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

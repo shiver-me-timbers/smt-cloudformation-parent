@@ -50,7 +50,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid
      * 
      */
-    @JsonProperty("FleetId")
     public CharSequence getFleetId() {
         return fleetId;
     }
@@ -59,7 +58,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid
      * 
      */
-    @JsonProperty("FleetId")
     public void setFleetId(CharSequence fleetId) {
         this.fleetId = fleetId;
     }
@@ -73,7 +71,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message
      * 
      */
-    @JsonProperty("Message")
     public CharSequence getMessage() {
         return message;
     }
@@ -82,7 +79,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message
      * 
      */
-    @JsonProperty("Message")
     public void setMessage(CharSequence message) {
         this.message = message;
     }
@@ -96,7 +92,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type
      * 
      */
-    @JsonProperty("Type")
     public CharSequence getType() {
         return type;
     }
@@ -105,7 +100,6 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type
      * 
      */
-    @JsonProperty("Type")
     public void setType(CharSequence type) {
         this.type = type;
     }

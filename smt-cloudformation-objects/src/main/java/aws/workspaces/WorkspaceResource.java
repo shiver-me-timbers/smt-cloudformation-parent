@@ -41,12 +41,26 @@ public class WorkspaceResource
     private Workspace properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WorkspaceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public WorkspaceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Workspace
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
      * 
      */
-    @JsonProperty("Properties")
     public Workspace getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class WorkspaceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Workspace properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class WorkspaceResource
     @Override
     public WorkspaceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public WorkspaceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

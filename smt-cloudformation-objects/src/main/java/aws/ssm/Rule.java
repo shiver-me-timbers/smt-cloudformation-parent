@@ -60,7 +60,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
      * 
      */
-    @JsonProperty("EnableNonSecurity")
     public Boolean getEnableNonSecurity() {
         return enableNonSecurity;
     }
@@ -69,7 +68,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
      * 
      */
-    @JsonProperty("EnableNonSecurity")
     public void setEnableNonSecurity(Boolean enableNonSecurity) {
         this.enableNonSecurity = enableNonSecurity;
     }
@@ -85,7 +83,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
-    @JsonProperty("PatchFilterGroup")
     public PatchFilterGroup getPatchFilterGroup() {
         return patchFilterGroup;
     }
@@ -96,7 +93,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
-    @JsonProperty("PatchFilterGroup")
     public void setPatchFilterGroup(PatchFilterGroup patchFilterGroup) {
         this.patchFilterGroup = patchFilterGroup;
     }
@@ -110,7 +106,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays
      * 
      */
-    @JsonProperty("ApproveAfterDays")
     public Integer getApproveAfterDays() {
         return approveAfterDays;
     }
@@ -119,7 +114,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays
      * 
      */
-    @JsonProperty("ApproveAfterDays")
     public void setApproveAfterDays(Integer approveAfterDays) {
         this.approveAfterDays = approveAfterDays;
     }
@@ -133,7 +127,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel
      * 
      */
-    @JsonProperty("ComplianceLevel")
     public CharSequence getComplianceLevel() {
         return complianceLevel;
     }
@@ -142,7 +135,6 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel
      * 
      */
-    @JsonProperty("ComplianceLevel")
     public void setComplianceLevel(CharSequence complianceLevel) {
         this.complianceLevel = complianceLevel;
     }

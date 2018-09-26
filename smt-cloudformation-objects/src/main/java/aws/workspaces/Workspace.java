@@ -74,7 +74,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
      * 
      */
-    @JsonProperty("BundleId")
     public CharSequence getBundleId() {
         return bundleId;
     }
@@ -83,7 +82,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
      * 
      */
-    @JsonProperty("BundleId")
     public void setBundleId(CharSequence bundleId) {
         this.bundleId = bundleId;
     }
@@ -97,7 +95,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-directoryid
      * 
      */
-    @JsonProperty("DirectoryId")
     public CharSequence getDirectoryId() {
         return directoryId;
     }
@@ -106,7 +103,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-directoryid
      * 
      */
-    @JsonProperty("DirectoryId")
     public void setDirectoryId(CharSequence directoryId) {
         this.directoryId = directoryId;
     }
@@ -120,7 +116,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-rootvolumeencryptionenabled
      * 
      */
-    @JsonProperty("RootVolumeEncryptionEnabled")
     public Boolean getRootVolumeEncryptionEnabled() {
         return rootVolumeEncryptionEnabled;
     }
@@ -129,7 +124,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-rootvolumeencryptionenabled
      * 
      */
-    @JsonProperty("RootVolumeEncryptionEnabled")
     public void setRootVolumeEncryptionEnabled(Boolean rootVolumeEncryptionEnabled) {
         this.rootVolumeEncryptionEnabled = rootVolumeEncryptionEnabled;
     }
@@ -143,7 +137,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-username
      * 
      */
-    @JsonProperty("UserName")
     public CharSequence getUserName() {
         return userName;
     }
@@ -152,7 +145,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-username
      * 
      */
-    @JsonProperty("UserName")
     public void setUserName(CharSequence userName) {
         this.userName = userName;
     }
@@ -166,7 +158,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-uservolumeencryptionenabled
      * 
      */
-    @JsonProperty("UserVolumeEncryptionEnabled")
     public Boolean getUserVolumeEncryptionEnabled() {
         return userVolumeEncryptionEnabled;
     }
@@ -175,7 +166,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-uservolumeencryptionenabled
      * 
      */
-    @JsonProperty("UserVolumeEncryptionEnabled")
     public void setUserVolumeEncryptionEnabled(Boolean userVolumeEncryptionEnabled) {
         this.userVolumeEncryptionEnabled = userVolumeEncryptionEnabled;
     }
@@ -189,7 +179,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey
      * 
      */
-    @JsonProperty("VolumeEncryptionKey")
     public CharSequence getVolumeEncryptionKey() {
         return volumeEncryptionKey;
     }
@@ -198,7 +187,6 @@ public class Workspace {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey
      * 
      */
-    @JsonProperty("VolumeEncryptionKey")
     public void setVolumeEncryptionKey(CharSequence volumeEncryptionKey) {
         this.volumeEncryptionKey = volumeEncryptionKey;
     }

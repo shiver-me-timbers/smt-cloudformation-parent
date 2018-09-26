@@ -42,7 +42,6 @@ public class AlarmIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -51,7 +50,6 @@ public class AlarmIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -65,7 +63,6 @@ public class AlarmIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-region
      * 
      */
-    @JsonProperty("Region")
     public CharSequence getRegion() {
         return region;
     }
@@ -74,7 +71,6 @@ public class AlarmIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-region
      * 
      */
-    @JsonProperty("Region")
     public void setRegion(CharSequence region) {
         this.region = region;
     }

@@ -41,12 +41,26 @@ public class DetectorResource
     private Detector properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DetectorResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DetectorResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Detector
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html
      * 
      */
-    @JsonProperty("Properties")
     public Detector getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DetectorResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Detector properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DetectorResource
     @Override
     public DetectorResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DetectorResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

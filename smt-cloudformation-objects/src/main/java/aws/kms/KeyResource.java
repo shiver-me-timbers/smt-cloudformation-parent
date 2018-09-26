@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class KeyResource
     extends Resource
+    implements HasAttributes<KeyAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class KeyResource
     private Key properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public KeyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public KeyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Key
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html
      * 
      */
-    @JsonProperty("Properties")
     public Key getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class KeyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Key properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class KeyResource
     @Override
     public KeyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public KeyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

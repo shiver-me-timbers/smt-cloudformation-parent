@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class DataSourceResource
     extends Resource
+    implements HasAttributes<DataSourceAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class DataSourceResource
     private DataSource properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DataSourceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DataSourceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DataSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
      * 
      */
-    @JsonProperty("Properties")
     public DataSource getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class DataSourceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DataSource properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class DataSourceResource
     @Override
     public DataSourceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DataSourceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

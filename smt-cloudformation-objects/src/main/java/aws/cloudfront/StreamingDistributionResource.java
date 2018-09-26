@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class StreamingDistributionResource
     extends Resource
+    implements HasAttributes<StreamingDistributionAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class StreamingDistributionResource
     private StreamingDistribution properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public StreamingDistributionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public StreamingDistributionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * StreamingDistribution
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html
      * 
      */
-    @JsonProperty("Properties")
     public StreamingDistribution getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class StreamingDistributionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(StreamingDistribution properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class StreamingDistributionResource
     @Override
     public StreamingDistributionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public StreamingDistributionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -34,7 +34,6 @@ public class Account {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#cfn-apigateway-account-cloudwatchrolearn
      * 
      */
-    @JsonProperty("CloudWatchRoleArn")
     public CharSequence getCloudWatchRoleArn() {
         return cloudWatchRoleArn;
     }
@@ -43,7 +42,6 @@ public class Account {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#cfn-apigateway-account-cloudwatchrolearn
      * 
      */
-    @JsonProperty("CloudWatchRoleArn")
     public void setCloudWatchRoleArn(CharSequence cloudWatchRoleArn) {
         this.cloudWatchRoleArn = cloudWatchRoleArn;
     }

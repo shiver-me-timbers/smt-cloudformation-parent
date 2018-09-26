@@ -96,7 +96,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html
      * 
      */
-    @JsonProperty("AuthenticationConfiguration")
     public WebhookAuthConfiguration getAuthenticationConfiguration() {
         return authenticationConfiguration;
     }
@@ -107,7 +106,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html
      * 
      */
-    @JsonProperty("AuthenticationConfiguration")
     public void setAuthenticationConfiguration(WebhookAuthConfiguration authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
     }
@@ -121,7 +119,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters
      * 
      */
-    @JsonProperty("Filters")
     public List<WebhookFilterRule> getFilters() {
         return filters;
     }
@@ -130,7 +127,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters
      * 
      */
-    @JsonProperty("Filters")
     public void setFilters(List<WebhookFilterRule> filters) {
         this.filters = filters;
     }
@@ -144,7 +140,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authentication
      * 
      */
-    @JsonProperty("Authentication")
     public CharSequence getAuthentication() {
         return authentication;
     }
@@ -153,7 +148,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authentication
      * 
      */
-    @JsonProperty("Authentication")
     public void setAuthentication(CharSequence authentication) {
         this.authentication = authentication;
     }
@@ -167,7 +161,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipeline
      * 
      */
-    @JsonProperty("TargetPipeline")
     public CharSequence getTargetPipeline() {
         return targetPipeline;
     }
@@ -176,7 +169,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipeline
      * 
      */
-    @JsonProperty("TargetPipeline")
     public void setTargetPipeline(CharSequence targetPipeline) {
         this.targetPipeline = targetPipeline;
     }
@@ -190,7 +182,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetaction
      * 
      */
-    @JsonProperty("TargetAction")
     public CharSequence getTargetAction() {
         return targetAction;
     }
@@ -199,7 +190,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetaction
      * 
      */
-    @JsonProperty("TargetAction")
     public void setTargetAction(CharSequence targetAction) {
         this.targetAction = targetAction;
     }
@@ -213,7 +203,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -222,7 +211,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -236,7 +224,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipelineversion
      * 
      */
-    @JsonProperty("TargetPipelineVersion")
     public Integer getTargetPipelineVersion() {
         return targetPipelineVersion;
     }
@@ -245,7 +232,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-targetpipelineversion
      * 
      */
-    @JsonProperty("TargetPipelineVersion")
     public void setTargetPipelineVersion(Integer targetPipelineVersion) {
         this.targetPipelineVersion = targetPipelineVersion;
     }
@@ -259,7 +245,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-registerwiththirdparty
      * 
      */
-    @JsonProperty("RegisterWithThirdParty")
     public Boolean getRegisterWithThirdParty() {
         return registerWithThirdParty;
     }
@@ -268,7 +253,6 @@ public class Webhook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-registerwiththirdparty
      * 
      */
-    @JsonProperty("RegisterWithThirdParty")
     public void setRegisterWithThirdParty(Boolean registerWithThirdParty) {
         this.registerWithThirdParty = registerWithThirdParty;
     }

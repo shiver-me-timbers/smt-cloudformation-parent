@@ -66,7 +66,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword
      * 
      */
-    @JsonProperty("ADDomainJoinPassword")
     public CharSequence getADDomainJoinPassword() {
         return aDDomainJoinPassword;
     }
@@ -75,7 +74,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword
      * 
      */
-    @JsonProperty("ADDomainJoinPassword")
     public void setADDomainJoinPassword(CharSequence aDDomainJoinPassword) {
         this.aDDomainJoinPassword = aDDomainJoinPassword;
     }
@@ -89,7 +87,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser
      * 
      */
-    @JsonProperty("ADDomainJoinUser")
     public CharSequence getADDomainJoinUser() {
         return aDDomainJoinUser;
     }
@@ -98,7 +95,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser
      * 
      */
-    @JsonProperty("ADDomainJoinUser")
     public void setADDomainJoinUser(CharSequence aDDomainJoinUser) {
         this.aDDomainJoinUser = aDDomainJoinUser;
     }
@@ -112,7 +108,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword
      * 
      */
-    @JsonProperty("CrossRealmTrustPrincipalPassword")
     public CharSequence getCrossRealmTrustPrincipalPassword() {
         return crossRealmTrustPrincipalPassword;
     }
@@ -121,7 +116,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword
      * 
      */
-    @JsonProperty("CrossRealmTrustPrincipalPassword")
     public void setCrossRealmTrustPrincipalPassword(CharSequence crossRealmTrustPrincipalPassword) {
         this.crossRealmTrustPrincipalPassword = crossRealmTrustPrincipalPassword;
     }
@@ -135,7 +129,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword
      * 
      */
-    @JsonProperty("KdcAdminPassword")
     public CharSequence getKdcAdminPassword() {
         return kdcAdminPassword;
     }
@@ -144,7 +137,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword
      * 
      */
-    @JsonProperty("KdcAdminPassword")
     public void setKdcAdminPassword(CharSequence kdcAdminPassword) {
         this.kdcAdminPassword = kdcAdminPassword;
     }
@@ -158,7 +150,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm
      * 
      */
-    @JsonProperty("Realm")
     public CharSequence getRealm() {
         return realm;
     }
@@ -167,7 +158,6 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm
      * 
      */
-    @JsonProperty("Realm")
     public void setRealm(CharSequence realm) {
         this.realm = realm;
     }

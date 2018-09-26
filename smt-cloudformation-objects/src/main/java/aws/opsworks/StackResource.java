@@ -41,12 +41,26 @@ public class StackResource
     private Stack properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public StackResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public StackResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Stack
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html
      * 
      */
-    @JsonProperty("Properties")
     public Stack getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class StackResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Stack properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class StackResource
     @Override
     public StackResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public StackResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

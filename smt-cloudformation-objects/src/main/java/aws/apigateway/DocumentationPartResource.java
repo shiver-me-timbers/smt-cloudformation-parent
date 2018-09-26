@@ -41,12 +41,26 @@ public class DocumentationPartResource
     private DocumentationPart properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DocumentationPartResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DocumentationPartResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DocumentationPart
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html
      * 
      */
-    @JsonProperty("Properties")
     public DocumentationPart getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DocumentationPartResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DocumentationPart properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DocumentationPartResource
     @Override
     public DocumentationPartResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DocumentationPartResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

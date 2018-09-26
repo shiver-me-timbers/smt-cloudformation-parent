@@ -42,7 +42,6 @@ public class JsonClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-jsonpath
      * 
      */
-    @JsonProperty("JsonPath")
     public CharSequence getJsonPath() {
         return jsonPath;
     }
@@ -51,7 +50,6 @@ public class JsonClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-jsonpath
      * 
      */
-    @JsonProperty("JsonPath")
     public void setJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
     }
@@ -65,7 +63,6 @@ public class JsonClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -74,7 +71,6 @@ public class JsonClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html#cfn-glue-classifier-jsonclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

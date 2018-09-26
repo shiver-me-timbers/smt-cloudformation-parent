@@ -41,12 +41,26 @@ public class ClusterSecurityGroupResource
     private ClusterSecurityGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClusterSecurityGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClusterSecurityGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ClusterSecurityGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ClusterSecurityGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ClusterSecurityGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ClusterSecurityGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ClusterSecurityGroupResource
     @Override
     public ClusterSecurityGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClusterSecurityGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

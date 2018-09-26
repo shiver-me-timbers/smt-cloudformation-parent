@@ -44,7 +44,6 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
      * 
      */
-    @JsonProperty("S3Targets")
     public List<S3Target> getS3Targets() {
         return s3Targets;
     }
@@ -53,7 +52,6 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
      * 
      */
-    @JsonProperty("S3Targets")
     public void setS3Targets(List<S3Target> s3Targets) {
         this.s3Targets = s3Targets;
     }
@@ -67,7 +65,6 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets
      * 
      */
-    @JsonProperty("JdbcTargets")
     public List<JdbcTarget> getJdbcTargets() {
         return jdbcTargets;
     }
@@ -76,7 +73,6 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets
      * 
      */
-    @JsonProperty("JdbcTargets")
     public void setJdbcTargets(List<JdbcTarget> jdbcTargets) {
         this.jdbcTargets = jdbcTargets;
     }

@@ -41,12 +41,26 @@ public class ConnectionResource
     private Connection properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConnectionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ConnectionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Connection
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html
      * 
      */
-    @JsonProperty("Properties")
     public Connection getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ConnectionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Connection properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ConnectionResource
     @Override
     public ConnectionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ConnectionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -74,7 +74,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-kmskeyarn
      * 
      */
-    @JsonProperty("KMSKeyArn")
     public CharSequence getKMSKeyArn() {
         return kMSKeyArn;
     }
@@ -83,7 +82,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-kmskeyarn
      * 
      */
-    @JsonProperty("KMSKeyArn")
     public void setKMSKeyArn(CharSequence kMSKeyArn) {
         this.kMSKeyArn = kMSKeyArn;
     }
@@ -97,7 +95,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketname
      * 
      */
-    @JsonProperty("BucketName")
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -106,7 +103,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketname
      * 
      */
-    @JsonProperty("BucketName")
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -120,7 +116,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketregion
      * 
      */
-    @JsonProperty("BucketRegion")
     public CharSequence getBucketRegion() {
         return bucketRegion;
     }
@@ -129,7 +124,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketregion
      * 
      */
-    @JsonProperty("BucketRegion")
     public void setBucketRegion(CharSequence bucketRegion) {
         this.bucketRegion = bucketRegion;
     }
@@ -143,7 +137,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncformat
      * 
      */
-    @JsonProperty("SyncFormat")
     public CharSequence getSyncFormat() {
         return syncFormat;
     }
@@ -152,7 +145,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncformat
      * 
      */
-    @JsonProperty("SyncFormat")
     public void setSyncFormat(CharSequence syncFormat) {
         this.syncFormat = syncFormat;
     }
@@ -166,7 +158,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncname
      * 
      */
-    @JsonProperty("SyncName")
     public CharSequence getSyncName() {
         return syncName;
     }
@@ -175,7 +166,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-syncname
      * 
      */
-    @JsonProperty("SyncName")
     public void setSyncName(CharSequence syncName) {
         this.syncName = syncName;
     }
@@ -189,7 +179,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketprefix
      * 
      */
-    @JsonProperty("BucketPrefix")
     public CharSequence getBucketPrefix() {
         return bucketPrefix;
     }
@@ -198,7 +187,6 @@ public class ResourceDataSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html#cfn-ssm-resourcedatasync-bucketprefix
      * 
      */
-    @JsonProperty("BucketPrefix")
     public void setBucketPrefix(CharSequence bucketPrefix) {
         this.bucketPrefix = bucketPrefix;
     }

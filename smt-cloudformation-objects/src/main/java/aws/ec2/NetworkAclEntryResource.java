@@ -41,12 +41,26 @@ public class NetworkAclEntryResource
     private NetworkAclEntry properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NetworkAclEntryResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NetworkAclEntryResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NetworkAclEntry
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html
      * 
      */
-    @JsonProperty("Properties")
     public NetworkAclEntry getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NetworkAclEntryResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NetworkAclEntry properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NetworkAclEntryResource
     @Override
     public NetworkAclEntryResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NetworkAclEntryResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SQS_QueueResource.schema.json",
+  "title" : "QueueResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sqs.QueueResource",
+  "javaInterfaces" : [ "aws.HasAttributes<QueueAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SQS_Queue.schema.json"
+    }
+  }
+}

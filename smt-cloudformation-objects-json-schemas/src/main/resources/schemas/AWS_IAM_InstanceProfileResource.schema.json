@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IAM_InstanceProfileResource.schema.json",
+  "title" : "InstanceProfileResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iam.InstanceProfileResource",
+  "javaInterfaces" : [ "aws.HasAttributes<InstanceProfileAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IAM_InstanceProfile.schema.json"
+    }
+  }
+}

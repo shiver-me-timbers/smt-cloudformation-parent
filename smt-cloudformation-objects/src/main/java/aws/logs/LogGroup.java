@@ -42,7 +42,6 @@ public class LogGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -51,7 +50,6 @@ public class LogGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-loggroupname
      * 
      */
-    @JsonProperty("LogGroupName")
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -65,7 +63,6 @@ public class LogGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-retentionindays
      * 
      */
-    @JsonProperty("RetentionInDays")
     public Integer getRetentionInDays() {
         return retentionInDays;
     }
@@ -74,7 +71,6 @@ public class LogGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html#cfn-cwl-loggroup-retentionindays
      * 
      */
-    @JsonProperty("RetentionInDays")
     public void setRetentionInDays(Integer retentionInDays) {
         this.retentionInDays = retentionInDays;
     }

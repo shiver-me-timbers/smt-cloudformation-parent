@@ -50,7 +50,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
      * 
      */
-    @JsonProperty("Serial")
     public Integer getSerial() {
         return serial;
     }
@@ -59,7 +58,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
      * 
      */
-    @JsonProperty("Serial")
     public void setSerial(Integer serial) {
         this.serial = serial;
     }
@@ -73,7 +71,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
      * 
      */
-    @JsonProperty("Status")
     public CharSequence getStatus() {
         return status;
     }
@@ -82,7 +79,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
      * 
      */
-    @JsonProperty("Status")
     public void setStatus(CharSequence status) {
         this.status = status;
     }
@@ -96,7 +92,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
      * 
      */
-    @JsonProperty("UserName")
     public CharSequence getUserName() {
         return userName;
     }
@@ -105,7 +100,6 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
      * 
      */
-    @JsonProperty("UserName")
     public void setUserName(CharSequence userName) {
         this.userName = userName;
     }

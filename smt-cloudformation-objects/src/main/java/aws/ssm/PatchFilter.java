@@ -44,7 +44,6 @@ public class PatchFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values
      * 
      */
-    @JsonProperty("Values")
     public List<CharSequence> getValues() {
         return values;
     }
@@ -53,7 +52,6 @@ public class PatchFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values
      * 
      */
-    @JsonProperty("Values")
     public void setValues(List<CharSequence> values) {
         this.values = values;
     }
@@ -67,7 +65,6 @@ public class PatchFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -76,7 +73,6 @@ public class PatchFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }

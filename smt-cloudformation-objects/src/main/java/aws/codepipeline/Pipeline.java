@@ -83,7 +83,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html
      * 
      */
-    @JsonProperty("ArtifactStore")
     public ArtifactStore getArtifactStore() {
         return artifactStore;
     }
@@ -94,7 +93,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html
      * 
      */
-    @JsonProperty("ArtifactStore")
     public void setArtifactStore(ArtifactStore artifactStore) {
         this.artifactStore = artifactStore;
     }
@@ -108,7 +106,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
-    @JsonProperty("DisableInboundStageTransitions")
     public Set<StageTransition> getDisableInboundStageTransitions() {
         return disableInboundStageTransitions;
     }
@@ -117,7 +114,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
-    @JsonProperty("DisableInboundStageTransitions")
     public void setDisableInboundStageTransitions(Set<StageTransition> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
     }
@@ -131,7 +127,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -140,7 +135,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -154,7 +148,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate
      * 
      */
-    @JsonProperty("RestartExecutionOnUpdate")
     public Boolean getRestartExecutionOnUpdate() {
         return restartExecutionOnUpdate;
     }
@@ -163,7 +156,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate
      * 
      */
-    @JsonProperty("RestartExecutionOnUpdate")
     public void setRestartExecutionOnUpdate(Boolean restartExecutionOnUpdate) {
         this.restartExecutionOnUpdate = restartExecutionOnUpdate;
     }
@@ -177,7 +169,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -186,7 +177,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -200,7 +190,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
-    @JsonProperty("Stages")
     public Set<StageDeclaration> getStages() {
         return stages;
     }
@@ -209,7 +198,6 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
-    @JsonProperty("Stages")
     public void setStages(Set<StageDeclaration> stages) {
         this.stages = stages;
     }

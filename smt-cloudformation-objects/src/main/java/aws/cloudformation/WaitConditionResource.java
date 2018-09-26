@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class WaitConditionResource
     extends Resource
+    implements HasAttributes<WaitConditionAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class WaitConditionResource
     private WaitCondition properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WaitConditionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public WaitConditionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * WaitCondition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html
      * 
      */
-    @JsonProperty("Properties")
     public WaitCondition getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class WaitConditionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(WaitCondition properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class WaitConditionResource
     @Override
     public WaitConditionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public WaitConditionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

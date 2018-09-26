@@ -41,12 +41,26 @@ public class ClusterSecurityGroupIngressResource
     private ClusterSecurityGroupIngress properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClusterSecurityGroupIngressResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClusterSecurityGroupIngressResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ClusterSecurityGroupIngress
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html
      * 
      */
-    @JsonProperty("Properties")
     public ClusterSecurityGroupIngress getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ClusterSecurityGroupIngressResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ClusterSecurityGroupIngress properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ClusterSecurityGroupIngressResource
     @Override
     public ClusterSecurityGroupIngressResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClusterSecurityGroupIngressResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

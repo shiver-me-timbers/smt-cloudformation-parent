@@ -50,7 +50,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword
      * 
      */
-    @JsonProperty("DbPassword")
     public CharSequence getDbPassword() {
         return dbPassword;
     }
@@ -59,7 +58,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword
      * 
      */
-    @JsonProperty("DbPassword")
     public void setDbPassword(CharSequence dbPassword) {
         this.dbPassword = dbPassword;
     }
@@ -73,7 +71,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser
      * 
      */
-    @JsonProperty("DbUser")
     public CharSequence getDbUser() {
         return dbUser;
     }
@@ -82,7 +79,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser
      * 
      */
-    @JsonProperty("DbUser")
     public void setDbUser(CharSequence dbUser) {
         this.dbUser = dbUser;
     }
@@ -96,7 +92,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn
      * 
      */
-    @JsonProperty("RdsDbInstanceArn")
     public CharSequence getRdsDbInstanceArn() {
         return rdsDbInstanceArn;
     }
@@ -105,7 +100,6 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn
      * 
      */
-    @JsonProperty("RdsDbInstanceArn")
     public void setRdsDbInstanceArn(CharSequence rdsDbInstanceArn) {
         this.rdsDbInstanceArn = rdsDbInstanceArn;
     }

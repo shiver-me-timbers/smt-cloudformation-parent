@@ -68,7 +68,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
      * 
      */
-    @JsonProperty("EndTime")
     public String getEndTime() {
         return endTime;
     }
@@ -77,7 +76,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
      * 
      */
-    @JsonProperty("EndTime")
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
@@ -93,7 +91,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html
      * 
      */
-    @JsonProperty("ScalableTargetAction")
     public ScalableTargetAction getScalableTargetAction() {
         return scalableTargetAction;
     }
@@ -104,7 +101,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html
      * 
      */
-    @JsonProperty("ScalableTargetAction")
     public void setScalableTargetAction(ScalableTargetAction scalableTargetAction) {
         this.scalableTargetAction = scalableTargetAction;
     }
@@ -118,7 +114,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule
      * 
      */
-    @JsonProperty("Schedule")
     public CharSequence getSchedule() {
         return schedule;
     }
@@ -127,7 +122,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule
      * 
      */
-    @JsonProperty("Schedule")
     public void setSchedule(CharSequence schedule) {
         this.schedule = schedule;
     }
@@ -141,7 +135,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname
      * 
      */
-    @JsonProperty("ScheduledActionName")
     public CharSequence getScheduledActionName() {
         return scheduledActionName;
     }
@@ -150,7 +143,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname
      * 
      */
-    @JsonProperty("ScheduledActionName")
     public void setScheduledActionName(CharSequence scheduledActionName) {
         this.scheduledActionName = scheduledActionName;
     }
@@ -164,7 +156,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime
      * 
      */
-    @JsonProperty("StartTime")
     public String getStartTime() {
         return startTime;
     }
@@ -173,7 +164,6 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime
      * 
      */
-    @JsonProperty("StartTime")
     public void setStartTime(String startTime) {
         this.startTime = startTime;
     }

@@ -41,12 +41,26 @@ public class GraphQLSchemaResource
     private GraphQLSchema properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public GraphQLSchemaResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public GraphQLSchemaResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * GraphQLSchema
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html
      * 
      */
-    @JsonProperty("Properties")
     public GraphQLSchema getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class GraphQLSchemaResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(GraphQLSchema properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class GraphQLSchemaResource
     @Override
     public GraphQLSchemaResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public GraphQLSchemaResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

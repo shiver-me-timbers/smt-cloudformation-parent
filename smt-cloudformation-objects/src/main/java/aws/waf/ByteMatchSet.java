@@ -46,7 +46,6 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-bytematchtuples
      * 
      */
-    @JsonProperty("ByteMatchTuples")
     public Set<ByteMatchTuple> getByteMatchTuples() {
         return byteMatchTuples;
     }
@@ -55,7 +54,6 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-bytematchtuples
      * 
      */
-    @JsonProperty("ByteMatchTuples")
     public void setByteMatchTuples(Set<ByteMatchTuple> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
     }
@@ -69,7 +67,6 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -78,7 +75,6 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

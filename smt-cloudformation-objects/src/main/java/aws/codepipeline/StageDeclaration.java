@@ -55,7 +55,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions
      * 
      */
-    @JsonProperty("Actions")
     public Set<ActionDeclaration> getActions() {
         return actions;
     }
@@ -64,7 +63,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions
      * 
      */
-    @JsonProperty("Actions")
     public void setActions(Set<ActionDeclaration> actions) {
         this.actions = actions;
     }
@@ -78,7 +76,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-blockers
      * 
      */
-    @JsonProperty("Blockers")
     public Set<BlockerDeclaration> getBlockers() {
         return blockers;
     }
@@ -87,7 +84,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-blockers
      * 
      */
-    @JsonProperty("Blockers")
     public void setBlockers(Set<BlockerDeclaration> blockers) {
         this.blockers = blockers;
     }
@@ -101,7 +97,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -110,7 +105,6 @@ public class StageDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

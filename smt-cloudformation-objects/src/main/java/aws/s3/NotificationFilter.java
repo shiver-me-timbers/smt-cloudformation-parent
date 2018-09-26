@@ -38,7 +38,6 @@ public class NotificationFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html
      * 
      */
-    @JsonProperty("S3Key")
     public S3KeyFilter getS3Key() {
         return s3Key;
     }
@@ -49,7 +48,6 @@ public class NotificationFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html
      * 
      */
-    @JsonProperty("S3Key")
     public void setS3Key(S3KeyFilter s3Key) {
         this.s3Key = s3Key;
     }

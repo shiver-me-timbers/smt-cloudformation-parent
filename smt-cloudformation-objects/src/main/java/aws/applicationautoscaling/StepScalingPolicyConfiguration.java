@@ -70,7 +70,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype
      * 
      */
-    @JsonProperty("AdjustmentType")
     public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
@@ -79,7 +78,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype
      * 
      */
-    @JsonProperty("AdjustmentType")
     public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
@@ -93,7 +91,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown
      * 
      */
-    @JsonProperty("Cooldown")
     public Integer getCooldown() {
         return cooldown;
     }
@@ -102,7 +99,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-cooldown
      * 
      */
-    @JsonProperty("Cooldown")
     public void setCooldown(Integer cooldown) {
         this.cooldown = cooldown;
     }
@@ -116,7 +112,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype
      * 
      */
-    @JsonProperty("MetricAggregationType")
     public CharSequence getMetricAggregationType() {
         return metricAggregationType;
     }
@@ -125,7 +120,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-metricaggregationtype
      * 
      */
-    @JsonProperty("MetricAggregationType")
     public void setMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
     }
@@ -139,7 +133,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude
      * 
      */
-    @JsonProperty("MinAdjustmentMagnitude")
     public Integer getMinAdjustmentMagnitude() {
         return minAdjustmentMagnitude;
     }
@@ -148,7 +141,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-minadjustmentmagnitude
      * 
      */
-    @JsonProperty("MinAdjustmentMagnitude")
     public void setMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
     }
@@ -162,7 +154,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments
      * 
      */
-    @JsonProperty("StepAdjustments")
     public Set<StepAdjustment> getStepAdjustments() {
         return stepAdjustments;
     }
@@ -171,7 +162,6 @@ public class StepScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments
      * 
      */
-    @JsonProperty("StepAdjustments")
     public void setStepAdjustments(Set<StepAdjustment> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
     }

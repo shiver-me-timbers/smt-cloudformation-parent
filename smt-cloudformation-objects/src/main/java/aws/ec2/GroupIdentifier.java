@@ -34,7 +34,6 @@ public class GroupIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-securitygroups.html#cfn-ec2-spotfleet-groupidentifier-groupid
      * 
      */
-    @JsonProperty("GroupId")
     public CharSequence getGroupId() {
         return groupId;
     }
@@ -43,7 +42,6 @@ public class GroupIdentifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-securitygroups.html#cfn-ec2-spotfleet-groupidentifier-groupid
      * 
      */
-    @JsonProperty("GroupId")
     public void setGroupId(CharSequence groupId) {
         this.groupId = groupId;
     }

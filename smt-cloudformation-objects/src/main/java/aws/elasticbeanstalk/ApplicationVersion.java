@@ -52,7 +52,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -61,7 +60,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname
      * 
      */
-    @JsonProperty("ApplicationName")
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -75,7 +73,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -84,7 +81,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -100,7 +96,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html
      * 
      */
-    @JsonProperty("SourceBundle")
     public SourceBundle getSourceBundle() {
         return sourceBundle;
     }
@@ -111,7 +106,6 @@ public class ApplicationVersion {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html
      * 
      */
-    @JsonProperty("SourceBundle")
     public void setSourceBundle(SourceBundle sourceBundle) {
         this.sourceBundle = sourceBundle;
     }

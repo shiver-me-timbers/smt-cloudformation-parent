@@ -42,7 +42,6 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname
      * 
      */
-    @JsonProperty("DestinationBucketName")
     public CharSequence getDestinationBucketName() {
         return destinationBucketName;
     }
@@ -51,7 +50,6 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname
      * 
      */
-    @JsonProperty("DestinationBucketName")
     public void setDestinationBucketName(CharSequence destinationBucketName) {
         this.destinationBucketName = destinationBucketName;
     }
@@ -65,7 +63,6 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix
      * 
      */
-    @JsonProperty("LogFilePrefix")
     public CharSequence getLogFilePrefix() {
         return logFilePrefix;
     }
@@ -74,7 +71,6 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix
      * 
      */
-    @JsonProperty("LogFilePrefix")
     public void setLogFilePrefix(CharSequence logFilePrefix) {
         this.logFilePrefix = logFilePrefix;
     }

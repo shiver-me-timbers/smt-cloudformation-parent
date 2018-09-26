@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cognito_UserPoolClientResource.schema.json",
+  "title" : "UserPoolClientResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.cognito.UserPoolClientResource",
+  "javaInterfaces" : [ "aws.HasAttributes<UserPoolClientAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Cognito_UserPoolClient.schema.json"
+    }
+  }
+}

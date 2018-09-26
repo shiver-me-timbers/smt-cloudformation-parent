@@ -42,7 +42,6 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
      * 
      */
-    @JsonProperty("UpdateBehavior")
     public CharSequence getUpdateBehavior() {
         return updateBehavior;
     }
@@ -51,7 +50,6 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
      * 
      */
-    @JsonProperty("UpdateBehavior")
     public void setUpdateBehavior(CharSequence updateBehavior) {
         this.updateBehavior = updateBehavior;
     }
@@ -65,7 +63,6 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
      * 
      */
-    @JsonProperty("DeleteBehavior")
     public CharSequence getDeleteBehavior() {
         return deleteBehavior;
     }
@@ -74,7 +71,6 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
      * 
      */
-    @JsonProperty("DeleteBehavior")
     public void setDeleteBehavior(CharSequence deleteBehavior) {
         this.deleteBehavior = deleteBehavior;
     }

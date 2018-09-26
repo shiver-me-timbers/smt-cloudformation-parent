@@ -74,7 +74,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-action
      * 
      */
-    @JsonProperty("Action")
     public CharSequence getAction() {
         return action;
     }
@@ -83,7 +82,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-action
      * 
      */
-    @JsonProperty("Action")
     public void setAction(CharSequence action) {
         this.action = action;
     }
@@ -97,7 +95,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-eventsourcetoken
      * 
      */
-    @JsonProperty("EventSourceToken")
     public CharSequence getEventSourceToken() {
         return eventSourceToken;
     }
@@ -106,7 +103,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-eventsourcetoken
      * 
      */
-    @JsonProperty("EventSourceToken")
     public void setEventSourceToken(CharSequence eventSourceToken) {
         this.eventSourceToken = eventSourceToken;
     }
@@ -120,7 +116,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -129,7 +124,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
@@ -143,7 +137,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-principal
      * 
      */
-    @JsonProperty("Principal")
     public CharSequence getPrincipal() {
         return principal;
     }
@@ -152,7 +145,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-principal
      * 
      */
-    @JsonProperty("Principal")
     public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }
@@ -166,7 +158,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourceaccount
      * 
      */
-    @JsonProperty("SourceAccount")
     public CharSequence getSourceAccount() {
         return sourceAccount;
     }
@@ -175,7 +166,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourceaccount
      * 
      */
-    @JsonProperty("SourceAccount")
     public void setSourceAccount(CharSequence sourceAccount) {
         this.sourceAccount = sourceAccount;
     }
@@ -189,7 +179,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourcearn
      * 
      */
-    @JsonProperty("SourceArn")
     public CharSequence getSourceArn() {
         return sourceArn;
     }
@@ -198,7 +187,6 @@ public class Permission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html#cfn-lambda-permission-sourcearn
      * 
      */
-    @JsonProperty("SourceArn")
     public void setSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
     }

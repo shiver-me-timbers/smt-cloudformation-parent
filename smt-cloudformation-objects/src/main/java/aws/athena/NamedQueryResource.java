@@ -41,12 +41,26 @@ public class NamedQueryResource
     private NamedQuery properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NamedQueryResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NamedQueryResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NamedQuery
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
      * 
      */
-    @JsonProperty("Properties")
     public NamedQuery getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NamedQueryResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-athena-namedquery.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NamedQuery properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NamedQueryResource
     @Override
     public NamedQueryResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NamedQueryResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

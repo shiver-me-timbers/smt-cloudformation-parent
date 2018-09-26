@@ -42,7 +42,6 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
      * 
      */
-    @JsonProperty("TagOptionId")
     public CharSequence getTagOptionId() {
         return tagOptionId;
     }
@@ -51,7 +50,6 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
      * 
      */
-    @JsonProperty("TagOptionId")
     public void setTagOptionId(CharSequence tagOptionId) {
         this.tagOptionId = tagOptionId;
     }
@@ -65,7 +63,6 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
      * 
      */
-    @JsonProperty("ResourceId")
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -74,7 +71,6 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
      * 
      */
-    @JsonProperty("ResourceId")
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }

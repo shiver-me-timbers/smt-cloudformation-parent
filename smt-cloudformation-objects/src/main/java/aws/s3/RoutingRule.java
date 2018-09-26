@@ -48,7 +48,6 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html
      * 
      */
-    @JsonProperty("RedirectRule")
     public RedirectRule getRedirectRule() {
         return redirectRule;
     }
@@ -59,7 +58,6 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html
      * 
      */
-    @JsonProperty("RedirectRule")
     public void setRedirectRule(RedirectRule redirectRule) {
         this.redirectRule = redirectRule;
     }
@@ -75,7 +73,6 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html
      * 
      */
-    @JsonProperty("RoutingRuleCondition")
     public RoutingRuleCondition getRoutingRuleCondition() {
         return routingRuleCondition;
     }
@@ -86,7 +83,6 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html
      * 
      */
-    @JsonProperty("RoutingRuleCondition")
     public void setRoutingRuleCondition(RoutingRuleCondition routingRuleCondition) {
         this.routingRuleCondition = routingRuleCondition;
     }

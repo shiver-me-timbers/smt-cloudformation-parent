@@ -100,7 +100,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
      * 
      */
-    @JsonProperty("AutoScalingPolicy")
     public AutoScalingPolicy getAutoScalingPolicy() {
         return autoScalingPolicy;
     }
@@ -111,7 +110,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
      * 
      */
-    @JsonProperty("AutoScalingPolicy")
     public void setAutoScalingPolicy(AutoScalingPolicy autoScalingPolicy) {
         this.autoScalingPolicy = autoScalingPolicy;
     }
@@ -125,7 +123,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
      * 
      */
-    @JsonProperty("BidPrice")
     public CharSequence getBidPrice() {
         return bidPrice;
     }
@@ -134,7 +131,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
      * 
      */
-    @JsonProperty("BidPrice")
     public void setBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
     }
@@ -148,7 +144,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations
      * 
      */
-    @JsonProperty("Configurations")
     public Set<Configuration> getConfigurations() {
         return configurations;
     }
@@ -157,7 +152,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations
      * 
      */
-    @JsonProperty("Configurations")
     public void setConfigurations(Set<Configuration> configurations) {
         this.configurations = configurations;
     }
@@ -173,7 +167,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
-    @JsonProperty("EbsConfiguration")
     public EbsConfiguration getEbsConfiguration() {
         return ebsConfiguration;
     }
@@ -184,7 +177,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
-    @JsonProperty("EbsConfiguration")
     public void setEbsConfiguration(EbsConfiguration ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
     }
@@ -198,7 +190,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount
      * 
      */
-    @JsonProperty("InstanceCount")
     public Integer getInstanceCount() {
         return instanceCount;
     }
@@ -207,7 +198,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount
      * 
      */
-    @JsonProperty("InstanceCount")
     public void setInstanceCount(Integer instanceCount) {
         this.instanceCount = instanceCount;
     }
@@ -221,7 +211,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -230,7 +219,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -244,7 +232,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market
      * 
      */
-    @JsonProperty("Market")
     public CharSequence getMarket() {
         return market;
     }
@@ -253,7 +240,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market
      * 
      */
-    @JsonProperty("Market")
     public void setMarket(CharSequence market) {
         this.market = market;
     }
@@ -267,7 +253,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -276,7 +261,6 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

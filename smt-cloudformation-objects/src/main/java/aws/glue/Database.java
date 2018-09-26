@@ -46,7 +46,6 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
-    @JsonProperty("DatabaseInput")
     public DatabaseInput getDatabaseInput() {
         return databaseInput;
     }
@@ -57,7 +56,6 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
-    @JsonProperty("DatabaseInput")
     public void setDatabaseInput(DatabaseInput databaseInput) {
         this.databaseInput = databaseInput;
     }
@@ -71,7 +69,6 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -80,7 +77,6 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
      */
-    @JsonProperty("CatalogId")
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

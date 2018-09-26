@@ -41,12 +41,26 @@ public class ClusterSubnetGroupResource
     private ClusterSubnetGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClusterSubnetGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClusterSubnetGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ClusterSubnetGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public ClusterSubnetGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ClusterSubnetGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersubnetgroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ClusterSubnetGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ClusterSubnetGroupResource
     @Override
     public ClusterSubnetGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClusterSubnetGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

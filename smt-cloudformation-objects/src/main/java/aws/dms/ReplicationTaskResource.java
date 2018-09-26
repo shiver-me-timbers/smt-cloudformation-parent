@@ -41,12 +41,26 @@ public class ReplicationTaskResource
     private ReplicationTask properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ReplicationTaskResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ReplicationTaskResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ReplicationTask
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html
      * 
      */
-    @JsonProperty("Properties")
     public ReplicationTask getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ReplicationTaskResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ReplicationTask properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ReplicationTaskResource
     @Override
     public ReplicationTaskResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ReplicationTaskResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

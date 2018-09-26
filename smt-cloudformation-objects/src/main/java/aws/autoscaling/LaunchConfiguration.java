@@ -176,7 +176,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cf-as-launchconfig-associatepubip
      * 
      */
-    @JsonProperty("AssociatePublicIpAddress")
     public Boolean getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
@@ -185,7 +184,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cf-as-launchconfig-associatepubip
      * 
      */
-    @JsonProperty("AssociatePublicIpAddress")
     public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
@@ -199,7 +197,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public Set<BlockDeviceMapping> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
@@ -208,7 +205,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
@@ -222,7 +218,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcid
      * 
      */
-    @JsonProperty("ClassicLinkVPCId")
     public CharSequence getClassicLinkVPCId() {
         return classicLinkVPCId;
     }
@@ -231,7 +226,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcid
      * 
      */
-    @JsonProperty("ClassicLinkVPCId")
     public void setClassicLinkVPCId(CharSequence classicLinkVPCId) {
         this.classicLinkVPCId = classicLinkVPCId;
     }
@@ -245,7 +239,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcsecuritygroups
      * 
      */
-    @JsonProperty("ClassicLinkVPCSecurityGroups")
     public Set<CharSequence> getClassicLinkVPCSecurityGroups() {
         return classicLinkVPCSecurityGroups;
     }
@@ -254,7 +247,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcsecuritygroups
      * 
      */
-    @JsonProperty("ClassicLinkVPCSecurityGroups")
     public void setClassicLinkVPCSecurityGroups(Set<CharSequence> classicLinkVPCSecurityGroups) {
         this.classicLinkVPCSecurityGroups = classicLinkVPCSecurityGroups;
     }
@@ -268,7 +260,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -277,7 +268,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
@@ -291,7 +281,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-iaminstanceprofile
      * 
      */
-    @JsonProperty("IamInstanceProfile")
     public CharSequence getIamInstanceProfile() {
         return iamInstanceProfile;
     }
@@ -300,7 +289,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-iaminstanceprofile
      * 
      */
-    @JsonProperty("IamInstanceProfile")
     public void setIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
@@ -314,7 +302,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public CharSequence getImageId() {
         return imageId;
     }
@@ -323,7 +310,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
@@ -337,7 +323,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -346,7 +331,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -360,7 +344,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancemonitoring
      * 
      */
-    @JsonProperty("InstanceMonitoring")
     public Boolean getInstanceMonitoring() {
         return instanceMonitoring;
     }
@@ -369,7 +352,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancemonitoring
      * 
      */
-    @JsonProperty("InstanceMonitoring")
     public void setInstanceMonitoring(Boolean instanceMonitoring) {
         this.instanceMonitoring = instanceMonitoring;
     }
@@ -383,7 +365,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -392,7 +373,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -406,7 +386,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-kernelid
      * 
      */
-    @JsonProperty("KernelId")
     public CharSequence getKernelId() {
         return kernelId;
     }
@@ -415,7 +394,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-kernelid
      * 
      */
-    @JsonProperty("KernelId")
     public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
@@ -429,7 +407,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-keyname
      * 
      */
-    @JsonProperty("KeyName")
     public CharSequence getKeyName() {
         return keyName;
     }
@@ -438,7 +415,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-keyname
      * 
      */
-    @JsonProperty("KeyName")
     public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
@@ -452,7 +428,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-autoscaling-launchconfig-launchconfigurationname
      * 
      */
-    @JsonProperty("LaunchConfigurationName")
     public CharSequence getLaunchConfigurationName() {
         return launchConfigurationName;
     }
@@ -461,7 +436,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-autoscaling-launchconfig-launchconfigurationname
      * 
      */
-    @JsonProperty("LaunchConfigurationName")
     public void setLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
     }
@@ -475,7 +449,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-placementtenancy
      * 
      */
-    @JsonProperty("PlacementTenancy")
     public CharSequence getPlacementTenancy() {
         return placementTenancy;
     }
@@ -484,7 +457,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-placementtenancy
      * 
      */
-    @JsonProperty("PlacementTenancy")
     public void setPlacementTenancy(CharSequence placementTenancy) {
         this.placementTenancy = placementTenancy;
     }
@@ -498,7 +470,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ramdiskid
      * 
      */
-    @JsonProperty("RamDiskId")
     public CharSequence getRamDiskId() {
         return ramDiskId;
     }
@@ -507,7 +478,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-ramdiskid
      * 
      */
-    @JsonProperty("RamDiskId")
     public void setRamDiskId(CharSequence ramDiskId) {
         this.ramDiskId = ramDiskId;
     }
@@ -521,7 +491,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -530,7 +499,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -544,7 +512,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-spotprice
      * 
      */
-    @JsonProperty("SpotPrice")
     public CharSequence getSpotPrice() {
         return spotPrice;
     }
@@ -553,7 +520,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-spotprice
      * 
      */
-    @JsonProperty("SpotPrice")
     public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
@@ -567,7 +533,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-userdata
      * 
      */
-    @JsonProperty("UserData")
     public CharSequence getUserData() {
         return userData;
     }
@@ -576,7 +541,6 @@ public class LaunchConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-userdata
      * 
      */
-    @JsonProperty("UserData")
     public void setUserData(CharSequence userData) {
         this.userData = userData;
     }

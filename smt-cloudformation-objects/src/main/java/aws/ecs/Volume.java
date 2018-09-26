@@ -46,7 +46,6 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html
      * 
      */
-    @JsonProperty("Host")
     public HostVolumeProperties getHost() {
         return host;
     }
@@ -57,7 +56,6 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html
      * 
      */
-    @JsonProperty("Host")
     public void setHost(HostVolumeProperties host) {
         this.host = host;
     }
@@ -71,7 +69,6 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -80,7 +77,6 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

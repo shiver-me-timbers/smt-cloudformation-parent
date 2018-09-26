@@ -41,12 +41,26 @@ public class ThreatIntelSetResource
     private ThreatIntelSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ThreatIntelSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ThreatIntelSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ThreatIntelSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
      * 
      */
-    @JsonProperty("Properties")
     public ThreatIntelSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ThreatIntelSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ThreatIntelSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ThreatIntelSetResource
     @Override
     public ThreatIntelSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ThreatIntelSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

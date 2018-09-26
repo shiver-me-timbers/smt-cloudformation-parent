@@ -41,12 +41,26 @@ public class ManagedPolicyResource
     private ManagedPolicy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ManagedPolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ManagedPolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ManagedPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
      * 
      */
-    @JsonProperty("Properties")
     public ManagedPolicy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ManagedPolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ManagedPolicy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ManagedPolicyResource
     @Override
     public ManagedPolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ManagedPolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

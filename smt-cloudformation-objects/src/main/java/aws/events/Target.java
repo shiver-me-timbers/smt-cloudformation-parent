@@ -106,7 +106,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
      * 
      */
-    @JsonProperty("Arn")
     public CharSequence getArn() {
         return arn;
     }
@@ -115,7 +114,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
      * 
      */
-    @JsonProperty("Arn")
     public void setArn(CharSequence arn) {
         this.arn = arn;
     }
@@ -131,7 +129,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
      * 
      */
-    @JsonProperty("EcsParameters")
     public EcsParameters getEcsParameters() {
         return ecsParameters;
     }
@@ -142,7 +139,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
      * 
      */
-    @JsonProperty("EcsParameters")
     public void setEcsParameters(EcsParameters ecsParameters) {
         this.ecsParameters = ecsParameters;
     }
@@ -156,7 +152,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -165,7 +160,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -179,7 +173,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input
      * 
      */
-    @JsonProperty("Input")
     public CharSequence getInput() {
         return input;
     }
@@ -188,7 +181,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input
      * 
      */
-    @JsonProperty("Input")
     public void setInput(CharSequence input) {
         this.input = input;
     }
@@ -202,7 +194,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath
      * 
      */
-    @JsonProperty("InputPath")
     public CharSequence getInputPath() {
         return inputPath;
     }
@@ -211,7 +202,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath
      * 
      */
-    @JsonProperty("InputPath")
     public void setInputPath(CharSequence inputPath) {
         this.inputPath = inputPath;
     }
@@ -227,7 +217,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html
      * 
      */
-    @JsonProperty("InputTransformer")
     public InputTransformer getInputTransformer() {
         return inputTransformer;
     }
@@ -238,7 +227,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html
      * 
      */
-    @JsonProperty("InputTransformer")
     public void setInputTransformer(InputTransformer inputTransformer) {
         this.inputTransformer = inputTransformer;
     }
@@ -254,7 +242,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html
      * 
      */
-    @JsonProperty("KinesisParameters")
     public KinesisParameters getKinesisParameters() {
         return kinesisParameters;
     }
@@ -265,7 +252,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html
      * 
      */
-    @JsonProperty("KinesisParameters")
     public void setKinesisParameters(KinesisParameters kinesisParameters) {
         this.kinesisParameters = kinesisParameters;
     }
@@ -279,7 +265,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -288,7 +273,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -304,7 +288,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html
      * 
      */
-    @JsonProperty("RunCommandParameters")
     public RunCommandParameters getRunCommandParameters() {
         return runCommandParameters;
     }
@@ -315,7 +298,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html
      * 
      */
-    @JsonProperty("RunCommandParameters")
     public void setRunCommandParameters(RunCommandParameters runCommandParameters) {
         this.runCommandParameters = runCommandParameters;
     }

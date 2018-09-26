@@ -41,12 +41,26 @@ public class EgressOnlyInternetGatewayResource
     private EgressOnlyInternetGateway properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EgressOnlyInternetGatewayResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EgressOnlyInternetGatewayResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * EgressOnlyInternetGateway
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public EgressOnlyInternetGateway getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class EgressOnlyInternetGatewayResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-egressonlyinternetgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(EgressOnlyInternetGateway properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class EgressOnlyInternetGatewayResource
     @Override
     public EgressOnlyInternetGatewayResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EgressOnlyInternetGatewayResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

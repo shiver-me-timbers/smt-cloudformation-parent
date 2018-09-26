@@ -58,7 +58,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-fromport
      * 
      */
-    @JsonProperty("FromPort")
     public Integer getFromPort() {
         return fromPort;
     }
@@ -67,7 +66,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-fromport
      * 
      */
-    @JsonProperty("FromPort")
     public void setFromPort(Integer fromPort) {
         this.fromPort = fromPort;
     }
@@ -81,7 +79,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-iprange
      * 
      */
-    @JsonProperty("IpRange")
     public CharSequence getIpRange() {
         return ipRange;
     }
@@ -90,7 +87,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-iprange
      * 
      */
-    @JsonProperty("IpRange")
     public void setIpRange(CharSequence ipRange) {
         this.ipRange = ipRange;
     }
@@ -104,7 +100,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -113,7 +108,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -127,7 +121,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-toport
      * 
      */
-    @JsonProperty("ToPort")
     public Integer getToPort() {
         return toPort;
     }
@@ -136,7 +129,6 @@ public class IpPermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html#cfn-gamelift-fleet-ec2inboundpermissions-toport
      * 
      */
-    @JsonProperty("ToPort")
     public void setToPort(Integer toPort) {
         this.toPort = toPort;
     }

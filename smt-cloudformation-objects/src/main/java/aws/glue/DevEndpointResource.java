@@ -41,12 +41,26 @@ public class DevEndpointResource
     private DevEndpoint properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DevEndpointResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DevEndpointResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DevEndpoint
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public DevEndpoint getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DevEndpointResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DevEndpoint properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DevEndpointResource
     @Override
     public DevEndpointResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DevEndpointResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

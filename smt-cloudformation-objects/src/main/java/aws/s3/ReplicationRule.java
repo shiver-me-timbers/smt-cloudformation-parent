@@ -72,7 +72,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public ReplicationDestination getDestination() {
         return destination;
     }
@@ -83,7 +82,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html
      * 
      */
-    @JsonProperty("Destination")
     public void setDestination(ReplicationDestination destination) {
         this.destination = destination;
     }
@@ -97,7 +95,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -106,7 +103,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -120,7 +116,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -129,7 +124,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-prefix
      * 
      */
-    @JsonProperty("Prefix")
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -145,7 +139,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-sourceselectioncriteria.html
      * 
      */
-    @JsonProperty("SourceSelectionCriteria")
     public SourceSelectionCriteria getSourceSelectionCriteria() {
         return sourceSelectionCriteria;
     }
@@ -156,7 +149,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-sourceselectioncriteria.html
      * 
      */
-    @JsonProperty("SourceSelectionCriteria")
     public void setSourceSelectionCriteria(SourceSelectionCriteria sourceSelectionCriteria) {
         this.sourceSelectionCriteria = sourceSelectionCriteria;
     }
@@ -170,7 +162,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-status
      * 
      */
-    @JsonProperty("Status")
     public CharSequence getStatus() {
         return status;
     }
@@ -179,7 +170,6 @@ public class ReplicationRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-status
      * 
      */
-    @JsonProperty("Status")
     public void setStatus(CharSequence status) {
         this.status = status;
     }

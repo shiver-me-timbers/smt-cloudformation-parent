@@ -42,7 +42,6 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly
      * 
      */
-    @JsonProperty("ReadOnly")
     public Boolean getReadOnly() {
         return readOnly;
     }
@@ -51,7 +50,6 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly
      * 
      */
-    @JsonProperty("ReadOnly")
     public void setReadOnly(Boolean readOnly) {
         this.readOnly = readOnly;
     }
@@ -65,7 +63,6 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer
      * 
      */
-    @JsonProperty("SourceContainer")
     public CharSequence getSourceContainer() {
         return sourceContainer;
     }
@@ -74,7 +71,6 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer
      * 
      */
-    @JsonProperty("SourceContainer")
     public void setSourceContainer(CharSequence sourceContainer) {
         this.sourceContainer = sourceContainer;
     }

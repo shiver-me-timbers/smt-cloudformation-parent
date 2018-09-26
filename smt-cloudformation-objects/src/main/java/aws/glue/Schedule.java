@@ -34,7 +34,6 @@ public class Schedule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html#cfn-glue-crawler-schedule-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public CharSequence getScheduleExpression() {
         return scheduleExpression;
     }
@@ -43,7 +42,6 @@ public class Schedule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html#cfn-glue-crawler-schedule-scheduleexpression
      * 
      */
-    @JsonProperty("ScheduleExpression")
     public void setScheduleExpression(CharSequence scheduleExpression) {
         this.scheduleExpression = scheduleExpression;
     }

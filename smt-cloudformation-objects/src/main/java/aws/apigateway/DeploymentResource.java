@@ -41,12 +41,26 @@ public class DeploymentResource
     private Deployment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DeploymentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DeploymentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Deployment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
      * 
      */
-    @JsonProperty("Properties")
     public Deployment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DeploymentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Deployment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DeploymentResource
     @Override
     public DeploymentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DeploymentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -41,12 +41,26 @@ public class EventSourceMappingResource
     private EventSourceMapping properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EventSourceMappingResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EventSourceMappingResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * EventSourceMapping
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
      * 
      */
-    @JsonProperty("Properties")
     public EventSourceMapping getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class EventSourceMappingResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(EventSourceMapping properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class EventSourceMappingResource
     @Override
     public EventSourceMappingResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EventSourceMappingResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

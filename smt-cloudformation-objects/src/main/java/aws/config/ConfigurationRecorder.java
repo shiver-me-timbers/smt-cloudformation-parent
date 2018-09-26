@@ -52,7 +52,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -61,7 +60,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -77,7 +75,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html
      * 
      */
-    @JsonProperty("RecordingGroup")
     public RecordingGroup getRecordingGroup() {
         return recordingGroup;
     }
@@ -88,7 +85,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html
      * 
      */
-    @JsonProperty("RecordingGroup")
     public void setRecordingGroup(RecordingGroup recordingGroup) {
         this.recordingGroup = recordingGroup;
     }
@@ -102,7 +98,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -111,7 +106,6 @@ public class ConfigurationRecorder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn
      * 
      */
-    @JsonProperty("RoleARN")
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

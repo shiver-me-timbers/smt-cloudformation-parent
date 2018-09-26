@@ -34,7 +34,6 @@ public class AccelerateConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html#cfn-s3-bucket-accelerateconfiguration-accelerationstatus
      * 
      */
-    @JsonProperty("AccelerationStatus")
     public CharSequence getAccelerationStatus() {
         return accelerationStatus;
     }
@@ -43,7 +42,6 @@ public class AccelerateConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html#cfn-s3-bucket-accelerateconfiguration-accelerationstatus
      * 
      */
-    @JsonProperty("AccelerationStatus")
     public void setAccelerationStatus(CharSequence accelerationStatus) {
         this.accelerationStatus = accelerationStatus;
     }

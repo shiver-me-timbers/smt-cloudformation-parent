@@ -41,12 +41,26 @@ public class TrunkInterfaceAssociationResource
     private TrunkInterfaceAssociation properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TrunkInterfaceAssociationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TrunkInterfaceAssociationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TrunkInterfaceAssociation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public TrunkInterfaceAssociation getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TrunkInterfaceAssociationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TrunkInterfaceAssociation properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TrunkInterfaceAssociationResource
     @Override
     public TrunkInterfaceAssociationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TrunkInterfaceAssociationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

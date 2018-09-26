@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceCatalog_CloudFormationProvisionedProductAttributes.schema.json",
+  "title" : "CloudFormationProvisionedProductAttributes",
+  "type" : "string",
+  "enum" : [ "CloudformationStackArn", "RecordId" ],
+  "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductAttributes"
+}

@@ -28,7 +28,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DependsOn",
     "Metadata"
 })
-public class Resource {
+public class Resource
+    extends Named
+{
 
     @JsonProperty("Type")
     private java.lang.String type;
@@ -60,12 +62,25 @@ public class Resource {
     @JsonPropertyDescription("https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html")
     private Map<String, Object> metadata;
 
-    @JsonProperty("Type")
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Resource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public Resource(java.lang.String name) {
+        super(name);
+    }
+
     public java.lang.String getType() {
         return type;
     }
 
-    @JsonProperty("Type")
     public void setType(java.lang.String type) {
         this.type = type;
     }
@@ -75,12 +90,10 @@ public class Resource {
         return this;
     }
 
-    @JsonProperty("CreationPolicy")
     public CreationPolicy getCreationPolicy() {
         return creationPolicy;
     }
 
-    @JsonProperty("CreationPolicy")
     public void setCreationPolicy(CreationPolicy creationPolicy) {
         this.creationPolicy = creationPolicy;
     }
@@ -90,12 +103,10 @@ public class Resource {
         return this;
     }
 
-    @JsonProperty("UpdatePolicy")
     public UpdatePolicy getUpdatePolicy() {
         return updatePolicy;
     }
 
-    @JsonProperty("UpdatePolicy")
     public void setUpdatePolicy(UpdatePolicy updatePolicy) {
         this.updatePolicy = updatePolicy;
     }
@@ -111,7 +122,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html
      * 
      */
-    @JsonProperty("DeletionPolicy")
     public DeletionPolicy getDeletionPolicy() {
         return deletionPolicy;
     }
@@ -122,7 +132,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html
      * 
      */
-    @JsonProperty("DeletionPolicy")
     public void setDeletionPolicy(DeletionPolicy deletionPolicy) {
         this.deletionPolicy = deletionPolicy;
     }
@@ -136,7 +145,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html
      * 
      */
-    @JsonProperty("DependsOn")
     public List<java.lang.String> getDependsOn() {
         return dependsOn;
     }
@@ -145,7 +153,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html
      * 
      */
-    @JsonProperty("DependsOn")
     public void setDependsOn(List<java.lang.String> dependsOn) {
         this.dependsOn = dependsOn;
     }
@@ -159,7 +166,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html
      * 
      */
-    @JsonProperty("Metadata")
     public Map<String, Object> getMetadata() {
         return metadata;
     }
@@ -168,7 +174,6 @@ public class Resource {
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html
      * 
      */
-    @JsonProperty("Metadata")
     public void setMetadata(Map<String, Object> metadata) {
         this.metadata = metadata;
     }
@@ -179,13 +184,19 @@ public class Resource {
     }
 
     @Override
+    public Resource withName(java.lang.String name) {
+        super.withName(name);
+        return this;
+    }
+
+    @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("type", type).append("creationPolicy", creationPolicy).append("updatePolicy", updatePolicy).append("deletionPolicy", deletionPolicy).append("dependsOn", dependsOn).append("metadata", metadata).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("creationPolicy", creationPolicy).append("updatePolicy", updatePolicy).append("deletionPolicy", deletionPolicy).append("dependsOn", dependsOn).append("metadata", metadata).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(metadata).append(dependsOn).append(creationPolicy).append(updatePolicy).append(deletionPolicy).append(type).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(metadata).append(dependsOn).append(creationPolicy).append(updatePolicy).append(deletionPolicy).append(type).toHashCode();
     }
 
     @Override
@@ -197,7 +208,7 @@ public class Resource {
             return false;
         }
         Resource rhs = ((Resource) other);
-        return new EqualsBuilder().append(metadata, rhs.metadata).append(dependsOn, rhs.dependsOn).append(creationPolicy, rhs.creationPolicy).append(updatePolicy, rhs.updatePolicy).append(deletionPolicy, rhs.deletionPolicy).append(type, rhs.type).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(metadata, rhs.metadata).append(dependsOn, rhs.dependsOn).append(creationPolicy, rhs.creationPolicy).append(updatePolicy, rhs.updatePolicy).append(deletionPolicy, rhs.deletionPolicy).append(type, rhs.type).isEquals();
     }
 
 }

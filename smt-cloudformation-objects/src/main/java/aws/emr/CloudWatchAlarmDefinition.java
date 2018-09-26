@@ -102,7 +102,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
@@ -111,7 +110,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-comparisonoperator
      * 
      */
-    @JsonProperty("ComparisonOperator")
     public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
@@ -125,7 +123,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-dimensions
      * 
      */
-    @JsonProperty("Dimensions")
     public Set<MetricDimension> getDimensions() {
         return dimensions;
     }
@@ -134,7 +131,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-dimensions
      * 
      */
-    @JsonProperty("Dimensions")
     public void setDimensions(Set<MetricDimension> dimensions) {
         this.dimensions = dimensions;
     }
@@ -148,7 +144,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-evaluationperiods
      * 
      */
-    @JsonProperty("EvaluationPeriods")
     public Integer getEvaluationPeriods() {
         return evaluationPeriods;
     }
@@ -157,7 +152,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-evaluationperiods
      * 
      */
-    @JsonProperty("EvaluationPeriods")
     public void setEvaluationPeriods(Integer evaluationPeriods) {
         this.evaluationPeriods = evaluationPeriods;
     }
@@ -171,7 +165,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -180,7 +173,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-metricname
      * 
      */
-    @JsonProperty("MetricName")
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -194,7 +186,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -203,7 +194,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-namespace
      * 
      */
-    @JsonProperty("Namespace")
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
@@ -217,7 +207,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-period
      * 
      */
-    @JsonProperty("Period")
     public Integer getPeriod() {
         return period;
     }
@@ -226,7 +215,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-period
      * 
      */
-    @JsonProperty("Period")
     public void setPeriod(Integer period) {
         this.period = period;
     }
@@ -240,7 +228,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public CharSequence getStatistic() {
         return statistic;
     }
@@ -249,7 +236,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-statistic
      * 
      */
-    @JsonProperty("Statistic")
     public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
@@ -263,7 +249,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-threshold
      * 
      */
-    @JsonProperty("Threshold")
     public Double getThreshold() {
         return threshold;
     }
@@ -272,7 +257,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-threshold
      * 
      */
-    @JsonProperty("Threshold")
     public void setThreshold(Double threshold) {
         this.threshold = threshold;
     }
@@ -286,7 +270,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-unit
      * 
      */
-    @JsonProperty("Unit")
     public CharSequence getUnit() {
         return unit;
     }
@@ -295,7 +278,6 @@ public class CloudWatchAlarmDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-unit
      * 
      */
-    @JsonProperty("Unit")
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ConfigurationResource
     extends Resource
+    implements HasAttributes<ConfigurationAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ConfigurationResource
     private Configuration properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ConfigurationResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ConfigurationResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Configuration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
      * 
      */
-    @JsonProperty("Properties")
     public Configuration getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ConfigurationResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Configuration properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ConfigurationResource
     @Override
     public ConfigurationResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ConfigurationResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

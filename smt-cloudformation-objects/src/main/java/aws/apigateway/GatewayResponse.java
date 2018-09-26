@@ -67,7 +67,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responseparameters
      * 
      */
-    @JsonProperty("ResponseParameters")
     public Map<String, String> getResponseParameters() {
         return responseParameters;
     }
@@ -76,7 +75,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responseparameters
      * 
      */
-    @JsonProperty("ResponseParameters")
     public void setResponseParameters(Map<String, String> responseParameters) {
         this.responseParameters = responseParameters;
     }
@@ -90,7 +88,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetemplates
      * 
      */
-    @JsonProperty("ResponseTemplates")
     public Map<String, String> getResponseTemplates() {
         return responseTemplates;
     }
@@ -99,7 +96,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetemplates
      * 
      */
-    @JsonProperty("ResponseTemplates")
     public void setResponseTemplates(Map<String, String> responseTemplates) {
         this.responseTemplates = responseTemplates;
     }
@@ -113,7 +109,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetype
      * 
      */
-    @JsonProperty("ResponseType")
     public CharSequence getResponseType() {
         return responseType;
     }
@@ -122,7 +117,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-responsetype
      * 
      */
-    @JsonProperty("ResponseType")
     public void setResponseType(CharSequence responseType) {
         this.responseType = responseType;
     }
@@ -136,7 +130,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -145,7 +138,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -159,7 +151,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -168,7 +159,6 @@ public class GatewayResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-gatewayresponse.html#cfn-apigateway-gatewayresponse-statuscode
      * 
      */
-    @JsonProperty("StatusCode")
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }

@@ -50,7 +50,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-device
      * 
      */
-    @JsonProperty("Device")
     public CharSequence getDevice() {
         return device;
     }
@@ -59,7 +58,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-device
      * 
      */
-    @JsonProperty("Device")
     public void setDevice(CharSequence device) {
         this.device = device;
     }
@@ -73,7 +71,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -82,7 +79,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-instanceid
      * 
      */
-    @JsonProperty("InstanceId")
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -96,7 +92,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-volumeid
      * 
      */
-    @JsonProperty("VolumeId")
     public CharSequence getVolumeId() {
         return volumeId;
     }
@@ -105,7 +100,6 @@ public class VolumeAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ebs-volumeattachment.html#cfn-ec2-ebs-volumeattachment-volumeid
      * 
      */
-    @JsonProperty("VolumeId")
     public void setVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
     }

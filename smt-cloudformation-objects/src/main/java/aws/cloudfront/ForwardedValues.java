@@ -64,7 +64,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html
      * 
      */
-    @JsonProperty("Cookies")
     public Cookies getCookies() {
         return cookies;
     }
@@ -75,7 +74,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html
      * 
      */
-    @JsonProperty("Cookies")
     public void setCookies(Cookies cookies) {
         this.cookies = cookies;
     }
@@ -89,7 +87,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers
      * 
      */
-    @JsonProperty("Headers")
     public List<CharSequence> getHeaders() {
         return headers;
     }
@@ -98,7 +95,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers
      * 
      */
-    @JsonProperty("Headers")
     public void setHeaders(List<CharSequence> headers) {
         this.headers = headers;
     }
@@ -112,7 +108,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystring
      * 
      */
-    @JsonProperty("QueryString")
     public Boolean getQueryString() {
         return queryString;
     }
@@ -121,7 +116,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystring
      * 
      */
-    @JsonProperty("QueryString")
     public void setQueryString(Boolean queryString) {
         this.queryString = queryString;
     }
@@ -135,7 +129,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystringcachekeys
      * 
      */
-    @JsonProperty("QueryStringCacheKeys")
     public List<CharSequence> getQueryStringCacheKeys() {
         return queryStringCacheKeys;
     }
@@ -144,7 +137,6 @@ public class ForwardedValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-querystringcachekeys
      * 
      */
-    @JsonProperty("QueryStringCacheKeys")
     public void setQueryStringCacheKeys(List<CharSequence> queryStringCacheKeys) {
         this.queryStringCacheKeys = queryStringCacheKeys;
     }

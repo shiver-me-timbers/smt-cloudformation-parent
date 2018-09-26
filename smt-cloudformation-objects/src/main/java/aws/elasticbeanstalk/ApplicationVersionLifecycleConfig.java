@@ -48,7 +48,6 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html
      * 
      */
-    @JsonProperty("MaxAgeRule")
     public MaxAgeRule getMaxAgeRule() {
         return maxAgeRule;
     }
@@ -59,7 +58,6 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html
      * 
      */
-    @JsonProperty("MaxAgeRule")
     public void setMaxAgeRule(MaxAgeRule maxAgeRule) {
         this.maxAgeRule = maxAgeRule;
     }
@@ -75,7 +73,6 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html
      * 
      */
-    @JsonProperty("MaxCountRule")
     public MaxCountRule getMaxCountRule() {
         return maxCountRule;
     }
@@ -86,7 +83,6 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html
      * 
      */
-    @JsonProperty("MaxCountRule")
     public void setMaxCountRule(MaxCountRule maxCountRule) {
         this.maxCountRule = maxCountRule;
     }

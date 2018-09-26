@@ -79,7 +79,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates
      * 
      */
-    @JsonProperty("Certificates")
     public Set<Certificate> getCertificates() {
         return certificates;
     }
@@ -88,7 +87,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates
      * 
      */
-    @JsonProperty("Certificates")
     public void setCertificates(Set<Certificate> certificates) {
         this.certificates = certificates;
     }
@@ -102,7 +100,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions
      * 
      */
-    @JsonProperty("DefaultActions")
     public Set<Action> getDefaultActions() {
         return defaultActions;
     }
@@ -111,7 +108,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions
      * 
      */
-    @JsonProperty("DefaultActions")
     public void setDefaultActions(Set<Action> defaultActions) {
         this.defaultActions = defaultActions;
     }
@@ -125,7 +121,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
      * 
      */
-    @JsonProperty("LoadBalancerArn")
     public CharSequence getLoadBalancerArn() {
         return loadBalancerArn;
     }
@@ -134,7 +129,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
      * 
      */
-    @JsonProperty("LoadBalancerArn")
     public void setLoadBalancerArn(CharSequence loadBalancerArn) {
         this.loadBalancerArn = loadBalancerArn;
     }
@@ -148,7 +142,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -157,7 +150,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -171,7 +163,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -180,7 +171,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol
      * 
      */
-    @JsonProperty("Protocol")
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -194,7 +184,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
      * 
      */
-    @JsonProperty("SslPolicy")
     public CharSequence getSslPolicy() {
         return sslPolicy;
     }
@@ -203,7 +192,6 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
      * 
      */
-    @JsonProperty("SslPolicy")
     public void setSslPolicy(CharSequence sslPolicy) {
         this.sslPolicy = sslPolicy;
     }

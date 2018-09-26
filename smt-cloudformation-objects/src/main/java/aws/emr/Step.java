@@ -60,7 +60,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-actiononfailure
      * 
      */
-    @JsonProperty("ActionOnFailure")
     public CharSequence getActionOnFailure() {
         return actionOnFailure;
     }
@@ -69,7 +68,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-actiononfailure
      * 
      */
-    @JsonProperty("ActionOnFailure")
     public void setActionOnFailure(CharSequence actionOnFailure) {
         this.actionOnFailure = actionOnFailure;
     }
@@ -85,7 +83,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html
      * 
      */
-    @JsonProperty("HadoopJarStep")
     public HadoopJarStepConfig getHadoopJarStep() {
         return hadoopJarStep;
     }
@@ -96,7 +93,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html
      * 
      */
-    @JsonProperty("HadoopJarStep")
     public void setHadoopJarStep(HadoopJarStepConfig hadoopJarStep) {
         this.hadoopJarStep = hadoopJarStep;
     }
@@ -110,7 +106,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-jobflowid
      * 
      */
-    @JsonProperty("JobFlowId")
     public CharSequence getJobFlowId() {
         return jobFlowId;
     }
@@ -119,7 +114,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-jobflowid
      * 
      */
-    @JsonProperty("JobFlowId")
     public void setJobFlowId(CharSequence jobFlowId) {
         this.jobFlowId = jobFlowId;
     }
@@ -133,7 +127,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -142,7 +135,6 @@ public class Step {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

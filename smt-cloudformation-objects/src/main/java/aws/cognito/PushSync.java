@@ -44,7 +44,6 @@ public class PushSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-applicationarns
      * 
      */
-    @JsonProperty("ApplicationArns")
     public List<CharSequence> getApplicationArns() {
         return applicationArns;
     }
@@ -53,7 +52,6 @@ public class PushSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-applicationarns
      * 
      */
-    @JsonProperty("ApplicationArns")
     public void setApplicationArns(List<CharSequence> applicationArns) {
         this.applicationArns = applicationArns;
     }
@@ -67,7 +65,6 @@ public class PushSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -76,7 +73,6 @@ public class PushSync {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

@@ -41,12 +41,26 @@ public class DBParameterGroupResource
     private DBParameterGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DBParameterGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DBParameterGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DBParameterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public DBParameterGroup getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DBParameterGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DBParameterGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DBParameterGroupResource
     @Override
     public DBParameterGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DBParameterGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

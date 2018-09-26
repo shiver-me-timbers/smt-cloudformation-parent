@@ -34,7 +34,6 @@ public class Detector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable
      * 
      */
-    @JsonProperty("Enable")
     public Boolean getEnable() {
         return enable;
     }
@@ -43,7 +42,6 @@ public class Detector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable
      * 
      */
-    @JsonProperty("Enable")
     public void setEnable(Boolean enable) {
         this.enable = enable;
     }

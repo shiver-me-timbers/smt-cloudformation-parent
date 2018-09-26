@@ -151,7 +151,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled
      * 
      */
-    @JsonProperty("CacheClusterEnabled")
     public Boolean getCacheClusterEnabled() {
         return cacheClusterEnabled;
     }
@@ -160,7 +159,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled
      * 
      */
-    @JsonProperty("CacheClusterEnabled")
     public void setCacheClusterEnabled(Boolean cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
     }
@@ -174,7 +172,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclustersize
      * 
      */
-    @JsonProperty("CacheClusterSize")
     public CharSequence getCacheClusterSize() {
         return cacheClusterSize;
     }
@@ -183,7 +180,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclustersize
      * 
      */
-    @JsonProperty("CacheClusterSize")
     public void setCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
     }
@@ -197,7 +193,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachedataencrypted
      * 
      */
-    @JsonProperty("CacheDataEncrypted")
     public Boolean getCacheDataEncrypted() {
         return cacheDataEncrypted;
     }
@@ -206,7 +201,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachedataencrypted
      * 
      */
-    @JsonProperty("CacheDataEncrypted")
     public void setCacheDataEncrypted(Boolean cacheDataEncrypted) {
         this.cacheDataEncrypted = cacheDataEncrypted;
     }
@@ -220,7 +214,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachettlinseconds
      * 
      */
-    @JsonProperty("CacheTtlInSeconds")
     public Integer getCacheTtlInSeconds() {
         return cacheTtlInSeconds;
     }
@@ -229,7 +222,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachettlinseconds
      * 
      */
-    @JsonProperty("CacheTtlInSeconds")
     public void setCacheTtlInSeconds(Integer cacheTtlInSeconds) {
         this.cacheTtlInSeconds = cacheTtlInSeconds;
     }
@@ -243,7 +235,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled
      * 
      */
-    @JsonProperty("CachingEnabled")
     public Boolean getCachingEnabled() {
         return cachingEnabled;
     }
@@ -252,7 +243,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled
      * 
      */
-    @JsonProperty("CachingEnabled")
     public void setCachingEnabled(Boolean cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
     }
@@ -266,7 +256,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid
      * 
      */
-    @JsonProperty("ClientCertificateId")
     public CharSequence getClientCertificateId() {
         return clientCertificateId;
     }
@@ -275,7 +264,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid
      * 
      */
-    @JsonProperty("ClientCertificateId")
     public void setClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
     }
@@ -289,7 +277,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-datatraceenabled
      * 
      */
-    @JsonProperty("DataTraceEnabled")
     public Boolean getDataTraceEnabled() {
         return dataTraceEnabled;
     }
@@ -298,7 +285,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-datatraceenabled
      * 
      */
-    @JsonProperty("DataTraceEnabled")
     public void setDataTraceEnabled(Boolean dataTraceEnabled) {
         this.dataTraceEnabled = dataTraceEnabled;
     }
@@ -312,7 +298,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -321,7 +306,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -335,7 +319,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-documentationversion
      * 
      */
-    @JsonProperty("DocumentationVersion")
     public CharSequence getDocumentationVersion() {
         return documentationVersion;
     }
@@ -344,7 +327,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-documentationversion
      * 
      */
-    @JsonProperty("DocumentationVersion")
     public void setDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
     }
@@ -358,7 +340,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-logginglevel
      * 
      */
-    @JsonProperty("LoggingLevel")
     public CharSequence getLoggingLevel() {
         return loggingLevel;
     }
@@ -367,7 +348,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-logginglevel
      * 
      */
-    @JsonProperty("LoggingLevel")
     public void setLoggingLevel(CharSequence loggingLevel) {
         this.loggingLevel = loggingLevel;
     }
@@ -381,7 +361,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-methodsettings
      * 
      */
-    @JsonProperty("MethodSettings")
     public Set<MethodSetting> getMethodSettings() {
         return methodSettings;
     }
@@ -390,7 +369,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-methodsettings
      * 
      */
-    @JsonProperty("MethodSettings")
     public void setMethodSettings(Set<MethodSetting> methodSettings) {
         this.methodSettings = methodSettings;
     }
@@ -404,7 +382,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-metricsenabled
      * 
      */
-    @JsonProperty("MetricsEnabled")
     public Boolean getMetricsEnabled() {
         return metricsEnabled;
     }
@@ -413,7 +390,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-metricsenabled
      * 
      */
-    @JsonProperty("MetricsEnabled")
     public void setMetricsEnabled(Boolean metricsEnabled) {
         this.metricsEnabled = metricsEnabled;
     }
@@ -427,7 +403,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingburstlimit
      * 
      */
-    @JsonProperty("ThrottlingBurstLimit")
     public Integer getThrottlingBurstLimit() {
         return throttlingBurstLimit;
     }
@@ -436,7 +411,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingburstlimit
      * 
      */
-    @JsonProperty("ThrottlingBurstLimit")
     public void setThrottlingBurstLimit(Integer throttlingBurstLimit) {
         this.throttlingBurstLimit = throttlingBurstLimit;
     }
@@ -450,7 +424,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingratelimit
      * 
      */
-    @JsonProperty("ThrottlingRateLimit")
     public Double getThrottlingRateLimit() {
         return throttlingRateLimit;
     }
@@ -459,7 +432,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-throttlingratelimit
      * 
      */
-    @JsonProperty("ThrottlingRateLimit")
     public void setThrottlingRateLimit(Double throttlingRateLimit) {
         this.throttlingRateLimit = throttlingRateLimit;
     }
@@ -473,7 +445,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-variables
      * 
      */
-    @JsonProperty("Variables")
     public Map<String, String> getVariables() {
         return variables;
     }
@@ -482,7 +453,6 @@ public class StageDescription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-variables
      * 
      */
-    @JsonProperty("Variables")
     public void setVariables(Map<String, String> variables) {
         this.variables = variables;
     }

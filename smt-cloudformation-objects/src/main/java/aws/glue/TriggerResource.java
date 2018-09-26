@@ -41,12 +41,26 @@ public class TriggerResource
     private Trigger properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TriggerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TriggerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Trigger
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
      * 
      */
-    @JsonProperty("Properties")
     public Trigger getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TriggerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Trigger properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TriggerResource
     @Override
     public TriggerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TriggerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -94,7 +94,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -103,7 +102,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
@@ -117,7 +115,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policytype
      * 
      */
-    @JsonProperty("PolicyType")
     public CharSequence getPolicyType() {
         return policyType;
     }
@@ -126,7 +123,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policytype
      * 
      */
-    @JsonProperty("PolicyType")
     public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }
@@ -140,7 +136,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-resourceid
      * 
      */
-    @JsonProperty("ResourceId")
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -149,7 +144,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-resourceid
      * 
      */
-    @JsonProperty("ResourceId")
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
@@ -163,7 +157,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalabledimension
      * 
      */
-    @JsonProperty("ScalableDimension")
     public CharSequence getScalableDimension() {
         return scalableDimension;
     }
@@ -172,7 +165,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalabledimension
      * 
      */
-    @JsonProperty("ScalableDimension")
     public void setScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
     }
@@ -186,7 +178,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalingtargetid
      * 
      */
-    @JsonProperty("ScalingTargetId")
     public CharSequence getScalingTargetId() {
         return scalingTargetId;
     }
@@ -195,7 +186,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-scalingtargetid
      * 
      */
-    @JsonProperty("ScalingTargetId")
     public void setScalingTargetId(CharSequence scalingTargetId) {
         this.scalingTargetId = scalingTargetId;
     }
@@ -209,7 +199,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace
      * 
      */
-    @JsonProperty("ServiceNamespace")
     public CharSequence getServiceNamespace() {
         return serviceNamespace;
     }
@@ -218,7 +207,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace
      * 
      */
-    @JsonProperty("ServiceNamespace")
     public void setServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
     }
@@ -234,7 +222,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("StepScalingPolicyConfiguration")
     public StepScalingPolicyConfiguration getStepScalingPolicyConfiguration() {
         return stepScalingPolicyConfiguration;
     }
@@ -245,7 +232,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("StepScalingPolicyConfiguration")
     public void setStepScalingPolicyConfiguration(StepScalingPolicyConfiguration stepScalingPolicyConfiguration) {
         this.stepScalingPolicyConfiguration = stepScalingPolicyConfiguration;
     }
@@ -261,7 +247,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("TargetTrackingScalingPolicyConfiguration")
     public TargetTrackingScalingPolicyConfiguration getTargetTrackingScalingPolicyConfiguration() {
         return targetTrackingScalingPolicyConfiguration;
     }
@@ -272,7 +257,6 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html
      * 
      */
-    @JsonProperty("TargetTrackingScalingPolicyConfiguration")
     public void setTargetTrackingScalingPolicyConfiguration(TargetTrackingScalingPolicyConfiguration targetTrackingScalingPolicyConfiguration) {
         this.targetTrackingScalingPolicyConfiguration = targetTrackingScalingPolicyConfiguration;
     }

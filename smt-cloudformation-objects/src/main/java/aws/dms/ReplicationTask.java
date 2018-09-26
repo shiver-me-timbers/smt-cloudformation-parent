@@ -101,7 +101,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtasksettings
      * 
      */
-    @JsonProperty("ReplicationTaskSettings")
     public CharSequence getReplicationTaskSettings() {
         return replicationTaskSettings;
     }
@@ -110,7 +109,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtasksettings
      * 
      */
-    @JsonProperty("ReplicationTaskSettings")
     public void setReplicationTaskSettings(CharSequence replicationTaskSettings) {
         this.replicationTaskSettings = replicationTaskSettings;
     }
@@ -124,7 +122,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tablemappings
      * 
      */
-    @JsonProperty("TableMappings")
     public CharSequence getTableMappings() {
         return tableMappings;
     }
@@ -133,7 +130,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tablemappings
      * 
      */
-    @JsonProperty("TableMappings")
     public void setTableMappings(CharSequence tableMappings) {
         this.tableMappings = tableMappings;
     }
@@ -147,7 +143,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier
      * 
      */
-    @JsonProperty("ReplicationTaskIdentifier")
     public CharSequence getReplicationTaskIdentifier() {
         return replicationTaskIdentifier;
     }
@@ -156,7 +151,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationtaskidentifier
      * 
      */
-    @JsonProperty("ReplicationTaskIdentifier")
     public void setReplicationTaskIdentifier(CharSequence replicationTaskIdentifier) {
         this.replicationTaskIdentifier = replicationTaskIdentifier;
     }
@@ -170,7 +164,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-sourceendpointarn
      * 
      */
-    @JsonProperty("SourceEndpointArn")
     public CharSequence getSourceEndpointArn() {
         return sourceEndpointArn;
     }
@@ -179,7 +172,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-sourceendpointarn
      * 
      */
-    @JsonProperty("SourceEndpointArn")
     public void setSourceEndpointArn(CharSequence sourceEndpointArn) {
         this.sourceEndpointArn = sourceEndpointArn;
     }
@@ -193,7 +185,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-migrationtype
      * 
      */
-    @JsonProperty("MigrationType")
     public CharSequence getMigrationType() {
         return migrationType;
     }
@@ -202,7 +193,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-migrationtype
      * 
      */
-    @JsonProperty("MigrationType")
     public void setMigrationType(CharSequence migrationType) {
         this.migrationType = migrationType;
     }
@@ -216,7 +206,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-targetendpointarn
      * 
      */
-    @JsonProperty("TargetEndpointArn")
     public CharSequence getTargetEndpointArn() {
         return targetEndpointArn;
     }
@@ -225,7 +214,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-targetendpointarn
      * 
      */
-    @JsonProperty("TargetEndpointArn")
     public void setTargetEndpointArn(CharSequence targetEndpointArn) {
         this.targetEndpointArn = targetEndpointArn;
     }
@@ -239,7 +227,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationinstancearn
      * 
      */
-    @JsonProperty("ReplicationInstanceArn")
     public CharSequence getReplicationInstanceArn() {
         return replicationInstanceArn;
     }
@@ -248,7 +235,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-replicationinstancearn
      * 
      */
-    @JsonProperty("ReplicationInstanceArn")
     public void setReplicationInstanceArn(CharSequence replicationInstanceArn) {
         this.replicationInstanceArn = replicationInstanceArn;
     }
@@ -262,7 +248,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -271,7 +256,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -285,7 +269,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstarttime
      * 
      */
-    @JsonProperty("CdcStartTime")
     public Double getCdcStartTime() {
         return cdcStartTime;
     }
@@ -294,7 +277,6 @@ public class ReplicationTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationtask.html#cfn-dms-replicationtask-cdcstarttime
      * 
      */
-    @JsonProperty("CdcStartTime")
     public void setCdcStartTime(Double cdcStartTime) {
         this.cdcStartTime = cdcStartTime;
     }

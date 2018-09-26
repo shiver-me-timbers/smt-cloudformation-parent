@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Kinesis_StreamAttributes.schema.json",
+  "title" : "StreamAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "aws.kinesis.StreamAttributes"
+}

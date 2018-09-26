@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class UserProfileResource
     extends Resource
+    implements HasAttributes<UserProfileAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class UserProfileResource
     private UserProfile properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserProfileResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserProfileResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * UserProfile
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html
      * 
      */
-    @JsonProperty("Properties")
     public UserProfile getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class UserProfileResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(UserProfile properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class UserProfileResource
     @Override
     public UserProfileResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserProfileResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

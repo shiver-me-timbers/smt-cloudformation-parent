@@ -41,12 +41,26 @@ public class PatchBaselineResource
     private PatchBaseline properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PatchBaselineResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PatchBaselineResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * PatchBaseline
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
      * 
      */
-    @JsonProperty("Properties")
     public PatchBaseline getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PatchBaselineResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(PatchBaseline properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PatchBaselineResource
     @Override
     public PatchBaselineResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PatchBaselineResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

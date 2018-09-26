@@ -42,7 +42,6 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -51,7 +50,6 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -65,7 +63,6 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
-    @JsonProperty("ValidationDomain")
     public CharSequence getValidationDomain() {
         return validationDomain;
     }
@@ -74,7 +71,6 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
-    @JsonProperty("ValidationDomain")
     public void setValidationDomain(CharSequence validationDomain) {
         this.validationDomain = validationDomain;
     }

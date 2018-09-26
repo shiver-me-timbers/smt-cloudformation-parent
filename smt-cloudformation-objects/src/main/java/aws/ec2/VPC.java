@@ -69,7 +69,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -78,7 +77,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -92,7 +90,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
      * 
      */
-    @JsonProperty("EnableDnsHostnames")
     public Boolean getEnableDnsHostnames() {
         return enableDnsHostnames;
     }
@@ -101,7 +98,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
      * 
      */
-    @JsonProperty("EnableDnsHostnames")
     public void setEnableDnsHostnames(Boolean enableDnsHostnames) {
         this.enableDnsHostnames = enableDnsHostnames;
     }
@@ -115,7 +111,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
      * 
      */
-    @JsonProperty("EnableDnsSupport")
     public Boolean getEnableDnsSupport() {
         return enableDnsSupport;
     }
@@ -124,7 +119,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
      * 
      */
-    @JsonProperty("EnableDnsSupport")
     public void setEnableDnsSupport(Boolean enableDnsSupport) {
         this.enableDnsSupport = enableDnsSupport;
     }
@@ -138,7 +132,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
      * 
      */
-    @JsonProperty("InstanceTenancy")
     public CharSequence getInstanceTenancy() {
         return instanceTenancy;
     }
@@ -147,7 +140,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
      * 
      */
-    @JsonProperty("InstanceTenancy")
     public void setInstanceTenancy(CharSequence instanceTenancy) {
         this.instanceTenancy = instanceTenancy;
     }
@@ -161,7 +153,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -170,7 +161,6 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

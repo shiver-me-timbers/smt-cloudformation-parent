@@ -42,7 +42,6 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start
      * 
      */
-    @JsonProperty("Start")
     public CharSequence getStart() {
         return start;
     }
@@ -51,7 +50,6 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start
      * 
      */
-    @JsonProperty("Start")
     public void setStart(CharSequence start) {
         this.start = start;
     }
@@ -65,7 +63,6 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end
      * 
      */
-    @JsonProperty("End")
     public CharSequence getEnd() {
         return end;
     }
@@ -74,7 +71,6 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end
      * 
      */
-    @JsonProperty("End")
     public void setEnd(CharSequence end) {
         this.end = end;
     }

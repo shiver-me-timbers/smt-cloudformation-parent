@@ -41,12 +41,26 @@ public class JobDefinitionResource
     private JobDefinition properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public JobDefinitionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public JobDefinitionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * JobDefinition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
      * 
      */
-    @JsonProperty("Properties")
     public JobDefinition getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class JobDefinitionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(JobDefinition properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class JobDefinitionResource
     @Override
     public JobDefinitionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public JobDefinitionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

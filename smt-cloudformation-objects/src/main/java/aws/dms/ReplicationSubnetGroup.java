@@ -61,7 +61,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupdescription
      * 
      */
-    @JsonProperty("ReplicationSubnetGroupDescription")
     public CharSequence getReplicationSubnetGroupDescription() {
         return replicationSubnetGroupDescription;
     }
@@ -70,7 +69,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupdescription
      * 
      */
-    @JsonProperty("ReplicationSubnetGroupDescription")
     public void setReplicationSubnetGroupDescription(CharSequence replicationSubnetGroupDescription) {
         this.replicationSubnetGroupDescription = replicationSubnetGroupDescription;
     }
@@ -84,7 +82,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupidentifier
      * 
      */
-    @JsonProperty("ReplicationSubnetGroupIdentifier")
     public CharSequence getReplicationSubnetGroupIdentifier() {
         return replicationSubnetGroupIdentifier;
     }
@@ -93,7 +90,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-replicationsubnetgroupidentifier
      * 
      */
-    @JsonProperty("ReplicationSubnetGroupIdentifier")
     public void setReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
     }
@@ -107,7 +103,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public List<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -116,7 +111,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(List<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
@@ -130,7 +124,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -139,7 +132,6 @@ public class ReplicationSubnetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationsubnetgroup.html#cfn-dms-replicationsubnetgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

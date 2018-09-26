@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElastiCache_CacheClusterResource.schema.json",
+  "title" : "CacheClusterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.elasticache.CacheClusterResource",
+  "javaInterfaces" : [ "aws.HasAttributes<CacheClusterAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ElastiCache_CacheCluster.schema.json"
+    }
+  }
+}

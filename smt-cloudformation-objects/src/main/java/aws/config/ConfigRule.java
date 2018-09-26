@@ -78,7 +78,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
      * 
      */
-    @JsonProperty("ConfigRuleName")
     public CharSequence getConfigRuleName() {
         return configRuleName;
     }
@@ -87,7 +86,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
      * 
      */
-    @JsonProperty("ConfigRuleName")
     public void setConfigRuleName(CharSequence configRuleName) {
         this.configRuleName = configRuleName;
     }
@@ -101,7 +99,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -110,7 +107,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -124,7 +120,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
-    @JsonProperty("InputParameters")
     public InputParameters getInputParameters() {
         return inputParameters;
     }
@@ -133,7 +128,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
-    @JsonProperty("InputParameters")
     public void setInputParameters(InputParameters inputParameters) {
         this.inputParameters = inputParameters;
     }
@@ -147,7 +141,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
      * 
      */
-    @JsonProperty("MaximumExecutionFrequency")
     public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
@@ -156,7 +149,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
      * 
      */
-    @JsonProperty("MaximumExecutionFrequency")
     public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
@@ -172,7 +164,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
-    @JsonProperty("Scope")
     public Scope getScope() {
         return scope;
     }
@@ -183,7 +174,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
-    @JsonProperty("Scope")
     public void setScope(Scope scope) {
         this.scope = scope;
     }
@@ -199,7 +189,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
-    @JsonProperty("Source")
     public OrganizationAggregationSource getSource() {
         return source;
     }
@@ -210,7 +199,6 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
-    @JsonProperty("Source")
     public void setSource(OrganizationAggregationSource source) {
         this.source = source;
     }

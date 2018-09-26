@@ -41,12 +41,26 @@ public class DeploymentConfigResource
     private DeploymentConfig properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public DeploymentConfigResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public DeploymentConfigResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * DeploymentConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public DeploymentConfig getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class DeploymentConfigResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(DeploymentConfig properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class DeploymentConfigResource
     @Override
     public DeploymentConfigResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public DeploymentConfigResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

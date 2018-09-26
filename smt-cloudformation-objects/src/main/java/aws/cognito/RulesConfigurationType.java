@@ -36,7 +36,6 @@ public class RulesConfigurationType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules
      * 
      */
-    @JsonProperty("Rules")
     public List<MappingRule> getRules() {
         return rules;
     }
@@ -45,7 +44,6 @@ public class RulesConfigurationType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules
      * 
      */
-    @JsonProperty("Rules")
     public void setRules(List<MappingRule> rules) {
         this.rules = rules;
     }

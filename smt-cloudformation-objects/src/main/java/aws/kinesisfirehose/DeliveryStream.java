@@ -102,7 +102,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamname
      * 
      */
-    @JsonProperty("DeliveryStreamName")
     public CharSequence getDeliveryStreamName() {
         return deliveryStreamName;
     }
@@ -111,7 +110,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamname
      * 
      */
-    @JsonProperty("DeliveryStreamName")
     public void setDeliveryStreamName(CharSequence deliveryStreamName) {
         this.deliveryStreamName = deliveryStreamName;
     }
@@ -125,7 +123,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamtype
      * 
      */
-    @JsonProperty("DeliveryStreamType")
     public CharSequence getDeliveryStreamType() {
         return deliveryStreamType;
     }
@@ -134,7 +131,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamtype
      * 
      */
-    @JsonProperty("DeliveryStreamType")
     public void setDeliveryStreamType(CharSequence deliveryStreamType) {
         this.deliveryStreamType = deliveryStreamType;
     }
@@ -150,7 +146,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html
      * 
      */
-    @JsonProperty("ElasticsearchDestinationConfiguration")
     public ElasticsearchDestinationConfiguration getElasticsearchDestinationConfiguration() {
         return elasticsearchDestinationConfiguration;
     }
@@ -161,7 +156,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html
      * 
      */
-    @JsonProperty("ElasticsearchDestinationConfiguration")
     public void setElasticsearchDestinationConfiguration(ElasticsearchDestinationConfiguration elasticsearchDestinationConfiguration) {
         this.elasticsearchDestinationConfiguration = elasticsearchDestinationConfiguration;
     }
@@ -177,7 +171,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html
      * 
      */
-    @JsonProperty("ExtendedS3DestinationConfiguration")
     public ExtendedS3DestinationConfiguration getExtendedS3DestinationConfiguration() {
         return extendedS3DestinationConfiguration;
     }
@@ -188,7 +181,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html
      * 
      */
-    @JsonProperty("ExtendedS3DestinationConfiguration")
     public void setExtendedS3DestinationConfiguration(ExtendedS3DestinationConfiguration extendedS3DestinationConfiguration) {
         this.extendedS3DestinationConfiguration = extendedS3DestinationConfiguration;
     }
@@ -204,7 +196,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html
      * 
      */
-    @JsonProperty("KinesisStreamSourceConfiguration")
     public KinesisStreamSourceConfiguration getKinesisStreamSourceConfiguration() {
         return kinesisStreamSourceConfiguration;
     }
@@ -215,7 +206,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html
      * 
      */
-    @JsonProperty("KinesisStreamSourceConfiguration")
     public void setKinesisStreamSourceConfiguration(KinesisStreamSourceConfiguration kinesisStreamSourceConfiguration) {
         this.kinesisStreamSourceConfiguration = kinesisStreamSourceConfiguration;
     }
@@ -231,7 +221,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html
      * 
      */
-    @JsonProperty("RedshiftDestinationConfiguration")
     public RedshiftDestinationConfiguration getRedshiftDestinationConfiguration() {
         return redshiftDestinationConfiguration;
     }
@@ -242,7 +231,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html
      * 
      */
-    @JsonProperty("RedshiftDestinationConfiguration")
     public void setRedshiftDestinationConfiguration(RedshiftDestinationConfiguration redshiftDestinationConfiguration) {
         this.redshiftDestinationConfiguration = redshiftDestinationConfiguration;
     }
@@ -258,7 +246,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
-    @JsonProperty("S3DestinationConfiguration")
     public S3DestinationConfiguration getS3DestinationConfiguration() {
         return s3DestinationConfiguration;
     }
@@ -269,7 +256,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
-    @JsonProperty("S3DestinationConfiguration")
     public void setS3DestinationConfiguration(S3DestinationConfiguration s3DestinationConfiguration) {
         this.s3DestinationConfiguration = s3DestinationConfiguration;
     }
@@ -285,7 +271,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html
      * 
      */
-    @JsonProperty("SplunkDestinationConfiguration")
     public SplunkDestinationConfiguration getSplunkDestinationConfiguration() {
         return splunkDestinationConfiguration;
     }
@@ -296,7 +281,6 @@ public class DeliveryStream {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html
      * 
      */
-    @JsonProperty("SplunkDestinationConfiguration")
     public void setSplunkDestinationConfiguration(SplunkDestinationConfiguration splunkDestinationConfiguration) {
         this.splunkDestinationConfiguration = splunkDestinationConfiguration;
     }

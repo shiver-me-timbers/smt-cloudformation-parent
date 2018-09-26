@@ -41,12 +41,26 @@ public class PermissionResource
     private Permission properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PermissionResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PermissionResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Permission
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
      * 
      */
-    @JsonProperty("Properties")
     public Permission getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PermissionResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-permission.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Permission properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PermissionResource
     @Override
     public PermissionResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PermissionResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

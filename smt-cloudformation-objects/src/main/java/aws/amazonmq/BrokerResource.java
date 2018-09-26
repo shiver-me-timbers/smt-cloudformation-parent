@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class BrokerResource
     extends Resource
+    implements HasAttributes<BrokerAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class BrokerResource
     private Broker properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BrokerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BrokerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Broker
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
      * 
      */
-    @JsonProperty("Properties")
     public Broker getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class BrokerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Broker properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class BrokerResource
     @Override
     public BrokerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BrokerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

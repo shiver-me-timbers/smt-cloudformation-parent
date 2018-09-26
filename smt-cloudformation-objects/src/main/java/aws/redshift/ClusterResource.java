@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ClusterResource
     extends Resource
+    implements HasAttributes<ClusterAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ClusterResource
     private Cluster properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ClusterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ClusterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Cluster
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
      * 
      */
-    @JsonProperty("Properties")
     public Cluster getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ClusterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Cluster properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ClusterResource
     @Override
     public ClusterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ClusterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

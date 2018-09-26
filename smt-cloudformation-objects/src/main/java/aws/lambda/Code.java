@@ -58,7 +58,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public CharSequence getS3Bucket() {
         return s3Bucket;
     }
@@ -67,7 +66,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket
      * 
      */
-    @JsonProperty("S3Bucket")
     public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
@@ -81,7 +79,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key
      * 
      */
-    @JsonProperty("S3Key")
     public CharSequence getS3Key() {
         return s3Key;
     }
@@ -90,7 +87,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key
      * 
      */
-    @JsonProperty("S3Key")
     public void setS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
     }
@@ -104,7 +100,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion
      * 
      */
-    @JsonProperty("S3ObjectVersion")
     public CharSequence getS3ObjectVersion() {
         return s3ObjectVersion;
     }
@@ -113,7 +108,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion
      * 
      */
-    @JsonProperty("S3ObjectVersion")
     public void setS3ObjectVersion(CharSequence s3ObjectVersion) {
         this.s3ObjectVersion = s3ObjectVersion;
     }
@@ -127,7 +121,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile
      * 
      */
-    @JsonProperty("ZipFile")
     public CharSequence getZipFile() {
         return zipFile;
     }
@@ -136,7 +129,6 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile
      * 
      */
-    @JsonProperty("ZipFile")
     public void setZipFile(CharSequence zipFile) {
         this.zipFile = zipFile;
     }

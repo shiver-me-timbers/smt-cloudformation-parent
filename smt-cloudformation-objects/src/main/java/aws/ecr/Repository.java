@@ -54,7 +54,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
-    @JsonProperty("LifecyclePolicy")
     public LifecyclePolicy getLifecyclePolicy() {
         return lifecyclePolicy;
     }
@@ -65,7 +64,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
-    @JsonProperty("LifecyclePolicy")
     public void setLifecyclePolicy(LifecyclePolicy lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
     }
@@ -79,7 +77,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
      */
-    @JsonProperty("RepositoryName")
     public CharSequence getRepositoryName() {
         return repositoryName;
     }
@@ -88,7 +85,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
      */
-    @JsonProperty("RepositoryName")
     public void setRepositoryName(CharSequence repositoryName) {
         this.repositoryName = repositoryName;
     }
@@ -102,7 +98,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
-    @JsonProperty("RepositoryPolicyText")
     public RepositoryPolicyText getRepositoryPolicyText() {
         return repositoryPolicyText;
     }
@@ -111,7 +106,6 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
-    @JsonProperty("RepositoryPolicyText")
     public void setRepositoryPolicyText(RepositoryPolicyText repositoryPolicyText) {
         this.repositoryPolicyText = repositoryPolicyText;
     }

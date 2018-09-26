@@ -98,7 +98,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
      * 
      */
-    @JsonProperty("CidrIp")
     public CharSequence getCidrIp() {
         return cidrIp;
     }
@@ -107,7 +106,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
      * 
      */
-    @JsonProperty("CidrIp")
     public void setCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
     }
@@ -121,7 +119,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6
      * 
      */
-    @JsonProperty("CidrIpv6")
     public CharSequence getCidrIpv6() {
         return cidrIpv6;
     }
@@ -130,7 +127,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6
      * 
      */
-    @JsonProperty("CidrIpv6")
     public void setCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
     }
@@ -144,7 +140,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -153,7 +148,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -167,7 +161,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport
      * 
      */
-    @JsonProperty("FromPort")
     public Integer getFromPort() {
         return fromPort;
     }
@@ -176,7 +169,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport
      * 
      */
-    @JsonProperty("FromPort")
     public void setFromPort(Integer fromPort) {
         this.fromPort = fromPort;
     }
@@ -190,7 +182,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
      */
-    @JsonProperty("IpProtocol")
     public CharSequence getIpProtocol() {
         return ipProtocol;
     }
@@ -199,7 +190,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
      */
-    @JsonProperty("IpProtocol")
     public void setIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
     }
@@ -213,7 +203,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupid
      * 
      */
-    @JsonProperty("SourceSecurityGroupId")
     public CharSequence getSourceSecurityGroupId() {
         return sourceSecurityGroupId;
     }
@@ -222,7 +211,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupid
      * 
      */
-    @JsonProperty("SourceSecurityGroupId")
     public void setSourceSecurityGroupId(CharSequence sourceSecurityGroupId) {
         this.sourceSecurityGroupId = sourceSecurityGroupId;
     }
@@ -236,7 +224,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupname
      * 
      */
-    @JsonProperty("SourceSecurityGroupName")
     public CharSequence getSourceSecurityGroupName() {
         return sourceSecurityGroupName;
     }
@@ -245,7 +232,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupname
      * 
      */
-    @JsonProperty("SourceSecurityGroupName")
     public void setSourceSecurityGroupName(CharSequence sourceSecurityGroupName) {
         this.sourceSecurityGroupName = sourceSecurityGroupName;
     }
@@ -259,7 +245,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupownerid
      * 
      */
-    @JsonProperty("SourceSecurityGroupOwnerId")
     public CharSequence getSourceSecurityGroupOwnerId() {
         return sourceSecurityGroupOwnerId;
     }
@@ -268,7 +253,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupownerid
      * 
      */
-    @JsonProperty("SourceSecurityGroupOwnerId")
     public void setSourceSecurityGroupOwnerId(CharSequence sourceSecurityGroupOwnerId) {
         this.sourceSecurityGroupOwnerId = sourceSecurityGroupOwnerId;
     }
@@ -282,7 +266,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport
      * 
      */
-    @JsonProperty("ToPort")
     public Integer getToPort() {
         return toPort;
     }
@@ -291,7 +274,6 @@ public class Ingress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport
      * 
      */
-    @JsonProperty("ToPort")
     public void setToPort(Integer toPort) {
         this.toPort = toPort;
     }

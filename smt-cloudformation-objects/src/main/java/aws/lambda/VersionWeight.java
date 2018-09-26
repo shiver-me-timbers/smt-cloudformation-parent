@@ -42,7 +42,6 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionversion
      * 
      */
-    @JsonProperty("FunctionVersion")
     public CharSequence getFunctionVersion() {
         return functionVersion;
     }
@@ -51,7 +50,6 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionversion
      * 
      */
-    @JsonProperty("FunctionVersion")
     public void setFunctionVersion(CharSequence functionVersion) {
         this.functionVersion = functionVersion;
     }
@@ -65,7 +63,6 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionweight
      * 
      */
-    @JsonProperty("FunctionWeight")
     public Double getFunctionWeight() {
         return functionWeight;
     }
@@ -74,7 +71,6 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionweight
      * 
      */
-    @JsonProperty("FunctionWeight")
     public void setFunctionWeight(Double functionWeight) {
         this.functionWeight = functionWeight;
     }

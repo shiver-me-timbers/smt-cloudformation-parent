@@ -46,7 +46,6 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html
      * 
      */
-    @JsonProperty("VolumeSpecification")
     public VolumeSpecification getVolumeSpecification() {
         return volumeSpecification;
     }
@@ -57,7 +56,6 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html
      * 
      */
-    @JsonProperty("VolumeSpecification")
     public void setVolumeSpecification(VolumeSpecification volumeSpecification) {
         this.volumeSpecification = volumeSpecification;
     }
@@ -71,7 +69,6 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsblockdeviceconfig.html#cfn-elasticmapreduce-cluster-ebsblockdeviceconfig-volumesperinstance
      * 
      */
-    @JsonProperty("VolumesPerInstance")
     public Integer getVolumesPerInstance() {
         return volumesPerInstance;
     }
@@ -80,7 +77,6 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsblockdeviceconfig.html#cfn-elasticmapreduce-cluster-ebsblockdeviceconfig-volumesperinstance
      * 
      */
-    @JsonProperty("VolumesPerInstance")
     public void setVolumesPerInstance(Integer volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
     }

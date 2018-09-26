@@ -52,7 +52,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products
      * 
      */
-    @JsonProperty("Products")
     public List<CharSequence> getProducts() {
         return products;
     }
@@ -61,7 +60,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products
      * 
      */
-    @JsonProperty("Products")
     public void setProducts(List<CharSequence> products) {
         this.products = products;
     }
@@ -75,7 +73,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-configuration
      * 
      */
-    @JsonProperty("Configuration")
     public CharSequence getConfiguration() {
         return configuration;
     }
@@ -84,7 +81,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-configuration
      * 
      */
-    @JsonProperty("Configuration")
     public void setConfiguration(CharSequence configuration) {
         this.configuration = configuration;
     }
@@ -98,7 +94,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -107,7 +102,6 @@ public class PatchSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

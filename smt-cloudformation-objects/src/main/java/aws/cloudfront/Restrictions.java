@@ -38,7 +38,6 @@ public class Restrictions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html
      * 
      */
-    @JsonProperty("GeoRestriction")
     public GeoRestriction getGeoRestriction() {
         return geoRestriction;
     }
@@ -49,7 +48,6 @@ public class Restrictions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html
      * 
      */
-    @JsonProperty("GeoRestriction")
     public void setGeoRestriction(GeoRestriction geoRestriction) {
         this.geoRestriction = geoRestriction;
     }

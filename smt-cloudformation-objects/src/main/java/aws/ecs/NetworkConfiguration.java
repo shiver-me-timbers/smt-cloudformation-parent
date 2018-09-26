@@ -38,7 +38,6 @@ public class NetworkConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html
      * 
      */
-    @JsonProperty("AwsvpcConfiguration")
     public AwsVpcConfiguration getAwsvpcConfiguration() {
         return awsvpcConfiguration;
     }
@@ -49,7 +48,6 @@ public class NetworkConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html
      * 
      */
-    @JsonProperty("AwsvpcConfiguration")
     public void setAwsvpcConfiguration(AwsVpcConfiguration awsvpcConfiguration) {
         this.awsvpcConfiguration = awsvpcConfiguration;
     }

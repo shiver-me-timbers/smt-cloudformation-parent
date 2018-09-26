@@ -60,7 +60,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionevents
      * 
      */
-    @JsonProperty("ConnectionEvents")
     public List<CharSequence> getConnectionEvents() {
         return connectionEvents;
     }
@@ -69,7 +68,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionevents
      * 
      */
-    @JsonProperty("ConnectionEvents")
     public void setConnectionEvents(List<CharSequence> connectionEvents) {
         this.connectionEvents = connectionEvents;
     }
@@ -83,7 +81,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-vpcendpointid
      * 
      */
-    @JsonProperty("VPCEndpointId")
     public CharSequence getVPCEndpointId() {
         return vPCEndpointId;
     }
@@ -92,7 +89,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-vpcendpointid
      * 
      */
-    @JsonProperty("VPCEndpointId")
     public void setVPCEndpointId(CharSequence vPCEndpointId) {
         this.vPCEndpointId = vPCEndpointId;
     }
@@ -106,7 +102,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-serviceid
      * 
      */
-    @JsonProperty("ServiceId")
     public CharSequence getServiceId() {
         return serviceId;
     }
@@ -115,7 +110,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-serviceid
      * 
      */
-    @JsonProperty("ServiceId")
     public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }
@@ -129,7 +123,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionnotificationarn
      * 
      */
-    @JsonProperty("ConnectionNotificationArn")
     public CharSequence getConnectionNotificationArn() {
         return connectionNotificationArn;
     }
@@ -138,7 +131,6 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionnotificationarn
      * 
      */
-    @JsonProperty("ConnectionNotificationArn")
     public void setConnectionNotificationArn(CharSequence connectionNotificationArn) {
         this.connectionNotificationArn = connectionNotificationArn;
     }

@@ -41,12 +41,26 @@ public class PolicyResource
     private Policy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Policy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public Policy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Policy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PolicyResource
     @Override
     public PolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -46,7 +46,6 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsblockdeviceconfigs
      * 
      */
-    @JsonProperty("EbsBlockDeviceConfigs")
     public Set<EbsBlockDeviceConfig> getEbsBlockDeviceConfigs() {
         return ebsBlockDeviceConfigs;
     }
@@ -55,7 +54,6 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsblockdeviceconfigs
      * 
      */
-    @JsonProperty("EbsBlockDeviceConfigs")
     public void setEbsBlockDeviceConfigs(Set<EbsBlockDeviceConfig> ebsBlockDeviceConfigs) {
         this.ebsBlockDeviceConfigs = ebsBlockDeviceConfigs;
     }
@@ -69,7 +67,6 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -78,7 +75,6 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }

@@ -44,7 +44,6 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes
      * 
      */
-    @JsonProperty("NotificationTypes")
     public List<CharSequence> getNotificationTypes() {
         return notificationTypes;
     }
@@ -53,7 +52,6 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes
      * 
      */
-    @JsonProperty("NotificationTypes")
     public void setNotificationTypes(List<CharSequence> notificationTypes) {
         this.notificationTypes = notificationTypes;
     }
@@ -67,7 +65,6 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn
      * 
      */
-    @JsonProperty("TopicARN")
     public CharSequence getTopicARN() {
         return topicARN;
     }
@@ -76,7 +73,6 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn
      * 
      */
-    @JsonProperty("TopicARN")
     public void setTopicARN(CharSequence topicARN) {
         this.topicARN = topicARN;
     }

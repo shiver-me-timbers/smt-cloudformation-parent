@@ -41,12 +41,26 @@ public class ThingPrincipalAttachmentResource
     private ThingPrincipalAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ThingPrincipalAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ThingPrincipalAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ThingPrincipalAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public ThingPrincipalAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ThingPrincipalAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ThingPrincipalAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ThingPrincipalAttachmentResource
     @Override
     public ThingPrincipalAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ThingPrincipalAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

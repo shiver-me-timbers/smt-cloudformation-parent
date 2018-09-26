@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SecurityGroupResource.schema.json",
+  "title" : "SecurityGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.SecurityGroupResource",
+  "javaInterfaces" : [ "aws.HasAttributes<SecurityGroupAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_EC2_SecurityGroup.schema.json"
+    }
+  }
+}

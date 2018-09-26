@@ -269,7 +269,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-atrestencryptionenabled
      * 
      */
-    @JsonProperty("AtRestEncryptionEnabled")
     public Boolean getAtRestEncryptionEnabled() {
         return atRestEncryptionEnabled;
     }
@@ -278,7 +277,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-atrestencryptionenabled
      * 
      */
-    @JsonProperty("AtRestEncryptionEnabled")
     public void setAtRestEncryptionEnabled(Boolean atRestEncryptionEnabled) {
         this.atRestEncryptionEnabled = atRestEncryptionEnabled;
     }
@@ -292,7 +290,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-authtoken
      * 
      */
-    @JsonProperty("AuthToken")
     public CharSequence getAuthToken() {
         return authToken;
     }
@@ -301,7 +298,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-authtoken
      * 
      */
-    @JsonProperty("AuthToken")
     public void setAuthToken(CharSequence authToken) {
         this.authToken = authToken;
     }
@@ -315,7 +311,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -324,7 +319,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-autominorversionupgrade
      * 
      */
-    @JsonProperty("AutoMinorVersionUpgrade")
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -338,7 +332,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-automaticfailoverenabled
      * 
      */
-    @JsonProperty("AutomaticFailoverEnabled")
     public Boolean getAutomaticFailoverEnabled() {
         return automaticFailoverEnabled;
     }
@@ -347,7 +340,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-automaticfailoverenabled
      * 
      */
-    @JsonProperty("AutomaticFailoverEnabled")
     public void setAutomaticFailoverEnabled(Boolean automaticFailoverEnabled) {
         this.automaticFailoverEnabled = automaticFailoverEnabled;
     }
@@ -361,7 +353,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachenodetype
      * 
      */
-    @JsonProperty("CacheNodeType")
     public CharSequence getCacheNodeType() {
         return cacheNodeType;
     }
@@ -370,7 +361,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachenodetype
      * 
      */
-    @JsonProperty("CacheNodeType")
     public void setCacheNodeType(CharSequence cacheNodeType) {
         this.cacheNodeType = cacheNodeType;
     }
@@ -384,7 +374,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cacheparametergroupname
      * 
      */
-    @JsonProperty("CacheParameterGroupName")
     public CharSequence getCacheParameterGroupName() {
         return cacheParameterGroupName;
     }
@@ -393,7 +382,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cacheparametergroupname
      * 
      */
-    @JsonProperty("CacheParameterGroupName")
     public void setCacheParameterGroupName(CharSequence cacheParameterGroupName) {
         this.cacheParameterGroupName = cacheParameterGroupName;
     }
@@ -407,7 +395,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesecuritygroupnames
      * 
      */
-    @JsonProperty("CacheSecurityGroupNames")
     public Set<CharSequence> getCacheSecurityGroupNames() {
         return cacheSecurityGroupNames;
     }
@@ -416,7 +403,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesecuritygroupnames
      * 
      */
-    @JsonProperty("CacheSecurityGroupNames")
     public void setCacheSecurityGroupNames(Set<CharSequence> cacheSecurityGroupNames) {
         this.cacheSecurityGroupNames = cacheSecurityGroupNames;
     }
@@ -430,7 +416,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public CharSequence getCacheSubnetGroupName() {
         return cacheSubnetGroupName;
     }
@@ -439,7 +424,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-cachesubnetgroupname
      * 
      */
-    @JsonProperty("CacheSubnetGroupName")
     public void setCacheSubnetGroupName(CharSequence cacheSubnetGroupName) {
         this.cacheSubnetGroupName = cacheSubnetGroupName;
     }
@@ -453,7 +437,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engine
      * 
      */
-    @JsonProperty("Engine")
     public CharSequence getEngine() {
         return engine;
     }
@@ -462,7 +445,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engine
      * 
      */
-    @JsonProperty("Engine")
     public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
@@ -476,7 +458,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -485,7 +466,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-engineversion
      * 
      */
-    @JsonProperty("EngineVersion")
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -499,7 +479,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration
      * 
      */
-    @JsonProperty("NodeGroupConfiguration")
     public Set<NodeGroupConfiguration> getNodeGroupConfiguration() {
         return nodeGroupConfiguration;
     }
@@ -508,7 +487,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration
      * 
      */
-    @JsonProperty("NodeGroupConfiguration")
     public void setNodeGroupConfiguration(Set<NodeGroupConfiguration> nodeGroupConfiguration) {
         this.nodeGroupConfiguration = nodeGroupConfiguration;
     }
@@ -522,7 +500,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-notificationtopicarn
      * 
      */
-    @JsonProperty("NotificationTopicArn")
     public CharSequence getNotificationTopicArn() {
         return notificationTopicArn;
     }
@@ -531,7 +508,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-notificationtopicarn
      * 
      */
-    @JsonProperty("NotificationTopicArn")
     public void setNotificationTopicArn(CharSequence notificationTopicArn) {
         this.notificationTopicArn = notificationTopicArn;
     }
@@ -545,7 +521,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numcacheclusters
      * 
      */
-    @JsonProperty("NumCacheClusters")
     public Integer getNumCacheClusters() {
         return numCacheClusters;
     }
@@ -554,7 +529,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numcacheclusters
      * 
      */
-    @JsonProperty("NumCacheClusters")
     public void setNumCacheClusters(Integer numCacheClusters) {
         this.numCacheClusters = numCacheClusters;
     }
@@ -568,7 +542,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numnodegroups
      * 
      */
-    @JsonProperty("NumNodeGroups")
     public Integer getNumNodeGroups() {
         return numNodeGroups;
     }
@@ -577,7 +550,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-numnodegroups
      * 
      */
-    @JsonProperty("NumNodeGroups")
     public void setNumNodeGroups(Integer numNodeGroups) {
         this.numNodeGroups = numNodeGroups;
     }
@@ -591,7 +563,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-port
      * 
      */
-    @JsonProperty("Port")
     public Integer getPort() {
         return port;
     }
@@ -600,7 +571,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-port
      * 
      */
-    @JsonProperty("Port")
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -614,7 +584,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredcacheclusterazs
      * 
      */
-    @JsonProperty("PreferredCacheClusterAZs")
     public Set<CharSequence> getPreferredCacheClusterAZs() {
         return preferredCacheClusterAZs;
     }
@@ -623,7 +592,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredcacheclusterazs
      * 
      */
-    @JsonProperty("PreferredCacheClusterAZs")
     public void setPreferredCacheClusterAZs(Set<CharSequence> preferredCacheClusterAZs) {
         this.preferredCacheClusterAZs = preferredCacheClusterAZs;
     }
@@ -637,7 +605,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredmaintenancewindow
      * 
      */
-    @JsonProperty("PreferredMaintenanceWindow")
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -646,7 +613,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-preferredmaintenancewindow
      * 
      */
-    @JsonProperty("PreferredMaintenanceWindow")
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -660,7 +626,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-primaryclusterid
      * 
      */
-    @JsonProperty("PrimaryClusterId")
     public CharSequence getPrimaryClusterId() {
         return primaryClusterId;
     }
@@ -669,7 +634,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-primaryclusterid
      * 
      */
-    @JsonProperty("PrimaryClusterId")
     public void setPrimaryClusterId(CharSequence primaryClusterId) {
         this.primaryClusterId = primaryClusterId;
     }
@@ -683,7 +647,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicaspernodegroup
      * 
      */
-    @JsonProperty("ReplicasPerNodeGroup")
     public Integer getReplicasPerNodeGroup() {
         return replicasPerNodeGroup;
     }
@@ -692,7 +655,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicaspernodegroup
      * 
      */
-    @JsonProperty("ReplicasPerNodeGroup")
     public void setReplicasPerNodeGroup(Integer replicasPerNodeGroup) {
         this.replicasPerNodeGroup = replicasPerNodeGroup;
     }
@@ -706,7 +668,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupdescription
      * 
      */
-    @JsonProperty("ReplicationGroupDescription")
     public CharSequence getReplicationGroupDescription() {
         return replicationGroupDescription;
     }
@@ -715,7 +676,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupdescription
      * 
      */
-    @JsonProperty("ReplicationGroupDescription")
     public void setReplicationGroupDescription(CharSequence replicationGroupDescription) {
         this.replicationGroupDescription = replicationGroupDescription;
     }
@@ -729,7 +689,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupid
      * 
      */
-    @JsonProperty("ReplicationGroupId")
     public CharSequence getReplicationGroupId() {
         return replicationGroupId;
     }
@@ -738,7 +697,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-replicationgroupid
      * 
      */
-    @JsonProperty("ReplicationGroupId")
     public void setReplicationGroupId(CharSequence replicationGroupId) {
         this.replicationGroupId = replicationGroupId;
     }
@@ -752,7 +710,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public Set<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -761,7 +718,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public void setSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -775,7 +731,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotarns
      * 
      */
-    @JsonProperty("SnapshotArns")
     public Set<CharSequence> getSnapshotArns() {
         return snapshotArns;
     }
@@ -784,7 +739,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotarns
      * 
      */
-    @JsonProperty("SnapshotArns")
     public void setSnapshotArns(Set<CharSequence> snapshotArns) {
         this.snapshotArns = snapshotArns;
     }
@@ -798,7 +752,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotname
      * 
      */
-    @JsonProperty("SnapshotName")
     public CharSequence getSnapshotName() {
         return snapshotName;
     }
@@ -807,7 +760,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotname
      * 
      */
-    @JsonProperty("SnapshotName")
     public void setSnapshotName(CharSequence snapshotName) {
         this.snapshotName = snapshotName;
     }
@@ -821,7 +773,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotretentionlimit
      * 
      */
-    @JsonProperty("SnapshotRetentionLimit")
     public Integer getSnapshotRetentionLimit() {
         return snapshotRetentionLimit;
     }
@@ -830,7 +781,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotretentionlimit
      * 
      */
-    @JsonProperty("SnapshotRetentionLimit")
     public void setSnapshotRetentionLimit(Integer snapshotRetentionLimit) {
         this.snapshotRetentionLimit = snapshotRetentionLimit;
     }
@@ -844,7 +794,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotwindow
      * 
      */
-    @JsonProperty("SnapshotWindow")
     public CharSequence getSnapshotWindow() {
         return snapshotWindow;
     }
@@ -853,7 +802,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshotwindow
      * 
      */
-    @JsonProperty("SnapshotWindow")
     public void setSnapshotWindow(CharSequence snapshotWindow) {
         this.snapshotWindow = snapshotWindow;
     }
@@ -867,7 +815,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshottingclusterid
      * 
      */
-    @JsonProperty("SnapshottingClusterId")
     public CharSequence getSnapshottingClusterId() {
         return snapshottingClusterId;
     }
@@ -876,7 +823,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-snapshottingclusterid
      * 
      */
-    @JsonProperty("SnapshottingClusterId")
     public void setSnapshottingClusterId(CharSequence snapshottingClusterId) {
         this.snapshottingClusterId = snapshottingClusterId;
     }
@@ -890,7 +836,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -899,7 +844,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -913,7 +857,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-transitencryptionenabled
      * 
      */
-    @JsonProperty("TransitEncryptionEnabled")
     public Boolean getTransitEncryptionEnabled() {
         return transitEncryptionEnabled;
     }
@@ -922,7 +865,6 @@ public class ReplicationGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-transitencryptionenabled
      * 
      */
-    @JsonProperty("TransitEncryptionEnabled")
     public void setTransitEncryptionEnabled(Boolean transitEncryptionEnabled) {
         this.transitEncryptionEnabled = transitEncryptionEnabled;
     }

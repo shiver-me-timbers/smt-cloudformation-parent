@@ -41,12 +41,26 @@ public class AcceptedPortfolioShareResource
     private AcceptedPortfolioShare properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AcceptedPortfolioShareResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AcceptedPortfolioShareResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * AcceptedPortfolioShare
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html
      * 
      */
-    @JsonProperty("Properties")
     public AcceptedPortfolioShare getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AcceptedPortfolioShareResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(AcceptedPortfolioShare properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AcceptedPortfolioShareResource
     @Override
     public AcceptedPortfolioShareResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AcceptedPortfolioShareResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

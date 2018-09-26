@@ -54,7 +54,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported
      * 
      */
-    @JsonProperty("AllSupported")
     public Boolean getAllSupported() {
         return allSupported;
     }
@@ -63,7 +62,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported
      * 
      */
-    @JsonProperty("AllSupported")
     public void setAllSupported(Boolean allSupported) {
         this.allSupported = allSupported;
     }
@@ -77,7 +75,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-includeglobalresourcetypes
      * 
      */
-    @JsonProperty("IncludeGlobalResourceTypes")
     public Boolean getIncludeGlobalResourceTypes() {
         return includeGlobalResourceTypes;
     }
@@ -86,7 +83,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-includeglobalresourcetypes
      * 
      */
-    @JsonProperty("IncludeGlobalResourceTypes")
     public void setIncludeGlobalResourceTypes(Boolean includeGlobalResourceTypes) {
         this.includeGlobalResourceTypes = includeGlobalResourceTypes;
     }
@@ -100,7 +96,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-resourcetypes
      * 
      */
-    @JsonProperty("ResourceTypes")
     public Set<CharSequence> getResourceTypes() {
         return resourceTypes;
     }
@@ -109,7 +104,6 @@ public class RecordingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-resourcetypes
      * 
      */
-    @JsonProperty("ResourceTypes")
     public void setResourceTypes(Set<CharSequence> resourceTypes) {
         this.resourceTypes = resourceTypes;
     }

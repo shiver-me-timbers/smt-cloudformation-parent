@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Logs_DestinationAttributes.schema.json",
+  "title" : "DestinationAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "aws.logs.DestinationAttributes"
+}

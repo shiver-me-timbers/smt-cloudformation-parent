@@ -58,7 +58,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval
      * 
      */
-    @JsonProperty("EmitInterval")
     public Integer getEmitInterval() {
         return emitInterval;
     }
@@ -67,7 +66,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval
      * 
      */
-    @JsonProperty("EmitInterval")
     public void setEmitInterval(Integer emitInterval) {
         this.emitInterval = emitInterval;
     }
@@ -81,7 +79,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -90,7 +87,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -104,7 +100,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketname
      * 
      */
-    @JsonProperty("S3BucketName")
     public CharSequence getS3BucketName() {
         return s3BucketName;
     }
@@ -113,7 +108,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketname
      * 
      */
-    @JsonProperty("S3BucketName")
     public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
@@ -127,7 +121,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketprefix
      * 
      */
-    @JsonProperty("S3BucketPrefix")
     public CharSequence getS3BucketPrefix() {
         return s3BucketPrefix;
     }
@@ -136,7 +129,6 @@ public class AccessLoggingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-s3bucketprefix
      * 
      */
-    @JsonProperty("S3BucketPrefix")
     public void setS3BucketPrefix(CharSequence s3BucketPrefix) {
         this.s3BucketPrefix = s3BucketPrefix;
     }

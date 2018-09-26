@@ -41,12 +41,26 @@ public class FilterResource
     private Filter properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public FilterResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public FilterResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Filter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
      * 
      */
-    @JsonProperty("Properties")
     public Filter getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class FilterResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Filter properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class FilterResource
     @Override
     public FilterResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public FilterResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

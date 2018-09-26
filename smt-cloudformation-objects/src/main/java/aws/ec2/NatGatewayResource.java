@@ -41,12 +41,26 @@ public class NatGatewayResource
     private NatGateway properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NatGatewayResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NatGatewayResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NatGateway
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public NatGateway getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class NatGatewayResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NatGateway properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class NatGatewayResource
     @Override
     public NatGatewayResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NatGatewayResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

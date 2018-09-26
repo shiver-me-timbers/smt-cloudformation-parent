@@ -42,7 +42,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname
      * 
      */
-    @JsonProperty("AliasName")
     public CharSequence getAliasName() {
         return aliasName;
     }
@@ -51,7 +50,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname
      * 
      */
-    @JsonProperty("AliasName")
     public void setAliasName(CharSequence aliasName) {
         this.aliasName = aliasName;
     }
@@ -65,7 +63,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid
      * 
      */
-    @JsonProperty("TargetKeyId")
     public CharSequence getTargetKeyId() {
         return targetKeyId;
     }
@@ -74,7 +71,6 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid
      * 
      */
-    @JsonProperty("TargetKeyId")
     public void setTargetKeyId(CharSequence targetKeyId) {
         this.targetKeyId = targetKeyId;
     }

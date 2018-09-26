@@ -44,7 +44,6 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt
      * 
      */
-    @JsonProperty("NonKeyAttributes")
     public List<CharSequence> getNonKeyAttributes() {
         return nonKeyAttributes;
     }
@@ -53,7 +52,6 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt
      * 
      */
-    @JsonProperty("NonKeyAttributes")
     public void setNonKeyAttributes(List<CharSequence> nonKeyAttributes) {
         this.nonKeyAttributes = nonKeyAttributes;
     }
@@ -67,7 +65,6 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype
      * 
      */
-    @JsonProperty("ProjectionType")
     public CharSequence getProjectionType() {
         return projectionType;
     }
@@ -76,7 +73,6 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype
      * 
      */
-    @JsonProperty("ProjectionType")
     public void setProjectionType(CharSequence projectionType) {
         this.projectionType = projectionType;
     }

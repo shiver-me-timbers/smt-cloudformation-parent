@@ -42,7 +42,6 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath
      * 
      */
-    @JsonProperty("JsonPath")
     public CharSequence getJsonPath() {
         return jsonPath;
     }
@@ -51,7 +50,6 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath
      * 
      */
-    @JsonProperty("JsonPath")
     public void setJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
     }
@@ -65,7 +63,6 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals
      * 
      */
-    @JsonProperty("MatchEquals")
     public CharSequence getMatchEquals() {
         return matchEquals;
     }
@@ -74,7 +71,6 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals
      * 
      */
-    @JsonProperty("MatchEquals")
     public void setMatchEquals(CharSequence matchEquals) {
         this.matchEquals = matchEquals;
     }

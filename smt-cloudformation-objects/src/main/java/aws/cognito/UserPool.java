@@ -176,7 +176,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
      * 
      */
-    @JsonProperty("UserPoolTags")
     public UserPoolTags getUserPoolTags() {
         return userPoolTags;
     }
@@ -185,7 +184,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
      * 
      */
-    @JsonProperty("UserPoolTags")
     public void setUserPoolTags(UserPoolTags userPoolTags) {
         this.userPoolTags = userPoolTags;
     }
@@ -201,7 +199,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html
      * 
      */
-    @JsonProperty("Policies")
     public Policies getPolicies() {
         return policies;
     }
@@ -212,7 +209,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html
      * 
      */
-    @JsonProperty("Policies")
     public void setPolicies(Policies policies) {
         this.policies = policies;
     }
@@ -226,7 +222,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration
      * 
      */
-    @JsonProperty("MfaConfiguration")
     public CharSequence getMfaConfiguration() {
         return mfaConfiguration;
     }
@@ -235,7 +230,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration
      * 
      */
-    @JsonProperty("MfaConfiguration")
     public void setMfaConfiguration(CharSequence mfaConfiguration) {
         this.mfaConfiguration = mfaConfiguration;
     }
@@ -249,7 +243,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-schema
      * 
      */
-    @JsonProperty("Schema")
     public List<SchemaAttribute> getSchema() {
         return schema;
     }
@@ -258,7 +251,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-schema
      * 
      */
-    @JsonProperty("Schema")
     public void setSchema(List<SchemaAttribute> schema) {
         this.schema = schema;
     }
@@ -274,7 +266,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html
      * 
      */
-    @JsonProperty("AdminCreateUserConfig")
     public AdminCreateUserConfig getAdminCreateUserConfig() {
         return adminCreateUserConfig;
     }
@@ -285,7 +276,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html
      * 
      */
-    @JsonProperty("AdminCreateUserConfig")
     public void setAdminCreateUserConfig(AdminCreateUserConfig adminCreateUserConfig) {
         this.adminCreateUserConfig = adminCreateUserConfig;
     }
@@ -299,7 +289,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage
      * 
      */
-    @JsonProperty("SmsAuthenticationMessage")
     public CharSequence getSmsAuthenticationMessage() {
         return smsAuthenticationMessage;
     }
@@ -308,7 +297,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage
      * 
      */
-    @JsonProperty("SmsAuthenticationMessage")
     public void setSmsAuthenticationMessage(CharSequence smsAuthenticationMessage) {
         this.smsAuthenticationMessage = smsAuthenticationMessage;
     }
@@ -322,7 +310,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname
      * 
      */
-    @JsonProperty("UserPoolName")
     public CharSequence getUserPoolName() {
         return userPoolName;
     }
@@ -331,7 +318,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpoolname
      * 
      */
-    @JsonProperty("UserPoolName")
     public void setUserPoolName(CharSequence userPoolName) {
         this.userPoolName = userPoolName;
     }
@@ -345,7 +331,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage
      * 
      */
-    @JsonProperty("SmsVerificationMessage")
     public CharSequence getSmsVerificationMessage() {
         return smsVerificationMessage;
     }
@@ -354,7 +339,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage
      * 
      */
-    @JsonProperty("SmsVerificationMessage")
     public void setSmsVerificationMessage(CharSequence smsVerificationMessage) {
         this.smsVerificationMessage = smsVerificationMessage;
     }
@@ -370,7 +354,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html
      * 
      */
-    @JsonProperty("EmailConfiguration")
     public EmailConfiguration getEmailConfiguration() {
         return emailConfiguration;
     }
@@ -381,7 +364,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html
      * 
      */
-    @JsonProperty("EmailConfiguration")
     public void setEmailConfiguration(EmailConfiguration emailConfiguration) {
         this.emailConfiguration = emailConfiguration;
     }
@@ -397,7 +379,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html
      * 
      */
-    @JsonProperty("SmsConfiguration")
     public SmsConfiguration getSmsConfiguration() {
         return smsConfiguration;
     }
@@ -408,7 +389,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html
      * 
      */
-    @JsonProperty("SmsConfiguration")
     public void setSmsConfiguration(SmsConfiguration smsConfiguration) {
         this.smsConfiguration = smsConfiguration;
     }
@@ -422,7 +402,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes
      * 
      */
-    @JsonProperty("AliasAttributes")
     public List<CharSequence> getAliasAttributes() {
         return aliasAttributes;
     }
@@ -431,7 +410,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes
      * 
      */
-    @JsonProperty("AliasAttributes")
     public void setAliasAttributes(List<CharSequence> aliasAttributes) {
         this.aliasAttributes = aliasAttributes;
     }
@@ -445,7 +423,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject
      * 
      */
-    @JsonProperty("EmailVerificationSubject")
     public CharSequence getEmailVerificationSubject() {
         return emailVerificationSubject;
     }
@@ -454,7 +431,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject
      * 
      */
-    @JsonProperty("EmailVerificationSubject")
     public void setEmailVerificationSubject(CharSequence emailVerificationSubject) {
         this.emailVerificationSubject = emailVerificationSubject;
     }
@@ -470,7 +446,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html
      * 
      */
-    @JsonProperty("LambdaConfig")
     public LambdaConfig getLambdaConfig() {
         return lambdaConfig;
     }
@@ -481,7 +456,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html
      * 
      */
-    @JsonProperty("LambdaConfig")
     public void setLambdaConfig(LambdaConfig lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
@@ -495,7 +469,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes
      * 
      */
-    @JsonProperty("UsernameAttributes")
     public List<CharSequence> getUsernameAttributes() {
         return usernameAttributes;
     }
@@ -504,7 +477,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes
      * 
      */
-    @JsonProperty("UsernameAttributes")
     public void setUsernameAttributes(List<CharSequence> usernameAttributes) {
         this.usernameAttributes = usernameAttributes;
     }
@@ -518,7 +490,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-autoverifiedattributes
      * 
      */
-    @JsonProperty("AutoVerifiedAttributes")
     public List<CharSequence> getAutoVerifiedAttributes() {
         return autoVerifiedAttributes;
     }
@@ -527,7 +498,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-autoverifiedattributes
      * 
      */
-    @JsonProperty("AutoVerifiedAttributes")
     public void setAutoVerifiedAttributes(List<CharSequence> autoVerifiedAttributes) {
         this.autoVerifiedAttributes = autoVerifiedAttributes;
     }
@@ -543,7 +513,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html
      * 
      */
-    @JsonProperty("DeviceConfiguration")
     public DeviceConfiguration getDeviceConfiguration() {
         return deviceConfiguration;
     }
@@ -554,7 +523,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html
      * 
      */
-    @JsonProperty("DeviceConfiguration")
     public void setDeviceConfiguration(DeviceConfiguration deviceConfiguration) {
         this.deviceConfiguration = deviceConfiguration;
     }
@@ -568,7 +536,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage
      * 
      */
-    @JsonProperty("EmailVerificationMessage")
     public CharSequence getEmailVerificationMessage() {
         return emailVerificationMessage;
     }
@@ -577,7 +544,6 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage
      * 
      */
-    @JsonProperty("EmailVerificationMessage")
     public void setEmailVerificationMessage(CharSequence emailVerificationMessage) {
         this.emailVerificationMessage = emailVerificationMessage;
     }

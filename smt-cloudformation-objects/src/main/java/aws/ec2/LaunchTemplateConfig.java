@@ -50,7 +50,6 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
-    @JsonProperty("LaunchTemplateSpecification")
     public FleetLaunchTemplateSpecification getLaunchTemplateSpecification() {
         return launchTemplateSpecification;
     }
@@ -61,7 +60,6 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
-    @JsonProperty("LaunchTemplateSpecification")
     public void setLaunchTemplateSpecification(FleetLaunchTemplateSpecification launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
     }
@@ -75,7 +73,6 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides
      * 
      */
-    @JsonProperty("Overrides")
     public Set<LaunchTemplateOverrides> getOverrides() {
         return overrides;
     }
@@ -84,7 +81,6 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides
      * 
      */
-    @JsonProperty("Overrides")
     public void setOverrides(Set<LaunchTemplateOverrides> overrides) {
         this.overrides = overrides;
     }

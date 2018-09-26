@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class CertificateResource
     extends Resource
+    implements HasAttributes<CertificateAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class CertificateResource
     private Certificate properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CertificateResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CertificateResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Certificate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
      * 
      */
-    @JsonProperty("Properties")
     public Certificate getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class CertificateResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Certificate properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class CertificateResource
     @Override
     public CertificateResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CertificateResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

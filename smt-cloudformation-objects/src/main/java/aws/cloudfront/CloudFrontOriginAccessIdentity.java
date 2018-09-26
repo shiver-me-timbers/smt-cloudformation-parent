@@ -38,7 +38,6 @@ public class CloudFrontOriginAccessIdentity {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html
      * 
      */
-    @JsonProperty("CloudFrontOriginAccessIdentityConfig")
     public CloudFrontOriginAccessIdentityConfig getCloudFrontOriginAccessIdentityConfig() {
         return cloudFrontOriginAccessIdentityConfig;
     }
@@ -49,7 +48,6 @@ public class CloudFrontOriginAccessIdentity {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html
      * 
      */
-    @JsonProperty("CloudFrontOriginAccessIdentityConfig")
     public void setCloudFrontOriginAccessIdentityConfig(CloudFrontOriginAccessIdentityConfig cloudFrontOriginAccessIdentityConfig) {
         this.cloudFrontOriginAccessIdentityConfig = cloudFrontOriginAccessIdentityConfig;
     }

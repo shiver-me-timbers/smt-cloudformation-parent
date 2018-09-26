@@ -41,12 +41,26 @@ public class ListenerRuleResource
     private ListenerRule properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ListenerRuleResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ListenerRuleResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ListenerRule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html
      * 
      */
-    @JsonProperty("Properties")
     public ListenerRule getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ListenerRuleResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ListenerRule properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ListenerRuleResource
     @Override
     public ListenerRuleResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ListenerRuleResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

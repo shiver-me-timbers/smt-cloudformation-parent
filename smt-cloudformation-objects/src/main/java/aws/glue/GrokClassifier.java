@@ -58,7 +58,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-custompatterns
      * 
      */
-    @JsonProperty("CustomPatterns")
     public CharSequence getCustomPatterns() {
         return customPatterns;
     }
@@ -67,7 +66,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-custompatterns
      * 
      */
-    @JsonProperty("CustomPatterns")
     public void setCustomPatterns(CharSequence customPatterns) {
         this.customPatterns = customPatterns;
     }
@@ -81,7 +79,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-grokpattern
      * 
      */
-    @JsonProperty("GrokPattern")
     public CharSequence getGrokPattern() {
         return grokPattern;
     }
@@ -90,7 +87,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-grokpattern
      * 
      */
-    @JsonProperty("GrokPattern")
     public void setGrokPattern(CharSequence grokPattern) {
         this.grokPattern = grokPattern;
     }
@@ -104,7 +100,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-classification
      * 
      */
-    @JsonProperty("Classification")
     public CharSequence getClassification() {
         return classification;
     }
@@ -113,7 +108,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-classification
      * 
      */
-    @JsonProperty("Classification")
     public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
@@ -127,7 +121,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -136,7 +129,6 @@ public class GrokClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html#cfn-glue-classifier-grokclassifier-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

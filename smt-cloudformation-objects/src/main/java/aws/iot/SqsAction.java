@@ -50,7 +50,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl
      * 
      */
-    @JsonProperty("QueueUrl")
     public CharSequence getQueueUrl() {
         return queueUrl;
     }
@@ -59,7 +58,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl
      * 
      */
-    @JsonProperty("QueueUrl")
     public void setQueueUrl(CharSequence queueUrl) {
         this.queueUrl = queueUrl;
     }
@@ -73,7 +71,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -82,7 +79,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-rolearn
      * 
      */
-    @JsonProperty("RoleArn")
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -96,7 +92,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-usebase64
      * 
      */
-    @JsonProperty("UseBase64")
     public Boolean getUseBase64() {
         return useBase64;
     }
@@ -105,7 +100,6 @@ public class SqsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-usebase64
      * 
      */
-    @JsonProperty("UseBase64")
     public void setUseBase64(Boolean useBase64) {
         this.useBase64 = useBase64;
     }

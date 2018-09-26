@@ -41,12 +41,26 @@ public class BasePathMappingResource
     private BasePathMapping properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public BasePathMappingResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public BasePathMappingResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * BasePathMapping
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
      * 
      */
-    @JsonProperty("Properties")
     public BasePathMapping getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class BasePathMappingResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(BasePathMapping properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class BasePathMappingResource
     @Override
     public BasePathMappingResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public BasePathMappingResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

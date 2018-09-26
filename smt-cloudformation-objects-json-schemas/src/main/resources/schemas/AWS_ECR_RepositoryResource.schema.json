@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECR_RepositoryResource.schema.json",
+  "title" : "RepositoryResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ecr.RepositoryResource",
+  "javaInterfaces" : [ "aws.HasAttributes<RepositoryAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ECR_Repository.schema.json"
+    }
+  }
+}

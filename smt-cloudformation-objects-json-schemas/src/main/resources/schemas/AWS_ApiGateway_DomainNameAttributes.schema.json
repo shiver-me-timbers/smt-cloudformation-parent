@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_DomainNameAttributes.schema.json",
+  "title" : "DomainNameAttributes",
+  "type" : "string",
+  "enum" : [ "DistributionDomainName", "DistributionHostedZoneId", "RegionalDomainName", "RegionalHostedZoneId" ],
+  "javaType" : "aws.apigateway.DomainNameAttributes"
+}

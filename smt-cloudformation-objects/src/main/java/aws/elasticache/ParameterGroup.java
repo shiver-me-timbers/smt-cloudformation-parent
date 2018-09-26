@@ -51,7 +51,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-cacheparametergroupfamily
      * 
      */
-    @JsonProperty("CacheParameterGroupFamily")
     public CharSequence getCacheParameterGroupFamily() {
         return cacheParameterGroupFamily;
     }
@@ -60,7 +59,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-cacheparametergroupfamily
      * 
      */
-    @JsonProperty("CacheParameterGroupFamily")
     public void setCacheParameterGroupFamily(CharSequence cacheParameterGroupFamily) {
         this.cacheParameterGroupFamily = cacheParameterGroupFamily;
     }
@@ -74,7 +72,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -83,7 +80,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -97,7 +93,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-properties
      * 
      */
-    @JsonProperty("Properties")
     public Map<String, String> getProperties() {
         return properties;
     }
@@ -106,7 +101,6 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-parameter-group.html#cfn-elasticache-parametergroup-properties
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Map<String, String> properties) {
         this.properties = properties;
     }

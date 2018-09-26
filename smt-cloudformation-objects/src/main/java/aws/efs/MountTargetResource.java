@@ -41,12 +41,26 @@ public class MountTargetResource
     private MountTarget properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public MountTargetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public MountTargetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * MountTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html
      * 
      */
-    @JsonProperty("Properties")
     public MountTarget getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class MountTargetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(MountTarget properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class MountTargetResource
     @Override
     public MountTargetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public MountTargetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

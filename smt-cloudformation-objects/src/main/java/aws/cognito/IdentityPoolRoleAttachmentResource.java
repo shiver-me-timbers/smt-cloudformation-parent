@@ -41,12 +41,26 @@ public class IdentityPoolRoleAttachmentResource
     private IdentityPoolRoleAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public IdentityPoolRoleAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public IdentityPoolRoleAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * IdentityPoolRoleAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public IdentityPoolRoleAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class IdentityPoolRoleAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(IdentityPoolRoleAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class IdentityPoolRoleAttachmentResource
     @Override
     public IdentityPoolRoleAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public IdentityPoolRoleAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

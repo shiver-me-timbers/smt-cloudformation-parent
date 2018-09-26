@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AmazonMQ_ConfigurationResource.schema.json",
+  "title" : "ConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.amazonmq.ConfigurationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ConfigurationAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_AmazonMQ_Configuration.schema.json"
+    }
+  }
+}

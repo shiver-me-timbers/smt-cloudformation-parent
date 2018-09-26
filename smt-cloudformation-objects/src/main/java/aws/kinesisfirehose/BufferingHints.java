@@ -42,7 +42,6 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds
      * 
      */
-    @JsonProperty("IntervalInSeconds")
     public Integer getIntervalInSeconds() {
         return intervalInSeconds;
     }
@@ -51,7 +50,6 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds
      * 
      */
-    @JsonProperty("IntervalInSeconds")
     public void setIntervalInSeconds(Integer intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
     }
@@ -65,7 +63,6 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs
      * 
      */
-    @JsonProperty("SizeInMBs")
     public Integer getSizeInMBs() {
         return sizeInMBs;
     }
@@ -74,7 +71,6 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs
      * 
      */
-    @JsonProperty("SizeInMBs")
     public void setSizeInMBs(Integer sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
     }

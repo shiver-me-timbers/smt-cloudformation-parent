@@ -74,7 +74,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html
      * 
      */
-    @JsonProperty("OpenIDConnectConfig")
     public OpenIDConnectConfig getOpenIDConnectConfig() {
         return openIDConnectConfig;
     }
@@ -85,7 +84,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html
      * 
      */
-    @JsonProperty("OpenIDConnectConfig")
     public void setOpenIDConnectConfig(OpenIDConnectConfig openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
     }
@@ -101,7 +99,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html
      * 
      */
-    @JsonProperty("UserPoolConfig")
     public UserPoolConfig getUserPoolConfig() {
         return userPoolConfig;
     }
@@ -112,7 +109,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html
      * 
      */
-    @JsonProperty("UserPoolConfig")
     public void setUserPoolConfig(UserPoolConfig userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
     }
@@ -126,7 +122,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -135,7 +130,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -149,7 +143,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype
      * 
      */
-    @JsonProperty("AuthenticationType")
     public CharSequence getAuthenticationType() {
         return authenticationType;
     }
@@ -158,7 +151,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype
      * 
      */
-    @JsonProperty("AuthenticationType")
     public void setAuthenticationType(CharSequence authenticationType) {
         this.authenticationType = authenticationType;
     }
@@ -174,7 +166,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html
      * 
      */
-    @JsonProperty("LogConfig")
     public LogConfig getLogConfig() {
         return logConfig;
     }
@@ -185,7 +176,6 @@ public class GraphQLApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html
      * 
      */
-    @JsonProperty("LogConfig")
     public void setLogConfig(LogConfig logConfig) {
         this.logConfig = logConfig;
     }

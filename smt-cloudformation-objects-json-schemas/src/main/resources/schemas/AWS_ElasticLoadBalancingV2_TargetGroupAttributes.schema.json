@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_TargetGroupAttributes.schema.json",
+  "title" : "TargetGroupAttributes",
+  "type" : "string",
+  "enum" : [ "LoadBalancerArns", "TargetGroupFullName", "TargetGroupName" ],
+  "javaType" : "aws.elasticloadbalancingv2.TargetGroupAttributes"
+}

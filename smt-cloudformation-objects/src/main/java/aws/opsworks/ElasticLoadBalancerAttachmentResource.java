@@ -41,12 +41,26 @@ public class ElasticLoadBalancerAttachmentResource
     private ElasticLoadBalancerAttachment properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ElasticLoadBalancerAttachmentResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ElasticLoadBalancerAttachmentResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ElasticLoadBalancerAttachment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public ElasticLoadBalancerAttachment getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ElasticLoadBalancerAttachmentResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ElasticLoadBalancerAttachment properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ElasticLoadBalancerAttachmentResource
     @Override
     public ElasticLoadBalancerAttachmentResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ElasticLoadBalancerAttachmentResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -34,7 +34,6 @@ public class HostVolumeProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html#cfn-ecs-taskdefinition-volumes-host-sourcepath
      * 
      */
-    @JsonProperty("SourcePath")
     public CharSequence getSourcePath() {
         return sourcePath;
     }
@@ -43,7 +42,6 @@ public class HostVolumeProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html#cfn-ecs-taskdefinition-volumes-host-sourcepath
      * 
      */
-    @JsonProperty("SourcePath")
     public void setSourcePath(CharSequence sourcePath) {
         this.sourcePath = sourcePath;
     }

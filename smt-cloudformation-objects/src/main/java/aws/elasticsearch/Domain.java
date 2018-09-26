@@ -120,7 +120,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
      * 
      */
-    @JsonProperty("AccessPolicies")
     public AccessPolicies getAccessPolicies() {
         return accessPolicies;
     }
@@ -129,7 +128,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
      * 
      */
-    @JsonProperty("AccessPolicies")
     public void setAccessPolicies(AccessPolicies accessPolicies) {
         this.accessPolicies = accessPolicies;
     }
@@ -143,7 +141,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions
      * 
      */
-    @JsonProperty("AdvancedOptions")
     public Map<String, String> getAdvancedOptions() {
         return advancedOptions;
     }
@@ -152,7 +149,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions
      * 
      */
-    @JsonProperty("AdvancedOptions")
     public void setAdvancedOptions(Map<String, String> advancedOptions) {
         this.advancedOptions = advancedOptions;
     }
@@ -166,7 +162,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -175,7 +170,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -191,7 +185,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html
      * 
      */
-    @JsonProperty("EBSOptions")
     public EBSOptions getEBSOptions() {
         return eBSOptions;
     }
@@ -202,7 +195,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html
      * 
      */
-    @JsonProperty("EBSOptions")
     public void setEBSOptions(EBSOptions eBSOptions) {
         this.eBSOptions = eBSOptions;
     }
@@ -218,7 +210,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html
      * 
      */
-    @JsonProperty("ElasticsearchClusterConfig")
     public ElasticsearchClusterConfig getElasticsearchClusterConfig() {
         return elasticsearchClusterConfig;
     }
@@ -229,7 +220,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html
      * 
      */
-    @JsonProperty("ElasticsearchClusterConfig")
     public void setElasticsearchClusterConfig(ElasticsearchClusterConfig elasticsearchClusterConfig) {
         this.elasticsearchClusterConfig = elasticsearchClusterConfig;
     }
@@ -243,7 +233,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion
      * 
      */
-    @JsonProperty("ElasticsearchVersion")
     public CharSequence getElasticsearchVersion() {
         return elasticsearchVersion;
     }
@@ -252,7 +241,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion
      * 
      */
-    @JsonProperty("ElasticsearchVersion")
     public void setElasticsearchVersion(CharSequence elasticsearchVersion) {
         this.elasticsearchVersion = elasticsearchVersion;
     }
@@ -268,7 +256,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html
      * 
      */
-    @JsonProperty("EncryptionAtRestOptions")
     public EncryptionAtRestOptions getEncryptionAtRestOptions() {
         return encryptionAtRestOptions;
     }
@@ -279,7 +266,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html
      * 
      */
-    @JsonProperty("EncryptionAtRestOptions")
     public void setEncryptionAtRestOptions(EncryptionAtRestOptions encryptionAtRestOptions) {
         this.encryptionAtRestOptions = encryptionAtRestOptions;
     }
@@ -295,7 +281,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
      * 
      */
-    @JsonProperty("SnapshotOptions")
     public SnapshotOptions getSnapshotOptions() {
         return snapshotOptions;
     }
@@ -306,7 +291,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
      * 
      */
-    @JsonProperty("SnapshotOptions")
     public void setSnapshotOptions(SnapshotOptions snapshotOptions) {
         this.snapshotOptions = snapshotOptions;
     }
@@ -320,7 +304,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -329,7 +312,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -345,7 +327,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html
      * 
      */
-    @JsonProperty("VPCOptions")
     public VPCOptions getVPCOptions() {
         return vPCOptions;
     }
@@ -356,7 +337,6 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html
      * 
      */
-    @JsonProperty("VPCOptions")
     public void setVPCOptions(VPCOptions vPCOptions) {
         this.vPCOptions = vPCOptions;
     }

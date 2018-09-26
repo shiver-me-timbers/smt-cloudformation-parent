@@ -54,7 +54,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
-    @JsonProperty("Action")
     public WafAction getAction() {
         return action;
     }
@@ -65,7 +64,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
-    @JsonProperty("Action")
     public void setAction(WafAction action) {
         this.action = action;
     }
@@ -79,7 +77,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority
      * 
      */
-    @JsonProperty("Priority")
     public Integer getPriority() {
         return priority;
     }
@@ -88,7 +85,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority
      * 
      */
-    @JsonProperty("Priority")
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
@@ -102,7 +98,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-ruleid
      * 
      */
-    @JsonProperty("RuleId")
     public CharSequence getRuleId() {
         return ruleId;
     }
@@ -111,7 +106,6 @@ public class ActivatedRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-ruleid
      * 
      */
-    @JsonProperty("RuleId")
     public void setRuleId(CharSequence ruleId) {
         this.ruleId = ruleId;
     }

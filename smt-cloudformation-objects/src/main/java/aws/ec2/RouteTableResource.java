@@ -41,12 +41,26 @@ public class RouteTableResource
     private RouteTable properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public RouteTableResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public RouteTableResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * RouteTable
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html
      * 
      */
-    @JsonProperty("Properties")
     public RouteTable getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class RouteTableResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-route-table.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(RouteTable properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class RouteTableResource
     @Override
     public RouteTableResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public RouteTableResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

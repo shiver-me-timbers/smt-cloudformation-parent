@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class UserResource
     extends Resource
+    implements HasAttributes<UserAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class UserResource
     private User properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public UserResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public UserResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * User
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html
      * 
      */
-    @JsonProperty("Properties")
     public User getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class UserResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(User properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class UserResource
     @Override
     public UserResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public UserResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

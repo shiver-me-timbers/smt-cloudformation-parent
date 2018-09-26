@@ -42,7 +42,6 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
      */
-    @JsonProperty("OutputS3BucketName")
     public CharSequence getOutputS3BucketName() {
         return outputS3BucketName;
     }
@@ -51,7 +50,6 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
      */
-    @JsonProperty("OutputS3BucketName")
     public void setOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
     }
@@ -65,7 +63,6 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix
      * 
      */
-    @JsonProperty("OutputS3KeyPrefix")
     public CharSequence getOutputS3KeyPrefix() {
         return outputS3KeyPrefix;
     }
@@ -74,7 +71,6 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix
      * 
      */
-    @JsonProperty("OutputS3KeyPrefix")
     public void setOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
     }

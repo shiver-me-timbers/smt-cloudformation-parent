@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DynamoDB_TableAttributes.schema.json",
+  "title" : "TableAttributes",
+  "type" : "string",
+  "enum" : [ "Arn", "StreamArn" ],
+  "javaType" : "aws.dynamodb.TableAttributes"
+}

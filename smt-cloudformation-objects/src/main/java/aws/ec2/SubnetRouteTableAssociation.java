@@ -42,7 +42,6 @@ public class SubnetRouteTableAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid
      * 
      */
-    @JsonProperty("RouteTableId")
     public CharSequence getRouteTableId() {
         return routeTableId;
     }
@@ -51,7 +50,6 @@ public class SubnetRouteTableAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid
      * 
      */
-    @JsonProperty("RouteTableId")
     public void setRouteTableId(CharSequence routeTableId) {
         this.routeTableId = routeTableId;
     }
@@ -65,7 +63,6 @@ public class SubnetRouteTableAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -74,7 +71,6 @@ public class SubnetRouteTableAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

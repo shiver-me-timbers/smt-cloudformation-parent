@@ -38,7 +38,6 @@ public class SpotFleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
-    @JsonProperty("SpotFleetRequestConfigData")
     public SpotFleetRequestConfigData getSpotFleetRequestConfigData() {
         return spotFleetRequestConfigData;
     }
@@ -49,7 +48,6 @@ public class SpotFleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
-    @JsonProperty("SpotFleetRequestConfigData")
     public void setSpotFleetRequestConfigData(SpotFleetRequestConfigData spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
     }

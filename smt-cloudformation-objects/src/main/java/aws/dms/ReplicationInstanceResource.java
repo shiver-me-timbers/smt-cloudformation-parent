@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ReplicationInstanceResource
     extends Resource
+    implements HasAttributes<ReplicationInstanceAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class ReplicationInstanceResource
     private ReplicationInstance properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ReplicationInstanceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ReplicationInstanceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ReplicationInstance
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
      * 
      */
-    @JsonProperty("Properties")
     public ReplicationInstance getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class ReplicationInstanceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ReplicationInstance properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class ReplicationInstanceResource
     @Override
     public ReplicationInstanceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ReplicationInstanceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

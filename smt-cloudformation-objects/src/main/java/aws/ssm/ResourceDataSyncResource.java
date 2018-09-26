@@ -41,12 +41,26 @@ public class ResourceDataSyncResource
     private ResourceDataSync properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ResourceDataSyncResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ResourceDataSyncResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ResourceDataSync
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
      * 
      */
-    @JsonProperty("Properties")
     public ResourceDataSync getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ResourceDataSyncResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-resourcedatasync.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ResourceDataSync properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ResourceDataSyncResource
     @Override
     public ResourceDataSyncResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ResourceDataSyncResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

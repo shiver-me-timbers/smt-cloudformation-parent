@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class NetworkInterfaceResource
     extends Resource
+    implements HasAttributes<NetworkInterfaceAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class NetworkInterfaceResource
     private NetworkInterface properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public NetworkInterfaceResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public NetworkInterfaceResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * NetworkInterface
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html
      * 
      */
-    @JsonProperty("Properties")
     public NetworkInterface getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class NetworkInterfaceResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(NetworkInterface properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class NetworkInterfaceResource
     @Override
     public NetworkInterfaceResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public NetworkInterfaceResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

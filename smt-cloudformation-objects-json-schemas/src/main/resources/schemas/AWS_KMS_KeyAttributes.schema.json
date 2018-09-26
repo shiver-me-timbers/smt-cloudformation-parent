@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KMS_KeyAttributes.schema.json",
+  "title" : "KeyAttributes",
+  "type" : "string",
+  "enum" : [ "Arn" ],
+  "javaType" : "aws.kms.KeyAttributes"
+}

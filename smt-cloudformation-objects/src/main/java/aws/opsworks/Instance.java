@@ -204,7 +204,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-agentversion
      * 
      */
-    @JsonProperty("AgentVersion")
     public CharSequence getAgentVersion() {
         return agentVersion;
     }
@@ -213,7 +212,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-agentversion
      * 
      */
-    @JsonProperty("AgentVersion")
     public void setAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
     }
@@ -227,7 +225,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-amiid
      * 
      */
-    @JsonProperty("AmiId")
     public CharSequence getAmiId() {
         return amiId;
     }
@@ -236,7 +233,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-amiid
      * 
      */
-    @JsonProperty("AmiId")
     public void setAmiId(CharSequence amiId) {
         this.amiId = amiId;
     }
@@ -250,7 +246,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-architecture
      * 
      */
-    @JsonProperty("Architecture")
     public CharSequence getArchitecture() {
         return architecture;
     }
@@ -259,7 +254,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-architecture
      * 
      */
-    @JsonProperty("Architecture")
     public void setArchitecture(CharSequence architecture) {
         this.architecture = architecture;
     }
@@ -273,7 +267,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-autoscalingtype
      * 
      */
-    @JsonProperty("AutoScalingType")
     public CharSequence getAutoScalingType() {
         return autoScalingType;
     }
@@ -282,7 +275,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-autoscalingtype
      * 
      */
-    @JsonProperty("AutoScalingType")
     public void setAutoScalingType(CharSequence autoScalingType) {
         this.autoScalingType = autoScalingType;
     }
@@ -296,7 +288,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -305,7 +296,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -319,7 +309,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public Set<BlockDeviceMapping> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
@@ -328,7 +317,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
@@ -342,7 +330,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -351,7 +338,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
@@ -365,7 +351,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-elasticips
      * 
      */
-    @JsonProperty("ElasticIps")
     public Set<CharSequence> getElasticIps() {
         return elasticIps;
     }
@@ -374,7 +359,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-elasticips
      * 
      */
-    @JsonProperty("ElasticIps")
     public void setElasticIps(Set<CharSequence> elasticIps) {
         this.elasticIps = elasticIps;
     }
@@ -388,7 +372,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-hostname
      * 
      */
-    @JsonProperty("Hostname")
     public CharSequence getHostname() {
         return hostname;
     }
@@ -397,7 +380,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-hostname
      * 
      */
-    @JsonProperty("Hostname")
     public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
@@ -411,7 +393,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-installupdatesonboot
      * 
      */
-    @JsonProperty("InstallUpdatesOnBoot")
     public Boolean getInstallUpdatesOnBoot() {
         return installUpdatesOnBoot;
     }
@@ -420,7 +401,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-installupdatesonboot
      * 
      */
-    @JsonProperty("InstallUpdatesOnBoot")
     public void setInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
     }
@@ -434,7 +414,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -443,7 +422,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -457,7 +435,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-layerids
      * 
      */
-    @JsonProperty("LayerIds")
     public List<CharSequence> getLayerIds() {
         return layerIds;
     }
@@ -466,7 +443,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-layerids
      * 
      */
-    @JsonProperty("LayerIds")
     public void setLayerIds(List<CharSequence> layerIds) {
         this.layerIds = layerIds;
     }
@@ -480,7 +456,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-os
      * 
      */
-    @JsonProperty("Os")
     public CharSequence getOs() {
         return os;
     }
@@ -489,7 +464,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-os
      * 
      */
-    @JsonProperty("Os")
     public void setOs(CharSequence os) {
         this.os = os;
     }
@@ -503,7 +477,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-rootdevicetype
      * 
      */
-    @JsonProperty("RootDeviceType")
     public CharSequence getRootDeviceType() {
         return rootDeviceType;
     }
@@ -512,7 +485,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-rootdevicetype
      * 
      */
-    @JsonProperty("RootDeviceType")
     public void setRootDeviceType(CharSequence rootDeviceType) {
         this.rootDeviceType = rootDeviceType;
     }
@@ -526,7 +498,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-sshkeyname
      * 
      */
-    @JsonProperty("SshKeyName")
     public CharSequence getSshKeyName() {
         return sshKeyName;
     }
@@ -535,7 +506,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-sshkeyname
      * 
      */
-    @JsonProperty("SshKeyName")
     public void setSshKeyName(CharSequence sshKeyName) {
         this.sshKeyName = sshKeyName;
     }
@@ -549,7 +519,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-stackid
      * 
      */
-    @JsonProperty("StackId")
     public CharSequence getStackId() {
         return stackId;
     }
@@ -558,7 +527,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-stackid
      * 
      */
-    @JsonProperty("StackId")
     public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
@@ -572,7 +540,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -581,7 +548,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -595,7 +561,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public CharSequence getTenancy() {
         return tenancy;
     }
@@ -604,7 +569,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
@@ -620,7 +584,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html
      * 
      */
-    @JsonProperty("TimeBasedAutoScaling")
     public TimeBasedAutoScaling getTimeBasedAutoScaling() {
         return timeBasedAutoScaling;
     }
@@ -631,7 +594,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html
      * 
      */
-    @JsonProperty("TimeBasedAutoScaling")
     public void setTimeBasedAutoScaling(TimeBasedAutoScaling timeBasedAutoScaling) {
         this.timeBasedAutoScaling = timeBasedAutoScaling;
     }
@@ -645,7 +607,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype
      * 
      */
-    @JsonProperty("VirtualizationType")
     public CharSequence getVirtualizationType() {
         return virtualizationType;
     }
@@ -654,7 +615,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype
      * 
      */
-    @JsonProperty("VirtualizationType")
     public void setVirtualizationType(CharSequence virtualizationType) {
         this.virtualizationType = virtualizationType;
     }
@@ -668,7 +628,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-volumes
      * 
      */
-    @JsonProperty("Volumes")
     public Set<CharSequence> getVolumes() {
         return volumes;
     }
@@ -677,7 +636,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-volumes
      * 
      */
-    @JsonProperty("Volumes")
     public void setVolumes(Set<CharSequence> volumes) {
         this.volumes = volumes;
     }

@@ -42,7 +42,6 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit
      * 
      */
-    @JsonProperty("Audit")
     public Boolean getAudit() {
         return audit;
     }
@@ -51,7 +50,6 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit
      * 
      */
-    @JsonProperty("Audit")
     public void setAudit(Boolean audit) {
         this.audit = audit;
     }
@@ -65,7 +63,6 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general
      * 
      */
-    @JsonProperty("General")
     public Boolean getGeneral() {
         return general;
     }
@@ -74,7 +71,6 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general
      * 
      */
-    @JsonProperty("General")
     public void setGeneral(Boolean general) {
         this.general = general;
     }

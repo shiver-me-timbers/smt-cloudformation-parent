@@ -41,12 +41,26 @@ public class ByteMatchSetResource
     private ByteMatchSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ByteMatchSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ByteMatchSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ByteMatchSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html
      * 
      */
-    @JsonProperty("Properties")
     public ByteMatchSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ByteMatchSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ByteMatchSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ByteMatchSetResource
     @Override
     public ByteMatchSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ByteMatchSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

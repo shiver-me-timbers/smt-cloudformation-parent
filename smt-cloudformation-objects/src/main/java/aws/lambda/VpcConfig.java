@@ -47,7 +47,6 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public Set<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -56,7 +55,6 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public void setSecurityGroupIds(Set<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -70,7 +68,6 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
@@ -79,7 +76,6 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html#cfn-lambda-function-vpcconfig-subnetids
      * 
      */
-    @JsonProperty("SubnetIds")
     public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }

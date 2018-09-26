@@ -50,7 +50,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid
      * 
      */
-    @JsonProperty("ParentId")
     public CharSequence getParentId() {
         return parentId;
     }
@@ -59,7 +58,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid
      * 
      */
-    @JsonProperty("ParentId")
     public void setParentId(CharSequence parentId) {
         this.parentId = parentId;
     }
@@ -73,7 +71,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart
      * 
      */
-    @JsonProperty("PathPart")
     public CharSequence getPathPart() {
         return pathPart;
     }
@@ -82,7 +79,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart
      * 
      */
-    @JsonProperty("PathPart")
     public void setPathPart(CharSequence pathPart) {
         this.pathPart = pathPart;
     }
@@ -96,7 +92,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -105,7 +100,6 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }

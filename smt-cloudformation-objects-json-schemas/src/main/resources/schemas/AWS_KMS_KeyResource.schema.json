@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KMS_KeyResource.schema.json",
+  "title" : "KeyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.kms.KeyResource",
+  "javaInterfaces" : [ "aws.HasAttributes<KeyAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_KMS_Key.schema.json"
+    }
+  }
+}

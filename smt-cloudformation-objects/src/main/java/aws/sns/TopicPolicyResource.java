@@ -41,12 +41,26 @@ public class TopicPolicyResource
     private TopicPolicy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public TopicPolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public TopicPolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * TopicPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public TopicPolicy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class TopicPolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(TopicPolicy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class TopicPolicyResource
     @Override
     public TopicPolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public TopicPolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

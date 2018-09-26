@@ -42,7 +42,6 @@ public class ParameterValue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-id
      * 
      */
-    @JsonProperty("Id")
     public CharSequence getId() {
         return id;
     }
@@ -51,7 +50,6 @@ public class ParameterValue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-id
      * 
      */
-    @JsonProperty("Id")
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -65,7 +63,6 @@ public class ParameterValue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-stringvalue
      * 
      */
-    @JsonProperty("StringValue")
     public CharSequence getStringValue() {
         return stringValue;
     }
@@ -74,7 +71,6 @@ public class ParameterValue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-stringvalue
      * 
      */
-    @JsonProperty("StringValue")
     public void setStringValue(CharSequence stringValue) {
         this.stringValue = stringValue;
     }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class CloudFormationProvisionedProductResource
     extends Resource
+    implements HasAttributes<CloudFormationProvisionedProductAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class CloudFormationProvisionedProductResource
     private CloudFormationProvisionedProduct properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CloudFormationProvisionedProductResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CloudFormationProvisionedProductResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * CloudFormationProvisionedProduct
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
      * 
      */
-    @JsonProperty("Properties")
     public CloudFormationProvisionedProduct getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class CloudFormationProvisionedProductResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(CloudFormationProvisionedProduct properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class CloudFormationProvisionedProductResource
     @Override
     public CloudFormationProvisionedProductResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CloudFormationProvisionedProductResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

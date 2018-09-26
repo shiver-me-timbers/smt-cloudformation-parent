@@ -34,7 +34,6 @@ public class KMSEncryptionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html#cfn-kinesisfirehose-deliverystream-kmsencryptionconfig-awskmskeyarn
      * 
      */
-    @JsonProperty("AWSKMSKeyARN")
     public CharSequence getAWSKMSKeyARN() {
         return aWSKMSKeyARN;
     }
@@ -43,7 +42,6 @@ public class KMSEncryptionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html#cfn-kinesisfirehose-deliverystream-kmsencryptionconfig-awskmskeyarn
      * 
      */
-    @JsonProperty("AWSKMSKeyARN")
     public void setAWSKMSKeyARN(CharSequence aWSKMSKeyARN) {
         this.aWSKMSKeyARN = aWSKMSKeyARN;
     }

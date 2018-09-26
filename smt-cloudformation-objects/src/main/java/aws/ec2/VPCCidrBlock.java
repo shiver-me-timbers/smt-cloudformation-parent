@@ -50,7 +50,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock
      * 
      */
-    @JsonProperty("AmazonProvidedIpv6CidrBlock")
     public Boolean getAmazonProvidedIpv6CidrBlock() {
         return amazonProvidedIpv6CidrBlock;
     }
@@ -59,7 +58,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock
      * 
      */
-    @JsonProperty("AmazonProvidedIpv6CidrBlock")
     public void setAmazonProvidedIpv6CidrBlock(Boolean amazonProvidedIpv6CidrBlock) {
         this.amazonProvidedIpv6CidrBlock = amazonProvidedIpv6CidrBlock;
     }
@@ -73,7 +71,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -82,7 +79,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock
      * 
      */
-    @JsonProperty("CidrBlock")
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -96,7 +92,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -105,7 +100,6 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid
      * 
      */
-    @JsonProperty("VpcId")
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

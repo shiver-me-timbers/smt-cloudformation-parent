@@ -72,7 +72,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public Set<Attribute> getAttributes() {
         return attributes;
     }
@@ -81,7 +80,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
-    @JsonProperty("Attributes")
     public void setAttributes(Set<Attribute> attributes) {
         this.attributes = attributes;
     }
@@ -95,7 +93,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports
      * 
      */
-    @JsonProperty("InstancePorts")
     public Set<CharSequence> getInstancePorts() {
         return instancePorts;
     }
@@ -104,7 +101,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports
      * 
      */
-    @JsonProperty("InstancePorts")
     public void setInstancePorts(Set<CharSequence> instancePorts) {
         this.instancePorts = instancePorts;
     }
@@ -118,7 +114,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports
      * 
      */
-    @JsonProperty("LoadBalancerPorts")
     public Set<CharSequence> getLoadBalancerPorts() {
         return loadBalancerPorts;
     }
@@ -127,7 +122,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports
      * 
      */
-    @JsonProperty("LoadBalancerPorts")
     public void setLoadBalancerPorts(Set<CharSequence> loadBalancerPorts) {
         this.loadBalancerPorts = loadBalancerPorts;
     }
@@ -141,7 +135,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -150,7 +143,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname
      * 
      */
-    @JsonProperty("PolicyName")
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
@@ -164,7 +156,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype
      * 
      */
-    @JsonProperty("PolicyType")
     public CharSequence getPolicyType() {
         return policyType;
     }
@@ -173,7 +164,6 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype
      * 
      */
-    @JsonProperty("PolicyType")
     public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }

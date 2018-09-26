@@ -84,7 +84,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata
      * 
      */
-    @JsonProperty("ValidationData")
     public List<AttributeType> getValidationData() {
         return validationData;
     }
@@ -93,7 +92,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata
      * 
      */
-    @JsonProperty("ValidationData")
     public void setValidationData(List<AttributeType> validationData) {
         this.validationData = validationData;
     }
@@ -107,7 +105,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userpoolid
      * 
      */
-    @JsonProperty("UserPoolId")
     public CharSequence getUserPoolId() {
         return userPoolId;
     }
@@ -116,7 +113,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userpoolid
      * 
      */
-    @JsonProperty("UserPoolId")
     public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
@@ -130,7 +126,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-username
      * 
      */
-    @JsonProperty("Username")
     public CharSequence getUsername() {
         return username;
     }
@@ -139,7 +134,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-username
      * 
      */
-    @JsonProperty("Username")
     public void setUsername(CharSequence username) {
         this.username = username;
     }
@@ -153,7 +147,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction
      * 
      */
-    @JsonProperty("MessageAction")
     public CharSequence getMessageAction() {
         return messageAction;
     }
@@ -162,7 +155,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-messageaction
      * 
      */
-    @JsonProperty("MessageAction")
     public void setMessageAction(CharSequence messageAction) {
         this.messageAction = messageAction;
     }
@@ -176,7 +168,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums
      * 
      */
-    @JsonProperty("DesiredDeliveryMediums")
     public List<CharSequence> getDesiredDeliveryMediums() {
         return desiredDeliveryMediums;
     }
@@ -185,7 +176,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-desireddeliverymediums
      * 
      */
-    @JsonProperty("DesiredDeliveryMediums")
     public void setDesiredDeliveryMediums(List<CharSequence> desiredDeliveryMediums) {
         this.desiredDeliveryMediums = desiredDeliveryMediums;
     }
@@ -199,7 +189,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-forcealiascreation
      * 
      */
-    @JsonProperty("ForceAliasCreation")
     public Boolean getForceAliasCreation() {
         return forceAliasCreation;
     }
@@ -208,7 +197,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-forcealiascreation
      * 
      */
-    @JsonProperty("ForceAliasCreation")
     public void setForceAliasCreation(Boolean forceAliasCreation) {
         this.forceAliasCreation = forceAliasCreation;
     }
@@ -222,7 +210,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes
      * 
      */
-    @JsonProperty("UserAttributes")
     public List<AttributeType> getUserAttributes() {
         return userAttributes;
     }
@@ -231,7 +218,6 @@ public class UserPoolUser {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes
      * 
      */
-    @JsonProperty("UserAttributes")
     public void setUserAttributes(List<AttributeType> userAttributes) {
         this.userAttributes = userAttributes;
     }

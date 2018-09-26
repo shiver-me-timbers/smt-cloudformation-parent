@@ -50,7 +50,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
      * 
      */
-    @JsonProperty("ServerSideTokenCheck")
     public Boolean getServerSideTokenCheck() {
         return serverSideTokenCheck;
     }
@@ -59,7 +58,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
      * 
      */
-    @JsonProperty("ServerSideTokenCheck")
     public void setServerSideTokenCheck(Boolean serverSideTokenCheck) {
         this.serverSideTokenCheck = serverSideTokenCheck;
     }
@@ -73,7 +71,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
      * 
      */
-    @JsonProperty("ProviderName")
     public CharSequence getProviderName() {
         return providerName;
     }
@@ -82,7 +79,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
      * 
      */
-    @JsonProperty("ProviderName")
     public void setProviderName(CharSequence providerName) {
         this.providerName = providerName;
     }
@@ -96,7 +92,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
      * 
      */
-    @JsonProperty("ClientId")
     public CharSequence getClientId() {
         return clientId;
     }
@@ -105,7 +100,6 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
      * 
      */
-    @JsonProperty("ClientId")
     public void setClientId(CharSequence clientId) {
         this.clientId = clientId;
     }

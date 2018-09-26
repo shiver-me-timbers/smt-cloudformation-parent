@@ -41,12 +41,26 @@ public class ScalingPolicyResource
     private ScalingPolicy properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ScalingPolicyResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ScalingPolicyResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * ScalingPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public ScalingPolicy getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ScalingPolicyResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(ScalingPolicy properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ScalingPolicyResource
     @Override
     public ScalingPolicyResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ScalingPolicyResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

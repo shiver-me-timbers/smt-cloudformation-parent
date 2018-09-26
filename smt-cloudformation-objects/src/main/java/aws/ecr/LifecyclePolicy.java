@@ -42,7 +42,6 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext
      * 
      */
-    @JsonProperty("LifecyclePolicyText")
     public CharSequence getLifecyclePolicyText() {
         return lifecyclePolicyText;
     }
@@ -51,7 +50,6 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext
      * 
      */
-    @JsonProperty("LifecyclePolicyText")
     public void setLifecyclePolicyText(CharSequence lifecyclePolicyText) {
         this.lifecyclePolicyText = lifecyclePolicyText;
     }
@@ -65,7 +63,6 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid
      * 
      */
-    @JsonProperty("RegistryId")
     public CharSequence getRegistryId() {
         return registryId;
     }
@@ -74,7 +71,6 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid
      * 
      */
-    @JsonProperty("RegistryId")
     public void setRegistryId(CharSequence registryId) {
         this.registryId = registryId;
     }

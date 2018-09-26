@@ -68,7 +68,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lt
      * 
      */
-    @JsonProperty("Lt")
     public Integer getLt() {
         return lt;
     }
@@ -77,7 +76,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lt
      * 
      */
-    @JsonProperty("Lt")
     public void setLt(Integer lt) {
         this.lt = lt;
     }
@@ -91,7 +89,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-gte
      * 
      */
-    @JsonProperty("Gte")
     public Integer getGte() {
         return gte;
     }
@@ -100,7 +97,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-gte
      * 
      */
-    @JsonProperty("Gte")
     public void setGte(Integer gte) {
         this.gte = gte;
     }
@@ -114,7 +110,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-neq
      * 
      */
-    @JsonProperty("Neq")
     public List<CharSequence> getNeq() {
         return neq;
     }
@@ -123,7 +118,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-neq
      * 
      */
-    @JsonProperty("Neq")
     public void setNeq(List<CharSequence> neq) {
         this.neq = neq;
     }
@@ -137,7 +131,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-eq
      * 
      */
-    @JsonProperty("Eq")
     public List<CharSequence> getEq() {
         return eq;
     }
@@ -146,7 +139,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-eq
      * 
      */
-    @JsonProperty("Eq")
     public void setEq(List<CharSequence> eq) {
         this.eq = eq;
     }
@@ -160,7 +152,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lte
      * 
      */
-    @JsonProperty("Lte")
     public Integer getLte() {
         return lte;
     }
@@ -169,7 +160,6 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html#cfn-guardduty-filter-condition-lte
      * 
      */
-    @JsonProperty("Lte")
     public void setLte(Integer lte) {
         this.lte = lte;
     }

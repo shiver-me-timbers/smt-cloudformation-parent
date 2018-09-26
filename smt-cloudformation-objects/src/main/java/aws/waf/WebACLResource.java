@@ -41,12 +41,26 @@ public class WebACLResource
     private WebACL properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public WebACLResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public WebACLResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * WebACL
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
      * 
      */
-    @JsonProperty("Properties")
     public WebACL getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class WebACLResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(WebACL properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class WebACLResource
     @Override
     public WebACLResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public WebACLResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

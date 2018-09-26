@@ -41,12 +41,26 @@ public class PipelineResource
     private Pipeline properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public PipelineResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public PipelineResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Pipeline
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
      * 
      */
-    @JsonProperty("Properties")
     public Pipeline getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class PipelineResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Pipeline properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class PipelineResource
     @Override
     public PipelineResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public PipelineResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

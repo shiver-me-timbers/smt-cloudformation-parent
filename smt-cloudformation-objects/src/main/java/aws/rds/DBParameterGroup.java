@@ -62,7 +62,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -71,7 +70,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -85,7 +83,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-family
      * 
      */
-    @JsonProperty("Family")
     public CharSequence getFamily() {
         return family;
     }
@@ -94,7 +91,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-family
      * 
      */
-    @JsonProperty("Family")
     public void setFamily(CharSequence family) {
         this.family = family;
     }
@@ -108,7 +104,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public Map<String, String> getParameters() {
         return parameters;
     }
@@ -117,7 +112,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-parameters
      * 
      */
-    @JsonProperty("Parameters")
     public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
@@ -131,7 +125,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -140,7 +133,6 @@ public class DBParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbparametergroup.html#cfn-rds-dbparametergroup-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

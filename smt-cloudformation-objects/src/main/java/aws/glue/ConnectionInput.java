@@ -78,7 +78,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -87,7 +86,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -101,7 +99,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectiontype
      * 
      */
-    @JsonProperty("ConnectionType")
     public CharSequence getConnectionType() {
         return connectionType;
     }
@@ -110,7 +107,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectiontype
      * 
      */
-    @JsonProperty("ConnectionType")
     public void setConnectionType(CharSequence connectionType) {
         this.connectionType = connectionType;
     }
@@ -124,7 +120,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-matchcriteria
      * 
      */
-    @JsonProperty("MatchCriteria")
     public List<CharSequence> getMatchCriteria() {
         return matchCriteria;
     }
@@ -133,7 +128,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-matchcriteria
      * 
      */
-    @JsonProperty("MatchCriteria")
     public void setMatchCriteria(List<CharSequence> matchCriteria) {
         this.matchCriteria = matchCriteria;
     }
@@ -149,7 +143,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html
      * 
      */
-    @JsonProperty("PhysicalConnectionRequirements")
     public PhysicalConnectionRequirements getPhysicalConnectionRequirements() {
         return physicalConnectionRequirements;
     }
@@ -160,7 +153,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html
      * 
      */
-    @JsonProperty("PhysicalConnectionRequirements")
     public void setPhysicalConnectionRequirements(PhysicalConnectionRequirements physicalConnectionRequirements) {
         this.physicalConnectionRequirements = physicalConnectionRequirements;
     }
@@ -174,7 +166,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties
      * 
      */
-    @JsonProperty("ConnectionProperties")
     public ConnectionProperties getConnectionProperties() {
         return connectionProperties;
     }
@@ -183,7 +174,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties
      * 
      */
-    @JsonProperty("ConnectionProperties")
     public void setConnectionProperties(ConnectionProperties connectionProperties) {
         this.connectionProperties = connectionProperties;
     }
@@ -197,7 +187,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -206,7 +195,6 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }

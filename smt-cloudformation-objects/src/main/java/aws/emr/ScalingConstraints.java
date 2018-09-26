@@ -42,7 +42,6 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-maxcapacity
      * 
      */
-    @JsonProperty("MaxCapacity")
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -51,7 +50,6 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-maxcapacity
      * 
      */
-    @JsonProperty("MaxCapacity")
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -65,7 +63,6 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-mincapacity
      * 
      */
-    @JsonProperty("MinCapacity")
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -74,7 +71,6 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-mincapacity
      * 
      */
-    @JsonProperty("MinCapacity")
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }

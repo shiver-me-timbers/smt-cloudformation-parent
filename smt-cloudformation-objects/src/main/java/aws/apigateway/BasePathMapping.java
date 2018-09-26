@@ -58,7 +58,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-basepath
      * 
      */
-    @JsonProperty("BasePath")
     public CharSequence getBasePath() {
         return basePath;
     }
@@ -67,7 +66,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-basepath
      * 
      */
-    @JsonProperty("BasePath")
     public void setBasePath(CharSequence basePath) {
         this.basePath = basePath;
     }
@@ -81,7 +79,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -90,7 +87,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-domainname
      * 
      */
-    @JsonProperty("DomainName")
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -104,7 +100,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -113,7 +108,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -127,7 +121,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-stage
      * 
      */
-    @JsonProperty("Stage")
     public CharSequence getStage() {
         return stage;
     }
@@ -136,7 +129,6 @@ public class BasePathMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-stage
      * 
      */
-    @JsonProperty("Stage")
     public void setStage(CharSequence stage) {
         this.stage = stage;
     }

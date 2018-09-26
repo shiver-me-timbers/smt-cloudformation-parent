@@ -41,12 +41,26 @@ public class VpcLinkResource
     private VpcLink properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VpcLinkResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VpcLinkResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VpcLink
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
      * 
      */
-    @JsonProperty("Properties")
     public VpcLink getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VpcLinkResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-vpclink.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VpcLink properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VpcLinkResource
     @Override
     public VpcLinkResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VpcLinkResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IAM_UserResource.schema.json",
+  "title" : "UserResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iam.UserResource",
+  "javaInterfaces" : [ "aws.HasAttributes<UserAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IAM_User.schema.json"
+    }
+  }
+}

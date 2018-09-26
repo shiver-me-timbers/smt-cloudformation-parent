@@ -34,7 +34,6 @@ public class PointInTimeRecoverySpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
      * 
      */
-    @JsonProperty("PointInTimeRecoveryEnabled")
     public Boolean getPointInTimeRecoveryEnabled() {
         return pointInTimeRecoveryEnabled;
     }
@@ -43,7 +42,6 @@ public class PointInTimeRecoverySpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
      * 
      */
-    @JsonProperty("PointInTimeRecoveryEnabled")
     public void setPointInTimeRecoveryEnabled(Boolean pointInTimeRecoveryEnabled) {
         this.pointInTimeRecoveryEnabled = pointInTimeRecoveryEnabled;
     }

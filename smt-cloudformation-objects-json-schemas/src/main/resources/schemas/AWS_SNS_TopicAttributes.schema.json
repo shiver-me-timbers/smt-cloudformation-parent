@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SNS_TopicAttributes.schema.json",
+  "title" : "TopicAttributes",
+  "type" : "string",
+  "enum" : [ "TopicName" ],
+  "javaType" : "aws.sns.TopicAttributes"
+}

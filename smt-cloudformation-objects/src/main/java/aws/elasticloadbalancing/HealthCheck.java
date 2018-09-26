@@ -66,7 +66,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-healthythreshold
      * 
      */
-    @JsonProperty("HealthyThreshold")
     public CharSequence getHealthyThreshold() {
         return healthyThreshold;
     }
@@ -75,7 +74,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-healthythreshold
      * 
      */
-    @JsonProperty("HealthyThreshold")
     public void setHealthyThreshold(CharSequence healthyThreshold) {
         this.healthyThreshold = healthyThreshold;
     }
@@ -89,7 +87,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-interval
      * 
      */
-    @JsonProperty("Interval")
     public CharSequence getInterval() {
         return interval;
     }
@@ -98,7 +95,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-interval
      * 
      */
-    @JsonProperty("Interval")
     public void setInterval(CharSequence interval) {
         this.interval = interval;
     }
@@ -112,7 +108,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-target
      * 
      */
-    @JsonProperty("Target")
     public CharSequence getTarget() {
         return target;
     }
@@ -121,7 +116,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-target
      * 
      */
-    @JsonProperty("Target")
     public void setTarget(CharSequence target) {
         this.target = target;
     }
@@ -135,7 +129,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public CharSequence getTimeout() {
         return timeout;
     }
@@ -144,7 +137,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-timeout
      * 
      */
-    @JsonProperty("Timeout")
     public void setTimeout(CharSequence timeout) {
         this.timeout = timeout;
     }
@@ -158,7 +150,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-unhealthythreshold
      * 
      */
-    @JsonProperty("UnhealthyThreshold")
     public CharSequence getUnhealthyThreshold() {
         return unhealthyThreshold;
     }
@@ -167,7 +158,6 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-unhealthythreshold
      * 
      */
-    @JsonProperty("UnhealthyThreshold")
     public void setUnhealthyThreshold(CharSequence unhealthyThreshold) {
         this.unhealthyThreshold = unhealthyThreshold;
     }

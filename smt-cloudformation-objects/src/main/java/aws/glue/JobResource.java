@@ -41,12 +41,26 @@ public class JobResource
     private Job properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public JobResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public JobResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Job
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
      * 
      */
-    @JsonProperty("Properties")
     public Job getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class JobResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Job properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class JobResource
     @Override
     public JobResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public JobResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

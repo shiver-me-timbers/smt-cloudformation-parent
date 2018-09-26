@@ -42,7 +42,6 @@ public class TimeToLiveSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public CharSequence getAttributeName() {
         return attributeName;
     }
@@ -51,7 +50,6 @@ public class TimeToLiveSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename
      * 
      */
-    @JsonProperty("AttributeName")
     public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
@@ -65,7 +63,6 @@ public class TimeToLiveSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -74,7 +71,6 @@ public class TimeToLiveSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }

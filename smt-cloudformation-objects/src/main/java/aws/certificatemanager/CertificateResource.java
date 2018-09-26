@@ -41,12 +41,26 @@ public class CertificateResource
     private Certificate properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public CertificateResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public CertificateResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Certificate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
      * 
      */
-    @JsonProperty("Properties")
     public Certificate getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class CertificateResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Certificate properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class CertificateResource
     @Override
     public CertificateResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public CertificateResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

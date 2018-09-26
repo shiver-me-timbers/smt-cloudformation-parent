@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisFirehose_DeliveryStreamResource.schema.json",
+  "title" : "DeliveryStreamResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DeliveryStreamAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.schema.json"
+    }
+  }
+}

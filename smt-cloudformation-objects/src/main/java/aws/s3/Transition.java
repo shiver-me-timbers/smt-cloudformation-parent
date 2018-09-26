@@ -50,7 +50,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-storageclass
      * 
      */
-    @JsonProperty("StorageClass")
     public CharSequence getStorageClass() {
         return storageClass;
     }
@@ -59,7 +58,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-storageclass
      * 
      */
-    @JsonProperty("StorageClass")
     public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }
@@ -73,7 +71,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitiondate
      * 
      */
-    @JsonProperty("TransitionDate")
     public String getTransitionDate() {
         return transitionDate;
     }
@@ -82,7 +79,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitiondate
      * 
      */
-    @JsonProperty("TransitionDate")
     public void setTransitionDate(String transitionDate) {
         this.transitionDate = transitionDate;
     }
@@ -96,7 +92,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitionindays
      * 
      */
-    @JsonProperty("TransitionInDays")
     public Integer getTransitionInDays() {
         return transitionInDays;
     }
@@ -105,7 +100,6 @@ public class Transition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html#cfn-s3-bucket-lifecycleconfig-rule-transition-transitionindays
      * 
      */
-    @JsonProperty("TransitionInDays")
     public void setTransitionInDays(Integer transitionInDays) {
         this.transitionInDays = transitionInDays;
     }

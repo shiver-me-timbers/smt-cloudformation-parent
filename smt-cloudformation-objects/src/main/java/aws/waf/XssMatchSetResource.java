@@ -41,12 +41,26 @@ public class XssMatchSetResource
     private XssMatchSet properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public XssMatchSetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public XssMatchSetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * XssMatchSet
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html
      * 
      */
-    @JsonProperty("Properties")
     public XssMatchSet getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class XssMatchSetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(XssMatchSet properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class XssMatchSetResource
     @Override
     public XssMatchSetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public XssMatchSetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

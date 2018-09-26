@@ -42,7 +42,6 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment
      * 
      */
-    @JsonProperty("ComputeEnvironment")
     public CharSequence getComputeEnvironment() {
         return computeEnvironment;
     }
@@ -51,7 +50,6 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment
      * 
      */
-    @JsonProperty("ComputeEnvironment")
     public void setComputeEnvironment(CharSequence computeEnvironment) {
         this.computeEnvironment = computeEnvironment;
     }
@@ -65,7 +63,6 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order
      * 
      */
-    @JsonProperty("Order")
     public Integer getOrder() {
         return order;
     }
@@ -74,7 +71,6 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order
      * 
      */
-    @JsonProperty("Order")
     public void setOrder(Integer order) {
         this.order = order;
     }

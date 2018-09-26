@@ -293,7 +293,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-additionalinfo
      * 
      */
-    @JsonProperty("AdditionalInfo")
     public CharSequence getAdditionalInfo() {
         return additionalInfo;
     }
@@ -302,7 +301,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-additionalinfo
      * 
      */
-    @JsonProperty("AdditionalInfo")
     public void setAdditionalInfo(CharSequence additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
@@ -316,7 +314,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-affinity
      * 
      */
-    @JsonProperty("Affinity")
     public CharSequence getAffinity() {
         return affinity;
     }
@@ -325,7 +322,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-affinity
      * 
      */
-    @JsonProperty("Affinity")
     public void setAffinity(CharSequence affinity) {
         this.affinity = affinity;
     }
@@ -339,7 +335,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -348,7 +343,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-availabilityzone
      * 
      */
-    @JsonProperty("AvailabilityZone")
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -362,7 +356,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public List<BlockDeviceMapping> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
@@ -371,7 +364,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-blockdevicemappings
      * 
      */
-    @JsonProperty("BlockDeviceMappings")
     public void setBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
@@ -387,7 +379,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
      * 
      */
-    @JsonProperty("CreditSpecification")
     public CreditSpecification getCreditSpecification() {
         return creditSpecification;
     }
@@ -398,7 +389,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
      * 
      */
-    @JsonProperty("CreditSpecification")
     public void setCreditSpecification(CreditSpecification creditSpecification) {
         this.creditSpecification = creditSpecification;
     }
@@ -412,7 +402,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination
      * 
      */
-    @JsonProperty("DisableApiTermination")
     public Boolean getDisableApiTermination() {
         return disableApiTermination;
     }
@@ -421,7 +410,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination
      * 
      */
-    @JsonProperty("DisableApiTermination")
     public void setDisableApiTermination(Boolean disableApiTermination) {
         this.disableApiTermination = disableApiTermination;
     }
@@ -435,7 +423,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -444,7 +431,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ebsoptimized
      * 
      */
-    @JsonProperty("EbsOptimized")
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
@@ -458,7 +444,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticgpuspecifications
      * 
      */
-    @JsonProperty("ElasticGpuSpecifications")
     public Set<ElasticGpuSpecification> getElasticGpuSpecifications() {
         return elasticGpuSpecifications;
     }
@@ -467,7 +452,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticgpuspecifications
      * 
      */
-    @JsonProperty("ElasticGpuSpecifications")
     public void setElasticGpuSpecifications(Set<ElasticGpuSpecification> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
     }
@@ -481,7 +465,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid
      * 
      */
-    @JsonProperty("HostId")
     public CharSequence getHostId() {
         return hostId;
     }
@@ -490,7 +473,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid
      * 
      */
-    @JsonProperty("HostId")
     public void setHostId(CharSequence hostId) {
         this.hostId = hostId;
     }
@@ -504,7 +486,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-iaminstanceprofile
      * 
      */
-    @JsonProperty("IamInstanceProfile")
     public CharSequence getIamInstanceProfile() {
         return iamInstanceProfile;
     }
@@ -513,7 +494,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-iaminstanceprofile
      * 
      */
-    @JsonProperty("IamInstanceProfile")
     public void setIamInstanceProfile(CharSequence iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
@@ -527,7 +507,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public CharSequence getImageId() {
         return imageId;
     }
@@ -536,7 +515,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-imageid
      * 
      */
-    @JsonProperty("ImageId")
     public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
@@ -550,7 +528,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instanceinitiatedshutdownbehavior
      * 
      */
-    @JsonProperty("InstanceInitiatedShutdownBehavior")
     public CharSequence getInstanceInitiatedShutdownBehavior() {
         return instanceInitiatedShutdownBehavior;
     }
@@ -559,7 +536,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instanceinitiatedshutdownbehavior
      * 
      */
-    @JsonProperty("InstanceInitiatedShutdownBehavior")
     public void setInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
         this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
     }
@@ -573,7 +549,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -582,7 +557,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-instancetype
      * 
      */
-    @JsonProperty("InstanceType")
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -596,7 +570,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresscount
      * 
      */
-    @JsonProperty("Ipv6AddressCount")
     public Integer getIpv6AddressCount() {
         return ipv6AddressCount;
     }
@@ -605,7 +578,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresscount
      * 
      */
-    @JsonProperty("Ipv6AddressCount")
     public void setIpv6AddressCount(Integer ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
@@ -619,7 +591,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresses
      * 
      */
-    @JsonProperty("Ipv6Addresses")
     public List<InstanceIpv6Address> getIpv6Addresses() {
         return ipv6Addresses;
     }
@@ -628,7 +599,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresses
      * 
      */
-    @JsonProperty("Ipv6Addresses")
     public void setIpv6Addresses(List<InstanceIpv6Address> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
@@ -642,7 +612,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-kernelid
      * 
      */
-    @JsonProperty("KernelId")
     public CharSequence getKernelId() {
         return kernelId;
     }
@@ -651,7 +620,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-kernelid
      * 
      */
-    @JsonProperty("KernelId")
     public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
@@ -665,7 +633,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-keyname
      * 
      */
-    @JsonProperty("KeyName")
     public CharSequence getKeyName() {
         return keyName;
     }
@@ -674,7 +641,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-keyname
      * 
      */
-    @JsonProperty("KeyName")
     public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
@@ -690,7 +656,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
-    @JsonProperty("LaunchTemplate")
     public FleetLaunchTemplateSpecification getLaunchTemplate() {
         return launchTemplate;
     }
@@ -701,7 +666,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
-    @JsonProperty("LaunchTemplate")
     public void setLaunchTemplate(FleetLaunchTemplateSpecification launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
@@ -715,7 +679,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring
      * 
      */
-    @JsonProperty("Monitoring")
     public Boolean getMonitoring() {
         return monitoring;
     }
@@ -724,7 +687,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring
      * 
      */
-    @JsonProperty("Monitoring")
     public void setMonitoring(Boolean monitoring) {
         this.monitoring = monitoring;
     }
@@ -738,7 +700,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-networkinterfaces
      * 
      */
-    @JsonProperty("NetworkInterfaces")
     public List<NetworkInterface> getNetworkInterfaces() {
         return networkInterfaces;
     }
@@ -747,7 +708,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-networkinterfaces
      * 
      */
-    @JsonProperty("NetworkInterfaces")
     public void setNetworkInterfaces(List<NetworkInterface> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
     }
@@ -761,7 +721,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-placementgroupname
      * 
      */
-    @JsonProperty("PlacementGroupName")
     public CharSequence getPlacementGroupName() {
         return placementGroupName;
     }
@@ -770,7 +729,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-placementgroupname
      * 
      */
-    @JsonProperty("PlacementGroupName")
     public void setPlacementGroupName(CharSequence placementGroupName) {
         this.placementGroupName = placementGroupName;
     }
@@ -784,7 +742,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
@@ -793,7 +750,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-privateipaddress
      * 
      */
-    @JsonProperty("PrivateIpAddress")
     public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
@@ -807,7 +763,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ramdiskid
      * 
      */
-    @JsonProperty("RamdiskId")
     public CharSequence getRamdiskId() {
         return ramdiskId;
     }
@@ -816,7 +771,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ramdiskid
      * 
      */
-    @JsonProperty("RamdiskId")
     public void setRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
     }
@@ -830,7 +784,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -839,7 +792,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroupids
      * 
      */
-    @JsonProperty("SecurityGroupIds")
     public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -853,7 +805,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public List<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -862,7 +813,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-securitygroups
      * 
      */
-    @JsonProperty("SecurityGroups")
     public void setSecurityGroups(List<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -876,7 +826,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-sourcedestcheck
      * 
      */
-    @JsonProperty("SourceDestCheck")
     public Boolean getSourceDestCheck() {
         return sourceDestCheck;
     }
@@ -885,7 +834,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-sourcedestcheck
      * 
      */
-    @JsonProperty("SourceDestCheck")
     public void setSourceDestCheck(Boolean sourceDestCheck) {
         this.sourceDestCheck = sourceDestCheck;
     }
@@ -899,7 +847,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ssmassociations
      * 
      */
-    @JsonProperty("SsmAssociations")
     public List<SsmAssociation> getSsmAssociations() {
         return ssmAssociations;
     }
@@ -908,7 +855,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ssmassociations
      * 
      */
-    @JsonProperty("SsmAssociations")
     public void setSsmAssociations(List<SsmAssociation> ssmAssociations) {
         this.ssmAssociations = ssmAssociations;
     }
@@ -922,7 +868,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -931,7 +876,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-subnetid
      * 
      */
-    @JsonProperty("SubnetId")
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -945,7 +889,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tags
      * 
      */
-    @JsonProperty("Tags")
     public List<Tag> getTags() {
         return tags;
     }
@@ -954,7 +897,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tags
      * 
      */
-    @JsonProperty("Tags")
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -968,7 +910,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public CharSequence getTenancy() {
         return tenancy;
     }
@@ -977,7 +918,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tenancy
      * 
      */
-    @JsonProperty("Tenancy")
     public void setTenancy(CharSequence tenancy) {
         this.tenancy = tenancy;
     }
@@ -991,7 +931,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-userdata
      * 
      */
-    @JsonProperty("UserData")
     public CharSequence getUserData() {
         return userData;
     }
@@ -1000,7 +939,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-userdata
      * 
      */
-    @JsonProperty("UserData")
     public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
@@ -1014,7 +952,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-volumes
      * 
      */
-    @JsonProperty("Volumes")
     public List<Volume> getVolumes() {
         return volumes;
     }
@@ -1023,7 +960,6 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-volumes
      * 
      */
-    @JsonProperty("Volumes")
     public void setVolumes(List<Volume> volumes) {
         this.volumes = volumes;
     }

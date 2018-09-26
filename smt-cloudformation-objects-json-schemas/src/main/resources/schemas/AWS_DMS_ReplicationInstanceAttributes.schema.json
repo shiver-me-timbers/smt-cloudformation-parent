@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DMS_ReplicationInstanceAttributes.schema.json",
+  "title" : "ReplicationInstanceAttributes",
+  "type" : "string",
+  "enum" : [ "ReplicationInstancePublicIpAddresses", "ReplicationInstancePrivateIpAddresses" ],
+  "javaType" : "aws.dms.ReplicationInstanceAttributes"
+}

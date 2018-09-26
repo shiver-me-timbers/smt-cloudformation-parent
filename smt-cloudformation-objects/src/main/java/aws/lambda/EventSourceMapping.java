@@ -66,7 +66,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize
      * 
      */
-    @JsonProperty("BatchSize")
     public Integer getBatchSize() {
         return batchSize;
     }
@@ -75,7 +74,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-batchsize
      * 
      */
-    @JsonProperty("BatchSize")
     public void setBatchSize(Integer batchSize) {
         this.batchSize = batchSize;
     }
@@ -89,7 +87,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public Boolean getEnabled() {
         return enabled;
     }
@@ -98,7 +95,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-enabled
      * 
      */
-    @JsonProperty("Enabled")
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -112,7 +108,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn
      * 
      */
-    @JsonProperty("EventSourceArn")
     public CharSequence getEventSourceArn() {
         return eventSourceArn;
     }
@@ -121,7 +116,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-eventsourcearn
      * 
      */
-    @JsonProperty("EventSourceArn")
     public void setEventSourceArn(CharSequence eventSourceArn) {
         this.eventSourceArn = eventSourceArn;
     }
@@ -135,7 +129,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -144,7 +137,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }
@@ -158,7 +150,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
-    @JsonProperty("StartingPosition")
     public CharSequence getStartingPosition() {
         return startingPosition;
     }
@@ -167,7 +158,6 @@ public class EventSourceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-eventsourcemapping.html#cfn-lambda-eventsourcemapping-startingposition
      * 
      */
-    @JsonProperty("StartingPosition")
     public void setStartingPosition(CharSequence startingPosition) {
         this.startingPosition = startingPosition;
     }

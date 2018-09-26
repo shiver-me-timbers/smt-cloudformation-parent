@@ -44,7 +44,6 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
      * 
      */
-    @JsonProperty("ServiceRole")
     public CharSequence getServiceRole() {
         return serviceRole;
     }
@@ -53,7 +52,6 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
      * 
      */
-    @JsonProperty("ServiceRole")
     public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
@@ -69,7 +67,6 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html
      * 
      */
-    @JsonProperty("VersionLifecycleConfig")
     public ApplicationVersionLifecycleConfig getVersionLifecycleConfig() {
         return versionLifecycleConfig;
     }
@@ -80,7 +77,6 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html
      * 
      */
-    @JsonProperty("VersionLifecycleConfig")
     public void setVersionLifecycleConfig(ApplicationVersionLifecycleConfig versionLifecycleConfig) {
         this.versionLifecycleConfig = versionLifecycleConfig;
     }

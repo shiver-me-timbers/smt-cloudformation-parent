@@ -50,7 +50,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
      * 
      */
-    @JsonProperty("CodeSha256")
     public CharSequence getCodeSha256() {
         return codeSha256;
     }
@@ -59,7 +58,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
      * 
      */
-    @JsonProperty("CodeSha256")
     public void setCodeSha256(CharSequence codeSha256) {
         this.codeSha256 = codeSha256;
     }
@@ -73,7 +71,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -82,7 +79,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -96,7 +92,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -105,7 +100,6 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
      * 
      */
-    @JsonProperty("FunctionName")
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }

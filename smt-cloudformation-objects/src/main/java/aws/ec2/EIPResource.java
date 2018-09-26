@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class EIPResource
     extends Resource
+    implements HasAttributes<EIPAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class EIPResource
     private EIP properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public EIPResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public EIPResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * EIP
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html
      * 
      */
-    @JsonProperty("Properties")
     public EIP getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class EIPResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(EIP properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class EIPResource
     @Override
     public EIPResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public EIPResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

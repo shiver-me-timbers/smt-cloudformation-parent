@@ -41,12 +41,26 @@ public class ListenerResource
     private Listener properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public ListenerResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public ListenerResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Listener
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
      * 
      */
-    @JsonProperty("Properties")
     public Listener getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class ListenerResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Listener properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class ListenerResource
     @Override
     public ListenerResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public ListenerResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

@@ -46,7 +46,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-key
      * 
      */
-    @JsonProperty("Key")
     public CharSequence getKey() {
         return key;
     }
@@ -55,7 +54,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-key
      * 
      */
-    @JsonProperty("Key")
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -69,7 +67,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-values
      * 
      */
-    @JsonProperty("Values")
     public Set<CharSequence> getValues() {
         return values;
     }
@@ -78,7 +75,6 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-target.html#cfn-ssm-association-target-values
      * 
      */
-    @JsonProperty("Values")
     public void setValues(Set<CharSequence> values) {
         this.values = values;
     }

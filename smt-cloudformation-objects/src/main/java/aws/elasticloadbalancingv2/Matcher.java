@@ -34,7 +34,6 @@ public class Matcher {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode
      * 
      */
-    @JsonProperty("HttpCode")
     public CharSequence getHttpCode() {
         return httpCode;
     }
@@ -43,7 +42,6 @@ public class Matcher {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode
      * 
      */
-    @JsonProperty("HttpCode")
     public void setHttpCode(CharSequence httpCode) {
         this.httpCode = httpCode;
     }

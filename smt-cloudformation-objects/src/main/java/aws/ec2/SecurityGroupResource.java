@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class SecurityGroupResource
     extends Resource
+    implements HasAttributes<SecurityGroupAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class SecurityGroupResource
     private SecurityGroup properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public SecurityGroupResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public SecurityGroupResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * SecurityGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public SecurityGroup getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class SecurityGroupResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(SecurityGroup properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class SecurityGroupResource
     @Override
     public SecurityGroupResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public SecurityGroupResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

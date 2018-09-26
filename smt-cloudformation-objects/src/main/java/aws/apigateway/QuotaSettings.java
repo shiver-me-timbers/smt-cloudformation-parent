@@ -50,7 +50,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit
      * 
      */
-    @JsonProperty("Limit")
     public Integer getLimit() {
         return limit;
     }
@@ -59,7 +58,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit
      * 
      */
-    @JsonProperty("Limit")
     public void setLimit(Integer limit) {
         this.limit = limit;
     }
@@ -73,7 +71,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset
      * 
      */
-    @JsonProperty("Offset")
     public Integer getOffset() {
         return offset;
     }
@@ -82,7 +79,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset
      * 
      */
-    @JsonProperty("Offset")
     public void setOffset(Integer offset) {
         this.offset = offset;
     }
@@ -96,7 +92,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period
      * 
      */
-    @JsonProperty("Period")
     public CharSequence getPeriod() {
         return period;
     }
@@ -105,7 +100,6 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period
      * 
      */
-    @JsonProperty("Period")
     public void setPeriod(CharSequence period) {
         this.period = period;
     }

@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class AssessmentTargetResource
     extends Resource
+    implements HasAttributes<AssessmentTargetAttributes>
 {
 
     /**
@@ -41,12 +43,26 @@ public class AssessmentTargetResource
     private AssessmentTarget properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AssessmentTargetResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AssessmentTargetResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * AssessmentTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html
      * 
      */
-    @JsonProperty("Properties")
     public AssessmentTarget getProperties() {
         return properties;
     }
@@ -57,7 +73,6 @@ public class AssessmentTargetResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(AssessmentTarget properties) {
         this.properties = properties;
     }
@@ -100,6 +115,12 @@ public class AssessmentTargetResource
     @Override
     public AssessmentTargetResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AssessmentTargetResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

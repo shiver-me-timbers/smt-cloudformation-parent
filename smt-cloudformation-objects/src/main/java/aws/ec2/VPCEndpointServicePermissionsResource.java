@@ -41,12 +41,26 @@ public class VPCEndpointServicePermissionsResource
     private VPCEndpointServicePermissions properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public VPCEndpointServicePermissionsResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public VPCEndpointServicePermissionsResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * VPCEndpointServicePermissions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html
      * 
      */
-    @JsonProperty("Properties")
     public VPCEndpointServicePermissions getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class VPCEndpointServicePermissionsResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(VPCEndpointServicePermissions properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class VPCEndpointServicePermissionsResource
     @Override
     public VPCEndpointServicePermissionsResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public VPCEndpointServicePermissionsResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

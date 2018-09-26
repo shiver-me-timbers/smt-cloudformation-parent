@@ -60,7 +60,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
      */
-    @JsonProperty("Description")
     public CharSequence getDescription() {
         return description;
     }
@@ -69,7 +68,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
      */
-    @JsonProperty("Description")
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -83,7 +81,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -92,7 +89,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
      * 
      */
-    @JsonProperty("RestApiId")
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -108,7 +104,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
-    @JsonProperty("StageDescription")
     public StageDescription getStageDescription() {
         return stageDescription;
     }
@@ -119,7 +114,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
-    @JsonProperty("StageDescription")
     public void setStageDescription(StageDescription stageDescription) {
         this.stageDescription = stageDescription;
     }
@@ -133,7 +127,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
      */
-    @JsonProperty("StageName")
     public CharSequence getStageName() {
         return stageName;
     }
@@ -142,7 +135,6 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
      */
-    @JsonProperty("StageName")
     public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }

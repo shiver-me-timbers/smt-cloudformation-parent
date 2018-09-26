@@ -50,7 +50,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
      * 
      */
-    @JsonProperty("Certificate")
     public CharSequence getCertificate() {
         return certificate;
     }
@@ -59,7 +58,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
      * 
      */
-    @JsonProperty("Certificate")
     public void setCertificate(CharSequence certificate) {
         this.certificate = certificate;
     }
@@ -73,7 +71,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
      * 
      */
-    @JsonProperty("Chain")
     public CharSequence getChain() {
         return chain;
     }
@@ -82,7 +79,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
      * 
      */
-    @JsonProperty("Chain")
     public void setChain(CharSequence chain) {
         this.chain = chain;
     }
@@ -96,7 +92,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
      * 
      */
-    @JsonProperty("PrivateKey")
     public CharSequence getPrivateKey() {
         return privateKey;
     }
@@ -105,7 +100,6 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
      * 
      */
-    @JsonProperty("PrivateKey")
     public void setPrivateKey(CharSequence privateKey) {
         this.privateKey = privateKey;
     }

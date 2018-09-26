@@ -41,12 +41,26 @@ public class AccountResource
     private Account properties;
 
     /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public AccountResource() {
+    }
+
+    /**
+     * 
+     * @param name
+     */
+    public AccountResource(java.lang.String name) {
+        super(name);
+    }
+
+    /**
      * Account
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html
      * 
      */
-    @JsonProperty("Properties")
     public Account getProperties() {
         return properties;
     }
@@ -57,7 +71,6 @@ public class AccountResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html
      * 
      */
-    @JsonProperty("Properties")
     public void setProperties(Account properties) {
         this.properties = properties;
     }
@@ -100,6 +113,12 @@ public class AccountResource
     @Override
     public AccountResource withMetadata(Map<String, Object> metadata) {
         super.withMetadata(metadata);
+        return this;
+    }
+
+    @Override
+    public AccountResource withName(java.lang.String name) {
+        super.withName(name);
         return this;
     }
 

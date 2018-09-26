@@ -46,7 +46,6 @@ public class SqlInjectionMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name
      * 
      */
-    @JsonProperty("Name")
     public CharSequence getName() {
         return name;
     }
@@ -55,7 +54,6 @@ public class SqlInjectionMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name
      * 
      */
-    @JsonProperty("Name")
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -69,7 +67,6 @@ public class SqlInjectionMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples
      * 
      */
-    @JsonProperty("SqlInjectionMatchTuples")
     public Set<SqlInjectionMatchTuple> getSqlInjectionMatchTuples() {
         return sqlInjectionMatchTuples;
     }
@@ -78,7 +75,6 @@ public class SqlInjectionMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples
      * 
      */
-    @JsonProperty("SqlInjectionMatchTuples")
     public void setSqlInjectionMatchTuples(Set<SqlInjectionMatchTuple> sqlInjectionMatchTuples) {
         this.sqlInjectionMatchTuples = sqlInjectionMatchTuples;
     }
