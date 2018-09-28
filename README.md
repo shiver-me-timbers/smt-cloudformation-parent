@@ -17,6 +17,6 @@ smt-cloudformation-parent
 ===========
 [![Build Status](https://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent.svg)](https://travis-ci.org/shiver-me-timbers/smt-cloudformation-parent)
 [![Coverage Status](https://coveralls.io/repos/shiver-me-timbers/smt-cloudformation-parent/badge.svg?branch=master&service=github)](https://coveralls.io/github/shiver-me-timbers/smt-cloudformation-parent?branch=master)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers/smt-cloudformation-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers/smt-cloudformation-parent/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.shiver-me-timbers.aws.cloudformation/smt-cloudformation-parent/)
 
 This library contains Java objects for building Cloudformation template components. These objects can then be serialised to a JSON or YAML template using the Jackson library.
