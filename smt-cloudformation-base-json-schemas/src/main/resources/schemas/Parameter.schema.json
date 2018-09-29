@@ -1,49 +1,50 @@
 {
-  "$schema" : "http://json-schema.org/draft-07/schema#",
-  "$id" : "Parameter.schema.json",
-  "title" : "Parameter",
-  "description" : "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html",
-  "type" : "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Parameter.schema.json",
+  "title": "Parameter",
+  "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html",
+  "type": "object",
   "extends": {
     "$ref": "Named.schema.json"
   },
-  "javaType" : "aws.Parameter",
-  "properties" : {
-    "AllowedPattern" : {
-      "type" : "string"
+  "javaType": "aws.Parameter",
+  "javaInterfaces": ["aws.HasReference"],
+  "properties": {
+    "AllowedPattern": {
+      "type": "string"
     },
-    "AllowedValues" : {
-      "type" : "array",
+    "AllowedValues": {
+      "type": "array",
       "items": {
         "type": "string"
       }
     },
-    "ConstraintDescription" : {
-      "type" : "string"
+    "ConstraintDescription": {
+      "type": "string"
     },
-    "Default" : {
-      "type" : "string"
+    "Default": {
+      "type": "string"
     },
-    "Description" : {
-      "type" : "string"
+    "Description": {
+      "type": "string"
     },
-    "MaxLength" : {
-      "type" : "integer"
+    "MaxLength": {
+      "type": "integer"
     },
-    "MaxValue" : {
-      "type" : "integer"
+    "MaxValue": {
+      "type": "integer"
     },
-    "MinLength" : {
-      "type" : "integer"
+    "MinLength": {
+      "type": "integer"
     },
-    "MinValue" : {
-      "type" : "integer"
+    "MinValue": {
+      "type": "integer"
     },
-    "NoEcho" : {
-      "type" : "boolean"
+    "NoEcho": {
+      "type": "boolean"
     },
-    "Type" : {
-      "type" : "string"
+    "Type": {
+      "type": "string"
     }
   }
 }
