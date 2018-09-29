@@ -89,6 +89,12 @@ public class AlarmResource
     }
 
     @Override
+    public AlarmResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AlarmResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

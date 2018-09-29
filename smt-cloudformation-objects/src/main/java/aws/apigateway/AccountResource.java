@@ -87,6 +87,12 @@ public class AccountResource
     }
 
     @Override
+    public AccountResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AccountResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

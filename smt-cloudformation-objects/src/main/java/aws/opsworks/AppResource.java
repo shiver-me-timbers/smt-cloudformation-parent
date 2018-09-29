@@ -87,6 +87,12 @@ public class AppResource
     }
 
     @Override
+    public AppResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AppResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

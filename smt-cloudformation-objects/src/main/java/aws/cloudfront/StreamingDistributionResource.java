@@ -89,6 +89,12 @@ public class StreamingDistributionResource
     }
 
     @Override
+    public StreamingDistributionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public StreamingDistributionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

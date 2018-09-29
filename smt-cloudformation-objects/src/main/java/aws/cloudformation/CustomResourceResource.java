@@ -87,6 +87,12 @@ public class CustomResourceResource
     }
 
     @Override
+    public CustomResourceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CustomResourceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

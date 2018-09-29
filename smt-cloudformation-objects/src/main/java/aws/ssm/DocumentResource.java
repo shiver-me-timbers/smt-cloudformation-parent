@@ -87,6 +87,12 @@ public class DocumentResource
     }
 
     @Override
+    public DocumentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DocumentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

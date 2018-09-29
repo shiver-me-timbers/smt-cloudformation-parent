@@ -87,6 +87,12 @@ public class DBSecurityGroupIngressResource
     }
 
     @Override
+    public DBSecurityGroupIngressResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DBSecurityGroupIngressResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class SqlInjectionMatchSetResource
     }
 
     @Override
+    public SqlInjectionMatchSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SqlInjectionMatchSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

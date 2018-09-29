@@ -87,6 +87,12 @@ public class SecurityGroupIngressResource
     }
 
     @Override
+    public SecurityGroupIngressResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SecurityGroupIngressResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

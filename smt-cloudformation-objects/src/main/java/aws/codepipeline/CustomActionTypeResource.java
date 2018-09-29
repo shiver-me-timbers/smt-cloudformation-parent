@@ -87,6 +87,12 @@ public class CustomActionTypeResource
     }
 
     @Override
+    public CustomActionTypeResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CustomActionTypeResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

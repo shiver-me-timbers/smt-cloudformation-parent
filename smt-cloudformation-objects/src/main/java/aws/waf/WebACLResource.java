@@ -87,6 +87,12 @@ public class WebACLResource
     }
 
     @Override
+    public WebACLResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public WebACLResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

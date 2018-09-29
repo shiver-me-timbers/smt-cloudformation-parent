@@ -89,6 +89,12 @@ public class RepositoryResource
     }
 
     @Override
+    public RepositoryResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RepositoryResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

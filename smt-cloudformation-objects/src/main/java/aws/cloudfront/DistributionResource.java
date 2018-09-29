@@ -89,6 +89,12 @@ public class DistributionResource
     }
 
     @Override
+    public DistributionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DistributionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

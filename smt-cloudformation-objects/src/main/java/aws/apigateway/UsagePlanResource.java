@@ -87,6 +87,12 @@ public class UsagePlanResource
     }
 
     @Override
+    public UsagePlanResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UsagePlanResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

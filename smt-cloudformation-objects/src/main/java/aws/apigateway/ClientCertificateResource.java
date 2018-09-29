@@ -87,6 +87,12 @@ public class ClientCertificateResource
     }
 
     @Override
+    public ClientCertificateResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClientCertificateResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

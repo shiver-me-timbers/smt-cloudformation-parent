@@ -89,6 +89,12 @@ public class SimpleADResource
     }
 
     @Override
+    public SimpleADResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SimpleADResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

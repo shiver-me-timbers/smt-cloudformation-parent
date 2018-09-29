@@ -87,6 +87,12 @@ public class NatGatewayResource
     }
 
     @Override
+    public NatGatewayResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public NatGatewayResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

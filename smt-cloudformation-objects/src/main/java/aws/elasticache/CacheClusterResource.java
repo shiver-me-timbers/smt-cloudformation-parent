@@ -89,6 +89,12 @@ public class CacheClusterResource
     }
 
     @Override
+    public CacheClusterResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CacheClusterResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

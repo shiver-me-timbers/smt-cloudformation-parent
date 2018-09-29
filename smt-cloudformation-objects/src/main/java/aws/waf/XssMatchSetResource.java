@@ -87,6 +87,12 @@ public class XssMatchSetResource
     }
 
     @Override
+    public XssMatchSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public XssMatchSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class ConfigurationRecorderResource
     }
 
     @Override
+    public ConfigurationRecorderResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ConfigurationRecorderResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class DBParameterGroupResource
     }
 
     @Override
+    public DBParameterGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DBParameterGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

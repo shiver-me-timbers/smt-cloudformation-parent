@@ -87,6 +87,12 @@ public class FileSystemResource
     }
 
     @Override
+    public FileSystemResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public FileSystemResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

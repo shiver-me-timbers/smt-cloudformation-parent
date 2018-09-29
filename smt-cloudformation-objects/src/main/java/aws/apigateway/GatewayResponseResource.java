@@ -87,6 +87,12 @@ public class GatewayResponseResource
     }
 
     @Override
+    public GatewayResponseResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public GatewayResponseResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

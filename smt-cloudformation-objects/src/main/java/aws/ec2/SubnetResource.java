@@ -89,6 +89,12 @@ public class SubnetResource
     }
 
     @Override
+    public SubnetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SubnetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

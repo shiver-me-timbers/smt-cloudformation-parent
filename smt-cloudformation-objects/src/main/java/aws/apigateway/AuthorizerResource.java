@@ -87,6 +87,12 @@ public class AuthorizerResource
     }
 
     @Override
+    public AuthorizerResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AuthorizerResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

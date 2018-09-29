@@ -89,6 +89,12 @@ public class AssessmentTargetResource
     }
 
     @Override
+    public AssessmentTargetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AssessmentTargetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

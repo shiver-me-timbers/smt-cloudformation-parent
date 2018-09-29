@@ -87,6 +87,12 @@ public class FlowLogResource
     }
 
     @Override
+    public FlowLogResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public FlowLogResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class DeploymentGroupResource
     }
 
     @Override
+    public DeploymentGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DeploymentGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

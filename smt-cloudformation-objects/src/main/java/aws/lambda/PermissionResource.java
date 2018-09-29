@@ -87,6 +87,12 @@ public class PermissionResource
     }
 
     @Override
+    public PermissionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PermissionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

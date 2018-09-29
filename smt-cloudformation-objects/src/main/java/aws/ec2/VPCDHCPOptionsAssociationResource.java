@@ -87,6 +87,12 @@ public class VPCDHCPOptionsAssociationResource
     }
 
     @Override
+    public VPCDHCPOptionsAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCDHCPOptionsAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -89,6 +89,12 @@ public class BrokerResource
     }
 
     @Override
+    public BrokerResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public BrokerResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class VolumeAttachmentResource
     }
 
     @Override
+    public VolumeAttachmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VolumeAttachmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

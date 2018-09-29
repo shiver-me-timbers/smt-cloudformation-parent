@@ -87,6 +87,12 @@ public class TopicPolicyResource
     }
 
     @Override
+    public TopicPolicyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TopicPolicyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class VPCEndpointConnectionNotificationResource
     }
 
     @Override
+    public VPCEndpointConnectionNotificationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCEndpointConnectionNotificationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

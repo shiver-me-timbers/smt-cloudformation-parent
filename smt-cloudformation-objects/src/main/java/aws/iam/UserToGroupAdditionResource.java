@@ -87,6 +87,12 @@ public class UserToGroupAdditionResource
     }
 
     @Override
+    public UserToGroupAdditionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UserToGroupAdditionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

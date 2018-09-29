@@ -87,6 +87,12 @@ public class DeliveryChannelResource
     }
 
     @Override
+    public DeliveryChannelResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DeliveryChannelResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

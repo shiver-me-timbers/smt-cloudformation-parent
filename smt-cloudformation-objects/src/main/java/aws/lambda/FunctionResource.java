@@ -89,6 +89,12 @@ public class FunctionResource
     }
 
     @Override
+    public FunctionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public FunctionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

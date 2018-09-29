@@ -89,6 +89,12 @@ public class InstanceProfileResource
     }
 
     @Override
+    public InstanceProfileResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public InstanceProfileResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

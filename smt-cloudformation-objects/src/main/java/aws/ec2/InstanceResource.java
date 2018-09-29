@@ -89,6 +89,12 @@ public class InstanceResource
     }
 
     @Override
+    public InstanceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public InstanceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

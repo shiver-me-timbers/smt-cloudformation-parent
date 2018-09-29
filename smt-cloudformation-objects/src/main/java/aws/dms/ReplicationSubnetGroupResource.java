@@ -87,6 +87,12 @@ public class ReplicationSubnetGroupResource
     }
 
     @Override
+    public ReplicationSubnetGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ReplicationSubnetGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

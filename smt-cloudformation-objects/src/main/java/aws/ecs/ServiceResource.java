@@ -89,6 +89,12 @@ public class ServiceResource
     }
 
     @Override
+    public ServiceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ServiceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

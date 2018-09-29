@@ -87,6 +87,12 @@ public class SpotFleetResource
     }
 
     @Override
+    public SpotFleetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SpotFleetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

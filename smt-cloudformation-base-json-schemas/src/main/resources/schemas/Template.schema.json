@@ -7,6 +7,7 @@
   "javaType": "aws.Template",
   "javaInterfaces": [
     "aws.HasParameters<Template, Parameter>",
+    "aws.HasConditions<Template>",
     "aws.HasResources<Template, Resource>",
     "aws.HasOutputs<Template, Output>"
   ],
@@ -32,7 +33,7 @@
     },
     "Conditions": {
       "type": "object",
-      "javaType": "java.util.Map<String, Object>"
+      "javaType": "java.util.Map<String, aws.fn.ConditionFunction>"
     },
     "Resources": {
       "type": "object",

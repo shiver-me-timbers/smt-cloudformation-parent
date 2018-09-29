@@ -87,6 +87,12 @@ public class PlacementGroupResource
     }
 
     @Override
+    public PlacementGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PlacementGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

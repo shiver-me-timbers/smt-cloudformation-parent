@@ -87,6 +87,12 @@ public class ReplicationTaskResource
     }
 
     @Override
+    public ReplicationTaskResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ReplicationTaskResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

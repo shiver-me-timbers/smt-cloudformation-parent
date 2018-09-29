@@ -89,6 +89,12 @@ public class EndpointResource
     }
 
     @Override
+    public EndpointResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public EndpointResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

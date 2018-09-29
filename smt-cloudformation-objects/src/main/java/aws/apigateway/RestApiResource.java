@@ -89,6 +89,12 @@ public class RestApiResource
     }
 
     @Override
+    public RestApiResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RestApiResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

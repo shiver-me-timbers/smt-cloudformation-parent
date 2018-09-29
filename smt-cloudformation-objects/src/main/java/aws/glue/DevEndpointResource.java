@@ -87,6 +87,12 @@ public class DevEndpointResource
     }
 
     @Override
+    public DevEndpointResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DevEndpointResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

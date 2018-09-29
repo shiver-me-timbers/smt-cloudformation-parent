@@ -87,6 +87,12 @@ public class PartitionResource
     }
 
     @Override
+    public PartitionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PartitionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class TrunkInterfaceAssociationResource
     }
 
     @Override
+    public TrunkInterfaceAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TrunkInterfaceAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

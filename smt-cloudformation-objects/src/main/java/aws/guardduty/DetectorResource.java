@@ -87,6 +87,12 @@ public class DetectorResource
     }
 
     @Override
+    public DetectorResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DetectorResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

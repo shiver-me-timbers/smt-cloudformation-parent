@@ -89,6 +89,12 @@ public class DeliveryStreamResource
     }
 
     @Override
+    public DeliveryStreamResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DeliveryStreamResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

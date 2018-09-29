@@ -87,6 +87,12 @@ public class AggregationAuthorizationResource
     }
 
     @Override
+    public AggregationAuthorizationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AggregationAuthorizationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

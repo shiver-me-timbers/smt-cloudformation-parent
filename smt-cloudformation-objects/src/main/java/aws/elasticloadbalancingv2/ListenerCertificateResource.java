@@ -87,6 +87,12 @@ public class ListenerCertificateResource
     }
 
     @Override
+    public ListenerCertificateResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ListenerCertificateResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

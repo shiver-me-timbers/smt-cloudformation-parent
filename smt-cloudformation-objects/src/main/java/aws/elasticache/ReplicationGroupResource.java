@@ -89,6 +89,12 @@ public class ReplicationGroupResource
     }
 
     @Override
+    public ReplicationGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ReplicationGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

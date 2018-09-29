@@ -87,6 +87,12 @@ public class EIPAssociationResource
     }
 
     @Override
+    public EIPAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public EIPAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

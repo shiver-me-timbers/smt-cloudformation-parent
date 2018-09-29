@@ -87,6 +87,12 @@ public class ElasticLoadBalancerAttachmentResource
     }
 
     @Override
+    public ElasticLoadBalancerAttachmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ElasticLoadBalancerAttachmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

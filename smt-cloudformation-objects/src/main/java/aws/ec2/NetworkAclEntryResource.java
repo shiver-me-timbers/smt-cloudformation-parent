@@ -87,6 +87,12 @@ public class NetworkAclEntryResource
     }
 
     @Override
+    public NetworkAclEntryResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public NetworkAclEntryResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

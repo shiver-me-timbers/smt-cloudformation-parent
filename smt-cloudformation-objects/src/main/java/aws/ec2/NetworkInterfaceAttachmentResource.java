@@ -87,6 +87,12 @@ public class NetworkInterfaceAttachmentResource
     }
 
     @Override
+    public NetworkInterfaceAttachmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public NetworkInterfaceAttachmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

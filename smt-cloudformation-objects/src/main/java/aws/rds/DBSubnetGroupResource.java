@@ -87,6 +87,12 @@ public class DBSubnetGroupResource
     }
 
     @Override
+    public DBSubnetGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DBSubnetGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

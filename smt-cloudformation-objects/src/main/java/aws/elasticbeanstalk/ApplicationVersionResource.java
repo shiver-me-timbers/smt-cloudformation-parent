@@ -87,6 +87,12 @@ public class ApplicationVersionResource
     }
 
     @Override
+    public ApplicationVersionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ApplicationVersionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

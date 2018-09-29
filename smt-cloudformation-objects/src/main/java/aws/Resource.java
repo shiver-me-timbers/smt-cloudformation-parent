@@ -22,6 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "Type",
+    "Condition",
     "CreationPolicy",
     "UpdatePolicy",
     "DeletionPolicy",
@@ -30,10 +31,18 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class Resource
     extends Named
+    implements HasCondition<Template> , HasDependsOn<Template> , HasReference
 {
 
     @JsonProperty("Type")
     private java.lang.String type;
+    /**
+     * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
+     * 
+     */
+    @JsonProperty("Condition")
+    @JsonPropertyDescription("https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html")
+    private java.lang.String condition;
     @JsonProperty("CreationPolicy")
     private CreationPolicy creationPolicy;
     @JsonProperty("UpdatePolicy")
@@ -87,6 +96,27 @@ public class Resource
 
     public Resource withType(java.lang.String type) {
         this.type = type;
+        return this;
+    }
+
+    /**
+     * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
+     * 
+     */
+    public java.lang.String getCondition() {
+        return condition;
+    }
+
+    /**
+     * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
+     * 
+     */
+    public void setCondition(java.lang.String condition) {
+        this.condition = condition;
+    }
+
+    public Resource withCondition(java.lang.String condition) {
+        this.condition = condition;
         return this;
     }
 
@@ -191,12 +221,12 @@ public class Resource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("creationPolicy", creationPolicy).append("updatePolicy", updatePolicy).append("deletionPolicy", deletionPolicy).append("dependsOn", dependsOn).append("metadata", metadata).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("condition", condition).append("creationPolicy", creationPolicy).append("updatePolicy", updatePolicy).append("deletionPolicy", deletionPolicy).append("dependsOn", dependsOn).append("metadata", metadata).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(metadata).append(dependsOn).append(creationPolicy).append(updatePolicy).append(deletionPolicy).append(type).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(condition).append(metadata).append(dependsOn).append(creationPolicy).append(updatePolicy).append(deletionPolicy).append(type).toHashCode();
     }
 
     @Override
@@ -208,7 +238,7 @@ public class Resource
             return false;
         }
         Resource rhs = ((Resource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(metadata, rhs.metadata).append(dependsOn, rhs.dependsOn).append(creationPolicy, rhs.creationPolicy).append(updatePolicy, rhs.updatePolicy).append(deletionPolicy, rhs.deletionPolicy).append(type, rhs.type).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(condition, rhs.condition).append(metadata, rhs.metadata).append(dependsOn, rhs.dependsOn).append(creationPolicy, rhs.creationPolicy).append(updatePolicy, rhs.updatePolicy).append(deletionPolicy, rhs.deletionPolicy).append(type, rhs.type).isEquals();
     }
 
 }

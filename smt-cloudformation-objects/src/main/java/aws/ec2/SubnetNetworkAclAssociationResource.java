@@ -89,6 +89,12 @@ public class SubnetNetworkAclAssociationResource
     }
 
     @Override
+    public SubnetNetworkAclAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SubnetNetworkAclAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

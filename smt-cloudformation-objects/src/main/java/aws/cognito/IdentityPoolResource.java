@@ -89,6 +89,12 @@ public class IdentityPoolResource
     }
 
     @Override
+    public IdentityPoolResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public IdentityPoolResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

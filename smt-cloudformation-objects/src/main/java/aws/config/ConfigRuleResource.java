@@ -89,6 +89,12 @@ public class ConfigRuleResource
     }
 
     @Override
+    public ConfigRuleResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ConfigRuleResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

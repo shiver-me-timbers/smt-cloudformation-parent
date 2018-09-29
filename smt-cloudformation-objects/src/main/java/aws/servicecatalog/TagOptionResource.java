@@ -87,6 +87,12 @@ public class TagOptionResource
     }
 
     @Override
+    public TagOptionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TagOptionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

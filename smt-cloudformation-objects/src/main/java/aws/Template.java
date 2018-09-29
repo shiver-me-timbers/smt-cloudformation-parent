@@ -2,6 +2,7 @@
 package aws;
 
 import java.util.Map;
+import aws.fn.ConditionFunction;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -27,7 +28,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Resources",
     "Outputs"
 })
-public class Template implements HasOutputs<Template, Output> , HasParameters<Template, Parameter> , HasResources<Template, Resource>
+public class Template implements HasConditions<Template> , HasOutputs<Template, Output> , HasParameters<Template, Parameter> , HasResources<Template, Resource>
 {
 
     @JsonProperty("AWSTemplateFormatVersion")
@@ -41,7 +42,7 @@ public class Template implements HasOutputs<Template, Output> , HasParameters<Te
     @JsonProperty("Mappings")
     private Map<String, Map<String, Map<String, String>>> mappings;
     @JsonProperty("Conditions")
-    private Map<String, Object> conditions;
+    private Map<String, ConditionFunction> conditions;
     @JsonProperty("Resources")
     private Map<String, Resource> resources;
     @JsonProperty("Outputs")
@@ -112,15 +113,15 @@ public class Template implements HasOutputs<Template, Output> , HasParameters<Te
         return this;
     }
 
-    public Map<String, Object> getConditions() {
+    public Map<String, ConditionFunction> getConditions() {
         return conditions;
     }
 
-    public void setConditions(Map<String, Object> conditions) {
+    public void setConditions(Map<String, ConditionFunction> conditions) {
         this.conditions = conditions;
     }
 
-    public Template withConditions(Map<String, Object> conditions) {
+    public Template withConditions(Map<String, ConditionFunction> conditions) {
         this.conditions = conditions;
         return this;
     }

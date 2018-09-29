@@ -87,6 +87,12 @@ public class MetricFilterResource
     }
 
     @Override
+    public MetricFilterResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public MetricFilterResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

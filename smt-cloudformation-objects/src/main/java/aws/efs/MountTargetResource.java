@@ -87,6 +87,12 @@ public class MountTargetResource
     }
 
     @Override
+    public MountTargetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public MountTargetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

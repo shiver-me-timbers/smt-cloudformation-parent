@@ -87,6 +87,12 @@ public class RecordSetResource
     }
 
     @Override
+    public RecordSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RecordSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

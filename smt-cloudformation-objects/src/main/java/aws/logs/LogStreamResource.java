@@ -87,6 +87,12 @@ public class LogStreamResource
     }
 
     @Override
+    public LogStreamResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LogStreamResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

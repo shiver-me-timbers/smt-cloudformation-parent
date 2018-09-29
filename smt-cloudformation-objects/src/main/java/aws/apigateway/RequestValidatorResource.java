@@ -87,6 +87,12 @@ public class RequestValidatorResource
     }
 
     @Override
+    public RequestValidatorResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RequestValidatorResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class ResourceDataSyncResource
     }
 
     @Override
+    public ResourceDataSyncResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ResourceDataSyncResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

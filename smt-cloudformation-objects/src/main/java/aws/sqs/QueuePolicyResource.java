@@ -87,6 +87,12 @@ public class QueuePolicyResource
     }
 
     @Override
+    public QueuePolicyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public QueuePolicyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

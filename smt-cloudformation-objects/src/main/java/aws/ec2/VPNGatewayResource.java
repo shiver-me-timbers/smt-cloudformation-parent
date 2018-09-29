@@ -87,6 +87,12 @@ public class VPNGatewayResource
     }
 
     @Override
+    public VPNGatewayResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPNGatewayResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

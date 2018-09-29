@@ -87,6 +87,12 @@ public class PortfolioShareResource
     }
 
     @Override
+    public PortfolioShareResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PortfolioShareResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class ByteMatchSetResource
     }
 
     @Override
+    public ByteMatchSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ByteMatchSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

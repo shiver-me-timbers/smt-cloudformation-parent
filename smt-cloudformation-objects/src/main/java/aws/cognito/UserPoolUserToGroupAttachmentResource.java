@@ -87,6 +87,12 @@ public class UserPoolUserToGroupAttachmentResource
     }
 
     @Override
+    public UserPoolUserToGroupAttachmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UserPoolUserToGroupAttachmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

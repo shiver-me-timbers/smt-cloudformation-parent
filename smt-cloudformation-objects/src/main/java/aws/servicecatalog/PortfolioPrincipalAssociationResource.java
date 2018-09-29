@@ -87,6 +87,12 @@ public class PortfolioPrincipalAssociationResource
     }
 
     @Override
+    public PortfolioPrincipalAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PortfolioPrincipalAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

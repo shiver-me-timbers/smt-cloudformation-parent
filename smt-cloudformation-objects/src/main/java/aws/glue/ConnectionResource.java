@@ -87,6 +87,12 @@ public class ConnectionResource
     }
 
     @Override
+    public ConnectionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ConnectionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

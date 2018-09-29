@@ -87,6 +87,12 @@ public class BasePathMappingResource
     }
 
     @Override
+    public BasePathMappingResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public BasePathMappingResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

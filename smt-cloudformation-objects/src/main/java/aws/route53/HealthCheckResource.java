@@ -87,6 +87,12 @@ public class HealthCheckResource
     }
 
     @Override
+    public HealthCheckResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public HealthCheckResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

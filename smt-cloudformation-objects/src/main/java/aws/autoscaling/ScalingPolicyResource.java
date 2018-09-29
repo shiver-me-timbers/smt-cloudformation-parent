@@ -87,6 +87,12 @@ public class ScalingPolicyResource
     }
 
     @Override
+    public ScalingPolicyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ScalingPolicyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

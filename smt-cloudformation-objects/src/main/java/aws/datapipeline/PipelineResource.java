@@ -87,6 +87,12 @@ public class PipelineResource
     }
 
     @Override
+    public PipelineResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PipelineResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

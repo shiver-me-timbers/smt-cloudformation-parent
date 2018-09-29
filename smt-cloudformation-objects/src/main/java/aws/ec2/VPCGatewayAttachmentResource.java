@@ -87,6 +87,12 @@ public class VPCGatewayAttachmentResource
     }
 
     @Override
+    public VPCGatewayAttachmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCGatewayAttachmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

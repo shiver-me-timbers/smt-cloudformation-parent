@@ -87,6 +87,12 @@ public class UserPoolGroupResource
     }
 
     @Override
+    public UserPoolGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UserPoolGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

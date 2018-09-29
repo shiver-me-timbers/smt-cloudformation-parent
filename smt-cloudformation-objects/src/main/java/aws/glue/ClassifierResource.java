@@ -87,6 +87,12 @@ public class ClassifierResource
     }
 
     @Override
+    public ClassifierResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClassifierResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

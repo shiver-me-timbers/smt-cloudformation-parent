@@ -87,6 +87,12 @@ public class ListenerRuleResource
     }
 
     @Override
+    public ListenerRuleResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ListenerRuleResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

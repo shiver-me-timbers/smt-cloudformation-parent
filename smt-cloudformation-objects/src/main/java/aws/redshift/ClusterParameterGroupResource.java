@@ -87,6 +87,12 @@ public class ClusterParameterGroupResource
     }
 
     @Override
+    public ClusterParameterGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClusterParameterGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

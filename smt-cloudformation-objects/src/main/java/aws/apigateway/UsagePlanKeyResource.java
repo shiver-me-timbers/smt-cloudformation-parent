@@ -87,6 +87,12 @@ public class UsagePlanKeyResource
     }
 
     @Override
+    public UsagePlanKeyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UsagePlanKeyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

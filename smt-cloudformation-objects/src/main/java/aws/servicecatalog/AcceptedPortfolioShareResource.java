@@ -87,6 +87,12 @@ public class AcceptedPortfolioShareResource
     }
 
     @Override
+    public AcceptedPortfolioShareResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AcceptedPortfolioShareResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

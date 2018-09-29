@@ -87,6 +87,12 @@ public class BucketPolicyResource
     }
 
     @Override
+    public BucketPolicyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public BucketPolicyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

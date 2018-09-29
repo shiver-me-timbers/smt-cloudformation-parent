@@ -89,6 +89,12 @@ public class CloudFormationProductResource
     }
 
     @Override
+    public CloudFormationProductResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CloudFormationProductResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

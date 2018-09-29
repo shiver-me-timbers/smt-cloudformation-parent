@@ -87,6 +87,12 @@ public class PatchBaselineResource
     }
 
     @Override
+    public PatchBaselineResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public PatchBaselineResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

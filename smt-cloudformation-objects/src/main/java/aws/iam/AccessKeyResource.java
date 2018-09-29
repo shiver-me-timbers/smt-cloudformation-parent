@@ -89,6 +89,12 @@ public class AccessKeyResource
     }
 
     @Override
+    public AccessKeyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AccessKeyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

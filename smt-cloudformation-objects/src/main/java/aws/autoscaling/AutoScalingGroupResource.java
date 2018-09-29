@@ -87,6 +87,12 @@ public class AutoScalingGroupResource
     }
 
     @Override
+    public AutoScalingGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public AutoScalingGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -89,6 +89,12 @@ public class DBClusterResource
     }
 
     @Override
+    public DBClusterResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DBClusterResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class VpcLinkResource
     }
 
     @Override
+    public VpcLinkResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VpcLinkResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

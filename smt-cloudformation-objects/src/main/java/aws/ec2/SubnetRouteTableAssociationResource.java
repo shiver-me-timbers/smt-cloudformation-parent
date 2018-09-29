@@ -87,6 +87,12 @@ public class SubnetRouteTableAssociationResource
     }
 
     @Override
+    public SubnetRouteTableAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SubnetRouteTableAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class VPCEndpointServicePermissionsResource
     }
 
     @Override
+    public VPCEndpointServicePermissionsResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCEndpointServicePermissionsResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -89,6 +89,12 @@ public class SecurityGroupResource
     }
 
     @Override
+    public SecurityGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SecurityGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

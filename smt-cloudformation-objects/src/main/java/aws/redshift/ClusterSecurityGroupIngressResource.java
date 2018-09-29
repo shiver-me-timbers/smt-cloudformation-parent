@@ -87,6 +87,12 @@ public class ClusterSecurityGroupIngressResource
     }
 
     @Override
+    public ClusterSecurityGroupIngressResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClusterSecurityGroupIngressResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

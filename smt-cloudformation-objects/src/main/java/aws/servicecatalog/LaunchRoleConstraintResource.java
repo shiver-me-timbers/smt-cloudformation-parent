@@ -87,6 +87,12 @@ public class LaunchRoleConstraintResource
     }
 
     @Override
+    public LaunchRoleConstraintResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LaunchRoleConstraintResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

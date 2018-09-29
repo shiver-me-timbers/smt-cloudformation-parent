@@ -89,6 +89,12 @@ public class GraphQLApiResource
     }
 
     @Override
+    public GraphQLApiResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public GraphQLApiResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

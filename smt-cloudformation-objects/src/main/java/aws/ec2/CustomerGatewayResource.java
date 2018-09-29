@@ -87,6 +87,12 @@ public class CustomerGatewayResource
     }
 
     @Override
+    public CustomerGatewayResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CustomerGatewayResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

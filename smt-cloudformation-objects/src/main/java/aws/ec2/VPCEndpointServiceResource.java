@@ -87,6 +87,12 @@ public class VPCEndpointServiceResource
     }
 
     @Override
+    public VPCEndpointServiceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCEndpointServiceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

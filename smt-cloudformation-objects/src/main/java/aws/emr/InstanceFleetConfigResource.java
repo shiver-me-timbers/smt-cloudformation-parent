@@ -87,6 +87,12 @@ public class InstanceFleetConfigResource
     }
 
     @Override
+    public InstanceFleetConfigResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public InstanceFleetConfigResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

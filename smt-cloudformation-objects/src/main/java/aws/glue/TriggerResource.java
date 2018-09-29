@@ -87,6 +87,12 @@ public class TriggerResource
     }
 
     @Override
+    public TriggerResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TriggerResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

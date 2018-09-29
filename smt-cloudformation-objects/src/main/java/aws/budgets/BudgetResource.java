@@ -87,6 +87,12 @@ public class BudgetResource
     }
 
     @Override
+    public BudgetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public BudgetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

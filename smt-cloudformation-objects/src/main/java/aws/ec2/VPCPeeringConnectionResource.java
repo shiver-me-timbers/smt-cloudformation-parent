@@ -87,6 +87,12 @@ public class VPCPeeringConnectionResource
     }
 
     @Override
+    public VPCPeeringConnectionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCPeeringConnectionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

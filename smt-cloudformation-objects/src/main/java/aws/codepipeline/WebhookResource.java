@@ -89,6 +89,12 @@ public class WebhookResource
     }
 
     @Override
+    public WebhookResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public WebhookResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

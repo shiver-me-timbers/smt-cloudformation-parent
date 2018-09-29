@@ -89,6 +89,12 @@ public class NetworkInterfaceResource
     }
 
     @Override
+    public NetworkInterfaceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public NetworkInterfaceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

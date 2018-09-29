@@ -87,6 +87,12 @@ public class ThreatIntelSetResource
     }
 
     @Override
+    public ThreatIntelSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ThreatIntelSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

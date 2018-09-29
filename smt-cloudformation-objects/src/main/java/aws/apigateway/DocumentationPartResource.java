@@ -87,6 +87,12 @@ public class DocumentationPartResource
     }
 
     @Override
+    public DocumentationPartResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DocumentationPartResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

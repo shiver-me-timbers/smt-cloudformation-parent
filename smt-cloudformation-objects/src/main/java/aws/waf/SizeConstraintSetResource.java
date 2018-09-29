@@ -87,6 +87,12 @@ public class SizeConstraintSetResource
     }
 
     @Override
+    public SizeConstraintSetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public SizeConstraintSetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

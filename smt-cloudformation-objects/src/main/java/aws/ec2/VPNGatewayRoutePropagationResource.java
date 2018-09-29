@@ -87,6 +87,12 @@ public class VPNGatewayRoutePropagationResource
     }
 
     @Override
+    public VPNGatewayRoutePropagationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPNGatewayRoutePropagationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

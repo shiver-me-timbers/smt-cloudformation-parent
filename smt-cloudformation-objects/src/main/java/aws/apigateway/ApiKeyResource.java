@@ -87,6 +87,12 @@ public class ApiKeyResource
     }
 
     @Override
+    public ApiKeyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ApiKeyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

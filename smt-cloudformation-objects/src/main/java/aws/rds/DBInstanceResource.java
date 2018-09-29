@@ -89,6 +89,12 @@ public class DBInstanceResource
     }
 
     @Override
+    public DBInstanceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DBInstanceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

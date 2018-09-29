@@ -87,6 +87,12 @@ public class InstanceGroupConfigResource
     }
 
     @Override
+    public InstanceGroupConfigResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public InstanceGroupConfigResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

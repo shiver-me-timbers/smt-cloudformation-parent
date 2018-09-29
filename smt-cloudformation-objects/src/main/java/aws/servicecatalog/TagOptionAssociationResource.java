@@ -87,6 +87,12 @@ public class TagOptionAssociationResource
     }
 
     @Override
+    public TagOptionAssociationResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TagOptionAssociationResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

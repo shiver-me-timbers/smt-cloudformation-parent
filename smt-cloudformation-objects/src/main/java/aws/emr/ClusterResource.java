@@ -89,6 +89,12 @@ public class ClusterResource
     }
 
     @Override
+    public ClusterResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClusterResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

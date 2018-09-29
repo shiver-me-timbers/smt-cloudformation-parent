@@ -87,6 +87,12 @@ public class CrawlerResource
     }
 
     @Override
+    public CrawlerResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CrawlerResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

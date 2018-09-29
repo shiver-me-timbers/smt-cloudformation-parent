@@ -87,6 +87,12 @@ public class LaunchNotificationConstraintResource
     }
 
     @Override
+    public LaunchNotificationConstraintResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LaunchNotificationConstraintResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

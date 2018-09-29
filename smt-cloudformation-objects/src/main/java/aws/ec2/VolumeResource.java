@@ -87,6 +87,12 @@ public class VolumeResource
     }
 
     @Override
+    public VolumeResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VolumeResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

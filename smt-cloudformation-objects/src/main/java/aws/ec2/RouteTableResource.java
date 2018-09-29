@@ -87,6 +87,12 @@ public class RouteTableResource
     }
 
     @Override
+    public RouteTableResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RouteTableResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class VPCCidrBlockResource
     }
 
     @Override
+    public VPCCidrBlockResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public VPCCidrBlockResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

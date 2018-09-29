@@ -87,6 +87,12 @@ public class TaskDefinitionResource
     }
 
     @Override
+    public TaskDefinitionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public TaskDefinitionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

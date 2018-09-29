@@ -87,6 +87,12 @@ public class ConfigurationTemplateResource
     }
 
     @Override
+    public ConfigurationTemplateResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ConfigurationTemplateResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

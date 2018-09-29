@@ -87,6 +87,12 @@ public class WorkspaceResource
     }
 
     @Override
+    public WorkspaceResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public WorkspaceResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

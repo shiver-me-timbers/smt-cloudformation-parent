@@ -4,7 +4,7 @@ import aws.HasAttributes;
 import aws.HasName;
 import org.junit.Test;
 
-import static aws.fn.GetAtt.fnGetAtt;
+import static aws.fn.Functions.fnGetAtt;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 import static shiver.me.timbers.data.random.RandomEnums.someEnum;

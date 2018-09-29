@@ -87,6 +87,12 @@ public class ClusterSubnetGroupResource
     }
 
     @Override
+    public ClusterSubnetGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ClusterSubnetGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

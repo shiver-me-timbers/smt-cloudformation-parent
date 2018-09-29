@@ -89,6 +89,12 @@ public class UserPoolResource
     }
 
     @Override
+    public UserPoolResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public UserPoolResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -89,6 +89,12 @@ public class WaitConditionResource
     }
 
     @Override
+    public WaitConditionResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public WaitConditionResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

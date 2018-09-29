@@ -87,6 +87,12 @@ public class OptionGroupResource
     }
 
     @Override
+    public OptionGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public OptionGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

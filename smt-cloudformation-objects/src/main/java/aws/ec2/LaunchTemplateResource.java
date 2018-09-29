@@ -89,6 +89,12 @@ public class LaunchTemplateResource
     }
 
     @Override
+    public LaunchTemplateResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LaunchTemplateResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

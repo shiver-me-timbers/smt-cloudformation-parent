@@ -87,6 +87,12 @@ public class LifecycleHookResource
     }
 
     @Override
+    public LifecycleHookResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LifecycleHookResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

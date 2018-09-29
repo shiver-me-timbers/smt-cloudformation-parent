@@ -87,6 +87,12 @@ public class NetworkAclResource
     }
 
     @Override
+    public NetworkAclResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public NetworkAclResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

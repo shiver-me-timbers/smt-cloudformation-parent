@@ -87,6 +87,12 @@ public class RecordSetGroupResource
     }
 
     @Override
+    public RecordSetGroupResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public RecordSetGroupResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

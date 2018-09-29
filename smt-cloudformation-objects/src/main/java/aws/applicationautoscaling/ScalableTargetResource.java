@@ -87,6 +87,12 @@ public class ScalableTargetResource
     }
 
     @Override
+    public ScalableTargetResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ScalableTargetResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

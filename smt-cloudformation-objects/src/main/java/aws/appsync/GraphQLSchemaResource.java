@@ -87,6 +87,12 @@ public class GraphQLSchemaResource
     }
 
     @Override
+    public GraphQLSchemaResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public GraphQLSchemaResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -87,6 +87,12 @@ public class EventSourceMappingResource
     }
 
     @Override
+    public EventSourceMappingResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public EventSourceMappingResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

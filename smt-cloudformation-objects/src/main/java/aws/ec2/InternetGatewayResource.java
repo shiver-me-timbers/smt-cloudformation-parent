@@ -87,6 +87,12 @@ public class InternetGatewayResource
     }
 
     @Override
+    public InternetGatewayResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public InternetGatewayResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

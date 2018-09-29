@@ -87,6 +87,12 @@ public class EgressOnlyInternetGatewayResource
     }
 
     @Override
+    public EgressOnlyInternetGatewayResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public EgressOnlyInternetGatewayResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

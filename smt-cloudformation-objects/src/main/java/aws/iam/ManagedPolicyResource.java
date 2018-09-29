@@ -87,6 +87,12 @@ public class ManagedPolicyResource
     }
 
     @Override
+    public ManagedPolicyResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public ManagedPolicyResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

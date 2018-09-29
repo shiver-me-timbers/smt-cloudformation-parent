@@ -89,6 +89,12 @@ public class EnvironmentResource
     }
 
     @Override
+    public EnvironmentResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public EnvironmentResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

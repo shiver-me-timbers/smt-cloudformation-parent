@@ -8,8 +8,17 @@
     "$ref": "Named.schema.json"
   },
   "javaType": "aws.Resource",
+  "javaInterfaces": [
+    "aws.HasReference",
+    "aws.HasDependsOn<Template>",
+    "aws.HasCondition<Template>"
+  ],
   "properties": {
     "Type": {
+      "type": "string"
+    },
+    "Condition": {
+      "description": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html",
       "type": "string"
     },
     "CreationPolicy": {

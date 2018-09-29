@@ -87,6 +87,12 @@ public class LaunchTemplateConstraintResource
     }
 
     @Override
+    public LaunchTemplateConstraintResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public LaunchTemplateConstraintResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

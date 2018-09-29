@@ -89,6 +89,12 @@ public class DomainNameResource
     }
 
     @Override
+    public DomainNameResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public DomainNameResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;

@@ -89,6 +89,12 @@ public class CloudFrontOriginAccessIdentityResource
     }
 
     @Override
+    public CloudFrontOriginAccessIdentityResource withCondition(java.lang.String condition) {
+        super.withCondition(condition);
+        return this;
+    }
+
+    @Override
     public CloudFrontOriginAccessIdentityResource withCreationPolicy(CreationPolicy creationPolicy) {
         super.withCreationPolicy(creationPolicy);
         return this;
