@@ -32,7 +32,7 @@ public class PartitionInput {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters")
-    private Parameters_ parameters;
+    private Object parameters;
     /**
      * StorageDescriptor
      * <p>
@@ -54,7 +54,7 @@ public class PartitionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters
      * 
      */
-    public Parameters_ getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -62,11 +62,11 @@ public class PartitionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters
      * 
      */
-    public void setParameters(Parameters_ parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public PartitionInput withParameters(Parameters_ parameters) {
+    public PartitionInput withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

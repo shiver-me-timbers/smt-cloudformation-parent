@@ -115,7 +115,7 @@ public class Stack {
      */
     @JsonProperty("CustomJson")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson")
-    private CustomJson_ customJson;
+    private Object customJson;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz
      * 
@@ -401,7 +401,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
      */
-    public CustomJson_ getCustomJson() {
+    public Object getCustomJson() {
         return customJson;
     }
 
@@ -409,11 +409,11 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
      */
-    public void setCustomJson(CustomJson_ customJson) {
+    public void setCustomJson(Object customJson) {
         this.customJson = customJson;
     }
 
-    public Stack withCustomJson(CustomJson_ customJson) {
+    public Stack withCustomJson(Object customJson) {
         this.customJson = customJson;
         return this;
     }

@@ -31,7 +31,7 @@ public class TopicPolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument")
-    private PolicyDocument policyDocument;
+    private Object policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
@@ -44,7 +44,7 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
-    public PolicyDocument getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -52,11 +52,11 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public TopicPolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public TopicPolicy withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

@@ -57,7 +57,7 @@ public class MaintenanceWindowRunCommandParameters {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters")
-    private Parameters_ parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthashtype
      * 
@@ -163,7 +163,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters
      * 
      */
-    public Parameters_ getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -171,11 +171,11 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters
      * 
      */
-    public void setParameters(Parameters_ parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public MaintenanceWindowRunCommandParameters withParameters(Parameters_ parameters) {
+    public MaintenanceWindowRunCommandParameters withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

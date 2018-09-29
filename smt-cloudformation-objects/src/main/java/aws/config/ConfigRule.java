@@ -47,7 +47,7 @@ public class ConfigRule {
      */
     @JsonProperty("InputParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters")
-    private InputParameters inputParameters;
+    private Object inputParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
      * 
@@ -120,7 +120,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
-    public InputParameters getInputParameters() {
+    public Object getInputParameters() {
         return inputParameters;
     }
 
@@ -128,11 +128,11 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
-    public void setInputParameters(InputParameters inputParameters) {
+    public void setInputParameters(Object inputParameters) {
         this.inputParameters = inputParameters;
     }
 
-    public ConfigRule withInputParameters(InputParameters inputParameters) {
+    public ConfigRule withInputParameters(Object inputParameters) {
         this.inputParameters = inputParameters;
         return this;
     }

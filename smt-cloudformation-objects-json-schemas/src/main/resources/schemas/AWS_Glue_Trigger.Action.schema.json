@@ -13,7 +13,7 @@
     },
     "Arguments" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments",
-      "type" : "object"
+      "type" : "any"
     }
   }
 }

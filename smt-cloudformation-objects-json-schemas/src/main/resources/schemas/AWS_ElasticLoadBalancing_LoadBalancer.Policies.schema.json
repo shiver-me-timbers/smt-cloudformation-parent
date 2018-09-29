@@ -11,7 +11,7 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "type" : "object"
+        "type" : "any"
       }
     },
     "InstancePorts" : {

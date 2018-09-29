@@ -37,7 +37,7 @@ public class ProvisioningArtifactProperties {
      */
     @JsonProperty("Info")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info")
-    private Info info;
+    private Object info;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-name
      * 
@@ -71,7 +71,7 @@ public class ProvisioningArtifactProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info
      * 
      */
-    public Info getInfo() {
+    public Object getInfo() {
         return info;
     }
 
@@ -79,11 +79,11 @@ public class ProvisioningArtifactProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info
      * 
      */
-    public void setInfo(Info info) {
+    public void setInfo(Object info) {
         this.info = info;
     }
 
-    public ProvisioningArtifactProperties withInfo(Info info) {
+    public ProvisioningArtifactProperties withInfo(Object info) {
         this.info = info;
         return this;
     }

@@ -36,7 +36,7 @@ public class Policies {
     @JsonProperty("Attributes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes")
-    private Set<Attribute> attributes = new LinkedHashSet<Attribute>();
+    private Set<Object> attributes = new LinkedHashSet<Object>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports
      * 
@@ -72,7 +72,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
-    public Set<Attribute> getAttributes() {
+    public Set<Object> getAttributes() {
         return attributes;
     }
 
@@ -80,11 +80,11 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
-    public void setAttributes(Set<Attribute> attributes) {
+    public void setAttributes(Set<Object> attributes) {
         this.attributes = attributes;
     }
 
-    public Policies withAttributes(Set<Attribute> attributes) {
+    public Policies withAttributes(Set<Object> attributes) {
         this.attributes = attributes;
         return this;
     }

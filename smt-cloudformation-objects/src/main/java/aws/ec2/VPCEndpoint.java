@@ -58,7 +58,7 @@ public class VPCEndpoint {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument")
-    private PolicyDocument policyDocument;
+    private Object policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-isprivatednsenabled
      * 
@@ -155,7 +155,7 @@ public class VPCEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
      * 
      */
-    public PolicyDocument getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -163,11 +163,11 @@ public class VPCEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
      * 
      */
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public VPCEndpoint withPolicyDocument(PolicyDocument policyDocument) {
+    public VPCEndpoint withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

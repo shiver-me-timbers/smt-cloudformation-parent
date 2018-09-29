@@ -45,7 +45,7 @@ public class DatabaseInput {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters")
-    private Parameters parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-name
      * 
@@ -100,7 +100,7 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters
      * 
      */
-    public Parameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -108,11 +108,11 @@ public class DatabaseInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters
      * 
      */
-    public void setParameters(Parameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public DatabaseInput withParameters(Parameters parameters) {
+    public DatabaseInput withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

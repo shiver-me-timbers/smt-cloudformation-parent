@@ -59,7 +59,7 @@ public class BudgetData {
      */
     @JsonProperty("CostFilters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters")
-    private CostFilters costFilters;
+    private Object costFilters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetname
      * 
@@ -159,7 +159,7 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
      */
-    public CostFilters getCostFilters() {
+    public Object getCostFilters() {
         return costFilters;
     }
 
@@ -167,11 +167,11 @@ public class BudgetData {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters
      * 
      */
-    public void setCostFilters(CostFilters costFilters) {
+    public void setCostFilters(Object costFilters) {
         this.costFilters = costFilters;
     }
 
-    public BudgetData withCostFilters(CostFilters costFilters) {
+    public BudgetData withCostFilters(Object costFilters) {
         this.costFilters = costFilters;
         return this;
     }

@@ -36,7 +36,7 @@ public class BucketPolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument")
-    private PolicyDocument policyDocument;
+    private Object policyDocument;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
@@ -63,7 +63,7 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
-    public PolicyDocument getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -71,11 +71,11 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public BucketPolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public BucketPolicy withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

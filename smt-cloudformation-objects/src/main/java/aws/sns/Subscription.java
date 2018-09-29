@@ -34,7 +34,7 @@ public class Subscription {
      */
     @JsonProperty("DeliveryPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy")
-    private DeliveryPolicy deliveryPolicy;
+    private Object deliveryPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-endpoint
      * 
@@ -48,7 +48,7 @@ public class Subscription {
      */
     @JsonProperty("FilterPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy")
-    private FilterPolicy filterPolicy;
+    private Object filterPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-protocol
      * 
@@ -82,7 +82,7 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy
      * 
      */
-    public DeliveryPolicy getDeliveryPolicy() {
+    public Object getDeliveryPolicy() {
         return deliveryPolicy;
     }
 
@@ -90,11 +90,11 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-deliverypolicy
      * 
      */
-    public void setDeliveryPolicy(DeliveryPolicy deliveryPolicy) {
+    public void setDeliveryPolicy(Object deliveryPolicy) {
         this.deliveryPolicy = deliveryPolicy;
     }
 
-    public Subscription withDeliveryPolicy(DeliveryPolicy deliveryPolicy) {
+    public Subscription withDeliveryPolicy(Object deliveryPolicy) {
         this.deliveryPolicy = deliveryPolicy;
         return this;
     }
@@ -124,7 +124,7 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy
      * 
      */
-    public FilterPolicy getFilterPolicy() {
+    public Object getFilterPolicy() {
         return filterPolicy;
     }
 
@@ -132,11 +132,11 @@ public class Subscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-subscription.html#cfn-sns-subscription-filterpolicy
      * 
      */
-    public void setFilterPolicy(FilterPolicy filterPolicy) {
+    public void setFilterPolicy(Object filterPolicy) {
         this.filterPolicy = filterPolicy;
     }
 
-    public Subscription withFilterPolicy(FilterPolicy filterPolicy) {
+    public Subscription withFilterPolicy(Object filterPolicy) {
         this.filterPolicy = filterPolicy;
         return this;
     }

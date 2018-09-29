@@ -29,7 +29,7 @@ public class MaintenanceWindowAutomationParameters {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-parameters")
-    private Parameters parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-documentversion
      * 
@@ -42,7 +42,7 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-parameters
      * 
      */
-    public Parameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -50,11 +50,11 @@ public class MaintenanceWindowAutomationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowautomationparameters-parameters
      * 
      */
-    public void setParameters(Parameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public MaintenanceWindowAutomationParameters withParameters(Parameters parameters) {
+    public MaintenanceWindowAutomationParameters withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

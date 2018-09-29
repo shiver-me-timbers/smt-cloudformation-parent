@@ -105,7 +105,7 @@ public class Queue {
      */
     @JsonProperty("RedrivePolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive")
-    private RedrivePolicy redrivePolicy;
+    private Object redrivePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#cfn-sqs-queue-tags
      * 
@@ -314,7 +314,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive
      * 
      */
-    public RedrivePolicy getRedrivePolicy() {
+    public Object getRedrivePolicy() {
         return redrivePolicy;
     }
 
@@ -322,11 +322,11 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive
      * 
      */
-    public void setRedrivePolicy(RedrivePolicy redrivePolicy) {
+    public void setRedrivePolicy(Object redrivePolicy) {
         this.redrivePolicy = redrivePolicy;
     }
 
-    public Queue withRedrivePolicy(RedrivePolicy redrivePolicy) {
+    public Queue withRedrivePolicy(Object redrivePolicy) {
         this.redrivePolicy = redrivePolicy;
         return this;
     }

@@ -38,7 +38,7 @@ public class Role {
      */
     @JsonProperty("AssumeRolePolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument")
-    private AssumeRolePolicyDocument assumeRolePolicyDocument;
+    private Object assumeRolePolicyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
@@ -80,7 +80,7 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
      * 
      */
-    public AssumeRolePolicyDocument getAssumeRolePolicyDocument() {
+    public Object getAssumeRolePolicyDocument() {
         return assumeRolePolicyDocument;
     }
 
@@ -88,11 +88,11 @@ public class Role {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
      * 
      */
-    public void setAssumeRolePolicyDocument(AssumeRolePolicyDocument assumeRolePolicyDocument) {
+    public void setAssumeRolePolicyDocument(Object assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
     }
 
-    public Role withAssumeRolePolicyDocument(AssumeRolePolicyDocument assumeRolePolicyDocument) {
+    public Role withAssumeRolePolicyDocument(Object assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
         return this;
     }

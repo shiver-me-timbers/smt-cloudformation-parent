@@ -31,7 +31,7 @@ public class QueuePolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc")
-    private PolicyDocument policyDocument;
+    private Object policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-queues
      * 
@@ -44,7 +44,7 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc
      * 
      */
-    public PolicyDocument getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -52,11 +52,11 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc
      * 
      */
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public QueuePolicy withPolicyDocument(PolicyDocument policyDocument) {
+    public QueuePolicy withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

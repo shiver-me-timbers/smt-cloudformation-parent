@@ -78,7 +78,7 @@ public class Layer {
      */
     @JsonProperty("CustomJson")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson")
-    private CustomJson customJson;
+    private Object customJson;
     /**
      * Recipes
      * <p>
@@ -272,7 +272,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
-    public CustomJson getCustomJson() {
+    public Object getCustomJson() {
         return customJson;
     }
 
@@ -280,11 +280,11 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
-    public void setCustomJson(CustomJson customJson) {
+    public void setCustomJson(Object customJson) {
         this.customJson = customJson;
     }
 
-    public Layer withCustomJson(CustomJson customJson) {
+    public Layer withCustomJson(Object customJson) {
         this.customJson = customJson;
         return this;
     }

@@ -68,7 +68,7 @@ public class ManagedPolicy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument")
-    private PolicyDocument_ policyDocument;
+    private Object policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-roles
      * 
@@ -172,7 +172,7 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument
      * 
      */
-    public PolicyDocument_ getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -180,11 +180,11 @@ public class ManagedPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-managedpolicy.html#cfn-iam-managedpolicy-policydocument
      * 
      */
-    public void setPolicyDocument(PolicyDocument_ policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public ManagedPolicy withPolicyDocument(PolicyDocument_ policyDocument) {
+    public ManagedPolicy withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

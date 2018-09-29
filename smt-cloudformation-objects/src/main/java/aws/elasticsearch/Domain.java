@@ -41,7 +41,7 @@ public class Domain {
      */
     @JsonProperty("AccessPolicies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies")
-    private AccessPolicies accessPolicies;
+    private Object accessPolicies;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions
      * 
@@ -120,7 +120,7 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
      * 
      */
-    public AccessPolicies getAccessPolicies() {
+    public Object getAccessPolicies() {
         return accessPolicies;
     }
 
@@ -128,11 +128,11 @@ public class Domain {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
      * 
      */
-    public void setAccessPolicies(AccessPolicies accessPolicies) {
+    public void setAccessPolicies(Object accessPolicies) {
         this.accessPolicies = accessPolicies;
     }
 
-    public Domain withAccessPolicies(AccessPolicies accessPolicies) {
+    public Domain withAccessPolicies(Object accessPolicies) {
         this.accessPolicies = accessPolicies;
         return this;
     }

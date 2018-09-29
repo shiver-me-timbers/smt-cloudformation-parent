@@ -40,7 +40,7 @@ public class JobDefinition {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters")
-    private Parameters parameters;
+    private Object parameters;
     /**
      * Timeout
      * <p>
@@ -101,7 +101,7 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters
      * 
      */
-    public Parameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -109,11 +109,11 @@ public class JobDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters
      * 
      */
-    public void setParameters(Parameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public JobDefinition withParameters(Parameters parameters) {
+    public JobDefinition withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

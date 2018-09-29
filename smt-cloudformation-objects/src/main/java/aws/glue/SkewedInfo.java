@@ -46,7 +46,7 @@ public class SkewedInfo {
      */
     @JsonProperty("SkewedColumnValueLocationMaps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvaluelocationmaps")
-    private SkewedColumnValueLocationMaps skewedColumnValueLocationMaps;
+    private Object skewedColumnValueLocationMaps;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnnames
@@ -94,7 +94,7 @@ public class SkewedInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvaluelocationmaps
      * 
      */
-    public SkewedColumnValueLocationMaps getSkewedColumnValueLocationMaps() {
+    public Object getSkewedColumnValueLocationMaps() {
         return skewedColumnValueLocationMaps;
     }
 
@@ -102,11 +102,11 @@ public class SkewedInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvaluelocationmaps
      * 
      */
-    public void setSkewedColumnValueLocationMaps(SkewedColumnValueLocationMaps skewedColumnValueLocationMaps) {
+    public void setSkewedColumnValueLocationMaps(Object skewedColumnValueLocationMaps) {
         this.skewedColumnValueLocationMaps = skewedColumnValueLocationMaps;
     }
 
-    public SkewedInfo withSkewedColumnValueLocationMaps(SkewedColumnValueLocationMaps skewedColumnValueLocationMaps) {
+    public SkewedInfo withSkewedColumnValueLocationMaps(Object skewedColumnValueLocationMaps) {
         this.skewedColumnValueLocationMaps = skewedColumnValueLocationMaps;
         return this;
     }

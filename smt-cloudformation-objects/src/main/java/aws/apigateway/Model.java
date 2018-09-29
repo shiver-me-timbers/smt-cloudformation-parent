@@ -60,7 +60,7 @@ public class Model {
      */
     @JsonProperty("Schema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema")
-    private Schema schema;
+    private Object schema;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-contenttype
@@ -150,7 +150,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema
      * 
      */
-    public Schema getSchema() {
+    public Object getSchema() {
         return schema;
     }
 
@@ -158,11 +158,11 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-model.html#cfn-apigateway-model-schema
      * 
      */
-    public void setSchema(Schema schema) {
+    public void setSchema(Object schema) {
         this.schema = schema;
     }
 
-    public Model withSchema(Schema schema) {
+    public Model withSchema(Object schema) {
         this.schema = schema;
         return this;
     }

@@ -24,7 +24,7 @@
     },
     "SkewedColumnValueLocationMaps" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html#cfn-glue-table-skewedinfo-skewedcolumnvaluelocationmaps",
-      "type" : "object"
+      "type" : "any"
     }
   }
 }

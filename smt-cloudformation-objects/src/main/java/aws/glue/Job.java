@@ -44,7 +44,7 @@ public class Job {
      */
     @JsonProperty("DefaultArguments")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments")
-    private DefaultArguments defaultArguments;
+    private Object defaultArguments;
     /**
      * ConnectionsList
      * <p>
@@ -133,7 +133,7 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments
      * 
      */
-    public DefaultArguments getDefaultArguments() {
+    public Object getDefaultArguments() {
         return defaultArguments;
     }
 
@@ -141,11 +141,11 @@ public class Job {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments
      * 
      */
-    public void setDefaultArguments(DefaultArguments defaultArguments) {
+    public void setDefaultArguments(Object defaultArguments) {
         this.defaultArguments = defaultArguments;
     }
 
-    public Job withDefaultArguments(DefaultArguments defaultArguments) {
+    public Job withDefaultArguments(Object defaultArguments) {
         this.defaultArguments = defaultArguments;
         return this;
     }

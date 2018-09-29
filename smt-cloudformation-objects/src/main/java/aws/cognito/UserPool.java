@@ -46,7 +46,7 @@ public class UserPool {
      */
     @JsonProperty("UserPoolTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags")
-    private UserPoolTags userPoolTags;
+    private Object userPoolTags;
     /**
      * Policies
      * <p>
@@ -176,7 +176,7 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
      * 
      */
-    public UserPoolTags getUserPoolTags() {
+    public Object getUserPoolTags() {
         return userPoolTags;
     }
 
@@ -184,11 +184,11 @@ public class UserPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags
      * 
      */
-    public void setUserPoolTags(UserPoolTags userPoolTags) {
+    public void setUserPoolTags(Object userPoolTags) {
         this.userPoolTags = userPoolTags;
     }
 
-    public UserPool withUserPoolTags(UserPoolTags userPoolTags) {
+    public UserPool withUserPoolTags(Object userPoolTags) {
         this.userPoolTags = userPoolTags;
         return this;
     }

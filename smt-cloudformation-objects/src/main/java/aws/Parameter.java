@@ -33,6 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class Parameter
     extends Named
+    implements HasReference
 {
 
     @JsonProperty("AllowedPattern")

@@ -44,7 +44,7 @@ public class Rule {
      */
     @JsonProperty("EventPattern")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern")
-    private EventPattern eventPattern;
+    private Object eventPattern;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-name
      * 
@@ -107,7 +107,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
      */
-    public EventPattern getEventPattern() {
+    public Object getEventPattern() {
         return eventPattern;
     }
 
@@ -115,11 +115,11 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-eventpattern
      * 
      */
-    public void setEventPattern(EventPattern eventPattern) {
+    public void setEventPattern(Object eventPattern) {
         this.eventPattern = eventPattern;
     }
 
-    public Rule withEventPattern(EventPattern eventPattern) {
+    public Rule withEventPattern(Object eventPattern) {
         this.eventPattern = eventPattern;
         return this;
     }

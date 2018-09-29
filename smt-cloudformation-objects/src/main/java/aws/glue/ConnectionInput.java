@@ -65,7 +65,7 @@ public class ConnectionInput {
      */
     @JsonProperty("ConnectionProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties")
-    private ConnectionProperties connectionProperties;
+    private Object connectionProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-name
      * 
@@ -166,7 +166,7 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties
      * 
      */
-    public ConnectionProperties getConnectionProperties() {
+    public Object getConnectionProperties() {
         return connectionProperties;
     }
 
@@ -174,11 +174,11 @@ public class ConnectionInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties
      * 
      */
-    public void setConnectionProperties(ConnectionProperties connectionProperties) {
+    public void setConnectionProperties(Object connectionProperties) {
         this.connectionProperties = connectionProperties;
     }
 
-    public ConnectionInput withConnectionProperties(ConnectionProperties connectionProperties) {
+    public ConnectionInput withConnectionProperties(Object connectionProperties) {
         this.connectionProperties = connectionProperties;
         return this;
     }

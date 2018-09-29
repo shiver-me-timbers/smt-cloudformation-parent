@@ -58,7 +58,7 @@ public class RestApi {
      */
     @JsonProperty("Body")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body")
-    private Body body;
+    private Object body;
     /**
      * S3Location
      * <p>
@@ -125,7 +125,7 @@ public class RestApi {
      */
     @JsonProperty("Policy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy")
-    private Policy policy;
+    private Object policy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype
@@ -173,7 +173,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body
      * 
      */
-    public Body getBody() {
+    public Object getBody() {
         return body;
     }
 
@@ -181,11 +181,11 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body
      * 
      */
-    public void setBody(Body body) {
+    public void setBody(Object body) {
         this.body = body;
     }
 
-    public RestApi withBody(Body body) {
+    public RestApi withBody(Object body) {
         this.body = body;
         return this;
     }
@@ -370,7 +370,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy
      * 
      */
-    public Policy getPolicy() {
+    public Object getPolicy() {
         return policy;
     }
 
@@ -378,11 +378,11 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy
      * 
      */
-    public void setPolicy(Policy policy) {
+    public void setPolicy(Object policy) {
         this.policy = policy;
     }
 
-    public RestApi withPolicy(Policy policy) {
+    public RestApi withPolicy(Object policy) {
         this.policy = policy;
         return this;
     }

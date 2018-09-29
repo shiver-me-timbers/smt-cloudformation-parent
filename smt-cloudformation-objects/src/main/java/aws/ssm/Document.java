@@ -33,7 +33,7 @@ public class Document {
      */
     @JsonProperty("Content")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content")
-    private Content content;
+    private Object content;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
      * 
@@ -53,7 +53,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
-    public Content getContent() {
+    public Object getContent() {
         return content;
     }
 
@@ -61,11 +61,11 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
-    public void setContent(Content content) {
+    public void setContent(Object content) {
         this.content = content;
     }
 
-    public Document withContent(Content content) {
+    public Document withContent(Object content) {
         this.content = content;
         return this;
     }

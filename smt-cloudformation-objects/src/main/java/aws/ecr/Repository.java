@@ -46,7 +46,7 @@ public class Repository {
      */
     @JsonProperty("RepositoryPolicyText")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext")
-    private RepositoryPolicyText repositoryPolicyText;
+    private Object repositoryPolicyText;
 
     /**
      * LifecyclePolicy
@@ -98,7 +98,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
-    public RepositoryPolicyText getRepositoryPolicyText() {
+    public Object getRepositoryPolicyText() {
         return repositoryPolicyText;
     }
 
@@ -106,11 +106,11 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
-    public void setRepositoryPolicyText(RepositoryPolicyText repositoryPolicyText) {
+    public void setRepositoryPolicyText(Object repositoryPolicyText) {
         this.repositoryPolicyText = repositoryPolicyText;
     }
 
-    public Repository withRepositoryPolicyText(RepositoryPolicyText repositoryPolicyText) {
+    public Repository withRepositoryPolicyText(Object repositoryPolicyText) {
         this.repositoryPolicyText = repositoryPolicyText;
         return this;
     }

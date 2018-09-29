@@ -30,7 +30,7 @@ public class IdentityPoolRoleAttachment {
      */
     @JsonProperty("RoleMappings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings")
-    private RoleMappings roleMappings;
+    private Object roleMappings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid
      * 
@@ -44,13 +44,13 @@ public class IdentityPoolRoleAttachment {
      */
     @JsonProperty("Roles")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles")
-    private Roles roles;
+    private Object roles;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
-    public RoleMappings getRoleMappings() {
+    public Object getRoleMappings() {
         return roleMappings;
     }
 
@@ -58,11 +58,11 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
-    public void setRoleMappings(RoleMappings roleMappings) {
+    public void setRoleMappings(Object roleMappings) {
         this.roleMappings = roleMappings;
     }
 
-    public IdentityPoolRoleAttachment withRoleMappings(RoleMappings roleMappings) {
+    public IdentityPoolRoleAttachment withRoleMappings(Object roleMappings) {
         this.roleMappings = roleMappings;
         return this;
     }
@@ -92,7 +92,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
-    public Roles getRoles() {
+    public Object getRoles() {
         return roles;
     }
 
@@ -100,11 +100,11 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
-    public void setRoles(Roles roles) {
+    public void setRoles(Object roles) {
         this.roles = roles;
     }
 
-    public IdentityPoolRoleAttachment withRoles(Roles roles) {
+    public IdentityPoolRoleAttachment withRoles(Object roles) {
         this.roles = roles;
         return this;
     }

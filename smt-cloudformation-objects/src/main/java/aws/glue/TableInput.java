@@ -67,7 +67,7 @@ public class TableInput {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters")
-    private Parameters____ parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-viewexpandedtext
      * 
@@ -194,7 +194,7 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters
      * 
      */
-    public Parameters____ getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -202,11 +202,11 @@ public class TableInput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-parameters
      * 
      */
-    public void setParameters(Parameters____ parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public TableInput withParameters(Parameters____ parameters) {
+    public TableInput withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

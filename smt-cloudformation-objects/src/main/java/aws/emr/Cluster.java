@@ -51,7 +51,7 @@ public class Cluster {
      */
     @JsonProperty("AdditionalInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo")
-    private AdditionalInfo additionalInfo;
+    private Object additionalInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-applications
      * 
@@ -183,7 +183,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo
      * 
      */
-    public AdditionalInfo getAdditionalInfo() {
+    public Object getAdditionalInfo() {
         return additionalInfo;
     }
 
@@ -191,11 +191,11 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo
      * 
      */
-    public void setAdditionalInfo(AdditionalInfo additionalInfo) {
+    public void setAdditionalInfo(Object additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
 
-    public Cluster withAdditionalInfo(AdditionalInfo additionalInfo) {
+    public Cluster withAdditionalInfo(Object additionalInfo) {
         this.additionalInfo = additionalInfo;
         return this;
     }

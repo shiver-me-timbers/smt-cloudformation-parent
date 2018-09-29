@@ -29,7 +29,7 @@ public class FindingCriteria {
      */
     @JsonProperty("Criterion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion")
-    private Criterion criterion;
+    private Object criterion;
     /**
      * Condition
      * <p>
@@ -44,7 +44,7 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
      * 
      */
-    public Criterion getCriterion() {
+    public Object getCriterion() {
         return criterion;
     }
 
@@ -52,11 +52,11 @@ public class FindingCriteria {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
      * 
      */
-    public void setCriterion(Criterion criterion) {
+    public void setCriterion(Object criterion) {
         this.criterion = criterion;
     }
 
-    public FindingCriteria withCriterion(Criterion criterion) {
+    public FindingCriteria withCriterion(Object criterion) {
         this.criterion = criterion;
         return this;
     }

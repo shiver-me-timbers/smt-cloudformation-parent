@@ -29,7 +29,7 @@ public class Policy {
      */
     @JsonProperty("PolicyDocument")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument")
-    private PolicyDocument policyDocument;
+    private Object policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policyname
      * 
@@ -42,7 +42,7 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
      * 
      */
-    public PolicyDocument getPolicyDocument() {
+    public Object getPolicyDocument() {
         return policyDocument;
     }
 
@@ -50,11 +50,11 @@ public class Policy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
      * 
      */
-    public void setPolicyDocument(PolicyDocument policyDocument) {
+    public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public Policy withPolicyDocument(PolicyDocument policyDocument) {
+    public Policy withPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

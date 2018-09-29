@@ -48,7 +48,7 @@ public class DBClusterParameterGroup {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-parameters")
-    private Parameters parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-tags
      * 
@@ -103,7 +103,7 @@ public class DBClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-parameters
      * 
      */
-    public Parameters getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -111,11 +111,11 @@ public class DBClusterParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbclusterparametergroup.html#cfn-rds-dbclusterparametergroup-parameters
      * 
      */
-    public void setParameters(Parameters parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public DBClusterParameterGroup withParameters(Parameters parameters) {
+    public DBClusterParameterGroup withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

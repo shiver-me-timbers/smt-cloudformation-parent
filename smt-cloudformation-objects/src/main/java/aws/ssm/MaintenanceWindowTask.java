@@ -114,7 +114,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("TaskParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters")
-    private TaskParameters taskParameters;
+    private Object taskParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype
      * 
@@ -350,7 +350,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters
      * 
      */
-    public TaskParameters getTaskParameters() {
+    public Object getTaskParameters() {
         return taskParameters;
     }
 
@@ -358,11 +358,11 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters
      * 
      */
-    public void setTaskParameters(TaskParameters taskParameters) {
+    public void setTaskParameters(Object taskParameters) {
         this.taskParameters = taskParameters;
     }
 
-    public MaintenanceWindowTask withTaskParameters(TaskParameters taskParameters) {
+    public MaintenanceWindowTask withTaskParameters(Object taskParameters) {
         this.taskParameters = taskParameters;
         return this;
     }

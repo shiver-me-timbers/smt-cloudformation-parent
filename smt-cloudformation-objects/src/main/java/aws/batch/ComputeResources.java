@@ -119,7 +119,7 @@ public class ComputeResources {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags")
-    private Tags tags;
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-desiredvcpus
      * 
@@ -363,7 +363,7 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags
      * 
      */
-    public Tags getTags() {
+    public Object getTags() {
         return tags;
     }
 
@@ -371,11 +371,11 @@ public class ComputeResources {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-tags
      * 
      */
-    public void setTags(Tags tags) {
+    public void setTags(Object tags) {
         this.tags = tags;
     }
 
-    public ComputeResources withTags(Tags tags) {
+    public ComputeResources withTags(Object tags) {
         this.tags = tags;
         return this;
     }

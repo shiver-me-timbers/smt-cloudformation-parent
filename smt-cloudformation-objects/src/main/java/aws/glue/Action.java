@@ -36,7 +36,7 @@ public class Action {
      */
     @JsonProperty("Arguments")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments")
-    private Arguments arguments;
+    private Object arguments;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
@@ -63,7 +63,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments
      * 
      */
-    public Arguments getArguments() {
+    public Object getArguments() {
         return arguments;
     }
 
@@ -71,11 +71,11 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments
      * 
      */
-    public void setArguments(Arguments arguments) {
+    public void setArguments(Object arguments) {
         this.arguments = arguments;
     }
 
-    public Action withArguments(Arguments arguments) {
+    public Action withArguments(Object arguments) {
         this.arguments = arguments;
         return this;
     }

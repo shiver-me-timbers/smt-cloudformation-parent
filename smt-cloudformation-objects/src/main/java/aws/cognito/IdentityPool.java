@@ -55,7 +55,7 @@ public class IdentityPool {
      */
     @JsonProperty("CognitoEvents")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents")
-    private CognitoEvents cognitoEvents;
+    private Object cognitoEvents;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername
      * 
@@ -92,7 +92,7 @@ public class IdentityPool {
      */
     @JsonProperty("SupportedLoginProviders")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders")
-    private SupportedLoginProviders supportedLoginProviders;
+    private Object supportedLoginProviders;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-samlproviderarns
      * 
@@ -158,7 +158,7 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
      */
-    public CognitoEvents getCognitoEvents() {
+    public Object getCognitoEvents() {
         return cognitoEvents;
     }
 
@@ -166,11 +166,11 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
      */
-    public void setCognitoEvents(CognitoEvents cognitoEvents) {
+    public void setCognitoEvents(Object cognitoEvents) {
         this.cognitoEvents = cognitoEvents;
     }
 
-    public IdentityPool withCognitoEvents(CognitoEvents cognitoEvents) {
+    public IdentityPool withCognitoEvents(Object cognitoEvents) {
         this.cognitoEvents = cognitoEvents;
         return this;
     }
@@ -267,7 +267,7 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders
      * 
      */
-    public SupportedLoginProviders getSupportedLoginProviders() {
+    public Object getSupportedLoginProviders() {
         return supportedLoginProviders;
     }
 
@@ -275,11 +275,11 @@ public class IdentityPool {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders
      * 
      */
-    public void setSupportedLoginProviders(SupportedLoginProviders supportedLoginProviders) {
+    public void setSupportedLoginProviders(Object supportedLoginProviders) {
         this.supportedLoginProviders = supportedLoginProviders;
     }
 
-    public IdentityPool withSupportedLoginProviders(SupportedLoginProviders supportedLoginProviders) {
+    public IdentityPool withSupportedLoginProviders(Object supportedLoginProviders) {
         this.supportedLoginProviders = supportedLoginProviders;
         return this;
     }

@@ -48,7 +48,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters")
-    private Parameters__ parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-bucketcolumns
      * 
@@ -149,7 +149,7 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters
      * 
      */
-    public Parameters__ getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -157,11 +157,11 @@ public class StorageDescriptor {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-parameters
      * 
      */
-    public void setParameters(Parameters__ parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public StorageDescriptor withParameters(Parameters__ parameters) {
+    public StorageDescriptor withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

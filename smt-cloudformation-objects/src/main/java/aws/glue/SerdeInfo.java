@@ -30,7 +30,7 @@ public class SerdeInfo {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters")
-    private Parameters___ parameters;
+    private Object parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary
      * 
@@ -50,7 +50,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
-    public Parameters___ getParameters() {
+    public Object getParameters() {
         return parameters;
     }
 
@@ -58,11 +58,11 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
-    public void setParameters(Parameters___ parameters) {
+    public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
 
-    public SerdeInfo withParameters(Parameters___ parameters) {
+    public SerdeInfo withParameters(Object parameters) {
         this.parameters = parameters;
         return this;
     }

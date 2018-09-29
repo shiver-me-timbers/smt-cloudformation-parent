@@ -22,7 +22,7 @@
     },
     "Body" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body",
-      "type" : "object"
+      "type" : "any"
     },
     "BodyS3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-bodys3location",
@@ -62,7 +62,7 @@
     },
     "Policy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy",
-      "type" : "object"
+      "type" : "any"
     }
   }
 }

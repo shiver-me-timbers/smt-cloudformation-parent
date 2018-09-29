@@ -57,7 +57,7 @@ public class Key {
      */
     @JsonProperty("KeyPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy")
-    private KeyPolicy keyPolicy;
+    private Object keyPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keyusage
      * 
@@ -140,7 +140,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy
      * 
      */
-    public KeyPolicy getKeyPolicy() {
+    public Object getKeyPolicy() {
         return keyPolicy;
     }
 
@@ -148,11 +148,11 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy
      * 
      */
-    public void setKeyPolicy(KeyPolicy keyPolicy) {
+    public void setKeyPolicy(Object keyPolicy) {
         this.keyPolicy = keyPolicy;
     }
 
-    public Key withKeyPolicy(KeyPolicy keyPolicy) {
+    public Key withKeyPolicy(Object keyPolicy) {
         this.keyPolicy = keyPolicy;
         return this;
     }

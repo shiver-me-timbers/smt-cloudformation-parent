@@ -46,7 +46,7 @@ public class ActionDeclaration {
      */
     @JsonProperty("Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration")
-    private Configuration configuration;
+    private Object configuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts
      * 
@@ -114,7 +114,7 @@ public class ActionDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
      * 
      */
-    public Configuration getConfiguration() {
+    public Object getConfiguration() {
         return configuration;
     }
 
@@ -122,11 +122,11 @@ public class ActionDeclaration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
      * 
      */
-    public void setConfiguration(Configuration configuration) {
+    public void setConfiguration(Object configuration) {
         this.configuration = configuration;
     }
 
-    public ActionDeclaration withConfiguration(Configuration configuration) {
+    public ActionDeclaration withConfiguration(Object configuration) {
         this.configuration = configuration;
         return this;
     }
