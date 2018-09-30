@@ -44,7 +44,8 @@
       "type": "boolean"
     },
     "Type": {
-      "type": "string"
+      "type": "string",
+      "default": "String"
     }
   }
 }

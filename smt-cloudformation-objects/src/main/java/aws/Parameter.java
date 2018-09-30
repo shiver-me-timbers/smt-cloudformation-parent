@@ -58,7 +58,7 @@ public class Parameter
     @JsonProperty("NoEcho")
     private Boolean noEcho;
     @JsonProperty("Type")
-    private String type;
+    private String type = "String";
 
     /**
      * No args constructor for use in serialization
