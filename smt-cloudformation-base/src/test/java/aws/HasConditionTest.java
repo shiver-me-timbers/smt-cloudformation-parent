@@ -14,7 +14,7 @@ public class HasConditionTest {
     public void Can_set_a_condition() {
 
         final Condition condition = mock(Condition.class);
-        final Getter<String, ?> getter = mock(Getter.class);
+        final Retriever<String, ?> retriever = mock(Retriever.class);
 
         final String name = someString();
 
@@ -22,9 +22,9 @@ public class HasConditionTest {
         given(condition.getName()).willReturn(name);
 
         // When
-        ((HasCondition<Object>) getter::get).withCondition(condition);
+        ((HasCondition<Object>) retriever::get).withCondition(condition);
 
         // Then
-        then(getter).should().get(name);
+        then(retriever).should().get(name);
     }
 }

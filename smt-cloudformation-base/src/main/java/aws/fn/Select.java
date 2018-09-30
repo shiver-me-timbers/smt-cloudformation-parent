@@ -20,7 +20,7 @@ public class Select extends StringProperty implements StringFunction {
 
     public Select(int index, List<String> strings) {
         super(format("{ \"Fn::Select\" : [ \"%s\", [%s] ] }", index, toStrings(strings)));
-        this.values = asList(String.valueOf(index), asList(strings));
+        this.values = asList(String.valueOf(index), strings);
     }
 
     public Select(int index, Function function) {

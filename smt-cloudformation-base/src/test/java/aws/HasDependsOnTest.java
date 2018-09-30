@@ -19,7 +19,7 @@ public class HasDependsOnTest {
         final HasReference resource1 = mock(HasReference.class);
         final HasReference resource2 = mock(HasReference.class);
         final HasReference resource3 = mock(HasReference.class);
-        final Getter<List<String>, ?> getter = mock(Getter.class);
+        final Retriever<List<String>, ?> retriever = mock(Retriever.class);
 
         final String name1 = someString();
         final String name2 = someString();
@@ -31,9 +31,9 @@ public class HasDependsOnTest {
         given(resource3.getName()).willReturn(name3);
 
         // When
-        ((HasDependsOn) getter::get).withDependsOn(resource1, resource2, resource3);
+        ((HasDependsOn) retriever::get).withDependsOn(resource1, resource2, resource3);
 
         // Then
-        then(getter).should().get(asList(name1, name2, name3));
+        then(retriever).should().get(asList(name1, name2, name3));
     }
 }

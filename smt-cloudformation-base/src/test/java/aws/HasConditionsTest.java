@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.Map;
 
+import static org.mockito.ArgumentMatchers.anyMap;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
@@ -37,11 +38,45 @@ public class HasConditionsTest {
         given(condition3.getCondition()).willReturn(function3);
 
         // When
-        ((HasConditions<?>) () -> map).withConditions(condition1, condition2, condition3);
+        new HasConditions<Object>() {
+            @Override
+            public Map<String, ConditionFunction> getConditions() {
+                return map;
+            }
+
+            @Override
+            public void setConditions(Map conditions) {
+                throw new UnsupportedOperationException();
+            }
+        }.withConditions(condition1, condition2, condition3);
 
         // Then
         then(map).should().put(name1, function1);
         then(map).should().put(name2, function2);
         then(map).should().put(name3, function3);
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    public void Can_add_new_resources() {
+
+        // Given
+        final Retriever<Map<String, ConditionFunction>, ?> retriever = mock(Retriever.class);
+
+        // When
+        new HasConditions<Object>() {
+            @Override
+            public Map<String, ConditionFunction> getConditions() {
+                return null;
+            }
+
+            @Override
+            public void setConditions(Map conditions) {
+                retriever.get(conditions);
+            }
+        }.withConditions();
+
+        // Then
+        then(retriever).should().get(anyMap());
     }
 }
