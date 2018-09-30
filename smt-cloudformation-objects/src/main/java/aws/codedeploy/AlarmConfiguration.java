@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
      * 
      */
+    @JsonIgnore
     public Set<Alarm> getAlarms() {
         return alarms;
     }
@@ -62,6 +64,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
      * 
      */
+    @JsonIgnore
     public void setAlarms(Set<Alarm> alarms) {
         this.alarms = alarms;
     }
@@ -75,6 +78,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -83,6 +87,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -96,6 +101,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
      * 
      */
+    @JsonIgnore
     public Boolean getIgnorePollAlarmFailure() {
         return ignorePollAlarmFailure;
     }
@@ -104,6 +110,7 @@ public class AlarmConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
      * 
      */
+    @JsonIgnore
     public void setIgnorePollAlarmFailure(Boolean ignorePollAlarmFailure) {
         this.ignorePollAlarmFailure = ignorePollAlarmFailure;
     }

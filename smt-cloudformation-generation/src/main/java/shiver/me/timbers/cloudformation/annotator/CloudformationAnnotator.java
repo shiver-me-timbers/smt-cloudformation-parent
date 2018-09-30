@@ -1,6 +1,7 @@
 package shiver.me.timbers.cloudformation.annotator;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.sun.codemodel.JDefinedClass;
 import com.sun.codemodel.JFieldVar;
@@ -25,9 +26,11 @@ public class CloudformationAnnotator extends Jackson2Annotator {
 
     @Override
     public void propertyGetter(JMethod getter, String propertyName) {
+        getter.annotate(JsonIgnore.class);
     }
 
     @Override
     public void propertySetter(JMethod setter, String propertyName) {
+        setter.annotate(JsonIgnore.class);
     }
 }

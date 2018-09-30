@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -72,6 +73,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -80,6 +82,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -93,6 +96,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-eventcategories
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getEventCategories() {
         return eventCategories;
     }
@@ -101,6 +105,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-eventcategories
      * 
      */
+    @JsonIgnore
     public void setEventCategories(Set<CharSequence> eventCategories) {
         this.eventCategories = eventCategories;
     }
@@ -114,6 +119,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-snstopicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getSnsTopicArn() {
         return snsTopicArn;
     }
@@ -122,6 +128,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-snstopicarn
      * 
      */
+    @JsonIgnore
     public void setSnsTopicArn(CharSequence snsTopicArn) {
         this.snsTopicArn = snsTopicArn;
     }
@@ -135,6 +142,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-sourceids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSourceIds() {
         return sourceIds;
     }
@@ -143,6 +151,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-sourceids
      * 
      */
+    @JsonIgnore
     public void setSourceIds(List<CharSequence> sourceIds) {
         this.sourceIds = sourceIds;
     }
@@ -156,6 +165,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-sourcetype
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceType() {
         return sourceType;
     }
@@ -164,6 +174,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-eventsubscription.html#cfn-rds-eventsubscription-sourcetype
      * 
      */
+    @JsonIgnore
     public void setSourceType(CharSequence sourceType) {
         this.sourceType = sourceType;
     }

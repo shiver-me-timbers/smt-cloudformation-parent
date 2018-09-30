@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class PolicyPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-policyname
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -50,6 +52,7 @@ public class PolicyPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-policyname
      * 
      */
+    @JsonIgnore
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
@@ -63,6 +66,7 @@ public class PolicyPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-principal
      * 
      */
+    @JsonIgnore
     public CharSequence getPrincipal() {
         return principal;
     }
@@ -71,6 +75,7 @@ public class PolicyPrincipalAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policyprincipalattachment.html#cfn-iot-policyprincipalattachment-principal
      * 
      */
+    @JsonIgnore
     public void setPrincipal(CharSequence principal) {
         this.principal = principal;
     }

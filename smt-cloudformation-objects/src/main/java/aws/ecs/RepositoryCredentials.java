@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class RepositoryCredentials {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html#cfn-ecs-taskdefinition-repositorycredentials-credentialsparameter
      * 
      */
+    @JsonIgnore
     public CharSequence getCredentialsParameter() {
         return credentialsParameter;
     }
@@ -42,6 +44,7 @@ public class RepositoryCredentials {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html#cfn-ecs-taskdefinition-repositorycredentials-credentialsparameter
      * 
      */
+    @JsonIgnore
     public void setCredentialsParameter(CharSequence credentialsParameter) {
         this.credentialsParameter = credentialsParameter;
     }

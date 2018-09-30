@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname
      * 
      */
+    @JsonIgnore
     public CharSequence getConnectionName() {
         return connectionName;
     }
@@ -60,6 +62,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname
      * 
      */
+    @JsonIgnore
     public void setConnectionName(CharSequence connectionName) {
         this.connectionName = connectionName;
     }
@@ -73,6 +76,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path
      * 
      */
+    @JsonIgnore
     public CharSequence getPath() {
         return path;
     }
@@ -81,6 +85,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-path
      * 
      */
+    @JsonIgnore
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -94,6 +99,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getExclusions() {
         return exclusions;
     }
@@ -102,6 +108,7 @@ public class JdbcTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-exclusions
      * 
      */
+    @JsonIgnore
     public void setExclusions(List<CharSequence> exclusions) {
         this.exclusions = exclusions;
     }

@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -66,6 +68,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-bucketname
      * 
      */
+    @JsonIgnore
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -79,6 +82,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-kmskeyarn
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyArn() {
         return kmsKeyArn;
     }
@@ -87,6 +91,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-kmskeyarn
      * 
      */
+    @JsonIgnore
     public void setKmsKeyArn(CharSequence kmsKeyArn) {
         this.kmsKeyArn = kmsKeyArn;
     }
@@ -100,6 +105,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-topicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicArn() {
         return topicArn;
     }
@@ -108,6 +114,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-topicarn
      * 
      */
+    @JsonIgnore
     public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }
@@ -121,6 +128,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-objectkeyprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getObjectKeyPrefix() {
         return objectKeyPrefix;
     }
@@ -129,6 +137,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-objectkeyprefix
      * 
      */
+    @JsonIgnore
     public void setObjectKeyPrefix(CharSequence objectKeyPrefix) {
         this.objectKeyPrefix = objectKeyPrefix;
     }

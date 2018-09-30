@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input
      * 
      */
+    @JsonIgnore
     public CharSequence getInput() {
         return input;
     }
@@ -50,6 +52,7 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-input
      * 
      */
+    @JsonIgnore
     public void setInput(CharSequence input) {
         this.input = input;
     }
@@ -63,6 +66,7 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -71,6 +75,7 @@ public class MaintenanceWindowStepFunctionsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt
      * 
      */
+    @JsonIgnore
     public Boolean getDeviceOnlyRememberedOnUserPrompt() {
         return deviceOnlyRememberedOnUserPrompt;
     }
@@ -50,6 +52,7 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt
      * 
      */
+    @JsonIgnore
     public void setDeviceOnlyRememberedOnUserPrompt(Boolean deviceOnlyRememberedOnUserPrompt) {
         this.deviceOnlyRememberedOnUserPrompt = deviceOnlyRememberedOnUserPrompt;
     }
@@ -63,6 +66,7 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice
      * 
      */
+    @JsonIgnore
     public Boolean getChallengeRequiredOnNewDevice() {
         return challengeRequiredOnNewDevice;
     }
@@ -71,6 +75,7 @@ public class DeviceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-challengerequiredonnewdevice
      * 
      */
+    @JsonIgnore
     public void setChallengeRequiredOnNewDevice(Boolean challengeRequiredOnNewDevice) {
         this.challengeRequiredOnNewDevice = challengeRequiredOnNewDevice;
     }

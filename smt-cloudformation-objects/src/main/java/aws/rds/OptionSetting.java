@@ -1,6 +1,7 @@
 
 package aws.rds;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html#cfn-rds-optiongroup-optionconfigurations-optionsettings-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -50,6 +52,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html#cfn-rds-optiongroup-optionconfigurations-optionsettings-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -63,6 +66,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html#cfn-rds-optiongroup-optionconfigurations-optionsettings-value
      * 
      */
+    @JsonIgnore
     public CharSequence getValue() {
         return value;
     }
@@ -71,6 +75,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html#cfn-rds-optiongroup-optionconfigurations-optionsettings-value
      * 
      */
+    @JsonIgnore
     public void setValue(CharSequence value) {
         this.value = value;
     }

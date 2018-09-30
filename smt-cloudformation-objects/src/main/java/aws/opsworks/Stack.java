@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -242,6 +243,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion
      * 
      */
+    @JsonIgnore
     public CharSequence getAgentVersion() {
         return agentVersion;
     }
@@ -250,6 +252,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-agentversion
      * 
      */
+    @JsonIgnore
     public void setAgentVersion(CharSequence agentVersion) {
         this.agentVersion = agentVersion;
     }
@@ -263,6 +266,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes
      * 
      */
+    @JsonIgnore
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -271,6 +275,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }
@@ -286,6 +291,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html
      * 
      */
+    @JsonIgnore
     public ChefConfiguration getChefConfiguration() {
         return chefConfiguration;
     }
@@ -296,6 +302,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setChefConfiguration(ChefConfiguration chefConfiguration) {
         this.chefConfiguration = chefConfiguration;
     }
@@ -309,6 +316,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getCloneAppIds() {
         return cloneAppIds;
     }
@@ -317,6 +325,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids
      * 
      */
+    @JsonIgnore
     public void setCloneAppIds(Set<CharSequence> cloneAppIds) {
         this.cloneAppIds = cloneAppIds;
     }
@@ -330,6 +339,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions
      * 
      */
+    @JsonIgnore
     public Boolean getClonePermissions() {
         return clonePermissions;
     }
@@ -338,6 +348,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions
      * 
      */
+    @JsonIgnore
     public void setClonePermissions(Boolean clonePermissions) {
         this.clonePermissions = clonePermissions;
     }
@@ -353,6 +364,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html
      * 
      */
+    @JsonIgnore
     public StackConfigurationManager getConfigurationManager() {
         return configurationManager;
     }
@@ -363,6 +375,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html
      * 
      */
+    @JsonIgnore
     public void setConfigurationManager(StackConfigurationManager configurationManager) {
         this.configurationManager = configurationManager;
     }
@@ -378,6 +391,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
+    @JsonIgnore
     public DataSource getCustomCookbooksSource() {
         return customCookbooksSource;
     }
@@ -388,6 +402,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
+    @JsonIgnore
     public void setCustomCookbooksSource(DataSource customCookbooksSource) {
         this.customCookbooksSource = customCookbooksSource;
     }
@@ -401,6 +416,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
      */
+    @JsonIgnore
     public Object getCustomJson() {
         return customJson;
     }
@@ -409,6 +425,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
      */
+    @JsonIgnore
     public void setCustomJson(Object customJson) {
         this.customJson = customJson;
     }
@@ -422,6 +439,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultAvailabilityZone() {
         return defaultAvailabilityZone;
     }
@@ -430,6 +448,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz
      * 
      */
+    @JsonIgnore
     public void setDefaultAvailabilityZone(CharSequence defaultAvailabilityZone) {
         this.defaultAvailabilityZone = defaultAvailabilityZone;
     }
@@ -443,6 +462,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultinstanceprof
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultInstanceProfileArn() {
         return defaultInstanceProfileArn;
     }
@@ -451,6 +471,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultinstanceprof
      * 
      */
+    @JsonIgnore
     public void setDefaultInstanceProfileArn(CharSequence defaultInstanceProfileArn) {
         this.defaultInstanceProfileArn = defaultInstanceProfileArn;
     }
@@ -464,6 +485,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultos
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultOs() {
         return defaultOs;
     }
@@ -472,6 +494,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultos
      * 
      */
+    @JsonIgnore
     public void setDefaultOs(CharSequence defaultOs) {
         this.defaultOs = defaultOs;
     }
@@ -485,6 +508,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultrootdevicetype
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultRootDeviceType() {
         return defaultRootDeviceType;
     }
@@ -493,6 +517,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultrootdevicetype
      * 
      */
+    @JsonIgnore
     public void setDefaultRootDeviceType(CharSequence defaultRootDeviceType) {
         this.defaultRootDeviceType = defaultRootDeviceType;
     }
@@ -506,6 +531,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultsshkeyname
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultSshKeyName() {
         return defaultSshKeyName;
     }
@@ -514,6 +540,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultsshkeyname
      * 
      */
+    @JsonIgnore
     public void setDefaultSshKeyName(CharSequence defaultSshKeyName) {
         this.defaultSshKeyName = defaultSshKeyName;
     }
@@ -527,6 +554,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#defaultsubnet
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultSubnetId() {
         return defaultSubnetId;
     }
@@ -535,6 +563,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#defaultsubnet
      * 
      */
+    @JsonIgnore
     public void setDefaultSubnetId(CharSequence defaultSubnetId) {
         this.defaultSubnetId = defaultSubnetId;
     }
@@ -548,6 +577,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-ecsclusterarn
      * 
      */
+    @JsonIgnore
     public CharSequence getEcsClusterArn() {
         return ecsClusterArn;
     }
@@ -556,6 +586,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-ecsclusterarn
      * 
      */
+    @JsonIgnore
     public void setEcsClusterArn(CharSequence ecsClusterArn) {
         this.ecsClusterArn = ecsClusterArn;
     }
@@ -569,6 +600,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips
      * 
      */
+    @JsonIgnore
     public Set<ElasticIp> getElasticIps() {
         return elasticIps;
     }
@@ -577,6 +609,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips
      * 
      */
+    @JsonIgnore
     public void setElasticIps(Set<ElasticIp> elasticIps) {
         this.elasticIps = elasticIps;
     }
@@ -590,6 +623,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme
      * 
      */
+    @JsonIgnore
     public CharSequence getHostnameTheme() {
         return hostnameTheme;
     }
@@ -598,6 +632,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme
      * 
      */
+    @JsonIgnore
     public void setHostnameTheme(CharSequence hostnameTheme) {
         this.hostnameTheme = hostnameTheme;
     }
@@ -611,6 +646,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -619,6 +655,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -632,6 +669,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances
      * 
      */
+    @JsonIgnore
     public Set<RdsDbInstance> getRdsDbInstances() {
         return rdsDbInstances;
     }
@@ -640,6 +678,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances
      * 
      */
+    @JsonIgnore
     public void setRdsDbInstances(Set<RdsDbInstance> rdsDbInstances) {
         this.rdsDbInstances = rdsDbInstances;
     }
@@ -653,6 +692,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
@@ -661,6 +701,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn
      * 
      */
+    @JsonIgnore
     public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
@@ -674,6 +715,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-sourcestackid
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceStackId() {
         return sourceStackId;
     }
@@ -682,6 +724,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-sourcestackid
      * 
      */
+    @JsonIgnore
     public void setSourceStackId(CharSequence sourceStackId) {
         this.sourceStackId = sourceStackId;
     }
@@ -695,6 +738,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -703,6 +747,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -716,6 +761,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#usecustcookbooks
      * 
      */
+    @JsonIgnore
     public Boolean getUseCustomCookbooks() {
         return useCustomCookbooks;
     }
@@ -724,6 +770,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#usecustcookbooks
      * 
      */
+    @JsonIgnore
     public void setUseCustomCookbooks(Boolean useCustomCookbooks) {
         this.useCustomCookbooks = useCustomCookbooks;
     }
@@ -737,6 +784,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-useopsworkssecuritygroups
      * 
      */
+    @JsonIgnore
     public Boolean getUseOpsworksSecurityGroups() {
         return useOpsworksSecurityGroups;
     }
@@ -745,6 +793,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-useopsworkssecuritygroups
      * 
      */
+    @JsonIgnore
     public void setUseOpsworksSecurityGroups(Boolean useOpsworksSecurityGroups) {
         this.useOpsworksSecurityGroups = useOpsworksSecurityGroups;
     }
@@ -758,6 +807,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -766,6 +816,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

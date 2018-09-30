@@ -1,6 +1,7 @@
 
 package aws.servicecatalog;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
      * 
      */
+    @JsonIgnore
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -50,6 +52,7 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
      * 
      */
+    @JsonIgnore
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -63,6 +66,7 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
      * 
      */
+    @JsonIgnore
     public CharSequence getPortfolioId() {
         return portfolioId;
     }
@@ -71,6 +75,7 @@ public class AcceptedPortfolioShare {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
      * 
      */
+    @JsonIgnore
     public void setPortfolioId(CharSequence portfolioId) {
         this.portfolioId = portfolioId;
     }

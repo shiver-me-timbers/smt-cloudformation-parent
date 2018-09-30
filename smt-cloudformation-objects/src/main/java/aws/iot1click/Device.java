@@ -1,6 +1,7 @@
 
 package aws.iot1click;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html#cfn-iot1click-device-deviceid
      * 
      */
+    @JsonIgnore
     public CharSequence getDeviceId() {
         return deviceId;
     }
@@ -50,6 +52,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html#cfn-iot1click-device-deviceid
      * 
      */
+    @JsonIgnore
     public void setDeviceId(CharSequence deviceId) {
         this.deviceId = deviceId;
     }
@@ -63,6 +66,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html#cfn-iot1click-device-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -71,6 +75,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html#cfn-iot1click-device-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }

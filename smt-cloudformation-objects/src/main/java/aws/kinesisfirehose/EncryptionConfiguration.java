@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html
      * 
      */
+    @JsonIgnore
     public KMSEncryptionConfig getKMSEncryptionConfig() {
         return kMSEncryptionConfig;
     }
@@ -56,6 +58,7 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html
      * 
      */
+    @JsonIgnore
     public void setKMSEncryptionConfig(KMSEncryptionConfig kMSEncryptionConfig) {
         this.kMSEncryptionConfig = kMSEncryptionConfig;
     }
@@ -69,6 +72,7 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig
      * 
      */
+    @JsonIgnore
     public CharSequence getNoEncryptionConfig() {
         return noEncryptionConfig;
     }
@@ -77,6 +81,7 @@ public class EncryptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig
      * 
      */
+    @JsonIgnore
     public void setNoEncryptionConfig(CharSequence noEncryptionConfig) {
         this.noEncryptionConfig = noEncryptionConfig;
     }

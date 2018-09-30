@@ -1,6 +1,7 @@
 
 package aws.cloudfront;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -50,6 +52,7 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname
      * 
      */
+    @JsonIgnore
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -63,6 +66,7 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity
      * 
      */
+    @JsonIgnore
     public CharSequence getOriginAccessIdentity() {
         return originAccessIdentity;
     }
@@ -71,6 +75,7 @@ public class S3Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-originaccessidentity
      * 
      */
+    @JsonIgnore
     public void setOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
     }

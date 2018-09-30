@@ -4,6 +4,7 @@ package aws;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -86,10 +87,12 @@ public class Resource
         super(name);
     }
 
+    @JsonIgnore
     public java.lang.String getType() {
         return type;
     }
 
+    @JsonIgnore
     public void setType(java.lang.String type) {
         this.type = type;
     }
@@ -103,6 +106,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
      * 
      */
+    @JsonIgnore
     public java.lang.String getCondition() {
         return condition;
     }
@@ -111,6 +115,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html
      * 
      */
+    @JsonIgnore
     public void setCondition(java.lang.String condition) {
         this.condition = condition;
     }
@@ -120,10 +125,12 @@ public class Resource
         return this;
     }
 
+    @JsonIgnore
     public CreationPolicy getCreationPolicy() {
         return creationPolicy;
     }
 
+    @JsonIgnore
     public void setCreationPolicy(CreationPolicy creationPolicy) {
         this.creationPolicy = creationPolicy;
     }
@@ -133,10 +140,12 @@ public class Resource
         return this;
     }
 
+    @JsonIgnore
     public UpdatePolicy getUpdatePolicy() {
         return updatePolicy;
     }
 
+    @JsonIgnore
     public void setUpdatePolicy(UpdatePolicy updatePolicy) {
         this.updatePolicy = updatePolicy;
     }
@@ -152,6 +161,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html
      * 
      */
+    @JsonIgnore
     public DeletionPolicy getDeletionPolicy() {
         return deletionPolicy;
     }
@@ -162,6 +172,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html
      * 
      */
+    @JsonIgnore
     public void setDeletionPolicy(DeletionPolicy deletionPolicy) {
         this.deletionPolicy = deletionPolicy;
     }
@@ -175,6 +186,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html
      * 
      */
+    @JsonIgnore
     public List<java.lang.String> getDependsOn() {
         return dependsOn;
     }
@@ -183,6 +195,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html
      * 
      */
+    @JsonIgnore
     public void setDependsOn(List<java.lang.String> dependsOn) {
         this.dependsOn = dependsOn;
     }
@@ -196,6 +209,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html
      * 
      */
+    @JsonIgnore
     public Map<String, Object> getMetadata() {
         return metadata;
     }
@@ -204,6 +218,7 @@ public class Resource
      * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-metadata.html
      * 
      */
+    @JsonIgnore
     public void setMetadata(Map<String, Object> metadata) {
         this.metadata = metadata;
     }

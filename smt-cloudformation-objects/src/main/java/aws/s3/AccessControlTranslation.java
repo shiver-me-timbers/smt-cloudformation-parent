@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class AccessControlTranslation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner
      * 
      */
+    @JsonIgnore
     public CharSequence getOwner() {
         return owner;
     }
@@ -42,6 +44,7 @@ public class AccessControlTranslation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner
      * 
      */
+    @JsonIgnore
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }

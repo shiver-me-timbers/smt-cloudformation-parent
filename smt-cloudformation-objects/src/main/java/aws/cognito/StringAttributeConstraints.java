@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength
      * 
      */
+    @JsonIgnore
     public CharSequence getMinLength() {
         return minLength;
     }
@@ -50,6 +52,7 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-minlength
      * 
      */
+    @JsonIgnore
     public void setMinLength(CharSequence minLength) {
         this.minLength = minLength;
     }
@@ -63,6 +66,7 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength
      * 
      */
+    @JsonIgnore
     public CharSequence getMaxLength() {
         return maxLength;
     }
@@ -71,6 +75,7 @@ public class StringAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html#cfn-cognito-userpool-stringattributeconstraints-maxlength
      * 
      */
+    @JsonIgnore
     public void setMaxLength(CharSequence maxLength) {
         this.maxLength = maxLength;
     }

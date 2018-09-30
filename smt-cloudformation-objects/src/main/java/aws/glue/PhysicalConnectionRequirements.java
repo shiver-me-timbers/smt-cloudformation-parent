@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -60,6 +62,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -73,6 +76,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSecurityGroupIdList() {
         return securityGroupIdList;
     }
@@ -81,6 +85,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-securitygroupidlist
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupIdList(List<CharSequence> securityGroupIdList) {
         this.securityGroupIdList = securityGroupIdList;
     }
@@ -94,6 +99,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -102,6 +108,7 @@ public class PhysicalConnectionRequirements {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

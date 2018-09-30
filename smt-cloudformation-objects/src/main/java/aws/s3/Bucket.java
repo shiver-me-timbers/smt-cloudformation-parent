@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -175,6 +176,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html
      * 
      */
+    @JsonIgnore
     public AccelerateConfiguration getAccelerateConfiguration() {
         return accelerateConfiguration;
     }
@@ -185,6 +187,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setAccelerateConfiguration(AccelerateConfiguration accelerateConfiguration) {
         this.accelerateConfiguration = accelerateConfiguration;
     }
@@ -198,6 +201,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol
      * 
      */
+    @JsonIgnore
     public CharSequence getAccessControl() {
         return accessControl;
     }
@@ -206,6 +210,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol
      * 
      */
+    @JsonIgnore
     public void setAccessControl(CharSequence accessControl) {
         this.accessControl = accessControl;
     }
@@ -219,6 +224,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-analyticsconfigurations
      * 
      */
+    @JsonIgnore
     public Set<AnalyticsConfiguration> getAnalyticsConfigurations() {
         return analyticsConfigurations;
     }
@@ -227,6 +233,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-analyticsconfigurations
      * 
      */
+    @JsonIgnore
     public void setAnalyticsConfigurations(Set<AnalyticsConfiguration> analyticsConfigurations) {
         this.analyticsConfigurations = analyticsConfigurations;
     }
@@ -242,6 +249,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html
      * 
      */
+    @JsonIgnore
     public BucketEncryption getBucketEncryption() {
         return bucketEncryption;
     }
@@ -252,6 +260,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html
      * 
      */
+    @JsonIgnore
     public void setBucketEncryption(BucketEncryption bucketEncryption) {
         this.bucketEncryption = bucketEncryption;
     }
@@ -265,6 +274,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -273,6 +283,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name
      * 
      */
+    @JsonIgnore
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -288,6 +299,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html
      * 
      */
+    @JsonIgnore
     public CorsConfiguration getCorsConfiguration() {
         return corsConfiguration;
     }
@@ -298,6 +310,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html
      * 
      */
+    @JsonIgnore
     public void setCorsConfiguration(CorsConfiguration corsConfiguration) {
         this.corsConfiguration = corsConfiguration;
     }
@@ -311,6 +324,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations
      * 
      */
+    @JsonIgnore
     public Set<InventoryConfiguration> getInventoryConfigurations() {
         return inventoryConfigurations;
     }
@@ -319,6 +333,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations
      * 
      */
+    @JsonIgnore
     public void setInventoryConfigurations(Set<InventoryConfiguration> inventoryConfigurations) {
         this.inventoryConfigurations = inventoryConfigurations;
     }
@@ -334,6 +349,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html
      * 
      */
+    @JsonIgnore
     public LifecycleConfiguration getLifecycleConfiguration() {
         return lifecycleConfiguration;
     }
@@ -344,6 +360,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html
      * 
      */
+    @JsonIgnore
     public void setLifecycleConfiguration(LifecycleConfiguration lifecycleConfiguration) {
         this.lifecycleConfiguration = lifecycleConfiguration;
     }
@@ -359,6 +376,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html
      * 
      */
+    @JsonIgnore
     public LoggingConfiguration getLoggingConfiguration() {
         return loggingConfiguration;
     }
@@ -369,6 +387,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html
      * 
      */
+    @JsonIgnore
     public void setLoggingConfiguration(LoggingConfiguration loggingConfiguration) {
         this.loggingConfiguration = loggingConfiguration;
     }
@@ -382,6 +401,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations
      * 
      */
+    @JsonIgnore
     public Set<MetricsConfiguration> getMetricsConfigurations() {
         return metricsConfigurations;
     }
@@ -390,6 +410,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations
      * 
      */
+    @JsonIgnore
     public void setMetricsConfigurations(Set<MetricsConfiguration> metricsConfigurations) {
         this.metricsConfigurations = metricsConfigurations;
     }
@@ -405,6 +426,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html
      * 
      */
+    @JsonIgnore
     public NotificationConfiguration getNotificationConfiguration() {
         return notificationConfiguration;
     }
@@ -415,6 +437,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html
      * 
      */
+    @JsonIgnore
     public void setNotificationConfiguration(NotificationConfiguration notificationConfiguration) {
         this.notificationConfiguration = notificationConfiguration;
     }
@@ -430,6 +453,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html
      * 
      */
+    @JsonIgnore
     public ReplicationConfiguration getReplicationConfiguration() {
         return replicationConfiguration;
     }
@@ -440,6 +464,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setReplicationConfiguration(ReplicationConfiguration replicationConfiguration) {
         this.replicationConfiguration = replicationConfiguration;
     }
@@ -453,6 +478,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -461,6 +487,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -476,6 +503,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html
      * 
      */
+    @JsonIgnore
     public VersioningConfiguration getVersioningConfiguration() {
         return versioningConfiguration;
     }
@@ -486,6 +514,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html
      * 
      */
+    @JsonIgnore
     public void setVersioningConfiguration(VersioningConfiguration versioningConfiguration) {
         this.versioningConfiguration = versioningConfiguration;
     }
@@ -501,6 +530,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html
      * 
      */
+    @JsonIgnore
     public WebsiteConfiguration getWebsiteConfiguration() {
         return websiteConfiguration;
     }
@@ -511,6 +541,7 @@ public class Bucket {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setWebsiteConfiguration(WebsiteConfiguration websiteConfiguration) {
         this.websiteConfiguration = websiteConfiguration;
     }

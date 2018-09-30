@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
      * 
      */
+    @JsonIgnore
     public CharSequence getOwner() {
         return owner;
     }
@@ -62,6 +64,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
      * 
      */
+    @JsonIgnore
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
@@ -75,6 +78,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails
      * 
      */
+    @JsonIgnore
     public Set<SourceDetail> getSourceDetails() {
         return sourceDetails;
     }
@@ -83,6 +87,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails
      * 
      */
+    @JsonIgnore
     public void setSourceDetails(Set<SourceDetail> sourceDetails) {
         this.sourceDetails = sourceDetails;
     }
@@ -96,6 +101,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceIdentifier() {
         return sourceIdentifier;
     }
@@ -104,6 +110,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier
      * 
      */
+    @JsonIgnore
     public void setSourceIdentifier(CharSequence sourceIdentifier) {
         this.sourceIdentifier = sourceIdentifier;
     }

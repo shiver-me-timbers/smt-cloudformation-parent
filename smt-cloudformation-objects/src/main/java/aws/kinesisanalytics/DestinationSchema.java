@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class DestinationSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-destinationschema.html#cfn-kinesisanalytics-applicationoutput-destinationschema-recordformattype
      * 
      */
+    @JsonIgnore
     public CharSequence getRecordFormatType() {
         return recordFormatType;
     }
@@ -42,6 +44,7 @@ public class DestinationSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-destinationschema.html#cfn-kinesisanalytics-applicationoutput-destinationschema-recordformattype
      * 
      */
+    @JsonIgnore
     public void setRecordFormatType(CharSequence recordFormatType) {
         this.recordFormatType = recordFormatType;
     }

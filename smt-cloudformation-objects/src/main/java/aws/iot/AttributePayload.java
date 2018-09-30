@@ -2,6 +2,7 @@
 package aws.iot;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -35,6 +36,7 @@ public class AttributePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes
      * 
      */
+    @JsonIgnore
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -43,6 +45,7 @@ public class AttributePayload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }

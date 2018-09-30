@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-cputhreshold
      * 
      */
+    @JsonIgnore
     public Double getCpuThreshold() {
         return cpuThreshold;
     }
@@ -82,6 +84,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-cputhreshold
      * 
      */
+    @JsonIgnore
     public void setCpuThreshold(Double cpuThreshold) {
         this.cpuThreshold = cpuThreshold;
     }
@@ -95,6 +98,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-ignoremetricstime
      * 
      */
+    @JsonIgnore
     public Integer getIgnoreMetricsTime() {
         return ignoreMetricsTime;
     }
@@ -103,6 +107,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-ignoremetricstime
      * 
      */
+    @JsonIgnore
     public void setIgnoreMetricsTime(Integer ignoreMetricsTime) {
         this.ignoreMetricsTime = ignoreMetricsTime;
     }
@@ -116,6 +121,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-instancecount
      * 
      */
+    @JsonIgnore
     public Integer getInstanceCount() {
         return instanceCount;
     }
@@ -124,6 +130,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-instancecount
      * 
      */
+    @JsonIgnore
     public void setInstanceCount(Integer instanceCount) {
         this.instanceCount = instanceCount;
     }
@@ -137,6 +144,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-loadthreshold
      * 
      */
+    @JsonIgnore
     public Double getLoadThreshold() {
         return loadThreshold;
     }
@@ -145,6 +153,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-loadthreshold
      * 
      */
+    @JsonIgnore
     public void setLoadThreshold(Double loadThreshold) {
         this.loadThreshold = loadThreshold;
     }
@@ -158,6 +167,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-memorythreshold
      * 
      */
+    @JsonIgnore
     public Double getMemoryThreshold() {
         return memoryThreshold;
     }
@@ -166,6 +176,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-memorythreshold
      * 
      */
+    @JsonIgnore
     public void setMemoryThreshold(Double memoryThreshold) {
         this.memoryThreshold = memoryThreshold;
     }
@@ -179,6 +190,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-thresholdwaittime
      * 
      */
+    @JsonIgnore
     public Integer getThresholdsWaitTime() {
         return thresholdsWaitTime;
     }
@@ -187,6 +199,7 @@ public class AutoScalingThresholds {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html#cfn-opsworks-layer-loadbasedautoscaling-autoscalingthresholds-thresholdwaittime
      * 
      */
+    @JsonIgnore
     public void setThresholdsWaitTime(Integer thresholdsWaitTime) {
         this.thresholdsWaitTime = thresholdsWaitTime;
     }

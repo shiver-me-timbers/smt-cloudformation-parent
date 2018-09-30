@@ -3,6 +3,7 @@ package aws.applicationautoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -86,6 +87,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity
      * 
      */
+    @JsonIgnore
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -94,6 +96,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-maxcapacity
      * 
      */
+    @JsonIgnore
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -107,6 +110,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-mincapacity
      * 
      */
+    @JsonIgnore
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -115,6 +119,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-mincapacity
      * 
      */
+    @JsonIgnore
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }
@@ -128,6 +133,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-resourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -136,6 +142,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-resourceid
      * 
      */
+    @JsonIgnore
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
@@ -149,6 +156,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -157,6 +165,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
@@ -170,6 +179,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scalabledimension
      * 
      */
+    @JsonIgnore
     public CharSequence getScalableDimension() {
         return scalableDimension;
     }
@@ -178,6 +188,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scalabledimension
      * 
      */
+    @JsonIgnore
     public void setScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
     }
@@ -191,6 +202,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scheduledactions
      * 
      */
+    @JsonIgnore
     public Set<ScheduledAction> getScheduledActions() {
         return scheduledActions;
     }
@@ -199,6 +211,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scheduledactions
      * 
      */
+    @JsonIgnore
     public void setScheduledActions(Set<ScheduledAction> scheduledActions) {
         this.scheduledActions = scheduledActions;
     }
@@ -212,6 +225,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceNamespace() {
         return serviceNamespace;
     }
@@ -220,6 +234,7 @@ public class ScalableTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace
      * 
      */
+    @JsonIgnore
     public void setServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
     }

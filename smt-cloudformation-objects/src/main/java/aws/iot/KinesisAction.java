@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey
      * 
      */
+    @JsonIgnore
     public CharSequence getPartitionKey() {
         return partitionKey;
     }
@@ -58,6 +60,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey
      * 
      */
+    @JsonIgnore
     public void setPartitionKey(CharSequence partitionKey) {
         this.partitionKey = partitionKey;
     }
@@ -71,6 +74,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -79,6 +83,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -92,6 +97,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname
      * 
      */
+    @JsonIgnore
     public CharSequence getStreamName() {
         return streamName;
     }
@@ -100,6 +106,7 @@ public class KinesisAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-streamname
      * 
      */
+    @JsonIgnore
     public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }

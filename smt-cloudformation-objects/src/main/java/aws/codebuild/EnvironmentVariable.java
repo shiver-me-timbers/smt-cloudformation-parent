@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -58,6 +60,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -71,6 +74,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-value
      * 
      */
+    @JsonIgnore
     public CharSequence getValue() {
         return value;
     }
@@ -79,6 +83,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-value
      * 
      */
+    @JsonIgnore
     public void setValue(CharSequence value) {
         this.value = value;
     }
@@ -92,6 +97,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -100,6 +106,7 @@ public class EnvironmentVariable {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

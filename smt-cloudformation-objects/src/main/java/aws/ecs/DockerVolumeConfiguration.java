@@ -2,6 +2,7 @@
 package aws.ecs;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -67,6 +68,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision
      * 
      */
+    @JsonIgnore
     public Boolean getAutoprovision() {
         return autoprovision;
     }
@@ -75,6 +77,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision
      * 
      */
+    @JsonIgnore
     public void setAutoprovision(Boolean autoprovision) {
         this.autoprovision = autoprovision;
     }
@@ -88,6 +91,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver
      * 
      */
+    @JsonIgnore
     public CharSequence getDriver() {
         return driver;
     }
@@ -96,6 +100,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver
      * 
      */
+    @JsonIgnore
     public void setDriver(CharSequence driver) {
         this.driver = driver;
     }
@@ -109,6 +114,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts
      * 
      */
+    @JsonIgnore
     public Map<String, String> getDriverOpts() {
         return driverOpts;
     }
@@ -117,6 +123,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts
      * 
      */
+    @JsonIgnore
     public void setDriverOpts(Map<String, String> driverOpts) {
         this.driverOpts = driverOpts;
     }
@@ -130,6 +137,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels
      * 
      */
+    @JsonIgnore
     public Map<String, String> getLabels() {
         return labels;
     }
@@ -138,6 +146,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels
      * 
      */
+    @JsonIgnore
     public void setLabels(Map<String, String> labels) {
         this.labels = labels;
     }
@@ -151,6 +160,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope
      * 
      */
+    @JsonIgnore
     public CharSequence getScope() {
         return scope;
     }
@@ -159,6 +169,7 @@ public class DockerVolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope
      * 
      */
+    @JsonIgnore
     public void setScope(CharSequence scope) {
         this.scope = scope;
     }

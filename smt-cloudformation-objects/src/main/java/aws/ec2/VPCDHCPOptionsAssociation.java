@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid
      * 
      */
+    @JsonIgnore
     public CharSequence getDhcpOptionsId() {
         return dhcpOptionsId;
     }
@@ -50,6 +52,7 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-dhcpoptionsid
      * 
      */
+    @JsonIgnore
     public void setDhcpOptionsId(CharSequence dhcpOptionsId) {
         this.dhcpOptionsId = dhcpOptionsId;
     }
@@ -63,6 +66,7 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -71,6 +75,7 @@ public class VPCDHCPOptionsAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-dhcp-options-assoc.html#cfn-ec2-vpcdhcpoptionsassociation-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

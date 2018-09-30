@@ -1,6 +1,7 @@
 
 package aws.cloudfront;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getBucket() {
         return bucket;
     }
@@ -58,6 +60,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket
      * 
      */
+    @JsonIgnore
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -71,6 +74,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -79,6 +83,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -92,6 +97,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -100,6 +106,7 @@ public class Logging {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-prefix
      * 
      */
+    @JsonIgnore
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }

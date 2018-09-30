@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getS3Bucket() {
         return s3Bucket;
     }
@@ -66,6 +68,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket
      * 
      */
+    @JsonIgnore
     public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
@@ -79,6 +82,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key
      * 
      */
+    @JsonIgnore
     public CharSequence getS3Key() {
         return s3Key;
     }
@@ -87,6 +91,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3key
      * 
      */
+    @JsonIgnore
     public void setS3Key(CharSequence s3Key) {
         this.s3Key = s3Key;
     }
@@ -100,6 +105,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion
      * 
      */
+    @JsonIgnore
     public CharSequence getS3ObjectVersion() {
         return s3ObjectVersion;
     }
@@ -108,6 +114,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3objectversion
      * 
      */
+    @JsonIgnore
     public void setS3ObjectVersion(CharSequence s3ObjectVersion) {
         this.s3ObjectVersion = s3ObjectVersion;
     }
@@ -121,6 +128,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile
      * 
      */
+    @JsonIgnore
     public CharSequence getZipFile() {
         return zipFile;
     }
@@ -129,6 +137,7 @@ public class Code {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile
      * 
      */
+    @JsonIgnore
     public void setZipFile(CharSequence zipFile) {
         this.zipFile = zipFile;
     }

@@ -3,6 +3,7 @@ package aws.cloud9;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -84,6 +85,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-repositories
      * 
      */
+    @JsonIgnore
     public List<Repository> getRepositories() {
         return repositories;
     }
@@ -92,6 +94,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-repositories
      * 
      */
+    @JsonIgnore
     public void setRepositories(List<Repository> repositories) {
         this.repositories = repositories;
     }
@@ -105,6 +108,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-ownerarn
      * 
      */
+    @JsonIgnore
     public CharSequence getOwnerArn() {
         return ownerArn;
     }
@@ -113,6 +117,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-ownerarn
      * 
      */
+    @JsonIgnore
     public void setOwnerArn(CharSequence ownerArn) {
         this.ownerArn = ownerArn;
     }
@@ -126,6 +131,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -134,6 +140,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -147,6 +154,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes
      * 
      */
+    @JsonIgnore
     public Integer getAutomaticStopTimeMinutes() {
         return automaticStopTimeMinutes;
     }
@@ -155,6 +163,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes
      * 
      */
+    @JsonIgnore
     public void setAutomaticStopTimeMinutes(Integer automaticStopTimeMinutes) {
         this.automaticStopTimeMinutes = automaticStopTimeMinutes;
     }
@@ -168,6 +177,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -176,6 +186,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -189,6 +200,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -197,6 +209,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-instancetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -210,6 +223,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -218,6 +232,7 @@ public class EnvironmentEC2 {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

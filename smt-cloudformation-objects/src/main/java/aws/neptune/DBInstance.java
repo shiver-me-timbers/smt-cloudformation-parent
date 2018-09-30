@@ -4,6 +4,7 @@ package aws.neptune;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -117,6 +118,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbparametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBParameterGroupName() {
         return dBParameterGroupName;
     }
@@ -125,6 +127,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbparametergroupname
      * 
      */
+    @JsonIgnore
     public void setDBParameterGroupName(CharSequence dBParameterGroupName) {
         this.dBParameterGroupName = dBParameterGroupName;
     }
@@ -138,6 +141,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceclass
      * 
      */
+    @JsonIgnore
     public CharSequence getDBInstanceClass() {
         return dBInstanceClass;
     }
@@ -146,6 +150,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceclass
      * 
      */
+    @JsonIgnore
     public void setDBInstanceClass(CharSequence dBInstanceClass) {
         this.dBInstanceClass = dBInstanceClass;
     }
@@ -159,6 +164,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
@@ -167,6 +173,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
@@ -180,6 +187,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
@@ -188,6 +196,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
@@ -201,6 +210,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -209,6 +219,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -222,6 +233,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -230,6 +242,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -243,6 +256,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -251,6 +265,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -264,6 +279,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
@@ -272,6 +288,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
@@ -285,6 +302,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBInstanceIdentifier() {
         return dBInstanceIdentifier;
     }
@@ -293,6 +311,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public void setDBInstanceIdentifier(CharSequence dBInstanceIdentifier) {
         this.dBInstanceIdentifier = dBInstanceIdentifier;
     }
@@ -306,6 +325,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsnapshotidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSnapshotIdentifier() {
         return dBSnapshotIdentifier;
     }
@@ -314,6 +334,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsnapshotidentifier
      * 
      */
+    @JsonIgnore
     public void setDBSnapshotIdentifier(CharSequence dBSnapshotIdentifier) {
         this.dBSnapshotIdentifier = dBSnapshotIdentifier;
     }
@@ -327,6 +348,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -335,6 +357,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions
      * 
      */
+    @JsonIgnore
     public Boolean getAllAwsRegions() {
         return allAwsRegions;
     }
@@ -60,6 +62,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions
      * 
      */
+    @JsonIgnore
     public void setAllAwsRegions(Boolean allAwsRegions) {
         this.allAwsRegions = allAwsRegions;
     }
@@ -73,6 +76,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-awsregions
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAwsRegions() {
         return awsRegions;
     }
@@ -81,6 +85,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-awsregions
      * 
      */
+    @JsonIgnore
     public void setAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
     }
@@ -94,6 +99,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -102,6 +108,7 @@ public class OrganizationAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

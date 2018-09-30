@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -92,6 +93,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category
      * 
      */
+    @JsonIgnore
     public CharSequence getCategory() {
         return category;
     }
@@ -100,6 +102,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-category
      * 
      */
+    @JsonIgnore
     public void setCategory(CharSequence category) {
         this.category = category;
     }
@@ -113,6 +116,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties
      * 
      */
+    @JsonIgnore
     public Set<ConfigurationProperties> getConfigurationProperties() {
         return configurationProperties;
     }
@@ -121,6 +125,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties
      * 
      */
+    @JsonIgnore
     public void setConfigurationProperties(Set<ConfigurationProperties> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
@@ -136,6 +141,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
+    @JsonIgnore
     public ArtifactDetails getInputArtifactDetails() {
         return inputArtifactDetails;
     }
@@ -146,6 +152,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
+    @JsonIgnore
     public void setInputArtifactDetails(ArtifactDetails inputArtifactDetails) {
         this.inputArtifactDetails = inputArtifactDetails;
     }
@@ -161,6 +168,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
+    @JsonIgnore
     public ArtifactDetails getOutputArtifactDetails() {
         return outputArtifactDetails;
     }
@@ -171,6 +179,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html
      * 
      */
+    @JsonIgnore
     public void setOutputArtifactDetails(ArtifactDetails outputArtifactDetails) {
         this.outputArtifactDetails = outputArtifactDetails;
     }
@@ -184,6 +193,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider
      * 
      */
+    @JsonIgnore
     public CharSequence getProvider() {
         return provider;
     }
@@ -192,6 +202,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider
      * 
      */
+    @JsonIgnore
     public void setProvider(CharSequence provider) {
         this.provider = provider;
     }
@@ -207,6 +218,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html
      * 
      */
+    @JsonIgnore
     public Settings getSettings() {
         return settings;
     }
@@ -217,6 +229,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html
      * 
      */
+    @JsonIgnore
     public void setSettings(Settings settings) {
         this.settings = settings;
     }
@@ -230,6 +243,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
      */
+    @JsonIgnore
     public CharSequence getVersion() {
         return version;
     }
@@ -238,6 +252,7 @@ public class CustomActionType {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
      */
+    @JsonIgnore
     public void setVersion(CharSequence version) {
         this.version = version;
     }

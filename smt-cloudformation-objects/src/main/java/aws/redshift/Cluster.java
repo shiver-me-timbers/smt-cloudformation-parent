@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -267,6 +268,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAllowVersionUpgrade() {
         return allowVersionUpgrade;
     }
@@ -275,6 +277,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-allowversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAllowVersionUpgrade(Boolean allowVersionUpgrade) {
         this.allowVersionUpgrade = allowVersionUpgrade;
     }
@@ -288,6 +291,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod
      * 
      */
+    @JsonIgnore
     public Integer getAutomatedSnapshotRetentionPeriod() {
         return automatedSnapshotRetentionPeriod;
     }
@@ -296,6 +300,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-automatedsnapshotretentionperiod
      * 
      */
+    @JsonIgnore
     public void setAutomatedSnapshotRetentionPeriod(Integer automatedSnapshotRetentionPeriod) {
         this.automatedSnapshotRetentionPeriod = automatedSnapshotRetentionPeriod;
     }
@@ -309,6 +314,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -317,6 +323,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -330,6 +337,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterIdentifier() {
         return clusterIdentifier;
     }
@@ -338,6 +346,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusteridentifier
      * 
      */
+    @JsonIgnore
     public void setClusterIdentifier(CharSequence clusterIdentifier) {
         this.clusterIdentifier = clusterIdentifier;
     }
@@ -351,6 +360,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterparametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterParameterGroupName() {
         return clusterParameterGroupName;
     }
@@ -359,6 +369,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterparametergroupname
      * 
      */
+    @JsonIgnore
     public void setClusterParameterGroupName(CharSequence clusterParameterGroupName) {
         this.clusterParameterGroupName = clusterParameterGroupName;
     }
@@ -372,6 +383,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersecuritygroups
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getClusterSecurityGroups() {
         return clusterSecurityGroups;
     }
@@ -380,6 +392,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersecuritygroups
      * 
      */
+    @JsonIgnore
     public void setClusterSecurityGroups(List<CharSequence> clusterSecurityGroups) {
         this.clusterSecurityGroups = clusterSecurityGroups;
     }
@@ -393,6 +406,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersubnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterSubnetGroupName() {
         return clusterSubnetGroupName;
     }
@@ -401,6 +415,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustersubnetgroupname
      * 
      */
+    @JsonIgnore
     public void setClusterSubnetGroupName(CharSequence clusterSubnetGroupName) {
         this.clusterSubnetGroupName = clusterSubnetGroupName;
     }
@@ -414,6 +429,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustertype
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterType() {
         return clusterType;
     }
@@ -422,6 +438,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clustertype
      * 
      */
+    @JsonIgnore
     public void setClusterType(CharSequence clusterType) {
         this.clusterType = clusterType;
     }
@@ -435,6 +452,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterversion
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterVersion() {
         return clusterVersion;
     }
@@ -443,6 +461,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-clusterversion
      * 
      */
+    @JsonIgnore
     public void setClusterVersion(CharSequence clusterVersion) {
         this.clusterVersion = clusterVersion;
     }
@@ -456,6 +475,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-dbname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBName() {
         return dBName;
     }
@@ -464,6 +484,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-dbname
      * 
      */
+    @JsonIgnore
     public void setDBName(CharSequence dBName) {
         this.dBName = dBName;
     }
@@ -477,6 +498,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-elasticip
      * 
      */
+    @JsonIgnore
     public CharSequence getElasticIp() {
         return elasticIp;
     }
@@ -485,6 +507,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-elasticip
      * 
      */
+    @JsonIgnore
     public void setElasticIp(CharSequence elasticIp) {
         this.elasticIp = elasticIp;
     }
@@ -498,6 +521,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-encrypted
      * 
      */
+    @JsonIgnore
     public Boolean getEncrypted() {
         return encrypted;
     }
@@ -506,6 +530,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-encrypted
      * 
      */
+    @JsonIgnore
     public void setEncrypted(Boolean encrypted) {
         this.encrypted = encrypted;
     }
@@ -519,6 +544,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-hsmclientcertidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getHsmClientCertificateIdentifier() {
         return hsmClientCertificateIdentifier;
     }
@@ -527,6 +553,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-hsmclientcertidentifier
      * 
      */
+    @JsonIgnore
     public void setHsmClientCertificateIdentifier(CharSequence hsmClientCertificateIdentifier) {
         this.hsmClientCertificateIdentifier = hsmClientCertificateIdentifier;
     }
@@ -540,6 +567,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-HsmConfigurationIdentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getHsmConfigurationIdentifier() {
         return hsmConfigurationIdentifier;
     }
@@ -548,6 +576,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-HsmConfigurationIdentifier
      * 
      */
+    @JsonIgnore
     public void setHsmConfigurationIdentifier(CharSequence hsmConfigurationIdentifier) {
         this.hsmConfigurationIdentifier = hsmConfigurationIdentifier;
     }
@@ -561,6 +590,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-iamroles
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getIamRoles() {
         return iamRoles;
     }
@@ -569,6 +599,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-iamroles
      * 
      */
+    @JsonIgnore
     public void setIamRoles(Set<CharSequence> iamRoles) {
         this.iamRoles = iamRoles;
     }
@@ -582,6 +613,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -590,6 +622,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -605,6 +638,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html
      * 
      */
+    @JsonIgnore
     public LoggingProperties getLoggingProperties() {
         return loggingProperties;
     }
@@ -615,6 +649,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html
      * 
      */
+    @JsonIgnore
     public void setLoggingProperties(LoggingProperties loggingProperties) {
         this.loggingProperties = loggingProperties;
     }
@@ -628,6 +663,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
@@ -636,6 +672,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword
      * 
      */
+    @JsonIgnore
     public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
@@ -649,6 +686,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masterusername
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUsername() {
         return masterUsername;
     }
@@ -657,6 +695,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masterusername
      * 
      */
+    @JsonIgnore
     public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
@@ -670,6 +709,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public CharSequence getNodeType() {
         return nodeType;
     }
@@ -678,6 +718,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public void setNodeType(CharSequence nodeType) {
         this.nodeType = nodeType;
     }
@@ -691,6 +732,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public Integer getNumberOfNodes() {
         return numberOfNodes;
     }
@@ -699,6 +741,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public void setNumberOfNodes(Integer numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
     }
@@ -712,6 +755,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-owneraccount
      * 
      */
+    @JsonIgnore
     public CharSequence getOwnerAccount() {
         return ownerAccount;
     }
@@ -720,6 +764,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-owneraccount
      * 
      */
+    @JsonIgnore
     public void setOwnerAccount(CharSequence ownerAccount) {
         this.ownerAccount = ownerAccount;
     }
@@ -733,6 +778,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -741,6 +787,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -754,6 +801,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -762,6 +810,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -775,6 +824,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public Boolean getPubliclyAccessible() {
         return publiclyAccessible;
     }
@@ -783,6 +833,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public void setPubliclyAccessible(Boolean publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
@@ -796,6 +847,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotclusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotClusterIdentifier() {
         return snapshotClusterIdentifier;
     }
@@ -804,6 +856,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotclusteridentifier
      * 
      */
+    @JsonIgnore
     public void setSnapshotClusterIdentifier(CharSequence snapshotClusterIdentifier) {
         this.snapshotClusterIdentifier = snapshotClusterIdentifier;
     }
@@ -817,6 +870,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotIdentifier() {
         return snapshotIdentifier;
     }
@@ -825,6 +879,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public void setSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
     }
@@ -838,6 +893,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -846,6 +902,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -859,6 +916,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
@@ -867,6 +925,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }

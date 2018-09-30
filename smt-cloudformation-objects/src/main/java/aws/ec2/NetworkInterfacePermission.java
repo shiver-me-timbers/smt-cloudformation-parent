@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid
      * 
      */
+    @JsonIgnore
     public CharSequence getAwsAccountId() {
         return awsAccountId;
     }
@@ -58,6 +60,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-awsaccountid
      * 
      */
+    @JsonIgnore
     public void setAwsAccountId(CharSequence awsAccountId) {
         this.awsAccountId = awsAccountId;
     }
@@ -71,6 +74,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -79,6 +83,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
@@ -92,6 +97,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission
      * 
      */
+    @JsonIgnore
     public CharSequence getPermission() {
         return permission;
     }
@@ -100,6 +106,7 @@ public class NetworkInterfacePermission {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinterfacepermission.html#cfn-ec2-networkinterfacepermission-permission
      * 
      */
+    @JsonIgnore
     public void setPermission(CharSequence permission) {
         this.permission = permission;
     }

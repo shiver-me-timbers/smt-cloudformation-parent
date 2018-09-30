@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -98,6 +99,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-path
      * 
      */
+    @JsonIgnore
     public CharSequence getPath() {
         return path;
     }
@@ -106,6 +108,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-path
      * 
      */
+    @JsonIgnore
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -119,6 +122,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -127,6 +131,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -140,6 +145,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-artifactidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getArtifactIdentifier() {
         return artifactIdentifier;
     }
@@ -148,6 +154,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-artifactidentifier
      * 
      */
+    @JsonIgnore
     public void setArtifactIdentifier(CharSequence artifactIdentifier) {
         this.artifactIdentifier = artifactIdentifier;
     }
@@ -161,6 +168,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-overrideartifactname
      * 
      */
+    @JsonIgnore
     public Boolean getOverrideArtifactName() {
         return overrideArtifactName;
     }
@@ -169,6 +177,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-overrideartifactname
      * 
      */
+    @JsonIgnore
     public void setOverrideArtifactName(Boolean overrideArtifactName) {
         this.overrideArtifactName = overrideArtifactName;
     }
@@ -182,6 +191,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-packaging
      * 
      */
+    @JsonIgnore
     public CharSequence getPackaging() {
         return packaging;
     }
@@ -190,6 +200,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-packaging
      * 
      */
+    @JsonIgnore
     public void setPackaging(CharSequence packaging) {
         this.packaging = packaging;
     }
@@ -203,6 +214,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-encryptiondisabled
      * 
      */
+    @JsonIgnore
     public Boolean getEncryptionDisabled() {
         return encryptionDisabled;
     }
@@ -211,6 +223,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-encryptiondisabled
      * 
      */
+    @JsonIgnore
     public void setEncryptionDisabled(Boolean encryptionDisabled) {
         this.encryptionDisabled = encryptionDisabled;
     }
@@ -224,6 +237,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-location
      * 
      */
+    @JsonIgnore
     public CharSequence getLocation() {
         return location;
     }
@@ -232,6 +246,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-location
      * 
      */
+    @JsonIgnore
     public void setLocation(CharSequence location) {
         this.location = location;
     }
@@ -245,6 +260,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -253,6 +269,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -266,6 +283,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-namespacetype
      * 
      */
+    @JsonIgnore
     public CharSequence getNamespaceType() {
         return namespaceType;
     }
@@ -274,6 +292,7 @@ public class Artifacts {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-namespacetype
      * 
      */
+    @JsonIgnore
     public void setNamespaceType(CharSequence namespaceType) {
         this.namespaceType = namespaceType;
     }

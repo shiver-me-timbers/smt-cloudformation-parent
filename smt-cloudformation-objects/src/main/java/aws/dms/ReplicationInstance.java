@@ -4,6 +4,7 @@ package aws.dms;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -141,6 +142,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getReplicationInstanceIdentifier() {
         return replicationInstanceIdentifier;
     }
@@ -149,6 +151,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceidentifier
      * 
      */
+    @JsonIgnore
     public void setReplicationInstanceIdentifier(CharSequence replicationInstanceIdentifier) {
         this.replicationInstanceIdentifier = replicationInstanceIdentifier;
     }
@@ -162,6 +165,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-engineversion
      * 
      */
+    @JsonIgnore
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -170,6 +174,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-engineversion
      * 
      */
+    @JsonIgnore
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -183,6 +188,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -191,6 +197,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -204,6 +211,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -212,6 +220,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -225,6 +234,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -233,6 +243,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -246,6 +257,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -254,6 +266,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -267,6 +280,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationsubnetgroupidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getReplicationSubnetGroupIdentifier() {
         return replicationSubnetGroupIdentifier;
     }
@@ -275,6 +289,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationsubnetgroupidentifier
      * 
      */
+    @JsonIgnore
     public void setReplicationSubnetGroupIdentifier(CharSequence replicationSubnetGroupIdentifier) {
         this.replicationSubnetGroupIdentifier = replicationSubnetGroupIdentifier;
     }
@@ -288,6 +303,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allocatedstorage
      * 
      */
+    @JsonIgnore
     public Integer getAllocatedStorage() {
         return allocatedStorage;
     }
@@ -296,6 +312,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allocatedstorage
      * 
      */
+    @JsonIgnore
     public void setAllocatedStorage(Integer allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
     }
@@ -309,6 +326,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
@@ -317,6 +335,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
@@ -330,6 +349,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
@@ -338,6 +358,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
@@ -351,6 +372,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceclass
      * 
      */
+    @JsonIgnore
     public CharSequence getReplicationInstanceClass() {
         return replicationInstanceClass;
     }
@@ -359,6 +381,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-replicationinstanceclass
      * 
      */
+    @JsonIgnore
     public void setReplicationInstanceClass(CharSequence replicationInstanceClass) {
         this.replicationInstanceClass = replicationInstanceClass;
     }
@@ -372,6 +395,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public Boolean getPubliclyAccessible() {
         return publiclyAccessible;
     }
@@ -380,6 +404,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public void setPubliclyAccessible(Boolean publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
@@ -393,6 +418,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-multiaz
      * 
      */
+    @JsonIgnore
     public Boolean getMultiAZ() {
         return multiAZ;
     }
@@ -401,6 +427,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-multiaz
      * 
      */
+    @JsonIgnore
     public void setMultiAZ(Boolean multiAZ) {
         this.multiAZ = multiAZ;
     }
@@ -414,6 +441,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -422,6 +450,7 @@ public class ReplicationInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-replicationinstance.html#cfn-dms-replicationinstance-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

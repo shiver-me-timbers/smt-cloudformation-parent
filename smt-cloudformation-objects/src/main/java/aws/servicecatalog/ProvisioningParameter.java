@@ -1,6 +1,7 @@
 
 package aws.servicecatalog;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ProvisioningParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value
      * 
      */
+    @JsonIgnore
     public CharSequence getValue() {
         return value;
     }
@@ -50,6 +52,7 @@ public class ProvisioningParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-value
      * 
      */
+    @JsonIgnore
     public void setValue(CharSequence value) {
         this.value = value;
     }
@@ -63,6 +66,7 @@ public class ProvisioningParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-key
      * 
      */
+    @JsonIgnore
     public CharSequence getKey() {
         return key;
     }
@@ -71,6 +75,7 @@ public class ProvisioningParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationprovisionedproduct-provisioningparameter.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameter-key
      * 
      */
+    @JsonIgnore
     public void setKey(CharSequence key) {
         this.key = key;
     }

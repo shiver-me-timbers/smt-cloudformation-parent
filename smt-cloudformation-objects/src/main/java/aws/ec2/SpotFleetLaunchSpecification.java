@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -175,6 +176,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings
      * 
      */
+    @JsonIgnore
     public Set<BlockDeviceMapping> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
@@ -183,6 +185,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings
      * 
      */
+    @JsonIgnore
     public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
@@ -196,6 +199,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ebsoptimized
      * 
      */
+    @JsonIgnore
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -204,6 +208,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ebsoptimized
      * 
      */
+    @JsonIgnore
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }
@@ -219,6 +224,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html
      * 
      */
+    @JsonIgnore
     public IamInstanceProfileSpecification getIamInstanceProfile() {
         return iamInstanceProfile;
     }
@@ -229,6 +235,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html
      * 
      */
+    @JsonIgnore
     public void setIamInstanceProfile(IamInstanceProfileSpecification iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
@@ -242,6 +249,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-imageid
      * 
      */
+    @JsonIgnore
     public CharSequence getImageId() {
         return imageId;
     }
@@ -250,6 +258,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-imageid
      * 
      */
+    @JsonIgnore
     public void setImageId(CharSequence imageId) {
         this.imageId = imageId;
     }
@@ -263,6 +272,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -271,6 +281,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-instancetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -284,6 +295,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-kernelid
      * 
      */
+    @JsonIgnore
     public CharSequence getKernelId() {
         return kernelId;
     }
@@ -292,6 +304,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-kernelid
      * 
      */
+    @JsonIgnore
     public void setKernelId(CharSequence kernelId) {
         this.kernelId = kernelId;
     }
@@ -305,6 +318,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-keyname
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyName() {
         return keyName;
     }
@@ -313,6 +327,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-keyname
      * 
      */
+    @JsonIgnore
     public void setKeyName(CharSequence keyName) {
         this.keyName = keyName;
     }
@@ -328,6 +343,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html
      * 
      */
+    @JsonIgnore
     public SpotFleetMonitoring getMonitoring() {
         return monitoring;
     }
@@ -338,6 +354,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html
      * 
      */
+    @JsonIgnore
     public void setMonitoring(SpotFleetMonitoring monitoring) {
         this.monitoring = monitoring;
     }
@@ -351,6 +368,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-networkinterfaces
      * 
      */
+    @JsonIgnore
     public Set<InstanceNetworkInterfaceSpecification> getNetworkInterfaces() {
         return networkInterfaces;
     }
@@ -359,6 +377,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-networkinterfaces
      * 
      */
+    @JsonIgnore
     public void setNetworkInterfaces(Set<InstanceNetworkInterfaceSpecification> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
     }
@@ -374,6 +393,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html
      * 
      */
+    @JsonIgnore
     public SpotPlacement getPlacement() {
         return placement;
     }
@@ -384,6 +404,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html
      * 
      */
+    @JsonIgnore
     public void setPlacement(SpotPlacement placement) {
         this.placement = placement;
     }
@@ -397,6 +418,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ramdiskid
      * 
      */
+    @JsonIgnore
     public CharSequence getRamdiskId() {
         return ramdiskId;
     }
@@ -405,6 +427,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ramdiskid
      * 
      */
+    @JsonIgnore
     public void setRamdiskId(CharSequence ramdiskId) {
         this.ramdiskId = ramdiskId;
     }
@@ -418,6 +441,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-securitygroups
      * 
      */
+    @JsonIgnore
     public Set<GroupIdentifier> getSecurityGroups() {
         return securityGroups;
     }
@@ -426,6 +450,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-securitygroups
      * 
      */
+    @JsonIgnore
     public void setSecurityGroups(Set<GroupIdentifier> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -439,6 +464,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-spotprice
      * 
      */
+    @JsonIgnore
     public CharSequence getSpotPrice() {
         return spotPrice;
     }
@@ -447,6 +473,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-spotprice
      * 
      */
+    @JsonIgnore
     public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
@@ -460,6 +487,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -468,6 +496,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -481,6 +510,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-tagspecifications
      * 
      */
+    @JsonIgnore
     public Set<SpotFleetTagSpecification> getTagSpecifications() {
         return tagSpecifications;
     }
@@ -489,6 +519,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-tagspecifications
      * 
      */
+    @JsonIgnore
     public void setTagSpecifications(Set<SpotFleetTagSpecification> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
     }
@@ -502,6 +533,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-userdata
      * 
      */
+    @JsonIgnore
     public CharSequence getUserData() {
         return userData;
     }
@@ -510,6 +542,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-userdata
      * 
      */
+    @JsonIgnore
     public void setUserData(CharSequence userData) {
         this.userData = userData;
     }
@@ -523,6 +556,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-weightedcapacity
      * 
      */
+    @JsonIgnore
     public Double getWeightedCapacity() {
         return weightedCapacity;
     }
@@ -531,6 +565,7 @@ public class SpotFleetLaunchSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-weightedcapacity
      * 
      */
+    @JsonIgnore
     public void setWeightedCapacity(Double weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }

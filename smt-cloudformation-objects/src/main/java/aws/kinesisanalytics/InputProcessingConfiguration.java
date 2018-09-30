@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class InputProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputlambdaprocessor.html
      * 
      */
+    @JsonIgnore
     public InputLambdaProcessor getInputLambdaProcessor() {
         return inputLambdaProcessor;
     }
@@ -48,6 +50,7 @@ public class InputProcessingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputlambdaprocessor.html
      * 
      */
+    @JsonIgnore
     public void setInputLambdaProcessor(InputLambdaProcessor inputLambdaProcessor) {
         this.inputLambdaProcessor = inputLambdaProcessor;
     }

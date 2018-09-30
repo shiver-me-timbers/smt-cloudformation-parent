@@ -3,6 +3,7 @@ package aws.dynamodb;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getNonKeyAttributes() {
         return nonKeyAttributes;
     }
@@ -52,6 +54,7 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt
      * 
      */
+    @JsonIgnore
     public void setNonKeyAttributes(List<CharSequence> nonKeyAttributes) {
         this.nonKeyAttributes = nonKeyAttributes;
     }
@@ -65,6 +68,7 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype
      * 
      */
+    @JsonIgnore
     public CharSequence getProjectionType() {
         return projectionType;
     }
@@ -73,6 +77,7 @@ public class Projection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-projtype
      * 
      */
+    @JsonIgnore
     public void setProjectionType(CharSequence projectionType) {
         this.projectionType = projectionType;
     }

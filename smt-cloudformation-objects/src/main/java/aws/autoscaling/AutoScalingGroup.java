@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -203,6 +204,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
@@ -211,6 +213,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
@@ -224,6 +227,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-availabilityzones
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
@@ -232,6 +236,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-availabilityzones
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZones(List<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
@@ -245,6 +250,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown
      * 
      */
+    @JsonIgnore
     public CharSequence getCooldown() {
         return cooldown;
     }
@@ -253,6 +259,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-cooldown
      * 
      */
+    @JsonIgnore
     public void setCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
     }
@@ -266,6 +273,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-desiredcapacity
      * 
      */
+    @JsonIgnore
     public CharSequence getDesiredCapacity() {
         return desiredCapacity;
     }
@@ -274,6 +282,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-desiredcapacity
      * 
      */
+    @JsonIgnore
     public void setDesiredCapacity(CharSequence desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
     }
@@ -287,6 +296,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthcheckgraceperiod
      * 
      */
+    @JsonIgnore
     public Integer getHealthCheckGracePeriod() {
         return healthCheckGracePeriod;
     }
@@ -295,6 +305,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthcheckgraceperiod
      * 
      */
+    @JsonIgnore
     public void setHealthCheckGracePeriod(Integer healthCheckGracePeriod) {
         this.healthCheckGracePeriod = healthCheckGracePeriod;
     }
@@ -308,6 +319,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthchecktype
      * 
      */
+    @JsonIgnore
     public CharSequence getHealthCheckType() {
         return healthCheckType;
     }
@@ -316,6 +328,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-healthchecktype
      * 
      */
+    @JsonIgnore
     public void setHealthCheckType(CharSequence healthCheckType) {
         this.healthCheckType = healthCheckType;
     }
@@ -329,6 +342,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-instanceid
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -337,6 +351,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-instanceid
      * 
      */
+    @JsonIgnore
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -350,6 +365,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname
      * 
      */
+    @JsonIgnore
     public CharSequence getLaunchConfigurationName() {
         return launchConfigurationName;
     }
@@ -358,6 +374,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname
      * 
      */
+    @JsonIgnore
     public void setLaunchConfigurationName(CharSequence launchConfigurationName) {
         this.launchConfigurationName = launchConfigurationName;
     }
@@ -373,6 +390,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html
      * 
      */
+    @JsonIgnore
     public LaunchTemplateSpecification getLaunchTemplate() {
         return launchTemplate;
     }
@@ -383,6 +401,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplate(LaunchTemplateSpecification launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
@@ -396,6 +415,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist
      * 
      */
+    @JsonIgnore
     public List<LifecycleHookSpecification> getLifecycleHookSpecificationList() {
         return lifecycleHookSpecificationList;
     }
@@ -404,6 +424,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist
      * 
      */
+    @JsonIgnore
     public void setLifecycleHookSpecificationList(List<LifecycleHookSpecification> lifecycleHookSpecificationList) {
         this.lifecycleHookSpecificationList = lifecycleHookSpecificationList;
     }
@@ -417,6 +438,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-loadbalancernames
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getLoadBalancerNames() {
         return loadBalancerNames;
     }
@@ -425,6 +447,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-loadbalancernames
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerNames(List<CharSequence> loadBalancerNames) {
         this.loadBalancerNames = loadBalancerNames;
     }
@@ -438,6 +461,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize
      * 
      */
+    @JsonIgnore
     public CharSequence getMaxSize() {
         return maxSize;
     }
@@ -446,6 +470,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-maxsize
      * 
      */
+    @JsonIgnore
     public void setMaxSize(CharSequence maxSize) {
         this.maxSize = maxSize;
     }
@@ -459,6 +484,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-metricscollection
      * 
      */
+    @JsonIgnore
     public List<MetricsCollection> getMetricsCollection() {
         return metricsCollection;
     }
@@ -467,6 +493,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-metricscollection
      * 
      */
+    @JsonIgnore
     public void setMetricsCollection(List<MetricsCollection> metricsCollection) {
         this.metricsCollection = metricsCollection;
     }
@@ -480,6 +507,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize
      * 
      */
+    @JsonIgnore
     public CharSequence getMinSize() {
         return minSize;
     }
@@ -488,6 +516,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize
      * 
      */
+    @JsonIgnore
     public void setMinSize(CharSequence minSize) {
         this.minSize = minSize;
     }
@@ -501,6 +530,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
      */
+    @JsonIgnore
     public List<NotificationConfiguration> getNotificationConfigurations() {
         return notificationConfigurations;
     }
@@ -509,6 +539,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
      */
+    @JsonIgnore
     public void setNotificationConfigurations(List<NotificationConfiguration> notificationConfigurations) {
         this.notificationConfigurations = notificationConfigurations;
     }
@@ -522,6 +553,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-placementgroup
      * 
      */
+    @JsonIgnore
     public CharSequence getPlacementGroup() {
         return placementGroup;
     }
@@ -530,6 +562,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-placementgroup
      * 
      */
+    @JsonIgnore
     public void setPlacementGroup(CharSequence placementGroup) {
         this.placementGroup = placementGroup;
     }
@@ -543,6 +576,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-servicelinkedrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceLinkedRoleARN() {
         return serviceLinkedRoleARN;
     }
@@ -551,6 +585,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-servicelinkedrolearn
      * 
      */
+    @JsonIgnore
     public void setServiceLinkedRoleARN(CharSequence serviceLinkedRoleARN) {
         this.serviceLinkedRoleARN = serviceLinkedRoleARN;
     }
@@ -564,6 +599,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-tags
      * 
      */
+    @JsonIgnore
     public List<TagProperty> getTags() {
         return tags;
     }
@@ -572,6 +608,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<TagProperty> tags) {
         this.tags = tags;
     }
@@ -585,6 +622,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-targetgrouparns
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getTargetGroupARNs() {
         return targetGroupARNs;
     }
@@ -593,6 +631,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-targetgrouparns
      * 
      */
+    @JsonIgnore
     public void setTargetGroupARNs(Set<CharSequence> targetGroupARNs) {
         this.targetGroupARNs = targetGroupARNs;
     }
@@ -606,6 +645,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-termpolicy
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getTerminationPolicies() {
         return terminationPolicies;
     }
@@ -614,6 +654,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-termpolicy
      * 
      */
+    @JsonIgnore
     public void setTerminationPolicies(Set<CharSequence> terminationPolicies) {
         this.terminationPolicies = terminationPolicies;
     }
@@ -627,6 +668,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-vpczoneidentifier
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVPCZoneIdentifier() {
         return vPCZoneIdentifier;
     }
@@ -635,6 +677,7 @@ public class AutoScalingGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-vpczoneidentifier
      * 
      */
+    @JsonIgnore
     public void setVPCZoneIdentifier(List<CharSequence> vPCZoneIdentifier) {
         this.vPCZoneIdentifier = vPCZoneIdentifier;
     }

@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -88,6 +89,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketARN() {
         return bucketARN;
     }
@@ -96,6 +98,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn
      * 
      */
+    @JsonIgnore
     public void setBucketARN(CharSequence bucketARN) {
         this.bucketARN = bucketARN;
     }
@@ -111,6 +114,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchBufferingHints getBufferingHints() {
         return bufferingHints;
     }
@@ -121,6 +125,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
@@ -136,6 +141,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
@@ -146,6 +152,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
@@ -159,6 +166,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-compressionformat
      * 
      */
+    @JsonIgnore
     public CharSequence getCompressionFormat() {
         return compressionFormat;
     }
@@ -167,6 +175,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-compressionformat
      * 
      */
+    @JsonIgnore
     public void setCompressionFormat(CharSequence compressionFormat) {
         this.compressionFormat = compressionFormat;
     }
@@ -182,6 +191,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public EncryptionConfiguration getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
@@ -192,6 +202,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
@@ -205,6 +216,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -213,6 +225,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -226,6 +239,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -234,6 +248,7 @@ public class S3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

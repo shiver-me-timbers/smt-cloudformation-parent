@@ -1,6 +1,7 @@
 
 package aws.ecr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext
      * 
      */
+    @JsonIgnore
     public CharSequence getLifecyclePolicyText() {
         return lifecyclePolicyText;
     }
@@ -50,6 +52,7 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-lifecyclepolicytext
      * 
      */
+    @JsonIgnore
     public void setLifecyclePolicyText(CharSequence lifecyclePolicyText) {
         this.lifecyclePolicyText = lifecyclePolicyText;
     }
@@ -63,6 +66,7 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid
      * 
      */
+    @JsonIgnore
     public CharSequence getRegistryId() {
         return registryId;
     }
@@ -71,6 +75,7 @@ public class LifecyclePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html#cfn-ecr-repository-lifecyclepolicy-registryid
      * 
      */
+    @JsonIgnore
     public void setRegistryId(CharSequence registryId) {
         this.registryId = registryId;
     }

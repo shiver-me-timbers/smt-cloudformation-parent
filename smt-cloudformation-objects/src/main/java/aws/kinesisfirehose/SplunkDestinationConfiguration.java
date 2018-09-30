@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -108,6 +109,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
@@ -118,6 +120,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
@@ -131,6 +134,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecacknowledgmenttimeoutinseconds
      * 
      */
+    @JsonIgnore
     public Integer getHECAcknowledgmentTimeoutInSeconds() {
         return hECAcknowledgmentTimeoutInSeconds;
     }
@@ -139,6 +143,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecacknowledgmenttimeoutinseconds
      * 
      */
+    @JsonIgnore
     public void setHECAcknowledgmentTimeoutInSeconds(Integer hECAcknowledgmentTimeoutInSeconds) {
         this.hECAcknowledgmentTimeoutInSeconds = hECAcknowledgmentTimeoutInSeconds;
     }
@@ -152,6 +157,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpoint
      * 
      */
+    @JsonIgnore
     public CharSequence getHECEndpoint() {
         return hECEndpoint;
     }
@@ -160,6 +166,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpoint
      * 
      */
+    @JsonIgnore
     public void setHECEndpoint(CharSequence hECEndpoint) {
         this.hECEndpoint = hECEndpoint;
     }
@@ -173,6 +180,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpointtype
      * 
      */
+    @JsonIgnore
     public CharSequence getHECEndpointType() {
         return hECEndpointType;
     }
@@ -181,6 +189,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecendpointtype
      * 
      */
+    @JsonIgnore
     public void setHECEndpointType(CharSequence hECEndpointType) {
         this.hECEndpointType = hECEndpointType;
     }
@@ -194,6 +203,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hectoken
      * 
      */
+    @JsonIgnore
     public CharSequence getHECToken() {
         return hECToken;
     }
@@ -202,6 +212,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hectoken
      * 
      */
+    @JsonIgnore
     public void setHECToken(CharSequence hECToken) {
         this.hECToken = hECToken;
     }
@@ -217,6 +228,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public ProcessingConfiguration getProcessingConfiguration() {
         return processingConfiguration;
     }
@@ -227,6 +239,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
@@ -242,6 +255,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html
      * 
      */
+    @JsonIgnore
     public SplunkRetryOptions getRetryOptions() {
         return retryOptions;
     }
@@ -252,6 +266,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html
      * 
      */
+    @JsonIgnore
     public void setRetryOptions(SplunkRetryOptions retryOptions) {
         this.retryOptions = retryOptions;
     }
@@ -265,6 +280,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
@@ -273,6 +289,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }
@@ -288,6 +305,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public S3DestinationConfiguration getS3Configuration() {
         return s3Configuration;
     }
@@ -298,6 +316,7 @@ public class SplunkDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
         this.s3Configuration = s3Configuration;
     }

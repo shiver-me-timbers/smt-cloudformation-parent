@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class TracingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode
      * 
      */
+    @JsonIgnore
     public CharSequence getMode() {
         return mode;
     }
@@ -42,6 +44,7 @@ public class TracingConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode
      * 
      */
+    @JsonIgnore
     public void setMode(CharSequence mode) {
         this.mode = mode;
     }

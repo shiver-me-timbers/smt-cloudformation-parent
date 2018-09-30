@@ -1,6 +1,7 @@
 
 package aws.gamelift;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getBucket() {
         return bucket;
     }
@@ -58,6 +60,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket
      * 
      */
+    @JsonIgnore
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -71,6 +74,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key
      * 
      */
+    @JsonIgnore
     public CharSequence getKey() {
         return key;
     }
@@ -79,6 +83,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-key
      * 
      */
+    @JsonIgnore
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -92,6 +97,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -100,6 +106,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

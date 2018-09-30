@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -90,6 +91,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrIp() {
         return cidrIp;
     }
@@ -98,6 +100,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip
      * 
      */
+    @JsonIgnore
     public void setCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
     }
@@ -111,6 +114,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrIpv6() {
         return cidrIpv6;
     }
@@ -119,6 +123,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidripv6
      * 
      */
+    @JsonIgnore
     public void setCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
     }
@@ -132,6 +137,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -140,6 +146,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -153,6 +160,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-destinationprefixlistid
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationPrefixListId() {
         return destinationPrefixListId;
     }
@@ -161,6 +169,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-destinationprefixlistid
      * 
      */
+    @JsonIgnore
     public void setDestinationPrefixListId(CharSequence destinationPrefixListId) {
         this.destinationPrefixListId = destinationPrefixListId;
     }
@@ -174,6 +183,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-destsecgroupid
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationSecurityGroupId() {
         return destinationSecurityGroupId;
     }
@@ -182,6 +192,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-destsecgroupid
      * 
      */
+    @JsonIgnore
     public void setDestinationSecurityGroupId(CharSequence destinationSecurityGroupId) {
         this.destinationSecurityGroupId = destinationSecurityGroupId;
     }
@@ -195,6 +206,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport
      * 
      */
+    @JsonIgnore
     public Integer getFromPort() {
         return fromPort;
     }
@@ -203,6 +215,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-fromport
      * 
      */
+    @JsonIgnore
     public void setFromPort(Integer fromPort) {
         this.fromPort = fromPort;
     }
@@ -216,6 +229,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
      */
+    @JsonIgnore
     public CharSequence getIpProtocol() {
         return ipProtocol;
     }
@@ -224,6 +238,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-ipprotocol
      * 
      */
+    @JsonIgnore
     public void setIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
     }
@@ -237,6 +252,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport
      * 
      */
+    @JsonIgnore
     public Integer getToPort() {
         return toPort;
     }
@@ -245,6 +261,7 @@ public class Egress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-toport
      * 
      */
+    @JsonIgnore
     public void setToPort(Integer toPort) {
         this.toPort = toPort;
     }

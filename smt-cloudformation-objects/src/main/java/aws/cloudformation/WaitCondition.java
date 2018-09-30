@@ -1,6 +1,7 @@
 
 package aws.cloudformation;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
      * 
      */
+    @JsonIgnore
     public Integer getCount() {
         return count;
     }
@@ -58,6 +60,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
      * 
      */
+    @JsonIgnore
     public void setCount(Integer count) {
         this.count = count;
     }
@@ -71,6 +74,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
      * 
      */
+    @JsonIgnore
     public CharSequence getHandle() {
         return handle;
     }
@@ -79,6 +83,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
      * 
      */
+    @JsonIgnore
     public void setHandle(CharSequence handle) {
         this.handle = handle;
     }
@@ -92,6 +97,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
      * 
      */
+    @JsonIgnore
     public CharSequence getTimeout() {
         return timeout;
     }
@@ -100,6 +106,7 @@ public class WaitCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
      * 
      */
+    @JsonIgnore
     public void setTimeout(CharSequence timeout) {
         this.timeout = timeout;
     }

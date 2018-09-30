@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancing;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename
      * 
      */
+    @JsonIgnore
     public CharSequence getCookieName() {
         return cookieName;
     }
@@ -50,6 +52,7 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename
      * 
      */
+    @JsonIgnore
     public void setCookieName(CharSequence cookieName) {
         this.cookieName = cookieName;
     }
@@ -63,6 +66,7 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -71,6 +75,7 @@ public class AppCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-policyname
      * 
      */
+    @JsonIgnore
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }

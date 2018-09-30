@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class OnPremisesTagSetListObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagsetlistobject.html#cfn-codedeploy-deploymentgroup-onpremisestagsetlistobject-onpremisestaggroup
      * 
      */
+    @JsonIgnore
     public Set<TagFilter> getOnPremisesTagGroup() {
         return onPremisesTagGroup;
     }
@@ -46,6 +48,7 @@ public class OnPremisesTagSetListObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagsetlistobject.html#cfn-codedeploy-deploymentgroup-onpremisestagsetlistobject-onpremisestaggroup
      * 
      */
+    @JsonIgnore
     public void setOnPremisesTagGroup(Set<TagFilter> onPremisesTagGroup) {
         this.onPremisesTagGroup = onPremisesTagGroup;
     }

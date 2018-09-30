@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -72,6 +73,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
      * 
      */
+    @JsonIgnore
     public DeploymentCanarySettings getDeploymentCanarySettings() {
         return deploymentCanarySettings;
     }
@@ -82,6 +84,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
      * 
      */
+    @JsonIgnore
     public void setDeploymentCanarySettings(DeploymentCanarySettings deploymentCanarySettings) {
         this.deploymentCanarySettings = deploymentCanarySettings;
     }
@@ -95,6 +98,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -103,6 +107,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -116,6 +121,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
      * 
      */
+    @JsonIgnore
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -124,6 +130,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
      * 
      */
+    @JsonIgnore
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -139,6 +146,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
+    @JsonIgnore
     public StageDescription getStageDescription() {
         return stageDescription;
     }
@@ -149,6 +157,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
+    @JsonIgnore
     public void setStageDescription(StageDescription stageDescription) {
         this.stageDescription = stageDescription;
     }
@@ -162,6 +171,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
      */
+    @JsonIgnore
     public CharSequence getStageName() {
         return stageName;
     }
@@ -170,6 +180,7 @@ public class Deployment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
      */
+    @JsonIgnore
     public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }

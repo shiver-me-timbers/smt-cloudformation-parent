@@ -3,6 +3,7 @@ package aws.cloudtrail;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources
      * 
      */
+    @JsonIgnore
     public Set<DataResource> getDataResources() {
         return dataResources;
     }
@@ -62,6 +64,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources
      * 
      */
+    @JsonIgnore
     public void setDataResources(Set<DataResource> dataResources) {
         this.dataResources = dataResources;
     }
@@ -75,6 +78,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-includemanagementevents
      * 
      */
+    @JsonIgnore
     public Boolean getIncludeManagementEvents() {
         return includeManagementEvents;
     }
@@ -83,6 +87,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-includemanagementevents
      * 
      */
+    @JsonIgnore
     public void setIncludeManagementEvents(Boolean includeManagementEvents) {
         this.includeManagementEvents = includeManagementEvents;
     }
@@ -96,6 +101,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-readwritetype
      * 
      */
+    @JsonIgnore
     public CharSequence getReadWriteType() {
         return readWriteType;
     }
@@ -104,6 +110,7 @@ public class EventSelector {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-readwritetype
      * 
      */
+    @JsonIgnore
     public void setReadWriteType(CharSequence readWriteType) {
         this.readWriteType = readWriteType;
     }

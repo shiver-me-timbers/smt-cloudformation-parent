@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport
      * 
      */
+    @JsonIgnore
     public Integer getContainerPort() {
         return containerPort;
     }
@@ -58,6 +60,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport
      * 
      */
+    @JsonIgnore
     public void setContainerPort(Integer containerPort) {
         this.containerPort = containerPort;
     }
@@ -71,6 +74,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-readonly
      * 
      */
+    @JsonIgnore
     public Integer getHostPort() {
         return hostPort;
     }
@@ -79,6 +83,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-readonly
      * 
      */
+    @JsonIgnore
     public void setHostPort(Integer hostPort) {
         this.hostPort = hostPort;
     }
@@ -92,6 +97,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-sourcevolume
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -100,6 +106,7 @@ public class PortMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-sourcevolume
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }

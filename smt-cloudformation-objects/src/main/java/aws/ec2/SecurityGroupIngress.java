@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -114,6 +115,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-cidrip
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrIp() {
         return cidrIp;
     }
@@ -122,6 +124,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-cidrip
      * 
      */
+    @JsonIgnore
     public void setCidrIp(CharSequence cidrIp) {
         this.cidrIp = cidrIp;
     }
@@ -135,6 +138,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-cidripv6
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrIpv6() {
         return cidrIpv6;
     }
@@ -143,6 +147,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-cidripv6
      * 
      */
+    @JsonIgnore
     public void setCidrIpv6(CharSequence cidrIpv6) {
         this.cidrIpv6 = cidrIpv6;
     }
@@ -156,6 +161,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -164,6 +170,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -177,6 +184,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-fromport
      * 
      */
+    @JsonIgnore
     public Integer getFromPort() {
         return fromPort;
     }
@@ -185,6 +193,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-fromport
      * 
      */
+    @JsonIgnore
     public void setFromPort(Integer fromPort) {
         this.fromPort = fromPort;
     }
@@ -198,6 +207,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-groupid
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupId() {
         return groupId;
     }
@@ -206,6 +216,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-groupid
      * 
      */
+    @JsonIgnore
     public void setGroupId(CharSequence groupId) {
         this.groupId = groupId;
     }
@@ -219,6 +230,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-groupname
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -227,6 +239,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-groupname
      * 
      */
+    @JsonIgnore
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -240,6 +253,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-ipprotocol
      * 
      */
+    @JsonIgnore
     public CharSequence getIpProtocol() {
         return ipProtocol;
     }
@@ -248,6 +262,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-ipprotocol
      * 
      */
+    @JsonIgnore
     public void setIpProtocol(CharSequence ipProtocol) {
         this.ipProtocol = ipProtocol;
     }
@@ -261,6 +276,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupid
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceSecurityGroupId() {
         return sourceSecurityGroupId;
     }
@@ -269,6 +285,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupid
      * 
      */
+    @JsonIgnore
     public void setSourceSecurityGroupId(CharSequence sourceSecurityGroupId) {
         this.sourceSecurityGroupId = sourceSecurityGroupId;
     }
@@ -282,6 +299,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceSecurityGroupName() {
         return sourceSecurityGroupName;
     }
@@ -290,6 +308,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupname
      * 
      */
+    @JsonIgnore
     public void setSourceSecurityGroupName(CharSequence sourceSecurityGroupName) {
         this.sourceSecurityGroupName = sourceSecurityGroupName;
     }
@@ -303,6 +322,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupownerid
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceSecurityGroupOwnerId() {
         return sourceSecurityGroupOwnerId;
     }
@@ -311,6 +331,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupownerid
      * 
      */
+    @JsonIgnore
     public void setSourceSecurityGroupOwnerId(CharSequence sourceSecurityGroupOwnerId) {
         this.sourceSecurityGroupOwnerId = sourceSecurityGroupOwnerId;
     }
@@ -324,6 +345,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-toport
      * 
      */
+    @JsonIgnore
     public Integer getToPort() {
         return toPort;
     }
@@ -332,6 +354,7 @@ public class SecurityGroupIngress {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-toport
      * 
      */
+    @JsonIgnore
     public void setToPort(Integer toPort) {
         this.toPort = toPort;
     }

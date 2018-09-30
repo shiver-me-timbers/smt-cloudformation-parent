@@ -1,6 +1,7 @@
 
 package aws.iam;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomSuffix() {
         return customSuffix;
     }
@@ -58,6 +60,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
      * 
      */
+    @JsonIgnore
     public void setCustomSuffix(CharSequence customSuffix) {
         this.customSuffix = customSuffix;
     }
@@ -71,6 +74,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -79,6 +83,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -92,6 +97,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
      * 
      */
+    @JsonIgnore
     public CharSequence getAWSServiceName() {
         return aWSServiceName;
     }
@@ -100,6 +106,7 @@ public class ServiceLinkedRole {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
      * 
      */
+    @JsonIgnore
     public void setAWSServiceName(CharSequence aWSServiceName) {
         this.aWSServiceName = aWSServiceName;
     }

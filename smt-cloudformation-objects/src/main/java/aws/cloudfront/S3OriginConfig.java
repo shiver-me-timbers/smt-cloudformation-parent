@@ -1,6 +1,7 @@
 
 package aws.cloudfront;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class S3OriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity
      * 
      */
+    @JsonIgnore
     public CharSequence getOriginAccessIdentity() {
         return originAccessIdentity;
     }
@@ -42,6 +44,7 @@ public class S3OriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity
      * 
      */
+    @JsonIgnore
     public void setOriginAccessIdentity(CharSequence originAccessIdentity) {
         this.originAccessIdentity = originAccessIdentity;
     }

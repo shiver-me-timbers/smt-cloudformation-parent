@@ -4,6 +4,7 @@ package aws.autoscaling;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.autoscalingplans.TargetTrackingConfiguration;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -113,6 +114,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-adjustmenttype
      * 
      */
+    @JsonIgnore
     public CharSequence getAdjustmentType() {
         return adjustmentType;
     }
@@ -121,6 +123,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-adjustmenttype
      * 
      */
+    @JsonIgnore
     public void setAdjustmentType(CharSequence adjustmentType) {
         this.adjustmentType = adjustmentType;
     }
@@ -134,6 +137,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
@@ -142,6 +146,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
@@ -155,6 +160,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-cooldown
      * 
      */
+    @JsonIgnore
     public CharSequence getCooldown() {
         return cooldown;
     }
@@ -163,6 +169,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-cooldown
      * 
      */
+    @JsonIgnore
     public void setCooldown(CharSequence cooldown) {
         this.cooldown = cooldown;
     }
@@ -176,6 +183,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-estimatedinstancewarmup
      * 
      */
+    @JsonIgnore
     public Integer getEstimatedInstanceWarmup() {
         return estimatedInstanceWarmup;
     }
@@ -184,6 +192,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-estimatedinstancewarmup
      * 
      */
+    @JsonIgnore
     public void setEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
     }
@@ -197,6 +206,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-metricaggregationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricAggregationType() {
         return metricAggregationType;
     }
@@ -205,6 +215,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-metricaggregationtype
      * 
      */
+    @JsonIgnore
     public void setMetricAggregationType(CharSequence metricAggregationType) {
         this.metricAggregationType = metricAggregationType;
     }
@@ -218,6 +229,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-minadjustmentmagnitude
      * 
      */
+    @JsonIgnore
     public Integer getMinAdjustmentMagnitude() {
         return minAdjustmentMagnitude;
     }
@@ -226,6 +238,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-minadjustmentmagnitude
      * 
      */
+    @JsonIgnore
     public void setMinAdjustmentMagnitude(Integer minAdjustmentMagnitude) {
         this.minAdjustmentMagnitude = minAdjustmentMagnitude;
     }
@@ -239,6 +252,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-policytype
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyType() {
         return policyType;
     }
@@ -247,6 +261,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-policytype
      * 
      */
+    @JsonIgnore
     public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }
@@ -260,6 +275,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-scalingadjustment
      * 
      */
+    @JsonIgnore
     public Integer getScalingAdjustment() {
         return scalingAdjustment;
     }
@@ -268,6 +284,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-scalingadjustment
      * 
      */
+    @JsonIgnore
     public void setScalingAdjustment(Integer scalingAdjustment) {
         this.scalingAdjustment = scalingAdjustment;
     }
@@ -281,6 +298,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-stepadjustments
      * 
      */
+    @JsonIgnore
     public Set<StepAdjustment> getStepAdjustments() {
         return stepAdjustments;
     }
@@ -289,6 +307,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-stepadjustments
      * 
      */
+    @JsonIgnore
     public void setStepAdjustments(Set<StepAdjustment> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
     }
@@ -304,6 +323,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
      * 
      */
+    @JsonIgnore
     public TargetTrackingConfiguration getTargetTrackingConfiguration() {
         return targetTrackingConfiguration;
     }
@@ -314,6 +334,7 @@ public class ScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setTargetTrackingConfiguration(TargetTrackingConfiguration targetTrackingConfiguration) {
         this.targetTrackingConfiguration = targetTrackingConfiguration;
     }

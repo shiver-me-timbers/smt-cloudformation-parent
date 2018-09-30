@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionevents
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getConnectionEvents() {
         return connectionEvents;
     }
@@ -68,6 +70,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionevents
      * 
      */
+    @JsonIgnore
     public void setConnectionEvents(List<CharSequence> connectionEvents) {
         this.connectionEvents = connectionEvents;
     }
@@ -81,6 +84,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-vpcendpointid
      * 
      */
+    @JsonIgnore
     public CharSequence getVPCEndpointId() {
         return vPCEndpointId;
     }
@@ -89,6 +93,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-vpcendpointid
      * 
      */
+    @JsonIgnore
     public void setVPCEndpointId(CharSequence vPCEndpointId) {
         this.vPCEndpointId = vPCEndpointId;
     }
@@ -102,6 +107,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-serviceid
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceId() {
         return serviceId;
     }
@@ -110,6 +116,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-serviceid
      * 
      */
+    @JsonIgnore
     public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }
@@ -123,6 +130,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionnotificationarn
      * 
      */
+    @JsonIgnore
     public CharSequence getConnectionNotificationArn() {
         return connectionNotificationArn;
     }
@@ -131,6 +139,7 @@ public class VPCEndpointConnectionNotification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionnotificationarn
      * 
      */
+    @JsonIgnore
     public void setConnectionNotificationArn(CharSequence connectionNotificationArn) {
         this.connectionNotificationArn = connectionNotificationArn;
     }

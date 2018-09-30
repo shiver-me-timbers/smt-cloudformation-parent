@@ -1,6 +1,7 @@
 
 package aws.dax;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class SSESpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html#cfn-dax-cluster-ssespecification-sseenabled
      * 
      */
+    @JsonIgnore
     public Boolean getSSEEnabled() {
         return sSEEnabled;
     }
@@ -42,6 +44,7 @@ public class SSESpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html#cfn-dax-cluster-ssespecification-sseenabled
      * 
      */
+    @JsonIgnore
     public void setSSEEnabled(Boolean sSEEnabled) {
         this.sSEEnabled = sSEEnabled;
     }

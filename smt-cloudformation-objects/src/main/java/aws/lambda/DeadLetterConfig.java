@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class DeadLetterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html#cfn-lambda-function-deadletterconfig-targetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetArn() {
         return targetArn;
     }
@@ -42,6 +44,7 @@ public class DeadLetterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html#cfn-lambda-function-deadletterconfig-targetarn
      * 
      */
+    @JsonIgnore
     public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }

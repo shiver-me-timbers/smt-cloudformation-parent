@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -65,6 +66,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress
      * 
      */
+    @JsonIgnore
     public Set<Ingress> getDBSecurityGroupIngress() {
         return dBSecurityGroupIngress;
     }
@@ -73,6 +75,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress
      * 
      */
+    @JsonIgnore
     public void setDBSecurityGroupIngress(Set<Ingress> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
     }
@@ -86,6 +89,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getEC2VpcId() {
         return eC2VpcId;
     }
@@ -94,6 +98,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
      */
+    @JsonIgnore
     public void setEC2VpcId(CharSequence eC2VpcId) {
         this.eC2VpcId = eC2VpcId;
     }
@@ -107,6 +112,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupDescription() {
         return groupDescription;
     }
@@ -115,6 +121,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-groupdescription
      * 
      */
+    @JsonIgnore
     public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
@@ -128,6 +135,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -136,6 +144,7 @@ public class DBSecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

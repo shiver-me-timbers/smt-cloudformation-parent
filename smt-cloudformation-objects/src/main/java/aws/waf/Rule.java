@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-metricname
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -62,6 +64,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-metricname
      * 
      */
+    @JsonIgnore
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -75,6 +78,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -83,6 +87,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -96,6 +101,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-predicates
      * 
      */
+    @JsonIgnore
     public Set<Predicate> getPredicates() {
         return predicates;
     }
@@ -104,6 +110,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-predicates
      * 
      */
+    @JsonIgnore
     public void setPredicates(Set<Predicate> predicates) {
         this.predicates = predicates;
     }

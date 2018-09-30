@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class ApplicationOutput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -52,6 +54,7 @@ public class ApplicationOutput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname
      * 
      */
+    @JsonIgnore
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -67,6 +70,7 @@ public class ApplicationOutput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html
      * 
      */
+    @JsonIgnore
     public KinesisFirehoseOutput getOutput() {
         return output;
     }
@@ -77,6 +81,7 @@ public class ApplicationOutput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html
      * 
      */
+    @JsonIgnore
     public void setOutput(KinesisFirehoseOutput output) {
         this.output = output;
     }

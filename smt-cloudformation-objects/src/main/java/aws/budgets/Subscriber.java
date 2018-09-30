@@ -1,6 +1,7 @@
 
 package aws.budgets;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getSubscriptionType() {
         return subscriptionType;
     }
@@ -50,6 +52,7 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-subscriptiontype
      * 
      */
+    @JsonIgnore
     public void setSubscriptionType(CharSequence subscriptionType) {
         this.subscriptionType = subscriptionType;
     }
@@ -63,6 +66,7 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address
      * 
      */
+    @JsonIgnore
     public CharSequence getAddress() {
         return address;
     }
@@ -71,6 +75,7 @@ public class Subscriber {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-subscriber.html#cfn-budgets-budget-subscriber-address
      * 
      */
+    @JsonIgnore
     public void setAddress(CharSequence address) {
         this.address = address;
     }

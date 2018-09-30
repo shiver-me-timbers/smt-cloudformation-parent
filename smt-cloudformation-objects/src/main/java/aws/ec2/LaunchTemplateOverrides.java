@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -74,6 +76,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -87,6 +90,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -95,6 +99,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-instancetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -108,6 +113,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-spotprice
      * 
      */
+    @JsonIgnore
     public CharSequence getSpotPrice() {
         return spotPrice;
     }
@@ -116,6 +122,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-spotprice
      * 
      */
+    @JsonIgnore
     public void setSpotPrice(CharSequence spotPrice) {
         this.spotPrice = spotPrice;
     }
@@ -129,6 +136,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -137,6 +145,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -150,6 +159,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-weightedcapacity
      * 
      */
+    @JsonIgnore
     public Double getWeightedCapacity() {
         return weightedCapacity;
     }
@@ -158,6 +168,7 @@ public class LaunchTemplateOverrides {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-weightedcapacity
      * 
      */
+    @JsonIgnore
     public void setWeightedCapacity(Double weightedCapacity) {
         this.weightedCapacity = weightedCapacity;
     }

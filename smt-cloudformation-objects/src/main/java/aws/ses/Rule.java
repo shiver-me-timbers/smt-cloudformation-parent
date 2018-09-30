@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -76,6 +77,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-scanenabled
      * 
      */
+    @JsonIgnore
     public Boolean getScanEnabled() {
         return scanEnabled;
     }
@@ -84,6 +86,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-scanenabled
      * 
      */
+    @JsonIgnore
     public void setScanEnabled(Boolean scanEnabled) {
         this.scanEnabled = scanEnabled;
     }
@@ -97,6 +100,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-recipients
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getRecipients() {
         return recipients;
     }
@@ -105,6 +109,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-recipients
      * 
      */
+    @JsonIgnore
     public void setRecipients(List<CharSequence> recipients) {
         this.recipients = recipients;
     }
@@ -118,6 +123,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-actions
      * 
      */
+    @JsonIgnore
     public List<BounceAction> getActions() {
         return actions;
     }
@@ -126,6 +132,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-actions
      * 
      */
+    @JsonIgnore
     public void setActions(List<BounceAction> actions) {
         this.actions = actions;
     }
@@ -139,6 +146,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -147,6 +155,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -160,6 +169,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -168,6 +178,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -181,6 +192,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-tlspolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getTlsPolicy() {
         return tlsPolicy;
     }
@@ -189,6 +201,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-tlspolicy
      * 
      */
+    @JsonIgnore
     public void setTlsPolicy(CharSequence tlsPolicy) {
         this.tlsPolicy = tlsPolicy;
     }

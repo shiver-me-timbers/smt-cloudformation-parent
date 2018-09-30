@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -47,6 +48,7 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist
      * 
      */
+    @JsonIgnore
     public Set<ELBInfo> getElbInfoList() {
         return elbInfoList;
     }
@@ -55,6 +57,7 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-elbinfolist
      * 
      */
+    @JsonIgnore
     public void setElbInfoList(Set<ELBInfo> elbInfoList) {
         this.elbInfoList = elbInfoList;
     }
@@ -68,6 +71,7 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist
      * 
      */
+    @JsonIgnore
     public Set<TargetGroupInfo> getTargetGroupInfoList() {
         return targetGroupInfoList;
     }
@@ -76,6 +80,7 @@ public class LoadBalancerInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo-targetgroupinfolist
      * 
      */
+    @JsonIgnore
     public void setTargetGroupInfoList(Set<TargetGroupInfo> targetGroupInfoList) {
         this.targetGroupInfoList = targetGroupInfoList;
     }

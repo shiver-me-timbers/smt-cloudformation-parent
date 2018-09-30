@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn
      * 
      */
+    @JsonIgnore
     public CharSequence getLambdaFunctionArn() {
         return lambdaFunctionArn;
     }
@@ -42,6 +44,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html#cfn-appsync-datasource-lambdaconfig-lambdafunctionarn
      * 
      */
+    @JsonIgnore
     public void setLambdaFunctionArn(CharSequence lambdaFunctionArn) {
         this.lambdaFunctionArn = lambdaFunctionArn;
     }

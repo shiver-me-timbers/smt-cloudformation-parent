@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly
      * 
      */
+    @JsonIgnore
     public Boolean getReadOnly() {
         return readOnly;
     }
@@ -58,6 +60,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly
      * 
      */
+    @JsonIgnore
     public void setReadOnly(Boolean readOnly) {
         this.readOnly = readOnly;
     }
@@ -71,6 +74,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceVolume() {
         return sourceVolume;
     }
@@ -79,6 +83,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-sourcevolume
      * 
      */
+    @JsonIgnore
     public void setSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
     }
@@ -92,6 +97,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -100,6 +106,7 @@ public class MountPoints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-containerpath
      * 
      */
+    @JsonIgnore
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }

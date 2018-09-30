@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyId() {
         return keyId;
     }
@@ -58,6 +60,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keyid
      * 
      */
+    @JsonIgnore
     public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }
@@ -71,6 +74,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyType() {
         return keyType;
     }
@@ -79,6 +83,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-keytype
      * 
      */
+    @JsonIgnore
     public void setKeyType(CharSequence keyType) {
         this.keyType = keyType;
     }
@@ -92,6 +97,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid
      * 
      */
+    @JsonIgnore
     public CharSequence getUsagePlanId() {
         return usagePlanId;
     }
@@ -100,6 +106,7 @@ public class UsagePlanKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplankey.html#cfn-apigateway-usageplankey-usageplanid
      * 
      */
+    @JsonIgnore
     public void setUsagePlanId(CharSequence usagePlanId) {
         this.usagePlanId = usagePlanId;
     }

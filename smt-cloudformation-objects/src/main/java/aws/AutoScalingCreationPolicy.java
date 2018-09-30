@@ -1,6 +1,7 @@
 
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -17,10 +18,12 @@ public class AutoScalingCreationPolicy {
     @JsonProperty("MinSuccessfulInstancesPercent")
     private Integer minSuccessfulInstancesPercent;
 
+    @JsonIgnore
     public Integer getMinSuccessfulInstancesPercent() {
         return minSuccessfulInstancesPercent;
     }
 
+    @JsonIgnore
     public void setMinSuccessfulInstancesPercent(Integer minSuccessfulInstancesPercent) {
         this.minSuccessfulInstancesPercent = minSuccessfulInstancesPercent;
     }

@@ -3,6 +3,7 @@ package aws.datapipeline;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields
      * 
      */
+    @JsonIgnore
     public List<Field> getFields() {
         return fields;
     }
@@ -60,6 +62,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields
      * 
      */
+    @JsonIgnore
     public void setFields(List<Field> fields) {
         this.fields = fields;
     }
@@ -73,6 +76,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -81,6 +85,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -94,6 +99,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -102,6 +108,7 @@ public class PipelineObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -1,6 +1,7 @@
 
 package aws.eks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-version
      * 
      */
+    @JsonIgnore
     public CharSequence getVersion() {
         return version;
     }
@@ -68,6 +70,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-version
      * 
      */
+    @JsonIgnore
     public void setVersion(CharSequence version) {
         this.version = version;
     }
@@ -81,6 +84,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -89,6 +93,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -104,6 +109,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html
      * 
      */
+    @JsonIgnore
     public ResourcesVpcConfig getResourcesVpcConfig() {
         return resourcesVpcConfig;
     }
@@ -114,6 +120,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html
      * 
      */
+    @JsonIgnore
     public void setResourcesVpcConfig(ResourcesVpcConfig resourcesVpcConfig) {
         this.resourcesVpcConfig = resourcesVpcConfig;
     }
@@ -127,6 +134,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -135,6 +143,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-mapping
      * 
      */
+    @JsonIgnore
     public CharSequence getMapping() {
         return mapping;
     }
@@ -58,6 +60,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-mapping
      * 
      */
+    @JsonIgnore
     public void setMapping(CharSequence mapping) {
         this.mapping = mapping;
     }
@@ -71,6 +74,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-sqltype
      * 
      */
+    @JsonIgnore
     public CharSequence getSqlType() {
         return sqlType;
     }
@@ -79,6 +83,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-sqltype
      * 
      */
+    @JsonIgnore
     public void setSqlType(CharSequence sqlType) {
         this.sqlType = sqlType;
     }
@@ -92,6 +97,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -100,6 +106,7 @@ public class RecordColumn {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

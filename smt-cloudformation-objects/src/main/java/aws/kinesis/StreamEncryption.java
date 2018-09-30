@@ -1,6 +1,7 @@
 
 package aws.kinesis;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getEncryptionType() {
         return encryptionType;
     }
@@ -50,6 +52,7 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-encryptiontype
      * 
      */
+    @JsonIgnore
     public void setEncryptionType(CharSequence encryptionType) {
         this.encryptionType = encryptionType;
     }
@@ -63,6 +66,7 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyId() {
         return keyId;
     }
@@ -71,6 +75,7 @@ public class StreamEncryption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html#cfn-kinesis-stream-streamencryption-keyid
      * 
      */
+    @JsonIgnore
     public void setKeyId(CharSequence keyId) {
         this.keyId = keyId;
     }

@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
+    @JsonIgnore
     public XMLClassifier getXMLClassifier() {
         return xMLClassifier;
     }
@@ -68,6 +70,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
+    @JsonIgnore
     public void setXMLClassifier(XMLClassifier xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
     }
@@ -83,6 +86,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
+    @JsonIgnore
     public JsonClassifier getJsonClassifier() {
         return jsonClassifier;
     }
@@ -93,6 +97,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
+    @JsonIgnore
     public void setJsonClassifier(JsonClassifier jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
     }
@@ -108,6 +113,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
+    @JsonIgnore
     public GrokClassifier getGrokClassifier() {
         return grokClassifier;
     }
@@ -118,6 +124,7 @@ public class Classifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
+    @JsonIgnore
     public void setGrokClassifier(GrokClassifier grokClassifier) {
         this.grokClassifier = grokClassifier;
     }

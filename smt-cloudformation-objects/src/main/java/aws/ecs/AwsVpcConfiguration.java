@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -55,6 +56,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
      * 
      */
+    @JsonIgnore
     public CharSequence getAssignPublicIp() {
         return assignPublicIp;
     }
@@ -63,6 +65,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
      * 
      */
+    @JsonIgnore
     public void setAssignPublicIp(CharSequence assignPublicIp) {
         this.assignPublicIp = assignPublicIp;
     }
@@ -76,6 +79,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -84,6 +88,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
      * 
      */
+    @JsonIgnore
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -97,6 +102,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSubnets() {
         return subnets;
     }
@@ -105,6 +111,7 @@ public class AwsVpcConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
      * 
      */
+    @JsonIgnore
     public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }

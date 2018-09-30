@@ -18,6 +18,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verifyZeroInteractions;
 import static shiver.me.timbers.data.random.RandomEnums.someEnum;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
@@ -102,7 +103,7 @@ public class CloudformationAnnotatorTest {
     }
 
     @Test
-    public void Will_not_annotate_getters_or_setters() {
+    public void Will_ignore_getters_or_setters() {
 
         // Given
         final JMethod method = mock(JMethod.class);
@@ -112,6 +113,6 @@ public class CloudformationAnnotatorTest {
         annotator.propertySetter(method, someString());
 
         // Then
-        verifyZeroInteractions(method);
+        then(method).should(times(2)).annotate(JsonIgnore.class);
     }
 }

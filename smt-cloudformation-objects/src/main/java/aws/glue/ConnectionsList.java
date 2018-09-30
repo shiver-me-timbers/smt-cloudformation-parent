@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -36,6 +37,7 @@ public class ConnectionsList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getConnections() {
         return connections;
     }
@@ -44,6 +46,7 @@ public class ConnectionsList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections
      * 
      */
+    @JsonIgnore
     public void setConnections(List<CharSequence> connections) {
         this.connections = connections;
     }

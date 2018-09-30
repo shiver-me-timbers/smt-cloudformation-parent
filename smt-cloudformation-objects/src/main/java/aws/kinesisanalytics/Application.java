@@ -3,6 +3,7 @@ package aws.kinesisanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationname
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -68,6 +70,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationname
      * 
      */
+    @JsonIgnore
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -81,6 +84,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs
      * 
      */
+    @JsonIgnore
     public List<KinesisStreamsInput> getInputs() {
         return inputs;
     }
@@ -89,6 +93,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs
      * 
      */
+    @JsonIgnore
     public void setInputs(List<KinesisStreamsInput> inputs) {
         this.inputs = inputs;
     }
@@ -102,6 +107,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationDescription() {
         return applicationDescription;
     }
@@ -110,6 +116,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription
      * 
      */
+    @JsonIgnore
     public void setApplicationDescription(CharSequence applicationDescription) {
         this.applicationDescription = applicationDescription;
     }
@@ -123,6 +130,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationcode
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationCode() {
         return applicationCode;
     }
@@ -131,6 +139,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationcode
      * 
      */
+    @JsonIgnore
     public void setApplicationCode(CharSequence applicationCode) {
         this.applicationCode = applicationCode;
     }

@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -47,6 +48,7 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAdd() {
         return add;
     }
@@ -55,6 +57,7 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add
      * 
      */
+    @JsonIgnore
     public void setAdd(Set<CharSequence> add) {
         this.add = add;
     }
@@ -68,6 +71,7 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDrop() {
         return drop;
     }
@@ -76,6 +80,7 @@ public class KernelCapabilities {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-drop
      * 
      */
+    @JsonIgnore
     public void setDrop(Set<CharSequence> drop) {
         this.drop = drop;
     }

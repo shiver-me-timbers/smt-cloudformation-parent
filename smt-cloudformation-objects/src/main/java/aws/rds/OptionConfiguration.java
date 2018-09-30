@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -80,6 +81,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getDBSecurityGroupMemberships() {
         return dBSecurityGroupMemberships;
     }
@@ -88,6 +90,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships
      * 
      */
+    @JsonIgnore
     public void setDBSecurityGroupMemberships(List<CharSequence> dBSecurityGroupMemberships) {
         this.dBSecurityGroupMemberships = dBSecurityGroupMemberships;
     }
@@ -101,6 +104,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname
      * 
      */
+    @JsonIgnore
     public CharSequence getOptionName() {
         return optionName;
     }
@@ -109,6 +113,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname
      * 
      */
+    @JsonIgnore
     public void setOptionName(CharSequence optionName) {
         this.optionName = optionName;
     }
@@ -122,6 +127,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings
      * 
      */
+    @JsonIgnore
     public Set<OptionSetting> getOptionSettings() {
         return optionSettings;
     }
@@ -130,6 +136,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings
      * 
      */
+    @JsonIgnore
     public void setOptionSettings(Set<OptionSetting> optionSettings) {
         this.optionSettings = optionSettings;
     }
@@ -143,6 +150,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion
      * 
      */
+    @JsonIgnore
     public CharSequence getOptionVersion() {
         return optionVersion;
     }
@@ -151,6 +159,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion
      * 
      */
+    @JsonIgnore
     public void setOptionVersion(CharSequence optionVersion) {
         this.optionVersion = optionVersion;
     }
@@ -164,6 +173,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -172,6 +182,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -185,6 +196,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-vpcsecuritygroupmemberships
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVpcSecurityGroupMemberships() {
         return vpcSecurityGroupMemberships;
     }
@@ -193,6 +205,7 @@ public class OptionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-vpcsecuritygroupmemberships
      * 
      */
+    @JsonIgnore
     public void setVpcSecurityGroupMemberships(List<CharSequence> vpcSecurityGroupMemberships) {
         this.vpcSecurityGroupMemberships = vpcSecurityGroupMemberships;
     }

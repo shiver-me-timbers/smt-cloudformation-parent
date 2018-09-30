@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html
      * 
      */
+    @JsonIgnore
     public MaxAgeRule getMaxAgeRule() {
         return maxAgeRule;
     }
@@ -58,6 +60,7 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html
      * 
      */
+    @JsonIgnore
     public void setMaxAgeRule(MaxAgeRule maxAgeRule) {
         this.maxAgeRule = maxAgeRule;
     }
@@ -73,6 +76,7 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html
      * 
      */
+    @JsonIgnore
     public MaxCountRule getMaxCountRule() {
         return maxCountRule;
     }
@@ -83,6 +87,7 @@ public class ApplicationVersionLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html
      * 
      */
+    @JsonIgnore
     public void setMaxCountRule(MaxCountRule maxCountRule) {
         this.maxCountRule = maxCountRule;
     }

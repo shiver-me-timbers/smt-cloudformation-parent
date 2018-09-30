@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -76,6 +77,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originreadtimeout
      * 
      */
+    @JsonIgnore
     public Integer getOriginReadTimeout() {
         return originReadTimeout;
     }
@@ -84,6 +86,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originreadtimeout
      * 
      */
+    @JsonIgnore
     public void setOriginReadTimeout(Integer originReadTimeout) {
         this.originReadTimeout = originReadTimeout;
     }
@@ -97,6 +100,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpsport
      * 
      */
+    @JsonIgnore
     public Integer getHTTPSPort() {
         return hTTPSPort;
     }
@@ -105,6 +109,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpsport
      * 
      */
+    @JsonIgnore
     public void setHTTPSPort(Integer hTTPSPort) {
         this.hTTPSPort = hTTPSPort;
     }
@@ -118,6 +123,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout
      * 
      */
+    @JsonIgnore
     public Integer getOriginKeepaliveTimeout() {
         return originKeepaliveTimeout;
     }
@@ -126,6 +132,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originkeepalivetimeout
      * 
      */
+    @JsonIgnore
     public void setOriginKeepaliveTimeout(Integer originKeepaliveTimeout) {
         this.originKeepaliveTimeout = originKeepaliveTimeout;
     }
@@ -139,6 +146,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originsslprotocols
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getOriginSSLProtocols() {
         return originSSLProtocols;
     }
@@ -147,6 +155,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originsslprotocols
      * 
      */
+    @JsonIgnore
     public void setOriginSSLProtocols(List<CharSequence> originSSLProtocols) {
         this.originSSLProtocols = originSSLProtocols;
     }
@@ -160,6 +169,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpport
      * 
      */
+    @JsonIgnore
     public Integer getHTTPPort() {
         return hTTPPort;
     }
@@ -168,6 +178,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-httpport
      * 
      */
+    @JsonIgnore
     public void setHTTPPort(Integer hTTPPort) {
         this.hTTPPort = hTTPPort;
     }
@@ -181,6 +192,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originprotocolpolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getOriginProtocolPolicy() {
         return originProtocolPolicy;
     }
@@ -189,6 +201,7 @@ public class CustomOriginConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html#cfn-cloudfront-distribution-customoriginconfig-originprotocolpolicy
      * 
      */
+    @JsonIgnore
     public void setOriginProtocolPolicy(CharSequence originProtocolPolicy) {
         this.originProtocolPolicy = originProtocolPolicy;
     }

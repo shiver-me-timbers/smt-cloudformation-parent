@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-issuer
      * 
      */
+    @JsonIgnore
     public CharSequence getIssuer() {
         return issuer;
     }
@@ -66,6 +68,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-issuer
      * 
      */
+    @JsonIgnore
     public void setIssuer(CharSequence issuer) {
         this.issuer = issuer;
     }
@@ -79,6 +82,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-clientid
      * 
      */
+    @JsonIgnore
     public CharSequence getClientId() {
         return clientId;
     }
@@ -87,6 +91,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-clientid
      * 
      */
+    @JsonIgnore
     public void setClientId(CharSequence clientId) {
         this.clientId = clientId;
     }
@@ -100,6 +105,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-authttl
      * 
      */
+    @JsonIgnore
     public Double getAuthTTL() {
         return authTTL;
     }
@@ -108,6 +114,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-authttl
      * 
      */
+    @JsonIgnore
     public void setAuthTTL(Double authTTL) {
         this.authTTL = authTTL;
     }
@@ -121,6 +128,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-iatttl
      * 
      */
+    @JsonIgnore
     public Double getIatTTL() {
         return iatTTL;
     }
@@ -129,6 +137,7 @@ public class OpenIDConnectConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html#cfn-appsync-graphqlapi-openidconnectconfig-iatttl
      * 
      */
+    @JsonIgnore
     public void setIatTTL(Double iatTTL) {
         this.iatTTL = iatTTL;
     }

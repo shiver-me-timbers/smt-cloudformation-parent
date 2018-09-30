@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class ProjectTriggers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook
      * 
      */
+    @JsonIgnore
     public Boolean getWebhook() {
         return webhook;
     }
@@ -42,6 +44,7 @@ public class ProjectTriggers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook
      * 
      */
+    @JsonIgnore
     public void setWebhook(Boolean webhook) {
         this.webhook = webhook;
     }

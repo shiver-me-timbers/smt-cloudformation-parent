@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class ParameterValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getParameterValues() {
         return parameterValues;
     }
@@ -46,6 +48,7 @@ public class ParameterValues {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues
      * 
      */
+    @JsonIgnore
     public void setParameterValues(Set<CharSequence> parameterValues) {
         this.parameterValues = parameterValues;
     }

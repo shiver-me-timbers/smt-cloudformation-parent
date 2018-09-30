@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthorizedAccountId() {
         return authorizedAccountId;
     }
@@ -50,6 +52,7 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedaccountid
      * 
      */
+    @JsonIgnore
     public void setAuthorizedAccountId(CharSequence authorizedAccountId) {
         this.authorizedAccountId = authorizedAccountId;
     }
@@ -63,6 +66,7 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthorizedAwsRegion() {
         return authorizedAwsRegion;
     }
@@ -71,6 +75,7 @@ public class AggregationAuthorization {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-aggregationauthorization.html#cfn-config-aggregationauthorization-authorizedawsregion
      * 
      */
+    @JsonIgnore
     public void setAuthorizedAwsRegion(CharSequence authorizedAwsRegion) {
         this.authorizedAwsRegion = authorizedAwsRegion;
     }

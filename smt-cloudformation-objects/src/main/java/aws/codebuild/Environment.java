@@ -3,6 +3,7 @@ package aws.codebuild;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -76,6 +77,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -84,6 +86,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -97,6 +100,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-environmentvariables
      * 
      */
+    @JsonIgnore
     public List<EnvironmentVariable> getEnvironmentVariables() {
         return environmentVariables;
     }
@@ -105,6 +109,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-environmentvariables
      * 
      */
+    @JsonIgnore
     public void setEnvironmentVariables(List<EnvironmentVariable> environmentVariables) {
         this.environmentVariables = environmentVariables;
     }
@@ -118,6 +123,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode
      * 
      */
+    @JsonIgnore
     public Boolean getPrivilegedMode() {
         return privilegedMode;
     }
@@ -126,6 +132,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode
      * 
      */
+    @JsonIgnore
     public void setPrivilegedMode(Boolean privilegedMode) {
         this.privilegedMode = privilegedMode;
     }
@@ -139,6 +146,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image
      * 
      */
+    @JsonIgnore
     public CharSequence getImage() {
         return image;
     }
@@ -147,6 +155,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image
      * 
      */
+    @JsonIgnore
     public void setImage(CharSequence image) {
         this.image = image;
     }
@@ -160,6 +169,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype
      * 
      */
+    @JsonIgnore
     public CharSequence getComputeType() {
         return computeType;
     }
@@ -168,6 +178,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype
      * 
      */
+    @JsonIgnore
     public void setComputeType(CharSequence computeType) {
         this.computeType = computeType;
     }
@@ -181,6 +192,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-certificate
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificate() {
         return certificate;
     }
@@ -189,6 +201,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-certificate
      * 
      */
+    @JsonIgnore
     public void setCertificate(CharSequence certificate) {
         this.certificate = certificate;
     }

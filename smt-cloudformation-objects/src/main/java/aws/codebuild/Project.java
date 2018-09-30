@@ -4,6 +4,7 @@ package aws.codebuild;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -171,6 +172,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -179,6 +181,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -194,6 +197,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html
      * 
      */
+    @JsonIgnore
     public VpcConfig getVpcConfig() {
         return vpcConfig;
     }
@@ -204,6 +208,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html
      * 
      */
+    @JsonIgnore
     public void setVpcConfig(VpcConfig vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
@@ -217,6 +222,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources
      * 
      */
+    @JsonIgnore
     public List<Source> getSecondarySources() {
         return secondarySources;
     }
@@ -225,6 +231,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources
      * 
      */
+    @JsonIgnore
     public void setSecondarySources(List<Source> secondarySources) {
         this.secondarySources = secondarySources;
     }
@@ -238,6 +245,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey
      * 
      */
+    @JsonIgnore
     public CharSequence getEncryptionKey() {
         return encryptionKey;
     }
@@ -246,6 +254,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey
      * 
      */
+    @JsonIgnore
     public void setEncryptionKey(CharSequence encryptionKey) {
         this.encryptionKey = encryptionKey;
     }
@@ -261,6 +270,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html
      * 
      */
+    @JsonIgnore
     public ProjectTriggers getTriggers() {
         return triggers;
     }
@@ -271,6 +281,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html
      * 
      */
+    @JsonIgnore
     public void setTriggers(ProjectTriggers triggers) {
         this.triggers = triggers;
     }
@@ -284,6 +295,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts
      * 
      */
+    @JsonIgnore
     public List<Artifacts> getSecondaryArtifacts() {
         return secondaryArtifacts;
     }
@@ -292,6 +304,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts
      * 
      */
+    @JsonIgnore
     public void setSecondaryArtifacts(List<Artifacts> secondaryArtifacts) {
         this.secondaryArtifacts = secondaryArtifacts;
     }
@@ -307,6 +320,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html
      * 
      */
+    @JsonIgnore
     public Source getSource() {
         return source;
     }
@@ -317,6 +331,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html
      * 
      */
+    @JsonIgnore
     public void setSource(Source source) {
         this.source = source;
     }
@@ -330,6 +345,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -338,6 +354,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -353,6 +370,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html
      * 
      */
+    @JsonIgnore
     public Artifacts getArtifacts() {
         return artifacts;
     }
@@ -363,6 +381,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html
      * 
      */
+    @JsonIgnore
     public void setArtifacts(Artifacts artifacts) {
         this.artifacts = artifacts;
     }
@@ -376,6 +395,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled
      * 
      */
+    @JsonIgnore
     public Boolean getBadgeEnabled() {
         return badgeEnabled;
     }
@@ -384,6 +404,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled
      * 
      */
+    @JsonIgnore
     public void setBadgeEnabled(Boolean badgeEnabled) {
         this.badgeEnabled = badgeEnabled;
     }
@@ -399,6 +420,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html
      * 
      */
+    @JsonIgnore
     public LogsConfig getLogsConfig() {
         return logsConfig;
     }
@@ -409,6 +431,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html
      * 
      */
+    @JsonIgnore
     public void setLogsConfig(LogsConfig logsConfig) {
         this.logsConfig = logsConfig;
     }
@@ -422,6 +445,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRole() {
         return serviceRole;
     }
@@ -430,6 +454,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole
      * 
      */
+    @JsonIgnore
     public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
@@ -445,6 +470,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
      * 
      */
+    @JsonIgnore
     public Environment getEnvironment() {
         return environment;
     }
@@ -455,6 +481,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
      * 
      */
+    @JsonIgnore
     public void setEnvironment(Environment environment) {
         this.environment = environment;
     }
@@ -468,6 +495,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -476,6 +504,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -489,6 +518,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-timeoutinminutes
      * 
      */
+    @JsonIgnore
     public Integer getTimeoutInMinutes() {
         return timeoutInMinutes;
     }
@@ -497,6 +527,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-timeoutinminutes
      * 
      */
+    @JsonIgnore
     public void setTimeoutInMinutes(Integer timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
     }
@@ -512,6 +543,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html
      * 
      */
+    @JsonIgnore
     public ProjectCache getCache() {
         return cache;
     }
@@ -522,6 +554,7 @@ public class Project {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html
      * 
      */
+    @JsonIgnore
     public void setCache(ProjectCache cache) {
         this.cache = cache;
     }

@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag
      * 
      */
+    @JsonIgnore
     public CharSequence getRowTag() {
         return rowTag;
     }
@@ -58,6 +60,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag
      * 
      */
+    @JsonIgnore
     public void setRowTag(CharSequence rowTag) {
         this.rowTag = rowTag;
     }
@@ -71,6 +74,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification
      * 
      */
+    @JsonIgnore
     public CharSequence getClassification() {
         return classification;
     }
@@ -79,6 +83,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-classification
      * 
      */
+    @JsonIgnore
     public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
@@ -92,6 +97,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -100,6 +106,7 @@ public class XMLClassifier {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

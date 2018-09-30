@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit
      * 
      */
+    @JsonIgnore
     public Integer getBurstLimit() {
         return burstLimit;
     }
@@ -50,6 +52,7 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-burstlimit
      * 
      */
+    @JsonIgnore
     public void setBurstLimit(Integer burstLimit) {
         this.burstLimit = burstLimit;
     }
@@ -63,6 +66,7 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit
      * 
      */
+    @JsonIgnore
     public Double getRateLimit() {
         return rateLimit;
     }
@@ -71,6 +75,7 @@ public class ThrottleSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html#cfn-apigateway-usageplan-throttlesettings-ratelimit
      * 
      */
+    @JsonIgnore
     public void setRateLimit(Double rateLimit) {
         this.rateLimit = rateLimit;
     }

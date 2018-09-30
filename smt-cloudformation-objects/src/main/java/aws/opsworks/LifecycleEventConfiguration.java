@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class LifecycleEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html
      * 
      */
+    @JsonIgnore
     public ShutdownEventConfiguration getShutdownEventConfiguration() {
         return shutdownEventConfiguration;
     }
@@ -48,6 +50,7 @@ public class LifecycleEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setShutdownEventConfiguration(ShutdownEventConfiguration shutdownEventConfiguration) {
         this.shutdownEventConfiguration = shutdownEventConfiguration;
     }

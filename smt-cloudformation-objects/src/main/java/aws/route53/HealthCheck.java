@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html
      * 
      */
+    @JsonIgnore
     public HealthCheckConfig getHealthCheckConfig() {
         return healthCheckConfig;
     }
@@ -58,6 +60,7 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html
      * 
      */
+    @JsonIgnore
     public void setHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
     }
@@ -71,6 +74,7 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags
      * 
      */
+    @JsonIgnore
     public List<HealthCheckTag> getHealthCheckTags() {
         return healthCheckTags;
     }
@@ -79,6 +83,7 @@ public class HealthCheck {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags
      * 
      */
+    @JsonIgnore
     public void setHealthCheckTags(List<HealthCheckTag> healthCheckTags) {
         this.healthCheckTags = healthCheckTags;
     }

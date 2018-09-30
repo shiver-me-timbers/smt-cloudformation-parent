@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getOutputS3BucketName() {
         return outputS3BucketName;
     }
@@ -50,6 +52,7 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3bucketname
      * 
      */
+    @JsonIgnore
     public void setOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
     }
@@ -63,6 +66,7 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getOutputS3KeyPrefix() {
         return outputS3KeyPrefix;
     }
@@ -71,6 +75,7 @@ public class S3OutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html#cfn-ssm-association-s3outputlocation-outputs3keyprefix
      * 
      */
+    @JsonIgnore
     public void setOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
     }

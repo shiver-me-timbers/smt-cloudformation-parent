@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -64,6 +65,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -72,6 +74,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -85,6 +88,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -93,6 +97,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -108,6 +113,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html
      * 
      */
+    @JsonIgnore
     public StorageClassAnalysis getStorageClassAnalysis() {
         return storageClassAnalysis;
     }
@@ -118,6 +124,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html
      * 
      */
+    @JsonIgnore
     public void setStorageClassAnalysis(StorageClassAnalysis storageClassAnalysis) {
         this.storageClassAnalysis = storageClassAnalysis;
     }
@@ -131,6 +138,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-tagfilters
      * 
      */
+    @JsonIgnore
     public Set<TagFilter> getTagFilters() {
         return tagFilters;
     }
@@ -139,6 +147,7 @@ public class AnalyticsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-tagfilters
      * 
      */
+    @JsonIgnore
     public void setTagFilters(Set<TagFilter> tagFilters) {
         this.tagFilters = tagFilters;
     }

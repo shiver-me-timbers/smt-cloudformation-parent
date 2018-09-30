@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname
      * 
      */
+    @JsonIgnore
     public CharSequence getHostname() {
         return hostname;
     }
@@ -50,6 +52,7 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname
      * 
      */
+    @JsonIgnore
     public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
@@ -63,6 +66,7 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress
      * 
      */
+    @JsonIgnore
     public CharSequence getIpAddress() {
         return ipAddress;
     }
@@ -71,6 +75,7 @@ public class HostEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-ipaddress
      * 
      */
+    @JsonIgnore
     public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }

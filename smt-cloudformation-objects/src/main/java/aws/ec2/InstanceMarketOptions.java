@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html
      * 
      */
+    @JsonIgnore
     public SpotOptions getSpotOptions() {
         return spotOptions;
     }
@@ -56,6 +58,7 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html
      * 
      */
+    @JsonIgnore
     public void setSpotOptions(SpotOptions spotOptions) {
         this.spotOptions = spotOptions;
     }
@@ -69,6 +72,7 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-markettype
      * 
      */
+    @JsonIgnore
     public CharSequence getMarketType() {
         return marketType;
     }
@@ -77,6 +81,7 @@ public class InstanceMarketOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-markettype
      * 
      */
+    @JsonIgnore
     public void setMarketType(CharSequence marketType) {
         this.marketType = marketType;
     }

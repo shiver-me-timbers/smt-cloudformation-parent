@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
      * 
      */
+    @JsonIgnore
     public CharSequence getRole() {
         return role;
     }
@@ -54,6 +56,7 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
      * 
      */
+    @JsonIgnore
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -67,6 +70,7 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules
      * 
      */
+    @JsonIgnore
     public Set<ReplicationRule> getRules() {
         return rules;
     }
@@ -75,6 +79,7 @@ public class ReplicationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules
      * 
      */
+    @JsonIgnore
     public void setRules(Set<ReplicationRule> rules) {
         this.rules = rules;
     }

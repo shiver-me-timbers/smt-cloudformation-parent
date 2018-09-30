@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class LogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html
      * 
      */
+    @JsonIgnore
     public CloudWatchLogsConfig getCloudWatchLogs() {
         return cloudWatchLogs;
     }
@@ -58,6 +60,7 @@ public class LogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLogs(CloudWatchLogsConfig cloudWatchLogs) {
         this.cloudWatchLogs = cloudWatchLogs;
     }
@@ -73,6 +76,7 @@ public class LogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html
      * 
      */
+    @JsonIgnore
     public S3LogsConfig getS3Logs() {
         return s3Logs;
     }
@@ -83,6 +87,7 @@ public class LogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html
      * 
      */
+    @JsonIgnore
     public void setS3Logs(S3LogsConfig s3Logs) {
         this.s3Logs = s3Logs;
     }

@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html
      * 
      */
+    @JsonIgnore
     public CloudWatchDestination getCloudWatchDestination() {
         return cloudWatchDestination;
     }
@@ -84,6 +86,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchDestination(CloudWatchDestination cloudWatchDestination) {
         this.cloudWatchDestination = cloudWatchDestination;
     }
@@ -97,6 +100,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -105,6 +109,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -118,6 +123,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-matchingeventtypes
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getMatchingEventTypes() {
         return matchingEventTypes;
     }
@@ -126,6 +132,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-matchingeventtypes
      * 
      */
+    @JsonIgnore
     public void setMatchingEventTypes(List<CharSequence> matchingEventTypes) {
         this.matchingEventTypes = matchingEventTypes;
     }
@@ -139,6 +146,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -147,6 +155,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -162,6 +171,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html
      * 
      */
+    @JsonIgnore
     public KinesisFirehoseDestination getKinesisFirehoseDestination() {
         return kinesisFirehoseDestination;
     }
@@ -172,6 +182,7 @@ public class EventDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html
      * 
      */
+    @JsonIgnore
     public void setKinesisFirehoseDestination(KinesisFirehoseDestination kinesisFirehoseDestination) {
         this.kinesisFirehoseDestination = kinesisFirehoseDestination;
     }

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -120,6 +121,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress
      * 
      */
+    @JsonIgnore
     public Boolean getAssociatePublicIpAddress() {
         return associatePublicIpAddress;
     }
@@ -128,6 +130,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress
      * 
      */
+    @JsonIgnore
     public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
         this.associatePublicIpAddress = associatePublicIpAddress;
     }
@@ -141,6 +144,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination
      * 
      */
+    @JsonIgnore
     public Boolean getDeleteOnTermination() {
         return deleteOnTermination;
     }
@@ -149,6 +153,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deleteontermination
      * 
      */
+    @JsonIgnore
     public void setDeleteOnTermination(Boolean deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
@@ -162,6 +167,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -170,6 +176,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -183,6 +190,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deviceindex
      * 
      */
+    @JsonIgnore
     public Integer getDeviceIndex() {
         return deviceIndex;
     }
@@ -191,6 +199,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-deviceindex
      * 
      */
+    @JsonIgnore
     public void setDeviceIndex(Integer deviceIndex) {
         this.deviceIndex = deviceIndex;
     }
@@ -204,6 +213,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-groups
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getGroups() {
         return groups;
     }
@@ -212,6 +222,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-groups
      * 
      */
+    @JsonIgnore
     public void setGroups(Set<CharSequence> groups) {
         this.groups = groups;
     }
@@ -225,6 +236,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresscount
      * 
      */
+    @JsonIgnore
     public Integer getIpv6AddressCount() {
         return ipv6AddressCount;
     }
@@ -233,6 +245,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresscount
      * 
      */
+    @JsonIgnore
     public void setIpv6AddressCount(Integer ipv6AddressCount) {
         this.ipv6AddressCount = ipv6AddressCount;
     }
@@ -246,6 +259,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresses
      * 
      */
+    @JsonIgnore
     public Set<InstanceIpv6Address> getIpv6Addresses() {
         return ipv6Addresses;
     }
@@ -254,6 +268,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresses
      * 
      */
+    @JsonIgnore
     public void setIpv6Addresses(Set<InstanceIpv6Address> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
@@ -267,6 +282,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -275,6 +291,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
@@ -288,6 +305,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-privateipaddresses
      * 
      */
+    @JsonIgnore
     public Set<PrivateIpAddressSpecification> getPrivateIpAddresses() {
         return privateIpAddresses;
     }
@@ -296,6 +314,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-privateipaddresses
      * 
      */
+    @JsonIgnore
     public void setPrivateIpAddresses(Set<PrivateIpAddressSpecification> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
     }
@@ -309,6 +328,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-secondaryprivateipaddresscount
      * 
      */
+    @JsonIgnore
     public Integer getSecondaryPrivateIpAddressCount() {
         return secondaryPrivateIpAddressCount;
     }
@@ -317,6 +337,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-secondaryprivateipaddresscount
      * 
      */
+    @JsonIgnore
     public void setSecondaryPrivateIpAddressCount(Integer secondaryPrivateIpAddressCount) {
         this.secondaryPrivateIpAddressCount = secondaryPrivateIpAddressCount;
     }
@@ -330,6 +351,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -338,6 +360,7 @@ public class InstanceNetworkInterfaceSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

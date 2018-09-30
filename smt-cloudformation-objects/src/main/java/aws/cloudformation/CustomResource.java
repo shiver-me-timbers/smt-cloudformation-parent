@@ -1,6 +1,7 @@
 
 package aws.cloudformation;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class CustomResource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceToken() {
         return serviceToken;
     }
@@ -42,6 +44,7 @@ public class CustomResource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken
      * 
      */
+    @JsonIgnore
     public void setServiceToken(CharSequence serviceToken) {
         this.serviceToken = serviceToken;
     }

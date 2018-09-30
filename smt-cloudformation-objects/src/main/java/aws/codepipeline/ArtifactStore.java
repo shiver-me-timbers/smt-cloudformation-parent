@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
      * 
      */
+    @JsonIgnore
     public EncryptionKey getEncryptionKey() {
         return encryptionKey;
     }
@@ -64,6 +66,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html
      * 
      */
+    @JsonIgnore
     public void setEncryptionKey(EncryptionKey encryptionKey) {
         this.encryptionKey = encryptionKey;
     }
@@ -77,6 +80,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
      * 
      */
+    @JsonIgnore
     public CharSequence getLocation() {
         return location;
     }
@@ -85,6 +89,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
      * 
      */
+    @JsonIgnore
     public void setLocation(CharSequence location) {
         this.location = location;
     }
@@ -98,6 +103,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -106,6 +112,7 @@ public class ArtifactStore {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }

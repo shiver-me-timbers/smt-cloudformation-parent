@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename
      * 
      */
+    @JsonIgnore
     public CharSequence getDeviceName() {
         return deviceName;
     }
@@ -68,6 +70,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename
      * 
      */
+    @JsonIgnore
     public void setDeviceName(CharSequence deviceName) {
         this.deviceName = deviceName;
     }
@@ -83,6 +86,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html
      * 
      */
+    @JsonIgnore
     public EbsBlockDevice getEbs() {
         return ebs;
     }
@@ -93,6 +97,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html
      * 
      */
+    @JsonIgnore
     public void setEbs(EbsBlockDevice ebs) {
         this.ebs = ebs;
     }
@@ -106,6 +111,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-nodevice
      * 
      */
+    @JsonIgnore
     public CharSequence getNoDevice() {
         return noDevice;
     }
@@ -114,6 +120,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-nodevice
      * 
      */
+    @JsonIgnore
     public void setNoDevice(CharSequence noDevice) {
         this.noDevice = noDevice;
     }
@@ -127,6 +134,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-virtualname
      * 
      */
+    @JsonIgnore
     public CharSequence getVirtualName() {
         return virtualName;
     }
@@ -135,6 +143,7 @@ public class BlockDeviceMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-virtualname
      * 
      */
+    @JsonIgnore
     public void setVirtualName(CharSequence virtualName) {
         this.virtualName = virtualName;
     }

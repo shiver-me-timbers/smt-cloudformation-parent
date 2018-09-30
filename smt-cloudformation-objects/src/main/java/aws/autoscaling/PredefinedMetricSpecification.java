@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class PredefinedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype
      * 
      */
+    @JsonIgnore
     public CharSequence getPredefinedMetricType() {
         return predefinedMetricType;
     }
@@ -50,6 +52,7 @@ public class PredefinedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype
      * 
      */
+    @JsonIgnore
     public void setPredefinedMetricType(CharSequence predefinedMetricType) {
         this.predefinedMetricType = predefinedMetricType;
     }
@@ -63,6 +66,7 @@ public class PredefinedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-resourcelabel
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceLabel() {
         return resourceLabel;
     }
@@ -71,6 +75,7 @@ public class PredefinedMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-resourcelabel
      * 
      */
+    @JsonIgnore
     public void setResourceLabel(CharSequence resourceLabel) {
         this.resourceLabel = resourceLabel;
     }

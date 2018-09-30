@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat
      * 
      */
+    @JsonIgnore
     public CharSequence getMessageFormat() {
         return messageFormat;
     }
@@ -58,6 +60,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat
      * 
      */
+    @JsonIgnore
     public void setMessageFormat(CharSequence messageFormat) {
         this.messageFormat = messageFormat;
     }
@@ -71,6 +74,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -79,6 +83,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -92,6 +97,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-targetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetArn() {
         return targetArn;
     }
@@ -100,6 +106,7 @@ public class SnsAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-targetarn
      * 
      */
+    @JsonIgnore
     public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }

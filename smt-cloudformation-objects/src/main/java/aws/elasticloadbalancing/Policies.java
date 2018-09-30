@@ -3,6 +3,7 @@ package aws.elasticloadbalancing;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -72,6 +73,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
+    @JsonIgnore
     public Set<Object> getAttributes() {
         return attributes;
     }
@@ -80,6 +82,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Set<Object> attributes) {
         this.attributes = attributes;
     }
@@ -93,6 +96,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getInstancePorts() {
         return instancePorts;
     }
@@ -101,6 +105,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-instanceports
      * 
      */
+    @JsonIgnore
     public void setInstancePorts(Set<CharSequence> instancePorts) {
         this.instancePorts = instancePorts;
     }
@@ -114,6 +119,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getLoadBalancerPorts() {
         return loadBalancerPorts;
     }
@@ -122,6 +128,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-loadbalancerports
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerPorts(Set<CharSequence> loadBalancerPorts) {
         this.loadBalancerPorts = loadBalancerPorts;
     }
@@ -135,6 +142,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -143,6 +151,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policyname
      * 
      */
+    @JsonIgnore
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }
@@ -156,6 +165,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyType() {
         return policyType;
     }
@@ -164,6 +174,7 @@ public class Policies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html#cfn-ec2-elb-policy-policytype
      * 
      */
+    @JsonIgnore
     public void setPolicyType(CharSequence policyType) {
         this.policyType = policyType;
     }

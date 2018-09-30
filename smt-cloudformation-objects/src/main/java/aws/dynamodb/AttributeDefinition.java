@@ -1,6 +1,7 @@
 
 package aws.dynamodb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
      * 
      */
+    @JsonIgnore
     public CharSequence getAttributeName() {
         return attributeName;
     }
@@ -50,6 +52,7 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
      * 
      */
+    @JsonIgnore
     public void setAttributeName(CharSequence attributeName) {
         this.attributeName = attributeName;
     }
@@ -63,6 +66,7 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
      * 
      */
+    @JsonIgnore
     public CharSequence getAttributeType() {
         return attributeType;
     }
@@ -71,6 +75,7 @@ public class AttributeDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
      * 
      */
+    @JsonIgnore
     public void setAttributeType(CharSequence attributeType) {
         this.attributeType = attributeType;
     }

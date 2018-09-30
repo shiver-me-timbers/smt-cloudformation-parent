@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class EIP {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
      * 
      */
+    @JsonIgnore
     public CharSequence getDomain() {
         return domain;
     }
@@ -50,6 +52,7 @@ public class EIP {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
      * 
      */
+    @JsonIgnore
     public void setDomain(CharSequence domain) {
         this.domain = domain;
     }
@@ -63,6 +66,7 @@ public class EIP {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -71,6 +75,7 @@ public class EIP {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid
      * 
      */
+    @JsonIgnore
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }

@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals
      * 
      */
+    @JsonIgnore
     public CharSequence getHttpErrorCodeReturnedEquals() {
         return httpErrorCodeReturnedEquals;
     }
@@ -50,6 +52,7 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals
      * 
      */
+    @JsonIgnore
     public void setHttpErrorCodeReturnedEquals(CharSequence httpErrorCodeReturnedEquals) {
         this.httpErrorCodeReturnedEquals = httpErrorCodeReturnedEquals;
     }
@@ -63,6 +66,7 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyPrefixEquals() {
         return keyPrefixEquals;
     }
@@ -71,6 +75,7 @@ public class RoutingRuleCondition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-keyprefixequals
      * 
      */
+    @JsonIgnore
     public void setKeyPrefixEquals(CharSequence keyPrefixEquals) {
         this.keyPrefixEquals = keyPrefixEquals;
     }

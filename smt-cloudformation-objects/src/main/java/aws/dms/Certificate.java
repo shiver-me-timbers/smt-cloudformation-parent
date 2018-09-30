@@ -1,6 +1,7 @@
 
 package aws.dms;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificateIdentifier() {
         return certificateIdentifier;
     }
@@ -58,6 +60,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificateidentifier
      * 
      */
+    @JsonIgnore
     public void setCertificateIdentifier(CharSequence certificateIdentifier) {
         this.certificateIdentifier = certificateIdentifier;
     }
@@ -71,6 +74,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificatePem() {
         return certificatePem;
     }
@@ -79,6 +83,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatepem
      * 
      */
+    @JsonIgnore
     public void setCertificatePem(CharSequence certificatePem) {
         this.certificatePem = certificatePem;
     }
@@ -92,6 +97,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificateWallet() {
         return certificateWallet;
     }
@@ -100,6 +106,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-certificate.html#cfn-dms-certificate-certificatewallet
      * 
      */
+    @JsonIgnore
     public void setCertificateWallet(CharSequence certificateWallet) {
         this.certificateWallet = certificateWallet;
     }

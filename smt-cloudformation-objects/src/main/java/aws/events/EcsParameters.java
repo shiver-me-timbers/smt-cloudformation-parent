@@ -1,6 +1,7 @@
 
 package aws.events;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class EcsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskcount
      * 
      */
+    @JsonIgnore
     public Integer getTaskCount() {
         return taskCount;
     }
@@ -50,6 +52,7 @@ public class EcsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskcount
      * 
      */
+    @JsonIgnore
     public void setTaskCount(Integer taskCount) {
         this.taskCount = taskCount;
     }
@@ -63,6 +66,7 @@ public class EcsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskdefinitionarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTaskDefinitionArn() {
         return taskDefinitionArn;
     }
@@ -71,6 +75,7 @@ public class EcsParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskdefinitionarn
      * 
      */
+    @JsonIgnore
     public void setTaskDefinitionArn(CharSequence taskDefinitionArn) {
         this.taskDefinitionArn = taskDefinitionArn;
     }

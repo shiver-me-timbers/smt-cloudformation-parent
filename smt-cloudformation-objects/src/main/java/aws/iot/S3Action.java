@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -58,6 +60,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-bucketname
      * 
      */
+    @JsonIgnore
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -71,6 +74,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-key
      * 
      */
+    @JsonIgnore
     public CharSequence getKey() {
         return key;
     }
@@ -79,6 +83,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-key
      * 
      */
+    @JsonIgnore
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -92,6 +97,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -100,6 +106,7 @@ public class S3Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html#cfn-iot-topicrule-s3action-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

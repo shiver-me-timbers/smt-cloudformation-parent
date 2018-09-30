@@ -3,6 +3,7 @@ package aws.dynamodb;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -56,6 +57,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
      * 
      */
+    @JsonIgnore
     public CharSequence getIndexName() {
         return indexName;
     }
@@ -64,6 +66,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
      * 
      */
+    @JsonIgnore
     public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
@@ -77,6 +80,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema
      * 
      */
+    @JsonIgnore
     public Set<KeySchema> getKeySchema() {
         return keySchema;
     }
@@ -85,6 +89,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema
      * 
      */
+    @JsonIgnore
     public void setKeySchema(Set<KeySchema> keySchema) {
         this.keySchema = keySchema;
     }
@@ -100,6 +105,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
+    @JsonIgnore
     public Projection getProjection() {
         return projection;
     }
@@ -110,6 +116,7 @@ public class LocalSecondaryIndex {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html
      * 
      */
+    @JsonIgnore
     public void setProjection(Projection projection) {
         this.projection = projection;
     }

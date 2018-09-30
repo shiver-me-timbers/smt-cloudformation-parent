@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-deleteontermination
      * 
      */
+    @JsonIgnore
     public Boolean getDeleteOnTermination() {
         return deleteOnTermination;
     }
@@ -74,6 +76,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-deleteontermination
      * 
      */
+    @JsonIgnore
     public void setDeleteOnTermination(Boolean deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
@@ -87,6 +90,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-iops
      * 
      */
+    @JsonIgnore
     public Integer getIops() {
         return iops;
     }
@@ -95,6 +99,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-iops
      * 
      */
+    @JsonIgnore
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -108,6 +113,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-snapshotid
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotId() {
         return snapshotId;
     }
@@ -116,6 +122,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-snapshotid
      * 
      */
+    @JsonIgnore
     public void setSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
     }
@@ -129,6 +136,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumesize
      * 
      */
+    @JsonIgnore
     public Integer getVolumeSize() {
         return volumeSize;
     }
@@ -137,6 +145,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumesize
      * 
      */
+    @JsonIgnore
     public void setVolumeSize(Integer volumeSize) {
         this.volumeSize = volumeSize;
     }
@@ -150,6 +159,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumetype
      * 
      */
+    @JsonIgnore
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -158,6 +168,7 @@ public class EbsBlockDevice {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html#cfn-opsworks-instance-ebsblockdevice-volumetype
      * 
      */
+    @JsonIgnore
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

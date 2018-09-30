@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -102,6 +103,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-cidrblock
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -110,6 +112,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-cidrblock
      * 
      */
+    @JsonIgnore
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -123,6 +126,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-egress
      * 
      */
+    @JsonIgnore
     public Boolean getEgress() {
         return egress;
     }
@@ -131,6 +135,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-egress
      * 
      */
+    @JsonIgnore
     public void setEgress(Boolean egress) {
         this.egress = egress;
     }
@@ -146,6 +151,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html
      * 
      */
+    @JsonIgnore
     public Icmp getIcmp() {
         return icmp;
     }
@@ -156,6 +162,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html
      * 
      */
+    @JsonIgnore
     public void setIcmp(Icmp icmp) {
         this.icmp = icmp;
     }
@@ -169,6 +176,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock
      * 
      */
+    @JsonIgnore
     public CharSequence getIpv6CidrBlock() {
         return ipv6CidrBlock;
     }
@@ -177,6 +185,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock
      * 
      */
+    @JsonIgnore
     public void setIpv6CidrBlock(CharSequence ipv6CidrBlock) {
         this.ipv6CidrBlock = ipv6CidrBlock;
     }
@@ -190,6 +199,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-networkaclid
      * 
      */
+    @JsonIgnore
     public CharSequence getNetworkAclId() {
         return networkAclId;
     }
@@ -198,6 +208,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-networkaclid
      * 
      */
+    @JsonIgnore
     public void setNetworkAclId(CharSequence networkAclId) {
         this.networkAclId = networkAclId;
     }
@@ -213,6 +224,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html
      * 
      */
+    @JsonIgnore
     public PortRange getPortRange() {
         return portRange;
     }
@@ -223,6 +235,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html
      * 
      */
+    @JsonIgnore
     public void setPortRange(PortRange portRange) {
         this.portRange = portRange;
     }
@@ -236,6 +249,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol
      * 
      */
+    @JsonIgnore
     public Integer getProtocol() {
         return protocol;
     }
@@ -244,6 +258,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(Integer protocol) {
         this.protocol = protocol;
     }
@@ -257,6 +272,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ruleaction
      * 
      */
+    @JsonIgnore
     public CharSequence getRuleAction() {
         return ruleAction;
     }
@@ -265,6 +281,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ruleaction
      * 
      */
+    @JsonIgnore
     public void setRuleAction(CharSequence ruleAction) {
         this.ruleAction = ruleAction;
     }
@@ -278,6 +295,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-rulenumber
      * 
      */
+    @JsonIgnore
     public Integer getRuleNumber() {
         return ruleNumber;
     }
@@ -286,6 +304,7 @@ public class NetworkAclEntry {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-rulenumber
      * 
      */
+    @JsonIgnore
     public void setRuleNumber(Integer ruleNumber) {
         this.ruleNumber = ruleNumber;
     }

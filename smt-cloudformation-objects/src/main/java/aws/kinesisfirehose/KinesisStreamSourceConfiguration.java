@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn
      * 
      */
+    @JsonIgnore
     public CharSequence getKinesisStreamARN() {
         return kinesisStreamARN;
     }
@@ -50,6 +52,7 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-kinesisstreamarn
      * 
      */
+    @JsonIgnore
     public void setKinesisStreamARN(CharSequence kinesisStreamARN) {
         this.kinesisStreamARN = kinesisStreamARN;
     }
@@ -63,6 +66,7 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -71,6 +75,7 @@ public class KinesisStreamSourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

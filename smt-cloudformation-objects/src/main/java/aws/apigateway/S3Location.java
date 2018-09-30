@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getBucket() {
         return bucket;
     }
@@ -66,6 +68,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-bucket
      * 
      */
+    @JsonIgnore
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -79,6 +82,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-etag
      * 
      */
+    @JsonIgnore
     public CharSequence getETag() {
         return eTag;
     }
@@ -87,6 +91,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-etag
      * 
      */
+    @JsonIgnore
     public void setETag(CharSequence eTag) {
         this.eTag = eTag;
     }
@@ -100,6 +105,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-key
      * 
      */
+    @JsonIgnore
     public CharSequence getKey() {
         return key;
     }
@@ -108,6 +114,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-key
      * 
      */
+    @JsonIgnore
     public void setKey(CharSequence key) {
         this.key = key;
     }
@@ -121,6 +128,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-version
      * 
      */
+    @JsonIgnore
     public CharSequence getVersion() {
         return version;
     }
@@ -129,6 +137,7 @@ public class S3Location {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-version
      * 
      */
+    @JsonIgnore
     public void setVersion(CharSequence version) {
         this.version = version;
     }

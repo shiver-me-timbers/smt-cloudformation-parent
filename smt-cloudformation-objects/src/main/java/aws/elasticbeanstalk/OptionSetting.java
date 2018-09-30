@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-namespace
      * 
      */
+    @JsonIgnore
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -66,6 +68,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-namespace
      * 
      */
+    @JsonIgnore
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }
@@ -79,6 +82,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-optionname
      * 
      */
+    @JsonIgnore
     public CharSequence getOptionName() {
         return optionName;
     }
@@ -87,6 +91,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-optionname
      * 
      */
+    @JsonIgnore
     public void setOptionName(CharSequence optionName) {
         this.optionName = optionName;
     }
@@ -100,6 +105,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-elasticbeanstalk-environment-optionsetting-resourcename
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceName() {
         return resourceName;
     }
@@ -108,6 +114,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-elasticbeanstalk-environment-optionsetting-resourcename
      * 
      */
+    @JsonIgnore
     public void setResourceName(CharSequence resourceName) {
         this.resourceName = resourceName;
     }
@@ -121,6 +128,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-value
      * 
      */
+    @JsonIgnore
     public CharSequence getValue() {
         return value;
     }
@@ -129,6 +137,7 @@ public class OptionSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-value
      * 
      */
+    @JsonIgnore
     public void setValue(CharSequence value) {
         this.value = value;
     }

@@ -1,6 +1,7 @@
 
 package aws.events;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class KinesisParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath
      * 
      */
+    @JsonIgnore
     public CharSequence getPartitionKeyPath() {
         return partitionKeyPath;
     }
@@ -42,6 +44,7 @@ public class KinesisParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath
      * 
      */
+    @JsonIgnore
     public void setPartitionKeyPath(CharSequence partitionKeyPath) {
         this.partitionKeyPath = partitionKeyPath;
     }

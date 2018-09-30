@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
+    @JsonIgnore
     public Object getParameters() {
         return parameters;
     }
@@ -58,6 +60,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters
      * 
      */
+    @JsonIgnore
     public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
@@ -71,6 +74,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary
      * 
      */
+    @JsonIgnore
     public CharSequence getSerializationLibrary() {
         return serializationLibrary;
     }
@@ -79,6 +83,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary
      * 
      */
+    @JsonIgnore
     public void setSerializationLibrary(CharSequence serializationLibrary) {
         this.serializationLibrary = serializationLibrary;
     }
@@ -92,6 +97,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -100,6 +106,7 @@ public class SerdeInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

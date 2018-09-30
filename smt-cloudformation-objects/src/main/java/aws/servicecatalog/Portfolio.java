@@ -4,6 +4,7 @@ package aws.servicecatalog;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -69,6 +70,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-providername
      * 
      */
+    @JsonIgnore
     public CharSequence getProviderName() {
         return providerName;
     }
@@ -77,6 +79,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-providername
      * 
      */
+    @JsonIgnore
     public void setProviderName(CharSequence providerName) {
         this.providerName = providerName;
     }
@@ -90,6 +93,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -98,6 +102,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -111,6 +116,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-displayname
      * 
      */
+    @JsonIgnore
     public CharSequence getDisplayName() {
         return displayName;
     }
@@ -119,6 +125,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-displayname
      * 
      */
+    @JsonIgnore
     public void setDisplayName(CharSequence displayName) {
         this.displayName = displayName;
     }
@@ -132,6 +139,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-acceptlanguage
      * 
      */
+    @JsonIgnore
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -140,6 +148,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-acceptlanguage
      * 
      */
+    @JsonIgnore
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -153,6 +162,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -161,6 +171,7 @@ public class Portfolio {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolio.html#cfn-servicecatalog-portfolio-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

@@ -1,6 +1,7 @@
 
 package aws.events;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -116,6 +117,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
      * 
      */
+    @JsonIgnore
     public CharSequence getArn() {
         return arn;
     }
@@ -124,6 +126,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
      * 
      */
+    @JsonIgnore
     public void setArn(CharSequence arn) {
         this.arn = arn;
     }
@@ -139,6 +142,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
      * 
      */
+    @JsonIgnore
     public EcsParameters getEcsParameters() {
         return ecsParameters;
     }
@@ -149,6 +153,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html
      * 
      */
+    @JsonIgnore
     public void setEcsParameters(EcsParameters ecsParameters) {
         this.ecsParameters = ecsParameters;
     }
@@ -162,6 +167,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -170,6 +176,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -183,6 +190,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input
      * 
      */
+    @JsonIgnore
     public CharSequence getInput() {
         return input;
     }
@@ -191,6 +199,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-input
      * 
      */
+    @JsonIgnore
     public void setInput(CharSequence input) {
         this.input = input;
     }
@@ -204,6 +213,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath
      * 
      */
+    @JsonIgnore
     public CharSequence getInputPath() {
         return inputPath;
     }
@@ -212,6 +222,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-inputpath
      * 
      */
+    @JsonIgnore
     public void setInputPath(CharSequence inputPath) {
         this.inputPath = inputPath;
     }
@@ -227,6 +238,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html
      * 
      */
+    @JsonIgnore
     public InputTransformer getInputTransformer() {
         return inputTransformer;
     }
@@ -237,6 +249,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html
      * 
      */
+    @JsonIgnore
     public void setInputTransformer(InputTransformer inputTransformer) {
         this.inputTransformer = inputTransformer;
     }
@@ -252,6 +265,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html
      * 
      */
+    @JsonIgnore
     public KinesisParameters getKinesisParameters() {
         return kinesisParameters;
     }
@@ -262,6 +276,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html
      * 
      */
+    @JsonIgnore
     public void setKinesisParameters(KinesisParameters kinesisParameters) {
         this.kinesisParameters = kinesisParameters;
     }
@@ -275,6 +290,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -283,6 +299,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -298,6 +315,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html
      * 
      */
+    @JsonIgnore
     public RunCommandParameters getRunCommandParameters() {
         return runCommandParameters;
     }
@@ -308,6 +326,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html
      * 
      */
+    @JsonIgnore
     public void setRunCommandParameters(RunCommandParameters runCommandParameters) {
         this.runCommandParameters = runCommandParameters;
     }
@@ -323,6 +342,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html
      * 
      */
+    @JsonIgnore
     public SqsParameters getSqsParameters() {
         return sqsParameters;
     }
@@ -333,6 +353,7 @@ public class Target {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html
      * 
      */
+    @JsonIgnore
     public void setSqsParameters(SqsParameters sqsParameters) {
         this.sqsParameters = sqsParameters;
     }

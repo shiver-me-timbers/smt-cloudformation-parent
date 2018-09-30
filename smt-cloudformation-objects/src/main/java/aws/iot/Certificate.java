@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificateSigningRequest() {
         return certificateSigningRequest;
     }
@@ -50,6 +52,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-certificatesigningrequest
      * 
      */
+    @JsonIgnore
     public void setCertificateSigningRequest(CharSequence certificateSigningRequest) {
         this.certificateSigningRequest = certificateSigningRequest;
     }
@@ -63,6 +66,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status
      * 
      */
+    @JsonIgnore
     public CharSequence getStatus() {
         return status;
     }
@@ -71,6 +75,7 @@ public class Certificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-certificate.html#cfn-iot-certificate-status
      * 
      */
+    @JsonIgnore
     public void setStatus(CharSequence status) {
         this.status = status;
     }

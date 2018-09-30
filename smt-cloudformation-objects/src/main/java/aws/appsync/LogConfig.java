@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getCloudWatchLogsRoleArn() {
         return cloudWatchLogsRoleArn;
     }
@@ -50,6 +52,7 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
     }
@@ -63,6 +66,7 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
+    @JsonIgnore
     public CharSequence getFieldLogLevel() {
         return fieldLogLevel;
     }
@@ -71,6 +75,7 @@ public class LogConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-fieldloglevel
      * 
      */
+    @JsonIgnore
     public void setFieldLogLevel(CharSequence fieldLogLevel) {
         this.fieldLogLevel = fieldLogLevel;
     }

@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html
      * 
      */
+    @JsonIgnore
     public VolumeSpecification getVolumeSpecification() {
         return volumeSpecification;
     }
@@ -56,6 +58,7 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html
      * 
      */
+    @JsonIgnore
     public void setVolumeSpecification(VolumeSpecification volumeSpecification) {
         this.volumeSpecification = volumeSpecification;
     }
@@ -69,6 +72,7 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsblockdeviceconfig.html#cfn-elasticmapreduce-cluster-ebsblockdeviceconfig-volumesperinstance
      * 
      */
+    @JsonIgnore
     public Integer getVolumesPerInstance() {
         return volumesPerInstance;
     }
@@ -77,6 +81,7 @@ public class EbsBlockDeviceConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsblockdeviceconfig.html#cfn-elasticmapreduce-cluster-ebsblockdeviceconfig-volumesperinstance
      * 
      */
+    @JsonIgnore
     public void setVolumesPerInstance(Integer volumesPerInstance) {
         this.volumesPerInstance = volumesPerInstance;
     }

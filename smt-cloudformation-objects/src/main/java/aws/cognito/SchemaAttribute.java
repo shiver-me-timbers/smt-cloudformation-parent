@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -86,6 +87,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute
      * 
      */
+    @JsonIgnore
     public Boolean getDeveloperOnlyAttribute() {
         return developerOnlyAttribute;
     }
@@ -94,6 +96,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute
      * 
      */
+    @JsonIgnore
     public void setDeveloperOnlyAttribute(Boolean developerOnlyAttribute) {
         this.developerOnlyAttribute = developerOnlyAttribute;
     }
@@ -107,6 +110,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-mutable
      * 
      */
+    @JsonIgnore
     public Boolean getMutable() {
         return mutable;
     }
@@ -115,6 +119,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-mutable
      * 
      */
+    @JsonIgnore
     public void setMutable(Boolean mutable) {
         this.mutable = mutable;
     }
@@ -128,6 +133,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-attributedatatype
      * 
      */
+    @JsonIgnore
     public CharSequence getAttributeDataType() {
         return attributeDataType;
     }
@@ -136,6 +142,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-attributedatatype
      * 
      */
+    @JsonIgnore
     public void setAttributeDataType(CharSequence attributeDataType) {
         this.attributeDataType = attributeDataType;
     }
@@ -151,6 +158,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html
      * 
      */
+    @JsonIgnore
     public StringAttributeConstraints getStringAttributeConstraints() {
         return stringAttributeConstraints;
     }
@@ -161,6 +169,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html
      * 
      */
+    @JsonIgnore
     public void setStringAttributeConstraints(StringAttributeConstraints stringAttributeConstraints) {
         this.stringAttributeConstraints = stringAttributeConstraints;
     }
@@ -174,6 +183,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required
      * 
      */
+    @JsonIgnore
     public Boolean getRequired() {
         return required;
     }
@@ -182,6 +192,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required
      * 
      */
+    @JsonIgnore
     public void setRequired(Boolean required) {
         this.required = required;
     }
@@ -197,6 +208,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html
      * 
      */
+    @JsonIgnore
     public NumberAttributeConstraints getNumberAttributeConstraints() {
         return numberAttributeConstraints;
     }
@@ -207,6 +219,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html
      * 
      */
+    @JsonIgnore
     public void setNumberAttributeConstraints(NumberAttributeConstraints numberAttributeConstraints) {
         this.numberAttributeConstraints = numberAttributeConstraints;
     }
@@ -220,6 +233,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -228,6 +242,7 @@ public class SchemaAttribute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

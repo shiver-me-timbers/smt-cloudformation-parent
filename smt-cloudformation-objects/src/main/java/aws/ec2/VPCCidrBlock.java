@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock
      * 
      */
+    @JsonIgnore
     public Boolean getAmazonProvidedIpv6CidrBlock() {
         return amazonProvidedIpv6CidrBlock;
     }
@@ -58,6 +60,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-amazonprovidedipv6cidrblock
      * 
      */
+    @JsonIgnore
     public void setAmazonProvidedIpv6CidrBlock(Boolean amazonProvidedIpv6CidrBlock) {
         this.amazonProvidedIpv6CidrBlock = amazonProvidedIpv6CidrBlock;
     }
@@ -71,6 +74,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -79,6 +83,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-cidrblock
      * 
      */
+    @JsonIgnore
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -92,6 +97,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -100,6 +106,7 @@ public class VPCCidrBlock {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpccidrblock.html#cfn-ec2-vpccidrblock-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -51,6 +52,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic
      * 
      */
+    @JsonIgnore
     public Double getPercentTraffic() {
         return percentTraffic;
     }
@@ -59,6 +61,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic
      * 
      */
+    @JsonIgnore
     public void setPercentTraffic(Double percentTraffic) {
         this.percentTraffic = percentTraffic;
     }
@@ -72,6 +75,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-stagevariableoverrides
      * 
      */
+    @JsonIgnore
     public Map<String, String> getStageVariableOverrides() {
         return stageVariableOverrides;
     }
@@ -80,6 +84,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-stagevariableoverrides
      * 
      */
+    @JsonIgnore
     public void setStageVariableOverrides(Map<String, String> stageVariableOverrides) {
         this.stageVariableOverrides = stageVariableOverrides;
     }
@@ -93,6 +98,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-usestagecache
      * 
      */
+    @JsonIgnore
     public Boolean getUseStageCache() {
         return useStageCache;
     }
@@ -101,6 +107,7 @@ public class DeploymentCanarySettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-usestagecache
      * 
      */
+    @JsonIgnore
     public void setUseStageCache(Boolean useStageCache) {
         this.useStageCache = useStageCache;
     }

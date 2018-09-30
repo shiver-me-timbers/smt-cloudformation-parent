@@ -4,6 +4,7 @@ package aws.ecs;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -282,6 +283,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getCommand() {
         return command;
     }
@@ -290,6 +292,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command
      * 
      */
+    @JsonIgnore
     public void setCommand(Set<CharSequence> command) {
         this.command = command;
     }
@@ -303,6 +306,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-cpu
      * 
      */
+    @JsonIgnore
     public Integer getCpu() {
         return cpu;
     }
@@ -311,6 +315,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-cpu
      * 
      */
+    @JsonIgnore
     public void setCpu(Integer cpu) {
         this.cpu = cpu;
     }
@@ -324,6 +329,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking
      * 
      */
+    @JsonIgnore
     public Boolean getDisableNetworking() {
         return disableNetworking;
     }
@@ -332,6 +338,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-disablenetworking
      * 
      */
+    @JsonIgnore
     public void setDisableNetworking(Boolean disableNetworking) {
         this.disableNetworking = disableNetworking;
     }
@@ -345,6 +352,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnssearchdomains
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDnsSearchDomains() {
         return dnsSearchDomains;
     }
@@ -353,6 +361,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnssearchdomains
      * 
      */
+    @JsonIgnore
     public void setDnsSearchDomains(Set<CharSequence> dnsSearchDomains) {
         this.dnsSearchDomains = dnsSearchDomains;
     }
@@ -366,6 +375,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnsservers
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDnsServers() {
         return dnsServers;
     }
@@ -374,6 +384,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dnsservers
      * 
      */
+    @JsonIgnore
     public void setDnsServers(Set<CharSequence> dnsServers) {
         this.dnsServers = dnsServers;
     }
@@ -387,6 +398,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockerlabels
      * 
      */
+    @JsonIgnore
     public Map<String, String> getDockerLabels() {
         return dockerLabels;
     }
@@ -395,6 +407,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockerlabels
      * 
      */
+    @JsonIgnore
     public void setDockerLabels(Map<String, String> dockerLabels) {
         this.dockerLabels = dockerLabels;
     }
@@ -408,6 +421,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockersecurityoptions
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDockerSecurityOptions() {
         return dockerSecurityOptions;
     }
@@ -416,6 +430,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-dockersecurityoptions
      * 
      */
+    @JsonIgnore
     public void setDockerSecurityOptions(Set<CharSequence> dockerSecurityOptions) {
         this.dockerSecurityOptions = dockerSecurityOptions;
     }
@@ -429,6 +444,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-entrypoint
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getEntryPoint() {
         return entryPoint;
     }
@@ -437,6 +453,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-entrypoint
      * 
      */
+    @JsonIgnore
     public void setEntryPoint(Set<CharSequence> entryPoint) {
         this.entryPoint = entryPoint;
     }
@@ -450,6 +467,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-environment
      * 
      */
+    @JsonIgnore
     public Set<KeyValuePair> getEnvironment() {
         return environment;
     }
@@ -458,6 +476,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-environment
      * 
      */
+    @JsonIgnore
     public void setEnvironment(Set<KeyValuePair> environment) {
         this.environment = environment;
     }
@@ -471,6 +490,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-essential
      * 
      */
+    @JsonIgnore
     public Boolean getEssential() {
         return essential;
     }
@@ -479,6 +499,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-essential
      * 
      */
+    @JsonIgnore
     public void setEssential(Boolean essential) {
         this.essential = essential;
     }
@@ -492,6 +513,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-extrahosts
      * 
      */
+    @JsonIgnore
     public Set<HostEntry> getExtraHosts() {
         return extraHosts;
     }
@@ -500,6 +522,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-extrahosts
      * 
      */
+    @JsonIgnore
     public void setExtraHosts(Set<HostEntry> extraHosts) {
         this.extraHosts = extraHosts;
     }
@@ -515,6 +538,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html
      * 
      */
+    @JsonIgnore
     public HealthCheck getHealthCheck() {
         return healthCheck;
     }
@@ -525,6 +549,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html
      * 
      */
+    @JsonIgnore
     public void setHealthCheck(HealthCheck healthCheck) {
         this.healthCheck = healthCheck;
     }
@@ -538,6 +563,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname
      * 
      */
+    @JsonIgnore
     public CharSequence getHostname() {
         return hostname;
     }
@@ -546,6 +572,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname
      * 
      */
+    @JsonIgnore
     public void setHostname(CharSequence hostname) {
         this.hostname = hostname;
     }
@@ -559,6 +586,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-image
      * 
      */
+    @JsonIgnore
     public CharSequence getImage() {
         return image;
     }
@@ -567,6 +595,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-image
      * 
      */
+    @JsonIgnore
     public void setImage(CharSequence image) {
         this.image = image;
     }
@@ -580,6 +609,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-links
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getLinks() {
         return links;
     }
@@ -588,6 +618,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-links
      * 
      */
+    @JsonIgnore
     public void setLinks(Set<CharSequence> links) {
         this.links = links;
     }
@@ -603,6 +634,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html
      * 
      */
+    @JsonIgnore
     public LinuxParameters getLinuxParameters() {
         return linuxParameters;
     }
@@ -613,6 +645,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html
      * 
      */
+    @JsonIgnore
     public void setLinuxParameters(LinuxParameters linuxParameters) {
         this.linuxParameters = linuxParameters;
     }
@@ -628,6 +661,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html
      * 
      */
+    @JsonIgnore
     public LogConfiguration getLogConfiguration() {
         return logConfiguration;
     }
@@ -638,6 +672,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setLogConfiguration(LogConfiguration logConfiguration) {
         this.logConfiguration = logConfiguration;
     }
@@ -651,6 +686,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory
      * 
      */
+    @JsonIgnore
     public Integer getMemory() {
         return memory;
     }
@@ -659,6 +695,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory
      * 
      */
+    @JsonIgnore
     public void setMemory(Integer memory) {
         this.memory = memory;
     }
@@ -672,6 +709,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memoryreservation
      * 
      */
+    @JsonIgnore
     public Integer getMemoryReservation() {
         return memoryReservation;
     }
@@ -680,6 +718,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memoryreservation
      * 
      */
+    @JsonIgnore
     public void setMemoryReservation(Integer memoryReservation) {
         this.memoryReservation = memoryReservation;
     }
@@ -693,6 +732,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints
      * 
      */
+    @JsonIgnore
     public Set<MountPoint> getMountPoints() {
         return mountPoints;
     }
@@ -701,6 +741,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints
      * 
      */
+    @JsonIgnore
     public void setMountPoints(Set<MountPoint> mountPoints) {
         this.mountPoints = mountPoints;
     }
@@ -714,6 +755,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -722,6 +764,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -735,6 +778,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-portmappings
      * 
      */
+    @JsonIgnore
     public Set<PortMapping> getPortMappings() {
         return portMappings;
     }
@@ -743,6 +787,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-portmappings
      * 
      */
+    @JsonIgnore
     public void setPortMappings(Set<PortMapping> portMappings) {
         this.portMappings = portMappings;
     }
@@ -756,6 +801,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-privileged
      * 
      */
+    @JsonIgnore
     public Boolean getPrivileged() {
         return privileged;
     }
@@ -764,6 +810,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-privileged
      * 
      */
+    @JsonIgnore
     public void setPrivileged(Boolean privileged) {
         this.privileged = privileged;
     }
@@ -777,6 +824,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem
      * 
      */
+    @JsonIgnore
     public Boolean getReadonlyRootFilesystem() {
         return readonlyRootFilesystem;
     }
@@ -785,6 +833,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem
      * 
      */
+    @JsonIgnore
     public void setReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
     }
@@ -800,6 +849,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html
      * 
      */
+    @JsonIgnore
     public RepositoryCredentials getRepositoryCredentials() {
         return repositoryCredentials;
     }
@@ -810,6 +860,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html
      * 
      */
+    @JsonIgnore
     public void setRepositoryCredentials(RepositoryCredentials repositoryCredentials) {
         this.repositoryCredentials = repositoryCredentials;
     }
@@ -823,6 +874,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
      */
+    @JsonIgnore
     public Set<Ulimit> getUlimits() {
         return ulimits;
     }
@@ -831,6 +883,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
      */
+    @JsonIgnore
     public void setUlimits(Set<Ulimit> ulimits) {
         this.ulimits = ulimits;
     }
@@ -844,6 +897,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-user
      * 
      */
+    @JsonIgnore
     public CharSequence getUser() {
         return user;
     }
@@ -852,6 +906,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-user
      * 
      */
+    @JsonIgnore
     public void setUser(CharSequence user) {
         this.user = user;
     }
@@ -865,6 +920,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom
      * 
      */
+    @JsonIgnore
     public Set<VolumeFrom> getVolumesFrom() {
         return volumesFrom;
     }
@@ -873,6 +929,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom
      * 
      */
+    @JsonIgnore
     public void setVolumesFrom(Set<VolumeFrom> volumesFrom) {
         this.volumesFrom = volumesFrom;
     }
@@ -886,6 +943,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-workingdirectory
      * 
      */
+    @JsonIgnore
     public CharSequence getWorkingDirectory() {
         return workingDirectory;
     }
@@ -894,6 +952,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-workingdirectory
      * 
      */
+    @JsonIgnore
     public void setWorkingDirectory(CharSequence workingDirectory) {
         this.workingDirectory = workingDirectory;
     }

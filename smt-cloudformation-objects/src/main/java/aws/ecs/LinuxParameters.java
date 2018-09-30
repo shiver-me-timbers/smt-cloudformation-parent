@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -75,6 +76,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html
      * 
      */
+    @JsonIgnore
     public KernelCapabilities getCapabilities() {
         return capabilities;
     }
@@ -85,6 +87,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html
      * 
      */
+    @JsonIgnore
     public void setCapabilities(KernelCapabilities capabilities) {
         this.capabilities = capabilities;
     }
@@ -98,6 +101,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices
      * 
      */
+    @JsonIgnore
     public Set<Device> getDevices() {
         return devices;
     }
@@ -106,6 +110,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices
      * 
      */
+    @JsonIgnore
     public void setDevices(Set<Device> devices) {
         this.devices = devices;
     }
@@ -119,6 +124,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
      * 
      */
+    @JsonIgnore
     public Boolean getInitProcessEnabled() {
         return initProcessEnabled;
     }
@@ -127,6 +133,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
      * 
      */
+    @JsonIgnore
     public void setInitProcessEnabled(Boolean initProcessEnabled) {
         this.initProcessEnabled = initProcessEnabled;
     }
@@ -140,6 +147,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
      * 
      */
+    @JsonIgnore
     public Integer getSharedMemorySize() {
         return sharedMemorySize;
     }
@@ -148,6 +156,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
      * 
      */
+    @JsonIgnore
     public void setSharedMemorySize(Integer sharedMemorySize) {
         this.sharedMemorySize = sharedMemorySize;
     }
@@ -161,6 +170,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
      * 
      */
+    @JsonIgnore
     public Set<Tmpfs> getTmpfs() {
         return tmpfs;
     }
@@ -169,6 +179,7 @@ public class LinuxParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
      * 
      */
+    @JsonIgnore
     public void setTmpfs(Set<Tmpfs> tmpfs) {
         this.tmpfs = tmpfs;
     }

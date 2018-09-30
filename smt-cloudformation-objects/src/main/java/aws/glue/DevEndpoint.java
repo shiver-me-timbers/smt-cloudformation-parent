@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -92,6 +93,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrajarss3path
      * 
      */
+    @JsonIgnore
     public CharSequence getExtraJarsS3Path() {
         return extraJarsS3Path;
     }
@@ -100,6 +102,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrajarss3path
      * 
      */
+    @JsonIgnore
     public void setExtraJarsS3Path(CharSequence extraJarsS3Path) {
         this.extraJarsS3Path = extraJarsS3Path;
     }
@@ -113,6 +116,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-endpointname
      * 
      */
+    @JsonIgnore
     public CharSequence getEndpointName() {
         return endpointName;
     }
@@ -121,6 +125,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-endpointname
      * 
      */
+    @JsonIgnore
     public void setEndpointName(CharSequence endpointName) {
         this.endpointName = endpointName;
     }
@@ -134,6 +139,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-publickey
      * 
      */
+    @JsonIgnore
     public CharSequence getPublicKey() {
         return publicKey;
     }
@@ -142,6 +148,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-publickey
      * 
      */
+    @JsonIgnore
     public void setPublicKey(CharSequence publicKey) {
         this.publicKey = publicKey;
     }
@@ -155,6 +162,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-numberofnodes
      * 
      */
+    @JsonIgnore
     public Integer getNumberOfNodes() {
         return numberOfNodes;
     }
@@ -163,6 +171,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-numberofnodes
      * 
      */
+    @JsonIgnore
     public void setNumberOfNodes(Integer numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
     }
@@ -176,6 +185,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -184,6 +194,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }
@@ -197,6 +208,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrapythonlibss3path
      * 
      */
+    @JsonIgnore
     public CharSequence getExtraPythonLibsS3Path() {
         return extraPythonLibsS3Path;
     }
@@ -205,6 +217,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-extrapythonlibss3path
      * 
      */
+    @JsonIgnore
     public void setExtraPythonLibsS3Path(CharSequence extraPythonLibsS3Path) {
         this.extraPythonLibsS3Path = extraPythonLibsS3Path;
     }
@@ -218,6 +231,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -226,6 +240,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-securitygroupids
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -239,6 +254,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -247,6 +263,7 @@ public class DevEndpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-devendpoint.html#cfn-glue-devendpoint-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

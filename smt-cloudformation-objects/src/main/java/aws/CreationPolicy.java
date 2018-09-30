@@ -1,6 +1,7 @@
 
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -20,10 +21,12 @@ public class CreationPolicy {
     @JsonProperty("ResourceSignal")
     private ResourceSignal resourceSignal;
 
+    @JsonIgnore
     public AutoScalingCreationPolicy getAutoScalingCreationPolicy() {
         return autoScalingCreationPolicy;
     }
 
+    @JsonIgnore
     public void setAutoScalingCreationPolicy(AutoScalingCreationPolicy autoScalingCreationPolicy) {
         this.autoScalingCreationPolicy = autoScalingCreationPolicy;
     }
@@ -33,10 +36,12 @@ public class CreationPolicy {
         return this;
     }
 
+    @JsonIgnore
     public ResourceSignal getResourceSignal() {
         return resourceSignal;
     }
 
+    @JsonIgnore
     public void setResourceSignal(ResourceSignal resourceSignal) {
         this.resourceSignal = resourceSignal;
     }

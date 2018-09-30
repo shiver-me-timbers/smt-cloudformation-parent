@@ -3,6 +3,7 @@ package aws.sns;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
      */
+    @JsonIgnore
     public CharSequence getDisplayName() {
         return displayName;
     }
@@ -60,6 +62,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname
      * 
      */
+    @JsonIgnore
     public void setDisplayName(CharSequence displayName) {
         this.displayName = displayName;
     }
@@ -73,6 +76,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
      */
+    @JsonIgnore
     public List<Subscription> getSubscription() {
         return subscription;
     }
@@ -81,6 +85,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
      */
+    @JsonIgnore
     public void setSubscription(List<Subscription> subscription) {
         this.subscription = subscription;
     }
@@ -94,6 +99,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicName() {
         return topicName;
     }
@@ -102,6 +108,7 @@ public class Topic {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
      */
+    @JsonIgnore
     public void setTopicName(CharSequence topicName) {
         this.topicName = topicName;
     }

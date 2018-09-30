@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3
      * 
      */
+    @JsonIgnore
     public Boolean getDeleteSourceFromS3() {
         return deleteSourceFromS3;
     }
@@ -58,6 +60,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-deletesourcefroms3
      * 
      */
+    @JsonIgnore
     public void setDeleteSourceFromS3(Boolean deleteSourceFromS3) {
         this.deleteSourceFromS3 = deleteSourceFromS3;
     }
@@ -71,6 +74,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -79,6 +83,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -92,6 +97,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-maxageindays
      * 
      */
+    @JsonIgnore
     public Integer getMaxAgeInDays() {
         return maxAgeInDays;
     }
@@ -100,6 +106,7 @@ public class MaxAgeRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html#cfn-elasticbeanstalk-application-maxagerule-maxageindays
      * 
      */
+    @JsonIgnore
     public void setMaxAgeInDays(Integer maxAgeInDays) {
         this.maxAgeInDays = maxAgeInDays;
     }

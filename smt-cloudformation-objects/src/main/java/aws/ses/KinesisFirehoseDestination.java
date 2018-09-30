@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class KinesisFirehoseDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getIAMRoleARN() {
         return iAMRoleARN;
     }
@@ -50,6 +52,7 @@ public class KinesisFirehoseDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-iamrolearn
      * 
      */
+    @JsonIgnore
     public void setIAMRoleARN(CharSequence iAMRoleARN) {
         this.iAMRoleARN = iAMRoleARN;
     }
@@ -63,6 +66,7 @@ public class KinesisFirehoseDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-deliverystreamarn
      * 
      */
+    @JsonIgnore
     public CharSequence getDeliveryStreamARN() {
         return deliveryStreamARN;
     }
@@ -71,6 +75,7 @@ public class KinesisFirehoseDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html#cfn-ses-configurationseteventdestination-kinesisfirehosedestination-deliverystreamarn
      * 
      */
+    @JsonIgnore
     public void setDeliveryStreamARN(CharSequence deliveryStreamARN) {
         this.deliveryStreamARN = deliveryStreamARN;
     }

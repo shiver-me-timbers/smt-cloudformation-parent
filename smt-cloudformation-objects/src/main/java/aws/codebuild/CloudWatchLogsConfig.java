@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-status
      * 
      */
+    @JsonIgnore
     public CharSequence getStatus() {
         return status;
     }
@@ -58,6 +60,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-status
      * 
      */
+    @JsonIgnore
     public void setStatus(CharSequence status) {
         this.status = status;
     }
@@ -71,6 +74,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-groupname
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -79,6 +83,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-groupname
      * 
      */
+    @JsonIgnore
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -92,6 +97,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-streamname
      * 
      */
+    @JsonIgnore
     public CharSequence getStreamName() {
         return streamName;
     }
@@ -100,6 +106,7 @@ public class CloudWatchLogsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html#cfn-codebuild-project-cloudwatchlogsconfig-streamname
      * 
      */
+    @JsonIgnore
     public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }

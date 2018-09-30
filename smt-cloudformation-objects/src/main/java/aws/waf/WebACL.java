@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
+    @JsonIgnore
     public WafAction getDefaultAction() {
         return defaultAction;
     }
@@ -76,6 +78,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
+    @JsonIgnore
     public void setDefaultAction(WafAction defaultAction) {
         this.defaultAction = defaultAction;
     }
@@ -89,6 +92,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-metricname
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -97,6 +101,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-metricname
      * 
      */
+    @JsonIgnore
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -110,6 +115,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -118,6 +124,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -131,6 +138,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-rules
      * 
      */
+    @JsonIgnore
     public Set<ActivatedRule> getRules() {
         return rules;
     }
@@ -139,6 +147,7 @@ public class WebACL {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-rules
      * 
      */
+    @JsonIgnore
     public void setRules(Set<ActivatedRule> rules) {
         this.rules = rules;
     }

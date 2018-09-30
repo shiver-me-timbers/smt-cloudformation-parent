@@ -1,6 +1,7 @@
 
 package aws.ecr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
+    @JsonIgnore
     public LifecyclePolicy getLifecyclePolicy() {
         return lifecyclePolicy;
     }
@@ -64,6 +66,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
+    @JsonIgnore
     public void setLifecyclePolicy(LifecyclePolicy lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
     }
@@ -77,6 +80,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
      */
+    @JsonIgnore
     public CharSequence getRepositoryName() {
         return repositoryName;
     }
@@ -85,6 +89,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
      */
+    @JsonIgnore
     public void setRepositoryName(CharSequence repositoryName) {
         this.repositoryName = repositoryName;
     }
@@ -98,6 +103,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
+    @JsonIgnore
     public Object getRepositoryPolicyText() {
         return repositoryPolicyText;
     }
@@ -106,6 +112,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositorypolicytext
      * 
      */
+    @JsonIgnore
     public void setRepositoryPolicyText(Object repositoryPolicyText) {
         this.repositoryPolicyText = repositoryPolicyText;
     }

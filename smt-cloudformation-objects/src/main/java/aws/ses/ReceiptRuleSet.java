@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class ReceiptRuleSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html#cfn-ses-receiptruleset-rulesetname
      * 
      */
+    @JsonIgnore
     public CharSequence getRuleSetName() {
         return ruleSetName;
     }
@@ -42,6 +44,7 @@ public class ReceiptRuleSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html#cfn-ses-receiptruleset-rulesetname
      * 
      */
+    @JsonIgnore
     public void setRuleSetName(CharSequence ruleSetName) {
         this.ruleSetName = ruleSetName;
     }

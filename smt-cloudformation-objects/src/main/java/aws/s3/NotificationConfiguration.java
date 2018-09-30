@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -56,6 +57,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig
      * 
      */
+    @JsonIgnore
     public Set<LambdaConfiguration> getLambdaConfigurations() {
         return lambdaConfigurations;
     }
@@ -64,6 +66,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig
      * 
      */
+    @JsonIgnore
     public void setLambdaConfigurations(Set<LambdaConfiguration> lambdaConfigurations) {
         this.lambdaConfigurations = lambdaConfigurations;
     }
@@ -77,6 +80,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-queueconfig
      * 
      */
+    @JsonIgnore
     public Set<QueueConfiguration> getQueueConfigurations() {
         return queueConfigurations;
     }
@@ -85,6 +89,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-queueconfig
      * 
      */
+    @JsonIgnore
     public void setQueueConfigurations(Set<QueueConfiguration> queueConfigurations) {
         this.queueConfigurations = queueConfigurations;
     }
@@ -98,6 +103,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-topicconfig
      * 
      */
+    @JsonIgnore
     public Set<TopicConfiguration> getTopicConfigurations() {
         return topicConfigurations;
     }
@@ -106,6 +112,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-topicconfig
      * 
      */
+    @JsonIgnore
     public void setTopicConfigurations(Set<TopicConfiguration> topicConfigurations) {
         this.topicConfigurations = topicConfigurations;
     }

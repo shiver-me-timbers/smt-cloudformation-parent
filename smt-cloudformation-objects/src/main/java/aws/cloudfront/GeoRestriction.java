@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class GeoRestriction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-locations
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getLocations() {
         return locations;
     }
@@ -52,6 +54,7 @@ public class GeoRestriction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-locations
      * 
      */
+    @JsonIgnore
     public void setLocations(List<CharSequence> locations) {
         this.locations = locations;
     }
@@ -65,6 +68,7 @@ public class GeoRestriction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-restrictiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getRestrictionType() {
         return restrictionType;
     }
@@ -73,6 +77,7 @@ public class GeoRestriction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-georestriction.html#cfn-cloudfront-distribution-georestriction-restrictiontype
      * 
      */
+    @JsonIgnore
     public void setRestrictionType(CharSequence restrictionType) {
         this.restrictionType = restrictionType;
     }

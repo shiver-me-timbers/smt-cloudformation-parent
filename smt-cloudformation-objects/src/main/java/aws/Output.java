@@ -1,6 +1,7 @@
 
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -47,10 +48,12 @@ public class Output
         super(name);
     }
 
+    @JsonIgnore
     public String getDescription() {
         return description;
     }
 
+    @JsonIgnore
     public void setDescription(String description) {
         this.description = description;
     }
@@ -60,10 +63,12 @@ public class Output
         return this;
     }
 
+    @JsonIgnore
     public String getValue() {
         return value;
     }
 
+    @JsonIgnore
     public void setValue(String value) {
         this.value = value;
     }
@@ -73,10 +78,12 @@ public class Output
         return this;
     }
 
+    @JsonIgnore
     public Export getExport() {
         return export;
     }
 
+    @JsonIgnore
     public void setExport(Export export) {
         this.export = export;
     }

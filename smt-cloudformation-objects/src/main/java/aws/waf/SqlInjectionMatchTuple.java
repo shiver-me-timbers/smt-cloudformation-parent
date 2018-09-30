@@ -1,6 +1,7 @@
 
 package aws.waf;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -56,6 +58,7 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
@@ -69,6 +72,7 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation
      * 
      */
+    @JsonIgnore
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -77,6 +81,7 @@ public class SqlInjectionMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation
      * 
      */
+    @JsonIgnore
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }

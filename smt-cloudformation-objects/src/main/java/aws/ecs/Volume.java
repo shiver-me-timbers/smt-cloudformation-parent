@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -56,6 +57,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html
      * 
      */
+    @JsonIgnore
     public DockerVolumeConfiguration getDockerVolumeConfiguration() {
         return dockerVolumeConfiguration;
     }
@@ -66,6 +68,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setDockerVolumeConfiguration(DockerVolumeConfiguration dockerVolumeConfiguration) {
         this.dockerVolumeConfiguration = dockerVolumeConfiguration;
     }
@@ -81,6 +84,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html
      * 
      */
+    @JsonIgnore
     public HostVolumeProperties getHost() {
         return host;
     }
@@ -91,6 +95,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html
      * 
      */
+    @JsonIgnore
     public void setHost(HostVolumeProperties host) {
         this.host = host;
     }
@@ -104,6 +109,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -112,6 +118,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

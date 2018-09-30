@@ -3,6 +3,7 @@ package aws.apigateway;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-apistages
      * 
      */
+    @JsonIgnore
     public Set<ApiStage> getApiStages() {
         return apiStages;
     }
@@ -82,6 +84,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-apistages
      * 
      */
+    @JsonIgnore
     public void setApiStages(Set<ApiStage> apiStages) {
         this.apiStages = apiStages;
     }
@@ -95,6 +98,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -103,6 +107,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -118,6 +123,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html
      * 
      */
+    @JsonIgnore
     public QuotaSettings getQuota() {
         return quota;
     }
@@ -128,6 +134,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html
      * 
      */
+    @JsonIgnore
     public void setQuota(QuotaSettings quota) {
         this.quota = quota;
     }
@@ -143,6 +150,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
      * 
      */
+    @JsonIgnore
     public ThrottleSettings getThrottle() {
         return throttle;
     }
@@ -153,6 +161,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
      * 
      */
+    @JsonIgnore
     public void setThrottle(ThrottleSettings throttle) {
         this.throttle = throttle;
     }
@@ -166,6 +175,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname
      * 
      */
+    @JsonIgnore
     public CharSequence getUsagePlanName() {
         return usagePlanName;
     }
@@ -174,6 +184,7 @@ public class UsagePlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname
      * 
      */
+    @JsonIgnore
     public void setUsagePlanName(CharSequence usagePlanName) {
         this.usagePlanName = usagePlanName;
     }

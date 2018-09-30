@@ -3,6 +3,7 @@ package aws.elasticloadbalancing;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -78,6 +79,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport
      * 
      */
+    @JsonIgnore
     public CharSequence getInstancePort() {
         return instancePort;
     }
@@ -86,6 +88,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport
      * 
      */
+    @JsonIgnore
     public void setInstancePort(CharSequence instancePort) {
         this.instancePort = instancePort;
     }
@@ -99,6 +102,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceProtocol() {
         return instanceProtocol;
     }
@@ -107,6 +111,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceprotocol
      * 
      */
+    @JsonIgnore
     public void setInstanceProtocol(CharSequence instanceProtocol) {
         this.instanceProtocol = instanceProtocol;
     }
@@ -120,6 +125,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport
      * 
      */
+    @JsonIgnore
     public CharSequence getLoadBalancerPort() {
         return loadBalancerPort;
     }
@@ -128,6 +134,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-loadbalancerport
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerPort(CharSequence loadBalancerPort) {
         this.loadBalancerPort = loadBalancerPort;
     }
@@ -141,6 +148,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getPolicyNames() {
         return policyNames;
     }
@@ -149,6 +157,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-policynames
      * 
      */
+    @JsonIgnore
     public void setPolicyNames(Set<CharSequence> policyNames) {
         this.policyNames = policyNames;
     }
@@ -162,6 +171,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -170,6 +180,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -183,6 +194,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid
      * 
      */
+    @JsonIgnore
     public CharSequence getSSLCertificateId() {
         return sSLCertificateId;
     }
@@ -191,6 +203,7 @@ public class Listeners {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-sslcertificateid
      * 
      */
+    @JsonIgnore
     public void setSSLCertificateId(CharSequence sSLCertificateId) {
         this.sSLCertificateId = sSLCertificateId;
     }

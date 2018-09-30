@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-maxcapacity
      * 
      */
+    @JsonIgnore
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -50,6 +52,7 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-maxcapacity
      * 
      */
+    @JsonIgnore
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -63,6 +66,7 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-mincapacity
      * 
      */
+    @JsonIgnore
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -71,6 +75,7 @@ public class ScalingConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html#cfn-elasticmapreduce-cluster-scalingconstraints-mincapacity
      * 
      */
+    @JsonIgnore
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }

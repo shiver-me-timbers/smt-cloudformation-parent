@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class LoadBalancersConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
      * 
      */
+    @JsonIgnore
     public ClassicLoadBalancersConfig getClassicLoadBalancersConfig() {
         return classicLoadBalancersConfig;
     }
@@ -58,6 +60,7 @@ public class LoadBalancersConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
      * 
      */
+    @JsonIgnore
     public void setClassicLoadBalancersConfig(ClassicLoadBalancersConfig classicLoadBalancersConfig) {
         this.classicLoadBalancersConfig = classicLoadBalancersConfig;
     }
@@ -73,6 +76,7 @@ public class LoadBalancersConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html
      * 
      */
+    @JsonIgnore
     public TargetGroupsConfig getTargetGroupsConfig() {
         return targetGroupsConfig;
     }
@@ -83,6 +87,7 @@ public class LoadBalancersConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html
      * 
      */
+    @JsonIgnore
     public void setTargetGroupsConfig(TargetGroupsConfig targetGroupsConfig) {
         this.targetGroupsConfig = targetGroupsConfig;
     }

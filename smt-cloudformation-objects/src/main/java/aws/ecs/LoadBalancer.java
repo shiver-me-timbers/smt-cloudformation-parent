@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containername
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerName() {
         return containerName;
     }
@@ -66,6 +68,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containername
      * 
      */
+    @JsonIgnore
     public void setContainerName(CharSequence containerName) {
         this.containerName = containerName;
     }
@@ -79,6 +82,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containerport
      * 
      */
+    @JsonIgnore
     public Integer getContainerPort() {
         return containerPort;
     }
@@ -87,6 +91,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-containerport
      * 
      */
+    @JsonIgnore
     public void setContainerPort(Integer containerPort) {
         this.containerPort = containerPort;
     }
@@ -100,6 +105,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-loadbalancername
      * 
      */
+    @JsonIgnore
     public CharSequence getLoadBalancerName() {
         return loadBalancerName;
     }
@@ -108,6 +114,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-loadbalancername
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
     }
@@ -121,6 +128,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-targetgrouparn
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetGroupArn() {
         return targetGroupArn;
     }
@@ -129,6 +137,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html#cfn-ecs-service-loadbalancers-targetgrouparn
      * 
      */
+    @JsonIgnore
     public void setTargetGroupArn(CharSequence targetGroupArn) {
         this.targetGroupArn = targetGroupArn;
     }

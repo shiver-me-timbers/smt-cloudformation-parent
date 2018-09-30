@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -82,6 +83,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-defaultresult
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultResult() {
         return defaultResult;
     }
@@ -90,6 +92,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-defaultresult
      * 
      */
+    @JsonIgnore
     public void setDefaultResult(CharSequence defaultResult) {
         this.defaultResult = defaultResult;
     }
@@ -103,6 +106,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-heartbeattimeout
      * 
      */
+    @JsonIgnore
     public Integer getHeartbeatTimeout() {
         return heartbeatTimeout;
     }
@@ -111,6 +115,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-heartbeattimeout
      * 
      */
+    @JsonIgnore
     public void setHeartbeatTimeout(Integer heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
     }
@@ -124,6 +129,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-lifecyclehookname
      * 
      */
+    @JsonIgnore
     public CharSequence getLifecycleHookName() {
         return lifecycleHookName;
     }
@@ -132,6 +138,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-lifecyclehookname
      * 
      */
+    @JsonIgnore
     public void setLifecycleHookName(CharSequence lifecycleHookName) {
         this.lifecycleHookName = lifecycleHookName;
     }
@@ -145,6 +152,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-lifecycletransition
      * 
      */
+    @JsonIgnore
     public CharSequence getLifecycleTransition() {
         return lifecycleTransition;
     }
@@ -153,6 +161,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-lifecycletransition
      * 
      */
+    @JsonIgnore
     public void setLifecycleTransition(CharSequence lifecycleTransition) {
         this.lifecycleTransition = lifecycleTransition;
     }
@@ -166,6 +175,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-notificationmetadata
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationMetadata() {
         return notificationMetadata;
     }
@@ -174,6 +184,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-notificationmetadata
      * 
      */
+    @JsonIgnore
     public void setNotificationMetadata(CharSequence notificationMetadata) {
         this.notificationMetadata = notificationMetadata;
     }
@@ -187,6 +198,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-notificationtargetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationTargetARN() {
         return notificationTargetARN;
     }
@@ -195,6 +207,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-notificationtargetarn
      * 
      */
+    @JsonIgnore
     public void setNotificationTargetARN(CharSequence notificationTargetARN) {
         this.notificationTargetARN = notificationTargetARN;
     }
@@ -208,6 +221,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -216,6 +230,7 @@ public class LifecycleHookSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

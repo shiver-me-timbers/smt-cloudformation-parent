@@ -4,6 +4,7 @@ package aws.emr;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -55,6 +56,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification
      * 
      */
+    @JsonIgnore
     public CharSequence getClassification() {
         return classification;
     }
@@ -63,6 +65,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification
      * 
      */
+    @JsonIgnore
     public void setClassification(CharSequence classification) {
         this.classification = classification;
     }
@@ -76,6 +79,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurationproperties
      * 
      */
+    @JsonIgnore
     public Map<String, String> getConfigurationProperties() {
         return configurationProperties;
     }
@@ -84,6 +88,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurationproperties
      * 
      */
+    @JsonIgnore
     public void setConfigurationProperties(Map<String, String> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
@@ -97,6 +102,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations
      * 
      */
+    @JsonIgnore
     public Set<Configuration> getConfigurations() {
         return configurations;
     }
@@ -105,6 +111,7 @@ public class Configuration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations
      * 
      */
+    @JsonIgnore
     public void setConfigurations(Set<Configuration> configurations) {
         this.configurations = configurations;
     }

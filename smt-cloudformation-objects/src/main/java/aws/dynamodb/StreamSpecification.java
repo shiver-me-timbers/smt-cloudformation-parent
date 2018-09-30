@@ -1,6 +1,7 @@
 
 package aws.dynamodb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class StreamSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype
      * 
      */
+    @JsonIgnore
     public CharSequence getStreamViewType() {
         return streamViewType;
     }
@@ -42,6 +44,7 @@ public class StreamSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html#cfn-dynamodb-streamspecification-streamviewtype
      * 
      */
+    @JsonIgnore
     public void setStreamViewType(CharSequence streamViewType) {
         this.streamViewType = streamViewType;
     }

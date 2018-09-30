@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class ApplicationReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-applicationname
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -52,6 +54,7 @@ public class ApplicationReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-applicationname
      * 
      */
+    @JsonIgnore
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -67,6 +70,7 @@ public class ApplicationReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html
      * 
      */
+    @JsonIgnore
     public S3ReferenceDataSource getReferenceDataSource() {
         return referenceDataSource;
     }
@@ -77,6 +81,7 @@ public class ApplicationReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html
      * 
      */
+    @JsonIgnore
     public void setReferenceDataSource(S3ReferenceDataSource referenceDataSource) {
         this.referenceDataSource = referenceDataSource;
     }

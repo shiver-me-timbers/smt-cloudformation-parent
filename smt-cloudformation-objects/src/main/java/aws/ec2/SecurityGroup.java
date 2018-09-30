@@ -4,6 +4,7 @@ package aws.ec2;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -77,6 +78,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupDescription() {
         return groupDescription;
     }
@@ -85,6 +87,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupdescription
      * 
      */
+    @JsonIgnore
     public void setGroupDescription(CharSequence groupDescription) {
         this.groupDescription = groupDescription;
     }
@@ -98,6 +101,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname
      * 
      */
+    @JsonIgnore
     public CharSequence getGroupName() {
         return groupName;
     }
@@ -106,6 +110,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-groupname
      * 
      */
+    @JsonIgnore
     public void setGroupName(CharSequence groupName) {
         this.groupName = groupName;
     }
@@ -119,6 +124,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress
      * 
      */
+    @JsonIgnore
     public List<Egress> getSecurityGroupEgress() {
         return securityGroupEgress;
     }
@@ -127,6 +133,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupEgress(List<Egress> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
     }
@@ -140,6 +147,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
+    @JsonIgnore
     public List<Ingress> getSecurityGroupIngress() {
         return securityGroupIngress;
     }
@@ -148,6 +156,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupIngress(List<Ingress> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
     }
@@ -161,6 +170,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -169,6 +179,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -182,6 +193,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -190,6 +202,7 @@ public class SecurityGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

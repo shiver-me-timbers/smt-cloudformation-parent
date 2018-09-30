@@ -3,6 +3,7 @@ package aws.iam;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceProfileName() {
         return instanceProfileName;
     }
@@ -60,6 +62,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-instanceprofilename
      * 
      */
+    @JsonIgnore
     public void setInstanceProfileName(CharSequence instanceProfileName) {
         this.instanceProfileName = instanceProfileName;
     }
@@ -73,6 +76,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path
      * 
      */
+    @JsonIgnore
     public CharSequence getPath() {
         return path;
     }
@@ -81,6 +85,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-path
      * 
      */
+    @JsonIgnore
     public void setPath(CharSequence path) {
         this.path = path;
     }
@@ -94,6 +99,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getRoles() {
         return roles;
     }
@@ -102,6 +108,7 @@ public class InstanceProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-instanceprofile.html#cfn-iam-instanceprofile-roles
      * 
      */
+    @JsonIgnore
     public void setRoles(List<CharSequence> roles) {
         this.roles = roles;
     }

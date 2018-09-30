@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -84,6 +85,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-input.html#cfn-kinesisanalytics-application-input-nameprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getNamePrefix() {
         return namePrefix;
     }
@@ -92,6 +94,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-input.html#cfn-kinesisanalytics-application-input-nameprefix
      * 
      */
+    @JsonIgnore
     public void setNamePrefix(CharSequence namePrefix) {
         this.namePrefix = namePrefix;
     }
@@ -107,6 +110,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html
      * 
      */
+    @JsonIgnore
     public InputSchema getInputSchema() {
         return inputSchema;
     }
@@ -117,6 +121,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html
      * 
      */
+    @JsonIgnore
     public void setInputSchema(InputSchema inputSchema) {
         this.inputSchema = inputSchema;
     }
@@ -132,6 +137,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-kinesisstreamsinput.html
      * 
      */
+    @JsonIgnore
     public KinesisStreamsInput getKinesisStreamsInput() {
         return kinesisStreamsInput;
     }
@@ -142,6 +148,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-kinesisstreamsinput.html
      * 
      */
+    @JsonIgnore
     public void setKinesisStreamsInput(KinesisStreamsInput kinesisStreamsInput) {
         this.kinesisStreamsInput = kinesisStreamsInput;
     }
@@ -157,6 +164,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-kinesisfirehoseinput.html
      * 
      */
+    @JsonIgnore
     public KinesisFirehoseInput getKinesisFirehoseInput() {
         return kinesisFirehoseInput;
     }
@@ -167,6 +175,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-kinesisfirehoseinput.html
      * 
      */
+    @JsonIgnore
     public void setKinesisFirehoseInput(KinesisFirehoseInput kinesisFirehoseInput) {
         this.kinesisFirehoseInput = kinesisFirehoseInput;
     }
@@ -182,6 +191,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputprocessingconfiguration.html
      * 
      */
+    @JsonIgnore
     public InputProcessingConfiguration getInputProcessingConfiguration() {
         return inputProcessingConfiguration;
     }
@@ -192,6 +202,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputprocessingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setInputProcessingConfiguration(InputProcessingConfiguration inputProcessingConfiguration) {
         this.inputProcessingConfiguration = inputProcessingConfiguration;
     }
@@ -207,6 +218,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputparallelism.html
      * 
      */
+    @JsonIgnore
     public InputParallelism getInputParallelism() {
         return inputParallelism;
     }
@@ -217,6 +229,7 @@ public class Input {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputparallelism.html
      * 
      */
+    @JsonIgnore
     public void setInputParallelism(InputParallelism inputParallelism) {
         this.inputParallelism = inputParallelism;
     }

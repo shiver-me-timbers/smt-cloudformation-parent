@@ -1,6 +1,7 @@
 
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -20,10 +21,12 @@ public class ResourceSignal {
     @JsonProperty("Timeout")
     private String timeout;
 
+    @JsonIgnore
     public Integer getCount() {
         return count;
     }
 
+    @JsonIgnore
     public void setCount(Integer count) {
         this.count = count;
     }
@@ -33,10 +36,12 @@ public class ResourceSignal {
         return this;
     }
 
+    @JsonIgnore
     public String getTimeout() {
         return timeout;
     }
 
+    @JsonIgnore
     public void setTimeout(String timeout) {
         this.timeout = timeout;
     }

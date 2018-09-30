@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart
      * 
      */
+    @JsonIgnore
     public CharSequence getHtmlPart() {
         return htmlPart;
     }
@@ -66,6 +68,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart
      * 
      */
+    @JsonIgnore
     public void setHtmlPart(CharSequence htmlPart) {
         this.htmlPart = htmlPart;
     }
@@ -79,6 +82,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart
      * 
      */
+    @JsonIgnore
     public CharSequence getTextPart() {
         return textPart;
     }
@@ -87,6 +91,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart
      * 
      */
+    @JsonIgnore
     public void setTextPart(CharSequence textPart) {
         this.textPart = textPart;
     }
@@ -100,6 +105,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename
      * 
      */
+    @JsonIgnore
     public CharSequence getTemplateName() {
         return templateName;
     }
@@ -108,6 +114,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename
      * 
      */
+    @JsonIgnore
     public void setTemplateName(CharSequence templateName) {
         this.templateName = templateName;
     }
@@ -121,6 +128,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart
      * 
      */
+    @JsonIgnore
     public CharSequence getSubjectPart() {
         return subjectPart;
     }
@@ -129,6 +137,7 @@ public class Template {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart
      * 
      */
+    @JsonIgnore
     public void setSubjectPart(CharSequence subjectPart) {
         this.subjectPart = subjectPart;
     }

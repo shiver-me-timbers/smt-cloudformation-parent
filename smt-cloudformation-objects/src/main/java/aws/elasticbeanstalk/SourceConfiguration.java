@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class SourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -50,6 +52,7 @@ public class SourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-applicationname
      * 
      */
+    @JsonIgnore
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -63,6 +66,7 @@ public class SourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename
      * 
      */
+    @JsonIgnore
     public CharSequence getTemplateName() {
         return templateName;
     }
@@ -71,6 +75,7 @@ public class SourceConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration-templatename
      * 
      */
+    @JsonIgnore
     public void setTemplateName(CharSequence templateName) {
         this.templateName = templateName;
     }

@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -60,6 +62,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -73,6 +76,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution
      * 
      */
+    @JsonIgnore
     public CharSequence getAmbiguousRoleResolution() {
         return ambiguousRoleResolution;
     }
@@ -81,6 +85,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-ambiguousroleresolution
      * 
      */
+    @JsonIgnore
     public void setAmbiguousRoleResolution(CharSequence ambiguousRoleResolution) {
         this.ambiguousRoleResolution = ambiguousRoleResolution;
     }
@@ -96,6 +101,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html
      * 
      */
+    @JsonIgnore
     public RulesConfigurationType getRulesConfiguration() {
         return rulesConfiguration;
     }
@@ -106,6 +112,7 @@ public class RoleMapping {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html
      * 
      */
+    @JsonIgnore
     public void setRulesConfiguration(RulesConfigurationType rulesConfiguration) {
         this.rulesConfiguration = rulesConfiguration;
     }

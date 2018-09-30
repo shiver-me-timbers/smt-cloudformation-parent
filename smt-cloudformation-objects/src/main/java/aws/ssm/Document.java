@@ -4,6 +4,7 @@ package aws.ssm;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -53,6 +54,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
+    @JsonIgnore
     public Object getContent() {
         return content;
     }
@@ -61,6 +63,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-content
      * 
      */
+    @JsonIgnore
     public void setContent(Object content) {
         this.content = content;
     }
@@ -74,6 +77,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
      * 
      */
+    @JsonIgnore
     public CharSequence getDocumentType() {
         return documentType;
     }
@@ -82,6 +86,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
      * 
      */
+    @JsonIgnore
     public void setDocumentType(CharSequence documentType) {
         this.documentType = documentType;
     }
@@ -95,6 +100,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -103,6 +109,7 @@ public class Document {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -83,6 +84,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html
      * 
      */
+    @JsonIgnore
     public ArtifactStore getArtifactStore() {
         return artifactStore;
     }
@@ -93,6 +95,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html
      * 
      */
+    @JsonIgnore
     public void setArtifactStore(ArtifactStore artifactStore) {
         this.artifactStore = artifactStore;
     }
@@ -106,6 +109,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
+    @JsonIgnore
     public Set<StageTransition> getDisableInboundStageTransitions() {
         return disableInboundStageTransitions;
     }
@@ -114,6 +118,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
      */
+    @JsonIgnore
     public void setDisableInboundStageTransitions(Set<StageTransition> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
     }
@@ -127,6 +132,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -135,6 +141,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -148,6 +155,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate
      * 
      */
+    @JsonIgnore
     public Boolean getRestartExecutionOnUpdate() {
         return restartExecutionOnUpdate;
     }
@@ -156,6 +164,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-restartexecutiononupdate
      * 
      */
+    @JsonIgnore
     public void setRestartExecutionOnUpdate(Boolean restartExecutionOnUpdate) {
         this.restartExecutionOnUpdate = restartExecutionOnUpdate;
     }
@@ -169,6 +178,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -177,6 +187,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -190,6 +201,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
+    @JsonIgnore
     public Set<StageDeclaration> getStages() {
         return stages;
     }
@@ -198,6 +210,7 @@ public class Pipeline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages
      * 
      */
+    @JsonIgnore
     public void setStages(Set<StageDeclaration> stages) {
         this.stages = stages;
     }

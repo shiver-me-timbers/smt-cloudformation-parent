@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
      * 
      */
+    @JsonIgnore
     public Boolean getEnableNonSecurity() {
         return enableNonSecurity;
     }
@@ -68,6 +70,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
      * 
      */
+    @JsonIgnore
     public void setEnableNonSecurity(Boolean enableNonSecurity) {
         this.enableNonSecurity = enableNonSecurity;
     }
@@ -83,6 +86,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
+    @JsonIgnore
     public PatchFilterGroup getPatchFilterGroup() {
         return patchFilterGroup;
     }
@@ -93,6 +97,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
+    @JsonIgnore
     public void setPatchFilterGroup(PatchFilterGroup patchFilterGroup) {
         this.patchFilterGroup = patchFilterGroup;
     }
@@ -106,6 +111,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays
      * 
      */
+    @JsonIgnore
     public Integer getApproveAfterDays() {
         return approveAfterDays;
     }
@@ -114,6 +120,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays
      * 
      */
+    @JsonIgnore
     public void setApproveAfterDays(Integer approveAfterDays) {
         this.approveAfterDays = approveAfterDays;
     }
@@ -127,6 +134,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel
      * 
      */
+    @JsonIgnore
     public CharSequence getComplianceLevel() {
         return complianceLevel;
     }
@@ -135,6 +143,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-compliancelevel
      * 
      */
+    @JsonIgnore
     public void setComplianceLevel(CharSequence complianceLevel) {
         this.complianceLevel = complianceLevel;
     }

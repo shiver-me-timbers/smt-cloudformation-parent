@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -82,6 +84,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname
      * 
      */
+    @JsonIgnore
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -95,6 +98,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricNamespace() {
         return metricNamespace;
     }
@@ -103,6 +107,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricnamespace
      * 
      */
+    @JsonIgnore
     public void setMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
     }
@@ -116,6 +121,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricTimestamp() {
         return metricTimestamp;
     }
@@ -124,6 +130,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metrictimestamp
      * 
      */
+    @JsonIgnore
     public void setMetricTimestamp(CharSequence metricTimestamp) {
         this.metricTimestamp = metricTimestamp;
     }
@@ -137,6 +144,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricunit
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricUnit() {
         return metricUnit;
     }
@@ -145,6 +153,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricunit
      * 
      */
+    @JsonIgnore
     public void setMetricUnit(CharSequence metricUnit) {
         this.metricUnit = metricUnit;
     }
@@ -158,6 +167,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricValue() {
         return metricValue;
     }
@@ -166,6 +176,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricvalue
      * 
      */
+    @JsonIgnore
     public void setMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
     }
@@ -179,6 +190,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -187,6 +199,7 @@ public class CloudwatchMetricAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

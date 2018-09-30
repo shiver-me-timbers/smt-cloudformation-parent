@@ -4,6 +4,7 @@ package aws.ec2;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -77,6 +78,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid
      * 
      */
+    @JsonIgnore
     public CharSequence getPeerOwnerId() {
         return peerOwnerId;
     }
@@ -85,6 +87,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerownerid
      * 
      */
+    @JsonIgnore
     public void setPeerOwnerId(CharSequence peerOwnerId) {
         this.peerOwnerId = peerOwnerId;
     }
@@ -98,6 +101,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion
      * 
      */
+    @JsonIgnore
     public CharSequence getPeerRegion() {
         return peerRegion;
     }
@@ -106,6 +110,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerregion
      * 
      */
+    @JsonIgnore
     public void setPeerRegion(CharSequence peerRegion) {
         this.peerRegion = peerRegion;
     }
@@ -119,6 +124,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getPeerRoleArn() {
         return peerRoleArn;
     }
@@ -127,6 +133,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peerrolearn
      * 
      */
+    @JsonIgnore
     public void setPeerRoleArn(CharSequence peerRoleArn) {
         this.peerRoleArn = peerRoleArn;
     }
@@ -140,6 +147,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getPeerVpcId() {
         return peerVpcId;
     }
@@ -148,6 +156,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-peervpcid
      * 
      */
+    @JsonIgnore
     public void setPeerVpcId(CharSequence peerVpcId) {
         this.peerVpcId = peerVpcId;
     }
@@ -161,6 +170,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -169,6 +179,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -182,6 +193,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -190,6 +202,7 @@ public class VPCPeeringConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcpeeringconnection.html#cfn-ec2-vpcpeeringconnection-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

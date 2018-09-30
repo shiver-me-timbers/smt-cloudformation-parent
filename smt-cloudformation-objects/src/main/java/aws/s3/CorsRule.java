@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -81,6 +82,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAllowedHeaders() {
         return allowedHeaders;
     }
@@ -89,6 +91,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedheaders
      * 
      */
+    @JsonIgnore
     public void setAllowedHeaders(Set<CharSequence> allowedHeaders) {
         this.allowedHeaders = allowedHeaders;
     }
@@ -102,6 +105,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAllowedMethods() {
         return allowedMethods;
     }
@@ -110,6 +114,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedmethods
      * 
      */
+    @JsonIgnore
     public void setAllowedMethods(Set<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
     }
@@ -123,6 +128,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAllowedOrigins() {
         return allowedOrigins;
     }
@@ -131,6 +137,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-allowedorigins
      * 
      */
+    @JsonIgnore
     public void setAllowedOrigins(Set<CharSequence> allowedOrigins) {
         this.allowedOrigins = allowedOrigins;
     }
@@ -144,6 +151,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getExposedHeaders() {
         return exposedHeaders;
     }
@@ -152,6 +160,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-exposedheaders
      * 
      */
+    @JsonIgnore
     public void setExposedHeaders(Set<CharSequence> exposedHeaders) {
         this.exposedHeaders = exposedHeaders;
     }
@@ -165,6 +174,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -173,6 +183,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -186,6 +197,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage
      * 
      */
+    @JsonIgnore
     public Integer getMaxAge() {
         return maxAge;
     }
@@ -194,6 +206,7 @@ public class CorsRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html#cfn-s3-bucket-cors-corsrule-maxage
      * 
      */
+    @JsonIgnore
     public void setMaxAge(Integer maxAge) {
         this.maxAge = maxAge;
     }

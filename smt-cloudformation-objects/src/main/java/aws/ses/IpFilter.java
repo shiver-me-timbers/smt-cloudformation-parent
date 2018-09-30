@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class IpFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-policy
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicy() {
         return policy;
     }
@@ -50,6 +52,7 @@ public class IpFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-policy
      * 
      */
+    @JsonIgnore
     public void setPolicy(CharSequence policy) {
         this.policy = policy;
     }
@@ -63,6 +66,7 @@ public class IpFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-cidr
      * 
      */
+    @JsonIgnore
     public CharSequence getCidr() {
         return cidr;
     }
@@ -71,6 +75,7 @@ public class IpFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-cidr
      * 
      */
+    @JsonIgnore
     public void setCidr(CharSequence cidr) {
         this.cidr = cidr;
     }

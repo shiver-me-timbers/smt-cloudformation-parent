@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class RetryStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts
      * 
      */
+    @JsonIgnore
     public Integer getAttempts() {
         return attempts;
     }
@@ -42,6 +44,7 @@ public class RetryStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html#cfn-batch-jobdefinition-retrystrategy-attempts
      * 
      */
+    @JsonIgnore
     public void setAttempts(Integer attempts) {
         this.attempts = attempts;
     }

@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -56,6 +57,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
+    @JsonIgnore
     public AutoScalingThresholds getDownScaling() {
         return downScaling;
     }
@@ -66,6 +68,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
+    @JsonIgnore
     public void setDownScaling(AutoScalingThresholds downScaling) {
         this.downScaling = downScaling;
     }
@@ -79,6 +82,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable
      * 
      */
+    @JsonIgnore
     public Boolean getEnable() {
         return enable;
     }
@@ -87,6 +91,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable
      * 
      */
+    @JsonIgnore
     public void setEnable(Boolean enable) {
         this.enable = enable;
     }
@@ -102,6 +107,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
+    @JsonIgnore
     public AutoScalingThresholds getUpScaling() {
         return upScaling;
     }
@@ -112,6 +118,7 @@ public class LoadBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html
      * 
      */
+    @JsonIgnore
     public void setUpScaling(AutoScalingThresholds upScaling) {
         this.upScaling = upScaling;
     }

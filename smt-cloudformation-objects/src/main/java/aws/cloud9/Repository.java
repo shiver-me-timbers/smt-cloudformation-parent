@@ -1,6 +1,7 @@
 
 package aws.cloud9;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-pathcomponent
      * 
      */
+    @JsonIgnore
     public CharSequence getPathComponent() {
         return pathComponent;
     }
@@ -50,6 +52,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-pathcomponent
      * 
      */
+    @JsonIgnore
     public void setPathComponent(CharSequence pathComponent) {
         this.pathComponent = pathComponent;
     }
@@ -63,6 +66,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-repositoryurl
      * 
      */
+    @JsonIgnore
     public CharSequence getRepositoryUrl() {
         return repositoryUrl;
     }
@@ -71,6 +75,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-repositoryurl
      * 
      */
+    @JsonIgnore
     public void setRepositoryUrl(CharSequence repositoryUrl) {
         this.repositoryUrl = repositoryUrl;
     }

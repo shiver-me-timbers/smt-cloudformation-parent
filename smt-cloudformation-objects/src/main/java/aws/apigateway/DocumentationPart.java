@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
+    @JsonIgnore
     public Location getLocation() {
         return location;
     }
@@ -64,6 +66,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
+    @JsonIgnore
     public void setLocation(Location location) {
         this.location = location;
     }
@@ -77,6 +80,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
      */
+    @JsonIgnore
     public CharSequence getProperties() {
         return properties;
     }
@@ -85,6 +89,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
      */
+    @JsonIgnore
     public void setProperties(CharSequence properties) {
         this.properties = properties;
     }
@@ -98,6 +103,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
      * 
      */
+    @JsonIgnore
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -106,6 +112,7 @@ public class DocumentationPart {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
      * 
      */
+    @JsonIgnore
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }

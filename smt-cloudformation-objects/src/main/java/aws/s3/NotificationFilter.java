@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class NotificationFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html
      * 
      */
+    @JsonIgnore
     public S3KeyFilter getS3Key() {
         return s3Key;
     }
@@ -48,6 +50,7 @@ public class NotificationFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html
      * 
      */
+    @JsonIgnore
     public void setS3Key(S3KeyFilter s3Key) {
         this.s3Key = s3Key;
     }

@@ -1,6 +1,7 @@
 
 package aws.budgets;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-comparisonoperator
      * 
      */
+    @JsonIgnore
     public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
@@ -66,6 +68,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-comparisonoperator
      * 
      */
+    @JsonIgnore
     public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
@@ -79,6 +82,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-notificationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationType() {
         return notificationType;
     }
@@ -87,6 +91,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-notificationtype
      * 
      */
+    @JsonIgnore
     public void setNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
     }
@@ -100,6 +105,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-threshold
      * 
      */
+    @JsonIgnore
     public Double getThreshold() {
         return threshold;
     }
@@ -108,6 +114,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-threshold
      * 
      */
+    @JsonIgnore
     public void setThreshold(Double threshold) {
         this.threshold = threshold;
     }
@@ -121,6 +128,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-thresholdtype
      * 
      */
+    @JsonIgnore
     public CharSequence getThresholdType() {
         return thresholdType;
     }
@@ -129,6 +137,7 @@ public class Notification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html#cfn-budgets-budget-notification-thresholdtype
      * 
      */
+    @JsonIgnore
     public void setThresholdType(CharSequence thresholdType) {
         this.thresholdType = thresholdType;
     }

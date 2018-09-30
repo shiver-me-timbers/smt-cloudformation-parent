@@ -4,6 +4,7 @@ package aws.servicecatalog;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -109,6 +110,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
      * 
      */
+    @JsonIgnore
     public CharSequence getOwner() {
         return owner;
     }
@@ -117,6 +119,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
      * 
      */
+    @JsonIgnore
     public void setOwner(CharSequence owner) {
         this.owner = owner;
     }
@@ -130,6 +133,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportdescription
      * 
      */
+    @JsonIgnore
     public CharSequence getSupportDescription() {
         return supportDescription;
     }
@@ -138,6 +142,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportdescription
      * 
      */
+    @JsonIgnore
     public void setSupportDescription(CharSequence supportDescription) {
         this.supportDescription = supportDescription;
     }
@@ -151,6 +156,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -159,6 +165,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -172,6 +179,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-distributor
      * 
      */
+    @JsonIgnore
     public CharSequence getDistributor() {
         return distributor;
     }
@@ -180,6 +188,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-distributor
      * 
      */
+    @JsonIgnore
     public void setDistributor(CharSequence distributor) {
         this.distributor = distributor;
     }
@@ -193,6 +202,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportemail
      * 
      */
+    @JsonIgnore
     public CharSequence getSupportEmail() {
         return supportEmail;
     }
@@ -201,6 +211,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supportemail
      * 
      */
+    @JsonIgnore
     public void setSupportEmail(CharSequence supportEmail) {
         this.supportEmail = supportEmail;
     }
@@ -214,6 +225,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-acceptlanguage
      * 
      */
+    @JsonIgnore
     public CharSequence getAcceptLanguage() {
         return acceptLanguage;
     }
@@ -222,6 +234,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-acceptlanguage
      * 
      */
+    @JsonIgnore
     public void setAcceptLanguage(CharSequence acceptLanguage) {
         this.acceptLanguage = acceptLanguage;
     }
@@ -235,6 +248,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supporturl
      * 
      */
+    @JsonIgnore
     public CharSequence getSupportUrl() {
         return supportUrl;
     }
@@ -243,6 +257,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-supporturl
      * 
      */
+    @JsonIgnore
     public void setSupportUrl(CharSequence supportUrl) {
         this.supportUrl = supportUrl;
     }
@@ -256,6 +271,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -264,6 +280,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -277,6 +294,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -285,6 +303,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -298,6 +317,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters
      * 
      */
+    @JsonIgnore
     public List<ProvisioningArtifactProperties> getProvisioningArtifactParameters() {
         return provisioningArtifactParameters;
     }
@@ -306,6 +326,7 @@ public class CloudFormationProduct {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters
      * 
      */
+    @JsonIgnore
     public void setProvisioningArtifactParameters(List<ProvisioningArtifactProperties> provisioningArtifactParameters) {
         this.provisioningArtifactParameters = provisioningArtifactParameters;
     }

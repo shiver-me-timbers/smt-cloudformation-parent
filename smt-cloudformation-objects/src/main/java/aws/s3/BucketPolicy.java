@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getBucket() {
         return bucket;
     }
@@ -50,6 +52,7 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
      * 
      */
+    @JsonIgnore
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -63,6 +66,7 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
+    @JsonIgnore
     public Object getPolicyDocument() {
         return policyDocument;
     }
@@ -71,6 +75,7 @@ public class BucketPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
      * 
      */
+    @JsonIgnore
     public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }

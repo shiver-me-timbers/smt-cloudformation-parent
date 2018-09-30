@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion
      * 
      */
+    @JsonIgnore
     public CharSequence getAwsRegion() {
         return awsRegion;
     }
@@ -50,6 +52,7 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion
      * 
      */
+    @JsonIgnore
     public void setAwsRegion(CharSequence awsRegion) {
         this.awsRegion = awsRegion;
     }
@@ -63,6 +66,7 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint
      * 
      */
+    @JsonIgnore
     public CharSequence getEndpoint() {
         return endpoint;
     }
@@ -71,6 +75,7 @@ public class ElasticsearchConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-endpoint
      * 
      */
+    @JsonIgnore
     public void setEndpoint(CharSequence endpoint) {
         this.endpoint = endpoint;
     }

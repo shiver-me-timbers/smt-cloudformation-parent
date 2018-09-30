@@ -3,6 +3,7 @@ package aws.logs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
      * 
      */
+    @JsonIgnore
     public CharSequence getFilterPattern() {
         return filterPattern;
     }
@@ -62,6 +64,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
      * 
      */
+    @JsonIgnore
     public void setFilterPattern(CharSequence filterPattern) {
         this.filterPattern = filterPattern;
     }
@@ -75,6 +78,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -83,6 +87,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
      * 
      */
+    @JsonIgnore
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -96,6 +101,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations
      * 
      */
+    @JsonIgnore
     public Set<MetricTransformation> getMetricTransformations() {
         return metricTransformations;
     }
@@ -104,6 +110,7 @@ public class MetricFilter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations
      * 
      */
+    @JsonIgnore
     public void setMetricTransformations(Set<MetricTransformation> metricTransformations) {
         this.metricTransformations = metricTransformations;
     }

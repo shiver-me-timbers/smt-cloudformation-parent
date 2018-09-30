@@ -4,6 +4,7 @@ package aws.sagemaker;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -73,6 +74,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-executionrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getExecutionRoleArn() {
         return executionRoleArn;
     }
@@ -81,6 +83,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-executionrolearn
      * 
      */
+    @JsonIgnore
     public void setExecutionRoleArn(CharSequence executionRoleArn) {
         this.executionRoleArn = executionRoleArn;
     }
@@ -96,6 +99,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html
      * 
      */
+    @JsonIgnore
     public ContainerDefinition getPrimaryContainer() {
         return primaryContainer;
     }
@@ -106,6 +110,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html
      * 
      */
+    @JsonIgnore
     public void setPrimaryContainer(ContainerDefinition primaryContainer) {
         this.primaryContainer = primaryContainer;
     }
@@ -119,6 +124,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname
      * 
      */
+    @JsonIgnore
     public CharSequence getModelName() {
         return modelName;
     }
@@ -127,6 +133,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname
      * 
      */
+    @JsonIgnore
     public void setModelName(CharSequence modelName) {
         this.modelName = modelName;
     }
@@ -142,6 +149,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html
      * 
      */
+    @JsonIgnore
     public VpcConfig getVpcConfig() {
         return vpcConfig;
     }
@@ -152,6 +160,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html
      * 
      */
+    @JsonIgnore
     public void setVpcConfig(VpcConfig vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
@@ -165,6 +174,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -173,6 +183,7 @@ public class Model {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

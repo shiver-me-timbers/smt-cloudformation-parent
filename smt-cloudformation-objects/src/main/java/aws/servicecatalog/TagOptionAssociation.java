@@ -1,6 +1,7 @@
 
 package aws.servicecatalog;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
      * 
      */
+    @JsonIgnore
     public CharSequence getTagOptionId() {
         return tagOptionId;
     }
@@ -50,6 +52,7 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
      * 
      */
+    @JsonIgnore
     public void setTagOptionId(CharSequence tagOptionId) {
         this.tagOptionId = tagOptionId;
     }
@@ -63,6 +66,7 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -71,6 +75,7 @@ public class TagOptionAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
      * 
      */
+    @JsonIgnore
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }

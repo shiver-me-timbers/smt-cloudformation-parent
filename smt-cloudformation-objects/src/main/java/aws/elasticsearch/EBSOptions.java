@@ -1,6 +1,7 @@
 
 package aws.elasticsearch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled
      * 
      */
+    @JsonIgnore
     public Boolean getEBSEnabled() {
         return eBSEnabled;
     }
@@ -66,6 +68,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled
      * 
      */
+    @JsonIgnore
     public void setEBSEnabled(Boolean eBSEnabled) {
         this.eBSEnabled = eBSEnabled;
     }
@@ -79,6 +82,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-iops
      * 
      */
+    @JsonIgnore
     public Integer getIops() {
         return iops;
     }
@@ -87,6 +91,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-iops
      * 
      */
+    @JsonIgnore
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -100,6 +105,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumesize
      * 
      */
+    @JsonIgnore
     public Integer getVolumeSize() {
         return volumeSize;
     }
@@ -108,6 +114,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumesize
      * 
      */
+    @JsonIgnore
     public void setVolumeSize(Integer volumeSize) {
         this.volumeSize = volumeSize;
     }
@@ -121,6 +128,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumetype
      * 
      */
+    @JsonIgnore
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -129,6 +137,7 @@ public class EBSOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumetype
      * 
      */
+    @JsonIgnore
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

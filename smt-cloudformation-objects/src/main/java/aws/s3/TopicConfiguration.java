@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event
      * 
      */
+    @JsonIgnore
     public CharSequence getEvent() {
         return event;
     }
@@ -60,6 +62,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-event
      * 
      */
+    @JsonIgnore
     public void setEvent(CharSequence event) {
         this.event = event;
     }
@@ -75,6 +78,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
+    @JsonIgnore
     public NotificationFilter getFilter() {
         return filter;
     }
@@ -85,6 +89,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html
      * 
      */
+    @JsonIgnore
     public void setFilter(NotificationFilter filter) {
         this.filter = filter;
     }
@@ -98,6 +103,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic
      * 
      */
+    @JsonIgnore
     public CharSequence getTopic() {
         return topic;
     }
@@ -106,6 +112,7 @@ public class TopicConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html#cfn-s3-bucket-notificationconfig-topicconfig-topic
      * 
      */
+    @JsonIgnore
     public void setTopic(CharSequence topic) {
         this.topic = topic;
     }

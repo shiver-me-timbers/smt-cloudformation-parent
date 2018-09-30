@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity
      * 
      */
+    @JsonIgnore
     public CharSequence getGranularity() {
         return granularity;
     }
@@ -52,6 +54,7 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity
      * 
      */
+    @JsonIgnore
     public void setGranularity(CharSequence granularity) {
         this.granularity = granularity;
     }
@@ -65,6 +68,7 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getMetrics() {
         return metrics;
     }
@@ -73,6 +77,7 @@ public class MetricsCollection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-metrics
      * 
      */
+    @JsonIgnore
     public void setMetrics(List<CharSequence> metrics) {
         this.metrics = metrics;
     }

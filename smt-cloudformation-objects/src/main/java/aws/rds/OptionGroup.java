@@ -4,6 +4,7 @@ package aws.rds;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -69,6 +70,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-enginename
      * 
      */
+    @JsonIgnore
     public CharSequence getEngineName() {
         return engineName;
     }
@@ -77,6 +79,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-enginename
      * 
      */
+    @JsonIgnore
     public void setEngineName(CharSequence engineName) {
         this.engineName = engineName;
     }
@@ -90,6 +93,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-majorengineversion
      * 
      */
+    @JsonIgnore
     public CharSequence getMajorEngineVersion() {
         return majorEngineVersion;
     }
@@ -98,6 +102,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-majorengineversion
      * 
      */
+    @JsonIgnore
     public void setMajorEngineVersion(CharSequence majorEngineVersion) {
         this.majorEngineVersion = majorEngineVersion;
     }
@@ -111,6 +116,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optionconfigurations
      * 
      */
+    @JsonIgnore
     public List<OptionConfiguration> getOptionConfigurations() {
         return optionConfigurations;
     }
@@ -119,6 +125,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optionconfigurations
      * 
      */
+    @JsonIgnore
     public void setOptionConfigurations(List<OptionConfiguration> optionConfigurations) {
         this.optionConfigurations = optionConfigurations;
     }
@@ -132,6 +139,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription
      * 
      */
+    @JsonIgnore
     public CharSequence getOptionGroupDescription() {
         return optionGroupDescription;
     }
@@ -140,6 +148,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription
      * 
      */
+    @JsonIgnore
     public void setOptionGroupDescription(CharSequence optionGroupDescription) {
         this.optionGroupDescription = optionGroupDescription;
     }
@@ -153,6 +162,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -161,6 +171,7 @@ public class OptionGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

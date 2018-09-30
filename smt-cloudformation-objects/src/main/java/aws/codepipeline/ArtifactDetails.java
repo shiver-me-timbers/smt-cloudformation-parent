@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount
      * 
      */
+    @JsonIgnore
     public Integer getMaximumCount() {
         return maximumCount;
     }
@@ -50,6 +52,7 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount
      * 
      */
+    @JsonIgnore
     public void setMaximumCount(Integer maximumCount) {
         this.maximumCount = maximumCount;
     }
@@ -63,6 +66,7 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount
      * 
      */
+    @JsonIgnore
     public Integer getMinimumCount() {
         return minimumCount;
     }
@@ -71,6 +75,7 @@ public class ArtifactDetails {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-minimumcount
      * 
      */
+    @JsonIgnore
     public void setMinimumCount(Integer minimumCount) {
         this.minimumCount = minimumCount;
     }

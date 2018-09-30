@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-allawsregions
      * 
      */
+    @JsonIgnore
     public Boolean getAllAwsRegions() {
         return allAwsRegions;
     }
@@ -60,6 +62,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-allawsregions
      * 
      */
+    @JsonIgnore
     public void setAllAwsRegions(Boolean allAwsRegions) {
         this.allAwsRegions = allAwsRegions;
     }
@@ -73,6 +76,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-awsregions
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAwsRegions() {
         return awsRegions;
     }
@@ -81,6 +85,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-awsregions
      * 
      */
+    @JsonIgnore
     public void setAwsRegions(List<CharSequence> awsRegions) {
         this.awsRegions = awsRegions;
     }
@@ -94,6 +99,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-accountids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAccountIds() {
         return accountIds;
     }
@@ -102,6 +108,7 @@ public class AccountAggregationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-accountaggregationsource.html#cfn-config-configurationaggregator-accountaggregationsource-accountids
      * 
      */
+    @JsonIgnore
     public void setAccountIds(List<CharSequence> accountIds) {
         this.accountIds = accountIds;
     }

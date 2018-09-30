@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
      * 
      */
+    @JsonIgnore
     public Boolean getDelayUntilElbConnectionsDrained() {
         return delayUntilElbConnectionsDrained;
     }
@@ -50,6 +52,7 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
      * 
      */
+    @JsonIgnore
     public void setDelayUntilElbConnectionsDrained(Boolean delayUntilElbConnectionsDrained) {
         this.delayUntilElbConnectionsDrained = delayUntilElbConnectionsDrained;
     }
@@ -63,6 +66,7 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
      * 
      */
+    @JsonIgnore
     public Integer getExecutionTimeout() {
         return executionTimeout;
     }
@@ -71,6 +75,7 @@ public class ShutdownEventConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
      * 
      */
+    @JsonIgnore
     public void setExecutionTimeout(Integer executionTimeout) {
         this.executionTimeout = executionTimeout;
     }

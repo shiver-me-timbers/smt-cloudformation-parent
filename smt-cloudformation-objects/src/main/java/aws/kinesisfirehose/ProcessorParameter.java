@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ProcessorParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametername
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterName() {
         return parameterName;
     }
@@ -50,6 +52,7 @@ public class ProcessorParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametername
      * 
      */
+    @JsonIgnore
     public void setParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
     }
@@ -63,6 +66,7 @@ public class ProcessorParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterValue() {
         return parameterValue;
     }
@@ -71,6 +75,7 @@ public class ProcessorParameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processorparameter.html#cfn-kinesisfirehose-deliverystream-processorparameter-parametervalue
      * 
      */
+    @JsonIgnore
     public void setParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
     }

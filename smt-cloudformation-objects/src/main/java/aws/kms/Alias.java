@@ -1,6 +1,7 @@
 
 package aws.kms;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname
      * 
      */
+    @JsonIgnore
     public CharSequence getAliasName() {
         return aliasName;
     }
@@ -50,6 +52,7 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-aliasname
      * 
      */
+    @JsonIgnore
     public void setAliasName(CharSequence aliasName) {
         this.aliasName = aliasName;
     }
@@ -63,6 +66,7 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetKeyId() {
         return targetKeyId;
     }
@@ -71,6 +75,7 @@ public class Alias {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-alias.html#cfn-kms-alias-targetkeyid
      * 
      */
+    @JsonIgnore
     public void setTargetKeyId(CharSequence targetKeyId) {
         this.targetKeyId = targetKeyId;
     }

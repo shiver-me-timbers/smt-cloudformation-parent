@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getTriggerEvents() {
         return triggerEvents;
     }
@@ -62,6 +64,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents
      * 
      */
+    @JsonIgnore
     public void setTriggerEvents(Set<CharSequence> triggerEvents) {
         this.triggerEvents = triggerEvents;
     }
@@ -75,6 +78,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggername
      * 
      */
+    @JsonIgnore
     public CharSequence getTriggerName() {
         return triggerName;
     }
@@ -83,6 +87,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggername
      * 
      */
+    @JsonIgnore
     public void setTriggerName(CharSequence triggerName) {
         this.triggerName = triggerName;
     }
@@ -96,6 +101,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTriggerTargetArn() {
         return triggerTargetArn;
     }
@@ -104,6 +110,7 @@ public class TriggerConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggertargetarn
      * 
      */
+    @JsonIgnore
     public void setTriggerTargetArn(CharSequence triggerTargetArn) {
         this.triggerTargetArn = triggerTargetArn;
     }

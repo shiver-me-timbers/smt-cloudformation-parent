@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
      * 
      */
+    @JsonIgnore
     public String getEndTime() {
         return endTime;
     }
@@ -76,6 +78,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
      * 
      */
+    @JsonIgnore
     public void setEndTime(String endTime) {
         this.endTime = endTime;
     }
@@ -91,6 +94,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html
      * 
      */
+    @JsonIgnore
     public ScalableTargetAction getScalableTargetAction() {
         return scalableTargetAction;
     }
@@ -101,6 +105,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html
      * 
      */
+    @JsonIgnore
     public void setScalableTargetAction(ScalableTargetAction scalableTargetAction) {
         this.scalableTargetAction = scalableTargetAction;
     }
@@ -114,6 +119,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule
      * 
      */
+    @JsonIgnore
     public CharSequence getSchedule() {
         return schedule;
     }
@@ -122,6 +128,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule
      * 
      */
+    @JsonIgnore
     public void setSchedule(CharSequence schedule) {
         this.schedule = schedule;
     }
@@ -135,6 +142,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname
      * 
      */
+    @JsonIgnore
     public CharSequence getScheduledActionName() {
         return scheduledActionName;
     }
@@ -143,6 +151,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scheduledactionname
      * 
      */
+    @JsonIgnore
     public void setScheduledActionName(CharSequence scheduledActionName) {
         this.scheduledActionName = scheduledActionName;
     }
@@ -156,6 +165,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime
      * 
      */
+    @JsonIgnore
     public String getStartTime() {
         return startTime;
     }
@@ -164,6 +174,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-starttime
      * 
      */
+    @JsonIgnore
     public void setStartTime(String startTime) {
         this.startTime = startTime;
     }

@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -100,6 +101,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds
      * 
      */
+    @JsonIgnore
     public Integer getTimeoutSeconds() {
         return timeoutSeconds;
     }
@@ -108,6 +110,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds
      * 
      */
+    @JsonIgnore
     public void setTimeoutSeconds(Integer timeoutSeconds) {
         this.timeoutSeconds = timeoutSeconds;
     }
@@ -121,6 +124,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment
      * 
      */
+    @JsonIgnore
     public CharSequence getComment() {
         return comment;
     }
@@ -129,6 +133,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-comment
      * 
      */
+    @JsonIgnore
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -142,6 +147,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3keyprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getOutputS3KeyPrefix() {
         return outputS3KeyPrefix;
     }
@@ -150,6 +156,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3keyprefix
      * 
      */
+    @JsonIgnore
     public void setOutputS3KeyPrefix(CharSequence outputS3KeyPrefix) {
         this.outputS3KeyPrefix = outputS3KeyPrefix;
     }
@@ -163,6 +170,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters
      * 
      */
+    @JsonIgnore
     public Object getParameters() {
         return parameters;
     }
@@ -171,6 +179,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-parameters
      * 
      */
+    @JsonIgnore
     public void setParameters(Object parameters) {
         this.parameters = parameters;
     }
@@ -184,6 +193,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthashtype
      * 
      */
+    @JsonIgnore
     public CharSequence getDocumentHashType() {
         return documentHashType;
     }
@@ -192,6 +202,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthashtype
      * 
      */
+    @JsonIgnore
     public void setDocumentHashType(CharSequence documentHashType) {
         this.documentHashType = documentHashType;
     }
@@ -205,6 +216,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-servicerolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
@@ -213,6 +225,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-servicerolearn
      * 
      */
+    @JsonIgnore
     public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
@@ -228,6 +241,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html
      * 
      */
+    @JsonIgnore
     public NotificationConfig getNotificationConfig() {
         return notificationConfig;
     }
@@ -238,6 +252,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html
      * 
      */
+    @JsonIgnore
     public void setNotificationConfig(NotificationConfig notificationConfig) {
         this.notificationConfig = notificationConfig;
     }
@@ -251,6 +266,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getOutputS3BucketName() {
         return outputS3BucketName;
     }
@@ -259,6 +275,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3bucketname
      * 
      */
+    @JsonIgnore
     public void setOutputS3BucketName(CharSequence outputS3BucketName) {
         this.outputS3BucketName = outputS3BucketName;
     }
@@ -272,6 +289,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthash
      * 
      */
+    @JsonIgnore
     public CharSequence getDocumentHash() {
         return documentHash;
     }
@@ -280,6 +298,7 @@ public class MaintenanceWindowRunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-documenthash
      * 
      */
+    @JsonIgnore
     public void setDocumentHash(CharSequence documentHash) {
         this.documentHash = documentHash;
     }

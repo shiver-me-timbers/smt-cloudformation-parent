@@ -1,6 +1,7 @@
 
 package aws;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -17,10 +18,12 @@ public class AutoScalingReplacingUpdate {
     @JsonProperty("WillReplace")
     private Boolean willReplace;
 
+    @JsonIgnore
     public Boolean getWillReplace() {
         return willReplace;
     }
 
+    @JsonIgnore
     public void setWillReplace(Boolean willReplace) {
         this.willReplace = willReplace;
     }

@@ -3,6 +3,7 @@ package aws.kinesisanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordencoding
      * 
      */
+    @JsonIgnore
     public CharSequence getRecordEncoding() {
         return recordEncoding;
     }
@@ -62,6 +64,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordencoding
      * 
      */
+    @JsonIgnore
     public void setRecordEncoding(CharSequence recordEncoding) {
         this.recordEncoding = recordEncoding;
     }
@@ -75,6 +78,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordcolumns
      * 
      */
+    @JsonIgnore
     public List<RecordColumn> getRecordColumns() {
         return recordColumns;
     }
@@ -83,6 +87,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordcolumns
      * 
      */
+    @JsonIgnore
     public void setRecordColumns(List<RecordColumn> recordColumns) {
         this.recordColumns = recordColumns;
     }
@@ -98,6 +103,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-recordformat.html
      * 
      */
+    @JsonIgnore
     public RecordFormat getRecordFormat() {
         return recordFormat;
     }
@@ -108,6 +114,7 @@ public class InputSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-recordformat.html
      * 
      */
+    @JsonIgnore
     public void setRecordFormat(RecordFormat recordFormat) {
         this.recordFormat = recordFormat;
     }

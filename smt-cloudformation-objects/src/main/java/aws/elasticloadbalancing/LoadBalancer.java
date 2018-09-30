@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -178,6 +179,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html
      * 
      */
+    @JsonIgnore
     public AccessLoggingPolicy getAccessLoggingPolicy() {
         return accessLoggingPolicy;
     }
@@ -188,6 +190,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html
      * 
      */
+    @JsonIgnore
     public void setAccessLoggingPolicy(AccessLoggingPolicy accessLoggingPolicy) {
         this.accessLoggingPolicy = accessLoggingPolicy;
     }
@@ -201,6 +204,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy
      * 
      */
+    @JsonIgnore
     public Set<AppCookieStickinessPolicy> getAppCookieStickinessPolicy() {
         return appCookieStickinessPolicy;
     }
@@ -209,6 +213,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy
      * 
      */
+    @JsonIgnore
     public void setAppCookieStickinessPolicy(Set<AppCookieStickinessPolicy> appCookieStickinessPolicy) {
         this.appCookieStickinessPolicy = appCookieStickinessPolicy;
     }
@@ -222,6 +227,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-availabilityzones
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
@@ -230,6 +236,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-availabilityzones
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
@@ -245,6 +252,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectiondrainingpolicy.html
      * 
      */
+    @JsonIgnore
     public ConnectionDrainingPolicy getConnectionDrainingPolicy() {
         return connectionDrainingPolicy;
     }
@@ -255,6 +263,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectiondrainingpolicy.html
      * 
      */
+    @JsonIgnore
     public void setConnectionDrainingPolicy(ConnectionDrainingPolicy connectionDrainingPolicy) {
         this.connectionDrainingPolicy = connectionDrainingPolicy;
     }
@@ -270,6 +279,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html
      * 
      */
+    @JsonIgnore
     public ConnectionSettings getConnectionSettings() {
         return connectionSettings;
     }
@@ -280,6 +290,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html
      * 
      */
+    @JsonIgnore
     public void setConnectionSettings(ConnectionSettings connectionSettings) {
         this.connectionSettings = connectionSettings;
     }
@@ -293,6 +304,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone
      * 
      */
+    @JsonIgnore
     public Boolean getCrossZone() {
         return crossZone;
     }
@@ -301,6 +313,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone
      * 
      */
+    @JsonIgnore
     public void setCrossZone(Boolean crossZone) {
         this.crossZone = crossZone;
     }
@@ -316,6 +329,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html
      * 
      */
+    @JsonIgnore
     public HealthCheck getHealthCheck() {
         return healthCheck;
     }
@@ -326,6 +340,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html
      * 
      */
+    @JsonIgnore
     public void setHealthCheck(HealthCheck healthCheck) {
         this.healthCheck = healthCheck;
     }
@@ -339,6 +354,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getInstances() {
         return instances;
     }
@@ -347,6 +363,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances
      * 
      */
+    @JsonIgnore
     public void setInstances(Set<CharSequence> instances) {
         this.instances = instances;
     }
@@ -360,6 +377,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-lbcookiestickinesspolicy
      * 
      */
+    @JsonIgnore
     public Set<LBCookieStickinessPolicy> getLBCookieStickinessPolicy() {
         return lBCookieStickinessPolicy;
     }
@@ -368,6 +386,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-lbcookiestickinesspolicy
      * 
      */
+    @JsonIgnore
     public void setLBCookieStickinessPolicy(Set<LBCookieStickinessPolicy> lBCookieStickinessPolicy) {
         this.lBCookieStickinessPolicy = lBCookieStickinessPolicy;
     }
@@ -381,6 +400,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-listeners
      * 
      */
+    @JsonIgnore
     public Set<Listeners> getListeners() {
         return listeners;
     }
@@ -389,6 +409,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-listeners
      * 
      */
+    @JsonIgnore
     public void setListeners(Set<Listeners> listeners) {
         this.listeners = listeners;
     }
@@ -402,6 +423,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-elbname
      * 
      */
+    @JsonIgnore
     public CharSequence getLoadBalancerName() {
         return loadBalancerName;
     }
@@ -410,6 +432,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-elbname
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerName(CharSequence loadBalancerName) {
         this.loadBalancerName = loadBalancerName;
     }
@@ -423,6 +446,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-policies
      * 
      */
+    @JsonIgnore
     public Set<Policies> getPolicies() {
         return policies;
     }
@@ -431,6 +455,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-policies
      * 
      */
+    @JsonIgnore
     public void setPolicies(Set<Policies> policies) {
         this.policies = policies;
     }
@@ -444,6 +469,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-scheme
      * 
      */
+    @JsonIgnore
     public CharSequence getScheme() {
         return scheme;
     }
@@ -452,6 +478,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-scheme
      * 
      */
+    @JsonIgnore
     public void setScheme(CharSequence scheme) {
         this.scheme = scheme;
     }
@@ -465,6 +492,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-securitygroups
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -473,6 +501,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-securitygroups
      * 
      */
+    @JsonIgnore
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -486,6 +515,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-subnets
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSubnets() {
         return subnets;
     }
@@ -494,6 +524,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-subnets
      * 
      */
+    @JsonIgnore
     public void setSubnets(Set<CharSequence> subnets) {
         this.subnets = subnets;
     }
@@ -507,6 +538,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-elasticloadbalancing-loadbalancer-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -515,6 +547,7 @@ public class LoadBalancer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-elasticloadbalancing-loadbalancer-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

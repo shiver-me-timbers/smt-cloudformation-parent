@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly
      * 
      */
+    @JsonIgnore
     public Boolean getReadOnly() {
         return readOnly;
     }
@@ -50,6 +52,7 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly
      * 
      */
+    @JsonIgnore
     public void setReadOnly(Boolean readOnly) {
         this.readOnly = readOnly;
     }
@@ -63,6 +66,7 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceContainer() {
         return sourceContainer;
     }
@@ -71,6 +75,7 @@ public class VolumeFrom {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-sourcecontainer
      * 
      */
+    @JsonIgnore
     public void setSourceContainer(CharSequence sourceContainer) {
         this.sourceContainer = sourceContainer;
     }

@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -100,6 +101,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
      * 
      */
+    @JsonIgnore
     public AutoScalingPolicy getAutoScalingPolicy() {
         return autoScalingPolicy;
     }
@@ -110,6 +112,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
      * 
      */
+    @JsonIgnore
     public void setAutoScalingPolicy(AutoScalingPolicy autoScalingPolicy) {
         this.autoScalingPolicy = autoScalingPolicy;
     }
@@ -123,6 +126,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
      * 
      */
+    @JsonIgnore
     public CharSequence getBidPrice() {
         return bidPrice;
     }
@@ -131,6 +135,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
      * 
      */
+    @JsonIgnore
     public void setBidPrice(CharSequence bidPrice) {
         this.bidPrice = bidPrice;
     }
@@ -144,6 +149,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations
      * 
      */
+    @JsonIgnore
     public Set<Configuration> getConfigurations() {
         return configurations;
     }
@@ -152,6 +158,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations
      * 
      */
+    @JsonIgnore
     public void setConfigurations(Set<Configuration> configurations) {
         this.configurations = configurations;
     }
@@ -167,6 +174,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
+    @JsonIgnore
     public EbsConfiguration getEbsConfiguration() {
         return ebsConfiguration;
     }
@@ -177,6 +185,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEbsConfiguration(EbsConfiguration ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
     }
@@ -190,6 +199,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount
      * 
      */
+    @JsonIgnore
     public Integer getInstanceCount() {
         return instanceCount;
     }
@@ -198,6 +208,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount
      * 
      */
+    @JsonIgnore
     public void setInstanceCount(Integer instanceCount) {
         this.instanceCount = instanceCount;
     }
@@ -211,6 +222,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -219,6 +231,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -232,6 +245,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market
      * 
      */
+    @JsonIgnore
     public CharSequence getMarket() {
         return market;
     }
@@ -240,6 +254,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-market
      * 
      */
+    @JsonIgnore
     public void setMarket(CharSequence market) {
         this.market = market;
     }
@@ -253,6 +268,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -261,6 +277,7 @@ public class InstanceGroupConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

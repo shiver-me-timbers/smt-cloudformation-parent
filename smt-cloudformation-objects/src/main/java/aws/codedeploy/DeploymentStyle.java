@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
      * 
      */
+    @JsonIgnore
     public CharSequence getDeploymentOption() {
         return deploymentOption;
     }
@@ -50,6 +52,7 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
      * 
      */
+    @JsonIgnore
     public void setDeploymentOption(CharSequence deploymentOption) {
         this.deploymentOption = deploymentOption;
     }
@@ -63,6 +66,7 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
      * 
      */
+    @JsonIgnore
     public CharSequence getDeploymentType() {
         return deploymentType;
     }
@@ -71,6 +75,7 @@ public class DeploymentStyle {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
      * 
      */
+    @JsonIgnore
     public void setDeploymentType(CharSequence deploymentType) {
         this.deploymentType = deploymentType;
     }

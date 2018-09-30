@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -133,6 +134,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
      * 
      */
+    @JsonIgnore
     public AccessLogSetting getAccessLogSetting() {
         return accessLogSetting;
     }
@@ -143,6 +145,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
      * 
      */
+    @JsonIgnore
     public void setAccessLogSetting(AccessLogSetting accessLogSetting) {
         this.accessLogSetting = accessLogSetting;
     }
@@ -156,6 +159,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
      */
+    @JsonIgnore
     public Boolean getCacheClusterEnabled() {
         return cacheClusterEnabled;
     }
@@ -164,6 +168,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
      */
+    @JsonIgnore
     public void setCacheClusterEnabled(Boolean cacheClusterEnabled) {
         this.cacheClusterEnabled = cacheClusterEnabled;
     }
@@ -177,6 +182,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize
      * 
      */
+    @JsonIgnore
     public CharSequence getCacheClusterSize() {
         return cacheClusterSize;
     }
@@ -185,6 +191,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize
      * 
      */
+    @JsonIgnore
     public void setCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
     }
@@ -200,6 +207,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
      * 
      */
+    @JsonIgnore
     public CanarySetting getCanarySetting() {
         return canarySetting;
     }
@@ -210,6 +218,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
      * 
      */
+    @JsonIgnore
     public void setCanarySetting(CanarySetting canarySetting) {
         this.canarySetting = canarySetting;
     }
@@ -223,6 +232,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
      */
+    @JsonIgnore
     public CharSequence getClientCertificateId() {
         return clientCertificateId;
     }
@@ -231,6 +241,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
      */
+    @JsonIgnore
     public void setClientCertificateId(CharSequence clientCertificateId) {
         this.clientCertificateId = clientCertificateId;
     }
@@ -244,6 +255,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-deploymentid
      * 
      */
+    @JsonIgnore
     public CharSequence getDeploymentId() {
         return deploymentId;
     }
@@ -252,6 +264,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-deploymentid
      * 
      */
+    @JsonIgnore
     public void setDeploymentId(CharSequence deploymentId) {
         this.deploymentId = deploymentId;
     }
@@ -265,6 +278,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -273,6 +287,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -286,6 +301,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-documentationversion
      * 
      */
+    @JsonIgnore
     public CharSequence getDocumentationVersion() {
         return documentationVersion;
     }
@@ -294,6 +310,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-documentationversion
      * 
      */
+    @JsonIgnore
     public void setDocumentationVersion(CharSequence documentationVersion) {
         this.documentationVersion = documentationVersion;
     }
@@ -307,6 +324,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-methodsettings
      * 
      */
+    @JsonIgnore
     public Set<MethodSetting> getMethodSettings() {
         return methodSettings;
     }
@@ -315,6 +333,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-methodsettings
      * 
      */
+    @JsonIgnore
     public void setMethodSettings(Set<MethodSetting> methodSettings) {
         this.methodSettings = methodSettings;
     }
@@ -328,6 +347,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-restapiid
      * 
      */
+    @JsonIgnore
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -336,6 +356,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-restapiid
      * 
      */
+    @JsonIgnore
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }
@@ -349,6 +370,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename
      * 
      */
+    @JsonIgnore
     public CharSequence getStageName() {
         return stageName;
     }
@@ -357,6 +379,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename
      * 
      */
+    @JsonIgnore
     public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }
@@ -370,6 +393,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
      */
+    @JsonIgnore
     public Map<String, String> getVariables() {
         return variables;
     }
@@ -378,6 +402,7 @@ public class Stage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
      */
+    @JsonIgnore
     public void setVariables(Map<String, String> variables) {
         this.variables = variables;
     }

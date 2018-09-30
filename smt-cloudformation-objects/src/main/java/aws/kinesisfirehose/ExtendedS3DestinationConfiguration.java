@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -116,6 +117,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-bucketarn
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketARN() {
         return bucketARN;
     }
@@ -124,6 +126,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-bucketarn
      * 
      */
+    @JsonIgnore
     public void setBucketARN(CharSequence bucketARN) {
         this.bucketARN = bucketARN;
     }
@@ -139,6 +142,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchBufferingHints getBufferingHints() {
         return bufferingHints;
     }
@@ -149,6 +153,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
@@ -164,6 +169,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
@@ -174,6 +180,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
@@ -187,6 +194,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-compressionformat
      * 
      */
+    @JsonIgnore
     public CharSequence getCompressionFormat() {
         return compressionFormat;
     }
@@ -195,6 +203,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-compressionformat
      * 
      */
+    @JsonIgnore
     public void setCompressionFormat(CharSequence compressionFormat) {
         this.compressionFormat = compressionFormat;
     }
@@ -210,6 +219,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public EncryptionConfiguration getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
@@ -220,6 +230,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
@@ -233,6 +244,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -241,6 +253,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix
      * 
      */
+    @JsonIgnore
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -256,6 +269,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public ProcessingConfiguration getProcessingConfiguration() {
         return processingConfiguration;
     }
@@ -266,6 +280,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
@@ -279,6 +294,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -287,6 +303,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
@@ -302,6 +319,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public S3DestinationConfiguration getS3BackupConfiguration() {
         return s3BackupConfiguration;
     }
@@ -312,6 +330,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setS3BackupConfiguration(S3DestinationConfiguration s3BackupConfiguration) {
         this.s3BackupConfiguration = s3BackupConfiguration;
     }
@@ -325,6 +344,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
@@ -333,6 +353,7 @@ public class ExtendedS3DestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }

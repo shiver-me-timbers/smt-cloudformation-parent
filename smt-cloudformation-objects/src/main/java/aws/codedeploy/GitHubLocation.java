@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class GitHubLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-commitid
      * 
      */
+    @JsonIgnore
     public CharSequence getCommitId() {
         return commitId;
     }
@@ -50,6 +52,7 @@ public class GitHubLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-commitid
      * 
      */
+    @JsonIgnore
     public void setCommitId(CharSequence commitId) {
         this.commitId = commitId;
     }
@@ -63,6 +66,7 @@ public class GitHubLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-repository
      * 
      */
+    @JsonIgnore
     public CharSequence getRepository() {
         return repository;
     }
@@ -71,6 +75,7 @@ public class GitHubLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-githublocation-repository
      * 
      */
+    @JsonIgnore
     public void setRepository(CharSequence repository) {
         this.repository = repository;
     }

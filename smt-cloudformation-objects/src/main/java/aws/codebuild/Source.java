@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -92,6 +93,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -100,6 +102,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -113,6 +116,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-reportbuildstatus
      * 
      */
+    @JsonIgnore
     public Boolean getReportBuildStatus() {
         return reportBuildStatus;
     }
@@ -121,6 +125,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-reportbuildstatus
      * 
      */
+    @JsonIgnore
     public void setReportBuildStatus(Boolean reportBuildStatus) {
         this.reportBuildStatus = reportBuildStatus;
     }
@@ -136,6 +141,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html
      * 
      */
+    @JsonIgnore
     public SourceAuth getAuth() {
         return auth;
     }
@@ -146,6 +152,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html
      * 
      */
+    @JsonIgnore
     public void setAuth(SourceAuth auth) {
         this.auth = auth;
     }
@@ -159,6 +166,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-sourceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceIdentifier() {
         return sourceIdentifier;
     }
@@ -167,6 +175,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-sourceidentifier
      * 
      */
+    @JsonIgnore
     public void setSourceIdentifier(CharSequence sourceIdentifier) {
         this.sourceIdentifier = sourceIdentifier;
     }
@@ -180,6 +189,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-buildspec
      * 
      */
+    @JsonIgnore
     public CharSequence getBuildSpec() {
         return buildSpec;
     }
@@ -188,6 +198,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-buildspec
      * 
      */
+    @JsonIgnore
     public void setBuildSpec(CharSequence buildSpec) {
         this.buildSpec = buildSpec;
     }
@@ -201,6 +212,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitclonedepth
      * 
      */
+    @JsonIgnore
     public Integer getGitCloneDepth() {
         return gitCloneDepth;
     }
@@ -209,6 +221,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitclonedepth
      * 
      */
+    @JsonIgnore
     public void setGitCloneDepth(Integer gitCloneDepth) {
         this.gitCloneDepth = gitCloneDepth;
     }
@@ -222,6 +235,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl
      * 
      */
+    @JsonIgnore
     public Boolean getInsecureSsl() {
         return insecureSsl;
     }
@@ -230,6 +244,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl
      * 
      */
+    @JsonIgnore
     public void setInsecureSsl(Boolean insecureSsl) {
         this.insecureSsl = insecureSsl;
     }
@@ -243,6 +258,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-location
      * 
      */
+    @JsonIgnore
     public CharSequence getLocation() {
         return location;
     }
@@ -251,6 +267,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-location
      * 
      */
+    @JsonIgnore
     public void setLocation(CharSequence location) {
         this.location = location;
     }

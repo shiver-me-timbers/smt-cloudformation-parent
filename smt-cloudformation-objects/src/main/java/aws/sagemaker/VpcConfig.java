@@ -3,6 +3,7 @@ package aws.sagemaker;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html#cfn-sagemaker-model-vpcconfig-subnets
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSubnets() {
         return subnets;
     }
@@ -52,6 +54,7 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html#cfn-sagemaker-model-vpcconfig-subnets
      * 
      */
+    @JsonIgnore
     public void setSubnets(List<CharSequence> subnets) {
         this.subnets = subnets;
     }
@@ -65,6 +68,7 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html#cfn-sagemaker-model-vpcconfig-securitygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -73,6 +77,7 @@ public class VpcConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html#cfn-sagemaker-model-vpcconfig-securitygroupids
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }

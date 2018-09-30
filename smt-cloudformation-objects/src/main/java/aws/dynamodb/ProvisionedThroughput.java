@@ -1,6 +1,7 @@
 
 package aws.dynamodb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ProvisionedThroughput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-readcapacityunits
      * 
      */
+    @JsonIgnore
     public Integer getReadCapacityUnits() {
         return readCapacityUnits;
     }
@@ -50,6 +52,7 @@ public class ProvisionedThroughput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-readcapacityunits
      * 
      */
+    @JsonIgnore
     public void setReadCapacityUnits(Integer readCapacityUnits) {
         this.readCapacityUnits = readCapacityUnits;
     }
@@ -63,6 +66,7 @@ public class ProvisionedThroughput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-writecapacityunits
      * 
      */
+    @JsonIgnore
     public Integer getWriteCapacityUnits() {
         return writeCapacityUnits;
     }
@@ -71,6 +75,7 @@ public class ProvisionedThroughput {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-writecapacityunits
      * 
      */
+    @JsonIgnore
     public void setWriteCapacityUnits(Integer writeCapacityUnits) {
         this.writeCapacityUnits = writeCapacityUnits;
     }

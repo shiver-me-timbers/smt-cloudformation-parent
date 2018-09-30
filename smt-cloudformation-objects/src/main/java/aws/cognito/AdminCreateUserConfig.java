@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html
      * 
      */
+    @JsonIgnore
     public InviteMessageTemplate getInviteMessageTemplate() {
         return inviteMessageTemplate;
     }
@@ -64,6 +66,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html
      * 
      */
+    @JsonIgnore
     public void setInviteMessageTemplate(InviteMessageTemplate inviteMessageTemplate) {
         this.inviteMessageTemplate = inviteMessageTemplate;
     }
@@ -77,6 +80,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays
      * 
      */
+    @JsonIgnore
     public Double getUnusedAccountValidityDays() {
         return unusedAccountValidityDays;
     }
@@ -85,6 +89,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays
      * 
      */
+    @JsonIgnore
     public void setUnusedAccountValidityDays(Double unusedAccountValidityDays) {
         this.unusedAccountValidityDays = unusedAccountValidityDays;
     }
@@ -98,6 +103,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly
      * 
      */
+    @JsonIgnore
     public Boolean getAllowAdminCreateUserOnly() {
         return allowAdminCreateUserOnly;
     }
@@ -106,6 +112,7 @@ public class AdminCreateUserConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly
      * 
      */
+    @JsonIgnore
     public void setAllowAdminCreateUserOnly(Boolean allowAdminCreateUserOnly) {
         this.allowAdminCreateUserOnly = allowAdminCreateUserOnly;
     }

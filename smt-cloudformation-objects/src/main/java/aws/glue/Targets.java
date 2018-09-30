@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
      * 
      */
+    @JsonIgnore
     public List<S3Target> getS3Targets() {
         return s3Targets;
     }
@@ -52,6 +54,7 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
      * 
      */
+    @JsonIgnore
     public void setS3Targets(List<S3Target> s3Targets) {
         this.s3Targets = s3Targets;
     }
@@ -65,6 +68,7 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets
      * 
      */
+    @JsonIgnore
     public List<JdbcTarget> getJdbcTargets() {
         return jdbcTargets;
     }
@@ -73,6 +77,7 @@ public class Targets {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets
      * 
      */
+    @JsonIgnore
     public void setJdbcTargets(List<JdbcTarget> jdbcTargets) {
         this.jdbcTargets = jdbcTargets;
     }

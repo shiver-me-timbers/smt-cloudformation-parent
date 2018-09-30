@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class ScalingTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html
      * 
      */
+    @JsonIgnore
     public CloudWatchAlarmDefinition getCloudWatchAlarmDefinition() {
         return cloudWatchAlarmDefinition;
     }
@@ -48,6 +50,7 @@ public class ScalingTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchAlarmDefinition(CloudWatchAlarmDefinition cloudWatchAlarmDefinition) {
         this.cloudWatchAlarmDefinition = cloudWatchAlarmDefinition;
     }

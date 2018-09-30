@@ -3,6 +3,7 @@ package aws.codecommit;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositoryname
      * 
      */
+    @JsonIgnore
     public CharSequence getRepositoryName() {
         return repositoryName;
     }
@@ -60,6 +62,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositoryname
      * 
      */
+    @JsonIgnore
     public void setRepositoryName(CharSequence repositoryName) {
         this.repositoryName = repositoryName;
     }
@@ -73,6 +76,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers
      * 
      */
+    @JsonIgnore
     public List<RepositoryTrigger> getTriggers() {
         return triggers;
     }
@@ -81,6 +85,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers
      * 
      */
+    @JsonIgnore
     public void setTriggers(List<RepositoryTrigger> triggers) {
         this.triggers = triggers;
     }
@@ -94,6 +99,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription
      * 
      */
+    @JsonIgnore
     public CharSequence getRepositoryDescription() {
         return repositoryDescription;
     }
@@ -102,6 +108,7 @@ public class Repository {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription
      * 
      */
+    @JsonIgnore
     public void setRepositoryDescription(CharSequence repositoryDescription) {
         this.repositoryDescription = repositoryDescription;
     }

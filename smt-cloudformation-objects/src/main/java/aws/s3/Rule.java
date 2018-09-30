@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -136,6 +137,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html
      * 
      */
+    @JsonIgnore
     public AbortIncompleteMultipartUpload getAbortIncompleteMultipartUpload() {
         return abortIncompleteMultipartUpload;
     }
@@ -146,6 +148,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html
      * 
      */
+    @JsonIgnore
     public void setAbortIncompleteMultipartUpload(AbortIncompleteMultipartUpload abortIncompleteMultipartUpload) {
         this.abortIncompleteMultipartUpload = abortIncompleteMultipartUpload;
     }
@@ -159,6 +162,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationdate
      * 
      */
+    @JsonIgnore
     public String getExpirationDate() {
         return expirationDate;
     }
@@ -167,6 +171,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationdate
      * 
      */
+    @JsonIgnore
     public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
     }
@@ -180,6 +185,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationindays
      * 
      */
+    @JsonIgnore
     public Integer getExpirationInDays() {
         return expirationInDays;
     }
@@ -188,6 +194,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationindays
      * 
      */
+    @JsonIgnore
     public void setExpirationInDays(Integer expirationInDays) {
         this.expirationInDays = expirationInDays;
     }
@@ -201,6 +208,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -209,6 +217,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -222,6 +231,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversionexpirationindays
      * 
      */
+    @JsonIgnore
     public Integer getNoncurrentVersionExpirationInDays() {
         return noncurrentVersionExpirationInDays;
     }
@@ -230,6 +240,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversionexpirationindays
      * 
      */
+    @JsonIgnore
     public void setNoncurrentVersionExpirationInDays(Integer noncurrentVersionExpirationInDays) {
         this.noncurrentVersionExpirationInDays = noncurrentVersionExpirationInDays;
     }
@@ -245,6 +256,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html
      * 
      */
+    @JsonIgnore
     public NoncurrentVersionTransition getNoncurrentVersionTransition() {
         return noncurrentVersionTransition;
     }
@@ -255,6 +267,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html
      * 
      */
+    @JsonIgnore
     public void setNoncurrentVersionTransition(NoncurrentVersionTransition noncurrentVersionTransition) {
         this.noncurrentVersionTransition = noncurrentVersionTransition;
     }
@@ -268,6 +281,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransitions
      * 
      */
+    @JsonIgnore
     public Set<NoncurrentVersionTransition> getNoncurrentVersionTransitions() {
         return noncurrentVersionTransitions;
     }
@@ -276,6 +290,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransitions
      * 
      */
+    @JsonIgnore
     public void setNoncurrentVersionTransitions(Set<NoncurrentVersionTransition> noncurrentVersionTransitions) {
         this.noncurrentVersionTransitions = noncurrentVersionTransitions;
     }
@@ -289,6 +304,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getPrefix() {
         return prefix;
     }
@@ -297,6 +313,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-prefix
      * 
      */
+    @JsonIgnore
     public void setPrefix(CharSequence prefix) {
         this.prefix = prefix;
     }
@@ -310,6 +327,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-status
      * 
      */
+    @JsonIgnore
     public CharSequence getStatus() {
         return status;
     }
@@ -318,6 +336,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-status
      * 
      */
+    @JsonIgnore
     public void setStatus(CharSequence status) {
         this.status = status;
     }
@@ -331,6 +350,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-tagfilters
      * 
      */
+    @JsonIgnore
     public Set<TagFilter> getTagFilters() {
         return tagFilters;
     }
@@ -339,6 +359,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-tagfilters
      * 
      */
+    @JsonIgnore
     public void setTagFilters(Set<TagFilter> tagFilters) {
         this.tagFilters = tagFilters;
     }
@@ -354,6 +375,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html
      * 
      */
+    @JsonIgnore
     public Transition getTransition() {
         return transition;
     }
@@ -364,6 +386,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html
      * 
      */
+    @JsonIgnore
     public void setTransition(Transition transition) {
         this.transition = transition;
     }
@@ -377,6 +400,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions
      * 
      */
+    @JsonIgnore
     public Set<Transition> getTransitions() {
         return transitions;
     }
@@ -385,6 +409,7 @@ public class Rule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions
      * 
      */
+    @JsonIgnore
     public void setTransitions(Set<Transition> transitions) {
         this.transitions = transitions;
     }

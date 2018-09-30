@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class InstanceAssociationOutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html
      * 
      */
+    @JsonIgnore
     public S3OutputLocation getS3Location() {
         return s3Location;
     }
@@ -48,6 +50,7 @@ public class InstanceAssociationOutputLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html
      * 
      */
+    @JsonIgnore
     public void setS3Location(S3OutputLocation s3Location) {
         this.s3Location = s3Location;
     }

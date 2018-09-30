@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -204,6 +205,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
@@ -212,6 +214,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
@@ -225,6 +228,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod
      * 
      */
+    @JsonIgnore
     public Integer getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
@@ -233,6 +237,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod
      * 
      */
+    @JsonIgnore
     public void setBackupRetentionPeriod(Integer backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
@@ -246,6 +251,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
@@ -254,6 +260,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
@@ -267,6 +274,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusterparametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterParameterGroupName() {
         return dBClusterParameterGroupName;
     }
@@ -275,6 +283,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbclusterparametergroupname
      * 
      */
+    @JsonIgnore
     public void setDBClusterParameterGroupName(CharSequence dBClusterParameterGroupName) {
         this.dBClusterParameterGroupName = dBClusterParameterGroupName;
     }
@@ -288,6 +297,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
@@ -296,6 +306,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
@@ -309,6 +320,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename
      * 
      */
+    @JsonIgnore
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -317,6 +329,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename
      * 
      */
+    @JsonIgnore
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -330,6 +343,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine
      * 
      */
+    @JsonIgnore
     public CharSequence getEngine() {
         return engine;
     }
@@ -338,6 +352,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine
      * 
      */
+    @JsonIgnore
     public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
@@ -351,6 +366,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode
      * 
      */
+    @JsonIgnore
     public CharSequence getEngineMode() {
         return engineMode;
     }
@@ -359,6 +375,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode
      * 
      */
+    @JsonIgnore
     public void setEngineMode(CharSequence engineMode) {
         this.engineMode = engineMode;
     }
@@ -372,6 +389,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion
      * 
      */
+    @JsonIgnore
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -380,6 +398,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion
      * 
      */
+    @JsonIgnore
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -393,6 +412,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -401,6 +421,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -414,6 +435,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masteruserpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
@@ -422,6 +444,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masteruserpassword
      * 
      */
+    @JsonIgnore
     public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
@@ -435,6 +458,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masterusername
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUsername() {
         return masterUsername;
     }
@@ -443,6 +467,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-masterusername
      * 
      */
+    @JsonIgnore
     public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
@@ -456,6 +481,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -464,6 +490,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -477,6 +504,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredBackupWindow() {
         return preferredBackupWindow;
     }
@@ -485,6 +513,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public void setPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
     }
@@ -498,6 +527,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -506,6 +536,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -519,6 +550,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getReplicationSourceIdentifier() {
         return replicationSourceIdentifier;
     }
@@ -527,6 +559,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier
      * 
      */
+    @JsonIgnore
     public void setReplicationSourceIdentifier(CharSequence replicationSourceIdentifier) {
         this.replicationSourceIdentifier = replicationSourceIdentifier;
     }
@@ -542,6 +575,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
      * 
      */
+    @JsonIgnore
     public ScalingConfiguration getScalingConfiguration() {
         return scalingConfiguration;
     }
@@ -552,6 +586,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setScalingConfiguration(ScalingConfiguration scalingConfiguration) {
         this.scalingConfiguration = scalingConfiguration;
     }
@@ -565,6 +600,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotIdentifier() {
         return snapshotIdentifier;
     }
@@ -573,6 +609,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public void setSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
     }
@@ -586,6 +623,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted
      * 
      */
+    @JsonIgnore
     public Boolean getStorageEncrypted() {
         return storageEncrypted;
     }
@@ -594,6 +632,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted
      * 
      */
+    @JsonIgnore
     public void setStorageEncrypted(Boolean storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
@@ -607,6 +646,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -615,6 +655,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -628,6 +669,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
@@ -636,6 +678,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public void setVpcSecurityGroupIds(Set<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }

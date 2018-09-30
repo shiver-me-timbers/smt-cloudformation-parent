@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-branchinterfaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getBranchInterfaceId() {
         return branchInterfaceId;
     }
@@ -66,6 +68,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-branchinterfaceid
      * 
      */
+    @JsonIgnore
     public void setBranchInterfaceId(CharSequence branchInterfaceId) {
         this.branchInterfaceId = branchInterfaceId;
     }
@@ -79,6 +82,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-grekey
      * 
      */
+    @JsonIgnore
     public Integer getGREKey() {
         return gREKey;
     }
@@ -87,6 +91,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-grekey
      * 
      */
+    @JsonIgnore
     public void setGREKey(Integer gREKey) {
         this.gREKey = gREKey;
     }
@@ -100,6 +105,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-trunkinterfaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getTrunkInterfaceId() {
         return trunkInterfaceId;
     }
@@ -108,6 +114,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-trunkinterfaceid
      * 
      */
+    @JsonIgnore
     public void setTrunkInterfaceId(CharSequence trunkInterfaceId) {
         this.trunkInterfaceId = trunkInterfaceId;
     }
@@ -121,6 +128,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-vlanid
      * 
      */
+    @JsonIgnore
     public Integer getVLANId() {
         return vLANId;
     }
@@ -129,6 +137,7 @@ public class TrunkInterfaceAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-vlanid
      * 
      */
+    @JsonIgnore
     public void setVLANId(Integer vLANId) {
         this.vLANId = vLANId;
     }

@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
+    @JsonIgnore
     public Object getRoleMappings() {
         return roleMappings;
     }
@@ -58,6 +60,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-rolemappings
      * 
      */
+    @JsonIgnore
     public void setRoleMappings(Object roleMappings) {
         this.roleMappings = roleMappings;
     }
@@ -71,6 +74,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid
      * 
      */
+    @JsonIgnore
     public CharSequence getIdentityPoolId() {
         return identityPoolId;
     }
@@ -79,6 +83,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-identitypoolid
      * 
      */
+    @JsonIgnore
     public void setIdentityPoolId(CharSequence identityPoolId) {
         this.identityPoolId = identityPoolId;
     }
@@ -92,6 +97,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
+    @JsonIgnore
     public Object getRoles() {
         return roles;
     }
@@ -100,6 +106,7 @@ public class IdentityPoolRoleAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypoolroleattachment.html#cfn-cognito-identitypoolroleattachment-roles
      * 
      */
+    @JsonIgnore
     public void setRoles(Object roles) {
         this.roles = roles;
     }

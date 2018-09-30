@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -36,6 +37,7 @@ public class PatchFilterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
      * 
      */
+    @JsonIgnore
     public List<PatchFilter> getPatchFilters() {
         return patchFilters;
     }
@@ -44,6 +46,7 @@ public class PatchFilterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
      * 
      */
+    @JsonIgnore
     public void setPatchFilters(List<PatchFilter> patchFilters) {
         this.patchFilters = patchFilters;
     }

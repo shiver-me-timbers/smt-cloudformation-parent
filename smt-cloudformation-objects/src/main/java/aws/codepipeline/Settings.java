@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-entityurltemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getEntityUrlTemplate() {
         return entityUrlTemplate;
     }
@@ -66,6 +68,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-entityurltemplate
      * 
      */
+    @JsonIgnore
     public void setEntityUrlTemplate(CharSequence entityUrlTemplate) {
         this.entityUrlTemplate = entityUrlTemplate;
     }
@@ -79,6 +82,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-executionurltemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getExecutionUrlTemplate() {
         return executionUrlTemplate;
     }
@@ -87,6 +91,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-executionurltemplate
      * 
      */
+    @JsonIgnore
     public void setExecutionUrlTemplate(CharSequence executionUrlTemplate) {
         this.executionUrlTemplate = executionUrlTemplate;
     }
@@ -100,6 +105,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-revisionurltemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getRevisionUrlTemplate() {
         return revisionUrlTemplate;
     }
@@ -108,6 +114,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-revisionurltemplate
      * 
      */
+    @JsonIgnore
     public void setRevisionUrlTemplate(CharSequence revisionUrlTemplate) {
         this.revisionUrlTemplate = revisionUrlTemplate;
     }
@@ -121,6 +128,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-thirdpartyconfigurationurl
      * 
      */
+    @JsonIgnore
     public CharSequence getThirdPartyConfigurationUrl() {
         return thirdPartyConfigurationUrl;
     }
@@ -129,6 +137,7 @@ public class Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html#cfn-codepipeline-customactiontype-settings-thirdpartyconfigurationurl
      * 
      */
+    @JsonIgnore
     public void setThirdPartyConfigurationUrl(CharSequence thirdPartyConfigurationUrl) {
         this.thirdPartyConfigurationUrl = thirdPartyConfigurationUrl;
     }

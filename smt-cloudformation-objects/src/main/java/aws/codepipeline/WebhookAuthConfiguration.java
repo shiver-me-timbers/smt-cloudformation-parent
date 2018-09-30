@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange
      * 
      */
+    @JsonIgnore
     public CharSequence getAllowedIPRange() {
         return allowedIPRange;
     }
@@ -50,6 +52,7 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange
      * 
      */
+    @JsonIgnore
     public void setAllowedIPRange(CharSequence allowedIPRange) {
         this.allowedIPRange = allowedIPRange;
     }
@@ -63,6 +66,7 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken
      * 
      */
+    @JsonIgnore
     public CharSequence getSecretToken() {
         return secretToken;
     }
@@ -71,6 +75,7 @@ public class WebhookAuthConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-secrettoken
      * 
      */
+    @JsonIgnore
     public void setSecretToken(CharSequence secretToken) {
         this.secretToken = secretToken;
     }

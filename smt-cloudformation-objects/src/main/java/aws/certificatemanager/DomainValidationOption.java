@@ -1,6 +1,7 @@
 
 package aws.certificatemanager;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -50,6 +52,7 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoptions-domainname
      * 
      */
+    @JsonIgnore
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -63,6 +66,7 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
+    @JsonIgnore
     public CharSequence getValidationDomain() {
         return validationDomain;
     }
@@ -71,6 +75,7 @@ public class DomainValidationOption {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-certificatemanager-certificate-domainvalidationoption.html#cfn-certificatemanager-certificate-domainvalidationoption-validationdomain
      * 
      */
+    @JsonIgnore
     public void setValidationDomain(CharSequence validationDomain) {
         this.validationDomain = validationDomain;
     }

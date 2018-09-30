@@ -3,6 +3,7 @@ package aws.sagemaker;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-onstart
      * 
      */
+    @JsonIgnore
     public List<NotebookInstanceLifecycleHook> getOnStart() {
         return onStart;
     }
@@ -60,6 +62,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-onstart
      * 
      */
+    @JsonIgnore
     public void setOnStart(List<NotebookInstanceLifecycleHook> onStart) {
         this.onStart = onStart;
     }
@@ -73,6 +76,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname
      * 
      */
+    @JsonIgnore
     public CharSequence getNotebookInstanceLifecycleConfigName() {
         return notebookInstanceLifecycleConfigName;
     }
@@ -81,6 +85,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname
      * 
      */
+    @JsonIgnore
     public void setNotebookInstanceLifecycleConfigName(CharSequence notebookInstanceLifecycleConfigName) {
         this.notebookInstanceLifecycleConfigName = notebookInstanceLifecycleConfigName;
     }
@@ -94,6 +99,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-oncreate
      * 
      */
+    @JsonIgnore
     public List<NotebookInstanceLifecycleHook> getOnCreate() {
         return onCreate;
     }
@@ -102,6 +108,7 @@ public class NotebookInstanceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-oncreate
      * 
      */
+    @JsonIgnore
     public void setOnCreate(List<NotebookInstanceLifecycleHook> onCreate) {
         this.onCreate = onCreate;
     }

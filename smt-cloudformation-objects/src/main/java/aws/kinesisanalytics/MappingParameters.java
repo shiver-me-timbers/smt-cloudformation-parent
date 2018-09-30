@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class MappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-jsonmappingparameters.html
      * 
      */
+    @JsonIgnore
     public JSONMappingParameters getJSONMappingParameters() {
         return jSONMappingParameters;
     }
@@ -58,6 +60,7 @@ public class MappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-jsonmappingparameters.html
      * 
      */
+    @JsonIgnore
     public void setJSONMappingParameters(JSONMappingParameters jSONMappingParameters) {
         this.jSONMappingParameters = jSONMappingParameters;
     }
@@ -73,6 +76,7 @@ public class MappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html
      * 
      */
+    @JsonIgnore
     public CSVMappingParameters getCSVMappingParameters() {
         return cSVMappingParameters;
     }
@@ -83,6 +87,7 @@ public class MappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html
      * 
      */
+    @JsonIgnore
     public void setCSVMappingParameters(CSVMappingParameters cSVMappingParameters) {
         this.cSVMappingParameters = cSVMappingParameters;
     }

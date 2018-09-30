@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationArn() {
         return notificationArn;
     }
@@ -60,6 +62,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationarn
      * 
      */
+    @JsonIgnore
     public void setNotificationArn(CharSequence notificationArn) {
         this.notificationArn = notificationArn;
     }
@@ -73,6 +76,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationType() {
         return notificationType;
     }
@@ -81,6 +85,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationtype
      * 
      */
+    @JsonIgnore
     public void setNotificationType(CharSequence notificationType) {
         this.notificationType = notificationType;
     }
@@ -94,6 +99,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getNotificationEvents() {
         return notificationEvents;
     }
@@ -102,6 +108,7 @@ public class NotificationConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html#cfn-ssm-maintenancewindowtask-notificationconfig-notificationevents
      * 
      */
+    @JsonIgnore
     public void setNotificationEvents(List<CharSequence> notificationEvents) {
         this.notificationEvents = notificationEvents;
     }

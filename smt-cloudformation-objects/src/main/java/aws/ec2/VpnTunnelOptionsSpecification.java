@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class VpnTunnelOptionsSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-presharedkey
      * 
      */
+    @JsonIgnore
     public CharSequence getPreSharedKey() {
         return preSharedKey;
     }
@@ -50,6 +52,7 @@ public class VpnTunnelOptionsSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-presharedkey
      * 
      */
+    @JsonIgnore
     public void setPreSharedKey(CharSequence preSharedKey) {
         this.preSharedKey = preSharedKey;
     }
@@ -63,6 +66,7 @@ public class VpnTunnelOptionsSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-tunnelinsidecidr
      * 
      */
+    @JsonIgnore
     public CharSequence getTunnelInsideCidr() {
         return tunnelInsideCidr;
     }
@@ -71,6 +75,7 @@ public class VpnTunnelOptionsSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-vpnconnection-vpntunneloptionsspecification.html#cfn-ec2-vpnconnection-vpntunneloptionsspecification-tunnelinsidecidr
      * 
      */
+    @JsonIgnore
     public void setTunnelInsideCidr(CharSequence tunnelInsideCidr) {
         this.tunnelInsideCidr = tunnelInsideCidr;
     }

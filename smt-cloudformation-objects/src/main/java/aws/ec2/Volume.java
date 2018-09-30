@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-device
      * 
      */
+    @JsonIgnore
     public CharSequence getDevice() {
         return device;
     }
@@ -50,6 +52,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-device
      * 
      */
+    @JsonIgnore
     public void setDevice(CharSequence device) {
         this.device = device;
     }
@@ -63,6 +66,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-volumeid
      * 
      */
+    @JsonIgnore
     public CharSequence getVolumeId() {
         return volumeId;
     }
@@ -71,6 +75,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-volumeid
      * 
      */
+    @JsonIgnore
     public void setVolumeId(CharSequence volumeId) {
         this.volumeId = volumeId;
     }

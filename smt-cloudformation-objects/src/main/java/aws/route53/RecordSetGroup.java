@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -62,6 +63,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
      * 
      */
+    @JsonIgnore
     public CharSequence getComment() {
         return comment;
     }
@@ -70,6 +72,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
      * 
      */
+    @JsonIgnore
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -83,6 +86,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid
      * 
      */
+    @JsonIgnore
     public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
@@ -91,6 +95,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzoneid
      * 
      */
+    @JsonIgnore
     public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
@@ -104,6 +109,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename
      * 
      */
+    @JsonIgnore
     public CharSequence getHostedZoneName() {
         return hostedZoneName;
     }
@@ -112,6 +118,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-hostedzonename
      * 
      */
+    @JsonIgnore
     public void setHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
     }
@@ -125,6 +132,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets
      * 
      */
+    @JsonIgnore
     public Set<RecordSet> getRecordSets() {
         return recordSets;
     }
@@ -133,6 +141,7 @@ public class RecordSetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets
      * 
      */
+    @JsonIgnore
     public void setRecordSets(Set<RecordSet> recordSets) {
         this.recordSets = recordSets;
     }

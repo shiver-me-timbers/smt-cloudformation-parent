@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -131,6 +132,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype
      * 
      */
+    @JsonIgnore
     public CharSequence getApiKeySourceType() {
         return apiKeySourceType;
     }
@@ -139,6 +141,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-apikeysourcetype
      * 
      */
+    @JsonIgnore
     public void setApiKeySourceType(CharSequence apiKeySourceType) {
         this.apiKeySourceType = apiKeySourceType;
     }
@@ -152,6 +155,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-binarymediatypes
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getBinaryMediaTypes() {
         return binaryMediaTypes;
     }
@@ -160,6 +164,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-binarymediatypes
      * 
      */
+    @JsonIgnore
     public void setBinaryMediaTypes(Set<CharSequence> binaryMediaTypes) {
         this.binaryMediaTypes = binaryMediaTypes;
     }
@@ -173,6 +178,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body
      * 
      */
+    @JsonIgnore
     public Object getBody() {
         return body;
     }
@@ -181,6 +187,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body
      * 
      */
+    @JsonIgnore
     public void setBody(Object body) {
         this.body = body;
     }
@@ -196,6 +203,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html
      * 
      */
+    @JsonIgnore
     public S3Location getBodyS3Location() {
         return bodyS3Location;
     }
@@ -206,6 +214,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html
      * 
      */
+    @JsonIgnore
     public void setBodyS3Location(S3Location bodyS3Location) {
         this.bodyS3Location = bodyS3Location;
     }
@@ -219,6 +228,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom
      * 
      */
+    @JsonIgnore
     public CharSequence getCloneFrom() {
         return cloneFrom;
     }
@@ -227,6 +237,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom
      * 
      */
+    @JsonIgnore
     public void setCloneFrom(CharSequence cloneFrom) {
         this.cloneFrom = cloneFrom;
     }
@@ -240,6 +251,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -248,6 +260,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -263,6 +276,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
+    @JsonIgnore
     public EndpointConfiguration getEndpointConfiguration() {
         return endpointConfiguration;
     }
@@ -273,6 +287,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
@@ -286,6 +301,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings
      * 
      */
+    @JsonIgnore
     public Boolean getFailOnWarnings() {
         return failOnWarnings;
     }
@@ -294,6 +310,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings
      * 
      */
+    @JsonIgnore
     public void setFailOnWarnings(Boolean failOnWarnings) {
         this.failOnWarnings = failOnWarnings;
     }
@@ -307,6 +324,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-minimumcompressionsize
      * 
      */
+    @JsonIgnore
     public Integer getMinimumCompressionSize() {
         return minimumCompressionSize;
     }
@@ -315,6 +333,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-minimumcompressionsize
      * 
      */
+    @JsonIgnore
     public void setMinimumCompressionSize(Integer minimumCompressionSize) {
         this.minimumCompressionSize = minimumCompressionSize;
     }
@@ -328,6 +347,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -336,6 +356,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -349,6 +370,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-parameters
      * 
      */
+    @JsonIgnore
     public Map<String, String> getParameters() {
         return parameters;
     }
@@ -357,6 +379,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-parameters
      * 
      */
+    @JsonIgnore
     public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
@@ -370,6 +393,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy
      * 
      */
+    @JsonIgnore
     public Object getPolicy() {
         return policy;
     }
@@ -378,6 +402,7 @@ public class RestApi {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy
      * 
      */
+    @JsonIgnore
     public void setPolicy(Object policy) {
         this.policy = policy;
     }

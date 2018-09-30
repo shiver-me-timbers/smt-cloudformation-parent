@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
      * 
      */
+    @JsonIgnore
     public Boolean getServerSideTokenCheck() {
         return serverSideTokenCheck;
     }
@@ -58,6 +60,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
      * 
      */
+    @JsonIgnore
     public void setServerSideTokenCheck(Boolean serverSideTokenCheck) {
         this.serverSideTokenCheck = serverSideTokenCheck;
     }
@@ -71,6 +74,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
      * 
      */
+    @JsonIgnore
     public CharSequence getProviderName() {
         return providerName;
     }
@@ -79,6 +83,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
      * 
      */
+    @JsonIgnore
     public void setProviderName(CharSequence providerName) {
         this.providerName = providerName;
     }
@@ -92,6 +97,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
      * 
      */
+    @JsonIgnore
     public CharSequence getClientId() {
         return clientId;
     }
@@ -100,6 +106,7 @@ public class CognitoIdentityProvider {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
      * 
      */
+    @JsonIgnore
     public void setClientId(CharSequence clientId) {
         this.clientId = clientId;
     }

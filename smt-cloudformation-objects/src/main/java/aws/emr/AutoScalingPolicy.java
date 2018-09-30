@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html
      * 
      */
+    @JsonIgnore
     public ScalingConstraints getConstraints() {
         return constraints;
     }
@@ -60,6 +62,7 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html
      * 
      */
+    @JsonIgnore
     public void setConstraints(ScalingConstraints constraints) {
         this.constraints = constraints;
     }
@@ -73,6 +76,7 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules
      * 
      */
+    @JsonIgnore
     public Set<ScalingRule> getRules() {
         return rules;
     }
@@ -81,6 +85,7 @@ public class AutoScalingPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules
      * 
      */
+    @JsonIgnore
     public void setRules(Set<ScalingRule> rules) {
         this.rules = rules;
     }

@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -70,6 +71,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html
      * 
      */
+    @JsonIgnore
     public ConfigSnapshotDeliveryProperties getConfigSnapshotDeliveryProperties() {
         return configSnapshotDeliveryProperties;
     }
@@ -80,6 +82,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html
      * 
      */
+    @JsonIgnore
     public void setConfigSnapshotDeliveryProperties(ConfigSnapshotDeliveryProperties configSnapshotDeliveryProperties) {
         this.configSnapshotDeliveryProperties = configSnapshotDeliveryProperties;
     }
@@ -93,6 +96,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -101,6 +105,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -114,6 +119,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getS3BucketName() {
         return s3BucketName;
     }
@@ -122,6 +128,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3bucketname
      * 
      */
+    @JsonIgnore
     public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
@@ -135,6 +142,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3keyprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
@@ -143,6 +151,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-s3keyprefix
      * 
      */
+    @JsonIgnore
     public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }
@@ -156,6 +165,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-snstopicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getSnsTopicARN() {
         return snsTopicARN;
     }
@@ -164,6 +174,7 @@ public class DeliveryChannel {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-snstopicarn
      * 
      */
+    @JsonIgnore
     public void setSnsTopicARN(CharSequence snsTopicARN) {
         this.snsTopicARN = snsTopicARN;
     }

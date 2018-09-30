@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -137,6 +138,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn
      * 
      */
+    @JsonIgnore
     public CharSequence getCloudWatchLogsLogGroupArn() {
         return cloudWatchLogsLogGroupArn;
     }
@@ -145,6 +147,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLogsLogGroupArn(CharSequence cloudWatchLogsLogGroupArn) {
         this.cloudWatchLogsLogGroupArn = cloudWatchLogsLogGroupArn;
     }
@@ -158,6 +161,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getCloudWatchLogsRoleArn() {
         return cloudWatchLogsRoleArn;
     }
@@ -166,6 +170,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsrolearn
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLogsRoleArn(CharSequence cloudWatchLogsRoleArn) {
         this.cloudWatchLogsRoleArn = cloudWatchLogsRoleArn;
     }
@@ -179,6 +184,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-enablelogfilevalidation
      * 
      */
+    @JsonIgnore
     public Boolean getEnableLogFileValidation() {
         return enableLogFileValidation;
     }
@@ -187,6 +193,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-enablelogfilevalidation
      * 
      */
+    @JsonIgnore
     public void setEnableLogFileValidation(Boolean enableLogFileValidation) {
         this.enableLogFileValidation = enableLogFileValidation;
     }
@@ -200,6 +207,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-eventselectors
      * 
      */
+    @JsonIgnore
     public Set<EventSelector> getEventSelectors() {
         return eventSelectors;
     }
@@ -208,6 +216,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-eventselectors
      * 
      */
+    @JsonIgnore
     public void setEventSelectors(Set<EventSelector> eventSelectors) {
         this.eventSelectors = eventSelectors;
     }
@@ -221,6 +230,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents
      * 
      */
+    @JsonIgnore
     public Boolean getIncludeGlobalServiceEvents() {
         return includeGlobalServiceEvents;
     }
@@ -229,6 +239,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents
      * 
      */
+    @JsonIgnore
     public void setIncludeGlobalServiceEvents(Boolean includeGlobalServiceEvents) {
         this.includeGlobalServiceEvents = includeGlobalServiceEvents;
     }
@@ -242,6 +253,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-islogging
      * 
      */
+    @JsonIgnore
     public Boolean getIsLogging() {
         return isLogging;
     }
@@ -250,6 +262,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-islogging
      * 
      */
+    @JsonIgnore
     public void setIsLogging(Boolean isLogging) {
         this.isLogging = isLogging;
     }
@@ -263,6 +276,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-ismultiregiontrail
      * 
      */
+    @JsonIgnore
     public Boolean getIsMultiRegionTrail() {
         return isMultiRegionTrail;
     }
@@ -271,6 +285,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-ismultiregiontrail
      * 
      */
+    @JsonIgnore
     public void setIsMultiRegionTrail(Boolean isMultiRegionTrail) {
         this.isMultiRegionTrail = isMultiRegionTrail;
     }
@@ -284,6 +299,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKMSKeyId() {
         return kMSKeyId;
     }
@@ -292,6 +308,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKMSKeyId(CharSequence kMSKeyId) {
         this.kMSKeyId = kMSKeyId;
     }
@@ -305,6 +322,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getS3BucketName() {
         return s3BucketName;
     }
@@ -313,6 +331,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3bucketname
      * 
      */
+    @JsonIgnore
     public void setS3BucketName(CharSequence s3BucketName) {
         this.s3BucketName = s3BucketName;
     }
@@ -326,6 +345,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3keyprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getS3KeyPrefix() {
         return s3KeyPrefix;
     }
@@ -334,6 +354,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3keyprefix
      * 
      */
+    @JsonIgnore
     public void setS3KeyPrefix(CharSequence s3KeyPrefix) {
         this.s3KeyPrefix = s3KeyPrefix;
     }
@@ -347,6 +368,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-snstopicname
      * 
      */
+    @JsonIgnore
     public CharSequence getSnsTopicName() {
         return snsTopicName;
     }
@@ -355,6 +377,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-snstopicname
      * 
      */
+    @JsonIgnore
     public void setSnsTopicName(CharSequence snsTopicName) {
         this.snsTopicName = snsTopicName;
     }
@@ -368,6 +391,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -376,6 +400,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -389,6 +414,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-trailname
      * 
      */
+    @JsonIgnore
     public CharSequence getTrailName() {
         return trailName;
     }
@@ -397,6 +423,7 @@ public class Trail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-trailname
      * 
      */
+    @JsonIgnore
     public void setTrailName(CharSequence trailName) {
         this.trailName = trailName;
     }

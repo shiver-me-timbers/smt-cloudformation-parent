@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -90,6 +91,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
@@ -98,6 +100,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-autoscalinggroupname
      * 
      */
+    @JsonIgnore
     public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
@@ -111,6 +114,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-defaultresult
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultResult() {
         return defaultResult;
     }
@@ -119,6 +123,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-defaultresult
      * 
      */
+    @JsonIgnore
     public void setDefaultResult(CharSequence defaultResult) {
         this.defaultResult = defaultResult;
     }
@@ -132,6 +137,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-heartbeattimeout
      * 
      */
+    @JsonIgnore
     public Integer getHeartbeatTimeout() {
         return heartbeatTimeout;
     }
@@ -140,6 +146,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-heartbeattimeout
      * 
      */
+    @JsonIgnore
     public void setHeartbeatTimeout(Integer heartbeatTimeout) {
         this.heartbeatTimeout = heartbeatTimeout;
     }
@@ -153,6 +160,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-autoscaling-lifecyclehook-lifecyclehookname
      * 
      */
+    @JsonIgnore
     public CharSequence getLifecycleHookName() {
         return lifecycleHookName;
     }
@@ -161,6 +169,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-autoscaling-lifecyclehook-lifecyclehookname
      * 
      */
+    @JsonIgnore
     public void setLifecycleHookName(CharSequence lifecycleHookName) {
         this.lifecycleHookName = lifecycleHookName;
     }
@@ -174,6 +183,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-lifecycletransition
      * 
      */
+    @JsonIgnore
     public CharSequence getLifecycleTransition() {
         return lifecycleTransition;
     }
@@ -182,6 +192,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-lifecycletransition
      * 
      */
+    @JsonIgnore
     public void setLifecycleTransition(CharSequence lifecycleTransition) {
         this.lifecycleTransition = lifecycleTransition;
     }
@@ -195,6 +206,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationmetadata
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationMetadata() {
         return notificationMetadata;
     }
@@ -203,6 +215,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationmetadata
      * 
      */
+    @JsonIgnore
     public void setNotificationMetadata(CharSequence notificationMetadata) {
         this.notificationMetadata = notificationMetadata;
     }
@@ -216,6 +229,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationtargetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationTargetARN() {
         return notificationTargetARN;
     }
@@ -224,6 +238,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-notificationtargetarn
      * 
      */
+    @JsonIgnore
     public void setNotificationTargetARN(CharSequence notificationTargetARN) {
         this.notificationTargetARN = notificationTargetARN;
     }
@@ -237,6 +252,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -245,6 +261,7 @@ public class LifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-lifecyclehook.html#cfn-as-lifecyclehook-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }

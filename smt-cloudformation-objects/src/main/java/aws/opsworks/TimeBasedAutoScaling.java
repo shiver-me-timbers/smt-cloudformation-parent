@@ -2,6 +2,7 @@
 package aws.opsworks;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -83,6 +84,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-friday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getFriday() {
         return friday;
     }
@@ -91,6 +93,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-friday
      * 
      */
+    @JsonIgnore
     public void setFriday(Map<String, String> friday) {
         this.friday = friday;
     }
@@ -104,6 +107,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-monday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getMonday() {
         return monday;
     }
@@ -112,6 +116,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-monday
      * 
      */
+    @JsonIgnore
     public void setMonday(Map<String, String> monday) {
         this.monday = monday;
     }
@@ -125,6 +130,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-saturday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getSaturday() {
         return saturday;
     }
@@ -133,6 +139,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-saturday
      * 
      */
+    @JsonIgnore
     public void setSaturday(Map<String, String> saturday) {
         this.saturday = saturday;
     }
@@ -146,6 +153,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-sunday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getSunday() {
         return sunday;
     }
@@ -154,6 +162,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-sunday
      * 
      */
+    @JsonIgnore
     public void setSunday(Map<String, String> sunday) {
         this.sunday = sunday;
     }
@@ -167,6 +176,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-thursday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getThursday() {
         return thursday;
     }
@@ -175,6 +185,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-thursday
      * 
      */
+    @JsonIgnore
     public void setThursday(Map<String, String> thursday) {
         this.thursday = thursday;
     }
@@ -188,6 +199,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-tuesday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getTuesday() {
         return tuesday;
     }
@@ -196,6 +208,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-tuesday
      * 
      */
+    @JsonIgnore
     public void setTuesday(Map<String, String> tuesday) {
         this.tuesday = tuesday;
     }
@@ -209,6 +222,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-wednesday
      * 
      */
+    @JsonIgnore
     public Map<String, String> getWednesday() {
         return wednesday;
     }
@@ -217,6 +231,7 @@ public class TimeBasedAutoScaling {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html#cfn-opsworks-instance-timebasedautoscaling-wednesday
      * 
      */
+    @JsonIgnore
     public void setWednesday(Map<String, String> wednesday) {
         this.wednesday = wednesday;
     }

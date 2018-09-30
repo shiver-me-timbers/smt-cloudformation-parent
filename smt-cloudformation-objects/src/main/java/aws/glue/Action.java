@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
      * 
      */
+    @JsonIgnore
     public CharSequence getJobName() {
         return jobName;
     }
@@ -50,6 +52,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-jobname
      * 
      */
+    @JsonIgnore
     public void setJobName(CharSequence jobName) {
         this.jobName = jobName;
     }
@@ -63,6 +66,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments
      * 
      */
+    @JsonIgnore
     public Object getArguments() {
         return arguments;
     }
@@ -71,6 +75,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-action.html#cfn-glue-trigger-action-arguments
      * 
      */
+    @JsonIgnore
     public void setArguments(Object arguments) {
         this.arguments = arguments;
     }

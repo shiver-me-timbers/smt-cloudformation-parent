@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationCidrBlock() {
         return destinationCidrBlock;
     }
@@ -50,6 +52,7 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-cidrblock
      * 
      */
+    @JsonIgnore
     public void setDestinationCidrBlock(CharSequence destinationCidrBlock) {
         this.destinationCidrBlock = destinationCidrBlock;
     }
@@ -63,6 +66,7 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpnConnectionId() {
         return vpnConnectionId;
     }
@@ -71,6 +75,7 @@ public class VPNConnectionRoute {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection-route.html#cfn-ec2-vpnconnectionroute-connectionid
      * 
      */
+    @JsonIgnore
     public void setVpnConnectionId(CharSequence vpnConnectionId) {
         this.vpnConnectionId = vpnConnectionId;
     }

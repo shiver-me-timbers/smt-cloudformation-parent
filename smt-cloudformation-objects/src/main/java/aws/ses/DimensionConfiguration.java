@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionvaluesource
      * 
      */
+    @JsonIgnore
     public CharSequence getDimensionValueSource() {
         return dimensionValueSource;
     }
@@ -58,6 +60,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionvaluesource
      * 
      */
+    @JsonIgnore
     public void setDimensionValueSource(CharSequence dimensionValueSource) {
         this.dimensionValueSource = dimensionValueSource;
     }
@@ -71,6 +74,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultDimensionValue() {
         return defaultDimensionValue;
     }
@@ -79,6 +83,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-defaultdimensionvalue
      * 
      */
+    @JsonIgnore
     public void setDefaultDimensionValue(CharSequence defaultDimensionValue) {
         this.defaultDimensionValue = defaultDimensionValue;
     }
@@ -92,6 +97,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionname
      * 
      */
+    @JsonIgnore
     public CharSequence getDimensionName() {
         return dimensionName;
     }
@@ -100,6 +106,7 @@ public class DimensionConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-dimensionconfiguration.html#cfn-ses-configurationseteventdestination-dimensionconfiguration-dimensionname
      * 
      */
+    @JsonIgnore
     public void setDimensionName(CharSequence dimensionName) {
         this.dimensionName = dimensionName;
     }

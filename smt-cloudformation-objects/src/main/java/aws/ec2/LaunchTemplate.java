@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
      * 
      */
+    @JsonIgnore
     public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
@@ -52,6 +54,7 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
@@ -67,6 +70,7 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
+    @JsonIgnore
     public LaunchTemplateData getLaunchTemplateData() {
         return launchTemplateData;
     }
@@ -77,6 +81,7 @@ public class LaunchTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplateData(LaunchTemplateData launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
     }

@@ -4,6 +4,7 @@ package aws.inspector;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -69,6 +70,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getAssessmentTargetArn() {
         return assessmentTargetArn;
     }
@@ -77,6 +79,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
      * 
      */
+    @JsonIgnore
     public void setAssessmentTargetArn(CharSequence assessmentTargetArn) {
         this.assessmentTargetArn = assessmentTargetArn;
     }
@@ -90,6 +93,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
      * 
      */
+    @JsonIgnore
     public Integer getDurationInSeconds() {
         return durationInSeconds;
     }
@@ -98,6 +102,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
      * 
      */
+    @JsonIgnore
     public void setDurationInSeconds(Integer durationInSeconds) {
         this.durationInSeconds = durationInSeconds;
     }
@@ -111,6 +116,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
      * 
      */
+    @JsonIgnore
     public CharSequence getAssessmentTemplateName() {
         return assessmentTemplateName;
     }
@@ -119,6 +125,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
      * 
      */
+    @JsonIgnore
     public void setAssessmentTemplateName(CharSequence assessmentTemplateName) {
         this.assessmentTemplateName = assessmentTemplateName;
     }
@@ -132,6 +139,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getRulesPackageArns() {
         return rulesPackageArns;
     }
@@ -140,6 +148,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
      * 
      */
+    @JsonIgnore
     public void setRulesPackageArns(List<CharSequence> rulesPackageArns) {
         this.rulesPackageArns = rulesPackageArns;
     }
@@ -153,6 +162,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings
      * 
      */
+    @JsonIgnore
     public List<Tag> getUserAttributesForFindings() {
         return userAttributesForFindings;
     }
@@ -161,6 +171,7 @@ public class AssessmentTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings
      * 
      */
+    @JsonIgnore
     public void setUserAttributesForFindings(List<Tag> userAttributesForFindings) {
         this.userAttributesForFindings = userAttributesForFindings;
     }

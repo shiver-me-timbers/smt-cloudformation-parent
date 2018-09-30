@@ -4,6 +4,7 @@ package aws.sqs;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -125,6 +126,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-contentbaseddeduplication
      * 
      */
+    @JsonIgnore
     public Boolean getContentBasedDeduplication() {
         return contentBasedDeduplication;
     }
@@ -133,6 +135,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-contentbaseddeduplication
      * 
      */
+    @JsonIgnore
     public void setContentBasedDeduplication(Boolean contentBasedDeduplication) {
         this.contentBasedDeduplication = contentBasedDeduplication;
     }
@@ -146,6 +149,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds
      * 
      */
+    @JsonIgnore
     public Integer getDelaySeconds() {
         return delaySeconds;
     }
@@ -154,6 +158,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds
      * 
      */
+    @JsonIgnore
     public void setDelaySeconds(Integer delaySeconds) {
         this.delaySeconds = delaySeconds;
     }
@@ -167,6 +172,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifoqueue
      * 
      */
+    @JsonIgnore
     public Boolean getFifoQueue() {
         return fifoQueue;
     }
@@ -175,6 +181,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifoqueue
      * 
      */
+    @JsonIgnore
     public void setFifoQueue(Boolean fifoQueue) {
         this.fifoQueue = fifoQueue;
     }
@@ -188,6 +195,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds
      * 
      */
+    @JsonIgnore
     public Integer getKmsDataKeyReusePeriodSeconds() {
         return kmsDataKeyReusePeriodSeconds;
     }
@@ -196,6 +204,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds
      * 
      */
+    @JsonIgnore
     public void setKmsDataKeyReusePeriodSeconds(Integer kmsDataKeyReusePeriodSeconds) {
         this.kmsDataKeyReusePeriodSeconds = kmsDataKeyReusePeriodSeconds;
     }
@@ -209,6 +218,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsmasterkeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsMasterKeyId() {
         return kmsMasterKeyId;
     }
@@ -217,6 +227,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsmasterkeyid
      * 
      */
+    @JsonIgnore
     public void setKmsMasterKeyId(CharSequence kmsMasterKeyId) {
         this.kmsMasterKeyId = kmsMasterKeyId;
     }
@@ -230,6 +241,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-maxmesgsize
      * 
      */
+    @JsonIgnore
     public Integer getMaximumMessageSize() {
         return maximumMessageSize;
     }
@@ -238,6 +250,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-maxmesgsize
      * 
      */
+    @JsonIgnore
     public void setMaximumMessageSize(Integer maximumMessageSize) {
         this.maximumMessageSize = maximumMessageSize;
     }
@@ -251,6 +264,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-msgretentionperiod
      * 
      */
+    @JsonIgnore
     public Integer getMessageRetentionPeriod() {
         return messageRetentionPeriod;
     }
@@ -259,6 +273,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-msgretentionperiod
      * 
      */
+    @JsonIgnore
     public void setMessageRetentionPeriod(Integer messageRetentionPeriod) {
         this.messageRetentionPeriod = messageRetentionPeriod;
     }
@@ -272,6 +287,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-name
      * 
      */
+    @JsonIgnore
     public CharSequence getQueueName() {
         return queueName;
     }
@@ -280,6 +296,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-name
      * 
      */
+    @JsonIgnore
     public void setQueueName(CharSequence queueName) {
         this.queueName = queueName;
     }
@@ -293,6 +310,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-receivemsgwaittime
      * 
      */
+    @JsonIgnore
     public Integer getReceiveMessageWaitTimeSeconds() {
         return receiveMessageWaitTimeSeconds;
     }
@@ -301,6 +319,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-receivemsgwaittime
      * 
      */
+    @JsonIgnore
     public void setReceiveMessageWaitTimeSeconds(Integer receiveMessageWaitTimeSeconds) {
         this.receiveMessageWaitTimeSeconds = receiveMessageWaitTimeSeconds;
     }
@@ -314,6 +333,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive
      * 
      */
+    @JsonIgnore
     public Object getRedrivePolicy() {
         return redrivePolicy;
     }
@@ -322,6 +342,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-redrive
      * 
      */
+    @JsonIgnore
     public void setRedrivePolicy(Object redrivePolicy) {
         this.redrivePolicy = redrivePolicy;
     }
@@ -335,6 +356,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#cfn-sqs-queue-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -343,6 +365,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#cfn-sqs-queue-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -356,6 +379,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-visiblitytimeout
      * 
      */
+    @JsonIgnore
     public Integer getVisibilityTimeout() {
         return visibilityTimeout;
     }
@@ -364,6 +388,7 @@ public class Queue {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-visiblitytimeout
      * 
      */
+    @JsonIgnore
     public void setVisibilityTimeout(Integer visibilityTimeout) {
         this.visibilityTimeout = visibilityTimeout;
     }

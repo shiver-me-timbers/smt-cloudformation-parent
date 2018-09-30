@@ -3,6 +3,7 @@ package aws.gamelift;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -119,6 +120,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-buildid
      * 
      */
+    @JsonIgnore
     public CharSequence getBuildId() {
         return buildId;
     }
@@ -127,6 +129,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-buildid
      * 
      */
+    @JsonIgnore
     public void setBuildId(CharSequence buildId) {
         this.buildId = buildId;
     }
@@ -140,6 +143,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -148,6 +152,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -161,6 +166,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-desiredec2instances
      * 
      */
+    @JsonIgnore
     public Integer getDesiredEC2Instances() {
         return desiredEC2Instances;
     }
@@ -169,6 +175,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-desiredec2instances
      * 
      */
+    @JsonIgnore
     public void setDesiredEC2Instances(Integer desiredEC2Instances) {
         this.desiredEC2Instances = desiredEC2Instances;
     }
@@ -182,6 +189,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2inboundpermissions
      * 
      */
+    @JsonIgnore
     public Set<IpPermission> getEC2InboundPermissions() {
         return eC2InboundPermissions;
     }
@@ -190,6 +198,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2inboundpermissions
      * 
      */
+    @JsonIgnore
     public void setEC2InboundPermissions(Set<IpPermission> eC2InboundPermissions) {
         this.eC2InboundPermissions = eC2InboundPermissions;
     }
@@ -203,6 +212,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getEC2InstanceType() {
         return eC2InstanceType;
     }
@@ -211,6 +221,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2instancetype
      * 
      */
+    @JsonIgnore
     public void setEC2InstanceType(CharSequence eC2InstanceType) {
         this.eC2InstanceType = eC2InstanceType;
     }
@@ -224,6 +235,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-logpaths
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getLogPaths() {
         return logPaths;
     }
@@ -232,6 +244,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-logpaths
      * 
      */
+    @JsonIgnore
     public void setLogPaths(Set<CharSequence> logPaths) {
         this.logPaths = logPaths;
     }
@@ -245,6 +258,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-maxsize
      * 
      */
+    @JsonIgnore
     public Integer getMaxSize() {
         return maxSize;
     }
@@ -253,6 +267,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-maxsize
      * 
      */
+    @JsonIgnore
     public void setMaxSize(Integer maxSize) {
         this.maxSize = maxSize;
     }
@@ -266,6 +281,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize
      * 
      */
+    @JsonIgnore
     public Integer getMinSize() {
         return minSize;
     }
@@ -274,6 +290,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-minsize
      * 
      */
+    @JsonIgnore
     public void setMinSize(Integer minSize) {
         this.minSize = minSize;
     }
@@ -287,6 +304,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -295,6 +313,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -308,6 +327,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchparameters
      * 
      */
+    @JsonIgnore
     public CharSequence getServerLaunchParameters() {
         return serverLaunchParameters;
     }
@@ -316,6 +336,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchparameters
      * 
      */
+    @JsonIgnore
     public void setServerLaunchParameters(CharSequence serverLaunchParameters) {
         this.serverLaunchParameters = serverLaunchParameters;
     }
@@ -329,6 +350,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchpath
      * 
      */
+    @JsonIgnore
     public CharSequence getServerLaunchPath() {
         return serverLaunchPath;
     }
@@ -337,6 +359,7 @@ public class Fleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-serverlaunchpath
      * 
      */
+    @JsonIgnore
     public void setServerLaunchPath(CharSequence serverLaunchPath) {
         this.serverLaunchPath = serverLaunchPath;
     }

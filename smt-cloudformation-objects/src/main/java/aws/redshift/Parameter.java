@@ -1,6 +1,7 @@
 
 package aws.redshift;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Parameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametername
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterName() {
         return parameterName;
     }
@@ -50,6 +52,7 @@ public class Parameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametername
      * 
      */
+    @JsonIgnore
     public void setParameterName(CharSequence parameterName) {
         this.parameterName = parameterName;
     }
@@ -63,6 +66,7 @@ public class Parameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametervalue
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterValue() {
         return parameterValue;
     }
@@ -71,6 +75,7 @@ public class Parameter {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html#cfn-redshift-clusterparametergroup-parameter-parametervalue
      * 
      */
+    @JsonIgnore
     public void setParameterValue(CharSequence parameterValue) {
         this.parameterValue = parameterValue;
     }

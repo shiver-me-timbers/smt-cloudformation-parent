@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class ApplicationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-cloudformationstackarn
      * 
      */
+    @JsonIgnore
     public CharSequence getCloudFormationStackARN() {
         return cloudFormationStackARN;
     }
@@ -52,6 +54,7 @@ public class ApplicationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-cloudformationstackarn
      * 
      */
+    @JsonIgnore
     public void setCloudFormationStackARN(CharSequence cloudFormationStackARN) {
         this.cloudFormationStackARN = cloudFormationStackARN;
     }
@@ -65,6 +68,7 @@ public class ApplicationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-tagfilters
      * 
      */
+    @JsonIgnore
     public List<TagFilter> getTagFilters() {
         return tagFilters;
     }
@@ -73,6 +77,7 @@ public class ApplicationSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-tagfilters
      * 
      */
+    @JsonIgnore
     public void setTagFilters(List<TagFilter> tagFilters) {
         this.tagFilters = tagFilters;
     }

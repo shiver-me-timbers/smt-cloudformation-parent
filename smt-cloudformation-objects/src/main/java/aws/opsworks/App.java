@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -135,6 +136,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
+    @JsonIgnore
     public DataSource getAppSource() {
         return appSource;
     }
@@ -145,6 +147,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
+    @JsonIgnore
     public void setAppSource(DataSource appSource) {
         this.appSource = appSource;
     }
@@ -158,6 +161,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes
      * 
      */
+    @JsonIgnore
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -166,6 +170,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }
@@ -179,6 +184,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-datasources
      * 
      */
+    @JsonIgnore
     public Set<DataSource> getDataSources() {
         return dataSources;
     }
@@ -187,6 +193,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-datasources
      * 
      */
+    @JsonIgnore
     public void setDataSources(Set<DataSource> dataSources) {
         this.dataSources = dataSources;
     }
@@ -200,6 +207,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -208,6 +216,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -221,6 +230,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-domains
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getDomains() {
         return domains;
     }
@@ -229,6 +239,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-domains
      * 
      */
+    @JsonIgnore
     public void setDomains(List<CharSequence> domains) {
         this.domains = domains;
     }
@@ -242,6 +253,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-enablessl
      * 
      */
+    @JsonIgnore
     public Boolean getEnableSsl() {
         return enableSsl;
     }
@@ -250,6 +262,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-enablessl
      * 
      */
+    @JsonIgnore
     public void setEnableSsl(Boolean enableSsl) {
         this.enableSsl = enableSsl;
     }
@@ -263,6 +276,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-environment
      * 
      */
+    @JsonIgnore
     public List<EnvironmentVariable> getEnvironment() {
         return environment;
     }
@@ -271,6 +285,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-environment
      * 
      */
+    @JsonIgnore
     public void setEnvironment(List<EnvironmentVariable> environment) {
         this.environment = environment;
     }
@@ -284,6 +299,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -292,6 +308,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -305,6 +322,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname
      * 
      */
+    @JsonIgnore
     public CharSequence getShortname() {
         return shortname;
     }
@@ -313,6 +331,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname
      * 
      */
+    @JsonIgnore
     public void setShortname(CharSequence shortname) {
         this.shortname = shortname;
     }
@@ -328,6 +347,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html
      * 
      */
+    @JsonIgnore
     public SslConfiguration getSslConfiguration() {
         return sslConfiguration;
     }
@@ -338,6 +358,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setSslConfiguration(SslConfiguration sslConfiguration) {
         this.sslConfiguration = sslConfiguration;
     }
@@ -351,6 +372,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid
      * 
      */
+    @JsonIgnore
     public CharSequence getStackId() {
         return stackId;
     }
@@ -359,6 +381,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid
      * 
      */
+    @JsonIgnore
     public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
@@ -372,6 +395,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -380,6 +404,7 @@ public class App {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }

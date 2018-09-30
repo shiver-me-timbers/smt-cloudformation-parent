@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
      * 
      */
+    @JsonIgnore
     public CharSequence getReplyToEmailAddress() {
         return replyToEmailAddress;
     }
@@ -50,6 +52,7 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress
      * 
      */
+    @JsonIgnore
     public void setReplyToEmailAddress(CharSequence replyToEmailAddress) {
         this.replyToEmailAddress = replyToEmailAddress;
     }
@@ -63,6 +66,7 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceArn() {
         return sourceArn;
     }
@@ -71,6 +75,7 @@ public class EmailConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
+    @JsonIgnore
     public void setSourceArn(CharSequence sourceArn) {
         this.sourceArn = sourceArn;
     }

@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class AbortIncompleteMultipartUpload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation
      * 
      */
+    @JsonIgnore
     public Integer getDaysAfterInitiation() {
         return daysAfterInitiation;
     }
@@ -42,6 +44,7 @@ public class AbortIncompleteMultipartUpload {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html#cfn-s3-bucket-abortincompletemultipartupload-daysafterinitiation
      * 
      */
+    @JsonIgnore
     public void setDaysAfterInitiation(Integer daysAfterInitiation) {
         this.daysAfterInitiation = daysAfterInitiation;
     }

@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-containerpath
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -62,6 +64,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-containerpath
      * 
      */
+    @JsonIgnore
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
@@ -75,6 +78,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-mountoptions
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getMountOptions() {
         return mountOptions;
     }
@@ -83,6 +87,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-mountoptions
      * 
      */
+    @JsonIgnore
     public void setMountOptions(Set<CharSequence> mountOptions) {
         this.mountOptions = mountOptions;
     }
@@ -96,6 +101,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-size
      * 
      */
+    @JsonIgnore
     public Integer getSize() {
         return size;
     }
@@ -104,6 +110,7 @@ public class Tmpfs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-size
      * 
      */
+    @JsonIgnore
     public void setSize(Integer size) {
         this.size = size;
     }

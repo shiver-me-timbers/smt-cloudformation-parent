@@ -1,6 +1,7 @@
 
 package aws.inspector;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname
      * 
      */
+    @JsonIgnore
     public CharSequence getAssessmentTargetName() {
         return assessmentTargetName;
     }
@@ -50,6 +52,7 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-assessmenttargetname
      * 
      */
+    @JsonIgnore
     public void setAssessmentTargetName(CharSequence assessmentTargetName) {
         this.assessmentTargetName = assessmentTargetName;
     }
@@ -63,6 +66,7 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceGroupArn() {
         return resourceGroupArn;
     }
@@ -71,6 +75,7 @@ public class AssessmentTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttarget.html#cfn-inspector-assessmenttarget-resourcegrouparn
      * 
      */
+    @JsonIgnore
     public void setResourceGroupArn(CharSequence resourceGroupArn) {
         this.resourceGroupArn = resourceGroupArn;
     }

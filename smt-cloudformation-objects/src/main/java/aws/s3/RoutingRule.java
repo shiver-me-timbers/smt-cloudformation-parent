@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html
      * 
      */
+    @JsonIgnore
     public RedirectRule getRedirectRule() {
         return redirectRule;
     }
@@ -58,6 +60,7 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html
      * 
      */
+    @JsonIgnore
     public void setRedirectRule(RedirectRule redirectRule) {
         this.redirectRule = redirectRule;
     }
@@ -73,6 +76,7 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html
      * 
      */
+    @JsonIgnore
     public RoutingRuleCondition getRoutingRuleCondition() {
         return routingRuleCondition;
     }
@@ -83,6 +87,7 @@ public class RoutingRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html
      * 
      */
+    @JsonIgnore
     public void setRoutingRuleCondition(RoutingRuleCondition routingRuleCondition) {
         this.routingRuleCondition = routingRuleCondition;
     }

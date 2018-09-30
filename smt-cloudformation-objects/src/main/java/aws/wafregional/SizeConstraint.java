@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator
      * 
      */
+    @JsonIgnore
     public CharSequence getComparisonOperator() {
         return comparisonOperator;
     }
@@ -68,6 +70,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator
      * 
      */
+    @JsonIgnore
     public void setComparisonOperator(CharSequence comparisonOperator) {
         this.comparisonOperator = comparisonOperator;
     }
@@ -81,6 +84,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-size
      * 
      */
+    @JsonIgnore
     public Integer getSize() {
         return size;
     }
@@ -89,6 +93,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-size
      * 
      */
+    @JsonIgnore
     public void setSize(Integer size) {
         this.size = size;
     }
@@ -102,6 +107,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-texttransformation
      * 
      */
+    @JsonIgnore
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -110,6 +116,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-texttransformation
      * 
      */
+    @JsonIgnore
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
@@ -125,6 +132,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -135,6 +143,7 @@ public class SizeConstraint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }

@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-metricname
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -76,6 +78,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-metricname
      * 
      */
+    @JsonIgnore
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -89,6 +92,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-statistic
      * 
      */
+    @JsonIgnore
     public CharSequence getStatistic() {
         return statistic;
     }
@@ -97,6 +101,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-statistic
      * 
      */
+    @JsonIgnore
     public void setStatistic(CharSequence statistic) {
         this.statistic = statistic;
     }
@@ -110,6 +115,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-dimensions
      * 
      */
+    @JsonIgnore
     public List<MetricDimension> getDimensions() {
         return dimensions;
     }
@@ -118,6 +124,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-dimensions
      * 
      */
+    @JsonIgnore
     public void setDimensions(List<MetricDimension> dimensions) {
         this.dimensions = dimensions;
     }
@@ -131,6 +138,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-unit
      * 
      */
+    @JsonIgnore
     public CharSequence getUnit() {
         return unit;
     }
@@ -139,6 +147,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-unit
      * 
      */
+    @JsonIgnore
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }
@@ -152,6 +161,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-namespace
      * 
      */
+    @JsonIgnore
     public CharSequence getNamespace() {
         return namespace;
     }
@@ -160,6 +170,7 @@ public class CustomizedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-namespace
      * 
      */
+    @JsonIgnore
     public void setNamespace(CharSequence namespace) {
         this.namespace = namespace;
     }

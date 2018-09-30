@@ -1,6 +1,7 @@
 
 package aws.servicediscovery;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class HealthCheckCustomConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold
      * 
      */
+    @JsonIgnore
     public Double getFailureThreshold() {
         return failureThreshold;
     }
@@ -42,6 +44,7 @@ public class HealthCheckCustomConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html#cfn-servicediscovery-service-healthcheckcustomconfig-failurethreshold
      * 
      */
+    @JsonIgnore
     public void setFailureThreshold(Double failureThreshold) {
         this.failureThreshold = failureThreshold;
     }

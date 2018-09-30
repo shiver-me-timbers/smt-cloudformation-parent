@@ -1,6 +1,7 @@
 
 package aws.servicediscovery;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes
      * 
      */
+    @JsonIgnore
     public Object getInstanceAttributes() {
         return instanceAttributes;
     }
@@ -58,6 +60,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes
      * 
      */
+    @JsonIgnore
     public void setInstanceAttributes(Object instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
     }
@@ -71,6 +74,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -79,6 +83,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid
      * 
      */
+    @JsonIgnore
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -92,6 +97,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-serviceid
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceId() {
         return serviceId;
     }
@@ -100,6 +106,7 @@ public class Instance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-serviceid
      * 
      */
+    @JsonIgnore
     public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }

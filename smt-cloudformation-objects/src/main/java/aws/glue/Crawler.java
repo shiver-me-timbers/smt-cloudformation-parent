@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -114,6 +115,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-role
      * 
      */
+    @JsonIgnore
     public CharSequence getRole() {
         return role;
     }
@@ -122,6 +124,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-role
      * 
      */
+    @JsonIgnore
     public void setRole(CharSequence role) {
         this.role = role;
     }
@@ -135,6 +138,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-classifiers
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getClassifiers() {
         return classifiers;
     }
@@ -143,6 +147,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-classifiers
      * 
      */
+    @JsonIgnore
     public void setClassifiers(List<CharSequence> classifiers) {
         this.classifiers = classifiers;
     }
@@ -156,6 +161,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -164,6 +170,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -179,6 +186,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html
      * 
      */
+    @JsonIgnore
     public SchemaChangePolicy getSchemaChangePolicy() {
         return schemaChangePolicy;
     }
@@ -189,6 +197,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html
      * 
      */
+    @JsonIgnore
     public void setSchemaChangePolicy(SchemaChangePolicy schemaChangePolicy) {
         this.schemaChangePolicy = schemaChangePolicy;
     }
@@ -202,6 +211,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration
      * 
      */
+    @JsonIgnore
     public CharSequence getConfiguration() {
         return configuration;
     }
@@ -210,6 +220,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration
      * 
      */
+    @JsonIgnore
     public void setConfiguration(CharSequence configuration) {
         this.configuration = configuration;
     }
@@ -225,6 +236,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html
      * 
      */
+    @JsonIgnore
     public Schedule getSchedule() {
         return schedule;
     }
@@ -235,6 +247,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html
      * 
      */
+    @JsonIgnore
     public void setSchedule(Schedule schedule) {
         this.schedule = schedule;
     }
@@ -248,6 +261,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename
      * 
      */
+    @JsonIgnore
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -256,6 +270,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename
      * 
      */
+    @JsonIgnore
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -271,6 +286,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html
      * 
      */
+    @JsonIgnore
     public Targets getTargets() {
         return targets;
     }
@@ -281,6 +297,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html
      * 
      */
+    @JsonIgnore
     public void setTargets(Targets targets) {
         this.targets = targets;
     }
@@ -294,6 +311,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getTablePrefix() {
         return tablePrefix;
     }
@@ -302,6 +320,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
      */
+    @JsonIgnore
     public void setTablePrefix(CharSequence tablePrefix) {
         this.tablePrefix = tablePrefix;
     }
@@ -315,6 +334,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -323,6 +343,7 @@ public class Crawler {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class ExecutionProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns
      * 
      */
+    @JsonIgnore
     public Double getMaxConcurrentRuns() {
         return maxConcurrentRuns;
     }
@@ -42,6 +44,7 @@ public class ExecutionProperty {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html#cfn-glue-job-executionproperty-maxconcurrentruns
      * 
      */
+    @JsonIgnore
     public void setMaxConcurrentRuns(Double maxConcurrentRuns) {
         this.maxConcurrentRuns = maxConcurrentRuns;
     }

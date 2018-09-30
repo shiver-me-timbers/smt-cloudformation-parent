@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
      * 
      */
+    @JsonIgnore
     public List<AssociationParameter> getAssociationParameters() {
         return associationParameters;
     }
@@ -52,6 +54,7 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
      * 
      */
+    @JsonIgnore
     public void setAssociationParameters(List<AssociationParameter> associationParameters) {
         this.associationParameters = associationParameters;
     }
@@ -65,6 +68,7 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname
      * 
      */
+    @JsonIgnore
     public CharSequence getDocumentName() {
         return documentName;
     }
@@ -73,6 +77,7 @@ public class SsmAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname
      * 
      */
+    @JsonIgnore
     public void setDocumentName(CharSequence documentName) {
         this.documentName = documentName;
     }

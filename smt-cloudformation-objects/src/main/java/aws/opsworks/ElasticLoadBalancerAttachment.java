@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
      * 
      */
+    @JsonIgnore
     public CharSequence getElasticLoadBalancerName() {
         return elasticLoadBalancerName;
     }
@@ -50,6 +52,7 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
      * 
      */
+    @JsonIgnore
     public void setElasticLoadBalancerName(CharSequence elasticLoadBalancerName) {
         this.elasticLoadBalancerName = elasticLoadBalancerName;
     }
@@ -63,6 +66,7 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
      * 
      */
+    @JsonIgnore
     public CharSequence getLayerId() {
         return layerId;
     }
@@ -71,6 +75,7 @@ public class ElasticLoadBalancerAttachment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
      * 
      */
+    @JsonIgnore
     public void setLayerId(CharSequence layerId) {
         this.layerId = layerId;
     }

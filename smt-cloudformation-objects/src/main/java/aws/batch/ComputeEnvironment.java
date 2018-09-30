@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -76,6 +78,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -89,6 +92,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-servicerole
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRole() {
         return serviceRole;
     }
@@ -97,6 +101,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-servicerole
      * 
      */
+    @JsonIgnore
     public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
@@ -110,6 +115,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname
      * 
      */
+    @JsonIgnore
     public CharSequence getComputeEnvironmentName() {
         return computeEnvironmentName;
     }
@@ -118,6 +124,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname
      * 
      */
+    @JsonIgnore
     public void setComputeEnvironmentName(CharSequence computeEnvironmentName) {
         this.computeEnvironmentName = computeEnvironmentName;
     }
@@ -133,6 +140,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html
      * 
      */
+    @JsonIgnore
     public ComputeResources getComputeResources() {
         return computeResources;
     }
@@ -143,6 +151,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html
      * 
      */
+    @JsonIgnore
     public void setComputeResources(ComputeResources computeResources) {
         this.computeResources = computeResources;
     }
@@ -156,6 +165,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state
      * 
      */
+    @JsonIgnore
     public CharSequence getState() {
         return state;
     }
@@ -164,6 +174,7 @@ public class ComputeEnvironment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state
      * 
      */
+    @JsonIgnore
     public void setState(CharSequence state) {
         this.state = state;
     }

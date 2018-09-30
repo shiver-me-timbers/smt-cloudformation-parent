@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -134,6 +135,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress
      * 
      */
+    @JsonIgnore
     public Boolean getCompress() {
         return compress;
     }
@@ -142,6 +144,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress
      * 
      */
+    @JsonIgnore
     public void setCompress(Boolean compress) {
         this.compress = compress;
     }
@@ -155,6 +158,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-lambdafunctionassociations
      * 
      */
+    @JsonIgnore
     public List<LambdaFunctionAssociation> getLambdaFunctionAssociations() {
         return lambdaFunctionAssociations;
     }
@@ -163,6 +167,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-lambdafunctionassociations
      * 
      */
+    @JsonIgnore
     public void setLambdaFunctionAssociations(List<LambdaFunctionAssociation> lambdaFunctionAssociations) {
         this.lambdaFunctionAssociations = lambdaFunctionAssociations;
     }
@@ -176,6 +181,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-targetoriginid
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetOriginId() {
         return targetOriginId;
     }
@@ -184,6 +190,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-targetoriginid
      * 
      */
+    @JsonIgnore
     public void setTargetOriginId(CharSequence targetOriginId) {
         this.targetOriginId = targetOriginId;
     }
@@ -197,6 +204,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-viewerprotocolpolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getViewerProtocolPolicy() {
         return viewerProtocolPolicy;
     }
@@ -205,6 +213,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-viewerprotocolpolicy
      * 
      */
+    @JsonIgnore
     public void setViewerProtocolPolicy(CharSequence viewerProtocolPolicy) {
         this.viewerProtocolPolicy = viewerProtocolPolicy;
     }
@@ -218,6 +227,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-trustedsigners
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getTrustedSigners() {
         return trustedSigners;
     }
@@ -226,6 +236,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-trustedsigners
      * 
      */
+    @JsonIgnore
     public void setTrustedSigners(List<CharSequence> trustedSigners) {
         this.trustedSigners = trustedSigners;
     }
@@ -239,6 +250,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-defaultttl
      * 
      */
+    @JsonIgnore
     public Double getDefaultTTL() {
         return defaultTTL;
     }
@@ -247,6 +259,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-defaultttl
      * 
      */
+    @JsonIgnore
     public void setDefaultTTL(Double defaultTTL) {
         this.defaultTTL = defaultTTL;
     }
@@ -260,6 +273,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-fieldlevelencryptionid
      * 
      */
+    @JsonIgnore
     public CharSequence getFieldLevelEncryptionId() {
         return fieldLevelEncryptionId;
     }
@@ -268,6 +282,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-fieldlevelencryptionid
      * 
      */
+    @JsonIgnore
     public void setFieldLevelEncryptionId(CharSequence fieldLevelEncryptionId) {
         this.fieldLevelEncryptionId = fieldLevelEncryptionId;
     }
@@ -281,6 +296,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-allowedmethods
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAllowedMethods() {
         return allowedMethods;
     }
@@ -289,6 +305,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-allowedmethods
      * 
      */
+    @JsonIgnore
     public void setAllowedMethods(List<CharSequence> allowedMethods) {
         this.allowedMethods = allowedMethods;
     }
@@ -302,6 +319,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-cachedmethods
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getCachedMethods() {
         return cachedMethods;
     }
@@ -310,6 +328,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-cachedmethods
      * 
      */
+    @JsonIgnore
     public void setCachedMethods(List<CharSequence> cachedMethods) {
         this.cachedMethods = cachedMethods;
     }
@@ -323,6 +342,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-smoothstreaming
      * 
      */
+    @JsonIgnore
     public Boolean getSmoothStreaming() {
         return smoothStreaming;
     }
@@ -331,6 +351,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-smoothstreaming
      * 
      */
+    @JsonIgnore
     public void setSmoothStreaming(Boolean smoothStreaming) {
         this.smoothStreaming = smoothStreaming;
     }
@@ -346,6 +367,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html
      * 
      */
+    @JsonIgnore
     public ForwardedValues getForwardedValues() {
         return forwardedValues;
     }
@@ -356,6 +378,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html
      * 
      */
+    @JsonIgnore
     public void setForwardedValues(ForwardedValues forwardedValues) {
         this.forwardedValues = forwardedValues;
     }
@@ -369,6 +392,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-minttl
      * 
      */
+    @JsonIgnore
     public Double getMinTTL() {
         return minTTL;
     }
@@ -377,6 +401,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-minttl
      * 
      */
+    @JsonIgnore
     public void setMinTTL(Double minTTL) {
         this.minTTL = minTTL;
     }
@@ -390,6 +415,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-maxttl
      * 
      */
+    @JsonIgnore
     public Double getMaxTTL() {
         return maxTTL;
     }
@@ -398,6 +424,7 @@ public class DefaultCacheBehavior {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-maxttl
      * 
      */
+    @JsonIgnore
     public void setMaxTTL(Double maxTTL) {
         this.maxTTL = maxTTL;
     }

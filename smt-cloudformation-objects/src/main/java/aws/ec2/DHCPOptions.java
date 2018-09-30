@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -82,6 +83,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainname
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -90,6 +92,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainname
      * 
      */
+    @JsonIgnore
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -103,6 +106,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDomainNameServers() {
         return domainNameServers;
     }
@@ -111,6 +115,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-domainnameservers
      * 
      */
+    @JsonIgnore
     public void setDomainNameServers(Set<CharSequence> domainNameServers) {
         this.domainNameServers = domainNameServers;
     }
@@ -124,6 +129,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getNetbiosNameServers() {
         return netbiosNameServers;
     }
@@ -132,6 +138,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnameservers
      * 
      */
+    @JsonIgnore
     public void setNetbiosNameServers(Set<CharSequence> netbiosNameServers) {
         this.netbiosNameServers = netbiosNameServers;
     }
@@ -145,6 +152,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype
      * 
      */
+    @JsonIgnore
     public Integer getNetbiosNodeType() {
         return netbiosNodeType;
     }
@@ -153,6 +161,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-netbiosnodetype
      * 
      */
+    @JsonIgnore
     public void setNetbiosNodeType(Integer netbiosNodeType) {
         this.netbiosNodeType = netbiosNodeType;
     }
@@ -166,6 +175,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getNtpServers() {
         return ntpServers;
     }
@@ -174,6 +184,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-ntpservers
      * 
      */
+    @JsonIgnore
     public void setNtpServers(List<CharSequence> ntpServers) {
         this.ntpServers = ntpServers;
     }
@@ -187,6 +198,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -195,6 +207,7 @@ public class DHCPOptions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-dhcp-options.html#cfn-ec2-dhcpoptions-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

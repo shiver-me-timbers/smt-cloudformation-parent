@@ -3,6 +3,7 @@ package aws.codecommit;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-events
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getEvents() {
         return events;
     }
@@ -76,6 +78,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-events
      * 
      */
+    @JsonIgnore
     public void setEvents(List<CharSequence> events) {
         this.events = events;
     }
@@ -89,6 +92,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-branches
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getBranches() {
         return branches;
     }
@@ -97,6 +101,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-branches
      * 
      */
+    @JsonIgnore
     public void setBranches(List<CharSequence> branches) {
         this.branches = branches;
     }
@@ -110,6 +115,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-customdata
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomData() {
         return customData;
     }
@@ -118,6 +124,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-customdata
      * 
      */
+    @JsonIgnore
     public void setCustomData(CharSequence customData) {
         this.customData = customData;
     }
@@ -131,6 +138,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-destinationarn
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationArn() {
         return destinationArn;
     }
@@ -139,6 +147,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-destinationarn
      * 
      */
+    @JsonIgnore
     public void setDestinationArn(CharSequence destinationArn) {
         this.destinationArn = destinationArn;
     }
@@ -152,6 +161,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -160,6 +170,7 @@ public class RepositoryTrigger {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codecommit-repository-repositorytrigger.html#cfn-codecommit-repository-repositorytrigger-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

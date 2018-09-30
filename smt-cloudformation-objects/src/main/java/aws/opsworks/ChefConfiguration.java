@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
+    @JsonIgnore
     public CharSequence getBerkshelfVersion() {
         return berkshelfVersion;
     }
@@ -50,6 +52,7 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
+    @JsonIgnore
     public void setBerkshelfVersion(CharSequence berkshelfVersion) {
         this.berkshelfVersion = berkshelfVersion;
     }
@@ -63,6 +66,7 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
+    @JsonIgnore
     public Boolean getManageBerkshelf() {
         return manageBerkshelf;
     }
@@ -71,6 +75,7 @@ public class ChefConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion
      * 
      */
+    @JsonIgnore
     public void setManageBerkshelf(Boolean manageBerkshelf) {
         this.manageBerkshelf = manageBerkshelf;
     }

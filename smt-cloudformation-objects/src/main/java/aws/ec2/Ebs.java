@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-deleteontermination
      * 
      */
+    @JsonIgnore
     public Boolean getDeleteOnTermination() {
         return deleteOnTermination;
     }
@@ -82,6 +84,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-deleteontermination
      * 
      */
+    @JsonIgnore
     public void setDeleteOnTermination(Boolean deleteOnTermination) {
         this.deleteOnTermination = deleteOnTermination;
     }
@@ -95,6 +98,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-encrypted
      * 
      */
+    @JsonIgnore
     public Boolean getEncrypted() {
         return encrypted;
     }
@@ -103,6 +107,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-encrypted
      * 
      */
+    @JsonIgnore
     public void setEncrypted(Boolean encrypted) {
         this.encrypted = encrypted;
     }
@@ -116,6 +121,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops
      * 
      */
+    @JsonIgnore
     public Integer getIops() {
         return iops;
     }
@@ -124,6 +130,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops
      * 
      */
+    @JsonIgnore
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -137,6 +144,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotId() {
         return snapshotId;
     }
@@ -145,6 +153,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
      * 
      */
+    @JsonIgnore
     public void setSnapshotId(CharSequence snapshotId) {
         this.snapshotId = snapshotId;
     }
@@ -158,6 +167,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumesize
      * 
      */
+    @JsonIgnore
     public Integer getVolumeSize() {
         return volumeSize;
     }
@@ -166,6 +176,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumesize
      * 
      */
+    @JsonIgnore
     public void setVolumeSize(Integer volumeSize) {
         this.volumeSize = volumeSize;
     }
@@ -179,6 +190,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumetype
      * 
      */
+    @JsonIgnore
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -187,6 +199,7 @@ public class Ebs {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumetype
      * 
      */
+    @JsonIgnore
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

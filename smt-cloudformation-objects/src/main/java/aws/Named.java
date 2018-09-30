@@ -51,6 +51,7 @@ public class Named implements HasName
      * (Required)
      * 
      */
+    @JsonIgnore
     public String getName() {
         return name;
     }
@@ -60,6 +61,7 @@ public class Named implements HasName
      * (Required)
      * 
      */
+    @JsonIgnore
     public void setName(String name) {
         this.name = name;
     }

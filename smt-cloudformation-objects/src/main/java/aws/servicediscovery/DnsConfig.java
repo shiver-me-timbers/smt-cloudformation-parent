@@ -3,6 +3,7 @@ package aws.servicediscovery;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords
      * 
      */
+    @JsonIgnore
     public List<DnsRecord> getDnsRecords() {
         return dnsRecords;
     }
@@ -60,6 +62,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords
      * 
      */
+    @JsonIgnore
     public void setDnsRecords(List<DnsRecord> dnsRecords) {
         this.dnsRecords = dnsRecords;
     }
@@ -73,6 +76,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-routingpolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getRoutingPolicy() {
         return routingPolicy;
     }
@@ -81,6 +85,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-routingpolicy
      * 
      */
+    @JsonIgnore
     public void setRoutingPolicy(CharSequence routingPolicy) {
         this.routingPolicy = routingPolicy;
     }
@@ -94,6 +99,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-namespaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getNamespaceId() {
         return namespaceId;
     }
@@ -102,6 +108,7 @@ public class DnsConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-namespaceid
      * 
      */
+    @JsonIgnore
     public void setNamespaceId(CharSequence namespaceId) {
         this.namespaceId = namespaceId;
     }

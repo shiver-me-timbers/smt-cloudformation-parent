@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class Ipv6Add {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-ipv6add.html#cfn-ec2-launchtemplate-ipv6add-ipv6address
      * 
      */
+    @JsonIgnore
     public CharSequence getIpv6Address() {
         return ipv6Address;
     }
@@ -42,6 +44,7 @@ public class Ipv6Add {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-ipv6add.html#cfn-ec2-launchtemplate-ipv6add-ipv6address
      * 
      */
+    @JsonIgnore
     public void setIpv6Address(CharSequence ipv6Address) {
         this.ipv6Address = ipv6Address;
     }

@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -148,6 +149,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html
      * 
      */
+    @JsonIgnore
     public CloudwatchAlarmAction getCloudwatchAlarm() {
         return cloudwatchAlarm;
     }
@@ -158,6 +160,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html
      * 
      */
+    @JsonIgnore
     public void setCloudwatchAlarm(CloudwatchAlarmAction cloudwatchAlarm) {
         this.cloudwatchAlarm = cloudwatchAlarm;
     }
@@ -173,6 +176,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html
      * 
      */
+    @JsonIgnore
     public CloudwatchMetricAction getCloudwatchMetric() {
         return cloudwatchMetric;
     }
@@ -183,6 +187,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html
      * 
      */
+    @JsonIgnore
     public void setCloudwatchMetric(CloudwatchMetricAction cloudwatchMetric) {
         this.cloudwatchMetric = cloudwatchMetric;
     }
@@ -198,6 +203,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html
      * 
      */
+    @JsonIgnore
     public DynamoDBAction getDynamoDB() {
         return dynamoDB;
     }
@@ -208,6 +214,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html
      * 
      */
+    @JsonIgnore
     public void setDynamoDB(DynamoDBAction dynamoDB) {
         this.dynamoDB = dynamoDB;
     }
@@ -223,6 +230,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html
      * 
      */
+    @JsonIgnore
     public DynamoDBv2Action getDynamoDBv2() {
         return dynamoDBv2;
     }
@@ -233,6 +241,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html
      * 
      */
+    @JsonIgnore
     public void setDynamoDBv2(DynamoDBv2Action dynamoDBv2) {
         this.dynamoDBv2 = dynamoDBv2;
     }
@@ -248,6 +257,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchAction getElasticsearch() {
         return elasticsearch;
     }
@@ -258,6 +268,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html
      * 
      */
+    @JsonIgnore
     public void setElasticsearch(ElasticsearchAction elasticsearch) {
         this.elasticsearch = elasticsearch;
     }
@@ -273,6 +284,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html
      * 
      */
+    @JsonIgnore
     public FirehoseAction getFirehose() {
         return firehose;
     }
@@ -283,6 +295,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html
      * 
      */
+    @JsonIgnore
     public void setFirehose(FirehoseAction firehose) {
         this.firehose = firehose;
     }
@@ -298,6 +311,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html
      * 
      */
+    @JsonIgnore
     public KinesisAction getKinesis() {
         return kinesis;
     }
@@ -308,6 +322,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html
      * 
      */
+    @JsonIgnore
     public void setKinesis(KinesisAction kinesis) {
         this.kinesis = kinesis;
     }
@@ -323,6 +338,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html
      * 
      */
+    @JsonIgnore
     public LambdaAction getLambda() {
         return lambda;
     }
@@ -333,6 +349,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html
      * 
      */
+    @JsonIgnore
     public void setLambda(LambdaAction lambda) {
         this.lambda = lambda;
     }
@@ -348,6 +365,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html
      * 
      */
+    @JsonIgnore
     public RepublishAction getRepublish() {
         return republish;
     }
@@ -358,6 +376,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html
      * 
      */
+    @JsonIgnore
     public void setRepublish(RepublishAction republish) {
         this.republish = republish;
     }
@@ -373,6 +392,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html
      * 
      */
+    @JsonIgnore
     public S3Action getS3() {
         return s3;
     }
@@ -383,6 +403,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html
      * 
      */
+    @JsonIgnore
     public void setS3(S3Action s3) {
         this.s3 = s3;
     }
@@ -398,6 +419,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html
      * 
      */
+    @JsonIgnore
     public SnsAction getSns() {
         return sns;
     }
@@ -408,6 +430,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html
      * 
      */
+    @JsonIgnore
     public void setSns(SnsAction sns) {
         this.sns = sns;
     }
@@ -423,6 +446,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html
      * 
      */
+    @JsonIgnore
     public SqsAction getSqs() {
         return sqs;
     }
@@ -433,6 +457,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html
      * 
      */
+    @JsonIgnore
     public void setSqs(SqsAction sqs) {
         this.sqs = sqs;
     }

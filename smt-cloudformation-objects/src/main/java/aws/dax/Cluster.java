@@ -3,6 +3,7 @@ package aws.dax;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -136,6 +137,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html
      * 
      */
+    @JsonIgnore
     public SSESpecification getSSESpecification() {
         return sSESpecification;
     }
@@ -146,6 +148,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html
      * 
      */
+    @JsonIgnore
     public void setSSESpecification(SSESpecification sSESpecification) {
         this.sSESpecification = sSESpecification;
     }
@@ -159,6 +162,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -167,6 +171,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -180,6 +185,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-replicationfactor
      * 
      */
+    @JsonIgnore
     public Integer getReplicationFactor() {
         return replicationFactor;
     }
@@ -188,6 +194,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-replicationfactor
      * 
      */
+    @JsonIgnore
     public void setReplicationFactor(Integer replicationFactor) {
         this.replicationFactor = replicationFactor;
     }
@@ -201,6 +208,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-parametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterGroupName() {
         return parameterGroupName;
     }
@@ -209,6 +217,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-parametergroupname
      * 
      */
+    @JsonIgnore
     public void setParameterGroupName(CharSequence parameterGroupName) {
         this.parameterGroupName = parameterGroupName;
     }
@@ -222,6 +231,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
@@ -230,6 +240,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZones(List<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
@@ -243,6 +254,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-iamrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getIAMRoleARN() {
         return iAMRoleARN;
     }
@@ -251,6 +263,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-iamrolearn
      * 
      */
+    @JsonIgnore
     public void setIAMRoleARN(CharSequence iAMRoleARN) {
         this.iAMRoleARN = iAMRoleARN;
     }
@@ -264,6 +277,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-subnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetGroupName() {
         return subnetGroupName;
     }
@@ -272,6 +286,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-subnetgroupname
      * 
      */
+    @JsonIgnore
     public void setSubnetGroupName(CharSequence subnetGroupName) {
         this.subnetGroupName = subnetGroupName;
     }
@@ -285,6 +300,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -293,6 +309,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -306,6 +323,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-notificationtopicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getNotificationTopicARN() {
         return notificationTopicARN;
     }
@@ -314,6 +332,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-notificationtopicarn
      * 
      */
+    @JsonIgnore
     public void setNotificationTopicARN(CharSequence notificationTopicARN) {
         this.notificationTopicARN = notificationTopicARN;
     }
@@ -327,6 +346,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-securitygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSecurityGroupIds() {
         return securityGroupIds;
     }
@@ -335,6 +355,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-securitygroupids
      * 
      */
+    @JsonIgnore
     public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
         this.securityGroupIds = securityGroupIds;
     }
@@ -348,6 +369,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public CharSequence getNodeType() {
         return nodeType;
     }
@@ -356,6 +378,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-nodetype
      * 
      */
+    @JsonIgnore
     public void setNodeType(CharSequence nodeType) {
         this.nodeType = nodeType;
     }
@@ -369,6 +392,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-clustername
      * 
      */
+    @JsonIgnore
     public CharSequence getClusterName() {
         return clusterName;
     }
@@ -377,6 +401,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-clustername
      * 
      */
+    @JsonIgnore
     public void setClusterName(CharSequence clusterName) {
         this.clusterName = clusterName;
     }
@@ -390,6 +415,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-tags
      * 
      */
+    @JsonIgnore
     public Object getTags() {
         return tags;
     }
@@ -398,6 +424,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-tags
      * 
      */
+    @JsonIgnore
     public void setTags(Object tags) {
         this.tags = tags;
     }

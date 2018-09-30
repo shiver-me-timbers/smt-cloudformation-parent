@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-sender
      * 
      */
+    @JsonIgnore
     public CharSequence getSender() {
         return sender;
     }
@@ -74,6 +76,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-sender
      * 
      */
+    @JsonIgnore
     public void setSender(CharSequence sender) {
         this.sender = sender;
     }
@@ -87,6 +90,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-smtpreplycode
      * 
      */
+    @JsonIgnore
     public CharSequence getSmtpReplyCode() {
         return smtpReplyCode;
     }
@@ -95,6 +99,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-smtpreplycode
      * 
      */
+    @JsonIgnore
     public void setSmtpReplyCode(CharSequence smtpReplyCode) {
         this.smtpReplyCode = smtpReplyCode;
     }
@@ -108,6 +113,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-message
      * 
      */
+    @JsonIgnore
     public CharSequence getMessage() {
         return message;
     }
@@ -116,6 +122,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-message
      * 
      */
+    @JsonIgnore
     public void setMessage(CharSequence message) {
         this.message = message;
     }
@@ -129,6 +136,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-topicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicArn() {
         return topicArn;
     }
@@ -137,6 +145,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-topicarn
      * 
      */
+    @JsonIgnore
     public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }
@@ -150,6 +159,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-statuscode
      * 
      */
+    @JsonIgnore
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -158,6 +168,7 @@ public class BounceAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-statuscode
      * 
      */
+    @JsonIgnore
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }

@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getNotificationTypes() {
         return notificationTypes;
     }
@@ -52,6 +54,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes
      * 
      */
+    @JsonIgnore
     public void setNotificationTypes(List<CharSequence> notificationTypes) {
         this.notificationTypes = notificationTypes;
     }
@@ -65,6 +68,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicARN() {
         return topicARN;
     }
@@ -73,6 +77,7 @@ public class NotificationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-autoscaling-autoscalinggroup-notificationconfigurations-topicarn
      * 
      */
+    @JsonIgnore
     public void setTopicARN(CharSequence topicARN) {
         this.topicARN = topicARN;
     }

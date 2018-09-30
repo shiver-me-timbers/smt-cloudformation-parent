@@ -3,6 +3,7 @@ package aws.sns;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
+    @JsonIgnore
     public Object getPolicyDocument() {
         return policyDocument;
     }
@@ -52,6 +54,7 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
      * 
      */
+    @JsonIgnore
     public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
@@ -65,6 +68,7 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getTopics() {
         return topics;
     }
@@ -73,6 +77,7 @@ public class TopicPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
      */
+    @JsonIgnore
     public void setTopics(List<CharSequence> topics) {
         this.topics = topics;
     }

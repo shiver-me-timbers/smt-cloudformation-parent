@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -84,6 +85,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret
      * 
      */
+    @JsonIgnore
     public Boolean getGenerateSecret() {
         return generateSecret;
     }
@@ -92,6 +94,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-generatesecret
      * 
      */
+    @JsonIgnore
     public void setGenerateSecret(Boolean generateSecret) {
         this.generateSecret = generateSecret;
     }
@@ -105,6 +108,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-clientname
      * 
      */
+    @JsonIgnore
     public CharSequence getClientName() {
         return clientName;
     }
@@ -113,6 +117,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-clientname
      * 
      */
+    @JsonIgnore
     public void setClientName(CharSequence clientName) {
         this.clientName = clientName;
     }
@@ -126,6 +131,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-userpoolid
      * 
      */
+    @JsonIgnore
     public CharSequence getUserPoolId() {
         return userPoolId;
     }
@@ -134,6 +140,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-userpoolid
      * 
      */
+    @JsonIgnore
     public void setUserPoolId(CharSequence userPoolId) {
         this.userPoolId = userPoolId;
     }
@@ -147,6 +154,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getExplicitAuthFlows() {
         return explicitAuthFlows;
     }
@@ -155,6 +163,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-explicitauthflows
      * 
      */
+    @JsonIgnore
     public void setExplicitAuthFlows(List<CharSequence> explicitAuthFlows) {
         this.explicitAuthFlows = explicitAuthFlows;
     }
@@ -168,6 +177,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity
      * 
      */
+    @JsonIgnore
     public Double getRefreshTokenValidity() {
         return refreshTokenValidity;
     }
@@ -176,6 +186,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-refreshtokenvalidity
      * 
      */
+    @JsonIgnore
     public void setRefreshTokenValidity(Double refreshTokenValidity) {
         this.refreshTokenValidity = refreshTokenValidity;
     }
@@ -189,6 +200,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getReadAttributes() {
         return readAttributes;
     }
@@ -197,6 +209,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-readattributes
      * 
      */
+    @JsonIgnore
     public void setReadAttributes(List<CharSequence> readAttributes) {
         this.readAttributes = readAttributes;
     }
@@ -210,6 +223,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getWriteAttributes() {
         return writeAttributes;
     }
@@ -218,6 +232,7 @@ public class UserPoolClient {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolclient.html#cfn-cognito-userpoolclient-writeattributes
      * 
      */
+    @JsonIgnore
     public void setWriteAttributes(List<CharSequence> writeAttributes) {
         this.writeAttributes = writeAttributes;
     }

@@ -3,6 +3,7 @@ package aws.sqs;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc
      * 
      */
+    @JsonIgnore
     public Object getPolicyDocument() {
         return policyDocument;
     }
@@ -52,6 +54,7 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-policydoc
      * 
      */
+    @JsonIgnore
     public void setPolicyDocument(Object policyDocument) {
         this.policyDocument = policyDocument;
     }
@@ -65,6 +68,7 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-queues
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getQueues() {
         return queues;
     }
@@ -73,6 +77,7 @@ public class QueuePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-policy.html#cfn-sqs-queuepolicy-queues
      * 
      */
+    @JsonIgnore
     public void setQueues(List<CharSequence> queues) {
         this.queues = queues;
     }

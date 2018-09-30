@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
+    @JsonIgnore
     public TableInput getTableInput() {
         return tableInput;
     }
@@ -64,6 +66,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
+    @JsonIgnore
     public void setTableInput(TableInput tableInput) {
         this.tableInput = tableInput;
     }
@@ -77,6 +80,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
      */
+    @JsonIgnore
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -85,6 +89,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
      */
+    @JsonIgnore
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -98,6 +103,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid
      * 
      */
+    @JsonIgnore
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -106,6 +112,7 @@ public class Table {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-catalogid
      * 
      */
+    @JsonIgnore
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

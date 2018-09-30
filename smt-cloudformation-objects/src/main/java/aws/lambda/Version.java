@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
      * 
      */
+    @JsonIgnore
     public CharSequence getCodeSha256() {
         return codeSha256;
     }
@@ -58,6 +60,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
      * 
      */
+    @JsonIgnore
     public void setCodeSha256(CharSequence codeSha256) {
         this.codeSha256 = codeSha256;
     }
@@ -71,6 +74,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -79,6 +83,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -92,6 +97,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
      * 
      */
+    @JsonIgnore
     public CharSequence getFunctionName() {
         return functionName;
     }
@@ -100,6 +106,7 @@ public class Version {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
      * 
      */
+    @JsonIgnore
     public void setFunctionName(CharSequence functionName) {
         this.functionName = functionName;
     }

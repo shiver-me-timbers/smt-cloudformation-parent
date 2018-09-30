@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement
      * 
      */
+    @JsonIgnore
     public Boolean getAllowSelfManagement() {
         return allowSelfManagement;
     }
@@ -66,6 +68,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement
      * 
      */
+    @JsonIgnore
     public void setAllowSelfManagement(Boolean allowSelfManagement) {
         this.allowSelfManagement = allowSelfManagement;
     }
@@ -79,6 +82,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-iamuserarn
      * 
      */
+    @JsonIgnore
     public CharSequence getIamUserArn() {
         return iamUserArn;
     }
@@ -87,6 +91,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-iamuserarn
      * 
      */
+    @JsonIgnore
     public void setIamUserArn(CharSequence iamUserArn) {
         this.iamUserArn = iamUserArn;
     }
@@ -100,6 +105,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshpublickey
      * 
      */
+    @JsonIgnore
     public CharSequence getSshPublicKey() {
         return sshPublicKey;
     }
@@ -108,6 +114,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshpublickey
      * 
      */
+    @JsonIgnore
     public void setSshPublicKey(CharSequence sshPublicKey) {
         this.sshPublicKey = sshPublicKey;
     }
@@ -121,6 +128,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshusername
      * 
      */
+    @JsonIgnore
     public CharSequence getSshUsername() {
         return sshUsername;
     }
@@ -129,6 +137,7 @@ public class UserProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshusername
      * 
      */
+    @JsonIgnore
     public void setSshUsername(CharSequence sshUsername) {
         this.sshUsername = sshUsername;
     }

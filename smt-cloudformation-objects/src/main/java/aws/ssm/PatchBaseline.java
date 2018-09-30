@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -120,6 +121,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem
      * 
      */
+    @JsonIgnore
     public CharSequence getOperatingSystem() {
         return operatingSystem;
     }
@@ -128,6 +130,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem
      * 
      */
+    @JsonIgnore
     public void setOperatingSystem(CharSequence operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
@@ -141,6 +144,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatches
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getApprovedPatches() {
         return approvedPatches;
     }
@@ -149,6 +153,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatches
      * 
      */
+    @JsonIgnore
     public void setApprovedPatches(List<CharSequence> approvedPatches) {
         this.approvedPatches = approvedPatches;
     }
@@ -162,6 +167,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-patchgroups
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getPatchGroups() {
         return patchGroups;
     }
@@ -170,6 +176,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-patchgroups
      * 
      */
+    @JsonIgnore
     public void setPatchGroups(List<CharSequence> patchGroups) {
         this.patchGroups = patchGroups;
     }
@@ -183,6 +190,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -191,6 +199,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -204,6 +213,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchescompliancelevel
      * 
      */
+    @JsonIgnore
     public CharSequence getApprovedPatchesComplianceLevel() {
         return approvedPatchesComplianceLevel;
     }
@@ -212,6 +222,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchescompliancelevel
      * 
      */
+    @JsonIgnore
     public void setApprovedPatchesComplianceLevel(CharSequence approvedPatchesComplianceLevel) {
         this.approvedPatchesComplianceLevel = approvedPatchesComplianceLevel;
     }
@@ -225,6 +236,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity
      * 
      */
+    @JsonIgnore
     public Boolean getApprovedPatchesEnableNonSecurity() {
         return approvedPatchesEnableNonSecurity;
     }
@@ -233,6 +245,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity
      * 
      */
+    @JsonIgnore
     public void setApprovedPatchesEnableNonSecurity(Boolean approvedPatchesEnableNonSecurity) {
         this.approvedPatchesEnableNonSecurity = approvedPatchesEnableNonSecurity;
     }
@@ -248,6 +261,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html
      * 
      */
+    @JsonIgnore
     public RuleGroup getApprovalRules() {
         return approvalRules;
     }
@@ -258,6 +272,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html
      * 
      */
+    @JsonIgnore
     public void setApprovalRules(RuleGroup approvalRules) {
         this.approvalRules = approvalRules;
     }
@@ -273,6 +288,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
+    @JsonIgnore
     public PatchFilterGroup getGlobalFilters() {
         return globalFilters;
     }
@@ -283,6 +299,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
+    @JsonIgnore
     public void setGlobalFilters(PatchFilterGroup globalFilters) {
         this.globalFilters = globalFilters;
     }
@@ -296,6 +313,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources
      * 
      */
+    @JsonIgnore
     public List<PatchSource> getSources() {
         return sources;
     }
@@ -304,6 +322,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources
      * 
      */
+    @JsonIgnore
     public void setSources(List<PatchSource> sources) {
         this.sources = sources;
     }
@@ -317,6 +336,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -325,6 +345,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -338,6 +359,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-rejectedpatches
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getRejectedPatches() {
         return rejectedPatches;
     }
@@ -346,6 +368,7 @@ public class PatchBaseline {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-rejectedpatches
      * 
      */
+    @JsonIgnore
     public void setRejectedPatches(List<CharSequence> rejectedPatches) {
         this.rejectedPatches = rejectedPatches;
     }

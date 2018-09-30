@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid
      * 
      */
+    @JsonIgnore
     public CharSequence getExternalId() {
         return externalId;
     }
@@ -50,6 +52,7 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-externalid
      * 
      */
+    @JsonIgnore
     public void setExternalId(CharSequence externalId) {
         this.externalId = externalId;
     }
@@ -63,6 +66,7 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn
      * 
      */
+    @JsonIgnore
     public CharSequence getSnsCallerArn() {
         return snsCallerArn;
     }
@@ -71,6 +75,7 @@ public class SmsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html#cfn-cognito-userpool-smsconfiguration-snscallerarn
      * 
      */
+    @JsonIgnore
     public void setSnsCallerArn(CharSequence snsCallerArn) {
         this.snsCallerArn = snsCallerArn;
     }

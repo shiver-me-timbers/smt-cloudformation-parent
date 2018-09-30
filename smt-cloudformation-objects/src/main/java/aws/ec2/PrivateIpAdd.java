@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress
      * 
      */
+    @JsonIgnore
     public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
@@ -50,6 +52,7 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress
      * 
      */
+    @JsonIgnore
     public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }
@@ -63,6 +66,7 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary
      * 
      */
+    @JsonIgnore
     public Boolean getPrimary() {
         return primary;
     }
@@ -71,6 +75,7 @@ public class PrivateIpAdd {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-primary
      * 
      */
+    @JsonIgnore
     public void setPrimary(Boolean primary) {
         this.primary = primary;
     }

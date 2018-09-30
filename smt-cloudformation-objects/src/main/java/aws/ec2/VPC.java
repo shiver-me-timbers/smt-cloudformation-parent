@@ -4,6 +4,7 @@ package aws.ec2;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -69,6 +70,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock
      * 
      */
+    @JsonIgnore
     public CharSequence getCidrBlock() {
         return cidrBlock;
     }
@@ -77,6 +79,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock
      * 
      */
+    @JsonIgnore
     public void setCidrBlock(CharSequence cidrBlock) {
         this.cidrBlock = cidrBlock;
     }
@@ -90,6 +93,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
      * 
      */
+    @JsonIgnore
     public Boolean getEnableDnsHostnames() {
         return enableDnsHostnames;
     }
@@ -98,6 +102,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
      * 
      */
+    @JsonIgnore
     public void setEnableDnsHostnames(Boolean enableDnsHostnames) {
         this.enableDnsHostnames = enableDnsHostnames;
     }
@@ -111,6 +116,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
      * 
      */
+    @JsonIgnore
     public Boolean getEnableDnsSupport() {
         return enableDnsSupport;
     }
@@ -119,6 +125,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
      * 
      */
+    @JsonIgnore
     public void setEnableDnsSupport(Boolean enableDnsSupport) {
         this.enableDnsSupport = enableDnsSupport;
     }
@@ -132,6 +139,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceTenancy() {
         return instanceTenancy;
     }
@@ -140,6 +148,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
      * 
      */
+    @JsonIgnore
     public void setInstanceTenancy(CharSequence instanceTenancy) {
         this.instanceTenancy = instanceTenancy;
     }
@@ -153,6 +162,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -161,6 +171,7 @@ public class VPC {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ScalableTargetAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity
      * 
      */
+    @JsonIgnore
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -50,6 +52,7 @@ public class ScalableTargetAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity
      * 
      */
+    @JsonIgnore
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -63,6 +66,7 @@ public class ScalableTargetAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity
      * 
      */
+    @JsonIgnore
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -71,6 +75,7 @@ public class ScalableTargetAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-mincapacity
      * 
      */
+    @JsonIgnore
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }

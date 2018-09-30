@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getMinValue() {
         return minValue;
     }
@@ -50,6 +52,7 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-minvalue
      * 
      */
+    @JsonIgnore
     public void setMinValue(CharSequence minValue) {
         this.minValue = minValue;
     }
@@ -63,6 +66,7 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getMaxValue() {
         return maxValue;
     }
@@ -71,6 +75,7 @@ public class NumberAttributeConstraints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html#cfn-cognito-userpool-numberattributeconstraints-maxvalue
      * 
      */
+    @JsonIgnore
     public void setMaxValue(CharSequence maxValue) {
         this.maxValue = maxValue;
     }

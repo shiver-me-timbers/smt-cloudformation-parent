@@ -1,6 +1,7 @@
 
 package aws.logs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationname
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationName() {
         return destinationName;
     }
@@ -66,6 +68,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationname
      * 
      */
+    @JsonIgnore
     public void setDestinationName(CharSequence destinationName) {
         this.destinationName = destinationName;
     }
@@ -79,6 +82,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationpolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationPolicy() {
         return destinationPolicy;
     }
@@ -87,6 +91,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-destinationpolicy
      * 
      */
+    @JsonIgnore
     public void setDestinationPolicy(CharSequence destinationPolicy) {
         this.destinationPolicy = destinationPolicy;
     }
@@ -100,6 +105,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -108,6 +114,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }
@@ -121,6 +128,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-targetarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetArn() {
         return targetArn;
     }
@@ -129,6 +137,7 @@ public class Destination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-destination.html#cfn-logs-destination-targetarn
      * 
      */
+    @JsonIgnore
     public void setTargetArn(CharSequence targetArn) {
         this.targetArn = targetArn;
     }

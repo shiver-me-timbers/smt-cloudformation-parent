@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancing;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod
      * 
      */
+    @JsonIgnore
     public CharSequence getCookieExpirationPeriod() {
         return cookieExpirationPeriod;
     }
@@ -50,6 +52,7 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-cookieexpirationperiod
      * 
      */
+    @JsonIgnore
     public void setCookieExpirationPeriod(CharSequence cookieExpirationPeriod) {
         this.cookieExpirationPeriod = cookieExpirationPeriod;
     }
@@ -63,6 +66,7 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname
      * 
      */
+    @JsonIgnore
     public CharSequence getPolicyName() {
         return policyName;
     }
@@ -71,6 +75,7 @@ public class LBCookieStickinessPolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html#cfn-elb-lbcookiestickinesspolicy-policyname
      * 
      */
+    @JsonIgnore
     public void setPolicyName(CharSequence policyName) {
         this.policyName = policyName;
     }

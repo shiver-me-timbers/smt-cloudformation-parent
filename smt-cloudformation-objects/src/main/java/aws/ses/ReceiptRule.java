@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -52,6 +53,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-after
      * 
      */
+    @JsonIgnore
     public CharSequence getAfter() {
         return after;
     }
@@ -60,6 +62,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-after
      * 
      */
+    @JsonIgnore
     public void setAfter(CharSequence after) {
         this.after = after;
     }
@@ -75,6 +78,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html
      * 
      */
+    @JsonIgnore
     public Rule getRule() {
         return rule;
     }
@@ -85,6 +89,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html
      * 
      */
+    @JsonIgnore
     public void setRule(Rule rule) {
         this.rule = rule;
     }
@@ -98,6 +103,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname
      * 
      */
+    @JsonIgnore
     public CharSequence getRuleSetName() {
         return ruleSetName;
     }
@@ -106,6 +112,7 @@ public class ReceiptRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname
      * 
      */
+    @JsonIgnore
     public void setRuleSetName(CharSequence ruleSetName) {
         this.ruleSetName = ruleSetName;
     }

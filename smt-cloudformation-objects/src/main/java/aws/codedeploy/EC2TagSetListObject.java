@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class EC2TagSetListObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.html#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup
      * 
      */
+    @JsonIgnore
     public Set<EC2TagFilter> getEc2TagGroup() {
         return ec2TagGroup;
     }
@@ -46,6 +48,7 @@ public class EC2TagSetListObject {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.html#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup
      * 
      */
+    @JsonIgnore
     public void setEc2TagGroup(Set<EC2TagFilter> ec2TagGroup) {
         this.ec2TagGroup = ec2TagGroup;
     }

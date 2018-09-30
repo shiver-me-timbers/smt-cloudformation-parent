@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getWhitelistedNames() {
         return whitelistedNames;
     }
@@ -52,6 +54,7 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-whitelistednames
      * 
      */
+    @JsonIgnore
     public void setWhitelistedNames(List<CharSequence> whitelistedNames) {
         this.whitelistedNames = whitelistedNames;
     }
@@ -65,6 +68,7 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward
      * 
      */
+    @JsonIgnore
     public CharSequence getForward() {
         return forward;
     }
@@ -73,6 +77,7 @@ public class Cookies {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html#cfn-cloudfront-distribution-cookies-forward
      * 
      */
+    @JsonIgnore
     public void setForward(CharSequence forward) {
         this.forward = forward;
     }

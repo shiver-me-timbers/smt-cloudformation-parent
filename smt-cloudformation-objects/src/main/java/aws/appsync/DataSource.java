@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -106,6 +107,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -114,6 +116,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -127,6 +130,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -135,6 +139,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -148,6 +153,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
@@ -156,6 +162,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn
      * 
      */
+    @JsonIgnore
     public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
@@ -171,6 +178,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html
      * 
      */
+    @JsonIgnore
     public HttpConfig getHttpConfig() {
         return httpConfig;
     }
@@ -181,6 +189,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html
      * 
      */
+    @JsonIgnore
     public void setHttpConfig(HttpConfig httpConfig) {
         this.httpConfig = httpConfig;
     }
@@ -196,6 +205,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
      * 
      */
+    @JsonIgnore
     public LambdaConfig getLambdaConfig() {
         return lambdaConfig;
     }
@@ -206,6 +216,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
      * 
      */
+    @JsonIgnore
     public void setLambdaConfig(LambdaConfig lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
@@ -219,6 +230,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid
      * 
      */
+    @JsonIgnore
     public CharSequence getApiId() {
         return apiId;
     }
@@ -227,6 +239,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid
      * 
      */
+    @JsonIgnore
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
@@ -240,6 +253,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -248,6 +262,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -263,6 +278,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html
      * 
      */
+    @JsonIgnore
     public DynamoDBConfig getDynamoDBConfig() {
         return dynamoDBConfig;
     }
@@ -273,6 +289,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html
      * 
      */
+    @JsonIgnore
     public void setDynamoDBConfig(DynamoDBConfig dynamoDBConfig) {
         this.dynamoDBConfig = dynamoDBConfig;
     }
@@ -288,6 +305,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchConfig getElasticsearchConfig() {
         return elasticsearchConfig;
     }
@@ -298,6 +316,7 @@ public class DataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html
      * 
      */
+    @JsonIgnore
     public void setElasticsearchConfig(ElasticsearchConfig elasticsearchConfig) {
         this.elasticsearchConfig = elasticsearchConfig;
     }

@@ -1,6 +1,7 @@
 
 package aws.rds;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause
      * 
      */
+    @JsonIgnore
     public Boolean getAutoPause() {
         return autoPause;
     }
@@ -66,6 +68,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause
      * 
      */
+    @JsonIgnore
     public void setAutoPause(Boolean autoPause) {
         this.autoPause = autoPause;
     }
@@ -79,6 +82,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-maxcapacity
      * 
      */
+    @JsonIgnore
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -87,6 +91,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-maxcapacity
      * 
      */
+    @JsonIgnore
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -100,6 +105,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-mincapacity
      * 
      */
+    @JsonIgnore
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -108,6 +114,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-mincapacity
      * 
      */
+    @JsonIgnore
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }
@@ -121,6 +128,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause
      * 
      */
+    @JsonIgnore
     public Integer getSecondsBeforeAutoPause() {
         return secondsBeforeAutoPause;
     }
@@ -129,6 +137,7 @@ public class ScalingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause
      * 
      */
+    @JsonIgnore
     public void setSecondsBeforeAutoPause(Integer secondsBeforeAutoPause) {
         this.secondsBeforeAutoPause = secondsBeforeAutoPause;
     }

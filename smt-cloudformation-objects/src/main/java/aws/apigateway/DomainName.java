@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -60,6 +61,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificateArn() {
         return certificateArn;
     }
@@ -68,6 +70,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-certificatearn
      * 
      */
+    @JsonIgnore
     public void setCertificateArn(CharSequence certificateArn) {
         this.certificateArn = certificateArn;
     }
@@ -81,6 +84,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -89,6 +93,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname
      * 
      */
+    @JsonIgnore
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -104,6 +109,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
+    @JsonIgnore
     public EndpointConfiguration getEndpointConfiguration() {
         return endpointConfiguration;
     }
@@ -114,6 +120,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
@@ -127,6 +134,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRegionalCertificateArn() {
         return regionalCertificateArn;
     }
@@ -135,6 +143,7 @@ public class DomainName {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn
      * 
      */
+    @JsonIgnore
     public void setRegionalCertificateArn(CharSequence regionalCertificateArn) {
         this.regionalCertificateArn = regionalCertificateArn;
     }

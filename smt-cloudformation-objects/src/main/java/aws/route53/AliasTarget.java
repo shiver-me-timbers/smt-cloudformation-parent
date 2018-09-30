@@ -1,6 +1,7 @@
 
 package aws.route53;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname
      * 
      */
+    @JsonIgnore
     public CharSequence getDNSName() {
         return dNSName;
     }
@@ -58,6 +60,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname
      * 
      */
+    @JsonIgnore
     public void setDNSName(CharSequence dNSName) {
         this.dNSName = dNSName;
     }
@@ -71,6 +74,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth
      * 
      */
+    @JsonIgnore
     public Boolean getEvaluateTargetHealth() {
         return evaluateTargetHealth;
     }
@@ -79,6 +83,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-evaluatetargethealth
      * 
      */
+    @JsonIgnore
     public void setEvaluateTargetHealth(Boolean evaluateTargetHealth) {
         this.evaluateTargetHealth = evaluateTargetHealth;
     }
@@ -92,6 +97,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid
      * 
      */
+    @JsonIgnore
     public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
@@ -100,6 +106,7 @@ public class AliasTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-hostedzoneid
      * 
      */
+    @JsonIgnore
     public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }

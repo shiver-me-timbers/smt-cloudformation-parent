@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getDbPassword() {
         return dbPassword;
     }
@@ -58,6 +60,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword
      * 
      */
+    @JsonIgnore
     public void setDbPassword(CharSequence dbPassword) {
         this.dbPassword = dbPassword;
     }
@@ -71,6 +74,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser
      * 
      */
+    @JsonIgnore
     public CharSequence getDbUser() {
         return dbUser;
     }
@@ -79,6 +83,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbuser
      * 
      */
+    @JsonIgnore
     public void setDbUser(CharSequence dbUser) {
         this.dbUser = dbUser;
     }
@@ -92,6 +97,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRdsDbInstanceArn() {
         return rdsDbInstanceArn;
     }
@@ -100,6 +106,7 @@ public class RdsDbInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-rdsdbinstancearn
      * 
      */
+    @JsonIgnore
     public void setRdsDbInstanceArn(CharSequence rdsDbInstanceArn) {
         this.rdsDbInstanceArn = rdsDbInstanceArn;
     }

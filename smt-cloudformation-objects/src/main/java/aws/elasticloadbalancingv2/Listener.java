@@ -3,6 +3,7 @@ package aws.elasticloadbalancingv2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -79,6 +80,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates
      * 
      */
+    @JsonIgnore
     public Set<Certificate> getCertificates() {
         return certificates;
     }
@@ -87,6 +89,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates
      * 
      */
+    @JsonIgnore
     public void setCertificates(Set<Certificate> certificates) {
         this.certificates = certificates;
     }
@@ -100,6 +103,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions
      * 
      */
+    @JsonIgnore
     public Set<Action> getDefaultActions() {
         return defaultActions;
     }
@@ -108,6 +112,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions
      * 
      */
+    @JsonIgnore
     public void setDefaultActions(Set<Action> defaultActions) {
         this.defaultActions = defaultActions;
     }
@@ -121,6 +126,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
      * 
      */
+    @JsonIgnore
     public CharSequence getLoadBalancerArn() {
         return loadBalancerArn;
     }
@@ -129,6 +135,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
      * 
      */
+    @JsonIgnore
     public void setLoadBalancerArn(CharSequence loadBalancerArn) {
         this.loadBalancerArn = loadBalancerArn;
     }
@@ -142,6 +149,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -150,6 +158,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -163,6 +172,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -171,6 +181,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -184,6 +195,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
      * 
      */
+    @JsonIgnore
     public CharSequence getSslPolicy() {
         return sslPolicy;
     }
@@ -192,6 +204,7 @@ public class Listener {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
      * 
      */
+    @JsonIgnore
     public void setSslPolicy(CharSequence sslPolicy) {
         this.sslPolicy = sslPolicy;
     }

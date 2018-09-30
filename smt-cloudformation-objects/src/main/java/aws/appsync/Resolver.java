@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -90,6 +91,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplates3location
      * 
      */
+    @JsonIgnore
     public CharSequence getResponseMappingTemplateS3Location() {
         return responseMappingTemplateS3Location;
     }
@@ -98,6 +100,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplates3location
      * 
      */
+    @JsonIgnore
     public void setResponseMappingTemplateS3Location(CharSequence responseMappingTemplateS3Location) {
         this.responseMappingTemplateS3Location = responseMappingTemplateS3Location;
     }
@@ -111,6 +114,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename
      * 
      */
+    @JsonIgnore
     public CharSequence getTypeName() {
         return typeName;
     }
@@ -119,6 +123,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename
      * 
      */
+    @JsonIgnore
     public void setTypeName(CharSequence typeName) {
         this.typeName = typeName;
     }
@@ -132,6 +137,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
      */
+    @JsonIgnore
     public CharSequence getDataSourceName() {
         return dataSourceName;
     }
@@ -140,6 +146,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
      */
+    @JsonIgnore
     public void setDataSourceName(CharSequence dataSourceName) {
         this.dataSourceName = dataSourceName;
     }
@@ -153,6 +160,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getRequestMappingTemplate() {
         return requestMappingTemplate;
     }
@@ -161,6 +169,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplate
      * 
      */
+    @JsonIgnore
     public void setRequestMappingTemplate(CharSequence requestMappingTemplate) {
         this.requestMappingTemplate = requestMappingTemplate;
     }
@@ -174,6 +183,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getResponseMappingTemplate() {
         return responseMappingTemplate;
     }
@@ -182,6 +192,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate
      * 
      */
+    @JsonIgnore
     public void setResponseMappingTemplate(CharSequence responseMappingTemplate) {
         this.responseMappingTemplate = responseMappingTemplate;
     }
@@ -195,6 +206,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
      */
+    @JsonIgnore
     public CharSequence getRequestMappingTemplateS3Location() {
         return requestMappingTemplateS3Location;
     }
@@ -203,6 +215,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
      */
+    @JsonIgnore
     public void setRequestMappingTemplateS3Location(CharSequence requestMappingTemplateS3Location) {
         this.requestMappingTemplateS3Location = requestMappingTemplateS3Location;
     }
@@ -216,6 +229,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-apiid
      * 
      */
+    @JsonIgnore
     public CharSequence getApiId() {
         return apiId;
     }
@@ -224,6 +238,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-apiid
      * 
      */
+    @JsonIgnore
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
@@ -237,6 +252,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-fieldname
      * 
      */
+    @JsonIgnore
     public CharSequence getFieldName() {
         return fieldName;
     }
@@ -245,6 +261,7 @@ public class Resolver {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-fieldname
      * 
      */
+    @JsonIgnore
     public void setFieldName(CharSequence fieldName) {
         this.fieldName = fieldName;
     }

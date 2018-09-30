@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -188,6 +189,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
      * 
      */
+    @JsonIgnore
     public Map<String, String> getAttributes() {
         return attributes;
     }
@@ -196,6 +198,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Map<String, String> attributes) {
         this.attributes = attributes;
     }
@@ -209,6 +212,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips
      * 
      */
+    @JsonIgnore
     public Boolean getAutoAssignElasticIps() {
         return autoAssignElasticIps;
     }
@@ -217,6 +221,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignelasticips
      * 
      */
+    @JsonIgnore
     public void setAutoAssignElasticIps(Boolean autoAssignElasticIps) {
         this.autoAssignElasticIps = autoAssignElasticIps;
     }
@@ -230,6 +235,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips
      * 
      */
+    @JsonIgnore
     public Boolean getAutoAssignPublicIps() {
         return autoAssignPublicIps;
     }
@@ -238,6 +244,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-autoassignpublicips
      * 
      */
+    @JsonIgnore
     public void setAutoAssignPublicIps(Boolean autoAssignPublicIps) {
         this.autoAssignPublicIps = autoAssignPublicIps;
     }
@@ -251,6 +258,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomInstanceProfileArn() {
         return customInstanceProfileArn;
     }
@@ -259,6 +267,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-custominstanceprofilearn
      * 
      */
+    @JsonIgnore
     public void setCustomInstanceProfileArn(CharSequence customInstanceProfileArn) {
         this.customInstanceProfileArn = customInstanceProfileArn;
     }
@@ -272,6 +281,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
+    @JsonIgnore
     public Object getCustomJson() {
         return customJson;
     }
@@ -280,6 +290,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson
      * 
      */
+    @JsonIgnore
     public void setCustomJson(Object customJson) {
         this.customJson = customJson;
     }
@@ -295,6 +306,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
+    @JsonIgnore
     public Recipes getCustomRecipes() {
         return customRecipes;
     }
@@ -305,6 +317,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
+    @JsonIgnore
     public void setCustomRecipes(Recipes customRecipes) {
         this.customRecipes = customRecipes;
     }
@@ -318,6 +331,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getCustomSecurityGroupIds() {
         return customSecurityGroupIds;
     }
@@ -326,6 +340,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
      */
+    @JsonIgnore
     public void setCustomSecurityGroupIds(List<CharSequence> customSecurityGroupIds) {
         this.customSecurityGroupIds = customSecurityGroupIds;
     }
@@ -339,6 +354,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing
      * 
      */
+    @JsonIgnore
     public Boolean getEnableAutoHealing() {
         return enableAutoHealing;
     }
@@ -347,6 +363,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-enableautohealing
      * 
      */
+    @JsonIgnore
     public void setEnableAutoHealing(Boolean enableAutoHealing) {
         this.enableAutoHealing = enableAutoHealing;
     }
@@ -360,6 +377,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot
      * 
      */
+    @JsonIgnore
     public Boolean getInstallUpdatesOnBoot() {
         return installUpdatesOnBoot;
     }
@@ -368,6 +386,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot
      * 
      */
+    @JsonIgnore
     public void setInstallUpdatesOnBoot(Boolean installUpdatesOnBoot) {
         this.installUpdatesOnBoot = installUpdatesOnBoot;
     }
@@ -383,6 +402,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
+    @JsonIgnore
     public LifecycleEventConfiguration getLifecycleEventConfiguration() {
         return lifecycleEventConfiguration;
     }
@@ -393,6 +413,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setLifecycleEventConfiguration(LifecycleEventConfiguration lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
     }
@@ -408,6 +429,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
+    @JsonIgnore
     public LoadBasedAutoScaling getLoadBasedAutoScaling() {
         return loadBasedAutoScaling;
     }
@@ -418,6 +440,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
+    @JsonIgnore
     public void setLoadBasedAutoScaling(LoadBasedAutoScaling loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
     }
@@ -431,6 +454,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -439,6 +463,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -452,6 +477,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getPackages() {
         return packages;
     }
@@ -460,6 +486,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-packages
      * 
      */
+    @JsonIgnore
     public void setPackages(List<CharSequence> packages) {
         this.packages = packages;
     }
@@ -473,6 +500,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname
      * 
      */
+    @JsonIgnore
     public CharSequence getShortname() {
         return shortname;
     }
@@ -481,6 +509,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-shortname
      * 
      */
+    @JsonIgnore
     public void setShortname(CharSequence shortname) {
         this.shortname = shortname;
     }
@@ -494,6 +523,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid
      * 
      */
+    @JsonIgnore
     public CharSequence getStackId() {
         return stackId;
     }
@@ -502,6 +532,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-stackid
      * 
      */
+    @JsonIgnore
     public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }
@@ -515,6 +546,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -523,6 +555,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -536,6 +569,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -544,6 +578,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -557,6 +592,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances
      * 
      */
+    @JsonIgnore
     public Boolean getUseEbsOptimizedInstances() {
         return useEbsOptimizedInstances;
     }
@@ -565,6 +601,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-useebsoptimizedinstances
      * 
      */
+    @JsonIgnore
     public void setUseEbsOptimizedInstances(Boolean useEbsOptimizedInstances) {
         this.useEbsOptimizedInstances = useEbsOptimizedInstances;
     }
@@ -578,6 +615,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations
      * 
      */
+    @JsonIgnore
     public List<VolumeConfiguration> getVolumeConfigurations() {
         return volumeConfigurations;
     }
@@ -586,6 +624,7 @@ public class Layer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations
      * 
      */
+    @JsonIgnore
     public void setVolumeConfigurations(List<VolumeConfiguration> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
     }

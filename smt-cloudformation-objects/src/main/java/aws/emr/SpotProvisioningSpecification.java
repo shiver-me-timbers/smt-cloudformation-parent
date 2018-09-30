@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-blockdurationminutes
      * 
      */
+    @JsonIgnore
     public Integer getBlockDurationMinutes() {
         return blockDurationMinutes;
     }
@@ -58,6 +60,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-blockdurationminutes
      * 
      */
+    @JsonIgnore
     public void setBlockDurationMinutes(Integer blockDurationMinutes) {
         this.blockDurationMinutes = blockDurationMinutes;
     }
@@ -71,6 +74,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutaction
      * 
      */
+    @JsonIgnore
     public CharSequence getTimeoutAction() {
         return timeoutAction;
     }
@@ -79,6 +83,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutaction
      * 
      */
+    @JsonIgnore
     public void setTimeoutAction(CharSequence timeoutAction) {
         this.timeoutAction = timeoutAction;
     }
@@ -92,6 +97,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutdurationminutes
      * 
      */
+    @JsonIgnore
     public Integer getTimeoutDurationMinutes() {
         return timeoutDurationMinutes;
     }
@@ -100,6 +106,7 @@ public class SpotProvisioningSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html#cfn-elasticmapreduce-cluster-spotprovisioningspecification-timeoutdurationminutes
      * 
      */
+    @JsonIgnore
     public void setTimeoutDurationMinutes(Integer timeoutDurationMinutes) {
         this.timeoutDurationMinutes = timeoutDurationMinutes;
     }

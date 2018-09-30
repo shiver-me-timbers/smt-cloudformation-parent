@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
+    @JsonIgnore
     public FleetLaunchTemplateSpecification getLaunchTemplateSpecification() {
         return launchTemplateSpecification;
     }
@@ -60,6 +62,7 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplateSpecification(FleetLaunchTemplateSpecification launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
     }
@@ -73,6 +76,7 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides
      * 
      */
+    @JsonIgnore
     public Set<LaunchTemplateOverrides> getOverrides() {
         return overrides;
     }
@@ -81,6 +85,7 @@ public class LaunchTemplateConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides
      * 
      */
+    @JsonIgnore
     public void setOverrides(Set<LaunchTemplateOverrides> overrides) {
         this.overrides = overrides;
     }

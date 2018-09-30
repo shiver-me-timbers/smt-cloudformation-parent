@@ -3,6 +3,7 @@ package aws.lambda;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class AliasRoutingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
      * 
      */
+    @JsonIgnore
     public Set<VersionWeight> getAdditionalVersionWeights() {
         return additionalVersionWeights;
     }
@@ -46,6 +48,7 @@ public class AliasRoutingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
      * 
      */
+    @JsonIgnore
     public void setAdditionalVersionWeights(Set<VersionWeight> additionalVersionWeights) {
         this.additionalVersionWeights = additionalVersionWeights;
     }

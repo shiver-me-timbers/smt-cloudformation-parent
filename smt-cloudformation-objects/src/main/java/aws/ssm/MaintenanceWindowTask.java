@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -136,6 +137,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors
      * 
      */
+    @JsonIgnore
     public CharSequence getMaxErrors() {
         return maxErrors;
     }
@@ -144,6 +146,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors
      * 
      */
+    @JsonIgnore
     public void setMaxErrors(CharSequence maxErrors) {
         this.maxErrors = maxErrors;
     }
@@ -157,6 +160,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -165,6 +169,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -178,6 +183,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-servicerolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRoleArn() {
         return serviceRoleArn;
     }
@@ -186,6 +192,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-servicerolearn
      * 
      */
+    @JsonIgnore
     public void setServiceRoleArn(CharSequence serviceRoleArn) {
         this.serviceRoleArn = serviceRoleArn;
     }
@@ -199,6 +206,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-priority
      * 
      */
+    @JsonIgnore
     public Integer getPriority() {
         return priority;
     }
@@ -207,6 +215,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-priority
      * 
      */
+    @JsonIgnore
     public void setPriority(Integer priority) {
         this.priority = priority;
     }
@@ -220,6 +229,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxconcurrency
      * 
      */
+    @JsonIgnore
     public CharSequence getMaxConcurrency() {
         return maxConcurrency;
     }
@@ -228,6 +238,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxconcurrency
      * 
      */
+    @JsonIgnore
     public void setMaxConcurrency(CharSequence maxConcurrency) {
         this.maxConcurrency = maxConcurrency;
     }
@@ -241,6 +252,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets
      * 
      */
+    @JsonIgnore
     public List<Target> getTargets() {
         return targets;
     }
@@ -249,6 +261,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets
      * 
      */
+    @JsonIgnore
     public void setTargets(List<Target> targets) {
         this.targets = targets;
     }
@@ -262,6 +275,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -270,6 +284,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -283,6 +298,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTaskArn() {
         return taskArn;
     }
@@ -291,6 +307,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskarn
      * 
      */
+    @JsonIgnore
     public void setTaskArn(CharSequence taskArn) {
         this.taskArn = taskArn;
     }
@@ -306,6 +323,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html
      * 
      */
+    @JsonIgnore
     public TaskInvocationParameters getTaskInvocationParameters() {
         return taskInvocationParameters;
     }
@@ -316,6 +334,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html
      * 
      */
+    @JsonIgnore
     public void setTaskInvocationParameters(TaskInvocationParameters taskInvocationParameters) {
         this.taskInvocationParameters = taskInvocationParameters;
     }
@@ -329,6 +348,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid
      * 
      */
+    @JsonIgnore
     public CharSequence getWindowId() {
         return windowId;
     }
@@ -337,6 +357,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid
      * 
      */
+    @JsonIgnore
     public void setWindowId(CharSequence windowId) {
         this.windowId = windowId;
     }
@@ -350,6 +371,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters
      * 
      */
+    @JsonIgnore
     public Object getTaskParameters() {
         return taskParameters;
     }
@@ -358,6 +380,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters
      * 
      */
+    @JsonIgnore
     public void setTaskParameters(Object taskParameters) {
         this.taskParameters = taskParameters;
     }
@@ -371,6 +394,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype
      * 
      */
+    @JsonIgnore
     public CharSequence getTaskType() {
         return taskType;
     }
@@ -379,6 +403,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype
      * 
      */
+    @JsonIgnore
     public void setTaskType(CharSequence taskType) {
         this.taskType = taskType;
     }
@@ -394,6 +419,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html
      * 
      */
+    @JsonIgnore
     public LoggingInfo getLoggingInfo() {
         return loggingInfo;
     }
@@ -404,6 +430,7 @@ public class MaintenanceWindowTask {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html
      * 
      */
+    @JsonIgnore
     public void setLoggingInfo(LoggingInfo loggingInfo) {
         this.loggingInfo = loggingInfo;
     }

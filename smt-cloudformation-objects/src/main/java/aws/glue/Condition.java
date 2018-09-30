@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
+    @JsonIgnore
     public CharSequence getState() {
         return state;
     }
@@ -58,6 +60,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-state
      * 
      */
+    @JsonIgnore
     public void setState(CharSequence state) {
         this.state = state;
     }
@@ -71,6 +74,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
      */
+    @JsonIgnore
     public CharSequence getLogicalOperator() {
         return logicalOperator;
     }
@@ -79,6 +83,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-logicaloperator
      * 
      */
+    @JsonIgnore
     public void setLogicalOperator(CharSequence logicalOperator) {
         this.logicalOperator = logicalOperator;
     }
@@ -92,6 +97,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname
      * 
      */
+    @JsonIgnore
     public CharSequence getJobName() {
         return jobName;
     }
@@ -100,6 +106,7 @@ public class Condition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-condition.html#cfn-glue-trigger-condition-jobname
      * 
      */
+    @JsonIgnore
     public void setJobName(CharSequence jobName) {
         this.jobName = jobName;
     }

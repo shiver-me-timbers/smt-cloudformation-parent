@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAllowedPrincipals() {
         return allowedPrincipals;
     }
@@ -52,6 +54,7 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-allowedprincipals
      * 
      */
+    @JsonIgnore
     public void setAllowedPrincipals(List<CharSequence> allowedPrincipals) {
         this.allowedPrincipals = allowedPrincipals;
     }
@@ -65,6 +68,7 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceId() {
         return serviceId;
     }
@@ -73,6 +77,7 @@ public class VPCEndpointServicePermissions {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservicepermissions.html#cfn-ec2-vpcendpointservicepermissions-serviceid
      * 
      */
+    @JsonIgnore
     public void setServiceId(CharSequence serviceId) {
         this.serviceId = serviceId;
     }

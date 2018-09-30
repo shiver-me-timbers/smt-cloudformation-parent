@@ -4,6 +4,7 @@ package aws.neptune;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -141,6 +142,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-storageencrypted
      * 
      */
+    @JsonIgnore
     public Boolean getStorageEncrypted() {
         return storageEncrypted;
     }
@@ -149,6 +151,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-storageencrypted
      * 
      */
+    @JsonIgnore
     public void setStorageEncrypted(Boolean storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
@@ -162,6 +165,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -170,6 +174,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -183,6 +188,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAvailabilityZones() {
         return availabilityZones;
     }
@@ -191,6 +197,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-availabilityzones
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZones(List<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
     }
@@ -204,6 +211,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSnapshotIdentifier() {
         return snapshotIdentifier;
     }
@@ -212,6 +220,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-snapshotidentifier
      * 
      */
+    @JsonIgnore
     public void setSnapshotIdentifier(CharSequence snapshotIdentifier) {
         this.snapshotIdentifier = snapshotIdentifier;
     }
@@ -225,6 +234,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -233,6 +243,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -246,6 +257,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
@@ -254,6 +266,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
@@ -267,6 +280,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -275,6 +289,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -288,6 +303,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-iamauthenabled
      * 
      */
+    @JsonIgnore
     public Boolean getIamAuthEnabled() {
         return iamAuthEnabled;
     }
@@ -296,6 +312,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-iamauthenabled
      * 
      */
+    @JsonIgnore
     public void setIamAuthEnabled(Boolean iamAuthEnabled) {
         this.iamAuthEnabled = iamAuthEnabled;
     }
@@ -309,6 +326,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
@@ -317,6 +335,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
@@ -330,6 +349,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredBackupWindow() {
         return preferredBackupWindow;
     }
@@ -338,6 +358,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public void setPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
     }
@@ -351,6 +372,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVpcSecurityGroupIds() {
         return vpcSecurityGroupIds;
     }
@@ -359,6 +381,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-vpcsecuritygroupids
      * 
      */
+    @JsonIgnore
     public void setVpcSecurityGroupIds(List<CharSequence> vpcSecurityGroupIds) {
         this.vpcSecurityGroupIds = vpcSecurityGroupIds;
     }
@@ -372,6 +395,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusterparametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterParameterGroupName() {
         return dBClusterParameterGroupName;
     }
@@ -380,6 +404,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-dbclusterparametergroupname
      * 
      */
+    @JsonIgnore
     public void setDBClusterParameterGroupName(CharSequence dBClusterParameterGroupName) {
         this.dBClusterParameterGroupName = dBClusterParameterGroupName;
     }
@@ -393,6 +418,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-backupretentionperiod
      * 
      */
+    @JsonIgnore
     public Integer getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
@@ -401,6 +427,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-backupretentionperiod
      * 
      */
+    @JsonIgnore
     public void setBackupRetentionPeriod(Integer backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
@@ -414,6 +441,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -422,6 +450,7 @@ public class DBCluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbcluster.html#cfn-neptune-dbcluster-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

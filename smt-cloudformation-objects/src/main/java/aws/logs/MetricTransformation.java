@@ -1,6 +1,7 @@
 
 package aws.logs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-defaultvalue
      * 
      */
+    @JsonIgnore
     public Double getDefaultValue() {
         return defaultValue;
     }
@@ -66,6 +68,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-defaultvalue
      * 
      */
+    @JsonIgnore
     public void setDefaultValue(Double defaultValue) {
         this.defaultValue = defaultValue;
     }
@@ -79,6 +82,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricname
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricName() {
         return metricName;
     }
@@ -87,6 +91,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricname
      * 
      */
+    @JsonIgnore
     public void setMetricName(CharSequence metricName) {
         this.metricName = metricName;
     }
@@ -100,6 +105,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricnamespace
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricNamespace() {
         return metricNamespace;
     }
@@ -108,6 +114,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricnamespace
      * 
      */
+    @JsonIgnore
     public void setMetricNamespace(CharSequence metricNamespace) {
         this.metricNamespace = metricNamespace;
     }
@@ -121,6 +128,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getMetricValue() {
         return metricValue;
     }
@@ -129,6 +137,7 @@ public class MetricTransformation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-metricvalue
      * 
      */
+    @JsonIgnore
     public void setMetricValue(CharSequence metricValue) {
         this.metricValue = metricValue;
     }

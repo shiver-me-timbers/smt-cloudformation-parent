@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource
      * 
      */
+    @JsonIgnore
     public CharSequence getEventSource() {
         return eventSource;
     }
@@ -58,6 +60,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource
      * 
      */
+    @JsonIgnore
     public void setEventSource(CharSequence eventSource) {
         this.eventSource = eventSource;
     }
@@ -71,6 +74,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency
      * 
      */
+    @JsonIgnore
     public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
@@ -79,6 +83,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-sourcedetail-maximumexecutionfrequency
      * 
      */
+    @JsonIgnore
     public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
@@ -92,6 +97,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype
      * 
      */
+    @JsonIgnore
     public CharSequence getMessageType() {
         return messageType;
     }
@@ -100,6 +106,7 @@ public class SourceDetail {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-messagetype
      * 
      */
+    @JsonIgnore
     public void setMessageType(CharSequence messageType) {
         this.messageType = messageType;
     }

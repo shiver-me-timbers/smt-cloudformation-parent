@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -158,6 +159,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html
      * 
      */
+    @JsonIgnore
     public Logging getLogging() {
         return logging;
     }
@@ -168,6 +170,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html
      * 
      */
+    @JsonIgnore
     public void setLogging(Logging logging) {
         this.logging = logging;
     }
@@ -181,6 +184,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment
      * 
      */
+    @JsonIgnore
     public CharSequence getComment() {
         return comment;
     }
@@ -189,6 +193,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment
      * 
      */
+    @JsonIgnore
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -202,6 +207,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultrootobject
      * 
      */
+    @JsonIgnore
     public CharSequence getDefaultRootObject() {
         return defaultRootObject;
     }
@@ -210,6 +216,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultrootobject
      * 
      */
+    @JsonIgnore
     public void setDefaultRootObject(CharSequence defaultRootObject) {
         this.defaultRootObject = defaultRootObject;
     }
@@ -223,6 +230,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins
      * 
      */
+    @JsonIgnore
     public List<Origin> getOrigins() {
         return origins;
     }
@@ -231,6 +239,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins
      * 
      */
+    @JsonIgnore
     public void setOrigins(List<Origin> origins) {
         this.origins = origins;
     }
@@ -246,6 +255,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html
      * 
      */
+    @JsonIgnore
     public ViewerCertificate getViewerCertificate() {
         return viewerCertificate;
     }
@@ -256,6 +266,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html
      * 
      */
+    @JsonIgnore
     public void setViewerCertificate(ViewerCertificate viewerCertificate) {
         this.viewerCertificate = viewerCertificate;
     }
@@ -269,6 +280,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass
      * 
      */
+    @JsonIgnore
     public CharSequence getPriceClass() {
         return priceClass;
     }
@@ -277,6 +289,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass
      * 
      */
+    @JsonIgnore
     public void setPriceClass(CharSequence priceClass) {
         this.priceClass = priceClass;
     }
@@ -292,6 +305,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html
      * 
      */
+    @JsonIgnore
     public DefaultCacheBehavior getDefaultCacheBehavior() {
         return defaultCacheBehavior;
     }
@@ -302,6 +316,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html
      * 
      */
+    @JsonIgnore
     public void setDefaultCacheBehavior(DefaultCacheBehavior defaultCacheBehavior) {
         this.defaultCacheBehavior = defaultCacheBehavior;
     }
@@ -315,6 +330,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses
      * 
      */
+    @JsonIgnore
     public List<CustomErrorResponse> getCustomErrorResponses() {
         return customErrorResponses;
     }
@@ -323,6 +339,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses
      * 
      */
+    @JsonIgnore
     public void setCustomErrorResponses(List<CustomErrorResponse> customErrorResponses) {
         this.customErrorResponses = customErrorResponses;
     }
@@ -336,6 +353,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -344,6 +362,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -357,6 +376,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-aliases
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getAliases() {
         return aliases;
     }
@@ -365,6 +385,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-aliases
      * 
      */
+    @JsonIgnore
     public void setAliases(List<CharSequence> aliases) {
         this.aliases = aliases;
     }
@@ -378,6 +399,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-ipv6enabled
      * 
      */
+    @JsonIgnore
     public Boolean getIPV6Enabled() {
         return iPV6Enabled;
     }
@@ -386,6 +408,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-ipv6enabled
      * 
      */
+    @JsonIgnore
     public void setIPV6Enabled(Boolean iPV6Enabled) {
         this.iPV6Enabled = iPV6Enabled;
     }
@@ -399,6 +422,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-webaclid
      * 
      */
+    @JsonIgnore
     public CharSequence getWebACLId() {
         return webACLId;
     }
@@ -407,6 +431,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-webaclid
      * 
      */
+    @JsonIgnore
     public void setWebACLId(CharSequence webACLId) {
         this.webACLId = webACLId;
     }
@@ -420,6 +445,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-httpversion
      * 
      */
+    @JsonIgnore
     public CharSequence getHttpVersion() {
         return httpVersion;
     }
@@ -428,6 +454,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-httpversion
      * 
      */
+    @JsonIgnore
     public void setHttpVersion(CharSequence httpVersion) {
         this.httpVersion = httpVersion;
     }
@@ -443,6 +470,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html
      * 
      */
+    @JsonIgnore
     public Restrictions getRestrictions() {
         return restrictions;
     }
@@ -453,6 +481,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html
      * 
      */
+    @JsonIgnore
     public void setRestrictions(Restrictions restrictions) {
         this.restrictions = restrictions;
     }
@@ -466,6 +495,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors
      * 
      */
+    @JsonIgnore
     public List<CacheBehavior> getCacheBehaviors() {
         return cacheBehaviors;
     }
@@ -474,6 +504,7 @@ public class DistributionConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors
      * 
      */
+    @JsonIgnore
     public void setCacheBehaviors(List<CacheBehavior> cacheBehaviors) {
         this.cacheBehaviors = cacheBehaviors;
     }

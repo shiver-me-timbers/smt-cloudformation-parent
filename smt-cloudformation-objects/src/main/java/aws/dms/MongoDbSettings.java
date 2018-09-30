@@ -1,6 +1,7 @@
 
 package aws.dms;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -114,6 +115,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authsource
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthSource() {
         return authSource;
     }
@@ -122,6 +124,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authsource
      * 
      */
+    @JsonIgnore
     public void setAuthSource(CharSequence authSource) {
         this.authSource = authSource;
     }
@@ -135,6 +138,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authmechanism
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthMechanism() {
         return authMechanism;
     }
@@ -143,6 +147,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authmechanism
      * 
      */
+    @JsonIgnore
     public void setAuthMechanism(CharSequence authMechanism) {
         this.authMechanism = authMechanism;
     }
@@ -156,6 +161,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-username
      * 
      */
+    @JsonIgnore
     public CharSequence getUsername() {
         return username;
     }
@@ -164,6 +170,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-username
      * 
      */
+    @JsonIgnore
     public void setUsername(CharSequence username) {
         this.username = username;
     }
@@ -177,6 +184,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-docstoinvestigate
      * 
      */
+    @JsonIgnore
     public CharSequence getDocsToInvestigate() {
         return docsToInvestigate;
     }
@@ -185,6 +193,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-docstoinvestigate
      * 
      */
+    @JsonIgnore
     public void setDocsToInvestigate(CharSequence docsToInvestigate) {
         this.docsToInvestigate = docsToInvestigate;
     }
@@ -198,6 +207,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-servername
      * 
      */
+    @JsonIgnore
     public CharSequence getServerName() {
         return serverName;
     }
@@ -206,6 +216,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-servername
      * 
      */
+    @JsonIgnore
     public void setServerName(CharSequence serverName) {
         this.serverName = serverName;
     }
@@ -219,6 +230,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -227,6 +239,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -240,6 +253,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-extractdocid
      * 
      */
+    @JsonIgnore
     public CharSequence getExtractDocId() {
         return extractDocId;
     }
@@ -248,6 +262,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-extractdocid
      * 
      */
+    @JsonIgnore
     public void setExtractDocId(CharSequence extractDocId) {
         this.extractDocId = extractDocId;
     }
@@ -261,6 +276,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-databasename
      * 
      */
+    @JsonIgnore
     public CharSequence getDatabaseName() {
         return databaseName;
     }
@@ -269,6 +285,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-databasename
      * 
      */
+    @JsonIgnore
     public void setDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
     }
@@ -282,6 +299,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authtype
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthType() {
         return authType;
     }
@@ -290,6 +308,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authtype
      * 
      */
+    @JsonIgnore
     public void setAuthType(CharSequence authType) {
         this.authType = authType;
     }
@@ -303,6 +322,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-password
      * 
      */
+    @JsonIgnore
     public CharSequence getPassword() {
         return password;
     }
@@ -311,6 +331,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-password
      * 
      */
+    @JsonIgnore
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -324,6 +345,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-nestinglevel
      * 
      */
+    @JsonIgnore
     public CharSequence getNestingLevel() {
         return nestingLevel;
     }
@@ -332,6 +354,7 @@ public class MongoDbSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-nestinglevel
      * 
      */
+    @JsonIgnore
     public void setNestingLevel(CharSequence nestingLevel) {
         this.nestingLevel = nestingLevel;
     }

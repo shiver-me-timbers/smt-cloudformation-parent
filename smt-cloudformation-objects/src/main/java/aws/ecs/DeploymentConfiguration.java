@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent
      * 
      */
+    @JsonIgnore
     public Integer getMaximumPercent() {
         return maximumPercent;
     }
@@ -50,6 +52,7 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-maximumpercent
      * 
      */
+    @JsonIgnore
     public void setMaximumPercent(Integer maximumPercent) {
         this.maximumPercent = maximumPercent;
     }
@@ -63,6 +66,7 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent
      * 
      */
+    @JsonIgnore
     public Integer getMinimumHealthyPercent() {
         return minimumHealthyPercent;
     }
@@ -71,6 +75,7 @@ public class DeploymentConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html#cfn-ecs-service-deploymentconfiguration-minimumhealthypercent
      * 
      */
+    @JsonIgnore
     public void setMinimumHealthyPercent(Integer minimumHealthyPercent) {
         this.minimumHealthyPercent = minimumHealthyPercent;
     }

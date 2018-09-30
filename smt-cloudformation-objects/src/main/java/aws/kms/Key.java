@@ -4,6 +4,7 @@ package aws.kms;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -77,6 +78,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -85,6 +87,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -98,6 +101,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enablekeyrotation
      * 
      */
+    @JsonIgnore
     public Boolean getEnableKeyRotation() {
         return enableKeyRotation;
     }
@@ -106,6 +110,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enablekeyrotation
      * 
      */
+    @JsonIgnore
     public void setEnableKeyRotation(Boolean enableKeyRotation) {
         this.enableKeyRotation = enableKeyRotation;
     }
@@ -119,6 +124,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -127,6 +133,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -140,6 +147,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy
      * 
      */
+    @JsonIgnore
     public Object getKeyPolicy() {
         return keyPolicy;
     }
@@ -148,6 +156,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keypolicy
      * 
      */
+    @JsonIgnore
     public void setKeyPolicy(Object keyPolicy) {
         this.keyPolicy = keyPolicy;
     }
@@ -161,6 +170,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keyusage
      * 
      */
+    @JsonIgnore
     public CharSequence getKeyUsage() {
         return keyUsage;
     }
@@ -169,6 +179,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keyusage
      * 
      */
+    @JsonIgnore
     public void setKeyUsage(CharSequence keyUsage) {
         this.keyUsage = keyUsage;
     }
@@ -182,6 +193,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -190,6 +202,7 @@ public class Key {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

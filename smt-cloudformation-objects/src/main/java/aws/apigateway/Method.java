@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -138,6 +139,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired
      * 
      */
+    @JsonIgnore
     public java.lang.Boolean getApiKeyRequired() {
         return apiKeyRequired;
     }
@@ -146,6 +148,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired
      * 
      */
+    @JsonIgnore
     public void setApiKeyRequired(java.lang.Boolean apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
     }
@@ -159,6 +162,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getAuthorizationScopes() {
         return authorizationScopes;
     }
@@ -167,6 +171,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
      * 
      */
+    @JsonIgnore
     public void setAuthorizationScopes(Set<CharSequence> authorizationScopes) {
         this.authorizationScopes = authorizationScopes;
     }
@@ -180,6 +185,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthorizationType() {
         return authorizationType;
     }
@@ -188,6 +194,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationtype
      * 
      */
+    @JsonIgnore
     public void setAuthorizationType(CharSequence authorizationType) {
         this.authorizationType = authorizationType;
     }
@@ -201,6 +208,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizerid
      * 
      */
+    @JsonIgnore
     public CharSequence getAuthorizerId() {
         return authorizerId;
     }
@@ -209,6 +217,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizerid
      * 
      */
+    @JsonIgnore
     public void setAuthorizerId(CharSequence authorizerId) {
         this.authorizerId = authorizerId;
     }
@@ -222,6 +231,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-httpmethod
      * 
      */
+    @JsonIgnore
     public CharSequence getHttpMethod() {
         return httpMethod;
     }
@@ -230,6 +240,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-httpmethod
      * 
      */
+    @JsonIgnore
     public void setHttpMethod(CharSequence httpMethod) {
         this.httpMethod = httpMethod;
     }
@@ -245,6 +256,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html
      * 
      */
+    @JsonIgnore
     public Integration getIntegration() {
         return integration;
     }
@@ -255,6 +267,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html
      * 
      */
+    @JsonIgnore
     public void setIntegration(Integration integration) {
         this.integration = integration;
     }
@@ -268,6 +281,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses
      * 
      */
+    @JsonIgnore
     public Set<MethodResponse> getMethodResponses() {
         return methodResponses;
     }
@@ -276,6 +290,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses
      * 
      */
+    @JsonIgnore
     public void setMethodResponses(Set<MethodResponse> methodResponses) {
         this.methodResponses = methodResponses;
     }
@@ -289,6 +304,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-operationname
      * 
      */
+    @JsonIgnore
     public CharSequence getOperationName() {
         return operationName;
     }
@@ -297,6 +313,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-operationname
      * 
      */
+    @JsonIgnore
     public void setOperationName(CharSequence operationName) {
         this.operationName = operationName;
     }
@@ -310,6 +327,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestmodels
      * 
      */
+    @JsonIgnore
     public Map<String, String> getRequestModels() {
         return requestModels;
     }
@@ -318,6 +336,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestmodels
      * 
      */
+    @JsonIgnore
     public void setRequestModels(Map<String, String> requestModels) {
         this.requestModels = requestModels;
     }
@@ -331,6 +350,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters
      * 
      */
+    @JsonIgnore
     public Map<String, Boolean> getRequestParameters() {
         return requestParameters;
     }
@@ -339,6 +359,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestparameters
      * 
      */
+    @JsonIgnore
     public void setRequestParameters(Map<String, Boolean> requestParameters) {
         this.requestParameters = requestParameters;
     }
@@ -352,6 +373,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid
      * 
      */
+    @JsonIgnore
     public CharSequence getRequestValidatorId() {
         return requestValidatorId;
     }
@@ -360,6 +382,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-requestvalidatorid
      * 
      */
+    @JsonIgnore
     public void setRequestValidatorId(CharSequence requestValidatorId) {
         this.requestValidatorId = requestValidatorId;
     }
@@ -373,6 +396,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-resourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -381,6 +405,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-resourceid
      * 
      */
+    @JsonIgnore
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
@@ -394,6 +419,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-restapiid
      * 
      */
+    @JsonIgnore
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -402,6 +428,7 @@ public class Method {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-restapiid
      * 
      */
+    @JsonIgnore
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }

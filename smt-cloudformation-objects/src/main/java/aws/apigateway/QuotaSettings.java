@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit
      * 
      */
+    @JsonIgnore
     public Integer getLimit() {
         return limit;
     }
@@ -58,6 +60,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-limit
      * 
      */
+    @JsonIgnore
     public void setLimit(Integer limit) {
         this.limit = limit;
     }
@@ -71,6 +74,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset
      * 
      */
+    @JsonIgnore
     public Integer getOffset() {
         return offset;
     }
@@ -79,6 +83,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-offset
      * 
      */
+    @JsonIgnore
     public void setOffset(Integer offset) {
         this.offset = offset;
     }
@@ -92,6 +97,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period
      * 
      */
+    @JsonIgnore
     public CharSequence getPeriod() {
         return period;
     }
@@ -100,6 +106,7 @@ public class QuotaSettings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html#cfn-apigateway-usageplan-quotasettings-period
      * 
      */
+    @JsonIgnore
     public void setPeriod(CharSequence period) {
         this.period = period;
     }

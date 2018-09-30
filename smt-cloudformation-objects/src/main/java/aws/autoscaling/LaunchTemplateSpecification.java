@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplateid
      * 
      */
+    @JsonIgnore
     public CharSequence getLaunchTemplateId() {
         return launchTemplateId;
     }
@@ -58,6 +60,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplateid
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplateId(CharSequence launchTemplateId) {
         this.launchTemplateId = launchTemplateId;
     }
@@ -71,6 +74,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplatename
      * 
      */
+    @JsonIgnore
     public CharSequence getLaunchTemplateName() {
         return launchTemplateName;
     }
@@ -79,6 +83,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplatename
      * 
      */
+    @JsonIgnore
     public void setLaunchTemplateName(CharSequence launchTemplateName) {
         this.launchTemplateName = launchTemplateName;
     }
@@ -92,6 +97,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-version
      * 
      */
+    @JsonIgnore
     public CharSequence getVersion() {
         return version;
     }
@@ -100,6 +106,7 @@ public class LaunchTemplateSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-version
      * 
      */
+    @JsonIgnore
     public void setVersion(CharSequence version) {
         this.version = version;
     }

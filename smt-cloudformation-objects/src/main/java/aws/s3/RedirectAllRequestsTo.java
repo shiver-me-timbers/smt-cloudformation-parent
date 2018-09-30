@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname
      * 
      */
+    @JsonIgnore
     public CharSequence getHostName() {
         return hostName;
     }
@@ -50,6 +52,7 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-hostname
      * 
      */
+    @JsonIgnore
     public void setHostName(CharSequence hostName) {
         this.hostName = hostName;
     }
@@ -63,6 +66,7 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -71,6 +75,7 @@ public class RedirectAllRequestsTo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html#cfn-s3-websiteconfiguration-redirectallrequeststo-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }

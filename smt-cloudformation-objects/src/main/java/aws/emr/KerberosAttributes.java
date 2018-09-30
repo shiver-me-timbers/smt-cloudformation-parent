@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getADDomainJoinPassword() {
         return aDDomainJoinPassword;
     }
@@ -74,6 +76,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinpassword
      * 
      */
+    @JsonIgnore
     public void setADDomainJoinPassword(CharSequence aDDomainJoinPassword) {
         this.aDDomainJoinPassword = aDDomainJoinPassword;
     }
@@ -87,6 +90,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser
      * 
      */
+    @JsonIgnore
     public CharSequence getADDomainJoinUser() {
         return aDDomainJoinUser;
     }
@@ -95,6 +99,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-addomainjoinuser
      * 
      */
+    @JsonIgnore
     public void setADDomainJoinUser(CharSequence aDDomainJoinUser) {
         this.aDDomainJoinUser = aDDomainJoinUser;
     }
@@ -108,6 +113,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getCrossRealmTrustPrincipalPassword() {
         return crossRealmTrustPrincipalPassword;
     }
@@ -116,6 +122,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-crossrealmtrustprincipalpassword
      * 
      */
+    @JsonIgnore
     public void setCrossRealmTrustPrincipalPassword(CharSequence crossRealmTrustPrincipalPassword) {
         this.crossRealmTrustPrincipalPassword = crossRealmTrustPrincipalPassword;
     }
@@ -129,6 +136,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getKdcAdminPassword() {
         return kdcAdminPassword;
     }
@@ -137,6 +145,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-kdcadminpassword
      * 
      */
+    @JsonIgnore
     public void setKdcAdminPassword(CharSequence kdcAdminPassword) {
         this.kdcAdminPassword = kdcAdminPassword;
     }
@@ -150,6 +159,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm
      * 
      */
+    @JsonIgnore
     public CharSequence getRealm() {
         return realm;
     }
@@ -158,6 +168,7 @@ public class KerberosAttributes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html#cfn-elasticmapreduce-cluster-kerberosattributes-realm
      * 
      */
+    @JsonIgnore
     public void setRealm(CharSequence realm) {
         this.realm = realm;
     }

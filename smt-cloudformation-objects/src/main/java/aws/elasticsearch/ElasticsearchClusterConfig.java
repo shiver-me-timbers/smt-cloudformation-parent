@@ -1,6 +1,7 @@
 
 package aws.elasticsearch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastercount
      * 
      */
+    @JsonIgnore
     public Integer getDedicatedMasterCount() {
         return dedicatedMasterCount;
     }
@@ -82,6 +84,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastercount
      * 
      */
+    @JsonIgnore
     public void setDedicatedMasterCount(Integer dedicatedMasterCount) {
         this.dedicatedMasterCount = dedicatedMasterCount;
     }
@@ -95,6 +98,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmasterenabled
      * 
      */
+    @JsonIgnore
     public Boolean getDedicatedMasterEnabled() {
         return dedicatedMasterEnabled;
     }
@@ -103,6 +107,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmasterenabled
      * 
      */
+    @JsonIgnore
     public void setDedicatedMasterEnabled(Boolean dedicatedMasterEnabled) {
         this.dedicatedMasterEnabled = dedicatedMasterEnabled;
     }
@@ -116,6 +121,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastertype
      * 
      */
+    @JsonIgnore
     public CharSequence getDedicatedMasterType() {
         return dedicatedMasterType;
     }
@@ -124,6 +130,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-dedicatedmastertype
      * 
      */
+    @JsonIgnore
     public void setDedicatedMasterType(CharSequence dedicatedMasterType) {
         this.dedicatedMasterType = dedicatedMasterType;
     }
@@ -137,6 +144,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instancecount
      * 
      */
+    @JsonIgnore
     public Integer getInstanceCount() {
         return instanceCount;
     }
@@ -145,6 +153,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instancecount
      * 
      */
+    @JsonIgnore
     public void setInstanceCount(Integer instanceCount) {
         this.instanceCount = instanceCount;
     }
@@ -158,6 +167,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instnacetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -166,6 +176,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-instnacetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -179,6 +190,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled
      * 
      */
+    @JsonIgnore
     public Boolean getZoneAwarenessEnabled() {
         return zoneAwarenessEnabled;
     }
@@ -187,6 +199,7 @@ public class ElasticsearchClusterConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html#cfn-elasticsearch-domain-elasticseachclusterconfig-zoneawarenessenabled
      * 
      */
+    @JsonIgnore
     public void setZoneAwarenessEnabled(Boolean zoneAwarenessEnabled) {
         this.zoneAwarenessEnabled = zoneAwarenessEnabled;
     }

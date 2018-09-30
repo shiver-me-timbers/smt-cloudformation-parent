@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -48,6 +49,7 @@ public class ScalingPlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html
      * 
      */
+    @JsonIgnore
     public ApplicationSource getApplicationSource() {
         return applicationSource;
     }
@@ -58,6 +60,7 @@ public class ScalingPlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html
      * 
      */
+    @JsonIgnore
     public void setApplicationSource(ApplicationSource applicationSource) {
         this.applicationSource = applicationSource;
     }
@@ -71,6 +74,7 @@ public class ScalingPlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-scalinginstructions
      * 
      */
+    @JsonIgnore
     public List<ScalingInstruction> getScalingInstructions() {
         return scalingInstructions;
     }
@@ -79,6 +83,7 @@ public class ScalingPlan {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-scalinginstructions
      * 
      */
+    @JsonIgnore
     public void setScalingInstructions(List<ScalingInstruction> scalingInstructions) {
         this.scalingInstructions = scalingInstructions;
     }

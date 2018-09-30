@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -164,6 +165,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
      * 
      */
+    @JsonIgnore
     public Integer getHealthCheckIntervalSeconds() {
         return healthCheckIntervalSeconds;
     }
@@ -172,6 +174,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
      * 
      */
+    @JsonIgnore
     public void setHealthCheckIntervalSeconds(Integer healthCheckIntervalSeconds) {
         this.healthCheckIntervalSeconds = healthCheckIntervalSeconds;
     }
@@ -185,6 +188,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckpath
      * 
      */
+    @JsonIgnore
     public CharSequence getHealthCheckPath() {
         return healthCheckPath;
     }
@@ -193,6 +197,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckpath
      * 
      */
+    @JsonIgnore
     public void setHealthCheckPath(CharSequence healthCheckPath) {
         this.healthCheckPath = healthCheckPath;
     }
@@ -206,6 +211,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckport
      * 
      */
+    @JsonIgnore
     public CharSequence getHealthCheckPort() {
         return healthCheckPort;
     }
@@ -214,6 +220,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckport
      * 
      */
+    @JsonIgnore
     public void setHealthCheckPort(CharSequence healthCheckPort) {
         this.healthCheckPort = healthCheckPort;
     }
@@ -227,6 +234,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckprotocol
      * 
      */
+    @JsonIgnore
     public CharSequence getHealthCheckProtocol() {
         return healthCheckProtocol;
     }
@@ -235,6 +243,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckprotocol
      * 
      */
+    @JsonIgnore
     public void setHealthCheckProtocol(CharSequence healthCheckProtocol) {
         this.healthCheckProtocol = healthCheckProtocol;
     }
@@ -248,6 +257,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthchecktimeoutseconds
      * 
      */
+    @JsonIgnore
     public Integer getHealthCheckTimeoutSeconds() {
         return healthCheckTimeoutSeconds;
     }
@@ -256,6 +266,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthchecktimeoutseconds
      * 
      */
+    @JsonIgnore
     public void setHealthCheckTimeoutSeconds(Integer healthCheckTimeoutSeconds) {
         this.healthCheckTimeoutSeconds = healthCheckTimeoutSeconds;
     }
@@ -269,6 +280,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthythresholdcount
      * 
      */
+    @JsonIgnore
     public Integer getHealthyThresholdCount() {
         return healthyThresholdCount;
     }
@@ -277,6 +289,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthythresholdcount
      * 
      */
+    @JsonIgnore
     public void setHealthyThresholdCount(Integer healthyThresholdCount) {
         this.healthyThresholdCount = healthyThresholdCount;
     }
@@ -292,6 +305,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html
      * 
      */
+    @JsonIgnore
     public Matcher getMatcher() {
         return matcher;
     }
@@ -302,6 +316,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html
      * 
      */
+    @JsonIgnore
     public void setMatcher(Matcher matcher) {
         this.matcher = matcher;
     }
@@ -315,6 +330,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -323,6 +339,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -336,6 +353,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-port
      * 
      */
+    @JsonIgnore
     public Integer getPort() {
         return port;
     }
@@ -344,6 +362,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-port
      * 
      */
+    @JsonIgnore
     public void setPort(Integer port) {
         this.port = port;
     }
@@ -357,6 +376,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-protocol
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -365,6 +385,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -378,6 +399,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -386,6 +408,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -399,6 +422,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targetgroupattributes
      * 
      */
+    @JsonIgnore
     public Set<TargetGroupAttribute> getTargetGroupAttributes() {
         return targetGroupAttributes;
     }
@@ -407,6 +431,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targetgroupattributes
      * 
      */
+    @JsonIgnore
     public void setTargetGroupAttributes(Set<TargetGroupAttribute> targetGroupAttributes) {
         this.targetGroupAttributes = targetGroupAttributes;
     }
@@ -420,6 +445,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targettype
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetType() {
         return targetType;
     }
@@ -428,6 +454,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targettype
      * 
      */
+    @JsonIgnore
     public void setTargetType(CharSequence targetType) {
         this.targetType = targetType;
     }
@@ -441,6 +468,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targets
      * 
      */
+    @JsonIgnore
     public Set<TargetDescription> getTargets() {
         return targets;
     }
@@ -449,6 +477,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targets
      * 
      */
+    @JsonIgnore
     public void setTargets(Set<TargetDescription> targets) {
         this.targets = targets;
     }
@@ -462,6 +491,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-unhealthythresholdcount
      * 
      */
+    @JsonIgnore
     public Integer getUnhealthyThresholdCount() {
         return unhealthyThresholdCount;
     }
@@ -470,6 +500,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-unhealthythresholdcount
      * 
      */
+    @JsonIgnore
     public void setUnhealthyThresholdCount(Integer unhealthyThresholdCount) {
         this.unhealthyThresholdCount = unhealthyThresholdCount;
     }
@@ -483,6 +514,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-vpcid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpcId() {
         return vpcId;
     }
@@ -491,6 +523,7 @@ public class TargetGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-vpcid
      * 
      */
+    @JsonIgnore
     public void setVpcId(CharSequence vpcId) {
         this.vpcId = vpcId;
     }

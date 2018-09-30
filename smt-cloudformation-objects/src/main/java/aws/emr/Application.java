@@ -4,6 +4,7 @@ package aws.emr;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -63,6 +64,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo
      * 
      */
+    @JsonIgnore
     public Map<String, String> getAdditionalInfo() {
         return additionalInfo;
     }
@@ -71,6 +73,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo
      * 
      */
+    @JsonIgnore
     public void setAdditionalInfo(Map<String, String> additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
@@ -84,6 +87,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-args
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getArgs() {
         return args;
     }
@@ -92,6 +96,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-args
      * 
      */
+    @JsonIgnore
     public void setArgs(Set<CharSequence> args) {
         this.args = args;
     }
@@ -105,6 +110,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -113,6 +119,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -126,6 +133,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-version
      * 
      */
+    @JsonIgnore
     public CharSequence getVersion() {
         return version;
     }
@@ -134,6 +142,7 @@ public class Application {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-version
      * 
      */
+    @JsonIgnore
     public void setVersion(CharSequence version) {
         this.version = version;
     }

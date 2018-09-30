@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class AccessLogSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-destinationarn
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationArn() {
         return destinationArn;
     }
@@ -50,6 +52,7 @@ public class AccessLogSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-destinationarn
      * 
      */
+    @JsonIgnore
     public void setDestinationArn(CharSequence destinationArn) {
         this.destinationArn = destinationArn;
     }
@@ -63,6 +66,7 @@ public class AccessLogSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-format
      * 
      */
+    @JsonIgnore
     public CharSequence getFormat() {
         return format;
     }
@@ -71,6 +75,7 @@ public class AccessLogSetting {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-format
      * 
      */
+    @JsonIgnore
     public void setFormat(CharSequence format) {
         this.format = format;
     }

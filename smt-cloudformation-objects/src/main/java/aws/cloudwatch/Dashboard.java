@@ -1,6 +1,7 @@
 
 package aws.cloudwatch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname
      * 
      */
+    @JsonIgnore
     public CharSequence getDashboardName() {
         return dashboardName;
     }
@@ -50,6 +52,7 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardname
      * 
      */
+    @JsonIgnore
     public void setDashboardName(CharSequence dashboardName) {
         this.dashboardName = dashboardName;
     }
@@ -63,6 +66,7 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody
      * 
      */
+    @JsonIgnore
     public CharSequence getDashboardBody() {
         return dashboardBody;
     }
@@ -71,6 +75,7 @@ public class Dashboard {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudwatch-dashboard.html#cfn-cloudwatch-dashboard-dashboardbody
      * 
      */
+    @JsonIgnore
     public void setDashboardBody(CharSequence dashboardBody) {
         this.dashboardBody = dashboardBody;
     }

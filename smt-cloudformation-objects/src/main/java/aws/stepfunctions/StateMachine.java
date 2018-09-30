@@ -1,6 +1,7 @@
 
 package aws.stepfunctions;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring
      * 
      */
+    @JsonIgnore
     public CharSequence getDefinitionString() {
         return definitionString;
     }
@@ -58,6 +60,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring
      * 
      */
+    @JsonIgnore
     public void setDefinitionString(CharSequence definitionString) {
         this.definitionString = definitionString;
     }
@@ -71,6 +74,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-statemachinename
      * 
      */
+    @JsonIgnore
     public CharSequence getStateMachineName() {
         return stateMachineName;
     }
@@ -79,6 +83,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-statemachinename
      * 
      */
+    @JsonIgnore
     public void setStateMachineName(CharSequence stateMachineName) {
         this.stateMachineName = stateMachineName;
     }
@@ -92,6 +97,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -100,6 +106,7 @@ public class StateMachine {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

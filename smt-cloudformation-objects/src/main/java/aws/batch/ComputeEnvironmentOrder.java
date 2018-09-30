@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment
      * 
      */
+    @JsonIgnore
     public CharSequence getComputeEnvironment() {
         return computeEnvironment;
     }
@@ -50,6 +52,7 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-computeenvironment
      * 
      */
+    @JsonIgnore
     public void setComputeEnvironment(CharSequence computeEnvironment) {
         this.computeEnvironment = computeEnvironment;
     }
@@ -63,6 +66,7 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order
      * 
      */
+    @JsonIgnore
     public Integer getOrder() {
         return order;
     }
@@ -71,6 +75,7 @@ public class ComputeEnvironmentOrder {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobqueue-computeenvironmentorder.html#cfn-batch-jobqueue-computeenvironmentorder-order
      * 
      */
+    @JsonIgnore
     public void setOrder(Integer order) {
         this.order = order;
     }

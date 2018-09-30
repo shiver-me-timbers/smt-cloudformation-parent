@@ -4,6 +4,7 @@ package aws.sagemaker;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -61,6 +62,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants
      * 
      */
+    @JsonIgnore
     public List<ProductionVariant> getProductionVariants() {
         return productionVariants;
     }
@@ -69,6 +71,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants
      * 
      */
+    @JsonIgnore
     public void setProductionVariants(List<ProductionVariant> productionVariants) {
         this.productionVariants = productionVariants;
     }
@@ -82,6 +85,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -90,6 +94,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -103,6 +108,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-endpointconfigname
      * 
      */
+    @JsonIgnore
     public CharSequence getEndpointConfigName() {
         return endpointConfigName;
     }
@@ -111,6 +117,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-endpointconfigname
      * 
      */
+    @JsonIgnore
     public void setEndpointConfigName(CharSequence endpointConfigName) {
         this.endpointConfigName = endpointConfigName;
     }
@@ -124,6 +131,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -132,6 +140,7 @@ public class EndpointConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

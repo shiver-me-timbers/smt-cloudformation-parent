@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class StopAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html#cfn-ses-receiptrule-stopaction-scope
      * 
      */
+    @JsonIgnore
     public CharSequence getScope() {
         return scope;
     }
@@ -50,6 +52,7 @@ public class StopAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html#cfn-ses-receiptrule-stopaction-scope
      * 
      */
+    @JsonIgnore
     public void setScope(CharSequence scope) {
         this.scope = scope;
     }
@@ -63,6 +66,7 @@ public class StopAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html#cfn-ses-receiptrule-stopaction-topicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicArn() {
         return topicArn;
     }
@@ -71,6 +75,7 @@ public class StopAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html#cfn-ses-receiptrule-stopaction-topicarn
      * 
      */
+    @JsonIgnore
     public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }

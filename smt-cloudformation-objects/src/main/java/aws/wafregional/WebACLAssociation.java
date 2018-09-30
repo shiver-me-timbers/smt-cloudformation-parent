@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class WebACLAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-resourcearn
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceArn() {
         return resourceArn;
     }
@@ -50,6 +52,7 @@ public class WebACLAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-resourcearn
      * 
      */
+    @JsonIgnore
     public void setResourceArn(CharSequence resourceArn) {
         this.resourceArn = resourceArn;
     }
@@ -63,6 +66,7 @@ public class WebACLAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-webaclid
      * 
      */
+    @JsonIgnore
     public CharSequence getWebACLId() {
         return webACLId;
     }
@@ -71,6 +75,7 @@ public class WebACLAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-webaclid
      * 
      */
+    @JsonIgnore
     public void setWebACLId(CharSequence webACLId) {
         this.webACLId = webACLId;
     }

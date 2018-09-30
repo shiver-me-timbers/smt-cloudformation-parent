@@ -1,6 +1,7 @@
 
 package aws.dms;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -82,6 +83,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-externaltabledefinition
      * 
      */
+    @JsonIgnore
     public CharSequence getExternalTableDefinition() {
         return externalTableDefinition;
     }
@@ -90,6 +92,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-externaltabledefinition
      * 
      */
+    @JsonIgnore
     public void setExternalTableDefinition(CharSequence externalTableDefinition) {
         this.externalTableDefinition = externalTableDefinition;
     }
@@ -103,6 +106,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketName() {
         return bucketName;
     }
@@ -111,6 +115,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketname
      * 
      */
+    @JsonIgnore
     public void setBucketName(CharSequence bucketName) {
         this.bucketName = bucketName;
     }
@@ -124,6 +129,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketfolder
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketFolder() {
         return bucketFolder;
     }
@@ -132,6 +138,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-bucketfolder
      * 
      */
+    @JsonIgnore
     public void setBucketFolder(CharSequence bucketFolder) {
         this.bucketFolder = bucketFolder;
     }
@@ -145,6 +152,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvrowdelimiter
      * 
      */
+    @JsonIgnore
     public CharSequence getCsvRowDelimiter() {
         return csvRowDelimiter;
     }
@@ -153,6 +161,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvrowdelimiter
      * 
      */
+    @JsonIgnore
     public void setCsvRowDelimiter(CharSequence csvRowDelimiter) {
         this.csvRowDelimiter = csvRowDelimiter;
     }
@@ -166,6 +175,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvdelimiter
      * 
      */
+    @JsonIgnore
     public CharSequence getCsvDelimiter() {
         return csvDelimiter;
     }
@@ -174,6 +184,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-csvdelimiter
      * 
      */
+    @JsonIgnore
     public void setCsvDelimiter(CharSequence csvDelimiter) {
         this.csvDelimiter = csvDelimiter;
     }
@@ -187,6 +198,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-serviceaccessrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceAccessRoleArn() {
         return serviceAccessRoleArn;
     }
@@ -195,6 +207,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-serviceaccessrolearn
      * 
      */
+    @JsonIgnore
     public void setServiceAccessRoleArn(CharSequence serviceAccessRoleArn) {
         this.serviceAccessRoleArn = serviceAccessRoleArn;
     }
@@ -208,6 +221,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-compressiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getCompressionType() {
         return compressionType;
     }
@@ -216,6 +230,7 @@ public class S3Settings {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html#cfn-dms-endpoint-s3settings-compressiontype
      * 
      */
+    @JsonIgnore
     public void setCompressionType(CharSequence compressionType) {
         this.compressionType = compressionType;
     }

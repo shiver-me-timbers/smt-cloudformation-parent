@@ -1,6 +1,7 @@
 
 package aws.amazonmq;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek
      * 
      */
+    @JsonIgnore
     public CharSequence getDayOfWeek() {
         return dayOfWeek;
     }
@@ -58,6 +60,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek
      * 
      */
+    @JsonIgnore
     public void setDayOfWeek(CharSequence dayOfWeek) {
         this.dayOfWeek = dayOfWeek;
     }
@@ -71,6 +74,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday
      * 
      */
+    @JsonIgnore
     public CharSequence getTimeOfDay() {
         return timeOfDay;
     }
@@ -79,6 +83,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timeofday
      * 
      */
+    @JsonIgnore
     public void setTimeOfDay(CharSequence timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
@@ -92,6 +97,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone
      * 
      */
+    @JsonIgnore
     public CharSequence getTimeZone() {
         return timeZone;
     }
@@ -100,6 +106,7 @@ public class MaintenanceWindow {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-timezone
      * 
      */
+    @JsonIgnore
     public void setTimeZone(CharSequence timeZone) {
         this.timeZone = timeZone;
     }

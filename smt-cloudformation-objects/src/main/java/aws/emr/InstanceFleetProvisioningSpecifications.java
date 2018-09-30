@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class InstanceFleetProvisioningSpecifications {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html
      * 
      */
+    @JsonIgnore
     public SpotProvisioningSpecification getSpotSpecification() {
         return spotSpecification;
     }
@@ -48,6 +50,7 @@ public class InstanceFleetProvisioningSpecifications {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html
      * 
      */
+    @JsonIgnore
     public void setSpotSpecification(SpotProvisioningSpecification spotSpecification) {
         this.spotSpecification = spotSpecification;
     }

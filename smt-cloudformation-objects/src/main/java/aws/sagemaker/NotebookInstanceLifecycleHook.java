@@ -1,6 +1,7 @@
 
 package aws.sagemaker;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class NotebookInstanceLifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook-content
      * 
      */
+    @JsonIgnore
     public CharSequence getContent() {
         return content;
     }
@@ -42,6 +44,7 @@ public class NotebookInstanceLifecycleHook {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook-content
      * 
      */
+    @JsonIgnore
     public void setContent(CharSequence content) {
         this.content = content;
     }

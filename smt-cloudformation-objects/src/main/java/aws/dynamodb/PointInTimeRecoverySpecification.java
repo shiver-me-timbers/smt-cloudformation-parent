@@ -1,6 +1,7 @@
 
 package aws.dynamodb;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class PointInTimeRecoverySpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
      * 
      */
+    @JsonIgnore
     public Boolean getPointInTimeRecoveryEnabled() {
         return pointInTimeRecoveryEnabled;
     }
@@ -42,6 +44,7 @@ public class PointInTimeRecoverySpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
      * 
      */
+    @JsonIgnore
     public void setPointInTimeRecoveryEnabled(Boolean pointInTimeRecoveryEnabled) {
         this.pointInTimeRecoveryEnabled = pointInTimeRecoveryEnabled;
     }

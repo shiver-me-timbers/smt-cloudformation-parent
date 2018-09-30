@@ -3,6 +3,7 @@ package aws.events;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class RunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
      * 
      */
+    @JsonIgnore
     public Set<RunCommandTarget> getRunCommandTargets() {
         return runCommandTargets;
     }
@@ -46,6 +48,7 @@ public class RunCommandParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
      * 
      */
+    @JsonIgnore
     public void setRunCommandTargets(Set<RunCommandTarget> runCommandTargets) {
         this.runCommandTargets = runCommandTargets;
     }

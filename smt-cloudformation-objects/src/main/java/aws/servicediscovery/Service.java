@@ -1,6 +1,7 @@
 
 package aws.servicediscovery;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -72,6 +73,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -80,6 +82,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -95,6 +98,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html
      * 
      */
+    @JsonIgnore
     public HealthCheckCustomConfig getHealthCheckCustomConfig() {
         return healthCheckCustomConfig;
     }
@@ -105,6 +109,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html
      * 
      */
+    @JsonIgnore
     public void setHealthCheckCustomConfig(HealthCheckCustomConfig healthCheckCustomConfig) {
         this.healthCheckCustomConfig = healthCheckCustomConfig;
     }
@@ -120,6 +125,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html
      * 
      */
+    @JsonIgnore
     public DnsConfig getDnsConfig() {
         return dnsConfig;
     }
@@ -130,6 +136,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html
      * 
      */
+    @JsonIgnore
     public void setDnsConfig(DnsConfig dnsConfig) {
         this.dnsConfig = dnsConfig;
     }
@@ -145,6 +152,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html
      * 
      */
+    @JsonIgnore
     public HealthCheckConfig getHealthCheckConfig() {
         return healthCheckConfig;
     }
@@ -155,6 +163,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html
      * 
      */
+    @JsonIgnore
     public void setHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
     }
@@ -168,6 +177,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -176,6 +186,7 @@ public class Service {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

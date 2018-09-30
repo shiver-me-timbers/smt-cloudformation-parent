@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -113,6 +114,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-containerdefinitions
      * 
      */
+    @JsonIgnore
     public Set<ContainerDefinition> getContainerDefinitions() {
         return containerDefinitions;
     }
@@ -121,6 +123,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-containerdefinitions
      * 
      */
+    @JsonIgnore
     public void setContainerDefinitions(Set<ContainerDefinition> containerDefinitions) {
         this.containerDefinitions = containerDefinitions;
     }
@@ -134,6 +137,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-cpu
      * 
      */
+    @JsonIgnore
     public CharSequence getCpu() {
         return cpu;
     }
@@ -142,6 +146,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-cpu
      * 
      */
+    @JsonIgnore
     public void setCpu(CharSequence cpu) {
         this.cpu = cpu;
     }
@@ -155,6 +160,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-executionrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getExecutionRoleArn() {
         return executionRoleArn;
     }
@@ -163,6 +169,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-executionrolearn
      * 
      */
+    @JsonIgnore
     public void setExecutionRoleArn(CharSequence executionRoleArn) {
         this.executionRoleArn = executionRoleArn;
     }
@@ -176,6 +183,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family
      * 
      */
+    @JsonIgnore
     public CharSequence getFamily() {
         return family;
     }
@@ -184,6 +192,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-family
      * 
      */
+    @JsonIgnore
     public void setFamily(CharSequence family) {
         this.family = family;
     }
@@ -197,6 +206,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory
      * 
      */
+    @JsonIgnore
     public CharSequence getMemory() {
         return memory;
     }
@@ -205,6 +215,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-memory
      * 
      */
+    @JsonIgnore
     public void setMemory(CharSequence memory) {
         this.memory = memory;
     }
@@ -218,6 +229,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode
      * 
      */
+    @JsonIgnore
     public CharSequence getNetworkMode() {
         return networkMode;
     }
@@ -226,6 +238,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-networkmode
      * 
      */
+    @JsonIgnore
     public void setNetworkMode(CharSequence networkMode) {
         this.networkMode = networkMode;
     }
@@ -239,6 +252,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints
      * 
      */
+    @JsonIgnore
     public Set<TaskDefinitionPlacementConstraint> getPlacementConstraints() {
         return placementConstraints;
     }
@@ -247,6 +261,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints
      * 
      */
+    @JsonIgnore
     public void setPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
         this.placementConstraints = placementConstraints;
     }
@@ -260,6 +275,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getRequiresCompatibilities() {
         return requiresCompatibilities;
     }
@@ -268,6 +284,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities
      * 
      */
+    @JsonIgnore
     public void setRequiresCompatibilities(Set<CharSequence> requiresCompatibilities) {
         this.requiresCompatibilities = requiresCompatibilities;
     }
@@ -281,6 +298,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-taskrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getTaskRoleArn() {
         return taskRoleArn;
     }
@@ -289,6 +307,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-taskrolearn
      * 
      */
+    @JsonIgnore
     public void setTaskRoleArn(CharSequence taskRoleArn) {
         this.taskRoleArn = taskRoleArn;
     }
@@ -302,6 +321,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-volumes
      * 
      */
+    @JsonIgnore
     public Set<Volume> getVolumes() {
         return volumes;
     }
@@ -310,6 +330,7 @@ public class TaskDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-volumes
      * 
      */
+    @JsonIgnore
     public void setVolumes(Set<Volume> volumes) {
         this.volumes = volumes;
     }

@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-pw
      * 
      */
+    @JsonIgnore
     public CharSequence getPassword() {
         return password;
     }
@@ -82,6 +84,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-pw
      * 
      */
+    @JsonIgnore
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -95,6 +98,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-revision
      * 
      */
+    @JsonIgnore
     public CharSequence getRevision() {
         return revision;
     }
@@ -103,6 +107,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-revision
      * 
      */
+    @JsonIgnore
     public void setRevision(CharSequence revision) {
         this.revision = revision;
     }
@@ -116,6 +121,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-sshkey
      * 
      */
+    @JsonIgnore
     public CharSequence getSshKey() {
         return sshKey;
     }
@@ -124,6 +130,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-sshkey
      * 
      */
+    @JsonIgnore
     public void setSshKey(CharSequence sshKey) {
         this.sshKey = sshKey;
     }
@@ -137,6 +144,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -145,6 +153,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -158,6 +167,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-url
      * 
      */
+    @JsonIgnore
     public CharSequence getUrl() {
         return url;
     }
@@ -166,6 +176,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-url
      * 
      */
+    @JsonIgnore
     public void setUrl(CharSequence url) {
         this.url = url;
     }
@@ -179,6 +190,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-username
      * 
      */
+    @JsonIgnore
     public CharSequence getUsername() {
         return username;
     }
@@ -187,6 +199,7 @@ public class Source {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-username
      * 
      */
+    @JsonIgnore
     public void setUsername(CharSequence username) {
         this.username = username;
     }

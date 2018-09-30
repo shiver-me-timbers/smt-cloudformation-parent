@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancingv2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class Matcher {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode
      * 
      */
+    @JsonIgnore
     public CharSequence getHttpCode() {
         return httpCode;
     }
@@ -42,6 +44,7 @@ public class Matcher {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html#cfn-elasticloadbalancingv2-targetgroup-matcher-httpcode
      * 
      */
+    @JsonIgnore
     public void setHttpCode(CharSequence httpCode) {
         this.httpCode = httpCode;
     }

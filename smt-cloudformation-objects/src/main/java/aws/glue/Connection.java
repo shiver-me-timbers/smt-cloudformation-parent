@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
+    @JsonIgnore
     public ConnectionInput getConnectionInput() {
         return connectionInput;
     }
@@ -56,6 +58,7 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
+    @JsonIgnore
     public void setConnectionInput(ConnectionInput connectionInput) {
         this.connectionInput = connectionInput;
     }
@@ -69,6 +72,7 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
      */
+    @JsonIgnore
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -77,6 +81,7 @@ public class Connection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
      */
+    @JsonIgnore
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

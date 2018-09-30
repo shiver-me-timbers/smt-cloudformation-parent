@@ -3,6 +3,7 @@ package aws.budgets;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
+    @JsonIgnore
     public List<NotificationWithSubscribers> getNotificationsWithSubscribers() {
         return notificationsWithSubscribers;
     }
@@ -54,6 +56,7 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
+    @JsonIgnore
     public void setNotificationsWithSubscribers(List<NotificationWithSubscribers> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
     }
@@ -69,6 +72,7 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
+    @JsonIgnore
     public BudgetData getBudget() {
         return budget;
     }
@@ -79,6 +83,7 @@ public class Budget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
+    @JsonIgnore
     public void setBudget(BudgetData budget) {
         this.budget = budget;
     }

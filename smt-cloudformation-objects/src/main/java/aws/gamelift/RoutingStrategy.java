@@ -1,6 +1,7 @@
 
 package aws.gamelift;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid
      * 
      */
+    @JsonIgnore
     public CharSequence getFleetId() {
         return fleetId;
     }
@@ -58,6 +60,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid
      * 
      */
+    @JsonIgnore
     public void setFleetId(CharSequence fleetId) {
         this.fleetId = fleetId;
     }
@@ -71,6 +74,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message
      * 
      */
+    @JsonIgnore
     public CharSequence getMessage() {
         return message;
     }
@@ -79,6 +83,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-message
      * 
      */
+    @JsonIgnore
     public void setMessage(CharSequence message) {
         this.message = message;
     }
@@ -92,6 +97,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -100,6 +106,7 @@ public class RoutingStrategy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }

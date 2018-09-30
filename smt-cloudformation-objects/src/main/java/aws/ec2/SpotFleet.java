@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class SpotFleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
+    @JsonIgnore
     public SpotFleetRequestConfigData getSpotFleetRequestConfigData() {
         return spotFleetRequestConfigData;
     }
@@ -48,6 +50,7 @@ public class SpotFleet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
+    @JsonIgnore
     public void setSpotFleetRequestConfigData(SpotFleetRequestConfigData spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
     }

@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath
      * 
      */
+    @JsonIgnore
     public CharSequence getJsonPath() {
         return jsonPath;
     }
@@ -50,6 +52,7 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath
      * 
      */
+    @JsonIgnore
     public void setJsonPath(CharSequence jsonPath) {
         this.jsonPath = jsonPath;
     }
@@ -63,6 +66,7 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals
      * 
      */
+    @JsonIgnore
     public CharSequence getMatchEquals() {
         return matchEquals;
     }
@@ -71,6 +75,7 @@ public class WebhookFilterRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-matchequals
      * 
      */
+    @JsonIgnore
     public void setMatchEquals(CharSequence matchEquals) {
         this.matchEquals = matchEquals;
     }

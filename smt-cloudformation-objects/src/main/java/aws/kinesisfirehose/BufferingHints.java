@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds
      * 
      */
+    @JsonIgnore
     public Integer getIntervalInSeconds() {
         return intervalInSeconds;
     }
@@ -50,6 +52,7 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-intervalinseconds
      * 
      */
+    @JsonIgnore
     public void setIntervalInSeconds(Integer intervalInSeconds) {
         this.intervalInSeconds = intervalInSeconds;
     }
@@ -63,6 +66,7 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs
      * 
      */
+    @JsonIgnore
     public Integer getSizeInMBs() {
         return sizeInMBs;
     }
@@ -71,6 +75,7 @@ public class BufferingHints {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-bufferinghints.html#cfn-kinesisfirehose-deliverystream-bufferinghints-sizeinmbs
      * 
      */
+    @JsonIgnore
     public void setSizeInMBs(Integer sizeInMBs) {
         this.sizeInMBs = sizeInMBs;
     }

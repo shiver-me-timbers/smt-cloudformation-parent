@@ -1,6 +1,7 @@
 
 package aws.iam;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
      * 
      */
+    @JsonIgnore
     public Integer getSerial() {
         return serial;
     }
@@ -58,6 +60,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
      * 
      */
+    @JsonIgnore
     public void setSerial(Integer serial) {
         this.serial = serial;
     }
@@ -71,6 +74,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
      * 
      */
+    @JsonIgnore
     public CharSequence getStatus() {
         return status;
     }
@@ -79,6 +83,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
      * 
      */
+    @JsonIgnore
     public void setStatus(CharSequence status) {
         this.status = status;
     }
@@ -92,6 +97,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
      * 
      */
+    @JsonIgnore
     public CharSequence getUserName() {
         return userName;
     }
@@ -100,6 +106,7 @@ public class AccessKey {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
      * 
      */
+    @JsonIgnore
     public void setUserName(CharSequence userName) {
         this.userName = userName;
     }

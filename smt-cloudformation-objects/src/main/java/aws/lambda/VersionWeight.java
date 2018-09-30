@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionversion
      * 
      */
+    @JsonIgnore
     public CharSequence getFunctionVersion() {
         return functionVersion;
     }
@@ -50,6 +52,7 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionversion
      * 
      */
+    @JsonIgnore
     public void setFunctionVersion(CharSequence functionVersion) {
         this.functionVersion = functionVersion;
     }
@@ -63,6 +66,7 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionweight
      * 
      */
+    @JsonIgnore
     public Double getFunctionWeight() {
         return functionWeight;
     }
@@ -71,6 +75,7 @@ public class VersionWeight {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-versionweight.html#cfn-lambda-alias-versionweight-functionweight
      * 
      */
+    @JsonIgnore
     public void setFunctionWeight(Double functionWeight) {
         this.functionWeight = functionWeight;
     }

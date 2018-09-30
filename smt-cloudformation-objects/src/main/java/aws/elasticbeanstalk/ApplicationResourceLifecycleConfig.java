@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRole() {
         return serviceRole;
     }
@@ -52,6 +54,7 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
      * 
      */
+    @JsonIgnore
     public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
@@ -67,6 +70,7 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html
      * 
      */
+    @JsonIgnore
     public ApplicationVersionLifecycleConfig getVersionLifecycleConfig() {
         return versionLifecycleConfig;
     }
@@ -77,6 +81,7 @@ public class ApplicationResourceLifecycleConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html
      * 
      */
+    @JsonIgnore
     public void setVersionLifecycleConfig(ApplicationVersionLifecycleConfig versionLifecycleConfig) {
         this.versionLifecycleConfig = versionLifecycleConfig;
     }

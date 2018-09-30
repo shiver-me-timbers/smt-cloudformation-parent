@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-containerpath
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -58,6 +60,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-containerpath
      * 
      */
+    @JsonIgnore
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
@@ -71,6 +74,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-readonly
      * 
      */
+    @JsonIgnore
     public Boolean getReadOnly() {
         return readOnly;
     }
@@ -79,6 +83,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-readonly
      * 
      */
+    @JsonIgnore
     public void setReadOnly(Boolean readOnly) {
         this.readOnly = readOnly;
     }
@@ -92,6 +97,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-sourcevolume
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceVolume() {
         return sourceVolume;
     }
@@ -100,6 +106,7 @@ public class MountPoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-sourcevolume
      * 
      */
+    @JsonIgnore
     public void setSourceVolume(CharSequence sourceVolume) {
         this.sourceVolume = sourceVolume;
     }

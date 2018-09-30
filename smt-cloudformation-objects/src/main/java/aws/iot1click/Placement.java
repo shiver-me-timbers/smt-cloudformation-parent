@@ -1,6 +1,7 @@
 
 package aws.iot1click;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-placementname
      * 
      */
+    @JsonIgnore
     public CharSequence getPlacementName() {
         return placementName;
     }
@@ -66,6 +68,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-placementname
      * 
      */
+    @JsonIgnore
     public void setPlacementName(CharSequence placementName) {
         this.placementName = placementName;
     }
@@ -79,6 +82,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-projectname
      * 
      */
+    @JsonIgnore
     public CharSequence getProjectName() {
         return projectName;
     }
@@ -87,6 +91,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-projectname
      * 
      */
+    @JsonIgnore
     public void setProjectName(CharSequence projectName) {
         this.projectName = projectName;
     }
@@ -100,6 +105,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-associateddevices
      * 
      */
+    @JsonIgnore
     public Object getAssociatedDevices() {
         return associatedDevices;
     }
@@ -108,6 +114,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-associateddevices
      * 
      */
+    @JsonIgnore
     public void setAssociatedDevices(Object associatedDevices) {
         this.associatedDevices = associatedDevices;
     }
@@ -121,6 +128,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-attributes
      * 
      */
+    @JsonIgnore
     public Object getAttributes() {
         return attributes;
     }
@@ -129,6 +137,7 @@ public class Placement {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-attributes
      * 
      */
+    @JsonIgnore
     public void setAttributes(Object attributes) {
         this.attributes = attributes;
     }

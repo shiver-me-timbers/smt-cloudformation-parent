@@ -1,6 +1,7 @@
 
 package aws.cloudfront;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsecode
      * 
      */
+    @JsonIgnore
     public Integer getResponseCode() {
         return responseCode;
     }
@@ -66,6 +68,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsecode
      * 
      */
+    @JsonIgnore
     public void setResponseCode(Integer responseCode) {
         this.responseCode = responseCode;
     }
@@ -79,6 +82,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl
      * 
      */
+    @JsonIgnore
     public Double getErrorCachingMinTTL() {
         return errorCachingMinTTL;
     }
@@ -87,6 +91,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcachingminttl
      * 
      */
+    @JsonIgnore
     public void setErrorCachingMinTTL(Double errorCachingMinTTL) {
         this.errorCachingMinTTL = errorCachingMinTTL;
     }
@@ -100,6 +105,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcode
      * 
      */
+    @JsonIgnore
     public Integer getErrorCode() {
         return errorCode;
     }
@@ -108,6 +114,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-errorcode
      * 
      */
+    @JsonIgnore
     public void setErrorCode(Integer errorCode) {
         this.errorCode = errorCode;
     }
@@ -121,6 +128,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsepagepath
      * 
      */
+    @JsonIgnore
     public CharSequence getResponsePagePath() {
         return responsePagePath;
     }
@@ -129,6 +137,7 @@ public class CustomErrorResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customerrorresponse.html#cfn-cloudfront-distribution-customerrorresponse-responsepagepath
      * 
      */
+    @JsonIgnore
     public void setResponsePagePath(CharSequence responsePagePath) {
         this.responsePagePath = responsePagePath;
     }

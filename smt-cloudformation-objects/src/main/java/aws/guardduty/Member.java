@@ -1,6 +1,7 @@
 
 package aws.guardduty;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-status
      * 
      */
+    @JsonIgnore
     public CharSequence getStatus() {
         return status;
     }
@@ -82,6 +84,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-status
      * 
      */
+    @JsonIgnore
     public void setStatus(CharSequence status) {
         this.status = status;
     }
@@ -95,6 +98,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-memberid
      * 
      */
+    @JsonIgnore
     public CharSequence getMemberId() {
         return memberId;
     }
@@ -103,6 +107,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-memberid
      * 
      */
+    @JsonIgnore
     public void setMemberId(CharSequence memberId) {
         this.memberId = memberId;
     }
@@ -116,6 +121,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-email
      * 
      */
+    @JsonIgnore
     public CharSequence getEmail() {
         return email;
     }
@@ -124,6 +130,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-email
      * 
      */
+    @JsonIgnore
     public void setEmail(CharSequence email) {
         this.email = email;
     }
@@ -137,6 +144,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-message
      * 
      */
+    @JsonIgnore
     public CharSequence getMessage() {
         return message;
     }
@@ -145,6 +153,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-message
      * 
      */
+    @JsonIgnore
     public void setMessage(CharSequence message) {
         this.message = message;
     }
@@ -158,6 +167,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-disableemailnotification
      * 
      */
+    @JsonIgnore
     public Boolean getDisableEmailNotification() {
         return disableEmailNotification;
     }
@@ -166,6 +176,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-disableemailnotification
      * 
      */
+    @JsonIgnore
     public void setDisableEmailNotification(Boolean disableEmailNotification) {
         this.disableEmailNotification = disableEmailNotification;
     }
@@ -179,6 +190,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-detectorid
      * 
      */
+    @JsonIgnore
     public CharSequence getDetectorId() {
         return detectorId;
     }
@@ -187,6 +199,7 @@ public class Member {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html#cfn-guardduty-member-detectorid
      * 
      */
+    @JsonIgnore
     public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }

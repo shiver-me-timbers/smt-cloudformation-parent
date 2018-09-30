@@ -3,6 +3,7 @@ package aws.batch;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -124,6 +125,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
      * 
      */
+    @JsonIgnore
     public List<MountPoints> getMountPoints() {
         return mountPoints;
     }
@@ -132,6 +134,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
      * 
      */
+    @JsonIgnore
     public void setMountPoints(List<MountPoints> mountPoints) {
         this.mountPoints = mountPoints;
     }
@@ -145,6 +148,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
      * 
      */
+    @JsonIgnore
     public CharSequence getUser() {
         return user;
     }
@@ -153,6 +157,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
      * 
      */
+    @JsonIgnore
     public void setUser(CharSequence user) {
         this.user = user;
     }
@@ -166,6 +171,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
      * 
      */
+    @JsonIgnore
     public List<Volumes> getVolumes() {
         return volumes;
     }
@@ -174,6 +180,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
      * 
      */
+    @JsonIgnore
     public void setVolumes(List<Volumes> volumes) {
         this.volumes = volumes;
     }
@@ -187,6 +194,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getCommand() {
         return command;
     }
@@ -195,6 +203,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
      * 
      */
+    @JsonIgnore
     public void setCommand(List<CharSequence> command) {
         this.command = command;
     }
@@ -208,6 +217,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory
      * 
      */
+    @JsonIgnore
     public Integer getMemory() {
         return memory;
     }
@@ -216,6 +226,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory
      * 
      */
+    @JsonIgnore
     public void setMemory(Integer memory) {
         this.memory = memory;
     }
@@ -229,6 +240,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged
      * 
      */
+    @JsonIgnore
     public Boolean getPrivileged() {
         return privileged;
     }
@@ -237,6 +249,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged
      * 
      */
+    @JsonIgnore
     public void setPrivileged(Boolean privileged) {
         this.privileged = privileged;
     }
@@ -250,6 +263,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
      * 
      */
+    @JsonIgnore
     public List<Environment> getEnvironment() {
         return environment;
     }
@@ -258,6 +272,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
      * 
      */
+    @JsonIgnore
     public void setEnvironment(List<Environment> environment) {
         this.environment = environment;
     }
@@ -271,6 +286,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getJobRoleArn() {
         return jobRoleArn;
     }
@@ -279,6 +295,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
      */
+    @JsonIgnore
     public void setJobRoleArn(CharSequence jobRoleArn) {
         this.jobRoleArn = jobRoleArn;
     }
@@ -292,6 +309,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem
      * 
      */
+    @JsonIgnore
     public Boolean getReadonlyRootFilesystem() {
         return readonlyRootFilesystem;
     }
@@ -300,6 +318,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem
      * 
      */
+    @JsonIgnore
     public void setReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
     }
@@ -313,6 +332,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
      * 
      */
+    @JsonIgnore
     public List<Ulimit> getUlimits() {
         return ulimits;
     }
@@ -321,6 +341,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
      * 
      */
+    @JsonIgnore
     public void setUlimits(List<Ulimit> ulimits) {
         this.ulimits = ulimits;
     }
@@ -334,6 +355,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus
      * 
      */
+    @JsonIgnore
     public Integer getVcpus() {
         return vcpus;
     }
@@ -342,6 +364,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus
      * 
      */
+    @JsonIgnore
     public void setVcpus(Integer vcpus) {
         this.vcpus = vcpus;
     }
@@ -355,6 +378,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image
      * 
      */
+    @JsonIgnore
     public CharSequence getImage() {
         return image;
     }
@@ -363,6 +387,7 @@ public class ContainerProperties {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image
      * 
      */
+    @JsonIgnore
     public void setImage(CharSequence image) {
         this.image = image;
     }

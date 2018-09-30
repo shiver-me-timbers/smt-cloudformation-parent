@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class CSVMappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html#cfn-kinesisanalytics-application-csvmappingparameters-recordrowdelimiter
      * 
      */
+    @JsonIgnore
     public CharSequence getRecordRowDelimiter() {
         return recordRowDelimiter;
     }
@@ -50,6 +52,7 @@ public class CSVMappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html#cfn-kinesisanalytics-application-csvmappingparameters-recordrowdelimiter
      * 
      */
+    @JsonIgnore
     public void setRecordRowDelimiter(CharSequence recordRowDelimiter) {
         this.recordRowDelimiter = recordRowDelimiter;
     }
@@ -63,6 +66,7 @@ public class CSVMappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html#cfn-kinesisanalytics-application-csvmappingparameters-recordcolumndelimiter
      * 
      */
+    @JsonIgnore
     public CharSequence getRecordColumnDelimiter() {
         return recordColumnDelimiter;
     }
@@ -71,6 +75,7 @@ public class CSVMappingParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html#cfn-kinesisanalytics-application-csvmappingparameters-recordcolumndelimiter
      * 
      */
+    @JsonIgnore
     public void setRecordColumnDelimiter(CharSequence recordColumnDelimiter) {
         this.recordColumnDelimiter = recordColumnDelimiter;
     }

@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions
      * 
      */
+    @JsonIgnore
     public CharSequence getCopyOptions() {
         return copyOptions;
     }
@@ -58,6 +60,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-copyoptions
      * 
      */
+    @JsonIgnore
     public void setCopyOptions(CharSequence copyOptions) {
         this.copyOptions = copyOptions;
     }
@@ -71,6 +74,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns
      * 
      */
+    @JsonIgnore
     public CharSequence getDataTableColumns() {
         return dataTableColumns;
     }
@@ -79,6 +83,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablecolumns
      * 
      */
+    @JsonIgnore
     public void setDataTableColumns(CharSequence dataTableColumns) {
         this.dataTableColumns = dataTableColumns;
     }
@@ -92,6 +97,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablename
      * 
      */
+    @JsonIgnore
     public CharSequence getDataTableName() {
         return dataTableName;
     }
@@ -100,6 +106,7 @@ public class CopyCommand {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html#cfn-kinesisfirehose-deliverystream-copycommand-datatablename
      * 
      */
+    @JsonIgnore
     public void setDataTableName(CharSequence dataTableName) {
         this.dataTableName = dataTableName;
     }

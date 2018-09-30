@@ -3,6 +3,7 @@ package aws.elasticloadbalancingv2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
      * 
      */
+    @JsonIgnore
     public Set<Certificate> getCertificates() {
         return certificates;
     }
@@ -54,6 +56,7 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
      * 
      */
+    @JsonIgnore
     public void setCertificates(Set<Certificate> certificates) {
         this.certificates = certificates;
     }
@@ -67,6 +70,7 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
      * 
      */
+    @JsonIgnore
     public CharSequence getListenerArn() {
         return listenerArn;
     }
@@ -75,6 +79,7 @@ public class ListenerCertificate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
      * 
      */
+    @JsonIgnore
     public void setListenerArn(CharSequence listenerArn) {
         this.listenerArn = listenerArn;
     }

@@ -1,6 +1,7 @@
 
 package aws.route53;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode
      * 
      */
+    @JsonIgnore
     public CharSequence getContinentCode() {
         return continentCode;
     }
@@ -58,6 +60,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-continentcode
      * 
      */
+    @JsonIgnore
     public void setContinentCode(CharSequence continentCode) {
         this.continentCode = continentCode;
     }
@@ -71,6 +74,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode
      * 
      */
+    @JsonIgnore
     public CharSequence getCountryCode() {
         return countryCode;
     }
@@ -79,6 +83,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-countrycode
      * 
      */
+    @JsonIgnore
     public void setCountryCode(CharSequence countryCode) {
         this.countryCode = countryCode;
     }
@@ -92,6 +97,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode
      * 
      */
+    @JsonIgnore
     public CharSequence getSubdivisionCode() {
         return subdivisionCode;
     }
@@ -100,6 +106,7 @@ public class GeoLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html#cfn-route53-recordset-geolocation-subdivisioncode
      * 
      */
+    @JsonIgnore
     public void setSubdivisionCode(CharSequence subdivisionCode) {
         this.subdivisionCode = subdivisionCode;
     }

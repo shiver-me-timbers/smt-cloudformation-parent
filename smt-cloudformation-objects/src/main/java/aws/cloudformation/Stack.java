@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getNotificationARNs() {
         return notificationARNs;
     }
@@ -82,6 +84,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-notificationarns
      * 
      */
+    @JsonIgnore
     public void setNotificationARNs(Set<CharSequence> notificationARNs) {
         this.notificationARNs = notificationARNs;
     }
@@ -95,6 +98,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters
      * 
      */
+    @JsonIgnore
     public Map<String, String> getParameters() {
         return parameters;
     }
@@ -103,6 +107,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-parameters
      * 
      */
+    @JsonIgnore
     public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
@@ -116,6 +121,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -124,6 +130,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -137,6 +144,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl
      * 
      */
+    @JsonIgnore
     public CharSequence getTemplateURL() {
         return templateURL;
     }
@@ -145,6 +153,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-templateurl
      * 
      */
+    @JsonIgnore
     public void setTemplateURL(CharSequence templateURL) {
         this.templateURL = templateURL;
     }
@@ -158,6 +167,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes
      * 
      */
+    @JsonIgnore
     public Integer getTimeoutInMinutes() {
         return timeoutInMinutes;
     }
@@ -166,6 +176,7 @@ public class Stack {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack.html#cfn-cloudformation-stack-timeoutinminutes
      * 
      */
+    @JsonIgnore
     public void setTimeoutInMinutes(Integer timeoutInMinutes) {
         this.timeoutInMinutes = timeoutInMinutes;
     }

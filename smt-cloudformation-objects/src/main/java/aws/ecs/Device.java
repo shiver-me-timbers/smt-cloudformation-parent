@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -54,6 +55,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerPath() {
         return containerPath;
     }
@@ -62,6 +64,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath
      * 
      */
+    @JsonIgnore
     public void setContainerPath(CharSequence containerPath) {
         this.containerPath = containerPath;
     }
@@ -75,6 +78,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath
      * 
      */
+    @JsonIgnore
     public CharSequence getHostPath() {
         return hostPath;
     }
@@ -83,6 +87,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-hostpath
      * 
      */
+    @JsonIgnore
     public void setHostPath(CharSequence hostPath) {
         this.hostPath = hostPath;
     }
@@ -96,6 +101,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getPermissions() {
         return permissions;
     }
@@ -104,6 +110,7 @@ public class Device {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-permissions
      * 
      */
+    @JsonIgnore
     public void setPermissions(Set<CharSequence> permissions) {
         this.permissions = permissions;
     }

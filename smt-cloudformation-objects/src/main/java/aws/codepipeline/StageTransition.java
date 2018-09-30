@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason
      * 
      */
+    @JsonIgnore
     public CharSequence getReason() {
         return reason;
     }
@@ -50,6 +52,7 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-reason
      * 
      */
+    @JsonIgnore
     public void setReason(CharSequence reason) {
         this.reason = reason;
     }
@@ -63,6 +66,7 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename
      * 
      */
+    @JsonIgnore
     public CharSequence getStageName() {
         return stageName;
     }
@@ -71,6 +75,7 @@ public class StageTransition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html#cfn-codepipeline-pipeline-disableinboundstagetransitions-stagename
      * 
      */
+    @JsonIgnore
     public void setStageName(CharSequence stageName) {
         this.stageName = stageName;
     }

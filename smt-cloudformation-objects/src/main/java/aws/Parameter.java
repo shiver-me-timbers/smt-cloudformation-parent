@@ -3,6 +3,7 @@ package aws;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -74,10 +75,12 @@ public class Parameter
         super(name);
     }
 
+    @JsonIgnore
     public String getAllowedPattern() {
         return allowedPattern;
     }
 
+    @JsonIgnore
     public void setAllowedPattern(String allowedPattern) {
         this.allowedPattern = allowedPattern;
     }
@@ -87,10 +90,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public List<String> getAllowedValues() {
         return allowedValues;
     }
 
+    @JsonIgnore
     public void setAllowedValues(List<String> allowedValues) {
         this.allowedValues = allowedValues;
     }
@@ -100,10 +105,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public String getConstraintDescription() {
         return constraintDescription;
     }
 
+    @JsonIgnore
     public void setConstraintDescription(String constraintDescription) {
         this.constraintDescription = constraintDescription;
     }
@@ -113,10 +120,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public String getDefault() {
         return _default;
     }
 
+    @JsonIgnore
     public void setDefault(String _default) {
         this._default = _default;
     }
@@ -126,10 +135,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public String getDescription() {
         return description;
     }
 
+    @JsonIgnore
     public void setDescription(String description) {
         this.description = description;
     }
@@ -139,10 +150,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public Integer getMaxLength() {
         return maxLength;
     }
 
+    @JsonIgnore
     public void setMaxLength(Integer maxLength) {
         this.maxLength = maxLength;
     }
@@ -152,10 +165,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public Integer getMaxValue() {
         return maxValue;
     }
 
+    @JsonIgnore
     public void setMaxValue(Integer maxValue) {
         this.maxValue = maxValue;
     }
@@ -165,10 +180,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public Integer getMinLength() {
         return minLength;
     }
 
+    @JsonIgnore
     public void setMinLength(Integer minLength) {
         this.minLength = minLength;
     }
@@ -178,10 +195,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public Integer getMinValue() {
         return minValue;
     }
 
+    @JsonIgnore
     public void setMinValue(Integer minValue) {
         this.minValue = minValue;
     }
@@ -191,10 +210,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public Boolean getNoEcho() {
         return noEcho;
     }
 
+    @JsonIgnore
     public void setNoEcho(Boolean noEcho) {
         this.noEcho = noEcho;
     }
@@ -204,10 +225,12 @@ public class Parameter
         return this;
     }
 
+    @JsonIgnore
     public String getType() {
         return type;
     }
 
+    @JsonIgnore
     public void setType(String type) {
         this.type = type;
     }

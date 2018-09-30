@@ -3,6 +3,7 @@ package aws;
 
 import java.util.Map;
 import aws.fn.ConditionFunction;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -48,10 +49,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
     @JsonProperty("Outputs")
     private Map<String, Output> outputs;
 
+    @JsonIgnore
     public java.lang.String getAWSTemplateFormatVersion() {
         return aWSTemplateFormatVersion;
     }
 
+    @JsonIgnore
     public void setAWSTemplateFormatVersion(java.lang.String aWSTemplateFormatVersion) {
         this.aWSTemplateFormatVersion = aWSTemplateFormatVersion;
     }
@@ -61,10 +64,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public java.lang.String getDescription() {
         return description;
     }
 
+    @JsonIgnore
     public void setDescription(java.lang.String description) {
         this.description = description;
     }
@@ -74,10 +79,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, Object> getMetadata() {
         return metadata;
     }
 
+    @JsonIgnore
     public void setMetadata(Map<String, Object> metadata) {
         this.metadata = metadata;
     }
@@ -87,10 +94,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, Parameter> getParameters() {
         return parameters;
     }
 
+    @JsonIgnore
     public void setParameters(Map<String, Parameter> parameters) {
         this.parameters = parameters;
     }
@@ -100,10 +109,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, Map<String, Map<String, String>>> getMappings() {
         return mappings;
     }
 
+    @JsonIgnore
     public void setMappings(Map<String, Map<String, Map<String, String>>> mappings) {
         this.mappings = mappings;
     }
@@ -113,10 +124,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, ConditionFunction> getConditions() {
         return conditions;
     }
 
+    @JsonIgnore
     public void setConditions(Map<String, ConditionFunction> conditions) {
         this.conditions = conditions;
     }
@@ -126,10 +139,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, Resource> getResources() {
         return resources;
     }
 
+    @JsonIgnore
     public void setResources(Map<String, Resource> resources) {
         this.resources = resources;
     }
@@ -139,10 +154,12 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
         return this;
     }
 
+    @JsonIgnore
     public Map<String, Output> getOutputs() {
         return outputs;
     }
 
+    @JsonIgnore
     public void setOutputs(Map<String, Output> outputs) {
         this.outputs = outputs;
     }

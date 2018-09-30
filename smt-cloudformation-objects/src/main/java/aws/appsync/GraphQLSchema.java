@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition
      * 
      */
+    @JsonIgnore
     public CharSequence getDefinition() {
         return definition;
     }
@@ -58,6 +60,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definition
      * 
      */
+    @JsonIgnore
     public void setDefinition(CharSequence definition) {
         this.definition = definition;
     }
@@ -71,6 +74,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location
      * 
      */
+    @JsonIgnore
     public CharSequence getDefinitionS3Location() {
         return definitionS3Location;
     }
@@ -79,6 +83,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-definitions3location
      * 
      */
+    @JsonIgnore
     public void setDefinitionS3Location(CharSequence definitionS3Location) {
         this.definitionS3Location = definitionS3Location;
     }
@@ -92,6 +97,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid
      * 
      */
+    @JsonIgnore
     public CharSequence getApiId() {
         return apiId;
     }
@@ -100,6 +106,7 @@ public class GraphQLSchema {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlschema.html#cfn-appsync-graphqlschema-apiid
      * 
      */
+    @JsonIgnore
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }

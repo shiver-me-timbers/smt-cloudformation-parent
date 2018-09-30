@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext
      * 
      */
+    @JsonIgnore
     public CharSequence getClientContext() {
         return clientContext;
     }
@@ -58,6 +60,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext
      * 
      */
+    @JsonIgnore
     public void setClientContext(CharSequence clientContext) {
         this.clientContext = clientContext;
     }
@@ -71,6 +74,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier
      * 
      */
+    @JsonIgnore
     public CharSequence getQualifier() {
         return qualifier;
     }
@@ -79,6 +83,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-qualifier
      * 
      */
+    @JsonIgnore
     public void setQualifier(CharSequence qualifier) {
         this.qualifier = qualifier;
     }
@@ -92,6 +97,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload
      * 
      */
+    @JsonIgnore
     public CharSequence getPayload() {
         return payload;
     }
@@ -100,6 +106,7 @@ public class MaintenanceWindowLambdaParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-payload
      * 
      */
+    @JsonIgnore
     public void setPayload(CharSequence payload) {
         this.payload = payload;
     }

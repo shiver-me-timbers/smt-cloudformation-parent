@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -72,6 +73,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html
      * 
      */
+    @JsonIgnore
     public AccessControlTranslation getAccessControlTranslation() {
         return accessControlTranslation;
     }
@@ -82,6 +84,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html
      * 
      */
+    @JsonIgnore
     public void setAccessControlTranslation(AccessControlTranslation accessControlTranslation) {
         this.accessControlTranslation = accessControlTranslation;
     }
@@ -95,6 +98,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account
      * 
      */
+    @JsonIgnore
     public CharSequence getAccount() {
         return account;
     }
@@ -103,6 +107,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account
      * 
      */
+    @JsonIgnore
     public void setAccount(CharSequence account) {
         this.account = account;
     }
@@ -116,6 +121,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getBucket() {
         return bucket;
     }
@@ -124,6 +130,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-bucket
      * 
      */
+    @JsonIgnore
     public void setBucket(CharSequence bucket) {
         this.bucket = bucket;
     }
@@ -139,6 +146,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public EncryptionConfiguration getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
@@ -149,6 +157,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
@@ -162,6 +171,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass
      * 
      */
+    @JsonIgnore
     public CharSequence getStorageClass() {
         return storageClass;
     }
@@ -170,6 +180,7 @@ public class ReplicationDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass
      * 
      */
+    @JsonIgnore
     public void setStorageClass(CharSequence storageClass) {
         this.storageClass = storageClass;
     }

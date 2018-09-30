@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
      * 
      */
+    @JsonIgnore
     public CharSequence getUpdateBehavior() {
         return updateBehavior;
     }
@@ -50,6 +52,7 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
      * 
      */
+    @JsonIgnore
     public void setUpdateBehavior(CharSequence updateBehavior) {
         this.updateBehavior = updateBehavior;
     }
@@ -63,6 +66,7 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
      * 
      */
+    @JsonIgnore
     public CharSequence getDeleteBehavior() {
         return deleteBehavior;
     }
@@ -71,6 +75,7 @@ public class SchemaChangePolicy {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
      * 
      */
+    @JsonIgnore
     public void setDeleteBehavior(CharSequence deleteBehavior) {
         this.deleteBehavior = deleteBehavior;
     }

@@ -1,6 +1,7 @@
 
 package aws.amazonmq;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit
      * 
      */
+    @JsonIgnore
     public Boolean getAudit() {
         return audit;
     }
@@ -50,6 +52,7 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-audit
      * 
      */
+    @JsonIgnore
     public void setAudit(Boolean audit) {
         this.audit = audit;
     }
@@ -63,6 +66,7 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general
      * 
      */
+    @JsonIgnore
     public Boolean getGeneral() {
         return general;
     }
@@ -71,6 +75,7 @@ public class LogList {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html#cfn-amazonmq-broker-loglist-general
      * 
      */
+    @JsonIgnore
     public void setGeneral(Boolean general) {
         this.general = general;
     }

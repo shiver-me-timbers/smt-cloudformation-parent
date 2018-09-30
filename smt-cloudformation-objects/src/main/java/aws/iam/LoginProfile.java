@@ -1,6 +1,7 @@
 
 package aws.iam;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LoginProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-password
      * 
      */
+    @JsonIgnore
     public CharSequence getPassword() {
         return password;
     }
@@ -50,6 +52,7 @@ public class LoginProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-password
      * 
      */
+    @JsonIgnore
     public void setPassword(CharSequence password) {
         this.password = password;
     }
@@ -63,6 +66,7 @@ public class LoginProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-passwordresetrequired
      * 
      */
+    @JsonIgnore
     public Boolean getPasswordResetRequired() {
         return passwordResetRequired;
     }
@@ -71,6 +75,7 @@ public class LoginProfile {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html#cfn-iam-user-loginprofile-passwordresetrequired
      * 
      */
+    @JsonIgnore
     public void setPasswordResetRequired(Boolean passwordResetRequired) {
         this.passwordResetRequired = passwordResetRequired;
     }

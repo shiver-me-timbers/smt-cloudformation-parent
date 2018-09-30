@@ -3,6 +3,7 @@ package aws.efs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -78,6 +79,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
      * 
      */
+    @JsonIgnore
     public Boolean getEncrypted() {
         return encrypted;
     }
@@ -86,6 +88,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-encrypted
      * 
      */
+    @JsonIgnore
     public void setEncrypted(Boolean encrypted) {
         this.encrypted = encrypted;
     }
@@ -99,6 +102,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags
      * 
      */
+    @JsonIgnore
     public Set<ElasticFileSystemTag> getFileSystemTags() {
         return fileSystemTags;
     }
@@ -107,6 +111,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags
      * 
      */
+    @JsonIgnore
     public void setFileSystemTags(Set<ElasticFileSystemTag> fileSystemTags) {
         this.fileSystemTags = fileSystemTags;
     }
@@ -120,6 +125,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -128,6 +134,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -141,6 +148,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
+    @JsonIgnore
     public CharSequence getPerformanceMode() {
         return performanceMode;
     }
@@ -149,6 +157,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-performancemode
      * 
      */
+    @JsonIgnore
     public void setPerformanceMode(CharSequence performanceMode) {
         this.performanceMode = performanceMode;
     }
@@ -162,6 +171,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
      * 
      */
+    @JsonIgnore
     public Double getProvisionedThroughputInMibps() {
         return provisionedThroughputInMibps;
     }
@@ -170,6 +180,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-provisionedthroughputinmibps
      * 
      */
+    @JsonIgnore
     public void setProvisionedThroughputInMibps(Double provisionedThroughputInMibps) {
         this.provisionedThroughputInMibps = provisionedThroughputInMibps;
     }
@@ -183,6 +194,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
      * 
      */
+    @JsonIgnore
     public CharSequence getThroughputMode() {
         return throughputMode;
     }
@@ -191,6 +203,7 @@ public class FileSystem {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-elasticfilesystem-filesystem-throughputmode
      * 
      */
+    @JsonIgnore
     public void setThroughputMode(CharSequence throughputMode) {
         this.throughputMode = throughputMode;
     }

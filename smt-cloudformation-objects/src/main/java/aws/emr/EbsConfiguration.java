@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsblockdeviceconfigs
      * 
      */
+    @JsonIgnore
     public Set<EbsBlockDeviceConfig> getEbsBlockDeviceConfigs() {
         return ebsBlockDeviceConfigs;
     }
@@ -54,6 +56,7 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsblockdeviceconfigs
      * 
      */
+    @JsonIgnore
     public void setEbsBlockDeviceConfigs(Set<EbsBlockDeviceConfig> ebsBlockDeviceConfigs) {
         this.ebsBlockDeviceConfigs = ebsBlockDeviceConfigs;
     }
@@ -67,6 +70,7 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsoptimized
      * 
      */
+    @JsonIgnore
     public Boolean getEbsOptimized() {
         return ebsOptimized;
     }
@@ -75,6 +79,7 @@ public class EbsConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-ebsconfiguration.html#cfn-elasticmapreduce-cluster-ebsconfiguration-ebsoptimized
      * 
      */
+    @JsonIgnore
     public void setEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
     }

@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -67,6 +68,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integrationresponse-contenthandling
      * 
      */
+    @JsonIgnore
     public CharSequence getContentHandling() {
         return contentHandling;
     }
@@ -75,6 +77,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integrationresponse-contenthandling
      * 
      */
+    @JsonIgnore
     public void setContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
     }
@@ -88,6 +91,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responseparameters
      * 
      */
+    @JsonIgnore
     public Map<String, String> getResponseParameters() {
         return responseParameters;
     }
@@ -96,6 +100,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responseparameters
      * 
      */
+    @JsonIgnore
     public void setResponseParameters(Map<String, String> responseParameters) {
         this.responseParameters = responseParameters;
     }
@@ -109,6 +114,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responsetemplates
      * 
      */
+    @JsonIgnore
     public Map<String, String> getResponseTemplates() {
         return responseTemplates;
     }
@@ -117,6 +123,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-responsetemplates
      * 
      */
+    @JsonIgnore
     public void setResponseTemplates(Map<String, String> responseTemplates) {
         this.responseTemplates = responseTemplates;
     }
@@ -130,6 +137,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-selectionpattern
      * 
      */
+    @JsonIgnore
     public CharSequence getSelectionPattern() {
         return selectionPattern;
     }
@@ -138,6 +146,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-selectionpattern
      * 
      */
+    @JsonIgnore
     public void setSelectionPattern(CharSequence selectionPattern) {
         this.selectionPattern = selectionPattern;
     }
@@ -151,6 +160,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-statuscode
      * 
      */
+    @JsonIgnore
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -159,6 +169,7 @@ public class IntegrationResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html#cfn-apigateway-method-integration-integrationresponse-statuscode
      * 
      */
+    @JsonIgnore
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }

@@ -1,6 +1,7 @@
 
 package aws.budgets;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start
      * 
      */
+    @JsonIgnore
     public CharSequence getStart() {
         return start;
     }
@@ -50,6 +52,7 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-start
      * 
      */
+    @JsonIgnore
     public void setStart(CharSequence start) {
         this.start = start;
     }
@@ -63,6 +66,7 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end
      * 
      */
+    @JsonIgnore
     public CharSequence getEnd() {
         return end;
     }
@@ -71,6 +75,7 @@ public class TimePeriod {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html#cfn-budgets-budget-timeperiod-end
      * 
      */
+    @JsonIgnore
     public void setEnd(CharSequence end) {
         this.end = end;
     }

@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
+    @JsonIgnore
     public DatabaseInput getDatabaseInput() {
         return databaseInput;
     }
@@ -56,6 +58,7 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
+    @JsonIgnore
     public void setDatabaseInput(DatabaseInput databaseInput) {
         this.databaseInput = databaseInput;
     }
@@ -69,6 +72,7 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
      */
+    @JsonIgnore
     public CharSequence getCatalogId() {
         return catalogId;
     }
@@ -77,6 +81,7 @@ public class Database {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
      */
+    @JsonIgnore
     public void setCatalogId(CharSequence catalogId) {
         this.catalogId = catalogId;
     }

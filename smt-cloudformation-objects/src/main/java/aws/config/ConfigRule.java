@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -78,6 +79,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
      * 
      */
+    @JsonIgnore
     public CharSequence getConfigRuleName() {
         return configRuleName;
     }
@@ -86,6 +88,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
      * 
      */
+    @JsonIgnore
     public void setConfigRuleName(CharSequence configRuleName) {
         this.configRuleName = configRuleName;
     }
@@ -99,6 +102,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -107,6 +111,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -120,6 +125,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
+    @JsonIgnore
     public Object getInputParameters() {
         return inputParameters;
     }
@@ -128,6 +134,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters
      * 
      */
+    @JsonIgnore
     public void setInputParameters(Object inputParameters) {
         this.inputParameters = inputParameters;
     }
@@ -141,6 +148,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
      * 
      */
+    @JsonIgnore
     public CharSequence getMaximumExecutionFrequency() {
         return maximumExecutionFrequency;
     }
@@ -149,6 +157,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
      * 
      */
+    @JsonIgnore
     public void setMaximumExecutionFrequency(CharSequence maximumExecutionFrequency) {
         this.maximumExecutionFrequency = maximumExecutionFrequency;
     }
@@ -164,6 +173,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
+    @JsonIgnore
     public Scope getScope() {
         return scope;
     }
@@ -174,6 +184,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
+    @JsonIgnore
     public void setScope(Scope scope) {
         this.scope = scope;
     }
@@ -189,6 +200,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
+    @JsonIgnore
     public OrganizationAggregationSource getSource() {
         return source;
     }
@@ -199,6 +211,7 @@ public class ConfigRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
      * 
      */
+    @JsonIgnore
     public void setSource(OrganizationAggregationSource source) {
         this.source = source;
     }

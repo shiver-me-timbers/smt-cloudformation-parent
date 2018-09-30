@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKMSMasterKeyID() {
         return kMSMasterKeyID;
     }
@@ -50,6 +52,7 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid
      * 
      */
+    @JsonIgnore
     public void setKMSMasterKeyID(CharSequence kMSMasterKeyID) {
         this.kMSMasterKeyID = kMSMasterKeyID;
     }
@@ -63,6 +66,7 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm
      * 
      */
+    @JsonIgnore
     public CharSequence getSSEAlgorithm() {
         return sSEAlgorithm;
     }
@@ -71,6 +75,7 @@ public class ServerSideEncryptionByDefault {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-ssealgorithm
      * 
      */
+    @JsonIgnore
     public void setSSEAlgorithm(CharSequence sSEAlgorithm) {
         this.sSEAlgorithm = sSEAlgorithm;
     }

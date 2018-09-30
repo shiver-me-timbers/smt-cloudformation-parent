@@ -1,6 +1,7 @@
 
 package aws.guardduty;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid
      * 
      */
+    @JsonIgnore
     public CharSequence getDetectorId() {
         return detectorId;
     }
@@ -58,6 +60,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-detectorid
      * 
      */
+    @JsonIgnore
     public void setDetectorId(CharSequence detectorId) {
         this.detectorId = detectorId;
     }
@@ -71,6 +74,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterId() {
         return masterId;
     }
@@ -79,6 +83,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-masterid
      * 
      */
+    @JsonIgnore
     public void setMasterId(CharSequence masterId) {
         this.masterId = masterId;
     }
@@ -92,6 +97,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid
      * 
      */
+    @JsonIgnore
     public CharSequence getInvitationId() {
         return invitationId;
     }
@@ -100,6 +106,7 @@ public class Master {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html#cfn-guardduty-master-invitationid
      * 
      */
+    @JsonIgnore
     public void setInvitationId(CharSequence invitationId) {
         this.invitationId = invitationId;
     }

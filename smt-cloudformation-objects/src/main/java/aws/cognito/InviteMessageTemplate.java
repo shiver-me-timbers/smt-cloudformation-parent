@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailmessage
      * 
      */
+    @JsonIgnore
     public CharSequence getEmailMessage() {
         return emailMessage;
     }
@@ -58,6 +60,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailmessage
      * 
      */
+    @JsonIgnore
     public void setEmailMessage(CharSequence emailMessage) {
         this.emailMessage = emailMessage;
     }
@@ -71,6 +74,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-smsmessage
      * 
      */
+    @JsonIgnore
     public CharSequence getSMSMessage() {
         return sMSMessage;
     }
@@ -79,6 +83,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-smsmessage
      * 
      */
+    @JsonIgnore
     public void setSMSMessage(CharSequence sMSMessage) {
         this.sMSMessage = sMSMessage;
     }
@@ -92,6 +97,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailsubject
      * 
      */
+    @JsonIgnore
     public CharSequence getEmailSubject() {
         return emailSubject;
     }
@@ -100,6 +106,7 @@ public class InviteMessageTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html#cfn-cognito-userpool-invitemessagetemplate-emailsubject
      * 
      */
+    @JsonIgnore
     public void setEmailSubject(CharSequence emailSubject) {
         this.emailSubject = emailSubject;
     }

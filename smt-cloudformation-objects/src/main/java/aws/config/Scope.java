@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -62,6 +63,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getComplianceResourceId() {
         return complianceResourceId;
     }
@@ -70,6 +72,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid
      * 
      */
+    @JsonIgnore
     public void setComplianceResourceId(CharSequence complianceResourceId) {
         this.complianceResourceId = complianceResourceId;
     }
@@ -83,6 +86,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getComplianceResourceTypes() {
         return complianceResourceTypes;
     }
@@ -91,6 +95,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourcetypes
      * 
      */
+    @JsonIgnore
     public void setComplianceResourceTypes(Set<CharSequence> complianceResourceTypes) {
         this.complianceResourceTypes = complianceResourceTypes;
     }
@@ -104,6 +109,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey
      * 
      */
+    @JsonIgnore
     public CharSequence getTagKey() {
         return tagKey;
     }
@@ -112,6 +118,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagkey
      * 
      */
+    @JsonIgnore
     public void setTagKey(CharSequence tagKey) {
         this.tagKey = tagKey;
     }
@@ -125,6 +132,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue
      * 
      */
+    @JsonIgnore
     public CharSequence getTagValue() {
         return tagValue;
     }
@@ -133,6 +141,7 @@ public class Scope {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-tagvalue
      * 
      */
+    @JsonIgnore
     public void setTagValue(CharSequence tagValue) {
         this.tagValue = tagValue;
     }

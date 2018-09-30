@@ -1,6 +1,7 @@
 
 package aws.budgets;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount
      * 
      */
+    @JsonIgnore
     public Double getAmount() {
         return amount;
     }
@@ -50,6 +52,7 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-amount
      * 
      */
+    @JsonIgnore
     public void setAmount(Double amount) {
         this.amount = amount;
     }
@@ -63,6 +66,7 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit
      * 
      */
+    @JsonIgnore
     public CharSequence getUnit() {
         return unit;
     }
@@ -71,6 +75,7 @@ public class Spend {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html#cfn-budgets-budget-spend-unit
      * 
      */
+    @JsonIgnore
     public void setUnit(CharSequence unit) {
         this.unit = unit;
     }

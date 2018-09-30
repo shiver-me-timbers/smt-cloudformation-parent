@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus
      * 
      */
+    @JsonIgnore
     public CharSequence getStreamingStatus() {
         return streamingStatus;
     }
@@ -58,6 +60,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus
      * 
      */
+    @JsonIgnore
     public void setStreamingStatus(CharSequence streamingStatus) {
         this.streamingStatus = streamingStatus;
     }
@@ -71,6 +74,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname
      * 
      */
+    @JsonIgnore
     public CharSequence getStreamName() {
         return streamName;
     }
@@ -79,6 +83,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamname
      * 
      */
+    @JsonIgnore
     public void setStreamName(CharSequence streamName) {
         this.streamName = streamName;
     }
@@ -92,6 +97,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleArn() {
         return roleArn;
     }
@@ -100,6 +106,7 @@ public class CognitoStreams {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleArn(CharSequence roleArn) {
         this.roleArn = roleArn;
     }

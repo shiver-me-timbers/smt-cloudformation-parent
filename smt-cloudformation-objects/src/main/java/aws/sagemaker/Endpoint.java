@@ -4,6 +4,7 @@ package aws.sagemaker;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -53,6 +54,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname
      * 
      */
+    @JsonIgnore
     public CharSequence getEndpointName() {
         return endpointName;
     }
@@ -61,6 +63,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname
      * 
      */
+    @JsonIgnore
     public void setEndpointName(CharSequence endpointName) {
         this.endpointName = endpointName;
     }
@@ -74,6 +77,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointconfigname
      * 
      */
+    @JsonIgnore
     public CharSequence getEndpointConfigName() {
         return endpointConfigName;
     }
@@ -82,6 +86,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointconfigname
      * 
      */
+    @JsonIgnore
     public void setEndpointConfigName(CharSequence endpointConfigName) {
         this.endpointConfigName = endpointConfigName;
     }
@@ -95,6 +100,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -103,6 +109,7 @@ public class Endpoint {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

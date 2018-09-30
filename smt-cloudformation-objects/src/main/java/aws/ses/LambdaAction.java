@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-functionarn
      * 
      */
+    @JsonIgnore
     public CharSequence getFunctionArn() {
         return functionArn;
     }
@@ -58,6 +60,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-functionarn
      * 
      */
+    @JsonIgnore
     public void setFunctionArn(CharSequence functionArn) {
         this.functionArn = functionArn;
     }
@@ -71,6 +74,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-topicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getTopicArn() {
         return topicArn;
     }
@@ -79,6 +83,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-topicarn
      * 
      */
+    @JsonIgnore
     public void setTopicArn(CharSequence topicArn) {
         this.topicArn = topicArn;
     }
@@ -92,6 +97,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-invocationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getInvocationType() {
         return invocationType;
     }
@@ -100,6 +106,7 @@ public class LambdaAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-invocationtype
      * 
      */
+    @JsonIgnore
     public void setInvocationType(CharSequence invocationType) {
         this.invocationType = invocationType;
     }

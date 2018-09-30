@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetString() {
         return targetString;
     }
@@ -76,6 +78,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring
      * 
      */
+    @JsonIgnore
     public void setTargetString(CharSequence targetString) {
         this.targetString = targetString;
     }
@@ -89,6 +92,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstringbase64
      * 
      */
+    @JsonIgnore
     public CharSequence getTargetStringBase64() {
         return targetStringBase64;
     }
@@ -97,6 +101,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstringbase64
      * 
      */
+    @JsonIgnore
     public void setTargetStringBase64(CharSequence targetStringBase64) {
         this.targetStringBase64 = targetStringBase64;
     }
@@ -110,6 +115,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-positionalconstraint
      * 
      */
+    @JsonIgnore
     public CharSequence getPositionalConstraint() {
         return positionalConstraint;
     }
@@ -118,6 +124,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-positionalconstraint
      * 
      */
+    @JsonIgnore
     public void setPositionalConstraint(CharSequence positionalConstraint) {
         this.positionalConstraint = positionalConstraint;
     }
@@ -131,6 +138,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-texttransformation
      * 
      */
+    @JsonIgnore
     public CharSequence getTextTransformation() {
         return textTransformation;
     }
@@ -139,6 +147,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-texttransformation
      * 
      */
+    @JsonIgnore
     public void setTextTransformation(CharSequence textTransformation) {
         this.textTransformation = textTransformation;
     }
@@ -154,6 +163,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public FieldToMatch getFieldToMatch() {
         return fieldToMatch;
     }
@@ -164,6 +174,7 @@ public class ByteMatchTuple {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html
      * 
      */
+    @JsonIgnore
     public void setFieldToMatch(FieldToMatch fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }

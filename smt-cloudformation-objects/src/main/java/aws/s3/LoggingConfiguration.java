@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname
      * 
      */
+    @JsonIgnore
     public CharSequence getDestinationBucketName() {
         return destinationBucketName;
     }
@@ -50,6 +52,7 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-destinationbucketname
      * 
      */
+    @JsonIgnore
     public void setDestinationBucketName(CharSequence destinationBucketName) {
         this.destinationBucketName = destinationBucketName;
     }
@@ -63,6 +66,7 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix
      * 
      */
+    @JsonIgnore
     public CharSequence getLogFilePrefix() {
         return logFilePrefix;
     }
@@ -71,6 +75,7 @@ public class LoggingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html#cfn-s3-bucket-loggingconfig-logfileprefix
      * 
      */
+    @JsonIgnore
     public void setLogFilePrefix(CharSequence logFilePrefix) {
         this.logFilePrefix = logFilePrefix;
     }

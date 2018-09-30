@@ -1,6 +1,7 @@
 
 package aws.sagemaker;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-containerhostname
      * 
      */
+    @JsonIgnore
     public CharSequence getContainerHostname() {
         return containerHostname;
     }
@@ -66,6 +68,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-containerhostname
      * 
      */
+    @JsonIgnore
     public void setContainerHostname(CharSequence containerHostname) {
         this.containerHostname = containerHostname;
     }
@@ -79,6 +82,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-environment
      * 
      */
+    @JsonIgnore
     public Object getEnvironment() {
         return environment;
     }
@@ -87,6 +91,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-environment
      * 
      */
+    @JsonIgnore
     public void setEnvironment(Object environment) {
         this.environment = environment;
     }
@@ -100,6 +105,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-modeldataurl
      * 
      */
+    @JsonIgnore
     public CharSequence getModelDataUrl() {
         return modelDataUrl;
     }
@@ -108,6 +114,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-modeldataurl
      * 
      */
+    @JsonIgnore
     public void setModelDataUrl(CharSequence modelDataUrl) {
         this.modelDataUrl = modelDataUrl;
     }
@@ -121,6 +128,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-image
      * 
      */
+    @JsonIgnore
     public CharSequence getImage() {
         return image;
     }
@@ -129,6 +137,7 @@ public class ContainerDefinition {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-image
      * 
      */
+    @JsonIgnore
     public void setImage(CharSequence image) {
         this.image = image;
     }

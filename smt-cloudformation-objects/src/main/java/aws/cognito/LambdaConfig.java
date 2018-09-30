@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -90,6 +91,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge
      * 
      */
+    @JsonIgnore
     public CharSequence getCreateAuthChallenge() {
         return createAuthChallenge;
     }
@@ -98,6 +100,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge
      * 
      */
+    @JsonIgnore
     public void setCreateAuthChallenge(CharSequence createAuthChallenge) {
         this.createAuthChallenge = createAuthChallenge;
     }
@@ -111,6 +114,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication
      * 
      */
+    @JsonIgnore
     public CharSequence getPreAuthentication() {
         return preAuthentication;
     }
@@ -119,6 +123,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-preauthentication
      * 
      */
+    @JsonIgnore
     public void setPreAuthentication(CharSequence preAuthentication) {
         this.preAuthentication = preAuthentication;
     }
@@ -132,6 +137,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge
      * 
      */
+    @JsonIgnore
     public CharSequence getDefineAuthChallenge() {
         return defineAuthChallenge;
     }
@@ -140,6 +146,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-defineauthchallenge
      * 
      */
+    @JsonIgnore
     public void setDefineAuthChallenge(CharSequence defineAuthChallenge) {
         this.defineAuthChallenge = defineAuthChallenge;
     }
@@ -153,6 +160,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup
      * 
      */
+    @JsonIgnore
     public CharSequence getPreSignUp() {
         return preSignUp;
     }
@@ -161,6 +169,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-presignup
      * 
      */
+    @JsonIgnore
     public void setPreSignUp(CharSequence preSignUp) {
         this.preSignUp = preSignUp;
     }
@@ -174,6 +183,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
+    @JsonIgnore
     public CharSequence getPostAuthentication() {
         return postAuthentication;
     }
@@ -182,6 +192,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postauthentication
      * 
      */
+    @JsonIgnore
     public void setPostAuthentication(CharSequence postAuthentication) {
         this.postAuthentication = postAuthentication;
     }
@@ -195,6 +206,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation
      * 
      */
+    @JsonIgnore
     public CharSequence getPostConfirmation() {
         return postConfirmation;
     }
@@ -203,6 +215,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-postconfirmation
      * 
      */
+    @JsonIgnore
     public void setPostConfirmation(CharSequence postConfirmation) {
         this.postConfirmation = postConfirmation;
     }
@@ -216,6 +229,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomMessage() {
         return customMessage;
     }
@@ -224,6 +238,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-custommessage
      * 
      */
+    @JsonIgnore
     public void setCustomMessage(CharSequence customMessage) {
         this.customMessage = customMessage;
     }
@@ -237,6 +252,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse
      * 
      */
+    @JsonIgnore
     public CharSequence getVerifyAuthChallengeResponse() {
         return verifyAuthChallengeResponse;
     }
@@ -245,6 +261,7 @@ public class LambdaConfig {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-verifyauthchallengeresponse
      * 
      */
+    @JsonIgnore
     public void setVerifyAuthChallengeResponse(CharSequence verifyAuthChallengeResponse) {
         this.verifyAuthChallengeResponse = verifyAuthChallengeResponse;
     }

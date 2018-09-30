@@ -3,6 +3,7 @@ package aws.efs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -62,6 +63,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
      * 
      */
+    @JsonIgnore
     public CharSequence getFileSystemId() {
         return fileSystemId;
     }
@@ -70,6 +72,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
      * 
      */
+    @JsonIgnore
     public void setFileSystemId(CharSequence fileSystemId) {
         this.fileSystemId = fileSystemId;
     }
@@ -83,6 +86,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
      * 
      */
+    @JsonIgnore
     public CharSequence getIpAddress() {
         return ipAddress;
     }
@@ -91,6 +95,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
      * 
      */
+    @JsonIgnore
     public void setIpAddress(CharSequence ipAddress) {
         this.ipAddress = ipAddress;
     }
@@ -104,6 +109,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSecurityGroups() {
         return securityGroups;
     }
@@ -112,6 +118,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
      * 
      */
+    @JsonIgnore
     public void setSecurityGroups(Set<CharSequence> securityGroups) {
         this.securityGroups = securityGroups;
     }
@@ -125,6 +132,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
      * 
      */
+    @JsonIgnore
     public CharSequence getSubnetId() {
         return subnetId;
     }
@@ -133,6 +141,7 @@ public class MountTarget {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
      * 
      */
+    @JsonIgnore
     public void setSubnetId(CharSequence subnetId) {
         this.subnetId = subnetId;
     }

@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code
      * 
      */
+    @JsonIgnore
     public Integer getCode() {
         return code;
     }
@@ -50,6 +52,7 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-code
      * 
      */
+    @JsonIgnore
     public void setCode(Integer code) {
         this.code = code;
     }
@@ -63,6 +66,7 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type
      * 
      */
+    @JsonIgnore
     public Integer getType() {
         return type;
     }
@@ -71,6 +75,7 @@ public class Icmp {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html#cfn-ec2-networkaclentry-icmp-type
      * 
      */
+    @JsonIgnore
     public void setType(Integer type) {
         this.type = type;
     }

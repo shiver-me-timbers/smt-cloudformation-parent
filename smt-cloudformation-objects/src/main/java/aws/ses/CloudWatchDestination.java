@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -36,6 +37,7 @@ public class CloudWatchDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations
      * 
      */
+    @JsonIgnore
     public List<DimensionConfiguration> getDimensionConfigurations() {
         return dimensionConfigurations;
     }
@@ -44,6 +46,7 @@ public class CloudWatchDestination {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations
      * 
      */
+    @JsonIgnore
     public void setDimensionConfigurations(List<DimensionConfiguration> dimensionConfigurations) {
         this.dimensionConfigurations = dimensionConfigurations;
     }

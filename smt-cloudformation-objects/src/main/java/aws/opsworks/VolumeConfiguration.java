@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
      */
+    @JsonIgnore
     public Integer getIops() {
         return iops;
     }
@@ -82,6 +84,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
      */
+    @JsonIgnore
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -95,6 +98,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint
      * 
      */
+    @JsonIgnore
     public CharSequence getMountPoint() {
         return mountPoint;
     }
@@ -103,6 +107,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-mountpoint
      * 
      */
+    @JsonIgnore
     public void setMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
     }
@@ -116,6 +121,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks
      * 
      */
+    @JsonIgnore
     public Integer getNumberOfDisks() {
         return numberOfDisks;
     }
@@ -124,6 +130,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-numberofdisks
      * 
      */
+    @JsonIgnore
     public void setNumberOfDisks(Integer numberOfDisks) {
         this.numberOfDisks = numberOfDisks;
     }
@@ -137,6 +144,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel
      * 
      */
+    @JsonIgnore
     public Integer getRaidLevel() {
         return raidLevel;
     }
@@ -145,6 +153,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-raidlevel
      * 
      */
+    @JsonIgnore
     public void setRaidLevel(Integer raidLevel) {
         this.raidLevel = raidLevel;
     }
@@ -158,6 +167,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size
      * 
      */
+    @JsonIgnore
     public Integer getSize() {
         return size;
     }
@@ -166,6 +176,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-size
      * 
      */
+    @JsonIgnore
     public void setSize(Integer size) {
         this.size = size;
     }
@@ -179,6 +190,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype
      * 
      */
+    @JsonIgnore
     public CharSequence getVolumeType() {
         return volumeType;
     }
@@ -187,6 +199,7 @@ public class VolumeConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype
      * 
      */
+    @JsonIgnore
     public void setVolumeType(CharSequence volumeType) {
         this.volumeType = volumeType;
     }

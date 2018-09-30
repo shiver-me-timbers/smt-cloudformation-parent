@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -64,6 +65,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument
      * 
      */
+    @JsonIgnore
     public CharSequence getErrorDocument() {
         return errorDocument;
     }
@@ -72,6 +74,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument
      * 
      */
+    @JsonIgnore
     public void setErrorDocument(CharSequence errorDocument) {
         this.errorDocument = errorDocument;
     }
@@ -85,6 +88,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-indexdocument
      * 
      */
+    @JsonIgnore
     public CharSequence getIndexDocument() {
         return indexDocument;
     }
@@ -93,6 +97,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-indexdocument
      * 
      */
+    @JsonIgnore
     public void setIndexDocument(CharSequence indexDocument) {
         this.indexDocument = indexDocument;
     }
@@ -108,6 +113,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html
      * 
      */
+    @JsonIgnore
     public RedirectAllRequestsTo getRedirectAllRequestsTo() {
         return redirectAllRequestsTo;
     }
@@ -118,6 +124,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html
      * 
      */
+    @JsonIgnore
     public void setRedirectAllRequestsTo(RedirectAllRequestsTo redirectAllRequestsTo) {
         this.redirectAllRequestsTo = redirectAllRequestsTo;
     }
@@ -131,6 +138,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-routingrules
      * 
      */
+    @JsonIgnore
     public Set<RoutingRule> getRoutingRules() {
         return routingRules;
     }
@@ -139,6 +147,7 @@ public class WebsiteConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-routingrules
      * 
      */
+    @JsonIgnore
     public void setRoutingRules(Set<RoutingRule> routingRules) {
         this.routingRules = routingRules;
     }

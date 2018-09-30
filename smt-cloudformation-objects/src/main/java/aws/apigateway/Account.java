@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -34,6 +35,7 @@ public class Account {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#cfn-apigateway-account-cloudwatchrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getCloudWatchRoleArn() {
         return cloudWatchRoleArn;
     }
@@ -42,6 +44,7 @@ public class Account {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#cfn-apigateway-account-cloudwatchrolearn
      * 
      */
+    @JsonIgnore
     public void setCloudWatchRoleArn(CharSequence cloudWatchRoleArn) {
         this.cloudWatchRoleArn = cloudWatchRoleArn;
     }

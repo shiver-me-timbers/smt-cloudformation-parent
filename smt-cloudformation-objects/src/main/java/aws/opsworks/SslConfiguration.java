@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
      * 
      */
+    @JsonIgnore
     public CharSequence getCertificate() {
         return certificate;
     }
@@ -58,6 +60,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
      * 
      */
+    @JsonIgnore
     public void setCertificate(CharSequence certificate) {
         this.certificate = certificate;
     }
@@ -71,6 +74,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
      * 
      */
+    @JsonIgnore
     public CharSequence getChain() {
         return chain;
     }
@@ -79,6 +83,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
      * 
      */
+    @JsonIgnore
     public void setChain(CharSequence chain) {
         this.chain = chain;
     }
@@ -92,6 +97,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
      * 
      */
+    @JsonIgnore
     public CharSequence getPrivateKey() {
         return privateKey;
     }
@@ -100,6 +106,7 @@ public class SslConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
      * 
      */
+    @JsonIgnore
     public void setPrivateKey(CharSequence privateKey) {
         this.privateKey = privateKey;
     }

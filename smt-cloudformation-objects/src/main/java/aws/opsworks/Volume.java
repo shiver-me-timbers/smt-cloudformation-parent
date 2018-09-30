@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -58,6 +59,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-ec2volumeid
      * 
      */
+    @JsonIgnore
     public CharSequence getEc2VolumeId() {
         return ec2VolumeId;
     }
@@ -66,6 +68,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-ec2volumeid
      * 
      */
+    @JsonIgnore
     public void setEc2VolumeId(CharSequence ec2VolumeId) {
         this.ec2VolumeId = ec2VolumeId;
     }
@@ -79,6 +82,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-mountpoint
      * 
      */
+    @JsonIgnore
     public CharSequence getMountPoint() {
         return mountPoint;
     }
@@ -87,6 +91,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-mountpoint
      * 
      */
+    @JsonIgnore
     public void setMountPoint(CharSequence mountPoint) {
         this.mountPoint = mountPoint;
     }
@@ -100,6 +105,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -108,6 +114,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -121,6 +128,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-stackid
      * 
      */
+    @JsonIgnore
     public CharSequence getStackId() {
         return stackId;
     }
@@ -129,6 +137,7 @@ public class Volume {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-volume.html#cfn-opsworks-volume-stackid
      * 
      */
+    @JsonIgnore
     public void setStackId(CharSequence stackId) {
         this.stackId = stackId;
     }

@@ -1,6 +1,7 @@
 
 package aws.autoscalingplans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -42,6 +43,7 @@ public class PredefinedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-resourcelabel
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceLabel() {
         return resourceLabel;
     }
@@ -50,6 +52,7 @@ public class PredefinedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-resourcelabel
      * 
      */
+    @JsonIgnore
     public void setResourceLabel(CharSequence resourceLabel) {
         this.resourceLabel = resourceLabel;
     }
@@ -63,6 +66,7 @@ public class PredefinedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-predefinedscalingmetrictype
      * 
      */
+    @JsonIgnore
     public CharSequence getPredefinedScalingMetricType() {
         return predefinedScalingMetricType;
     }
@@ -71,6 +75,7 @@ public class PredefinedScalingMetricSpecification {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedscalingmetricspecification-predefinedscalingmetrictype
      * 
      */
+    @JsonIgnore
     public void setPredefinedScalingMetricType(CharSequence predefinedScalingMetricType) {
         this.predefinedScalingMetricType = predefinedScalingMetricType;
     }

@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -82,6 +83,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn
      * 
      */
+    @JsonIgnore
     public CharSequence getDeliverLogsPermissionArn() {
         return deliverLogsPermissionArn;
     }
@@ -90,6 +92,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn
      * 
      */
+    @JsonIgnore
     public void setDeliverLogsPermissionArn(CharSequence deliverLogsPermissionArn) {
         this.deliverLogsPermissionArn = deliverLogsPermissionArn;
     }
@@ -103,6 +106,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination
      * 
      */
+    @JsonIgnore
     public CharSequence getLogDestination() {
         return logDestination;
     }
@@ -111,6 +115,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination
      * 
      */
+    @JsonIgnore
     public void setLogDestination(CharSequence logDestination) {
         this.logDestination = logDestination;
     }
@@ -124,6 +129,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype
      * 
      */
+    @JsonIgnore
     public CharSequence getLogDestinationType() {
         return logDestinationType;
     }
@@ -132,6 +138,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype
      * 
      */
+    @JsonIgnore
     public void setLogDestinationType(CharSequence logDestinationType) {
         this.logDestinationType = logDestinationType;
     }
@@ -145,6 +152,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getLogGroupName() {
         return logGroupName;
     }
@@ -153,6 +161,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname
      * 
      */
+    @JsonIgnore
     public void setLogGroupName(CharSequence logGroupName) {
         this.logGroupName = logGroupName;
     }
@@ -166,6 +175,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -174,6 +184,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourceid
      * 
      */
+    @JsonIgnore
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
@@ -187,6 +198,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourcetype
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceType() {
         return resourceType;
     }
@@ -195,6 +207,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourcetype
      * 
      */
+    @JsonIgnore
     public void setResourceType(CharSequence resourceType) {
         this.resourceType = resourceType;
     }
@@ -208,6 +221,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-traffictype
      * 
      */
+    @JsonIgnore
     public CharSequence getTrafficType() {
         return trafficType;
     }
@@ -216,6 +230,7 @@ public class FlowLog {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-traffictype
      * 
      */
+    @JsonIgnore
     public void setTrafficType(CharSequence trafficType) {
         this.trafficType = trafficType;
     }

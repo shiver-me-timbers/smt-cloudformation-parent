@@ -4,6 +4,7 @@ package aws.rds;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -341,6 +342,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allocatedstorage
      * 
      */
+    @JsonIgnore
     public CharSequence getAllocatedStorage() {
         return allocatedStorage;
     }
@@ -349,6 +351,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allocatedstorage
      * 
      */
+    @JsonIgnore
     public void setAllocatedStorage(CharSequence allocatedStorage) {
         this.allocatedStorage = allocatedStorage;
     }
@@ -362,6 +365,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAllowMajorVersionUpgrade() {
         return allowMajorVersionUpgrade;
     }
@@ -370,6 +374,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-allowmajorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAllowMajorVersionUpgrade(Boolean allowMajorVersionUpgrade) {
         this.allowMajorVersionUpgrade = allowMajorVersionUpgrade;
     }
@@ -383,6 +388,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public Boolean getAutoMinorVersionUpgrade() {
         return autoMinorVersionUpgrade;
     }
@@ -391,6 +397,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-autominorversionupgrade
      * 
      */
+    @JsonIgnore
     public void setAutoMinorVersionUpgrade(Boolean autoMinorVersionUpgrade) {
         this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
     }
@@ -404,6 +411,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public CharSequence getAvailabilityZone() {
         return availabilityZone;
     }
@@ -412,6 +420,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-availabilityzone
      * 
      */
+    @JsonIgnore
     public void setAvailabilityZone(CharSequence availabilityZone) {
         this.availabilityZone = availabilityZone;
     }
@@ -425,6 +434,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-backupretentionperiod
      * 
      */
+    @JsonIgnore
     public CharSequence getBackupRetentionPeriod() {
         return backupRetentionPeriod;
     }
@@ -433,6 +443,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-backupretentionperiod
      * 
      */
+    @JsonIgnore
     public void setBackupRetentionPeriod(CharSequence backupRetentionPeriod) {
         this.backupRetentionPeriod = backupRetentionPeriod;
     }
@@ -446,6 +457,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname
      * 
      */
+    @JsonIgnore
     public CharSequence getCharacterSetName() {
         return characterSetName;
     }
@@ -454,6 +466,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-charactersetname
      * 
      */
+    @JsonIgnore
     public void setCharacterSetName(CharSequence characterSetName) {
         this.characterSetName = characterSetName;
     }
@@ -467,6 +480,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-copytagstosnapshot
      * 
      */
+    @JsonIgnore
     public Boolean getCopyTagsToSnapshot() {
         return copyTagsToSnapshot;
     }
@@ -475,6 +489,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-copytagstosnapshot
      * 
      */
+    @JsonIgnore
     public void setCopyTagsToSnapshot(Boolean copyTagsToSnapshot) {
         this.copyTagsToSnapshot = copyTagsToSnapshot;
     }
@@ -488,6 +503,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBClusterIdentifier() {
         return dBClusterIdentifier;
     }
@@ -496,6 +512,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbclusteridentifier
      * 
      */
+    @JsonIgnore
     public void setDBClusterIdentifier(CharSequence dBClusterIdentifier) {
         this.dBClusterIdentifier = dBClusterIdentifier;
     }
@@ -509,6 +526,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceclass
      * 
      */
+    @JsonIgnore
     public CharSequence getDBInstanceClass() {
         return dBInstanceClass;
     }
@@ -517,6 +535,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceclass
      * 
      */
+    @JsonIgnore
     public void setDBInstanceClass(CharSequence dBInstanceClass) {
         this.dBInstanceClass = dBInstanceClass;
     }
@@ -530,6 +549,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBInstanceIdentifier() {
         return dBInstanceIdentifier;
     }
@@ -538,6 +558,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public void setDBInstanceIdentifier(CharSequence dBInstanceIdentifier) {
         this.dBInstanceIdentifier = dBInstanceIdentifier;
     }
@@ -551,6 +572,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBName() {
         return dBName;
     }
@@ -559,6 +581,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbname
      * 
      */
+    @JsonIgnore
     public void setDBName(CharSequence dBName) {
         this.dBName = dBName;
     }
@@ -572,6 +595,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbparametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBParameterGroupName() {
         return dBParameterGroupName;
     }
@@ -580,6 +604,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbparametergroupname
      * 
      */
+    @JsonIgnore
     public void setDBParameterGroupName(CharSequence dBParameterGroupName) {
         this.dBParameterGroupName = dBParameterGroupName;
     }
@@ -593,6 +618,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsecuritygroups
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getDBSecurityGroups() {
         return dBSecurityGroups;
     }
@@ -601,6 +627,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsecuritygroups
      * 
      */
+    @JsonIgnore
     public void setDBSecurityGroups(List<CharSequence> dBSecurityGroups) {
         this.dBSecurityGroups = dBSecurityGroups;
     }
@@ -614,6 +641,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsnapshotidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSnapshotIdentifier() {
         return dBSnapshotIdentifier;
     }
@@ -622,6 +650,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsnapshotidentifier
      * 
      */
+    @JsonIgnore
     public void setDBSnapshotIdentifier(CharSequence dBSnapshotIdentifier) {
         this.dBSnapshotIdentifier = dBSnapshotIdentifier;
     }
@@ -635,6 +664,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getDBSubnetGroupName() {
         return dBSubnetGroupName;
     }
@@ -643,6 +673,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsubnetgroupname
      * 
      */
+    @JsonIgnore
     public void setDBSubnetGroupName(CharSequence dBSubnetGroupName) {
         this.dBSubnetGroupName = dBSubnetGroupName;
     }
@@ -656,6 +687,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
      */
+    @JsonIgnore
     public CharSequence getDomain() {
         return domain;
     }
@@ -664,6 +696,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
      */
+    @JsonIgnore
     public void setDomain(CharSequence domain) {
         this.domain = domain;
     }
@@ -677,6 +710,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domainiamrolename
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainIAMRoleName() {
         return domainIAMRoleName;
     }
@@ -685,6 +719,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domainiamrolename
      * 
      */
+    @JsonIgnore
     public void setDomainIAMRoleName(CharSequence domainIAMRoleName) {
         this.domainIAMRoleName = domainIAMRoleName;
     }
@@ -698,6 +733,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine
      * 
      */
+    @JsonIgnore
     public CharSequence getEngine() {
         return engine;
     }
@@ -706,6 +742,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine
      * 
      */
+    @JsonIgnore
     public void setEngine(CharSequence engine) {
         this.engine = engine;
     }
@@ -719,6 +756,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engineversion
      * 
      */
+    @JsonIgnore
     public CharSequence getEngineVersion() {
         return engineVersion;
     }
@@ -727,6 +765,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engineversion
      * 
      */
+    @JsonIgnore
     public void setEngineVersion(CharSequence engineVersion) {
         this.engineVersion = engineVersion;
     }
@@ -740,6 +779,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-iops
      * 
      */
+    @JsonIgnore
     public Integer getIops() {
         return iops;
     }
@@ -748,6 +788,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-iops
      * 
      */
+    @JsonIgnore
     public void setIops(Integer iops) {
         this.iops = iops;
     }
@@ -761,6 +802,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-kmskeyid
      * 
      */
+    @JsonIgnore
     public CharSequence getKmsKeyId() {
         return kmsKeyId;
     }
@@ -769,6 +811,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-kmskeyid
      * 
      */
+    @JsonIgnore
     public void setKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
     }
@@ -782,6 +825,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-licensemodel
      * 
      */
+    @JsonIgnore
     public CharSequence getLicenseModel() {
         return licenseModel;
     }
@@ -790,6 +834,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-licensemodel
      * 
      */
+    @JsonIgnore
     public void setLicenseModel(CharSequence licenseModel) {
         this.licenseModel = licenseModel;
     }
@@ -803,6 +848,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masteruserpassword
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUserPassword() {
         return masterUserPassword;
     }
@@ -811,6 +857,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masteruserpassword
      * 
      */
+    @JsonIgnore
     public void setMasterUserPassword(CharSequence masterUserPassword) {
         this.masterUserPassword = masterUserPassword;
     }
@@ -824,6 +871,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masterusername
      * 
      */
+    @JsonIgnore
     public CharSequence getMasterUsername() {
         return masterUsername;
     }
@@ -832,6 +880,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-masterusername
      * 
      */
+    @JsonIgnore
     public void setMasterUsername(CharSequence masterUsername) {
         this.masterUsername = masterUsername;
     }
@@ -845,6 +894,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringinterval
      * 
      */
+    @JsonIgnore
     public Integer getMonitoringInterval() {
         return monitoringInterval;
     }
@@ -853,6 +903,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringinterval
      * 
      */
+    @JsonIgnore
     public void setMonitoringInterval(Integer monitoringInterval) {
         this.monitoringInterval = monitoringInterval;
     }
@@ -866,6 +917,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringrolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getMonitoringRoleArn() {
         return monitoringRoleArn;
     }
@@ -874,6 +926,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-monitoringrolearn
      * 
      */
+    @JsonIgnore
     public void setMonitoringRoleArn(CharSequence monitoringRoleArn) {
         this.monitoringRoleArn = monitoringRoleArn;
     }
@@ -887,6 +940,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-multiaz
      * 
      */
+    @JsonIgnore
     public Boolean getMultiAZ() {
         return multiAZ;
     }
@@ -895,6 +949,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-multiaz
      * 
      */
+    @JsonIgnore
     public void setMultiAZ(Boolean multiAZ) {
         this.multiAZ = multiAZ;
     }
@@ -908,6 +963,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-optiongroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getOptionGroupName() {
         return optionGroupName;
     }
@@ -916,6 +972,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-optiongroupname
      * 
      */
+    @JsonIgnore
     public void setOptionGroupName(CharSequence optionGroupName) {
         this.optionGroupName = optionGroupName;
     }
@@ -929,6 +986,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
      */
+    @JsonIgnore
     public CharSequence getPort() {
         return port;
     }
@@ -937,6 +995,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
      */
+    @JsonIgnore
     public void setPort(CharSequence port) {
         this.port = port;
     }
@@ -950,6 +1009,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredBackupWindow() {
         return preferredBackupWindow;
     }
@@ -958,6 +1018,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredbackupwindow
      * 
      */
+    @JsonIgnore
     public void setPreferredBackupWindow(CharSequence preferredBackupWindow) {
         this.preferredBackupWindow = preferredBackupWindow;
     }
@@ -971,6 +1032,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public CharSequence getPreferredMaintenanceWindow() {
         return preferredMaintenanceWindow;
     }
@@ -979,6 +1041,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredmaintenancewindow
      * 
      */
+    @JsonIgnore
     public void setPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
     }
@@ -992,6 +1055,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public Boolean getPubliclyAccessible() {
         return publiclyAccessible;
     }
@@ -1000,6 +1064,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible
      * 
      */
+    @JsonIgnore
     public void setPubliclyAccessible(Boolean publiclyAccessible) {
         this.publiclyAccessible = publiclyAccessible;
     }
@@ -1013,6 +1078,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourcedbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceDBInstanceIdentifier() {
         return sourceDBInstanceIdentifier;
     }
@@ -1021,6 +1087,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourcedbinstanceidentifier
      * 
      */
+    @JsonIgnore
     public void setSourceDBInstanceIdentifier(CharSequence sourceDBInstanceIdentifier) {
         this.sourceDBInstanceIdentifier = sourceDBInstanceIdentifier;
     }
@@ -1034,6 +1101,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourceregion
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceRegion() {
         return sourceRegion;
     }
@@ -1042,6 +1110,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-sourceregion
      * 
      */
+    @JsonIgnore
     public void setSourceRegion(CharSequence sourceRegion) {
         this.sourceRegion = sourceRegion;
     }
@@ -1055,6 +1124,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storageencrypted
      * 
      */
+    @JsonIgnore
     public Boolean getStorageEncrypted() {
         return storageEncrypted;
     }
@@ -1063,6 +1133,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storageencrypted
      * 
      */
+    @JsonIgnore
     public void setStorageEncrypted(Boolean storageEncrypted) {
         this.storageEncrypted = storageEncrypted;
     }
@@ -1076,6 +1147,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storagetype
      * 
      */
+    @JsonIgnore
     public CharSequence getStorageType() {
         return storageType;
     }
@@ -1084,6 +1156,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-storagetype
      * 
      */
+    @JsonIgnore
     public void setStorageType(CharSequence storageType) {
         this.storageType = storageType;
     }
@@ -1097,6 +1170,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -1105,6 +1179,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -1118,6 +1193,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-timezone
      * 
      */
+    @JsonIgnore
     public CharSequence getTimezone() {
         return timezone;
     }
@@ -1126,6 +1202,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-timezone
      * 
      */
+    @JsonIgnore
     public void setTimezone(CharSequence timezone) {
         this.timezone = timezone;
     }
@@ -1139,6 +1216,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getVPCSecurityGroups() {
         return vPCSecurityGroups;
     }
@@ -1147,6 +1225,7 @@ public class DBInstance {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
      */
+    @JsonIgnore
     public void setVPCSecurityGroups(List<CharSequence> vPCSecurityGroups) {
         this.vPCSecurityGroups = vPCSecurityGroups;
     }

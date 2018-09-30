@@ -3,6 +3,7 @@ package aws.elasticbeanstalk;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -86,6 +87,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname
      * 
      */
+    @JsonIgnore
     public CharSequence getApplicationName() {
         return applicationName;
     }
@@ -94,6 +96,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname
      * 
      */
+    @JsonIgnore
     public void setApplicationName(CharSequence applicationName) {
         this.applicationName = applicationName;
     }
@@ -107,6 +110,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -115,6 +119,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -128,6 +133,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-environmentid
      * 
      */
+    @JsonIgnore
     public CharSequence getEnvironmentId() {
         return environmentId;
     }
@@ -136,6 +142,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-environmentid
      * 
      */
+    @JsonIgnore
     public void setEnvironmentId(CharSequence environmentId) {
         this.environmentId = environmentId;
     }
@@ -149,6 +156,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-optionsettings
      * 
      */
+    @JsonIgnore
     public List<ConfigurationOptionSetting> getOptionSettings() {
         return optionSettings;
     }
@@ -157,6 +165,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-optionsettings
      * 
      */
+    @JsonIgnore
     public void setOptionSettings(List<ConfigurationOptionSetting> optionSettings) {
         this.optionSettings = optionSettings;
     }
@@ -170,6 +179,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-platformarn
      * 
      */
+    @JsonIgnore
     public CharSequence getPlatformArn() {
         return platformArn;
     }
@@ -178,6 +188,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-platformarn
      * 
      */
+    @JsonIgnore
     public void setPlatformArn(CharSequence platformArn) {
         this.platformArn = platformArn;
     }
@@ -191,6 +202,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-solutionstackname
      * 
      */
+    @JsonIgnore
     public CharSequence getSolutionStackName() {
         return solutionStackName;
     }
@@ -199,6 +211,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-solutionstackname
      * 
      */
+    @JsonIgnore
     public void setSolutionStackName(CharSequence solutionStackName) {
         this.solutionStackName = solutionStackName;
     }
@@ -214,6 +227,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html
      * 
      */
+    @JsonIgnore
     public SourceConfiguration getSourceConfiguration() {
         return sourceConfiguration;
     }
@@ -224,6 +238,7 @@ public class ConfigurationTemplate {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setSourceConfiguration(SourceConfiguration sourceConfiguration) {
         this.sourceConfiguration = sourceConfiguration;
     }

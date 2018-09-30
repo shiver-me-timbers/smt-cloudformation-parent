@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -80,6 +81,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html
      * 
      */
+    @JsonIgnore
     public CustomizedMetricSpecification getCustomizedMetricSpecification() {
         return customizedMetricSpecification;
     }
@@ -90,6 +92,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html
      * 
      */
+    @JsonIgnore
     public void setCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
     }
@@ -103,6 +106,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-disablescalein
      * 
      */
+    @JsonIgnore
     public Boolean getDisableScaleIn() {
         return disableScaleIn;
     }
@@ -111,6 +115,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-disablescalein
      * 
      */
+    @JsonIgnore
     public void setDisableScaleIn(Boolean disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
@@ -126,6 +131,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-predefinedmetricspecification.html
      * 
      */
+    @JsonIgnore
     public PredefinedMetricSpecification getPredefinedMetricSpecification() {
         return predefinedMetricSpecification;
     }
@@ -136,6 +142,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-predefinedmetricspecification.html
      * 
      */
+    @JsonIgnore
     public void setPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
     }
@@ -149,6 +156,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleincooldown
      * 
      */
+    @JsonIgnore
     public Integer getScaleInCooldown() {
         return scaleInCooldown;
     }
@@ -157,6 +165,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleincooldown
      * 
      */
+    @JsonIgnore
     public void setScaleInCooldown(Integer scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
     }
@@ -170,6 +179,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleoutcooldown
      * 
      */
+    @JsonIgnore
     public Integer getScaleOutCooldown() {
         return scaleOutCooldown;
     }
@@ -178,6 +188,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleoutcooldown
      * 
      */
+    @JsonIgnore
     public void setScaleOutCooldown(Integer scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
     }
@@ -191,6 +202,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-targetvalue
      * 
      */
+    @JsonIgnore
     public Double getTargetValue() {
         return targetValue;
     }
@@ -199,6 +211,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-targetvalue
      * 
      */
+    @JsonIgnore
     public void setTargetValue(Double targetValue) {
         this.targetValue = targetValue;
     }

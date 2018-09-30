@@ -4,6 +4,7 @@ package aws.dms;
 import java.util.ArrayList;
 import java.util.List;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -85,6 +86,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourcetype
      * 
      */
+    @JsonIgnore
     public CharSequence getSourceType() {
         return sourceType;
     }
@@ -93,6 +95,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourcetype
      * 
      */
+    @JsonIgnore
     public void setSourceType(CharSequence sourceType) {
         this.sourceType = sourceType;
     }
@@ -106,6 +109,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-eventcategories
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getEventCategories() {
         return eventCategories;
     }
@@ -114,6 +118,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-eventcategories
      * 
      */
+    @JsonIgnore
     public void setEventCategories(List<CharSequence> eventCategories) {
         this.eventCategories = eventCategories;
     }
@@ -127,6 +132,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-enabled
      * 
      */
+    @JsonIgnore
     public Boolean getEnabled() {
         return enabled;
     }
@@ -135,6 +141,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-enabled
      * 
      */
+    @JsonIgnore
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
@@ -148,6 +155,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-subscriptionname
      * 
      */
+    @JsonIgnore
     public CharSequence getSubscriptionName() {
         return subscriptionName;
     }
@@ -156,6 +164,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-subscriptionname
      * 
      */
+    @JsonIgnore
     public void setSubscriptionName(CharSequence subscriptionName) {
         this.subscriptionName = subscriptionName;
     }
@@ -169,6 +178,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-snstopicarn
      * 
      */
+    @JsonIgnore
     public CharSequence getSnsTopicArn() {
         return snsTopicArn;
     }
@@ -177,6 +187,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-snstopicarn
      * 
      */
+    @JsonIgnore
     public void setSnsTopicArn(CharSequence snsTopicArn) {
         this.snsTopicArn = snsTopicArn;
     }
@@ -190,6 +201,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourceids
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getSourceIds() {
         return sourceIds;
     }
@@ -198,6 +210,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-sourceids
      * 
      */
+    @JsonIgnore
     public void setSourceIds(List<CharSequence> sourceIds) {
         this.sourceIds = sourceIds;
     }
@@ -211,6 +224,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -219,6 +233,7 @@ public class EventSubscription {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-eventsubscription.html#cfn-dms-eventsubscription-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }

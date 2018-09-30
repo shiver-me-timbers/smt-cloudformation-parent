@@ -3,6 +3,7 @@ package aws.budgets;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -46,6 +47,7 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
      * 
      */
+    @JsonIgnore
     public List<Subscriber> getSubscribers() {
         return subscribers;
     }
@@ -54,6 +56,7 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
      * 
      */
+    @JsonIgnore
     public void setSubscribers(List<Subscriber> subscribers) {
         this.subscribers = subscribers;
     }
@@ -69,6 +72,7 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html
      * 
      */
+    @JsonIgnore
     public Notification getNotification() {
         return notification;
     }
@@ -79,6 +83,7 @@ public class NotificationWithSubscribers {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html
      * 
      */
+    @JsonIgnore
     public void setNotification(Notification notification) {
         this.notification = notification;
     }

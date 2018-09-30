@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -68,6 +69,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html
      * 
      */
+    @JsonIgnore
     public MaintenanceWindowRunCommandParameters getMaintenanceWindowRunCommandParameters() {
         return maintenanceWindowRunCommandParameters;
     }
@@ -78,6 +80,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html
      * 
      */
+    @JsonIgnore
     public void setMaintenanceWindowRunCommandParameters(MaintenanceWindowRunCommandParameters maintenanceWindowRunCommandParameters) {
         this.maintenanceWindowRunCommandParameters = maintenanceWindowRunCommandParameters;
     }
@@ -93,6 +96,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html
      * 
      */
+    @JsonIgnore
     public MaintenanceWindowAutomationParameters getMaintenanceWindowAutomationParameters() {
         return maintenanceWindowAutomationParameters;
     }
@@ -103,6 +107,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html
      * 
      */
+    @JsonIgnore
     public void setMaintenanceWindowAutomationParameters(MaintenanceWindowAutomationParameters maintenanceWindowAutomationParameters) {
         this.maintenanceWindowAutomationParameters = maintenanceWindowAutomationParameters;
     }
@@ -118,6 +123,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html
      * 
      */
+    @JsonIgnore
     public MaintenanceWindowStepFunctionsParameters getMaintenanceWindowStepFunctionsParameters() {
         return maintenanceWindowStepFunctionsParameters;
     }
@@ -128,6 +134,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html
      * 
      */
+    @JsonIgnore
     public void setMaintenanceWindowStepFunctionsParameters(MaintenanceWindowStepFunctionsParameters maintenanceWindowStepFunctionsParameters) {
         this.maintenanceWindowStepFunctionsParameters = maintenanceWindowStepFunctionsParameters;
     }
@@ -143,6 +150,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html
      * 
      */
+    @JsonIgnore
     public MaintenanceWindowLambdaParameters getMaintenanceWindowLambdaParameters() {
         return maintenanceWindowLambdaParameters;
     }
@@ -153,6 +161,7 @@ public class TaskInvocationParameters {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html
      * 
      */
+    @JsonIgnore
     public void setMaintenanceWindowLambdaParameters(MaintenanceWindowLambdaParameters maintenanceWindowLambdaParameters) {
         this.maintenanceWindowLambdaParameters = maintenanceWindowLambdaParameters;
     }

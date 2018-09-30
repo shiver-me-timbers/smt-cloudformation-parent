@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-bucketarn
      * 
      */
+    @JsonIgnore
     public CharSequence getBucketARN() {
         return bucketARN;
     }
@@ -58,6 +60,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-bucketarn
      * 
      */
+    @JsonIgnore
     public void setBucketARN(CharSequence bucketARN) {
         this.bucketARN = bucketARN;
     }
@@ -71,6 +74,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-filekey
      * 
      */
+    @JsonIgnore
     public CharSequence getFileKey() {
         return fileKey;
     }
@@ -79,6 +83,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-filekey
      * 
      */
+    @JsonIgnore
     public void setFileKey(CharSequence fileKey) {
         this.fileKey = fileKey;
     }
@@ -92,6 +97,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-referencerolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getReferenceRoleARN() {
         return referenceRoleARN;
     }
@@ -100,6 +106,7 @@ public class S3ReferenceDataSource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-referencerolearn
      * 
      */
+    @JsonIgnore
     public void setReferenceRoleARN(CharSequence referenceRoleARN) {
         this.referenceRoleARN = referenceRoleARN;
     }

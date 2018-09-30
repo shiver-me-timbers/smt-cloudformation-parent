@@ -1,6 +1,7 @@
 
 package aws.sagemaker;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-modelname
      * 
      */
+    @JsonIgnore
     public CharSequence getModelName() {
         return modelName;
     }
@@ -74,6 +76,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-modelname
      * 
      */
+    @JsonIgnore
     public void setModelName(CharSequence modelName) {
         this.modelName = modelName;
     }
@@ -87,6 +90,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-variantname
      * 
      */
+    @JsonIgnore
     public CharSequence getVariantName() {
         return variantName;
     }
@@ -95,6 +99,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-variantname
      * 
      */
+    @JsonIgnore
     public void setVariantName(CharSequence variantName) {
         this.variantName = variantName;
     }
@@ -108,6 +113,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialinstancecount
      * 
      */
+    @JsonIgnore
     public Integer getInitialInstanceCount() {
         return initialInstanceCount;
     }
@@ -116,6 +122,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialinstancecount
      * 
      */
+    @JsonIgnore
     public void setInitialInstanceCount(Integer initialInstanceCount) {
         this.initialInstanceCount = initialInstanceCount;
     }
@@ -129,6 +136,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-instancetype
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceType() {
         return instanceType;
     }
@@ -137,6 +145,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-instancetype
      * 
      */
+    @JsonIgnore
     public void setInstanceType(CharSequence instanceType) {
         this.instanceType = instanceType;
     }
@@ -150,6 +159,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight
      * 
      */
+    @JsonIgnore
     public Double getInitialVariantWeight() {
         return initialVariantWeight;
     }
@@ -158,6 +168,7 @@ public class ProductionVariant {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight
      * 
      */
+    @JsonIgnore
     public void setInitialVariantWeight(Double initialVariantWeight) {
         this.initialVariantWeight = initialVariantWeight;
     }

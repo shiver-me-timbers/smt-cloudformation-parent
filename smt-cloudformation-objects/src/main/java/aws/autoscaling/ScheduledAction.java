@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -82,6 +83,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-asgname
      * 
      */
+    @JsonIgnore
     public CharSequence getAutoScalingGroupName() {
         return autoScalingGroupName;
     }
@@ -90,6 +92,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-asgname
      * 
      */
+    @JsonIgnore
     public void setAutoScalingGroupName(CharSequence autoScalingGroupName) {
         this.autoScalingGroupName = autoScalingGroupName;
     }
@@ -103,6 +106,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-desiredcapacity
      * 
      */
+    @JsonIgnore
     public Integer getDesiredCapacity() {
         return desiredCapacity;
     }
@@ -111,6 +115,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-desiredcapacity
      * 
      */
+    @JsonIgnore
     public void setDesiredCapacity(Integer desiredCapacity) {
         this.desiredCapacity = desiredCapacity;
     }
@@ -124,6 +129,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-endtime
      * 
      */
+    @JsonIgnore
     public CharSequence getEndTime() {
         return endTime;
     }
@@ -132,6 +138,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-endtime
      * 
      */
+    @JsonIgnore
     public void setEndTime(CharSequence endTime) {
         this.endTime = endTime;
     }
@@ -145,6 +152,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-maxsize
      * 
      */
+    @JsonIgnore
     public Integer getMaxSize() {
         return maxSize;
     }
@@ -153,6 +161,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-maxsize
      * 
      */
+    @JsonIgnore
     public void setMaxSize(Integer maxSize) {
         this.maxSize = maxSize;
     }
@@ -166,6 +175,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-minsize
      * 
      */
+    @JsonIgnore
     public Integer getMinSize() {
         return minSize;
     }
@@ -174,6 +184,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-minsize
      * 
      */
+    @JsonIgnore
     public void setMinSize(Integer minSize) {
         this.minSize = minSize;
     }
@@ -187,6 +198,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-recurrence
      * 
      */
+    @JsonIgnore
     public CharSequence getRecurrence() {
         return recurrence;
     }
@@ -195,6 +207,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-recurrence
      * 
      */
+    @JsonIgnore
     public void setRecurrence(CharSequence recurrence) {
         this.recurrence = recurrence;
     }
@@ -208,6 +221,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-starttime
      * 
      */
+    @JsonIgnore
     public CharSequence getStartTime() {
         return startTime;
     }
@@ -216,6 +230,7 @@ public class ScheduledAction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-as-scheduledaction.html#cfn-as-scheduledaction-starttime
      * 
      */
+    @JsonIgnore
     public void setStartTime(CharSequence startTime) {
         this.startTime = startTime;
     }

@@ -2,6 +2,7 @@
 package aws.events;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -43,6 +44,7 @@ public class InputTransformer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputpathsmap
      * 
      */
+    @JsonIgnore
     public Map<String, String> getInputPathsMap() {
         return inputPathsMap;
     }
@@ -51,6 +53,7 @@ public class InputTransformer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputpathsmap
      * 
      */
+    @JsonIgnore
     public void setInputPathsMap(Map<String, String> inputPathsMap) {
         this.inputPathsMap = inputPathsMap;
     }
@@ -64,6 +67,7 @@ public class InputTransformer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputtemplate
      * 
      */
+    @JsonIgnore
     public CharSequence getInputTemplate() {
         return inputTemplate;
     }
@@ -72,6 +76,7 @@ public class InputTransformer {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html#cfn-events-rule-inputtransformer-inputtemplate
      * 
      */
+    @JsonIgnore
     public void setInputTemplate(CharSequence inputTemplate) {
         this.inputTemplate = inputTemplate;
     }

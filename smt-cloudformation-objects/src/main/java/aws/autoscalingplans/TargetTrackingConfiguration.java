@@ -1,6 +1,7 @@
 
 package aws.autoscalingplans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -86,6 +87,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown
      * 
      */
+    @JsonIgnore
     public Integer getScaleOutCooldown() {
         return scaleOutCooldown;
     }
@@ -94,6 +96,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown
      * 
      */
+    @JsonIgnore
     public void setScaleOutCooldown(Integer scaleOutCooldown) {
         this.scaleOutCooldown = scaleOutCooldown;
     }
@@ -107,6 +110,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-targetvalue
      * 
      */
+    @JsonIgnore
     public Double getTargetValue() {
         return targetValue;
     }
@@ -115,6 +119,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-targetvalue
      * 
      */
+    @JsonIgnore
     public void setTargetValue(Double targetValue) {
         this.targetValue = targetValue;
     }
@@ -130,6 +135,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html
      * 
      */
+    @JsonIgnore
     public PredefinedScalingMetricSpecification getPredefinedScalingMetricSpecification() {
         return predefinedScalingMetricSpecification;
     }
@@ -140,6 +146,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html
      * 
      */
+    @JsonIgnore
     public void setPredefinedScalingMetricSpecification(PredefinedScalingMetricSpecification predefinedScalingMetricSpecification) {
         this.predefinedScalingMetricSpecification = predefinedScalingMetricSpecification;
     }
@@ -153,6 +160,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein
      * 
      */
+    @JsonIgnore
     public Boolean getDisableScaleIn() {
         return disableScaleIn;
     }
@@ -161,6 +169,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein
      * 
      */
+    @JsonIgnore
     public void setDisableScaleIn(Boolean disableScaleIn) {
         this.disableScaleIn = disableScaleIn;
     }
@@ -174,6 +183,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleincooldown
      * 
      */
+    @JsonIgnore
     public Integer getScaleInCooldown() {
         return scaleInCooldown;
     }
@@ -182,6 +192,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleincooldown
      * 
      */
+    @JsonIgnore
     public void setScaleInCooldown(Integer scaleInCooldown) {
         this.scaleInCooldown = scaleInCooldown;
     }
@@ -195,6 +206,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-estimatedinstancewarmup
      * 
      */
+    @JsonIgnore
     public Integer getEstimatedInstanceWarmup() {
         return estimatedInstanceWarmup;
     }
@@ -203,6 +215,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-estimatedinstancewarmup
      * 
      */
+    @JsonIgnore
     public void setEstimatedInstanceWarmup(Integer estimatedInstanceWarmup) {
         this.estimatedInstanceWarmup = estimatedInstanceWarmup;
     }
@@ -218,6 +231,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html
      * 
      */
+    @JsonIgnore
     public CustomizedScalingMetricSpecification getCustomizedScalingMetricSpecification() {
         return customizedScalingMetricSpecification;
     }
@@ -228,6 +242,7 @@ public class TargetTrackingConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html
      * 
      */
+    @JsonIgnore
     public void setCustomizedScalingMetricSpecification(CustomizedScalingMetricSpecification customizedScalingMetricSpecification) {
         this.customizedScalingMetricSpecification = customizedScalingMetricSpecification;
     }

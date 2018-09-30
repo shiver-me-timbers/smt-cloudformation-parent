@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -81,6 +82,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomerGatewayId() {
         return customerGatewayId;
     }
@@ -89,6 +91,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid
      * 
      */
+    @JsonIgnore
     public void setCustomerGatewayId(CharSequence customerGatewayId) {
         this.customerGatewayId = customerGatewayId;
     }
@@ -102,6 +105,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly
      * 
      */
+    @JsonIgnore
     public Boolean getStaticRoutesOnly() {
         return staticRoutesOnly;
     }
@@ -110,6 +114,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-StaticRoutesOnly
      * 
      */
+    @JsonIgnore
     public void setStaticRoutesOnly(Boolean staticRoutesOnly) {
         this.staticRoutesOnly = staticRoutesOnly;
     }
@@ -123,6 +128,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -131,6 +137,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -144,6 +151,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -152,6 +160,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -165,6 +174,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid
      * 
      */
+    @JsonIgnore
     public CharSequence getVpnGatewayId() {
         return vpnGatewayId;
     }
@@ -173,6 +183,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpngatewayid
      * 
      */
+    @JsonIgnore
     public void setVpnGatewayId(CharSequence vpnGatewayId) {
         this.vpnGatewayId = vpnGatewayId;
     }
@@ -186,6 +197,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications
      * 
      */
+    @JsonIgnore
     public Set<VpnTunnelOptionsSpecification> getVpnTunnelOptionsSpecifications() {
         return vpnTunnelOptionsSpecifications;
     }
@@ -194,6 +206,7 @@ public class VPNConnection {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications
      * 
      */
+    @JsonIgnore
     public void setVpnTunnelOptionsSpecifications(Set<VpnTunnelOptionsSpecification> vpnTunnelOptionsSpecifications) {
         this.vpnTunnelOptionsSpecifications = vpnTunnelOptionsSpecifications;
     }

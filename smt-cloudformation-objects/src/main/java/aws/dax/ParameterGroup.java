@@ -1,6 +1,7 @@
 
 package aws.dax;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-parameternamevalues
      * 
      */
+    @JsonIgnore
     public Object getParameterNameValues() {
         return parameterNameValues;
     }
@@ -58,6 +60,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-parameternamevalues
      * 
      */
+    @JsonIgnore
     public void setParameterNameValues(Object parameterNameValues) {
         this.parameterNameValues = parameterNameValues;
     }
@@ -71,6 +74,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-description
      * 
      */
+    @JsonIgnore
     public CharSequence getDescription() {
         return description;
     }
@@ -79,6 +83,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-description
      * 
      */
+    @JsonIgnore
     public void setDescription(CharSequence description) {
         this.description = description;
     }
@@ -92,6 +97,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-parametergroupname
      * 
      */
+    @JsonIgnore
     public CharSequence getParameterGroupName() {
         return parameterGroupName;
     }
@@ -100,6 +106,7 @@ public class ParameterGroup {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html#cfn-dax-parametergroup-parametergroupname
      * 
      */
+    @JsonIgnore
     public void setParameterGroupName(CharSequence parameterGroupName) {
         this.parameterGroupName = parameterGroupName;
     }

@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -51,6 +52,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
      * 
      */
+    @JsonIgnore
     public CharSequence getApiId() {
         return apiId;
     }
@@ -59,6 +61,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
      * 
      */
+    @JsonIgnore
     public void setApiId(CharSequence apiId) {
         this.apiId = apiId;
     }
@@ -72,6 +75,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage
      * 
      */
+    @JsonIgnore
     public CharSequence getStage() {
         return stage;
     }
@@ -80,6 +84,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage
      * 
      */
+    @JsonIgnore
     public void setStage(CharSequence stage) {
         this.stage = stage;
     }
@@ -93,6 +98,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle
      * 
      */
+    @JsonIgnore
     public Map<String, ThrottleSettings> getThrottle() {
         return throttle;
     }
@@ -101,6 +107,7 @@ public class ApiStage {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle
      * 
      */
+    @JsonIgnore
     public void setThrottle(Map<String, ThrottleSettings> throttle) {
         this.throttle = throttle;
     }

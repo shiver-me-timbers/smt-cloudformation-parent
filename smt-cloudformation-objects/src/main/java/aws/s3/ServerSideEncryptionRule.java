@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -38,6 +39,7 @@ public class ServerSideEncryptionRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html
      * 
      */
+    @JsonIgnore
     public ServerSideEncryptionByDefault getServerSideEncryptionByDefault() {
         return serverSideEncryptionByDefault;
     }
@@ -48,6 +50,7 @@ public class ServerSideEncryptionRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html
      * 
      */
+    @JsonIgnore
     public void setServerSideEncryptionByDefault(ServerSideEncryptionByDefault serverSideEncryptionByDefault) {
         this.serverSideEncryptionByDefault = serverSideEncryptionByDefault;
     }

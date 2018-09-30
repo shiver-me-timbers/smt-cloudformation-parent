@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-allocationid
      * 
      */
+    @JsonIgnore
     public CharSequence getAllocationId() {
         return allocationId;
     }
@@ -74,6 +76,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-allocationid
      * 
      */
+    @JsonIgnore
     public void setAllocationId(CharSequence allocationId) {
         this.allocationId = allocationId;
     }
@@ -87,6 +90,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-eip
      * 
      */
+    @JsonIgnore
     public CharSequence getEIP() {
         return eIP;
     }
@@ -95,6 +99,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-eip
      * 
      */
+    @JsonIgnore
     public void setEIP(CharSequence eIP) {
         this.eIP = eIP;
     }
@@ -108,6 +113,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-instanceid
      * 
      */
+    @JsonIgnore
     public CharSequence getInstanceId() {
         return instanceId;
     }
@@ -116,6 +122,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-instanceid
      * 
      */
+    @JsonIgnore
     public void setInstanceId(CharSequence instanceId) {
         this.instanceId = instanceId;
     }
@@ -129,6 +136,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public CharSequence getNetworkInterfaceId() {
         return networkInterfaceId;
     }
@@ -137,6 +145,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-networkinterfaceid
      * 
      */
+    @JsonIgnore
     public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
         this.networkInterfaceId = networkInterfaceId;
     }
@@ -150,6 +159,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-PrivateIpAddress
      * 
      */
+    @JsonIgnore
     public CharSequence getPrivateIpAddress() {
         return privateIpAddress;
     }
@@ -158,6 +168,7 @@ public class EIPAssociation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip-association.html#cfn-ec2-eipassociation-PrivateIpAddress
      * 
      */
+    @JsonIgnore
     public void setPrivateIpAddress(CharSequence privateIpAddress) {
         this.privateIpAddress = privateIpAddress;
     }

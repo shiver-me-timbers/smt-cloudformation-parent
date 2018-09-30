@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -98,6 +99,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html
      * 
      */
+    @JsonIgnore
     public BounceAction getBounceAction() {
         return bounceAction;
     }
@@ -108,6 +110,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html
      * 
      */
+    @JsonIgnore
     public void setBounceAction(BounceAction bounceAction) {
         this.bounceAction = bounceAction;
     }
@@ -123,6 +126,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html
      * 
      */
+    @JsonIgnore
     public S3Action getS3Action() {
         return s3Action;
     }
@@ -133,6 +137,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html
      * 
      */
+    @JsonIgnore
     public void setS3Action(S3Action s3Action) {
         this.s3Action = s3Action;
     }
@@ -148,6 +153,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html
      * 
      */
+    @JsonIgnore
     public StopAction getStopAction() {
         return stopAction;
     }
@@ -158,6 +164,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html
      * 
      */
+    @JsonIgnore
     public void setStopAction(StopAction stopAction) {
         this.stopAction = stopAction;
     }
@@ -173,6 +180,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html
      * 
      */
+    @JsonIgnore
     public SNSAction getSNSAction() {
         return sNSAction;
     }
@@ -183,6 +191,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html
      * 
      */
+    @JsonIgnore
     public void setSNSAction(SNSAction sNSAction) {
         this.sNSAction = sNSAction;
     }
@@ -198,6 +207,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html
      * 
      */
+    @JsonIgnore
     public WorkmailAction getWorkmailAction() {
         return workmailAction;
     }
@@ -208,6 +218,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html
      * 
      */
+    @JsonIgnore
     public void setWorkmailAction(WorkmailAction workmailAction) {
         this.workmailAction = workmailAction;
     }
@@ -223,6 +234,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-addheaderaction.html
      * 
      */
+    @JsonIgnore
     public AddHeaderAction getAddHeaderAction() {
         return addHeaderAction;
     }
@@ -233,6 +245,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-addheaderaction.html
      * 
      */
+    @JsonIgnore
     public void setAddHeaderAction(AddHeaderAction addHeaderAction) {
         this.addHeaderAction = addHeaderAction;
     }
@@ -248,6 +261,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html
      * 
      */
+    @JsonIgnore
     public LambdaAction getLambdaAction() {
         return lambdaAction;
     }
@@ -258,6 +272,7 @@ public class Action {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html
      * 
      */
+    @JsonIgnore
     public void setLambdaAction(LambdaAction lambdaAction) {
         this.lambdaAction = lambdaAction;
     }

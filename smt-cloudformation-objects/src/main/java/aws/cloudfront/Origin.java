@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -80,6 +81,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
+    @JsonIgnore
     public List<OriginCustomHeader> getOriginCustomHeaders() {
         return originCustomHeaders;
     }
@@ -88,6 +90,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
+    @JsonIgnore
     public void setOriginCustomHeaders(List<OriginCustomHeader> originCustomHeaders) {
         this.originCustomHeaders = originCustomHeaders;
     }
@@ -101,6 +104,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainName() {
         return domainName;
     }
@@ -109,6 +113,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
      */
+    @JsonIgnore
     public void setDomainName(CharSequence domainName) {
         this.domainName = domainName;
     }
@@ -124,6 +129,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html
      * 
      */
+    @JsonIgnore
     public S3OriginConfig getS3OriginConfig() {
         return s3OriginConfig;
     }
@@ -134,6 +140,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html
      * 
      */
+    @JsonIgnore
     public void setS3OriginConfig(S3OriginConfig s3OriginConfig) {
         this.s3OriginConfig = s3OriginConfig;
     }
@@ -147,6 +154,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath
      * 
      */
+    @JsonIgnore
     public CharSequence getOriginPath() {
         return originPath;
     }
@@ -155,6 +163,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath
      * 
      */
+    @JsonIgnore
     public void setOriginPath(CharSequence originPath) {
         this.originPath = originPath;
     }
@@ -168,6 +177,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id
      * 
      */
+    @JsonIgnore
     public CharSequence getId() {
         return id;
     }
@@ -176,6 +186,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-id
      * 
      */
+    @JsonIgnore
     public void setId(CharSequence id) {
         this.id = id;
     }
@@ -191,6 +202,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html
      * 
      */
+    @JsonIgnore
     public CustomOriginConfig getCustomOriginConfig() {
         return customOriginConfig;
     }
@@ -201,6 +213,7 @@ public class Origin {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html
      * 
      */
+    @JsonIgnore
     public void setCustomOriginConfig(CustomOriginConfig customOriginConfig) {
         this.customOriginConfig = customOriginConfig;
     }

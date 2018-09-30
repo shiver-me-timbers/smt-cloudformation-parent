@@ -2,6 +2,7 @@
 package aws.ecs;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -43,6 +44,7 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver
      * 
      */
+    @JsonIgnore
     public CharSequence getLogDriver() {
         return logDriver;
     }
@@ -51,6 +53,7 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver
      * 
      */
+    @JsonIgnore
     public void setLogDriver(CharSequence logDriver) {
         this.logDriver = logDriver;
     }
@@ -64,6 +67,7 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options
      * 
      */
+    @JsonIgnore
     public Map<String, String> getOptions() {
         return options;
     }
@@ -72,6 +76,7 @@ public class LogConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-options
      * 
      */
+    @JsonIgnore
     public void setOptions(Map<String, String> options) {
         this.options = options;
     }

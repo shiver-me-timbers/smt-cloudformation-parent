@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket
      * 
      */
+    @JsonIgnore
     public CharSequence getS3Bucket() {
         return s3Bucket;
     }
@@ -58,6 +60,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3bucket
      * 
      */
+    @JsonIgnore
     public void setS3Bucket(CharSequence s3Bucket) {
         this.s3Bucket = s3Bucket;
     }
@@ -71,6 +74,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region
      * 
      */
+    @JsonIgnore
     public CharSequence getRegion() {
         return region;
     }
@@ -79,6 +83,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-region
      * 
      */
+    @JsonIgnore
     public void setRegion(CharSequence region) {
         this.region = region;
     }
@@ -92,6 +97,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix
      * 
      */
+    @JsonIgnore
     public CharSequence getS3Prefix() {
         return s3Prefix;
     }
@@ -100,6 +106,7 @@ public class LoggingInfo {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html#cfn-ssm-maintenancewindowtask-logginginfo-s3prefix
      * 
      */
+    @JsonIgnore
     public void setS3Prefix(CharSequence s3Prefix) {
         this.s3Prefix = s3Prefix;
     }

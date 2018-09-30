@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -44,6 +45,7 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-networkloadbalancerarns
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getNetworkLoadBalancerArns() {
         return networkLoadBalancerArns;
     }
@@ -52,6 +54,7 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-networkloadbalancerarns
      * 
      */
+    @JsonIgnore
     public void setNetworkLoadBalancerArns(List<CharSequence> networkLoadBalancerArns) {
         this.networkLoadBalancerArns = networkLoadBalancerArns;
     }
@@ -65,6 +68,7 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-acceptancerequired
      * 
      */
+    @JsonIgnore
     public Boolean getAcceptanceRequired() {
         return acceptanceRequired;
     }
@@ -73,6 +77,7 @@ public class VPCEndpointService {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointservice.html#cfn-ec2-vpcendpointservice-acceptancerequired
      * 
      */
+    @JsonIgnore
     public void setAcceptanceRequired(Boolean acceptanceRequired) {
         this.acceptanceRequired = acceptanceRequired;
     }

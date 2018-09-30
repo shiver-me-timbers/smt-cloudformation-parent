@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -76,6 +77,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
      * 
      */
+    @JsonIgnore
     public CharSequence getResourceId() {
         return resourceId;
     }
@@ -84,6 +86,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
      * 
      */
+    @JsonIgnore
     public void setResourceId(CharSequence resourceId) {
         this.resourceId = resourceId;
     }
@@ -97,6 +100,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceNamespace() {
         return serviceNamespace;
     }
@@ -105,6 +109,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace
      * 
      */
+    @JsonIgnore
     public void setServiceNamespace(CharSequence serviceNamespace) {
         this.serviceNamespace = serviceNamespace;
     }
@@ -118,6 +123,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension
      * 
      */
+    @JsonIgnore
     public CharSequence getScalableDimension() {
         return scalableDimension;
     }
@@ -126,6 +132,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension
      * 
      */
+    @JsonIgnore
     public void setScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
     }
@@ -139,6 +146,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-mincapacity
      * 
      */
+    @JsonIgnore
     public Integer getMinCapacity() {
         return minCapacity;
     }
@@ -147,6 +155,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-mincapacity
      * 
      */
+    @JsonIgnore
     public void setMinCapacity(Integer minCapacity) {
         this.minCapacity = minCapacity;
     }
@@ -160,6 +169,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations
      * 
      */
+    @JsonIgnore
     public List<TargetTrackingConfiguration> getTargetTrackingConfigurations() {
         return targetTrackingConfigurations;
     }
@@ -168,6 +178,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations
      * 
      */
+    @JsonIgnore
     public void setTargetTrackingConfigurations(List<TargetTrackingConfiguration> targetTrackingConfigurations) {
         this.targetTrackingConfigurations = targetTrackingConfigurations;
     }
@@ -181,6 +192,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity
      * 
      */
+    @JsonIgnore
     public Integer getMaxCapacity() {
         return maxCapacity;
     }
@@ -189,6 +201,7 @@ public class ScalingInstruction {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity
      * 
      */
+    @JsonIgnore
     public void setMaxCapacity(Integer maxCapacity) {
         this.maxCapacity = maxCapacity;
     }

@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import aws.Tag;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -183,6 +184,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo
      * 
      */
+    @JsonIgnore
     public Object getAdditionalInfo() {
         return additionalInfo;
     }
@@ -191,6 +193,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-additionalinfo
      * 
      */
+    @JsonIgnore
     public void setAdditionalInfo(Object additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
@@ -204,6 +207,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-applications
      * 
      */
+    @JsonIgnore
     public Set<Application> getApplications() {
         return applications;
     }
@@ -212,6 +216,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-applications
      * 
      */
+    @JsonIgnore
     public void setApplications(Set<Application> applications) {
         this.applications = applications;
     }
@@ -225,6 +230,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-autoscalingrole
      * 
      */
+    @JsonIgnore
     public CharSequence getAutoScalingRole() {
         return autoScalingRole;
     }
@@ -233,6 +239,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-autoscalingrole
      * 
      */
+    @JsonIgnore
     public void setAutoScalingRole(CharSequence autoScalingRole) {
         this.autoScalingRole = autoScalingRole;
     }
@@ -246,6 +253,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-bootstrapactions
      * 
      */
+    @JsonIgnore
     public Set<BootstrapActionConfig> getBootstrapActions() {
         return bootstrapActions;
     }
@@ -254,6 +262,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-bootstrapactions
      * 
      */
+    @JsonIgnore
     public void setBootstrapActions(Set<BootstrapActionConfig> bootstrapActions) {
         this.bootstrapActions = bootstrapActions;
     }
@@ -267,6 +276,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-configurations
      * 
      */
+    @JsonIgnore
     public Set<Configuration> getConfigurations() {
         return configurations;
     }
@@ -275,6 +285,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-configurations
      * 
      */
+    @JsonIgnore
     public void setConfigurations(Set<Configuration> configurations) {
         this.configurations = configurations;
     }
@@ -288,6 +299,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-customamiid
      * 
      */
+    @JsonIgnore
     public CharSequence getCustomAmiId() {
         return customAmiId;
     }
@@ -296,6 +308,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-customamiid
      * 
      */
+    @JsonIgnore
     public void setCustomAmiId(CharSequence customAmiId) {
         this.customAmiId = customAmiId;
     }
@@ -309,6 +322,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-ebsrootvolumesize
      * 
      */
+    @JsonIgnore
     public Integer getEbsRootVolumeSize() {
         return ebsRootVolumeSize;
     }
@@ -317,6 +331,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-ebsrootvolumesize
      * 
      */
+    @JsonIgnore
     public void setEbsRootVolumeSize(Integer ebsRootVolumeSize) {
         this.ebsRootVolumeSize = ebsRootVolumeSize;
     }
@@ -332,6 +347,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html
      * 
      */
+    @JsonIgnore
     public JobFlowInstancesConfig getInstances() {
         return instances;
     }
@@ -342,6 +358,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html
      * 
      */
+    @JsonIgnore
     public void setInstances(JobFlowInstancesConfig instances) {
         this.instances = instances;
     }
@@ -355,6 +372,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-jobflowrole
      * 
      */
+    @JsonIgnore
     public CharSequence getJobFlowRole() {
         return jobFlowRole;
     }
@@ -363,6 +381,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-jobflowrole
      * 
      */
+    @JsonIgnore
     public void setJobFlowRole(CharSequence jobFlowRole) {
         this.jobFlowRole = jobFlowRole;
     }
@@ -378,6 +397,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html
      * 
      */
+    @JsonIgnore
     public KerberosAttributes getKerberosAttributes() {
         return kerberosAttributes;
     }
@@ -388,6 +408,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html
      * 
      */
+    @JsonIgnore
     public void setKerberosAttributes(KerberosAttributes kerberosAttributes) {
         this.kerberosAttributes = kerberosAttributes;
     }
@@ -401,6 +422,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-loguri
      * 
      */
+    @JsonIgnore
     public CharSequence getLogUri() {
         return logUri;
     }
@@ -409,6 +431,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-loguri
      * 
      */
+    @JsonIgnore
     public void setLogUri(CharSequence logUri) {
         this.logUri = logUri;
     }
@@ -422,6 +445,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -430,6 +454,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -443,6 +468,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-releaselabel
      * 
      */
+    @JsonIgnore
     public CharSequence getReleaseLabel() {
         return releaseLabel;
     }
@@ -451,6 +477,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-releaselabel
      * 
      */
+    @JsonIgnore
     public void setReleaseLabel(CharSequence releaseLabel) {
         this.releaseLabel = releaseLabel;
     }
@@ -464,6 +491,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-scaledownbehavior
      * 
      */
+    @JsonIgnore
     public CharSequence getScaleDownBehavior() {
         return scaleDownBehavior;
     }
@@ -472,6 +500,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-scaledownbehavior
      * 
      */
+    @JsonIgnore
     public void setScaleDownBehavior(CharSequence scaleDownBehavior) {
         this.scaleDownBehavior = scaleDownBehavior;
     }
@@ -485,6 +514,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-securityconfiguration
      * 
      */
+    @JsonIgnore
     public CharSequence getSecurityConfiguration() {
         return securityConfiguration;
     }
@@ -493,6 +523,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-securityconfiguration
      * 
      */
+    @JsonIgnore
     public void setSecurityConfiguration(CharSequence securityConfiguration) {
         this.securityConfiguration = securityConfiguration;
     }
@@ -506,6 +537,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-servicerole
      * 
      */
+    @JsonIgnore
     public CharSequence getServiceRole() {
         return serviceRole;
     }
@@ -514,6 +546,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-servicerole
      * 
      */
+    @JsonIgnore
     public void setServiceRole(CharSequence serviceRole) {
         this.serviceRole = serviceRole;
     }
@@ -527,6 +560,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
      */
+    @JsonIgnore
     public List<Tag> getTags() {
         return tags;
     }
@@ -535,6 +569,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
      */
+    @JsonIgnore
     public void setTags(List<Tag> tags) {
         this.tags = tags;
     }
@@ -548,6 +583,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-visibletoallusers
      * 
      */
+    @JsonIgnore
     public Boolean getVisibleToAllUsers() {
         return visibleToAllUsers;
     }
@@ -556,6 +592,7 @@ public class Cluster {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-visibletoallusers
      * 
      */
+    @JsonIgnore
     public void setVisibleToAllUsers(Boolean visibleToAllUsers) {
         this.visibleToAllUsers = visibleToAllUsers;
     }

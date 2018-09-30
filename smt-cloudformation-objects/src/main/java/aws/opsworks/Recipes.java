@@ -3,6 +3,7 @@ package aws.opsworks;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -74,6 +75,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-configure
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getConfigure() {
         return configure;
     }
@@ -82,6 +84,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-configure
      * 
      */
+    @JsonIgnore
     public void setConfigure(Set<CharSequence> configure) {
         this.configure = configure;
     }
@@ -95,6 +98,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-deploy
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getDeploy() {
         return deploy;
     }
@@ -103,6 +107,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-deploy
      * 
      */
+    @JsonIgnore
     public void setDeploy(Set<CharSequence> deploy) {
         this.deploy = deploy;
     }
@@ -116,6 +121,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-setup
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getSetup() {
         return setup;
     }
@@ -124,6 +130,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-setup
      * 
      */
+    @JsonIgnore
     public void setSetup(Set<CharSequence> setup) {
         this.setup = setup;
     }
@@ -137,6 +144,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-shutdown
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getShutdown() {
         return shutdown;
     }
@@ -145,6 +153,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-shutdown
      * 
      */
+    @JsonIgnore
     public void setShutdown(Set<CharSequence> shutdown) {
         this.shutdown = shutdown;
     }
@@ -158,6 +167,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-undeploy
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getUndeploy() {
         return undeploy;
     }
@@ -166,6 +176,7 @@ public class Recipes {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html#cfn-opsworks-layer-customrecipes-undeploy
      * 
      */
+    @JsonIgnore
     public void setUndeploy(Set<CharSequence> undeploy) {
         this.undeploy = undeploy;
     }

@@ -2,6 +2,7 @@
 package aws.lambda;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -35,6 +36,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables
      * 
      */
+    @JsonIgnore
     public Map<String, String> getVariables() {
         return variables;
     }
@@ -43,6 +45,7 @@ public class Environment {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html#cfn-lambda-function-environment-variables
      * 
      */
+    @JsonIgnore
     public void setVariables(Map<String, String> variables) {
         this.variables = variables;
     }

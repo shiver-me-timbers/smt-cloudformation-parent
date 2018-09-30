@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -56,6 +57,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html
      * 
      */
+    @JsonIgnore
     public GitHubLocation getGitHubLocation() {
         return gitHubLocation;
     }
@@ -66,6 +68,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html
      * 
      */
+    @JsonIgnore
     public void setGitHubLocation(GitHubLocation gitHubLocation) {
         this.gitHubLocation = gitHubLocation;
     }
@@ -79,6 +82,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getRevisionType() {
         return revisionType;
     }
@@ -87,6 +91,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype
      * 
      */
+    @JsonIgnore
     public void setRevisionType(CharSequence revisionType) {
         this.revisionType = revisionType;
     }
@@ -102,6 +107,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html
      * 
      */
+    @JsonIgnore
     public S3Location getS3Location() {
         return s3Location;
     }
@@ -112,6 +118,7 @@ public class RevisionLocation {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html
      * 
      */
+    @JsonIgnore
     public void setS3Location(S3Location s3Location) {
         this.s3Location = s3Location;
     }

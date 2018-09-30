@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -126,6 +127,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchBufferingHints getBufferingHints() {
         return bufferingHints;
     }
@@ -136,6 +138,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html
      * 
      */
+    @JsonIgnore
     public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
@@ -151,6 +154,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
@@ -161,6 +165,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html
      * 
      */
+    @JsonIgnore
     public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
@@ -174,6 +179,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-domainarn
      * 
      */
+    @JsonIgnore
     public CharSequence getDomainARN() {
         return domainARN;
     }
@@ -182,6 +188,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-domainarn
      * 
      */
+    @JsonIgnore
     public void setDomainARN(CharSequence domainARN) {
         this.domainARN = domainARN;
     }
@@ -195,6 +202,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexname
      * 
      */
+    @JsonIgnore
     public CharSequence getIndexName() {
         return indexName;
     }
@@ -203,6 +211,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexname
      * 
      */
+    @JsonIgnore
     public void setIndexName(CharSequence indexName) {
         this.indexName = indexName;
     }
@@ -216,6 +225,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexrotationperiod
      * 
      */
+    @JsonIgnore
     public CharSequence getIndexRotationPeriod() {
         return indexRotationPeriod;
     }
@@ -224,6 +234,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-indexrotationperiod
      * 
      */
+    @JsonIgnore
     public void setIndexRotationPeriod(CharSequence indexRotationPeriod) {
         this.indexRotationPeriod = indexRotationPeriod;
     }
@@ -239,6 +250,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public ProcessingConfiguration getProcessingConfiguration() {
         return processingConfiguration;
     }
@@ -249,6 +261,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
@@ -264,6 +277,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html
      * 
      */
+    @JsonIgnore
     public ElasticsearchRetryOptions getRetryOptions() {
         return retryOptions;
     }
@@ -274,6 +288,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html
      * 
      */
+    @JsonIgnore
     public void setRetryOptions(ElasticsearchRetryOptions retryOptions) {
         this.retryOptions = retryOptions;
     }
@@ -287,6 +302,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public CharSequence getRoleARN() {
         return roleARN;
     }
@@ -295,6 +311,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-rolearn
      * 
      */
+    @JsonIgnore
     public void setRoleARN(CharSequence roleARN) {
         this.roleARN = roleARN;
     }
@@ -308,6 +325,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public CharSequence getS3BackupMode() {
         return s3BackupMode;
     }
@@ -316,6 +334,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-s3backupmode
      * 
      */
+    @JsonIgnore
     public void setS3BackupMode(CharSequence s3BackupMode) {
         this.s3BackupMode = s3BackupMode;
     }
@@ -331,6 +350,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public S3DestinationConfiguration getS3Configuration() {
         return s3Configuration;
     }
@@ -341,6 +361,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
+    @JsonIgnore
     public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
@@ -354,6 +375,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename
      * 
      */
+    @JsonIgnore
     public CharSequence getTypeName() {
         return typeName;
     }
@@ -362,6 +384,7 @@ public class ElasticsearchDestinationConfiguration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename
      * 
      */
+    @JsonIgnore
     public void setTypeName(CharSequence typeName) {
         this.typeName = typeName;
     }

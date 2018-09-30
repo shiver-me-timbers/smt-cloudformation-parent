@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -51,6 +52,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels
      * 
      */
+    @JsonIgnore
     public Map<String, String> getResponseModels() {
         return responseModels;
     }
@@ -59,6 +61,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responsemodels
      * 
      */
+    @JsonIgnore
     public void setResponseModels(Map<String, String> responseModels) {
         this.responseModels = responseModels;
     }
@@ -72,6 +75,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters
      * 
      */
+    @JsonIgnore
     public Map<String, Boolean> getResponseParameters() {
         return responseParameters;
     }
@@ -80,6 +84,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-responseparameters
      * 
      */
+    @JsonIgnore
     public void setResponseParameters(Map<String, Boolean> responseParameters) {
         this.responseParameters = responseParameters;
     }
@@ -93,6 +98,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
      */
+    @JsonIgnore
     public CharSequence getStatusCode() {
         return statusCode;
     }
@@ -101,6 +107,7 @@ public class MethodResponse {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html#cfn-apigateway-method-methodresponse-statuscode
      * 
      */
+    @JsonIgnore
     public void setStatusCode(CharSequence statusCode) {
         this.statusCode = statusCode;
     }

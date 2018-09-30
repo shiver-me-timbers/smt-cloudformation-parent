@@ -4,6 +4,7 @@ package aws.waf;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.wafregional.ByteMatchTuple;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -47,6 +48,7 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-bytematchtuples
      * 
      */
+    @JsonIgnore
     public Set<ByteMatchTuple> getByteMatchTuples() {
         return byteMatchTuples;
     }
@@ -55,6 +57,7 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-bytematchtuples
      * 
      */
+    @JsonIgnore
     public void setByteMatchTuples(Set<ByteMatchTuple> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
     }
@@ -68,6 +71,7 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -76,6 +80,7 @@ public class ByteMatchSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }

@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -146,6 +147,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
      * 
      */
+    @JsonIgnore
     public AliasTarget getAliasTarget() {
         return aliasTarget;
     }
@@ -156,6 +158,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
      * 
      */
+    @JsonIgnore
     public void setAliasTarget(AliasTarget aliasTarget) {
         this.aliasTarget = aliasTarget;
     }
@@ -169,6 +172,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment
      * 
      */
+    @JsonIgnore
     public CharSequence getComment() {
         return comment;
     }
@@ -177,6 +181,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment
      * 
      */
+    @JsonIgnore
     public void setComment(CharSequence comment) {
         this.comment = comment;
     }
@@ -190,6 +195,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-failover
      * 
      */
+    @JsonIgnore
     public CharSequence getFailover() {
         return failover;
     }
@@ -198,6 +204,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-failover
      * 
      */
+    @JsonIgnore
     public void setFailover(CharSequence failover) {
         this.failover = failover;
     }
@@ -213,6 +220,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html
      * 
      */
+    @JsonIgnore
     public GeoLocation getGeoLocation() {
         return geoLocation;
     }
@@ -223,6 +231,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html
      * 
      */
+    @JsonIgnore
     public void setGeoLocation(GeoLocation geoLocation) {
         this.geoLocation = geoLocation;
     }
@@ -236,6 +245,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid
      * 
      */
+    @JsonIgnore
     public CharSequence getHealthCheckId() {
         return healthCheckId;
     }
@@ -244,6 +254,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid
      * 
      */
+    @JsonIgnore
     public void setHealthCheckId(CharSequence healthCheckId) {
         this.healthCheckId = healthCheckId;
     }
@@ -257,6 +268,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzoneid
      * 
      */
+    @JsonIgnore
     public CharSequence getHostedZoneId() {
         return hostedZoneId;
     }
@@ -265,6 +277,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzoneid
      * 
      */
+    @JsonIgnore
     public void setHostedZoneId(CharSequence hostedZoneId) {
         this.hostedZoneId = hostedZoneId;
     }
@@ -278,6 +291,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzonename
      * 
      */
+    @JsonIgnore
     public CharSequence getHostedZoneName() {
         return hostedZoneName;
     }
@@ -286,6 +300,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-hostedzonename
      * 
      */
+    @JsonIgnore
     public void setHostedZoneName(CharSequence hostedZoneName) {
         this.hostedZoneName = hostedZoneName;
     }
@@ -299,6 +314,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name
      * 
      */
+    @JsonIgnore
     public CharSequence getName() {
         return name;
     }
@@ -307,6 +323,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-name
      * 
      */
+    @JsonIgnore
     public void setName(CharSequence name) {
         this.name = name;
     }
@@ -320,6 +337,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-region
      * 
      */
+    @JsonIgnore
     public CharSequence getRegion() {
         return region;
     }
@@ -328,6 +346,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-region
      * 
      */
+    @JsonIgnore
     public void setRegion(CharSequence region) {
         this.region = region;
     }
@@ -341,6 +360,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-resourcerecords
      * 
      */
+    @JsonIgnore
     public List<CharSequence> getResourceRecords() {
         return resourceRecords;
     }
@@ -349,6 +369,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-resourcerecords
      * 
      */
+    @JsonIgnore
     public void setResourceRecords(List<CharSequence> resourceRecords) {
         this.resourceRecords = resourceRecords;
     }
@@ -362,6 +383,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-setidentifier
      * 
      */
+    @JsonIgnore
     public CharSequence getSetIdentifier() {
         return setIdentifier;
     }
@@ -370,6 +392,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-setidentifier
      * 
      */
+    @JsonIgnore
     public void setSetIdentifier(CharSequence setIdentifier) {
         this.setIdentifier = setIdentifier;
     }
@@ -383,6 +406,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-ttl
      * 
      */
+    @JsonIgnore
     public CharSequence getTTL() {
         return tTL;
     }
@@ -391,6 +415,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-ttl
      * 
      */
+    @JsonIgnore
     public void setTTL(CharSequence tTL) {
         this.tTL = tTL;
     }
@@ -404,6 +429,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -412,6 +438,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -425,6 +452,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-weight
      * 
      */
+    @JsonIgnore
     public Integer getWeight() {
         return weight;
     }
@@ -433,6 +461,7 @@ public class RecordSet {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-weight
      * 
      */
+    @JsonIgnore
     public void setWeight(Integer weight) {
         this.weight = weight;
     }

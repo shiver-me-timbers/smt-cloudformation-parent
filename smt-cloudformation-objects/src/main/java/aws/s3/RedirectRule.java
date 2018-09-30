@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -66,6 +67,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-hostname
      * 
      */
+    @JsonIgnore
     public CharSequence getHostName() {
         return hostName;
     }
@@ -74,6 +76,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-hostname
      * 
      */
+    @JsonIgnore
     public void setHostName(CharSequence hostName) {
         this.hostName = hostName;
     }
@@ -87,6 +90,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-httpredirectcode
      * 
      */
+    @JsonIgnore
     public CharSequence getHttpRedirectCode() {
         return httpRedirectCode;
     }
@@ -95,6 +99,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-httpredirectcode
      * 
      */
+    @JsonIgnore
     public void setHttpRedirectCode(CharSequence httpRedirectCode) {
         this.httpRedirectCode = httpRedirectCode;
     }
@@ -108,6 +113,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-protocol
      * 
      */
+    @JsonIgnore
     public CharSequence getProtocol() {
         return protocol;
     }
@@ -116,6 +122,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-protocol
      * 
      */
+    @JsonIgnore
     public void setProtocol(CharSequence protocol) {
         this.protocol = protocol;
     }
@@ -129,6 +136,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeyprefixwith
      * 
      */
+    @JsonIgnore
     public CharSequence getReplaceKeyPrefixWith() {
         return replaceKeyPrefixWith;
     }
@@ -137,6 +145,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeyprefixwith
      * 
      */
+    @JsonIgnore
     public void setReplaceKeyPrefixWith(CharSequence replaceKeyPrefixWith) {
         this.replaceKeyPrefixWith = replaceKeyPrefixWith;
     }
@@ -150,6 +159,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeywith
      * 
      */
+    @JsonIgnore
     public CharSequence getReplaceKeyWith() {
         return replaceKeyWith;
     }
@@ -158,6 +168,7 @@ public class RedirectRule {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html#cfn-s3-websiteconfiguration-redirectrule-replacekeywith
      * 
      */
+    @JsonIgnore
     public void setReplaceKeyWith(CharSequence replaceKeyWith) {
         this.replaceKeyWith = replaceKeyWith;
     }

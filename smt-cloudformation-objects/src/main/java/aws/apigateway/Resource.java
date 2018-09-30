@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -50,6 +51,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid
      * 
      */
+    @JsonIgnore
     public CharSequence getParentId() {
         return parentId;
     }
@@ -58,6 +60,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-parentid
      * 
      */
+    @JsonIgnore
     public void setParentId(CharSequence parentId) {
         this.parentId = parentId;
     }
@@ -71,6 +74,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart
      * 
      */
+    @JsonIgnore
     public CharSequence getPathPart() {
         return pathPart;
     }
@@ -79,6 +83,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-pathpart
      * 
      */
+    @JsonIgnore
     public void setPathPart(CharSequence pathPart) {
         this.pathPart = pathPart;
     }
@@ -92,6 +97,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid
      * 
      */
+    @JsonIgnore
     public CharSequence getRestApiId() {
         return restApiId;
     }
@@ -100,6 +106,7 @@ public class Resource {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-resource.html#cfn-apigateway-resource-restapiid
      * 
      */
+    @JsonIgnore
     public void setRestApiId(CharSequence restApiId) {
         this.restApiId = restApiId;
     }

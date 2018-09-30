@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -144,6 +145,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters
      * 
      */
+    @JsonIgnore
     public Set<CharSequence> getCacheKeyParameters() {
         return cacheKeyParameters;
     }
@@ -152,6 +154,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters
      * 
      */
+    @JsonIgnore
     public void setCacheKeyParameters(Set<CharSequence> cacheKeyParameters) {
         this.cacheKeyParameters = cacheKeyParameters;
     }
@@ -165,6 +168,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachenamespace
      * 
      */
+    @JsonIgnore
     public CharSequence getCacheNamespace() {
         return cacheNamespace;
     }
@@ -173,6 +177,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachenamespace
      * 
      */
+    @JsonIgnore
     public void setCacheNamespace(CharSequence cacheNamespace) {
         this.cacheNamespace = cacheNamespace;
     }
@@ -186,6 +191,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid
      * 
      */
+    @JsonIgnore
     public CharSequence getConnectionId() {
         return connectionId;
     }
@@ -194,6 +200,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid
      * 
      */
+    @JsonIgnore
     public void setConnectionId(CharSequence connectionId) {
         this.connectionId = connectionId;
     }
@@ -207,6 +214,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype
      * 
      */
+    @JsonIgnore
     public CharSequence getConnectionType() {
         return connectionType;
     }
@@ -215,6 +223,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype
      * 
      */
+    @JsonIgnore
     public void setConnectionType(CharSequence connectionType) {
         this.connectionType = connectionType;
     }
@@ -228,6 +237,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling
      * 
      */
+    @JsonIgnore
     public CharSequence getContentHandling() {
         return contentHandling;
     }
@@ -236,6 +246,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling
      * 
      */
+    @JsonIgnore
     public void setContentHandling(CharSequence contentHandling) {
         this.contentHandling = contentHandling;
     }
@@ -249,6 +260,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-credentials
      * 
      */
+    @JsonIgnore
     public CharSequence getCredentials() {
         return credentials;
     }
@@ -257,6 +269,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-credentials
      * 
      */
+    @JsonIgnore
     public void setCredentials(CharSequence credentials) {
         this.credentials = credentials;
     }
@@ -270,6 +283,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationhttpmethod
      * 
      */
+    @JsonIgnore
     public CharSequence getIntegrationHttpMethod() {
         return integrationHttpMethod;
     }
@@ -278,6 +292,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationhttpmethod
      * 
      */
+    @JsonIgnore
     public void setIntegrationHttpMethod(CharSequence integrationHttpMethod) {
         this.integrationHttpMethod = integrationHttpMethod;
     }
@@ -291,6 +306,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationresponses
      * 
      */
+    @JsonIgnore
     public Set<IntegrationResponse> getIntegrationResponses() {
         return integrationResponses;
     }
@@ -299,6 +315,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationresponses
      * 
      */
+    @JsonIgnore
     public void setIntegrationResponses(Set<IntegrationResponse> integrationResponses) {
         this.integrationResponses = integrationResponses;
     }
@@ -312,6 +329,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-passthroughbehavior
      * 
      */
+    @JsonIgnore
     public CharSequence getPassthroughBehavior() {
         return passthroughBehavior;
     }
@@ -320,6 +338,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-passthroughbehavior
      * 
      */
+    @JsonIgnore
     public void setPassthroughBehavior(CharSequence passthroughBehavior) {
         this.passthroughBehavior = passthroughBehavior;
     }
@@ -333,6 +352,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requestparameters
      * 
      */
+    @JsonIgnore
     public Map<String, String> getRequestParameters() {
         return requestParameters;
     }
@@ -341,6 +361,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requestparameters
      * 
      */
+    @JsonIgnore
     public void setRequestParameters(Map<String, String> requestParameters) {
         this.requestParameters = requestParameters;
     }
@@ -354,6 +375,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates
      * 
      */
+    @JsonIgnore
     public Map<String, String> getRequestTemplates() {
         return requestTemplates;
     }
@@ -362,6 +384,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates
      * 
      */
+    @JsonIgnore
     public void setRequestTemplates(Map<String, String> requestTemplates) {
         this.requestTemplates = requestTemplates;
     }
@@ -375,6 +398,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
      * 
      */
+    @JsonIgnore
     public Integer getTimeoutInMillis() {
         return timeoutInMillis;
     }
@@ -383,6 +407,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
      * 
      */
+    @JsonIgnore
     public void setTimeoutInMillis(Integer timeoutInMillis) {
         this.timeoutInMillis = timeoutInMillis;
     }
@@ -396,6 +421,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type
      * 
      */
+    @JsonIgnore
     public CharSequence getType() {
         return type;
     }
@@ -404,6 +430,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type
      * 
      */
+    @JsonIgnore
     public void setType(CharSequence type) {
         this.type = type;
     }
@@ -417,6 +444,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-uri
      * 
      */
+    @JsonIgnore
     public CharSequence getUri() {
         return uri;
     }
@@ -425,6 +453,7 @@ public class Integration {
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-uri
      * 
      */
+    @JsonIgnore
     public void setUri(CharSequence uri) {
         this.uri = uri;
     }

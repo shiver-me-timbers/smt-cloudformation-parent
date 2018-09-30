@@ -1,11 +1,14 @@
 
 package aws.iot1click;
 
+import java.util.List;
+import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -13,9 +16,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
-
-import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -61,10 +61,12 @@ public class PlacementResource
         super(name);
     }
 
+    @JsonIgnore
     public java.lang.String getType() {
         return type;
     }
 
+    @JsonIgnore
     public void setType(java.lang.String type) {
         this.type = type;
     }
@@ -80,6 +82,7 @@ public class PlacementResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
      * 
      */
+    @JsonIgnore
     public Placement getProperties() {
         return properties;
     }
@@ -90,6 +93,7 @@ public class PlacementResource
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html
      * 
      */
+    @JsonIgnore
     public void setProperties(Placement properties) {
         this.properties = properties;
     }
