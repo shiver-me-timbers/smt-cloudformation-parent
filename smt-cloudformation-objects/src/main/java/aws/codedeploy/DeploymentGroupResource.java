@@ -1,8 +1,6 @@
 
 package aws.codedeploy;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.Resource;
@@ -15,6 +13,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * DeploymentGroupResource
@@ -24,12 +25,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "Type",
     "Properties"
 })
 public class DeploymentGroupResource
     extends Resource
 {
 
+    @JsonProperty("Type")
+    private java.lang.String type = "AWS::CodeDeploy::DeploymentGroup";
     /**
      * DeploymentGroup
      * <p>
@@ -55,6 +59,19 @@ public class DeploymentGroupResource
         super(name);
     }
 
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public DeploymentGroupResource withType(java.lang.String type) {
+        this.type = type;
+        return this;
+    }
+
     /**
      * DeploymentGroup
      * <p>
@@ -77,12 +94,6 @@ public class DeploymentGroupResource
 
     public DeploymentGroupResource withProperties(DeploymentGroup properties) {
         this.properties = properties;
-        return this;
-    }
-
-    @Override
-    public DeploymentGroupResource withType(java.lang.String type) {
-        super.withType(type);
         return this;
     }
 
@@ -130,12 +141,12 @@ public class DeploymentGroupResource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("properties", properties).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("properties", properties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(properties).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(type).append(properties).toHashCode();
     }
 
     @Override
@@ -147,7 +158,7 @@ public class DeploymentGroupResource
             return false;
         }
         DeploymentGroupResource rhs = ((DeploymentGroupResource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(properties, rhs.properties).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(type, rhs.type).append(properties, rhs.properties).isEquals();
     }
 
 }

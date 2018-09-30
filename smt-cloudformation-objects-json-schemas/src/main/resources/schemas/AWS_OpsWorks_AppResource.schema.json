@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.opsworks.AppResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorks::App"
+    },
     "Properties" : {
       "$ref" : "AWS_OpsWorks_App.schema.json"
     }

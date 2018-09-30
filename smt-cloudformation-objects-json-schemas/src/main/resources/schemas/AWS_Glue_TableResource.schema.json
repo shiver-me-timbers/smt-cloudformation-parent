@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.TableResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Table"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Table.schema.json"
     }

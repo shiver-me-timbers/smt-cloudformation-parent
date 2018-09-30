@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dms.ReplicationTaskResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::ReplicationTask"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_ReplicationTask.schema.json"
     }

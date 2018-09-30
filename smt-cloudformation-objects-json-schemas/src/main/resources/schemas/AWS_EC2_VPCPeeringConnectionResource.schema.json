@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCPeeringConnectionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCPeeringConnection"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCPeeringConnection.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.elasticloadbalancing.LoadBalancerResource",
   "javaInterfaces" : [ "aws.HasAttributes<LoadBalancerAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticLoadBalancing::LoadBalancer"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.schema.json"
     }

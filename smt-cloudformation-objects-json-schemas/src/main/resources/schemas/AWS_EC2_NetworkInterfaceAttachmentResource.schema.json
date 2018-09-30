@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.NetworkInterfaceAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::NetworkInterfaceAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_NetworkInterfaceAttachment.schema.json"
     }

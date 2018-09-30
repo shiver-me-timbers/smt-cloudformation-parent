@@ -10,6 +10,10 @@
   "javaType" : "aws.route53.HostedZoneResource",
   "javaInterfaces" : [ "aws.HasAttributes<HostedZoneAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53::HostedZone"
+    },
     "Properties" : {
       "$ref" : "AWS_Route53_HostedZone.schema.json"
     }

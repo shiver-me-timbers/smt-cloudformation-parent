@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.lambda.AliasResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::Alias"
+    },
     "Properties" : {
       "$ref" : "AWS_Lambda_Alias.schema.json"
     }

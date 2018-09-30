@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.IPSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::IPSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_IPSet.schema.json"
     }

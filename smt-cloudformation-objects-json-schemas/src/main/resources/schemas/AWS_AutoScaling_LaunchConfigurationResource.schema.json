@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.autoscaling.LaunchConfigurationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AutoScaling::LaunchConfiguration"
+    },
     "Properties" : {
       "$ref" : "AWS_AutoScaling_LaunchConfiguration.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ses.ReceiptFilterResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SES::ReceiptFilter"
+    },
     "Properties" : {
       "$ref" : "AWS_SES_ReceiptFilter.schema.json"
     }

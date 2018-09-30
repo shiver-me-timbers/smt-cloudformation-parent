@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.route53.RecordSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53::RecordSet"
+    },
     "Properties" : {
       "$ref" : "AWS_Route53_RecordSet.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.apigateway.RestApiResource",
   "javaInterfaces" : [ "aws.HasAttributes<RestApiAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::RestApi"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_RestApi.schema.json"
     }

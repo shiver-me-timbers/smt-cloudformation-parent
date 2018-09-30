@@ -10,6 +10,10 @@
   "javaType" : "aws.neptune.DBClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<DBClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Neptune::DBCluster"
+    },
     "Properties" : {
       "$ref" : "AWS_Neptune_DBCluster.schema.json"
     }

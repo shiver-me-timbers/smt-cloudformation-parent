@@ -10,6 +10,10 @@
   "javaType" : "aws.iam.AccessKeyResource",
   "javaInterfaces" : [ "aws.HasAttributes<AccessKeyAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::AccessKey"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_AccessKey.schema.json"
     }

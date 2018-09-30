@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.efs.MountTargetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EFS::MountTarget"
+    },
     "Properties" : {
       "$ref" : "AWS_EFS_MountTarget.schema.json"
     }

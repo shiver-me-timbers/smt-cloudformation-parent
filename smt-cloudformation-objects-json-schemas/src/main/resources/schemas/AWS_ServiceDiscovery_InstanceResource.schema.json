@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicediscovery.InstanceResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceDiscovery::Instance"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceDiscovery_Instance.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.SqlInjectionMatchSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::SqlInjectionMatchSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_SqlInjectionMatchSet.schema.json"
     }

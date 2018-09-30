@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.SecurityGroupEgressResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SecurityGroupEgress"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SecurityGroupEgress.schema.json"
     }

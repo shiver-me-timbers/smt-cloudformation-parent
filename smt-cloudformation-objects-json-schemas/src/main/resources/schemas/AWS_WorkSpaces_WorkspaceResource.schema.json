@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.workspaces.WorkspaceResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WorkSpaces::Workspace"
+    },
     "Properties" : {
       "$ref" : "AWS_WorkSpaces_Workspace.schema.json"
     }

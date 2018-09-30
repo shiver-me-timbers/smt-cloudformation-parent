@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.autoscaling.LifecycleHookResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AutoScaling::LifecycleHook"
+    },
     "Properties" : {
       "$ref" : "AWS_AutoScaling_LifecycleHook.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.codepipeline.CustomActionTypeResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodePipeline::CustomActionType"
+    },
     "Properties" : {
       "$ref" : "AWS_CodePipeline_CustomActionType.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ssm.PatchBaselineResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::PatchBaseline"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_PatchBaseline.schema.json"
     }

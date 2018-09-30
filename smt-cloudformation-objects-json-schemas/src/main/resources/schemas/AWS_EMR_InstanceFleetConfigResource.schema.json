@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.emr.InstanceFleetConfigResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EMR::InstanceFleetConfig"
+    },
     "Properties" : {
       "$ref" : "AWS_EMR_InstanceFleetConfig.schema.json"
     }

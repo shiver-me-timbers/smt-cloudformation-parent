@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.batch.ComputeEnvironmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Batch::ComputeEnvironment"
+    },
     "Properties" : {
       "$ref" : "AWS_Batch_ComputeEnvironment.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.opsworks.VolumeResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorks::Volume"
+    },
     "Properties" : {
       "$ref" : "AWS_OpsWorks_Volume.schema.json"
     }

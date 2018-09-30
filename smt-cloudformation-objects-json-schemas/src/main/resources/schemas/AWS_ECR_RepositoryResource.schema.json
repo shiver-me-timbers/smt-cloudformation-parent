@@ -10,6 +10,10 @@
   "javaType" : "aws.ecr.RepositoryResource",
   "javaInterfaces" : [ "aws.HasAttributes<RepositoryAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ECR::Repository"
+    },
     "Properties" : {
       "$ref" : "AWS_ECR_Repository.schema.json"
     }

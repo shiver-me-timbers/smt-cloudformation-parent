@@ -10,6 +10,10 @@
   "javaType" : "aws.ec2.EIPResource",
   "javaInterfaces" : [ "aws.HasAttributes<EIPAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::EIP"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_EIP.schema.json"
     }

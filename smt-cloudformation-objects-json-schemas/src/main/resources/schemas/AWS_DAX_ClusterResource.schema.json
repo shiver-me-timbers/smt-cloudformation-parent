@@ -10,6 +10,10 @@
   "javaType" : "aws.dax.ClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DAX::Cluster"
+    },
     "Properties" : {
       "$ref" : "AWS_DAX_Cluster.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.cloudtrail.TrailResource",
   "javaInterfaces" : [ "aws.HasAttributes<TrailAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudTrail::Trail"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudTrail_Trail.schema.json"
     }

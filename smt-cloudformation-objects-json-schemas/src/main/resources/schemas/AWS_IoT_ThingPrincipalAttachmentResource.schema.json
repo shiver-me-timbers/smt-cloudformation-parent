@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iot.ThingPrincipalAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT::ThingPrincipalAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT_ThingPrincipalAttachment.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dms.CertificateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::Certificate"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_Certificate.schema.json"
     }

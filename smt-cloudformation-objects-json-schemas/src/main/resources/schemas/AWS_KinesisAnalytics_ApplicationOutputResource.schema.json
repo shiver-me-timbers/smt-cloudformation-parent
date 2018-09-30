@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.kinesisanalytics.ApplicationOutputResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KinesisAnalytics::ApplicationOutput"
+    },
     "Properties" : {
       "$ref" : "AWS_KinesisAnalytics_ApplicationOutput.schema.json"
     }

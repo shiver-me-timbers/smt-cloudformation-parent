@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPNConnectionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPNConnection"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPNConnection.schema.json"
     }

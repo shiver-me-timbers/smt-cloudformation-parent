@@ -10,6 +10,10 @@
   "javaType" : "aws.neptune.DBInstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<DBInstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Neptune::DBInstance"
+    },
     "Properties" : {
       "$ref" : "AWS_Neptune_DBInstance.schema.json"
     }

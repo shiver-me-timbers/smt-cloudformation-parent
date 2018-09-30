@@ -10,6 +10,10 @@
   "javaType" : "aws.lambda.VersionResource",
   "javaInterfaces" : [ "aws.HasAttributes<VersionAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::Version"
+    },
     "Properties" : {
       "$ref" : "AWS_Lambda_Version.schema.json"
     }

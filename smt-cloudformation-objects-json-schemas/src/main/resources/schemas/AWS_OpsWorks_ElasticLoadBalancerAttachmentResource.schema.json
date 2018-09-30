@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.opsworks.ElasticLoadBalancerAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorks::ElasticLoadBalancerAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_OpsWorks_ElasticLoadBalancerAttachment.schema.json"
     }

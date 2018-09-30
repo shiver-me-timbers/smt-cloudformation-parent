@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.waf.RuleResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAF::Rule"
+    },
     "Properties" : {
       "$ref" : "AWS_WAF_Rule.schema.json"
     }

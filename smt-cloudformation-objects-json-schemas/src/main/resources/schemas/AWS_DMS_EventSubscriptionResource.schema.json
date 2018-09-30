@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dms.EventSubscriptionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::EventSubscription"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_EventSubscription.schema.json"
     }

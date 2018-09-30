@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticache.SecurityGroupIngressResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElastiCache::SecurityGroupIngress"
+    },
     "Properties" : {
       "$ref" : "AWS_ElastiCache_SecurityGroupIngress.schema.json"
     }

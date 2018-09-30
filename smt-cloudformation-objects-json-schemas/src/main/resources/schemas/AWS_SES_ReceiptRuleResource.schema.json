@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ses.ReceiptRuleResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SES::ReceiptRule"
+    },
     "Properties" : {
       "$ref" : "AWS_SES_ReceiptRule.schema.json"
     }

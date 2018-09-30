@@ -10,6 +10,10 @@
   "javaType" : "aws.servicediscovery.ServiceResource",
   "javaInterfaces" : [ "aws.HasAttributes<ServiceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceDiscovery::Service"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceDiscovery_Service.schema.json"
     }

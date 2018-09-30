@@ -10,6 +10,10 @@
   "javaType" : "aws.dms.ReplicationInstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<ReplicationInstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::ReplicationInstance"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_ReplicationInstance.schema.json"
     }

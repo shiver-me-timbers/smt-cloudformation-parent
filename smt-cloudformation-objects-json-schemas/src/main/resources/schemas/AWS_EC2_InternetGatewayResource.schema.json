@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.InternetGatewayResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::InternetGateway"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_InternetGateway.schema.json"
     }

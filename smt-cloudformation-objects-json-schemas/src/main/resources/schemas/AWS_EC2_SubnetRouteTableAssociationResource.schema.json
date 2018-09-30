@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.SubnetRouteTableAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SubnetRouteTableAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SubnetRouteTableAssociation.schema.json"
     }

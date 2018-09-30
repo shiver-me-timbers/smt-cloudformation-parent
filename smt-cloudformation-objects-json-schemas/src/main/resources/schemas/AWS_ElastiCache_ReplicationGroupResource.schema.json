@@ -10,6 +10,10 @@
   "javaType" : "aws.elasticache.ReplicationGroupResource",
   "javaInterfaces" : [ "aws.HasAttributes<ReplicationGroupAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElastiCache::ReplicationGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_ElastiCache_ReplicationGroup.schema.json"
     }

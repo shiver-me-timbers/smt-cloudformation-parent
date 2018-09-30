@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.NetworkAclEntryResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::NetworkAclEntry"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_NetworkAclEntry.schema.json"
     }

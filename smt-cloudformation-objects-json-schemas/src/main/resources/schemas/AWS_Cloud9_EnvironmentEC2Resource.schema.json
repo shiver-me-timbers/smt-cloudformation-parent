@@ -10,6 +10,10 @@
   "javaType" : "aws.cloud9.EnvironmentEC2Resource",
   "javaInterfaces" : [ "aws.HasAttributes<EnvironmentEC2Attributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cloud9::EnvironmentEC2"
+    },
     "Properties" : {
       "$ref" : "AWS_Cloud9_EnvironmentEC2.schema.json"
     }

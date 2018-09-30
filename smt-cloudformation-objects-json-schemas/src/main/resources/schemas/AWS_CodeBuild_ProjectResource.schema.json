@@ -10,6 +10,10 @@
   "javaType" : "aws.codebuild.ProjectResource",
   "javaInterfaces" : [ "aws.HasAttributes<ProjectAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeBuild::Project"
+    },
     "Properties" : {
       "$ref" : "AWS_CodeBuild_Project.schema.json"
     }

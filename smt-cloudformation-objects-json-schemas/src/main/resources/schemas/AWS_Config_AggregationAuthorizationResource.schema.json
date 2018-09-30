@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.config.AggregationAuthorizationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::AggregationAuthorization"
+    },
     "Properties" : {
       "$ref" : "AWS_Config_AggregationAuthorization.schema.json"
     }

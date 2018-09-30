@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.DBClusterParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBClusterParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBClusterParameterGroup.schema.json"
     }

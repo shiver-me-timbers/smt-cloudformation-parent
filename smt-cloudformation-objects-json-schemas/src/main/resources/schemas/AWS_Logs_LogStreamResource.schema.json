@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.logs.LogStreamResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Logs::LogStream"
+    },
     "Properties" : {
       "$ref" : "AWS_Logs_LogStream.schema.json"
     }

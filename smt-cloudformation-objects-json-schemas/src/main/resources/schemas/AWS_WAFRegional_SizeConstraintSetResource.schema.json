@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.SizeConstraintSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::SizeConstraintSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_SizeConstraintSet.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.dms.EndpointResource",
   "javaInterfaces" : [ "aws.HasAttributes<EndpointAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::Endpoint"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_Endpoint.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cloudwatch.DashboardResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudWatch::Dashboard"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudWatch_Dashboard.schema.json"
     }

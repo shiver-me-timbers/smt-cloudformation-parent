@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.DetectorResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::Detector"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_Detector.schema.json"
     }

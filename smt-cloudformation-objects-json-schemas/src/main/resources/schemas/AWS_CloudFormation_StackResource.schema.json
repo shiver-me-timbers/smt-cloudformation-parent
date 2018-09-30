@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cloudformation.StackResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFormation::Stack"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFormation_Stack.schema.json"
     }

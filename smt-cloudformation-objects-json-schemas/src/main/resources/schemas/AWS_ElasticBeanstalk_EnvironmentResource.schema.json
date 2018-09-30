@@ -10,6 +10,10 @@
   "javaType" : "aws.elasticbeanstalk.EnvironmentResource",
   "javaInterfaces" : [ "aws.HasAttributes<EnvironmentAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticBeanstalk::Environment"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticBeanstalk_Environment.schema.json"
     }

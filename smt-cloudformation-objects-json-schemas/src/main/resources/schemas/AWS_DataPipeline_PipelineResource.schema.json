@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.datapipeline.PipelineResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DataPipeline::Pipeline"
+    },
     "Properties" : {
       "$ref" : "AWS_DataPipeline_Pipeline.schema.json"
     }

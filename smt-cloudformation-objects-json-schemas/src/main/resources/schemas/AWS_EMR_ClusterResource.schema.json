@@ -10,6 +10,10 @@
   "javaType" : "aws.emr.ClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EMR::Cluster"
+    },
     "Properties" : {
       "$ref" : "AWS_EMR_Cluster.schema.json"
     }

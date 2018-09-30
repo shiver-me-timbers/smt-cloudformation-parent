@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.DHCPOptionsResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::DHCPOptions"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_DHCPOptions.schema.json"
     }

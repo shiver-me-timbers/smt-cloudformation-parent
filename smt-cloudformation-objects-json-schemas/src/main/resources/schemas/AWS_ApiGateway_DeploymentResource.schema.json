@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.DeploymentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::Deployment"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_Deployment.schema.json"
     }

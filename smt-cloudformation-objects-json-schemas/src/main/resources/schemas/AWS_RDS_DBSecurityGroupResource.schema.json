@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.DBSecurityGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBSecurityGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBSecurityGroup.schema.json"
     }

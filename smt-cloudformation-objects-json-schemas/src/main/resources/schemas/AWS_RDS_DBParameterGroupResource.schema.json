@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.DBParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBParameterGroup.schema.json"
     }

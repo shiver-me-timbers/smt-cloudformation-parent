@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.autoscaling.ScheduledActionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AutoScaling::ScheduledAction"
+    },
     "Properties" : {
       "$ref" : "AWS_AutoScaling_ScheduledAction.schema.json"
     }

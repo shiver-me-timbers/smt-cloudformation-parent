@@ -10,6 +10,10 @@
   "javaType" : "aws.kinesisfirehose.DeliveryStreamResource",
   "javaInterfaces" : [ "aws.HasAttributes<DeliveryStreamAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KinesisFirehose::DeliveryStream"
+    },
     "Properties" : {
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.schema.json"
     }

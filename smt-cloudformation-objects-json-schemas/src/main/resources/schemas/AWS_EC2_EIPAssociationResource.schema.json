@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.EIPAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::EIPAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_EIPAssociation.schema.json"
     }

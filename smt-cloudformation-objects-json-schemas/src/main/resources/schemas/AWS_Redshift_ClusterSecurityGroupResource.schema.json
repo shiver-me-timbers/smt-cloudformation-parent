@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.redshift.ClusterSecurityGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Redshift::ClusterSecurityGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Redshift_ClusterSecurityGroup.schema.json"
     }

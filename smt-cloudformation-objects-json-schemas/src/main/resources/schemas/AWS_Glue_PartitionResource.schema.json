@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.PartitionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Partition"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Partition.schema.json"
     }

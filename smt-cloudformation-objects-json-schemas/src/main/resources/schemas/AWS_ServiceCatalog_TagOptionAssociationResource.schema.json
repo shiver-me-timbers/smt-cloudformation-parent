@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.TagOptionAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::TagOptionAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_TagOptionAssociation.schema.json"
     }

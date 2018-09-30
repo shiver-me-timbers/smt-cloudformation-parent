@@ -10,6 +10,10 @@
   "javaType" : "aws.appsync.ApiKeyResource",
   "javaInterfaces" : [ "aws.HasAttributes<ApiKeyAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::ApiKey"
+    },
     "Properties" : {
       "$ref" : "AWS_AppSync_ApiKey.schema.json"
     }

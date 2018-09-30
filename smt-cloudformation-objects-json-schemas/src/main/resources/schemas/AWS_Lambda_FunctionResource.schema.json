@@ -10,6 +10,10 @@
   "javaType" : "aws.lambda.FunctionResource",
   "javaInterfaces" : [ "aws.HasAttributes<FunctionAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::Function"
+    },
     "Properties" : {
       "$ref" : "AWS_Lambda_Function.schema.json"
     }

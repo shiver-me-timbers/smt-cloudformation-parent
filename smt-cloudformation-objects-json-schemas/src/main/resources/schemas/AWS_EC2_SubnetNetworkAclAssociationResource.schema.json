@@ -10,6 +10,10 @@
   "javaType" : "aws.ec2.SubnetNetworkAclAssociationResource",
   "javaInterfaces" : [ "aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SubnetNetworkAclAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SubnetNetworkAclAssociation.schema.json"
     }

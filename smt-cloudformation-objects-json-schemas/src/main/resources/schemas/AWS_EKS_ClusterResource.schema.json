@@ -10,6 +10,10 @@
   "javaType" : "aws.eks.ClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EKS::Cluster"
+    },
     "Properties" : {
       "$ref" : "AWS_EKS_Cluster.schema.json"
     }

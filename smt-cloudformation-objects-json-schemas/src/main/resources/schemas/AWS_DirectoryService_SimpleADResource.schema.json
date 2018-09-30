@@ -10,6 +10,10 @@
   "javaType" : "aws.directoryservice.SimpleADResource",
   "javaInterfaces" : [ "aws.HasAttributes<SimpleADAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DirectoryService::SimpleAD"
+    },
     "Properties" : {
       "$ref" : "AWS_DirectoryService_SimpleAD.schema.json"
     }

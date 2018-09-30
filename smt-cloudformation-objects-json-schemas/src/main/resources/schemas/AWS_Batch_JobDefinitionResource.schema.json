@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.batch.JobDefinitionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Batch::JobDefinition"
+    },
     "Properties" : {
       "$ref" : "AWS_Batch_JobDefinition.schema.json"
     }

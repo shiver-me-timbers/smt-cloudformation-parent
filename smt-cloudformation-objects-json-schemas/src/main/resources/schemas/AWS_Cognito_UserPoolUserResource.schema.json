@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cognito.UserPoolUserResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::UserPoolUser"
+    },
     "Properties" : {
       "$ref" : "AWS_Cognito_UserPoolUser.schema.json"
     }

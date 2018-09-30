@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.PortfolioPrincipalAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::PortfolioPrincipalAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_PortfolioPrincipalAssociation.schema.json"
     }

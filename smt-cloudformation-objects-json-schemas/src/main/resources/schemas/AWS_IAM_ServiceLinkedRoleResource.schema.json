@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iam.ServiceLinkedRoleResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::ServiceLinkedRole"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_ServiceLinkedRole.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.PortfolioShareResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::PortfolioShare"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_PortfolioShare.schema.json"
     }

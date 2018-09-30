@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticbeanstalk.ConfigurationTemplateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticBeanstalk::ConfigurationTemplate"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticBeanstalk_ConfigurationTemplate.schema.json"
     }

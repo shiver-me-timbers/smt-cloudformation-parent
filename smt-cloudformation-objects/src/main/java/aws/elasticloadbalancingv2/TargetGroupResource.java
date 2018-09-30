@@ -1,8 +1,6 @@
 
 package aws.elasticloadbalancingv2;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
@@ -16,6 +14,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * TargetGroupResource
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "Type",
     "Properties"
 })
 public class TargetGroupResource
@@ -32,6 +34,8 @@ public class TargetGroupResource
     implements HasAttributes<TargetGroupAttributes>
 {
 
+    @JsonProperty("Type")
+    private java.lang.String type = "AWS::ElasticLoadBalancingV2::TargetGroup";
     /**
      * TargetGroup
      * <p>
@@ -57,6 +61,19 @@ public class TargetGroupResource
         super(name);
     }
 
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public TargetGroupResource withType(java.lang.String type) {
+        this.type = type;
+        return this;
+    }
+
     /**
      * TargetGroup
      * <p>
@@ -79,12 +96,6 @@ public class TargetGroupResource
 
     public TargetGroupResource withProperties(TargetGroup properties) {
         this.properties = properties;
-        return this;
-    }
-
-    @Override
-    public TargetGroupResource withType(java.lang.String type) {
-        super.withType(type);
         return this;
     }
 
@@ -132,12 +143,12 @@ public class TargetGroupResource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("properties", properties).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("properties", properties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(properties).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(type).append(properties).toHashCode();
     }
 
     @Override
@@ -149,7 +160,7 @@ public class TargetGroupResource
             return false;
         }
         TargetGroupResource rhs = ((TargetGroupResource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(properties, rhs.properties).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(type, rhs.type).append(properties, rhs.properties).isEquals();
     }
 
 }

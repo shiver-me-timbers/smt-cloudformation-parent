@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCEndpointConnectionNotificationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCEndpointConnectionNotification"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCEndpointConnectionNotification.schema.json"
     }

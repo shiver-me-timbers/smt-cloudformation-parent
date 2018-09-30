@@ -10,6 +10,10 @@
   "javaType" : "aws.codepipeline.PipelineResource",
   "javaInterfaces" : [ "aws.HasAttributes<PipelineAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodePipeline::Pipeline"
+    },
     "Properties" : {
       "$ref" : "AWS_CodePipeline_Pipeline.schema.json"
     }

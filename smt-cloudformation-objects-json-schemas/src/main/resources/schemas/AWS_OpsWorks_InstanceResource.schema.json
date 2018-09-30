@@ -10,6 +10,10 @@
   "javaType" : "aws.opsworks.InstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<InstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorks::Instance"
+    },
     "Properties" : {
       "$ref" : "AWS_OpsWorks_Instance.schema.json"
     }

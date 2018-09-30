@@ -10,6 +10,10 @@
   "javaType" : "aws.sagemaker.EndpointResource",
   "javaInterfaces" : [ "aws.HasAttributes<EndpointAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::Endpoint"
+    },
     "Properties" : {
       "$ref" : "AWS_SageMaker_Endpoint.schema.json"
     }

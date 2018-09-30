@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.PlacementGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::PlacementGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_PlacementGroup.schema.json"
     }

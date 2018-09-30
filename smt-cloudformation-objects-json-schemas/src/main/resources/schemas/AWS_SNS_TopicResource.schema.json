@@ -10,6 +10,10 @@
   "javaType" : "aws.sns.TopicResource",
   "javaInterfaces" : [ "aws.HasAttributes<TopicAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SNS::Topic"
+    },
     "Properties" : {
       "$ref" : "AWS_SNS_Topic.schema.json"
     }

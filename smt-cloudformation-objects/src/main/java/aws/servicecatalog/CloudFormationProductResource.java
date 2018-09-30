@@ -1,8 +1,6 @@
 
 package aws.servicecatalog;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
@@ -16,6 +14,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * CloudFormationProductResource
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "Type",
     "Properties"
 })
 public class CloudFormationProductResource
@@ -32,6 +34,8 @@ public class CloudFormationProductResource
     implements HasAttributes<CloudFormationProductAttributes>
 {
 
+    @JsonProperty("Type")
+    private java.lang.String type = "AWS::ServiceCatalog::CloudFormationProduct";
     /**
      * CloudFormationProduct
      * <p>
@@ -57,6 +61,19 @@ public class CloudFormationProductResource
         super(name);
     }
 
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public CloudFormationProductResource withType(java.lang.String type) {
+        this.type = type;
+        return this;
+    }
+
     /**
      * CloudFormationProduct
      * <p>
@@ -79,12 +96,6 @@ public class CloudFormationProductResource
 
     public CloudFormationProductResource withProperties(CloudFormationProduct properties) {
         this.properties = properties;
-        return this;
-    }
-
-    @Override
-    public CloudFormationProductResource withType(java.lang.String type) {
-        super.withType(type);
         return this;
     }
 
@@ -132,12 +143,12 @@ public class CloudFormationProductResource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("properties", properties).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("properties", properties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(properties).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(type).append(properties).toHashCode();
     }
 
     @Override
@@ -149,7 +160,7 @@ public class CloudFormationProductResource
             return false;
         }
         CloudFormationProductResource rhs = ((CloudFormationProductResource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(properties, rhs.properties).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(type, rhs.type).append(properties, rhs.properties).isEquals();
     }
 
 }

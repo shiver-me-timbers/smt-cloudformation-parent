@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.MasterResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::Master"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_Master.schema.json"
     }

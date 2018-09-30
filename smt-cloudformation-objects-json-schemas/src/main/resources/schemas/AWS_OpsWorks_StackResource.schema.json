@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.opsworks.StackResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorks::Stack"
+    },
     "Properties" : {
       "$ref" : "AWS_OpsWorks_Stack.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.DBSubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBSubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBSubnetGroup.schema.json"
     }

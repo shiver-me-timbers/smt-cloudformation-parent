@@ -1,8 +1,6 @@
 
 package aws.logs;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
@@ -16,6 +14,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * DestinationResource
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "Type",
     "Properties"
 })
 public class DestinationResource
@@ -32,6 +34,8 @@ public class DestinationResource
     implements HasAttributes<DestinationAttributes>
 {
 
+    @JsonProperty("Type")
+    private java.lang.String type = "AWS::Logs::Destination";
     /**
      * Destination
      * <p>
@@ -57,6 +61,19 @@ public class DestinationResource
         super(name);
     }
 
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public DestinationResource withType(java.lang.String type) {
+        this.type = type;
+        return this;
+    }
+
     /**
      * Destination
      * <p>
@@ -79,12 +96,6 @@ public class DestinationResource
 
     public DestinationResource withProperties(Destination properties) {
         this.properties = properties;
-        return this;
-    }
-
-    @Override
-    public DestinationResource withType(java.lang.String type) {
-        super.withType(type);
         return this;
     }
 
@@ -132,12 +143,12 @@ public class DestinationResource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("properties", properties).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("properties", properties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(properties).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(type).append(properties).toHashCode();
     }
 
     @Override
@@ -149,7 +160,7 @@ public class DestinationResource
             return false;
         }
         DestinationResource rhs = ((DestinationResource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(properties, rhs.properties).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(type, rhs.type).append(properties, rhs.properties).isEquals();
     }
 
 }

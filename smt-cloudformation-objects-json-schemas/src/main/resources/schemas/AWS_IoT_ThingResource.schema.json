@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iot.ThingResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT::Thing"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT_Thing.schema.json"
     }

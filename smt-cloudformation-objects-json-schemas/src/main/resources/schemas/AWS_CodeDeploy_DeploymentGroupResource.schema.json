@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.codedeploy.DeploymentGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeDeploy::DeploymentGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.certificatemanager.CertificateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CertificateManager::Certificate"
+    },
     "Properties" : {
       "$ref" : "AWS_CertificateManager_Certificate.schema.json"
     }

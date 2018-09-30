@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.route53.RecordSetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53::RecordSetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Route53_RecordSetGroup.schema.json"
     }

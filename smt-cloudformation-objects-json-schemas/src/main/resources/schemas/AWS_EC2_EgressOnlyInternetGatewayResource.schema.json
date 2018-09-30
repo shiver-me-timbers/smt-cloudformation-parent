@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.EgressOnlyInternetGatewayResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::EgressOnlyInternetGateway"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_EgressOnlyInternetGateway.schema.json"
     }

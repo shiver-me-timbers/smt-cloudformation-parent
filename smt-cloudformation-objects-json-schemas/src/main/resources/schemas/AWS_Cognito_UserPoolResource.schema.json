@@ -10,6 +10,10 @@
   "javaType" : "aws.cognito.UserPoolResource",
   "javaInterfaces" : [ "aws.HasAttributes<UserPoolAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::UserPool"
+    },
     "Properties" : {
       "$ref" : "AWS_Cognito_UserPool.schema.json"
     }

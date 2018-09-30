@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.waf.ByteMatchSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAF::ByteMatchSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAF_ByteMatchSet.schema.json"
     }

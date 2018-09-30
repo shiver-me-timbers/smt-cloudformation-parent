@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cloudformation.WaitConditionHandleResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFormation::WaitConditionHandle"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFormation_WaitConditionHandle.schema.json"
     }

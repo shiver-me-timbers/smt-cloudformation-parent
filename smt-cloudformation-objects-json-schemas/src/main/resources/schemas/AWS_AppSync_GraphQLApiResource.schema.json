@@ -10,6 +10,10 @@
   "javaType" : "aws.appsync.GraphQLApiResource",
   "javaInterfaces" : [ "aws.HasAttributes<GraphQLApiAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::GraphQLApi"
+    },
     "Properties" : {
       "$ref" : "AWS_AppSync_GraphQLApi.schema.json"
     }

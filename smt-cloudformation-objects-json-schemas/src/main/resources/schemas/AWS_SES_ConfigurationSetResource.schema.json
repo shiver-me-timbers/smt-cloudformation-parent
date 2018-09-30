@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ses.ConfigurationSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SES::ConfigurationSet"
+    },
     "Properties" : {
       "$ref" : "AWS_SES_ConfigurationSet.schema.json"
     }

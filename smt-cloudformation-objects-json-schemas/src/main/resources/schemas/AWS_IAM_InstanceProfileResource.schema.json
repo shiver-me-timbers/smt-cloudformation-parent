@@ -10,6 +10,10 @@
   "javaType" : "aws.iam.InstanceProfileResource",
   "javaInterfaces" : [ "aws.HasAttributes<InstanceProfileAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::InstanceProfile"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_InstanceProfile.schema.json"
     }

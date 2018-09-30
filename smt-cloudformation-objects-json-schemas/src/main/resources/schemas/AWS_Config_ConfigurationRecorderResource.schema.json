@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.config.ConfigurationRecorderResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::ConfigurationRecorder"
+    },
     "Properties" : {
       "$ref" : "AWS_Config_ConfigurationRecorder.schema.json"
     }

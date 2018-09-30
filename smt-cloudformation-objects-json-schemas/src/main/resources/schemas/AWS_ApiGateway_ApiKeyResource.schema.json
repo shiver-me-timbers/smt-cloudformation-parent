@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.ApiKeyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::ApiKey"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_ApiKey.schema.json"
     }

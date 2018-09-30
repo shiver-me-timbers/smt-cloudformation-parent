@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.MemberResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::Member"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_Member.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.emr.StepResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EMR::Step"
+    },
     "Properties" : {
       "$ref" : "AWS_EMR_Step.schema.json"
     }

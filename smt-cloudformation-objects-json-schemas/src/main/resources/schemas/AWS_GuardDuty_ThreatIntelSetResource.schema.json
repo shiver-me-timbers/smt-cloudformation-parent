@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.ThreatIntelSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::ThreatIntelSet"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_ThreatIntelSet.schema.json"
     }

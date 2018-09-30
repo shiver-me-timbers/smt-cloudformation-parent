@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.neptune.DBClusterParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Neptune::DBClusterParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Neptune_DBClusterParameterGroup.schema.json"
     }

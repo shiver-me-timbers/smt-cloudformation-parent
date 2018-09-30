@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.LaunchTemplateConstraintResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::LaunchTemplateConstraint"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_LaunchTemplateConstraint.schema.json"
     }

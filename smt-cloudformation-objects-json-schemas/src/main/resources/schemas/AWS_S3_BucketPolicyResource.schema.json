@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.s3.BucketPolicyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::S3::BucketPolicy"
+    },
     "Properties" : {
       "$ref" : "AWS_S3_BucketPolicy.schema.json"
     }

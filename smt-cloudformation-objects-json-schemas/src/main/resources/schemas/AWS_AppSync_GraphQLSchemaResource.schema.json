@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.appsync.GraphQLSchemaResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::GraphQLSchema"
+    },
     "Properties" : {
       "$ref" : "AWS_AppSync_GraphQLSchema.schema.json"
     }

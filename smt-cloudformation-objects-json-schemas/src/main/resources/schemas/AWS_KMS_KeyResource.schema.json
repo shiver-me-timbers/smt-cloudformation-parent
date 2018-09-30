@@ -10,6 +10,10 @@
   "javaType" : "aws.kms.KeyResource",
   "javaInterfaces" : [ "aws.HasAttributes<KeyAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KMS::Key"
+    },
     "Properties" : {
       "$ref" : "AWS_KMS_Key.schema.json"
     }

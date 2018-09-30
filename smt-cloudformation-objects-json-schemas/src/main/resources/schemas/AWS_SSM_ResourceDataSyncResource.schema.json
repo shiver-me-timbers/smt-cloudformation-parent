@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ssm.ResourceDataSyncResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::ResourceDataSync"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_ResourceDataSync.schema.json"
     }

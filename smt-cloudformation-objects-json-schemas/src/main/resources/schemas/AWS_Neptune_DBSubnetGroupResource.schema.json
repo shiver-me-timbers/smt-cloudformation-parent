@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.neptune.DBSubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Neptune::DBSubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Neptune_DBSubnetGroup.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.sns.TopicPolicyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SNS::TopicPolicy"
+    },
     "Properties" : {
       "$ref" : "AWS_SNS_TopicPolicy.schema.json"
     }

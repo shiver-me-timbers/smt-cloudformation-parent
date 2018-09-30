@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.FilterResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::Filter"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_Filter.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.ClassifierResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Classifier"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Classifier.schema.json"
     }

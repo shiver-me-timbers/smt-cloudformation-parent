@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.sns.SubscriptionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SNS::Subscription"
+    },
     "Properties" : {
       "$ref" : "AWS_SNS_Subscription.schema.json"
     }

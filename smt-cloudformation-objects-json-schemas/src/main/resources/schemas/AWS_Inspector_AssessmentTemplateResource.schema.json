@@ -10,6 +10,10 @@
   "javaType" : "aws.inspector.AssessmentTemplateResource",
   "javaInterfaces" : [ "aws.HasAttributes<AssessmentTemplateAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Inspector::AssessmentTemplate"
+    },
     "Properties" : {
       "$ref" : "AWS_Inspector_AssessmentTemplate.schema.json"
     }

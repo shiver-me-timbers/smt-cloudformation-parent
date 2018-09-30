@@ -10,6 +10,10 @@
   "javaType" : "aws.sagemaker.NotebookInstanceLifecycleConfigResource",
   "javaInterfaces" : [ "aws.HasAttributes<NotebookInstanceLifecycleConfigAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::NotebookInstanceLifecycleConfig"
+    },
     "Properties" : {
       "$ref" : "AWS_SageMaker_NotebookInstanceLifecycleConfig.schema.json"
     }

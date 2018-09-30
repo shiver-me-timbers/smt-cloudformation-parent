@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.OptionGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::OptionGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_OptionGroup.schema.json"
     }

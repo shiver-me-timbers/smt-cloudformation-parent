@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.logs.SubscriptionFilterResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Logs::SubscriptionFilter"
+    },
     "Properties" : {
       "$ref" : "AWS_Logs_SubscriptionFilter.schema.json"
     }

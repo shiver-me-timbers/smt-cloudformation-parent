@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.DatabaseResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Database"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Database.schema.json"
     }

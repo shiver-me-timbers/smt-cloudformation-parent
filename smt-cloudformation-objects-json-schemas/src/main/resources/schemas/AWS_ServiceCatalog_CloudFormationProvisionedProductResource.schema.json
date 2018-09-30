@@ -10,6 +10,10 @@
   "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductResource",
   "javaInterfaces" : [ "aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::CloudFormationProvisionedProduct"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.amazonmq.ConfigurationResource",
   "javaInterfaces" : [ "aws.HasAttributes<ConfigurationAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AmazonMQ::Configuration"
+    },
     "Properties" : {
       "$ref" : "AWS_AmazonMQ_Configuration.schema.json"
     }

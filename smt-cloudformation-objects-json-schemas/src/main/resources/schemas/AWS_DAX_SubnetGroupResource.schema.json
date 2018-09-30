@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dax.SubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DAX::SubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_DAX_SubnetGroup.schema.json"
     }

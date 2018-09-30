@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ecs.TaskDefinitionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ECS::TaskDefinition"
+    },
     "Properties" : {
       "$ref" : "AWS_ECS_TaskDefinition.schema.json"
     }

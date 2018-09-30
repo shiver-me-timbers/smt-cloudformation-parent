@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iam.UserToGroupAdditionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::UserToGroupAddition"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_UserToGroupAddition.schema.json"
     }

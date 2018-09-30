@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ssm.AssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::Association"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_Association.schema.json"
     }

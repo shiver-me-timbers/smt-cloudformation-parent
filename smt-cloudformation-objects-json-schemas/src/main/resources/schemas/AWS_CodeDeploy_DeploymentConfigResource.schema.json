@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.codedeploy.DeploymentConfigResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeDeploy::DeploymentConfig"
+    },
     "Properties" : {
       "$ref" : "AWS_CodeDeploy_DeploymentConfig.schema.json"
     }

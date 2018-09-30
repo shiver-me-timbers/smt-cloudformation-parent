@@ -10,6 +10,10 @@
   "javaType" : "aws.stepfunctions.StateMachineResource",
   "javaInterfaces" : [ "aws.HasAttributes<StateMachineAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::StepFunctions::StateMachine"
+    },
     "Properties" : {
       "$ref" : "AWS_StepFunctions_StateMachine.schema.json"
     }

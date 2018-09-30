@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.DocumentationPartResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::DocumentationPart"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_DocumentationPart.schema.json"
     }

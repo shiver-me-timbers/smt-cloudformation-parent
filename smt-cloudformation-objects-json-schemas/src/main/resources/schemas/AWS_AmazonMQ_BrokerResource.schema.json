@@ -10,6 +10,10 @@
   "javaType" : "aws.amazonmq.BrokerResource",
   "javaInterfaces" : [ "aws.HasAttributes<BrokerAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AmazonMQ::Broker"
+    },
     "Properties" : {
       "$ref" : "AWS_AmazonMQ_Broker.schema.json"
     }

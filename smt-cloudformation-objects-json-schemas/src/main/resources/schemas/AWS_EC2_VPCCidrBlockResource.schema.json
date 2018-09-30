@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCCidrBlockResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCCidrBlock"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCCidrBlock.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.iot1click.PlacementResource",
   "javaInterfaces" : [ "aws.HasAttributes<PlacementAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT1Click::Placement"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT1Click_Placement.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.RuleResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::Rule"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_Rule.schema.json"
     }

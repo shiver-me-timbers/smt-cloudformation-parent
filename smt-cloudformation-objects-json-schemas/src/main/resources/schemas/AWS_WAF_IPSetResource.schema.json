@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.waf.IPSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAF::IPSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAF_IPSet.schema.json"
     }

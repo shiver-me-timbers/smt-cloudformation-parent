@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.HostResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::Host"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_Host.schema.json"
     }

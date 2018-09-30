@@ -10,6 +10,10 @@
   "javaType" : "aws.config.ConfigRuleResource",
   "javaInterfaces" : [ "aws.HasAttributes<ConfigRuleAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::ConfigRule"
+    },
     "Properties" : {
       "$ref" : "AWS_Config_ConfigRule.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.cloudfront.StreamingDistributionResource",
   "javaInterfaces" : [ "aws.HasAttributes<StreamingDistributionAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFront::StreamingDistribution"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFront_StreamingDistribution.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.UsagePlanKeyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::UsagePlanKey"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_UsagePlanKey.schema.json"
     }

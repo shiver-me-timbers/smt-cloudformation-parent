@@ -10,6 +10,10 @@
   "javaType" : "aws.ec2.SecurityGroupResource",
   "javaInterfaces" : [ "aws.HasAttributes<SecurityGroupAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SecurityGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SecurityGroup.schema.json"
     }

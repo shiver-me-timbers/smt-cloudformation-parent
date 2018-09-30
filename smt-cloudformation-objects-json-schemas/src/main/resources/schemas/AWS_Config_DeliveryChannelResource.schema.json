@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.config.DeliveryChannelResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::DeliveryChannel"
+    },
     "Properties" : {
       "$ref" : "AWS_Config_DeliveryChannel.schema.json"
     }

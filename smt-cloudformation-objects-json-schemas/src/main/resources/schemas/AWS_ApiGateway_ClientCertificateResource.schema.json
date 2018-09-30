@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.ClientCertificateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::ClientCertificate"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_ClientCertificate.schema.json"
     }

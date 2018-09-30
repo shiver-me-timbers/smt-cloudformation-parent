@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ses.TemplateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SES::Template"
+    },
     "Properties" : {
       "$ref" : "AWS_SES_Template.schema.json"
     }

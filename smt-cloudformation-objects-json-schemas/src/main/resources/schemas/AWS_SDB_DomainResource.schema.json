@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.sdb.DomainResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SDB::Domain"
+    },
     "Properties" : {
       "$ref" : "AWS_SDB_Domain.schema.json"
     }

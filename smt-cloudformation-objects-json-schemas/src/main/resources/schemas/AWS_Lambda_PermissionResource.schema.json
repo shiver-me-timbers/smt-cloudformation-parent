@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.lambda.PermissionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::Permission"
+    },
     "Properties" : {
       "$ref" : "AWS_Lambda_Permission.schema.json"
     }

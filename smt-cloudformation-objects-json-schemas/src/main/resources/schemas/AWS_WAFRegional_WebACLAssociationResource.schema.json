@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.WebACLAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::WebACLAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_WebACLAssociation.schema.json"
     }

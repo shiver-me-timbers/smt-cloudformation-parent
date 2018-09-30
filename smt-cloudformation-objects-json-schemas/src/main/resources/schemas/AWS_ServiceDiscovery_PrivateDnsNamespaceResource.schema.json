@@ -10,6 +10,10 @@
   "javaType" : "aws.servicediscovery.PrivateDnsNamespaceResource",
   "javaInterfaces" : [ "aws.HasAttributes<PrivateDnsNamespaceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceDiscovery::PrivateDnsNamespace"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceDiscovery_PrivateDnsNamespace.schema.json"
     }

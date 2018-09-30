@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.NetworkInterfacePermissionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::NetworkInterfacePermission"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_NetworkInterfacePermission.schema.json"
     }

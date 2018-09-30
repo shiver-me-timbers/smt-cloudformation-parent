@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.efs.FileSystemResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EFS::FileSystem"
+    },
     "Properties" : {
       "$ref" : "AWS_EFS_FileSystem.schema.json"
     }

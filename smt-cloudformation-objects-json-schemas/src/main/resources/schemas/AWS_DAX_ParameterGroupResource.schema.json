@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dax.ParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DAX::ParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_DAX_ParameterGroup.schema.json"
     }

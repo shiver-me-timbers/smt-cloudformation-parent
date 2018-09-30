@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.DevEndpointResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::DevEndpoint"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_DevEndpoint.schema.json"
     }

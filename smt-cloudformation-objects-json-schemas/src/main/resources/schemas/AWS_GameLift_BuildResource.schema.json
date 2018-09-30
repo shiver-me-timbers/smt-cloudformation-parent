@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.gamelift.BuildResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::Build"
+    },
     "Properties" : {
       "$ref" : "AWS_GameLift_Build.schema.json"
     }

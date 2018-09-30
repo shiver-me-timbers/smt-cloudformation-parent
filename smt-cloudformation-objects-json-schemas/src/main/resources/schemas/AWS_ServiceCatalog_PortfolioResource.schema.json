@@ -10,6 +10,10 @@
   "javaType" : "aws.servicecatalog.PortfolioResource",
   "javaInterfaces" : [ "aws.HasAttributes<PortfolioAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::Portfolio"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_Portfolio.schema.json"
     }

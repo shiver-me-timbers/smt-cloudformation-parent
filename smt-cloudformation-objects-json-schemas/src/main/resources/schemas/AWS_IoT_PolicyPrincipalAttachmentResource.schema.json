@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iot.PolicyPrincipalAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT::PolicyPrincipalAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT_PolicyPrincipalAttachment.schema.json"
     }

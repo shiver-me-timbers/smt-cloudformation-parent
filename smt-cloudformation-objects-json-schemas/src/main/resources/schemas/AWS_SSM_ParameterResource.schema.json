@@ -10,6 +10,10 @@
   "javaType" : "aws.ssm.ParameterResource",
   "javaInterfaces" : [ "aws.HasAttributes<ParameterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::Parameter"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_Parameter.schema.json"
     }

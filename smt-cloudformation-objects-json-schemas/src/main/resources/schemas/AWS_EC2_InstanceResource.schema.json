@@ -10,6 +10,10 @@
   "javaType" : "aws.ec2.InstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<InstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::Instance"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_Instance.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cognito.IdentityPoolRoleAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::IdentityPoolRoleAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_Cognito_IdentityPoolRoleAttachment.schema.json"
     }

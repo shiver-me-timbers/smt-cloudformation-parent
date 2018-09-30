@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCDHCPOptionsAssociationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCDHCPOptionsAssociation"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCDHCPOptionsAssociation.schema.json"
     }

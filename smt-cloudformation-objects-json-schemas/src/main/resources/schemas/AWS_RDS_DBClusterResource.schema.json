@@ -10,6 +10,10 @@
   "javaType" : "aws.rds.DBClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<DBClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBCluster"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBCluster.schema.json"
     }

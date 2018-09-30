@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.redshift.ClusterSubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Redshift::ClusterSubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Redshift_ClusterSubnetGroup.schema.json"
     }

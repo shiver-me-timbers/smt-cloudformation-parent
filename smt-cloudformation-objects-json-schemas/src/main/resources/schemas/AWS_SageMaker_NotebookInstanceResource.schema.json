@@ -10,6 +10,10 @@
   "javaType" : "aws.sagemaker.NotebookInstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<NotebookInstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::NotebookInstance"
+    },
     "Properties" : {
       "$ref" : "AWS_SageMaker_NotebookInstance.schema.json"
     }

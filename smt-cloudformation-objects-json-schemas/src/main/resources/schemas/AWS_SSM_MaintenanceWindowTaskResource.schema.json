@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ssm.MaintenanceWindowTaskResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::MaintenanceWindowTask"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_MaintenanceWindowTask.schema.json"
     }

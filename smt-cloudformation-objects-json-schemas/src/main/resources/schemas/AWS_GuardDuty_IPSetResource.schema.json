@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.guardduty.IPSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GuardDuty::IPSet"
+    },
     "Properties" : {
       "$ref" : "AWS_GuardDuty_IPSet.schema.json"
     }

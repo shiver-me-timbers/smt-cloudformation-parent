@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.kms.AliasResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KMS::Alias"
+    },
     "Properties" : {
       "$ref" : "AWS_KMS_Alias.schema.json"
     }

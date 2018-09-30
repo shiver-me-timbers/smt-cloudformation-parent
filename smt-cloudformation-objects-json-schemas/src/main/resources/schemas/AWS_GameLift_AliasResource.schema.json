@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.gamelift.AliasResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::Alias"
+    },
     "Properties" : {
       "$ref" : "AWS_GameLift_Alias.schema.json"
     }

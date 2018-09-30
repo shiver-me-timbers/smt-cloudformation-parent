@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.config.ConfigurationAggregatorResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Config::ConfigurationAggregator"
+    },
     "Properties" : {
       "$ref" : "AWS_Config_ConfigurationAggregator.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.logs.LogGroupResource",
   "javaInterfaces" : [ "aws.HasAttributes<LogGroupAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Logs::LogGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Logs_LogGroup.schema.json"
     }

@@ -1,8 +1,6 @@
 
 package aws.iam;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
@@ -16,6 +14,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.List;
+import java.util.Map;
+
 
 /**
  * InstanceProfileResource
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "Type",
     "Properties"
 })
 public class InstanceProfileResource
@@ -32,6 +34,8 @@ public class InstanceProfileResource
     implements HasAttributes<InstanceProfileAttributes>
 {
 
+    @JsonProperty("Type")
+    private java.lang.String type = "AWS::IAM::InstanceProfile";
     /**
      * InstanceProfile
      * <p>
@@ -57,6 +61,19 @@ public class InstanceProfileResource
         super(name);
     }
 
+    public java.lang.String getType() {
+        return type;
+    }
+
+    public void setType(java.lang.String type) {
+        this.type = type;
+    }
+
+    public InstanceProfileResource withType(java.lang.String type) {
+        this.type = type;
+        return this;
+    }
+
     /**
      * InstanceProfile
      * <p>
@@ -79,12 +96,6 @@ public class InstanceProfileResource
 
     public InstanceProfileResource withProperties(InstanceProfile properties) {
         this.properties = properties;
-        return this;
-    }
-
-    @Override
-    public InstanceProfileResource withType(java.lang.String type) {
-        super.withType(type);
         return this;
     }
 
@@ -132,12 +143,12 @@ public class InstanceProfileResource
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).appendSuper(super.toString()).append("properties", properties).toString();
+        return new ToStringBuilder(this).appendSuper(super.toString()).append("type", type).append("properties", properties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().appendSuper(super.hashCode()).append(properties).toHashCode();
+        return new HashCodeBuilder().appendSuper(super.hashCode()).append(type).append(properties).toHashCode();
     }
 
     @Override
@@ -149,7 +160,7 @@ public class InstanceProfileResource
             return false;
         }
         InstanceProfileResource rhs = ((InstanceProfileResource) other);
-        return new EqualsBuilder().appendSuper(super.equals(other)).append(properties, rhs.properties).isEquals();
+        return new EqualsBuilder().appendSuper(super.equals(other)).append(type, rhs.type).append(properties, rhs.properties).isEquals();
     }
 
 }

@@ -10,6 +10,10 @@
   "javaType" : "aws.s3.BucketResource",
   "javaInterfaces" : [ "aws.HasAttributes<BucketAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::S3::Bucket"
+    },
     "Properties" : {
       "$ref" : "AWS_S3_Bucket.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCGatewayAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCGatewayAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCGatewayAttachment.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.TriggerResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Trigger"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Trigger.schema.json"
     }

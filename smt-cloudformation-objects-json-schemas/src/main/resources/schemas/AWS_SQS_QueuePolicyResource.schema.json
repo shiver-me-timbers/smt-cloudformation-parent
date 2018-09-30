@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.sqs.QueuePolicyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SQS::QueuePolicy"
+    },
     "Properties" : {
       "$ref" : "AWS_SQS_QueuePolicy.schema.json"
     }

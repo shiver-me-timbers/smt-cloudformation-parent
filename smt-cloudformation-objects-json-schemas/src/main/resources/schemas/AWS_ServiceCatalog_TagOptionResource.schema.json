@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.TagOptionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::TagOption"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_TagOption.schema.json"
     }

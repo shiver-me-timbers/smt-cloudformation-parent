@@ -10,6 +10,10 @@
   "javaType" : "aws.redshift.ClusterResource",
   "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Redshift::Cluster"
+    },
     "Properties" : {
       "$ref" : "AWS_Redshift_Cluster.schema.json"
     }

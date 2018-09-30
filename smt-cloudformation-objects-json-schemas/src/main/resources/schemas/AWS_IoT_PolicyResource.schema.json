@@ -10,6 +10,10 @@
   "javaType" : "aws.iot.PolicyResource",
   "javaInterfaces" : [ "aws.HasAttributes<PolicyAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT::Policy"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT_Policy.schema.json"
     }

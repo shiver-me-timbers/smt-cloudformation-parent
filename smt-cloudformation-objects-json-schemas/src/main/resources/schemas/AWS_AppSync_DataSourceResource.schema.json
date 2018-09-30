@@ -10,6 +10,10 @@
   "javaType" : "aws.appsync.DataSourceResource",
   "javaInterfaces" : [ "aws.HasAttributes<DataSourceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::DataSource"
+    },
     "Properties" : {
       "$ref" : "AWS_AppSync_DataSource.schema.json"
     }

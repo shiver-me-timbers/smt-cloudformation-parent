@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.batch.JobQueueResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Batch::JobQueue"
+    },
     "Properties" : {
       "$ref" : "AWS_Batch_JobQueue.schema.json"
     }

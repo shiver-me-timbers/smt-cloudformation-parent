@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.RouteTableResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::RouteTable"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_RouteTable.schema.json"
     }

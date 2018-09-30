@@ -10,6 +10,10 @@
   "javaType" : "aws.elasticsearch.DomainResource",
   "javaInterfaces" : [ "aws.HasAttributes<DomainAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Elasticsearch::Domain"
+    },
     "Properties" : {
       "$ref" : "AWS_Elasticsearch_Domain.schema.json"
     }

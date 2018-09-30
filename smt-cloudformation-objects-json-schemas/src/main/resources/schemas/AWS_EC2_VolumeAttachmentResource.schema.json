@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VolumeAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VolumeAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VolumeAttachment.schema.json"
     }

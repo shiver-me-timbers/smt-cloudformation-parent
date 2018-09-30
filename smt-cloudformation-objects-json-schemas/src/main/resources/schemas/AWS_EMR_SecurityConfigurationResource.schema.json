@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.emr.SecurityConfigurationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EMR::SecurityConfiguration"
+    },
     "Properties" : {
       "$ref" : "AWS_EMR_SecurityConfiguration.schema.json"
     }

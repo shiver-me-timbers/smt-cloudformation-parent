@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.budgets.BudgetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Budgets::Budget"
+    },
     "Properties" : {
       "$ref" : "AWS_Budgets_Budget.schema.json"
     }

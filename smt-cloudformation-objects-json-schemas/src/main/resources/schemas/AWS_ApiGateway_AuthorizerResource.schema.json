@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.AuthorizerResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::Authorizer"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_Authorizer.schema.json"
     }

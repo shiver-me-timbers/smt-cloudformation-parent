@@ -10,6 +10,10 @@
   "javaType" : "aws.rds.DBInstanceResource",
   "javaInterfaces" : [ "aws.HasAttributes<DBInstanceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBInstance"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBInstance.schema.json"
     }

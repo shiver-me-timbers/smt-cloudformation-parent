@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.RequestValidatorResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::RequestValidator"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_RequestValidator.schema.json"
     }

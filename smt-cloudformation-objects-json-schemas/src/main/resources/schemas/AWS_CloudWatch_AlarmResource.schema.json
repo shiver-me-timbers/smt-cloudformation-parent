@@ -10,6 +10,10 @@
   "javaType" : "aws.cloudwatch.AlarmResource",
   "javaInterfaces" : [ "aws.HasAttributes<AlarmAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudWatch::Alarm"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudWatch_Alarm.schema.json"
     }

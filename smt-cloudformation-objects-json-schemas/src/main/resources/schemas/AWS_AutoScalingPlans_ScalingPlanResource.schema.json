@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.autoscalingplans.ScalingPlanResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AutoScalingPlans::ScalingPlan"
+    },
     "Properties" : {
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.schema.json"
     }

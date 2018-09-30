@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cognito.UserPoolUserToGroupAttachmentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::UserPoolUserToGroupAttachment"
+    },
     "Properties" : {
       "$ref" : "AWS_Cognito_UserPoolUserToGroupAttachment.schema.json"
     }

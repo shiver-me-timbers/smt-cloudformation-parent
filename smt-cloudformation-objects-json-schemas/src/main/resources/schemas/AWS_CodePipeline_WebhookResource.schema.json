@@ -10,6 +10,10 @@
   "javaType" : "aws.codepipeline.WebhookResource",
   "javaInterfaces" : [ "aws.HasAttributes<WebhookAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodePipeline::Webhook"
+    },
     "Properties" : {
       "$ref" : "AWS_CodePipeline_Webhook.schema.json"
     }

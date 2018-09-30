@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticloadbalancingv2.ListenerResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticLoadBalancingV2::Listener"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticLoadBalancingV2_Listener.schema.json"
     }

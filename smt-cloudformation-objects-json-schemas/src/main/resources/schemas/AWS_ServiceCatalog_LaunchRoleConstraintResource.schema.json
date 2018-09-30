@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.LaunchRoleConstraintResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::LaunchRoleConstraint"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_LaunchRoleConstraint.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.emr.InstanceGroupConfigResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EMR::InstanceGroupConfig"
+    },
     "Properties" : {
       "$ref" : "AWS_EMR_InstanceGroupConfig.schema.json"
     }

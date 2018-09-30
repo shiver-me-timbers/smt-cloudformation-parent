@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.route53.HealthCheckResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53::HealthCheck"
+    },
     "Properties" : {
       "$ref" : "AWS_Route53_HealthCheck.schema.json"
     }

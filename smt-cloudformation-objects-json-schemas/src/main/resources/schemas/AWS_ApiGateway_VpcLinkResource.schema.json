@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.VpcLinkResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::VpcLink"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_VpcLink.schema.json"
     }

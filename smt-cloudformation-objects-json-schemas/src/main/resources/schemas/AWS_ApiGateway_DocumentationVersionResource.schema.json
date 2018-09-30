@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.DocumentationVersionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::DocumentationVersion"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_DocumentationVersion.schema.json"
     }

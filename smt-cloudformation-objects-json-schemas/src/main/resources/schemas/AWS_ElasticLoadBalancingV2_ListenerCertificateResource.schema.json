@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticloadbalancingv2.ListenerCertificateResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticLoadBalancingV2::ListenerCertificate"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerCertificate.schema.json"
     }

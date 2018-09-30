@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.dms.ReplicationSubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DMS::ReplicationSubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_DMS_ReplicationSubnetGroup.schema.json"
     }

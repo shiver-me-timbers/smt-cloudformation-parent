@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticbeanstalk.ApplicationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticBeanstalk::Application"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticBeanstalk_Application.schema.json"
     }

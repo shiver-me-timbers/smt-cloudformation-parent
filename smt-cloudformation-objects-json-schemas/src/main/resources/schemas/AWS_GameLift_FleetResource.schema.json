@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.gamelift.FleetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::GameLift::Fleet"
+    },
     "Properties" : {
       "$ref" : "AWS_GameLift_Fleet.schema.json"
     }

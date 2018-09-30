@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.kinesisanalytics.ApplicationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KinesisAnalytics::Application"
+    },
     "Properties" : {
       "$ref" : "AWS_KinesisAnalytics_Application.schema.json"
     }

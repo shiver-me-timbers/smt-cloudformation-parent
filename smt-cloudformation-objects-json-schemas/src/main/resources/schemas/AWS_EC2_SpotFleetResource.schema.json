@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.SpotFleetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SpotFleet"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SpotFleet.schema.json"
     }

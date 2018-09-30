@@ -10,6 +10,10 @@
   "javaType" : "aws.sagemaker.ModelResource",
   "javaInterfaces" : [ "aws.HasAttributes<ModelAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SageMaker::Model"
+    },
     "Properties" : {
       "$ref" : "AWS_SageMaker_Model.schema.json"
     }

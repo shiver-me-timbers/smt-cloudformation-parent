@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ses.ConfigurationSetEventDestinationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SES::ConfigurationSetEventDestination"
+    },
     "Properties" : {
       "$ref" : "AWS_SES_ConfigurationSetEventDestination.schema.json"
     }

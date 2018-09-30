@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.StageResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::Stage"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_Stage.schema.json"
     }

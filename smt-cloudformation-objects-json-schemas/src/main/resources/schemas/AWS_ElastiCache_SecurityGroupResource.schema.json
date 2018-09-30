@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticache.SecurityGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElastiCache::SecurityGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_ElastiCache_SecurityGroup.schema.json"
     }

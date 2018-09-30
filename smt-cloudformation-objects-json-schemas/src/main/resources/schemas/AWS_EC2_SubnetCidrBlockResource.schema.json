@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.SubnetCidrBlockResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::SubnetCidrBlock"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_SubnetCidrBlock.schema.json"
     }

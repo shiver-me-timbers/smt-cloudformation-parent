@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.EventSubscriptionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::EventSubscription"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_EventSubscription.schema.json"
     }

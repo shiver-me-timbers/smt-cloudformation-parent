@@ -10,6 +10,10 @@
   "javaType" : "aws.iot1click.DeviceResource",
   "javaInterfaces" : [ "aws.HasAttributes<DeviceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT1Click::Device"
+    },
     "Properties" : {
       "$ref" : "AWS_IoT1Click_Device.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.sqs.QueueResource",
   "javaInterfaces" : [ "aws.HasAttributes<QueueAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SQS::Queue"
+    },
     "Properties" : {
       "$ref" : "AWS_SQS_Queue.schema.json"
     }

@@ -10,6 +10,10 @@
   "javaType" : "aws.logs.DestinationResource",
   "javaInterfaces" : [ "aws.HasAttributes<DestinationAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Logs::Destination"
+    },
     "Properties" : {
       "$ref" : "AWS_Logs_Destination.schema.json"
     }

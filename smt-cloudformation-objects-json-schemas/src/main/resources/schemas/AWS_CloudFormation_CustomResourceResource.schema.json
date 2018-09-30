@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.cloudformation.CustomResourceResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFormation::CustomResource"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFormation_CustomResource.schema.json"
     }

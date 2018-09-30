@@ -10,6 +10,10 @@
   "javaType" : "aws.ec2.VPCResource",
   "javaInterfaces" : [ "aws.HasAttributes<VPCAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPC"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPC.schema.json"
     }

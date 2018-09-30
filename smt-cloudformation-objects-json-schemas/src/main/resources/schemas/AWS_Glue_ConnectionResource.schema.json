@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.ConnectionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Connection"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Connection.schema.json"
     }

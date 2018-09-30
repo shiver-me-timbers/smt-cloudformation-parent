@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticbeanstalk.ApplicationVersionResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticBeanstalk::ApplicationVersion"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.schema.json"
     }

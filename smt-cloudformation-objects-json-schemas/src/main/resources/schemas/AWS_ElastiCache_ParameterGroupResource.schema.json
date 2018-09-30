@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticache.ParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElastiCache::ParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_ElastiCache_ParameterGroup.schema.json"
     }

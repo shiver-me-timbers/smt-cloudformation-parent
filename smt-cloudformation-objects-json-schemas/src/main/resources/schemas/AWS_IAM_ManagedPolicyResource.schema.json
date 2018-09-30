@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.iam.ManagedPolicyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::ManagedPolicy"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_ManagedPolicy.schema.json"
     }

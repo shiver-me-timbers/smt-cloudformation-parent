@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.XssMatchSetResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::XssMatchSet"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_XssMatchSet.schema.json"
     }

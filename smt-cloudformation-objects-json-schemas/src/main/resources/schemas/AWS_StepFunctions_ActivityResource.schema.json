@@ -10,6 +10,10 @@
   "javaType" : "aws.stepfunctions.ActivityResource",
   "javaInterfaces" : [ "aws.HasAttributes<ActivityAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::StepFunctions::Activity"
+    },
     "Properties" : {
       "$ref" : "AWS_StepFunctions_Activity.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCEndpointServiceResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCEndpointService"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCEndpointService.schema.json"
     }

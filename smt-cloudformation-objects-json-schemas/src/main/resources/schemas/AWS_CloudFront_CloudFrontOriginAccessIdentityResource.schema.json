@@ -10,6 +10,10 @@
   "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentityResource",
   "javaInterfaces" : [ "aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFront::CloudFrontOriginAccessIdentity"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFront_CloudFrontOriginAccessIdentity.schema.json"
     }

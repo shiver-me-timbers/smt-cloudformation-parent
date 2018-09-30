@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPNGatewayResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPNGateway"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPNGateway.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.MethodResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::Method"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_Method.schema.json"
     }

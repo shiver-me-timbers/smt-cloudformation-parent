@@ -10,6 +10,10 @@
   "javaType" : "aws.apigateway.DomainNameResource",
   "javaInterfaces" : [ "aws.HasAttributes<DomainNameAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::DomainName"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_DomainName.schema.json"
     }

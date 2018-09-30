@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.codedeploy.ApplicationResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeDeploy::Application"
+    },
     "Properties" : {
       "$ref" : "AWS_CodeDeploy_Application.schema.json"
     }

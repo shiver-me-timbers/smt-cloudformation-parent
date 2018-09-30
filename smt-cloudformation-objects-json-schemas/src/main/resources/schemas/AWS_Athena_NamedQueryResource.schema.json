@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.athena.NamedQueryResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Athena::NamedQuery"
+    },
     "Properties" : {
       "$ref" : "AWS_Athena_NamedQuery.schema.json"
     }

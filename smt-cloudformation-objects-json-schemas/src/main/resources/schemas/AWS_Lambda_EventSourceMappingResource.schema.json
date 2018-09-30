@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.lambda.EventSourceMappingResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Lambda::EventSourceMapping"
+    },
     "Properties" : {
       "$ref" : "AWS_Lambda_EventSourceMapping.schema.json"
     }

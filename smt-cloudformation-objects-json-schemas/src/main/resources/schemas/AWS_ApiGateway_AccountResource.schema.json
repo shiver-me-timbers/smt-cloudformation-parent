@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.AccountResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::Account"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_Account.schema.json"
     }

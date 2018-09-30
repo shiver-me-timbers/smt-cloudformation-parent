@@ -8,6 +8,7 @@ import shiver.me.timbers.cloudformation.ResourceType;
 import shiver.me.timbers.cloudformation.files.FileNames;
 import shiver.me.timbers.cloudformation.types.JavaTypes;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static java.lang.String.format;
@@ -74,7 +75,13 @@ public class ResourceTransformerTest {
         assertThat(actualKey, equalTo(resourceName + RESOURCE));
         assertThat(actualValue, hasEntry("extends", singletonMap("$ref", "Resource.schema.json")));
         assertThat(actualValue, hasEntry("javaType", format("%s.%s", packageName, resourceClassName)));
-        assertThat(actualValue, hasEntry("properties", singletonMap("Properties", singletonMap("$ref", fileName))));
+        assertThat(actualValue, hasEntry("properties", new LinkedHashMap<String, Object>() {{
+            put("Type", new LinkedHashMap<String, Object>() {{
+                put("type", "string");
+                put("default", resourceName);
+            }});
+            put("Properties", singletonMap("$ref", fileName));
+        }}));
     }
 
     @Test
@@ -106,12 +113,7 @@ public class ResourceTransformerTest {
         // Then
         then(metaDataApplier).should()
             .apply(eq(resourceFileName), eq(resourceClassName), eq(documentation), anyMap());
-        final String actualKey = actual.getKey();
         final Map<String, Object> actualValue = actual.getValue();
-        assertThat(actualKey, equalTo(resourceName + RESOURCE));
-        assertThat(actualValue, hasEntry("extends", singletonMap("$ref", "Resource.schema.json")));
-        assertThat(actualValue, hasEntry("javaType", format("%s.%s", packageName, resourceClassName)));
-        assertThat(actualValue, hasEntry("properties", singletonMap("Properties", singletonMap("$ref", fileName))));
         assertThat(
             actualValue,
             hasEntry("javaInterfaces", singletonList(format("aws.HasAttributes<%sAttributes>", className)))

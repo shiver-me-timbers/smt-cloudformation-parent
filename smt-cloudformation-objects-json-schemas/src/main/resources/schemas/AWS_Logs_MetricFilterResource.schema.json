@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.logs.MetricFilterResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Logs::MetricFilter"
+    },
     "Properties" : {
       "$ref" : "AWS_Logs_MetricFilter.schema.json"
     }

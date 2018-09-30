@@ -10,6 +10,10 @@
   "javaType" : "aws.cloudfront.DistributionResource",
   "javaInterfaces" : [ "aws.HasAttributes<DistributionAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CloudFront::Distribution"
+    },
     "Properties" : {
       "$ref" : "AWS_CloudFront_Distribution.schema.json"
     }

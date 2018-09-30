@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.JobResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Job"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Job.schema.json"
     }

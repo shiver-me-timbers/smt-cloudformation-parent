@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.wafregional.WebACLResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::WAFRegional::WebACL"
+    },
     "Properties" : {
       "$ref" : "AWS_WAFRegional_WebACL.schema.json"
     }

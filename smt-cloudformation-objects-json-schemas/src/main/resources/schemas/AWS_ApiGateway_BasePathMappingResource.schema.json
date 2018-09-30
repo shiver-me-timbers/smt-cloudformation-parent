@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.BasePathMappingResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::BasePathMapping"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_BasePathMapping.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.applicationautoscaling.ScalingPolicyResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApplicationAutoScaling::ScalingPolicy"
+    },
     "Properties" : {
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.schema.json"
     }

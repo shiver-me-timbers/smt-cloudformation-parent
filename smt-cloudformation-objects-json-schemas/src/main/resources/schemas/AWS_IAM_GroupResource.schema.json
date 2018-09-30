@@ -10,6 +10,10 @@
   "javaType" : "aws.iam.GroupResource",
   "javaInterfaces" : [ "aws.HasAttributes<GroupAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::Group"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_Group.schema.json"
     }

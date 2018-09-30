@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.VPCEndpointServicePermissionsResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::VPCEndpointServicePermissions"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_VPCEndpointServicePermissions.schema.json"
     }

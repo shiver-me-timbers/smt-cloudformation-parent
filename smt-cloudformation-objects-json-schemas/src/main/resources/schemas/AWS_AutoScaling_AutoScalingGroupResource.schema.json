@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.autoscaling.AutoScalingGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AutoScaling::AutoScalingGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_AutoScaling_AutoScalingGroup.schema.json"
     }

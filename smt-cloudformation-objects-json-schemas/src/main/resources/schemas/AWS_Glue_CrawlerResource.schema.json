@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.glue.CrawlerResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Glue::Crawler"
+    },
     "Properties" : {
       "$ref" : "AWS_Glue_Crawler.schema.json"
     }

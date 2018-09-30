@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ssm.DocumentResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::SSM::Document"
+    },
     "Properties" : {
       "$ref" : "AWS_SSM_Document.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.servicecatalog.LaunchNotificationConstraintResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceCatalog::LaunchNotificationConstraint"
+    },
     "Properties" : {
       "$ref" : "AWS_ServiceCatalog_LaunchNotificationConstraint.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.rds.DBSecurityGroupIngressResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RDS::DBSecurityGroupIngress"
+    },
     "Properties" : {
       "$ref" : "AWS_RDS_DBSecurityGroupIngress.schema.json"
     }

@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.redshift.ClusterParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Redshift::ClusterParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Redshift_ClusterParameterGroup.schema.json"
     }

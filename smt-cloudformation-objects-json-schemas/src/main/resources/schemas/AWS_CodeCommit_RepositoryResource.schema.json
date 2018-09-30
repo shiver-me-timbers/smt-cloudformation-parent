@@ -10,6 +10,10 @@
   "javaType" : "aws.codecommit.RepositoryResource",
   "javaInterfaces" : [ "aws.HasAttributes<RepositoryAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::CodeCommit::Repository"
+    },
     "Properties" : {
       "$ref" : "AWS_CodeCommit_Repository.schema.json"
     }

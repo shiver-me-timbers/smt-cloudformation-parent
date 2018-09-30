@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.redshift.ClusterSecurityGroupIngressResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Redshift::ClusterSecurityGroupIngress"
+    },
     "Properties" : {
       "$ref" : "AWS_Redshift_ClusterSecurityGroupIngress.schema.json"
     }

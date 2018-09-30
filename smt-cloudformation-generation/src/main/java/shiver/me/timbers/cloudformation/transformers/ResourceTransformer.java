@@ -46,7 +46,13 @@ public class ResourceTransformer implements TypeTransformer {
                     singletonList(format("aws.HasAttributes<%sAttributes>", javaTypes.extractClassName(typeName)))
                 );
             }
-            schema.put("properties", singletonMap("Properties", singletonMap("$ref", fileNames.parse(typeName))));
+            schema.put("properties", new LinkedHashMap<String, Object>() {{
+                put("Type", new LinkedHashMap<String, Object>() {{
+                    put("type", "string");
+                    put("default", typeName);
+                }});
+                put("Properties", singletonMap("$ref", fileNames.parse(typeName)));
+            }});
             return new SimpleEntry<>(typeName + RESOURCE, schema);
         }
         return new SimpleEntry<>(type.getKey(), emptyMap());

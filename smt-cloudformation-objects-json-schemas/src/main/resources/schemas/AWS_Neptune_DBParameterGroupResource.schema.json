@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.neptune.DBParameterGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Neptune::DBParameterGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_Neptune_DBParameterGroup.schema.json"
     }

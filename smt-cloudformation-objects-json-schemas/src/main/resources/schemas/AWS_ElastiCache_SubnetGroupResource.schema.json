@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.elasticache.SubnetGroupResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElastiCache::SubnetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_ElastiCache_SubnetGroup.schema.json"
     }

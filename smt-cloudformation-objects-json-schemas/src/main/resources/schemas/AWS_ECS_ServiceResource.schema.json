@@ -10,6 +10,10 @@
   "javaType" : "aws.ecs.ServiceResource",
   "javaInterfaces" : [ "aws.HasAttributes<ServiceAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ECS::Service"
+    },
     "Properties" : {
       "$ref" : "AWS_ECS_Service.schema.json"
     }

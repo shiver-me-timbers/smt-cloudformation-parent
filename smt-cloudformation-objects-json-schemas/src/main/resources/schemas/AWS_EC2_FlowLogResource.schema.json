@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.ec2.FlowLogResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::FlowLog"
+    },
     "Properties" : {
       "$ref" : "AWS_EC2_FlowLog.schema.json"
     }

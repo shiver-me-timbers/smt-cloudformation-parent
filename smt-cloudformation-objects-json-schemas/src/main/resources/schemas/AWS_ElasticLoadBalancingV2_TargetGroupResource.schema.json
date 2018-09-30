@@ -10,6 +10,10 @@
   "javaType" : "aws.elasticloadbalancingv2.TargetGroupResource",
   "javaInterfaces" : [ "aws.HasAttributes<TargetGroupAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ElasticLoadBalancingV2::TargetGroup"
+    },
     "Properties" : {
       "$ref" : "AWS_ElasticLoadBalancingV2_TargetGroup.schema.json"
     }

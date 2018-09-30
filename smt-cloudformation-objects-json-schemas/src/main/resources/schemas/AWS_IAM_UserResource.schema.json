@@ -10,6 +10,10 @@
   "javaType" : "aws.iam.UserResource",
   "javaInterfaces" : [ "aws.HasAttributes<UserAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IAM::User"
+    },
     "Properties" : {
       "$ref" : "AWS_IAM_User.schema.json"
     }

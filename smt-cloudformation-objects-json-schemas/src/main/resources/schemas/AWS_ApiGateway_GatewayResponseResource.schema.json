@@ -9,6 +9,10 @@
   },
   "javaType" : "aws.apigateway.GatewayResponseResource",
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGateway::GatewayResponse"
+    },
     "Properties" : {
       "$ref" : "AWS_ApiGateway_GatewayResponse.schema.json"
     }

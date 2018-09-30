@@ -10,6 +10,10 @@
   "javaType" : "aws.cognito.IdentityPoolResource",
   "javaInterfaces" : [ "aws.HasAttributes<IdentityPoolAttributes>" ],
   "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Cognito::IdentityPool"
+    },
     "Properties" : {
       "$ref" : "AWS_Cognito_IdentityPool.schema.json"
     }
