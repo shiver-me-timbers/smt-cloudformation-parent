@@ -16,7 +16,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
  * 
  */
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Description",
     "Value",

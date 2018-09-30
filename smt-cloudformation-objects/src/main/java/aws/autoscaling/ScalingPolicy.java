@@ -1,8 +1,6 @@
 
 package aws.autoscaling;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import aws.autoscalingplans.TargetTrackingConfiguration;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -14,6 +12,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 
 /**
  * ScalingPolicy
@@ -21,7 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html
  * 
  */
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "AdjustmentType",
     "AutoScalingGroupName",

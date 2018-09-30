@@ -87,6 +87,7 @@
                             <customDateTimePattern>yyyy-MM-ddThh:mm:ssZ</customDateTimePattern>
                             <includeToString>true</includeToString>
                             <annotationStyle>none</annotationStyle>
+                            <inclusionLevel>NON_EMPTY</inclusionLevel>
                             <customAnnotator>
                                 shiver.me.timbers.cloudformation.annotator.CloudformationAnnotator
                             </customAnnotator>
