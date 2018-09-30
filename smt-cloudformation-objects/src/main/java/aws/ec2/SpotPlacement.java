@@ -19,7 +19,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "AvailabilityZone",
-    "GroupName"
+    "GroupName",
+    "Tenancy"
 })
 public class SpotPlacement {
 
@@ -37,6 +38,13 @@ public class SpotPlacement {
     @JsonProperty("GroupName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-groupname")
     private CharSequence groupName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-tenancy
+     * 
+     */
+    @JsonProperty("Tenancy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-tenancy")
+    private CharSequence tenancy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-availabilityzone
@@ -80,14 +88,35 @@ public class SpotPlacement {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-tenancy
+     * 
+     */
+    public CharSequence getTenancy() {
+        return tenancy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html#cfn-ec2-spotfleet-spotplacement-tenancy
+     * 
+     */
+    public void setTenancy(CharSequence tenancy) {
+        this.tenancy = tenancy;
+    }
+
+    public SpotPlacement withTenancy(CharSequence tenancy) {
+        this.tenancy = tenancy;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("availabilityZone", availabilityZone).append("groupName", groupName).toString();
+        return new ToStringBuilder(this).append("availabilityZone", availabilityZone).append("groupName", groupName).append("tenancy", tenancy).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(availabilityZone).append(groupName).toHashCode();
+        return new HashCodeBuilder().append(tenancy).append(groupName).append(availabilityZone).toHashCode();
     }
 
     @Override
@@ -99,7 +128,7 @@ public class SpotPlacement {
             return false;
         }
         SpotPlacement rhs = ((SpotPlacement) other);
-        return new EqualsBuilder().append(availabilityZone, rhs.availabilityZone).append(groupName, rhs.groupName).isEquals();
+        return new EqualsBuilder().append(tenancy, rhs.tenancy).append(groupName, rhs.groupName).append(availabilityZone, rhs.availabilityZone).isEquals();
     }
 
 }

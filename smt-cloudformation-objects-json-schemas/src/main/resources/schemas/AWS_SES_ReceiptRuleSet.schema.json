@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRuleSet.schema.json",
+  "title" : "ReceiptRuleSet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html",
+  "type" : "object",
+  "javaType" : "aws.ses.ReceiptRuleSet",
+  "properties" : {
+    "RuleSetName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html#cfn-ses-receiptruleset-rulesetname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

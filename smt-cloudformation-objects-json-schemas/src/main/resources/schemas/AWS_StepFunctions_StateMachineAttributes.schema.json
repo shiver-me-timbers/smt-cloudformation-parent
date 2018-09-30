@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_StateMachineAttributes.schema.json",
+  "title" : "StateMachineAttributes",
+  "type" : "string",
+  "enum" : [ "Name" ],
+  "javaType" : "aws.stepfunctions.StateMachineAttributes"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DAX_ClusterResource.schema.json",
+  "title" : "ClusterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.dax.ClusterResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DAX_Cluster.schema.json"
+    }
+  }
+}

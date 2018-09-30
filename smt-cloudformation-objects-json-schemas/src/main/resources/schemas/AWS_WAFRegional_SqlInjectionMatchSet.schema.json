@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_SqlInjectionMatchSet.schema.json",
+  "title" : "SqlInjectionMatchSet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.SqlInjectionMatchSet",
+  "properties" : {
+    "SqlInjectionMatchTuples" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuples",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFRegional_SqlInjectionMatchSet.SqlInjectionMatchTuple.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

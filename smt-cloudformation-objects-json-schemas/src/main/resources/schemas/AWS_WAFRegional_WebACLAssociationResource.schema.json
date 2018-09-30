@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_WebACLAssociationResource.schema.json",
+  "title" : "WebACLAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.wafregional.WebACLAssociationResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_WAFRegional_WebACLAssociation.schema.json"
+    }
+  }
+}

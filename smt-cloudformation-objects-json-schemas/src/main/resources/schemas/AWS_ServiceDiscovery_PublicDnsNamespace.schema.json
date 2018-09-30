@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_PublicDnsNamespace.schema.json",
+  "title" : "PublicDnsNamespace",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-publicdnsnamespace.html",
+  "type" : "object",
+  "javaType" : "aws.servicediscovery.PublicDnsNamespace",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-publicdnsnamespace.html#cfn-servicediscovery-publicdnsnamespace-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-publicdnsnamespace.html#cfn-servicediscovery-publicdnsnamespace-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

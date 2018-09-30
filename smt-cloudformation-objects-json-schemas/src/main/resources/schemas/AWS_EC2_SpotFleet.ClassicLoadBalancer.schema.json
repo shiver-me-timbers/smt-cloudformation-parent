@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SpotFleet.ClassicLoadBalancer.schema.json",
+  "title" : "ClassicLoadBalancer",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancer.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.ClassicLoadBalancer",
+  "properties" : {
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancer.html#cfn-ec2-spotfleet-classicloadbalancer-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

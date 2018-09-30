@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptFilter.schema.json",
+  "title" : "ReceiptFilter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html",
+  "type" : "object",
+  "javaType" : "aws.ses.ReceiptFilter",
+  "properties" : {
+    "Filter" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html#cfn-ses-receiptfilter-filter",
+      "$ref" : "AWS_SES_ReceiptFilter.Filter.schema.json"
+    }
+  }
+}

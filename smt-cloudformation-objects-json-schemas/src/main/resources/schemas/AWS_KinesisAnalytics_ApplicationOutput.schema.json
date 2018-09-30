@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_ApplicationOutput.schema.json",
+  "title" : "ApplicationOutput",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.ApplicationOutput",
+  "properties" : {
+    "ApplicationName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Output" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-output",
+      "$ref" : "AWS_KinesisAnalytics_ApplicationOutput.KinesisFirehoseOutput.schema.json"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_EndpointConfig.schema.json",
+  "title" : "EndpointConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.EndpointConfig",
+  "properties" : {
+    "ProductionVariants" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SageMaker_EndpointConfig.ProductionVariant.schema.json"
+      }
+    },
+    "KmsKeyId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-kmskeyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EndpointConfigName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-endpointconfigname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    }
+  }
+}

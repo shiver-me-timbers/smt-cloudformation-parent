@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Neptune_DBClusterParameterGroup.schema.json",
+  "title" : "DBClusterParameterGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html",
+  "type" : "object",
+  "javaType" : "aws.neptune.DBClusterParameterGroup",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Parameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-parameters",
+      "type" : "any"
+    },
+    "Family" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-family",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

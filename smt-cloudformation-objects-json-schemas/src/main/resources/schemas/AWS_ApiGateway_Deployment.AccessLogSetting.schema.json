@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_Deployment.AccessLogSetting.schema.json",
+  "title" : "AccessLogSetting",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html",
+  "type" : "object",
+  "javaType" : "aws.apigateway.AccessLogSetting",
+  "properties" : {
+    "DestinationArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-destinationarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Format" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-format",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_InstanceResource.schema.json",
+  "title" : "InstanceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.servicediscovery.InstanceResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_ServiceDiscovery_Instance.schema.json"
+    }
+  }
+}

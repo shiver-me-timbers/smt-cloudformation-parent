@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptFilter.IpFilter.schema.json",
+  "title" : "IpFilter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html",
+  "type" : "object",
+  "javaType" : "aws.ses.IpFilter",
+  "properties" : {
+    "Policy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-policy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Cidr" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-cidr",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

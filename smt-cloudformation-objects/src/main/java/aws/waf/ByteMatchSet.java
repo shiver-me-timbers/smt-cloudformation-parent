@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.wafregional.ByteMatchTuple;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;

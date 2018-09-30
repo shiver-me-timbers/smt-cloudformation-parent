@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_Application.InputSchema.schema.json",
+  "title" : "InputSchema",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.InputSchema",
+  "properties" : {
+    "RecordEncoding" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordencoding",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RecordColumns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordcolumns",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_KinesisAnalytics_Application.RecordColumn.schema.json"
+      }
+    },
+    "RecordFormat" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputschema.html#cfn-kinesisanalytics-application-inputschema-recordformat",
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.RecordFormat.schema.json"
+    }
+  }
+}

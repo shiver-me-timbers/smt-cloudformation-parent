@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Neptune_DBInstanceResource.schema.json",
+  "title" : "DBInstanceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.neptune.DBInstanceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DBInstanceAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Neptune_DBInstance.schema.json"
+    }
+  }
+}

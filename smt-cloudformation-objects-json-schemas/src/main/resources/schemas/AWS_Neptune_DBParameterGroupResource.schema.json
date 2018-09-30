@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Neptune_DBParameterGroupResource.schema.json",
+  "title" : "DBParameterGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbparametergroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.neptune.DBParameterGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_Neptune_DBParameterGroup.schema.json"
+    }
+  }
+}

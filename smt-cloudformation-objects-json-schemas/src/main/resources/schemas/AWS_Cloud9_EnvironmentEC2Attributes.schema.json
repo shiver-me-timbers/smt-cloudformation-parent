@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Cloud9_EnvironmentEC2Attributes.schema.json",
+  "title" : "EnvironmentEC2Attributes",
+  "type" : "string",
+  "enum" : [ "Arn", "Name" ],
+  "javaType" : "aws.cloud9.EnvironmentEC2Attributes"
+}

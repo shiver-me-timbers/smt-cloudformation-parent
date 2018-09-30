@@ -1,0 +1,40 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScalingPlans_ScalingPlan.ScalingInstruction.schema.json",
+  "title" : "ScalingInstruction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html",
+  "type" : "object",
+  "javaType" : "aws.autoscalingplans.ScalingInstruction",
+  "properties" : {
+    "ResourceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ServiceNamespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ScalableDimension" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MinCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-mincapacity",
+      "type" : "integer"
+    },
+    "TargetTrackingConfigurations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScalingPlans_ScalingPlan.TargetTrackingConfiguration.schema.json"
+      }
+    },
+    "MaxCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity",
+      "type" : "integer"
+    }
+  }
+}

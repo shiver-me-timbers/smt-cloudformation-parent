@@ -1,0 +1,28 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT1Click_Placement.schema.json",
+  "title" : "Placement",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html",
+  "type" : "object",
+  "javaType" : "aws.iot1click.Placement",
+  "properties" : {
+    "PlacementName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-placementname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ProjectName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-projectname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AssociatedDevices" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-associateddevices",
+      "type" : "any"
+    },
+    "Attributes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-placement.html#cfn-iot1click-placement-attributes",
+      "type" : "any"
+    }
+  }
+}

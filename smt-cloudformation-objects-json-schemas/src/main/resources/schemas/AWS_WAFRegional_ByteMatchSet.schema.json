@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_ByteMatchSet.schema.json",
+  "title" : "ByteMatchSet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.ByteMatchSet",
+  "properties" : {
+    "ByteMatchTuples" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-bytematchtuples",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFRegional_ByteMatchSet.ByteMatchTuple.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

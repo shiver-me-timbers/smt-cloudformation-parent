@@ -23,7 +23,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Capabilities",
     "Devices",
-    "InitProcessEnabled"
+    "InitProcessEnabled",
+    "SharedMemorySize",
+    "Tmpfs"
 })
 public class LinuxParameters {
 
@@ -51,6 +53,21 @@ public class LinuxParameters {
     @JsonProperty("InitProcessEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled")
     private Boolean initProcessEnabled;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
+     * 
+     */
+    @JsonProperty("SharedMemorySize")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize")
+    private Integer sharedMemorySize;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
+     * 
+     */
+    @JsonProperty("Tmpfs")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs")
+    private Set<Tmpfs> tmpfs = new LinkedHashSet<Tmpfs>();
 
     /**
      * KernelCapabilities
@@ -119,14 +136,56 @@ public class LinuxParameters {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
+     * 
+     */
+    public Integer getSharedMemorySize() {
+        return sharedMemorySize;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize
+     * 
+     */
+    public void setSharedMemorySize(Integer sharedMemorySize) {
+        this.sharedMemorySize = sharedMemorySize;
+    }
+
+    public LinuxParameters withSharedMemorySize(Integer sharedMemorySize) {
+        this.sharedMemorySize = sharedMemorySize;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
+     * 
+     */
+    public Set<Tmpfs> getTmpfs() {
+        return tmpfs;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs
+     * 
+     */
+    public void setTmpfs(Set<Tmpfs> tmpfs) {
+        this.tmpfs = tmpfs;
+    }
+
+    public LinuxParameters withTmpfs(Set<Tmpfs> tmpfs) {
+        this.tmpfs = tmpfs;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("capabilities", capabilities).append("devices", devices).append("initProcessEnabled", initProcessEnabled).toString();
+        return new ToStringBuilder(this).append("capabilities", capabilities).append("devices", devices).append("initProcessEnabled", initProcessEnabled).append("sharedMemorySize", sharedMemorySize).append("tmpfs", tmpfs).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(capabilities).append(initProcessEnabled).append(devices).toHashCode();
+        return new HashCodeBuilder().append(tmpfs).append(capabilities).append(initProcessEnabled).append(sharedMemorySize).append(devices).toHashCode();
     }
 
     @Override
@@ -138,7 +197,7 @@ public class LinuxParameters {
             return false;
         }
         LinuxParameters rhs = ((LinuxParameters) other);
-        return new EqualsBuilder().append(capabilities, rhs.capabilities).append(initProcessEnabled, rhs.initProcessEnabled).append(devices, rhs.devices).isEquals();
+        return new EqualsBuilder().append(tmpfs, rhs.tmpfs).append(capabilities, rhs.capabilities).append(initProcessEnabled, rhs.initProcessEnabled).append(sharedMemorySize, rhs.sharedMemorySize).append(devices, rhs.devices).isEquals();
     }
 
 }

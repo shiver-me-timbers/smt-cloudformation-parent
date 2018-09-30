@@ -1,0 +1,28 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskDefinition.Tmpfs.schema.json",
+  "title" : "Tmpfs",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html",
+  "type" : "object",
+  "javaType" : "aws.ecs.Tmpfs",
+  "properties" : {
+    "ContainerPath" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-containerpath",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MountOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-mountoptions",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Size" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-tmpfs.html#cfn-ecs-taskdefinition-tmpfs-size",
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_NotebookInstance.schema.json",
+  "title" : "NotebookInstance",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.NotebookInstance",
+  "properties" : {
+    "KmsKeyId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DirectInternetAccess" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubnetId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-subnetid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NotebookInstanceName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-notebookinstancename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InstanceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-instancetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LifecycleConfigName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-lifecycleconfigname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SecurityGroupIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-securitygroupids",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    }
+  }
+}

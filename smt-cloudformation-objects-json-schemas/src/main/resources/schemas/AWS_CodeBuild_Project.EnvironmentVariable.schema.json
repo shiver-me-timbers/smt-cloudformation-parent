@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.EnvironmentVariable.schema.json",
+  "title" : "EnvironmentVariable",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.EnvironmentVariable",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-value",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environmentvariable.html#cfn-codebuild-project-environmentvariable-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

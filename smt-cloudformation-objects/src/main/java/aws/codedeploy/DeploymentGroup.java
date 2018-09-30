@@ -30,8 +30,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DeploymentGroupName",
     "DeploymentStyle",
     "Ec2TagFilters",
+    "Ec2TagSet",
     "LoadBalancerInfo",
     "OnPremisesInstanceTagFilters",
+    "OnPremisesTagSet",
     "ServiceRoleArn",
     "TriggerConfigurations"
 })
@@ -111,6 +113,15 @@ public class DeploymentGroup {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters")
     private Set<EC2TagFilter> ec2TagFilters = new LinkedHashSet<EC2TagFilter>();
     /**
+     * EC2TagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html
+     * 
+     */
+    @JsonProperty("Ec2TagSet")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html")
+    private EC2TagSet ec2TagSet;
+    /**
      * LoadBalancerInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html
@@ -127,6 +138,15 @@ public class DeploymentGroup {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters")
     private Set<TagFilter> onPremisesInstanceTagFilters = new LinkedHashSet<TagFilter>();
+    /**
+     * OnPremisesTagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html
+     * 
+     */
+    @JsonProperty("OnPremisesTagSet")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html")
+    private OnPremisesTagSet onPremisesTagSet;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn
      * 
@@ -349,6 +369,31 @@ public class DeploymentGroup {
     }
 
     /**
+     * EC2TagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html
+     * 
+     */
+    public EC2TagSet getEc2TagSet() {
+        return ec2TagSet;
+    }
+
+    /**
+     * EC2TagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html
+     * 
+     */
+    public void setEc2TagSet(EC2TagSet ec2TagSet) {
+        this.ec2TagSet = ec2TagSet;
+    }
+
+    public DeploymentGroup withEc2TagSet(EC2TagSet ec2TagSet) {
+        this.ec2TagSet = ec2TagSet;
+        return this;
+    }
+
+    /**
      * LoadBalancerInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html
@@ -391,6 +436,31 @@ public class DeploymentGroup {
 
     public DeploymentGroup withOnPremisesInstanceTagFilters(Set<TagFilter> onPremisesInstanceTagFilters) {
         this.onPremisesInstanceTagFilters = onPremisesInstanceTagFilters;
+        return this;
+    }
+
+    /**
+     * OnPremisesTagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html
+     * 
+     */
+    public OnPremisesTagSet getOnPremisesTagSet() {
+        return onPremisesTagSet;
+    }
+
+    /**
+     * OnPremisesTagSet
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html
+     * 
+     */
+    public void setOnPremisesTagSet(OnPremisesTagSet onPremisesTagSet) {
+        this.onPremisesTagSet = onPremisesTagSet;
+    }
+
+    public DeploymentGroup withOnPremisesTagSet(OnPremisesTagSet onPremisesTagSet) {
+        this.onPremisesTagSet = onPremisesTagSet;
         return this;
     }
 
@@ -438,12 +508,12 @@ public class DeploymentGroup {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("alarmConfiguration", alarmConfiguration).append("applicationName", applicationName).append("autoRollbackConfiguration", autoRollbackConfiguration).append("autoScalingGroups", autoScalingGroups).append("deployment", deployment).append("deploymentConfigName", deploymentConfigName).append("deploymentGroupName", deploymentGroupName).append("deploymentStyle", deploymentStyle).append("ec2TagFilters", ec2TagFilters).append("loadBalancerInfo", loadBalancerInfo).append("onPremisesInstanceTagFilters", onPremisesInstanceTagFilters).append("serviceRoleArn", serviceRoleArn).append("triggerConfigurations", triggerConfigurations).toString();
+        return new ToStringBuilder(this).append("alarmConfiguration", alarmConfiguration).append("applicationName", applicationName).append("autoRollbackConfiguration", autoRollbackConfiguration).append("autoScalingGroups", autoScalingGroups).append("deployment", deployment).append("deploymentConfigName", deploymentConfigName).append("deploymentGroupName", deploymentGroupName).append("deploymentStyle", deploymentStyle).append("ec2TagFilters", ec2TagFilters).append("ec2TagSet", ec2TagSet).append("loadBalancerInfo", loadBalancerInfo).append("onPremisesInstanceTagFilters", onPremisesInstanceTagFilters).append("onPremisesTagSet", onPremisesTagSet).append("serviceRoleArn", serviceRoleArn).append("triggerConfigurations", triggerConfigurations).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(deploymentGroupName).append(deploymentConfigName).append(loadBalancerInfo).append(triggerConfigurations).append(alarmConfiguration).append(autoScalingGroups).append(ec2TagFilters).append(deploymentStyle).append(serviceRoleArn).append(applicationName).append(onPremisesInstanceTagFilters).append(autoRollbackConfiguration).append(deployment).toHashCode();
+        return new HashCodeBuilder().append(deploymentGroupName).append(deploymentConfigName).append(loadBalancerInfo).append(triggerConfigurations).append(alarmConfiguration).append(onPremisesTagSet).append(autoScalingGroups).append(ec2TagFilters).append(deploymentStyle).append(ec2TagSet).append(serviceRoleArn).append(applicationName).append(onPremisesInstanceTagFilters).append(autoRollbackConfiguration).append(deployment).toHashCode();
     }
 
     @Override
@@ -455,7 +525,7 @@ public class DeploymentGroup {
             return false;
         }
         DeploymentGroup rhs = ((DeploymentGroup) other);
-        return new EqualsBuilder().append(deploymentGroupName, rhs.deploymentGroupName).append(deploymentConfigName, rhs.deploymentConfigName).append(loadBalancerInfo, rhs.loadBalancerInfo).append(triggerConfigurations, rhs.triggerConfigurations).append(alarmConfiguration, rhs.alarmConfiguration).append(autoScalingGroups, rhs.autoScalingGroups).append(ec2TagFilters, rhs.ec2TagFilters).append(deploymentStyle, rhs.deploymentStyle).append(serviceRoleArn, rhs.serviceRoleArn).append(applicationName, rhs.applicationName).append(onPremisesInstanceTagFilters, rhs.onPremisesInstanceTagFilters).append(autoRollbackConfiguration, rhs.autoRollbackConfiguration).append(deployment, rhs.deployment).isEquals();
+        return new EqualsBuilder().append(deploymentGroupName, rhs.deploymentGroupName).append(deploymentConfigName, rhs.deploymentConfigName).append(loadBalancerInfo, rhs.loadBalancerInfo).append(triggerConfigurations, rhs.triggerConfigurations).append(alarmConfiguration, rhs.alarmConfiguration).append(onPremisesTagSet, rhs.onPremisesTagSet).append(autoScalingGroups, rhs.autoScalingGroups).append(ec2TagFilters, rhs.ec2TagFilters).append(deploymentStyle, rhs.deploymentStyle).append(ec2TagSet, rhs.ec2TagSet).append(serviceRoleArn, rhs.serviceRoleArn).append(applicationName, rhs.applicationName).append(onPremisesInstanceTagFilters, rhs.onPremisesInstanceTagFilters).append(autoRollbackConfiguration, rhs.autoRollbackConfiguration).append(deployment, rhs.deployment).isEquals();
     }
 
 }

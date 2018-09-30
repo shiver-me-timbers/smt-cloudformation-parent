@@ -1,0 +1,78 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DAX_Cluster.schema.json",
+  "title" : "Cluster",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html",
+  "type" : "object",
+  "javaType" : "aws.dax.Cluster",
+  "properties" : {
+    "SSESpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-ssespecification",
+      "$ref" : "AWS_DAX_Cluster.SSESpecification.schema.json"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReplicationFactor" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-replicationfactor",
+      "type" : "integer"
+    },
+    "ParameterGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-parametergroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AvailabilityZones" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-availabilityzones",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "IAMRoleARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-iamrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubnetGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-subnetgroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PreferredMaintenanceWindow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-preferredmaintenancewindow",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NotificationTopicARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-notificationtopicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SecurityGroupIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-securitygroupids",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "NodeType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-nodetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClusterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-clustername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-tags",
+      "type" : "any"
+    }
+  }
+}

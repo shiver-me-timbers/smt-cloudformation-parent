@@ -18,11 +18,27 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "ContainerName",
+    "ContainerPort",
     "Port",
     "RegistryArn"
 })
 public class ServiceRegistry {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername
+     * 
+     */
+    @JsonProperty("ContainerName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername")
+    private CharSequence containerName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport
+     * 
+     */
+    @JsonProperty("ContainerPort")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport")
+    private Integer containerPort;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
      * 
@@ -37,6 +53,48 @@ public class ServiceRegistry {
     @JsonProperty("RegistryArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-registryarn")
     private CharSequence registryArn;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername
+     * 
+     */
+    public CharSequence getContainerName() {
+        return containerName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername
+     * 
+     */
+    public void setContainerName(CharSequence containerName) {
+        this.containerName = containerName;
+    }
+
+    public ServiceRegistry withContainerName(CharSequence containerName) {
+        this.containerName = containerName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport
+     * 
+     */
+    public Integer getContainerPort() {
+        return containerPort;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport
+     * 
+     */
+    public void setContainerPort(Integer containerPort) {
+        this.containerPort = containerPort;
+    }
+
+    public ServiceRegistry withContainerPort(Integer containerPort) {
+        this.containerPort = containerPort;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port
@@ -82,12 +140,12 @@ public class ServiceRegistry {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("port", port).append("registryArn", registryArn).toString();
+        return new ToStringBuilder(this).append("containerName", containerName).append("containerPort", containerPort).append("port", port).append("registryArn", registryArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(port).append(registryArn).toHashCode();
+        return new HashCodeBuilder().append(containerPort).append(registryArn).append(port).append(containerName).toHashCode();
     }
 
     @Override
@@ -99,7 +157,7 @@ public class ServiceRegistry {
             return false;
         }
         ServiceRegistry rhs = ((ServiceRegistry) other);
-        return new EqualsBuilder().append(port, rhs.port).append(registryArn, rhs.registryArn).isEquals();
+        return new EqualsBuilder().append(containerPort, rhs.containerPort).append(registryArn, rhs.registryArn).append(port, rhs.port).append(containerName, rhs.containerName).isEquals();
     }
 
 }

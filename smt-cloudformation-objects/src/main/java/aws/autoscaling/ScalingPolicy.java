@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.autoscalingplans.TargetTrackingConfiguration;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -101,11 +102,11 @@ public class ScalingPolicy {
     /**
      * TargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
      * 
      */
     @JsonProperty("TargetTrackingConfiguration")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html")
     private TargetTrackingConfiguration targetTrackingConfiguration;
 
     /**
@@ -300,7 +301,7 @@ public class ScalingPolicy {
     /**
      * TargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
      * 
      */
     public TargetTrackingConfiguration getTargetTrackingConfiguration() {
@@ -310,7 +311,7 @@ public class ScalingPolicy {
     /**
      * TargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
      * 
      */
     public void setTargetTrackingConfiguration(TargetTrackingConfiguration targetTrackingConfiguration) {

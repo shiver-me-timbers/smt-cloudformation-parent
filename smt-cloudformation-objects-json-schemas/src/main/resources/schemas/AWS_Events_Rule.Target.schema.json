@@ -46,6 +46,10 @@
     "RunCommandParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-runcommandparameters",
       "$ref" : "AWS_Events_Rule.RunCommandParameters.schema.json"
+    },
+    "SqsParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-sqsparameters",
+      "$ref" : "AWS_Events_Rule.SqsParameters.schema.json"
     }
   }
 }

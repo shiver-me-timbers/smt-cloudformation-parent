@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Neptune_DBClusterAttributes.schema.json",
+  "title" : "DBClusterAttributes",
+  "type" : "string",
+  "enum" : [ "ClusterResourceId", "Endpoint", "Port", "ReadEndpoint" ],
+  "javaType" : "aws.neptune.DBClusterAttributes"
+}

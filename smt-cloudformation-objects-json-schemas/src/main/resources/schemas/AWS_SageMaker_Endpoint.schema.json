@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_Endpoint.schema.json",
+  "title" : "Endpoint",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.Endpoint",
+  "properties" : {
+    "EndpointName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EndpointConfigName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-endpointconfigname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html#cfn-sagemaker-endpoint-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    }
+  }
+}

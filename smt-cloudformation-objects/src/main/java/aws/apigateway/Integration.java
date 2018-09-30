@@ -24,6 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "CacheKeyParameters",
     "CacheNamespace",
+    "ConnectionId",
+    "ConnectionType",
     "ContentHandling",
     "Credentials",
     "IntegrationHttpMethod",
@@ -31,6 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PassthroughBehavior",
     "RequestParameters",
     "RequestTemplates",
+    "TimeoutInMillis",
     "Type",
     "Uri"
 })
@@ -51,6 +54,20 @@ public class Integration {
     @JsonProperty("CacheNamespace")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachenamespace")
     private CharSequence cacheNamespace;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid
+     * 
+     */
+    @JsonProperty("ConnectionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid")
+    private CharSequence connectionId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype
+     * 
+     */
+    @JsonProperty("ConnectionType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype")
+    private CharSequence connectionType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling
      * 
@@ -101,6 +118,13 @@ public class Integration {
     @JsonProperty("RequestTemplates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates")
     private Map<String, String> requestTemplates;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
+     * 
+     */
+    @JsonProperty("TimeoutInMillis")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis")
+    private Integer timeoutInMillis;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type
      * 
@@ -155,6 +179,48 @@ public class Integration {
 
     public Integration withCacheNamespace(CharSequence cacheNamespace) {
         this.cacheNamespace = cacheNamespace;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid
+     * 
+     */
+    public CharSequence getConnectionId() {
+        return connectionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid
+     * 
+     */
+    public void setConnectionId(CharSequence connectionId) {
+        this.connectionId = connectionId;
+    }
+
+    public Integration withConnectionId(CharSequence connectionId) {
+        this.connectionId = connectionId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype
+     * 
+     */
+    public CharSequence getConnectionType() {
+        return connectionType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype
+     * 
+     */
+    public void setConnectionType(CharSequence connectionType) {
+        this.connectionType = connectionType;
+    }
+
+    public Integration withConnectionType(CharSequence connectionType) {
+        this.connectionType = connectionType;
         return this;
     }
 
@@ -306,6 +372,27 @@ public class Integration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
+     * 
+     */
+    public Integer getTimeoutInMillis() {
+        return timeoutInMillis;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis
+     * 
+     */
+    public void setTimeoutInMillis(Integer timeoutInMillis) {
+        this.timeoutInMillis = timeoutInMillis;
+    }
+
+    public Integration withTimeoutInMillis(Integer timeoutInMillis) {
+        this.timeoutInMillis = timeoutInMillis;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type
      * 
      */
@@ -349,12 +436,12 @@ public class Integration {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("cacheKeyParameters", cacheKeyParameters).append("cacheNamespace", cacheNamespace).append("contentHandling", contentHandling).append("credentials", credentials).append("integrationHttpMethod", integrationHttpMethod).append("integrationResponses", integrationResponses).append("passthroughBehavior", passthroughBehavior).append("requestParameters", requestParameters).append("requestTemplates", requestTemplates).append("type", type).append("uri", uri).toString();
+        return new ToStringBuilder(this).append("cacheKeyParameters", cacheKeyParameters).append("cacheNamespace", cacheNamespace).append("connectionId", connectionId).append("connectionType", connectionType).append("contentHandling", contentHandling).append("credentials", credentials).append("integrationHttpMethod", integrationHttpMethod).append("integrationResponses", integrationResponses).append("passthroughBehavior", passthroughBehavior).append("requestParameters", requestParameters).append("requestTemplates", requestTemplates).append("timeoutInMillis", timeoutInMillis).append("type", type).append("uri", uri).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(passthroughBehavior).append(requestTemplates).append(integrationHttpMethod).append(credentials).append(cacheKeyParameters).append(integrationResponses).append(requestParameters).append(contentHandling).append(cacheNamespace).append(type).append(uri).toHashCode();
+        return new HashCodeBuilder().append(integrationHttpMethod).append(credentials).append(cacheKeyParameters).append(integrationResponses).append(requestParameters).append(contentHandling).append(cacheNamespace).append(type).append(connectionType).append(uri).append(timeoutInMillis).append(passthroughBehavior).append(requestTemplates).append(connectionId).toHashCode();
     }
 
     @Override
@@ -366,7 +453,7 @@ public class Integration {
             return false;
         }
         Integration rhs = ((Integration) other);
-        return new EqualsBuilder().append(passthroughBehavior, rhs.passthroughBehavior).append(requestTemplates, rhs.requestTemplates).append(integrationHttpMethod, rhs.integrationHttpMethod).append(credentials, rhs.credentials).append(cacheKeyParameters, rhs.cacheKeyParameters).append(integrationResponses, rhs.integrationResponses).append(requestParameters, rhs.requestParameters).append(contentHandling, rhs.contentHandling).append(cacheNamespace, rhs.cacheNamespace).append(type, rhs.type).append(uri, rhs.uri).isEquals();
+        return new EqualsBuilder().append(integrationHttpMethod, rhs.integrationHttpMethod).append(credentials, rhs.credentials).append(cacheKeyParameters, rhs.cacheKeyParameters).append(integrationResponses, rhs.integrationResponses).append(requestParameters, rhs.requestParameters).append(contentHandling, rhs.contentHandling).append(cacheNamespace, rhs.cacheNamespace).append(type, rhs.type).append(connectionType, rhs.connectionType).append(uri, rhs.uri).append(timeoutInMillis, rhs.timeoutInMillis).append(passthroughBehavior, rhs.passthroughBehavior).append(requestTemplates, rhs.requestTemplates).append(connectionId, rhs.connectionId).isEquals();
     }
 
 }

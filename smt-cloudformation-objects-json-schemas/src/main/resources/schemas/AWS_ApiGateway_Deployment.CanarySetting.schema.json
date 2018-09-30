@@ -1,0 +1,23 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_Deployment.CanarySetting.schema.json",
+  "title" : "CanarySetting",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-canarysetting.html",
+  "type" : "object",
+  "javaType" : "aws.apigateway.CanarySetting",
+  "properties" : {
+    "PercentTraffic" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-canarysetting.html#cfn-apigateway-deployment-canarysetting-percenttraffic",
+      "type" : "number"
+    },
+    "StageVariableOverrides" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-canarysetting.html#cfn-apigateway-deployment-canarysetting-stagevariableoverrides",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "UseStageCache" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-canarysetting.html#cfn-apigateway-deployment-canarysetting-usestagecache",
+      "type" : "boolean"
+    }
+  }
+}

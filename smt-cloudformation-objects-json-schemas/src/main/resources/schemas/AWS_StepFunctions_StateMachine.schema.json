@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_StateMachine.schema.json",
+  "title" : "StateMachine",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html",
+  "type" : "object",
+  "javaType" : "aws.stepfunctions.StateMachine",
+  "properties" : {
+    "DefinitionString" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StateMachineName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-statemachinename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

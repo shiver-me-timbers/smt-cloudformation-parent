@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_Rule.schema.json",
+  "title" : "Rule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.Rule",
+  "properties" : {
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Predicates" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-predicates",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFRegional_Rule.Predicate.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

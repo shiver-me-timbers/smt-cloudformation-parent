@@ -1,0 +1,32 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_Application.schema.json",
+  "title" : "Application",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.Application",
+  "properties" : {
+    "ApplicationName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Inputs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_KinesisAnalytics_Application.KinesisStreamsInput.schema.json"
+      }
+    },
+    "ApplicationDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApplicationCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationcode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

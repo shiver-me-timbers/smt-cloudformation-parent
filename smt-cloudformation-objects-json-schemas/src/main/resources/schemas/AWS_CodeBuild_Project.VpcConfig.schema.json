@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.VpcConfig.schema.json",
+  "title" : "VpcConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.VpcConfig",
+  "properties" : {
+    "Subnets" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-subnets",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "VpcId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-vpcid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SecurityGroupIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-securitygroupids",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

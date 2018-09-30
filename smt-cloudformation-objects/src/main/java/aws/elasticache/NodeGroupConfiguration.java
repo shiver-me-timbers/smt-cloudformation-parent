@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "NodeGroupId",
     "PrimaryAvailabilityZone",
     "ReplicaAvailabilityZones",
     "ReplicaCount",
@@ -28,6 +29,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class NodeGroupConfiguration {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid
+     * 
+     */
+    @JsonProperty("NodeGroupId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid")
+    private CharSequence nodeGroupId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone
      * 
@@ -57,6 +65,27 @@ public class NodeGroupConfiguration {
     @JsonProperty("Slots")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-slots")
     private CharSequence slots;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid
+     * 
+     */
+    public CharSequence getNodeGroupId() {
+        return nodeGroupId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid
+     * 
+     */
+    public void setNodeGroupId(CharSequence nodeGroupId) {
+        this.nodeGroupId = nodeGroupId;
+    }
+
+    public NodeGroupConfiguration withNodeGroupId(CharSequence nodeGroupId) {
+        this.nodeGroupId = nodeGroupId;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone
@@ -144,12 +173,12 @@ public class NodeGroupConfiguration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("primaryAvailabilityZone", primaryAvailabilityZone).append("replicaAvailabilityZones", replicaAvailabilityZones).append("replicaCount", replicaCount).append("slots", slots).toString();
+        return new ToStringBuilder(this).append("nodeGroupId", nodeGroupId).append("primaryAvailabilityZone", primaryAvailabilityZone).append("replicaAvailabilityZones", replicaAvailabilityZones).append("replicaCount", replicaCount).append("slots", slots).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(primaryAvailabilityZone).append(replicaCount).append(slots).append(replicaAvailabilityZones).toHashCode();
+        return new HashCodeBuilder().append(primaryAvailabilityZone).append(replicaCount).append(slots).append(nodeGroupId).append(replicaAvailabilityZones).toHashCode();
     }
 
     @Override
@@ -161,7 +190,7 @@ public class NodeGroupConfiguration {
             return false;
         }
         NodeGroupConfiguration rhs = ((NodeGroupConfiguration) other);
-        return new EqualsBuilder().append(primaryAvailabilityZone, rhs.primaryAvailabilityZone).append(replicaCount, rhs.replicaCount).append(slots, rhs.slots).append(replicaAvailabilityZones, rhs.replicaAvailabilityZones).isEquals();
+        return new EqualsBuilder().append(primaryAvailabilityZone, rhs.primaryAvailabilityZone).append(replicaCount, rhs.replicaCount).append(slots, rhs.slots).append(nodeGroupId, rhs.nodeGroupId).append(replicaAvailabilityZones, rhs.replicaAvailabilityZones).isEquals();
     }
 
 }

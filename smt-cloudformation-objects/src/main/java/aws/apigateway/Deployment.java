@@ -18,6 +18,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "DeploymentCanarySettings",
     "Description",
     "RestApiId",
     "StageDescription",
@@ -25,6 +26,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class Deployment {
 
+    /**
+     * DeploymentCanarySettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
+     * 
+     */
+    @JsonProperty("DeploymentCanarySettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html")
+    private DeploymentCanarySettings deploymentCanarySettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
@@ -55,6 +65,31 @@ public class Deployment {
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename")
     private CharSequence stageName;
+
+    /**
+     * DeploymentCanarySettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
+     * 
+     */
+    public DeploymentCanarySettings getDeploymentCanarySettings() {
+        return deploymentCanarySettings;
+    }
+
+    /**
+     * DeploymentCanarySettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
+     * 
+     */
+    public void setDeploymentCanarySettings(DeploymentCanarySettings deploymentCanarySettings) {
+        this.deploymentCanarySettings = deploymentCanarySettings;
+    }
+
+    public Deployment withDeploymentCanarySettings(DeploymentCanarySettings deploymentCanarySettings) {
+        this.deploymentCanarySettings = deploymentCanarySettings;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
@@ -146,12 +181,12 @@ public class Deployment {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("restApiId", restApiId).append("stageDescription", stageDescription).append("stageName", stageName).toString();
+        return new ToStringBuilder(this).append("deploymentCanarySettings", deploymentCanarySettings).append("description", description).append("restApiId", restApiId).append("stageDescription", stageDescription).append("stageName", stageName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(description).append(stageName).append(restApiId).append(stageDescription).toHashCode();
+        return new HashCodeBuilder().append(description).append(stageName).append(deploymentCanarySettings).append(restApiId).append(stageDescription).toHashCode();
     }
 
     @Override
@@ -163,7 +198,7 @@ public class Deployment {
             return false;
         }
         Deployment rhs = ((Deployment) other);
-        return new EqualsBuilder().append(description, rhs.description).append(stageName, rhs.stageName).append(restApiId, rhs.restApiId).append(stageDescription, rhs.stageDescription).isEquals();
+        return new EqualsBuilder().append(description, rhs.description).append(stageName, rhs.stageName).append(deploymentCanarySettings, rhs.deploymentCanarySettings).append(restApiId, rhs.restApiId).append(stageDescription, rhs.stageDescription).isEquals();
     }
 
 }

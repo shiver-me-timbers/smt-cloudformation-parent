@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeDeploy_DeploymentGroup.EC2TagSet.schema.json",
+  "title" : "EC2TagSet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html",
+  "type" : "object",
+  "javaType" : "aws.codedeploy.EC2TagSet",
+  "properties" : {
+    "Ec2TagSetList" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_CodeDeploy_DeploymentGroup.EC2TagSetListObject.schema.json"
+      }
+    }
+  }
+}

@@ -21,6 +21,18 @@
     "InitProcessEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled",
       "type" : "boolean"
+    },
+    "SharedMemorySize" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-sharedmemorysize",
+      "type" : "integer"
+    },
+    "Tmpfs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_ECS_TaskDefinition.Tmpfs.schema.json"
+      }
     }
   }
 }

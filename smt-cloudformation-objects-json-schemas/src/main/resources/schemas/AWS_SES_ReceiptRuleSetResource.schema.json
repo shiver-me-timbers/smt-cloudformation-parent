@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRuleSetResource.schema.json",
+  "title" : "ReceiptRuleSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ses.ReceiptRuleSetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SES_ReceiptRuleSet.schema.json"
+    }
+  }
+}

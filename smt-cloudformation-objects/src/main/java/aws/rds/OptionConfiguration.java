@@ -2,11 +2,14 @@
 package aws.rds;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -44,14 +47,13 @@ public class OptionConfiguration {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname")
     private CharSequence optionName;
     /**
-     * OptionSetting
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings
      * 
      */
     @JsonProperty("OptionSettings")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html")
-    private OptionSetting optionSettings;
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings")
+    private Set<OptionSetting> optionSettings = new LinkedHashSet<OptionSetting>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion
      * 
@@ -117,26 +119,22 @@ public class OptionConfiguration {
     }
 
     /**
-     * OptionSetting
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings
      * 
      */
-    public OptionSetting getOptionSettings() {
+    public Set<OptionSetting> getOptionSettings() {
         return optionSettings;
     }
 
     /**
-     * OptionSetting
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings
      * 
      */
-    public void setOptionSettings(OptionSetting optionSettings) {
+    public void setOptionSettings(Set<OptionSetting> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public OptionConfiguration withOptionSettings(OptionSetting optionSettings) {
+    public OptionConfiguration withOptionSettings(Set<OptionSetting> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }

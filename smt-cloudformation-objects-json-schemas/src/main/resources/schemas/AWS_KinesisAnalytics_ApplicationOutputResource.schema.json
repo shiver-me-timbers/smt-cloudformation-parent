@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_ApplicationOutputResource.schema.json",
+  "title" : "ApplicationOutputResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.kinesisanalytics.ApplicationOutputResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_KinesisAnalytics_ApplicationOutput.schema.json"
+    }
+  }
+}

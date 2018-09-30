@@ -1,0 +1,37 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScalingPlans_ScalingPlan.CustomizedScalingMetricSpecification.schema.json",
+  "title" : "CustomizedScalingMetricSpecification",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html",
+  "type" : "object",
+  "javaType" : "aws.autoscalingplans.CustomizedScalingMetricSpecification",
+  "properties" : {
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Statistic" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-statistic",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Dimensions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-dimensions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AutoScalingPlans_ScalingPlan.MetricDimension.schema.json"
+      }
+    },
+    "Unit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-unit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Namespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedscalingmetricspecification-namespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

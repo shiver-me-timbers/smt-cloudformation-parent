@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_SqlInjectionMatchSetResource.schema.json",
+  "title" : "SqlInjectionMatchSetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.wafregional.SqlInjectionMatchSetResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_WAFRegional_SqlInjectionMatchSet.schema.json"
+    }
+  }
+}

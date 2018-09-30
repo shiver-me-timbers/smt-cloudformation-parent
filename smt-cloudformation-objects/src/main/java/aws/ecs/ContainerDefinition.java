@@ -46,6 +46,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PortMappings",
     "Privileged",
     "ReadonlyRootFilesystem",
+    "RepositoryCredentials",
     "Ulimits",
     "User",
     "VolumesFrom",
@@ -237,6 +238,15 @@ public class ContainerDefinition {
     @JsonProperty("ReadonlyRootFilesystem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-readonlyrootfilesystem")
     private Boolean readonlyRootFilesystem;
+    /**
+     * RepositoryCredentials
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html
+     * 
+     */
+    @JsonProperty("RepositoryCredentials")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html")
+    private RepositoryCredentials repositoryCredentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
@@ -785,6 +795,31 @@ public class ContainerDefinition {
     }
 
     /**
+     * RepositoryCredentials
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html
+     * 
+     */
+    public RepositoryCredentials getRepositoryCredentials() {
+        return repositoryCredentials;
+    }
+
+    /**
+     * RepositoryCredentials
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html
+     * 
+     */
+    public void setRepositoryCredentials(RepositoryCredentials repositoryCredentials) {
+        this.repositoryCredentials = repositoryCredentials;
+    }
+
+    public ContainerDefinition withRepositoryCredentials(RepositoryCredentials repositoryCredentials) {
+        this.repositoryCredentials = repositoryCredentials;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
      */
@@ -870,12 +905,12 @@ public class ContainerDefinition {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("readonlyRootFilesystem", readonlyRootFilesystem).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
+        return new ToStringBuilder(this).append("command", command).append("cpu", cpu).append("disableNetworking", disableNetworking).append("dnsSearchDomains", dnsSearchDomains).append("dnsServers", dnsServers).append("dockerLabels", dockerLabels).append("dockerSecurityOptions", dockerSecurityOptions).append("entryPoint", entryPoint).append("environment", environment).append("essential", essential).append("extraHosts", extraHosts).append("healthCheck", healthCheck).append("hostname", hostname).append("image", image).append("links", links).append("linuxParameters", linuxParameters).append("logConfiguration", logConfiguration).append("memory", memory).append("memoryReservation", memoryReservation).append("mountPoints", mountPoints).append("name", name).append("portMappings", portMappings).append("privileged", privileged).append("readonlyRootFilesystem", readonlyRootFilesystem).append("repositoryCredentials", repositoryCredentials).append("ulimits", ulimits).append("user", user).append("volumesFrom", volumesFrom).append("workingDirectory", workingDirectory).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(memoryReservation).append(portMappings).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(cpu).append(logConfiguration).append(command).append(privileged).append(environment).append(ulimits).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(user).append(dnsSearchDomains).append(essential).toHashCode();
+        return new HashCodeBuilder().append(volumesFrom).append(memory).append(workingDirectory).append(memoryReservation).append(portMappings).append(disableNetworking).append(hostname).append(readonlyRootFilesystem).append(extraHosts).append(dockerSecurityOptions).append(links).append(dnsServers).append(linuxParameters).append(dockerLabels).append(image).append(cpu).append(logConfiguration).append(command).append(privileged).append(environment).append(ulimits).append(healthCheck).append(mountPoints).append(name).append(entryPoint).append(repositoryCredentials).append(user).append(dnsSearchDomains).append(essential).toHashCode();
     }
 
     @Override
@@ -887,7 +922,7 @@ public class ContainerDefinition {
             return false;
         }
         ContainerDefinition rhs = ((ContainerDefinition) other);
-        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(command, rhs.command).append(privileged, rhs.privileged).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
+        return new EqualsBuilder().append(volumesFrom, rhs.volumesFrom).append(memory, rhs.memory).append(workingDirectory, rhs.workingDirectory).append(memoryReservation, rhs.memoryReservation).append(portMappings, rhs.portMappings).append(disableNetworking, rhs.disableNetworking).append(hostname, rhs.hostname).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(extraHosts, rhs.extraHosts).append(dockerSecurityOptions, rhs.dockerSecurityOptions).append(links, rhs.links).append(dnsServers, rhs.dnsServers).append(linuxParameters, rhs.linuxParameters).append(dockerLabels, rhs.dockerLabels).append(image, rhs.image).append(cpu, rhs.cpu).append(logConfiguration, rhs.logConfiguration).append(command, rhs.command).append(privileged, rhs.privileged).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(healthCheck, rhs.healthCheck).append(mountPoints, rhs.mountPoints).append(name, rhs.name).append(entryPoint, rhs.entryPoint).append(repositoryCredentials, rhs.repositoryCredentials).append(user, rhs.user).append(dnsSearchDomains, rhs.dnsSearchDomains).append(essential, rhs.essential).isEquals();
     }
 
 }

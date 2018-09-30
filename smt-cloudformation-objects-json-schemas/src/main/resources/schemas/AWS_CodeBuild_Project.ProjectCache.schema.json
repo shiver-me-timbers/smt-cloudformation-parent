@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.ProjectCache.schema.json",
+  "title" : "ProjectCache",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.ProjectCache",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-location",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

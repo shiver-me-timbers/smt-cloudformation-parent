@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "ApiKeyRequired",
+    "AuthorizationScopes",
     "AuthorizationType",
     "AuthorizerId",
     "HttpMethod",
@@ -44,6 +45,14 @@ public class Method {
     @JsonProperty("ApiKeyRequired")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-apikeyrequired")
     private java.lang.Boolean apiKeyRequired;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
+     * 
+     */
+    @JsonProperty("AuthorizationScopes")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes")
+    private Set<CharSequence> authorizationScopes = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationtype
      * 
@@ -143,6 +152,27 @@ public class Method {
 
     public Method withApiKeyRequired(java.lang.Boolean apiKeyRequired) {
         this.apiKeyRequired = apiKeyRequired;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
+     * 
+     */
+    public Set<CharSequence> getAuthorizationScopes() {
+        return authorizationScopes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-authorizationscopes
+     * 
+     */
+    public void setAuthorizationScopes(Set<CharSequence> authorizationScopes) {
+        this.authorizationScopes = authorizationScopes;
+    }
+
+    public Method withAuthorizationScopes(Set<CharSequence> authorizationScopes) {
+        this.authorizationScopes = authorizationScopes;
         return this;
     }
 
@@ -383,12 +413,12 @@ public class Method {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("apiKeyRequired", apiKeyRequired).append("authorizationType", authorizationType).append("authorizerId", authorizerId).append("httpMethod", httpMethod).append("integration", integration).append("methodResponses", methodResponses).append("operationName", operationName).append("requestModels", requestModels).append("requestParameters", requestParameters).append("requestValidatorId", requestValidatorId).append("resourceId", resourceId).append("restApiId", restApiId).toString();
+        return new ToStringBuilder(this).append("apiKeyRequired", apiKeyRequired).append("authorizationScopes", authorizationScopes).append("authorizationType", authorizationType).append("authorizerId", authorizerId).append("httpMethod", httpMethod).append("integration", integration).append("methodResponses", methodResponses).append("operationName", operationName).append("requestModels", requestModels).append("requestParameters", requestParameters).append("requestValidatorId", requestValidatorId).append("resourceId", resourceId).append("restApiId", restApiId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(authorizerId).append(resourceId).append(requestModels).append(requestParameters).append(operationName).append(httpMethod).append(requestValidatorId).append(apiKeyRequired).append(restApiId).append(integration).append(authorizationType).append(methodResponses).toHashCode();
+        return new HashCodeBuilder().append(authorizerId).append(resourceId).append(authorizationScopes).append(requestModels).append(requestParameters).append(operationName).append(httpMethod).append(requestValidatorId).append(apiKeyRequired).append(restApiId).append(integration).append(authorizationType).append(methodResponses).toHashCode();
     }
 
     @Override
@@ -400,7 +430,7 @@ public class Method {
             return false;
         }
         Method rhs = ((Method) other);
-        return new EqualsBuilder().append(authorizerId, rhs.authorizerId).append(resourceId, rhs.resourceId).append(requestModels, rhs.requestModels).append(requestParameters, rhs.requestParameters).append(operationName, rhs.operationName).append(httpMethod, rhs.httpMethod).append(requestValidatorId, rhs.requestValidatorId).append(apiKeyRequired, rhs.apiKeyRequired).append(restApiId, rhs.restApiId).append(integration, rhs.integration).append(authorizationType, rhs.authorizationType).append(methodResponses, rhs.methodResponses).isEquals();
+        return new EqualsBuilder().append(authorizerId, rhs.authorizerId).append(resourceId, rhs.resourceId).append(authorizationScopes, rhs.authorizationScopes).append(requestModels, rhs.requestModels).append(requestParameters, rhs.requestParameters).append(operationName, rhs.operationName).append(httpMethod, rhs.httpMethod).append(requestValidatorId, rhs.requestValidatorId).append(apiKeyRequired, rhs.apiKeyRequired).append(restApiId, rhs.restApiId).append(integration, rhs.integration).append(authorizationType, rhs.authorizationType).append(methodResponses, rhs.methodResponses).isEquals();
     }
 
 }

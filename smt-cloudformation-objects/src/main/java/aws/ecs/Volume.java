@@ -18,11 +18,21 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "DockerVolumeConfiguration",
     "Host",
     "Name"
 })
 public class Volume {
 
+    /**
+     * DockerVolumeConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html
+     * 
+     */
+    @JsonProperty("DockerVolumeConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html")
+    private DockerVolumeConfiguration dockerVolumeConfiguration;
     /**
      * HostVolumeProperties
      * <p>
@@ -39,6 +49,31 @@ public class Volume {
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name")
     private CharSequence name;
+
+    /**
+     * DockerVolumeConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html
+     * 
+     */
+    public DockerVolumeConfiguration getDockerVolumeConfiguration() {
+        return dockerVolumeConfiguration;
+    }
+
+    /**
+     * DockerVolumeConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html
+     * 
+     */
+    public void setDockerVolumeConfiguration(DockerVolumeConfiguration dockerVolumeConfiguration) {
+        this.dockerVolumeConfiguration = dockerVolumeConfiguration;
+    }
+
+    public Volume withDockerVolumeConfiguration(DockerVolumeConfiguration dockerVolumeConfiguration) {
+        this.dockerVolumeConfiguration = dockerVolumeConfiguration;
+        return this;
+    }
 
     /**
      * HostVolumeProperties
@@ -88,12 +123,12 @@ public class Volume {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("host", host).append("name", name).toString();
+        return new ToStringBuilder(this).append("dockerVolumeConfiguration", dockerVolumeConfiguration).append("host", host).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(host).append(name).toHashCode();
+        return new HashCodeBuilder().append(host).append(name).append(dockerVolumeConfiguration).toHashCode();
     }
 
     @Override
@@ -105,7 +140,7 @@ public class Volume {
             return false;
         }
         Volume rhs = ((Volume) other);
-        return new EqualsBuilder().append(host, rhs.host).append(name, rhs.name).isEquals();
+        return new EqualsBuilder().append(host, rhs.host).append(name, rhs.name).append(dockerVolumeConfiguration, rhs.dockerVolumeConfiguration).isEquals();
     }
 
 }

@@ -1,0 +1,53 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.Artifacts.schema.json",
+  "title" : "Artifacts",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.Artifacts",
+  "properties" : {
+    "Path" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-path",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ArtifactIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-artifactidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OverrideArtifactName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-overrideartifactname",
+      "type" : "boolean"
+    },
+    "Packaging" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-packaging",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EncryptionDisabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-encryptiondisabled",
+      "type" : "boolean"
+    },
+    "Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-location",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NamespaceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-namespacetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

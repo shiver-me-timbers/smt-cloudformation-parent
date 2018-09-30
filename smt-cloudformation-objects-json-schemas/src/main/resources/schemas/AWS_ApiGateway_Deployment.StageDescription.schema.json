@@ -6,6 +6,10 @@
   "type" : "object",
   "javaType" : "aws.apigateway.StageDescription",
   "properties" : {
+    "AccessLogSetting" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-accesslogsetting",
+      "$ref" : "AWS_ApiGateway_Stage.AccessLogSetting.schema.json"
+    },
     "CacheClusterEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled",
       "type" : "boolean"
@@ -26,6 +30,10 @@
     "CachingEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled",
       "type" : "boolean"
+    },
+    "CanarySetting" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-canarysetting",
+      "$ref" : "AWS_ApiGateway_Stage.CanarySetting.schema.json"
     },
     "ClientCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid",

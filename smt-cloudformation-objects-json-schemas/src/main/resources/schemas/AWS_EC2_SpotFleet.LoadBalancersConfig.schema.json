@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_SpotFleet.LoadBalancersConfig.schema.json",
+  "title" : "LoadBalancersConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.LoadBalancersConfig",
+  "properties" : {
+    "ClassicLoadBalancersConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html#cfn-ec2-spotfleet-loadbalancersconfig-classicloadbalancersconfig",
+      "$ref" : "AWS_EC2_SpotFleet.ClassicLoadBalancersConfig.schema.json"
+    },
+    "TargetGroupsConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html#cfn-ec2-spotfleet-loadbalancersconfig-targetgroupsconfig",
+      "$ref" : "AWS_EC2_SpotFleet.TargetGroupsConfig.schema.json"
+    }
+  }
+}

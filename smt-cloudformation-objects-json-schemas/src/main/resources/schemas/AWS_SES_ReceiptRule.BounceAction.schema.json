@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.BounceAction.schema.json",
+  "title" : "BounceAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html",
+  "type" : "object",
+  "javaType" : "aws.ses.BounceAction",
+  "properties" : {
+    "Sender" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-sender",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SmtpReplyCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-smtpreplycode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Message" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-message",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-topicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StatusCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-statuscode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

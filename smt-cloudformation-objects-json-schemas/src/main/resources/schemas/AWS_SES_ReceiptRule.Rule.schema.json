@@ -1,0 +1,43 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.Rule.schema.json",
+  "title" : "Rule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html",
+  "type" : "object",
+  "javaType" : "aws.ses.Rule",
+  "properties" : {
+    "ScanEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-scanenabled",
+      "type" : "boolean"
+    },
+    "Recipients" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-recipients",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Actions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-actions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SES_ReceiptRule.BounceAction.schema.json"
+      }
+    },
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-enabled",
+      "type" : "boolean"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TlsPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-tlspolicy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

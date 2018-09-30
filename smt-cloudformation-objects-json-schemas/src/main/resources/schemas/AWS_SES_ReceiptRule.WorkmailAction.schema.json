@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.WorkmailAction.schema.json",
+  "title" : "WorkmailAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html",
+  "type" : "object",
+  "javaType" : "aws.ses.WorkmailAction",
+  "properties" : {
+    "TopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html#cfn-ses-receiptrule-workmailaction-topicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OrganizationArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html#cfn-ses-receiptrule-workmailaction-organizationarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

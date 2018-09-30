@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ConfigurationSetEventDestination.EventDestination.schema.json",
+  "title" : "EventDestination",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html",
+  "type" : "object",
+  "javaType" : "aws.ses.EventDestination",
+  "properties" : {
+    "CloudWatchDestination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-cloudwatchdestination",
+      "$ref" : "AWS_SES_ConfigurationSetEventDestination.CloudWatchDestination.schema.json"
+    },
+    "Enabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled",
+      "type" : "boolean"
+    },
+    "MatchingEventTypes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-matchingeventtypes",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "KinesisFirehoseDestination" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-kinesisfirehosedestination",
+      "$ref" : "AWS_SES_ConfigurationSetEventDestination.KinesisFirehoseDestination.schema.json"
+    }
+  }
+}

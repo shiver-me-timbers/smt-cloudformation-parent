@@ -44,6 +44,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "EngineMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "EngineVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion",
       "type" : "string",
@@ -82,6 +87,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "ScalingConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-scalingconfiguration",
+      "$ref" : "AWS_RDS_DBCluster.ScalingConfiguration.schema.json"
     },
     "SnapshotIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier",

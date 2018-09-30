@@ -26,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InputTransformer",
     "KinesisParameters",
     "RoleArn",
-    "RunCommandParameters"
+    "RunCommandParameters",
+    "SqsParameters"
 })
 public class Target {
 
@@ -101,6 +102,15 @@ public class Target {
     @JsonProperty("RunCommandParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html")
     private RunCommandParameters runCommandParameters;
+    /**
+     * SqsParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html
+     * 
+     */
+    @JsonProperty("SqsParameters")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html")
+    private SqsParameters sqsParameters;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
@@ -307,14 +317,39 @@ public class Target {
         return this;
     }
 
+    /**
+     * SqsParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html
+     * 
+     */
+    public SqsParameters getSqsParameters() {
+        return sqsParameters;
+    }
+
+    /**
+     * SqsParameters
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html
+     * 
+     */
+    public void setSqsParameters(SqsParameters sqsParameters) {
+        this.sqsParameters = sqsParameters;
+    }
+
+    public Target withSqsParameters(SqsParameters sqsParameters) {
+        this.sqsParameters = sqsParameters;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("arn", arn).append("ecsParameters", ecsParameters).append("id", id).append("input", input).append("inputPath", inputPath).append("inputTransformer", inputTransformer).append("kinesisParameters", kinesisParameters).append("roleArn", roleArn).append("runCommandParameters", runCommandParameters).toString();
+        return new ToStringBuilder(this).append("arn", arn).append("ecsParameters", ecsParameters).append("id", id).append("input", input).append("inputPath", inputPath).append("inputTransformer", inputTransformer).append("kinesisParameters", kinesisParameters).append("roleArn", roleArn).append("runCommandParameters", runCommandParameters).append("sqsParameters", sqsParameters).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(inputTransformer).append(input).append(runCommandParameters).append(inputPath).append(ecsParameters).append(roleArn).append(kinesisParameters).append(id).append(arn).toHashCode();
+        return new HashCodeBuilder().append(inputTransformer).append(input).append(runCommandParameters).append(inputPath).append(sqsParameters).append(ecsParameters).append(roleArn).append(kinesisParameters).append(id).append(arn).toHashCode();
     }
 
     @Override
@@ -326,7 +361,7 @@ public class Target {
             return false;
         }
         Target rhs = ((Target) other);
-        return new EqualsBuilder().append(inputTransformer, rhs.inputTransformer).append(input, rhs.input).append(runCommandParameters, rhs.runCommandParameters).append(inputPath, rhs.inputPath).append(ecsParameters, rhs.ecsParameters).append(roleArn, rhs.roleArn).append(kinesisParameters, rhs.kinesisParameters).append(id, rhs.id).append(arn, rhs.arn).isEquals();
+        return new EqualsBuilder().append(inputTransformer, rhs.inputTransformer).append(input, rhs.input).append(runCommandParameters, rhs.runCommandParameters).append(inputPath, rhs.inputPath).append(sqsParameters, rhs.sqsParameters).append(ecsParameters, rhs.ecsParameters).append(roleArn, rhs.roleArn).append(kinesisParameters, rhs.kinesisParameters).append(id, rhs.id).append(arn, rhs.arn).isEquals();
     }
 
 }

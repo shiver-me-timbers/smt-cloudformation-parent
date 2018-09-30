@@ -22,11 +22,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "AccessLogSetting",
     "CacheClusterEnabled",
     "CacheClusterSize",
     "CacheDataEncrypted",
     "CacheTtlInSeconds",
     "CachingEnabled",
+    "CanarySetting",
     "ClientCertificateId",
     "DataTraceEnabled",
     "Description",
@@ -40,6 +42,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class StageDescription {
 
+    /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    @JsonProperty("AccessLogSetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html")
+    private AccessLogSetting accessLogSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled
      * 
@@ -75,6 +86,15 @@ public class StageDescription {
     @JsonProperty("CachingEnabled")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cachingenabled")
     private Boolean cachingEnabled;
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    @JsonProperty("CanarySetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html")
+    private CanarySetting canarySetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-clientcertificateid
      * 
@@ -146,6 +166,31 @@ public class StageDescription {
     @JsonProperty("Variables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-variables")
     private Map<String, String> variables;
+
+    /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    public AccessLogSetting getAccessLogSetting() {
+        return accessLogSetting;
+    }
+
+    /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    public void setAccessLogSetting(AccessLogSetting accessLogSetting) {
+        this.accessLogSetting = accessLogSetting;
+    }
+
+    public StageDescription withAccessLogSetting(AccessLogSetting accessLogSetting) {
+        this.accessLogSetting = accessLogSetting;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html#cfn-apigateway-deployment-stagedescription-cacheclusterenabled
@@ -249,6 +294,31 @@ public class StageDescription {
 
     public StageDescription withCachingEnabled(Boolean cachingEnabled) {
         this.cachingEnabled = cachingEnabled;
+        return this;
+    }
+
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    public CanarySetting getCanarySetting() {
+        return canarySetting;
+    }
+
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    public void setCanarySetting(CanarySetting canarySetting) {
+        this.canarySetting = canarySetting;
+    }
+
+    public StageDescription withCanarySetting(CanarySetting canarySetting) {
+        this.canarySetting = canarySetting;
         return this;
     }
 
@@ -464,12 +534,12 @@ public class StageDescription {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("cacheDataEncrypted", cacheDataEncrypted).append("cacheTtlInSeconds", cacheTtlInSeconds).append("cachingEnabled", cachingEnabled).append("clientCertificateId", clientCertificateId).append("dataTraceEnabled", dataTraceEnabled).append("description", description).append("documentationVersion", documentationVersion).append("loggingLevel", loggingLevel).append("methodSettings", methodSettings).append("metricsEnabled", metricsEnabled).append("throttlingBurstLimit", throttlingBurstLimit).append("throttlingRateLimit", throttlingRateLimit).append("variables", variables).toString();
+        return new ToStringBuilder(this).append("accessLogSetting", accessLogSetting).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("cacheDataEncrypted", cacheDataEncrypted).append("cacheTtlInSeconds", cacheTtlInSeconds).append("cachingEnabled", cachingEnabled).append("canarySetting", canarySetting).append("clientCertificateId", clientCertificateId).append("dataTraceEnabled", dataTraceEnabled).append("description", description).append("documentationVersion", documentationVersion).append("loggingLevel", loggingLevel).append("methodSettings", methodSettings).append("metricsEnabled", metricsEnabled).append("throttlingBurstLimit", throttlingBurstLimit).append("throttlingRateLimit", throttlingRateLimit).append("variables", variables).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(metricsEnabled).append(variables).append(clientCertificateId).append(dataTraceEnabled).append(description).append(cacheClusterEnabled).append(cachingEnabled).append(cacheDataEncrypted).append(throttlingBurstLimit).append(throttlingRateLimit).append(documentationVersion).append(cacheClusterSize).append(methodSettings).append(cacheTtlInSeconds).append(loggingLevel).toHashCode();
+        return new HashCodeBuilder().append(metricsEnabled).append(variables).append(clientCertificateId).append(dataTraceEnabled).append(description).append(cacheClusterEnabled).append(canarySetting).append(cachingEnabled).append(cacheDataEncrypted).append(throttlingBurstLimit).append(throttlingRateLimit).append(documentationVersion).append(accessLogSetting).append(cacheClusterSize).append(methodSettings).append(cacheTtlInSeconds).append(loggingLevel).toHashCode();
     }
 
     @Override
@@ -481,7 +551,7 @@ public class StageDescription {
             return false;
         }
         StageDescription rhs = ((StageDescription) other);
-        return new EqualsBuilder().append(metricsEnabled, rhs.metricsEnabled).append(variables, rhs.variables).append(clientCertificateId, rhs.clientCertificateId).append(dataTraceEnabled, rhs.dataTraceEnabled).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(cachingEnabled, rhs.cachingEnabled).append(cacheDataEncrypted, rhs.cacheDataEncrypted).append(throttlingBurstLimit, rhs.throttlingBurstLimit).append(throttlingRateLimit, rhs.throttlingRateLimit).append(documentationVersion, rhs.documentationVersion).append(cacheClusterSize, rhs.cacheClusterSize).append(methodSettings, rhs.methodSettings).append(cacheTtlInSeconds, rhs.cacheTtlInSeconds).append(loggingLevel, rhs.loggingLevel).isEquals();
+        return new EqualsBuilder().append(metricsEnabled, rhs.metricsEnabled).append(variables, rhs.variables).append(clientCertificateId, rhs.clientCertificateId).append(dataTraceEnabled, rhs.dataTraceEnabled).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(canarySetting, rhs.canarySetting).append(cachingEnabled, rhs.cachingEnabled).append(cacheDataEncrypted, rhs.cacheDataEncrypted).append(throttlingBurstLimit, rhs.throttlingBurstLimit).append(throttlingRateLimit, rhs.throttlingRateLimit).append(documentationVersion, rhs.documentationVersion).append(accessLogSetting, rhs.accessLogSetting).append(cacheClusterSize, rhs.cacheClusterSize).append(methodSettings, rhs.methodSettings).append(cacheTtlInSeconds, rhs.cacheTtlInSeconds).append(loggingLevel, rhs.loggingLevel).isEquals();
     }
 
 }

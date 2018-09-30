@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_Model.schema.json",
+  "title" : "Model",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html",
+  "type" : "object",
+  "javaType" : "aws.sagemaker.Model",
+  "properties" : {
+    "ExecutionRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-executionrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PrimaryContainer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-primarycontainer",
+      "$ref" : "AWS_SageMaker_Model.ContainerDefinition.schema.json"
+    },
+    "ModelName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VpcConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-vpcconfig",
+      "$ref" : "AWS_SageMaker_Model.VpcConfig.schema.json"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    }
+  }
+}

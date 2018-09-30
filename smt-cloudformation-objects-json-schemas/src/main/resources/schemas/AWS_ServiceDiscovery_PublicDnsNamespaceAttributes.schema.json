@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_PublicDnsNamespaceAttributes.schema.json",
+  "title" : "PublicDnsNamespaceAttributes",
+  "type" : "string",
+  "enum" : [ "Id", "Arn" ],
+  "javaType" : "aws.servicediscovery.PublicDnsNamespaceAttributes"
+}

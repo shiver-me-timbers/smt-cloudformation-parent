@@ -32,6 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PlacementStrategies",
     "PlatformVersion",
     "Role",
+    "SchedulingStrategy",
     "ServiceName",
     "ServiceRegistries",
     "TaskDefinition"
@@ -122,6 +123,13 @@ public class Service {
     @JsonProperty("Role")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-role")
     private CharSequence role;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-schedulingstrategy
+     * 
+     */
+    @JsonProperty("SchedulingStrategy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-schedulingstrategy")
+    private CharSequence schedulingStrategy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename
      * 
@@ -385,6 +393,27 @@ public class Service {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-schedulingstrategy
+     * 
+     */
+    public CharSequence getSchedulingStrategy() {
+        return schedulingStrategy;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-schedulingstrategy
+     * 
+     */
+    public void setSchedulingStrategy(CharSequence schedulingStrategy) {
+        this.schedulingStrategy = schedulingStrategy;
+    }
+
+    public Service withSchedulingStrategy(CharSequence schedulingStrategy) {
+        this.schedulingStrategy = schedulingStrategy;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-servicename
      * 
      */
@@ -449,12 +478,12 @@ public class Service {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cluster", cluster).append("deploymentConfiguration", deploymentConfiguration).append("desiredCount", desiredCount).append("healthCheckGracePeriodSeconds", healthCheckGracePeriodSeconds).append("launchType", launchType).append("loadBalancers", loadBalancers).append("networkConfiguration", networkConfiguration).append("placementConstraints", placementConstraints).append("placementStrategies", placementStrategies).append("platformVersion", platformVersion).append("role", role).append("serviceName", serviceName).append("serviceRegistries", serviceRegistries).append("taskDefinition", taskDefinition).toString();
+        return new ToStringBuilder(this).append("cluster", cluster).append("deploymentConfiguration", deploymentConfiguration).append("desiredCount", desiredCount).append("healthCheckGracePeriodSeconds", healthCheckGracePeriodSeconds).append("launchType", launchType).append("loadBalancers", loadBalancers).append("networkConfiguration", networkConfiguration).append("placementConstraints", placementConstraints).append("placementStrategies", placementStrategies).append("platformVersion", platformVersion).append("role", role).append("schedulingStrategy", schedulingStrategy).append("serviceName", serviceName).append("serviceRegistries", serviceRegistries).append("taskDefinition", taskDefinition).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cluster).append(placementConstraints).append(role).append(networkConfiguration).append(desiredCount).append(loadBalancers).append(serviceRegistries).append(serviceName).append(deploymentConfiguration).append(platformVersion).append(taskDefinition).append(healthCheckGracePeriodSeconds).append(launchType).append(placementStrategies).toHashCode();
+        return new HashCodeBuilder().append(cluster).append(placementConstraints).append(role).append(networkConfiguration).append(desiredCount).append(loadBalancers).append(serviceRegistries).append(serviceName).append(deploymentConfiguration).append(schedulingStrategy).append(platformVersion).append(taskDefinition).append(healthCheckGracePeriodSeconds).append(launchType).append(placementStrategies).toHashCode();
     }
 
     @Override
@@ -466,7 +495,7 @@ public class Service {
             return false;
         }
         Service rhs = ((Service) other);
-        return new EqualsBuilder().append(cluster, rhs.cluster).append(placementConstraints, rhs.placementConstraints).append(role, rhs.role).append(networkConfiguration, rhs.networkConfiguration).append(desiredCount, rhs.desiredCount).append(loadBalancers, rhs.loadBalancers).append(serviceRegistries, rhs.serviceRegistries).append(serviceName, rhs.serviceName).append(deploymentConfiguration, rhs.deploymentConfiguration).append(platformVersion, rhs.platformVersion).append(taskDefinition, rhs.taskDefinition).append(healthCheckGracePeriodSeconds, rhs.healthCheckGracePeriodSeconds).append(launchType, rhs.launchType).append(placementStrategies, rhs.placementStrategies).isEquals();
+        return new EqualsBuilder().append(cluster, rhs.cluster).append(placementConstraints, rhs.placementConstraints).append(role, rhs.role).append(networkConfiguration, rhs.networkConfiguration).append(desiredCount, rhs.desiredCount).append(loadBalancers, rhs.loadBalancers).append(serviceRegistries, rhs.serviceRegistries).append(serviceName, rhs.serviceName).append(deploymentConfiguration, rhs.deploymentConfiguration).append(schedulingStrategy, rhs.schedulingStrategy).append(platformVersion, rhs.platformVersion).append(taskDefinition, rhs.taskDefinition).append(healthCheckGracePeriodSeconds, rhs.healthCheckGracePeriodSeconds).append(launchType, rhs.launchType).append(placementStrategies, rhs.placementStrategies).isEquals();
     }
 
 }

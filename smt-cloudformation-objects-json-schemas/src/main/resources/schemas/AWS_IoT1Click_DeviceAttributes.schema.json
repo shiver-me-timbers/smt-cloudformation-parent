@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT1Click_DeviceAttributes.schema.json",
+  "title" : "DeviceAttributes",
+  "type" : "string",
+  "enum" : [ "DeviceId", "Enabled", "Arn" ],
+  "javaType" : "aws.iot1click.DeviceAttributes"
+}

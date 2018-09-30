@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.ReferenceSchema.schema.json",
+  "title" : "ReferenceSchema",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.ReferenceSchema",
+  "properties" : {
+    "RecordEncoding" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordencoding",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RecordColumns" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordcolumns",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_KinesisAnalytics_Application.RecordColumn.schema.json"
+      }
+    },
+    "RecordFormat" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordformat",
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.RecordFormat.schema.json"
+    }
+  }
+}

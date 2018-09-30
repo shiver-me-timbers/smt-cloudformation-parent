@@ -1,0 +1,28 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DAX_SubnetGroup.schema.json",
+  "title" : "SubnetGroup",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html",
+  "type" : "object",
+  "javaType" : "aws.dax.SubnetGroup",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html#cfn-dax-subnetgroup-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubnetGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html#cfn-dax-subnetgroup-subnetgroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubnetIds" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-subnetgroup.html#cfn-dax-subnetgroup-subnetids",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "javaType" : "java.lang.CharSequence"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_Application.InputProcessingConfiguration.schema.json",
+  "title" : "InputProcessingConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputprocessingconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.InputProcessingConfiguration",
+  "properties" : {
+    "InputLambdaProcessor" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-inputprocessingconfiguration.html#cfn-kinesisanalytics-application-inputprocessingconfiguration-inputlambdaprocessor",
+      "$ref" : "AWS_KinesisAnalytics_Application.InputLambdaProcessor.schema.json"
+    }
+  }
+}

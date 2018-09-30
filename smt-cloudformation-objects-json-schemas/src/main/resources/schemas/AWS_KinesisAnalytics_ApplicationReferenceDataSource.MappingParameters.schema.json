@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.MappingParameters.schema.json",
+  "title" : "MappingParameters",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.MappingParameters",
+  "properties" : {
+    "JSONMappingParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-jsonmappingparameters",
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.JSONMappingParameters.schema.json"
+    },
+    "CSVMappingParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-csvmappingparameters",
+      "$ref" : "AWS_KinesisAnalytics_Application.CSVMappingParameters.schema.json"
+    }
+  }
+}

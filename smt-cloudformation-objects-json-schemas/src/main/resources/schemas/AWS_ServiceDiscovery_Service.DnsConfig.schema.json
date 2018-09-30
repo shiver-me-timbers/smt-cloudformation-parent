@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_Service.DnsConfig.schema.json",
+  "title" : "DnsConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html",
+  "type" : "object",
+  "javaType" : "aws.servicediscovery.DnsConfig",
+  "properties" : {
+    "DnsRecords" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_ServiceDiscovery_Service.DnsRecord.schema.json"
+      }
+    },
+    "RoutingPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-routingpolicy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "NamespaceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-namespaceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

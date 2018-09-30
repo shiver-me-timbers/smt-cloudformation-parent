@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_Service.HealthCheckConfig.schema.json",
+  "title" : "HealthCheckConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html",
+  "type" : "object",
+  "javaType" : "aws.servicediscovery.HealthCheckConfig",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html#cfn-servicediscovery-service-healthcheckconfig-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourcePath" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html#cfn-servicediscovery-service-healthcheckconfig-resourcepath",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FailureThreshold" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html#cfn-servicediscovery-service-healthcheckconfig-failurethreshold",
+      "type" : "number"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
@@ -19,7 +20,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "ApiId",
-    "Stage"
+    "Stage",
+    "Throttle"
 })
 public class ApiStage {
 
@@ -37,6 +39,13 @@ public class ApiStage {
     @JsonProperty("Stage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-stage")
     private CharSequence stage;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle
+     * 
+     */
+    @JsonProperty("Throttle")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle")
+    private Map<String, ThrottleSettings> throttle;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
@@ -80,14 +89,35 @@ public class ApiStage {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle
+     * 
+     */
+    public Map<String, ThrottleSettings> getThrottle() {
+        return throttle;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle
+     * 
+     */
+    public void setThrottle(Map<String, ThrottleSettings> throttle) {
+        this.throttle = throttle;
+    }
+
+    public ApiStage withThrottle(Map<String, ThrottleSettings> throttle) {
+        this.throttle = throttle;
+        return this;
+    }
+
     @Override
-    public String toString() {
-        return new ToStringBuilder(this).append("apiId", apiId).append("stage", stage).toString();
+    public java.lang.String toString() {
+        return new ToStringBuilder(this).append("apiId", apiId).append("stage", stage).append("throttle", throttle).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(stage).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(throttle).append(stage).append(apiId).toHashCode();
     }
 
     @Override
@@ -99,7 +129,7 @@ public class ApiStage {
             return false;
         }
         ApiStage rhs = ((ApiStage) other);
-        return new EqualsBuilder().append(stage, rhs.stage).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(throttle, rhs.throttle).append(stage, rhs.stage).append(apiId, rhs.apiId).isEquals();
     }
 
 }

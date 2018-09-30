@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.schema.json",
+  "title" : "ReceiptRule",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html",
+  "type" : "object",
+  "javaType" : "aws.ses.ReceiptRule",
+  "properties" : {
+    "After" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-after",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Rule" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rule",
+      "$ref" : "AWS_SES_ReceiptRule.Rule.schema.json"
+    },
+    "RuleSetName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.S3ReferenceDataSource.schema.json",
+  "title" : "S3ReferenceDataSource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalytics.S3ReferenceDataSource",
+  "properties" : {
+    "BucketARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-bucketarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FileKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-filekey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReferenceRoleARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-referencerolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

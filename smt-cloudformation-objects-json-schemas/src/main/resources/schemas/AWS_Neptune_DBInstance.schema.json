@@ -1,0 +1,65 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Neptune_DBInstance.schema.json",
+  "title" : "DBInstance",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html",
+  "type" : "object",
+  "javaType" : "aws.neptune.DBInstance",
+  "properties" : {
+    "DBParameterGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbparametergroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DBInstanceClass" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceclass",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AllowMajorVersionUpgrade" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-allowmajorversionupgrade",
+      "type" : "boolean"
+    },
+    "DBClusterIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbclusteridentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AvailabilityZone" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-availabilityzone",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PreferredMaintenanceWindow" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-preferredmaintenancewindow",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AutoMinorVersionUpgrade" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-autominorversionupgrade",
+      "type" : "boolean"
+    },
+    "DBSubnetGroupName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsubnetgroupname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DBInstanceIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbinstanceidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DBSnapshotIdentifier" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-dbsnapshotidentifier",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbinstance.html#cfn-neptune-dbinstance-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "Tag.schema.json"
+      }
+    }
+  }
+}

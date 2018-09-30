@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScalingPlans_ScalingPlanResource.schema.json",
+  "title" : "ScalingPlanResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.autoscalingplans.ScalingPlanResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_AutoScalingPlans_ScalingPlan.schema.json"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_StepFunctions_ActivityResource.schema.json",
+  "title" : "ActivityResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.stepfunctions.ActivityResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ActivityAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_StepFunctions_Activity.schema.json"
+    }
+  }
+}

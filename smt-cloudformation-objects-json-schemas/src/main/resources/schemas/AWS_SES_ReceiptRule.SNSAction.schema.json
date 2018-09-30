@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.SNSAction.schema.json",
+  "title" : "SNSAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html",
+  "type" : "object",
+  "javaType" : "aws.ses.SNSAction",
+  "properties" : {
+    "TopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html#cfn-ses-receiptrule-snsaction-topicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Encoding" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html#cfn-ses-receiptrule-snsaction-encoding",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

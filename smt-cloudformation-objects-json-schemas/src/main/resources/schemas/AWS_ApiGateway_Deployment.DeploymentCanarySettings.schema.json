@@ -1,0 +1,23 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGateway_Deployment.DeploymentCanarySettings.schema.json",
+  "title" : "DeploymentCanarySettings",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html",
+  "type" : "object",
+  "javaType" : "aws.apigateway.DeploymentCanarySettings",
+  "properties" : {
+    "PercentTraffic" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic",
+      "type" : "number"
+    },
+    "StageVariableOverrides" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-stagevariableoverrides",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "UseStageCache" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-usestagecache",
+      "type" : "boolean"
+    }
+  }
+}

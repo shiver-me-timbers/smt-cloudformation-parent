@@ -20,6 +20,16 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ConnectionId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectionid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConnectionType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-connectiontype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "ContentHandling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-contenthandling",
       "type" : "string",
@@ -57,6 +67,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-requesttemplates",
       "type" : "object",
       "javaType" : "java.util.Map<String, String>"
+    },
+    "TimeoutInMillis" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-timeoutinmillis",
+      "type" : "integer"
     },
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-type",

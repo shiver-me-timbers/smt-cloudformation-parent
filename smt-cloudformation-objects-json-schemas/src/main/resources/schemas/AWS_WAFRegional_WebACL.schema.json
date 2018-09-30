@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_WebACL.schema.json",
+  "title" : "WebACL",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.WebACL",
+  "properties" : {
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DefaultAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-defaultaction",
+      "$ref" : "AWS_WAFRegional_WebACL.Action.schema.json"
+    },
+    "Rules" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-rules",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_WAFRegional_WebACL.Rule.schema.json"
+      }
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

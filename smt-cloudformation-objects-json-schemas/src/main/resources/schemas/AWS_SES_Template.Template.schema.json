@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_Template.Template.schema.json",
+  "title" : "Template",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html",
+  "type" : "object",
+  "javaType" : "aws.ses.Template",
+  "properties" : {
+    "HtmlPart" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TextPart" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubjectPart" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

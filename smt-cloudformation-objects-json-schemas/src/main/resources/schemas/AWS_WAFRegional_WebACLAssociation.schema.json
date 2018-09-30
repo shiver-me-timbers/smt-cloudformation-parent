@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WAFRegional_WebACLAssociation.schema.json",
+  "title" : "WebACLAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html",
+  "type" : "object",
+  "javaType" : "aws.wafregional.WebACLAssociation",
+  "properties" : {
+    "ResourceArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-resourcearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "WebACLId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-webaclid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

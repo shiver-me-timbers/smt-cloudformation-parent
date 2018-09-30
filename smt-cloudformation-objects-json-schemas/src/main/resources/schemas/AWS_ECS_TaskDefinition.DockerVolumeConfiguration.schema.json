@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ECS_TaskDefinition.DockerVolumeConfiguration.schema.json",
+  "title" : "DockerVolumeConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.ecs.DockerVolumeConfiguration",
+  "properties" : {
+    "Autoprovision" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision",
+      "type" : "boolean"
+    },
+    "Driver" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driver",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DriverOpts" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-driveropts",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Labels" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-labels",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "Scope" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-scope",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

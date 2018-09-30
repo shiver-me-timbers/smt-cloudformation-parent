@@ -22,8 +22,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
+    "AccessLogSetting",
     "CacheClusterEnabled",
     "CacheClusterSize",
+    "CanarySetting",
     "ClientCertificateId",
     "DeploymentId",
     "Description",
@@ -35,6 +37,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class Stage {
 
+    /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    @JsonProperty("AccessLogSetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html")
+    private AccessLogSetting accessLogSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
@@ -49,6 +60,15 @@ public class Stage {
     @JsonProperty("CacheClusterSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize")
     private CharSequence cacheClusterSize;
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    @JsonProperty("CanarySetting")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html")
+    private CanarySetting canarySetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
@@ -108,6 +128,31 @@ public class Stage {
     private Map<String, String> variables;
 
     /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    public AccessLogSetting getAccessLogSetting() {
+        return accessLogSetting;
+    }
+
+    /**
+     * AccessLogSetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
+     * 
+     */
+    public void setAccessLogSetting(AccessLogSetting accessLogSetting) {
+        this.accessLogSetting = accessLogSetting;
+    }
+
+    public Stage withAccessLogSetting(AccessLogSetting accessLogSetting) {
+        this.accessLogSetting = accessLogSetting;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
      */
@@ -146,6 +191,31 @@ public class Stage {
 
     public Stage withCacheClusterSize(CharSequence cacheClusterSize) {
         this.cacheClusterSize = cacheClusterSize;
+        return this;
+    }
+
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    public CanarySetting getCanarySetting() {
+        return canarySetting;
+    }
+
+    /**
+     * CanarySetting
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
+     * 
+     */
+    public void setCanarySetting(CanarySetting canarySetting) {
+        this.canarySetting = canarySetting;
+    }
+
+    public Stage withCanarySetting(CanarySetting canarySetting) {
+        this.canarySetting = canarySetting;
         return this;
     }
 
@@ -319,12 +389,12 @@ public class Stage {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("documentationVersion", documentationVersion).append("methodSettings", methodSettings).append("restApiId", restApiId).append("stageName", stageName).append("variables", variables).toString();
+        return new ToStringBuilder(this).append("accessLogSetting", accessLogSetting).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("canarySetting", canarySetting).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("documentationVersion", documentationVersion).append("methodSettings", methodSettings).append("restApiId", restApiId).append("stageName", stageName).append("variables", variables).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(variables).append(stageName).append(clientCertificateId).append(documentationVersion).append(restApiId).append(deploymentId).append(cacheClusterSize).append(description).append(cacheClusterEnabled).append(methodSettings).toHashCode();
+        return new HashCodeBuilder().append(variables).append(clientCertificateId).append(description).append(cacheClusterEnabled).append(canarySetting).append(stageName).append(documentationVersion).append(restApiId).append(deploymentId).append(accessLogSetting).append(cacheClusterSize).append(methodSettings).toHashCode();
     }
 
     @Override
@@ -336,7 +406,7 @@ public class Stage {
             return false;
         }
         Stage rhs = ((Stage) other);
-        return new EqualsBuilder().append(variables, rhs.variables).append(stageName, rhs.stageName).append(clientCertificateId, rhs.clientCertificateId).append(documentationVersion, rhs.documentationVersion).append(restApiId, rhs.restApiId).append(deploymentId, rhs.deploymentId).append(cacheClusterSize, rhs.cacheClusterSize).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(methodSettings, rhs.methodSettings).isEquals();
+        return new EqualsBuilder().append(variables, rhs.variables).append(clientCertificateId, rhs.clientCertificateId).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(canarySetting, rhs.canarySetting).append(stageName, rhs.stageName).append(documentationVersion, rhs.documentationVersion).append(restApiId, rhs.restApiId).append(deploymentId, rhs.deploymentId).append(accessLogSetting, rhs.accessLogSetting).append(cacheClusterSize, rhs.cacheClusterSize).append(methodSettings, rhs.methodSettings).isEquals();
     }
 
 }

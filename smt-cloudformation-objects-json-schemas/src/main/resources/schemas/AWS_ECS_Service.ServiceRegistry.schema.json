@@ -6,6 +6,15 @@
   "type" : "object",
   "javaType" : "aws.ecs.ServiceRegistry",
   "properties" : {
+    "ContainerName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ContainerPort" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containerport",
+      "type" : "integer"
+    },
     "Port" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-port",
       "type" : "integer"

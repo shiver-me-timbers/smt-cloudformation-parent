@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_ReceiptRule.S3Action.schema.json",
+  "title" : "S3Action",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html",
+  "type" : "object",
+  "javaType" : "aws.ses.S3Action",
+  "properties" : {
+    "BucketName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-bucketname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "KmsKeyArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-kmskeyarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TopicArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-topicarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ObjectKeyPrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-objectkeyprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeCommit_Repository.schema.json",
+  "title" : "Repository",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html",
+  "type" : "object",
+  "javaType" : "aws.codecommit.Repository",
+  "properties" : {
+    "RepositoryName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositoryname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Triggers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CodeCommit_Repository.RepositoryTrigger.schema.json"
+      }
+    },
+    "RepositoryDescription" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

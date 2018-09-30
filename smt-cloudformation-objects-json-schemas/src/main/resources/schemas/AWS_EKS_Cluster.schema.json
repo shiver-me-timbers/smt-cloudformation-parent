@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EKS_Cluster.schema.json",
+  "title" : "Cluster",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html",
+  "type" : "object",
+  "javaType" : "aws.eks.Cluster",
+  "properties" : {
+    "Version" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-version",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-rolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourcesVpcConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-resourcesvpcconfig",
+      "$ref" : "AWS_EKS_Cluster.ResourcesVpcConfig.schema.json"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

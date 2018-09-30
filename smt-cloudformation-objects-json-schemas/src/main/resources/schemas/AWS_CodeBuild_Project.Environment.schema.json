@@ -1,0 +1,41 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.Environment.schema.json",
+  "title" : "Environment",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.Environment",
+  "properties" : {
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "EnvironmentVariables" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-environmentvariables",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CodeBuild_Project.EnvironmentVariable.schema.json"
+      }
+    },
+    "PrivilegedMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode",
+      "type" : "boolean"
+    },
+    "Image" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ComputeType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Certificate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-certificate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

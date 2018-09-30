@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT1Click_DeviceResource.schema.json",
+  "title" : "DeviceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-device.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iot1click.DeviceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DeviceAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_IoT1Click_Device.schema.json"
+    }
+  }
+}

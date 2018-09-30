@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.LogsConfig.schema.json",
+  "title" : "LogsConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.LogsConfig",
+  "properties" : {
+    "CloudWatchLogs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-cloudwatchlogs",
+      "$ref" : "AWS_CodeBuild_Project.CloudWatchLogsConfig.schema.json"
+    },
+    "S3Logs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-s3logs",
+      "$ref" : "AWS_CodeBuild_Project.S3LogsConfig.schema.json"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_ServiceAttributes.schema.json",
+  "title" : "ServiceAttributes",
+  "type" : "string",
+  "enum" : [ "Id", "Arn", "Name" ],
+  "javaType" : "aws.servicediscovery.ServiceAttributes"
+}

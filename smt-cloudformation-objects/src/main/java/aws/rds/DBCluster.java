@@ -31,6 +31,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DBSubnetGroupName",
     "DatabaseName",
     "Engine",
+    "EngineMode",
     "EngineVersion",
     "KmsKeyId",
     "MasterUserPassword",
@@ -39,6 +40,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PreferredBackupWindow",
     "PreferredMaintenanceWindow",
     "ReplicationSourceIdentifier",
+    "ScalingConfiguration",
     "SnapshotIdentifier",
     "StorageEncrypted",
     "Tags",
@@ -97,6 +99,13 @@ public class DBCluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine")
     private CharSequence engine;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode
+     * 
+     */
+    @JsonProperty("EngineMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode")
+    private CharSequence engineMode;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion
      * 
      */
@@ -152,6 +161,15 @@ public class DBCluster {
     @JsonProperty("ReplicationSourceIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier")
     private CharSequence replicationSourceIdentifier;
+    /**
+     * ScalingConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
+     * 
+     */
+    @JsonProperty("ScalingConfiguration")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html")
+    private ScalingConfiguration scalingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
@@ -330,6 +348,27 @@ public class DBCluster {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode
+     * 
+     */
+    public CharSequence getEngineMode() {
+        return engineMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enginemode
+     * 
+     */
+    public void setEngineMode(CharSequence engineMode) {
+        this.engineMode = engineMode;
+    }
+
+    public DBCluster withEngineMode(CharSequence engineMode) {
+        this.engineMode = engineMode;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engineversion
      * 
      */
@@ -498,6 +537,31 @@ public class DBCluster {
     }
 
     /**
+     * ScalingConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
+     * 
+     */
+    public ScalingConfiguration getScalingConfiguration() {
+        return scalingConfiguration;
+    }
+
+    /**
+     * ScalingConfiguration
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
+     * 
+     */
+    public void setScalingConfiguration(ScalingConfiguration scalingConfiguration) {
+        this.scalingConfiguration = scalingConfiguration;
+    }
+
+    public DBCluster withScalingConfiguration(ScalingConfiguration scalingConfiguration) {
+        this.scalingConfiguration = scalingConfiguration;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
      */
@@ -583,12 +647,12 @@ public class DBCluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("availabilityZones", availabilityZones).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("engine", engine).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("snapshotIdentifier", snapshotIdentifier).append("storageEncrypted", storageEncrypted).append("tags", tags).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
+        return new ToStringBuilder(this).append("availabilityZones", availabilityZones).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("engine", engine).append("engineMode", engineMode).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("scalingConfiguration", scalingConfiguration).append("snapshotIdentifier", snapshotIdentifier).append("storageEncrypted", storageEncrypted).append("tags", tags).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(masterUsername).append(vpcSecurityGroupIds).append(databaseName).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(engine).append(port).append(replicationSourceIdentifier).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(masterUserPassword).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(masterUsername).append(vpcSecurityGroupIds).append(databaseName).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(engineMode).append(engine).append(port).append(replicationSourceIdentifier).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(masterUserPassword).append(scalingConfiguration).toHashCode();
     }
 
     @Override
@@ -600,7 +664,7 @@ public class DBCluster {
             return false;
         }
         DBCluster rhs = ((DBCluster) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(engine, rhs.engine).append(port, rhs.port).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(masterUserPassword, rhs.masterUserPassword).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(engineMode, rhs.engineMode).append(engine, rhs.engine).append(port, rhs.port).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(masterUserPassword, rhs.masterUserPassword).append(scalingConfiguration, rhs.scalingConfiguration).isEquals();
     }
 
 }

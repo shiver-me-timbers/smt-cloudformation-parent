@@ -19,6 +19,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "DeliverLogsPermissionArn",
+    "LogDestination",
+    "LogDestinationType",
     "LogGroupName",
     "ResourceId",
     "ResourceType",
@@ -33,6 +35,20 @@ public class FlowLog {
     @JsonProperty("DeliverLogsPermissionArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn")
     private CharSequence deliverLogsPermissionArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination
+     * 
+     */
+    @JsonProperty("LogDestination")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination")
+    private CharSequence logDestination;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype
+     * 
+     */
+    @JsonProperty("LogDestinationType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype")
+    private CharSequence logDestinationType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname
      * 
@@ -80,6 +96,48 @@ public class FlowLog {
 
     public FlowLog withDeliverLogsPermissionArn(CharSequence deliverLogsPermissionArn) {
         this.deliverLogsPermissionArn = deliverLogsPermissionArn;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination
+     * 
+     */
+    public CharSequence getLogDestination() {
+        return logDestination;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestination
+     * 
+     */
+    public void setLogDestination(CharSequence logDestination) {
+        this.logDestination = logDestination;
+    }
+
+    public FlowLog withLogDestination(CharSequence logDestination) {
+        this.logDestination = logDestination;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype
+     * 
+     */
+    public CharSequence getLogDestinationType() {
+        return logDestinationType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-logdestinationtype
+     * 
+     */
+    public void setLogDestinationType(CharSequence logDestinationType) {
+        this.logDestinationType = logDestinationType;
+    }
+
+    public FlowLog withLogDestinationType(CharSequence logDestinationType) {
+        this.logDestinationType = logDestinationType;
         return this;
     }
 
@@ -169,12 +227,12 @@ public class FlowLog {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("deliverLogsPermissionArn", deliverLogsPermissionArn).append("logGroupName", logGroupName).append("resourceId", resourceId).append("resourceType", resourceType).append("trafficType", trafficType).toString();
+        return new ToStringBuilder(this).append("deliverLogsPermissionArn", deliverLogsPermissionArn).append("logDestination", logDestination).append("logDestinationType", logDestinationType).append("logGroupName", logGroupName).append("resourceId", resourceId).append("resourceType", resourceType).append("trafficType", trafficType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(trafficType).append(resourceId).append(deliverLogsPermissionArn).append(logGroupName).append(resourceType).toHashCode();
+        return new HashCodeBuilder().append(logDestination).append(resourceId).append(deliverLogsPermissionArn).append(logDestinationType).append(logGroupName).append(trafficType).append(resourceType).toHashCode();
     }
 
     @Override
@@ -186,7 +244,7 @@ public class FlowLog {
             return false;
         }
         FlowLog rhs = ((FlowLog) other);
-        return new EqualsBuilder().append(trafficType, rhs.trafficType).append(resourceId, rhs.resourceId).append(deliverLogsPermissionArn, rhs.deliverLogsPermissionArn).append(logGroupName, rhs.logGroupName).append(resourceType, rhs.resourceType).isEquals();
+        return new EqualsBuilder().append(logDestination, rhs.logDestination).append(resourceId, rhs.resourceId).append(deliverLogsPermissionArn, rhs.deliverLogsPermissionArn).append(logDestinationType, rhs.logDestinationType).append(logGroupName, rhs.logGroupName).append(trafficType, rhs.trafficType).append(resourceType, rhs.resourceType).isEquals();
     }
 
 }

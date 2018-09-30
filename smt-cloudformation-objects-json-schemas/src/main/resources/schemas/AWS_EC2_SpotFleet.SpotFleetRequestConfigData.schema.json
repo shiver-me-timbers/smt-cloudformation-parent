@@ -21,6 +21,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "InstanceInterruptionBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-instanceinterruptionbehavior",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "LaunchSpecifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications",
       "type" : "array",
@@ -36,6 +41,10 @@
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.LaunchTemplateConfig.schema.json"
       }
+    },
+    "LoadBalancersConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-loadbalancersconfig",
+      "$ref" : "AWS_EC2_SpotFleet.ClassicLoadBalancersConfig.schema.json"
     },
     "ReplaceUnhealthyInstances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances",

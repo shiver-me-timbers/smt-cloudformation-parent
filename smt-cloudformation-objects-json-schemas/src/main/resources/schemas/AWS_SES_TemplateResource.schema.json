@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SES_TemplateResource.schema.json",
+  "title" : "TemplateResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ses.TemplateResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SES_Template.schema.json"
+    }
+  }
+}

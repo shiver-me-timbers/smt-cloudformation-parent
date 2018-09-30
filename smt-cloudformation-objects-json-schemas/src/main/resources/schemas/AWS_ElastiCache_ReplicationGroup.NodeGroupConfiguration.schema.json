@@ -6,6 +6,11 @@
   "type" : "object",
   "javaType" : "aws.elasticache.NodeGroupConfiguration",
   "properties" : {
+    "NodeGroupId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-nodegroupid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "PrimaryAvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-replicationgroup-nodegroupconfiguration.html#cfn-elasticache-replicationgroup-nodegroupconfiguration-primaryavailabilityzone",
       "type" : "string",

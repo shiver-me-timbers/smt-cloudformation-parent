@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_SageMaker_EndpointResource.schema.json",
+  "title" : "EndpointResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpoint.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.sagemaker.EndpointResource",
+  "javaInterfaces" : [ "aws.HasAttributes<EndpointAttributes>" ],
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_SageMaker_Endpoint.schema.json"
+    }
+  }
+}

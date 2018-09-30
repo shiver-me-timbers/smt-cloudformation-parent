@@ -21,7 +21,11 @@
     },
     "OptionSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings",
-      "$ref" : "AWS_RDS_OptionGroup.OptionSetting.schema.json"
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_RDS_OptionGroup.OptionSetting.schema.json"
+      }
     },
     "OptionVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion",

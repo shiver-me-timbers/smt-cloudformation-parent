@@ -24,8 +24,10 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AllocationStrategy",
     "ExcessCapacityTerminationPolicy",
     "IamFleetRole",
+    "InstanceInterruptionBehavior",
     "LaunchSpecifications",
     "LaunchTemplateConfigs",
+    "LoadBalancersConfig",
     "ReplaceUnhealthyInstances",
     "SpotPrice",
     "TargetCapacity",
@@ -58,6 +60,13 @@ public class SpotFleetRequestConfigData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-iamfleetrole")
     private CharSequence iamFleetRole;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-instanceinterruptionbehavior
+     * 
+     */
+    @JsonProperty("InstanceInterruptionBehavior")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-instanceinterruptionbehavior")
+    private CharSequence instanceInterruptionBehavior;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications
      * 
      */
@@ -73,6 +82,15 @@ public class SpotFleetRequestConfigData {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs")
     private Set<LaunchTemplateConfig> launchTemplateConfigs = new LinkedHashSet<LaunchTemplateConfig>();
+    /**
+     * ClassicLoadBalancersConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * 
+     */
+    @JsonProperty("LoadBalancersConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html")
+    private ClassicLoadBalancersConfig loadBalancersConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances
      * 
@@ -187,6 +205,27 @@ public class SpotFleetRequestConfigData {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-instanceinterruptionbehavior
+     * 
+     */
+    public CharSequence getInstanceInterruptionBehavior() {
+        return instanceInterruptionBehavior;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-instanceinterruptionbehavior
+     * 
+     */
+    public void setInstanceInterruptionBehavior(CharSequence instanceInterruptionBehavior) {
+        this.instanceInterruptionBehavior = instanceInterruptionBehavior;
+    }
+
+    public SpotFleetRequestConfigData withInstanceInterruptionBehavior(CharSequence instanceInterruptionBehavior) {
+        this.instanceInterruptionBehavior = instanceInterruptionBehavior;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications
      * 
      */
@@ -225,6 +264,31 @@ public class SpotFleetRequestConfigData {
 
     public SpotFleetRequestConfigData withLaunchTemplateConfigs(Set<LaunchTemplateConfig> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
+        return this;
+    }
+
+    /**
+     * ClassicLoadBalancersConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * 
+     */
+    public ClassicLoadBalancersConfig getLoadBalancersConfig() {
+        return loadBalancersConfig;
+    }
+
+    /**
+     * ClassicLoadBalancersConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * 
+     */
+    public void setLoadBalancersConfig(ClassicLoadBalancersConfig loadBalancersConfig) {
+        this.loadBalancersConfig = loadBalancersConfig;
+    }
+
+    public SpotFleetRequestConfigData withLoadBalancersConfig(ClassicLoadBalancersConfig loadBalancersConfig) {
+        this.loadBalancersConfig = loadBalancersConfig;
         return this;
     }
 
@@ -377,12 +441,12 @@ public class SpotFleetRequestConfigData {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("allocationStrategy", allocationStrategy).append("excessCapacityTerminationPolicy", excessCapacityTerminationPolicy).append("iamFleetRole", iamFleetRole).append("launchSpecifications", launchSpecifications).append("launchTemplateConfigs", launchTemplateConfigs).append("replaceUnhealthyInstances", replaceUnhealthyInstances).append("spotPrice", spotPrice).append("targetCapacity", targetCapacity).append("terminateInstancesWithExpiration", terminateInstancesWithExpiration).append("type", type).append("validFrom", validFrom).append("validUntil", validUntil).toString();
+        return new ToStringBuilder(this).append("allocationStrategy", allocationStrategy).append("excessCapacityTerminationPolicy", excessCapacityTerminationPolicy).append("iamFleetRole", iamFleetRole).append("instanceInterruptionBehavior", instanceInterruptionBehavior).append("launchSpecifications", launchSpecifications).append("launchTemplateConfigs", launchTemplateConfigs).append("loadBalancersConfig", loadBalancersConfig).append("replaceUnhealthyInstances", replaceUnhealthyInstances).append("spotPrice", spotPrice).append("targetCapacity", targetCapacity).append("terminateInstancesWithExpiration", terminateInstancesWithExpiration).append("type", type).append("validFrom", validFrom).append("validUntil", validUntil).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(spotPrice).append(targetCapacity).append(launchTemplateConfigs).append(validFrom).append(launchSpecifications).append(type).append(allocationStrategy).append(replaceUnhealthyInstances).append(terminateInstancesWithExpiration).append(iamFleetRole).append(validUntil).append(excessCapacityTerminationPolicy).toHashCode();
+        return new HashCodeBuilder().append(spotPrice).append(targetCapacity).append(launchTemplateConfigs).append(validFrom).append(launchSpecifications).append(type).append(allocationStrategy).append(replaceUnhealthyInstances).append(loadBalancersConfig).append(terminateInstancesWithExpiration).append(iamFleetRole).append(instanceInterruptionBehavior).append(validUntil).append(excessCapacityTerminationPolicy).toHashCode();
     }
 
     @Override
@@ -394,7 +458,7 @@ public class SpotFleetRequestConfigData {
             return false;
         }
         SpotFleetRequestConfigData rhs = ((SpotFleetRequestConfigData) other);
-        return new EqualsBuilder().append(spotPrice, rhs.spotPrice).append(targetCapacity, rhs.targetCapacity).append(launchTemplateConfigs, rhs.launchTemplateConfigs).append(validFrom, rhs.validFrom).append(launchSpecifications, rhs.launchSpecifications).append(type, rhs.type).append(allocationStrategy, rhs.allocationStrategy).append(replaceUnhealthyInstances, rhs.replaceUnhealthyInstances).append(terminateInstancesWithExpiration, rhs.terminateInstancesWithExpiration).append(iamFleetRole, rhs.iamFleetRole).append(validUntil, rhs.validUntil).append(excessCapacityTerminationPolicy, rhs.excessCapacityTerminationPolicy).isEquals();
+        return new EqualsBuilder().append(spotPrice, rhs.spotPrice).append(targetCapacity, rhs.targetCapacity).append(launchTemplateConfigs, rhs.launchTemplateConfigs).append(validFrom, rhs.validFrom).append(launchSpecifications, rhs.launchSpecifications).append(type, rhs.type).append(allocationStrategy, rhs.allocationStrategy).append(replaceUnhealthyInstances, rhs.replaceUnhealthyInstances).append(loadBalancersConfig, rhs.loadBalancersConfig).append(terminateInstancesWithExpiration, rhs.terminateInstancesWithExpiration).append(iamFleetRole, rhs.iamFleetRole).append(instanceInterruptionBehavior, rhs.instanceInterruptionBehavior).append(validUntil, rhs.validUntil).append(excessCapacityTerminationPolicy, rhs.excessCapacityTerminationPolicy).isEquals();
     }
 
 }

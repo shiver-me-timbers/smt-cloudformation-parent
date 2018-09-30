@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.S3LogsConfig.schema.json",
+  "title" : "S3LogsConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.S3LogsConfig",
+  "properties" : {
+    "Status" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-status",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Location" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-location",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

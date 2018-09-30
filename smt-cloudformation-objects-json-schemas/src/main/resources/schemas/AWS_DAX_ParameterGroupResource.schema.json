@@ -1,0 +1,16 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DAX_ParameterGroupResource.schema.json",
+  "title" : "ParameterGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-parametergroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.dax.ParameterGroupResource",
+  "properties" : {
+    "Properties" : {
+      "$ref" : "AWS_DAX_ParameterGroup.schema.json"
+    }
+  }
+}
