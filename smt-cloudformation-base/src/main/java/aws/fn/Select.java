@@ -15,6 +15,10 @@ public class Select extends StringProperty implements StringFunction {
     private final List<Object> values;
 
     public Select(int index, String... strings) {
+        this(index, asList(strings));
+    }
+
+    public Select(int index, List<String> strings) {
         super(format("{ \"Fn::Select\" : [ \"%s\", [%s] ] }", index, toStrings(strings)));
         this.values = asList(String.valueOf(index), asList(strings));
     }

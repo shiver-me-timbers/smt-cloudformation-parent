@@ -12,6 +12,10 @@ public class And implements ConditionFunction {
     private final List<ConditionFunction> conditions;
 
     public And(ConditionFunction... conditions) {
-        this.conditions = asList(conditions);
+        this(asList(conditions));
+    }
+
+    public And(List<ConditionFunction> conditions) {
+        this.conditions = conditions;
     }
 }

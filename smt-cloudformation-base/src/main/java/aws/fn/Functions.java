@@ -3,6 +3,7 @@ package aws.fn;
 import aws.HasAttributes;
 import aws.HasName;
 
+import java.util.List;
 import java.util.Map;
 
 public class Functions {
@@ -35,7 +36,15 @@ public class Functions {
         return new Join(delimiter, strings);
     }
 
+    public static Join fnJoin(String delimiter, List<String> strings) {
+        return new Join(delimiter, strings);
+    }
+
     public static Select fnSelect(int index, String... strings) {
+        return new Select(index, strings);
+    }
+
+    public static Select fnSelect(int index, List<String> strings) {
         return new Select(index, strings);
     }
 
@@ -63,7 +72,15 @@ public class Functions {
         return new And(conditions);
     }
 
+    public static And fnAnd(List<ConditionFunction> conditions) {
+        return new And(conditions);
+    }
+
     public static Or fnOr(ConditionFunction... conditions) {
+        return new Or(conditions);
+    }
+
+    public static Or fnOr(List<ConditionFunction> conditions) {
         return new Or(conditions);
     }
 

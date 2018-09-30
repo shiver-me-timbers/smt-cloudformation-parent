@@ -12,6 +12,10 @@ public class Or implements ConditionFunction {
     private final List<ConditionFunction> conditions;
 
     public Or(ConditionFunction... conditions) {
-        this.conditions = asList(conditions);
+        this(asList(conditions));
+    }
+
+    public Or(List<ConditionFunction> conditions) {
+        this.conditions = conditions;
     }
 }

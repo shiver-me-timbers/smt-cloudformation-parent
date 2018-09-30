@@ -15,7 +15,11 @@ public class Join extends StringProperty implements StringFunction {
     private final List<Object> values;
 
     public Join(String delimiter, String... strings) {
+        this(delimiter, asList(strings));
+    }
+
+    public Join(String delimiter, List<String> strings) {
         super(format("{ \"Fn::Join\" : [ \"%s\", [%s] ] }", delimiter, toStrings(strings)));
-        this.values = asList(delimiter, asList(strings));
+        this.values = asList(delimiter, strings);
     }
 }
