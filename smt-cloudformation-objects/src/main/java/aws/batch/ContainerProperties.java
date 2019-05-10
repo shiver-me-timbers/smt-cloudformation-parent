@@ -1,8 +1,6 @@
 
 package aws.batch;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -21,28 +22,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "MountPoints",
     "User",
-    "Volumes",
-    "Command",
     "Memory",
     "Privileged",
-    "Environment",
     "JobRoleArn",
     "ReadonlyRootFilesystem",
-    "Ulimits",
     "Vcpus",
-    "Image"
+    "Image",
+    "ResourceRequirements",
+    "MountPoints",
+    "Volumes",
+    "Command",
+    "Environment",
+    "Ulimits",
+    "InstanceType"
 })
 public class ContainerProperties {
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
-     * 
-     */
-    @JsonProperty("MountPoints")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints")
-    private List<MountPoints> mountPoints = new ArrayList<MountPoints>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
      * 
@@ -50,20 +46,6 @@ public class ContainerProperties {
     @JsonProperty("User")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user")
     private CharSequence user;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
-     * 
-     */
-    @JsonProperty("Volumes")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes")
-    private List<Volumes> volumes = new ArrayList<Volumes>();
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
-     * 
-     */
-    @JsonProperty("Command")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command")
-    private List<CharSequence> command = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory
      * 
@@ -79,13 +61,6 @@ public class ContainerProperties {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged")
     private Boolean privileged;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
-     * 
-     */
-    @JsonProperty("Environment")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment")
-    private List<Environment> environment = new ArrayList<Environment>();
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
      */
@@ -100,13 +75,6 @@ public class ContainerProperties {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem")
     private Boolean readonlyRootFilesystem;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
-     * 
-     */
-    @JsonProperty("Ulimits")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits")
-    private List<Ulimit> ulimits = new ArrayList<Ulimit>();
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus
      * 
      */
@@ -120,29 +88,55 @@ public class ContainerProperties {
     @JsonProperty("Image")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image")
     private CharSequence image;
-
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements
+     * 
+     */
+    @JsonProperty("ResourceRequirements")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements")
+    private List<ResourceRequirement> resourceRequirements = new ArrayList<ResourceRequirement>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
      * 
      */
-    @JsonIgnore
-    public List<MountPoints> getMountPoints() {
-        return mountPoints;
-    }
-
+    @JsonProperty("MountPoints")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints")
+    private List<MountPoints> mountPoints = new ArrayList<MountPoints>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
      * 
      */
-    @JsonIgnore
-    public void setMountPoints(List<MountPoints> mountPoints) {
-        this.mountPoints = mountPoints;
-    }
-
-    public ContainerProperties withMountPoints(List<MountPoints> mountPoints) {
-        this.mountPoints = mountPoints;
-        return this;
-    }
+    @JsonProperty("Volumes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes")
+    private List<Volumes> volumes = new ArrayList<Volumes>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
+     * 
+     */
+    @JsonProperty("Command")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command")
+    private List<CharSequence> command = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
+     * 
+     */
+    @JsonProperty("Environment")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment")
+    private List<Environment> environment = new ArrayList<Environment>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
+     * 
+     */
+    @JsonProperty("Ulimits")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits")
+    private List<Ulimit> ulimits = new ArrayList<Ulimit>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype
+     * 
+     */
+    @JsonProperty("InstanceType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype")
+    private CharSequence instanceType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
@@ -164,52 +158,6 @@ public class ContainerProperties {
 
     public ContainerProperties withUser(CharSequence user) {
         this.user = user;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
-     * 
-     */
-    @JsonIgnore
-    public List<Volumes> getVolumes() {
-        return volumes;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
-     * 
-     */
-    @JsonIgnore
-    public void setVolumes(List<Volumes> volumes) {
-        this.volumes = volumes;
-    }
-
-    public ContainerProperties withVolumes(List<Volumes> volumes) {
-        this.volumes = volumes;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getCommand() {
-        return command;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
-     * 
-     */
-    @JsonIgnore
-    public void setCommand(List<CharSequence> command) {
-        this.command = command;
-    }
-
-    public ContainerProperties withCommand(List<CharSequence> command) {
-        this.command = command;
         return this;
     }
 
@@ -260,29 +208,6 @@ public class ContainerProperties {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
-     * 
-     */
-    @JsonIgnore
-    public List<Environment> getEnvironment() {
-        return environment;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
-     * 
-     */
-    @JsonIgnore
-    public void setEnvironment(List<Environment> environment) {
-        this.environment = environment;
-    }
-
-    public ContainerProperties withEnvironment(List<Environment> environment) {
-        this.environment = environment;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
      * 
      */
@@ -325,29 +250,6 @@ public class ContainerProperties {
 
     public ContainerProperties withReadonlyRootFilesystem(Boolean readonlyRootFilesystem) {
         this.readonlyRootFilesystem = readonlyRootFilesystem;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
-     * 
-     */
-    @JsonIgnore
-    public List<Ulimit> getUlimits() {
-        return ulimits;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
-     * 
-     */
-    @JsonIgnore
-    public void setUlimits(List<Ulimit> ulimits) {
-        this.ulimits = ulimits;
-    }
-
-    public ContainerProperties withUlimits(List<Ulimit> ulimits) {
-        this.ulimits = ulimits;
         return this;
     }
 
@@ -397,14 +299,175 @@ public class ContainerProperties {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements
+     * 
+     */
+    @JsonIgnore
+    public List<ResourceRequirement> getResourceRequirements() {
+        return resourceRequirements;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements
+     * 
+     */
+    @JsonIgnore
+    public void setResourceRequirements(List<ResourceRequirement> resourceRequirements) {
+        this.resourceRequirements = resourceRequirements;
+    }
+
+    public ContainerProperties withResourceRequirements(List<ResourceRequirement> resourceRequirements) {
+        this.resourceRequirements = resourceRequirements;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
+     * 
+     */
+    @JsonIgnore
+    public List<MountPoints> getMountPoints() {
+        return mountPoints;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
+     * 
+     */
+    @JsonIgnore
+    public void setMountPoints(List<MountPoints> mountPoints) {
+        this.mountPoints = mountPoints;
+    }
+
+    public ContainerProperties withMountPoints(List<MountPoints> mountPoints) {
+        this.mountPoints = mountPoints;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
+     * 
+     */
+    @JsonIgnore
+    public List<Volumes> getVolumes() {
+        return volumes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
+     * 
+     */
+    @JsonIgnore
+    public void setVolumes(List<Volumes> volumes) {
+        this.volumes = volumes;
+    }
+
+    public ContainerProperties withVolumes(List<Volumes> volumes) {
+        this.volumes = volumes;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getCommand() {
+        return command;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
+     * 
+     */
+    @JsonIgnore
+    public void setCommand(List<CharSequence> command) {
+        this.command = command;
+    }
+
+    public ContainerProperties withCommand(List<CharSequence> command) {
+        this.command = command;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
+     * 
+     */
+    @JsonIgnore
+    public List<Environment> getEnvironment() {
+        return environment;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment
+     * 
+     */
+    @JsonIgnore
+    public void setEnvironment(List<Environment> environment) {
+        this.environment = environment;
+    }
+
+    public ContainerProperties withEnvironment(List<Environment> environment) {
+        this.environment = environment;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
+     * 
+     */
+    @JsonIgnore
+    public List<Ulimit> getUlimits() {
+        return ulimits;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
+     * 
+     */
+    @JsonIgnore
+    public void setUlimits(List<Ulimit> ulimits) {
+        this.ulimits = ulimits;
+    }
+
+    public ContainerProperties withUlimits(List<Ulimit> ulimits) {
+        this.ulimits = ulimits;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getInstanceType() {
+        return instanceType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype
+     * 
+     */
+    @JsonIgnore
+    public void setInstanceType(CharSequence instanceType) {
+        this.instanceType = instanceType;
+    }
+
+    public ContainerProperties withInstanceType(CharSequence instanceType) {
+        this.instanceType = instanceType;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("mountPoints", mountPoints).append("user", user).append("volumes", volumes).append("command", command).append("memory", memory).append("privileged", privileged).append("environment", environment).append("jobRoleArn", jobRoleArn).append("readonlyRootFilesystem", readonlyRootFilesystem).append("ulimits", ulimits).append("vcpus", vcpus).append("image", image).toString();
+        return new ToStringBuilder(this).append("user", user).append("memory", memory).append("privileged", privileged).append("jobRoleArn", jobRoleArn).append("readonlyRootFilesystem", readonlyRootFilesystem).append("vcpus", vcpus).append("image", image).append("resourceRequirements", resourceRequirements).append("mountPoints", mountPoints).append("volumes", volumes).append("command", command).append("environment", environment).append("ulimits", ulimits).append("instanceType", instanceType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(image).append(memory).append(volumes).append(vcpus).append(command).append(privileged).append(environment).append(ulimits).append(readonlyRootFilesystem).append(mountPoints).append(jobRoleArn).append(user).toHashCode();
+        return new HashCodeBuilder().append(image).append(memory).append(instanceType).append(volumes).append(vcpus).append(command).append(privileged).append(resourceRequirements).append(environment).append(ulimits).append(readonlyRootFilesystem).append(mountPoints).append(jobRoleArn).append(user).toHashCode();
     }
 
     @Override
@@ -416,7 +479,7 @@ public class ContainerProperties {
             return false;
         }
         ContainerProperties rhs = ((ContainerProperties) other);
-        return new EqualsBuilder().append(image, rhs.image).append(memory, rhs.memory).append(volumes, rhs.volumes).append(vcpus, rhs.vcpus).append(command, rhs.command).append(privileged, rhs.privileged).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(mountPoints, rhs.mountPoints).append(jobRoleArn, rhs.jobRoleArn).append(user, rhs.user).isEquals();
+        return new EqualsBuilder().append(image, rhs.image).append(memory, rhs.memory).append(instanceType, rhs.instanceType).append(volumes, rhs.volumes).append(vcpus, rhs.vcpus).append(command, rhs.command).append(privileged, rhs.privileged).append(resourceRequirements, rhs.resourceRequirements).append(environment, rhs.environment).append(ulimits, rhs.ulimits).append(readonlyRootFilesystem, rhs.readonlyRootFilesystem).append(mountPoints, rhs.mountPoints).append(jobRoleArn, rhs.jobRoleArn).append(user, rhs.user).isEquals();
     }
 
 }

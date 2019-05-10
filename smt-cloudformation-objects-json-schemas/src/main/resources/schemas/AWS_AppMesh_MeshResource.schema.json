@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_MeshResource.schema.json",
+  "title" : "MeshResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appmesh.MeshResource",
+  "javaInterfaces" : [ "aws.HasAttributes<MeshAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppMesh::Mesh"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppMesh_Mesh.schema.json"
+    }
+  }
+}

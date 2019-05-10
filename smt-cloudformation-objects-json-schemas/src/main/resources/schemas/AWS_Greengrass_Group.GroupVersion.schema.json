@@ -1,0 +1,45 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_Group.GroupVersion.schema.json",
+  "title" : "GroupVersion",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html",
+  "type" : "object",
+  "javaType" : "aws.greengrass.GroupVersion",
+  "properties" : {
+    "LoggerDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-loggerdefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DeviceDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-devicedefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FunctionDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-functiondefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CoreDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-coredefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-resourcedefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConnectorDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-connectordefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SubscriptionDefinitionVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-subscriptiondefinitionversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

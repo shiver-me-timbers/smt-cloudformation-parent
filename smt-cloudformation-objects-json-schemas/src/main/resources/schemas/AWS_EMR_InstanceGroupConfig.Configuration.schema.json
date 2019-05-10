@@ -21,7 +21,7 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EMR_InstanceGroupConfig.Configuration.schema.json"
+        "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json"
       }
     }
   }

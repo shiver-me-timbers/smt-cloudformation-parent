@@ -1,8 +1,6 @@
 
 package aws.kms;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -27,6 +28,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "KeyPolicy",
     "KeyUsage",
+    "PendingWindowInDays",
     "Tags"
 })
 public class Key {
@@ -66,6 +68,13 @@ public class Key {
     @JsonProperty("KeyUsage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-keyusage")
     private CharSequence keyUsage;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-pendingwindowindays
+     * 
+     */
+    @JsonProperty("PendingWindowInDays")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-pendingwindowindays")
+    private Integer pendingWindowInDays;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
@@ -190,6 +199,29 @@ public class Key {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-pendingwindowindays
+     * 
+     */
+    @JsonIgnore
+    public Integer getPendingWindowInDays() {
+        return pendingWindowInDays;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-pendingwindowindays
+     * 
+     */
+    @JsonIgnore
+    public void setPendingWindowInDays(Integer pendingWindowInDays) {
+        this.pendingWindowInDays = pendingWindowInDays;
+    }
+
+    public Key withPendingWindowInDays(Integer pendingWindowInDays) {
+        this.pendingWindowInDays = pendingWindowInDays;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html#cfn-kms-key-tags
      * 
      */
@@ -214,12 +246,12 @@ public class Key {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("enableKeyRotation", enableKeyRotation).append("enabled", enabled).append("keyPolicy", keyPolicy).append("keyUsage", keyUsage).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("description", description).append("enableKeyRotation", enableKeyRotation).append("enabled", enabled).append("keyPolicy", keyPolicy).append("keyUsage", keyUsage).append("pendingWindowInDays", pendingWindowInDays).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(keyUsage).append(keyPolicy).append(enableKeyRotation).append(description).append(enabled).append(tags).toHashCode();
+        return new HashCodeBuilder().append(pendingWindowInDays).append(keyUsage).append(keyPolicy).append(enableKeyRotation).append(description).append(enabled).append(tags).toHashCode();
     }
 
     @Override
@@ -231,7 +263,7 @@ public class Key {
             return false;
         }
         Key rhs = ((Key) other);
-        return new EqualsBuilder().append(keyUsage, rhs.keyUsage).append(keyPolicy, rhs.keyPolicy).append(enableKeyRotation, rhs.enableKeyRotation).append(description, rhs.description).append(enabled, rhs.enabled).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(pendingWindowInDays, rhs.pendingWindowInDays).append(keyUsage, rhs.keyUsage).append(keyPolicy, rhs.keyPolicy).append(enableKeyRotation, rhs.enableKeyRotation).append(description, rhs.description).append(enabled, rhs.enabled).append(tags, rhs.tags).isEquals();
     }
 
 }

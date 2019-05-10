@@ -10,6 +10,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * ProjectCache
@@ -19,11 +22,19 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Modes",
     "Type",
     "Location"
 })
 public class ProjectCache {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-modes
+     * 
+     */
+    @JsonProperty("Modes")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-modes")
+    private List<CharSequence> modes = new ArrayList<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-type
      * 
@@ -38,6 +49,29 @@ public class ProjectCache {
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-location")
     private CharSequence location;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-modes
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getModes() {
+        return modes;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-modes
+     * 
+     */
+    @JsonIgnore
+    public void setModes(List<CharSequence> modes) {
+        this.modes = modes;
+    }
+
+    public ProjectCache withModes(List<CharSequence> modes) {
+        this.modes = modes;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html#cfn-codebuild-project-projectcache-type
@@ -87,12 +121,12 @@ public class ProjectCache {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("location", location).toString();
+        return new ToStringBuilder(this).append("modes", modes).append("type", type).append("location", location).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(type).append(location).toHashCode();
+        return new HashCodeBuilder().append(location).append(modes).append(type).toHashCode();
     }
 
     @Override
@@ -104,7 +138,7 @@ public class ProjectCache {
             return false;
         }
         ProjectCache rhs = ((ProjectCache) other);
-        return new EqualsBuilder().append(type, rhs.type).append(location, rhs.location).isEquals();
+        return new EqualsBuilder().append(location, rhs.location).append(modes, rhs.modes).append(type, rhs.type).isEquals();
     }
 
 }

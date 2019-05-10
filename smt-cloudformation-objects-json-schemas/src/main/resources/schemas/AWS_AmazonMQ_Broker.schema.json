@@ -73,6 +73,13 @@
     "PubliclyAccessible" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible",
       "type" : "boolean"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AmazonMQ_Broker.TagsEntry.schema.json"
+      }
     }
   }
 }

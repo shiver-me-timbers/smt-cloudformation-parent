@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.ServiceDiscovery.schema.json",
+  "title" : "ServiceDiscovery",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.ServiceDiscovery",
+  "properties" : {
+    "DNS" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html#cfn-appmesh-virtualnode-servicediscovery-dns",
+      "$ref" : "AWS_AppMesh_VirtualNode.DnsServiceDiscovery.schema.json"
+    }
+  }
+}

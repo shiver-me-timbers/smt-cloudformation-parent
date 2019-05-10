@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualService.schema.json",
+  "title" : "VirtualService",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.VirtualService",
+  "properties" : {
+    "MeshName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-meshname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VirtualServiceName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-virtualservicename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Spec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-spec",
+      "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceSpec.schema.json"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+      }
+    }
+  }
+}

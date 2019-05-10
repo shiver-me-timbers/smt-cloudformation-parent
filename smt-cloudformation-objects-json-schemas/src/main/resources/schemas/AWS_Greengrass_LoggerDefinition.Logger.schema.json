@@ -1,0 +1,34 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_LoggerDefinition.Logger.schema.json",
+  "title" : "Logger",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html",
+  "type" : "object",
+  "javaType" : "aws.greengrass.Logger",
+  "properties" : {
+    "Space" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-space",
+      "type" : "integer"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Level" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-level",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Id" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-id",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Component" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-logger.html#cfn-greengrass-loggerdefinition-logger-component",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

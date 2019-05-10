@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_ResourceDefinitionResource.schema.json",
+  "title" : "ResourceDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.ResourceDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ResourceDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::ResourceDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_ResourceDefinition.schema.json"
+    }
+  }
+}

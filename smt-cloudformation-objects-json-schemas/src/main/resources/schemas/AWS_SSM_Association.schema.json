@@ -45,7 +45,7 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_SSM_Association.Target.schema.json"
+        "$ref" : "AWS_SSM_MaintenanceWindowTask.Target.schema.json"
       }
     }
   }

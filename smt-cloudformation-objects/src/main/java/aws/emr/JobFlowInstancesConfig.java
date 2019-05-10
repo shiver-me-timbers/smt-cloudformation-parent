@@ -1,8 +1,6 @@
 
 package aws.emr;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -31,6 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "EmrManagedMasterSecurityGroup",
     "EmrManagedSlaveSecurityGroup",
     "HadoopVersion",
+    "KeepJobFlowAliveWhenNoSteps",
     "MasterInstanceFleet",
     "MasterInstanceGroup",
     "Placement",
@@ -108,6 +110,13 @@ public class JobFlowInstancesConfig {
     @JsonProperty("HadoopVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-hadoopversion")
     private CharSequence hadoopVersion;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-keepjobflowalivewhennosteps
+     * 
+     */
+    @JsonProperty("KeepJobFlowAliveWhenNoSteps")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-keepjobflowalivewhennosteps")
+    private Boolean keepJobFlowAliveWhenNoSteps;
     /**
      * InstanceFleetConfig
      * <p>
@@ -366,6 +375,29 @@ public class JobFlowInstancesConfig {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-keepjobflowalivewhennosteps
+     * 
+     */
+    @JsonIgnore
+    public Boolean getKeepJobFlowAliveWhenNoSteps() {
+        return keepJobFlowAliveWhenNoSteps;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-keepjobflowalivewhennosteps
+     * 
+     */
+    @JsonIgnore
+    public void setKeepJobFlowAliveWhenNoSteps(Boolean keepJobFlowAliveWhenNoSteps) {
+        this.keepJobFlowAliveWhenNoSteps = keepJobFlowAliveWhenNoSteps;
+    }
+
+    public JobFlowInstancesConfig withKeepJobFlowAliveWhenNoSteps(Boolean keepJobFlowAliveWhenNoSteps) {
+        this.keepJobFlowAliveWhenNoSteps = keepJobFlowAliveWhenNoSteps;
+        return this;
+    }
+
+    /**
      * InstanceFleetConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
@@ -494,12 +526,12 @@ public class JobFlowInstancesConfig {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("additionalMasterSecurityGroups", additionalMasterSecurityGroups).append("additionalSlaveSecurityGroups", additionalSlaveSecurityGroups).append("coreInstanceFleet", coreInstanceFleet).append("coreInstanceGroup", coreInstanceGroup).append("ec2KeyName", ec2KeyName).append("ec2SubnetId", ec2SubnetId).append("emrManagedMasterSecurityGroup", emrManagedMasterSecurityGroup).append("emrManagedSlaveSecurityGroup", emrManagedSlaveSecurityGroup).append("hadoopVersion", hadoopVersion).append("masterInstanceFleet", masterInstanceFleet).append("masterInstanceGroup", masterInstanceGroup).append("placement", placement).append("serviceAccessSecurityGroup", serviceAccessSecurityGroup).append("terminationProtected", terminationProtected).toString();
+        return new ToStringBuilder(this).append("additionalMasterSecurityGroups", additionalMasterSecurityGroups).append("additionalSlaveSecurityGroups", additionalSlaveSecurityGroups).append("coreInstanceFleet", coreInstanceFleet).append("coreInstanceGroup", coreInstanceGroup).append("ec2KeyName", ec2KeyName).append("ec2SubnetId", ec2SubnetId).append("emrManagedMasterSecurityGroup", emrManagedMasterSecurityGroup).append("emrManagedSlaveSecurityGroup", emrManagedSlaveSecurityGroup).append("hadoopVersion", hadoopVersion).append("keepJobFlowAliveWhenNoSteps", keepJobFlowAliveWhenNoSteps).append("masterInstanceFleet", masterInstanceFleet).append("masterInstanceGroup", masterInstanceGroup).append("placement", placement).append("serviceAccessSecurityGroup", serviceAccessSecurityGroup).append("terminationProtected", terminationProtected).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(coreInstanceFleet).append(coreInstanceGroup).append(serviceAccessSecurityGroup).append(hadoopVersion).append(additionalMasterSecurityGroups).append(ec2KeyName).append(masterInstanceFleet).append(terminationProtected).append(additionalSlaveSecurityGroups).append(masterInstanceGroup).append(placement).append(emrManagedMasterSecurityGroup).append(emrManagedSlaveSecurityGroup).append(ec2SubnetId).toHashCode();
+        return new HashCodeBuilder().append(coreInstanceFleet).append(coreInstanceGroup).append(serviceAccessSecurityGroup).append(hadoopVersion).append(additionalMasterSecurityGroups).append(keepJobFlowAliveWhenNoSteps).append(ec2KeyName).append(masterInstanceFleet).append(terminationProtected).append(additionalSlaveSecurityGroups).append(masterInstanceGroup).append(placement).append(emrManagedMasterSecurityGroup).append(emrManagedSlaveSecurityGroup).append(ec2SubnetId).toHashCode();
     }
 
     @Override
@@ -511,7 +543,7 @@ public class JobFlowInstancesConfig {
             return false;
         }
         JobFlowInstancesConfig rhs = ((JobFlowInstancesConfig) other);
-        return new EqualsBuilder().append(coreInstanceFleet, rhs.coreInstanceFleet).append(coreInstanceGroup, rhs.coreInstanceGroup).append(serviceAccessSecurityGroup, rhs.serviceAccessSecurityGroup).append(hadoopVersion, rhs.hadoopVersion).append(additionalMasterSecurityGroups, rhs.additionalMasterSecurityGroups).append(ec2KeyName, rhs.ec2KeyName).append(masterInstanceFleet, rhs.masterInstanceFleet).append(terminationProtected, rhs.terminationProtected).append(additionalSlaveSecurityGroups, rhs.additionalSlaveSecurityGroups).append(masterInstanceGroup, rhs.masterInstanceGroup).append(placement, rhs.placement).append(emrManagedMasterSecurityGroup, rhs.emrManagedMasterSecurityGroup).append(emrManagedSlaveSecurityGroup, rhs.emrManagedSlaveSecurityGroup).append(ec2SubnetId, rhs.ec2SubnetId).isEquals();
+        return new EqualsBuilder().append(coreInstanceFleet, rhs.coreInstanceFleet).append(coreInstanceGroup, rhs.coreInstanceGroup).append(serviceAccessSecurityGroup, rhs.serviceAccessSecurityGroup).append(hadoopVersion, rhs.hadoopVersion).append(additionalMasterSecurityGroups, rhs.additionalMasterSecurityGroups).append(keepJobFlowAliveWhenNoSteps, rhs.keepJobFlowAliveWhenNoSteps).append(ec2KeyName, rhs.ec2KeyName).append(masterInstanceFleet, rhs.masterInstanceFleet).append(terminationProtected, rhs.terminationProtected).append(additionalSlaveSecurityGroups, rhs.additionalSlaveSecurityGroups).append(masterInstanceGroup, rhs.masterInstanceGroup).append(placement, rhs.placement).append(emrManagedMasterSecurityGroup, rhs.emrManagedMasterSecurityGroup).append(emrManagedSlaveSecurityGroup, rhs.emrManagedSlaveSecurityGroup).append(ec2SubnetId, rhs.ec2SubnetId).isEquals();
     }
 
 }

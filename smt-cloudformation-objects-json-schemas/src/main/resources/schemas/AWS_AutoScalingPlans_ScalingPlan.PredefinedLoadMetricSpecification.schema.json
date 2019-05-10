@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScalingPlans_ScalingPlan.PredefinedLoadMetricSpecification.schema.json",
+  "title" : "PredefinedLoadMetricSpecification",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html",
+  "type" : "object",
+  "javaType" : "aws.autoscalingplans.PredefinedLoadMetricSpecification",
+  "properties" : {
+    "PredefinedLoadMetricType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedloadmetricspecification-predefinedloadmetrictype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceLabel" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedloadmetricspecification-resourcelabel",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

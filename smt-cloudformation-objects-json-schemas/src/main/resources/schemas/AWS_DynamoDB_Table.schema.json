@@ -13,6 +13,11 @@
         "$ref" : "AWS_DynamoDB_Table.AttributeDefinition.schema.json"
       }
     },
+    "BillingMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "GlobalSecondaryIndexes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi",
       "type" : "array",

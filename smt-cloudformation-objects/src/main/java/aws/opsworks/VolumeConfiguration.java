@@ -19,6 +19,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Encrypted",
     "Iops",
     "MountPoint",
     "NumberOfDisks",
@@ -28,6 +29,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class VolumeConfiguration {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted
+     * 
+     */
+    @JsonProperty("Encrypted")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted")
+    private Boolean encrypted;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
      * 
@@ -70,6 +78,29 @@ public class VolumeConfiguration {
     @JsonProperty("VolumeType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-volumetype")
     private CharSequence volumeType;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted
+     * 
+     */
+    @JsonIgnore
+    public Boolean getEncrypted() {
+        return encrypted;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted
+     * 
+     */
+    @JsonIgnore
+    public void setEncrypted(Boolean encrypted) {
+        this.encrypted = encrypted;
+    }
+
+    public VolumeConfiguration withEncrypted(Boolean encrypted) {
+        this.encrypted = encrypted;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volconfig-iops
@@ -211,12 +242,12 @@ public class VolumeConfiguration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("iops", iops).append("mountPoint", mountPoint).append("numberOfDisks", numberOfDisks).append("raidLevel", raidLevel).append("size", size).append("volumeType", volumeType).toString();
+        return new ToStringBuilder(this).append("encrypted", encrypted).append("iops", iops).append("mountPoint", mountPoint).append("numberOfDisks", numberOfDisks).append("raidLevel", raidLevel).append("size", size).append("volumeType", volumeType).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(volumeType).append(mountPoint).append(size).append(raidLevel).append(iops).append(numberOfDisks).toHashCode();
+        return new HashCodeBuilder().append(volumeType).append(mountPoint).append(encrypted).append(size).append(raidLevel).append(iops).append(numberOfDisks).toHashCode();
     }
 
     @Override
@@ -228,7 +259,7 @@ public class VolumeConfiguration {
             return false;
         }
         VolumeConfiguration rhs = ((VolumeConfiguration) other);
-        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(mountPoint, rhs.mountPoint).append(size, rhs.size).append(raidLevel, rhs.raidLevel).append(iops, rhs.iops).append(numberOfDisks, rhs.numberOfDisks).isEquals();
+        return new EqualsBuilder().append(volumeType, rhs.volumeType).append(mountPoint, rhs.mountPoint).append(encrypted, rhs.encrypted).append(size, rhs.size).append(raidLevel, rhs.raidLevel).append(iops, rhs.iops).append(numberOfDisks, rhs.numberOfDisks).isEquals();
     }
 
 }

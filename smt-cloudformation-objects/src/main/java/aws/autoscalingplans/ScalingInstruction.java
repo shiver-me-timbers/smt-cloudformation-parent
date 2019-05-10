@@ -1,8 +1,6 @@
 
 package aws.autoscalingplans;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -21,22 +22,30 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "ResourceId",
+    "DisableDynamicScaling",
     "ServiceNamespace",
+    "PredictiveScalingMaxCapacityBehavior",
     "ScalableDimension",
+    "ScalingPolicyUpdateBehavior",
     "MinCapacity",
     "TargetTrackingConfigurations",
-    "MaxCapacity"
+    "PredictiveScalingMaxCapacityBuffer",
+    "CustomizedLoadMetricSpecification",
+    "PredefinedLoadMetricSpecification",
+    "ResourceId",
+    "ScheduledActionBufferTime",
+    "MaxCapacity",
+    "PredictiveScalingMode"
 })
 public class ScalingInstruction {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling
      * 
      */
-    @JsonProperty("ResourceId")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid")
-    private CharSequence resourceId;
+    @JsonProperty("DisableDynamicScaling")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling")
+    private Boolean disableDynamicScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace
      * 
@@ -45,12 +54,26 @@ public class ScalingInstruction {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-servicenamespace")
     private CharSequence serviceNamespace;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybehavior
+     * 
+     */
+    @JsonProperty("PredictiveScalingMaxCapacityBehavior")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybehavior")
+    private CharSequence predictiveScalingMaxCapacityBehavior;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension
      * 
      */
     @JsonProperty("ScalableDimension")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension")
     private CharSequence scalableDimension;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalingpolicyupdatebehavior
+     * 
+     */
+    @JsonProperty("ScalingPolicyUpdateBehavior")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalingpolicyupdatebehavior")
+    private CharSequence scalingPolicyUpdateBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-mincapacity
      * 
@@ -66,33 +89,79 @@ public class ScalingInstruction {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations")
     private List<TargetTrackingConfiguration> targetTrackingConfigurations = new ArrayList<TargetTrackingConfiguration>();
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer
+     * 
+     */
+    @JsonProperty("PredictiveScalingMaxCapacityBuffer")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer")
+    private Integer predictiveScalingMaxCapacityBuffer;
+    /**
+     * CustomizedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html
+     * 
+     */
+    @JsonProperty("CustomizedLoadMetricSpecification")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html")
+    private CustomizedLoadMetricSpecification customizedLoadMetricSpecification;
+    /**
+     * PredefinedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html
+     * 
+     */
+    @JsonProperty("PredefinedLoadMetricSpecification")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html")
+    private PredefinedLoadMetricSpecification predefinedLoadMetricSpecification;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * 
+     */
+    @JsonProperty("ResourceId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid")
+    private CharSequence resourceId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scheduledactionbuffertime
+     * 
+     */
+    @JsonProperty("ScheduledActionBufferTime")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scheduledactionbuffertime")
+    private Integer scheduledActionBufferTime;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity
      * 
      */
     @JsonProperty("MaxCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity")
     private Integer maxCapacity;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmode
+     * 
+     */
+    @JsonProperty("PredictiveScalingMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmode")
+    private CharSequence predictiveScalingMode;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling
      * 
      */
     @JsonIgnore
-    public CharSequence getResourceId() {
-        return resourceId;
+    public Boolean getDisableDynamicScaling() {
+        return disableDynamicScaling;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling
      * 
      */
     @JsonIgnore
-    public void setResourceId(CharSequence resourceId) {
-        this.resourceId = resourceId;
+    public void setDisableDynamicScaling(Boolean disableDynamicScaling) {
+        this.disableDynamicScaling = disableDynamicScaling;
     }
 
-    public ScalingInstruction withResourceId(CharSequence resourceId) {
-        this.resourceId = resourceId;
+    public ScalingInstruction withDisableDynamicScaling(Boolean disableDynamicScaling) {
+        this.disableDynamicScaling = disableDynamicScaling;
         return this;
     }
 
@@ -120,6 +189,29 @@ public class ScalingInstruction {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybehavior
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPredictiveScalingMaxCapacityBehavior() {
+        return predictiveScalingMaxCapacityBehavior;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybehavior
+     * 
+     */
+    @JsonIgnore
+    public void setPredictiveScalingMaxCapacityBehavior(CharSequence predictiveScalingMaxCapacityBehavior) {
+        this.predictiveScalingMaxCapacityBehavior = predictiveScalingMaxCapacityBehavior;
+    }
+
+    public ScalingInstruction withPredictiveScalingMaxCapacityBehavior(CharSequence predictiveScalingMaxCapacityBehavior) {
+        this.predictiveScalingMaxCapacityBehavior = predictiveScalingMaxCapacityBehavior;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalabledimension
      * 
      */
@@ -139,6 +231,29 @@ public class ScalingInstruction {
 
     public ScalingInstruction withScalableDimension(CharSequence scalableDimension) {
         this.scalableDimension = scalableDimension;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalingpolicyupdatebehavior
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getScalingPolicyUpdateBehavior() {
+        return scalingPolicyUpdateBehavior;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scalingpolicyupdatebehavior
+     * 
+     */
+    @JsonIgnore
+    public void setScalingPolicyUpdateBehavior(CharSequence scalingPolicyUpdateBehavior) {
+        this.scalingPolicyUpdateBehavior = scalingPolicyUpdateBehavior;
+    }
+
+    public ScalingInstruction withScalingPolicyUpdateBehavior(CharSequence scalingPolicyUpdateBehavior) {
+        this.scalingPolicyUpdateBehavior = scalingPolicyUpdateBehavior;
         return this;
     }
 
@@ -189,6 +304,129 @@ public class ScalingInstruction {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer
+     * 
+     */
+    @JsonIgnore
+    public Integer getPredictiveScalingMaxCapacityBuffer() {
+        return predictiveScalingMaxCapacityBuffer;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer
+     * 
+     */
+    @JsonIgnore
+    public void setPredictiveScalingMaxCapacityBuffer(Integer predictiveScalingMaxCapacityBuffer) {
+        this.predictiveScalingMaxCapacityBuffer = predictiveScalingMaxCapacityBuffer;
+    }
+
+    public ScalingInstruction withPredictiveScalingMaxCapacityBuffer(Integer predictiveScalingMaxCapacityBuffer) {
+        this.predictiveScalingMaxCapacityBuffer = predictiveScalingMaxCapacityBuffer;
+        return this;
+    }
+
+    /**
+     * CustomizedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html
+     * 
+     */
+    @JsonIgnore
+    public CustomizedLoadMetricSpecification getCustomizedLoadMetricSpecification() {
+        return customizedLoadMetricSpecification;
+    }
+
+    /**
+     * CustomizedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html
+     * 
+     */
+    @JsonIgnore
+    public void setCustomizedLoadMetricSpecification(CustomizedLoadMetricSpecification customizedLoadMetricSpecification) {
+        this.customizedLoadMetricSpecification = customizedLoadMetricSpecification;
+    }
+
+    public ScalingInstruction withCustomizedLoadMetricSpecification(CustomizedLoadMetricSpecification customizedLoadMetricSpecification) {
+        this.customizedLoadMetricSpecification = customizedLoadMetricSpecification;
+        return this;
+    }
+
+    /**
+     * PredefinedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html
+     * 
+     */
+    @JsonIgnore
+    public PredefinedLoadMetricSpecification getPredefinedLoadMetricSpecification() {
+        return predefinedLoadMetricSpecification;
+    }
+
+    /**
+     * PredefinedLoadMetricSpecification
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html
+     * 
+     */
+    @JsonIgnore
+    public void setPredefinedLoadMetricSpecification(PredefinedLoadMetricSpecification predefinedLoadMetricSpecification) {
+        this.predefinedLoadMetricSpecification = predefinedLoadMetricSpecification;
+    }
+
+    public ScalingInstruction withPredefinedLoadMetricSpecification(PredefinedLoadMetricSpecification predefinedLoadMetricSpecification) {
+        this.predefinedLoadMetricSpecification = predefinedLoadMetricSpecification;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getResourceId() {
+        return resourceId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
+     * 
+     */
+    @JsonIgnore
+    public void setResourceId(CharSequence resourceId) {
+        this.resourceId = resourceId;
+    }
+
+    public ScalingInstruction withResourceId(CharSequence resourceId) {
+        this.resourceId = resourceId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scheduledactionbuffertime
+     * 
+     */
+    @JsonIgnore
+    public Integer getScheduledActionBufferTime() {
+        return scheduledActionBufferTime;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-scheduledactionbuffertime
+     * 
+     */
+    @JsonIgnore
+    public void setScheduledActionBufferTime(Integer scheduledActionBufferTime) {
+        this.scheduledActionBufferTime = scheduledActionBufferTime;
+    }
+
+    public ScalingInstruction withScheduledActionBufferTime(Integer scheduledActionBufferTime) {
+        this.scheduledActionBufferTime = scheduledActionBufferTime;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-maxcapacity
      * 
      */
@@ -211,14 +449,37 @@ public class ScalingInstruction {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPredictiveScalingMode() {
+        return predictiveScalingMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmode
+     * 
+     */
+    @JsonIgnore
+    public void setPredictiveScalingMode(CharSequence predictiveScalingMode) {
+        this.predictiveScalingMode = predictiveScalingMode;
+    }
+
+    public ScalingInstruction withPredictiveScalingMode(CharSequence predictiveScalingMode) {
+        this.predictiveScalingMode = predictiveScalingMode;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("resourceId", resourceId).append("serviceNamespace", serviceNamespace).append("scalableDimension", scalableDimension).append("minCapacity", minCapacity).append("targetTrackingConfigurations", targetTrackingConfigurations).append("maxCapacity", maxCapacity).toString();
+        return new ToStringBuilder(this).append("disableDynamicScaling", disableDynamicScaling).append("serviceNamespace", serviceNamespace).append("predictiveScalingMaxCapacityBehavior", predictiveScalingMaxCapacityBehavior).append("scalableDimension", scalableDimension).append("scalingPolicyUpdateBehavior", scalingPolicyUpdateBehavior).append("minCapacity", minCapacity).append("targetTrackingConfigurations", targetTrackingConfigurations).append("predictiveScalingMaxCapacityBuffer", predictiveScalingMaxCapacityBuffer).append("customizedLoadMetricSpecification", customizedLoadMetricSpecification).append("predefinedLoadMetricSpecification", predefinedLoadMetricSpecification).append("resourceId", resourceId).append("scheduledActionBufferTime", scheduledActionBufferTime).append("maxCapacity", maxCapacity).append("predictiveScalingMode", predictiveScalingMode).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(resourceId).append(scalableDimension).append(targetTrackingConfigurations).append(maxCapacity).append(minCapacity).append(serviceNamespace).toHashCode();
+        return new HashCodeBuilder().append(disableDynamicScaling).append(predictiveScalingMaxCapacityBehavior).append(resourceId).append(scheduledActionBufferTime).append(scalableDimension).append(targetTrackingConfigurations).append(predictiveScalingMaxCapacityBuffer).append(maxCapacity).append(predefinedLoadMetricSpecification).append(scalingPolicyUpdateBehavior).append(customizedLoadMetricSpecification).append(predictiveScalingMode).append(minCapacity).append(serviceNamespace).toHashCode();
     }
 
     @Override
@@ -230,7 +491,7 @@ public class ScalingInstruction {
             return false;
         }
         ScalingInstruction rhs = ((ScalingInstruction) other);
-        return new EqualsBuilder().append(resourceId, rhs.resourceId).append(scalableDimension, rhs.scalableDimension).append(targetTrackingConfigurations, rhs.targetTrackingConfigurations).append(maxCapacity, rhs.maxCapacity).append(minCapacity, rhs.minCapacity).append(serviceNamespace, rhs.serviceNamespace).isEquals();
+        return new EqualsBuilder().append(disableDynamicScaling, rhs.disableDynamicScaling).append(predictiveScalingMaxCapacityBehavior, rhs.predictiveScalingMaxCapacityBehavior).append(resourceId, rhs.resourceId).append(scheduledActionBufferTime, rhs.scheduledActionBufferTime).append(scalableDimension, rhs.scalableDimension).append(targetTrackingConfigurations, rhs.targetTrackingConfigurations).append(predictiveScalingMaxCapacityBuffer, rhs.predictiveScalingMaxCapacityBuffer).append(maxCapacity, rhs.maxCapacity).append(predefinedLoadMetricSpecification, rhs.predefinedLoadMetricSpecification).append(scalingPolicyUpdateBehavior, rhs.scalingPolicyUpdateBehavior).append(customizedLoadMetricSpecification, rhs.customizedLoadMetricSpecification).append(predictiveScalingMode, rhs.predictiveScalingMode).append(minCapacity, rhs.minCapacity).append(serviceNamespace, rhs.serviceNamespace).isEquals();
     }
 
 }

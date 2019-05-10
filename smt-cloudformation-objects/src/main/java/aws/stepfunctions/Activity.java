@@ -10,6 +10,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Activity
@@ -19,10 +22,18 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Tags",
     "Name"
 })
 public class Activity {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags")
+    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-name
      * 
@@ -30,6 +41,29 @@ public class Activity {
     @JsonProperty("Name")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-name")
     private CharSequence name;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags
+     * 
+     */
+    @JsonIgnore
+    public List<TagsEntry> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<TagsEntry> tags) {
+        this.tags = tags;
+    }
+
+    public Activity withTags(List<TagsEntry> tags) {
+        this.tags = tags;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-name
@@ -56,12 +90,12 @@ public class Activity {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("name", name).toString();
+        return new ToStringBuilder(this).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).toHashCode();
+        return new HashCodeBuilder().append(name).append(tags).toHashCode();
     }
 
     @Override
@@ -73,7 +107,7 @@ public class Activity {
             return false;
         }
         Activity rhs = ((Activity) other);
-        return new EqualsBuilder().append(name, rhs.name).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(tags, rhs.tags).isEquals();
     }
 
 }

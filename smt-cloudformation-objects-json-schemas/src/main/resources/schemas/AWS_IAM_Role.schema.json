@@ -28,6 +28,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PermissionsBoundary" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-permissionsboundary",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "Policies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies",
       "type" : "array",

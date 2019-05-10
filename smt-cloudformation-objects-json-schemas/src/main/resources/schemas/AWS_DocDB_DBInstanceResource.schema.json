@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DocDB_DBInstanceResource.schema.json",
+  "title" : "DBInstanceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbinstance.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.docdb.DBInstanceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DBInstanceAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DocDB::DBInstance"
+    },
+    "Properties" : {
+      "$ref" : "AWS_DocDB_DBInstance.schema.json"
+    }
+  }
+}

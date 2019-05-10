@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.TcpRoute.schema.json",
+  "title" : "TcpRoute",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcproute.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.TcpRoute",
+  "properties" : {
+    "Action" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcproute.html#cfn-appmesh-route-tcproute-action",
+      "$ref" : "AWS_AppMesh_Route.TcpRouteAction.schema.json"
+    }
+  }
+}

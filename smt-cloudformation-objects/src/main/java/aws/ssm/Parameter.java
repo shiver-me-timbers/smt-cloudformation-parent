@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Description",
     "AllowedPattern",
     "Value",
+    "Tags",
     "Name"
 })
 public class Parameter {
@@ -55,6 +56,13 @@ public class Parameter {
     @JsonProperty("Value")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-value")
     private CharSequence value;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags")
+    private Object tags;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-name
      * 
@@ -156,6 +164,29 @@ public class Parameter {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags
+     * 
+     */
+    @JsonIgnore
+    public Object getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(Object tags) {
+        this.tags = tags;
+    }
+
+    public Parameter withTags(Object tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-parameter.html#cfn-ssm-parameter-name
      * 
      */
@@ -180,12 +211,12 @@ public class Parameter {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("allowedPattern", allowedPattern).append("value", value).append("name", name).toString();
+        return new ToStringBuilder(this).append("type", type).append("description", description).append("allowedPattern", allowedPattern).append("value", value).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(description).append(type).append(allowedPattern).append(value).toHashCode();
+        return new HashCodeBuilder().append(name).append(description).append(type).append(allowedPattern).append(value).append(tags).toHashCode();
     }
 
     @Override
@@ -197,7 +228,7 @@ public class Parameter {
             return false;
         }
         Parameter rhs = ((Parameter) other);
-        return new EqualsBuilder().append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(allowedPattern, rhs.allowedPattern).append(value, rhs.value).append(tags, rhs.tags).isEquals();
     }
 
 }

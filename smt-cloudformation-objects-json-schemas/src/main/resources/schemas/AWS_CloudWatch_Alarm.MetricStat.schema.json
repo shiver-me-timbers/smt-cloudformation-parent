@@ -1,0 +1,28 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_Alarm.MetricStat.schema.json",
+  "title" : "MetricStat",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html",
+  "type" : "object",
+  "javaType" : "aws.cloudwatch.MetricStat",
+  "properties" : {
+    "Metric" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-metric",
+      "$ref" : "AWS_CloudWatch_Alarm.Metric.schema.json"
+    },
+    "Period" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-period",
+      "type" : "integer"
+    },
+    "Stat" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-stat",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Unit" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-unit",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

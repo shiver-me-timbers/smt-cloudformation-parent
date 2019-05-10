@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_ResourceDefinition.ResourceDataContainer.schema.json",
+  "title" : "ResourceDataContainer",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html",
+  "type" : "object",
+  "javaType" : "aws.greengrass.ResourceDataContainer",
+  "properties" : {
+    "SecretsManagerSecretResourceData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-secretsmanagersecretresourcedata",
+      "$ref" : "AWS_Greengrass_ResourceDefinition.SecretsManagerSecretResourceData.schema.json"
+    },
+    "SageMakerMachineLearningModelResourceData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-sagemakermachinelearningmodelresourcedata",
+      "$ref" : "AWS_Greengrass_ResourceDefinition.SageMakerMachineLearningModelResourceData.schema.json"
+    },
+    "LocalVolumeResourceData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-localvolumeresourcedata",
+      "$ref" : "AWS_Greengrass_ResourceDefinition.LocalVolumeResourceData.schema.json"
+    },
+    "LocalDeviceResourceData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-localdeviceresourcedata",
+      "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.LocalDeviceResourceData.schema.json"
+    },
+    "S3MachineLearningModelResourceData" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-s3machinelearningmodelresourcedata",
+      "$ref" : "AWS_Greengrass_ResourceDefinition.S3MachineLearningModelResourceData.schema.json"
+    }
+  }
+}

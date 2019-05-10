@@ -37,7 +37,7 @@ public class DnsRecord {
      */
     @JsonProperty("TTL")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsrecord.html#cfn-servicediscovery-service-dnsrecord-ttl")
-    private CharSequence tTL;
+    private Double tTL;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsrecord.html#cfn-servicediscovery-service-dnsrecord-type
@@ -67,7 +67,7 @@ public class DnsRecord {
      * 
      */
     @JsonIgnore
-    public CharSequence getTTL() {
+    public Double getTTL() {
         return tTL;
     }
 
@@ -76,11 +76,11 @@ public class DnsRecord {
      * 
      */
     @JsonIgnore
-    public void setTTL(CharSequence tTL) {
+    public void setTTL(Double tTL) {
         this.tTL = tTL;
     }
 
-    public DnsRecord withTTL(CharSequence tTL) {
+    public DnsRecord withTTL(Double tTL) {
         this.tTL = tTL;
         return this;
     }

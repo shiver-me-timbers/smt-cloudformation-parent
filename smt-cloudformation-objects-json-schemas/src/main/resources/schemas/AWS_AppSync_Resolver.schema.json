@@ -16,6 +16,10 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "PipelineConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-pipelineconfig",
+      "$ref" : "AWS_AppSync_Resolver.PipelineConfig.schema.json"
+    },
     "DataSourceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename",
       "type" : "string",
@@ -28,6 +32,11 @@
     },
     "ResponseMappingTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Kind" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

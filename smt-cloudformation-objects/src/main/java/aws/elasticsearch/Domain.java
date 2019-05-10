@@ -1,9 +1,6 @@
 
 package aws.elasticsearch;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,6 +10,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -30,6 +31,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ElasticsearchClusterConfig",
     "ElasticsearchVersion",
     "EncryptionAtRestOptions",
+    "NodeToNodeEncryptionOptions",
     "SnapshotOptions",
     "Tags",
     "VPCOptions"
@@ -91,6 +93,15 @@ public class Domain {
     @JsonProperty("EncryptionAtRestOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html")
     private EncryptionAtRestOptions encryptionAtRestOptions;
+    /**
+     * NodeToNodeEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
+     * 
+     */
+    @JsonProperty("NodeToNodeEncryptionOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html")
+    private NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions;
     /**
      * SnapshotOptions
      * <p>
@@ -291,6 +302,33 @@ public class Domain {
     }
 
     /**
+     * NodeToNodeEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
+     * 
+     */
+    @JsonIgnore
+    public NodeToNodeEncryptionOptions getNodeToNodeEncryptionOptions() {
+        return nodeToNodeEncryptionOptions;
+    }
+
+    /**
+     * NodeToNodeEncryptionOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setNodeToNodeEncryptionOptions(NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions) {
+        this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
+    }
+
+    public Domain withNodeToNodeEncryptionOptions(NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions) {
+        this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
+        return this;
+    }
+
+    /**
      * SnapshotOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
@@ -369,12 +407,12 @@ public class Domain {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("accessPolicies", accessPolicies).append("advancedOptions", advancedOptions).append("domainName", domainName).append("eBSOptions", eBSOptions).append("elasticsearchClusterConfig", elasticsearchClusterConfig).append("elasticsearchVersion", elasticsearchVersion).append("encryptionAtRestOptions", encryptionAtRestOptions).append("snapshotOptions", snapshotOptions).append("tags", tags).append("vPCOptions", vPCOptions).toString();
+        return new ToStringBuilder(this).append("accessPolicies", accessPolicies).append("advancedOptions", advancedOptions).append("domainName", domainName).append("eBSOptions", eBSOptions).append("elasticsearchClusterConfig", elasticsearchClusterConfig).append("elasticsearchVersion", elasticsearchVersion).append("encryptionAtRestOptions", encryptionAtRestOptions).append("nodeToNodeEncryptionOptions", nodeToNodeEncryptionOptions).append("snapshotOptions", snapshotOptions).append("tags", tags).append("vPCOptions", vPCOptions).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(elasticsearchVersion).append(accessPolicies).append(elasticsearchClusterConfig).append(advancedOptions).append(eBSOptions).append(domainName).append(snapshotOptions).append(encryptionAtRestOptions).append(tags).append(vPCOptions).toHashCode();
+        return new HashCodeBuilder().append(elasticsearchVersion).append(nodeToNodeEncryptionOptions).append(accessPolicies).append(elasticsearchClusterConfig).append(advancedOptions).append(eBSOptions).append(domainName).append(snapshotOptions).append(encryptionAtRestOptions).append(tags).append(vPCOptions).toHashCode();
     }
 
     @Override
@@ -386,7 +424,7 @@ public class Domain {
             return false;
         }
         Domain rhs = ((Domain) other);
-        return new EqualsBuilder().append(elasticsearchVersion, rhs.elasticsearchVersion).append(accessPolicies, rhs.accessPolicies).append(elasticsearchClusterConfig, rhs.elasticsearchClusterConfig).append(advancedOptions, rhs.advancedOptions).append(eBSOptions, rhs.eBSOptions).append(domainName, rhs.domainName).append(snapshotOptions, rhs.snapshotOptions).append(encryptionAtRestOptions, rhs.encryptionAtRestOptions).append(tags, rhs.tags).append(vPCOptions, rhs.vPCOptions).isEquals();
+        return new EqualsBuilder().append(elasticsearchVersion, rhs.elasticsearchVersion).append(nodeToNodeEncryptionOptions, rhs.nodeToNodeEncryptionOptions).append(accessPolicies, rhs.accessPolicies).append(elasticsearchClusterConfig, rhs.elasticsearchClusterConfig).append(advancedOptions, rhs.advancedOptions).append(eBSOptions, rhs.eBSOptions).append(domainName, rhs.domainName).append(snapshotOptions, rhs.snapshotOptions).append(encryptionAtRestOptions, rhs.encryptionAtRestOptions).append(tags, rhs.tags).append(vPCOptions, rhs.vPCOptions).isEquals();
     }
 
 }

@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_DatasetResource.schema.json",
+  "title" : "DatasetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotanalytics.DatasetResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTAnalytics::Dataset"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTAnalytics_Dataset.schema.json"
+    }
+  }
+}

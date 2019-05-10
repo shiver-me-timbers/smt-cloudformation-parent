@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Description",
     "ServiceRoleArn",
     "HttpConfig",
+    "RelationalDatabaseConfig",
     "LambdaConfig",
     "ApiId",
     "Name",
@@ -61,6 +62,15 @@ public class DataSource {
     @JsonProperty("HttpConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html")
     private HttpConfig httpConfig;
+    /**
+     * RelationalDatabaseConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
+     * 
+     */
+    @JsonProperty("RelationalDatabaseConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html")
+    private RelationalDatabaseConfig relationalDatabaseConfig;
     /**
      * LambdaConfig
      * <p>
@@ -200,6 +210,33 @@ public class DataSource {
     }
 
     /**
+     * RelationalDatabaseConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
+     * 
+     */
+    @JsonIgnore
+    public RelationalDatabaseConfig getRelationalDatabaseConfig() {
+        return relationalDatabaseConfig;
+    }
+
+    /**
+     * RelationalDatabaseConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setRelationalDatabaseConfig(RelationalDatabaseConfig relationalDatabaseConfig) {
+        this.relationalDatabaseConfig = relationalDatabaseConfig;
+    }
+
+    public DataSource withRelationalDatabaseConfig(RelationalDatabaseConfig relationalDatabaseConfig) {
+        this.relationalDatabaseConfig = relationalDatabaseConfig;
+        return this;
+    }
+
+    /**
      * LambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
@@ -328,12 +365,12 @@ public class DataSource {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("description", description).append("serviceRoleArn", serviceRoleArn).append("httpConfig", httpConfig).append("lambdaConfig", lambdaConfig).append("apiId", apiId).append("name", name).append("dynamoDBConfig", dynamoDBConfig).append("elasticsearchConfig", elasticsearchConfig).toString();
+        return new ToStringBuilder(this).append("type", type).append("description", description).append("serviceRoleArn", serviceRoleArn).append("httpConfig", httpConfig).append("relationalDatabaseConfig", relationalDatabaseConfig).append("lambdaConfig", lambdaConfig).append("apiId", apiId).append("name", name).append("dynamoDBConfig", dynamoDBConfig).append("elasticsearchConfig", elasticsearchConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(elasticsearchConfig).append(httpConfig).append(dynamoDBConfig).append(name).append(description).append(type).append(serviceRoleArn).append(lambdaConfig).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(elasticsearchConfig).append(httpConfig).append(relationalDatabaseConfig).append(dynamoDBConfig).append(name).append(description).append(type).append(serviceRoleArn).append(lambdaConfig).append(apiId).toHashCode();
     }
 
     @Override
@@ -345,7 +382,7 @@ public class DataSource {
             return false;
         }
         DataSource rhs = ((DataSource) other);
-        return new EqualsBuilder().append(elasticsearchConfig, rhs.elasticsearchConfig).append(httpConfig, rhs.httpConfig).append(dynamoDBConfig, rhs.dynamoDBConfig).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(serviceRoleArn, rhs.serviceRoleArn).append(lambdaConfig, rhs.lambdaConfig).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(elasticsearchConfig, rhs.elasticsearchConfig).append(httpConfig, rhs.httpConfig).append(relationalDatabaseConfig, rhs.relationalDatabaseConfig).append(dynamoDBConfig, rhs.dynamoDBConfig).append(name, rhs.name).append(description, rhs.description).append(type, rhs.type).append(serviceRoleArn, rhs.serviceRoleArn).append(lambdaConfig, rhs.lambdaConfig).append(apiId, rhs.apiId).isEquals();
     }
 
 }

@@ -20,6 +20,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ReplyToEmailAddress",
+    "EmailSendingAccount",
     "SourceArn"
 })
 public class EmailConfiguration {
@@ -31,6 +32,13 @@ public class EmailConfiguration {
     @JsonProperty("ReplyToEmailAddress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress")
     private CharSequence replyToEmailAddress;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount
+     * 
+     */
+    @JsonProperty("EmailSendingAccount")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount")
+    private CharSequence emailSendingAccount;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
@@ -63,6 +71,29 @@ public class EmailConfiguration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getEmailSendingAccount() {
+        return emailSendingAccount;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-emailsendingaccount
+     * 
+     */
+    @JsonIgnore
+    public void setEmailSendingAccount(CharSequence emailSendingAccount) {
+        this.emailSendingAccount = emailSendingAccount;
+    }
+
+    public EmailConfiguration withEmailSendingAccount(CharSequence emailSendingAccount) {
+        this.emailSendingAccount = emailSendingAccount;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-sourcearn
      * 
      */
@@ -87,12 +118,12 @@ public class EmailConfiguration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("replyToEmailAddress", replyToEmailAddress).append("sourceArn", sourceArn).toString();
+        return new ToStringBuilder(this).append("replyToEmailAddress", replyToEmailAddress).append("emailSendingAccount", emailSendingAccount).append("sourceArn", sourceArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(replyToEmailAddress).append(sourceArn).toHashCode();
+        return new HashCodeBuilder().append(sourceArn).append(replyToEmailAddress).append(emailSendingAccount).toHashCode();
     }
 
     @Override
@@ -104,7 +135,7 @@ public class EmailConfiguration {
             return false;
         }
         EmailConfiguration rhs = ((EmailConfiguration) other);
-        return new EqualsBuilder().append(replyToEmailAddress, rhs.replyToEmailAddress).append(sourceArn, rhs.sourceArn).isEquals();
+        return new EqualsBuilder().append(sourceArn, rhs.sourceArn).append(replyToEmailAddress, rhs.replyToEmailAddress).append(emailSendingAccount, rhs.emailSendingAccount).isEquals();
     }
 
 }

@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_Listener.FixedResponseConfig.schema.json",
+  "title" : "FixedResponseConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.FixedResponseConfig",
+  "properties" : {
+    "ContentType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.html#cfn-elasticloadbalancingv2-listener-fixedresponseconfig-contenttype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MessageBody" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.html#cfn-elasticloadbalancingv2-listener-fixedresponseconfig-messagebody",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "StatusCode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-fixedresponseconfig.html#cfn-elasticloadbalancingv2-listener-fixedresponseconfig-statuscode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

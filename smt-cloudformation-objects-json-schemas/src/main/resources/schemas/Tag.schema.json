@@ -2,17 +2,17 @@
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "Tag.schema.json",
   "title" : "Tag",
-  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html",
   "type" : "object",
   "javaType" : "aws.Tag",
   "properties" : {
-    "Key" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-key",
+    "Value" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
-    "Value" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html#cfn-resource-tags-value",
+    "Key" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-key",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

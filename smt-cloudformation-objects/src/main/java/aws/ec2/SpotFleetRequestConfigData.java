@@ -1,8 +1,6 @@
 
 package aws.ec2;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -84,14 +85,14 @@ public class SpotFleetRequestConfigData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs")
     private Set<LaunchTemplateConfig> launchTemplateConfigs = new LinkedHashSet<LaunchTemplateConfig>();
     /**
-     * ClassicLoadBalancersConfig
+     * LoadBalancersConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html
      * 
      */
     @JsonProperty("LoadBalancersConfig")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html")
-    private ClassicLoadBalancersConfig loadBalancersConfig;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html")
+    private LoadBalancersConfig loadBalancersConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances
      * 
@@ -281,28 +282,28 @@ public class SpotFleetRequestConfigData {
     }
 
     /**
-     * ClassicLoadBalancersConfig
+     * LoadBalancersConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html
      * 
      */
     @JsonIgnore
-    public ClassicLoadBalancersConfig getLoadBalancersConfig() {
+    public LoadBalancersConfig getLoadBalancersConfig() {
         return loadBalancersConfig;
     }
 
     /**
-     * ClassicLoadBalancersConfig
+     * LoadBalancersConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html
      * 
      */
     @JsonIgnore
-    public void setLoadBalancersConfig(ClassicLoadBalancersConfig loadBalancersConfig) {
+    public void setLoadBalancersConfig(LoadBalancersConfig loadBalancersConfig) {
         this.loadBalancersConfig = loadBalancersConfig;
     }
 
-    public SpotFleetRequestConfigData withLoadBalancersConfig(ClassicLoadBalancersConfig loadBalancersConfig) {
+    public SpotFleetRequestConfigData withLoadBalancersConfig(LoadBalancersConfig loadBalancersConfig) {
         this.loadBalancersConfig = loadBalancersConfig;
         return this;
     }

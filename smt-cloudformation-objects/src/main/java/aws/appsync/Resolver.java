@@ -21,9 +21,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ResponseMappingTemplateS3Location",
     "TypeName",
+    "PipelineConfig",
     "DataSourceName",
     "RequestMappingTemplate",
     "ResponseMappingTemplate",
+    "Kind",
     "RequestMappingTemplateS3Location",
     "ApiId",
     "FieldName"
@@ -45,6 +47,15 @@ public class Resolver {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename")
     private CharSequence typeName;
     /**
+     * PipelineConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
+     * 
+     */
+    @JsonProperty("PipelineConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html")
+    private PipelineConfig pipelineConfig;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
      */
@@ -65,6 +76,13 @@ public class Resolver {
     @JsonProperty("ResponseMappingTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-responsemappingtemplate")
     private CharSequence responseMappingTemplate;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind
+     * 
+     */
+    @JsonProperty("Kind")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind")
+    private CharSequence kind;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-requestmappingtemplates3location
      * 
@@ -134,6 +152,33 @@ public class Resolver {
     }
 
     /**
+     * PipelineConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
+     * 
+     */
+    @JsonIgnore
+    public PipelineConfig getPipelineConfig() {
+        return pipelineConfig;
+    }
+
+    /**
+     * PipelineConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setPipelineConfig(PipelineConfig pipelineConfig) {
+        this.pipelineConfig = pipelineConfig;
+    }
+
+    public Resolver withPipelineConfig(PipelineConfig pipelineConfig) {
+        this.pipelineConfig = pipelineConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
      */
@@ -199,6 +244,29 @@ public class Resolver {
 
     public Resolver withResponseMappingTemplate(CharSequence responseMappingTemplate) {
         this.responseMappingTemplate = responseMappingTemplate;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKind() {
+        return kind;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-kind
+     * 
+     */
+    @JsonIgnore
+    public void setKind(CharSequence kind) {
+        this.kind = kind;
+    }
+
+    public Resolver withKind(CharSequence kind) {
+        this.kind = kind;
         return this;
     }
 
@@ -273,12 +341,12 @@ public class Resolver {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("responseMappingTemplateS3Location", responseMappingTemplateS3Location).append("typeName", typeName).append("dataSourceName", dataSourceName).append("requestMappingTemplate", requestMappingTemplate).append("responseMappingTemplate", responseMappingTemplate).append("requestMappingTemplateS3Location", requestMappingTemplateS3Location).append("apiId", apiId).append("fieldName", fieldName).toString();
+        return new ToStringBuilder(this).append("responseMappingTemplateS3Location", responseMappingTemplateS3Location).append("typeName", typeName).append("pipelineConfig", pipelineConfig).append("dataSourceName", dataSourceName).append("requestMappingTemplate", requestMappingTemplate).append("responseMappingTemplate", responseMappingTemplate).append("kind", kind).append("requestMappingTemplateS3Location", requestMappingTemplateS3Location).append("apiId", apiId).append("fieldName", fieldName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(responseMappingTemplate).append(fieldName).append(requestMappingTemplateS3Location).append(typeName).append(responseMappingTemplateS3Location).append(dataSourceName).append(requestMappingTemplate).append(apiId).toHashCode();
+        return new HashCodeBuilder().append(responseMappingTemplate).append(fieldName).append(requestMappingTemplateS3Location).append(pipelineConfig).append(kind).append(typeName).append(responseMappingTemplateS3Location).append(dataSourceName).append(requestMappingTemplate).append(apiId).toHashCode();
     }
 
     @Override
@@ -290,7 +358,7 @@ public class Resolver {
             return false;
         }
         Resolver rhs = ((Resolver) other);
-        return new EqualsBuilder().append(responseMappingTemplate, rhs.responseMappingTemplate).append(fieldName, rhs.fieldName).append(requestMappingTemplateS3Location, rhs.requestMappingTemplateS3Location).append(typeName, rhs.typeName).append(responseMappingTemplateS3Location, rhs.responseMappingTemplateS3Location).append(dataSourceName, rhs.dataSourceName).append(requestMappingTemplate, rhs.requestMappingTemplate).append(apiId, rhs.apiId).isEquals();
+        return new EqualsBuilder().append(responseMappingTemplate, rhs.responseMappingTemplate).append(fieldName, rhs.fieldName).append(requestMappingTemplateS3Location, rhs.requestMappingTemplateS3Location).append(pipelineConfig, rhs.pipelineConfig).append(kind, rhs.kind).append(typeName, rhs.typeName).append(responseMappingTemplateS3Location, rhs.responseMappingTemplateS3Location).append(dataSourceName, rhs.dataSourceName).append(requestMappingTemplate, rhs.requestMappingTemplate).append(apiId, rhs.apiId).isEquals();
     }
 
 }

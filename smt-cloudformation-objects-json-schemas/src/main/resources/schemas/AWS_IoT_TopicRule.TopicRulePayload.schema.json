@@ -24,6 +24,10 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ErrorAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-erroraction",
+      "$ref" : "AWS_IoT_TopicRule.S3Action.schema.json"
+    },
     "RuleDisabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled",
       "type" : "boolean"

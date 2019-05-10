@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DocDB_DBInstanceAttributes.schema.json",
+  "title" : "DBInstanceAttributes",
+  "type" : "string",
+  "enum" : [ "Endpoint", "Port" ],
+  "javaType" : "aws.docdb.DBInstanceAttributes"
+}

@@ -35,6 +35,11 @@
         "$ref" : "AWS_CodePipeline_Pipeline.OutputArtifact.schema.json"
       }
     },
+    "Region" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn",
       "type" : "string",

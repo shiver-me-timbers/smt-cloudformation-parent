@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -19,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "ResourceType"
+    "ResourceType",
+    "Tags"
 })
 public class SpotFleetTagSpecification {
 
@@ -30,6 +35,13 @@ public class SpotFleetTagSpecification {
     @JsonProperty("ResourceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype")
     private CharSequence resourceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-tags")
+    private List<Tag> tags = new ArrayList<Tag>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-spotfleettagspecification-resourcetype
@@ -54,14 +66,37 @@ public class SpotFleetTagSpecification {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-tagspecifications.html#cfn-ec2-spotfleet-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public SpotFleetTagSpecification withTags(List<Tag> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("resourceType", resourceType).toString();
+        return new ToStringBuilder(this).append("resourceType", resourceType).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(resourceType).toHashCode();
+        return new HashCodeBuilder().append(resourceType).append(tags).toHashCode();
     }
 
     @Override
@@ -73,7 +108,7 @@ public class SpotFleetTagSpecification {
             return false;
         }
         SpotFleetTagSpecification rhs = ((SpotFleetTagSpecification) other);
-        return new EqualsBuilder().append(resourceType, rhs.resourceType).isEquals();
+        return new EqualsBuilder().append(resourceType, rhs.resourceType).append(tags, rhs.tags).isEquals();
     }
 
 }

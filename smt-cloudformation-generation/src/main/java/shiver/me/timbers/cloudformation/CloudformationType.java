@@ -10,6 +10,9 @@ public class CloudformationType {
     @JsonProperty("Properties")
     private CloudformationProperties properties;
 
+    @JsonProperty("PrimitiveType")
+    private String primitiveType;
+
     public String getDocumentation() {
         return documentation;
     }
@@ -24,5 +27,13 @@ public class CloudformationType {
 
     public void setProperties(CloudformationProperties properties) {
         this.properties = properties;
+    }
+
+    public String getPrimitiveType() {
+        return primitiveType;
+    }
+
+    public void setPrimitiveType(String primitiveType) {
+        this.primitiveType = primitiveType;
     }
 }

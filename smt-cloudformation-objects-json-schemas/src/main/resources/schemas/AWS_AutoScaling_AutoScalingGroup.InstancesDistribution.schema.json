@@ -1,0 +1,37 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AutoScaling_AutoScalingGroup.InstancesDistribution.schema.json",
+  "title" : "InstancesDistribution",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html",
+  "type" : "object",
+  "javaType" : "aws.autoscaling.InstancesDistribution",
+  "properties" : {
+    "OnDemandAllocationStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OnDemandBaseCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandbasecapacity",
+      "type" : "integer"
+    },
+    "OnDemandPercentageAboveBaseCapacity" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandpercentageabovebasecapacity",
+      "type" : "integer"
+    },
+    "SpotAllocationStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotallocationstrategy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SpotInstancePools" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotinstancepools",
+      "type" : "integer"
+    },
+    "SpotMaxPrice" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html#cfn-autoscaling-autoscalinggroup-instancesdistribution-spotmaxprice",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

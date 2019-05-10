@@ -1,9 +1,6 @@
 
 package aws.emr;
 
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -13,6 +10,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -50,7 +51,7 @@ public class Configuration {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations")
-    private Set<Configuration> configurations = new LinkedHashSet<Configuration>();
+    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification
@@ -103,7 +104,7 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public Set<Configuration> getConfigurations() {
+    public Set<EbsConfiguration> getConfigurations() {
         return configurations;
     }
 
@@ -112,11 +113,11 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<Configuration> configurations) {
+    public void setConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
     }
 
-    public Configuration withConfigurations(Set<Configuration> configurations) {
+    public Configuration withConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
         return this;
     }

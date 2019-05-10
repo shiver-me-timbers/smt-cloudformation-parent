@@ -22,6 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Description",
     "HealthCheckCustomConfig",
     "DnsConfig",
+    "NamespaceId",
     "HealthCheckConfig",
     "Name"
 })
@@ -52,6 +53,13 @@ public class Service {
     @JsonProperty("DnsConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html")
     private DnsConfig dnsConfig;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid
+     * 
+     */
+    @JsonProperty("NamespaceId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid")
+    private CharSequence namespaceId;
     /**
      * HealthCheckConfig
      * <p>
@@ -147,6 +155,29 @@ public class Service {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getNamespaceId() {
+        return namespaceId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid
+     * 
+     */
+    @JsonIgnore
+    public void setNamespaceId(CharSequence namespaceId) {
+        this.namespaceId = namespaceId;
+    }
+
+    public Service withNamespaceId(CharSequence namespaceId) {
+        this.namespaceId = namespaceId;
+        return this;
+    }
+
+    /**
      * HealthCheckConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html
@@ -198,12 +229,12 @@ public class Service {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("description", description).append("healthCheckCustomConfig", healthCheckCustomConfig).append("dnsConfig", dnsConfig).append("healthCheckConfig", healthCheckConfig).append("name", name).toString();
+        return new ToStringBuilder(this).append("description", description).append("healthCheckCustomConfig", healthCheckCustomConfig).append("dnsConfig", dnsConfig).append("namespaceId", namespaceId).append("healthCheckConfig", healthCheckConfig).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(healthCheckCustomConfig).append(name).append(description).append(dnsConfig).append(healthCheckConfig).toHashCode();
+        return new HashCodeBuilder().append(healthCheckCustomConfig).append(namespaceId).append(dnsConfig).append(name).append(description).append(healthCheckConfig).toHashCode();
     }
 
     @Override
@@ -215,7 +246,7 @@ public class Service {
             return false;
         }
         Service rhs = ((Service) other);
-        return new EqualsBuilder().append(healthCheckCustomConfig, rhs.healthCheckCustomConfig).append(name, rhs.name).append(description, rhs.description).append(dnsConfig, rhs.dnsConfig).append(healthCheckConfig, rhs.healthCheckConfig).isEquals();
+        return new EqualsBuilder().append(healthCheckCustomConfig, rhs.healthCheckCustomConfig).append(namespaceId, rhs.namespaceId).append(dnsConfig, rhs.dnsConfig).append(name, rhs.name).append(description, rhs.description).append(healthCheckConfig, rhs.healthCheckConfig).isEquals();
     }
 
 }

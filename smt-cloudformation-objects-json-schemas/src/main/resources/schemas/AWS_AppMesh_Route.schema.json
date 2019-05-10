@@ -1,0 +1,36 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.schema.json",
+  "title" : "Route",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.Route",
+  "properties" : {
+    "MeshName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VirtualRouterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-virtualroutername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RouteName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-routename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Spec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-spec",
+      "$ref" : "AWS_AppMesh_Route.RouteSpec.schema.json"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+      }
+    }
+  }
+}

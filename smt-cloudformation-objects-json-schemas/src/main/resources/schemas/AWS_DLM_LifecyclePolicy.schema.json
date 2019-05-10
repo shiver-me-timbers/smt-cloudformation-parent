@@ -1,0 +1,29 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DLM_LifecyclePolicy.schema.json",
+  "title" : "LifecyclePolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html",
+  "type" : "object",
+  "javaType" : "aws.dlm.LifecyclePolicy",
+  "properties" : {
+    "ExecutionRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-executionrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "State" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-state",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PolicyDetails" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-policydetails",
+      "$ref" : "AWS_DLM_LifecyclePolicy.PolicyDetails.schema.json"
+    }
+  }
+}

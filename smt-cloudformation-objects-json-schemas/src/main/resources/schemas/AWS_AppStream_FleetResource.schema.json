@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppStream_FleetResource.schema.json",
+  "title" : "FleetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appstream.FleetResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppStream::Fleet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppStream_Fleet.schema.json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.schema.json",
+  "title" : "ApplicationReferenceDataSource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationReferenceDataSource",
+  "properties" : {
+    "ApplicationName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-applicationname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReferenceDataSource" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource",
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.ReferenceDataSource.schema.json"
+    }
+  }
+}

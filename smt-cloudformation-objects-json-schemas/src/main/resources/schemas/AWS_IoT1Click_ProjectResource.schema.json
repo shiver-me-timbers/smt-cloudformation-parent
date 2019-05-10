@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoT1Click_ProjectResource.schema.json",
+  "title" : "ProjectResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iot1click.ProjectResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ProjectAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoT1Click::Project"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoT1Click_Project.schema.json"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CloudWatch_Alarm.Metric.schema.json",
+  "title" : "Metric",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html",
+  "type" : "object",
+  "javaType" : "aws.cloudwatch.Metric",
+  "properties" : {
+    "Dimensions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-dimensions",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json"
+      }
+    },
+    "MetricName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-metricname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Namespace" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-namespace",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

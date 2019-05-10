@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_SubscriptionDefinition.Subscription.schema.json",
+  "title" : "Subscription",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html",
+  "type" : "object",
+  "javaType" : "aws.greengrass.Subscription",
+  "properties" : {
+    "Target" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html#cfn-greengrass-subscriptiondefinition-subscription-target",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Id" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html#cfn-greengrass-subscriptiondefinition-subscription-id",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Source" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html#cfn-greengrass-subscriptiondefinition-subscription-source",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Subject" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscription.html#cfn-greengrass-subscriptiondefinition-subscription-subject",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

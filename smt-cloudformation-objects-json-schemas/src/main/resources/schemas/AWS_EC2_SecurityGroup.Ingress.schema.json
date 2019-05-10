@@ -30,6 +30,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "SourcePrefixListId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-securitygroup-ingress-sourceprefixlistid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "SourceSecurityGroupId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-sourcesecuritygroupid",
       "type" : "string",

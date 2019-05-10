@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ServiceDiscovery_HttpNamespaceResource.schema.json",
+  "title" : "HttpNamespaceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-httpnamespace.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.servicediscovery.HttpNamespaceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<HttpNamespaceAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ServiceDiscovery::HttpNamespace"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ServiceDiscovery_HttpNamespace.schema.json"
+    }
+  }
+}

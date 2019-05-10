@@ -1,17 +1,21 @@
 
 package aws.rds;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -37,8 +41,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DBSecurityGroups",
     "DBSnapshotIdentifier",
     "DBSubnetGroupName",
+    "DeleteAutomatedBackups",
+    "DeletionProtection",
     "Domain",
     "DomainIAMRoleName",
+    "EnableCloudwatchLogsExports",
+    "EnableIAMDatabaseAuthentication",
+    "EnablePerformanceInsights",
     "Engine",
     "EngineVersion",
     "Iops",
@@ -50,9 +59,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MonitoringRoleArn",
     "MultiAZ",
     "OptionGroupName",
+    "PerformanceInsightsKMSKeyId",
+    "PerformanceInsightsRetentionPeriod",
     "Port",
     "PreferredBackupWindow",
     "PreferredMaintenanceWindow",
+    "ProcessorFeatures",
+    "PromotionTier",
     "PubliclyAccessible",
     "SourceDBInstanceIdentifier",
     "SourceRegion",
@@ -60,6 +73,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StorageType",
     "Tags",
     "Timezone",
+    "UseDefaultProcessorFeatures",
     "VPCSecurityGroups"
 })
 public class DBInstance {
@@ -170,6 +184,20 @@ public class DBInstance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-dbsubnetgroupname")
     private CharSequence dBSubnetGroupName;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deleteautomatedbackups
+     * 
+     */
+    @JsonProperty("DeleteAutomatedBackups")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deleteautomatedbackups")
+    private Boolean deleteAutomatedBackups;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection
+     * 
+     */
+    @JsonProperty("DeletionProtection")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection")
+    private Boolean deletionProtection;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
      */
@@ -183,6 +211,28 @@ public class DBInstance {
     @JsonProperty("DomainIAMRoleName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domainiamrolename")
     private CharSequence domainIAMRoleName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonProperty("EnableCloudwatchLogsExports")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enablecloudwatchlogsexports")
+    private Set<CharSequence> enableCloudwatchLogsExports = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonProperty("EnableIAMDatabaseAuthentication")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableiamdatabaseauthentication")
+    private Boolean enableIAMDatabaseAuthentication;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights
+     * 
+     */
+    @JsonProperty("EnablePerformanceInsights")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights")
+    private Boolean enablePerformanceInsights;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-engine
      * 
@@ -261,6 +311,20 @@ public class DBInstance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-optiongroupname")
     private CharSequence optionGroupName;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightskmskeyid
+     * 
+     */
+    @JsonProperty("PerformanceInsightsKMSKeyId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightskmskeyid")
+    private CharSequence performanceInsightsKMSKeyId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightsretentionperiod
+     * 
+     */
+    @JsonProperty("PerformanceInsightsRetentionPeriod")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightsretentionperiod")
+    private Integer performanceInsightsRetentionPeriod;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
      */
@@ -281,6 +345,21 @@ public class DBInstance {
     @JsonProperty("PreferredMaintenanceWindow")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-preferredmaintenancewindow")
     private CharSequence preferredMaintenanceWindow;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures
+     * 
+     */
+    @JsonProperty("ProcessorFeatures")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures")
+    private Set<ProcessorFeature> processorFeatures = new LinkedHashSet<ProcessorFeature>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier
+     * 
+     */
+    @JsonProperty("PromotionTier")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier")
+    private Integer promotionTier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-publiclyaccessible
      * 
@@ -330,6 +409,13 @@ public class DBInstance {
     @JsonProperty("Timezone")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-timezone")
     private CharSequence timezone;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-usedefaultprocessorfeatures
+     * 
+     */
+    @JsonProperty("UseDefaultProcessorFeatures")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-usedefaultprocessorfeatures")
+    private Boolean useDefaultProcessorFeatures;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
@@ -684,6 +770,52 @@ public class DBInstance {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deleteautomatedbackups
+     * 
+     */
+    @JsonIgnore
+    public Boolean getDeleteAutomatedBackups() {
+        return deleteAutomatedBackups;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deleteautomatedbackups
+     * 
+     */
+    @JsonIgnore
+    public void setDeleteAutomatedBackups(Boolean deleteAutomatedBackups) {
+        this.deleteAutomatedBackups = deleteAutomatedBackups;
+    }
+
+    public DBInstance withDeleteAutomatedBackups(Boolean deleteAutomatedBackups) {
+        this.deleteAutomatedBackups = deleteAutomatedBackups;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public Boolean getDeletionProtection() {
+        return deletionProtection;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public void setDeletionProtection(Boolean deletionProtection) {
+        this.deletionProtection = deletionProtection;
+    }
+
+    public DBInstance withDeletionProtection(Boolean deletionProtection) {
+        this.deletionProtection = deletionProtection;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-domain
      * 
      */
@@ -726,6 +858,75 @@ public class DBInstance {
 
     public DBInstance withDomainIAMRoleName(CharSequence domainIAMRoleName) {
         this.domainIAMRoleName = domainIAMRoleName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public Set<CharSequence> getEnableCloudwatchLogsExports() {
+        return enableCloudwatchLogsExports;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public void setEnableCloudwatchLogsExports(Set<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+    }
+
+    public DBInstance withEnableCloudwatchLogsExports(Set<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonIgnore
+    public Boolean getEnableIAMDatabaseAuthentication() {
+        return enableIAMDatabaseAuthentication;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonIgnore
+    public void setEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+        this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
+    }
+
+    public DBInstance withEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+        this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights
+     * 
+     */
+    @JsonIgnore
+    public Boolean getEnablePerformanceInsights() {
+        return enablePerformanceInsights;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-enableperformanceinsights
+     * 
+     */
+    @JsonIgnore
+    public void setEnablePerformanceInsights(Boolean enablePerformanceInsights) {
+        this.enablePerformanceInsights = enablePerformanceInsights;
+    }
+
+    public DBInstance withEnablePerformanceInsights(Boolean enablePerformanceInsights) {
+        this.enablePerformanceInsights = enablePerformanceInsights;
         return this;
     }
 
@@ -983,6 +1184,52 @@ public class DBInstance {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightskmskeyid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPerformanceInsightsKMSKeyId() {
+        return performanceInsightsKMSKeyId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightskmskeyid
+     * 
+     */
+    @JsonIgnore
+    public void setPerformanceInsightsKMSKeyId(CharSequence performanceInsightsKMSKeyId) {
+        this.performanceInsightsKMSKeyId = performanceInsightsKMSKeyId;
+    }
+
+    public DBInstance withPerformanceInsightsKMSKeyId(CharSequence performanceInsightsKMSKeyId) {
+        this.performanceInsightsKMSKeyId = performanceInsightsKMSKeyId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightsretentionperiod
+     * 
+     */
+    @JsonIgnore
+    public Integer getPerformanceInsightsRetentionPeriod() {
+        return performanceInsightsRetentionPeriod;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-performanceinsightsretentionperiod
+     * 
+     */
+    @JsonIgnore
+    public void setPerformanceInsightsRetentionPeriod(Integer performanceInsightsRetentionPeriod) {
+        this.performanceInsightsRetentionPeriod = performanceInsightsRetentionPeriod;
+    }
+
+    public DBInstance withPerformanceInsightsRetentionPeriod(Integer performanceInsightsRetentionPeriod) {
+        this.performanceInsightsRetentionPeriod = performanceInsightsRetentionPeriod;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-port
      * 
      */
@@ -1048,6 +1295,52 @@ public class DBInstance {
 
     public DBInstance withPreferredMaintenanceWindow(CharSequence preferredMaintenanceWindow) {
         this.preferredMaintenanceWindow = preferredMaintenanceWindow;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures
+     * 
+     */
+    @JsonIgnore
+    public Set<ProcessorFeature> getProcessorFeatures() {
+        return processorFeatures;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures
+     * 
+     */
+    @JsonIgnore
+    public void setProcessorFeatures(Set<ProcessorFeature> processorFeatures) {
+        this.processorFeatures = processorFeatures;
+    }
+
+    public DBInstance withProcessorFeatures(Set<ProcessorFeature> processorFeatures) {
+        this.processorFeatures = processorFeatures;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier
+     * 
+     */
+    @JsonIgnore
+    public Integer getPromotionTier() {
+        return promotionTier;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier
+     * 
+     */
+    @JsonIgnore
+    public void setPromotionTier(Integer promotionTier) {
+        this.promotionTier = promotionTier;
+    }
+
+    public DBInstance withPromotionTier(Integer promotionTier) {
+        this.promotionTier = promotionTier;
         return this;
     }
 
@@ -1213,6 +1506,29 @@ public class DBInstance {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-usedefaultprocessorfeatures
+     * 
+     */
+    @JsonIgnore
+    public Boolean getUseDefaultProcessorFeatures() {
+        return useDefaultProcessorFeatures;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-usedefaultprocessorfeatures
+     * 
+     */
+    @JsonIgnore
+    public void setUseDefaultProcessorFeatures(Boolean useDefaultProcessorFeatures) {
+        this.useDefaultProcessorFeatures = useDefaultProcessorFeatures;
+    }
+
+    public DBInstance withUseDefaultProcessorFeatures(Boolean useDefaultProcessorFeatures) {
+        this.useDefaultProcessorFeatures = useDefaultProcessorFeatures;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-vpcsecuritygroups
      * 
      */
@@ -1237,12 +1553,12 @@ public class DBInstance {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("allocatedStorage", allocatedStorage).append("allowMajorVersionUpgrade", allowMajorVersionUpgrade).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("availabilityZone", availabilityZone).append("backupRetentionPeriod", backupRetentionPeriod).append("characterSetName", characterSetName).append("copyTagsToSnapshot", copyTagsToSnapshot).append("dBClusterIdentifier", dBClusterIdentifier).append("dBInstanceClass", dBInstanceClass).append("dBInstanceIdentifier", dBInstanceIdentifier).append("dBName", dBName).append("dBParameterGroupName", dBParameterGroupName).append("dBSecurityGroups", dBSecurityGroups).append("dBSnapshotIdentifier", dBSnapshotIdentifier).append("dBSubnetGroupName", dBSubnetGroupName).append("domain", domain).append("domainIAMRoleName", domainIAMRoleName).append("engine", engine).append("engineVersion", engineVersion).append("iops", iops).append("kmsKeyId", kmsKeyId).append("licenseModel", licenseModel).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("monitoringInterval", monitoringInterval).append("monitoringRoleArn", monitoringRoleArn).append("multiAZ", multiAZ).append("optionGroupName", optionGroupName).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("publiclyAccessible", publiclyAccessible).append("sourceDBInstanceIdentifier", sourceDBInstanceIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("storageType", storageType).append("tags", tags).append("timezone", timezone).append("vPCSecurityGroups", vPCSecurityGroups).toString();
+        return new ToStringBuilder(this).append("allocatedStorage", allocatedStorage).append("allowMajorVersionUpgrade", allowMajorVersionUpgrade).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("availabilityZone", availabilityZone).append("backupRetentionPeriod", backupRetentionPeriod).append("characterSetName", characterSetName).append("copyTagsToSnapshot", copyTagsToSnapshot).append("dBClusterIdentifier", dBClusterIdentifier).append("dBInstanceClass", dBInstanceClass).append("dBInstanceIdentifier", dBInstanceIdentifier).append("dBName", dBName).append("dBParameterGroupName", dBParameterGroupName).append("dBSecurityGroups", dBSecurityGroups).append("dBSnapshotIdentifier", dBSnapshotIdentifier).append("dBSubnetGroupName", dBSubnetGroupName).append("deleteAutomatedBackups", deleteAutomatedBackups).append("deletionProtection", deletionProtection).append("domain", domain).append("domainIAMRoleName", domainIAMRoleName).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("enablePerformanceInsights", enablePerformanceInsights).append("engine", engine).append("engineVersion", engineVersion).append("iops", iops).append("kmsKeyId", kmsKeyId).append("licenseModel", licenseModel).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("monitoringInterval", monitoringInterval).append("monitoringRoleArn", monitoringRoleArn).append("multiAZ", multiAZ).append("optionGroupName", optionGroupName).append("performanceInsightsKMSKeyId", performanceInsightsKMSKeyId).append("performanceInsightsRetentionPeriod", performanceInsightsRetentionPeriod).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("processorFeatures", processorFeatures).append("promotionTier", promotionTier).append("publiclyAccessible", publiclyAccessible).append("sourceDBInstanceIdentifier", sourceDBInstanceIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("storageType", storageType).append("tags", tags).append("timezone", timezone).append("useDefaultProcessorFeatures", useDefaultProcessorFeatures).append("vPCSecurityGroups", vPCSecurityGroups).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(allocatedStorage).append(timezone).append(availabilityZone).append(preferredBackupWindow).append(dBSubnetGroupName).append(dBInstanceIdentifier).append(dBSecurityGroups).append(engine).append(sourceDBInstanceIdentifier).append(iops).append(publiclyAccessible).append(vPCSecurityGroups).append(dBSnapshotIdentifier).append(optionGroupName).append(masterUserPassword).append(engineVersion).append(allowMajorVersionUpgrade).append(masterUsername).append(dBName).append(multiAZ).append(characterSetName).append(monitoringRoleArn).append(dBInstanceClass).append(storageEncrypted).append(tags).append(port).append(dBParameterGroupName).append(licenseModel).append(domain).append(monitoringInterval).append(preferredMaintenanceWindow).append(sourceRegion).append(backupRetentionPeriod).append(storageType).append(domainIAMRoleName).append(kmsKeyId).append(dBClusterIdentifier).append(autoMinorVersionUpgrade).append(copyTagsToSnapshot).toHashCode();
+        return new HashCodeBuilder().append(allocatedStorage).append(enablePerformanceInsights).append(availabilityZone).append(deleteAutomatedBackups).append(dBSubnetGroupName).append(dBSecurityGroups).append(iops).append(performanceInsightsKMSKeyId).append(vPCSecurityGroups).append(dBSnapshotIdentifier).append(optionGroupName).append(performanceInsightsRetentionPeriod).append(engineVersion).append(masterUsername).append(dBInstanceClass).append(processorFeatures).append(tags).append(enableIAMDatabaseAuthentication).append(port).append(dBParameterGroupName).append(domain).append(monitoringInterval).append(backupRetentionPeriod).append(useDefaultProcessorFeatures).append(domainIAMRoleName).append(promotionTier).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).append(timezone).append(preferredBackupWindow).append(deletionProtection).append(dBInstanceIdentifier).append(engine).append(sourceDBInstanceIdentifier).append(publiclyAccessible).append(masterUserPassword).append(allowMajorVersionUpgrade).append(dBName).append(multiAZ).append(characterSetName).append(monitoringRoleArn).append(storageEncrypted).append(licenseModel).append(preferredMaintenanceWindow).append(sourceRegion).append(storageType).append(autoMinorVersionUpgrade).append(copyTagsToSnapshot).toHashCode();
     }
 
     @Override
@@ -1254,7 +1570,7 @@ public class DBInstance {
             return false;
         }
         DBInstance rhs = ((DBInstance) other);
-        return new EqualsBuilder().append(allocatedStorage, rhs.allocatedStorage).append(timezone, rhs.timezone).append(availabilityZone, rhs.availabilityZone).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(dBInstanceIdentifier, rhs.dBInstanceIdentifier).append(dBSecurityGroups, rhs.dBSecurityGroups).append(engine, rhs.engine).append(sourceDBInstanceIdentifier, rhs.sourceDBInstanceIdentifier).append(iops, rhs.iops).append(publiclyAccessible, rhs.publiclyAccessible).append(vPCSecurityGroups, rhs.vPCSecurityGroups).append(dBSnapshotIdentifier, rhs.dBSnapshotIdentifier).append(optionGroupName, rhs.optionGroupName).append(masterUserPassword, rhs.masterUserPassword).append(engineVersion, rhs.engineVersion).append(allowMajorVersionUpgrade, rhs.allowMajorVersionUpgrade).append(masterUsername, rhs.masterUsername).append(dBName, rhs.dBName).append(multiAZ, rhs.multiAZ).append(characterSetName, rhs.characterSetName).append(monitoringRoleArn, rhs.monitoringRoleArn).append(dBInstanceClass, rhs.dBInstanceClass).append(storageEncrypted, rhs.storageEncrypted).append(tags, rhs.tags).append(port, rhs.port).append(dBParameterGroupName, rhs.dBParameterGroupName).append(licenseModel, rhs.licenseModel).append(domain, rhs.domain).append(monitoringInterval, rhs.monitoringInterval).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(storageType, rhs.storageType).append(domainIAMRoleName, rhs.domainIAMRoleName).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(copyTagsToSnapshot, rhs.copyTagsToSnapshot).isEquals();
+        return new EqualsBuilder().append(allocatedStorage, rhs.allocatedStorage).append(enablePerformanceInsights, rhs.enablePerformanceInsights).append(availabilityZone, rhs.availabilityZone).append(deleteAutomatedBackups, rhs.deleteAutomatedBackups).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(dBSecurityGroups, rhs.dBSecurityGroups).append(iops, rhs.iops).append(performanceInsightsKMSKeyId, rhs.performanceInsightsKMSKeyId).append(vPCSecurityGroups, rhs.vPCSecurityGroups).append(dBSnapshotIdentifier, rhs.dBSnapshotIdentifier).append(optionGroupName, rhs.optionGroupName).append(performanceInsightsRetentionPeriod, rhs.performanceInsightsRetentionPeriod).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(dBInstanceClass, rhs.dBInstanceClass).append(processorFeatures, rhs.processorFeatures).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(port, rhs.port).append(dBParameterGroupName, rhs.dBParameterGroupName).append(domain, rhs.domain).append(monitoringInterval, rhs.monitoringInterval).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(useDefaultProcessorFeatures, rhs.useDefaultProcessorFeatures).append(domainIAMRoleName, rhs.domainIAMRoleName).append(promotionTier, rhs.promotionTier).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).append(timezone, rhs.timezone).append(preferredBackupWindow, rhs.preferredBackupWindow).append(deletionProtection, rhs.deletionProtection).append(dBInstanceIdentifier, rhs.dBInstanceIdentifier).append(engine, rhs.engine).append(sourceDBInstanceIdentifier, rhs.sourceDBInstanceIdentifier).append(publiclyAccessible, rhs.publiclyAccessible).append(masterUserPassword, rhs.masterUserPassword).append(allowMajorVersionUpgrade, rhs.allowMajorVersionUpgrade).append(dBName, rhs.dBName).append(multiAZ, rhs.multiAZ).append(characterSetName, rhs.characterSetName).append(monitoringRoleArn, rhs.monitoringRoleArn).append(storageEncrypted, rhs.storageEncrypted).append(licenseModel, rhs.licenseModel).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(storageType, rhs.storageType).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(copyTagsToSnapshot, rhs.copyTagsToSnapshot).isEquals();
     }
 
 }

@@ -1,0 +1,32 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_WorkSpaces_Workspace.WorkspaceProperties.schema.json",
+  "title" : "WorkspaceProperties",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html",
+  "type" : "object",
+  "javaType" : "aws.workspaces.WorkspaceProperties",
+  "properties" : {
+    "ComputeTypeName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-computetypename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RootVolumeSizeGib" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-rootvolumesizegib",
+      "type" : "integer"
+    },
+    "RunningMode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-runningmode",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RunningModeAutoStopTimeoutInMinutes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-runningmodeautostoptimeoutinminutes",
+      "type" : "integer"
+    },
+    "UserVolumeSizeGib" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-uservolumesizegib",
+      "type" : "integer"
+    }
+  }
+}

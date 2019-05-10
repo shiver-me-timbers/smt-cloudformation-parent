@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53Resolver_ResolverEndpointResource.schema.json",
+  "title" : "ResolverEndpointResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.route53resolver.ResolverEndpointResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ResolverEndpointAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53Resolver::ResolverEndpoint"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Route53Resolver_ResolverEndpoint.schema.json"
+    }
+  }
+}

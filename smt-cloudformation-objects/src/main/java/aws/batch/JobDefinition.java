@@ -21,6 +21,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Type",
     "Parameters",
+    "NodeProperties",
     "Timeout",
     "ContainerProperties",
     "JobDefinitionName",
@@ -42,6 +43,15 @@ public class JobDefinition {
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters")
     private Object parameters;
+    /**
+     * NodeProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
+     * 
+     */
+    @JsonProperty("NodeProperties")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html")
+    private NodeProperties nodeProperties;
     /**
      * Timeout
      * <p>
@@ -120,6 +130,33 @@ public class JobDefinition {
 
     public JobDefinition withParameters(Object parameters) {
         this.parameters = parameters;
+        return this;
+    }
+
+    /**
+     * NodeProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
+     * 
+     */
+    @JsonIgnore
+    public NodeProperties getNodeProperties() {
+        return nodeProperties;
+    }
+
+    /**
+     * NodeProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
+     * 
+     */
+    @JsonIgnore
+    public void setNodeProperties(NodeProperties nodeProperties) {
+        this.nodeProperties = nodeProperties;
+    }
+
+    public JobDefinition withNodeProperties(NodeProperties nodeProperties) {
+        this.nodeProperties = nodeProperties;
         return this;
     }
 
@@ -229,12 +266,12 @@ public class JobDefinition {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("parameters", parameters).append("timeout", timeout).append("containerProperties", containerProperties).append("jobDefinitionName", jobDefinitionName).append("retryStrategy", retryStrategy).toString();
+        return new ToStringBuilder(this).append("type", type).append("parameters", parameters).append("nodeProperties", nodeProperties).append("timeout", timeout).append("containerProperties", containerProperties).append("jobDefinitionName", jobDefinitionName).append("retryStrategy", retryStrategy).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(containerProperties).append(type).append(jobDefinitionName).append(retryStrategy).append(parameters).append(timeout).toHashCode();
+        return new HashCodeBuilder().append(containerProperties).append(type).append(jobDefinitionName).append(retryStrategy).append(parameters).append(timeout).append(nodeProperties).toHashCode();
     }
 
     @Override
@@ -246,7 +283,7 @@ public class JobDefinition {
             return false;
         }
         JobDefinition rhs = ((JobDefinition) other);
-        return new EqualsBuilder().append(containerProperties, rhs.containerProperties).append(type, rhs.type).append(jobDefinitionName, rhs.jobDefinitionName).append(retryStrategy, rhs.retryStrategy).append(parameters, rhs.parameters).append(timeout, rhs.timeout).isEquals();
+        return new EqualsBuilder().append(containerProperties, rhs.containerProperties).append(type, rhs.type).append(jobDefinitionName, rhs.jobDefinitionName).append(retryStrategy, rhs.retryStrategy).append(parameters, rhs.parameters).append(timeout, rhs.timeout).append(nodeProperties, rhs.nodeProperties).isEquals();
     }
 
 }

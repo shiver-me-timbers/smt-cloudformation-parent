@@ -30,7 +30,7 @@
     },
     "CreditSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-creditspecification",
-      "$ref" : "AWS_EC2_LaunchTemplate.CreditSpecification.schema.json"
+      "$ref" : "AWS_EC2_Instance.CreditSpecification.schema.json"
     },
     "DisableApiTermination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination",
@@ -45,7 +45,15 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_Instance.ElasticGpuSpecification.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.ElasticGpuSpecification.schema.json"
+      }
+    },
+    "ElasticInferenceAccelerators" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_EC2_Instance.ElasticInferenceAccelerator.schema.json"
       }
     },
     "HostId" : {
@@ -97,6 +105,14 @@
     "LaunchTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-launchtemplate",
       "$ref" : "AWS_EC2_SpotFleet.FleetLaunchTemplateSpecification.schema.json"
+    },
+    "LicenseSpecifications" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications",
+      "type" : "array",
+      "uniqueItems" : true,
+      "items" : {
+        "$ref" : "AWS_EC2_LaunchTemplate.LicenseSpecification.schema.json"
+      }
     },
     "Monitoring" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring",

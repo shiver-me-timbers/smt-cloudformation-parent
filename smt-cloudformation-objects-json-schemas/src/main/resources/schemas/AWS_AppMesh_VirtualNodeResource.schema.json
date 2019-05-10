@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNodeResource.schema.json",
+  "title" : "VirtualNodeResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appmesh.VirtualNodeResource",
+  "javaInterfaces" : [ "aws.HasAttributes<VirtualNodeAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppMesh::VirtualNode"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppMesh_VirtualNode.schema.json"
+    }
+  }
+}

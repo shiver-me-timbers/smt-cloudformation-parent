@@ -20,6 +20,10 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "ElasticsearchSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-elasticsearchsettings",
+      "$ref" : "AWS_DMS_Endpoint.ElasticsearchSettings.schema.json"
+    },
     "S3Settings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-s3settings",
       "$ref" : "AWS_DMS_Endpoint.S3Settings.schema.json"
@@ -32,6 +36,10 @@
     "DynamoDbSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-dynamodbsettings",
       "$ref" : "AWS_DMS_Endpoint.DynamoDbSettings.schema.json"
+    },
+    "KinesisSettings" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kinesissettings",
+      "$ref" : "AWS_DMS_Endpoint.KinesisSettings.schema.json"
     },
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username",

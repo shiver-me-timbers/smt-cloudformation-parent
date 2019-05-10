@@ -26,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "GroupId",
     "GroupName",
     "IpProtocol",
+    "SourcePrefixListId",
     "SourceSecurityGroupId",
     "SourceSecurityGroupName",
     "SourceSecurityGroupOwnerId",
@@ -82,6 +83,13 @@ public class SecurityGroupIngress {
     @JsonProperty("IpProtocol")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-ipprotocol")
     private CharSequence ipProtocol;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-securitygroupingress-sourceprefixlistid
+     * 
+     */
+    @JsonProperty("SourcePrefixListId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-securitygroupingress-sourceprefixlistid")
+    private CharSequence sourcePrefixListId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupid
      * 
@@ -273,6 +281,29 @@ public class SecurityGroupIngress {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-securitygroupingress-sourceprefixlistid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSourcePrefixListId() {
+        return sourcePrefixListId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-securitygroupingress-sourceprefixlistid
+     * 
+     */
+    @JsonIgnore
+    public void setSourcePrefixListId(CharSequence sourcePrefixListId) {
+        this.sourcePrefixListId = sourcePrefixListId;
+    }
+
+    public SecurityGroupIngress withSourcePrefixListId(CharSequence sourcePrefixListId) {
+        this.sourcePrefixListId = sourcePrefixListId;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-ingress.html#cfn-ec2-security-group-ingress-sourcesecuritygroupid
      * 
      */
@@ -366,12 +397,12 @@ public class SecurityGroupIngress {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cidrIp", cidrIp).append("cidrIpv6", cidrIpv6).append("description", description).append("fromPort", fromPort).append("groupId", groupId).append("groupName", groupName).append("ipProtocol", ipProtocol).append("sourceSecurityGroupId", sourceSecurityGroupId).append("sourceSecurityGroupName", sourceSecurityGroupName).append("sourceSecurityGroupOwnerId", sourceSecurityGroupOwnerId).append("toPort", toPort).toString();
+        return new ToStringBuilder(this).append("cidrIp", cidrIp).append("cidrIpv6", cidrIpv6).append("description", description).append("fromPort", fromPort).append("groupId", groupId).append("groupName", groupName).append("ipProtocol", ipProtocol).append("sourcePrefixListId", sourcePrefixListId).append("sourceSecurityGroupId", sourceSecurityGroupId).append("sourceSecurityGroupName", sourceSecurityGroupName).append("sourceSecurityGroupOwnerId", sourceSecurityGroupOwnerId).append("toPort", toPort).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(sourceSecurityGroupName).append(groupName).append(fromPort).append(groupId).append(toPort).append(description).append(cidrIpv6).append(ipProtocol).append(sourceSecurityGroupOwnerId).append(cidrIp).append(sourceSecurityGroupId).toHashCode();
+        return new HashCodeBuilder().append(fromPort).append(groupId).append(toPort).append(description).append(cidrIpv6).append(ipProtocol).append(sourceSecurityGroupOwnerId).append(sourceSecurityGroupId).append(sourceSecurityGroupName).append(groupName).append(sourcePrefixListId).append(cidrIp).toHashCode();
     }
 
     @Override
@@ -383,7 +414,7 @@ public class SecurityGroupIngress {
             return false;
         }
         SecurityGroupIngress rhs = ((SecurityGroupIngress) other);
-        return new EqualsBuilder().append(sourceSecurityGroupName, rhs.sourceSecurityGroupName).append(groupName, rhs.groupName).append(fromPort, rhs.fromPort).append(groupId, rhs.groupId).append(toPort, rhs.toPort).append(description, rhs.description).append(cidrIpv6, rhs.cidrIpv6).append(ipProtocol, rhs.ipProtocol).append(sourceSecurityGroupOwnerId, rhs.sourceSecurityGroupOwnerId).append(cidrIp, rhs.cidrIp).append(sourceSecurityGroupId, rhs.sourceSecurityGroupId).isEquals();
+        return new EqualsBuilder().append(fromPort, rhs.fromPort).append(groupId, rhs.groupId).append(toPort, rhs.toPort).append(description, rhs.description).append(cidrIpv6, rhs.cidrIpv6).append(ipProtocol, rhs.ipProtocol).append(sourceSecurityGroupOwnerId, rhs.sourceSecurityGroupOwnerId).append(sourceSecurityGroupId, rhs.sourceSecurityGroupId).append(sourceSecurityGroupName, rhs.sourceSecurityGroupName).append(groupName, rhs.groupName).append(sourcePrefixListId, rhs.sourcePrefixListId).append(cidrIp, rhs.cidrIp).isEquals();
     }
 
 }

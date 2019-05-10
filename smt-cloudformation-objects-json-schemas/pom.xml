@@ -21,7 +21,7 @@
     <parent>
         <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
         <artifactId>smt-cloudformation-parent</artifactId>
-        <version>1.2-SNAPSHOT</version>
+        <version>3.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>smt-cloudformation-objects-json-schemas</artifactId>
@@ -33,9 +33,9 @@
     <profiles>
         <profile>
             <id>generate-json-schemas</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
             <build>
                 <plugins>
                     <plugin>
@@ -64,7 +64,7 @@
                 <dependency>
                     <groupId>com.github.shiver-me-timbers.aws.cloudformation</groupId>
                     <artifactId>smt-cloudformation-generation</artifactId>
-                    <version>1.2-SNAPSHOT</version>
+                    <version>3.0.0-SNAPSHOT</version>
                 </dependency>
             </dependencies>
         </profile>

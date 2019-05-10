@@ -1,0 +1,22 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGatewayV2_DomainName.schema.json",
+  "title" : "DomainName",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html",
+  "type" : "object",
+  "javaType" : "aws.apigatewayv2.DomainName",
+  "properties" : {
+    "DomainName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "DomainNameConfigurations" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainnameconfigurations",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json"
+      }
+    }
+  }
+}

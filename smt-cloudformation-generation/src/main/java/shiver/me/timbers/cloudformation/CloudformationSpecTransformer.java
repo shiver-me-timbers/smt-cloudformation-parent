@@ -9,6 +9,7 @@ import shiver.me.timbers.cloudformation.transformers.ListTransformer;
 import shiver.me.timbers.cloudformation.transformers.MapTransformer;
 import shiver.me.timbers.cloudformation.transformers.MetaDataApplier;
 import shiver.me.timbers.cloudformation.transformers.MetaDataTransformer;
+import shiver.me.timbers.cloudformation.transformers.PrimitiveTypeResourceTransformer;
 import shiver.me.timbers.cloudformation.transformers.PrimitiveTypeTransformer;
 import shiver.me.timbers.cloudformation.transformers.PropertiesTransformer;
 import shiver.me.timbers.cloudformation.transformers.ResourceTransformer;
@@ -51,7 +52,8 @@ public class CloudformationSpecTransformer {
                 new MapTransformer()
             )),
             new ResourceTransformer(fileNames, javaTypes, metaDataApplier),
-            new AttributesTransformer(fileNames, javaTypes, metaDataApplier)
+            new AttributesTransformer(fileNames, javaTypes, metaDataApplier),
+            new PrimitiveTypeResourceTransformer(primitiveTypeConverter)
         )));
     }
 

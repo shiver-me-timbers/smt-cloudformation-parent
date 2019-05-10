@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DocDB_DBClusterResource.schema.json",
+  "title" : "DBClusterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.docdb.DBClusterResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DBClusterAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DocDB::DBCluster"
+    },
+    "Properties" : {
+      "$ref" : "AWS_DocDB_DBCluster.schema.json"
+    }
+  }
+}

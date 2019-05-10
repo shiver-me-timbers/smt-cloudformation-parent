@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGatewayV2_IntegrationResource.schema.json",
+  "title" : "IntegrationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.apigatewayv2.IntegrationResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::ApiGatewayV2::Integration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_ApiGatewayV2_Integration.schema.json"
+    }
+  }
+}

@@ -15,12 +15,14 @@ public abstract class AbstractPropertiesTransformer extends AbstractTypeTransfor
     protected void transform(String resourceName, CloudformationType type, Map<String, Object> schema) {
         final Map<String, Map<String, Object>> properties = (Map) schema
             .getOrDefault(PROPERTIES, new LinkedHashMap<String, Map<String, Object>>());
-        type.getProperties().forEach((propertyName, cloudformationProperty) -> {
-            final Map<String, Object> property = properties.getOrDefault(propertyName, new LinkedHashMap<>());
-            transform(resourceName, type, propertyName, cloudformationProperty, property);
-            properties.put(propertyName, property);
-        });
-        schema.put(PROPERTIES, properties);
+        if (type.getProperties() != null) {
+            type.getProperties().forEach((propertyName, cloudformationProperty) -> {
+                final Map<String, Object> property = properties.getOrDefault(propertyName, new LinkedHashMap<>());
+                transform(resourceName, type, propertyName, cloudformationProperty, property);
+                properties.put(propertyName, property);
+            });
+            schema.put(PROPERTIES, properties);
+        }
     }
 
     protected abstract void transform(

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateConfigRequest.schema.json",
+  "title" : "FleetLaunchTemplateConfigRequest",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.FleetLaunchTemplateConfigRequest",
+  "properties" : {
+    "LaunchTemplateSpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-launchtemplatespecification",
+      "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateSpecificationRequest.schema.json"
+    },
+    "Overrides" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateOverridesRequest.schema.json"
+      }
+    }
+  }
+}

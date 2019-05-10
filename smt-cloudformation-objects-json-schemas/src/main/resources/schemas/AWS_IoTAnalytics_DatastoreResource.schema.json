@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_DatastoreResource.schema.json",
+  "title" : "DatastoreResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotanalytics.DatastoreResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTAnalytics::Datastore"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTAnalytics_Datastore.schema.json"
+    }
+  }
+}

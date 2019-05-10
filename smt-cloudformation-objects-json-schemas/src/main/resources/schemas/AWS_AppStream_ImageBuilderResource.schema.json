@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppStream_ImageBuilderResource.schema.json",
+  "title" : "ImageBuilderResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appstream.ImageBuilderResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ImageBuilderAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppStream::ImageBuilder"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppStream_ImageBuilder.schema.json"
+    }
+  }
+}

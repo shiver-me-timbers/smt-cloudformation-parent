@@ -1,8 +1,6 @@
 
 package aws.codebuild;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -24,7 +25,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Type",
     "EnvironmentVariables",
     "PrivilegedMode",
+    "ImagePullCredentialsType",
     "Image",
+    "RegistryCredential",
     "ComputeType",
     "Certificate"
 })
@@ -52,12 +55,28 @@ public class Environment {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode")
     private Boolean privilegedMode;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-imagepullcredentialstype
+     * 
+     */
+    @JsonProperty("ImagePullCredentialsType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-imagepullcredentialstype")
+    private CharSequence imagePullCredentialsType;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image
      * 
      */
     @JsonProperty("Image")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image")
     private CharSequence image;
+    /**
+     * RegistryCredential
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-registrycredential.html
+     * 
+     */
+    @JsonProperty("RegistryCredential")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-registrycredential.html")
+    private RegistryCredential registryCredential;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype
      * 
@@ -143,6 +162,29 @@ public class Environment {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-imagepullcredentialstype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getImagePullCredentialsType() {
+        return imagePullCredentialsType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-imagepullcredentialstype
+     * 
+     */
+    @JsonIgnore
+    public void setImagePullCredentialsType(CharSequence imagePullCredentialsType) {
+        this.imagePullCredentialsType = imagePullCredentialsType;
+    }
+
+    public Environment withImagePullCredentialsType(CharSequence imagePullCredentialsType) {
+        this.imagePullCredentialsType = imagePullCredentialsType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-image
      * 
      */
@@ -162,6 +204,33 @@ public class Environment {
 
     public Environment withImage(CharSequence image) {
         this.image = image;
+        return this;
+    }
+
+    /**
+     * RegistryCredential
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-registrycredential.html
+     * 
+     */
+    @JsonIgnore
+    public RegistryCredential getRegistryCredential() {
+        return registryCredential;
+    }
+
+    /**
+     * RegistryCredential
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-registrycredential.html
+     * 
+     */
+    @JsonIgnore
+    public void setRegistryCredential(RegistryCredential registryCredential) {
+        this.registryCredential = registryCredential;
+    }
+
+    public Environment withRegistryCredential(RegistryCredential registryCredential) {
+        this.registryCredential = registryCredential;
         return this;
     }
 
@@ -213,12 +282,12 @@ public class Environment {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("environmentVariables", environmentVariables).append("privilegedMode", privilegedMode).append("image", image).append("computeType", computeType).append("certificate", certificate).toString();
+        return new ToStringBuilder(this).append("type", type).append("environmentVariables", environmentVariables).append("privilegedMode", privilegedMode).append("imagePullCredentialsType", imagePullCredentialsType).append("image", image).append("registryCredential", registryCredential).append("computeType", computeType).append("certificate", certificate).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(image).append(computeType).append(environmentVariables).append(privilegedMode).append(certificate).append(type).toHashCode();
+        return new HashCodeBuilder().append(registryCredential).append(image).append(computeType).append(imagePullCredentialsType).append(environmentVariables).append(privilegedMode).append(certificate).append(type).toHashCode();
     }
 
     @Override
@@ -230,7 +299,7 @@ public class Environment {
             return false;
         }
         Environment rhs = ((Environment) other);
-        return new EqualsBuilder().append(image, rhs.image).append(computeType, rhs.computeType).append(environmentVariables, rhs.environmentVariables).append(privilegedMode, rhs.privilegedMode).append(certificate, rhs.certificate).append(type, rhs.type).isEquals();
+        return new EqualsBuilder().append(registryCredential, rhs.registryCredential).append(image, rhs.image).append(computeType, rhs.computeType).append(imagePullCredentialsType, rhs.imagePullCredentialsType).append(environmentVariables, rhs.environmentVariables).append(privilegedMode, rhs.privilegedMode).append(certificate, rhs.certificate).append(type, rhs.type).isEquals();
     }
 
 }

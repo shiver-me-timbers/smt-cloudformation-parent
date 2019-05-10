@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RoboMaker_FleetResource.schema.json",
+  "title" : "FleetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-fleet.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.robomaker.FleetResource",
+  "javaInterfaces" : [ "aws.HasAttributes<FleetAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RoboMaker::Fleet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_RoboMaker_Fleet.schema.json"
+    }
+  }
+}

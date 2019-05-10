@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_ChannelResource.schema.json",
+  "title" : "ChannelResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.iotanalytics.ChannelResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::IoTAnalytics::Channel"
+    },
+    "Properties" : {
+      "$ref" : "AWS_IoTAnalytics_Channel.schema.json"
+    }
+  }
+}

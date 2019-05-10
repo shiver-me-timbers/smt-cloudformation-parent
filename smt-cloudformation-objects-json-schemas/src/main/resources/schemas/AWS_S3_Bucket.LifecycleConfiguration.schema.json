@@ -11,7 +11,7 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.ReplicationRule.schema.json"
+        "$ref" : "AWS_S3_Bucket.CorsRule.schema.json"
       }
     }
   }

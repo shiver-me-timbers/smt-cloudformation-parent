@@ -3,6 +3,6 @@
   "$id" : "AWS_AmazonMQ_BrokerAttributes.schema.json",
   "title" : "BrokerAttributes",
   "type" : "string",
-  "enum" : [ "BrokerId" ],
+  "enum" : [ "IpAddresses", "OpenWireEndpoints", "ConfigurationRevision", "StompEndpoints", "MqttEndpoints", "AmqpEndpoints", "Arn", "ConfigurationId", "WssEndpoints" ],
   "javaType" : "aws.amazonmq.BrokerAttributes"
 }

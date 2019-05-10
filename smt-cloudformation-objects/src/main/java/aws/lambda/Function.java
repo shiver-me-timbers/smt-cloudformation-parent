@@ -1,17 +1,21 @@
 
 package aws.lambda;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -29,6 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "FunctionName",
     "Handler",
     "KmsKeyArn",
+    "Layers",
     "MemorySize",
     "ReservedConcurrentExecutions",
     "Role",
@@ -95,6 +100,14 @@ public class Function {
     @JsonProperty("KmsKeyArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-kmskeyarn")
     private CharSequence kmsKeyArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-layers
+     * 
+     */
+    @JsonProperty("Layers")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-layers")
+    private Set<CharSequence> layers = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize
      * 
@@ -330,6 +343,29 @@ public class Function {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-layers
+     * 
+     */
+    @JsonIgnore
+    public Set<CharSequence> getLayers() {
+        return layers;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-layers
+     * 
+     */
+    @JsonIgnore
+    public void setLayers(Set<CharSequence> layers) {
+        this.layers = layers;
+    }
+
+    public Function withLayers(Set<CharSequence> layers) {
+        this.layers = layers;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-memorysize
      * 
      */
@@ -523,12 +559,12 @@ public class Function {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("code", code).append("deadLetterConfig", deadLetterConfig).append("description", description).append("environment", environment).append("functionName", functionName).append("handler", handler).append("kmsKeyArn", kmsKeyArn).append("memorySize", memorySize).append("reservedConcurrentExecutions", reservedConcurrentExecutions).append("role", role).append("runtime", runtime).append("tags", tags).append("timeout", timeout).append("tracingConfig", tracingConfig).append("vpcConfig", vpcConfig).toString();
+        return new ToStringBuilder(this).append("code", code).append("deadLetterConfig", deadLetterConfig).append("description", description).append("environment", environment).append("functionName", functionName).append("handler", handler).append("kmsKeyArn", kmsKeyArn).append("layers", layers).append("memorySize", memorySize).append("reservedConcurrentExecutions", reservedConcurrentExecutions).append("role", role).append("runtime", runtime).append("tags", tags).append("timeout", timeout).append("tracingConfig", tracingConfig).append("vpcConfig", vpcConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(handler).append(code).append(role).append(functionName).append(kmsKeyArn).append(tracingConfig).append(description).append(runtime).append(deadLetterConfig).append(reservedConcurrentExecutions).append(timeout).append(tags).append(environment).append(memorySize).append(vpcConfig).toHashCode();
+        return new HashCodeBuilder().append(handler).append(code).append(role).append(functionName).append(kmsKeyArn).append(tracingConfig).append(description).append(runtime).append(deadLetterConfig).append(reservedConcurrentExecutions).append(timeout).append(tags).append(environment).append(memorySize).append(vpcConfig).append(layers).toHashCode();
     }
 
     @Override
@@ -540,7 +576,7 @@ public class Function {
             return false;
         }
         Function rhs = ((Function) other);
-        return new EqualsBuilder().append(handler, rhs.handler).append(code, rhs.code).append(role, rhs.role).append(functionName, rhs.functionName).append(kmsKeyArn, rhs.kmsKeyArn).append(tracingConfig, rhs.tracingConfig).append(description, rhs.description).append(runtime, rhs.runtime).append(deadLetterConfig, rhs.deadLetterConfig).append(reservedConcurrentExecutions, rhs.reservedConcurrentExecutions).append(timeout, rhs.timeout).append(tags, rhs.tags).append(environment, rhs.environment).append(memorySize, rhs.memorySize).append(vpcConfig, rhs.vpcConfig).isEquals();
+        return new EqualsBuilder().append(handler, rhs.handler).append(code, rhs.code).append(role, rhs.role).append(functionName, rhs.functionName).append(kmsKeyArn, rhs.kmsKeyArn).append(tracingConfig, rhs.tracingConfig).append(description, rhs.description).append(runtime, rhs.runtime).append(deadLetterConfig, rhs.deadLetterConfig).append(reservedConcurrentExecutions, rhs.reservedConcurrentExecutions).append(timeout, rhs.timeout).append(tags, rhs.tags).append(environment, rhs.environment).append(memorySize, rhs.memorySize).append(vpcConfig, rhs.vpcConfig).append(layers, rhs.layers).isEquals();
     }
 
 }

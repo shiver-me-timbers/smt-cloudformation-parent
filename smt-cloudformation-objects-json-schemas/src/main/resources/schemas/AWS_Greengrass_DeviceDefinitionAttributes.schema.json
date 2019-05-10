@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_DeviceDefinitionAttributes.schema.json",
+  "title" : "DeviceDefinitionAttributes",
+  "type" : "string",
+  "enum" : [ "LatestVersionArn", "Id", "Arn", "Name" ],
+  "javaType" : "aws.greengrass.DeviceDefinitionAttributes"
+}

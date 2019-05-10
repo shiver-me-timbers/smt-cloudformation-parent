@@ -8,7 +8,7 @@
   "properties" : {
     "JSONMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-jsonmappingparameters",
-      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.JSONMappingParameters.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json"
     },
     "CSVMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-csvmappingparameters",

@@ -1,0 +1,49 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_Listener.AuthenticateCognitoConfig.schema.json",
+  "title" : "AuthenticateCognitoConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.AuthenticateCognitoConfig",
+  "properties" : {
+    "AuthenticationRequestExtraParams" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "OnUnauthenticatedRequest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-onunauthenticatedrequest",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Scope" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-scope",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SessionCookieName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessioncookiename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SessionTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-sessiontimeout",
+      "type" : "integer"
+    },
+    "UserPoolArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserPoolClientId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpoolclientid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserPoolDomain" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-userpooldomain",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,14 +1,23 @@
 
 package aws.amazonmq;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum BrokerAttributes {
 
-    BROKER_ID("BrokerId");
+    IP_ADDRESSES("IpAddresses"),
+    OPEN_WIRE_ENDPOINTS("OpenWireEndpoints"),
+    CONFIGURATION_REVISION("ConfigurationRevision"),
+    STOMP_ENDPOINTS("StompEndpoints"),
+    MQTT_ENDPOINTS("MqttEndpoints"),
+    AMQP_ENDPOINTS("AmqpEndpoints"),
+    ARN("Arn"),
+    CONFIGURATION_ID("ConfigurationId"),
+    WSS_ENDPOINTS("WssEndpoints");
     private final String value;
     private final static Map<String, BrokerAttributes> CONSTANTS = new HashMap<String, BrokerAttributes>();
 

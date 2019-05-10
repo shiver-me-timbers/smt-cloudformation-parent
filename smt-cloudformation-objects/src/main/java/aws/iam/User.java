@@ -1,10 +1,6 @@
 
 package aws.iam;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,6 +10,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LoginProfile",
     "ManagedPolicyArns",
     "Path",
+    "PermissionsBoundary",
     "Policies",
     "UserName"
 })
@@ -64,6 +66,13 @@ public class User {
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path")
     private CharSequence path;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-permissionsboundary
+     * 
+     */
+    @JsonProperty("PermissionsBoundary")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-permissionsboundary")
+    private CharSequence permissionsBoundary;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies
      * 
@@ -176,6 +185,29 @@ public class User {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-permissionsboundary
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPermissionsBoundary() {
+        return permissionsBoundary;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-permissionsboundary
+     * 
+     */
+    @JsonIgnore
+    public void setPermissionsBoundary(CharSequence permissionsBoundary) {
+        this.permissionsBoundary = permissionsBoundary;
+    }
+
+    public User withPermissionsBoundary(CharSequence permissionsBoundary) {
+        this.permissionsBoundary = permissionsBoundary;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies
      * 
      */
@@ -223,12 +255,12 @@ public class User {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("groups", groups).append("loginProfile", loginProfile).append("managedPolicyArns", managedPolicyArns).append("path", path).append("policies", policies).append("userName", userName).toString();
+        return new ToStringBuilder(this).append("groups", groups).append("loginProfile", loginProfile).append("managedPolicyArns", managedPolicyArns).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("userName", userName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(loginProfile).append(path).append(managedPolicyArns).append(policies).append(groups).append(userName).toHashCode();
+        return new HashCodeBuilder().append(loginProfile).append(path).append(permissionsBoundary).append(managedPolicyArns).append(policies).append(groups).append(userName).toHashCode();
     }
 
     @Override
@@ -240,7 +272,7 @@ public class User {
             return false;
         }
         User rhs = ((User) other);
-        return new EqualsBuilder().append(loginProfile, rhs.loginProfile).append(path, rhs.path).append(managedPolicyArns, rhs.managedPolicyArns).append(policies, rhs.policies).append(groups, rhs.groups).append(userName, rhs.userName).isEquals();
+        return new EqualsBuilder().append(loginProfile, rhs.loginProfile).append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(managedPolicyArns, rhs.managedPolicyArns).append(policies, rhs.policies).append(groups, rhs.groups).append(userName, rhs.userName).isEquals();
     }
 
 }

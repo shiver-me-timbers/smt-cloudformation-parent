@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2FleetResource.schema.json",
+  "title" : "EC2FleetResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.EC2FleetResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::EC2Fleet"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_EC2Fleet.schema.json"
+    }
+  }
+}

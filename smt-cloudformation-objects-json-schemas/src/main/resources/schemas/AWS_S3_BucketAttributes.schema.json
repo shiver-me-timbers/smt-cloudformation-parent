@@ -3,6 +3,6 @@
   "$id" : "AWS_S3_BucketAttributes.schema.json",
   "title" : "BucketAttributes",
   "type" : "string",
-  "enum" : [ "Arn", "DomainName", "DualStackDomainName", "WebsiteURL" ],
+  "enum" : [ "Arn", "DomainName", "DualStackDomainName", "RegionalDomainName", "WebsiteURL" ],
   "javaType" : "aws.s3.BucketAttributes"
 }

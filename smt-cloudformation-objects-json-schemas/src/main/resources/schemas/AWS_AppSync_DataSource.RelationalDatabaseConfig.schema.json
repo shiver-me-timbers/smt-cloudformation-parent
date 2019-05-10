@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_DataSource.RelationalDatabaseConfig.schema.json",
+  "title" : "RelationalDatabaseConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html",
+  "type" : "object",
+  "javaType" : "aws.appsync.RelationalDatabaseConfig",
+  "properties" : {
+    "RdsHttpEndpointConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig",
+      "$ref" : "AWS_AppSync_DataSource.RdsHttpEndpointConfig.schema.json"
+    },
+    "RelationalDatabaseSourceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

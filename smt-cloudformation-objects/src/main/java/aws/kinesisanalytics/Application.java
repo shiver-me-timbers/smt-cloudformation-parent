@@ -1,8 +1,6 @@
 
 package aws.kinesisanalytics;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -41,7 +42,7 @@ public class Application {
      */
     @JsonProperty("Inputs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs")
-    private List<KinesisStreamsInput> inputs = new ArrayList<KinesisStreamsInput>();
+    private List<Input> inputs = new ArrayList<Input>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription
      * 
@@ -85,7 +86,7 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public List<KinesisStreamsInput> getInputs() {
+    public List<Input> getInputs() {
         return inputs;
     }
 
@@ -94,11 +95,11 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public void setInputs(List<KinesisStreamsInput> inputs) {
+    public void setInputs(List<Input> inputs) {
         this.inputs = inputs;
     }
 
-    public Application withInputs(List<KinesisStreamsInput> inputs) {
+    public Application withInputs(List<Input> inputs) {
         this.inputs = inputs;
         return this;
     }

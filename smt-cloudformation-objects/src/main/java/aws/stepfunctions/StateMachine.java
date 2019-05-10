@@ -10,6 +10,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * StateMachine
@@ -21,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "DefinitionString",
     "StateMachineName",
-    "RoleArn"
+    "RoleArn",
+    "Tags"
 })
 public class StateMachine {
 
@@ -46,6 +50,13 @@ public class StateMachine {
     @JsonProperty("RoleArn")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-rolearn")
     private CharSequence roleArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags")
+    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring
@@ -116,14 +127,37 @@ public class StateMachine {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags
+     * 
+     */
+    @JsonIgnore
+    public List<TagsEntry> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<TagsEntry> tags) {
+        this.tags = tags;
+    }
+
+    public StateMachine withTags(List<TagsEntry> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("definitionString", definitionString).append("stateMachineName", stateMachineName).append("roleArn", roleArn).toString();
+        return new ToStringBuilder(this).append("definitionString", definitionString).append("stateMachineName", stateMachineName).append("roleArn", roleArn).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(definitionString).append(stateMachineName).append(roleArn).toHashCode();
+        return new HashCodeBuilder().append(definitionString).append(stateMachineName).append(roleArn).append(tags).toHashCode();
     }
 
     @Override
@@ -135,7 +169,7 @@ public class StateMachine {
             return false;
         }
         StateMachine rhs = ((StateMachine) other);
-        return new EqualsBuilder().append(definitionString, rhs.definitionString).append(stateMachineName, rhs.stateMachineName).append(roleArn, rhs.roleArn).isEquals();
+        return new EqualsBuilder().append(definitionString, rhs.definitionString).append(stateMachineName, rhs.stateMachineName).append(roleArn, rhs.roleArn).append(tags, rhs.tags).isEquals();
     }
 
 }

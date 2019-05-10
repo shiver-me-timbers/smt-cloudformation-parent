@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Dataset.ContainerAction.schema.json",
+  "title" : "ContainerAction",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.ContainerAction",
+  "properties" : {
+    "Variables" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-variables",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_IoTAnalytics_Dataset.Variable.schema.json"
+      }
+    },
+    "ExecutionRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-executionrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Image" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-image",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-resourceconfiguration",
+      "$ref" : "AWS_IoTAnalytics_Dataset.ResourceConfiguration.schema.json"
+    }
+  }
+}

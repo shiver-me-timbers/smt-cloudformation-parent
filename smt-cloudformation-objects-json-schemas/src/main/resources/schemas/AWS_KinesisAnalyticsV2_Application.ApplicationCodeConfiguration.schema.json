@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_Application.ApplicationCodeConfiguration.schema.json",
+  "title" : "ApplicationCodeConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationCodeConfiguration",
+  "properties" : {
+    "CodeContentType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CodeContent" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontent",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.CodeContent.schema.json"
+    }
+  }
+}

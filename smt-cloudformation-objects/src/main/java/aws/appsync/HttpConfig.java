@@ -19,7 +19,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Endpoint"
+    "Endpoint",
+    "AuthorizationConfig"
 })
 public class HttpConfig {
 
@@ -30,6 +31,15 @@ public class HttpConfig {
     @JsonProperty("Endpoint")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint")
     private CharSequence endpoint;
+    /**
+     * AuthorizationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html
+     * 
+     */
+    @JsonProperty("AuthorizationConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html")
+    private AuthorizationConfig authorizationConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
@@ -54,14 +64,41 @@ public class HttpConfig {
         return this;
     }
 
+    /**
+     * AuthorizationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html
+     * 
+     */
+    @JsonIgnore
+    public AuthorizationConfig getAuthorizationConfig() {
+        return authorizationConfig;
+    }
+
+    /**
+     * AuthorizationConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setAuthorizationConfig(AuthorizationConfig authorizationConfig) {
+        this.authorizationConfig = authorizationConfig;
+    }
+
+    public HttpConfig withAuthorizationConfig(AuthorizationConfig authorizationConfig) {
+        this.authorizationConfig = authorizationConfig;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("endpoint", endpoint).toString();
+        return new ToStringBuilder(this).append("endpoint", endpoint).append("authorizationConfig", authorizationConfig).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpoint).toHashCode();
+        return new HashCodeBuilder().append(endpoint).append(authorizationConfig).toHashCode();
     }
 
     @Override
@@ -73,7 +110,7 @@ public class HttpConfig {
             return false;
         }
         HttpConfig rhs = ((HttpConfig) other);
-        return new EqualsBuilder().append(endpoint, rhs.endpoint).isEquals();
+        return new EqualsBuilder().append(endpoint, rhs.endpoint).append(authorizationConfig, rhs.authorizationConfig).isEquals();
     }
 
 }

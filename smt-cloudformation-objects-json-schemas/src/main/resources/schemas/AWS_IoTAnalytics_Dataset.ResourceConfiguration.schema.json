@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_IoTAnalytics_Dataset.ResourceConfiguration.schema.json",
+  "title" : "ResourceConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.iotanalytics.ResourceConfiguration",
+  "properties" : {
+    "VolumeSizeInGB" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html#cfn-iotanalytics-dataset-resourceconfiguration-volumesizeingb",
+      "type" : "integer"
+    },
+    "ComputeType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html#cfn-iotanalytics-dataset-resourceconfiguration-computetype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

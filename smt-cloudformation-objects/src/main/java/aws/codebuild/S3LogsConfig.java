@@ -20,6 +20,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Status",
+    "EncryptionDisabled",
     "Location"
 })
 public class S3LogsConfig {
@@ -31,6 +32,13 @@ public class S3LogsConfig {
     @JsonProperty("Status")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-status")
     private CharSequence status;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-encryptiondisabled
+     * 
+     */
+    @JsonProperty("EncryptionDisabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-encryptiondisabled")
+    private Boolean encryptionDisabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-location
      * 
@@ -63,6 +71,29 @@ public class S3LogsConfig {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-encryptiondisabled
+     * 
+     */
+    @JsonIgnore
+    public Boolean getEncryptionDisabled() {
+        return encryptionDisabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-encryptiondisabled
+     * 
+     */
+    @JsonIgnore
+    public void setEncryptionDisabled(Boolean encryptionDisabled) {
+        this.encryptionDisabled = encryptionDisabled;
+    }
+
+    public S3LogsConfig withEncryptionDisabled(Boolean encryptionDisabled) {
+        this.encryptionDisabled = encryptionDisabled;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html#cfn-codebuild-project-s3logsconfig-location
      * 
      */
@@ -87,12 +118,12 @@ public class S3LogsConfig {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("status", status).append("location", location).toString();
+        return new ToStringBuilder(this).append("status", status).append("encryptionDisabled", encryptionDisabled).append("location", location).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(location).append(status).toHashCode();
+        return new HashCodeBuilder().append(encryptionDisabled).append(location).append(status).toHashCode();
     }
 
     @Override
@@ -104,7 +135,7 @@ public class S3LogsConfig {
             return false;
         }
         S3LogsConfig rhs = ((S3LogsConfig) other);
-        return new EqualsBuilder().append(location, rhs.location).append(status, rhs.status).isEquals();
+        return new EqualsBuilder().append(encryptionDisabled, rhs.encryptionDisabled).append(location, rhs.location).append(status, rhs.status).isEquals();
     }
 
 }

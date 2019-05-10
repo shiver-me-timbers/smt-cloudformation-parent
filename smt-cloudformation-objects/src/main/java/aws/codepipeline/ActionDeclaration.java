@@ -1,8 +1,6 @@
 
 package aws.codepipeline;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -27,6 +28,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InputArtifacts",
     "Name",
     "OutputArtifacts",
+    "Region",
     "RoleArn",
     "RunOrder"
 })
@@ -71,6 +73,13 @@ public class ActionDeclaration {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts")
     private Set<OutputArtifact> outputArtifacts = new LinkedHashSet<OutputArtifact>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
+     * 
+     */
+    @JsonProperty("Region")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region")
+    private CharSequence region;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn
      * 
@@ -206,6 +215,29 @@ public class ActionDeclaration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRegion() {
+        return region;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
+     * 
+     */
+    @JsonIgnore
+    public void setRegion(CharSequence region) {
+        this.region = region;
+    }
+
+    public ActionDeclaration withRegion(CharSequence region) {
+        this.region = region;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-rolearn
      * 
      */
@@ -253,12 +285,12 @@ public class ActionDeclaration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("name", name).append("outputArtifacts", outputArtifacts).append("roleArn", roleArn).append("runOrder", runOrder).toString();
+        return new ToStringBuilder(this).append("actionTypeId", actionTypeId).append("configuration", configuration).append("inputArtifacts", inputArtifacts).append("name", name).append("outputArtifacts", outputArtifacts).append("region", region).append("roleArn", roleArn).append("runOrder", runOrder).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(inputArtifacts).toHashCode();
+        return new HashCodeBuilder().append(runOrder).append(actionTypeId).append(configuration).append(outputArtifacts).append(roleArn).append(name).append(region).append(inputArtifacts).toHashCode();
     }
 
     @Override
@@ -270,7 +302,7 @@ public class ActionDeclaration {
             return false;
         }
         ActionDeclaration rhs = ((ActionDeclaration) other);
-        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(inputArtifacts, rhs.inputArtifacts).isEquals();
+        return new EqualsBuilder().append(runOrder, rhs.runOrder).append(actionTypeId, rhs.actionTypeId).append(configuration, rhs.configuration).append(outputArtifacts, rhs.outputArtifacts).append(roleArn, rhs.roleArn).append(name, rhs.name).append(region, rhs.region).append(inputArtifacts, rhs.inputArtifacts).isEquals();
     }
 
 }

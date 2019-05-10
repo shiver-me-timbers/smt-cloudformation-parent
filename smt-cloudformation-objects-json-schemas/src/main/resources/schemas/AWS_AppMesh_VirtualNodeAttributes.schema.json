@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNodeAttributes.schema.json",
+  "title" : "VirtualNodeAttributes",
+  "type" : "string",
+  "enum" : [ "Uid", "MeshName", "Arn", "VirtualNodeName" ],
+  "javaType" : "aws.appmesh.VirtualNodeAttributes"
+}

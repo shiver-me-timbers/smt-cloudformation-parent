@@ -1,10 +1,6 @@
 
 package aws.elasticloadbalancingv2;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -16,6 +12,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * TargetGroup
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "HealthCheckEnabled",
     "HealthCheckIntervalSeconds",
     "HealthCheckPath",
     "HealthCheckPort",
@@ -44,6 +46,13 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class TargetGroup {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled
+     * 
+     */
+    @JsonProperty("HealthCheckEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled")
+    private Boolean healthCheckEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
      * 
@@ -160,6 +169,29 @@ public class TargetGroup {
     @JsonProperty("VpcId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-vpcid")
     private CharSequence vpcId;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled
+     * 
+     */
+    @JsonIgnore
+    public Boolean getHealthCheckEnabled() {
+        return healthCheckEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled
+     * 
+     */
+    @JsonIgnore
+    public void setHealthCheckEnabled(Boolean healthCheckEnabled) {
+        this.healthCheckEnabled = healthCheckEnabled;
+    }
+
+    public TargetGroup withHealthCheckEnabled(Boolean healthCheckEnabled) {
+        this.healthCheckEnabled = healthCheckEnabled;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds
@@ -535,12 +567,12 @@ public class TargetGroup {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("healthCheckIntervalSeconds", healthCheckIntervalSeconds).append("healthCheckPath", healthCheckPath).append("healthCheckPort", healthCheckPort).append("healthCheckProtocol", healthCheckProtocol).append("healthCheckTimeoutSeconds", healthCheckTimeoutSeconds).append("healthyThresholdCount", healthyThresholdCount).append("matcher", matcher).append("name", name).append("port", port).append("protocol", protocol).append("tags", tags).append("targetGroupAttributes", targetGroupAttributes).append("targetType", targetType).append("targets", targets).append("unhealthyThresholdCount", unhealthyThresholdCount).append("vpcId", vpcId).toString();
+        return new ToStringBuilder(this).append("healthCheckEnabled", healthCheckEnabled).append("healthCheckIntervalSeconds", healthCheckIntervalSeconds).append("healthCheckPath", healthCheckPath).append("healthCheckPort", healthCheckPort).append("healthCheckProtocol", healthCheckProtocol).append("healthCheckTimeoutSeconds", healthCheckTimeoutSeconds).append("healthyThresholdCount", healthyThresholdCount).append("matcher", matcher).append("name", name).append("port", port).append("protocol", protocol).append("tags", tags).append("targetGroupAttributes", targetGroupAttributes).append("targetType", targetType).append("targets", targets).append("unhealthyThresholdCount", unhealthyThresholdCount).append("vpcId", vpcId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(healthCheckTimeoutSeconds).append(healthCheckPort).append(targetType).append(matcher).append(healthCheckProtocol).append(targets).append(tags).append(healthCheckPath).append(protocol).append(port).append(healthCheckIntervalSeconds).append(healthyThresholdCount).append(vpcId).append(name).append(targetGroupAttributes).append(unhealthyThresholdCount).toHashCode();
+        return new HashCodeBuilder().append(healthCheckEnabled).append(healthCheckTimeoutSeconds).append(healthCheckPort).append(targetType).append(matcher).append(healthCheckProtocol).append(targets).append(tags).append(healthCheckPath).append(protocol).append(port).append(healthCheckIntervalSeconds).append(healthyThresholdCount).append(vpcId).append(name).append(targetGroupAttributes).append(unhealthyThresholdCount).toHashCode();
     }
 
     @Override
@@ -552,7 +584,7 @@ public class TargetGroup {
             return false;
         }
         TargetGroup rhs = ((TargetGroup) other);
-        return new EqualsBuilder().append(healthCheckTimeoutSeconds, rhs.healthCheckTimeoutSeconds).append(healthCheckPort, rhs.healthCheckPort).append(targetType, rhs.targetType).append(matcher, rhs.matcher).append(healthCheckProtocol, rhs.healthCheckProtocol).append(targets, rhs.targets).append(tags, rhs.tags).append(healthCheckPath, rhs.healthCheckPath).append(protocol, rhs.protocol).append(port, rhs.port).append(healthCheckIntervalSeconds, rhs.healthCheckIntervalSeconds).append(healthyThresholdCount, rhs.healthyThresholdCount).append(vpcId, rhs.vpcId).append(name, rhs.name).append(targetGroupAttributes, rhs.targetGroupAttributes).append(unhealthyThresholdCount, rhs.unhealthyThresholdCount).isEquals();
+        return new EqualsBuilder().append(healthCheckEnabled, rhs.healthCheckEnabled).append(healthCheckTimeoutSeconds, rhs.healthCheckTimeoutSeconds).append(healthCheckPort, rhs.healthCheckPort).append(targetType, rhs.targetType).append(matcher, rhs.matcher).append(healthCheckProtocol, rhs.healthCheckProtocol).append(targets, rhs.targets).append(tags, rhs.tags).append(healthCheckPath, rhs.healthCheckPath).append(protocol, rhs.protocol).append(port, rhs.port).append(healthCheckIntervalSeconds, rhs.healthCheckIntervalSeconds).append(healthyThresholdCount, rhs.healthyThresholdCount).append(vpcId, rhs.vpcId).append(name, rhs.name).append(targetGroupAttributes, rhs.targetGroupAttributes).append(unhealthyThresholdCount, rhs.unhealthyThresholdCount).isEquals();
     }
 
 }

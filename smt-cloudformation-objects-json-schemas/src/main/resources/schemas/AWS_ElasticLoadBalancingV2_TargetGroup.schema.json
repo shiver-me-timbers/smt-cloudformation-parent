@@ -6,6 +6,10 @@
   "type" : "object",
   "javaType" : "aws.elasticloadbalancingv2.TargetGroup",
   "properties" : {
+    "HealthCheckEnabled" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckenabled",
+      "type" : "boolean"
+    },
     "HealthCheckIntervalSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthcheckintervalseconds",
       "type" : "integer"

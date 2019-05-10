@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RoboMaker_SimulationApplicationResource.schema.json",
+  "title" : "SimulationApplicationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.robomaker.SimulationApplicationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<SimulationApplicationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RoboMaker::SimulationApplication"
+    },
+    "Properties" : {
+      "$ref" : "AWS_RoboMaker_SimulationApplication.schema.json"
+    }
+  }
+}

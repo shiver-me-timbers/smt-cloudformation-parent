@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_FunctionDefinitionResource.schema.json",
+  "title" : "FunctionDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.FunctionDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<FunctionDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::FunctionDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_FunctionDefinition.schema.json"
+    }
+  }
+}

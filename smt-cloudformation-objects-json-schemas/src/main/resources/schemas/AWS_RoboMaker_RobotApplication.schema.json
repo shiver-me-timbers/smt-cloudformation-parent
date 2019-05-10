@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RoboMaker_RobotApplication.schema.json",
+  "title" : "RobotApplication",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html",
+  "type" : "object",
+  "javaType" : "aws.robomaker.RobotApplication",
+  "properties" : {
+    "CurrentRevisionId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-currentrevisionid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RobotSoftwareSuite" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-robotsoftwaresuite",
+      "$ref" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json"
+    },
+    "Sources" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-sources",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_RoboMaker_RobotApplication.SourceConfig.schema.json"
+      }
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-tags",
+      "type" : "any"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RoboMaker_SimulationApplicationVersion.schema.json",
+  "title" : "SimulationApplicationVersion",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplicationversion.html",
+  "type" : "object",
+  "javaType" : "aws.robomaker.SimulationApplicationVersion",
+  "properties" : {
+    "CurrentRevisionId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplicationversion.html#cfn-robomaker-simulationapplicationversion-currentrevisionid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Application" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplicationversion.html#cfn-robomaker-simulationapplicationversion-application",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

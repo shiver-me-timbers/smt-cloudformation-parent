@@ -25,12 +25,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DynamoDBv2",
     "Elasticsearch",
     "Firehose",
+    "IotAnalytics",
     "Kinesis",
     "Lambda",
     "Republish",
     "S3",
     "Sns",
-    "Sqs"
+    "Sqs",
+    "StepFunctions"
 })
 public class Action {
 
@@ -89,6 +91,15 @@ public class Action {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html")
     private FirehoseAction firehose;
     /**
+     * IotAnalyticsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html
+     * 
+     */
+    @JsonProperty("IotAnalytics")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html")
+    private IotAnalyticsAction iotAnalytics;
+    /**
      * KinesisAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html
@@ -142,6 +153,15 @@ public class Action {
     @JsonProperty("Sqs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html")
     private SqsAction sqs;
+    /**
+     * StepFunctionsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html
+     * 
+     */
+    @JsonProperty("StepFunctions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html")
+    private StepFunctionsAction stepFunctions;
 
     /**
      * CloudwatchAlarmAction
@@ -302,6 +322,33 @@ public class Action {
 
     public Action withFirehose(FirehoseAction firehose) {
         this.firehose = firehose;
+        return this;
+    }
+
+    /**
+     * IotAnalyticsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html
+     * 
+     */
+    @JsonIgnore
+    public IotAnalyticsAction getIotAnalytics() {
+        return iotAnalytics;
+    }
+
+    /**
+     * IotAnalyticsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html
+     * 
+     */
+    @JsonIgnore
+    public void setIotAnalytics(IotAnalyticsAction iotAnalytics) {
+        this.iotAnalytics = iotAnalytics;
+    }
+
+    public Action withIotAnalytics(IotAnalyticsAction iotAnalytics) {
+        this.iotAnalytics = iotAnalytics;
         return this;
     }
 
@@ -467,14 +514,41 @@ public class Action {
         return this;
     }
 
+    /**
+     * StepFunctionsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html
+     * 
+     */
+    @JsonIgnore
+    public StepFunctionsAction getStepFunctions() {
+        return stepFunctions;
+    }
+
+    /**
+     * StepFunctionsAction
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html
+     * 
+     */
+    @JsonIgnore
+    public void setStepFunctions(StepFunctionsAction stepFunctions) {
+        this.stepFunctions = stepFunctions;
+    }
+
+    public Action withStepFunctions(StepFunctionsAction stepFunctions) {
+        this.stepFunctions = stepFunctions;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cloudwatchAlarm", cloudwatchAlarm).append("cloudwatchMetric", cloudwatchMetric).append("dynamoDB", dynamoDB).append("dynamoDBv2", dynamoDBv2).append("elasticsearch", elasticsearch).append("firehose", firehose).append("kinesis", kinesis).append("lambda", lambda).append("republish", republish).append("s3", s3).append("sns", sns).append("sqs", sqs).toString();
+        return new ToStringBuilder(this).append("cloudwatchAlarm", cloudwatchAlarm).append("cloudwatchMetric", cloudwatchMetric).append("dynamoDB", dynamoDB).append("dynamoDBv2", dynamoDBv2).append("elasticsearch", elasticsearch).append("firehose", firehose).append("iotAnalytics", iotAnalytics).append("kinesis", kinesis).append("lambda", lambda).append("republish", republish).append("s3", s3).append("sns", sns).append("sqs", sqs).append("stepFunctions", stepFunctions).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(s3).append(firehose).append(dynamoDBv2).append(kinesis).append(dynamoDB).append(lambda).append(elasticsearch).append(republish).append(sqs).append(cloudwatchAlarm).append(sns).append(cloudwatchMetric).toHashCode();
+        return new HashCodeBuilder().append(s3).append(firehose).append(dynamoDBv2).append(stepFunctions).append(kinesis).append(dynamoDB).append(iotAnalytics).append(lambda).append(elasticsearch).append(republish).append(sqs).append(cloudwatchAlarm).append(sns).append(cloudwatchMetric).toHashCode();
     }
 
     @Override
@@ -486,7 +560,7 @@ public class Action {
             return false;
         }
         Action rhs = ((Action) other);
-        return new EqualsBuilder().append(s3, rhs.s3).append(firehose, rhs.firehose).append(dynamoDBv2, rhs.dynamoDBv2).append(kinesis, rhs.kinesis).append(dynamoDB, rhs.dynamoDB).append(lambda, rhs.lambda).append(elasticsearch, rhs.elasticsearch).append(republish, rhs.republish).append(sqs, rhs.sqs).append(cloudwatchAlarm, rhs.cloudwatchAlarm).append(sns, rhs.sns).append(cloudwatchMetric, rhs.cloudwatchMetric).isEquals();
+        return new EqualsBuilder().append(s3, rhs.s3).append(firehose, rhs.firehose).append(dynamoDBv2, rhs.dynamoDBv2).append(stepFunctions, rhs.stepFunctions).append(kinesis, rhs.kinesis).append(dynamoDB, rhs.dynamoDB).append(iotAnalytics, rhs.iotAnalytics).append(lambda, rhs.lambda).append(elasticsearch, rhs.elasticsearch).append(republish, rhs.republish).append(sqs, rhs.sqs).append(cloudwatchAlarm, rhs.cloudwatchAlarm).append(sns, rhs.sns).append(cloudwatchMetric, rhs.cloudwatchMetric).isEquals();
     }
 
 }

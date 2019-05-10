@@ -1,6 +1,7 @@
 
 package aws.workspaces;
 
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -9,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -22,9 +26,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "BundleId",
     "DirectoryId",
     "RootVolumeEncryptionEnabled",
+    "Tags",
     "UserName",
     "UserVolumeEncryptionEnabled",
-    "VolumeEncryptionKey"
+    "VolumeEncryptionKey",
+    "WorkspaceProperties"
 })
 public class Workspace {
 
@@ -50,6 +56,13 @@ public class Workspace {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-rootvolumeencryptionenabled")
     private Boolean rootVolumeEncryptionEnabled;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags")
+    private List<Tag> tags = new ArrayList<Tag>();
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-username
      * 
      */
@@ -70,6 +83,15 @@ public class Workspace {
     @JsonProperty("VolumeEncryptionKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey")
     private CharSequence volumeEncryptionKey;
+    /**
+     * WorkspaceProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
+     * 
+     */
+    @JsonProperty("WorkspaceProperties")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html")
+    private WorkspaceProperties workspaceProperties;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
@@ -137,6 +159,29 @@ public class Workspace {
 
     public Workspace withRootVolumeEncryptionEnabled(Boolean rootVolumeEncryptionEnabled) {
         this.rootVolumeEncryptionEnabled = rootVolumeEncryptionEnabled;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public Workspace withTags(List<Tag> tags) {
+        this.tags = tags;
         return this;
     }
 
@@ -209,14 +254,41 @@ public class Workspace {
         return this;
     }
 
+    /**
+     * WorkspaceProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
+     * 
+     */
+    @JsonIgnore
+    public WorkspaceProperties getWorkspaceProperties() {
+        return workspaceProperties;
+    }
+
+    /**
+     * WorkspaceProperties
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
+     * 
+     */
+    @JsonIgnore
+    public void setWorkspaceProperties(WorkspaceProperties workspaceProperties) {
+        this.workspaceProperties = workspaceProperties;
+    }
+
+    public Workspace withWorkspaceProperties(WorkspaceProperties workspaceProperties) {
+        this.workspaceProperties = workspaceProperties;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("bundleId", bundleId).append("directoryId", directoryId).append("rootVolumeEncryptionEnabled", rootVolumeEncryptionEnabled).append("userName", userName).append("userVolumeEncryptionEnabled", userVolumeEncryptionEnabled).append("volumeEncryptionKey", volumeEncryptionKey).toString();
+        return new ToStringBuilder(this).append("bundleId", bundleId).append("directoryId", directoryId).append("rootVolumeEncryptionEnabled", rootVolumeEncryptionEnabled).append("tags", tags).append("userName", userName).append("userVolumeEncryptionEnabled", userVolumeEncryptionEnabled).append("volumeEncryptionKey", volumeEncryptionKey).append("workspaceProperties", workspaceProperties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(userVolumeEncryptionEnabled).append(volumeEncryptionKey).append(bundleId).append(directoryId).append(rootVolumeEncryptionEnabled).append(userName).toHashCode();
+        return new HashCodeBuilder().append(userVolumeEncryptionEnabled).append(volumeEncryptionKey).append(workspaceProperties).append(bundleId).append(directoryId).append(rootVolumeEncryptionEnabled).append(userName).append(tags).toHashCode();
     }
 
     @Override
@@ -228,7 +300,7 @@ public class Workspace {
             return false;
         }
         Workspace rhs = ((Workspace) other);
-        return new EqualsBuilder().append(userVolumeEncryptionEnabled, rhs.userVolumeEncryptionEnabled).append(volumeEncryptionKey, rhs.volumeEncryptionKey).append(bundleId, rhs.bundleId).append(directoryId, rhs.directoryId).append(rootVolumeEncryptionEnabled, rhs.rootVolumeEncryptionEnabled).append(userName, rhs.userName).isEquals();
+        return new EqualsBuilder().append(userVolumeEncryptionEnabled, rhs.userVolumeEncryptionEnabled).append(volumeEncryptionKey, rhs.volumeEncryptionKey).append(workspaceProperties, rhs.workspaceProperties).append(bundleId, rhs.bundleId).append(directoryId, rhs.directoryId).append(rootVolumeEncryptionEnabled, rhs.rootVolumeEncryptionEnabled).append(userName, rhs.userName).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -1,10 +1,6 @@
 
 package aws.rds;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -16,6 +12,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * DBCluster
@@ -26,11 +27,15 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "AvailabilityZones",
+    "BacktrackWindow",
     "BackupRetentionPeriod",
     "DBClusterIdentifier",
     "DBClusterParameterGroupName",
     "DBSubnetGroupName",
     "DatabaseName",
+    "DeletionProtection",
+    "EnableCloudwatchLogsExports",
+    "EnableIAMDatabaseAuthentication",
     "Engine",
     "EngineMode",
     "EngineVersion",
@@ -43,6 +48,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ReplicationSourceIdentifier",
     "ScalingConfiguration",
     "SnapshotIdentifier",
+    "SourceRegion",
     "StorageEncrypted",
     "Tags",
     "VpcSecurityGroupIds"
@@ -57,6 +63,13 @@ public class DBCluster {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-availabilityzones")
     private Set<CharSequence> availabilityZones = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backtrackwindow
+     * 
+     */
+    @JsonProperty("BacktrackWindow")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backtrackwindow")
+    private Integer backtrackWindow;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backuprententionperiod
      * 
@@ -92,6 +105,28 @@ public class DBCluster {
     @JsonProperty("DatabaseName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-databasename")
     private CharSequence databaseName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-deletionprotection
+     * 
+     */
+    @JsonProperty("DeletionProtection")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-deletionprotection")
+    private Boolean deletionProtection;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonProperty("EnableCloudwatchLogsExports")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports")
+    private Set<CharSequence> enableCloudwatchLogsExports = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonProperty("EnableIAMDatabaseAuthentication")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication")
+    private Boolean enableIAMDatabaseAuthentication;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-engine
      * 
@@ -179,6 +214,13 @@ public class DBCluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier")
     private CharSequence snapshotIdentifier;
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-sourceregion
+     * 
+     */
+    @JsonProperty("SourceRegion")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-sourceregion")
+    private CharSequence sourceRegion;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted
      * 
      */
@@ -221,6 +263,29 @@ public class DBCluster {
 
     public DBCluster withAvailabilityZones(Set<CharSequence> availabilityZones) {
         this.availabilityZones = availabilityZones;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backtrackwindow
+     * 
+     */
+    @JsonIgnore
+    public Integer getBacktrackWindow() {
+        return backtrackWindow;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-backtrackwindow
+     * 
+     */
+    @JsonIgnore
+    public void setBacktrackWindow(Integer backtrackWindow) {
+        this.backtrackWindow = backtrackWindow;
+    }
+
+    public DBCluster withBacktrackWindow(Integer backtrackWindow) {
+        this.backtrackWindow = backtrackWindow;
         return this;
     }
 
@@ -336,6 +401,75 @@ public class DBCluster {
 
     public DBCluster withDatabaseName(CharSequence databaseName) {
         this.databaseName = databaseName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public Boolean getDeletionProtection() {
+        return deletionProtection;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-deletionprotection
+     * 
+     */
+    @JsonIgnore
+    public void setDeletionProtection(Boolean deletionProtection) {
+        this.deletionProtection = deletionProtection;
+    }
+
+    public DBCluster withDeletionProtection(Boolean deletionProtection) {
+        this.deletionProtection = deletionProtection;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public Set<CharSequence> getEnableCloudwatchLogsExports() {
+        return enableCloudwatchLogsExports;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enablecloudwatchlogsexports
+     * 
+     */
+    @JsonIgnore
+    public void setEnableCloudwatchLogsExports(Set<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+    }
+
+    public DBCluster withEnableCloudwatchLogsExports(Set<CharSequence> enableCloudwatchLogsExports) {
+        this.enableCloudwatchLogsExports = enableCloudwatchLogsExports;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonIgnore
+    public Boolean getEnableIAMDatabaseAuthentication() {
+        return enableIAMDatabaseAuthentication;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-enableiamdatabaseauthentication
+     * 
+     */
+    @JsonIgnore
+    public void setEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+        this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
+    }
+
+    public DBCluster withEnableIAMDatabaseAuthentication(Boolean enableIAMDatabaseAuthentication) {
+        this.enableIAMDatabaseAuthentication = enableIAMDatabaseAuthentication;
         return this;
     }
 
@@ -620,6 +754,29 @@ public class DBCluster {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-sourceregion
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getSourceRegion() {
+        return sourceRegion;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-sourceregion
+     * 
+     */
+    @JsonIgnore
+    public void setSourceRegion(CharSequence sourceRegion) {
+        this.sourceRegion = sourceRegion;
+    }
+
+    public DBCluster withSourceRegion(CharSequence sourceRegion) {
+        this.sourceRegion = sourceRegion;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-storageencrypted
      * 
      */
@@ -690,12 +847,12 @@ public class DBCluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("availabilityZones", availabilityZones).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("engine", engine).append("engineMode", engineMode).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("scalingConfiguration", scalingConfiguration).append("snapshotIdentifier", snapshotIdentifier).append("storageEncrypted", storageEncrypted).append("tags", tags).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
+        return new ToStringBuilder(this).append("availabilityZones", availabilityZones).append("backtrackWindow", backtrackWindow).append("backupRetentionPeriod", backupRetentionPeriod).append("dBClusterIdentifier", dBClusterIdentifier).append("dBClusterParameterGroupName", dBClusterParameterGroupName).append("dBSubnetGroupName", dBSubnetGroupName).append("databaseName", databaseName).append("deletionProtection", deletionProtection).append("enableCloudwatchLogsExports", enableCloudwatchLogsExports).append("enableIAMDatabaseAuthentication", enableIAMDatabaseAuthentication).append("engine", engine).append("engineMode", engineMode).append("engineVersion", engineVersion).append("kmsKeyId", kmsKeyId).append("masterUserPassword", masterUserPassword).append("masterUsername", masterUsername).append("port", port).append("preferredBackupWindow", preferredBackupWindow).append("preferredMaintenanceWindow", preferredMaintenanceWindow).append("replicationSourceIdentifier", replicationSourceIdentifier).append("scalingConfiguration", scalingConfiguration).append("snapshotIdentifier", snapshotIdentifier).append("sourceRegion", sourceRegion).append("storageEncrypted", storageEncrypted).append("tags", tags).append("vpcSecurityGroupIds", vpcSecurityGroupIds).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(masterUsername).append(vpcSecurityGroupIds).append(databaseName).append(availabilityZones).append(snapshotIdentifier).append(storageEncrypted).append(preferredBackupWindow).append(dBSubnetGroupName).append(tags).append(dBClusterParameterGroupName).append(engineMode).append(engine).append(port).append(replicationSourceIdentifier).append(preferredMaintenanceWindow).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(masterUserPassword).append(scalingConfiguration).toHashCode();
+        return new HashCodeBuilder().append(vpcSecurityGroupIds).append(databaseName).append(availabilityZones).append(preferredBackupWindow).append(dBSubnetGroupName).append(deletionProtection).append(engineMode).append(engine).append(replicationSourceIdentifier).append(masterUserPassword).append(scalingConfiguration).append(engineVersion).append(masterUsername).append(backtrackWindow).append(snapshotIdentifier).append(storageEncrypted).append(tags).append(enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName).append(port).append(preferredMaintenanceWindow).append(sourceRegion).append(backupRetentionPeriod).append(kmsKeyId).append(dBClusterIdentifier).append(enableCloudwatchLogsExports).toHashCode();
     }
 
     @Override
@@ -707,7 +864,7 @@ public class DBCluster {
             return false;
         }
         DBCluster rhs = ((DBCluster) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(availabilityZones, rhs.availabilityZones).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(tags, rhs.tags).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(engineMode, rhs.engineMode).append(engine, rhs.engine).append(port, rhs.port).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(masterUserPassword, rhs.masterUserPassword).append(scalingConfiguration, rhs.scalingConfiguration).isEquals();
+        return new EqualsBuilder().append(vpcSecurityGroupIds, rhs.vpcSecurityGroupIds).append(databaseName, rhs.databaseName).append(availabilityZones, rhs.availabilityZones).append(preferredBackupWindow, rhs.preferredBackupWindow).append(dBSubnetGroupName, rhs.dBSubnetGroupName).append(deletionProtection, rhs.deletionProtection).append(engineMode, rhs.engineMode).append(engine, rhs.engine).append(replicationSourceIdentifier, rhs.replicationSourceIdentifier).append(masterUserPassword, rhs.masterUserPassword).append(scalingConfiguration, rhs.scalingConfiguration).append(engineVersion, rhs.engineVersion).append(masterUsername, rhs.masterUsername).append(backtrackWindow, rhs.backtrackWindow).append(snapshotIdentifier, rhs.snapshotIdentifier).append(storageEncrypted, rhs.storageEncrypted).append(tags, rhs.tags).append(enableIAMDatabaseAuthentication, rhs.enableIAMDatabaseAuthentication).append(dBClusterParameterGroupName, rhs.dBClusterParameterGroupName).append(port, rhs.port).append(preferredMaintenanceWindow, rhs.preferredMaintenanceWindow).append(sourceRegion, rhs.sourceRegion).append(backupRetentionPeriod, rhs.backupRetentionPeriod).append(kmsKeyId, rhs.kmsKeyId).append(dBClusterIdentifier, rhs.dBClusterIdentifier).append(enableCloudwatchLogsExports, rhs.enableCloudwatchLogsExports).isEquals();
     }
 
 }

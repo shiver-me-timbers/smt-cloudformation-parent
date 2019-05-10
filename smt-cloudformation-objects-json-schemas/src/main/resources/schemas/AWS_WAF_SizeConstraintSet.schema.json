@@ -16,7 +16,7 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_WAF_SizeConstraintSet.SizeConstraint.schema.json"
+        "$ref" : "AWS_WAFRegional_SizeConstraintSet.SizeConstraint.schema.json"
       }
     }
   }

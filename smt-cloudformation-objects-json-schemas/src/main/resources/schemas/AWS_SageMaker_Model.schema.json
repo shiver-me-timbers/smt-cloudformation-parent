@@ -24,6 +24,13 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-vpcconfig",
       "$ref" : "AWS_SageMaker_Model.VpcConfig.schema.json"
     },
+    "Containers" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_SageMaker_Model.ContainerDefinition.schema.json"
+      }
+    },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags",
       "type" : "array",

@@ -1,8 +1,6 @@
 
 package aws.emr;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -52,7 +53,7 @@ public class InstanceTypeConfig {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-configurations")
-    private Set<Configuration> configurations = new LinkedHashSet<Configuration>();
+    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
     /**
      * EbsConfiguration
      * <p>
@@ -128,7 +129,7 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public Set<Configuration> getConfigurations() {
+    public Set<EbsConfiguration> getConfigurations() {
         return configurations;
     }
 
@@ -137,11 +138,11 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<Configuration> configurations) {
+    public void setConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
     }
 
-    public InstanceTypeConfig withConfigurations(Set<Configuration> configurations) {
+    public InstanceTypeConfig withConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
         return this;
     }

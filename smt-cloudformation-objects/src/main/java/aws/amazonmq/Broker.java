@@ -1,8 +1,6 @@
 
 package aws.amazonmq;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -33,7 +34,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "BrokerName",
     "DeploymentMode",
     "EngineType",
-    "PubliclyAccessible"
+    "PubliclyAccessible",
+    "Tags"
 })
 public class Broker {
 
@@ -134,6 +136,13 @@ public class Broker {
     @JsonProperty("PubliclyAccessible")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-publiclyaccessible")
     private Boolean publiclyAccessible;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags")
+    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups
@@ -446,14 +455,37 @@ public class Broker {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
+     * 
+     */
+    @JsonIgnore
+    public List<TagsEntry> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<TagsEntry> tags) {
+        this.tags = tags;
+    }
+
+    public Broker withTags(List<TagsEntry> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).toString();
+        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("engineVersion", engineVersion).append("configuration", configuration).append("maintenanceWindowStartTime", maintenanceWindowStartTime).append("hostInstanceType", hostInstanceType).append("autoMinorVersionUpgrade", autoMinorVersionUpgrade).append("users", users).append("logs", logs).append("subnetIds", subnetIds).append("brokerName", brokerName).append("deploymentMode", deploymentMode).append("engineType", engineType).append("publiclyAccessible", publiclyAccessible).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(publiclyAccessible).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(deploymentMode).append(maintenanceWindowStartTime).append(configuration).append(engineType).append(hostInstanceType).append(users).append(tags).append(publiclyAccessible).append(securityGroups).append(brokerName).append(logs).append(autoMinorVersionUpgrade).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -465,7 +497,7 @@ public class Broker {
             return false;
         }
         Broker rhs = ((Broker) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(publiclyAccessible, rhs.publiclyAccessible).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(deploymentMode, rhs.deploymentMode).append(maintenanceWindowStartTime, rhs.maintenanceWindowStartTime).append(configuration, rhs.configuration).append(engineType, rhs.engineType).append(hostInstanceType, rhs.hostInstanceType).append(users, rhs.users).append(tags, rhs.tags).append(publiclyAccessible, rhs.publiclyAccessible).append(securityGroups, rhs.securityGroups).append(brokerName, rhs.brokerName).append(logs, rhs.logs).append(autoMinorVersionUpgrade, rhs.autoMinorVersionUpgrade).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_CoreDefinitionResource.schema.json",
+  "title" : "CoreDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.CoreDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<CoreDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::CoreDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_CoreDefinition.schema.json"
+    }
+  }
+}

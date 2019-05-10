@@ -1,8 +1,6 @@
 
 package aws.s3;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -33,14 +34,14 @@ public class LifecycleConfiguration {
     @JsonProperty("Rules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html#cfn-s3-bucket-lifecycleconfig-rules")
-    private Set<ReplicationRule> rules = new LinkedHashSet<ReplicationRule>();
+    private Set<CorsRule> rules = new LinkedHashSet<CorsRule>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html#cfn-s3-bucket-lifecycleconfig-rules
      * 
      */
     @JsonIgnore
-    public Set<ReplicationRule> getRules() {
+    public Set<CorsRule> getRules() {
         return rules;
     }
 
@@ -49,11 +50,11 @@ public class LifecycleConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRules(Set<ReplicationRule> rules) {
+    public void setRules(Set<CorsRule> rules) {
         this.rules = rules;
     }
 
-    public LifecycleConfiguration withRules(Set<ReplicationRule> rules) {
+    public LifecycleConfiguration withRules(Set<CorsRule> rules) {
         this.rules = rules;
         return this;
     }

@@ -1,10 +1,6 @@
 
 package aws.autoscaling;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,6 +10,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -38,6 +39,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MaxSize",
     "MetricsCollection",
     "MinSize",
+    "MixedInstancesPolicy",
     "NotificationConfigurations",
     "PlacementGroup",
     "ServiceLinkedRoleARN",
@@ -148,6 +150,15 @@ public class AutoScalingGroup {
     @JsonProperty("MinSize")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize")
     private CharSequence minSize;
+    /**
+     * MixedInstancesPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
+     * 
+     */
+    @JsonProperty("MixedInstancesPolicy")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html")
+    private MixedInstancesPolicy mixedInstancesPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
@@ -527,6 +538,33 @@ public class AutoScalingGroup {
     }
 
     /**
+     * MixedInstancesPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
+     * 
+     */
+    @JsonIgnore
+    public MixedInstancesPolicy getMixedInstancesPolicy() {
+        return mixedInstancesPolicy;
+    }
+
+    /**
+     * MixedInstancesPolicy
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
+     * 
+     */
+    @JsonIgnore
+    public void setMixedInstancesPolicy(MixedInstancesPolicy mixedInstancesPolicy) {
+        this.mixedInstancesPolicy = mixedInstancesPolicy;
+    }
+
+    public AutoScalingGroup withMixedInstancesPolicy(MixedInstancesPolicy mixedInstancesPolicy) {
+        this.mixedInstancesPolicy = mixedInstancesPolicy;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
      */
@@ -689,12 +727,12 @@ public class AutoScalingGroup {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("autoScalingGroupName", autoScalingGroupName).append("availabilityZones", availabilityZones).append("cooldown", cooldown).append("desiredCapacity", desiredCapacity).append("healthCheckGracePeriod", healthCheckGracePeriod).append("healthCheckType", healthCheckType).append("instanceId", instanceId).append("launchConfigurationName", launchConfigurationName).append("launchTemplate", launchTemplate).append("lifecycleHookSpecificationList", lifecycleHookSpecificationList).append("loadBalancerNames", loadBalancerNames).append("maxSize", maxSize).append("metricsCollection", metricsCollection).append("minSize", minSize).append("notificationConfigurations", notificationConfigurations).append("placementGroup", placementGroup).append("serviceLinkedRoleARN", serviceLinkedRoleARN).append("tags", tags).append("targetGroupARNs", targetGroupARNs).append("terminationPolicies", terminationPolicies).append("vPCZoneIdentifier", vPCZoneIdentifier).toString();
+        return new ToStringBuilder(this).append("autoScalingGroupName", autoScalingGroupName).append("availabilityZones", availabilityZones).append("cooldown", cooldown).append("desiredCapacity", desiredCapacity).append("healthCheckGracePeriod", healthCheckGracePeriod).append("healthCheckType", healthCheckType).append("instanceId", instanceId).append("launchConfigurationName", launchConfigurationName).append("launchTemplate", launchTemplate).append("lifecycleHookSpecificationList", lifecycleHookSpecificationList).append("loadBalancerNames", loadBalancerNames).append("maxSize", maxSize).append("metricsCollection", metricsCollection).append("minSize", minSize).append("mixedInstancesPolicy", mixedInstancesPolicy).append("notificationConfigurations", notificationConfigurations).append("placementGroup", placementGroup).append("serviceLinkedRoleARN", serviceLinkedRoleARN).append("tags", tags).append("targetGroupARNs", targetGroupARNs).append("terminationPolicies", terminationPolicies).append("vPCZoneIdentifier", vPCZoneIdentifier).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(healthCheckType).append(loadBalancerNames).append(metricsCollection).append(terminationPolicies).append(availabilityZones).append(maxSize).append(targetGroupARNs).append(serviceLinkedRoleARN).append(tags).append(launchConfigurationName).append(notificationConfigurations).append(autoScalingGroupName).append(instanceId).append(healthCheckGracePeriod).append(cooldown).append(launchTemplate).append(minSize).append(placementGroup).append(desiredCapacity).append(lifecycleHookSpecificationList).append(vPCZoneIdentifier).toHashCode();
+        return new HashCodeBuilder().append(healthCheckType).append(loadBalancerNames).append(metricsCollection).append(terminationPolicies).append(availabilityZones).append(maxSize).append(targetGroupARNs).append(serviceLinkedRoleARN).append(tags).append(launchConfigurationName).append(notificationConfigurations).append(autoScalingGroupName).append(mixedInstancesPolicy).append(instanceId).append(healthCheckGracePeriod).append(cooldown).append(launchTemplate).append(minSize).append(placementGroup).append(desiredCapacity).append(lifecycleHookSpecificationList).append(vPCZoneIdentifier).toHashCode();
     }
 
     @Override
@@ -706,7 +744,7 @@ public class AutoScalingGroup {
             return false;
         }
         AutoScalingGroup rhs = ((AutoScalingGroup) other);
-        return new EqualsBuilder().append(healthCheckType, rhs.healthCheckType).append(loadBalancerNames, rhs.loadBalancerNames).append(metricsCollection, rhs.metricsCollection).append(terminationPolicies, rhs.terminationPolicies).append(availabilityZones, rhs.availabilityZones).append(maxSize, rhs.maxSize).append(targetGroupARNs, rhs.targetGroupARNs).append(serviceLinkedRoleARN, rhs.serviceLinkedRoleARN).append(tags, rhs.tags).append(launchConfigurationName, rhs.launchConfigurationName).append(notificationConfigurations, rhs.notificationConfigurations).append(autoScalingGroupName, rhs.autoScalingGroupName).append(instanceId, rhs.instanceId).append(healthCheckGracePeriod, rhs.healthCheckGracePeriod).append(cooldown, rhs.cooldown).append(launchTemplate, rhs.launchTemplate).append(minSize, rhs.minSize).append(placementGroup, rhs.placementGroup).append(desiredCapacity, rhs.desiredCapacity).append(lifecycleHookSpecificationList, rhs.lifecycleHookSpecificationList).append(vPCZoneIdentifier, rhs.vPCZoneIdentifier).isEquals();
+        return new EqualsBuilder().append(healthCheckType, rhs.healthCheckType).append(loadBalancerNames, rhs.loadBalancerNames).append(metricsCollection, rhs.metricsCollection).append(terminationPolicies, rhs.terminationPolicies).append(availabilityZones, rhs.availabilityZones).append(maxSize, rhs.maxSize).append(targetGroupARNs, rhs.targetGroupARNs).append(serviceLinkedRoleARN, rhs.serviceLinkedRoleARN).append(tags, rhs.tags).append(launchConfigurationName, rhs.launchConfigurationName).append(notificationConfigurations, rhs.notificationConfigurations).append(autoScalingGroupName, rhs.autoScalingGroupName).append(mixedInstancesPolicy, rhs.mixedInstancesPolicy).append(instanceId, rhs.instanceId).append(healthCheckGracePeriod, rhs.healthCheckGracePeriod).append(cooldown, rhs.cooldown).append(launchTemplate, rhs.launchTemplate).append(minSize, rhs.minSize).append(placementGroup, rhs.placementGroup).append(desiredCapacity, rhs.desiredCapacity).append(lifecycleHookSpecificationList, rhs.lifecycleHookSpecificationList).append(vPCZoneIdentifier, rhs.vPCZoneIdentifier).isEquals();
     }
 
 }

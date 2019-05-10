@@ -1,10 +1,6 @@
 
 package aws.iam;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -14,6 +10,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -28,6 +29,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ManagedPolicyArns",
     "MaxSessionDuration",
     "Path",
+    "PermissionsBoundary",
     "Policies",
     "RoleName"
 })
@@ -62,6 +64,13 @@ public class Role {
     @JsonProperty("Path")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-path")
     private CharSequence path;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-permissionsboundary
+     * 
+     */
+    @JsonProperty("PermissionsBoundary")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-permissionsboundary")
+    private CharSequence permissionsBoundary;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies
      * 
@@ -170,6 +179,29 @@ public class Role {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-permissionsboundary
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPermissionsBoundary() {
+        return permissionsBoundary;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-permissionsboundary
+     * 
+     */
+    @JsonIgnore
+    public void setPermissionsBoundary(CharSequence permissionsBoundary) {
+        this.permissionsBoundary = permissionsBoundary;
+    }
+
+    public Role withPermissionsBoundary(CharSequence permissionsBoundary) {
+        this.permissionsBoundary = permissionsBoundary;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies
      * 
      */
@@ -217,12 +249,12 @@ public class Role {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("assumeRolePolicyDocument", assumeRolePolicyDocument).append("managedPolicyArns", managedPolicyArns).append("maxSessionDuration", maxSessionDuration).append("path", path).append("policies", policies).append("roleName", roleName).toString();
+        return new ToStringBuilder(this).append("assumeRolePolicyDocument", assumeRolePolicyDocument).append("managedPolicyArns", managedPolicyArns).append("maxSessionDuration", maxSessionDuration).append("path", path).append("permissionsBoundary", permissionsBoundary).append("policies", policies).append("roleName", roleName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(path).append(assumeRolePolicyDocument).append(managedPolicyArns).append(maxSessionDuration).append(policies).append(roleName).toHashCode();
+        return new HashCodeBuilder().append(path).append(permissionsBoundary).append(assumeRolePolicyDocument).append(managedPolicyArns).append(maxSessionDuration).append(policies).append(roleName).toHashCode();
     }
 
     @Override
@@ -234,7 +266,7 @@ public class Role {
             return false;
         }
         Role rhs = ((Role) other);
-        return new EqualsBuilder().append(path, rhs.path).append(assumeRolePolicyDocument, rhs.assumeRolePolicyDocument).append(managedPolicyArns, rhs.managedPolicyArns).append(maxSessionDuration, rhs.maxSessionDuration).append(policies, rhs.policies).append(roleName, rhs.roleName).isEquals();
+        return new EqualsBuilder().append(path, rhs.path).append(permissionsBoundary, rhs.permissionsBoundary).append(assumeRolePolicyDocument, rhs.assumeRolePolicyDocument).append(managedPolicyArns, rhs.managedPolicyArns).append(maxSessionDuration, rhs.maxSessionDuration).append(policies, rhs.policies).append(roleName, rhs.roleName).isEquals();
     }
 
 }

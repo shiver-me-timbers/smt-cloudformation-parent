@@ -1,8 +1,6 @@
 
 package aws.sagemaker;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -13,6 +11,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * NotebookInstance
@@ -22,7 +23,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "RootAccess",
     "KmsKeyId",
+    "VolumeSizeInGB",
     "DirectInternetAccess",
     "SubnetId",
     "NotebookInstanceName",
@@ -35,12 +38,26 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class NotebookInstance {
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonProperty("RootAccess")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess")
+    private CharSequence rootAccess;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid
      * 
      */
     @JsonProperty("KmsKeyId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid")
     private CharSequence kmsKeyId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb
+     * 
+     */
+    @JsonProperty("VolumeSizeInGB")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb")
+    private Integer volumeSizeInGB;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess
      * 
@@ -99,6 +116,29 @@ public class NotebookInstance {
     private List<Tag> tags = new ArrayList<Tag>();
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getRootAccess() {
+        return rootAccess;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess
+     * 
+     */
+    @JsonIgnore
+    public void setRootAccess(CharSequence rootAccess) {
+        this.rootAccess = rootAccess;
+    }
+
+    public NotebookInstance withRootAccess(CharSequence rootAccess) {
+        this.rootAccess = rootAccess;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid
      * 
      */
@@ -118,6 +158,29 @@ public class NotebookInstance {
 
     public NotebookInstance withKmsKeyId(CharSequence kmsKeyId) {
         this.kmsKeyId = kmsKeyId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb
+     * 
+     */
+    @JsonIgnore
+    public Integer getVolumeSizeInGB() {
+        return volumeSizeInGB;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb
+     * 
+     */
+    @JsonIgnore
+    public void setVolumeSizeInGB(Integer volumeSizeInGB) {
+        this.volumeSizeInGB = volumeSizeInGB;
+    }
+
+    public NotebookInstance withVolumeSizeInGB(Integer volumeSizeInGB) {
+        this.volumeSizeInGB = volumeSizeInGB;
         return this;
     }
 
@@ -307,12 +370,12 @@ public class NotebookInstance {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("directInternetAccess", directInternetAccess).append("subnetId", subnetId).append("notebookInstanceName", notebookInstanceName).append("instanceType", instanceType).append("lifecycleConfigName", lifecycleConfigName).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("rootAccess", rootAccess).append("kmsKeyId", kmsKeyId).append("volumeSizeInGB", volumeSizeInGB).append("directInternetAccess", directInternetAccess).append("subnetId", subnetId).append("notebookInstanceName", notebookInstanceName).append("instanceType", instanceType).append("lifecycleConfigName", lifecycleConfigName).append("securityGroupIds", securityGroupIds).append("roleArn", roleArn).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(lifecycleConfigName).append(securityGroupIds).append(roleArn).append(instanceType).append(notebookInstanceName).append(kmsKeyId).append(directInternetAccess).append(tags).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(lifecycleConfigName).append(volumeSizeInGB).append(rootAccess).append(securityGroupIds).append(roleArn).append(instanceType).append(notebookInstanceName).append(kmsKeyId).append(directInternetAccess).append(tags).toHashCode();
     }
 
     @Override
@@ -324,7 +387,7 @@ public class NotebookInstance {
             return false;
         }
         NotebookInstance rhs = ((NotebookInstance) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(lifecycleConfigName, rhs.lifecycleConfigName).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(instanceType, rhs.instanceType).append(notebookInstanceName, rhs.notebookInstanceName).append(kmsKeyId, rhs.kmsKeyId).append(directInternetAccess, rhs.directInternetAccess).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(lifecycleConfigName, rhs.lifecycleConfigName).append(volumeSizeInGB, rhs.volumeSizeInGB).append(rootAccess, rhs.rootAccess).append(securityGroupIds, rhs.securityGroupIds).append(roleArn, rhs.roleArn).append(instanceType, rhs.instanceType).append(notebookInstanceName, rhs.notebookInstanceName).append(kmsKeyId, rhs.kmsKeyId).append(directInternetAccess, rhs.directInternetAccess).append(tags, rhs.tags).isEquals();
     }
 
 }

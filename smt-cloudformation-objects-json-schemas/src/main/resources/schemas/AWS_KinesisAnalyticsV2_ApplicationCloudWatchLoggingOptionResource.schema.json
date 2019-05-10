@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOptionResource.schema.json",
+  "title" : "ApplicationCloudWatchLoggingOptionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption"
+    },
+    "Properties" : {
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOption.schema.json"
+    }
+  }
+}

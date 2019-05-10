@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualRouterResource.schema.json",
+  "title" : "VirtualRouterResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appmesh.VirtualRouterResource",
+  "javaInterfaces" : [ "aws.HasAttributes<VirtualRouterAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppMesh::VirtualRouter"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppMesh_VirtualRouter.schema.json"
+    }
+  }
+}

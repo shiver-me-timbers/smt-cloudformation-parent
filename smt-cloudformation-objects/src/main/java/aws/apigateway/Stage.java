@@ -1,9 +1,7 @@
 
 package aws.apigateway;
 
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -13,6 +11,12 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -34,6 +38,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MethodSettings",
     "RestApiId",
     "StageName",
+    "Tags",
+    "TracingEnabled",
     "Variables"
 })
 public class Stage {
@@ -120,6 +126,20 @@ public class Stage {
     @JsonProperty("StageName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename")
     private CharSequence stageName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tags")
+    private List<Tag> tags = new ArrayList<Tag>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled
+     * 
+     */
+    @JsonProperty("TracingEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled")
+    private Boolean tracingEnabled;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
@@ -390,6 +410,52 @@ public class Stage {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Tag> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Tag> tags) {
+        this.tags = tags;
+    }
+
+    public Stage withTags(List<Tag> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled
+     * 
+     */
+    @JsonIgnore
+    public Boolean getTracingEnabled() {
+        return tracingEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled
+     * 
+     */
+    @JsonIgnore
+    public void setTracingEnabled(Boolean tracingEnabled) {
+        this.tracingEnabled = tracingEnabled;
+    }
+
+    public Stage withTracingEnabled(Boolean tracingEnabled) {
+        this.tracingEnabled = tracingEnabled;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-variables
      * 
      */
@@ -414,12 +480,12 @@ public class Stage {
 
     @Override
     public java.lang.String toString() {
-        return new ToStringBuilder(this).append("accessLogSetting", accessLogSetting).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("canarySetting", canarySetting).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("documentationVersion", documentationVersion).append("methodSettings", methodSettings).append("restApiId", restApiId).append("stageName", stageName).append("variables", variables).toString();
+        return new ToStringBuilder(this).append("accessLogSetting", accessLogSetting).append("cacheClusterEnabled", cacheClusterEnabled).append("cacheClusterSize", cacheClusterSize).append("canarySetting", canarySetting).append("clientCertificateId", clientCertificateId).append("deploymentId", deploymentId).append("description", description).append("documentationVersion", documentationVersion).append("methodSettings", methodSettings).append("restApiId", restApiId).append("stageName", stageName).append("tags", tags).append("tracingEnabled", tracingEnabled).append("variables", variables).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(variables).append(clientCertificateId).append(description).append(cacheClusterEnabled).append(canarySetting).append(stageName).append(documentationVersion).append(restApiId).append(deploymentId).append(accessLogSetting).append(cacheClusterSize).append(methodSettings).toHashCode();
+        return new HashCodeBuilder().append(variables).append(clientCertificateId).append(description).append(cacheClusterEnabled).append(canarySetting).append(tags).append(stageName).append(documentationVersion).append(restApiId).append(deploymentId).append(accessLogSetting).append(cacheClusterSize).append(methodSettings).append(tracingEnabled).toHashCode();
     }
 
     @Override
@@ -431,7 +497,7 @@ public class Stage {
             return false;
         }
         Stage rhs = ((Stage) other);
-        return new EqualsBuilder().append(variables, rhs.variables).append(clientCertificateId, rhs.clientCertificateId).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(canarySetting, rhs.canarySetting).append(stageName, rhs.stageName).append(documentationVersion, rhs.documentationVersion).append(restApiId, rhs.restApiId).append(deploymentId, rhs.deploymentId).append(accessLogSetting, rhs.accessLogSetting).append(cacheClusterSize, rhs.cacheClusterSize).append(methodSettings, rhs.methodSettings).isEquals();
+        return new EqualsBuilder().append(variables, rhs.variables).append(clientCertificateId, rhs.clientCertificateId).append(description, rhs.description).append(cacheClusterEnabled, rhs.cacheClusterEnabled).append(canarySetting, rhs.canarySetting).append(tags, rhs.tags).append(stageName, rhs.stageName).append(documentationVersion, rhs.documentationVersion).append(restApiId, rhs.restApiId).append(deploymentId, rhs.deploymentId).append(accessLogSetting, rhs.accessLogSetting).append(cacheClusterSize, rhs.cacheClusterSize).append(methodSettings, rhs.methodSettings).append(tracingEnabled, rhs.tracingEnabled).isEquals();
     }
 
 }

@@ -1,16 +1,18 @@
 
 package aws.ec2;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -21,38 +23,17 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "VpcId",
-    "RouteTableIds",
-    "ServiceName",
     "PolicyDocument",
-    "IsPrivateDnsEnabled",
-    "SubnetIds",
+    "PrivateDnsEnabled",
+    "RouteTableIds",
     "SecurityGroupIds",
-    "VPCEndpointType"
+    "ServiceName",
+    "SubnetIds",
+    "VpcEndpointType",
+    "VpcId"
 })
 public class VPCEndpoint {
 
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
-     * 
-     */
-    @JsonProperty("VpcId")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid")
-    private CharSequence vpcId;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids
-     * 
-     */
-    @JsonProperty("RouteTableIds")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids")
-    private List<CharSequence> routeTableIds = new ArrayList<CharSequence>();
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename
-     * 
-     */
-    @JsonProperty("ServiceName")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename")
-    private CharSequence serviceName;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
      * 
@@ -61,54 +42,101 @@ public class VPCEndpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument")
     private Object policyDocument;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-isprivatednsenabled
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled
      * 
      */
-    @JsonProperty("IsPrivateDnsEnabled")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-isprivatednsenabled")
-    private Boolean isPrivateDnsEnabled;
+    @JsonProperty("PrivateDnsEnabled")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled")
+    private Boolean privateDnsEnabled;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids
      * 
      */
-    @JsonProperty("SubnetIds")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids")
-    private List<CharSequence> subnetIds = new ArrayList<CharSequence>();
+    @JsonProperty("RouteTableIds")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-routetableids")
+    private Set<CharSequence> routeTableIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
      * 
      */
     @JsonProperty("SecurityGroupIds")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids")
-    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
+    private Set<CharSequence> securityGroupIds = new LinkedHashSet<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename
+     * 
+     */
+    @JsonProperty("ServiceName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-servicename")
+    private CharSequence serviceName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids
+     * 
+     */
+    @JsonProperty("SubnetIds")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids")
+    private Set<CharSequence> subnetIds = new LinkedHashSet<CharSequence>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcendpointtype
      * 
      */
-    @JsonProperty("VPCEndpointType")
+    @JsonProperty("VpcEndpointType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcendpointtype")
-    private CharSequence vPCEndpointType;
-
+    private CharSequence vpcEndpointType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
      * 
      */
-    @JsonIgnore
-    public CharSequence getVpcId() {
-        return vpcId;
-    }
+    @JsonProperty("VpcId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid")
+    private CharSequence vpcId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
      * 
      */
     @JsonIgnore
-    public void setVpcId(CharSequence vpcId) {
-        this.vpcId = vpcId;
+    public Object getPolicyDocument() {
+        return policyDocument;
     }
 
-    public VPCEndpoint withVpcId(CharSequence vpcId) {
-        this.vpcId = vpcId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
+     * 
+     */
+    @JsonIgnore
+    public void setPolicyDocument(Object policyDocument) {
+        this.policyDocument = policyDocument;
+    }
+
+    public VPCEndpoint withPolicyDocument(Object policyDocument) {
+        this.policyDocument = policyDocument;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled
+     * 
+     */
+    @JsonIgnore
+    public Boolean getPrivateDnsEnabled() {
+        return privateDnsEnabled;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled
+     * 
+     */
+    @JsonIgnore
+    public void setPrivateDnsEnabled(Boolean privateDnsEnabled) {
+        this.privateDnsEnabled = privateDnsEnabled;
+    }
+
+    public VPCEndpoint withPrivateDnsEnabled(Boolean privateDnsEnabled) {
+        this.privateDnsEnabled = privateDnsEnabled;
         return this;
     }
 
@@ -117,7 +145,7 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public List<CharSequence> getRouteTableIds() {
+    public Set<CharSequence> getRouteTableIds() {
         return routeTableIds;
     }
 
@@ -126,12 +154,35 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public void setRouteTableIds(List<CharSequence> routeTableIds) {
+    public void setRouteTableIds(Set<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
     }
 
-    public VPCEndpoint withRouteTableIds(List<CharSequence> routeTableIds) {
+    public VPCEndpoint withRouteTableIds(Set<CharSequence> routeTableIds) {
         this.routeTableIds = routeTableIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public Set<CharSequence> getSecurityGroupIds() {
+        return securityGroupIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityGroupIds(Set<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+    }
+
+    public VPCEndpoint withSecurityGroupIds(Set<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
         return this;
     }
 
@@ -159,57 +210,11 @@ public class VPCEndpoint {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
-     * 
-     */
-    @JsonIgnore
-    public Object getPolicyDocument() {
-        return policyDocument;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
-     * 
-     */
-    @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
-        this.policyDocument = policyDocument;
-    }
-
-    public VPCEndpoint withPolicyDocument(Object policyDocument) {
-        this.policyDocument = policyDocument;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-isprivatednsenabled
-     * 
-     */
-    @JsonIgnore
-    public Boolean getIsPrivateDnsEnabled() {
-        return isPrivateDnsEnabled;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-isprivatednsenabled
-     * 
-     */
-    @JsonIgnore
-    public void setIsPrivateDnsEnabled(Boolean isPrivateDnsEnabled) {
-        this.isPrivateDnsEnabled = isPrivateDnsEnabled;
-    }
-
-    public VPCEndpoint withIsPrivateDnsEnabled(Boolean isPrivateDnsEnabled) {
-        this.isPrivateDnsEnabled = isPrivateDnsEnabled;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-subnetids
      * 
      */
     @JsonIgnore
-    public List<CharSequence> getSubnetIds() {
+    public Set<CharSequence> getSubnetIds() {
         return subnetIds;
     }
 
@@ -218,35 +223,12 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public void setSubnetIds(List<CharSequence> subnetIds) {
+    public void setSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
     }
 
-    public VPCEndpoint withSubnetIds(List<CharSequence> subnetIds) {
+    public VPCEndpoint withSubnetIds(Set<CharSequence> subnetIds) {
         this.subnetIds = subnetIds;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getSecurityGroupIds() {
-        return securityGroupIds;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
-    }
-
-    public VPCEndpoint withSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
         return this;
     }
 
@@ -255,8 +237,8 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public CharSequence getVPCEndpointType() {
-        return vPCEndpointType;
+    public CharSequence getVpcEndpointType() {
+        return vpcEndpointType;
     }
 
     /**
@@ -264,23 +246,46 @@ public class VPCEndpoint {
      * 
      */
     @JsonIgnore
-    public void setVPCEndpointType(CharSequence vPCEndpointType) {
-        this.vPCEndpointType = vPCEndpointType;
+    public void setVpcEndpointType(CharSequence vpcEndpointType) {
+        this.vpcEndpointType = vpcEndpointType;
     }
 
-    public VPCEndpoint withVPCEndpointType(CharSequence vPCEndpointType) {
-        this.vPCEndpointType = vPCEndpointType;
+    public VPCEndpoint withVpcEndpointType(CharSequence vpcEndpointType) {
+        this.vpcEndpointType = vpcEndpointType;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getVpcId() {
+        return vpcId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-vpcid
+     * 
+     */
+    @JsonIgnore
+    public void setVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
+    }
+
+    public VPCEndpoint withVpcId(CharSequence vpcId) {
+        this.vpcId = vpcId;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("vpcId", vpcId).append("routeTableIds", routeTableIds).append("serviceName", serviceName).append("policyDocument", policyDocument).append("isPrivateDnsEnabled", isPrivateDnsEnabled).append("subnetIds", subnetIds).append("securityGroupIds", securityGroupIds).append("vPCEndpointType", vPCEndpointType).toString();
+        return new ToStringBuilder(this).append("policyDocument", policyDocument).append("privateDnsEnabled", privateDnsEnabled).append("routeTableIds", routeTableIds).append("securityGroupIds", securityGroupIds).append("serviceName", serviceName).append("subnetIds", subnetIds).append("vpcEndpointType", vpcEndpointType).append("vpcId", vpcId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(policyDocument).append(routeTableIds).append(securityGroupIds).append(vpcId).append(isPrivateDnsEnabled).append(serviceName).append(vPCEndpointType).append(subnetIds).toHashCode();
+        return new HashCodeBuilder().append(policyDocument).append(routeTableIds).append(securityGroupIds).append(vpcEndpointType).append(vpcId).append(privateDnsEnabled).append(serviceName).append(subnetIds).toHashCode();
     }
 
     @Override
@@ -292,7 +297,7 @@ public class VPCEndpoint {
             return false;
         }
         VPCEndpoint rhs = ((VPCEndpoint) other);
-        return new EqualsBuilder().append(policyDocument, rhs.policyDocument).append(routeTableIds, rhs.routeTableIds).append(securityGroupIds, rhs.securityGroupIds).append(vpcId, rhs.vpcId).append(isPrivateDnsEnabled, rhs.isPrivateDnsEnabled).append(serviceName, rhs.serviceName).append(vPCEndpointType, rhs.vPCEndpointType).append(subnetIds, rhs.subnetIds).isEquals();
+        return new EqualsBuilder().append(policyDocument, rhs.policyDocument).append(routeTableIds, rhs.routeTableIds).append(securityGroupIds, rhs.securityGroupIds).append(vpcEndpointType, rhs.vpcEndpointType).append(vpcId, rhs.vpcId).append(privateDnsEnabled, rhs.privateDnsEnabled).append(serviceName, rhs.serviceName).append(subnetIds, rhs.subnetIds).isEquals();
     }
 
 }

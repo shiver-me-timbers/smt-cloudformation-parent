@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_FunctionDefinition.ResourceAccessPolicy.schema.json",
+  "title" : "ResourceAccessPolicy",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-resourceaccesspolicy.html",
+  "type" : "object",
+  "javaType" : "aws.greengrass.ResourceAccessPolicy",
+  "properties" : {
+    "ResourceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-resourceaccesspolicy.html#cfn-greengrass-functiondefinition-resourceaccesspolicy-resourceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Permission" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-resourceaccesspolicy.html#cfn-greengrass-functiondefinition-resourceaccesspolicy-permission",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

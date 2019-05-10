@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_DeviceDefinitionResource.schema.json",
+  "title" : "DeviceDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.DeviceDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<DeviceDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::DeviceDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_DeviceDefinition.schema.json"
+    }
+  }
+}

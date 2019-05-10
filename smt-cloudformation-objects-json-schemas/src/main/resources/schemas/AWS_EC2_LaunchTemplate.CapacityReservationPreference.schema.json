@@ -1,0 +1,7 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json",
+  "title" : "CapacityReservationPreference",
+  "type" : "string",
+  "javaType" : "java.lang.CharSequence"
+}

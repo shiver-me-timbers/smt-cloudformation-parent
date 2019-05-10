@@ -6,10 +6,19 @@
   "type" : "object",
   "javaType" : "aws.sagemaker.NotebookInstance",
   "properties" : {
+    "RootAccess" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-rootaccess",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "KmsKeyId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-kmskeyid",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "VolumeSizeInGB" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-volumesizeingb",
+      "type" : "integer"
     },
     "DirectInternetAccess" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstance.html#cfn-sagemaker-notebookinstance-directinternetaccess",

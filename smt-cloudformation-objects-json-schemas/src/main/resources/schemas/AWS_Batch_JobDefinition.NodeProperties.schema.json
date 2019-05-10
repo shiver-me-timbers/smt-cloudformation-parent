@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Batch_JobDefinition.NodeProperties.schema.json",
+  "title" : "NodeProperties",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html",
+  "type" : "object",
+  "javaType" : "aws.batch.NodeProperties",
+  "properties" : {
+    "MainNode" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-mainnode",
+      "type" : "integer"
+    },
+    "NodeRangeProperties" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-noderangeproperties",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Batch_JobDefinition.NodeRangeProperty.schema.json"
+      }
+    },
+    "NumNodes" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-numnodes",
+      "type" : "integer"
+    }
+  }
+}

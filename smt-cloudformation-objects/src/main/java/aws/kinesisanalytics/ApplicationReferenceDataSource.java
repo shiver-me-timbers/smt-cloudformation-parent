@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.kinesisanalyticsv2.ReferenceDataSource;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,14 +33,14 @@ public class ApplicationReferenceDataSource {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-applicationname")
     private CharSequence applicationName;
     /**
-     * S3ReferenceDataSource
+     * ReferenceDataSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource.html
      * 
      */
     @JsonProperty("ReferenceDataSource")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html")
-    private S3ReferenceDataSource referenceDataSource;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource.html")
+    private ReferenceDataSource referenceDataSource;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-applicationname
@@ -65,28 +66,28 @@ public class ApplicationReferenceDataSource {
     }
 
     /**
-     * S3ReferenceDataSource
+     * ReferenceDataSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource.html
      * 
      */
     @JsonIgnore
-    public S3ReferenceDataSource getReferenceDataSource() {
+    public ReferenceDataSource getReferenceDataSource() {
         return referenceDataSource;
     }
 
     /**
-     * S3ReferenceDataSource
+     * ReferenceDataSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource.html
      * 
      */
     @JsonIgnore
-    public void setReferenceDataSource(S3ReferenceDataSource referenceDataSource) {
+    public void setReferenceDataSource(ReferenceDataSource referenceDataSource) {
         this.referenceDataSource = referenceDataSource;
     }
 
-    public ApplicationReferenceDataSource withReferenceDataSource(S3ReferenceDataSource referenceDataSource) {
+    public ApplicationReferenceDataSource withReferenceDataSource(ReferenceDataSource referenceDataSource) {
         this.referenceDataSource = referenceDataSource;
         return this;
     }

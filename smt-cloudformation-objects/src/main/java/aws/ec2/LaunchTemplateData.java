@@ -1,8 +1,6 @@
 
 package aws.ec2;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -24,22 +25,27 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SecurityGroups",
     "TagSpecifications",
     "UserData",
-    "InstanceInitiatedShutdownBehavior",
     "BlockDeviceMappings",
     "IamInstanceProfile",
     "KernelId",
-    "SecurityGroupIds",
     "EbsOptimized",
-    "KeyName",
-    "DisableApiTermination",
     "ElasticGpuSpecifications",
+    "ElasticInferenceAccelerators",
     "Placement",
-    "InstanceMarketOptions",
     "NetworkInterfaces",
     "ImageId",
     "InstanceType",
-    "RamDiskId",
     "Monitoring",
+    "HibernationOptions",
+    "LicenseSpecifications",
+    "InstanceInitiatedShutdownBehavior",
+    "CpuOptions",
+    "SecurityGroupIds",
+    "KeyName",
+    "DisableApiTermination",
+    "InstanceMarketOptions",
+    "RamDiskId",
+    "CapacityReservationSpecification",
     "CreditSpecification"
 })
 public class LaunchTemplateData {
@@ -66,13 +72,6 @@ public class LaunchTemplateData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-userdata")
     private CharSequence userData;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
-     * 
-     */
-    @JsonProperty("InstanceInitiatedShutdownBehavior")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior")
-    private CharSequence instanceInitiatedShutdownBehavior;
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings
      * 
      */
@@ -96,33 +95,12 @@ public class LaunchTemplateData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-kernelid")
     private CharSequence kernelId;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
-     * 
-     */
-    @JsonProperty("SecurityGroupIds")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids")
-    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ebsoptimized
      * 
      */
     @JsonProperty("EbsOptimized")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ebsoptimized")
     private Boolean ebsOptimized;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
-     * 
-     */
-    @JsonProperty("KeyName")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname")
-    private CharSequence keyName;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
-     * 
-     */
-    @JsonProperty("DisableApiTermination")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination")
-    private Boolean disableApiTermination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticgpuspecifications
      * 
@@ -131,23 +109,21 @@ public class LaunchTemplateData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticgpuspecifications")
     private List<ElasticGpuSpecification> elasticGpuSpecifications = new ArrayList<ElasticGpuSpecification>();
     /**
-     * Placement
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators
+     * 
+     */
+    @JsonProperty("ElasticInferenceAccelerators")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators")
+    private List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators = new ArrayList<LaunchTemplateElasticInferenceAccelerator>();
+    /**
+     * SpotPlacement
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html
      * 
      */
     @JsonProperty("Placement")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html")
-    private Placement placement;
-    /**
-     * InstanceMarketOptions
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
-     * 
-     */
-    @JsonProperty("InstanceMarketOptions")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html")
-    private InstanceMarketOptions instanceMarketOptions;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html")
+    private SpotPlacement placement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-networkinterfaces
      * 
@@ -170,6 +146,77 @@ public class LaunchTemplateData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instancetype")
     private CharSequence instanceType;
     /**
+     * SpotFleetMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html
+     * 
+     */
+    @JsonProperty("Monitoring")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html")
+    private SpotFleetMonitoring monitoring;
+    /**
+     * HibernationOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html
+     * 
+     */
+    @JsonProperty("HibernationOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html")
+    private HibernationOptions hibernationOptions;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
+     * 
+     */
+    @JsonProperty("LicenseSpecifications")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications")
+    private List<LicenseSpecification> licenseSpecifications = new ArrayList<LicenseSpecification>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
+     * 
+     */
+    @JsonProperty("InstanceInitiatedShutdownBehavior")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior")
+    private CharSequence instanceInitiatedShutdownBehavior;
+    /**
+     * CpuOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html
+     * 
+     */
+    @JsonProperty("CpuOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html")
+    private CpuOptions cpuOptions;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
+     * 
+     */
+    @JsonProperty("SecurityGroupIds")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids")
+    private List<CharSequence> securityGroupIds = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
+     * 
+     */
+    @JsonProperty("KeyName")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname")
+    private CharSequence keyName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
+     * 
+     */
+    @JsonProperty("DisableApiTermination")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination")
+    private Boolean disableApiTermination;
+    /**
+     * InstanceMarketOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
+     * 
+     */
+    @JsonProperty("InstanceMarketOptions")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html")
+    private InstanceMarketOptions instanceMarketOptions;
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid
      * 
      */
@@ -177,22 +224,22 @@ public class LaunchTemplateData {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid")
     private CharSequence ramDiskId;
     /**
-     * Monitoring
+     * CapacityReservationSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html
      * 
      */
-    @JsonProperty("Monitoring")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html")
-    private Monitoring monitoring;
+    @JsonProperty("CapacityReservationSpecification")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html")
+    private CapacityReservationSpecification capacityReservationSpecification;
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonProperty("CreditSpecification")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html")
     private CreditSpecification creditSpecification;
 
     /**
@@ -261,29 +308,6 @@ public class LaunchTemplateData {
 
     public LaunchTemplateData withUserData(CharSequence userData) {
         this.userData = userData;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getInstanceInitiatedShutdownBehavior() {
-        return instanceInitiatedShutdownBehavior;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
-     * 
-     */
-    @JsonIgnore
-    public void setInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
-        this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
-    }
-
-    public LaunchTemplateData withInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
-        this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
         return this;
     }
 
@@ -361,29 +385,6 @@ public class LaunchTemplateData {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getSecurityGroupIds() {
-        return securityGroupIds;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
-     * 
-     */
-    @JsonIgnore
-    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
-    }
-
-    public LaunchTemplateData withSecurityGroupIds(List<CharSequence> securityGroupIds) {
-        this.securityGroupIds = securityGroupIds;
-        return this;
-    }
-
-    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ebsoptimized
      * 
      */
@@ -403,52 +404,6 @@ public class LaunchTemplateData {
 
     public LaunchTemplateData withEbsOptimized(Boolean ebsOptimized) {
         this.ebsOptimized = ebsOptimized;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getKeyName() {
-        return keyName;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
-     * 
-     */
-    @JsonIgnore
-    public void setKeyName(CharSequence keyName) {
-        this.keyName = keyName;
-    }
-
-    public LaunchTemplateData withKeyName(CharSequence keyName) {
-        this.keyName = keyName;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
-     * 
-     */
-    @JsonIgnore
-    public Boolean getDisableApiTermination() {
-        return disableApiTermination;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
-     * 
-     */
-    @JsonIgnore
-    public void setDisableApiTermination(Boolean disableApiTermination) {
-        this.disableApiTermination = disableApiTermination;
-    }
-
-    public LaunchTemplateData withDisableApiTermination(Boolean disableApiTermination) {
-        this.disableApiTermination = disableApiTermination;
         return this;
     }
 
@@ -476,56 +431,52 @@ public class LaunchTemplateData {
     }
 
     /**
-     * Placement
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators
      * 
      */
     @JsonIgnore
-    public Placement getPlacement() {
-        return placement;
+    public List<LaunchTemplateElasticInferenceAccelerator> getElasticInferenceAccelerators() {
+        return elasticInferenceAccelerators;
     }
 
     /**
-     * Placement
-     * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators
      * 
      */
     @JsonIgnore
-    public void setPlacement(Placement placement) {
-        this.placement = placement;
+    public void setElasticInferenceAccelerators(List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators) {
+        this.elasticInferenceAccelerators = elasticInferenceAccelerators;
     }
 
-    public LaunchTemplateData withPlacement(Placement placement) {
-        this.placement = placement;
+    public LaunchTemplateData withElasticInferenceAccelerators(List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators) {
+        this.elasticInferenceAccelerators = elasticInferenceAccelerators;
         return this;
     }
 
     /**
-     * InstanceMarketOptions
+     * SpotPlacement
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html
      * 
      */
     @JsonIgnore
-    public InstanceMarketOptions getInstanceMarketOptions() {
-        return instanceMarketOptions;
+    public SpotPlacement getPlacement() {
+        return placement;
     }
 
     /**
-     * InstanceMarketOptions
+     * SpotPlacement
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html
      * 
      */
     @JsonIgnore
-    public void setInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
-        this.instanceMarketOptions = instanceMarketOptions;
+    public void setPlacement(SpotPlacement placement) {
+        this.placement = placement;
     }
 
-    public LaunchTemplateData withInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
-        this.instanceMarketOptions = instanceMarketOptions;
+    public LaunchTemplateData withPlacement(SpotPlacement placement) {
+        this.placement = placement;
         return this;
     }
 
@@ -599,6 +550,229 @@ public class LaunchTemplateData {
     }
 
     /**
+     * SpotFleetMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html
+     * 
+     */
+    @JsonIgnore
+    public SpotFleetMonitoring getMonitoring() {
+        return monitoring;
+    }
+
+    /**
+     * SpotFleetMonitoring
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html
+     * 
+     */
+    @JsonIgnore
+    public void setMonitoring(SpotFleetMonitoring monitoring) {
+        this.monitoring = monitoring;
+    }
+
+    public LaunchTemplateData withMonitoring(SpotFleetMonitoring monitoring) {
+        this.monitoring = monitoring;
+        return this;
+    }
+
+    /**
+     * HibernationOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html
+     * 
+     */
+    @JsonIgnore
+    public HibernationOptions getHibernationOptions() {
+        return hibernationOptions;
+    }
+
+    /**
+     * HibernationOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setHibernationOptions(HibernationOptions hibernationOptions) {
+        this.hibernationOptions = hibernationOptions;
+    }
+
+    public LaunchTemplateData withHibernationOptions(HibernationOptions hibernationOptions) {
+        this.hibernationOptions = hibernationOptions;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
+     * 
+     */
+    @JsonIgnore
+    public List<LicenseSpecification> getLicenseSpecifications() {
+        return licenseSpecifications;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
+     * 
+     */
+    @JsonIgnore
+    public void setLicenseSpecifications(List<LicenseSpecification> licenseSpecifications) {
+        this.licenseSpecifications = licenseSpecifications;
+    }
+
+    public LaunchTemplateData withLicenseSpecifications(List<LicenseSpecification> licenseSpecifications) {
+        this.licenseSpecifications = licenseSpecifications;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getInstanceInitiatedShutdownBehavior() {
+        return instanceInitiatedShutdownBehavior;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
+     * 
+     */
+    @JsonIgnore
+    public void setInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
+        this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
+    }
+
+    public LaunchTemplateData withInstanceInitiatedShutdownBehavior(CharSequence instanceInitiatedShutdownBehavior) {
+        this.instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior;
+        return this;
+    }
+
+    /**
+     * CpuOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html
+     * 
+     */
+    @JsonIgnore
+    public CpuOptions getCpuOptions() {
+        return cpuOptions;
+    }
+
+    /**
+     * CpuOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setCpuOptions(CpuOptions cpuOptions) {
+        this.cpuOptions = cpuOptions;
+    }
+
+    public LaunchTemplateData withCpuOptions(CpuOptions cpuOptions) {
+        this.cpuOptions = cpuOptions;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getSecurityGroupIds() {
+        return securityGroupIds;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
+     * 
+     */
+    @JsonIgnore
+    public void setSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+    }
+
+    public LaunchTemplateData withSecurityGroupIds(List<CharSequence> securityGroupIds) {
+        this.securityGroupIds = securityGroupIds;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKeyName() {
+        return keyName;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-keyname
+     * 
+     */
+    @JsonIgnore
+    public void setKeyName(CharSequence keyName) {
+        this.keyName = keyName;
+    }
+
+    public LaunchTemplateData withKeyName(CharSequence keyName) {
+        this.keyName = keyName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
+     * 
+     */
+    @JsonIgnore
+    public Boolean getDisableApiTermination() {
+        return disableApiTermination;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-disableapitermination
+     * 
+     */
+    @JsonIgnore
+    public void setDisableApiTermination(Boolean disableApiTermination) {
+        this.disableApiTermination = disableApiTermination;
+    }
+
+    public LaunchTemplateData withDisableApiTermination(Boolean disableApiTermination) {
+        this.disableApiTermination = disableApiTermination;
+        return this;
+    }
+
+    /**
+     * InstanceMarketOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
+     * 
+     */
+    @JsonIgnore
+    public InstanceMarketOptions getInstanceMarketOptions() {
+        return instanceMarketOptions;
+    }
+
+    /**
+     * InstanceMarketOptions
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html
+     * 
+     */
+    @JsonIgnore
+    public void setInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
+        this.instanceMarketOptions = instanceMarketOptions;
+    }
+
+    public LaunchTemplateData withInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
+        this.instanceMarketOptions = instanceMarketOptions;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid
      * 
      */
@@ -622,36 +796,36 @@ public class LaunchTemplateData {
     }
 
     /**
-     * Monitoring
+     * CapacityReservationSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html
      * 
      */
     @JsonIgnore
-    public Monitoring getMonitoring() {
-        return monitoring;
+    public CapacityReservationSpecification getCapacityReservationSpecification() {
+        return capacityReservationSpecification;
     }
 
     /**
-     * Monitoring
+     * CapacityReservationSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-monitoring.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html
      * 
      */
     @JsonIgnore
-    public void setMonitoring(Monitoring monitoring) {
-        this.monitoring = monitoring;
+    public void setCapacityReservationSpecification(CapacityReservationSpecification capacityReservationSpecification) {
+        this.capacityReservationSpecification = capacityReservationSpecification;
     }
 
-    public LaunchTemplateData withMonitoring(Monitoring monitoring) {
-        this.monitoring = monitoring;
+    public LaunchTemplateData withCapacityReservationSpecification(CapacityReservationSpecification capacityReservationSpecification) {
+        this.capacityReservationSpecification = capacityReservationSpecification;
         return this;
     }
 
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonIgnore
@@ -662,7 +836,7 @@ public class LaunchTemplateData {
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonIgnore
@@ -677,12 +851,12 @@ public class LaunchTemplateData {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("tagSpecifications", tagSpecifications).append("userData", userData).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("blockDeviceMappings", blockDeviceMappings).append("iamInstanceProfile", iamInstanceProfile).append("kernelId", kernelId).append("securityGroupIds", securityGroupIds).append("ebsOptimized", ebsOptimized).append("keyName", keyName).append("disableApiTermination", disableApiTermination).append("elasticGpuSpecifications", elasticGpuSpecifications).append("placement", placement).append("instanceMarketOptions", instanceMarketOptions).append("networkInterfaces", networkInterfaces).append("imageId", imageId).append("instanceType", instanceType).append("ramDiskId", ramDiskId).append("monitoring", monitoring).append("creditSpecification", creditSpecification).toString();
+        return new ToStringBuilder(this).append("securityGroups", securityGroups).append("tagSpecifications", tagSpecifications).append("userData", userData).append("blockDeviceMappings", blockDeviceMappings).append("iamInstanceProfile", iamInstanceProfile).append("kernelId", kernelId).append("ebsOptimized", ebsOptimized).append("elasticGpuSpecifications", elasticGpuSpecifications).append("elasticInferenceAccelerators", elasticInferenceAccelerators).append("placement", placement).append("networkInterfaces", networkInterfaces).append("imageId", imageId).append("instanceType", instanceType).append("monitoring", monitoring).append("hibernationOptions", hibernationOptions).append("licenseSpecifications", licenseSpecifications).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("cpuOptions", cpuOptions).append("securityGroupIds", securityGroupIds).append("keyName", keyName).append("disableApiTermination", disableApiTermination).append("instanceMarketOptions", instanceMarketOptions).append("ramDiskId", ramDiskId).append("capacityReservationSpecification", capacityReservationSpecification).append("creditSpecification", creditSpecification).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(tagSpecifications).append(elasticGpuSpecifications).append(kernelId).append(ebsOptimized).append(userData).append(imageId).append(blockDeviceMappings).append(instanceType).append(keyName).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(ramDiskId).append(instanceInitiatedShutdownBehavior).append(disableApiTermination).append(networkInterfaces).append(securityGroupIds).append(instanceMarketOptions).append(securityGroups).append(placement).toHashCode();
+        return new HashCodeBuilder().append(kernelId).append(userData).append(capacityReservationSpecification).append(hibernationOptions).append(ramDiskId).append(instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators).append(securityGroupIds).append(tagSpecifications).append(elasticGpuSpecifications).append(ebsOptimized).append(imageId).append(blockDeviceMappings).append(licenseSpecifications).append(instanceType).append(keyName).append(cpuOptions).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(networkInterfaces).append(disableApiTermination).append(instanceMarketOptions).append(securityGroups).append(placement).toHashCode();
     }
 
     @Override
@@ -694,7 +868,7 @@ public class LaunchTemplateData {
             return false;
         }
         LaunchTemplateData rhs = ((LaunchTemplateData) other);
-        return new EqualsBuilder().append(tagSpecifications, rhs.tagSpecifications).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(kernelId, rhs.kernelId).append(ebsOptimized, rhs.ebsOptimized).append(userData, rhs.userData).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(ramDiskId, rhs.ramDiskId).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(disableApiTermination, rhs.disableApiTermination).append(networkInterfaces, rhs.networkInterfaces).append(securityGroupIds, rhs.securityGroupIds).append(instanceMarketOptions, rhs.instanceMarketOptions).append(securityGroups, rhs.securityGroups).append(placement, rhs.placement).isEquals();
+        return new EqualsBuilder().append(kernelId, rhs.kernelId).append(userData, rhs.userData).append(capacityReservationSpecification, rhs.capacityReservationSpecification).append(hibernationOptions, rhs.hibernationOptions).append(ramDiskId, rhs.ramDiskId).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators, rhs.elasticInferenceAccelerators).append(securityGroupIds, rhs.securityGroupIds).append(tagSpecifications, rhs.tagSpecifications).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(ebsOptimized, rhs.ebsOptimized).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(licenseSpecifications, rhs.licenseSpecifications).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(cpuOptions, rhs.cpuOptions).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(networkInterfaces, rhs.networkInterfaces).append(disableApiTermination, rhs.disableApiTermination).append(instanceMarketOptions, rhs.instanceMarketOptions).append(securityGroups, rhs.securityGroups).append(placement, rhs.placement).isEquals();
     }
 
 }

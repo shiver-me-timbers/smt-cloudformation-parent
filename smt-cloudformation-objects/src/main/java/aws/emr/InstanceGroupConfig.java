@@ -1,8 +1,6 @@
 
 package aws.emr;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -36,11 +37,11 @@ public class InstanceGroupConfig {
     /**
      * AutoScalingPolicy
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html
      * 
      */
     @JsonProperty("AutoScalingPolicy")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html")
     private AutoScalingPolicy autoScalingPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
@@ -56,7 +57,7 @@ public class InstanceGroupConfig {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations")
-    private Set<Configuration> configurations = new LinkedHashSet<Configuration>();
+    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
     /**
      * EbsConfiguration
      * <p>
@@ -98,7 +99,7 @@ public class InstanceGroupConfig {
     /**
      * AutoScalingPolicy
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html
      * 
      */
     @JsonIgnore
@@ -109,7 +110,7 @@ public class InstanceGroupConfig {
     /**
      * AutoScalingPolicy
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html
      * 
      */
     @JsonIgnore
@@ -150,7 +151,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public Set<Configuration> getConfigurations() {
+    public Set<EbsConfiguration> getConfigurations() {
         return configurations;
     }
 
@@ -159,11 +160,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<Configuration> configurations) {
+    public void setConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
     }
 
-    public InstanceGroupConfig withConfigurations(Set<Configuration> configurations) {
+    public InstanceGroupConfig withConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
         return this;
     }

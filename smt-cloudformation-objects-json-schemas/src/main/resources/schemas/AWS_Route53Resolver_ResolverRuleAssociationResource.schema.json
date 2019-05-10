@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53Resolver_ResolverRuleAssociationResource.schema.json",
+  "title" : "ResolverRuleAssociationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverruleassociation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.route53resolver.ResolverRuleAssociationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ResolverRuleAssociationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Route53Resolver::ResolverRuleAssociation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Route53Resolver_ResolverRuleAssociation.schema.json"
+    }
+  }
+}

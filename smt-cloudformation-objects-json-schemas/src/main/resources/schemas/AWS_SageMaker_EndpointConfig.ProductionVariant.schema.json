@@ -25,6 +25,11 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "AcceleratorType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-acceleratortype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "InitialVariantWeight" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight",
       "type" : "number"

@@ -44,6 +44,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-minvcpus",
       "type" : "integer"
     },
+    "LaunchTemplate" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-launchtemplate",
+      "$ref" : "AWS_Batch_ComputeEnvironment.LaunchTemplateSpecification.schema.json"
+    },
     "ImageId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-imageid",
       "type" : "string",
@@ -64,6 +68,11 @@
     },
     "Ec2KeyPair" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-ec2keypair",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PlacementGroup" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-placementgroup",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },

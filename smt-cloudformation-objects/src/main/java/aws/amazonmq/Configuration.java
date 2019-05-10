@@ -10,6 +10,9 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Configuration
@@ -23,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Description",
     "EngineType",
     "Data",
+    "Tags",
     "Name"
 })
 public class Configuration {
@@ -55,6 +59,13 @@ public class Configuration {
     @JsonProperty("Data")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-data")
     private CharSequence data;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags
+     * 
+     */
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags")
+    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
@@ -156,6 +167,29 @@ public class Configuration {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags
+     * 
+     */
+    @JsonIgnore
+    public List<TagsEntry> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<TagsEntry> tags) {
+        this.tags = tags;
+    }
+
+    public Configuration withTags(List<TagsEntry> tags) {
+        this.tags = tags;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
      */
@@ -180,12 +214,12 @@ public class Configuration {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("engineVersion", engineVersion).append("description", description).append("engineType", engineType).append("data", data).append("name", name).toString();
+        return new ToStringBuilder(this).append("engineVersion", engineVersion).append("description", description).append("engineType", engineType).append("data", data).append("tags", tags).append("name", name).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(engineVersion).append(name).append(description).append(engineType).append(data).toHashCode();
+        return new HashCodeBuilder().append(engineVersion).append(data).append(name).append(description).append(engineType).append(tags).toHashCode();
     }
 
     @Override
@@ -197,7 +231,7 @@ public class Configuration {
             return false;
         }
         Configuration rhs = ((Configuration) other);
-        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(name, rhs.name).append(description, rhs.description).append(engineType, rhs.engineType).append(data, rhs.data).isEquals();
+        return new EqualsBuilder().append(engineVersion, rhs.engineVersion).append(data, rhs.data).append(name, rhs.name).append(description, rhs.description).append(engineType, rhs.engineType).append(tags, rhs.tags).isEquals();
     }
 
 }

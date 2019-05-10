@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_FSx_FileSystemResource.schema.json",
+  "title" : "FileSystemResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.fsx.FileSystemResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::FSx::FileSystem"
+    },
+    "Properties" : {
+      "$ref" : "AWS_FSx_FileSystem.schema.json"
+    }
+  }
+}

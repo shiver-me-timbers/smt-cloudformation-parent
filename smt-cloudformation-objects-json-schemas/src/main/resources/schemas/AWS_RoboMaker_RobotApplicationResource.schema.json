@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_RoboMaker_RobotApplicationResource.schema.json",
+  "title" : "RobotApplicationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.robomaker.RobotApplicationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<RobotApplicationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::RoboMaker::RobotApplication"
+    },
+    "Properties" : {
+      "$ref" : "AWS_RoboMaker_RobotApplication.schema.json"
+    }
+  }
+}

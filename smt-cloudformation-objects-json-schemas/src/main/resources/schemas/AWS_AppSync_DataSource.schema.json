@@ -25,6 +25,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-httpconfig",
       "$ref" : "AWS_AppSync_DataSource.HttpConfig.schema.json"
     },
+    "RelationalDatabaseConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-relationaldatabaseconfig",
+      "$ref" : "AWS_AppSync_DataSource.RelationalDatabaseConfig.schema.json"
+    },
     "LambdaConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-lambdaconfig",
       "$ref" : "AWS_AppSync_DataSource.LambdaConfig.schema.json"

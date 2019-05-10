@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DocDB_DBSubnetGroupResource.schema.json",
+  "title" : "DBSubnetGroupResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbsubnetgroup.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.docdb.DBSubnetGroupResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DocDB::DBSubnetGroup"
+    },
+    "Properties" : {
+      "$ref" : "AWS_DocDB_DBSubnetGroup.schema.json"
+    }
+  }
+}

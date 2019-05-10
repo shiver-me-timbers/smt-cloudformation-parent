@@ -1,10 +1,6 @@
 
 package aws.emr;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -15,6 +11,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -41,6 +42,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ScaleDownBehavior",
     "SecurityConfiguration",
     "ServiceRole",
+    "Steps",
     "Tags",
     "VisibleToAllUsers"
 })
@@ -83,7 +85,7 @@ public class Cluster {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-configurations")
-    private Set<Configuration> configurations = new LinkedHashSet<Configuration>();
+    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-customamiid
      * 
@@ -165,6 +167,14 @@ public class Cluster {
     @JsonProperty("ServiceRole")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-servicerole")
     private CharSequence serviceRole;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-steps
+     * 
+     */
+    @JsonProperty("Steps")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-steps")
+    private Set<HadoopJarStepConfig> steps = new LinkedHashSet<HadoopJarStepConfig>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
@@ -277,7 +287,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Set<Configuration> getConfigurations() {
+    public Set<EbsConfiguration> getConfigurations() {
         return configurations;
     }
 
@@ -286,11 +296,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<Configuration> configurations) {
+    public void setConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
     }
 
-    public Cluster withConfigurations(Set<Configuration> configurations) {
+    public Cluster withConfigurations(Set<EbsConfiguration> configurations) {
         this.configurations = configurations;
         return this;
     }
@@ -557,6 +567,29 @@ public class Cluster {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-steps
+     * 
+     */
+    @JsonIgnore
+    public Set<HadoopJarStepConfig> getSteps() {
+        return steps;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-steps
+     * 
+     */
+    @JsonIgnore
+    public void setSteps(Set<HadoopJarStepConfig> steps) {
+        this.steps = steps;
+    }
+
+    public Cluster withSteps(Set<HadoopJarStepConfig> steps) {
+        this.steps = steps;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
      */
@@ -604,12 +637,12 @@ public class Cluster {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("additionalInfo", additionalInfo).append("applications", applications).append("autoScalingRole", autoScalingRole).append("bootstrapActions", bootstrapActions).append("configurations", configurations).append("customAmiId", customAmiId).append("ebsRootVolumeSize", ebsRootVolumeSize).append("instances", instances).append("jobFlowRole", jobFlowRole).append("kerberosAttributes", kerberosAttributes).append("logUri", logUri).append("name", name).append("releaseLabel", releaseLabel).append("scaleDownBehavior", scaleDownBehavior).append("securityConfiguration", securityConfiguration).append("serviceRole", serviceRole).append("tags", tags).append("visibleToAllUsers", visibleToAllUsers).toString();
+        return new ToStringBuilder(this).append("additionalInfo", additionalInfo).append("applications", applications).append("autoScalingRole", autoScalingRole).append("bootstrapActions", bootstrapActions).append("configurations", configurations).append("customAmiId", customAmiId).append("ebsRootVolumeSize", ebsRootVolumeSize).append("instances", instances).append("jobFlowRole", jobFlowRole).append("kerberosAttributes", kerberosAttributes).append("logUri", logUri).append("name", name).append("releaseLabel", releaseLabel).append("scaleDownBehavior", scaleDownBehavior).append("securityConfiguration", securityConfiguration).append("serviceRole", serviceRole).append("steps", steps).append("tags", tags).append("visibleToAllUsers", visibleToAllUsers).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(customAmiId).append(instances).append(serviceRole).append(configurations).append(ebsRootVolumeSize).append(releaseLabel).append(visibleToAllUsers).append(jobFlowRole).append(tags).append(scaleDownBehavior).append(additionalInfo).append(name).append(autoScalingRole).append(securityConfiguration).append(applications).append(bootstrapActions).append(kerberosAttributes).append(logUri).toHashCode();
+        return new HashCodeBuilder().append(customAmiId).append(instances).append(serviceRole).append(configurations).append(ebsRootVolumeSize).append(releaseLabel).append(visibleToAllUsers).append(jobFlowRole).append(steps).append(tags).append(scaleDownBehavior).append(additionalInfo).append(name).append(autoScalingRole).append(securityConfiguration).append(applications).append(bootstrapActions).append(kerberosAttributes).append(logUri).toHashCode();
     }
 
     @Override
@@ -621,7 +654,7 @@ public class Cluster {
             return false;
         }
         Cluster rhs = ((Cluster) other);
-        return new EqualsBuilder().append(customAmiId, rhs.customAmiId).append(instances, rhs.instances).append(serviceRole, rhs.serviceRole).append(configurations, rhs.configurations).append(ebsRootVolumeSize, rhs.ebsRootVolumeSize).append(releaseLabel, rhs.releaseLabel).append(visibleToAllUsers, rhs.visibleToAllUsers).append(jobFlowRole, rhs.jobFlowRole).append(tags, rhs.tags).append(scaleDownBehavior, rhs.scaleDownBehavior).append(additionalInfo, rhs.additionalInfo).append(name, rhs.name).append(autoScalingRole, rhs.autoScalingRole).append(securityConfiguration, rhs.securityConfiguration).append(applications, rhs.applications).append(bootstrapActions, rhs.bootstrapActions).append(kerberosAttributes, rhs.kerberosAttributes).append(logUri, rhs.logUri).isEquals();
+        return new EqualsBuilder().append(customAmiId, rhs.customAmiId).append(instances, rhs.instances).append(serviceRole, rhs.serviceRole).append(configurations, rhs.configurations).append(ebsRootVolumeSize, rhs.ebsRootVolumeSize).append(releaseLabel, rhs.releaseLabel).append(visibleToAllUsers, rhs.visibleToAllUsers).append(jobFlowRole, rhs.jobFlowRole).append(steps, rhs.steps).append(tags, rhs.tags).append(scaleDownBehavior, rhs.scaleDownBehavior).append(additionalInfo, rhs.additionalInfo).append(name, rhs.name).append(autoScalingRole, rhs.autoScalingRole).append(securityConfiguration, rhs.securityConfiguration).append(applications, rhs.applications).append(bootstrapActions, rhs.bootstrapActions).append(kerberosAttributes, rhs.kerberosAttributes).append(logUri, rhs.logUri).isEquals();
     }
 
 }

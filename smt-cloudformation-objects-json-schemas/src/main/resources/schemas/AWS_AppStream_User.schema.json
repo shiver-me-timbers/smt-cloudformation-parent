@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppStream_User.schema.json",
+  "title" : "User",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html",
+  "type" : "object",
+  "javaType" : "aws.appstream.User",
+  "properties" : {
+    "UserName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-username",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FirstName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-firstname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "MessageAction" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-messageaction",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LastName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-lastname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "AuthenticationType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-user.html#cfn-appstream-user-authenticationtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

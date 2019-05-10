@@ -1,10 +1,6 @@
 
 package aws.dynamodb;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -16,6 +12,11 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
 
 /**
  * Table
@@ -26,6 +27,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "AttributeDefinitions",
+    "BillingMode",
     "GlobalSecondaryIndexes",
     "KeySchema",
     "LocalSecondaryIndexes",
@@ -46,6 +48,13 @@ public class Table {
     @JsonProperty("AttributeDefinitions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef")
     private List<AttributeDefinition> attributeDefinitions = new ArrayList<AttributeDefinition>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode
+     * 
+     */
+    @JsonProperty("BillingMode")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode")
+    private CharSequence billingMode;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi
      * 
@@ -148,6 +157,29 @@ public class Table {
 
     public Table withAttributeDefinitions(List<AttributeDefinition> attributeDefinitions) {
         this.attributeDefinitions = attributeDefinitions;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getBillingMode() {
+        return billingMode;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode
+     * 
+     */
+    @JsonIgnore
+    public void setBillingMode(CharSequence billingMode) {
+        this.billingMode = billingMode;
+    }
+
+    public Table withBillingMode(CharSequence billingMode) {
+        this.billingMode = billingMode;
         return this;
     }
 
@@ -403,12 +435,12 @@ public class Table {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("attributeDefinitions", attributeDefinitions).append("globalSecondaryIndexes", globalSecondaryIndexes).append("keySchema", keySchema).append("localSecondaryIndexes", localSecondaryIndexes).append("pointInTimeRecoverySpecification", pointInTimeRecoverySpecification).append("provisionedThroughput", provisionedThroughput).append("sSESpecification", sSESpecification).append("streamSpecification", streamSpecification).append("tableName", tableName).append("tags", tags).append("timeToLiveSpecification", timeToLiveSpecification).toString();
+        return new ToStringBuilder(this).append("attributeDefinitions", attributeDefinitions).append("billingMode", billingMode).append("globalSecondaryIndexes", globalSecondaryIndexes).append("keySchema", keySchema).append("localSecondaryIndexes", localSecondaryIndexes).append("pointInTimeRecoverySpecification", pointInTimeRecoverySpecification).append("provisionedThroughput", provisionedThroughput).append("sSESpecification", sSESpecification).append("streamSpecification", streamSpecification).append("tableName", tableName).append("tags", tags).append("timeToLiveSpecification", timeToLiveSpecification).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(globalSecondaryIndexes).append(pointInTimeRecoverySpecification).append(streamSpecification).append(sSESpecification).append(attributeDefinitions).append(keySchema).append(timeToLiveSpecification).append(localSecondaryIndexes).append(provisionedThroughput).append(tableName).append(tags).toHashCode();
+        return new HashCodeBuilder().append(globalSecondaryIndexes).append(pointInTimeRecoverySpecification).append(billingMode).append(sSESpecification).append(keySchema).append(timeToLiveSpecification).append(provisionedThroughput).append(tableName).append(tags).append(streamSpecification).append(attributeDefinitions).append(localSecondaryIndexes).toHashCode();
     }
 
     @Override
@@ -420,7 +452,7 @@ public class Table {
             return false;
         }
         Table rhs = ((Table) other);
-        return new EqualsBuilder().append(globalSecondaryIndexes, rhs.globalSecondaryIndexes).append(pointInTimeRecoverySpecification, rhs.pointInTimeRecoverySpecification).append(streamSpecification, rhs.streamSpecification).append(sSESpecification, rhs.sSESpecification).append(attributeDefinitions, rhs.attributeDefinitions).append(keySchema, rhs.keySchema).append(timeToLiveSpecification, rhs.timeToLiveSpecification).append(localSecondaryIndexes, rhs.localSecondaryIndexes).append(provisionedThroughput, rhs.provisionedThroughput).append(tableName, rhs.tableName).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(globalSecondaryIndexes, rhs.globalSecondaryIndexes).append(pointInTimeRecoverySpecification, rhs.pointInTimeRecoverySpecification).append(billingMode, rhs.billingMode).append(sSESpecification, rhs.sSESpecification).append(keySchema, rhs.keySchema).append(timeToLiveSpecification, rhs.timeToLiveSpecification).append(provisionedThroughput, rhs.provisionedThroughput).append(tableName, rhs.tableName).append(tags, rhs.tags).append(streamSpecification, rhs.streamSpecification).append(attributeDefinitions, rhs.attributeDefinitions).append(localSecondaryIndexes, rhs.localSecondaryIndexes).isEquals();
     }
 
 }

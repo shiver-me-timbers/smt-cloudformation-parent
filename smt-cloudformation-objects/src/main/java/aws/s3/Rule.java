@@ -1,8 +1,6 @@
 
 package aws.s3;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -114,14 +115,14 @@ public class Rule {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-tagfilters")
     private Set<TagFilter> tagFilters = new LinkedHashSet<TagFilter>();
     /**
-     * Transition
+     * NoncurrentVersionTransition
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html
      * 
      */
     @JsonProperty("Transition")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html")
-    private Transition transition;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html")
+    private NoncurrentVersionTransition transition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions
      * 
@@ -129,7 +130,7 @@ public class Rule {
     @JsonProperty("Transitions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions")
-    private Set<Transition> transitions = new LinkedHashSet<Transition>();
+    private Set<NoncurrentVersionTransition> transitions = new LinkedHashSet<NoncurrentVersionTransition>();
 
     /**
      * AbortIncompleteMultipartUpload
@@ -370,28 +371,28 @@ public class Rule {
     }
 
     /**
-     * Transition
+     * NoncurrentVersionTransition
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html
      * 
      */
     @JsonIgnore
-    public Transition getTransition() {
+    public NoncurrentVersionTransition getTransition() {
         return transition;
     }
 
     /**
-     * Transition
+     * NoncurrentVersionTransition
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html
      * 
      */
     @JsonIgnore
-    public void setTransition(Transition transition) {
+    public void setTransition(NoncurrentVersionTransition transition) {
         this.transition = transition;
     }
 
-    public Rule withTransition(Transition transition) {
+    public Rule withTransition(NoncurrentVersionTransition transition) {
         this.transition = transition;
         return this;
     }
@@ -401,7 +402,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<Transition> getTransitions() {
+    public Set<NoncurrentVersionTransition> getTransitions() {
         return transitions;
     }
 
@@ -410,11 +411,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setTransitions(Set<Transition> transitions) {
+    public void setTransitions(Set<NoncurrentVersionTransition> transitions) {
         this.transitions = transitions;
     }
 
-    public Rule withTransitions(Set<Transition> transitions) {
+    public Rule withTransitions(Set<NoncurrentVersionTransition> transitions) {
         this.transitions = transitions;
         return this;
     }

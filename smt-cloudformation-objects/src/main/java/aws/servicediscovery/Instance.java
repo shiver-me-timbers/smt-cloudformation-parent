@@ -10,6 +10,8 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import java.util.Map;
+
 
 /**
  * Instance
@@ -31,7 +33,7 @@ public class Instance {
      */
     @JsonProperty("InstanceAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceattributes")
-    private Object instanceAttributes;
+    private Map<String, String> instanceAttributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-instance.html#cfn-servicediscovery-instance-instanceid
      * 
@@ -52,7 +54,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Object getInstanceAttributes() {
+    public Map<String, String> getInstanceAttributes() {
         return instanceAttributes;
     }
 
@@ -61,11 +63,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setInstanceAttributes(Object instanceAttributes) {
+    public void setInstanceAttributes(Map<String, String> instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
     }
 
-    public Instance withInstanceAttributes(Object instanceAttributes) {
+    public Instance withInstanceAttributes(Map<String, String> instanceAttributes) {
         this.instanceAttributes = instanceAttributes;
         return this;
     }
@@ -117,7 +119,7 @@ public class Instance {
     }
 
     @Override
-    public String toString() {
+    public java.lang.String toString() {
         return new ToStringBuilder(this).append("instanceAttributes", instanceAttributes).append("instanceId", instanceId).append("serviceId", serviceId).toString();
     }
 

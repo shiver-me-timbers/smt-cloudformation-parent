@@ -37,6 +37,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-encryptionatrestoptions",
       "$ref" : "AWS_Elasticsearch_Domain.EncryptionAtRestOptions.schema.json"
     },
+    "NodeToNodeEncryptionOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions",
+      "$ref" : "AWS_Elasticsearch_Domain.NodeToNodeEncryptionOptions.schema.json"
+    },
     "SnapshotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-snapshotoptions",
       "$ref" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json"

@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualRouter.schema.json",
+  "title" : "VirtualRouter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.VirtualRouter",
+  "properties" : {
+    "MeshName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "VirtualRouterName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-virtualroutername",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Spec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-spec",
+      "$ref" : "AWS_AppMesh_VirtualRouter.VirtualRouterSpec.schema.json"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+      }
+    }
+  }
+}

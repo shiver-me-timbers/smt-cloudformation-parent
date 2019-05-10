@@ -1,0 +1,25 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_Application.S3ContentLocation.schema.json",
+  "title" : "S3ContentLocation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.S3ContentLocation",
+  "properties" : {
+    "BucketARN" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html#cfn-kinesisanalyticsv2-application-s3contentlocation-bucketarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "FileKey" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html#cfn-kinesisanalyticsv2-application-s3contentlocation-filekey",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ObjectVersion" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html#cfn-kinesisanalyticsv2-application-s3contentlocation-objectversion",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

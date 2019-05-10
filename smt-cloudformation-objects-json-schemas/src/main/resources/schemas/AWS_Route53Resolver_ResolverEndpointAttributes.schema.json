@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Route53Resolver_ResolverEndpointAttributes.schema.json",
+  "title" : "ResolverEndpointAttributes",
+  "type" : "string",
+  "enum" : [ "ResolverEndpointId", "IpAddressCount", "Arn", "Direction", "HostVPCId", "Name" ],
+  "javaType" : "aws.route53resolver.ResolverEndpointAttributes"
+}

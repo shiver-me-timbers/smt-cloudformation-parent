@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.autoscalingplans.ScalingPlanResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ScalingPlanAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

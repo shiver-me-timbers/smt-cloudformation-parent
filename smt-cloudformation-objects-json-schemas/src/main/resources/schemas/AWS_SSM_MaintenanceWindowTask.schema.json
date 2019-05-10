@@ -34,7 +34,7 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_SSM_Association.Target.schema.json"
+        "$ref" : "AWS_SSM_MaintenanceWindowTask.Target.schema.json"
       }
     },
     "Name" : {

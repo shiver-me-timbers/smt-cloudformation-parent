@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Mesh.schema.json",
+  "title" : "Mesh",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.Mesh",
+  "properties" : {
+    "MeshName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-meshname",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Spec" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-spec",
+      "$ref" : "AWS_AppMesh_Mesh.MeshSpec.schema.json"
+    },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+      }
+    }
+  }
+}

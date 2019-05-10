@@ -20,5 +20,9 @@
   },
   "Timestamp": {
     "type": "string"
+  },
+  "Map": {
+    "type": "object",
+    "javaType": "java.util.Map<String, String>"
   }
 }

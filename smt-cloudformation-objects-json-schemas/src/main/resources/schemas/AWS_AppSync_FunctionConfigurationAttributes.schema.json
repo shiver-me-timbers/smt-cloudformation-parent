@@ -1,0 +1,8 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_FunctionConfigurationAttributes.schema.json",
+  "title" : "FunctionConfigurationAttributes",
+  "type" : "string",
+  "enum" : [ "FunctionId", "FunctionArn", "DataSourceName", "Name" ],
+  "javaType" : "aws.appsync.FunctionConfigurationAttributes"
+}

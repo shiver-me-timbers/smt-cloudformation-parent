@@ -1,0 +1,31 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_ApplicationOutput.Output.schema.json",
+  "title" : "Output",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.Output",
+  "properties" : {
+    "DestinationSchema" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-destinationschema",
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.DestinationSchema.schema.json"
+    },
+    "LambdaOutput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-lambdaoutput",
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.LambdaOutput.schema.json"
+    },
+    "KinesisFirehoseOutput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-kinesisfirehoseoutput",
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisFirehoseOutput.schema.json"
+    },
+    "KinesisStreamsOutput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-kinesisstreamsoutput",
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisStreamsOutput.schema.json"
+    },
+    "Name" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-name",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

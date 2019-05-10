@@ -25,6 +25,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SourceIdentifier",
     "BuildSpec",
     "GitCloneDepth",
+    "GitSubmodulesConfig",
     "InsecureSsl",
     "Location"
 })
@@ -74,6 +75,15 @@ public class Source {
     @JsonProperty("GitCloneDepth")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitclonedepth")
     private Integer gitCloneDepth;
+    /**
+     * GitSubmodulesConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html
+     * 
+     */
+    @JsonProperty("GitSubmodulesConfig")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html")
+    private GitSubmodulesConfig gitSubmodulesConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl
      * 
@@ -232,6 +242,33 @@ public class Source {
     }
 
     /**
+     * GitSubmodulesConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html
+     * 
+     */
+    @JsonIgnore
+    public GitSubmodulesConfig getGitSubmodulesConfig() {
+        return gitSubmodulesConfig;
+    }
+
+    /**
+     * GitSubmodulesConfig
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html
+     * 
+     */
+    @JsonIgnore
+    public void setGitSubmodulesConfig(GitSubmodulesConfig gitSubmodulesConfig) {
+        this.gitSubmodulesConfig = gitSubmodulesConfig;
+    }
+
+    public Source withGitSubmodulesConfig(GitSubmodulesConfig gitSubmodulesConfig) {
+        this.gitSubmodulesConfig = gitSubmodulesConfig;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl
      * 
      */
@@ -279,12 +316,12 @@ public class Source {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("type", type).append("reportBuildStatus", reportBuildStatus).append("auth", auth).append("sourceIdentifier", sourceIdentifier).append("buildSpec", buildSpec).append("gitCloneDepth", gitCloneDepth).append("insecureSsl", insecureSsl).append("location", location).toString();
+        return new ToStringBuilder(this).append("type", type).append("reportBuildStatus", reportBuildStatus).append("auth", auth).append("sourceIdentifier", sourceIdentifier).append("buildSpec", buildSpec).append("gitCloneDepth", gitCloneDepth).append("gitSubmodulesConfig", gitSubmodulesConfig).append("insecureSsl", insecureSsl).append("location", location).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(sourceIdentifier).append(auth).append(insecureSsl).append(reportBuildStatus).append(buildSpec).append(location).append(type).append(gitCloneDepth).toHashCode();
+        return new HashCodeBuilder().append(sourceIdentifier).append(auth).append(insecureSsl).append(reportBuildStatus).append(buildSpec).append(gitSubmodulesConfig).append(location).append(type).append(gitCloneDepth).toHashCode();
     }
 
     @Override
@@ -296,7 +333,7 @@ public class Source {
             return false;
         }
         Source rhs = ((Source) other);
-        return new EqualsBuilder().append(sourceIdentifier, rhs.sourceIdentifier).append(auth, rhs.auth).append(insecureSsl, rhs.insecureSsl).append(reportBuildStatus, rhs.reportBuildStatus).append(buildSpec, rhs.buildSpec).append(location, rhs.location).append(type, rhs.type).append(gitCloneDepth, rhs.gitCloneDepth).isEquals();
+        return new EqualsBuilder().append(sourceIdentifier, rhs.sourceIdentifier).append(auth, rhs.auth).append(insecureSsl, rhs.insecureSsl).append(reportBuildStatus, rhs.reportBuildStatus).append(buildSpec, rhs.buildSpec).append(gitSubmodulesConfig, rhs.gitSubmodulesConfig).append(location, rhs.location).append(type, rhs.type).append(gitCloneDepth, rhs.gitCloneDepth).isEquals();
     }
 
 }

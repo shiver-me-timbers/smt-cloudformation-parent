@@ -1,0 +1,72 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ApiGatewayV2_Integration.schema.json",
+  "title" : "Integration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html",
+  "type" : "object",
+  "javaType" : "aws.apigatewayv2.Integration",
+  "properties" : {
+    "Description" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-description",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TemplateSelectionExpression" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-templateselectionexpression",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ConnectionType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-connectiontype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IntegrationMethod" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationmethod",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "PassthroughBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-passthroughbehavior",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RequestParameters" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-requestparameters",
+      "type" : "any"
+    },
+    "IntegrationUri" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationuri",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "CredentialsArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-credentialsarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "RequestTemplates" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-requesttemplates",
+      "type" : "any"
+    },
+    "TimeoutInMillis" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-timeoutinmillis",
+      "type" : "integer"
+    },
+    "ContentHandlingStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-contenthandlingstrategy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ApiId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-apiid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "IntegrationType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-integration.html#cfn-apigatewayv2-integration-integrationtype",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

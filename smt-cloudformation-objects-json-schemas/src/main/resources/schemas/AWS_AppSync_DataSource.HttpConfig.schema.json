@@ -10,6 +10,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
+    },
+    "AuthorizationConfig" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-authorizationconfig",
+      "$ref" : "AWS_AppSync_DataSource.AuthorizationConfig.schema.json"
     }
   }
 }

@@ -8,7 +8,7 @@
   "properties" : {
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-fieldtomatch",
-      "$ref" : "AWS_WAF_SqlInjectionMatchSet.FieldToMatch.schema.json"
+      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json"
     },
     "TextTransformation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-texttransformation",

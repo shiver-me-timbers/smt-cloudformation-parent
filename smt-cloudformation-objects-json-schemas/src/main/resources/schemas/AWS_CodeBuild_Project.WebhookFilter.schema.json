@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_CodeBuild_Project.WebhookFilter.schema.json",
+  "title" : "WebhookFilter",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html",
+  "type" : "object",
+  "javaType" : "aws.codebuild.WebhookFilter",
+  "properties" : {
+    "Pattern" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-pattern",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ExcludeMatchedPattern" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-excludematchedpattern",
+      "type" : "boolean"
+    }
+  }
+}

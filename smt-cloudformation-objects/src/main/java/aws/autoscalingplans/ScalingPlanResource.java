@@ -1,10 +1,9 @@
 
 package aws.autoscalingplans;
 
-import java.util.List;
-import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasAttributes;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -15,6 +14,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -30,6 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ScalingPlanResource
     extends Resource
+    implements HasAttributes<ScalingPlanAttributes>
 {
 
     @JsonProperty("Type")

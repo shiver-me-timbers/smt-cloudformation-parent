@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_DLM_LifecyclePolicyResource.schema.json",
+  "title" : "LifecyclePolicyResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.dlm.LifecyclePolicyResource",
+  "javaInterfaces" : [ "aws.HasAttributes<LifecyclePolicyAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::DLM::LifecyclePolicy"
+    },
+    "Properties" : {
+      "$ref" : "AWS_DLM_LifecyclePolicy.schema.json"
+    }
+  }
+}

@@ -1,8 +1,6 @@
 
 package aws.iot;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -25,6 +26,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Actions",
     "AwsIotSqlVersion",
     "Description",
+    "ErrorAction",
     "RuleDisabled",
     "Sql"
 })
@@ -52,6 +54,15 @@ public class TopicRulePayload {
     @JsonProperty("Description")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-description")
     private CharSequence description;
+    /**
+     * S3Action
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html
+     * 
+     */
+    @JsonProperty("ErrorAction")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html")
+    private S3Action errorAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled
      * 
@@ -137,6 +148,33 @@ public class TopicRulePayload {
     }
 
     /**
+     * S3Action
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html
+     * 
+     */
+    @JsonIgnore
+    public S3Action getErrorAction() {
+        return errorAction;
+    }
+
+    /**
+     * S3Action
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html
+     * 
+     */
+    @JsonIgnore
+    public void setErrorAction(S3Action errorAction) {
+        this.errorAction = errorAction;
+    }
+
+    public TopicRulePayload withErrorAction(S3Action errorAction) {
+        this.errorAction = errorAction;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled
      * 
      */
@@ -184,12 +222,12 @@ public class TopicRulePayload {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("actions", actions).append("awsIotSqlVersion", awsIotSqlVersion).append("description", description).append("ruleDisabled", ruleDisabled).append("sql", sql).toString();
+        return new ToStringBuilder(this).append("actions", actions).append("awsIotSqlVersion", awsIotSqlVersion).append("description", description).append("errorAction", errorAction).append("ruleDisabled", ruleDisabled).append("sql", sql).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(awsIotSqlVersion).append(description).append(actions).append(ruleDisabled).append(sql).toHashCode();
+        return new HashCodeBuilder().append(awsIotSqlVersion).append(ruleDisabled).append(description).append(errorAction).append(actions).append(sql).toHashCode();
     }
 
     @Override
@@ -201,7 +239,7 @@ public class TopicRulePayload {
             return false;
         }
         TopicRulePayload rhs = ((TopicRulePayload) other);
-        return new EqualsBuilder().append(awsIotSqlVersion, rhs.awsIotSqlVersion).append(description, rhs.description).append(actions, rhs.actions).append(ruleDisabled, rhs.ruleDisabled).append(sql, rhs.sql).isEquals();
+        return new EqualsBuilder().append(awsIotSqlVersion, rhs.awsIotSqlVersion).append(ruleDisabled, rhs.ruleDisabled).append(description, rhs.description).append(errorAction, rhs.errorAction).append(actions, rhs.actions).append(sql, rhs.sql).isEquals();
     }
 
 }

@@ -1,0 +1,35 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_Application.Input.schema.json",
+  "title" : "Input",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.Input",
+  "properties" : {
+    "NamePrefix" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-nameprefix",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InputSchema" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-inputschema",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.InputSchema.schema.json"
+    },
+    "KinesisStreamsInput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-kinesisstreamsinput",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.KinesisStreamsInput.schema.json"
+    },
+    "KinesisFirehoseInput" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-kinesisfirehoseinput",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.KinesisFirehoseInput.schema.json"
+    },
+    "InputProcessingConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-inputprocessingconfiguration",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.InputProcessingConfiguration.schema.json"
+    },
+    "InputParallelism" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-inputparallelism",
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.InputParallelism.schema.json"
+    }
+  }
+}

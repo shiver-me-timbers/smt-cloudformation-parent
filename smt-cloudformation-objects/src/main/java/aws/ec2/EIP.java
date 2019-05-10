@@ -20,7 +20,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "Domain",
-    "InstanceId"
+    "InstanceId",
+    "PublicIpv4Pool"
 })
 public class EIP {
 
@@ -38,6 +39,13 @@ public class EIP {
     @JsonProperty("InstanceId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid")
     private CharSequence instanceId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-publicipv4pool
+     * 
+     */
+    @JsonProperty("PublicIpv4Pool")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-publicipv4pool")
+    private CharSequence publicIpv4Pool;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
@@ -85,14 +93,37 @@ public class EIP {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-publicipv4pool
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getPublicIpv4Pool() {
+        return publicIpv4Pool;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-publicipv4pool
+     * 
+     */
+    @JsonIgnore
+    public void setPublicIpv4Pool(CharSequence publicIpv4Pool) {
+        this.publicIpv4Pool = publicIpv4Pool;
+    }
+
+    public EIP withPublicIpv4Pool(CharSequence publicIpv4Pool) {
+        this.publicIpv4Pool = publicIpv4Pool;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("domain", domain).append("instanceId", instanceId).toString();
+        return new ToStringBuilder(this).append("domain", domain).append("instanceId", instanceId).append("publicIpv4Pool", publicIpv4Pool).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(domain).append(instanceId).toHashCode();
+        return new HashCodeBuilder().append(publicIpv4Pool).append(instanceId).append(domain).toHashCode();
     }
 
     @Override
@@ -104,7 +135,7 @@ public class EIP {
             return false;
         }
         EIP rhs = ((EIP) other);
-        return new EqualsBuilder().append(domain, rhs.domain).append(instanceId, rhs.instanceId).isEquals();
+        return new EqualsBuilder().append(publicIpv4Pool, rhs.publicIpv4Pool).append(instanceId, rhs.instanceId).append(domain, rhs.domain).isEquals();
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_OpsWorksCM_ServerResource.schema.json",
+  "title" : "ServerResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.opsworkscm.ServerResource",
+  "javaInterfaces" : [ "aws.HasAttributes<ServerAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::OpsWorksCM::Server"
+    },
+    "Properties" : {
+      "$ref" : "AWS_OpsWorksCM_Server.schema.json"
+    }
+  }
+}

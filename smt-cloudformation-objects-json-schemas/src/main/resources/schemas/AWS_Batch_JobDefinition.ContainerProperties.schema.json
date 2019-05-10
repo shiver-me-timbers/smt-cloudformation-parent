@@ -6,17 +6,50 @@
   "type" : "object",
   "javaType" : "aws.batch.ContainerProperties",
   "properties" : {
+    "User" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Memory" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory",
+      "type" : "integer"
+    },
+    "Privileged" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged",
+      "type" : "boolean"
+    },
+    "JobRoleArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReadonlyRootFilesystem" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem",
+      "type" : "boolean"
+    },
+    "Vcpus" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus",
+      "type" : "integer"
+    },
+    "Image" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ResourceRequirements" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json"
+      }
+    },
     "MountPoints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.MountPoints.schema.json"
       }
-    },
-    "User" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
     },
     "Volumes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes",
@@ -33,29 +66,12 @@
         "javaType" : "java.lang.CharSequence"
       }
     },
-    "Memory" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory",
-      "type" : "integer"
-    },
-    "Privileged" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged",
-      "type" : "boolean"
-    },
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Environment.schema.json"
       }
-    },
-    "JobRoleArn" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn",
-      "type" : "string",
-      "javaType" : "java.lang.CharSequence"
-    },
-    "ReadonlyRootFilesystem" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem",
-      "type" : "boolean"
     },
     "Ulimits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits",
@@ -64,12 +80,8 @@
         "$ref" : "AWS_Batch_JobDefinition.Ulimit.schema.json"
       }
     },
-    "Vcpus" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus",
-      "type" : "integer"
-    },
-    "Image" : {
-      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image",
+    "InstanceType" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype",
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     }

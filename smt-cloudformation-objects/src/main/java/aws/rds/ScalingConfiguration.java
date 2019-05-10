@@ -22,7 +22,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AutoPause",
     "MaxCapacity",
     "MinCapacity",
-    "SecondsBeforeAutoPause"
+    "SecondsUntilAutoPause"
 })
 public class ScalingConfiguration {
 
@@ -48,12 +48,12 @@ public class ScalingConfiguration {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-mincapacity")
     private Integer minCapacity;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause
      * 
      */
-    @JsonProperty("SecondsBeforeAutoPause")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause")
-    private Integer secondsBeforeAutoPause;
+    @JsonProperty("SecondsUntilAutoPause")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause")
+    private Integer secondsUntilAutoPause;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause
@@ -125,36 +125,36 @@ public class ScalingConfiguration {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause
      * 
      */
     @JsonIgnore
-    public Integer getSecondsBeforeAutoPause() {
-        return secondsBeforeAutoPause;
+    public Integer getSecondsUntilAutoPause() {
+        return secondsUntilAutoPause;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsbeforeautopause
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-secondsuntilautopause
      * 
      */
     @JsonIgnore
-    public void setSecondsBeforeAutoPause(Integer secondsBeforeAutoPause) {
-        this.secondsBeforeAutoPause = secondsBeforeAutoPause;
+    public void setSecondsUntilAutoPause(Integer secondsUntilAutoPause) {
+        this.secondsUntilAutoPause = secondsUntilAutoPause;
     }
 
-    public ScalingConfiguration withSecondsBeforeAutoPause(Integer secondsBeforeAutoPause) {
-        this.secondsBeforeAutoPause = secondsBeforeAutoPause;
+    public ScalingConfiguration withSecondsUntilAutoPause(Integer secondsUntilAutoPause) {
+        this.secondsUntilAutoPause = secondsUntilAutoPause;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("autoPause", autoPause).append("maxCapacity", maxCapacity).append("minCapacity", minCapacity).append("secondsBeforeAutoPause", secondsBeforeAutoPause).toString();
+        return new ToStringBuilder(this).append("autoPause", autoPause).append("maxCapacity", maxCapacity).append("minCapacity", minCapacity).append("secondsUntilAutoPause", secondsUntilAutoPause).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(maxCapacity).append(minCapacity).append(secondsBeforeAutoPause).append(autoPause).toHashCode();
+        return new HashCodeBuilder().append(maxCapacity).append(secondsUntilAutoPause).append(minCapacity).append(autoPause).toHashCode();
     }
 
     @Override
@@ -166,7 +166,7 @@ public class ScalingConfiguration {
             return false;
         }
         ScalingConfiguration rhs = ((ScalingConfiguration) other);
-        return new EqualsBuilder().append(maxCapacity, rhs.maxCapacity).append(minCapacity, rhs.minCapacity).append(secondsBeforeAutoPause, rhs.secondsBeforeAutoPause).append(autoPause, rhs.autoPause).isEquals();
+        return new EqualsBuilder().append(maxCapacity, rhs.maxCapacity).append(secondsUntilAutoPause, rhs.secondsUntilAutoPause).append(minCapacity, rhs.minCapacity).append(autoPause, rhs.autoPause).isEquals();
     }
 
 }

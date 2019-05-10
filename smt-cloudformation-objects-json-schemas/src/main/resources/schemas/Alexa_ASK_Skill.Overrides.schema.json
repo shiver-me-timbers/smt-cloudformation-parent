@@ -1,0 +1,14 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "Alexa_ASK_Skill.Overrides.schema.json",
+  "title" : "Overrides",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html",
+  "type" : "object",
+  "javaType" : "alexa.ask.Overrides",
+  "properties" : {
+    "Manifest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html#cfn-ask-skill-overrides-manifest",
+      "type" : "any"
+    }
+  }
+}

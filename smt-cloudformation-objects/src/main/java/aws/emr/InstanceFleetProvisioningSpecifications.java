@@ -14,7 +14,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * InstanceFleetProvisioningSpecifications
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)

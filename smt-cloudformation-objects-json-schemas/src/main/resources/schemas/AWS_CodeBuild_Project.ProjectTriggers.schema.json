@@ -6,6 +6,13 @@
   "type" : "object",
   "javaType" : "aws.codebuild.ProjectTriggers",
   "properties" : {
+    "FilterGroups" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-filtergroups",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_CodeBuild_Project.FilterGroup.schema.json"
+      }
+    },
     "Webhook" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook",
       "type" : "boolean"

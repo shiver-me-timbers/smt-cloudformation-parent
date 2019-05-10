@@ -1,0 +1,64 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_ElasticLoadBalancingV2_Listener.AuthenticateOidcConfig.schema.json",
+  "title" : "AuthenticateOidcConfig",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html",
+  "type" : "object",
+  "javaType" : "aws.elasticloadbalancingv2.AuthenticateOidcConfig",
+  "properties" : {
+    "AuthenticationRequestExtraParams" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-authenticationrequestextraparams",
+      "type" : "object",
+      "javaType" : "java.util.Map<String, String>"
+    },
+    "AuthorizationEndpoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-authorizationendpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClientId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-clientid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ClientSecret" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-clientsecret",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Issuer" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-issuer",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OnUnauthenticatedRequest" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-onunauthenticatedrequest",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Scope" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-scope",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SessionCookieName" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-sessioncookiename",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "SessionTimeout" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-sessiontimeout",
+      "type" : "integer"
+    },
+    "TokenEndpoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-tokenendpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "UserInfoEndpoint" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listener-authenticateoidcconfig-userinfoendpoint",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

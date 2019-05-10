@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_SubscriptionDefinitionResource.schema.json",
+  "title" : "SubscriptionDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.SubscriptionDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<SubscriptionDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::SubscriptionDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_SubscriptionDefinition.schema.json"
+    }
+  }
+}

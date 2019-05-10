@@ -19,6 +19,11 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-dnsconfig",
       "$ref" : "AWS_ServiceDiscovery_Service.DnsConfig.schema.json"
     },
+    "NamespaceId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
     "HealthCheckConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-healthcheckconfig",
       "$ref" : "AWS_ServiceDiscovery_Service.HealthCheckConfig.schema.json"

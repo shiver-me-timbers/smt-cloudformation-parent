@@ -19,10 +19,18 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "FindingPublishingFrequency",
     "Enable"
 })
 public class Detector {
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-findingpublishingfrequency
+     * 
+     */
+    @JsonProperty("FindingPublishingFrequency")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-findingpublishingfrequency")
+    private CharSequence findingPublishingFrequency;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable
      * 
@@ -30,6 +38,29 @@ public class Detector {
     @JsonProperty("Enable")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable")
     private Boolean enable;
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-findingpublishingfrequency
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getFindingPublishingFrequency() {
+        return findingPublishingFrequency;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-findingpublishingfrequency
+     * 
+     */
+    @JsonIgnore
+    public void setFindingPublishingFrequency(CharSequence findingPublishingFrequency) {
+        this.findingPublishingFrequency = findingPublishingFrequency;
+    }
+
+    public Detector withFindingPublishingFrequency(CharSequence findingPublishingFrequency) {
+        this.findingPublishingFrequency = findingPublishingFrequency;
+        return this;
+    }
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable
@@ -56,12 +87,12 @@ public class Detector {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("enable", enable).toString();
+        return new ToStringBuilder(this).append("findingPublishingFrequency", findingPublishingFrequency).append("enable", enable).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(enable).toHashCode();
+        return new HashCodeBuilder().append(findingPublishingFrequency).append(enable).toHashCode();
     }
 
     @Override
@@ -73,7 +104,7 @@ public class Detector {
             return false;
         }
         Detector rhs = ((Detector) other);
-        return new EqualsBuilder().append(enable, rhs.enable).isEquals();
+        return new EqualsBuilder().append(findingPublishingFrequency, rhs.findingPublishingFrequency).append(enable, rhs.enable).isEquals();
     }
 
 }

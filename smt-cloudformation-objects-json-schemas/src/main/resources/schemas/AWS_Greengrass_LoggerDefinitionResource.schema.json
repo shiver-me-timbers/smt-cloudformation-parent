@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Greengrass_LoggerDefinitionResource.schema.json",
+  "title" : "LoggerDefinitionResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.greengrass.LoggerDefinitionResource",
+  "javaInterfaces" : [ "aws.HasAttributes<LoggerDefinitionAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::Greengrass::LoggerDefinition"
+    },
+    "Properties" : {
+      "$ref" : "AWS_Greengrass_LoggerDefinition.schema.json"
+    }
+  }
+}

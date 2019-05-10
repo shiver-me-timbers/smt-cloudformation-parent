@@ -1,8 +1,6 @@
 
 package aws.dms;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -25,9 +26,11 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KmsKeyId",
     "Port",
     "DatabaseName",
+    "ElasticsearchSettings",
     "S3Settings",
     "EngineName",
     "DynamoDbSettings",
+    "KinesisSettings",
     "Username",
     "SslMode",
     "ServerName",
@@ -63,6 +66,15 @@ public class Endpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename")
     private CharSequence databaseName;
     /**
+     * ElasticsearchSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
+     * 
+     */
+    @JsonProperty("ElasticsearchSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html")
+    private ElasticsearchSettings elasticsearchSettings;
+    /**
      * S3Settings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
@@ -87,6 +99,15 @@ public class Endpoint {
     @JsonProperty("DynamoDbSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html")
     private DynamoDbSettings dynamoDbSettings;
+    /**
+     * KinesisSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
+     * 
+     */
+    @JsonProperty("KinesisSettings")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html")
+    private KinesisSettings kinesisSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username
      * 
@@ -230,6 +251,33 @@ public class Endpoint {
     }
 
     /**
+     * ElasticsearchSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
+     * 
+     */
+    @JsonIgnore
+    public ElasticsearchSettings getElasticsearchSettings() {
+        return elasticsearchSettings;
+    }
+
+    /**
+     * ElasticsearchSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setElasticsearchSettings(ElasticsearchSettings elasticsearchSettings) {
+        this.elasticsearchSettings = elasticsearchSettings;
+    }
+
+    public Endpoint withElasticsearchSettings(ElasticsearchSettings elasticsearchSettings) {
+        this.elasticsearchSettings = elasticsearchSettings;
+        return this;
+    }
+
+    /**
      * S3Settings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
@@ -303,6 +351,33 @@ public class Endpoint {
 
     public Endpoint withDynamoDbSettings(DynamoDbSettings dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
+        return this;
+    }
+
+    /**
+     * KinesisSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
+     * 
+     */
+    @JsonIgnore
+    public KinesisSettings getKinesisSettings() {
+        return kinesisSettings;
+    }
+
+    /**
+     * KinesisSettings
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
+     * 
+     */
+    @JsonIgnore
+    public void setKinesisSettings(KinesisSettings kinesisSettings) {
+        this.kinesisSettings = kinesisSettings;
+    }
+
+    public Endpoint withKinesisSettings(KinesisSettings kinesisSettings) {
+        this.kinesisSettings = kinesisSettings;
         return this;
     }
 
@@ -542,12 +617,12 @@ public class Endpoint {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("port", port).append("databaseName", databaseName).append("s3Settings", s3Settings).append("engineName", engineName).append("dynamoDbSettings", dynamoDbSettings).append("username", username).append("sslMode", sslMode).append("serverName", serverName).append("extraConnectionAttributes", extraConnectionAttributes).append("endpointType", endpointType).append("tags", tags).append("endpointIdentifier", endpointIdentifier).append("password", password).append("certificateArn", certificateArn).append("mongoDbSettings", mongoDbSettings).toString();
+        return new ToStringBuilder(this).append("kmsKeyId", kmsKeyId).append("port", port).append("databaseName", databaseName).append("elasticsearchSettings", elasticsearchSettings).append("s3Settings", s3Settings).append("engineName", engineName).append("dynamoDbSettings", dynamoDbSettings).append("kinesisSettings", kinesisSettings).append("username", username).append("sslMode", sslMode).append("serverName", serverName).append("extraConnectionAttributes", extraConnectionAttributes).append("endpointType", endpointType).append("tags", tags).append("endpointIdentifier", endpointIdentifier).append("password", password).append("certificateArn", certificateArn).append("mongoDbSettings", mongoDbSettings).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(endpointType).append(endpointIdentifier).append(databaseName).append(serverName).append(dynamoDbSettings).append(mongoDbSettings).append(sslMode).append(tags).append(password).append(certificateArn).append(port).append(kmsKeyId).append(engineName).append(s3Settings).append(extraConnectionAttributes).append(username).toHashCode();
+        return new HashCodeBuilder().append(endpointType).append(endpointIdentifier).append(databaseName).append(elasticsearchSettings).append(serverName).append(dynamoDbSettings).append(kinesisSettings).append(mongoDbSettings).append(sslMode).append(tags).append(password).append(certificateArn).append(port).append(kmsKeyId).append(engineName).append(s3Settings).append(extraConnectionAttributes).append(username).toHashCode();
     }
 
     @Override
@@ -559,7 +634,7 @@ public class Endpoint {
             return false;
         }
         Endpoint rhs = ((Endpoint) other);
-        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointIdentifier, rhs.endpointIdentifier).append(databaseName, rhs.databaseName).append(serverName, rhs.serverName).append(dynamoDbSettings, rhs.dynamoDbSettings).append(mongoDbSettings, rhs.mongoDbSettings).append(sslMode, rhs.sslMode).append(tags, rhs.tags).append(password, rhs.password).append(certificateArn, rhs.certificateArn).append(port, rhs.port).append(kmsKeyId, rhs.kmsKeyId).append(engineName, rhs.engineName).append(s3Settings, rhs.s3Settings).append(extraConnectionAttributes, rhs.extraConnectionAttributes).append(username, rhs.username).isEquals();
+        return new EqualsBuilder().append(endpointType, rhs.endpointType).append(endpointIdentifier, rhs.endpointIdentifier).append(databaseName, rhs.databaseName).append(elasticsearchSettings, rhs.elasticsearchSettings).append(serverName, rhs.serverName).append(dynamoDbSettings, rhs.dynamoDbSettings).append(kinesisSettings, rhs.kinesisSettings).append(mongoDbSettings, rhs.mongoDbSettings).append(sslMode, rhs.sslMode).append(tags, rhs.tags).append(password, rhs.password).append(certificateArn, rhs.certificateArn).append(port, rhs.port).append(kmsKeyId, rhs.kmsKeyId).append(engineName, rhs.engineName).append(s3Settings, rhs.s3Settings).append(extraConnectionAttributes, rhs.extraConnectionAttributes).append(username, rhs.username).isEquals();
     }
 
 }

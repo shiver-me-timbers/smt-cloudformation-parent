@@ -1,0 +1,19 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AmazonMQ_ConfigurationAssociation.schema.json",
+  "title" : "ConfigurationAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html",
+  "type" : "object",
+  "javaType" : "aws.amazonmq.ConfigurationAssociation",
+  "properties" : {
+    "Broker" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-broker",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Configuration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-configuration",
+      "$ref" : "AWS_AmazonMQ_Broker.ConfigurationId.schema.json"
+    }
+  }
+}

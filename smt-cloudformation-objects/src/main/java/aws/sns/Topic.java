@@ -1,8 +1,6 @@
 
 package aws.sns;
 
-import java.util.ArrayList;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -11,6 +9,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -22,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DisplayName",
+    "KmsMasterKeyId",
     "Subscription",
     "TopicName"
 })
@@ -34,6 +36,13 @@ public class Topic {
     @JsonProperty("DisplayName")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-displayname")
     private CharSequence displayName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-kmsmasterkeyid
+     * 
+     */
+    @JsonProperty("KmsMasterKeyId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-kmsmasterkeyid")
+    private CharSequence kmsMasterKeyId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription
      * 
@@ -69,6 +78,29 @@ public class Topic {
 
     public Topic withDisplayName(CharSequence displayName) {
         this.displayName = displayName;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-kmsmasterkeyid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getKmsMasterKeyId() {
+        return kmsMasterKeyId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-kmsmasterkeyid
+     * 
+     */
+    @JsonIgnore
+    public void setKmsMasterKeyId(CharSequence kmsMasterKeyId) {
+        this.kmsMasterKeyId = kmsMasterKeyId;
+    }
+
+    public Topic withKmsMasterKeyId(CharSequence kmsMasterKeyId) {
+        this.kmsMasterKeyId = kmsMasterKeyId;
         return this;
     }
 
@@ -120,12 +152,12 @@ public class Topic {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("displayName", displayName).append("subscription", subscription).append("topicName", topicName).toString();
+        return new ToStringBuilder(this).append("displayName", displayName).append("kmsMasterKeyId", kmsMasterKeyId).append("subscription", subscription).append("topicName", topicName).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(topicName).append(subscription).append(displayName).toHashCode();
+        return new HashCodeBuilder().append(topicName).append(kmsMasterKeyId).append(subscription).append(displayName).toHashCode();
     }
 
     @Override
@@ -137,7 +169,7 @@ public class Topic {
             return false;
         }
         Topic rhs = ((Topic) other);
-        return new EqualsBuilder().append(topicName, rhs.topicName).append(subscription, rhs.subscription).append(displayName, rhs.displayName).isEquals();
+        return new EqualsBuilder().append(topicName, rhs.topicName).append(kmsMasterKeyId, rhs.kmsMasterKeyId).append(subscription, rhs.subscription).append(displayName, rhs.displayName).isEquals();
     }
 
 }

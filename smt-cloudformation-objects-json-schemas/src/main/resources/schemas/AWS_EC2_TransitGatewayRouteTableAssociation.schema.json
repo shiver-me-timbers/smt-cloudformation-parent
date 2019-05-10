@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TransitGatewayRouteTableAssociation.schema.json",
+  "title" : "TransitGatewayRouteTableAssociation",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.TransitGatewayRouteTableAssociation",
+  "properties" : {
+    "TransitGatewayRouteTableId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html#cfn-ec2-transitgatewayroutetableassociation-transitgatewayroutetableid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TransitGatewayAttachmentId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetableassociation.html#cfn-ec2-transitgatewayroutetableassociation-transitgatewayattachmentid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

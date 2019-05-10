@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppSync_FunctionConfigurationResource.schema.json",
+  "title" : "FunctionConfigurationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-functionconfiguration.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appsync.FunctionConfigurationResource",
+  "javaInterfaces" : [ "aws.HasAttributes<FunctionConfigurationAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppSync::FunctionConfiguration"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppSync_FunctionConfiguration.schema.json"
+    }
+  }
+}

@@ -26,6 +26,13 @@
       "type" : "string",
       "javaType" : "java.lang.CharSequence"
     },
+    "Tags" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AmazonMQ_Broker.TagsEntry.schema.json"
+      }
+    },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name",
       "type" : "string",

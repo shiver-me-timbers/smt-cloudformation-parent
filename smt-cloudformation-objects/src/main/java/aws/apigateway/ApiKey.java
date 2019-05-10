@@ -1,8 +1,6 @@
 
 package aws.apigateway;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "GenerateDistinctId",
     "Name",
-    "StageKeys"
+    "StageKeys",
+    "Value"
 })
 public class ApiKey {
 
@@ -74,6 +76,13 @@ public class ApiKey {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-stagekeys")
     private Set<StageKey> stageKeys = new LinkedHashSet<StageKey>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-value
+     * 
+     */
+    @JsonProperty("Value")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-value")
+    private CharSequence value;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-customerid
@@ -213,14 +222,37 @@ public class ApiKey {
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-value
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getValue() {
+        return value;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-value
+     * 
+     */
+    @JsonIgnore
+    public void setValue(CharSequence value) {
+        this.value = value;
+    }
+
+    public ApiKey withValue(CharSequence value) {
+        this.value = value;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("customerId", customerId).append("description", description).append("enabled", enabled).append("generateDistinctId", generateDistinctId).append("name", name).append("stageKeys", stageKeys).toString();
+        return new ToStringBuilder(this).append("customerId", customerId).append("description", description).append("enabled", enabled).append("generateDistinctId", generateDistinctId).append("name", name).append("stageKeys", stageKeys).append("value", value).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(generateDistinctId).append(customerId).append(name).append(description).append(stageKeys).append(enabled).toHashCode();
+        return new HashCodeBuilder().append(generateDistinctId).append(customerId).append(name).append(description).append(stageKeys).append(value).append(enabled).toHashCode();
     }
 
     @Override
@@ -232,7 +264,7 @@ public class ApiKey {
             return false;
         }
         ApiKey rhs = ((ApiKey) other);
-        return new EqualsBuilder().append(generateDistinctId, rhs.generateDistinctId).append(customerId, rhs.customerId).append(name, rhs.name).append(description, rhs.description).append(stageKeys, rhs.stageKeys).append(enabled, rhs.enabled).isEquals();
+        return new EqualsBuilder().append(generateDistinctId, rhs.generateDistinctId).append(customerId, rhs.customerId).append(name, rhs.name).append(description, rhs.description).append(stageKeys, rhs.stageKeys).append(value, rhs.value).append(enabled, rhs.enabled).isEquals();
     }
 
 }

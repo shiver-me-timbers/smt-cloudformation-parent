@@ -1,0 +1,64 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2Fleet.schema.json",
+  "title" : "EC2Fleet",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.EC2Fleet",
+  "properties" : {
+    "TargetCapacitySpecification" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-targetcapacityspecification",
+      "$ref" : "AWS_EC2_EC2Fleet.TargetCapacitySpecificationRequest.schema.json"
+    },
+    "OnDemandOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-ondemandoptions",
+      "$ref" : "AWS_EC2_EC2Fleet.OnDemandOptionsRequest.schema.json"
+    },
+    "Type" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ExcessCapacityTerminationPolicy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-excesscapacityterminationpolicy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "TagSpecifications" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-tagspecifications",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json"
+      }
+    },
+    "SpotOptions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-spotoptions",
+      "$ref" : "AWS_EC2_EC2Fleet.SpotOptionsRequest.schema.json"
+    },
+    "ValidFrom" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "ReplaceUnhealthyInstances" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-replaceunhealthyinstances",
+      "type" : "boolean"
+    },
+    "LaunchTemplateConfigs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateConfigRequest.schema.json"
+      }
+    },
+    "TerminateInstancesWithExpiration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-terminateinstanceswithexpiration",
+      "type" : "boolean"
+    },
+    "ValidUntil" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validuntil",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

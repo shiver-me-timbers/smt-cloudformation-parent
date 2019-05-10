@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_Lambda_LayerVersionPermission.schema.json",
+  "title" : "LayerVersionPermission",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html",
+  "type" : "object",
+  "javaType" : "aws.lambda.LayerVersionPermission",
+  "properties" : {
+    "Action" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html#cfn-lambda-layerversionpermission-action",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "LayerVersionArn" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html#cfn-lambda-layerversionpermission-layerversionarn",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "OrganizationId" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html#cfn-lambda-layerversionpermission-organizationid",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "Principal" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversionpermission.html#cfn-lambda-layerversionpermission-principal",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    }
+  }
+}

@@ -64,6 +64,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-notification",
       "$ref" : "AWS_S3_Bucket.NotificationConfiguration.schema.json"
     },
+    "PublicAccessBlockConfiguration" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-publicaccessblockconfiguration",
+      "$ref" : "AWS_S3_Bucket.PublicAccessBlockConfiguration.schema.json"
+    },
     "ReplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-replicationconfiguration",
       "$ref" : "AWS_S3_Bucket.ReplicationConfiguration.schema.json"

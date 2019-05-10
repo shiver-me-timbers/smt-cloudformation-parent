@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_EC2Fleet.SpotOptionsRequest.schema.json",
+  "title" : "SpotOptionsRequest",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html",
+  "type" : "object",
+  "javaType" : "aws.ec2.SpotOptionsRequest",
+  "properties" : {
+    "AllocationStrategy" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-allocationstrategy",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InstanceInterruptionBehavior" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instanceinterruptionbehavior",
+      "type" : "string",
+      "javaType" : "java.lang.CharSequence"
+    },
+    "InstancePoolsToUseCount" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-instancepoolstousecount",
+      "type" : "integer"
+    }
+  }
+}

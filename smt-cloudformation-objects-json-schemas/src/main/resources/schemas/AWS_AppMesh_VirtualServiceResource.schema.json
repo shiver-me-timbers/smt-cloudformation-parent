@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualServiceResource.schema.json",
+  "title" : "VirtualServiceResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.appmesh.VirtualServiceResource",
+  "javaInterfaces" : [ "aws.HasAttributes<VirtualServiceAttributes>" ],
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::AppMesh::VirtualService"
+    },
+    "Properties" : {
+      "$ref" : "AWS_AppMesh_VirtualService.schema.json"
+    }
+  }
+}

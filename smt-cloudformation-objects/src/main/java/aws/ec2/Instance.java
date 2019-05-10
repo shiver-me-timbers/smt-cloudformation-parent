@@ -1,10 +1,6 @@
 
 package aws.ec2;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -15,6 +11,11 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 
 /**
@@ -33,6 +34,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DisableApiTermination",
     "EbsOptimized",
     "ElasticGpuSpecifications",
+    "ElasticInferenceAccelerators",
     "HostId",
     "IamInstanceProfile",
     "ImageId",
@@ -43,6 +45,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KernelId",
     "KeyName",
     "LaunchTemplate",
+    "LicenseSpecifications",
     "Monitoring",
     "NetworkInterfaces",
     "PlacementGroupName",
@@ -91,11 +94,11 @@ public class Instance {
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonProperty("CreditSpecification")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html")
     private CreditSpecification creditSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination
@@ -119,6 +122,14 @@ public class Instance {
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticgpuspecifications")
     private Set<ElasticGpuSpecification> elasticGpuSpecifications = new LinkedHashSet<ElasticGpuSpecification>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators
+     * 
+     */
+    @JsonProperty("ElasticInferenceAccelerators")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators")
+    private Set<ElasticInferenceAccelerator> elasticInferenceAccelerators = new LinkedHashSet<ElasticInferenceAccelerator>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid
      * 
@@ -191,6 +202,14 @@ public class Instance {
     @JsonProperty("LaunchTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html")
     private FleetLaunchTemplateSpecification launchTemplate;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications
+     * 
+     */
+    @JsonProperty("LicenseSpecifications")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications")
+    private Set<LicenseSpecification> licenseSpecifications = new LinkedHashSet<LicenseSpecification>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring
      * 
@@ -385,7 +404,7 @@ public class Instance {
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonIgnore
@@ -396,7 +415,7 @@ public class Instance {
     /**
      * CreditSpecification
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html
      * 
      */
     @JsonIgnore
@@ -475,6 +494,29 @@ public class Instance {
 
     public Instance withElasticGpuSpecifications(Set<ElasticGpuSpecification> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators
+     * 
+     */
+    @JsonIgnore
+    public Set<ElasticInferenceAccelerator> getElasticInferenceAccelerators() {
+        return elasticInferenceAccelerators;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators
+     * 
+     */
+    @JsonIgnore
+    public void setElasticInferenceAccelerators(Set<ElasticInferenceAccelerator> elasticInferenceAccelerators) {
+        this.elasticInferenceAccelerators = elasticInferenceAccelerators;
+    }
+
+    public Instance withElasticInferenceAccelerators(Set<ElasticInferenceAccelerator> elasticInferenceAccelerators) {
+        this.elasticInferenceAccelerators = elasticInferenceAccelerators;
         return this;
     }
 
@@ -709,6 +751,29 @@ public class Instance {
 
     public Instance withLaunchTemplate(FleetLaunchTemplateSpecification launchTemplate) {
         this.launchTemplate = launchTemplate;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications
+     * 
+     */
+    @JsonIgnore
+    public Set<LicenseSpecification> getLicenseSpecifications() {
+        return licenseSpecifications;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications
+     * 
+     */
+    @JsonIgnore
+    public void setLicenseSpecifications(Set<LicenseSpecification> licenseSpecifications) {
+        this.licenseSpecifications = licenseSpecifications;
+    }
+
+    public Instance withLicenseSpecifications(Set<LicenseSpecification> licenseSpecifications) {
+        this.licenseSpecifications = licenseSpecifications;
         return this;
     }
 
@@ -1036,12 +1101,12 @@ public class Instance {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("additionalInfo", additionalInfo).append("affinity", affinity).append("availabilityZone", availabilityZone).append("blockDeviceMappings", blockDeviceMappings).append("creditSpecification", creditSpecification).append("disableApiTermination", disableApiTermination).append("ebsOptimized", ebsOptimized).append("elasticGpuSpecifications", elasticGpuSpecifications).append("hostId", hostId).append("iamInstanceProfile", iamInstanceProfile).append("imageId", imageId).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("instanceType", instanceType).append("ipv6AddressCount", ipv6AddressCount).append("ipv6Addresses", ipv6Addresses).append("kernelId", kernelId).append("keyName", keyName).append("launchTemplate", launchTemplate).append("monitoring", monitoring).append("networkInterfaces", networkInterfaces).append("placementGroupName", placementGroupName).append("privateIpAddress", privateIpAddress).append("ramdiskId", ramdiskId).append("securityGroupIds", securityGroupIds).append("securityGroups", securityGroups).append("sourceDestCheck", sourceDestCheck).append("ssmAssociations", ssmAssociations).append("subnetId", subnetId).append("tags", tags).append("tenancy", tenancy).append("userData", userData).append("volumes", volumes).toString();
+        return new ToStringBuilder(this).append("additionalInfo", additionalInfo).append("affinity", affinity).append("availabilityZone", availabilityZone).append("blockDeviceMappings", blockDeviceMappings).append("creditSpecification", creditSpecification).append("disableApiTermination", disableApiTermination).append("ebsOptimized", ebsOptimized).append("elasticGpuSpecifications", elasticGpuSpecifications).append("elasticInferenceAccelerators", elasticInferenceAccelerators).append("hostId", hostId).append("iamInstanceProfile", iamInstanceProfile).append("imageId", imageId).append("instanceInitiatedShutdownBehavior", instanceInitiatedShutdownBehavior).append("instanceType", instanceType).append("ipv6AddressCount", ipv6AddressCount).append("ipv6Addresses", ipv6Addresses).append("kernelId", kernelId).append("keyName", keyName).append("launchTemplate", launchTemplate).append("licenseSpecifications", licenseSpecifications).append("monitoring", monitoring).append("networkInterfaces", networkInterfaces).append("placementGroupName", placementGroupName).append("privateIpAddress", privateIpAddress).append("ramdiskId", ramdiskId).append("securityGroupIds", securityGroupIds).append("securityGroups", securityGroups).append("sourceDestCheck", sourceDestCheck).append("ssmAssociations", ssmAssociations).append("subnetId", subnetId).append("tags", tags).append("tenancy", tenancy).append("userData", userData).append("volumes", volumes).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subnetId).append(kernelId).append(ramdiskId).append(userData).append(ipv6Addresses).append(sourceDestCheck).append(availabilityZone).append(instanceInitiatedShutdownBehavior).append(placementGroupName).append(securityGroupIds).append(additionalInfo).append(elasticGpuSpecifications).append(ebsOptimized).append(imageId).append(blockDeviceMappings).append(ssmAssociations).append(instanceType).append(keyName).append(tenancy).append(volumes).append(hostId).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(privateIpAddress).append(tags).append(ipv6AddressCount).append(disableApiTermination).append(networkInterfaces).append(launchTemplate).append(securityGroups).append(affinity).toHashCode();
+        return new HashCodeBuilder().append(subnetId).append(kernelId).append(ramdiskId).append(userData).append(ipv6Addresses).append(sourceDestCheck).append(availabilityZone).append(instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators).append(placementGroupName).append(securityGroupIds).append(additionalInfo).append(elasticGpuSpecifications).append(ebsOptimized).append(imageId).append(blockDeviceMappings).append(licenseSpecifications).append(ssmAssociations).append(instanceType).append(keyName).append(tenancy).append(volumes).append(hostId).append(creditSpecification).append(monitoring).append(iamInstanceProfile).append(privateIpAddress).append(tags).append(ipv6AddressCount).append(disableApiTermination).append(networkInterfaces).append(launchTemplate).append(securityGroups).append(affinity).toHashCode();
     }
 
     @Override
@@ -1053,7 +1118,7 @@ public class Instance {
             return false;
         }
         Instance rhs = ((Instance) other);
-        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(kernelId, rhs.kernelId).append(ramdiskId, rhs.ramdiskId).append(userData, rhs.userData).append(ipv6Addresses, rhs.ipv6Addresses).append(sourceDestCheck, rhs.sourceDestCheck).append(availabilityZone, rhs.availabilityZone).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(placementGroupName, rhs.placementGroupName).append(securityGroupIds, rhs.securityGroupIds).append(additionalInfo, rhs.additionalInfo).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(ebsOptimized, rhs.ebsOptimized).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(ssmAssociations, rhs.ssmAssociations).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(tenancy, rhs.tenancy).append(volumes, rhs.volumes).append(hostId, rhs.hostId).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(privateIpAddress, rhs.privateIpAddress).append(tags, rhs.tags).append(ipv6AddressCount, rhs.ipv6AddressCount).append(disableApiTermination, rhs.disableApiTermination).append(networkInterfaces, rhs.networkInterfaces).append(launchTemplate, rhs.launchTemplate).append(securityGroups, rhs.securityGroups).append(affinity, rhs.affinity).isEquals();
+        return new EqualsBuilder().append(subnetId, rhs.subnetId).append(kernelId, rhs.kernelId).append(ramdiskId, rhs.ramdiskId).append(userData, rhs.userData).append(ipv6Addresses, rhs.ipv6Addresses).append(sourceDestCheck, rhs.sourceDestCheck).append(availabilityZone, rhs.availabilityZone).append(instanceInitiatedShutdownBehavior, rhs.instanceInitiatedShutdownBehavior).append(elasticInferenceAccelerators, rhs.elasticInferenceAccelerators).append(placementGroupName, rhs.placementGroupName).append(securityGroupIds, rhs.securityGroupIds).append(additionalInfo, rhs.additionalInfo).append(elasticGpuSpecifications, rhs.elasticGpuSpecifications).append(ebsOptimized, rhs.ebsOptimized).append(imageId, rhs.imageId).append(blockDeviceMappings, rhs.blockDeviceMappings).append(licenseSpecifications, rhs.licenseSpecifications).append(ssmAssociations, rhs.ssmAssociations).append(instanceType, rhs.instanceType).append(keyName, rhs.keyName).append(tenancy, rhs.tenancy).append(volumes, rhs.volumes).append(hostId, rhs.hostId).append(creditSpecification, rhs.creditSpecification).append(monitoring, rhs.monitoring).append(iamInstanceProfile, rhs.iamInstanceProfile).append(privateIpAddress, rhs.privateIpAddress).append(tags, rhs.tags).append(ipv6AddressCount, rhs.ipv6AddressCount).append(disableApiTermination, rhs.disableApiTermination).append(networkInterfaces, rhs.networkInterfaces).append(launchTemplate, rhs.launchTemplate).append(securityGroups, rhs.securityGroups).append(affinity, rhs.affinity).isEquals();
     }
 
 }

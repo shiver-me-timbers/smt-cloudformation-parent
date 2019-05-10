@@ -1,8 +1,6 @@
 
 package aws.sagemaker;
 
-import java.util.ArrayList;
-import java.util.List;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -26,6 +27,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PrimaryContainer",
     "ModelName",
     "VpcConfig",
+    "Containers",
     "Tags"
 })
 public class Model {
@@ -62,6 +64,13 @@ public class Model {
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html")
     private VpcConfig vpcConfig;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers
+     * 
+     */
+    @JsonProperty("Containers")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers")
+    private List<ContainerDefinition> containers = new ArrayList<ContainerDefinition>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
@@ -171,6 +180,29 @@ public class Model {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers
+     * 
+     */
+    @JsonIgnore
+    public List<ContainerDefinition> getContainers() {
+        return containers;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers
+     * 
+     */
+    @JsonIgnore
+    public void setContainers(List<ContainerDefinition> containers) {
+        this.containers = containers;
+    }
+
+    public Model withContainers(List<ContainerDefinition> containers) {
+        this.containers = containers;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
      */
@@ -195,12 +227,12 @@ public class Model {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("executionRoleArn", executionRoleArn).append("primaryContainer", primaryContainer).append("modelName", modelName).append("vpcConfig", vpcConfig).append("tags", tags).toString();
+        return new ToStringBuilder(this).append("executionRoleArn", executionRoleArn).append("primaryContainer", primaryContainer).append("modelName", modelName).append("vpcConfig", vpcConfig).append("containers", containers).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(modelName).append(executionRoleArn).append(primaryContainer).append(vpcConfig).append(tags).toHashCode();
+        return new HashCodeBuilder().append(modelName).append(executionRoleArn).append(primaryContainer).append(vpcConfig).append(containers).append(tags).toHashCode();
     }
 
     @Override
@@ -212,7 +244,7 @@ public class Model {
             return false;
         }
         Model rhs = ((Model) other);
-        return new EqualsBuilder().append(modelName, rhs.modelName).append(executionRoleArn, rhs.executionRoleArn).append(primaryContainer, rhs.primaryContainer).append(vpcConfig, rhs.vpcConfig).append(tags, rhs.tags).isEquals();
+        return new EqualsBuilder().append(modelName, rhs.modelName).append(executionRoleArn, rhs.executionRoleArn).append(primaryContainer, rhs.primaryContainer).append(vpcConfig, rhs.vpcConfig).append(containers, rhs.containers).append(tags, rhs.tags).isEquals();
     }
 
 }

@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_EC2_TransitGatewayRouteTablePropagationResource.schema.json",
+  "title" : "TransitGatewayRouteTablePropagationResource",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-transitgatewayroutetablepropagation.html",
+  "type" : "object",
+  "extends" : {
+    "$ref" : "Resource.schema.json"
+  },
+  "javaType" : "aws.ec2.TransitGatewayRouteTablePropagationResource",
+  "properties" : {
+    "Type" : {
+      "type" : "string",
+      "default" : "AWS::EC2::TransitGatewayRouteTablePropagation"
+    },
+    "Properties" : {
+      "$ref" : "AWS_EC2_TransitGatewayRouteTablePropagation.schema.json"
+    }
+  }
+}

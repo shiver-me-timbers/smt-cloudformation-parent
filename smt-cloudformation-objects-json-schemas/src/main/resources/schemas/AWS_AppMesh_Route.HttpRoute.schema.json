@@ -1,0 +1,18 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_Route.HttpRoute.schema.json",
+  "title" : "HttpRoute",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.HttpRoute",
+  "properties" : {
+    "Action" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-action",
+      "$ref" : "AWS_AppMesh_Route.HttpRouteAction.schema.json"
+    },
+    "Match" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-match",
+      "$ref" : "AWS_AppMesh_Route.HttpRouteMatch.schema.json"
+    }
+  }
+}

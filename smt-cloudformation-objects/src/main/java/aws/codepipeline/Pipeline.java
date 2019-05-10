@@ -1,8 +1,6 @@
 
 package aws.codepipeline;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,6 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 
 /**
@@ -23,6 +24,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "ArtifactStore",
+    "ArtifactStores",
     "DisableInboundStageTransitions",
     "Name",
     "RestartExecutionOnUpdate",
@@ -40,6 +42,14 @@ public class Pipeline {
     @JsonProperty("ArtifactStore")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html")
     private ArtifactStore artifactStore;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
+     * 
+     */
+    @JsonProperty("ArtifactStores")
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores")
+    private Set<ArtifactStoreMap> artifactStores = new LinkedHashSet<ArtifactStoreMap>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
@@ -102,6 +112,29 @@ public class Pipeline {
 
     public Pipeline withArtifactStore(ArtifactStore artifactStore) {
         this.artifactStore = artifactStore;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
+     * 
+     */
+    @JsonIgnore
+    public Set<ArtifactStoreMap> getArtifactStores() {
+        return artifactStores;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
+     * 
+     */
+    @JsonIgnore
+    public void setArtifactStores(Set<ArtifactStoreMap> artifactStores) {
+        this.artifactStores = artifactStores;
+    }
+
+    public Pipeline withArtifactStores(Set<ArtifactStoreMap> artifactStores) {
+        this.artifactStores = artifactStores;
         return this;
     }
 
@@ -222,12 +255,12 @@ public class Pipeline {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("disableInboundStageTransitions", disableInboundStageTransitions).append("name", name).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("stages", stages).toString();
+        return new ToStringBuilder(this).append("artifactStore", artifactStore).append("artifactStores", artifactStores).append("disableInboundStageTransitions", disableInboundStageTransitions).append("name", name).append("restartExecutionOnUpdate", restartExecutionOnUpdate).append("roleArn", roleArn).append("stages", stages).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(name).append(stages).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).toHashCode();
+        return new HashCodeBuilder().append(artifactStore).append(roleArn).append(name).append(stages).append(artifactStores).append(restartExecutionOnUpdate).append(disableInboundStageTransitions).toHashCode();
     }
 
     @Override
@@ -239,7 +272,7 @@ public class Pipeline {
             return false;
         }
         Pipeline rhs = ((Pipeline) other);
-        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(name, rhs.name).append(stages, rhs.stages).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).isEquals();
+        return new EqualsBuilder().append(artifactStore, rhs.artifactStore).append(roleArn, rhs.roleArn).append(name, rhs.name).append(stages, rhs.stages).append(artifactStores, rhs.artifactStores).append(restartExecutionOnUpdate, rhs.restartExecutionOnUpdate).append(disableInboundStageTransitions, rhs.disableInboundStageTransitions).isEquals();
     }
 
 }

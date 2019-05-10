@@ -1,0 +1,17 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_KinesisAnalyticsV2_Application.SqlApplicationConfiguration.schema.json",
+  "title" : "SqlApplicationConfiguration",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html",
+  "type" : "object",
+  "javaType" : "aws.kinesisanalyticsv2.SqlApplicationConfiguration",
+  "properties" : {
+    "Inputs" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_KinesisAnalyticsV2_Application.KinesisStreamsInput.schema.json"
+      }
+    }
+  }
+}

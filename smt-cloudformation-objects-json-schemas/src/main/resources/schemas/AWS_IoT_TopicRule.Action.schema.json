@@ -30,6 +30,10 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-firehose",
       "$ref" : "AWS_IoT_TopicRule.FirehoseAction.schema.json"
     },
+    "IotAnalytics" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-iotanalytics",
+      "$ref" : "AWS_IoT_TopicRule.IotAnalyticsAction.schema.json"
+    },
     "Kinesis" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-kinesis",
       "$ref" : "AWS_IoT_TopicRule.KinesisAction.schema.json"
@@ -53,6 +57,10 @@
     "Sqs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-sqs",
       "$ref" : "AWS_IoT_TopicRule.SqsAction.schema.json"
+    },
+    "StepFunctions" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-action.html#cfn-iot-topicrule-action-stepfunctions",
+      "$ref" : "AWS_IoT_TopicRule.StepFunctionsAction.schema.json"
     }
   }
 }

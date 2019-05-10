@@ -1,0 +1,32 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "$id" : "AWS_AppMesh_VirtualNode.VirtualNodeSpec.schema.json",
+  "title" : "VirtualNodeSpec",
+  "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html",
+  "type" : "object",
+  "javaType" : "aws.appmesh.VirtualNodeSpec",
+  "properties" : {
+    "Logging" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-logging",
+      "$ref" : "AWS_AppMesh_VirtualNode.Logging.schema.json"
+    },
+    "Backends" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-backends",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_VirtualNode.Backend.schema.json"
+      }
+    },
+    "Listeners" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-listeners",
+      "type" : "array",
+      "items" : {
+        "$ref" : "AWS_AppMesh_VirtualRouter.VirtualRouterListener.schema.json"
+      }
+    },
+    "ServiceDiscovery" : {
+      "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-servicediscovery",
+      "$ref" : "AWS_AppMesh_VirtualNode.ServiceDiscovery.schema.json"
+    }
+  }
+}

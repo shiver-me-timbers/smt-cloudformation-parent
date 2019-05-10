@@ -1,5 +1,6 @@
 package shiver.me.timbers.cloudformation.transformers;
 
+import org.junit.Before;
 import org.junit.Test;
 import shiver.me.timbers.cloudformation.CloudformationProperties;
 import shiver.me.timbers.cloudformation.CloudformationProperty;
@@ -14,16 +15,36 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verifyZeroInteractions;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
 public class AbstractPropertiesTransformerTest {
+
+    private Transformer transformer;
+    private AbstractPropertiesTransformer propertiesTransformer;
+
+    @Before
+    public void setUp() {
+        transformer = mock(Transformer.class);
+        propertiesTransformer = new AbstractPropertiesTransformer() {
+            @Override
+            protected void transform(
+                String resourceName,
+                CloudformationType type,
+                String propertyName,
+                CloudformationProperty cloudformationProperty,
+                Map<String, Object> property
+            ) {
+                transformer.transform(resourceName, type, propertyName, cloudformationProperty, property);
+            }
+        };
+    }
 
     @Test
     public void Can_transform_some_properties() {
 
         final String resourceName = someString();
         final CloudformationType cloudformationType = mock(CloudformationType.class);
-        final Transformer transformer = mock(Transformer.class);
 
         final CloudformationProperties properties = new CloudformationProperties();
         final String propertyName1 = someString();
@@ -49,18 +70,7 @@ public class AbstractPropertiesTransformerTest {
         }};
 
         // When
-        new AbstractPropertiesTransformer() {
-            @Override
-            protected void transform(
-                String resourceName,
-                CloudformationType type,
-                String propertyName,
-                CloudformationProperty cloudformationProperty,
-                Map<String, Object> property
-            ) {
-                transformer.transform(resourceName, type, propertyName, cloudformationProperty, property);
-            }
-        }.transform(resourceName, cloudformationType, actual);
+        propertiesTransformer.transform(resourceName, cloudformationType, actual);
 
         // Then
         then(transformer).should().transform(
@@ -84,6 +94,26 @@ public class AbstractPropertiesTransformerTest {
             property3,
             emptyMap()
         );
+        assertThat(actual, equalTo(expected));
+    }
+
+    @Test
+    public void Can_transform_no_properties() {
+
+        final String resourceName = someString();
+        final CloudformationType cloudformationType = mock(CloudformationType.class);
+
+        // Given
+        given(cloudformationType.getProperties()).willReturn(null);
+
+        final Map<String, Object> actual = new HashMap<>();
+        final Map<String, Object> expected = new HashMap<>();
+
+        // When
+        propertiesTransformer.transform(resourceName, cloudformationType, actual);
+
+        // Then
+        verifyZeroInteractions(transformer);
         assertThat(actual, equalTo(expected));
     }
 

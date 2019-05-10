@@ -23,6 +23,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VariantName",
     "InitialInstanceCount",
     "InstanceType",
+    "AcceleratorType",
     "InitialVariantWeight"
 })
 public class ProductionVariant {
@@ -55,6 +56,13 @@ public class ProductionVariant {
     @JsonProperty("InstanceType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-instancetype")
     private CharSequence instanceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-acceleratortype
+     * 
+     */
+    @JsonProperty("AcceleratorType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-acceleratortype")
+    private CharSequence acceleratorType;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight
      * 
@@ -156,6 +164,29 @@ public class ProductionVariant {
     }
 
     /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-acceleratortype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getAcceleratorType() {
+        return acceleratorType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-acceleratortype
+     * 
+     */
+    @JsonIgnore
+    public void setAcceleratorType(CharSequence acceleratorType) {
+        this.acceleratorType = acceleratorType;
+    }
+
+    public ProductionVariant withAcceleratorType(CharSequence acceleratorType) {
+        this.acceleratorType = acceleratorType;
+        return this;
+    }
+
+    /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-endpointconfig-productionvariant.html#cfn-sagemaker-endpointconfig-productionvariant-initialvariantweight
      * 
      */
@@ -180,12 +211,12 @@ public class ProductionVariant {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("modelName", modelName).append("variantName", variantName).append("initialInstanceCount", initialInstanceCount).append("instanceType", instanceType).append("initialVariantWeight", initialVariantWeight).toString();
+        return new ToStringBuilder(this).append("modelName", modelName).append("variantName", variantName).append("initialInstanceCount", initialInstanceCount).append("instanceType", instanceType).append("acceleratorType", acceleratorType).append("initialVariantWeight", initialVariantWeight).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(modelName).append(initialVariantWeight).append(variantName).append(initialInstanceCount).append(instanceType).toHashCode();
+        return new HashCodeBuilder().append(acceleratorType).append(modelName).append(instanceType).append(initialVariantWeight).append(variantName).append(initialInstanceCount).toHashCode();
     }
 
     @Override
@@ -197,7 +228,7 @@ public class ProductionVariant {
             return false;
         }
         ProductionVariant rhs = ((ProductionVariant) other);
-        return new EqualsBuilder().append(modelName, rhs.modelName).append(initialVariantWeight, rhs.initialVariantWeight).append(variantName, rhs.variantName).append(initialInstanceCount, rhs.initialInstanceCount).append(instanceType, rhs.instanceType).isEquals();
+        return new EqualsBuilder().append(acceleratorType, rhs.acceleratorType).append(modelName, rhs.modelName).append(instanceType, rhs.instanceType).append(initialVariantWeight, rhs.initialVariantWeight).append(variantName, rhs.variantName).append(initialInstanceCount, rhs.initialInstanceCount).isEquals();
     }
 
 }

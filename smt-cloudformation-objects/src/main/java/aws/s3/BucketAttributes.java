@@ -1,16 +1,18 @@
 
 package aws.s3;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public enum BucketAttributes {
 
     ARN("Arn"),
     DOMAIN_NAME("DomainName"),
     DUAL_STACK_DOMAIN_NAME("DualStackDomainName"),
+    REGIONAL_DOMAIN_NAME("RegionalDomainName"),
     WEBSITE_URL("WebsiteURL");
     private final String value;
     private final static Map<String, BucketAttributes> CONSTANTS = new HashMap<String, BucketAttributes>();
