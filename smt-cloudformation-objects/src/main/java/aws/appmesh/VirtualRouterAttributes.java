@@ -1,11 +1,10 @@
 
 package aws.appmesh;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
-
 import java.util.HashMap;
 import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum VirtualRouterAttributes {
 

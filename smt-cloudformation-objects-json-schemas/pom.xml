@@ -33,9 +33,6 @@
     <profiles>
         <profile>
             <id>generate-json-schemas</id>
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
             <build>
                 <plugins>
                     <plugin>

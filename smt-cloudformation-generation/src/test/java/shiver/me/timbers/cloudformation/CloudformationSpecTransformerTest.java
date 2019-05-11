@@ -1,7 +1,7 @@
 package shiver.me.timbers.cloudformation;
 
 import org.junit.Test;
-import shiver.me.timbers.cloudformation.transformers.TypesTransformer;
+import shiver.me.timbers.cloudformation.transformers.type.TypesTransformer;
 
 import java.util.Map;
 

@@ -1,7 +1,6 @@
 package shiver.me.timbers.cloudformation.annotator;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.sun.codemodel.JDefinedClass;
 import com.sun.codemodel.JFieldVar;

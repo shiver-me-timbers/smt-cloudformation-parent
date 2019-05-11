@@ -19,7 +19,6 @@ import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verifyZeroInteractions;
 import static shiver.me.timbers.data.random.RandomEnums.someEnum;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 import static shiver.me.timbers.data.random.RandomThings.someThing;
