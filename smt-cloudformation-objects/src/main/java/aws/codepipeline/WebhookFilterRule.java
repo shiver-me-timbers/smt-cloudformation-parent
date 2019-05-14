@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "JsonPath",
     "MatchEquals"
 })
-public class WebhookFilterRule {
+public class WebhookFilterRule implements Property<WebhookFilterRule>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookfilterrule.html#cfn-codepipeline-webhook-webhookfilterrule-jsonpath

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionrule.html",
   "type" : "object",
   "javaType" : "aws.s3.ServerSideEncryptionRule",
+  "javaInterfaces" : [ "aws.Property<ServerSideEncryptionRule>" ],
   "properties" : {
     "ServerSideEncryptionByDefault" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionrule.html#cfn-s3-bucket-serversideencryptionrule-serversideencryptionbydefault",
-      "$ref" : "AWS_S3_Bucket.ServerSideEncryptionByDefault.schema.json"
+      "$ref" : "AWS_S3_Bucket.ServerSideEncryptionByDefault.schema.json",
+      "javaType" : "aws.Property<aws.s3.ServerSideEncryptionByDefault>"
     }
   }
 }

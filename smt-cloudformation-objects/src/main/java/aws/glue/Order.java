@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Column",
     "SortOrder"
 })
-public class Order {
+public class Order implements Property<Order>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-order.html#cfn-glue-partition-order-column

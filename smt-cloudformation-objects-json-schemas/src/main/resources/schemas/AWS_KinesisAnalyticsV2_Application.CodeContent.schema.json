@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalyticsv2.CodeContent",
+  "javaInterfaces" : [ "aws.Property<CodeContent>" ],
   "properties" : {
     "ZipFileContent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html#cfn-kinesisanalyticsv2-application-codecontent-zipfilecontent",
@@ -13,7 +14,8 @@
     },
     "S3ContentLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html#cfn-kinesisanalyticsv2-application-codecontent-s3contentlocation",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.S3ContentLocation.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.S3ContentLocation.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.S3ContentLocation>"
     },
     "TextContent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html#cfn-kinesisanalyticsv2-application-codecontent-textcontent",

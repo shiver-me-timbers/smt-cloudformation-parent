@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -41,7 +42,7 @@ public class XssMatchSet {
     @JsonProperty("XssMatchTuples")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-xssmatchtuples")
-    private Set<XssMatchTuple> xssMatchTuples = new LinkedHashSet<XssMatchTuple>();
+    private Set<Property<XssMatchTuple>> xssMatchTuples = new LinkedHashSet<Property<XssMatchTuple>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-xssmatchset.html#cfn-waf-xssmatchset-name
@@ -71,7 +72,7 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public Set<XssMatchTuple> getXssMatchTuples() {
+    public Set<Property<XssMatchTuple>> getXssMatchTuples() {
         return xssMatchTuples;
     }
 
@@ -80,11 +81,11 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public void setXssMatchTuples(Set<XssMatchTuple> xssMatchTuples) {
+    public void setXssMatchTuples(Set<Property<XssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
     }
 
-    public XssMatchSet withXssMatchTuples(Set<XssMatchTuple> xssMatchTuples) {
+    public XssMatchSet withXssMatchTuples(Set<Property<XssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
         return this;
     }

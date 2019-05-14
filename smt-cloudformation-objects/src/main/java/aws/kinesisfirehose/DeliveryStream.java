@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -52,7 +53,7 @@ public class DeliveryStream {
      */
     @JsonProperty("ElasticsearchDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html")
-    private ElasticsearchDestinationConfiguration elasticsearchDestinationConfiguration;
+    private Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration;
     /**
      * ExtendedS3DestinationConfiguration
      * <p>
@@ -61,7 +62,7 @@ public class DeliveryStream {
      */
     @JsonProperty("ExtendedS3DestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html")
-    private ExtendedS3DestinationConfiguration extendedS3DestinationConfiguration;
+    private Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration;
     /**
      * KinesisStreamSourceConfiguration
      * <p>
@@ -70,7 +71,7 @@ public class DeliveryStream {
      */
     @JsonProperty("KinesisStreamSourceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html")
-    private KinesisStreamSourceConfiguration kinesisStreamSourceConfiguration;
+    private Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration;
     /**
      * RedshiftDestinationConfiguration
      * <p>
@@ -79,7 +80,7 @@ public class DeliveryStream {
      */
     @JsonProperty("RedshiftDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html")
-    private RedshiftDestinationConfiguration redshiftDestinationConfiguration;
+    private Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration;
     /**
      * S3DestinationConfiguration
      * <p>
@@ -88,7 +89,7 @@ public class DeliveryStream {
      */
     @JsonProperty("S3DestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private S3DestinationConfiguration s3DestinationConfiguration;
+    private Property<S3DestinationConfiguration> s3DestinationConfiguration;
     /**
      * SplunkDestinationConfiguration
      * <p>
@@ -97,7 +98,7 @@ public class DeliveryStream {
      */
     @JsonProperty("SplunkDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html")
-    private SplunkDestinationConfiguration splunkDestinationConfiguration;
+    private Property<SplunkDestinationConfiguration> splunkDestinationConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamname
@@ -152,7 +153,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public ElasticsearchDestinationConfiguration getElasticsearchDestinationConfiguration() {
+    public Property<ElasticsearchDestinationConfiguration> getElasticsearchDestinationConfiguration() {
         return elasticsearchDestinationConfiguration;
     }
 
@@ -163,11 +164,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setElasticsearchDestinationConfiguration(ElasticsearchDestinationConfiguration elasticsearchDestinationConfiguration) {
+    public void setElasticsearchDestinationConfiguration(Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
         this.elasticsearchDestinationConfiguration = elasticsearchDestinationConfiguration;
     }
 
-    public DeliveryStream withElasticsearchDestinationConfiguration(ElasticsearchDestinationConfiguration elasticsearchDestinationConfiguration) {
+    public DeliveryStream withElasticsearchDestinationConfiguration(Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
         this.elasticsearchDestinationConfiguration = elasticsearchDestinationConfiguration;
         return this;
     }
@@ -179,7 +180,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public ExtendedS3DestinationConfiguration getExtendedS3DestinationConfiguration() {
+    public Property<ExtendedS3DestinationConfiguration> getExtendedS3DestinationConfiguration() {
         return extendedS3DestinationConfiguration;
     }
 
@@ -190,11 +191,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setExtendedS3DestinationConfiguration(ExtendedS3DestinationConfiguration extendedS3DestinationConfiguration) {
+    public void setExtendedS3DestinationConfiguration(Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
         this.extendedS3DestinationConfiguration = extendedS3DestinationConfiguration;
     }
 
-    public DeliveryStream withExtendedS3DestinationConfiguration(ExtendedS3DestinationConfiguration extendedS3DestinationConfiguration) {
+    public DeliveryStream withExtendedS3DestinationConfiguration(Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
         this.extendedS3DestinationConfiguration = extendedS3DestinationConfiguration;
         return this;
     }
@@ -206,7 +207,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public KinesisStreamSourceConfiguration getKinesisStreamSourceConfiguration() {
+    public Property<KinesisStreamSourceConfiguration> getKinesisStreamSourceConfiguration() {
         return kinesisStreamSourceConfiguration;
     }
 
@@ -217,11 +218,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setKinesisStreamSourceConfiguration(KinesisStreamSourceConfiguration kinesisStreamSourceConfiguration) {
+    public void setKinesisStreamSourceConfiguration(Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
         this.kinesisStreamSourceConfiguration = kinesisStreamSourceConfiguration;
     }
 
-    public DeliveryStream withKinesisStreamSourceConfiguration(KinesisStreamSourceConfiguration kinesisStreamSourceConfiguration) {
+    public DeliveryStream withKinesisStreamSourceConfiguration(Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
         this.kinesisStreamSourceConfiguration = kinesisStreamSourceConfiguration;
         return this;
     }
@@ -233,7 +234,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public RedshiftDestinationConfiguration getRedshiftDestinationConfiguration() {
+    public Property<RedshiftDestinationConfiguration> getRedshiftDestinationConfiguration() {
         return redshiftDestinationConfiguration;
     }
 
@@ -244,11 +245,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setRedshiftDestinationConfiguration(RedshiftDestinationConfiguration redshiftDestinationConfiguration) {
+    public void setRedshiftDestinationConfiguration(Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
         this.redshiftDestinationConfiguration = redshiftDestinationConfiguration;
     }
 
-    public DeliveryStream withRedshiftDestinationConfiguration(RedshiftDestinationConfiguration redshiftDestinationConfiguration) {
+    public DeliveryStream withRedshiftDestinationConfiguration(Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
         this.redshiftDestinationConfiguration = redshiftDestinationConfiguration;
         return this;
     }
@@ -260,7 +261,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public S3DestinationConfiguration getS3DestinationConfiguration() {
+    public Property<S3DestinationConfiguration> getS3DestinationConfiguration() {
         return s3DestinationConfiguration;
     }
 
@@ -271,11 +272,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setS3DestinationConfiguration(S3DestinationConfiguration s3DestinationConfiguration) {
+    public void setS3DestinationConfiguration(Property<S3DestinationConfiguration> s3DestinationConfiguration) {
         this.s3DestinationConfiguration = s3DestinationConfiguration;
     }
 
-    public DeliveryStream withS3DestinationConfiguration(S3DestinationConfiguration s3DestinationConfiguration) {
+    public DeliveryStream withS3DestinationConfiguration(Property<S3DestinationConfiguration> s3DestinationConfiguration) {
         this.s3DestinationConfiguration = s3DestinationConfiguration;
         return this;
     }
@@ -287,7 +288,7 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public SplunkDestinationConfiguration getSplunkDestinationConfiguration() {
+    public Property<SplunkDestinationConfiguration> getSplunkDestinationConfiguration() {
         return splunkDestinationConfiguration;
     }
 
@@ -298,11 +299,11 @@ public class DeliveryStream {
      * 
      */
     @JsonIgnore
-    public void setSplunkDestinationConfiguration(SplunkDestinationConfiguration splunkDestinationConfiguration) {
+    public void setSplunkDestinationConfiguration(Property<SplunkDestinationConfiguration> splunkDestinationConfiguration) {
         this.splunkDestinationConfiguration = splunkDestinationConfiguration;
     }
 
-    public DeliveryStream withSplunkDestinationConfiguration(SplunkDestinationConfiguration splunkDestinationConfiguration) {
+    public DeliveryStream withSplunkDestinationConfiguration(Property<SplunkDestinationConfiguration> splunkDestinationConfiguration) {
         this.splunkDestinationConfiguration = splunkDestinationConfiguration;
         return this;
     }

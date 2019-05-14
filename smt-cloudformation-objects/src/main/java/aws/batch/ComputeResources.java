@@ -3,6 +3,7 @@ package aws.batch;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Tags",
     "DesiredvCpus"
 })
-public class ComputeResources {
+public class ComputeResources implements Property<ComputeResources>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-spotiamfleetrole
@@ -96,7 +98,7 @@ public class ComputeResources {
      */
     @JsonProperty("LaunchTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-launchtemplatespecification.html")
-    private LaunchTemplateSpecification launchTemplate;
+    private Property<LaunchTemplateSpecification> launchTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html#cfn-batch-computeenvironment-computeresources-imageid
      * 
@@ -315,7 +317,7 @@ public class ComputeResources {
      * 
      */
     @JsonIgnore
-    public LaunchTemplateSpecification getLaunchTemplate() {
+    public Property<LaunchTemplateSpecification> getLaunchTemplate() {
         return launchTemplate;
     }
 
@@ -326,11 +328,11 @@ public class ComputeResources {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplate(LaunchTemplateSpecification launchTemplate) {
+    public void setLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
 
-    public ComputeResources withLaunchTemplate(LaunchTemplateSpecification launchTemplate) {
+    public ComputeResources withLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
         return this;
     }

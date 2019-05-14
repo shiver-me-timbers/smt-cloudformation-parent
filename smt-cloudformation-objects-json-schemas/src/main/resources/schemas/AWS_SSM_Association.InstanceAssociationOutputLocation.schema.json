@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html",
   "type" : "object",
   "javaType" : "aws.ssm.InstanceAssociationOutputLocation",
+  "javaInterfaces" : [ "aws.Property<InstanceAssociationOutputLocation>" ],
   "properties" : {
     "S3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html#cfn-ssm-association-instanceassociationoutputlocation-s3location",
-      "$ref" : "AWS_SSM_Association.S3OutputLocation.schema.json"
+      "$ref" : "AWS_SSM_Association.S3OutputLocation.schema.json",
+      "javaType" : "aws.Property<aws.ssm.S3OutputLocation>"
     }
   }
 }

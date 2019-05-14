@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -60,14 +61,14 @@ public class PatchBaseline {
      */
     @JsonProperty("ApprovalRules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html")
-    private RuleGroup approvalRules;
+    private Property<RuleGroup> approvalRules;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources
      * 
      */
     @JsonProperty("Sources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources")
-    private List<PatchSource> sources = new ArrayList<PatchSource>();
+    private List<Property<PatchSource>> sources = new ArrayList<Property<PatchSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name
      * 
@@ -125,14 +126,14 @@ public class PatchBaseline {
      */
     @JsonProperty("GlobalFilters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html")
-    private PatchFilterGroup globalFilters;
+    private Property<PatchFilterGroup> globalFilters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-operatingsystem
@@ -187,7 +188,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public RuleGroup getApprovalRules() {
+    public Property<RuleGroup> getApprovalRules() {
         return approvalRules;
     }
 
@@ -198,11 +199,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setApprovalRules(RuleGroup approvalRules) {
+    public void setApprovalRules(Property<RuleGroup> approvalRules) {
         this.approvalRules = approvalRules;
     }
 
-    public PatchBaseline withApprovalRules(RuleGroup approvalRules) {
+    public PatchBaseline withApprovalRules(Property<RuleGroup> approvalRules) {
         this.approvalRules = approvalRules;
         return this;
     }
@@ -212,7 +213,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public List<PatchSource> getSources() {
+    public List<Property<PatchSource>> getSources() {
         return sources;
     }
 
@@ -221,11 +222,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setSources(List<PatchSource> sources) {
+    public void setSources(List<Property<PatchSource>> sources) {
         this.sources = sources;
     }
 
-    public PatchBaseline withSources(List<PatchSource> sources) {
+    public PatchBaseline withSources(List<Property<PatchSource>> sources) {
         this.sources = sources;
         return this;
     }
@@ -398,7 +399,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public PatchFilterGroup getGlobalFilters() {
+    public Property<PatchFilterGroup> getGlobalFilters() {
         return globalFilters;
     }
 
@@ -409,11 +410,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setGlobalFilters(PatchFilterGroup globalFilters) {
+    public void setGlobalFilters(Property<PatchFilterGroup> globalFilters) {
         this.globalFilters = globalFilters;
     }
 
-    public PatchBaseline withGlobalFilters(PatchFilterGroup globalFilters) {
+    public PatchBaseline withGlobalFilters(Property<PatchFilterGroup> globalFilters) {
         this.globalFilters = globalFilters;
         return this;
     }
@@ -423,7 +424,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -432,11 +433,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public PatchBaseline withTags(List<Tag> tags) {
+    public PatchBaseline withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

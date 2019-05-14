@@ -34,7 +34,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.ScheduledAction.schema.json"
+        "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.ScheduledAction.schema.json",
+        "javaType" : "aws.Property<aws.applicationautoscaling.ScheduledAction>"
       }
     },
     "ServiceNamespace" : {

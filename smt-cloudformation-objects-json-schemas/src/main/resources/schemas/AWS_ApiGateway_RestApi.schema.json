@@ -26,7 +26,8 @@
     },
     "BodyS3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-bodys3location",
-      "$ref" : "AWS_ApiGateway_RestApi.S3Location.schema.json"
+      "$ref" : "AWS_ApiGateway_RestApi.S3Location.schema.json",
+      "javaType" : "aws.Property<aws.apigateway.S3Location>"
     },
     "CloneFrom" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom",
@@ -40,7 +41,8 @@
     },
     "EndpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-endpointconfiguration",
-      "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json"
+      "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.apigateway.EndpointConfiguration>"
     },
     "FailOnWarnings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings",

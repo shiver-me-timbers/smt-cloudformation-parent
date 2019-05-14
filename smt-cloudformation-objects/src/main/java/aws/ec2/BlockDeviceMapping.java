@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NoDevice",
     "VirtualName"
 })
-public class BlockDeviceMapping {
+public class BlockDeviceMapping implements Property<BlockDeviceMapping>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-devicename
@@ -41,7 +43,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("Ebs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html")
-    private Ebs ebs;
+    private Property<Ebs> ebs;
     /**
      * NoDevice
      * <p>
@@ -50,7 +52,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("NoDevice")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-nodevice.html")
-    private NoDevice noDevice;
+    private Property<NoDevice> noDevice;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html#cfn-ec2-blockdev-mapping-virtualname
      * 
@@ -89,7 +91,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public Ebs getEbs() {
+    public Property<Ebs> getEbs() {
         return ebs;
     }
 
@@ -100,11 +102,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public void setEbs(Ebs ebs) {
+    public void setEbs(Property<Ebs> ebs) {
         this.ebs = ebs;
     }
 
-    public BlockDeviceMapping withEbs(Ebs ebs) {
+    public BlockDeviceMapping withEbs(Property<Ebs> ebs) {
         this.ebs = ebs;
         return this;
     }
@@ -116,7 +118,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public NoDevice getNoDevice() {
+    public Property<NoDevice> getNoDevice() {
         return noDevice;
     }
 
@@ -127,11 +129,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public void setNoDevice(NoDevice noDevice) {
+    public void setNoDevice(Property<NoDevice> noDevice) {
         this.noDevice = noDevice;
     }
 
-    public BlockDeviceMapping withNoDevice(NoDevice noDevice) {
+    public BlockDeviceMapping withNoDevice(Property<NoDevice> noDevice) {
         this.noDevice = noDevice;
         return this;
     }

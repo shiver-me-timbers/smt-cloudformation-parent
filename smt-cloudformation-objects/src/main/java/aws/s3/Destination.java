@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Format",
     "Prefix"
 })
-public class Destination {
+public class Destination implements Property<Destination>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid

@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TagKey",
     "TagValue"
 })
-public class Scope {
+public class Scope implements Property<Scope>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid

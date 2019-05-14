@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "Trigger"
 })
-public class ScalingRule {
+public class ScalingRule implements Property<ScalingRule>
+{
 
     /**
      * ScalingAction
@@ -34,7 +36,7 @@ public class ScalingRule {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingaction.html")
-    private ScalingAction action;
+    private Property<ScalingAction> action;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingrule.html#cfn-elasticmapreduce-instancegroupconfig-scalingrule-description
      * 
@@ -57,7 +59,7 @@ public class ScalingRule {
      */
     @JsonProperty("Trigger")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingtrigger.html")
-    private ScalingTrigger trigger;
+    private Property<ScalingTrigger> trigger;
 
     /**
      * ScalingAction
@@ -66,7 +68,7 @@ public class ScalingRule {
      * 
      */
     @JsonIgnore
-    public ScalingAction getAction() {
+    public Property<ScalingAction> getAction() {
         return action;
     }
 
@@ -77,11 +79,11 @@ public class ScalingRule {
      * 
      */
     @JsonIgnore
-    public void setAction(ScalingAction action) {
+    public void setAction(Property<ScalingAction> action) {
         this.action = action;
     }
 
-    public ScalingRule withAction(ScalingAction action) {
+    public ScalingRule withAction(Property<ScalingAction> action) {
         this.action = action;
         return this;
     }
@@ -139,7 +141,7 @@ public class ScalingRule {
      * 
      */
     @JsonIgnore
-    public ScalingTrigger getTrigger() {
+    public Property<ScalingTrigger> getTrigger() {
         return trigger;
     }
 
@@ -150,11 +152,11 @@ public class ScalingRule {
      * 
      */
     @JsonIgnore
-    public void setTrigger(ScalingTrigger trigger) {
+    public void setTrigger(Property<ScalingTrigger> trigger) {
         this.trigger = trigger;
     }
 
-    public ScalingRule withTrigger(ScalingTrigger trigger) {
+    public ScalingRule withTrigger(Property<ScalingTrigger> trigger) {
         this.trigger = trigger;
         return this;
     }

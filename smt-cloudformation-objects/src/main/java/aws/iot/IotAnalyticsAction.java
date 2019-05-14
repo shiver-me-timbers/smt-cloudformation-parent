@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ChannelName",
     "RoleArn"
 })
-public class IotAnalyticsAction {
+public class IotAnalyticsAction implements Property<IotAnalyticsAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html#cfn-iot-topicrule-iotanalyticsaction-channelname

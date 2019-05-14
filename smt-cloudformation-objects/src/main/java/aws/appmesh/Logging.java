@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "AccessLog"
 })
-public class Logging {
+public class Logging implements Property<Logging>
+{
 
     /**
      * FileAccessLog
@@ -31,7 +33,7 @@ public class Logging {
      */
     @JsonProperty("AccessLog")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-fileaccesslog.html")
-    private FileAccessLog accessLog;
+    private Property<AccessLog> accessLog;
 
     /**
      * FileAccessLog
@@ -40,7 +42,7 @@ public class Logging {
      * 
      */
     @JsonIgnore
-    public FileAccessLog getAccessLog() {
+    public Property<AccessLog> getAccessLog() {
         return accessLog;
     }
 
@@ -51,11 +53,11 @@ public class Logging {
      * 
      */
     @JsonIgnore
-    public void setAccessLog(FileAccessLog accessLog) {
+    public void setAccessLog(Property<AccessLog> accessLog) {
         this.accessLog = accessLog;
     }
 
-    public Logging withAccessLog(FileAccessLog accessLog) {
+    public Logging withAccessLog(Property<AccessLog> accessLog) {
         this.accessLog = accessLog;
         return this;
     }

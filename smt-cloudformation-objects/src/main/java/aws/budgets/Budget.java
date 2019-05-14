@@ -3,6 +3,7 @@ package aws.budgets;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class Budget {
      */
     @JsonProperty("NotificationsWithSubscribers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers")
-    private List<NotificationWithSubscribers> notificationsWithSubscribers = new ArrayList<NotificationWithSubscribers>();
+    private List<Property<NotificationWithSubscribers>> notificationsWithSubscribers = new ArrayList<Property<NotificationWithSubscribers>>();
     /**
      * BudgetData
      * <p>
@@ -41,14 +42,14 @@ public class Budget {
      */
     @JsonProperty("Budget")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html")
-    private BudgetData budget;
+    private Property<BudgetData> budget;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
     @JsonIgnore
-    public List<NotificationWithSubscribers> getNotificationsWithSubscribers() {
+    public List<Property<NotificationWithSubscribers>> getNotificationsWithSubscribers() {
         return notificationsWithSubscribers;
     }
 
@@ -57,11 +58,11 @@ public class Budget {
      * 
      */
     @JsonIgnore
-    public void setNotificationsWithSubscribers(List<NotificationWithSubscribers> notificationsWithSubscribers) {
+    public void setNotificationsWithSubscribers(List<Property<NotificationWithSubscribers>> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
     }
 
-    public Budget withNotificationsWithSubscribers(List<NotificationWithSubscribers> notificationsWithSubscribers) {
+    public Budget withNotificationsWithSubscribers(List<Property<NotificationWithSubscribers>> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
         return this;
     }
@@ -73,7 +74,7 @@ public class Budget {
      * 
      */
     @JsonIgnore
-    public BudgetData getBudget() {
+    public Property<BudgetData> getBudget() {
         return budget;
     }
 
@@ -84,11 +85,11 @@ public class Budget {
      * 
      */
     @JsonIgnore
-    public void setBudget(BudgetData budget) {
+    public void setBudget(Property<BudgetData> budget) {
         this.budget = budget;
     }
 
-    public Budget withBudget(BudgetData budget) {
+    public Budget withBudget(Property<BudgetData> budget) {
         this.budget = budget;
         return this;
     }

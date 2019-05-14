@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "S3Location"
 })
-public class InstanceAssociationOutputLocation {
+public class InstanceAssociationOutputLocation implements Property<InstanceAssociationOutputLocation>
+{
 
     /**
      * S3OutputLocation
@@ -31,7 +33,7 @@ public class InstanceAssociationOutputLocation {
      */
     @JsonProperty("S3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-s3outputlocation.html")
-    private S3OutputLocation s3Location;
+    private Property<S3OutputLocation> s3Location;
 
     /**
      * S3OutputLocation
@@ -40,7 +42,7 @@ public class InstanceAssociationOutputLocation {
      * 
      */
     @JsonIgnore
-    public S3OutputLocation getS3Location() {
+    public Property<S3OutputLocation> getS3Location() {
         return s3Location;
     }
 
@@ -51,11 +53,11 @@ public class InstanceAssociationOutputLocation {
      * 
      */
     @JsonIgnore
-    public void setS3Location(S3OutputLocation s3Location) {
+    public void setS3Location(Property<S3OutputLocation> s3Location) {
         this.s3Location = s3Location;
     }
 
-    public InstanceAssociationOutputLocation withS3Location(S3OutputLocation s3Location) {
+    public InstanceAssociationOutputLocation withS3Location(Property<S3OutputLocation> s3Location) {
         this.s3Location = s3Location;
         return this;
     }

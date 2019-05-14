@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MaintenanceWindowStepFunctionsParameters",
     "MaintenanceWindowLambdaParameters"
 })
-public class TaskInvocationParameters {
+public class TaskInvocationParameters implements Property<TaskInvocationParameters>
+{
 
     /**
      * MaintenanceWindowRunCommandParameters
@@ -34,7 +36,7 @@ public class TaskInvocationParameters {
      */
     @JsonProperty("MaintenanceWindowRunCommandParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html")
-    private MaintenanceWindowRunCommandParameters maintenanceWindowRunCommandParameters;
+    private Property<MaintenanceWindowRunCommandParameters> maintenanceWindowRunCommandParameters;
     /**
      * MaintenanceWindowAutomationParameters
      * <p>
@@ -43,7 +45,7 @@ public class TaskInvocationParameters {
      */
     @JsonProperty("MaintenanceWindowAutomationParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowautomationparameters.html")
-    private MaintenanceWindowAutomationParameters maintenanceWindowAutomationParameters;
+    private Property<MaintenanceWindowAutomationParameters> maintenanceWindowAutomationParameters;
     /**
      * MaintenanceWindowStepFunctionsParameters
      * <p>
@@ -52,7 +54,7 @@ public class TaskInvocationParameters {
      */
     @JsonProperty("MaintenanceWindowStepFunctionsParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowstepfunctionsparameters.html")
-    private MaintenanceWindowStepFunctionsParameters maintenanceWindowStepFunctionsParameters;
+    private Property<MaintenanceWindowStepFunctionsParameters> maintenanceWindowStepFunctionsParameters;
     /**
      * MaintenanceWindowLambdaParameters
      * <p>
@@ -61,7 +63,7 @@ public class TaskInvocationParameters {
      */
     @JsonProperty("MaintenanceWindowLambdaParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html")
-    private MaintenanceWindowLambdaParameters maintenanceWindowLambdaParameters;
+    private Property<MaintenanceWindowLambdaParameters> maintenanceWindowLambdaParameters;
 
     /**
      * MaintenanceWindowRunCommandParameters
@@ -70,7 +72,7 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public MaintenanceWindowRunCommandParameters getMaintenanceWindowRunCommandParameters() {
+    public Property<MaintenanceWindowRunCommandParameters> getMaintenanceWindowRunCommandParameters() {
         return maintenanceWindowRunCommandParameters;
     }
 
@@ -81,11 +83,11 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public void setMaintenanceWindowRunCommandParameters(MaintenanceWindowRunCommandParameters maintenanceWindowRunCommandParameters) {
+    public void setMaintenanceWindowRunCommandParameters(Property<MaintenanceWindowRunCommandParameters> maintenanceWindowRunCommandParameters) {
         this.maintenanceWindowRunCommandParameters = maintenanceWindowRunCommandParameters;
     }
 
-    public TaskInvocationParameters withMaintenanceWindowRunCommandParameters(MaintenanceWindowRunCommandParameters maintenanceWindowRunCommandParameters) {
+    public TaskInvocationParameters withMaintenanceWindowRunCommandParameters(Property<MaintenanceWindowRunCommandParameters> maintenanceWindowRunCommandParameters) {
         this.maintenanceWindowRunCommandParameters = maintenanceWindowRunCommandParameters;
         return this;
     }
@@ -97,7 +99,7 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public MaintenanceWindowAutomationParameters getMaintenanceWindowAutomationParameters() {
+    public Property<MaintenanceWindowAutomationParameters> getMaintenanceWindowAutomationParameters() {
         return maintenanceWindowAutomationParameters;
     }
 
@@ -108,11 +110,11 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public void setMaintenanceWindowAutomationParameters(MaintenanceWindowAutomationParameters maintenanceWindowAutomationParameters) {
+    public void setMaintenanceWindowAutomationParameters(Property<MaintenanceWindowAutomationParameters> maintenanceWindowAutomationParameters) {
         this.maintenanceWindowAutomationParameters = maintenanceWindowAutomationParameters;
     }
 
-    public TaskInvocationParameters withMaintenanceWindowAutomationParameters(MaintenanceWindowAutomationParameters maintenanceWindowAutomationParameters) {
+    public TaskInvocationParameters withMaintenanceWindowAutomationParameters(Property<MaintenanceWindowAutomationParameters> maintenanceWindowAutomationParameters) {
         this.maintenanceWindowAutomationParameters = maintenanceWindowAutomationParameters;
         return this;
     }
@@ -124,7 +126,7 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public MaintenanceWindowStepFunctionsParameters getMaintenanceWindowStepFunctionsParameters() {
+    public Property<MaintenanceWindowStepFunctionsParameters> getMaintenanceWindowStepFunctionsParameters() {
         return maintenanceWindowStepFunctionsParameters;
     }
 
@@ -135,11 +137,11 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public void setMaintenanceWindowStepFunctionsParameters(MaintenanceWindowStepFunctionsParameters maintenanceWindowStepFunctionsParameters) {
+    public void setMaintenanceWindowStepFunctionsParameters(Property<MaintenanceWindowStepFunctionsParameters> maintenanceWindowStepFunctionsParameters) {
         this.maintenanceWindowStepFunctionsParameters = maintenanceWindowStepFunctionsParameters;
     }
 
-    public TaskInvocationParameters withMaintenanceWindowStepFunctionsParameters(MaintenanceWindowStepFunctionsParameters maintenanceWindowStepFunctionsParameters) {
+    public TaskInvocationParameters withMaintenanceWindowStepFunctionsParameters(Property<MaintenanceWindowStepFunctionsParameters> maintenanceWindowStepFunctionsParameters) {
         this.maintenanceWindowStepFunctionsParameters = maintenanceWindowStepFunctionsParameters;
         return this;
     }
@@ -151,7 +153,7 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public MaintenanceWindowLambdaParameters getMaintenanceWindowLambdaParameters() {
+    public Property<MaintenanceWindowLambdaParameters> getMaintenanceWindowLambdaParameters() {
         return maintenanceWindowLambdaParameters;
     }
 
@@ -162,11 +164,11 @@ public class TaskInvocationParameters {
      * 
      */
     @JsonIgnore
-    public void setMaintenanceWindowLambdaParameters(MaintenanceWindowLambdaParameters maintenanceWindowLambdaParameters) {
+    public void setMaintenanceWindowLambdaParameters(Property<MaintenanceWindowLambdaParameters> maintenanceWindowLambdaParameters) {
         this.maintenanceWindowLambdaParameters = maintenanceWindowLambdaParameters;
     }
 
-    public TaskInvocationParameters withMaintenanceWindowLambdaParameters(MaintenanceWindowLambdaParameters maintenanceWindowLambdaParameters) {
+    public TaskInvocationParameters withMaintenanceWindowLambdaParameters(Property<MaintenanceWindowLambdaParameters> maintenanceWindowLambdaParameters) {
         this.maintenanceWindowLambdaParameters = maintenanceWindowLambdaParameters;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancingv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TargetGroupArn",
     "Type"
 })
-public class Action {
+public class Action implements Property<Action>
+{
 
     /**
      * AuthenticateCognitoConfig
@@ -37,7 +39,7 @@ public class Action {
      */
     @JsonProperty("AuthenticateCognitoConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html")
-    private AuthenticateCognitoConfig authenticateCognitoConfig;
+    private Property<AuthenticateCognitoConfig> authenticateCognitoConfig;
     /**
      * AuthenticateOidcConfig
      * <p>
@@ -46,7 +48,7 @@ public class Action {
      */
     @JsonProperty("AuthenticateOidcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig.html")
-    private AuthenticateOidcConfig authenticateOidcConfig;
+    private Property<AuthenticateOidcConfig> authenticateOidcConfig;
     /**
      * FixedResponseConfig
      * <p>
@@ -55,7 +57,7 @@ public class Action {
      */
     @JsonProperty("FixedResponseConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-fixedresponseconfig.html")
-    private FixedResponseConfig fixedResponseConfig;
+    private Property<FixedResponseConfig> fixedResponseConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-action-order
      * 
@@ -71,7 +73,7 @@ public class Action {
      */
     @JsonProperty("RedirectConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-redirectconfig.html")
-    private RedirectConfig redirectConfig;
+    private Property<RedirectConfig> redirectConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-defaultactions.html#cfn-elasticloadbalancingv2-listener-defaultactions-targetgrouparn
      * 
@@ -94,7 +96,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public AuthenticateCognitoConfig getAuthenticateCognitoConfig() {
+    public Property<AuthenticateCognitoConfig> getAuthenticateCognitoConfig() {
         return authenticateCognitoConfig;
     }
 
@@ -105,11 +107,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setAuthenticateCognitoConfig(AuthenticateCognitoConfig authenticateCognitoConfig) {
+    public void setAuthenticateCognitoConfig(Property<AuthenticateCognitoConfig> authenticateCognitoConfig) {
         this.authenticateCognitoConfig = authenticateCognitoConfig;
     }
 
-    public Action withAuthenticateCognitoConfig(AuthenticateCognitoConfig authenticateCognitoConfig) {
+    public Action withAuthenticateCognitoConfig(Property<AuthenticateCognitoConfig> authenticateCognitoConfig) {
         this.authenticateCognitoConfig = authenticateCognitoConfig;
         return this;
     }
@@ -121,7 +123,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public AuthenticateOidcConfig getAuthenticateOidcConfig() {
+    public Property<AuthenticateOidcConfig> getAuthenticateOidcConfig() {
         return authenticateOidcConfig;
     }
 
@@ -132,11 +134,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setAuthenticateOidcConfig(AuthenticateOidcConfig authenticateOidcConfig) {
+    public void setAuthenticateOidcConfig(Property<AuthenticateOidcConfig> authenticateOidcConfig) {
         this.authenticateOidcConfig = authenticateOidcConfig;
     }
 
-    public Action withAuthenticateOidcConfig(AuthenticateOidcConfig authenticateOidcConfig) {
+    public Action withAuthenticateOidcConfig(Property<AuthenticateOidcConfig> authenticateOidcConfig) {
         this.authenticateOidcConfig = authenticateOidcConfig;
         return this;
     }
@@ -148,7 +150,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public FixedResponseConfig getFixedResponseConfig() {
+    public Property<FixedResponseConfig> getFixedResponseConfig() {
         return fixedResponseConfig;
     }
 
@@ -159,11 +161,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setFixedResponseConfig(FixedResponseConfig fixedResponseConfig) {
+    public void setFixedResponseConfig(Property<FixedResponseConfig> fixedResponseConfig) {
         this.fixedResponseConfig = fixedResponseConfig;
     }
 
-    public Action withFixedResponseConfig(FixedResponseConfig fixedResponseConfig) {
+    public Action withFixedResponseConfig(Property<FixedResponseConfig> fixedResponseConfig) {
         this.fixedResponseConfig = fixedResponseConfig;
         return this;
     }
@@ -198,7 +200,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public RedirectConfig getRedirectConfig() {
+    public Property<RedirectConfig> getRedirectConfig() {
         return redirectConfig;
     }
 
@@ -209,11 +211,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setRedirectConfig(RedirectConfig redirectConfig) {
+    public void setRedirectConfig(Property<RedirectConfig> redirectConfig) {
         this.redirectConfig = redirectConfig;
     }
 
-    public Action withRedirectConfig(RedirectConfig redirectConfig) {
+    public Action withRedirectConfig(Property<RedirectConfig> redirectConfig) {
         this.redirectConfig = redirectConfig;
         return this;
     }

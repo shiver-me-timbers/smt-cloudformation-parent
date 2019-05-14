@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RoleArn",
     "RunOrder"
 })
-public class ActionDeclaration {
+public class ActionDeclaration implements Property<ActionDeclaration>
+{
 
     /**
      * ActionTypeId
@@ -41,7 +43,7 @@ public class ActionDeclaration {
      */
     @JsonProperty("ActionTypeId")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html")
-    private ActionTypeId actionTypeId;
+    private Property<ActionTypeId> actionTypeId;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration
      * 
@@ -56,7 +58,7 @@ public class ActionDeclaration {
     @JsonProperty("InputArtifacts")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts")
-    private Set<InputArtifact> inputArtifacts = new LinkedHashSet<InputArtifact>();
+    private Set<Property<InputArtifact>> inputArtifacts = new LinkedHashSet<Property<InputArtifact>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-name
      * 
@@ -71,7 +73,7 @@ public class ActionDeclaration {
     @JsonProperty("OutputArtifacts")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-outputartifacts")
-    private Set<OutputArtifact> outputArtifacts = new LinkedHashSet<OutputArtifact>();
+    private Set<Property<OutputArtifact>> outputArtifacts = new LinkedHashSet<Property<OutputArtifact>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-region
      * 
@@ -101,7 +103,7 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public ActionTypeId getActionTypeId() {
+    public Property<ActionTypeId> getActionTypeId() {
         return actionTypeId;
     }
 
@@ -112,11 +114,11 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public void setActionTypeId(ActionTypeId actionTypeId) {
+    public void setActionTypeId(Property<ActionTypeId> actionTypeId) {
         this.actionTypeId = actionTypeId;
     }
 
-    public ActionDeclaration withActionTypeId(ActionTypeId actionTypeId) {
+    public ActionDeclaration withActionTypeId(Property<ActionTypeId> actionTypeId) {
         this.actionTypeId = actionTypeId;
         return this;
     }
@@ -149,7 +151,7 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public Set<InputArtifact> getInputArtifacts() {
+    public Set<Property<InputArtifact>> getInputArtifacts() {
         return inputArtifacts;
     }
 
@@ -158,11 +160,11 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public void setInputArtifacts(Set<InputArtifact> inputArtifacts) {
+    public void setInputArtifacts(Set<Property<InputArtifact>> inputArtifacts) {
         this.inputArtifacts = inputArtifacts;
     }
 
-    public ActionDeclaration withInputArtifacts(Set<InputArtifact> inputArtifacts) {
+    public ActionDeclaration withInputArtifacts(Set<Property<InputArtifact>> inputArtifacts) {
         this.inputArtifacts = inputArtifacts;
         return this;
     }
@@ -195,7 +197,7 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public Set<OutputArtifact> getOutputArtifacts() {
+    public Set<Property<OutputArtifact>> getOutputArtifacts() {
         return outputArtifacts;
     }
 
@@ -204,11 +206,11 @@ public class ActionDeclaration {
      * 
      */
     @JsonIgnore
-    public void setOutputArtifacts(Set<OutputArtifact> outputArtifacts) {
+    public void setOutputArtifacts(Set<Property<OutputArtifact>> outputArtifacts) {
         this.outputArtifacts = outputArtifacts;
     }
 
-    public ActionDeclaration withOutputArtifacts(Set<OutputArtifact> outputArtifacts) {
+    public ActionDeclaration withOutputArtifacts(Set<Property<OutputArtifact>> outputArtifacts) {
         this.outputArtifacts = outputArtifacts;
         return this;
     }

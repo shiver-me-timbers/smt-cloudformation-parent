@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "WeightedTargets"
 })
-public class TcpRouteAction {
+public class TcpRouteAction implements Property<TcpRouteAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html#cfn-appmesh-route-tcprouteaction-weightedtargets
@@ -31,14 +33,14 @@ public class TcpRouteAction {
      */
     @JsonProperty("WeightedTargets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html#cfn-appmesh-route-tcprouteaction-weightedtargets")
-    private List<WeightedTarget> weightedTargets = new ArrayList<WeightedTarget>();
+    private List<Property<WeightedTarget>> weightedTargets = new ArrayList<Property<WeightedTarget>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html#cfn-appmesh-route-tcprouteaction-weightedtargets
      * 
      */
     @JsonIgnore
-    public List<WeightedTarget> getWeightedTargets() {
+    public List<Property<WeightedTarget>> getWeightedTargets() {
         return weightedTargets;
     }
 
@@ -47,11 +49,11 @@ public class TcpRouteAction {
      * 
      */
     @JsonIgnore
-    public void setWeightedTargets(List<WeightedTarget> weightedTargets) {
+    public void setWeightedTargets(List<Property<WeightedTarget>> weightedTargets) {
         this.weightedTargets = weightedTargets;
     }
 
-    public TcpRouteAction withWeightedTargets(List<WeightedTarget> weightedTargets) {
+    public TcpRouteAction withWeightedTargets(List<Property<WeightedTarget>> weightedTargets) {
         this.weightedTargets = weightedTargets;
         return this;
     }

@@ -92,7 +92,8 @@
     },
     "LoggingProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-loggingproperties",
-      "$ref" : "AWS_Redshift_Cluster.LoggingProperties.schema.json"
+      "$ref" : "AWS_Redshift_Cluster.LoggingProperties.schema.json",
+      "javaType" : "aws.Property<aws.redshift.LoggingProperties>"
     },
     "MasterUserPassword" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword",
@@ -145,7 +146,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "VpcSecurityGroupIds" : {

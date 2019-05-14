@@ -24,28 +24,32 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parameterobjects",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_DataPipeline_Pipeline.ParameterObject.schema.json"
+        "$ref" : "AWS_DataPipeline_Pipeline.ParameterObject.schema.json",
+        "javaType" : "aws.Property<aws.datapipeline.ParameterObject>"
       }
     },
     "ParameterValues" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parametervalues",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_DataPipeline_Pipeline.ParameterValue.schema.json"
+        "$ref" : "AWS_DataPipeline_Pipeline.ParameterValue.schema.json",
+        "javaType" : "aws.Property<aws.datapipeline.ParameterValue>"
       }
     },
     "PipelineObjects" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelineobjects",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_DataPipeline_Pipeline.PipelineObject.schema.json"
+        "$ref" : "AWS_DataPipeline_Pipeline.PipelineObject.schema.json",
+        "javaType" : "aws.Property<aws.datapipeline.PipelineObject>"
       }
     },
     "PipelineTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelinetags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_DataPipeline_Pipeline.PipelineTag.schema.json"
+        "$ref" : "AWS_DataPipeline_Pipeline.PipelineTag.schema.json",
+        "javaType" : "aws.Property<aws.datapipeline.PipelineTag>"
       }
     }
   }

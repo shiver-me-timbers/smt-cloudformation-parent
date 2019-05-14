@@ -3,6 +3,7 @@ package aws.directoryservice;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SubnetIds",
     "VpcId"
 })
-public class VpcSettings {
+public class VpcSettings implements Property<VpcSettings>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html#cfn-directoryservice-microsoftad-vpcsettings-subnetids

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-target.html",
   "type" : "object",
   "javaType" : "aws.ssm.Target",
+  "javaInterfaces" : [ "aws.Property<Target>" ],
   "properties" : {
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-target.html#cfn-ssm-maintenancewindowtask-target-values",

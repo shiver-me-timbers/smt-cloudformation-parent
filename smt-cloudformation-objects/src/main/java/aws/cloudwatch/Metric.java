@@ -3,6 +3,7 @@ package aws.cloudwatch;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MetricName",
     "Namespace"
 })
-public class Metric {
+public class Metric implements Property<Metric>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-dimensions
@@ -33,7 +35,7 @@ public class Metric {
      */
     @JsonProperty("Dimensions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-dimensions")
-    private List<Dimension> dimensions = new ArrayList<Dimension>();
+    private List<Property<Dimension>> dimensions = new ArrayList<Property<Dimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-metricname
      * 
@@ -54,7 +56,7 @@ public class Metric {
      * 
      */
     @JsonIgnore
-    public List<Dimension> getDimensions() {
+    public List<Property<Dimension>> getDimensions() {
         return dimensions;
     }
 
@@ -63,11 +65,11 @@ public class Metric {
      * 
      */
     @JsonIgnore
-    public void setDimensions(List<Dimension> dimensions) {
+    public void setDimensions(List<Property<Dimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public Metric withDimensions(List<Dimension> dimensions) {
+    public Metric withDimensions(List<Property<Dimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }

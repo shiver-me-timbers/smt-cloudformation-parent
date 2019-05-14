@@ -3,6 +3,7 @@ package aws.kinesis;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -59,14 +60,14 @@ public class Stream {
      */
     @JsonProperty("StreamEncryption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html")
-    private StreamEncryption streamEncryption;
+    private Property<StreamEncryption> streamEncryption;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-name
@@ -144,7 +145,7 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public StreamEncryption getStreamEncryption() {
+    public Property<StreamEncryption> getStreamEncryption() {
         return streamEncryption;
     }
 
@@ -155,11 +156,11 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public void setStreamEncryption(StreamEncryption streamEncryption) {
+    public void setStreamEncryption(Property<StreamEncryption> streamEncryption) {
         this.streamEncryption = streamEncryption;
     }
 
-    public Stream withStreamEncryption(StreamEncryption streamEncryption) {
+    public Stream withStreamEncryption(Property<StreamEncryption> streamEncryption) {
         this.streamEncryption = streamEncryption;
         return this;
     }
@@ -169,7 +170,7 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -178,11 +179,11 @@ public class Stream {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Stream withTags(List<Tag> tags) {
+    public Stream withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

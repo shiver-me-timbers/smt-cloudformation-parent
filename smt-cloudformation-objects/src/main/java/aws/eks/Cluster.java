@@ -1,6 +1,7 @@
 
 package aws.eks;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -48,7 +49,7 @@ public class Cluster {
      */
     @JsonProperty("ResourcesVpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html")
-    private ResourcesVpcConfig resourcesVpcConfig;
+    private Property<ResourcesVpcConfig> resourcesVpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name
      * 
@@ -110,7 +111,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public ResourcesVpcConfig getResourcesVpcConfig() {
+    public Property<ResourcesVpcConfig> getResourcesVpcConfig() {
         return resourcesVpcConfig;
     }
 
@@ -121,11 +122,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setResourcesVpcConfig(ResourcesVpcConfig resourcesVpcConfig) {
+    public void setResourcesVpcConfig(Property<ResourcesVpcConfig> resourcesVpcConfig) {
         this.resourcesVpcConfig = resourcesVpcConfig;
     }
 
-    public Cluster withResourcesVpcConfig(ResourcesVpcConfig resourcesVpcConfig) {
+    public Cluster withResourcesVpcConfig(Property<ResourcesVpcConfig> resourcesVpcConfig) {
         this.resourcesVpcConfig = resourcesVpcConfig;
         return this;
     }

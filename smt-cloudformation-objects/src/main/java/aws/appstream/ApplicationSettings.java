@@ -1,6 +1,7 @@
 
 package aws.appstream;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SettingsGroup",
     "Enabled"
 })
-public class ApplicationSettings {
+public class ApplicationSettings implements Property<ApplicationSettings>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html#cfn-appstream-stack-applicationsettings-settingsgroup

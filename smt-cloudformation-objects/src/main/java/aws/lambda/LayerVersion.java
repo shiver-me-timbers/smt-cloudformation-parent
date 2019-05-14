@@ -3,6 +3,7 @@ package aws.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -65,7 +66,7 @@ public class LayerVersion {
      */
     @JsonProperty("Content")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html")
-    private Content content;
+    private Property<Content> content;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html#cfn-lambda-layerversion-compatibleruntimes
@@ -166,7 +167,7 @@ public class LayerVersion {
      * 
      */
     @JsonIgnore
-    public Content getContent() {
+    public Property<Content> getContent() {
         return content;
     }
 
@@ -177,11 +178,11 @@ public class LayerVersion {
      * 
      */
     @JsonIgnore
-    public void setContent(Content content) {
+    public void setContent(Property<Content> content) {
         this.content = content;
     }
 
-    public LayerVersion withContent(Content content) {
+    public LayerVersion withContent(Property<Content> content) {
         this.content = content;
         return this;
     }

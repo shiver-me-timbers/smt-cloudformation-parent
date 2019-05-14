@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -38,7 +39,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Type",
     "Uri"
 })
-public class Integration {
+public class Integration implements Property<Integration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters
@@ -97,7 +99,7 @@ public class Integration {
     @JsonProperty("IntegrationResponses")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-integrationresponses")
-    private Set<IntegrationResponse> integrationResponses = new LinkedHashSet<IntegrationResponse>();
+    private Set<Property<IntegrationResponse>> integrationResponses = new LinkedHashSet<Property<IntegrationResponse>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-passthroughbehavior
      * 
@@ -307,7 +309,7 @@ public class Integration {
      * 
      */
     @JsonIgnore
-    public Set<IntegrationResponse> getIntegrationResponses() {
+    public Set<Property<IntegrationResponse>> getIntegrationResponses() {
         return integrationResponses;
     }
 
@@ -316,11 +318,11 @@ public class Integration {
      * 
      */
     @JsonIgnore
-    public void setIntegrationResponses(Set<IntegrationResponse> integrationResponses) {
+    public void setIntegrationResponses(Set<Property<IntegrationResponse>> integrationResponses) {
         this.integrationResponses = integrationResponses;
     }
 
-    public Integration withIntegrationResponses(Set<IntegrationResponse> integrationResponses) {
+    public Integration withIntegrationResponses(Set<Property<IntegrationResponse>> integrationResponses) {
         this.integrationResponses = integrationResponses;
         return this;
     }

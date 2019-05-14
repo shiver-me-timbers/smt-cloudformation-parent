@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StageVariableOverrides",
     "UseStageCache"
 })
-public class DeploymentCanarySettings {
+public class DeploymentCanarySettings implements Property<DeploymentCanarySettings>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html#cfn-apigateway-deployment-deploymentcanarysettings-percenttraffic

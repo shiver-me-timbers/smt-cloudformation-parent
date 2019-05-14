@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "SpotSpecification"
 })
-public class InstanceFleetProvisioningSpecifications {
+public class InstanceFleetProvisioningSpecifications implements Property<InstanceFleetProvisioningSpecifications>
+{
 
     /**
      * SpotProvisioningSpecification
@@ -31,7 +33,7 @@ public class InstanceFleetProvisioningSpecifications {
      */
     @JsonProperty("SpotSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html")
-    private SpotProvisioningSpecification spotSpecification;
+    private Property<SpotProvisioningSpecification> spotSpecification;
 
     /**
      * SpotProvisioningSpecification
@@ -40,7 +42,7 @@ public class InstanceFleetProvisioningSpecifications {
      * 
      */
     @JsonIgnore
-    public SpotProvisioningSpecification getSpotSpecification() {
+    public Property<SpotProvisioningSpecification> getSpotSpecification() {
         return spotSpecification;
     }
 
@@ -51,11 +53,11 @@ public class InstanceFleetProvisioningSpecifications {
      * 
      */
     @JsonIgnore
-    public void setSpotSpecification(SpotProvisioningSpecification spotSpecification) {
+    public void setSpotSpecification(Property<SpotProvisioningSpecification> spotSpecification) {
         this.spotSpecification = spotSpecification;
     }
 
-    public InstanceFleetProvisioningSpecifications withSpotSpecification(SpotProvisioningSpecification spotSpecification) {
+    public InstanceFleetProvisioningSpecifications withSpotSpecification(Property<SpotProvisioningSpecification> spotSpecification) {
         this.spotSpecification = spotSpecification;
         return this;
     }

@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "VpcId" : {

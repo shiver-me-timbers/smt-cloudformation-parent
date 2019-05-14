@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3Configuration",
     "TypeName"
 })
-public class ElasticsearchDestinationConfiguration {
+public class ElasticsearchDestinationConfiguration implements Property<ElasticsearchDestinationConfiguration>
+{
 
     /**
      * ElasticsearchBufferingHints
@@ -41,7 +43,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("BufferingHints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html")
-    private ElasticsearchBufferingHints bufferingHints;
+    private Property<ElasticsearchBufferingHints> bufferingHints;
     /**
      * CloudWatchLoggingOptions
      * <p>
@@ -50,7 +52,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("CloudWatchLoggingOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html")
-    private CloudWatchLoggingOptions cloudWatchLoggingOptions;
+    private Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-domainarn
      * 
@@ -80,7 +82,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("ProcessingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html")
-    private ProcessingConfiguration processingConfiguration;
+    private Property<ProcessingConfiguration> processingConfiguration;
     /**
      * ElasticsearchRetryOptions
      * <p>
@@ -89,7 +91,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("RetryOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchretryoptions.html")
-    private ElasticsearchRetryOptions retryOptions;
+    private Property<ElasticsearchRetryOptions> retryOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-rolearn
      * 
@@ -112,7 +114,7 @@ public class ElasticsearchDestinationConfiguration {
      */
     @JsonProperty("S3Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private S3DestinationConfiguration s3Configuration;
+    private Property<S3DestinationConfiguration> s3Configuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename
      * 
@@ -128,7 +130,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ElasticsearchBufferingHints getBufferingHints() {
+    public Property<ElasticsearchBufferingHints> getBufferingHints() {
         return bufferingHints;
     }
 
@@ -139,11 +141,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public void setBufferingHints(Property<ElasticsearchBufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
 
-    public ElasticsearchDestinationConfiguration withBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public ElasticsearchDestinationConfiguration withBufferingHints(Property<ElasticsearchBufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
         return this;
     }
@@ -155,7 +157,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
+    public Property<CloudWatchLoggingOptions> getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
 
@@ -166,11 +168,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public void setCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
 
-    public ElasticsearchDestinationConfiguration withCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public ElasticsearchDestinationConfiguration withCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
         return this;
     }
@@ -251,7 +253,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ProcessingConfiguration getProcessingConfiguration() {
+    public Property<ProcessingConfiguration> getProcessingConfiguration() {
         return processingConfiguration;
     }
 
@@ -262,11 +264,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public void setProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
 
-    public ElasticsearchDestinationConfiguration withProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public ElasticsearchDestinationConfiguration withProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
         return this;
     }
@@ -278,7 +280,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ElasticsearchRetryOptions getRetryOptions() {
+    public Property<ElasticsearchRetryOptions> getRetryOptions() {
         return retryOptions;
     }
 
@@ -289,11 +291,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRetryOptions(ElasticsearchRetryOptions retryOptions) {
+    public void setRetryOptions(Property<ElasticsearchRetryOptions> retryOptions) {
         this.retryOptions = retryOptions;
     }
 
-    public ElasticsearchDestinationConfiguration withRetryOptions(ElasticsearchRetryOptions retryOptions) {
+    public ElasticsearchDestinationConfiguration withRetryOptions(Property<ElasticsearchRetryOptions> retryOptions) {
         this.retryOptions = retryOptions;
         return this;
     }
@@ -351,7 +353,7 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public S3DestinationConfiguration getS3Configuration() {
+    public Property<S3DestinationConfiguration> getS3Configuration() {
         return s3Configuration;
     }
 
@@ -362,11 +364,11 @@ public class ElasticsearchDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public void setS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
 
-    public ElasticsearchDestinationConfiguration withS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public ElasticsearchDestinationConfiguration withS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
         return this;
     }

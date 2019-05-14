@@ -3,6 +3,7 @@ package aws.stepfunctions;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -55,7 +56,7 @@ public class StateMachine {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags")
-    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
+    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring
@@ -131,7 +132,7 @@ public class StateMachine {
      * 
      */
     @JsonIgnore
-    public List<TagsEntry> getTags() {
+    public List<Property<TagsEntry>> getTags() {
         return tags;
     }
 
@@ -140,11 +141,11 @@ public class StateMachine {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagsEntry> tags) {
+    public void setTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public StateMachine withTags(List<TagsEntry> tags) {
+    public StateMachine withTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

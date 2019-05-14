@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import org.apache.commons.lang.builder.EqualsBuilder;
@@ -18,7 +19,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
 
 })
-public class FilterGroup {
+public class FilterGroup implements Property<FilterGroup>
+{
 
 
     @Override

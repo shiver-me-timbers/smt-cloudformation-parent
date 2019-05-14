@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html",
   "type" : "object",
   "javaType" : "aws.ecs.LogConfiguration",
+  "javaInterfaces" : [ "aws.Property<LogConfiguration>" ],
   "properties" : {
     "LogDriver" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver",

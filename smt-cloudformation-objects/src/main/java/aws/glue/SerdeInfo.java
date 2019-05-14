@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SerializationLibrary",
     "Name"
 })
-public class SerdeInfo {
+public class SerdeInfo implements Property<SerdeInfo>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters

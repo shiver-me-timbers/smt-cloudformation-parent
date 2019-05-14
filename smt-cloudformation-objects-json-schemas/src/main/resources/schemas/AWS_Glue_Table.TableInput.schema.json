@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html",
   "type" : "object",
   "javaType" : "aws.glue.TableInput",
+  "javaInterfaces" : [ "aws.Property<TableInput>" ],
   "properties" : {
     "Owner" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner",
@@ -37,13 +38,15 @@
     },
     "StorageDescriptor" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-storagedescriptor",
-      "$ref" : "AWS_Glue_Partition.StorageDescriptor.schema.json"
+      "$ref" : "AWS_Glue_Partition.StorageDescriptor.schema.json",
+      "javaType" : "aws.Property<aws.glue.StorageDescriptor>"
     },
     "PartitionKeys" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-partitionkeys",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Glue_Partition.Column.schema.json"
+        "$ref" : "AWS_Glue_Partition.Column.schema.json",
+        "javaType" : "aws.Property<aws.glue.Column>"
       }
     },
     "Retention" : {

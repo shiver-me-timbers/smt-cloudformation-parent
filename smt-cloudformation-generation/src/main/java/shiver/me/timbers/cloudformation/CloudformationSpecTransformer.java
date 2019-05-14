@@ -7,6 +7,7 @@ import shiver.me.timbers.cloudformation.transformers.property.ListTransformer;
 import shiver.me.timbers.cloudformation.transformers.property.MapTransformer;
 import shiver.me.timbers.cloudformation.transformers.property.PrimitiveTypeTransformer;
 import shiver.me.timbers.cloudformation.transformers.type.AttributesTransformer;
+import shiver.me.timbers.cloudformation.transformers.type.InterfacesTransformer;
 import shiver.me.timbers.cloudformation.transformers.type.JavaTypeTransformer;
 import shiver.me.timbers.cloudformation.transformers.type.MetaDataApplier;
 import shiver.me.timbers.cloudformation.transformers.type.MetaDataTransformer;
@@ -39,17 +40,19 @@ public class CloudformationSpecTransformer {
         final PrimitiveTypeConverter primitiveTypeConverter = new PrimitiveTypeConverter(typeMap);
         final ClassTypeConverter classTypeConverter = new ClassTypeConverter(
             new TypeNameFinder(properties, javaTypes),
-            fileNames
+            fileNames,
+            javaTypes
         );
         return new CloudformationSpecTransformer(new TypesTransformer(asList(
             new MetaDataTransformer(fileNames, javaTypes, metaDataApplier),
             new JavaTypeTransformer(javaTypes),
+            new InterfacesTransformer(javaTypes),
             new PropertiesTransformer(asList(
                 new DescriptionTransformer(),
                 new PrimitiveTypeTransformer(primitiveTypeConverter),
                 new ClassTypeTransformer(classTypeConverter),
                 new ListTransformer(primitiveTypeConverter, classTypeConverter),
-                new MapTransformer()
+                new MapTransformer(classTypeConverter)
             )),
             new ResourceTransformer(fileNames, javaTypes, metaDataApplier),
             new AttributesTransformer(fileNames, javaTypes, metaDataApplier),

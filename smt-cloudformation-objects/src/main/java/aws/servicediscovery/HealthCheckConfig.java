@@ -1,6 +1,7 @@
 
 package aws.servicediscovery;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ResourcePath",
     "FailureThreshold"
 })
-public class HealthCheckConfig {
+public class HealthCheckConfig implements Property<HealthCheckConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html#cfn-servicediscovery-service-healthcheckconfig-type

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html",
   "type" : "object",
   "javaType" : "aws.events.KinesisParameters",
+  "javaInterfaces" : [ "aws.Property<KinesisParameters>" ],
   "properties" : {
     "PartitionKeyPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath",

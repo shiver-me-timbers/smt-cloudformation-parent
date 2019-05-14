@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DatabaseName",
     "Type"
 })
-public class DataSource {
+public class DataSource implements Property<DataSource>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html#cfn-opsworks-app-datasource-arn

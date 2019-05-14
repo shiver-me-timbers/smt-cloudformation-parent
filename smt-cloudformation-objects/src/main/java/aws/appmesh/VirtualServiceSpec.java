@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Provider"
 })
-public class VirtualServiceSpec {
+public class VirtualServiceSpec implements Property<VirtualServiceSpec>
+{
 
     /**
      * VirtualServiceProvider
@@ -31,7 +33,7 @@ public class VirtualServiceSpec {
      */
     @JsonProperty("Provider")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualserviceprovider.html")
-    private VirtualServiceProvider provider;
+    private Property<VirtualServiceProvider> provider;
 
     /**
      * VirtualServiceProvider
@@ -40,7 +42,7 @@ public class VirtualServiceSpec {
      * 
      */
     @JsonIgnore
-    public VirtualServiceProvider getProvider() {
+    public Property<VirtualServiceProvider> getProvider() {
         return provider;
     }
 
@@ -51,11 +53,11 @@ public class VirtualServiceSpec {
      * 
      */
     @JsonIgnore
-    public void setProvider(VirtualServiceProvider provider) {
+    public void setProvider(Property<VirtualServiceProvider> provider) {
         this.provider = provider;
     }
 
-    public VirtualServiceSpec withProvider(VirtualServiceProvider provider) {
+    public VirtualServiceSpec withProvider(Property<VirtualServiceProvider> provider) {
         this.provider = provider;
         return this;
     }

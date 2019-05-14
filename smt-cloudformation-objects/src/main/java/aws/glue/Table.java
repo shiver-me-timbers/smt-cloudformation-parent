@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class Table {
      */
     @JsonProperty("TableInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html")
-    private TableInput tableInput;
+    private Property<TableInput> tableInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
@@ -56,7 +57,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public TableInput getTableInput() {
+    public Property<TableInput> getTableInput() {
         return tableInput;
     }
 
@@ -67,11 +68,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setTableInput(TableInput tableInput) {
+    public void setTableInput(Property<TableInput> tableInput) {
         this.tableInput = tableInput;
     }
 
-    public Table withTableInput(TableInput tableInput) {
+    public Table withTableInput(Property<TableInput> tableInput) {
         this.tableInput = tableInput;
         return this;
     }

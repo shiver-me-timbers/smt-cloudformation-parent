@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ServiceRole",
     "VersionLifecycleConfig"
 })
-public class ApplicationResourceLifecycleConfig {
+public class ApplicationResourceLifecycleConfig implements Property<ApplicationResourceLifecycleConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
@@ -39,7 +41,7 @@ public class ApplicationResourceLifecycleConfig {
      */
     @JsonProperty("VersionLifecycleConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html")
-    private ApplicationVersionLifecycleConfig versionLifecycleConfig;
+    private Property<ApplicationVersionLifecycleConfig> versionLifecycleConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole
@@ -71,7 +73,7 @@ public class ApplicationResourceLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public ApplicationVersionLifecycleConfig getVersionLifecycleConfig() {
+    public Property<ApplicationVersionLifecycleConfig> getVersionLifecycleConfig() {
         return versionLifecycleConfig;
     }
 
@@ -82,11 +84,11 @@ public class ApplicationResourceLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public void setVersionLifecycleConfig(ApplicationVersionLifecycleConfig versionLifecycleConfig) {
+    public void setVersionLifecycleConfig(Property<ApplicationVersionLifecycleConfig> versionLifecycleConfig) {
         this.versionLifecycleConfig = versionLifecycleConfig;
     }
 
-    public ApplicationResourceLifecycleConfig withVersionLifecycleConfig(ApplicationVersionLifecycleConfig versionLifecycleConfig) {
+    public ApplicationResourceLifecycleConfig withVersionLifecycleConfig(Property<ApplicationVersionLifecycleConfig> versionLifecycleConfig) {
         this.versionLifecycleConfig = versionLifecycleConfig;
         return this;
     }

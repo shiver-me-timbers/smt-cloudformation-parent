@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -63,7 +64,7 @@ public class Crawler {
      */
     @JsonProperty("SchemaChangePolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html")
-    private SchemaChangePolicy schemaChangePolicy;
+    private Property<SchemaChangePolicy> schemaChangePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration
      * 
@@ -79,7 +80,7 @@ public class Crawler {
      */
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html")
-    private Schedule schedule;
+    private Property<Schedule> schedule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename
      * 
@@ -95,7 +96,7 @@ public class Crawler {
      */
     @JsonProperty("Targets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html")
-    private Targets targets;
+    private Property<Targets> targets;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
@@ -187,7 +188,7 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public SchemaChangePolicy getSchemaChangePolicy() {
+    public Property<SchemaChangePolicy> getSchemaChangePolicy() {
         return schemaChangePolicy;
     }
 
@@ -198,11 +199,11 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public void setSchemaChangePolicy(SchemaChangePolicy schemaChangePolicy) {
+    public void setSchemaChangePolicy(Property<SchemaChangePolicy> schemaChangePolicy) {
         this.schemaChangePolicy = schemaChangePolicy;
     }
 
-    public Crawler withSchemaChangePolicy(SchemaChangePolicy schemaChangePolicy) {
+    public Crawler withSchemaChangePolicy(Property<SchemaChangePolicy> schemaChangePolicy) {
         this.schemaChangePolicy = schemaChangePolicy;
         return this;
     }
@@ -237,7 +238,7 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public Schedule getSchedule() {
+    public Property<Schedule> getSchedule() {
         return schedule;
     }
 
@@ -248,11 +249,11 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public void setSchedule(Schedule schedule) {
+    public void setSchedule(Property<Schedule> schedule) {
         this.schedule = schedule;
     }
 
-    public Crawler withSchedule(Schedule schedule) {
+    public Crawler withSchedule(Property<Schedule> schedule) {
         this.schedule = schedule;
         return this;
     }
@@ -287,7 +288,7 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public Targets getTargets() {
+    public Property<Targets> getTargets() {
         return targets;
     }
 
@@ -298,11 +299,11 @@ public class Crawler {
      * 
      */
     @JsonIgnore
-    public void setTargets(Targets targets) {
+    public void setTargets(Property<Targets> targets) {
         this.targets = targets;
     }
 
-    public Crawler withTargets(Targets targets) {
+    public Crawler withTargets(Property<Targets> targets) {
         this.targets = targets;
         return this;
     }

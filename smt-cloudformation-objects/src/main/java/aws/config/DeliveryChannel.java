@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,7 +36,7 @@ public class DeliveryChannel {
      */
     @JsonProperty("ConfigSnapshotDeliveryProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html")
-    private ConfigSnapshotDeliveryProperties configSnapshotDeliveryProperties;
+    private Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name
      * 
@@ -72,7 +73,7 @@ public class DeliveryChannel {
      * 
      */
     @JsonIgnore
-    public ConfigSnapshotDeliveryProperties getConfigSnapshotDeliveryProperties() {
+    public Property<ConfigSnapshotDeliveryProperties> getConfigSnapshotDeliveryProperties() {
         return configSnapshotDeliveryProperties;
     }
 
@@ -83,11 +84,11 @@ public class DeliveryChannel {
      * 
      */
     @JsonIgnore
-    public void setConfigSnapshotDeliveryProperties(ConfigSnapshotDeliveryProperties configSnapshotDeliveryProperties) {
+    public void setConfigSnapshotDeliveryProperties(Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
         this.configSnapshotDeliveryProperties = configSnapshotDeliveryProperties;
     }
 
-    public DeliveryChannel withConfigSnapshotDeliveryProperties(ConfigSnapshotDeliveryProperties configSnapshotDeliveryProperties) {
+    public DeliveryChannel withConfigSnapshotDeliveryProperties(Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
         this.configSnapshotDeliveryProperties = configSnapshotDeliveryProperties;
         return this;
     }

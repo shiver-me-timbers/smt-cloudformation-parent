@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -38,7 +39,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ServiceAccessSecurityGroup",
     "TerminationProtected"
 })
-public class JobFlowInstancesConfig {
+public class JobFlowInstancesConfig implements Property<JobFlowInstancesConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-additionalmastersecuritygroups
@@ -64,7 +66,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("CoreInstanceFleet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html")
-    private InstanceFleetConfig coreInstanceFleet;
+    private Property<aws.emr.InstanceFleetConfig> coreInstanceFleet;
     /**
      * InstanceGroupConfig
      * <p>
@@ -73,7 +75,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("CoreInstanceGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html")
-    private InstanceGroupConfig coreInstanceGroup;
+    private Property<aws.emr.InstanceGroupConfig> coreInstanceGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-ec2keyname
      * 
@@ -124,7 +126,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("MasterInstanceFleet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html")
-    private InstanceFleetConfig masterInstanceFleet;
+    private Property<aws.emr.InstanceFleetConfig> masterInstanceFleet;
     /**
      * InstanceGroupConfig
      * <p>
@@ -133,7 +135,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("MasterInstanceGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html")
-    private InstanceGroupConfig masterInstanceGroup;
+    private Property<aws.emr.InstanceGroupConfig> masterInstanceGroup;
     /**
      * PlacementType
      * <p>
@@ -142,7 +144,7 @@ public class JobFlowInstancesConfig {
      */
     @JsonProperty("Placement")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html")
-    private PlacementType placement;
+    private Property<PlacementType> placement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html#cfn-elasticmapreduce-cluster-jobflowinstancesconfig-serviceaccesssecuritygroup
      * 
@@ -211,7 +213,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public InstanceFleetConfig getCoreInstanceFleet() {
+    public Property<aws.emr.InstanceFleetConfig> getCoreInstanceFleet() {
         return coreInstanceFleet;
     }
 
@@ -222,11 +224,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public void setCoreInstanceFleet(InstanceFleetConfig coreInstanceFleet) {
+    public void setCoreInstanceFleet(Property<aws.emr.InstanceFleetConfig> coreInstanceFleet) {
         this.coreInstanceFleet = coreInstanceFleet;
     }
 
-    public JobFlowInstancesConfig withCoreInstanceFleet(InstanceFleetConfig coreInstanceFleet) {
+    public JobFlowInstancesConfig withCoreInstanceFleet(Property<aws.emr.InstanceFleetConfig> coreInstanceFleet) {
         this.coreInstanceFleet = coreInstanceFleet;
         return this;
     }
@@ -238,7 +240,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public InstanceGroupConfig getCoreInstanceGroup() {
+    public Property<aws.emr.InstanceGroupConfig> getCoreInstanceGroup() {
         return coreInstanceGroup;
     }
 
@@ -249,11 +251,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public void setCoreInstanceGroup(InstanceGroupConfig coreInstanceGroup) {
+    public void setCoreInstanceGroup(Property<aws.emr.InstanceGroupConfig> coreInstanceGroup) {
         this.coreInstanceGroup = coreInstanceGroup;
     }
 
-    public JobFlowInstancesConfig withCoreInstanceGroup(InstanceGroupConfig coreInstanceGroup) {
+    public JobFlowInstancesConfig withCoreInstanceGroup(Property<aws.emr.InstanceGroupConfig> coreInstanceGroup) {
         this.coreInstanceGroup = coreInstanceGroup;
         return this;
     }
@@ -403,7 +405,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public InstanceFleetConfig getMasterInstanceFleet() {
+    public Property<aws.emr.InstanceFleetConfig> getMasterInstanceFleet() {
         return masterInstanceFleet;
     }
 
@@ -414,11 +416,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public void setMasterInstanceFleet(InstanceFleetConfig masterInstanceFleet) {
+    public void setMasterInstanceFleet(Property<aws.emr.InstanceFleetConfig> masterInstanceFleet) {
         this.masterInstanceFleet = masterInstanceFleet;
     }
 
-    public JobFlowInstancesConfig withMasterInstanceFleet(InstanceFleetConfig masterInstanceFleet) {
+    public JobFlowInstancesConfig withMasterInstanceFleet(Property<aws.emr.InstanceFleetConfig> masterInstanceFleet) {
         this.masterInstanceFleet = masterInstanceFleet;
         return this;
     }
@@ -430,7 +432,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public InstanceGroupConfig getMasterInstanceGroup() {
+    public Property<aws.emr.InstanceGroupConfig> getMasterInstanceGroup() {
         return masterInstanceGroup;
     }
 
@@ -441,11 +443,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public void setMasterInstanceGroup(InstanceGroupConfig masterInstanceGroup) {
+    public void setMasterInstanceGroup(Property<aws.emr.InstanceGroupConfig> masterInstanceGroup) {
         this.masterInstanceGroup = masterInstanceGroup;
     }
 
-    public JobFlowInstancesConfig withMasterInstanceGroup(InstanceGroupConfig masterInstanceGroup) {
+    public JobFlowInstancesConfig withMasterInstanceGroup(Property<aws.emr.InstanceGroupConfig> masterInstanceGroup) {
         this.masterInstanceGroup = masterInstanceGroup;
         return this;
     }
@@ -457,7 +459,7 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public PlacementType getPlacement() {
+    public Property<PlacementType> getPlacement() {
         return placement;
     }
 
@@ -468,11 +470,11 @@ public class JobFlowInstancesConfig {
      * 
      */
     @JsonIgnore
-    public void setPlacement(PlacementType placement) {
+    public void setPlacement(Property<PlacementType> placement) {
         this.placement = placement;
     }
 
-    public JobFlowInstancesConfig withPlacement(PlacementType placement) {
+    public JobFlowInstancesConfig withPlacement(Property<PlacementType> placement) {
         this.placement = placement;
         return this;
     }

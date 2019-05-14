@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -52,7 +53,7 @@ public class Function {
      */
     @JsonProperty("Code")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html")
-    private Code code;
+    private Property<Code> code;
     /**
      * DeadLetterConfig
      * <p>
@@ -61,7 +62,7 @@ public class Function {
      */
     @JsonProperty("DeadLetterConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html")
-    private DeadLetterConfig deadLetterConfig;
+    private Property<DeadLetterConfig> deadLetterConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description
      * 
@@ -77,7 +78,7 @@ public class Function {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html")
-    private Environment environment;
+    private Property<Environment> environment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname
      * 
@@ -141,7 +142,7 @@ public class Function {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout
      * 
@@ -157,7 +158,7 @@ public class Function {
      */
     @JsonProperty("TracingConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html")
-    private TracingConfig tracingConfig;
+    private Property<TracingConfig> tracingConfig;
     /**
      * VpcConfig
      * <p>
@@ -166,7 +167,7 @@ public class Function {
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html")
-    private VpcConfig vpcConfig;
+    private Property<VpcConfig> vpcConfig;
 
     /**
      * Code
@@ -175,7 +176,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public Code getCode() {
+    public Property<Code> getCode() {
         return code;
     }
 
@@ -186,11 +187,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setCode(Code code) {
+    public void setCode(Property<Code> code) {
         this.code = code;
     }
 
-    public Function withCode(Code code) {
+    public Function withCode(Property<Code> code) {
         this.code = code;
         return this;
     }
@@ -202,7 +203,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public DeadLetterConfig getDeadLetterConfig() {
+    public Property<DeadLetterConfig> getDeadLetterConfig() {
         return deadLetterConfig;
     }
 
@@ -213,11 +214,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setDeadLetterConfig(DeadLetterConfig deadLetterConfig) {
+    public void setDeadLetterConfig(Property<DeadLetterConfig> deadLetterConfig) {
         this.deadLetterConfig = deadLetterConfig;
     }
 
-    public Function withDeadLetterConfig(DeadLetterConfig deadLetterConfig) {
+    public Function withDeadLetterConfig(Property<DeadLetterConfig> deadLetterConfig) {
         this.deadLetterConfig = deadLetterConfig;
         return this;
     }
@@ -252,7 +253,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public Environment getEnvironment() {
+    public Property<Environment> getEnvironment() {
         return environment;
     }
 
@@ -263,11 +264,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Environment environment) {
+    public void setEnvironment(Property<Environment> environment) {
         this.environment = environment;
     }
 
-    public Function withEnvironment(Environment environment) {
+    public Function withEnvironment(Property<Environment> environment) {
         this.environment = environment;
         return this;
     }
@@ -461,7 +462,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -470,11 +471,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Function withTags(List<Tag> tags) {
+    public Function withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -509,7 +510,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public TracingConfig getTracingConfig() {
+    public Property<TracingConfig> getTracingConfig() {
         return tracingConfig;
     }
 
@@ -520,11 +521,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setTracingConfig(TracingConfig tracingConfig) {
+    public void setTracingConfig(Property<TracingConfig> tracingConfig) {
         this.tracingConfig = tracingConfig;
     }
 
-    public Function withTracingConfig(TracingConfig tracingConfig) {
+    public Function withTracingConfig(Property<TracingConfig> tracingConfig) {
         this.tracingConfig = tracingConfig;
         return this;
     }
@@ -536,7 +537,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public VpcConfig getVpcConfig() {
+    public Property<VpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
@@ -547,11 +548,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(VpcConfig vpcConfig) {
+    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Function withVpcConfig(VpcConfig vpcConfig) {
+    public Function withVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }

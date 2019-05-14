@@ -22,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Value",
     "Key"
 })
-public class Tag {
+public class Tag implements Property<Tag>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-tag.html#cfn-iotanalytics-datastore-tag-value

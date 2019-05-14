@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ResourceType",
     "Tags"
 })
-public class TagSpecification {
+public class TagSpecification implements Property<TagSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype
@@ -39,7 +41,7 @@ public class TagSpecification {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-tags")
-    private List<TagRequest> tags = new ArrayList<TagRequest>();
+    private List<Property<TagRequest>> tags = new ArrayList<Property<TagRequest>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-tagspecification.html#cfn-ec2-ec2fleet-tagspecification-resourcetype
@@ -69,7 +71,7 @@ public class TagSpecification {
      * 
      */
     @JsonIgnore
-    public List<TagRequest> getTags() {
+    public List<Property<TagRequest>> getTags() {
         return tags;
     }
 
@@ -78,11 +80,11 @@ public class TagSpecification {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRequest> tags) {
+    public void setTags(List<Property<TagRequest>> tags) {
         this.tags = tags;
     }
 
-    public TagSpecification withTags(List<TagRequest> tags) {
+    public TagSpecification withTags(List<Property<TagRequest>> tags) {
         this.tags = tags;
         return this;
     }

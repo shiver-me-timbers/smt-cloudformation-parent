@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Qualifier",
     "Payload"
 })
-public class MaintenanceWindowLambdaParameters {
+public class MaintenanceWindowLambdaParameters implements Property<MaintenanceWindowLambdaParameters>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext

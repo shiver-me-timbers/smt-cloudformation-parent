@@ -3,6 +3,7 @@ package aws.rds;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -50,7 +51,7 @@ public class OptionGroup {
      */
     @JsonProperty("OptionConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optionconfigurations")
-    private List<OptionConfiguration> optionConfigurations = new ArrayList<OptionConfiguration>();
+    private List<Property<OptionConfiguration>> optionConfigurations = new ArrayList<Property<OptionConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription
      * 
@@ -64,7 +65,7 @@ public class OptionGroup {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-enginename
@@ -117,7 +118,7 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public List<OptionConfiguration> getOptionConfigurations() {
+    public List<Property<OptionConfiguration>> getOptionConfigurations() {
         return optionConfigurations;
     }
 
@@ -126,11 +127,11 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public void setOptionConfigurations(List<OptionConfiguration> optionConfigurations) {
+    public void setOptionConfigurations(List<Property<OptionConfiguration>> optionConfigurations) {
         this.optionConfigurations = optionConfigurations;
     }
 
-    public OptionGroup withOptionConfigurations(List<OptionConfiguration> optionConfigurations) {
+    public OptionGroup withOptionConfigurations(List<Property<OptionConfiguration>> optionConfigurations) {
         this.optionConfigurations = optionConfigurations;
         return this;
     }
@@ -163,7 +164,7 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -172,11 +173,11 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public OptionGroup withTags(List<Tag> tags) {
+    public OptionGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

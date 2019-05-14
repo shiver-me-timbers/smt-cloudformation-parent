@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html",
   "type" : "object",
   "javaType" : "aws.opsworks.VolumeConfiguration",
+  "javaInterfaces" : [ "aws.Property<VolumeConfiguration>" ],
   "properties" : {
     "Encrypted" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfiguration.html#cfn-opsworks-layer-volumeconfiguration-encrypted",

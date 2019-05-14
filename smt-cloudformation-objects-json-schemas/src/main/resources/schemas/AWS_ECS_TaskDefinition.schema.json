@@ -11,7 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_TaskDefinition.ContainerDefinition.schema.json"
+        "$ref" : "AWS_ECS_TaskDefinition.ContainerDefinition.schema.json",
+        "javaType" : "aws.Property<aws.ecs.ContainerDefinition>"
       }
     },
     "Cpu" : {
@@ -44,7 +45,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_TaskDefinition.TaskDefinitionPlacementConstraint.schema.json"
+        "$ref" : "AWS_ECS_TaskDefinition.TaskDefinitionPlacementConstraint.schema.json",
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionPlacementConstraint>"
       }
     },
     "RequiresCompatibilities" : {
@@ -66,7 +68,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_TaskDefinition.Volume.schema.json"
+        "$ref" : "AWS_ECS_TaskDefinition.Volume.schema.json",
+        "javaType" : "aws.Property<aws.ecs.Volume>"
       }
     }
   }

@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InstanceInterruptionBehavior",
     "InstancePoolsToUseCount"
 })
-public class SpotOptionsRequest {
+public class SpotOptionsRequest implements Property<SpotOptionsRequest>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html#cfn-ec2-ec2fleet-spotoptionsrequest-allocationstrategy

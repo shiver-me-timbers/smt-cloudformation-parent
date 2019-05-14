@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import aws.kinesisanalyticsv2.InputLambdaProcessor;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "InputLambdaProcessor"
 })
-public class InputProcessingConfiguration {
+public class InputProcessingConfiguration implements Property<InputProcessingConfiguration>
+{
 
     /**
      * InputLambdaProcessor
@@ -32,7 +34,7 @@ public class InputProcessingConfiguration {
      */
     @JsonProperty("InputLambdaProcessor")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputlambdaprocessor.html")
-    private InputLambdaProcessor inputLambdaProcessor;
+    private Property<InputLambdaProcessor> inputLambdaProcessor;
 
     /**
      * InputLambdaProcessor
@@ -41,7 +43,7 @@ public class InputProcessingConfiguration {
      * 
      */
     @JsonIgnore
-    public InputLambdaProcessor getInputLambdaProcessor() {
+    public Property<InputLambdaProcessor> getInputLambdaProcessor() {
         return inputLambdaProcessor;
     }
 
@@ -52,11 +54,11 @@ public class InputProcessingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setInputLambdaProcessor(InputLambdaProcessor inputLambdaProcessor) {
+    public void setInputLambdaProcessor(Property<InputLambdaProcessor> inputLambdaProcessor) {
         this.inputLambdaProcessor = inputLambdaProcessor;
     }
 
-    public InputProcessingConfiguration withInputLambdaProcessor(InputLambdaProcessor inputLambdaProcessor) {
+    public InputProcessingConfiguration withInputLambdaProcessor(Property<InputLambdaProcessor> inputLambdaProcessor) {
         this.inputLambdaProcessor = inputLambdaProcessor;
         return this;
     }

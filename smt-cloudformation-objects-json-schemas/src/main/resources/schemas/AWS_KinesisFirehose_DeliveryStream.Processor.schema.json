@@ -5,13 +5,15 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html",
   "type" : "object",
   "javaType" : "aws.kinesisfirehose.Processor",
+  "javaInterfaces" : [ "aws.Property<Processor>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-parameters",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessorParameter.schema.json"
+        "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessorParameter.schema.json",
+        "javaType" : "aws.Property<aws.kinesisfirehose.ProcessorParameter>"
       }
     },
     "Type" : {

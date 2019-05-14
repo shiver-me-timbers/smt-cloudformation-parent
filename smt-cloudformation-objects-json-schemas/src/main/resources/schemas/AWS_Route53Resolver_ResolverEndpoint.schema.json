@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-ipaddresses",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Route53Resolver_ResolverEndpoint.IpAddressRequest.schema.json"
+        "$ref" : "AWS_Route53Resolver_ResolverEndpoint.IpAddressRequest.schema.json",
+        "javaType" : "aws.Property<aws.route53resolver.IpAddressRequest>"
       }
     },
     "Direction" : {
@@ -30,7 +31,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "Name" : {

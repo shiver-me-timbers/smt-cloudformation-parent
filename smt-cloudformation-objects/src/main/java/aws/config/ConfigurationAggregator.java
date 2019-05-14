@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class ConfigurationAggregator {
      */
     @JsonProperty("AccountAggregationSources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources")
-    private List<AccountAggregationSource> accountAggregationSources = new ArrayList<AccountAggregationSource>();
+    private List<Property<AccountAggregationSource>> accountAggregationSources = new ArrayList<Property<AccountAggregationSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-configurationaggregatorname
      * 
@@ -49,14 +50,14 @@ public class ConfigurationAggregator {
      */
     @JsonProperty("OrganizationAggregationSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html")
-    private OrganizationAggregationSource organizationAggregationSource;
+    private Property<OrganizationAggregationSource> organizationAggregationSource;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources
      * 
      */
     @JsonIgnore
-    public List<AccountAggregationSource> getAccountAggregationSources() {
+    public List<Property<AccountAggregationSource>> getAccountAggregationSources() {
         return accountAggregationSources;
     }
 
@@ -65,11 +66,11 @@ public class ConfigurationAggregator {
      * 
      */
     @JsonIgnore
-    public void setAccountAggregationSources(List<AccountAggregationSource> accountAggregationSources) {
+    public void setAccountAggregationSources(List<Property<AccountAggregationSource>> accountAggregationSources) {
         this.accountAggregationSources = accountAggregationSources;
     }
 
-    public ConfigurationAggregator withAccountAggregationSources(List<AccountAggregationSource> accountAggregationSources) {
+    public ConfigurationAggregator withAccountAggregationSources(List<Property<AccountAggregationSource>> accountAggregationSources) {
         this.accountAggregationSources = accountAggregationSources;
         return this;
     }
@@ -104,7 +105,7 @@ public class ConfigurationAggregator {
      * 
      */
     @JsonIgnore
-    public OrganizationAggregationSource getOrganizationAggregationSource() {
+    public Property<OrganizationAggregationSource> getOrganizationAggregationSource() {
         return organizationAggregationSource;
     }
 
@@ -115,11 +116,11 @@ public class ConfigurationAggregator {
      * 
      */
     @JsonIgnore
-    public void setOrganizationAggregationSource(OrganizationAggregationSource organizationAggregationSource) {
+    public void setOrganizationAggregationSource(Property<OrganizationAggregationSource> organizationAggregationSource) {
         this.organizationAggregationSource = organizationAggregationSource;
     }
 
-    public ConfigurationAggregator withOrganizationAggregationSource(OrganizationAggregationSource organizationAggregationSource) {
+    public ConfigurationAggregator withOrganizationAggregationSource(Property<OrganizationAggregationSource> organizationAggregationSource) {
         this.organizationAggregationSource = organizationAggregationSource;
         return this;
     }

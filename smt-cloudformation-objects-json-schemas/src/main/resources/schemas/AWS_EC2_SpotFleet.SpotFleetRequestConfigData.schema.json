@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html",
   "type" : "object",
   "javaType" : "aws.ec2.SpotFleetRequestConfigData",
+  "javaInterfaces" : [ "aws.Property<SpotFleetRequestConfigData>" ],
   "properties" : {
     "AllocationStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy",
@@ -31,7 +32,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.SpotFleetLaunchSpecification.schema.json"
+        "$ref" : "AWS_EC2_SpotFleet.SpotFleetLaunchSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.SpotFleetLaunchSpecification>"
       }
     },
     "LaunchTemplateConfigs" : {
@@ -39,12 +41,14 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.LaunchTemplateConfig.schema.json"
+        "$ref" : "AWS_EC2_SpotFleet.LaunchTemplateConfig.schema.json",
+        "javaType" : "aws.Property<aws.ec2.LaunchTemplateConfig>"
       }
     },
     "LoadBalancersConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-loadbalancersconfig",
-      "$ref" : "AWS_EC2_SpotFleet.LoadBalancersConfig.schema.json"
+      "$ref" : "AWS_EC2_SpotFleet.LoadBalancersConfig.schema.json",
+      "javaType" : "aws.Property<aws.ec2.LoadBalancersConfig>"
     },
     "ReplaceUnhealthyInstances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances",

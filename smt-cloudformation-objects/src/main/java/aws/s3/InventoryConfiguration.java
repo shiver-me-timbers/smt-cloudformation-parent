@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Prefix",
     "ScheduleFrequency"
 })
-public class InventoryConfiguration {
+public class InventoryConfiguration implements Property<InventoryConfiguration>
+{
 
     /**
      * Destination
@@ -40,7 +42,7 @@ public class InventoryConfiguration {
      */
     @JsonProperty("Destination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html")
-    private Destination destination;
+    private Property<Destination> destination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-inventoryconfiguration.html#cfn-s3-bucket-inventoryconfiguration-enabled
      * 
@@ -92,7 +94,7 @@ public class InventoryConfiguration {
      * 
      */
     @JsonIgnore
-    public Destination getDestination() {
+    public Property<Destination> getDestination() {
         return destination;
     }
 
@@ -103,11 +105,11 @@ public class InventoryConfiguration {
      * 
      */
     @JsonIgnore
-    public void setDestination(Destination destination) {
+    public void setDestination(Property<Destination> destination) {
         this.destination = destination;
     }
 
-    public InventoryConfiguration withDestination(Destination destination) {
+    public InventoryConfiguration withDestination(Property<Destination> destination) {
         this.destination = destination;
         return this;
     }

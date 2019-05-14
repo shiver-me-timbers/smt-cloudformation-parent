@@ -3,6 +3,7 @@ package aws.elasticloadbalancingv2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Field",
     "Values"
 })
-public class RuleCondition {
+public class RuleCondition implements Property<RuleCondition>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-conditions.html#cfn-elasticloadbalancingv2-listenerrule-conditions-field

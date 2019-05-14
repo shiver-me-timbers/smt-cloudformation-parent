@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "EncryptionConfiguration",
     "StorageClass"
 })
-public class ReplicationDestination {
+public class ReplicationDestination implements Property<ReplicationDestination>
+{
 
     /**
      * AccessControlTranslation
@@ -35,7 +37,7 @@ public class ReplicationDestination {
      */
     @JsonProperty("AccessControlTranslation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html")
-    private AccessControlTranslation accessControlTranslation;
+    private Property<AccessControlTranslation> accessControlTranslation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account
      * 
@@ -58,7 +60,7 @@ public class ReplicationDestination {
      */
     @JsonProperty("EncryptionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-encryptionconfiguration.html")
-    private EncryptionConfiguration encryptionConfiguration;
+    private Property<EncryptionConfiguration> encryptionConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass
      * 
@@ -74,7 +76,7 @@ public class ReplicationDestination {
      * 
      */
     @JsonIgnore
-    public AccessControlTranslation getAccessControlTranslation() {
+    public Property<AccessControlTranslation> getAccessControlTranslation() {
         return accessControlTranslation;
     }
 
@@ -85,11 +87,11 @@ public class ReplicationDestination {
      * 
      */
     @JsonIgnore
-    public void setAccessControlTranslation(AccessControlTranslation accessControlTranslation) {
+    public void setAccessControlTranslation(Property<AccessControlTranslation> accessControlTranslation) {
         this.accessControlTranslation = accessControlTranslation;
     }
 
-    public ReplicationDestination withAccessControlTranslation(AccessControlTranslation accessControlTranslation) {
+    public ReplicationDestination withAccessControlTranslation(Property<AccessControlTranslation> accessControlTranslation) {
         this.accessControlTranslation = accessControlTranslation;
         return this;
     }
@@ -147,7 +149,7 @@ public class ReplicationDestination {
      * 
      */
     @JsonIgnore
-    public EncryptionConfiguration getEncryptionConfiguration() {
+    public Property<EncryptionConfiguration> getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
 
@@ -158,11 +160,11 @@ public class ReplicationDestination {
      * 
      */
     @JsonIgnore
-    public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public void setEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
 
-    public ReplicationDestination withEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public ReplicationDestination withEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
         return this;
     }

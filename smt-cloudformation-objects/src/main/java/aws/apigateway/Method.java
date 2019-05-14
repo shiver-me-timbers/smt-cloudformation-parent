@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -83,7 +84,7 @@ public class Method {
      */
     @JsonProperty("Integration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html")
-    private Integration integration;
+    private Property<Integration> integration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses
      * 
@@ -91,7 +92,7 @@ public class Method {
     @JsonProperty("MethodResponses")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses")
-    private Set<MethodResponse> methodResponses = new LinkedHashSet<MethodResponse>();
+    private Set<Property<MethodResponse>> methodResponses = new LinkedHashSet<Property<MethodResponse>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-operationname
      * 
@@ -257,7 +258,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Integration getIntegration() {
+    public Property<Integration> getIntegration() {
         return integration;
     }
 
@@ -268,11 +269,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setIntegration(Integration integration) {
+    public void setIntegration(Property<Integration> integration) {
         this.integration = integration;
     }
 
-    public Method withIntegration(Integration integration) {
+    public Method withIntegration(Property<Integration> integration) {
         this.integration = integration;
         return this;
     }
@@ -282,7 +283,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Set<MethodResponse> getMethodResponses() {
+    public Set<Property<MethodResponse>> getMethodResponses() {
         return methodResponses;
     }
 
@@ -291,11 +292,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setMethodResponses(Set<MethodResponse> methodResponses) {
+    public void setMethodResponses(Set<Property<MethodResponse>> methodResponses) {
         this.methodResponses = methodResponses;
     }
 
-    public Method withMethodResponses(Set<MethodResponse> methodResponses) {
+    public Method withMethodResponses(Set<Property<MethodResponse>> methodResponses) {
         this.methodResponses = methodResponses;
         return this;
     }

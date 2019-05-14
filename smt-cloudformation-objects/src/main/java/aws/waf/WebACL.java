@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,7 @@ public class WebACL {
      */
     @JsonProperty("DefaultAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html")
-    private WafAction defaultAction;
+    private Property<WafAction> defaultAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-metricname
      * 
@@ -59,7 +60,7 @@ public class WebACL {
     @JsonProperty("Rules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-rules")
-    private Set<ActivatedRule> rules = new LinkedHashSet<ActivatedRule>();
+    private Set<Property<ActivatedRule>> rules = new LinkedHashSet<Property<ActivatedRule>>();
 
     /**
      * WafAction
@@ -68,7 +69,7 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public WafAction getDefaultAction() {
+    public Property<WafAction> getDefaultAction() {
         return defaultAction;
     }
 
@@ -79,11 +80,11 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public void setDefaultAction(WafAction defaultAction) {
+    public void setDefaultAction(Property<WafAction> defaultAction) {
         this.defaultAction = defaultAction;
     }
 
-    public WebACL withDefaultAction(WafAction defaultAction) {
+    public WebACL withDefaultAction(Property<WafAction> defaultAction) {
         this.defaultAction = defaultAction;
         return this;
     }
@@ -139,7 +140,7 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public Set<ActivatedRule> getRules() {
+    public Set<Property<ActivatedRule>> getRules() {
         return rules;
     }
 
@@ -148,11 +149,11 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public void setRules(Set<ActivatedRule> rules) {
+    public void setRules(Set<Property<ActivatedRule>> rules) {
         this.rules = rules;
     }
 
-    public WebACL withRules(Set<ActivatedRule> rules) {
+    public WebACL withRules(Set<Property<ActivatedRule>> rules) {
         this.rules = rules;
         return this;
     }

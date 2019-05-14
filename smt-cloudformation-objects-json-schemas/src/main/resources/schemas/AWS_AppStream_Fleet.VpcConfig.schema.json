@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html",
   "type" : "object",
   "javaType" : "aws.appstream.VpcConfig",
+  "javaInterfaces" : [ "aws.Property<VpcConfig>" ],
   "properties" : {
     "SubnetIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html#cfn-appstream-fleet-vpcconfig-subnetids",

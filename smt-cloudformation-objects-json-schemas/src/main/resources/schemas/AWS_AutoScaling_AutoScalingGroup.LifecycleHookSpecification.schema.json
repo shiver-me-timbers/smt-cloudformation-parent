@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html",
   "type" : "object",
   "javaType" : "aws.autoscaling.LifecycleHookSpecification",
+  "javaInterfaces" : [ "aws.Property<LifecycleHookSpecification>" ],
   "properties" : {
     "DefaultResult" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-defaultresult",

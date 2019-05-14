@@ -3,6 +3,7 @@ package aws.events;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "RunCommandTargets"
 })
-public class RunCommandParameters {
+public class RunCommandParameters implements Property<RunCommandParameters>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
@@ -33,14 +35,14 @@ public class RunCommandParameters {
     @JsonProperty("RunCommandTargets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets")
-    private Set<RunCommandTarget> runCommandTargets = new LinkedHashSet<RunCommandTarget>();
+    private Set<Property<RunCommandTarget>> runCommandTargets = new LinkedHashSet<Property<RunCommandTarget>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html#cfn-events-rule-runcommandparameters-runcommandtargets
      * 
      */
     @JsonIgnore
-    public Set<RunCommandTarget> getRunCommandTargets() {
+    public Set<Property<RunCommandTarget>> getRunCommandTargets() {
         return runCommandTargets;
     }
 
@@ -49,11 +51,11 @@ public class RunCommandParameters {
      * 
      */
     @JsonIgnore
-    public void setRunCommandTargets(Set<RunCommandTarget> runCommandTargets) {
+    public void setRunCommandTargets(Set<Property<RunCommandTarget>> runCommandTargets) {
         this.runCommandTargets = runCommandTargets;
     }
 
-    public RunCommandParameters withRunCommandTargets(Set<RunCommandTarget> runCommandTargets) {
+    public RunCommandParameters withRunCommandTargets(Set<Property<RunCommandTarget>> runCommandTargets) {
         this.runCommandTargets = runCommandTargets;
         return this;
     }

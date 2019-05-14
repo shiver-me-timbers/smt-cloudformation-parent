@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-redirectconfig.html",
   "type" : "object",
   "javaType" : "aws.elasticloadbalancingv2.RedirectConfig",
+  "javaInterfaces" : [ "aws.Property<RedirectConfig>" ],
   "properties" : {
     "Host" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-redirectconfig.html#cfn-elasticloadbalancingv2-listener-redirectconfig-host",

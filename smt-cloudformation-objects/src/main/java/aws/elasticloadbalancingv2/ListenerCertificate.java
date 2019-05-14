@@ -3,6 +3,7 @@ package aws.elasticloadbalancingv2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,7 @@ public class ListenerCertificate {
     @JsonProperty("Certificates")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates")
-    private Set<Certificate> certificates = new LinkedHashSet<Certificate>();
+    private Set<Property<Certificate>> certificates = new LinkedHashSet<Property<Certificate>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
      * 
@@ -48,7 +49,7 @@ public class ListenerCertificate {
      * 
      */
     @JsonIgnore
-    public Set<Certificate> getCertificates() {
+    public Set<Property<Certificate>> getCertificates() {
         return certificates;
     }
 
@@ -57,11 +58,11 @@ public class ListenerCertificate {
      * 
      */
     @JsonIgnore
-    public void setCertificates(Set<Certificate> certificates) {
+    public void setCertificates(Set<Property<Certificate>> certificates) {
         this.certificates = certificates;
     }
 
-    public ListenerCertificate withCertificates(Set<Certificate> certificates) {
+    public ListenerCertificate withCertificates(Set<Property<Certificate>> certificates) {
         this.certificates = certificates;
         return this;
     }

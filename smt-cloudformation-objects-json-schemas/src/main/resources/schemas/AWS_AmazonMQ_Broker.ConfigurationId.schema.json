@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html",
   "type" : "object",
   "javaType" : "aws.amazonmq.ConfigurationId",
+  "javaInterfaces" : [ "aws.Property<ConfigurationId>" ],
   "properties" : {
     "Revision" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html#cfn-amazonmq-broker-configurationid-revision",

@@ -3,6 +3,7 @@ package aws.kinesisanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -41,7 +42,7 @@ public class Application {
      */
     @JsonProperty("Inputs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs")
-    private List<Input> inputs = new ArrayList<Input>();
+    private List<Property<Input>> inputs = new ArrayList<Property<Input>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription
      * 
@@ -85,7 +86,7 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public List<Input> getInputs() {
+    public List<Property<Input>> getInputs() {
         return inputs;
     }
 
@@ -94,11 +95,11 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public void setInputs(List<Input> inputs) {
+    public void setInputs(List<Property<Input>> inputs) {
         this.inputs = inputs;
     }
 
-    public Application withInputs(List<Input> inputs) {
+    public Application withInputs(List<Property<Input>> inputs) {
         this.inputs = inputs;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -33,7 +34,7 @@ public class NetworkAcl {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid
      * 
@@ -47,7 +48,7 @@ public class NetworkAcl {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -56,11 +57,11 @@ public class NetworkAcl {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public NetworkAcl withTags(List<Tag> tags) {
+    public NetworkAcl withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

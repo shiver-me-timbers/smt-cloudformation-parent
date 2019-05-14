@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class TopicRule {
      */
     @JsonProperty("TopicRulePayload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html")
-    private TopicRulePayload topicRulePayload;
+    private Property<TopicRulePayload> topicRulePayload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename
@@ -71,7 +72,7 @@ public class TopicRule {
      * 
      */
     @JsonIgnore
-    public TopicRulePayload getTopicRulePayload() {
+    public Property<TopicRulePayload> getTopicRulePayload() {
         return topicRulePayload;
     }
 
@@ -82,11 +83,11 @@ public class TopicRule {
      * 
      */
     @JsonIgnore
-    public void setTopicRulePayload(TopicRulePayload topicRulePayload) {
+    public void setTopicRulePayload(Property<TopicRulePayload> topicRulePayload) {
         this.topicRulePayload = topicRulePayload;
     }
 
-    public TopicRule withTopicRulePayload(TopicRulePayload topicRulePayload) {
+    public TopicRule withTopicRulePayload(Property<TopicRulePayload> topicRulePayload) {
         this.topicRulePayload = topicRulePayload;
         return this;
     }

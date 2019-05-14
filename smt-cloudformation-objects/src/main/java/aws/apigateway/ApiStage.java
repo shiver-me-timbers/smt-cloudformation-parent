@@ -2,6 +2,7 @@
 package aws.apigateway;
 
 import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Stage",
     "Throttle"
 })
-public class ApiStage {
+public class ApiStage implements Property<ApiStage>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
@@ -46,7 +48,7 @@ public class ApiStage {
      */
     @JsonProperty("Throttle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-throttle")
-    private Map<String, ThrottleSettings> throttle;
+    private Map<String, Property<ThrottleSettings>> throttle;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-apistage.html#cfn-apigateway-usageplan-apistage-apiid
@@ -99,7 +101,7 @@ public class ApiStage {
      * 
      */
     @JsonIgnore
-    public Map<String, ThrottleSettings> getThrottle() {
+    public Map<String, Property<ThrottleSettings>> getThrottle() {
         return throttle;
     }
 
@@ -108,11 +110,11 @@ public class ApiStage {
      * 
      */
     @JsonIgnore
-    public void setThrottle(Map<String, ThrottleSettings> throttle) {
+    public void setThrottle(Map<String, Property<ThrottleSettings>> throttle) {
         this.throttle = throttle;
     }
 
-    public ApiStage withThrottle(Map<String, ThrottleSettings> throttle) {
+    public ApiStage withThrottle(Map<String, Property<ThrottleSettings>> throttle) {
         this.throttle = throttle;
         return this;
     }

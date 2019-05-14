@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-logging.html",
   "type" : "object",
   "javaType" : "aws.appmesh.Logging",
+  "javaInterfaces" : [ "aws.Property<Logging>" ],
   "properties" : {
     "AccessLog" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-logging.html#cfn-appmesh-virtualnode-logging-accesslog",
-      "$ref" : "AWS_AppMesh_VirtualNode.FileAccessLog.schema.json"
+      "$ref" : "AWS_AppMesh_VirtualNode.FileAccessLog.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.AccessLog>"
     }
   }
 }

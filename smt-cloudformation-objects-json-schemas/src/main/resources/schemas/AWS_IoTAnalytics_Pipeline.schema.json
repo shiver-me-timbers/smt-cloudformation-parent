@@ -15,14 +15,16 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "PipelineActivities" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelineactivities",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_IoTAnalytics_Pipeline.Activity.schema.json"
+        "$ref" : "AWS_IoTAnalytics_Pipeline.Activity.schema.json",
+        "javaType" : "aws.Property<aws.iotanalytics.Activity>"
       }
     }
   }

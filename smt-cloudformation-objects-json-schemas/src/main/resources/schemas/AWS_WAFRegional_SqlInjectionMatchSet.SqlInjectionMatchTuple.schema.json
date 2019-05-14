@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html",
   "type" : "object",
   "javaType" : "aws.wafregional.SqlInjectionMatchTuple",
+  "javaInterfaces" : [ "aws.Property<SqlInjectionMatchTuple>" ],
   "properties" : {
     "TextTransformation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation",
@@ -13,7 +14,8 @@
     },
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-fieldtomatch",
-      "$ref" : "AWS_WAFRegional_ByteMatchSet.FieldToMatch.schema.json"
+      "$ref" : "AWS_WAFRegional_ByteMatchSet.FieldToMatch.schema.json",
+      "javaType" : "aws.Property<aws.wafregional.FieldToMatch>"
     }
   }
 }

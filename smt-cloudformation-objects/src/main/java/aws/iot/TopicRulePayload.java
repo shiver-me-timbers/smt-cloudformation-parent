@@ -3,6 +3,7 @@ package aws.iot;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RuleDisabled",
     "Sql"
 })
-public class TopicRulePayload {
+public class TopicRulePayload implements Property<TopicRulePayload>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-actions
@@ -38,7 +40,7 @@ public class TopicRulePayload {
     @JsonProperty("Actions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-actions")
-    private Set<S3Action> actions = new LinkedHashSet<S3Action>();
+    private Set<Property<aws.iot.Action>> actions = new LinkedHashSet<Property<aws.iot.Action>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-awsiotsqlversion
      * 
@@ -61,7 +63,7 @@ public class TopicRulePayload {
      */
     @JsonProperty("ErrorAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html")
-    private S3Action errorAction;
+    private Property<aws.iot.Action> errorAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html#cfn-iot-topicrule-topicrulepayload-ruledisabled
      * 
@@ -82,7 +84,7 @@ public class TopicRulePayload {
      * 
      */
     @JsonIgnore
-    public Set<S3Action> getActions() {
+    public Set<Property<aws.iot.Action>> getActions() {
         return actions;
     }
 
@@ -91,11 +93,11 @@ public class TopicRulePayload {
      * 
      */
     @JsonIgnore
-    public void setActions(Set<S3Action> actions) {
+    public void setActions(Set<Property<aws.iot.Action>> actions) {
         this.actions = actions;
     }
 
-    public TopicRulePayload withActions(Set<S3Action> actions) {
+    public TopicRulePayload withActions(Set<Property<aws.iot.Action>> actions) {
         this.actions = actions;
         return this;
     }
@@ -153,7 +155,7 @@ public class TopicRulePayload {
      * 
      */
     @JsonIgnore
-    public S3Action getErrorAction() {
+    public Property<aws.iot.Action> getErrorAction() {
         return errorAction;
     }
 
@@ -164,11 +166,11 @@ public class TopicRulePayload {
      * 
      */
     @JsonIgnore
-    public void setErrorAction(S3Action errorAction) {
+    public void setErrorAction(Property<aws.iot.Action> errorAction) {
         this.errorAction = errorAction;
     }
 
-    public TopicRulePayload withErrorAction(S3Action errorAction) {
+    public TopicRulePayload withErrorAction(Property<aws.iot.Action> errorAction) {
         this.errorAction = errorAction;
         return this;
     }

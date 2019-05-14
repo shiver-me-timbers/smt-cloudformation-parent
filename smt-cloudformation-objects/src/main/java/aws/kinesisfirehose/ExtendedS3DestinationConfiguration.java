@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3BackupConfiguration",
     "S3BackupMode"
 })
-public class ExtendedS3DestinationConfiguration {
+public class ExtendedS3DestinationConfiguration implements Property<ExtendedS3DestinationConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-bucketarn
@@ -47,7 +49,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("BufferingHints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html")
-    private ElasticsearchBufferingHints bufferingHints;
+    private Property<BufferingHints> bufferingHints;
     /**
      * CloudWatchLoggingOptions
      * <p>
@@ -56,7 +58,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("CloudWatchLoggingOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html")
-    private CloudWatchLoggingOptions cloudWatchLoggingOptions;
+    private Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-compressionformat
      * 
@@ -72,7 +74,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("EncryptionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html")
-    private EncryptionConfiguration encryptionConfiguration;
+    private Property<EncryptionConfiguration> encryptionConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-prefix
      * 
@@ -88,7 +90,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("ProcessingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html")
-    private ProcessingConfiguration processingConfiguration;
+    private Property<ProcessingConfiguration> processingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-rolearn
      * 
@@ -104,7 +106,7 @@ public class ExtendedS3DestinationConfiguration {
      */
     @JsonProperty("S3BackupConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private S3DestinationConfiguration s3BackupConfiguration;
+    private Property<S3DestinationConfiguration> s3BackupConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration-s3backupmode
      * 
@@ -143,7 +145,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ElasticsearchBufferingHints getBufferingHints() {
+    public Property<BufferingHints> getBufferingHints() {
         return bufferingHints;
     }
 
@@ -154,11 +156,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public void setBufferingHints(Property<BufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
 
-    public ExtendedS3DestinationConfiguration withBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public ExtendedS3DestinationConfiguration withBufferingHints(Property<BufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
         return this;
     }
@@ -170,7 +172,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
+    public Property<CloudWatchLoggingOptions> getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
 
@@ -181,11 +183,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public void setCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
 
-    public ExtendedS3DestinationConfiguration withCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public ExtendedS3DestinationConfiguration withCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
         return this;
     }
@@ -220,7 +222,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public EncryptionConfiguration getEncryptionConfiguration() {
+    public Property<EncryptionConfiguration> getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
 
@@ -231,11 +233,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public void setEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
 
-    public ExtendedS3DestinationConfiguration withEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public ExtendedS3DestinationConfiguration withEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
         return this;
     }
@@ -270,7 +272,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ProcessingConfiguration getProcessingConfiguration() {
+    public Property<ProcessingConfiguration> getProcessingConfiguration() {
         return processingConfiguration;
     }
 
@@ -281,11 +283,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public void setProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
 
-    public ExtendedS3DestinationConfiguration withProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public ExtendedS3DestinationConfiguration withProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
         return this;
     }
@@ -320,7 +322,7 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public S3DestinationConfiguration getS3BackupConfiguration() {
+    public Property<S3DestinationConfiguration> getS3BackupConfiguration() {
         return s3BackupConfiguration;
     }
 
@@ -331,11 +333,11 @@ public class ExtendedS3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setS3BackupConfiguration(S3DestinationConfiguration s3BackupConfiguration) {
+    public void setS3BackupConfiguration(Property<S3DestinationConfiguration> s3BackupConfiguration) {
         this.s3BackupConfiguration = s3BackupConfiguration;
     }
 
-    public ExtendedS3DestinationConfiguration withS3BackupConfiguration(S3DestinationConfiguration s3BackupConfiguration) {
+    public ExtendedS3DestinationConfiguration withS3BackupConfiguration(Property<S3DestinationConfiguration> s3BackupConfiguration) {
         this.s3BackupConfiguration = s3BackupConfiguration;
         return this;
     }

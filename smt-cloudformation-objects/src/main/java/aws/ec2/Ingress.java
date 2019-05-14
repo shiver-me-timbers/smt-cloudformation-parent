@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SourceSecurityGroupOwnerId",
     "ToPort"
 })
-public class Ingress {
+public class Ingress implements Property<Ingress>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html#cfn-ec2-security-group-rule-cidrip

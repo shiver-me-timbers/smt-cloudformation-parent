@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,7 @@ public class SpotFleet {
      */
     @JsonProperty("SpotFleetRequestConfigData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html")
-    private SpotFleetRequestConfigData spotFleetRequestConfigData;
+    private Property<SpotFleetRequestConfigData> spotFleetRequestConfigData;
 
     /**
      * SpotFleetRequestConfigData
@@ -40,7 +41,7 @@ public class SpotFleet {
      * 
      */
     @JsonIgnore
-    public SpotFleetRequestConfigData getSpotFleetRequestConfigData() {
+    public Property<SpotFleetRequestConfigData> getSpotFleetRequestConfigData() {
         return spotFleetRequestConfigData;
     }
 
@@ -51,11 +52,11 @@ public class SpotFleet {
      * 
      */
     @JsonIgnore
-    public void setSpotFleetRequestConfigData(SpotFleetRequestConfigData spotFleetRequestConfigData) {
+    public void setSpotFleetRequestConfigData(Property<SpotFleetRequestConfigData> spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
     }
 
-    public SpotFleet withSpotFleetRequestConfigData(SpotFleetRequestConfigData spotFleetRequestConfigData) {
+    public SpotFleet withSpotFleetRequestConfigData(Property<SpotFleetRequestConfigData> spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
         return this;
     }

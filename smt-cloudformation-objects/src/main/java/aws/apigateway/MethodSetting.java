@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ThrottlingBurstLimit",
     "ThrottlingRateLimit"
 })
-public class MethodSetting {
+public class MethodSetting implements Property<MethodSetting>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription-methodsetting.html#cfn-apigateway-deployment-stagedescription-methodsetting-cachedataencrypted

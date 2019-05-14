@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html",
   "type" : "object",
   "javaType" : "aws.greengrass.DefaultConfig",
+  "javaInterfaces" : [ "aws.Property<DefaultConfig>" ],
   "properties" : {
     "Execution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html#cfn-greengrass-functiondefinitionversion-defaultconfig-execution",
-      "$ref" : "AWS_Greengrass_FunctionDefinition.Execution.schema.json"
+      "$ref" : "AWS_Greengrass_FunctionDefinition.Execution.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.Execution>"
     }
   }
 }

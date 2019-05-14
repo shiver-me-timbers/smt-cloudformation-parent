@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static java.lang.String.format;
-import static java.util.Collections.singletonMap;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasEntry;
@@ -97,21 +96,21 @@ public class ListTransformerTest {
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
 
         final String itemType = someString();
-        final String type = someString();
+        final Map<String, String> typeMap = mock(Map.class);
 
         final Map<String, Object> actual = new HashMap<>();
 
         // Given
         given(cloudformationProperty.getItemType()).willReturn(itemType);
         given(cloudformationProperty.isDuplicatesAllowed()).willReturn(someBoolean());
-        given(classTypeConverter.convert(resourceName, itemType)).willReturn(type);
+        given(classTypeConverter.toTypeMap(resourceName, itemType)).willReturn(typeMap);
 
         // When
         transformer.transform(resourceName, mock(CloudformationType.class), someString(), cloudformationProperty, actual);
 
         // Then
         assertThat(actual, hasEntry("type", "array"));
-        assertThat(actual, hasEntry("items", singletonMap("$ref", type)));
+        assertThat(actual, hasEntry("items", typeMap));
     }
 
     @Test

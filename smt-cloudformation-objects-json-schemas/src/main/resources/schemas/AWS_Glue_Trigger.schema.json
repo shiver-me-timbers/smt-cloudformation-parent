@@ -20,7 +20,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Glue_Trigger.Action.schema.json"
+        "$ref" : "AWS_Glue_Trigger.Action.schema.json",
+        "javaType" : "aws.Property<aws.glue.Action>"
       }
     },
     "Schedule" : {
@@ -35,7 +36,8 @@
     },
     "Predicate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-predicate",
-      "$ref" : "AWS_Glue_Trigger.Predicate.schema.json"
+      "$ref" : "AWS_Glue_Trigger.Predicate.schema.json",
+      "javaType" : "aws.Property<aws.glue.Predicate>"
     }
   }
 }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html",
   "type" : "object",
   "javaType" : "aws.cloudfront.LambdaFunctionAssociation",
+  "javaInterfaces" : [ "aws.Property<LambdaFunctionAssociation>" ],
   "properties" : {
     "EventType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-lambdafunctionassociation.html#cfn-cloudfront-distribution-lambdafunctionassociation-eventtype",

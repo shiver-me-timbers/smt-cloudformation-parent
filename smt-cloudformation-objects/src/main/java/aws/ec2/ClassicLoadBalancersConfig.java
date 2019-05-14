@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ClassicLoadBalancers"
 })
-public class ClassicLoadBalancersConfig {
+public class ClassicLoadBalancersConfig implements Property<ClassicLoadBalancersConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html#cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers
@@ -33,14 +35,14 @@ public class ClassicLoadBalancersConfig {
     @JsonProperty("ClassicLoadBalancers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html#cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers")
-    private Set<ClassicLoadBalancer> classicLoadBalancers = new LinkedHashSet<ClassicLoadBalancer>();
+    private Set<Property<ClassicLoadBalancer>> classicLoadBalancers = new LinkedHashSet<Property<ClassicLoadBalancer>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html#cfn-ec2-spotfleet-classicloadbalancersconfig-classicloadbalancers
      * 
      */
     @JsonIgnore
-    public Set<ClassicLoadBalancer> getClassicLoadBalancers() {
+    public Set<Property<ClassicLoadBalancer>> getClassicLoadBalancers() {
         return classicLoadBalancers;
     }
 
@@ -49,11 +51,11 @@ public class ClassicLoadBalancersConfig {
      * 
      */
     @JsonIgnore
-    public void setClassicLoadBalancers(Set<ClassicLoadBalancer> classicLoadBalancers) {
+    public void setClassicLoadBalancers(Set<Property<ClassicLoadBalancer>> classicLoadBalancers) {
         this.classicLoadBalancers = classicLoadBalancers;
     }
 
-    public ClassicLoadBalancersConfig withClassicLoadBalancers(Set<ClassicLoadBalancer> classicLoadBalancers) {
+    public ClassicLoadBalancersConfig withClassicLoadBalancers(Set<Property<ClassicLoadBalancer>> classicLoadBalancers) {
         this.classicLoadBalancers = classicLoadBalancers;
         return this;
     }

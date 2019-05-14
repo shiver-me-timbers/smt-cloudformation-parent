@@ -13,13 +13,15 @@
     },
     "Spec" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-spec",
-      "$ref" : "AWS_AppMesh_Mesh.MeshSpec.schema.json"
+      "$ref" : "AWS_AppMesh_Mesh.MeshSpec.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.MeshSpec>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json",
+        "javaType" : "aws.Property<aws.appmesh.TagRef>"
       }
     }
   }

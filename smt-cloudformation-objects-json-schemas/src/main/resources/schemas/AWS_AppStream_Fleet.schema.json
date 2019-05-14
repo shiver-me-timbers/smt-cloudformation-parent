@@ -13,11 +13,13 @@
     },
     "ComputeCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-computecapacity",
-      "$ref" : "AWS_AppStream_Fleet.ComputeCapacity.schema.json"
+      "$ref" : "AWS_AppStream_Fleet.ComputeCapacity.schema.json",
+      "javaType" : "aws.Property<aws.appstream.ComputeCapacity>"
     },
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-vpcconfig",
-      "$ref" : "AWS_AppStream_ImageBuilder.VpcConfig.schema.json"
+      "$ref" : "AWS_AppStream_ImageBuilder.VpcConfig.schema.json",
+      "javaType" : "aws.Property<aws.appstream.VpcConfig>"
     },
     "FleetType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-fleettype",
@@ -30,7 +32,8 @@
     },
     "DomainJoinInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-domainjoininfo",
-      "$ref" : "AWS_AppStream_Fleet.DomainJoinInfo.schema.json"
+      "$ref" : "AWS_AppStream_Fleet.DomainJoinInfo.schema.json",
+      "javaType" : "aws.Property<aws.appstream.DomainJoinInfo>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-name",
@@ -64,7 +67,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "ImageArn" : {

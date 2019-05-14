@@ -3,6 +3,7 @@ package aws.neptune;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -57,7 +58,7 @@ public class DBClusterParameterGroup {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-neptune-dbclusterparametergroup.html#cfn-neptune-dbclusterparametergroup-name
      * 
@@ -140,7 +141,7 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -149,11 +150,11 @@ public class DBClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public DBClusterParameterGroup withTags(List<Tag> tags) {
+    public DBClusterParameterGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

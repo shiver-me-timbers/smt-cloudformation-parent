@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -53,7 +54,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("Icmp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html")
-    private Icmp icmp;
+    private Property<Icmp> icmp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock
      * 
@@ -76,7 +77,7 @@ public class NetworkAclEntry {
      */
     @JsonProperty("PortRange")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html")
-    private PortRange portRange;
+    private Property<PortRange> portRange;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol
      * 
@@ -152,7 +153,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public Icmp getIcmp() {
+    public Property<Icmp> getIcmp() {
         return icmp;
     }
 
@@ -163,11 +164,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public void setIcmp(Icmp icmp) {
+    public void setIcmp(Property<Icmp> icmp) {
         this.icmp = icmp;
     }
 
-    public NetworkAclEntry withIcmp(Icmp icmp) {
+    public NetworkAclEntry withIcmp(Property<Icmp> icmp) {
         this.icmp = icmp;
         return this;
     }
@@ -225,7 +226,7 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public PortRange getPortRange() {
+    public Property<PortRange> getPortRange() {
         return portRange;
     }
 
@@ -236,11 +237,11 @@ public class NetworkAclEntry {
      * 
      */
     @JsonIgnore
-    public void setPortRange(PortRange portRange) {
+    public void setPortRange(Property<PortRange> portRange) {
         this.portRange = portRange;
     }
 
-    public NetworkAclEntry withPortRange(PortRange portRange) {
+    public NetworkAclEntry withPortRange(Property<PortRange> portRange) {
         this.portRange = portRange;
         return this;
     }

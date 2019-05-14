@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html",
   "type" : "object",
   "javaType" : "aws.glue.StorageDescriptor",
+  "javaInterfaces" : [ "aws.Property<StorageDescriptor>" ],
   "properties" : {
     "StoredAsSubDirectories" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories",
@@ -24,7 +25,8 @@
     },
     "SkewedInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-skewedinfo",
-      "$ref" : "AWS_Glue_Table.SkewedInfo.schema.json"
+      "$ref" : "AWS_Glue_Table.SkewedInfo.schema.json",
+      "javaType" : "aws.Property<aws.glue.SkewedInfo>"
     },
     "InputFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat",
@@ -44,18 +46,21 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-columns",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Glue_Partition.Column.schema.json"
+        "$ref" : "AWS_Glue_Partition.Column.schema.json",
+        "javaType" : "aws.Property<aws.glue.Column>"
       }
     },
     "SerdeInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-serdeinfo",
-      "$ref" : "AWS_Glue_Partition.SerdeInfo.schema.json"
+      "$ref" : "AWS_Glue_Partition.SerdeInfo.schema.json",
+      "javaType" : "aws.Property<aws.glue.SerdeInfo>"
     },
     "SortColumns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Glue_Table.Order.schema.json"
+        "$ref" : "AWS_Glue_Table.Order.schema.json",
+        "javaType" : "aws.Property<aws.glue.Order>"
       }
     },
     "Compressed" : {

@@ -3,6 +3,7 @@ package aws.codebuild;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VpcId",
     "SecurityGroupIds"
 })
-public class VpcConfig {
+public class VpcConfig implements Property<VpcConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-subnets

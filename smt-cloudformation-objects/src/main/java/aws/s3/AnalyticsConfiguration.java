@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StorageClassAnalysis",
     "TagFilters"
 })
-public class AnalyticsConfiguration {
+public class AnalyticsConfiguration implements Property<AnalyticsConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id
@@ -51,7 +53,7 @@ public class AnalyticsConfiguration {
      */
     @JsonProperty("StorageClassAnalysis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-storageclassanalysis.html")
-    private StorageClassAnalysis storageClassAnalysis;
+    private Property<StorageClassAnalysis> storageClassAnalysis;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-tagfilters
      * 
@@ -59,7 +61,7 @@ public class AnalyticsConfiguration {
     @JsonProperty("TagFilters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-tagfilters")
-    private Set<TagFilter> tagFilters = new LinkedHashSet<TagFilter>();
+    private Set<Property<TagFilter>> tagFilters = new LinkedHashSet<Property<TagFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id
@@ -114,7 +116,7 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonIgnore
-    public StorageClassAnalysis getStorageClassAnalysis() {
+    public Property<StorageClassAnalysis> getStorageClassAnalysis() {
         return storageClassAnalysis;
     }
 
@@ -125,11 +127,11 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonIgnore
-    public void setStorageClassAnalysis(StorageClassAnalysis storageClassAnalysis) {
+    public void setStorageClassAnalysis(Property<StorageClassAnalysis> storageClassAnalysis) {
         this.storageClassAnalysis = storageClassAnalysis;
     }
 
-    public AnalyticsConfiguration withStorageClassAnalysis(StorageClassAnalysis storageClassAnalysis) {
+    public AnalyticsConfiguration withStorageClassAnalysis(Property<StorageClassAnalysis> storageClassAnalysis) {
         this.storageClassAnalysis = storageClassAnalysis;
         return this;
     }
@@ -139,7 +141,7 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<TagFilter> getTagFilters() {
+    public Set<Property<TagFilter>> getTagFilters() {
         return tagFilters;
     }
 
@@ -148,11 +150,11 @@ public class AnalyticsConfiguration {
      * 
      */
     @JsonIgnore
-    public void setTagFilters(Set<TagFilter> tagFilters) {
+    public void setTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
     }
 
-    public AnalyticsConfiguration withTagFilters(Set<TagFilter> tagFilters) {
+    public AnalyticsConfiguration withTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.wafregional;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class IPSet {
      */
     @JsonProperty("IPSetDescriptors")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html#cfn-wafregional-ipset-ipsetdescriptors")
-    private List<IPSetDescriptor> iPSetDescriptors = new ArrayList<IPSetDescriptor>();
+    private List<Property<IPSetDescriptor>> iPSetDescriptors = new ArrayList<Property<IPSetDescriptor>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html#cfn-wafregional-ipset-name
      * 
@@ -46,7 +47,7 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public List<IPSetDescriptor> getIPSetDescriptors() {
+    public List<Property<IPSetDescriptor>> getIPSetDescriptors() {
         return iPSetDescriptors;
     }
 
@@ -55,11 +56,11 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public void setIPSetDescriptors(List<IPSetDescriptor> iPSetDescriptors) {
+    public void setIPSetDescriptors(List<Property<IPSetDescriptor>> iPSetDescriptors) {
         this.iPSetDescriptors = iPSetDescriptors;
     }
 
-    public IPSet withIPSetDescriptors(List<IPSetDescriptor> iPSetDescriptors) {
+    public IPSet withIPSetDescriptors(List<Property<IPSetDescriptor>> iPSetDescriptors) {
         this.iPSetDescriptors = iPSetDescriptors;
         return this;
     }

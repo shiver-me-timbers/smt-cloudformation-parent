@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Listeners",
     "ServiceDiscovery"
 })
-public class VirtualNodeSpec {
+public class VirtualNodeSpec implements Property<VirtualNodeSpec>
+{
 
     /**
      * Logging
@@ -36,21 +38,21 @@ public class VirtualNodeSpec {
      */
     @JsonProperty("Logging")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-logging.html")
-    private Logging logging;
+    private Property<Logging> logging;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-backends
      * 
      */
     @JsonProperty("Backends")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-backends")
-    private List<Backend> backends = new ArrayList<Backend>();
+    private List<Property<Backend>> backends = new ArrayList<Property<Backend>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-listeners
      * 
      */
     @JsonProperty("Listeners")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html#cfn-appmesh-virtualnode-virtualnodespec-listeners")
-    private List<VirtualRouterListener> listeners = new ArrayList<VirtualRouterListener>();
+    private List<Property<Listener>> listeners = new ArrayList<Property<Listener>>();
     /**
      * ServiceDiscovery
      * <p>
@@ -59,7 +61,7 @@ public class VirtualNodeSpec {
      */
     @JsonProperty("ServiceDiscovery")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html")
-    private ServiceDiscovery serviceDiscovery;
+    private Property<ServiceDiscovery> serviceDiscovery;
 
     /**
      * Logging
@@ -68,7 +70,7 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public Logging getLogging() {
+    public Property<Logging> getLogging() {
         return logging;
     }
 
@@ -79,11 +81,11 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public void setLogging(Logging logging) {
+    public void setLogging(Property<Logging> logging) {
         this.logging = logging;
     }
 
-    public VirtualNodeSpec withLogging(Logging logging) {
+    public VirtualNodeSpec withLogging(Property<Logging> logging) {
         this.logging = logging;
         return this;
     }
@@ -93,7 +95,7 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public List<Backend> getBackends() {
+    public List<Property<Backend>> getBackends() {
         return backends;
     }
 
@@ -102,11 +104,11 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public void setBackends(List<Backend> backends) {
+    public void setBackends(List<Property<Backend>> backends) {
         this.backends = backends;
     }
 
-    public VirtualNodeSpec withBackends(List<Backend> backends) {
+    public VirtualNodeSpec withBackends(List<Property<Backend>> backends) {
         this.backends = backends;
         return this;
     }
@@ -116,7 +118,7 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public List<VirtualRouterListener> getListeners() {
+    public List<Property<Listener>> getListeners() {
         return listeners;
     }
 
@@ -125,11 +127,11 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public void setListeners(List<VirtualRouterListener> listeners) {
+    public void setListeners(List<Property<Listener>> listeners) {
         this.listeners = listeners;
     }
 
-    public VirtualNodeSpec withListeners(List<VirtualRouterListener> listeners) {
+    public VirtualNodeSpec withListeners(List<Property<Listener>> listeners) {
         this.listeners = listeners;
         return this;
     }
@@ -141,7 +143,7 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public ServiceDiscovery getServiceDiscovery() {
+    public Property<ServiceDiscovery> getServiceDiscovery() {
         return serviceDiscovery;
     }
 
@@ -152,11 +154,11 @@ public class VirtualNodeSpec {
      * 
      */
     @JsonIgnore
-    public void setServiceDiscovery(ServiceDiscovery serviceDiscovery) {
+    public void setServiceDiscovery(Property<ServiceDiscovery> serviceDiscovery) {
         this.serviceDiscovery = serviceDiscovery;
     }
 
-    public VirtualNodeSpec withServiceDiscovery(ServiceDiscovery serviceDiscovery) {
+    public VirtualNodeSpec withServiceDiscovery(Property<ServiceDiscovery> serviceDiscovery) {
         this.serviceDiscovery = serviceDiscovery;
         return this;
     }

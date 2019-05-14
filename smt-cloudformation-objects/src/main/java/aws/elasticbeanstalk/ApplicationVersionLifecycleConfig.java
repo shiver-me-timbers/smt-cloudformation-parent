@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MaxAgeRule",
     "MaxCountRule"
 })
-public class ApplicationVersionLifecycleConfig {
+public class ApplicationVersionLifecycleConfig implements Property<ApplicationVersionLifecycleConfig>
+{
 
     /**
      * MaxAgeRule
@@ -32,7 +34,7 @@ public class ApplicationVersionLifecycleConfig {
      */
     @JsonProperty("MaxAgeRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxagerule.html")
-    private MaxAgeRule maxAgeRule;
+    private Property<MaxAgeRule> maxAgeRule;
     /**
      * MaxCountRule
      * <p>
@@ -41,7 +43,7 @@ public class ApplicationVersionLifecycleConfig {
      */
     @JsonProperty("MaxCountRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html")
-    private MaxCountRule maxCountRule;
+    private Property<MaxCountRule> maxCountRule;
 
     /**
      * MaxAgeRule
@@ -50,7 +52,7 @@ public class ApplicationVersionLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public MaxAgeRule getMaxAgeRule() {
+    public Property<MaxAgeRule> getMaxAgeRule() {
         return maxAgeRule;
     }
 
@@ -61,11 +63,11 @@ public class ApplicationVersionLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public void setMaxAgeRule(MaxAgeRule maxAgeRule) {
+    public void setMaxAgeRule(Property<MaxAgeRule> maxAgeRule) {
         this.maxAgeRule = maxAgeRule;
     }
 
-    public ApplicationVersionLifecycleConfig withMaxAgeRule(MaxAgeRule maxAgeRule) {
+    public ApplicationVersionLifecycleConfig withMaxAgeRule(Property<MaxAgeRule> maxAgeRule) {
         this.maxAgeRule = maxAgeRule;
         return this;
     }
@@ -77,7 +79,7 @@ public class ApplicationVersionLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public MaxCountRule getMaxCountRule() {
+    public Property<MaxCountRule> getMaxCountRule() {
         return maxCountRule;
     }
 
@@ -88,11 +90,11 @@ public class ApplicationVersionLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public void setMaxCountRule(MaxCountRule maxCountRule) {
+    public void setMaxCountRule(Property<MaxCountRule> maxCountRule) {
         this.maxCountRule = maxCountRule;
     }
 
-    public ApplicationVersionLifecycleConfig withMaxCountRule(MaxCountRule maxCountRule) {
+    public ApplicationVersionLifecycleConfig withMaxCountRule(Property<MaxCountRule> maxCountRule) {
         this.maxCountRule = maxCountRule;
         return this;
     }

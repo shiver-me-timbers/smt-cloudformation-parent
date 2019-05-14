@@ -13,7 +13,8 @@
     },
     "DeploymentConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-deploymentconfiguration",
-      "$ref" : "AWS_ECS_Service.DeploymentConfiguration.schema.json"
+      "$ref" : "AWS_ECS_Service.DeploymentConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.ecs.DeploymentConfiguration>"
     },
     "DesiredCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount",
@@ -33,19 +34,22 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_Service.LoadBalancer.schema.json"
+        "$ref" : "AWS_ECS_Service.LoadBalancer.schema.json",
+        "javaType" : "aws.Property<aws.ecs.LoadBalancer>"
       }
     },
     "NetworkConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-networkconfiguration",
-      "$ref" : "AWS_ECS_Service.NetworkConfiguration.schema.json"
+      "$ref" : "AWS_ECS_Service.NetworkConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.ecs.NetworkConfiguration>"
     },
     "PlacementConstraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_TaskDefinition.TaskDefinitionPlacementConstraint.schema.json"
+        "$ref" : "AWS_ECS_TaskDefinition.TaskDefinitionPlacementConstraint.schema.json",
+        "javaType" : "aws.Property<aws.ecs.PlacementConstraint>"
       }
     },
     "PlacementStrategies" : {
@@ -53,7 +57,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_Service.PlacementStrategy.schema.json"
+        "$ref" : "AWS_ECS_Service.PlacementStrategy.schema.json",
+        "javaType" : "aws.Property<aws.ecs.PlacementStrategy>"
       }
     },
     "PlatformVersion" : {
@@ -81,7 +86,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ECS_Service.ServiceRegistry.schema.json"
+        "$ref" : "AWS_ECS_Service.ServiceRegistry.schema.json",
+        "javaType" : "aws.Property<aws.ecs.ServiceRegistry>"
       }
     },
     "TaskDefinition" : {

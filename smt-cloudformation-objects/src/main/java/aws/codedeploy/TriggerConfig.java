@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TriggerName",
     "TriggerTargetArn"
 })
-public class TriggerConfig {
+public class TriggerConfig implements Property<TriggerConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-triggerconfig.html#cfn-codedeploy-deploymentgroup-triggerconfig-triggerevents

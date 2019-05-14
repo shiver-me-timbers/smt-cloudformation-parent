@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "VirtualService"
 })
-public class Backend {
+public class Backend implements Property<Backend>
+{
 
     /**
      * VirtualServiceBackend
@@ -31,7 +33,7 @@ public class Backend {
      */
     @JsonProperty("VirtualService")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html")
-    private VirtualServiceBackend virtualService;
+    private Property<VirtualServiceBackend> virtualService;
 
     /**
      * VirtualServiceBackend
@@ -40,7 +42,7 @@ public class Backend {
      * 
      */
     @JsonIgnore
-    public VirtualServiceBackend getVirtualService() {
+    public Property<VirtualServiceBackend> getVirtualService() {
         return virtualService;
     }
 
@@ -51,11 +53,11 @@ public class Backend {
      * 
      */
     @JsonIgnore
-    public void setVirtualService(VirtualServiceBackend virtualService) {
+    public void setVirtualService(Property<VirtualServiceBackend> virtualService) {
         this.virtualService = virtualService;
     }
 
-    public Backend withVirtualService(VirtualServiceBackend virtualService) {
+    public Backend withVirtualService(Property<VirtualServiceBackend> virtualService) {
         this.virtualService = virtualService;
         return this;
     }

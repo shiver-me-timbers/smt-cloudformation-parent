@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html",
   "type" : "object",
   "javaType" : "aws.dlm.PolicyDetails",
+  "javaInterfaces" : [ "aws.Property<PolicyDetails>" ],
   "properties" : {
     "ResourceTypes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-resourcetypes",
@@ -18,14 +19,16 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-schedules",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_DLM_LifecyclePolicy.Schedule.schema.json"
+        "$ref" : "AWS_DLM_LifecyclePolicy.Schedule.schema.json",
+        "javaType" : "aws.Property<aws.dlm.Schedule>"
       }
     },
     "TargetTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-targettags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

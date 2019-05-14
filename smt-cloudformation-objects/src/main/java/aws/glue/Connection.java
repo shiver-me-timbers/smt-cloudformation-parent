@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class Connection {
      */
     @JsonProperty("ConnectionInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html")
-    private ConnectionInput connectionInput;
+    private Property<ConnectionInput> connectionInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
@@ -48,7 +49,7 @@ public class Connection {
      * 
      */
     @JsonIgnore
-    public ConnectionInput getConnectionInput() {
+    public Property<ConnectionInput> getConnectionInput() {
         return connectionInput;
     }
 
@@ -59,11 +60,11 @@ public class Connection {
      * 
      */
     @JsonIgnore
-    public void setConnectionInput(ConnectionInput connectionInput) {
+    public void setConnectionInput(Property<ConnectionInput> connectionInput) {
         this.connectionInput = connectionInput;
     }
 
-    public Connection withConnectionInput(ConnectionInput connectionInput) {
+    public Connection withConnectionInput(Property<ConnectionInput> connectionInput) {
         this.connectionInput = connectionInput;
         return this;
     }

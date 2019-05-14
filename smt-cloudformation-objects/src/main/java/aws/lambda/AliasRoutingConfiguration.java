@@ -3,6 +3,7 @@ package aws.lambda;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "AdditionalVersionWeights"
 })
-public class AliasRoutingConfiguration {
+public class AliasRoutingConfiguration implements Property<AliasRoutingConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
@@ -33,14 +35,14 @@ public class AliasRoutingConfiguration {
     @JsonProperty("AdditionalVersionWeights")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights")
-    private Set<VersionWeight> additionalVersionWeights = new LinkedHashSet<VersionWeight>();
+    private Set<Property<VersionWeight>> additionalVersionWeights = new LinkedHashSet<Property<VersionWeight>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html#cfn-lambda-alias-aliasroutingconfiguration-additionalversionweights
      * 
      */
     @JsonIgnore
-    public Set<VersionWeight> getAdditionalVersionWeights() {
+    public Set<Property<VersionWeight>> getAdditionalVersionWeights() {
         return additionalVersionWeights;
     }
 
@@ -49,11 +51,11 @@ public class AliasRoutingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setAdditionalVersionWeights(Set<VersionWeight> additionalVersionWeights) {
+    public void setAdditionalVersionWeights(Set<Property<VersionWeight>> additionalVersionWeights) {
         this.additionalVersionWeights = additionalVersionWeights;
     }
 
-    public AliasRoutingConfiguration withAdditionalVersionWeights(Set<VersionWeight> additionalVersionWeights) {
+    public AliasRoutingConfiguration withAdditionalVersionWeights(Set<Property<VersionWeight>> additionalVersionWeights) {
         this.additionalVersionWeights = additionalVersionWeights;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "TargetGroups"
 })
-public class TargetGroupsConfig {
+public class TargetGroupsConfig implements Property<TargetGroupsConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups
@@ -33,14 +35,14 @@ public class TargetGroupsConfig {
     @JsonProperty("TargetGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups")
-    private Set<TargetGroup> targetGroups = new LinkedHashSet<TargetGroup>();
+    private Set<Property<TargetGroup>> targetGroups = new LinkedHashSet<Property<TargetGroup>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups
      * 
      */
     @JsonIgnore
-    public Set<TargetGroup> getTargetGroups() {
+    public Set<Property<TargetGroup>> getTargetGroups() {
         return targetGroups;
     }
 
@@ -49,11 +51,11 @@ public class TargetGroupsConfig {
      * 
      */
     @JsonIgnore
-    public void setTargetGroups(Set<TargetGroup> targetGroups) {
+    public void setTargetGroups(Set<Property<TargetGroup>> targetGroups) {
         this.targetGroups = targetGroups;
     }
 
-    public TargetGroupsConfig withTargetGroups(Set<TargetGroup> targetGroups) {
+    public TargetGroupsConfig withTargetGroups(Set<Property<TargetGroup>> targetGroups) {
         this.targetGroups = targetGroups;
         return this;
     }

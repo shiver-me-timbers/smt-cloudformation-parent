@@ -3,6 +3,7 @@ package aws.elasticbeanstalk;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -58,7 +59,7 @@ public class ConfigurationTemplate {
      */
     @JsonProperty("OptionSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-optionsettings")
-    private List<ConfigurationOptionSetting> optionSettings = new ArrayList<ConfigurationOptionSetting>();
+    private List<Property<ConfigurationOptionSetting>> optionSettings = new ArrayList<Property<ConfigurationOptionSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-platformarn
      * 
@@ -81,7 +82,7 @@ public class ConfigurationTemplate {
      */
     @JsonProperty("SourceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html")
-    private SourceConfiguration sourceConfiguration;
+    private Property<SourceConfiguration> sourceConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname
@@ -157,7 +158,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public List<ConfigurationOptionSetting> getOptionSettings() {
+    public List<Property<ConfigurationOptionSetting>> getOptionSettings() {
         return optionSettings;
     }
 
@@ -166,11 +167,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public void setOptionSettings(List<ConfigurationOptionSetting> optionSettings) {
+    public void setOptionSettings(List<Property<ConfigurationOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public ConfigurationTemplate withOptionSettings(List<ConfigurationOptionSetting> optionSettings) {
+    public ConfigurationTemplate withOptionSettings(List<Property<ConfigurationOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }
@@ -228,7 +229,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public SourceConfiguration getSourceConfiguration() {
+    public Property<SourceConfiguration> getSourceConfiguration() {
         return sourceConfiguration;
     }
 
@@ -239,11 +240,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public void setSourceConfiguration(SourceConfiguration sourceConfiguration) {
+    public void setSourceConfiguration(Property<SourceConfiguration> sourceConfiguration) {
         this.sourceConfiguration = sourceConfiguration;
     }
 
-    public ConfigurationTemplate withSourceConfiguration(SourceConfiguration sourceConfiguration) {
+    public ConfigurationTemplate withSourceConfiguration(Property<SourceConfiguration> sourceConfiguration) {
         this.sourceConfiguration = sourceConfiguration;
         return this;
     }

@@ -8,7 +8,8 @@
   "properties" : {
     "AliasTarget" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-aliastarget",
-      "$ref" : "AWS_Route53_RecordSetGroup.AliasTarget.schema.json"
+      "$ref" : "AWS_Route53_RecordSetGroup.AliasTarget.schema.json",
+      "javaType" : "aws.Property<aws.route53.AliasTarget>"
     },
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment",
@@ -22,7 +23,8 @@
     },
     "GeoLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-geolocation",
-      "$ref" : "AWS_Route53_RecordSet.GeoLocation.schema.json"
+      "$ref" : "AWS_Route53_RecordSet.GeoLocation.schema.json",
+      "javaType" : "aws.Property<aws.route53.GeoLocation>"
     },
     "HealthCheckId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid",

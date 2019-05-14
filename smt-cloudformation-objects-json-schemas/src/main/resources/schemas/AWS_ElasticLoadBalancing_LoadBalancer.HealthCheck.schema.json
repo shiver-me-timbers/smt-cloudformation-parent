@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html",
   "type" : "object",
   "javaType" : "aws.elasticloadbalancing.HealthCheck",
+  "javaInterfaces" : [ "aws.Property<HealthCheck>" ],
   "properties" : {
     "HealthyThreshold" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html#cfn-elb-healthcheck-healthythreshold",

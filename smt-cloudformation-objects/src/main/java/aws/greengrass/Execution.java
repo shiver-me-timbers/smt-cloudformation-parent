@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "IsolationMode",
     "RunAs"
 })
-public class Execution {
+public class Execution implements Property<Execution>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-execution.html#cfn-greengrass-functiondefinition-execution-isolationmode
@@ -39,7 +41,7 @@ public class Execution {
      */
     @JsonProperty("RunAs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-runas.html")
-    private RunAs runAs;
+    private Property<RunAs> runAs;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-execution.html#cfn-greengrass-functiondefinition-execution-isolationmode
@@ -71,7 +73,7 @@ public class Execution {
      * 
      */
     @JsonIgnore
-    public RunAs getRunAs() {
+    public Property<RunAs> getRunAs() {
         return runAs;
     }
 
@@ -82,11 +84,11 @@ public class Execution {
      * 
      */
     @JsonIgnore
-    public void setRunAs(RunAs runAs) {
+    public void setRunAs(Property<RunAs> runAs) {
         this.runAs = runAs;
     }
 
-    public Execution withRunAs(RunAs runAs) {
+    public Execution withRunAs(Property<RunAs> runAs) {
         this.runAs = runAs;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.sagemaker;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -35,7 +36,7 @@ public class EndpointConfig {
      */
     @JsonProperty("ProductionVariants")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants")
-    private List<ProductionVariant> productionVariants = new ArrayList<ProductionVariant>();
+    private List<Property<ProductionVariant>> productionVariants = new ArrayList<Property<ProductionVariant>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-kmskeyid
      * 
@@ -56,14 +57,14 @@ public class EndpointConfig {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-endpointconfig.html#cfn-sagemaker-endpointconfig-productionvariants
      * 
      */
     @JsonIgnore
-    public List<ProductionVariant> getProductionVariants() {
+    public List<Property<ProductionVariant>> getProductionVariants() {
         return productionVariants;
     }
 
@@ -72,11 +73,11 @@ public class EndpointConfig {
      * 
      */
     @JsonIgnore
-    public void setProductionVariants(List<ProductionVariant> productionVariants) {
+    public void setProductionVariants(List<Property<ProductionVariant>> productionVariants) {
         this.productionVariants = productionVariants;
     }
 
-    public EndpointConfig withProductionVariants(List<ProductionVariant> productionVariants) {
+    public EndpointConfig withProductionVariants(List<Property<ProductionVariant>> productionVariants) {
         this.productionVariants = productionVariants;
         return this;
     }
@@ -132,7 +133,7 @@ public class EndpointConfig {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -141,11 +142,11 @@ public class EndpointConfig {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public EndpointConfig withTags(List<Tag> tags) {
+    public EndpointConfig withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

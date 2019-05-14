@@ -3,6 +3,7 @@ package aws.codebuild;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "FilterGroups",
     "Webhook"
 })
-public class ProjectTriggers {
+public class ProjectTriggers implements Property<ProjectTriggers>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-filtergroups
@@ -32,7 +34,7 @@ public class ProjectTriggers {
      */
     @JsonProperty("FilterGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-filtergroups")
-    private List<FilterGroup> filterGroups = new ArrayList<FilterGroup>();
+    private List<Property<FilterGroup>> filterGroups = new ArrayList<Property<FilterGroup>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook
      * 
@@ -46,7 +48,7 @@ public class ProjectTriggers {
      * 
      */
     @JsonIgnore
-    public List<FilterGroup> getFilterGroups() {
+    public List<Property<FilterGroup>> getFilterGroups() {
         return filterGroups;
     }
 
@@ -55,11 +57,11 @@ public class ProjectTriggers {
      * 
      */
     @JsonIgnore
-    public void setFilterGroups(List<FilterGroup> filterGroups) {
+    public void setFilterGroups(List<Property<FilterGroup>> filterGroups) {
         this.filterGroups = filterGroups;
     }
 
-    public ProjectTriggers withFilterGroups(List<FilterGroup> filterGroups) {
+    public ProjectTriggers withFilterGroups(List<Property<FilterGroup>> filterGroups) {
         this.filterGroups = filterGroups;
         return this;
     }

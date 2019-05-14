@@ -3,6 +3,7 @@ package aws.datapipeline;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Attributes",
     "Id"
 })
-public class ParameterObject {
+public class ParameterObject implements Property<ParameterObject>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html#cfn-datapipeline-pipeline-parameterobjects-attributes
@@ -32,7 +34,7 @@ public class ParameterObject {
      */
     @JsonProperty("Attributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html#cfn-datapipeline-pipeline-parameterobjects-attributes")
-    private List<ParameterAttribute> attributes = new ArrayList<ParameterAttribute>();
+    private List<Property<ParameterAttribute>> attributes = new ArrayList<Property<ParameterAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html#cfn-datapipeline-pipeline-parameterobjects-id
      * 
@@ -46,7 +48,7 @@ public class ParameterObject {
      * 
      */
     @JsonIgnore
-    public List<ParameterAttribute> getAttributes() {
+    public List<Property<ParameterAttribute>> getAttributes() {
         return attributes;
     }
 
@@ -55,11 +57,11 @@ public class ParameterObject {
      * 
      */
     @JsonIgnore
-    public void setAttributes(List<ParameterAttribute> attributes) {
+    public void setAttributes(List<Property<ParameterAttribute>> attributes) {
         this.attributes = attributes;
     }
 
-    public ParameterObject withAttributes(List<ParameterAttribute> attributes) {
+    public ParameterObject withAttributes(List<Property<ParameterAttribute>> attributes) {
         this.attributes = attributes;
         return this;
     }

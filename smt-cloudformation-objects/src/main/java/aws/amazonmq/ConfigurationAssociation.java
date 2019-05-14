@@ -1,6 +1,7 @@
 
 package aws.amazonmq;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class ConfigurationAssociation {
      */
     @JsonProperty("Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html")
-    private ConfigurationId configuration;
+    private Property<ConfigurationId> configuration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-broker
@@ -71,7 +72,7 @@ public class ConfigurationAssociation {
      * 
      */
     @JsonIgnore
-    public ConfigurationId getConfiguration() {
+    public Property<ConfigurationId> getConfiguration() {
         return configuration;
     }
 
@@ -82,11 +83,11 @@ public class ConfigurationAssociation {
      * 
      */
     @JsonIgnore
-    public void setConfiguration(ConfigurationId configuration) {
+    public void setConfiguration(Property<ConfigurationId> configuration) {
         this.configuration = configuration;
     }
 
-    public ConfigurationAssociation withConfiguration(ConfigurationId configuration) {
+    public ConfigurationAssociation withConfiguration(Property<ConfigurationId> configuration) {
         this.configuration = configuration;
         return this;
     }

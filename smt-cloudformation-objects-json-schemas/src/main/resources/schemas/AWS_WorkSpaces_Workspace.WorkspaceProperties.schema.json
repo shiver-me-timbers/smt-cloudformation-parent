@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html",
   "type" : "object",
   "javaType" : "aws.workspaces.WorkspaceProperties",
+  "javaInterfaces" : [ "aws.Property<WorkspaceProperties>" ],
   "properties" : {
     "ComputeTypeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-computetypename",

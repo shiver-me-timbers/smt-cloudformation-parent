@@ -13,7 +13,8 @@
     },
     "HadoopJarStep" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-hadoopjarstep",
-      "$ref" : "AWS_EMR_Step.HadoopJarStepConfig.schema.json"
+      "$ref" : "AWS_EMR_Step.HadoopJarStepConfig.schema.json",
+      "javaType" : "aws.Property<aws.emr.HadoopJarStepConfig>"
     },
     "JobFlowId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-jobflowid",

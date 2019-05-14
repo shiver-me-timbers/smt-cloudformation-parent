@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -35,14 +36,14 @@ public class StreamingDistribution {
      */
     @JsonProperty("StreamingDistributionConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html")
-    private StreamingDistributionConfig streamingDistributionConfig;
+    private Property<StreamingDistributionConfig> streamingDistributionConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * StreamingDistributionConfig
@@ -51,7 +52,7 @@ public class StreamingDistribution {
      * 
      */
     @JsonIgnore
-    public StreamingDistributionConfig getStreamingDistributionConfig() {
+    public Property<StreamingDistributionConfig> getStreamingDistributionConfig() {
         return streamingDistributionConfig;
     }
 
@@ -62,11 +63,11 @@ public class StreamingDistribution {
      * 
      */
     @JsonIgnore
-    public void setStreamingDistributionConfig(StreamingDistributionConfig streamingDistributionConfig) {
+    public void setStreamingDistributionConfig(Property<StreamingDistributionConfig> streamingDistributionConfig) {
         this.streamingDistributionConfig = streamingDistributionConfig;
     }
 
-    public StreamingDistribution withStreamingDistributionConfig(StreamingDistributionConfig streamingDistributionConfig) {
+    public StreamingDistribution withStreamingDistributionConfig(Property<StreamingDistributionConfig> streamingDistributionConfig) {
         this.streamingDistributionConfig = streamingDistributionConfig;
         return this;
     }
@@ -76,7 +77,7 @@ public class StreamingDistribution {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -85,11 +86,11 @@ public class StreamingDistribution {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public StreamingDistribution withTags(List<Tag> tags) {
+    public StreamingDistribution withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

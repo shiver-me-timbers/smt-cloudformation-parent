@@ -3,6 +3,7 @@ package aws.servicediscovery;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RoutingPolicy",
     "NamespaceId"
 })
-public class DnsConfig {
+public class DnsConfig implements Property<DnsConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords
@@ -33,7 +35,7 @@ public class DnsConfig {
      */
     @JsonProperty("DnsRecords")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords")
-    private List<DnsRecord> dnsRecords = new ArrayList<DnsRecord>();
+    private List<Property<DnsRecord>> dnsRecords = new ArrayList<Property<DnsRecord>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-routingpolicy
      * 
@@ -54,7 +56,7 @@ public class DnsConfig {
      * 
      */
     @JsonIgnore
-    public List<DnsRecord> getDnsRecords() {
+    public List<Property<DnsRecord>> getDnsRecords() {
         return dnsRecords;
     }
 
@@ -63,11 +65,11 @@ public class DnsConfig {
      * 
      */
     @JsonIgnore
-    public void setDnsRecords(List<DnsRecord> dnsRecords) {
+    public void setDnsRecords(List<Property<DnsRecord>> dnsRecords) {
         this.dnsRecords = dnsRecords;
     }
 
-    public DnsConfig withDnsRecords(List<DnsRecord> dnsRecords) {
+    public DnsConfig withDnsRecords(List<Property<DnsRecord>> dnsRecords) {
         this.dnsRecords = dnsRecords;
         return this;
     }

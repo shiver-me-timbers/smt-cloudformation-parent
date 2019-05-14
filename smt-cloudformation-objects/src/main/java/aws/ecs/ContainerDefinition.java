@@ -4,6 +4,7 @@ package aws.ecs;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -53,7 +54,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VolumesFrom",
     "WorkingDirectory"
 })
-public class ContainerDefinition {
+public class ContainerDefinition implements Property<ContainerDefinition>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command
@@ -123,7 +125,7 @@ public class ContainerDefinition {
     @JsonProperty("Environment")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-environment")
-    private Set<KeyValuePair> environment = new LinkedHashSet<KeyValuePair>();
+    private Set<Property<KeyValuePair>> environment = new LinkedHashSet<Property<KeyValuePair>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-essential
      * 
@@ -138,7 +140,7 @@ public class ContainerDefinition {
     @JsonProperty("ExtraHosts")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-extrahosts")
-    private Set<HostEntry> extraHosts = new LinkedHashSet<HostEntry>();
+    private Set<Property<HostEntry>> extraHosts = new LinkedHashSet<Property<HostEntry>>();
     /**
      * HealthCheck
      * <p>
@@ -147,7 +149,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("HealthCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html")
-    private HealthCheck healthCheck;
+    private Property<HealthCheck> healthCheck;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname
      * 
@@ -178,7 +180,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("LinuxParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html")
-    private LinuxParameters linuxParameters;
+    private Property<LinuxParameters> linuxParameters;
     /**
      * LogConfiguration
      * <p>
@@ -187,7 +189,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("LogConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html")
-    private LogConfiguration logConfiguration;
+    private Property<LogConfiguration> logConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory
      * 
@@ -209,7 +211,7 @@ public class ContainerDefinition {
     @JsonProperty("MountPoints")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints")
-    private Set<MountPoint> mountPoints = new LinkedHashSet<MountPoint>();
+    private Set<Property<MountPoint>> mountPoints = new LinkedHashSet<Property<MountPoint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-name
      * 
@@ -224,7 +226,7 @@ public class ContainerDefinition {
     @JsonProperty("PortMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-portmappings")
-    private Set<PortMapping> portMappings = new LinkedHashSet<PortMapping>();
+    private Set<Property<PortMapping>> portMappings = new LinkedHashSet<Property<PortMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-privileged
      * 
@@ -247,7 +249,7 @@ public class ContainerDefinition {
      */
     @JsonProperty("RepositoryCredentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-repositorycredentials.html")
-    private RepositoryCredentials repositoryCredentials;
+    private Property<RepositoryCredentials> repositoryCredentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits
      * 
@@ -255,7 +257,7 @@ public class ContainerDefinition {
     @JsonProperty("Ulimits")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits")
-    private Set<Ulimit> ulimits = new LinkedHashSet<Ulimit>();
+    private Set<Property<Ulimit>> ulimits = new LinkedHashSet<Property<Ulimit>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-user
      * 
@@ -270,7 +272,7 @@ public class ContainerDefinition {
     @JsonProperty("VolumesFrom")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom")
-    private Set<VolumeFrom> volumesFrom = new LinkedHashSet<VolumeFrom>();
+    private Set<Property<VolumeFrom>> volumesFrom = new LinkedHashSet<Property<VolumeFrom>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-workingdirectory
      * 
@@ -468,7 +470,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<KeyValuePair> getEnvironment() {
+    public Set<Property<KeyValuePair>> getEnvironment() {
         return environment;
     }
 
@@ -477,11 +479,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Set<KeyValuePair> environment) {
+    public void setEnvironment(Set<Property<KeyValuePair>> environment) {
         this.environment = environment;
     }
 
-    public ContainerDefinition withEnvironment(Set<KeyValuePair> environment) {
+    public ContainerDefinition withEnvironment(Set<Property<KeyValuePair>> environment) {
         this.environment = environment;
         return this;
     }
@@ -514,7 +516,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<HostEntry> getExtraHosts() {
+    public Set<Property<HostEntry>> getExtraHosts() {
         return extraHosts;
     }
 
@@ -523,11 +525,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setExtraHosts(Set<HostEntry> extraHosts) {
+    public void setExtraHosts(Set<Property<HostEntry>> extraHosts) {
         this.extraHosts = extraHosts;
     }
 
-    public ContainerDefinition withExtraHosts(Set<HostEntry> extraHosts) {
+    public ContainerDefinition withExtraHosts(Set<Property<HostEntry>> extraHosts) {
         this.extraHosts = extraHosts;
         return this;
     }
@@ -539,7 +541,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public HealthCheck getHealthCheck() {
+    public Property<HealthCheck> getHealthCheck() {
         return healthCheck;
     }
 
@@ -550,11 +552,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setHealthCheck(HealthCheck healthCheck) {
+    public void setHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
     }
 
-    public ContainerDefinition withHealthCheck(HealthCheck healthCheck) {
+    public ContainerDefinition withHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
         return this;
     }
@@ -635,7 +637,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public LinuxParameters getLinuxParameters() {
+    public Property<LinuxParameters> getLinuxParameters() {
         return linuxParameters;
     }
 
@@ -646,11 +648,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setLinuxParameters(LinuxParameters linuxParameters) {
+    public void setLinuxParameters(Property<LinuxParameters> linuxParameters) {
         this.linuxParameters = linuxParameters;
     }
 
-    public ContainerDefinition withLinuxParameters(LinuxParameters linuxParameters) {
+    public ContainerDefinition withLinuxParameters(Property<LinuxParameters> linuxParameters) {
         this.linuxParameters = linuxParameters;
         return this;
     }
@@ -662,7 +664,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public LogConfiguration getLogConfiguration() {
+    public Property<LogConfiguration> getLogConfiguration() {
         return logConfiguration;
     }
 
@@ -673,11 +675,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setLogConfiguration(LogConfiguration logConfiguration) {
+    public void setLogConfiguration(Property<LogConfiguration> logConfiguration) {
         this.logConfiguration = logConfiguration;
     }
 
-    public ContainerDefinition withLogConfiguration(LogConfiguration logConfiguration) {
+    public ContainerDefinition withLogConfiguration(Property<LogConfiguration> logConfiguration) {
         this.logConfiguration = logConfiguration;
         return this;
     }
@@ -733,7 +735,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<MountPoint> getMountPoints() {
+    public Set<Property<MountPoint>> getMountPoints() {
         return mountPoints;
     }
 
@@ -742,11 +744,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setMountPoints(Set<MountPoint> mountPoints) {
+    public void setMountPoints(Set<Property<MountPoint>> mountPoints) {
         this.mountPoints = mountPoints;
     }
 
-    public ContainerDefinition withMountPoints(Set<MountPoint> mountPoints) {
+    public ContainerDefinition withMountPoints(Set<Property<MountPoint>> mountPoints) {
         this.mountPoints = mountPoints;
         return this;
     }
@@ -779,7 +781,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<PortMapping> getPortMappings() {
+    public Set<Property<PortMapping>> getPortMappings() {
         return portMappings;
     }
 
@@ -788,11 +790,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setPortMappings(Set<PortMapping> portMappings) {
+    public void setPortMappings(Set<Property<PortMapping>> portMappings) {
         this.portMappings = portMappings;
     }
 
-    public ContainerDefinition withPortMappings(Set<PortMapping> portMappings) {
+    public ContainerDefinition withPortMappings(Set<Property<PortMapping>> portMappings) {
         this.portMappings = portMappings;
         return this;
     }
@@ -850,7 +852,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public RepositoryCredentials getRepositoryCredentials() {
+    public Property<RepositoryCredentials> getRepositoryCredentials() {
         return repositoryCredentials;
     }
 
@@ -861,11 +863,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setRepositoryCredentials(RepositoryCredentials repositoryCredentials) {
+    public void setRepositoryCredentials(Property<RepositoryCredentials> repositoryCredentials) {
         this.repositoryCredentials = repositoryCredentials;
     }
 
-    public ContainerDefinition withRepositoryCredentials(RepositoryCredentials repositoryCredentials) {
+    public ContainerDefinition withRepositoryCredentials(Property<RepositoryCredentials> repositoryCredentials) {
         this.repositoryCredentials = repositoryCredentials;
         return this;
     }
@@ -875,7 +877,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<Ulimit> getUlimits() {
+    public Set<Property<Ulimit>> getUlimits() {
         return ulimits;
     }
 
@@ -884,11 +886,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setUlimits(Set<Ulimit> ulimits) {
+    public void setUlimits(Set<Property<Ulimit>> ulimits) {
         this.ulimits = ulimits;
     }
 
-    public ContainerDefinition withUlimits(Set<Ulimit> ulimits) {
+    public ContainerDefinition withUlimits(Set<Property<Ulimit>> ulimits) {
         this.ulimits = ulimits;
         return this;
     }
@@ -921,7 +923,7 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public Set<VolumeFrom> getVolumesFrom() {
+    public Set<Property<VolumeFrom>> getVolumesFrom() {
         return volumesFrom;
     }
 
@@ -930,11 +932,11 @@ public class ContainerDefinition {
      * 
      */
     @JsonIgnore
-    public void setVolumesFrom(Set<VolumeFrom> volumesFrom) {
+    public void setVolumesFrom(Set<Property<VolumeFrom>> volumesFrom) {
         this.volumesFrom = volumesFrom;
     }
 
-    public ContainerDefinition withVolumesFrom(Set<VolumeFrom> volumesFrom) {
+    public ContainerDefinition withVolumesFrom(Set<Property<VolumeFrom>> volumesFrom) {
         this.volumesFrom = volumesFrom;
         return this;
     }

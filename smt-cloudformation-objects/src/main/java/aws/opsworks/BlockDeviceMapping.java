@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NoDevice",
     "VirtualName"
 })
-public class BlockDeviceMapping {
+public class BlockDeviceMapping implements Property<BlockDeviceMapping>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename
@@ -41,7 +43,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("Ebs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-ebsblockdevice.html")
-    private EbsBlockDevice ebs;
+    private Property<EbsBlockDevice> ebs;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-nodevice
      * 
@@ -87,7 +89,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public EbsBlockDevice getEbs() {
+    public Property<EbsBlockDevice> getEbs() {
         return ebs;
     }
 
@@ -98,11 +100,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public void setEbs(EbsBlockDevice ebs) {
+    public void setEbs(Property<EbsBlockDevice> ebs) {
         this.ebs = ebs;
     }
 
-    public BlockDeviceMapping withEbs(EbsBlockDevice ebs) {
+    public BlockDeviceMapping withEbs(Property<EbsBlockDevice> ebs) {
         this.ebs = ebs;
         return this;
     }

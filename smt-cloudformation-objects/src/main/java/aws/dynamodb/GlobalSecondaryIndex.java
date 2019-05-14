@@ -3,6 +3,7 @@ package aws.dynamodb;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Projection",
     "ProvisionedThroughput"
 })
-public class GlobalSecondaryIndex {
+public class GlobalSecondaryIndex implements Property<GlobalSecondaryIndex>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname
@@ -43,7 +45,7 @@ public class GlobalSecondaryIndex {
     @JsonProperty("KeySchema")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-keyschema")
-    private Set<KeySchema> keySchema = new LinkedHashSet<KeySchema>();
+    private Set<Property<KeySchema>> keySchema = new LinkedHashSet<Property<KeySchema>>();
     /**
      * Projection
      * <p>
@@ -52,7 +54,7 @@ public class GlobalSecondaryIndex {
      */
     @JsonProperty("Projection")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html")
-    private Projection projection;
+    private Property<Projection> projection;
     /**
      * ProvisionedThroughput
      * <p>
@@ -61,7 +63,7 @@ public class GlobalSecondaryIndex {
      */
     @JsonProperty("ProvisionedThroughput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html")
-    private ProvisionedThroughput provisionedThroughput;
+    private Property<ProvisionedThroughput> provisionedThroughput;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html#cfn-dynamodb-gsi-indexname
@@ -91,7 +93,7 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public Set<KeySchema> getKeySchema() {
+    public Set<Property<KeySchema>> getKeySchema() {
         return keySchema;
     }
 
@@ -100,11 +102,11 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public void setKeySchema(Set<KeySchema> keySchema) {
+    public void setKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
     }
 
-    public GlobalSecondaryIndex withKeySchema(Set<KeySchema> keySchema) {
+    public GlobalSecondaryIndex withKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
         return this;
     }
@@ -116,7 +118,7 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public Projection getProjection() {
+    public Property<Projection> getProjection() {
         return projection;
     }
 
@@ -127,11 +129,11 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public void setProjection(Projection projection) {
+    public void setProjection(Property<Projection> projection) {
         this.projection = projection;
     }
 
-    public GlobalSecondaryIndex withProjection(Projection projection) {
+    public GlobalSecondaryIndex withProjection(Property<Projection> projection) {
         this.projection = projection;
         return this;
     }
@@ -143,7 +145,7 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public ProvisionedThroughput getProvisionedThroughput() {
+    public Property<ProvisionedThroughput> getProvisionedThroughput() {
         return provisionedThroughput;
     }
 
@@ -154,11 +156,11 @@ public class GlobalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public void setProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
+    public void setProvisionedThroughput(Property<ProvisionedThroughput> provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
     }
 
-    public GlobalSecondaryIndex withProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
+    public GlobalSecondaryIndex withProvisionedThroughput(Property<ProvisionedThroughput> provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
         return this;
     }

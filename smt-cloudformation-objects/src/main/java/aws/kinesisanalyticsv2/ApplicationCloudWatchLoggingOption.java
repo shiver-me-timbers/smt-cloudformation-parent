@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class ApplicationCloudWatchLoggingOption {
      */
     @JsonProperty("CloudWatchLoggingOption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html")
-    private CloudWatchLoggingOption cloudWatchLoggingOption;
+    private Property<CloudWatchLoggingOption> cloudWatchLoggingOption;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-applicationname
@@ -71,7 +72,7 @@ public class ApplicationCloudWatchLoggingOption {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOption getCloudWatchLoggingOption() {
+    public Property<CloudWatchLoggingOption> getCloudWatchLoggingOption() {
         return cloudWatchLoggingOption;
     }
 
@@ -82,11 +83,11 @@ public class ApplicationCloudWatchLoggingOption {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOption(CloudWatchLoggingOption cloudWatchLoggingOption) {
+    public void setCloudWatchLoggingOption(Property<CloudWatchLoggingOption> cloudWatchLoggingOption) {
         this.cloudWatchLoggingOption = cloudWatchLoggingOption;
     }
 
-    public ApplicationCloudWatchLoggingOption withCloudWatchLoggingOption(CloudWatchLoggingOption cloudWatchLoggingOption) {
+    public ApplicationCloudWatchLoggingOption withCloudWatchLoggingOption(Property<CloudWatchLoggingOption> cloudWatchLoggingOption) {
         this.cloudWatchLoggingOption = cloudWatchLoggingOption;
         return this;
     }

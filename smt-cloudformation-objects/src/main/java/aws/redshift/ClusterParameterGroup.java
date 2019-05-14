@@ -3,6 +3,7 @@ package aws.redshift;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -49,14 +50,14 @@ public class ClusterParameterGroup {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parameters")
-    private List<Parameter> parameters = new ArrayList<Parameter>();
+    private List<Property<Parameter>> parameters = new ArrayList<Property<Parameter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-description
@@ -109,7 +110,7 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public List<Parameter> getParameters() {
+    public List<Property<Parameter>> getParameters() {
         return parameters;
     }
 
@@ -118,11 +119,11 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setParameters(List<Parameter> parameters) {
+    public void setParameters(List<Property<Parameter>> parameters) {
         this.parameters = parameters;
     }
 
-    public ClusterParameterGroup withParameters(List<Parameter> parameters) {
+    public ClusterParameterGroup withParameters(List<Property<Parameter>> parameters) {
         this.parameters = parameters;
         return this;
     }
@@ -132,7 +133,7 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -141,11 +142,11 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public ClusterParameterGroup withTags(List<Tag> tags) {
+    public ClusterParameterGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

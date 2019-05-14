@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html",
   "type" : "object",
   "javaType" : "aws.kinesisfirehose.RedshiftDestinationConfiguration",
+  "javaInterfaces" : [ "aws.Property<RedshiftDestinationConfiguration>" ],
   "properties" : {
     "CloudWatchLoggingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-cloudwatchloggingoptions",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.CloudWatchLoggingOptions>"
     },
     "ClusterJDBCURL" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-clusterjdbcurl",
@@ -17,7 +19,8 @@
     },
     "CopyCommand" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-copycommand",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CopyCommand.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CopyCommand.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.CopyCommand>"
     },
     "Password" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-password",
@@ -26,7 +29,8 @@
     },
     "ProcessingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-processingconfiguration",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.ProcessingConfiguration>"
     },
     "RoleARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn",
@@ -35,7 +39,8 @@
     },
     "S3Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-s3configuration",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.S3DestinationConfiguration>"
     },
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username",

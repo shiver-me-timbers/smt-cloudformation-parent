@@ -1,6 +1,7 @@
 
 package aws.cloudwatch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MetricStat",
     "ReturnData"
 })
-public class MetricDataQuery {
+public class MetricDataQuery implements Property<MetricDataQuery>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-expression
@@ -56,7 +58,7 @@ public class MetricDataQuery {
      */
     @JsonProperty("MetricStat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html")
-    private MetricStat metricStat;
+    private Property<MetricStat> metricStat;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricdataquery.html#cfn-cloudwatch-alarm-metricdataquery-returndata
      * 
@@ -141,7 +143,7 @@ public class MetricDataQuery {
      * 
      */
     @JsonIgnore
-    public MetricStat getMetricStat() {
+    public Property<MetricStat> getMetricStat() {
         return metricStat;
     }
 
@@ -152,11 +154,11 @@ public class MetricDataQuery {
      * 
      */
     @JsonIgnore
-    public void setMetricStat(MetricStat metricStat) {
+    public void setMetricStat(Property<MetricStat> metricStat) {
         this.metricStat = metricStat;
     }
 
-    public MetricDataQuery withMetricStat(MetricStat metricStat) {
+    public MetricDataQuery withMetricStat(Property<MetricStat> metricStat) {
         this.metricStat = metricStat;
         return this;
     }

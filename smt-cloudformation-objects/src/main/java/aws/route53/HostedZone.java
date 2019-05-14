@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,14 +38,14 @@ public class HostedZone {
      */
     @JsonProperty("HostedZoneConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html")
-    private HostedZoneConfig hostedZoneConfig;
+    private Property<HostedZoneConfig> hostedZoneConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzonetags
      * 
      */
     @JsonProperty("HostedZoneTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-hostedzonetags")
-    private List<HostedZoneTag> hostedZoneTags = new ArrayList<HostedZoneTag>();
+    private List<Property<HostedZoneTag>> hostedZoneTags = new ArrayList<Property<HostedZoneTag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-name
      * 
@@ -60,14 +61,14 @@ public class HostedZone {
      */
     @JsonProperty("QueryLoggingConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html")
-    private QueryLoggingConfig queryLoggingConfig;
+    private Property<QueryLoggingConfig> queryLoggingConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-vpcs
      * 
      */
     @JsonProperty("VPCs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone.html#cfn-route53-hostedzone-vpcs")
-    private List<VPC> vPCs = new ArrayList<VPC>();
+    private List<Property<VPC>> vPCs = new ArrayList<Property<VPC>>();
 
     /**
      * HostedZoneConfig
@@ -76,7 +77,7 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public HostedZoneConfig getHostedZoneConfig() {
+    public Property<HostedZoneConfig> getHostedZoneConfig() {
         return hostedZoneConfig;
     }
 
@@ -87,11 +88,11 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public void setHostedZoneConfig(HostedZoneConfig hostedZoneConfig) {
+    public void setHostedZoneConfig(Property<HostedZoneConfig> hostedZoneConfig) {
         this.hostedZoneConfig = hostedZoneConfig;
     }
 
-    public HostedZone withHostedZoneConfig(HostedZoneConfig hostedZoneConfig) {
+    public HostedZone withHostedZoneConfig(Property<HostedZoneConfig> hostedZoneConfig) {
         this.hostedZoneConfig = hostedZoneConfig;
         return this;
     }
@@ -101,7 +102,7 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public List<HostedZoneTag> getHostedZoneTags() {
+    public List<Property<HostedZoneTag>> getHostedZoneTags() {
         return hostedZoneTags;
     }
 
@@ -110,11 +111,11 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public void setHostedZoneTags(List<HostedZoneTag> hostedZoneTags) {
+    public void setHostedZoneTags(List<Property<HostedZoneTag>> hostedZoneTags) {
         this.hostedZoneTags = hostedZoneTags;
     }
 
-    public HostedZone withHostedZoneTags(List<HostedZoneTag> hostedZoneTags) {
+    public HostedZone withHostedZoneTags(List<Property<HostedZoneTag>> hostedZoneTags) {
         this.hostedZoneTags = hostedZoneTags;
         return this;
     }
@@ -149,7 +150,7 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public QueryLoggingConfig getQueryLoggingConfig() {
+    public Property<QueryLoggingConfig> getQueryLoggingConfig() {
         return queryLoggingConfig;
     }
 
@@ -160,11 +161,11 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public void setQueryLoggingConfig(QueryLoggingConfig queryLoggingConfig) {
+    public void setQueryLoggingConfig(Property<QueryLoggingConfig> queryLoggingConfig) {
         this.queryLoggingConfig = queryLoggingConfig;
     }
 
-    public HostedZone withQueryLoggingConfig(QueryLoggingConfig queryLoggingConfig) {
+    public HostedZone withQueryLoggingConfig(Property<QueryLoggingConfig> queryLoggingConfig) {
         this.queryLoggingConfig = queryLoggingConfig;
         return this;
     }
@@ -174,7 +175,7 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public List<VPC> getVPCs() {
+    public List<Property<VPC>> getVPCs() {
         return vPCs;
     }
 
@@ -183,11 +184,11 @@ public class HostedZone {
      * 
      */
     @JsonIgnore
-    public void setVPCs(List<VPC> vPCs) {
+    public void setVPCs(List<Property<VPC>> vPCs) {
         this.vPCs = vPCs;
     }
 
-    public HostedZone withVPCs(List<VPC> vPCs) {
+    public HostedZone withVPCs(List<Property<VPC>> vPCs) {
         this.vPCs = vPCs;
         return this;
     }

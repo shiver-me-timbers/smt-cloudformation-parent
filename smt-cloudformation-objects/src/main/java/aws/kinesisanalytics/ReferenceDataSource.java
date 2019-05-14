@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TableName",
     "S3ReferenceDataSource"
 })
-public class ReferenceDataSource {
+public class ReferenceDataSource implements Property<ReferenceDataSource>
+{
 
     /**
      * ReferenceSchema
@@ -33,7 +35,7 @@ public class ReferenceDataSource {
      */
     @JsonProperty("ReferenceSchema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html")
-    private ReferenceSchema referenceSchema;
+    private Property<ReferenceSchema> referenceSchema;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-referencedatasource-tablename
      * 
@@ -49,7 +51,7 @@ public class ReferenceDataSource {
      */
     @JsonProperty("S3ReferenceDataSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html")
-    private S3ReferenceDataSource s3ReferenceDataSource;
+    private Property<S3ReferenceDataSource> s3ReferenceDataSource;
 
     /**
      * ReferenceSchema
@@ -58,7 +60,7 @@ public class ReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public ReferenceSchema getReferenceSchema() {
+    public Property<ReferenceSchema> getReferenceSchema() {
         return referenceSchema;
     }
 
@@ -69,11 +71,11 @@ public class ReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public void setReferenceSchema(ReferenceSchema referenceSchema) {
+    public void setReferenceSchema(Property<ReferenceSchema> referenceSchema) {
         this.referenceSchema = referenceSchema;
     }
 
-    public ReferenceDataSource withReferenceSchema(ReferenceSchema referenceSchema) {
+    public ReferenceDataSource withReferenceSchema(Property<ReferenceSchema> referenceSchema) {
         this.referenceSchema = referenceSchema;
         return this;
     }
@@ -108,7 +110,7 @@ public class ReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public S3ReferenceDataSource getS3ReferenceDataSource() {
+    public Property<S3ReferenceDataSource> getS3ReferenceDataSource() {
         return s3ReferenceDataSource;
     }
 
@@ -119,11 +121,11 @@ public class ReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public void setS3ReferenceDataSource(S3ReferenceDataSource s3ReferenceDataSource) {
+    public void setS3ReferenceDataSource(Property<S3ReferenceDataSource> s3ReferenceDataSource) {
         this.s3ReferenceDataSource = s3ReferenceDataSource;
     }
 
-    public ReferenceDataSource withS3ReferenceDataSource(S3ReferenceDataSource s3ReferenceDataSource) {
+    public ReferenceDataSource withS3ReferenceDataSource(Property<S3ReferenceDataSource> s3ReferenceDataSource) {
         this.s3ReferenceDataSource = s3ReferenceDataSource;
         return this;
     }

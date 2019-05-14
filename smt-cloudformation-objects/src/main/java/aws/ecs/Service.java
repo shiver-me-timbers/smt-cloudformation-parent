@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -55,7 +56,7 @@ public class Service {
      */
     @JsonProperty("DeploymentConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html")
-    private DeploymentConfiguration deploymentConfiguration;
+    private Property<DeploymentConfiguration> deploymentConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount
      * 
@@ -84,7 +85,7 @@ public class Service {
     @JsonProperty("LoadBalancers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-loadbalancers")
-    private Set<LoadBalancer> loadBalancers = new LinkedHashSet<LoadBalancer>();
+    private Set<Property<LoadBalancer>> loadBalancers = new LinkedHashSet<Property<LoadBalancer>>();
     /**
      * NetworkConfiguration
      * <p>
@@ -93,7 +94,7 @@ public class Service {
      */
     @JsonProperty("NetworkConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html")
-    private NetworkConfiguration networkConfiguration;
+    private Property<NetworkConfiguration> networkConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints
      * 
@@ -101,7 +102,7 @@ public class Service {
     @JsonProperty("PlacementConstraints")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints")
-    private Set<TaskDefinitionPlacementConstraint> placementConstraints = new LinkedHashSet<TaskDefinitionPlacementConstraint>();
+    private Set<Property<PlacementConstraint>> placementConstraints = new LinkedHashSet<Property<PlacementConstraint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies
      * 
@@ -109,7 +110,7 @@ public class Service {
     @JsonProperty("PlacementStrategies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies")
-    private Set<PlacementStrategy> placementStrategies = new LinkedHashSet<PlacementStrategy>();
+    private Set<Property<PlacementStrategy>> placementStrategies = new LinkedHashSet<Property<PlacementStrategy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion
      * 
@@ -145,7 +146,7 @@ public class Service {
     @JsonProperty("ServiceRegistries")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries")
-    private Set<ServiceRegistry> serviceRegistries = new LinkedHashSet<ServiceRegistry>();
+    private Set<Property<ServiceRegistry>> serviceRegistries = new LinkedHashSet<Property<ServiceRegistry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
@@ -184,7 +185,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public DeploymentConfiguration getDeploymentConfiguration() {
+    public Property<DeploymentConfiguration> getDeploymentConfiguration() {
         return deploymentConfiguration;
     }
 
@@ -195,11 +196,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setDeploymentConfiguration(DeploymentConfiguration deploymentConfiguration) {
+    public void setDeploymentConfiguration(Property<DeploymentConfiguration> deploymentConfiguration) {
         this.deploymentConfiguration = deploymentConfiguration;
     }
 
-    public Service withDeploymentConfiguration(DeploymentConfiguration deploymentConfiguration) {
+    public Service withDeploymentConfiguration(Property<DeploymentConfiguration> deploymentConfiguration) {
         this.deploymentConfiguration = deploymentConfiguration;
         return this;
     }
@@ -278,7 +279,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<LoadBalancer> getLoadBalancers() {
+    public Set<Property<LoadBalancer>> getLoadBalancers() {
         return loadBalancers;
     }
 
@@ -287,11 +288,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancers(Set<LoadBalancer> loadBalancers) {
+    public void setLoadBalancers(Set<Property<LoadBalancer>> loadBalancers) {
         this.loadBalancers = loadBalancers;
     }
 
-    public Service withLoadBalancers(Set<LoadBalancer> loadBalancers) {
+    public Service withLoadBalancers(Set<Property<LoadBalancer>> loadBalancers) {
         this.loadBalancers = loadBalancers;
         return this;
     }
@@ -303,7 +304,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public NetworkConfiguration getNetworkConfiguration() {
+    public Property<NetworkConfiguration> getNetworkConfiguration() {
         return networkConfiguration;
     }
 
@@ -314,11 +315,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setNetworkConfiguration(NetworkConfiguration networkConfiguration) {
+    public void setNetworkConfiguration(Property<NetworkConfiguration> networkConfiguration) {
         this.networkConfiguration = networkConfiguration;
     }
 
-    public Service withNetworkConfiguration(NetworkConfiguration networkConfiguration) {
+    public Service withNetworkConfiguration(Property<NetworkConfiguration> networkConfiguration) {
         this.networkConfiguration = networkConfiguration;
         return this;
     }
@@ -328,7 +329,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<TaskDefinitionPlacementConstraint> getPlacementConstraints() {
+    public Set<Property<PlacementConstraint>> getPlacementConstraints() {
         return placementConstraints;
     }
 
@@ -337,11 +338,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
+    public void setPlacementConstraints(Set<Property<PlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
     }
 
-    public Service withPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
+    public Service withPlacementConstraints(Set<Property<PlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
         return this;
     }
@@ -351,7 +352,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<PlacementStrategy> getPlacementStrategies() {
+    public Set<Property<PlacementStrategy>> getPlacementStrategies() {
         return placementStrategies;
     }
 
@@ -360,11 +361,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setPlacementStrategies(Set<PlacementStrategy> placementStrategies) {
+    public void setPlacementStrategies(Set<Property<PlacementStrategy>> placementStrategies) {
         this.placementStrategies = placementStrategies;
     }
 
-    public Service withPlacementStrategies(Set<PlacementStrategy> placementStrategies) {
+    public Service withPlacementStrategies(Set<Property<PlacementStrategy>> placementStrategies) {
         this.placementStrategies = placementStrategies;
         return this;
     }
@@ -466,7 +467,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<ServiceRegistry> getServiceRegistries() {
+    public Set<Property<ServiceRegistry>> getServiceRegistries() {
         return serviceRegistries;
     }
 
@@ -475,11 +476,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setServiceRegistries(Set<ServiceRegistry> serviceRegistries) {
+    public void setServiceRegistries(Set<Property<ServiceRegistry>> serviceRegistries) {
         this.serviceRegistries = serviceRegistries;
     }
 
-    public Service withServiceRegistries(Set<ServiceRegistry> serviceRegistries) {
+    public Service withServiceRegistries(Set<Property<ServiceRegistry>> serviceRegistries) {
         this.serviceRegistries = serviceRegistries;
         return this;
     }

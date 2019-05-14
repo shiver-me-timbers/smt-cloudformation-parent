@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TextTransformation",
     "FieldToMatch"
 })
-public class SizeConstraint {
+public class SizeConstraint implements Property<SizeConstraint>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator
@@ -55,7 +57,7 @@ public class SizeConstraint {
      */
     @JsonProperty("FieldToMatch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html")
-    private FieldToMatch fieldToMatch;
+    private Property<FieldToMatch> fieldToMatch;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator
@@ -133,7 +135,7 @@ public class SizeConstraint {
      * 
      */
     @JsonIgnore
-    public FieldToMatch getFieldToMatch() {
+    public Property<FieldToMatch> getFieldToMatch() {
         return fieldToMatch;
     }
 
@@ -144,11 +146,11 @@ public class SizeConstraint {
      * 
      */
     @JsonIgnore
-    public void setFieldToMatch(FieldToMatch fieldToMatch) {
+    public void setFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
 
-    public SizeConstraint withFieldToMatch(FieldToMatch fieldToMatch) {
+    public SizeConstraint withFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
         return this;
     }

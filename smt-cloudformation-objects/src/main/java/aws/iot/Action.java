@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Sqs",
     "StepFunctions"
 })
-public class Action {
+public class Action implements Property<Action>
+{
 
     /**
      * CloudwatchAlarmAction
@@ -44,7 +46,7 @@ public class Action {
      */
     @JsonProperty("CloudwatchAlarm")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchalarmaction.html")
-    private CloudwatchAlarmAction cloudwatchAlarm;
+    private Property<CloudwatchAlarmAction> cloudwatchAlarm;
     /**
      * CloudwatchMetricAction
      * <p>
@@ -53,7 +55,7 @@ public class Action {
      */
     @JsonProperty("CloudwatchMetric")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html")
-    private CloudwatchMetricAction cloudwatchMetric;
+    private Property<CloudwatchMetricAction> cloudwatchMetric;
     /**
      * DynamoDBAction
      * <p>
@@ -62,7 +64,7 @@ public class Action {
      */
     @JsonProperty("DynamoDB")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html")
-    private DynamoDBAction dynamoDB;
+    private Property<DynamoDBAction> dynamoDB;
     /**
      * DynamoDBv2Action
      * <p>
@@ -71,7 +73,7 @@ public class Action {
      */
     @JsonProperty("DynamoDBv2")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html")
-    private DynamoDBv2Action dynamoDBv2;
+    private Property<DynamoDBv2Action> dynamoDBv2;
     /**
      * ElasticsearchAction
      * <p>
@@ -80,7 +82,7 @@ public class Action {
      */
     @JsonProperty("Elasticsearch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html")
-    private ElasticsearchAction elasticsearch;
+    private Property<ElasticsearchAction> elasticsearch;
     /**
      * FirehoseAction
      * <p>
@@ -89,7 +91,7 @@ public class Action {
      */
     @JsonProperty("Firehose")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-firehoseaction.html")
-    private FirehoseAction firehose;
+    private Property<FirehoseAction> firehose;
     /**
      * IotAnalyticsAction
      * <p>
@@ -98,7 +100,7 @@ public class Action {
      */
     @JsonProperty("IotAnalytics")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html")
-    private IotAnalyticsAction iotAnalytics;
+    private Property<IotAnalyticsAction> iotAnalytics;
     /**
      * KinesisAction
      * <p>
@@ -107,7 +109,7 @@ public class Action {
      */
     @JsonProperty("Kinesis")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html")
-    private KinesisAction kinesis;
+    private Property<KinesisAction> kinesis;
     /**
      * LambdaAction
      * <p>
@@ -116,7 +118,7 @@ public class Action {
      */
     @JsonProperty("Lambda")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-lambdaaction.html")
-    private LambdaAction lambda;
+    private Property<LambdaAction> lambda;
     /**
      * RepublishAction
      * <p>
@@ -125,7 +127,7 @@ public class Action {
      */
     @JsonProperty("Republish")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-republishaction.html")
-    private RepublishAction republish;
+    private Property<RepublishAction> republish;
     /**
      * S3Action
      * <p>
@@ -134,7 +136,7 @@ public class Action {
      */
     @JsonProperty("S3")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-s3action.html")
-    private S3Action s3;
+    private Property<S3Action> s3;
     /**
      * SnsAction
      * <p>
@@ -143,7 +145,7 @@ public class Action {
      */
     @JsonProperty("Sns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html")
-    private SnsAction sns;
+    private Property<SnsAction> sns;
     /**
      * SqsAction
      * <p>
@@ -152,7 +154,7 @@ public class Action {
      */
     @JsonProperty("Sqs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html")
-    private SqsAction sqs;
+    private Property<SqsAction> sqs;
     /**
      * StepFunctionsAction
      * <p>
@@ -161,7 +163,7 @@ public class Action {
      */
     @JsonProperty("StepFunctions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-stepfunctionsaction.html")
-    private StepFunctionsAction stepFunctions;
+    private Property<StepFunctionsAction> stepFunctions;
 
     /**
      * CloudwatchAlarmAction
@@ -170,7 +172,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public CloudwatchAlarmAction getCloudwatchAlarm() {
+    public Property<CloudwatchAlarmAction> getCloudwatchAlarm() {
         return cloudwatchAlarm;
     }
 
@@ -181,11 +183,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setCloudwatchAlarm(CloudwatchAlarmAction cloudwatchAlarm) {
+    public void setCloudwatchAlarm(Property<CloudwatchAlarmAction> cloudwatchAlarm) {
         this.cloudwatchAlarm = cloudwatchAlarm;
     }
 
-    public Action withCloudwatchAlarm(CloudwatchAlarmAction cloudwatchAlarm) {
+    public Action withCloudwatchAlarm(Property<CloudwatchAlarmAction> cloudwatchAlarm) {
         this.cloudwatchAlarm = cloudwatchAlarm;
         return this;
     }
@@ -197,7 +199,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public CloudwatchMetricAction getCloudwatchMetric() {
+    public Property<CloudwatchMetricAction> getCloudwatchMetric() {
         return cloudwatchMetric;
     }
 
@@ -208,11 +210,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setCloudwatchMetric(CloudwatchMetricAction cloudwatchMetric) {
+    public void setCloudwatchMetric(Property<CloudwatchMetricAction> cloudwatchMetric) {
         this.cloudwatchMetric = cloudwatchMetric;
     }
 
-    public Action withCloudwatchMetric(CloudwatchMetricAction cloudwatchMetric) {
+    public Action withCloudwatchMetric(Property<CloudwatchMetricAction> cloudwatchMetric) {
         this.cloudwatchMetric = cloudwatchMetric;
         return this;
     }
@@ -224,7 +226,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public DynamoDBAction getDynamoDB() {
+    public Property<DynamoDBAction> getDynamoDB() {
         return dynamoDB;
     }
 
@@ -235,11 +237,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setDynamoDB(DynamoDBAction dynamoDB) {
+    public void setDynamoDB(Property<DynamoDBAction> dynamoDB) {
         this.dynamoDB = dynamoDB;
     }
 
-    public Action withDynamoDB(DynamoDBAction dynamoDB) {
+    public Action withDynamoDB(Property<DynamoDBAction> dynamoDB) {
         this.dynamoDB = dynamoDB;
         return this;
     }
@@ -251,7 +253,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public DynamoDBv2Action getDynamoDBv2() {
+    public Property<DynamoDBv2Action> getDynamoDBv2() {
         return dynamoDBv2;
     }
 
@@ -262,11 +264,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setDynamoDBv2(DynamoDBv2Action dynamoDBv2) {
+    public void setDynamoDBv2(Property<DynamoDBv2Action> dynamoDBv2) {
         this.dynamoDBv2 = dynamoDBv2;
     }
 
-    public Action withDynamoDBv2(DynamoDBv2Action dynamoDBv2) {
+    public Action withDynamoDBv2(Property<DynamoDBv2Action> dynamoDBv2) {
         this.dynamoDBv2 = dynamoDBv2;
         return this;
     }
@@ -278,7 +280,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public ElasticsearchAction getElasticsearch() {
+    public Property<ElasticsearchAction> getElasticsearch() {
         return elasticsearch;
     }
 
@@ -289,11 +291,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setElasticsearch(ElasticsearchAction elasticsearch) {
+    public void setElasticsearch(Property<ElasticsearchAction> elasticsearch) {
         this.elasticsearch = elasticsearch;
     }
 
-    public Action withElasticsearch(ElasticsearchAction elasticsearch) {
+    public Action withElasticsearch(Property<ElasticsearchAction> elasticsearch) {
         this.elasticsearch = elasticsearch;
         return this;
     }
@@ -305,7 +307,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public FirehoseAction getFirehose() {
+    public Property<FirehoseAction> getFirehose() {
         return firehose;
     }
 
@@ -316,11 +318,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setFirehose(FirehoseAction firehose) {
+    public void setFirehose(Property<FirehoseAction> firehose) {
         this.firehose = firehose;
     }
 
-    public Action withFirehose(FirehoseAction firehose) {
+    public Action withFirehose(Property<FirehoseAction> firehose) {
         this.firehose = firehose;
         return this;
     }
@@ -332,7 +334,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public IotAnalyticsAction getIotAnalytics() {
+    public Property<IotAnalyticsAction> getIotAnalytics() {
         return iotAnalytics;
     }
 
@@ -343,11 +345,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setIotAnalytics(IotAnalyticsAction iotAnalytics) {
+    public void setIotAnalytics(Property<IotAnalyticsAction> iotAnalytics) {
         this.iotAnalytics = iotAnalytics;
     }
 
-    public Action withIotAnalytics(IotAnalyticsAction iotAnalytics) {
+    public Action withIotAnalytics(Property<IotAnalyticsAction> iotAnalytics) {
         this.iotAnalytics = iotAnalytics;
         return this;
     }
@@ -359,7 +361,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public KinesisAction getKinesis() {
+    public Property<KinesisAction> getKinesis() {
         return kinesis;
     }
 
@@ -370,11 +372,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setKinesis(KinesisAction kinesis) {
+    public void setKinesis(Property<KinesisAction> kinesis) {
         this.kinesis = kinesis;
     }
 
-    public Action withKinesis(KinesisAction kinesis) {
+    public Action withKinesis(Property<KinesisAction> kinesis) {
         this.kinesis = kinesis;
         return this;
     }
@@ -386,7 +388,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public LambdaAction getLambda() {
+    public Property<LambdaAction> getLambda() {
         return lambda;
     }
 
@@ -397,11 +399,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setLambda(LambdaAction lambda) {
+    public void setLambda(Property<LambdaAction> lambda) {
         this.lambda = lambda;
     }
 
-    public Action withLambda(LambdaAction lambda) {
+    public Action withLambda(Property<LambdaAction> lambda) {
         this.lambda = lambda;
         return this;
     }
@@ -413,7 +415,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public RepublishAction getRepublish() {
+    public Property<RepublishAction> getRepublish() {
         return republish;
     }
 
@@ -424,11 +426,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setRepublish(RepublishAction republish) {
+    public void setRepublish(Property<RepublishAction> republish) {
         this.republish = republish;
     }
 
-    public Action withRepublish(RepublishAction republish) {
+    public Action withRepublish(Property<RepublishAction> republish) {
         this.republish = republish;
         return this;
     }
@@ -440,7 +442,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public S3Action getS3() {
+    public Property<S3Action> getS3() {
         return s3;
     }
 
@@ -451,11 +453,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setS3(S3Action s3) {
+    public void setS3(Property<S3Action> s3) {
         this.s3 = s3;
     }
 
-    public Action withS3(S3Action s3) {
+    public Action withS3(Property<S3Action> s3) {
         this.s3 = s3;
         return this;
     }
@@ -467,7 +469,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public SnsAction getSns() {
+    public Property<SnsAction> getSns() {
         return sns;
     }
 
@@ -478,11 +480,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setSns(SnsAction sns) {
+    public void setSns(Property<SnsAction> sns) {
         this.sns = sns;
     }
 
-    public Action withSns(SnsAction sns) {
+    public Action withSns(Property<SnsAction> sns) {
         this.sns = sns;
         return this;
     }
@@ -494,7 +496,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public SqsAction getSqs() {
+    public Property<SqsAction> getSqs() {
         return sqs;
     }
 
@@ -505,11 +507,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setSqs(SqsAction sqs) {
+    public void setSqs(Property<SqsAction> sqs) {
         this.sqs = sqs;
     }
 
-    public Action withSqs(SqsAction sqs) {
+    public Action withSqs(Property<SqsAction> sqs) {
         this.sqs = sqs;
         return this;
     }
@@ -521,7 +523,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public StepFunctionsAction getStepFunctions() {
+    public Property<StepFunctionsAction> getStepFunctions() {
         return stepFunctions;
     }
 
@@ -532,11 +534,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setStepFunctions(StepFunctionsAction stepFunctions) {
+    public void setStepFunctions(Property<StepFunctionsAction> stepFunctions) {
         this.stepFunctions = stepFunctions;
     }
 
-    public Action withStepFunctions(StepFunctionsAction stepFunctions) {
+    public Action withStepFunctions(Property<StepFunctionsAction> stepFunctions) {
         this.stepFunctions = stepFunctions;
         return this;
     }

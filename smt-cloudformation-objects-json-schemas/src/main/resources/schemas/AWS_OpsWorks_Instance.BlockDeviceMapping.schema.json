@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html",
   "type" : "object",
   "javaType" : "aws.opsworks.BlockDeviceMapping",
+  "javaInterfaces" : [ "aws.Property<BlockDeviceMapping>" ],
   "properties" : {
     "DeviceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-devicename",
@@ -13,7 +14,8 @@
     },
     "Ebs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-ebs",
-      "$ref" : "AWS_OpsWorks_Instance.EbsBlockDevice.schema.json"
+      "$ref" : "AWS_OpsWorks_Instance.EbsBlockDevice.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.EbsBlockDevice>"
     },
     "NoDevice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-blockdevicemapping.html#cfn-opsworks-instance-blockdevicemapping-nodevice",

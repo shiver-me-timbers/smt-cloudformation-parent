@@ -91,6 +91,9 @@
                             <customAnnotator>
                                 shiver.me.timbers.cloudformation.annotator.CloudformationAnnotator
                             </customAnnotator>
+                            <customRuleFactory>
+                                shiver.me.timbers.cloudformation.rules.RuleFactory
+                            </customRuleFactory>
                         </configuration>
                         <executions>
                             <execution>

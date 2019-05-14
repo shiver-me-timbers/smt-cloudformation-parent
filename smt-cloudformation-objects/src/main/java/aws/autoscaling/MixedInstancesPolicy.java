@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InstancesDistribution",
     "LaunchTemplate"
 })
-public class MixedInstancesPolicy {
+public class MixedInstancesPolicy implements Property<MixedInstancesPolicy>
+{
 
     /**
      * InstancesDistribution
@@ -32,7 +34,7 @@ public class MixedInstancesPolicy {
      */
     @JsonProperty("InstancesDistribution")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-instancesdistribution.html")
-    private InstancesDistribution instancesDistribution;
+    private Property<InstancesDistribution> instancesDistribution;
     /**
      * LaunchTemplate
      * <p>
@@ -41,7 +43,7 @@ public class MixedInstancesPolicy {
      */
     @JsonProperty("LaunchTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplate.html")
-    private LaunchTemplate launchTemplate;
+    private Property<LaunchTemplate> launchTemplate;
 
     /**
      * InstancesDistribution
@@ -50,7 +52,7 @@ public class MixedInstancesPolicy {
      * 
      */
     @JsonIgnore
-    public InstancesDistribution getInstancesDistribution() {
+    public Property<InstancesDistribution> getInstancesDistribution() {
         return instancesDistribution;
     }
 
@@ -61,11 +63,11 @@ public class MixedInstancesPolicy {
      * 
      */
     @JsonIgnore
-    public void setInstancesDistribution(InstancesDistribution instancesDistribution) {
+    public void setInstancesDistribution(Property<InstancesDistribution> instancesDistribution) {
         this.instancesDistribution = instancesDistribution;
     }
 
-    public MixedInstancesPolicy withInstancesDistribution(InstancesDistribution instancesDistribution) {
+    public MixedInstancesPolicy withInstancesDistribution(Property<InstancesDistribution> instancesDistribution) {
         this.instancesDistribution = instancesDistribution;
         return this;
     }
@@ -77,7 +79,7 @@ public class MixedInstancesPolicy {
      * 
      */
     @JsonIgnore
-    public LaunchTemplate getLaunchTemplate() {
+    public Property<LaunchTemplate> getLaunchTemplate() {
         return launchTemplate;
     }
 
@@ -88,11 +90,11 @@ public class MixedInstancesPolicy {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplate(LaunchTemplate launchTemplate) {
+    public void setLaunchTemplate(Property<LaunchTemplate> launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
 
-    public MixedInstancesPolicy withLaunchTemplate(LaunchTemplate launchTemplate) {
+    public MixedInstancesPolicy withLaunchTemplate(Property<LaunchTemplate> launchTemplate) {
         this.launchTemplate = launchTemplate;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.elasticloadbalancing;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Protocol",
     "SSLCertificateId"
 })
-public class Listeners {
+public class Listeners implements Property<Listeners>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html#cfn-ec2-elb-listener-instanceport

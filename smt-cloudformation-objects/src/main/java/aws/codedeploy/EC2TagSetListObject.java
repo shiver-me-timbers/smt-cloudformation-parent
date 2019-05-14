@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Ec2TagGroup"
 })
-public class EC2TagSetListObject {
+public class EC2TagSetListObject implements Property<EC2TagSetListObject>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.html#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup
@@ -33,14 +35,14 @@ public class EC2TagSetListObject {
     @JsonProperty("Ec2TagGroup")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.html#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup")
-    private Set<EC2TagFilter> ec2TagGroup = new LinkedHashSet<EC2TagFilter>();
+    private Set<Property<EC2TagFilter>> ec2TagGroup = new LinkedHashSet<Property<EC2TagFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagsetlistobject.html#cfn-codedeploy-deploymentgroup-ec2tagsetlistobject-ec2taggroup
      * 
      */
     @JsonIgnore
-    public Set<EC2TagFilter> getEc2TagGroup() {
+    public Set<Property<EC2TagFilter>> getEc2TagGroup() {
         return ec2TagGroup;
     }
 
@@ -49,11 +51,11 @@ public class EC2TagSetListObject {
      * 
      */
     @JsonIgnore
-    public void setEc2TagGroup(Set<EC2TagFilter> ec2TagGroup) {
+    public void setEc2TagGroup(Set<Property<EC2TagFilter>> ec2TagGroup) {
         this.ec2TagGroup = ec2TagGroup;
     }
 
-    public EC2TagSetListObject withEc2TagGroup(Set<EC2TagFilter> ec2TagGroup) {
+    public EC2TagSetListObject withEc2TagGroup(Set<Property<EC2TagFilter>> ec2TagGroup) {
         this.ec2TagGroup = ec2TagGroup;
         return this;
     }

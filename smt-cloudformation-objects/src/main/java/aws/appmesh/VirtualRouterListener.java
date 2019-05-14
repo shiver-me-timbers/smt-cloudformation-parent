@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PortMapping"
 })
-public class VirtualRouterListener {
+public class VirtualRouterListener implements Property<VirtualRouterListener>
+{
 
     /**
      * PortMapping
@@ -31,7 +33,7 @@ public class VirtualRouterListener {
      */
     @JsonProperty("PortMapping")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-portmapping.html")
-    private PortMapping portMapping;
+    private Property<PortMapping> portMapping;
 
     /**
      * PortMapping
@@ -40,7 +42,7 @@ public class VirtualRouterListener {
      * 
      */
     @JsonIgnore
-    public PortMapping getPortMapping() {
+    public Property<PortMapping> getPortMapping() {
         return portMapping;
     }
 
@@ -51,11 +53,11 @@ public class VirtualRouterListener {
      * 
      */
     @JsonIgnore
-    public void setPortMapping(PortMapping portMapping) {
+    public void setPortMapping(Property<PortMapping> portMapping) {
         this.portMapping = portMapping;
     }
 
-    public VirtualRouterListener withPortMapping(PortMapping portMapping) {
+    public VirtualRouterListener withPortMapping(Property<PortMapping> portMapping) {
         this.portMapping = portMapping;
         return this;
     }

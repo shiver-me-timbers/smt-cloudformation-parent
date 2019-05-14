@@ -5,22 +5,27 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html",
   "type" : "object",
   "javaType" : "aws.ssm.TaskInvocationParameters",
+  "javaInterfaces" : [ "aws.Property<TaskInvocationParameters>" ],
   "properties" : {
     "MaintenanceWindowRunCommandParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowruncommandparameters",
-      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowRunCommandParameters.schema.json"
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowRunCommandParameters.schema.json",
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowRunCommandParameters>"
     },
     "MaintenanceWindowAutomationParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowautomationparameters",
-      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowAutomationParameters.schema.json"
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowAutomationParameters.schema.json",
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowAutomationParameters>"
     },
     "MaintenanceWindowStepFunctionsParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowstepfunctionsparameters",
-      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters.schema.json"
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowStepFunctionsParameters.schema.json",
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowStepFunctionsParameters>"
     },
     "MaintenanceWindowLambdaParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters-maintenancewindowlambdaparameters",
-      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowLambdaParameters.schema.json"
+      "$ref" : "AWS_SSM_MaintenanceWindowTask.MaintenanceWindowLambdaParameters.schema.json",
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowLambdaParameters>"
     }
   }
 }

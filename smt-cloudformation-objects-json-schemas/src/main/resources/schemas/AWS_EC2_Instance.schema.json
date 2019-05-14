@@ -25,12 +25,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-blockdevicemappings",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.BlockDeviceMapping.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.BlockDeviceMapping.schema.json",
+        "javaType" : "aws.Property<aws.ec2.BlockDeviceMapping>"
       }
     },
     "CreditSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-creditspecification",
-      "$ref" : "AWS_EC2_Instance.CreditSpecification.schema.json"
+      "$ref" : "AWS_EC2_Instance.CreditSpecification.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CreditSpecification>"
     },
     "DisableApiTermination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination",
@@ -45,7 +47,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.ElasticGpuSpecification.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.ElasticGpuSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.ElasticGpuSpecification>"
       }
     },
     "ElasticInferenceAccelerators" : {
@@ -53,7 +56,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_Instance.ElasticInferenceAccelerator.schema.json"
+        "$ref" : "AWS_EC2_Instance.ElasticInferenceAccelerator.schema.json",
+        "javaType" : "aws.Property<aws.ec2.ElasticInferenceAccelerator>"
       }
     },
     "HostId" : {
@@ -89,7 +93,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresses",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json"
+        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json",
+        "javaType" : "aws.Property<aws.ec2.InstanceIpv6Address>"
       }
     },
     "KernelId" : {
@@ -104,14 +109,16 @@
     },
     "LaunchTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-launchtemplate",
-      "$ref" : "AWS_EC2_SpotFleet.FleetLaunchTemplateSpecification.schema.json"
+      "$ref" : "AWS_EC2_SpotFleet.FleetLaunchTemplateSpecification.schema.json",
+      "javaType" : "aws.Property<aws.ec2.LaunchTemplateSpecification>"
     },
     "LicenseSpecifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.LicenseSpecification.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.LicenseSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.LicenseSpecification>"
       }
     },
     "Monitoring" : {
@@ -122,7 +129,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-networkinterfaces",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_Instance.NetworkInterface.schema.json"
+        "$ref" : "AWS_EC2_Instance.NetworkInterface.schema.json",
+        "javaType" : "aws.Property<aws.ec2.NetworkInterface>"
       }
     },
     "PlacementGroupName" : {
@@ -164,7 +172,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ssmassociations",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_Instance.SsmAssociation.schema.json"
+        "$ref" : "AWS_EC2_Instance.SsmAssociation.schema.json",
+        "javaType" : "aws.Property<aws.ec2.SsmAssociation>"
       }
     },
     "SubnetId" : {
@@ -176,7 +185,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "Tenancy" : {
@@ -193,7 +203,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-volumes",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_Instance.Volume.schema.json"
+        "$ref" : "AWS_EC2_Instance.Volume.schema.json",
+        "javaType" : "aws.Property<aws.ec2.Volume>"
       }
     }
   }

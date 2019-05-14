@@ -1,6 +1,7 @@
 
 package aws.dlm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -55,7 +56,7 @@ public class LifecyclePolicy {
      */
     @JsonProperty("PolicyDetails")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html")
-    private PolicyDetails policyDetails;
+    private Property<PolicyDetails> policyDetails;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-executionrolearn
@@ -133,7 +134,7 @@ public class LifecyclePolicy {
      * 
      */
     @JsonIgnore
-    public PolicyDetails getPolicyDetails() {
+    public Property<PolicyDetails> getPolicyDetails() {
         return policyDetails;
     }
 
@@ -144,11 +145,11 @@ public class LifecyclePolicy {
      * 
      */
     @JsonIgnore
-    public void setPolicyDetails(PolicyDetails policyDetails) {
+    public void setPolicyDetails(Property<PolicyDetails> policyDetails) {
         this.policyDetails = policyDetails;
     }
 
-    public LifecyclePolicy withPolicyDetails(PolicyDetails policyDetails) {
+    public LifecyclePolicy withPolicyDetails(Property<PolicyDetails> policyDetails) {
         this.policyDetails = policyDetails;
         return this;
     }

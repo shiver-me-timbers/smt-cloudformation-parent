@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import aws.kinesisanalyticsv2.JSONMappingParameters;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "JSONMappingParameters",
     "CSVMappingParameters"
 })
-public class MappingParameters {
+public class MappingParameters implements Property<MappingParameters>
+{
 
     /**
      * JSONMappingParameters
@@ -33,7 +35,7 @@ public class MappingParameters {
      */
     @JsonProperty("JSONMappingParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-jsonmappingparameters.html")
-    private JSONMappingParameters jSONMappingParameters;
+    private Property<JSONMappingParameters> jSONMappingParameters;
     /**
      * CSVMappingParameters
      * <p>
@@ -42,7 +44,7 @@ public class MappingParameters {
      */
     @JsonProperty("CSVMappingParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-csvmappingparameters.html")
-    private CSVMappingParameters cSVMappingParameters;
+    private Property<CSVMappingParameters> cSVMappingParameters;
 
     /**
      * JSONMappingParameters
@@ -51,7 +53,7 @@ public class MappingParameters {
      * 
      */
     @JsonIgnore
-    public JSONMappingParameters getJSONMappingParameters() {
+    public Property<JSONMappingParameters> getJSONMappingParameters() {
         return jSONMappingParameters;
     }
 
@@ -62,11 +64,11 @@ public class MappingParameters {
      * 
      */
     @JsonIgnore
-    public void setJSONMappingParameters(JSONMappingParameters jSONMappingParameters) {
+    public void setJSONMappingParameters(Property<JSONMappingParameters> jSONMappingParameters) {
         this.jSONMappingParameters = jSONMappingParameters;
     }
 
-    public MappingParameters withJSONMappingParameters(JSONMappingParameters jSONMappingParameters) {
+    public MappingParameters withJSONMappingParameters(Property<JSONMappingParameters> jSONMappingParameters) {
         this.jSONMappingParameters = jSONMappingParameters;
         return this;
     }
@@ -78,7 +80,7 @@ public class MappingParameters {
      * 
      */
     @JsonIgnore
-    public CSVMappingParameters getCSVMappingParameters() {
+    public Property<CSVMappingParameters> getCSVMappingParameters() {
         return cSVMappingParameters;
     }
 
@@ -89,11 +91,11 @@ public class MappingParameters {
      * 
      */
     @JsonIgnore
-    public void setCSVMappingParameters(CSVMappingParameters cSVMappingParameters) {
+    public void setCSVMappingParameters(Property<CSVMappingParameters> cSVMappingParameters) {
         this.cSVMappingParameters = cSVMappingParameters;
     }
 
-    public MappingParameters withCSVMappingParameters(CSVMappingParameters cSVMappingParameters) {
+    public MappingParameters withCSVMappingParameters(Property<CSVMappingParameters> cSVMappingParameters) {
         this.cSVMappingParameters = cSVMappingParameters;
         return this;
     }

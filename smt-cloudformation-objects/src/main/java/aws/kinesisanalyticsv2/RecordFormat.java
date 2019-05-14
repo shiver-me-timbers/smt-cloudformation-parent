@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MappingParameters",
     "RecordFormatType"
 })
-public class RecordFormat {
+public class RecordFormat implements Property<RecordFormat>
+{
 
     /**
      * JSONMappingParameters
@@ -32,7 +34,7 @@ public class RecordFormat {
      */
     @JsonProperty("MappingParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-jsonmappingparameters.html")
-    private JSONMappingParameters mappingParameters;
+    private Property<MappingParameters> mappingParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-recordformat.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-recordformat-recordformattype
      * 
@@ -48,7 +50,7 @@ public class RecordFormat {
      * 
      */
     @JsonIgnore
-    public JSONMappingParameters getMappingParameters() {
+    public Property<MappingParameters> getMappingParameters() {
         return mappingParameters;
     }
 
@@ -59,11 +61,11 @@ public class RecordFormat {
      * 
      */
     @JsonIgnore
-    public void setMappingParameters(JSONMappingParameters mappingParameters) {
+    public void setMappingParameters(Property<MappingParameters> mappingParameters) {
         this.mappingParameters = mappingParameters;
     }
 
-    public RecordFormat withMappingParameters(JSONMappingParameters mappingParameters) {
+    public RecordFormat withMappingParameters(Property<MappingParameters> mappingParameters) {
         this.mappingParameters = mappingParameters;
         return this;
     }

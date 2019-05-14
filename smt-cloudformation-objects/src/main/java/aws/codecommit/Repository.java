@@ -3,6 +3,7 @@ package aws.codecommit;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class Repository {
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers")
-    private List<RepositoryTrigger> triggers = new ArrayList<RepositoryTrigger>();
+    private List<Property<RepositoryTrigger>> triggers = new ArrayList<Property<RepositoryTrigger>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-repositorydescription
      * 
@@ -77,7 +78,7 @@ public class Repository {
      * 
      */
     @JsonIgnore
-    public List<RepositoryTrigger> getTriggers() {
+    public List<Property<RepositoryTrigger>> getTriggers() {
         return triggers;
     }
 
@@ -86,11 +87,11 @@ public class Repository {
      * 
      */
     @JsonIgnore
-    public void setTriggers(List<RepositoryTrigger> triggers) {
+    public void setTriggers(List<Property<RepositoryTrigger>> triggers) {
         this.triggers = triggers;
     }
 
-    public Repository withTriggers(List<RepositoryTrigger> triggers) {
+    public Repository withTriggers(List<Property<RepositoryTrigger>> triggers) {
         this.triggers = triggers;
         return this;
     }

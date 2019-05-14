@@ -3,6 +3,7 @@ package aws.amazonmq;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ConsoleAccess",
     "Password"
 })
-public class User {
+public class User implements Property<User>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username

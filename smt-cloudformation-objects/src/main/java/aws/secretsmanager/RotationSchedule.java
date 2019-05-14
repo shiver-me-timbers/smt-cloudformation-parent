@@ -1,6 +1,7 @@
 
 package aws.secretsmanager;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,7 @@ public class RotationSchedule {
      */
     @JsonProperty("RotationRules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html")
-    private RotationRules rotationRules;
+    private Property<RotationRules> rotationRules;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html#cfn-secretsmanager-rotationschedule-secretid
@@ -102,7 +103,7 @@ public class RotationSchedule {
      * 
      */
     @JsonIgnore
-    public RotationRules getRotationRules() {
+    public Property<RotationRules> getRotationRules() {
         return rotationRules;
     }
 
@@ -113,11 +114,11 @@ public class RotationSchedule {
      * 
      */
     @JsonIgnore
-    public void setRotationRules(RotationRules rotationRules) {
+    public void setRotationRules(Property<RotationRules> rotationRules) {
         this.rotationRules = rotationRules;
     }
 
-    public RotationSchedule withRotationRules(RotationRules rotationRules) {
+    public RotationSchedule withRotationRules(Property<RotationRules> rotationRules) {
         this.rotationRules = rotationRules;
         return this;
     }

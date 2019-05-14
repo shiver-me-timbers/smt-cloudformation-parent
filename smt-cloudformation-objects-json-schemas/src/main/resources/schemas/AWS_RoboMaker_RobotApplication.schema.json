@@ -13,13 +13,15 @@
     },
     "RobotSoftwareSuite" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-robotsoftwaresuite",
-      "$ref" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json"
+      "$ref" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json",
+      "javaType" : "aws.Property<aws.robomaker.RobotSoftwareSuite>"
     },
     "Sources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-sources",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_RoboMaker_RobotApplication.SourceConfig.schema.json"
+        "$ref" : "AWS_RoboMaker_RobotApplication.SourceConfig.schema.json",
+        "javaType" : "aws.Property<aws.robomaker.SourceConfig>"
       }
     },
     "Tags" : {

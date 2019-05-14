@@ -5,13 +5,15 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html",
   "type" : "object",
   "javaType" : "aws.s3.NotificationConfiguration",
+  "javaInterfaces" : [ "aws.Property<NotificationConfiguration>" ],
   "properties" : {
     "LambdaConfigurations" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.LambdaConfiguration.schema.json"
+        "$ref" : "AWS_S3_Bucket.LambdaConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.s3.LambdaConfiguration>"
       }
     },
     "QueueConfigurations" : {
@@ -19,7 +21,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.QueueConfiguration.schema.json"
+        "$ref" : "AWS_S3_Bucket.QueueConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.s3.QueueConfiguration>"
       }
     },
     "TopicConfigurations" : {
@@ -27,7 +30,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.TopicConfiguration.schema.json"
+        "$ref" : "AWS_S3_Bucket.TopicConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.s3.TopicConfiguration>"
       }
     }
   }

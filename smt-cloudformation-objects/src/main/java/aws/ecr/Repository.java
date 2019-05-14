@@ -1,6 +1,7 @@
 
 package aws.ecr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class Repository {
      */
     @JsonProperty("LifecyclePolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html")
-    private LifecyclePolicy lifecyclePolicy;
+    private Property<LifecyclePolicy> lifecyclePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
@@ -56,7 +57,7 @@ public class Repository {
      * 
      */
     @JsonIgnore
-    public LifecyclePolicy getLifecyclePolicy() {
+    public Property<LifecyclePolicy> getLifecyclePolicy() {
         return lifecyclePolicy;
     }
 
@@ -67,11 +68,11 @@ public class Repository {
      * 
      */
     @JsonIgnore
-    public void setLifecyclePolicy(LifecyclePolicy lifecyclePolicy) {
+    public void setLifecyclePolicy(Property<LifecyclePolicy> lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
     }
 
-    public Repository withLifecyclePolicy(LifecyclePolicy lifecyclePolicy) {
+    public Repository withLifecyclePolicy(Property<LifecyclePolicy> lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html",
   "type" : "object",
   "javaType" : "aws.fsx.WindowsConfiguration",
+  "javaInterfaces" : [ "aws.Property<WindowsConfiguration>" ],
   "properties" : {
     "WeeklyMaintenanceStartTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime",

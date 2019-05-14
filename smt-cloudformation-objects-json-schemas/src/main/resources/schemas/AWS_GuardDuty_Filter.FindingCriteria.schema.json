@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html",
   "type" : "object",
   "javaType" : "aws.guardduty.FindingCriteria",
+  "javaInterfaces" : [ "aws.Property<FindingCriteria>" ],
   "properties" : {
     "Criterion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion",
@@ -12,7 +13,8 @@
     },
     "ItemType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-itemtype",
-      "$ref" : "AWS_GuardDuty_Filter.Condition.schema.json"
+      "$ref" : "AWS_GuardDuty_Filter.Condition.schema.json",
+      "javaType" : "aws.Property<aws.guardduty.Condition>"
     }
   }
 }

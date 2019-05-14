@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VolumeSpecification",
     "VolumesPerInstance"
 })
-public class EbsBlockDeviceConfig {
+public class EbsBlockDeviceConfig implements Property<EbsBlockDeviceConfig>
+{
 
     /**
      * VolumeSpecification
@@ -32,7 +34,7 @@ public class EbsBlockDeviceConfig {
      */
     @JsonProperty("VolumeSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-volumespecification.html")
-    private VolumeSpecification volumeSpecification;
+    private Property<VolumeSpecification> volumeSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumesperinstance
      * 
@@ -48,7 +50,7 @@ public class EbsBlockDeviceConfig {
      * 
      */
     @JsonIgnore
-    public VolumeSpecification getVolumeSpecification() {
+    public Property<VolumeSpecification> getVolumeSpecification() {
         return volumeSpecification;
     }
 
@@ -59,11 +61,11 @@ public class EbsBlockDeviceConfig {
      * 
      */
     @JsonIgnore
-    public void setVolumeSpecification(VolumeSpecification volumeSpecification) {
+    public void setVolumeSpecification(Property<VolumeSpecification> volumeSpecification) {
         this.volumeSpecification = volumeSpecification;
     }
 
-    public EbsBlockDeviceConfig withVolumeSpecification(VolumeSpecification volumeSpecification) {
+    public EbsBlockDeviceConfig withVolumeSpecification(Property<VolumeSpecification> volumeSpecification) {
         this.volumeSpecification = volumeSpecification;
         return this;
     }

@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-ipset.html#cfn-wafregional-ipset-ipsetdescriptors",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_WAFRegional_IPSet.IPSetDescriptor.schema.json"
+        "$ref" : "AWS_WAFRegional_IPSet.IPSetDescriptor.schema.json",
+        "javaType" : "aws.Property<aws.wafregional.IPSetDescriptor>"
       }
     },
     "Name" : {

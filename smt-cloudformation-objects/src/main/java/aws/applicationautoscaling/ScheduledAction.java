@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ScheduledActionName",
     "StartTime"
 })
-public class ScheduledAction {
+public class ScheduledAction implements Property<ScheduledAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime
@@ -42,7 +44,7 @@ public class ScheduledAction {
      */
     @JsonProperty("ScalableTargetAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html")
-    private ScalableTargetAction scalableTargetAction;
+    private Property<ScalableTargetAction> scalableTargetAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule
      * 
@@ -95,7 +97,7 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public ScalableTargetAction getScalableTargetAction() {
+    public Property<ScalableTargetAction> getScalableTargetAction() {
         return scalableTargetAction;
     }
 
@@ -106,11 +108,11 @@ public class ScheduledAction {
      * 
      */
     @JsonIgnore
-    public void setScalableTargetAction(ScalableTargetAction scalableTargetAction) {
+    public void setScalableTargetAction(Property<ScalableTargetAction> scalableTargetAction) {
         this.scalableTargetAction = scalableTargetAction;
     }
 
-    public ScheduledAction withScalableTargetAction(ScalableTargetAction scalableTargetAction) {
+    public ScheduledAction withScalableTargetAction(Property<ScalableTargetAction> scalableTargetAction) {
         this.scalableTargetAction = scalableTargetAction;
         return this;
     }

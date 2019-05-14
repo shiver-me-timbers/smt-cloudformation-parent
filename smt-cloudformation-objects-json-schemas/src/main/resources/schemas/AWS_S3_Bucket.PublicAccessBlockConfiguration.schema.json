@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html",
   "type" : "object",
   "javaType" : "aws.s3.PublicAccessBlockConfiguration",
+  "javaInterfaces" : [ "aws.Property<PublicAccessBlockConfiguration>" ],
   "properties" : {
     "BlockPublicAcls" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html#cfn-s3-bucket-publicaccessblockconfiguration-blockpublicacls",

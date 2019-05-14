@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "TlsPolicy"
 })
-public class Rule {
+public class Rule implements Property<Rule>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-scanenabled
@@ -50,7 +52,7 @@ public class Rule {
      */
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-actions")
-    private List<BounceAction> actions = new ArrayList<BounceAction>();
+    private List<Property<Action>> actions = new ArrayList<Property<Action>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html#cfn-ses-receiptrule-rule-enabled
      * 
@@ -124,7 +126,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public List<BounceAction> getActions() {
+    public List<Property<Action>> getActions() {
         return actions;
     }
 
@@ -133,11 +135,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setActions(List<BounceAction> actions) {
+    public void setActions(List<Property<Action>> actions) {
         this.actions = actions;
     }
 
-    public Rule withActions(List<BounceAction> actions) {
+    public Rule withActions(List<Property<Action>> actions) {
         this.actions = actions;
         return this;
     }

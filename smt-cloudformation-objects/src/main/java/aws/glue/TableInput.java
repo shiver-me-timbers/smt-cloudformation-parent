@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Retention",
     "Name"
 })
-public class TableInput {
+public class TableInput implements Property<TableInput>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-owner
@@ -84,14 +86,14 @@ public class TableInput {
      */
     @JsonProperty("StorageDescriptor")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html")
-    private StorageDescriptor storageDescriptor;
+    private Property<StorageDescriptor> storageDescriptor;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-partitionkeys
      * 
      */
     @JsonProperty("PartitionKeys")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-partitionkeys")
-    private List<Column> partitionKeys = new ArrayList<Column>();
+    private List<Property<Column>> partitionKeys = new ArrayList<Property<Column>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html#cfn-glue-table-tableinput-retention
      * 
@@ -252,7 +254,7 @@ public class TableInput {
      * 
      */
     @JsonIgnore
-    public StorageDescriptor getStorageDescriptor() {
+    public Property<StorageDescriptor> getStorageDescriptor() {
         return storageDescriptor;
     }
 
@@ -263,11 +265,11 @@ public class TableInput {
      * 
      */
     @JsonIgnore
-    public void setStorageDescriptor(StorageDescriptor storageDescriptor) {
+    public void setStorageDescriptor(Property<StorageDescriptor> storageDescriptor) {
         this.storageDescriptor = storageDescriptor;
     }
 
-    public TableInput withStorageDescriptor(StorageDescriptor storageDescriptor) {
+    public TableInput withStorageDescriptor(Property<StorageDescriptor> storageDescriptor) {
         this.storageDescriptor = storageDescriptor;
         return this;
     }
@@ -277,7 +279,7 @@ public class TableInput {
      * 
      */
     @JsonIgnore
-    public List<Column> getPartitionKeys() {
+    public List<Property<Column>> getPartitionKeys() {
         return partitionKeys;
     }
 
@@ -286,11 +288,11 @@ public class TableInput {
      * 
      */
     @JsonIgnore
-    public void setPartitionKeys(List<Column> partitionKeys) {
+    public void setPartitionKeys(List<Property<Column>> partitionKeys) {
         this.partitionKeys = partitionKeys;
     }
 
-    public TableInput withPartitionKeys(List<Column> partitionKeys) {
+    public TableInput withPartitionKeys(List<Property<Column>> partitionKeys) {
         this.partitionKeys = partitionKeys;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SecondaryPrivateIpAddressCount",
     "SubnetId"
 })
-public class NetworkInterface {
+public class NetworkInterface implements Property<NetworkInterface>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip
@@ -84,7 +86,7 @@ public class NetworkInterface {
      */
     @JsonProperty("Ipv6Addresses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses")
-    private List<InstanceIpv6Address> ipv6Addresses = new ArrayList<InstanceIpv6Address>();
+    private List<Property<InstanceIpv6Address>> ipv6Addresses = new ArrayList<Property<InstanceIpv6Address>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface
      * 
@@ -105,7 +107,7 @@ public class NetworkInterface {
      */
     @JsonProperty("PrivateIpAddresses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses")
-    private List<PrivateIpAddressSpecification> privateIpAddresses = new ArrayList<PrivateIpAddressSpecification>();
+    private List<Property<PrivateIpAddressSpecification>> privateIpAddresses = new ArrayList<Property<PrivateIpAddressSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip
      * 
@@ -264,7 +266,7 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public List<InstanceIpv6Address> getIpv6Addresses() {
+    public List<Property<InstanceIpv6Address>> getIpv6Addresses() {
         return ipv6Addresses;
     }
 
@@ -273,11 +275,11 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public void setIpv6Addresses(List<InstanceIpv6Address> ipv6Addresses) {
+    public void setIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
 
-    public NetworkInterface withIpv6Addresses(List<InstanceIpv6Address> ipv6Addresses) {
+    public NetworkInterface withIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
         return this;
     }
@@ -333,7 +335,7 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public List<PrivateIpAddressSpecification> getPrivateIpAddresses() {
+    public List<Property<PrivateIpAddressSpecification>> getPrivateIpAddresses() {
         return privateIpAddresses;
     }
 
@@ -342,11 +344,11 @@ public class NetworkInterface {
      * 
      */
     @JsonIgnore
-    public void setPrivateIpAddresses(List<PrivateIpAddressSpecification> privateIpAddresses) {
+    public void setPrivateIpAddresses(List<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
     }
 
-    public NetworkInterface withPrivateIpAddresses(List<PrivateIpAddressSpecification> privateIpAddresses) {
+    public NetworkInterface withPrivateIpAddresses(List<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
         return this;
     }

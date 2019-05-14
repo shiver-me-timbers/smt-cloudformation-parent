@@ -3,6 +3,7 @@ package aws.efs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -45,7 +46,7 @@ public class FileSystem {
     @JsonProperty("FileSystemTags")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-filesystemtags")
-    private Set<ElasticFileSystemTag> fileSystemTags = new LinkedHashSet<ElasticFileSystemTag>();
+    private Set<Property<ElasticFileSystemTag>> fileSystemTags = new LinkedHashSet<Property<ElasticFileSystemTag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-filesystem.html#cfn-efs-filesystem-kmskeyid
      * 
@@ -103,7 +104,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public Set<ElasticFileSystemTag> getFileSystemTags() {
+    public Set<Property<ElasticFileSystemTag>> getFileSystemTags() {
         return fileSystemTags;
     }
 
@@ -112,11 +113,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setFileSystemTags(Set<ElasticFileSystemTag> fileSystemTags) {
+    public void setFileSystemTags(Set<Property<ElasticFileSystemTag>> fileSystemTags) {
         this.fileSystemTags = fileSystemTags;
     }
 
-    public FileSystem withFileSystemTags(Set<ElasticFileSystemTag> fileSystemTags) {
+    public FileSystem withFileSystemTags(Set<Property<ElasticFileSystemTag>> fileSystemTags) {
         this.fileSystemTags = fileSystemTags;
         return this;
     }

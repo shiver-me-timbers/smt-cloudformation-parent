@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Market",
     "SimpleScalingPolicyConfiguration"
 })
-public class ScalingAction {
+public class ScalingAction implements Property<ScalingAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingaction.html#cfn-elasticmapreduce-instancegroupconfig-scalingaction-market
@@ -39,7 +41,7 @@ public class ScalingAction {
      */
     @JsonProperty("SimpleScalingPolicyConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-simplescalingpolicyconfiguration.html")
-    private SimpleScalingPolicyConfiguration simpleScalingPolicyConfiguration;
+    private Property<SimpleScalingPolicyConfiguration> simpleScalingPolicyConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingaction.html#cfn-elasticmapreduce-instancegroupconfig-scalingaction-market
@@ -71,7 +73,7 @@ public class ScalingAction {
      * 
      */
     @JsonIgnore
-    public SimpleScalingPolicyConfiguration getSimpleScalingPolicyConfiguration() {
+    public Property<SimpleScalingPolicyConfiguration> getSimpleScalingPolicyConfiguration() {
         return simpleScalingPolicyConfiguration;
     }
 
@@ -82,11 +84,11 @@ public class ScalingAction {
      * 
      */
     @JsonIgnore
-    public void setSimpleScalingPolicyConfiguration(SimpleScalingPolicyConfiguration simpleScalingPolicyConfiguration) {
+    public void setSimpleScalingPolicyConfiguration(Property<SimpleScalingPolicyConfiguration> simpleScalingPolicyConfiguration) {
         this.simpleScalingPolicyConfiguration = simpleScalingPolicyConfiguration;
     }
 
-    public ScalingAction withSimpleScalingPolicyConfiguration(SimpleScalingPolicyConfiguration simpleScalingPolicyConfiguration) {
+    public ScalingAction withSimpleScalingPolicyConfiguration(Property<SimpleScalingPolicyConfiguration> simpleScalingPolicyConfiguration) {
         this.simpleScalingPolicyConfiguration = simpleScalingPolicyConfiguration;
         return this;
     }

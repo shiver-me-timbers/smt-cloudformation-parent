@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import aws.kinesisanalyticsv2.ReferenceDataSource;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -40,7 +41,7 @@ public class ApplicationReferenceDataSource {
      */
     @JsonProperty("ReferenceDataSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource.html")
-    private ReferenceDataSource referenceDataSource;
+    private Property<ReferenceDataSource> referenceDataSource;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationreferencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-applicationname
@@ -72,7 +73,7 @@ public class ApplicationReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public ReferenceDataSource getReferenceDataSource() {
+    public Property<ReferenceDataSource> getReferenceDataSource() {
         return referenceDataSource;
     }
 
@@ -83,11 +84,11 @@ public class ApplicationReferenceDataSource {
      * 
      */
     @JsonIgnore
-    public void setReferenceDataSource(ReferenceDataSource referenceDataSource) {
+    public void setReferenceDataSource(Property<ReferenceDataSource> referenceDataSource) {
         this.referenceDataSource = referenceDataSource;
     }
 
-    public ApplicationReferenceDataSource withReferenceDataSource(ReferenceDataSource referenceDataSource) {
+    public ApplicationReferenceDataSource withReferenceDataSource(Property<ReferenceDataSource> referenceDataSource) {
         this.referenceDataSource = referenceDataSource;
         return this;
     }

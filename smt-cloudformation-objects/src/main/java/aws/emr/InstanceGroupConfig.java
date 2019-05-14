@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Market",
     "Name"
 })
-public class InstanceGroupConfig {
+public class InstanceGroupConfig implements Property<InstanceGroupConfig>
+{
 
     /**
      * AutoScalingPolicy
@@ -41,7 +43,7 @@ public class InstanceGroupConfig {
      */
     @JsonProperty("AutoScalingPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-autoscalingpolicy.html")
-    private AutoScalingPolicy autoScalingPolicy;
+    private Property<AutoScalingPolicy> autoScalingPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-bidprice
      * 
@@ -56,7 +58,7 @@ public class InstanceGroupConfig {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-configurations")
-    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
+    private Set<Property<Configuration>> configurations = new LinkedHashSet<Property<Configuration>>();
     /**
      * EbsConfiguration
      * <p>
@@ -65,7 +67,7 @@ public class InstanceGroupConfig {
      */
     @JsonProperty("EbsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html")
-    private EbsConfiguration ebsConfiguration;
+    private Property<EbsConfiguration> ebsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancegroupconfig.html#cfn-elasticmapreduce-cluster-instancegroupconfig-instancecount
      * 
@@ -102,7 +104,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public AutoScalingPolicy getAutoScalingPolicy() {
+    public Property<AutoScalingPolicy> getAutoScalingPolicy() {
         return autoScalingPolicy;
     }
 
@@ -113,11 +115,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public void setAutoScalingPolicy(AutoScalingPolicy autoScalingPolicy) {
+    public void setAutoScalingPolicy(Property<AutoScalingPolicy> autoScalingPolicy) {
         this.autoScalingPolicy = autoScalingPolicy;
     }
 
-    public InstanceGroupConfig withAutoScalingPolicy(AutoScalingPolicy autoScalingPolicy) {
+    public InstanceGroupConfig withAutoScalingPolicy(Property<AutoScalingPolicy> autoScalingPolicy) {
         this.autoScalingPolicy = autoScalingPolicy;
         return this;
     }
@@ -150,7 +152,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public Set<EbsConfiguration> getConfigurations() {
+    public Set<Property<Configuration>> getConfigurations() {
         return configurations;
     }
 
@@ -159,11 +161,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<EbsConfiguration> configurations) {
+    public void setConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
     }
 
-    public InstanceGroupConfig withConfigurations(Set<EbsConfiguration> configurations) {
+    public InstanceGroupConfig withConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
         return this;
     }
@@ -175,7 +177,7 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public EbsConfiguration getEbsConfiguration() {
+    public Property<EbsConfiguration> getEbsConfiguration() {
         return ebsConfiguration;
     }
 
@@ -186,11 +188,11 @@ public class InstanceGroupConfig {
      * 
      */
     @JsonIgnore
-    public void setEbsConfiguration(EbsConfiguration ebsConfiguration) {
+    public void setEbsConfiguration(Property<EbsConfiguration> ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
     }
 
-    public InstanceGroupConfig withEbsConfiguration(EbsConfiguration ebsConfiguration) {
+    public InstanceGroupConfig withEbsConfiguration(Property<EbsConfiguration> ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
         return this;
     }

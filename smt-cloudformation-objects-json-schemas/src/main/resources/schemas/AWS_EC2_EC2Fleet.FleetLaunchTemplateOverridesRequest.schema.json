@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html",
   "type" : "object",
   "javaType" : "aws.ec2.FleetLaunchTemplateOverridesRequest",
+  "javaInterfaces" : [ "aws.Property<FleetLaunchTemplateOverridesRequest>" ],
   "properties" : {
     "WeightedCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity",

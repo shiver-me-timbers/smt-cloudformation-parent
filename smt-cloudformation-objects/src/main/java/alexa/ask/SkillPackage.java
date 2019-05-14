@@ -1,6 +1,7 @@
 
 package alexa.ask;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3Key",
     "Overrides"
 })
-public class SkillPackage {
+public class SkillPackage implements Property<SkillPackage>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html#cfn-ask-skill-skillpackage-s3bucketrole
@@ -63,7 +65,7 @@ public class SkillPackage {
      */
     @JsonProperty("Overrides")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html")
-    private Overrides overrides;
+    private Property<Overrides> overrides;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html#cfn-ask-skill-skillpackage-s3bucketrole
@@ -164,7 +166,7 @@ public class SkillPackage {
      * 
      */
     @JsonIgnore
-    public Overrides getOverrides() {
+    public Property<Overrides> getOverrides() {
         return overrides;
     }
 
@@ -175,11 +177,11 @@ public class SkillPackage {
      * 
      */
     @JsonIgnore
-    public void setOverrides(Overrides overrides) {
+    public void setOverrides(Property<Overrides> overrides) {
         this.overrides = overrides;
     }
 
-    public SkillPackage withOverrides(Overrides overrides) {
+    public SkillPackage withOverrides(Property<Overrides> overrides) {
         this.overrides = overrides;
         return this;
     }

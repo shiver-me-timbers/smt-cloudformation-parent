@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ApproveAfterDays",
     "ComplianceLevel"
 })
-public class Rule {
+public class Rule implements Property<Rule>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity
@@ -41,7 +43,7 @@ public class Rule {
      */
     @JsonProperty("PatchFilterGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html")
-    private PatchFilterGroup patchFilterGroup;
+    private Property<PatchFilterGroup> patchFilterGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays
      * 
@@ -87,7 +89,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public PatchFilterGroup getPatchFilterGroup() {
+    public Property<PatchFilterGroup> getPatchFilterGroup() {
         return patchFilterGroup;
     }
 
@@ -98,11 +100,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setPatchFilterGroup(PatchFilterGroup patchFilterGroup) {
+    public void setPatchFilterGroup(Property<PatchFilterGroup> patchFilterGroup) {
         this.patchFilterGroup = patchFilterGroup;
     }
 
-    public Rule withPatchFilterGroup(PatchFilterGroup patchFilterGroup) {
+    public Rule withPatchFilterGroup(Property<PatchFilterGroup> patchFilterGroup) {
         this.patchFilterGroup = patchFilterGroup;
         return this;
     }

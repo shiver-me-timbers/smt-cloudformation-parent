@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,7 +36,7 @@ public class GraphQLApi {
      */
     @JsonProperty("OpenIDConnectConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html")
-    private OpenIDConnectConfig openIDConnectConfig;
+    private Property<OpenIDConnectConfig> openIDConnectConfig;
     /**
      * UserPoolConfig
      * <p>
@@ -44,7 +45,7 @@ public class GraphQLApi {
      */
     @JsonProperty("UserPoolConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html")
-    private UserPoolConfig userPoolConfig;
+    private Property<UserPoolConfig> userPoolConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
      * 
@@ -67,7 +68,7 @@ public class GraphQLApi {
      */
     @JsonProperty("LogConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html")
-    private LogConfig logConfig;
+    private Property<LogConfig> logConfig;
 
     /**
      * OpenIDConnectConfig
@@ -76,7 +77,7 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public OpenIDConnectConfig getOpenIDConnectConfig() {
+    public Property<OpenIDConnectConfig> getOpenIDConnectConfig() {
         return openIDConnectConfig;
     }
 
@@ -87,11 +88,11 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public void setOpenIDConnectConfig(OpenIDConnectConfig openIDConnectConfig) {
+    public void setOpenIDConnectConfig(Property<OpenIDConnectConfig> openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
     }
 
-    public GraphQLApi withOpenIDConnectConfig(OpenIDConnectConfig openIDConnectConfig) {
+    public GraphQLApi withOpenIDConnectConfig(Property<OpenIDConnectConfig> openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
         return this;
     }
@@ -103,7 +104,7 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public UserPoolConfig getUserPoolConfig() {
+    public Property<UserPoolConfig> getUserPoolConfig() {
         return userPoolConfig;
     }
 
@@ -114,11 +115,11 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public void setUserPoolConfig(UserPoolConfig userPoolConfig) {
+    public void setUserPoolConfig(Property<UserPoolConfig> userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
     }
 
-    public GraphQLApi withUserPoolConfig(UserPoolConfig userPoolConfig) {
+    public GraphQLApi withUserPoolConfig(Property<UserPoolConfig> userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
         return this;
     }
@@ -176,7 +177,7 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public LogConfig getLogConfig() {
+    public Property<LogConfig> getLogConfig() {
         return logConfig;
     }
 
@@ -187,11 +188,11 @@ public class GraphQLApi {
      * 
      */
     @JsonIgnore
-    public void setLogConfig(LogConfig logConfig) {
+    public void setLogConfig(Property<LogConfig> logConfig) {
         this.logConfig = logConfig;
     }
 
-    public GraphQLApi withLogConfig(LogConfig logConfig) {
+    public GraphQLApi withLogConfig(Property<LogConfig> logConfig) {
         this.logConfig = logConfig;
         return this;
     }

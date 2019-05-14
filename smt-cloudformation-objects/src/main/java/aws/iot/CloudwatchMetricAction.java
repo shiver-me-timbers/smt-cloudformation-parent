@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MetricValue",
     "RoleArn"
 })
-public class CloudwatchMetricAction {
+public class CloudwatchMetricAction implements Property<CloudwatchMetricAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-cloudwatchmetricaction.html#cfn-iot-topicrule-cloudwatchmetricaction-metricname

@@ -13,11 +13,13 @@
     },
     "HealthCheckCustomConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-healthcheckcustomconfig",
-      "$ref" : "AWS_ServiceDiscovery_Service.HealthCheckCustomConfig.schema.json"
+      "$ref" : "AWS_ServiceDiscovery_Service.HealthCheckCustomConfig.schema.json",
+      "javaType" : "aws.Property<aws.servicediscovery.HealthCheckCustomConfig>"
     },
     "DnsConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-dnsconfig",
-      "$ref" : "AWS_ServiceDiscovery_Service.DnsConfig.schema.json"
+      "$ref" : "AWS_ServiceDiscovery_Service.DnsConfig.schema.json",
+      "javaType" : "aws.Property<aws.servicediscovery.DnsConfig>"
     },
     "NamespaceId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid",
@@ -26,7 +28,8 @@
     },
     "HealthCheckConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-healthcheckconfig",
-      "$ref" : "AWS_ServiceDiscovery_Service.HealthCheckConfig.schema.json"
+      "$ref" : "AWS_ServiceDiscovery_Service.HealthCheckConfig.schema.json",
+      "javaType" : "aws.Property<aws.servicediscovery.HealthCheckConfig>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-name",

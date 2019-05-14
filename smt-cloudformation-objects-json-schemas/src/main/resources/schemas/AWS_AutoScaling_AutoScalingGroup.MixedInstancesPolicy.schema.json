@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html",
   "type" : "object",
   "javaType" : "aws.autoscaling.MixedInstancesPolicy",
+  "javaInterfaces" : [ "aws.Property<MixedInstancesPolicy>" ],
   "properties" : {
     "InstancesDistribution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html#cfn-as-mixedinstancespolicy-instancesdistribution",
-      "$ref" : "AWS_AutoScaling_AutoScalingGroup.InstancesDistribution.schema.json"
+      "$ref" : "AWS_AutoScaling_AutoScalingGroup.InstancesDistribution.schema.json",
+      "javaType" : "aws.Property<aws.autoscaling.InstancesDistribution>"
     },
     "LaunchTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html#cfn-as-mixedinstancespolicy-launchtemplate",
-      "$ref" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplate.schema.json"
+      "$ref" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplate.schema.json",
+      "javaType" : "aws.Property<aws.autoscaling.LaunchTemplate>"
     }
   }
 }

@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "QueryString",
     "QueryStringCacheKeys"
 })
-public class ForwardedValues {
+public class ForwardedValues implements Property<ForwardedValues>
+{
 
     /**
      * Cookies
@@ -36,7 +38,7 @@ public class ForwardedValues {
      */
     @JsonProperty("Cookies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cookies.html")
-    private Cookies cookies;
+    private Property<Cookies> cookies;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers
      * 
@@ -66,7 +68,7 @@ public class ForwardedValues {
      * 
      */
     @JsonIgnore
-    public Cookies getCookies() {
+    public Property<Cookies> getCookies() {
         return cookies;
     }
 
@@ -77,11 +79,11 @@ public class ForwardedValues {
      * 
      */
     @JsonIgnore
-    public void setCookies(Cookies cookies) {
+    public void setCookies(Property<Cookies> cookies) {
         this.cookies = cookies;
     }
 
-    public ForwardedValues withCookies(Cookies cookies) {
+    public ForwardedValues withCookies(Property<Cookies> cookies) {
         this.cookies = cookies;
         return this;
     }

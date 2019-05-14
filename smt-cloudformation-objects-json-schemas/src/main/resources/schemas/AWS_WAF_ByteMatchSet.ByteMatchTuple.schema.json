@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html",
   "type" : "object",
   "javaType" : "aws.waf.ByteMatchTuple",
+  "javaInterfaces" : [ "aws.Property<ByteMatchTuple>" ],
   "properties" : {
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-fieldtomatch",
-      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json"
+      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json",
+      "javaType" : "aws.Property<aws.waf.FieldToMatch>"
     },
     "PositionalConstraint" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-positionalconstraint",

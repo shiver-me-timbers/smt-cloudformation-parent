@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ValidFrom",
     "ValidUntil"
 })
-public class SpotFleetRequestConfigData {
+public class SpotFleetRequestConfigData implements Property<SpotFleetRequestConfigData>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-allocationstrategy
@@ -74,7 +76,7 @@ public class SpotFleetRequestConfigData {
     @JsonProperty("LaunchSpecifications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications")
-    private Set<SpotFleetLaunchSpecification> launchSpecifications = new LinkedHashSet<SpotFleetLaunchSpecification>();
+    private Set<Property<SpotFleetLaunchSpecification>> launchSpecifications = new LinkedHashSet<Property<SpotFleetLaunchSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs
      * 
@@ -82,7 +84,7 @@ public class SpotFleetRequestConfigData {
     @JsonProperty("LaunchTemplateConfigs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-launchtemplateconfigs")
-    private Set<LaunchTemplateConfig> launchTemplateConfigs = new LinkedHashSet<LaunchTemplateConfig>();
+    private Set<Property<LaunchTemplateConfig>> launchTemplateConfigs = new LinkedHashSet<Property<LaunchTemplateConfig>>();
     /**
      * LoadBalancersConfig
      * <p>
@@ -91,7 +93,7 @@ public class SpotFleetRequestConfigData {
      */
     @JsonProperty("LoadBalancersConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-loadbalancersconfig.html")
-    private LoadBalancersConfig loadBalancersConfig;
+    private Property<LoadBalancersConfig> loadBalancersConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata-replaceunhealthyinstances
      * 
@@ -239,7 +241,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public Set<SpotFleetLaunchSpecification> getLaunchSpecifications() {
+    public Set<Property<SpotFleetLaunchSpecification>> getLaunchSpecifications() {
         return launchSpecifications;
     }
 
@@ -248,11 +250,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public void setLaunchSpecifications(Set<SpotFleetLaunchSpecification> launchSpecifications) {
+    public void setLaunchSpecifications(Set<Property<SpotFleetLaunchSpecification>> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
     }
 
-    public SpotFleetRequestConfigData withLaunchSpecifications(Set<SpotFleetLaunchSpecification> launchSpecifications) {
+    public SpotFleetRequestConfigData withLaunchSpecifications(Set<Property<SpotFleetLaunchSpecification>> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
         return this;
     }
@@ -262,7 +264,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public Set<LaunchTemplateConfig> getLaunchTemplateConfigs() {
+    public Set<Property<LaunchTemplateConfig>> getLaunchTemplateConfigs() {
         return launchTemplateConfigs;
     }
 
@@ -271,11 +273,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateConfigs(Set<LaunchTemplateConfig> launchTemplateConfigs) {
+    public void setLaunchTemplateConfigs(Set<Property<LaunchTemplateConfig>> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
     }
 
-    public SpotFleetRequestConfigData withLaunchTemplateConfigs(Set<LaunchTemplateConfig> launchTemplateConfigs) {
+    public SpotFleetRequestConfigData withLaunchTemplateConfigs(Set<Property<LaunchTemplateConfig>> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
         return this;
     }
@@ -287,7 +289,7 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public LoadBalancersConfig getLoadBalancersConfig() {
+    public Property<LoadBalancersConfig> getLoadBalancersConfig() {
         return loadBalancersConfig;
     }
 
@@ -298,11 +300,11 @@ public class SpotFleetRequestConfigData {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancersConfig(LoadBalancersConfig loadBalancersConfig) {
+    public void setLoadBalancersConfig(Property<LoadBalancersConfig> loadBalancersConfig) {
         this.loadBalancersConfig = loadBalancersConfig;
     }
 
-    public SpotFleetRequestConfigData withLoadBalancersConfig(LoadBalancersConfig loadBalancersConfig) {
+    public SpotFleetRequestConfigData withLoadBalancersConfig(Property<LoadBalancersConfig> loadBalancersConfig) {
         this.loadBalancersConfig = loadBalancersConfig;
         return this;
     }

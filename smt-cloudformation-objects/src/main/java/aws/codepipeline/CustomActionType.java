@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -46,7 +47,7 @@ public class CustomActionType {
     @JsonProperty("ConfigurationProperties")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-configurationproperties")
-    private Set<ConfigurationProperties> configurationProperties = new LinkedHashSet<ConfigurationProperties>();
+    private Set<Property<ConfigurationProperties>> configurationProperties = new LinkedHashSet<Property<ConfigurationProperties>>();
     /**
      * ArtifactDetails
      * <p>
@@ -55,7 +56,7 @@ public class CustomActionType {
      */
     @JsonProperty("InputArtifactDetails")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html")
-    private ArtifactDetails inputArtifactDetails;
+    private Property<aws.codepipeline.ArtifactDetails> inputArtifactDetails;
     /**
      * ArtifactDetails
      * <p>
@@ -64,7 +65,7 @@ public class CustomActionType {
      */
     @JsonProperty("OutputArtifactDetails")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html")
-    private ArtifactDetails outputArtifactDetails;
+    private Property<aws.codepipeline.ArtifactDetails> outputArtifactDetails;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider
      * 
@@ -80,7 +81,7 @@ public class CustomActionType {
      */
     @JsonProperty("Settings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-settings.html")
-    private Settings settings;
+    private Property<Settings> settings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version
      * 
@@ -117,7 +118,7 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public Set<ConfigurationProperties> getConfigurationProperties() {
+    public Set<Property<ConfigurationProperties>> getConfigurationProperties() {
         return configurationProperties;
     }
 
@@ -126,11 +127,11 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public void setConfigurationProperties(Set<ConfigurationProperties> configurationProperties) {
+    public void setConfigurationProperties(Set<Property<ConfigurationProperties>> configurationProperties) {
         this.configurationProperties = configurationProperties;
     }
 
-    public CustomActionType withConfigurationProperties(Set<ConfigurationProperties> configurationProperties) {
+    public CustomActionType withConfigurationProperties(Set<Property<ConfigurationProperties>> configurationProperties) {
         this.configurationProperties = configurationProperties;
         return this;
     }
@@ -142,7 +143,7 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public ArtifactDetails getInputArtifactDetails() {
+    public Property<aws.codepipeline.ArtifactDetails> getInputArtifactDetails() {
         return inputArtifactDetails;
     }
 
@@ -153,11 +154,11 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public void setInputArtifactDetails(ArtifactDetails inputArtifactDetails) {
+    public void setInputArtifactDetails(Property<aws.codepipeline.ArtifactDetails> inputArtifactDetails) {
         this.inputArtifactDetails = inputArtifactDetails;
     }
 
-    public CustomActionType withInputArtifactDetails(ArtifactDetails inputArtifactDetails) {
+    public CustomActionType withInputArtifactDetails(Property<aws.codepipeline.ArtifactDetails> inputArtifactDetails) {
         this.inputArtifactDetails = inputArtifactDetails;
         return this;
     }
@@ -169,7 +170,7 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public ArtifactDetails getOutputArtifactDetails() {
+    public Property<aws.codepipeline.ArtifactDetails> getOutputArtifactDetails() {
         return outputArtifactDetails;
     }
 
@@ -180,11 +181,11 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public void setOutputArtifactDetails(ArtifactDetails outputArtifactDetails) {
+    public void setOutputArtifactDetails(Property<aws.codepipeline.ArtifactDetails> outputArtifactDetails) {
         this.outputArtifactDetails = outputArtifactDetails;
     }
 
-    public CustomActionType withOutputArtifactDetails(ArtifactDetails outputArtifactDetails) {
+    public CustomActionType withOutputArtifactDetails(Property<aws.codepipeline.ArtifactDetails> outputArtifactDetails) {
         this.outputArtifactDetails = outputArtifactDetails;
         return this;
     }
@@ -219,7 +220,7 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public Settings getSettings() {
+    public Property<Settings> getSettings() {
         return settings;
     }
 
@@ -230,11 +231,11 @@ public class CustomActionType {
      * 
      */
     @JsonIgnore
-    public void setSettings(Settings settings) {
+    public void setSettings(Property<Settings> settings) {
         this.settings = settings;
     }
 
-    public CustomActionType withSettings(Settings settings) {
+    public CustomActionType withSettings(Property<Settings> settings) {
         this.settings = settings;
         return this;
     }

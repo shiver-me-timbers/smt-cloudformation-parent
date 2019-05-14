@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "HadoopJarStep",
     "Name"
 })
-public class StepConfig {
+public class StepConfig implements Property<StepConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html#cfn-elasticmapreduce-cluster-stepconfig-actiononfailure
@@ -40,7 +42,7 @@ public class StepConfig {
      */
     @JsonProperty("HadoopJarStep")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html")
-    private HadoopJarStepConfig hadoopJarStep;
+    private Property<HadoopJarStepConfig> hadoopJarStep;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html#cfn-elasticmapreduce-cluster-stepconfig-name
      * 
@@ -79,7 +81,7 @@ public class StepConfig {
      * 
      */
     @JsonIgnore
-    public HadoopJarStepConfig getHadoopJarStep() {
+    public Property<HadoopJarStepConfig> getHadoopJarStep() {
         return hadoopJarStep;
     }
 
@@ -90,11 +92,11 @@ public class StepConfig {
      * 
      */
     @JsonIgnore
-    public void setHadoopJarStep(HadoopJarStepConfig hadoopJarStep) {
+    public void setHadoopJarStep(Property<HadoopJarStepConfig> hadoopJarStep) {
         this.hadoopJarStep = hadoopJarStep;
     }
 
-    public StepConfig withHadoopJarStep(HadoopJarStepConfig hadoopJarStep) {
+    public StepConfig withHadoopJarStep(Property<HadoopJarStepConfig> hadoopJarStep) {
         this.hadoopJarStep = hadoopJarStep;
         return this;
     }

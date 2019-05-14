@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ShutdownEventConfiguration"
 })
-public class LifecycleEventConfiguration {
+public class LifecycleEventConfiguration implements Property<LifecycleEventConfiguration>
+{
 
     /**
      * ShutdownEventConfiguration
@@ -31,7 +33,7 @@ public class LifecycleEventConfiguration {
      */
     @JsonProperty("ShutdownEventConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html")
-    private ShutdownEventConfiguration shutdownEventConfiguration;
+    private Property<ShutdownEventConfiguration> shutdownEventConfiguration;
 
     /**
      * ShutdownEventConfiguration
@@ -40,7 +42,7 @@ public class LifecycleEventConfiguration {
      * 
      */
     @JsonIgnore
-    public ShutdownEventConfiguration getShutdownEventConfiguration() {
+    public Property<ShutdownEventConfiguration> getShutdownEventConfiguration() {
         return shutdownEventConfiguration;
     }
 
@@ -51,11 +53,11 @@ public class LifecycleEventConfiguration {
      * 
      */
     @JsonIgnore
-    public void setShutdownEventConfiguration(ShutdownEventConfiguration shutdownEventConfiguration) {
+    public void setShutdownEventConfiguration(Property<ShutdownEventConfiguration> shutdownEventConfiguration) {
         this.shutdownEventConfiguration = shutdownEventConfiguration;
     }
 
-    public LifecycleEventConfiguration withShutdownEventConfiguration(ShutdownEventConfiguration shutdownEventConfiguration) {
+    public LifecycleEventConfiguration withShutdownEventConfiguration(Property<ShutdownEventConfiguration> shutdownEventConfiguration) {
         this.shutdownEventConfiguration = shutdownEventConfiguration;
         return this;
     }

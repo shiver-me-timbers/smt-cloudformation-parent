@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html",
   "type" : "object",
   "javaType" : "aws.elasticbeanstalk.ApplicationResourceLifecycleConfig",
+  "javaInterfaces" : [ "aws.Property<ApplicationResourceLifecycleConfig>" ],
   "properties" : {
     "ServiceRole" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-servicerole",
@@ -13,7 +14,8 @@
     },
     "VersionLifecycleConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html#cfn-elasticbeanstalk-application-applicationresourcelifecycleconfig-versionlifecycleconfig",
-      "$ref" : "AWS_ElasticBeanstalk_Application.ApplicationVersionLifecycleConfig.schema.json"
+      "$ref" : "AWS_ElasticBeanstalk_Application.ApplicationVersionLifecycleConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticbeanstalk.ApplicationVersionLifecycleConfig>"
     }
   }
 }

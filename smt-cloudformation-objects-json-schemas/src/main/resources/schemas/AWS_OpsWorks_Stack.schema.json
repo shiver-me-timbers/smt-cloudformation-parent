@@ -18,7 +18,8 @@
     },
     "ChefConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-chefconfiguration",
-      "$ref" : "AWS_OpsWorks_Stack.ChefConfiguration.schema.json"
+      "$ref" : "AWS_OpsWorks_Stack.ChefConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.ChefConfiguration>"
     },
     "CloneAppIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids",
@@ -35,11 +36,13 @@
     },
     "ConfigurationManager" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-configmanager",
-      "$ref" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json"
+      "$ref" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.StackConfigurationManager>"
     },
     "CustomCookbooksSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custcookbooksource",
-      "$ref" : "AWS_OpsWorks_App.DataSource.schema.json"
+      "$ref" : "AWS_OpsWorks_App.DataSource.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.Source>"
     },
     "CustomJson" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson",
@@ -85,7 +88,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_OpsWorks_Stack.ElasticIp.schema.json"
+        "$ref" : "AWS_OpsWorks_Stack.ElasticIp.schema.json",
+        "javaType" : "aws.Property<aws.opsworks.ElasticIp>"
       }
     },
     "HostnameTheme" : {
@@ -103,7 +107,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_OpsWorks_Stack.RdsDbInstance.schema.json"
+        "$ref" : "AWS_OpsWorks_Stack.RdsDbInstance.schema.json",
+        "javaType" : "aws.Property<aws.opsworks.RdsDbInstance>"
       }
     },
     "ServiceRoleArn" : {
@@ -120,7 +125,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "UseCustomCookbooks" : {

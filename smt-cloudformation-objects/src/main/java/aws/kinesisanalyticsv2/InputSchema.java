@@ -3,6 +3,7 @@ package aws.kinesisanalyticsv2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RecordColumns",
     "RecordFormat"
 })
-public class InputSchema {
+public class InputSchema implements Property<InputSchema>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html#cfn-kinesisanalyticsv2-application-inputschema-recordencoding
@@ -40,7 +42,7 @@ public class InputSchema {
      */
     @JsonProperty("RecordColumns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html#cfn-kinesisanalyticsv2-application-inputschema-recordcolumns")
-    private List<RecordColumn> recordColumns = new ArrayList<RecordColumn>();
+    private List<Property<RecordColumn>> recordColumns = new ArrayList<Property<RecordColumn>>();
     /**
      * RecordFormat
      * <p>
@@ -49,7 +51,7 @@ public class InputSchema {
      */
     @JsonProperty("RecordFormat")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationreferencedatasource-recordformat.html")
-    private RecordFormat recordFormat;
+    private Property<RecordFormat> recordFormat;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html#cfn-kinesisanalyticsv2-application-inputschema-recordencoding
@@ -79,7 +81,7 @@ public class InputSchema {
      * 
      */
     @JsonIgnore
-    public List<RecordColumn> getRecordColumns() {
+    public List<Property<RecordColumn>> getRecordColumns() {
         return recordColumns;
     }
 
@@ -88,11 +90,11 @@ public class InputSchema {
      * 
      */
     @JsonIgnore
-    public void setRecordColumns(List<RecordColumn> recordColumns) {
+    public void setRecordColumns(List<Property<RecordColumn>> recordColumns) {
         this.recordColumns = recordColumns;
     }
 
-    public InputSchema withRecordColumns(List<RecordColumn> recordColumns) {
+    public InputSchema withRecordColumns(List<Property<RecordColumn>> recordColumns) {
         this.recordColumns = recordColumns;
         return this;
     }
@@ -104,7 +106,7 @@ public class InputSchema {
      * 
      */
     @JsonIgnore
-    public RecordFormat getRecordFormat() {
+    public Property<RecordFormat> getRecordFormat() {
         return recordFormat;
     }
 
@@ -115,11 +117,11 @@ public class InputSchema {
      * 
      */
     @JsonIgnore
-    public void setRecordFormat(RecordFormat recordFormat) {
+    public void setRecordFormat(Property<RecordFormat> recordFormat) {
         this.recordFormat = recordFormat;
     }
 
-    public InputSchema withRecordFormat(RecordFormat recordFormat) {
+    public InputSchema withRecordFormat(Property<RecordFormat> recordFormat) {
         this.recordFormat = recordFormat;
         return this;
     }

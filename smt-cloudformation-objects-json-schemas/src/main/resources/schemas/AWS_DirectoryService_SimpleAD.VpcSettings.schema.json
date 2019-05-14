@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html",
   "type" : "object",
   "javaType" : "aws.directoryservice.VpcSettings",
+  "javaInterfaces" : [ "aws.Property<VpcSettings>" ],
   "properties" : {
     "SubnetIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html#cfn-directoryservice-simplead-vpcsettings-subnetids",

@@ -1,6 +1,7 @@
 
 package aws.ssm;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "OutputS3BucketName",
     "DocumentHash"
 })
-public class MaintenanceWindowRunCommandParameters {
+public class MaintenanceWindowRunCommandParameters implements Property<MaintenanceWindowRunCommandParameters>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-timeoutseconds
@@ -81,7 +83,7 @@ public class MaintenanceWindowRunCommandParameters {
      */
     @JsonProperty("NotificationConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-notificationconfig.html")
-    private NotificationConfig notificationConfig;
+    private Property<NotificationConfig> notificationConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowruncommandparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowruncommandparameters-outputs3bucketname
      * 
@@ -242,7 +244,7 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonIgnore
-    public NotificationConfig getNotificationConfig() {
+    public Property<NotificationConfig> getNotificationConfig() {
         return notificationConfig;
     }
 
@@ -253,11 +255,11 @@ public class MaintenanceWindowRunCommandParameters {
      * 
      */
     @JsonIgnore
-    public void setNotificationConfig(NotificationConfig notificationConfig) {
+    public void setNotificationConfig(Property<NotificationConfig> notificationConfig) {
         this.notificationConfig = notificationConfig;
     }
 
-    public MaintenanceWindowRunCommandParameters withNotificationConfig(NotificationConfig notificationConfig) {
+    public MaintenanceWindowRunCommandParameters withNotificationConfig(Property<NotificationConfig> notificationConfig) {
         this.notificationConfig = notificationConfig;
         return this;
     }

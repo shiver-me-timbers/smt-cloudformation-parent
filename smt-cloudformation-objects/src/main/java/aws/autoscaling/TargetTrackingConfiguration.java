@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PredefinedMetricSpecification",
     "TargetValue"
 })
-public class TargetTrackingConfiguration {
+public class TargetTrackingConfiguration implements Property<TargetTrackingConfiguration>
+{
 
     /**
      * CustomizedMetricSpecification
@@ -34,7 +36,7 @@ public class TargetTrackingConfiguration {
      */
     @JsonProperty("CustomizedMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html")
-    private CustomizedMetricSpecification customizedMetricSpecification;
+    private Property<CustomizedMetricSpecification> customizedMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein
      * 
@@ -50,7 +52,7 @@ public class TargetTrackingConfiguration {
      */
     @JsonProperty("PredefinedMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html")
-    private PredefinedMetricSpecification predefinedMetricSpecification;
+    private Property<PredefinedMetricSpecification> predefinedMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue
      * 
@@ -66,7 +68,7 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public CustomizedMetricSpecification getCustomizedMetricSpecification() {
+    public Property<CustomizedMetricSpecification> getCustomizedMetricSpecification() {
         return customizedMetricSpecification;
     }
 
@@ -77,11 +79,11 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
+    public void setCustomizedMetricSpecification(Property<CustomizedMetricSpecification> customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
     }
 
-    public TargetTrackingConfiguration withCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
+    public TargetTrackingConfiguration withCustomizedMetricSpecification(Property<CustomizedMetricSpecification> customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
         return this;
     }
@@ -116,7 +118,7 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public PredefinedMetricSpecification getPredefinedMetricSpecification() {
+    public Property<PredefinedMetricSpecification> getPredefinedMetricSpecification() {
         return predefinedMetricSpecification;
     }
 
@@ -127,11 +129,11 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
+    public void setPredefinedMetricSpecification(Property<PredefinedMetricSpecification> predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
     }
 
-    public TargetTrackingConfiguration withPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
+    public TargetTrackingConfiguration withPredefinedMetricSpecification(Property<PredefinedMetricSpecification> predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
         return this;
     }

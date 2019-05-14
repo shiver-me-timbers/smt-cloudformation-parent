@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html",
   "type" : "object",
   "javaType" : "aws.iot.SqsAction",
+  "javaInterfaces" : [ "aws.Property<SqsAction>" ],
   "properties" : {
     "QueueUrl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-sqsaction.html#cfn-iot-topicrule-sqsaction-queueurl",

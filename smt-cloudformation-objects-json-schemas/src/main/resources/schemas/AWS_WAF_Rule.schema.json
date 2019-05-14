@@ -21,7 +21,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_WAFRegional_Rule.Predicate.schema.json"
+        "$ref" : "AWS_WAFRegional_Rule.Predicate.schema.json",
+        "javaType" : "aws.Property<aws.wafregional.Predicate>"
       }
     }
   }

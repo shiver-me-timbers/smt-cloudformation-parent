@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html",
   "type" : "object",
   "javaType" : "aws.gamelift.S3Location",
+  "javaInterfaces" : [ "aws.Property<S3Location>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket",

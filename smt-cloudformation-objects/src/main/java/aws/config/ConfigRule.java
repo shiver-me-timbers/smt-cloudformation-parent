@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -64,7 +65,7 @@ public class ConfigRule {
      */
     @JsonProperty("Scope")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html")
-    private Scope scope;
+    private Property<Scope> scope;
     /**
      * OrganizationAggregationSource
      * <p>
@@ -73,7 +74,7 @@ public class ConfigRule {
      */
     @JsonProperty("Source")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html")
-    private OrganizationAggregationSource source;
+    private Property<Source> source;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
@@ -174,7 +175,7 @@ public class ConfigRule {
      * 
      */
     @JsonIgnore
-    public Scope getScope() {
+    public Property<Scope> getScope() {
         return scope;
     }
 
@@ -185,11 +186,11 @@ public class ConfigRule {
      * 
      */
     @JsonIgnore
-    public void setScope(Scope scope) {
+    public void setScope(Property<Scope> scope) {
         this.scope = scope;
     }
 
-    public ConfigRule withScope(Scope scope) {
+    public ConfigRule withScope(Property<Scope> scope) {
         this.scope = scope;
         return this;
     }
@@ -201,7 +202,7 @@ public class ConfigRule {
      * 
      */
     @JsonIgnore
-    public OrganizationAggregationSource getSource() {
+    public Property<Source> getSource() {
         return source;
     }
 
@@ -212,11 +213,11 @@ public class ConfigRule {
      * 
      */
     @JsonIgnore
-    public void setSource(OrganizationAggregationSource source) {
+    public void setSource(Property<Source> source) {
         this.source = source;
     }
 
-    public ConfigRule withSource(OrganizationAggregationSource source) {
+    public ConfigRule withSource(Property<Source> source) {
         this.source = source;
         return this;
     }

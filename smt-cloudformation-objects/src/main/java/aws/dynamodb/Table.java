@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -46,7 +47,7 @@ public class Table {
      */
     @JsonProperty("AttributeDefinitions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef")
-    private List<AttributeDefinition> attributeDefinitions = new ArrayList<AttributeDefinition>();
+    private List<Property<AttributeDefinition>> attributeDefinitions = new ArrayList<Property<AttributeDefinition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-billingmode
      * 
@@ -60,7 +61,7 @@ public class Table {
      */
     @JsonProperty("GlobalSecondaryIndexes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-gsi")
-    private List<GlobalSecondaryIndex> globalSecondaryIndexes = new ArrayList<GlobalSecondaryIndex>();
+    private List<Property<GlobalSecondaryIndex>> globalSecondaryIndexes = new ArrayList<Property<GlobalSecondaryIndex>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-keyschema
      * 
@@ -68,14 +69,14 @@ public class Table {
     @JsonProperty("KeySchema")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-keyschema")
-    private Set<KeySchema> keySchema = new LinkedHashSet<KeySchema>();
+    private Set<Property<KeySchema>> keySchema = new LinkedHashSet<Property<KeySchema>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-lsi
      * 
      */
     @JsonProperty("LocalSecondaryIndexes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-lsi")
-    private List<LocalSecondaryIndex> localSecondaryIndexes = new ArrayList<LocalSecondaryIndex>();
+    private List<Property<LocalSecondaryIndex>> localSecondaryIndexes = new ArrayList<Property<LocalSecondaryIndex>>();
     /**
      * PointInTimeRecoverySpecification
      * <p>
@@ -84,7 +85,7 @@ public class Table {
      */
     @JsonProperty("PointInTimeRecoverySpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html")
-    private PointInTimeRecoverySpecification pointInTimeRecoverySpecification;
+    private Property<PointInTimeRecoverySpecification> pointInTimeRecoverySpecification;
     /**
      * ProvisionedThroughput
      * <p>
@@ -93,7 +94,7 @@ public class Table {
      */
     @JsonProperty("ProvisionedThroughput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html")
-    private ProvisionedThroughput provisionedThroughput;
+    private Property<ProvisionedThroughput> provisionedThroughput;
     /**
      * SSESpecification
      * <p>
@@ -102,7 +103,7 @@ public class Table {
      */
     @JsonProperty("SSESpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html")
-    private SSESpecification sSESpecification;
+    private Property<SSESpecification> sSESpecification;
     /**
      * StreamSpecification
      * <p>
@@ -111,7 +112,7 @@ public class Table {
      */
     @JsonProperty("StreamSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html")
-    private StreamSpecification streamSpecification;
+    private Property<StreamSpecification> streamSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tablename
      * 
@@ -125,7 +126,7 @@ public class Table {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * TimeToLiveSpecification
      * <p>
@@ -134,14 +135,14 @@ public class Table {
      */
     @JsonProperty("TimeToLiveSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html")
-    private TimeToLiveSpecification timeToLiveSpecification;
+    private Property<TimeToLiveSpecification> timeToLiveSpecification;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html#cfn-dynamodb-table-attributedef
      * 
      */
     @JsonIgnore
-    public List<AttributeDefinition> getAttributeDefinitions() {
+    public List<Property<AttributeDefinition>> getAttributeDefinitions() {
         return attributeDefinitions;
     }
 
@@ -150,11 +151,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setAttributeDefinitions(List<AttributeDefinition> attributeDefinitions) {
+    public void setAttributeDefinitions(List<Property<AttributeDefinition>> attributeDefinitions) {
         this.attributeDefinitions = attributeDefinitions;
     }
 
-    public Table withAttributeDefinitions(List<AttributeDefinition> attributeDefinitions) {
+    public Table withAttributeDefinitions(List<Property<AttributeDefinition>> attributeDefinitions) {
         this.attributeDefinitions = attributeDefinitions;
         return this;
     }
@@ -187,7 +188,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public List<GlobalSecondaryIndex> getGlobalSecondaryIndexes() {
+    public List<Property<GlobalSecondaryIndex>> getGlobalSecondaryIndexes() {
         return globalSecondaryIndexes;
     }
 
@@ -196,11 +197,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setGlobalSecondaryIndexes(List<GlobalSecondaryIndex> globalSecondaryIndexes) {
+    public void setGlobalSecondaryIndexes(List<Property<GlobalSecondaryIndex>> globalSecondaryIndexes) {
         this.globalSecondaryIndexes = globalSecondaryIndexes;
     }
 
-    public Table withGlobalSecondaryIndexes(List<GlobalSecondaryIndex> globalSecondaryIndexes) {
+    public Table withGlobalSecondaryIndexes(List<Property<GlobalSecondaryIndex>> globalSecondaryIndexes) {
         this.globalSecondaryIndexes = globalSecondaryIndexes;
         return this;
     }
@@ -210,7 +211,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public Set<KeySchema> getKeySchema() {
+    public Set<Property<KeySchema>> getKeySchema() {
         return keySchema;
     }
 
@@ -219,11 +220,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setKeySchema(Set<KeySchema> keySchema) {
+    public void setKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
     }
 
-    public Table withKeySchema(Set<KeySchema> keySchema) {
+    public Table withKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
         return this;
     }
@@ -233,7 +234,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public List<LocalSecondaryIndex> getLocalSecondaryIndexes() {
+    public List<Property<LocalSecondaryIndex>> getLocalSecondaryIndexes() {
         return localSecondaryIndexes;
     }
 
@@ -242,11 +243,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setLocalSecondaryIndexes(List<LocalSecondaryIndex> localSecondaryIndexes) {
+    public void setLocalSecondaryIndexes(List<Property<LocalSecondaryIndex>> localSecondaryIndexes) {
         this.localSecondaryIndexes = localSecondaryIndexes;
     }
 
-    public Table withLocalSecondaryIndexes(List<LocalSecondaryIndex> localSecondaryIndexes) {
+    public Table withLocalSecondaryIndexes(List<Property<LocalSecondaryIndex>> localSecondaryIndexes) {
         this.localSecondaryIndexes = localSecondaryIndexes;
         return this;
     }
@@ -258,7 +259,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public PointInTimeRecoverySpecification getPointInTimeRecoverySpecification() {
+    public Property<PointInTimeRecoverySpecification> getPointInTimeRecoverySpecification() {
         return pointInTimeRecoverySpecification;
     }
 
@@ -269,11 +270,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setPointInTimeRecoverySpecification(PointInTimeRecoverySpecification pointInTimeRecoverySpecification) {
+    public void setPointInTimeRecoverySpecification(Property<PointInTimeRecoverySpecification> pointInTimeRecoverySpecification) {
         this.pointInTimeRecoverySpecification = pointInTimeRecoverySpecification;
     }
 
-    public Table withPointInTimeRecoverySpecification(PointInTimeRecoverySpecification pointInTimeRecoverySpecification) {
+    public Table withPointInTimeRecoverySpecification(Property<PointInTimeRecoverySpecification> pointInTimeRecoverySpecification) {
         this.pointInTimeRecoverySpecification = pointInTimeRecoverySpecification;
         return this;
     }
@@ -285,7 +286,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public ProvisionedThroughput getProvisionedThroughput() {
+    public Property<ProvisionedThroughput> getProvisionedThroughput() {
         return provisionedThroughput;
     }
 
@@ -296,11 +297,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
+    public void setProvisionedThroughput(Property<ProvisionedThroughput> provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
     }
 
-    public Table withProvisionedThroughput(ProvisionedThroughput provisionedThroughput) {
+    public Table withProvisionedThroughput(Property<ProvisionedThroughput> provisionedThroughput) {
         this.provisionedThroughput = provisionedThroughput;
         return this;
     }
@@ -312,7 +313,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public SSESpecification getSSESpecification() {
+    public Property<SSESpecification> getSSESpecification() {
         return sSESpecification;
     }
 
@@ -323,11 +324,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setSSESpecification(SSESpecification sSESpecification) {
+    public void setSSESpecification(Property<SSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
     }
 
-    public Table withSSESpecification(SSESpecification sSESpecification) {
+    public Table withSSESpecification(Property<SSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
         return this;
     }
@@ -339,7 +340,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public StreamSpecification getStreamSpecification() {
+    public Property<StreamSpecification> getStreamSpecification() {
         return streamSpecification;
     }
 
@@ -350,11 +351,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setStreamSpecification(StreamSpecification streamSpecification) {
+    public void setStreamSpecification(Property<StreamSpecification> streamSpecification) {
         this.streamSpecification = streamSpecification;
     }
 
-    public Table withStreamSpecification(StreamSpecification streamSpecification) {
+    public Table withStreamSpecification(Property<StreamSpecification> streamSpecification) {
         this.streamSpecification = streamSpecification;
         return this;
     }
@@ -387,7 +388,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -396,11 +397,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Table withTags(List<Tag> tags) {
+    public Table withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -412,7 +413,7 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public TimeToLiveSpecification getTimeToLiveSpecification() {
+    public Property<TimeToLiveSpecification> getTimeToLiveSpecification() {
         return timeToLiveSpecification;
     }
 
@@ -423,11 +424,11 @@ public class Table {
      * 
      */
     @JsonIgnore
-    public void setTimeToLiveSpecification(TimeToLiveSpecification timeToLiveSpecification) {
+    public void setTimeToLiveSpecification(Property<TimeToLiveSpecification> timeToLiveSpecification) {
         this.timeToLiveSpecification = timeToLiveSpecification;
     }
 
-    public Table withTimeToLiveSpecification(TimeToLiveSpecification timeToLiveSpecification) {
+    public Table withTimeToLiveSpecification(Property<TimeToLiveSpecification> timeToLiveSpecification) {
         this.timeToLiveSpecification = timeToLiveSpecification;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html",
   "type" : "object",
   "javaType" : "aws.iot.KinesisAction",
+  "javaInterfaces" : [ "aws.Property<KinesisAction>" ],
   "properties" : {
     "PartitionKey" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-kinesisaction.html#cfn-iot-topicrule-kinesisaction-partitionkey",

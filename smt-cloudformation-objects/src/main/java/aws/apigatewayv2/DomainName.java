@@ -3,6 +3,7 @@ package aws.apigatewayv2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class DomainName {
      */
     @JsonProperty("DomainNameConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainnameconfigurations")
-    private List<DomainNameConfiguration> domainNameConfigurations = new ArrayList<DomainNameConfiguration>();
+    private List<Property<DomainNameConfiguration>> domainNameConfigurations = new ArrayList<Property<DomainNameConfiguration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainname
@@ -69,7 +70,7 @@ public class DomainName {
      * 
      */
     @JsonIgnore
-    public List<DomainNameConfiguration> getDomainNameConfigurations() {
+    public List<Property<DomainNameConfiguration>> getDomainNameConfigurations() {
         return domainNameConfigurations;
     }
 
@@ -78,11 +79,11 @@ public class DomainName {
      * 
      */
     @JsonIgnore
-    public void setDomainNameConfigurations(List<DomainNameConfiguration> domainNameConfigurations) {
+    public void setDomainNameConfigurations(List<Property<DomainNameConfiguration>> domainNameConfigurations) {
         this.domainNameConfigurations = domainNameConfigurations;
     }
 
-    public DomainName withDomainNameConfigurations(List<DomainNameConfiguration> domainNameConfigurations) {
+    public DomainName withDomainNameConfigurations(List<Property<DomainNameConfiguration>> domainNameConfigurations) {
         this.domainNameConfigurations = domainNameConfigurations;
         return this;
     }

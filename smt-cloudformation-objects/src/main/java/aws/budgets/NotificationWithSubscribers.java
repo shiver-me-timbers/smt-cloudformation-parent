@@ -3,6 +3,7 @@ package aws.budgets;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Subscribers",
     "Notification"
 })
-public class NotificationWithSubscribers {
+public class NotificationWithSubscribers implements Property<NotificationWithSubscribers>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
@@ -32,7 +34,7 @@ public class NotificationWithSubscribers {
      */
     @JsonProperty("Subscribers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers")
-    private List<Subscriber> subscribers = new ArrayList<Subscriber>();
+    private List<Property<Subscriber>> subscribers = new ArrayList<Property<Subscriber>>();
     /**
      * Notification
      * <p>
@@ -41,14 +43,14 @@ public class NotificationWithSubscribers {
      */
     @JsonProperty("Notification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notification.html")
-    private Notification notification;
+    private Property<Notification> notification;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-notificationwithsubscribers.html#cfn-budgets-budget-notificationwithsubscribers-subscribers
      * 
      */
     @JsonIgnore
-    public List<Subscriber> getSubscribers() {
+    public List<Property<Subscriber>> getSubscribers() {
         return subscribers;
     }
 
@@ -57,11 +59,11 @@ public class NotificationWithSubscribers {
      * 
      */
     @JsonIgnore
-    public void setSubscribers(List<Subscriber> subscribers) {
+    public void setSubscribers(List<Property<Subscriber>> subscribers) {
         this.subscribers = subscribers;
     }
 
-    public NotificationWithSubscribers withSubscribers(List<Subscriber> subscribers) {
+    public NotificationWithSubscribers withSubscribers(List<Property<Subscriber>> subscribers) {
         this.subscribers = subscribers;
         return this;
     }
@@ -73,7 +75,7 @@ public class NotificationWithSubscribers {
      * 
      */
     @JsonIgnore
-    public Notification getNotification() {
+    public Property<Notification> getNotification() {
         return notification;
     }
 
@@ -84,11 +86,11 @@ public class NotificationWithSubscribers {
      * 
      */
     @JsonIgnore
-    public void setNotification(Notification notification) {
+    public void setNotification(Property<Notification> notification) {
         this.notification = notification;
     }
 
-    public NotificationWithSubscribers withNotification(Notification notification) {
+    public NotificationWithSubscribers withNotification(Property<Notification> notification) {
         this.notification = notification;
         return this;
     }

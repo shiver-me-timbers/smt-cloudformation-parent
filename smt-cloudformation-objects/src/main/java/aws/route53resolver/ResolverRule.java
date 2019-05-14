@@ -3,6 +3,7 @@ package aws.route53resolver;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -58,14 +59,14 @@ public class ResolverRule {
      */
     @JsonProperty("TargetIps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-targetips")
-    private List<TargetAddress> targetIps = new ArrayList<TargetAddress>();
+    private List<Property<TargetAddress>> targetIps = new ArrayList<Property<TargetAddress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-name
      * 
@@ -148,7 +149,7 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public List<TargetAddress> getTargetIps() {
+    public List<Property<TargetAddress>> getTargetIps() {
         return targetIps;
     }
 
@@ -157,11 +158,11 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public void setTargetIps(List<TargetAddress> targetIps) {
+    public void setTargetIps(List<Property<TargetAddress>> targetIps) {
         this.targetIps = targetIps;
     }
 
-    public ResolverRule withTargetIps(List<TargetAddress> targetIps) {
+    public ResolverRule withTargetIps(List<Property<TargetAddress>> targetIps) {
         this.targetIps = targetIps;
         return this;
     }
@@ -171,7 +172,7 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -180,11 +181,11 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public ResolverRule withTags(List<Tag> tags) {
+    public ResolverRule withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

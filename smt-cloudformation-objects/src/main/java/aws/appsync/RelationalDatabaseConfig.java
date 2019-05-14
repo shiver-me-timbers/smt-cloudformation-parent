@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RdsHttpEndpointConfig",
     "RelationalDatabaseSourceType"
 })
-public class RelationalDatabaseConfig {
+public class RelationalDatabaseConfig implements Property<RelationalDatabaseConfig>
+{
 
     /**
      * RdsHttpEndpointConfig
@@ -32,7 +34,7 @@ public class RelationalDatabaseConfig {
      */
     @JsonProperty("RdsHttpEndpointConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-rdshttpendpointconfig.html")
-    private RdsHttpEndpointConfig rdsHttpEndpointConfig;
+    private Property<RdsHttpEndpointConfig> rdsHttpEndpointConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype
      * 
@@ -48,7 +50,7 @@ public class RelationalDatabaseConfig {
      * 
      */
     @JsonIgnore
-    public RdsHttpEndpointConfig getRdsHttpEndpointConfig() {
+    public Property<RdsHttpEndpointConfig> getRdsHttpEndpointConfig() {
         return rdsHttpEndpointConfig;
     }
 
@@ -59,11 +61,11 @@ public class RelationalDatabaseConfig {
      * 
      */
     @JsonIgnore
-    public void setRdsHttpEndpointConfig(RdsHttpEndpointConfig rdsHttpEndpointConfig) {
+    public void setRdsHttpEndpointConfig(Property<RdsHttpEndpointConfig> rdsHttpEndpointConfig) {
         this.rdsHttpEndpointConfig = rdsHttpEndpointConfig;
     }
 
-    public RelationalDatabaseConfig withRdsHttpEndpointConfig(RdsHttpEndpointConfig rdsHttpEndpointConfig) {
+    public RelationalDatabaseConfig withRdsHttpEndpointConfig(Property<RdsHttpEndpointConfig> rdsHttpEndpointConfig) {
         this.rdsHttpEndpointConfig = rdsHttpEndpointConfig;
         return this;
     }

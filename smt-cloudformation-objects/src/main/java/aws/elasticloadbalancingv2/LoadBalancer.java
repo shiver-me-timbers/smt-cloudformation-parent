@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -51,7 +52,7 @@ public class LoadBalancer {
     @JsonProperty("LoadBalancerAttributes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattributes")
-    private Set<LoadBalancerAttribute> loadBalancerAttributes = new LinkedHashSet<LoadBalancerAttribute>();
+    private Set<Property<LoadBalancerAttribute>> loadBalancerAttributes = new LinkedHashSet<Property<LoadBalancerAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-name
      * 
@@ -81,7 +82,7 @@ public class LoadBalancer {
     @JsonProperty("SubnetMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmappings")
-    private Set<SubnetMapping> subnetMappings = new LinkedHashSet<SubnetMapping>();
+    private Set<Property<SubnetMapping>> subnetMappings = new LinkedHashSet<Property<SubnetMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnets
      * 
@@ -96,7 +97,7 @@ public class LoadBalancer {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-type
      * 
@@ -133,7 +134,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<LoadBalancerAttribute> getLoadBalancerAttributes() {
+    public Set<Property<LoadBalancerAttribute>> getLoadBalancerAttributes() {
         return loadBalancerAttributes;
     }
 
@@ -142,11 +143,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancerAttributes(Set<LoadBalancerAttribute> loadBalancerAttributes) {
+    public void setLoadBalancerAttributes(Set<Property<LoadBalancerAttribute>> loadBalancerAttributes) {
         this.loadBalancerAttributes = loadBalancerAttributes;
     }
 
-    public LoadBalancer withLoadBalancerAttributes(Set<LoadBalancerAttribute> loadBalancerAttributes) {
+    public LoadBalancer withLoadBalancerAttributes(Set<Property<LoadBalancerAttribute>> loadBalancerAttributes) {
         this.loadBalancerAttributes = loadBalancerAttributes;
         return this;
     }
@@ -225,7 +226,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<SubnetMapping> getSubnetMappings() {
+    public Set<Property<SubnetMapping>> getSubnetMappings() {
         return subnetMappings;
     }
 
@@ -234,11 +235,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setSubnetMappings(Set<SubnetMapping> subnetMappings) {
+    public void setSubnetMappings(Set<Property<SubnetMapping>> subnetMappings) {
         this.subnetMappings = subnetMappings;
     }
 
-    public LoadBalancer withSubnetMappings(Set<SubnetMapping> subnetMappings) {
+    public LoadBalancer withSubnetMappings(Set<Property<SubnetMapping>> subnetMappings) {
         this.subnetMappings = subnetMappings;
         return this;
     }
@@ -271,7 +272,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -280,11 +281,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public LoadBalancer withTags(List<Tag> tags) {
+    public LoadBalancer withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

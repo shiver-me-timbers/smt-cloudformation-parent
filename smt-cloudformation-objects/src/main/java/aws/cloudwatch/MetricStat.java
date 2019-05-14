@@ -1,6 +1,7 @@
 
 package aws.cloudwatch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Stat",
     "Unit"
 })
-public class MetricStat {
+public class MetricStat implements Property<MetricStat>
+{
 
     /**
      * Metric
@@ -34,7 +36,7 @@ public class MetricStat {
      */
     @JsonProperty("Metric")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html")
-    private Metric metric;
+    private Property<Metric> metric;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metricstat.html#cfn-cloudwatch-alarm-metricstat-period
      * 
@@ -64,7 +66,7 @@ public class MetricStat {
      * 
      */
     @JsonIgnore
-    public Metric getMetric() {
+    public Property<Metric> getMetric() {
         return metric;
     }
 
@@ -75,11 +77,11 @@ public class MetricStat {
      * 
      */
     @JsonIgnore
-    public void setMetric(Metric metric) {
+    public void setMetric(Property<Metric> metric) {
         this.metric = metric;
     }
 
-    public MetricStat withMetric(Metric metric) {
+    public MetricStat withMetric(Property<Metric> metric) {
         this.metric = metric;
         return this;
     }

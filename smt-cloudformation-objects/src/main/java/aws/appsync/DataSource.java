@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -61,7 +62,7 @@ public class DataSource {
      */
     @JsonProperty("HttpConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html")
-    private HttpConfig httpConfig;
+    private Property<HttpConfig> httpConfig;
     /**
      * RelationalDatabaseConfig
      * <p>
@@ -70,7 +71,7 @@ public class DataSource {
      */
     @JsonProperty("RelationalDatabaseConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html")
-    private RelationalDatabaseConfig relationalDatabaseConfig;
+    private Property<RelationalDatabaseConfig> relationalDatabaseConfig;
     /**
      * LambdaConfig
      * <p>
@@ -79,7 +80,7 @@ public class DataSource {
      */
     @JsonProperty("LambdaConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html")
-    private LambdaConfig lambdaConfig;
+    private Property<LambdaConfig> lambdaConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid
      * 
@@ -102,7 +103,7 @@ public class DataSource {
      */
     @JsonProperty("DynamoDBConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html")
-    private DynamoDBConfig dynamoDBConfig;
+    private Property<DynamoDBConfig> dynamoDBConfig;
     /**
      * ElasticsearchConfig
      * <p>
@@ -111,7 +112,7 @@ public class DataSource {
      */
     @JsonProperty("ElasticsearchConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html")
-    private ElasticsearchConfig elasticsearchConfig;
+    private Property<ElasticsearchConfig> elasticsearchConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type
@@ -189,7 +190,7 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public HttpConfig getHttpConfig() {
+    public Property<HttpConfig> getHttpConfig() {
         return httpConfig;
     }
 
@@ -200,11 +201,11 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public void setHttpConfig(HttpConfig httpConfig) {
+    public void setHttpConfig(Property<HttpConfig> httpConfig) {
         this.httpConfig = httpConfig;
     }
 
-    public DataSource withHttpConfig(HttpConfig httpConfig) {
+    public DataSource withHttpConfig(Property<HttpConfig> httpConfig) {
         this.httpConfig = httpConfig;
         return this;
     }
@@ -216,7 +217,7 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public RelationalDatabaseConfig getRelationalDatabaseConfig() {
+    public Property<RelationalDatabaseConfig> getRelationalDatabaseConfig() {
         return relationalDatabaseConfig;
     }
 
@@ -227,11 +228,11 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public void setRelationalDatabaseConfig(RelationalDatabaseConfig relationalDatabaseConfig) {
+    public void setRelationalDatabaseConfig(Property<RelationalDatabaseConfig> relationalDatabaseConfig) {
         this.relationalDatabaseConfig = relationalDatabaseConfig;
     }
 
-    public DataSource withRelationalDatabaseConfig(RelationalDatabaseConfig relationalDatabaseConfig) {
+    public DataSource withRelationalDatabaseConfig(Property<RelationalDatabaseConfig> relationalDatabaseConfig) {
         this.relationalDatabaseConfig = relationalDatabaseConfig;
         return this;
     }
@@ -243,7 +244,7 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public LambdaConfig getLambdaConfig() {
+    public Property<LambdaConfig> getLambdaConfig() {
         return lambdaConfig;
     }
 
@@ -254,11 +255,11 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public void setLambdaConfig(LambdaConfig lambdaConfig) {
+    public void setLambdaConfig(Property<LambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
 
-    public DataSource withLambdaConfig(LambdaConfig lambdaConfig) {
+    public DataSource withLambdaConfig(Property<LambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
         return this;
     }
@@ -316,7 +317,7 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public DynamoDBConfig getDynamoDBConfig() {
+    public Property<DynamoDBConfig> getDynamoDBConfig() {
         return dynamoDBConfig;
     }
 
@@ -327,11 +328,11 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public void setDynamoDBConfig(DynamoDBConfig dynamoDBConfig) {
+    public void setDynamoDBConfig(Property<DynamoDBConfig> dynamoDBConfig) {
         this.dynamoDBConfig = dynamoDBConfig;
     }
 
-    public DataSource withDynamoDBConfig(DynamoDBConfig dynamoDBConfig) {
+    public DataSource withDynamoDBConfig(Property<DynamoDBConfig> dynamoDBConfig) {
         this.dynamoDBConfig = dynamoDBConfig;
         return this;
     }
@@ -343,7 +344,7 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public ElasticsearchConfig getElasticsearchConfig() {
+    public Property<ElasticsearchConfig> getElasticsearchConfig() {
         return elasticsearchConfig;
     }
 
@@ -354,11 +355,11 @@ public class DataSource {
      * 
      */
     @JsonIgnore
-    public void setElasticsearchConfig(ElasticsearchConfig elasticsearchConfig) {
+    public void setElasticsearchConfig(Property<ElasticsearchConfig> elasticsearchConfig) {
         this.elasticsearchConfig = elasticsearchConfig;
     }
 
-    public DataSource withElasticsearchConfig(ElasticsearchConfig elasticsearchConfig) {
+    public DataSource withElasticsearchConfig(Property<ElasticsearchConfig> elasticsearchConfig) {
         this.elasticsearchConfig = elasticsearchConfig;
         return this;
     }

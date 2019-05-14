@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html",
   "type" : "object",
   "javaType" : "aws.appmesh.VirtualRouterListener",
+  "javaInterfaces" : [ "aws.Property<VirtualRouterListener>" ],
   "properties" : {
     "PortMapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html#cfn-appmesh-virtualrouter-virtualrouterlistener-portmapping",
-      "$ref" : "AWS_AppMesh_VirtualRouter.PortMapping.schema.json"
+      "$ref" : "AWS_AppMesh_VirtualRouter.PortMapping.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.PortMapping>"
     }
   }
 }

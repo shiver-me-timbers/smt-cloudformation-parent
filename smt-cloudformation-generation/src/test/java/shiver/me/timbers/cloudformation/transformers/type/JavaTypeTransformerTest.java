@@ -21,6 +21,7 @@ public class JavaTypeTransformerTest {
         final JavaTypes javaTypes = mock(JavaTypes.class);
         final String resourceName = someString();
         final CloudformationType cloudformationType = mock(CloudformationType.class);
+        final HashMap<String, Object> schema = new HashMap<>();
 
         final String packageName = someString();
         final String className = someString();
@@ -29,12 +30,11 @@ public class JavaTypeTransformerTest {
         given(javaTypes.parsePackage(resourceName)).willReturn(packageName);
         given(javaTypes.extractClassName(resourceName)).willReturn(className);
 
-        final HashMap<String, Object> actual = new HashMap<>();
 
         // When
-        new JavaTypeTransformer(javaTypes).transform(resourceName, cloudformationType, actual);
+        new JavaTypeTransformer(javaTypes).transform(resourceName, cloudformationType, schema);
 
         // Then
-        assertThat(actual, hasEntry("javaType", format("%s.%s", packageName, className)));
+        assertThat(schema, hasEntry("javaType", format("%s.%s", packageName, className)));
     }
 }

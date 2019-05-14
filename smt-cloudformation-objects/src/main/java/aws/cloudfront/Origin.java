@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Id",
     "CustomOriginConfig"
 })
-public class Origin {
+public class Origin implements Property<Origin>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
@@ -36,7 +38,7 @@ public class Origin {
      */
     @JsonProperty("OriginCustomHeaders")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders")
-    private List<OriginCustomHeader> originCustomHeaders = new ArrayList<OriginCustomHeader>();
+    private List<Property<OriginCustomHeader>> originCustomHeaders = new ArrayList<Property<OriginCustomHeader>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-domainname
      * 
@@ -52,7 +54,7 @@ public class Origin {
      */
     @JsonProperty("S3OriginConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html")
-    private S3OriginConfig s3OriginConfig;
+    private Property<S3OriginConfig> s3OriginConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath
      * 
@@ -75,14 +77,14 @@ public class Origin {
      */
     @JsonProperty("CustomOriginConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-customoriginconfig.html")
-    private CustomOriginConfig customOriginConfig;
+    private Property<CustomOriginConfig> customOriginConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders
      * 
      */
     @JsonIgnore
-    public List<OriginCustomHeader> getOriginCustomHeaders() {
+    public List<Property<OriginCustomHeader>> getOriginCustomHeaders() {
         return originCustomHeaders;
     }
 
@@ -91,11 +93,11 @@ public class Origin {
      * 
      */
     @JsonIgnore
-    public void setOriginCustomHeaders(List<OriginCustomHeader> originCustomHeaders) {
+    public void setOriginCustomHeaders(List<Property<OriginCustomHeader>> originCustomHeaders) {
         this.originCustomHeaders = originCustomHeaders;
     }
 
-    public Origin withOriginCustomHeaders(List<OriginCustomHeader> originCustomHeaders) {
+    public Origin withOriginCustomHeaders(List<Property<OriginCustomHeader>> originCustomHeaders) {
         this.originCustomHeaders = originCustomHeaders;
         return this;
     }
@@ -130,7 +132,7 @@ public class Origin {
      * 
      */
     @JsonIgnore
-    public S3OriginConfig getS3OriginConfig() {
+    public Property<S3OriginConfig> getS3OriginConfig() {
         return s3OriginConfig;
     }
 
@@ -141,11 +143,11 @@ public class Origin {
      * 
      */
     @JsonIgnore
-    public void setS3OriginConfig(S3OriginConfig s3OriginConfig) {
+    public void setS3OriginConfig(Property<S3OriginConfig> s3OriginConfig) {
         this.s3OriginConfig = s3OriginConfig;
     }
 
-    public Origin withS3OriginConfig(S3OriginConfig s3OriginConfig) {
+    public Origin withS3OriginConfig(Property<S3OriginConfig> s3OriginConfig) {
         this.s3OriginConfig = s3OriginConfig;
         return this;
     }
@@ -203,7 +205,7 @@ public class Origin {
      * 
      */
     @JsonIgnore
-    public CustomOriginConfig getCustomOriginConfig() {
+    public Property<CustomOriginConfig> getCustomOriginConfig() {
         return customOriginConfig;
     }
 
@@ -214,11 +216,11 @@ public class Origin {
      * 
      */
     @JsonIgnore
-    public void setCustomOriginConfig(CustomOriginConfig customOriginConfig) {
+    public void setCustomOriginConfig(Property<CustomOriginConfig> customOriginConfig) {
         this.customOriginConfig = customOriginConfig;
     }
 
-    public Origin withCustomOriginConfig(CustomOriginConfig customOriginConfig) {
+    public Origin withCustomOriginConfig(Property<CustomOriginConfig> customOriginConfig) {
         this.customOriginConfig = customOriginConfig;
         return this;
     }

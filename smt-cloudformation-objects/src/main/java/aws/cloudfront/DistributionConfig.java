@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Restrictions",
     "CacheBehaviors"
 })
-public class DistributionConfig {
+public class DistributionConfig implements Property<DistributionConfig>
+{
 
     /**
      * Logging
@@ -47,7 +49,7 @@ public class DistributionConfig {
      */
     @JsonProperty("Logging")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html")
-    private Logging logging;
+    private Property<Logging> logging;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment
      * 
@@ -68,7 +70,7 @@ public class DistributionConfig {
      */
     @JsonProperty("Origins")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins")
-    private List<Origin> origins = new ArrayList<Origin>();
+    private List<Property<Origin>> origins = new ArrayList<Property<Origin>>();
     /**
      * ViewerCertificate
      * <p>
@@ -77,7 +79,7 @@ public class DistributionConfig {
      */
     @JsonProperty("ViewerCertificate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html")
-    private ViewerCertificate viewerCertificate;
+    private Property<ViewerCertificate> viewerCertificate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass
      * 
@@ -93,14 +95,14 @@ public class DistributionConfig {
      */
     @JsonProperty("DefaultCacheBehavior")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html")
-    private DefaultCacheBehavior defaultCacheBehavior;
+    private Property<DefaultCacheBehavior> defaultCacheBehavior;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses
      * 
      */
     @JsonProperty("CustomErrorResponses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses")
-    private List<CustomErrorResponse> customErrorResponses = new ArrayList<CustomErrorResponse>();
+    private List<Property<CustomErrorResponse>> customErrorResponses = new ArrayList<Property<CustomErrorResponse>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-enabled
      * 
@@ -144,14 +146,14 @@ public class DistributionConfig {
      */
     @JsonProperty("Restrictions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html")
-    private Restrictions restrictions;
+    private Property<Restrictions> restrictions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors
      * 
      */
     @JsonProperty("CacheBehaviors")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors")
-    private List<CacheBehavior> cacheBehaviors = new ArrayList<CacheBehavior>();
+    private List<Property<CacheBehavior>> cacheBehaviors = new ArrayList<Property<CacheBehavior>>();
 
     /**
      * Logging
@@ -160,7 +162,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public Logging getLogging() {
+    public Property<Logging> getLogging() {
         return logging;
     }
 
@@ -171,11 +173,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setLogging(Logging logging) {
+    public void setLogging(Property<Logging> logging) {
         this.logging = logging;
     }
 
-    public DistributionConfig withLogging(Logging logging) {
+    public DistributionConfig withLogging(Property<Logging> logging) {
         this.logging = logging;
         return this;
     }
@@ -231,7 +233,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public List<Origin> getOrigins() {
+    public List<Property<Origin>> getOrigins() {
         return origins;
     }
 
@@ -240,11 +242,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setOrigins(List<Origin> origins) {
+    public void setOrigins(List<Property<Origin>> origins) {
         this.origins = origins;
     }
 
-    public DistributionConfig withOrigins(List<Origin> origins) {
+    public DistributionConfig withOrigins(List<Property<Origin>> origins) {
         this.origins = origins;
         return this;
     }
@@ -256,7 +258,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public ViewerCertificate getViewerCertificate() {
+    public Property<ViewerCertificate> getViewerCertificate() {
         return viewerCertificate;
     }
 
@@ -267,11 +269,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setViewerCertificate(ViewerCertificate viewerCertificate) {
+    public void setViewerCertificate(Property<ViewerCertificate> viewerCertificate) {
         this.viewerCertificate = viewerCertificate;
     }
 
-    public DistributionConfig withViewerCertificate(ViewerCertificate viewerCertificate) {
+    public DistributionConfig withViewerCertificate(Property<ViewerCertificate> viewerCertificate) {
         this.viewerCertificate = viewerCertificate;
         return this;
     }
@@ -306,7 +308,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public DefaultCacheBehavior getDefaultCacheBehavior() {
+    public Property<DefaultCacheBehavior> getDefaultCacheBehavior() {
         return defaultCacheBehavior;
     }
 
@@ -317,11 +319,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setDefaultCacheBehavior(DefaultCacheBehavior defaultCacheBehavior) {
+    public void setDefaultCacheBehavior(Property<DefaultCacheBehavior> defaultCacheBehavior) {
         this.defaultCacheBehavior = defaultCacheBehavior;
     }
 
-    public DistributionConfig withDefaultCacheBehavior(DefaultCacheBehavior defaultCacheBehavior) {
+    public DistributionConfig withDefaultCacheBehavior(Property<DefaultCacheBehavior> defaultCacheBehavior) {
         this.defaultCacheBehavior = defaultCacheBehavior;
         return this;
     }
@@ -331,7 +333,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public List<CustomErrorResponse> getCustomErrorResponses() {
+    public List<Property<CustomErrorResponse>> getCustomErrorResponses() {
         return customErrorResponses;
     }
 
@@ -340,11 +342,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setCustomErrorResponses(List<CustomErrorResponse> customErrorResponses) {
+    public void setCustomErrorResponses(List<Property<CustomErrorResponse>> customErrorResponses) {
         this.customErrorResponses = customErrorResponses;
     }
 
-    public DistributionConfig withCustomErrorResponses(List<CustomErrorResponse> customErrorResponses) {
+    public DistributionConfig withCustomErrorResponses(List<Property<CustomErrorResponse>> customErrorResponses) {
         this.customErrorResponses = customErrorResponses;
         return this;
     }
@@ -471,7 +473,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public Restrictions getRestrictions() {
+    public Property<Restrictions> getRestrictions() {
         return restrictions;
     }
 
@@ -482,11 +484,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setRestrictions(Restrictions restrictions) {
+    public void setRestrictions(Property<Restrictions> restrictions) {
         this.restrictions = restrictions;
     }
 
-    public DistributionConfig withRestrictions(Restrictions restrictions) {
+    public DistributionConfig withRestrictions(Property<Restrictions> restrictions) {
         this.restrictions = restrictions;
         return this;
     }
@@ -496,7 +498,7 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public List<CacheBehavior> getCacheBehaviors() {
+    public List<Property<CacheBehavior>> getCacheBehaviors() {
         return cacheBehaviors;
     }
 
@@ -505,11 +507,11 @@ public class DistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setCacheBehaviors(List<CacheBehavior> cacheBehaviors) {
+    public void setCacheBehaviors(List<Property<CacheBehavior>> cacheBehaviors) {
         this.cacheBehaviors = cacheBehaviors;
     }
 
-    public DistributionConfig withCacheBehaviors(List<CacheBehavior> cacheBehaviors) {
+    public DistributionConfig withCacheBehaviors(List<Property<CacheBehavior>> cacheBehaviors) {
         this.cacheBehaviors = cacheBehaviors;
         return this;
     }

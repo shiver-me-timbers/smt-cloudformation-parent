@@ -1,6 +1,7 @@
 
 package alexa.ask;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class Skill {
      */
     @JsonProperty("AuthenticationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html")
-    private AuthenticationConfiguration authenticationConfiguration;
+    private Property<AuthenticationConfiguration> authenticationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ask-skill.html#cfn-ask-skill-vendorid
      * 
@@ -49,7 +50,7 @@ public class Skill {
      */
     @JsonProperty("SkillPackage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html")
-    private SkillPackage skillPackage;
+    private Property<SkillPackage> skillPackage;
 
     /**
      * AuthenticationConfiguration
@@ -58,7 +59,7 @@ public class Skill {
      * 
      */
     @JsonIgnore
-    public AuthenticationConfiguration getAuthenticationConfiguration() {
+    public Property<AuthenticationConfiguration> getAuthenticationConfiguration() {
         return authenticationConfiguration;
     }
 
@@ -69,11 +70,11 @@ public class Skill {
      * 
      */
     @JsonIgnore
-    public void setAuthenticationConfiguration(AuthenticationConfiguration authenticationConfiguration) {
+    public void setAuthenticationConfiguration(Property<AuthenticationConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
     }
 
-    public Skill withAuthenticationConfiguration(AuthenticationConfiguration authenticationConfiguration) {
+    public Skill withAuthenticationConfiguration(Property<AuthenticationConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
         return this;
     }
@@ -108,7 +109,7 @@ public class Skill {
      * 
      */
     @JsonIgnore
-    public SkillPackage getSkillPackage() {
+    public Property<SkillPackage> getSkillPackage() {
         return skillPackage;
     }
 
@@ -119,11 +120,11 @@ public class Skill {
      * 
      */
     @JsonIgnore
-    public void setSkillPackage(SkillPackage skillPackage) {
+    public void setSkillPackage(Property<SkillPackage> skillPackage) {
         this.skillPackage = skillPackage;
     }
 
-    public Skill withSkillPackage(SkillPackage skillPackage) {
+    public Skill withSkillPackage(Property<SkillPackage> skillPackage) {
         this.skillPackage = skillPackage;
         return this;
     }

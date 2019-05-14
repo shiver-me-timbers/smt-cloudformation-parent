@@ -1,6 +1,7 @@
 
 package aws.lambda;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -63,7 +64,7 @@ public class Alias {
      */
     @JsonProperty("RoutingConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html")
-    private AliasRoutingConfiguration routingConfig;
+    private Property<AliasRoutingConfiguration> routingConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-description
@@ -164,7 +165,7 @@ public class Alias {
      * 
      */
     @JsonIgnore
-    public AliasRoutingConfiguration getRoutingConfig() {
+    public Property<AliasRoutingConfiguration> getRoutingConfig() {
         return routingConfig;
     }
 
@@ -175,11 +176,11 @@ public class Alias {
      * 
      */
     @JsonIgnore
-    public void setRoutingConfig(AliasRoutingConfiguration routingConfig) {
+    public void setRoutingConfig(Property<AliasRoutingConfiguration> routingConfig) {
         this.routingConfig = routingConfig;
     }
 
-    public Alias withRoutingConfig(AliasRoutingConfiguration routingConfig) {
+    public Alias withRoutingConfig(Property<AliasRoutingConfiguration> routingConfig) {
         this.routingConfig = routingConfig;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html",
   "type" : "object",
   "javaType" : "aws.ec2.FleetLaunchTemplateSpecificationRequest",
+  "javaInterfaces" : [ "aws.Property<FleetLaunchTemplateSpecificationRequest>" ],
   "properties" : {
     "LaunchTemplateName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest-launchtemplatename",

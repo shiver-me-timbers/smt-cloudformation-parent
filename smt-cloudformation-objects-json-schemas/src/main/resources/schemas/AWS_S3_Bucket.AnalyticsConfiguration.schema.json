@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html",
   "type" : "object",
   "javaType" : "aws.s3.AnalyticsConfiguration",
+  "javaInterfaces" : [ "aws.Property<AnalyticsConfiguration>" ],
   "properties" : {
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-id",
@@ -18,14 +19,16 @@
     },
     "StorageClassAnalysis" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-storageclassanalysis",
-      "$ref" : "AWS_S3_Bucket.StorageClassAnalysis.schema.json"
+      "$ref" : "AWS_S3_Bucket.StorageClassAnalysis.schema.json",
+      "javaType" : "aws.Property<aws.s3.StorageClassAnalysis>"
     },
     "TagFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-analyticsconfiguration.html#cfn-s3-bucket-analyticsconfiguration-tagfilters",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.TagFilter.schema.json"
+        "$ref" : "AWS_S3_Bucket.TagFilter.schema.json",
+        "javaType" : "aws.Property<aws.s3.TagFilter>"
       }
     }
   }

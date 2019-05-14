@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class LaunchTemplate {
      */
     @JsonProperty("LaunchTemplateData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html")
-    private LaunchTemplateData launchTemplateData;
+    private Property<LaunchTemplateData> launchTemplateData;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
@@ -71,7 +72,7 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public LaunchTemplateData getLaunchTemplateData() {
+    public Property<LaunchTemplateData> getLaunchTemplateData() {
         return launchTemplateData;
     }
 
@@ -82,11 +83,11 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateData(LaunchTemplateData launchTemplateData) {
+    public void setLaunchTemplateData(Property<LaunchTemplateData> launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
     }
 
-    public LaunchTemplate withLaunchTemplateData(LaunchTemplateData launchTemplateData) {
+    public LaunchTemplate withLaunchTemplateData(Property<LaunchTemplateData> launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
         return this;
     }

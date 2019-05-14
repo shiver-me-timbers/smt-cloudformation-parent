@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PutItem",
     "RoleArn"
 })
-public class DynamoDBv2Action {
+public class DynamoDBv2Action implements Property<DynamoDBv2Action>
+{
 
     /**
      * PutItemInput
@@ -32,7 +34,7 @@ public class DynamoDBv2Action {
      */
     @JsonProperty("PutItem")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-putiteminput.html")
-    private PutItemInput putItem;
+    private Property<PutItemInput> putItem;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-rolearn
      * 
@@ -48,7 +50,7 @@ public class DynamoDBv2Action {
      * 
      */
     @JsonIgnore
-    public PutItemInput getPutItem() {
+    public Property<PutItemInput> getPutItem() {
         return putItem;
     }
 
@@ -59,11 +61,11 @@ public class DynamoDBv2Action {
      * 
      */
     @JsonIgnore
-    public void setPutItem(PutItemInput putItem) {
+    public void setPutItem(Property<PutItemInput> putItem) {
         this.putItem = putItem;
     }
 
-    public DynamoDBv2Action withPutItem(PutItemInput putItem) {
+    public DynamoDBv2Action withPutItem(Property<PutItemInput> putItem) {
         this.putItem = putItem;
         return this;
     }

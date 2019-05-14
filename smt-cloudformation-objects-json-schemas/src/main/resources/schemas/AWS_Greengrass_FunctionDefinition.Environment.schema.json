@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html",
   "type" : "object",
   "javaType" : "aws.greengrass.Environment",
+  "javaInterfaces" : [ "aws.Property<Environment>" ],
   "properties" : {
     "Variables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-variables",
@@ -12,13 +13,15 @@
     },
     "Execution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-execution",
-      "$ref" : "AWS_Greengrass_FunctionDefinition.Execution.schema.json"
+      "$ref" : "AWS_Greengrass_FunctionDefinition.Execution.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.Execution>"
     },
     "ResourceAccessPolicies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-resourceaccesspolicies",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Greengrass_FunctionDefinition.ResourceAccessPolicy.schema.json"
+        "$ref" : "AWS_Greengrass_FunctionDefinition.ResourceAccessPolicy.schema.json",
+        "javaType" : "aws.Property<aws.greengrass.ResourceAccessPolicy>"
       }
     },
     "AccessSysfs" : {

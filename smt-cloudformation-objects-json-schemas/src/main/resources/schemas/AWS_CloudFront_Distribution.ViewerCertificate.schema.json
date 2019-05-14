@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html",
   "type" : "object",
   "javaType" : "aws.cloudfront.ViewerCertificate",
+  "javaInterfaces" : [ "aws.Property<ViewerCertificate>" ],
   "properties" : {
     "IamCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-viewercertificate.html#cfn-cloudfront-distribution-viewercertificate-iamcertificateid",

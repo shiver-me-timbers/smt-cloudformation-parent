@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html",
   "type" : "object",
   "javaType" : "aws.appmesh.HealthCheck",
+  "javaInterfaces" : [ "aws.Property<HealthCheck>" ],
   "properties" : {
     "Path" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-path",

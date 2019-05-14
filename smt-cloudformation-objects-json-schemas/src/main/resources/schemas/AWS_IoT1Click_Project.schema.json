@@ -13,7 +13,8 @@
     },
     "PlacementTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-placementtemplate",
-      "$ref" : "AWS_IoT1Click_Project.PlacementTemplate.schema.json"
+      "$ref" : "AWS_IoT1Click_Project.PlacementTemplate.schema.json",
+      "javaType" : "aws.Property<aws.iot1click.PlacementTemplate>"
     },
     "ProjectName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-projectname",

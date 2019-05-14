@@ -5,12 +5,14 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html",
   "type" : "object",
   "javaType" : "aws.cloudwatch.Metric",
+  "javaInterfaces" : [ "aws.Property<Metric>" ],
   "properties" : {
     "Dimensions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudwatch-alarm-metric.html#cfn-cloudwatch-alarm-metric-dimensions",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json"
+        "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json",
+        "javaType" : "aws.Property<aws.cloudwatch.Dimension>"
       }
     },
     "MetricName" : {

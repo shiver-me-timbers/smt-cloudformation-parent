@@ -3,6 +3,7 @@ package aws.elasticbeanstalk;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -70,7 +71,7 @@ public class Environment {
      */
     @JsonProperty("OptionSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings")
-    private List<OptionSetting> optionSettings = new ArrayList<OptionSetting>();
+    private List<Property<OptionSetting>> optionSettings = new ArrayList<Property<OptionSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn
      * 
@@ -91,7 +92,7 @@ public class Environment {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-elasticbeanstalk-environment-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-templatename
      * 
@@ -107,7 +108,7 @@ public class Environment {
      */
     @JsonProperty("Tier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html")
-    private Tier tier;
+    private Property<Tier> tier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel
      * 
@@ -213,7 +214,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public List<OptionSetting> getOptionSettings() {
+    public List<Property<OptionSetting>> getOptionSettings() {
         return optionSettings;
     }
 
@@ -222,11 +223,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setOptionSettings(List<OptionSetting> optionSettings) {
+    public void setOptionSettings(List<Property<OptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public Environment withOptionSettings(List<OptionSetting> optionSettings) {
+    public Environment withOptionSettings(List<Property<OptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }
@@ -282,7 +283,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -291,11 +292,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Environment withTags(List<Tag> tags) {
+    public Environment withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -330,7 +331,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public Tier getTier() {
+    public Property<Tier> getTier() {
         return tier;
     }
 
@@ -341,11 +342,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setTier(Tier tier) {
+    public void setTier(Property<Tier> tier) {
         this.tier = tier;
     }
 
-    public Environment withTier(Tier tier) {
+    public Environment withTier(Property<Tier> tier) {
         this.tier = tier;
         return this;
     }

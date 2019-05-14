@@ -3,6 +3,7 @@ package aws.cloud9;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,7 @@ public class EnvironmentEC2 {
      */
     @JsonProperty("Repositories")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-repositories")
-    private List<Repository> repositories = new ArrayList<Repository>();
+    private List<Property<Repository>> repositories = new ArrayList<Property<Repository>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-ownerarn
      * 
@@ -86,7 +87,7 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public List<Repository> getRepositories() {
+    public List<Property<Repository>> getRepositories() {
         return repositories;
     }
 
@@ -95,11 +96,11 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public void setRepositories(List<Repository> repositories) {
+    public void setRepositories(List<Property<Repository>> repositories) {
         this.repositories = repositories;
     }
 
-    public EnvironmentEC2 withRepositories(List<Repository> repositories) {
+    public EnvironmentEC2 withRepositories(List<Property<Repository>> repositories) {
         this.repositories = repositories;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KMSMasterKeyID",
     "SSEAlgorithm"
 })
-public class ServerSideEncryptionByDefault {
+public class ServerSideEncryptionByDefault implements Property<ServerSideEncryptionByDefault>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html#cfn-s3-bucket-serversideencryptionbydefault-kmsmasterkeyid

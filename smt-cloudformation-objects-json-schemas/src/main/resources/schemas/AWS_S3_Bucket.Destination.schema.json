@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html",
   "type" : "object",
   "javaType" : "aws.s3.Destination",
+  "javaInterfaces" : [ "aws.Property<Destination>" ],
   "properties" : {
     "BucketAccountId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html#cfn-s3-bucket-destination-bucketaccountid",

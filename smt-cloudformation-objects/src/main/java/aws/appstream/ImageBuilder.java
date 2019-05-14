@@ -3,6 +3,7 @@ package aws.appstream;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -58,7 +59,7 @@ public class ImageBuilder {
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html")
-    private VpcConfig vpcConfig;
+    private Property<VpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-enabledefaultinternetaccess
      * 
@@ -81,7 +82,7 @@ public class ImageBuilder {
      */
     @JsonProperty("DomainJoinInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html")
-    private DomainJoinInfo domainJoinInfo;
+    private Property<DomainJoinInfo> domainJoinInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-appstreamagentversion
      * 
@@ -102,7 +103,7 @@ public class ImageBuilder {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-name
      * 
@@ -171,7 +172,7 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public VpcConfig getVpcConfig() {
+    public Property<VpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
@@ -182,11 +183,11 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(VpcConfig vpcConfig) {
+    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public ImageBuilder withVpcConfig(VpcConfig vpcConfig) {
+    public ImageBuilder withVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -244,7 +245,7 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public DomainJoinInfo getDomainJoinInfo() {
+    public Property<DomainJoinInfo> getDomainJoinInfo() {
         return domainJoinInfo;
     }
 
@@ -255,11 +256,11 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public void setDomainJoinInfo(DomainJoinInfo domainJoinInfo) {
+    public void setDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
     }
 
-    public ImageBuilder withDomainJoinInfo(DomainJoinInfo domainJoinInfo) {
+    public ImageBuilder withDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
         return this;
     }
@@ -315,7 +316,7 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -324,11 +325,11 @@ public class ImageBuilder {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public ImageBuilder withTags(List<Tag> tags) {
+    public ImageBuilder withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html",
   "type" : "object",
   "javaType" : "aws.emr.Configuration",
+  "javaInterfaces" : [ "aws.Property<Configuration>" ],
   "properties" : {
     "Classification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification",
@@ -21,7 +22,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json"
+        "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.emr.Configuration>"
       }
     }
   }

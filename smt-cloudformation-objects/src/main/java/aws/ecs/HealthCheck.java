@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StartPeriod",
     "Timeout"
 })
-public class HealthCheck {
+public class HealthCheck implements Property<HealthCheck>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command

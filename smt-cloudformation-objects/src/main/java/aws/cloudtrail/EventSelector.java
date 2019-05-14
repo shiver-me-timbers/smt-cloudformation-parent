@@ -3,6 +3,7 @@ package aws.cloudtrail;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "IncludeManagementEvents",
     "ReadWriteType"
 })
-public class EventSelector {
+public class EventSelector implements Property<EventSelector>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources
@@ -35,7 +37,7 @@ public class EventSelector {
     @JsonProperty("DataResources")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-dataresources")
-    private Set<DataResource> dataResources = new LinkedHashSet<DataResource>();
+    private Set<Property<DataResource>> dataResources = new LinkedHashSet<Property<DataResource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-eventselector.html#cfn-cloudtrail-trail-eventselector-includemanagementevents
      * 
@@ -56,7 +58,7 @@ public class EventSelector {
      * 
      */
     @JsonIgnore
-    public Set<DataResource> getDataResources() {
+    public Set<Property<DataResource>> getDataResources() {
         return dataResources;
     }
 
@@ -65,11 +67,11 @@ public class EventSelector {
      * 
      */
     @JsonIgnore
-    public void setDataResources(Set<DataResource> dataResources) {
+    public void setDataResources(Set<Property<DataResource>> dataResources) {
         this.dataResources = dataResources;
     }
 
-    public EventSelector withDataResources(Set<DataResource> dataResources) {
+    public EventSelector withDataResources(Set<Property<DataResource>> dataResources) {
         this.dataResources = dataResources;
         return this;
     }

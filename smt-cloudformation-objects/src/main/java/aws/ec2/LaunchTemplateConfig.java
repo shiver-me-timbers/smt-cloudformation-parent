@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LaunchTemplateSpecification",
     "Overrides"
 })
-public class LaunchTemplateConfig {
+public class LaunchTemplateConfig implements Property<LaunchTemplateConfig>
+{
 
     /**
      * FleetLaunchTemplateSpecification
@@ -35,7 +37,7 @@ public class LaunchTemplateConfig {
      */
     @JsonProperty("LaunchTemplateSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html")
-    private FleetLaunchTemplateSpecification launchTemplateSpecification;
+    private Property<FleetLaunchTemplateSpecification> launchTemplateSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides
      * 
@@ -43,7 +45,7 @@ public class LaunchTemplateConfig {
     @JsonProperty("Overrides")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateconfig.html#cfn-ec2-spotfleet-launchtemplateconfig-overrides")
-    private Set<LaunchTemplateOverrides> overrides = new LinkedHashSet<LaunchTemplateOverrides>();
+    private Set<Property<LaunchTemplateOverrides>> overrides = new LinkedHashSet<Property<LaunchTemplateOverrides>>();
 
     /**
      * FleetLaunchTemplateSpecification
@@ -52,7 +54,7 @@ public class LaunchTemplateConfig {
      * 
      */
     @JsonIgnore
-    public FleetLaunchTemplateSpecification getLaunchTemplateSpecification() {
+    public Property<FleetLaunchTemplateSpecification> getLaunchTemplateSpecification() {
         return launchTemplateSpecification;
     }
 
@@ -63,11 +65,11 @@ public class LaunchTemplateConfig {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateSpecification(FleetLaunchTemplateSpecification launchTemplateSpecification) {
+    public void setLaunchTemplateSpecification(Property<FleetLaunchTemplateSpecification> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
     }
 
-    public LaunchTemplateConfig withLaunchTemplateSpecification(FleetLaunchTemplateSpecification launchTemplateSpecification) {
+    public LaunchTemplateConfig withLaunchTemplateSpecification(Property<FleetLaunchTemplateSpecification> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
         return this;
     }
@@ -77,7 +79,7 @@ public class LaunchTemplateConfig {
      * 
      */
     @JsonIgnore
-    public Set<LaunchTemplateOverrides> getOverrides() {
+    public Set<Property<LaunchTemplateOverrides>> getOverrides() {
         return overrides;
     }
 
@@ -86,11 +88,11 @@ public class LaunchTemplateConfig {
      * 
      */
     @JsonIgnore
-    public void setOverrides(Set<LaunchTemplateOverrides> overrides) {
+    public void setOverrides(Set<Property<LaunchTemplateOverrides>> overrides) {
         this.overrides = overrides;
     }
 
-    public LaunchTemplateConfig withOverrides(Set<LaunchTemplateOverrides> overrides) {
+    public LaunchTemplateConfig withOverrides(Set<Property<LaunchTemplateOverrides>> overrides) {
         this.overrides = overrides;
         return this;
     }

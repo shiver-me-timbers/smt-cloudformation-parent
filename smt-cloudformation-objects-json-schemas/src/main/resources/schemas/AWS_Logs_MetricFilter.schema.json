@@ -21,7 +21,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_Logs_MetricFilter.MetricTransformation.schema.json"
+        "$ref" : "AWS_Logs_MetricFilter.MetricTransformation.schema.json",
+        "javaType" : "aws.Property<aws.logs.MetricTransformation>"
       }
     }
   }

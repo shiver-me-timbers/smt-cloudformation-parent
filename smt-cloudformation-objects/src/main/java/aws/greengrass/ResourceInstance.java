@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Id",
     "Name"
 })
-public class ResourceInstance {
+public class ResourceInstance implements Property<ResourceInstance>
+{
 
     /**
      * ResourceDataContainer
@@ -33,7 +35,7 @@ public class ResourceInstance {
      */
     @JsonProperty("ResourceDataContainer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourcedatacontainer.html")
-    private ResourceDataContainer resourceDataContainer;
+    private Property<ResourceDataContainer> resourceDataContainer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourceinstance.html#cfn-greengrass-resourcedefinitionversion-resourceinstance-id
      * 
@@ -56,7 +58,7 @@ public class ResourceInstance {
      * 
      */
     @JsonIgnore
-    public ResourceDataContainer getResourceDataContainer() {
+    public Property<ResourceDataContainer> getResourceDataContainer() {
         return resourceDataContainer;
     }
 
@@ -67,11 +69,11 @@ public class ResourceInstance {
      * 
      */
     @JsonIgnore
-    public void setResourceDataContainer(ResourceDataContainer resourceDataContainer) {
+    public void setResourceDataContainer(Property<ResourceDataContainer> resourceDataContainer) {
         this.resourceDataContainer = resourceDataContainer;
     }
 
-    public ResourceInstance withResourceDataContainer(ResourceDataContainer resourceDataContainer) {
+    public ResourceInstance withResourceDataContainer(Property<ResourceDataContainer> resourceDataContainer) {
         this.resourceDataContainer = resourceDataContainer;
         return this;
     }

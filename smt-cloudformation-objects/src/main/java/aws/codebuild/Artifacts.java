@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "NamespaceType"
 })
-public class Artifacts {
+public class Artifacts implements Property<Artifacts>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html#cfn-codebuild-project-artifacts-path

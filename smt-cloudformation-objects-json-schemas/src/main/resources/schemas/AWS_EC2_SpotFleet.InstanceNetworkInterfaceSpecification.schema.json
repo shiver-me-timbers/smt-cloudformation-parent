@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html",
   "type" : "object",
   "javaType" : "aws.ec2.InstanceNetworkInterfaceSpecification",
+  "javaInterfaces" : [ "aws.Property<InstanceNetworkInterfaceSpecification>" ],
   "properties" : {
     "AssociatePublicIpAddress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress",
@@ -41,7 +42,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json"
+        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json",
+        "javaType" : "aws.Property<aws.ec2.InstanceIpv6Address>"
       }
     },
     "NetworkInterfaceId" : {
@@ -54,7 +56,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.PrivateIpAddressSpecification.schema.json"
+        "$ref" : "AWS_EC2_SpotFleet.PrivateIpAddressSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.PrivateIpAddressSpecification>"
       }
     },
     "SecondaryPrivateIpAddressCount" : {

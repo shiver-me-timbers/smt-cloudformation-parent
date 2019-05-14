@@ -4,6 +4,7 @@ package aws.emr;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "Version"
 })
-public class Application {
+public class Application implements Property<Application>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-application.html#cfn-elasticmapreduce-cluster-application-additionalinfo

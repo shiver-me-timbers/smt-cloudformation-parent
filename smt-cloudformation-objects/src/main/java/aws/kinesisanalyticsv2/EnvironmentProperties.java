@@ -3,6 +3,7 @@ package aws.kinesisanalyticsv2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PropertyGroups"
 })
-public class EnvironmentProperties {
+public class EnvironmentProperties implements Property<EnvironmentProperties>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups
@@ -31,14 +33,14 @@ public class EnvironmentProperties {
      */
     @JsonProperty("PropertyGroups")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups")
-    private List<PropertyGroup> propertyGroups = new ArrayList<PropertyGroup>();
+    private List<Property<PropertyGroup>> propertyGroups = new ArrayList<Property<PropertyGroup>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html#cfn-kinesisanalyticsv2-application-environmentproperties-propertygroups
      * 
      */
     @JsonIgnore
-    public List<PropertyGroup> getPropertyGroups() {
+    public List<Property<PropertyGroup>> getPropertyGroups() {
         return propertyGroups;
     }
 
@@ -47,11 +49,11 @@ public class EnvironmentProperties {
      * 
      */
     @JsonIgnore
-    public void setPropertyGroups(List<PropertyGroup> propertyGroups) {
+    public void setPropertyGroups(List<Property<PropertyGroup>> propertyGroups) {
         this.propertyGroups = propertyGroups;
     }
 
-    public EnvironmentProperties withPropertyGroups(List<PropertyGroup> propertyGroups) {
+    public EnvironmentProperties withPropertyGroups(List<Property<PropertyGroup>> propertyGroups) {
         this.propertyGroups = propertyGroups;
         return this;
     }

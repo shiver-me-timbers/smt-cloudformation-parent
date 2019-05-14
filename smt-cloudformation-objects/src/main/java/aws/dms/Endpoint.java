@@ -3,6 +3,7 @@ package aws.dms;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -72,7 +73,7 @@ public class Endpoint {
      */
     @JsonProperty("ElasticsearchSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html")
-    private ElasticsearchSettings elasticsearchSettings;
+    private Property<ElasticsearchSettings> elasticsearchSettings;
     /**
      * S3Settings
      * <p>
@@ -81,7 +82,7 @@ public class Endpoint {
      */
     @JsonProperty("S3Settings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html")
-    private S3Settings s3Settings;
+    private Property<S3Settings> s3Settings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename
      * 
@@ -97,7 +98,7 @@ public class Endpoint {
      */
     @JsonProperty("DynamoDbSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html")
-    private DynamoDbSettings dynamoDbSettings;
+    private Property<DynamoDbSettings> dynamoDbSettings;
     /**
      * KinesisSettings
      * <p>
@@ -106,7 +107,7 @@ public class Endpoint {
      */
     @JsonProperty("KinesisSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html")
-    private KinesisSettings kinesisSettings;
+    private Property<KinesisSettings> kinesisSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username
      * 
@@ -148,7 +149,7 @@ public class Endpoint {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-endpointidentifier
      * 
@@ -178,7 +179,7 @@ public class Endpoint {
      */
     @JsonProperty("MongoDbSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html")
-    private MongoDbSettings mongoDbSettings;
+    private Property<MongoDbSettings> mongoDbSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid
@@ -256,7 +257,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public ElasticsearchSettings getElasticsearchSettings() {
+    public Property<ElasticsearchSettings> getElasticsearchSettings() {
         return elasticsearchSettings;
     }
 
@@ -267,11 +268,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setElasticsearchSettings(ElasticsearchSettings elasticsearchSettings) {
+    public void setElasticsearchSettings(Property<ElasticsearchSettings> elasticsearchSettings) {
         this.elasticsearchSettings = elasticsearchSettings;
     }
 
-    public Endpoint withElasticsearchSettings(ElasticsearchSettings elasticsearchSettings) {
+    public Endpoint withElasticsearchSettings(Property<ElasticsearchSettings> elasticsearchSettings) {
         this.elasticsearchSettings = elasticsearchSettings;
         return this;
     }
@@ -283,7 +284,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public S3Settings getS3Settings() {
+    public Property<S3Settings> getS3Settings() {
         return s3Settings;
     }
 
@@ -294,11 +295,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setS3Settings(S3Settings s3Settings) {
+    public void setS3Settings(Property<S3Settings> s3Settings) {
         this.s3Settings = s3Settings;
     }
 
-    public Endpoint withS3Settings(S3Settings s3Settings) {
+    public Endpoint withS3Settings(Property<S3Settings> s3Settings) {
         this.s3Settings = s3Settings;
         return this;
     }
@@ -333,7 +334,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public DynamoDbSettings getDynamoDbSettings() {
+    public Property<DynamoDbSettings> getDynamoDbSettings() {
         return dynamoDbSettings;
     }
 
@@ -344,11 +345,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setDynamoDbSettings(DynamoDbSettings dynamoDbSettings) {
+    public void setDynamoDbSettings(Property<DynamoDbSettings> dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
     }
 
-    public Endpoint withDynamoDbSettings(DynamoDbSettings dynamoDbSettings) {
+    public Endpoint withDynamoDbSettings(Property<DynamoDbSettings> dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
         return this;
     }
@@ -360,7 +361,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public KinesisSettings getKinesisSettings() {
+    public Property<KinesisSettings> getKinesisSettings() {
         return kinesisSettings;
     }
 
@@ -371,11 +372,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setKinesisSettings(KinesisSettings kinesisSettings) {
+    public void setKinesisSettings(Property<KinesisSettings> kinesisSettings) {
         this.kinesisSettings = kinesisSettings;
     }
 
-    public Endpoint withKinesisSettings(KinesisSettings kinesisSettings) {
+    public Endpoint withKinesisSettings(Property<KinesisSettings> kinesisSettings) {
         this.kinesisSettings = kinesisSettings;
         return this;
     }
@@ -500,7 +501,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -509,11 +510,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Endpoint withTags(List<Tag> tags) {
+    public Endpoint withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -594,7 +595,7 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public MongoDbSettings getMongoDbSettings() {
+    public Property<MongoDbSettings> getMongoDbSettings() {
         return mongoDbSettings;
     }
 
@@ -605,11 +606,11 @@ public class Endpoint {
      * 
      */
     @JsonIgnore
-    public void setMongoDbSettings(MongoDbSettings mongoDbSettings) {
+    public void setMongoDbSettings(Property<MongoDbSettings> mongoDbSettings) {
         this.mongoDbSettings = mongoDbSettings;
     }
 
-    public Endpoint withMongoDbSettings(MongoDbSettings mongoDbSettings) {
+    public Endpoint withMongoDbSettings(Property<MongoDbSettings> mongoDbSettings) {
         this.mongoDbSettings = mongoDbSettings;
         return this;
     }

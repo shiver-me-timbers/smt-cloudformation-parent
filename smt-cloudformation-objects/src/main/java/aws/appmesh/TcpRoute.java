@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Action"
 })
-public class TcpRoute {
+public class TcpRoute implements Property<TcpRoute>
+{
 
     /**
      * TcpRouteAction
@@ -31,7 +33,7 @@ public class TcpRoute {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html")
-    private TcpRouteAction action;
+    private Property<TcpRouteAction> action;
 
     /**
      * TcpRouteAction
@@ -40,7 +42,7 @@ public class TcpRoute {
      * 
      */
     @JsonIgnore
-    public TcpRouteAction getAction() {
+    public Property<TcpRouteAction> getAction() {
         return action;
     }
 
@@ -51,11 +53,11 @@ public class TcpRoute {
      * 
      */
     @JsonIgnore
-    public void setAction(TcpRouteAction action) {
+    public void setAction(Property<TcpRouteAction> action) {
         this.action = action;
     }
 
-    public TcpRoute withAction(TcpRouteAction action) {
+    public TcpRoute withAction(Property<TcpRouteAction> action) {
         this.action = action;
         return this;
     }

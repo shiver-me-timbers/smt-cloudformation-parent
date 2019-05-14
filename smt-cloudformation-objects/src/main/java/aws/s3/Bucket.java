@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -52,7 +53,7 @@ public class Bucket {
      */
     @JsonProperty("AccelerateConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html")
-    private AccelerateConfiguration accelerateConfiguration;
+    private Property<AccelerateConfiguration> accelerateConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol
      * 
@@ -67,7 +68,7 @@ public class Bucket {
     @JsonProperty("AnalyticsConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-analyticsconfigurations")
-    private Set<AnalyticsConfiguration> analyticsConfigurations = new LinkedHashSet<AnalyticsConfiguration>();
+    private Set<Property<AnalyticsConfiguration>> analyticsConfigurations = new LinkedHashSet<Property<AnalyticsConfiguration>>();
     /**
      * BucketEncryption
      * <p>
@@ -76,7 +77,7 @@ public class Bucket {
      */
     @JsonProperty("BucketEncryption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html")
-    private BucketEncryption bucketEncryption;
+    private Property<BucketEncryption> bucketEncryption;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name
      * 
@@ -92,7 +93,7 @@ public class Bucket {
      */
     @JsonProperty("CorsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html")
-    private CorsConfiguration corsConfiguration;
+    private Property<CorsConfiguration> corsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations
      * 
@@ -100,7 +101,7 @@ public class Bucket {
     @JsonProperty("InventoryConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations")
-    private Set<InventoryConfiguration> inventoryConfigurations = new LinkedHashSet<InventoryConfiguration>();
+    private Set<Property<InventoryConfiguration>> inventoryConfigurations = new LinkedHashSet<Property<InventoryConfiguration>>();
     /**
      * LifecycleConfiguration
      * <p>
@@ -109,7 +110,7 @@ public class Bucket {
      */
     @JsonProperty("LifecycleConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html")
-    private LifecycleConfiguration lifecycleConfiguration;
+    private Property<LifecycleConfiguration> lifecycleConfiguration;
     /**
      * LoggingConfiguration
      * <p>
@@ -118,7 +119,7 @@ public class Bucket {
      */
     @JsonProperty("LoggingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html")
-    private LoggingConfiguration loggingConfiguration;
+    private Property<LoggingConfiguration> loggingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations
      * 
@@ -126,7 +127,7 @@ public class Bucket {
     @JsonProperty("MetricsConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations")
-    private Set<MetricsConfiguration> metricsConfigurations = new LinkedHashSet<MetricsConfiguration>();
+    private Set<Property<MetricsConfiguration>> metricsConfigurations = new LinkedHashSet<Property<MetricsConfiguration>>();
     /**
      * NotificationConfiguration
      * <p>
@@ -135,7 +136,7 @@ public class Bucket {
      */
     @JsonProperty("NotificationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html")
-    private NotificationConfiguration notificationConfiguration;
+    private Property<NotificationConfiguration> notificationConfiguration;
     /**
      * PublicAccessBlockConfiguration
      * <p>
@@ -144,7 +145,7 @@ public class Bucket {
      */
     @JsonProperty("PublicAccessBlockConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html")
-    private PublicAccessBlockConfiguration publicAccessBlockConfiguration;
+    private Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration;
     /**
      * ReplicationConfiguration
      * <p>
@@ -153,14 +154,14 @@ public class Bucket {
      */
     @JsonProperty("ReplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html")
-    private ReplicationConfiguration replicationConfiguration;
+    private Property<ReplicationConfiguration> replicationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * VersioningConfiguration
      * <p>
@@ -169,7 +170,7 @@ public class Bucket {
      */
     @JsonProperty("VersioningConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html")
-    private VersioningConfiguration versioningConfiguration;
+    private Property<VersioningConfiguration> versioningConfiguration;
     /**
      * WebsiteConfiguration
      * <p>
@@ -178,7 +179,7 @@ public class Bucket {
      */
     @JsonProperty("WebsiteConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html")
-    private WebsiteConfiguration websiteConfiguration;
+    private Property<WebsiteConfiguration> websiteConfiguration;
 
     /**
      * AccelerateConfiguration
@@ -187,7 +188,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public AccelerateConfiguration getAccelerateConfiguration() {
+    public Property<AccelerateConfiguration> getAccelerateConfiguration() {
         return accelerateConfiguration;
     }
 
@@ -198,11 +199,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setAccelerateConfiguration(AccelerateConfiguration accelerateConfiguration) {
+    public void setAccelerateConfiguration(Property<AccelerateConfiguration> accelerateConfiguration) {
         this.accelerateConfiguration = accelerateConfiguration;
     }
 
-    public Bucket withAccelerateConfiguration(AccelerateConfiguration accelerateConfiguration) {
+    public Bucket withAccelerateConfiguration(Property<AccelerateConfiguration> accelerateConfiguration) {
         this.accelerateConfiguration = accelerateConfiguration;
         return this;
     }
@@ -235,7 +236,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<AnalyticsConfiguration> getAnalyticsConfigurations() {
+    public Set<Property<AnalyticsConfiguration>> getAnalyticsConfigurations() {
         return analyticsConfigurations;
     }
 
@@ -244,11 +245,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setAnalyticsConfigurations(Set<AnalyticsConfiguration> analyticsConfigurations) {
+    public void setAnalyticsConfigurations(Set<Property<AnalyticsConfiguration>> analyticsConfigurations) {
         this.analyticsConfigurations = analyticsConfigurations;
     }
 
-    public Bucket withAnalyticsConfigurations(Set<AnalyticsConfiguration> analyticsConfigurations) {
+    public Bucket withAnalyticsConfigurations(Set<Property<AnalyticsConfiguration>> analyticsConfigurations) {
         this.analyticsConfigurations = analyticsConfigurations;
         return this;
     }
@@ -260,7 +261,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public BucketEncryption getBucketEncryption() {
+    public Property<BucketEncryption> getBucketEncryption() {
         return bucketEncryption;
     }
 
@@ -271,11 +272,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setBucketEncryption(BucketEncryption bucketEncryption) {
+    public void setBucketEncryption(Property<BucketEncryption> bucketEncryption) {
         this.bucketEncryption = bucketEncryption;
     }
 
-    public Bucket withBucketEncryption(BucketEncryption bucketEncryption) {
+    public Bucket withBucketEncryption(Property<BucketEncryption> bucketEncryption) {
         this.bucketEncryption = bucketEncryption;
         return this;
     }
@@ -310,7 +311,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public CorsConfiguration getCorsConfiguration() {
+    public Property<CorsConfiguration> getCorsConfiguration() {
         return corsConfiguration;
     }
 
@@ -321,11 +322,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setCorsConfiguration(CorsConfiguration corsConfiguration) {
+    public void setCorsConfiguration(Property<CorsConfiguration> corsConfiguration) {
         this.corsConfiguration = corsConfiguration;
     }
 
-    public Bucket withCorsConfiguration(CorsConfiguration corsConfiguration) {
+    public Bucket withCorsConfiguration(Property<CorsConfiguration> corsConfiguration) {
         this.corsConfiguration = corsConfiguration;
         return this;
     }
@@ -335,7 +336,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<InventoryConfiguration> getInventoryConfigurations() {
+    public Set<Property<InventoryConfiguration>> getInventoryConfigurations() {
         return inventoryConfigurations;
     }
 
@@ -344,11 +345,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setInventoryConfigurations(Set<InventoryConfiguration> inventoryConfigurations) {
+    public void setInventoryConfigurations(Set<Property<InventoryConfiguration>> inventoryConfigurations) {
         this.inventoryConfigurations = inventoryConfigurations;
     }
 
-    public Bucket withInventoryConfigurations(Set<InventoryConfiguration> inventoryConfigurations) {
+    public Bucket withInventoryConfigurations(Set<Property<InventoryConfiguration>> inventoryConfigurations) {
         this.inventoryConfigurations = inventoryConfigurations;
         return this;
     }
@@ -360,7 +361,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public LifecycleConfiguration getLifecycleConfiguration() {
+    public Property<LifecycleConfiguration> getLifecycleConfiguration() {
         return lifecycleConfiguration;
     }
 
@@ -371,11 +372,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setLifecycleConfiguration(LifecycleConfiguration lifecycleConfiguration) {
+    public void setLifecycleConfiguration(Property<LifecycleConfiguration> lifecycleConfiguration) {
         this.lifecycleConfiguration = lifecycleConfiguration;
     }
 
-    public Bucket withLifecycleConfiguration(LifecycleConfiguration lifecycleConfiguration) {
+    public Bucket withLifecycleConfiguration(Property<LifecycleConfiguration> lifecycleConfiguration) {
         this.lifecycleConfiguration = lifecycleConfiguration;
         return this;
     }
@@ -387,7 +388,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public LoggingConfiguration getLoggingConfiguration() {
+    public Property<LoggingConfiguration> getLoggingConfiguration() {
         return loggingConfiguration;
     }
 
@@ -398,11 +399,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setLoggingConfiguration(LoggingConfiguration loggingConfiguration) {
+    public void setLoggingConfiguration(Property<LoggingConfiguration> loggingConfiguration) {
         this.loggingConfiguration = loggingConfiguration;
     }
 
-    public Bucket withLoggingConfiguration(LoggingConfiguration loggingConfiguration) {
+    public Bucket withLoggingConfiguration(Property<LoggingConfiguration> loggingConfiguration) {
         this.loggingConfiguration = loggingConfiguration;
         return this;
     }
@@ -412,7 +413,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<MetricsConfiguration> getMetricsConfigurations() {
+    public Set<Property<MetricsConfiguration>> getMetricsConfigurations() {
         return metricsConfigurations;
     }
 
@@ -421,11 +422,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setMetricsConfigurations(Set<MetricsConfiguration> metricsConfigurations) {
+    public void setMetricsConfigurations(Set<Property<MetricsConfiguration>> metricsConfigurations) {
         this.metricsConfigurations = metricsConfigurations;
     }
 
-    public Bucket withMetricsConfigurations(Set<MetricsConfiguration> metricsConfigurations) {
+    public Bucket withMetricsConfigurations(Set<Property<MetricsConfiguration>> metricsConfigurations) {
         this.metricsConfigurations = metricsConfigurations;
         return this;
     }
@@ -437,7 +438,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public NotificationConfiguration getNotificationConfiguration() {
+    public Property<NotificationConfiguration> getNotificationConfiguration() {
         return notificationConfiguration;
     }
 
@@ -448,11 +449,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setNotificationConfiguration(NotificationConfiguration notificationConfiguration) {
+    public void setNotificationConfiguration(Property<NotificationConfiguration> notificationConfiguration) {
         this.notificationConfiguration = notificationConfiguration;
     }
 
-    public Bucket withNotificationConfiguration(NotificationConfiguration notificationConfiguration) {
+    public Bucket withNotificationConfiguration(Property<NotificationConfiguration> notificationConfiguration) {
         this.notificationConfiguration = notificationConfiguration;
         return this;
     }
@@ -464,7 +465,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public PublicAccessBlockConfiguration getPublicAccessBlockConfiguration() {
+    public Property<PublicAccessBlockConfiguration> getPublicAccessBlockConfiguration() {
         return publicAccessBlockConfiguration;
     }
 
@@ -475,11 +476,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setPublicAccessBlockConfiguration(PublicAccessBlockConfiguration publicAccessBlockConfiguration) {
+    public void setPublicAccessBlockConfiguration(Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
         this.publicAccessBlockConfiguration = publicAccessBlockConfiguration;
     }
 
-    public Bucket withPublicAccessBlockConfiguration(PublicAccessBlockConfiguration publicAccessBlockConfiguration) {
+    public Bucket withPublicAccessBlockConfiguration(Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
         this.publicAccessBlockConfiguration = publicAccessBlockConfiguration;
         return this;
     }
@@ -491,7 +492,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public ReplicationConfiguration getReplicationConfiguration() {
+    public Property<ReplicationConfiguration> getReplicationConfiguration() {
         return replicationConfiguration;
     }
 
@@ -502,11 +503,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setReplicationConfiguration(ReplicationConfiguration replicationConfiguration) {
+    public void setReplicationConfiguration(Property<ReplicationConfiguration> replicationConfiguration) {
         this.replicationConfiguration = replicationConfiguration;
     }
 
-    public Bucket withReplicationConfiguration(ReplicationConfiguration replicationConfiguration) {
+    public Bucket withReplicationConfiguration(Property<ReplicationConfiguration> replicationConfiguration) {
         this.replicationConfiguration = replicationConfiguration;
         return this;
     }
@@ -516,7 +517,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -525,11 +526,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Bucket withTags(List<Tag> tags) {
+    public Bucket withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -541,7 +542,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public VersioningConfiguration getVersioningConfiguration() {
+    public Property<VersioningConfiguration> getVersioningConfiguration() {
         return versioningConfiguration;
     }
 
@@ -552,11 +553,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setVersioningConfiguration(VersioningConfiguration versioningConfiguration) {
+    public void setVersioningConfiguration(Property<VersioningConfiguration> versioningConfiguration) {
         this.versioningConfiguration = versioningConfiguration;
     }
 
-    public Bucket withVersioningConfiguration(VersioningConfiguration versioningConfiguration) {
+    public Bucket withVersioningConfiguration(Property<VersioningConfiguration> versioningConfiguration) {
         this.versioningConfiguration = versioningConfiguration;
         return this;
     }
@@ -568,7 +569,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public WebsiteConfiguration getWebsiteConfiguration() {
+    public Property<WebsiteConfiguration> getWebsiteConfiguration() {
         return websiteConfiguration;
     }
 
@@ -579,11 +580,11 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setWebsiteConfiguration(WebsiteConfiguration websiteConfiguration) {
+    public void setWebsiteConfiguration(Property<WebsiteConfiguration> websiteConfiguration) {
         this.websiteConfiguration = websiteConfiguration;
     }
 
-    public Bucket withWebsiteConfiguration(WebsiteConfiguration websiteConfiguration) {
+    public Bucket withWebsiteConfiguration(Property<WebsiteConfiguration> websiteConfiguration) {
         this.websiteConfiguration = websiteConfiguration;
         return this;
     }

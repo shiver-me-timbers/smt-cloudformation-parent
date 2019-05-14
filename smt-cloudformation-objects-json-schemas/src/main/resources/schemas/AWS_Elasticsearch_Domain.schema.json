@@ -22,11 +22,13 @@
     },
     "EBSOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-ebsoptions",
-      "$ref" : "AWS_Elasticsearch_Domain.EBSOptions.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.EBSOptions.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.EBSOptions>"
     },
     "ElasticsearchClusterConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchclusterconfig",
-      "$ref" : "AWS_Elasticsearch_Domain.ElasticsearchClusterConfig.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.ElasticsearchClusterConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.ElasticsearchClusterConfig>"
     },
     "ElasticsearchVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion",
@@ -35,26 +37,31 @@
     },
     "EncryptionAtRestOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-encryptionatrestoptions",
-      "$ref" : "AWS_Elasticsearch_Domain.EncryptionAtRestOptions.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.EncryptionAtRestOptions.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.EncryptionAtRestOptions>"
     },
     "NodeToNodeEncryptionOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions",
-      "$ref" : "AWS_Elasticsearch_Domain.NodeToNodeEncryptionOptions.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.NodeToNodeEncryptionOptions.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.NodeToNodeEncryptionOptions>"
     },
     "SnapshotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-snapshotoptions",
-      "$ref" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.SnapshotOptions>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "VPCOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-vpcoptions",
-      "$ref" : "AWS_Elasticsearch_Domain.VPCOptions.schema.json"
+      "$ref" : "AWS_Elasticsearch_Domain.VPCOptions.schema.json",
+      "javaType" : "aws.Property<aws.elasticsearch.VPCOptions>"
     }
   }
 }

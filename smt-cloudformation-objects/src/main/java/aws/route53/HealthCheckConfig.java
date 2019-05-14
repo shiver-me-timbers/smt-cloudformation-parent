@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SearchString",
     "Type"
 })
-public class HealthCheckConfig {
+public class HealthCheckConfig implements Property<HealthCheckConfig>
+{
 
     /**
      * AlarmIdentifier
@@ -49,7 +51,7 @@ public class HealthCheckConfig {
      */
     @JsonProperty("AlarmIdentifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html")
-    private AlarmIdentifier alarmIdentifier;
+    private Property<AlarmIdentifier> alarmIdentifier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks
      * 
@@ -165,7 +167,7 @@ public class HealthCheckConfig {
      * 
      */
     @JsonIgnore
-    public AlarmIdentifier getAlarmIdentifier() {
+    public Property<AlarmIdentifier> getAlarmIdentifier() {
         return alarmIdentifier;
     }
 
@@ -176,11 +178,11 @@ public class HealthCheckConfig {
      * 
      */
     @JsonIgnore
-    public void setAlarmIdentifier(AlarmIdentifier alarmIdentifier) {
+    public void setAlarmIdentifier(Property<AlarmIdentifier> alarmIdentifier) {
         this.alarmIdentifier = alarmIdentifier;
     }
 
-    public HealthCheckConfig withAlarmIdentifier(AlarmIdentifier alarmIdentifier) {
+    public HealthCheckConfig withAlarmIdentifier(Property<AlarmIdentifier> alarmIdentifier) {
         this.alarmIdentifier = alarmIdentifier;
         return this;
     }

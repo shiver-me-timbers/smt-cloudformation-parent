@@ -18,7 +18,8 @@
     },
     "EndpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-endpointconfiguration",
-      "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json"
+      "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.apigateway.EndpointConfiguration>"
     },
     "RegionalCertificateArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn",

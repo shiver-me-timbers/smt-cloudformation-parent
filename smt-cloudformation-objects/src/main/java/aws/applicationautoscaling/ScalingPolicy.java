@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -80,7 +81,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("StepScalingPolicyConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html")
-    private StepScalingPolicyConfiguration stepScalingPolicyConfiguration;
+    private Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration;
     /**
      * TargetTrackingScalingPolicyConfiguration
      * <p>
@@ -89,7 +90,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("TargetTrackingScalingPolicyConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html")
-    private TargetTrackingScalingPolicyConfiguration targetTrackingScalingPolicyConfiguration;
+    private Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname
@@ -236,7 +237,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public StepScalingPolicyConfiguration getStepScalingPolicyConfiguration() {
+    public Property<StepScalingPolicyConfiguration> getStepScalingPolicyConfiguration() {
         return stepScalingPolicyConfiguration;
     }
 
@@ -247,11 +248,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setStepScalingPolicyConfiguration(StepScalingPolicyConfiguration stepScalingPolicyConfiguration) {
+    public void setStepScalingPolicyConfiguration(Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
         this.stepScalingPolicyConfiguration = stepScalingPolicyConfiguration;
     }
 
-    public ScalingPolicy withStepScalingPolicyConfiguration(StepScalingPolicyConfiguration stepScalingPolicyConfiguration) {
+    public ScalingPolicy withStepScalingPolicyConfiguration(Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
         this.stepScalingPolicyConfiguration = stepScalingPolicyConfiguration;
         return this;
     }
@@ -263,7 +264,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public TargetTrackingScalingPolicyConfiguration getTargetTrackingScalingPolicyConfiguration() {
+    public Property<TargetTrackingScalingPolicyConfiguration> getTargetTrackingScalingPolicyConfiguration() {
         return targetTrackingScalingPolicyConfiguration;
     }
 
@@ -274,11 +275,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setTargetTrackingScalingPolicyConfiguration(TargetTrackingScalingPolicyConfiguration targetTrackingScalingPolicyConfiguration) {
+    public void setTargetTrackingScalingPolicyConfiguration(Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
         this.targetTrackingScalingPolicyConfiguration = targetTrackingScalingPolicyConfiguration;
     }
 
-    public ScalingPolicy withTargetTrackingScalingPolicyConfiguration(TargetTrackingScalingPolicyConfiguration targetTrackingScalingPolicyConfiguration) {
+    public ScalingPolicy withTargetTrackingScalingPolicyConfiguration(Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
         this.targetTrackingScalingPolicyConfiguration = targetTrackingScalingPolicyConfiguration;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html",
   "type" : "object",
   "javaType" : "aws.glue.ConnectionInput",
+  "javaInterfaces" : [ "aws.Property<ConnectionInput>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description",
@@ -26,7 +27,8 @@
     },
     "PhysicalConnectionRequirements" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-physicalconnectionrequirements",
-      "$ref" : "AWS_Glue_Connection.PhysicalConnectionRequirements.schema.json"
+      "$ref" : "AWS_Glue_Connection.PhysicalConnectionRequirements.schema.json",
+      "javaType" : "aws.Property<aws.glue.PhysicalConnectionRequirements>"
     },
     "ConnectionProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties",

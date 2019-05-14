@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalytics.ReferenceSchema",
+  "javaInterfaces" : [ "aws.Property<ReferenceSchema>" ],
   "properties" : {
     "RecordEncoding" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordencoding",
@@ -15,12 +16,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordcolumns",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordColumn.schema.json"
+        "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordColumn.schema.json",
+        "javaType" : "aws.Property<aws.kinesisanalyticsv2.RecordColumn>"
       }
     },
     "RecordFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-referenceschema.html#cfn-kinesisanalytics-applicationreferencedatasource-referenceschema-recordformat",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordFormat.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordFormat.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.RecordFormat>"
     }
   }
 }

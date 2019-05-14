@@ -5,26 +5,32 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalyticsv2.ApplicationConfiguration",
+  "javaInterfaces" : [ "aws.Property<ApplicationConfiguration>" ],
   "properties" : {
     "ApplicationCodeConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationcodeconfiguration",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationCodeConfiguration.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationCodeConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationCodeConfiguration>"
     },
     "EnvironmentProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-environmentproperties",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.EnvironmentProperties.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.EnvironmentProperties.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.EnvironmentProperties>"
     },
     "FlinkApplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-flinkapplicationconfiguration",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.FlinkApplicationConfiguration.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.FlinkApplicationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.FlinkApplicationConfiguration>"
     },
     "SqlApplicationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-sqlapplicationconfiguration",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.SqlApplicationConfiguration.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.SqlApplicationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.SqlApplicationConfiguration>"
     },
     "ApplicationSnapshotConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationconfiguration.html#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationsnapshotconfiguration",
-      "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationSnapshotConfiguration.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_Application.ApplicationSnapshotConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationSnapshotConfiguration>"
     }
   }
 }

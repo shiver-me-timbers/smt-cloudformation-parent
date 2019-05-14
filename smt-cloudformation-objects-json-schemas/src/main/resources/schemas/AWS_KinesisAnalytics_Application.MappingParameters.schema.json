@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-mappingparameters.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalytics.MappingParameters",
+  "javaInterfaces" : [ "aws.Property<MappingParameters>" ],
   "properties" : {
     "JSONMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-mappingparameters.html#cfn-kinesisanalytics-application-mappingparameters-jsonmappingparameters",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.JSONMappingParameters>"
     },
     "CSVMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-mappingparameters.html#cfn-kinesisanalytics-application-mappingparameters-csvmappingparameters",
-      "$ref" : "AWS_KinesisAnalytics_Application.CSVMappingParameters.schema.json"
+      "$ref" : "AWS_KinesisAnalytics_Application.CSVMappingParameters.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalytics.CSVMappingParameters>"
     }
   }
 }

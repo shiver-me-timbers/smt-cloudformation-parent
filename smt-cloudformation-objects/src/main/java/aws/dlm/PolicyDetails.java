@@ -3,6 +3,7 @@ package aws.dlm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Schedules",
     "TargetTags"
 })
-public class PolicyDetails {
+public class PolicyDetails implements Property<PolicyDetails>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-resourcetypes
@@ -41,14 +43,14 @@ public class PolicyDetails {
      */
     @JsonProperty("Schedules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-schedules")
-    private List<Schedule> schedules = new ArrayList<Schedule>();
+    private List<Property<Schedule>> schedules = new ArrayList<Property<Schedule>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-targettags
      * 
      */
     @JsonProperty("TargetTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-targettags")
-    private List<Tag> targetTags = new ArrayList<Tag>();
+    private List<Property<Tag>> targetTags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html#cfn-dlm-lifecyclepolicy-policydetails-resourcetypes
@@ -78,7 +80,7 @@ public class PolicyDetails {
      * 
      */
     @JsonIgnore
-    public List<Schedule> getSchedules() {
+    public List<Property<Schedule>> getSchedules() {
         return schedules;
     }
 
@@ -87,11 +89,11 @@ public class PolicyDetails {
      * 
      */
     @JsonIgnore
-    public void setSchedules(List<Schedule> schedules) {
+    public void setSchedules(List<Property<Schedule>> schedules) {
         this.schedules = schedules;
     }
 
-    public PolicyDetails withSchedules(List<Schedule> schedules) {
+    public PolicyDetails withSchedules(List<Property<Schedule>> schedules) {
         this.schedules = schedules;
         return this;
     }
@@ -101,7 +103,7 @@ public class PolicyDetails {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTargetTags() {
+    public List<Property<Tag>> getTargetTags() {
         return targetTags;
     }
 
@@ -110,11 +112,11 @@ public class PolicyDetails {
      * 
      */
     @JsonIgnore
-    public void setTargetTags(List<Tag> targetTags) {
+    public void setTargetTags(List<Property<Tag>> targetTags) {
         this.targetTags = targetTags;
     }
 
-    public PolicyDetails withTargetTags(List<Tag> targetTags) {
+    public PolicyDetails withTargetTags(List<Property<Tag>> targetTags) {
         this.targetTags = targetTags;
         return this;
     }

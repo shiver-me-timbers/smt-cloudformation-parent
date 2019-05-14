@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html",
   "type" : "object",
   "javaType" : "aws.s3.WebsiteConfiguration",
+  "javaInterfaces" : [ "aws.Property<WebsiteConfiguration>" ],
   "properties" : {
     "ErrorDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument",
@@ -18,14 +19,16 @@
     },
     "RedirectAllRequestsTo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-redirectallrequeststo",
-      "$ref" : "AWS_S3_Bucket.RedirectAllRequestsTo.schema.json"
+      "$ref" : "AWS_S3_Bucket.RedirectAllRequestsTo.schema.json",
+      "javaType" : "aws.Property<aws.s3.RedirectAllRequestsTo>"
     },
     "RoutingRules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-routingrules",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_S3_Bucket.RoutingRule.schema.json"
+        "$ref" : "AWS_S3_Bucket.RoutingRule.schema.json",
+        "javaType" : "aws.Property<aws.s3.RoutingRule>"
       }
     }
   }

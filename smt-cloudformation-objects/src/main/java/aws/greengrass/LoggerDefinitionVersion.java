@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Loggers"
 })
-public class LoggerDefinitionVersion {
+public class LoggerDefinitionVersion implements Property<LoggerDefinitionVersion>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers
@@ -31,14 +33,14 @@ public class LoggerDefinitionVersion {
      */
     @JsonProperty("Loggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers")
-    private List<Logger> loggers = new ArrayList<Logger>();
+    private List<Property<Logger>> loggers = new ArrayList<Property<Logger>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers
      * 
      */
     @JsonIgnore
-    public List<Logger> getLoggers() {
+    public List<Property<Logger>> getLoggers() {
         return loggers;
     }
 
@@ -47,11 +49,11 @@ public class LoggerDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setLoggers(List<Logger> loggers) {
+    public void setLoggers(List<Property<Logger>> loggers) {
         this.loggers = loggers;
     }
 
-    public LoggerDefinitionVersion withLoggers(List<Logger> loggers) {
+    public LoggerDefinitionVersion withLoggers(List<Property<Logger>> loggers) {
         this.loggers = loggers;
         return this;
     }

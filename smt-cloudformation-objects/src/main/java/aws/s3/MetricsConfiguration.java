@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Prefix",
     "TagFilters"
 })
-public class MetricsConfiguration {
+public class MetricsConfiguration implements Property<MetricsConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-id
@@ -49,7 +51,7 @@ public class MetricsConfiguration {
     @JsonProperty("TagFilters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-tagfilters")
-    private Set<TagFilter> tagFilters = new LinkedHashSet<TagFilter>();
+    private Set<Property<TagFilter>> tagFilters = new LinkedHashSet<Property<TagFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-metricsconfiguration.html#cfn-s3-bucket-metricsconfiguration-id
@@ -102,7 +104,7 @@ public class MetricsConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<TagFilter> getTagFilters() {
+    public Set<Property<TagFilter>> getTagFilters() {
         return tagFilters;
     }
 
@@ -111,11 +113,11 @@ public class MetricsConfiguration {
      * 
      */
     @JsonIgnore
-    public void setTagFilters(Set<TagFilter> tagFilters) {
+    public void setTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
     }
 
-    public MetricsConfiguration withTagFilters(Set<TagFilter> tagFilters) {
+    public MetricsConfiguration withTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
         return this;
     }

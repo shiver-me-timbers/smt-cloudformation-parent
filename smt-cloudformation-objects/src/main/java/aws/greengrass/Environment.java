@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ResourceAccessPolicies",
     "AccessSysfs"
 })
-public class Environment {
+public class Environment implements Property<Environment>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-variables
@@ -43,14 +45,14 @@ public class Environment {
      */
     @JsonProperty("Execution")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-execution.html")
-    private Execution execution;
+    private Property<Execution> execution;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-resourceaccesspolicies
      * 
      */
     @JsonProperty("ResourceAccessPolicies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-resourceaccesspolicies")
-    private List<ResourceAccessPolicy> resourceAccessPolicies = new ArrayList<ResourceAccessPolicy>();
+    private List<Property<ResourceAccessPolicy>> resourceAccessPolicies = new ArrayList<Property<ResourceAccessPolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html#cfn-greengrass-functiondefinition-environment-accesssysfs
      * 
@@ -89,7 +91,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public Execution getExecution() {
+    public Property<Execution> getExecution() {
         return execution;
     }
 
@@ -100,11 +102,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setExecution(Execution execution) {
+    public void setExecution(Property<Execution> execution) {
         this.execution = execution;
     }
 
-    public Environment withExecution(Execution execution) {
+    public Environment withExecution(Property<Execution> execution) {
         this.execution = execution;
         return this;
     }
@@ -114,7 +116,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public List<ResourceAccessPolicy> getResourceAccessPolicies() {
+    public List<Property<ResourceAccessPolicy>> getResourceAccessPolicies() {
         return resourceAccessPolicies;
     }
 
@@ -123,11 +125,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setResourceAccessPolicies(List<ResourceAccessPolicy> resourceAccessPolicies) {
+    public void setResourceAccessPolicies(List<Property<ResourceAccessPolicy>> resourceAccessPolicies) {
         this.resourceAccessPolicies = resourceAccessPolicies;
     }
 
-    public Environment withResourceAccessPolicies(List<ResourceAccessPolicy> resourceAccessPolicies) {
+    public Environment withResourceAccessPolicies(List<Property<ResourceAccessPolicy>> resourceAccessPolicies) {
         this.resourceAccessPolicies = resourceAccessPolicies;
         return this;
     }

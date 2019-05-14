@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Execution"
 })
-public class DefaultConfig {
+public class DefaultConfig implements Property<DefaultConfig>
+{
 
     /**
      * Execution
@@ -31,7 +33,7 @@ public class DefaultConfig {
      */
     @JsonProperty("Execution")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-execution.html")
-    private Execution execution;
+    private Property<Execution> execution;
 
     /**
      * Execution
@@ -40,7 +42,7 @@ public class DefaultConfig {
      * 
      */
     @JsonIgnore
-    public Execution getExecution() {
+    public Property<Execution> getExecution() {
         return execution;
     }
 
@@ -51,11 +53,11 @@ public class DefaultConfig {
      * 
      */
     @JsonIgnore
-    public void setExecution(Execution execution) {
+    public void setExecution(Property<Execution> execution) {
         this.execution = execution;
     }
 
-    public DefaultConfig withExecution(Execution execution) {
+    public DefaultConfig withExecution(Property<Execution> execution) {
         this.execution = execution;
         return this;
     }

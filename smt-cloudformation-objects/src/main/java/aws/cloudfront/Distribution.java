@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -35,14 +36,14 @@ public class Distribution {
      */
     @JsonProperty("DistributionConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html")
-    private DistributionConfig distributionConfig;
+    private Property<DistributionConfig> distributionConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html#cfn-cloudfront-distribution-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html#cfn-cloudfront-distribution-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * DistributionConfig
@@ -51,7 +52,7 @@ public class Distribution {
      * 
      */
     @JsonIgnore
-    public DistributionConfig getDistributionConfig() {
+    public Property<DistributionConfig> getDistributionConfig() {
         return distributionConfig;
     }
 
@@ -62,11 +63,11 @@ public class Distribution {
      * 
      */
     @JsonIgnore
-    public void setDistributionConfig(DistributionConfig distributionConfig) {
+    public void setDistributionConfig(Property<DistributionConfig> distributionConfig) {
         this.distributionConfig = distributionConfig;
     }
 
-    public Distribution withDistributionConfig(DistributionConfig distributionConfig) {
+    public Distribution withDistributionConfig(Property<DistributionConfig> distributionConfig) {
         this.distributionConfig = distributionConfig;
         return this;
     }
@@ -76,7 +77,7 @@ public class Distribution {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -85,11 +86,11 @@ public class Distribution {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Distribution withTags(List<Tag> tags) {
+    public Distribution withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

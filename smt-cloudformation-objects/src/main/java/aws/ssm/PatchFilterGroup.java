@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PatchFilters"
 })
-public class PatchFilterGroup {
+public class PatchFilterGroup implements Property<PatchFilterGroup>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
@@ -31,14 +33,14 @@ public class PatchFilterGroup {
      */
     @JsonProperty("PatchFilters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters")
-    private List<PatchFilter> patchFilters = new ArrayList<PatchFilter>();
+    private List<Property<PatchFilter>> patchFilters = new ArrayList<Property<PatchFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters
      * 
      */
     @JsonIgnore
-    public List<PatchFilter> getPatchFilters() {
+    public List<Property<PatchFilter>> getPatchFilters() {
         return patchFilters;
     }
 
@@ -47,11 +49,11 @@ public class PatchFilterGroup {
      * 
      */
     @JsonIgnore
-    public void setPatchFilters(List<PatchFilter> patchFilters) {
+    public void setPatchFilters(List<Property<PatchFilter>> patchFilters) {
         this.patchFilters = patchFilters;
     }
 
-    public PatchFilterGroup withPatchFilters(List<PatchFilter> patchFilters) {
+    public PatchFilterGroup withPatchFilters(List<Property<PatchFilter>> patchFilters) {
         this.patchFilters = patchFilters;
         return this;
     }

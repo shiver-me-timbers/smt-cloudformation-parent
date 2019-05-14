@@ -3,6 +3,7 @@ package aws.amazonmq;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -60,7 +61,7 @@ public class Broker {
      */
     @JsonProperty("Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html")
-    private ConfigurationId configuration;
+    private Property<ConfigurationId> configuration;
     /**
      * MaintenanceWindow
      * <p>
@@ -69,7 +70,7 @@ public class Broker {
      */
     @JsonProperty("MaintenanceWindowStartTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html")
-    private MaintenanceWindow maintenanceWindowStartTime;
+    private Property<MaintenanceWindow> maintenanceWindowStartTime;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype
      * 
@@ -90,7 +91,7 @@ public class Broker {
      */
     @JsonProperty("Users")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-users")
-    private List<User> users = new ArrayList<User>();
+    private List<Property<User>> users = new ArrayList<Property<User>>();
     /**
      * LogList
      * <p>
@@ -99,7 +100,7 @@ public class Broker {
      */
     @JsonProperty("Logs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-loglist.html")
-    private LogList logs;
+    private Property<LogList> logs;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids
      * 
@@ -141,7 +142,7 @@ public class Broker {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-tags")
-    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
+    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-securitygroups
@@ -196,7 +197,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public ConfigurationId getConfiguration() {
+    public Property<ConfigurationId> getConfiguration() {
         return configuration;
     }
 
@@ -207,11 +208,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setConfiguration(ConfigurationId configuration) {
+    public void setConfiguration(Property<ConfigurationId> configuration) {
         this.configuration = configuration;
     }
 
-    public Broker withConfiguration(ConfigurationId configuration) {
+    public Broker withConfiguration(Property<ConfigurationId> configuration) {
         this.configuration = configuration;
         return this;
     }
@@ -223,7 +224,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public MaintenanceWindow getMaintenanceWindowStartTime() {
+    public Property<MaintenanceWindow> getMaintenanceWindowStartTime() {
         return maintenanceWindowStartTime;
     }
 
@@ -234,11 +235,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setMaintenanceWindowStartTime(MaintenanceWindow maintenanceWindowStartTime) {
+    public void setMaintenanceWindowStartTime(Property<MaintenanceWindow> maintenanceWindowStartTime) {
         this.maintenanceWindowStartTime = maintenanceWindowStartTime;
     }
 
-    public Broker withMaintenanceWindowStartTime(MaintenanceWindow maintenanceWindowStartTime) {
+    public Broker withMaintenanceWindowStartTime(Property<MaintenanceWindow> maintenanceWindowStartTime) {
         this.maintenanceWindowStartTime = maintenanceWindowStartTime;
         return this;
     }
@@ -294,7 +295,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public List<User> getUsers() {
+    public List<Property<User>> getUsers() {
         return users;
     }
 
@@ -303,11 +304,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setUsers(List<User> users) {
+    public void setUsers(List<Property<User>> users) {
         this.users = users;
     }
 
-    public Broker withUsers(List<User> users) {
+    public Broker withUsers(List<Property<User>> users) {
         this.users = users;
         return this;
     }
@@ -319,7 +320,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public LogList getLogs() {
+    public Property<LogList> getLogs() {
         return logs;
     }
 
@@ -330,11 +331,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setLogs(LogList logs) {
+    public void setLogs(Property<LogList> logs) {
         this.logs = logs;
     }
 
-    public Broker withLogs(LogList logs) {
+    public Broker withLogs(Property<LogList> logs) {
         this.logs = logs;
         return this;
     }
@@ -459,7 +460,7 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public List<TagsEntry> getTags() {
+    public List<Property<TagsEntry>> getTags() {
         return tags;
     }
 
@@ -468,11 +469,11 @@ public class Broker {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagsEntry> tags) {
+    public void setTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public Broker withTags(List<TagsEntry> tags) {
+    public Broker withTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

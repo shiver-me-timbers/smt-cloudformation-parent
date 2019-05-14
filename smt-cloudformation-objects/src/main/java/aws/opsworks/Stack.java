@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -76,7 +77,7 @@ public class Stack {
      */
     @JsonProperty("ChefConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html")
-    private ChefConfiguration chefConfiguration;
+    private Property<ChefConfiguration> chefConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids
      * 
@@ -100,7 +101,7 @@ public class Stack {
      */
     @JsonProperty("ConfigurationManager")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html")
-    private StackConfigurationManager configurationManager;
+    private Property<StackConfigurationManager> configurationManager;
     /**
      * DataSource
      * <p>
@@ -109,7 +110,7 @@ public class Stack {
      */
     @JsonProperty("CustomCookbooksSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html")
-    private DataSource customCookbooksSource;
+    private Property<Source> customCookbooksSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
@@ -173,7 +174,7 @@ public class Stack {
     @JsonProperty("ElasticIps")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips")
-    private Set<ElasticIp> elasticIps = new LinkedHashSet<ElasticIp>();
+    private Set<Property<ElasticIp>> elasticIps = new LinkedHashSet<Property<ElasticIp>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme
      * 
@@ -195,7 +196,7 @@ public class Stack {
     @JsonProperty("RdsDbInstances")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances")
-    private Set<RdsDbInstance> rdsDbInstances = new LinkedHashSet<RdsDbInstance>();
+    private Set<Property<RdsDbInstance>> rdsDbInstances = new LinkedHashSet<Property<RdsDbInstance>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn
      * 
@@ -216,7 +217,7 @@ public class Stack {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#usecustcookbooks
      * 
@@ -292,7 +293,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public ChefConfiguration getChefConfiguration() {
+    public Property<ChefConfiguration> getChefConfiguration() {
         return chefConfiguration;
     }
 
@@ -303,11 +304,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setChefConfiguration(ChefConfiguration chefConfiguration) {
+    public void setChefConfiguration(Property<ChefConfiguration> chefConfiguration) {
         this.chefConfiguration = chefConfiguration;
     }
 
-    public Stack withChefConfiguration(ChefConfiguration chefConfiguration) {
+    public Stack withChefConfiguration(Property<ChefConfiguration> chefConfiguration) {
         this.chefConfiguration = chefConfiguration;
         return this;
     }
@@ -365,7 +366,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public StackConfigurationManager getConfigurationManager() {
+    public Property<StackConfigurationManager> getConfigurationManager() {
         return configurationManager;
     }
 
@@ -376,11 +377,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setConfigurationManager(StackConfigurationManager configurationManager) {
+    public void setConfigurationManager(Property<StackConfigurationManager> configurationManager) {
         this.configurationManager = configurationManager;
     }
 
-    public Stack withConfigurationManager(StackConfigurationManager configurationManager) {
+    public Stack withConfigurationManager(Property<StackConfigurationManager> configurationManager) {
         this.configurationManager = configurationManager;
         return this;
     }
@@ -392,7 +393,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public DataSource getCustomCookbooksSource() {
+    public Property<Source> getCustomCookbooksSource() {
         return customCookbooksSource;
     }
 
@@ -403,11 +404,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setCustomCookbooksSource(DataSource customCookbooksSource) {
+    public void setCustomCookbooksSource(Property<Source> customCookbooksSource) {
         this.customCookbooksSource = customCookbooksSource;
     }
 
-    public Stack withCustomCookbooksSource(DataSource customCookbooksSource) {
+    public Stack withCustomCookbooksSource(Property<Source> customCookbooksSource) {
         this.customCookbooksSource = customCookbooksSource;
         return this;
     }
@@ -601,7 +602,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Set<ElasticIp> getElasticIps() {
+    public Set<Property<ElasticIp>> getElasticIps() {
         return elasticIps;
     }
 
@@ -610,11 +611,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setElasticIps(Set<ElasticIp> elasticIps) {
+    public void setElasticIps(Set<Property<ElasticIp>> elasticIps) {
         this.elasticIps = elasticIps;
     }
 
-    public Stack withElasticIps(Set<ElasticIp> elasticIps) {
+    public Stack withElasticIps(Set<Property<ElasticIp>> elasticIps) {
         this.elasticIps = elasticIps;
         return this;
     }
@@ -670,7 +671,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Set<RdsDbInstance> getRdsDbInstances() {
+    public Set<Property<RdsDbInstance>> getRdsDbInstances() {
         return rdsDbInstances;
     }
 
@@ -679,11 +680,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setRdsDbInstances(Set<RdsDbInstance> rdsDbInstances) {
+    public void setRdsDbInstances(Set<Property<RdsDbInstance>> rdsDbInstances) {
         this.rdsDbInstances = rdsDbInstances;
     }
 
-    public Stack withRdsDbInstances(Set<RdsDbInstance> rdsDbInstances) {
+    public Stack withRdsDbInstances(Set<Property<RdsDbInstance>> rdsDbInstances) {
         this.rdsDbInstances = rdsDbInstances;
         return this;
     }
@@ -739,7 +740,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -748,11 +749,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Stack withTags(List<Tag> tags) {
+    public Stack withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

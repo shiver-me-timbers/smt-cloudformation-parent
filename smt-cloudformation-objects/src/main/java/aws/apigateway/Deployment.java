@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,7 +36,7 @@ public class Deployment {
      */
     @JsonProperty("DeploymentCanarySettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html")
-    private DeploymentCanarySettings deploymentCanarySettings;
+    private Property<DeploymentCanarySettings> deploymentCanarySettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
@@ -58,7 +59,7 @@ public class Deployment {
      */
     @JsonProperty("StageDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html")
-    private StageDescription stageDescription;
+    private Property<StageDescription> stageDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
@@ -74,7 +75,7 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public DeploymentCanarySettings getDeploymentCanarySettings() {
+    public Property<DeploymentCanarySettings> getDeploymentCanarySettings() {
         return deploymentCanarySettings;
     }
 
@@ -85,11 +86,11 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public void setDeploymentCanarySettings(DeploymentCanarySettings deploymentCanarySettings) {
+    public void setDeploymentCanarySettings(Property<DeploymentCanarySettings> deploymentCanarySettings) {
         this.deploymentCanarySettings = deploymentCanarySettings;
     }
 
-    public Deployment withDeploymentCanarySettings(DeploymentCanarySettings deploymentCanarySettings) {
+    public Deployment withDeploymentCanarySettings(Property<DeploymentCanarySettings> deploymentCanarySettings) {
         this.deploymentCanarySettings = deploymentCanarySettings;
         return this;
     }
@@ -147,7 +148,7 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public StageDescription getStageDescription() {
+    public Property<StageDescription> getStageDescription() {
         return stageDescription;
     }
 
@@ -158,11 +159,11 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public void setStageDescription(StageDescription stageDescription) {
+    public void setStageDescription(Property<StageDescription> stageDescription) {
         this.stageDescription = stageDescription;
     }
 
-    public Deployment withStageDescription(StageDescription stageDescription) {
+    public Deployment withStageDescription(Property<StageDescription> stageDescription) {
         this.stageDescription = stageDescription;
         return this;
     }

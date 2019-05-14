@@ -13,13 +13,15 @@
     },
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-vpcconfig",
-      "$ref" : "AWS_CodeBuild_Project.VpcConfig.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.VpcConfig.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.VpcConfig>"
     },
     "SecondarySources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CodeBuild_Project.Source.schema.json"
+        "$ref" : "AWS_CodeBuild_Project.Source.schema.json",
+        "javaType" : "aws.Property<aws.codebuild.Source>"
       }
     },
     "EncryptionKey" : {
@@ -29,18 +31,21 @@
     },
     "Triggers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-triggers",
-      "$ref" : "AWS_CodeBuild_Project.ProjectTriggers.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.ProjectTriggers.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.ProjectTriggers>"
     },
     "SecondaryArtifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json"
+        "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json",
+        "javaType" : "aws.Property<aws.codebuild.Artifacts>"
       }
     },
     "Source" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-source",
-      "$ref" : "AWS_CodeBuild_Project.Source.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.Source.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.Source>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name",
@@ -49,7 +54,8 @@
     },
     "Artifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-artifacts",
-      "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.Artifacts.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.Artifacts>"
     },
     "BadgeEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled",
@@ -57,7 +63,8 @@
     },
     "LogsConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-logsconfig",
-      "$ref" : "AWS_CodeBuild_Project.LogsConfig.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.LogsConfig.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.LogsConfig>"
     },
     "ServiceRole" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole",
@@ -70,13 +77,15 @@
     },
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-environment",
-      "$ref" : "AWS_CodeBuild_Project.Environment.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.Environment.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.Environment>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "TimeoutInMinutes" : {
@@ -85,7 +94,8 @@
     },
     "Cache" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-cache",
-      "$ref" : "AWS_CodeBuild_Project.ProjectCache.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.ProjectCache.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.ProjectCache>"
     }
   }
 }

@@ -8,7 +8,8 @@
   "properties" : {
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-initialversion",
-      "$ref" : "AWS_Greengrass_LoggerDefinition.LoggerDefinitionVersion.schema.json"
+      "$ref" : "AWS_Greengrass_LoggerDefinition.LoggerDefinitionVersion.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.LoggerDefinitionVersion>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-name",

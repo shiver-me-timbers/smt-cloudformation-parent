@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -54,7 +55,7 @@ public class Job {
      */
     @JsonProperty("Connections")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html")
-    private ConnectionsList connections;
+    private Property<ConnectionsList> connections;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries
      * 
@@ -84,7 +85,7 @@ public class Job {
      */
     @JsonProperty("Command")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html")
-    private JobCommand command;
+    private Property<JobCommand> command;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
@@ -100,7 +101,7 @@ public class Job {
      */
     @JsonProperty("ExecutionProperty")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html")
-    private ExecutionProperty executionProperty;
+    private Property<ExecutionProperty> executionProperty;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name
      * 
@@ -162,7 +163,7 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public ConnectionsList getConnections() {
+    public Property<ConnectionsList> getConnections() {
         return connections;
     }
 
@@ -173,11 +174,11 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public void setConnections(ConnectionsList connections) {
+    public void setConnections(Property<ConnectionsList> connections) {
         this.connections = connections;
     }
 
-    public Job withConnections(ConnectionsList connections) {
+    public Job withConnections(Property<ConnectionsList> connections) {
         this.connections = connections;
         return this;
     }
@@ -258,7 +259,7 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public JobCommand getCommand() {
+    public Property<JobCommand> getCommand() {
         return command;
     }
 
@@ -269,11 +270,11 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public void setCommand(JobCommand command) {
+    public void setCommand(Property<JobCommand> command) {
         this.command = command;
     }
 
-    public Job withCommand(JobCommand command) {
+    public Job withCommand(Property<JobCommand> command) {
         this.command = command;
         return this;
     }
@@ -308,7 +309,7 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public ExecutionProperty getExecutionProperty() {
+    public Property<ExecutionProperty> getExecutionProperty() {
         return executionProperty;
     }
 
@@ -319,11 +320,11 @@ public class Job {
      * 
      */
     @JsonIgnore
-    public void setExecutionProperty(ExecutionProperty executionProperty) {
+    public void setExecutionProperty(Property<ExecutionProperty> executionProperty) {
         this.executionProperty = executionProperty;
     }
 
-    public Job withExecutionProperty(ExecutionProperty executionProperty) {
+    public Job withExecutionProperty(Property<ExecutionProperty> executionProperty) {
         this.executionProperty = executionProperty;
         return this;
     }

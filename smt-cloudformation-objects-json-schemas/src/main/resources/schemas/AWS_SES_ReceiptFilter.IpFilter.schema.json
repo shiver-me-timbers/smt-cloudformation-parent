@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html",
   "type" : "object",
   "javaType" : "aws.ses.IpFilter",
+  "javaInterfaces" : [ "aws.Property<IpFilter>" ],
   "properties" : {
     "Policy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-policy",

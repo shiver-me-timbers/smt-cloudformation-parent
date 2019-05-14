@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DeviceOnlyRememberedOnUserPrompt",
     "ChallengeRequiredOnNewDevice"
 })
-public class DeviceConfiguration {
+public class DeviceConfiguration implements Property<DeviceConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt

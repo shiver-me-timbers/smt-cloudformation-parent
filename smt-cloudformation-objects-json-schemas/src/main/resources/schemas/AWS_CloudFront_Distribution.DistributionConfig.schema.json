@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html",
   "type" : "object",
   "javaType" : "aws.cloudfront.DistributionConfig",
+  "javaInterfaces" : [ "aws.Property<DistributionConfig>" ],
   "properties" : {
     "Logging" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-logging",
-      "$ref" : "AWS_CloudFront_StreamingDistribution.Logging.schema.json"
+      "$ref" : "AWS_CloudFront_StreamingDistribution.Logging.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.Logging>"
     },
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-comment",
@@ -24,12 +26,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-origins",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudFront_Distribution.Origin.schema.json"
+        "$ref" : "AWS_CloudFront_Distribution.Origin.schema.json",
+        "javaType" : "aws.Property<aws.cloudfront.Origin>"
       }
     },
     "ViewerCertificate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-viewercertificate",
-      "$ref" : "AWS_CloudFront_Distribution.ViewerCertificate.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.ViewerCertificate.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.ViewerCertificate>"
     },
     "PriceClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-priceclass",
@@ -38,13 +42,15 @@
     },
     "DefaultCacheBehavior" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-defaultcachebehavior",
-      "$ref" : "AWS_CloudFront_Distribution.DefaultCacheBehavior.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.DefaultCacheBehavior.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.DefaultCacheBehavior>"
     },
     "CustomErrorResponses" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-customerrorresponses",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudFront_Distribution.CustomErrorResponse.schema.json"
+        "$ref" : "AWS_CloudFront_Distribution.CustomErrorResponse.schema.json",
+        "javaType" : "aws.Property<aws.cloudfront.CustomErrorResponse>"
       }
     },
     "Enabled" : {
@@ -75,13 +81,15 @@
     },
     "Restrictions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-restrictions",
-      "$ref" : "AWS_CloudFront_Distribution.Restrictions.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.Restrictions.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.Restrictions>"
     },
     "CacheBehaviors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html#cfn-cloudfront-distribution-distributionconfig-cachebehaviors",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudFront_Distribution.CacheBehavior.schema.json"
+        "$ref" : "AWS_CloudFront_Distribution.CacheBehavior.schema.json",
+        "javaType" : "aws.Property<aws.cloudfront.CacheBehavior>"
       }
     }
   }

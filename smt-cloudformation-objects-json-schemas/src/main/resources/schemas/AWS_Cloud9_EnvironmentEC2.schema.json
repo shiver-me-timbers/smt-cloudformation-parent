@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-repositories",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Cloud9_EnvironmentEC2.Repository.schema.json"
+        "$ref" : "AWS_Cloud9_EnvironmentEC2.Repository.schema.json",
+        "javaType" : "aws.Property<aws.cloud9.Repository>"
       }
     },
     "OwnerArn" : {

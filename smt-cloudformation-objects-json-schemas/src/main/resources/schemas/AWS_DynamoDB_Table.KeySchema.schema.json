@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html",
   "type" : "object",
   "javaType" : "aws.dynamodb.KeySchema",
+  "javaInterfaces" : [ "aws.Property<KeySchema>" ],
   "properties" : {
     "AttributeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html#aws-properties-dynamodb-keyschema-attributename",

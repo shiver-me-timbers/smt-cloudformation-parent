@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TargetOnDemandCapacity",
     "TargetSpotCapacity"
 })
-public class InstanceFleetConfig {
+public class InstanceFleetConfig implements Property<InstanceFleetConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
@@ -37,7 +39,7 @@ public class InstanceFleetConfig {
     @JsonProperty("InstanceTypeConfigs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs")
-    private Set<InstanceTypeConfig> instanceTypeConfigs = new LinkedHashSet<InstanceTypeConfig>();
+    private Set<Property<InstanceTypeConfig>> instanceTypeConfigs = new LinkedHashSet<Property<InstanceTypeConfig>>();
     /**
      * InstanceFleetProvisioningSpecifications
      * <p>
@@ -46,7 +48,7 @@ public class InstanceFleetConfig {
      */
     @JsonProperty("LaunchSpecifications")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html")
-    private InstanceFleetProvisioningSpecifications launchSpecifications;
+    private Property<InstanceFleetProvisioningSpecifications> launchSpecifications;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
      * 
@@ -74,7 +76,7 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public Set<InstanceTypeConfig> getInstanceTypeConfigs() {
+    public Set<Property<InstanceTypeConfig>> getInstanceTypeConfigs() {
         return instanceTypeConfigs;
     }
 
@@ -83,11 +85,11 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public void setInstanceTypeConfigs(Set<InstanceTypeConfig> instanceTypeConfigs) {
+    public void setInstanceTypeConfigs(Set<Property<InstanceTypeConfig>> instanceTypeConfigs) {
         this.instanceTypeConfigs = instanceTypeConfigs;
     }
 
-    public InstanceFleetConfig withInstanceTypeConfigs(Set<InstanceTypeConfig> instanceTypeConfigs) {
+    public InstanceFleetConfig withInstanceTypeConfigs(Set<Property<InstanceTypeConfig>> instanceTypeConfigs) {
         this.instanceTypeConfigs = instanceTypeConfigs;
         return this;
     }
@@ -99,7 +101,7 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public InstanceFleetProvisioningSpecifications getLaunchSpecifications() {
+    public Property<InstanceFleetProvisioningSpecifications> getLaunchSpecifications() {
         return launchSpecifications;
     }
 
@@ -110,11 +112,11 @@ public class InstanceFleetConfig {
      * 
      */
     @JsonIgnore
-    public void setLaunchSpecifications(InstanceFleetProvisioningSpecifications launchSpecifications) {
+    public void setLaunchSpecifications(Property<InstanceFleetProvisioningSpecifications> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
     }
 
-    public InstanceFleetConfig withLaunchSpecifications(InstanceFleetProvisioningSpecifications launchSpecifications) {
+    public InstanceFleetConfig withLaunchSpecifications(Property<InstanceFleetProvisioningSpecifications> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
         return this;
     }

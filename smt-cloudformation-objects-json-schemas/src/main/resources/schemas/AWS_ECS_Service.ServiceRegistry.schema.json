@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html",
   "type" : "object",
   "javaType" : "aws.ecs.ServiceRegistry",
+  "javaInterfaces" : [ "aws.Property<ServiceRegistry>" ],
   "properties" : {
     "ContainerName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-serviceregistry.html#cfn-ecs-service-serviceregistry-containername",

@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -51,7 +52,7 @@ public class JobDefinition {
      */
     @JsonProperty("NodeProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html")
-    private NodeProperties nodeProperties;
+    private Property<NodeProperties> nodeProperties;
     /**
      * Timeout
      * <p>
@@ -60,7 +61,7 @@ public class JobDefinition {
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html")
-    private Timeout timeout;
+    private Property<Timeout> timeout;
     /**
      * ContainerProperties
      * <p>
@@ -69,7 +70,7 @@ public class JobDefinition {
      */
     @JsonProperty("ContainerProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html")
-    private ContainerProperties containerProperties;
+    private Property<ContainerProperties> containerProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname
      * 
@@ -85,7 +86,7 @@ public class JobDefinition {
      */
     @JsonProperty("RetryStrategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html")
-    private RetryStrategy retryStrategy;
+    private Property<RetryStrategy> retryStrategy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type
@@ -140,7 +141,7 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public NodeProperties getNodeProperties() {
+    public Property<NodeProperties> getNodeProperties() {
         return nodeProperties;
     }
 
@@ -151,11 +152,11 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public void setNodeProperties(NodeProperties nodeProperties) {
+    public void setNodeProperties(Property<NodeProperties> nodeProperties) {
         this.nodeProperties = nodeProperties;
     }
 
-    public JobDefinition withNodeProperties(NodeProperties nodeProperties) {
+    public JobDefinition withNodeProperties(Property<NodeProperties> nodeProperties) {
         this.nodeProperties = nodeProperties;
         return this;
     }
@@ -167,7 +168,7 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public Timeout getTimeout() {
+    public Property<Timeout> getTimeout() {
         return timeout;
     }
 
@@ -178,11 +179,11 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public void setTimeout(Timeout timeout) {
+    public void setTimeout(Property<Timeout> timeout) {
         this.timeout = timeout;
     }
 
-    public JobDefinition withTimeout(Timeout timeout) {
+    public JobDefinition withTimeout(Property<Timeout> timeout) {
         this.timeout = timeout;
         return this;
     }
@@ -194,7 +195,7 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public ContainerProperties getContainerProperties() {
+    public Property<ContainerProperties> getContainerProperties() {
         return containerProperties;
     }
 
@@ -205,11 +206,11 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public void setContainerProperties(ContainerProperties containerProperties) {
+    public void setContainerProperties(Property<ContainerProperties> containerProperties) {
         this.containerProperties = containerProperties;
     }
 
-    public JobDefinition withContainerProperties(ContainerProperties containerProperties) {
+    public JobDefinition withContainerProperties(Property<ContainerProperties> containerProperties) {
         this.containerProperties = containerProperties;
         return this;
     }
@@ -244,7 +245,7 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public RetryStrategy getRetryStrategy() {
+    public Property<RetryStrategy> getRetryStrategy() {
         return retryStrategy;
     }
 
@@ -255,11 +256,11 @@ public class JobDefinition {
      * 
      */
     @JsonIgnore
-    public void setRetryStrategy(RetryStrategy retryStrategy) {
+    public void setRetryStrategy(Property<RetryStrategy> retryStrategy) {
         this.retryStrategy = retryStrategy;
     }
 
-    public JobDefinition withRetryStrategy(RetryStrategy retryStrategy) {
+    public JobDefinition withRetryStrategy(Property<RetryStrategy> retryStrategy) {
         this.retryStrategy = retryStrategy;
         return this;
     }

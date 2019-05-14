@@ -3,6 +3,7 @@ package aws.batch;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,7 +37,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Ulimits",
     "InstanceType"
 })
-public class ContainerProperties {
+public class ContainerProperties implements Property<ContainerProperties>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
@@ -93,21 +95,21 @@ public class ContainerProperties {
      */
     @JsonProperty("ResourceRequirements")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements")
-    private List<ResourceRequirement> resourceRequirements = new ArrayList<ResourceRequirement>();
+    private List<Property<ResourceRequirement>> resourceRequirements = new ArrayList<Property<ResourceRequirement>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints
      * 
      */
     @JsonProperty("MountPoints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints")
-    private List<MountPoints> mountPoints = new ArrayList<MountPoints>();
+    private List<Property<MountPoints>> mountPoints = new ArrayList<Property<MountPoints>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes
      * 
      */
     @JsonProperty("Volumes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes")
-    private List<Volumes> volumes = new ArrayList<Volumes>();
+    private List<Property<Volumes>> volumes = new ArrayList<Property<Volumes>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
      * 
@@ -121,14 +123,14 @@ public class ContainerProperties {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment")
-    private List<Environment> environment = new ArrayList<Environment>();
+    private List<Property<Environment>> environment = new ArrayList<Property<Environment>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits
      * 
      */
     @JsonProperty("Ulimits")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits")
-    private List<Ulimit> ulimits = new ArrayList<Ulimit>();
+    private List<Property<Ulimit>> ulimits = new ArrayList<Property<Ulimit>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-instancetype
      * 
@@ -303,7 +305,7 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public List<ResourceRequirement> getResourceRequirements() {
+    public List<Property<ResourceRequirement>> getResourceRequirements() {
         return resourceRequirements;
     }
 
@@ -312,11 +314,11 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public void setResourceRequirements(List<ResourceRequirement> resourceRequirements) {
+    public void setResourceRequirements(List<Property<ResourceRequirement>> resourceRequirements) {
         this.resourceRequirements = resourceRequirements;
     }
 
-    public ContainerProperties withResourceRequirements(List<ResourceRequirement> resourceRequirements) {
+    public ContainerProperties withResourceRequirements(List<Property<ResourceRequirement>> resourceRequirements) {
         this.resourceRequirements = resourceRequirements;
         return this;
     }
@@ -326,7 +328,7 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public List<MountPoints> getMountPoints() {
+    public List<Property<MountPoints>> getMountPoints() {
         return mountPoints;
     }
 
@@ -335,11 +337,11 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public void setMountPoints(List<MountPoints> mountPoints) {
+    public void setMountPoints(List<Property<MountPoints>> mountPoints) {
         this.mountPoints = mountPoints;
     }
 
-    public ContainerProperties withMountPoints(List<MountPoints> mountPoints) {
+    public ContainerProperties withMountPoints(List<Property<MountPoints>> mountPoints) {
         this.mountPoints = mountPoints;
         return this;
     }
@@ -349,7 +351,7 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public List<Volumes> getVolumes() {
+    public List<Property<Volumes>> getVolumes() {
         return volumes;
     }
 
@@ -358,11 +360,11 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public void setVolumes(List<Volumes> volumes) {
+    public void setVolumes(List<Property<Volumes>> volumes) {
         this.volumes = volumes;
     }
 
-    public ContainerProperties withVolumes(List<Volumes> volumes) {
+    public ContainerProperties withVolumes(List<Property<Volumes>> volumes) {
         this.volumes = volumes;
         return this;
     }
@@ -395,7 +397,7 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public List<Environment> getEnvironment() {
+    public List<Property<Environment>> getEnvironment() {
         return environment;
     }
 
@@ -404,11 +406,11 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(List<Environment> environment) {
+    public void setEnvironment(List<Property<Environment>> environment) {
         this.environment = environment;
     }
 
-    public ContainerProperties withEnvironment(List<Environment> environment) {
+    public ContainerProperties withEnvironment(List<Property<Environment>> environment) {
         this.environment = environment;
         return this;
     }
@@ -418,7 +420,7 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public List<Ulimit> getUlimits() {
+    public List<Property<Ulimit>> getUlimits() {
         return ulimits;
     }
 
@@ -427,11 +429,11 @@ public class ContainerProperties {
      * 
      */
     @JsonIgnore
-    public void setUlimits(List<Ulimit> ulimits) {
+    public void setUlimits(List<Property<Ulimit>> ulimits) {
         this.ulimits = ulimits;
     }
 
-    public ContainerProperties withUlimits(List<Ulimit> ulimits) {
+    public ContainerProperties withUlimits(List<Property<Ulimit>> ulimits) {
         this.ulimits = ulimits;
         return this;
     }

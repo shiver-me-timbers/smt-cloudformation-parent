@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PasswordPolicy"
 })
-public class Policies {
+public class Policies implements Property<Policies>
+{
 
     /**
      * PasswordPolicy
@@ -31,7 +33,7 @@ public class Policies {
      */
     @JsonProperty("PasswordPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-passwordpolicy.html")
-    private PasswordPolicy passwordPolicy;
+    private Property<PasswordPolicy> passwordPolicy;
 
     /**
      * PasswordPolicy
@@ -40,7 +42,7 @@ public class Policies {
      * 
      */
     @JsonIgnore
-    public PasswordPolicy getPasswordPolicy() {
+    public Property<PasswordPolicy> getPasswordPolicy() {
         return passwordPolicy;
     }
 
@@ -51,11 +53,11 @@ public class Policies {
      * 
      */
     @JsonIgnore
-    public void setPasswordPolicy(PasswordPolicy passwordPolicy) {
+    public void setPasswordPolicy(Property<PasswordPolicy> passwordPolicy) {
         this.passwordPolicy = passwordPolicy;
     }
 
-    public Policies withPasswordPolicy(PasswordPolicy passwordPolicy) {
+    public Policies withPasswordPolicy(Property<PasswordPolicy> passwordPolicy) {
         this.passwordPolicy = passwordPolicy;
         return this;
     }

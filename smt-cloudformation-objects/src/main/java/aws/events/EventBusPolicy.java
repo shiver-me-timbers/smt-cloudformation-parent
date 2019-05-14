@@ -1,6 +1,7 @@
 
 package aws.events;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,7 @@ public class EventBusPolicy {
      */
     @JsonProperty("Condition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html")
-    private Condition condition;
+    private Property<Condition> condition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-action
      * 
@@ -64,7 +65,7 @@ public class EventBusPolicy {
      * 
      */
     @JsonIgnore
-    public Condition getCondition() {
+    public Property<Condition> getCondition() {
         return condition;
     }
 
@@ -75,11 +76,11 @@ public class EventBusPolicy {
      * 
      */
     @JsonIgnore
-    public void setCondition(Condition condition) {
+    public void setCondition(Property<Condition> condition) {
         this.condition = condition;
     }
 
-    public EventBusPolicy withCondition(Condition condition) {
+    public EventBusPolicy withCondition(Property<Condition> condition) {
         this.condition = condition;
         return this;
     }

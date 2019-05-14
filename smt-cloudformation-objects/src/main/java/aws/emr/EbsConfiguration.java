@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "EbsBlockDeviceConfigs",
     "EbsOptimized"
 })
-public class EbsConfiguration {
+public class EbsConfiguration implements Property<EbsConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsblockdeviceconfigs
@@ -34,7 +36,7 @@ public class EbsConfiguration {
     @JsonProperty("EbsBlockDeviceConfigs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsblockdeviceconfigs")
-    private Set<EbsBlockDeviceConfig> ebsBlockDeviceConfigs = new LinkedHashSet<EbsBlockDeviceConfig>();
+    private Set<Property<EbsBlockDeviceConfig>> ebsBlockDeviceConfigs = new LinkedHashSet<Property<EbsBlockDeviceConfig>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsoptimized
      * 
@@ -48,7 +50,7 @@ public class EbsConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<EbsBlockDeviceConfig> getEbsBlockDeviceConfigs() {
+    public Set<Property<EbsBlockDeviceConfig>> getEbsBlockDeviceConfigs() {
         return ebsBlockDeviceConfigs;
     }
 
@@ -57,11 +59,11 @@ public class EbsConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEbsBlockDeviceConfigs(Set<EbsBlockDeviceConfig> ebsBlockDeviceConfigs) {
+    public void setEbsBlockDeviceConfigs(Set<Property<EbsBlockDeviceConfig>> ebsBlockDeviceConfigs) {
         this.ebsBlockDeviceConfigs = ebsBlockDeviceConfigs;
     }
 
-    public EbsConfiguration withEbsBlockDeviceConfigs(Set<EbsBlockDeviceConfig> ebsBlockDeviceConfigs) {
+    public EbsConfiguration withEbsBlockDeviceConfigs(Set<Property<EbsBlockDeviceConfig>> ebsBlockDeviceConfigs) {
         this.ebsBlockDeviceConfigs = ebsBlockDeviceConfigs;
         return this;
     }

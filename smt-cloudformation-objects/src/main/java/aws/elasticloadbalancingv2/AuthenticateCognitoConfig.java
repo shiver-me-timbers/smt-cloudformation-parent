@@ -2,6 +2,7 @@
 package aws.elasticloadbalancingv2;
 
 import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "UserPoolClientId",
     "UserPoolDomain"
 })
-public class AuthenticateCognitoConfig {
+public class AuthenticateCognitoConfig implements Property<AuthenticateCognitoConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams

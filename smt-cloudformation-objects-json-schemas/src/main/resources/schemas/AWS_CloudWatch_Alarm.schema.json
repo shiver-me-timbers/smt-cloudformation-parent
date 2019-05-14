@@ -41,7 +41,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json"
+        "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json",
+        "javaType" : "aws.Property<aws.cloudwatch.Dimension>"
       }
     },
     "EvaluateLowSampleCountPercentile" : {
@@ -76,7 +77,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CloudWatch_Alarm.MetricDataQuery.schema.json"
+        "$ref" : "AWS_CloudWatch_Alarm.MetricDataQuery.schema.json",
+        "javaType" : "aws.Property<aws.cloudwatch.MetricDataQuery>"
       }
     },
     "Namespace" : {

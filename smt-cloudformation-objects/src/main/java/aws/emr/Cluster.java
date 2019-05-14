@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -61,7 +62,7 @@ public class Cluster {
     @JsonProperty("Applications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-applications")
-    private Set<Application> applications = new LinkedHashSet<Application>();
+    private Set<Property<Application>> applications = new LinkedHashSet<Property<Application>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-autoscalingrole
      * 
@@ -76,7 +77,7 @@ public class Cluster {
     @JsonProperty("BootstrapActions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-bootstrapactions")
-    private Set<BootstrapActionConfig> bootstrapActions = new LinkedHashSet<BootstrapActionConfig>();
+    private Set<Property<BootstrapActionConfig>> bootstrapActions = new LinkedHashSet<Property<BootstrapActionConfig>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-configurations
      * 
@@ -84,7 +85,7 @@ public class Cluster {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-configurations")
-    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
+    private Set<Property<Configuration>> configurations = new LinkedHashSet<Property<Configuration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-customamiid
      * 
@@ -107,7 +108,7 @@ public class Cluster {
      */
     @JsonProperty("Instances")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-jobflowinstancesconfig.html")
-    private JobFlowInstancesConfig instances;
+    private Property<JobFlowInstancesConfig> instances;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-jobflowrole
      * 
@@ -123,7 +124,7 @@ public class Cluster {
      */
     @JsonProperty("KerberosAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-kerberosattributes.html")
-    private KerberosAttributes kerberosAttributes;
+    private Property<KerberosAttributes> kerberosAttributes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-loguri
      * 
@@ -173,14 +174,14 @@ public class Cluster {
     @JsonProperty("Steps")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-steps")
-    private Set<HadoopJarStepConfig> steps = new LinkedHashSet<HadoopJarStepConfig>();
+    private Set<Property<StepConfig>> steps = new LinkedHashSet<Property<StepConfig>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-cluster.html#cfn-elasticmapreduce-cluster-visibletoallusers
      * 
@@ -217,7 +218,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Set<Application> getApplications() {
+    public Set<Property<Application>> getApplications() {
         return applications;
     }
 
@@ -226,11 +227,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setApplications(Set<Application> applications) {
+    public void setApplications(Set<Property<Application>> applications) {
         this.applications = applications;
     }
 
-    public Cluster withApplications(Set<Application> applications) {
+    public Cluster withApplications(Set<Property<Application>> applications) {
         this.applications = applications;
         return this;
     }
@@ -263,7 +264,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Set<BootstrapActionConfig> getBootstrapActions() {
+    public Set<Property<BootstrapActionConfig>> getBootstrapActions() {
         return bootstrapActions;
     }
 
@@ -272,11 +273,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setBootstrapActions(Set<BootstrapActionConfig> bootstrapActions) {
+    public void setBootstrapActions(Set<Property<BootstrapActionConfig>> bootstrapActions) {
         this.bootstrapActions = bootstrapActions;
     }
 
-    public Cluster withBootstrapActions(Set<BootstrapActionConfig> bootstrapActions) {
+    public Cluster withBootstrapActions(Set<Property<BootstrapActionConfig>> bootstrapActions) {
         this.bootstrapActions = bootstrapActions;
         return this;
     }
@@ -286,7 +287,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Set<EbsConfiguration> getConfigurations() {
+    public Set<Property<Configuration>> getConfigurations() {
         return configurations;
     }
 
@@ -295,11 +296,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<EbsConfiguration> configurations) {
+    public void setConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
     }
 
-    public Cluster withConfigurations(Set<EbsConfiguration> configurations) {
+    public Cluster withConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
         return this;
     }
@@ -357,7 +358,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public JobFlowInstancesConfig getInstances() {
+    public Property<JobFlowInstancesConfig> getInstances() {
         return instances;
     }
 
@@ -368,11 +369,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setInstances(JobFlowInstancesConfig instances) {
+    public void setInstances(Property<JobFlowInstancesConfig> instances) {
         this.instances = instances;
     }
 
-    public Cluster withInstances(JobFlowInstancesConfig instances) {
+    public Cluster withInstances(Property<JobFlowInstancesConfig> instances) {
         this.instances = instances;
         return this;
     }
@@ -407,7 +408,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public KerberosAttributes getKerberosAttributes() {
+    public Property<KerberosAttributes> getKerberosAttributes() {
         return kerberosAttributes;
     }
 
@@ -418,11 +419,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setKerberosAttributes(KerberosAttributes kerberosAttributes) {
+    public void setKerberosAttributes(Property<KerberosAttributes> kerberosAttributes) {
         this.kerberosAttributes = kerberosAttributes;
     }
 
-    public Cluster withKerberosAttributes(KerberosAttributes kerberosAttributes) {
+    public Cluster withKerberosAttributes(Property<KerberosAttributes> kerberosAttributes) {
         this.kerberosAttributes = kerberosAttributes;
         return this;
     }
@@ -570,7 +571,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public Set<HadoopJarStepConfig> getSteps() {
+    public Set<Property<StepConfig>> getSteps() {
         return steps;
     }
 
@@ -579,11 +580,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setSteps(Set<HadoopJarStepConfig> steps) {
+    public void setSteps(Set<Property<StepConfig>> steps) {
         this.steps = steps;
     }
 
-    public Cluster withSteps(Set<HadoopJarStepConfig> steps) {
+    public Cluster withSteps(Set<Property<StepConfig>> steps) {
         this.steps = steps;
         return this;
     }
@@ -593,7 +594,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -602,11 +603,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Cluster withTags(List<Tag> tags) {
+    public Cluster withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

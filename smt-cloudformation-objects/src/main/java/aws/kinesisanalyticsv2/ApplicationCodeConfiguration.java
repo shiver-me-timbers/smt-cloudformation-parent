@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CodeContentType",
     "CodeContent"
 })
-public class ApplicationCodeConfiguration {
+public class ApplicationCodeConfiguration implements Property<ApplicationCodeConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype
@@ -39,7 +41,7 @@ public class ApplicationCodeConfiguration {
      */
     @JsonProperty("CodeContent")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html")
-    private CodeContent codeContent;
+    private Property<CodeContent> codeContent;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html#cfn-kinesisanalyticsv2-application-applicationcodeconfiguration-codecontenttype
@@ -71,7 +73,7 @@ public class ApplicationCodeConfiguration {
      * 
      */
     @JsonIgnore
-    public CodeContent getCodeContent() {
+    public Property<CodeContent> getCodeContent() {
         return codeContent;
     }
 
@@ -82,11 +84,11 @@ public class ApplicationCodeConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCodeContent(CodeContent codeContent) {
+    public void setCodeContent(Property<CodeContent> codeContent) {
         this.codeContent = codeContent;
     }
 
-    public ApplicationCodeConfiguration withCodeContent(CodeContent codeContent) {
+    public ApplicationCodeConfiguration withCodeContent(Property<CodeContent> codeContent) {
         this.codeContent = codeContent;
         return this;
     }

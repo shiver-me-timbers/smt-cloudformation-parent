@@ -8,14 +8,16 @@
   "properties" : {
     "AccessLoggingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-accessloggingpolicy",
-      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AccessLoggingPolicy.schema.json"
+      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AccessLoggingPolicy.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancing.AccessLoggingPolicy>"
     },
     "AppCookieStickinessPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AppCookieStickinessPolicy.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AppCookieStickinessPolicy.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancing.AppCookieStickinessPolicy>"
       }
     },
     "AvailabilityZones" : {
@@ -29,11 +31,13 @@
     },
     "ConnectionDrainingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectiondrainingpolicy",
-      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionDrainingPolicy.schema.json"
+      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionDrainingPolicy.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancing.ConnectionDrainingPolicy>"
     },
     "ConnectionSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectionsettings",
-      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionSettings.schema.json"
+      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionSettings.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancing.ConnectionSettings>"
     },
     "CrossZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone",
@@ -41,7 +45,8 @@
     },
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-healthcheck",
-      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.HealthCheck.schema.json"
+      "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.HealthCheck.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancing.HealthCheck>"
     },
     "Instances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances",
@@ -57,7 +62,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.LBCookieStickinessPolicy.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.LBCookieStickinessPolicy.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancing.LBCookieStickinessPolicy>"
       }
     },
     "Listeners" : {
@@ -65,7 +71,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Listeners.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Listeners.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancing.Listeners>"
       }
     },
     "LoadBalancerName" : {
@@ -78,7 +85,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Policies.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Policies.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancing.Policies>"
       }
     },
     "Scheme" : {
@@ -108,7 +116,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-elasticloadbalancing-loadbalancer-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

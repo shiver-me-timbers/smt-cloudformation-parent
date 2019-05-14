@@ -23,7 +23,8 @@
     },
     "PartitionInput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-partitioninput",
-      "$ref" : "AWS_Glue_Partition.PartitionInput.schema.json"
+      "$ref" : "AWS_Glue_Partition.PartitionInput.schema.json",
+      "javaType" : "aws.Property<aws.glue.PartitionInput>"
     }
   }
 }

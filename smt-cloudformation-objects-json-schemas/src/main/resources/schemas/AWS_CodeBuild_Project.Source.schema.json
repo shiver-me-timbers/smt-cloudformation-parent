@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html",
   "type" : "object",
   "javaType" : "aws.codebuild.Source",
+  "javaInterfaces" : [ "aws.Property<Source>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-type",
@@ -17,7 +18,8 @@
     },
     "Auth" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-auth",
-      "$ref" : "AWS_CodeBuild_Project.SourceAuth.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.SourceAuth.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.SourceAuth>"
     },
     "SourceIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-sourceidentifier",
@@ -35,7 +37,8 @@
     },
     "GitSubmodulesConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-gitsubmodulesconfig",
-      "$ref" : "AWS_CodeBuild_Project.GitSubmodulesConfig.schema.json"
+      "$ref" : "AWS_CodeBuild_Project.GitSubmodulesConfig.schema.json",
+      "javaType" : "aws.Property<aws.codebuild.GitSubmodulesConfig>"
     },
     "InsecureSsl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl",

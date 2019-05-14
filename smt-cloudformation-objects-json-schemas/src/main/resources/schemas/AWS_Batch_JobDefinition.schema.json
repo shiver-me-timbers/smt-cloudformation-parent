@@ -17,15 +17,18 @@
     },
     "NodeProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-nodeproperties",
-      "$ref" : "AWS_Batch_JobDefinition.NodeProperties.schema.json"
+      "$ref" : "AWS_Batch_JobDefinition.NodeProperties.schema.json",
+      "javaType" : "aws.Property<aws.batch.NodeProperties>"
     },
     "Timeout" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-timeout",
-      "$ref" : "AWS_Batch_JobDefinition.Timeout.schema.json"
+      "$ref" : "AWS_Batch_JobDefinition.Timeout.schema.json",
+      "javaType" : "aws.Property<aws.batch.Timeout>"
     },
     "ContainerProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-containerproperties",
-      "$ref" : "AWS_Batch_JobDefinition.ContainerProperties.schema.json"
+      "$ref" : "AWS_Batch_JobDefinition.ContainerProperties.schema.json",
+      "javaType" : "aws.Property<aws.batch.ContainerProperties>"
     },
     "JobDefinitionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname",
@@ -34,7 +37,8 @@
     },
     "RetryStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-retrystrategy",
-      "$ref" : "AWS_Batch_JobDefinition.RetryStrategy.schema.json"
+      "$ref" : "AWS_Batch_JobDefinition.RetryStrategy.schema.json",
+      "javaType" : "aws.Property<aws.batch.RetryStrategy>"
     }
   }
 }

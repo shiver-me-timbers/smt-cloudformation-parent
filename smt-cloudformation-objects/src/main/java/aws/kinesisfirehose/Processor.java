@@ -3,6 +3,7 @@ package aws.kinesisfirehose;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Parameters",
     "Type"
 })
-public class Processor {
+public class Processor implements Property<Processor>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-parameters
@@ -34,7 +36,7 @@ public class Processor {
     @JsonProperty("Parameters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-parameters")
-    private Set<ProcessorParameter> parameters = new LinkedHashSet<ProcessorParameter>();
+    private Set<Property<ProcessorParameter>> parameters = new LinkedHashSet<Property<ProcessorParameter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processor.html#cfn-kinesisfirehose-deliverystream-processor-type
      * 
@@ -48,7 +50,7 @@ public class Processor {
      * 
      */
     @JsonIgnore
-    public Set<ProcessorParameter> getParameters() {
+    public Set<Property<ProcessorParameter>> getParameters() {
         return parameters;
     }
 
@@ -57,11 +59,11 @@ public class Processor {
      * 
      */
     @JsonIgnore
-    public void setParameters(Set<ProcessorParameter> parameters) {
+    public void setParameters(Set<Property<ProcessorParameter>> parameters) {
         this.parameters = parameters;
     }
 
-    public Processor withParameters(Set<ProcessorParameter> parameters) {
+    public Processor withParameters(Set<Property<ProcessorParameter>> parameters) {
         this.parameters = parameters;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html",
   "type" : "object",
   "javaType" : "aws.greengrass.LocalVolumeResourceData",
+  "javaInterfaces" : [ "aws.Property<LocalVolumeResourceData>" ],
   "properties" : {
     "SourcePath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html#cfn-greengrass-resourcedefinition-localvolumeresourcedata-sourcepath",
@@ -18,7 +19,8 @@
     },
     "GroupOwnerSetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html#cfn-greengrass-resourcedefinition-localvolumeresourcedata-groupownersetting",
-      "$ref" : "AWS_Greengrass_ResourceDefinition.GroupOwnerSetting.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinition.GroupOwnerSetting.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.GroupOwnerSetting>"
     }
   }
 }

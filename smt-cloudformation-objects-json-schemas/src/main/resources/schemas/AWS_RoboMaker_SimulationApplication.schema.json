@@ -8,11 +8,13 @@
   "properties" : {
     "RenderingEngine" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-renderingengine",
-      "$ref" : "AWS_RoboMaker_SimulationApplication.RenderingEngine.schema.json"
+      "$ref" : "AWS_RoboMaker_SimulationApplication.RenderingEngine.schema.json",
+      "javaType" : "aws.Property<aws.robomaker.RenderingEngine>"
     },
     "SimulationSoftwareSuite" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-simulationsoftwaresuite",
-      "$ref" : "AWS_RoboMaker_SimulationApplication.SimulationSoftwareSuite.schema.json"
+      "$ref" : "AWS_RoboMaker_SimulationApplication.SimulationSoftwareSuite.schema.json",
+      "javaType" : "aws.Property<aws.robomaker.SimulationSoftwareSuite>"
     },
     "CurrentRevisionId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-currentrevisionid",
@@ -21,13 +23,15 @@
     },
     "RobotSoftwareSuite" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-robotsoftwaresuite",
-      "$ref" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json"
+      "$ref" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json",
+      "javaType" : "aws.Property<aws.robomaker.RobotSoftwareSuite>"
     },
     "Sources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-sources",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_RoboMaker_RobotApplication.SourceConfig.schema.json"
+        "$ref" : "AWS_RoboMaker_RobotApplication.SourceConfig.schema.json",
+        "javaType" : "aws.Property<aws.robomaker.SourceConfig>"
       }
     },
     "Tags" : {

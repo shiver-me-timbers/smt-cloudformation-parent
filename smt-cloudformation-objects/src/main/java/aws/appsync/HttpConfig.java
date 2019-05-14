@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Endpoint",
     "AuthorizationConfig"
 })
-public class HttpConfig {
+public class HttpConfig implements Property<HttpConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
@@ -39,7 +41,7 @@ public class HttpConfig {
      */
     @JsonProperty("AuthorizationConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html")
-    private AuthorizationConfig authorizationConfig;
+    private Property<AuthorizationConfig> authorizationConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint
@@ -71,7 +73,7 @@ public class HttpConfig {
      * 
      */
     @JsonIgnore
-    public AuthorizationConfig getAuthorizationConfig() {
+    public Property<AuthorizationConfig> getAuthorizationConfig() {
         return authorizationConfig;
     }
 
@@ -82,11 +84,11 @@ public class HttpConfig {
      * 
      */
     @JsonIgnore
-    public void setAuthorizationConfig(AuthorizationConfig authorizationConfig) {
+    public void setAuthorizationConfig(Property<AuthorizationConfig> authorizationConfig) {
         this.authorizationConfig = authorizationConfig;
     }
 
-    public HttpConfig withAuthorizationConfig(AuthorizationConfig authorizationConfig) {
+    public HttpConfig withAuthorizationConfig(Property<AuthorizationConfig> authorizationConfig) {
         this.authorizationConfig = authorizationConfig;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Listeners"
 })
-public class VirtualRouterSpec {
+public class VirtualRouterSpec implements Property<VirtualRouterSpec>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html#cfn-appmesh-virtualrouter-virtualrouterspec-listeners
@@ -31,14 +33,14 @@ public class VirtualRouterSpec {
      */
     @JsonProperty("Listeners")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html#cfn-appmesh-virtualrouter-virtualrouterspec-listeners")
-    private List<VirtualRouterListener> listeners = new ArrayList<VirtualRouterListener>();
+    private List<Property<VirtualRouterListener>> listeners = new ArrayList<Property<VirtualRouterListener>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html#cfn-appmesh-virtualrouter-virtualrouterspec-listeners
      * 
      */
     @JsonIgnore
-    public List<VirtualRouterListener> getListeners() {
+    public List<Property<VirtualRouterListener>> getListeners() {
         return listeners;
     }
 
@@ -47,11 +49,11 @@ public class VirtualRouterSpec {
      * 
      */
     @JsonIgnore
-    public void setListeners(List<VirtualRouterListener> listeners) {
+    public void setListeners(List<Property<VirtualRouterListener>> listeners) {
         this.listeners = listeners;
     }
 
-    public VirtualRouterSpec withListeners(List<VirtualRouterListener> listeners) {
+    public VirtualRouterSpec withListeners(List<Property<VirtualRouterListener>> listeners) {
         this.listeners = listeners;
         return this;
     }

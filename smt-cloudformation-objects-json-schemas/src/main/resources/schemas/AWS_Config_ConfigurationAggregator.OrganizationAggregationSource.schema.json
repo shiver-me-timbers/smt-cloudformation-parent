@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html",
   "type" : "object",
   "javaType" : "aws.config.OrganizationAggregationSource",
+  "javaInterfaces" : [ "aws.Property<OrganizationAggregationSource>" ],
   "properties" : {
     "AllAwsRegions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html#cfn-config-configurationaggregator-organizationaggregationsource-allawsregions",

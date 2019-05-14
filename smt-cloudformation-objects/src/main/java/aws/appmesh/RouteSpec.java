@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "HttpRoute",
     "TcpRoute"
 })
-public class RouteSpec {
+public class RouteSpec implements Property<RouteSpec>
+{
 
     /**
      * HttpRoute
@@ -32,7 +34,7 @@ public class RouteSpec {
      */
     @JsonProperty("HttpRoute")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html")
-    private HttpRoute httpRoute;
+    private Property<HttpRoute> httpRoute;
     /**
      * TcpRoute
      * <p>
@@ -41,7 +43,7 @@ public class RouteSpec {
      */
     @JsonProperty("TcpRoute")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcproute.html")
-    private TcpRoute tcpRoute;
+    private Property<TcpRoute> tcpRoute;
 
     /**
      * HttpRoute
@@ -50,7 +52,7 @@ public class RouteSpec {
      * 
      */
     @JsonIgnore
-    public HttpRoute getHttpRoute() {
+    public Property<HttpRoute> getHttpRoute() {
         return httpRoute;
     }
 
@@ -61,11 +63,11 @@ public class RouteSpec {
      * 
      */
     @JsonIgnore
-    public void setHttpRoute(HttpRoute httpRoute) {
+    public void setHttpRoute(Property<HttpRoute> httpRoute) {
         this.httpRoute = httpRoute;
     }
 
-    public RouteSpec withHttpRoute(HttpRoute httpRoute) {
+    public RouteSpec withHttpRoute(Property<HttpRoute> httpRoute) {
         this.httpRoute = httpRoute;
         return this;
     }
@@ -77,7 +79,7 @@ public class RouteSpec {
      * 
      */
     @JsonIgnore
-    public TcpRoute getTcpRoute() {
+    public Property<TcpRoute> getTcpRoute() {
         return tcpRoute;
     }
 
@@ -88,11 +90,11 @@ public class RouteSpec {
      * 
      */
     @JsonIgnore
-    public void setTcpRoute(TcpRoute tcpRoute) {
+    public void setTcpRoute(Property<TcpRoute> tcpRoute) {
         this.tcpRoute = tcpRoute;
     }
 
-    public RouteSpec withTcpRoute(TcpRoute tcpRoute) {
+    public RouteSpec withTcpRoute(Property<TcpRoute> tcpRoute) {
         this.tcpRoute = tcpRoute;
         return this;
     }

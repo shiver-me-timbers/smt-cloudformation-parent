@@ -1,6 +1,7 @@
 
 package aws.iotanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VariableName",
     "StringValue"
 })
-public class Variable {
+public class Variable implements Property<Variable>
+{
 
     /**
      * DatasetContentVersionValue
@@ -35,7 +37,7 @@ public class Variable {
      */
     @JsonProperty("DatasetContentVersionValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable-datasetcontentversionvalue.html")
-    private DatasetContentVersionValue datasetContentVersionValue;
+    private Property<DatasetContentVersionValue> datasetContentVersionValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-doublevalue
      * 
@@ -51,7 +53,7 @@ public class Variable {
      */
     @JsonProperty("OutputFileUriValue")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable-outputfileurivalue.html")
-    private OutputFileUriValue outputFileUriValue;
+    private Property<OutputFileUriValue> outputFileUriValue;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-variablename
      * 
@@ -74,7 +76,7 @@ public class Variable {
      * 
      */
     @JsonIgnore
-    public DatasetContentVersionValue getDatasetContentVersionValue() {
+    public Property<DatasetContentVersionValue> getDatasetContentVersionValue() {
         return datasetContentVersionValue;
     }
 
@@ -85,11 +87,11 @@ public class Variable {
      * 
      */
     @JsonIgnore
-    public void setDatasetContentVersionValue(DatasetContentVersionValue datasetContentVersionValue) {
+    public void setDatasetContentVersionValue(Property<DatasetContentVersionValue> datasetContentVersionValue) {
         this.datasetContentVersionValue = datasetContentVersionValue;
     }
 
-    public Variable withDatasetContentVersionValue(DatasetContentVersionValue datasetContentVersionValue) {
+    public Variable withDatasetContentVersionValue(Property<DatasetContentVersionValue> datasetContentVersionValue) {
         this.datasetContentVersionValue = datasetContentVersionValue;
         return this;
     }
@@ -124,7 +126,7 @@ public class Variable {
      * 
      */
     @JsonIgnore
-    public OutputFileUriValue getOutputFileUriValue() {
+    public Property<OutputFileUriValue> getOutputFileUriValue() {
         return outputFileUriValue;
     }
 
@@ -135,11 +137,11 @@ public class Variable {
      * 
      */
     @JsonIgnore
-    public void setOutputFileUriValue(OutputFileUriValue outputFileUriValue) {
+    public void setOutputFileUriValue(Property<OutputFileUriValue> outputFileUriValue) {
         this.outputFileUriValue = outputFileUriValue;
     }
 
-    public Variable withOutputFileUriValue(OutputFileUriValue outputFileUriValue) {
+    public Variable withOutputFileUriValue(Property<OutputFileUriValue> outputFileUriValue) {
         this.outputFileUriValue = outputFileUriValue;
         return this;
     }

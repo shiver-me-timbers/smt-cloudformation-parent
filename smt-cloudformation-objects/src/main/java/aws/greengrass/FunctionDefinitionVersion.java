@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DefaultConfig",
     "Functions"
 })
-public class FunctionDefinitionVersion {
+public class FunctionDefinitionVersion implements Property<FunctionDefinitionVersion>
+{
 
     /**
      * DefaultConfig
@@ -34,14 +36,14 @@ public class FunctionDefinitionVersion {
      */
     @JsonProperty("DefaultConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html")
-    private DefaultConfig defaultConfig;
+    private Property<DefaultConfig> defaultConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions
      * 
      */
     @JsonProperty("Functions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions")
-    private List<Function> functions = new ArrayList<Function>();
+    private List<Property<Function>> functions = new ArrayList<Property<Function>>();
 
     /**
      * DefaultConfig
@@ -50,7 +52,7 @@ public class FunctionDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public DefaultConfig getDefaultConfig() {
+    public Property<DefaultConfig> getDefaultConfig() {
         return defaultConfig;
     }
 
@@ -61,11 +63,11 @@ public class FunctionDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setDefaultConfig(DefaultConfig defaultConfig) {
+    public void setDefaultConfig(Property<DefaultConfig> defaultConfig) {
         this.defaultConfig = defaultConfig;
     }
 
-    public FunctionDefinitionVersion withDefaultConfig(DefaultConfig defaultConfig) {
+    public FunctionDefinitionVersion withDefaultConfig(Property<DefaultConfig> defaultConfig) {
         this.defaultConfig = defaultConfig;
         return this;
     }
@@ -75,7 +77,7 @@ public class FunctionDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public List<Function> getFunctions() {
+    public List<Property<Function>> getFunctions() {
         return functions;
     }
 
@@ -84,11 +86,11 @@ public class FunctionDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setFunctions(List<Function> functions) {
+    public void setFunctions(List<Property<Function>> functions) {
         this.functions = functions;
     }
 
-    public FunctionDefinitionVersion withFunctions(List<Function> functions) {
+    public FunctionDefinitionVersion withFunctions(List<Property<Function>> functions) {
         this.functions = functions;
         return this;
     }

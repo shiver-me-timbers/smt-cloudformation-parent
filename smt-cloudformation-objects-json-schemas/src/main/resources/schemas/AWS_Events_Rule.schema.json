@@ -40,7 +40,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_Events_Rule.RunCommandTarget.schema.json"
+        "$ref" : "AWS_Events_Rule.RunCommandTarget.schema.json",
+        "javaType" : "aws.Property<aws.events.Target>"
       }
     }
   }

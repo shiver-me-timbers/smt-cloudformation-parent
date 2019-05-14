@@ -1,6 +1,7 @@
 
 package aws.config;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class ConfigurationRecorder {
      */
     @JsonProperty("RecordingGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html")
-    private RecordingGroup recordingGroup;
+    private Property<RecordingGroup> recordingGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn
      * 
@@ -79,7 +80,7 @@ public class ConfigurationRecorder {
      * 
      */
     @JsonIgnore
-    public RecordingGroup getRecordingGroup() {
+    public Property<RecordingGroup> getRecordingGroup() {
         return recordingGroup;
     }
 
@@ -90,11 +91,11 @@ public class ConfigurationRecorder {
      * 
      */
     @JsonIgnore
-    public void setRecordingGroup(RecordingGroup recordingGroup) {
+    public void setRecordingGroup(Property<RecordingGroup> recordingGroup) {
         this.recordingGroup = recordingGroup;
     }
 
-    public ConfigurationRecorder withRecordingGroup(RecordingGroup recordingGroup) {
+    public ConfigurationRecorder withRecordingGroup(Property<RecordingGroup> recordingGroup) {
         this.recordingGroup = recordingGroup;
         return this;
     }

@@ -8,7 +8,8 @@
   "properties" : {
     "Filter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptfilter.html#cfn-ses-receiptfilter-filter",
-      "$ref" : "AWS_SES_ReceiptFilter.Filter.schema.json"
+      "$ref" : "AWS_SES_ReceiptFilter.Filter.schema.json",
+      "javaType" : "aws.Property<aws.ses.Filter>"
     }
   }
 }

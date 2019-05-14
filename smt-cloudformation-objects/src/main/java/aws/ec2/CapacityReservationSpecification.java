@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CapacityReservationPreference",
     "CapacityReservationTarget"
 })
-public class CapacityReservationSpecification {
+public class CapacityReservationSpecification implements Property<CapacityReservationSpecification>
+{
 
     /**
      * CapacityReservationPreference
@@ -40,7 +42,7 @@ public class CapacityReservationSpecification {
      */
     @JsonProperty("CapacityReservationTarget")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-capacityreservationtarget.html")
-    private CapacityReservationTarget capacityReservationTarget;
+    private Property<CapacityReservationTarget> capacityReservationTarget;
 
     /**
      * CapacityReservationPreference
@@ -76,7 +78,7 @@ public class CapacityReservationSpecification {
      * 
      */
     @JsonIgnore
-    public CapacityReservationTarget getCapacityReservationTarget() {
+    public Property<CapacityReservationTarget> getCapacityReservationTarget() {
         return capacityReservationTarget;
     }
 
@@ -87,11 +89,11 @@ public class CapacityReservationSpecification {
      * 
      */
     @JsonIgnore
-    public void setCapacityReservationTarget(CapacityReservationTarget capacityReservationTarget) {
+    public void setCapacityReservationTarget(Property<CapacityReservationTarget> capacityReservationTarget) {
         this.capacityReservationTarget = capacityReservationTarget;
     }
 
-    public CapacityReservationSpecification withCapacityReservationTarget(CapacityReservationTarget capacityReservationTarget) {
+    public CapacityReservationSpecification withCapacityReservationTarget(Property<CapacityReservationTarget> capacityReservationTarget) {
         this.capacityReservationTarget = capacityReservationTarget;
         return this;
     }

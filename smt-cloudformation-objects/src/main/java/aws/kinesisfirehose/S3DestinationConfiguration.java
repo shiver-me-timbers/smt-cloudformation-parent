@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Prefix",
     "RoleARN"
 })
-public class S3DestinationConfiguration {
+public class S3DestinationConfiguration implements Property<S3DestinationConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn
@@ -44,7 +46,7 @@ public class S3DestinationConfiguration {
      */
     @JsonProperty("BufferingHints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html")
-    private ElasticsearchBufferingHints bufferingHints;
+    private Property<BufferingHints> bufferingHints;
     /**
      * CloudWatchLoggingOptions
      * <p>
@@ -53,7 +55,7 @@ public class S3DestinationConfiguration {
      */
     @JsonProperty("CloudWatchLoggingOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html")
-    private CloudWatchLoggingOptions cloudWatchLoggingOptions;
+    private Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-compressionformat
      * 
@@ -69,7 +71,7 @@ public class S3DestinationConfiguration {
      */
     @JsonProperty("EncryptionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html")
-    private EncryptionConfiguration encryptionConfiguration;
+    private Property<EncryptionConfiguration> encryptionConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-prefix
      * 
@@ -115,7 +117,7 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ElasticsearchBufferingHints getBufferingHints() {
+    public Property<BufferingHints> getBufferingHints() {
         return bufferingHints;
     }
 
@@ -126,11 +128,11 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public void setBufferingHints(Property<BufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
     }
 
-    public S3DestinationConfiguration withBufferingHints(ElasticsearchBufferingHints bufferingHints) {
+    public S3DestinationConfiguration withBufferingHints(Property<BufferingHints> bufferingHints) {
         this.bufferingHints = bufferingHints;
         return this;
     }
@@ -142,7 +144,7 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
+    public Property<CloudWatchLoggingOptions> getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
 
@@ -153,11 +155,11 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public void setCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
 
-    public S3DestinationConfiguration withCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public S3DestinationConfiguration withCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
         return this;
     }
@@ -192,7 +194,7 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public EncryptionConfiguration getEncryptionConfiguration() {
+    public Property<EncryptionConfiguration> getEncryptionConfiguration() {
         return encryptionConfiguration;
     }
 
@@ -203,11 +205,11 @@ public class S3DestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public void setEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
     }
 
-    public S3DestinationConfiguration withEncryptionConfiguration(EncryptionConfiguration encryptionConfiguration) {
+    public S3DestinationConfiguration withEncryptionConfiguration(Property<EncryptionConfiguration> encryptionConfiguration) {
         this.encryptionConfiguration = encryptionConfiguration;
         return this;
     }

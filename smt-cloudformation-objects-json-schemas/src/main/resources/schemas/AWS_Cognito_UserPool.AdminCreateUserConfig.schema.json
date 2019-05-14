@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html",
   "type" : "object",
   "javaType" : "aws.cognito.AdminCreateUserConfig",
+  "javaInterfaces" : [ "aws.Property<AdminCreateUserConfig>" ],
   "properties" : {
     "InviteMessageTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-invitemessagetemplate",
-      "$ref" : "AWS_Cognito_UserPool.InviteMessageTemplate.schema.json"
+      "$ref" : "AWS_Cognito_UserPool.InviteMessageTemplate.schema.json",
+      "javaType" : "aws.Property<aws.cognito.InviteMessageTemplate>"
     },
     "UnusedAccountValidityDays" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays",

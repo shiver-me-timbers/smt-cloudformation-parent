@@ -3,6 +3,7 @@ package aws.dynamodb;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KeySchema",
     "Projection"
 })
-public class LocalSecondaryIndex {
+public class LocalSecondaryIndex implements Property<LocalSecondaryIndex>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
@@ -42,7 +44,7 @@ public class LocalSecondaryIndex {
     @JsonProperty("KeySchema")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-keyschema")
-    private Set<KeySchema> keySchema = new LinkedHashSet<KeySchema>();
+    private Set<Property<KeySchema>> keySchema = new LinkedHashSet<Property<KeySchema>>();
     /**
      * Projection
      * <p>
@@ -51,7 +53,7 @@ public class LocalSecondaryIndex {
      */
     @JsonProperty("Projection")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html")
-    private Projection projection;
+    private Property<Projection> projection;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html#cfn-dynamodb-lsi-indexname
@@ -81,7 +83,7 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public Set<KeySchema> getKeySchema() {
+    public Set<Property<KeySchema>> getKeySchema() {
         return keySchema;
     }
 
@@ -90,11 +92,11 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public void setKeySchema(Set<KeySchema> keySchema) {
+    public void setKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
     }
 
-    public LocalSecondaryIndex withKeySchema(Set<KeySchema> keySchema) {
+    public LocalSecondaryIndex withKeySchema(Set<Property<KeySchema>> keySchema) {
         this.keySchema = keySchema;
         return this;
     }
@@ -106,7 +108,7 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public Projection getProjection() {
+    public Property<Projection> getProjection() {
         return projection;
     }
 
@@ -117,11 +119,11 @@ public class LocalSecondaryIndex {
      * 
      */
     @JsonIgnore
-    public void setProjection(Projection projection) {
+    public void setProjection(Property<Projection> projection) {
         this.projection = projection;
     }
 
-    public LocalSecondaryIndex withProjection(Projection projection) {
+    public LocalSecondaryIndex withProjection(Property<Projection> projection) {
         this.projection = projection;
         return this;
     }

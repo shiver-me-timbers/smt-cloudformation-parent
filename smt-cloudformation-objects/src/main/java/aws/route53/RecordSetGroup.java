@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -57,7 +58,7 @@ public class RecordSetGroup {
     @JsonProperty("RecordSets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets")
-    private Set<RecordSet> recordSets = new LinkedHashSet<RecordSet>();
+    private Set<Property<RecordSet>> recordSets = new LinkedHashSet<Property<RecordSet>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
@@ -133,7 +134,7 @@ public class RecordSetGroup {
      * 
      */
     @JsonIgnore
-    public Set<RecordSet> getRecordSets() {
+    public Set<Property<RecordSet>> getRecordSets() {
         return recordSets;
     }
 
@@ -142,11 +143,11 @@ public class RecordSetGroup {
      * 
      */
     @JsonIgnore
-    public void setRecordSets(Set<RecordSet> recordSets) {
+    public void setRecordSets(Set<Property<RecordSet>> recordSets) {
         this.recordSets = recordSets;
     }
 
-    public RecordSetGroup withRecordSets(Set<RecordSet> recordSets) {
+    public RecordSetGroup withRecordSets(Set<Property<RecordSet>> recordSets) {
         this.recordSets = recordSets;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AmbiguousRoleResolution",
     "RulesConfiguration"
 })
-public class RoleMapping {
+public class RoleMapping implements Property<RoleMapping>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type
@@ -47,7 +49,7 @@ public class RoleMapping {
      */
     @JsonProperty("RulesConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html")
-    private RulesConfigurationType rulesConfiguration;
+    private Property<RulesConfigurationType> rulesConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rolemapping.html#cfn-cognito-identitypoolroleattachment-rolemapping-type
@@ -102,7 +104,7 @@ public class RoleMapping {
      * 
      */
     @JsonIgnore
-    public RulesConfigurationType getRulesConfiguration() {
+    public Property<RulesConfigurationType> getRulesConfiguration() {
         return rulesConfiguration;
     }
 
@@ -113,11 +115,11 @@ public class RoleMapping {
      * 
      */
     @JsonIgnore
-    public void setRulesConfiguration(RulesConfigurationType rulesConfiguration) {
+    public void setRulesConfiguration(Property<RulesConfigurationType> rulesConfiguration) {
         this.rulesConfiguration = rulesConfiguration;
     }
 
-    public RoleMapping withRulesConfiguration(RulesConfigurationType rulesConfiguration) {
+    public RoleMapping withRulesConfiguration(Property<RulesConfigurationType> rulesConfiguration) {
         this.rulesConfiguration = rulesConfiguration;
         return this;
     }

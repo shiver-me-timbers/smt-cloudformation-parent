@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -178,7 +179,7 @@ public class Cluster {
      */
     @JsonProperty("LoggingProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html")
-    private LoggingProperties loggingProperties;
+    private Property<LoggingProperties> loggingProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword
      * 
@@ -255,7 +256,7 @@ public class Cluster {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-vpcsecuritygroupids
      * 
@@ -639,7 +640,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public LoggingProperties getLoggingProperties() {
+    public Property<LoggingProperties> getLoggingProperties() {
         return loggingProperties;
     }
 
@@ -650,11 +651,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setLoggingProperties(LoggingProperties loggingProperties) {
+    public void setLoggingProperties(Property<LoggingProperties> loggingProperties) {
         this.loggingProperties = loggingProperties;
     }
 
-    public Cluster withLoggingProperties(LoggingProperties loggingProperties) {
+    public Cluster withLoggingProperties(Property<LoggingProperties> loggingProperties) {
         this.loggingProperties = loggingProperties;
         return this;
     }
@@ -894,7 +895,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -903,11 +904,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Cluster withTags(List<Tag> tags) {
+    public Cluster withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

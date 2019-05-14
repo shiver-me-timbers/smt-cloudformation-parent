@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SharedMemorySize",
     "Tmpfs"
 })
-public class LinuxParameters {
+public class LinuxParameters implements Property<LinuxParameters>
+{
 
     /**
      * KernelCapabilities
@@ -38,7 +40,7 @@ public class LinuxParameters {
      */
     @JsonProperty("Capabilities")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html")
-    private KernelCapabilities capabilities;
+    private Property<KernelCapabilities> capabilities;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices
      * 
@@ -46,7 +48,7 @@ public class LinuxParameters {
     @JsonProperty("Devices")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-devices")
-    private Set<Device> devices = new LinkedHashSet<Device>();
+    private Set<Property<Device>> devices = new LinkedHashSet<Property<Device>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
      * 
@@ -68,7 +70,7 @@ public class LinuxParameters {
     @JsonProperty("Tmpfs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-tmpfs")
-    private Set<Tmpfs> tmpfs = new LinkedHashSet<Tmpfs>();
+    private Set<Property<Tmpfs>> tmpfs = new LinkedHashSet<Property<Tmpfs>>();
 
     /**
      * KernelCapabilities
@@ -77,7 +79,7 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public KernelCapabilities getCapabilities() {
+    public Property<KernelCapabilities> getCapabilities() {
         return capabilities;
     }
 
@@ -88,11 +90,11 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public void setCapabilities(KernelCapabilities capabilities) {
+    public void setCapabilities(Property<KernelCapabilities> capabilities) {
         this.capabilities = capabilities;
     }
 
-    public LinuxParameters withCapabilities(KernelCapabilities capabilities) {
+    public LinuxParameters withCapabilities(Property<KernelCapabilities> capabilities) {
         this.capabilities = capabilities;
         return this;
     }
@@ -102,7 +104,7 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public Set<Device> getDevices() {
+    public Set<Property<Device>> getDevices() {
         return devices;
     }
 
@@ -111,11 +113,11 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public void setDevices(Set<Device> devices) {
+    public void setDevices(Set<Property<Device>> devices) {
         this.devices = devices;
     }
 
-    public LinuxParameters withDevices(Set<Device> devices) {
+    public LinuxParameters withDevices(Set<Property<Device>> devices) {
         this.devices = devices;
         return this;
     }
@@ -171,7 +173,7 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public Set<Tmpfs> getTmpfs() {
+    public Set<Property<Tmpfs>> getTmpfs() {
         return tmpfs;
     }
 
@@ -180,11 +182,11 @@ public class LinuxParameters {
      * 
      */
     @JsonIgnore
-    public void setTmpfs(Set<Tmpfs> tmpfs) {
+    public void setTmpfs(Set<Property<Tmpfs>> tmpfs) {
         this.tmpfs = tmpfs;
     }
 
-    public LinuxParameters withTmpfs(Set<Tmpfs> tmpfs) {
+    public LinuxParameters withTmpfs(Set<Property<Tmpfs>> tmpfs) {
         this.tmpfs = tmpfs;
         return this;
     }

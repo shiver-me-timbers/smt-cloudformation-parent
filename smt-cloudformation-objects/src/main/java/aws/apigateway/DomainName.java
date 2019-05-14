@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -48,7 +49,7 @@ public class DomainName {
      */
     @JsonProperty("EndpointConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html")
-    private EndpointConfiguration endpointConfiguration;
+    private Property<EndpointConfiguration> endpointConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn
      * 
@@ -110,7 +111,7 @@ public class DomainName {
      * 
      */
     @JsonIgnore
-    public EndpointConfiguration getEndpointConfiguration() {
+    public Property<EndpointConfiguration> getEndpointConfiguration() {
         return endpointConfiguration;
     }
 
@@ -121,11 +122,11 @@ public class DomainName {
      * 
      */
     @JsonIgnore
-    public void setEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
+    public void setEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
 
-    public DomainName withEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
+    public DomainName withEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
         return this;
     }

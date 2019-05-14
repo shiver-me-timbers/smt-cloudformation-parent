@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-domainname.html#cfn-apigatewayv2-domainname-domainnameconfigurations",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json"
+        "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.apigatewayv2.DomainNameConfiguration>"
       }
     }
   }

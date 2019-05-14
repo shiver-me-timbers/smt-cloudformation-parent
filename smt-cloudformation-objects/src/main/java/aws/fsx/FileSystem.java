@@ -3,6 +3,7 @@ package aws.fsx;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -63,7 +64,7 @@ public class FileSystem {
      */
     @JsonProperty("LustreConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html")
-    private LustreConfiguration lustreConfiguration;
+    private Property<LustreConfiguration> lustreConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-backupid
      * 
@@ -91,7 +92,7 @@ public class FileSystem {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * WindowsConfiguration
      * <p>
@@ -100,7 +101,7 @@ public class FileSystem {
      */
     @JsonProperty("WindowsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html")
-    private WindowsConfiguration windowsConfiguration;
+    private Property<WindowsConfiguration> windowsConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-kmskeyid
@@ -178,7 +179,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public LustreConfiguration getLustreConfiguration() {
+    public Property<LustreConfiguration> getLustreConfiguration() {
         return lustreConfiguration;
     }
 
@@ -189,11 +190,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setLustreConfiguration(LustreConfiguration lustreConfiguration) {
+    public void setLustreConfiguration(Property<LustreConfiguration> lustreConfiguration) {
         this.lustreConfiguration = lustreConfiguration;
     }
 
-    public FileSystem withLustreConfiguration(LustreConfiguration lustreConfiguration) {
+    public FileSystem withLustreConfiguration(Property<LustreConfiguration> lustreConfiguration) {
         this.lustreConfiguration = lustreConfiguration;
         return this;
     }
@@ -272,7 +273,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -281,11 +282,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public FileSystem withTags(List<Tag> tags) {
+    public FileSystem withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -297,7 +298,7 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public WindowsConfiguration getWindowsConfiguration() {
+    public Property<WindowsConfiguration> getWindowsConfiguration() {
         return windowsConfiguration;
     }
 
@@ -308,11 +309,11 @@ public class FileSystem {
      * 
      */
     @JsonIgnore
-    public void setWindowsConfiguration(WindowsConfiguration windowsConfiguration) {
+    public void setWindowsConfiguration(Property<WindowsConfiguration> windowsConfiguration) {
         this.windowsConfiguration = windowsConfiguration;
     }
 
-    public FileSystem withWindowsConfiguration(WindowsConfiguration windowsConfiguration) {
+    public FileSystem withWindowsConfiguration(Property<WindowsConfiguration> windowsConfiguration) {
         this.windowsConfiguration = windowsConfiguration;
         return this;
     }

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html",
   "type" : "object",
   "javaType" : "aws.s3.NotificationFilter",
+  "javaInterfaces" : [ "aws.Property<NotificationFilter>" ],
   "properties" : {
     "S3Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html#cfn-s3-bucket-notificationconfiguraiton-config-filter-s3key",
-      "$ref" : "AWS_S3_Bucket.S3KeyFilter.schema.json"
+      "$ref" : "AWS_S3_Bucket.S3KeyFilter.schema.json",
+      "javaType" : "aws.Property<aws.s3.S3KeyFilter>"
     }
   }
 }

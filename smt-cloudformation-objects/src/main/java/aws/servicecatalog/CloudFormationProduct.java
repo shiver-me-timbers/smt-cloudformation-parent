@@ -3,6 +3,7 @@ package aws.servicecatalog;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -90,7 +91,7 @@ public class CloudFormationProduct {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-name
      * 
@@ -104,7 +105,7 @@ public class CloudFormationProduct {
      */
     @JsonProperty("ProvisioningArtifactParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters")
-    private List<ProvisioningArtifactProperties> provisioningArtifactParameters = new ArrayList<ProvisioningArtifactProperties>();
+    private List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters = new ArrayList<Property<ProvisioningArtifactProperties>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
@@ -272,7 +273,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -281,11 +282,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public CloudFormationProduct withTags(List<Tag> tags) {
+    public CloudFormationProduct withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -318,7 +319,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public List<ProvisioningArtifactProperties> getProvisioningArtifactParameters() {
+    public List<Property<ProvisioningArtifactProperties>> getProvisioningArtifactParameters() {
         return provisioningArtifactParameters;
     }
 
@@ -327,11 +328,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public void setProvisioningArtifactParameters(List<ProvisioningArtifactProperties> provisioningArtifactParameters) {
+    public void setProvisioningArtifactParameters(List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters) {
         this.provisioningArtifactParameters = provisioningArtifactParameters;
     }
 
-    public CloudFormationProduct withProvisioningArtifactParameters(List<ProvisioningArtifactProperties> provisioningArtifactParameters) {
+    public CloudFormationProduct withProvisioningArtifactParameters(List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters) {
         this.provisioningArtifactParameters = provisioningArtifactParameters;
         return this;
     }

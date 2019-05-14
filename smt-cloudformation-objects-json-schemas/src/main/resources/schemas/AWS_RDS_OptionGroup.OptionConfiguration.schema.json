@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html",
   "type" : "object",
   "javaType" : "aws.rds.OptionConfiguration",
+  "javaInterfaces" : [ "aws.Property<OptionConfiguration>" ],
   "properties" : {
     "DBSecurityGroupMemberships" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships",
@@ -24,7 +25,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_RDS_OptionGroup.OptionSetting.schema.json"
+        "$ref" : "AWS_RDS_OptionGroup.OptionSetting.schema.json",
+        "javaType" : "aws.Property<aws.rds.OptionSetting>"
       }
     },
     "OptionVersion" : {

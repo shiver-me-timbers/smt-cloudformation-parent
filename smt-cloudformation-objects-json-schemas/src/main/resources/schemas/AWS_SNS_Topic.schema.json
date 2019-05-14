@@ -20,7 +20,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_SNS_Topic.Subscription.schema.json"
+        "$ref" : "AWS_SNS_Topic.Subscription.schema.json",
+        "javaType" : "aws.Property<aws.sns.Subscription>"
       }
     },
     "TopicName" : {

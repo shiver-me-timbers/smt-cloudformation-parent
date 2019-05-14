@@ -1,6 +1,7 @@
 
 package aws.gamelift;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class Build {
      */
     @JsonProperty("StorageLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html")
-    private S3Location storageLocation;
+    private Property<S3Location> storageLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-version
      * 
@@ -79,7 +80,7 @@ public class Build {
      * 
      */
     @JsonIgnore
-    public S3Location getStorageLocation() {
+    public Property<S3Location> getStorageLocation() {
         return storageLocation;
     }
 
@@ -90,11 +91,11 @@ public class Build {
      * 
      */
     @JsonIgnore
-    public void setStorageLocation(S3Location storageLocation) {
+    public void setStorageLocation(Property<S3Location> storageLocation) {
         this.storageLocation = storageLocation;
     }
 
-    public Build withStorageLocation(S3Location storageLocation) {
+    public Build withStorageLocation(Property<S3Location> storageLocation) {
         this.storageLocation = storageLocation;
         return this;
     }

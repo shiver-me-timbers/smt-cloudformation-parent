@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SecondaryPrivateIpAddressCount",
     "SubnetId"
 })
-public class InstanceNetworkInterfaceSpecification {
+public class InstanceNetworkInterfaceSpecification implements Property<InstanceNetworkInterfaceSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-associatepublicipaddress
@@ -86,7 +88,7 @@ public class InstanceNetworkInterfaceSpecification {
     @JsonProperty("Ipv6Addresses")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-ipv6addresses")
-    private Set<InstanceIpv6Address> ipv6Addresses = new LinkedHashSet<InstanceIpv6Address>();
+    private Set<Property<InstanceIpv6Address>> ipv6Addresses = new LinkedHashSet<Property<InstanceIpv6Address>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-networkinterfaceid
      * 
@@ -101,7 +103,7 @@ public class InstanceNetworkInterfaceSpecification {
     @JsonProperty("PrivateIpAddresses")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-privateipaddresses")
-    private Set<PrivateIpAddressSpecification> privateIpAddresses = new LinkedHashSet<PrivateIpAddressSpecification>();
+    private Set<Property<PrivateIpAddressSpecification>> privateIpAddresses = new LinkedHashSet<Property<PrivateIpAddressSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html#cfn-ec2-spotfleet-instancenetworkinterfacespecification-secondaryprivateipaddresscount
      * 
@@ -260,7 +262,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonIgnore
-    public Set<InstanceIpv6Address> getIpv6Addresses() {
+    public Set<Property<InstanceIpv6Address>> getIpv6Addresses() {
         return ipv6Addresses;
     }
 
@@ -269,11 +271,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonIgnore
-    public void setIpv6Addresses(Set<InstanceIpv6Address> ipv6Addresses) {
+    public void setIpv6Addresses(Set<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
 
-    public InstanceNetworkInterfaceSpecification withIpv6Addresses(Set<InstanceIpv6Address> ipv6Addresses) {
+    public InstanceNetworkInterfaceSpecification withIpv6Addresses(Set<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
         return this;
     }
@@ -306,7 +308,7 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonIgnore
-    public Set<PrivateIpAddressSpecification> getPrivateIpAddresses() {
+    public Set<Property<PrivateIpAddressSpecification>> getPrivateIpAddresses() {
         return privateIpAddresses;
     }
 
@@ -315,11 +317,11 @@ public class InstanceNetworkInterfaceSpecification {
      * 
      */
     @JsonIgnore
-    public void setPrivateIpAddresses(Set<PrivateIpAddressSpecification> privateIpAddresses) {
+    public void setPrivateIpAddresses(Set<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
     }
 
-    public InstanceNetworkInterfaceSpecification withPrivateIpAddresses(Set<PrivateIpAddressSpecification> privateIpAddresses) {
+    public InstanceNetworkInterfaceSpecification withPrivateIpAddresses(Set<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
         return this;
     }

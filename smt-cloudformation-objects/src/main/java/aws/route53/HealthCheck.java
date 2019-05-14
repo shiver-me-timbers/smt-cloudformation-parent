@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,14 +35,14 @@ public class HealthCheck {
      */
     @JsonProperty("HealthCheckConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html")
-    private HealthCheckConfig healthCheckConfig;
+    private Property<HealthCheckConfig> healthCheckConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags
      * 
      */
     @JsonProperty("HealthCheckTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-healthcheck.html#cfn-route53-healthcheck-healthchecktags")
-    private List<HealthCheckTag> healthCheckTags = new ArrayList<HealthCheckTag>();
+    private List<Property<HealthCheckTag>> healthCheckTags = new ArrayList<Property<HealthCheckTag>>();
 
     /**
      * HealthCheckConfig
@@ -50,7 +51,7 @@ public class HealthCheck {
      * 
      */
     @JsonIgnore
-    public HealthCheckConfig getHealthCheckConfig() {
+    public Property<HealthCheckConfig> getHealthCheckConfig() {
         return healthCheckConfig;
     }
 
@@ -61,11 +62,11 @@ public class HealthCheck {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
+    public void setHealthCheckConfig(Property<HealthCheckConfig> healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
     }
 
-    public HealthCheck withHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
+    public HealthCheck withHealthCheckConfig(Property<HealthCheckConfig> healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
         return this;
     }
@@ -75,7 +76,7 @@ public class HealthCheck {
      * 
      */
     @JsonIgnore
-    public List<HealthCheckTag> getHealthCheckTags() {
+    public List<Property<HealthCheckTag>> getHealthCheckTags() {
         return healthCheckTags;
     }
 
@@ -84,11 +85,11 @@ public class HealthCheck {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckTags(List<HealthCheckTag> healthCheckTags) {
+    public void setHealthCheckTags(List<Property<HealthCheckTag>> healthCheckTags) {
         this.healthCheckTags = healthCheckTags;
     }
 
-    public HealthCheck withHealthCheckTags(List<HealthCheckTag> healthCheckTags) {
+    public HealthCheck withHealthCheckTags(List<Property<HealthCheckTag>> healthCheckTags) {
         this.healthCheckTags = healthCheckTags;
         return this;
     }

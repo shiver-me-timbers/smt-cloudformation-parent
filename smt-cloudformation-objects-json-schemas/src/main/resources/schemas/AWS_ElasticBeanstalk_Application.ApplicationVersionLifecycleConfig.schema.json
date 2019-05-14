@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html",
   "type" : "object",
   "javaType" : "aws.elasticbeanstalk.ApplicationVersionLifecycleConfig",
+  "javaInterfaces" : [ "aws.Property<ApplicationVersionLifecycleConfig>" ],
   "properties" : {
     "MaxAgeRule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html#cfn-elasticbeanstalk-application-applicationversionlifecycleconfig-maxagerule",
-      "$ref" : "AWS_ElasticBeanstalk_Application.MaxAgeRule.schema.json"
+      "$ref" : "AWS_ElasticBeanstalk_Application.MaxAgeRule.schema.json",
+      "javaType" : "aws.Property<aws.elasticbeanstalk.MaxAgeRule>"
     },
     "MaxCountRule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationversionlifecycleconfig.html#cfn-elasticbeanstalk-application-applicationversionlifecycleconfig-maxcountrule",
-      "$ref" : "AWS_ElasticBeanstalk_Application.MaxCountRule.schema.json"
+      "$ref" : "AWS_ElasticBeanstalk_Application.MaxCountRule.schema.json",
+      "javaType" : "aws.Property<aws.elasticbeanstalk.MaxCountRule>"
     }
   }
 }

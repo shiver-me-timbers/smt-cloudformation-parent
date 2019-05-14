@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Cores"
 })
-public class CoreDefinitionVersion {
+public class CoreDefinitionVersion implements Property<CoreDefinitionVersion>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores
@@ -31,14 +33,14 @@ public class CoreDefinitionVersion {
      */
     @JsonProperty("Cores")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores")
-    private List<Core> cores = new ArrayList<Core>();
+    private List<Property<Core>> cores = new ArrayList<Property<Core>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores
      * 
      */
     @JsonIgnore
-    public List<Core> getCores() {
+    public List<Property<Core>> getCores() {
         return cores;
     }
 
@@ -47,11 +49,11 @@ public class CoreDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setCores(List<Core> cores) {
+    public void setCores(List<Property<Core>> cores) {
         this.cores = cores;
     }
 
-    public CoreDefinitionVersion withCores(List<Core> cores) {
+    public CoreDefinitionVersion withCores(List<Property<Core>> cores) {
         this.cores = cores;
         return this;
     }

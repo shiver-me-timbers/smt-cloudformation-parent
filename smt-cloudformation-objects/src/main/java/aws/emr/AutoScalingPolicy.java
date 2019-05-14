@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Constraints",
     "Rules"
 })
-public class AutoScalingPolicy {
+public class AutoScalingPolicy implements Property<AutoScalingPolicy>
+{
 
     /**
      * ScalingConstraints
@@ -35,7 +37,7 @@ public class AutoScalingPolicy {
      */
     @JsonProperty("Constraints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingconstraints.html")
-    private ScalingConstraints constraints;
+    private Property<ScalingConstraints> constraints;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules
      * 
@@ -43,7 +45,7 @@ public class AutoScalingPolicy {
     @JsonProperty("Rules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-autoscalingpolicy.html#cfn-elasticmapreduce-cluster-autoscalingpolicy-rules")
-    private Set<ScalingRule> rules = new LinkedHashSet<ScalingRule>();
+    private Set<Property<ScalingRule>> rules = new LinkedHashSet<Property<ScalingRule>>();
 
     /**
      * ScalingConstraints
@@ -52,7 +54,7 @@ public class AutoScalingPolicy {
      * 
      */
     @JsonIgnore
-    public ScalingConstraints getConstraints() {
+    public Property<ScalingConstraints> getConstraints() {
         return constraints;
     }
 
@@ -63,11 +65,11 @@ public class AutoScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setConstraints(ScalingConstraints constraints) {
+    public void setConstraints(Property<ScalingConstraints> constraints) {
         this.constraints = constraints;
     }
 
-    public AutoScalingPolicy withConstraints(ScalingConstraints constraints) {
+    public AutoScalingPolicy withConstraints(Property<ScalingConstraints> constraints) {
         this.constraints = constraints;
         return this;
     }
@@ -77,7 +79,7 @@ public class AutoScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Set<ScalingRule> getRules() {
+    public Set<Property<ScalingRule>> getRules() {
         return rules;
     }
 
@@ -86,11 +88,11 @@ public class AutoScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setRules(Set<ScalingRule> rules) {
+    public void setRules(Set<Property<ScalingRule>> rules) {
         this.rules = rules;
     }
 
-    public AutoScalingPolicy withRules(Set<ScalingRule> rules) {
+    public AutoScalingPolicy withRules(Set<Property<ScalingRule>> rules) {
         this.rules = rules;
         return this;
     }

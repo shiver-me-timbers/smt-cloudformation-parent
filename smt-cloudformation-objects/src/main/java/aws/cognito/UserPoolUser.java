@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,7 @@ public class UserPoolUser {
      */
     @JsonProperty("ValidationData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata")
-    private List<AttributeType> validationData = new ArrayList<AttributeType>();
+    private List<Property<aws.cognito.AttributeType>> validationData = new ArrayList<Property<aws.cognito.AttributeType>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userpoolid
      * 
@@ -79,14 +80,14 @@ public class UserPoolUser {
      */
     @JsonProperty("UserAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes")
-    private List<AttributeType> userAttributes = new ArrayList<AttributeType>();
+    private List<Property<aws.cognito.AttributeType>> userAttributes = new ArrayList<Property<aws.cognito.AttributeType>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata
      * 
      */
     @JsonIgnore
-    public List<AttributeType> getValidationData() {
+    public List<Property<aws.cognito.AttributeType>> getValidationData() {
         return validationData;
     }
 
@@ -95,11 +96,11 @@ public class UserPoolUser {
      * 
      */
     @JsonIgnore
-    public void setValidationData(List<AttributeType> validationData) {
+    public void setValidationData(List<Property<aws.cognito.AttributeType>> validationData) {
         this.validationData = validationData;
     }
 
-    public UserPoolUser withValidationData(List<AttributeType> validationData) {
+    public UserPoolUser withValidationData(List<Property<aws.cognito.AttributeType>> validationData) {
         this.validationData = validationData;
         return this;
     }
@@ -224,7 +225,7 @@ public class UserPoolUser {
      * 
      */
     @JsonIgnore
-    public List<AttributeType> getUserAttributes() {
+    public List<Property<aws.cognito.AttributeType>> getUserAttributes() {
         return userAttributes;
     }
 
@@ -233,11 +234,11 @@ public class UserPoolUser {
      * 
      */
     @JsonIgnore
-    public void setUserAttributes(List<AttributeType> userAttributes) {
+    public void setUserAttributes(List<Property<aws.cognito.AttributeType>> userAttributes) {
         this.userAttributes = userAttributes;
     }
 
-    public UserPoolUser withUserAttributes(List<AttributeType> userAttributes) {
+    public UserPoolUser withUserAttributes(List<Property<aws.cognito.AttributeType>> userAttributes) {
         this.userAttributes = userAttributes;
         return this;
     }

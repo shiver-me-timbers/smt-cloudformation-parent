@@ -8,7 +8,8 @@
   "properties" : {
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-initialversion",
-      "$ref" : "AWS_Greengrass_Group.GroupVersion.schema.json"
+      "$ref" : "AWS_Greengrass_Group.GroupVersion.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.GroupVersion>"
     },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-rolearn",

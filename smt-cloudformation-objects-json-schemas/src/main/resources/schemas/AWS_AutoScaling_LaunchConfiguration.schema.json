@@ -15,7 +15,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_AutoScaling_LaunchConfiguration.BlockDeviceMapping.schema.json"
+        "$ref" : "AWS_AutoScaling_LaunchConfiguration.BlockDeviceMapping.schema.json",
+        "javaType" : "aws.Property<aws.autoscaling.BlockDeviceMapping>"
       }
     },
     "ClassicLinkVPCId" : {

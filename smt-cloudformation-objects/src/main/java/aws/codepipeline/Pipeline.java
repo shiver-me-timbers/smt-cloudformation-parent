@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class Pipeline {
      */
     @JsonProperty("ArtifactStore")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html")
-    private ArtifactStore artifactStore;
+    private Property<ArtifactStore> artifactStore;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores
      * 
@@ -48,7 +49,7 @@ public class Pipeline {
     @JsonProperty("ArtifactStores")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores")
-    private Set<ArtifactStoreMap> artifactStores = new LinkedHashSet<ArtifactStoreMap>();
+    private Set<Property<ArtifactStoreMap>> artifactStores = new LinkedHashSet<Property<ArtifactStoreMap>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions
      * 
@@ -56,7 +57,7 @@ public class Pipeline {
     @JsonProperty("DisableInboundStageTransitions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-disableinboundstagetransitions")
-    private Set<StageTransition> disableInboundStageTransitions = new LinkedHashSet<StageTransition>();
+    private Set<Property<StageTransition>> disableInboundStageTransitions = new LinkedHashSet<Property<StageTransition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-name
      * 
@@ -85,7 +86,7 @@ public class Pipeline {
     @JsonProperty("Stages")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-stages")
-    private Set<StageDeclaration> stages = new LinkedHashSet<StageDeclaration>();
+    private Set<Property<StageDeclaration>> stages = new LinkedHashSet<Property<StageDeclaration>>();
 
     /**
      * ArtifactStore
@@ -94,7 +95,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public ArtifactStore getArtifactStore() {
+    public Property<ArtifactStore> getArtifactStore() {
         return artifactStore;
     }
 
@@ -105,11 +106,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setArtifactStore(ArtifactStore artifactStore) {
+    public void setArtifactStore(Property<ArtifactStore> artifactStore) {
         this.artifactStore = artifactStore;
     }
 
-    public Pipeline withArtifactStore(ArtifactStore artifactStore) {
+    public Pipeline withArtifactStore(Property<ArtifactStore> artifactStore) {
         this.artifactStore = artifactStore;
         return this;
     }
@@ -119,7 +120,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public Set<ArtifactStoreMap> getArtifactStores() {
+    public Set<Property<ArtifactStoreMap>> getArtifactStores() {
         return artifactStores;
     }
 
@@ -128,11 +129,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setArtifactStores(Set<ArtifactStoreMap> artifactStores) {
+    public void setArtifactStores(Set<Property<ArtifactStoreMap>> artifactStores) {
         this.artifactStores = artifactStores;
     }
 
-    public Pipeline withArtifactStores(Set<ArtifactStoreMap> artifactStores) {
+    public Pipeline withArtifactStores(Set<Property<ArtifactStoreMap>> artifactStores) {
         this.artifactStores = artifactStores;
         return this;
     }
@@ -142,7 +143,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public Set<StageTransition> getDisableInboundStageTransitions() {
+    public Set<Property<StageTransition>> getDisableInboundStageTransitions() {
         return disableInboundStageTransitions;
     }
 
@@ -151,11 +152,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setDisableInboundStageTransitions(Set<StageTransition> disableInboundStageTransitions) {
+    public void setDisableInboundStageTransitions(Set<Property<StageTransition>> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
     }
 
-    public Pipeline withDisableInboundStageTransitions(Set<StageTransition> disableInboundStageTransitions) {
+    public Pipeline withDisableInboundStageTransitions(Set<Property<StageTransition>> disableInboundStageTransitions) {
         this.disableInboundStageTransitions = disableInboundStageTransitions;
         return this;
     }
@@ -234,7 +235,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public Set<StageDeclaration> getStages() {
+    public Set<Property<StageDeclaration>> getStages() {
         return stages;
     }
 
@@ -243,11 +244,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setStages(Set<StageDeclaration> stages) {
+    public void setStages(Set<Property<StageDeclaration>> stages) {
         this.stages = stages;
     }
 
-    public Pipeline withStages(Set<StageDeclaration> stages) {
+    public Pipeline withStages(Set<Property<StageDeclaration>> stages) {
         this.stages = stages;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3ContentLocation",
     "TextContent"
 })
-public class CodeContent {
+public class CodeContent implements Property<CodeContent>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html#cfn-kinesisanalyticsv2-application-codecontent-zipfilecontent
@@ -40,7 +42,7 @@ public class CodeContent {
      */
     @JsonProperty("S3ContentLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html")
-    private S3ContentLocation s3ContentLocation;
+    private Property<S3ContentLocation> s3ContentLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-codecontent.html#cfn-kinesisanalyticsv2-application-codecontent-textcontent
      * 
@@ -79,7 +81,7 @@ public class CodeContent {
      * 
      */
     @JsonIgnore
-    public S3ContentLocation getS3ContentLocation() {
+    public Property<S3ContentLocation> getS3ContentLocation() {
         return s3ContentLocation;
     }
 
@@ -90,11 +92,11 @@ public class CodeContent {
      * 
      */
     @JsonIgnore
-    public void setS3ContentLocation(S3ContentLocation s3ContentLocation) {
+    public void setS3ContentLocation(Property<S3ContentLocation> s3ContentLocation) {
         this.s3ContentLocation = s3ContentLocation;
     }
 
-    public CodeContent withS3ContentLocation(S3ContentLocation s3ContentLocation) {
+    public CodeContent withS3ContentLocation(Property<S3ContentLocation> s3ContentLocation) {
         this.s3ContentLocation = s3ContentLocation;
         return this;
     }

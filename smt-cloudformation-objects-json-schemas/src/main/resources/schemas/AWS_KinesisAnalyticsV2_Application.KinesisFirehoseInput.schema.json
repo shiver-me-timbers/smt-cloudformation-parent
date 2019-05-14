@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalyticsv2.KinesisFirehoseInput",
+  "javaInterfaces" : [ "aws.Property<KinesisFirehoseInput>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.html#cfn-kinesisanalyticsv2-application-kinesisfirehoseinput-resourcearn",

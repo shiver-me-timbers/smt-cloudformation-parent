@@ -3,6 +3,7 @@ package aws.opsworkscm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -138,7 +139,7 @@ public class Server {
      */
     @JsonProperty("EngineAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-engineattributes")
-    private List<EngineAttribute> engineAttributes = new ArrayList<EngineAttribute>();
+    private List<Property<EngineAttribute>> engineAttributes = new ArrayList<Property<EngineAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-backupretentioncount
      * 
@@ -465,7 +466,7 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public List<EngineAttribute> getEngineAttributes() {
+    public List<Property<EngineAttribute>> getEngineAttributes() {
         return engineAttributes;
     }
 
@@ -474,11 +475,11 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public void setEngineAttributes(List<EngineAttribute> engineAttributes) {
+    public void setEngineAttributes(List<Property<EngineAttribute>> engineAttributes) {
         this.engineAttributes = engineAttributes;
     }
 
-    public Server withEngineAttributes(List<EngineAttribute> engineAttributes) {
+    public Server withEngineAttributes(List<Property<EngineAttribute>> engineAttributes) {
         this.engineAttributes = engineAttributes;
         return this;
     }

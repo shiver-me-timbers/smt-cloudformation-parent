@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html",
   "type" : "object",
   "javaType" : "aws.appsync.AuthorizationConfig",
+  "javaInterfaces" : [ "aws.Property<AuthorizationConfig>" ],
   "properties" : {
     "AwsIamConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html#cfn-appsync-datasource-authorizationconfig-awsiamconfig",
-      "$ref" : "AWS_AppSync_DataSource.AwsIamConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.AwsIamConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.AwsIamConfig>"
     },
     "AuthorizationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html#cfn-appsync-datasource-authorizationconfig-authorizationtype",

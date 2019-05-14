@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Aliases",
     "TrustedSigners"
 })
-public class StreamingDistributionConfig {
+public class StreamingDistributionConfig implements Property<StreamingDistributionConfig>
+{
 
     /**
      * Logging
@@ -39,7 +41,7 @@ public class StreamingDistributionConfig {
      */
     @JsonProperty("Logging")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html")
-    private Logging logging;
+    private Property<Logging> logging;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-comment
      * 
@@ -62,7 +64,7 @@ public class StreamingDistributionConfig {
      */
     @JsonProperty("S3Origin")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html")
-    private S3Origin s3Origin;
+    private Property<S3Origin> s3Origin;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig-enabled
      * 
@@ -85,7 +87,7 @@ public class StreamingDistributionConfig {
      */
     @JsonProperty("TrustedSigners")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-trustedsigners.html")
-    private TrustedSigners trustedSigners;
+    private Property<TrustedSigners> trustedSigners;
 
     /**
      * Logging
@@ -94,7 +96,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public Logging getLogging() {
+    public Property<Logging> getLogging() {
         return logging;
     }
 
@@ -105,11 +107,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setLogging(Logging logging) {
+    public void setLogging(Property<Logging> logging) {
         this.logging = logging;
     }
 
-    public StreamingDistributionConfig withLogging(Logging logging) {
+    public StreamingDistributionConfig withLogging(Property<Logging> logging) {
         this.logging = logging;
         return this;
     }
@@ -167,7 +169,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public S3Origin getS3Origin() {
+    public Property<S3Origin> getS3Origin() {
         return s3Origin;
     }
 
@@ -178,11 +180,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setS3Origin(S3Origin s3Origin) {
+    public void setS3Origin(Property<S3Origin> s3Origin) {
         this.s3Origin = s3Origin;
     }
 
-    public StreamingDistributionConfig withS3Origin(S3Origin s3Origin) {
+    public StreamingDistributionConfig withS3Origin(Property<S3Origin> s3Origin) {
         this.s3Origin = s3Origin;
         return this;
     }
@@ -240,7 +242,7 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public TrustedSigners getTrustedSigners() {
+    public Property<TrustedSigners> getTrustedSigners() {
         return trustedSigners;
     }
 
@@ -251,11 +253,11 @@ public class StreamingDistributionConfig {
      * 
      */
     @JsonIgnore
-    public void setTrustedSigners(TrustedSigners trustedSigners) {
+    public void setTrustedSigners(Property<TrustedSigners> trustedSigners) {
         this.trustedSigners = trustedSigners;
     }
 
-    public StreamingDistributionConfig withTrustedSigners(TrustedSigners trustedSigners) {
+    public StreamingDistributionConfig withTrustedSigners(Property<TrustedSigners> trustedSigners) {
         this.trustedSigners = trustedSigners;
         return this;
     }

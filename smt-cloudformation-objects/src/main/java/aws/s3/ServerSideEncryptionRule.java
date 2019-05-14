@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ServerSideEncryptionByDefault"
 })
-public class ServerSideEncryptionRule {
+public class ServerSideEncryptionRule implements Property<ServerSideEncryptionRule>
+{
 
     /**
      * ServerSideEncryptionByDefault
@@ -31,7 +33,7 @@ public class ServerSideEncryptionRule {
      */
     @JsonProperty("ServerSideEncryptionByDefault")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-serversideencryptionbydefault.html")
-    private ServerSideEncryptionByDefault serverSideEncryptionByDefault;
+    private Property<ServerSideEncryptionByDefault> serverSideEncryptionByDefault;
 
     /**
      * ServerSideEncryptionByDefault
@@ -40,7 +42,7 @@ public class ServerSideEncryptionRule {
      * 
      */
     @JsonIgnore
-    public ServerSideEncryptionByDefault getServerSideEncryptionByDefault() {
+    public Property<ServerSideEncryptionByDefault> getServerSideEncryptionByDefault() {
         return serverSideEncryptionByDefault;
     }
 
@@ -51,11 +53,11 @@ public class ServerSideEncryptionRule {
      * 
      */
     @JsonIgnore
-    public void setServerSideEncryptionByDefault(ServerSideEncryptionByDefault serverSideEncryptionByDefault) {
+    public void setServerSideEncryptionByDefault(Property<ServerSideEncryptionByDefault> serverSideEncryptionByDefault) {
         this.serverSideEncryptionByDefault = serverSideEncryptionByDefault;
     }
 
-    public ServerSideEncryptionRule withServerSideEncryptionByDefault(ServerSideEncryptionByDefault serverSideEncryptionByDefault) {
+    public ServerSideEncryptionRule withServerSideEncryptionByDefault(Property<ServerSideEncryptionByDefault> serverSideEncryptionByDefault) {
         this.serverSideEncryptionByDefault = serverSideEncryptionByDefault;
         return this;
     }

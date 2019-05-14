@@ -22,7 +22,8 @@
     },
     "LustreConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-lustreconfiguration",
-      "$ref" : "AWS_FSx_FileSystem.LustreConfiguration.schema.json"
+      "$ref" : "AWS_FSx_FileSystem.LustreConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.fsx.LustreConfiguration>"
     },
     "BackupId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-backupid",
@@ -49,12 +50,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "WindowsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-windowsconfiguration",
-      "$ref" : "AWS_FSx_FileSystem.WindowsConfiguration.schema.json"
+      "$ref" : "AWS_FSx_FileSystem.WindowsConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.fsx.WindowsConfiguration>"
     }
   }
 }

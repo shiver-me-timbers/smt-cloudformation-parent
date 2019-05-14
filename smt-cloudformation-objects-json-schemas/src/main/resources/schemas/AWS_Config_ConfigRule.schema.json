@@ -27,11 +27,13 @@
     },
     "Scope" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-scope",
-      "$ref" : "AWS_Config_ConfigRule.Scope.schema.json"
+      "$ref" : "AWS_Config_ConfigRule.Scope.schema.json",
+      "javaType" : "aws.Property<aws.config.Scope>"
     },
     "Source" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-source",
-      "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json"
+      "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json",
+      "javaType" : "aws.Property<aws.config.Source>"
     }
   }
 }

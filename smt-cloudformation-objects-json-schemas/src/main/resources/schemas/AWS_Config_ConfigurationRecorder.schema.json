@@ -13,7 +13,8 @@
     },
     "RecordingGroup" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-recordinggroup",
-      "$ref" : "AWS_Config_ConfigurationRecorder.RecordingGroup.schema.json"
+      "$ref" : "AWS_Config_ConfigurationRecorder.RecordingGroup.schema.json",
+      "javaType" : "aws.Property<aws.config.RecordingGroup>"
     },
     "RoleARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn",

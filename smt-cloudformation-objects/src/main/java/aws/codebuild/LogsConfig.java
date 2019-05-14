@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CloudWatchLogs",
     "S3Logs"
 })
-public class LogsConfig {
+public class LogsConfig implements Property<LogsConfig>
+{
 
     /**
      * CloudWatchLogsConfig
@@ -32,7 +34,7 @@ public class LogsConfig {
      */
     @JsonProperty("CloudWatchLogs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-cloudwatchlogsconfig.html")
-    private CloudWatchLogsConfig cloudWatchLogs;
+    private Property<CloudWatchLogsConfig> cloudWatchLogs;
     /**
      * S3LogsConfig
      * <p>
@@ -41,7 +43,7 @@ public class LogsConfig {
      */
     @JsonProperty("S3Logs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-s3logsconfig.html")
-    private S3LogsConfig s3Logs;
+    private Property<S3LogsConfig> s3Logs;
 
     /**
      * CloudWatchLogsConfig
@@ -50,7 +52,7 @@ public class LogsConfig {
      * 
      */
     @JsonIgnore
-    public CloudWatchLogsConfig getCloudWatchLogs() {
+    public Property<CloudWatchLogsConfig> getCloudWatchLogs() {
         return cloudWatchLogs;
     }
 
@@ -61,11 +63,11 @@ public class LogsConfig {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLogs(CloudWatchLogsConfig cloudWatchLogs) {
+    public void setCloudWatchLogs(Property<CloudWatchLogsConfig> cloudWatchLogs) {
         this.cloudWatchLogs = cloudWatchLogs;
     }
 
-    public LogsConfig withCloudWatchLogs(CloudWatchLogsConfig cloudWatchLogs) {
+    public LogsConfig withCloudWatchLogs(Property<CloudWatchLogsConfig> cloudWatchLogs) {
         this.cloudWatchLogs = cloudWatchLogs;
         return this;
     }
@@ -77,7 +79,7 @@ public class LogsConfig {
      * 
      */
     @JsonIgnore
-    public S3LogsConfig getS3Logs() {
+    public Property<S3LogsConfig> getS3Logs() {
         return s3Logs;
     }
 
@@ -88,11 +90,11 @@ public class LogsConfig {
      * 
      */
     @JsonIgnore
-    public void setS3Logs(S3LogsConfig s3Logs) {
+    public void setS3Logs(Property<S3LogsConfig> s3Logs) {
         this.s3Logs = s3Logs;
     }
 
-    public LogsConfig withS3Logs(S3LogsConfig s3Logs) {
+    public LogsConfig withS3Logs(Property<S3LogsConfig> s3Logs) {
         this.s3Logs = s3Logs;
         return this;
     }

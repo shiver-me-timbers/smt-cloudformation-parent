@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "StorageDescriptor",
     "Values"
 })
-public class PartitionInput {
+public class PartitionInput implements Property<PartitionInput>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters
@@ -42,7 +44,7 @@ public class PartitionInput {
      */
     @JsonProperty("StorageDescriptor")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html")
-    private StorageDescriptor storageDescriptor;
+    private Property<StorageDescriptor> storageDescriptor;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-values
      * 
@@ -81,7 +83,7 @@ public class PartitionInput {
      * 
      */
     @JsonIgnore
-    public StorageDescriptor getStorageDescriptor() {
+    public Property<StorageDescriptor> getStorageDescriptor() {
         return storageDescriptor;
     }
 
@@ -92,11 +94,11 @@ public class PartitionInput {
      * 
      */
     @JsonIgnore
-    public void setStorageDescriptor(StorageDescriptor storageDescriptor) {
+    public void setStorageDescriptor(Property<StorageDescriptor> storageDescriptor) {
         this.storageDescriptor = storageDescriptor;
     }
 
-    public PartitionInput withStorageDescriptor(StorageDescriptor storageDescriptor) {
+    public PartitionInput withStorageDescriptor(Property<StorageDescriptor> storageDescriptor) {
         this.storageDescriptor = storageDescriptor;
         return this;
     }

@@ -4,6 +4,7 @@ package aws.apigateway;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -68,7 +69,7 @@ public class RestApi {
      */
     @JsonProperty("BodyS3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html")
-    private S3Location bodyS3Location;
+    private Property<S3Location> bodyS3Location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom
      * 
@@ -91,7 +92,7 @@ public class RestApi {
      */
     @JsonProperty("EndpointConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html")
-    private EndpointConfiguration endpointConfiguration;
+    private Property<EndpointConfiguration> endpointConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings
      * 
@@ -204,7 +205,7 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public S3Location getBodyS3Location() {
+    public Property<S3Location> getBodyS3Location() {
         return bodyS3Location;
     }
 
@@ -215,11 +216,11 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public void setBodyS3Location(S3Location bodyS3Location) {
+    public void setBodyS3Location(Property<S3Location> bodyS3Location) {
         this.bodyS3Location = bodyS3Location;
     }
 
-    public RestApi withBodyS3Location(S3Location bodyS3Location) {
+    public RestApi withBodyS3Location(Property<S3Location> bodyS3Location) {
         this.bodyS3Location = bodyS3Location;
         return this;
     }
@@ -277,7 +278,7 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public EndpointConfiguration getEndpointConfiguration() {
+    public Property<EndpointConfiguration> getEndpointConfiguration() {
         return endpointConfiguration;
     }
 
@@ -288,11 +289,11 @@ public class RestApi {
      * 
      */
     @JsonIgnore
-    public void setEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
+    public void setEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
 
-    public RestApi withEndpointConfiguration(EndpointConfiguration endpointConfiguration) {
+    public RestApi withEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
         return this;
     }

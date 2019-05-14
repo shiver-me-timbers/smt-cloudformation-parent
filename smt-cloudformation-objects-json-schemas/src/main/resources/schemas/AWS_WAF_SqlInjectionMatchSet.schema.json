@@ -16,7 +16,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_WAF_SqlInjectionMatchSet.SqlInjectionMatchTuple.schema.json"
+        "$ref" : "AWS_WAF_SqlInjectionMatchSet.SqlInjectionMatchTuple.schema.json",
+        "javaType" : "aws.Property<aws.waf.SqlInjectionMatchTuple>"
       }
     }
   }

@@ -3,6 +3,7 @@ package aws.iam;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -58,7 +59,7 @@ public class Group {
     @JsonProperty("Policies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-policies")
-    private Set<Policy> policies = new LinkedHashSet<Policy>();
+    private Set<Property<Policy>> policies = new LinkedHashSet<Property<Policy>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname
@@ -134,7 +135,7 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public Set<Policy> getPolicies() {
+    public Set<Property<Policy>> getPolicies() {
         return policies;
     }
 
@@ -143,11 +144,11 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public void setPolicies(Set<Policy> policies) {
+    public void setPolicies(Set<Property<Policy>> policies) {
         this.policies = policies;
     }
 
-    public Group withPolicies(Set<Policy> policies) {
+    public Group withPolicies(Set<Property<Policy>> policies) {
         this.policies = policies;
         return this;
     }

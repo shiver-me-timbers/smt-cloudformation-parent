@@ -1,9 +1,15 @@
 package shiver.me.timbers.cloudformation.types;
 
+import aws.Property;
+import org.junit.Before;
 import org.junit.Test;
 import shiver.me.timbers.cloudformation.files.FileNames;
 
-import static org.hamcrest.Matchers.is;
+import java.util.Map;
+
+import static java.lang.String.format;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasEntry;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
@@ -11,25 +17,59 @@ import static shiver.me.timbers.data.random.RandomStrings.someString;
 
 public class ClassTypeConverterTest {
 
-    @Test
-    public void Can_convert_a_class_type() {
+    private TypeNameFinder nameFinder;
+    private FileNames fileNames;
+    private JavaTypes javaTypes;
+    private ClassTypeConverter converter;
 
-        final TypeNameFinder nameFinder = mock(TypeNameFinder.class);
-        final FileNames fileNames = mock(FileNames.class);
+    @Before
+    public void setUp() {
+        nameFinder = mock(TypeNameFinder.class);
+        fileNames = mock(FileNames.class);
+        javaTypes = mock(JavaTypes.class);
+        converter = new ClassTypeConverter(nameFinder, fileNames, javaTypes);
+    }
+
+    @Test
+    public void Can_convert_a_resource_name_and_type_to_a_java_type() {
+
+        final String resourceName = someString();
+
+        final String type = someString();
+        final String typeName = someString();
+        final String typePackage = someString();
+
+        // Given
+        given(nameFinder.find(resourceName, type)).willReturn(typeName);
+        given(javaTypes.parsePackage(typeName)).willReturn(typePackage);
+
+        // When
+        final String actual = converter.toJavType(resourceName, type);
+
+        // Then
+        assertThat(actual, equalTo(format("%s<%s.%s>", Property.class.getName(), typePackage, type)));
+    }
+
+    @Test
+    public void Can_convert_a_resource_name_and_type_to_a_type_map() {
+
         final String resourceName = someString();
 
         final String type = someString();
         final String typeName = someString();
         final String fileName = someString();
+        final String typePackage = someString();
 
         // Given
         given(nameFinder.find(resourceName, type)).willReturn(typeName);
         given(fileNames.parse(typeName)).willReturn(fileName);
+        given(javaTypes.parsePackage(typeName)).willReturn(typePackage);
 
         // When
-        final String actual = new ClassTypeConverter(nameFinder, fileNames).convert(resourceName, type);
+        final Map<String, String> actual = converter.toTypeMap(resourceName, type);
 
         // Then
-        assertThat(actual, is(fileName));
+        assertThat(actual, hasEntry("$ref", fileName));
+        assertThat(actual, hasEntry("javaType", format("%s<%s.%s>", Property.class.getName(), typePackage, type)));
     }
 }

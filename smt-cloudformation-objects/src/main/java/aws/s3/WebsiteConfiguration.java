@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RedirectAllRequestsTo",
     "RoutingRules"
 })
-public class WebsiteConfiguration {
+public class WebsiteConfiguration implements Property<WebsiteConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument
@@ -51,7 +53,7 @@ public class WebsiteConfiguration {
      */
     @JsonProperty("RedirectAllRequestsTo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html")
-    private RedirectAllRequestsTo redirectAllRequestsTo;
+    private Property<RedirectAllRequestsTo> redirectAllRequestsTo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-routingrules
      * 
@@ -59,7 +61,7 @@ public class WebsiteConfiguration {
     @JsonProperty("RoutingRules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-routingrules")
-    private Set<RoutingRule> routingRules = new LinkedHashSet<RoutingRule>();
+    private Set<Property<RoutingRule>> routingRules = new LinkedHashSet<Property<RoutingRule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html#cfn-s3-websiteconfiguration-errordocument
@@ -114,7 +116,7 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonIgnore
-    public RedirectAllRequestsTo getRedirectAllRequestsTo() {
+    public Property<RedirectAllRequestsTo> getRedirectAllRequestsTo() {
         return redirectAllRequestsTo;
     }
 
@@ -125,11 +127,11 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRedirectAllRequestsTo(RedirectAllRequestsTo redirectAllRequestsTo) {
+    public void setRedirectAllRequestsTo(Property<RedirectAllRequestsTo> redirectAllRequestsTo) {
         this.redirectAllRequestsTo = redirectAllRequestsTo;
     }
 
-    public WebsiteConfiguration withRedirectAllRequestsTo(RedirectAllRequestsTo redirectAllRequestsTo) {
+    public WebsiteConfiguration withRedirectAllRequestsTo(Property<RedirectAllRequestsTo> redirectAllRequestsTo) {
         this.redirectAllRequestsTo = redirectAllRequestsTo;
         return this;
     }
@@ -139,7 +141,7 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<RoutingRule> getRoutingRules() {
+    public Set<Property<RoutingRule>> getRoutingRules() {
         return routingRules;
     }
 
@@ -148,11 +150,11 @@ public class WebsiteConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRoutingRules(Set<RoutingRule> routingRules) {
+    public void setRoutingRules(Set<Property<RoutingRule>> routingRules) {
         this.routingRules = routingRules;
     }
 
-    public WebsiteConfiguration withRoutingRules(Set<RoutingRule> routingRules) {
+    public WebsiteConfiguration withRoutingRules(Set<Property<RoutingRule>> routingRules) {
         this.routingRules = routingRules;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Statistic",
     "Unit"
 })
-public class CustomizedMetricSpecification {
+public class CustomizedMetricSpecification implements Property<CustomizedMetricSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html#cfn-autoscaling-scalingpolicy-customizedmetricspecification-dimensions
@@ -37,7 +39,7 @@ public class CustomizedMetricSpecification {
     @JsonProperty("Dimensions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html#cfn-autoscaling-scalingpolicy-customizedmetricspecification-dimensions")
-    private Set<MetricDimension> dimensions = new LinkedHashSet<MetricDimension>();
+    private Set<Property<MetricDimension>> dimensions = new LinkedHashSet<Property<MetricDimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html#cfn-autoscaling-scalingpolicy-customizedmetricspecification-metricname
      * 
@@ -72,7 +74,7 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonIgnore
-    public Set<MetricDimension> getDimensions() {
+    public Set<Property<MetricDimension>> getDimensions() {
         return dimensions;
     }
 
@@ -81,11 +83,11 @@ public class CustomizedMetricSpecification {
      * 
      */
     @JsonIgnore
-    public void setDimensions(Set<MetricDimension> dimensions) {
+    public void setDimensions(Set<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public CustomizedMetricSpecification withDimensions(Set<MetricDimension> dimensions) {
+    public CustomizedMetricSpecification withDimensions(Set<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }

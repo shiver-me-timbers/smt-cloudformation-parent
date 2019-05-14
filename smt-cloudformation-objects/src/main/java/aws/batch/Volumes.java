@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Host",
     "Name"
 })
-public class Volumes {
+public class Volumes implements Property<Volumes>
+{
 
     /**
      * VolumesHost
@@ -32,7 +34,7 @@ public class Volumes {
      */
     @JsonProperty("Host")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumeshost.html")
-    private VolumesHost host;
+    private Property<VolumesHost> host;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-volumes.html#cfn-batch-jobdefinition-volumes-name
      * 
@@ -48,7 +50,7 @@ public class Volumes {
      * 
      */
     @JsonIgnore
-    public VolumesHost getHost() {
+    public Property<VolumesHost> getHost() {
         return host;
     }
 
@@ -59,11 +61,11 @@ public class Volumes {
      * 
      */
     @JsonIgnore
-    public void setHost(VolumesHost host) {
+    public void setHost(Property<VolumesHost> host) {
         this.host = host;
     }
 
-    public Volumes withHost(VolumesHost host) {
+    public Volumes withHost(Property<VolumesHost> host) {
         this.host = host;
         return this;
     }

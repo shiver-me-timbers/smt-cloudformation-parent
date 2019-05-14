@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class ResourceDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html")
-    private ResourceDefinitionVersion initialVersion;
+    private Property<ResourceDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html#cfn-greengrass-resourcedefinition-name
      * 
@@ -48,7 +49,7 @@ public class ResourceDefinition {
      * 
      */
     @JsonIgnore
-    public ResourceDefinitionVersion getInitialVersion() {
+    public Property<ResourceDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class ResourceDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(ResourceDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<ResourceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public ResourceDefinition withInitialVersion(ResourceDefinitionVersion initialVersion) {
+    public ResourceDefinition withInitialVersion(Property<ResourceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

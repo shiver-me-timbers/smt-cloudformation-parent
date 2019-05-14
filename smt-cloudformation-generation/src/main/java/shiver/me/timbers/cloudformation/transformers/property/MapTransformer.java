@@ -2,6 +2,7 @@ package shiver.me.timbers.cloudformation.transformers.property;
 
 import shiver.me.timbers.cloudformation.CloudformationProperty;
 import shiver.me.timbers.cloudformation.CloudformationType;
+import shiver.me.timbers.cloudformation.types.ClassTypeConverter;
 import shiver.me.timbers.cloudformation.types.TypeException;
 
 import java.util.Map;
@@ -9,6 +10,12 @@ import java.util.Map;
 import static java.lang.String.format;
 
 public class MapTransformer implements PropertyTransformer {
+
+    private final ClassTypeConverter classTypeConverter;
+
+    public MapTransformer(ClassTypeConverter classTypeConverter) {
+        this.classTypeConverter = classTypeConverter;
+    }
 
     @Override
     public boolean supports(CloudformationProperty property) {
@@ -27,7 +34,7 @@ public class MapTransformer implements PropertyTransformer {
         property.put("javaType", findType(resourceName, propertyName, cloudformationProperty));
     }
 
-    private static String findType(
+    private String findType(
         String resourceName,
         String propertyName,
         CloudformationProperty cloudformationProperty
@@ -38,14 +45,14 @@ public class MapTransformer implements PropertyTransformer {
         }
         final String itemType = cloudformationProperty.getItemType();
         if (itemType != null) {
-            return toMapType(itemType);
+            return toMapType(classTypeConverter.toJavType(resourceName, itemType));
         }
         throw new TypeException(
             format("Could not find Map type for resource (%s) and property (%s),", resourceName, propertyName)
         );
     }
 
-    private static String toMapType(String primitiveItemType) {
-        return format("java.util.Map<String, %s>", primitiveItemType);
+    private static String toMapType(String type) {
+        return format("java.util.Map<String, %s>", type);
     }
 }

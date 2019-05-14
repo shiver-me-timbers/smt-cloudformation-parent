@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CapacityReservationSpecification",
     "CreditSpecification"
 })
-public class LaunchTemplateData {
+public class LaunchTemplateData implements Property<LaunchTemplateData>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroups
@@ -62,7 +64,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("TagSpecifications")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications")
-    private List<SpotFleetTagSpecification> tagSpecifications = new ArrayList<SpotFleetTagSpecification>();
+    private List<Property<TagSpecification>> tagSpecifications = new ArrayList<Property<TagSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-userdata
      * 
@@ -76,7 +78,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("BlockDeviceMappings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings")
-    private List<BlockDeviceMapping> blockDeviceMappings = new ArrayList<BlockDeviceMapping>();
+    private List<Property<BlockDeviceMapping>> blockDeviceMappings = new ArrayList<Property<BlockDeviceMapping>>();
     /**
      * IamInstanceProfile
      * <p>
@@ -85,7 +87,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("IamInstanceProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile.html")
-    private IamInstanceProfile iamInstanceProfile;
+    private Property<IamInstanceProfile> iamInstanceProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-kernelid
      * 
@@ -106,14 +108,14 @@ public class LaunchTemplateData {
      */
     @JsonProperty("ElasticGpuSpecifications")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticgpuspecifications")
-    private List<ElasticGpuSpecification> elasticGpuSpecifications = new ArrayList<ElasticGpuSpecification>();
+    private List<Property<ElasticGpuSpecification>> elasticGpuSpecifications = new ArrayList<Property<ElasticGpuSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators
      * 
      */
     @JsonProperty("ElasticInferenceAccelerators")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators")
-    private List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators = new ArrayList<LaunchTemplateElasticInferenceAccelerator>();
+    private List<Property<LaunchTemplateElasticInferenceAccelerator>> elasticInferenceAccelerators = new ArrayList<Property<LaunchTemplateElasticInferenceAccelerator>>();
     /**
      * SpotPlacement
      * <p>
@@ -122,14 +124,14 @@ public class LaunchTemplateData {
      */
     @JsonProperty("Placement")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html")
-    private SpotPlacement placement;
+    private Property<Placement> placement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-networkinterfaces
      * 
      */
     @JsonProperty("NetworkInterfaces")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-networkinterfaces")
-    private List<NetworkInterface> networkInterfaces = new ArrayList<NetworkInterface>();
+    private List<Property<NetworkInterface>> networkInterfaces = new ArrayList<Property<NetworkInterface>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-imageid
      * 
@@ -152,7 +154,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("Monitoring")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html")
-    private SpotFleetMonitoring monitoring;
+    private Property<Monitoring> monitoring;
     /**
      * HibernationOptions
      * <p>
@@ -161,14 +163,14 @@ public class LaunchTemplateData {
      */
     @JsonProperty("HibernationOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-hibernationoptions.html")
-    private HibernationOptions hibernationOptions;
+    private Property<HibernationOptions> hibernationOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications
      * 
      */
     @JsonProperty("LicenseSpecifications")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications")
-    private List<LicenseSpecification> licenseSpecifications = new ArrayList<LicenseSpecification>();
+    private List<Property<LicenseSpecification>> licenseSpecifications = new ArrayList<Property<LicenseSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instanceinitiatedshutdownbehavior
      * 
@@ -184,7 +186,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("CpuOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-cpuoptions.html")
-    private CpuOptions cpuOptions;
+    private Property<CpuOptions> cpuOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids
      * 
@@ -214,7 +216,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("InstanceMarketOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html")
-    private InstanceMarketOptions instanceMarketOptions;
+    private Property<InstanceMarketOptions> instanceMarketOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid
      * 
@@ -230,7 +232,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("CapacityReservationSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html")
-    private CapacityReservationSpecification capacityReservationSpecification;
+    private Property<CapacityReservationSpecification> capacityReservationSpecification;
     /**
      * CreditSpecification
      * <p>
@@ -239,7 +241,7 @@ public class LaunchTemplateData {
      */
     @JsonProperty("CreditSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html")
-    private CreditSpecification creditSpecification;
+    private Property<CreditSpecification> creditSpecification;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroups
@@ -269,7 +271,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<SpotFleetTagSpecification> getTagSpecifications() {
+    public List<Property<TagSpecification>> getTagSpecifications() {
         return tagSpecifications;
     }
 
@@ -278,11 +280,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setTagSpecifications(List<SpotFleetTagSpecification> tagSpecifications) {
+    public void setTagSpecifications(List<Property<TagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
     }
 
-    public LaunchTemplateData withTagSpecifications(List<SpotFleetTagSpecification> tagSpecifications) {
+    public LaunchTemplateData withTagSpecifications(List<Property<TagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
         return this;
     }
@@ -315,7 +317,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<BlockDeviceMapping> getBlockDeviceMappings() {
+    public List<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -324,11 +326,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings) {
+    public void setBlockDeviceMappings(List<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public LaunchTemplateData withBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings) {
+    public LaunchTemplateData withBlockDeviceMappings(List<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }
@@ -340,7 +342,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public IamInstanceProfile getIamInstanceProfile() {
+    public Property<IamInstanceProfile> getIamInstanceProfile() {
         return iamInstanceProfile;
     }
 
@@ -351,11 +353,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setIamInstanceProfile(IamInstanceProfile iamInstanceProfile) {
+    public void setIamInstanceProfile(Property<IamInstanceProfile> iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
 
-    public LaunchTemplateData withIamInstanceProfile(IamInstanceProfile iamInstanceProfile) {
+    public LaunchTemplateData withIamInstanceProfile(Property<IamInstanceProfile> iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
         return this;
     }
@@ -411,7 +413,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<ElasticGpuSpecification> getElasticGpuSpecifications() {
+    public List<Property<ElasticGpuSpecification>> getElasticGpuSpecifications() {
         return elasticGpuSpecifications;
     }
 
@@ -420,11 +422,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setElasticGpuSpecifications(List<ElasticGpuSpecification> elasticGpuSpecifications) {
+    public void setElasticGpuSpecifications(List<Property<ElasticGpuSpecification>> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
     }
 
-    public LaunchTemplateData withElasticGpuSpecifications(List<ElasticGpuSpecification> elasticGpuSpecifications) {
+    public LaunchTemplateData withElasticGpuSpecifications(List<Property<ElasticGpuSpecification>> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
         return this;
     }
@@ -434,7 +436,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<LaunchTemplateElasticInferenceAccelerator> getElasticInferenceAccelerators() {
+    public List<Property<LaunchTemplateElasticInferenceAccelerator>> getElasticInferenceAccelerators() {
         return elasticInferenceAccelerators;
     }
 
@@ -443,11 +445,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setElasticInferenceAccelerators(List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators) {
+    public void setElasticInferenceAccelerators(List<Property<LaunchTemplateElasticInferenceAccelerator>> elasticInferenceAccelerators) {
         this.elasticInferenceAccelerators = elasticInferenceAccelerators;
     }
 
-    public LaunchTemplateData withElasticInferenceAccelerators(List<LaunchTemplateElasticInferenceAccelerator> elasticInferenceAccelerators) {
+    public LaunchTemplateData withElasticInferenceAccelerators(List<Property<LaunchTemplateElasticInferenceAccelerator>> elasticInferenceAccelerators) {
         this.elasticInferenceAccelerators = elasticInferenceAccelerators;
         return this;
     }
@@ -459,7 +461,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public SpotPlacement getPlacement() {
+    public Property<Placement> getPlacement() {
         return placement;
     }
 
@@ -470,11 +472,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setPlacement(SpotPlacement placement) {
+    public void setPlacement(Property<Placement> placement) {
         this.placement = placement;
     }
 
-    public LaunchTemplateData withPlacement(SpotPlacement placement) {
+    public LaunchTemplateData withPlacement(Property<Placement> placement) {
         this.placement = placement;
         return this;
     }
@@ -484,7 +486,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<NetworkInterface> getNetworkInterfaces() {
+    public List<Property<NetworkInterface>> getNetworkInterfaces() {
         return networkInterfaces;
     }
 
@@ -493,11 +495,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setNetworkInterfaces(List<NetworkInterface> networkInterfaces) {
+    public void setNetworkInterfaces(List<Property<NetworkInterface>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
     }
 
-    public LaunchTemplateData withNetworkInterfaces(List<NetworkInterface> networkInterfaces) {
+    public LaunchTemplateData withNetworkInterfaces(List<Property<NetworkInterface>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
         return this;
     }
@@ -555,7 +557,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public SpotFleetMonitoring getMonitoring() {
+    public Property<Monitoring> getMonitoring() {
         return monitoring;
     }
 
@@ -566,11 +568,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setMonitoring(SpotFleetMonitoring monitoring) {
+    public void setMonitoring(Property<Monitoring> monitoring) {
         this.monitoring = monitoring;
     }
 
-    public LaunchTemplateData withMonitoring(SpotFleetMonitoring monitoring) {
+    public LaunchTemplateData withMonitoring(Property<Monitoring> monitoring) {
         this.monitoring = monitoring;
         return this;
     }
@@ -582,7 +584,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public HibernationOptions getHibernationOptions() {
+    public Property<HibernationOptions> getHibernationOptions() {
         return hibernationOptions;
     }
 
@@ -593,11 +595,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setHibernationOptions(HibernationOptions hibernationOptions) {
+    public void setHibernationOptions(Property<HibernationOptions> hibernationOptions) {
         this.hibernationOptions = hibernationOptions;
     }
 
-    public LaunchTemplateData withHibernationOptions(HibernationOptions hibernationOptions) {
+    public LaunchTemplateData withHibernationOptions(Property<HibernationOptions> hibernationOptions) {
         this.hibernationOptions = hibernationOptions;
         return this;
     }
@@ -607,7 +609,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public List<LicenseSpecification> getLicenseSpecifications() {
+    public List<Property<LicenseSpecification>> getLicenseSpecifications() {
         return licenseSpecifications;
     }
 
@@ -616,11 +618,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setLicenseSpecifications(List<LicenseSpecification> licenseSpecifications) {
+    public void setLicenseSpecifications(List<Property<LicenseSpecification>> licenseSpecifications) {
         this.licenseSpecifications = licenseSpecifications;
     }
 
-    public LaunchTemplateData withLicenseSpecifications(List<LicenseSpecification> licenseSpecifications) {
+    public LaunchTemplateData withLicenseSpecifications(List<Property<LicenseSpecification>> licenseSpecifications) {
         this.licenseSpecifications = licenseSpecifications;
         return this;
     }
@@ -655,7 +657,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public CpuOptions getCpuOptions() {
+    public Property<CpuOptions> getCpuOptions() {
         return cpuOptions;
     }
 
@@ -666,11 +668,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setCpuOptions(CpuOptions cpuOptions) {
+    public void setCpuOptions(Property<CpuOptions> cpuOptions) {
         this.cpuOptions = cpuOptions;
     }
 
-    public LaunchTemplateData withCpuOptions(CpuOptions cpuOptions) {
+    public LaunchTemplateData withCpuOptions(Property<CpuOptions> cpuOptions) {
         this.cpuOptions = cpuOptions;
         return this;
     }
@@ -751,7 +753,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public InstanceMarketOptions getInstanceMarketOptions() {
+    public Property<InstanceMarketOptions> getInstanceMarketOptions() {
         return instanceMarketOptions;
     }
 
@@ -762,11 +764,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
+    public void setInstanceMarketOptions(Property<InstanceMarketOptions> instanceMarketOptions) {
         this.instanceMarketOptions = instanceMarketOptions;
     }
 
-    public LaunchTemplateData withInstanceMarketOptions(InstanceMarketOptions instanceMarketOptions) {
+    public LaunchTemplateData withInstanceMarketOptions(Property<InstanceMarketOptions> instanceMarketOptions) {
         this.instanceMarketOptions = instanceMarketOptions;
         return this;
     }
@@ -801,7 +803,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public CapacityReservationSpecification getCapacityReservationSpecification() {
+    public Property<CapacityReservationSpecification> getCapacityReservationSpecification() {
         return capacityReservationSpecification;
     }
 
@@ -812,11 +814,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setCapacityReservationSpecification(CapacityReservationSpecification capacityReservationSpecification) {
+    public void setCapacityReservationSpecification(Property<CapacityReservationSpecification> capacityReservationSpecification) {
         this.capacityReservationSpecification = capacityReservationSpecification;
     }
 
-    public LaunchTemplateData withCapacityReservationSpecification(CapacityReservationSpecification capacityReservationSpecification) {
+    public LaunchTemplateData withCapacityReservationSpecification(Property<CapacityReservationSpecification> capacityReservationSpecification) {
         this.capacityReservationSpecification = capacityReservationSpecification;
         return this;
     }
@@ -828,7 +830,7 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public CreditSpecification getCreditSpecification() {
+    public Property<CreditSpecification> getCreditSpecification() {
         return creditSpecification;
     }
 
@@ -839,11 +841,11 @@ public class LaunchTemplateData {
      * 
      */
     @JsonIgnore
-    public void setCreditSpecification(CreditSpecification creditSpecification) {
+    public void setCreditSpecification(Property<CreditSpecification> creditSpecification) {
         this.creditSpecification = creditSpecification;
     }
 
-    public LaunchTemplateData withCreditSpecification(CreditSpecification creditSpecification) {
+    public LaunchTemplateData withCreditSpecification(Property<CreditSpecification> creditSpecification) {
         this.creditSpecification = creditSpecification;
         return this;
     }

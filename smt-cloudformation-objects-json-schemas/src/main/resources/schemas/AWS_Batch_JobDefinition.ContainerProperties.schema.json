@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html",
   "type" : "object",
   "javaType" : "aws.batch.ContainerProperties",
+  "javaInterfaces" : [ "aws.Property<ContainerProperties>" ],
   "properties" : {
     "User" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user",
@@ -41,21 +42,24 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-resourcerequirements",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json"
+        "$ref" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json",
+        "javaType" : "aws.Property<aws.batch.ResourceRequirement>"
       }
     },
     "MountPoints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-mountpoints",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Batch_JobDefinition.MountPoints.schema.json"
+        "$ref" : "AWS_Batch_JobDefinition.MountPoints.schema.json",
+        "javaType" : "aws.Property<aws.batch.MountPoints>"
       }
     },
     "Volumes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-volumes",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Batch_JobDefinition.Volumes.schema.json"
+        "$ref" : "AWS_Batch_JobDefinition.Volumes.schema.json",
+        "javaType" : "aws.Property<aws.batch.Volumes>"
       }
     },
     "Command" : {
@@ -70,14 +74,16 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-environment",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Batch_JobDefinition.Environment.schema.json"
+        "$ref" : "AWS_Batch_JobDefinition.Environment.schema.json",
+        "javaType" : "aws.Property<aws.batch.Environment>"
       }
     },
     "Ulimits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-ulimits",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Batch_JobDefinition.Ulimit.schema.json"
+        "$ref" : "AWS_Batch_JobDefinition.Ulimit.schema.json",
+        "javaType" : "aws.Property<aws.batch.Ulimit>"
       }
     },
     "InstanceType" : {

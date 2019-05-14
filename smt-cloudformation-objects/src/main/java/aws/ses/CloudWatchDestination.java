@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "DimensionConfigurations"
 })
-public class CloudWatchDestination {
+public class CloudWatchDestination implements Property<CloudWatchDestination>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations
@@ -31,14 +33,14 @@ public class CloudWatchDestination {
      */
     @JsonProperty("DimensionConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations")
-    private List<DimensionConfiguration> dimensionConfigurations = new ArrayList<DimensionConfiguration>();
+    private List<Property<DimensionConfiguration>> dimensionConfigurations = new ArrayList<Property<DimensionConfiguration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html#cfn-ses-configurationseteventdestination-cloudwatchdestination-dimensionconfigurations
      * 
      */
     @JsonIgnore
-    public List<DimensionConfiguration> getDimensionConfigurations() {
+    public List<Property<DimensionConfiguration>> getDimensionConfigurations() {
         return dimensionConfigurations;
     }
 
@@ -47,11 +49,11 @@ public class CloudWatchDestination {
      * 
      */
     @JsonIgnore
-    public void setDimensionConfigurations(List<DimensionConfiguration> dimensionConfigurations) {
+    public void setDimensionConfigurations(List<Property<DimensionConfiguration>> dimensionConfigurations) {
         this.dimensionConfigurations = dimensionConfigurations;
     }
 
-    public CloudWatchDestination withDimensionConfigurations(List<DimensionConfiguration> dimensionConfigurations) {
+    public CloudWatchDestination withDimensionConfigurations(List<Property<DimensionConfiguration>> dimensionConfigurations) {
         this.dimensionConfigurations = dimensionConfigurations;
         return this;
     }

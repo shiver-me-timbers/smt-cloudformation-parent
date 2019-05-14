@@ -79,7 +79,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-engineattributes",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_OpsWorksCM_Server.EngineAttribute.schema.json"
+        "$ref" : "AWS_OpsWorksCM_Server.EngineAttribute.schema.json",
+        "javaType" : "aws.Property<aws.opsworkscm.EngineAttribute>"
       }
     },
     "BackupRetentionCount" : {

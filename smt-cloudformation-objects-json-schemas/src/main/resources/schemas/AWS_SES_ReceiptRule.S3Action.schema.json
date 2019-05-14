@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html",
   "type" : "object",
   "javaType" : "aws.ses.S3Action",
+  "javaInterfaces" : [ "aws.Property<S3Action>" ],
   "properties" : {
     "BucketName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html#cfn-ses-receiptrule-s3action-bucketname",

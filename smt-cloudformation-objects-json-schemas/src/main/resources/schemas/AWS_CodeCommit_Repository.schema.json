@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codecommit-repository.html#cfn-codecommit-repository-triggers",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CodeCommit_Repository.RepositoryTrigger.schema.json"
+        "$ref" : "AWS_CodeCommit_Repository.RepositoryTrigger.schema.json",
+        "javaType" : "aws.Property<aws.codecommit.RepositoryTrigger>"
       }
     },
     "RepositoryDescription" : {

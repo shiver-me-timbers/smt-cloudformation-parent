@@ -1,6 +1,7 @@
 
 package aws.budgets;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CostTypes",
     "BudgetType"
 })
-public class BudgetData {
+public class BudgetData implements Property<BudgetData>
+{
 
     /**
      * Spend
@@ -37,7 +39,7 @@ public class BudgetData {
      */
     @JsonProperty("BudgetLimit")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-spend.html")
-    private Spend budgetLimit;
+    private Property<Spend> budgetLimit;
     /**
      * TimePeriod
      * <p>
@@ -46,7 +48,7 @@ public class BudgetData {
      */
     @JsonProperty("TimePeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-timeperiod.html")
-    private TimePeriod timePeriod;
+    private Property<TimePeriod> timePeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit
      * 
@@ -76,7 +78,7 @@ public class BudgetData {
      */
     @JsonProperty("CostTypes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html")
-    private CostTypes costTypes;
+    private Property<CostTypes> costTypes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype
      * 
@@ -92,7 +94,7 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public Spend getBudgetLimit() {
+    public Property<Spend> getBudgetLimit() {
         return budgetLimit;
     }
 
@@ -103,11 +105,11 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public void setBudgetLimit(Spend budgetLimit) {
+    public void setBudgetLimit(Property<Spend> budgetLimit) {
         this.budgetLimit = budgetLimit;
     }
 
-    public BudgetData withBudgetLimit(Spend budgetLimit) {
+    public BudgetData withBudgetLimit(Property<Spend> budgetLimit) {
         this.budgetLimit = budgetLimit;
         return this;
     }
@@ -119,7 +121,7 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public TimePeriod getTimePeriod() {
+    public Property<TimePeriod> getTimePeriod() {
         return timePeriod;
     }
 
@@ -130,11 +132,11 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public void setTimePeriod(TimePeriod timePeriod) {
+    public void setTimePeriod(Property<TimePeriod> timePeriod) {
         this.timePeriod = timePeriod;
     }
 
-    public BudgetData withTimePeriod(TimePeriod timePeriod) {
+    public BudgetData withTimePeriod(Property<TimePeriod> timePeriod) {
         this.timePeriod = timePeriod;
         return this;
     }
@@ -215,7 +217,7 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public CostTypes getCostTypes() {
+    public Property<CostTypes> getCostTypes() {
         return costTypes;
     }
 
@@ -226,11 +228,11 @@ public class BudgetData {
      * 
      */
     @JsonIgnore
-    public void setCostTypes(CostTypes costTypes) {
+    public void setCostTypes(Property<CostTypes> costTypes) {
         this.costTypes = costTypes;
     }
 
-    public BudgetData withCostTypes(CostTypes costTypes) {
+    public BudgetData withCostTypes(Property<CostTypes> costTypes) {
         this.costTypes = costTypes;
         return this;
     }

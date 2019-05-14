@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "ScriptBootstrapAction"
 })
-public class BootstrapActionConfig {
+public class BootstrapActionConfig implements Property<BootstrapActionConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name
@@ -39,7 +41,7 @@ public class BootstrapActionConfig {
      */
     @JsonProperty("ScriptBootstrapAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scriptbootstrapactionconfig.html")
-    private ScriptBootstrapActionConfig scriptBootstrapAction;
+    private Property<ScriptBootstrapActionConfig> scriptBootstrapAction;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name
@@ -71,7 +73,7 @@ public class BootstrapActionConfig {
      * 
      */
     @JsonIgnore
-    public ScriptBootstrapActionConfig getScriptBootstrapAction() {
+    public Property<ScriptBootstrapActionConfig> getScriptBootstrapAction() {
         return scriptBootstrapAction;
     }
 
@@ -82,11 +84,11 @@ public class BootstrapActionConfig {
      * 
      */
     @JsonIgnore
-    public void setScriptBootstrapAction(ScriptBootstrapActionConfig scriptBootstrapAction) {
+    public void setScriptBootstrapAction(Property<ScriptBootstrapActionConfig> scriptBootstrapAction) {
         this.scriptBootstrapAction = scriptBootstrapAction;
     }
 
-    public BootstrapActionConfig withScriptBootstrapAction(ScriptBootstrapActionConfig scriptBootstrapAction) {
+    public BootstrapActionConfig withScriptBootstrapAction(Property<ScriptBootstrapActionConfig> scriptBootstrapAction) {
         this.scriptBootstrapAction = scriptBootstrapAction;
         return this;
     }

@@ -24,7 +24,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "UserName" : {
@@ -43,7 +44,8 @@
     },
     "WorkspaceProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-workspaceproperties",
-      "$ref" : "AWS_WorkSpaces_Workspace.WorkspaceProperties.schema.json"
+      "$ref" : "AWS_WorkSpaces_Workspace.WorkspaceProperties.schema.json",
+      "javaType" : "aws.Property<aws.workspaces.WorkspaceProperties>"
     }
   }
 }

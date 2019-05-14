@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualnodeserviceprovider.html",
   "type" : "object",
   "javaType" : "aws.appmesh.VirtualNodeServiceProvider",
+  "javaInterfaces" : [ "aws.Property<VirtualNodeServiceProvider>" ],
   "properties" : {
     "VirtualNodeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualnodeserviceprovider.html#cfn-appmesh-virtualservice-virtualnodeserviceprovider-virtualnodename",

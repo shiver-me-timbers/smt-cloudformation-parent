@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Location",
     "Type"
 })
-public class ArtifactStore {
+public class ArtifactStore implements Property<ArtifactStore>
+{
 
     /**
      * EncryptionKey
@@ -33,7 +35,7 @@ public class ArtifactStore {
      */
     @JsonProperty("EncryptionKey")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html")
-    private EncryptionKey encryptionKey;
+    private Property<EncryptionKey> encryptionKey;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html#cfn-codepipeline-pipeline-artifactstore-location
      * 
@@ -56,7 +58,7 @@ public class ArtifactStore {
      * 
      */
     @JsonIgnore
-    public EncryptionKey getEncryptionKey() {
+    public Property<EncryptionKey> getEncryptionKey() {
         return encryptionKey;
     }
 
@@ -67,11 +69,11 @@ public class ArtifactStore {
      * 
      */
     @JsonIgnore
-    public void setEncryptionKey(EncryptionKey encryptionKey) {
+    public void setEncryptionKey(Property<EncryptionKey> encryptionKey) {
         this.encryptionKey = encryptionKey;
     }
 
-    public ArtifactStore withEncryptionKey(EncryptionKey encryptionKey) {
+    public ArtifactStore withEncryptionKey(Property<EncryptionKey> encryptionKey) {
         this.encryptionKey = encryptionKey;
         return this;
     }

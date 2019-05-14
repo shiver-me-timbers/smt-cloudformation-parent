@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html",
   "type" : "object",
   "javaType" : "aws.opsworks.RdsDbInstance",
+  "javaInterfaces" : [ "aws.Property<RdsDbInstance>" ],
   "properties" : {
     "DbPassword" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-rdsdbinstance.html#cfn-opsworks-stack-rdsdbinstance-dbpassword",

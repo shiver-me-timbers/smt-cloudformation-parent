@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ParallelismConfiguration",
     "MonitoringConfiguration"
 })
-public class FlinkApplicationConfiguration {
+public class FlinkApplicationConfiguration implements Property<FlinkApplicationConfiguration>
+{
 
     /**
      * CheckpointConfiguration
@@ -33,7 +35,7 @@ public class FlinkApplicationConfiguration {
      */
     @JsonProperty("CheckpointConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html")
-    private CheckpointConfiguration checkpointConfiguration;
+    private Property<CheckpointConfiguration> checkpointConfiguration;
     /**
      * ParallelismConfiguration
      * <p>
@@ -42,7 +44,7 @@ public class FlinkApplicationConfiguration {
      */
     @JsonProperty("ParallelismConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html")
-    private ParallelismConfiguration parallelismConfiguration;
+    private Property<ParallelismConfiguration> parallelismConfiguration;
     /**
      * MonitoringConfiguration
      * <p>
@@ -51,7 +53,7 @@ public class FlinkApplicationConfiguration {
      */
     @JsonProperty("MonitoringConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-monitoringconfiguration.html")
-    private MonitoringConfiguration monitoringConfiguration;
+    private Property<MonitoringConfiguration> monitoringConfiguration;
 
     /**
      * CheckpointConfiguration
@@ -60,7 +62,7 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public CheckpointConfiguration getCheckpointConfiguration() {
+    public Property<CheckpointConfiguration> getCheckpointConfiguration() {
         return checkpointConfiguration;
     }
 
@@ -71,11 +73,11 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCheckpointConfiguration(CheckpointConfiguration checkpointConfiguration) {
+    public void setCheckpointConfiguration(Property<CheckpointConfiguration> checkpointConfiguration) {
         this.checkpointConfiguration = checkpointConfiguration;
     }
 
-    public FlinkApplicationConfiguration withCheckpointConfiguration(CheckpointConfiguration checkpointConfiguration) {
+    public FlinkApplicationConfiguration withCheckpointConfiguration(Property<CheckpointConfiguration> checkpointConfiguration) {
         this.checkpointConfiguration = checkpointConfiguration;
         return this;
     }
@@ -87,7 +89,7 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public ParallelismConfiguration getParallelismConfiguration() {
+    public Property<ParallelismConfiguration> getParallelismConfiguration() {
         return parallelismConfiguration;
     }
 
@@ -98,11 +100,11 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setParallelismConfiguration(ParallelismConfiguration parallelismConfiguration) {
+    public void setParallelismConfiguration(Property<ParallelismConfiguration> parallelismConfiguration) {
         this.parallelismConfiguration = parallelismConfiguration;
     }
 
-    public FlinkApplicationConfiguration withParallelismConfiguration(ParallelismConfiguration parallelismConfiguration) {
+    public FlinkApplicationConfiguration withParallelismConfiguration(Property<ParallelismConfiguration> parallelismConfiguration) {
         this.parallelismConfiguration = parallelismConfiguration;
         return this;
     }
@@ -114,7 +116,7 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public MonitoringConfiguration getMonitoringConfiguration() {
+    public Property<MonitoringConfiguration> getMonitoringConfiguration() {
         return monitoringConfiguration;
     }
 
@@ -125,11 +127,11 @@ public class FlinkApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setMonitoringConfiguration(MonitoringConfiguration monitoringConfiguration) {
+    public void setMonitoringConfiguration(Property<MonitoringConfiguration> monitoringConfiguration) {
         this.monitoringConfiguration = monitoringConfiguration;
     }
 
-    public FlinkApplicationConfiguration withMonitoringConfiguration(MonitoringConfiguration monitoringConfiguration) {
+    public FlinkApplicationConfiguration withMonitoringConfiguration(Property<MonitoringConfiguration> monitoringConfiguration) {
         this.monitoringConfiguration = monitoringConfiguration;
         return this;
     }

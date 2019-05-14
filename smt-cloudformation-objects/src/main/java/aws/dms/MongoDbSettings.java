@@ -1,6 +1,7 @@
 
 package aws.dms;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Password",
     "NestingLevel"
 })
-public class MongoDbSettings {
+public class MongoDbSettings implements Property<MongoDbSettings>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html#cfn-dms-endpoint-mongodbsettings-authsource

@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3Configuration",
     "Username"
 })
-public class RedshiftDestinationConfiguration {
+public class RedshiftDestinationConfiguration implements Property<RedshiftDestinationConfiguration>
+{
 
     /**
      * CloudWatchLoggingOptions
@@ -38,7 +40,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("CloudWatchLoggingOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html")
-    private CloudWatchLoggingOptions cloudWatchLoggingOptions;
+    private Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-clusterjdbcurl
      * 
@@ -54,7 +56,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("CopyCommand")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-copycommand.html")
-    private CopyCommand copyCommand;
+    private Property<CopyCommand> copyCommand;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-password
      * 
@@ -70,7 +72,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("ProcessingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html")
-    private ProcessingConfiguration processingConfiguration;
+    private Property<ProcessingConfiguration> processingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-rolearn
      * 
@@ -86,7 +88,7 @@ public class RedshiftDestinationConfiguration {
      */
     @JsonProperty("S3Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private S3DestinationConfiguration s3Configuration;
+    private Property<S3DestinationConfiguration> s3Configuration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration-username
      * 
@@ -102,7 +104,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
+    public Property<CloudWatchLoggingOptions> getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
 
@@ -113,11 +115,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public void setCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
 
-    public RedshiftDestinationConfiguration withCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public RedshiftDestinationConfiguration withCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
         return this;
     }
@@ -152,7 +154,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CopyCommand getCopyCommand() {
+    public Property<CopyCommand> getCopyCommand() {
         return copyCommand;
     }
 
@@ -163,11 +165,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCopyCommand(CopyCommand copyCommand) {
+    public void setCopyCommand(Property<CopyCommand> copyCommand) {
         this.copyCommand = copyCommand;
     }
 
-    public RedshiftDestinationConfiguration withCopyCommand(CopyCommand copyCommand) {
+    public RedshiftDestinationConfiguration withCopyCommand(Property<CopyCommand> copyCommand) {
         this.copyCommand = copyCommand;
         return this;
     }
@@ -202,7 +204,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ProcessingConfiguration getProcessingConfiguration() {
+    public Property<ProcessingConfiguration> getProcessingConfiguration() {
         return processingConfiguration;
     }
 
@@ -213,11 +215,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public void setProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
 
-    public RedshiftDestinationConfiguration withProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public RedshiftDestinationConfiguration withProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
         return this;
     }
@@ -252,7 +254,7 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public S3DestinationConfiguration getS3Configuration() {
+    public Property<S3DestinationConfiguration> getS3Configuration() {
         return s3Configuration;
     }
 
@@ -263,11 +265,11 @@ public class RedshiftDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public void setS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
 
-    public RedshiftDestinationConfiguration withS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public RedshiftDestinationConfiguration withS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
         return this;
     }

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html",
   "type" : "object",
   "javaType" : "aws.opsworks.LoadBasedAutoScaling",
+  "javaInterfaces" : [ "aws.Property<LoadBasedAutoScaling>" ],
   "properties" : {
     "DownScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-downscaling",
-      "$ref" : "AWS_OpsWorks_Layer.AutoScalingThresholds.schema.json"
+      "$ref" : "AWS_OpsWorks_Layer.AutoScalingThresholds.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.AutoScalingThresholds>"
     },
     "Enable" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable",
@@ -16,7 +18,8 @@
     },
     "UpScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-upscaling",
-      "$ref" : "AWS_OpsWorks_Layer.AutoScalingThresholds.schema.json"
+      "$ref" : "AWS_OpsWorks_Layer.AutoScalingThresholds.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.AutoScalingThresholds>"
     }
   }
 }

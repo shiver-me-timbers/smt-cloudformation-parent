@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancing;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CookieName",
     "PolicyName"
 })
-public class AppCookieStickinessPolicy {
+public class AppCookieStickinessPolicy implements Property<AppCookieStickinessPolicy>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html#cfn-elb-appcookiestickinesspolicy-cookiename

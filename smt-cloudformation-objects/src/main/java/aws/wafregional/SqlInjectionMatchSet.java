@@ -3,6 +3,7 @@ package aws.wafregional;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class SqlInjectionMatchSet {
      */
     @JsonProperty("SqlInjectionMatchTuples")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuples")
-    private List<SqlInjectionMatchTuple> sqlInjectionMatchTuples = new ArrayList<SqlInjectionMatchTuple>();
+    private List<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples = new ArrayList<Property<SqlInjectionMatchTuple>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sqlinjectionmatchset.html#cfn-wafregional-sqlinjectionmatchset-name
      * 
@@ -46,7 +47,7 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonIgnore
-    public List<SqlInjectionMatchTuple> getSqlInjectionMatchTuples() {
+    public List<Property<SqlInjectionMatchTuple>> getSqlInjectionMatchTuples() {
         return sqlInjectionMatchTuples;
     }
 
@@ -55,11 +56,11 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonIgnore
-    public void setSqlInjectionMatchTuples(List<SqlInjectionMatchTuple> sqlInjectionMatchTuples) {
+    public void setSqlInjectionMatchTuples(List<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples) {
         this.sqlInjectionMatchTuples = sqlInjectionMatchTuples;
     }
 
-    public SqlInjectionMatchSet withSqlInjectionMatchTuples(List<SqlInjectionMatchTuple> sqlInjectionMatchTuples) {
+    public SqlInjectionMatchSet withSqlInjectionMatchTuples(List<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples) {
         this.sqlInjectionMatchTuples = sqlInjectionMatchTuples;
         return this;
     }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -47,7 +48,7 @@ public class Certificate {
     @JsonProperty("DomainValidationOptions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainvalidationoptions")
-    private Set<DomainValidationOption> domainValidationOptions = new LinkedHashSet<DomainValidationOption>();
+    private Set<Property<DomainValidationOption>> domainValidationOptions = new LinkedHashSet<Property<DomainValidationOption>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-subjectalternativenames
      * 
@@ -62,7 +63,7 @@ public class Certificate {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-validationmethod
      * 
@@ -99,7 +100,7 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public Set<DomainValidationOption> getDomainValidationOptions() {
+    public Set<Property<DomainValidationOption>> getDomainValidationOptions() {
         return domainValidationOptions;
     }
 
@@ -108,11 +109,11 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public void setDomainValidationOptions(Set<DomainValidationOption> domainValidationOptions) {
+    public void setDomainValidationOptions(Set<Property<DomainValidationOption>> domainValidationOptions) {
         this.domainValidationOptions = domainValidationOptions;
     }
 
-    public Certificate withDomainValidationOptions(Set<DomainValidationOption> domainValidationOptions) {
+    public Certificate withDomainValidationOptions(Set<Property<DomainValidationOption>> domainValidationOptions) {
         this.domainValidationOptions = domainValidationOptions;
         return this;
     }
@@ -145,7 +146,7 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -154,11 +155,11 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Certificate withTags(List<Tag> tags) {
+    public Certificate withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

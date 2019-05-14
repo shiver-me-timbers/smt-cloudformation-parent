@@ -3,6 +3,7 @@ package aws.iotanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -41,14 +42,14 @@ public class Pipeline {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelineactivities
      * 
      */
     @JsonProperty("PipelineActivities")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelineactivities")
-    private List<Activity> pipelineActivities = new ArrayList<Activity>();
+    private List<Property<Activity>> pipelineActivities = new ArrayList<Property<Activity>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelinename
@@ -78,7 +79,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -87,11 +88,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Pipeline withTags(List<Tag> tags) {
+    public Pipeline withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -101,7 +102,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Activity> getPipelineActivities() {
+    public List<Property<Activity>> getPipelineActivities() {
         return pipelineActivities;
     }
 
@@ -110,11 +111,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setPipelineActivities(List<Activity> pipelineActivities) {
+    public void setPipelineActivities(List<Property<Activity>> pipelineActivities) {
         this.pipelineActivities = pipelineActivities;
     }
 
-    public Pipeline withPipelineActivities(List<Activity> pipelineActivities) {
+    public Pipeline withPipelineActivities(List<Property<Activity>> pipelineActivities) {
         this.pipelineActivities = pipelineActivities;
         return this;
     }

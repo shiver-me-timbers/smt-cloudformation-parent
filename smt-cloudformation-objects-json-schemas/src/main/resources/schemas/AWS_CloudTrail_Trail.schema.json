@@ -25,7 +25,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CloudTrail_Trail.EventSelector.schema.json"
+        "$ref" : "AWS_CloudTrail_Trail.EventSelector.schema.json",
+        "javaType" : "aws.Property<aws.cloudtrail.EventSelector>"
       }
     },
     "IncludeGlobalServiceEvents" : {
@@ -64,7 +65,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "TrailName" : {

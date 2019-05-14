@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html",
   "type" : "object",
   "javaType" : "aws.appmesh.RouteSpec",
+  "javaInterfaces" : [ "aws.Property<RouteSpec>" ],
   "properties" : {
     "HttpRoute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-httproute",
-      "$ref" : "AWS_AppMesh_Route.HttpRoute.schema.json"
+      "$ref" : "AWS_AppMesh_Route.HttpRoute.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.HttpRoute>"
     },
     "TcpRoute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-tcproute",
-      "$ref" : "AWS_AppMesh_Route.TcpRoute.schema.json"
+      "$ref" : "AWS_AppMesh_Route.TcpRoute.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.TcpRoute>"
     }
   }
 }

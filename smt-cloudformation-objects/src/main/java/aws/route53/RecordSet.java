@@ -3,6 +3,7 @@ package aws.route53;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,7 @@ public class RecordSet {
      */
     @JsonProperty("AliasTarget")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html")
-    private AliasTarget aliasTarget;
+    private Property<AliasTarget> aliasTarget;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment
      * 
@@ -70,7 +71,7 @@ public class RecordSet {
      */
     @JsonProperty("GeoLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html")
-    private GeoLocation geoLocation;
+    private Property<GeoLocation> geoLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid
      * 
@@ -156,7 +157,7 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public AliasTarget getAliasTarget() {
+    public Property<AliasTarget> getAliasTarget() {
         return aliasTarget;
     }
 
@@ -167,11 +168,11 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public void setAliasTarget(AliasTarget aliasTarget) {
+    public void setAliasTarget(Property<AliasTarget> aliasTarget) {
         this.aliasTarget = aliasTarget;
     }
 
-    public RecordSet withAliasTarget(AliasTarget aliasTarget) {
+    public RecordSet withAliasTarget(Property<AliasTarget> aliasTarget) {
         this.aliasTarget = aliasTarget;
         return this;
     }
@@ -229,7 +230,7 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public GeoLocation getGeoLocation() {
+    public Property<GeoLocation> getGeoLocation() {
         return geoLocation;
     }
 
@@ -240,11 +241,11 @@ public class RecordSet {
      * 
      */
     @JsonIgnore
-    public void setGeoLocation(GeoLocation geoLocation) {
+    public void setGeoLocation(Property<GeoLocation> geoLocation) {
         this.geoLocation = geoLocation;
     }
 
-    public RecordSet withGeoLocation(GeoLocation geoLocation) {
+    public RecordSet withGeoLocation(Property<GeoLocation> geoLocation) {
         this.geoLocation = geoLocation;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,7 @@ public class Application {
      */
     @JsonProperty("ResourceLifecycleConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html")
-    private ApplicationResourceLifecycleConfig resourceLifecycleConfig;
+    private Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name
@@ -102,7 +103,7 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public ApplicationResourceLifecycleConfig getResourceLifecycleConfig() {
+    public Property<ApplicationResourceLifecycleConfig> getResourceLifecycleConfig() {
         return resourceLifecycleConfig;
     }
 
@@ -113,11 +114,11 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public void setResourceLifecycleConfig(ApplicationResourceLifecycleConfig resourceLifecycleConfig) {
+    public void setResourceLifecycleConfig(Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
         this.resourceLifecycleConfig = resourceLifecycleConfig;
     }
 
-    public Application withResourceLifecycleConfig(ApplicationResourceLifecycleConfig resourceLifecycleConfig) {
+    public Application withResourceLifecycleConfig(Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
         this.resourceLifecycleConfig = resourceLifecycleConfig;
         return this;
     }

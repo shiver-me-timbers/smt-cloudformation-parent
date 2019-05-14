@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import aws.kinesisanalyticsv2.KinesisStreamsOutput;
 import aws.kinesisanalyticsv2.LambdaOutput;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KinesisStreamsOutput",
     "Name"
 })
-public class Output {
+public class Output implements Property<Output>
+{
 
     /**
      * DestinationSchema
@@ -37,7 +39,7 @@ public class Output {
      */
     @JsonProperty("DestinationSchema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-destinationschema.html")
-    private DestinationSchema destinationSchema;
+    private Property<DestinationSchema> destinationSchema;
     /**
      * LambdaOutput
      * <p>
@@ -46,7 +48,7 @@ public class Output {
      */
     @JsonProperty("LambdaOutput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html")
-    private LambdaOutput lambdaOutput;
+    private Property<LambdaOutput> lambdaOutput;
     /**
      * KinesisFirehoseOutput
      * <p>
@@ -55,7 +57,7 @@ public class Output {
      */
     @JsonProperty("KinesisFirehoseOutput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html")
-    private KinesisFirehoseOutput kinesisFirehoseOutput;
+    private Property<KinesisFirehoseOutput> kinesisFirehoseOutput;
     /**
      * KinesisStreamsOutput
      * <p>
@@ -64,7 +66,7 @@ public class Output {
      */
     @JsonProperty("KinesisStreamsOutput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-kinesisstreamsoutput.html")
-    private KinesisStreamsOutput kinesisStreamsOutput;
+    private Property<KinesisStreamsOutput> kinesisStreamsOutput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-output.html#cfn-kinesisanalytics-applicationoutput-output-name
      * 
@@ -80,7 +82,7 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public DestinationSchema getDestinationSchema() {
+    public Property<DestinationSchema> getDestinationSchema() {
         return destinationSchema;
     }
 
@@ -91,11 +93,11 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public void setDestinationSchema(DestinationSchema destinationSchema) {
+    public void setDestinationSchema(Property<DestinationSchema> destinationSchema) {
         this.destinationSchema = destinationSchema;
     }
 
-    public Output withDestinationSchema(DestinationSchema destinationSchema) {
+    public Output withDestinationSchema(Property<DestinationSchema> destinationSchema) {
         this.destinationSchema = destinationSchema;
         return this;
     }
@@ -107,7 +109,7 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public LambdaOutput getLambdaOutput() {
+    public Property<LambdaOutput> getLambdaOutput() {
         return lambdaOutput;
     }
 
@@ -118,11 +120,11 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public void setLambdaOutput(LambdaOutput lambdaOutput) {
+    public void setLambdaOutput(Property<LambdaOutput> lambdaOutput) {
         this.lambdaOutput = lambdaOutput;
     }
 
-    public Output withLambdaOutput(LambdaOutput lambdaOutput) {
+    public Output withLambdaOutput(Property<LambdaOutput> lambdaOutput) {
         this.lambdaOutput = lambdaOutput;
         return this;
     }
@@ -134,7 +136,7 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public KinesisFirehoseOutput getKinesisFirehoseOutput() {
+    public Property<KinesisFirehoseOutput> getKinesisFirehoseOutput() {
         return kinesisFirehoseOutput;
     }
 
@@ -145,11 +147,11 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public void setKinesisFirehoseOutput(KinesisFirehoseOutput kinesisFirehoseOutput) {
+    public void setKinesisFirehoseOutput(Property<KinesisFirehoseOutput> kinesisFirehoseOutput) {
         this.kinesisFirehoseOutput = kinesisFirehoseOutput;
     }
 
-    public Output withKinesisFirehoseOutput(KinesisFirehoseOutput kinesisFirehoseOutput) {
+    public Output withKinesisFirehoseOutput(Property<KinesisFirehoseOutput> kinesisFirehoseOutput) {
         this.kinesisFirehoseOutput = kinesisFirehoseOutput;
         return this;
     }
@@ -161,7 +163,7 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public KinesisStreamsOutput getKinesisStreamsOutput() {
+    public Property<KinesisStreamsOutput> getKinesisStreamsOutput() {
         return kinesisStreamsOutput;
     }
 
@@ -172,11 +174,11 @@ public class Output {
      * 
      */
     @JsonIgnore
-    public void setKinesisStreamsOutput(KinesisStreamsOutput kinesisStreamsOutput) {
+    public void setKinesisStreamsOutput(Property<KinesisStreamsOutput> kinesisStreamsOutput) {
         this.kinesisStreamsOutput = kinesisStreamsOutput;
     }
 
-    public Output withKinesisStreamsOutput(KinesisStreamsOutput kinesisStreamsOutput) {
+    public Output withKinesisStreamsOutput(Property<KinesisStreamsOutput> kinesisStreamsOutput) {
         this.kinesisStreamsOutput = kinesisStreamsOutput;
         return this;
     }

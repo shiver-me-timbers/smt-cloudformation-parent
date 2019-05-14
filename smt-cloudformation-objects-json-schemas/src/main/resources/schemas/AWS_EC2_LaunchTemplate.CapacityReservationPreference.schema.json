@@ -3,5 +3,6 @@
   "$id" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json",
   "title" : "CapacityReservationPreference",
   "type" : "string",
-  "javaType" : "java.lang.CharSequence"
+  "javaType" : "java.lang.CharSequence",
+  "javaInterfaces" : [ "aws.Property<CapacityReservationPreference>" ]
 }

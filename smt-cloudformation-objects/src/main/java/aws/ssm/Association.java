@@ -4,6 +4,7 @@ package aws.ssm;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -70,14 +71,14 @@ public class Association {
      */
     @JsonProperty("OutputLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html")
-    private InstanceAssociationOutputLocation outputLocation;
+    private Property<InstanceAssociationOutputLocation> outputLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters
      * 
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters")
-    private Map<String, ParameterValues> parameters;
+    private Map<String, Property<ParameterValues>> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression
      * 
@@ -92,7 +93,7 @@ public class Association {
     @JsonProperty("Targets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets")
-    private Set<Target> targets = new LinkedHashSet<Target>();
+    private Set<Property<Target>> targets = new LinkedHashSet<Property<Target>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-associationname
@@ -193,7 +194,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public InstanceAssociationOutputLocation getOutputLocation() {
+    public Property<InstanceAssociationOutputLocation> getOutputLocation() {
         return outputLocation;
     }
 
@@ -204,11 +205,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setOutputLocation(InstanceAssociationOutputLocation outputLocation) {
+    public void setOutputLocation(Property<InstanceAssociationOutputLocation> outputLocation) {
         this.outputLocation = outputLocation;
     }
 
-    public Association withOutputLocation(InstanceAssociationOutputLocation outputLocation) {
+    public Association withOutputLocation(Property<InstanceAssociationOutputLocation> outputLocation) {
         this.outputLocation = outputLocation;
         return this;
     }
@@ -218,7 +219,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public Map<String, ParameterValues> getParameters() {
+    public Map<String, Property<ParameterValues>> getParameters() {
         return parameters;
     }
 
@@ -227,11 +228,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, ParameterValues> parameters) {
+    public void setParameters(Map<String, Property<ParameterValues>> parameters) {
         this.parameters = parameters;
     }
 
-    public Association withParameters(Map<String, ParameterValues> parameters) {
+    public Association withParameters(Map<String, Property<ParameterValues>> parameters) {
         this.parameters = parameters;
         return this;
     }
@@ -264,7 +265,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public Set<Target> getTargets() {
+    public Set<Property<Target>> getTargets() {
         return targets;
     }
 
@@ -273,11 +274,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setTargets(Set<Target> targets) {
+    public void setTargets(Set<Property<Target>> targets) {
         this.targets = targets;
     }
 
-    public Association withTargets(Set<Target> targets) {
+    public Association withTargets(Set<Property<Target>> targets) {
         this.targets = targets;
         return this;
     }

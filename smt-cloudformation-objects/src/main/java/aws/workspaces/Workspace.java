@@ -3,6 +3,7 @@ package aws.workspaces;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -60,7 +61,7 @@ public class Workspace {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-username
      * 
@@ -90,7 +91,7 @@ public class Workspace {
      */
     @JsonProperty("WorkspaceProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html")
-    private WorkspaceProperties workspaceProperties;
+    private Property<WorkspaceProperties> workspaceProperties;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
@@ -166,7 +167,7 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -175,11 +176,11 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Workspace withTags(List<Tag> tags) {
+    public Workspace withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -260,7 +261,7 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public WorkspaceProperties getWorkspaceProperties() {
+    public Property<WorkspaceProperties> getWorkspaceProperties() {
         return workspaceProperties;
     }
 
@@ -271,11 +272,11 @@ public class Workspace {
      * 
      */
     @JsonIgnore
-    public void setWorkspaceProperties(WorkspaceProperties workspaceProperties) {
+    public void setWorkspaceProperties(Property<WorkspaceProperties> workspaceProperties) {
         this.workspaceProperties = workspaceProperties;
     }
 
-    public Workspace withWorkspaceProperties(WorkspaceProperties workspaceProperties) {
+    public Workspace withWorkspaceProperties(Property<WorkspaceProperties> workspaceProperties) {
         this.workspaceProperties = workspaceProperties;
         return this;
     }

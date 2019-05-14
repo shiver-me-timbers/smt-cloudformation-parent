@@ -3,6 +3,7 @@ package aws.iotanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -36,7 +37,7 @@ public class Dataset {
      */
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-actions")
-    private List<Action> actions = new ArrayList<Action>();
+    private List<Property<Action>> actions = new ArrayList<Property<Action>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-datasetname
      * 
@@ -50,7 +51,7 @@ public class Dataset {
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers")
-    private List<Trigger> triggers = new ArrayList<Trigger>();
+    private List<Property<Trigger>> triggers = new ArrayList<Property<Trigger>>();
     /**
      * RetentionPeriod
      * <p>
@@ -59,21 +60,21 @@ public class Dataset {
      */
     @JsonProperty("RetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html")
-    private RetentionPeriod retentionPeriod;
+    private Property<RetentionPeriod> retentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-actions
      * 
      */
     @JsonIgnore
-    public List<Action> getActions() {
+    public List<Property<Action>> getActions() {
         return actions;
     }
 
@@ -82,11 +83,11 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setActions(List<Action> actions) {
+    public void setActions(List<Property<Action>> actions) {
         this.actions = actions;
     }
 
-    public Dataset withActions(List<Action> actions) {
+    public Dataset withActions(List<Property<Action>> actions) {
         this.actions = actions;
         return this;
     }
@@ -119,7 +120,7 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public List<Trigger> getTriggers() {
+    public List<Property<Trigger>> getTriggers() {
         return triggers;
     }
 
@@ -128,11 +129,11 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setTriggers(List<Trigger> triggers) {
+    public void setTriggers(List<Property<Trigger>> triggers) {
         this.triggers = triggers;
     }
 
-    public Dataset withTriggers(List<Trigger> triggers) {
+    public Dataset withTriggers(List<Property<Trigger>> triggers) {
         this.triggers = triggers;
         return this;
     }
@@ -144,7 +145,7 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public RetentionPeriod getRetentionPeriod() {
+    public Property<RetentionPeriod> getRetentionPeriod() {
         return retentionPeriod;
     }
 
@@ -155,11 +156,11 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriod(RetentionPeriod retentionPeriod) {
+    public void setRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
     }
 
-    public Dataset withRetentionPeriod(RetentionPeriod retentionPeriod) {
+    public Dataset withRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
         return this;
     }
@@ -169,7 +170,7 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -178,11 +179,11 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Dataset withTags(List<Tag> tags) {
+    public Dataset withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

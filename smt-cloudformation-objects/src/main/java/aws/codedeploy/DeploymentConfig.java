@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class DeploymentConfig {
      */
     @JsonProperty("MinimumHealthyHosts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html")
-    private MinimumHealthyHosts minimumHealthyHosts;
+    private Property<MinimumHealthyHosts> minimumHealthyHosts;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname
@@ -71,7 +72,7 @@ public class DeploymentConfig {
      * 
      */
     @JsonIgnore
-    public MinimumHealthyHosts getMinimumHealthyHosts() {
+    public Property<MinimumHealthyHosts> getMinimumHealthyHosts() {
         return minimumHealthyHosts;
     }
 
@@ -82,11 +83,11 @@ public class DeploymentConfig {
      * 
      */
     @JsonIgnore
-    public void setMinimumHealthyHosts(MinimumHealthyHosts minimumHealthyHosts) {
+    public void setMinimumHealthyHosts(Property<MinimumHealthyHosts> minimumHealthyHosts) {
         this.minimumHealthyHosts = minimumHealthyHosts;
     }
 
-    public DeploymentConfig withMinimumHealthyHosts(MinimumHealthyHosts minimumHealthyHosts) {
+    public DeploymentConfig withMinimumHealthyHosts(Property<MinimumHealthyHosts> minimumHealthyHosts) {
         this.minimumHealthyHosts = minimumHealthyHosts;
         return this;
     }

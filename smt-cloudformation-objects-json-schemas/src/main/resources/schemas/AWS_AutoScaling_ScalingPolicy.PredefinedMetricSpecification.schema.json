@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html",
   "type" : "object",
   "javaType" : "aws.autoscaling.PredefinedMetricSpecification",
+  "javaInterfaces" : [ "aws.Property<PredefinedMetricSpecification>" ],
   "properties" : {
     "PredefinedMetricType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-predefinedmetricspecification.html#cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype",

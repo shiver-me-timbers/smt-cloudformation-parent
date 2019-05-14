@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Host",
     "Name"
 })
-public class Volume {
+public class Volume implements Property<Volume>
+{
 
     /**
      * DockerVolumeConfiguration
@@ -33,7 +35,7 @@ public class Volume {
      */
     @JsonProperty("DockerVolumeConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html")
-    private DockerVolumeConfiguration dockerVolumeConfiguration;
+    private Property<DockerVolumeConfiguration> dockerVolumeConfiguration;
     /**
      * HostVolumeProperties
      * <p>
@@ -42,7 +44,7 @@ public class Volume {
      */
     @JsonProperty("Host")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html")
-    private HostVolumeProperties host;
+    private Property<HostVolumeProperties> host;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html#cfn-ecs-taskdefinition-volumes-name
      * 
@@ -58,7 +60,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public DockerVolumeConfiguration getDockerVolumeConfiguration() {
+    public Property<DockerVolumeConfiguration> getDockerVolumeConfiguration() {
         return dockerVolumeConfiguration;
     }
 
@@ -69,11 +71,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setDockerVolumeConfiguration(DockerVolumeConfiguration dockerVolumeConfiguration) {
+    public void setDockerVolumeConfiguration(Property<DockerVolumeConfiguration> dockerVolumeConfiguration) {
         this.dockerVolumeConfiguration = dockerVolumeConfiguration;
     }
 
-    public Volume withDockerVolumeConfiguration(DockerVolumeConfiguration dockerVolumeConfiguration) {
+    public Volume withDockerVolumeConfiguration(Property<DockerVolumeConfiguration> dockerVolumeConfiguration) {
         this.dockerVolumeConfiguration = dockerVolumeConfiguration;
         return this;
     }
@@ -85,7 +87,7 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public HostVolumeProperties getHost() {
+    public Property<HostVolumeProperties> getHost() {
         return host;
     }
 
@@ -96,11 +98,11 @@ public class Volume {
      * 
      */
     @JsonIgnore
-    public void setHost(HostVolumeProperties host) {
+    public void setHost(Property<HostVolumeProperties> host) {
         this.host = host;
     }
 
-    public Volume withHost(HostVolumeProperties host) {
+    public Volume withHost(Property<HostVolumeProperties> host) {
         this.host = host;
         return this;
     }

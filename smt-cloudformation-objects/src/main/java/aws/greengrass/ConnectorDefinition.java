@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class ConnectorDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html")
-    private ConnectorDefinitionVersion initialVersion;
+    private Property<ConnectorDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinition.html#cfn-greengrass-connectordefinition-name
      * 
@@ -48,7 +49,7 @@ public class ConnectorDefinition {
      * 
      */
     @JsonIgnore
-    public ConnectorDefinitionVersion getInitialVersion() {
+    public Property<ConnectorDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class ConnectorDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(ConnectorDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<ConnectorDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public ConnectorDefinition withInitialVersion(ConnectorDefinitionVersion initialVersion) {
+    public ConnectorDefinition withInitialVersion(Property<ConnectorDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

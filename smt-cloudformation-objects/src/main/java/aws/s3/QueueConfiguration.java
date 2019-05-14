@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Filter",
     "Queue"
 })
-public class QueueConfiguration {
+public class QueueConfiguration implements Property<QueueConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-event
@@ -40,7 +42,7 @@ public class QueueConfiguration {
      */
     @JsonProperty("Filter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html")
-    private NotificationFilter filter;
+    private Property<NotificationFilter> filter;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html#cfn-s3-bucket-notificationconfig-queueconfig-queue
      * 
@@ -79,7 +81,7 @@ public class QueueConfiguration {
      * 
      */
     @JsonIgnore
-    public NotificationFilter getFilter() {
+    public Property<NotificationFilter> getFilter() {
         return filter;
     }
 
@@ -90,11 +92,11 @@ public class QueueConfiguration {
      * 
      */
     @JsonIgnore
-    public void setFilter(NotificationFilter filter) {
+    public void setFilter(Property<NotificationFilter> filter) {
         this.filter = filter;
     }
 
-    public QueueConfiguration withFilter(NotificationFilter filter) {
+    public QueueConfiguration withFilter(Property<NotificationFilter> filter) {
         this.filter = filter;
         return this;
     }

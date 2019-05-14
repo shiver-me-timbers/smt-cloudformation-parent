@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class DeviceDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html")
-    private DeviceDefinitionVersion initialVersion;
+    private Property<DeviceDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-name
      * 
@@ -48,7 +49,7 @@ public class DeviceDefinition {
      * 
      */
     @JsonIgnore
-    public DeviceDefinitionVersion getInitialVersion() {
+    public Property<DeviceDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class DeviceDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(DeviceDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<DeviceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public DeviceDefinition withInitialVersion(DeviceDefinitionVersion initialVersion) {
+    public DeviceDefinition withInitialVersion(Property<DeviceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

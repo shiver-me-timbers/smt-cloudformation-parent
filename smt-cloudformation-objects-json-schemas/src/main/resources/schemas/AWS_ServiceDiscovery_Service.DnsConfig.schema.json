@@ -5,12 +5,14 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html",
   "type" : "object",
   "javaType" : "aws.servicediscovery.DnsConfig",
+  "javaInterfaces" : [ "aws.Property<DnsConfig>" ],
   "properties" : {
     "DnsRecords" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html#cfn-servicediscovery-service-dnsconfig-dnsrecords",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_ServiceDiscovery_Service.DnsRecord.schema.json"
+        "$ref" : "AWS_ServiceDiscovery_Service.DnsRecord.schema.json",
+        "javaType" : "aws.Property<aws.servicediscovery.DnsRecord>"
       }
     },
     "RoutingPolicy" : {

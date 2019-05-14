@@ -25,7 +25,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_GameLift_Fleet.IpPermission.schema.json"
+        "$ref" : "AWS_GameLift_Fleet.IpPermission.schema.json",
+        "javaType" : "aws.Property<aws.gamelift.IpPermission>"
       }
     },
     "EC2InstanceType" : {

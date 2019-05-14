@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html",
   "type" : "object",
   "javaType" : "aws.elasticbeanstalk.SourceBundle",
+  "javaInterfaces" : [ "aws.Property<SourceBundle>" ],
   "properties" : {
     "S3Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html#cfn-beanstalk-sourcebundle-s3bucket",

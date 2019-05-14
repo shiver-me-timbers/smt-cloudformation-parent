@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Logical",
     "Conditions"
 })
-public class Predicate {
+public class Predicate implements Property<Predicate>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-logical
@@ -39,7 +41,7 @@ public class Predicate {
      */
     @JsonProperty("Conditions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-conditions")
-    private List<Condition> conditions = new ArrayList<Condition>();
+    private List<Property<Condition>> conditions = new ArrayList<Property<Condition>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html#cfn-glue-trigger-predicate-logical
@@ -69,7 +71,7 @@ public class Predicate {
      * 
      */
     @JsonIgnore
-    public List<Condition> getConditions() {
+    public List<Property<Condition>> getConditions() {
         return conditions;
     }
 
@@ -78,11 +80,11 @@ public class Predicate {
      * 
      */
     @JsonIgnore
-    public void setConditions(List<Condition> conditions) {
+    public void setConditions(List<Property<Condition>> conditions) {
         this.conditions = conditions;
     }
 
-    public Predicate withConditions(List<Condition> conditions) {
+    public Predicate withConditions(List<Property<Condition>> conditions) {
         this.conditions = conditions;
         return this;
     }

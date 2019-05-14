@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "DataExport"
 })
-public class StorageClassAnalysis {
+public class StorageClassAnalysis implements Property<StorageClassAnalysis>
+{
 
     /**
      * DataExport
@@ -31,7 +33,7 @@ public class StorageClassAnalysis {
      */
     @JsonProperty("DataExport")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html")
-    private DataExport dataExport;
+    private Property<DataExport> dataExport;
 
     /**
      * DataExport
@@ -40,7 +42,7 @@ public class StorageClassAnalysis {
      * 
      */
     @JsonIgnore
-    public DataExport getDataExport() {
+    public Property<DataExport> getDataExport() {
         return dataExport;
     }
 
@@ -51,11 +53,11 @@ public class StorageClassAnalysis {
      * 
      */
     @JsonIgnore
-    public void setDataExport(DataExport dataExport) {
+    public void setDataExport(Property<DataExport> dataExport) {
         this.dataExport = dataExport;
     }
 
-    public StorageClassAnalysis withDataExport(DataExport dataExport) {
+    public StorageClassAnalysis withDataExport(Property<DataExport> dataExport) {
         this.dataExport = dataExport;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class LoggerDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html")
-    private LoggerDefinitionVersion initialVersion;
+    private Property<LoggerDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-name
      * 
@@ -48,7 +49,7 @@ public class LoggerDefinition {
      * 
      */
     @JsonIgnore
-    public LoggerDefinitionVersion getInitialVersion() {
+    public Property<LoggerDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class LoggerDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(LoggerDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<LoggerDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public LoggerDefinition withInitialVersion(LoggerDefinitionVersion initialVersion) {
+    public LoggerDefinition withInitialVersion(Property<LoggerDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

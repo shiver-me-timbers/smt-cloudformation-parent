@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3BackupMode",
     "S3Configuration"
 })
-public class SplunkDestinationConfiguration {
+public class SplunkDestinationConfiguration implements Property<SplunkDestinationConfiguration>
+{
 
     /**
      * CloudWatchLoggingOptions
@@ -39,7 +41,7 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("CloudWatchLoggingOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-cloudwatchloggingoptions.html")
-    private CloudWatchLoggingOptions cloudWatchLoggingOptions;
+    private Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecacknowledgmenttimeoutinseconds
      * 
@@ -76,7 +78,7 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("ProcessingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html")
-    private ProcessingConfiguration processingConfiguration;
+    private Property<ProcessingConfiguration> processingConfiguration;
     /**
      * SplunkRetryOptions
      * <p>
@@ -85,7 +87,7 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("RetryOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkretryoptions.html")
-    private SplunkRetryOptions retryOptions;
+    private Property<SplunkRetryOptions> retryOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3backupmode
      * 
@@ -101,7 +103,7 @@ public class SplunkDestinationConfiguration {
      */
     @JsonProperty("S3Configuration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private S3DestinationConfiguration s3Configuration;
+    private Property<S3DestinationConfiguration> s3Configuration;
 
     /**
      * CloudWatchLoggingOptions
@@ -110,7 +112,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public CloudWatchLoggingOptions getCloudWatchLoggingOptions() {
+    public Property<CloudWatchLoggingOptions> getCloudWatchLoggingOptions() {
         return cloudWatchLoggingOptions;
     }
 
@@ -121,11 +123,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public void setCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
     }
 
-    public SplunkDestinationConfiguration withCloudWatchLoggingOptions(CloudWatchLoggingOptions cloudWatchLoggingOptions) {
+    public SplunkDestinationConfiguration withCloudWatchLoggingOptions(Property<CloudWatchLoggingOptions> cloudWatchLoggingOptions) {
         this.cloudWatchLoggingOptions = cloudWatchLoggingOptions;
         return this;
     }
@@ -229,7 +231,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public ProcessingConfiguration getProcessingConfiguration() {
+    public Property<ProcessingConfiguration> getProcessingConfiguration() {
         return processingConfiguration;
     }
 
@@ -240,11 +242,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public void setProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
     }
 
-    public SplunkDestinationConfiguration withProcessingConfiguration(ProcessingConfiguration processingConfiguration) {
+    public SplunkDestinationConfiguration withProcessingConfiguration(Property<ProcessingConfiguration> processingConfiguration) {
         this.processingConfiguration = processingConfiguration;
         return this;
     }
@@ -256,7 +258,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public SplunkRetryOptions getRetryOptions() {
+    public Property<SplunkRetryOptions> getRetryOptions() {
         return retryOptions;
     }
 
@@ -267,11 +269,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRetryOptions(SplunkRetryOptions retryOptions) {
+    public void setRetryOptions(Property<SplunkRetryOptions> retryOptions) {
         this.retryOptions = retryOptions;
     }
 
-    public SplunkDestinationConfiguration withRetryOptions(SplunkRetryOptions retryOptions) {
+    public SplunkDestinationConfiguration withRetryOptions(Property<SplunkRetryOptions> retryOptions) {
         this.retryOptions = retryOptions;
         return this;
     }
@@ -306,7 +308,7 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public S3DestinationConfiguration getS3Configuration() {
+    public Property<S3DestinationConfiguration> getS3Configuration() {
         return s3Configuration;
     }
 
@@ -317,11 +319,11 @@ public class SplunkDestinationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public void setS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
     }
 
-    public SplunkDestinationConfiguration withS3Configuration(S3DestinationConfiguration s3Configuration) {
+    public SplunkDestinationConfiguration withS3Configuration(Property<S3DestinationConfiguration> s3Configuration) {
         this.s3Configuration = s3Configuration;
         return this;
     }

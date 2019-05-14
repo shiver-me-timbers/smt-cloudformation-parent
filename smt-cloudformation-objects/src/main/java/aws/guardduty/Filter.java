@@ -1,6 +1,7 @@
 
 package aws.guardduty;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -57,7 +58,7 @@ public class Filter {
      */
     @JsonProperty("FindingCriteria")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html")
-    private FindingCriteria findingCriteria;
+    private Property<FindingCriteria> findingCriteria;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank
      * 
@@ -149,7 +150,7 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public FindingCriteria getFindingCriteria() {
+    public Property<FindingCriteria> getFindingCriteria() {
         return findingCriteria;
     }
 
@@ -160,11 +161,11 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public void setFindingCriteria(FindingCriteria findingCriteria) {
+    public void setFindingCriteria(Property<FindingCriteria> findingCriteria) {
         this.findingCriteria = findingCriteria;
     }
 
-    public Filter withFindingCriteria(FindingCriteria findingCriteria) {
+    public Filter withFindingCriteria(Property<FindingCriteria> findingCriteria) {
         this.findingCriteria = findingCriteria;
         return this;
     }

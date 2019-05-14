@@ -1,6 +1,7 @@
 
 package aws.kinesisanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class ApplicationOutput {
      */
     @JsonProperty("Output")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html")
-    private KinesisFirehoseOutput output;
+    private Property<Output> output;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname
@@ -71,7 +72,7 @@ public class ApplicationOutput {
      * 
      */
     @JsonIgnore
-    public KinesisFirehoseOutput getOutput() {
+    public Property<Output> getOutput() {
         return output;
     }
 
@@ -82,11 +83,11 @@ public class ApplicationOutput {
      * 
      */
     @JsonIgnore
-    public void setOutput(KinesisFirehoseOutput output) {
+    public void setOutput(Property<Output> output) {
         this.output = output;
     }
 
-    public ApplicationOutput withOutput(KinesisFirehoseOutput output) {
+    public ApplicationOutput withOutput(Property<Output> output) {
         this.output = output;
         return this;
     }

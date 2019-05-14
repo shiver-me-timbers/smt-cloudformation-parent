@@ -6,12 +6,12 @@ import shiver.me.timbers.cloudformation.CloudformationProperty;
 import shiver.me.timbers.cloudformation.CloudformationType;
 import shiver.me.timbers.cloudformation.types.ClassTypeConverter;
 
-import java.util.HashMap;
+import java.util.Map;
 
-import static org.hamcrest.Matchers.hasEntry;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.mock;
 import static shiver.me.timbers.data.random.RandomStrings.someString;
 
@@ -33,21 +33,26 @@ public class ClassTypeTransformerTest {
         final String resourceName = someString();
         final String propertyName = someString();
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
+        final Map<String, Object> property = mock(Map.class);
 
         final String type = someString();
-        final String schemaFileName = someString();
-
-        final HashMap<String, Object> actual = new HashMap<>();
+        final Map<String, String> typeMap = mock(Map.class);
 
         // Given
         given(cloudformationProperty.getType()).willReturn(type);
-        given(converter.convert(resourceName, type)).willReturn(schemaFileName);
+        given(converter.toTypeMap(resourceName, type)).willReturn(typeMap);
 
         // When
-        transformer.transform(resourceName, mock(CloudformationType.class), propertyName, cloudformationProperty, actual);
+        transformer.transform(
+            resourceName,
+            mock(CloudformationType.class),
+            propertyName,
+            cloudformationProperty,
+            property
+        );
 
         // Then
-        assertThat(actual, hasEntry("$ref", schemaFileName));
+        then(property).should().putAll(typeMap);
     }
 
     @Test

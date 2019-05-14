@@ -1,6 +1,7 @@
 
 package aws.servicediscovery;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -43,7 +44,7 @@ public class Service {
      */
     @JsonProperty("HealthCheckCustomConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckcustomconfig.html")
-    private HealthCheckCustomConfig healthCheckCustomConfig;
+    private Property<HealthCheckCustomConfig> healthCheckCustomConfig;
     /**
      * DnsConfig
      * <p>
@@ -52,7 +53,7 @@ public class Service {
      */
     @JsonProperty("DnsConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-dnsconfig.html")
-    private DnsConfig dnsConfig;
+    private Property<DnsConfig> dnsConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-namespaceid
      * 
@@ -68,7 +69,7 @@ public class Service {
      */
     @JsonProperty("HealthCheckConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicediscovery-service-healthcheckconfig.html")
-    private HealthCheckConfig healthCheckConfig;
+    private Property<HealthCheckConfig> healthCheckConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicediscovery-service.html#cfn-servicediscovery-service-name
      * 
@@ -107,7 +108,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public HealthCheckCustomConfig getHealthCheckCustomConfig() {
+    public Property<HealthCheckCustomConfig> getHealthCheckCustomConfig() {
         return healthCheckCustomConfig;
     }
 
@@ -118,11 +119,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckCustomConfig(HealthCheckCustomConfig healthCheckCustomConfig) {
+    public void setHealthCheckCustomConfig(Property<HealthCheckCustomConfig> healthCheckCustomConfig) {
         this.healthCheckCustomConfig = healthCheckCustomConfig;
     }
 
-    public Service withHealthCheckCustomConfig(HealthCheckCustomConfig healthCheckCustomConfig) {
+    public Service withHealthCheckCustomConfig(Property<HealthCheckCustomConfig> healthCheckCustomConfig) {
         this.healthCheckCustomConfig = healthCheckCustomConfig;
         return this;
     }
@@ -134,7 +135,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public DnsConfig getDnsConfig() {
+    public Property<DnsConfig> getDnsConfig() {
         return dnsConfig;
     }
 
@@ -145,11 +146,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setDnsConfig(DnsConfig dnsConfig) {
+    public void setDnsConfig(Property<DnsConfig> dnsConfig) {
         this.dnsConfig = dnsConfig;
     }
 
-    public Service withDnsConfig(DnsConfig dnsConfig) {
+    public Service withDnsConfig(Property<DnsConfig> dnsConfig) {
         this.dnsConfig = dnsConfig;
         return this;
     }
@@ -184,7 +185,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public HealthCheckConfig getHealthCheckConfig() {
+    public Property<HealthCheckConfig> getHealthCheckConfig() {
         return healthCheckConfig;
     }
 
@@ -195,11 +196,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
+    public void setHealthCheckConfig(Property<HealthCheckConfig> healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
     }
 
-    public Service withHealthCheckConfig(HealthCheckConfig healthCheckConfig) {
+    public Service withHealthCheckConfig(Property<HealthCheckConfig> healthCheckConfig) {
         this.healthCheckConfig = healthCheckConfig;
         return this;
     }

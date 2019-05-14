@@ -1,6 +1,7 @@
 
 package aws.autoscalingplans;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "EstimatedInstanceWarmup",
     "CustomizedScalingMetricSpecification"
 })
-public class TargetTrackingConfiguration {
+public class TargetTrackingConfiguration implements Property<TargetTrackingConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown
@@ -51,7 +53,7 @@ public class TargetTrackingConfiguration {
      */
     @JsonProperty("PredefinedScalingMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedscalingmetricspecification.html")
-    private PredefinedScalingMetricSpecification predefinedScalingMetricSpecification;
+    private Property<PredefinedScalingMetricSpecification> predefinedScalingMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein
      * 
@@ -81,7 +83,7 @@ public class TargetTrackingConfiguration {
      */
     @JsonProperty("CustomizedScalingMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedscalingmetricspecification.html")
-    private CustomizedScalingMetricSpecification customizedScalingMetricSpecification;
+    private Property<CustomizedScalingMetricSpecification> customizedScalingMetricSpecification;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown
@@ -136,7 +138,7 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public PredefinedScalingMetricSpecification getPredefinedScalingMetricSpecification() {
+    public Property<PredefinedScalingMetricSpecification> getPredefinedScalingMetricSpecification() {
         return predefinedScalingMetricSpecification;
     }
 
@@ -147,11 +149,11 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setPredefinedScalingMetricSpecification(PredefinedScalingMetricSpecification predefinedScalingMetricSpecification) {
+    public void setPredefinedScalingMetricSpecification(Property<PredefinedScalingMetricSpecification> predefinedScalingMetricSpecification) {
         this.predefinedScalingMetricSpecification = predefinedScalingMetricSpecification;
     }
 
-    public TargetTrackingConfiguration withPredefinedScalingMetricSpecification(PredefinedScalingMetricSpecification predefinedScalingMetricSpecification) {
+    public TargetTrackingConfiguration withPredefinedScalingMetricSpecification(Property<PredefinedScalingMetricSpecification> predefinedScalingMetricSpecification) {
         this.predefinedScalingMetricSpecification = predefinedScalingMetricSpecification;
         return this;
     }
@@ -232,7 +234,7 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public CustomizedScalingMetricSpecification getCustomizedScalingMetricSpecification() {
+    public Property<CustomizedScalingMetricSpecification> getCustomizedScalingMetricSpecification() {
         return customizedScalingMetricSpecification;
     }
 
@@ -243,11 +245,11 @@ public class TargetTrackingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCustomizedScalingMetricSpecification(CustomizedScalingMetricSpecification customizedScalingMetricSpecification) {
+    public void setCustomizedScalingMetricSpecification(Property<CustomizedScalingMetricSpecification> customizedScalingMetricSpecification) {
         this.customizedScalingMetricSpecification = customizedScalingMetricSpecification;
     }
 
-    public TargetTrackingConfiguration withCustomizedScalingMetricSpecification(CustomizedScalingMetricSpecification customizedScalingMetricSpecification) {
+    public TargetTrackingConfiguration withCustomizedScalingMetricSpecification(Property<CustomizedScalingMetricSpecification> customizedScalingMetricSpecification) {
         this.customizedScalingMetricSpecification = customizedScalingMetricSpecification;
         return this;
     }

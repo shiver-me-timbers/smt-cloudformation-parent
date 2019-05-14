@@ -3,6 +3,7 @@ package aws.sns;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -48,7 +49,7 @@ public class Topic {
      */
     @JsonProperty("Subscription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription")
-    private List<Subscription> subscription = new ArrayList<Subscription>();
+    private List<Property<Subscription>> subscription = new ArrayList<Property<Subscription>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
@@ -108,7 +109,7 @@ public class Topic {
      * 
      */
     @JsonIgnore
-    public List<Subscription> getSubscription() {
+    public List<Property<Subscription>> getSubscription() {
         return subscription;
     }
 
@@ -117,11 +118,11 @@ public class Topic {
      * 
      */
     @JsonIgnore
-    public void setSubscription(List<Subscription> subscription) {
+    public void setSubscription(List<Property<Subscription>> subscription) {
         this.subscription = subscription;
     }
 
-    public Topic withSubscription(List<Subscription> subscription) {
+    public Topic withSubscription(List<Property<Subscription>> subscription) {
         this.subscription = subscription;
         return this;
     }

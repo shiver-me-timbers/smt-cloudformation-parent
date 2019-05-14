@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-actions",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_IoTAnalytics_Dataset.Action.schema.json"
+        "$ref" : "AWS_IoTAnalytics_Dataset.Action.schema.json",
+        "javaType" : "aws.Property<aws.iotanalytics.Action>"
       }
     },
     "DatasetName" : {
@@ -22,18 +23,21 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_IoTAnalytics_Dataset.Trigger.schema.json"
+        "$ref" : "AWS_IoTAnalytics_Dataset.Trigger.schema.json",
+        "javaType" : "aws.Property<aws.iotanalytics.Trigger>"
       }
     },
     "RetentionPeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-retentionperiod",
-      "$ref" : "AWS_IoTAnalytics_Datastore.RetentionPeriod.schema.json"
+      "$ref" : "AWS_IoTAnalytics_Datastore.RetentionPeriod.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.RetentionPeriod>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

@@ -8,7 +8,8 @@
   "properties" : {
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-initialversion",
-      "$ref" : "AWS_Greengrass_FunctionDefinition.FunctionDefinitionVersion.schema.json"
+      "$ref" : "AWS_Greengrass_FunctionDefinition.FunctionDefinitionVersion.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionVersion>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-name",

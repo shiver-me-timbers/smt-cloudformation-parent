@@ -3,6 +3,7 @@ package aws.stepfunctions;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class Activity {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags")
-    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
+    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-name
      * 
@@ -46,7 +47,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public List<TagsEntry> getTags() {
+    public List<Property<TagsEntry>> getTags() {
         return tags;
     }
 
@@ -55,11 +56,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagsEntry> tags) {
+    public void setTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public Activity withTags(List<TagsEntry> tags) {
+    public Activity withTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

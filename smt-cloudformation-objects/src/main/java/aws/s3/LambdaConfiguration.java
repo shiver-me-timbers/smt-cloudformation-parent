@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Filter",
     "Function"
 })
-public class LambdaConfiguration {
+public class LambdaConfiguration implements Property<LambdaConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-event
@@ -40,7 +42,7 @@ public class LambdaConfiguration {
      */
     @JsonProperty("Filter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html")
-    private NotificationFilter filter;
+    private Property<NotificationFilter> filter;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig-function
      * 
@@ -79,7 +81,7 @@ public class LambdaConfiguration {
      * 
      */
     @JsonIgnore
-    public NotificationFilter getFilter() {
+    public Property<NotificationFilter> getFilter() {
         return filter;
     }
 
@@ -90,11 +92,11 @@ public class LambdaConfiguration {
      * 
      */
     @JsonIgnore
-    public void setFilter(NotificationFilter filter) {
+    public void setFilter(Property<NotificationFilter> filter) {
         this.filter = filter;
     }
 
-    public LambdaConfiguration withFilter(NotificationFilter filter) {
+    public LambdaConfiguration withFilter(Property<NotificationFilter> filter) {
         this.filter = filter;
         return this;
     }

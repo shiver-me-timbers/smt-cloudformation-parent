@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import aws.autoscalingplans.TargetTrackingConfiguration;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -99,7 +100,7 @@ public class ScalingPolicy {
     @JsonProperty("StepAdjustments")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-stepadjustments")
-    private Set<StepAdjustment> stepAdjustments = new LinkedHashSet<StepAdjustment>();
+    private Set<Property<StepAdjustment>> stepAdjustments = new LinkedHashSet<Property<StepAdjustment>>();
     /**
      * TargetTrackingConfiguration
      * <p>
@@ -108,7 +109,7 @@ public class ScalingPolicy {
      */
     @JsonProperty("TargetTrackingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html")
-    private TargetTrackingConfiguration targetTrackingConfiguration;
+    private Property<TargetTrackingConfiguration> targetTrackingConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-adjustmenttype
@@ -299,7 +300,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Set<StepAdjustment> getStepAdjustments() {
+    public Set<Property<StepAdjustment>> getStepAdjustments() {
         return stepAdjustments;
     }
 
@@ -308,11 +309,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setStepAdjustments(Set<StepAdjustment> stepAdjustments) {
+    public void setStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
     }
 
-    public ScalingPolicy withStepAdjustments(Set<StepAdjustment> stepAdjustments) {
+    public ScalingPolicy withStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
         return this;
     }
@@ -324,7 +325,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public TargetTrackingConfiguration getTargetTrackingConfiguration() {
+    public Property<TargetTrackingConfiguration> getTargetTrackingConfiguration() {
         return targetTrackingConfiguration;
     }
 
@@ -335,11 +336,11 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setTargetTrackingConfiguration(TargetTrackingConfiguration targetTrackingConfiguration) {
+    public void setTargetTrackingConfiguration(Property<TargetTrackingConfiguration> targetTrackingConfiguration) {
         this.targetTrackingConfiguration = targetTrackingConfiguration;
     }
 
-    public ScalingPolicy withTargetTrackingConfiguration(TargetTrackingConfiguration targetTrackingConfiguration) {
+    public ScalingPolicy withTargetTrackingConfiguration(Property<TargetTrackingConfiguration> targetTrackingConfiguration) {
         this.targetTrackingConfiguration = targetTrackingConfiguration;
         return this;
     }

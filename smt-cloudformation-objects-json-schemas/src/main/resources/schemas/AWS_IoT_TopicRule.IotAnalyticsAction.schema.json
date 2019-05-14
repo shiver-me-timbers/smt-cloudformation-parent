@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html",
   "type" : "object",
   "javaType" : "aws.iot.IotAnalyticsAction",
+  "javaInterfaces" : [ "aws.Property<IotAnalyticsAction>" ],
   "properties" : {
     "ChannelName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-iotanalyticsaction.html#cfn-iot-topicrule-iotanalyticsaction-channelname",

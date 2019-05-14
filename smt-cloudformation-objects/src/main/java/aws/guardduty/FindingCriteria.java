@@ -1,6 +1,7 @@
 
 package aws.guardduty;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Criterion",
     "ItemType"
 })
-public class FindingCriteria {
+public class FindingCriteria implements Property<FindingCriteria>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
@@ -39,7 +41,7 @@ public class FindingCriteria {
      */
     @JsonProperty("ItemType")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-condition.html")
-    private Condition itemType;
+    private Property<Condition> itemType;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion
@@ -71,7 +73,7 @@ public class FindingCriteria {
      * 
      */
     @JsonIgnore
-    public Condition getItemType() {
+    public Property<Condition> getItemType() {
         return itemType;
     }
 
@@ -82,11 +84,11 @@ public class FindingCriteria {
      * 
      */
     @JsonIgnore
-    public void setItemType(Condition itemType) {
+    public void setItemType(Property<Condition> itemType) {
         this.itemType = itemType;
     }
 
-    public FindingCriteria withItemType(Condition itemType) {
+    public FindingCriteria withItemType(Property<Condition> itemType) {
         this.itemType = itemType;
         return this;
     }

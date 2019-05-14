@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class SubscriptionDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html")
-    private SubscriptionDefinitionVersion initialVersion;
+    private Property<SubscriptionDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-name
      * 
@@ -48,7 +49,7 @@ public class SubscriptionDefinition {
      * 
      */
     @JsonIgnore
-    public SubscriptionDefinitionVersion getInitialVersion() {
+    public Property<SubscriptionDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class SubscriptionDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(SubscriptionDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<SubscriptionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public SubscriptionDefinition withInitialVersion(SubscriptionDefinitionVersion initialVersion) {
+    public SubscriptionDefinition withInitialVersion(Property<SubscriptionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

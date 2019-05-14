@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ConnectionProperties",
     "Name"
 })
-public class ConnectionInput {
+public class ConnectionInput implements Property<ConnectionInput>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description
@@ -59,7 +61,7 @@ public class ConnectionInput {
      */
     @JsonProperty("PhysicalConnectionRequirements")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html")
-    private PhysicalConnectionRequirements physicalConnectionRequirements;
+    private Property<PhysicalConnectionRequirements> physicalConnectionRequirements;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties
      * 
@@ -151,7 +153,7 @@ public class ConnectionInput {
      * 
      */
     @JsonIgnore
-    public PhysicalConnectionRequirements getPhysicalConnectionRequirements() {
+    public Property<PhysicalConnectionRequirements> getPhysicalConnectionRequirements() {
         return physicalConnectionRequirements;
     }
 
@@ -162,11 +164,11 @@ public class ConnectionInput {
      * 
      */
     @JsonIgnore
-    public void setPhysicalConnectionRequirements(PhysicalConnectionRequirements physicalConnectionRequirements) {
+    public void setPhysicalConnectionRequirements(Property<PhysicalConnectionRequirements> physicalConnectionRequirements) {
         this.physicalConnectionRequirements = physicalConnectionRequirements;
     }
 
-    public ConnectionInput withPhysicalConnectionRequirements(PhysicalConnectionRequirements physicalConnectionRequirements) {
+    public ConnectionInput withPhysicalConnectionRequirements(Property<PhysicalConnectionRequirements> physicalConnectionRequirements) {
         this.physicalConnectionRequirements = physicalConnectionRequirements;
         return this;
     }

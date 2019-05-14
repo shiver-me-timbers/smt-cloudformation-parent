@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LaunchTemplateSpecification",
     "Overrides"
 })
-public class FleetLaunchTemplateConfigRequest {
+public class FleetLaunchTemplateConfigRequest implements Property<FleetLaunchTemplateConfigRequest>
+{
 
     /**
      * FleetLaunchTemplateSpecificationRequest
@@ -34,14 +36,14 @@ public class FleetLaunchTemplateConfigRequest {
      */
     @JsonProperty("LaunchTemplateSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplatespecificationrequest.html")
-    private FleetLaunchTemplateSpecificationRequest launchTemplateSpecification;
+    private Property<FleetLaunchTemplateSpecificationRequest> launchTemplateSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides
      * 
      */
     @JsonProperty("Overrides")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateconfigrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateconfigrequest-overrides")
-    private List<FleetLaunchTemplateOverridesRequest> overrides = new ArrayList<FleetLaunchTemplateOverridesRequest>();
+    private List<Property<FleetLaunchTemplateOverridesRequest>> overrides = new ArrayList<Property<FleetLaunchTemplateOverridesRequest>>();
 
     /**
      * FleetLaunchTemplateSpecificationRequest
@@ -50,7 +52,7 @@ public class FleetLaunchTemplateConfigRequest {
      * 
      */
     @JsonIgnore
-    public FleetLaunchTemplateSpecificationRequest getLaunchTemplateSpecification() {
+    public Property<FleetLaunchTemplateSpecificationRequest> getLaunchTemplateSpecification() {
         return launchTemplateSpecification;
     }
 
@@ -61,11 +63,11 @@ public class FleetLaunchTemplateConfigRequest {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateSpecification(FleetLaunchTemplateSpecificationRequest launchTemplateSpecification) {
+    public void setLaunchTemplateSpecification(Property<FleetLaunchTemplateSpecificationRequest> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
     }
 
-    public FleetLaunchTemplateConfigRequest withLaunchTemplateSpecification(FleetLaunchTemplateSpecificationRequest launchTemplateSpecification) {
+    public FleetLaunchTemplateConfigRequest withLaunchTemplateSpecification(Property<FleetLaunchTemplateSpecificationRequest> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
         return this;
     }
@@ -75,7 +77,7 @@ public class FleetLaunchTemplateConfigRequest {
      * 
      */
     @JsonIgnore
-    public List<FleetLaunchTemplateOverridesRequest> getOverrides() {
+    public List<Property<FleetLaunchTemplateOverridesRequest>> getOverrides() {
         return overrides;
     }
 
@@ -84,11 +86,11 @@ public class FleetLaunchTemplateConfigRequest {
      * 
      */
     @JsonIgnore
-    public void setOverrides(List<FleetLaunchTemplateOverridesRequest> overrides) {
+    public void setOverrides(List<Property<FleetLaunchTemplateOverridesRequest>> overrides) {
         this.overrides = overrides;
     }
 
-    public FleetLaunchTemplateConfigRequest withOverrides(List<FleetLaunchTemplateOverridesRequest> overrides) {
+    public FleetLaunchTemplateConfigRequest withOverrides(List<Property<FleetLaunchTemplateOverridesRequest>> overrides) {
         this.overrides = overrides;
         return this;
     }

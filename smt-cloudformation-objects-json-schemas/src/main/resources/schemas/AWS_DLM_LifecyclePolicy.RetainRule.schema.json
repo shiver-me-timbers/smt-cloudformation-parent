@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html",
   "type" : "object",
   "javaType" : "aws.dlm.RetainRule",
+  "javaInterfaces" : [ "aws.Property<RetainRule>" ],
   "properties" : {
     "Count" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count",

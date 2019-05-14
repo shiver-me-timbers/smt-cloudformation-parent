@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -42,14 +43,14 @@ public class IdentityPool {
      */
     @JsonProperty("PushSync")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html")
-    private PushSync pushSync;
+    private Property<PushSync> pushSync;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders
      * 
      */
     @JsonProperty("CognitoIdentityProviders")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders")
-    private List<CognitoIdentityProvider> cognitoIdentityProviders = new ArrayList<CognitoIdentityProvider>();
+    private List<Property<CognitoIdentityProvider>> cognitoIdentityProviders = new ArrayList<Property<CognitoIdentityProvider>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
@@ -72,7 +73,7 @@ public class IdentityPool {
      */
     @JsonProperty("CognitoStreams")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html")
-    private CognitoStreams cognitoStreams;
+    private Property<CognitoStreams> cognitoStreams;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname
      * 
@@ -116,7 +117,7 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public PushSync getPushSync() {
+    public Property<PushSync> getPushSync() {
         return pushSync;
     }
 
@@ -127,11 +128,11 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public void setPushSync(PushSync pushSync) {
+    public void setPushSync(Property<PushSync> pushSync) {
         this.pushSync = pushSync;
     }
 
-    public IdentityPool withPushSync(PushSync pushSync) {
+    public IdentityPool withPushSync(Property<PushSync> pushSync) {
         this.pushSync = pushSync;
         return this;
     }
@@ -141,7 +142,7 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public List<CognitoIdentityProvider> getCognitoIdentityProviders() {
+    public List<Property<CognitoIdentityProvider>> getCognitoIdentityProviders() {
         return cognitoIdentityProviders;
     }
 
@@ -150,11 +151,11 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public void setCognitoIdentityProviders(List<CognitoIdentityProvider> cognitoIdentityProviders) {
+    public void setCognitoIdentityProviders(List<Property<CognitoIdentityProvider>> cognitoIdentityProviders) {
         this.cognitoIdentityProviders = cognitoIdentityProviders;
     }
 
-    public IdentityPool withCognitoIdentityProviders(List<CognitoIdentityProvider> cognitoIdentityProviders) {
+    public IdentityPool withCognitoIdentityProviders(List<Property<CognitoIdentityProvider>> cognitoIdentityProviders) {
         this.cognitoIdentityProviders = cognitoIdentityProviders;
         return this;
     }
@@ -212,7 +213,7 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public CognitoStreams getCognitoStreams() {
+    public Property<CognitoStreams> getCognitoStreams() {
         return cognitoStreams;
     }
 
@@ -223,11 +224,11 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public void setCognitoStreams(CognitoStreams cognitoStreams) {
+    public void setCognitoStreams(Property<CognitoStreams> cognitoStreams) {
         this.cognitoStreams = cognitoStreams;
     }
 
-    public IdentityPool withCognitoStreams(CognitoStreams cognitoStreams) {
+    public IdentityPool withCognitoStreams(Property<CognitoStreams> cognitoStreams) {
         this.cognitoStreams = cognitoStreams;
         return this;
     }

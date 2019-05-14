@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -50,14 +51,14 @@ public class VirtualService {
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html")
-    private VirtualServiceSpec spec;
+    private Property<VirtualServiceSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags")
-    private List<TagRef> tags = new ArrayList<TagRef>();
+    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-meshname
@@ -112,7 +113,7 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public VirtualServiceSpec getSpec() {
+    public Property<VirtualServiceSpec> getSpec() {
         return spec;
     }
 
@@ -123,11 +124,11 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public void setSpec(VirtualServiceSpec spec) {
+    public void setSpec(Property<VirtualServiceSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualService withSpec(VirtualServiceSpec spec) {
+    public VirtualService withSpec(Property<VirtualServiceSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -137,7 +138,7 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public List<TagRef> getTags() {
+    public List<Property<TagRef>> getTags() {
         return tags;
     }
 
@@ -146,11 +147,11 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRef> tags) {
+    public void setTags(List<Property<TagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualService withTags(List<TagRef> tags) {
+    public VirtualService withTags(List<Property<TagRef>> tags) {
         this.tags = tags;
         return this;
     }

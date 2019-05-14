@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class FunctionDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html")
-    private FunctionDefinitionVersion initialVersion;
+    private Property<FunctionDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-name
      * 
@@ -48,7 +49,7 @@ public class FunctionDefinition {
      * 
      */
     @JsonIgnore
-    public FunctionDefinitionVersion getInitialVersion() {
+    public Property<FunctionDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class FunctionDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(FunctionDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<FunctionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public FunctionDefinition withInitialVersion(FunctionDefinitionVersion initialVersion) {
+    public FunctionDefinition withInitialVersion(Property<FunctionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

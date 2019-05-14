@@ -3,6 +3,7 @@ package aws.sagemaker;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -46,7 +47,7 @@ public class Model {
      */
     @JsonProperty("PrimaryContainer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html")
-    private ContainerDefinition primaryContainer;
+    private Property<aws.sagemaker.ContainerDefinition> primaryContainer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname
      * 
@@ -62,21 +63,21 @@ public class Model {
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html")
-    private VpcConfig vpcConfig;
+    private Property<VpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers
      * 
      */
     @JsonProperty("Containers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers")
-    private List<ContainerDefinition> containers = new ArrayList<ContainerDefinition>();
+    private List<Property<aws.sagemaker.ContainerDefinition>> containers = new ArrayList<Property<aws.sagemaker.ContainerDefinition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-executionrolearn
@@ -108,7 +109,7 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public ContainerDefinition getPrimaryContainer() {
+    public Property<aws.sagemaker.ContainerDefinition> getPrimaryContainer() {
         return primaryContainer;
     }
 
@@ -119,11 +120,11 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public void setPrimaryContainer(ContainerDefinition primaryContainer) {
+    public void setPrimaryContainer(Property<aws.sagemaker.ContainerDefinition> primaryContainer) {
         this.primaryContainer = primaryContainer;
     }
 
-    public Model withPrimaryContainer(ContainerDefinition primaryContainer) {
+    public Model withPrimaryContainer(Property<aws.sagemaker.ContainerDefinition> primaryContainer) {
         this.primaryContainer = primaryContainer;
         return this;
     }
@@ -158,7 +159,7 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public VpcConfig getVpcConfig() {
+    public Property<VpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
@@ -169,11 +170,11 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(VpcConfig vpcConfig) {
+    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Model withVpcConfig(VpcConfig vpcConfig) {
+    public Model withVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -183,7 +184,7 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public List<ContainerDefinition> getContainers() {
+    public List<Property<aws.sagemaker.ContainerDefinition>> getContainers() {
         return containers;
     }
 
@@ -192,11 +193,11 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public void setContainers(List<ContainerDefinition> containers) {
+    public void setContainers(List<Property<aws.sagemaker.ContainerDefinition>> containers) {
         this.containers = containers;
     }
 
-    public Model withContainers(List<ContainerDefinition> containers) {
+    public Model withContainers(List<Property<aws.sagemaker.ContainerDefinition>> containers) {
         this.containers = containers;
         return this;
     }
@@ -206,7 +207,7 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -215,11 +216,11 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Model withTags(List<Tag> tags) {
+    public Model withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

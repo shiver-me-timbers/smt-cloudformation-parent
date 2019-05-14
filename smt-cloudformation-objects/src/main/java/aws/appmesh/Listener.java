@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "HealthCheck",
     "PortMapping"
 })
-public class Listener {
+public class Listener implements Property<Listener>
+{
 
     /**
      * HealthCheck
@@ -32,7 +34,7 @@ public class Listener {
      */
     @JsonProperty("HealthCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html")
-    private HealthCheck healthCheck;
+    private Property<HealthCheck> healthCheck;
     /**
      * PortMapping
      * <p>
@@ -41,7 +43,7 @@ public class Listener {
      */
     @JsonProperty("PortMapping")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-portmapping.html")
-    private PortMapping portMapping;
+    private Property<PortMapping> portMapping;
 
     /**
      * HealthCheck
@@ -50,7 +52,7 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public HealthCheck getHealthCheck() {
+    public Property<HealthCheck> getHealthCheck() {
         return healthCheck;
     }
 
@@ -61,11 +63,11 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public void setHealthCheck(HealthCheck healthCheck) {
+    public void setHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
     }
 
-    public Listener withHealthCheck(HealthCheck healthCheck) {
+    public Listener withHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
         return this;
     }
@@ -77,7 +79,7 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public PortMapping getPortMapping() {
+    public Property<PortMapping> getPortMapping() {
         return portMapping;
     }
 
@@ -88,11 +90,11 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public void setPortMapping(PortMapping portMapping) {
+    public void setPortMapping(Property<PortMapping> portMapping) {
         this.portMapping = portMapping;
     }
 
-    public Listener withPortMapping(PortMapping portMapping) {
+    public Listener withPortMapping(Property<PortMapping> portMapping) {
         this.portMapping = portMapping;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Environment",
     "Executable"
 })
-public class FunctionConfiguration {
+public class FunctionConfiguration implements Property<FunctionConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-memorysize
@@ -72,7 +74,7 @@ public class FunctionConfiguration {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-environment.html")
-    private Environment environment;
+    private Property<Environment> environment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html#cfn-greengrass-functiondefinitionversion-functionconfiguration-executable
      * 
@@ -203,7 +205,7 @@ public class FunctionConfiguration {
      * 
      */
     @JsonIgnore
-    public Environment getEnvironment() {
+    public Property<Environment> getEnvironment() {
         return environment;
     }
 
@@ -214,11 +216,11 @@ public class FunctionConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Environment environment) {
+    public void setEnvironment(Property<Environment> environment) {
         this.environment = environment;
     }
 
-    public FunctionConfiguration withEnvironment(Environment environment) {
+    public FunctionConfiguration withEnvironment(Property<Environment> environment) {
         this.environment = environment;
         return this;
     }

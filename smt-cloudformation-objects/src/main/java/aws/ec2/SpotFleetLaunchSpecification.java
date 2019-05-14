@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "UserData",
     "WeightedCapacity"
 })
-public class SpotFleetLaunchSpecification {
+public class SpotFleetLaunchSpecification implements Property<SpotFleetLaunchSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings
@@ -49,7 +51,7 @@ public class SpotFleetLaunchSpecification {
     @JsonProperty("BlockDeviceMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-blockdevicemappings")
-    private Set<BlockDeviceMapping> blockDeviceMappings = new LinkedHashSet<BlockDeviceMapping>();
+    private Set<Property<BlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<BlockDeviceMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ebsoptimized
      * 
@@ -65,7 +67,7 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("IamInstanceProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html")
-    private IamInstanceProfileSpecification iamInstanceProfile;
+    private Property<IamInstanceProfileSpecification> iamInstanceProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-imageid
      * 
@@ -102,7 +104,7 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("Monitoring")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html")
-    private SpotFleetMonitoring monitoring;
+    private Property<SpotFleetMonitoring> monitoring;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-networkinterfaces
      * 
@@ -110,7 +112,7 @@ public class SpotFleetLaunchSpecification {
     @JsonProperty("NetworkInterfaces")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-networkinterfaces")
-    private Set<InstanceNetworkInterfaceSpecification> networkInterfaces = new LinkedHashSet<InstanceNetworkInterfaceSpecification>();
+    private Set<Property<InstanceNetworkInterfaceSpecification>> networkInterfaces = new LinkedHashSet<Property<InstanceNetworkInterfaceSpecification>>();
     /**
      * SpotPlacement
      * <p>
@@ -119,7 +121,7 @@ public class SpotFleetLaunchSpecification {
      */
     @JsonProperty("Placement")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html")
-    private SpotPlacement placement;
+    private Property<SpotPlacement> placement;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-ramdiskid
      * 
@@ -134,7 +136,7 @@ public class SpotFleetLaunchSpecification {
     @JsonProperty("SecurityGroups")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-securitygroups")
-    private Set<GroupIdentifier> securityGroups = new LinkedHashSet<GroupIdentifier>();
+    private Set<Property<GroupIdentifier>> securityGroups = new LinkedHashSet<Property<GroupIdentifier>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-spotprice
      * 
@@ -156,7 +158,7 @@ public class SpotFleetLaunchSpecification {
     @JsonProperty("TagSpecifications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-tagspecifications")
-    private Set<SpotFleetTagSpecification> tagSpecifications = new LinkedHashSet<SpotFleetTagSpecification>();
+    private Set<Property<SpotFleetTagSpecification>> tagSpecifications = new LinkedHashSet<Property<SpotFleetTagSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html#cfn-ec2-spotfleet-spotfleetlaunchspecification-userdata
      * 
@@ -177,7 +179,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public Set<BlockDeviceMapping> getBlockDeviceMappings() {
+    public Set<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -186,11 +188,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public void setBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public SpotFleetLaunchSpecification withBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public SpotFleetLaunchSpecification withBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }
@@ -225,7 +227,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public IamInstanceProfileSpecification getIamInstanceProfile() {
+    public Property<IamInstanceProfileSpecification> getIamInstanceProfile() {
         return iamInstanceProfile;
     }
 
@@ -236,11 +238,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setIamInstanceProfile(IamInstanceProfileSpecification iamInstanceProfile) {
+    public void setIamInstanceProfile(Property<IamInstanceProfileSpecification> iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
     }
 
-    public SpotFleetLaunchSpecification withIamInstanceProfile(IamInstanceProfileSpecification iamInstanceProfile) {
+    public SpotFleetLaunchSpecification withIamInstanceProfile(Property<IamInstanceProfileSpecification> iamInstanceProfile) {
         this.iamInstanceProfile = iamInstanceProfile;
         return this;
     }
@@ -344,7 +346,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public SpotFleetMonitoring getMonitoring() {
+    public Property<SpotFleetMonitoring> getMonitoring() {
         return monitoring;
     }
 
@@ -355,11 +357,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setMonitoring(SpotFleetMonitoring monitoring) {
+    public void setMonitoring(Property<SpotFleetMonitoring> monitoring) {
         this.monitoring = monitoring;
     }
 
-    public SpotFleetLaunchSpecification withMonitoring(SpotFleetMonitoring monitoring) {
+    public SpotFleetLaunchSpecification withMonitoring(Property<SpotFleetMonitoring> monitoring) {
         this.monitoring = monitoring;
         return this;
     }
@@ -369,7 +371,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public Set<InstanceNetworkInterfaceSpecification> getNetworkInterfaces() {
+    public Set<Property<InstanceNetworkInterfaceSpecification>> getNetworkInterfaces() {
         return networkInterfaces;
     }
 
@@ -378,11 +380,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setNetworkInterfaces(Set<InstanceNetworkInterfaceSpecification> networkInterfaces) {
+    public void setNetworkInterfaces(Set<Property<InstanceNetworkInterfaceSpecification>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
     }
 
-    public SpotFleetLaunchSpecification withNetworkInterfaces(Set<InstanceNetworkInterfaceSpecification> networkInterfaces) {
+    public SpotFleetLaunchSpecification withNetworkInterfaces(Set<Property<InstanceNetworkInterfaceSpecification>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
         return this;
     }
@@ -394,7 +396,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public SpotPlacement getPlacement() {
+    public Property<SpotPlacement> getPlacement() {
         return placement;
     }
 
@@ -405,11 +407,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setPlacement(SpotPlacement placement) {
+    public void setPlacement(Property<SpotPlacement> placement) {
         this.placement = placement;
     }
 
-    public SpotFleetLaunchSpecification withPlacement(SpotPlacement placement) {
+    public SpotFleetLaunchSpecification withPlacement(Property<SpotPlacement> placement) {
         this.placement = placement;
         return this;
     }
@@ -442,7 +444,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public Set<GroupIdentifier> getSecurityGroups() {
+    public Set<Property<GroupIdentifier>> getSecurityGroups() {
         return securityGroups;
     }
 
@@ -451,11 +453,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setSecurityGroups(Set<GroupIdentifier> securityGroups) {
+    public void setSecurityGroups(Set<Property<GroupIdentifier>> securityGroups) {
         this.securityGroups = securityGroups;
     }
 
-    public SpotFleetLaunchSpecification withSecurityGroups(Set<GroupIdentifier> securityGroups) {
+    public SpotFleetLaunchSpecification withSecurityGroups(Set<Property<GroupIdentifier>> securityGroups) {
         this.securityGroups = securityGroups;
         return this;
     }
@@ -511,7 +513,7 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public Set<SpotFleetTagSpecification> getTagSpecifications() {
+    public Set<Property<SpotFleetTagSpecification>> getTagSpecifications() {
         return tagSpecifications;
     }
 
@@ -520,11 +522,11 @@ public class SpotFleetLaunchSpecification {
      * 
      */
     @JsonIgnore
-    public void setTagSpecifications(Set<SpotFleetTagSpecification> tagSpecifications) {
+    public void setTagSpecifications(Set<Property<SpotFleetTagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
     }
 
-    public SpotFleetLaunchSpecification withTagSpecifications(Set<SpotFleetTagSpecification> tagSpecifications) {
+    public SpotFleetLaunchSpecification withTagSpecifications(Set<Property<SpotFleetTagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
         return this;
     }

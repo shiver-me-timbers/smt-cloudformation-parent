@@ -3,6 +3,7 @@ package aws.ecs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -42,7 +43,7 @@ public class TaskDefinition {
     @JsonProperty("ContainerDefinitions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-containerdefinitions")
-    private Set<ContainerDefinition> containerDefinitions = new LinkedHashSet<ContainerDefinition>();
+    private Set<Property<ContainerDefinition>> containerDefinitions = new LinkedHashSet<Property<ContainerDefinition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-cpu
      * 
@@ -85,7 +86,7 @@ public class TaskDefinition {
     @JsonProperty("PlacementConstraints")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-placementconstraints")
-    private Set<TaskDefinitionPlacementConstraint> placementConstraints = new LinkedHashSet<TaskDefinitionPlacementConstraint>();
+    private Set<Property<TaskDefinitionPlacementConstraint>> placementConstraints = new LinkedHashSet<Property<TaskDefinitionPlacementConstraint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-requirescompatibilities
      * 
@@ -108,14 +109,14 @@ public class TaskDefinition {
     @JsonProperty("Volumes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-volumes")
-    private Set<Volume> volumes = new LinkedHashSet<Volume>();
+    private Set<Property<Volume>> volumes = new LinkedHashSet<Property<Volume>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#cfn-ecs-taskdefinition-containerdefinitions
      * 
      */
     @JsonIgnore
-    public Set<ContainerDefinition> getContainerDefinitions() {
+    public Set<Property<ContainerDefinition>> getContainerDefinitions() {
         return containerDefinitions;
     }
 
@@ -124,11 +125,11 @@ public class TaskDefinition {
      * 
      */
     @JsonIgnore
-    public void setContainerDefinitions(Set<ContainerDefinition> containerDefinitions) {
+    public void setContainerDefinitions(Set<Property<ContainerDefinition>> containerDefinitions) {
         this.containerDefinitions = containerDefinitions;
     }
 
-    public TaskDefinition withContainerDefinitions(Set<ContainerDefinition> containerDefinitions) {
+    public TaskDefinition withContainerDefinitions(Set<Property<ContainerDefinition>> containerDefinitions) {
         this.containerDefinitions = containerDefinitions;
         return this;
     }
@@ -253,7 +254,7 @@ public class TaskDefinition {
      * 
      */
     @JsonIgnore
-    public Set<TaskDefinitionPlacementConstraint> getPlacementConstraints() {
+    public Set<Property<TaskDefinitionPlacementConstraint>> getPlacementConstraints() {
         return placementConstraints;
     }
 
@@ -262,11 +263,11 @@ public class TaskDefinition {
      * 
      */
     @JsonIgnore
-    public void setPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
+    public void setPlacementConstraints(Set<Property<TaskDefinitionPlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
     }
 
-    public TaskDefinition withPlacementConstraints(Set<TaskDefinitionPlacementConstraint> placementConstraints) {
+    public TaskDefinition withPlacementConstraints(Set<Property<TaskDefinitionPlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
         return this;
     }
@@ -322,7 +323,7 @@ public class TaskDefinition {
      * 
      */
     @JsonIgnore
-    public Set<Volume> getVolumes() {
+    public Set<Property<Volume>> getVolumes() {
         return volumes;
     }
 
@@ -331,11 +332,11 @@ public class TaskDefinition {
      * 
      */
     @JsonIgnore
-    public void setVolumes(Set<Volume> volumes) {
+    public void setVolumes(Set<Property<Volume>> volumes) {
         this.volumes = volumes;
     }
 
-    public TaskDefinition withVolumes(Set<Volume> volumes) {
+    public TaskDefinition withVolumes(Set<Property<Volume>> volumes) {
         this.volumes = volumes;
         return this;
     }

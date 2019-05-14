@@ -5,26 +5,32 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html",
   "type" : "object",
   "javaType" : "aws.greengrass.ResourceDataContainer",
+  "javaInterfaces" : [ "aws.Property<ResourceDataContainer>" ],
   "properties" : {
     "SecretsManagerSecretResourceData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-secretsmanagersecretresourcedata",
-      "$ref" : "AWS_Greengrass_ResourceDefinition.SecretsManagerSecretResourceData.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinition.SecretsManagerSecretResourceData.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.SecretsManagerSecretResourceData>"
     },
     "SageMakerMachineLearningModelResourceData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-sagemakermachinelearningmodelresourcedata",
-      "$ref" : "AWS_Greengrass_ResourceDefinition.SageMakerMachineLearningModelResourceData.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinition.SageMakerMachineLearningModelResourceData.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.SageMakerMachineLearningModelResourceData>"
     },
     "LocalVolumeResourceData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-localvolumeresourcedata",
-      "$ref" : "AWS_Greengrass_ResourceDefinition.LocalVolumeResourceData.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinition.LocalVolumeResourceData.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.LocalVolumeResourceData>"
     },
     "LocalDeviceResourceData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-localdeviceresourcedata",
-      "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.LocalDeviceResourceData.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.LocalDeviceResourceData.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.LocalDeviceResourceData>"
     },
     "S3MachineLearningModelResourceData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedatacontainer.html#cfn-greengrass-resourcedefinition-resourcedatacontainer-s3machinelearningmodelresourcedata",
-      "$ref" : "AWS_Greengrass_ResourceDefinition.S3MachineLearningModelResourceData.schema.json"
+      "$ref" : "AWS_Greengrass_ResourceDefinition.S3MachineLearningModelResourceData.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.S3MachineLearningModelResourceData>"
     }
   }
 }

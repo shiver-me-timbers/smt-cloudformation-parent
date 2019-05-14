@@ -1,6 +1,7 @@
 
 package aws.iot1click;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class Project {
      */
     @JsonProperty("PlacementTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-placementtemplate.html")
-    private PlacementTemplate placementTemplate;
+    private Property<PlacementTemplate> placementTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-projectname
      * 
@@ -79,7 +80,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public PlacementTemplate getPlacementTemplate() {
+    public Property<PlacementTemplate> getPlacementTemplate() {
         return placementTemplate;
     }
 
@@ -90,11 +91,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setPlacementTemplate(PlacementTemplate placementTemplate) {
+    public void setPlacementTemplate(Property<PlacementTemplate> placementTemplate) {
         this.placementTemplate = placementTemplate;
     }
 
-    public Project withPlacementTemplate(PlacementTemplate placementTemplate) {
+    public Project withPlacementTemplate(Property<PlacementTemplate> placementTemplate) {
         this.placementTemplate = placementTemplate;
         return this;
     }

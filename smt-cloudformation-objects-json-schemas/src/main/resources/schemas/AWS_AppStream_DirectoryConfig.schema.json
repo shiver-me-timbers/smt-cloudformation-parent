@@ -16,7 +16,8 @@
     },
     "ServiceAccountCredentials" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-serviceaccountcredentials",
-      "$ref" : "AWS_AppStream_DirectoryConfig.ServiceAccountCredentials.schema.json"
+      "$ref" : "AWS_AppStream_DirectoryConfig.ServiceAccountCredentials.schema.json",
+      "javaType" : "aws.Property<aws.appstream.ServiceAccountCredentials>"
     },
     "DirectoryName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-directoryname",

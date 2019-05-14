@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Resources"
 })
-public class ResourceDefinitionVersion {
+public class ResourceDefinitionVersion implements Property<ResourceDefinitionVersion>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources
@@ -31,14 +33,14 @@ public class ResourceDefinitionVersion {
      */
     @JsonProperty("Resources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources")
-    private List<ResourceInstance> resources = new ArrayList<ResourceInstance>();
+    private List<Property<ResourceInstance>> resources = new ArrayList<Property<ResourceInstance>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources
      * 
      */
     @JsonIgnore
-    public List<ResourceInstance> getResources() {
+    public List<Property<ResourceInstance>> getResources() {
         return resources;
     }
 
@@ -47,11 +49,11 @@ public class ResourceDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setResources(List<ResourceInstance> resources) {
+    public void setResources(List<Property<ResourceInstance>> resources) {
         this.resources = resources;
     }
 
-    public ResourceDefinitionVersion withResources(List<ResourceInstance> resources) {
+    public ResourceDefinitionVersion withResources(List<Property<ResourceInstance>> resources) {
         this.resources = resources;
         return this;
     }

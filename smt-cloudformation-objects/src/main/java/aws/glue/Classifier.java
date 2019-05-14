@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class Classifier {
      */
     @JsonProperty("XMLClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html")
-    private XMLClassifier xMLClassifier;
+    private Property<XMLClassifier> xMLClassifier;
     /**
      * JsonClassifier
      * <p>
@@ -42,7 +43,7 @@ public class Classifier {
      */
     @JsonProperty("JsonClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html")
-    private JsonClassifier jsonClassifier;
+    private Property<JsonClassifier> jsonClassifier;
     /**
      * GrokClassifier
      * <p>
@@ -51,7 +52,7 @@ public class Classifier {
      */
     @JsonProperty("GrokClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html")
-    private GrokClassifier grokClassifier;
+    private Property<GrokClassifier> grokClassifier;
 
     /**
      * XMLClassifier
@@ -60,7 +61,7 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public XMLClassifier getXMLClassifier() {
+    public Property<XMLClassifier> getXMLClassifier() {
         return xMLClassifier;
     }
 
@@ -71,11 +72,11 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public void setXMLClassifier(XMLClassifier xMLClassifier) {
+    public void setXMLClassifier(Property<XMLClassifier> xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
     }
 
-    public Classifier withXMLClassifier(XMLClassifier xMLClassifier) {
+    public Classifier withXMLClassifier(Property<XMLClassifier> xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
         return this;
     }
@@ -87,7 +88,7 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public JsonClassifier getJsonClassifier() {
+    public Property<JsonClassifier> getJsonClassifier() {
         return jsonClassifier;
     }
 
@@ -98,11 +99,11 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public void setJsonClassifier(JsonClassifier jsonClassifier) {
+    public void setJsonClassifier(Property<JsonClassifier> jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
     }
 
-    public Classifier withJsonClassifier(JsonClassifier jsonClassifier) {
+    public Classifier withJsonClassifier(Property<JsonClassifier> jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
         return this;
     }
@@ -114,7 +115,7 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public GrokClassifier getGrokClassifier() {
+    public Property<GrokClassifier> getGrokClassifier() {
         return grokClassifier;
     }
 
@@ -125,11 +126,11 @@ public class Classifier {
      * 
      */
     @JsonIgnore
-    public void setGrokClassifier(GrokClassifier grokClassifier) {
+    public void setGrokClassifier(Property<GrokClassifier> grokClassifier) {
         this.grokClassifier = grokClassifier;
     }
 
-    public Classifier withGrokClassifier(GrokClassifier grokClassifier) {
+    public Classifier withGrokClassifier(Property<GrokClassifier> grokClassifier) {
         this.grokClassifier = grokClassifier;
         return this;
     }

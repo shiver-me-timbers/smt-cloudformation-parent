@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class Database {
      */
     @JsonProperty("DatabaseInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html")
-    private DatabaseInput databaseInput;
+    private Property<DatabaseInput> databaseInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
@@ -48,7 +49,7 @@ public class Database {
      * 
      */
     @JsonIgnore
-    public DatabaseInput getDatabaseInput() {
+    public Property<DatabaseInput> getDatabaseInput() {
         return databaseInput;
     }
 
@@ -59,11 +60,11 @@ public class Database {
      * 
      */
     @JsonIgnore
-    public void setDatabaseInput(DatabaseInput databaseInput) {
+    public void setDatabaseInput(Property<DatabaseInput> databaseInput) {
         this.databaseInput = databaseInput;
     }
 
-    public Database withDatabaseInput(DatabaseInput databaseInput) {
+    public Database withDatabaseInput(Property<DatabaseInput> databaseInput) {
         this.databaseInput = databaseInput;
         return this;
     }

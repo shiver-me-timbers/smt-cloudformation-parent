@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class Group {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html")
-    private GroupVersion initialVersion;
+    private Property<GroupVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-rolearn
      * 
@@ -56,7 +57,7 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public GroupVersion getInitialVersion() {
+    public Property<GroupVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -67,11 +68,11 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(GroupVersion initialVersion) {
+    public void setInitialVersion(Property<GroupVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public Group withInitialVersion(GroupVersion initialVersion) {
+    public Group withInitialVersion(Property<GroupVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

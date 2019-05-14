@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AwsIamConfig",
     "AuthorizationType"
 })
-public class AuthorizationConfig {
+public class AuthorizationConfig implements Property<AuthorizationConfig>
+{
 
     /**
      * AwsIamConfig
@@ -32,7 +34,7 @@ public class AuthorizationConfig {
      */
     @JsonProperty("AwsIamConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-awsiamconfig.html")
-    private AwsIamConfig awsIamConfig;
+    private Property<AwsIamConfig> awsIamConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-authorizationconfig.html#cfn-appsync-datasource-authorizationconfig-authorizationtype
      * 
@@ -48,7 +50,7 @@ public class AuthorizationConfig {
      * 
      */
     @JsonIgnore
-    public AwsIamConfig getAwsIamConfig() {
+    public Property<AwsIamConfig> getAwsIamConfig() {
         return awsIamConfig;
     }
 
@@ -59,11 +61,11 @@ public class AuthorizationConfig {
      * 
      */
     @JsonIgnore
-    public void setAwsIamConfig(AwsIamConfig awsIamConfig) {
+    public void setAwsIamConfig(Property<AwsIamConfig> awsIamConfig) {
         this.awsIamConfig = awsIamConfig;
     }
 
-    public AuthorizationConfig withAwsIamConfig(AwsIamConfig awsIamConfig) {
+    public AuthorizationConfig withAwsIamConfig(Property<AwsIamConfig> awsIamConfig) {
         this.awsIamConfig = awsIamConfig;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancing;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "Timeout"
 })
-public class ConnectionDrainingPolicy {
+public class ConnectionDrainingPolicy implements Property<ConnectionDrainingPolicy>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectiondrainingpolicy.html#cfn-elb-connectiondrainingpolicy-enabled

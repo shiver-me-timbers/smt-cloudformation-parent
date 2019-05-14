@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -135,7 +136,7 @@ public class ReplicationGroup {
     @JsonProperty("NodeGroupConfiguration")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration")
-    private Set<NodeGroupConfiguration> nodeGroupConfiguration = new LinkedHashSet<NodeGroupConfiguration>();
+    private Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration = new LinkedHashSet<Property<NodeGroupConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-notificationtopicarn
      * 
@@ -257,7 +258,7 @@ public class ReplicationGroup {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-transitencryptionenabled
      * 
@@ -501,7 +502,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Set<NodeGroupConfiguration> getNodeGroupConfiguration() {
+    public Set<Property<NodeGroupConfiguration>> getNodeGroupConfiguration() {
         return nodeGroupConfiguration;
     }
 
@@ -510,11 +511,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setNodeGroupConfiguration(Set<NodeGroupConfiguration> nodeGroupConfiguration) {
+    public void setNodeGroupConfiguration(Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration) {
         this.nodeGroupConfiguration = nodeGroupConfiguration;
     }
 
-    public ReplicationGroup withNodeGroupConfiguration(Set<NodeGroupConfiguration> nodeGroupConfiguration) {
+    public ReplicationGroup withNodeGroupConfiguration(Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration) {
         this.nodeGroupConfiguration = nodeGroupConfiguration;
         return this;
     }
@@ -892,7 +893,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -901,11 +902,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public ReplicationGroup withTags(List<Tag> tags) {
+    public ReplicationGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

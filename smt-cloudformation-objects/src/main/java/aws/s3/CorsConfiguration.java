@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "CorsRules"
 })
-public class CorsConfiguration {
+public class CorsConfiguration implements Property<CorsConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule
@@ -33,14 +35,14 @@ public class CorsConfiguration {
     @JsonProperty("CorsRules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule")
-    private Set<CorsRule> corsRules = new LinkedHashSet<CorsRule>();
+    private Set<Property<CorsRule>> corsRules = new LinkedHashSet<Property<CorsRule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule
      * 
      */
     @JsonIgnore
-    public Set<CorsRule> getCorsRules() {
+    public Set<Property<CorsRule>> getCorsRules() {
         return corsRules;
     }
 
@@ -49,11 +51,11 @@ public class CorsConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCorsRules(Set<CorsRule> corsRules) {
+    public void setCorsRules(Set<Property<CorsRule>> corsRules) {
         this.corsRules = corsRules;
     }
 
-    public CorsConfiguration withCorsRules(Set<CorsRule> corsRules) {
+    public CorsConfiguration withCorsRules(Set<Property<CorsRule>> corsRules) {
         this.corsRules = corsRules;
         return this;
     }

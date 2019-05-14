@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html",
   "type" : "object",
   "javaType" : "aws.s3.ReplicationDestination",
+  "javaInterfaces" : [ "aws.Property<ReplicationDestination>" ],
   "properties" : {
     "AccessControlTranslation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-accesscontroltranslation",
-      "$ref" : "AWS_S3_Bucket.AccessControlTranslation.schema.json"
+      "$ref" : "AWS_S3_Bucket.AccessControlTranslation.schema.json",
+      "javaType" : "aws.Property<aws.s3.AccessControlTranslation>"
     },
     "Account" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-account",
@@ -22,7 +24,8 @@
     },
     "EncryptionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationdestination-encryptionconfiguration",
-      "$ref" : "AWS_S3_Bucket.EncryptionConfiguration.schema.json"
+      "$ref" : "AWS_S3_Bucket.EncryptionConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.s3.EncryptionConfiguration>"
     },
     "StorageClass" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html#cfn-s3-bucket-replicationconfiguration-rules-destination-storageclass",

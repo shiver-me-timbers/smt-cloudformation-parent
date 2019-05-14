@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -42,14 +43,14 @@ public class Mesh {
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html")
-    private MeshSpec spec;
+    private Property<MeshSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags")
-    private List<TagRef> tags = new ArrayList<TagRef>();
+    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-meshname
@@ -81,7 +82,7 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public MeshSpec getSpec() {
+    public Property<MeshSpec> getSpec() {
         return spec;
     }
 
@@ -92,11 +93,11 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public void setSpec(MeshSpec spec) {
+    public void setSpec(Property<MeshSpec> spec) {
         this.spec = spec;
     }
 
-    public Mesh withSpec(MeshSpec spec) {
+    public Mesh withSpec(Property<MeshSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -106,7 +107,7 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public List<TagRef> getTags() {
+    public List<Property<TagRef>> getTags() {
         return tags;
     }
 
@@ -115,11 +116,11 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRef> tags) {
+    public void setTags(List<Property<TagRef>> tags) {
         this.tags = tags;
     }
 
-    public Mesh withTags(List<TagRef> tags) {
+    public Mesh withTags(List<Property<TagRef>> tags) {
         this.tags = tags;
         return this;
     }

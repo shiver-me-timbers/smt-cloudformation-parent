@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RevisionType",
     "S3Location"
 })
-public class RevisionLocation {
+public class RevisionLocation implements Property<RevisionLocation>
+{
 
     /**
      * GitHubLocation
@@ -33,7 +35,7 @@ public class RevisionLocation {
      */
     @JsonProperty("GitHubLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html")
-    private GitHubLocation gitHubLocation;
+    private Property<GitHubLocation> gitHubLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html#cfn-properties-codedeploy-deploymentgroup-deployment-revision-revisiontype
      * 
@@ -49,7 +51,7 @@ public class RevisionLocation {
      */
     @JsonProperty("S3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html")
-    private S3Location s3Location;
+    private Property<S3Location> s3Location;
 
     /**
      * GitHubLocation
@@ -58,7 +60,7 @@ public class RevisionLocation {
      * 
      */
     @JsonIgnore
-    public GitHubLocation getGitHubLocation() {
+    public Property<GitHubLocation> getGitHubLocation() {
         return gitHubLocation;
     }
 
@@ -69,11 +71,11 @@ public class RevisionLocation {
      * 
      */
     @JsonIgnore
-    public void setGitHubLocation(GitHubLocation gitHubLocation) {
+    public void setGitHubLocation(Property<GitHubLocation> gitHubLocation) {
         this.gitHubLocation = gitHubLocation;
     }
 
-    public RevisionLocation withGitHubLocation(GitHubLocation gitHubLocation) {
+    public RevisionLocation withGitHubLocation(Property<GitHubLocation> gitHubLocation) {
         this.gitHubLocation = gitHubLocation;
         return this;
     }
@@ -108,7 +110,7 @@ public class RevisionLocation {
      * 
      */
     @JsonIgnore
-    public S3Location getS3Location() {
+    public Property<S3Location> getS3Location() {
         return s3Location;
     }
 
@@ -119,11 +121,11 @@ public class RevisionLocation {
      * 
      */
     @JsonIgnore
-    public void setS3Location(S3Location s3Location) {
+    public void setS3Location(Property<S3Location> s3Location) {
         this.s3Location = s3Location;
     }
 
-    public RevisionLocation withS3Location(S3Location s3Location) {
+    public RevisionLocation withS3Location(Property<S3Location> s3Location) {
         this.s3Location = s3Location;
         return this;
     }

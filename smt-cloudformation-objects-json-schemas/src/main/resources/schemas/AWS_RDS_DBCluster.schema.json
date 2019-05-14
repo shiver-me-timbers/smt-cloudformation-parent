@@ -111,7 +111,8 @@
     },
     "ScalingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-scalingconfiguration",
-      "$ref" : "AWS_RDS_DBCluster.ScalingConfiguration.schema.json"
+      "$ref" : "AWS_RDS_DBCluster.ScalingConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.rds.ScalingConfiguration>"
     },
     "SnapshotIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier",
@@ -131,7 +132,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "VpcSecurityGroupIds" : {

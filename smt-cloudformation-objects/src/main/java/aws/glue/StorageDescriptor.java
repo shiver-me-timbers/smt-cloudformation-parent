@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,7 +35,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Compressed",
     "Location"
 })
-public class StorageDescriptor {
+public class StorageDescriptor implements Property<StorageDescriptor>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-storedassubdirectories
@@ -65,7 +67,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("SkewedInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-skewedinfo.html")
-    private SkewedInfo skewedInfo;
+    private Property<SkewedInfo> skewedInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-inputformat
      * 
@@ -93,7 +95,7 @@ public class StorageDescriptor {
      */
     @JsonProperty("Columns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-columns")
-    private List<Column> columns = new ArrayList<Column>();
+    private List<Property<Column>> columns = new ArrayList<Property<Column>>();
     /**
      * SerdeInfo
      * <p>
@@ -102,14 +104,14 @@ public class StorageDescriptor {
      */
     @JsonProperty("SerdeInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html")
-    private SerdeInfo serdeInfo;
+    private Property<SerdeInfo> serdeInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns
      * 
      */
     @JsonProperty("SortColumns")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-sortcolumns")
-    private List<Order> sortColumns = new ArrayList<Order>();
+    private List<Property<Order>> sortColumns = new ArrayList<Property<Order>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-storagedescriptor.html#cfn-glue-partition-storagedescriptor-compressed
      * 
@@ -201,7 +203,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public SkewedInfo getSkewedInfo() {
+    public Property<SkewedInfo> getSkewedInfo() {
         return skewedInfo;
     }
 
@@ -212,11 +214,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public void setSkewedInfo(SkewedInfo skewedInfo) {
+    public void setSkewedInfo(Property<SkewedInfo> skewedInfo) {
         this.skewedInfo = skewedInfo;
     }
 
-    public StorageDescriptor withSkewedInfo(SkewedInfo skewedInfo) {
+    public StorageDescriptor withSkewedInfo(Property<SkewedInfo> skewedInfo) {
         this.skewedInfo = skewedInfo;
         return this;
     }
@@ -295,7 +297,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public List<Column> getColumns() {
+    public List<Property<Column>> getColumns() {
         return columns;
     }
 
@@ -304,11 +306,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public void setColumns(List<Column> columns) {
+    public void setColumns(List<Property<Column>> columns) {
         this.columns = columns;
     }
 
-    public StorageDescriptor withColumns(List<Column> columns) {
+    public StorageDescriptor withColumns(List<Property<Column>> columns) {
         this.columns = columns;
         return this;
     }
@@ -320,7 +322,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public SerdeInfo getSerdeInfo() {
+    public Property<SerdeInfo> getSerdeInfo() {
         return serdeInfo;
     }
 
@@ -331,11 +333,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public void setSerdeInfo(SerdeInfo serdeInfo) {
+    public void setSerdeInfo(Property<SerdeInfo> serdeInfo) {
         this.serdeInfo = serdeInfo;
     }
 
-    public StorageDescriptor withSerdeInfo(SerdeInfo serdeInfo) {
+    public StorageDescriptor withSerdeInfo(Property<SerdeInfo> serdeInfo) {
         this.serdeInfo = serdeInfo;
         return this;
     }
@@ -345,7 +347,7 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public List<Order> getSortColumns() {
+    public List<Property<Order>> getSortColumns() {
         return sortColumns;
     }
 
@@ -354,11 +356,11 @@ public class StorageDescriptor {
      * 
      */
     @JsonIgnore
-    public void setSortColumns(List<Order> sortColumns) {
+    public void setSortColumns(List<Property<Order>> sortColumns) {
         this.sortColumns = sortColumns;
     }
 
-    public StorageDescriptor withSortColumns(List<Order> sortColumns) {
+    public StorageDescriptor withSortColumns(List<Property<Order>> sortColumns) {
         this.sortColumns = sortColumns;
         return this;
     }

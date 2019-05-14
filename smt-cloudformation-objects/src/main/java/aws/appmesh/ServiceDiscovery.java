@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "DNS"
 })
-public class ServiceDiscovery {
+public class ServiceDiscovery implements Property<ServiceDiscovery>
+{
 
     /**
      * DnsServiceDiscovery
@@ -31,7 +33,7 @@ public class ServiceDiscovery {
      */
     @JsonProperty("DNS")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-dnsservicediscovery.html")
-    private DnsServiceDiscovery dNS;
+    private Property<DnsServiceDiscovery> dNS;
 
     /**
      * DnsServiceDiscovery
@@ -40,7 +42,7 @@ public class ServiceDiscovery {
      * 
      */
     @JsonIgnore
-    public DnsServiceDiscovery getDNS() {
+    public Property<DnsServiceDiscovery> getDNS() {
         return dNS;
     }
 
@@ -51,11 +53,11 @@ public class ServiceDiscovery {
      * 
      */
     @JsonIgnore
-    public void setDNS(DnsServiceDiscovery dNS) {
+    public void setDNS(Property<DnsServiceDiscovery> dNS) {
         this.dNS = dNS;
     }
 
-    public ServiceDiscovery withDNS(DnsServiceDiscovery dNS) {
+    public ServiceDiscovery withDNS(Property<DnsServiceDiscovery> dNS) {
         this.dNS = dNS;
         return this;
     }

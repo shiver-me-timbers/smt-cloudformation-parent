@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html",
   "type" : "object",
   "javaType" : "aws.appmesh.VirtualServiceBackend",
+  "javaInterfaces" : [ "aws.Property<VirtualServiceBackend>" ],
   "properties" : {
     "VirtualServiceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualservicebackend.html#cfn-appmesh-virtualnode-virtualservicebackend-virtualservicename",

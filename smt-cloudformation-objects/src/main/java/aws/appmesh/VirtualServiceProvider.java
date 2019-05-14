@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "VirtualNode",
     "VirtualRouter"
 })
-public class VirtualServiceProvider {
+public class VirtualServiceProvider implements Property<VirtualServiceProvider>
+{
 
     /**
      * VirtualNodeServiceProvider
@@ -32,7 +34,7 @@ public class VirtualServiceProvider {
      */
     @JsonProperty("VirtualNode")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualnodeserviceprovider.html")
-    private VirtualNodeServiceProvider virtualNode;
+    private Property<VirtualNodeServiceProvider> virtualNode;
     /**
      * VirtualRouterServiceProvider
      * <p>
@@ -41,7 +43,7 @@ public class VirtualServiceProvider {
      */
     @JsonProperty("VirtualRouter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualrouterserviceprovider.html")
-    private VirtualRouterServiceProvider virtualRouter;
+    private Property<VirtualRouterServiceProvider> virtualRouter;
 
     /**
      * VirtualNodeServiceProvider
@@ -50,7 +52,7 @@ public class VirtualServiceProvider {
      * 
      */
     @JsonIgnore
-    public VirtualNodeServiceProvider getVirtualNode() {
+    public Property<VirtualNodeServiceProvider> getVirtualNode() {
         return virtualNode;
     }
 
@@ -61,11 +63,11 @@ public class VirtualServiceProvider {
      * 
      */
     @JsonIgnore
-    public void setVirtualNode(VirtualNodeServiceProvider virtualNode) {
+    public void setVirtualNode(Property<VirtualNodeServiceProvider> virtualNode) {
         this.virtualNode = virtualNode;
     }
 
-    public VirtualServiceProvider withVirtualNode(VirtualNodeServiceProvider virtualNode) {
+    public VirtualServiceProvider withVirtualNode(Property<VirtualNodeServiceProvider> virtualNode) {
         this.virtualNode = virtualNode;
         return this;
     }
@@ -77,7 +79,7 @@ public class VirtualServiceProvider {
      * 
      */
     @JsonIgnore
-    public VirtualRouterServiceProvider getVirtualRouter() {
+    public Property<VirtualRouterServiceProvider> getVirtualRouter() {
         return virtualRouter;
     }
 
@@ -88,11 +90,11 @@ public class VirtualServiceProvider {
      * 
      */
     @JsonIgnore
-    public void setVirtualRouter(VirtualRouterServiceProvider virtualRouter) {
+    public void setVirtualRouter(Property<VirtualRouterServiceProvider> virtualRouter) {
         this.virtualRouter = virtualRouter;
     }
 
-    public VirtualServiceProvider withVirtualRouter(VirtualRouterServiceProvider virtualRouter) {
+    public VirtualServiceProvider withVirtualRouter(Property<VirtualRouterServiceProvider> virtualRouter) {
         this.virtualRouter = virtualRouter;
         return this;
     }

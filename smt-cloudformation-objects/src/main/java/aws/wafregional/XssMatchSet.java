@@ -3,6 +3,7 @@ package aws.wafregional;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class XssMatchSet {
      */
     @JsonProperty("XssMatchTuples")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-xssmatchtuples")
-    private List<XssMatchTuple> xssMatchTuples = new ArrayList<XssMatchTuple>();
+    private List<Property<XssMatchTuple>> xssMatchTuples = new ArrayList<Property<XssMatchTuple>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-name
      * 
@@ -46,7 +47,7 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public List<XssMatchTuple> getXssMatchTuples() {
+    public List<Property<XssMatchTuple>> getXssMatchTuples() {
         return xssMatchTuples;
     }
 
@@ -55,11 +56,11 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public void setXssMatchTuples(List<XssMatchTuple> xssMatchTuples) {
+    public void setXssMatchTuples(List<Property<XssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
     }
 
-    public XssMatchSet withXssMatchTuples(List<XssMatchTuple> xssMatchTuples) {
+    public XssMatchSet withXssMatchTuples(List<Property<XssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
         return this;
     }

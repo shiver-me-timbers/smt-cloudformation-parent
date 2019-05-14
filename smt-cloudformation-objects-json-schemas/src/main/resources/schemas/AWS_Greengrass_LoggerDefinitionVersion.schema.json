@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggers",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Greengrass_LoggerDefinitionVersion.Logger.schema.json"
+        "$ref" : "AWS_Greengrass_LoggerDefinitionVersion.Logger.schema.json",
+        "javaType" : "aws.Property<aws.greengrass.Logger>"
       }
     }
   }

@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "IpFilter",
     "Name"
 })
-public class Filter {
+public class Filter implements Property<Filter>
+{
 
     /**
      * IpFilter
@@ -32,7 +34,7 @@ public class Filter {
      */
     @JsonProperty("IpFilter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html")
-    private IpFilter ipFilter;
+    private Property<IpFilter> ipFilter;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html#cfn-ses-receiptfilter-filter-name
      * 
@@ -48,7 +50,7 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public IpFilter getIpFilter() {
+    public Property<IpFilter> getIpFilter() {
         return ipFilter;
     }
 
@@ -59,11 +61,11 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public void setIpFilter(IpFilter ipFilter) {
+    public void setIpFilter(Property<IpFilter> ipFilter) {
         this.ipFilter = ipFilter;
     }
 
-    public Filter withIpFilter(IpFilter ipFilter) {
+    public Filter withIpFilter(Property<IpFilter> ipFilter) {
         this.ipFilter = ipFilter;
         return this;
     }

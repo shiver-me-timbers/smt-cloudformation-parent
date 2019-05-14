@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html",
   "type" : "object",
   "javaType" : "aws.dynamodb.SSESpecification",
+  "javaInterfaces" : [ "aws.Property<SSESpecification>" ],
   "properties" : {
     "SSEEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled",

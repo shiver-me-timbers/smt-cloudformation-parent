@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "SseKmsEncryptedObjects"
 })
-public class SourceSelectionCriteria {
+public class SourceSelectionCriteria implements Property<SourceSelectionCriteria>
+{
 
     /**
      * SseKmsEncryptedObjects
@@ -31,7 +33,7 @@ public class SourceSelectionCriteria {
      */
     @JsonProperty("SseKmsEncryptedObjects")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-ssekmsencryptedobjects.html")
-    private SseKmsEncryptedObjects sseKmsEncryptedObjects;
+    private Property<SseKmsEncryptedObjects> sseKmsEncryptedObjects;
 
     /**
      * SseKmsEncryptedObjects
@@ -40,7 +42,7 @@ public class SourceSelectionCriteria {
      * 
      */
     @JsonIgnore
-    public SseKmsEncryptedObjects getSseKmsEncryptedObjects() {
+    public Property<SseKmsEncryptedObjects> getSseKmsEncryptedObjects() {
         return sseKmsEncryptedObjects;
     }
 
@@ -51,11 +53,11 @@ public class SourceSelectionCriteria {
      * 
      */
     @JsonIgnore
-    public void setSseKmsEncryptedObjects(SseKmsEncryptedObjects sseKmsEncryptedObjects) {
+    public void setSseKmsEncryptedObjects(Property<SseKmsEncryptedObjects> sseKmsEncryptedObjects) {
         this.sseKmsEncryptedObjects = sseKmsEncryptedObjects;
     }
 
-    public SourceSelectionCriteria withSseKmsEncryptedObjects(SseKmsEncryptedObjects sseKmsEncryptedObjects) {
+    public SourceSelectionCriteria withSseKmsEncryptedObjects(Property<SseKmsEncryptedObjects> sseKmsEncryptedObjects) {
         this.sseKmsEncryptedObjects = sseKmsEncryptedObjects;
         return this;
     }

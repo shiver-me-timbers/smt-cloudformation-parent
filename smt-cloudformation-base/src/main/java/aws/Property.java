@@ -2,7 +2,7 @@ package aws;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public interface CfType<T> {
+public interface Property<T> {
 
     @JsonIgnore
     default T toType() {

@@ -4,6 +4,7 @@ package aws.emr;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ConfigurationProperties",
     "Configurations"
 })
-public class Configuration {
+public class Configuration implements Property<Configuration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification
@@ -50,7 +52,7 @@ public class Configuration {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-configurations")
-    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
+    private Set<Property<aws.emr.Configuration>> configurations = new LinkedHashSet<Property<aws.emr.Configuration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-configuration.html#cfn-elasticmapreduce-cluster-configuration-classification
@@ -103,7 +105,7 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public Set<EbsConfiguration> getConfigurations() {
+    public Set<Property<aws.emr.Configuration>> getConfigurations() {
         return configurations;
     }
 
@@ -112,11 +114,11 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<EbsConfiguration> configurations) {
+    public void setConfigurations(Set<Property<aws.emr.Configuration>> configurations) {
         this.configurations = configurations;
     }
 
-    public Configuration withConfigurations(Set<EbsConfiguration> configurations) {
+    public Configuration withConfigurations(Set<Property<aws.emr.Configuration>> configurations) {
         this.configurations = configurations;
         return this;
     }

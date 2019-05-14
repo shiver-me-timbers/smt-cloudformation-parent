@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AddHeaderAction",
     "LambdaAction"
 })
-public class Action {
+public class Action implements Property<Action>
+{
 
     /**
      * BounceAction
@@ -37,7 +39,7 @@ public class Action {
      */
     @JsonProperty("BounceAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html")
-    private BounceAction bounceAction;
+    private Property<BounceAction> bounceAction;
     /**
      * S3Action
      * <p>
@@ -46,7 +48,7 @@ public class Action {
      */
     @JsonProperty("S3Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-s3action.html")
-    private S3Action s3Action;
+    private Property<S3Action> s3Action;
     /**
      * StopAction
      * <p>
@@ -55,7 +57,7 @@ public class Action {
      */
     @JsonProperty("StopAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html")
-    private StopAction stopAction;
+    private Property<StopAction> stopAction;
     /**
      * SNSAction
      * <p>
@@ -64,7 +66,7 @@ public class Action {
      */
     @JsonProperty("SNSAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-snsaction.html")
-    private SNSAction sNSAction;
+    private Property<SNSAction> sNSAction;
     /**
      * WorkmailAction
      * <p>
@@ -73,7 +75,7 @@ public class Action {
      */
     @JsonProperty("WorkmailAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-workmailaction.html")
-    private WorkmailAction workmailAction;
+    private Property<WorkmailAction> workmailAction;
     /**
      * AddHeaderAction
      * <p>
@@ -82,7 +84,7 @@ public class Action {
      */
     @JsonProperty("AddHeaderAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-addheaderaction.html")
-    private AddHeaderAction addHeaderAction;
+    private Property<AddHeaderAction> addHeaderAction;
     /**
      * LambdaAction
      * <p>
@@ -91,7 +93,7 @@ public class Action {
      */
     @JsonProperty("LambdaAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html")
-    private LambdaAction lambdaAction;
+    private Property<LambdaAction> lambdaAction;
 
     /**
      * BounceAction
@@ -100,7 +102,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public BounceAction getBounceAction() {
+    public Property<BounceAction> getBounceAction() {
         return bounceAction;
     }
 
@@ -111,11 +113,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setBounceAction(BounceAction bounceAction) {
+    public void setBounceAction(Property<BounceAction> bounceAction) {
         this.bounceAction = bounceAction;
     }
 
-    public Action withBounceAction(BounceAction bounceAction) {
+    public Action withBounceAction(Property<BounceAction> bounceAction) {
         this.bounceAction = bounceAction;
         return this;
     }
@@ -127,7 +129,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public S3Action getS3Action() {
+    public Property<S3Action> getS3Action() {
         return s3Action;
     }
 
@@ -138,11 +140,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setS3Action(S3Action s3Action) {
+    public void setS3Action(Property<S3Action> s3Action) {
         this.s3Action = s3Action;
     }
 
-    public Action withS3Action(S3Action s3Action) {
+    public Action withS3Action(Property<S3Action> s3Action) {
         this.s3Action = s3Action;
         return this;
     }
@@ -154,7 +156,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public StopAction getStopAction() {
+    public Property<StopAction> getStopAction() {
         return stopAction;
     }
 
@@ -165,11 +167,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setStopAction(StopAction stopAction) {
+    public void setStopAction(Property<StopAction> stopAction) {
         this.stopAction = stopAction;
     }
 
-    public Action withStopAction(StopAction stopAction) {
+    public Action withStopAction(Property<StopAction> stopAction) {
         this.stopAction = stopAction;
         return this;
     }
@@ -181,7 +183,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public SNSAction getSNSAction() {
+    public Property<SNSAction> getSNSAction() {
         return sNSAction;
     }
 
@@ -192,11 +194,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setSNSAction(SNSAction sNSAction) {
+    public void setSNSAction(Property<SNSAction> sNSAction) {
         this.sNSAction = sNSAction;
     }
 
-    public Action withSNSAction(SNSAction sNSAction) {
+    public Action withSNSAction(Property<SNSAction> sNSAction) {
         this.sNSAction = sNSAction;
         return this;
     }
@@ -208,7 +210,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public WorkmailAction getWorkmailAction() {
+    public Property<WorkmailAction> getWorkmailAction() {
         return workmailAction;
     }
 
@@ -219,11 +221,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setWorkmailAction(WorkmailAction workmailAction) {
+    public void setWorkmailAction(Property<WorkmailAction> workmailAction) {
         this.workmailAction = workmailAction;
     }
 
-    public Action withWorkmailAction(WorkmailAction workmailAction) {
+    public Action withWorkmailAction(Property<WorkmailAction> workmailAction) {
         this.workmailAction = workmailAction;
         return this;
     }
@@ -235,7 +237,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public AddHeaderAction getAddHeaderAction() {
+    public Property<AddHeaderAction> getAddHeaderAction() {
         return addHeaderAction;
     }
 
@@ -246,11 +248,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setAddHeaderAction(AddHeaderAction addHeaderAction) {
+    public void setAddHeaderAction(Property<AddHeaderAction> addHeaderAction) {
         this.addHeaderAction = addHeaderAction;
     }
 
-    public Action withAddHeaderAction(AddHeaderAction addHeaderAction) {
+    public Action withAddHeaderAction(Property<AddHeaderAction> addHeaderAction) {
         this.addHeaderAction = addHeaderAction;
         return this;
     }
@@ -262,7 +264,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public LambdaAction getLambdaAction() {
+    public Property<LambdaAction> getLambdaAction() {
         return lambdaAction;
     }
 
@@ -273,11 +275,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setLambdaAction(LambdaAction lambdaAction) {
+    public void setLambdaAction(Property<LambdaAction> lambdaAction) {
         this.lambdaAction = lambdaAction;
     }
 
-    public Action withLambdaAction(LambdaAction lambdaAction) {
+    public Action withLambdaAction(Property<LambdaAction> lambdaAction) {
         this.lambdaAction = lambdaAction;
         return this;
     }

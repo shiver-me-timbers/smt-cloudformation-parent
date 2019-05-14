@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html",
   "type" : "object",
   "javaType" : "aws.opsworks.ChefConfiguration",
+  "javaInterfaces" : [ "aws.Property<ChefConfiguration>" ],
   "properties" : {
     "BerkshelfVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html#cfn-opsworks-chefconfiguration-berkshelfversion",

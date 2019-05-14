@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Destination",
     "OutputSchemaVersion"
 })
-public class DataExport {
+public class DataExport implements Property<DataExport>
+{
 
     /**
      * Destination
@@ -32,7 +34,7 @@ public class DataExport {
      */
     @JsonProperty("Destination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-destination.html")
-    private Destination destination;
+    private Property<Destination> destination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-outputschemaversion
      * 
@@ -48,7 +50,7 @@ public class DataExport {
      * 
      */
     @JsonIgnore
-    public Destination getDestination() {
+    public Property<Destination> getDestination() {
         return destination;
     }
 
@@ -59,11 +61,11 @@ public class DataExport {
      * 
      */
     @JsonIgnore
-    public void setDestination(Destination destination) {
+    public void setDestination(Property<Destination> destination) {
         this.destination = destination;
     }
 
-    public DataExport withDestination(Destination destination) {
+    public DataExport withDestination(Property<Destination> destination) {
         this.destination = destination;
         return this;
     }

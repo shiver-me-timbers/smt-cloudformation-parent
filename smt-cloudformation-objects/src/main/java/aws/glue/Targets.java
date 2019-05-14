@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3Targets",
     "JdbcTargets"
 })
-public class Targets {
+public class Targets implements Property<Targets>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
@@ -32,21 +34,21 @@ public class Targets {
      */
     @JsonProperty("S3Targets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets")
-    private List<S3Target> s3Targets = new ArrayList<S3Target>();
+    private List<Property<S3Target>> s3Targets = new ArrayList<Property<S3Target>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets
      * 
      */
     @JsonProperty("JdbcTargets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-jdbctargets")
-    private List<JdbcTarget> jdbcTargets = new ArrayList<JdbcTarget>();
+    private List<Property<JdbcTarget>> jdbcTargets = new ArrayList<Property<JdbcTarget>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets
      * 
      */
     @JsonIgnore
-    public List<S3Target> getS3Targets() {
+    public List<Property<S3Target>> getS3Targets() {
         return s3Targets;
     }
 
@@ -55,11 +57,11 @@ public class Targets {
      * 
      */
     @JsonIgnore
-    public void setS3Targets(List<S3Target> s3Targets) {
+    public void setS3Targets(List<Property<S3Target>> s3Targets) {
         this.s3Targets = s3Targets;
     }
 
-    public Targets withS3Targets(List<S3Target> s3Targets) {
+    public Targets withS3Targets(List<Property<S3Target>> s3Targets) {
         this.s3Targets = s3Targets;
         return this;
     }
@@ -69,7 +71,7 @@ public class Targets {
      * 
      */
     @JsonIgnore
-    public List<JdbcTarget> getJdbcTargets() {
+    public List<Property<JdbcTarget>> getJdbcTargets() {
         return jdbcTargets;
     }
 
@@ -78,11 +80,11 @@ public class Targets {
      * 
      */
     @JsonIgnore
-    public void setJdbcTargets(List<JdbcTarget> jdbcTargets) {
+    public void setJdbcTargets(List<Property<JdbcTarget>> jdbcTargets) {
         this.jdbcTargets = jdbcTargets;
     }
 
-    public Targets withJdbcTargets(List<JdbcTarget> jdbcTargets) {
+    public Targets withJdbcTargets(List<Property<JdbcTarget>> jdbcTargets) {
         this.jdbcTargets = jdbcTargets;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.codebuild;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ComputeType",
     "Certificate"
 })
-public class Environment {
+public class Environment implements Property<Environment>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-type
@@ -45,7 +47,7 @@ public class Environment {
      */
     @JsonProperty("EnvironmentVariables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-environmentvariables")
-    private List<EnvironmentVariable> environmentVariables = new ArrayList<EnvironmentVariable>();
+    private List<Property<EnvironmentVariable>> environmentVariables = new ArrayList<Property<EnvironmentVariable>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-privilegedmode
      * 
@@ -75,7 +77,7 @@ public class Environment {
      */
     @JsonProperty("RegistryCredential")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-registrycredential.html")
-    private RegistryCredential registryCredential;
+    private Property<RegistryCredential> registryCredential;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html#cfn-codebuild-project-environment-computetype
      * 
@@ -119,7 +121,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public List<EnvironmentVariable> getEnvironmentVariables() {
+    public List<Property<EnvironmentVariable>> getEnvironmentVariables() {
         return environmentVariables;
     }
 
@@ -128,11 +130,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setEnvironmentVariables(List<EnvironmentVariable> environmentVariables) {
+    public void setEnvironmentVariables(List<Property<EnvironmentVariable>> environmentVariables) {
         this.environmentVariables = environmentVariables;
     }
 
-    public Environment withEnvironmentVariables(List<EnvironmentVariable> environmentVariables) {
+    public Environment withEnvironmentVariables(List<Property<EnvironmentVariable>> environmentVariables) {
         this.environmentVariables = environmentVariables;
         return this;
     }
@@ -213,7 +215,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public RegistryCredential getRegistryCredential() {
+    public Property<RegistryCredential> getRegistryCredential() {
         return registryCredential;
     }
 
@@ -224,11 +226,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setRegistryCredential(RegistryCredential registryCredential) {
+    public void setRegistryCredential(Property<RegistryCredential> registryCredential) {
         this.registryCredential = registryCredential;
     }
 
-    public Environment withRegistryCredential(RegistryCredential registryCredential) {
+    public Environment withRegistryCredential(Property<RegistryCredential> registryCredential) {
         this.registryCredential = registryCredential;
         return this;
     }

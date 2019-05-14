@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DestinationPath",
     "GroupOwnerSetting"
 })
-public class LocalVolumeResourceData {
+public class LocalVolumeResourceData implements Property<LocalVolumeResourceData>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html#cfn-greengrass-resourcedefinition-localvolumeresourcedata-sourcepath
@@ -47,7 +49,7 @@ public class LocalVolumeResourceData {
      */
     @JsonProperty("GroupOwnerSetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-groupownersetting.html")
-    private GroupOwnerSetting groupOwnerSetting;
+    private Property<GroupOwnerSetting> groupOwnerSetting;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html#cfn-greengrass-resourcedefinition-localvolumeresourcedata-sourcepath
@@ -102,7 +104,7 @@ public class LocalVolumeResourceData {
      * 
      */
     @JsonIgnore
-    public GroupOwnerSetting getGroupOwnerSetting() {
+    public Property<GroupOwnerSetting> getGroupOwnerSetting() {
         return groupOwnerSetting;
     }
 
@@ -113,11 +115,11 @@ public class LocalVolumeResourceData {
      * 
      */
     @JsonIgnore
-    public void setGroupOwnerSetting(GroupOwnerSetting groupOwnerSetting) {
+    public void setGroupOwnerSetting(Property<GroupOwnerSetting> groupOwnerSetting) {
         this.groupOwnerSetting = groupOwnerSetting;
     }
 
-    public LocalVolumeResourceData withGroupOwnerSetting(GroupOwnerSetting groupOwnerSetting) {
+    public LocalVolumeResourceData withGroupOwnerSetting(Property<GroupOwnerSetting> groupOwnerSetting) {
         this.groupOwnerSetting = groupOwnerSetting;
         return this;
     }

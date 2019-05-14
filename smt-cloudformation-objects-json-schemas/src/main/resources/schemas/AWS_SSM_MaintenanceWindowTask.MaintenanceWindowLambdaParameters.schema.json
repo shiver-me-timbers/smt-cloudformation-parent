@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html",
   "type" : "object",
   "javaType" : "aws.ssm.MaintenanceWindowLambdaParameters",
+  "javaInterfaces" : [ "aws.Property<MaintenanceWindowLambdaParameters>" ],
   "properties" : {
     "ClientContext" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-maintenancewindowlambdaparameters.html#cfn-ssm-maintenancewindowtask-maintenancewindowlambdaparameters-clientcontext",

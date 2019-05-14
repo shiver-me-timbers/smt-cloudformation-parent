@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SourcePath",
     "GroupOwnerSetting"
 })
-public class LocalDeviceResourceData {
+public class LocalDeviceResourceData implements Property<LocalDeviceResourceData>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localdeviceresourcedata.html#cfn-greengrass-resourcedefinition-localdeviceresourcedata-sourcepath
@@ -39,7 +41,7 @@ public class LocalDeviceResourceData {
      */
     @JsonProperty("GroupOwnerSetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-groupownersetting.html")
-    private GroupOwnerSetting groupOwnerSetting;
+    private Property<GroupOwnerSetting> groupOwnerSetting;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localdeviceresourcedata.html#cfn-greengrass-resourcedefinition-localdeviceresourcedata-sourcepath
@@ -71,7 +73,7 @@ public class LocalDeviceResourceData {
      * 
      */
     @JsonIgnore
-    public GroupOwnerSetting getGroupOwnerSetting() {
+    public Property<GroupOwnerSetting> getGroupOwnerSetting() {
         return groupOwnerSetting;
     }
 
@@ -82,11 +84,11 @@ public class LocalDeviceResourceData {
      * 
      */
     @JsonIgnore
-    public void setGroupOwnerSetting(GroupOwnerSetting groupOwnerSetting) {
+    public void setGroupOwnerSetting(Property<GroupOwnerSetting> groupOwnerSetting) {
         this.groupOwnerSetting = groupOwnerSetting;
     }
 
-    public LocalDeviceResourceData withGroupOwnerSetting(GroupOwnerSetting groupOwnerSetting) {
+    public LocalDeviceResourceData withGroupOwnerSetting(Property<GroupOwnerSetting> groupOwnerSetting) {
         this.groupOwnerSetting = groupOwnerSetting;
         return this;
     }

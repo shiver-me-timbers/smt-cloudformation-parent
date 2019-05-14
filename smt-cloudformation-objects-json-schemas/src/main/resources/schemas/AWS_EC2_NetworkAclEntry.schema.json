@@ -17,7 +17,8 @@
     },
     "Icmp" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-icmp",
-      "$ref" : "AWS_EC2_NetworkAclEntry.Icmp.schema.json"
+      "$ref" : "AWS_EC2_NetworkAclEntry.Icmp.schema.json",
+      "javaType" : "aws.Property<aws.ec2.Icmp>"
     },
     "Ipv6CidrBlock" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock",
@@ -31,7 +32,8 @@
     },
     "PortRange" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-portrange",
-      "$ref" : "AWS_EC2_NetworkAclEntry.PortRange.schema.json"
+      "$ref" : "AWS_EC2_NetworkAclEntry.PortRange.schema.json",
+      "javaType" : "aws.Property<aws.ec2.PortRange>"
     },
     "Protocol" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol",

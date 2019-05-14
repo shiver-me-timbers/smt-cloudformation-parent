@@ -18,13 +18,15 @@
     },
     "Spec" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-spec",
-      "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceSpec.schema.json"
+      "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceSpec.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.VirtualServiceSpec>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json",
+        "javaType" : "aws.Property<aws.appmesh.TagRef>"
       }
     }
   }

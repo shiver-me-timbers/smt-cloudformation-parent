@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html",
   "type" : "object",
   "javaType" : "aws.wafregional.ByteMatchTuple",
+  "javaInterfaces" : [ "aws.Property<ByteMatchTuple>" ],
   "properties" : {
     "TargetString" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring",
@@ -28,7 +29,8 @@
     },
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-fieldtomatch",
-      "$ref" : "AWS_WAFRegional_ByteMatchSet.FieldToMatch.schema.json"
+      "$ref" : "AWS_WAFRegional_ByteMatchSet.FieldToMatch.schema.json",
+      "javaType" : "aws.Property<aws.wafregional.FieldToMatch>"
     }
   }
 }

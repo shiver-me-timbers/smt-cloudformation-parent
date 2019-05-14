@@ -1,6 +1,7 @@
 
 package aws.codebuild;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InsecureSsl",
     "Location"
 })
-public class Source {
+public class Source implements Property<Source>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-type
@@ -53,7 +55,7 @@ public class Source {
      */
     @JsonProperty("Auth")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html")
-    private SourceAuth auth;
+    private Property<SourceAuth> auth;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-sourceidentifier
      * 
@@ -83,7 +85,7 @@ public class Source {
      */
     @JsonProperty("GitSubmodulesConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-gitsubmodulesconfig.html")
-    private GitSubmodulesConfig gitSubmodulesConfig;
+    private Property<GitSubmodulesConfig> gitSubmodulesConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html#cfn-codebuild-project-source-insecuressl
      * 
@@ -152,7 +154,7 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public SourceAuth getAuth() {
+    public Property<SourceAuth> getAuth() {
         return auth;
     }
 
@@ -163,11 +165,11 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public void setAuth(SourceAuth auth) {
+    public void setAuth(Property<SourceAuth> auth) {
         this.auth = auth;
     }
 
-    public Source withAuth(SourceAuth auth) {
+    public Source withAuth(Property<SourceAuth> auth) {
         this.auth = auth;
         return this;
     }
@@ -248,7 +250,7 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public GitSubmodulesConfig getGitSubmodulesConfig() {
+    public Property<GitSubmodulesConfig> getGitSubmodulesConfig() {
         return gitSubmodulesConfig;
     }
 
@@ -259,11 +261,11 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public void setGitSubmodulesConfig(GitSubmodulesConfig gitSubmodulesConfig) {
+    public void setGitSubmodulesConfig(Property<GitSubmodulesConfig> gitSubmodulesConfig) {
         this.gitSubmodulesConfig = gitSubmodulesConfig;
     }
 
-    public Source withGitSubmodulesConfig(GitSubmodulesConfig gitSubmodulesConfig) {
+    public Source withGitSubmodulesConfig(Property<GitSubmodulesConfig> gitSubmodulesConfig) {
         this.gitSubmodulesConfig = gitSubmodulesConfig;
         return this;
     }

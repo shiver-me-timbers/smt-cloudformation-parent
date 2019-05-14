@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -49,7 +50,7 @@ public class User {
      */
     @JsonProperty("LoginProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html")
-    private LoginProfile loginProfile;
+    private Property<LoginProfile> loginProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns
      * 
@@ -78,7 +79,7 @@ public class User {
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies")
-    private List<Policy> policies = new ArrayList<Policy>();
+    private List<Property<Policy>> policies = new ArrayList<Property<Policy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
@@ -117,7 +118,7 @@ public class User {
      * 
      */
     @JsonIgnore
-    public LoginProfile getLoginProfile() {
+    public Property<LoginProfile> getLoginProfile() {
         return loginProfile;
     }
 
@@ -128,11 +129,11 @@ public class User {
      * 
      */
     @JsonIgnore
-    public void setLoginProfile(LoginProfile loginProfile) {
+    public void setLoginProfile(Property<LoginProfile> loginProfile) {
         this.loginProfile = loginProfile;
     }
 
-    public User withLoginProfile(LoginProfile loginProfile) {
+    public User withLoginProfile(Property<LoginProfile> loginProfile) {
         this.loginProfile = loginProfile;
         return this;
     }
@@ -211,7 +212,7 @@ public class User {
      * 
      */
     @JsonIgnore
-    public List<Policy> getPolicies() {
+    public List<Property<Policy>> getPolicies() {
         return policies;
     }
 
@@ -220,11 +221,11 @@ public class User {
      * 
      */
     @JsonIgnore
-    public void setPolicies(List<Policy> policies) {
+    public void setPolicies(List<Property<Policy>> policies) {
         this.policies = policies;
     }
 
-    public User withPolicies(List<Policy> policies) {
+    public User withPolicies(List<Property<Policy>> policies) {
         this.policies = policies;
         return this;
     }

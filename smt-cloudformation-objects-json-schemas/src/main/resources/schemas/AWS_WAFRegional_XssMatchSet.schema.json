@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-xssmatchtuples",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_WAFRegional_XssMatchSet.XssMatchTuple.schema.json"
+        "$ref" : "AWS_WAFRegional_XssMatchSet.XssMatchTuple.schema.json",
+        "javaType" : "aws.Property<aws.wafregional.XssMatchTuple>"
       }
     },
     "Name" : {

@@ -3,6 +3,7 @@ package aws.applicationautoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -74,7 +75,7 @@ public class ScalableTarget {
     @JsonProperty("ScheduledActions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scheduledactions")
-    private Set<ScheduledAction> scheduledActions = new LinkedHashSet<ScheduledAction>();
+    private Set<Property<ScheduledAction>> scheduledActions = new LinkedHashSet<Property<ScheduledAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace
      * 
@@ -203,7 +204,7 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public Set<ScheduledAction> getScheduledActions() {
+    public Set<Property<ScheduledAction>> getScheduledActions() {
         return scheduledActions;
     }
 
@@ -212,11 +213,11 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public void setScheduledActions(Set<ScheduledAction> scheduledActions) {
+    public void setScheduledActions(Set<Property<ScheduledAction>> scheduledActions) {
         this.scheduledActions = scheduledActions;
     }
 
-    public ScalableTarget withScheduledActions(Set<ScheduledAction> scheduledActions) {
+    public ScalableTarget withScheduledActions(Set<Property<ScheduledAction>> scheduledActions) {
         this.scheduledActions = scheduledActions;
         return this;
     }

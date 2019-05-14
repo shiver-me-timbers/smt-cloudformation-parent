@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -56,7 +57,7 @@ public class UserPool {
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html")
-    private Policies policies;
+    private Property<Policies> policies;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration
      * 
@@ -70,7 +71,7 @@ public class UserPool {
      */
     @JsonProperty("Schema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-schema")
-    private List<SchemaAttribute> schema = new ArrayList<SchemaAttribute>();
+    private List<Property<SchemaAttribute>> schema = new ArrayList<Property<SchemaAttribute>>();
     /**
      * AdminCreateUserConfig
      * <p>
@@ -79,7 +80,7 @@ public class UserPool {
      */
     @JsonProperty("AdminCreateUserConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html")
-    private AdminCreateUserConfig adminCreateUserConfig;
+    private Property<AdminCreateUserConfig> adminCreateUserConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage
      * 
@@ -109,7 +110,7 @@ public class UserPool {
      */
     @JsonProperty("EmailConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html")
-    private EmailConfiguration emailConfiguration;
+    private Property<EmailConfiguration> emailConfiguration;
     /**
      * SmsConfiguration
      * <p>
@@ -118,7 +119,7 @@ public class UserPool {
      */
     @JsonProperty("SmsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html")
-    private SmsConfiguration smsConfiguration;
+    private Property<SmsConfiguration> smsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes
      * 
@@ -141,7 +142,7 @@ public class UserPool {
      */
     @JsonProperty("LambdaConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html")
-    private LambdaConfig lambdaConfig;
+    private Property<LambdaConfig> lambdaConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes
      * 
@@ -164,7 +165,7 @@ public class UserPool {
      */
     @JsonProperty("DeviceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html")
-    private DeviceConfiguration deviceConfiguration;
+    private Property<DeviceConfiguration> deviceConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage
      * 
@@ -203,7 +204,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public Policies getPolicies() {
+    public Property<Policies> getPolicies() {
         return policies;
     }
 
@@ -214,11 +215,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setPolicies(Policies policies) {
+    public void setPolicies(Property<Policies> policies) {
         this.policies = policies;
     }
 
-    public UserPool withPolicies(Policies policies) {
+    public UserPool withPolicies(Property<Policies> policies) {
         this.policies = policies;
         return this;
     }
@@ -251,7 +252,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public List<SchemaAttribute> getSchema() {
+    public List<Property<SchemaAttribute>> getSchema() {
         return schema;
     }
 
@@ -260,11 +261,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setSchema(List<SchemaAttribute> schema) {
+    public void setSchema(List<Property<SchemaAttribute>> schema) {
         this.schema = schema;
     }
 
-    public UserPool withSchema(List<SchemaAttribute> schema) {
+    public UserPool withSchema(List<Property<SchemaAttribute>> schema) {
         this.schema = schema;
         return this;
     }
@@ -276,7 +277,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public AdminCreateUserConfig getAdminCreateUserConfig() {
+    public Property<AdminCreateUserConfig> getAdminCreateUserConfig() {
         return adminCreateUserConfig;
     }
 
@@ -287,11 +288,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setAdminCreateUserConfig(AdminCreateUserConfig adminCreateUserConfig) {
+    public void setAdminCreateUserConfig(Property<AdminCreateUserConfig> adminCreateUserConfig) {
         this.adminCreateUserConfig = adminCreateUserConfig;
     }
 
-    public UserPool withAdminCreateUserConfig(AdminCreateUserConfig adminCreateUserConfig) {
+    public UserPool withAdminCreateUserConfig(Property<AdminCreateUserConfig> adminCreateUserConfig) {
         this.adminCreateUserConfig = adminCreateUserConfig;
         return this;
     }
@@ -372,7 +373,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public EmailConfiguration getEmailConfiguration() {
+    public Property<EmailConfiguration> getEmailConfiguration() {
         return emailConfiguration;
     }
 
@@ -383,11 +384,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setEmailConfiguration(EmailConfiguration emailConfiguration) {
+    public void setEmailConfiguration(Property<EmailConfiguration> emailConfiguration) {
         this.emailConfiguration = emailConfiguration;
     }
 
-    public UserPool withEmailConfiguration(EmailConfiguration emailConfiguration) {
+    public UserPool withEmailConfiguration(Property<EmailConfiguration> emailConfiguration) {
         this.emailConfiguration = emailConfiguration;
         return this;
     }
@@ -399,7 +400,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public SmsConfiguration getSmsConfiguration() {
+    public Property<SmsConfiguration> getSmsConfiguration() {
         return smsConfiguration;
     }
 
@@ -410,11 +411,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setSmsConfiguration(SmsConfiguration smsConfiguration) {
+    public void setSmsConfiguration(Property<SmsConfiguration> smsConfiguration) {
         this.smsConfiguration = smsConfiguration;
     }
 
-    public UserPool withSmsConfiguration(SmsConfiguration smsConfiguration) {
+    public UserPool withSmsConfiguration(Property<SmsConfiguration> smsConfiguration) {
         this.smsConfiguration = smsConfiguration;
         return this;
     }
@@ -472,7 +473,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public LambdaConfig getLambdaConfig() {
+    public Property<LambdaConfig> getLambdaConfig() {
         return lambdaConfig;
     }
 
@@ -483,11 +484,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setLambdaConfig(LambdaConfig lambdaConfig) {
+    public void setLambdaConfig(Property<LambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
 
-    public UserPool withLambdaConfig(LambdaConfig lambdaConfig) {
+    public UserPool withLambdaConfig(Property<LambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
         return this;
     }
@@ -545,7 +546,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public DeviceConfiguration getDeviceConfiguration() {
+    public Property<DeviceConfiguration> getDeviceConfiguration() {
         return deviceConfiguration;
     }
 
@@ -556,11 +557,11 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setDeviceConfiguration(DeviceConfiguration deviceConfiguration) {
+    public void setDeviceConfiguration(Property<DeviceConfiguration> deviceConfiguration) {
         this.deviceConfiguration = deviceConfiguration;
     }
 
-    public UserPool withDeviceConfiguration(DeviceConfiguration deviceConfiguration) {
+    public UserPool withDeviceConfiguration(Property<DeviceConfiguration> deviceConfiguration) {
         this.deviceConfiguration = deviceConfiguration;
         return this;
     }

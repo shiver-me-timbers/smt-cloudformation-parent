@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -48,7 +49,7 @@ public class App {
      */
     @JsonProperty("AppSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html")
-    private DataSource appSource;
+    private Property<Source> appSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes
      * 
@@ -63,7 +64,7 @@ public class App {
     @JsonProperty("DataSources")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-datasources")
-    private Set<DataSource> dataSources = new LinkedHashSet<DataSource>();
+    private Set<Property<DataSource>> dataSources = new LinkedHashSet<Property<DataSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description
      * 
@@ -91,7 +92,7 @@ public class App {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-environment")
-    private List<EnvironmentVariable> environment = new ArrayList<EnvironmentVariable>();
+    private List<Property<EnvironmentVariable>> environment = new ArrayList<Property<EnvironmentVariable>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name
      * 
@@ -114,7 +115,7 @@ public class App {
      */
     @JsonProperty("SslConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html")
-    private SslConfiguration sslConfiguration;
+    private Property<SslConfiguration> sslConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid
      * 
@@ -137,7 +138,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public DataSource getAppSource() {
+    public Property<Source> getAppSource() {
         return appSource;
     }
 
@@ -148,11 +149,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setAppSource(DataSource appSource) {
+    public void setAppSource(Property<Source> appSource) {
         this.appSource = appSource;
     }
 
-    public App withAppSource(DataSource appSource) {
+    public App withAppSource(Property<Source> appSource) {
         this.appSource = appSource;
         return this;
     }
@@ -185,7 +186,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public Set<DataSource> getDataSources() {
+    public Set<Property<DataSource>> getDataSources() {
         return dataSources;
     }
 
@@ -194,11 +195,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setDataSources(Set<DataSource> dataSources) {
+    public void setDataSources(Set<Property<DataSource>> dataSources) {
         this.dataSources = dataSources;
     }
 
-    public App withDataSources(Set<DataSource> dataSources) {
+    public App withDataSources(Set<Property<DataSource>> dataSources) {
         this.dataSources = dataSources;
         return this;
     }
@@ -277,7 +278,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public List<EnvironmentVariable> getEnvironment() {
+    public List<Property<EnvironmentVariable>> getEnvironment() {
         return environment;
     }
 
@@ -286,11 +287,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(List<EnvironmentVariable> environment) {
+    public void setEnvironment(List<Property<EnvironmentVariable>> environment) {
         this.environment = environment;
     }
 
-    public App withEnvironment(List<EnvironmentVariable> environment) {
+    public App withEnvironment(List<Property<EnvironmentVariable>> environment) {
         this.environment = environment;
         return this;
     }
@@ -348,7 +349,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public SslConfiguration getSslConfiguration() {
+    public Property<SslConfiguration> getSslConfiguration() {
         return sslConfiguration;
     }
 
@@ -359,11 +360,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setSslConfiguration(SslConfiguration sslConfiguration) {
+    public void setSslConfiguration(Property<SslConfiguration> sslConfiguration) {
         this.sslConfiguration = sslConfiguration;
     }
 
-    public App withSslConfiguration(SslConfiguration sslConfiguration) {
+    public App withSslConfiguration(Property<SslConfiguration> sslConfiguration) {
         this.sslConfiguration = sslConfiguration;
         return this;
     }

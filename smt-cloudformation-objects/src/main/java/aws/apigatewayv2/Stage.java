@@ -1,6 +1,7 @@
 
 package aws.apigatewayv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -60,7 +61,7 @@ public class Stage {
      */
     @JsonProperty("AccessLogSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html")
-    private AccessLogSettings accessLogSettings;
+    private Property<AccessLogSettings> accessLogSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-routesettings
      * 
@@ -97,7 +98,7 @@ public class Stage {
      */
     @JsonProperty("DefaultRouteSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html")
-    private RouteSettings defaultRouteSettings;
+    private Property<RouteSettings> defaultRouteSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-clientcertificateid
@@ -175,7 +176,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public AccessLogSettings getAccessLogSettings() {
+    public Property<AccessLogSettings> getAccessLogSettings() {
         return accessLogSettings;
     }
 
@@ -186,11 +187,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setAccessLogSettings(AccessLogSettings accessLogSettings) {
+    public void setAccessLogSettings(Property<AccessLogSettings> accessLogSettings) {
         this.accessLogSettings = accessLogSettings;
     }
 
-    public Stage withAccessLogSettings(AccessLogSettings accessLogSettings) {
+    public Stage withAccessLogSettings(Property<AccessLogSettings> accessLogSettings) {
         this.accessLogSettings = accessLogSettings;
         return this;
     }
@@ -294,7 +295,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public RouteSettings getDefaultRouteSettings() {
+    public Property<RouteSettings> getDefaultRouteSettings() {
         return defaultRouteSettings;
     }
 
@@ -305,11 +306,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setDefaultRouteSettings(RouteSettings defaultRouteSettings) {
+    public void setDefaultRouteSettings(Property<RouteSettings> defaultRouteSettings) {
         this.defaultRouteSettings = defaultRouteSettings;
     }
 
-    public Stage withDefaultRouteSettings(RouteSettings defaultRouteSettings) {
+    public Stage withDefaultRouteSettings(Property<RouteSettings> defaultRouteSettings) {
         this.defaultRouteSettings = defaultRouteSettings;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.autoscalingplans;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "PredefinedLoadMetricType",
     "ResourceLabel"
 })
-public class PredefinedLoadMetricSpecification {
+public class PredefinedLoadMetricSpecification implements Property<PredefinedLoadMetricSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-predefinedloadmetricspecification-predefinedloadmetrictype

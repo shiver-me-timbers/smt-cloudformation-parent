@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html",
   "type" : "object",
   "javaType" : "aws.waf.XssMatchTuple",
+  "javaInterfaces" : [ "aws.Property<XssMatchTuple>" ],
   "properties" : {
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-fieldtomatch",
-      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json"
+      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json",
+      "javaType" : "aws.Property<aws.waf.FieldToMatch>"
     },
     "TextTransformation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation",

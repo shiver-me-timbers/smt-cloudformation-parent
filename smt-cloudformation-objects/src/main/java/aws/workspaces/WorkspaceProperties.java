@@ -1,6 +1,7 @@
 
 package aws.workspaces;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RunningModeAutoStopTimeoutInMinutes",
     "UserVolumeSizeGib"
 })
-public class WorkspaceProperties {
+public class WorkspaceProperties implements Property<WorkspaceProperties>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html#cfn-workspaces-workspace-workspaceproperties-computetypename

@@ -3,6 +3,7 @@ package aws.iotanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Filters",
     "SqlQuery"
 })
-public class QueryAction {
+public class QueryAction implements Property<QueryAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-queryaction.html#cfn-iotanalytics-dataset-queryaction-filters
@@ -32,7 +34,7 @@ public class QueryAction {
      */
     @JsonProperty("Filters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-queryaction.html#cfn-iotanalytics-dataset-queryaction-filters")
-    private List<Filter> filters = new ArrayList<Filter>();
+    private List<Property<Filter>> filters = new ArrayList<Property<Filter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-queryaction.html#cfn-iotanalytics-dataset-queryaction-sqlquery
      * 
@@ -46,7 +48,7 @@ public class QueryAction {
      * 
      */
     @JsonIgnore
-    public List<Filter> getFilters() {
+    public List<Property<Filter>> getFilters() {
         return filters;
     }
 
@@ -55,11 +57,11 @@ public class QueryAction {
      * 
      */
     @JsonIgnore
-    public void setFilters(List<Filter> filters) {
+    public void setFilters(List<Property<Filter>> filters) {
         this.filters = filters;
     }
 
-    public QueryAction withFilters(List<Filter> filters) {
+    public QueryAction withFilters(List<Property<Filter>> filters) {
         this.filters = filters;
         return this;
     }

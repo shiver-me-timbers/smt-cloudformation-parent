@@ -1,6 +1,7 @@
 
 package aws.codedeploy;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "IgnoreApplicationStopFailures",
     "Revision"
 })
-public class Deployment {
+public class Deployment implements Property<Deployment>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-description
@@ -47,7 +49,7 @@ public class Deployment {
      */
     @JsonProperty("Revision")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html")
-    private RevisionLocation revision;
+    private Property<RevisionLocation> revision;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html#cfn-properties-codedeploy-deploymentgroup-deployment-description
@@ -102,7 +104,7 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public RevisionLocation getRevision() {
+    public Property<RevisionLocation> getRevision() {
         return revision;
     }
 
@@ -113,11 +115,11 @@ public class Deployment {
      * 
      */
     @JsonIgnore
-    public void setRevision(RevisionLocation revision) {
+    public void setRevision(Property<RevisionLocation> revision) {
         this.revision = revision;
     }
 
-    public Deployment withRevision(RevisionLocation revision) {
+    public Deployment withRevision(Property<RevisionLocation> revision) {
         this.revision = revision;
         return this;
     }

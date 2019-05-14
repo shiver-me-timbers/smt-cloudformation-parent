@@ -3,6 +3,7 @@ package aws.apigateway;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -37,7 +38,7 @@ public class UsagePlan {
     @JsonProperty("ApiStages")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-apistages")
-    private Set<ApiStage> apiStages = new LinkedHashSet<ApiStage>();
+    private Set<Property<ApiStage>> apiStages = new LinkedHashSet<Property<ApiStage>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description
      * 
@@ -53,7 +54,7 @@ public class UsagePlan {
      */
     @JsonProperty("Quota")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html")
-    private QuotaSettings quota;
+    private Property<QuotaSettings> quota;
     /**
      * ThrottleSettings
      * <p>
@@ -62,7 +63,7 @@ public class UsagePlan {
      */
     @JsonProperty("Throttle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html")
-    private ThrottleSettings throttle;
+    private Property<ThrottleSettings> throttle;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname
      * 
@@ -76,7 +77,7 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public Set<ApiStage> getApiStages() {
+    public Set<Property<ApiStage>> getApiStages() {
         return apiStages;
     }
 
@@ -85,11 +86,11 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public void setApiStages(Set<ApiStage> apiStages) {
+    public void setApiStages(Set<Property<ApiStage>> apiStages) {
         this.apiStages = apiStages;
     }
 
-    public UsagePlan withApiStages(Set<ApiStage> apiStages) {
+    public UsagePlan withApiStages(Set<Property<ApiStage>> apiStages) {
         this.apiStages = apiStages;
         return this;
     }
@@ -124,7 +125,7 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public QuotaSettings getQuota() {
+    public Property<QuotaSettings> getQuota() {
         return quota;
     }
 
@@ -135,11 +136,11 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public void setQuota(QuotaSettings quota) {
+    public void setQuota(Property<QuotaSettings> quota) {
         this.quota = quota;
     }
 
-    public UsagePlan withQuota(QuotaSettings quota) {
+    public UsagePlan withQuota(Property<QuotaSettings> quota) {
         this.quota = quota;
         return this;
     }
@@ -151,7 +152,7 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public ThrottleSettings getThrottle() {
+    public Property<ThrottleSettings> getThrottle() {
         return throttle;
     }
 
@@ -162,11 +163,11 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public void setThrottle(ThrottleSettings throttle) {
+    public void setThrottle(Property<ThrottleSettings> throttle) {
         this.throttle = throttle;
     }
 
-    public UsagePlan withThrottle(ThrottleSettings throttle) {
+    public UsagePlan withThrottle(Property<ThrottleSettings> throttle) {
         this.throttle = throttle;
         return this;
     }

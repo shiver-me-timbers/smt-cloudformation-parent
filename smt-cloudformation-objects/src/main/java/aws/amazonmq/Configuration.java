@@ -3,6 +3,7 @@ package aws.amazonmq;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -64,7 +65,7 @@ public class Configuration {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags")
-    private List<TagsEntry> tags = new ArrayList<TagsEntry>();
+    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
@@ -170,7 +171,7 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public List<TagsEntry> getTags() {
+    public List<Property<TagsEntry>> getTags() {
         return tags;
     }
 
@@ -179,11 +180,11 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagsEntry> tags) {
+    public void setTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public Configuration withTags(List<TagsEntry> tags) {
+    public Configuration withTags(List<Property<TagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

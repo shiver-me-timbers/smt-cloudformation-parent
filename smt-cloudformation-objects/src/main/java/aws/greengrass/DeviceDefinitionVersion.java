@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Devices"
 })
-public class DeviceDefinitionVersion {
+public class DeviceDefinitionVersion implements Property<DeviceDefinitionVersion>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html#cfn-greengrass-devicedefinition-devicedefinitionversion-devices
@@ -31,14 +33,14 @@ public class DeviceDefinitionVersion {
      */
     @JsonProperty("Devices")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html#cfn-greengrass-devicedefinition-devicedefinitionversion-devices")
-    private List<Device> devices = new ArrayList<Device>();
+    private List<Property<Device>> devices = new ArrayList<Property<Device>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html#cfn-greengrass-devicedefinition-devicedefinitionversion-devices
      * 
      */
     @JsonIgnore
-    public List<Device> getDevices() {
+    public List<Property<Device>> getDevices() {
         return devices;
     }
 
@@ -47,11 +49,11 @@ public class DeviceDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setDevices(List<Device> devices) {
+    public void setDevices(List<Property<Device>> devices) {
         this.devices = devices;
     }
 
-    public DeviceDefinitionVersion withDevices(List<Device> devices) {
+    public DeviceDefinitionVersion withDevices(List<Property<Device>> devices) {
         this.devices = devices;
         return this;
     }

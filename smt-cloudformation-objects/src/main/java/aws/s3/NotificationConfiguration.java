@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "QueueConfigurations",
     "TopicConfigurations"
 })
-public class NotificationConfiguration {
+public class NotificationConfiguration implements Property<NotificationConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig
@@ -35,7 +37,7 @@ public class NotificationConfiguration {
     @JsonProperty("LambdaConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig")
-    private Set<LambdaConfiguration> lambdaConfigurations = new LinkedHashSet<LambdaConfiguration>();
+    private Set<Property<LambdaConfiguration>> lambdaConfigurations = new LinkedHashSet<Property<LambdaConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-queueconfig
      * 
@@ -43,7 +45,7 @@ public class NotificationConfiguration {
     @JsonProperty("QueueConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-queueconfig")
-    private Set<QueueConfiguration> queueConfigurations = new LinkedHashSet<QueueConfiguration>();
+    private Set<Property<QueueConfiguration>> queueConfigurations = new LinkedHashSet<Property<QueueConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-topicconfig
      * 
@@ -51,14 +53,14 @@ public class NotificationConfiguration {
     @JsonProperty("TopicConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-topicconfig")
-    private Set<TopicConfiguration> topicConfigurations = new LinkedHashSet<TopicConfiguration>();
+    private Set<Property<TopicConfiguration>> topicConfigurations = new LinkedHashSet<Property<TopicConfiguration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html#cfn-s3-bucket-notificationconfig-lambdaconfig
      * 
      */
     @JsonIgnore
-    public Set<LambdaConfiguration> getLambdaConfigurations() {
+    public Set<Property<LambdaConfiguration>> getLambdaConfigurations() {
         return lambdaConfigurations;
     }
 
@@ -67,11 +69,11 @@ public class NotificationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setLambdaConfigurations(Set<LambdaConfiguration> lambdaConfigurations) {
+    public void setLambdaConfigurations(Set<Property<LambdaConfiguration>> lambdaConfigurations) {
         this.lambdaConfigurations = lambdaConfigurations;
     }
 
-    public NotificationConfiguration withLambdaConfigurations(Set<LambdaConfiguration> lambdaConfigurations) {
+    public NotificationConfiguration withLambdaConfigurations(Set<Property<LambdaConfiguration>> lambdaConfigurations) {
         this.lambdaConfigurations = lambdaConfigurations;
         return this;
     }
@@ -81,7 +83,7 @@ public class NotificationConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<QueueConfiguration> getQueueConfigurations() {
+    public Set<Property<QueueConfiguration>> getQueueConfigurations() {
         return queueConfigurations;
     }
 
@@ -90,11 +92,11 @@ public class NotificationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setQueueConfigurations(Set<QueueConfiguration> queueConfigurations) {
+    public void setQueueConfigurations(Set<Property<QueueConfiguration>> queueConfigurations) {
         this.queueConfigurations = queueConfigurations;
     }
 
-    public NotificationConfiguration withQueueConfigurations(Set<QueueConfiguration> queueConfigurations) {
+    public NotificationConfiguration withQueueConfigurations(Set<Property<QueueConfiguration>> queueConfigurations) {
         this.queueConfigurations = queueConfigurations;
         return this;
     }
@@ -104,7 +106,7 @@ public class NotificationConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<TopicConfiguration> getTopicConfigurations() {
+    public Set<Property<TopicConfiguration>> getTopicConfigurations() {
         return topicConfigurations;
     }
 
@@ -113,11 +115,11 @@ public class NotificationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setTopicConfigurations(Set<TopicConfiguration> topicConfigurations) {
+    public void setTopicConfigurations(Set<Property<TopicConfiguration>> topicConfigurations) {
         this.topicConfigurations = topicConfigurations;
     }
 
-    public NotificationConfiguration withTopicConfigurations(Set<TopicConfiguration> topicConfigurations) {
+    public NotificationConfiguration withTopicConfigurations(Set<Property<TopicConfiguration>> topicConfigurations) {
         this.topicConfigurations = topicConfigurations;
         return this;
     }

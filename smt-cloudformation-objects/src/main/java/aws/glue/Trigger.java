@@ -3,6 +3,7 @@ package aws.glue;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -50,7 +51,7 @@ public class Trigger {
      */
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions")
-    private List<Action> actions = new ArrayList<Action>();
+    private List<Property<Action>> actions = new ArrayList<Property<Action>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule
      * 
@@ -73,7 +74,7 @@ public class Trigger {
      */
     @JsonProperty("Predicate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html")
-    private Predicate predicate;
+    private Property<Predicate> predicate;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type
@@ -126,7 +127,7 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public List<Action> getActions() {
+    public List<Property<Action>> getActions() {
         return actions;
     }
 
@@ -135,11 +136,11 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public void setActions(List<Action> actions) {
+    public void setActions(List<Property<Action>> actions) {
         this.actions = actions;
     }
 
-    public Trigger withActions(List<Action> actions) {
+    public Trigger withActions(List<Property<Action>> actions) {
         this.actions = actions;
         return this;
     }
@@ -197,7 +198,7 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public Predicate getPredicate() {
+    public Property<Predicate> getPredicate() {
         return predicate;
     }
 
@@ -208,11 +209,11 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public void setPredicate(Predicate predicate) {
+    public void setPredicate(Property<Predicate> predicate) {
         this.predicate = predicate;
     }
 
-    public Trigger withPredicate(Predicate predicate) {
+    public Trigger withPredicate(Property<Predicate> predicate) {
         this.predicate = predicate;
         return this;
     }

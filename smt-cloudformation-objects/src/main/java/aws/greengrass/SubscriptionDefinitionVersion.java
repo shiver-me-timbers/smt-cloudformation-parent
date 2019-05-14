@@ -3,6 +3,7 @@ package aws.greengrass;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Subscriptions"
 })
-public class SubscriptionDefinitionVersion {
+public class SubscriptionDefinitionVersion implements Property<SubscriptionDefinitionVersion>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html#cfn-greengrass-subscriptiondefinition-subscriptiondefinitionversion-subscriptions
@@ -31,14 +33,14 @@ public class SubscriptionDefinitionVersion {
      */
     @JsonProperty("Subscriptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html#cfn-greengrass-subscriptiondefinition-subscriptiondefinitionversion-subscriptions")
-    private List<Subscription> subscriptions = new ArrayList<Subscription>();
+    private List<Property<Subscription>> subscriptions = new ArrayList<Property<Subscription>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html#cfn-greengrass-subscriptiondefinition-subscriptiondefinitionversion-subscriptions
      * 
      */
     @JsonIgnore
-    public List<Subscription> getSubscriptions() {
+    public List<Property<Subscription>> getSubscriptions() {
         return subscriptions;
     }
 
@@ -47,11 +49,11 @@ public class SubscriptionDefinitionVersion {
      * 
      */
     @JsonIgnore
-    public void setSubscriptions(List<Subscription> subscriptions) {
+    public void setSubscriptions(List<Property<Subscription>> subscriptions) {
         this.subscriptions = subscriptions;
     }
 
-    public SubscriptionDefinitionVersion withSubscriptions(List<Subscription> subscriptions) {
+    public SubscriptionDefinitionVersion withSubscriptions(List<Property<Subscription>> subscriptions) {
         this.subscriptions = subscriptions;
         return this;
     }

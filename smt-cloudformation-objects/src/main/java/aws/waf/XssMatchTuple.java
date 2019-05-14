@@ -1,6 +1,7 @@
 
 package aws.waf;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "FieldToMatch",
     "TextTransformation"
 })
-public class XssMatchTuple {
+public class XssMatchTuple implements Property<XssMatchTuple>
+{
 
     /**
      * FieldToMatch
@@ -32,7 +34,7 @@ public class XssMatchTuple {
      */
     @JsonProperty("FieldToMatch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html")
-    private FieldToMatch fieldToMatch;
+    private Property<FieldToMatch> fieldToMatch;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html#cfn-waf-xssmatchset-xssmatchtuple-texttransformation
      * 
@@ -48,7 +50,7 @@ public class XssMatchTuple {
      * 
      */
     @JsonIgnore
-    public FieldToMatch getFieldToMatch() {
+    public Property<FieldToMatch> getFieldToMatch() {
         return fieldToMatch;
     }
 
@@ -59,11 +61,11 @@ public class XssMatchTuple {
      * 
      */
     @JsonIgnore
-    public void setFieldToMatch(FieldToMatch fieldToMatch) {
+    public void setFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
 
-    public XssMatchTuple withFieldToMatch(FieldToMatch fieldToMatch) {
+    public XssMatchTuple withFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
         return this;
     }

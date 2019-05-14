@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-validationdata",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json"
+        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json",
+        "javaType" : "aws.Property<aws.cognito.AttributeType>"
       }
     },
     "UserPoolId" : {
@@ -44,7 +45,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpooluser.html#cfn-cognito-userpooluser-userattributes",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json"
+        "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json",
+        "javaType" : "aws.Property<aws.cognito.AttributeType>"
       }
     }
   }

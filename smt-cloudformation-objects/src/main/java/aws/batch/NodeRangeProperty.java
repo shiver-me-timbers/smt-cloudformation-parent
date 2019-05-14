@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Container",
     "TargetNodes"
 })
-public class NodeRangeProperty {
+public class NodeRangeProperty implements Property<NodeRangeProperty>
+{
 
     /**
      * ContainerProperties
@@ -32,7 +34,7 @@ public class NodeRangeProperty {
      */
     @JsonProperty("Container")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html")
-    private ContainerProperties container;
+    private Property<ContainerProperties> container;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-noderangeproperty.html#cfn-batch-jobdefinition-noderangeproperty-targetnodes
      * 
@@ -48,7 +50,7 @@ public class NodeRangeProperty {
      * 
      */
     @JsonIgnore
-    public ContainerProperties getContainer() {
+    public Property<ContainerProperties> getContainer() {
         return container;
     }
 
@@ -59,11 +61,11 @@ public class NodeRangeProperty {
      * 
      */
     @JsonIgnore
-    public void setContainer(ContainerProperties container) {
+    public void setContainer(Property<ContainerProperties> container) {
         this.container = container;
     }
 
-    public NodeRangeProperty withContainer(ContainerProperties container) {
+    public NodeRangeProperty withContainer(Property<ContainerProperties> container) {
         this.container = container;
         return this;
     }

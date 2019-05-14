@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -351,7 +352,7 @@ public class DBInstance {
     @JsonProperty("ProcessorFeatures")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures")
-    private Set<ProcessorFeature> processorFeatures = new LinkedHashSet<ProcessorFeature>();
+    private Set<Property<ProcessorFeature>> processorFeatures = new LinkedHashSet<Property<ProcessorFeature>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier
      * 
@@ -400,7 +401,7 @@ public class DBInstance {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-timezone
      * 
@@ -1302,7 +1303,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Set<ProcessorFeature> getProcessorFeatures() {
+    public Set<Property<ProcessorFeature>> getProcessorFeatures() {
         return processorFeatures;
     }
 
@@ -1311,11 +1312,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setProcessorFeatures(Set<ProcessorFeature> processorFeatures) {
+    public void setProcessorFeatures(Set<Property<ProcessorFeature>> processorFeatures) {
         this.processorFeatures = processorFeatures;
     }
 
-    public DBInstance withProcessorFeatures(Set<ProcessorFeature> processorFeatures) {
+    public DBInstance withProcessorFeatures(Set<Property<ProcessorFeature>> processorFeatures) {
         this.processorFeatures = processorFeatures;
         return this;
     }
@@ -1463,7 +1464,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -1472,11 +1473,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public DBInstance withTags(List<Tag> tags) {
+    public DBInstance withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

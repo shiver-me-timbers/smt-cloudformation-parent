@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -95,7 +96,7 @@ public class Alarm {
      */
     @JsonProperty("Dimensions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension")
-    private List<Dimension> dimensions = new ArrayList<Dimension>();
+    private List<Property<Dimension>> dimensions = new ArrayList<Property<Dimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile
      * 
@@ -138,7 +139,7 @@ public class Alarm {
     @JsonProperty("Metrics")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarm-metrics")
-    private Set<MetricDataQuery> metrics = new LinkedHashSet<MetricDataQuery>();
+    private Set<Property<MetricDataQuery>> metrics = new LinkedHashSet<Property<MetricDataQuery>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace
      * 
@@ -332,7 +333,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public List<Dimension> getDimensions() {
+    public List<Property<Dimension>> getDimensions() {
         return dimensions;
     }
 
@@ -341,11 +342,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setDimensions(List<Dimension> dimensions) {
+    public void setDimensions(List<Property<Dimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public Alarm withDimensions(List<Dimension> dimensions) {
+    public Alarm withDimensions(List<Property<Dimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }
@@ -470,7 +471,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Set<MetricDataQuery> getMetrics() {
+    public Set<Property<MetricDataQuery>> getMetrics() {
         return metrics;
     }
 
@@ -479,11 +480,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setMetrics(Set<MetricDataQuery> metrics) {
+    public void setMetrics(Set<Property<MetricDataQuery>> metrics) {
         this.metrics = metrics;
     }
 
-    public Alarm withMetrics(Set<MetricDataQuery> metrics) {
+    public Alarm withMetrics(Set<Property<MetricDataQuery>> metrics) {
         this.metrics = metrics;
         return this;
     }

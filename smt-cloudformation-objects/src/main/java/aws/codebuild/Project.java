@@ -3,6 +3,7 @@ package aws.codebuild;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -57,14 +58,14 @@ public class Project {
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html")
-    private VpcConfig vpcConfig;
+    private Property<VpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources
      * 
      */
     @JsonProperty("SecondarySources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources")
-    private List<Source> secondarySources = new ArrayList<Source>();
+    private List<Property<aws.codebuild.Source>> secondarySources = new ArrayList<Property<aws.codebuild.Source>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey
      * 
@@ -80,14 +81,14 @@ public class Project {
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html")
-    private ProjectTriggers triggers;
+    private Property<ProjectTriggers> triggers;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts
      * 
      */
     @JsonProperty("SecondaryArtifacts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts")
-    private List<Artifacts> secondaryArtifacts = new ArrayList<Artifacts>();
+    private List<Property<aws.codebuild.Artifacts>> secondaryArtifacts = new ArrayList<Property<aws.codebuild.Artifacts>>();
     /**
      * Source
      * <p>
@@ -96,7 +97,7 @@ public class Project {
      */
     @JsonProperty("Source")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html")
-    private Source source;
+    private Property<aws.codebuild.Source> source;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name
      * 
@@ -112,7 +113,7 @@ public class Project {
      */
     @JsonProperty("Artifacts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html")
-    private Artifacts artifacts;
+    private Property<aws.codebuild.Artifacts> artifacts;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled
      * 
@@ -128,7 +129,7 @@ public class Project {
      */
     @JsonProperty("LogsConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html")
-    private LogsConfig logsConfig;
+    private Property<LogsConfig> logsConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole
      * 
@@ -151,14 +152,14 @@ public class Project {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html")
-    private Environment environment;
+    private Property<Environment> environment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-timeoutinminutes
      * 
@@ -174,7 +175,7 @@ public class Project {
      */
     @JsonProperty("Cache")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html")
-    private ProjectCache cache;
+    private Property<ProjectCache> cache;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description
@@ -206,7 +207,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public VpcConfig getVpcConfig() {
+    public Property<VpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
@@ -217,11 +218,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(VpcConfig vpcConfig) {
+    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Project withVpcConfig(VpcConfig vpcConfig) {
+    public Project withVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -231,7 +232,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public List<Source> getSecondarySources() {
+    public List<Property<aws.codebuild.Source>> getSecondarySources() {
         return secondarySources;
     }
 
@@ -240,11 +241,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setSecondarySources(List<Source> secondarySources) {
+    public void setSecondarySources(List<Property<aws.codebuild.Source>> secondarySources) {
         this.secondarySources = secondarySources;
     }
 
-    public Project withSecondarySources(List<Source> secondarySources) {
+    public Project withSecondarySources(List<Property<aws.codebuild.Source>> secondarySources) {
         this.secondarySources = secondarySources;
         return this;
     }
@@ -279,7 +280,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public ProjectTriggers getTriggers() {
+    public Property<ProjectTriggers> getTriggers() {
         return triggers;
     }
 
@@ -290,11 +291,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setTriggers(ProjectTriggers triggers) {
+    public void setTriggers(Property<ProjectTriggers> triggers) {
         this.triggers = triggers;
     }
 
-    public Project withTriggers(ProjectTriggers triggers) {
+    public Project withTriggers(Property<ProjectTriggers> triggers) {
         this.triggers = triggers;
         return this;
     }
@@ -304,7 +305,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public List<Artifacts> getSecondaryArtifacts() {
+    public List<Property<aws.codebuild.Artifacts>> getSecondaryArtifacts() {
         return secondaryArtifacts;
     }
 
@@ -313,11 +314,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setSecondaryArtifacts(List<Artifacts> secondaryArtifacts) {
+    public void setSecondaryArtifacts(List<Property<aws.codebuild.Artifacts>> secondaryArtifacts) {
         this.secondaryArtifacts = secondaryArtifacts;
     }
 
-    public Project withSecondaryArtifacts(List<Artifacts> secondaryArtifacts) {
+    public Project withSecondaryArtifacts(List<Property<aws.codebuild.Artifacts>> secondaryArtifacts) {
         this.secondaryArtifacts = secondaryArtifacts;
         return this;
     }
@@ -329,7 +330,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Source getSource() {
+    public Property<aws.codebuild.Source> getSource() {
         return source;
     }
 
@@ -340,11 +341,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setSource(Source source) {
+    public void setSource(Property<aws.codebuild.Source> source) {
         this.source = source;
     }
 
-    public Project withSource(Source source) {
+    public Project withSource(Property<aws.codebuild.Source> source) {
         this.source = source;
         return this;
     }
@@ -379,7 +380,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Artifacts getArtifacts() {
+    public Property<aws.codebuild.Artifacts> getArtifacts() {
         return artifacts;
     }
 
@@ -390,11 +391,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setArtifacts(Artifacts artifacts) {
+    public void setArtifacts(Property<aws.codebuild.Artifacts> artifacts) {
         this.artifacts = artifacts;
     }
 
-    public Project withArtifacts(Artifacts artifacts) {
+    public Project withArtifacts(Property<aws.codebuild.Artifacts> artifacts) {
         this.artifacts = artifacts;
         return this;
     }
@@ -429,7 +430,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public LogsConfig getLogsConfig() {
+    public Property<LogsConfig> getLogsConfig() {
         return logsConfig;
     }
 
@@ -440,11 +441,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setLogsConfig(LogsConfig logsConfig) {
+    public void setLogsConfig(Property<LogsConfig> logsConfig) {
         this.logsConfig = logsConfig;
     }
 
-    public Project withLogsConfig(LogsConfig logsConfig) {
+    public Project withLogsConfig(Property<LogsConfig> logsConfig) {
         this.logsConfig = logsConfig;
         return this;
     }
@@ -502,7 +503,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public Environment getEnvironment() {
+    public Property<Environment> getEnvironment() {
         return environment;
     }
 
@@ -513,11 +514,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Environment environment) {
+    public void setEnvironment(Property<Environment> environment) {
         this.environment = environment;
     }
 
-    public Project withEnvironment(Environment environment) {
+    public Project withEnvironment(Property<Environment> environment) {
         this.environment = environment;
         return this;
     }
@@ -527,7 +528,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -536,11 +537,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Project withTags(List<Tag> tags) {
+    public Project withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -575,7 +576,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public ProjectCache getCache() {
+    public Property<ProjectCache> getCache() {
         return cache;
     }
 
@@ -586,11 +587,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setCache(ProjectCache cache) {
+    public void setCache(Property<ProjectCache> cache) {
         this.cache = cache;
     }
 
-    public Project withCache(ProjectCache cache) {
+    public Project withCache(Property<ProjectCache> cache) {
         this.cache = cache;
         return this;
     }

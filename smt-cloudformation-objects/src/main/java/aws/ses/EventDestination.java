@@ -3,6 +3,7 @@ package aws.ses;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "KinesisFirehoseDestination"
 })
-public class EventDestination {
+public class EventDestination implements Property<EventDestination>
+{
 
     /**
      * CloudWatchDestination
@@ -37,7 +39,7 @@ public class EventDestination {
      */
     @JsonProperty("CloudWatchDestination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-cloudwatchdestination.html")
-    private CloudWatchDestination cloudWatchDestination;
+    private Property<CloudWatchDestination> cloudWatchDestination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled
      * 
@@ -67,7 +69,7 @@ public class EventDestination {
      */
     @JsonProperty("KinesisFirehoseDestination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-kinesisfirehosedestination.html")
-    private KinesisFirehoseDestination kinesisFirehoseDestination;
+    private Property<KinesisFirehoseDestination> kinesisFirehoseDestination;
 
     /**
      * CloudWatchDestination
@@ -76,7 +78,7 @@ public class EventDestination {
      * 
      */
     @JsonIgnore
-    public CloudWatchDestination getCloudWatchDestination() {
+    public Property<CloudWatchDestination> getCloudWatchDestination() {
         return cloudWatchDestination;
     }
 
@@ -87,11 +89,11 @@ public class EventDestination {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchDestination(CloudWatchDestination cloudWatchDestination) {
+    public void setCloudWatchDestination(Property<CloudWatchDestination> cloudWatchDestination) {
         this.cloudWatchDestination = cloudWatchDestination;
     }
 
-    public EventDestination withCloudWatchDestination(CloudWatchDestination cloudWatchDestination) {
+    public EventDestination withCloudWatchDestination(Property<CloudWatchDestination> cloudWatchDestination) {
         this.cloudWatchDestination = cloudWatchDestination;
         return this;
     }
@@ -172,7 +174,7 @@ public class EventDestination {
      * 
      */
     @JsonIgnore
-    public KinesisFirehoseDestination getKinesisFirehoseDestination() {
+    public Property<KinesisFirehoseDestination> getKinesisFirehoseDestination() {
         return kinesisFirehoseDestination;
     }
 
@@ -183,11 +185,11 @@ public class EventDestination {
      * 
      */
     @JsonIgnore
-    public void setKinesisFirehoseDestination(KinesisFirehoseDestination kinesisFirehoseDestination) {
+    public void setKinesisFirehoseDestination(Property<KinesisFirehoseDestination> kinesisFirehoseDestination) {
         this.kinesisFirehoseDestination = kinesisFirehoseDestination;
     }
 
-    public EventDestination withKinesisFirehoseDestination(KinesisFirehoseDestination kinesisFirehoseDestination) {
+    public EventDestination withKinesisFirehoseDestination(Property<KinesisFirehoseDestination> kinesisFirehoseDestination) {
         this.kinesisFirehoseDestination = kinesisFirehoseDestination;
         return this;
     }

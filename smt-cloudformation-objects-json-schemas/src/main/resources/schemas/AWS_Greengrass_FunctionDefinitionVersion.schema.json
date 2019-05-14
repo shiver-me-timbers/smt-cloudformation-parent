@@ -8,13 +8,15 @@
   "properties" : {
     "DefaultConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-defaultconfig",
-      "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.DefaultConfig.schema.json"
+      "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.DefaultConfig.schema.json",
+      "javaType" : "aws.Property<aws.greengrass.DefaultConfig>"
     },
     "Functions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functions",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.Function.schema.json"
+        "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.Function.schema.json",
+        "javaType" : "aws.Property<aws.greengrass.Function>"
       }
     },
     "FunctionDefinitionId" : {

@@ -30,7 +30,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_ElasticBeanstalk_Environment.OptionSetting.schema.json"
+        "$ref" : "AWS_ElasticBeanstalk_Environment.OptionSetting.schema.json",
+        "javaType" : "aws.Property<aws.elasticbeanstalk.OptionSetting>"
       }
     },
     "PlatformArn" : {
@@ -47,7 +48,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-elasticbeanstalk-environment-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "TemplateName" : {
@@ -57,7 +59,8 @@
     },
     "Tier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-tier",
-      "$ref" : "AWS_ElasticBeanstalk_Environment.Tier.schema.json"
+      "$ref" : "AWS_ElasticBeanstalk_Environment.Tier.schema.json",
+      "javaType" : "aws.Property<aws.elasticbeanstalk.Tier>"
     },
     "VersionLabel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel",

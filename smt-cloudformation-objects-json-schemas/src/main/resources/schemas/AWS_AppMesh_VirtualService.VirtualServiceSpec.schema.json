@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html",
   "type" : "object",
   "javaType" : "aws.appmesh.VirtualServiceSpec",
+  "javaInterfaces" : [ "aws.Property<VirtualServiceSpec>" ],
   "properties" : {
     "Provider" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html#cfn-appmesh-virtualservice-virtualservicespec-provider",
-      "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceProvider.schema.json"
+      "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceProvider.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.VirtualServiceProvider>"
     }
   }
 }

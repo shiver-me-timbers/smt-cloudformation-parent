@@ -8,11 +8,13 @@
   "properties" : {
     "TargetCapacitySpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-targetcapacityspecification",
-      "$ref" : "AWS_EC2_EC2Fleet.TargetCapacitySpecificationRequest.schema.json"
+      "$ref" : "AWS_EC2_EC2Fleet.TargetCapacitySpecificationRequest.schema.json",
+      "javaType" : "aws.Property<aws.ec2.TargetCapacitySpecificationRequest>"
     },
     "OnDemandOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-ondemandoptions",
-      "$ref" : "AWS_EC2_EC2Fleet.OnDemandOptionsRequest.schema.json"
+      "$ref" : "AWS_EC2_EC2Fleet.OnDemandOptionsRequest.schema.json",
+      "javaType" : "aws.Property<aws.ec2.OnDemandOptionsRequest>"
     },
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type",
@@ -28,12 +30,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-tagspecifications",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json"
+        "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.TagSpecification>"
       }
     },
     "SpotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-spotoptions",
-      "$ref" : "AWS_EC2_EC2Fleet.SpotOptionsRequest.schema.json"
+      "$ref" : "AWS_EC2_EC2Fleet.SpotOptionsRequest.schema.json",
+      "javaType" : "aws.Property<aws.ec2.SpotOptionsRequest>"
     },
     "ValidFrom" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom",
@@ -48,7 +52,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateConfigRequest.schema.json"
+        "$ref" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateConfigRequest.schema.json",
+        "javaType" : "aws.Property<aws.ec2.FleetLaunchTemplateConfigRequest>"
       }
     },
     "TerminateInstancesWithExpiration" : {

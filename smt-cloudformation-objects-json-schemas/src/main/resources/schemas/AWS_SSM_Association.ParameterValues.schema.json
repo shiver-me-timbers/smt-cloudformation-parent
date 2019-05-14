@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html",
   "type" : "object",
   "javaType" : "aws.ssm.ParameterValues",
+  "javaInterfaces" : [ "aws.Property<ParameterValues>" ],
   "properties" : {
     "ParameterValues" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-parametervalues.html#cfn-ssm-association-parametervalues-parametervalues",

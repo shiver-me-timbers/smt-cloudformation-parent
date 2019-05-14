@@ -8,13 +8,15 @@
   "properties" : {
     "StreamingDistributionConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-streamingdistributionconfig",
-      "$ref" : "AWS_CloudFront_StreamingDistribution.StreamingDistributionConfig.schema.json"
+      "$ref" : "AWS_CloudFront_StreamingDistribution.StreamingDistributionConfig.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.StreamingDistributionConfig>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     }
   }

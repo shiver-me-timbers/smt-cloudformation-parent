@@ -23,15 +23,18 @@
     },
     "HttpConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-httpconfig",
-      "$ref" : "AWS_AppSync_DataSource.HttpConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.HttpConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.HttpConfig>"
     },
     "RelationalDatabaseConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-relationaldatabaseconfig",
-      "$ref" : "AWS_AppSync_DataSource.RelationalDatabaseConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.RelationalDatabaseConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.RelationalDatabaseConfig>"
     },
     "LambdaConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-lambdaconfig",
-      "$ref" : "AWS_AppSync_DataSource.LambdaConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.LambdaConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.LambdaConfig>"
     },
     "ApiId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid",
@@ -45,11 +48,13 @@
     },
     "DynamoDBConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-dynamodbconfig",
-      "$ref" : "AWS_AppSync_DataSource.DynamoDBConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.DynamoDBConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.DynamoDBConfig>"
     },
     "ElasticsearchConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-elasticsearchconfig",
-      "$ref" : "AWS_AppSync_DataSource.ElasticsearchConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.ElasticsearchConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.ElasticsearchConfig>"
     }
   }
 }

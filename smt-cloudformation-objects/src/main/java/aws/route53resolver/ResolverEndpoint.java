@@ -3,6 +3,7 @@ package aws.route53resolver;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -36,7 +37,7 @@ public class ResolverEndpoint {
      */
     @JsonProperty("IpAddresses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-ipaddresses")
-    private List<IpAddressRequest> ipAddresses = new ArrayList<IpAddressRequest>();
+    private List<Property<IpAddressRequest>> ipAddresses = new ArrayList<Property<IpAddressRequest>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-direction
      * 
@@ -57,7 +58,7 @@ public class ResolverEndpoint {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-name
      * 
@@ -71,7 +72,7 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public List<IpAddressRequest> getIpAddresses() {
+    public List<Property<IpAddressRequest>> getIpAddresses() {
         return ipAddresses;
     }
 
@@ -80,11 +81,11 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public void setIpAddresses(List<IpAddressRequest> ipAddresses) {
+    public void setIpAddresses(List<Property<IpAddressRequest>> ipAddresses) {
         this.ipAddresses = ipAddresses;
     }
 
-    public ResolverEndpoint withIpAddresses(List<IpAddressRequest> ipAddresses) {
+    public ResolverEndpoint withIpAddresses(List<Property<IpAddressRequest>> ipAddresses) {
         this.ipAddresses = ipAddresses;
         return this;
     }
@@ -140,7 +141,7 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -149,11 +150,11 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public ResolverEndpoint withTags(List<Tag> tags) {
+    public ResolverEndpoint withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

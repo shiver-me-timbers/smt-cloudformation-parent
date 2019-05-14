@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,7 @@ public class ReceiptFilter {
      */
     @JsonProperty("Filter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html")
-    private Filter filter;
+    private Property<Filter> filter;
 
     /**
      * Filter
@@ -40,7 +41,7 @@ public class ReceiptFilter {
      * 
      */
     @JsonIgnore
-    public Filter getFilter() {
+    public Property<Filter> getFilter() {
         return filter;
     }
 
@@ -51,11 +52,11 @@ public class ReceiptFilter {
      * 
      */
     @JsonIgnore
-    public void setFilter(Filter filter) {
+    public void setFilter(Property<Filter> filter) {
         this.filter = filter;
     }
 
-    public ReceiptFilter withFilter(Filter filter) {
+    public ReceiptFilter withFilter(Property<Filter> filter) {
         this.filter = filter;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "S3Key"
 })
-public class NotificationFilter {
+public class NotificationFilter implements Property<NotificationFilter>
+{
 
     /**
      * S3KeyFilter
@@ -31,7 +33,7 @@ public class NotificationFilter {
      */
     @JsonProperty("S3Key")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html")
-    private S3KeyFilter s3Key;
+    private Property<S3KeyFilter> s3Key;
 
     /**
      * S3KeyFilter
@@ -40,7 +42,7 @@ public class NotificationFilter {
      * 
      */
     @JsonIgnore
-    public S3KeyFilter getS3Key() {
+    public Property<S3KeyFilter> getS3Key() {
         return s3Key;
     }
 
@@ -51,11 +53,11 @@ public class NotificationFilter {
      * 
      */
     @JsonIgnore
-    public void setS3Key(S3KeyFilter s3Key) {
+    public void setS3Key(Property<S3KeyFilter> s3Key) {
         this.s3Key = s3Key;
     }
 
-    public NotificationFilter withS3Key(S3KeyFilter s3Key) {
+    public NotificationFilter withS3Key(Property<S3KeyFilter> s3Key) {
         this.s3Key = s3Key;
         return this;
     }

@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectors",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Greengrass_ConnectorDefinition.Connector.schema.json"
+        "$ref" : "AWS_Greengrass_ConnectorDefinition.Connector.schema.json",
+        "javaType" : "aws.Property<aws.greengrass.Connector>"
       }
     },
     "ConnectorDefinitionId" : {

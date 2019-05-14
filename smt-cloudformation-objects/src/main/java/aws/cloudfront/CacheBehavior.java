@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,7 +37,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MinTTL",
     "MaxTTL"
 })
-public class CacheBehavior {
+public class CacheBehavior implements Property<CacheBehavior>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-compress
@@ -51,7 +53,7 @@ public class CacheBehavior {
      */
     @JsonProperty("LambdaFunctionAssociations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-lambdafunctionassociations")
-    private List<LambdaFunctionAssociation> lambdaFunctionAssociations = new ArrayList<LambdaFunctionAssociation>();
+    private List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations = new ArrayList<Property<LambdaFunctionAssociation>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-targetoriginid
      * 
@@ -123,7 +125,7 @@ public class CacheBehavior {
      */
     @JsonProperty("ForwardedValues")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html")
-    private ForwardedValues forwardedValues;
+    private Property<ForwardedValues> forwardedValues;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-cachebehavior.html#cfn-cloudfront-distribution-cachebehavior-minttl
      * 
@@ -167,7 +169,7 @@ public class CacheBehavior {
      * 
      */
     @JsonIgnore
-    public List<LambdaFunctionAssociation> getLambdaFunctionAssociations() {
+    public List<Property<LambdaFunctionAssociation>> getLambdaFunctionAssociations() {
         return lambdaFunctionAssociations;
     }
 
@@ -176,11 +178,11 @@ public class CacheBehavior {
      * 
      */
     @JsonIgnore
-    public void setLambdaFunctionAssociations(List<LambdaFunctionAssociation> lambdaFunctionAssociations) {
+    public void setLambdaFunctionAssociations(List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations) {
         this.lambdaFunctionAssociations = lambdaFunctionAssociations;
     }
 
-    public CacheBehavior withLambdaFunctionAssociations(List<LambdaFunctionAssociation> lambdaFunctionAssociations) {
+    public CacheBehavior withLambdaFunctionAssociations(List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations) {
         this.lambdaFunctionAssociations = lambdaFunctionAssociations;
         return this;
     }
@@ -399,7 +401,7 @@ public class CacheBehavior {
      * 
      */
     @JsonIgnore
-    public ForwardedValues getForwardedValues() {
+    public Property<ForwardedValues> getForwardedValues() {
         return forwardedValues;
     }
 
@@ -410,11 +412,11 @@ public class CacheBehavior {
      * 
      */
     @JsonIgnore
-    public void setForwardedValues(ForwardedValues forwardedValues) {
+    public void setForwardedValues(Property<ForwardedValues> forwardedValues) {
         this.forwardedValues = forwardedValues;
     }
 
-    public CacheBehavior withForwardedValues(ForwardedValues forwardedValues) {
+    public CacheBehavior withForwardedValues(Property<ForwardedValues> forwardedValues) {
         this.forwardedValues = forwardedValues;
         return this;
     }

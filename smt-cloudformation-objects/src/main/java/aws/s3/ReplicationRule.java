@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SourceSelectionCriteria",
     "Status"
 })
-public class ReplicationRule {
+public class ReplicationRule implements Property<ReplicationRule>
+{
 
     /**
      * ReplicationDestination
@@ -35,7 +37,7 @@ public class ReplicationRule {
      */
     @JsonProperty("Destination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html")
-    private ReplicationDestination destination;
+    private Property<ReplicationDestination> destination;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-id
      * 
@@ -58,7 +60,7 @@ public class ReplicationRule {
      */
     @JsonProperty("SourceSelectionCriteria")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-sourceselectioncriteria.html")
-    private SourceSelectionCriteria sourceSelectionCriteria;
+    private Property<SourceSelectionCriteria> sourceSelectionCriteria;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html#cfn-s3-bucket-replicationconfiguration-rules-status
      * 
@@ -74,7 +76,7 @@ public class ReplicationRule {
      * 
      */
     @JsonIgnore
-    public ReplicationDestination getDestination() {
+    public Property<ReplicationDestination> getDestination() {
         return destination;
     }
 
@@ -85,11 +87,11 @@ public class ReplicationRule {
      * 
      */
     @JsonIgnore
-    public void setDestination(ReplicationDestination destination) {
+    public void setDestination(Property<ReplicationDestination> destination) {
         this.destination = destination;
     }
 
-    public ReplicationRule withDestination(ReplicationDestination destination) {
+    public ReplicationRule withDestination(Property<ReplicationDestination> destination) {
         this.destination = destination;
         return this;
     }
@@ -147,7 +149,7 @@ public class ReplicationRule {
      * 
      */
     @JsonIgnore
-    public SourceSelectionCriteria getSourceSelectionCriteria() {
+    public Property<SourceSelectionCriteria> getSourceSelectionCriteria() {
         return sourceSelectionCriteria;
     }
 
@@ -158,11 +160,11 @@ public class ReplicationRule {
      * 
      */
     @JsonIgnore
-    public void setSourceSelectionCriteria(SourceSelectionCriteria sourceSelectionCriteria) {
+    public void setSourceSelectionCriteria(Property<SourceSelectionCriteria> sourceSelectionCriteria) {
         this.sourceSelectionCriteria = sourceSelectionCriteria;
     }
 
-    public ReplicationRule withSourceSelectionCriteria(SourceSelectionCriteria sourceSelectionCriteria) {
+    public ReplicationRule withSourceSelectionCriteria(Property<SourceSelectionCriteria> sourceSelectionCriteria) {
         this.sourceSelectionCriteria = sourceSelectionCriteria;
         return this;
     }

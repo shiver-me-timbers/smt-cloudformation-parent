@@ -1,6 +1,7 @@
 
 package aws.elasticloadbalancing;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "S3BucketName",
     "S3BucketPrefix"
 })
-public class AccessLoggingPolicy {
+public class AccessLoggingPolicy implements Property<AccessLoggingPolicy>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval

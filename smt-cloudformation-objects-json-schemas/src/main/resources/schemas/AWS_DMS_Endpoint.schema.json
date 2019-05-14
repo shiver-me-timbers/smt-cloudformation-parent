@@ -22,11 +22,13 @@
     },
     "ElasticsearchSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-elasticsearchsettings",
-      "$ref" : "AWS_DMS_Endpoint.ElasticsearchSettings.schema.json"
+      "$ref" : "AWS_DMS_Endpoint.ElasticsearchSettings.schema.json",
+      "javaType" : "aws.Property<aws.dms.ElasticsearchSettings>"
     },
     "S3Settings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-s3settings",
-      "$ref" : "AWS_DMS_Endpoint.S3Settings.schema.json"
+      "$ref" : "AWS_DMS_Endpoint.S3Settings.schema.json",
+      "javaType" : "aws.Property<aws.dms.S3Settings>"
     },
     "EngineName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename",
@@ -35,11 +37,13 @@
     },
     "DynamoDbSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-dynamodbsettings",
-      "$ref" : "AWS_DMS_Endpoint.DynamoDbSettings.schema.json"
+      "$ref" : "AWS_DMS_Endpoint.DynamoDbSettings.schema.json",
+      "javaType" : "aws.Property<aws.dms.DynamoDbSettings>"
     },
     "KinesisSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kinesissettings",
-      "$ref" : "AWS_DMS_Endpoint.KinesisSettings.schema.json"
+      "$ref" : "AWS_DMS_Endpoint.KinesisSettings.schema.json",
+      "javaType" : "aws.Property<aws.dms.KinesisSettings>"
     },
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username",
@@ -70,7 +74,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "EndpointIdentifier" : {
@@ -90,7 +95,8 @@
     },
     "MongoDbSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-mongodbsettings",
-      "$ref" : "AWS_DMS_Endpoint.MongoDbSettings.schema.json"
+      "$ref" : "AWS_DMS_Endpoint.MongoDbSettings.schema.json",
+      "javaType" : "aws.Property<aws.dms.MongoDbSettings>"
     }
   }
 }

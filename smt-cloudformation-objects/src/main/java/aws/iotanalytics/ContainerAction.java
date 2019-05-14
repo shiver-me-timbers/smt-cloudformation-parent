@@ -3,6 +3,7 @@ package aws.iotanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Image",
     "ResourceConfiguration"
 })
-public class ContainerAction {
+public class ContainerAction implements Property<ContainerAction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-variables
@@ -34,7 +36,7 @@ public class ContainerAction {
      */
     @JsonProperty("Variables")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-variables")
-    private List<Variable> variables = new ArrayList<Variable>();
+    private List<Property<Variable>> variables = new ArrayList<Property<Variable>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-executionrolearn
      * 
@@ -57,14 +59,14 @@ public class ContainerAction {
      */
     @JsonProperty("ResourceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-resourceconfiguration.html")
-    private ResourceConfiguration resourceConfiguration;
+    private Property<ResourceConfiguration> resourceConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html#cfn-iotanalytics-dataset-containeraction-variables
      * 
      */
     @JsonIgnore
-    public List<Variable> getVariables() {
+    public List<Property<Variable>> getVariables() {
         return variables;
     }
 
@@ -73,11 +75,11 @@ public class ContainerAction {
      * 
      */
     @JsonIgnore
-    public void setVariables(List<Variable> variables) {
+    public void setVariables(List<Property<Variable>> variables) {
         this.variables = variables;
     }
 
-    public ContainerAction withVariables(List<Variable> variables) {
+    public ContainerAction withVariables(List<Property<Variable>> variables) {
         this.variables = variables;
         return this;
     }
@@ -135,7 +137,7 @@ public class ContainerAction {
      * 
      */
     @JsonIgnore
-    public ResourceConfiguration getResourceConfiguration() {
+    public Property<ResourceConfiguration> getResourceConfiguration() {
         return resourceConfiguration;
     }
 
@@ -146,11 +148,11 @@ public class ContainerAction {
      * 
      */
     @JsonIgnore
-    public void setResourceConfiguration(ResourceConfiguration resourceConfiguration) {
+    public void setResourceConfiguration(Property<ResourceConfiguration> resourceConfiguration) {
         this.resourceConfiguration = resourceConfiguration;
     }
 
-    public ContainerAction withResourceConfiguration(ResourceConfiguration resourceConfiguration) {
+    public ContainerAction withResourceConfiguration(Property<ResourceConfiguration> resourceConfiguration) {
         this.resourceConfiguration = resourceConfiguration;
         return this;
     }

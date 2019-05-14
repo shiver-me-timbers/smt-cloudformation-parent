@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "OnPremisesTagGroup"
 })
-public class OnPremisesTagSetListObject {
+public class OnPremisesTagSetListObject implements Property<OnPremisesTagSetListObject>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagsetlistobject.html#cfn-codedeploy-deploymentgroup-onpremisestagsetlistobject-onpremisestaggroup
@@ -33,14 +35,14 @@ public class OnPremisesTagSetListObject {
     @JsonProperty("OnPremisesTagGroup")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagsetlistobject.html#cfn-codedeploy-deploymentgroup-onpremisestagsetlistobject-onpremisestaggroup")
-    private Set<TagFilter> onPremisesTagGroup = new LinkedHashSet<TagFilter>();
+    private Set<Property<TagFilter>> onPremisesTagGroup = new LinkedHashSet<Property<TagFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagsetlistobject.html#cfn-codedeploy-deploymentgroup-onpremisestagsetlistobject-onpremisestaggroup
      * 
      */
     @JsonIgnore
-    public Set<TagFilter> getOnPremisesTagGroup() {
+    public Set<Property<TagFilter>> getOnPremisesTagGroup() {
         return onPremisesTagGroup;
     }
 
@@ -49,11 +51,11 @@ public class OnPremisesTagSetListObject {
      * 
      */
     @JsonIgnore
-    public void setOnPremisesTagGroup(Set<TagFilter> onPremisesTagGroup) {
+    public void setOnPremisesTagGroup(Set<Property<TagFilter>> onPremisesTagGroup) {
         this.onPremisesTagGroup = onPremisesTagGroup;
     }
 
-    public OnPremisesTagSetListObject withOnPremisesTagGroup(Set<TagFilter> onPremisesTagGroup) {
+    public OnPremisesTagSetListObject withOnPremisesTagGroup(Set<Property<TagFilter>> onPremisesTagGroup) {
         this.onPremisesTagGroup = onPremisesTagGroup;
         return this;
     }

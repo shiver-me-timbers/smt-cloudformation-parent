@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SqlApplicationConfiguration",
     "ApplicationSnapshotConfiguration"
 })
-public class ApplicationConfiguration {
+public class ApplicationConfiguration implements Property<ApplicationConfiguration>
+{
 
     /**
      * ApplicationCodeConfiguration
@@ -35,7 +37,7 @@ public class ApplicationConfiguration {
      */
     @JsonProperty("ApplicationCodeConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationcodeconfiguration.html")
-    private ApplicationCodeConfiguration applicationCodeConfiguration;
+    private Property<ApplicationCodeConfiguration> applicationCodeConfiguration;
     /**
      * EnvironmentProperties
      * <p>
@@ -44,7 +46,7 @@ public class ApplicationConfiguration {
      */
     @JsonProperty("EnvironmentProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-environmentproperties.html")
-    private EnvironmentProperties environmentProperties;
+    private Property<EnvironmentProperties> environmentProperties;
     /**
      * FlinkApplicationConfiguration
      * <p>
@@ -53,7 +55,7 @@ public class ApplicationConfiguration {
      */
     @JsonProperty("FlinkApplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html")
-    private FlinkApplicationConfiguration flinkApplicationConfiguration;
+    private Property<FlinkApplicationConfiguration> flinkApplicationConfiguration;
     /**
      * SqlApplicationConfiguration
      * <p>
@@ -62,7 +64,7 @@ public class ApplicationConfiguration {
      */
     @JsonProperty("SqlApplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html")
-    private SqlApplicationConfiguration sqlApplicationConfiguration;
+    private Property<SqlApplicationConfiguration> sqlApplicationConfiguration;
     /**
      * ApplicationSnapshotConfiguration
      * <p>
@@ -71,7 +73,7 @@ public class ApplicationConfiguration {
      */
     @JsonProperty("ApplicationSnapshotConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration.html")
-    private ApplicationSnapshotConfiguration applicationSnapshotConfiguration;
+    private Property<ApplicationSnapshotConfiguration> applicationSnapshotConfiguration;
 
     /**
      * ApplicationCodeConfiguration
@@ -80,7 +82,7 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public ApplicationCodeConfiguration getApplicationCodeConfiguration() {
+    public Property<ApplicationCodeConfiguration> getApplicationCodeConfiguration() {
         return applicationCodeConfiguration;
     }
 
@@ -91,11 +93,11 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setApplicationCodeConfiguration(ApplicationCodeConfiguration applicationCodeConfiguration) {
+    public void setApplicationCodeConfiguration(Property<ApplicationCodeConfiguration> applicationCodeConfiguration) {
         this.applicationCodeConfiguration = applicationCodeConfiguration;
     }
 
-    public ApplicationConfiguration withApplicationCodeConfiguration(ApplicationCodeConfiguration applicationCodeConfiguration) {
+    public ApplicationConfiguration withApplicationCodeConfiguration(Property<ApplicationCodeConfiguration> applicationCodeConfiguration) {
         this.applicationCodeConfiguration = applicationCodeConfiguration;
         return this;
     }
@@ -107,7 +109,7 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public EnvironmentProperties getEnvironmentProperties() {
+    public Property<EnvironmentProperties> getEnvironmentProperties() {
         return environmentProperties;
     }
 
@@ -118,11 +120,11 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setEnvironmentProperties(EnvironmentProperties environmentProperties) {
+    public void setEnvironmentProperties(Property<EnvironmentProperties> environmentProperties) {
         this.environmentProperties = environmentProperties;
     }
 
-    public ApplicationConfiguration withEnvironmentProperties(EnvironmentProperties environmentProperties) {
+    public ApplicationConfiguration withEnvironmentProperties(Property<EnvironmentProperties> environmentProperties) {
         this.environmentProperties = environmentProperties;
         return this;
     }
@@ -134,7 +136,7 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public FlinkApplicationConfiguration getFlinkApplicationConfiguration() {
+    public Property<FlinkApplicationConfiguration> getFlinkApplicationConfiguration() {
         return flinkApplicationConfiguration;
     }
 
@@ -145,11 +147,11 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setFlinkApplicationConfiguration(FlinkApplicationConfiguration flinkApplicationConfiguration) {
+    public void setFlinkApplicationConfiguration(Property<FlinkApplicationConfiguration> flinkApplicationConfiguration) {
         this.flinkApplicationConfiguration = flinkApplicationConfiguration;
     }
 
-    public ApplicationConfiguration withFlinkApplicationConfiguration(FlinkApplicationConfiguration flinkApplicationConfiguration) {
+    public ApplicationConfiguration withFlinkApplicationConfiguration(Property<FlinkApplicationConfiguration> flinkApplicationConfiguration) {
         this.flinkApplicationConfiguration = flinkApplicationConfiguration;
         return this;
     }
@@ -161,7 +163,7 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public SqlApplicationConfiguration getSqlApplicationConfiguration() {
+    public Property<SqlApplicationConfiguration> getSqlApplicationConfiguration() {
         return sqlApplicationConfiguration;
     }
 
@@ -172,11 +174,11 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setSqlApplicationConfiguration(SqlApplicationConfiguration sqlApplicationConfiguration) {
+    public void setSqlApplicationConfiguration(Property<SqlApplicationConfiguration> sqlApplicationConfiguration) {
         this.sqlApplicationConfiguration = sqlApplicationConfiguration;
     }
 
-    public ApplicationConfiguration withSqlApplicationConfiguration(SqlApplicationConfiguration sqlApplicationConfiguration) {
+    public ApplicationConfiguration withSqlApplicationConfiguration(Property<SqlApplicationConfiguration> sqlApplicationConfiguration) {
         this.sqlApplicationConfiguration = sqlApplicationConfiguration;
         return this;
     }
@@ -188,7 +190,7 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public ApplicationSnapshotConfiguration getApplicationSnapshotConfiguration() {
+    public Property<ApplicationSnapshotConfiguration> getApplicationSnapshotConfiguration() {
         return applicationSnapshotConfiguration;
     }
 
@@ -199,11 +201,11 @@ public class ApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setApplicationSnapshotConfiguration(ApplicationSnapshotConfiguration applicationSnapshotConfiguration) {
+    public void setApplicationSnapshotConfiguration(Property<ApplicationSnapshotConfiguration> applicationSnapshotConfiguration) {
         this.applicationSnapshotConfiguration = applicationSnapshotConfiguration;
     }
 
-    public ApplicationConfiguration withApplicationSnapshotConfiguration(ApplicationSnapshotConfiguration applicationSnapshotConfiguration) {
+    public ApplicationConfiguration withApplicationSnapshotConfiguration(Property<ApplicationSnapshotConfiguration> applicationSnapshotConfiguration) {
         this.applicationSnapshotConfiguration = applicationSnapshotConfiguration;
         return this;
     }

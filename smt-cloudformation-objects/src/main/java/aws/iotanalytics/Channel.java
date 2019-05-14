@@ -3,6 +3,7 @@ package aws.iotanalytics;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -43,14 +44,14 @@ public class Channel {
      */
     @JsonProperty("RetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html")
-    private RetentionPeriod retentionPeriod;
+    private Property<RetentionPeriod> retentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-channelname
@@ -82,7 +83,7 @@ public class Channel {
      * 
      */
     @JsonIgnore
-    public RetentionPeriod getRetentionPeriod() {
+    public Property<RetentionPeriod> getRetentionPeriod() {
         return retentionPeriod;
     }
 
@@ -93,11 +94,11 @@ public class Channel {
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriod(RetentionPeriod retentionPeriod) {
+    public void setRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
     }
 
-    public Channel withRetentionPeriod(RetentionPeriod retentionPeriod) {
+    public Channel withRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
         return this;
     }
@@ -107,7 +108,7 @@ public class Channel {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -116,11 +117,11 @@ public class Channel {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Channel withTags(List<Tag> tags) {
+    public Channel withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "IgnorePollAlarmFailure"
 })
-public class AlarmConfiguration {
+public class AlarmConfiguration implements Property<AlarmConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms
@@ -35,7 +37,7 @@ public class AlarmConfiguration {
     @JsonProperty("Alarms")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms")
-    private Set<Alarm> alarms = new LinkedHashSet<Alarm>();
+    private Set<Property<Alarm>> alarms = new LinkedHashSet<Property<Alarm>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
      * 
@@ -56,7 +58,7 @@ public class AlarmConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<Alarm> getAlarms() {
+    public Set<Property<Alarm>> getAlarms() {
         return alarms;
     }
 
@@ -65,11 +67,11 @@ public class AlarmConfiguration {
      * 
      */
     @JsonIgnore
-    public void setAlarms(Set<Alarm> alarms) {
+    public void setAlarms(Set<Property<Alarm>> alarms) {
         this.alarms = alarms;
     }
 
-    public AlarmConfiguration withAlarms(Set<Alarm> alarms) {
+    public AlarmConfiguration withAlarms(Set<Property<Alarm>> alarms) {
         this.alarms = alarms;
         return this;
     }

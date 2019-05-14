@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Action",
     "Match"
 })
-public class HttpRoute {
+public class HttpRoute implements Property<HttpRoute>
+{
 
     /**
      * HttpRouteAction
@@ -32,7 +34,7 @@ public class HttpRoute {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httprouteaction.html")
-    private HttpRouteAction action;
+    private Property<HttpRouteAction> action;
     /**
      * HttpRouteMatch
      * <p>
@@ -41,7 +43,7 @@ public class HttpRoute {
      */
     @JsonProperty("Match")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproutematch.html")
-    private HttpRouteMatch match;
+    private Property<HttpRouteMatch> match;
 
     /**
      * HttpRouteAction
@@ -50,7 +52,7 @@ public class HttpRoute {
      * 
      */
     @JsonIgnore
-    public HttpRouteAction getAction() {
+    public Property<HttpRouteAction> getAction() {
         return action;
     }
 
@@ -61,11 +63,11 @@ public class HttpRoute {
      * 
      */
     @JsonIgnore
-    public void setAction(HttpRouteAction action) {
+    public void setAction(Property<HttpRouteAction> action) {
         this.action = action;
     }
 
-    public HttpRoute withAction(HttpRouteAction action) {
+    public HttpRoute withAction(Property<HttpRouteAction> action) {
         this.action = action;
         return this;
     }
@@ -77,7 +79,7 @@ public class HttpRoute {
      * 
      */
     @JsonIgnore
-    public HttpRouteMatch getMatch() {
+    public Property<HttpRouteMatch> getMatch() {
         return match;
     }
 
@@ -88,11 +90,11 @@ public class HttpRoute {
      * 
      */
     @JsonIgnore
-    public void setMatch(HttpRouteMatch match) {
+    public void setMatch(Property<HttpRouteMatch> match) {
         this.match = match;
     }
 
-    public HttpRoute withMatch(HttpRouteMatch match) {
+    public HttpRoute withMatch(Property<HttpRouteMatch> match) {
         this.match = match;
         return this;
     }

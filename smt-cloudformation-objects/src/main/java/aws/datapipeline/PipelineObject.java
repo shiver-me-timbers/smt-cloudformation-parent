@@ -3,6 +3,7 @@ package aws.datapipeline;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Id",
     "Name"
 })
-public class PipelineObject {
+public class PipelineObject implements Property<PipelineObject>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields
@@ -33,7 +35,7 @@ public class PipelineObject {
      */
     @JsonProperty("Fields")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields")
-    private List<Field> fields = new ArrayList<Field>();
+    private List<Property<Field>> fields = new ArrayList<Property<Field>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-id
      * 
@@ -54,7 +56,7 @@ public class PipelineObject {
      * 
      */
     @JsonIgnore
-    public List<Field> getFields() {
+    public List<Property<Field>> getFields() {
         return fields;
     }
 
@@ -63,11 +65,11 @@ public class PipelineObject {
      * 
      */
     @JsonIgnore
-    public void setFields(List<Field> fields) {
+    public void setFields(List<Property<Field>> fields) {
         this.fields = fields;
     }
 
-    public PipelineObject withFields(List<Field> fields) {
+    public PipelineObject withFields(List<Property<Field>> fields) {
         this.fields = fields;
         return this;
     }

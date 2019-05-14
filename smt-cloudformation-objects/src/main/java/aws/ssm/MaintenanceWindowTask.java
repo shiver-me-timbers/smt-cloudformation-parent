@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -78,7 +79,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("Targets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets")
-    private List<Target> targets = new ArrayList<Target>();
+    private List<Property<Target>> targets = new ArrayList<Property<Target>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-name
      * 
@@ -101,7 +102,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("TaskInvocationParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html")
-    private TaskInvocationParameters taskInvocationParameters;
+    private Property<TaskInvocationParameters> taskInvocationParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid
      * 
@@ -131,7 +132,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("LoggingInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html")
-    private LoggingInfo loggingInfo;
+    private Property<LoggingInfo> loggingInfo;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors
@@ -253,7 +254,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public List<Target> getTargets() {
+    public List<Property<Target>> getTargets() {
         return targets;
     }
 
@@ -262,11 +263,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public void setTargets(List<Target> targets) {
+    public void setTargets(List<Property<Target>> targets) {
         this.targets = targets;
     }
 
-    public MaintenanceWindowTask withTargets(List<Target> targets) {
+    public MaintenanceWindowTask withTargets(List<Property<Target>> targets) {
         this.targets = targets;
         return this;
     }
@@ -324,7 +325,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public TaskInvocationParameters getTaskInvocationParameters() {
+    public Property<TaskInvocationParameters> getTaskInvocationParameters() {
         return taskInvocationParameters;
     }
 
@@ -335,11 +336,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public void setTaskInvocationParameters(TaskInvocationParameters taskInvocationParameters) {
+    public void setTaskInvocationParameters(Property<TaskInvocationParameters> taskInvocationParameters) {
         this.taskInvocationParameters = taskInvocationParameters;
     }
 
-    public MaintenanceWindowTask withTaskInvocationParameters(TaskInvocationParameters taskInvocationParameters) {
+    public MaintenanceWindowTask withTaskInvocationParameters(Property<TaskInvocationParameters> taskInvocationParameters) {
         this.taskInvocationParameters = taskInvocationParameters;
         return this;
     }
@@ -420,7 +421,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public LoggingInfo getLoggingInfo() {
+    public Property<LoggingInfo> getLoggingInfo() {
         return loggingInfo;
     }
 
@@ -431,11 +432,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public void setLoggingInfo(LoggingInfo loggingInfo) {
+    public void setLoggingInfo(Property<LoggingInfo> loggingInfo) {
         this.loggingInfo = loggingInfo;
     }
 
-    public MaintenanceWindowTask withLoggingInfo(LoggingInfo loggingInfo) {
+    public MaintenanceWindowTask withLoggingInfo(Property<LoggingInfo> loggingInfo) {
         this.loggingInfo = loggingInfo;
         return this;
     }

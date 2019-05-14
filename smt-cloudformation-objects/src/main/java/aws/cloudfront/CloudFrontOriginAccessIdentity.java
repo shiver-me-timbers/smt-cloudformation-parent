@@ -1,6 +1,7 @@
 
 package aws.cloudfront;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,7 @@ public class CloudFrontOriginAccessIdentity {
      */
     @JsonProperty("CloudFrontOriginAccessIdentityConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html")
-    private CloudFrontOriginAccessIdentityConfig cloudFrontOriginAccessIdentityConfig;
+    private Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig;
 
     /**
      * CloudFrontOriginAccessIdentityConfig
@@ -40,7 +41,7 @@ public class CloudFrontOriginAccessIdentity {
      * 
      */
     @JsonIgnore
-    public CloudFrontOriginAccessIdentityConfig getCloudFrontOriginAccessIdentityConfig() {
+    public Property<CloudFrontOriginAccessIdentityConfig> getCloudFrontOriginAccessIdentityConfig() {
         return cloudFrontOriginAccessIdentityConfig;
     }
 
@@ -51,11 +52,11 @@ public class CloudFrontOriginAccessIdentity {
      * 
      */
     @JsonIgnore
-    public void setCloudFrontOriginAccessIdentityConfig(CloudFrontOriginAccessIdentityConfig cloudFrontOriginAccessIdentityConfig) {
+    public void setCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
         this.cloudFrontOriginAccessIdentityConfig = cloudFrontOriginAccessIdentityConfig;
     }
 
-    public CloudFrontOriginAccessIdentity withCloudFrontOriginAccessIdentityConfig(CloudFrontOriginAccessIdentityConfig cloudFrontOriginAccessIdentityConfig) {
+    public CloudFrontOriginAccessIdentity withCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
         this.cloudFrontOriginAccessIdentityConfig = cloudFrontOriginAccessIdentityConfig;
         return this;
     }

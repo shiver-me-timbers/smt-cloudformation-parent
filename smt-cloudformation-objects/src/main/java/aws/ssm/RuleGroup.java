@@ -3,6 +3,7 @@ package aws.ssm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "PatchRules"
 })
-public class RuleGroup {
+public class RuleGroup implements Property<RuleGroup>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html#cfn-ssm-patchbaseline-rulegroup-patchrules
@@ -31,14 +33,14 @@ public class RuleGroup {
      */
     @JsonProperty("PatchRules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html#cfn-ssm-patchbaseline-rulegroup-patchrules")
-    private List<Rule> patchRules = new ArrayList<Rule>();
+    private List<Property<Rule>> patchRules = new ArrayList<Property<Rule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html#cfn-ssm-patchbaseline-rulegroup-patchrules
      * 
      */
     @JsonIgnore
-    public List<Rule> getPatchRules() {
+    public List<Property<Rule>> getPatchRules() {
         return patchRules;
     }
 
@@ -47,11 +49,11 @@ public class RuleGroup {
      * 
      */
     @JsonIgnore
-    public void setPatchRules(List<Rule> patchRules) {
+    public void setPatchRules(List<Property<Rule>> patchRules) {
         this.patchRules = patchRules;
     }
 
-    public RuleGroup withPatchRules(List<Rule> patchRules) {
+    public RuleGroup withPatchRules(List<Property<Rule>> patchRules) {
         this.patchRules = patchRules;
         return this;
     }

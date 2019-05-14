@@ -1,6 +1,7 @@
 
 package aws.applicationautoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ScaleOutCooldown",
     "TargetValue"
 })
-public class TargetTrackingScalingPolicyConfiguration {
+public class TargetTrackingScalingPolicyConfiguration implements Property<TargetTrackingScalingPolicyConfiguration>
+{
 
     /**
      * CustomizedMetricSpecification
@@ -36,7 +38,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      */
     @JsonProperty("CustomizedMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-customizedmetricspecification.html")
-    private CustomizedMetricSpecification customizedMetricSpecification;
+    private Property<CustomizedMetricSpecification> customizedMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-disablescalein
      * 
@@ -52,7 +54,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      */
     @JsonProperty("PredefinedMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-predefinedmetricspecification.html")
-    private PredefinedMetricSpecification predefinedMetricSpecification;
+    private Property<PredefinedMetricSpecification> predefinedMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration-scaleincooldown
      * 
@@ -82,7 +84,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public CustomizedMetricSpecification getCustomizedMetricSpecification() {
+    public Property<CustomizedMetricSpecification> getCustomizedMetricSpecification() {
         return customizedMetricSpecification;
     }
 
@@ -93,11 +95,11 @@ public class TargetTrackingScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public void setCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
+    public void setCustomizedMetricSpecification(Property<CustomizedMetricSpecification> customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
     }
 
-    public TargetTrackingScalingPolicyConfiguration withCustomizedMetricSpecification(CustomizedMetricSpecification customizedMetricSpecification) {
+    public TargetTrackingScalingPolicyConfiguration withCustomizedMetricSpecification(Property<CustomizedMetricSpecification> customizedMetricSpecification) {
         this.customizedMetricSpecification = customizedMetricSpecification;
         return this;
     }
@@ -132,7 +134,7 @@ public class TargetTrackingScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public PredefinedMetricSpecification getPredefinedMetricSpecification() {
+    public Property<PredefinedMetricSpecification> getPredefinedMetricSpecification() {
         return predefinedMetricSpecification;
     }
 
@@ -143,11 +145,11 @@ public class TargetTrackingScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public void setPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
+    public void setPredefinedMetricSpecification(Property<PredefinedMetricSpecification> predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
     }
 
-    public TargetTrackingScalingPolicyConfiguration withPredefinedMetricSpecification(PredefinedMetricSpecification predefinedMetricSpecification) {
+    public TargetTrackingScalingPolicyConfiguration withPredefinedMetricSpecification(Property<PredefinedMetricSpecification> predefinedMetricSpecification) {
         this.predefinedMetricSpecification = predefinedMetricSpecification;
         return this;
     }

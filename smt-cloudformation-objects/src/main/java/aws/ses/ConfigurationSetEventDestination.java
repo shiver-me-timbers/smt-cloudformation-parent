@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class ConfigurationSetEventDestination {
      */
     @JsonProperty("EventDestination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html")
-    private EventDestination eventDestination;
+    private Property<EventDestination> eventDestination;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html#cfn-ses-configurationseteventdestination-configurationsetname
@@ -71,7 +72,7 @@ public class ConfigurationSetEventDestination {
      * 
      */
     @JsonIgnore
-    public EventDestination getEventDestination() {
+    public Property<EventDestination> getEventDestination() {
         return eventDestination;
     }
 
@@ -82,11 +83,11 @@ public class ConfigurationSetEventDestination {
      * 
      */
     @JsonIgnore
-    public void setEventDestination(EventDestination eventDestination) {
+    public void setEventDestination(Property<EventDestination> eventDestination) {
         this.eventDestination = eventDestination;
     }
 
-    public ConfigurationSetEventDestination withEventDestination(EventDestination eventDestination) {
+    public ConfigurationSetEventDestination withEventDestination(Property<EventDestination> eventDestination) {
         this.eventDestination = eventDestination;
         return this;
     }

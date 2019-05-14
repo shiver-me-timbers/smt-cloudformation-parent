@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -43,7 +44,7 @@ public class VirtualNode {
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html")
-    private VirtualNodeSpec spec;
+    private Property<VirtualNodeSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-virtualnodename
      * 
@@ -57,7 +58,7 @@ public class VirtualNode {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-tags")
-    private List<TagRef> tags = new ArrayList<TagRef>();
+    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshname
@@ -89,7 +90,7 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public VirtualNodeSpec getSpec() {
+    public Property<VirtualNodeSpec> getSpec() {
         return spec;
     }
 
@@ -100,11 +101,11 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public void setSpec(VirtualNodeSpec spec) {
+    public void setSpec(Property<VirtualNodeSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualNode withSpec(VirtualNodeSpec spec) {
+    public VirtualNode withSpec(Property<VirtualNodeSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -137,7 +138,7 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public List<TagRef> getTags() {
+    public List<Property<TagRef>> getTags() {
         return tags;
     }
 
@@ -146,11 +147,11 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRef> tags) {
+    public void setTags(List<Property<TagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualNode withTags(List<TagRef> tags) {
+    public VirtualNode withTags(List<Property<TagRef>> tags) {
         this.tags = tags;
         return this;
     }

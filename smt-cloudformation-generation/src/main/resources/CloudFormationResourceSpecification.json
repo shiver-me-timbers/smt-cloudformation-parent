@@ -6771,7 +6771,7 @@
     },
     "AWS::EC2::Instance.NoDevice": {
       "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-nodevice.html",
-      "Properties": {}
+      "Properties": { }
     },
     "AWS::AutoScaling::ScalingPolicy.StepAdjustment": {
       "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html",
@@ -35166,7 +35166,7 @@
     },
     "AWS::CloudFormation::WaitConditionHandle": {
       "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitconditionhandle.html",
-      "Properties": {}
+      "Properties": { }
     },
     "AWS::SSM::MaintenanceWindow": {
       "Documentation": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindow.html",

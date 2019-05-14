@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html",
   "type" : "object",
   "javaType" : "aws.dynamodb.ProvisionedThroughput",
+  "javaInterfaces" : [ "aws.Property<ProvisionedThroughput>" ],
   "properties" : {
     "ReadCapacityUnits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html#cfn-dynamodb-provisionedthroughput-readcapacityunits",

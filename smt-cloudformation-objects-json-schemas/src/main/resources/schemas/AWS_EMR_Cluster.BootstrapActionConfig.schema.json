@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html",
   "type" : "object",
   "javaType" : "aws.emr.BootstrapActionConfig",
+  "javaInterfaces" : [ "aws.Property<BootstrapActionConfig>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-name",
@@ -13,7 +14,8 @@
     },
     "ScriptBootstrapAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-bootstrapactionconfig.html#cfn-elasticmapreduce-cluster-bootstrapactionconfig-scriptbootstrapaction",
-      "$ref" : "AWS_EMR_Cluster.ScriptBootstrapActionConfig.schema.json"
+      "$ref" : "AWS_EMR_Cluster.ScriptBootstrapActionConfig.schema.json",
+      "javaType" : "aws.Property<aws.emr.ScriptBootstrapActionConfig>"
     }
   }
 }

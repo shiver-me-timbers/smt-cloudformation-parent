@@ -3,6 +3,7 @@ package aws.cloudfront;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,7 +36,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MinTTL",
     "MaxTTL"
 })
-public class DefaultCacheBehavior {
+public class DefaultCacheBehavior implements Property<DefaultCacheBehavior>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-compress
@@ -50,7 +52,7 @@ public class DefaultCacheBehavior {
      */
     @JsonProperty("LambdaFunctionAssociations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-lambdafunctionassociations")
-    private List<LambdaFunctionAssociation> lambdaFunctionAssociations = new ArrayList<LambdaFunctionAssociation>();
+    private List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations = new ArrayList<Property<LambdaFunctionAssociation>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-targetoriginid
      * 
@@ -115,7 +117,7 @@ public class DefaultCacheBehavior {
      */
     @JsonProperty("ForwardedValues")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html")
-    private ForwardedValues forwardedValues;
+    private Property<ForwardedValues> forwardedValues;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-defaultcachebehavior.html#cfn-cloudfront-distribution-defaultcachebehavior-minttl
      * 
@@ -159,7 +161,7 @@ public class DefaultCacheBehavior {
      * 
      */
     @JsonIgnore
-    public List<LambdaFunctionAssociation> getLambdaFunctionAssociations() {
+    public List<Property<LambdaFunctionAssociation>> getLambdaFunctionAssociations() {
         return lambdaFunctionAssociations;
     }
 
@@ -168,11 +170,11 @@ public class DefaultCacheBehavior {
      * 
      */
     @JsonIgnore
-    public void setLambdaFunctionAssociations(List<LambdaFunctionAssociation> lambdaFunctionAssociations) {
+    public void setLambdaFunctionAssociations(List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations) {
         this.lambdaFunctionAssociations = lambdaFunctionAssociations;
     }
 
-    public DefaultCacheBehavior withLambdaFunctionAssociations(List<LambdaFunctionAssociation> lambdaFunctionAssociations) {
+    public DefaultCacheBehavior withLambdaFunctionAssociations(List<Property<LambdaFunctionAssociation>> lambdaFunctionAssociations) {
         this.lambdaFunctionAssociations = lambdaFunctionAssociations;
         return this;
     }
@@ -368,7 +370,7 @@ public class DefaultCacheBehavior {
      * 
      */
     @JsonIgnore
-    public ForwardedValues getForwardedValues() {
+    public Property<ForwardedValues> getForwardedValues() {
         return forwardedValues;
     }
 
@@ -379,11 +381,11 @@ public class DefaultCacheBehavior {
      * 
      */
     @JsonIgnore
-    public void setForwardedValues(ForwardedValues forwardedValues) {
+    public void setForwardedValues(Property<ForwardedValues> forwardedValues) {
         this.forwardedValues = forwardedValues;
     }
 
-    public DefaultCacheBehavior withForwardedValues(ForwardedValues forwardedValues) {
+    public DefaultCacheBehavior withForwardedValues(Property<ForwardedValues> forwardedValues) {
         this.forwardedValues = forwardedValues;
         return this;
     }

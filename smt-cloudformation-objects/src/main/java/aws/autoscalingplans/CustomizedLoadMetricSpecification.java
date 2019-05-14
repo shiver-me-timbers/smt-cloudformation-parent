@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Unit",
     "Namespace"
 })
-public class CustomizedLoadMetricSpecification {
+public class CustomizedLoadMetricSpecification implements Property<CustomizedLoadMetricSpecification>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedloadmetricspecification-metricname
@@ -49,7 +51,7 @@ public class CustomizedLoadMetricSpecification {
      */
     @JsonProperty("Dimensions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedloadmetricspecification-dimensions")
-    private List<MetricDimension> dimensions = new ArrayList<MetricDimension>();
+    private List<Property<MetricDimension>> dimensions = new ArrayList<Property<MetricDimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html#cfn-autoscalingplans-scalingplan-customizedloadmetricspecification-unit
      * 
@@ -116,7 +118,7 @@ public class CustomizedLoadMetricSpecification {
      * 
      */
     @JsonIgnore
-    public List<MetricDimension> getDimensions() {
+    public List<Property<MetricDimension>> getDimensions() {
         return dimensions;
     }
 
@@ -125,11 +127,11 @@ public class CustomizedLoadMetricSpecification {
      * 
      */
     @JsonIgnore
-    public void setDimensions(List<MetricDimension> dimensions) {
+    public void setDimensions(List<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public CustomizedLoadMetricSpecification withDimensions(List<MetricDimension> dimensions) {
+    public CustomizedLoadMetricSpecification withDimensions(List<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.waf;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Priority",
     "RuleId"
 })
-public class ActivatedRule {
+public class ActivatedRule implements Property<ActivatedRule>
+{
 
     /**
      * WafAction
@@ -33,7 +35,7 @@ public class ActivatedRule {
      */
     @JsonProperty("Action")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html")
-    private WafAction action;
+    private Property<WafAction> action;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority
      * 
@@ -56,7 +58,7 @@ public class ActivatedRule {
      * 
      */
     @JsonIgnore
-    public WafAction getAction() {
+    public Property<WafAction> getAction() {
         return action;
     }
 
@@ -67,11 +69,11 @@ public class ActivatedRule {
      * 
      */
     @JsonIgnore
-    public void setAction(WafAction action) {
+    public void setAction(Property<WafAction> action) {
         this.action = action;
     }
 
-    public ActivatedRule withAction(WafAction action) {
+    public ActivatedRule withAction(Property<WafAction> action) {
         this.action = action;
         return this;
     }

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html",
   "type" : "object",
   "javaType" : "aws.kinesisfirehose.SplunkDestinationConfiguration",
+  "javaInterfaces" : [ "aws.Property<SplunkDestinationConfiguration>" ],
   "properties" : {
     "CloudWatchLoggingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-cloudwatchloggingoptions",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.CloudWatchLoggingOptions>"
     },
     "HECAcknowledgmentTimeoutInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-hecacknowledgmenttimeoutinseconds",
@@ -31,11 +33,13 @@
     },
     "ProcessingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-processingconfiguration",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.ProcessingConfiguration>"
     },
     "RetryOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-retryoptions",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.SplunkRetryOptions.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.SplunkRetryOptions.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.SplunkRetryOptions>"
     },
     "S3BackupMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3backupmode",
@@ -44,7 +48,8 @@
     },
     "S3Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration-s3configuration",
-      "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json"
+      "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.kinesisfirehose.S3DestinationConfiguration>"
     }
   }
 }

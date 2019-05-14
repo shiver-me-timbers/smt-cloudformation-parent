@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -76,7 +77,7 @@ public class Role {
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies")
-    private List<Policy> policies = new ArrayList<Policy>();
+    private List<Property<Policy>> policies = new ArrayList<Property<Policy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename
      * 
@@ -205,7 +206,7 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public List<Policy> getPolicies() {
+    public List<Property<Policy>> getPolicies() {
         return policies;
     }
 
@@ -214,11 +215,11 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public void setPolicies(List<Policy> policies) {
+    public void setPolicies(List<Property<Policy>> policies) {
         this.policies = policies;
     }
 
-    public Role withPolicies(List<Policy> policies) {
+    public Role withPolicies(List<Property<Policy>> policies) {
         this.policies = policies;
         return this;
     }

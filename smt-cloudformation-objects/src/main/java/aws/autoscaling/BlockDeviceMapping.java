@@ -1,6 +1,7 @@
 
 package aws.autoscaling;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NoDevice",
     "VirtualName"
 })
-public class BlockDeviceMapping {
+public class BlockDeviceMapping implements Property<BlockDeviceMapping>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-devicename
@@ -41,7 +43,7 @@ public class BlockDeviceMapping {
      */
     @JsonProperty("Ebs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html")
-    private BlockDevice ebs;
+    private Property<BlockDevice> ebs;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html#cfn-as-launchconfig-blockdev-mapping-nodevice
      * 
@@ -87,7 +89,7 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public BlockDevice getEbs() {
+    public Property<BlockDevice> getEbs() {
         return ebs;
     }
 
@@ -98,11 +100,11 @@ public class BlockDeviceMapping {
      * 
      */
     @JsonIgnore
-    public void setEbs(BlockDevice ebs) {
+    public void setEbs(Property<BlockDevice> ebs) {
         this.ebs = ebs;
     }
 
-    public BlockDeviceMapping withEbs(BlockDevice ebs) {
+    public BlockDeviceMapping withEbs(Property<BlockDevice> ebs) {
         this.ebs = ebs;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "AssociationParameters",
     "DocumentName"
 })
-public class SsmAssociation {
+public class SsmAssociation implements Property<SsmAssociation>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters
@@ -32,7 +34,7 @@ public class SsmAssociation {
      */
     @JsonProperty("AssociationParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters")
-    private List<AssociationParameter> associationParameters = new ArrayList<AssociationParameter>();
+    private List<Property<AssociationParameter>> associationParameters = new ArrayList<Property<AssociationParameter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-documentname
      * 
@@ -46,7 +48,7 @@ public class SsmAssociation {
      * 
      */
     @JsonIgnore
-    public List<AssociationParameter> getAssociationParameters() {
+    public List<Property<AssociationParameter>> getAssociationParameters() {
         return associationParameters;
     }
 
@@ -55,11 +57,11 @@ public class SsmAssociation {
      * 
      */
     @JsonIgnore
-    public void setAssociationParameters(List<AssociationParameter> associationParameters) {
+    public void setAssociationParameters(List<Property<AssociationParameter>> associationParameters) {
         this.associationParameters = associationParameters;
     }
 
-    public SsmAssociation withAssociationParameters(List<AssociationParameter> associationParameters) {
+    public SsmAssociation withAssociationParameters(List<Property<AssociationParameter>> associationParameters) {
         this.associationParameters = associationParameters;
         return this;
     }

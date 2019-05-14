@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "FunctionConfiguration",
     "Id"
 })
-public class Function {
+public class Function implements Property<Function>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html#cfn-greengrass-functiondefinition-function-functionarn
@@ -40,7 +42,7 @@ public class Function {
      */
     @JsonProperty("FunctionConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-functionconfiguration.html")
-    private FunctionConfiguration functionConfiguration;
+    private Property<FunctionConfiguration> functionConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html#cfn-greengrass-functiondefinition-function-id
      * 
@@ -79,7 +81,7 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public FunctionConfiguration getFunctionConfiguration() {
+    public Property<FunctionConfiguration> getFunctionConfiguration() {
         return functionConfiguration;
     }
 
@@ -90,11 +92,11 @@ public class Function {
      * 
      */
     @JsonIgnore
-    public void setFunctionConfiguration(FunctionConfiguration functionConfiguration) {
+    public void setFunctionConfiguration(Property<FunctionConfiguration> functionConfiguration) {
         this.functionConfiguration = functionConfiguration;
     }
 
-    public Function withFunctionConfiguration(FunctionConfiguration functionConfiguration) {
+    public Function withFunctionConfiguration(Property<FunctionConfiguration> functionConfiguration) {
         this.functionConfiguration = functionConfiguration;
         return this;
     }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -90,7 +91,7 @@ public class Instance {
     @JsonProperty("BlockDeviceMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-blockdevicemappings")
-    private Set<BlockDeviceMapping> blockDeviceMappings = new LinkedHashSet<BlockDeviceMapping>();
+    private Set<Property<BlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<BlockDeviceMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-ebsoptimized
      * 
@@ -184,7 +185,7 @@ public class Instance {
      */
     @JsonProperty("TimeBasedAutoScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html")
-    private TimeBasedAutoScaling timeBasedAutoScaling;
+    private Property<TimeBasedAutoScaling> timeBasedAutoScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype
      * 
@@ -321,7 +322,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Set<BlockDeviceMapping> getBlockDeviceMappings() {
+    public Set<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -330,11 +331,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public void setBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public Instance withBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public Instance withBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }
@@ -622,7 +623,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public TimeBasedAutoScaling getTimeBasedAutoScaling() {
+    public Property<TimeBasedAutoScaling> getTimeBasedAutoScaling() {
         return timeBasedAutoScaling;
     }
 
@@ -633,11 +634,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setTimeBasedAutoScaling(TimeBasedAutoScaling timeBasedAutoScaling) {
+    public void setTimeBasedAutoScaling(Property<TimeBasedAutoScaling> timeBasedAutoScaling) {
         this.timeBasedAutoScaling = timeBasedAutoScaling;
     }
 
-    public Instance withTimeBasedAutoScaling(TimeBasedAutoScaling timeBasedAutoScaling) {
+    public Instance withTimeBasedAutoScaling(Property<TimeBasedAutoScaling> timeBasedAutoScaling) {
         this.timeBasedAutoScaling = timeBasedAutoScaling;
         return this;
     }

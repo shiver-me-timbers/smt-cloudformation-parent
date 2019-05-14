@@ -48,12 +48,14 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_AutoScaling_ScalingPolicy.StepAdjustment.schema.json"
+        "$ref" : "AWS_AutoScaling_ScalingPolicy.StepAdjustment.schema.json",
+        "javaType" : "aws.Property<aws.autoscaling.StepAdjustment>"
       }
     },
     "TargetTrackingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration",
-      "$ref" : "AWS_AutoScalingPlans_ScalingPlan.TargetTrackingConfiguration.schema.json"
+      "$ref" : "AWS_AutoScalingPlans_ScalingPlan.TargetTrackingConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.autoscalingplans.TargetTrackingConfiguration>"
     }
   }
 }

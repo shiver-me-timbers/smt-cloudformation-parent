@@ -1,6 +1,7 @@
 
 package aws.appsync;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -54,7 +55,7 @@ public class Resolver {
      */
     @JsonProperty("PipelineConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html")
-    private PipelineConfig pipelineConfig;
+    private Property<PipelineConfig> pipelineConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
@@ -158,7 +159,7 @@ public class Resolver {
      * 
      */
     @JsonIgnore
-    public PipelineConfig getPipelineConfig() {
+    public Property<PipelineConfig> getPipelineConfig() {
         return pipelineConfig;
     }
 
@@ -169,11 +170,11 @@ public class Resolver {
      * 
      */
     @JsonIgnore
-    public void setPipelineConfig(PipelineConfig pipelineConfig) {
+    public void setPipelineConfig(Property<PipelineConfig> pipelineConfig) {
         this.pipelineConfig = pipelineConfig;
     }
 
-    public Resolver withPipelineConfig(PipelineConfig pipelineConfig) {
+    public Resolver withPipelineConfig(Property<PipelineConfig> pipelineConfig) {
         this.pipelineConfig = pipelineConfig;
         return this;
     }

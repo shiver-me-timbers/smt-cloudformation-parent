@@ -1,6 +1,7 @@
 
 package aws.kinesisfirehose;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "KMSEncryptionConfig",
     "NoEncryptionConfig"
 })
-public class EncryptionConfiguration {
+public class EncryptionConfiguration implements Property<EncryptionConfiguration>
+{
 
     /**
      * KMSEncryptionConfig
@@ -32,7 +34,7 @@ public class EncryptionConfiguration {
      */
     @JsonProperty("KMSEncryptionConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kmsencryptionconfig.html")
-    private KMSEncryptionConfig kMSEncryptionConfig;
+    private Property<KMSEncryptionConfig> kMSEncryptionConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-encryptionconfiguration.html#cfn-kinesisfirehose-deliverystream-encryptionconfiguration-noencryptionconfig
      * 
@@ -48,7 +50,7 @@ public class EncryptionConfiguration {
      * 
      */
     @JsonIgnore
-    public KMSEncryptionConfig getKMSEncryptionConfig() {
+    public Property<KMSEncryptionConfig> getKMSEncryptionConfig() {
         return kMSEncryptionConfig;
     }
 
@@ -59,11 +61,11 @@ public class EncryptionConfiguration {
      * 
      */
     @JsonIgnore
-    public void setKMSEncryptionConfig(KMSEncryptionConfig kMSEncryptionConfig) {
+    public void setKMSEncryptionConfig(Property<KMSEncryptionConfig> kMSEncryptionConfig) {
         this.kMSEncryptionConfig = kMSEncryptionConfig;
     }
 
-    public EncryptionConfiguration withKMSEncryptionConfig(KMSEncryptionConfig kMSEncryptionConfig) {
+    public EncryptionConfiguration withKMSEncryptionConfig(Property<KMSEncryptionConfig> kMSEncryptionConfig) {
         this.kMSEncryptionConfig = kMSEncryptionConfig;
         return this;
     }

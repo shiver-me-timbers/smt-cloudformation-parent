@@ -3,6 +3,7 @@ package aws.config;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SourceDetails",
     "SourceIdentifier"
 })
-public class Source {
+public class Source implements Property<Source>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-owner
@@ -42,7 +44,7 @@ public class Source {
     @JsonProperty("SourceDetails")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourcedetails")
-    private Set<SourceDetail> sourceDetails = new LinkedHashSet<SourceDetail>();
+    private Set<Property<SourceDetail>> sourceDetails = new LinkedHashSet<Property<SourceDetail>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html#cfn-config-configrule-source-sourceidentifier
      * 
@@ -79,7 +81,7 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public Set<SourceDetail> getSourceDetails() {
+    public Set<Property<SourceDetail>> getSourceDetails() {
         return sourceDetails;
     }
 
@@ -88,11 +90,11 @@ public class Source {
      * 
      */
     @JsonIgnore
-    public void setSourceDetails(Set<SourceDetail> sourceDetails) {
+    public void setSourceDetails(Set<Property<SourceDetail>> sourceDetails) {
         this.sourceDetails = sourceDetails;
     }
 
-    public Source withSourceDetails(Set<SourceDetail> sourceDetails) {
+    public Source withSourceDetails(Set<Property<SourceDetail>> sourceDetails) {
         this.sourceDetails = sourceDetails;
         return this;
     }

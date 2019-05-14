@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -69,7 +70,7 @@ public class Trail {
     @JsonProperty("EventSelectors")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-eventselectors")
-    private Set<EventSelector> eventSelectors = new LinkedHashSet<EventSelector>();
+    private Set<Property<EventSelector>> eventSelectors = new LinkedHashSet<Property<EventSelector>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents
      * 
@@ -125,7 +126,7 @@ public class Trail {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-trailname
      * 
@@ -208,7 +209,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Set<EventSelector> getEventSelectors() {
+    public Set<Property<EventSelector>> getEventSelectors() {
         return eventSelectors;
     }
 
@@ -217,11 +218,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setEventSelectors(Set<EventSelector> eventSelectors) {
+    public void setEventSelectors(Set<Property<EventSelector>> eventSelectors) {
         this.eventSelectors = eventSelectors;
     }
 
-    public Trail withEventSelectors(Set<EventSelector> eventSelectors) {
+    public Trail withEventSelectors(Set<Property<EventSelector>> eventSelectors) {
         this.eventSelectors = eventSelectors;
         return this;
     }
@@ -392,7 +393,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -401,11 +402,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Trail withTags(List<Tag> tags) {
+    public Trail withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Role",
     "Rules"
 })
-public class ReplicationConfiguration {
+public class ReplicationConfiguration implements Property<ReplicationConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
@@ -41,7 +43,7 @@ public class ReplicationConfiguration {
     @JsonProperty("Rules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-rules")
-    private Set<ReplicationRule> rules = new LinkedHashSet<ReplicationRule>();
+    private Set<Property<ReplicationRule>> rules = new LinkedHashSet<Property<ReplicationRule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html#cfn-s3-bucket-replicationconfiguration-role
@@ -71,7 +73,7 @@ public class ReplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<ReplicationRule> getRules() {
+    public Set<Property<ReplicationRule>> getRules() {
         return rules;
     }
 
@@ -80,11 +82,11 @@ public class ReplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setRules(Set<ReplicationRule> rules) {
+    public void setRules(Set<Property<ReplicationRule>> rules) {
         this.rules = rules;
     }
 
-    public ReplicationConfiguration withRules(Set<ReplicationRule> rules) {
+    public ReplicationConfiguration withRules(Set<Property<ReplicationRule>> rules) {
         this.rules = rules;
         return this;
     }

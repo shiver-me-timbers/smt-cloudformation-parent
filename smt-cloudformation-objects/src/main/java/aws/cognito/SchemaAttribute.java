@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NumberAttributeConstraints",
     "Name"
 })
-public class SchemaAttribute {
+public class SchemaAttribute implements Property<SchemaAttribute>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute
@@ -58,7 +60,7 @@ public class SchemaAttribute {
      */
     @JsonProperty("StringAttributeConstraints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-stringattributeconstraints.html")
-    private StringAttributeConstraints stringAttributeConstraints;
+    private Property<StringAttributeConstraints> stringAttributeConstraints;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required
      * 
@@ -74,7 +76,7 @@ public class SchemaAttribute {
      */
     @JsonProperty("NumberAttributeConstraints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-numberattributeconstraints.html")
-    private NumberAttributeConstraints numberAttributeConstraints;
+    private Property<NumberAttributeConstraints> numberAttributeConstraints;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name
      * 
@@ -159,7 +161,7 @@ public class SchemaAttribute {
      * 
      */
     @JsonIgnore
-    public StringAttributeConstraints getStringAttributeConstraints() {
+    public Property<StringAttributeConstraints> getStringAttributeConstraints() {
         return stringAttributeConstraints;
     }
 
@@ -170,11 +172,11 @@ public class SchemaAttribute {
      * 
      */
     @JsonIgnore
-    public void setStringAttributeConstraints(StringAttributeConstraints stringAttributeConstraints) {
+    public void setStringAttributeConstraints(Property<StringAttributeConstraints> stringAttributeConstraints) {
         this.stringAttributeConstraints = stringAttributeConstraints;
     }
 
-    public SchemaAttribute withStringAttributeConstraints(StringAttributeConstraints stringAttributeConstraints) {
+    public SchemaAttribute withStringAttributeConstraints(Property<StringAttributeConstraints> stringAttributeConstraints) {
         this.stringAttributeConstraints = stringAttributeConstraints;
         return this;
     }
@@ -209,7 +211,7 @@ public class SchemaAttribute {
      * 
      */
     @JsonIgnore
-    public NumberAttributeConstraints getNumberAttributeConstraints() {
+    public Property<NumberAttributeConstraints> getNumberAttributeConstraints() {
         return numberAttributeConstraints;
     }
 
@@ -220,11 +222,11 @@ public class SchemaAttribute {
      * 
      */
     @JsonIgnore
-    public void setNumberAttributeConstraints(NumberAttributeConstraints numberAttributeConstraints) {
+    public void setNumberAttributeConstraints(Property<NumberAttributeConstraints> numberAttributeConstraints) {
         this.numberAttributeConstraints = numberAttributeConstraints;
     }
 
-    public SchemaAttribute withNumberAttributeConstraints(NumberAttributeConstraints numberAttributeConstraints) {
+    public SchemaAttribute withNumberAttributeConstraints(Property<NumberAttributeConstraints> numberAttributeConstraints) {
         this.numberAttributeConstraints = numberAttributeConstraints;
         return this;
     }

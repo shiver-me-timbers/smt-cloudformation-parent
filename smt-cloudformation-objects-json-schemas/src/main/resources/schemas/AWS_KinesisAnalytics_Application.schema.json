@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_KinesisAnalytics_Application.Input.schema.json"
+        "$ref" : "AWS_KinesisAnalytics_Application.Input.schema.json",
+        "javaType" : "aws.Property<aws.kinesisanalytics.Input>"
       }
     },
     "ApplicationDescription" : {

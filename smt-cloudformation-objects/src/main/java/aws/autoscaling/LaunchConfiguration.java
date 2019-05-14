@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -57,7 +58,7 @@ public class LaunchConfiguration {
     @JsonProperty("BlockDeviceMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-blockdevicemappings")
-    private Set<BlockDeviceMapping> blockDeviceMappings = new LinkedHashSet<BlockDeviceMapping>();
+    private Set<Property<BlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<BlockDeviceMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcid
      * 
@@ -201,7 +202,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<BlockDeviceMapping> getBlockDeviceMappings() {
+    public Set<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -210,11 +211,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public void setBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public LaunchConfiguration withBlockDeviceMappings(Set<BlockDeviceMapping> blockDeviceMappings) {
+    public LaunchConfiguration withBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }

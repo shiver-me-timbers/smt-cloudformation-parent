@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -49,7 +50,7 @@ public class Application {
      */
     @JsonProperty("ApplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html")
-    private FlinkApplicationConfiguration applicationConfiguration;
+    private Property<ApplicationConfiguration> applicationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationdescription
      * 
@@ -118,7 +119,7 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public FlinkApplicationConfiguration getApplicationConfiguration() {
+    public Property<ApplicationConfiguration> getApplicationConfiguration() {
         return applicationConfiguration;
     }
 
@@ -129,11 +130,11 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public void setApplicationConfiguration(FlinkApplicationConfiguration applicationConfiguration) {
+    public void setApplicationConfiguration(Property<ApplicationConfiguration> applicationConfiguration) {
         this.applicationConfiguration = applicationConfiguration;
     }
 
-    public Application withApplicationConfiguration(FlinkApplicationConfiguration applicationConfiguration) {
+    public Application withApplicationConfiguration(Property<ApplicationConfiguration> applicationConfiguration) {
         this.applicationConfiguration = applicationConfiguration;
         return this;
     }

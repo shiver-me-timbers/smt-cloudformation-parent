@@ -1,6 +1,7 @@
 
 package aws.cognito;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "UnusedAccountValidityDays",
     "AllowAdminCreateUserOnly"
 })
-public class AdminCreateUserConfig {
+public class AdminCreateUserConfig implements Property<AdminCreateUserConfig>
+{
 
     /**
      * InviteMessageTemplate
@@ -33,7 +35,7 @@ public class AdminCreateUserConfig {
      */
     @JsonProperty("InviteMessageTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-invitemessagetemplate.html")
-    private InviteMessageTemplate inviteMessageTemplate;
+    private Property<InviteMessageTemplate> inviteMessageTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays
      * 
@@ -56,7 +58,7 @@ public class AdminCreateUserConfig {
      * 
      */
     @JsonIgnore
-    public InviteMessageTemplate getInviteMessageTemplate() {
+    public Property<InviteMessageTemplate> getInviteMessageTemplate() {
         return inviteMessageTemplate;
     }
 
@@ -67,11 +69,11 @@ public class AdminCreateUserConfig {
      * 
      */
     @JsonIgnore
-    public void setInviteMessageTemplate(InviteMessageTemplate inviteMessageTemplate) {
+    public void setInviteMessageTemplate(Property<InviteMessageTemplate> inviteMessageTemplate) {
         this.inviteMessageTemplate = inviteMessageTemplate;
     }
 
-    public AdminCreateUserConfig withInviteMessageTemplate(InviteMessageTemplate inviteMessageTemplate) {
+    public AdminCreateUserConfig withInviteMessageTemplate(Property<InviteMessageTemplate> inviteMessageTemplate) {
         this.inviteMessageTemplate = inviteMessageTemplate;
         return this;
     }

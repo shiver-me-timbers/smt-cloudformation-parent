@@ -3,6 +3,7 @@ package aws.wafregional;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class Rule {
      */
     @JsonProperty("Predicates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-predicates")
-    private List<Predicate> predicates = new ArrayList<Predicate>();
+    private List<Property<Predicate>> predicates = new ArrayList<Property<Predicate>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-name
      * 
@@ -77,7 +78,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public List<Predicate> getPredicates() {
+    public List<Property<Predicate>> getPredicates() {
         return predicates;
     }
 
@@ -86,11 +87,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setPredicates(List<Predicate> predicates) {
+    public void setPredicates(List<Property<Predicate>> predicates) {
         this.predicates = predicates;
     }
 
-    public Rule withPredicates(List<Predicate> predicates) {
+    public Rule withPredicates(List<Property<Predicate>> predicates) {
         this.predicates = predicates;
         return this;
     }

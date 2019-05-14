@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -31,7 +32,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Port",
     "VpcSecurityGroupMemberships"
 })
-public class OptionConfiguration {
+public class OptionConfiguration implements Property<OptionConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships
@@ -54,7 +56,7 @@ public class OptionConfiguration {
     @JsonProperty("OptionSettings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionsettings")
-    private Set<OptionSetting> optionSettings = new LinkedHashSet<OptionSetting>();
+    private Set<Property<OptionSetting>> optionSettings = new LinkedHashSet<Property<OptionSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion
      * 
@@ -128,7 +130,7 @@ public class OptionConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<OptionSetting> getOptionSettings() {
+    public Set<Property<OptionSetting>> getOptionSettings() {
         return optionSettings;
     }
 
@@ -137,11 +139,11 @@ public class OptionConfiguration {
      * 
      */
     @JsonIgnore
-    public void setOptionSettings(Set<OptionSetting> optionSettings) {
+    public void setOptionSettings(Set<Property<OptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public OptionConfiguration withOptionSettings(Set<OptionSetting> optionSettings) {
+    public OptionConfiguration withOptionSettings(Set<Property<OptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html",
   "type" : "object",
   "javaType" : "aws.ses.EventDestination",
+  "javaInterfaces" : [ "aws.Property<EventDestination>" ],
   "properties" : {
     "CloudWatchDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-cloudwatchdestination",
-      "$ref" : "AWS_SES_ConfigurationSetEventDestination.CloudWatchDestination.schema.json"
+      "$ref" : "AWS_SES_ConfigurationSetEventDestination.CloudWatchDestination.schema.json",
+      "javaType" : "aws.Property<aws.ses.CloudWatchDestination>"
     },
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-enabled",
@@ -29,7 +31,8 @@
     },
     "KinesisFirehoseDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html#cfn-ses-configurationseteventdestination-eventdestination-kinesisfirehosedestination",
-      "$ref" : "AWS_SES_ConfigurationSetEventDestination.KinesisFirehoseDestination.schema.json"
+      "$ref" : "AWS_SES_ConfigurationSetEventDestination.KinesisFirehoseDestination.schema.json",
+      "javaType" : "aws.Property<aws.ses.KinesisFirehoseDestination>"
     }
   }
 }

@@ -3,6 +3,7 @@ package aws.logs;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -49,7 +50,7 @@ public class MetricFilter {
     @JsonProperty("MetricTransformations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-metrictransformations")
-    private Set<MetricTransformation> metricTransformations = new LinkedHashSet<MetricTransformation>();
+    private Set<Property<MetricTransformation>> metricTransformations = new LinkedHashSet<Property<MetricTransformation>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
@@ -102,7 +103,7 @@ public class MetricFilter {
      * 
      */
     @JsonIgnore
-    public Set<MetricTransformation> getMetricTransformations() {
+    public Set<Property<MetricTransformation>> getMetricTransformations() {
         return metricTransformations;
     }
 
@@ -111,11 +112,11 @@ public class MetricFilter {
      * 
      */
     @JsonIgnore
-    public void setMetricTransformations(Set<MetricTransformation> metricTransformations) {
+    public void setMetricTransformations(Set<Property<MetricTransformation>> metricTransformations) {
         this.metricTransformations = metricTransformations;
     }
 
-    public MetricFilter withMetricTransformations(Set<MetricTransformation> metricTransformations) {
+    public MetricFilter withMetricTransformations(Set<Property<MetricTransformation>> metricTransformations) {
         this.metricTransformations = metricTransformations;
         return this;
     }

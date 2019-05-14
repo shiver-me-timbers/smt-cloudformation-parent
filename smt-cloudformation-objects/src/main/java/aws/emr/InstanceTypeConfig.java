@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -29,7 +30,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InstanceType",
     "WeightedCapacity"
 })
-public class InstanceTypeConfig {
+public class InstanceTypeConfig implements Property<InstanceTypeConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice
@@ -52,7 +54,7 @@ public class InstanceTypeConfig {
     @JsonProperty("Configurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-configurations")
-    private Set<EbsConfiguration> configurations = new LinkedHashSet<EbsConfiguration>();
+    private Set<Property<Configuration>> configurations = new LinkedHashSet<Property<Configuration>>();
     /**
      * EbsConfiguration
      * <p>
@@ -61,7 +63,7 @@ public class InstanceTypeConfig {
      */
     @JsonProperty("EbsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html")
-    private EbsConfiguration ebsConfiguration;
+    private Property<EbsConfiguration> ebsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype
      * 
@@ -128,7 +130,7 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public Set<EbsConfiguration> getConfigurations() {
+    public Set<Property<Configuration>> getConfigurations() {
         return configurations;
     }
 
@@ -137,11 +139,11 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public void setConfigurations(Set<EbsConfiguration> configurations) {
+    public void setConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
     }
 
-    public InstanceTypeConfig withConfigurations(Set<EbsConfiguration> configurations) {
+    public InstanceTypeConfig withConfigurations(Set<Property<Configuration>> configurations) {
         this.configurations = configurations;
         return this;
     }
@@ -153,7 +155,7 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public EbsConfiguration getEbsConfiguration() {
+    public Property<EbsConfiguration> getEbsConfiguration() {
         return ebsConfiguration;
     }
 
@@ -164,11 +166,11 @@ public class InstanceTypeConfig {
      * 
      */
     @JsonIgnore
-    public void setEbsConfiguration(EbsConfiguration ebsConfiguration) {
+    public void setEbsConfiguration(Property<EbsConfiguration> ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
     }
 
-    public InstanceTypeConfig withEbsConfiguration(EbsConfiguration ebsConfiguration) {
+    public InstanceTypeConfig withEbsConfiguration(Property<EbsConfiguration> ebsConfiguration) {
         this.ebsConfiguration = ebsConfiguration;
         return this;
     }

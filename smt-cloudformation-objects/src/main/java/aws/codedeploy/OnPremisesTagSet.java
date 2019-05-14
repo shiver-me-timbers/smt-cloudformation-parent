@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "OnPremisesTagSetList"
 })
-public class OnPremisesTagSet {
+public class OnPremisesTagSet implements Property<OnPremisesTagSet>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist
@@ -33,14 +35,14 @@ public class OnPremisesTagSet {
     @JsonProperty("OnPremisesTagSetList")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist")
-    private Set<OnPremisesTagSetListObject> onPremisesTagSetList = new LinkedHashSet<OnPremisesTagSetListObject>();
+    private Set<Property<OnPremisesTagSetListObject>> onPremisesTagSetList = new LinkedHashSet<Property<OnPremisesTagSetListObject>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html#cfn-codedeploy-deploymentgroup-onpremisestagset-onpremisestagsetlist
      * 
      */
     @JsonIgnore
-    public Set<OnPremisesTagSetListObject> getOnPremisesTagSetList() {
+    public Set<Property<OnPremisesTagSetListObject>> getOnPremisesTagSetList() {
         return onPremisesTagSetList;
     }
 
@@ -49,11 +51,11 @@ public class OnPremisesTagSet {
      * 
      */
     @JsonIgnore
-    public void setOnPremisesTagSetList(Set<OnPremisesTagSetListObject> onPremisesTagSetList) {
+    public void setOnPremisesTagSetList(Set<Property<OnPremisesTagSetListObject>> onPremisesTagSetList) {
         this.onPremisesTagSetList = onPremisesTagSetList;
     }
 
-    public OnPremisesTagSet withOnPremisesTagSetList(Set<OnPremisesTagSetListObject> onPremisesTagSetList) {
+    public OnPremisesTagSet withOnPremisesTagSetList(Set<Property<OnPremisesTagSetListObject>> onPremisesTagSetList) {
         this.onPremisesTagSetList = onPremisesTagSetList;
         return this;
     }

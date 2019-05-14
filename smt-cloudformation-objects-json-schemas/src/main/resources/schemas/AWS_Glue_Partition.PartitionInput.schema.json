@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html",
   "type" : "object",
   "javaType" : "aws.glue.PartitionInput",
+  "javaInterfaces" : [ "aws.Property<PartitionInput>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters",
@@ -12,7 +13,8 @@
     },
     "StorageDescriptor" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-storagedescriptor",
-      "$ref" : "AWS_Glue_Partition.StorageDescriptor.schema.json"
+      "$ref" : "AWS_Glue_Partition.StorageDescriptor.schema.json",
+      "javaType" : "aws.Property<aws.glue.StorageDescriptor>"
     },
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-values",

@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ClassicLoadBalancersConfig",
     "TargetGroupsConfig"
 })
-public class LoadBalancersConfig {
+public class LoadBalancersConfig implements Property<LoadBalancersConfig>
+{
 
     /**
      * ClassicLoadBalancersConfig
@@ -32,7 +34,7 @@ public class LoadBalancersConfig {
      */
     @JsonProperty("ClassicLoadBalancersConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-classicloadbalancersconfig.html")
-    private ClassicLoadBalancersConfig classicLoadBalancersConfig;
+    private Property<ClassicLoadBalancersConfig> classicLoadBalancersConfig;
     /**
      * TargetGroupsConfig
      * <p>
@@ -41,7 +43,7 @@ public class LoadBalancersConfig {
      */
     @JsonProperty("TargetGroupsConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html")
-    private TargetGroupsConfig targetGroupsConfig;
+    private Property<TargetGroupsConfig> targetGroupsConfig;
 
     /**
      * ClassicLoadBalancersConfig
@@ -50,7 +52,7 @@ public class LoadBalancersConfig {
      * 
      */
     @JsonIgnore
-    public ClassicLoadBalancersConfig getClassicLoadBalancersConfig() {
+    public Property<ClassicLoadBalancersConfig> getClassicLoadBalancersConfig() {
         return classicLoadBalancersConfig;
     }
 
@@ -61,11 +63,11 @@ public class LoadBalancersConfig {
      * 
      */
     @JsonIgnore
-    public void setClassicLoadBalancersConfig(ClassicLoadBalancersConfig classicLoadBalancersConfig) {
+    public void setClassicLoadBalancersConfig(Property<ClassicLoadBalancersConfig> classicLoadBalancersConfig) {
         this.classicLoadBalancersConfig = classicLoadBalancersConfig;
     }
 
-    public LoadBalancersConfig withClassicLoadBalancersConfig(ClassicLoadBalancersConfig classicLoadBalancersConfig) {
+    public LoadBalancersConfig withClassicLoadBalancersConfig(Property<ClassicLoadBalancersConfig> classicLoadBalancersConfig) {
         this.classicLoadBalancersConfig = classicLoadBalancersConfig;
         return this;
     }
@@ -77,7 +79,7 @@ public class LoadBalancersConfig {
      * 
      */
     @JsonIgnore
-    public TargetGroupsConfig getTargetGroupsConfig() {
+    public Property<TargetGroupsConfig> getTargetGroupsConfig() {
         return targetGroupsConfig;
     }
 
@@ -88,11 +90,11 @@ public class LoadBalancersConfig {
      * 
      */
     @JsonIgnore
-    public void setTargetGroupsConfig(TargetGroupsConfig targetGroupsConfig) {
+    public void setTargetGroupsConfig(Property<TargetGroupsConfig> targetGroupsConfig) {
         this.targetGroupsConfig = targetGroupsConfig;
     }
 
-    public LoadBalancersConfig withTargetGroupsConfig(TargetGroupsConfig targetGroupsConfig) {
+    public LoadBalancersConfig withTargetGroupsConfig(Property<TargetGroupsConfig> targetGroupsConfig) {
         this.targetGroupsConfig = targetGroupsConfig;
         return this;
     }

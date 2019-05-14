@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TextTransformation",
     "FieldToMatch"
 })
-public class ByteMatchTuple {
+public class ByteMatchTuple implements Property<ByteMatchTuple>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring
@@ -63,7 +65,7 @@ public class ByteMatchTuple {
      */
     @JsonProperty("FieldToMatch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html")
-    private FieldToMatch fieldToMatch;
+    private Property<FieldToMatch> fieldToMatch;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-bytematchtuple.html#cfn-wafregional-bytematchset-bytematchtuple-targetstring
@@ -164,7 +166,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonIgnore
-    public FieldToMatch getFieldToMatch() {
+    public Property<FieldToMatch> getFieldToMatch() {
         return fieldToMatch;
     }
 
@@ -175,11 +177,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonIgnore
-    public void setFieldToMatch(FieldToMatch fieldToMatch) {
+    public void setFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
 
-    public ByteMatchTuple withFieldToMatch(FieldToMatch fieldToMatch) {
+    public ByteMatchTuple withFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
         return this;
     }

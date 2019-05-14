@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "EgressFilter"
 })
-public class MeshSpec {
+public class MeshSpec implements Property<MeshSpec>
+{
 
     /**
      * EgressFilter
@@ -31,7 +33,7 @@ public class MeshSpec {
      */
     @JsonProperty("EgressFilter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-egressfilter.html")
-    private EgressFilter egressFilter;
+    private Property<EgressFilter> egressFilter;
 
     /**
      * EgressFilter
@@ -40,7 +42,7 @@ public class MeshSpec {
      * 
      */
     @JsonIgnore
-    public EgressFilter getEgressFilter() {
+    public Property<EgressFilter> getEgressFilter() {
         return egressFilter;
     }
 
@@ -51,11 +53,11 @@ public class MeshSpec {
      * 
      */
     @JsonIgnore
-    public void setEgressFilter(EgressFilter egressFilter) {
+    public void setEgressFilter(Property<EgressFilter> egressFilter) {
         this.egressFilter = egressFilter;
     }
 
-    public MeshSpec withEgressFilter(EgressFilter egressFilter) {
+    public MeshSpec withEgressFilter(Property<EgressFilter> egressFilter) {
         this.egressFilter = egressFilter;
         return this;
     }

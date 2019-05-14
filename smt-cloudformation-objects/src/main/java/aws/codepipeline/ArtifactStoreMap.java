@@ -1,6 +1,7 @@
 
 package aws.codepipeline;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ArtifactStore",
     "Region"
 })
-public class ArtifactStoreMap {
+public class ArtifactStoreMap implements Property<ArtifactStoreMap>
+{
 
     /**
      * ArtifactStore
@@ -32,7 +34,7 @@ public class ArtifactStoreMap {
      */
     @JsonProperty("ArtifactStore")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html")
-    private ArtifactStore artifactStore;
+    private Property<ArtifactStore> artifactStore;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstoremap.html#cfn-codepipeline-pipeline-artifactstoremap-region
      * 
@@ -48,7 +50,7 @@ public class ArtifactStoreMap {
      * 
      */
     @JsonIgnore
-    public ArtifactStore getArtifactStore() {
+    public Property<ArtifactStore> getArtifactStore() {
         return artifactStore;
     }
 
@@ -59,11 +61,11 @@ public class ArtifactStoreMap {
      * 
      */
     @JsonIgnore
-    public void setArtifactStore(ArtifactStore artifactStore) {
+    public void setArtifactStore(Property<ArtifactStore> artifactStore) {
         this.artifactStore = artifactStore;
     }
 
-    public ArtifactStoreMap withArtifactStore(ArtifactStore artifactStore) {
+    public ArtifactStoreMap withArtifactStore(Property<ArtifactStore> artifactStore) {
         this.artifactStore = artifactStore;
         return this;
     }

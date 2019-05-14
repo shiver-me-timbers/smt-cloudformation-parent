@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html",
   "type" : "object",
   "javaType" : "aws.cloud9.Repository",
+  "javaInterfaces" : [ "aws.Property<Repository>" ],
   "properties" : {
     "PathComponent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-pathcomponent",

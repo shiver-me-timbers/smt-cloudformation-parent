@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html",
   "type" : "object",
   "javaType" : "aws.ssm.Rule",
+  "javaInterfaces" : [ "aws.Property<Rule>" ],
   "properties" : {
     "EnableNonSecurity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity",
@@ -12,7 +13,8 @@
     },
     "PatchFilterGroup" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-patchfiltergroup",
-      "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json"
+      "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json",
+      "javaType" : "aws.Property<aws.ssm.PatchFilterGroup>"
     },
     "ApproveAfterDays" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays",

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html",
   "type" : "object",
   "javaType" : "aws.emr.StepConfig",
+  "javaInterfaces" : [ "aws.Property<StepConfig>" ],
   "properties" : {
     "ActionOnFailure" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html#cfn-elasticmapreduce-cluster-stepconfig-actiononfailure",
@@ -13,7 +14,8 @@
     },
     "HadoopJarStep" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html#cfn-elasticmapreduce-cluster-stepconfig-hadoopjarstep",
-      "$ref" : "AWS_EMR_Step.HadoopJarStepConfig.schema.json"
+      "$ref" : "AWS_EMR_Step.HadoopJarStepConfig.schema.json",
+      "javaType" : "aws.Property<aws.emr.HadoopJarStepConfig>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-stepconfig.html#cfn-elasticmapreduce-cluster-stepconfig-name",

@@ -1,6 +1,7 @@
 
 package aws.appmesh;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "File"
 })
-public class AccessLog {
+public class AccessLog implements Property<AccessLog>
+{
 
     /**
      * FileAccessLog
@@ -31,7 +33,7 @@ public class AccessLog {
      */
     @JsonProperty("File")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-fileaccesslog.html")
-    private FileAccessLog file;
+    private Property<FileAccessLog> file;
 
     /**
      * FileAccessLog
@@ -40,7 +42,7 @@ public class AccessLog {
      * 
      */
     @JsonIgnore
-    public FileAccessLog getFile() {
+    public Property<FileAccessLog> getFile() {
         return file;
     }
 
@@ -51,11 +53,11 @@ public class AccessLog {
      * 
      */
     @JsonIgnore
-    public void setFile(FileAccessLog file) {
+    public void setFile(Property<FileAccessLog> file) {
         this.file = file;
     }
 
-    public AccessLog withFile(FileAccessLog file) {
+    public AccessLog withFile(Property<FileAccessLog> file) {
         this.file = file;
         return this;
     }

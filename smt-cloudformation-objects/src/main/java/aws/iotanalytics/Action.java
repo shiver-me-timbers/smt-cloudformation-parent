@@ -1,6 +1,7 @@
 
 package aws.iotanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "ContainerAction",
     "QueryAction"
 })
-public class Action {
+public class Action implements Property<Action>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html#cfn-iotanalytics-dataset-action-actionname
@@ -40,7 +42,7 @@ public class Action {
      */
     @JsonProperty("ContainerAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-containeraction.html")
-    private ContainerAction containerAction;
+    private Property<ContainerAction> containerAction;
     /**
      * QueryAction
      * <p>
@@ -49,7 +51,7 @@ public class Action {
      */
     @JsonProperty("QueryAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-queryaction.html")
-    private QueryAction queryAction;
+    private Property<QueryAction> queryAction;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html#cfn-iotanalytics-dataset-action-actionname
@@ -81,7 +83,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public ContainerAction getContainerAction() {
+    public Property<ContainerAction> getContainerAction() {
         return containerAction;
     }
 
@@ -92,11 +94,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setContainerAction(ContainerAction containerAction) {
+    public void setContainerAction(Property<ContainerAction> containerAction) {
         this.containerAction = containerAction;
     }
 
-    public Action withContainerAction(ContainerAction containerAction) {
+    public Action withContainerAction(Property<ContainerAction> containerAction) {
         this.containerAction = containerAction;
         return this;
     }
@@ -108,7 +110,7 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public QueryAction getQueryAction() {
+    public Property<QueryAction> getQueryAction() {
         return queryAction;
     }
 
@@ -119,11 +121,11 @@ public class Action {
      * 
      */
     @JsonIgnore
-    public void setQueryAction(QueryAction queryAction) {
+    public void setQueryAction(Property<QueryAction> queryAction) {
         this.queryAction = queryAction;
     }
 
-    public Action withQueryAction(QueryAction queryAction) {
+    public Action withQueryAction(Property<QueryAction> queryAction) {
         this.queryAction = queryAction;
         return this;
     }

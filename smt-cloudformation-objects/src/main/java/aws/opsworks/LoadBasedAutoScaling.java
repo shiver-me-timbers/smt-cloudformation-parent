@@ -1,6 +1,7 @@
 
 package aws.opsworks;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enable",
     "UpScaling"
 })
-public class LoadBasedAutoScaling {
+public class LoadBasedAutoScaling implements Property<LoadBasedAutoScaling>
+{
 
     /**
      * AutoScalingThresholds
@@ -33,7 +35,7 @@ public class LoadBasedAutoScaling {
      */
     @JsonProperty("DownScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html")
-    private AutoScalingThresholds downScaling;
+    private Property<aws.opsworks.AutoScalingThresholds> downScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html#cfn-opsworks-layer-loadbasedautoscaling-enable
      * 
@@ -49,7 +51,7 @@ public class LoadBasedAutoScaling {
      */
     @JsonProperty("UpScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html")
-    private AutoScalingThresholds upScaling;
+    private Property<aws.opsworks.AutoScalingThresholds> upScaling;
 
     /**
      * AutoScalingThresholds
@@ -58,7 +60,7 @@ public class LoadBasedAutoScaling {
      * 
      */
     @JsonIgnore
-    public AutoScalingThresholds getDownScaling() {
+    public Property<aws.opsworks.AutoScalingThresholds> getDownScaling() {
         return downScaling;
     }
 
@@ -69,11 +71,11 @@ public class LoadBasedAutoScaling {
      * 
      */
     @JsonIgnore
-    public void setDownScaling(AutoScalingThresholds downScaling) {
+    public void setDownScaling(Property<aws.opsworks.AutoScalingThresholds> downScaling) {
         this.downScaling = downScaling;
     }
 
-    public LoadBasedAutoScaling withDownScaling(AutoScalingThresholds downScaling) {
+    public LoadBasedAutoScaling withDownScaling(Property<aws.opsworks.AutoScalingThresholds> downScaling) {
         this.downScaling = downScaling;
         return this;
     }
@@ -108,7 +110,7 @@ public class LoadBasedAutoScaling {
      * 
      */
     @JsonIgnore
-    public AutoScalingThresholds getUpScaling() {
+    public Property<aws.opsworks.AutoScalingThresholds> getUpScaling() {
         return upScaling;
     }
 
@@ -119,11 +121,11 @@ public class LoadBasedAutoScaling {
      * 
      */
     @JsonIgnore
-    public void setUpScaling(AutoScalingThresholds upScaling) {
+    public void setUpScaling(Property<aws.opsworks.AutoScalingThresholds> upScaling) {
         this.upScaling = upScaling;
     }
 
-    public LoadBasedAutoScaling withUpScaling(AutoScalingThresholds upScaling) {
+    public LoadBasedAutoScaling withUpScaling(Property<aws.opsworks.AutoScalingThresholds> upScaling) {
         this.upScaling = upScaling;
         return this;
     }

@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningParameter.schema.json"
+        "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningParameter.schema.json",
+        "javaType" : "aws.Property<aws.servicecatalog.ProvisioningParameter>"
       }
     },
     "ProductName" : {
@@ -50,7 +51,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "Tag.schema.json"
+        "$ref" : "Tag.schema.json",
+        "javaType" : "aws.Property<aws.Tag>"
       }
     },
     "ProvisionedProductName" : {

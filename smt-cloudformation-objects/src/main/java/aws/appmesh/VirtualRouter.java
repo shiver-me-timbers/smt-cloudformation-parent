@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -50,14 +51,14 @@ public class VirtualRouter {
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html")
-    private VirtualRouterSpec spec;
+    private Property<VirtualRouterSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags")
-    private List<TagRef> tags = new ArrayList<TagRef>();
+    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshname
@@ -112,7 +113,7 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public VirtualRouterSpec getSpec() {
+    public Property<VirtualRouterSpec> getSpec() {
         return spec;
     }
 
@@ -123,11 +124,11 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public void setSpec(VirtualRouterSpec spec) {
+    public void setSpec(Property<VirtualRouterSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualRouter withSpec(VirtualRouterSpec spec) {
+    public VirtualRouter withSpec(Property<VirtualRouterSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -137,7 +138,7 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public List<TagRef> getTags() {
+    public List<Property<TagRef>> getTags() {
         return tags;
     }
 
@@ -146,11 +147,11 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRef> tags) {
+    public void setTags(List<Property<TagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualRouter withTags(List<TagRef> tags) {
+    public VirtualRouter withTags(List<Property<TagRef>> tags) {
         this.tags = tags;
         return this;
     }

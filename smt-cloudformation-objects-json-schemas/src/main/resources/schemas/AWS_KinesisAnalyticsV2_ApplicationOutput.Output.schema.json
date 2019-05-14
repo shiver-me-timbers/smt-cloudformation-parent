@@ -5,22 +5,27 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalyticsv2.Output",
+  "javaInterfaces" : [ "aws.Property<Output>" ],
   "properties" : {
     "DestinationSchema" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-destinationschema",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.DestinationSchema.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.DestinationSchema.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.DestinationSchema>"
     },
     "LambdaOutput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-lambdaoutput",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.LambdaOutput.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.LambdaOutput.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.LambdaOutput>"
     },
     "KinesisFirehoseOutput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-kinesisfirehoseoutput",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisFirehoseOutput.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisFirehoseOutput.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.KinesisFirehoseOutput>"
     },
     "KinesisStreamsOutput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-kinesisstreamsoutput",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisStreamsOutput.schema.json"
+      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisStreamsOutput.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.KinesisStreamsOutput>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-output.html#cfn-kinesisanalyticsv2-applicationoutput-output-name",

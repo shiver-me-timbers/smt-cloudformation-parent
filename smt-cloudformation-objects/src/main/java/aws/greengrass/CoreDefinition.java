@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class CoreDefinition {
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html")
-    private CoreDefinitionVersion initialVersion;
+    private Property<CoreDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-name
      * 
@@ -48,7 +49,7 @@ public class CoreDefinition {
      * 
      */
     @JsonIgnore
-    public CoreDefinitionVersion getInitialVersion() {
+    public Property<CoreDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
@@ -59,11 +60,11 @@ public class CoreDefinition {
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(CoreDefinitionVersion initialVersion) {
+    public void setInitialVersion(Property<CoreDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public CoreDefinition withInitialVersion(CoreDefinitionVersion initialVersion) {
+    public CoreDefinition withInitialVersion(Property<CoreDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

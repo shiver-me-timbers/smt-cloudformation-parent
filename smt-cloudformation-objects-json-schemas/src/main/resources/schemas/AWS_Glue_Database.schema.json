@@ -8,7 +8,8 @@
   "properties" : {
     "DatabaseInput" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-databaseinput",
-      "$ref" : "AWS_Glue_Database.DatabaseInput.schema.json"
+      "$ref" : "AWS_Glue_Database.DatabaseInput.schema.json",
+      "javaType" : "aws.Property<aws.glue.DatabaseInput>"
     },
     "CatalogId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid",

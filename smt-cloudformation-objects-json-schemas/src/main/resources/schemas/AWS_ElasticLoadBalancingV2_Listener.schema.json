@@ -11,7 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancingV2_ListenerCertificate.Certificate.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancingV2_ListenerCertificate.Certificate.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.Certificate>"
       }
     },
     "DefaultActions" : {
@@ -19,7 +20,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancingV2_Listener.Action.schema.json"
+        "$ref" : "AWS_ElasticLoadBalancingV2_Listener.Action.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.Action>"
       }
     },
     "LoadBalancerArn" : {

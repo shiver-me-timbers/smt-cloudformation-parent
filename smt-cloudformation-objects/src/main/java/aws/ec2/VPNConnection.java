@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -54,7 +55,7 @@ public class VPNConnection {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-type
      * 
@@ -76,7 +77,7 @@ public class VPNConnection {
     @JsonProperty("VpnTunnelOptionsSpecifications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-vpntunneloptionsspecifications")
-    private Set<VpnTunnelOptionsSpecification> vpnTunnelOptionsSpecifications = new LinkedHashSet<VpnTunnelOptionsSpecification>();
+    private Set<Property<VpnTunnelOptionsSpecification>> vpnTunnelOptionsSpecifications = new LinkedHashSet<Property<VpnTunnelOptionsSpecification>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-connection.html#cfn-ec2-vpnconnection-customergatewayid
@@ -129,7 +130,7 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -138,11 +139,11 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public VPNConnection withTags(List<Tag> tags) {
+    public VPNConnection withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -198,7 +199,7 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public Set<VpnTunnelOptionsSpecification> getVpnTunnelOptionsSpecifications() {
+    public Set<Property<VpnTunnelOptionsSpecification>> getVpnTunnelOptionsSpecifications() {
         return vpnTunnelOptionsSpecifications;
     }
 
@@ -207,11 +208,11 @@ public class VPNConnection {
      * 
      */
     @JsonIgnore
-    public void setVpnTunnelOptionsSpecifications(Set<VpnTunnelOptionsSpecification> vpnTunnelOptionsSpecifications) {
+    public void setVpnTunnelOptionsSpecifications(Set<Property<VpnTunnelOptionsSpecification>> vpnTunnelOptionsSpecifications) {
         this.vpnTunnelOptionsSpecifications = vpnTunnelOptionsSpecifications;
     }
 
-    public VPNConnection withVpnTunnelOptionsSpecifications(Set<VpnTunnelOptionsSpecification> vpnTunnelOptionsSpecifications) {
+    public VPNConnection withVpnTunnelOptionsSpecifications(Set<Property<VpnTunnelOptionsSpecification>> vpnTunnelOptionsSpecifications) {
         this.vpnTunnelOptionsSpecifications = vpnTunnelOptionsSpecifications;
         return this;
     }

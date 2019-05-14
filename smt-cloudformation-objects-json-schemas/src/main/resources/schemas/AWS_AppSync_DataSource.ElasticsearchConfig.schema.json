@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html",
   "type" : "object",
   "javaType" : "aws.appsync.ElasticsearchConfig",
+  "javaInterfaces" : [ "aws.Property<ElasticsearchConfig>" ],
   "properties" : {
     "AwsRegion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html#cfn-appsync-datasource-elasticsearchconfig-awsregion",

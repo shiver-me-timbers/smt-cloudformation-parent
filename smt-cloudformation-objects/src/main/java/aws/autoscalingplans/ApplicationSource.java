@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CloudFormationStackARN",
     "TagFilters"
 })
-public class ApplicationSource {
+public class ApplicationSource implements Property<ApplicationSource>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-cloudformationstackarn
@@ -39,7 +41,7 @@ public class ApplicationSource {
      */
     @JsonProperty("TagFilters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-tagfilters")
-    private List<TagFilter> tagFilters = new ArrayList<TagFilter>();
+    private List<Property<TagFilter>> tagFilters = new ArrayList<Property<TagFilter>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html#cfn-autoscalingplans-scalingplan-applicationsource-cloudformationstackarn
@@ -69,7 +71,7 @@ public class ApplicationSource {
      * 
      */
     @JsonIgnore
-    public List<TagFilter> getTagFilters() {
+    public List<Property<TagFilter>> getTagFilters() {
         return tagFilters;
     }
 
@@ -78,11 +80,11 @@ public class ApplicationSource {
      * 
      */
     @JsonIgnore
-    public void setTagFilters(List<TagFilter> tagFilters) {
+    public void setTagFilters(List<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
     }
 
-    public ApplicationSource withTagFilters(List<TagFilter> tagFilters) {
+    public ApplicationSource withTagFilters(List<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
         return this;
     }

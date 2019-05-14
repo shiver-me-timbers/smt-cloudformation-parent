@@ -8,15 +8,18 @@
   "properties" : {
     "XMLClassifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html#cfn-glue-classifier-xmlclassifier",
-      "$ref" : "AWS_Glue_Classifier.XMLClassifier.schema.json"
+      "$ref" : "AWS_Glue_Classifier.XMLClassifier.schema.json",
+      "javaType" : "aws.Property<aws.glue.XMLClassifier>"
     },
     "JsonClassifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html#cfn-glue-classifier-jsonclassifier",
-      "$ref" : "AWS_Glue_Classifier.JsonClassifier.schema.json"
+      "$ref" : "AWS_Glue_Classifier.JsonClassifier.schema.json",
+      "javaType" : "aws.Property<aws.glue.JsonClassifier>"
     },
     "GrokClassifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-classifier.html#cfn-glue-classifier-grokclassifier",
-      "$ref" : "AWS_Glue_Classifier.GrokClassifier.schema.json"
+      "$ref" : "AWS_Glue_Classifier.GrokClassifier.schema.json",
+      "javaType" : "aws.Property<aws.glue.GrokClassifier>"
     }
   }
 }

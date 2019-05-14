@@ -26,7 +26,8 @@
     },
     "SchemaChangePolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-schemachangepolicy",
-      "$ref" : "AWS_Glue_Crawler.SchemaChangePolicy.schema.json"
+      "$ref" : "AWS_Glue_Crawler.SchemaChangePolicy.schema.json",
+      "javaType" : "aws.Property<aws.glue.SchemaChangePolicy>"
     },
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration",
@@ -35,7 +36,8 @@
     },
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-schedule",
-      "$ref" : "AWS_Glue_Crawler.Schedule.schema.json"
+      "$ref" : "AWS_Glue_Crawler.Schedule.schema.json",
+      "javaType" : "aws.Property<aws.glue.Schedule>"
     },
     "DatabaseName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename",
@@ -44,7 +46,8 @@
     },
     "Targets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-targets",
-      "$ref" : "AWS_Glue_Crawler.Targets.schema.json"
+      "$ref" : "AWS_Glue_Crawler.Targets.schema.json",
+      "javaType" : "aws.Property<aws.glue.Targets>"
     },
     "TablePrefix" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix",

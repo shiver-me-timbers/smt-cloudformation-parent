@@ -3,6 +3,7 @@ package aws.cognito;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Rules"
 })
-public class RulesConfigurationType {
+public class RulesConfigurationType implements Property<RulesConfigurationType>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules
@@ -31,14 +33,14 @@ public class RulesConfigurationType {
      */
     @JsonProperty("Rules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules")
-    private List<MappingRule> rules = new ArrayList<MappingRule>();
+    private List<Property<MappingRule>> rules = new ArrayList<Property<MappingRule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-rulesconfigurationtype.html#cfn-cognito-identitypoolroleattachment-rulesconfigurationtype-rules
      * 
      */
     @JsonIgnore
-    public List<MappingRule> getRules() {
+    public List<Property<MappingRule>> getRules() {
         return rules;
     }
 
@@ -47,11 +49,11 @@ public class RulesConfigurationType {
      * 
      */
     @JsonIgnore
-    public void setRules(List<MappingRule> rules) {
+    public void setRules(List<Property<MappingRule>> rules) {
         this.rules = rules;
     }
 
-    public RulesConfigurationType withRules(List<MappingRule> rules) {
+    public RulesConfigurationType withRules(List<Property<MappingRule>> rules) {
         this.rules = rules;
         return this;
     }

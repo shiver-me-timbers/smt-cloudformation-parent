@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,7 +28,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MainClass",
     "StepProperties"
 })
-public class HadoopJarStepConfig {
+public class HadoopJarStepConfig implements Property<HadoopJarStepConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-hadoopjarstepconfig.html#cfn-elasticmapreduce-cluster-hadoopjarstepconfig-args
@@ -58,7 +60,7 @@ public class HadoopJarStepConfig {
     @JsonProperty("StepProperties")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-hadoopjarstepconfig.html#cfn-elasticmapreduce-cluster-hadoopjarstepconfig-stepproperties")
-    private Set<KeyValue> stepProperties = new LinkedHashSet<KeyValue>();
+    private Set<Property<KeyValue>> stepProperties = new LinkedHashSet<Property<KeyValue>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-hadoopjarstepconfig.html#cfn-elasticmapreduce-cluster-hadoopjarstepconfig-args
@@ -134,7 +136,7 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonIgnore
-    public Set<KeyValue> getStepProperties() {
+    public Set<Property<KeyValue>> getStepProperties() {
         return stepProperties;
     }
 
@@ -143,11 +145,11 @@ public class HadoopJarStepConfig {
      * 
      */
     @JsonIgnore
-    public void setStepProperties(Set<KeyValue> stepProperties) {
+    public void setStepProperties(Set<Property<KeyValue>> stepProperties) {
         this.stepProperties = stepProperties;
     }
 
-    public HadoopJarStepConfig withStepProperties(Set<KeyValue> stepProperties) {
+    public HadoopJarStepConfig withStepProperties(Set<Property<KeyValue>> stepProperties) {
         this.stepProperties = stepProperties;
         return this;
     }

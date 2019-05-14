@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html",
   "type" : "object",
   "javaType" : "aws.cognito.SchemaAttribute",
+  "javaInterfaces" : [ "aws.Property<SchemaAttribute>" ],
   "properties" : {
     "DeveloperOnlyAttribute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-developeronlyattribute",
@@ -21,7 +22,8 @@
     },
     "StringAttributeConstraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-stringattributeconstraints",
-      "$ref" : "AWS_Cognito_UserPool.StringAttributeConstraints.schema.json"
+      "$ref" : "AWS_Cognito_UserPool.StringAttributeConstraints.schema.json",
+      "javaType" : "aws.Property<aws.cognito.StringAttributeConstraints>"
     },
     "Required" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-required",
@@ -29,7 +31,8 @@
     },
     "NumberAttributeConstraints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-numberattributeconstraints",
-      "$ref" : "AWS_Cognito_UserPool.NumberAttributeConstraints.schema.json"
+      "$ref" : "AWS_Cognito_UserPool.NumberAttributeConstraints.schema.json",
+      "javaType" : "aws.Property<aws.cognito.NumberAttributeConstraints>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-schemaattribute.html#cfn-cognito-userpool-schemaattribute-name",

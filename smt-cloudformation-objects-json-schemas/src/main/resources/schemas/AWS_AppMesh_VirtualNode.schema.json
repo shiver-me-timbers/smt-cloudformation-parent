@@ -13,7 +13,8 @@
     },
     "Spec" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-spec",
-      "$ref" : "AWS_AppMesh_VirtualNode.VirtualNodeSpec.schema.json"
+      "$ref" : "AWS_AppMesh_VirtualNode.VirtualNodeSpec.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.VirtualNodeSpec>"
     },
     "VirtualNodeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-virtualnodename",
@@ -24,7 +25,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json"
+        "$ref" : "AWS_AppMesh_Mesh.TagRef.schema.json",
+        "javaType" : "aws.Property<aws.appmesh.TagRef>"
       }
     }
   }

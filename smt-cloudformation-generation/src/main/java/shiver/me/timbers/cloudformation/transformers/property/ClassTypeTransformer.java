@@ -28,6 +28,6 @@ public class ClassTypeTransformer implements PropertyTransformer {
         CloudformationProperty cloudformationProperty,
         Map<String, Object> property
     ) {
-        property.put("$ref", converter.convert(resourceName, cloudformationProperty.getType()));
+        property.putAll(converter.toTypeMap(resourceName, cloudformationProperty.getType()));
     }
 }

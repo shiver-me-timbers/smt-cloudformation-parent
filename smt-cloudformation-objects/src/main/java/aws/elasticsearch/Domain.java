@@ -4,6 +4,7 @@ package aws.elasticsearch;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -66,7 +67,7 @@ public class Domain {
      */
     @JsonProperty("EBSOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html")
-    private EBSOptions eBSOptions;
+    private Property<EBSOptions> eBSOptions;
     /**
      * ElasticsearchClusterConfig
      * <p>
@@ -75,7 +76,7 @@ public class Domain {
      */
     @JsonProperty("ElasticsearchClusterConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html")
-    private ElasticsearchClusterConfig elasticsearchClusterConfig;
+    private Property<ElasticsearchClusterConfig> elasticsearchClusterConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion
      * 
@@ -91,7 +92,7 @@ public class Domain {
      */
     @JsonProperty("EncryptionAtRestOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html")
-    private EncryptionAtRestOptions encryptionAtRestOptions;
+    private Property<EncryptionAtRestOptions> encryptionAtRestOptions;
     /**
      * NodeToNodeEncryptionOptions
      * <p>
@@ -100,7 +101,7 @@ public class Domain {
      */
     @JsonProperty("NodeToNodeEncryptionOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html")
-    private NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions;
+    private Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions;
     /**
      * SnapshotOptions
      * <p>
@@ -109,14 +110,14 @@ public class Domain {
      */
     @JsonProperty("SnapshotOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html")
-    private SnapshotOptions snapshotOptions;
+    private Property<SnapshotOptions> snapshotOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * VPCOptions
      * <p>
@@ -125,7 +126,7 @@ public class Domain {
      */
     @JsonProperty("VPCOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html")
-    private VPCOptions vPCOptions;
+    private Property<VPCOptions> vPCOptions;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
@@ -203,7 +204,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public EBSOptions getEBSOptions() {
+    public Property<EBSOptions> getEBSOptions() {
         return eBSOptions;
     }
 
@@ -214,11 +215,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setEBSOptions(EBSOptions eBSOptions) {
+    public void setEBSOptions(Property<EBSOptions> eBSOptions) {
         this.eBSOptions = eBSOptions;
     }
 
-    public Domain withEBSOptions(EBSOptions eBSOptions) {
+    public Domain withEBSOptions(Property<EBSOptions> eBSOptions) {
         this.eBSOptions = eBSOptions;
         return this;
     }
@@ -230,7 +231,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public ElasticsearchClusterConfig getElasticsearchClusterConfig() {
+    public Property<ElasticsearchClusterConfig> getElasticsearchClusterConfig() {
         return elasticsearchClusterConfig;
     }
 
@@ -241,11 +242,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setElasticsearchClusterConfig(ElasticsearchClusterConfig elasticsearchClusterConfig) {
+    public void setElasticsearchClusterConfig(Property<ElasticsearchClusterConfig> elasticsearchClusterConfig) {
         this.elasticsearchClusterConfig = elasticsearchClusterConfig;
     }
 
-    public Domain withElasticsearchClusterConfig(ElasticsearchClusterConfig elasticsearchClusterConfig) {
+    public Domain withElasticsearchClusterConfig(Property<ElasticsearchClusterConfig> elasticsearchClusterConfig) {
         this.elasticsearchClusterConfig = elasticsearchClusterConfig;
         return this;
     }
@@ -280,7 +281,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public EncryptionAtRestOptions getEncryptionAtRestOptions() {
+    public Property<EncryptionAtRestOptions> getEncryptionAtRestOptions() {
         return encryptionAtRestOptions;
     }
 
@@ -291,11 +292,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setEncryptionAtRestOptions(EncryptionAtRestOptions encryptionAtRestOptions) {
+    public void setEncryptionAtRestOptions(Property<EncryptionAtRestOptions> encryptionAtRestOptions) {
         this.encryptionAtRestOptions = encryptionAtRestOptions;
     }
 
-    public Domain withEncryptionAtRestOptions(EncryptionAtRestOptions encryptionAtRestOptions) {
+    public Domain withEncryptionAtRestOptions(Property<EncryptionAtRestOptions> encryptionAtRestOptions) {
         this.encryptionAtRestOptions = encryptionAtRestOptions;
         return this;
     }
@@ -307,7 +308,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public NodeToNodeEncryptionOptions getNodeToNodeEncryptionOptions() {
+    public Property<NodeToNodeEncryptionOptions> getNodeToNodeEncryptionOptions() {
         return nodeToNodeEncryptionOptions;
     }
 
@@ -318,11 +319,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setNodeToNodeEncryptionOptions(NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions) {
+    public void setNodeToNodeEncryptionOptions(Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
         this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
     }
 
-    public Domain withNodeToNodeEncryptionOptions(NodeToNodeEncryptionOptions nodeToNodeEncryptionOptions) {
+    public Domain withNodeToNodeEncryptionOptions(Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
         this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
         return this;
     }
@@ -334,7 +335,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public SnapshotOptions getSnapshotOptions() {
+    public Property<SnapshotOptions> getSnapshotOptions() {
         return snapshotOptions;
     }
 
@@ -345,11 +346,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setSnapshotOptions(SnapshotOptions snapshotOptions) {
+    public void setSnapshotOptions(Property<SnapshotOptions> snapshotOptions) {
         this.snapshotOptions = snapshotOptions;
     }
 
-    public Domain withSnapshotOptions(SnapshotOptions snapshotOptions) {
+    public Domain withSnapshotOptions(Property<SnapshotOptions> snapshotOptions) {
         this.snapshotOptions = snapshotOptions;
         return this;
     }
@@ -359,7 +360,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -368,11 +369,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Domain withTags(List<Tag> tags) {
+    public Domain withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -384,7 +385,7 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public VPCOptions getVPCOptions() {
+    public Property<VPCOptions> getVPCOptions() {
         return vPCOptions;
     }
 
@@ -395,11 +396,11 @@ public class Domain {
      * 
      */
     @JsonIgnore
-    public void setVPCOptions(VPCOptions vPCOptions) {
+    public void setVPCOptions(Property<VPCOptions> vPCOptions) {
         this.vPCOptions = vPCOptions;
     }
 
-    public Domain withVPCOptions(VPCOptions vPCOptions) {
+    public Domain withVPCOptions(Property<VPCOptions> vPCOptions) {
         this.vPCOptions = vPCOptions;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.kinesisanalyticsv2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -23,7 +24,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Inputs"
 })
-public class SqlApplicationConfiguration {
+public class SqlApplicationConfiguration implements Property<SqlApplicationConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs
@@ -31,14 +33,14 @@ public class SqlApplicationConfiguration {
      */
     @JsonProperty("Inputs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs")
-    private List<KinesisStreamsInput> inputs = new ArrayList<KinesisStreamsInput>();
+    private List<Property<Input>> inputs = new ArrayList<Property<Input>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.html#cfn-kinesisanalyticsv2-application-sqlapplicationconfiguration-inputs
      * 
      */
     @JsonIgnore
-    public List<KinesisStreamsInput> getInputs() {
+    public List<Property<Input>> getInputs() {
         return inputs;
     }
 
@@ -47,11 +49,11 @@ public class SqlApplicationConfiguration {
      * 
      */
     @JsonIgnore
-    public void setInputs(List<KinesisStreamsInput> inputs) {
+    public void setInputs(List<Property<Input>> inputs) {
         this.inputs = inputs;
     }
 
-    public SqlApplicationConfiguration withInputs(List<KinesisStreamsInput> inputs) {
+    public SqlApplicationConfiguration withInputs(List<Property<Input>> inputs) {
         this.inputs = inputs;
         return this;
     }

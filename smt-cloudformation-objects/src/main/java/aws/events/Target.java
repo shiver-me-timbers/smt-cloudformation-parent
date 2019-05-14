@@ -1,6 +1,7 @@
 
 package aws.events;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RunCommandParameters",
     "SqsParameters"
 })
-public class Target {
+public class Target implements Property<Target>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
@@ -47,7 +49,7 @@ public class Target {
      */
     @JsonProperty("EcsParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html")
-    private EcsParameters ecsParameters;
+    private Property<EcsParameters> ecsParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-id
      * 
@@ -77,7 +79,7 @@ public class Target {
      */
     @JsonProperty("InputTransformer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-inputtransformer.html")
-    private InputTransformer inputTransformer;
+    private Property<InputTransformer> inputTransformer;
     /**
      * KinesisParameters
      * <p>
@@ -86,7 +88,7 @@ public class Target {
      */
     @JsonProperty("KinesisParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html")
-    private KinesisParameters kinesisParameters;
+    private Property<KinesisParameters> kinesisParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-rolearn
      * 
@@ -102,7 +104,7 @@ public class Target {
      */
     @JsonProperty("RunCommandParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-runcommandparameters.html")
-    private RunCommandParameters runCommandParameters;
+    private Property<RunCommandParameters> runCommandParameters;
     /**
      * SqsParameters
      * <p>
@@ -111,7 +113,7 @@ public class Target {
      */
     @JsonProperty("SqsParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html")
-    private SqsParameters sqsParameters;
+    private Property<SqsParameters> sqsParameters;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html#cfn-events-rule-target-arn
@@ -143,7 +145,7 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public EcsParameters getEcsParameters() {
+    public Property<EcsParameters> getEcsParameters() {
         return ecsParameters;
     }
 
@@ -154,11 +156,11 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public void setEcsParameters(EcsParameters ecsParameters) {
+    public void setEcsParameters(Property<EcsParameters> ecsParameters) {
         this.ecsParameters = ecsParameters;
     }
 
-    public Target withEcsParameters(EcsParameters ecsParameters) {
+    public Target withEcsParameters(Property<EcsParameters> ecsParameters) {
         this.ecsParameters = ecsParameters;
         return this;
     }
@@ -239,7 +241,7 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public InputTransformer getInputTransformer() {
+    public Property<InputTransformer> getInputTransformer() {
         return inputTransformer;
     }
 
@@ -250,11 +252,11 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public void setInputTransformer(InputTransformer inputTransformer) {
+    public void setInputTransformer(Property<InputTransformer> inputTransformer) {
         this.inputTransformer = inputTransformer;
     }
 
-    public Target withInputTransformer(InputTransformer inputTransformer) {
+    public Target withInputTransformer(Property<InputTransformer> inputTransformer) {
         this.inputTransformer = inputTransformer;
         return this;
     }
@@ -266,7 +268,7 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public KinesisParameters getKinesisParameters() {
+    public Property<KinesisParameters> getKinesisParameters() {
         return kinesisParameters;
     }
 
@@ -277,11 +279,11 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public void setKinesisParameters(KinesisParameters kinesisParameters) {
+    public void setKinesisParameters(Property<KinesisParameters> kinesisParameters) {
         this.kinesisParameters = kinesisParameters;
     }
 
-    public Target withKinesisParameters(KinesisParameters kinesisParameters) {
+    public Target withKinesisParameters(Property<KinesisParameters> kinesisParameters) {
         this.kinesisParameters = kinesisParameters;
         return this;
     }
@@ -316,7 +318,7 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public RunCommandParameters getRunCommandParameters() {
+    public Property<RunCommandParameters> getRunCommandParameters() {
         return runCommandParameters;
     }
 
@@ -327,11 +329,11 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public void setRunCommandParameters(RunCommandParameters runCommandParameters) {
+    public void setRunCommandParameters(Property<RunCommandParameters> runCommandParameters) {
         this.runCommandParameters = runCommandParameters;
     }
 
-    public Target withRunCommandParameters(RunCommandParameters runCommandParameters) {
+    public Target withRunCommandParameters(Property<RunCommandParameters> runCommandParameters) {
         this.runCommandParameters = runCommandParameters;
         return this;
     }
@@ -343,7 +345,7 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public SqsParameters getSqsParameters() {
+    public Property<SqsParameters> getSqsParameters() {
         return sqsParameters;
     }
 
@@ -354,11 +356,11 @@ public class Target {
      * 
      */
     @JsonIgnore
-    public void setSqsParameters(SqsParameters sqsParameters) {
+    public void setSqsParameters(Property<SqsParameters> sqsParameters) {
         this.sqsParameters = sqsParameters;
     }
 
-    public Target withSqsParameters(SqsParameters sqsParameters) {
+    public Target withSqsParameters(Property<SqsParameters> sqsParameters) {
         this.sqsParameters = sqsParameters;
         return this;
     }

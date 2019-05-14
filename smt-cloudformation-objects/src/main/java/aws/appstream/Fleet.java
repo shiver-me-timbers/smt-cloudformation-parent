@@ -3,6 +3,7 @@ package aws.appstream;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -54,7 +55,7 @@ public class Fleet {
      */
     @JsonProperty("ComputeCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html")
-    private ComputeCapacity computeCapacity;
+    private Property<ComputeCapacity> computeCapacity;
     /**
      * VpcConfig
      * <p>
@@ -63,7 +64,7 @@ public class Fleet {
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html")
-    private VpcConfig vpcConfig;
+    private Property<VpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-fleettype
      * 
@@ -86,7 +87,7 @@ public class Fleet {
      */
     @JsonProperty("DomainJoinInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html")
-    private DomainJoinInfo domainJoinInfo;
+    private Property<DomainJoinInfo> domainJoinInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-name
      * 
@@ -135,7 +136,7 @@ public class Fleet {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-imagearn
      * 
@@ -174,7 +175,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public ComputeCapacity getComputeCapacity() {
+    public Property<ComputeCapacity> getComputeCapacity() {
         return computeCapacity;
     }
 
@@ -185,11 +186,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setComputeCapacity(ComputeCapacity computeCapacity) {
+    public void setComputeCapacity(Property<ComputeCapacity> computeCapacity) {
         this.computeCapacity = computeCapacity;
     }
 
-    public Fleet withComputeCapacity(ComputeCapacity computeCapacity) {
+    public Fleet withComputeCapacity(Property<ComputeCapacity> computeCapacity) {
         this.computeCapacity = computeCapacity;
         return this;
     }
@@ -201,7 +202,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public VpcConfig getVpcConfig() {
+    public Property<VpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
@@ -212,11 +213,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(VpcConfig vpcConfig) {
+    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Fleet withVpcConfig(VpcConfig vpcConfig) {
+    public Fleet withVpcConfig(Property<VpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -274,7 +275,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public DomainJoinInfo getDomainJoinInfo() {
+    public Property<DomainJoinInfo> getDomainJoinInfo() {
         return domainJoinInfo;
     }
 
@@ -285,11 +286,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setDomainJoinInfo(DomainJoinInfo domainJoinInfo) {
+    public void setDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
     }
 
-    public Fleet withDomainJoinInfo(DomainJoinInfo domainJoinInfo) {
+    public Fleet withDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
         return this;
     }
@@ -437,7 +438,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -446,11 +447,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Fleet withTags(List<Tag> tags) {
+    public Fleet withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

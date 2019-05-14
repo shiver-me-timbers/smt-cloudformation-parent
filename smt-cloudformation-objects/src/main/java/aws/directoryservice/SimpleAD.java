@@ -1,6 +1,7 @@
 
 package aws.directoryservice;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -87,7 +88,7 @@ public class SimpleAD {
      */
     @JsonProperty("VpcSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html")
-    private VpcSettings vpcSettings;
+    private Property<VpcSettings> vpcSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-createalias
@@ -257,7 +258,7 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public VpcSettings getVpcSettings() {
+    public Property<VpcSettings> getVpcSettings() {
         return vpcSettings;
     }
 
@@ -268,11 +269,11 @@ public class SimpleAD {
      * 
      */
     @JsonIgnore
-    public void setVpcSettings(VpcSettings vpcSettings) {
+    public void setVpcSettings(Property<VpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
     }
 
-    public SimpleAD withVpcSettings(VpcSettings vpcSettings) {
+    public SimpleAD withVpcSettings(Property<VpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
         return this;
     }

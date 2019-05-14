@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -35,7 +36,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Transition",
     "Transitions"
 })
-public class Rule {
+public class Rule implements Property<Rule>
+{
 
     /**
      * AbortIncompleteMultipartUpload
@@ -45,7 +47,7 @@ public class Rule {
      */
     @JsonProperty("AbortIncompleteMultipartUpload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-abortincompletemultipartupload.html")
-    private AbortIncompleteMultipartUpload abortIncompleteMultipartUpload;
+    private Property<AbortIncompleteMultipartUpload> abortIncompleteMultipartUpload;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationdate
      * 
@@ -82,7 +84,7 @@ public class Rule {
      */
     @JsonProperty("NoncurrentVersionTransition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html")
-    private NoncurrentVersionTransition noncurrentVersionTransition;
+    private Property<aws.s3.NoncurrentVersionTransition> noncurrentVersionTransition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransitions
      * 
@@ -90,7 +92,7 @@ public class Rule {
     @JsonProperty("NoncurrentVersionTransitions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransitions")
-    private Set<NoncurrentVersionTransition> noncurrentVersionTransitions = new LinkedHashSet<NoncurrentVersionTransition>();
+    private Set<Property<aws.s3.NoncurrentVersionTransition>> noncurrentVersionTransitions = new LinkedHashSet<Property<aws.s3.NoncurrentVersionTransition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-prefix
      * 
@@ -112,7 +114,7 @@ public class Rule {
     @JsonProperty("TagFilters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-tagfilters")
-    private Set<TagFilter> tagFilters = new LinkedHashSet<TagFilter>();
+    private Set<Property<TagFilter>> tagFilters = new LinkedHashSet<Property<TagFilter>>();
     /**
      * NoncurrentVersionTransition
      * <p>
@@ -121,7 +123,7 @@ public class Rule {
      */
     @JsonProperty("Transition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html")
-    private NoncurrentVersionTransition transition;
+    private Property<aws.s3.Transition> transition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions
      * 
@@ -129,7 +131,7 @@ public class Rule {
     @JsonProperty("Transitions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions")
-    private Set<NoncurrentVersionTransition> transitions = new LinkedHashSet<NoncurrentVersionTransition>();
+    private Set<Property<aws.s3.Transition>> transitions = new LinkedHashSet<Property<aws.s3.Transition>>();
 
     /**
      * AbortIncompleteMultipartUpload
@@ -138,7 +140,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public AbortIncompleteMultipartUpload getAbortIncompleteMultipartUpload() {
+    public Property<AbortIncompleteMultipartUpload> getAbortIncompleteMultipartUpload() {
         return abortIncompleteMultipartUpload;
     }
 
@@ -149,11 +151,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setAbortIncompleteMultipartUpload(AbortIncompleteMultipartUpload abortIncompleteMultipartUpload) {
+    public void setAbortIncompleteMultipartUpload(Property<AbortIncompleteMultipartUpload> abortIncompleteMultipartUpload) {
         this.abortIncompleteMultipartUpload = abortIncompleteMultipartUpload;
     }
 
-    public Rule withAbortIncompleteMultipartUpload(AbortIncompleteMultipartUpload abortIncompleteMultipartUpload) {
+    public Rule withAbortIncompleteMultipartUpload(Property<AbortIncompleteMultipartUpload> abortIncompleteMultipartUpload) {
         this.abortIncompleteMultipartUpload = abortIncompleteMultipartUpload;
         return this;
     }
@@ -257,7 +259,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public NoncurrentVersionTransition getNoncurrentVersionTransition() {
+    public Property<aws.s3.NoncurrentVersionTransition> getNoncurrentVersionTransition() {
         return noncurrentVersionTransition;
     }
 
@@ -268,11 +270,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setNoncurrentVersionTransition(NoncurrentVersionTransition noncurrentVersionTransition) {
+    public void setNoncurrentVersionTransition(Property<aws.s3.NoncurrentVersionTransition> noncurrentVersionTransition) {
         this.noncurrentVersionTransition = noncurrentVersionTransition;
     }
 
-    public Rule withNoncurrentVersionTransition(NoncurrentVersionTransition noncurrentVersionTransition) {
+    public Rule withNoncurrentVersionTransition(Property<aws.s3.NoncurrentVersionTransition> noncurrentVersionTransition) {
         this.noncurrentVersionTransition = noncurrentVersionTransition;
         return this;
     }
@@ -282,7 +284,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<NoncurrentVersionTransition> getNoncurrentVersionTransitions() {
+    public Set<Property<aws.s3.NoncurrentVersionTransition>> getNoncurrentVersionTransitions() {
         return noncurrentVersionTransitions;
     }
 
@@ -291,11 +293,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setNoncurrentVersionTransitions(Set<NoncurrentVersionTransition> noncurrentVersionTransitions) {
+    public void setNoncurrentVersionTransitions(Set<Property<aws.s3.NoncurrentVersionTransition>> noncurrentVersionTransitions) {
         this.noncurrentVersionTransitions = noncurrentVersionTransitions;
     }
 
-    public Rule withNoncurrentVersionTransitions(Set<NoncurrentVersionTransition> noncurrentVersionTransitions) {
+    public Rule withNoncurrentVersionTransitions(Set<Property<aws.s3.NoncurrentVersionTransition>> noncurrentVersionTransitions) {
         this.noncurrentVersionTransitions = noncurrentVersionTransitions;
         return this;
     }
@@ -351,7 +353,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<TagFilter> getTagFilters() {
+    public Set<Property<TagFilter>> getTagFilters() {
         return tagFilters;
     }
 
@@ -360,11 +362,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setTagFilters(Set<TagFilter> tagFilters) {
+    public void setTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
     }
 
-    public Rule withTagFilters(Set<TagFilter> tagFilters) {
+    public Rule withTagFilters(Set<Property<TagFilter>> tagFilters) {
         this.tagFilters = tagFilters;
         return this;
     }
@@ -376,7 +378,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public NoncurrentVersionTransition getTransition() {
+    public Property<aws.s3.Transition> getTransition() {
         return transition;
     }
 
@@ -387,11 +389,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setTransition(NoncurrentVersionTransition transition) {
+    public void setTransition(Property<aws.s3.Transition> transition) {
         this.transition = transition;
     }
 
-    public Rule withTransition(NoncurrentVersionTransition transition) {
+    public Rule withTransition(Property<aws.s3.Transition> transition) {
         this.transition = transition;
         return this;
     }
@@ -401,7 +403,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<NoncurrentVersionTransition> getTransitions() {
+    public Set<Property<aws.s3.Transition>> getTransitions() {
         return transitions;
     }
 
@@ -410,11 +412,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setTransitions(Set<NoncurrentVersionTransition> transitions) {
+    public void setTransitions(Set<Property<aws.s3.Transition>> transitions) {
         this.transitions = transitions;
     }
 
-    public Rule withTransitions(Set<NoncurrentVersionTransition> transitions) {
+    public Rule withTransitions(Set<Property<aws.s3.Transition>> transitions) {
         this.transitions = transitions;
         return this;
     }

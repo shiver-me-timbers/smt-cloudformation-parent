@@ -3,6 +3,7 @@ package aws.apigateway;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -74,7 +75,7 @@ public class ApiKey {
     @JsonProperty("StageKeys")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-stagekeys")
-    private Set<StageKey> stageKeys = new LinkedHashSet<StageKey>();
+    private Set<Property<StageKey>> stageKeys = new LinkedHashSet<Property<StageKey>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-apikey.html#cfn-apigateway-apikey-value
      * 
@@ -203,7 +204,7 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public Set<StageKey> getStageKeys() {
+    public Set<Property<StageKey>> getStageKeys() {
         return stageKeys;
     }
 
@@ -212,11 +213,11 @@ public class ApiKey {
      * 
      */
     @JsonIgnore
-    public void setStageKeys(Set<StageKey> stageKeys) {
+    public void setStageKeys(Set<Property<StageKey>> stageKeys) {
         this.stageKeys = stageKeys;
     }
 
-    public ApiKey withStageKeys(Set<StageKey> stageKeys) {
+    public ApiKey withStageKeys(Set<Property<StageKey>> stageKeys) {
         this.stageKeys = stageKeys;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.greengrass;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LocalDeviceResourceData",
     "S3MachineLearningModelResourceData"
 })
-public class ResourceDataContainer {
+public class ResourceDataContainer implements Property<ResourceDataContainer>
+{
 
     /**
      * SecretsManagerSecretResourceData
@@ -35,7 +37,7 @@ public class ResourceDataContainer {
      */
     @JsonProperty("SecretsManagerSecretResourceData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-secretsmanagersecretresourcedata.html")
-    private SecretsManagerSecretResourceData secretsManagerSecretResourceData;
+    private Property<SecretsManagerSecretResourceData> secretsManagerSecretResourceData;
     /**
      * SageMakerMachineLearningModelResourceData
      * <p>
@@ -44,7 +46,7 @@ public class ResourceDataContainer {
      */
     @JsonProperty("SageMakerMachineLearningModelResourceData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-sagemakermachinelearningmodelresourcedata.html")
-    private SageMakerMachineLearningModelResourceData sageMakerMachineLearningModelResourceData;
+    private Property<SageMakerMachineLearningModelResourceData> sageMakerMachineLearningModelResourceData;
     /**
      * LocalVolumeResourceData
      * <p>
@@ -53,7 +55,7 @@ public class ResourceDataContainer {
      */
     @JsonProperty("LocalVolumeResourceData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-localvolumeresourcedata.html")
-    private LocalVolumeResourceData localVolumeResourceData;
+    private Property<LocalVolumeResourceData> localVolumeResourceData;
     /**
      * LocalDeviceResourceData
      * <p>
@@ -62,7 +64,7 @@ public class ResourceDataContainer {
      */
     @JsonProperty("LocalDeviceResourceData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-localdeviceresourcedata.html")
-    private LocalDeviceResourceData localDeviceResourceData;
+    private Property<LocalDeviceResourceData> localDeviceResourceData;
     /**
      * S3MachineLearningModelResourceData
      * <p>
@@ -71,7 +73,7 @@ public class ResourceDataContainer {
      */
     @JsonProperty("S3MachineLearningModelResourceData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-s3machinelearningmodelresourcedata.html")
-    private S3MachineLearningModelResourceData s3MachineLearningModelResourceData;
+    private Property<S3MachineLearningModelResourceData> s3MachineLearningModelResourceData;
 
     /**
      * SecretsManagerSecretResourceData
@@ -80,7 +82,7 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public SecretsManagerSecretResourceData getSecretsManagerSecretResourceData() {
+    public Property<SecretsManagerSecretResourceData> getSecretsManagerSecretResourceData() {
         return secretsManagerSecretResourceData;
     }
 
@@ -91,11 +93,11 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public void setSecretsManagerSecretResourceData(SecretsManagerSecretResourceData secretsManagerSecretResourceData) {
+    public void setSecretsManagerSecretResourceData(Property<SecretsManagerSecretResourceData> secretsManagerSecretResourceData) {
         this.secretsManagerSecretResourceData = secretsManagerSecretResourceData;
     }
 
-    public ResourceDataContainer withSecretsManagerSecretResourceData(SecretsManagerSecretResourceData secretsManagerSecretResourceData) {
+    public ResourceDataContainer withSecretsManagerSecretResourceData(Property<SecretsManagerSecretResourceData> secretsManagerSecretResourceData) {
         this.secretsManagerSecretResourceData = secretsManagerSecretResourceData;
         return this;
     }
@@ -107,7 +109,7 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public SageMakerMachineLearningModelResourceData getSageMakerMachineLearningModelResourceData() {
+    public Property<SageMakerMachineLearningModelResourceData> getSageMakerMachineLearningModelResourceData() {
         return sageMakerMachineLearningModelResourceData;
     }
 
@@ -118,11 +120,11 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public void setSageMakerMachineLearningModelResourceData(SageMakerMachineLearningModelResourceData sageMakerMachineLearningModelResourceData) {
+    public void setSageMakerMachineLearningModelResourceData(Property<SageMakerMachineLearningModelResourceData> sageMakerMachineLearningModelResourceData) {
         this.sageMakerMachineLearningModelResourceData = sageMakerMachineLearningModelResourceData;
     }
 
-    public ResourceDataContainer withSageMakerMachineLearningModelResourceData(SageMakerMachineLearningModelResourceData sageMakerMachineLearningModelResourceData) {
+    public ResourceDataContainer withSageMakerMachineLearningModelResourceData(Property<SageMakerMachineLearningModelResourceData> sageMakerMachineLearningModelResourceData) {
         this.sageMakerMachineLearningModelResourceData = sageMakerMachineLearningModelResourceData;
         return this;
     }
@@ -134,7 +136,7 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public LocalVolumeResourceData getLocalVolumeResourceData() {
+    public Property<LocalVolumeResourceData> getLocalVolumeResourceData() {
         return localVolumeResourceData;
     }
 
@@ -145,11 +147,11 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public void setLocalVolumeResourceData(LocalVolumeResourceData localVolumeResourceData) {
+    public void setLocalVolumeResourceData(Property<LocalVolumeResourceData> localVolumeResourceData) {
         this.localVolumeResourceData = localVolumeResourceData;
     }
 
-    public ResourceDataContainer withLocalVolumeResourceData(LocalVolumeResourceData localVolumeResourceData) {
+    public ResourceDataContainer withLocalVolumeResourceData(Property<LocalVolumeResourceData> localVolumeResourceData) {
         this.localVolumeResourceData = localVolumeResourceData;
         return this;
     }
@@ -161,7 +163,7 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public LocalDeviceResourceData getLocalDeviceResourceData() {
+    public Property<LocalDeviceResourceData> getLocalDeviceResourceData() {
         return localDeviceResourceData;
     }
 
@@ -172,11 +174,11 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public void setLocalDeviceResourceData(LocalDeviceResourceData localDeviceResourceData) {
+    public void setLocalDeviceResourceData(Property<LocalDeviceResourceData> localDeviceResourceData) {
         this.localDeviceResourceData = localDeviceResourceData;
     }
 
-    public ResourceDataContainer withLocalDeviceResourceData(LocalDeviceResourceData localDeviceResourceData) {
+    public ResourceDataContainer withLocalDeviceResourceData(Property<LocalDeviceResourceData> localDeviceResourceData) {
         this.localDeviceResourceData = localDeviceResourceData;
         return this;
     }
@@ -188,7 +190,7 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public S3MachineLearningModelResourceData getS3MachineLearningModelResourceData() {
+    public Property<S3MachineLearningModelResourceData> getS3MachineLearningModelResourceData() {
         return s3MachineLearningModelResourceData;
     }
 
@@ -199,11 +201,11 @@ public class ResourceDataContainer {
      * 
      */
     @JsonIgnore
-    public void setS3MachineLearningModelResourceData(S3MachineLearningModelResourceData s3MachineLearningModelResourceData) {
+    public void setS3MachineLearningModelResourceData(Property<S3MachineLearningModelResourceData> s3MachineLearningModelResourceData) {
         this.s3MachineLearningModelResourceData = s3MachineLearningModelResourceData;
     }
 
-    public ResourceDataContainer withS3MachineLearningModelResourceData(S3MachineLearningModelResourceData s3MachineLearningModelResourceData) {
+    public ResourceDataContainer withS3MachineLearningModelResourceData(Property<S3MachineLearningModelResourceData> s3MachineLearningModelResourceData) {
         this.s3MachineLearningModelResourceData = s3MachineLearningModelResourceData;
         return this;
     }

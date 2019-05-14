@@ -1,6 +1,7 @@
 
 package aws.iotanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,7 +31,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "DeviceRegistryEnrich",
     "RemoveAttributes"
 })
-public class Activity {
+public class Activity implements Property<Activity>
+{
 
     /**
      * SelectAttributes
@@ -40,7 +42,7 @@ public class Activity {
      */
     @JsonProperty("SelectAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-selectattributes.html")
-    private SelectAttributes selectAttributes;
+    private Property<SelectAttributes> selectAttributes;
     /**
      * Datastore
      * <p>
@@ -49,7 +51,7 @@ public class Activity {
      */
     @JsonProperty("Datastore")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-datastore.html")
-    private Datastore datastore;
+    private Property<Datastore> datastore;
     /**
      * Filter
      * <p>
@@ -58,7 +60,7 @@ public class Activity {
      */
     @JsonProperty("Filter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-filter.html")
-    private Filter filter;
+    private Property<Filter> filter;
     /**
      * AddAttributes
      * <p>
@@ -67,7 +69,7 @@ public class Activity {
      */
     @JsonProperty("AddAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-addattributes.html")
-    private AddAttributes addAttributes;
+    private Property<AddAttributes> addAttributes;
     /**
      * Channel
      * <p>
@@ -76,7 +78,7 @@ public class Activity {
      */
     @JsonProperty("Channel")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-channel.html")
-    private Channel channel;
+    private Property<Channel> channel;
     /**
      * DeviceShadowEnrich
      * <p>
@@ -85,7 +87,7 @@ public class Activity {
      */
     @JsonProperty("DeviceShadowEnrich")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-deviceshadowenrich.html")
-    private DeviceShadowEnrich deviceShadowEnrich;
+    private Property<DeviceShadowEnrich> deviceShadowEnrich;
     /**
      * Math
      * <p>
@@ -94,7 +96,7 @@ public class Activity {
      */
     @JsonProperty("Math")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-math.html")
-    private Math math;
+    private Property<Math> math;
     /**
      * Lambda
      * <p>
@@ -103,7 +105,7 @@ public class Activity {
      */
     @JsonProperty("Lambda")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-lambda.html")
-    private Lambda lambda;
+    private Property<Lambda> lambda;
     /**
      * DeviceRegistryEnrich
      * <p>
@@ -112,7 +114,7 @@ public class Activity {
      */
     @JsonProperty("DeviceRegistryEnrich")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-deviceregistryenrich.html")
-    private DeviceRegistryEnrich deviceRegistryEnrich;
+    private Property<DeviceRegistryEnrich> deviceRegistryEnrich;
     /**
      * RemoveAttributes
      * <p>
@@ -121,7 +123,7 @@ public class Activity {
      */
     @JsonProperty("RemoveAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-removeattributes.html")
-    private RemoveAttributes removeAttributes;
+    private Property<RemoveAttributes> removeAttributes;
 
     /**
      * SelectAttributes
@@ -130,7 +132,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public SelectAttributes getSelectAttributes() {
+    public Property<SelectAttributes> getSelectAttributes() {
         return selectAttributes;
     }
 
@@ -141,11 +143,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setSelectAttributes(SelectAttributes selectAttributes) {
+    public void setSelectAttributes(Property<SelectAttributes> selectAttributes) {
         this.selectAttributes = selectAttributes;
     }
 
-    public Activity withSelectAttributes(SelectAttributes selectAttributes) {
+    public Activity withSelectAttributes(Property<SelectAttributes> selectAttributes) {
         this.selectAttributes = selectAttributes;
         return this;
     }
@@ -157,7 +159,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public Datastore getDatastore() {
+    public Property<Datastore> getDatastore() {
         return datastore;
     }
 
@@ -168,11 +170,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setDatastore(Datastore datastore) {
+    public void setDatastore(Property<Datastore> datastore) {
         this.datastore = datastore;
     }
 
-    public Activity withDatastore(Datastore datastore) {
+    public Activity withDatastore(Property<Datastore> datastore) {
         this.datastore = datastore;
         return this;
     }
@@ -184,7 +186,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public Filter getFilter() {
+    public Property<Filter> getFilter() {
         return filter;
     }
 
@@ -195,11 +197,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setFilter(Filter filter) {
+    public void setFilter(Property<Filter> filter) {
         this.filter = filter;
     }
 
-    public Activity withFilter(Filter filter) {
+    public Activity withFilter(Property<Filter> filter) {
         this.filter = filter;
         return this;
     }
@@ -211,7 +213,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public AddAttributes getAddAttributes() {
+    public Property<AddAttributes> getAddAttributes() {
         return addAttributes;
     }
 
@@ -222,11 +224,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setAddAttributes(AddAttributes addAttributes) {
+    public void setAddAttributes(Property<AddAttributes> addAttributes) {
         this.addAttributes = addAttributes;
     }
 
-    public Activity withAddAttributes(AddAttributes addAttributes) {
+    public Activity withAddAttributes(Property<AddAttributes> addAttributes) {
         this.addAttributes = addAttributes;
         return this;
     }
@@ -238,7 +240,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public Channel getChannel() {
+    public Property<Channel> getChannel() {
         return channel;
     }
 
@@ -249,11 +251,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setChannel(Channel channel) {
+    public void setChannel(Property<Channel> channel) {
         this.channel = channel;
     }
 
-    public Activity withChannel(Channel channel) {
+    public Activity withChannel(Property<Channel> channel) {
         this.channel = channel;
         return this;
     }
@@ -265,7 +267,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public DeviceShadowEnrich getDeviceShadowEnrich() {
+    public Property<DeviceShadowEnrich> getDeviceShadowEnrich() {
         return deviceShadowEnrich;
     }
 
@@ -276,11 +278,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setDeviceShadowEnrich(DeviceShadowEnrich deviceShadowEnrich) {
+    public void setDeviceShadowEnrich(Property<DeviceShadowEnrich> deviceShadowEnrich) {
         this.deviceShadowEnrich = deviceShadowEnrich;
     }
 
-    public Activity withDeviceShadowEnrich(DeviceShadowEnrich deviceShadowEnrich) {
+    public Activity withDeviceShadowEnrich(Property<DeviceShadowEnrich> deviceShadowEnrich) {
         this.deviceShadowEnrich = deviceShadowEnrich;
         return this;
     }
@@ -292,7 +294,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public Math getMath() {
+    public Property<Math> getMath() {
         return math;
     }
 
@@ -303,11 +305,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setMath(Math math) {
+    public void setMath(Property<Math> math) {
         this.math = math;
     }
 
-    public Activity withMath(Math math) {
+    public Activity withMath(Property<Math> math) {
         this.math = math;
         return this;
     }
@@ -319,7 +321,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public Lambda getLambda() {
+    public Property<Lambda> getLambda() {
         return lambda;
     }
 
@@ -330,11 +332,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setLambda(Lambda lambda) {
+    public void setLambda(Property<Lambda> lambda) {
         this.lambda = lambda;
     }
 
-    public Activity withLambda(Lambda lambda) {
+    public Activity withLambda(Property<Lambda> lambda) {
         this.lambda = lambda;
         return this;
     }
@@ -346,7 +348,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public DeviceRegistryEnrich getDeviceRegistryEnrich() {
+    public Property<DeviceRegistryEnrich> getDeviceRegistryEnrich() {
         return deviceRegistryEnrich;
     }
 
@@ -357,11 +359,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setDeviceRegistryEnrich(DeviceRegistryEnrich deviceRegistryEnrich) {
+    public void setDeviceRegistryEnrich(Property<DeviceRegistryEnrich> deviceRegistryEnrich) {
         this.deviceRegistryEnrich = deviceRegistryEnrich;
     }
 
-    public Activity withDeviceRegistryEnrich(DeviceRegistryEnrich deviceRegistryEnrich) {
+    public Activity withDeviceRegistryEnrich(Property<DeviceRegistryEnrich> deviceRegistryEnrich) {
         this.deviceRegistryEnrich = deviceRegistryEnrich;
         return this;
     }
@@ -373,7 +375,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public RemoveAttributes getRemoveAttributes() {
+    public Property<RemoveAttributes> getRemoveAttributes() {
         return removeAttributes;
     }
 
@@ -384,11 +386,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setRemoveAttributes(RemoveAttributes removeAttributes) {
+    public void setRemoveAttributes(Property<RemoveAttributes> removeAttributes) {
         this.removeAttributes = removeAttributes;
     }
 
-    public Activity withRemoveAttributes(RemoveAttributes removeAttributes) {
+    public Activity withRemoveAttributes(Property<RemoveAttributes> removeAttributes) {
         this.removeAttributes = removeAttributes;
         return this;
     }

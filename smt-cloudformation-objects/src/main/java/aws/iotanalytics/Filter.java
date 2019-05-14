@@ -1,6 +1,7 @@
 
 package aws.iotanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "DeltaTime"
 })
-public class Filter {
+public class Filter implements Property<Filter>
+{
 
     /**
      * DeltaTime
@@ -31,7 +33,7 @@ public class Filter {
      */
     @JsonProperty("DeltaTime")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html")
-    private DeltaTime deltaTime;
+    private Property<DeltaTime> deltaTime;
 
     /**
      * DeltaTime
@@ -40,7 +42,7 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public DeltaTime getDeltaTime() {
+    public Property<DeltaTime> getDeltaTime() {
         return deltaTime;
     }
 
@@ -51,11 +53,11 @@ public class Filter {
      * 
      */
     @JsonIgnore
-    public void setDeltaTime(DeltaTime deltaTime) {
+    public void setDeltaTime(Property<DeltaTime> deltaTime) {
         this.deltaTime = deltaTime;
     }
 
-    public Filter withDeltaTime(DeltaTime deltaTime) {
+    public Filter withDeltaTime(Property<DeltaTime> deltaTime) {
         this.deltaTime = deltaTime;
         return this;
     }

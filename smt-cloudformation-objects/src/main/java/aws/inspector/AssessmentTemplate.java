@@ -3,6 +3,7 @@ package aws.inspector;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -64,7 +65,7 @@ public class AssessmentTemplate {
      */
     @JsonProperty("UserAttributesForFindings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-userattributesforfindings")
-    private List<Tag> userAttributesForFindings = new ArrayList<Tag>();
+    private List<Property<Tag>> userAttributesForFindings = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
@@ -163,7 +164,7 @@ public class AssessmentTemplate {
      * 
      */
     @JsonIgnore
-    public List<Tag> getUserAttributesForFindings() {
+    public List<Property<Tag>> getUserAttributesForFindings() {
         return userAttributesForFindings;
     }
 
@@ -172,11 +173,11 @@ public class AssessmentTemplate {
      * 
      */
     @JsonIgnore
-    public void setUserAttributesForFindings(List<Tag> userAttributesForFindings) {
+    public void setUserAttributesForFindings(List<Property<Tag>> userAttributesForFindings) {
         this.userAttributesForFindings = userAttributesForFindings;
     }
 
-    public AssessmentTemplate withUserAttributesForFindings(List<Tag> userAttributesForFindings) {
+    public AssessmentTemplate withUserAttributesForFindings(List<Property<Tag>> userAttributesForFindings) {
         this.userAttributesForFindings = userAttributesForFindings;
         return this;
     }

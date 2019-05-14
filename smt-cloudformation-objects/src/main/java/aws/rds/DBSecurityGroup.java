@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -39,7 +40,7 @@ public class DBSecurityGroup {
     @JsonProperty("DBSecurityGroupIngress")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress")
-    private Set<Ingress> dBSecurityGroupIngress = new LinkedHashSet<Ingress>();
+    private Set<Property<Ingress>> dBSecurityGroupIngress = new LinkedHashSet<Property<Ingress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
@@ -60,14 +61,14 @@ public class DBSecurityGroup {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress
      * 
      */
     @JsonIgnore
-    public Set<Ingress> getDBSecurityGroupIngress() {
+    public Set<Property<Ingress>> getDBSecurityGroupIngress() {
         return dBSecurityGroupIngress;
     }
 
@@ -76,11 +77,11 @@ public class DBSecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setDBSecurityGroupIngress(Set<Ingress> dBSecurityGroupIngress) {
+    public void setDBSecurityGroupIngress(Set<Property<Ingress>> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
     }
 
-    public DBSecurityGroup withDBSecurityGroupIngress(Set<Ingress> dBSecurityGroupIngress) {
+    public DBSecurityGroup withDBSecurityGroupIngress(Set<Property<Ingress>> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
         return this;
     }
@@ -136,7 +137,7 @@ public class DBSecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -145,11 +146,11 @@ public class DBSecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public DBSecurityGroup withTags(List<Tag> tags) {
+    public DBSecurityGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

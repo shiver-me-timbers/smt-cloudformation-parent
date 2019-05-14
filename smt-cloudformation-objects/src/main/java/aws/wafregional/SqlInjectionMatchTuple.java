@@ -1,6 +1,7 @@
 
 package aws.wafregional;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TextTransformation",
     "FieldToMatch"
 })
-public class SqlInjectionMatchTuple {
+public class SqlInjectionMatchTuple implements Property<SqlInjectionMatchTuple>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation
@@ -39,7 +41,7 @@ public class SqlInjectionMatchTuple {
      */
     @JsonProperty("FieldToMatch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-bytematchset-fieldtomatch.html")
-    private FieldToMatch fieldToMatch;
+    private Property<FieldToMatch> fieldToMatch;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple.html#cfn-wafregional-sqlinjectionmatchset-sqlinjectionmatchtuple-texttransformation
@@ -71,7 +73,7 @@ public class SqlInjectionMatchTuple {
      * 
      */
     @JsonIgnore
-    public FieldToMatch getFieldToMatch() {
+    public Property<FieldToMatch> getFieldToMatch() {
         return fieldToMatch;
     }
 
@@ -82,11 +84,11 @@ public class SqlInjectionMatchTuple {
      * 
      */
     @JsonIgnore
-    public void setFieldToMatch(FieldToMatch fieldToMatch) {
+    public void setFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
 
-    public SqlInjectionMatchTuple withFieldToMatch(FieldToMatch fieldToMatch) {
+    public SqlInjectionMatchTuple withFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
         return this;
     }

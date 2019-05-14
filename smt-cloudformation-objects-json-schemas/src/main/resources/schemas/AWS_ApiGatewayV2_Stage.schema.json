@@ -23,7 +23,8 @@
     },
     "AccessLogSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-accesslogsettings",
-      "$ref" : "AWS_ApiGatewayV2_Stage.AccessLogSettings.schema.json"
+      "$ref" : "AWS_ApiGatewayV2_Stage.AccessLogSettings.schema.json",
+      "javaType" : "aws.Property<aws.apigatewayv2.AccessLogSettings>"
     },
     "RouteSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-routesettings",
@@ -45,7 +46,8 @@
     },
     "DefaultRouteSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-defaultroutesettings",
-      "$ref" : "AWS_ApiGatewayV2_Stage.RouteSettings.schema.json"
+      "$ref" : "AWS_ApiGatewayV2_Stage.RouteSettings.schema.json",
+      "javaType" : "aws.Property<aws.apigatewayv2.RouteSettings>"
     }
   }
 }

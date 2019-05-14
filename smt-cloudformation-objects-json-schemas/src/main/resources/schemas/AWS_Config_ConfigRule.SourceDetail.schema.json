@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html",
   "type" : "object",
   "javaType" : "aws.config.SourceDetail",
+  "javaInterfaces" : [ "aws.Property<SourceDetail>" ],
   "properties" : {
     "EventSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html#cfn-config-configrule-source-sourcedetail-eventsource",

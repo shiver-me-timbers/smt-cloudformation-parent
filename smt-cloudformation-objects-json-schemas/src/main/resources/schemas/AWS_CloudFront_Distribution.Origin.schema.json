@@ -5,12 +5,14 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html",
   "type" : "object",
   "javaType" : "aws.cloudfront.Origin",
+  "javaInterfaces" : [ "aws.Property<Origin>" ],
   "properties" : {
     "OriginCustomHeaders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_CloudFront_Distribution.OriginCustomHeader.schema.json"
+        "$ref" : "AWS_CloudFront_Distribution.OriginCustomHeader.schema.json",
+        "javaType" : "aws.Property<aws.cloudfront.OriginCustomHeader>"
       }
     },
     "DomainName" : {
@@ -20,7 +22,8 @@
     },
     "S3OriginConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-s3originconfig",
-      "$ref" : "AWS_CloudFront_Distribution.S3OriginConfig.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.S3OriginConfig.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.S3OriginConfig>"
     },
     "OriginPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath",
@@ -34,7 +37,8 @@
     },
     "CustomOriginConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-customoriginconfig",
-      "$ref" : "AWS_CloudFront_Distribution.CustomOriginConfig.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.CustomOriginConfig.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.CustomOriginConfig>"
     }
   }
 }

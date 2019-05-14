@@ -1,6 +1,7 @@
 
 package aws.elasticbeanstalk;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,7 @@ public class ApplicationVersion {
      */
     @JsonProperty("SourceBundle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html")
-    private SourceBundle sourceBundle;
+    private Property<SourceBundle> sourceBundle;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname
@@ -102,7 +103,7 @@ public class ApplicationVersion {
      * 
      */
     @JsonIgnore
-    public SourceBundle getSourceBundle() {
+    public Property<SourceBundle> getSourceBundle() {
         return sourceBundle;
     }
 
@@ -113,11 +114,11 @@ public class ApplicationVersion {
      * 
      */
     @JsonIgnore
-    public void setSourceBundle(SourceBundle sourceBundle) {
+    public void setSourceBundle(Property<SourceBundle> sourceBundle) {
         this.sourceBundle = sourceBundle;
     }
 
-    public ApplicationVersion withSourceBundle(SourceBundle sourceBundle) {
+    public ApplicationVersion withSourceBundle(Property<SourceBundle> sourceBundle) {
         this.sourceBundle = sourceBundle;
         return this;
     }

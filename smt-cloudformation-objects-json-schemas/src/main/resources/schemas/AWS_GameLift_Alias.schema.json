@@ -18,7 +18,8 @@
     },
     "RoutingStrategy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-routingstrategy",
-      "$ref" : "AWS_GameLift_Alias.RoutingStrategy.schema.json"
+      "$ref" : "AWS_GameLift_Alias.RoutingStrategy.schema.json",
+      "javaType" : "aws.Property<aws.gamelift.RoutingStrategy>"
     }
   }
 }

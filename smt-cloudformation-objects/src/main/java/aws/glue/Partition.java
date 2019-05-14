@@ -1,6 +1,7 @@
 
 package aws.glue;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -55,7 +56,7 @@ public class Partition {
      */
     @JsonProperty("PartitionInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html")
-    private PartitionInput partitionInput;
+    private Property<PartitionInput> partitionInput;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename
@@ -133,7 +134,7 @@ public class Partition {
      * 
      */
     @JsonIgnore
-    public PartitionInput getPartitionInput() {
+    public Property<PartitionInput> getPartitionInput() {
         return partitionInput;
     }
 
@@ -144,11 +145,11 @@ public class Partition {
      * 
      */
     @JsonIgnore
-    public void setPartitionInput(PartitionInput partitionInput) {
+    public void setPartitionInput(Property<PartitionInput> partitionInput) {
         this.partitionInput = partitionInput;
     }
 
-    public Partition withPartitionInput(PartitionInput partitionInput) {
+    public Partition withPartitionInput(Property<PartitionInput> partitionInput) {
         this.partitionInput = partitionInput;
         return this;
     }

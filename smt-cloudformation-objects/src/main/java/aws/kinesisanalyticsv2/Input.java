@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "InputProcessingConfiguration",
     "InputParallelism"
 })
-public class Input {
+public class Input implements Property<Input>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-nameprefix
@@ -43,7 +45,7 @@ public class Input {
      */
     @JsonProperty("InputSchema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html")
-    private InputSchema inputSchema;
+    private Property<InputSchema> inputSchema;
     /**
      * KinesisStreamsInput
      * <p>
@@ -52,7 +54,7 @@ public class Input {
      */
     @JsonProperty("KinesisStreamsInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisstreamsinput.html")
-    private KinesisStreamsInput kinesisStreamsInput;
+    private Property<KinesisStreamsInput> kinesisStreamsInput;
     /**
      * KinesisFirehoseInput
      * <p>
@@ -61,7 +63,7 @@ public class Input {
      */
     @JsonProperty("KinesisFirehoseInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-kinesisfirehoseinput.html")
-    private KinesisFirehoseInput kinesisFirehoseInput;
+    private Property<KinesisFirehoseInput> kinesisFirehoseInput;
     /**
      * InputProcessingConfiguration
      * <p>
@@ -70,7 +72,7 @@ public class Input {
      */
     @JsonProperty("InputProcessingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputprocessingconfiguration.html")
-    private InputProcessingConfiguration inputProcessingConfiguration;
+    private Property<InputProcessingConfiguration> inputProcessingConfiguration;
     /**
      * InputParallelism
      * <p>
@@ -79,7 +81,7 @@ public class Input {
      */
     @JsonProperty("InputParallelism")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputparallelism.html")
-    private InputParallelism inputParallelism;
+    private Property<InputParallelism> inputParallelism;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-input.html#cfn-kinesisanalyticsv2-application-input-nameprefix
@@ -111,7 +113,7 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public InputSchema getInputSchema() {
+    public Property<InputSchema> getInputSchema() {
         return inputSchema;
     }
 
@@ -122,11 +124,11 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public void setInputSchema(InputSchema inputSchema) {
+    public void setInputSchema(Property<InputSchema> inputSchema) {
         this.inputSchema = inputSchema;
     }
 
-    public Input withInputSchema(InputSchema inputSchema) {
+    public Input withInputSchema(Property<InputSchema> inputSchema) {
         this.inputSchema = inputSchema;
         return this;
     }
@@ -138,7 +140,7 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public KinesisStreamsInput getKinesisStreamsInput() {
+    public Property<KinesisStreamsInput> getKinesisStreamsInput() {
         return kinesisStreamsInput;
     }
 
@@ -149,11 +151,11 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public void setKinesisStreamsInput(KinesisStreamsInput kinesisStreamsInput) {
+    public void setKinesisStreamsInput(Property<KinesisStreamsInput> kinesisStreamsInput) {
         this.kinesisStreamsInput = kinesisStreamsInput;
     }
 
-    public Input withKinesisStreamsInput(KinesisStreamsInput kinesisStreamsInput) {
+    public Input withKinesisStreamsInput(Property<KinesisStreamsInput> kinesisStreamsInput) {
         this.kinesisStreamsInput = kinesisStreamsInput;
         return this;
     }
@@ -165,7 +167,7 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public KinesisFirehoseInput getKinesisFirehoseInput() {
+    public Property<KinesisFirehoseInput> getKinesisFirehoseInput() {
         return kinesisFirehoseInput;
     }
 
@@ -176,11 +178,11 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public void setKinesisFirehoseInput(KinesisFirehoseInput kinesisFirehoseInput) {
+    public void setKinesisFirehoseInput(Property<KinesisFirehoseInput> kinesisFirehoseInput) {
         this.kinesisFirehoseInput = kinesisFirehoseInput;
     }
 
-    public Input withKinesisFirehoseInput(KinesisFirehoseInput kinesisFirehoseInput) {
+    public Input withKinesisFirehoseInput(Property<KinesisFirehoseInput> kinesisFirehoseInput) {
         this.kinesisFirehoseInput = kinesisFirehoseInput;
         return this;
     }
@@ -192,7 +194,7 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public InputProcessingConfiguration getInputProcessingConfiguration() {
+    public Property<InputProcessingConfiguration> getInputProcessingConfiguration() {
         return inputProcessingConfiguration;
     }
 
@@ -203,11 +205,11 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public void setInputProcessingConfiguration(InputProcessingConfiguration inputProcessingConfiguration) {
+    public void setInputProcessingConfiguration(Property<InputProcessingConfiguration> inputProcessingConfiguration) {
         this.inputProcessingConfiguration = inputProcessingConfiguration;
     }
 
-    public Input withInputProcessingConfiguration(InputProcessingConfiguration inputProcessingConfiguration) {
+    public Input withInputProcessingConfiguration(Property<InputProcessingConfiguration> inputProcessingConfiguration) {
         this.inputProcessingConfiguration = inputProcessingConfiguration;
         return this;
     }
@@ -219,7 +221,7 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public InputParallelism getInputParallelism() {
+    public Property<InputParallelism> getInputParallelism() {
         return inputParallelism;
     }
 
@@ -230,11 +232,11 @@ public class Input {
      * 
      */
     @JsonIgnore
-    public void setInputParallelism(InputParallelism inputParallelism) {
+    public void setInputParallelism(Property<InputParallelism> inputParallelism) {
         this.inputParallelism = inputParallelism;
     }
 
-    public Input withInputParallelism(InputParallelism inputParallelism) {
+    public Input withInputParallelism(Property<InputParallelism> inputParallelism) {
         this.inputParallelism = inputParallelism;
         return this;
     }

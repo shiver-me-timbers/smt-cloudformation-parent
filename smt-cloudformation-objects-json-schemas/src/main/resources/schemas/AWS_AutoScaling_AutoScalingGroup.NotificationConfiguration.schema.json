@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html",
   "type" : "object",
   "javaType" : "aws.autoscaling.NotificationConfiguration",
+  "javaInterfaces" : [ "aws.Property<NotificationConfiguration>" ],
   "properties" : {
     "NotificationTypes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html#cfn-as-group-notificationconfigurations-notificationtypes",

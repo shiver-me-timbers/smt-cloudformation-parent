@@ -3,6 +3,7 @@ package aws.emr;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Threshold",
     "Unit"
 })
-public class CloudWatchAlarmDefinition {
+public class CloudWatchAlarmDefinition implements Property<CloudWatchAlarmDefinition>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-comparisonoperator
@@ -48,7 +50,7 @@ public class CloudWatchAlarmDefinition {
     @JsonProperty("Dimensions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-dimensions")
-    private Set<MetricDimension> dimensions = new LinkedHashSet<MetricDimension>();
+    private Set<Property<MetricDimension>> dimensions = new LinkedHashSet<Property<MetricDimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html#cfn-elasticmapreduce-cluster-cloudwatchalarmdefinition-evaluationperiods
      * 
@@ -127,7 +129,7 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonIgnore
-    public Set<MetricDimension> getDimensions() {
+    public Set<Property<MetricDimension>> getDimensions() {
         return dimensions;
     }
 
@@ -136,11 +138,11 @@ public class CloudWatchAlarmDefinition {
      * 
      */
     @JsonIgnore
-    public void setDimensions(Set<MetricDimension> dimensions) {
+    public void setDimensions(Set<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public CloudWatchAlarmDefinition withDimensions(Set<MetricDimension> dimensions) {
+    public CloudWatchAlarmDefinition withDimensions(Set<Property<MetricDimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }

@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html",
   "type" : "object",
   "javaType" : "aws.ses.StopAction",
+  "javaInterfaces" : [ "aws.Property<StopAction>" ],
   "properties" : {
     "Scope" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-stopaction.html#cfn-ses-receiptrule-stopaction-scope",

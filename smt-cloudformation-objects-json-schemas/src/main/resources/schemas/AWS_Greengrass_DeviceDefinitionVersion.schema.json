@@ -15,7 +15,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinitionversion.html#cfn-greengrass-devicedefinitionversion-devices",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Greengrass_DeviceDefinitionVersion.Device.schema.json"
+        "$ref" : "AWS_Greengrass_DeviceDefinitionVersion.Device.schema.json",
+        "javaType" : "aws.Property<aws.greengrass.Device>"
       }
     }
   }

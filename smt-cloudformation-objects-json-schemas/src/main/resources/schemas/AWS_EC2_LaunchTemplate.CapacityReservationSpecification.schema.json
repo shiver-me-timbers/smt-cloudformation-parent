@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html",
   "type" : "object",
   "javaType" : "aws.ec2.CapacityReservationSpecification",
+  "javaInterfaces" : [ "aws.Property<CapacityReservationSpecification>" ],
   "properties" : {
     "CapacityReservationPreference" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationpreference",
-      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CapacityReservationPreference>"
     },
     "CapacityReservationTarget" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification-capacityreservationtarget",
-      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationTarget.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationTarget.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CapacityReservationTarget>"
     }
   }
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -52,7 +53,7 @@ public class LoadBalancer {
      */
     @JsonProperty("AccessLoggingPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html")
-    private AccessLoggingPolicy accessLoggingPolicy;
+    private Property<AccessLoggingPolicy> accessLoggingPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy
      * 
@@ -60,7 +61,7 @@ public class LoadBalancer {
     @JsonProperty("AppCookieStickinessPolicy")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy")
-    private Set<AppCookieStickinessPolicy> appCookieStickinessPolicy = new LinkedHashSet<AppCookieStickinessPolicy>();
+    private Set<Property<AppCookieStickinessPolicy>> appCookieStickinessPolicy = new LinkedHashSet<Property<AppCookieStickinessPolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-availabilityzones
      * 
@@ -77,7 +78,7 @@ public class LoadBalancer {
      */
     @JsonProperty("ConnectionDrainingPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectiondrainingpolicy.html")
-    private ConnectionDrainingPolicy connectionDrainingPolicy;
+    private Property<ConnectionDrainingPolicy> connectionDrainingPolicy;
     /**
      * ConnectionSettings
      * <p>
@@ -86,7 +87,7 @@ public class LoadBalancer {
      */
     @JsonProperty("ConnectionSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html")
-    private ConnectionSettings connectionSettings;
+    private Property<ConnectionSettings> connectionSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone
      * 
@@ -102,7 +103,7 @@ public class LoadBalancer {
      */
     @JsonProperty("HealthCheck")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html")
-    private HealthCheck healthCheck;
+    private Property<HealthCheck> healthCheck;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances
      * 
@@ -118,7 +119,7 @@ public class LoadBalancer {
     @JsonProperty("LBCookieStickinessPolicy")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-lbcookiestickinesspolicy")
-    private Set<LBCookieStickinessPolicy> lBCookieStickinessPolicy = new LinkedHashSet<LBCookieStickinessPolicy>();
+    private Set<Property<LBCookieStickinessPolicy>> lBCookieStickinessPolicy = new LinkedHashSet<Property<LBCookieStickinessPolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-listeners
      * 
@@ -126,7 +127,7 @@ public class LoadBalancer {
     @JsonProperty("Listeners")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-listeners")
-    private Set<Listeners> listeners = new LinkedHashSet<Listeners>();
+    private Set<Property<Listeners>> listeners = new LinkedHashSet<Property<Listeners>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-elbname
      * 
@@ -141,7 +142,7 @@ public class LoadBalancer {
     @JsonProperty("Policies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-policies")
-    private Set<Policies> policies = new LinkedHashSet<Policies>();
+    private Set<Property<Policies>> policies = new LinkedHashSet<Property<Policies>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-scheme
      * 
@@ -171,7 +172,7 @@ public class LoadBalancer {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-elasticloadbalancing-loadbalancer-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
      * AccessLoggingPolicy
@@ -180,7 +181,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public AccessLoggingPolicy getAccessLoggingPolicy() {
+    public Property<AccessLoggingPolicy> getAccessLoggingPolicy() {
         return accessLoggingPolicy;
     }
 
@@ -191,11 +192,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setAccessLoggingPolicy(AccessLoggingPolicy accessLoggingPolicy) {
+    public void setAccessLoggingPolicy(Property<AccessLoggingPolicy> accessLoggingPolicy) {
         this.accessLoggingPolicy = accessLoggingPolicy;
     }
 
-    public LoadBalancer withAccessLoggingPolicy(AccessLoggingPolicy accessLoggingPolicy) {
+    public LoadBalancer withAccessLoggingPolicy(Property<AccessLoggingPolicy> accessLoggingPolicy) {
         this.accessLoggingPolicy = accessLoggingPolicy;
         return this;
     }
@@ -205,7 +206,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<AppCookieStickinessPolicy> getAppCookieStickinessPolicy() {
+    public Set<Property<AppCookieStickinessPolicy>> getAppCookieStickinessPolicy() {
         return appCookieStickinessPolicy;
     }
 
@@ -214,11 +215,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setAppCookieStickinessPolicy(Set<AppCookieStickinessPolicy> appCookieStickinessPolicy) {
+    public void setAppCookieStickinessPolicy(Set<Property<AppCookieStickinessPolicy>> appCookieStickinessPolicy) {
         this.appCookieStickinessPolicy = appCookieStickinessPolicy;
     }
 
-    public LoadBalancer withAppCookieStickinessPolicy(Set<AppCookieStickinessPolicy> appCookieStickinessPolicy) {
+    public LoadBalancer withAppCookieStickinessPolicy(Set<Property<AppCookieStickinessPolicy>> appCookieStickinessPolicy) {
         this.appCookieStickinessPolicy = appCookieStickinessPolicy;
         return this;
     }
@@ -253,7 +254,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public ConnectionDrainingPolicy getConnectionDrainingPolicy() {
+    public Property<ConnectionDrainingPolicy> getConnectionDrainingPolicy() {
         return connectionDrainingPolicy;
     }
 
@@ -264,11 +265,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setConnectionDrainingPolicy(ConnectionDrainingPolicy connectionDrainingPolicy) {
+    public void setConnectionDrainingPolicy(Property<ConnectionDrainingPolicy> connectionDrainingPolicy) {
         this.connectionDrainingPolicy = connectionDrainingPolicy;
     }
 
-    public LoadBalancer withConnectionDrainingPolicy(ConnectionDrainingPolicy connectionDrainingPolicy) {
+    public LoadBalancer withConnectionDrainingPolicy(Property<ConnectionDrainingPolicy> connectionDrainingPolicy) {
         this.connectionDrainingPolicy = connectionDrainingPolicy;
         return this;
     }
@@ -280,7 +281,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public ConnectionSettings getConnectionSettings() {
+    public Property<ConnectionSettings> getConnectionSettings() {
         return connectionSettings;
     }
 
@@ -291,11 +292,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setConnectionSettings(ConnectionSettings connectionSettings) {
+    public void setConnectionSettings(Property<ConnectionSettings> connectionSettings) {
         this.connectionSettings = connectionSettings;
     }
 
-    public LoadBalancer withConnectionSettings(ConnectionSettings connectionSettings) {
+    public LoadBalancer withConnectionSettings(Property<ConnectionSettings> connectionSettings) {
         this.connectionSettings = connectionSettings;
         return this;
     }
@@ -330,7 +331,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public HealthCheck getHealthCheck() {
+    public Property<HealthCheck> getHealthCheck() {
         return healthCheck;
     }
 
@@ -341,11 +342,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setHealthCheck(HealthCheck healthCheck) {
+    public void setHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
     }
 
-    public LoadBalancer withHealthCheck(HealthCheck healthCheck) {
+    public LoadBalancer withHealthCheck(Property<HealthCheck> healthCheck) {
         this.healthCheck = healthCheck;
         return this;
     }
@@ -378,7 +379,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<LBCookieStickinessPolicy> getLBCookieStickinessPolicy() {
+    public Set<Property<LBCookieStickinessPolicy>> getLBCookieStickinessPolicy() {
         return lBCookieStickinessPolicy;
     }
 
@@ -387,11 +388,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setLBCookieStickinessPolicy(Set<LBCookieStickinessPolicy> lBCookieStickinessPolicy) {
+    public void setLBCookieStickinessPolicy(Set<Property<LBCookieStickinessPolicy>> lBCookieStickinessPolicy) {
         this.lBCookieStickinessPolicy = lBCookieStickinessPolicy;
     }
 
-    public LoadBalancer withLBCookieStickinessPolicy(Set<LBCookieStickinessPolicy> lBCookieStickinessPolicy) {
+    public LoadBalancer withLBCookieStickinessPolicy(Set<Property<LBCookieStickinessPolicy>> lBCookieStickinessPolicy) {
         this.lBCookieStickinessPolicy = lBCookieStickinessPolicy;
         return this;
     }
@@ -401,7 +402,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<Listeners> getListeners() {
+    public Set<Property<Listeners>> getListeners() {
         return listeners;
     }
 
@@ -410,11 +411,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setListeners(Set<Listeners> listeners) {
+    public void setListeners(Set<Property<Listeners>> listeners) {
         this.listeners = listeners;
     }
 
-    public LoadBalancer withListeners(Set<Listeners> listeners) {
+    public LoadBalancer withListeners(Set<Property<Listeners>> listeners) {
         this.listeners = listeners;
         return this;
     }
@@ -447,7 +448,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<Policies> getPolicies() {
+    public Set<Property<Policies>> getPolicies() {
         return policies;
     }
 
@@ -456,11 +457,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setPolicies(Set<Policies> policies) {
+    public void setPolicies(Set<Property<Policies>> policies) {
         this.policies = policies;
     }
 
-    public LoadBalancer withPolicies(Set<Policies> policies) {
+    public LoadBalancer withPolicies(Set<Property<Policies>> policies) {
         this.policies = policies;
         return this;
     }
@@ -539,7 +540,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -548,11 +549,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public LoadBalancer withTags(List<Tag> tags) {
+    public LoadBalancer withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

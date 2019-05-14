@@ -3,6 +3,7 @@ package aws.s3;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "ServerSideEncryptionConfiguration"
 })
-public class BucketEncryption {
+public class BucketEncryption implements Property<BucketEncryption>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html#cfn-s3-bucket-bucketencryption-serversideencryptionconfiguration
@@ -33,14 +35,14 @@ public class BucketEncryption {
     @JsonProperty("ServerSideEncryptionConfiguration")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html#cfn-s3-bucket-bucketencryption-serversideencryptionconfiguration")
-    private Set<ServerSideEncryptionRule> serverSideEncryptionConfiguration = new LinkedHashSet<ServerSideEncryptionRule>();
+    private Set<Property<ServerSideEncryptionRule>> serverSideEncryptionConfiguration = new LinkedHashSet<Property<ServerSideEncryptionRule>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html#cfn-s3-bucket-bucketencryption-serversideencryptionconfiguration
      * 
      */
     @JsonIgnore
-    public Set<ServerSideEncryptionRule> getServerSideEncryptionConfiguration() {
+    public Set<Property<ServerSideEncryptionRule>> getServerSideEncryptionConfiguration() {
         return serverSideEncryptionConfiguration;
     }
 
@@ -49,11 +51,11 @@ public class BucketEncryption {
      * 
      */
     @JsonIgnore
-    public void setServerSideEncryptionConfiguration(Set<ServerSideEncryptionRule> serverSideEncryptionConfiguration) {
+    public void setServerSideEncryptionConfiguration(Set<Property<ServerSideEncryptionRule>> serverSideEncryptionConfiguration) {
         this.serverSideEncryptionConfiguration = serverSideEncryptionConfiguration;
     }
 
-    public BucketEncryption withServerSideEncryptionConfiguration(Set<ServerSideEncryptionRule> serverSideEncryptionConfiguration) {
+    public BucketEncryption withServerSideEncryptionConfiguration(Set<Property<ServerSideEncryptionRule>> serverSideEncryptionConfiguration) {
         this.serverSideEncryptionConfiguration = serverSideEncryptionConfiguration;
         return this;
     }

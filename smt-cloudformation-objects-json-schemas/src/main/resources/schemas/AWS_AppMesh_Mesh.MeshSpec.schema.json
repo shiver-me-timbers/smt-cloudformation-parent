@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html",
   "type" : "object",
   "javaType" : "aws.appmesh.MeshSpec",
+  "javaInterfaces" : [ "aws.Property<MeshSpec>" ],
   "properties" : {
     "EgressFilter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html#cfn-appmesh-mesh-meshspec-egressfilter",
-      "$ref" : "AWS_AppMesh_Mesh.EgressFilter.schema.json"
+      "$ref" : "AWS_AppMesh_Mesh.EgressFilter.schema.json",
+      "javaType" : "aws.Property<aws.appmesh.EgressFilter>"
     }
   }
 }

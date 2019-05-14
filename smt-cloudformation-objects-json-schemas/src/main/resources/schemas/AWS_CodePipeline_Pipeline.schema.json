@@ -8,14 +8,16 @@
   "properties" : {
     "ArtifactStore" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstore",
-      "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStore.schema.json"
+      "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStore.schema.json",
+      "javaType" : "aws.Property<aws.codepipeline.ArtifactStore>"
     },
     "ArtifactStores" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html#cfn-codepipeline-pipeline-artifactstores",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStoreMap.schema.json"
+        "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStoreMap.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.ArtifactStoreMap>"
       }
     },
     "DisableInboundStageTransitions" : {
@@ -23,7 +25,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.StageTransition.schema.json"
+        "$ref" : "AWS_CodePipeline_Pipeline.StageTransition.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.StageTransition>"
       }
     },
     "Name" : {
@@ -45,7 +48,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.StageDeclaration.schema.json"
+        "$ref" : "AWS_CodePipeline_Pipeline.StageDeclaration.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.StageDeclaration>"
       }
     }
   }

@@ -11,7 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_WAF_IPSet.IPSetDescriptor.schema.json"
+        "$ref" : "AWS_WAF_IPSet.IPSetDescriptor.schema.json",
+        "javaType" : "aws.Property<aws.waf.IPSetDescriptor>"
       }
     },
     "Name" : {

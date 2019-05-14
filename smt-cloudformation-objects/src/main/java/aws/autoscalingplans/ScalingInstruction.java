@@ -3,6 +3,7 @@ package aws.autoscalingplans;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,7 +37,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MaxCapacity",
     "PredictiveScalingMode"
 })
-public class ScalingInstruction {
+public class ScalingInstruction implements Property<ScalingInstruction>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-disabledynamicscaling
@@ -86,7 +88,7 @@ public class ScalingInstruction {
      */
     @JsonProperty("TargetTrackingConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-targettrackingconfigurations")
-    private List<TargetTrackingConfiguration> targetTrackingConfigurations = new ArrayList<TargetTrackingConfiguration>();
+    private List<Property<TargetTrackingConfiguration>> targetTrackingConfigurations = new ArrayList<Property<TargetTrackingConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-predictivescalingmaxcapacitybuffer
      * 
@@ -102,7 +104,7 @@ public class ScalingInstruction {
      */
     @JsonProperty("CustomizedLoadMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-customizedloadmetricspecification.html")
-    private CustomizedLoadMetricSpecification customizedLoadMetricSpecification;
+    private Property<CustomizedLoadMetricSpecification> customizedLoadMetricSpecification;
     /**
      * PredefinedLoadMetricSpecification
      * <p>
@@ -111,7 +113,7 @@ public class ScalingInstruction {
      */
     @JsonProperty("PredefinedLoadMetricSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-predefinedloadmetricspecification.html")
-    private PredefinedLoadMetricSpecification predefinedLoadMetricSpecification;
+    private Property<PredefinedLoadMetricSpecification> predefinedLoadMetricSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-scalinginstruction.html#cfn-autoscalingplans-scalingplan-scalinginstruction-resourceid
      * 
@@ -284,7 +286,7 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public List<TargetTrackingConfiguration> getTargetTrackingConfigurations() {
+    public List<Property<TargetTrackingConfiguration>> getTargetTrackingConfigurations() {
         return targetTrackingConfigurations;
     }
 
@@ -293,11 +295,11 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public void setTargetTrackingConfigurations(List<TargetTrackingConfiguration> targetTrackingConfigurations) {
+    public void setTargetTrackingConfigurations(List<Property<TargetTrackingConfiguration>> targetTrackingConfigurations) {
         this.targetTrackingConfigurations = targetTrackingConfigurations;
     }
 
-    public ScalingInstruction withTargetTrackingConfigurations(List<TargetTrackingConfiguration> targetTrackingConfigurations) {
+    public ScalingInstruction withTargetTrackingConfigurations(List<Property<TargetTrackingConfiguration>> targetTrackingConfigurations) {
         this.targetTrackingConfigurations = targetTrackingConfigurations;
         return this;
     }
@@ -332,7 +334,7 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public CustomizedLoadMetricSpecification getCustomizedLoadMetricSpecification() {
+    public Property<CustomizedLoadMetricSpecification> getCustomizedLoadMetricSpecification() {
         return customizedLoadMetricSpecification;
     }
 
@@ -343,11 +345,11 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public void setCustomizedLoadMetricSpecification(CustomizedLoadMetricSpecification customizedLoadMetricSpecification) {
+    public void setCustomizedLoadMetricSpecification(Property<CustomizedLoadMetricSpecification> customizedLoadMetricSpecification) {
         this.customizedLoadMetricSpecification = customizedLoadMetricSpecification;
     }
 
-    public ScalingInstruction withCustomizedLoadMetricSpecification(CustomizedLoadMetricSpecification customizedLoadMetricSpecification) {
+    public ScalingInstruction withCustomizedLoadMetricSpecification(Property<CustomizedLoadMetricSpecification> customizedLoadMetricSpecification) {
         this.customizedLoadMetricSpecification = customizedLoadMetricSpecification;
         return this;
     }
@@ -359,7 +361,7 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public PredefinedLoadMetricSpecification getPredefinedLoadMetricSpecification() {
+    public Property<PredefinedLoadMetricSpecification> getPredefinedLoadMetricSpecification() {
         return predefinedLoadMetricSpecification;
     }
 
@@ -370,11 +372,11 @@ public class ScalingInstruction {
      * 
      */
     @JsonIgnore
-    public void setPredefinedLoadMetricSpecification(PredefinedLoadMetricSpecification predefinedLoadMetricSpecification) {
+    public void setPredefinedLoadMetricSpecification(Property<PredefinedLoadMetricSpecification> predefinedLoadMetricSpecification) {
         this.predefinedLoadMetricSpecification = predefinedLoadMetricSpecification;
     }
 
-    public ScalingInstruction withPredefinedLoadMetricSpecification(PredefinedLoadMetricSpecification predefinedLoadMetricSpecification) {
+    public ScalingInstruction withPredefinedLoadMetricSpecification(Property<PredefinedLoadMetricSpecification> predefinedLoadMetricSpecification) {
         this.predefinedLoadMetricSpecification = predefinedLoadMetricSpecification;
         return this;
     }

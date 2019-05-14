@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html",
   "type" : "object",
   "javaType" : "aws.appsync.RelationalDatabaseConfig",
+  "javaInterfaces" : [ "aws.Property<RelationalDatabaseConfig>" ],
   "properties" : {
     "RdsHttpEndpointConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-rdshttpendpointconfig",
-      "$ref" : "AWS_AppSync_DataSource.RdsHttpEndpointConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.RdsHttpEndpointConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.RdsHttpEndpointConfig>"
     },
     "RelationalDatabaseSourceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html#cfn-appsync-datasource-relationaldatabaseconfig-relationaldatabasesourcetype",

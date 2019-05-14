@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html",
   "type" : "object",
   "javaType" : "aws.config.RecordingGroup",
+  "javaInterfaces" : [ "aws.Property<RecordingGroup>" ],
   "properties" : {
     "AllSupported" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported",

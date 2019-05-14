@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,14 +41,14 @@ public class Webhook {
      */
     @JsonProperty("AuthenticationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html")
-    private WebhookAuthConfiguration authenticationConfiguration;
+    private Property<WebhookAuthConfiguration> authenticationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters
      * 
      */
     @JsonProperty("Filters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters")
-    private List<WebhookFilterRule> filters = new ArrayList<WebhookFilterRule>();
+    private List<Property<WebhookFilterRule>> filters = new ArrayList<Property<WebhookFilterRule>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authentication
      * 
@@ -98,7 +99,7 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public WebhookAuthConfiguration getAuthenticationConfiguration() {
+    public Property<WebhookAuthConfiguration> getAuthenticationConfiguration() {
         return authenticationConfiguration;
     }
 
@@ -109,11 +110,11 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public void setAuthenticationConfiguration(WebhookAuthConfiguration authenticationConfiguration) {
+    public void setAuthenticationConfiguration(Property<WebhookAuthConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
     }
 
-    public Webhook withAuthenticationConfiguration(WebhookAuthConfiguration authenticationConfiguration) {
+    public Webhook withAuthenticationConfiguration(Property<WebhookAuthConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
         return this;
     }
@@ -123,7 +124,7 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public List<WebhookFilterRule> getFilters() {
+    public List<Property<WebhookFilterRule>> getFilters() {
         return filters;
     }
 
@@ -132,11 +133,11 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public void setFilters(List<WebhookFilterRule> filters) {
+    public void setFilters(List<Property<WebhookFilterRule>> filters) {
         this.filters = filters;
     }
 
-    public Webhook withFilters(List<WebhookFilterRule> filters) {
+    public Webhook withFilters(List<Property<WebhookFilterRule>> filters) {
         this.filters = filters;
         return this;
     }

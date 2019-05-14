@@ -5,13 +5,15 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html",
   "type" : "object",
   "javaType" : "aws.emr.EbsConfiguration",
+  "javaInterfaces" : [ "aws.Property<EbsConfiguration>" ],
   "properties" : {
     "EbsBlockDeviceConfigs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfigs",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json"
+        "$ref" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json",
+        "javaType" : "aws.Property<aws.emr.EbsBlockDeviceConfig>"
       }
     },
     "EbsOptimized" : {

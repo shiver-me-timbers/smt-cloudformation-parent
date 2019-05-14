@@ -1,6 +1,7 @@
 
 package aws.batch;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -56,7 +57,7 @@ public class ComputeEnvironment {
      */
     @JsonProperty("ComputeResources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html")
-    private ComputeResources computeResources;
+    private Property<ComputeResources> computeResources;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state
      * 
@@ -141,7 +142,7 @@ public class ComputeEnvironment {
      * 
      */
     @JsonIgnore
-    public ComputeResources getComputeResources() {
+    public Property<ComputeResources> getComputeResources() {
         return computeResources;
     }
 
@@ -152,11 +153,11 @@ public class ComputeEnvironment {
      * 
      */
     @JsonIgnore
-    public void setComputeResources(ComputeResources computeResources) {
+    public void setComputeResources(Property<ComputeResources> computeResources) {
         this.computeResources = computeResources;
     }
 
-    public ComputeEnvironment withComputeResources(ComputeResources computeResources) {
+    public ComputeEnvironment withComputeResources(Property<ComputeResources> computeResources) {
         this.computeResources = computeResources;
         return this;
     }

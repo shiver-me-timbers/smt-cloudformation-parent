@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html",
   "type" : "object",
   "javaType" : "aws.appstream.ApplicationSettings",
+  "javaInterfaces" : [ "aws.Property<ApplicationSettings>" ],
   "properties" : {
     "SettingsGroup" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html#cfn-appstream-stack-applicationsettings-settingsgroup",

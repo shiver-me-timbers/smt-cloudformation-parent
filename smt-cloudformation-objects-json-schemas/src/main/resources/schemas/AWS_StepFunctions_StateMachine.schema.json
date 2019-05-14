@@ -25,7 +25,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_StepFunctions_Activity.TagsEntry.schema.json"
+        "$ref" : "AWS_StepFunctions_Activity.TagsEntry.schema.json",
+        "javaType" : "aws.Property<aws.stepfunctions.TagsEntry>"
       }
     }
   }

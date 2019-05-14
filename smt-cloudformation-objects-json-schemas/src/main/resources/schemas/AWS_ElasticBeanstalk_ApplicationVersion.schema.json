@@ -18,7 +18,8 @@
     },
     "SourceBundle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-sourcebundle",
-      "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.SourceBundle.schema.json"
+      "$ref" : "AWS_ElasticBeanstalk_ApplicationVersion.SourceBundle.schema.json",
+      "javaType" : "aws.Property<aws.elasticbeanstalk.SourceBundle>"
     }
   }
 }

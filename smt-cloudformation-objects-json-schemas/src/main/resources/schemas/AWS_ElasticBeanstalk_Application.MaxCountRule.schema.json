@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html",
   "type" : "object",
   "javaType" : "aws.elasticbeanstalk.MaxCountRule",
+  "javaInterfaces" : [ "aws.Property<MaxCountRule>" ],
   "properties" : {
     "DeleteSourceFromS3" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3",

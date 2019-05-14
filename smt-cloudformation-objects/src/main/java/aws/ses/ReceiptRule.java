@@ -1,6 +1,7 @@
 
 package aws.ses;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -40,7 +41,7 @@ public class ReceiptRule {
      */
     @JsonProperty("Rule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html")
-    private Rule rule;
+    private Property<Rule> rule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname
      * 
@@ -79,7 +80,7 @@ public class ReceiptRule {
      * 
      */
     @JsonIgnore
-    public Rule getRule() {
+    public Property<Rule> getRule() {
         return rule;
     }
 
@@ -90,11 +91,11 @@ public class ReceiptRule {
      * 
      */
     @JsonIgnore
-    public void setRule(Rule rule) {
+    public void setRule(Property<Rule> rule) {
         this.rule = rule;
     }
 
-    public ReceiptRule withRule(Rule rule) {
+    public ReceiptRule withRule(Property<Rule> rule) {
         this.rule = rule;
         return this;
     }

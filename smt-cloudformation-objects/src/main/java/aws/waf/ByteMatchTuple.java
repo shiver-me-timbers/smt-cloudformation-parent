@@ -1,6 +1,7 @@
 
 package aws.waf;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TargetStringBase64",
     "TextTransformation"
 })
-public class ByteMatchTuple {
+public class ByteMatchTuple implements Property<ByteMatchTuple>
+{
 
     /**
      * FieldToMatch
@@ -35,7 +37,7 @@ public class ByteMatchTuple {
      */
     @JsonProperty("FieldToMatch")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html")
-    private FieldToMatch fieldToMatch;
+    private Property<FieldToMatch> fieldToMatch;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-positionalconstraint
      * 
@@ -72,7 +74,7 @@ public class ByteMatchTuple {
      * 
      */
     @JsonIgnore
-    public FieldToMatch getFieldToMatch() {
+    public Property<FieldToMatch> getFieldToMatch() {
         return fieldToMatch;
     }
 
@@ -83,11 +85,11 @@ public class ByteMatchTuple {
      * 
      */
     @JsonIgnore
-    public void setFieldToMatch(FieldToMatch fieldToMatch) {
+    public void setFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
     }
 
-    public ByteMatchTuple withFieldToMatch(FieldToMatch fieldToMatch) {
+    public ByteMatchTuple withFieldToMatch(Property<FieldToMatch> fieldToMatch) {
         this.fieldToMatch = fieldToMatch;
         return this;
     }

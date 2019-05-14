@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class Thing {
      */
     @JsonProperty("AttributePayload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html")
-    private AttributePayload attributePayload;
+    private Property<AttributePayload> attributePayload;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html#cfn-iot-thing-thingname
      * 
@@ -48,7 +49,7 @@ public class Thing {
      * 
      */
     @JsonIgnore
-    public AttributePayload getAttributePayload() {
+    public Property<AttributePayload> getAttributePayload() {
         return attributePayload;
     }
 
@@ -59,11 +60,11 @@ public class Thing {
      * 
      */
     @JsonIgnore
-    public void setAttributePayload(AttributePayload attributePayload) {
+    public void setAttributePayload(Property<AttributePayload> attributePayload) {
         this.attributePayload = attributePayload;
     }
 
-    public Thing withAttributePayload(AttributePayload attributePayload) {
+    public Thing withAttributePayload(Property<AttributePayload> attributePayload) {
         this.attributePayload = attributePayload;
         return this;
     }

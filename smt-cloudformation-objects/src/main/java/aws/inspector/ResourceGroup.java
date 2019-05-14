@@ -3,6 +3,7 @@ package aws.inspector;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -32,14 +33,14 @@ public class ResourceGroup {
      */
     @JsonProperty("ResourceGroupTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html#cfn-inspector-resourcegroup-resourcegrouptags")
-    private List<Tag> resourceGroupTags = new ArrayList<Tag>();
+    private List<Property<Tag>> resourceGroupTags = new ArrayList<Property<Tag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-resourcegroup.html#cfn-inspector-resourcegroup-resourcegrouptags
      * 
      */
     @JsonIgnore
-    public List<Tag> getResourceGroupTags() {
+    public List<Property<Tag>> getResourceGroupTags() {
         return resourceGroupTags;
     }
 
@@ -48,11 +49,11 @@ public class ResourceGroup {
      * 
      */
     @JsonIgnore
-    public void setResourceGroupTags(List<Tag> resourceGroupTags) {
+    public void setResourceGroupTags(List<Property<Tag>> resourceGroupTags) {
         this.resourceGroupTags = resourceGroupTags;
     }
 
-    public ResourceGroup withResourceGroupTags(List<Tag> resourceGroupTags) {
+    public ResourceGroup withResourceGroupTags(List<Property<Tag>> resourceGroupTags) {
         this.resourceGroupTags = resourceGroupTags;
         return this;
     }

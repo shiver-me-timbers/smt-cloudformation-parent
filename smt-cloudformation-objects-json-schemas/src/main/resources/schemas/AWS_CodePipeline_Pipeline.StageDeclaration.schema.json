@@ -5,13 +5,15 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html",
   "type" : "object",
   "javaType" : "aws.codepipeline.StageDeclaration",
+  "javaInterfaces" : [ "aws.Property<StageDeclaration>" ],
   "properties" : {
     "Actions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.ActionDeclaration.schema.json"
+        "$ref" : "AWS_CodePipeline_Pipeline.ActionDeclaration.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.ActionDeclaration>"
       }
     },
     "Blockers" : {
@@ -19,7 +21,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_CodePipeline_Pipeline.BlockerDeclaration.schema.json"
+        "$ref" : "AWS_CodePipeline_Pipeline.BlockerDeclaration.schema.json",
+        "javaType" : "aws.Property<aws.codepipeline.BlockerDeclaration>"
       }
     },
     "Name" : {

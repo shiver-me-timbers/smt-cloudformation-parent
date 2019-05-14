@@ -3,6 +3,7 @@ package aws.batch;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "NodeRangeProperties",
     "NumNodes"
 })
-public class NodeProperties {
+public class NodeProperties implements Property<NodeProperties>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-mainnode
@@ -40,7 +42,7 @@ public class NodeProperties {
      */
     @JsonProperty("NodeRangeProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-noderangeproperties")
-    private List<NodeRangeProperty> nodeRangeProperties = new ArrayList<NodeRangeProperty>();
+    private List<Property<NodeRangeProperty>> nodeRangeProperties = new ArrayList<Property<NodeRangeProperty>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html#cfn-batch-jobdefinition-nodeproperties-numnodes
      * 
@@ -77,7 +79,7 @@ public class NodeProperties {
      * 
      */
     @JsonIgnore
-    public List<NodeRangeProperty> getNodeRangeProperties() {
+    public List<Property<NodeRangeProperty>> getNodeRangeProperties() {
         return nodeRangeProperties;
     }
 
@@ -86,11 +88,11 @@ public class NodeProperties {
      * 
      */
     @JsonIgnore
-    public void setNodeRangeProperties(List<NodeRangeProperty> nodeRangeProperties) {
+    public void setNodeRangeProperties(List<Property<NodeRangeProperty>> nodeRangeProperties) {
         this.nodeRangeProperties = nodeRangeProperties;
     }
 
-    public NodeProperties withNodeRangeProperties(List<NodeRangeProperty> nodeRangeProperties) {
+    public NodeProperties withNodeRangeProperties(List<Property<NodeRangeProperty>> nodeRangeProperties) {
         this.nodeRangeProperties = nodeRangeProperties;
         return this;
     }

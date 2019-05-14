@@ -23,7 +23,8 @@
     },
     "ComputeResources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeresources",
-      "$ref" : "AWS_Batch_ComputeEnvironment.ComputeResources.schema.json"
+      "$ref" : "AWS_Batch_ComputeEnvironment.ComputeResources.schema.json",
+      "javaType" : "aws.Property<aws.batch.ComputeResources>"
     },
     "State" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state",

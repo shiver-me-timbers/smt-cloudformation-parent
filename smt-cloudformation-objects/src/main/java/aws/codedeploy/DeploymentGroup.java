@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -48,7 +49,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("AlarmConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html")
-    private AlarmConfiguration alarmConfiguration;
+    private Property<AlarmConfiguration> alarmConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-applicationname
      * 
@@ -64,7 +65,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("AutoRollbackConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html")
-    private AutoRollbackConfiguration autoRollbackConfiguration;
+    private Property<AutoRollbackConfiguration> autoRollbackConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autoscalinggroups
      * 
@@ -81,7 +82,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("Deployment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html")
-    private Deployment deployment;
+    private Property<Deployment> deployment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentconfigname
      * 
@@ -104,7 +105,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("DeploymentStyle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html")
-    private DeploymentStyle deploymentStyle;
+    private Property<DeploymentStyle> deploymentStyle;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters
      * 
@@ -112,7 +113,7 @@ public class DeploymentGroup {
     @JsonProperty("Ec2TagFilters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters")
-    private Set<EC2TagFilter> ec2TagFilters = new LinkedHashSet<EC2TagFilter>();
+    private Set<Property<EC2TagFilter>> ec2TagFilters = new LinkedHashSet<Property<EC2TagFilter>>();
     /**
      * EC2TagSet
      * <p>
@@ -121,7 +122,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("Ec2TagSet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html")
-    private EC2TagSet ec2TagSet;
+    private Property<EC2TagSet> ec2TagSet;
     /**
      * LoadBalancerInfo
      * <p>
@@ -130,7 +131,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("LoadBalancerInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-loadbalancerinfo.html")
-    private LoadBalancerInfo loadBalancerInfo;
+    private Property<LoadBalancerInfo> loadBalancerInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters
      * 
@@ -138,7 +139,7 @@ public class DeploymentGroup {
     @JsonProperty("OnPremisesInstanceTagFilters")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters")
-    private Set<TagFilter> onPremisesInstanceTagFilters = new LinkedHashSet<TagFilter>();
+    private Set<Property<TagFilter>> onPremisesInstanceTagFilters = new LinkedHashSet<Property<TagFilter>>();
     /**
      * OnPremisesTagSet
      * <p>
@@ -147,7 +148,7 @@ public class DeploymentGroup {
      */
     @JsonProperty("OnPremisesTagSet")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisestagset.html")
-    private OnPremisesTagSet onPremisesTagSet;
+    private Property<OnPremisesTagSet> onPremisesTagSet;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn
      * 
@@ -162,7 +163,7 @@ public class DeploymentGroup {
     @JsonProperty("TriggerConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-triggerconfigurations")
-    private Set<TriggerConfig> triggerConfigurations = new LinkedHashSet<TriggerConfig>();
+    private Set<Property<TriggerConfig>> triggerConfigurations = new LinkedHashSet<Property<TriggerConfig>>();
 
     /**
      * AlarmConfiguration
@@ -171,7 +172,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public AlarmConfiguration getAlarmConfiguration() {
+    public Property<AlarmConfiguration> getAlarmConfiguration() {
         return alarmConfiguration;
     }
 
@@ -182,11 +183,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setAlarmConfiguration(AlarmConfiguration alarmConfiguration) {
+    public void setAlarmConfiguration(Property<AlarmConfiguration> alarmConfiguration) {
         this.alarmConfiguration = alarmConfiguration;
     }
 
-    public DeploymentGroup withAlarmConfiguration(AlarmConfiguration alarmConfiguration) {
+    public DeploymentGroup withAlarmConfiguration(Property<AlarmConfiguration> alarmConfiguration) {
         this.alarmConfiguration = alarmConfiguration;
         return this;
     }
@@ -221,7 +222,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public AutoRollbackConfiguration getAutoRollbackConfiguration() {
+    public Property<AutoRollbackConfiguration> getAutoRollbackConfiguration() {
         return autoRollbackConfiguration;
     }
 
@@ -232,11 +233,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setAutoRollbackConfiguration(AutoRollbackConfiguration autoRollbackConfiguration) {
+    public void setAutoRollbackConfiguration(Property<AutoRollbackConfiguration> autoRollbackConfiguration) {
         this.autoRollbackConfiguration = autoRollbackConfiguration;
     }
 
-    public DeploymentGroup withAutoRollbackConfiguration(AutoRollbackConfiguration autoRollbackConfiguration) {
+    public DeploymentGroup withAutoRollbackConfiguration(Property<AutoRollbackConfiguration> autoRollbackConfiguration) {
         this.autoRollbackConfiguration = autoRollbackConfiguration;
         return this;
     }
@@ -271,7 +272,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public Deployment getDeployment() {
+    public Property<Deployment> getDeployment() {
         return deployment;
     }
 
@@ -282,11 +283,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setDeployment(Deployment deployment) {
+    public void setDeployment(Property<Deployment> deployment) {
         this.deployment = deployment;
     }
 
-    public DeploymentGroup withDeployment(Deployment deployment) {
+    public DeploymentGroup withDeployment(Property<Deployment> deployment) {
         this.deployment = deployment;
         return this;
     }
@@ -344,7 +345,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public DeploymentStyle getDeploymentStyle() {
+    public Property<DeploymentStyle> getDeploymentStyle() {
         return deploymentStyle;
     }
 
@@ -355,11 +356,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setDeploymentStyle(DeploymentStyle deploymentStyle) {
+    public void setDeploymentStyle(Property<DeploymentStyle> deploymentStyle) {
         this.deploymentStyle = deploymentStyle;
     }
 
-    public DeploymentGroup withDeploymentStyle(DeploymentStyle deploymentStyle) {
+    public DeploymentGroup withDeploymentStyle(Property<DeploymentStyle> deploymentStyle) {
         this.deploymentStyle = deploymentStyle;
         return this;
     }
@@ -369,7 +370,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public Set<EC2TagFilter> getEc2TagFilters() {
+    public Set<Property<EC2TagFilter>> getEc2TagFilters() {
         return ec2TagFilters;
     }
 
@@ -378,11 +379,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setEc2TagFilters(Set<EC2TagFilter> ec2TagFilters) {
+    public void setEc2TagFilters(Set<Property<EC2TagFilter>> ec2TagFilters) {
         this.ec2TagFilters = ec2TagFilters;
     }
 
-    public DeploymentGroup withEc2TagFilters(Set<EC2TagFilter> ec2TagFilters) {
+    public DeploymentGroup withEc2TagFilters(Set<Property<EC2TagFilter>> ec2TagFilters) {
         this.ec2TagFilters = ec2TagFilters;
         return this;
     }
@@ -394,7 +395,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public EC2TagSet getEc2TagSet() {
+    public Property<EC2TagSet> getEc2TagSet() {
         return ec2TagSet;
     }
 
@@ -405,11 +406,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setEc2TagSet(EC2TagSet ec2TagSet) {
+    public void setEc2TagSet(Property<EC2TagSet> ec2TagSet) {
         this.ec2TagSet = ec2TagSet;
     }
 
-    public DeploymentGroup withEc2TagSet(EC2TagSet ec2TagSet) {
+    public DeploymentGroup withEc2TagSet(Property<EC2TagSet> ec2TagSet) {
         this.ec2TagSet = ec2TagSet;
         return this;
     }
@@ -421,7 +422,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public LoadBalancerInfo getLoadBalancerInfo() {
+    public Property<LoadBalancerInfo> getLoadBalancerInfo() {
         return loadBalancerInfo;
     }
 
@@ -432,11 +433,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancerInfo(LoadBalancerInfo loadBalancerInfo) {
+    public void setLoadBalancerInfo(Property<LoadBalancerInfo> loadBalancerInfo) {
         this.loadBalancerInfo = loadBalancerInfo;
     }
 
-    public DeploymentGroup withLoadBalancerInfo(LoadBalancerInfo loadBalancerInfo) {
+    public DeploymentGroup withLoadBalancerInfo(Property<LoadBalancerInfo> loadBalancerInfo) {
         this.loadBalancerInfo = loadBalancerInfo;
         return this;
     }
@@ -446,7 +447,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public Set<TagFilter> getOnPremisesInstanceTagFilters() {
+    public Set<Property<TagFilter>> getOnPremisesInstanceTagFilters() {
         return onPremisesInstanceTagFilters;
     }
 
@@ -455,11 +456,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setOnPremisesInstanceTagFilters(Set<TagFilter> onPremisesInstanceTagFilters) {
+    public void setOnPremisesInstanceTagFilters(Set<Property<TagFilter>> onPremisesInstanceTagFilters) {
         this.onPremisesInstanceTagFilters = onPremisesInstanceTagFilters;
     }
 
-    public DeploymentGroup withOnPremisesInstanceTagFilters(Set<TagFilter> onPremisesInstanceTagFilters) {
+    public DeploymentGroup withOnPremisesInstanceTagFilters(Set<Property<TagFilter>> onPremisesInstanceTagFilters) {
         this.onPremisesInstanceTagFilters = onPremisesInstanceTagFilters;
         return this;
     }
@@ -471,7 +472,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public OnPremisesTagSet getOnPremisesTagSet() {
+    public Property<OnPremisesTagSet> getOnPremisesTagSet() {
         return onPremisesTagSet;
     }
 
@@ -482,11 +483,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setOnPremisesTagSet(OnPremisesTagSet onPremisesTagSet) {
+    public void setOnPremisesTagSet(Property<OnPremisesTagSet> onPremisesTagSet) {
         this.onPremisesTagSet = onPremisesTagSet;
     }
 
-    public DeploymentGroup withOnPremisesTagSet(OnPremisesTagSet onPremisesTagSet) {
+    public DeploymentGroup withOnPremisesTagSet(Property<OnPremisesTagSet> onPremisesTagSet) {
         this.onPremisesTagSet = onPremisesTagSet;
         return this;
     }
@@ -519,7 +520,7 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public Set<TriggerConfig> getTriggerConfigurations() {
+    public Set<Property<TriggerConfig>> getTriggerConfigurations() {
         return triggerConfigurations;
     }
 
@@ -528,11 +529,11 @@ public class DeploymentGroup {
      * 
      */
     @JsonIgnore
-    public void setTriggerConfigurations(Set<TriggerConfig> triggerConfigurations) {
+    public void setTriggerConfigurations(Set<Property<TriggerConfig>> triggerConfigurations) {
         this.triggerConfigurations = triggerConfigurations;
     }
 
-    public DeploymentGroup withTriggerConfigurations(Set<TriggerConfig> triggerConfigurations) {
+    public DeploymentGroup withTriggerConfigurations(Set<Property<TriggerConfig>> triggerConfigurations) {
         this.triggerConfigurations = triggerConfigurations;
         return this;
     }

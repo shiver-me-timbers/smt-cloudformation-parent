@@ -1,6 +1,7 @@
 
 package aws.gamelift;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -47,7 +48,7 @@ public class Alias {
      */
     @JsonProperty("RoutingStrategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html")
-    private RoutingStrategy routingStrategy;
+    private Property<RoutingStrategy> routingStrategy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-description
@@ -102,7 +103,7 @@ public class Alias {
      * 
      */
     @JsonIgnore
-    public RoutingStrategy getRoutingStrategy() {
+    public Property<RoutingStrategy> getRoutingStrategy() {
         return routingStrategy;
     }
 
@@ -113,11 +114,11 @@ public class Alias {
      * 
      */
     @JsonIgnore
-    public void setRoutingStrategy(RoutingStrategy routingStrategy) {
+    public void setRoutingStrategy(Property<RoutingStrategy> routingStrategy) {
         this.routingStrategy = routingStrategy;
     }
 
-    public Alias withRoutingStrategy(RoutingStrategy routingStrategy) {
+    public Alias withRoutingStrategy(Property<RoutingStrategy> routingStrategy) {
         this.routingStrategy = routingStrategy;
         return this;
     }

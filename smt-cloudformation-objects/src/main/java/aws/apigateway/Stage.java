@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -51,7 +52,7 @@ public class Stage {
      */
     @JsonProperty("AccessLogSetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html")
-    private AccessLogSetting accessLogSetting;
+    private Property<AccessLogSetting> accessLogSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
@@ -74,7 +75,7 @@ public class Stage {
      */
     @JsonProperty("CanarySetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html")
-    private CanarySetting canarySetting;
+    private Property<CanarySetting> canarySetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
@@ -110,7 +111,7 @@ public class Stage {
     @JsonProperty("MethodSettings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-methodsettings")
-    private Set<MethodSetting> methodSettings = new LinkedHashSet<MethodSetting>();
+    private Set<Property<MethodSetting>> methodSettings = new LinkedHashSet<Property<MethodSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-restapiid
      * 
@@ -131,7 +132,7 @@ public class Stage {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-tracingenabled
      * 
@@ -154,7 +155,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public AccessLogSetting getAccessLogSetting() {
+    public Property<AccessLogSetting> getAccessLogSetting() {
         return accessLogSetting;
     }
 
@@ -165,11 +166,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setAccessLogSetting(AccessLogSetting accessLogSetting) {
+    public void setAccessLogSetting(Property<AccessLogSetting> accessLogSetting) {
         this.accessLogSetting = accessLogSetting;
     }
 
-    public Stage withAccessLogSetting(AccessLogSetting accessLogSetting) {
+    public Stage withAccessLogSetting(Property<AccessLogSetting> accessLogSetting) {
         this.accessLogSetting = accessLogSetting;
         return this;
     }
@@ -227,7 +228,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public CanarySetting getCanarySetting() {
+    public Property<CanarySetting> getCanarySetting() {
         return canarySetting;
     }
 
@@ -238,11 +239,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setCanarySetting(CanarySetting canarySetting) {
+    public void setCanarySetting(Property<CanarySetting> canarySetting) {
         this.canarySetting = canarySetting;
     }
 
-    public Stage withCanarySetting(CanarySetting canarySetting) {
+    public Stage withCanarySetting(Property<CanarySetting> canarySetting) {
         this.canarySetting = canarySetting;
         return this;
     }
@@ -344,7 +345,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public Set<MethodSetting> getMethodSettings() {
+    public Set<Property<MethodSetting>> getMethodSettings() {
         return methodSettings;
     }
 
@@ -353,11 +354,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setMethodSettings(Set<MethodSetting> methodSettings) {
+    public void setMethodSettings(Set<Property<MethodSetting>> methodSettings) {
         this.methodSettings = methodSettings;
     }
 
-    public Stage withMethodSettings(Set<MethodSetting> methodSettings) {
+    public Stage withMethodSettings(Set<Property<MethodSetting>> methodSettings) {
         this.methodSettings = methodSettings;
         return this;
     }
@@ -413,7 +414,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -422,11 +423,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Stage withTags(List<Tag> tags) {
+    public Stage withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

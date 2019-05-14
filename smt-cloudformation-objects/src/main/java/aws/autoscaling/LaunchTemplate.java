@@ -3,6 +3,7 @@ package aws.autoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "LaunchTemplateSpecification",
     "Overrides"
 })
-public class LaunchTemplate {
+public class LaunchTemplate implements Property<LaunchTemplate>
+{
 
     /**
      * LaunchTemplateSpecification
@@ -35,7 +37,7 @@ public class LaunchTemplate {
      */
     @JsonProperty("LaunchTemplateSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html")
-    private LaunchTemplateSpecification launchTemplateSpecification;
+    private Property<LaunchTemplateSpecification> launchTemplateSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplate.html#cfn-as-mixedinstancespolicy-overrides
      * 
@@ -43,7 +45,7 @@ public class LaunchTemplate {
     @JsonProperty("Overrides")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplate.html#cfn-as-mixedinstancespolicy-overrides")
-    private Set<LaunchTemplateOverrides> overrides = new LinkedHashSet<LaunchTemplateOverrides>();
+    private Set<Property<LaunchTemplateOverrides>> overrides = new LinkedHashSet<Property<LaunchTemplateOverrides>>();
 
     /**
      * LaunchTemplateSpecification
@@ -52,7 +54,7 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public LaunchTemplateSpecification getLaunchTemplateSpecification() {
+    public Property<LaunchTemplateSpecification> getLaunchTemplateSpecification() {
         return launchTemplateSpecification;
     }
 
@@ -63,11 +65,11 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateSpecification(LaunchTemplateSpecification launchTemplateSpecification) {
+    public void setLaunchTemplateSpecification(Property<LaunchTemplateSpecification> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
     }
 
-    public LaunchTemplate withLaunchTemplateSpecification(LaunchTemplateSpecification launchTemplateSpecification) {
+    public LaunchTemplate withLaunchTemplateSpecification(Property<LaunchTemplateSpecification> launchTemplateSpecification) {
         this.launchTemplateSpecification = launchTemplateSpecification;
         return this;
     }
@@ -77,7 +79,7 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public Set<LaunchTemplateOverrides> getOverrides() {
+    public Set<Property<LaunchTemplateOverrides>> getOverrides() {
         return overrides;
     }
 
@@ -86,11 +88,11 @@ public class LaunchTemplate {
      * 
      */
     @JsonIgnore
-    public void setOverrides(Set<LaunchTemplateOverrides> overrides) {
+    public void setOverrides(Set<Property<LaunchTemplateOverrides>> overrides) {
         this.overrides = overrides;
     }
 
-    public LaunchTemplate withOverrides(Set<LaunchTemplateOverrides> overrides) {
+    public LaunchTemplate withOverrides(Set<Property<LaunchTemplateOverrides>> overrides) {
         this.overrides = overrides;
         return this;
     }

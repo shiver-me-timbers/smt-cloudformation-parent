@@ -1,6 +1,7 @@
 
 package aws.ecs;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "AwsvpcConfiguration"
 })
-public class NetworkConfiguration {
+public class NetworkConfiguration implements Property<NetworkConfiguration>
+{
 
     /**
      * AwsVpcConfiguration
@@ -31,7 +33,7 @@ public class NetworkConfiguration {
      */
     @JsonProperty("AwsvpcConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html")
-    private AwsVpcConfiguration awsvpcConfiguration;
+    private Property<AwsVpcConfiguration> awsvpcConfiguration;
 
     /**
      * AwsVpcConfiguration
@@ -40,7 +42,7 @@ public class NetworkConfiguration {
      * 
      */
     @JsonIgnore
-    public AwsVpcConfiguration getAwsvpcConfiguration() {
+    public Property<AwsVpcConfiguration> getAwsvpcConfiguration() {
         return awsvpcConfiguration;
     }
 
@@ -51,11 +53,11 @@ public class NetworkConfiguration {
      * 
      */
     @JsonIgnore
-    public void setAwsvpcConfiguration(AwsVpcConfiguration awsvpcConfiguration) {
+    public void setAwsvpcConfiguration(Property<AwsVpcConfiguration> awsvpcConfiguration) {
         this.awsvpcConfiguration = awsvpcConfiguration;
     }
 
-    public NetworkConfiguration withAwsvpcConfiguration(AwsVpcConfiguration awsvpcConfiguration) {
+    public NetworkConfiguration withAwsvpcConfiguration(Property<AwsVpcConfiguration> awsvpcConfiguration) {
         this.awsvpcConfiguration = awsvpcConfiguration;
         return this;
     }

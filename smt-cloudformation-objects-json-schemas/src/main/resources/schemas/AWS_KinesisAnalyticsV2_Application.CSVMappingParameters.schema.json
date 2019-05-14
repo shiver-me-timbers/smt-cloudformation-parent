@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-csvmappingparameters.html",
   "type" : "object",
   "javaType" : "aws.kinesisanalyticsv2.CSVMappingParameters",
+  "javaInterfaces" : [ "aws.Property<CSVMappingParameters>" ],
   "properties" : {
     "RecordRowDelimiter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-csvmappingparameters.html#cfn-kinesisanalyticsv2-application-csvmappingparameters-recordrowdelimiter",

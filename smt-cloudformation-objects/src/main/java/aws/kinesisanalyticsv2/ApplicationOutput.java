@@ -1,6 +1,7 @@
 
 package aws.kinesisanalyticsv2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -39,7 +40,7 @@ public class ApplicationOutput {
      */
     @JsonProperty("Output")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html")
-    private LambdaOutput output;
+    private Property<Output> output;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html#cfn-kinesisanalyticsv2-applicationoutput-applicationname
@@ -71,7 +72,7 @@ public class ApplicationOutput {
      * 
      */
     @JsonIgnore
-    public LambdaOutput getOutput() {
+    public Property<Output> getOutput() {
         return output;
     }
 
@@ -82,11 +83,11 @@ public class ApplicationOutput {
      * 
      */
     @JsonIgnore
-    public void setOutput(LambdaOutput output) {
+    public void setOutput(Property<Output> output) {
         this.output = output;
     }
 
-    public ApplicationOutput withOutput(LambdaOutput output) {
+    public ApplicationOutput withOutput(Property<Output> output) {
         this.output = output;
         return this;
     }

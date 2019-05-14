@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html",
   "type" : "object",
   "javaType" : "aws.appsync.HttpConfig",
+  "javaInterfaces" : [ "aws.Property<HttpConfig>" ],
   "properties" : {
     "Endpoint" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-endpoint",
@@ -13,7 +14,8 @@
     },
     "AuthorizationConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html#cfn-appsync-datasource-httpconfig-authorizationconfig",
-      "$ref" : "AWS_AppSync_DataSource.AuthorizationConfig.schema.json"
+      "$ref" : "AWS_AppSync_DataSource.AuthorizationConfig.schema.json",
+      "javaType" : "aws.Property<aws.appsync.AuthorizationConfig>"
     }
   }
 }

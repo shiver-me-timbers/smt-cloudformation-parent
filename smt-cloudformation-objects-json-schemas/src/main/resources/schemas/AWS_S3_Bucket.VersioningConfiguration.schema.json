@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html",
   "type" : "object",
   "javaType" : "aws.s3.VersioningConfiguration",
+  "javaInterfaces" : [ "aws.Property<VersioningConfiguration>" ],
   "properties" : {
     "Status" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html#cfn-s3-bucket-versioningconfig-status",

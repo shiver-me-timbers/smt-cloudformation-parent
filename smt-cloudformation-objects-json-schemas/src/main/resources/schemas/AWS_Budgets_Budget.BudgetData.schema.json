@@ -5,14 +5,17 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html",
   "type" : "object",
   "javaType" : "aws.budgets.BudgetData",
+  "javaInterfaces" : [ "aws.Property<BudgetData>" ],
   "properties" : {
     "BudgetLimit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetlimit",
-      "$ref" : "AWS_Budgets_Budget.Spend.schema.json"
+      "$ref" : "AWS_Budgets_Budget.Spend.schema.json",
+      "javaType" : "aws.Property<aws.budgets.Spend>"
     },
     "TimePeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeperiod",
-      "$ref" : "AWS_Budgets_Budget.TimePeriod.schema.json"
+      "$ref" : "AWS_Budgets_Budget.TimePeriod.schema.json",
+      "javaType" : "aws.Property<aws.budgets.TimePeriod>"
     },
     "TimeUnit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit",
@@ -30,7 +33,8 @@
     },
     "CostTypes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costtypes",
-      "$ref" : "AWS_Budgets_Budget.CostTypes.schema.json"
+      "$ref" : "AWS_Budgets_Budget.CostTypes.schema.json",
+      "javaType" : "aws.Property<aws.budgets.CostTypes>"
     },
     "BudgetType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype",

@@ -3,6 +3,7 @@ package aws.dax;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -45,7 +46,7 @@ public class Cluster {
      */
     @JsonProperty("SSESpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html")
-    private SSESpecification sSESpecification;
+    private Property<SSESpecification> sSESpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description
      * 
@@ -138,7 +139,7 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public SSESpecification getSSESpecification() {
+    public Property<SSESpecification> getSSESpecification() {
         return sSESpecification;
     }
 
@@ -149,11 +150,11 @@ public class Cluster {
      * 
      */
     @JsonIgnore
-    public void setSSESpecification(SSESpecification sSESpecification) {
+    public void setSSESpecification(Property<SSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
     }
 
-    public Cluster withSSESpecification(SSESpecification sSESpecification) {
+    public Cluster withSSESpecification(Property<SSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
         return this;
     }

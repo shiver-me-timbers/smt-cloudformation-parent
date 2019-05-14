@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html",
   "type" : "object",
   "javaType" : "aws.appsync.UserPoolConfig",
+  "javaInterfaces" : [ "aws.Property<UserPoolConfig>" ],
   "properties" : {
     "AppIdClientRegex" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html#cfn-appsync-graphqlapi-userpoolconfig-appidclientregex",

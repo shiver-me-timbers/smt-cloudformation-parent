@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "RedirectRule",
     "RoutingRuleCondition"
 })
-public class RoutingRule {
+public class RoutingRule implements Property<RoutingRule>
+{
 
     /**
      * RedirectRule
@@ -32,7 +34,7 @@ public class RoutingRule {
      */
     @JsonProperty("RedirectRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html")
-    private RedirectRule redirectRule;
+    private Property<RedirectRule> redirectRule;
     /**
      * RoutingRuleCondition
      * <p>
@@ -41,7 +43,7 @@ public class RoutingRule {
      */
     @JsonProperty("RoutingRuleCondition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html")
-    private RoutingRuleCondition routingRuleCondition;
+    private Property<RoutingRuleCondition> routingRuleCondition;
 
     /**
      * RedirectRule
@@ -50,7 +52,7 @@ public class RoutingRule {
      * 
      */
     @JsonIgnore
-    public RedirectRule getRedirectRule() {
+    public Property<RedirectRule> getRedirectRule() {
         return redirectRule;
     }
 
@@ -61,11 +63,11 @@ public class RoutingRule {
      * 
      */
     @JsonIgnore
-    public void setRedirectRule(RedirectRule redirectRule) {
+    public void setRedirectRule(Property<RedirectRule> redirectRule) {
         this.redirectRule = redirectRule;
     }
 
-    public RoutingRule withRedirectRule(RedirectRule redirectRule) {
+    public RoutingRule withRedirectRule(Property<RedirectRule> redirectRule) {
         this.redirectRule = redirectRule;
         return this;
     }
@@ -77,7 +79,7 @@ public class RoutingRule {
      * 
      */
     @JsonIgnore
-    public RoutingRuleCondition getRoutingRuleCondition() {
+    public Property<RoutingRuleCondition> getRoutingRuleCondition() {
         return routingRuleCondition;
     }
 
@@ -88,11 +90,11 @@ public class RoutingRule {
      * 
      */
     @JsonIgnore
-    public void setRoutingRuleCondition(RoutingRuleCondition routingRuleCondition) {
+    public void setRoutingRuleCondition(Property<RoutingRuleCondition> routingRuleCondition) {
         this.routingRuleCondition = routingRuleCondition;
     }
 
-    public RoutingRule withRoutingRuleCondition(RoutingRuleCondition routingRuleCondition) {
+    public RoutingRule withRoutingRuleCondition(Property<RoutingRuleCondition> routingRuleCondition) {
         this.routingRuleCondition = routingRuleCondition;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.ec2;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "SpotOptions",
     "MarketType"
 })
-public class InstanceMarketOptions {
+public class InstanceMarketOptions implements Property<InstanceMarketOptions>
+{
 
     /**
      * SpotOptions
@@ -32,7 +34,7 @@ public class InstanceMarketOptions {
      */
     @JsonProperty("SpotOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-spotoptions.html")
-    private SpotOptions spotOptions;
+    private Property<SpotOptions> spotOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-instancemarketoptions.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions-markettype
      * 
@@ -48,7 +50,7 @@ public class InstanceMarketOptions {
      * 
      */
     @JsonIgnore
-    public SpotOptions getSpotOptions() {
+    public Property<SpotOptions> getSpotOptions() {
         return spotOptions;
     }
 
@@ -59,11 +61,11 @@ public class InstanceMarketOptions {
      * 
      */
     @JsonIgnore
-    public void setSpotOptions(SpotOptions spotOptions) {
+    public void setSpotOptions(Property<SpotOptions> spotOptions) {
         this.spotOptions = spotOptions;
     }
 
-    public InstanceMarketOptions withSpotOptions(SpotOptions spotOptions) {
+    public InstanceMarketOptions withSpotOptions(Property<SpotOptions> spotOptions) {
         this.spotOptions = spotOptions;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.wafregional;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,7 @@ public class SizeConstraintSet {
      */
     @JsonProperty("SizeConstraints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-sizeconstraints")
-    private List<SizeConstraint> sizeConstraints = new ArrayList<SizeConstraint>();
+    private List<Property<SizeConstraint>> sizeConstraints = new ArrayList<Property<SizeConstraint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-name
      * 
@@ -46,7 +47,7 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public List<SizeConstraint> getSizeConstraints() {
+    public List<Property<SizeConstraint>> getSizeConstraints() {
         return sizeConstraints;
     }
 
@@ -55,11 +56,11 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public void setSizeConstraints(List<SizeConstraint> sizeConstraints) {
+    public void setSizeConstraints(List<Property<SizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
     }
 
-    public SizeConstraintSet withSizeConstraints(List<SizeConstraint> sizeConstraints) {
+    public SizeConstraintSet withSizeConstraints(List<Property<SizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
         return this;
     }

@@ -2,6 +2,7 @@
 package aws.elasticloadbalancingv2;
 
 import java.util.Map;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,7 +33,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "TokenEndpoint",
     "UserInfoEndpoint"
 })
-public class AuthenticateOidcConfig {
+public class AuthenticateOidcConfig implements Property<AuthenticateOidcConfig>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-authenticateoidcconfig.html#cfn-elasticloadbalancingv2-listenerrule-authenticateoidcconfig-authenticationrequestextraparams

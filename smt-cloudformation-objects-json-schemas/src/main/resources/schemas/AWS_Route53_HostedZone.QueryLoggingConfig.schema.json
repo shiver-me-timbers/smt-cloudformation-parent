@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html",
   "type" : "object",
   "javaType" : "aws.route53.QueryLoggingConfig",
+  "javaInterfaces" : [ "aws.Property<QueryLoggingConfig>" ],
   "properties" : {
     "CloudWatchLogsLogGroupArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn",

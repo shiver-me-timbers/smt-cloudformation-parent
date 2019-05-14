@@ -1,6 +1,7 @@
 
 package aws.apigateway;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -33,7 +34,7 @@ public class DocumentationPart {
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html")
-    private Location location;
+    private Property<Location> location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
@@ -56,7 +57,7 @@ public class DocumentationPart {
      * 
      */
     @JsonIgnore
-    public Location getLocation() {
+    public Property<Location> getLocation() {
         return location;
     }
 
@@ -67,11 +68,11 @@ public class DocumentationPart {
      * 
      */
     @JsonIgnore
-    public void setLocation(Location location) {
+    public void setLocation(Property<Location> location) {
         this.location = location;
     }
 
-    public DocumentationPart withLocation(Location location) {
+    public DocumentationPart withLocation(Property<Location> location) {
         this.location = location;
         return this;
     }

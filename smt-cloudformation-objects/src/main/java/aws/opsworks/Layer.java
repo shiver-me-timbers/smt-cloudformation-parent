@@ -4,6 +4,7 @@ package aws.opsworks;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -88,7 +89,7 @@ public class Layer {
      */
     @JsonProperty("CustomRecipes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html")
-    private Recipes customRecipes;
+    private Property<Recipes> customRecipes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
@@ -118,7 +119,7 @@ public class Layer {
      */
     @JsonProperty("LifecycleEventConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html")
-    private LifecycleEventConfiguration lifecycleEventConfiguration;
+    private Property<LifecycleEventConfiguration> lifecycleEventConfiguration;
     /**
      * LoadBasedAutoScaling
      * <p>
@@ -127,7 +128,7 @@ public class Layer {
      */
     @JsonProperty("LoadBasedAutoScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html")
-    private LoadBasedAutoScaling loadBasedAutoScaling;
+    private Property<LoadBasedAutoScaling> loadBasedAutoScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
@@ -162,7 +163,7 @@ public class Layer {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-type
      * 
@@ -183,7 +184,7 @@ public class Layer {
      */
     @JsonProperty("VolumeConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations")
-    private List<VolumeConfiguration> volumeConfigurations = new ArrayList<VolumeConfiguration>();
+    private List<Property<VolumeConfiguration>> volumeConfigurations = new ArrayList<Property<VolumeConfiguration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
@@ -307,7 +308,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public Recipes getCustomRecipes() {
+    public Property<Recipes> getCustomRecipes() {
         return customRecipes;
     }
 
@@ -318,11 +319,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setCustomRecipes(Recipes customRecipes) {
+    public void setCustomRecipes(Property<Recipes> customRecipes) {
         this.customRecipes = customRecipes;
     }
 
-    public Layer withCustomRecipes(Recipes customRecipes) {
+    public Layer withCustomRecipes(Property<Recipes> customRecipes) {
         this.customRecipes = customRecipes;
         return this;
     }
@@ -403,7 +404,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public LifecycleEventConfiguration getLifecycleEventConfiguration() {
+    public Property<LifecycleEventConfiguration> getLifecycleEventConfiguration() {
         return lifecycleEventConfiguration;
     }
 
@@ -414,11 +415,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setLifecycleEventConfiguration(LifecycleEventConfiguration lifecycleEventConfiguration) {
+    public void setLifecycleEventConfiguration(Property<LifecycleEventConfiguration> lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
     }
 
-    public Layer withLifecycleEventConfiguration(LifecycleEventConfiguration lifecycleEventConfiguration) {
+    public Layer withLifecycleEventConfiguration(Property<LifecycleEventConfiguration> lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
         return this;
     }
@@ -430,7 +431,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public LoadBasedAutoScaling getLoadBasedAutoScaling() {
+    public Property<LoadBasedAutoScaling> getLoadBasedAutoScaling() {
         return loadBasedAutoScaling;
     }
 
@@ -441,11 +442,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setLoadBasedAutoScaling(LoadBasedAutoScaling loadBasedAutoScaling) {
+    public void setLoadBasedAutoScaling(Property<LoadBasedAutoScaling> loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
     }
 
-    public Layer withLoadBasedAutoScaling(LoadBasedAutoScaling loadBasedAutoScaling) {
+    public Layer withLoadBasedAutoScaling(Property<LoadBasedAutoScaling> loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
         return this;
     }
@@ -547,7 +548,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -556,11 +557,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Layer withTags(List<Tag> tags) {
+    public Layer withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -616,7 +617,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public List<VolumeConfiguration> getVolumeConfigurations() {
+    public List<Property<VolumeConfiguration>> getVolumeConfigurations() {
         return volumeConfigurations;
     }
 
@@ -625,11 +626,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setVolumeConfigurations(List<VolumeConfiguration> volumeConfigurations) {
+    public void setVolumeConfigurations(List<Property<VolumeConfiguration>> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
     }
 
-    public Layer withVolumeConfigurations(List<VolumeConfiguration> volumeConfigurations) {
+    public Layer withVolumeConfigurations(List<Property<VolumeConfiguration>> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
         return this;
     }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -89,7 +90,7 @@ public class Instance {
      */
     @JsonProperty("BlockDeviceMappings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-blockdevicemappings")
-    private List<BlockDeviceMapping> blockDeviceMappings = new ArrayList<BlockDeviceMapping>();
+    private List<Property<BlockDeviceMapping>> blockDeviceMappings = new ArrayList<Property<BlockDeviceMapping>>();
     /**
      * CreditSpecification
      * <p>
@@ -98,7 +99,7 @@ public class Instance {
      */
     @JsonProperty("CreditSpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html")
-    private CreditSpecification creditSpecification;
+    private Property<CreditSpecification> creditSpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-disableapitermination
      * 
@@ -120,7 +121,7 @@ public class Instance {
     @JsonProperty("ElasticGpuSpecifications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticgpuspecifications")
-    private Set<ElasticGpuSpecification> elasticGpuSpecifications = new LinkedHashSet<ElasticGpuSpecification>();
+    private Set<Property<ElasticGpuSpecification>> elasticGpuSpecifications = new LinkedHashSet<Property<ElasticGpuSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators
      * 
@@ -128,7 +129,7 @@ public class Instance {
     @JsonProperty("ElasticInferenceAccelerators")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-elasticinferenceaccelerators")
-    private Set<ElasticInferenceAccelerator> elasticInferenceAccelerators = new LinkedHashSet<ElasticInferenceAccelerator>();
+    private Set<Property<ElasticInferenceAccelerator>> elasticInferenceAccelerators = new LinkedHashSet<Property<ElasticInferenceAccelerator>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-hostid
      * 
@@ -177,7 +178,7 @@ public class Instance {
      */
     @JsonProperty("Ipv6Addresses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ipv6addresses")
-    private List<InstanceIpv6Address> ipv6Addresses = new ArrayList<InstanceIpv6Address>();
+    private List<Property<InstanceIpv6Address>> ipv6Addresses = new ArrayList<Property<InstanceIpv6Address>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-kernelid
      * 
@@ -200,7 +201,7 @@ public class Instance {
      */
     @JsonProperty("LaunchTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html")
-    private FleetLaunchTemplateSpecification launchTemplate;
+    private Property<LaunchTemplateSpecification> launchTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications
      * 
@@ -208,7 +209,7 @@ public class Instance {
     @JsonProperty("LicenseSpecifications")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-licensespecifications")
-    private Set<LicenseSpecification> licenseSpecifications = new LinkedHashSet<LicenseSpecification>();
+    private Set<Property<LicenseSpecification>> licenseSpecifications = new LinkedHashSet<Property<LicenseSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-monitoring
      * 
@@ -222,7 +223,7 @@ public class Instance {
      */
     @JsonProperty("NetworkInterfaces")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-networkinterfaces")
-    private List<NetworkInterface> networkInterfaces = new ArrayList<NetworkInterface>();
+    private List<Property<NetworkInterface>> networkInterfaces = new ArrayList<Property<NetworkInterface>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-placementgroupname
      * 
@@ -271,7 +272,7 @@ public class Instance {
      */
     @JsonProperty("SsmAssociations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-ssmassociations")
-    private List<SsmAssociation> ssmAssociations = new ArrayList<SsmAssociation>();
+    private List<Property<SsmAssociation>> ssmAssociations = new ArrayList<Property<SsmAssociation>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-subnetid
      * 
@@ -285,7 +286,7 @@ public class Instance {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-tenancy
      * 
@@ -306,7 +307,7 @@ public class Instance {
      */
     @JsonProperty("Volumes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-volumes")
-    private List<Volume> volumes = new ArrayList<Volume>();
+    private List<Property<Volume>> volumes = new ArrayList<Property<Volume>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html#cfn-ec2-instance-additionalinfo
@@ -382,7 +383,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<BlockDeviceMapping> getBlockDeviceMappings() {
+    public List<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -391,11 +392,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings) {
+    public void setBlockDeviceMappings(List<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public Instance withBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings) {
+    public Instance withBlockDeviceMappings(List<Property<BlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }
@@ -407,7 +408,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public CreditSpecification getCreditSpecification() {
+    public Property<CreditSpecification> getCreditSpecification() {
         return creditSpecification;
     }
 
@@ -418,11 +419,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setCreditSpecification(CreditSpecification creditSpecification) {
+    public void setCreditSpecification(Property<CreditSpecification> creditSpecification) {
         this.creditSpecification = creditSpecification;
     }
 
-    public Instance withCreditSpecification(CreditSpecification creditSpecification) {
+    public Instance withCreditSpecification(Property<CreditSpecification> creditSpecification) {
         this.creditSpecification = creditSpecification;
         return this;
     }
@@ -478,7 +479,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Set<ElasticGpuSpecification> getElasticGpuSpecifications() {
+    public Set<Property<ElasticGpuSpecification>> getElasticGpuSpecifications() {
         return elasticGpuSpecifications;
     }
 
@@ -487,11 +488,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setElasticGpuSpecifications(Set<ElasticGpuSpecification> elasticGpuSpecifications) {
+    public void setElasticGpuSpecifications(Set<Property<ElasticGpuSpecification>> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
     }
 
-    public Instance withElasticGpuSpecifications(Set<ElasticGpuSpecification> elasticGpuSpecifications) {
+    public Instance withElasticGpuSpecifications(Set<Property<ElasticGpuSpecification>> elasticGpuSpecifications) {
         this.elasticGpuSpecifications = elasticGpuSpecifications;
         return this;
     }
@@ -501,7 +502,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Set<ElasticInferenceAccelerator> getElasticInferenceAccelerators() {
+    public Set<Property<ElasticInferenceAccelerator>> getElasticInferenceAccelerators() {
         return elasticInferenceAccelerators;
     }
 
@@ -510,11 +511,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setElasticInferenceAccelerators(Set<ElasticInferenceAccelerator> elasticInferenceAccelerators) {
+    public void setElasticInferenceAccelerators(Set<Property<ElasticInferenceAccelerator>> elasticInferenceAccelerators) {
         this.elasticInferenceAccelerators = elasticInferenceAccelerators;
     }
 
-    public Instance withElasticInferenceAccelerators(Set<ElasticInferenceAccelerator> elasticInferenceAccelerators) {
+    public Instance withElasticInferenceAccelerators(Set<Property<ElasticInferenceAccelerator>> elasticInferenceAccelerators) {
         this.elasticInferenceAccelerators = elasticInferenceAccelerators;
         return this;
     }
@@ -662,7 +663,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<InstanceIpv6Address> getIpv6Addresses() {
+    public List<Property<InstanceIpv6Address>> getIpv6Addresses() {
         return ipv6Addresses;
     }
 
@@ -671,11 +672,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setIpv6Addresses(List<InstanceIpv6Address> ipv6Addresses) {
+    public void setIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
 
-    public Instance withIpv6Addresses(List<InstanceIpv6Address> ipv6Addresses) {
+    public Instance withIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
         return this;
     }
@@ -733,7 +734,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public FleetLaunchTemplateSpecification getLaunchTemplate() {
+    public Property<LaunchTemplateSpecification> getLaunchTemplate() {
         return launchTemplate;
     }
 
@@ -744,11 +745,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplate(FleetLaunchTemplateSpecification launchTemplate) {
+    public void setLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
 
-    public Instance withLaunchTemplate(FleetLaunchTemplateSpecification launchTemplate) {
+    public Instance withLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
         return this;
     }
@@ -758,7 +759,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Set<LicenseSpecification> getLicenseSpecifications() {
+    public Set<Property<LicenseSpecification>> getLicenseSpecifications() {
         return licenseSpecifications;
     }
 
@@ -767,11 +768,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setLicenseSpecifications(Set<LicenseSpecification> licenseSpecifications) {
+    public void setLicenseSpecifications(Set<Property<LicenseSpecification>> licenseSpecifications) {
         this.licenseSpecifications = licenseSpecifications;
     }
 
-    public Instance withLicenseSpecifications(Set<LicenseSpecification> licenseSpecifications) {
+    public Instance withLicenseSpecifications(Set<Property<LicenseSpecification>> licenseSpecifications) {
         this.licenseSpecifications = licenseSpecifications;
         return this;
     }
@@ -804,7 +805,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<NetworkInterface> getNetworkInterfaces() {
+    public List<Property<NetworkInterface>> getNetworkInterfaces() {
         return networkInterfaces;
     }
 
@@ -813,11 +814,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setNetworkInterfaces(List<NetworkInterface> networkInterfaces) {
+    public void setNetworkInterfaces(List<Property<NetworkInterface>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
     }
 
-    public Instance withNetworkInterfaces(List<NetworkInterface> networkInterfaces) {
+    public Instance withNetworkInterfaces(List<Property<NetworkInterface>> networkInterfaces) {
         this.networkInterfaces = networkInterfaces;
         return this;
     }
@@ -965,7 +966,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<SsmAssociation> getSsmAssociations() {
+    public List<Property<SsmAssociation>> getSsmAssociations() {
         return ssmAssociations;
     }
 
@@ -974,11 +975,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setSsmAssociations(List<SsmAssociation> ssmAssociations) {
+    public void setSsmAssociations(List<Property<SsmAssociation>> ssmAssociations) {
         this.ssmAssociations = ssmAssociations;
     }
 
-    public Instance withSsmAssociations(List<SsmAssociation> ssmAssociations) {
+    public Instance withSsmAssociations(List<Property<SsmAssociation>> ssmAssociations) {
         this.ssmAssociations = ssmAssociations;
         return this;
     }
@@ -1011,7 +1012,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -1020,11 +1021,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public Instance withTags(List<Tag> tags) {
+    public Instance withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }
@@ -1080,7 +1081,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public List<Volume> getVolumes() {
+    public List<Property<Volume>> getVolumes() {
         return volumes;
     }
 
@@ -1089,11 +1090,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setVolumes(List<Volume> volumes) {
+    public void setVolumes(List<Property<Volume>> volumes) {
         this.volumes = volumes;
     }
 
-    public Instance withVolumes(List<Volume> volumes) {
+    public Instance withVolumes(List<Property<Volume>> volumes) {
         this.volumes = volumes;
         return this;
     }

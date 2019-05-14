@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -51,21 +52,21 @@ public class SecurityGroup {
      */
     @JsonProperty("SecurityGroupEgress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress")
-    private List<Egress> securityGroupEgress = new ArrayList<Egress>();
+    private List<Property<Egress>> securityGroupEgress = new ArrayList<Property<Egress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
     @JsonProperty("SecurityGroupIngress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress")
-    private List<Ingress> securityGroupIngress = new ArrayList<Ingress>();
+    private List<Property<Ingress>> securityGroupIngress = new ArrayList<Property<Ingress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags")
-    private List<Tag> tags = new ArrayList<Tag>();
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-vpcid
      * 
@@ -125,7 +126,7 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Egress> getSecurityGroupEgress() {
+    public List<Property<Egress>> getSecurityGroupEgress() {
         return securityGroupEgress;
     }
 
@@ -134,11 +135,11 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setSecurityGroupEgress(List<Egress> securityGroupEgress) {
+    public void setSecurityGroupEgress(List<Property<Egress>> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
     }
 
-    public SecurityGroup withSecurityGroupEgress(List<Egress> securityGroupEgress) {
+    public SecurityGroup withSecurityGroupEgress(List<Property<Egress>> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
         return this;
     }
@@ -148,7 +149,7 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Ingress> getSecurityGroupIngress() {
+    public List<Property<Ingress>> getSecurityGroupIngress() {
         return securityGroupIngress;
     }
 
@@ -157,11 +158,11 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setSecurityGroupIngress(List<Ingress> securityGroupIngress) {
+    public void setSecurityGroupIngress(List<Property<Ingress>> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
     }
 
-    public SecurityGroup withSecurityGroupIngress(List<Ingress> securityGroupIngress) {
+    public SecurityGroup withSecurityGroupIngress(List<Property<Ingress>> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
         return this;
     }
@@ -171,7 +172,7 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTags() {
+    public List<Property<Tag>> getTags() {
         return tags;
     }
 
@@ -180,11 +181,11 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Tag> tags) {
+    public void setTags(List<Property<Tag>> tags) {
         this.tags = tags;
     }
 
-    public SecurityGroup withTags(List<Tag> tags) {
+    public SecurityGroup withTags(List<Property<Tag>> tags) {
         this.tags = tags;
         return this;
     }

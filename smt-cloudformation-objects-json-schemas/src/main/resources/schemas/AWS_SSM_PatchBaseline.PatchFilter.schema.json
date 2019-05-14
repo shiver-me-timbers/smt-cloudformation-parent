@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html",
   "type" : "object",
   "javaType" : "aws.ssm.PatchFilter",
+  "javaInterfaces" : [ "aws.Property<PatchFilter>" ],
   "properties" : {
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfilter.html#cfn-ssm-patchbaseline-patchfilter-values",

@@ -8,7 +8,8 @@
   "properties" : {
     "Template" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html#cfn-ses-template-template",
-      "$ref" : "AWS_SES_Template.Template.schema.json"
+      "$ref" : "AWS_SES_Template.Template.schema.json",
+      "javaType" : "aws.Property<aws.ses.Template>"
     }
   }
 }

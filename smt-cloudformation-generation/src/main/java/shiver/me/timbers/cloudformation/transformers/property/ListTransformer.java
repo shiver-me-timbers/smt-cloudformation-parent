@@ -9,7 +9,6 @@ import shiver.me.timbers.cloudformation.types.TypeException;
 import java.util.Map;
 
 import static java.lang.String.format;
-import static java.util.Collections.singletonMap;
 
 public class ListTransformer implements PropertyTransformer {
 
@@ -45,10 +44,7 @@ public class ListTransformer implements PropertyTransformer {
         }
         final String itemType = cloudformationProperty.getItemType();
         if (itemType != null) {
-            property.put("items", singletonMap(
-                "$ref",
-                classTypeConverter.convert(resourceName, cloudformationProperty.getItemType())
-            ));
+            property.put("items", classTypeConverter.toTypeMap(resourceName, cloudformationProperty.getItemType()));
             return;
         }
         throw new TypeException(

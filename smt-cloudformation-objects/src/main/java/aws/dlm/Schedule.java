@@ -3,6 +3,7 @@ package aws.dlm;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Name",
     "CopyTags"
 })
-public class Schedule {
+public class Schedule implements Property<Schedule>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-tagstoadd
@@ -36,7 +38,7 @@ public class Schedule {
      */
     @JsonProperty("TagsToAdd")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-tagstoadd")
-    private List<Tag> tagsToAdd = new ArrayList<Tag>();
+    private List<Property<Tag>> tagsToAdd = new ArrayList<Property<Tag>>();
     /**
      * CreateRule
      * <p>
@@ -45,7 +47,7 @@ public class Schedule {
      */
     @JsonProperty("CreateRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-createrule.html")
-    private CreateRule createRule;
+    private Property<CreateRule> createRule;
     /**
      * RetainRule
      * <p>
@@ -54,7 +56,7 @@ public class Schedule {
      */
     @JsonProperty("RetainRule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html")
-    private RetainRule retainRule;
+    private Property<RetainRule> retainRule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-name
      * 
@@ -75,7 +77,7 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public List<Tag> getTagsToAdd() {
+    public List<Property<Tag>> getTagsToAdd() {
         return tagsToAdd;
     }
 
@@ -84,11 +86,11 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public void setTagsToAdd(List<Tag> tagsToAdd) {
+    public void setTagsToAdd(List<Property<Tag>> tagsToAdd) {
         this.tagsToAdd = tagsToAdd;
     }
 
-    public Schedule withTagsToAdd(List<Tag> tagsToAdd) {
+    public Schedule withTagsToAdd(List<Property<Tag>> tagsToAdd) {
         this.tagsToAdd = tagsToAdd;
         return this;
     }
@@ -100,7 +102,7 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public CreateRule getCreateRule() {
+    public Property<CreateRule> getCreateRule() {
         return createRule;
     }
 
@@ -111,11 +113,11 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public void setCreateRule(CreateRule createRule) {
+    public void setCreateRule(Property<CreateRule> createRule) {
         this.createRule = createRule;
     }
 
-    public Schedule withCreateRule(CreateRule createRule) {
+    public Schedule withCreateRule(Property<CreateRule> createRule) {
         this.createRule = createRule;
         return this;
     }
@@ -127,7 +129,7 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public RetainRule getRetainRule() {
+    public Property<RetainRule> getRetainRule() {
         return retainRule;
     }
 
@@ -138,11 +140,11 @@ public class Schedule {
      * 
      */
     @JsonIgnore
-    public void setRetainRule(RetainRule retainRule) {
+    public void setRetainRule(Property<RetainRule> retainRule) {
         this.retainRule = retainRule;
     }
 
-    public Schedule withRetainRule(RetainRule retainRule) {
+    public Schedule withRetainRule(Property<RetainRule> retainRule) {
         this.retainRule = retainRule;
         return this;
     }

@@ -5,10 +5,12 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html",
   "type" : "object",
   "javaType" : "aws.cloudfront.ForwardedValues",
+  "javaInterfaces" : [ "aws.Property<ForwardedValues>" ],
   "properties" : {
     "Cookies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-cookies",
-      "$ref" : "AWS_CloudFront_Distribution.Cookies.schema.json"
+      "$ref" : "AWS_CloudFront_Distribution.Cookies.schema.json",
+      "javaType" : "aws.Property<aws.cloudfront.Cookies>"
     },
     "Headers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers",

@@ -3,6 +3,7 @@ package aws.appmesh;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -58,14 +59,14 @@ public class Route {
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html")
-    private RouteSpec spec;
+    private Property<RouteSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags")
-    private List<TagRef> tags = new ArrayList<TagRef>();
+    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshname
@@ -143,7 +144,7 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public RouteSpec getSpec() {
+    public Property<RouteSpec> getSpec() {
         return spec;
     }
 
@@ -154,11 +155,11 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public void setSpec(RouteSpec spec) {
+    public void setSpec(Property<RouteSpec> spec) {
         this.spec = spec;
     }
 
-    public Route withSpec(RouteSpec spec) {
+    public Route withSpec(Property<RouteSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -168,7 +169,7 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public List<TagRef> getTags() {
+    public List<Property<TagRef>> getTags() {
         return tags;
     }
 
@@ -177,11 +178,11 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public void setTags(List<TagRef> tags) {
+    public void setTags(List<Property<TagRef>> tags) {
         this.tags = tags;
     }
 
-    public Route withTags(List<TagRef> tags) {
+    public Route withTags(List<Property<TagRef>> tags) {
         this.tags = tags;
         return this;
     }

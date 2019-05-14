@@ -3,6 +3,7 @@ package aws.applicationautoscaling;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -28,7 +29,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "MinAdjustmentMagnitude",
     "StepAdjustments"
 })
-public class StepScalingPolicyConfiguration {
+public class StepScalingPolicyConfiguration implements Property<StepScalingPolicyConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype
@@ -65,7 +67,7 @@ public class StepScalingPolicyConfiguration {
     @JsonProperty("StepAdjustments")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-stepadjustments")
-    private Set<StepAdjustment> stepAdjustments = new LinkedHashSet<StepAdjustment>();
+    private Set<Property<StepAdjustment>> stepAdjustments = new LinkedHashSet<Property<StepAdjustment>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype
@@ -164,7 +166,7 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<StepAdjustment> getStepAdjustments() {
+    public Set<Property<StepAdjustment>> getStepAdjustments() {
         return stepAdjustments;
     }
 
@@ -173,11 +175,11 @@ public class StepScalingPolicyConfiguration {
      * 
      */
     @JsonIgnore
-    public void setStepAdjustments(Set<StepAdjustment> stepAdjustments) {
+    public void setStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
     }
 
-    public StepScalingPolicyConfiguration withStepAdjustments(Set<StepAdjustment> stepAdjustments) {
+    public StepScalingPolicyConfiguration withStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
         return this;
     }

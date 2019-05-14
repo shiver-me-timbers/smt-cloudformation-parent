@@ -3,6 +3,7 @@ package aws.kinesisfirehose;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,7 +26,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Enabled",
     "Processors"
 })
-public class ProcessingConfiguration {
+public class ProcessingConfiguration implements Property<ProcessingConfiguration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled
@@ -41,7 +43,7 @@ public class ProcessingConfiguration {
     @JsonProperty("Processors")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-processors")
-    private Set<Processor> processors = new LinkedHashSet<Processor>();
+    private Set<Property<Processor>> processors = new LinkedHashSet<Property<Processor>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled
@@ -71,7 +73,7 @@ public class ProcessingConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<Processor> getProcessors() {
+    public Set<Property<Processor>> getProcessors() {
         return processors;
     }
 
@@ -80,11 +82,11 @@ public class ProcessingConfiguration {
      * 
      */
     @JsonIgnore
-    public void setProcessors(Set<Processor> processors) {
+    public void setProcessors(Set<Property<Processor>> processors) {
         this.processors = processors;
     }
 
-    public ProcessingConfiguration withProcessors(Set<Processor> processors) {
+    public ProcessingConfiguration withProcessors(Set<Property<Processor>> processors) {
         this.processors = processors;
         return this;
     }

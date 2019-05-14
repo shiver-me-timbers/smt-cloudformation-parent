@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html",
   "type" : "object",
   "javaType" : "aws.ec2.LaunchTemplateData",
+  "javaInterfaces" : [ "aws.Property<LaunchTemplateData>" ],
   "properties" : {
     "SecurityGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroups",
@@ -18,7 +19,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-tagspecifications",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json"
+        "$ref" : "AWS_EC2_SpotFleet.SpotFleetTagSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.TagSpecification>"
       }
     },
     "UserData" : {
@@ -30,12 +32,14 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-blockdevicemappings",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.BlockDeviceMapping.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.BlockDeviceMapping.schema.json",
+        "javaType" : "aws.Property<aws.ec2.BlockDeviceMapping>"
       }
     },
     "IamInstanceProfile" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-iaminstanceprofile",
-      "$ref" : "AWS_EC2_LaunchTemplate.IamInstanceProfile.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.IamInstanceProfile.schema.json",
+      "javaType" : "aws.Property<aws.ec2.IamInstanceProfile>"
     },
     "KernelId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-kernelid",
@@ -50,25 +54,29 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticgpuspecifications",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.ElasticGpuSpecification.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.ElasticGpuSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.ElasticGpuSpecification>"
       }
     },
     "ElasticInferenceAccelerators" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-elasticinferenceaccelerators",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.LaunchTemplateElasticInferenceAccelerator.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.LaunchTemplateElasticInferenceAccelerator.schema.json",
+        "javaType" : "aws.Property<aws.ec2.LaunchTemplateElasticInferenceAccelerator>"
       }
     },
     "Placement" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-placement",
-      "$ref" : "AWS_EC2_SpotFleet.SpotPlacement.schema.json"
+      "$ref" : "AWS_EC2_SpotFleet.SpotPlacement.schema.json",
+      "javaType" : "aws.Property<aws.ec2.Placement>"
     },
     "NetworkInterfaces" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-networkinterfaces",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_Instance.NetworkInterface.schema.json"
+        "$ref" : "AWS_EC2_Instance.NetworkInterface.schema.json",
+        "javaType" : "aws.Property<aws.ec2.NetworkInterface>"
       }
     },
     "ImageId" : {
@@ -83,17 +91,20 @@
     },
     "Monitoring" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-monitoring",
-      "$ref" : "AWS_EC2_SpotFleet.SpotFleetMonitoring.schema.json"
+      "$ref" : "AWS_EC2_SpotFleet.SpotFleetMonitoring.schema.json",
+      "javaType" : "aws.Property<aws.ec2.Monitoring>"
     },
     "HibernationOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-hibernationoptions",
-      "$ref" : "AWS_EC2_LaunchTemplate.HibernationOptions.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.HibernationOptions.schema.json",
+      "javaType" : "aws.Property<aws.ec2.HibernationOptions>"
     },
     "LicenseSpecifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-licensespecifications",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_LaunchTemplate.LicenseSpecification.schema.json"
+        "$ref" : "AWS_EC2_LaunchTemplate.LicenseSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.LicenseSpecification>"
       }
     },
     "InstanceInitiatedShutdownBehavior" : {
@@ -103,7 +114,8 @@
     },
     "CpuOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-cpuoptions",
-      "$ref" : "AWS_EC2_LaunchTemplate.CpuOptions.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.CpuOptions.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CpuOptions>"
     },
     "SecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-securitygroupids",
@@ -124,7 +136,8 @@
     },
     "InstanceMarketOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-instancemarketoptions",
-      "$ref" : "AWS_EC2_LaunchTemplate.InstanceMarketOptions.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.InstanceMarketOptions.schema.json",
+      "javaType" : "aws.Property<aws.ec2.InstanceMarketOptions>"
     },
     "RamDiskId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-ramdiskid",
@@ -133,11 +146,13 @@
     },
     "CapacityReservationSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-capacityreservationspecification",
-      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationSpecification.schema.json"
+      "$ref" : "AWS_EC2_LaunchTemplate.CapacityReservationSpecification.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CapacityReservationSpecification>"
     },
     "CreditSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html#cfn-ec2-launchtemplate-launchtemplatedata-creditspecification",
-      "$ref" : "AWS_EC2_Instance.CreditSpecification.schema.json"
+      "$ref" : "AWS_EC2_Instance.CreditSpecification.schema.json",
+      "javaType" : "aws.Property<aws.ec2.CreditSpecification>"
     }
   }
 }

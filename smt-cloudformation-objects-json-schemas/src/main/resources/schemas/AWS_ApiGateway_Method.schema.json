@@ -36,14 +36,16 @@
     },
     "Integration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-integration",
-      "$ref" : "AWS_ApiGateway_Method.Integration.schema.json"
+      "$ref" : "AWS_ApiGateway_Method.Integration.schema.json",
+      "javaType" : "aws.Property<aws.apigateway.Integration>"
     },
     "MethodResponses" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ApiGateway_Method.MethodResponse.schema.json"
+        "$ref" : "AWS_ApiGateway_Method.MethodResponse.schema.json",
+        "javaType" : "aws.Property<aws.apigateway.MethodResponse>"
       }
     },
     "OperationName" : {

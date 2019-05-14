@@ -3,6 +3,7 @@ package aws.codedeploy;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -24,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "Ec2TagSetList"
 })
-public class EC2TagSet {
+public class EC2TagSet implements Property<EC2TagSet>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist
@@ -33,14 +35,14 @@ public class EC2TagSet {
     @JsonProperty("Ec2TagSetList")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist")
-    private Set<EC2TagSetListObject> ec2TagSetList = new LinkedHashSet<EC2TagSetListObject>();
+    private Set<Property<EC2TagSetListObject>> ec2TagSetList = new LinkedHashSet<Property<EC2TagSetListObject>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagset.html#cfn-codedeploy-deploymentgroup-ec2tagset-ec2tagsetlist
      * 
      */
     @JsonIgnore
-    public Set<EC2TagSetListObject> getEc2TagSetList() {
+    public Set<Property<EC2TagSetListObject>> getEc2TagSetList() {
         return ec2TagSetList;
     }
 
@@ -49,11 +51,11 @@ public class EC2TagSet {
      * 
      */
     @JsonIgnore
-    public void setEc2TagSetList(Set<EC2TagSetListObject> ec2TagSetList) {
+    public void setEc2TagSetList(Set<Property<EC2TagSetListObject>> ec2TagSetList) {
         this.ec2TagSetList = ec2TagSetList;
     }
 
-    public EC2TagSet withEc2TagSetList(Set<EC2TagSetListObject> ec2TagSetList) {
+    public EC2TagSet withEc2TagSetList(Set<Property<EC2TagSetListObject>> ec2TagSetList) {
         this.ec2TagSetList = ec2TagSetList;
         return this;
     }

@@ -3,6 +3,7 @@ package aws.waf;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -41,7 +42,7 @@ public class SqlInjectionMatchSet {
     @JsonProperty("SqlInjectionMatchTuples")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-sqlinjectionmatchtuples")
-    private Set<SqlInjectionMatchTuple> sqlInjectionMatchTuples = new LinkedHashSet<SqlInjectionMatchTuple>();
+    private Set<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples = new LinkedHashSet<Property<SqlInjectionMatchTuple>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name
@@ -71,7 +72,7 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonIgnore
-    public Set<SqlInjectionMatchTuple> getSqlInjectionMatchTuples() {
+    public Set<Property<SqlInjectionMatchTuple>> getSqlInjectionMatchTuples() {
         return sqlInjectionMatchTuples;
     }
 
@@ -80,11 +81,11 @@ public class SqlInjectionMatchSet {
      * 
      */
     @JsonIgnore
-    public void setSqlInjectionMatchTuples(Set<SqlInjectionMatchTuple> sqlInjectionMatchTuples) {
+    public void setSqlInjectionMatchTuples(Set<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples) {
         this.sqlInjectionMatchTuples = sqlInjectionMatchTuples;
     }
 
-    public SqlInjectionMatchSet withSqlInjectionMatchTuples(Set<SqlInjectionMatchTuple> sqlInjectionMatchTuples) {
+    public SqlInjectionMatchSet withSqlInjectionMatchTuples(Set<Property<SqlInjectionMatchTuple>> sqlInjectionMatchTuples) {
         this.sqlInjectionMatchTuples = sqlInjectionMatchTuples;
         return this;
     }

@@ -1,6 +1,7 @@
 
 package aws.emr;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,7 +22,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 @JsonPropertyOrder({
     "CloudWatchAlarmDefinition"
 })
-public class ScalingTrigger {
+public class ScalingTrigger implements Property<ScalingTrigger>
+{
 
     /**
      * CloudWatchAlarmDefinition
@@ -31,7 +33,7 @@ public class ScalingTrigger {
      */
     @JsonProperty("CloudWatchAlarmDefinition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-cloudwatchalarmdefinition.html")
-    private CloudWatchAlarmDefinition cloudWatchAlarmDefinition;
+    private Property<CloudWatchAlarmDefinition> cloudWatchAlarmDefinition;
 
     /**
      * CloudWatchAlarmDefinition
@@ -40,7 +42,7 @@ public class ScalingTrigger {
      * 
      */
     @JsonIgnore
-    public CloudWatchAlarmDefinition getCloudWatchAlarmDefinition() {
+    public Property<CloudWatchAlarmDefinition> getCloudWatchAlarmDefinition() {
         return cloudWatchAlarmDefinition;
     }
 
@@ -51,11 +53,11 @@ public class ScalingTrigger {
      * 
      */
     @JsonIgnore
-    public void setCloudWatchAlarmDefinition(CloudWatchAlarmDefinition cloudWatchAlarmDefinition) {
+    public void setCloudWatchAlarmDefinition(Property<CloudWatchAlarmDefinition> cloudWatchAlarmDefinition) {
         this.cloudWatchAlarmDefinition = cloudWatchAlarmDefinition;
     }
 
-    public ScalingTrigger withCloudWatchAlarmDefinition(CloudWatchAlarmDefinition cloudWatchAlarmDefinition) {
+    public ScalingTrigger withCloudWatchAlarmDefinition(Property<CloudWatchAlarmDefinition> cloudWatchAlarmDefinition) {
         this.cloudWatchAlarmDefinition = cloudWatchAlarmDefinition;
         return this;
     }

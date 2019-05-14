@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import shiver.me.timbers.cloudformation.CloudformationProperty;
 import shiver.me.timbers.cloudformation.CloudformationType;
+import shiver.me.timbers.cloudformation.types.ClassTypeConverter;
 import shiver.me.timbers.cloudformation.types.TypeException;
 
 import java.util.HashMap;
@@ -23,10 +24,12 @@ import static shiver.me.timbers.data.random.RandomStrings.someString;
 public class MapTransformerTest {
 
     private MapTransformer transformer;
+    private ClassTypeConverter classTypeConverter;
 
     @Before
     public void setUp() {
-        transformer = new MapTransformer();
+        classTypeConverter = mock(ClassTypeConverter.class);
+        transformer = new MapTransformer(classTypeConverter);
     }
 
     @Test
@@ -54,21 +57,24 @@ public class MapTransformerTest {
     @SuppressWarnings("unchecked")
     public void Can_transform_a_class_typed_map() {
 
+        final String resourceName = someString();
         final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
 
         final String type = someString();
+        final String javaType = someString();
 
         final Map<String, Object> actual = new HashMap<>();
 
         // Given
         given(cloudformationProperty.getItemType()).willReturn(type);
+        given(classTypeConverter.toJavType(resourceName, type)).willReturn(javaType);
 
         // When
-        transformer.transform(someString(), mock(CloudformationType.class), someString(), cloudformationProperty, actual);
+        transformer.transform(resourceName, mock(CloudformationType.class), someString(), cloudformationProperty, actual);
 
         // Then
         assertThat(actual, hasEntry("type", "object"));
-        assertThat(actual, hasEntry("javaType", format("java.util.Map<String, %s>", type)));
+        assertThat(actual, hasEntry("javaType", format("java.util.Map<String, %s>", javaType)));
     }
 
     @Test

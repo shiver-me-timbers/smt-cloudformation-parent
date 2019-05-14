@@ -3,6 +3,7 @@ package aws.appstream;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -42,7 +43,7 @@ public class DirectoryConfig {
      */
     @JsonProperty("ServiceAccountCredentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-directoryconfig-serviceaccountcredentials.html")
-    private ServiceAccountCredentials serviceAccountCredentials;
+    private Property<ServiceAccountCredentials> serviceAccountCredentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-directoryname
      * 
@@ -81,7 +82,7 @@ public class DirectoryConfig {
      * 
      */
     @JsonIgnore
-    public ServiceAccountCredentials getServiceAccountCredentials() {
+    public Property<ServiceAccountCredentials> getServiceAccountCredentials() {
         return serviceAccountCredentials;
     }
 
@@ -92,11 +93,11 @@ public class DirectoryConfig {
      * 
      */
     @JsonIgnore
-    public void setServiceAccountCredentials(ServiceAccountCredentials serviceAccountCredentials) {
+    public void setServiceAccountCredentials(Property<ServiceAccountCredentials> serviceAccountCredentials) {
         this.serviceAccountCredentials = serviceAccountCredentials;
     }
 
-    public DirectoryConfig withServiceAccountCredentials(ServiceAccountCredentials serviceAccountCredentials) {
+    public DirectoryConfig withServiceAccountCredentials(Property<ServiceAccountCredentials> serviceAccountCredentials) {
         this.serviceAccountCredentials = serviceAccountCredentials;
         return this;
     }

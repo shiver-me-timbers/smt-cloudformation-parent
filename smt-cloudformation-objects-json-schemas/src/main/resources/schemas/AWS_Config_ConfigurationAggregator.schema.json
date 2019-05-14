@@ -10,7 +10,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-accountaggregationsources",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Config_ConfigurationAggregator.AccountAggregationSource.schema.json"
+        "$ref" : "AWS_Config_ConfigurationAggregator.AccountAggregationSource.schema.json",
+        "javaType" : "aws.Property<aws.config.AccountAggregationSource>"
       }
     },
     "ConfigurationAggregatorName" : {
@@ -20,7 +21,8 @@
     },
     "OrganizationAggregationSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationaggregator.html#cfn-config-configurationaggregator-organizationaggregationsource",
-      "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json"
+      "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json",
+      "javaType" : "aws.Property<aws.config.OrganizationAggregationSource>"
     }
   }
 }

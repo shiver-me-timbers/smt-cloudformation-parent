@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-metricdimension.html",
   "type" : "object",
   "javaType" : "aws.autoscalingplans.MetricDimension",
+  "javaInterfaces" : [ "aws.Property<MetricDimension>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-metricdimension.html#cfn-autoscalingplans-scalingplan-metricdimension-value",

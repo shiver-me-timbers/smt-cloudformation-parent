@@ -5,6 +5,7 @@
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html",
   "type" : "object",
   "javaType" : "aws.rds.ScalingConfiguration",
+  "javaInterfaces" : [ "aws.Property<ScalingConfiguration>" ],
   "properties" : {
     "AutoPause" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html#cfn-rds-dbcluster-scalingconfiguration-autopause",

@@ -1,6 +1,7 @@
 
 package aws.iotanalytics;
 
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -22,7 +23,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Schedule",
     "TriggeringDataset"
 })
-public class Trigger {
+public class Trigger implements Property<Trigger>
+{
 
     /**
      * Schedule
@@ -32,7 +34,7 @@ public class Trigger {
      */
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-trigger-schedule.html")
-    private Schedule schedule;
+    private Property<Schedule> schedule;
     /**
      * TriggeringDataset
      * <p>
@@ -41,7 +43,7 @@ public class Trigger {
      */
     @JsonProperty("TriggeringDataset")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-triggeringdataset.html")
-    private TriggeringDataset triggeringDataset;
+    private Property<TriggeringDataset> triggeringDataset;
 
     /**
      * Schedule
@@ -50,7 +52,7 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public Schedule getSchedule() {
+    public Property<Schedule> getSchedule() {
         return schedule;
     }
 
@@ -61,11 +63,11 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public void setSchedule(Schedule schedule) {
+    public void setSchedule(Property<Schedule> schedule) {
         this.schedule = schedule;
     }
 
-    public Trigger withSchedule(Schedule schedule) {
+    public Trigger withSchedule(Property<Schedule> schedule) {
         this.schedule = schedule;
         return this;
     }
@@ -77,7 +79,7 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public TriggeringDataset getTriggeringDataset() {
+    public Property<TriggeringDataset> getTriggeringDataset() {
         return triggeringDataset;
     }
 
@@ -88,11 +90,11 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public void setTriggeringDataset(TriggeringDataset triggeringDataset) {
+    public void setTriggeringDataset(Property<TriggeringDataset> triggeringDataset) {
         this.triggeringDataset = triggeringDataset;
     }
 
-    public Trigger withTriggeringDataset(TriggeringDataset triggeringDataset) {
+    public Trigger withTriggeringDataset(Property<TriggeringDataset> triggeringDataset) {
         this.triggeringDataset = triggeringDataset;
         return this;
     }

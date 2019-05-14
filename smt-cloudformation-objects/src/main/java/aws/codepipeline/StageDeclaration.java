@@ -3,6 +3,7 @@ package aws.codepipeline;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +27,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Blockers",
     "Name"
 })
-public class StageDeclaration {
+public class StageDeclaration implements Property<StageDeclaration>
+{
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions
@@ -35,7 +37,7 @@ public class StageDeclaration {
     @JsonProperty("Actions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-actions")
-    private Set<ActionDeclaration> actions = new LinkedHashSet<ActionDeclaration>();
+    private Set<Property<ActionDeclaration>> actions = new LinkedHashSet<Property<ActionDeclaration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-blockers
      * 
@@ -43,7 +45,7 @@ public class StageDeclaration {
     @JsonProperty("Blockers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-blockers")
-    private Set<BlockerDeclaration> blockers = new LinkedHashSet<BlockerDeclaration>();
+    private Set<Property<BlockerDeclaration>> blockers = new LinkedHashSet<Property<BlockerDeclaration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html#cfn-codepipeline-pipeline-stages-name
      * 
@@ -57,7 +59,7 @@ public class StageDeclaration {
      * 
      */
     @JsonIgnore
-    public Set<ActionDeclaration> getActions() {
+    public Set<Property<ActionDeclaration>> getActions() {
         return actions;
     }
 
@@ -66,11 +68,11 @@ public class StageDeclaration {
      * 
      */
     @JsonIgnore
-    public void setActions(Set<ActionDeclaration> actions) {
+    public void setActions(Set<Property<ActionDeclaration>> actions) {
         this.actions = actions;
     }
 
-    public StageDeclaration withActions(Set<ActionDeclaration> actions) {
+    public StageDeclaration withActions(Set<Property<ActionDeclaration>> actions) {
         this.actions = actions;
         return this;
     }
@@ -80,7 +82,7 @@ public class StageDeclaration {
      * 
      */
     @JsonIgnore
-    public Set<BlockerDeclaration> getBlockers() {
+    public Set<Property<BlockerDeclaration>> getBlockers() {
         return blockers;
     }
 
@@ -89,11 +91,11 @@ public class StageDeclaration {
      * 
      */
     @JsonIgnore
-    public void setBlockers(Set<BlockerDeclaration> blockers) {
+    public void setBlockers(Set<Property<BlockerDeclaration>> blockers) {
         this.blockers = blockers;
     }
 
-    public StageDeclaration withBlockers(Set<BlockerDeclaration> blockers) {
+    public StageDeclaration withBlockers(Set<Property<BlockerDeclaration>> blockers) {
         this.blockers = blockers;
         return this;
     }
