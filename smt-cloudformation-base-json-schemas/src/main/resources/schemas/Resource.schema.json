@@ -10,8 +10,8 @@
   "javaType": "aws.Resource",
   "javaInterfaces": [
     "aws.HasReference",
-    "aws.HasDependsOn<Template>",
-    "aws.HasCondition<Template>"
+    "aws.HasDependsOn<Resource>",
+    "aws.HasCondition<Resource>"
   ],
   "properties": {
     "Type": {

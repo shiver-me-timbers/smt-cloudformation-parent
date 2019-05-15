@@ -32,11 +32,11 @@ public class Functions {
         return new ImportValue(value);
     }
 
-    public static Join fnJoin(String delimiter, String... strings) {
+    public static Join fnJoin(String delimiter, CharSequence... strings) {
         return new Join(delimiter, strings);
     }
 
-    public static Join fnJoin(String delimiter, List<String> strings) {
+    public static Join fnJoin(String delimiter, List<CharSequence> strings) {
         return new Join(delimiter, strings);
     }
 
