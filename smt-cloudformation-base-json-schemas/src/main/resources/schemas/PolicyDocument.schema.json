@@ -28,6 +28,7 @@
     "Statement": {
       "type": "object",
       "javaInterfaces": [
+        "aws.iam.HasPrincipals<Statement>",
         "aws.iam.HasActions<Statement>",
         "aws.iam.HasNotActions<Statement>",
         "aws.iam.HasNotResources<Statement>",
@@ -80,13 +81,14 @@
           "type": "string"
         }
       },
-      "javaType": "java.util.Map<String, java.util.List<String>>"
+      "javaType": "java.util.Map<String, java.util.List<CharSequence>>"
     },
     "Strings": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "javaType": "java.util.List<CharSequence>"
     },
     "Condition": {
       "type": "object",
@@ -99,7 +101,7 @@
           }
         }
       },
-      "javaType": "java.util.Map<String, java.util.Map<String, java.util.List<String>>>"
+      "javaType": "java.util.Map<String, java.util.Map<String, java.util.List<CharSequence>>>"
     }
   }
 }

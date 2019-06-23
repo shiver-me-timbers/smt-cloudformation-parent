@@ -54,11 +54,11 @@ public class JavaTypesTest {
     public void Can_extract_a_class_name_for_a_only_the_resource() {
 
         // Given
-        final String className = someAlphaString(8);
+        final String className = someAlphaString(3);
 
         // When
         final String actual = types.extractResourceClassName(
-            format("%s::%s.%s.%s", packageName(), className, someString(), someString())
+            format("%s::%s.%s.%s", packageName(), className, someString(5), someString(8))
         );
 
         // Then

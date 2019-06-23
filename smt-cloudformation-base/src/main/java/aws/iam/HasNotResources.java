@@ -6,9 +6,9 @@ import static java.util.Arrays.asList;
 
 public interface HasNotResources<T> {
 
-    default T withNotResources(String... resources) {
+    default T withNotResources(CharSequence... resources) {
         return withNotResource(asList(resources));
     }
 
-    T withNotResource(List<String> resources);
+    T withNotResource(List<CharSequence> resources);
 }
