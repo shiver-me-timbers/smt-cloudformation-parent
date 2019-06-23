@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.route53resolver.ResolverRuleAssociationResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ResolverRuleAssociationAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ResolverRuleAssociationResource>", "aws.HasCondition<ResolverRuleAssociationResource>", "aws.HasAttributes<ResolverRuleAssociationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

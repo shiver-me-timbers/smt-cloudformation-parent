@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Budgets_Budget.BudgetData.schema.json",
-  "title" : "BudgetData",
+  "title" : "BudgetBudgetData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html",
   "type" : "object",
-  "javaType" : "aws.budgets.BudgetData",
-  "javaInterfaces" : [ "aws.Property<BudgetData>" ],
+  "javaType" : "aws.budgets.BudgetBudgetData",
+  "javaInterfaces" : [ "aws.Property<BudgetBudgetData>" ],
   "properties" : {
     "BudgetLimit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetlimit",
       "$ref" : "AWS_Budgets_Budget.Spend.schema.json",
-      "javaType" : "aws.Property<aws.budgets.Spend>"
+      "javaType" : "aws.Property<aws.budgets.BudgetSpend>"
     },
     "TimePeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeperiod",
       "$ref" : "AWS_Budgets_Budget.TimePeriod.schema.json",
-      "javaType" : "aws.Property<aws.budgets.TimePeriod>"
+      "javaType" : "aws.Property<aws.budgets.BudgetTimePeriod>"
     },
     "TimeUnit" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-timeunit",
@@ -24,7 +24,8 @@
     },
     "CostFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costfilters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "BudgetName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgetname",
@@ -34,7 +35,7 @@
     "CostTypes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-costtypes",
       "$ref" : "AWS_Budgets_Budget.CostTypes.schema.json",
-      "javaType" : "aws.Property<aws.budgets.CostTypes>"
+      "javaType" : "aws.Property<aws.budgets.BudgetCostTypes>"
     },
     "BudgetType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html#cfn-budgets-budget-budgetdata-budgettype",

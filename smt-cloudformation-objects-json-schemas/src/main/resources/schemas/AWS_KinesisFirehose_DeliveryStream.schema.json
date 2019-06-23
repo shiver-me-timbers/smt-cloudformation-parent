@@ -19,32 +19,32 @@
     "ElasticsearchDestinationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchDestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.ElasticsearchDestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamElasticsearchDestinationConfiguration>"
     },
     "ExtendedS3DestinationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-extendeds3destinationconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ExtendedS3DestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.ExtendedS3DestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamExtendedS3DestinationConfiguration>"
     },
     "KinesisStreamSourceConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.KinesisStreamSourceConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.KinesisStreamSourceConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamKinesisStreamSourceConfiguration>"
     },
     "RedshiftDestinationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-redshiftdestinationconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.RedshiftDestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.RedshiftDestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamRedshiftDestinationConfiguration>"
     },
     "S3DestinationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.S3DestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration>"
     },
     "SplunkDestinationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-splunkdestinationconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.SplunkDestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.SplunkDestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamSplunkDestinationConfiguration>"
     }
   }
 }

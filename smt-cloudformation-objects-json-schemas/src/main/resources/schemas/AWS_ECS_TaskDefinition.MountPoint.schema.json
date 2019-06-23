@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.MountPoint.schema.json",
-  "title" : "MountPoint",
+  "title" : "TaskDefinitionMountPoint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html",
   "type" : "object",
-  "javaType" : "aws.ecs.MountPoint",
-  "javaInterfaces" : [ "aws.Property<MountPoint>" ],
+  "javaType" : "aws.ecs.TaskDefinitionMountPoint",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionMountPoint>" ],
   "properties" : {
     "ContainerPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html#cfn-ecs-taskdefinition-containerdefinition-mountpoints-containerpath",

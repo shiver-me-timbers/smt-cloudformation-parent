@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.S3ReferenceDataSource.schema.json",
-  "title" : "S3ReferenceDataSource",
+  "title" : "ApplicationReferenceDataSourceS3ReferenceDataSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.S3ReferenceDataSource",
-  "javaInterfaces" : [ "aws.Property<S3ReferenceDataSource>" ],
+  "javaType" : "aws.kinesisanalytics.ApplicationReferenceDataSourceS3ReferenceDataSource",
+  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceS3ReferenceDataSource>" ],
   "properties" : {
     "BucketARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-s3referencedatasource.html#cfn-kinesisanalytics-applicationreferencedatasource-s3referencedatasource-bucketarn",

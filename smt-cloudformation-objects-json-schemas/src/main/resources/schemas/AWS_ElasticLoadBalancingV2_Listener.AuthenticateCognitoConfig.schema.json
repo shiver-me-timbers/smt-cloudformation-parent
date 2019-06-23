@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticLoadBalancingV2_Listener.AuthenticateCognitoConfig.schema.json",
-  "title" : "AuthenticateCognitoConfig",
+  "title" : "ListenerAuthenticateCognitoConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.AuthenticateCognitoConfig",
-  "javaInterfaces" : [ "aws.Property<AuthenticateCognitoConfig>" ],
+  "javaType" : "aws.elasticloadbalancingv2.ListenerAuthenticateCognitoConfig",
+  "javaInterfaces" : [ "aws.Property<ListenerAuthenticateCognitoConfig>" ],
   "properties" : {
     "AuthenticationRequestExtraParams" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-authenticatecognitoconfig.html#cfn-elasticloadbalancingv2-listener-authenticatecognitoconfig-authenticationrequestextraparams",

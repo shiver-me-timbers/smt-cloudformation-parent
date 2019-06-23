@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SNS_Topic.Subscription.schema.json",
-        "javaType" : "aws.Property<aws.sns.Subscription>"
+        "javaType" : "aws.Property<aws.sns.TopicSubscription>"
       }
     },
     "TopicName" : {

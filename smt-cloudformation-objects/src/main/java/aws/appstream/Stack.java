@@ -38,14 +38,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Stack {
 
     /**
-     * ApplicationSettings
+     * StackApplicationSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
      * 
      */
     @JsonProperty("ApplicationSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html")
-    private Property<ApplicationSettings> applicationSettings;
+    private Property<StackApplicationSettings> applicationSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-description
      * 
@@ -59,7 +59,7 @@ public class Stack {
      */
     @JsonProperty("StorageConnectors")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-storageconnectors")
-    private List<Property<StorageConnector>> storageConnectors = new ArrayList<Property<StorageConnector>>();
+    private List<Property<StackStorageConnector>> storageConnectors = new ArrayList<Property<StackStorageConnector>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-deletestorageconnectors
      * 
@@ -73,7 +73,7 @@ public class Stack {
      */
     @JsonProperty("UserSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-usersettings")
-    private List<Property<UserSetting>> userSettings = new ArrayList<Property<UserSetting>>();
+    private List<Property<StackUserSetting>> userSettings = new ArrayList<Property<StackUserSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-attributestodelete
      * 
@@ -118,28 +118,28 @@ public class Stack {
     private CharSequence feedbackURL;
 
     /**
-     * ApplicationSettings
+     * StackApplicationSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
      * 
      */
     @JsonIgnore
-    public Property<ApplicationSettings> getApplicationSettings() {
+    public Property<StackApplicationSettings> getApplicationSettings() {
         return applicationSettings;
     }
 
     /**
-     * ApplicationSettings
+     * StackApplicationSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-stack-applicationsettings.html
      * 
      */
     @JsonIgnore
-    public void setApplicationSettings(Property<ApplicationSettings> applicationSettings) {
+    public void setApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
         this.applicationSettings = applicationSettings;
     }
 
-    public Stack withApplicationSettings(Property<ApplicationSettings> applicationSettings) {
+    public Stack withApplicationSettings(Property<StackApplicationSettings> applicationSettings) {
         this.applicationSettings = applicationSettings;
         return this;
     }
@@ -172,7 +172,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public List<Property<StorageConnector>> getStorageConnectors() {
+    public List<Property<StackStorageConnector>> getStorageConnectors() {
         return storageConnectors;
     }
 
@@ -181,11 +181,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setStorageConnectors(List<Property<StorageConnector>> storageConnectors) {
+    public void setStorageConnectors(List<Property<StackStorageConnector>> storageConnectors) {
         this.storageConnectors = storageConnectors;
     }
 
-    public Stack withStorageConnectors(List<Property<StorageConnector>> storageConnectors) {
+    public Stack withStorageConnectors(List<Property<StackStorageConnector>> storageConnectors) {
         this.storageConnectors = storageConnectors;
         return this;
     }
@@ -218,7 +218,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public List<Property<UserSetting>> getUserSettings() {
+    public List<Property<StackUserSetting>> getUserSettings() {
         return userSettings;
     }
 
@@ -227,11 +227,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setUserSettings(List<Property<UserSetting>> userSettings) {
+    public void setUserSettings(List<Property<StackUserSetting>> userSettings) {
         this.userSettings = userSettings;
     }
 
-    public Stack withUserSettings(List<Property<UserSetting>> userSettings) {
+    public Stack withUserSettings(List<Property<StackUserSetting>> userSettings) {
         this.userSettings = userSettings;
         return this;
     }

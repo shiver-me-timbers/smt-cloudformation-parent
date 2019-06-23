@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SSM_PatchBaseline.Rule.schema.json",
-  "title" : "Rule",
+  "title" : "PatchBaselineRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html",
   "type" : "object",
-  "javaType" : "aws.ssm.Rule",
-  "javaInterfaces" : [ "aws.Property<Rule>" ],
+  "javaType" : "aws.ssm.PatchBaselineRule",
+  "javaInterfaces" : [ "aws.Property<PatchBaselineRule>" ],
   "properties" : {
     "EnableNonSecurity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-enablenonsecurity",
@@ -14,7 +14,7 @@
     "PatchFilterGroup" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-patchfiltergroup",
       "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json",
-      "javaType" : "aws.Property<aws.ssm.PatchFilterGroup>"
+      "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchFilterGroup>"
     },
     "ApproveAfterDays" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rule.html#cfn-ssm-patchbaseline-rule-approveafterdays",

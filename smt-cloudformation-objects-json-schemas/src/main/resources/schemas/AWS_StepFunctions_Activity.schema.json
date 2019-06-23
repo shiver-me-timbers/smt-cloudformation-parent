@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_StepFunctions_Activity.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.stepfunctions.TagsEntry>"
+        "javaType" : "aws.Property<aws.stepfunctions.ActivityTagsEntry>"
       }
     },
     "Name" : {

@@ -59,7 +59,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ServiceCatalog_CloudFormationProduct.ProvisioningArtifactProperties.schema.json",
-        "javaType" : "aws.Property<aws.servicecatalog.ProvisioningArtifactProperties>"
+        "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProductProvisioningArtifactProperties>"
       }
     }
   }

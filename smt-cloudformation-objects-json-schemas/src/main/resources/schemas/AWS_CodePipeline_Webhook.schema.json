@@ -9,14 +9,14 @@
     "AuthenticationConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authenticationconfiguration",
       "$ref" : "AWS_CodePipeline_Webhook.WebhookAuthConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.WebhookAuthConfiguration>"
+      "javaType" : "aws.Property<aws.codepipeline.WebhookWebhookAuthConfiguration>"
     },
     "Filters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodePipeline_Webhook.WebhookFilterRule.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.WebhookFilterRule>"
+        "javaType" : "aws.Property<aws.codepipeline.WebhookWebhookFilterRule>"
       }
     },
     "Authentication" : {

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kinesisanalyticsv2.ApplicationOutputResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationOutputResource>", "aws.HasCondition<ApplicationOutputResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

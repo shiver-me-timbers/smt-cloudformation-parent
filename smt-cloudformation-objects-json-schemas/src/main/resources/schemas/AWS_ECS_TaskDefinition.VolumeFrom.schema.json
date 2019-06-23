@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.VolumeFrom.schema.json",
-  "title" : "VolumeFrom",
+  "title" : "TaskDefinitionVolumeFrom",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html",
   "type" : "object",
-  "javaType" : "aws.ecs.VolumeFrom",
-  "javaInterfaces" : [ "aws.Property<VolumeFrom>" ],
+  "javaType" : "aws.ecs.TaskDefinitionVolumeFrom",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionVolumeFrom>" ],
   "properties" : {
     "ReadOnly" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html#cfn-ecs-taskdefinition-containerdefinition-volumesfrom-readonly",

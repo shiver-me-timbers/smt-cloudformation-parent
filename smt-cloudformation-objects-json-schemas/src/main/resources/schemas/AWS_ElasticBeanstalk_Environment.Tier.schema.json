@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticBeanstalk_Environment.Tier.schema.json",
-  "title" : "Tier",
+  "title" : "EnvironmentTier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.Tier",
-  "javaInterfaces" : [ "aws.Property<Tier>" ],
+  "javaType" : "aws.elasticbeanstalk.EnvironmentTier",
+  "javaInterfaces" : [ "aws.Property<EnvironmentTier>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html#cfn-beanstalk-env-tier-name",

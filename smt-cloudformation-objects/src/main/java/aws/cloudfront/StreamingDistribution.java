@@ -29,14 +29,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class StreamingDistribution {
 
     /**
-     * StreamingDistributionConfig
+     * StreamingDistributionStreamingDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html
      * 
      */
     @JsonProperty("StreamingDistributionConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html")
-    private Property<StreamingDistributionConfig> streamingDistributionConfig;
+    private Property<StreamingDistributionStreamingDistributionConfig> streamingDistributionConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-streamingdistribution.html#cfn-cloudfront-streamingdistribution-tags
      * 
@@ -46,28 +46,28 @@ public class StreamingDistribution {
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
-     * StreamingDistributionConfig
+     * StreamingDistributionStreamingDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html
      * 
      */
     @JsonIgnore
-    public Property<StreamingDistributionConfig> getStreamingDistributionConfig() {
+    public Property<StreamingDistributionStreamingDistributionConfig> getStreamingDistributionConfig() {
         return streamingDistributionConfig;
     }
 
     /**
-     * StreamingDistributionConfig
+     * StreamingDistributionStreamingDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-streamingdistributionconfig.html
      * 
      */
     @JsonIgnore
-    public void setStreamingDistributionConfig(Property<StreamingDistributionConfig> streamingDistributionConfig) {
+    public void setStreamingDistributionConfig(Property<StreamingDistributionStreamingDistributionConfig> streamingDistributionConfig) {
         this.streamingDistributionConfig = streamingDistributionConfig;
     }
 
-    public StreamingDistribution withStreamingDistributionConfig(Property<StreamingDistributionConfig> streamingDistributionConfig) {
+    public StreamingDistribution withStreamingDistributionConfig(Property<StreamingDistributionStreamingDistributionConfig> streamingDistributionConfig) {
         this.streamingDistributionConfig = streamingDistributionConfig;
         return this;
     }

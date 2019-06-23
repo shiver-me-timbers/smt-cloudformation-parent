@@ -63,7 +63,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElastiCache_ReplicationGroup.NodeGroupConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.elasticache.NodeGroupConfiguration>"
+        "javaType" : "aws.Property<aws.elasticache.ReplicationGroupNodeGroupConfiguration>"
       }
     },
     "NotificationTopicArn" : {

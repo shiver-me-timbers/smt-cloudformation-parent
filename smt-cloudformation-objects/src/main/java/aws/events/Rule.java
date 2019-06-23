@@ -82,7 +82,7 @@ public class Rule {
     @JsonProperty("Targets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-targets")
-    private Set<Property<Target>> targets = new LinkedHashSet<Property<Target>>();
+    private Set<Property<RuleTarget>> targets = new LinkedHashSet<Property<RuleTarget>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-rule.html#cfn-events-rule-description
@@ -227,7 +227,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<Property<Target>> getTargets() {
+    public Set<Property<RuleTarget>> getTargets() {
         return targets;
     }
 
@@ -236,11 +236,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setTargets(Set<Property<Target>> targets) {
+    public void setTargets(Set<Property<RuleTarget>> targets) {
         this.targets = targets;
     }
 
-    public Rule withTargets(Set<Property<Target>> targets) {
+    public Rule withTargets(Set<Property<RuleTarget>> targets) {
         this.targets = targets;
         return this;
     }

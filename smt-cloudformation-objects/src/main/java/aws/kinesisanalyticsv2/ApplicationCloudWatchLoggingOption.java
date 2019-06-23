@@ -33,14 +33,14 @@ public class ApplicationCloudWatchLoggingOption {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-applicationname")
     private CharSequence applicationName;
     /**
-     * CloudWatchLoggingOption
+     * ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html
      * 
      */
     @JsonProperty("CloudWatchLoggingOption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html")
-    private Property<CloudWatchLoggingOption> cloudWatchLoggingOption;
+    private Property<ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption> cloudWatchLoggingOption;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-applicationname
@@ -66,28 +66,28 @@ public class ApplicationCloudWatchLoggingOption {
     }
 
     /**
-     * CloudWatchLoggingOption
+     * ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html
      * 
      */
     @JsonIgnore
-    public Property<CloudWatchLoggingOption> getCloudWatchLoggingOption() {
+    public Property<ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption> getCloudWatchLoggingOption() {
         return cloudWatchLoggingOption;
     }
 
     /**
-     * CloudWatchLoggingOption
+     * ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html
      * 
      */
     @JsonIgnore
-    public void setCloudWatchLoggingOption(Property<CloudWatchLoggingOption> cloudWatchLoggingOption) {
+    public void setCloudWatchLoggingOption(Property<ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption> cloudWatchLoggingOption) {
         this.cloudWatchLoggingOption = cloudWatchLoggingOption;
     }
 
-    public ApplicationCloudWatchLoggingOption withCloudWatchLoggingOption(Property<CloudWatchLoggingOption> cloudWatchLoggingOption) {
+    public ApplicationCloudWatchLoggingOption withCloudWatchLoggingOption(Property<ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption> cloudWatchLoggingOption) {
         this.cloudWatchLoggingOption = cloudWatchLoggingOption;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.TableResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TableResource>", "aws.HasCondition<TableResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

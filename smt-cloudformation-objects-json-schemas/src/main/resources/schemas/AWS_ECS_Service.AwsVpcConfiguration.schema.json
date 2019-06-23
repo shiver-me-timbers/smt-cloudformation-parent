@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_Service.AwsVpcConfiguration.schema.json",
-  "title" : "AwsVpcConfiguration",
+  "title" : "ServiceAwsVpcConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.AwsVpcConfiguration",
-  "javaInterfaces" : [ "aws.Property<AwsVpcConfiguration>" ],
+  "javaType" : "aws.ecs.ServiceAwsVpcConfiguration",
+  "javaInterfaces" : [ "aws.Property<ServiceAwsVpcConfiguration>" ],
   "properties" : {
     "AssignPublicIp" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip",

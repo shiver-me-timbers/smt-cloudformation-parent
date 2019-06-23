@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_Route.RouteSpec.schema.json",
-  "title" : "RouteSpec",
+  "title" : "RouteRouteSpec",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.RouteSpec",
-  "javaInterfaces" : [ "aws.Property<RouteSpec>" ],
+  "javaType" : "aws.appmesh.RouteRouteSpec",
+  "javaInterfaces" : [ "aws.Property<RouteRouteSpec>" ],
   "properties" : {
     "HttpRoute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-httproute",
       "$ref" : "AWS_AppMesh_Route.HttpRoute.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.HttpRoute>"
+      "javaType" : "aws.Property<aws.appmesh.RouteHttpRoute>"
     },
     "TcpRoute" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html#cfn-appmesh-route-routespec-tcproute",
       "$ref" : "AWS_AppMesh_Route.TcpRoute.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.TcpRoute>"
+      "javaType" : "aws.Property<aws.appmesh.RouteTcpRoute>"
     }
   }
 }

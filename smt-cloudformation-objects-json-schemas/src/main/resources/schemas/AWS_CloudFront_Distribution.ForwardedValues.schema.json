@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_Distribution.ForwardedValues.schema.json",
-  "title" : "ForwardedValues",
+  "title" : "DistributionForwardedValues",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.ForwardedValues",
-  "javaInterfaces" : [ "aws.Property<ForwardedValues>" ],
+  "javaType" : "aws.cloudfront.DistributionForwardedValues",
+  "javaInterfaces" : [ "aws.Property<DistributionForwardedValues>" ],
   "properties" : {
     "Cookies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-cookies",
       "$ref" : "AWS_CloudFront_Distribution.Cookies.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.Cookies>"
+      "javaType" : "aws.Property<aws.cloudfront.DistributionCookies>"
     },
     "Headers" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-forwardedvalues.html#cfn-cloudfront-distribution-forwardedvalues-headers",

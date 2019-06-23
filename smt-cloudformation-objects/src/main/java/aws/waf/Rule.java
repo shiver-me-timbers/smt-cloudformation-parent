@@ -4,7 +4,6 @@ package aws.waf;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.Property;
-import aws.wafregional.Predicate;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -51,7 +50,7 @@ public class Rule {
     @JsonProperty("Predicates")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-predicates")
-    private Set<Property<Predicate>> predicates = new LinkedHashSet<Property<Predicate>>();
+    private Set<Property<RulePredicate>> predicates = new LinkedHashSet<Property<RulePredicate>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-rule.html#cfn-waf-rule-metricname
@@ -104,7 +103,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public Set<Property<Predicate>> getPredicates() {
+    public Set<Property<RulePredicate>> getPredicates() {
         return predicates;
     }
 
@@ -113,11 +112,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setPredicates(Set<Property<Predicate>> predicates) {
+    public void setPredicates(Set<Property<RulePredicate>> predicates) {
         this.predicates = predicates;
     }
 
-    public Rule withPredicates(Set<Property<Predicate>> predicates) {
+    public Rule withPredicates(Set<Property<RulePredicate>> predicates) {
         this.predicates = predicates;
         return this;
     }

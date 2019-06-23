@@ -8,7 +8,8 @@
   "properties" : {
     "AccessPolicies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "AdvancedOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-advancedoptions",
@@ -23,12 +24,12 @@
     "EBSOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-ebsoptions",
       "$ref" : "AWS_Elasticsearch_Domain.EBSOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.EBSOptions>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainEBSOptions>"
     },
     "ElasticsearchClusterConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchclusterconfig",
       "$ref" : "AWS_Elasticsearch_Domain.ElasticsearchClusterConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.ElasticsearchClusterConfig>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainElasticsearchClusterConfig>"
     },
     "ElasticsearchVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion",
@@ -38,17 +39,17 @@
     "EncryptionAtRestOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-encryptionatrestoptions",
       "$ref" : "AWS_Elasticsearch_Domain.EncryptionAtRestOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.EncryptionAtRestOptions>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainEncryptionAtRestOptions>"
     },
     "NodeToNodeEncryptionOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-nodetonodeencryptionoptions",
       "$ref" : "AWS_Elasticsearch_Domain.NodeToNodeEncryptionOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.NodeToNodeEncryptionOptions>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainNodeToNodeEncryptionOptions>"
     },
     "SnapshotOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-snapshotoptions",
       "$ref" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.SnapshotOptions>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainSnapshotOptions>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags",
@@ -61,7 +62,7 @@
     "VPCOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-vpcoptions",
       "$ref" : "AWS_Elasticsearch_Domain.VPCOptions.schema.json",
-      "javaType" : "aws.Property<aws.elasticsearch.VPCOptions>"
+      "javaType" : "aws.Property<aws.elasticsearch.DomainVPCOptions>"
     }
   }
 }

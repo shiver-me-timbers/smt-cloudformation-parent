@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudformation.CustomResourceResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CustomResourceResource>", "aws.HasCondition<CustomResourceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

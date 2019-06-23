@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_GameLift_Build.S3Location.schema.json",
-  "title" : "S3Location",
+  "title" : "BuildS3Location",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.S3Location",
-  "javaInterfaces" : [ "aws.Property<S3Location>" ],
+  "javaType" : "aws.gamelift.BuildS3Location",
+  "javaInterfaces" : [ "aws.Property<BuildS3Location>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html#cfn-gamelift-build-storage-bucket",

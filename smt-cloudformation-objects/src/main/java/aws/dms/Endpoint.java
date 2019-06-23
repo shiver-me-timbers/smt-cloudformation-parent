@@ -66,23 +66,23 @@ public class Endpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-databasename")
     private CharSequence databaseName;
     /**
-     * ElasticsearchSettings
+     * EndpointElasticsearchSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
      * 
      */
     @JsonProperty("ElasticsearchSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html")
-    private Property<ElasticsearchSettings> elasticsearchSettings;
+    private Property<EndpointElasticsearchSettings> elasticsearchSettings;
     /**
-     * S3Settings
+     * EndpointS3Settings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
      * 
      */
     @JsonProperty("S3Settings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html")
-    private Property<S3Settings> s3Settings;
+    private Property<EndpointS3Settings> s3Settings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename
      * 
@@ -91,23 +91,23 @@ public class Endpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-enginename")
     private CharSequence engineName;
     /**
-     * DynamoDbSettings
+     * EndpointDynamoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html
      * 
      */
     @JsonProperty("DynamoDbSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html")
-    private Property<DynamoDbSettings> dynamoDbSettings;
+    private Property<EndpointDynamoDbSettings> dynamoDbSettings;
     /**
-     * KinesisSettings
+     * EndpointKinesisSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
      * 
      */
     @JsonProperty("KinesisSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html")
-    private Property<KinesisSettings> kinesisSettings;
+    private Property<EndpointKinesisSettings> kinesisSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-username
      * 
@@ -172,14 +172,14 @@ public class Endpoint {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-certificatearn")
     private CharSequence certificateArn;
     /**
-     * MongoDbSettings
+     * EndpointMongoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html
      * 
      */
     @JsonProperty("MongoDbSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html")
-    private Property<MongoDbSettings> mongoDbSettings;
+    private Property<EndpointMongoDbSettings> mongoDbSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dms-endpoint.html#cfn-dms-endpoint-kmskeyid
@@ -251,55 +251,55 @@ public class Endpoint {
     }
 
     /**
-     * ElasticsearchSettings
+     * EndpointElasticsearchSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
      * 
      */
     @JsonIgnore
-    public Property<ElasticsearchSettings> getElasticsearchSettings() {
+    public Property<EndpointElasticsearchSettings> getElasticsearchSettings() {
         return elasticsearchSettings;
     }
 
     /**
-     * ElasticsearchSettings
+     * EndpointElasticsearchSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-elasticsearchsettings.html
      * 
      */
     @JsonIgnore
-    public void setElasticsearchSettings(Property<ElasticsearchSettings> elasticsearchSettings) {
+    public void setElasticsearchSettings(Property<EndpointElasticsearchSettings> elasticsearchSettings) {
         this.elasticsearchSettings = elasticsearchSettings;
     }
 
-    public Endpoint withElasticsearchSettings(Property<ElasticsearchSettings> elasticsearchSettings) {
+    public Endpoint withElasticsearchSettings(Property<EndpointElasticsearchSettings> elasticsearchSettings) {
         this.elasticsearchSettings = elasticsearchSettings;
         return this;
     }
 
     /**
-     * S3Settings
+     * EndpointS3Settings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
      * 
      */
     @JsonIgnore
-    public Property<S3Settings> getS3Settings() {
+    public Property<EndpointS3Settings> getS3Settings() {
         return s3Settings;
     }
 
     /**
-     * S3Settings
+     * EndpointS3Settings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-s3settings.html
      * 
      */
     @JsonIgnore
-    public void setS3Settings(Property<S3Settings> s3Settings) {
+    public void setS3Settings(Property<EndpointS3Settings> s3Settings) {
         this.s3Settings = s3Settings;
     }
 
-    public Endpoint withS3Settings(Property<S3Settings> s3Settings) {
+    public Endpoint withS3Settings(Property<EndpointS3Settings> s3Settings) {
         this.s3Settings = s3Settings;
         return this;
     }
@@ -328,55 +328,55 @@ public class Endpoint {
     }
 
     /**
-     * DynamoDbSettings
+     * EndpointDynamoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html
      * 
      */
     @JsonIgnore
-    public Property<DynamoDbSettings> getDynamoDbSettings() {
+    public Property<EndpointDynamoDbSettings> getDynamoDbSettings() {
         return dynamoDbSettings;
     }
 
     /**
-     * DynamoDbSettings
+     * EndpointDynamoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html
      * 
      */
     @JsonIgnore
-    public void setDynamoDbSettings(Property<DynamoDbSettings> dynamoDbSettings) {
+    public void setDynamoDbSettings(Property<EndpointDynamoDbSettings> dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
     }
 
-    public Endpoint withDynamoDbSettings(Property<DynamoDbSettings> dynamoDbSettings) {
+    public Endpoint withDynamoDbSettings(Property<EndpointDynamoDbSettings> dynamoDbSettings) {
         this.dynamoDbSettings = dynamoDbSettings;
         return this;
     }
 
     /**
-     * KinesisSettings
+     * EndpointKinesisSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
      * 
      */
     @JsonIgnore
-    public Property<KinesisSettings> getKinesisSettings() {
+    public Property<EndpointKinesisSettings> getKinesisSettings() {
         return kinesisSettings;
     }
 
     /**
-     * KinesisSettings
+     * EndpointKinesisSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-kinesissettings.html
      * 
      */
     @JsonIgnore
-    public void setKinesisSettings(Property<KinesisSettings> kinesisSettings) {
+    public void setKinesisSettings(Property<EndpointKinesisSettings> kinesisSettings) {
         this.kinesisSettings = kinesisSettings;
     }
 
-    public Endpoint withKinesisSettings(Property<KinesisSettings> kinesisSettings) {
+    public Endpoint withKinesisSettings(Property<EndpointKinesisSettings> kinesisSettings) {
         this.kinesisSettings = kinesisSettings;
         return this;
     }
@@ -589,28 +589,28 @@ public class Endpoint {
     }
 
     /**
-     * MongoDbSettings
+     * EndpointMongoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html
      * 
      */
     @JsonIgnore
-    public Property<MongoDbSettings> getMongoDbSettings() {
+    public Property<EndpointMongoDbSettings> getMongoDbSettings() {
         return mongoDbSettings;
     }
 
     /**
-     * MongoDbSettings
+     * EndpointMongoDbSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-mongodbsettings.html
      * 
      */
     @JsonIgnore
-    public void setMongoDbSettings(Property<MongoDbSettings> mongoDbSettings) {
+    public void setMongoDbSettings(Property<EndpointMongoDbSettings> mongoDbSettings) {
         this.mongoDbSettings = mongoDbSettings;
     }
 
-    public Endpoint withMongoDbSettings(Property<MongoDbSettings> mongoDbSettings) {
+    public Endpoint withMongoDbSettings(Property<EndpointMongoDbSettings> mongoDbSettings) {
         this.mongoDbSettings = mongoDbSettings;
         return this;
     }

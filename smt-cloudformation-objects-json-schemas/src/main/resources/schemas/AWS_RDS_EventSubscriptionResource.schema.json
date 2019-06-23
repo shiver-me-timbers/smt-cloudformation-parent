@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.EventSubscriptionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<EventSubscriptionResource>", "aws.HasCondition<EventSubscriptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

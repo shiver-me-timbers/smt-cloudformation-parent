@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Connection {
 
     /**
-     * ConnectionInput
+     * ConnectionConnectionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
     @JsonProperty("ConnectionInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html")
-    private Property<ConnectionInput> connectionInput;
+    private Property<ConnectionConnectionInput> connectionInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
      * 
@@ -43,28 +43,28 @@ public class Connection {
     private CharSequence catalogId;
 
     /**
-     * ConnectionInput
+     * ConnectionConnectionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
     @JsonIgnore
-    public Property<ConnectionInput> getConnectionInput() {
+    public Property<ConnectionConnectionInput> getConnectionInput() {
         return connectionInput;
     }
 
     /**
-     * ConnectionInput
+     * ConnectionConnectionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html
      * 
      */
     @JsonIgnore
-    public void setConnectionInput(Property<ConnectionInput> connectionInput) {
+    public void setConnectionInput(Property<ConnectionConnectionInput> connectionInput) {
         this.connectionInput = connectionInput;
     }
 
-    public Connection withConnectionInput(Property<ConnectionInput> connectionInput) {
+    public Connection withConnectionInput(Property<ConnectionConnectionInput> connectionInput) {
         this.connectionInput = connectionInput;
         return this;
     }

@@ -33,7 +33,7 @@ public class Activity {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-tags")
-    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
+    private List<Property<ActivityTagsEntry>> tags = new ArrayList<Property<ActivityTagsEntry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html#cfn-stepfunctions-activity-name
      * 
@@ -47,7 +47,7 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public List<Property<TagsEntry>> getTags() {
+    public List<Property<ActivityTagsEntry>> getTags() {
         return tags;
     }
 
@@ -56,11 +56,11 @@ public class Activity {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagsEntry>> tags) {
+    public void setTags(List<Property<ActivityTagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public Activity withTags(List<Property<TagsEntry>> tags) {
+    public Activity withTags(List<Property<ActivityTagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

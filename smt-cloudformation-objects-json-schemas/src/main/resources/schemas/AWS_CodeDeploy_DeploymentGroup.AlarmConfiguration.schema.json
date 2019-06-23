@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeDeploy_DeploymentGroup.AlarmConfiguration.schema.json",
-  "title" : "AlarmConfiguration",
+  "title" : "DeploymentGroupAlarmConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.AlarmConfiguration",
-  "javaInterfaces" : [ "aws.Property<AlarmConfiguration>" ],
+  "javaType" : "aws.codedeploy.DeploymentGroupAlarmConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeploymentGroupAlarmConfiguration>" ],
   "properties" : {
     "Alarms" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-alarms",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.Alarm.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.Alarm>"
+        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupAlarm>"
       }
     },
     "Enabled" : {

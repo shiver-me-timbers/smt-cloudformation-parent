@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Route53Resolver_ResolverRule.TargetAddress.schema.json",
-        "javaType" : "aws.Property<aws.route53resolver.TargetAddress>"
+        "javaType" : "aws.Property<aws.route53resolver.ResolverRuleTargetAddress>"
       }
     },
     "Tags" : {

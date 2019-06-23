@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kinesisanalytics.ApplicationReferenceDataSourceResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationReferenceDataSourceResource>", "aws.HasCondition<ApplicationReferenceDataSourceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

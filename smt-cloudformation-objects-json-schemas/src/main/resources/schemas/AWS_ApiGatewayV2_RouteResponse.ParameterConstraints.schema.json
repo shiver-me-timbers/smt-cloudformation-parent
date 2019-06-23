@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGatewayV2_RouteResponse.ParameterConstraints.schema.json",
-  "title" : "ParameterConstraints",
+  "title" : "RouteResponseParameterConstraints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-routeresponse-parameterconstraints.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.ParameterConstraints",
-  "javaInterfaces" : [ "aws.Property<ParameterConstraints>" ],
+  "javaType" : "aws.apigatewayv2.RouteResponseParameterConstraints",
+  "javaInterfaces" : [ "aws.Property<RouteResponseParameterConstraints>" ],
   "properties" : {
     "Required" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-routeresponse-parameterconstraints.html#cfn-apigatewayv2-routeresponse-parameterconstraints-required",

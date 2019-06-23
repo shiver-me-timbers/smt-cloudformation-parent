@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScalingPlans_ScalingPlan.TargetTrackingConfiguration.schema.json",
-  "title" : "TargetTrackingConfiguration",
+  "title" : "ScalingPlanTargetTrackingConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.autoscalingplans.TargetTrackingConfiguration",
-  "javaInterfaces" : [ "aws.Property<TargetTrackingConfiguration>" ],
+  "javaType" : "aws.autoscalingplans.ScalingPlanTargetTrackingConfiguration",
+  "javaInterfaces" : [ "aws.Property<ScalingPlanTargetTrackingConfiguration>" ],
   "properties" : {
     "ScaleOutCooldown" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-scaleoutcooldown",
@@ -18,7 +18,7 @@
     "PredefinedScalingMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-predefinedscalingmetricspecification",
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.PredefinedScalingMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.autoscalingplans.PredefinedScalingMetricSpecification>"
+      "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanPredefinedScalingMetricSpecification>"
     },
     "DisableScaleIn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-disablescalein",
@@ -35,7 +35,7 @@
     "CustomizedScalingMetricSpecification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html#cfn-autoscalingplans-scalingplan-targettrackingconfiguration-customizedscalingmetricspecification",
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.CustomizedScalingMetricSpecification.schema.json",
-      "javaType" : "aws.Property<aws.autoscalingplans.CustomizedScalingMetricSpecification>"
+      "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanCustomizedScalingMetricSpecification>"
     }
   }
 }

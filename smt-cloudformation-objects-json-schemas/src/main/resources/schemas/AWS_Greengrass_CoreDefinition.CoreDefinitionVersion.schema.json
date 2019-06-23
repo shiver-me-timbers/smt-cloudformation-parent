@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_CoreDefinition.CoreDefinitionVersion.schema.json",
-  "title" : "CoreDefinitionVersion",
+  "title" : "CoreDefinitionCoreDefinitionVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.CoreDefinitionVersion",
-  "javaInterfaces" : [ "aws.Property<CoreDefinitionVersion>" ],
+  "javaType" : "aws.greengrass.CoreDefinitionCoreDefinitionVersion",
+  "javaInterfaces" : [ "aws.Property<CoreDefinitionCoreDefinitionVersion>" ],
   "properties" : {
     "Cores" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_CoreDefinition.Core.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.Core>"
+        "javaType" : "aws.Property<aws.greengrass.CoreDefinitionCore>"
       }
     }
   }

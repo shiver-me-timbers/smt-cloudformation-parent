@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_SpotFleet.FleetLaunchTemplateSpecification.schema.json",
-  "title" : "FleetLaunchTemplateSpecification",
+  "title" : "SpotFleetFleetLaunchTemplateSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.FleetLaunchTemplateSpecification",
-  "javaInterfaces" : [ "aws.Property<FleetLaunchTemplateSpecification>" ],
+  "javaType" : "aws.ec2.SpotFleetFleetLaunchTemplateSpecification",
+  "javaInterfaces" : [ "aws.Property<SpotFleetFleetLaunchTemplateSpecification>" ],
   "properties" : {
     "LaunchTemplateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-fleetlaunchtemplatespecification.html#cfn-ec2-spotfleet-fleetlaunchtemplatespecification-launchtemplateid",

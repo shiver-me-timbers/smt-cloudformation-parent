@@ -17,55 +17,85 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * CoreDefinitionVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Cores"
+    "Cores",
+    "CoreDefinitionId"
 })
-public class CoreDefinitionVersion implements Property<CoreDefinitionVersion>
-{
+public class CoreDefinitionVersion {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-cores
      * 
      */
     @JsonProperty("Cores")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores")
-    private List<Property<Core>> cores = new ArrayList<Property<Core>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-cores")
+    private List<Property<CoreDefinitionVersionCore>> cores = new ArrayList<Property<CoreDefinitionVersionCore>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-coredefinitionid
+     * 
+     */
+    @JsonProperty("CoreDefinitionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-coredefinitionid")
+    private CharSequence coreDefinitionId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-cores
      * 
      */
     @JsonIgnore
-    public List<Property<Core>> getCores() {
+    public List<Property<CoreDefinitionVersionCore>> getCores() {
         return cores;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html#cfn-greengrass-coredefinition-coredefinitionversion-cores
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-cores
      * 
      */
     @JsonIgnore
-    public void setCores(List<Property<Core>> cores) {
+    public void setCores(List<Property<CoreDefinitionVersionCore>> cores) {
         this.cores = cores;
     }
 
-    public CoreDefinitionVersion withCores(List<Property<Core>> cores) {
+    public CoreDefinitionVersion withCores(List<Property<CoreDefinitionVersionCore>> cores) {
         this.cores = cores;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-coredefinitionid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getCoreDefinitionId() {
+        return coreDefinitionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinitionversion.html#cfn-greengrass-coredefinitionversion-coredefinitionid
+     * 
+     */
+    @JsonIgnore
+    public void setCoreDefinitionId(CharSequence coreDefinitionId) {
+        this.coreDefinitionId = coreDefinitionId;
+    }
+
+    public CoreDefinitionVersion withCoreDefinitionId(CharSequence coreDefinitionId) {
+        this.coreDefinitionId = coreDefinitionId;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("cores", cores).toString();
+        return new ToStringBuilder(this).append("cores", cores).append("coreDefinitionId", coreDefinitionId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(cores).toHashCode();
+        return new HashCodeBuilder().append(coreDefinitionId).append(cores).toHashCode();
     }
 
     @Override
@@ -77,7 +107,7 @@ public class CoreDefinitionVersion implements Property<CoreDefinitionVersion>
             return false;
         }
         CoreDefinitionVersion rhs = ((CoreDefinitionVersion) other);
-        return new EqualsBuilder().append(cores, rhs.cores).isEquals();
+        return new EqualsBuilder().append(coreDefinitionId, rhs.coreDefinitionId).append(cores, rhs.cores).isEquals();
     }
 
 }

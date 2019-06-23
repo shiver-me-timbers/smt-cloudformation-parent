@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SES_ReceiptRule.BounceAction.schema.json",
-  "title" : "BounceAction",
+  "title" : "ReceiptRuleBounceAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html",
   "type" : "object",
-  "javaType" : "aws.ses.BounceAction",
-  "javaInterfaces" : [ "aws.Property<BounceAction>" ],
+  "javaType" : "aws.ses.ReceiptRuleBounceAction",
+  "javaInterfaces" : [ "aws.Property<ReceiptRuleBounceAction>" ],
   "properties" : {
     "Sender" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-bounceaction.html#cfn-ses-receiptrule-bounceaction-sender",

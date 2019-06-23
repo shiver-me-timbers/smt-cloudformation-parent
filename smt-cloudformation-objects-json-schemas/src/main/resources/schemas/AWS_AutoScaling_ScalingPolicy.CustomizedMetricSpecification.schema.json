@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_ScalingPolicy.CustomizedMetricSpecification.schema.json",
-  "title" : "CustomizedMetricSpecification",
+  "title" : "ScalingPolicyCustomizedMetricSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.CustomizedMetricSpecification",
-  "javaInterfaces" : [ "aws.Property<CustomizedMetricSpecification>" ],
+  "javaType" : "aws.autoscaling.ScalingPolicyCustomizedMetricSpecification",
+  "javaInterfaces" : [ "aws.Property<ScalingPolicyCustomizedMetricSpecification>" ],
   "properties" : {
     "Dimensions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-customizedmetricspecification.html#cfn-autoscaling-scalingpolicy-customizedmetricspecification-dimensions",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_AutoScaling_ScalingPolicy.MetricDimension.schema.json",
-        "javaType" : "aws.Property<aws.autoscaling.MetricDimension>"
+        "javaType" : "aws.Property<aws.autoscaling.ScalingPolicyMetricDimension>"
       }
     },
     "MetricName" : {

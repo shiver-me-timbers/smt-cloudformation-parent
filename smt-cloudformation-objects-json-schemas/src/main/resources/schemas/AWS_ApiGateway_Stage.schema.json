@@ -9,7 +9,7 @@
     "AccessLogSetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-accesslogsetting",
       "$ref" : "AWS_ApiGateway_Stage.AccessLogSetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.AccessLogSetting>"
+      "javaType" : "aws.Property<aws.apigateway.StageAccessLogSetting>"
     },
     "CacheClusterEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled",
@@ -23,7 +23,7 @@
     "CanarySetting" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-canarysetting",
       "$ref" : "AWS_ApiGateway_Stage.CanarySetting.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.CanarySetting>"
+      "javaType" : "aws.Property<aws.apigateway.StageCanarySetting>"
     },
     "ClientCertificateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid",
@@ -50,8 +50,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ApiGateway_Deployment.MethodSetting.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.MethodSetting>"
+        "$ref" : "AWS_ApiGateway_Stage.MethodSetting.schema.json",
+        "javaType" : "aws.Property<aws.apigateway.StageMethodSetting>"
       }
     },
     "RestApiId" : {

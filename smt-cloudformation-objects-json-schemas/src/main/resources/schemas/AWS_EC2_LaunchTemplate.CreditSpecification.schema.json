@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_LaunchTemplate.CreditSpecification.schema.json",
-  "title" : "CreditSpecification",
+  "title" : "LaunchTemplateCreditSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.CreditSpecification",
-  "javaInterfaces" : [ "aws.Property<CreditSpecification>" ],
+  "javaType" : "aws.ec2.LaunchTemplateCreditSpecification",
+  "javaInterfaces" : [ "aws.Property<LaunchTemplateCreditSpecification>" ],
   "properties" : {
     "CpuCredits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-creditspecification.html#cfn-ec2-launchtemplate-launchtemplatedata-creditspecification-cpucredits",

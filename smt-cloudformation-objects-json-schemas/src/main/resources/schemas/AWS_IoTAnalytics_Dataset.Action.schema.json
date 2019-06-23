@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Dataset.Action.schema.json",
-  "title" : "Action",
+  "title" : "DatasetAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.Action",
-  "javaInterfaces" : [ "aws.Property<Action>" ],
+  "javaType" : "aws.iotanalytics.DatasetAction",
+  "javaInterfaces" : [ "aws.Property<DatasetAction>" ],
   "properties" : {
     "ActionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html#cfn-iotanalytics-dataset-action-actionname",
@@ -15,12 +15,12 @@
     "ContainerAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html#cfn-iotanalytics-dataset-action-containeraction",
       "$ref" : "AWS_IoTAnalytics_Dataset.ContainerAction.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.ContainerAction>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetContainerAction>"
     },
     "QueryAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-action.html#cfn-iotanalytics-dataset-action-queryaction",
       "$ref" : "AWS_IoTAnalytics_Dataset.QueryAction.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.QueryAction>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetQueryAction>"
     }
   }
 }

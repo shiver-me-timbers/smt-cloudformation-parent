@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_WAFRegional_XssMatchSet.XssMatchTuple.schema.json",
-        "javaType" : "aws.Property<aws.wafregional.XssMatchTuple>"
+        "javaType" : "aws.Property<aws.wafregional.XssMatchSetXssMatchTuple>"
       }
     },
     "Name" : {

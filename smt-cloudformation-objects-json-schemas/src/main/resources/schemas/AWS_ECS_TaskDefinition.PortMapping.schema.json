@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.PortMapping.schema.json",
-  "title" : "PortMapping",
+  "title" : "TaskDefinitionPortMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html",
   "type" : "object",
-  "javaType" : "aws.ecs.PortMapping",
-  "javaInterfaces" : [ "aws.Property<PortMapping>" ],
+  "javaType" : "aws.ecs.TaskDefinitionPortMapping",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionPortMapping>" ],
   "properties" : {
     "ContainerPort" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport",

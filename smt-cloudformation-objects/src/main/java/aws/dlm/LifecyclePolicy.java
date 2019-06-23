@@ -49,14 +49,14 @@ public class LifecyclePolicy {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-state")
     private CharSequence state;
     /**
-     * PolicyDetails
+     * LifecyclePolicyPolicyDetails
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html
      * 
      */
     @JsonProperty("PolicyDetails")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html")
-    private Property<PolicyDetails> policyDetails;
+    private Property<LifecyclePolicyPolicyDetails> policyDetails;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-executionrolearn
@@ -128,28 +128,28 @@ public class LifecyclePolicy {
     }
 
     /**
-     * PolicyDetails
+     * LifecyclePolicyPolicyDetails
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html
      * 
      */
     @JsonIgnore
-    public Property<PolicyDetails> getPolicyDetails() {
+    public Property<LifecyclePolicyPolicyDetails> getPolicyDetails() {
         return policyDetails;
     }
 
     /**
-     * PolicyDetails
+     * LifecyclePolicyPolicyDetails
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-policydetails.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDetails(Property<PolicyDetails> policyDetails) {
+    public void setPolicyDetails(Property<LifecyclePolicyPolicyDetails> policyDetails) {
         this.policyDetails = policyDetails;
     }
 
-    public LifecyclePolicy withPolicyDetails(Property<PolicyDetails> policyDetails) {
+    public LifecyclePolicy withPolicyDetails(Property<LifecyclePolicyPolicyDetails> policyDetails) {
         this.policyDetails = policyDetails;
         return this;
     }

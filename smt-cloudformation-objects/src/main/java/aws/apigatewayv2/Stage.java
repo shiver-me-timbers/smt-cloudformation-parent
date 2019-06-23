@@ -54,14 +54,14 @@ public class Stage {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-description")
     private CharSequence description;
     /**
-     * AccessLogSettings
+     * StageAccessLogSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html
      * 
      */
     @JsonProperty("AccessLogSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html")
-    private Property<AccessLogSettings> accessLogSettings;
+    private Property<StageAccessLogSettings> accessLogSettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-routesettings
      * 
@@ -91,14 +91,14 @@ public class Stage {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-apiid")
     private CharSequence apiId;
     /**
-     * RouteSettings
+     * StageRouteSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html
      * 
      */
     @JsonProperty("DefaultRouteSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html")
-    private Property<RouteSettings> defaultRouteSettings;
+    private Property<StageRouteSettings> defaultRouteSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-clientcertificateid
@@ -170,28 +170,28 @@ public class Stage {
     }
 
     /**
-     * AccessLogSettings
+     * StageAccessLogSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html
      * 
      */
     @JsonIgnore
-    public Property<AccessLogSettings> getAccessLogSettings() {
+    public Property<StageAccessLogSettings> getAccessLogSettings() {
         return accessLogSettings;
     }
 
     /**
-     * AccessLogSettings
+     * StageAccessLogSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-accesslogsettings.html
      * 
      */
     @JsonIgnore
-    public void setAccessLogSettings(Property<AccessLogSettings> accessLogSettings) {
+    public void setAccessLogSettings(Property<StageAccessLogSettings> accessLogSettings) {
         this.accessLogSettings = accessLogSettings;
     }
 
-    public Stage withAccessLogSettings(Property<AccessLogSettings> accessLogSettings) {
+    public Stage withAccessLogSettings(Property<StageAccessLogSettings> accessLogSettings) {
         this.accessLogSettings = accessLogSettings;
         return this;
     }
@@ -289,28 +289,28 @@ public class Stage {
     }
 
     /**
-     * RouteSettings
+     * StageRouteSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html
      * 
      */
     @JsonIgnore
-    public Property<RouteSettings> getDefaultRouteSettings() {
+    public Property<StageRouteSettings> getDefaultRouteSettings() {
         return defaultRouteSettings;
     }
 
     /**
-     * RouteSettings
+     * StageRouteSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html
      * 
      */
     @JsonIgnore
-    public void setDefaultRouteSettings(Property<RouteSettings> defaultRouteSettings) {
+    public void setDefaultRouteSettings(Property<StageRouteSettings> defaultRouteSettings) {
         this.defaultRouteSettings = defaultRouteSettings;
     }
 
-    public Stage withDefaultRouteSettings(Property<RouteSettings> defaultRouteSettings) {
+    public Stage withDefaultRouteSettings(Property<StageRouteSettings> defaultRouteSettings) {
         this.defaultRouteSettings = defaultRouteSettings;
         return this;
     }

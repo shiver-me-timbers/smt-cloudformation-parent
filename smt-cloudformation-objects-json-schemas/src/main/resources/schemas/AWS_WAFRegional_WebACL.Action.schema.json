@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_WAFRegional_WebACL.Action.schema.json",
-  "title" : "Action",
+  "title" : "WebACLAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html",
   "type" : "object",
-  "javaType" : "aws.wafregional.Action",
-  "javaInterfaces" : [ "aws.Property<Action>" ],
+  "javaType" : "aws.wafregional.WebACLAction",
+  "javaInterfaces" : [ "aws.Property<WebACLAction>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html#cfn-wafregional-webacl-action-type",

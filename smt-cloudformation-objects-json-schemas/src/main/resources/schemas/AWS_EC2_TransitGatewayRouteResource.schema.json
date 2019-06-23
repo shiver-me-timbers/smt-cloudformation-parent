@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.TransitGatewayRouteResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TransitGatewayRouteResource>", "aws.HasCondition<TransitGatewayRouteResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

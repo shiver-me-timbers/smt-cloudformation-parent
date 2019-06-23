@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ssm.AssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AssociationResource>", "aws.HasCondition<AssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

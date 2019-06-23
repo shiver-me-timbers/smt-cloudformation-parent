@@ -44,21 +44,21 @@ public class VirtualService {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-virtualservicename")
     private CharSequence virtualServiceName;
     /**
-     * VirtualServiceSpec
+     * VirtualServiceVirtualServiceSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html
      * 
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html")
-    private Property<VirtualServiceSpec> spec;
+    private Property<VirtualServiceVirtualServiceSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-tags")
-    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
+    private List<Property<VirtualServiceTagRef>> tags = new ArrayList<Property<VirtualServiceTagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualservice.html#cfn-appmesh-virtualservice-meshname
@@ -107,28 +107,28 @@ public class VirtualService {
     }
 
     /**
-     * VirtualServiceSpec
+     * VirtualServiceVirtualServiceSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html
      * 
      */
     @JsonIgnore
-    public Property<VirtualServiceSpec> getSpec() {
+    public Property<VirtualServiceVirtualServiceSpec> getSpec() {
         return spec;
     }
 
     /**
-     * VirtualServiceSpec
+     * VirtualServiceVirtualServiceSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html
      * 
      */
     @JsonIgnore
-    public void setSpec(Property<VirtualServiceSpec> spec) {
+    public void setSpec(Property<VirtualServiceVirtualServiceSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualService withSpec(Property<VirtualServiceSpec> spec) {
+    public VirtualService withSpec(Property<VirtualServiceVirtualServiceSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -138,7 +138,7 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public List<Property<TagRef>> getTags() {
+    public List<Property<VirtualServiceTagRef>> getTags() {
         return tags;
     }
 
@@ -147,11 +147,11 @@ public class VirtualService {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagRef>> tags) {
+    public void setTags(List<Property<VirtualServiceTagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualService withTags(List<Property<TagRef>> tags) {
+    public VirtualService withTags(List<Property<VirtualServiceTagRef>> tags) {
         this.tags = tags;
         return this;
     }

@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualNode.ServiceDiscovery.schema.json",
-  "title" : "ServiceDiscovery",
+  "title" : "VirtualNodeServiceDiscovery",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.ServiceDiscovery",
-  "javaInterfaces" : [ "aws.Property<ServiceDiscovery>" ],
+  "javaType" : "aws.appmesh.VirtualNodeServiceDiscovery",
+  "javaInterfaces" : [ "aws.Property<VirtualNodeServiceDiscovery>" ],
   "properties" : {
     "DNS" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-servicediscovery.html#cfn-appmesh-virtualnode-servicediscovery-dns",
       "$ref" : "AWS_AppMesh_VirtualNode.DnsServiceDiscovery.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.DnsServiceDiscovery>"
+      "javaType" : "aws.Property<aws.appmesh.VirtualNodeDnsServiceDiscovery>"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_CustomActionType.ArtifactDetails.schema.json",
-  "title" : "ArtifactDetails",
+  "title" : "CustomActionTypeArtifactDetails",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.ArtifactDetails",
-  "javaInterfaces" : [ "aws.Property<ArtifactDetails>" ],
+  "javaType" : "aws.codepipeline.CustomActionTypeArtifactDetails",
+  "javaInterfaces" : [ "aws.Property<CustomActionTypeArtifactDetails>" ],
   "properties" : {
     "MaximumCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-artifactdetails.html#cfn-codepipeline-customactiontype-artifactdetails-maximumcount",

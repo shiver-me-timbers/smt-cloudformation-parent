@@ -49,14 +49,14 @@ public class Partition {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid")
     private CharSequence catalogId;
     /**
-     * PartitionInput
+     * PartitionPartitionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html
      * 
      */
     @JsonProperty("PartitionInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html")
-    private Property<PartitionInput> partitionInput;
+    private Property<PartitionPartitionInput> partitionInput;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename
@@ -128,28 +128,28 @@ public class Partition {
     }
 
     /**
-     * PartitionInput
+     * PartitionPartitionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html
      * 
      */
     @JsonIgnore
-    public Property<PartitionInput> getPartitionInput() {
+    public Property<PartitionPartitionInput> getPartitionInput() {
         return partitionInput;
     }
 
     /**
-     * PartitionInput
+     * PartitionPartitionInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html
      * 
      */
     @JsonIgnore
-    public void setPartitionInput(Property<PartitionInput> partitionInput) {
+    public void setPartitionInput(Property<PartitionPartitionInput> partitionInput) {
         this.partitionInput = partitionInput;
     }
 
-    public Partition withPartitionInput(Property<PartitionInput> partitionInput) {
+    public Partition withPartitionInput(Property<PartitionPartitionInput> partitionInput) {
         this.partitionInput = partitionInput;
         return this;
     }

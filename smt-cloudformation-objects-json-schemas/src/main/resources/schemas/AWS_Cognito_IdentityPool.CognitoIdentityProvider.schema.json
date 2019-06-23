@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_IdentityPool.CognitoIdentityProvider.schema.json",
-  "title" : "CognitoIdentityProvider",
+  "title" : "IdentityPoolCognitoIdentityProvider",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html",
   "type" : "object",
-  "javaType" : "aws.cognito.CognitoIdentityProvider",
-  "javaInterfaces" : [ "aws.Property<CognitoIdentityProvider>" ],
+  "javaType" : "aws.cognito.IdentityPoolCognitoIdentityProvider",
+  "javaInterfaces" : [ "aws.Property<IdentityPoolCognitoIdentityProvider>" ],
   "properties" : {
     "ServerSideTokenCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck",

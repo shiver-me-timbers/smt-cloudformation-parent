@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_WAF_SizeConstraintSet.SizeConstraint.schema.json",
-  "title" : "SizeConstraint",
+  "title" : "SizeConstraintSetSizeConstraint",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html",
   "type" : "object",
-  "javaType" : "aws.waf.SizeConstraint",
-  "javaInterfaces" : [ "aws.Property<SizeConstraint>" ],
+  "javaType" : "aws.waf.SizeConstraintSetSizeConstraint",
+  "javaInterfaces" : [ "aws.Property<SizeConstraintSetSizeConstraint>" ],
   "properties" : {
     "ComparisonOperator" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-comparisonoperator",
@@ -14,8 +14,8 @@
     },
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-fieldtomatch",
-      "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json",
-      "javaType" : "aws.Property<aws.waf.FieldToMatch>"
+      "$ref" : "AWS_WAF_SizeConstraintSet.FieldToMatch.schema.json",
+      "javaType" : "aws.Property<aws.waf.SizeConstraintSetFieldToMatch>"
     },
     "Size" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html#cfn-waf-sizeconstraintset-sizeconstraint-size",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.lambda.VersionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<VersionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<VersionResource>", "aws.HasCondition<VersionResource>", "aws.HasAttributes<VersionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

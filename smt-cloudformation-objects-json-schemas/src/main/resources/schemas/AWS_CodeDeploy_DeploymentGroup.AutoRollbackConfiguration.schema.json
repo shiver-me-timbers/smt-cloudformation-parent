@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeDeploy_DeploymentGroup.AutoRollbackConfiguration.schema.json",
-  "title" : "AutoRollbackConfiguration",
+  "title" : "DeploymentGroupAutoRollbackConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.AutoRollbackConfiguration",
-  "javaInterfaces" : [ "aws.Property<AutoRollbackConfiguration>" ],
+  "javaType" : "aws.codedeploy.DeploymentGroupAutoRollbackConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeploymentGroupAutoRollbackConfiguration>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-autorollbackconfiguration.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration-enabled",

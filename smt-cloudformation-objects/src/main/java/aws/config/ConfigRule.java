@@ -58,23 +58,23 @@ public class ConfigRule {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency")
     private CharSequence maximumExecutionFrequency;
     /**
-     * Scope
+     * ConfigRuleScope
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
     @JsonProperty("Scope")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html")
-    private Property<Scope> scope;
+    private Property<ConfigRuleScope> scope;
     /**
-     * OrganizationAggregationSource
+     * ConfigRuleSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html
      * 
      */
     @JsonProperty("Source")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html")
-    private Property<Source> source;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html")
+    private Property<ConfigRuleSource> source;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
@@ -169,55 +169,55 @@ public class ConfigRule {
     }
 
     /**
-     * Scope
+     * ConfigRuleScope
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
     @JsonIgnore
-    public Property<Scope> getScope() {
+    public Property<ConfigRuleScope> getScope() {
         return scope;
     }
 
     /**
-     * Scope
+     * ConfigRuleScope
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html
      * 
      */
     @JsonIgnore
-    public void setScope(Property<Scope> scope) {
+    public void setScope(Property<ConfigRuleScope> scope) {
         this.scope = scope;
     }
 
-    public ConfigRule withScope(Property<Scope> scope) {
+    public ConfigRule withScope(Property<ConfigRuleScope> scope) {
         this.scope = scope;
         return this;
     }
 
     /**
-     * OrganizationAggregationSource
+     * ConfigRuleSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html
      * 
      */
     @JsonIgnore
-    public Property<Source> getSource() {
+    public Property<ConfigRuleSource> getSource() {
         return source;
     }
 
     /**
-     * OrganizationAggregationSource
+     * ConfigRuleSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationaggregator-organizationaggregationsource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html
      * 
      */
     @JsonIgnore
-    public void setSource(Property<Source> source) {
+    public void setSource(Property<ConfigRuleSource> source) {
         this.source = source;
     }
 
-    public ConfigRule withSource(Property<Source> source) {
+    public ConfigRule withSource(Property<ConfigRuleSource> source) {
         this.source = source;
         return this;
     }

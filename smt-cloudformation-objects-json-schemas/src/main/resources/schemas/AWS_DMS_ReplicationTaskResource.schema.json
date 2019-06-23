@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dms.ReplicationTaskResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationTaskResource>", "aws.HasCondition<ReplicationTaskResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

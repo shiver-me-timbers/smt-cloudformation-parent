@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DMS_Endpoint.DynamoDbSettings.schema.json",
-  "title" : "DynamoDbSettings",
+  "title" : "EndpointDynamoDbSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html",
   "type" : "object",
-  "javaType" : "aws.dms.DynamoDbSettings",
-  "javaInterfaces" : [ "aws.Property<DynamoDbSettings>" ],
+  "javaType" : "aws.dms.EndpointDynamoDbSettings",
+  "javaInterfaces" : [ "aws.Property<EndpointDynamoDbSettings>" ],
   "properties" : {
     "ServiceAccessRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dms-endpoint-dynamodbsettings.html#cfn-dms-endpoint-dynamodbsettings-serviceaccessrolearn",

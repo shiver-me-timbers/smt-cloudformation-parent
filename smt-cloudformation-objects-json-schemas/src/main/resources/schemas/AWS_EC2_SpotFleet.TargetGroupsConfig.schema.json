@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_SpotFleet.TargetGroupsConfig.schema.json",
-  "title" : "TargetGroupsConfig",
+  "title" : "SpotFleetTargetGroupsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html",
   "type" : "object",
-  "javaType" : "aws.ec2.TargetGroupsConfig",
-  "javaInterfaces" : [ "aws.Property<TargetGroupsConfig>" ],
+  "javaType" : "aws.ec2.SpotFleetTargetGroupsConfig",
+  "javaInterfaces" : [ "aws.Property<SpotFleetTargetGroupsConfig>" ],
   "properties" : {
     "TargetGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-targetgroupsconfig.html#cfn-ec2-spotfleet-targetgroupsconfig-targetgroups",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_SpotFleet.TargetGroup.schema.json",
-        "javaType" : "aws.Property<aws.ec2.TargetGroup>"
+        "javaType" : "aws.Property<aws.ec2.SpotFleetTargetGroup>"
       }
     }
   }

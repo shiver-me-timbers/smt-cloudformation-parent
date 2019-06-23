@@ -29,14 +29,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Deployment {
 
     /**
-     * DeploymentCanarySettings
+     * DeploymentDeploymentCanarySettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
      * 
      */
     @JsonProperty("DeploymentCanarySettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html")
-    private Property<DeploymentCanarySettings> deploymentCanarySettings;
+    private Property<DeploymentDeploymentCanarySettings> deploymentCanarySettings;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
      * 
@@ -52,14 +52,14 @@ public class Deployment {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid")
     private CharSequence restApiId;
     /**
-     * StageDescription
+     * DeploymentStageDescription
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
     @JsonProperty("StageDescription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html")
-    private Property<StageDescription> stageDescription;
+    private Property<DeploymentStageDescription> stageDescription;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
      * 
@@ -69,28 +69,28 @@ public class Deployment {
     private CharSequence stageName;
 
     /**
-     * DeploymentCanarySettings
+     * DeploymentDeploymentCanarySettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
      * 
      */
     @JsonIgnore
-    public Property<DeploymentCanarySettings> getDeploymentCanarySettings() {
+    public Property<DeploymentDeploymentCanarySettings> getDeploymentCanarySettings() {
         return deploymentCanarySettings;
     }
 
     /**
-     * DeploymentCanarySettings
+     * DeploymentDeploymentCanarySettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-deploymentcanarysettings.html
      * 
      */
     @JsonIgnore
-    public void setDeploymentCanarySettings(Property<DeploymentCanarySettings> deploymentCanarySettings) {
+    public void setDeploymentCanarySettings(Property<DeploymentDeploymentCanarySettings> deploymentCanarySettings) {
         this.deploymentCanarySettings = deploymentCanarySettings;
     }
 
-    public Deployment withDeploymentCanarySettings(Property<DeploymentCanarySettings> deploymentCanarySettings) {
+    public Deployment withDeploymentCanarySettings(Property<DeploymentDeploymentCanarySettings> deploymentCanarySettings) {
         this.deploymentCanarySettings = deploymentCanarySettings;
         return this;
     }
@@ -142,28 +142,28 @@ public class Deployment {
     }
 
     /**
-     * StageDescription
+     * DeploymentStageDescription
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
     @JsonIgnore
-    public Property<StageDescription> getStageDescription() {
+    public Property<DeploymentStageDescription> getStageDescription() {
         return stageDescription;
     }
 
     /**
-     * StageDescription
+     * DeploymentStageDescription
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-stagedescription.html
      * 
      */
     @JsonIgnore
-    public void setStageDescription(Property<StageDescription> stageDescription) {
+    public void setStageDescription(Property<DeploymentStageDescription> stageDescription) {
         this.stageDescription = stageDescription;
     }
 
-    public Deployment withStageDescription(Property<StageDescription> stageDescription) {
+    public Deployment withStageDescription(Property<DeploymentStageDescription> stageDescription) {
         this.stageDescription = stageDescription;
         return this;
     }

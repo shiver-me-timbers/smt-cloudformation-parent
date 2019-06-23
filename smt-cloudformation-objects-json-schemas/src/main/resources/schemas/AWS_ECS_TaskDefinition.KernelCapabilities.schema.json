@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.KernelCapabilities.schema.json",
-  "title" : "KernelCapabilities",
+  "title" : "TaskDefinitionKernelCapabilities",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html",
   "type" : "object",
-  "javaType" : "aws.ecs.KernelCapabilities",
-  "javaInterfaces" : [ "aws.Property<KernelCapabilities>" ],
+  "javaType" : "aws.ecs.TaskDefinitionKernelCapabilities",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionKernelCapabilities>" ],
   "properties" : {
     "Add" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-kernelcapabilities.html#cfn-ecs-taskdefinition-kernelcapabilities-add",

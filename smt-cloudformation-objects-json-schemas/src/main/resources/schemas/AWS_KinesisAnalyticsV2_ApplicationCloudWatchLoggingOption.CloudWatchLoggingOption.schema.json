@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption.schema.json",
-  "title" : "CloudWatchLoggingOption",
+  "title" : "ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.CloudWatchLoggingOption",
-  "javaInterfaces" : [ "aws.Property<CloudWatchLoggingOption>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption",
+  "javaInterfaces" : [ "aws.Property<ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption>" ],
   "properties" : {
     "LogStreamARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption.html#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption-logstreamarn",

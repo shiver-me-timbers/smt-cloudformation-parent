@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.autoscaling.AutoScalingGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AutoScalingGroupResource>", "aws.HasCondition<AutoScalingGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

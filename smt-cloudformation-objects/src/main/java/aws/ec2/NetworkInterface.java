@@ -2,13 +2,17 @@
 package aws.ec2;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import aws.Property;
+import aws.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -17,160 +21,109 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * NetworkInterface
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "AssociatePublicIpAddress",
-    "DeleteOnTermination",
     "Description",
-    "DeviceIndex",
     "GroupSet",
+    "InterfaceType",
     "Ipv6AddressCount",
     "Ipv6Addresses",
-    "NetworkInterfaceId",
     "PrivateIpAddress",
     "PrivateIpAddresses",
     "SecondaryPrivateIpAddressCount",
-    "SubnetId"
+    "SourceDestCheck",
+    "SubnetId",
+    "Tags"
 })
-public class NetworkInterface implements Property<NetworkInterface>
-{
+public class NetworkInterface {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip
-     * 
-     */
-    @JsonProperty("AssociatePublicIpAddress")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip")
-    private Boolean associatePublicIpAddress;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete
-     * 
-     */
-    @JsonProperty("DeleteOnTermination")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete")
-    private Boolean deleteOnTermination;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-description
      * 
      */
     @JsonProperty("Description")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-description")
     private CharSequence description;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex
-     * 
-     */
-    @JsonProperty("DeviceIndex")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex")
-    private CharSequence deviceIndex;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-groupset
      * 
      */
     @JsonProperty("GroupSet")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset")
-    private List<CharSequence> groupSet = new ArrayList<CharSequence>();
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-groupset")
+    private Set<CharSequence> groupSet = new LinkedHashSet<CharSequence>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-interfacetype
+     * 
+     */
+    @JsonProperty("InterfaceType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-interfacetype")
+    private CharSequence interfaceType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-ipv6addresscount
      * 
      */
     @JsonProperty("Ipv6AddressCount")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-ipv6addresscount")
     private Integer ipv6AddressCount;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses
+     * NetworkInterfaceInstanceIpv6Address
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkinterface-instanceipv6address.html
      * 
      */
     @JsonProperty("Ipv6Addresses")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses")
-    private List<Property<InstanceIpv6Address>> ipv6Addresses = new ArrayList<Property<InstanceIpv6Address>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkinterface-instanceipv6address.html")
+    private Property<NetworkInterfaceInstanceIpv6Address> ipv6Addresses;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface
-     * 
-     */
-    @JsonProperty("NetworkInterfaceId")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface")
-    private CharSequence networkInterfaceId;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddress
      * 
      */
     @JsonProperty("PrivateIpAddress")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddress")
     private CharSequence privateIpAddress;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddresses
      * 
      */
     @JsonProperty("PrivateIpAddresses")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses")
-    private List<Property<PrivateIpAddressSpecification>> privateIpAddresses = new ArrayList<Property<PrivateIpAddressSpecification>>();
+    @JsonDeserialize(as = java.util.LinkedHashSet.class)
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddresses")
+    private Set<Property<NetworkInterfacePrivateIpAddressSpecification>> privateIpAddresses = new LinkedHashSet<Property<NetworkInterfacePrivateIpAddressSpecification>>();
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-secondaryprivateipcount
      * 
      */
     @JsonProperty("SecondaryPrivateIpAddressCount")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-secondaryprivateipcount")
     private Integer secondaryPrivateIpAddressCount;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck
+     * 
+     */
+    @JsonProperty("SourceDestCheck")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck")
+    private Boolean sourceDestCheck;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-subnetid
      * 
      */
     @JsonProperty("SubnetId")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-subnetid")
     private CharSequence subnetId;
-
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-tags
      * 
      */
-    @JsonIgnore
-    public Boolean getAssociatePublicIpAddress() {
-        return associatePublicIpAddress;
-    }
+    @JsonProperty("Tags")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-tags")
+    private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip
-     * 
-     */
-    @JsonIgnore
-    public void setAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
-        this.associatePublicIpAddress = associatePublicIpAddress;
-    }
-
-    public NetworkInterface withAssociatePublicIpAddress(Boolean associatePublicIpAddress) {
-        this.associatePublicIpAddress = associatePublicIpAddress;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete
-     * 
-     */
-    @JsonIgnore
-    public Boolean getDeleteOnTermination() {
-        return deleteOnTermination;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-delete
-     * 
-     */
-    @JsonIgnore
-    public void setDeleteOnTermination(Boolean deleteOnTermination) {
-        this.deleteOnTermination = deleteOnTermination;
-    }
-
-    public NetworkInterface withDeleteOnTermination(Boolean deleteOnTermination) {
-        this.deleteOnTermination = deleteOnTermination;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-description
      * 
      */
     @JsonIgnore
@@ -179,7 +132,7 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-description
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-description
      * 
      */
     @JsonIgnore
@@ -193,53 +146,53 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-groupset
      * 
      */
     @JsonIgnore
-    public CharSequence getDeviceIndex() {
-        return deviceIndex;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-deviceindex
-     * 
-     */
-    @JsonIgnore
-    public void setDeviceIndex(CharSequence deviceIndex) {
-        this.deviceIndex = deviceIndex;
-    }
-
-    public NetworkInterface withDeviceIndex(CharSequence deviceIndex) {
-        this.deviceIndex = deviceIndex;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset
-     * 
-     */
-    @JsonIgnore
-    public List<CharSequence> getGroupSet() {
+    public Set<CharSequence> getGroupSet() {
         return groupSet;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-groupset
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-groupset
      * 
      */
     @JsonIgnore
-    public void setGroupSet(List<CharSequence> groupSet) {
+    public void setGroupSet(Set<CharSequence> groupSet) {
         this.groupSet = groupSet;
     }
 
-    public NetworkInterface withGroupSet(List<CharSequence> groupSet) {
+    public NetworkInterface withGroupSet(Set<CharSequence> groupSet) {
         this.groupSet = groupSet;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-interfacetype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getInterfaceType() {
+        return interfaceType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-interfacetype
+     * 
+     */
+    @JsonIgnore
+    public void setInterfaceType(CharSequence interfaceType) {
+        this.interfaceType = interfaceType;
+    }
+
+    public NetworkInterface withInterfaceType(CharSequence interfaceType) {
+        this.interfaceType = interfaceType;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-ipv6addresscount
      * 
      */
     @JsonIgnore
@@ -248,7 +201,7 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresscount
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-ec2-networkinterface-ipv6addresscount
      * 
      */
     @JsonIgnore
@@ -262,53 +215,34 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses
+     * NetworkInterfaceInstanceIpv6Address
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkinterface-instanceipv6address.html
      * 
      */
     @JsonIgnore
-    public List<Property<InstanceIpv6Address>> getIpv6Addresses() {
+    public Property<NetworkInterfaceInstanceIpv6Address> getIpv6Addresses() {
         return ipv6Addresses;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses
+     * NetworkInterfaceInstanceIpv6Address
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkinterface-instanceipv6address.html
      * 
      */
     @JsonIgnore
-    public void setIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
+    public void setIpv6Addresses(Property<NetworkInterfaceInstanceIpv6Address> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
     }
 
-    public NetworkInterface withIpv6Addresses(List<Property<InstanceIpv6Address>> ipv6Addresses) {
+    public NetworkInterface withIpv6Addresses(Property<NetworkInterfaceInstanceIpv6Address> ipv6Addresses) {
         this.ipv6Addresses = ipv6Addresses;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getNetworkInterfaceId() {
-        return networkInterfaceId;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-network-iface
-     * 
-     */
-    @JsonIgnore
-    public void setNetworkInterfaceId(CharSequence networkInterfaceId) {
-        this.networkInterfaceId = networkInterfaceId;
-    }
-
-    public NetworkInterface withNetworkInterfaceId(CharSequence networkInterfaceId) {
-        this.networkInterfaceId = networkInterfaceId;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddress
      * 
      */
     @JsonIgnore
@@ -317,7 +251,7 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddress
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddress
      * 
      */
     @JsonIgnore
@@ -331,30 +265,30 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddresses
      * 
      */
     @JsonIgnore
-    public List<Property<PrivateIpAddressSpecification>> getPrivateIpAddresses() {
+    public Set<Property<NetworkInterfacePrivateIpAddressSpecification>> getPrivateIpAddresses() {
         return privateIpAddresses;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-privateipaddresses
      * 
      */
     @JsonIgnore
-    public void setPrivateIpAddresses(List<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
+    public void setPrivateIpAddresses(Set<Property<NetworkInterfacePrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
     }
 
-    public NetworkInterface withPrivateIpAddresses(List<Property<PrivateIpAddressSpecification>> privateIpAddresses) {
+    public NetworkInterface withPrivateIpAddresses(Set<Property<NetworkInterfacePrivateIpAddressSpecification>> privateIpAddresses) {
         this.privateIpAddresses = privateIpAddresses;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-secondaryprivateipcount
      * 
      */
     @JsonIgnore
@@ -363,7 +297,7 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-secondprivateip
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-secondaryprivateipcount
      * 
      */
     @JsonIgnore
@@ -377,7 +311,30 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck
+     * 
+     */
+    @JsonIgnore
+    public Boolean getSourceDestCheck() {
+        return sourceDestCheck;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-sourcedestcheck
+     * 
+     */
+    @JsonIgnore
+    public void setSourceDestCheck(Boolean sourceDestCheck) {
+        this.sourceDestCheck = sourceDestCheck;
+    }
+
+    public NetworkInterface withSourceDestCheck(Boolean sourceDestCheck) {
+        this.sourceDestCheck = sourceDestCheck;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-subnetid
      * 
      */
     @JsonIgnore
@@ -386,7 +343,7 @@ public class NetworkInterface implements Property<NetworkInterface>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-subnetid
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-subnetid
      * 
      */
     @JsonIgnore
@@ -399,14 +356,37 @@ public class NetworkInterface implements Property<NetworkInterface>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-tags
+     * 
+     */
+    @JsonIgnore
+    public List<Property<Tag>> getTags() {
+        return tags;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-interface.html#cfn-awsec2networkinterface-tags
+     * 
+     */
+    @JsonIgnore
+    public void setTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+    }
+
+    public NetworkInterface withTags(List<Property<Tag>> tags) {
+        this.tags = tags;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("associatePublicIpAddress", associatePublicIpAddress).append("deleteOnTermination", deleteOnTermination).append("description", description).append("deviceIndex", deviceIndex).append("groupSet", groupSet).append("ipv6AddressCount", ipv6AddressCount).append("ipv6Addresses", ipv6Addresses).append("networkInterfaceId", networkInterfaceId).append("privateIpAddress", privateIpAddress).append("privateIpAddresses", privateIpAddresses).append("secondaryPrivateIpAddressCount", secondaryPrivateIpAddressCount).append("subnetId", subnetId).toString();
+        return new ToStringBuilder(this).append("description", description).append("groupSet", groupSet).append("interfaceType", interfaceType).append("ipv6AddressCount", ipv6AddressCount).append("ipv6Addresses", ipv6Addresses).append("privateIpAddress", privateIpAddress).append("privateIpAddresses", privateIpAddresses).append("secondaryPrivateIpAddressCount", secondaryPrivateIpAddressCount).append("sourceDestCheck", sourceDestCheck).append("subnetId", subnetId).append("tags", tags).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(networkInterfaceId).append(privateIpAddresses).append(subnetId).append(description).append(deleteOnTermination).append(ipv6Addresses).append(deviceIndex).append(groupSet).append(privateIpAddress).append(ipv6AddressCount).append(associatePublicIpAddress).append(secondaryPrivateIpAddressCount).toHashCode();
+        return new HashCodeBuilder().append(privateIpAddresses).append(subnetId).append(interfaceType).append(ipv6AddressCount).append(description).append(ipv6Addresses).append(secondaryPrivateIpAddressCount).append(sourceDestCheck).append(groupSet).append(privateIpAddress).append(tags).toHashCode();
     }
 
     @Override
@@ -418,7 +398,7 @@ public class NetworkInterface implements Property<NetworkInterface>
             return false;
         }
         NetworkInterface rhs = ((NetworkInterface) other);
-        return new EqualsBuilder().append(networkInterfaceId, rhs.networkInterfaceId).append(privateIpAddresses, rhs.privateIpAddresses).append(subnetId, rhs.subnetId).append(description, rhs.description).append(deleteOnTermination, rhs.deleteOnTermination).append(ipv6Addresses, rhs.ipv6Addresses).append(deviceIndex, rhs.deviceIndex).append(groupSet, rhs.groupSet).append(privateIpAddress, rhs.privateIpAddress).append(ipv6AddressCount, rhs.ipv6AddressCount).append(associatePublicIpAddress, rhs.associatePublicIpAddress).append(secondaryPrivateIpAddressCount, rhs.secondaryPrivateIpAddressCount).isEquals();
+        return new EqualsBuilder().append(privateIpAddresses, rhs.privateIpAddresses).append(subnetId, rhs.subnetId).append(interfaceType, rhs.interfaceType).append(ipv6AddressCount, rhs.ipv6AddressCount).append(description, rhs.description).append(ipv6Addresses, rhs.ipv6Addresses).append(secondaryPrivateIpAddressCount, rhs.secondaryPrivateIpAddressCount).append(sourceDestCheck, rhs.sourceDestCheck).append(groupSet, rhs.groupSet).append(privateIpAddress, rhs.privateIpAddress).append(tags, rhs.tags).isEquals();
     }
 
 }

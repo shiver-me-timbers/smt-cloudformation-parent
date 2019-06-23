@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceInstance.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.ResourceInstance>"
+        "javaType" : "aws.Property<aws.greengrass.ResourceDefinitionVersionResourceInstance>"
       }
     },
     "ResourceDefinitionId" : {

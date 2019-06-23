@@ -50,14 +50,14 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags")
     private Object userPoolTags;
     /**
-     * Policies
+     * UserPoolPolicies
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html
      * 
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html")
-    private Property<Policies> policies;
+    private Property<UserPoolPolicies> policies;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration
      * 
@@ -71,16 +71,16 @@ public class UserPool {
      */
     @JsonProperty("Schema")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-schema")
-    private List<Property<SchemaAttribute>> schema = new ArrayList<Property<SchemaAttribute>>();
+    private List<Property<UserPoolSchemaAttribute>> schema = new ArrayList<Property<UserPoolSchemaAttribute>>();
     /**
-     * AdminCreateUserConfig
+     * UserPoolAdminCreateUserConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html
      * 
      */
     @JsonProperty("AdminCreateUserConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html")
-    private Property<AdminCreateUserConfig> adminCreateUserConfig;
+    private Property<UserPoolAdminCreateUserConfig> adminCreateUserConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage
      * 
@@ -103,23 +103,23 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsverificationmessage")
     private CharSequence smsVerificationMessage;
     /**
-     * EmailConfiguration
+     * UserPoolEmailConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html
      * 
      */
     @JsonProperty("EmailConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html")
-    private Property<EmailConfiguration> emailConfiguration;
+    private Property<UserPoolEmailConfiguration> emailConfiguration;
     /**
-     * SmsConfiguration
+     * UserPoolSmsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html
      * 
      */
     @JsonProperty("SmsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html")
-    private Property<SmsConfiguration> smsConfiguration;
+    private Property<UserPoolSmsConfiguration> smsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes
      * 
@@ -135,14 +135,14 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationsubject")
     private CharSequence emailVerificationSubject;
     /**
-     * LambdaConfig
+     * UserPoolLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html
      * 
      */
     @JsonProperty("LambdaConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html")
-    private Property<LambdaConfig> lambdaConfig;
+    private Property<UserPoolLambdaConfig> lambdaConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes
      * 
@@ -158,14 +158,14 @@ public class UserPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-autoverifiedattributes")
     private List<CharSequence> autoVerifiedAttributes = new ArrayList<CharSequence>();
     /**
-     * DeviceConfiguration
+     * UserPoolDeviceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html
      * 
      */
     @JsonProperty("DeviceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html")
-    private Property<DeviceConfiguration> deviceConfiguration;
+    private Property<UserPoolDeviceConfiguration> deviceConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage
      * 
@@ -198,28 +198,28 @@ public class UserPool {
     }
 
     /**
-     * Policies
+     * UserPoolPolicies
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html
      * 
      */
     @JsonIgnore
-    public Property<Policies> getPolicies() {
+    public Property<UserPoolPolicies> getPolicies() {
         return policies;
     }
 
     /**
-     * Policies
+     * UserPoolPolicies
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-policies.html
      * 
      */
     @JsonIgnore
-    public void setPolicies(Property<Policies> policies) {
+    public void setPolicies(Property<UserPoolPolicies> policies) {
         this.policies = policies;
     }
 
-    public UserPool withPolicies(Property<Policies> policies) {
+    public UserPool withPolicies(Property<UserPoolPolicies> policies) {
         this.policies = policies;
         return this;
     }
@@ -252,7 +252,7 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public List<Property<SchemaAttribute>> getSchema() {
+    public List<Property<UserPoolSchemaAttribute>> getSchema() {
         return schema;
     }
 
@@ -261,38 +261,38 @@ public class UserPool {
      * 
      */
     @JsonIgnore
-    public void setSchema(List<Property<SchemaAttribute>> schema) {
+    public void setSchema(List<Property<UserPoolSchemaAttribute>> schema) {
         this.schema = schema;
     }
 
-    public UserPool withSchema(List<Property<SchemaAttribute>> schema) {
+    public UserPool withSchema(List<Property<UserPoolSchemaAttribute>> schema) {
         this.schema = schema;
         return this;
     }
 
     /**
-     * AdminCreateUserConfig
+     * UserPoolAdminCreateUserConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html
      * 
      */
     @JsonIgnore
-    public Property<AdminCreateUserConfig> getAdminCreateUserConfig() {
+    public Property<UserPoolAdminCreateUserConfig> getAdminCreateUserConfig() {
         return adminCreateUserConfig;
     }
 
     /**
-     * AdminCreateUserConfig
+     * UserPoolAdminCreateUserConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html
      * 
      */
     @JsonIgnore
-    public void setAdminCreateUserConfig(Property<AdminCreateUserConfig> adminCreateUserConfig) {
+    public void setAdminCreateUserConfig(Property<UserPoolAdminCreateUserConfig> adminCreateUserConfig) {
         this.adminCreateUserConfig = adminCreateUserConfig;
     }
 
-    public UserPool withAdminCreateUserConfig(Property<AdminCreateUserConfig> adminCreateUserConfig) {
+    public UserPool withAdminCreateUserConfig(Property<UserPoolAdminCreateUserConfig> adminCreateUserConfig) {
         this.adminCreateUserConfig = adminCreateUserConfig;
         return this;
     }
@@ -367,55 +367,55 @@ public class UserPool {
     }
 
     /**
-     * EmailConfiguration
+     * UserPoolEmailConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<EmailConfiguration> getEmailConfiguration() {
+    public Property<UserPoolEmailConfiguration> getEmailConfiguration() {
         return emailConfiguration;
     }
 
     /**
-     * EmailConfiguration
+     * UserPoolEmailConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setEmailConfiguration(Property<EmailConfiguration> emailConfiguration) {
+    public void setEmailConfiguration(Property<UserPoolEmailConfiguration> emailConfiguration) {
         this.emailConfiguration = emailConfiguration;
     }
 
-    public UserPool withEmailConfiguration(Property<EmailConfiguration> emailConfiguration) {
+    public UserPool withEmailConfiguration(Property<UserPoolEmailConfiguration> emailConfiguration) {
         this.emailConfiguration = emailConfiguration;
         return this;
     }
 
     /**
-     * SmsConfiguration
+     * UserPoolSmsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<SmsConfiguration> getSmsConfiguration() {
+    public Property<UserPoolSmsConfiguration> getSmsConfiguration() {
         return smsConfiguration;
     }
 
     /**
-     * SmsConfiguration
+     * UserPoolSmsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-smsconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setSmsConfiguration(Property<SmsConfiguration> smsConfiguration) {
+    public void setSmsConfiguration(Property<UserPoolSmsConfiguration> smsConfiguration) {
         this.smsConfiguration = smsConfiguration;
     }
 
-    public UserPool withSmsConfiguration(Property<SmsConfiguration> smsConfiguration) {
+    public UserPool withSmsConfiguration(Property<UserPoolSmsConfiguration> smsConfiguration) {
         this.smsConfiguration = smsConfiguration;
         return this;
     }
@@ -467,28 +467,28 @@ public class UserPool {
     }
 
     /**
-     * LambdaConfig
+     * UserPoolLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LambdaConfig> getLambdaConfig() {
+    public Property<UserPoolLambdaConfig> getLambdaConfig() {
         return lambdaConfig;
     }
 
     /**
-     * LambdaConfig
+     * UserPoolLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html
      * 
      */
     @JsonIgnore
-    public void setLambdaConfig(Property<LambdaConfig> lambdaConfig) {
+    public void setLambdaConfig(Property<UserPoolLambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
 
-    public UserPool withLambdaConfig(Property<LambdaConfig> lambdaConfig) {
+    public UserPool withLambdaConfig(Property<UserPoolLambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
         return this;
     }
@@ -540,28 +540,28 @@ public class UserPool {
     }
 
     /**
-     * DeviceConfiguration
+     * UserPoolDeviceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<DeviceConfiguration> getDeviceConfiguration() {
+    public Property<UserPoolDeviceConfiguration> getDeviceConfiguration() {
         return deviceConfiguration;
     }
 
     /**
-     * DeviceConfiguration
+     * UserPoolDeviceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setDeviceConfiguration(Property<DeviceConfiguration> deviceConfiguration) {
+    public void setDeviceConfiguration(Property<UserPoolDeviceConfiguration> deviceConfiguration) {
         this.deviceConfiguration = deviceConfiguration;
     }
 
-    public UserPool withDeviceConfiguration(Property<DeviceConfiguration> deviceConfiguration) {
+    public UserPool withDeviceConfiguration(Property<UserPoolDeviceConfiguration> deviceConfiguration) {
         this.deviceConfiguration = deviceConfiguration;
         return this;
     }

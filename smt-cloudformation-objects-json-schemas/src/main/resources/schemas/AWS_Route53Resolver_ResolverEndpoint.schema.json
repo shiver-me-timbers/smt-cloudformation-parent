@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Route53Resolver_ResolverEndpoint.IpAddressRequest.schema.json",
-        "javaType" : "aws.Property<aws.route53resolver.IpAddressRequest>"
+        "javaType" : "aws.Property<aws.route53resolver.ResolverEndpointIpAddressRequest>"
       }
     },
     "Direction" : {

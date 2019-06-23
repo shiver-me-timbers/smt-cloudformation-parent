@@ -46,23 +46,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Function {
 
     /**
-     * Code
+     * FunctionCode
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html
      * 
      */
     @JsonProperty("Code")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html")
-    private Property<Code> code;
+    private Property<FunctionCode> code;
     /**
-     * DeadLetterConfig
+     * FunctionDeadLetterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html
      * 
      */
     @JsonProperty("DeadLetterConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html")
-    private Property<DeadLetterConfig> deadLetterConfig;
+    private Property<FunctionDeadLetterConfig> deadLetterConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description
      * 
@@ -71,14 +71,14 @@ public class Function {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description")
     private CharSequence description;
     /**
-     * Environment
+     * FunctionEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html
      * 
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html")
-    private Property<Environment> environment;
+    private Property<FunctionEnvironment> environment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname
      * 
@@ -151,74 +151,74 @@ public class Function {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-timeout")
     private Integer timeout;
     /**
-     * TracingConfig
+     * FunctionTracingConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html
      * 
      */
     @JsonProperty("TracingConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html")
-    private Property<TracingConfig> tracingConfig;
+    private Property<FunctionTracingConfig> tracingConfig;
     /**
-     * VpcConfig
+     * FunctionVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html
      * 
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html")
-    private Property<VpcConfig> vpcConfig;
+    private Property<FunctionVpcConfig> vpcConfig;
 
     /**
-     * Code
+     * FunctionCode
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html
      * 
      */
     @JsonIgnore
-    public Property<Code> getCode() {
+    public Property<FunctionCode> getCode() {
         return code;
     }
 
     /**
-     * Code
+     * FunctionCode
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html
      * 
      */
     @JsonIgnore
-    public void setCode(Property<Code> code) {
+    public void setCode(Property<FunctionCode> code) {
         this.code = code;
     }
 
-    public Function withCode(Property<Code> code) {
+    public Function withCode(Property<FunctionCode> code) {
         this.code = code;
         return this;
     }
 
     /**
-     * DeadLetterConfig
+     * FunctionDeadLetterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html
      * 
      */
     @JsonIgnore
-    public Property<DeadLetterConfig> getDeadLetterConfig() {
+    public Property<FunctionDeadLetterConfig> getDeadLetterConfig() {
         return deadLetterConfig;
     }
 
     /**
-     * DeadLetterConfig
+     * FunctionDeadLetterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-deadletterconfig.html
      * 
      */
     @JsonIgnore
-    public void setDeadLetterConfig(Property<DeadLetterConfig> deadLetterConfig) {
+    public void setDeadLetterConfig(Property<FunctionDeadLetterConfig> deadLetterConfig) {
         this.deadLetterConfig = deadLetterConfig;
     }
 
-    public Function withDeadLetterConfig(Property<DeadLetterConfig> deadLetterConfig) {
+    public Function withDeadLetterConfig(Property<FunctionDeadLetterConfig> deadLetterConfig) {
         this.deadLetterConfig = deadLetterConfig;
         return this;
     }
@@ -247,28 +247,28 @@ public class Function {
     }
 
     /**
-     * Environment
+     * FunctionEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html
      * 
      */
     @JsonIgnore
-    public Property<Environment> getEnvironment() {
+    public Property<FunctionEnvironment> getEnvironment() {
         return environment;
     }
 
     /**
-     * Environment
+     * FunctionEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-environment.html
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Property<Environment> environment) {
+    public void setEnvironment(Property<FunctionEnvironment> environment) {
         this.environment = environment;
     }
 
-    public Function withEnvironment(Property<Environment> environment) {
+    public Function withEnvironment(Property<FunctionEnvironment> environment) {
         this.environment = environment;
         return this;
     }
@@ -504,55 +504,55 @@ public class Function {
     }
 
     /**
-     * TracingConfig
+     * FunctionTracingConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html
      * 
      */
     @JsonIgnore
-    public Property<TracingConfig> getTracingConfig() {
+    public Property<FunctionTracingConfig> getTracingConfig() {
         return tracingConfig;
     }
 
     /**
-     * TracingConfig
+     * FunctionTracingConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html
      * 
      */
     @JsonIgnore
-    public void setTracingConfig(Property<TracingConfig> tracingConfig) {
+    public void setTracingConfig(Property<FunctionTracingConfig> tracingConfig) {
         this.tracingConfig = tracingConfig;
     }
 
-    public Function withTracingConfig(Property<TracingConfig> tracingConfig) {
+    public Function withTracingConfig(Property<FunctionTracingConfig> tracingConfig) {
         this.tracingConfig = tracingConfig;
         return this;
     }
 
     /**
-     * VpcConfig
+     * FunctionVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VpcConfig> getVpcConfig() {
+    public Property<FunctionVpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
     /**
-     * VpcConfig
+     * FunctionVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
+    public void setVpcConfig(Property<FunctionVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Function withVpcConfig(Property<VpcConfig> vpcConfig) {
+    public Function withVpcConfig(Property<FunctionVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }

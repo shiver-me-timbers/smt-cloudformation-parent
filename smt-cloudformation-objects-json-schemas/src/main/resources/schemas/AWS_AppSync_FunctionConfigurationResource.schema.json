@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.FunctionConfigurationResource",
-  "javaInterfaces" : [ "aws.HasAttributes<FunctionConfigurationAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<FunctionConfigurationResource>", "aws.HasCondition<FunctionConfigurationResource>", "aws.HasAttributes<FunctionConfigurationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

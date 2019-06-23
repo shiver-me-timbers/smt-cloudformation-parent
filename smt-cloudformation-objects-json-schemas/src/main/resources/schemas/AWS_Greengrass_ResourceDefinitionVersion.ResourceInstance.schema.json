@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceInstance.schema.json",
-  "title" : "ResourceInstance",
+  "title" : "ResourceDefinitionVersionResourceInstance",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourceinstance.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ResourceInstance",
-  "javaInterfaces" : [ "aws.Property<ResourceInstance>" ],
+  "javaType" : "aws.greengrass.ResourceDefinitionVersionResourceInstance",
+  "javaInterfaces" : [ "aws.Property<ResourceDefinitionVersionResourceInstance>" ],
   "properties" : {
     "ResourceDataContainer" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourceinstance.html#cfn-greengrass-resourcedefinitionversion-resourceinstance-resourcedatacontainer",
       "$ref" : "AWS_Greengrass_ResourceDefinitionVersion.ResourceDataContainer.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.ResourceDataContainer>"
+      "javaType" : "aws.Property<aws.greengrass.ResourceDefinitionVersionResourceDataContainer>"
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-resourceinstance.html#cfn-greengrass-resourcedefinitionversion-resourceinstance-id",

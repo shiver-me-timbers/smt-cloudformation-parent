@@ -65,7 +65,7 @@ public class Fleet {
     @JsonProperty("EC2InboundPermissions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2inboundpermissions")
-    private Set<Property<IpPermission>> eC2InboundPermissions = new LinkedHashSet<Property<IpPermission>>();
+    private Set<Property<FleetIpPermission>> eC2InboundPermissions = new LinkedHashSet<Property<FleetIpPermission>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html#cfn-gamelift-fleet-ec2instancetype
      * 
@@ -191,7 +191,7 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public Set<Property<IpPermission>> getEC2InboundPermissions() {
+    public Set<Property<FleetIpPermission>> getEC2InboundPermissions() {
         return eC2InboundPermissions;
     }
 
@@ -200,11 +200,11 @@ public class Fleet {
      * 
      */
     @JsonIgnore
-    public void setEC2InboundPermissions(Set<Property<IpPermission>> eC2InboundPermissions) {
+    public void setEC2InboundPermissions(Set<Property<FleetIpPermission>> eC2InboundPermissions) {
         this.eC2InboundPermissions = eC2InboundPermissions;
     }
 
-    public Fleet withEC2InboundPermissions(Set<Property<IpPermission>> eC2InboundPermissions) {
+    public Fleet withEC2InboundPermissions(Set<Property<FleetIpPermission>> eC2InboundPermissions) {
         this.eC2InboundPermissions = eC2InboundPermissions;
         return this;
     }

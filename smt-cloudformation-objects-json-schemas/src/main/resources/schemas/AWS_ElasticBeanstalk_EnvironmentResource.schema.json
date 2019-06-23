@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticbeanstalk.EnvironmentResource",
-  "javaInterfaces" : [ "aws.HasAttributes<EnvironmentAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<EnvironmentResource>", "aws.HasCondition<EnvironmentResource>", "aws.HasAttributes<EnvironmentAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

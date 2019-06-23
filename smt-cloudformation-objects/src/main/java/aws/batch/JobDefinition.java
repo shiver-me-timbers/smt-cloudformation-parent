@@ -45,32 +45,32 @@ public class JobDefinition {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-parameters")
     private Object parameters;
     /**
-     * NodeProperties
+     * JobDefinitionNodeProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
      * 
      */
     @JsonProperty("NodeProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html")
-    private Property<NodeProperties> nodeProperties;
+    private Property<JobDefinitionNodeProperties> nodeProperties;
     /**
-     * Timeout
+     * JobDefinitionTimeout
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html
      * 
      */
     @JsonProperty("Timeout")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html")
-    private Property<Timeout> timeout;
+    private Property<JobDefinitionTimeout> timeout;
     /**
-     * ContainerProperties
+     * JobDefinitionContainerProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html
      * 
      */
     @JsonProperty("ContainerProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html")
-    private Property<ContainerProperties> containerProperties;
+    private Property<JobDefinitionContainerProperties> containerProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname
      * 
@@ -79,14 +79,14 @@ public class JobDefinition {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname")
     private CharSequence jobDefinitionName;
     /**
-     * RetryStrategy
+     * JobDefinitionRetryStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html
      * 
      */
     @JsonProperty("RetryStrategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html")
-    private Property<RetryStrategy> retryStrategy;
+    private Property<JobDefinitionRetryStrategy> retryStrategy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type
@@ -135,82 +135,82 @@ public class JobDefinition {
     }
 
     /**
-     * NodeProperties
+     * JobDefinitionNodeProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
      * 
      */
     @JsonIgnore
-    public Property<NodeProperties> getNodeProperties() {
+    public Property<JobDefinitionNodeProperties> getNodeProperties() {
         return nodeProperties;
     }
 
     /**
-     * NodeProperties
+     * JobDefinitionNodeProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-nodeproperties.html
      * 
      */
     @JsonIgnore
-    public void setNodeProperties(Property<NodeProperties> nodeProperties) {
+    public void setNodeProperties(Property<JobDefinitionNodeProperties> nodeProperties) {
         this.nodeProperties = nodeProperties;
     }
 
-    public JobDefinition withNodeProperties(Property<NodeProperties> nodeProperties) {
+    public JobDefinition withNodeProperties(Property<JobDefinitionNodeProperties> nodeProperties) {
         this.nodeProperties = nodeProperties;
         return this;
     }
 
     /**
-     * Timeout
+     * JobDefinitionTimeout
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html
      * 
      */
     @JsonIgnore
-    public Property<Timeout> getTimeout() {
+    public Property<JobDefinitionTimeout> getTimeout() {
         return timeout;
     }
 
     /**
-     * Timeout
+     * JobDefinitionTimeout
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-timeout.html
      * 
      */
     @JsonIgnore
-    public void setTimeout(Property<Timeout> timeout) {
+    public void setTimeout(Property<JobDefinitionTimeout> timeout) {
         this.timeout = timeout;
     }
 
-    public JobDefinition withTimeout(Property<Timeout> timeout) {
+    public JobDefinition withTimeout(Property<JobDefinitionTimeout> timeout) {
         this.timeout = timeout;
         return this;
     }
 
     /**
-     * ContainerProperties
+     * JobDefinitionContainerProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html
      * 
      */
     @JsonIgnore
-    public Property<ContainerProperties> getContainerProperties() {
+    public Property<JobDefinitionContainerProperties> getContainerProperties() {
         return containerProperties;
     }
 
     /**
-     * ContainerProperties
+     * JobDefinitionContainerProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html
      * 
      */
     @JsonIgnore
-    public void setContainerProperties(Property<ContainerProperties> containerProperties) {
+    public void setContainerProperties(Property<JobDefinitionContainerProperties> containerProperties) {
         this.containerProperties = containerProperties;
     }
 
-    public JobDefinition withContainerProperties(Property<ContainerProperties> containerProperties) {
+    public JobDefinition withContainerProperties(Property<JobDefinitionContainerProperties> containerProperties) {
         this.containerProperties = containerProperties;
         return this;
     }
@@ -239,28 +239,28 @@ public class JobDefinition {
     }
 
     /**
-     * RetryStrategy
+     * JobDefinitionRetryStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html
      * 
      */
     @JsonIgnore
-    public Property<RetryStrategy> getRetryStrategy() {
+    public Property<JobDefinitionRetryStrategy> getRetryStrategy() {
         return retryStrategy;
     }
 
     /**
-     * RetryStrategy
+     * JobDefinitionRetryStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-retrystrategy.html
      * 
      */
     @JsonIgnore
-    public void setRetryStrategy(Property<RetryStrategy> retryStrategy) {
+    public void setRetryStrategy(Property<JobDefinitionRetryStrategy> retryStrategy) {
         this.retryStrategy = retryStrategy;
     }
 
-    public JobDefinition withRetryStrategy(Property<RetryStrategy> retryStrategy) {
+    public JobDefinition withRetryStrategy(Property<JobDefinitionRetryStrategy> retryStrategy) {
         this.retryStrategy = retryStrategy;
         return this;
     }

@@ -48,23 +48,23 @@ public class Fleet {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-description")
     private CharSequence description;
     /**
-     * ComputeCapacity
+     * FleetComputeCapacity
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html
      * 
      */
     @JsonProperty("ComputeCapacity")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html")
-    private Property<ComputeCapacity> computeCapacity;
+    private Property<FleetComputeCapacity> computeCapacity;
     /**
-     * VpcConfig
+     * FleetVpcConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html
      * 
      */
     @JsonProperty("VpcConfig")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html")
-    private Property<VpcConfig> vpcConfig;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html")
+    private Property<FleetVpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-fleettype
      * 
@@ -80,14 +80,14 @@ public class Fleet {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-enabledefaultinternetaccess")
     private Boolean enableDefaultInternetAccess;
     /**
-     * DomainJoinInfo
+     * FleetDomainJoinInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
      * 
      */
     @JsonProperty("DomainJoinInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html")
-    private Property<DomainJoinInfo> domainJoinInfo;
+    private Property<FleetDomainJoinInfo> domainJoinInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-fleet.html#cfn-appstream-fleet-name
      * 
@@ -169,55 +169,55 @@ public class Fleet {
     }
 
     /**
-     * ComputeCapacity
+     * FleetComputeCapacity
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html
      * 
      */
     @JsonIgnore
-    public Property<ComputeCapacity> getComputeCapacity() {
+    public Property<FleetComputeCapacity> getComputeCapacity() {
         return computeCapacity;
     }
 
     /**
-     * ComputeCapacity
+     * FleetComputeCapacity
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html
      * 
      */
     @JsonIgnore
-    public void setComputeCapacity(Property<ComputeCapacity> computeCapacity) {
+    public void setComputeCapacity(Property<FleetComputeCapacity> computeCapacity) {
         this.computeCapacity = computeCapacity;
     }
 
-    public Fleet withComputeCapacity(Property<ComputeCapacity> computeCapacity) {
+    public Fleet withComputeCapacity(Property<FleetComputeCapacity> computeCapacity) {
         this.computeCapacity = computeCapacity;
         return this;
     }
 
     /**
-     * VpcConfig
+     * FleetVpcConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VpcConfig> getVpcConfig() {
+    public Property<FleetVpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
     /**
-     * VpcConfig
+     * FleetVpcConfig
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
+    public void setVpcConfig(Property<FleetVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Fleet withVpcConfig(Property<VpcConfig> vpcConfig) {
+    public Fleet withVpcConfig(Property<FleetVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -269,28 +269,28 @@ public class Fleet {
     }
 
     /**
-     * DomainJoinInfo
+     * FleetDomainJoinInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
      * 
      */
     @JsonIgnore
-    public Property<DomainJoinInfo> getDomainJoinInfo() {
+    public Property<FleetDomainJoinInfo> getDomainJoinInfo() {
         return domainJoinInfo;
     }
 
     /**
-     * DomainJoinInfo
+     * FleetDomainJoinInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
      * 
      */
     @JsonIgnore
-    public void setDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
+    public void setDomainJoinInfo(Property<FleetDomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
     }
 
-    public Fleet withDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
+    public Fleet withDomainJoinInfo(Property<FleetDomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
         return this;
     }

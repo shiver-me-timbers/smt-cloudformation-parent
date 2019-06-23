@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.Rule.schema.json",
-  "title" : "Rule",
+  "title" : "BucketRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html",
   "type" : "object",
-  "javaType" : "aws.s3.Rule",
-  "javaInterfaces" : [ "aws.Property<Rule>" ],
+  "javaType" : "aws.s3.BucketRule",
+  "javaInterfaces" : [ "aws.Property<BucketRule>" ],
   "properties" : {
     "AbortIncompleteMultipartUpload" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-rule-abortincompletemultipartupload",
       "$ref" : "AWS_S3_Bucket.AbortIncompleteMultipartUpload.schema.json",
-      "javaType" : "aws.Property<aws.s3.AbortIncompleteMultipartUpload>"
+      "javaType" : "aws.Property<aws.s3.BucketAbortIncompleteMultipartUpload>"
     },
     "ExpirationDate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-expirationdate",
@@ -32,7 +32,7 @@
     "NoncurrentVersionTransition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition",
       "$ref" : "AWS_S3_Bucket.NoncurrentVersionTransition.schema.json",
-      "javaType" : "aws.Property<aws.s3.NoncurrentVersionTransition>"
+      "javaType" : "aws.Property<aws.s3.BucketNoncurrentVersionTransition>"
     },
     "NoncurrentVersionTransitions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-noncurrentversiontransitions",
@@ -40,7 +40,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.NoncurrentVersionTransition.schema.json",
-        "javaType" : "aws.Property<aws.s3.NoncurrentVersionTransition>"
+        "javaType" : "aws.Property<aws.s3.BucketNoncurrentVersionTransition>"
       }
     },
     "Prefix" : {
@@ -59,13 +59,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.TagFilter.schema.json",
-        "javaType" : "aws.Property<aws.s3.TagFilter>"
+        "javaType" : "aws.Property<aws.s3.BucketTagFilter>"
       }
     },
     "Transition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transition",
       "$ref" : "AWS_S3_Bucket.NoncurrentVersionTransition.schema.json",
-      "javaType" : "aws.Property<aws.s3.Transition>"
+      "javaType" : "aws.Property<aws.s3.BucketTransition>"
     },
     "Transitions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html#cfn-s3-bucket-lifecycleconfig-rule-transitions",
@@ -73,7 +73,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.NoncurrentVersionTransition.schema.json",
-        "javaType" : "aws.Property<aws.s3.Transition>"
+        "javaType" : "aws.Property<aws.s3.BucketTransition>"
       }
     }
   }

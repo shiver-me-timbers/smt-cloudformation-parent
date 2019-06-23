@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudwatch.AlarmResource",
-  "javaInterfaces" : [ "aws.HasAttributes<AlarmAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<AlarmResource>", "aws.HasCondition<AlarmResource>", "aws.HasAttributes<AlarmAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

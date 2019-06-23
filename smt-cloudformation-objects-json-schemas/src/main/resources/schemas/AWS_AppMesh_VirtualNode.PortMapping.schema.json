@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualNode.PortMapping.schema.json",
-  "title" : "PortMapping",
+  "title" : "VirtualNodePortMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-portmapping.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.PortMapping",
-  "javaInterfaces" : [ "aws.Property<PortMapping>" ],
+  "javaType" : "aws.appmesh.VirtualNodePortMapping",
+  "javaInterfaces" : [ "aws.Property<VirtualNodePortMapping>" ],
   "properties" : {
     "Port" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-portmapping.html#cfn-appmesh-virtualnode-portmapping-port",

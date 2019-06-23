@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppStream_Fleet.ComputeCapacity.schema.json",
-  "title" : "ComputeCapacity",
+  "title" : "FleetComputeCapacity",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html",
   "type" : "object",
-  "javaType" : "aws.appstream.ComputeCapacity",
-  "javaInterfaces" : [ "aws.Property<ComputeCapacity>" ],
+  "javaType" : "aws.appstream.FleetComputeCapacity",
+  "javaInterfaces" : [ "aws.Property<FleetComputeCapacity>" ],
   "properties" : {
     "DesiredInstances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-computecapacity.html#cfn-appstream-fleet-computecapacity-desiredinstances",

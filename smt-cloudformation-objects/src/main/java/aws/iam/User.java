@@ -43,14 +43,14 @@ public class User {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups")
     private List<CharSequence> groups = new ArrayList<CharSequence>();
     /**
-     * LoginProfile
+     * UserLoginProfile
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html
      * 
      */
     @JsonProperty("LoginProfile")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html")
-    private Property<LoginProfile> loginProfile;
+    private Property<UserLoginProfile> loginProfile;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns
      * 
@@ -79,7 +79,7 @@ public class User {
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies")
-    private List<Property<Policy>> policies = new ArrayList<Property<Policy>>();
+    private List<Property<UserPolicy>> policies = new ArrayList<Property<UserPolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
      * 
@@ -112,28 +112,28 @@ public class User {
     }
 
     /**
-     * LoginProfile
+     * UserLoginProfile
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html
      * 
      */
     @JsonIgnore
-    public Property<LoginProfile> getLoginProfile() {
+    public Property<UserLoginProfile> getLoginProfile() {
         return loginProfile;
     }
 
     /**
-     * LoginProfile
+     * UserLoginProfile
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html
      * 
      */
     @JsonIgnore
-    public void setLoginProfile(Property<LoginProfile> loginProfile) {
+    public void setLoginProfile(Property<UserLoginProfile> loginProfile) {
         this.loginProfile = loginProfile;
     }
 
-    public User withLoginProfile(Property<LoginProfile> loginProfile) {
+    public User withLoginProfile(Property<UserLoginProfile> loginProfile) {
         this.loginProfile = loginProfile;
         return this;
     }
@@ -212,7 +212,7 @@ public class User {
      * 
      */
     @JsonIgnore
-    public List<Property<Policy>> getPolicies() {
+    public List<Property<UserPolicy>> getPolicies() {
         return policies;
     }
 
@@ -221,11 +221,11 @@ public class User {
      * 
      */
     @JsonIgnore
-    public void setPolicies(List<Property<Policy>> policies) {
+    public void setPolicies(List<Property<UserPolicy>> policies) {
         this.policies = policies;
     }
 
-    public User withPolicies(List<Property<Policy>> policies) {
+    public User withPolicies(List<Property<UserPolicy>> policies) {
         this.policies = policies;
         return this;
     }

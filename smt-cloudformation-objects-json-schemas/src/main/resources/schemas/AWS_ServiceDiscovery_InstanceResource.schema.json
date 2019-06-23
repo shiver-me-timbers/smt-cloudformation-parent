@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicediscovery.InstanceResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InstanceResource>", "aws.HasCondition<InstanceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

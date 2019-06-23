@@ -6,6 +6,8 @@ import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -31,7 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class TargetGroupResource
     extends Resource
-    implements HasAttributes<TargetGroupAttributes>
+    implements HasAttributes<TargetGroupAttributes> , HasCondition<TargetGroupResource> , HasDependsOn<TargetGroupResource>
 {
 
     @JsonProperty("Type")

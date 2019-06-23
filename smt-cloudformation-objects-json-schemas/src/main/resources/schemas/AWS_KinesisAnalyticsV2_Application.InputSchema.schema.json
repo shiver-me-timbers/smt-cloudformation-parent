@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_Application.InputSchema.schema.json",
-  "title" : "InputSchema",
+  "title" : "ApplicationInputSchema",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.InputSchema",
-  "javaInterfaces" : [ "aws.Property<InputSchema>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationInputSchema",
+  "javaInterfaces" : [ "aws.Property<ApplicationInputSchema>" ],
   "properties" : {
     "RecordEncoding" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html#cfn-kinesisanalyticsv2-application-inputschema-recordencoding",
@@ -17,13 +17,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordColumn.schema.json",
-        "javaType" : "aws.Property<aws.kinesisanalyticsv2.RecordColumn>"
+        "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationRecordColumn>"
       }
     },
     "RecordFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-inputschema.html#cfn-kinesisanalyticsv2-application-inputschema-recordformat",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.RecordFormat.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.RecordFormat>"
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationRecordFormat>"
     }
   }
 }

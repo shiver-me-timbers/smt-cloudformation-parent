@@ -35,7 +35,7 @@ public class IPSet {
     @JsonProperty("IPSetDescriptors")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-ipsetdescriptors")
-    private Set<Property<IPSetDescriptor>> iPSetDescriptors = new LinkedHashSet<Property<IPSetDescriptor>>();
+    private Set<Property<IPSetIPSetDescriptor>> iPSetDescriptors = new LinkedHashSet<Property<IPSetIPSetDescriptor>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-ipset.html#cfn-waf-ipset-name
      * 
@@ -49,7 +49,7 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public Set<Property<IPSetDescriptor>> getIPSetDescriptors() {
+    public Set<Property<IPSetIPSetDescriptor>> getIPSetDescriptors() {
         return iPSetDescriptors;
     }
 
@@ -58,11 +58,11 @@ public class IPSet {
      * 
      */
     @JsonIgnore
-    public void setIPSetDescriptors(Set<Property<IPSetDescriptor>> iPSetDescriptors) {
+    public void setIPSetDescriptors(Set<Property<IPSetIPSetDescriptor>> iPSetDescriptors) {
         this.iPSetDescriptors = iPSetDescriptors;
     }
 
-    public IPSet withIPSetDescriptors(Set<Property<IPSetDescriptor>> iPSetDescriptors) {
+    public IPSet withIPSetDescriptors(Set<Property<IPSetIPSetDescriptor>> iPSetDescriptors) {
         this.iPSetDescriptors = iPSetDescriptors;
         return this;
     }

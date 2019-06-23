@@ -17,55 +17,85 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * LoggerDefinitionVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "LoggerDefinitionId",
     "Loggers"
 })
-public class LoggerDefinitionVersion implements Property<LoggerDefinitionVersion>
-{
+public class LoggerDefinitionVersion {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid
+     * 
+     */
+    @JsonProperty("LoggerDefinitionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid")
+    private CharSequence loggerDefinitionId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggers
      * 
      */
     @JsonProperty("Loggers")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers")
-    private List<Property<Logger>> loggers = new ArrayList<Property<Logger>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggers")
+    private List<Property<LoggerDefinitionVersionLogger>> loggers = new ArrayList<Property<LoggerDefinitionVersionLogger>>();
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid
      * 
      */
     @JsonIgnore
-    public List<Property<Logger>> getLoggers() {
+    public CharSequence getLoggerDefinitionId() {
+        return loggerDefinitionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggerdefinitionid
+     * 
+     */
+    @JsonIgnore
+    public void setLoggerDefinitionId(CharSequence loggerDefinitionId) {
+        this.loggerDefinitionId = loggerDefinitionId;
+    }
+
+    public LoggerDefinitionVersion withLoggerDefinitionId(CharSequence loggerDefinitionId) {
+        this.loggerDefinitionId = loggerDefinitionId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggers
+     * 
+     */
+    @JsonIgnore
+    public List<Property<LoggerDefinitionVersionLogger>> getLoggers() {
         return loggers;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html#cfn-greengrass-loggerdefinition-loggerdefinitionversion-loggers
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinitionversion.html#cfn-greengrass-loggerdefinitionversion-loggers
      * 
      */
     @JsonIgnore
-    public void setLoggers(List<Property<Logger>> loggers) {
+    public void setLoggers(List<Property<LoggerDefinitionVersionLogger>> loggers) {
         this.loggers = loggers;
     }
 
-    public LoggerDefinitionVersion withLoggers(List<Property<Logger>> loggers) {
+    public LoggerDefinitionVersion withLoggers(List<Property<LoggerDefinitionVersionLogger>> loggers) {
         this.loggers = loggers;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("loggers", loggers).toString();
+        return new ToStringBuilder(this).append("loggerDefinitionId", loggerDefinitionId).append("loggers", loggers).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(loggers).toHashCode();
+        return new HashCodeBuilder().append(loggers).append(loggerDefinitionId).toHashCode();
     }
 
     @Override
@@ -77,7 +107,7 @@ public class LoggerDefinitionVersion implements Property<LoggerDefinitionVersion
             return false;
         }
         LoggerDefinitionVersion rhs = ((LoggerDefinitionVersion) other);
-        return new EqualsBuilder().append(loggers, rhs.loggers).isEquals();
+        return new EqualsBuilder().append(loggers, rhs.loggers).append(loggerDefinitionId, rhs.loggerDefinitionId).isEquals();
     }
 
 }

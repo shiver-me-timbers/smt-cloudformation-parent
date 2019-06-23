@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Webhook.WebhookAuthConfiguration.schema.json",
-  "title" : "WebhookAuthConfiguration",
+  "title" : "WebhookWebhookAuthConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.WebhookAuthConfiguration",
-  "javaInterfaces" : [ "aws.Property<WebhookAuthConfiguration>" ],
+  "javaType" : "aws.codepipeline.WebhookWebhookAuthConfiguration",
+  "javaInterfaces" : [ "aws.Property<WebhookWebhookAuthConfiguration>" ],
   "properties" : {
     "AllowedIPRange" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html#cfn-codepipeline-webhook-webhookauthconfiguration-allowediprange",

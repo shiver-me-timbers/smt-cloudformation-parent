@@ -45,7 +45,7 @@ public class MapTransformer implements PropertyTransformer {
         }
         final String itemType = cloudformationProperty.getItemType();
         if (itemType != null) {
-            return toMapType(classTypeConverter.toJavType(resourceName, itemType));
+            return toMapType(classTypeConverter.toJavaType(resourceName, itemType));
         }
         throw new TypeException(
             format("Could not find Map type for resource (%s) and property (%s),", resourceName, propertyName)

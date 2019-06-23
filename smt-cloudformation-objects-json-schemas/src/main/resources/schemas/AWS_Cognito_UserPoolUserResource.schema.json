@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cognito.UserPoolUserResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<UserPoolUserResource>", "aws.HasCondition<UserPoolUserResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

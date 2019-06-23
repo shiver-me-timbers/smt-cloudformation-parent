@@ -42,7 +42,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudWatch_Alarm.Dimension.schema.json",
-        "javaType" : "aws.Property<aws.cloudwatch.Dimension>"
+        "javaType" : "aws.Property<aws.cloudwatch.AlarmDimension>"
       }
     },
     "EvaluateLowSampleCountPercentile" : {
@@ -78,7 +78,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CloudWatch_Alarm.MetricDataQuery.schema.json",
-        "javaType" : "aws.Property<aws.cloudwatch.MetricDataQuery>"
+        "javaType" : "aws.Property<aws.cloudwatch.AlarmMetricDataQuery>"
       }
     },
     "Namespace" : {

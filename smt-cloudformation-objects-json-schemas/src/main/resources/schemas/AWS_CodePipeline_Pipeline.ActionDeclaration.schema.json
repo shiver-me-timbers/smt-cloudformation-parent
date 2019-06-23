@@ -1,20 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Pipeline.ActionDeclaration.schema.json",
-  "title" : "ActionDeclaration",
+  "title" : "PipelineActionDeclaration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.ActionDeclaration",
-  "javaInterfaces" : [ "aws.Property<ActionDeclaration>" ],
+  "javaType" : "aws.codepipeline.PipelineActionDeclaration",
+  "javaInterfaces" : [ "aws.Property<PipelineActionDeclaration>" ],
   "properties" : {
     "ActionTypeId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid",
       "$ref" : "AWS_CodePipeline_Pipeline.ActionTypeId.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.ActionTypeId>"
+      "javaType" : "aws.Property<aws.codepipeline.PipelineActionTypeId>"
     },
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-configuration",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "InputArtifacts" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html#cfn-codepipeline-pipeline-stages-actions-inputartifacts",
@@ -22,7 +23,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.InputArtifact.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.InputArtifact>"
+        "javaType" : "aws.Property<aws.codepipeline.PipelineInputArtifact>"
       }
     },
     "Name" : {
@@ -36,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_Pipeline.OutputArtifact.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.OutputArtifact>"
+        "javaType" : "aws.Property<aws.codepipeline.PipelineOutputArtifact>"
       }
     },
     "Region" : {

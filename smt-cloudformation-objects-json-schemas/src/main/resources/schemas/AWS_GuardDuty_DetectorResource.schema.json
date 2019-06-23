@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.guardduty.DetectorResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DetectorResource>", "aws.HasCondition<DetectorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

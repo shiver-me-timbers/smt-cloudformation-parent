@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Cluster.ScalingRule.schema.json",
-  "title" : "ScalingRule",
+  "title" : "ClusterScalingRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingrule.html",
   "type" : "object",
-  "javaType" : "aws.emr.ScalingRule",
-  "javaInterfaces" : [ "aws.Property<ScalingRule>" ],
+  "javaType" : "aws.emr.ClusterScalingRule",
+  "javaInterfaces" : [ "aws.Property<ClusterScalingRule>" ],
   "properties" : {
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingrule.html#cfn-elasticmapreduce-cluster-scalingrule-action",
-      "$ref" : "AWS_EMR_InstanceGroupConfig.ScalingAction.schema.json",
-      "javaType" : "aws.Property<aws.emr.ScalingAction>"
+      "$ref" : "AWS_EMR_Cluster.ScalingAction.schema.json",
+      "javaType" : "aws.Property<aws.emr.ClusterScalingAction>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingrule.html#cfn-elasticmapreduce-cluster-scalingrule-description",
@@ -24,8 +24,8 @@
     },
     "Trigger" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-scalingrule.html#cfn-elasticmapreduce-cluster-scalingrule-trigger",
-      "$ref" : "AWS_EMR_InstanceGroupConfig.ScalingTrigger.schema.json",
-      "javaType" : "aws.Property<aws.emr.ScalingTrigger>"
+      "$ref" : "AWS_EMR_Cluster.ScalingTrigger.schema.json",
+      "javaType" : "aws.Property<aws.emr.ClusterScalingTrigger>"
     }
   }
 }

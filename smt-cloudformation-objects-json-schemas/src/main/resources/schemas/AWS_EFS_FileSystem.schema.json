@@ -16,7 +16,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EFS_FileSystem.ElasticFileSystemTag.schema.json",
-        "javaType" : "aws.Property<aws.efs.ElasticFileSystemTag>"
+        "javaType" : "aws.Property<aws.efs.FileSystemElasticFileSystemTag>"
       }
     },
     "KmsKeyId" : {

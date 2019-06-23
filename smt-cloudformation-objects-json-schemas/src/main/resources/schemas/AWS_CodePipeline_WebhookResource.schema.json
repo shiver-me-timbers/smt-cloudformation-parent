@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codepipeline.WebhookResource",
-  "javaInterfaces" : [ "aws.HasAttributes<WebhookAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<WebhookResource>", "aws.HasCondition<WebhookResource>", "aws.HasAttributes<WebhookAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

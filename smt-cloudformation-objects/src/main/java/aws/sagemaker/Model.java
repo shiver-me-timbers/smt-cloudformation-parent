@@ -40,14 +40,14 @@ public class Model {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-executionrolearn")
     private CharSequence executionRoleArn;
     /**
-     * ContainerDefinition
+     * ModelContainerDefinition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html
      * 
      */
     @JsonProperty("PrimaryContainer")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html")
-    private Property<aws.sagemaker.ContainerDefinition> primaryContainer;
+    private Property<aws.sagemaker.ModelContainerDefinition> primaryContainer;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname
      * 
@@ -56,21 +56,21 @@ public class Model {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-modelname")
     private CharSequence modelName;
     /**
-     * VpcConfig
+     * ModelVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html
      * 
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html")
-    private Property<VpcConfig> vpcConfig;
+    private Property<ModelVpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers
      * 
      */
     @JsonProperty("Containers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-containers")
-    private List<Property<aws.sagemaker.ContainerDefinition>> containers = new ArrayList<Property<aws.sagemaker.ContainerDefinition>>();
+    private List<Property<aws.sagemaker.ModelContainerDefinition>> containers = new ArrayList<Property<aws.sagemaker.ModelContainerDefinition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-model.html#cfn-sagemaker-model-tags
      * 
@@ -103,28 +103,28 @@ public class Model {
     }
 
     /**
-     * ContainerDefinition
+     * ModelContainerDefinition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html
      * 
      */
     @JsonIgnore
-    public Property<aws.sagemaker.ContainerDefinition> getPrimaryContainer() {
+    public Property<aws.sagemaker.ModelContainerDefinition> getPrimaryContainer() {
         return primaryContainer;
     }
 
     /**
-     * ContainerDefinition
+     * ModelContainerDefinition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html
      * 
      */
     @JsonIgnore
-    public void setPrimaryContainer(Property<aws.sagemaker.ContainerDefinition> primaryContainer) {
+    public void setPrimaryContainer(Property<aws.sagemaker.ModelContainerDefinition> primaryContainer) {
         this.primaryContainer = primaryContainer;
     }
 
-    public Model withPrimaryContainer(Property<aws.sagemaker.ContainerDefinition> primaryContainer) {
+    public Model withPrimaryContainer(Property<aws.sagemaker.ModelContainerDefinition> primaryContainer) {
         this.primaryContainer = primaryContainer;
         return this;
     }
@@ -153,28 +153,28 @@ public class Model {
     }
 
     /**
-     * VpcConfig
+     * ModelVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VpcConfig> getVpcConfig() {
+    public Property<ModelVpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
     /**
-     * VpcConfig
+     * ModelVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
+    public void setVpcConfig(Property<ModelVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Model withVpcConfig(Property<VpcConfig> vpcConfig) {
+    public Model withVpcConfig(Property<ModelVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -184,7 +184,7 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public List<Property<aws.sagemaker.ContainerDefinition>> getContainers() {
+    public List<Property<aws.sagemaker.ModelContainerDefinition>> getContainers() {
         return containers;
     }
 
@@ -193,11 +193,11 @@ public class Model {
      * 
      */
     @JsonIgnore
-    public void setContainers(List<Property<aws.sagemaker.ContainerDefinition>> containers) {
+    public void setContainers(List<Property<aws.sagemaker.ModelContainerDefinition>> containers) {
         this.containers = containers;
     }
 
-    public Model withContainers(List<Property<aws.sagemaker.ContainerDefinition>> containers) {
+    public Model withContainers(List<Property<aws.sagemaker.ModelContainerDefinition>> containers) {
         this.containers = containers;
         return this;
     }

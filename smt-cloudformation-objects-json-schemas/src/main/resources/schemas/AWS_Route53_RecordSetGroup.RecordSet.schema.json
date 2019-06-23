@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_RecordSetGroup.RecordSet.schema.json",
-  "title" : "RecordSet",
+  "title" : "RecordSetGroupRecordSet",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html",
   "type" : "object",
-  "javaType" : "aws.route53.RecordSet",
-  "javaInterfaces" : [ "aws.Property<RecordSet>" ],
+  "javaType" : "aws.route53.RecordSetGroupRecordSet",
+  "javaInterfaces" : [ "aws.Property<RecordSetGroupRecordSet>" ],
   "properties" : {
     "AliasTarget" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-aliastarget",
       "$ref" : "AWS_Route53_RecordSetGroup.AliasTarget.schema.json",
-      "javaType" : "aws.Property<aws.route53.AliasTarget>"
+      "javaType" : "aws.Property<aws.route53.RecordSetGroupAliasTarget>"
     },
     "Comment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment",
@@ -24,8 +24,8 @@
     },
     "GeoLocation" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-geolocation",
-      "$ref" : "AWS_Route53_RecordSet.GeoLocation.schema.json",
-      "javaType" : "aws.Property<aws.route53.GeoLocation>"
+      "$ref" : "AWS_Route53_RecordSetGroup.GeoLocation.schema.json",
+      "javaType" : "aws.Property<aws.route53.RecordSetGroupGeoLocation>"
     },
     "HealthCheckId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid",

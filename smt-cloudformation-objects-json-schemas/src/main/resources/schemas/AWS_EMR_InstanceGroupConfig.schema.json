@@ -9,7 +9,7 @@
     "AutoScalingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-elasticmapreduce-instancegroupconfig-autoscalingpolicy",
       "$ref" : "AWS_EMR_InstanceGroupConfig.AutoScalingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.emr.AutoScalingPolicy>"
+      "javaType" : "aws.Property<aws.emr.InstanceGroupConfigAutoScalingPolicy>"
     },
     "BidPrice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-emr-instancegroupconfig-bidprice",
@@ -21,14 +21,14 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.emr.Configuration>"
+        "$ref" : "AWS_EMR_InstanceGroupConfig.EbsConfiguration.schema.json",
+        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigConfiguration>"
       }
     },
     "EbsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-emr-instancegroupconfig-ebsconfiguration",
-      "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.emr.EbsConfiguration>"
+      "$ref" : "AWS_EMR_InstanceGroupConfig.EbsConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.emr.InstanceGroupConfigEbsConfiguration>"
     },
     "InstanceCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-instancegroupconfig.html#cfn-emr-instancegroupconfiginstancecount-",

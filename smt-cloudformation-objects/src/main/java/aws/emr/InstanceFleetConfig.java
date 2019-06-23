@@ -18,111 +18,172 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * InstanceFleetConfig
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "ClusterId",
+    "InstanceFleetType",
     "InstanceTypeConfigs",
     "LaunchSpecifications",
     "Name",
     "TargetOnDemandCapacity",
     "TargetSpotCapacity"
 })
-public class InstanceFleetConfig implements Property<InstanceFleetConfig>
-{
+public class InstanceFleetConfig {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid
+     * 
+     */
+    @JsonProperty("ClusterId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid")
+    private CharSequence clusterId;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancefleettype
+     * 
+     */
+    @JsonProperty("InstanceFleetType")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancefleettype")
+    private CharSequence instanceFleetType;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfigs
      * 
      */
     @JsonProperty("InstanceTypeConfigs")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs")
-    private Set<Property<InstanceTypeConfig>> instanceTypeConfigs = new LinkedHashSet<Property<InstanceTypeConfig>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfigs")
+    private Set<Property<InstanceFleetConfigInstanceTypeConfig>> instanceTypeConfigs = new LinkedHashSet<Property<InstanceFleetConfigInstanceTypeConfig>>();
     /**
-     * InstanceFleetProvisioningSpecifications
+     * InstanceFleetConfigInstanceFleetProvisioningSpecifications
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
      * 
      */
     @JsonProperty("LaunchSpecifications")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html")
-    private Property<InstanceFleetProvisioningSpecifications> launchSpecifications;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html")
+    private Property<InstanceFleetConfigInstanceFleetProvisioningSpecifications> launchSpecifications;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-name
      * 
      */
     @JsonProperty("Name")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-name")
     private CharSequence name;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity
      * 
      */
     @JsonProperty("TargetOnDemandCapacity")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity")
     private Integer targetOnDemandCapacity;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity
      * 
      */
     @JsonProperty("TargetSpotCapacity")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity")
     private Integer targetSpotCapacity;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid
      * 
      */
     @JsonIgnore
-    public Set<Property<InstanceTypeConfig>> getInstanceTypeConfigs() {
+    public CharSequence getClusterId() {
+        return clusterId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid
+     * 
+     */
+    @JsonIgnore
+    public void setClusterId(CharSequence clusterId) {
+        this.clusterId = clusterId;
+    }
+
+    public InstanceFleetConfig withClusterId(CharSequence clusterId) {
+        this.clusterId = clusterId;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancefleettype
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getInstanceFleetType() {
+        return instanceFleetType;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancefleettype
+     * 
+     */
+    @JsonIgnore
+    public void setInstanceFleetType(CharSequence instanceFleetType) {
+        this.instanceFleetType = instanceFleetType;
+    }
+
+    public InstanceFleetConfig withInstanceFleetType(CharSequence instanceFleetType) {
+        this.instanceFleetType = instanceFleetType;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfigs
+     * 
+     */
+    @JsonIgnore
+    public Set<Property<InstanceFleetConfigInstanceTypeConfig>> getInstanceTypeConfigs() {
         return instanceTypeConfigs;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfigs
      * 
      */
     @JsonIgnore
-    public void setInstanceTypeConfigs(Set<Property<InstanceTypeConfig>> instanceTypeConfigs) {
+    public void setInstanceTypeConfigs(Set<Property<InstanceFleetConfigInstanceTypeConfig>> instanceTypeConfigs) {
         this.instanceTypeConfigs = instanceTypeConfigs;
     }
 
-    public InstanceFleetConfig withInstanceTypeConfigs(Set<Property<InstanceTypeConfig>> instanceTypeConfigs) {
+    public InstanceFleetConfig withInstanceTypeConfigs(Set<Property<InstanceFleetConfigInstanceTypeConfig>> instanceTypeConfigs) {
         this.instanceTypeConfigs = instanceTypeConfigs;
         return this;
     }
 
     /**
-     * InstanceFleetProvisioningSpecifications
+     * InstanceFleetConfigInstanceFleetProvisioningSpecifications
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
      * 
      */
     @JsonIgnore
-    public Property<InstanceFleetProvisioningSpecifications> getLaunchSpecifications() {
+    public Property<InstanceFleetConfigInstanceFleetProvisioningSpecifications> getLaunchSpecifications() {
         return launchSpecifications;
     }
 
     /**
-     * InstanceFleetProvisioningSpecifications
+     * InstanceFleetConfigInstanceFleetProvisioningSpecifications
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetprovisioningspecifications.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancefleetprovisioningspecifications.html
      * 
      */
     @JsonIgnore
-    public void setLaunchSpecifications(Property<InstanceFleetProvisioningSpecifications> launchSpecifications) {
+    public void setLaunchSpecifications(Property<InstanceFleetConfigInstanceFleetProvisioningSpecifications> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
     }
 
-    public InstanceFleetConfig withLaunchSpecifications(Property<InstanceFleetProvisioningSpecifications> launchSpecifications) {
+    public InstanceFleetConfig withLaunchSpecifications(Property<InstanceFleetConfigInstanceFleetProvisioningSpecifications> launchSpecifications) {
         this.launchSpecifications = launchSpecifications;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-name
      * 
      */
     @JsonIgnore
@@ -131,7 +192,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-name
      * 
      */
     @JsonIgnore
@@ -145,7 +206,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity
      * 
      */
     @JsonIgnore
@@ -154,7 +215,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity
      * 
      */
     @JsonIgnore
@@ -168,7 +229,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity
      * 
      */
     @JsonIgnore
@@ -177,7 +238,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity
      * 
      */
     @JsonIgnore
@@ -192,12 +253,12 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("instanceTypeConfigs", instanceTypeConfigs).append("launchSpecifications", launchSpecifications).append("name", name).append("targetOnDemandCapacity", targetOnDemandCapacity).append("targetSpotCapacity", targetSpotCapacity).toString();
+        return new ToStringBuilder(this).append("clusterId", clusterId).append("instanceFleetType", instanceFleetType).append("instanceTypeConfigs", instanceTypeConfigs).append("launchSpecifications", launchSpecifications).append("name", name).append("targetOnDemandCapacity", targetOnDemandCapacity).append("targetSpotCapacity", targetSpotCapacity).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(name).append(targetSpotCapacity).append(targetOnDemandCapacity).append(launchSpecifications).append(instanceTypeConfigs).toHashCode();
+        return new HashCodeBuilder().append(name).append(targetSpotCapacity).append(clusterId).append(targetOnDemandCapacity).append(launchSpecifications).append(instanceFleetType).append(instanceTypeConfigs).toHashCode();
     }
 
     @Override
@@ -209,7 +270,7 @@ public class InstanceFleetConfig implements Property<InstanceFleetConfig>
             return false;
         }
         InstanceFleetConfig rhs = ((InstanceFleetConfig) other);
-        return new EqualsBuilder().append(name, rhs.name).append(targetSpotCapacity, rhs.targetSpotCapacity).append(targetOnDemandCapacity, rhs.targetOnDemandCapacity).append(launchSpecifications, rhs.launchSpecifications).append(instanceTypeConfigs, rhs.instanceTypeConfigs).isEquals();
+        return new EqualsBuilder().append(name, rhs.name).append(targetSpotCapacity, rhs.targetSpotCapacity).append(clusterId, rhs.clusterId).append(targetOnDemandCapacity, rhs.targetOnDemandCapacity).append(launchSpecifications, rhs.launchSpecifications).append(instanceFleetType, rhs.instanceFleetType).append(instanceTypeConfigs, rhs.instanceTypeConfigs).isEquals();
     }
 
 }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.s3.BucketPolicyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BucketPolicyResource>", "aws.HasCondition<BucketPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot.ThingResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ThingResource>", "aws.HasCondition<ThingResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

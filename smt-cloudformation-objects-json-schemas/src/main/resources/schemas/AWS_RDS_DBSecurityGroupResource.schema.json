@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.DBSecurityGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DBSecurityGroupResource>", "aws.HasCondition<DBSecurityGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

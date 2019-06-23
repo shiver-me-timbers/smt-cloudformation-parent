@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.redshift.ClusterSecurityGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterSecurityGroupResource>", "aws.HasCondition<ClusterSecurityGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

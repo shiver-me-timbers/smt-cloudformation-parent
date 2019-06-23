@@ -37,7 +37,7 @@ public class ListenerRule {
     @JsonProperty("Actions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-actions")
-    private Set<Property<Action>> actions = new LinkedHashSet<Property<Action>>();
+    private Set<Property<ListenerRuleAction>> actions = new LinkedHashSet<Property<ListenerRuleAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-conditions
      * 
@@ -45,7 +45,7 @@ public class ListenerRule {
     @JsonProperty("Conditions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-conditions")
-    private Set<Property<RuleCondition>> conditions = new LinkedHashSet<Property<RuleCondition>>();
+    private Set<Property<ListenerRuleRuleCondition>> conditions = new LinkedHashSet<Property<ListenerRuleRuleCondition>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-listenerarn
      * 
@@ -66,7 +66,7 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public Set<Property<Action>> getActions() {
+    public Set<Property<ListenerRuleAction>> getActions() {
         return actions;
     }
 
@@ -75,11 +75,11 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public void setActions(Set<Property<Action>> actions) {
+    public void setActions(Set<Property<ListenerRuleAction>> actions) {
         this.actions = actions;
     }
 
-    public ListenerRule withActions(Set<Property<Action>> actions) {
+    public ListenerRule withActions(Set<Property<ListenerRuleAction>> actions) {
         this.actions = actions;
         return this;
     }
@@ -89,7 +89,7 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public Set<Property<RuleCondition>> getConditions() {
+    public Set<Property<ListenerRuleRuleCondition>> getConditions() {
         return conditions;
     }
 
@@ -98,11 +98,11 @@ public class ListenerRule {
      * 
      */
     @JsonIgnore
-    public void setConditions(Set<Property<RuleCondition>> conditions) {
+    public void setConditions(Set<Property<ListenerRuleRuleCondition>> conditions) {
         this.conditions = conditions;
     }
 
-    public ListenerRule withConditions(Set<Property<RuleCondition>> conditions) {
+    public ListenerRule withConditions(Set<Property<ListenerRuleRuleCondition>> conditions) {
         this.conditions = conditions;
         return this;
     }

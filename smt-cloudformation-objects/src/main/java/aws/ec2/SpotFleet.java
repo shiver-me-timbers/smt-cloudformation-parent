@@ -25,38 +25,38 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class SpotFleet {
 
     /**
-     * SpotFleetRequestConfigData
+     * SpotFleetSpotFleetRequestConfigData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
     @JsonProperty("SpotFleetRequestConfigData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html")
-    private Property<SpotFleetRequestConfigData> spotFleetRequestConfigData;
+    private Property<SpotFleetSpotFleetRequestConfigData> spotFleetRequestConfigData;
 
     /**
-     * SpotFleetRequestConfigData
+     * SpotFleetSpotFleetRequestConfigData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
     @JsonIgnore
-    public Property<SpotFleetRequestConfigData> getSpotFleetRequestConfigData() {
+    public Property<SpotFleetSpotFleetRequestConfigData> getSpotFleetRequestConfigData() {
         return spotFleetRequestConfigData;
     }
 
     /**
-     * SpotFleetRequestConfigData
+     * SpotFleetSpotFleetRequestConfigData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html
      * 
      */
     @JsonIgnore
-    public void setSpotFleetRequestConfigData(Property<SpotFleetRequestConfigData> spotFleetRequestConfigData) {
+    public void setSpotFleetRequestConfigData(Property<SpotFleetSpotFleetRequestConfigData> spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
     }
 
-    public SpotFleet withSpotFleetRequestConfigData(Property<SpotFleetRequestConfigData> spotFleetRequestConfigData) {
+    public SpotFleet withSpotFleetRequestConfigData(Property<SpotFleetSpotFleetRequestConfigData> spotFleetRequestConfigData) {
         this.spotFleetRequestConfigData = spotFleetRequestConfigData;
         return this;
     }

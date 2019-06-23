@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.gamelift.BuildResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BuildResource>", "aws.HasCondition<BuildResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

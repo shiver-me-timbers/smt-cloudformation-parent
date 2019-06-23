@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sagemaker.NotebookInstanceLifecycleConfigResource",
-  "javaInterfaces" : [ "aws.HasAttributes<NotebookInstanceLifecycleConfigAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<NotebookInstanceLifecycleConfigResource>", "aws.HasCondition<NotebookInstanceLifecycleConfigResource>", "aws.HasAttributes<NotebookInstanceLifecycleConfigAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

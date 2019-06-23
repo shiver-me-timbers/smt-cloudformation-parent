@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_ResourceDefinitionVersion.SageMakerMachineLearningModelResourceData.schema.json",
-  "title" : "SageMakerMachineLearningModelResourceData",
+  "title" : "ResourceDefinitionVersionSageMakerMachineLearningModelResourceData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.SageMakerMachineLearningModelResourceData",
-  "javaInterfaces" : [ "aws.Property<SageMakerMachineLearningModelResourceData>" ],
+  "javaType" : "aws.greengrass.ResourceDefinitionVersionSageMakerMachineLearningModelResourceData",
+  "javaInterfaces" : [ "aws.Property<ResourceDefinitionVersionSageMakerMachineLearningModelResourceData>" ],
   "properties" : {
     "DestinationPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-sagemakermachinelearningmodelresourcedata-destinationpath",

@@ -33,14 +33,14 @@ public class ConfigurationSetEventDestination {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html#cfn-ses-configurationseteventdestination-configurationsetname")
     private CharSequence configurationSetName;
     /**
-     * EventDestination
+     * ConfigurationSetEventDestinationEventDestination
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html
      * 
      */
     @JsonProperty("EventDestination")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html")
-    private Property<EventDestination> eventDestination;
+    private Property<ConfigurationSetEventDestinationEventDestination> eventDestination;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html#cfn-ses-configurationseteventdestination-configurationsetname
@@ -66,28 +66,28 @@ public class ConfigurationSetEventDestination {
     }
 
     /**
-     * EventDestination
+     * ConfigurationSetEventDestinationEventDestination
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html
      * 
      */
     @JsonIgnore
-    public Property<EventDestination> getEventDestination() {
+    public Property<ConfigurationSetEventDestinationEventDestination> getEventDestination() {
         return eventDestination;
     }
 
     /**
-     * EventDestination
+     * ConfigurationSetEventDestinationEventDestination
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-configurationseteventdestination-eventdestination.html
      * 
      */
     @JsonIgnore
-    public void setEventDestination(Property<EventDestination> eventDestination) {
+    public void setEventDestination(Property<ConfigurationSetEventDestinationEventDestination> eventDestination) {
         this.eventDestination = eventDestination;
     }
 
-    public ConfigurationSetEventDestination withEventDestination(Property<EventDestination> eventDestination) {
+    public ConfigurationSetEventDestination withEventDestination(Property<ConfigurationSetEventDestinationEventDestination> eventDestination) {
         this.eventDestination = eventDestination;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.redshift.ClusterSecurityGroupIngressResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterSecurityGroupIngressResource>", "aws.HasCondition<ClusterSecurityGroupIngressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

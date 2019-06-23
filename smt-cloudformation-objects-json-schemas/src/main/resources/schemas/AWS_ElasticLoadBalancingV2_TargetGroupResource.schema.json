@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticloadbalancingv2.TargetGroupResource",
-  "javaInterfaces" : [ "aws.HasAttributes<TargetGroupAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<TargetGroupResource>", "aws.HasCondition<TargetGroupResource>", "aws.HasAttributes<TargetGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

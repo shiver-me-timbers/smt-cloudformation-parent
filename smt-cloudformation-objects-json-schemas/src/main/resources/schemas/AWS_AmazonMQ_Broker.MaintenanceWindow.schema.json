@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AmazonMQ_Broker.MaintenanceWindow.schema.json",
-  "title" : "MaintenanceWindow",
+  "title" : "BrokerMaintenanceWindow",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.MaintenanceWindow",
-  "javaInterfaces" : [ "aws.Property<MaintenanceWindow>" ],
+  "javaType" : "aws.amazonmq.BrokerMaintenanceWindow",
+  "javaInterfaces" : [ "aws.Property<BrokerMaintenanceWindow>" ],
   "properties" : {
     "DayOfWeek" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-maintenancewindow.html#cfn-amazonmq-broker-maintenancewindow-dayofweek",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot1click.PlacementResource",
-  "javaInterfaces" : [ "aws.HasAttributes<PlacementAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<PlacementResource>", "aws.HasCondition<PlacementResource>", "aws.HasAttributes<PlacementAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

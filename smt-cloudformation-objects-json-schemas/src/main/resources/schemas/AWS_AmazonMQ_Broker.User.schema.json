@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AmazonMQ_Broker.User.schema.json",
-  "title" : "User",
+  "title" : "BrokerUser",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html",
   "type" : "object",
-  "javaType" : "aws.amazonmq.User",
-  "javaInterfaces" : [ "aws.Property<User>" ],
+  "javaType" : "aws.amazonmq.BrokerUser",
+  "javaInterfaces" : [ "aws.Property<BrokerUser>" ],
   "properties" : {
     "Username" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-user.html#cfn-amazonmq-broker-user-username",

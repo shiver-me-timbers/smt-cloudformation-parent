@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot.CertificateResource",
-  "javaInterfaces" : [ "aws.HasAttributes<CertificateAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<CertificateResource>", "aws.HasCondition<CertificateResource>", "aws.HasAttributes<CertificateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

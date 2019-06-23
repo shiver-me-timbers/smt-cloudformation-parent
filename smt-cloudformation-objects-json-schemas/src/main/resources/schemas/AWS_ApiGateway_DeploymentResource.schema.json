@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.DeploymentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DeploymentResource>", "aws.HasCondition<DeploymentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

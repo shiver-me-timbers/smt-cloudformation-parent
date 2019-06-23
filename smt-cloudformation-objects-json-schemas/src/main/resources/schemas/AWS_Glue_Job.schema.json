@@ -13,12 +13,13 @@
     },
     "DefaultArguments" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Connections" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-connections",
       "$ref" : "AWS_Glue_Job.ConnectionsList.schema.json",
-      "javaType" : "aws.Property<aws.glue.ConnectionsList>"
+      "javaType" : "aws.Property<aws.glue.JobConnectionsList>"
     },
     "MaxRetries" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries",
@@ -37,7 +38,7 @@
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-command",
       "$ref" : "AWS_Glue_Job.JobCommand.schema.json",
-      "javaType" : "aws.Property<aws.glue.JobCommand>"
+      "javaType" : "aws.Property<aws.glue.JobJobCommand>"
     },
     "AllocatedCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity",
@@ -46,7 +47,7 @@
     "ExecutionProperty" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-executionproperty",
       "$ref" : "AWS_Glue_Job.ExecutionProperty.schema.json",
-      "javaType" : "aws.Property<aws.glue.ExecutionProperty>"
+      "javaType" : "aws.Property<aws.glue.JobExecutionProperty>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name",

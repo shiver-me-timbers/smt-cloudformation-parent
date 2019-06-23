@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "PolicyDocument.schema.json",
+  "title": "Resource",
+  "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html",
+  "type": "object",
+  "javaType": "aws.iam.PolicyDocument",
+  "properties": {
+    "Version": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html",
+      "type": "string",
+      "default": "2012-10-17"
+    },
+    "Id": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_id.html",
+      "type": "string"
+    },
+    "Statement": {
+      "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Statement"
+      }
+    }
+  },
+  "definitions": {
+    "Statement": {
+      "type": "object",
+      "javaInterfaces": [
+        "aws.iam.HasActions<Statement>",
+        "aws.iam.HasNotActions<Statement>",
+        "aws.iam.HasNotResources<Statement>",
+        "aws.iam.HasResources<Statement>"
+      ],
+      "properties": {
+        "Sid": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html",
+          "type": "string"
+        },
+        "Effect": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html",
+          "$ref": "Effect.schema.json"
+        },
+        "Principal": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
+          "$ref": "#/definitions/Principal"
+        },
+        "NotPrincipal": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notprincipal.html",
+          "$ref": "#/definitions/Principal"
+        },
+        "Action": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html",
+          "$ref": "#/definitions/Strings"
+        },
+        "NotAction": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notaction.html",
+          "$ref": "#/definitions/Strings"
+        },
+        "Resource": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html",
+          "$ref": "#/definitions/Strings"
+        },
+        "NotResource": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_notresource.html",
+          "$ref": "#/definitions/Strings"
+        },
+        "Condition": {
+          "description": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html",
+          "$ref": "#/definitions/Condition"
+        }
+      }
+    },
+    "Principal": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "javaType": "java.util.Map<String, java.util.List<String>>"
+    },
+    "Strings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "Condition": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "javaType": "java.util.Map<String, java.util.Map<String, java.util.List<String>>>"
+    }
+  }
+}

@@ -13,8 +13,7 @@
   ],
   "properties": {
     "AWSTemplateFormatVersion": {
-      "type": "string",
-      "default": "2010-09-09"
+      "const": "2010-09-09"
     },
     "Description": {
       "type": "string"

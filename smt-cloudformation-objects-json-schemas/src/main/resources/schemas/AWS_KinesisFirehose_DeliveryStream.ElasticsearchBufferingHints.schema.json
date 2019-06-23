@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchBufferingHints.schema.json",
-  "title" : "ElasticsearchBufferingHints",
+  "title" : "DeliveryStreamElasticsearchBufferingHints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.ElasticsearchBufferingHints",
-  "javaInterfaces" : [ "aws.Property<ElasticsearchBufferingHints>" ],
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamElasticsearchBufferingHints",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamElasticsearchBufferingHints>" ],
   "properties" : {
     "IntervalInSeconds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchbufferinghints.html#cfn-kinesisfirehose-deliverystream-elasticsearchbufferinghints-intervalinseconds",

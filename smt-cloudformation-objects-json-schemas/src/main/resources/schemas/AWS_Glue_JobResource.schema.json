@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.JobResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<JobResource>", "aws.HasCondition<JobResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

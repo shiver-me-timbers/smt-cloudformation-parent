@@ -37,7 +37,7 @@ public class ResolverEndpoint {
      */
     @JsonProperty("IpAddresses")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-ipaddresses")
-    private List<Property<IpAddressRequest>> ipAddresses = new ArrayList<Property<IpAddressRequest>>();
+    private List<Property<ResolverEndpointIpAddressRequest>> ipAddresses = new ArrayList<Property<ResolverEndpointIpAddressRequest>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverendpoint.html#cfn-route53resolver-resolverendpoint-direction
      * 
@@ -72,7 +72,7 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public List<Property<IpAddressRequest>> getIpAddresses() {
+    public List<Property<ResolverEndpointIpAddressRequest>> getIpAddresses() {
         return ipAddresses;
     }
 
@@ -81,11 +81,11 @@ public class ResolverEndpoint {
      * 
      */
     @JsonIgnore
-    public void setIpAddresses(List<Property<IpAddressRequest>> ipAddresses) {
+    public void setIpAddresses(List<Property<ResolverEndpointIpAddressRequest>> ipAddresses) {
         this.ipAddresses = ipAddresses;
     }
 
-    public ResolverEndpoint withIpAddresses(List<Property<IpAddressRequest>> ipAddresses) {
+    public ResolverEndpoint withIpAddresses(List<Property<ResolverEndpointIpAddressRequest>> ipAddresses) {
         this.ipAddresses = ipAddresses;
         return this;
     }

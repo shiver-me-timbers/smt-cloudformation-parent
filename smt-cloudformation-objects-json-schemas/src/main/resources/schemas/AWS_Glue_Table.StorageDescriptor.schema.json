@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Table.StorageDescriptor.schema.json",
-  "title" : "StorageDescriptor",
+  "title" : "TableStorageDescriptor",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html",
   "type" : "object",
-  "javaType" : "aws.glue.StorageDescriptor",
-  "javaInterfaces" : [ "aws.Property<StorageDescriptor>" ],
+  "javaType" : "aws.glue.TableStorageDescriptor",
+  "javaInterfaces" : [ "aws.Property<TableStorageDescriptor>" ],
   "properties" : {
     "StoredAsSubDirectories" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-storedassubdirectories",
@@ -13,7 +13,8 @@
     },
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-parameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "BucketColumns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-bucketcolumns",
@@ -26,7 +27,7 @@
     "SkewedInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-skewedinfo",
       "$ref" : "AWS_Glue_Table.SkewedInfo.schema.json",
-      "javaType" : "aws.Property<aws.glue.SkewedInfo>"
+      "javaType" : "aws.Property<aws.glue.TableSkewedInfo>"
     },
     "InputFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-inputformat",
@@ -46,21 +47,21 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-columns",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_Glue_Partition.Column.schema.json",
-        "javaType" : "aws.Property<aws.glue.Column>"
+        "$ref" : "AWS_Glue_Table.Column.schema.json",
+        "javaType" : "aws.Property<aws.glue.TableColumn>"
       }
     },
     "SerdeInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-serdeinfo",
-      "$ref" : "AWS_Glue_Partition.SerdeInfo.schema.json",
-      "javaType" : "aws.Property<aws.glue.SerdeInfo>"
+      "$ref" : "AWS_Glue_Table.SerdeInfo.schema.json",
+      "javaType" : "aws.Property<aws.glue.TableSerdeInfo>"
     },
     "SortColumns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-storagedescriptor.html#cfn-glue-table-storagedescriptor-sortcolumns",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Table.Order.schema.json",
-        "javaType" : "aws.Property<aws.glue.Order>"
+        "javaType" : "aws.Property<aws.glue.TableOrder>"
       }
     },
     "Compressed" : {

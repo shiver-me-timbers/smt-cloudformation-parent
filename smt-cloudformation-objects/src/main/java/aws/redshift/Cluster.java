@@ -172,14 +172,14 @@ public class Cluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-kmskeyid")
     private CharSequence kmsKeyId;
     /**
-     * LoggingProperties
+     * ClusterLoggingProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html
      * 
      */
     @JsonProperty("LoggingProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html")
-    private Property<LoggingProperties> loggingProperties;
+    private Property<ClusterLoggingProperties> loggingProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword
      * 
@@ -634,28 +634,28 @@ public class Cluster {
     }
 
     /**
-     * LoggingProperties
+     * ClusterLoggingProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html
      * 
      */
     @JsonIgnore
-    public Property<LoggingProperties> getLoggingProperties() {
+    public Property<ClusterLoggingProperties> getLoggingProperties() {
         return loggingProperties;
     }
 
     /**
-     * LoggingProperties
+     * ClusterLoggingProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-redshift-cluster-loggingproperties.html
      * 
      */
     @JsonIgnore
-    public void setLoggingProperties(Property<LoggingProperties> loggingProperties) {
+    public void setLoggingProperties(Property<ClusterLoggingProperties> loggingProperties) {
         this.loggingProperties = loggingProperties;
     }
 
-    public Cluster withLoggingProperties(Property<LoggingProperties> loggingProperties) {
+    public Cluster withLoggingProperties(Property<ClusterLoggingProperties> loggingProperties) {
         this.loggingProperties = loggingProperties;
         return this;
     }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppSync_GraphQLApi.LogConfig.schema.json",
-  "title" : "LogConfig",
+  "title" : "GraphQLApiLogConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.LogConfig",
-  "javaInterfaces" : [ "aws.Property<LogConfig>" ],
+  "javaType" : "aws.appsync.GraphQLApiLogConfig",
+  "javaInterfaces" : [ "aws.Property<GraphQLApiLogConfig>" ],
   "properties" : {
     "CloudWatchLogsRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html#cfn-appsync-graphqlapi-logconfig-cloudwatchlogsrolearn",

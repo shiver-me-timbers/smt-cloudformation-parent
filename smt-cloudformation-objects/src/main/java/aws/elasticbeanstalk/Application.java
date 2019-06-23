@@ -41,14 +41,14 @@ public class Application {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description")
     private CharSequence description;
     /**
-     * ApplicationResourceLifecycleConfig
+     * ApplicationApplicationResourceLifecycleConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html
      * 
      */
     @JsonProperty("ResourceLifecycleConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html")
-    private Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig;
+    private Property<ApplicationApplicationResourceLifecycleConfig> resourceLifecycleConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name
@@ -97,28 +97,28 @@ public class Application {
     }
 
     /**
-     * ApplicationResourceLifecycleConfig
+     * ApplicationApplicationResourceLifecycleConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html
      * 
      */
     @JsonIgnore
-    public Property<ApplicationResourceLifecycleConfig> getResourceLifecycleConfig() {
+    public Property<ApplicationApplicationResourceLifecycleConfig> getResourceLifecycleConfig() {
         return resourceLifecycleConfig;
     }
 
     /**
-     * ApplicationResourceLifecycleConfig
+     * ApplicationApplicationResourceLifecycleConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-applicationresourcelifecycleconfig.html
      * 
      */
     @JsonIgnore
-    public void setResourceLifecycleConfig(Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
+    public void setResourceLifecycleConfig(Property<ApplicationApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
         this.resourceLifecycleConfig = resourceLifecycleConfig;
     }
 
-    public Application withResourceLifecycleConfig(Property<ApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
+    public Application withResourceLifecycleConfig(Property<ApplicationApplicationResourceLifecycleConfig> resourceLifecycleConfig) {
         this.resourceLifecycleConfig = resourceLifecycleConfig;
         return this;
     }

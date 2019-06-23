@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ServiceCatalog_CloudFormationProduct.ProvisioningArtifactProperties.schema.json",
-  "title" : "ProvisioningArtifactProperties",
+  "title" : "CloudFormationProductProvisioningArtifactProperties",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html",
   "type" : "object",
-  "javaType" : "aws.servicecatalog.ProvisioningArtifactProperties",
-  "javaInterfaces" : [ "aws.Property<ProvisioningArtifactProperties>" ],
+  "javaType" : "aws.servicecatalog.CloudFormationProductProvisioningArtifactProperties",
+  "javaInterfaces" : [ "aws.Property<CloudFormationProductProvisioningArtifactProperties>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-description",
@@ -14,7 +14,8 @@
     },
     "Info" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-name",

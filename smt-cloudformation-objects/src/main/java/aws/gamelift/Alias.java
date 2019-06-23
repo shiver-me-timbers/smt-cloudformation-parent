@@ -41,14 +41,14 @@ public class Alias {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-name")
     private CharSequence name;
     /**
-     * RoutingStrategy
+     * AliasRoutingStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html
      * 
      */
     @JsonProperty("RoutingStrategy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html")
-    private Property<RoutingStrategy> routingStrategy;
+    private Property<AliasRoutingStrategy> routingStrategy;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html#cfn-gamelift-alias-description
@@ -97,28 +97,28 @@ public class Alias {
     }
 
     /**
-     * RoutingStrategy
+     * AliasRoutingStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html
      * 
      */
     @JsonIgnore
-    public Property<RoutingStrategy> getRoutingStrategy() {
+    public Property<AliasRoutingStrategy> getRoutingStrategy() {
         return routingStrategy;
     }
 
     /**
-     * RoutingStrategy
+     * AliasRoutingStrategy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html
      * 
      */
     @JsonIgnore
-    public void setRoutingStrategy(Property<RoutingStrategy> routingStrategy) {
+    public void setRoutingStrategy(Property<AliasRoutingStrategy> routingStrategy) {
         this.routingStrategy = routingStrategy;
     }
 
-    public Alias withRoutingStrategy(Property<RoutingStrategy> routingStrategy) {
+    public Alias withRoutingStrategy(Property<AliasRoutingStrategy> routingStrategy) {
         this.routingStrategy = routingStrategy;
         return this;
     }

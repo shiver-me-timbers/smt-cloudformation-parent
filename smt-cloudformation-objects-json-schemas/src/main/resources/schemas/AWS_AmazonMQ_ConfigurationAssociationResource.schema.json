@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.amazonmq.ConfigurationAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationAssociationResource>", "aws.HasCondition<ConfigurationAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

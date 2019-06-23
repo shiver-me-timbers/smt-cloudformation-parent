@@ -27,14 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Skill {
 
     /**
-     * AuthenticationConfiguration
+     * SkillAuthenticationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html
      * 
      */
     @JsonProperty("AuthenticationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html")
-    private Property<AuthenticationConfiguration> authenticationConfiguration;
+    private Property<SkillAuthenticationConfiguration> authenticationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ask-skill.html#cfn-ask-skill-vendorid
      * 
@@ -43,38 +43,38 @@ public class Skill {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ask-skill.html#cfn-ask-skill-vendorid")
     private CharSequence vendorId;
     /**
-     * SkillPackage
+     * SkillSkillPackage
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html
      * 
      */
     @JsonProperty("SkillPackage")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html")
-    private Property<SkillPackage> skillPackage;
+    private Property<SkillSkillPackage> skillPackage;
 
     /**
-     * AuthenticationConfiguration
+     * SkillAuthenticationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<AuthenticationConfiguration> getAuthenticationConfiguration() {
+    public Property<SkillAuthenticationConfiguration> getAuthenticationConfiguration() {
         return authenticationConfiguration;
     }
 
     /**
-     * AuthenticationConfiguration
+     * SkillAuthenticationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-authenticationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setAuthenticationConfiguration(Property<AuthenticationConfiguration> authenticationConfiguration) {
+    public void setAuthenticationConfiguration(Property<SkillAuthenticationConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
     }
 
-    public Skill withAuthenticationConfiguration(Property<AuthenticationConfiguration> authenticationConfiguration) {
+    public Skill withAuthenticationConfiguration(Property<SkillAuthenticationConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
         return this;
     }
@@ -103,28 +103,28 @@ public class Skill {
     }
 
     /**
-     * SkillPackage
+     * SkillSkillPackage
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html
      * 
      */
     @JsonIgnore
-    public Property<SkillPackage> getSkillPackage() {
+    public Property<SkillSkillPackage> getSkillPackage() {
         return skillPackage;
     }
 
     /**
-     * SkillPackage
+     * SkillSkillPackage
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-skillpackage.html
      * 
      */
     @JsonIgnore
-    public void setSkillPackage(Property<SkillPackage> skillPackage) {
+    public void setSkillPackage(Property<SkillSkillPackage> skillPackage) {
         this.skillPackage = skillPackage;
     }
 
-    public Skill withSkillPackage(Property<SkillPackage> skillPackage) {
+    public Skill withSkillPackage(Property<SkillSkillPackage> skillPackage) {
         this.skillPackage = skillPackage;
         return this;
     }

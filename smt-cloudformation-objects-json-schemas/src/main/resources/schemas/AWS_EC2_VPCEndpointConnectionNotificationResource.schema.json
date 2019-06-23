@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPCEndpointConnectionNotificationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointConnectionNotificationResource>", "aws.HasCondition<VPCEndpointConnectionNotificationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -75,7 +75,7 @@ public class ScalableTarget {
     @JsonProperty("ScheduledActions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-scheduledactions")
-    private Set<Property<ScheduledAction>> scheduledActions = new LinkedHashSet<Property<ScheduledAction>>();
+    private Set<Property<ScalableTargetScheduledAction>> scheduledActions = new LinkedHashSet<Property<ScalableTargetScheduledAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalabletarget.html#cfn-applicationautoscaling-scalabletarget-servicenamespace
      * 
@@ -204,7 +204,7 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public Set<Property<ScheduledAction>> getScheduledActions() {
+    public Set<Property<ScalableTargetScheduledAction>> getScheduledActions() {
         return scheduledActions;
     }
 
@@ -213,11 +213,11 @@ public class ScalableTarget {
      * 
      */
     @JsonIgnore
-    public void setScheduledActions(Set<Property<ScheduledAction>> scheduledActions) {
+    public void setScheduledActions(Set<Property<ScalableTargetScheduledAction>> scheduledActions) {
         this.scheduledActions = scheduledActions;
     }
 
-    public ScalableTarget withScheduledActions(Set<Property<ScheduledAction>> scheduledActions) {
+    public ScalableTarget withScheduledActions(Set<Property<ScalableTargetScheduledAction>> scheduledActions) {
         this.scheduledActions = scheduledActions;
         return this;
     }

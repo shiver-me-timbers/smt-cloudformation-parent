@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.autoscaling.LifecycleHookResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LifecycleHookResource>", "aws.HasCondition<LifecycleHookResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

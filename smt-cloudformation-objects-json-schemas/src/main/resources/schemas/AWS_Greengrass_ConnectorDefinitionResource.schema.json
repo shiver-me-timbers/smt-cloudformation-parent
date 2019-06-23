@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.greengrass.ConnectorDefinitionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ConnectorDefinitionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ConnectorDefinitionResource>", "aws.HasCondition<ConnectorDefinitionResource>", "aws.HasAttributes<ConnectorDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

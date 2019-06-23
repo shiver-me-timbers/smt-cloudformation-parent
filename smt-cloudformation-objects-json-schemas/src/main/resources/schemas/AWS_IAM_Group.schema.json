@@ -30,8 +30,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_IAM_Role.Policy.schema.json",
-        "javaType" : "aws.Property<aws.iam.Policy>"
+        "$ref" : "AWS_IAM_Group.Policy.schema.json",
+        "javaType" : "aws.Property<aws.iam.GroupPolicy>"
       }
     }
   }

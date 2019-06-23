@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_OpsWorks_Stack.Source.schema.json",
-  "title" : "Source",
+  "title" : "StackSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.Source",
-  "javaInterfaces" : [ "aws.Property<Source>" ],
+  "javaType" : "aws.opsworks.StackSource",
+  "javaInterfaces" : [ "aws.Property<StackSource>" ],
   "properties" : {
     "Password" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html#cfn-opsworks-custcookbooksource-password",

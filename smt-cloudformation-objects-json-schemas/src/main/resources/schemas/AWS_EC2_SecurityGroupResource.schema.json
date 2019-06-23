@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SecurityGroupResource",
-  "javaInterfaces" : [ "aws.HasAttributes<SecurityGroupAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityGroupResource>", "aws.HasCondition<SecurityGroupResource>", "aws.HasAttributes<SecurityGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

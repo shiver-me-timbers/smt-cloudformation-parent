@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualRouter.VirtualRouterSpec.schema.json",
-  "title" : "VirtualRouterSpec",
+  "title" : "VirtualRouterVirtualRouterSpec",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualRouterSpec",
-  "javaInterfaces" : [ "aws.Property<VirtualRouterSpec>" ],
+  "javaType" : "aws.appmesh.VirtualRouterVirtualRouterSpec",
+  "javaInterfaces" : [ "aws.Property<VirtualRouterVirtualRouterSpec>" ],
   "properties" : {
     "Listeners" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html#cfn-appmesh-virtualrouter-virtualrouterspec-listeners",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppMesh_VirtualRouter.VirtualRouterListener.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.VirtualRouterListener>"
+        "javaType" : "aws.Property<aws.appmesh.VirtualRouterVirtualRouterListener>"
       }
     }
   }

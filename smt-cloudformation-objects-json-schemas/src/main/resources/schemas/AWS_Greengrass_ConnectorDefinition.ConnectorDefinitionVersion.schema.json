@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_ConnectorDefinition.ConnectorDefinitionVersion.schema.json",
-  "title" : "ConnectorDefinitionVersion",
+  "title" : "ConnectorDefinitionConnectorDefinitionVersion",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.ConnectorDefinitionVersion",
-  "javaInterfaces" : [ "aws.Property<ConnectorDefinitionVersion>" ],
+  "javaType" : "aws.greengrass.ConnectorDefinitionConnectorDefinitionVersion",
+  "javaInterfaces" : [ "aws.Property<ConnectorDefinitionConnectorDefinitionVersion>" ],
   "properties" : {
     "Connectors" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html#cfn-greengrass-connectordefinition-connectordefinitionversion-connectors",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_ConnectorDefinition.Connector.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.Connector>"
+        "javaType" : "aws.Property<aws.greengrass.ConnectorDefinitionConnector>"
       }
     }
   }

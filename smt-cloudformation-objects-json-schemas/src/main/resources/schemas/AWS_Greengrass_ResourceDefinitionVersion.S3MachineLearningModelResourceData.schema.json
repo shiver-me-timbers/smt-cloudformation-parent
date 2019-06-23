@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_ResourceDefinitionVersion.S3MachineLearningModelResourceData.schema.json",
-  "title" : "S3MachineLearningModelResourceData",
+  "title" : "ResourceDefinitionVersionS3MachineLearningModelResourceData",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.S3MachineLearningModelResourceData",
-  "javaInterfaces" : [ "aws.Property<S3MachineLearningModelResourceData>" ],
+  "javaType" : "aws.greengrass.ResourceDefinitionVersionS3MachineLearningModelResourceData",
+  "javaInterfaces" : [ "aws.Property<ResourceDefinitionVersionS3MachineLearningModelResourceData>" ],
   "properties" : {
     "DestinationPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata.html#cfn-greengrass-resourcedefinitionversion-s3machinelearningmodelresourcedata-destinationpath",

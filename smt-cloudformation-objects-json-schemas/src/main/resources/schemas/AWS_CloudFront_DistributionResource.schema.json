@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudfront.DistributionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DistributionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DistributionResource>", "aws.HasCondition<DistributionResource>", "aws.HasAttributes<DistributionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

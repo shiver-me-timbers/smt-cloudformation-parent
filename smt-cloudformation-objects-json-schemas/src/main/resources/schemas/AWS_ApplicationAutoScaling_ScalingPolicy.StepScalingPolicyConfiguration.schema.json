@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepScalingPolicyConfiguration.schema.json",
-  "title" : "StepScalingPolicyConfiguration",
+  "title" : "ScalingPolicyStepScalingPolicyConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.StepScalingPolicyConfiguration",
-  "javaInterfaces" : [ "aws.Property<StepScalingPolicyConfiguration>" ],
+  "javaType" : "aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration",
+  "javaInterfaces" : [ "aws.Property<ScalingPolicyStepScalingPolicyConfiguration>" ],
   "properties" : {
     "AdjustmentType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration-adjustmenttype",
@@ -31,7 +31,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepAdjustment.schema.json",
-        "javaType" : "aws.Property<aws.applicationautoscaling.StepAdjustment>"
+        "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyStepAdjustment>"
       }
     }
   }

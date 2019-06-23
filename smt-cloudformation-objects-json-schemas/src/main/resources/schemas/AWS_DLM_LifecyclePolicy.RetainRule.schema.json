@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DLM_LifecyclePolicy.RetainRule.schema.json",
-  "title" : "RetainRule",
+  "title" : "LifecyclePolicyRetainRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html",
   "type" : "object",
-  "javaType" : "aws.dlm.RetainRule",
-  "javaInterfaces" : [ "aws.Property<RetainRule>" ],
+  "javaType" : "aws.dlm.LifecyclePolicyRetainRule",
+  "javaInterfaces" : [ "aws.Property<LifecyclePolicyRetainRule>" ],
   "properties" : {
     "Count" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-retainrule.html#cfn-dlm-lifecyclepolicy-retainrule-count",

@@ -41,8 +41,8 @@
     },
     "VpcSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-vpcsettings",
-      "$ref" : "AWS_DirectoryService_MicrosoftAD.VpcSettings.schema.json",
-      "javaType" : "aws.Property<aws.directoryservice.VpcSettings>"
+      "$ref" : "AWS_DirectoryService_SimpleAD.VpcSettings.schema.json",
+      "javaType" : "aws.Property<aws.directoryservice.SimpleADVpcSettings>"
     }
   }
 }

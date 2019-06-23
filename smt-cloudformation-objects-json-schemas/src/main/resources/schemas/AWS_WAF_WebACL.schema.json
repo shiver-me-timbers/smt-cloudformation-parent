@@ -9,7 +9,7 @@
     "DefaultAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-defaultaction",
       "$ref" : "AWS_WAF_WebACL.WafAction.schema.json",
-      "javaType" : "aws.Property<aws.waf.WafAction>"
+      "javaType" : "aws.Property<aws.waf.WebACLWafAction>"
     },
     "MetricName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-metricname",
@@ -27,7 +27,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_WebACL.ActivatedRule.schema.json",
-        "javaType" : "aws.Property<aws.waf.ActivatedRule>"
+        "javaType" : "aws.Property<aws.waf.WebACLActivatedRule>"
       }
     }
   }

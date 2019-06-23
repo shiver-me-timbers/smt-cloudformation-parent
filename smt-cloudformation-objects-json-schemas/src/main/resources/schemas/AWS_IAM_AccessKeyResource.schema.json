@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.AccessKeyResource",
-  "javaInterfaces" : [ "aws.HasAttributes<AccessKeyAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<AccessKeyResource>", "aws.HasCondition<AccessKeyResource>", "aws.HasAttributes<AccessKeyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

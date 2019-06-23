@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Database.DatabaseInput.schema.json",
-  "title" : "DatabaseInput",
+  "title" : "DatabaseDatabaseInput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html",
   "type" : "object",
-  "javaType" : "aws.glue.DatabaseInput",
-  "javaInterfaces" : [ "aws.Property<DatabaseInput>" ],
+  "javaType" : "aws.glue.DatabaseDatabaseInput",
+  "javaInterfaces" : [ "aws.Property<DatabaseDatabaseInput>" ],
   "properties" : {
     "LocationUri" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-locationuri",
@@ -19,7 +19,8 @@
     },
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-parameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html#cfn-glue-database-databaseinput-name",

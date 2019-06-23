@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appmesh.VirtualRouterResource",
-  "javaInterfaces" : [ "aws.HasAttributes<VirtualRouterAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<VirtualRouterResource>", "aws.HasCondition<VirtualRouterResource>", "aws.HasAttributes<VirtualRouterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

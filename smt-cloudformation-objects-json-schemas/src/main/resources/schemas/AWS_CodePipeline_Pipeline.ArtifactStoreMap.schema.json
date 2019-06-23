@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Pipeline.ArtifactStoreMap.schema.json",
-  "title" : "ArtifactStoreMap",
+  "title" : "PipelineArtifactStoreMap",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstoremap.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.ArtifactStoreMap",
-  "javaInterfaces" : [ "aws.Property<ArtifactStoreMap>" ],
+  "javaType" : "aws.codepipeline.PipelineArtifactStoreMap",
+  "javaInterfaces" : [ "aws.Property<PipelineArtifactStoreMap>" ],
   "properties" : {
     "ArtifactStore" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstoremap.html#cfn-codepipeline-pipeline-artifactstoremap-artifactstore",
       "$ref" : "AWS_CodePipeline_Pipeline.ArtifactStore.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.ArtifactStore>"
+      "javaType" : "aws.Property<aws.codepipeline.PipelineArtifactStore>"
     },
     "Region" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstoremap.html#cfn-codepipeline-pipeline-artifactstoremap-region",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.logs.LogStreamResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LogStreamResource>", "aws.HasCondition<LogStreamResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

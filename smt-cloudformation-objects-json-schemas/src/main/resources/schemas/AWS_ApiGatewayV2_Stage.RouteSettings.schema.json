@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGatewayV2_Stage.RouteSettings.schema.json",
-  "title" : "RouteSettings",
+  "title" : "StageRouteSettings",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.RouteSettings",
-  "javaInterfaces" : [ "aws.Property<RouteSettings>" ],
+  "javaType" : "aws.apigatewayv2.StageRouteSettings",
+  "javaInterfaces" : [ "aws.Property<StageRouteSettings>" ],
   "properties" : {
     "LoggingLevel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-stage-routesettings.html#cfn-apigatewayv2-stage-routesettings-logginglevel",

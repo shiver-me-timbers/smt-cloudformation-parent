@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudtrail.TrailResource",
-  "javaInterfaces" : [ "aws.HasAttributes<TrailAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<TrailResource>", "aws.HasCondition<TrailResource>", "aws.HasAttributes<TrailAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

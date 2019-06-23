@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_ApplicationOutput.KinesisFirehoseOutput.schema.json",
-  "title" : "KinesisFirehoseOutput",
+  "title" : "ApplicationOutputKinesisFirehoseOutput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-kinesisfirehoseoutput.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.KinesisFirehoseOutput",
-  "javaInterfaces" : [ "aws.Property<KinesisFirehoseOutput>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationOutputKinesisFirehoseOutput",
+  "javaInterfaces" : [ "aws.Property<ApplicationOutputKinesisFirehoseOutput>" ],
   "properties" : {
     "ResourceARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-kinesisfirehoseoutput.html#cfn-kinesisanalyticsv2-applicationoutput-kinesisfirehoseoutput-resourcearn",

@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_HealthCheck.HealthCheckConfig.schema.json",
-  "title" : "HealthCheckConfig",
+  "title" : "HealthCheckHealthCheckConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html",
   "type" : "object",
-  "javaType" : "aws.route53.HealthCheckConfig",
-  "javaInterfaces" : [ "aws.Property<HealthCheckConfig>" ],
+  "javaType" : "aws.route53.HealthCheckHealthCheckConfig",
+  "javaInterfaces" : [ "aws.Property<HealthCheckHealthCheckConfig>" ],
   "properties" : {
     "AlarmIdentifier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-alarmidentifier",
       "$ref" : "AWS_Route53_HealthCheck.AlarmIdentifier.schema.json",
-      "javaType" : "aws.Property<aws.route53.AlarmIdentifier>"
+      "javaType" : "aws.Property<aws.route53.HealthCheckAlarmIdentifier>"
     },
     "ChildHealthChecks" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html#cfn-route53-healthcheck-healthcheckconfig-childhealthchecks",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.LaunchRoleConstraintResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LaunchRoleConstraintResource>", "aws.HasCondition<LaunchRoleConstraintResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -34,7 +34,7 @@ public class NotebookInstanceLifecycleConfig {
      */
     @JsonProperty("OnStart")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-onstart")
-    private List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onStart = new ArrayList<Property<aws.sagemaker.NotebookInstanceLifecycleHook>>();
+    private List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onStart = new ArrayList<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname
      * 
@@ -48,14 +48,14 @@ public class NotebookInstanceLifecycleConfig {
      */
     @JsonProperty("OnCreate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-oncreate")
-    private List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onCreate = new ArrayList<Property<aws.sagemaker.NotebookInstanceLifecycleHook>>();
+    private List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onCreate = new ArrayList<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-onstart
      * 
      */
     @JsonIgnore
-    public List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> getOnStart() {
+    public List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> getOnStart() {
         return onStart;
     }
 
@@ -64,11 +64,11 @@ public class NotebookInstanceLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public void setOnStart(List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onStart) {
+    public void setOnStart(List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onStart) {
         this.onStart = onStart;
     }
 
-    public NotebookInstanceLifecycleConfig withOnStart(List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onStart) {
+    public NotebookInstanceLifecycleConfig withOnStart(List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onStart) {
         this.onStart = onStart;
         return this;
     }
@@ -101,7 +101,7 @@ public class NotebookInstanceLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> getOnCreate() {
+    public List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> getOnCreate() {
         return onCreate;
     }
 
@@ -110,11 +110,11 @@ public class NotebookInstanceLifecycleConfig {
      * 
      */
     @JsonIgnore
-    public void setOnCreate(List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onCreate) {
+    public void setOnCreate(List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onCreate) {
         this.onCreate = onCreate;
     }
 
-    public NotebookInstanceLifecycleConfig withOnCreate(List<Property<aws.sagemaker.NotebookInstanceLifecycleHook>> onCreate) {
+    public NotebookInstanceLifecycleConfig withOnCreate(List<Property<aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>> onCreate) {
         this.onCreate = onCreate;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.batch.ComputeEnvironmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ComputeEnvironmentResource>", "aws.HasCondition<ComputeEnvironmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

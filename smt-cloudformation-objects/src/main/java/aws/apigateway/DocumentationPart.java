@@ -27,14 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class DocumentationPart {
 
     /**
-     * Location
+     * DocumentationPartLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
     @JsonProperty("Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html")
-    private Property<Location> location;
+    private Property<DocumentationPartLocation> location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
      * 
@@ -51,28 +51,28 @@ public class DocumentationPart {
     private CharSequence restApiId;
 
     /**
-     * Location
+     * DocumentationPartLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
     @JsonIgnore
-    public Property<Location> getLocation() {
+    public Property<DocumentationPartLocation> getLocation() {
         return location;
     }
 
     /**
-     * Location
+     * DocumentationPartLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-documentationpart-location.html
      * 
      */
     @JsonIgnore
-    public void setLocation(Property<Location> location) {
+    public void setLocation(Property<DocumentationPartLocation> location) {
         this.location = location;
     }
 
-    public DocumentationPart withLocation(Property<Location> location) {
+    public DocumentationPart withLocation(Property<DocumentationPartLocation> location) {
         this.location = location;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.ClassifierResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClassifierResource>", "aws.HasCondition<ClassifierResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

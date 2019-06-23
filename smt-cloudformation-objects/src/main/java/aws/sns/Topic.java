@@ -49,7 +49,7 @@ public class Topic {
      */
     @JsonProperty("Subscription")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-subscription")
-    private List<Property<Subscription>> subscription = new ArrayList<Property<Subscription>>();
+    private List<Property<TopicSubscription>> subscription = new ArrayList<Property<TopicSubscription>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-topic.html#cfn-sns-topic-topicname
      * 
@@ -109,7 +109,7 @@ public class Topic {
      * 
      */
     @JsonIgnore
-    public List<Property<Subscription>> getSubscription() {
+    public List<Property<TopicSubscription>> getSubscription() {
         return subscription;
     }
 
@@ -118,11 +118,11 @@ public class Topic {
      * 
      */
     @JsonIgnore
-    public void setSubscription(List<Property<Subscription>> subscription) {
+    public void setSubscription(List<Property<TopicSubscription>> subscription) {
         this.subscription = subscription;
     }
 
-    public Topic withSubscription(List<Property<Subscription>> subscription) {
+    public Topic withSubscription(List<Property<TopicSubscription>> subscription) {
         this.subscription = subscription;
         return this;
     }

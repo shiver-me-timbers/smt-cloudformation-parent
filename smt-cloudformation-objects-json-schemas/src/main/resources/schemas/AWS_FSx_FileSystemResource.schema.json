@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.fsx.FileSystemResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<FileSystemResource>", "aws.HasCondition<FileSystemResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

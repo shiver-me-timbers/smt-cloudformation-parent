@@ -9,12 +9,12 @@
     "Code" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-code",
       "$ref" : "AWS_Lambda_Function.Code.schema.json",
-      "javaType" : "aws.Property<aws.lambda.Code>"
+      "javaType" : "aws.Property<aws.lambda.FunctionCode>"
     },
     "DeadLetterConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-deadletterconfig",
       "$ref" : "AWS_Lambda_Function.DeadLetterConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.DeadLetterConfig>"
+      "javaType" : "aws.Property<aws.lambda.FunctionDeadLetterConfig>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-description",
@@ -24,7 +24,7 @@
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-environment",
       "$ref" : "AWS_Lambda_Function.Environment.schema.json",
-      "javaType" : "aws.Property<aws.lambda.Environment>"
+      "javaType" : "aws.Property<aws.lambda.FunctionEnvironment>"
     },
     "FunctionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-functionname",
@@ -83,12 +83,12 @@
     "TracingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-tracingconfig",
       "$ref" : "AWS_Lambda_Function.TracingConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.TracingConfig>"
+      "javaType" : "aws.Property<aws.lambda.FunctionTracingConfig>"
     },
     "VpcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html#cfn-lambda-function-vpcconfig",
       "$ref" : "AWS_Lambda_Function.VpcConfig.schema.json",
-      "javaType" : "aws.Property<aws.lambda.VpcConfig>"
+      "javaType" : "aws.Property<aws.lambda.FunctionVpcConfig>"
     }
   }
 }

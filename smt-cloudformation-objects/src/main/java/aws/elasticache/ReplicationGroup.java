@@ -136,7 +136,7 @@ public class ReplicationGroup {
     @JsonProperty("NodeGroupConfiguration")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-nodegroupconfiguration")
-    private Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration = new LinkedHashSet<Property<NodeGroupConfiguration>>();
+    private Set<Property<ReplicationGroupNodeGroupConfiguration>> nodeGroupConfiguration = new LinkedHashSet<Property<ReplicationGroupNodeGroupConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticache-replicationgroup.html#cfn-elasticache-replicationgroup-notificationtopicarn
      * 
@@ -502,7 +502,7 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public Set<Property<NodeGroupConfiguration>> getNodeGroupConfiguration() {
+    public Set<Property<ReplicationGroupNodeGroupConfiguration>> getNodeGroupConfiguration() {
         return nodeGroupConfiguration;
     }
 
@@ -511,11 +511,11 @@ public class ReplicationGroup {
      * 
      */
     @JsonIgnore
-    public void setNodeGroupConfiguration(Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration) {
+    public void setNodeGroupConfiguration(Set<Property<ReplicationGroupNodeGroupConfiguration>> nodeGroupConfiguration) {
         this.nodeGroupConfiguration = nodeGroupConfiguration;
     }
 
-    public ReplicationGroup withNodeGroupConfiguration(Set<Property<NodeGroupConfiguration>> nodeGroupConfiguration) {
+    public ReplicationGroup withNodeGroupConfiguration(Set<Property<ReplicationGroupNodeGroupConfiguration>> nodeGroupConfiguration) {
         this.nodeGroupConfiguration = nodeGroupConfiguration;
         return this;
     }

@@ -28,7 +28,7 @@ public class ClassTypeTransformerTest {
 
     @Test
     @SuppressWarnings("unchecked")
-    public void Can_transform_a_primative_type_property() {
+    public void Can_transform_a_class_type_property() {
 
         final String resourceName = someString();
         final String propertyName = someString();

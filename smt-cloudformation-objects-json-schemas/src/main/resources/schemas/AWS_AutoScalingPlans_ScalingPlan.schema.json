@@ -9,14 +9,14 @@
     "ApplicationSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-applicationsource",
       "$ref" : "AWS_AutoScalingPlans_ScalingPlan.ApplicationSource.schema.json",
-      "javaType" : "aws.Property<aws.autoscalingplans.ApplicationSource>"
+      "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanApplicationSource>"
     },
     "ScalingInstructions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-scalinginstructions",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScalingPlans_ScalingPlan.ScalingInstruction.schema.json",
-        "javaType" : "aws.Property<aws.autoscalingplans.ScalingInstruction>"
+        "javaType" : "aws.Property<aws.autoscalingplans.ScalingPlanScalingInstruction>"
       }
     }
   }

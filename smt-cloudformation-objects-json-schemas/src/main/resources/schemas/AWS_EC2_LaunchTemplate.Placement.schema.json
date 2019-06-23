@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_LaunchTemplate.Placement.schema.json",
-  "title" : "Placement",
+  "title" : "LaunchTemplatePlacement",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html",
   "type" : "object",
-  "javaType" : "aws.ec2.Placement",
-  "javaInterfaces" : [ "aws.Property<Placement>" ],
+  "javaType" : "aws.ec2.LaunchTemplatePlacement",
+  "javaInterfaces" : [ "aws.Property<LaunchTemplatePlacement>" ],
   "properties" : {
     "GroupName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname",

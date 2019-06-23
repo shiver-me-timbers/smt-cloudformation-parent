@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.batch.JobQueueResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<JobQueueResource>", "aws.HasCondition<JobQueueResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

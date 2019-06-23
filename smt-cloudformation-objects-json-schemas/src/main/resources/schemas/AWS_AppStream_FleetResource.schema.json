@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appstream.FleetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<FleetResource>", "aws.HasCondition<FleetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

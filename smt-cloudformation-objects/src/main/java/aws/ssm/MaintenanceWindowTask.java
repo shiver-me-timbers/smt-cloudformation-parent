@@ -79,7 +79,7 @@ public class MaintenanceWindowTask {
      */
     @JsonProperty("Targets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-targets")
-    private List<Property<Target>> targets = new ArrayList<Property<Target>>();
+    private List<Property<MaintenanceWindowTaskTarget>> targets = new ArrayList<Property<MaintenanceWindowTaskTarget>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-name
      * 
@@ -95,14 +95,14 @@ public class MaintenanceWindowTask {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskarn")
     private CharSequence taskArn;
     /**
-     * TaskInvocationParameters
+     * MaintenanceWindowTaskTaskInvocationParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html
      * 
      */
     @JsonProperty("TaskInvocationParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html")
-    private Property<TaskInvocationParameters> taskInvocationParameters;
+    private Property<MaintenanceWindowTaskTaskInvocationParameters> taskInvocationParameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid
      * 
@@ -125,14 +125,14 @@ public class MaintenanceWindowTask {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype")
     private CharSequence taskType;
     /**
-     * LoggingInfo
+     * MaintenanceWindowTaskLoggingInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html
      * 
      */
     @JsonProperty("LoggingInfo")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html")
-    private Property<LoggingInfo> loggingInfo;
+    private Property<MaintenanceWindowTaskLoggingInfo> loggingInfo;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-maxerrors
@@ -254,7 +254,7 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public List<Property<Target>> getTargets() {
+    public List<Property<MaintenanceWindowTaskTarget>> getTargets() {
         return targets;
     }
 
@@ -263,11 +263,11 @@ public class MaintenanceWindowTask {
      * 
      */
     @JsonIgnore
-    public void setTargets(List<Property<Target>> targets) {
+    public void setTargets(List<Property<MaintenanceWindowTaskTarget>> targets) {
         this.targets = targets;
     }
 
-    public MaintenanceWindowTask withTargets(List<Property<Target>> targets) {
+    public MaintenanceWindowTask withTargets(List<Property<MaintenanceWindowTaskTarget>> targets) {
         this.targets = targets;
         return this;
     }
@@ -319,28 +319,28 @@ public class MaintenanceWindowTask {
     }
 
     /**
-     * TaskInvocationParameters
+     * MaintenanceWindowTaskTaskInvocationParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html
      * 
      */
     @JsonIgnore
-    public Property<TaskInvocationParameters> getTaskInvocationParameters() {
+    public Property<MaintenanceWindowTaskTaskInvocationParameters> getTaskInvocationParameters() {
         return taskInvocationParameters;
     }
 
     /**
-     * TaskInvocationParameters
+     * MaintenanceWindowTaskTaskInvocationParameters
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-taskinvocationparameters.html
      * 
      */
     @JsonIgnore
-    public void setTaskInvocationParameters(Property<TaskInvocationParameters> taskInvocationParameters) {
+    public void setTaskInvocationParameters(Property<MaintenanceWindowTaskTaskInvocationParameters> taskInvocationParameters) {
         this.taskInvocationParameters = taskInvocationParameters;
     }
 
-    public MaintenanceWindowTask withTaskInvocationParameters(Property<TaskInvocationParameters> taskInvocationParameters) {
+    public MaintenanceWindowTask withTaskInvocationParameters(Property<MaintenanceWindowTaskTaskInvocationParameters> taskInvocationParameters) {
         this.taskInvocationParameters = taskInvocationParameters;
         return this;
     }
@@ -415,28 +415,28 @@ public class MaintenanceWindowTask {
     }
 
     /**
-     * LoggingInfo
+     * MaintenanceWindowTaskLoggingInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html
      * 
      */
     @JsonIgnore
-    public Property<LoggingInfo> getLoggingInfo() {
+    public Property<MaintenanceWindowTaskLoggingInfo> getLoggingInfo() {
         return loggingInfo;
     }
 
     /**
-     * LoggingInfo
+     * MaintenanceWindowTaskLoggingInfo
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-maintenancewindowtask-logginginfo.html
      * 
      */
     @JsonIgnore
-    public void setLoggingInfo(Property<LoggingInfo> loggingInfo) {
+    public void setLoggingInfo(Property<MaintenanceWindowTaskLoggingInfo> loggingInfo) {
         this.loggingInfo = loggingInfo;
     }
 
-    public MaintenanceWindowTask withLoggingInfo(Property<LoggingInfo> loggingInfo) {
+    public MaintenanceWindowTask withLoggingInfo(Property<MaintenanceWindowTaskLoggingInfo> loggingInfo) {
         this.loggingInfo = loggingInfo;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.wafregional.SqlInjectionMatchSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SqlInjectionMatchSetResource>", "aws.HasCondition<SqlInjectionMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

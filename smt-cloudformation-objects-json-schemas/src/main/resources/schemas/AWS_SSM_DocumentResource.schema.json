@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ssm.DocumentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DocumentResource>", "aws.HasCondition<DocumentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

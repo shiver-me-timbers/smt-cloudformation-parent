@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplateSpecification.schema.json",
-  "title" : "LaunchTemplateSpecification",
+  "title" : "AutoScalingGroupLaunchTemplateSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.LaunchTemplateSpecification",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateSpecification>" ],
+  "javaType" : "aws.autoscaling.AutoScalingGroupLaunchTemplateSpecification",
+  "javaInterfaces" : [ "aws.Property<AutoScalingGroupLaunchTemplateSpecification>" ],
   "properties" : {
     "LaunchTemplateId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html#cfn-autoscaling-autoscalinggroup-launchtemplatespecification-launchtemplateid",

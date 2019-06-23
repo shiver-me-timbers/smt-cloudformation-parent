@@ -14,7 +14,7 @@
     "EventDestination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html#cfn-ses-configurationseteventdestination-eventdestination",
       "$ref" : "AWS_SES_ConfigurationSetEventDestination.EventDestination.schema.json",
-      "javaType" : "aws.Property<aws.ses.EventDestination>"
+      "javaType" : "aws.Property<aws.ses.ConfigurationSetEventDestinationEventDestination>"
     }
   }
 }

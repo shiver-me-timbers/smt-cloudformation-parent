@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Events_Rule.EcsParameters.schema.json",
-  "title" : "EcsParameters",
+  "title" : "RuleEcsParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html",
   "type" : "object",
-  "javaType" : "aws.events.EcsParameters",
-  "javaInterfaces" : [ "aws.Property<EcsParameters>" ],
+  "javaType" : "aws.events.RuleEcsParameters",
+  "javaInterfaces" : [ "aws.Property<RuleEcsParameters>" ],
   "properties" : {
     "TaskCount" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-ecsparameters.html#cfn-events-rule-ecsparameters-taskcount",

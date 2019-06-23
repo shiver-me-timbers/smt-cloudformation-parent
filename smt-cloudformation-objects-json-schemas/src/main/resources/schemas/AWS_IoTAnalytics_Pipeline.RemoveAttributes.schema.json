@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Pipeline.RemoveAttributes.schema.json",
-  "title" : "RemoveAttributes",
+  "title" : "PipelineRemoveAttributes",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-removeattributes.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.RemoveAttributes",
-  "javaInterfaces" : [ "aws.Property<RemoveAttributes>" ],
+  "javaType" : "aws.iotanalytics.PipelineRemoveAttributes",
+  "javaInterfaces" : [ "aws.Property<PipelineRemoveAttributes>" ],
   "properties" : {
     "Next" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-removeattributes.html#cfn-iotanalytics-pipeline-removeattributes-next",

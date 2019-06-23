@@ -41,7 +41,7 @@ public class Rule {
      */
     @JsonProperty("Predicates")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-predicates")
-    private List<Property<Predicate>> predicates = new ArrayList<Property<Predicate>>();
+    private List<Property<RulePredicate>> predicates = new ArrayList<Property<RulePredicate>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-rule.html#cfn-wafregional-rule-name
      * 
@@ -78,7 +78,7 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public List<Property<Predicate>> getPredicates() {
+    public List<Property<RulePredicate>> getPredicates() {
         return predicates;
     }
 
@@ -87,11 +87,11 @@ public class Rule {
      * 
      */
     @JsonIgnore
-    public void setPredicates(List<Property<Predicate>> predicates) {
+    public void setPredicates(List<Property<RulePredicate>> predicates) {
         this.predicates = predicates;
     }
 
-    public Rule withPredicates(List<Property<Predicate>> predicates) {
+    public Rule withPredicates(List<Property<RulePredicate>> predicates) {
         this.predicates = predicates;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.athena.NamedQueryResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NamedQueryResource>", "aws.HasCondition<NamedQueryResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Crawler.JdbcTarget.schema.json",
-  "title" : "JdbcTarget",
+  "title" : "CrawlerJdbcTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html",
   "type" : "object",
-  "javaType" : "aws.glue.JdbcTarget",
-  "javaInterfaces" : [ "aws.Property<JdbcTarget>" ],
+  "javaType" : "aws.glue.CrawlerJdbcTarget",
+  "javaInterfaces" : [ "aws.Property<CrawlerJdbcTarget>" ],
   "properties" : {
     "ConnectionName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-jdbctarget.html#cfn-glue-crawler-jdbctarget-connectionname",

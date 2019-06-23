@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.GraphQLApiResource",
-  "javaInterfaces" : [ "aws.HasAttributes<GraphQLApiAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<GraphQLApiResource>", "aws.HasCondition<GraphQLApiResource>", "aws.HasAttributes<GraphQLApiAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

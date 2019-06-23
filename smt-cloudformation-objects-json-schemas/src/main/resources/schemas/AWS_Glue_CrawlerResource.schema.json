@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.CrawlerResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CrawlerResource>", "aws.HasCondition<CrawlerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

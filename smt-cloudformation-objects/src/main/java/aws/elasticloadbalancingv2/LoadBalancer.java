@@ -52,7 +52,7 @@ public class LoadBalancer {
     @JsonProperty("LoadBalancerAttributes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattributes")
-    private Set<Property<LoadBalancerAttribute>> loadBalancerAttributes = new LinkedHashSet<Property<LoadBalancerAttribute>>();
+    private Set<Property<LoadBalancerLoadBalancerAttribute>> loadBalancerAttributes = new LinkedHashSet<Property<LoadBalancerLoadBalancerAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-name
      * 
@@ -82,7 +82,7 @@ public class LoadBalancer {
     @JsonProperty("SubnetMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnetmappings")
-    private Set<Property<SubnetMapping>> subnetMappings = new LinkedHashSet<Property<SubnetMapping>>();
+    private Set<Property<LoadBalancerSubnetMapping>> subnetMappings = new LinkedHashSet<Property<LoadBalancerSubnetMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-loadbalancer.html#cfn-elasticloadbalancingv2-loadbalancer-subnets
      * 
@@ -134,7 +134,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<Property<LoadBalancerAttribute>> getLoadBalancerAttributes() {
+    public Set<Property<LoadBalancerLoadBalancerAttribute>> getLoadBalancerAttributes() {
         return loadBalancerAttributes;
     }
 
@@ -143,11 +143,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancerAttributes(Set<Property<LoadBalancerAttribute>> loadBalancerAttributes) {
+    public void setLoadBalancerAttributes(Set<Property<LoadBalancerLoadBalancerAttribute>> loadBalancerAttributes) {
         this.loadBalancerAttributes = loadBalancerAttributes;
     }
 
-    public LoadBalancer withLoadBalancerAttributes(Set<Property<LoadBalancerAttribute>> loadBalancerAttributes) {
+    public LoadBalancer withLoadBalancerAttributes(Set<Property<LoadBalancerLoadBalancerAttribute>> loadBalancerAttributes) {
         this.loadBalancerAttributes = loadBalancerAttributes;
         return this;
     }
@@ -226,7 +226,7 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public Set<Property<SubnetMapping>> getSubnetMappings() {
+    public Set<Property<LoadBalancerSubnetMapping>> getSubnetMappings() {
         return subnetMappings;
     }
 
@@ -235,11 +235,11 @@ public class LoadBalancer {
      * 
      */
     @JsonIgnore
-    public void setSubnetMappings(Set<Property<SubnetMapping>> subnetMappings) {
+    public void setSubnetMappings(Set<Property<LoadBalancerSubnetMapping>> subnetMappings) {
         this.subnetMappings = subnetMappings;
     }
 
-    public LoadBalancer withSubnetMappings(Set<Property<SubnetMapping>> subnetMappings) {
+    public LoadBalancer withSubnetMappings(Set<Property<LoadBalancerSubnetMapping>> subnetMappings) {
         this.subnetMappings = subnetMappings;
         return this;
     }

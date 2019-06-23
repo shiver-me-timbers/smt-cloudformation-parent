@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_XssMatchSet.XssMatchTuple.schema.json",
-        "javaType" : "aws.Property<aws.waf.XssMatchTuple>"
+        "javaType" : "aws.Property<aws.waf.XssMatchSetXssMatchTuple>"
       }
     }
   }

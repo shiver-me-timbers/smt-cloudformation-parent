@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPNGatewayResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPNGatewayResource>", "aws.HasCondition<VPNGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

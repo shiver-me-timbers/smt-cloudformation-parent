@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.inspector.ResourceGroupResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ResourceGroupAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ResourceGroupResource>", "aws.HasCondition<ResourceGroupResource>", "aws.HasAttributes<ResourceGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

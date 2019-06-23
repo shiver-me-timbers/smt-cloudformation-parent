@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Pipeline.SelectAttributes.schema.json",
-  "title" : "SelectAttributes",
+  "title" : "PipelineSelectAttributes",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-selectattributes.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.SelectAttributes",
-  "javaInterfaces" : [ "aws.Property<SelectAttributes>" ],
+  "javaType" : "aws.iotanalytics.PipelineSelectAttributes",
+  "javaInterfaces" : [ "aws.Property<PipelineSelectAttributes>" ],
   "properties" : {
     "Next" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-pipeline-selectattributes.html#cfn-iotanalytics-pipeline-selectattributes-next",

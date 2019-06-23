@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_Instance.NetworkInterface.schema.json",
-  "title" : "NetworkInterface",
+  "title" : "InstanceNetworkInterface",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html",
   "type" : "object",
-  "javaType" : "aws.ec2.NetworkInterface",
-  "javaInterfaces" : [ "aws.Property<NetworkInterface>" ],
+  "javaType" : "aws.ec2.InstanceNetworkInterface",
+  "javaInterfaces" : [ "aws.Property<InstanceNetworkInterface>" ],
   "properties" : {
     "AssociatePublicIpAddress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-associatepubip",
@@ -41,8 +41,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#cfn-ec2-instance-networkinterface-ipv6addresses",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_NetworkInterface.InstanceIpv6Address.schema.json",
-        "javaType" : "aws.Property<aws.ec2.InstanceIpv6Address>"
+        "$ref" : "AWS_EC2_Instance.InstanceIpv6Address.schema.json",
+        "javaType" : "aws.Property<aws.ec2.InstanceInstanceIpv6Address>"
       }
     },
     "NetworkInterfaceId" : {
@@ -59,8 +59,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html#aws-properties-ec2-network-iface-embedded-privateipaddresses",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_EC2_SpotFleet.PrivateIpAddressSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.PrivateIpAddressSpecification>"
+        "$ref" : "AWS_EC2_Instance.PrivateIpAddressSpecification.schema.json",
+        "javaType" : "aws.Property<aws.ec2.InstancePrivateIpAddressSpecification>"
       }
     },
     "SecondaryPrivateIpAddressCount" : {

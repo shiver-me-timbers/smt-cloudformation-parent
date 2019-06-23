@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.guardduty.MasterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MasterResource>", "aws.HasCondition<MasterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

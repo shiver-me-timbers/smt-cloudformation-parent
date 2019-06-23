@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sns.TopicResource",
-  "javaInterfaces" : [ "aws.HasAttributes<TopicAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<TopicResource>", "aws.HasCondition<TopicResource>", "aws.HasAttributes<TopicAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

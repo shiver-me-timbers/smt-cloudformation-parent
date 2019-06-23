@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dynamodb.TableResource",
-  "javaInterfaces" : [ "aws.HasAttributes<TableAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<TableResource>", "aws.HasCondition<TableResource>", "aws.HasAttributes<TableAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

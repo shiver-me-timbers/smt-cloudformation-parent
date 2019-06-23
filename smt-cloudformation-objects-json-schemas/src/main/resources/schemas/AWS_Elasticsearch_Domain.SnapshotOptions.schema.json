@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Elasticsearch_Domain.SnapshotOptions.schema.json",
-  "title" : "SnapshotOptions",
+  "title" : "DomainSnapshotOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.SnapshotOptions",
-  "javaInterfaces" : [ "aws.Property<SnapshotOptions>" ],
+  "javaType" : "aws.elasticsearch.DomainSnapshotOptions",
+  "javaInterfaces" : [ "aws.Property<DomainSnapshotOptions>" ],
   "properties" : {
     "AutomatedSnapshotStartHour" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html#cfn-elasticsearch-domain-snapshotoptions-automatedsnapshotstarthour",

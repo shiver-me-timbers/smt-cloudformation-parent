@@ -48,14 +48,14 @@ public class Job {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-defaultarguments")
     private Object defaultArguments;
     /**
-     * ConnectionsList
+     * JobConnectionsList
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html
      * 
      */
     @JsonProperty("Connections")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html")
-    private Property<ConnectionsList> connections;
+    private Property<JobConnectionsList> connections;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-maxretries
      * 
@@ -78,14 +78,14 @@ public class Job {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-loguri")
     private CharSequence logUri;
     /**
-     * JobCommand
+     * JobJobCommand
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html
      * 
      */
     @JsonProperty("Command")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html")
-    private Property<JobCommand> command;
+    private Property<JobJobCommand> command;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity
      * 
@@ -94,14 +94,14 @@ public class Job {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-allocatedcapacity")
     private Double allocatedCapacity;
     /**
-     * ExecutionProperty
+     * JobExecutionProperty
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html
      * 
      */
     @JsonProperty("ExecutionProperty")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html")
-    private Property<ExecutionProperty> executionProperty;
+    private Property<JobExecutionProperty> executionProperty;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-job.html#cfn-glue-job-name
      * 
@@ -157,28 +157,28 @@ public class Job {
     }
 
     /**
-     * ConnectionsList
+     * JobConnectionsList
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html
      * 
      */
     @JsonIgnore
-    public Property<ConnectionsList> getConnections() {
+    public Property<JobConnectionsList> getConnections() {
         return connections;
     }
 
     /**
-     * ConnectionsList
+     * JobConnectionsList
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html
      * 
      */
     @JsonIgnore
-    public void setConnections(Property<ConnectionsList> connections) {
+    public void setConnections(Property<JobConnectionsList> connections) {
         this.connections = connections;
     }
 
-    public Job withConnections(Property<ConnectionsList> connections) {
+    public Job withConnections(Property<JobConnectionsList> connections) {
         this.connections = connections;
         return this;
     }
@@ -253,28 +253,28 @@ public class Job {
     }
 
     /**
-     * JobCommand
+     * JobJobCommand
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html
      * 
      */
     @JsonIgnore
-    public Property<JobCommand> getCommand() {
+    public Property<JobJobCommand> getCommand() {
         return command;
     }
 
     /**
-     * JobCommand
+     * JobJobCommand
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-jobcommand.html
      * 
      */
     @JsonIgnore
-    public void setCommand(Property<JobCommand> command) {
+    public void setCommand(Property<JobJobCommand> command) {
         this.command = command;
     }
 
-    public Job withCommand(Property<JobCommand> command) {
+    public Job withCommand(Property<JobJobCommand> command) {
         this.command = command;
         return this;
     }
@@ -303,28 +303,28 @@ public class Job {
     }
 
     /**
-     * ExecutionProperty
+     * JobExecutionProperty
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html
      * 
      */
     @JsonIgnore
-    public Property<ExecutionProperty> getExecutionProperty() {
+    public Property<JobExecutionProperty> getExecutionProperty() {
         return executionProperty;
     }
 
     /**
-     * ExecutionProperty
+     * JobExecutionProperty
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-executionproperty.html
      * 
      */
     @JsonIgnore
-    public void setExecutionProperty(Property<ExecutionProperty> executionProperty) {
+    public void setExecutionProperty(Property<JobExecutionProperty> executionProperty) {
         this.executionProperty = executionProperty;
     }
 
-    public Job withExecutionProperty(Property<ExecutionProperty> executionProperty) {
+    public Job withExecutionProperty(Property<JobExecutionProperty> executionProperty) {
         this.executionProperty = executionProperty;
         return this;
     }

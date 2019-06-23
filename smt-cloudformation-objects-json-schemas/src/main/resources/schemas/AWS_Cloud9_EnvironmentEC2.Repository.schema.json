@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cloud9_EnvironmentEC2.Repository.schema.json",
-  "title" : "Repository",
+  "title" : "EnvironmentEC2Repository",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html",
   "type" : "object",
-  "javaType" : "aws.cloud9.Repository",
-  "javaInterfaces" : [ "aws.Property<Repository>" ],
+  "javaType" : "aws.cloud9.EnvironmentEC2Repository",
+  "javaInterfaces" : [ "aws.Property<EnvironmentEC2Repository>" ],
   "properties" : {
     "PathComponent" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloud9-environmentec2-repository.html#cfn-cloud9-environmentec2-repository-pathcomponent",

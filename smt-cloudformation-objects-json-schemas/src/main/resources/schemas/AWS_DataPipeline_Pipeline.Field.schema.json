@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DataPipeline_Pipeline.Field.schema.json",
-  "title" : "Field",
+  "title" : "PipelineField",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.Field",
-  "javaInterfaces" : [ "aws.Property<Field>" ],
+  "javaType" : "aws.datapipeline.PipelineField",
+  "javaInterfaces" : [ "aws.Property<PipelineField>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html#cfn-datapipeline-pipeline-pipelineobjects-fields-key",

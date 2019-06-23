@@ -29,14 +29,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class DeliveryChannel {
 
     /**
-     * ConfigSnapshotDeliveryProperties
+     * DeliveryChannelConfigSnapshotDeliveryProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html
      * 
      */
     @JsonProperty("ConfigSnapshotDeliveryProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html")
-    private Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties;
+    private Property<DeliveryChannelConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name
      * 
@@ -67,28 +67,28 @@ public class DeliveryChannel {
     private CharSequence snsTopicARN;
 
     /**
-     * ConfigSnapshotDeliveryProperties
+     * DeliveryChannelConfigSnapshotDeliveryProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html
      * 
      */
     @JsonIgnore
-    public Property<ConfigSnapshotDeliveryProperties> getConfigSnapshotDeliveryProperties() {
+    public Property<DeliveryChannelConfigSnapshotDeliveryProperties> getConfigSnapshotDeliveryProperties() {
         return configSnapshotDeliveryProperties;
     }
 
     /**
-     * ConfigSnapshotDeliveryProperties
+     * DeliveryChannelConfigSnapshotDeliveryProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html
      * 
      */
     @JsonIgnore
-    public void setConfigSnapshotDeliveryProperties(Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
+    public void setConfigSnapshotDeliveryProperties(Property<DeliveryChannelConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
         this.configSnapshotDeliveryProperties = configSnapshotDeliveryProperties;
     }
 
-    public DeliveryChannel withConfigSnapshotDeliveryProperties(Property<ConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
+    public DeliveryChannel withConfigSnapshotDeliveryProperties(Property<DeliveryChannelConfigSnapshotDeliveryProperties> configSnapshotDeliveryProperties) {
         this.configSnapshotDeliveryProperties = configSnapshotDeliveryProperties;
         return this;
     }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Events_Rule.SqsParameters.schema.json",
-  "title" : "SqsParameters",
+  "title" : "RuleSqsParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html",
   "type" : "object",
-  "javaType" : "aws.events.SqsParameters",
-  "javaInterfaces" : [ "aws.Property<SqsParameters>" ],
+  "javaType" : "aws.events.RuleSqsParameters",
+  "javaInterfaces" : [ "aws.Property<RuleSqsParameters>" ],
   "properties" : {
     "MessageGroupId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-sqsparameters.html#cfn-events-rule-sqsparameters-messagegroupid",

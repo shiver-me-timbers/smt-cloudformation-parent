@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class CoreDefinition {
 
     /**
-     * CoreDefinitionVersion
+     * CoreDefinitionCoreDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html")
-    private Property<CoreDefinitionVersion> initialVersion;
+    private Property<CoreDefinitionCoreDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-name
      * 
@@ -43,28 +43,28 @@ public class CoreDefinition {
     private CharSequence name;
 
     /**
-     * CoreDefinitionVersion
+     * CoreDefinitionCoreDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<CoreDefinitionVersion> getInitialVersion() {
+    public Property<CoreDefinitionCoreDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * CoreDefinitionVersion
+     * CoreDefinitionCoreDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-coredefinition-coredefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<CoreDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<CoreDefinitionCoreDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public CoreDefinition withInitialVersion(Property<CoreDefinitionVersion> initialVersion) {
+    public CoreDefinition withInitialVersion(Property<CoreDefinitionCoreDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

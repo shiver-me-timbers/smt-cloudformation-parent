@@ -51,14 +51,14 @@
     "LaunchTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchtemplate",
       "$ref" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplateSpecification.schema.json",
-      "javaType" : "aws.Property<aws.autoscaling.LaunchTemplateSpecification>"
+      "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupLaunchTemplateSpecification>"
     },
     "LifecycleHookSpecificationList" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScaling_AutoScalingGroup.LifecycleHookSpecification.schema.json",
-        "javaType" : "aws.Property<aws.autoscaling.LifecycleHookSpecification>"
+        "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupLifecycleHookSpecification>"
       }
     },
     "LoadBalancerNames" : {
@@ -79,7 +79,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScaling_AutoScalingGroup.MetricsCollection.schema.json",
-        "javaType" : "aws.Property<aws.autoscaling.MetricsCollection>"
+        "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupMetricsCollection>"
       }
     },
     "MinSize" : {
@@ -90,14 +90,14 @@
     "MixedInstancesPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-mixedinstancespolicy",
       "$ref" : "AWS_AutoScaling_AutoScalingGroup.MixedInstancesPolicy.schema.json",
-      "javaType" : "aws.Property<aws.autoscaling.MixedInstancesPolicy>"
+      "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupMixedInstancesPolicy>"
     },
     "NotificationConfigurations" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScaling_AutoScalingGroup.NotificationConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.autoscaling.NotificationConfiguration>"
+        "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupNotificationConfiguration>"
       }
     },
     "PlacementGroup" : {
@@ -115,7 +115,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AutoScaling_AutoScalingGroup.TagProperty.schema.json",
-        "javaType" : "aws.Property<aws.autoscaling.TagProperty>"
+        "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupTagProperty>"
       }
     },
     "TargetGroupARNs" : {

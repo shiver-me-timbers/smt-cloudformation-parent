@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sqs.QueuePolicyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<QueuePolicyResource>", "aws.HasCondition<QueuePolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

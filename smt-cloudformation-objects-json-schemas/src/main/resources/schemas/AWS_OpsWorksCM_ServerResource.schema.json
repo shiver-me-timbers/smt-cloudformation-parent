@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.opsworkscm.ServerResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ServerAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ServerResource>", "aws.HasCondition<ServerResource>", "aws.HasAttributes<ServerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

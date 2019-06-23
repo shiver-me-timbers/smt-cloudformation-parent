@@ -17,7 +17,7 @@
     "LoginProfile" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-loginprofile",
       "$ref" : "AWS_IAM_User.LoginProfile.schema.json",
-      "javaType" : "aws.Property<aws.iam.LoginProfile>"
+      "javaType" : "aws.Property<aws.iam.UserLoginProfile>"
     },
     "ManagedPolicyArns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns",
@@ -42,8 +42,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-policies",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_IAM_Role.Policy.schema.json",
-        "javaType" : "aws.Property<aws.iam.Policy>"
+        "$ref" : "AWS_IAM_User.Policy.schema.json",
+        "javaType" : "aws.Property<aws.iam.UserPolicy>"
       }
     },
     "UserName" : {

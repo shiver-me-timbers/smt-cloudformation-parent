@@ -73,14 +73,14 @@ public class MicrosoftAD {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-shortname")
     private CharSequence shortName;
     /**
-     * VpcSettings
+     * MicrosoftADVpcSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
     @JsonProperty("VpcSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html")
-    private Property<VpcSettings> vpcSettings;
+    private Property<MicrosoftADVpcSettings> vpcSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-createalias
@@ -221,28 +221,28 @@ public class MicrosoftAD {
     }
 
     /**
-     * VpcSettings
+     * MicrosoftADVpcSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
     @JsonIgnore
-    public Property<VpcSettings> getVpcSettings() {
+    public Property<MicrosoftADVpcSettings> getVpcSettings() {
         return vpcSettings;
     }
 
     /**
-     * VpcSettings
+     * MicrosoftADVpcSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
      * 
      */
     @JsonIgnore
-    public void setVpcSettings(Property<VpcSettings> vpcSettings) {
+    public void setVpcSettings(Property<MicrosoftADVpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
     }
 
-    public MicrosoftAD withVpcSettings(Property<VpcSettings> vpcSettings) {
+    public MicrosoftAD withVpcSettings(Property<MicrosoftADVpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
         return this;
     }

@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_LoadBalancer.LoadBalancerAttribute.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.LoadBalancerAttribute>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.LoadBalancerLoadBalancerAttribute>"
       }
     },
     "Name" : {
@@ -45,7 +45,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_LoadBalancer.SubnetMapping.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.SubnetMapping>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.LoadBalancerSubnetMapping>"
       }
     },
     "Subnets" : {

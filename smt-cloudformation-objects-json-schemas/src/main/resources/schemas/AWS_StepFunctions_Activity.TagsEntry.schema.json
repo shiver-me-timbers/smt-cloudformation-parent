@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_StepFunctions_Activity.TagsEntry.schema.json",
-  "title" : "TagsEntry",
+  "title" : "ActivityTagsEntry",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-activity-tagsentry.html",
   "type" : "object",
-  "javaType" : "aws.stepfunctions.TagsEntry",
-  "javaInterfaces" : [ "aws.Property<TagsEntry>" ],
+  "javaType" : "aws.stepfunctions.ActivityTagsEntry",
+  "javaInterfaces" : [ "aws.Property<ActivityTagsEntry>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stepfunctions-activity-tagsentry.html#cfn-stepfunctions-activity-tagsentry-value",

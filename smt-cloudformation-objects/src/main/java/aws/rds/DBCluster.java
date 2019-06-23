@@ -198,14 +198,14 @@ public class DBCluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-replicationsourceidentifier")
     private CharSequence replicationSourceIdentifier;
     /**
-     * ScalingConfiguration
+     * DBClusterScalingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
      * 
      */
     @JsonProperty("ScalingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html")
-    private Property<ScalingConfiguration> scalingConfiguration;
+    private Property<DBClusterScalingConfiguration> scalingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbcluster.html#cfn-rds-dbcluster-snapshotidentifier
      * 
@@ -704,28 +704,28 @@ public class DBCluster {
     }
 
     /**
-     * ScalingConfiguration
+     * DBClusterScalingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ScalingConfiguration> getScalingConfiguration() {
+    public Property<DBClusterScalingConfiguration> getScalingConfiguration() {
         return scalingConfiguration;
     }
 
     /**
-     * ScalingConfiguration
+     * DBClusterScalingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbcluster-scalingconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setScalingConfiguration(Property<ScalingConfiguration> scalingConfiguration) {
+    public void setScalingConfiguration(Property<DBClusterScalingConfiguration> scalingConfiguration) {
         this.scalingConfiguration = scalingConfiguration;
     }
 
-    public DBCluster withScalingConfiguration(Property<ScalingConfiguration> scalingConfiguration) {
+    public DBCluster withScalingConfiguration(Property<DBClusterScalingConfiguration> scalingConfiguration) {
         this.scalingConfiguration = scalingConfiguration;
         return this;
     }

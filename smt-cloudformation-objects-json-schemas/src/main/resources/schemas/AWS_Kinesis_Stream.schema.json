@@ -22,7 +22,7 @@
     "StreamEncryption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-streamencryption",
       "$ref" : "AWS_Kinesis_Stream.StreamEncryption.schema.json",
-      "javaType" : "aws.Property<aws.kinesis.StreamEncryption>"
+      "javaType" : "aws.Property<aws.kinesis.StreamStreamEncryption>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags",

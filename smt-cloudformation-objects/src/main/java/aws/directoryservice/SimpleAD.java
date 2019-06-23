@@ -81,14 +81,14 @@ public class SimpleAD {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-size")
     private CharSequence size;
     /**
-     * VpcSettings
+     * SimpleADVpcSettings
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html
      * 
      */
     @JsonProperty("VpcSettings")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html")
-    private Property<VpcSettings> vpcSettings;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html")
+    private Property<SimpleADVpcSettings> vpcSettings;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-simplead.html#cfn-directoryservice-simplead-createalias
@@ -252,28 +252,28 @@ public class SimpleAD {
     }
 
     /**
-     * VpcSettings
+     * SimpleADVpcSettings
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html
      * 
      */
     @JsonIgnore
-    public Property<VpcSettings> getVpcSettings() {
+    public Property<SimpleADVpcSettings> getVpcSettings() {
         return vpcSettings;
     }
 
     /**
-     * VpcSettings
+     * SimpleADVpcSettings
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html
      * 
      */
     @JsonIgnore
-    public void setVpcSettings(Property<VpcSettings> vpcSettings) {
+    public void setVpcSettings(Property<SimpleADVpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
     }
 
-    public SimpleAD withVpcSettings(Property<VpcSettings> vpcSettings) {
+    public SimpleAD withVpcSettings(Property<SimpleADVpcSettings> vpcSettings) {
         this.vpcSettings = vpcSettings;
         return this;
     }

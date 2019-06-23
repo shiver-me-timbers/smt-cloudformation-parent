@@ -36,14 +36,14 @@ public class DirectoryConfig {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-organizationalunitdistinguishednames")
     private List<CharSequence> organizationalUnitDistinguishedNames = new ArrayList<CharSequence>();
     /**
-     * ServiceAccountCredentials
+     * DirectoryConfigServiceAccountCredentials
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-directoryconfig-serviceaccountcredentials.html
      * 
      */
     @JsonProperty("ServiceAccountCredentials")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-directoryconfig-serviceaccountcredentials.html")
-    private Property<ServiceAccountCredentials> serviceAccountCredentials;
+    private Property<DirectoryConfigServiceAccountCredentials> serviceAccountCredentials;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-directoryconfig.html#cfn-appstream-directoryconfig-directoryname
      * 
@@ -76,28 +76,28 @@ public class DirectoryConfig {
     }
 
     /**
-     * ServiceAccountCredentials
+     * DirectoryConfigServiceAccountCredentials
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-directoryconfig-serviceaccountcredentials.html
      * 
      */
     @JsonIgnore
-    public Property<ServiceAccountCredentials> getServiceAccountCredentials() {
+    public Property<DirectoryConfigServiceAccountCredentials> getServiceAccountCredentials() {
         return serviceAccountCredentials;
     }
 
     /**
-     * ServiceAccountCredentials
+     * DirectoryConfigServiceAccountCredentials
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-directoryconfig-serviceaccountcredentials.html
      * 
      */
     @JsonIgnore
-    public void setServiceAccountCredentials(Property<ServiceAccountCredentials> serviceAccountCredentials) {
+    public void setServiceAccountCredentials(Property<DirectoryConfigServiceAccountCredentials> serviceAccountCredentials) {
         this.serviceAccountCredentials = serviceAccountCredentials;
     }
 
-    public DirectoryConfig withServiceAccountCredentials(Property<ServiceAccountCredentials> serviceAccountCredentials) {
+    public DirectoryConfig withServiceAccountCredentials(Property<DirectoryConfigServiceAccountCredentials> serviceAccountCredentials) {
         this.serviceAccountCredentials = serviceAccountCredentials;
         return this;
     }

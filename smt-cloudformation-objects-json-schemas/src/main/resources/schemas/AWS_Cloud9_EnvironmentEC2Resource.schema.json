@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloud9.EnvironmentEC2Resource",
-  "javaInterfaces" : [ "aws.HasAttributes<EnvironmentEC2Attributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<EnvironmentEC2Resource>", "aws.HasCondition<EnvironmentEC2Resource>", "aws.HasAttributes<EnvironmentEC2Attributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

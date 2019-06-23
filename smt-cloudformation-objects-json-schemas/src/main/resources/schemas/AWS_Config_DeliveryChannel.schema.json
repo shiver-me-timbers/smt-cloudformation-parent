@@ -9,7 +9,7 @@
     "ConfigSnapshotDeliveryProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-configsnapshotdeliveryproperties",
       "$ref" : "AWS_Config_DeliveryChannel.ConfigSnapshotDeliveryProperties.schema.json",
-      "javaType" : "aws.Property<aws.config.ConfigSnapshotDeliveryProperties>"
+      "javaType" : "aws.Property<aws.config.DeliveryChannelConfigSnapshotDeliveryProperties>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html#cfn-config-deliverychannel-name",

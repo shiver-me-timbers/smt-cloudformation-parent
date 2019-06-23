@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.DataExport.schema.json",
-  "title" : "DataExport",
+  "title" : "BucketDataExport",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html",
   "type" : "object",
-  "javaType" : "aws.s3.DataExport",
-  "javaInterfaces" : [ "aws.Property<DataExport>" ],
+  "javaType" : "aws.s3.BucketDataExport",
+  "javaInterfaces" : [ "aws.Property<BucketDataExport>" ],
   "properties" : {
     "Destination" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-destination",
       "$ref" : "AWS_S3_Bucket.Destination.schema.json",
-      "javaType" : "aws.Property<aws.s3.Destination>"
+      "javaType" : "aws.Property<aws.s3.BucketDestination>"
     },
     "OutputSchemaVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-dataexport.html#cfn-s3-bucket-dataexport-outputschemaversion",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json",
-  "title" : "ProcessingConfiguration",
+  "title" : "DeliveryStreamProcessingConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.ProcessingConfiguration",
-  "javaInterfaces" : [ "aws.Property<ProcessingConfiguration>" ],
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamProcessingConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamProcessingConfiguration>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_KinesisFirehose_DeliveryStream.Processor.schema.json",
-        "javaType" : "aws.Property<aws.kinesisfirehose.Processor>"
+        "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamProcessor>"
       }
     }
   }

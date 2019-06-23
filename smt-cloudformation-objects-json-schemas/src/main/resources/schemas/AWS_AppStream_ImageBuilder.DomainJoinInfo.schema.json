@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppStream_ImageBuilder.DomainJoinInfo.schema.json",
-  "title" : "DomainJoinInfo",
+  "title" : "ImageBuilderDomainJoinInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html",
   "type" : "object",
-  "javaType" : "aws.appstream.DomainJoinInfo",
-  "javaInterfaces" : [ "aws.Property<DomainJoinInfo>" ],
+  "javaType" : "aws.appstream.ImageBuilderDomainJoinInfo",
+  "javaInterfaces" : [ "aws.Property<ImageBuilderDomainJoinInfo>" ],
   "properties" : {
     "OrganizationalUnitDistinguishedName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html#cfn-appstream-imagebuilder-domainjoininfo-organizationalunitdistinguishedname",

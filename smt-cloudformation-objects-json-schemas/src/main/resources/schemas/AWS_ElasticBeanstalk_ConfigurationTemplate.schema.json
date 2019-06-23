@@ -26,7 +26,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ElasticBeanstalk_ConfigurationTemplate.ConfigurationOptionSetting.schema.json",
-        "javaType" : "aws.Property<aws.elasticbeanstalk.ConfigurationOptionSetting>"
+        "javaType" : "aws.Property<aws.elasticbeanstalk.ConfigurationTemplateConfigurationOptionSetting>"
       }
     },
     "PlatformArn" : {
@@ -42,7 +42,7 @@
     "SourceConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-sourceconfiguration",
       "$ref" : "AWS_ElasticBeanstalk_ConfigurationTemplate.SourceConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.elasticbeanstalk.SourceConfiguration>"
+      "javaType" : "aws.Property<aws.elasticbeanstalk.ConfigurationTemplateSourceConfiguration>"
     }
   }
 }

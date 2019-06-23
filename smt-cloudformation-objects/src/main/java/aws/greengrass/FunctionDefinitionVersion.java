@@ -17,92 +17,122 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * FunctionDefinitionVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
     "DefaultConfig",
-    "Functions"
+    "Functions",
+    "FunctionDefinitionId"
 })
-public class FunctionDefinitionVersion implements Property<FunctionDefinitionVersion>
-{
+public class FunctionDefinitionVersion {
 
     /**
-     * DefaultConfig
+     * FunctionDefinitionVersionDefaultConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html
      * 
      */
     @JsonProperty("DefaultConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html")
-    private Property<DefaultConfig> defaultConfig;
+    private Property<FunctionDefinitionVersionDefaultConfig> defaultConfig;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functions
      * 
      */
     @JsonProperty("Functions")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions")
-    private List<Property<Function>> functions = new ArrayList<Property<Function>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functions")
+    private List<Property<FunctionDefinitionVersionFunction>> functions = new ArrayList<Property<FunctionDefinitionVersionFunction>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functiondefinitionid
+     * 
+     */
+    @JsonProperty("FunctionDefinitionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functiondefinitionid")
+    private CharSequence functionDefinitionId;
 
     /**
-     * DefaultConfig
+     * FunctionDefinitionVersionDefaultConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html
      * 
      */
     @JsonIgnore
-    public Property<DefaultConfig> getDefaultConfig() {
+    public Property<FunctionDefinitionVersionDefaultConfig> getDefaultConfig() {
         return defaultConfig;
     }
 
     /**
-     * DefaultConfig
+     * FunctionDefinitionVersionDefaultConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-defaultconfig.html
      * 
      */
     @JsonIgnore
-    public void setDefaultConfig(Property<DefaultConfig> defaultConfig) {
+    public void setDefaultConfig(Property<FunctionDefinitionVersionDefaultConfig> defaultConfig) {
         this.defaultConfig = defaultConfig;
     }
 
-    public FunctionDefinitionVersion withDefaultConfig(Property<DefaultConfig> defaultConfig) {
+    public FunctionDefinitionVersion withDefaultConfig(Property<FunctionDefinitionVersionDefaultConfig> defaultConfig) {
         this.defaultConfig = defaultConfig;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functions
      * 
      */
     @JsonIgnore
-    public List<Property<Function>> getFunctions() {
+    public List<Property<FunctionDefinitionVersionFunction>> getFunctions() {
         return functions;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html#cfn-greengrass-functiondefinition-functiondefinitionversion-functions
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functions
      * 
      */
     @JsonIgnore
-    public void setFunctions(List<Property<Function>> functions) {
+    public void setFunctions(List<Property<FunctionDefinitionVersionFunction>> functions) {
         this.functions = functions;
     }
 
-    public FunctionDefinitionVersion withFunctions(List<Property<Function>> functions) {
+    public FunctionDefinitionVersion withFunctions(List<Property<FunctionDefinitionVersionFunction>> functions) {
         this.functions = functions;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functiondefinitionid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getFunctionDefinitionId() {
+        return functionDefinitionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinitionversion.html#cfn-greengrass-functiondefinitionversion-functiondefinitionid
+     * 
+     */
+    @JsonIgnore
+    public void setFunctionDefinitionId(CharSequence functionDefinitionId) {
+        this.functionDefinitionId = functionDefinitionId;
+    }
+
+    public FunctionDefinitionVersion withFunctionDefinitionId(CharSequence functionDefinitionId) {
+        this.functionDefinitionId = functionDefinitionId;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("defaultConfig", defaultConfig).append("functions", functions).toString();
+        return new ToStringBuilder(this).append("defaultConfig", defaultConfig).append("functions", functions).append("functionDefinitionId", functionDefinitionId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(functions).append(defaultConfig).toHashCode();
+        return new HashCodeBuilder().append(functionDefinitionId).append(functions).append(defaultConfig).toHashCode();
     }
 
     @Override
@@ -114,7 +144,7 @@ public class FunctionDefinitionVersion implements Property<FunctionDefinitionVer
             return false;
         }
         FunctionDefinitionVersion rhs = ((FunctionDefinitionVersion) other);
-        return new EqualsBuilder().append(functions, rhs.functions).append(defaultConfig, rhs.defaultConfig).isEquals();
+        return new EqualsBuilder().append(functionDefinitionId, rhs.functionDefinitionId).append(functions, rhs.functions).append(defaultConfig, rhs.defaultConfig).isEquals();
     }
 
 }

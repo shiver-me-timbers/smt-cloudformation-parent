@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Dataset.Filter.schema.json",
-  "title" : "Filter",
+  "title" : "DatasetFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-filter.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.Filter",
-  "javaInterfaces" : [ "aws.Property<Filter>" ],
+  "javaType" : "aws.iotanalytics.DatasetFilter",
+  "javaInterfaces" : [ "aws.Property<DatasetFilter>" ],
   "properties" : {
     "DeltaTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-filter.html#cfn-iotanalytics-dataset-filter-deltatime",
       "$ref" : "AWS_IoTAnalytics_Dataset.DeltaTime.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.DeltaTime>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetDeltaTime>"
     }
   }
 }

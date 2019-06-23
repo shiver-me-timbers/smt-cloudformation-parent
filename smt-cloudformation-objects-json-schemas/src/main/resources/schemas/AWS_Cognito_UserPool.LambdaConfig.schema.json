@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_UserPool.LambdaConfig.schema.json",
-  "title" : "LambdaConfig",
+  "title" : "UserPoolLambdaConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html",
   "type" : "object",
-  "javaType" : "aws.cognito.LambdaConfig",
-  "javaInterfaces" : [ "aws.Property<LambdaConfig>" ],
+  "javaType" : "aws.cognito.UserPoolLambdaConfig",
+  "javaInterfaces" : [ "aws.Property<UserPoolLambdaConfig>" ],
   "properties" : {
     "CreateAuthChallenge" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-lambdaconfig.html#cfn-cognito-userpool-lambdaconfig-createauthchallenge",

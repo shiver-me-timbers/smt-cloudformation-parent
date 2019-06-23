@@ -139,7 +139,7 @@ public class Server {
      */
     @JsonProperty("EngineAttributes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-engineattributes")
-    private List<Property<EngineAttribute>> engineAttributes = new ArrayList<Property<EngineAttribute>>();
+    private List<Property<ServerEngineAttribute>> engineAttributes = new ArrayList<Property<ServerEngineAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworkscm-server.html#cfn-opsworkscm-server-backupretentioncount
      * 
@@ -466,7 +466,7 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public List<Property<EngineAttribute>> getEngineAttributes() {
+    public List<Property<ServerEngineAttribute>> getEngineAttributes() {
         return engineAttributes;
     }
 
@@ -475,11 +475,11 @@ public class Server {
      * 
      */
     @JsonIgnore
-    public void setEngineAttributes(List<Property<EngineAttribute>> engineAttributes) {
+    public void setEngineAttributes(List<Property<ServerEngineAttribute>> engineAttributes) {
         this.engineAttributes = engineAttributes;
     }
 
-    public Server withEngineAttributes(List<Property<EngineAttribute>> engineAttributes) {
+    public Server withEngineAttributes(List<Property<ServerEngineAttribute>> engineAttributes) {
         this.engineAttributes = engineAttributes;
         return this;
     }

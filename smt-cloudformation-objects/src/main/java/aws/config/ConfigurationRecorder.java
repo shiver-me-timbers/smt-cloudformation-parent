@@ -34,14 +34,14 @@ public class ConfigurationRecorder {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-name")
     private CharSequence name;
     /**
-     * RecordingGroup
+     * ConfigurationRecorderRecordingGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html
      * 
      */
     @JsonProperty("RecordingGroup")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html")
-    private Property<RecordingGroup> recordingGroup;
+    private Property<ConfigurationRecorderRecordingGroup> recordingGroup;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html#cfn-config-configurationrecorder-rolearn
      * 
@@ -74,28 +74,28 @@ public class ConfigurationRecorder {
     }
 
     /**
-     * RecordingGroup
+     * ConfigurationRecorderRecordingGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html
      * 
      */
     @JsonIgnore
-    public Property<RecordingGroup> getRecordingGroup() {
+    public Property<ConfigurationRecorderRecordingGroup> getRecordingGroup() {
         return recordingGroup;
     }
 
     /**
-     * RecordingGroup
+     * ConfigurationRecorderRecordingGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html
      * 
      */
     @JsonIgnore
-    public void setRecordingGroup(Property<RecordingGroup> recordingGroup) {
+    public void setRecordingGroup(Property<ConfigurationRecorderRecordingGroup> recordingGroup) {
         this.recordingGroup = recordingGroup;
     }
 
-    public ConfigurationRecorder withRecordingGroup(Property<RecordingGroup> recordingGroup) {
+    public ConfigurationRecorder withRecordingGroup(Property<ConfigurationRecorderRecordingGroup> recordingGroup) {
         this.recordingGroup = recordingGroup;
         return this;
     }

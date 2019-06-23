@@ -11,8 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_ElasticLoadBalancingV2_Listener.Action.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.Action>"
+        "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.Action.schema.json",
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleAction>"
       }
     },
     "Conditions" : {
@@ -21,7 +21,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.RuleCondition.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.RuleCondition>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleRuleCondition>"
       }
     },
     "ListenerArn" : {

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.DBParameterGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DBParameterGroupResource>", "aws.HasCondition<DBParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

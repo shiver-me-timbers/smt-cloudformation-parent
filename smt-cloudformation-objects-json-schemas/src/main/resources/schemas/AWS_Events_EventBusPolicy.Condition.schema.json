@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Events_EventBusPolicy.Condition.schema.json",
-  "title" : "Condition",
+  "title" : "EventBusPolicyCondition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html",
   "type" : "object",
-  "javaType" : "aws.events.Condition",
-  "javaInterfaces" : [ "aws.Property<Condition>" ],
+  "javaType" : "aws.events.EventBusPolicyCondition",
+  "javaInterfaces" : [ "aws.Property<EventBusPolicyCondition>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html#cfn-events-eventbuspolicy-condition-type",

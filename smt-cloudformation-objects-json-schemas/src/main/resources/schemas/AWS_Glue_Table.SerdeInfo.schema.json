@@ -1,15 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Table.SerdeInfo.schema.json",
-  "title" : "SerdeInfo",
+  "title" : "TableSerdeInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-serdeinfo.html",
   "type" : "object",
-  "javaType" : "aws.glue.SerdeInfo",
-  "javaInterfaces" : [ "aws.Property<SerdeInfo>" ],
+  "javaType" : "aws.glue.TableSerdeInfo",
+  "javaInterfaces" : [ "aws.Property<TableSerdeInfo>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-serdeinfo.html#cfn-glue-table-serdeinfo-parameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "SerializationLibrary" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-serdeinfo.html#cfn-glue-table-serdeinfo-serializationlibrary",

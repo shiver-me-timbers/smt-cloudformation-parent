@@ -13,7 +13,7 @@
     },
     "PolicyDocument" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument",
-      "type" : "any"
+      "$ref" : "PolicyDocument.schema.json"
     }
   }
 }

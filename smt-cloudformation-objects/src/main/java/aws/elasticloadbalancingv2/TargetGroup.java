@@ -96,14 +96,14 @@ public class TargetGroup {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-healthythresholdcount")
     private Integer healthyThresholdCount;
     /**
-     * Matcher
+     * TargetGroupMatcher
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html
      * 
      */
     @JsonProperty("Matcher")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html")
-    private Property<Matcher> matcher;
+    private Property<TargetGroupMatcher> matcher;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-name
      * 
@@ -139,7 +139,7 @@ public class TargetGroup {
     @JsonProperty("TargetGroupAttributes")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targetgroupattributes")
-    private Set<Property<TargetGroupAttribute>> targetGroupAttributes = new LinkedHashSet<Property<TargetGroupAttribute>>();
+    private Set<Property<TargetGroupTargetGroupAttribute>> targetGroupAttributes = new LinkedHashSet<Property<TargetGroupTargetGroupAttribute>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targettype
      * 
@@ -154,7 +154,7 @@ public class TargetGroup {
     @JsonProperty("Targets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-targets")
-    private Set<Property<TargetDescription>> targets = new LinkedHashSet<Property<TargetDescription>>();
+    private Set<Property<TargetGroupTargetDescription>> targets = new LinkedHashSet<Property<TargetGroupTargetDescription>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-unhealthythresholdcount
      * 
@@ -332,28 +332,28 @@ public class TargetGroup {
     }
 
     /**
-     * Matcher
+     * TargetGroupMatcher
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html
      * 
      */
     @JsonIgnore
-    public Property<Matcher> getMatcher() {
+    public Property<TargetGroupMatcher> getMatcher() {
         return matcher;
     }
 
     /**
-     * Matcher
+     * TargetGroupMatcher
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-matcher.html
      * 
      */
     @JsonIgnore
-    public void setMatcher(Property<Matcher> matcher) {
+    public void setMatcher(Property<TargetGroupMatcher> matcher) {
         this.matcher = matcher;
     }
 
-    public TargetGroup withMatcher(Property<Matcher> matcher) {
+    public TargetGroup withMatcher(Property<TargetGroupMatcher> matcher) {
         this.matcher = matcher;
         return this;
     }
@@ -455,7 +455,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Set<Property<TargetGroupAttribute>> getTargetGroupAttributes() {
+    public Set<Property<TargetGroupTargetGroupAttribute>> getTargetGroupAttributes() {
         return targetGroupAttributes;
     }
 
@@ -464,11 +464,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setTargetGroupAttributes(Set<Property<TargetGroupAttribute>> targetGroupAttributes) {
+    public void setTargetGroupAttributes(Set<Property<TargetGroupTargetGroupAttribute>> targetGroupAttributes) {
         this.targetGroupAttributes = targetGroupAttributes;
     }
 
-    public TargetGroup withTargetGroupAttributes(Set<Property<TargetGroupAttribute>> targetGroupAttributes) {
+    public TargetGroup withTargetGroupAttributes(Set<Property<TargetGroupTargetGroupAttribute>> targetGroupAttributes) {
         this.targetGroupAttributes = targetGroupAttributes;
         return this;
     }
@@ -501,7 +501,7 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public Set<Property<TargetDescription>> getTargets() {
+    public Set<Property<TargetGroupTargetDescription>> getTargets() {
         return targets;
     }
 
@@ -510,11 +510,11 @@ public class TargetGroup {
      * 
      */
     @JsonIgnore
-    public void setTargets(Set<Property<TargetDescription>> targets) {
+    public void setTargets(Set<Property<TargetGroupTargetDescription>> targets) {
         this.targets = targets;
     }
 
-    public TargetGroup withTargets(Set<Property<TargetDescription>> targets) {
+    public TargetGroup withTargets(Set<Property<TargetGroupTargetDescription>> targets) {
         this.targets = targets;
         return this;
     }

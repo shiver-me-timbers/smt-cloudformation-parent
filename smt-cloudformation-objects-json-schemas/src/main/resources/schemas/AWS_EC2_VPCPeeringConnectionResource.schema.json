@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPCPeeringConnectionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPCPeeringConnectionResource>", "aws.HasCondition<VPCPeeringConnectionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

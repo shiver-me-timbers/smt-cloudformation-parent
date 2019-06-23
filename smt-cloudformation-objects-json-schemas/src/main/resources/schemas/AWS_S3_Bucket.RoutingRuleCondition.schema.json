@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.RoutingRuleCondition.schema.json",
-  "title" : "RoutingRuleCondition",
+  "title" : "BucketRoutingRuleCondition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html",
   "type" : "object",
-  "javaType" : "aws.s3.RoutingRuleCondition",
-  "javaInterfaces" : [ "aws.Property<RoutingRuleCondition>" ],
+  "javaType" : "aws.s3.BucketRoutingRuleCondition",
+  "javaInterfaces" : [ "aws.Property<BucketRoutingRuleCondition>" ],
   "properties" : {
     "HttpErrorCodeReturnedEquals" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html#cfn-s3-websiteconfiguration-routingrules-routingrulecondition-httperrorcodereturnedequals",

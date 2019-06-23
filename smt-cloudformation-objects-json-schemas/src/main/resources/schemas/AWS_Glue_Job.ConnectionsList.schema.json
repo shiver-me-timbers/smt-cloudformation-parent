@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Job.ConnectionsList.schema.json",
-  "title" : "ConnectionsList",
+  "title" : "JobConnectionsList",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html",
   "type" : "object",
-  "javaType" : "aws.glue.ConnectionsList",
-  "javaInterfaces" : [ "aws.Property<ConnectionsList>" ],
+  "javaType" : "aws.glue.JobConnectionsList",
+  "javaInterfaces" : [ "aws.Property<JobConnectionsList>" ],
   "properties" : {
     "Connections" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-job-connectionslist.html#cfn-glue-job-connectionslist-connections",

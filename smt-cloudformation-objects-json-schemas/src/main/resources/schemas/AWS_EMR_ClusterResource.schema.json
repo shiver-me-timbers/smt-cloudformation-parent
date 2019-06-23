@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.emr.ClusterResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ClusterAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterResource>", "aws.HasCondition<ClusterResource>", "aws.HasAttributes<ClusterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

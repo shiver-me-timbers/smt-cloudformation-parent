@@ -3,6 +3,7 @@ package aws.sns;
 
 import java.util.ArrayList;
 import java.util.List;
+import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,12 +28,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class TopicPolicy {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("PolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument")
-    private Object policyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
      * 
@@ -42,24 +45,28 @@ public class TopicPolicy {
     private List<CharSequence> topics = new ArrayList<CharSequence>();
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public Object getPolicyDocument() {
+    public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
+    public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public TopicPolicy withPolicyDocument(Object policyDocument) {
+    public TopicPolicy withPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

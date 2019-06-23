@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobQueue.ComputeEnvironmentOrder.schema.json",
-        "javaType" : "aws.Property<aws.batch.ComputeEnvironmentOrder>"
+        "javaType" : "aws.Property<aws.batch.JobQueueComputeEnvironmentOrder>"
       }
     },
     "Priority" : {

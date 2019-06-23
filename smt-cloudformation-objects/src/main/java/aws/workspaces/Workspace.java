@@ -84,14 +84,14 @@ public class Workspace {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-volumeencryptionkey")
     private CharSequence volumeEncryptionKey;
     /**
-     * WorkspaceProperties
+     * WorkspaceWorkspaceProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
      * 
      */
     @JsonProperty("WorkspaceProperties")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html")
-    private Property<WorkspaceProperties> workspaceProperties;
+    private Property<WorkspaceWorkspaceProperties> workspaceProperties;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-workspaces-workspace.html#cfn-workspaces-workspace-bundleid
@@ -255,28 +255,28 @@ public class Workspace {
     }
 
     /**
-     * WorkspaceProperties
+     * WorkspaceWorkspaceProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
      * 
      */
     @JsonIgnore
-    public Property<WorkspaceProperties> getWorkspaceProperties() {
+    public Property<WorkspaceWorkspaceProperties> getWorkspaceProperties() {
         return workspaceProperties;
     }
 
     /**
-     * WorkspaceProperties
+     * WorkspaceWorkspaceProperties
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-workspaces-workspace-workspaceproperties.html
      * 
      */
     @JsonIgnore
-    public void setWorkspaceProperties(Property<WorkspaceProperties> workspaceProperties) {
+    public void setWorkspaceProperties(Property<WorkspaceWorkspaceProperties> workspaceProperties) {
         this.workspaceProperties = workspaceProperties;
     }
 
-    public Workspace withWorkspaceProperties(Property<WorkspaceProperties> workspaceProperties) {
+    public Workspace withWorkspaceProperties(Property<WorkspaceWorkspaceProperties> workspaceProperties) {
         this.workspaceProperties = workspaceProperties;
         return this;
     }

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appmesh.RouteResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RouteAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RouteResource>", "aws.HasCondition<RouteResource>", "aws.HasAttributes<RouteAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

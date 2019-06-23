@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticloadbalancingv2.ListenerRuleResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ListenerRuleResource>", "aws.HasCondition<ListenerRuleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

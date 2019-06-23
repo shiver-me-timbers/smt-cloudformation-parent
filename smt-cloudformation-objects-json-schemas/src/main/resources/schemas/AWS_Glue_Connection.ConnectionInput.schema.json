@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Connection.ConnectionInput.schema.json",
-  "title" : "ConnectionInput",
+  "title" : "ConnectionConnectionInput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html",
   "type" : "object",
-  "javaType" : "aws.glue.ConnectionInput",
-  "javaInterfaces" : [ "aws.Property<ConnectionInput>" ],
+  "javaType" : "aws.glue.ConnectionConnectionInput",
+  "javaInterfaces" : [ "aws.Property<ConnectionConnectionInput>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-description",
@@ -28,11 +28,12 @@
     "PhysicalConnectionRequirements" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-physicalconnectionrequirements",
       "$ref" : "AWS_Glue_Connection.PhysicalConnectionRequirements.schema.json",
-      "javaType" : "aws.Property<aws.glue.PhysicalConnectionRequirements>"
+      "javaType" : "aws.Property<aws.glue.ConnectionPhysicalConnectionRequirements>"
     },
     "ConnectionProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-connectionproperties",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-connectioninput.html#cfn-glue-connection-connectioninput-name",

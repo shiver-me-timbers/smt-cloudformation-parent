@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_InstanceFleetConfig.InstanceTypeConfig.schema.json",
-  "title" : "InstanceTypeConfig",
+  "title" : "InstanceFleetConfigInstanceTypeConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceTypeConfig",
-  "javaInterfaces" : [ "aws.Property<InstanceTypeConfig>" ],
+  "javaType" : "aws.emr.InstanceFleetConfigInstanceTypeConfig",
+  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigInstanceTypeConfig>" ],
   "properties" : {
     "BidPrice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-bidprice",
@@ -22,13 +22,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.emr.Configuration>"
+        "javaType" : "aws.Property<aws.emr.InstanceFleetConfigConfiguration>"
       }
     },
     "EbsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-ebsconfiguration",
       "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.emr.EbsConfiguration>"
+      "javaType" : "aws.Property<aws.emr.InstanceFleetConfigEbsConfiguration>"
     },
     "InstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-instancetypeconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancetypeconfig-instancetype",

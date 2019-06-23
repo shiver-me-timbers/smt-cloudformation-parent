@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.redshift.ClusterSubnetGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterSubnetGroupResource>", "aws.HasCondition<ClusterSubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

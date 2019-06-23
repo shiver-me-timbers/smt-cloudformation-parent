@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_SpotFleet.LaunchTemplateOverrides.schema.json",
-  "title" : "LaunchTemplateOverrides",
+  "title" : "SpotFleetLaunchTemplateOverrides",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html",
   "type" : "object",
-  "javaType" : "aws.ec2.LaunchTemplateOverrides",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateOverrides>" ],
+  "javaType" : "aws.ec2.SpotFleetLaunchTemplateOverrides",
+  "javaInterfaces" : [ "aws.Property<SpotFleetLaunchTemplateOverrides>" ],
   "properties" : {
     "AvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-launchtemplateoverrides.html#cfn-ec2-spotfleet-launchtemplateoverrides-availabilityzone",

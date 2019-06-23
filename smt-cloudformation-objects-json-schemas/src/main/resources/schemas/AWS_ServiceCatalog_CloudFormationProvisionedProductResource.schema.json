@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.CloudFormationProvisionedProductResource",
-  "javaInterfaces" : [ "aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<CloudFormationProvisionedProductResource>", "aws.HasCondition<CloudFormationProvisionedProductResource>", "aws.HasAttributes<CloudFormationProvisionedProductAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

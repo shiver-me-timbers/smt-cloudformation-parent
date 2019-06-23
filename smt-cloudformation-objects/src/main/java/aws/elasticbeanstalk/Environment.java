@@ -71,7 +71,7 @@ public class Environment {
      */
     @JsonProperty("OptionSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-optionsettings")
-    private List<Property<OptionSetting>> optionSettings = new ArrayList<Property<OptionSetting>>();
+    private List<Property<EnvironmentOptionSetting>> optionSettings = new ArrayList<Property<EnvironmentOptionSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn
      * 
@@ -101,14 +101,14 @@ public class Environment {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-templatename")
     private CharSequence templateName;
     /**
-     * Tier
+     * EnvironmentTier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html
      * 
      */
     @JsonProperty("Tier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html")
-    private Property<Tier> tier;
+    private Property<EnvironmentTier> tier;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel
      * 
@@ -214,7 +214,7 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public List<Property<OptionSetting>> getOptionSettings() {
+    public List<Property<EnvironmentOptionSetting>> getOptionSettings() {
         return optionSettings;
     }
 
@@ -223,11 +223,11 @@ public class Environment {
      * 
      */
     @JsonIgnore
-    public void setOptionSettings(List<Property<OptionSetting>> optionSettings) {
+    public void setOptionSettings(List<Property<EnvironmentOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public Environment withOptionSettings(List<Property<OptionSetting>> optionSettings) {
+    public Environment withOptionSettings(List<Property<EnvironmentOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }
@@ -325,28 +325,28 @@ public class Environment {
     }
 
     /**
-     * Tier
+     * EnvironmentTier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html
      * 
      */
     @JsonIgnore
-    public Property<Tier> getTier() {
+    public Property<EnvironmentTier> getTier() {
         return tier;
     }
 
     /**
-     * Tier
+     * EnvironmentTier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html
      * 
      */
     @JsonIgnore
-    public void setTier(Property<Tier> tier) {
+    public void setTier(Property<EnvironmentTier> tier) {
         this.tier = tier;
     }
 
-    public Environment withTier(Property<Tier> tier) {
+    public Environment withTier(Property<EnvironmentTier> tier) {
         this.tier = tier;
         return this;
     }

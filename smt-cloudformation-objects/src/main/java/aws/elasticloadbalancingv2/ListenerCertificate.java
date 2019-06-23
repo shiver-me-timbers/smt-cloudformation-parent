@@ -1,15 +1,12 @@
 
 package aws.elasticloadbalancingv2;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
 import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
@@ -18,86 +15,55 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * ListenerCertificate
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-certificates.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Certificates",
-    "ListenerArn"
+    "CertificateArn"
 })
-public class ListenerCertificate {
+public class ListenerCertificate implements Property<ListenerCertificate>
+{
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-certificates.html#cfn-elasticloadbalancingv2-listener-certificates-certificatearn
      * 
      */
-    @JsonProperty("Certificates")
-    @JsonDeserialize(as = java.util.LinkedHashSet.class)
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates")
-    private Set<Property<Certificate>> certificates = new LinkedHashSet<Property<Certificate>>();
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
-     * 
-     */
-    @JsonProperty("ListenerArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn")
-    private CharSequence listenerArn;
+    @JsonProperty("CertificateArn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-certificates.html#cfn-elasticloadbalancingv2-listener-certificates-certificatearn")
+    private CharSequence certificateArn;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-certificates.html#cfn-elasticloadbalancingv2-listener-certificates-certificatearn
      * 
      */
     @JsonIgnore
-    public Set<Property<Certificate>> getCertificates() {
-        return certificates;
+    public CharSequence getCertificateArn() {
+        return certificateArn;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-certificates
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listener-certificates.html#cfn-elasticloadbalancingv2-listener-certificates-certificatearn
      * 
      */
     @JsonIgnore
-    public void setCertificates(Set<Property<Certificate>> certificates) {
-        this.certificates = certificates;
+    public void setCertificateArn(CharSequence certificateArn) {
+        this.certificateArn = certificateArn;
     }
 
-    public ListenerCertificate withCertificates(Set<Property<Certificate>> certificates) {
-        this.certificates = certificates;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getListenerArn() {
-        return listenerArn;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
-     * 
-     */
-    @JsonIgnore
-    public void setListenerArn(CharSequence listenerArn) {
-        this.listenerArn = listenerArn;
-    }
-
-    public ListenerCertificate withListenerArn(CharSequence listenerArn) {
-        this.listenerArn = listenerArn;
+    public ListenerCertificate withCertificateArn(CharSequence certificateArn) {
+        this.certificateArn = certificateArn;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("certificates", certificates).append("listenerArn", listenerArn).toString();
+        return new ToStringBuilder(this).append("certificateArn", certificateArn).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(certificates).append(listenerArn).toHashCode();
+        return new HashCodeBuilder().append(certificateArn).toHashCode();
     }
 
     @Override
@@ -109,7 +75,7 @@ public class ListenerCertificate {
             return false;
         }
         ListenerCertificate rhs = ((ListenerCertificate) other);
-        return new EqualsBuilder().append(certificates, rhs.certificates).append(listenerArn, rhs.listenerArn).isEquals();
+        return new EqualsBuilder().append(certificateArn, rhs.certificateArn).isEquals();
     }
 
 }

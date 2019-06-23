@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.directoryservice.SimpleADResource",
-  "javaInterfaces" : [ "aws.HasAttributes<SimpleADAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<SimpleADResource>", "aws.HasCondition<SimpleADResource>", "aws.HasAttributes<SimpleADAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

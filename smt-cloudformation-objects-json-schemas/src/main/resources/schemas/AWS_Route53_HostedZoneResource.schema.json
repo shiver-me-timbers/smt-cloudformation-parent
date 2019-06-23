@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.route53.HostedZoneResource",
-  "javaInterfaces" : [ "aws.HasAttributes<HostedZoneAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<HostedZoneResource>", "aws.HasCondition<HostedZoneResource>", "aws.HasAttributes<HostedZoneAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

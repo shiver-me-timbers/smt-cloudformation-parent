@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.DockerVolumeConfiguration.schema.json",
-  "title" : "DockerVolumeConfiguration",
+  "title" : "TaskDefinitionDockerVolumeConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.DockerVolumeConfiguration",
-  "javaInterfaces" : [ "aws.Property<DockerVolumeConfiguration>" ],
+  "javaType" : "aws.ecs.TaskDefinitionDockerVolumeConfiguration",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionDockerVolumeConfiguration>" ],
   "properties" : {
     "Autoprovision" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-dockervolumeconfiguration.html#cfn-ecs-taskdefinition-dockervolumeconfiguration-autoprovision",

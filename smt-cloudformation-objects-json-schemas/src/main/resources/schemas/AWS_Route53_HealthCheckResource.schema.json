@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.route53.HealthCheckResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<HealthCheckResource>", "aws.HasCondition<HealthCheckResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

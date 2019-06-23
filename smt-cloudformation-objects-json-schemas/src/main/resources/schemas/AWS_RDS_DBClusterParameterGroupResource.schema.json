@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.DBClusterParameterGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DBClusterParameterGroupResource>", "aws.HasCondition<DBClusterParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

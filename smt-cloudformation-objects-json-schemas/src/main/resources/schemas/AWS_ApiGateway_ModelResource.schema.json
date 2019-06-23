@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.ModelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ModelResource>", "aws.HasCondition<ModelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

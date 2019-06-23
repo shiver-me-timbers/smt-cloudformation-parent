@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.datapipeline.PipelineResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PipelineResource>", "aws.HasCondition<PipelineResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

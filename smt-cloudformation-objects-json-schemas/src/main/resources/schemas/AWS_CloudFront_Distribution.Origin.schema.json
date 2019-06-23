@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_Distribution.Origin.schema.json",
-  "title" : "Origin",
+  "title" : "DistributionOrigin",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.Origin",
-  "javaInterfaces" : [ "aws.Property<Origin>" ],
+  "javaType" : "aws.cloudfront.DistributionOrigin",
+  "javaInterfaces" : [ "aws.Property<DistributionOrigin>" ],
   "properties" : {
     "OriginCustomHeaders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-origincustomheaders",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CloudFront_Distribution.OriginCustomHeader.schema.json",
-        "javaType" : "aws.Property<aws.cloudfront.OriginCustomHeader>"
+        "javaType" : "aws.Property<aws.cloudfront.DistributionOriginCustomHeader>"
       }
     },
     "DomainName" : {
@@ -23,7 +23,7 @@
     "S3OriginConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-s3originconfig",
       "$ref" : "AWS_CloudFront_Distribution.S3OriginConfig.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.S3OriginConfig>"
+      "javaType" : "aws.Property<aws.cloudfront.DistributionS3OriginConfig>"
     },
     "OriginPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-originpath",
@@ -38,7 +38,7 @@
     "CustomOriginConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-origin.html#cfn-cloudfront-distribution-origin-customoriginconfig",
       "$ref" : "AWS_CloudFront_Distribution.CustomOriginConfig.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.CustomOriginConfig>"
+      "javaType" : "aws.Property<aws.cloudfront.DistributionCustomOriginConfig>"
     }
   }
 }

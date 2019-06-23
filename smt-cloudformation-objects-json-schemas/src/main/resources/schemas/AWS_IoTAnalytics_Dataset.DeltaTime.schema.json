@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Dataset.DeltaTime.schema.json",
-  "title" : "DeltaTime",
+  "title" : "DatasetDeltaTime",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.DeltaTime",
-  "javaInterfaces" : [ "aws.Property<DeltaTime>" ],
+  "javaType" : "aws.iotanalytics.DatasetDeltaTime",
+  "javaInterfaces" : [ "aws.Property<DatasetDeltaTime>" ],
   "properties" : {
     "TimeExpression" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-deltatime.html#cfn-iotanalytics-dataset-deltatime-timeexpression",

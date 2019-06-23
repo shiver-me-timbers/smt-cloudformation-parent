@@ -48,7 +48,7 @@ public class Certificate {
     @JsonProperty("DomainValidationOptions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-domainvalidationoptions")
-    private Set<Property<DomainValidationOption>> domainValidationOptions = new LinkedHashSet<Property<DomainValidationOption>>();
+    private Set<Property<CertificateDomainValidationOption>> domainValidationOptions = new LinkedHashSet<Property<CertificateDomainValidationOption>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-certificatemanager-certificate.html#cfn-certificatemanager-certificate-subjectalternativenames
      * 
@@ -100,7 +100,7 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public Set<Property<DomainValidationOption>> getDomainValidationOptions() {
+    public Set<Property<CertificateDomainValidationOption>> getDomainValidationOptions() {
         return domainValidationOptions;
     }
 
@@ -109,11 +109,11 @@ public class Certificate {
      * 
      */
     @JsonIgnore
-    public void setDomainValidationOptions(Set<Property<DomainValidationOption>> domainValidationOptions) {
+    public void setDomainValidationOptions(Set<Property<CertificateDomainValidationOption>> domainValidationOptions) {
         this.domainValidationOptions = domainValidationOptions;
     }
 
-    public Certificate withDomainValidationOptions(Set<Property<DomainValidationOption>> domainValidationOptions) {
+    public Certificate withDomainValidationOptions(Set<Property<CertificateDomainValidationOption>> domainValidationOptions) {
         this.domainValidationOptions = domainValidationOptions;
         return this;
     }

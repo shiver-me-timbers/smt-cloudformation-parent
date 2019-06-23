@@ -33,14 +33,14 @@ public class DeploymentConfig {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname")
     private CharSequence deploymentConfigName;
     /**
-     * MinimumHealthyHosts
+     * DeploymentConfigMinimumHealthyHosts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html
      * 
      */
     @JsonProperty("MinimumHealthyHosts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html")
-    private Property<MinimumHealthyHosts> minimumHealthyHosts;
+    private Property<DeploymentConfigMinimumHealthyHosts> minimumHealthyHosts;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname
@@ -66,28 +66,28 @@ public class DeploymentConfig {
     }
 
     /**
-     * MinimumHealthyHosts
+     * DeploymentConfigMinimumHealthyHosts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html
      * 
      */
     @JsonIgnore
-    public Property<MinimumHealthyHosts> getMinimumHealthyHosts() {
+    public Property<DeploymentConfigMinimumHealthyHosts> getMinimumHealthyHosts() {
         return minimumHealthyHosts;
     }
 
     /**
-     * MinimumHealthyHosts
+     * DeploymentConfigMinimumHealthyHosts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html
      * 
      */
     @JsonIgnore
-    public void setMinimumHealthyHosts(Property<MinimumHealthyHosts> minimumHealthyHosts) {
+    public void setMinimumHealthyHosts(Property<DeploymentConfigMinimumHealthyHosts> minimumHealthyHosts) {
         this.minimumHealthyHosts = minimumHealthyHosts;
     }
 
-    public DeploymentConfig withMinimumHealthyHosts(Property<MinimumHealthyHosts> minimumHealthyHosts) {
+    public DeploymentConfig withMinimumHealthyHosts(Property<DeploymentConfigMinimumHealthyHosts> minimumHealthyHosts) {
         this.minimumHealthyHosts = minimumHealthyHosts;
         return this;
     }

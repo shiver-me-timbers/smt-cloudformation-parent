@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot.PolicyResource",
-  "javaInterfaces" : [ "aws.HasAttributes<PolicyAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<PolicyResource>", "aws.HasCondition<PolicyResource>", "aws.HasAttributes<PolicyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

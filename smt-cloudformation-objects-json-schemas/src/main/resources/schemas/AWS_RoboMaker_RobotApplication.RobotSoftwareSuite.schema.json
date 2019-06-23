@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_RoboMaker_RobotApplication.RobotSoftwareSuite.schema.json",
-  "title" : "RobotSoftwareSuite",
+  "title" : "RobotApplicationRobotSoftwareSuite",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.RobotSoftwareSuite",
-  "javaInterfaces" : [ "aws.Property<RobotSoftwareSuite>" ],
+  "javaType" : "aws.robomaker.RobotApplicationRobotSoftwareSuite",
+  "javaInterfaces" : [ "aws.Property<RobotApplicationRobotSoftwareSuite>" ],
   "properties" : {
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html#cfn-robomaker-robotapplication-robotsoftwaresuite-version",

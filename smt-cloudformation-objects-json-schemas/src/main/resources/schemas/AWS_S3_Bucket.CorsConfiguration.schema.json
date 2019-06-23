@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.CorsConfiguration.schema.json",
-  "title" : "CorsConfiguration",
+  "title" : "BucketCorsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html",
   "type" : "object",
-  "javaType" : "aws.s3.CorsConfiguration",
-  "javaInterfaces" : [ "aws.Property<CorsConfiguration>" ],
+  "javaType" : "aws.s3.BucketCorsConfiguration",
+  "javaInterfaces" : [ "aws.Property<BucketCorsConfiguration>" ],
   "properties" : {
     "CorsRules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html#cfn-s3-bucket-cors-corsrule",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.CorsRule.schema.json",
-        "javaType" : "aws.Property<aws.s3.CorsRule>"
+        "javaType" : "aws.Property<aws.s3.BucketCorsRule>"
       }
     }
   }

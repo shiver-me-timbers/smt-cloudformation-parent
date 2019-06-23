@@ -53,14 +53,14 @@ public class Stream {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount")
     private Integer shardCount;
     /**
-     * StreamEncryption
+     * StreamStreamEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html
      * 
      */
     @JsonProperty("StreamEncryption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html")
-    private Property<StreamEncryption> streamEncryption;
+    private Property<StreamStreamEncryption> streamEncryption;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-tags
      * 
@@ -139,28 +139,28 @@ public class Stream {
     }
 
     /**
-     * StreamEncryption
+     * StreamStreamEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html
      * 
      */
     @JsonIgnore
-    public Property<StreamEncryption> getStreamEncryption() {
+    public Property<StreamStreamEncryption> getStreamEncryption() {
         return streamEncryption;
     }
 
     /**
-     * StreamEncryption
+     * StreamStreamEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesis-stream-streamencryption.html
      * 
      */
     @JsonIgnore
-    public void setStreamEncryption(Property<StreamEncryption> streamEncryption) {
+    public void setStreamEncryption(Property<StreamStreamEncryption> streamEncryption) {
         this.streamEncryption = streamEncryption;
     }
 
-    public Stream withStreamEncryption(Property<StreamEncryption> streamEncryption) {
+    public Stream withStreamEncryption(Property<StreamStreamEncryption> streamEncryption) {
         this.streamEncryption = streamEncryption;
         return this;
     }

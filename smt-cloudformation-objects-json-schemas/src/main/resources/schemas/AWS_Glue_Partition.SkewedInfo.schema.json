@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Partition.SkewedInfo.schema.json",
-  "title" : "SkewedInfo",
+  "title" : "PartitionSkewedInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-skewedinfo.html",
   "type" : "object",
-  "javaType" : "aws.glue.SkewedInfo",
-  "javaInterfaces" : [ "aws.Property<SkewedInfo>" ],
+  "javaType" : "aws.glue.PartitionSkewedInfo",
+  "javaInterfaces" : [ "aws.Property<PartitionSkewedInfo>" ],
   "properties" : {
     "SkewedColumnNames" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-skewedinfo.html#cfn-glue-partition-skewedinfo-skewedcolumnnames",
@@ -25,7 +25,8 @@
     },
     "SkewedColumnValueLocationMaps" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-skewedinfo.html#cfn-glue-partition-skewedinfo-skewedcolumnvaluelocationmaps",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

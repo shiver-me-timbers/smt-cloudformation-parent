@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_Route.TcpRouteAction.schema.json",
-  "title" : "TcpRouteAction",
+  "title" : "RouteTcpRouteAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.TcpRouteAction",
-  "javaInterfaces" : [ "aws.Property<TcpRouteAction>" ],
+  "javaType" : "aws.appmesh.RouteTcpRouteAction",
+  "javaInterfaces" : [ "aws.Property<RouteTcpRouteAction>" ],
   "properties" : {
     "WeightedTargets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tcprouteaction.html#cfn-appmesh-route-tcprouteaction-weightedtargets",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppMesh_Route.WeightedTarget.schema.json",
-        "javaType" : "aws.Property<aws.appmesh.WeightedTarget>"
+        "javaType" : "aws.Property<aws.appmesh.RouteWeightedTarget>"
       }
     }
   }

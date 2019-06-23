@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeDeploy_DeploymentGroup.ELBInfo.schema.json",
-  "title" : "ELBInfo",
+  "title" : "DeploymentGroupELBInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-elbinfo.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.ELBInfo",
-  "javaInterfaces" : [ "aws.Property<ELBInfo>" ],
+  "javaType" : "aws.codedeploy.DeploymentGroupELBInfo",
+  "javaInterfaces" : [ "aws.Property<DeploymentGroupELBInfo>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-elbinfo.html#cfn-codedeploy-deploymentgroup-elbinfo-name",

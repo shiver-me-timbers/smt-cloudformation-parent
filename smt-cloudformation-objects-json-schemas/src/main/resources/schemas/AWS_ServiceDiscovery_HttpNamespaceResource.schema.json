@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicediscovery.HttpNamespaceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<HttpNamespaceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<HttpNamespaceResource>", "aws.HasCondition<HttpNamespaceResource>", "aws.HasAttributes<HttpNamespaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

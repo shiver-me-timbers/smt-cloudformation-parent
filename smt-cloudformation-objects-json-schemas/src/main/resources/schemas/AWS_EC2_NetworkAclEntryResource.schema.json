@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.NetworkAclEntryResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NetworkAclEntryResource>", "aws.HasCondition<NetworkAclEntryResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_FunctionDefinitionVersion.Execution.schema.json",
-  "title" : "Execution",
+  "title" : "FunctionDefinitionVersionExecution",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.Execution",
-  "javaInterfaces" : [ "aws.Property<Execution>" ],
+  "javaType" : "aws.greengrass.FunctionDefinitionVersionExecution",
+  "javaInterfaces" : [ "aws.Property<FunctionDefinitionVersionExecution>" ],
   "properties" : {
     "IsolationMode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html#cfn-greengrass-functiondefinitionversion-execution-isolationmode",
@@ -15,7 +15,7 @@
     "RunAs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinitionversion-execution.html#cfn-greengrass-functiondefinitionversion-execution-runas",
       "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.RunAs.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.RunAs>"
+      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionVersionRunAs>"
     }
   }
 }

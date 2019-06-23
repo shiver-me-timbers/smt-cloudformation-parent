@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualNode.AccessLog.schema.json",
-  "title" : "AccessLog",
+  "title" : "VirtualNodeAccessLog",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-accesslog.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.AccessLog",
-  "javaInterfaces" : [ "aws.Property<AccessLog>" ],
+  "javaType" : "aws.appmesh.VirtualNodeAccessLog",
+  "javaInterfaces" : [ "aws.Property<VirtualNodeAccessLog>" ],
   "properties" : {
     "File" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-accesslog.html#cfn-appmesh-virtualnode-accesslog-file",
       "$ref" : "AWS_AppMesh_VirtualNode.FileAccessLog.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.FileAccessLog>"
+      "javaType" : "aws.Property<aws.appmesh.VirtualNodeFileAccessLog>"
     }
   }
 }

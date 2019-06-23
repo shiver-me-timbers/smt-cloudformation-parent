@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_InstanceFleetConfig.Configuration.schema.json",
-  "title" : "Configuration",
+  "title" : "InstanceFleetConfigConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-configuration.html",
   "type" : "object",
-  "javaType" : "aws.emr.Configuration",
-  "javaInterfaces" : [ "aws.Property<Configuration>" ],
+  "javaType" : "aws.emr.InstanceFleetConfigConfiguration",
+  "javaInterfaces" : [ "aws.Property<InstanceFleetConfigConfiguration>" ],
   "properties" : {
     "Classification" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-configuration.html#cfn-elasticmapreduce-instancefleetconfig-configuration-classification",
@@ -23,7 +23,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceFleetConfig.EbsConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.emr.Configuration>"
+        "javaType" : "aws.Property<aws.emr.InstanceFleetConfigConfiguration>"
       }
     }
   }

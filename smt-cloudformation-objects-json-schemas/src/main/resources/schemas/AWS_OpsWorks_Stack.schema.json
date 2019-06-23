@@ -19,7 +19,7 @@
     "ChefConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-chefconfiguration",
       "$ref" : "AWS_OpsWorks_Stack.ChefConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.ChefConfiguration>"
+      "javaType" : "aws.Property<aws.opsworks.StackChefConfiguration>"
     },
     "CloneAppIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids",
@@ -37,16 +37,17 @@
     "ConfigurationManager" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-configmanager",
       "$ref" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.StackConfigurationManager>"
+      "javaType" : "aws.Property<aws.opsworks.StackStackConfigurationManager>"
     },
     "CustomCookbooksSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custcookbooksource",
-      "$ref" : "AWS_OpsWorks_App.DataSource.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.Source>"
+      "$ref" : "AWS_OpsWorks_Stack.Source.schema.json",
+      "javaType" : "aws.Property<aws.opsworks.StackSource>"
     },
     "CustomJson" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "DefaultAvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-defaultaz",
@@ -89,7 +90,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Stack.ElasticIp.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.ElasticIp>"
+        "javaType" : "aws.Property<aws.opsworks.StackElasticIp>"
       }
     },
     "HostnameTheme" : {
@@ -108,7 +109,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Stack.RdsDbInstance.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.RdsDbInstance>"
+        "javaType" : "aws.Property<aws.opsworks.StackRdsDbInstance>"
       }
     },
     "ServiceRoleArn" : {

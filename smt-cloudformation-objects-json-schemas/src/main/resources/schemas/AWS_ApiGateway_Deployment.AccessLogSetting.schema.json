@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGateway_Deployment.AccessLogSetting.schema.json",
-  "title" : "AccessLogSetting",
+  "title" : "DeploymentAccessLogSetting",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.AccessLogSetting",
-  "javaInterfaces" : [ "aws.Property<AccessLogSetting>" ],
+  "javaType" : "aws.apigateway.DeploymentAccessLogSetting",
+  "javaInterfaces" : [ "aws.Property<DeploymentAccessLogSetting>" ],
   "properties" : {
     "DestinationArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-deployment-accesslogsetting.html#cfn-apigateway-deployment-accesslogsetting-destinationarn",

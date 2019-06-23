@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SageMaker_EndpointConfig.ProductionVariant.schema.json",
-        "javaType" : "aws.Property<aws.sagemaker.ProductionVariant>"
+        "javaType" : "aws.Property<aws.sagemaker.EndpointConfigProductionVariant>"
       }
     },
     "KmsKeyId" : {

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticloadbalancing.LoadBalancerResource",
-  "javaInterfaces" : [ "aws.HasAttributes<LoadBalancerAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<LoadBalancerResource>", "aws.HasCondition<LoadBalancerResource>", "aws.HasAttributes<LoadBalancerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

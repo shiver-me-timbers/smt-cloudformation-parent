@@ -30,8 +30,8 @@
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags",
       "type" : "array",
       "items" : {
-        "$ref" : "AWS_AmazonMQ_Broker.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.TagsEntry>"
+        "$ref" : "AWS_AmazonMQ_Configuration.TagsEntry.schema.json",
+        "javaType" : "aws.Property<aws.amazonmq.ConfigurationTagsEntry>"
       }
     },
     "Name" : {

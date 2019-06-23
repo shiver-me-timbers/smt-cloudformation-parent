@@ -24,7 +24,7 @@
     "FindingCriteria" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-findingcriteria",
       "$ref" : "AWS_GuardDuty_Filter.FindingCriteria.schema.json",
-      "javaType" : "aws.Property<aws.guardduty.FindingCriteria>"
+      "javaType" : "aws.Property<aws.guardduty.FilterFindingCriteria>"
     },
     "Rank" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.AccessControlTranslation.schema.json",
-  "title" : "AccessControlTranslation",
+  "title" : "BucketAccessControlTranslation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html",
   "type" : "object",
-  "javaType" : "aws.s3.AccessControlTranslation",
-  "javaInterfaces" : [ "aws.Property<AccessControlTranslation>" ],
+  "javaType" : "aws.s3.BucketAccessControlTranslation",
+  "javaInterfaces" : [ "aws.Property<BucketAccessControlTranslation>" ],
   "properties" : {
     "Owner" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accesscontroltranslation.html#cfn-s3-bucket-accesscontroltranslation-owner",

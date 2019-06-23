@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticsearch.DomainResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DomainAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DomainResource>", "aws.HasCondition<DomainResource>", "aws.HasAttributes<DomainAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

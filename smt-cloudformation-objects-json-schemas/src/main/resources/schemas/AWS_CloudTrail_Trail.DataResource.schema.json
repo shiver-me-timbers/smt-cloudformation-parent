@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudTrail_Trail.DataResource.schema.json",
-  "title" : "DataResource",
+  "title" : "TrailDataResource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html",
   "type" : "object",
-  "javaType" : "aws.cloudtrail.DataResource",
-  "javaInterfaces" : [ "aws.Property<DataResource>" ],
+  "javaType" : "aws.cloudtrail.TrailDataResource",
+  "javaInterfaces" : [ "aws.Property<TrailDataResource>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudtrail-trail-dataresource.html#cfn-cloudtrail-trail-dataresource-type",

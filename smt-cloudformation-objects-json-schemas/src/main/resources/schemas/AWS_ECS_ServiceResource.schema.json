@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ecs.ServiceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ServiceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ServiceResource>", "aws.HasCondition<ServiceResource>", "aws.HasAttributes<ServiceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

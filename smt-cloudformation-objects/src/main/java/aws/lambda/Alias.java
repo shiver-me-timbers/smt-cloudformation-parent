@@ -57,14 +57,14 @@ public class Alias {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-name")
     private CharSequence name;
     /**
-     * AliasRoutingConfiguration
+     * AliasAliasRoutingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
      * 
      */
     @JsonProperty("RoutingConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html")
-    private Property<AliasRoutingConfiguration> routingConfig;
+    private Property<AliasAliasRoutingConfiguration> routingConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-description
@@ -159,28 +159,28 @@ public class Alias {
     }
 
     /**
-     * AliasRoutingConfiguration
+     * AliasAliasRoutingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<AliasRoutingConfiguration> getRoutingConfig() {
+    public Property<AliasAliasRoutingConfiguration> getRoutingConfig() {
         return routingConfig;
     }
 
     /**
-     * AliasRoutingConfiguration
+     * AliasAliasRoutingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-alias-aliasroutingconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setRoutingConfig(Property<AliasRoutingConfiguration> routingConfig) {
+    public void setRoutingConfig(Property<AliasAliasRoutingConfiguration> routingConfig) {
         this.routingConfig = routingConfig;
     }
 
-    public Alias withRoutingConfig(Property<AliasRoutingConfiguration> routingConfig) {
+    public Alias withRoutingConfig(Property<AliasAliasRoutingConfiguration> routingConfig) {
         this.routingConfig = routingConfig;
         return this;
     }

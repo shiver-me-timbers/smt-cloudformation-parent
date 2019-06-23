@@ -352,7 +352,7 @@ public class DBInstance {
     @JsonProperty("ProcessorFeatures")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-processorfeatures")
-    private Set<Property<ProcessorFeature>> processorFeatures = new LinkedHashSet<Property<ProcessorFeature>>();
+    private Set<Property<DBInstanceProcessorFeature>> processorFeatures = new LinkedHashSet<Property<DBInstanceProcessorFeature>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html#cfn-rds-dbinstance-promotiontier
      * 
@@ -1303,7 +1303,7 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public Set<Property<ProcessorFeature>> getProcessorFeatures() {
+    public Set<Property<DBInstanceProcessorFeature>> getProcessorFeatures() {
         return processorFeatures;
     }
 
@@ -1312,11 +1312,11 @@ public class DBInstance {
      * 
      */
     @JsonIgnore
-    public void setProcessorFeatures(Set<Property<ProcessorFeature>> processorFeatures) {
+    public void setProcessorFeatures(Set<Property<DBInstanceProcessorFeature>> processorFeatures) {
         this.processorFeatures = processorFeatures;
     }
 
-    public DBInstance withProcessorFeatures(Set<Property<ProcessorFeature>> processorFeatures) {
+    public DBInstance withProcessorFeatures(Set<Property<DBInstanceProcessorFeature>> processorFeatures) {
         this.processorFeatures = processorFeatures;
         return this;
     }

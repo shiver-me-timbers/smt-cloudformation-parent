@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.events.EventBusPolicyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<EventBusPolicyResource>", "aws.HasCondition<EventBusPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

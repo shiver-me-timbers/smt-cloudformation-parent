@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.config.ConfigurationAggregatorResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationAggregatorResource>", "aws.HasCondition<ConfigurationAggregatorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.RoleResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RoleAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RoleResource>", "aws.HasCondition<RoleResource>", "aws.HasAttributes<RoleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

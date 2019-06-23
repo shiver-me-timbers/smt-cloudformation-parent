@@ -28,6 +28,10 @@ public class PrimitiveTypeTransformer implements PropertyTransformer {
         CloudformationProperty cloudformationProperty,
         Map<String, Object> property
     ) {
+        if (propertyName.endsWith("PolicyDocument")) {
+            property.put("$ref", "PolicyDocument.schema.json");
+            return;
+        }
         property.putAll(converter.convert(cloudformationProperty.getPrimitiveType()));
     }
 }

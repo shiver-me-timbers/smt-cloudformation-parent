@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_RDS_OptionGroup.OptionConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.rds.OptionConfiguration>"
+        "javaType" : "aws.Property<aws.rds.OptionGroupOptionConfiguration>"
       }
     },
     "OptionGroupDescription" : {

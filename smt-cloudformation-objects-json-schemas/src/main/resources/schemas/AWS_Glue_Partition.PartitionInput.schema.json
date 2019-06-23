@@ -1,20 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Partition.PartitionInput.schema.json",
-  "title" : "PartitionInput",
+  "title" : "PartitionPartitionInput",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html",
   "type" : "object",
-  "javaType" : "aws.glue.PartitionInput",
-  "javaInterfaces" : [ "aws.Property<PartitionInput>" ],
+  "javaType" : "aws.glue.PartitionPartitionInput",
+  "javaInterfaces" : [ "aws.Property<PartitionPartitionInput>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-parameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "StorageDescriptor" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-storagedescriptor",
       "$ref" : "AWS_Glue_Partition.StorageDescriptor.schema.json",
-      "javaType" : "aws.Property<aws.glue.StorageDescriptor>"
+      "javaType" : "aws.Property<aws.glue.PartitionStorageDescriptor>"
     },
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-partitioninput.html#cfn-glue-partition-partitioninput-values",

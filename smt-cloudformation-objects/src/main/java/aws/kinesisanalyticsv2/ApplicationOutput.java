@@ -33,14 +33,14 @@ public class ApplicationOutput {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html#cfn-kinesisanalyticsv2-applicationoutput-applicationname")
     private CharSequence applicationName;
     /**
-     * LambdaOutput
+     * ApplicationOutputLambdaOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html
      * 
      */
     @JsonProperty("Output")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html")
-    private Property<Output> output;
+    private Property<ApplicationOutputOutput> output;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationoutput.html#cfn-kinesisanalyticsv2-applicationoutput-applicationname
@@ -66,28 +66,28 @@ public class ApplicationOutput {
     }
 
     /**
-     * LambdaOutput
+     * ApplicationOutputLambdaOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html
      * 
      */
     @JsonIgnore
-    public Property<Output> getOutput() {
+    public Property<ApplicationOutputOutput> getOutput() {
         return output;
     }
 
     /**
-     * LambdaOutput
+     * ApplicationOutputLambdaOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-lambdaoutput.html
      * 
      */
     @JsonIgnore
-    public void setOutput(Property<Output> output) {
+    public void setOutput(Property<ApplicationOutputOutput> output) {
         this.output = output;
     }
 
-    public ApplicationOutput withOutput(Property<Output> output) {
+    public ApplicationOutput withOutput(Property<ApplicationOutputOutput> output) {
         this.output = output;
         return this;
     }

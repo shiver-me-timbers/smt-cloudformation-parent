@@ -45,14 +45,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Stage {
 
     /**
-     * AccessLogSetting
+     * StageAccessLogSetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
      * 
      */
     @JsonProperty("AccessLogSetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html")
-    private Property<AccessLogSetting> accessLogSetting;
+    private Property<StageAccessLogSetting> accessLogSetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclusterenabled
      * 
@@ -68,14 +68,14 @@ public class Stage {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-cacheclustersize")
     private CharSequence cacheClusterSize;
     /**
-     * CanarySetting
+     * StageCanarySetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
      * 
      */
     @JsonProperty("CanarySetting")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html")
-    private Property<CanarySetting> canarySetting;
+    private Property<StageCanarySetting> canarySetting;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-clientcertificateid
      * 
@@ -111,7 +111,7 @@ public class Stage {
     @JsonProperty("MethodSettings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-methodsettings")
-    private Set<Property<MethodSetting>> methodSettings = new LinkedHashSet<Property<MethodSetting>>();
+    private Set<Property<StageMethodSetting>> methodSettings = new LinkedHashSet<Property<StageMethodSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-restapiid
      * 
@@ -149,28 +149,28 @@ public class Stage {
     private Map<String, String> variables;
 
     /**
-     * AccessLogSetting
+     * StageAccessLogSetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
      * 
      */
     @JsonIgnore
-    public Property<AccessLogSetting> getAccessLogSetting() {
+    public Property<StageAccessLogSetting> getAccessLogSetting() {
         return accessLogSetting;
     }
 
     /**
-     * AccessLogSetting
+     * StageAccessLogSetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-accesslogsetting.html
      * 
      */
     @JsonIgnore
-    public void setAccessLogSetting(Property<AccessLogSetting> accessLogSetting) {
+    public void setAccessLogSetting(Property<StageAccessLogSetting> accessLogSetting) {
         this.accessLogSetting = accessLogSetting;
     }
 
-    public Stage withAccessLogSetting(Property<AccessLogSetting> accessLogSetting) {
+    public Stage withAccessLogSetting(Property<StageAccessLogSetting> accessLogSetting) {
         this.accessLogSetting = accessLogSetting;
         return this;
     }
@@ -222,28 +222,28 @@ public class Stage {
     }
 
     /**
-     * CanarySetting
+     * StageCanarySetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
      * 
      */
     @JsonIgnore
-    public Property<CanarySetting> getCanarySetting() {
+    public Property<StageCanarySetting> getCanarySetting() {
         return canarySetting;
     }
 
     /**
-     * CanarySetting
+     * StageCanarySetting
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-stage-canarysetting.html
      * 
      */
     @JsonIgnore
-    public void setCanarySetting(Property<CanarySetting> canarySetting) {
+    public void setCanarySetting(Property<StageCanarySetting> canarySetting) {
         this.canarySetting = canarySetting;
     }
 
-    public Stage withCanarySetting(Property<CanarySetting> canarySetting) {
+    public Stage withCanarySetting(Property<StageCanarySetting> canarySetting) {
         this.canarySetting = canarySetting;
         return this;
     }
@@ -345,7 +345,7 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public Set<Property<MethodSetting>> getMethodSettings() {
+    public Set<Property<StageMethodSetting>> getMethodSettings() {
         return methodSettings;
     }
 
@@ -354,11 +354,11 @@ public class Stage {
      * 
      */
     @JsonIgnore
-    public void setMethodSettings(Set<Property<MethodSetting>> methodSettings) {
+    public void setMethodSettings(Set<Property<StageMethodSetting>> methodSettings) {
         this.methodSettings = methodSettings;
     }
 
-    public Stage withMethodSettings(Set<Property<MethodSetting>> methodSettings) {
+    public Stage withMethodSettings(Set<Property<StageMethodSetting>> methodSettings) {
         this.methodSettings = methodSettings;
         return this;
     }

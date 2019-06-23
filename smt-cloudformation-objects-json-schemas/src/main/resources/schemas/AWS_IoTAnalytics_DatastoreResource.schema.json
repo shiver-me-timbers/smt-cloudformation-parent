@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iotanalytics.DatastoreResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DatastoreResource>", "aws.HasCondition<DatastoreResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

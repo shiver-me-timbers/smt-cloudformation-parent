@@ -1,6 +1,7 @@
 
 package aws.iot;
 
+import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -25,12 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Policy {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("PolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument")
-    private Object policyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policyname
      * 
@@ -40,24 +43,28 @@ public class Policy {
     private CharSequence policyName;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public Object getPolicyDocument() {
+    public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
+    public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public Policy withPolicyDocument(Object policyDocument) {
+    public Policy withPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

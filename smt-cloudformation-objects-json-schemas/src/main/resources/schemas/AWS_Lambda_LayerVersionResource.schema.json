@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.lambda.LayerVersionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LayerVersionResource>", "aws.HasCondition<LayerVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

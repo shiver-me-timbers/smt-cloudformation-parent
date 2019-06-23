@@ -24,7 +24,7 @@
     "PolicyDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dlm-lifecyclepolicy.html#cfn-dlm-lifecyclepolicy-policydetails",
       "$ref" : "AWS_DLM_LifecyclePolicy.PolicyDetails.schema.json",
-      "javaType" : "aws.Property<aws.dlm.PolicyDetails>"
+      "javaType" : "aws.Property<aws.dlm.LifecyclePolicyPolicyDetails>"
     }
   }
 }

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ssm.ParameterResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ParameterAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ParameterResource>", "aws.HasCondition<ParameterResource>", "aws.HasAttributes<ParameterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

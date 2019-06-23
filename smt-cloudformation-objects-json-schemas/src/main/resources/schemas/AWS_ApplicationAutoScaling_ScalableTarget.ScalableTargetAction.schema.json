@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApplicationAutoScaling_ScalableTarget.ScalableTargetAction.schema.json",
-  "title" : "ScalableTargetAction",
+  "title" : "ScalableTargetScalableTargetAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScalableTargetAction",
-  "javaInterfaces" : [ "aws.Property<ScalableTargetAction>" ],
+  "javaType" : "aws.applicationautoscaling.ScalableTargetScalableTargetAction",
+  "javaInterfaces" : [ "aws.Property<ScalableTargetScalableTargetAction>" ],
   "properties" : {
     "MaxCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scalabletargetaction.html#cfn-applicationautoscaling-scalabletarget-scalabletargetaction-maxcapacity",

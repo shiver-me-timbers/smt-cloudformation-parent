@@ -27,110 +27,110 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Classifier {
 
     /**
-     * XMLClassifier
+     * ClassifierXMLClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
     @JsonProperty("XMLClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html")
-    private Property<XMLClassifier> xMLClassifier;
+    private Property<ClassifierXMLClassifier> xMLClassifier;
     /**
-     * JsonClassifier
+     * ClassifierJsonClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
     @JsonProperty("JsonClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html")
-    private Property<JsonClassifier> jsonClassifier;
+    private Property<ClassifierJsonClassifier> jsonClassifier;
     /**
-     * GrokClassifier
+     * ClassifierGrokClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
     @JsonProperty("GrokClassifier")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html")
-    private Property<GrokClassifier> grokClassifier;
+    private Property<ClassifierGrokClassifier> grokClassifier;
 
     /**
-     * XMLClassifier
+     * ClassifierXMLClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
     @JsonIgnore
-    public Property<XMLClassifier> getXMLClassifier() {
+    public Property<ClassifierXMLClassifier> getXMLClassifier() {
         return xMLClassifier;
     }
 
     /**
-     * XMLClassifier
+     * ClassifierXMLClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html
      * 
      */
     @JsonIgnore
-    public void setXMLClassifier(Property<XMLClassifier> xMLClassifier) {
+    public void setXMLClassifier(Property<ClassifierXMLClassifier> xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
     }
 
-    public Classifier withXMLClassifier(Property<XMLClassifier> xMLClassifier) {
+    public Classifier withXMLClassifier(Property<ClassifierXMLClassifier> xMLClassifier) {
         this.xMLClassifier = xMLClassifier;
         return this;
     }
 
     /**
-     * JsonClassifier
+     * ClassifierJsonClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
     @JsonIgnore
-    public Property<JsonClassifier> getJsonClassifier() {
+    public Property<ClassifierJsonClassifier> getJsonClassifier() {
         return jsonClassifier;
     }
 
     /**
-     * JsonClassifier
+     * ClassifierJsonClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-jsonclassifier.html
      * 
      */
     @JsonIgnore
-    public void setJsonClassifier(Property<JsonClassifier> jsonClassifier) {
+    public void setJsonClassifier(Property<ClassifierJsonClassifier> jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
     }
 
-    public Classifier withJsonClassifier(Property<JsonClassifier> jsonClassifier) {
+    public Classifier withJsonClassifier(Property<ClassifierJsonClassifier> jsonClassifier) {
         this.jsonClassifier = jsonClassifier;
         return this;
     }
 
     /**
-     * GrokClassifier
+     * ClassifierGrokClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
     @JsonIgnore
-    public Property<GrokClassifier> getGrokClassifier() {
+    public Property<ClassifierGrokClassifier> getGrokClassifier() {
         return grokClassifier;
     }
 
     /**
-     * GrokClassifier
+     * ClassifierGrokClassifier
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-grokclassifier.html
      * 
      */
     @JsonIgnore
-    public void setGrokClassifier(Property<GrokClassifier> grokClassifier) {
+    public void setGrokClassifier(Property<ClassifierGrokClassifier> grokClassifier) {
         this.grokClassifier = grokClassifier;
     }
 
-    public Classifier withGrokClassifier(Property<GrokClassifier> grokClassifier) {
+    public Classifier withGrokClassifier(Property<ClassifierGrokClassifier> grokClassifier) {
         this.grokClassifier = grokClassifier;
         return this;
     }

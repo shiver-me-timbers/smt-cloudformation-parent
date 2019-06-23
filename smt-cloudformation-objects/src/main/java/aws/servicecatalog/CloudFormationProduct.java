@@ -105,7 +105,7 @@ public class CloudFormationProduct {
      */
     @JsonProperty("ProvisioningArtifactParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters")
-    private List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters = new ArrayList<Property<ProvisioningArtifactProperties>>();
+    private List<Property<CloudFormationProductProvisioningArtifactProperties>> provisioningArtifactParameters = new ArrayList<Property<CloudFormationProductProvisioningArtifactProperties>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationproduct.html#cfn-servicecatalog-cloudformationproduct-owner
@@ -319,7 +319,7 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public List<Property<ProvisioningArtifactProperties>> getProvisioningArtifactParameters() {
+    public List<Property<CloudFormationProductProvisioningArtifactProperties>> getProvisioningArtifactParameters() {
         return provisioningArtifactParameters;
     }
 
@@ -328,11 +328,11 @@ public class CloudFormationProduct {
      * 
      */
     @JsonIgnore
-    public void setProvisioningArtifactParameters(List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters) {
+    public void setProvisioningArtifactParameters(List<Property<CloudFormationProductProvisioningArtifactProperties>> provisioningArtifactParameters) {
         this.provisioningArtifactParameters = provisioningArtifactParameters;
     }
 
-    public CloudFormationProduct withProvisioningArtifactParameters(List<Property<ProvisioningArtifactProperties>> provisioningArtifactParameters) {
+    public CloudFormationProduct withProvisioningArtifactParameters(List<Property<CloudFormationProductProvisioningArtifactProperties>> provisioningArtifactParameters) {
         this.provisioningArtifactParameters = provisioningArtifactParameters;
         return this;
     }

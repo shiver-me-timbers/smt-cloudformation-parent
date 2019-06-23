@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Events_Rule.KinesisParameters.schema.json",
-  "title" : "KinesisParameters",
+  "title" : "RuleKinesisParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html",
   "type" : "object",
-  "javaType" : "aws.events.KinesisParameters",
-  "javaInterfaces" : [ "aws.Property<KinesisParameters>" ],
+  "javaType" : "aws.events.RuleKinesisParameters",
+  "javaInterfaces" : [ "aws.Property<RuleKinesisParameters>" ],
   "properties" : {
     "PartitionKeyPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-kinesisparameters.html#cfn-events-rule-kinesisparameters-partitionkeypath",

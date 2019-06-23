@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.GraphQLSchemaResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<GraphQLSchemaResource>", "aws.HasCondition<GraphQLSchemaResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

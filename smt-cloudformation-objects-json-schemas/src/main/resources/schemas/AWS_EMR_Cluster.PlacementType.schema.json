@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Cluster.PlacementType.schema.json",
-  "title" : "PlacementType",
+  "title" : "ClusterPlacementType",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html",
   "type" : "object",
-  "javaType" : "aws.emr.PlacementType",
-  "javaInterfaces" : [ "aws.Property<PlacementType>" ],
+  "javaType" : "aws.emr.ClusterPlacementType",
+  "javaInterfaces" : [ "aws.Property<ClusterPlacementType>" ],
   "properties" : {
     "AvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-placementtype.html#cfn-elasticmapreduce-cluster-placementtype-availabilityzone",

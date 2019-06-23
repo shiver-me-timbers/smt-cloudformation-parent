@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.TriggerResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TriggerResource>", "aws.HasCondition<TriggerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

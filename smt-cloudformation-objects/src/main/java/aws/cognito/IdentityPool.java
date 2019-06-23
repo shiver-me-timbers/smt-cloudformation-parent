@@ -36,21 +36,21 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class IdentityPool {
 
     /**
-     * PushSync
+     * IdentityPoolPushSync
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html
      * 
      */
     @JsonProperty("PushSync")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html")
-    private Property<PushSync> pushSync;
+    private Property<IdentityPoolPushSync> pushSync;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders
      * 
      */
     @JsonProperty("CognitoIdentityProviders")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders")
-    private List<Property<CognitoIdentityProvider>> cognitoIdentityProviders = new ArrayList<Property<CognitoIdentityProvider>>();
+    private List<Property<IdentityPoolCognitoIdentityProvider>> cognitoIdentityProviders = new ArrayList<Property<IdentityPoolCognitoIdentityProvider>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents
      * 
@@ -66,14 +66,14 @@ public class IdentityPool {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername")
     private CharSequence developerProviderName;
     /**
-     * CognitoStreams
+     * IdentityPoolCognitoStreams
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html
      * 
      */
     @JsonProperty("CognitoStreams")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html")
-    private Property<CognitoStreams> cognitoStreams;
+    private Property<IdentityPoolCognitoStreams> cognitoStreams;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname
      * 
@@ -111,28 +111,28 @@ public class IdentityPool {
     private List<CharSequence> openIdConnectProviderARNs = new ArrayList<CharSequence>();
 
     /**
-     * PushSync
+     * IdentityPoolPushSync
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html
      * 
      */
     @JsonIgnore
-    public Property<PushSync> getPushSync() {
+    public Property<IdentityPoolPushSync> getPushSync() {
         return pushSync;
     }
 
     /**
-     * PushSync
+     * IdentityPoolPushSync
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html
      * 
      */
     @JsonIgnore
-    public void setPushSync(Property<PushSync> pushSync) {
+    public void setPushSync(Property<IdentityPoolPushSync> pushSync) {
         this.pushSync = pushSync;
     }
 
-    public IdentityPool withPushSync(Property<PushSync> pushSync) {
+    public IdentityPool withPushSync(Property<IdentityPoolPushSync> pushSync) {
         this.pushSync = pushSync;
         return this;
     }
@@ -142,7 +142,7 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public List<Property<CognitoIdentityProvider>> getCognitoIdentityProviders() {
+    public List<Property<IdentityPoolCognitoIdentityProvider>> getCognitoIdentityProviders() {
         return cognitoIdentityProviders;
     }
 
@@ -151,11 +151,11 @@ public class IdentityPool {
      * 
      */
     @JsonIgnore
-    public void setCognitoIdentityProviders(List<Property<CognitoIdentityProvider>> cognitoIdentityProviders) {
+    public void setCognitoIdentityProviders(List<Property<IdentityPoolCognitoIdentityProvider>> cognitoIdentityProviders) {
         this.cognitoIdentityProviders = cognitoIdentityProviders;
     }
 
-    public IdentityPool withCognitoIdentityProviders(List<Property<CognitoIdentityProvider>> cognitoIdentityProviders) {
+    public IdentityPool withCognitoIdentityProviders(List<Property<IdentityPoolCognitoIdentityProvider>> cognitoIdentityProviders) {
         this.cognitoIdentityProviders = cognitoIdentityProviders;
         return this;
     }
@@ -207,28 +207,28 @@ public class IdentityPool {
     }
 
     /**
-     * CognitoStreams
+     * IdentityPoolCognitoStreams
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html
      * 
      */
     @JsonIgnore
-    public Property<CognitoStreams> getCognitoStreams() {
+    public Property<IdentityPoolCognitoStreams> getCognitoStreams() {
         return cognitoStreams;
     }
 
     /**
-     * CognitoStreams
+     * IdentityPoolCognitoStreams
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html
      * 
      */
     @JsonIgnore
-    public void setCognitoStreams(Property<CognitoStreams> cognitoStreams) {
+    public void setCognitoStreams(Property<IdentityPoolCognitoStreams> cognitoStreams) {
         this.cognitoStreams = cognitoStreams;
     }
 
-    public IdentityPool withCognitoStreams(Property<CognitoStreams> cognitoStreams) {
+    public IdentityPool withCognitoStreams(Property<IdentityPoolCognitoStreams> cognitoStreams) {
         this.cognitoStreams = cognitoStreams;
         return this;
     }

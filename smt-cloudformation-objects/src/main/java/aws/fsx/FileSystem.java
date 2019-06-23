@@ -57,14 +57,14 @@ public class FileSystem {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-filesystemtype")
     private CharSequence fileSystemType;
     /**
-     * LustreConfiguration
+     * FileSystemLustreConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html
      * 
      */
     @JsonProperty("LustreConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html")
-    private Property<LustreConfiguration> lustreConfiguration;
+    private Property<FileSystemLustreConfiguration> lustreConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-backupid
      * 
@@ -94,14 +94,14 @@ public class FileSystem {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
-     * WindowsConfiguration
+     * FileSystemWindowsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html
      * 
      */
     @JsonProperty("WindowsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html")
-    private Property<WindowsConfiguration> windowsConfiguration;
+    private Property<FileSystemWindowsConfiguration> windowsConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-fsx-filesystem.html#cfn-fsx-filesystem-kmskeyid
@@ -173,28 +173,28 @@ public class FileSystem {
     }
 
     /**
-     * LustreConfiguration
+     * FileSystemLustreConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<LustreConfiguration> getLustreConfiguration() {
+    public Property<FileSystemLustreConfiguration> getLustreConfiguration() {
         return lustreConfiguration;
     }
 
     /**
-     * LustreConfiguration
+     * FileSystemLustreConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setLustreConfiguration(Property<LustreConfiguration> lustreConfiguration) {
+    public void setLustreConfiguration(Property<FileSystemLustreConfiguration> lustreConfiguration) {
         this.lustreConfiguration = lustreConfiguration;
     }
 
-    public FileSystem withLustreConfiguration(Property<LustreConfiguration> lustreConfiguration) {
+    public FileSystem withLustreConfiguration(Property<FileSystemLustreConfiguration> lustreConfiguration) {
         this.lustreConfiguration = lustreConfiguration;
         return this;
     }
@@ -292,28 +292,28 @@ public class FileSystem {
     }
 
     /**
-     * WindowsConfiguration
+     * FileSystemWindowsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<WindowsConfiguration> getWindowsConfiguration() {
+    public Property<FileSystemWindowsConfiguration> getWindowsConfiguration() {
         return windowsConfiguration;
     }
 
     /**
-     * WindowsConfiguration
+     * FileSystemWindowsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setWindowsConfiguration(Property<WindowsConfiguration> windowsConfiguration) {
+    public void setWindowsConfiguration(Property<FileSystemWindowsConfiguration> windowsConfiguration) {
         this.windowsConfiguration = windowsConfiguration;
     }
 
-    public FileSystem withWindowsConfiguration(Property<WindowsConfiguration> windowsConfiguration) {
+    public FileSystem withWindowsConfiguration(Property<FileSystemWindowsConfiguration> windowsConfiguration) {
         this.windowsConfiguration = windowsConfiguration;
         return this;
     }

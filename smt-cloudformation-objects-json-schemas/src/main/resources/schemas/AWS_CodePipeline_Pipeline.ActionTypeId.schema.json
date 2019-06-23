@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_Pipeline.ActionTypeId.schema.json",
-  "title" : "ActionTypeId",
+  "title" : "PipelineActionTypeId",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.ActionTypeId",
-  "javaInterfaces" : [ "aws.Property<ActionTypeId>" ],
+  "javaType" : "aws.codepipeline.PipelineActionTypeId",
+  "javaInterfaces" : [ "aws.Property<PipelineActionTypeId>" ],
   "properties" : {
     "Category" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html#cfn-codepipeline-pipeline-stages-actions-actiontypeid-category",

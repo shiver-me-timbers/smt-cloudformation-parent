@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SageMaker_Model.ContainerDefinition.schema.json",
-  "title" : "ContainerDefinition",
+  "title" : "ModelContainerDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.ContainerDefinition",
-  "javaInterfaces" : [ "aws.Property<ContainerDefinition>" ],
+  "javaType" : "aws.sagemaker.ModelContainerDefinition",
+  "javaInterfaces" : [ "aws.Property<ModelContainerDefinition>" ],
   "properties" : {
     "ContainerHostname" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-containerhostname",
@@ -14,7 +14,8 @@
     },
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-environment",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "ModelDataUrl" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-model-containerdefinition.html#cfn-sagemaker-model-containerdefinition-modeldataurl",

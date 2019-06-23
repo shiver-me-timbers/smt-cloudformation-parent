@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodePipeline_CustomActionType.ConfigurationProperties.schema.json",
-  "title" : "ConfigurationProperties",
+  "title" : "CustomActionTypeConfigurationProperties",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html",
   "type" : "object",
-  "javaType" : "aws.codepipeline.ConfigurationProperties",
-  "javaInterfaces" : [ "aws.Property<ConfigurationProperties>" ],
+  "javaType" : "aws.codepipeline.CustomActionTypeConfigurationProperties",
+  "javaInterfaces" : [ "aws.Property<CustomActionTypeConfigurationProperties>" ],
   "properties" : {
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-customactiontype-configurationproperties.html#cfn-codepipeline-customactiontype-configurationproperties-description",

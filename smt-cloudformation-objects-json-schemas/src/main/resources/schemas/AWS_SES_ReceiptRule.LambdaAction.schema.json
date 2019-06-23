@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SES_ReceiptRule.LambdaAction.schema.json",
-  "title" : "LambdaAction",
+  "title" : "ReceiptRuleLambdaAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html",
   "type" : "object",
-  "javaType" : "aws.ses.LambdaAction",
-  "javaInterfaces" : [ "aws.Property<LambdaAction>" ],
+  "javaType" : "aws.ses.ReceiptRuleLambdaAction",
+  "javaInterfaces" : [ "aws.Property<ReceiptRuleLambdaAction>" ],
   "properties" : {
     "FunctionArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-lambdaaction.html#cfn-ses-receiptrule-lambdaaction-functionarn",

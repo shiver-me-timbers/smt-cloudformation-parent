@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.Device.schema.json",
-  "title" : "Device",
+  "title" : "TaskDefinitionDevice",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html",
   "type" : "object",
-  "javaType" : "aws.ecs.Device",
-  "javaInterfaces" : [ "aws.Property<Device>" ],
+  "javaType" : "aws.ecs.TaskDefinitionDevice",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionDevice>" ],
   "properties" : {
     "ContainerPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-device.html#cfn-ecs-taskdefinition-device-containerpath",

@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class ResourceDefinition {
 
     /**
-     * ResourceDefinitionVersion
+     * ResourceDefinitionResourceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html")
-    private Property<ResourceDefinitionVersion> initialVersion;
+    private Property<ResourceDefinitionResourceDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinition.html#cfn-greengrass-resourcedefinition-name
      * 
@@ -43,28 +43,28 @@ public class ResourceDefinition {
     private CharSequence name;
 
     /**
-     * ResourceDefinitionVersion
+     * ResourceDefinitionResourceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<ResourceDefinitionVersion> getInitialVersion() {
+    public Property<ResourceDefinitionResourceDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * ResourceDefinitionVersion
+     * ResourceDefinitionResourceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<ResourceDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<ResourceDefinitionResourceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public ResourceDefinition withInitialVersion(Property<ResourceDefinitionVersion> initialVersion) {
+    public ResourceDefinition withInitialVersion(Property<ResourceDefinitionResourceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

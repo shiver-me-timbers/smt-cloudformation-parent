@@ -13,8 +13,8 @@ import java.util.Map;
 
 import static java.lang.String.format;
 import static java.util.AbstractMap.SimpleEntry;
+import static java.util.Arrays.asList;
 import static java.util.Collections.emptyMap;
-import static java.util.Collections.singletonList;
 import static java.util.Collections.singletonMap;
 import static java.util.Map.Entry;
 import static org.hamcrest.Matchers.equalTo;
@@ -75,6 +75,13 @@ public class ResourceTransformerTest {
         assertThat(actualKey, equalTo(resourceName + RESOURCE));
         assertThat(actualValue, hasEntry("extends", singletonMap("$ref", "Resource.schema.json")));
         assertThat(actualValue, hasEntry("javaType", format("%s.%s", packageName, resourceClassName)));
+        assertThat(
+            actualValue,
+            hasEntry("javaInterfaces", asList(
+                format("aws.HasDependsOn<%s>", resourceClassName),
+                format("aws.HasCondition<%s>", resourceClassName)
+            ))
+        );
         assertThat(actualValue, hasEntry("properties", new LinkedHashMap<String, Object>() {{
             put("Type", new LinkedHashMap<String, Object>() {{
                 put("type", "string");
@@ -116,7 +123,11 @@ public class ResourceTransformerTest {
         final Map<String, Object> actualValue = actual.getValue();
         assertThat(
             actualValue,
-            hasEntry("javaInterfaces", singletonList(format("aws.HasAttributes<%sAttributes>", className)))
+            hasEntry("javaInterfaces", asList(
+                format("aws.HasDependsOn<%s>", resourceClassName),
+                format("aws.HasCondition<%s>", resourceClassName),
+                format("aws.HasAttributes<%sAttributes>", className)
+            ))
         );
     }
 

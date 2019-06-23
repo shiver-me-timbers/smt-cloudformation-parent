@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.logs.SubscriptionFilterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SubscriptionFilterResource>", "aws.HasCondition<SubscriptionFilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

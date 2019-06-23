@@ -14,7 +14,7 @@
     "Rule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rule",
       "$ref" : "AWS_SES_ReceiptRule.Rule.schema.json",
-      "javaType" : "aws.Property<aws.ses.Rule>"
+      "javaType" : "aws.Property<aws.ses.ReceiptRuleRule>"
     },
     "RuleSetName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname",

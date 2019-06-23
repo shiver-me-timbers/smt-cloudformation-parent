@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iotanalytics.DatasetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DatasetResource>", "aws.HasCondition<DatasetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

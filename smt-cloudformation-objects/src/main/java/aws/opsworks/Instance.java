@@ -91,7 +91,7 @@ public class Instance {
     @JsonProperty("BlockDeviceMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-blockdevicemappings")
-    private Set<Property<BlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<BlockDeviceMapping>>();
+    private Set<Property<InstanceBlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<InstanceBlockDeviceMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-ebsoptimized
      * 
@@ -178,14 +178,14 @@ public class Instance {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-tenancy")
     private CharSequence tenancy;
     /**
-     * TimeBasedAutoScaling
+     * InstanceTimeBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html
      * 
      */
     @JsonProperty("TimeBasedAutoScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html")
-    private Property<TimeBasedAutoScaling> timeBasedAutoScaling;
+    private Property<InstanceTimeBasedAutoScaling> timeBasedAutoScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype
      * 
@@ -322,7 +322,7 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public Set<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
+    public Set<Property<InstanceBlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -331,11 +331,11 @@ public class Instance {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
+    public void setBlockDeviceMappings(Set<Property<InstanceBlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public Instance withBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
+    public Instance withBlockDeviceMappings(Set<Property<InstanceBlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }
@@ -617,28 +617,28 @@ public class Instance {
     }
 
     /**
-     * TimeBasedAutoScaling
+     * InstanceTimeBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html
      * 
      */
     @JsonIgnore
-    public Property<TimeBasedAutoScaling> getTimeBasedAutoScaling() {
+    public Property<InstanceTimeBasedAutoScaling> getTimeBasedAutoScaling() {
         return timeBasedAutoScaling;
     }
 
     /**
-     * TimeBasedAutoScaling
+     * InstanceTimeBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html
      * 
      */
     @JsonIgnore
-    public void setTimeBasedAutoScaling(Property<TimeBasedAutoScaling> timeBasedAutoScaling) {
+    public void setTimeBasedAutoScaling(Property<InstanceTimeBasedAutoScaling> timeBasedAutoScaling) {
         this.timeBasedAutoScaling = timeBasedAutoScaling;
     }
 
-    public Instance withTimeBasedAutoScaling(Property<TimeBasedAutoScaling> timeBasedAutoScaling) {
+    public Instance withTimeBasedAutoScaling(Property<InstanceTimeBasedAutoScaling> timeBasedAutoScaling) {
         this.timeBasedAutoScaling = timeBasedAutoScaling;
         return this;
     }

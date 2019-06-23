@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -30,6 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class PipelineResource
     extends Resource
+    implements HasCondition<PipelineResource> , HasDependsOn<PipelineResource>
 {
 
     @JsonProperty("Type")

@@ -51,7 +51,7 @@ public class OptionGroup {
      */
     @JsonProperty("OptionConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optionconfigurations")
-    private List<Property<OptionConfiguration>> optionConfigurations = new ArrayList<Property<OptionConfiguration>>();
+    private List<Property<OptionGroupOptionConfiguration>> optionConfigurations = new ArrayList<Property<OptionGroupOptionConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription
      * 
@@ -118,7 +118,7 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<OptionConfiguration>> getOptionConfigurations() {
+    public List<Property<OptionGroupOptionConfiguration>> getOptionConfigurations() {
         return optionConfigurations;
     }
 
@@ -127,11 +127,11 @@ public class OptionGroup {
      * 
      */
     @JsonIgnore
-    public void setOptionConfigurations(List<Property<OptionConfiguration>> optionConfigurations) {
+    public void setOptionConfigurations(List<Property<OptionGroupOptionConfiguration>> optionConfigurations) {
         this.optionConfigurations = optionConfigurations;
     }
 
-    public OptionGroup withOptionConfigurations(List<Property<OptionConfiguration>> optionConfigurations) {
+    public OptionGroup withOptionConfigurations(List<Property<OptionGroupOptionConfiguration>> optionConfigurations) {
         this.optionConfigurations = optionConfigurations;
         return this;
     }

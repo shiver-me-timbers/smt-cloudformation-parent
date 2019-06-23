@@ -1,26 +1,26 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticLoadBalancingV2_ListenerRule.Action.schema.json",
-  "title" : "Action",
+  "title" : "ListenerRuleAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.Action",
-  "javaInterfaces" : [ "aws.Property<Action>" ],
+  "javaType" : "aws.elasticloadbalancingv2.ListenerRuleAction",
+  "javaInterfaces" : [ "aws.Property<ListenerRuleAction>" ],
   "properties" : {
     "AuthenticateCognitoConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-authenticatecognitoconfig",
-      "$ref" : "AWS_ElasticLoadBalancingV2_Listener.AuthenticateCognitoConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.AuthenticateCognitoConfig>"
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.AuthenticateCognitoConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleAuthenticateCognitoConfig>"
     },
     "AuthenticateOidcConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-authenticateoidcconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.AuthenticateOidcConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.AuthenticateOidcConfig>"
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleAuthenticateOidcConfig>"
     },
     "FixedResponseConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-fixedresponseconfig",
       "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.FixedResponseConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.FixedResponseConfig>"
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleFixedResponseConfig>"
     },
     "Order" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-order",
@@ -28,8 +28,8 @@
     },
     "RedirectConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listenerrule-action-redirectconfig",
-      "$ref" : "AWS_ElasticLoadBalancingV2_Listener.RedirectConfig.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.RedirectConfig>"
+      "$ref" : "AWS_ElasticLoadBalancingV2_ListenerRule.RedirectConfig.schema.json",
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerRuleRedirectConfig>"
     },
     "TargetGroupArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-listenerrule-actions.html#cfn-elasticloadbalancingv2-listener-actions-targetgrouparn",

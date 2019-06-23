@@ -37,7 +37,7 @@
     "VpcSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-directoryservice-microsoftad.html#cfn-directoryservice-microsoftad-vpcsettings",
       "$ref" : "AWS_DirectoryService_MicrosoftAD.VpcSettings.schema.json",
-      "javaType" : "aws.Property<aws.directoryservice.VpcSettings>"
+      "javaType" : "aws.Property<aws.directoryservice.MicrosoftADVpcSettings>"
     }
   }
 }

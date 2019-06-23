@@ -41,14 +41,14 @@ public class ApplicationVersion {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-description")
     private CharSequence description;
     /**
-     * SourceBundle
+     * ApplicationVersionSourceBundle
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html
      * 
      */
     @JsonProperty("SourceBundle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html")
-    private Property<SourceBundle> sourceBundle;
+    private Property<ApplicationVersionSourceBundle> sourceBundle;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-version.html#cfn-elasticbeanstalk-applicationversion-applicationname
@@ -97,28 +97,28 @@ public class ApplicationVersion {
     }
 
     /**
-     * SourceBundle
+     * ApplicationVersionSourceBundle
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html
      * 
      */
     @JsonIgnore
-    public Property<SourceBundle> getSourceBundle() {
+    public Property<ApplicationVersionSourceBundle> getSourceBundle() {
         return sourceBundle;
     }
 
     /**
-     * SourceBundle
+     * ApplicationVersionSourceBundle
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html
      * 
      */
     @JsonIgnore
-    public void setSourceBundle(Property<SourceBundle> sourceBundle) {
+    public void setSourceBundle(Property<ApplicationVersionSourceBundle> sourceBundle) {
         this.sourceBundle = sourceBundle;
     }
 
-    public ApplicationVersion withSourceBundle(Property<SourceBundle> sourceBundle) {
+    public ApplicationVersion withSourceBundle(Property<ApplicationVersionSourceBundle> sourceBundle) {
         this.sourceBundle = sourceBundle;
         return this;
     }

@@ -27,7 +27,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_Route53_RecordSetGroup.RecordSet.schema.json",
-        "javaType" : "aws.Property<aws.route53.RecordSet>"
+        "javaType" : "aws.Property<aws.route53.RecordSetGroupRecordSet>"
       }
     }
   }

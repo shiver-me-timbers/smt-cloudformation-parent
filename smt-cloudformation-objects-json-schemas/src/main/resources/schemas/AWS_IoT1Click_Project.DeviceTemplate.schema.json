@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoT1Click_Project.DeviceTemplate.schema.json",
-  "title" : "DeviceTemplate",
+  "title" : "ProjectDeviceTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-devicetemplate.html",
   "type" : "object",
-  "javaType" : "aws.iot1click.DeviceTemplate",
-  "javaInterfaces" : [ "aws.Property<DeviceTemplate>" ],
+  "javaType" : "aws.iot1click.ProjectDeviceTemplate",
+  "javaInterfaces" : [ "aws.Property<ProjectDeviceTemplate>" ],
   "properties" : {
     "DeviceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-devicetemplate.html#cfn-iot1click-project-devicetemplate-devicetype",
@@ -14,7 +14,8 @@
     },
     "CallbackOverrides" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-devicetemplate.html#cfn-iot1click-project-devicetemplate-callbackoverrides",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

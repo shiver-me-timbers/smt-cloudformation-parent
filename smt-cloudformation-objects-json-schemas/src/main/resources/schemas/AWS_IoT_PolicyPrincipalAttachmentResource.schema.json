@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot.PolicyPrincipalAttachmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PolicyPrincipalAttachmentResource>", "aws.HasCondition<PolicyPrincipalAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -39,12 +39,12 @@
     "StepScalingPolicyConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.StepScalingPolicyConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.StepScalingPolicyConfiguration>"
+      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyStepScalingPolicyConfiguration>"
     },
     "TargetTrackingScalingPolicyConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration",
       "$ref" : "AWS_ApplicationAutoScaling_ScalingPolicy.TargetTrackingScalingPolicyConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.TargetTrackingScalingPolicyConfiguration>"
+      "javaType" : "aws.Property<aws.applicationautoscaling.ScalingPolicyTargetTrackingScalingPolicyConfiguration>"
     }
   }
 }

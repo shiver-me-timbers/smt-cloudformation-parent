@@ -17,18 +17,18 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodePipeline_CustomActionType.ConfigurationProperties.schema.json",
-        "javaType" : "aws.Property<aws.codepipeline.ConfigurationProperties>"
+        "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeConfigurationProperties>"
       }
     },
     "InputArtifactDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-inputartifactdetails",
       "$ref" : "AWS_CodePipeline_CustomActionType.ArtifactDetails.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.ArtifactDetails>"
+      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeArtifactDetails>"
     },
     "OutputArtifactDetails" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-outputartifactdetails",
       "$ref" : "AWS_CodePipeline_CustomActionType.ArtifactDetails.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.ArtifactDetails>"
+      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeArtifactDetails>"
     },
     "Provider" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-provider",
@@ -38,7 +38,7 @@
     "Settings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-settings",
       "$ref" : "AWS_CodePipeline_CustomActionType.Settings.schema.json",
-      "javaType" : "aws.Property<aws.codepipeline.Settings>"
+      "javaType" : "aws.Property<aws.codepipeline.CustomActionTypeSettings>"
     },
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html#cfn-codepipeline-customactiontype-version",

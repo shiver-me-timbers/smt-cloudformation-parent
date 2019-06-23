@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_WAF_ByteMatchSet.ByteMatchTuple.schema.json",
-  "title" : "ByteMatchTuple",
+  "title" : "ByteMatchSetByteMatchTuple",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html",
   "type" : "object",
-  "javaType" : "aws.waf.ByteMatchTuple",
-  "javaInterfaces" : [ "aws.Property<ByteMatchTuple>" ],
+  "javaType" : "aws.waf.ByteMatchSetByteMatchTuple",
+  "javaInterfaces" : [ "aws.Property<ByteMatchSetByteMatchTuple>" ],
   "properties" : {
     "FieldToMatch" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-fieldtomatch",
       "$ref" : "AWS_WAF_ByteMatchSet.FieldToMatch.schema.json",
-      "javaType" : "aws.Property<aws.waf.FieldToMatch>"
+      "javaType" : "aws.Property<aws.waf.ByteMatchSetFieldToMatch>"
     },
     "PositionalConstraint" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html#cfn-waf-bytematchset-bytematchtuples-positionalconstraint",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_IdentityPoolRoleAttachment.MappingRule.schema.json",
-  "title" : "MappingRule",
+  "title" : "IdentityPoolRoleAttachmentMappingRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html",
   "type" : "object",
-  "javaType" : "aws.cognito.MappingRule",
-  "javaInterfaces" : [ "aws.Property<MappingRule>" ],
+  "javaType" : "aws.cognito.IdentityPoolRoleAttachmentMappingRule",
+  "javaInterfaces" : [ "aws.Property<IdentityPoolRoleAttachmentMappingRule>" ],
   "properties" : {
     "MatchType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypoolroleattachment-mappingrule.html#cfn-cognito-identitypoolroleattachment-mappingrule-matchtype",

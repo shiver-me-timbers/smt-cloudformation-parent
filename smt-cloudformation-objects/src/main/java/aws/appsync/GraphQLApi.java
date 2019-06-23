@@ -29,23 +29,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class GraphQLApi {
 
     /**
-     * OpenIDConnectConfig
+     * GraphQLApiOpenIDConnectConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html
      * 
      */
     @JsonProperty("OpenIDConnectConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html")
-    private Property<OpenIDConnectConfig> openIDConnectConfig;
+    private Property<GraphQLApiOpenIDConnectConfig> openIDConnectConfig;
     /**
-     * UserPoolConfig
+     * GraphQLApiUserPoolConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html
      * 
      */
     @JsonProperty("UserPoolConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html")
-    private Property<UserPoolConfig> userPoolConfig;
+    private Property<GraphQLApiUserPoolConfig> userPoolConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
      * 
@@ -61,65 +61,65 @@ public class GraphQLApi {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype")
     private CharSequence authenticationType;
     /**
-     * LogConfig
+     * GraphQLApiLogConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html
      * 
      */
     @JsonProperty("LogConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html")
-    private Property<LogConfig> logConfig;
+    private Property<GraphQLApiLogConfig> logConfig;
 
     /**
-     * OpenIDConnectConfig
+     * GraphQLApiOpenIDConnectConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html
      * 
      */
     @JsonIgnore
-    public Property<OpenIDConnectConfig> getOpenIDConnectConfig() {
+    public Property<GraphQLApiOpenIDConnectConfig> getOpenIDConnectConfig() {
         return openIDConnectConfig;
     }
 
     /**
-     * OpenIDConnectConfig
+     * GraphQLApiOpenIDConnectConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-openidconnectconfig.html
      * 
      */
     @JsonIgnore
-    public void setOpenIDConnectConfig(Property<OpenIDConnectConfig> openIDConnectConfig) {
+    public void setOpenIDConnectConfig(Property<GraphQLApiOpenIDConnectConfig> openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
     }
 
-    public GraphQLApi withOpenIDConnectConfig(Property<OpenIDConnectConfig> openIDConnectConfig) {
+    public GraphQLApi withOpenIDConnectConfig(Property<GraphQLApiOpenIDConnectConfig> openIDConnectConfig) {
         this.openIDConnectConfig = openIDConnectConfig;
         return this;
     }
 
     /**
-     * UserPoolConfig
+     * GraphQLApiUserPoolConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html
      * 
      */
     @JsonIgnore
-    public Property<UserPoolConfig> getUserPoolConfig() {
+    public Property<GraphQLApiUserPoolConfig> getUserPoolConfig() {
         return userPoolConfig;
     }
 
     /**
-     * UserPoolConfig
+     * GraphQLApiUserPoolConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-userpoolconfig.html
      * 
      */
     @JsonIgnore
-    public void setUserPoolConfig(Property<UserPoolConfig> userPoolConfig) {
+    public void setUserPoolConfig(Property<GraphQLApiUserPoolConfig> userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
     }
 
-    public GraphQLApi withUserPoolConfig(Property<UserPoolConfig> userPoolConfig) {
+    public GraphQLApi withUserPoolConfig(Property<GraphQLApiUserPoolConfig> userPoolConfig) {
         this.userPoolConfig = userPoolConfig;
         return this;
     }
@@ -171,28 +171,28 @@ public class GraphQLApi {
     }
 
     /**
-     * LogConfig
+     * GraphQLApiLogConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LogConfig> getLogConfig() {
+    public Property<GraphQLApiLogConfig> getLogConfig() {
         return logConfig;
     }
 
     /**
-     * LogConfig
+     * GraphQLApiLogConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-graphqlapi-logconfig.html
      * 
      */
     @JsonIgnore
-    public void setLogConfig(Property<LogConfig> logConfig) {
+    public void setLogConfig(Property<GraphQLApiLogConfig> logConfig) {
         this.logConfig = logConfig;
     }
 
-    public GraphQLApi withLogConfig(Property<LogConfig> logConfig) {
+    public GraphQLApi withLogConfig(Property<GraphQLApiLogConfig> logConfig) {
         this.logConfig = logConfig;
         return this;
     }

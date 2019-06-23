@@ -58,7 +58,7 @@ public class RecordSetGroup {
     @JsonProperty("RecordSets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-recordsets")
-    private Set<Property<RecordSet>> recordSets = new LinkedHashSet<Property<RecordSet>>();
+    private Set<Property<RecordSetGroupRecordSet>> recordSets = new LinkedHashSet<Property<RecordSetGroupRecordSet>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-recordsetgroup.html#cfn-route53-recordsetgroup-comment
@@ -134,7 +134,7 @@ public class RecordSetGroup {
      * 
      */
     @JsonIgnore
-    public Set<Property<RecordSet>> getRecordSets() {
+    public Set<Property<RecordSetGroupRecordSet>> getRecordSets() {
         return recordSets;
     }
 
@@ -143,11 +143,11 @@ public class RecordSetGroup {
      * 
      */
     @JsonIgnore
-    public void setRecordSets(Set<Property<RecordSet>> recordSets) {
+    public void setRecordSets(Set<Property<RecordSetGroupRecordSet>> recordSets) {
         this.recordSets = recordSets;
     }
 
-    public RecordSetGroup withRecordSets(Set<Property<RecordSet>> recordSets) {
+    public RecordSetGroup withRecordSets(Set<Property<RecordSetGroupRecordSet>> recordSets) {
         this.recordSets = recordSets;
         return this;
     }

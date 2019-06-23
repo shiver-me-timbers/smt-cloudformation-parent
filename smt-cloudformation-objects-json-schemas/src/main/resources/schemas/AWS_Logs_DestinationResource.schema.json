@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.logs.DestinationResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DestinationAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DestinationResource>", "aws.HasCondition<DestinationResource>", "aws.HasAttributes<DestinationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_HostedZone.HostedZoneTag.schema.json",
-  "title" : "HostedZoneTag",
+  "title" : "HostedZoneHostedZoneTag",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzonetags.html",
   "type" : "object",
-  "javaType" : "aws.route53.HostedZoneTag",
-  "javaInterfaces" : [ "aws.Property<HostedZoneTag>" ],
+  "javaType" : "aws.route53.HostedZoneHostedZoneTag",
+  "javaInterfaces" : [ "aws.Property<HostedZoneHostedZoneTag>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzonetags.html#cfn-route53-hostedzonetags-key",

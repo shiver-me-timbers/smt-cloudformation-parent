@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudformation.WaitConditionHandleResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<WaitConditionHandleResource>", "aws.HasCondition<WaitConditionHandleResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

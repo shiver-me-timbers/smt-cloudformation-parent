@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticbeanstalk.ApplicationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationResource>", "aws.HasCondition<ApplicationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

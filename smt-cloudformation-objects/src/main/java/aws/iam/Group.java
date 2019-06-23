@@ -59,7 +59,7 @@ public class Group {
     @JsonProperty("Policies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-policies")
-    private Set<Property<Policy>> policies = new LinkedHashSet<Property<Policy>>();
+    private Set<Property<GroupPolicy>> policies = new LinkedHashSet<Property<GroupPolicy>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-group.html#cfn-iam-group-groupname
@@ -135,7 +135,7 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public Set<Property<Policy>> getPolicies() {
+    public Set<Property<GroupPolicy>> getPolicies() {
         return policies;
     }
 
@@ -144,11 +144,11 @@ public class Group {
      * 
      */
     @JsonIgnore
-    public void setPolicies(Set<Property<Policy>> policies) {
+    public void setPolicies(Set<Property<GroupPolicy>> policies) {
         this.policies = policies;
     }
 
-    public Group withPolicies(Set<Property<Policy>> policies) {
+    public Group withPolicies(Set<Property<GroupPolicy>> policies) {
         this.policies = policies;
         return this;
     }

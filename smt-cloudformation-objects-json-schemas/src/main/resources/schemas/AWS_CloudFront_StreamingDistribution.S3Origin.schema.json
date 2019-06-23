@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_StreamingDistribution.S3Origin.schema.json",
-  "title" : "S3Origin",
+  "title" : "StreamingDistributionS3Origin",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.S3Origin",
-  "javaInterfaces" : [ "aws.Property<S3Origin>" ],
+  "javaType" : "aws.cloudfront.StreamingDistributionS3Origin",
+  "javaInterfaces" : [ "aws.Property<StreamingDistributionS3Origin>" ],
   "properties" : {
     "DomainName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-s3origin.html#cfn-cloudfront-streamingdistribution-s3origin-domainname",

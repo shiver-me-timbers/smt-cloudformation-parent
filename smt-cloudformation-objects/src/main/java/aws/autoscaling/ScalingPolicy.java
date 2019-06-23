@@ -4,7 +4,6 @@ package aws.autoscaling;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.Property;
-import aws.autoscalingplans.TargetTrackingConfiguration;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -100,16 +99,16 @@ public class ScalingPolicy {
     @JsonProperty("StepAdjustments")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-stepadjustments")
-    private Set<Property<StepAdjustment>> stepAdjustments = new LinkedHashSet<Property<StepAdjustment>>();
+    private Set<Property<ScalingPolicyStepAdjustment>> stepAdjustments = new LinkedHashSet<Property<ScalingPolicyStepAdjustment>>();
     /**
-     * TargetTrackingConfiguration
+     * ScalingPolicyTargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
      * 
      */
     @JsonProperty("TargetTrackingConfiguration")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html")
-    private Property<TargetTrackingConfiguration> targetTrackingConfiguration;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html")
+    private Property<ScalingPolicyTargetTrackingConfiguration> targetTrackingConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-policy.html#cfn-as-scalingpolicy-adjustmenttype
@@ -300,7 +299,7 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public Set<Property<StepAdjustment>> getStepAdjustments() {
+    public Set<Property<ScalingPolicyStepAdjustment>> getStepAdjustments() {
         return stepAdjustments;
     }
 
@@ -309,38 +308,38 @@ public class ScalingPolicy {
      * 
      */
     @JsonIgnore
-    public void setStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
+    public void setStepAdjustments(Set<Property<ScalingPolicyStepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
     }
 
-    public ScalingPolicy withStepAdjustments(Set<Property<StepAdjustment>> stepAdjustments) {
+    public ScalingPolicy withStepAdjustments(Set<Property<ScalingPolicyStepAdjustment>> stepAdjustments) {
         this.stepAdjustments = stepAdjustments;
         return this;
     }
 
     /**
-     * TargetTrackingConfiguration
+     * ScalingPolicyTargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<TargetTrackingConfiguration> getTargetTrackingConfiguration() {
+    public Property<ScalingPolicyTargetTrackingConfiguration> getTargetTrackingConfiguration() {
         return targetTrackingConfiguration;
     }
 
     /**
-     * TargetTrackingConfiguration
+     * ScalingPolicyTargetTrackingConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setTargetTrackingConfiguration(Property<TargetTrackingConfiguration> targetTrackingConfiguration) {
+    public void setTargetTrackingConfiguration(Property<ScalingPolicyTargetTrackingConfiguration> targetTrackingConfiguration) {
         this.targetTrackingConfiguration = targetTrackingConfiguration;
     }
 
-    public ScalingPolicy withTargetTrackingConfiguration(Property<TargetTrackingConfiguration> targetTrackingConfiguration) {
+    public ScalingPolicy withTargetTrackingConfiguration(Property<ScalingPolicyTargetTrackingConfiguration> targetTrackingConfiguration) {
         this.targetTrackingConfiguration = targetTrackingConfiguration;
         return this;
     }

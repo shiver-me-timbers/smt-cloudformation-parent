@@ -33,7 +33,7 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
 {
 
     @JsonProperty("AWSTemplateFormatVersion")
-    private java.lang.String aWSTemplateFormatVersion = "2010-09-09";
+    private java.lang.Object aWSTemplateFormatVersion;
     @JsonProperty("Description")
     private java.lang.String description;
     @JsonProperty("Metadata")
@@ -50,16 +50,16 @@ public class Template implements HasConditions<Template> , HasOutputs<Template, 
     private Map<String, Output> outputs;
 
     @JsonIgnore
-    public java.lang.String getAWSTemplateFormatVersion() {
+    public java.lang.Object getAWSTemplateFormatVersion() {
         return aWSTemplateFormatVersion;
     }
 
     @JsonIgnore
-    public void setAWSTemplateFormatVersion(java.lang.String aWSTemplateFormatVersion) {
+    public void setAWSTemplateFormatVersion(java.lang.Object aWSTemplateFormatVersion) {
         this.aWSTemplateFormatVersion = aWSTemplateFormatVersion;
     }
 
-    public Template withAWSTemplateFormatVersion(java.lang.String aWSTemplateFormatVersion) {
+    public Template withAWSTemplateFormatVersion(java.lang.Object aWSTemplateFormatVersion) {
         this.aWSTemplateFormatVersion = aWSTemplateFormatVersion;
         return this;
     }

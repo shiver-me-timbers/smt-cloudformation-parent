@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Lambda_Function.TracingConfig.schema.json",
-  "title" : "TracingConfig",
+  "title" : "FunctionTracingConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html",
   "type" : "object",
-  "javaType" : "aws.lambda.TracingConfig",
-  "javaInterfaces" : [ "aws.Property<TracingConfig>" ],
+  "javaType" : "aws.lambda.FunctionTracingConfig",
+  "javaInterfaces" : [ "aws.Property<FunctionTracingConfig>" ],
   "properties" : {
     "Mode" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-tracingconfig.html#cfn-lambda-function-tracingconfig-mode",

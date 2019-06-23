@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_OpsWorks_Stack.StackConfigurationManager.schema.json",
-  "title" : "StackConfigurationManager",
+  "title" : "StackStackConfigurationManager",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.StackConfigurationManager",
-  "javaInterfaces" : [ "aws.Property<StackConfigurationManager>" ],
+  "javaType" : "aws.opsworks.StackStackConfigurationManager",
+  "javaInterfaces" : [ "aws.Property<StackStackConfigurationManager>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html#cfn-opsworks-configmanager-name",

@@ -3,6 +3,7 @@ package aws.ec2;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,12 +35,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class VPCEndpoint {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("PolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument")
-    private Object policyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument policyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-privatednsenabled
      * 
@@ -94,24 +97,28 @@ public class VPCEndpoint {
     private CharSequence vpcId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public Object getPolicyDocument() {
+    public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html#cfn-ec2-vpcendpoint-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
+    public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public VPCEndpoint withPolicyDocument(Object policyDocument) {
+    public VPCEndpoint withPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

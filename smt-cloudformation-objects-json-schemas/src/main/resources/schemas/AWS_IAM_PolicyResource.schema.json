@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.PolicyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PolicyResource>", "aws.HasCondition<PolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

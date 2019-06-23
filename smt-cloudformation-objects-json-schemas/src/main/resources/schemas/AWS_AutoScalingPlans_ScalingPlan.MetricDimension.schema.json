@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScalingPlans_ScalingPlan.MetricDimension.schema.json",
-  "title" : "MetricDimension",
+  "title" : "ScalingPlanMetricDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-metricdimension.html",
   "type" : "object",
-  "javaType" : "aws.autoscalingplans.MetricDimension",
-  "javaInterfaces" : [ "aws.Property<MetricDimension>" ],
+  "javaType" : "aws.autoscalingplans.ScalingPlanMetricDimension",
+  "javaInterfaces" : [ "aws.Property<ScalingPlanMetricDimension>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-metricdimension.html#cfn-autoscalingplans-scalingplan-metricdimension-value",

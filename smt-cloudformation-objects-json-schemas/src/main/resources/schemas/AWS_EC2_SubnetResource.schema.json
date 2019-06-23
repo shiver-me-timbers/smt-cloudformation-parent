@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SubnetResource",
-  "javaInterfaces" : [ "aws.HasAttributes<SubnetAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<SubnetResource>", "aws.HasCondition<SubnetResource>", "aws.HasAttributes<SubnetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

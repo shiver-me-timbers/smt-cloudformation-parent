@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.NotificationFilter.schema.json",
-  "title" : "NotificationFilter",
+  "title" : "BucketNotificationFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html",
   "type" : "object",
-  "javaType" : "aws.s3.NotificationFilter",
-  "javaInterfaces" : [ "aws.Property<NotificationFilter>" ],
+  "javaType" : "aws.s3.BucketNotificationFilter",
+  "javaInterfaces" : [ "aws.Property<BucketNotificationFilter>" ],
   "properties" : {
     "S3Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html#cfn-s3-bucket-notificationconfiguraiton-config-filter-s3key",
       "$ref" : "AWS_S3_Bucket.S3KeyFilter.schema.json",
-      "javaType" : "aws.Property<aws.s3.S3KeyFilter>"
+      "javaType" : "aws.Property<aws.s3.BucketS3KeyFilter>"
     }
   }
 }

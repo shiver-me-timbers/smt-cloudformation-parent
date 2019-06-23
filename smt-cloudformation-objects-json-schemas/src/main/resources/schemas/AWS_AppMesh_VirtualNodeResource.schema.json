@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appmesh.VirtualNodeResource",
-  "javaInterfaces" : [ "aws.HasAttributes<VirtualNodeAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<VirtualNodeResource>", "aws.HasCondition<VirtualNodeResource>", "aws.HasAttributes<VirtualNodeAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

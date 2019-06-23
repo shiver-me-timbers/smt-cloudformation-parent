@@ -77,14 +77,14 @@ public class Method {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-httpmethod")
     private CharSequence httpMethod;
     /**
-     * Integration
+     * MethodIntegration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html
      * 
      */
     @JsonProperty("Integration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html")
-    private Property<Integration> integration;
+    private Property<MethodIntegration> integration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses
      * 
@@ -92,7 +92,7 @@ public class Method {
     @JsonProperty("MethodResponses")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-methodresponses")
-    private Set<Property<MethodResponse>> methodResponses = new LinkedHashSet<Property<MethodResponse>>();
+    private Set<Property<MethodMethodResponse>> methodResponses = new LinkedHashSet<Property<MethodMethodResponse>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-method.html#cfn-apigateway-method-operationname
      * 
@@ -252,28 +252,28 @@ public class Method {
     }
 
     /**
-     * Integration
+     * MethodIntegration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html
      * 
      */
     @JsonIgnore
-    public Property<Integration> getIntegration() {
+    public Property<MethodIntegration> getIntegration() {
         return integration;
     }
 
     /**
-     * Integration
+     * MethodIntegration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html
      * 
      */
     @JsonIgnore
-    public void setIntegration(Property<Integration> integration) {
+    public void setIntegration(Property<MethodIntegration> integration) {
         this.integration = integration;
     }
 
-    public Method withIntegration(Property<Integration> integration) {
+    public Method withIntegration(Property<MethodIntegration> integration) {
         this.integration = integration;
         return this;
     }
@@ -283,7 +283,7 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public Set<Property<MethodResponse>> getMethodResponses() {
+    public Set<Property<MethodMethodResponse>> getMethodResponses() {
         return methodResponses;
     }
 
@@ -292,11 +292,11 @@ public class Method {
      * 
      */
     @JsonIgnore
-    public void setMethodResponses(Set<Property<MethodResponse>> methodResponses) {
+    public void setMethodResponses(Set<Property<MethodMethodResponse>> methodResponses) {
         this.methodResponses = methodResponses;
     }
 
-    public Method withMethodResponses(Set<Property<MethodResponse>> methodResponses) {
+    public Method withMethodResponses(Set<Property<MethodMethodResponse>> methodResponses) {
         this.methodResponses = methodResponses;
         return this;
     }

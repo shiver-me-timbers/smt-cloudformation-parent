@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.UserResource",
-  "javaInterfaces" : [ "aws.HasAttributes<UserAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<UserResource>", "aws.HasCondition<UserResource>", "aws.HasAttributes<UserAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

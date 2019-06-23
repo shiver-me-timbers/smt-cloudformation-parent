@@ -49,7 +49,7 @@ public class Pipeline {
      */
     @JsonProperty("PipelineActivities")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelineactivities")
-    private List<Property<Activity>> pipelineActivities = new ArrayList<Property<Activity>>();
+    private List<Property<PipelineActivity>> pipelineActivities = new ArrayList<Property<PipelineActivity>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-pipeline.html#cfn-iotanalytics-pipeline-pipelinename
@@ -102,7 +102,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Property<Activity>> getPipelineActivities() {
+    public List<Property<PipelineActivity>> getPipelineActivities() {
         return pipelineActivities;
     }
 
@@ -111,11 +111,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setPipelineActivities(List<Property<Activity>> pipelineActivities) {
+    public void setPipelineActivities(List<Property<PipelineActivity>> pipelineActivities) {
         this.pipelineActivities = pipelineActivities;
     }
 
-    public Pipeline withPipelineActivities(List<Property<Activity>> pipelineActivities) {
+    public Pipeline withPipelineActivities(List<Property<PipelineActivity>> pipelineActivities) {
         this.pipelineActivities = pipelineActivities;
         return this;
     }

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.logs.LogGroupResource",
-  "javaInterfaces" : [ "aws.HasAttributes<LogGroupAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<LogGroupResource>", "aws.HasCondition<LogGroupResource>", "aws.HasAttributes<LogGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

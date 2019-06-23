@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ses.ReceiptRuleSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ReceiptRuleSetResource>", "aws.HasCondition<ReceiptRuleSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

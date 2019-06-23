@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DynamoDB_Table.SSESpecification.schema.json",
-  "title" : "SSESpecification",
+  "title" : "TableSSESpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.SSESpecification",
-  "javaInterfaces" : [ "aws.Property<SSESpecification>" ],
+  "javaType" : "aws.dynamodb.TableSSESpecification",
+  "javaInterfaces" : [ "aws.Property<TableSSESpecification>" ],
   "properties" : {
     "SSEEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-ssespecification.html#cfn-dynamodb-table-ssespecification-sseenabled",

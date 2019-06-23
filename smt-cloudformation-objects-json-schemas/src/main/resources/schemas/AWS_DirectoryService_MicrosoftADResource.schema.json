@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.directoryservice.MicrosoftADResource",
-  "javaInterfaces" : [ "aws.HasAttributes<MicrosoftADAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<MicrosoftADResource>", "aws.HasCondition<MicrosoftADResource>", "aws.HasAttributes<MicrosoftADAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

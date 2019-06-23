@@ -34,14 +34,14 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-description")
     private CharSequence description;
     /**
-     * PlacementTemplate
+     * ProjectPlacementTemplate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-placementtemplate.html
      * 
      */
     @JsonProperty("PlacementTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-placementtemplate.html")
-    private Property<PlacementTemplate> placementTemplate;
+    private Property<ProjectPlacementTemplate> placementTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot1click-project.html#cfn-iot1click-project-projectname
      * 
@@ -74,28 +74,28 @@ public class Project {
     }
 
     /**
-     * PlacementTemplate
+     * ProjectPlacementTemplate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-placementtemplate.html
      * 
      */
     @JsonIgnore
-    public Property<PlacementTemplate> getPlacementTemplate() {
+    public Property<ProjectPlacementTemplate> getPlacementTemplate() {
         return placementTemplate;
     }
 
     /**
-     * PlacementTemplate
+     * ProjectPlacementTemplate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot1click-project-placementtemplate.html
      * 
      */
     @JsonIgnore
-    public void setPlacementTemplate(Property<PlacementTemplate> placementTemplate) {
+    public void setPlacementTemplate(Property<ProjectPlacementTemplate> placementTemplate) {
         this.placementTemplate = placementTemplate;
     }
 
-    public Project withPlacementTemplate(Property<PlacementTemplate> placementTemplate) {
+    public Project withPlacementTemplate(Property<ProjectPlacementTemplate> placementTemplate) {
         this.placementTemplate = placementTemplate;
         return this;
     }

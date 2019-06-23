@@ -107,21 +107,21 @@ public class AutoScalingGroup {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-launchconfigurationname")
     private CharSequence launchConfigurationName;
     /**
-     * LaunchTemplateSpecification
+     * AutoScalingGroupLaunchTemplateSpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html
      * 
      */
     @JsonProperty("LaunchTemplate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html")
-    private Property<LaunchTemplateSpecification> launchTemplate;
+    private Property<AutoScalingGroupLaunchTemplateSpecification> launchTemplate;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist
      * 
      */
     @JsonProperty("LifecycleHookSpecificationList")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecificationlist")
-    private List<Property<LifecycleHookSpecification>> lifecycleHookSpecificationList = new ArrayList<Property<LifecycleHookSpecification>>();
+    private List<Property<AutoScalingGroupLifecycleHookSpecification>> lifecycleHookSpecificationList = new ArrayList<Property<AutoScalingGroupLifecycleHookSpecification>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-loadbalancernames
      * 
@@ -142,7 +142,7 @@ public class AutoScalingGroup {
      */
     @JsonProperty("MetricsCollection")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-metricscollection")
-    private List<Property<MetricsCollection>> metricsCollection = new ArrayList<Property<MetricsCollection>>();
+    private List<Property<AutoScalingGroupMetricsCollection>> metricsCollection = new ArrayList<Property<AutoScalingGroupMetricsCollection>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize
      * 
@@ -151,21 +151,21 @@ public class AutoScalingGroup {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-minsize")
     private CharSequence minSize;
     /**
-     * MixedInstancesPolicy
+     * AutoScalingGroupMixedInstancesPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
      * 
      */
     @JsonProperty("MixedInstancesPolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html")
-    private Property<MixedInstancesPolicy> mixedInstancesPolicy;
+    private Property<AutoScalingGroupMixedInstancesPolicy> mixedInstancesPolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations
      * 
      */
     @JsonProperty("NotificationConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-notificationconfigurations")
-    private List<Property<NotificationConfiguration>> notificationConfigurations = new ArrayList<Property<NotificationConfiguration>>();
+    private List<Property<AutoScalingGroupNotificationConfiguration>> notificationConfigurations = new ArrayList<Property<AutoScalingGroupNotificationConfiguration>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-placementgroup
      * 
@@ -186,7 +186,7 @@ public class AutoScalingGroup {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-tags")
-    private List<Property<TagProperty>> tags = new ArrayList<Property<TagProperty>>();
+    private List<Property<AutoScalingGroupTagProperty>> tags = new ArrayList<Property<AutoScalingGroupTagProperty>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html#cfn-as-group-targetgrouparns
      * 
@@ -396,28 +396,28 @@ public class AutoScalingGroup {
     }
 
     /**
-     * LaunchTemplateSpecification
+     * AutoScalingGroupLaunchTemplateSpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html
      * 
      */
     @JsonIgnore
-    public Property<LaunchTemplateSpecification> getLaunchTemplate() {
+    public Property<AutoScalingGroupLaunchTemplateSpecification> getLaunchTemplate() {
         return launchTemplate;
     }
 
     /**
-     * LaunchTemplateSpecification
+     * AutoScalingGroupLaunchTemplateSpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-launchtemplatespecification.html
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
+    public void setLaunchTemplate(Property<AutoScalingGroupLaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
     }
 
-    public AutoScalingGroup withLaunchTemplate(Property<LaunchTemplateSpecification> launchTemplate) {
+    public AutoScalingGroup withLaunchTemplate(Property<AutoScalingGroupLaunchTemplateSpecification> launchTemplate) {
         this.launchTemplate = launchTemplate;
         return this;
     }
@@ -427,7 +427,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<LifecycleHookSpecification>> getLifecycleHookSpecificationList() {
+    public List<Property<AutoScalingGroupLifecycleHookSpecification>> getLifecycleHookSpecificationList() {
         return lifecycleHookSpecificationList;
     }
 
@@ -436,11 +436,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public void setLifecycleHookSpecificationList(List<Property<LifecycleHookSpecification>> lifecycleHookSpecificationList) {
+    public void setLifecycleHookSpecificationList(List<Property<AutoScalingGroupLifecycleHookSpecification>> lifecycleHookSpecificationList) {
         this.lifecycleHookSpecificationList = lifecycleHookSpecificationList;
     }
 
-    public AutoScalingGroup withLifecycleHookSpecificationList(List<Property<LifecycleHookSpecification>> lifecycleHookSpecificationList) {
+    public AutoScalingGroup withLifecycleHookSpecificationList(List<Property<AutoScalingGroupLifecycleHookSpecification>> lifecycleHookSpecificationList) {
         this.lifecycleHookSpecificationList = lifecycleHookSpecificationList;
         return this;
     }
@@ -496,7 +496,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<MetricsCollection>> getMetricsCollection() {
+    public List<Property<AutoScalingGroupMetricsCollection>> getMetricsCollection() {
         return metricsCollection;
     }
 
@@ -505,11 +505,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public void setMetricsCollection(List<Property<MetricsCollection>> metricsCollection) {
+    public void setMetricsCollection(List<Property<AutoScalingGroupMetricsCollection>> metricsCollection) {
         this.metricsCollection = metricsCollection;
     }
 
-    public AutoScalingGroup withMetricsCollection(List<Property<MetricsCollection>> metricsCollection) {
+    public AutoScalingGroup withMetricsCollection(List<Property<AutoScalingGroupMetricsCollection>> metricsCollection) {
         this.metricsCollection = metricsCollection;
         return this;
     }
@@ -538,28 +538,28 @@ public class AutoScalingGroup {
     }
 
     /**
-     * MixedInstancesPolicy
+     * AutoScalingGroupMixedInstancesPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
      * 
      */
     @JsonIgnore
-    public Property<MixedInstancesPolicy> getMixedInstancesPolicy() {
+    public Property<AutoScalingGroupMixedInstancesPolicy> getMixedInstancesPolicy() {
         return mixedInstancesPolicy;
     }
 
     /**
-     * MixedInstancesPolicy
+     * AutoScalingGroupMixedInstancesPolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html
      * 
      */
     @JsonIgnore
-    public void setMixedInstancesPolicy(Property<MixedInstancesPolicy> mixedInstancesPolicy) {
+    public void setMixedInstancesPolicy(Property<AutoScalingGroupMixedInstancesPolicy> mixedInstancesPolicy) {
         this.mixedInstancesPolicy = mixedInstancesPolicy;
     }
 
-    public AutoScalingGroup withMixedInstancesPolicy(Property<MixedInstancesPolicy> mixedInstancesPolicy) {
+    public AutoScalingGroup withMixedInstancesPolicy(Property<AutoScalingGroupMixedInstancesPolicy> mixedInstancesPolicy) {
         this.mixedInstancesPolicy = mixedInstancesPolicy;
         return this;
     }
@@ -569,7 +569,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<NotificationConfiguration>> getNotificationConfigurations() {
+    public List<Property<AutoScalingGroupNotificationConfiguration>> getNotificationConfigurations() {
         return notificationConfigurations;
     }
 
@@ -578,11 +578,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public void setNotificationConfigurations(List<Property<NotificationConfiguration>> notificationConfigurations) {
+    public void setNotificationConfigurations(List<Property<AutoScalingGroupNotificationConfiguration>> notificationConfigurations) {
         this.notificationConfigurations = notificationConfigurations;
     }
 
-    public AutoScalingGroup withNotificationConfigurations(List<Property<NotificationConfiguration>> notificationConfigurations) {
+    public AutoScalingGroup withNotificationConfigurations(List<Property<AutoScalingGroupNotificationConfiguration>> notificationConfigurations) {
         this.notificationConfigurations = notificationConfigurations;
         return this;
     }
@@ -638,7 +638,7 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<TagProperty>> getTags() {
+    public List<Property<AutoScalingGroupTagProperty>> getTags() {
         return tags;
     }
 
@@ -647,11 +647,11 @@ public class AutoScalingGroup {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagProperty>> tags) {
+    public void setTags(List<Property<AutoScalingGroupTagProperty>> tags) {
         this.tags = tags;
     }
 
-    public AutoScalingGroup withTags(List<Property<TagProperty>> tags) {
+    public AutoScalingGroup withTags(List<Property<AutoScalingGroupTagProperty>> tags) {
         this.tags = tags;
         return this;
     }

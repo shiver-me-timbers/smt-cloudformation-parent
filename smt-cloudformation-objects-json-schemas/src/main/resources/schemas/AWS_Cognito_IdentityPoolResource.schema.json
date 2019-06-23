@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cognito.IdentityPoolResource",
-  "javaInterfaces" : [ "aws.HasAttributes<IdentityPoolAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<IdentityPoolResource>", "aws.HasCondition<IdentityPoolResource>", "aws.HasAttributes<IdentityPoolAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -31,7 +31,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ElasticBeanstalk_Environment.OptionSetting.schema.json",
-        "javaType" : "aws.Property<aws.elasticbeanstalk.OptionSetting>"
+        "javaType" : "aws.Property<aws.elasticbeanstalk.EnvironmentOptionSetting>"
       }
     },
     "PlatformArn" : {
@@ -60,7 +60,7 @@
     "Tier" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-tier",
       "$ref" : "AWS_ElasticBeanstalk_Environment.Tier.schema.json",
-      "javaType" : "aws.Property<aws.elasticbeanstalk.Tier>"
+      "javaType" : "aws.Property<aws.elasticbeanstalk.EnvironmentTier>"
     },
     "VersionLabel" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-versionlabel",

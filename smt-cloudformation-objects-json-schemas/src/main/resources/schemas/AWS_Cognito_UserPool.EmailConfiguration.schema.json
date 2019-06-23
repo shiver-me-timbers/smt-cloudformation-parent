@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_UserPool.EmailConfiguration.schema.json",
-  "title" : "EmailConfiguration",
+  "title" : "UserPoolEmailConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.cognito.EmailConfiguration",
-  "javaInterfaces" : [ "aws.Property<EmailConfiguration>" ],
+  "javaType" : "aws.cognito.UserPoolEmailConfiguration",
+  "javaInterfaces" : [ "aws.Property<UserPoolEmailConfiguration>" ],
   "properties" : {
     "ReplyToEmailAddress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-emailconfiguration.html#cfn-cognito-userpool-emailconfiguration-replytoemailaddress",

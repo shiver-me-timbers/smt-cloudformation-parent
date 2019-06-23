@@ -13,8 +13,8 @@
     },
     "RetentionPeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-retentionperiod",
-      "$ref" : "AWS_IoTAnalytics_Datastore.RetentionPeriod.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.RetentionPeriod>"
+      "$ref" : "AWS_IoTAnalytics_Channel.RetentionPeriod.schema.json",
+      "javaType" : "aws.Property<aws.iotanalytics.ChannelRetentionPeriod>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-tags",

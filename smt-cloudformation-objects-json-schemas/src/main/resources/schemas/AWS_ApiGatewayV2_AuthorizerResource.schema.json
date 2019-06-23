@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigatewayv2.AuthorizerResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AuthorizerResource>", "aws.HasCondition<AuthorizerResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

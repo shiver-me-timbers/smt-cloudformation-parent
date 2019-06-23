@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_InstanceGroupConfig.EbsConfiguration.schema.json",
-  "title" : "EbsConfiguration",
+  "title" : "InstanceGroupConfigEbsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.emr.EbsConfiguration",
-  "javaInterfaces" : [ "aws.Property<EbsConfiguration>" ],
+  "javaType" : "aws.emr.InstanceGroupConfigEbsConfiguration",
+  "javaInterfaces" : [ "aws.Property<InstanceGroupConfigEbsConfiguration>" ],
   "properties" : {
     "EbsBlockDeviceConfigs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfigs",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_InstanceGroupConfig.EbsBlockDeviceConfig.schema.json",
-        "javaType" : "aws.Property<aws.emr.EbsBlockDeviceConfig>"
+        "javaType" : "aws.Property<aws.emr.InstanceGroupConfigEbsBlockDeviceConfig>"
       }
     },
     "EbsOptimized" : {

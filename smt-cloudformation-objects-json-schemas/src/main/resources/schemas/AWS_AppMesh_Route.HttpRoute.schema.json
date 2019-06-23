@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_Route.HttpRoute.schema.json",
-  "title" : "HttpRoute",
+  "title" : "RouteHttpRoute",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.HttpRoute",
-  "javaInterfaces" : [ "aws.Property<HttpRoute>" ],
+  "javaType" : "aws.appmesh.RouteHttpRoute",
+  "javaInterfaces" : [ "aws.Property<RouteHttpRoute>" ],
   "properties" : {
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-action",
       "$ref" : "AWS_AppMesh_Route.HttpRouteAction.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.HttpRouteAction>"
+      "javaType" : "aws.Property<aws.appmesh.RouteHttpRouteAction>"
     },
     "Match" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-httproute.html#cfn-appmesh-route-httproute-match",
       "$ref" : "AWS_AppMesh_Route.HttpRouteMatch.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.HttpRouteMatch>"
+      "javaType" : "aws.Property<aws.appmesh.RouteHttpRouteMatch>"
     }
   }
 }

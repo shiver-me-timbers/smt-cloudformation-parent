@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.SecurityGroupIngressResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityGroupIngressResource>", "aws.HasCondition<SecurityGroupIngressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

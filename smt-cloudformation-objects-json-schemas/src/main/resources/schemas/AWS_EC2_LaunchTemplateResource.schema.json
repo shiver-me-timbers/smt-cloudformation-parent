@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.LaunchTemplateResource",
-  "javaInterfaces" : [ "aws.HasAttributes<LaunchTemplateAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<LaunchTemplateResource>", "aws.HasCondition<LaunchTemplateResource>", "aws.HasAttributes<LaunchTemplateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

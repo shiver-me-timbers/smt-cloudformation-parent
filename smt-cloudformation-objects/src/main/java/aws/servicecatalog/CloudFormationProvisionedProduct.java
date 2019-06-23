@@ -49,7 +49,7 @@ public class CloudFormationProvisionedProduct {
      */
     @JsonProperty("ProvisioningParameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-provisioningparameters")
-    private List<Property<ProvisioningParameter>> provisioningParameters = new ArrayList<Property<ProvisioningParameter>>();
+    private List<Property<CloudFormationProvisionedProductProvisioningParameter>> provisioningParameters = new ArrayList<Property<CloudFormationProvisionedProductProvisioningParameter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-cloudformationprovisionedproduct.html#cfn-servicecatalog-cloudformationprovisionedproduct-productname
      * 
@@ -135,7 +135,7 @@ public class CloudFormationProvisionedProduct {
      * 
      */
     @JsonIgnore
-    public List<Property<ProvisioningParameter>> getProvisioningParameters() {
+    public List<Property<CloudFormationProvisionedProductProvisioningParameter>> getProvisioningParameters() {
         return provisioningParameters;
     }
 
@@ -144,11 +144,11 @@ public class CloudFormationProvisionedProduct {
      * 
      */
     @JsonIgnore
-    public void setProvisioningParameters(List<Property<ProvisioningParameter>> provisioningParameters) {
+    public void setProvisioningParameters(List<Property<CloudFormationProvisionedProductProvisioningParameter>> provisioningParameters) {
         this.provisioningParameters = provisioningParameters;
     }
 
-    public CloudFormationProvisionedProduct withProvisioningParameters(List<Property<ProvisioningParameter>> provisioningParameters) {
+    public CloudFormationProvisionedProduct withProvisioningParameters(List<Property<CloudFormationProvisionedProductProvisioningParameter>> provisioningParameters) {
         this.provisioningParameters = provisioningParameters;
         return this;
     }

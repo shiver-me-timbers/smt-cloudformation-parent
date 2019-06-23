@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_KinesisAnalytics_Application.Input.schema.json",
-        "javaType" : "aws.Property<aws.kinesisanalytics.Input>"
+        "javaType" : "aws.Property<aws.kinesisanalytics.ApplicationInput>"
       }
     },
     "ApplicationDescription" : {

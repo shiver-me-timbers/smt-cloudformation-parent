@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticBeanstalk_Environment.OptionSetting.schema.json",
-  "title" : "OptionSetting",
+  "title" : "EnvironmentOptionSetting",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.OptionSetting",
-  "javaInterfaces" : [ "aws.Property<OptionSetting>" ],
+  "javaType" : "aws.elasticbeanstalk.EnvironmentOptionSetting",
+  "javaInterfaces" : [ "aws.Property<EnvironmentOptionSetting>" ],
   "properties" : {
     "Namespace" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html#cfn-beanstalk-optionsettings-namespace",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppSync_DataSource.AwsIamConfig.schema.json",
-  "title" : "AwsIamConfig",
+  "title" : "DataSourceAwsIamConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-awsiamconfig.html",
   "type" : "object",
-  "javaType" : "aws.appsync.AwsIamConfig",
-  "javaInterfaces" : [ "aws.Property<AwsIamConfig>" ],
+  "javaType" : "aws.appsync.DataSourceAwsIamConfig",
+  "javaInterfaces" : [ "aws.Property<DataSourceAwsIamConfig>" ],
   "properties" : {
     "SigningRegion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-awsiamconfig.html#cfn-appsync-datasource-awsiamconfig-signingregion",

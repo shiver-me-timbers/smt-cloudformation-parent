@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_IdentityPool.CognitoStreams.schema.json",
-  "title" : "CognitoStreams",
+  "title" : "IdentityPoolCognitoStreams",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html",
   "type" : "object",
-  "javaType" : "aws.cognito.CognitoStreams",
-  "javaInterfaces" : [ "aws.Property<CognitoStreams>" ],
+  "javaType" : "aws.cognito.IdentityPoolCognitoStreams",
+  "javaInterfaces" : [ "aws.Property<IdentityPoolCognitoStreams>" ],
   "properties" : {
     "StreamingStatus" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitostreams.html#cfn-cognito-identitypool-cognitostreams-streamingstatus",

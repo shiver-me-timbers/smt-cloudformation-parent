@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_EC2Fleet.FleetLaunchTemplateOverridesRequest.schema.json",
-  "title" : "FleetLaunchTemplateOverridesRequest",
+  "title" : "EC2FleetFleetLaunchTemplateOverridesRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html",
   "type" : "object",
-  "javaType" : "aws.ec2.FleetLaunchTemplateOverridesRequest",
-  "javaInterfaces" : [ "aws.Property<FleetLaunchTemplateOverridesRequest>" ],
+  "javaType" : "aws.ec2.EC2FleetFleetLaunchTemplateOverridesRequest",
+  "javaInterfaces" : [ "aws.Property<EC2FleetFleetLaunchTemplateOverridesRequest>" ],
   "properties" : {
     "WeightedCapacity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest.html#cfn-ec2-ec2fleet-fleetlaunchtemplateoverridesrequest-weightedcapacity",

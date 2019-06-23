@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.autoscaling.ScheduledActionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ScheduledActionResource>", "aws.HasCondition<ScheduledActionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

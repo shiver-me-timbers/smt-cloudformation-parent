@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SubnetRouteTableAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SubnetRouteTableAssociationResource>", "aws.HasCondition<SubnetRouteTableAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

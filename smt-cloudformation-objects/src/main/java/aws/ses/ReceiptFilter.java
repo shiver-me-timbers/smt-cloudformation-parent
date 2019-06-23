@@ -25,38 +25,38 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class ReceiptFilter {
 
     /**
-     * Filter
+     * ReceiptFilterFilter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html
      * 
      */
     @JsonProperty("Filter")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html")
-    private Property<Filter> filter;
+    private Property<ReceiptFilterFilter> filter;
 
     /**
-     * Filter
+     * ReceiptFilterFilter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html
      * 
      */
     @JsonIgnore
-    public Property<Filter> getFilter() {
+    public Property<ReceiptFilterFilter> getFilter() {
         return filter;
     }
 
     /**
-     * Filter
+     * ReceiptFilterFilter
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-filter.html
      * 
      */
     @JsonIgnore
-    public void setFilter(Property<Filter> filter) {
+    public void setFilter(Property<ReceiptFilterFilter> filter) {
         this.filter = filter;
     }
 
-    public ReceiptFilter withFilter(Property<Filter> filter) {
+    public ReceiptFilter withFilter(Property<ReceiptFilterFilter> filter) {
         this.filter = filter;
         return this;
     }

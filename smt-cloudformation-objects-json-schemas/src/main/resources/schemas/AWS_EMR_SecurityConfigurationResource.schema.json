@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.emr.SecurityConfigurationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityConfigurationResource>", "aws.HasCondition<SecurityConfigurationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

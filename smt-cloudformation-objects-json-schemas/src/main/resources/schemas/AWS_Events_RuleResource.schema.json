@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.events.RuleResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RuleAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RuleResource>", "aws.HasCondition<RuleResource>", "aws.HasAttributes<RuleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

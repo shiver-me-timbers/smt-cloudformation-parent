@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPCCidrBlockResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPCCidrBlockResource>", "aws.HasCondition<VPCCidrBlockResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

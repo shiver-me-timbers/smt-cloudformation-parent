@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class FunctionDefinition {
 
     /**
-     * FunctionDefinitionVersion
+     * FunctionDefinitionFunctionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html")
-    private Property<FunctionDefinitionVersion> initialVersion;
+    private Property<FunctionDefinitionFunctionDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-functiondefinition.html#cfn-greengrass-functiondefinition-name
      * 
@@ -43,28 +43,28 @@ public class FunctionDefinition {
     private CharSequence name;
 
     /**
-     * FunctionDefinitionVersion
+     * FunctionDefinitionFunctionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<FunctionDefinitionVersion> getInitialVersion() {
+    public Property<FunctionDefinitionFunctionDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * FunctionDefinitionVersion
+     * FunctionDefinitionFunctionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functiondefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<FunctionDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<FunctionDefinitionFunctionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public FunctionDefinition withInitialVersion(Property<FunctionDefinitionVersion> initialVersion) {
+    public FunctionDefinition withInitialVersion(Property<FunctionDefinitionFunctionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

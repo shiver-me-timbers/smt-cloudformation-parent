@@ -64,21 +64,21 @@ public class Association {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-name")
     private CharSequence name;
     /**
-     * InstanceAssociationOutputLocation
+     * AssociationInstanceAssociationOutputLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html
      * 
      */
     @JsonProperty("OutputLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html")
-    private Property<InstanceAssociationOutputLocation> outputLocation;
+    private Property<AssociationInstanceAssociationOutputLocation> outputLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters
      * 
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-parameters")
-    private Map<String, Property<ParameterValues>> parameters;
+    private Map<String, Property<AssociationParameterValues>> parameters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-scheduleexpression
      * 
@@ -93,7 +93,7 @@ public class Association {
     @JsonProperty("Targets")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-targets")
-    private Set<Property<Target>> targets = new LinkedHashSet<Property<Target>>();
+    private Set<Property<AssociationTarget>> targets = new LinkedHashSet<Property<AssociationTarget>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-association.html#cfn-ssm-association-associationname
@@ -188,28 +188,28 @@ public class Association {
     }
 
     /**
-     * InstanceAssociationOutputLocation
+     * AssociationInstanceAssociationOutputLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html
      * 
      */
     @JsonIgnore
-    public Property<InstanceAssociationOutputLocation> getOutputLocation() {
+    public Property<AssociationInstanceAssociationOutputLocation> getOutputLocation() {
         return outputLocation;
     }
 
     /**
-     * InstanceAssociationOutputLocation
+     * AssociationInstanceAssociationOutputLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-association-instanceassociationoutputlocation.html
      * 
      */
     @JsonIgnore
-    public void setOutputLocation(Property<InstanceAssociationOutputLocation> outputLocation) {
+    public void setOutputLocation(Property<AssociationInstanceAssociationOutputLocation> outputLocation) {
         this.outputLocation = outputLocation;
     }
 
-    public Association withOutputLocation(Property<InstanceAssociationOutputLocation> outputLocation) {
+    public Association withOutputLocation(Property<AssociationInstanceAssociationOutputLocation> outputLocation) {
         this.outputLocation = outputLocation;
         return this;
     }
@@ -219,7 +219,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public Map<String, Property<ParameterValues>> getParameters() {
+    public Map<String, Property<AssociationParameterValues>> getParameters() {
         return parameters;
     }
 
@@ -228,11 +228,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setParameters(Map<String, Property<ParameterValues>> parameters) {
+    public void setParameters(Map<String, Property<AssociationParameterValues>> parameters) {
         this.parameters = parameters;
     }
 
-    public Association withParameters(Map<String, Property<ParameterValues>> parameters) {
+    public Association withParameters(Map<String, Property<AssociationParameterValues>> parameters) {
         this.parameters = parameters;
         return this;
     }
@@ -265,7 +265,7 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public Set<Property<Target>> getTargets() {
+    public Set<Property<AssociationTarget>> getTargets() {
         return targets;
     }
 
@@ -274,11 +274,11 @@ public class Association {
      * 
      */
     @JsonIgnore
-    public void setTargets(Set<Property<Target>> targets) {
+    public void setTargets(Set<Property<AssociationTarget>> targets) {
         this.targets = targets;
     }
 
-    public Association withTargets(Set<Property<Target>> targets) {
+    public Association withTargets(Set<Property<AssociationTarget>> targets) {
         this.targets = targets;
         return this;
     }

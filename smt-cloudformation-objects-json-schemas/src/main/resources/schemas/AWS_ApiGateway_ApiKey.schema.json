@@ -35,7 +35,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_ApiKey.StageKey.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.StageKey>"
+        "javaType" : "aws.Property<aws.apigateway.ApiKeyStageKey>"
       }
     },
     "Value" : {

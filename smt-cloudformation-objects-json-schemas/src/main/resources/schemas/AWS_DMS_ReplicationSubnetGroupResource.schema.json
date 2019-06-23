@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dms.ReplicationSubnetGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationSubnetGroupResource>", "aws.HasCondition<ReplicationSubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

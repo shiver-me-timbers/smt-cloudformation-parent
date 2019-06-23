@@ -17,55 +17,85 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * ConnectorDefinitionVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Connectors"
+    "Connectors",
+    "ConnectorDefinitionId"
 })
-public class ConnectorDefinitionVersion implements Property<ConnectorDefinitionVersion>
-{
+public class ConnectorDefinitionVersion {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html#cfn-greengrass-connectordefinition-connectordefinitionversion-connectors
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectors
      * 
      */
     @JsonProperty("Connectors")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html#cfn-greengrass-connectordefinition-connectordefinitionversion-connectors")
-    private List<Property<Connector>> connectors = new ArrayList<Property<Connector>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectors")
+    private List<Property<ConnectorDefinitionVersionConnector>> connectors = new ArrayList<Property<ConnectorDefinitionVersionConnector>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectordefinitionid
+     * 
+     */
+    @JsonProperty("ConnectorDefinitionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectordefinitionid")
+    private CharSequence connectorDefinitionId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html#cfn-greengrass-connectordefinition-connectordefinitionversion-connectors
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectors
      * 
      */
     @JsonIgnore
-    public List<Property<Connector>> getConnectors() {
+    public List<Property<ConnectorDefinitionVersionConnector>> getConnectors() {
         return connectors;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html#cfn-greengrass-connectordefinition-connectordefinitionversion-connectors
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectors
      * 
      */
     @JsonIgnore
-    public void setConnectors(List<Property<Connector>> connectors) {
+    public void setConnectors(List<Property<ConnectorDefinitionVersionConnector>> connectors) {
         this.connectors = connectors;
     }
 
-    public ConnectorDefinitionVersion withConnectors(List<Property<Connector>> connectors) {
+    public ConnectorDefinitionVersion withConnectors(List<Property<ConnectorDefinitionVersionConnector>> connectors) {
         this.connectors = connectors;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectordefinitionid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getConnectorDefinitionId() {
+        return connectorDefinitionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinitionversion.html#cfn-greengrass-connectordefinitionversion-connectordefinitionid
+     * 
+     */
+    @JsonIgnore
+    public void setConnectorDefinitionId(CharSequence connectorDefinitionId) {
+        this.connectorDefinitionId = connectorDefinitionId;
+    }
+
+    public ConnectorDefinitionVersion withConnectorDefinitionId(CharSequence connectorDefinitionId) {
+        this.connectorDefinitionId = connectorDefinitionId;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("connectors", connectors).toString();
+        return new ToStringBuilder(this).append("connectors", connectors).append("connectorDefinitionId", connectorDefinitionId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(connectors).toHashCode();
+        return new HashCodeBuilder().append(connectors).append(connectorDefinitionId).toHashCode();
     }
 
     @Override
@@ -77,7 +107,7 @@ public class ConnectorDefinitionVersion implements Property<ConnectorDefinitionV
             return false;
         }
         ConnectorDefinitionVersion rhs = ((ConnectorDefinitionVersion) other);
-        return new EqualsBuilder().append(connectors, rhs.connectors).isEquals();
+        return new EqualsBuilder().append(connectors, rhs.connectors).append(connectorDefinitionId, rhs.connectorDefinitionId).isEquals();
     }
 
 }

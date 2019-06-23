@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScalingPlans_ScalingPlan.TagFilter.schema.json",
-  "title" : "TagFilter",
+  "title" : "ScalingPlanTagFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-tagfilter.html",
   "type" : "object",
-  "javaType" : "aws.autoscalingplans.TagFilter",
-  "javaInterfaces" : [ "aws.Property<TagFilter>" ],
+  "javaType" : "aws.autoscalingplans.ScalingPlanTagFilter",
+  "javaInterfaces" : [ "aws.Property<ScalingPlanTagFilter>" ],
   "properties" : {
     "Values" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-tagfilter.html#cfn-autoscalingplans-scalingplan-tagfilter-values",

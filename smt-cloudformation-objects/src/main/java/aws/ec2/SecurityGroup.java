@@ -52,14 +52,14 @@ public class SecurityGroup {
      */
     @JsonProperty("SecurityGroupEgress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupegress")
-    private List<Property<Egress>> securityGroupEgress = new ArrayList<Property<Egress>>();
+    private List<Property<SecurityGroupEgress>> securityGroupEgress = new ArrayList<Property<SecurityGroupEgress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress
      * 
      */
     @JsonProperty("SecurityGroupIngress")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-securitygroupingress")
-    private List<Property<Ingress>> securityGroupIngress = new ArrayList<Property<Ingress>>();
+    private List<Property<SecurityGroupIngress>> securityGroupIngress = new ArrayList<Property<SecurityGroupIngress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html#cfn-ec2-securitygroup-tags
      * 
@@ -126,7 +126,7 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<Egress>> getSecurityGroupEgress() {
+    public List<Property<SecurityGroupEgress>> getSecurityGroupEgress() {
         return securityGroupEgress;
     }
 
@@ -135,11 +135,11 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setSecurityGroupEgress(List<Property<Egress>> securityGroupEgress) {
+    public void setSecurityGroupEgress(List<Property<SecurityGroupEgress>> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
     }
 
-    public SecurityGroup withSecurityGroupEgress(List<Property<Egress>> securityGroupEgress) {
+    public SecurityGroup withSecurityGroupEgress(List<Property<SecurityGroupEgress>> securityGroupEgress) {
         this.securityGroupEgress = securityGroupEgress;
         return this;
     }
@@ -149,7 +149,7 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<Ingress>> getSecurityGroupIngress() {
+    public List<Property<SecurityGroupIngress>> getSecurityGroupIngress() {
         return securityGroupIngress;
     }
 
@@ -158,11 +158,11 @@ public class SecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setSecurityGroupIngress(List<Property<Ingress>> securityGroupIngress) {
+    public void setSecurityGroupIngress(List<Property<SecurityGroupIngress>> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
     }
 
-    public SecurityGroup withSecurityGroupIngress(List<Property<Ingress>> securityGroupIngress) {
+    public SecurityGroup withSecurityGroupIngress(List<Property<SecurityGroupIngress>> securityGroupIngress) {
         this.securityGroupIngress = securityGroupIngress;
         return this;
     }

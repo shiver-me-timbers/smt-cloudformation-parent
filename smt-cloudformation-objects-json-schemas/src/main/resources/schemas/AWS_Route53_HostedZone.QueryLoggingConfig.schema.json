@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_HostedZone.QueryLoggingConfig.schema.json",
-  "title" : "QueryLoggingConfig",
+  "title" : "HostedZoneQueryLoggingConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html",
   "type" : "object",
-  "javaType" : "aws.route53.QueryLoggingConfig",
-  "javaInterfaces" : [ "aws.Property<QueryLoggingConfig>" ],
+  "javaType" : "aws.route53.HostedZoneQueryLoggingConfig",
+  "javaInterfaces" : [ "aws.Property<HostedZoneQueryLoggingConfig>" ],
   "properties" : {
     "CloudWatchLogsLogGroupArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-queryloggingconfig.html#cfn-route53-hostedzone-queryloggingconfig-cloudwatchlogsloggrouparn",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.NetworkInterfaceAttachmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NetworkInterfaceAttachmentResource>", "aws.HasCondition<NetworkInterfaceAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

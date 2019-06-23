@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.config.DeliveryChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DeliveryChannelResource>", "aws.HasCondition<DeliveryChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

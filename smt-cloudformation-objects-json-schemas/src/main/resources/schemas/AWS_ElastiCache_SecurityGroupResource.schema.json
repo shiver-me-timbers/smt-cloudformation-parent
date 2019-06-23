@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.SecurityGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityGroupResource>", "aws.HasCondition<SecurityGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

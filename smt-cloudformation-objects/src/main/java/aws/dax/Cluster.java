@@ -39,14 +39,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Cluster {
 
     /**
-     * SSESpecification
+     * ClusterSSESpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html
      * 
      */
     @JsonProperty("SSESpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html")
-    private Property<SSESpecification> sSESpecification;
+    private Property<ClusterSSESpecification> sSESpecification;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dax-cluster.html#cfn-dax-cluster-description
      * 
@@ -133,28 +133,28 @@ public class Cluster {
     private Object tags;
 
     /**
-     * SSESpecification
+     * ClusterSSESpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html
      * 
      */
     @JsonIgnore
-    public Property<SSESpecification> getSSESpecification() {
+    public Property<ClusterSSESpecification> getSSESpecification() {
         return sSESpecification;
     }
 
     /**
-     * SSESpecification
+     * ClusterSSESpecification
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dax-cluster-ssespecification.html
      * 
      */
     @JsonIgnore
-    public void setSSESpecification(Property<SSESpecification> sSESpecification) {
+    public void setSSESpecification(Property<ClusterSSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
     }
 
-    public Cluster withSSESpecification(Property<SSESpecification> sSESpecification) {
+    public Cluster withSSESpecification(Property<ClusterSSESpecification> sSESpecification) {
         this.sSESpecification = sSESpecification;
         return this;
     }

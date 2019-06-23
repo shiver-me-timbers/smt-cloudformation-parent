@@ -33,14 +33,14 @@ public class TopicRule {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename")
     private CharSequence ruleName;
     /**
-     * TopicRulePayload
+     * TopicRuleTopicRulePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html
      * 
      */
     @JsonProperty("TopicRulePayload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html")
-    private Property<TopicRulePayload> topicRulePayload;
+    private Property<TopicRuleTopicRulePayload> topicRulePayload;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-topicrule.html#cfn-iot-topicrule-rulename
@@ -66,28 +66,28 @@ public class TopicRule {
     }
 
     /**
-     * TopicRulePayload
+     * TopicRuleTopicRulePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html
      * 
      */
     @JsonIgnore
-    public Property<TopicRulePayload> getTopicRulePayload() {
+    public Property<TopicRuleTopicRulePayload> getTopicRulePayload() {
         return topicRulePayload;
     }
 
     /**
-     * TopicRulePayload
+     * TopicRuleTopicRulePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-topicrulepayload.html
      * 
      */
     @JsonIgnore
-    public void setTopicRulePayload(Property<TopicRulePayload> topicRulePayload) {
+    public void setTopicRulePayload(Property<TopicRuleTopicRulePayload> topicRulePayload) {
         this.topicRulePayload = topicRulePayload;
     }
 
-    public TopicRule withTopicRulePayload(Property<TopicRulePayload> topicRulePayload) {
+    public TopicRule withTopicRulePayload(Property<TopicRuleTopicRulePayload> topicRulePayload) {
         this.topicRulePayload = topicRulePayload;
         return this;
     }

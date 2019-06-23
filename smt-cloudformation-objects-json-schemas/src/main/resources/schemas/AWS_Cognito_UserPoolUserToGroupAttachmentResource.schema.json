@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cognito.UserPoolUserToGroupAttachmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<UserPoolUserToGroupAttachmentResource>", "aws.HasCondition<UserPoolUserToGroupAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

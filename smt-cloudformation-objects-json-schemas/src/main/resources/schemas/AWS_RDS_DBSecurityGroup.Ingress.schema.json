@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_RDS_DBSecurityGroup.Ingress.schema.json",
-  "title" : "Ingress",
+  "title" : "DBSecurityGroupIngress",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group-rule.html",
   "type" : "object",
-  "javaType" : "aws.rds.Ingress",
-  "javaInterfaces" : [ "aws.Property<Ingress>" ],
+  "javaType" : "aws.rds.DBSecurityGroupIngress",
+  "javaInterfaces" : [ "aws.Property<DBSecurityGroupIngress>" ],
   "properties" : {
     "CIDRIP" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group-rule.html#cfn-rds-securitygroup-cidrip",

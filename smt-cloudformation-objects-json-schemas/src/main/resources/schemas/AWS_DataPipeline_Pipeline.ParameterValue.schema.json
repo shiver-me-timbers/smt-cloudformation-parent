@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DataPipeline_Pipeline.ParameterValue.schema.json",
-  "title" : "ParameterValue",
+  "title" : "PipelineParameterValue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.ParameterValue",
-  "javaInterfaces" : [ "aws.Property<ParameterValue>" ],
+  "javaType" : "aws.datapipeline.PipelineParameterValue",
+  "javaInterfaces" : [ "aws.Property<PipelineParameterValue>" ],
   "properties" : {
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html#cfn-datapipeline-pipeline-parametervalues-id",

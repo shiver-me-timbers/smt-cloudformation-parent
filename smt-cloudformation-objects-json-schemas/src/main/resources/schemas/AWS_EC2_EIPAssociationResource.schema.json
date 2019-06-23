@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.EIPAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<EIPAssociationResource>", "aws.HasCondition<EIPAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

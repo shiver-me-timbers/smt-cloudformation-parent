@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "alexa.ask.SkillResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SkillResource>", "aws.HasCondition<SkillResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

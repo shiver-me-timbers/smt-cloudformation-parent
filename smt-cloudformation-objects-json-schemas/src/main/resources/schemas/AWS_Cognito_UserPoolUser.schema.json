@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json",
-        "javaType" : "aws.Property<aws.cognito.AttributeType>"
+        "javaType" : "aws.Property<aws.cognito.UserPoolUserAttributeType>"
       }
     },
     "UserPoolId" : {
@@ -46,7 +46,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cognito_UserPoolUser.AttributeType.schema.json",
-        "javaType" : "aws.Property<aws.cognito.AttributeType>"
+        "javaType" : "aws.Property<aws.cognito.UserPoolUserAttributeType>"
       }
     }
   }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeBuild_Project.WebhookFilter.schema.json",
-  "title" : "WebhookFilter",
+  "title" : "ProjectWebhookFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.WebhookFilter",
-  "javaInterfaces" : [ "aws.Property<WebhookFilter>" ],
+  "javaType" : "aws.codebuild.ProjectWebhookFilter",
+  "javaInterfaces" : [ "aws.Property<ProjectWebhookFilter>" ],
   "properties" : {
     "Pattern" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-webhookfilter.html#cfn-codebuild-project-webhookfilter-pattern",

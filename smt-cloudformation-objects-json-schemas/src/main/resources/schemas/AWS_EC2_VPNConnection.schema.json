@@ -39,7 +39,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EC2_VPNConnection.VpnTunnelOptionsSpecification.schema.json",
-        "javaType" : "aws.Property<aws.ec2.VpnTunnelOptionsSpecification>"
+        "javaType" : "aws.Property<aws.ec2.VPNConnectionVpnTunnelOptionsSpecification>"
       }
     }
   }

@@ -58,7 +58,7 @@ public class LaunchConfiguration {
     @JsonProperty("BlockDeviceMappings")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-blockdevicemappings")
-    private Set<Property<BlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<BlockDeviceMapping>>();
+    private Set<Property<LaunchConfigurationBlockDeviceMapping>> blockDeviceMappings = new LinkedHashSet<Property<LaunchConfigurationBlockDeviceMapping>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig.html#cfn-as-launchconfig-classiclinkvpcid
      * 
@@ -202,7 +202,7 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public Set<Property<BlockDeviceMapping>> getBlockDeviceMappings() {
+    public Set<Property<LaunchConfigurationBlockDeviceMapping>> getBlockDeviceMappings() {
         return blockDeviceMappings;
     }
 
@@ -211,11 +211,11 @@ public class LaunchConfiguration {
      * 
      */
     @JsonIgnore
-    public void setBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
+    public void setBlockDeviceMappings(Set<Property<LaunchConfigurationBlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
     }
 
-    public LaunchConfiguration withBlockDeviceMappings(Set<Property<BlockDeviceMapping>> blockDeviceMappings) {
+    public LaunchConfiguration withBlockDeviceMappings(Set<Property<LaunchConfigurationBlockDeviceMapping>> blockDeviceMappings) {
         this.blockDeviceMappings = blockDeviceMappings;
         return this;
     }

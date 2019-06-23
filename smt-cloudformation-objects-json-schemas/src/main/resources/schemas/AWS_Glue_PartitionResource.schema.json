@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.PartitionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PartitionResource>", "aws.HasCondition<PartitionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

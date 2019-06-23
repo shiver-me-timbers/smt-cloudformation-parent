@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPCEndpointResource",
-  "javaInterfaces" : [ "aws.HasAttributes<VPCEndpointAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointResource>", "aws.HasCondition<VPCEndpointResource>", "aws.HasAttributes<VPCEndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

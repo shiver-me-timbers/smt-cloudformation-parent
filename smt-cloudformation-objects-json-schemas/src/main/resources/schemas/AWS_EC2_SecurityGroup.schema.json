@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_SecurityGroup.Egress.schema.json",
-        "javaType" : "aws.Property<aws.ec2.Egress>"
+        "javaType" : "aws.Property<aws.ec2.SecurityGroupEgress>"
       }
     },
     "SecurityGroupIngress" : {
@@ -29,7 +29,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_SecurityGroup.Ingress.schema.json",
-        "javaType" : "aws.Property<aws.ec2.Ingress>"
+        "javaType" : "aws.Property<aws.ec2.SecurityGroupIngress>"
       }
     },
     "Tags" : {

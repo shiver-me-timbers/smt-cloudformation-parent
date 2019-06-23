@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.NetworkInterfacePermissionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NetworkInterfacePermissionResource>", "aws.HasCondition<NetworkInterfacePermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_HealthCheck.AlarmIdentifier.schema.json",
-  "title" : "AlarmIdentifier",
+  "title" : "HealthCheckAlarmIdentifier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html",
   "type" : "object",
-  "javaType" : "aws.route53.AlarmIdentifier",
-  "javaInterfaces" : [ "aws.Property<AlarmIdentifier>" ],
+  "javaType" : "aws.route53.HealthCheckAlarmIdentifier",
+  "javaInterfaces" : [ "aws.Property<HealthCheckAlarmIdentifier>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-alarmidentifier.html#cfn-route53-healthcheck-alarmidentifier-name",

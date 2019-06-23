@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualNode.Backend.schema.json",
-  "title" : "Backend",
+  "title" : "VirtualNodeBackend",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backend.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.Backend",
-  "javaInterfaces" : [ "aws.Property<Backend>" ],
+  "javaType" : "aws.appmesh.VirtualNodeBackend",
+  "javaInterfaces" : [ "aws.Property<VirtualNodeBackend>" ],
   "properties" : {
     "VirtualService" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-backend.html#cfn-appmesh-virtualnode-backend-virtualservice",
       "$ref" : "AWS_AppMesh_VirtualNode.VirtualServiceBackend.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualServiceBackend>"
+      "javaType" : "aws.Property<aws.appmesh.VirtualNodeVirtualServiceBackend>"
     }
   }
 }

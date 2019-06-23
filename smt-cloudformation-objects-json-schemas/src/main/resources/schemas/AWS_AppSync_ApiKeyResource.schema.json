@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.ApiKeyResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ApiKeyAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ApiKeyResource>", "aws.HasCondition<ApiKeyResource>", "aws.HasAttributes<ApiKeyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

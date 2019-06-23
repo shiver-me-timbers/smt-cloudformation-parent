@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ses.TemplateResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TemplateResource>", "aws.HasCondition<TemplateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

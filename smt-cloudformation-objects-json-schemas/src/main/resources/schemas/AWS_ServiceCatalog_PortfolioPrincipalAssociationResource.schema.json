@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.PortfolioPrincipalAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PortfolioPrincipalAssociationResource>", "aws.HasCondition<PortfolioPrincipalAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

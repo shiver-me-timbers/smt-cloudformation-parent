@@ -38,10 +38,28 @@ public class JavaTypesTest {
     public void Can_extract_a_class_name_for_a_property() {
 
         // Given
-        final String className = someAlphaString(13);
+        final String classNamePrefix = someAlphaString(8);
+        final String classNameSuffix = someAlphaString(13);
 
         // When
-        final String actual = types.extractClassName(format("%s::%s.%s", packageName(), someAlphaString(8), className));
+        final String actual = types.extractClassName(
+            format("%s::%s.%s", packageName(), classNamePrefix, classNameSuffix)
+        );
+
+        // Then
+        assertThat(actual, equalTo(classNamePrefix + classNameSuffix));
+    }
+
+    @Test
+    public void Can_extract_a_class_name_for_a_only_the_resource() {
+
+        // Given
+        final String className = someAlphaString(8);
+
+        // When
+        final String actual = types.extractResourceClassName(
+            format("%s::%s.%s.%s", packageName(), className, someString(), someString())
+        );
 
         // Then
         assertThat(actual, equalTo(className));

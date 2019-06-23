@@ -1,7 +1,6 @@
 
 package aws.greengrass;
 
-import aws.Property;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -15,7 +14,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * GroupVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
@@ -26,63 +25,70 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "CoreDefinitionVersionArn",
     "ResourceDefinitionVersionArn",
     "ConnectorDefinitionVersionArn",
-    "SubscriptionDefinitionVersionArn"
+    "SubscriptionDefinitionVersionArn",
+    "GroupId"
 })
-public class GroupVersion implements Property<GroupVersion>
-{
+public class GroupVersion {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-loggerdefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-loggerdefinitionversionarn
      * 
      */
     @JsonProperty("LoggerDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-loggerdefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-loggerdefinitionversionarn")
     private CharSequence loggerDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-devicedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-devicedefinitionversionarn
      * 
      */
     @JsonProperty("DeviceDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-devicedefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-devicedefinitionversionarn")
     private CharSequence deviceDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-functiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-functiondefinitionversionarn
      * 
      */
     @JsonProperty("FunctionDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-functiondefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-functiondefinitionversionarn")
     private CharSequence functionDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-coredefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-coredefinitionversionarn
      * 
      */
     @JsonProperty("CoreDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-coredefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-coredefinitionversionarn")
     private CharSequence coreDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-resourcedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-resourcedefinitionversionarn
      * 
      */
     @JsonProperty("ResourceDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-resourcedefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-resourcedefinitionversionarn")
     private CharSequence resourceDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-connectordefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-connectordefinitionversionarn
      * 
      */
     @JsonProperty("ConnectorDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-connectordefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-connectordefinitionversionarn")
     private CharSequence connectorDefinitionVersionArn;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-subscriptiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-subscriptiondefinitionversionarn
      * 
      */
     @JsonProperty("SubscriptionDefinitionVersionArn")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-subscriptiondefinitionversionarn")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-subscriptiondefinitionversionarn")
     private CharSequence subscriptionDefinitionVersionArn;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-groupid
+     * 
+     */
+    @JsonProperty("GroupId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-groupid")
+    private CharSequence groupId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-loggerdefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-loggerdefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -91,7 +97,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-loggerdefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-loggerdefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -105,7 +111,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-devicedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-devicedefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -114,7 +120,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-devicedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-devicedefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -128,7 +134,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-functiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-functiondefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -137,7 +143,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-functiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-functiondefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -151,7 +157,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-coredefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-coredefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -160,7 +166,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-coredefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-coredefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -174,7 +180,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-resourcedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-resourcedefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -183,7 +189,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-resourcedefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-resourcedefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -197,7 +203,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-connectordefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-connectordefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -206,7 +212,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-connectordefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-connectordefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -220,7 +226,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-subscriptiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-subscriptiondefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -229,7 +235,7 @@ public class GroupVersion implements Property<GroupVersion>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html#cfn-greengrass-group-groupversion-subscriptiondefinitionversionarn
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-subscriptiondefinitionversionarn
      * 
      */
     @JsonIgnore
@@ -242,14 +248,37 @@ public class GroupVersion implements Property<GroupVersion>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-groupid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getGroupId() {
+        return groupId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-groupversion.html#cfn-greengrass-groupversion-groupid
+     * 
+     */
+    @JsonIgnore
+    public void setGroupId(CharSequence groupId) {
+        this.groupId = groupId;
+    }
+
+    public GroupVersion withGroupId(CharSequence groupId) {
+        this.groupId = groupId;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("loggerDefinitionVersionArn", loggerDefinitionVersionArn).append("deviceDefinitionVersionArn", deviceDefinitionVersionArn).append("functionDefinitionVersionArn", functionDefinitionVersionArn).append("coreDefinitionVersionArn", coreDefinitionVersionArn).append("resourceDefinitionVersionArn", resourceDefinitionVersionArn).append("connectorDefinitionVersionArn", connectorDefinitionVersionArn).append("subscriptionDefinitionVersionArn", subscriptionDefinitionVersionArn).toString();
+        return new ToStringBuilder(this).append("loggerDefinitionVersionArn", loggerDefinitionVersionArn).append("deviceDefinitionVersionArn", deviceDefinitionVersionArn).append("functionDefinitionVersionArn", functionDefinitionVersionArn).append("coreDefinitionVersionArn", coreDefinitionVersionArn).append("resourceDefinitionVersionArn", resourceDefinitionVersionArn).append("connectorDefinitionVersionArn", connectorDefinitionVersionArn).append("subscriptionDefinitionVersionArn", subscriptionDefinitionVersionArn).append("groupId", groupId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(subscriptionDefinitionVersionArn).append(coreDefinitionVersionArn).append(functionDefinitionVersionArn).append(resourceDefinitionVersionArn).append(deviceDefinitionVersionArn).append(loggerDefinitionVersionArn).append(connectorDefinitionVersionArn).toHashCode();
+        return new HashCodeBuilder().append(subscriptionDefinitionVersionArn).append(coreDefinitionVersionArn).append(functionDefinitionVersionArn).append(groupId).append(resourceDefinitionVersionArn).append(deviceDefinitionVersionArn).append(loggerDefinitionVersionArn).append(connectorDefinitionVersionArn).toHashCode();
     }
 
     @Override
@@ -261,7 +290,7 @@ public class GroupVersion implements Property<GroupVersion>
             return false;
         }
         GroupVersion rhs = ((GroupVersion) other);
-        return new EqualsBuilder().append(subscriptionDefinitionVersionArn, rhs.subscriptionDefinitionVersionArn).append(coreDefinitionVersionArn, rhs.coreDefinitionVersionArn).append(functionDefinitionVersionArn, rhs.functionDefinitionVersionArn).append(resourceDefinitionVersionArn, rhs.resourceDefinitionVersionArn).append(deviceDefinitionVersionArn, rhs.deviceDefinitionVersionArn).append(loggerDefinitionVersionArn, rhs.loggerDefinitionVersionArn).append(connectorDefinitionVersionArn, rhs.connectorDefinitionVersionArn).isEquals();
+        return new EqualsBuilder().append(subscriptionDefinitionVersionArn, rhs.subscriptionDefinitionVersionArn).append(coreDefinitionVersionArn, rhs.coreDefinitionVersionArn).append(functionDefinitionVersionArn, rhs.functionDefinitionVersionArn).append(groupId, rhs.groupId).append(resourceDefinitionVersionArn, rhs.resourceDefinitionVersionArn).append(deviceDefinitionVersionArn, rhs.deviceDefinitionVersionArn).append(loggerDefinitionVersionArn, rhs.loggerDefinitionVersionArn).append(connectorDefinitionVersionArn, rhs.connectorDefinitionVersionArn).isEquals();
     }
 
 }

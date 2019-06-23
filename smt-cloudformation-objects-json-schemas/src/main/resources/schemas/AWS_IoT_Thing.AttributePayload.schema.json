@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoT_Thing.AttributePayload.schema.json",
-  "title" : "AttributePayload",
+  "title" : "ThingAttributePayload",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html",
   "type" : "object",
-  "javaType" : "aws.iot.AttributePayload",
-  "javaInterfaces" : [ "aws.Property<AttributePayload>" ],
+  "javaType" : "aws.iot.ThingAttributePayload",
+  "javaInterfaces" : [ "aws.Property<ThingAttributePayload>" ],
   "properties" : {
     "Attributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html#cfn-iot-thing-attributepayload-attributes",

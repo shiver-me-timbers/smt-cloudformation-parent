@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_WAF_WebACL.ActivatedRule.schema.json",
-  "title" : "ActivatedRule",
+  "title" : "WebACLActivatedRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html",
   "type" : "object",
-  "javaType" : "aws.waf.ActivatedRule",
-  "javaInterfaces" : [ "aws.Property<ActivatedRule>" ],
+  "javaType" : "aws.waf.WebACLActivatedRule",
+  "javaInterfaces" : [ "aws.Property<WebACLActivatedRule>" ],
   "properties" : {
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-action",
       "$ref" : "AWS_WAF_WebACL.WafAction.schema.json",
-      "javaType" : "aws.Property<aws.waf.WafAction>"
+      "javaType" : "aws.Property<aws.waf.WebACLWafAction>"
     },
     "Priority" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority",

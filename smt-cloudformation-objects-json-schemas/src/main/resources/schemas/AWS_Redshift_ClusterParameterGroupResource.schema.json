@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.redshift.ClusterParameterGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ClusterParameterGroupResource>", "aws.HasCondition<ClusterParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

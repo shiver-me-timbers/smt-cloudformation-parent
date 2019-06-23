@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sagemaker.NotebookInstanceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<NotebookInstanceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<NotebookInstanceResource>", "aws.HasCondition<NotebookInstanceResource>", "aws.HasAttributes<NotebookInstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -9,7 +9,7 @@
     "AccessLoggingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-accessloggingpolicy",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AccessLoggingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.AccessLoggingPolicy>"
+      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerAccessLoggingPolicy>"
     },
     "AppCookieStickinessPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-appcookiestickinesspolicy",
@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.AppCookieStickinessPolicy.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.AppCookieStickinessPolicy>"
+        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerAppCookieStickinessPolicy>"
       }
     },
     "AvailabilityZones" : {
@@ -32,12 +32,12 @@
     "ConnectionDrainingPolicy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectiondrainingpolicy",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionDrainingPolicy.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.ConnectionDrainingPolicy>"
+      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerConnectionDrainingPolicy>"
     },
     "ConnectionSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-connectionsettings",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.ConnectionSettings.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.ConnectionSettings>"
+      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerConnectionSettings>"
     },
     "CrossZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-crosszone",
@@ -46,7 +46,7 @@
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-healthcheck",
       "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.HealthCheck.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancing.HealthCheck>"
+      "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerHealthCheck>"
     },
     "Instances" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb.html#cfn-ec2-elb-instances",
@@ -63,7 +63,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.LBCookieStickinessPolicy.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.LBCookieStickinessPolicy>"
+        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerLBCookieStickinessPolicy>"
       }
     },
     "Listeners" : {
@@ -72,7 +72,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Listeners.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.Listeners>"
+        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerListeners>"
       }
     },
     "LoadBalancerName" : {
@@ -86,7 +86,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancing_LoadBalancer.Policies.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancing.Policies>"
+        "javaType" : "aws.Property<aws.elasticloadbalancing.LoadBalancerPolicies>"
       }
     },
     "Scheme" : {

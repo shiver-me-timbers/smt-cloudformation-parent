@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.HostEntry.schema.json",
-  "title" : "HostEntry",
+  "title" : "TaskDefinitionHostEntry",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html",
   "type" : "object",
-  "javaType" : "aws.ecs.HostEntry",
-  "javaInterfaces" : [ "aws.Property<HostEntry>" ],
+  "javaType" : "aws.ecs.TaskDefinitionHostEntry",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionHostEntry>" ],
   "properties" : {
     "Hostname" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html#cfn-ecs-taskdefinition-containerdefinition-hostentry-hostname",

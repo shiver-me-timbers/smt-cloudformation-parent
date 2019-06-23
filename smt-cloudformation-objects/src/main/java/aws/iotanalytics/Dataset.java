@@ -37,7 +37,7 @@ public class Dataset {
      */
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-actions")
-    private List<Property<Action>> actions = new ArrayList<Property<Action>>();
+    private List<Property<DatasetAction>> actions = new ArrayList<Property<DatasetAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-datasetname
      * 
@@ -51,16 +51,16 @@ public class Dataset {
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-triggers")
-    private List<Property<Trigger>> triggers = new ArrayList<Property<Trigger>>();
+    private List<Property<DatasetTrigger>> triggers = new ArrayList<Property<DatasetTrigger>>();
     /**
-     * RetentionPeriod
+     * DatasetRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html
      * 
      */
     @JsonProperty("RetentionPeriod")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html")
-    private Property<RetentionPeriod> retentionPeriod;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html")
+    private Property<DatasetRetentionPeriod> retentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-dataset.html#cfn-iotanalytics-dataset-tags
      * 
@@ -74,7 +74,7 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public List<Property<Action>> getActions() {
+    public List<Property<DatasetAction>> getActions() {
         return actions;
     }
 
@@ -83,11 +83,11 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setActions(List<Property<Action>> actions) {
+    public void setActions(List<Property<DatasetAction>> actions) {
         this.actions = actions;
     }
 
-    public Dataset withActions(List<Property<Action>> actions) {
+    public Dataset withActions(List<Property<DatasetAction>> actions) {
         this.actions = actions;
         return this;
     }
@@ -120,7 +120,7 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public List<Property<Trigger>> getTriggers() {
+    public List<Property<DatasetTrigger>> getTriggers() {
         return triggers;
     }
 
@@ -129,38 +129,38 @@ public class Dataset {
      * 
      */
     @JsonIgnore
-    public void setTriggers(List<Property<Trigger>> triggers) {
+    public void setTriggers(List<Property<DatasetTrigger>> triggers) {
         this.triggers = triggers;
     }
 
-    public Dataset withTriggers(List<Property<Trigger>> triggers) {
+    public Dataset withTriggers(List<Property<DatasetTrigger>> triggers) {
         this.triggers = triggers;
         return this;
     }
 
     /**
-     * RetentionPeriod
+     * DatasetRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public Property<RetentionPeriod> getRetentionPeriod() {
+    public Property<DatasetRetentionPeriod> getRetentionPeriod() {
         return retentionPeriod;
     }
 
     /**
-     * RetentionPeriod
+     * DatasetRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public void setRetentionPeriod(Property<DatasetRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
     }
 
-    public Dataset withRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public Dataset withRetentionPeriod(Property<DatasetRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
         return this;
     }

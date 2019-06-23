@@ -33,7 +33,7 @@ public class XssMatchSet {
      */
     @JsonProperty("XssMatchTuples")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-xssmatchtuples")
-    private List<Property<XssMatchTuple>> xssMatchTuples = new ArrayList<Property<XssMatchTuple>>();
+    private List<Property<XssMatchSetXssMatchTuple>> xssMatchTuples = new ArrayList<Property<XssMatchSetXssMatchTuple>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-xssmatchset.html#cfn-wafregional-xssmatchset-name
      * 
@@ -47,7 +47,7 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public List<Property<XssMatchTuple>> getXssMatchTuples() {
+    public List<Property<XssMatchSetXssMatchTuple>> getXssMatchTuples() {
         return xssMatchTuples;
     }
 
@@ -56,11 +56,11 @@ public class XssMatchSet {
      * 
      */
     @JsonIgnore
-    public void setXssMatchTuples(List<Property<XssMatchTuple>> xssMatchTuples) {
+    public void setXssMatchTuples(List<Property<XssMatchSetXssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
     }
 
-    public XssMatchSet withXssMatchTuples(List<Property<XssMatchTuple>> xssMatchTuples) {
+    public XssMatchSet withXssMatchTuples(List<Property<XssMatchSetXssMatchTuple>> xssMatchTuples) {
         this.xssMatchTuples = xssMatchTuples;
         return this;
     }

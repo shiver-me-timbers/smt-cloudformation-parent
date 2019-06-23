@@ -38,21 +38,21 @@ public class RobotApplication {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-currentrevisionid")
     private CharSequence currentRevisionId;
     /**
-     * RobotSoftwareSuite
+     * RobotApplicationRobotSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
      * 
      */
     @JsonProperty("RobotSoftwareSuite")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html")
-    private Property<RobotSoftwareSuite> robotSoftwareSuite;
+    private Property<RobotApplicationRobotSoftwareSuite> robotSoftwareSuite;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-sources
      * 
      */
     @JsonProperty("Sources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-sources")
-    private List<Property<SourceConfig>> sources = new ArrayList<Property<SourceConfig>>();
+    private List<Property<RobotApplicationSourceConfig>> sources = new ArrayList<Property<RobotApplicationSourceConfig>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-robotapplication.html#cfn-robomaker-robotapplication-tags
      * 
@@ -92,28 +92,28 @@ public class RobotApplication {
     }
 
     /**
-     * RobotSoftwareSuite
+     * RobotApplicationRobotSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public Property<RobotSoftwareSuite> getRobotSoftwareSuite() {
+    public Property<RobotApplicationRobotSoftwareSuite> getRobotSoftwareSuite() {
         return robotSoftwareSuite;
     }
 
     /**
-     * RobotSoftwareSuite
+     * RobotApplicationRobotSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public void setRobotSoftwareSuite(Property<RobotSoftwareSuite> robotSoftwareSuite) {
+    public void setRobotSoftwareSuite(Property<RobotApplicationRobotSoftwareSuite> robotSoftwareSuite) {
         this.robotSoftwareSuite = robotSoftwareSuite;
     }
 
-    public RobotApplication withRobotSoftwareSuite(Property<RobotSoftwareSuite> robotSoftwareSuite) {
+    public RobotApplication withRobotSoftwareSuite(Property<RobotApplicationRobotSoftwareSuite> robotSoftwareSuite) {
         this.robotSoftwareSuite = robotSoftwareSuite;
         return this;
     }
@@ -123,7 +123,7 @@ public class RobotApplication {
      * 
      */
     @JsonIgnore
-    public List<Property<SourceConfig>> getSources() {
+    public List<Property<RobotApplicationSourceConfig>> getSources() {
         return sources;
     }
 
@@ -132,11 +132,11 @@ public class RobotApplication {
      * 
      */
     @JsonIgnore
-    public void setSources(List<Property<SourceConfig>> sources) {
+    public void setSources(List<Property<RobotApplicationSourceConfig>> sources) {
         this.sources = sources;
     }
 
-    public RobotApplication withSources(List<Property<SourceConfig>> sources) {
+    public RobotApplication withSources(List<Property<RobotApplicationSourceConfig>> sources) {
         this.sources = sources;
         return this;
     }

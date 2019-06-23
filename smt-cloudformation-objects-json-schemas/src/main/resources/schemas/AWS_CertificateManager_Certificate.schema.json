@@ -17,7 +17,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CertificateManager_Certificate.DomainValidationOption.schema.json",
-        "javaType" : "aws.Property<aws.certificatemanager.DomainValidationOption>"
+        "javaType" : "aws.Property<aws.certificatemanager.CertificateDomainValidationOption>"
       }
     },
     "SubjectAlternativeNames" : {

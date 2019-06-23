@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appmesh.MeshResource",
-  "javaInterfaces" : [ "aws.HasAttributes<MeshAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<MeshResource>", "aws.HasCondition<MeshResource>", "aws.HasAttributes<MeshAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

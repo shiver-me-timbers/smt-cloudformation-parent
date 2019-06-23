@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.config.ConfigRuleResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ConfigRuleAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigRuleResource>", "aws.HasCondition<ConfigRuleResource>", "aws.HasAttributes<ConfigRuleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

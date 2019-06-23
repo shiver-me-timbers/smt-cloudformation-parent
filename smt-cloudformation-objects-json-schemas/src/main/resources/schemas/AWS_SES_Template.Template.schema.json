@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SES_Template.Template.schema.json",
-  "title" : "Template",
+  "title" : "TemplateTemplate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html",
   "type" : "object",
-  "javaType" : "aws.ses.Template",
-  "javaInterfaces" : [ "aws.Property<Template>" ],
+  "javaType" : "aws.ses.TemplateTemplate",
+  "javaInterfaces" : [ "aws.Property<TemplateTemplate>" ],
   "properties" : {
     "HtmlPart" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart",

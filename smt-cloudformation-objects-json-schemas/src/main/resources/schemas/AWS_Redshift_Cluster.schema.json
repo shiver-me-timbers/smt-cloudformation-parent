@@ -93,7 +93,7 @@
     "LoggingProperties" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-loggingproperties",
       "$ref" : "AWS_Redshift_Cluster.LoggingProperties.schema.json",
-      "javaType" : "aws.Property<aws.redshift.LoggingProperties>"
+      "javaType" : "aws.Property<aws.redshift.ClusterLoggingProperties>"
     },
     "MasterUserPassword" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-cluster.html#cfn-redshift-cluster-masteruserpassword",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.LaunchTemplateConstraintResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LaunchTemplateConstraintResource>", "aws.HasCondition<LaunchTemplateConstraintResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

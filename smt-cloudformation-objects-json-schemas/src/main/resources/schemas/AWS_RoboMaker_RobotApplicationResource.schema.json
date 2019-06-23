@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.robomaker.RobotApplicationResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RobotApplicationAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RobotApplicationResource>", "aws.HasCondition<RobotApplicationResource>", "aws.HasAttributes<RobotApplicationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

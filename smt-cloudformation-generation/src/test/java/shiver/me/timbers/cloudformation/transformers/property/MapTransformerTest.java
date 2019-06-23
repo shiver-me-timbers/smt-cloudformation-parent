@@ -67,7 +67,7 @@ public class MapTransformerTest {
 
         // Given
         given(cloudformationProperty.getItemType()).willReturn(type);
-        given(classTypeConverter.toJavType(resourceName, type)).willReturn(javaType);
+        given(classTypeConverter.toJavaType(resourceName, type)).willReturn(javaType);
 
         // When
         transformer.transform(resourceName, mock(CloudformationType.class), someString(), cloudformationProperty, actual);

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_Application.ParallelismConfiguration.schema.json",
-  "title" : "ParallelismConfiguration",
+  "title" : "ApplicationParallelismConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.ParallelismConfiguration",
-  "javaInterfaces" : [ "aws.Property<ParallelismConfiguration>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationParallelismConfiguration",
+  "javaInterfaces" : [ "aws.Property<ApplicationParallelismConfiguration>" ],
   "properties" : {
     "ConfigurationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-parallelismconfiguration.html#cfn-kinesisanalyticsv2-application-parallelismconfiguration-configurationtype",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codedeploy.DeploymentGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DeploymentGroupResource>", "aws.HasCondition<DeploymentGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

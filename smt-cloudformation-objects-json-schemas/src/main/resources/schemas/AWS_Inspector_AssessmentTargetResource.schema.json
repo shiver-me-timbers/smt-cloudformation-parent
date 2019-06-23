@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.inspector.AssessmentTargetResource",
-  "javaInterfaces" : [ "aws.HasAttributes<AssessmentTargetAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<AssessmentTargetResource>", "aws.HasCondition<AssessmentTargetResource>", "aws.HasAttributes<AssessmentTargetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

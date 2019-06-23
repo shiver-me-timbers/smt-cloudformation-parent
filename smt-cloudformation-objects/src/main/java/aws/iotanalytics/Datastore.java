@@ -37,14 +37,14 @@ public class Datastore {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-datastorename")
     private CharSequence datastoreName;
     /**
-     * RetentionPeriod
+     * DatastoreRetentionPeriod
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
      * 
      */
     @JsonProperty("RetentionPeriod")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html")
-    private Property<RetentionPeriod> retentionPeriod;
+    private Property<DatastoreRetentionPeriod> retentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-tags
      * 
@@ -77,28 +77,28 @@ public class Datastore {
     }
 
     /**
-     * RetentionPeriod
+     * DatastoreRetentionPeriod
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public Property<RetentionPeriod> getRetentionPeriod() {
+    public Property<DatastoreRetentionPeriod> getRetentionPeriod() {
         return retentionPeriod;
     }
 
     /**
-     * RetentionPeriod
+     * DatastoreRetentionPeriod
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public void setRetentionPeriod(Property<DatastoreRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
     }
 
-    public Datastore withRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public Datastore withRetentionPeriod(Property<DatastoreRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
         return this;
     }

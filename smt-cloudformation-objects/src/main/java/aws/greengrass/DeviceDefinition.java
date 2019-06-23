@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class DeviceDefinition {
 
     /**
-     * DeviceDefinitionVersion
+     * DeviceDefinitionDeviceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html")
-    private Property<DeviceDefinitionVersion> initialVersion;
+    private Property<DeviceDefinitionDeviceDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-devicedefinition.html#cfn-greengrass-devicedefinition-name
      * 
@@ -43,28 +43,28 @@ public class DeviceDefinition {
     private CharSequence name;
 
     /**
-     * DeviceDefinitionVersion
+     * DeviceDefinitionDeviceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<DeviceDefinitionVersion> getInitialVersion() {
+    public Property<DeviceDefinitionDeviceDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * DeviceDefinitionVersion
+     * DeviceDefinitionDeviceDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-devicedefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<DeviceDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<DeviceDefinitionDeviceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public DeviceDefinition withInitialVersion(Property<DeviceDefinitionVersion> initialVersion) {
+    public DeviceDefinition withInitialVersion(Property<DeviceDefinitionDeviceDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

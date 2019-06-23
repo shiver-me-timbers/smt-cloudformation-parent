@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SES_ReceiptFilter.IpFilter.schema.json",
-  "title" : "IpFilter",
+  "title" : "ReceiptFilterIpFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html",
   "type" : "object",
-  "javaType" : "aws.ses.IpFilter",
-  "javaInterfaces" : [ "aws.Property<IpFilter>" ],
+  "javaType" : "aws.ses.ReceiptFilterIpFilter",
+  "javaInterfaces" : [ "aws.Property<ReceiptFilterIpFilter>" ],
   "properties" : {
     "Policy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptfilter-ipfilter.html#cfn-ses-receiptfilter-ipfilter-policy",

@@ -82,14 +82,14 @@ public class Layer {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson")
     private Object customJson;
     /**
-     * Recipes
+     * LayerRecipes
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
     @JsonProperty("CustomRecipes")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html")
-    private Property<Recipes> customRecipes;
+    private Property<LayerRecipes> customRecipes;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids
      * 
@@ -112,23 +112,23 @@ public class Layer {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-installupdatesonboot")
     private Boolean installUpdatesOnBoot;
     /**
-     * LifecycleEventConfiguration
+     * LayerLifecycleEventConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
     @JsonProperty("LifecycleEventConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html")
-    private Property<LifecycleEventConfiguration> lifecycleEventConfiguration;
+    private Property<LayerLifecycleEventConfiguration> lifecycleEventConfiguration;
     /**
-     * LoadBasedAutoScaling
+     * LayerLoadBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
     @JsonProperty("LoadBasedAutoScaling")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html")
-    private Property<LoadBasedAutoScaling> loadBasedAutoScaling;
+    private Property<LayerLoadBasedAutoScaling> loadBasedAutoScaling;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name
      * 
@@ -184,7 +184,7 @@ public class Layer {
      */
     @JsonProperty("VolumeConfigurations")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-volumeconfigurations")
-    private List<Property<VolumeConfiguration>> volumeConfigurations = new ArrayList<Property<VolumeConfiguration>>();
+    private List<Property<LayerVolumeConfiguration>> volumeConfigurations = new ArrayList<Property<LayerVolumeConfiguration>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-attributes
@@ -302,28 +302,28 @@ public class Layer {
     }
 
     /**
-     * Recipes
+     * LayerRecipes
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
     @JsonIgnore
-    public Property<Recipes> getCustomRecipes() {
+    public Property<LayerRecipes> getCustomRecipes() {
         return customRecipes;
     }
 
     /**
-     * Recipes
+     * LayerRecipes
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html
      * 
      */
     @JsonIgnore
-    public void setCustomRecipes(Property<Recipes> customRecipes) {
+    public void setCustomRecipes(Property<LayerRecipes> customRecipes) {
         this.customRecipes = customRecipes;
     }
 
-    public Layer withCustomRecipes(Property<Recipes> customRecipes) {
+    public Layer withCustomRecipes(Property<LayerRecipes> customRecipes) {
         this.customRecipes = customRecipes;
         return this;
     }
@@ -398,55 +398,55 @@ public class Layer {
     }
 
     /**
-     * LifecycleEventConfiguration
+     * LayerLifecycleEventConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<LifecycleEventConfiguration> getLifecycleEventConfiguration() {
+    public Property<LayerLifecycleEventConfiguration> getLifecycleEventConfiguration() {
         return lifecycleEventConfiguration;
     }
 
     /**
-     * LifecycleEventConfiguration
+     * LayerLifecycleEventConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setLifecycleEventConfiguration(Property<LifecycleEventConfiguration> lifecycleEventConfiguration) {
+    public void setLifecycleEventConfiguration(Property<LayerLifecycleEventConfiguration> lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
     }
 
-    public Layer withLifecycleEventConfiguration(Property<LifecycleEventConfiguration> lifecycleEventConfiguration) {
+    public Layer withLifecycleEventConfiguration(Property<LayerLifecycleEventConfiguration> lifecycleEventConfiguration) {
         this.lifecycleEventConfiguration = lifecycleEventConfiguration;
         return this;
     }
 
     /**
-     * LoadBasedAutoScaling
+     * LayerLoadBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
     @JsonIgnore
-    public Property<LoadBasedAutoScaling> getLoadBasedAutoScaling() {
+    public Property<LayerLoadBasedAutoScaling> getLoadBasedAutoScaling() {
         return loadBasedAutoScaling;
     }
 
     /**
-     * LoadBasedAutoScaling
+     * LayerLoadBasedAutoScaling
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html
      * 
      */
     @JsonIgnore
-    public void setLoadBasedAutoScaling(Property<LoadBasedAutoScaling> loadBasedAutoScaling) {
+    public void setLoadBasedAutoScaling(Property<LayerLoadBasedAutoScaling> loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
     }
 
-    public Layer withLoadBasedAutoScaling(Property<LoadBasedAutoScaling> loadBasedAutoScaling) {
+    public Layer withLoadBasedAutoScaling(Property<LayerLoadBasedAutoScaling> loadBasedAutoScaling) {
         this.loadBasedAutoScaling = loadBasedAutoScaling;
         return this;
     }
@@ -617,7 +617,7 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public List<Property<VolumeConfiguration>> getVolumeConfigurations() {
+    public List<Property<LayerVolumeConfiguration>> getVolumeConfigurations() {
         return volumeConfigurations;
     }
 
@@ -626,11 +626,11 @@ public class Layer {
      * 
      */
     @JsonIgnore
-    public void setVolumeConfigurations(List<Property<VolumeConfiguration>> volumeConfigurations) {
+    public void setVolumeConfigurations(List<Property<LayerVolumeConfiguration>> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
     }
 
-    public Layer withVolumeConfigurations(List<Property<VolumeConfiguration>> volumeConfigurations) {
+    public Layer withVolumeConfigurations(List<Property<LayerVolumeConfiguration>> volumeConfigurations) {
         this.volumeConfigurations = volumeConfigurations;
         return this;
     }

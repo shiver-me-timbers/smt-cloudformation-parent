@@ -40,7 +40,7 @@ public class DBSecurityGroup {
     @JsonProperty("DBSecurityGroupIngress")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-dbsecuritygroupingress")
-    private Set<Property<Ingress>> dBSecurityGroupIngress = new LinkedHashSet<Property<Ingress>>();
+    private Set<Property<DBSecurityGroupIngress>> dBSecurityGroupIngress = new LinkedHashSet<Property<DBSecurityGroupIngress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group.html#cfn-rds-dbsecuritygroup-ec2vpcid
      * 
@@ -68,7 +68,7 @@ public class DBSecurityGroup {
      * 
      */
     @JsonIgnore
-    public Set<Property<Ingress>> getDBSecurityGroupIngress() {
+    public Set<Property<DBSecurityGroupIngress>> getDBSecurityGroupIngress() {
         return dBSecurityGroupIngress;
     }
 
@@ -77,11 +77,11 @@ public class DBSecurityGroup {
      * 
      */
     @JsonIgnore
-    public void setDBSecurityGroupIngress(Set<Property<Ingress>> dBSecurityGroupIngress) {
+    public void setDBSecurityGroupIngress(Set<Property<DBSecurityGroupIngress>> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
     }
 
-    public DBSecurityGroup withDBSecurityGroupIngress(Set<Property<Ingress>> dBSecurityGroupIngress) {
+    public DBSecurityGroup withDBSecurityGroupIngress(Set<Property<DBSecurityGroupIngress>> dBSecurityGroupIngress) {
         this.dBSecurityGroupIngress = dBSecurityGroupIngress;
         return this;
     }

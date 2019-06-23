@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.autoscaling.LaunchConfigurationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LaunchConfigurationResource>", "aws.HasCondition<LaunchConfigurationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

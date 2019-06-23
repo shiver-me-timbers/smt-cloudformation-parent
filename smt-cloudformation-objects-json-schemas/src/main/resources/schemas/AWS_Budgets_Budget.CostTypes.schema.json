@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Budgets_Budget.CostTypes.schema.json",
-  "title" : "CostTypes",
+  "title" : "BudgetCostTypes",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html",
   "type" : "object",
-  "javaType" : "aws.budgets.CostTypes",
-  "javaInterfaces" : [ "aws.Property<CostTypes>" ],
+  "javaType" : "aws.budgets.BudgetCostTypes",
+  "javaInterfaces" : [ "aws.Property<BudgetCostTypes>" ],
   "properties" : {
     "IncludeSupport" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-costtypes.html#cfn-budgets-budget-costtypes-includesupport",

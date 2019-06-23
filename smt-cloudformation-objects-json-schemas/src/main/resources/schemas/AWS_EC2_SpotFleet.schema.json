@@ -9,7 +9,7 @@
     "SpotFleetRequestConfigData" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-spotfleet.html#cfn-ec2-spotfleet-spotfleetrequestconfigdata",
       "$ref" : "AWS_EC2_SpotFleet.SpotFleetRequestConfigData.schema.json",
-      "javaType" : "aws.Property<aws.ec2.SpotFleetRequestConfigData>"
+      "javaType" : "aws.Property<aws.ec2.SpotFleetSpotFleetRequestConfigData>"
     }
   }
 }

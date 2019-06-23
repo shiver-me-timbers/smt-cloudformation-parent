@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.certificatemanager.CertificateResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CertificateResource>", "aws.HasCondition<CertificateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.LogConfiguration.schema.json",
-  "title" : "LogConfiguration",
+  "title" : "TaskDefinitionLogConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.LogConfiguration",
-  "javaInterfaces" : [ "aws.Property<LogConfiguration>" ],
+  "javaType" : "aws.ecs.TaskDefinitionLogConfiguration",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionLogConfiguration>" ],
   "properties" : {
     "LogDriver" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration-logdriver",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.NatGatewayResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<NatGatewayResource>", "aws.HasCondition<NatGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

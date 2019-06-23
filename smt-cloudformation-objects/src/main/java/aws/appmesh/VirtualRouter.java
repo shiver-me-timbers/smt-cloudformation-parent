@@ -44,21 +44,21 @@ public class VirtualRouter {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-virtualroutername")
     private CharSequence virtualRouterName;
     /**
-     * VirtualRouterSpec
+     * VirtualRouterVirtualRouterSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html
      * 
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html")
-    private Property<VirtualRouterSpec> spec;
+    private Property<VirtualRouterVirtualRouterSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-tags")
-    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
+    private List<Property<VirtualRouterTagRef>> tags = new ArrayList<Property<VirtualRouterTagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualrouter.html#cfn-appmesh-virtualrouter-meshname
@@ -107,28 +107,28 @@ public class VirtualRouter {
     }
 
     /**
-     * VirtualRouterSpec
+     * VirtualRouterVirtualRouterSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html
      * 
      */
     @JsonIgnore
-    public Property<VirtualRouterSpec> getSpec() {
+    public Property<VirtualRouterVirtualRouterSpec> getSpec() {
         return spec;
     }
 
     /**
-     * VirtualRouterSpec
+     * VirtualRouterVirtualRouterSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterspec.html
      * 
      */
     @JsonIgnore
-    public void setSpec(Property<VirtualRouterSpec> spec) {
+    public void setSpec(Property<VirtualRouterVirtualRouterSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualRouter withSpec(Property<VirtualRouterSpec> spec) {
+    public VirtualRouter withSpec(Property<VirtualRouterVirtualRouterSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -138,7 +138,7 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public List<Property<TagRef>> getTags() {
+    public List<Property<VirtualRouterTagRef>> getTags() {
         return tags;
     }
 
@@ -147,11 +147,11 @@ public class VirtualRouter {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagRef>> tags) {
+    public void setTags(List<Property<VirtualRouterTagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualRouter withTags(List<Property<TagRef>> tags) {
+    public VirtualRouter withTags(List<Property<VirtualRouterTagRef>> tags) {
         this.tags = tags;
         return this;
     }

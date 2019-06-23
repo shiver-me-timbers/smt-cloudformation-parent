@@ -16,7 +16,8 @@
     "javaType": "java.lang.CharSequence"
   },
   "Json": {
-    "type": "any"
+    "type": "object",
+    "javaType": "java.lang.Object"
   },
   "Timestamp": {
     "type": "string"

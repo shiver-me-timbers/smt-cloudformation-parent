@@ -52,21 +52,21 @@ public class Route {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-routename")
     private CharSequence routeName;
     /**
-     * RouteSpec
+     * RouteRouteSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html
      * 
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html")
-    private Property<RouteSpec> spec;
+    private Property<RouteRouteSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-tags")
-    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
+    private List<Property<RouteTagRef>> tags = new ArrayList<Property<RouteTagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-route.html#cfn-appmesh-route-meshname
@@ -138,28 +138,28 @@ public class Route {
     }
 
     /**
-     * RouteSpec
+     * RouteRouteSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html
      * 
      */
     @JsonIgnore
-    public Property<RouteSpec> getSpec() {
+    public Property<RouteRouteSpec> getSpec() {
         return spec;
     }
 
     /**
-     * RouteSpec
+     * RouteRouteSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-routespec.html
      * 
      */
     @JsonIgnore
-    public void setSpec(Property<RouteSpec> spec) {
+    public void setSpec(Property<RouteRouteSpec> spec) {
         this.spec = spec;
     }
 
-    public Route withSpec(Property<RouteSpec> spec) {
+    public Route withSpec(Property<RouteRouteSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -169,7 +169,7 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public List<Property<TagRef>> getTags() {
+    public List<Property<RouteTagRef>> getTags() {
         return tags;
     }
 
@@ -178,11 +178,11 @@ public class Route {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagRef>> tags) {
+    public void setTags(List<Property<RouteTagRef>> tags) {
         this.tags = tags;
     }
 
-    public Route withTags(List<Property<TagRef>> tags) {
+    public Route withTags(List<Property<RouteTagRef>> tags) {
         this.tags = tags;
         return this;
     }

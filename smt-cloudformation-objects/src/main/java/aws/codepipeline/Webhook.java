@@ -34,21 +34,21 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Webhook {
 
     /**
-     * WebhookAuthConfiguration
+     * WebhookWebhookAuthConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html
      * 
      */
     @JsonProperty("AuthenticationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html")
-    private Property<WebhookAuthConfiguration> authenticationConfiguration;
+    private Property<WebhookWebhookAuthConfiguration> authenticationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters
      * 
      */
     @JsonProperty("Filters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-filters")
-    private List<Property<WebhookFilterRule>> filters = new ArrayList<Property<WebhookFilterRule>>();
+    private List<Property<WebhookWebhookFilterRule>> filters = new ArrayList<Property<WebhookWebhookFilterRule>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html#cfn-codepipeline-webhook-authentication
      * 
@@ -93,28 +93,28 @@ public class Webhook {
     private Boolean registerWithThirdParty;
 
     /**
-     * WebhookAuthConfiguration
+     * WebhookWebhookAuthConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<WebhookAuthConfiguration> getAuthenticationConfiguration() {
+    public Property<WebhookWebhookAuthConfiguration> getAuthenticationConfiguration() {
         return authenticationConfiguration;
     }
 
     /**
-     * WebhookAuthConfiguration
+     * WebhookWebhookAuthConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-webhook-webhookauthconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setAuthenticationConfiguration(Property<WebhookAuthConfiguration> authenticationConfiguration) {
+    public void setAuthenticationConfiguration(Property<WebhookWebhookAuthConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
     }
 
-    public Webhook withAuthenticationConfiguration(Property<WebhookAuthConfiguration> authenticationConfiguration) {
+    public Webhook withAuthenticationConfiguration(Property<WebhookWebhookAuthConfiguration> authenticationConfiguration) {
         this.authenticationConfiguration = authenticationConfiguration;
         return this;
     }
@@ -124,7 +124,7 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public List<Property<WebhookFilterRule>> getFilters() {
+    public List<Property<WebhookWebhookFilterRule>> getFilters() {
         return filters;
     }
 
@@ -133,11 +133,11 @@ public class Webhook {
      * 
      */
     @JsonIgnore
-    public void setFilters(List<Property<WebhookFilterRule>> filters) {
+    public void setFilters(List<Property<WebhookWebhookFilterRule>> filters) {
         this.filters = filters;
     }
 
-    public Webhook withFilters(List<Property<WebhookFilterRule>> filters) {
+    public Webhook withFilters(List<Property<WebhookWebhookFilterRule>> filters) {
         this.filters = filters;
         return this;
     }

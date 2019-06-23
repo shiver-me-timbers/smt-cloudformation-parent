@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class ConnectorDefinition {
 
     /**
-     * ConnectorDefinitionVersion
+     * ConnectorDefinitionConnectorDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html")
-    private Property<ConnectorDefinitionVersion> initialVersion;
+    private Property<ConnectorDefinitionConnectorDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-connectordefinition.html#cfn-greengrass-connectordefinition-name
      * 
@@ -43,28 +43,28 @@ public class ConnectorDefinition {
     private CharSequence name;
 
     /**
-     * ConnectorDefinitionVersion
+     * ConnectorDefinitionConnectorDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<ConnectorDefinitionVersion> getInitialVersion() {
+    public Property<ConnectorDefinitionConnectorDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * ConnectorDefinitionVersion
+     * ConnectorDefinitionConnectorDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-connectordefinition-connectordefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<ConnectorDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<ConnectorDefinitionConnectorDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public ConnectorDefinition withInitialVersion(Property<ConnectorDefinitionVersion> initialVersion) {
+    public ConnectorDefinition withInitialVersion(Property<ConnectorDefinitionConnectorDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

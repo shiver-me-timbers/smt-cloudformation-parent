@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalytics_Application.RecordColumn.schema.json",
-  "title" : "RecordColumn",
+  "title" : "ApplicationRecordColumn",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.RecordColumn",
-  "javaInterfaces" : [ "aws.Property<RecordColumn>" ],
+  "javaType" : "aws.kinesisanalytics.ApplicationRecordColumn",
+  "javaInterfaces" : [ "aws.Property<ApplicationRecordColumn>" ],
   "properties" : {
     "Mapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-application-recordcolumn.html#cfn-kinesisanalytics-application-recordcolumn-mapping",

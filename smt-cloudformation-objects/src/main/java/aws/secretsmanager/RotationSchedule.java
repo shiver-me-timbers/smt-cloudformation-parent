@@ -41,14 +41,14 @@ public class RotationSchedule {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html#cfn-secretsmanager-rotationschedule-rotationlambdaarn")
     private CharSequence rotationLambdaARN;
     /**
-     * RotationRules
+     * RotationScheduleRotationRules
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html
      * 
      */
     @JsonProperty("RotationRules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html")
-    private Property<RotationRules> rotationRules;
+    private Property<RotationScheduleRotationRules> rotationRules;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-rotationschedule.html#cfn-secretsmanager-rotationschedule-secretid
@@ -97,28 +97,28 @@ public class RotationSchedule {
     }
 
     /**
-     * RotationRules
+     * RotationScheduleRotationRules
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html
      * 
      */
     @JsonIgnore
-    public Property<RotationRules> getRotationRules() {
+    public Property<RotationScheduleRotationRules> getRotationRules() {
         return rotationRules;
     }
 
     /**
-     * RotationRules
+     * RotationScheduleRotationRules
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-rotationschedule-rotationrules.html
      * 
      */
     @JsonIgnore
-    public void setRotationRules(Property<RotationRules> rotationRules) {
+    public void setRotationRules(Property<RotationScheduleRotationRules> rotationRules) {
         this.rotationRules = rotationRules;
     }
 
-    public RotationSchedule withRotationRules(Property<RotationRules> rotationRules) {
+    public RotationSchedule withRotationRules(Property<RotationScheduleRotationRules> rotationRules) {
         this.rotationRules = rotationRules;
         return this;
     }

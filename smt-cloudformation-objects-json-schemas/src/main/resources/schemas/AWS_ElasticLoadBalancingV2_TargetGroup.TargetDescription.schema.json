@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticLoadBalancingV2_TargetGroup.TargetDescription.schema.json",
-  "title" : "TargetDescription",
+  "title" : "TargetGroupTargetDescription",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.TargetDescription",
-  "javaInterfaces" : [ "aws.Property<TargetDescription>" ],
+  "javaType" : "aws.elasticloadbalancingv2.TargetGroupTargetDescription",
+  "javaInterfaces" : [ "aws.Property<TargetGroupTargetDescription>" ],
   "properties" : {
     "AvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-targetgroup-targetdescription.html#cfn-elasticloadbalancingv2-targetgroup-targetdescription-availabilityzone",

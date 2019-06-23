@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53Resolver_ResolverEndpoint.IpAddressRequest.schema.json",
-  "title" : "IpAddressRequest",
+  "title" : "ResolverEndpointIpAddressRequest",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverendpoint-ipaddressrequest.html",
   "type" : "object",
-  "javaType" : "aws.route53resolver.IpAddressRequest",
-  "javaInterfaces" : [ "aws.Property<IpAddressRequest>" ],
+  "javaType" : "aws.route53resolver.ResolverEndpointIpAddressRequest",
+  "javaInterfaces" : [ "aws.Property<ResolverEndpointIpAddressRequest>" ],
   "properties" : {
     "Ip" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53resolver-resolverendpoint-ipaddressrequest.html#cfn-route53resolver-resolverendpoint-ipaddressrequest-ip",

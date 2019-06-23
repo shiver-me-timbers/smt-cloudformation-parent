@@ -59,28 +59,28 @@ public class Pipeline {
      */
     @JsonProperty("ParameterObjects")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parameterobjects")
-    private List<Property<ParameterObject>> parameterObjects = new ArrayList<Property<ParameterObject>>();
+    private List<Property<PipelineParameterObject>> parameterObjects = new ArrayList<Property<PipelineParameterObject>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parametervalues
      * 
      */
     @JsonProperty("ParameterValues")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-parametervalues")
-    private List<Property<ParameterValue>> parameterValues = new ArrayList<Property<ParameterValue>>();
+    private List<Property<PipelineParameterValue>> parameterValues = new ArrayList<Property<PipelineParameterValue>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelineobjects
      * 
      */
     @JsonProperty("PipelineObjects")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelineobjects")
-    private List<Property<PipelineObject>> pipelineObjects = new ArrayList<Property<PipelineObject>>();
+    private List<Property<PipelinePipelineObject>> pipelineObjects = new ArrayList<Property<PipelinePipelineObject>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelinetags
      * 
      */
     @JsonProperty("PipelineTags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-pipelinetags")
-    private List<Property<PipelineTag>> pipelineTags = new ArrayList<Property<PipelineTag>>();
+    private List<Property<PipelinePipelineTag>> pipelineTags = new ArrayList<Property<PipelinePipelineTag>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-datapipeline-pipeline.html#cfn-datapipeline-pipeline-activate
@@ -156,7 +156,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Property<ParameterObject>> getParameterObjects() {
+    public List<Property<PipelineParameterObject>> getParameterObjects() {
         return parameterObjects;
     }
 
@@ -165,11 +165,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setParameterObjects(List<Property<ParameterObject>> parameterObjects) {
+    public void setParameterObjects(List<Property<PipelineParameterObject>> parameterObjects) {
         this.parameterObjects = parameterObjects;
     }
 
-    public Pipeline withParameterObjects(List<Property<ParameterObject>> parameterObjects) {
+    public Pipeline withParameterObjects(List<Property<PipelineParameterObject>> parameterObjects) {
         this.parameterObjects = parameterObjects;
         return this;
     }
@@ -179,7 +179,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Property<ParameterValue>> getParameterValues() {
+    public List<Property<PipelineParameterValue>> getParameterValues() {
         return parameterValues;
     }
 
@@ -188,11 +188,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setParameterValues(List<Property<ParameterValue>> parameterValues) {
+    public void setParameterValues(List<Property<PipelineParameterValue>> parameterValues) {
         this.parameterValues = parameterValues;
     }
 
-    public Pipeline withParameterValues(List<Property<ParameterValue>> parameterValues) {
+    public Pipeline withParameterValues(List<Property<PipelineParameterValue>> parameterValues) {
         this.parameterValues = parameterValues;
         return this;
     }
@@ -202,7 +202,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Property<PipelineObject>> getPipelineObjects() {
+    public List<Property<PipelinePipelineObject>> getPipelineObjects() {
         return pipelineObjects;
     }
 
@@ -211,11 +211,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setPipelineObjects(List<Property<PipelineObject>> pipelineObjects) {
+    public void setPipelineObjects(List<Property<PipelinePipelineObject>> pipelineObjects) {
         this.pipelineObjects = pipelineObjects;
     }
 
-    public Pipeline withPipelineObjects(List<Property<PipelineObject>> pipelineObjects) {
+    public Pipeline withPipelineObjects(List<Property<PipelinePipelineObject>> pipelineObjects) {
         this.pipelineObjects = pipelineObjects;
         return this;
     }
@@ -225,7 +225,7 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public List<Property<PipelineTag>> getPipelineTags() {
+    public List<Property<PipelinePipelineTag>> getPipelineTags() {
         return pipelineTags;
     }
 
@@ -234,11 +234,11 @@ public class Pipeline {
      * 
      */
     @JsonIgnore
-    public void setPipelineTags(List<Property<PipelineTag>> pipelineTags) {
+    public void setPipelineTags(List<Property<PipelinePipelineTag>> pipelineTags) {
         this.pipelineTags = pipelineTags;
     }
 
-    public Pipeline withPipelineTags(List<Property<PipelineTag>> pipelineTags) {
+    public Pipeline withPipelineTags(List<Property<PipelinePipelineTag>> pipelineTags) {
         this.pipelineTags = pipelineTags;
         return this;
     }

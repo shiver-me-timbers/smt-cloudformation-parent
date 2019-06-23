@@ -1,20 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_GuardDuty_Filter.FindingCriteria.schema.json",
-  "title" : "FindingCriteria",
+  "title" : "FilterFindingCriteria",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html",
   "type" : "object",
-  "javaType" : "aws.guardduty.FindingCriteria",
-  "javaInterfaces" : [ "aws.Property<FindingCriteria>" ],
+  "javaType" : "aws.guardduty.FilterFindingCriteria",
+  "javaInterfaces" : [ "aws.Property<FilterFindingCriteria>" ],
   "properties" : {
     "Criterion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-criterion",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "ItemType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html#cfn-guardduty-filter-findingcriteria-itemtype",
       "$ref" : "AWS_GuardDuty_Filter.Condition.schema.json",
-      "javaType" : "aws.Property<aws.guardduty.Condition>"
+      "javaType" : "aws.Property<aws.guardduty.FilterCondition>"
     }
   }
 }

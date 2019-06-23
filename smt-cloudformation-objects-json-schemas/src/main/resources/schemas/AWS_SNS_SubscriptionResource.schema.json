@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sns.SubscriptionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SubscriptionResource>", "aws.HasCondition<SubscriptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.logs.MetricFilterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MetricFilterResource>", "aws.HasCondition<MetricFilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

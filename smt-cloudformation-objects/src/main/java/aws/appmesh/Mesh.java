@@ -36,21 +36,21 @@ public class Mesh {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-meshname")
     private CharSequence meshName;
     /**
-     * MeshSpec
+     * MeshMeshSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html
      * 
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html")
-    private Property<MeshSpec> spec;
+    private Property<MeshMeshSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags
      * 
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-tags")
-    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
+    private List<Property<MeshTagRef>> tags = new ArrayList<Property<MeshTagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-mesh.html#cfn-appmesh-mesh-meshname
@@ -76,28 +76,28 @@ public class Mesh {
     }
 
     /**
-     * MeshSpec
+     * MeshMeshSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html
      * 
      */
     @JsonIgnore
-    public Property<MeshSpec> getSpec() {
+    public Property<MeshMeshSpec> getSpec() {
         return spec;
     }
 
     /**
-     * MeshSpec
+     * MeshMeshSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-meshspec.html
      * 
      */
     @JsonIgnore
-    public void setSpec(Property<MeshSpec> spec) {
+    public void setSpec(Property<MeshMeshSpec> spec) {
         this.spec = spec;
     }
 
-    public Mesh withSpec(Property<MeshSpec> spec) {
+    public Mesh withSpec(Property<MeshMeshSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -107,7 +107,7 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public List<Property<TagRef>> getTags() {
+    public List<Property<MeshTagRef>> getTags() {
         return tags;
     }
 
@@ -116,11 +116,11 @@ public class Mesh {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagRef>> tags) {
+    public void setTags(List<Property<MeshTagRef>> tags) {
         this.tags = tags;
     }
 
-    public Mesh withTags(List<Property<TagRef>> tags) {
+    public Mesh withTags(List<Property<MeshTagRef>> tags) {
         this.tags = tags;
         return this;
     }

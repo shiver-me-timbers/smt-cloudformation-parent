@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.docdb.DBInstanceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DBInstanceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DBInstanceResource>", "aws.HasCondition<DBInstanceResource>", "aws.HasAttributes<DBInstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

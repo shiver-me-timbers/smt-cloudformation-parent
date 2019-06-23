@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.workspaces.WorkspaceResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<WorkspaceResource>", "aws.HasCondition<WorkspaceResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

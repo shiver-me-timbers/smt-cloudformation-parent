@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Step.KeyValue.schema.json",
-  "title" : "KeyValue",
+  "title" : "StepKeyValue",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html",
   "type" : "object",
-  "javaType" : "aws.emr.KeyValue",
-  "javaInterfaces" : [ "aws.Property<KeyValue>" ],
+  "javaType" : "aws.emr.StepKeyValue",
+  "javaInterfaces" : [ "aws.Property<StepKeyValue>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-keyvalue.html#cfn-elasticmapreduce-step-keyvalue-key",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.amazonmq.BrokerResource",
-  "javaInterfaces" : [ "aws.HasAttributes<BrokerAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<BrokerResource>", "aws.HasCondition<BrokerResource>", "aws.HasAttributes<BrokerAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

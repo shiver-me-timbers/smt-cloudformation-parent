@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.guardduty.ThreatIntelSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ThreatIntelSetResource>", "aws.HasCondition<ThreatIntelSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

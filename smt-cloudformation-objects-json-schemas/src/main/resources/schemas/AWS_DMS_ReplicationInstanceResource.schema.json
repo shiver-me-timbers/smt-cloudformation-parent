@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dms.ReplicationInstanceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ReplicationInstanceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationInstanceResource>", "aws.HasCondition<ReplicationInstanceResource>", "aws.HasAttributes<ReplicationInstanceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

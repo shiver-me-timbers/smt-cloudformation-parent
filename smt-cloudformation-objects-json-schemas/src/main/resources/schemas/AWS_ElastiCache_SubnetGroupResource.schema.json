@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.SubnetGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SubnetGroupResource>", "aws.HasCondition<SubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

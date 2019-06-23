@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigatewayv2.DomainNameResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DomainNameAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DomainNameResource>", "aws.HasCondition<DomainNameResource>", "aws.HasAttributes<DomainNameAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

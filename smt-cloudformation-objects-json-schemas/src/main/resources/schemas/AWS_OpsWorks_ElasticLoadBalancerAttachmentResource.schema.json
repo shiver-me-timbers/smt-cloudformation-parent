@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.opsworks.ElasticLoadBalancerAttachmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ElasticLoadBalancerAttachmentResource>", "aws.HasCondition<ElasticLoadBalancerAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

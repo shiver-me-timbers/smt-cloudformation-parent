@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_Application.S3ContentLocation.schema.json",
-  "title" : "S3ContentLocation",
+  "title" : "ApplicationS3ContentLocation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.S3ContentLocation",
-  "javaInterfaces" : [ "aws.Property<S3ContentLocation>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationS3ContentLocation",
+  "javaInterfaces" : [ "aws.Property<ApplicationS3ContentLocation>" ],
   "properties" : {
     "BucketARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-s3contentlocation.html#cfn-kinesisanalyticsv2-application-s3contentlocation-bucketarn",

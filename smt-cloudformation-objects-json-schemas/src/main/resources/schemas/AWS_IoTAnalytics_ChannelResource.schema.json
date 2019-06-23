@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iotanalytics.ChannelResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ChannelResource>", "aws.HasCondition<ChannelResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

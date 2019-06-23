@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ServiceCatalog_CloudFormationProvisionedProduct.ProvisioningParameter.schema.json",
-        "javaType" : "aws.Property<aws.servicecatalog.ProvisioningParameter>"
+        "javaType" : "aws.Property<aws.servicecatalog.CloudFormationProvisionedProductProvisioningParameter>"
       }
     },
     "ProductName" : {

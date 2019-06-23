@@ -14,7 +14,7 @@
     "CloudWatchLoggingOption" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.html#cfn-kinesisanalyticsv2-applicationcloudwatchloggingoption-cloudwatchloggingoption",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationCloudWatchLoggingOption.CloudWatchLoggingOption.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.CloudWatchLoggingOption>"
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionCloudWatchLoggingOption>"
     }
   }
 }

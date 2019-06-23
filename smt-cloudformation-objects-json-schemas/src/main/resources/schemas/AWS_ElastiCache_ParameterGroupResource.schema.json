@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.ParameterGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ParameterGroupResource>", "aws.HasCondition<ParameterGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

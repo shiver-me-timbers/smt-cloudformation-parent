@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.CacheClusterResource",
-  "javaInterfaces" : [ "aws.HasAttributes<CacheClusterAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<CacheClusterResource>", "aws.HasCondition<CacheClusterResource>", "aws.HasAttributes<CacheClusterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

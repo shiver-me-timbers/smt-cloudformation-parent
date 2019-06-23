@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Dataset.Trigger.schema.json",
-  "title" : "Trigger",
+  "title" : "DatasetTrigger",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-trigger.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.Trigger",
-  "javaInterfaces" : [ "aws.Property<Trigger>" ],
+  "javaType" : "aws.iotanalytics.DatasetTrigger",
+  "javaInterfaces" : [ "aws.Property<DatasetTrigger>" ],
   "properties" : {
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-trigger.html#cfn-iotanalytics-dataset-trigger-schedule",
       "$ref" : "AWS_IoTAnalytics_Dataset.Schedule.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.Schedule>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetSchedule>"
     },
     "TriggeringDataset" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-trigger.html#cfn-iotanalytics-dataset-trigger-triggeringdataset",
       "$ref" : "AWS_IoTAnalytics_Dataset.TriggeringDataset.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.TriggeringDataset>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetTriggeringDataset>"
     }
   }
 }

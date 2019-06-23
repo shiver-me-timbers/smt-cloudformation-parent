@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_ListenerCertificate.Certificate.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.Certificate>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.ListenerCertificateCertificate>"
       }
     },
     "ListenerArn" : {

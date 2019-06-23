@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_WAF_IPSet.IPSetDescriptor.schema.json",
-        "javaType" : "aws.Property<aws.waf.IPSetDescriptor>"
+        "javaType" : "aws.Property<aws.waf.IPSetIPSetDescriptor>"
       }
     },
     "Name" : {

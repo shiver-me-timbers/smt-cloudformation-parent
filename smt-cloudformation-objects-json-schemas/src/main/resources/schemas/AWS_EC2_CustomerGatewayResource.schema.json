@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.CustomerGatewayResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CustomerGatewayResource>", "aws.HasCondition<CustomerGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

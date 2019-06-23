@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigatewayv2.StageResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<StageResource>", "aws.HasCondition<StageResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

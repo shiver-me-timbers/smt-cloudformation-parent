@@ -30,12 +30,14 @@ public class TypeNameFinderTest {
 
         final String resourceName = someString();
         final String packageName = someString();
+        final String resourceClassName = someString();
         final String propertyName = someString();
 
-        final String expected = format("%s%s%s", packageName, someString(), propertyName);
+        final String expected = format("%s::%s%s%s", packageName, resourceClassName, someString(), propertyName);
 
         // Given
         given(javaTypes.extractPackage(resourceName)).willReturn(packageName);
+        given(javaTypes.extractResourceClassName(resourceName)).willReturn(resourceClassName);
 
         // When
         final String actual = new TypeNameFinder(
@@ -44,6 +46,7 @@ public class TypeNameFinderTest {
                 put(expected, mock(PropertyType.class));
                 put(packageName + someString(), mock(PropertyType.class));
                 put(someString() + propertyName, mock(PropertyType.class));
+                put(resourceClassName + someString(), mock(PropertyType.class));
             }},
             javaTypes
         ).find(resourceName, propertyName);

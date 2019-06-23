@@ -41,14 +41,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class RecordSet {
 
     /**
-     * AliasTarget
+     * RecordSetGroupAliasTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
      * 
      */
     @JsonProperty("AliasTarget")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html")
-    private Property<AliasTarget> aliasTarget;
+    private Property<RecordSetAliasTarget> aliasTarget;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-comment
      * 
@@ -64,14 +64,14 @@ public class RecordSet {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-failover")
     private CharSequence failover;
     /**
-     * GeoLocation
+     * RecordSetGeoLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html
      * 
      */
     @JsonProperty("GeoLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html")
-    private Property<GeoLocation> geoLocation;
+    private Property<RecordSetGeoLocation> geoLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset.html#cfn-route53-recordset-healthcheckid
      * 
@@ -151,28 +151,28 @@ public class RecordSet {
     private Integer weight;
 
     /**
-     * AliasTarget
+     * RecordSetGroupAliasTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
      * 
      */
     @JsonIgnore
-    public Property<AliasTarget> getAliasTarget() {
+    public Property<RecordSetAliasTarget> getAliasTarget() {
         return aliasTarget;
     }
 
     /**
-     * AliasTarget
+     * RecordSetGroupAliasTarget
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html
      * 
      */
     @JsonIgnore
-    public void setAliasTarget(Property<AliasTarget> aliasTarget) {
+    public void setAliasTarget(Property<RecordSetAliasTarget> aliasTarget) {
         this.aliasTarget = aliasTarget;
     }
 
-    public RecordSet withAliasTarget(Property<AliasTarget> aliasTarget) {
+    public RecordSet withAliasTarget(Property<RecordSetAliasTarget> aliasTarget) {
         this.aliasTarget = aliasTarget;
         return this;
     }
@@ -224,28 +224,28 @@ public class RecordSet {
     }
 
     /**
-     * GeoLocation
+     * RecordSetGeoLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html
      * 
      */
     @JsonIgnore
-    public Property<GeoLocation> getGeoLocation() {
+    public Property<RecordSetGeoLocation> getGeoLocation() {
         return geoLocation;
     }
 
     /**
-     * GeoLocation
+     * RecordSetGeoLocation
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html
      * 
      */
     @JsonIgnore
-    public void setGeoLocation(Property<GeoLocation> geoLocation) {
+    public void setGeoLocation(Property<RecordSetGeoLocation> geoLocation) {
         this.geoLocation = geoLocation;
     }
 
-    public RecordSet withGeoLocation(Property<GeoLocation> geoLocation) {
+    public RecordSet withGeoLocation(Property<RecordSetGeoLocation> geoLocation) {
         this.geoLocation = geoLocation;
         return this;
     }

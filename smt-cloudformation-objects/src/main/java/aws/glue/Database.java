@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Database {
 
     /**
-     * DatabaseInput
+     * DatabaseDatabaseInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
     @JsonProperty("DatabaseInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html")
-    private Property<DatabaseInput> databaseInput;
+    private Property<DatabaseDatabaseInput> databaseInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
      * 
@@ -43,28 +43,28 @@ public class Database {
     private CharSequence catalogId;
 
     /**
-     * DatabaseInput
+     * DatabaseDatabaseInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
     @JsonIgnore
-    public Property<DatabaseInput> getDatabaseInput() {
+    public Property<DatabaseDatabaseInput> getDatabaseInput() {
         return databaseInput;
     }
 
     /**
-     * DatabaseInput
+     * DatabaseDatabaseInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-database-databaseinput.html
      * 
      */
     @JsonIgnore
-    public void setDatabaseInput(Property<DatabaseInput> databaseInput) {
+    public void setDatabaseInput(Property<DatabaseDatabaseInput> databaseInput) {
         this.databaseInput = databaseInput;
     }
 
-    public Database withDatabaseInput(Property<DatabaseInput> databaseInput) {
+    public Database withDatabaseInput(Property<DatabaseDatabaseInput> databaseInput) {
         this.databaseInput = databaseInput;
         return this;
     }

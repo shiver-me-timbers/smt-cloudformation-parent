@@ -54,21 +54,21 @@ public class PatchBaseline {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-description")
     private CharSequence description;
     /**
-     * RuleGroup
+     * PatchBaselineRuleGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html
      * 
      */
     @JsonProperty("ApprovalRules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html")
-    private Property<RuleGroup> approvalRules;
+    private Property<PatchBaselineRuleGroup> approvalRules;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources
      * 
      */
     @JsonProperty("Sources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources")
-    private List<Property<PatchSource>> sources = new ArrayList<Property<PatchSource>>();
+    private List<Property<PatchBaselinePatchSource>> sources = new ArrayList<Property<PatchBaselinePatchSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-name
      * 
@@ -119,14 +119,14 @@ public class PatchBaseline {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvedpatchesenablenonsecurity")
     private Boolean approvedPatchesEnableNonSecurity;
     /**
-     * PatchFilterGroup
+     * PatchBaselinePatchFilterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
     @JsonProperty("GlobalFilters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html")
-    private Property<PatchFilterGroup> globalFilters;
+    private Property<PatchBaselinePatchFilterGroup> globalFilters;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-tags
      * 
@@ -182,28 +182,28 @@ public class PatchBaseline {
     }
 
     /**
-     * RuleGroup
+     * PatchBaselineRuleGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html
      * 
      */
     @JsonIgnore
-    public Property<RuleGroup> getApprovalRules() {
+    public Property<PatchBaselineRuleGroup> getApprovalRules() {
         return approvalRules;
     }
 
     /**
-     * RuleGroup
+     * PatchBaselineRuleGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-rulegroup.html
      * 
      */
     @JsonIgnore
-    public void setApprovalRules(Property<RuleGroup> approvalRules) {
+    public void setApprovalRules(Property<PatchBaselineRuleGroup> approvalRules) {
         this.approvalRules = approvalRules;
     }
 
-    public PatchBaseline withApprovalRules(Property<RuleGroup> approvalRules) {
+    public PatchBaseline withApprovalRules(Property<PatchBaselineRuleGroup> approvalRules) {
         this.approvalRules = approvalRules;
         return this;
     }
@@ -213,7 +213,7 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public List<Property<PatchSource>> getSources() {
+    public List<Property<PatchBaselinePatchSource>> getSources() {
         return sources;
     }
 
@@ -222,11 +222,11 @@ public class PatchBaseline {
      * 
      */
     @JsonIgnore
-    public void setSources(List<Property<PatchSource>> sources) {
+    public void setSources(List<Property<PatchBaselinePatchSource>> sources) {
         this.sources = sources;
     }
 
-    public PatchBaseline withSources(List<Property<PatchSource>> sources) {
+    public PatchBaseline withSources(List<Property<PatchBaselinePatchSource>> sources) {
         this.sources = sources;
         return this;
     }
@@ -393,28 +393,28 @@ public class PatchBaseline {
     }
 
     /**
-     * PatchFilterGroup
+     * PatchBaselinePatchFilterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
     @JsonIgnore
-    public Property<PatchFilterGroup> getGlobalFilters() {
+    public Property<PatchBaselinePatchFilterGroup> getGlobalFilters() {
         return globalFilters;
     }
 
     /**
-     * PatchFilterGroup
+     * PatchBaselinePatchFilterGroup
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html
      * 
      */
     @JsonIgnore
-    public void setGlobalFilters(Property<PatchFilterGroup> globalFilters) {
+    public void setGlobalFilters(Property<PatchBaselinePatchFilterGroup> globalFilters) {
         this.globalFilters = globalFilters;
     }
 
-    public PatchBaseline withGlobalFilters(Property<PatchFilterGroup> globalFilters) {
+    public PatchBaseline withGlobalFilters(Property<PatchBaselinePatchFilterGroup> globalFilters) {
         this.globalFilters = globalFilters;
         return this;
     }

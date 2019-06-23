@@ -49,14 +49,14 @@ public class Service {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-cluster")
     private CharSequence cluster;
     /**
-     * DeploymentConfiguration
+     * ServiceDeploymentConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html
      * 
      */
     @JsonProperty("DeploymentConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html")
-    private Property<DeploymentConfiguration> deploymentConfiguration;
+    private Property<ServiceDeploymentConfiguration> deploymentConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-desiredcount
      * 
@@ -85,16 +85,16 @@ public class Service {
     @JsonProperty("LoadBalancers")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-loadbalancers")
-    private Set<Property<LoadBalancer>> loadBalancers = new LinkedHashSet<Property<LoadBalancer>>();
+    private Set<Property<ServiceLoadBalancer>> loadBalancers = new LinkedHashSet<Property<ServiceLoadBalancer>>();
     /**
-     * NetworkConfiguration
+     * ServiceNetworkConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html
      * 
      */
     @JsonProperty("NetworkConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html")
-    private Property<NetworkConfiguration> networkConfiguration;
+    private Property<ServiceNetworkConfiguration> networkConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints
      * 
@@ -102,7 +102,7 @@ public class Service {
     @JsonProperty("PlacementConstraints")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementconstraints")
-    private Set<Property<PlacementConstraint>> placementConstraints = new LinkedHashSet<Property<PlacementConstraint>>();
+    private Set<Property<ServicePlacementConstraint>> placementConstraints = new LinkedHashSet<Property<ServicePlacementConstraint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies
      * 
@@ -110,7 +110,7 @@ public class Service {
     @JsonProperty("PlacementStrategies")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-placementstrategies")
-    private Set<Property<PlacementStrategy>> placementStrategies = new LinkedHashSet<Property<PlacementStrategy>>();
+    private Set<Property<ServicePlacementStrategy>> placementStrategies = new LinkedHashSet<Property<ServicePlacementStrategy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-platformversion
      * 
@@ -146,7 +146,7 @@ public class Service {
     @JsonProperty("ServiceRegistries")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-serviceregistries")
-    private Set<Property<ServiceRegistry>> serviceRegistries = new LinkedHashSet<Property<ServiceRegistry>>();
+    private Set<Property<ServiceServiceRegistry>> serviceRegistries = new LinkedHashSet<Property<ServiceServiceRegistry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-service.html#cfn-ecs-service-taskdefinition
      * 
@@ -179,28 +179,28 @@ public class Service {
     }
 
     /**
-     * DeploymentConfiguration
+     * ServiceDeploymentConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<DeploymentConfiguration> getDeploymentConfiguration() {
+    public Property<ServiceDeploymentConfiguration> getDeploymentConfiguration() {
         return deploymentConfiguration;
     }
 
     /**
-     * DeploymentConfiguration
+     * ServiceDeploymentConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setDeploymentConfiguration(Property<DeploymentConfiguration> deploymentConfiguration) {
+    public void setDeploymentConfiguration(Property<ServiceDeploymentConfiguration> deploymentConfiguration) {
         this.deploymentConfiguration = deploymentConfiguration;
     }
 
-    public Service withDeploymentConfiguration(Property<DeploymentConfiguration> deploymentConfiguration) {
+    public Service withDeploymentConfiguration(Property<ServiceDeploymentConfiguration> deploymentConfiguration) {
         this.deploymentConfiguration = deploymentConfiguration;
         return this;
     }
@@ -279,7 +279,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<Property<LoadBalancer>> getLoadBalancers() {
+    public Set<Property<ServiceLoadBalancer>> getLoadBalancers() {
         return loadBalancers;
     }
 
@@ -288,38 +288,38 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setLoadBalancers(Set<Property<LoadBalancer>> loadBalancers) {
+    public void setLoadBalancers(Set<Property<ServiceLoadBalancer>> loadBalancers) {
         this.loadBalancers = loadBalancers;
     }
 
-    public Service withLoadBalancers(Set<Property<LoadBalancer>> loadBalancers) {
+    public Service withLoadBalancers(Set<Property<ServiceLoadBalancer>> loadBalancers) {
         this.loadBalancers = loadBalancers;
         return this;
     }
 
     /**
-     * NetworkConfiguration
+     * ServiceNetworkConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<NetworkConfiguration> getNetworkConfiguration() {
+    public Property<ServiceNetworkConfiguration> getNetworkConfiguration() {
         return networkConfiguration;
     }
 
     /**
-     * NetworkConfiguration
+     * ServiceNetworkConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setNetworkConfiguration(Property<NetworkConfiguration> networkConfiguration) {
+    public void setNetworkConfiguration(Property<ServiceNetworkConfiguration> networkConfiguration) {
         this.networkConfiguration = networkConfiguration;
     }
 
-    public Service withNetworkConfiguration(Property<NetworkConfiguration> networkConfiguration) {
+    public Service withNetworkConfiguration(Property<ServiceNetworkConfiguration> networkConfiguration) {
         this.networkConfiguration = networkConfiguration;
         return this;
     }
@@ -329,7 +329,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<Property<PlacementConstraint>> getPlacementConstraints() {
+    public Set<Property<ServicePlacementConstraint>> getPlacementConstraints() {
         return placementConstraints;
     }
 
@@ -338,11 +338,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setPlacementConstraints(Set<Property<PlacementConstraint>> placementConstraints) {
+    public void setPlacementConstraints(Set<Property<ServicePlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
     }
 
-    public Service withPlacementConstraints(Set<Property<PlacementConstraint>> placementConstraints) {
+    public Service withPlacementConstraints(Set<Property<ServicePlacementConstraint>> placementConstraints) {
         this.placementConstraints = placementConstraints;
         return this;
     }
@@ -352,7 +352,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<Property<PlacementStrategy>> getPlacementStrategies() {
+    public Set<Property<ServicePlacementStrategy>> getPlacementStrategies() {
         return placementStrategies;
     }
 
@@ -361,11 +361,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setPlacementStrategies(Set<Property<PlacementStrategy>> placementStrategies) {
+    public void setPlacementStrategies(Set<Property<ServicePlacementStrategy>> placementStrategies) {
         this.placementStrategies = placementStrategies;
     }
 
-    public Service withPlacementStrategies(Set<Property<PlacementStrategy>> placementStrategies) {
+    public Service withPlacementStrategies(Set<Property<ServicePlacementStrategy>> placementStrategies) {
         this.placementStrategies = placementStrategies;
         return this;
     }
@@ -467,7 +467,7 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public Set<Property<ServiceRegistry>> getServiceRegistries() {
+    public Set<Property<ServiceServiceRegistry>> getServiceRegistries() {
         return serviceRegistries;
     }
 
@@ -476,11 +476,11 @@ public class Service {
      * 
      */
     @JsonIgnore
-    public void setServiceRegistries(Set<Property<ServiceRegistry>> serviceRegistries) {
+    public void setServiceRegistries(Set<Property<ServiceServiceRegistry>> serviceRegistries) {
         this.serviceRegistries = serviceRegistries;
     }
 
-    public Service withServiceRegistries(Set<Property<ServiceRegistry>> serviceRegistries) {
+    public Service withServiceRegistries(Set<Property<ServiceServiceRegistry>> serviceRegistries) {
         this.serviceRegistries = serviceRegistries;
         return this;
     }

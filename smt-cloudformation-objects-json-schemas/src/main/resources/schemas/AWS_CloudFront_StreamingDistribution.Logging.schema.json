@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_StreamingDistribution.Logging.schema.json",
-  "title" : "Logging",
+  "title" : "StreamingDistributionLogging",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.Logging",
-  "javaInterfaces" : [ "aws.Property<Logging>" ],
+  "javaType" : "aws.cloudfront.StreamingDistributionLogging",
+  "javaInterfaces" : [ "aws.Property<StreamingDistributionLogging>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-streamingdistribution-logging.html#cfn-cloudfront-streamingdistribution-logging-bucket",

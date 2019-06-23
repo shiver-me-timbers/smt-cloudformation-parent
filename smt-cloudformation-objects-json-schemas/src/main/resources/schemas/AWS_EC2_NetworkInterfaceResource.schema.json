@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.NetworkInterfaceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<NetworkInterfaceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<NetworkInterfaceResource>", "aws.HasCondition<NetworkInterfaceResource>", "aws.HasAttributes<NetworkInterfaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

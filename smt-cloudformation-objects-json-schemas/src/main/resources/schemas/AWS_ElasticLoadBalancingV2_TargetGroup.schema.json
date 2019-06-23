@@ -40,7 +40,7 @@
     "Matcher" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-matcher",
       "$ref" : "AWS_ElasticLoadBalancingV2_TargetGroup.Matcher.schema.json",
-      "javaType" : "aws.Property<aws.elasticloadbalancingv2.Matcher>"
+      "javaType" : "aws.Property<aws.elasticloadbalancingv2.TargetGroupMatcher>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-targetgroup.html#cfn-elasticloadbalancingv2-targetgroup-name",
@@ -70,7 +70,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_TargetGroup.TargetGroupAttribute.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.TargetGroupAttribute>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.TargetGroupTargetGroupAttribute>"
       }
     },
     "TargetType" : {
@@ -84,7 +84,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ElasticLoadBalancingV2_TargetGroup.TargetDescription.schema.json",
-        "javaType" : "aws.Property<aws.elasticloadbalancingv2.TargetDescription>"
+        "javaType" : "aws.Property<aws.elasticloadbalancingv2.TargetGroupTargetDescription>"
       }
     },
     "UnhealthyThresholdCount" : {

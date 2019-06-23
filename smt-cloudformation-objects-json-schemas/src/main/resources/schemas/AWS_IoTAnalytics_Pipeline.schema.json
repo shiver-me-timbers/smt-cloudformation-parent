@@ -24,7 +24,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_IoTAnalytics_Pipeline.Activity.schema.json",
-        "javaType" : "aws.Property<aws.iotanalytics.Activity>"
+        "javaType" : "aws.Property<aws.iotanalytics.PipelineActivity>"
       }
     }
   }

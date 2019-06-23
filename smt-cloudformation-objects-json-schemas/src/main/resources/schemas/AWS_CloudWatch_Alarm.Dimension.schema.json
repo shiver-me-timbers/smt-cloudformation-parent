@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudWatch_Alarm.Dimension.schema.json",
-  "title" : "Dimension",
+  "title" : "AlarmDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html",
   "type" : "object",
-  "javaType" : "aws.cloudwatch.Dimension",
-  "javaInterfaces" : [ "aws.Property<Dimension>" ],
+  "javaType" : "aws.cloudwatch.AlarmDimension",
+  "javaInterfaces" : [ "aws.Property<AlarmDimension>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html#cfn-cloudwatch-alarm-dimension-name",

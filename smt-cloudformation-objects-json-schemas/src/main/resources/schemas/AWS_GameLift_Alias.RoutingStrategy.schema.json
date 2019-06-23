@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_GameLift_Alias.RoutingStrategy.schema.json",
-  "title" : "RoutingStrategy",
+  "title" : "AliasRoutingStrategy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html",
   "type" : "object",
-  "javaType" : "aws.gamelift.RoutingStrategy",
-  "javaInterfaces" : [ "aws.Property<RoutingStrategy>" ],
+  "javaType" : "aws.gamelift.AliasRoutingStrategy",
+  "javaInterfaces" : [ "aws.Property<AliasRoutingStrategy>" ],
   "properties" : {
     "FleetId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html#cfn-gamelift-alias-routingstrategy-fleetid",

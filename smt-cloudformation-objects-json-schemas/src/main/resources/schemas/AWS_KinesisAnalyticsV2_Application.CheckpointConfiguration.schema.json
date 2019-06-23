@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_Application.CheckpointConfiguration.schema.json",
-  "title" : "CheckpointConfiguration",
+  "title" : "ApplicationCheckpointConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.CheckpointConfiguration",
-  "javaInterfaces" : [ "aws.Property<CheckpointConfiguration>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationCheckpointConfiguration",
+  "javaInterfaces" : [ "aws.Property<ApplicationCheckpointConfiguration>" ],
   "properties" : {
     "ConfigurationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-checkpointconfiguration.html#cfn-kinesisanalyticsv2-application-checkpointconfiguration-configurationtype",

@@ -33,14 +33,14 @@ public class ConfigurationAssociation {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-broker")
     private CharSequence broker;
     /**
-     * ConfigurationId
+     * ConfigurationAssociationConfigurationId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html
      * 
      */
     @JsonProperty("Configuration")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html")
-    private Property<ConfigurationId> configuration;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html")
+    private Property<ConfigurationAssociationConfigurationId> configuration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-broker
@@ -66,28 +66,28 @@ public class ConfigurationAssociation {
     }
 
     /**
-     * ConfigurationId
+     * ConfigurationAssociationConfigurationId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html
      * 
      */
     @JsonIgnore
-    public Property<ConfigurationId> getConfiguration() {
+    public Property<ConfigurationAssociationConfigurationId> getConfiguration() {
         return configuration;
     }
 
     /**
-     * ConfigurationId
+     * ConfigurationAssociationConfigurationId
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-broker-configurationid.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-amazonmq-configurationassociation-configurationid.html
      * 
      */
     @JsonIgnore
-    public void setConfiguration(Property<ConfigurationId> configuration) {
+    public void setConfiguration(Property<ConfigurationAssociationConfigurationId> configuration) {
         this.configuration = configuration;
     }
 
-    public ConfigurationAssociation withConfiguration(Property<ConfigurationId> configuration) {
+    public ConfigurationAssociation withConfiguration(Property<ConfigurationAssociationConfigurationId> configuration) {
         this.configuration = configuration;
         return this;
     }

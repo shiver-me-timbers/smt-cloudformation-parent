@@ -19,7 +19,7 @@
     "PipelineConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-pipelineconfig",
       "$ref" : "AWS_AppSync_Resolver.PipelineConfig.schema.json",
-      "javaType" : "aws.Property<aws.appsync.PipelineConfig>"
+      "javaType" : "aws.Property<aws.appsync.ResolverPipelineConfig>"
     },
     "DataSourceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename",

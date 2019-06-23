@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticloadbalancingv2.ListenerCertificateResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ListenerCertificateResource>", "aws.HasCondition<ListenerCertificateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

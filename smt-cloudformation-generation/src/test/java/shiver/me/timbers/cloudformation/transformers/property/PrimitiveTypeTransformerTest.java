@@ -54,6 +54,31 @@ public class PrimitiveTypeTransformerTest {
 
     @Test
     @SuppressWarnings("unchecked")
+    public void Can_transform_a_policy_document_property() {
+
+        final String resourceName = someString();
+        final CloudformationType cloudformationType = mock(CloudformationType.class);
+        final String propertyName = someString() + "PolicyDocument";
+        final CloudformationProperty cloudformationProperty = mock(CloudformationProperty.class);
+        final Map<String, Object> property = mock(Map.class);
+
+        final String type = someString();
+        final Map<String, Object> schemaAttributes = mock(Map.class);
+
+
+        // Given
+        given(cloudformationProperty.getPrimitiveType()).willReturn(type);
+        given(converter.convert(type)).willReturn(schemaAttributes);
+
+        // When
+        transformer.transform(resourceName, cloudformationType, propertyName, cloudformationProperty, property);
+
+        // Then
+        then(property).should().put("$ref", "PolicyDocument.schema.json");
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
     public void Will_support_primitive_types() {
 
         final CloudformationProperty property = mock(CloudformationProperty.class);

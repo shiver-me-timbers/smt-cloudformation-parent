@@ -51,7 +51,7 @@ public class Trigger {
      */
     @JsonProperty("Actions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-actions")
-    private List<Property<Action>> actions = new ArrayList<Property<Action>>();
+    private List<Property<TriggerAction>> actions = new ArrayList<Property<TriggerAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-schedule
      * 
@@ -67,14 +67,14 @@ public class Trigger {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-name")
     private CharSequence name;
     /**
-     * Predicate
+     * TriggerPredicate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html
      * 
      */
     @JsonProperty("Predicate")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html")
-    private Property<Predicate> predicate;
+    private Property<TriggerPredicate> predicate;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-trigger.html#cfn-glue-trigger-type
@@ -127,7 +127,7 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public List<Property<Action>> getActions() {
+    public List<Property<TriggerAction>> getActions() {
         return actions;
     }
 
@@ -136,11 +136,11 @@ public class Trigger {
      * 
      */
     @JsonIgnore
-    public void setActions(List<Property<Action>> actions) {
+    public void setActions(List<Property<TriggerAction>> actions) {
         this.actions = actions;
     }
 
-    public Trigger withActions(List<Property<Action>> actions) {
+    public Trigger withActions(List<Property<TriggerAction>> actions) {
         this.actions = actions;
         return this;
     }
@@ -192,28 +192,28 @@ public class Trigger {
     }
 
     /**
-     * Predicate
+     * TriggerPredicate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html
      * 
      */
     @JsonIgnore
-    public Property<Predicate> getPredicate() {
+    public Property<TriggerPredicate> getPredicate() {
         return predicate;
     }
 
     /**
-     * Predicate
+     * TriggerPredicate
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-trigger-predicate.html
      * 
      */
     @JsonIgnore
-    public void setPredicate(Property<Predicate> predicate) {
+    public void setPredicate(Property<TriggerPredicate> predicate) {
         this.predicate = predicate;
     }
 
-    public Trigger withPredicate(Property<Predicate> predicate) {
+    public Trigger withPredicate(Property<TriggerPredicate> predicate) {
         this.predicate = predicate;
         return this;
     }

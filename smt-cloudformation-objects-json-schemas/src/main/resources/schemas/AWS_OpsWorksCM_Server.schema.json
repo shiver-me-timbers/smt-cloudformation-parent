@@ -80,7 +80,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_OpsWorksCM_Server.EngineAttribute.schema.json",
-        "javaType" : "aws.Property<aws.opsworkscm.EngineAttribute>"
+        "javaType" : "aws.Property<aws.opsworkscm.ServerEngineAttribute>"
       }
     },
     "BackupRetentionCount" : {

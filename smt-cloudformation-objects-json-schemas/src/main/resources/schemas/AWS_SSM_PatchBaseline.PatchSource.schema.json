@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SSM_PatchBaseline.PatchSource.schema.json",
-  "title" : "PatchSource",
+  "title" : "PatchBaselinePatchSource",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchSource",
-  "javaInterfaces" : [ "aws.Property<PatchSource>" ],
+  "javaType" : "aws.ssm.PatchBaselinePatchSource",
+  "javaInterfaces" : [ "aws.Property<PatchBaselinePatchSource>" ],
   "properties" : {
     "Products" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchsource.html#cfn-ssm-patchbaseline-patchsource-products",

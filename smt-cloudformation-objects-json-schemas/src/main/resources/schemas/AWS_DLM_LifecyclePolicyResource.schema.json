@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dlm.LifecyclePolicyResource",
-  "javaInterfaces" : [ "aws.HasAttributes<LifecyclePolicyAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<LifecyclePolicyResource>", "aws.HasCondition<LifecyclePolicyResource>", "aws.HasAttributes<LifecyclePolicyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

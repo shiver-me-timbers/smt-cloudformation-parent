@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticbeanstalk.ConfigurationTemplateResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationTemplateResource>", "aws.HasCondition<ConfigurationTemplateResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

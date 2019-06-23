@@ -1,15 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Partition.SerdeInfo.schema.json",
-  "title" : "SerdeInfo",
+  "title" : "PartitionSerdeInfo",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html",
   "type" : "object",
-  "javaType" : "aws.glue.SerdeInfo",
-  "javaInterfaces" : [ "aws.Property<SerdeInfo>" ],
+  "javaType" : "aws.glue.PartitionSerdeInfo",
+  "javaInterfaces" : [ "aws.Property<PartitionSerdeInfo>" ],
   "properties" : {
     "Parameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-parameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "SerializationLibrary" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-partition-serdeinfo.html#cfn-glue-partition-serdeinfo-serializationlibrary",

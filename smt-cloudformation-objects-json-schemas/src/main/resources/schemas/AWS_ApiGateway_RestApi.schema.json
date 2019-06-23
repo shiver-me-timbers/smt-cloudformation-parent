@@ -22,12 +22,13 @@
     },
     "Body" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "BodyS3Location" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-bodys3location",
       "$ref" : "AWS_ApiGateway_RestApi.S3Location.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.S3Location>"
+      "javaType" : "aws.Property<aws.apigateway.RestApiS3Location>"
     },
     "CloneFrom" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom",
@@ -41,8 +42,8 @@
     },
     "EndpointConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-endpointconfiguration",
-      "$ref" : "AWS_ApiGateway_DomainName.EndpointConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.EndpointConfiguration>"
+      "$ref" : "AWS_ApiGateway_RestApi.EndpointConfiguration.schema.json",
+      "javaType" : "aws.Property<aws.apigateway.RestApiEndpointConfiguration>"
     },
     "FailOnWarnings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings",
@@ -64,7 +65,8 @@
     },
     "Policy" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-policy",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

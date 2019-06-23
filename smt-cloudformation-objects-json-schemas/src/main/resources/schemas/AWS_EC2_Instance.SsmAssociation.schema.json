@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_Instance.SsmAssociation.schema.json",
-  "title" : "SsmAssociation",
+  "title" : "InstanceSsmAssociation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SsmAssociation",
-  "javaInterfaces" : [ "aws.Property<SsmAssociation>" ],
+  "javaType" : "aws.ec2.InstanceSsmAssociation",
+  "javaInterfaces" : [ "aws.Property<InstanceSsmAssociation>" ],
   "properties" : {
     "AssociationParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html#cfn-ec2-instance-ssmassociations-associationparameters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_EC2_Instance.AssociationParameter.schema.json",
-        "javaType" : "aws.Property<aws.ec2.AssociationParameter>"
+        "javaType" : "aws.Property<aws.ec2.InstanceAssociationParameter>"
       }
     },
     "DocumentName" : {

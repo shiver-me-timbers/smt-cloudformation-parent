@@ -1,6 +1,7 @@
 
 package aws.s3;
 
+import aws.iam.PolicyDocument;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -32,12 +33,14 @@ public class BucketPolicy {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket")
     private CharSequence bucket;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("PolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument")
-    private Object policyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument policyDocument;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
@@ -63,24 +66,28 @@ public class BucketPolicy {
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public Object getPolicyDocument() {
+    public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
+    public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public BucketPolicy withPolicyDocument(Object policyDocument) {
+    public BucketPolicy withPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }

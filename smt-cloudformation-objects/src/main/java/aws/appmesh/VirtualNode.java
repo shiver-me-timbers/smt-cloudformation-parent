@@ -37,14 +37,14 @@ public class VirtualNode {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshname")
     private CharSequence meshName;
     /**
-     * VirtualNodeSpec
+     * VirtualNodeVirtualNodeSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html
      * 
      */
     @JsonProperty("Spec")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html")
-    private Property<VirtualNodeSpec> spec;
+    private Property<VirtualNodeVirtualNodeSpec> spec;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-virtualnodename
      * 
@@ -58,7 +58,7 @@ public class VirtualNode {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-tags")
-    private List<Property<TagRef>> tags = new ArrayList<Property<TagRef>>();
+    private List<Property<VirtualNodeTagRef>> tags = new ArrayList<Property<VirtualNodeTagRef>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appmesh-virtualnode.html#cfn-appmesh-virtualnode-meshname
@@ -84,28 +84,28 @@ public class VirtualNode {
     }
 
     /**
-     * VirtualNodeSpec
+     * VirtualNodeVirtualNodeSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html
      * 
      */
     @JsonIgnore
-    public Property<VirtualNodeSpec> getSpec() {
+    public Property<VirtualNodeVirtualNodeSpec> getSpec() {
         return spec;
     }
 
     /**
-     * VirtualNodeSpec
+     * VirtualNodeVirtualNodeSpec
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-virtualnodespec.html
      * 
      */
     @JsonIgnore
-    public void setSpec(Property<VirtualNodeSpec> spec) {
+    public void setSpec(Property<VirtualNodeVirtualNodeSpec> spec) {
         this.spec = spec;
     }
 
-    public VirtualNode withSpec(Property<VirtualNodeSpec> spec) {
+    public VirtualNode withSpec(Property<VirtualNodeVirtualNodeSpec> spec) {
         this.spec = spec;
         return this;
     }
@@ -138,7 +138,7 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public List<Property<TagRef>> getTags() {
+    public List<Property<VirtualNodeTagRef>> getTags() {
         return tags;
     }
 
@@ -147,11 +147,11 @@ public class VirtualNode {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagRef>> tags) {
+    public void setTags(List<Property<VirtualNodeTagRef>> tags) {
         this.tags = tags;
     }
 
-    public VirtualNode withTags(List<Property<TagRef>> tags) {
+    public VirtualNode withTags(List<Property<VirtualNodeTagRef>> tags) {
         this.tags = tags;
         return this;
     }

@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_LoggerDefinitionVersion.Logger.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.Logger>"
+        "javaType" : "aws.Property<aws.greengrass.LoggerDefinitionVersionLogger>"
       }
     }
   }

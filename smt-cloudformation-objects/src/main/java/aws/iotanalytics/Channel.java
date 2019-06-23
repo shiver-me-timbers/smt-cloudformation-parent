@@ -37,14 +37,14 @@ public class Channel {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-channelname")
     private CharSequence channelName;
     /**
-     * RetentionPeriod
+     * ChannelRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html
      * 
      */
     @JsonProperty("RetentionPeriod")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html")
-    private Property<RetentionPeriod> retentionPeriod;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html")
+    private Property<ChannelRetentionPeriod> retentionPeriod;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-channel.html#cfn-iotanalytics-channel-tags
      * 
@@ -77,28 +77,28 @@ public class Channel {
     }
 
     /**
-     * RetentionPeriod
+     * ChannelRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public Property<RetentionPeriod> getRetentionPeriod() {
+    public Property<ChannelRetentionPeriod> getRetentionPeriod() {
         return retentionPeriod;
     }
 
     /**
-     * RetentionPeriod
+     * ChannelRetentionPeriod
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-datastore-retentionperiod.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-channel-retentionperiod.html
      * 
      */
     @JsonIgnore
-    public void setRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public void setRetentionPeriod(Property<ChannelRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
     }
 
-    public Channel withRetentionPeriod(Property<RetentionPeriod> retentionPeriod) {
+    public Channel withRetentionPeriod(Property<ChannelRetentionPeriod> retentionPeriod) {
         this.retentionPeriod = retentionPeriod;
         return this;
     }

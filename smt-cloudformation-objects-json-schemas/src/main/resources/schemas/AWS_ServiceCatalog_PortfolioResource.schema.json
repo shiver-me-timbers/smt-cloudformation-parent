@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.PortfolioResource",
-  "javaInterfaces" : [ "aws.HasAttributes<PortfolioAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<PortfolioResource>", "aws.HasCondition<PortfolioResource>", "aws.HasAttributes<PortfolioAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

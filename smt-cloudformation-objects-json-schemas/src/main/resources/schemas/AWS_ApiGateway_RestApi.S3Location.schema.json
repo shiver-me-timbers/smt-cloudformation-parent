@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGateway_RestApi.S3Location.schema.json",
-  "title" : "S3Location",
+  "title" : "RestApiS3Location",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.S3Location",
-  "javaInterfaces" : [ "aws.Property<S3Location>" ],
+  "javaType" : "aws.apigateway.RestApiS3Location",
+  "javaInterfaces" : [ "aws.Property<RestApiS3Location>" ],
   "properties" : {
     "Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html#cfn-apigateway-restapi-s3location-bucket",

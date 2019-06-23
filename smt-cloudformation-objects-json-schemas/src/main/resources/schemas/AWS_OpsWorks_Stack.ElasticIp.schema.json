@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_OpsWorks_Stack.ElasticIp.schema.json",
-  "title" : "ElasticIp",
+  "title" : "StackElasticIp",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html",
   "type" : "object",
-  "javaType" : "aws.opsworks.ElasticIp",
-  "javaInterfaces" : [ "aws.Property<ElasticIp>" ],
+  "javaType" : "aws.opsworks.StackElasticIp",
+  "javaInterfaces" : [ "aws.Property<StackElasticIp>" ],
   "properties" : {
     "Ip" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-elasticip.html#cfn-opsworks-stack-elasticip-ip",

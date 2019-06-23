@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_DeviceDefinition.Device.schema.json",
-  "title" : "Device",
+  "title" : "DeviceDefinitionDevice",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-device.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.Device",
-  "javaInterfaces" : [ "aws.Property<Device>" ],
+  "javaType" : "aws.greengrass.DeviceDefinitionDevice",
+  "javaInterfaces" : [ "aws.Property<DeviceDefinitionDevice>" ],
   "properties" : {
     "SyncShadow" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-devicedefinition-device.html#cfn-greengrass-devicedefinition-device-syncshadow",

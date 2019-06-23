@@ -14,7 +14,7 @@
     "RetentionPeriod" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-retentionperiod",
       "$ref" : "AWS_IoTAnalytics_Datastore.RetentionPeriod.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.RetentionPeriod>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatastoreRetentionPeriod>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iotanalytics-datastore.html#cfn-iotanalytics-datastore-tags",

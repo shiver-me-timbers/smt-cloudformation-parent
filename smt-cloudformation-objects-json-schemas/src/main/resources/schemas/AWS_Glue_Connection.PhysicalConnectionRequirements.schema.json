@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Connection.PhysicalConnectionRequirements.schema.json",
-  "title" : "PhysicalConnectionRequirements",
+  "title" : "ConnectionPhysicalConnectionRequirements",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html",
   "type" : "object",
-  "javaType" : "aws.glue.PhysicalConnectionRequirements",
-  "javaInterfaces" : [ "aws.Property<PhysicalConnectionRequirements>" ],
+  "javaType" : "aws.glue.ConnectionPhysicalConnectionRequirements",
+  "javaInterfaces" : [ "aws.Property<ConnectionPhysicalConnectionRequirements>" ],
   "properties" : {
     "AvailabilityZone" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-connection-physicalconnectionrequirements.html#cfn-glue-connection-physicalconnectionrequirements-availabilityzone",

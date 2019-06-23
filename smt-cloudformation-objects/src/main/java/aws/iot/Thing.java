@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Thing {
 
     /**
-     * AttributePayload
+     * ThingAttributePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html
      * 
      */
     @JsonProperty("AttributePayload")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html")
-    private Property<AttributePayload> attributePayload;
+    private Property<ThingAttributePayload> attributePayload;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thing.html#cfn-iot-thing-thingname
      * 
@@ -43,28 +43,28 @@ public class Thing {
     private CharSequence thingName;
 
     /**
-     * AttributePayload
+     * ThingAttributePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html
      * 
      */
     @JsonIgnore
-    public Property<AttributePayload> getAttributePayload() {
+    public Property<ThingAttributePayload> getAttributePayload() {
         return attributePayload;
     }
 
     /**
-     * AttributePayload
+     * ThingAttributePayload
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-thing-attributepayload.html
      * 
      */
     @JsonIgnore
-    public void setAttributePayload(Property<AttributePayload> attributePayload) {
+    public void setAttributePayload(Property<ThingAttributePayload> attributePayload) {
         this.attributePayload = attributePayload;
     }
 
-    public Thing withAttributePayload(Property<AttributePayload> attributePayload) {
+    public Thing withAttributePayload(Property<ThingAttributePayload> attributePayload) {
         this.attributePayload = attributePayload;
         return this;
     }

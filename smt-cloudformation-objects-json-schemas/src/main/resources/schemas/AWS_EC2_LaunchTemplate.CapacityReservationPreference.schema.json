@@ -1,8 +1,8 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_LaunchTemplate.CapacityReservationPreference.schema.json",
-  "title" : "CapacityReservationPreference",
+  "title" : "LaunchTemplateCapacityReservationPreference",
   "type" : "string",
   "javaType" : "java.lang.CharSequence",
-  "javaInterfaces" : [ "aws.Property<CapacityReservationPreference>" ]
+  "javaInterfaces" : [ "aws.Property<LaunchTemplateCapacityReservationPreference>" ]
 }

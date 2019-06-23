@@ -42,14 +42,14 @@ public class DomainName {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-domainname")
     private CharSequence domainName;
     /**
-     * EndpointConfiguration
+     * DomainNameEndpointConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
     @JsonProperty("EndpointConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html")
-    private Property<EndpointConfiguration> endpointConfiguration;
+    private Property<DomainNameEndpointConfiguration> endpointConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-domainname.html#cfn-apigateway-domainname-regionalcertificatearn
      * 
@@ -105,28 +105,28 @@ public class DomainName {
     }
 
     /**
-     * EndpointConfiguration
+     * DomainNameEndpointConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<EndpointConfiguration> getEndpointConfiguration() {
+    public Property<DomainNameEndpointConfiguration> getEndpointConfiguration() {
         return endpointConfiguration;
     }
 
     /**
-     * EndpointConfiguration
+     * DomainNameEndpointConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
+    public void setEndpointConfiguration(Property<DomainNameEndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
 
-    public DomainName withEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
+    public DomainName withEndpointConfiguration(Property<DomainNameEndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
         return this;
     }

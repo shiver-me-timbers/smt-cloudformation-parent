@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudformation.MacroResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MacroResource>", "aws.HasCondition<MacroResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

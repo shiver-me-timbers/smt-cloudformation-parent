@@ -15,7 +15,15 @@ public class JavaTypes {
     public String extractClassName(String resourceName) {
         final String className = takeLast(resourceName, "::");
         if (className.contains(".")) {
-            return takeLast(className, "\\.");
+            return className.replaceAll("\\.", "");
+        }
+        return className;
+    }
+
+    public String extractResourceClassName(String resourceName) {
+        final String className = takeLast(resourceName, "::");
+        if (className.contains(".")) {
+            return className.split("\\.")[0];
         }
         return className;
     }

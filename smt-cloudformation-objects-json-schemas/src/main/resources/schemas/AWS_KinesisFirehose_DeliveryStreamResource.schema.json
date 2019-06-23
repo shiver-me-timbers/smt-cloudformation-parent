@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kinesisfirehose.DeliveryStreamResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DeliveryStreamAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DeliveryStreamResource>", "aws.HasCondition<DeliveryStreamResource>", "aws.HasAttributes<DeliveryStreamAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

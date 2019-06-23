@@ -27,14 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Repository {
 
     /**
-     * LifecyclePolicy
+     * RepositoryLifecyclePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
     @JsonProperty("LifecyclePolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html")
-    private Property<LifecyclePolicy> lifecyclePolicy;
+    private Property<RepositoryLifecyclePolicy> lifecyclePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
      * 
@@ -51,28 +51,28 @@ public class Repository {
     private Object repositoryPolicyText;
 
     /**
-     * LifecyclePolicy
+     * RepositoryLifecyclePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
     @JsonIgnore
-    public Property<LifecyclePolicy> getLifecyclePolicy() {
+    public Property<RepositoryLifecyclePolicy> getLifecyclePolicy() {
         return lifecyclePolicy;
     }
 
     /**
-     * LifecyclePolicy
+     * RepositoryLifecyclePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecr-repository-lifecyclepolicy.html
      * 
      */
     @JsonIgnore
-    public void setLifecyclePolicy(Property<LifecyclePolicy> lifecyclePolicy) {
+    public void setLifecyclePolicy(Property<RepositoryLifecyclePolicy> lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
     }
 
-    public Repository withLifecyclePolicy(Property<LifecyclePolicy> lifecyclePolicy) {
+    public Repository withLifecyclePolicy(Property<RepositoryLifecyclePolicy> lifecyclePolicy) {
         this.lifecyclePolicy = lifecyclePolicy;
         return this;
     }

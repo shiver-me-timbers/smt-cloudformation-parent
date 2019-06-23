@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.greengrass.LoggerDefinitionVersionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LoggerDefinitionVersionResource>", "aws.HasCondition<LoggerDefinitionVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

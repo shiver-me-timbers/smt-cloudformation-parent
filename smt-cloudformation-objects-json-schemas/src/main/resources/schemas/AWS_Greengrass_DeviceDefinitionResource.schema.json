@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.greengrass.DeviceDefinitionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DeviceDefinitionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DeviceDefinitionResource>", "aws.HasCondition<DeviceDefinitionResource>", "aws.HasAttributes<DeviceDefinitionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

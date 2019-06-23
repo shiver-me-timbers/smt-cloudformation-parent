@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.HealthCheck.schema.json",
-  "title" : "HealthCheck",
+  "title" : "TaskDefinitionHealthCheck",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html",
   "type" : "object",
-  "javaType" : "aws.ecs.HealthCheck",
-  "javaInterfaces" : [ "aws.Property<HealthCheck>" ],
+  "javaType" : "aws.ecs.TaskDefinitionHealthCheck",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionHealthCheck>" ],
   "properties" : {
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command",

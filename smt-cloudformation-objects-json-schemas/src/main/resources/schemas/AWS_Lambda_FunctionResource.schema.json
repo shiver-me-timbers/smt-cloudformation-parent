@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.lambda.FunctionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<FunctionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<FunctionResource>", "aws.HasCondition<FunctionResource>", "aws.HasAttributes<FunctionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

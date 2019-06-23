@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.neptune.DBSubnetGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DBSubnetGroupResource>", "aws.HasCondition<DBSubnetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

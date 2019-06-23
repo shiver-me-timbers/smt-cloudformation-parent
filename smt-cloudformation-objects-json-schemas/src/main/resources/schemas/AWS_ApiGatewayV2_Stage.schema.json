@@ -24,11 +24,12 @@
     "AccessLogSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-accesslogsettings",
       "$ref" : "AWS_ApiGatewayV2_Stage.AccessLogSettings.schema.json",
-      "javaType" : "aws.Property<aws.apigatewayv2.AccessLogSettings>"
+      "javaType" : "aws.Property<aws.apigatewayv2.StageAccessLogSettings>"
     },
     "RouteSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-routesettings",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "StageName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-stagename",
@@ -37,7 +38,8 @@
     },
     "StageVariables" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-stagevariables",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "ApiId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-apiid",
@@ -47,7 +49,7 @@
     "DefaultRouteSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigatewayv2-stage.html#cfn-apigatewayv2-stage-defaultroutesettings",
       "$ref" : "AWS_ApiGatewayV2_Stage.RouteSettings.schema.json",
-      "javaType" : "aws.Property<aws.apigatewayv2.RouteSettings>"
+      "javaType" : "aws.Property<aws.apigatewayv2.StageRouteSettings>"
     }
   }
 }

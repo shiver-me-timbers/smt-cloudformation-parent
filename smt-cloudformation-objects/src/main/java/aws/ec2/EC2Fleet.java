@@ -37,23 +37,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class EC2Fleet {
 
     /**
-     * TargetCapacitySpecificationRequest
+     * EC2FleetTargetCapacitySpecificationRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html
      * 
      */
     @JsonProperty("TargetCapacitySpecification")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html")
-    private Property<TargetCapacitySpecificationRequest> targetCapacitySpecification;
+    private Property<EC2FleetTargetCapacitySpecificationRequest> targetCapacitySpecification;
     /**
-     * OnDemandOptionsRequest
+     * EC2FleetOnDemandOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html
      * 
      */
     @JsonProperty("OnDemandOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html")
-    private Property<OnDemandOptionsRequest> onDemandOptions;
+    private Property<EC2FleetOnDemandOptionsRequest> onDemandOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-type
      * 
@@ -74,16 +74,16 @@ public class EC2Fleet {
      */
     @JsonProperty("TagSpecifications")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-tagspecifications")
-    private List<Property<TagSpecification>> tagSpecifications = new ArrayList<Property<TagSpecification>>();
+    private List<Property<EC2FleetTagSpecification>> tagSpecifications = new ArrayList<Property<EC2FleetTagSpecification>>();
     /**
-     * SpotOptionsRequest
+     * EC2FleetSpotOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html
      * 
      */
     @JsonProperty("SpotOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html")
-    private Property<SpotOptionsRequest> spotOptions;
+    private Property<EC2FleetSpotOptionsRequest> spotOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-validfrom
      * 
@@ -104,7 +104,7 @@ public class EC2Fleet {
      */
     @JsonProperty("LaunchTemplateConfigs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-launchtemplateconfigs")
-    private List<Property<FleetLaunchTemplateConfigRequest>> launchTemplateConfigs = new ArrayList<Property<FleetLaunchTemplateConfigRequest>>();
+    private List<Property<EC2FleetFleetLaunchTemplateConfigRequest>> launchTemplateConfigs = new ArrayList<Property<EC2FleetFleetLaunchTemplateConfigRequest>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-ec2fleet.html#cfn-ec2-ec2fleet-terminateinstanceswithexpiration
      * 
@@ -121,55 +121,55 @@ public class EC2Fleet {
     private CharSequence validUntil;
 
     /**
-     * TargetCapacitySpecificationRequest
+     * EC2FleetTargetCapacitySpecificationRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html
      * 
      */
     @JsonIgnore
-    public Property<TargetCapacitySpecificationRequest> getTargetCapacitySpecification() {
+    public Property<EC2FleetTargetCapacitySpecificationRequest> getTargetCapacitySpecification() {
         return targetCapacitySpecification;
     }
 
     /**
-     * TargetCapacitySpecificationRequest
+     * EC2FleetTargetCapacitySpecificationRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-targetcapacityspecificationrequest.html
      * 
      */
     @JsonIgnore
-    public void setTargetCapacitySpecification(Property<TargetCapacitySpecificationRequest> targetCapacitySpecification) {
+    public void setTargetCapacitySpecification(Property<EC2FleetTargetCapacitySpecificationRequest> targetCapacitySpecification) {
         this.targetCapacitySpecification = targetCapacitySpecification;
     }
 
-    public EC2Fleet withTargetCapacitySpecification(Property<TargetCapacitySpecificationRequest> targetCapacitySpecification) {
+    public EC2Fleet withTargetCapacitySpecification(Property<EC2FleetTargetCapacitySpecificationRequest> targetCapacitySpecification) {
         this.targetCapacitySpecification = targetCapacitySpecification;
         return this;
     }
 
     /**
-     * OnDemandOptionsRequest
+     * EC2FleetOnDemandOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html
      * 
      */
     @JsonIgnore
-    public Property<OnDemandOptionsRequest> getOnDemandOptions() {
+    public Property<EC2FleetOnDemandOptionsRequest> getOnDemandOptions() {
         return onDemandOptions;
     }
 
     /**
-     * OnDemandOptionsRequest
+     * EC2FleetOnDemandOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-ondemandoptionsrequest.html
      * 
      */
     @JsonIgnore
-    public void setOnDemandOptions(Property<OnDemandOptionsRequest> onDemandOptions) {
+    public void setOnDemandOptions(Property<EC2FleetOnDemandOptionsRequest> onDemandOptions) {
         this.onDemandOptions = onDemandOptions;
     }
 
-    public EC2Fleet withOnDemandOptions(Property<OnDemandOptionsRequest> onDemandOptions) {
+    public EC2Fleet withOnDemandOptions(Property<EC2FleetOnDemandOptionsRequest> onDemandOptions) {
         this.onDemandOptions = onDemandOptions;
         return this;
     }
@@ -225,7 +225,7 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public List<Property<TagSpecification>> getTagSpecifications() {
+    public List<Property<EC2FleetTagSpecification>> getTagSpecifications() {
         return tagSpecifications;
     }
 
@@ -234,38 +234,38 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public void setTagSpecifications(List<Property<TagSpecification>> tagSpecifications) {
+    public void setTagSpecifications(List<Property<EC2FleetTagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
     }
 
-    public EC2Fleet withTagSpecifications(List<Property<TagSpecification>> tagSpecifications) {
+    public EC2Fleet withTagSpecifications(List<Property<EC2FleetTagSpecification>> tagSpecifications) {
         this.tagSpecifications = tagSpecifications;
         return this;
     }
 
     /**
-     * SpotOptionsRequest
+     * EC2FleetSpotOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html
      * 
      */
     @JsonIgnore
-    public Property<SpotOptionsRequest> getSpotOptions() {
+    public Property<EC2FleetSpotOptionsRequest> getSpotOptions() {
         return spotOptions;
     }
 
     /**
-     * SpotOptionsRequest
+     * EC2FleetSpotOptionsRequest
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-ec2fleet-spotoptionsrequest.html
      * 
      */
     @JsonIgnore
-    public void setSpotOptions(Property<SpotOptionsRequest> spotOptions) {
+    public void setSpotOptions(Property<EC2FleetSpotOptionsRequest> spotOptions) {
         this.spotOptions = spotOptions;
     }
 
-    public EC2Fleet withSpotOptions(Property<SpotOptionsRequest> spotOptions) {
+    public EC2Fleet withSpotOptions(Property<EC2FleetSpotOptionsRequest> spotOptions) {
         this.spotOptions = spotOptions;
         return this;
     }
@@ -321,7 +321,7 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public List<Property<FleetLaunchTemplateConfigRequest>> getLaunchTemplateConfigs() {
+    public List<Property<EC2FleetFleetLaunchTemplateConfigRequest>> getLaunchTemplateConfigs() {
         return launchTemplateConfigs;
     }
 
@@ -330,11 +330,11 @@ public class EC2Fleet {
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateConfigs(List<Property<FleetLaunchTemplateConfigRequest>> launchTemplateConfigs) {
+    public void setLaunchTemplateConfigs(List<Property<EC2FleetFleetLaunchTemplateConfigRequest>> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
     }
 
-    public EC2Fleet withLaunchTemplateConfigs(List<Property<FleetLaunchTemplateConfigRequest>> launchTemplateConfigs) {
+    public EC2Fleet withLaunchTemplateConfigs(List<Property<EC2FleetFleetLaunchTemplateConfigRequest>> launchTemplateConfigs) {
         this.launchTemplateConfigs = launchTemplateConfigs;
         return this;
     }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Classifier.XMLClassifier.schema.json",
-  "title" : "XMLClassifier",
+  "title" : "ClassifierXMLClassifier",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html",
   "type" : "object",
-  "javaType" : "aws.glue.XMLClassifier",
-  "javaInterfaces" : [ "aws.Property<XMLClassifier>" ],
+  "javaType" : "aws.glue.ClassifierXMLClassifier",
+  "javaInterfaces" : [ "aws.Property<ClassifierXMLClassifier>" ],
   "properties" : {
     "RowTag" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-classifier-xmlclassifier.html#cfn-glue-classifier-xmlclassifier-rowtag",

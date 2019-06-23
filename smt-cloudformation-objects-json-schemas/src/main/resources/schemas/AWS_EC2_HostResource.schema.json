@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.HostResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<HostResource>", "aws.HasCondition<HostResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

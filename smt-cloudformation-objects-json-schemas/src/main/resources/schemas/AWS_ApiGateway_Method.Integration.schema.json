@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGateway_Method.Integration.schema.json",
-  "title" : "Integration",
+  "title" : "MethodIntegration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html",
   "type" : "object",
-  "javaType" : "aws.apigateway.Integration",
-  "javaInterfaces" : [ "aws.Property<Integration>" ],
+  "javaType" : "aws.apigateway.MethodIntegration",
+  "javaInterfaces" : [ "aws.Property<MethodIntegration>" ],
   "properties" : {
     "CacheKeyParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html#cfn-apigateway-method-integration-cachekeyparameters",
@@ -52,7 +52,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_Method.IntegrationResponse.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.IntegrationResponse>"
+        "javaType" : "aws.Property<aws.apigateway.MethodIntegrationResponse>"
       }
     },
     "PassthroughBehavior" : {

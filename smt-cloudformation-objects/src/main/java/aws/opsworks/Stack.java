@@ -70,14 +70,14 @@ public class Stack {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-attributes")
     private Map<String, String> attributes;
     /**
-     * ChefConfiguration
+     * StackChefConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html
      * 
      */
     @JsonProperty("ChefConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html")
-    private Property<ChefConfiguration> chefConfiguration;
+    private Property<StackChefConfiguration> chefConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-cloneappids
      * 
@@ -94,23 +94,23 @@ public class Stack {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-clonepermissions")
     private Boolean clonePermissions;
     /**
-     * StackConfigurationManager
+     * StackStackConfigurationManager
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html
      * 
      */
     @JsonProperty("ConfigurationManager")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html")
-    private Property<StackConfigurationManager> configurationManager;
+    private Property<StackStackConfigurationManager> configurationManager;
     /**
-     * DataSource
+     * StackSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html
      * 
      */
     @JsonProperty("CustomCookbooksSource")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html")
-    private Property<Source> customCookbooksSource;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html")
+    private Property<StackSource> customCookbooksSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-custjson
      * 
@@ -174,7 +174,7 @@ public class Stack {
     @JsonProperty("ElasticIps")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-elasticips")
-    private Set<Property<ElasticIp>> elasticIps = new LinkedHashSet<Property<ElasticIp>>();
+    private Set<Property<StackElasticIp>> elasticIps = new LinkedHashSet<Property<StackElasticIp>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-hostnametheme
      * 
@@ -196,7 +196,7 @@ public class Stack {
     @JsonProperty("RdsDbInstances")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-rdsdbinstances")
-    private Set<Property<RdsDbInstance>> rdsDbInstances = new LinkedHashSet<Property<RdsDbInstance>>();
+    private Set<Property<StackRdsDbInstance>> rdsDbInstances = new LinkedHashSet<Property<StackRdsDbInstance>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html#cfn-opsworks-stack-servicerolearn
      * 
@@ -287,28 +287,28 @@ public class Stack {
     }
 
     /**
-     * ChefConfiguration
+     * StackChefConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ChefConfiguration> getChefConfiguration() {
+    public Property<StackChefConfiguration> getChefConfiguration() {
         return chefConfiguration;
     }
 
     /**
-     * ChefConfiguration
+     * StackChefConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setChefConfiguration(Property<ChefConfiguration> chefConfiguration) {
+    public void setChefConfiguration(Property<StackChefConfiguration> chefConfiguration) {
         this.chefConfiguration = chefConfiguration;
     }
 
-    public Stack withChefConfiguration(Property<ChefConfiguration> chefConfiguration) {
+    public Stack withChefConfiguration(Property<StackChefConfiguration> chefConfiguration) {
         this.chefConfiguration = chefConfiguration;
         return this;
     }
@@ -360,55 +360,55 @@ public class Stack {
     }
 
     /**
-     * StackConfigurationManager
+     * StackStackConfigurationManager
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html
      * 
      */
     @JsonIgnore
-    public Property<StackConfigurationManager> getConfigurationManager() {
+    public Property<StackStackConfigurationManager> getConfigurationManager() {
         return configurationManager;
     }
 
     /**
-     * StackConfigurationManager
+     * StackStackConfigurationManager
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html
      * 
      */
     @JsonIgnore
-    public void setConfigurationManager(Property<StackConfigurationManager> configurationManager) {
+    public void setConfigurationManager(Property<StackStackConfigurationManager> configurationManager) {
         this.configurationManager = configurationManager;
     }
 
-    public Stack withConfigurationManager(Property<StackConfigurationManager> configurationManager) {
+    public Stack withConfigurationManager(Property<StackStackConfigurationManager> configurationManager) {
         this.configurationManager = configurationManager;
         return this;
     }
 
     /**
-     * DataSource
+     * StackSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html
      * 
      */
     @JsonIgnore
-    public Property<Source> getCustomCookbooksSource() {
+    public Property<StackSource> getCustomCookbooksSource() {
         return customCookbooksSource;
     }
 
     /**
-     * DataSource
+     * StackSource
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html
      * 
      */
     @JsonIgnore
-    public void setCustomCookbooksSource(Property<Source> customCookbooksSource) {
+    public void setCustomCookbooksSource(Property<StackSource> customCookbooksSource) {
         this.customCookbooksSource = customCookbooksSource;
     }
 
-    public Stack withCustomCookbooksSource(Property<Source> customCookbooksSource) {
+    public Stack withCustomCookbooksSource(Property<StackSource> customCookbooksSource) {
         this.customCookbooksSource = customCookbooksSource;
         return this;
     }
@@ -602,7 +602,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Set<Property<ElasticIp>> getElasticIps() {
+    public Set<Property<StackElasticIp>> getElasticIps() {
         return elasticIps;
     }
 
@@ -611,11 +611,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setElasticIps(Set<Property<ElasticIp>> elasticIps) {
+    public void setElasticIps(Set<Property<StackElasticIp>> elasticIps) {
         this.elasticIps = elasticIps;
     }
 
-    public Stack withElasticIps(Set<Property<ElasticIp>> elasticIps) {
+    public Stack withElasticIps(Set<Property<StackElasticIp>> elasticIps) {
         this.elasticIps = elasticIps;
         return this;
     }
@@ -671,7 +671,7 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public Set<Property<RdsDbInstance>> getRdsDbInstances() {
+    public Set<Property<StackRdsDbInstance>> getRdsDbInstances() {
         return rdsDbInstances;
     }
 
@@ -680,11 +680,11 @@ public class Stack {
      * 
      */
     @JsonIgnore
-    public void setRdsDbInstances(Set<Property<RdsDbInstance>> rdsDbInstances) {
+    public void setRdsDbInstances(Set<Property<StackRdsDbInstance>> rdsDbInstances) {
         this.rdsDbInstances = rdsDbInstances;
     }
 
-    public Stack withRdsDbInstances(Set<Property<RdsDbInstance>> rdsDbInstances) {
+    public Stack withRdsDbInstances(Set<Property<StackRdsDbInstance>> rdsDbInstances) {
         this.rdsDbInstances = rdsDbInstances;
         return this;
     }

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DynamoDB_Table.Projection.schema.json",
-  "title" : "Projection",
+  "title" : "TableProjection",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html",
   "type" : "object",
-  "javaType" : "aws.dynamodb.Projection",
-  "javaInterfaces" : [ "aws.Property<Projection>" ],
+  "javaType" : "aws.dynamodb.TableProjection",
+  "javaInterfaces" : [ "aws.Property<TableProjection>" ],
   "properties" : {
     "NonKeyAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html#cfn-dynamodb-projectionobj-nonkeyatt",

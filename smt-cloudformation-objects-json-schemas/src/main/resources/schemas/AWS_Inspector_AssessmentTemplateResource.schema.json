@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.inspector.AssessmentTemplateResource",
-  "javaInterfaces" : [ "aws.HasAttributes<AssessmentTemplateAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<AssessmentTemplateResource>", "aws.HasCondition<AssessmentTemplateResource>", "aws.HasAttributes<AssessmentTemplateAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

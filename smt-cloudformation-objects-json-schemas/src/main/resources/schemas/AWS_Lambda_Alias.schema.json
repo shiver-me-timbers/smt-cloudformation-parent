@@ -29,7 +29,7 @@
     "RoutingConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html#cfn-lambda-alias-routingconfig",
       "$ref" : "AWS_Lambda_Alias.AliasRoutingConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.lambda.AliasRoutingConfiguration>"
+      "javaType" : "aws.Property<aws.lambda.AliasAliasRoutingConfiguration>"
     }
   }
 }

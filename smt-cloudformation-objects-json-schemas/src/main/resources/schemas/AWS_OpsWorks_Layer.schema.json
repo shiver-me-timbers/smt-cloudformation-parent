@@ -26,12 +26,13 @@
     },
     "CustomJson" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customjson",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "CustomRecipes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customrecipes",
       "$ref" : "AWS_OpsWorks_Layer.Recipes.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.Recipes>"
+      "javaType" : "aws.Property<aws.opsworks.LayerRecipes>"
     },
     "CustomSecurityGroupIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-customsecuritygroupids",
@@ -52,12 +53,12 @@
     "LifecycleEventConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-lifecycleeventconfiguration",
       "$ref" : "AWS_OpsWorks_Layer.LifecycleEventConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.LifecycleEventConfiguration>"
+      "javaType" : "aws.Property<aws.opsworks.LayerLifecycleEventConfiguration>"
     },
     "LoadBasedAutoScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-loadbasedautoscaling",
       "$ref" : "AWS_OpsWorks_Layer.LoadBasedAutoScaling.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.LoadBasedAutoScaling>"
+      "javaType" : "aws.Property<aws.opsworks.LayerLoadBasedAutoScaling>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-layer.html#cfn-opsworks-layer-name",
@@ -104,7 +105,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_OpsWorks_Layer.VolumeConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.VolumeConfiguration>"
+        "javaType" : "aws.Property<aws.opsworks.LayerVolumeConfiguration>"
       }
     }
   }

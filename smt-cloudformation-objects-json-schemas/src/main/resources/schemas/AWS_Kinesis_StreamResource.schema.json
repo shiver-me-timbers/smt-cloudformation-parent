@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kinesis.StreamResource",
-  "javaInterfaces" : [ "aws.HasAttributes<StreamAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<StreamResource>", "aws.HasCondition<StreamResource>", "aws.HasAttributes<StreamAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

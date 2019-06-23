@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ses.ReceiptFilterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ReceiptFilterResource>", "aws.HasCondition<ReceiptFilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

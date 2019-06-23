@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ecs.TaskDefinitionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TaskDefinitionResource>", "aws.HasCondition<TaskDefinitionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

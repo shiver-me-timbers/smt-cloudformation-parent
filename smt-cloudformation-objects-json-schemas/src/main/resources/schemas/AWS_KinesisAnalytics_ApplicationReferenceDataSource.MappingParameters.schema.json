@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.MappingParameters.schema.json",
-  "title" : "MappingParameters",
+  "title" : "ApplicationReferenceDataSourceMappingParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.MappingParameters",
-  "javaInterfaces" : [ "aws.Property<MappingParameters>" ],
+  "javaType" : "aws.kinesisanalytics.ApplicationReferenceDataSourceMappingParameters",
+  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceMappingParameters>" ],
   "properties" : {
     "JSONMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-jsonmappingparameters",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.JSONMappingParameters>"
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.JSONMappingParameters.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalytics.ApplicationReferenceDataSourceJSONMappingParameters>"
     },
     "CSVMappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-mappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-mappingparameters-csvmappingparameters",
-      "$ref" : "AWS_KinesisAnalytics_Application.CSVMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalytics.CSVMappingParameters>"
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.CSVMappingParameters.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalytics.ApplicationReferenceDataSourceCSVMappingParameters>"
     }
   }
 }

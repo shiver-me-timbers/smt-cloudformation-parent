@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.opsworks.UserProfileResource",
-  "javaInterfaces" : [ "aws.HasAttributes<UserProfileAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<UserProfileResource>", "aws.HasCondition<UserProfileResource>", "aws.HasAttributes<UserProfileAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

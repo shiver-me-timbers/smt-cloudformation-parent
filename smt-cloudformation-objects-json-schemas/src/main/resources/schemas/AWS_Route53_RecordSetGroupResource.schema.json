@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.route53.RecordSetGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<RecordSetGroupResource>", "aws.HasCondition<RecordSetGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

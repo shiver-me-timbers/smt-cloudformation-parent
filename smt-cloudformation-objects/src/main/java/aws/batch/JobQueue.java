@@ -35,7 +35,7 @@ public class JobQueue {
      */
     @JsonProperty("ComputeEnvironmentOrder")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-computeenvironmentorder")
-    private List<Property<ComputeEnvironmentOrder>> computeEnvironmentOrder = new ArrayList<Property<ComputeEnvironmentOrder>>();
+    private List<Property<JobQueueComputeEnvironmentOrder>> computeEnvironmentOrder = new ArrayList<Property<JobQueueComputeEnvironmentOrder>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobqueue.html#cfn-batch-jobqueue-priority
      * 
@@ -63,7 +63,7 @@ public class JobQueue {
      * 
      */
     @JsonIgnore
-    public List<Property<ComputeEnvironmentOrder>> getComputeEnvironmentOrder() {
+    public List<Property<JobQueueComputeEnvironmentOrder>> getComputeEnvironmentOrder() {
         return computeEnvironmentOrder;
     }
 
@@ -72,11 +72,11 @@ public class JobQueue {
      * 
      */
     @JsonIgnore
-    public void setComputeEnvironmentOrder(List<Property<ComputeEnvironmentOrder>> computeEnvironmentOrder) {
+    public void setComputeEnvironmentOrder(List<Property<JobQueueComputeEnvironmentOrder>> computeEnvironmentOrder) {
         this.computeEnvironmentOrder = computeEnvironmentOrder;
     }
 
-    public JobQueue withComputeEnvironmentOrder(List<Property<ComputeEnvironmentOrder>> computeEnvironmentOrder) {
+    public JobQueue withComputeEnvironmentOrder(List<Property<JobQueueComputeEnvironmentOrder>> computeEnvironmentOrder) {
         this.computeEnvironmentOrder = computeEnvironmentOrder;
         return this;
     }

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.InstanceProfileResource",
-  "javaInterfaces" : [ "aws.HasAttributes<InstanceProfileAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<InstanceProfileResource>", "aws.HasCondition<InstanceProfileResource>", "aws.HasAttributes<InstanceProfileAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

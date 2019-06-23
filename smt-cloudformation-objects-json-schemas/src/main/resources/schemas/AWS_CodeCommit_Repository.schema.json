@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_CodeCommit_Repository.RepositoryTrigger.schema.json",
-        "javaType" : "aws.Property<aws.codecommit.RepositoryTrigger>"
+        "javaType" : "aws.Property<aws.codecommit.RepositoryRepositoryTrigger>"
       }
     },
     "RepositoryDescription" : {

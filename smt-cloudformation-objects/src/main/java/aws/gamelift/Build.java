@@ -34,14 +34,14 @@ public class Build {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-name")
     private CharSequence name;
     /**
-     * S3Location
+     * BuildS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html
      * 
      */
     @JsonProperty("StorageLocation")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html")
-    private Property<S3Location> storageLocation;
+    private Property<BuildS3Location> storageLocation;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html#cfn-gamelift-build-version
      * 
@@ -74,28 +74,28 @@ public class Build {
     }
 
     /**
-     * S3Location
+     * BuildS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html
      * 
      */
     @JsonIgnore
-    public Property<S3Location> getStorageLocation() {
+    public Property<BuildS3Location> getStorageLocation() {
         return storageLocation;
     }
 
     /**
-     * S3Location
+     * BuildS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html
      * 
      */
     @JsonIgnore
-    public void setStorageLocation(Property<S3Location> storageLocation) {
+    public void setStorageLocation(Property<BuildS3Location> storageLocation) {
         this.storageLocation = storageLocation;
     }
 
-    public Build withStorageLocation(Property<S3Location> storageLocation) {
+    public Build withStorageLocation(Property<BuildS3Location> storageLocation) {
         this.storageLocation = storageLocation;
         return this;
     }

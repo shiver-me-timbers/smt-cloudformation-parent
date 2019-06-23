@@ -198,7 +198,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_DBInstance.ProcessorFeature.schema.json",
-        "javaType" : "aws.Property<aws.rds.ProcessorFeature>"
+        "javaType" : "aws.Property<aws.rds.DBInstanceProcessorFeature>"
       }
     },
     "PromotionTier" : {

@@ -11,7 +11,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cloud9_EnvironmentEC2.Repository.schema.json",
-        "javaType" : "aws.Property<aws.cloud9.Repository>"
+        "javaType" : "aws.Property<aws.cloud9.EnvironmentEC2Repository>"
       }
     },
     "OwnerArn" : {

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPCEndpointServicePermissionsResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPCEndpointServicePermissionsResource>", "aws.HasCondition<VPCEndpointServicePermissionsResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

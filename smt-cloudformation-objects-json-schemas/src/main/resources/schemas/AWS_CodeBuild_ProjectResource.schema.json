@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codebuild.ProjectResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ProjectAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ProjectResource>", "aws.HasCondition<ProjectResource>", "aws.HasAttributes<ProjectAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

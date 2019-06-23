@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kinesisanalyticsv2.ApplicationCloudWatchLoggingOptionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ApplicationCloudWatchLoggingOptionResource>", "aws.HasCondition<ApplicationCloudWatchLoggingOptionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

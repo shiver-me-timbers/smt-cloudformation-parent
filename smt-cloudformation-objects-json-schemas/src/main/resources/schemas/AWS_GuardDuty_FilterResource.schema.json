@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.guardduty.FilterResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<FilterResource>", "aws.HasCondition<FilterResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -28,14 +28,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class EventBusPolicy {
 
     /**
-     * Condition
+     * EventBusPolicyCondition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html
      * 
      */
     @JsonProperty("Condition")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html")
-    private Property<Condition> condition;
+    private Property<EventBusPolicyCondition> condition;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-action
      * 
@@ -59,28 +59,28 @@ public class EventBusPolicy {
     private CharSequence principal;
 
     /**
-     * Condition
+     * EventBusPolicyCondition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html
      * 
      */
     @JsonIgnore
-    public Property<Condition> getCondition() {
+    public Property<EventBusPolicyCondition> getCondition() {
         return condition;
     }
 
     /**
-     * Condition
+     * EventBusPolicyCondition
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-eventbuspolicy-condition.html
      * 
      */
     @JsonIgnore
-    public void setCondition(Property<Condition> condition) {
+    public void setCondition(Property<EventBusPolicyCondition> condition) {
         this.condition = condition;
     }
 
-    public EventBusPolicy withCondition(Property<Condition> condition) {
+    public EventBusPolicy withCondition(Property<EventBusPolicyCondition> condition) {
         this.condition = condition;
         return this;
     }

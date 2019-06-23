@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.wafregional.XssMatchSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<XssMatchSetResource>", "aws.HasCondition<XssMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

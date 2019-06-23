@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_Instance.Volume.schema.json",
-  "title" : "Volume",
+  "title" : "InstanceVolume",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html",
   "type" : "object",
-  "javaType" : "aws.ec2.Volume",
-  "javaInterfaces" : [ "aws.Property<Volume>" ],
+  "javaType" : "aws.ec2.InstanceVolume",
+  "javaInterfaces" : [ "aws.Property<InstanceVolume>" ],
   "properties" : {
     "Device" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html#cfn-ec2-mountpoint-device",

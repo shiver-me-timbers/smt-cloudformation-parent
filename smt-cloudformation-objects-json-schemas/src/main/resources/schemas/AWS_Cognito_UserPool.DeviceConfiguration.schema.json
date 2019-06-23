@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_UserPool.DeviceConfiguration.schema.json",
-  "title" : "DeviceConfiguration",
+  "title" : "UserPoolDeviceConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.cognito.DeviceConfiguration",
-  "javaInterfaces" : [ "aws.Property<DeviceConfiguration>" ],
+  "javaType" : "aws.cognito.UserPoolDeviceConfiguration",
+  "javaInterfaces" : [ "aws.Property<UserPoolDeviceConfiguration>" ],
   "properties" : {
     "DeviceOnlyRememberedOnUserPrompt" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-deviceconfiguration.html#cfn-cognito-userpool-deviceconfiguration-deviceonlyrememberedonuserprompt",

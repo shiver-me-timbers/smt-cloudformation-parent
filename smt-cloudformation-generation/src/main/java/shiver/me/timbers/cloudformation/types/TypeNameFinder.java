@@ -33,7 +33,10 @@ public class TypeNameFinder {
     }
 
     private Predicate<String> matches(String resourceName, String propertyType) {
-        return propertyName -> propertyName.startsWith(javaTypes.extractPackage(resourceName))
-            && propertyName.endsWith(propertyType);
+        return propertyName ->
+            propertyName.startsWith(
+                javaTypes.extractPackage(resourceName) + "::" + javaTypes.extractResourceClassName(resourceName)
+            )
+                && propertyName.endsWith(propertyType);
     }
 }

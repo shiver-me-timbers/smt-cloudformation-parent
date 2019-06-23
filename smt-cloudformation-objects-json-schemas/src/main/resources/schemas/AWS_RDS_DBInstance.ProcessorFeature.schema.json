@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_RDS_DBInstance.ProcessorFeature.schema.json",
-  "title" : "ProcessorFeature",
+  "title" : "DBInstanceProcessorFeature",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-processorfeature.html",
   "type" : "object",
-  "javaType" : "aws.rds.ProcessorFeature",
-  "javaInterfaces" : [ "aws.Property<ProcessorFeature>" ],
+  "javaType" : "aws.rds.DBInstanceProcessorFeature",
+  "javaInterfaces" : [ "aws.Property<DBInstanceProcessorFeature>" ],
   "properties" : {
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-dbinstance-processorfeature.html#cfn-rds-dbinstance-processorfeature-name",

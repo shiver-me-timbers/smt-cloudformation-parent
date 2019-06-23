@@ -33,23 +33,23 @@ public class Budget {
      */
     @JsonProperty("NotificationsWithSubscribers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers")
-    private List<Property<NotificationWithSubscribers>> notificationsWithSubscribers = new ArrayList<Property<NotificationWithSubscribers>>();
+    private List<Property<BudgetNotificationWithSubscribers>> notificationsWithSubscribers = new ArrayList<Property<BudgetNotificationWithSubscribers>>();
     /**
-     * BudgetData
+     * BudgetBudgetData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
     @JsonProperty("Budget")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html")
-    private Property<BudgetData> budget;
+    private Property<BudgetBudgetData> budget;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-notificationswithsubscribers
      * 
      */
     @JsonIgnore
-    public List<Property<NotificationWithSubscribers>> getNotificationsWithSubscribers() {
+    public List<Property<BudgetNotificationWithSubscribers>> getNotificationsWithSubscribers() {
         return notificationsWithSubscribers;
     }
 
@@ -58,38 +58,38 @@ public class Budget {
      * 
      */
     @JsonIgnore
-    public void setNotificationsWithSubscribers(List<Property<NotificationWithSubscribers>> notificationsWithSubscribers) {
+    public void setNotificationsWithSubscribers(List<Property<BudgetNotificationWithSubscribers>> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
     }
 
-    public Budget withNotificationsWithSubscribers(List<Property<NotificationWithSubscribers>> notificationsWithSubscribers) {
+    public Budget withNotificationsWithSubscribers(List<Property<BudgetNotificationWithSubscribers>> notificationsWithSubscribers) {
         this.notificationsWithSubscribers = notificationsWithSubscribers;
         return this;
     }
 
     /**
-     * BudgetData
+     * BudgetBudgetData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
     @JsonIgnore
-    public Property<BudgetData> getBudget() {
+    public Property<BudgetBudgetData> getBudget() {
         return budget;
     }
 
     /**
-     * BudgetData
+     * BudgetBudgetData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-budgets-budget-budgetdata.html
      * 
      */
     @JsonIgnore
-    public void setBudget(Property<BudgetData> budget) {
+    public void setBudget(Property<BudgetBudgetData> budget) {
         this.budget = budget;
     }
 
-    public Budget withBudget(Property<BudgetData> budget) {
+    public Budget withBudget(Property<BudgetBudgetData> budget) {
         this.budget = budget;
         return this;
     }

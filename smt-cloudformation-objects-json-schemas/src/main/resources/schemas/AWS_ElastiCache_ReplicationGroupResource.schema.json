@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.elasticache.ReplicationGroupResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ReplicationGroupAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ReplicationGroupResource>", "aws.HasCondition<ReplicationGroupResource>", "aws.HasAttributes<ReplicationGroupAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

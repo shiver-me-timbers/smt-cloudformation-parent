@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicediscovery.PublicDnsNamespaceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<PublicDnsNamespaceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<PublicDnsNamespaceResource>", "aws.HasCondition<PublicDnsNamespaceResource>", "aws.HasAttributes<PublicDnsNamespaceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

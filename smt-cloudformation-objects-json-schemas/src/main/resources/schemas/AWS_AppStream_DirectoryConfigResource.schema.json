@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appstream.DirectoryConfigResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DirectoryConfigResource>", "aws.HasCondition<DirectoryConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

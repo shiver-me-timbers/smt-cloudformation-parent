@@ -6,6 +6,8 @@ import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -31,7 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class NetworkInterfaceResource
     extends Resource
-    implements HasAttributes<NetworkInterfaceAttributes>
+    implements HasAttributes<NetworkInterfaceAttributes> , HasCondition<NetworkInterfaceResource> , HasDependsOn<NetworkInterfaceResource>
 {
 
     @JsonProperty("Type")

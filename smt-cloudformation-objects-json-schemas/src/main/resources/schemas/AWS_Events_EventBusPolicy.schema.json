@@ -9,7 +9,7 @@
     "Condition" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-condition",
       "$ref" : "AWS_Events_EventBusPolicy.Condition.schema.json",
-      "javaType" : "aws.Property<aws.events.Condition>"
+      "javaType" : "aws.Property<aws.events.EventBusPolicyCondition>"
     },
     "Action" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html#cfn-events-eventbuspolicy-action",

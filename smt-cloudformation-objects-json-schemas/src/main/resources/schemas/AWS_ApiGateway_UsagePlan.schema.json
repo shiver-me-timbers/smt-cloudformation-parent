@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ApiGateway_UsagePlan.ApiStage.schema.json",
-        "javaType" : "aws.Property<aws.apigateway.ApiStage>"
+        "javaType" : "aws.Property<aws.apigateway.UsagePlanApiStage>"
       }
     },
     "Description" : {
@@ -23,12 +23,12 @@
     "Quota" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-quota",
       "$ref" : "AWS_ApiGateway_UsagePlan.QuotaSettings.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.QuotaSettings>"
+      "javaType" : "aws.Property<aws.apigateway.UsagePlanQuotaSettings>"
     },
     "Throttle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-throttle",
       "$ref" : "AWS_ApiGateway_UsagePlan.ThrottleSettings.schema.json",
-      "javaType" : "aws.Property<aws.apigateway.ThrottleSettings>"
+      "javaType" : "aws.Property<aws.apigateway.UsagePlanThrottleSettings>"
     },
     "UsagePlanName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname",

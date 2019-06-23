@@ -96,7 +96,7 @@ public class Alarm {
      */
     @JsonProperty("Dimensions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-dimension")
-    private List<Property<Dimension>> dimensions = new ArrayList<Property<Dimension>>();
+    private List<Property<AlarmDimension>> dimensions = new ArrayList<Property<AlarmDimension>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-evaluatelowsamplecountpercentile
      * 
@@ -139,7 +139,7 @@ public class Alarm {
     @JsonProperty("Metrics")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarm-metrics")
-    private Set<Property<MetricDataQuery>> metrics = new LinkedHashSet<Property<MetricDataQuery>>();
+    private Set<Property<AlarmMetricDataQuery>> metrics = new LinkedHashSet<Property<AlarmMetricDataQuery>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-alarm.html#cfn-cloudwatch-alarms-namespace
      * 
@@ -333,7 +333,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public List<Property<Dimension>> getDimensions() {
+    public List<Property<AlarmDimension>> getDimensions() {
         return dimensions;
     }
 
@@ -342,11 +342,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setDimensions(List<Property<Dimension>> dimensions) {
+    public void setDimensions(List<Property<AlarmDimension>> dimensions) {
         this.dimensions = dimensions;
     }
 
-    public Alarm withDimensions(List<Property<Dimension>> dimensions) {
+    public Alarm withDimensions(List<Property<AlarmDimension>> dimensions) {
         this.dimensions = dimensions;
         return this;
     }
@@ -471,7 +471,7 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public Set<Property<MetricDataQuery>> getMetrics() {
+    public Set<Property<AlarmMetricDataQuery>> getMetrics() {
         return metrics;
     }
 
@@ -480,11 +480,11 @@ public class Alarm {
      * 
      */
     @JsonIgnore
-    public void setMetrics(Set<Property<MetricDataQuery>> metrics) {
+    public void setMetrics(Set<Property<AlarmMetricDataQuery>> metrics) {
         this.metrics = metrics;
     }
 
-    public Alarm withMetrics(Set<Property<MetricDataQuery>> metrics) {
+    public Alarm withMetrics(Set<Property<AlarmMetricDataQuery>> metrics) {
         this.metrics = metrics;
         return this;
     }

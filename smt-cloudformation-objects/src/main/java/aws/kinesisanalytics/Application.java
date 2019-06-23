@@ -42,7 +42,7 @@ public class Application {
      */
     @JsonProperty("Inputs")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-inputs")
-    private List<Property<Input>> inputs = new ArrayList<Property<Input>>();
+    private List<Property<ApplicationInput>> inputs = new ArrayList<Property<ApplicationInput>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-application.html#cfn-kinesisanalytics-application-applicationdescription
      * 
@@ -86,7 +86,7 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public List<Property<Input>> getInputs() {
+    public List<Property<ApplicationInput>> getInputs() {
         return inputs;
     }
 
@@ -95,11 +95,11 @@ public class Application {
      * 
      */
     @JsonIgnore
-    public void setInputs(List<Property<Input>> inputs) {
+    public void setInputs(List<Property<ApplicationInput>> inputs) {
         this.inputs = inputs;
     }
 
-    public Application withInputs(List<Property<Input>> inputs) {
+    public Application withInputs(List<Property<ApplicationInput>> inputs) {
         this.inputs = inputs;
         return this;
     }

@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class LoggerDefinition {
 
     /**
-     * LoggerDefinitionVersion
+     * LoggerDefinitionLoggerDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html")
-    private Property<LoggerDefinitionVersion> initialVersion;
+    private Property<LoggerDefinitionLoggerDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-loggerdefinition.html#cfn-greengrass-loggerdefinition-name
      * 
@@ -43,28 +43,28 @@ public class LoggerDefinition {
     private CharSequence name;
 
     /**
-     * LoggerDefinitionVersion
+     * LoggerDefinitionLoggerDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<LoggerDefinitionVersion> getInitialVersion() {
+    public Property<LoggerDefinitionLoggerDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * LoggerDefinitionVersion
+     * LoggerDefinitionLoggerDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-loggerdefinition-loggerdefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<LoggerDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<LoggerDefinitionLoggerDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public LoggerDefinition withInitialVersion(Property<LoggerDefinitionVersion> initialVersion) {
+    public LoggerDefinition withInitialVersion(Property<LoggerDefinitionLoggerDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

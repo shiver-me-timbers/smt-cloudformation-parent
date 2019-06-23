@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_RoboMaker_SimulationApplication.SimulationSoftwareSuite.schema.json",
-  "title" : "SimulationSoftwareSuite",
+  "title" : "SimulationApplicationSimulationSoftwareSuite",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html",
   "type" : "object",
-  "javaType" : "aws.robomaker.SimulationSoftwareSuite",
-  "javaInterfaces" : [ "aws.Property<SimulationSoftwareSuite>" ],
+  "javaType" : "aws.robomaker.SimulationApplicationSimulationSoftwareSuite",
+  "javaInterfaces" : [ "aws.Property<SimulationApplicationSimulationSoftwareSuite>" ],
   "properties" : {
     "Version" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html#cfn-robomaker-simulationapplication-simulationsoftwaresuite-version",

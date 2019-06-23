@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VolumeAttachmentResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VolumeAttachmentResource>", "aws.HasCondition<VolumeAttachmentResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

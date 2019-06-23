@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
-  "title" : "S3DestinationConfiguration",
+  "title" : "DeliveryStreamS3DestinationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.S3DestinationConfiguration",
-  "javaInterfaces" : [ "aws.Property<S3DestinationConfiguration>" ],
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamS3DestinationConfiguration>" ],
   "properties" : {
     "BucketARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bucketarn",
@@ -15,12 +15,12 @@
     "BufferingHints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-bufferinghints",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchBufferingHints.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.BufferingHints>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamBufferingHints>"
     },
     "CloudWatchLoggingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-cloudwatchloggingoptions",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.CloudWatchLoggingOptions>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamCloudWatchLoggingOptions>"
     },
     "CompressionFormat" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-compressionformat",
@@ -30,7 +30,7 @@
     "EncryptionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-encryptionconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.EncryptionConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.EncryptionConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamEncryptionConfiguration>"
     },
     "Prefix" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html#cfn-kinesisfirehose-deliverystream-s3destinationconfiguration-prefix",

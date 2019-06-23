@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_SpotFleet.SpotFleetMonitoring.schema.json",
-  "title" : "SpotFleetMonitoring",
+  "title" : "SpotFleetSpotFleetMonitoring",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html",
   "type" : "object",
-  "javaType" : "aws.ec2.SpotFleetMonitoring",
-  "javaInterfaces" : [ "aws.Property<SpotFleetMonitoring>" ],
+  "javaType" : "aws.ec2.SpotFleetSpotFleetMonitoring",
+  "javaInterfaces" : [ "aws.Property<SpotFleetSpotFleetMonitoring>" ],
   "properties" : {
     "Enabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html#cfn-ec2-spotfleet-spotfleetmonitoring-enabled",

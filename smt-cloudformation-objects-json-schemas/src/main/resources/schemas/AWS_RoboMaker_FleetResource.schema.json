@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.robomaker.FleetResource",
-  "javaInterfaces" : [ "aws.HasAttributes<FleetAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<FleetResource>", "aws.HasCondition<FleetResource>", "aws.HasAttributes<FleetAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

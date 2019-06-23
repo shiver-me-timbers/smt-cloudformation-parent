@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_Service.NetworkConfiguration.schema.json",
-  "title" : "NetworkConfiguration",
+  "title" : "ServiceNetworkConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.ecs.NetworkConfiguration",
-  "javaInterfaces" : [ "aws.Property<NetworkConfiguration>" ],
+  "javaType" : "aws.ecs.ServiceNetworkConfiguration",
+  "javaInterfaces" : [ "aws.Property<ServiceNetworkConfiguration>" ],
   "properties" : {
     "AwsvpcConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-networkconfiguration.html#cfn-ecs-service-networkconfiguration-awsvpcconfiguration",
       "$ref" : "AWS_ECS_Service.AwsVpcConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.ecs.AwsVpcConfiguration>"
+      "javaType" : "aws.Property<aws.ecs.ServiceAwsVpcConfiguration>"
     }
   }
 }

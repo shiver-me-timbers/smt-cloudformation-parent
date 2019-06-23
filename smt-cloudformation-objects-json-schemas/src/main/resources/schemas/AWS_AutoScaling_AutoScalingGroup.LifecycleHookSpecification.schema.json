@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_AutoScalingGroup.LifecycleHookSpecification.schema.json",
-  "title" : "LifecycleHookSpecification",
+  "title" : "AutoScalingGroupLifecycleHookSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.LifecycleHookSpecification",
-  "javaInterfaces" : [ "aws.Property<LifecycleHookSpecification>" ],
+  "javaType" : "aws.autoscaling.AutoScalingGroupLifecycleHookSpecification",
+  "javaInterfaces" : [ "aws.Property<AutoScalingGroupLifecycleHookSpecification>" ],
   "properties" : {
     "DefaultResult" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-autoscalinggroup-lifecyclehookspecification.html#cfn-autoscaling-autoscalinggroup-lifecyclehookspecification-defaultresult",

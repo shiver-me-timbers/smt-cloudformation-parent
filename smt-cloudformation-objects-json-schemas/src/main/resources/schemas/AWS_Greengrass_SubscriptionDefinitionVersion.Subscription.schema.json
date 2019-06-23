@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_SubscriptionDefinitionVersion.Subscription.schema.json",
-  "title" : "Subscription",
+  "title" : "SubscriptionDefinitionVersionSubscription",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinitionversion-subscription.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.Subscription",
-  "javaInterfaces" : [ "aws.Property<Subscription>" ],
+  "javaType" : "aws.greengrass.SubscriptionDefinitionVersionSubscription",
+  "javaInterfaces" : [ "aws.Property<SubscriptionDefinitionVersionSubscription>" ],
   "properties" : {
     "Target" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinitionversion-subscription.html#cfn-greengrass-subscriptiondefinitionversion-subscription-target",

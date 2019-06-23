@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot.TopicRuleResource",
-  "javaInterfaces" : [ "aws.HasAttributes<TopicRuleAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<TopicRuleResource>", "aws.HasCondition<TopicRuleResource>", "aws.HasAttributes<TopicRuleAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -25,38 +25,38 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class CloudFrontOriginAccessIdentity {
 
     /**
-     * CloudFrontOriginAccessIdentityConfig
+     * CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html
      * 
      */
     @JsonProperty("CloudFrontOriginAccessIdentityConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html")
-    private Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig;
+    private Property<CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig;
 
     /**
-     * CloudFrontOriginAccessIdentityConfig
+     * CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html
      * 
      */
     @JsonIgnore
-    public Property<CloudFrontOriginAccessIdentityConfig> getCloudFrontOriginAccessIdentityConfig() {
+    public Property<CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig> getCloudFrontOriginAccessIdentityConfig() {
         return cloudFrontOriginAccessIdentityConfig;
     }
 
     /**
-     * CloudFrontOriginAccessIdentityConfig
+     * CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cloudfrontoriginaccessidentity-cloudfrontoriginaccessidentityconfig.html
      * 
      */
     @JsonIgnore
-    public void setCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
+    public void setCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
         this.cloudFrontOriginAccessIdentityConfig = cloudFrontOriginAccessIdentityConfig;
     }
 
-    public CloudFrontOriginAccessIdentity withCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
+    public CloudFrontOriginAccessIdentity withCloudFrontOriginAccessIdentityConfig(Property<CloudFrontOriginAccessIdentityCloudFrontOriginAccessIdentityConfig> cloudFrontOriginAccessIdentityConfig) {
         this.cloudFrontOriginAccessIdentityConfig = cloudFrontOriginAccessIdentityConfig;
         return this;
     }

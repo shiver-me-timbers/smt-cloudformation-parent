@@ -29,14 +29,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Distribution {
 
     /**
-     * DistributionConfig
+     * DistributionDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html
      * 
      */
     @JsonProperty("DistributionConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html")
-    private Property<DistributionConfig> distributionConfig;
+    private Property<DistributionDistributionConfig> distributionConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudfront-distribution.html#cfn-cloudfront-distribution-tags
      * 
@@ -46,28 +46,28 @@ public class Distribution {
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
 
     /**
-     * DistributionConfig
+     * DistributionDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html
      * 
      */
     @JsonIgnore
-    public Property<DistributionConfig> getDistributionConfig() {
+    public Property<DistributionDistributionConfig> getDistributionConfig() {
         return distributionConfig;
     }
 
     /**
-     * DistributionConfig
+     * DistributionDistributionConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-distributionconfig.html
      * 
      */
     @JsonIgnore
-    public void setDistributionConfig(Property<DistributionConfig> distributionConfig) {
+    public void setDistributionConfig(Property<DistributionDistributionConfig> distributionConfig) {
         this.distributionConfig = distributionConfig;
     }
 
-    public Distribution withDistributionConfig(Property<DistributionConfig> distributionConfig) {
+    public Distribution withDistributionConfig(Property<DistributionDistributionConfig> distributionConfig) {
         this.distributionConfig = distributionConfig;
         return this;
     }

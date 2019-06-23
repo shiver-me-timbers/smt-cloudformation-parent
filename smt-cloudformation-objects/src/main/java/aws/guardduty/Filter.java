@@ -51,14 +51,14 @@ public class Filter {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-detectorid")
     private CharSequence detectorId;
     /**
-     * FindingCriteria
+     * FilterFindingCriteria
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html
      * 
      */
     @JsonProperty("FindingCriteria")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html")
-    private Property<FindingCriteria> findingCriteria;
+    private Property<FilterFindingCriteria> findingCriteria;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html#cfn-guardduty-filter-rank
      * 
@@ -144,28 +144,28 @@ public class Filter {
     }
 
     /**
-     * FindingCriteria
+     * FilterFindingCriteria
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html
      * 
      */
     @JsonIgnore
-    public Property<FindingCriteria> getFindingCriteria() {
+    public Property<FilterFindingCriteria> getFindingCriteria() {
         return findingCriteria;
     }
 
     /**
-     * FindingCriteria
+     * FilterFindingCriteria
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-guardduty-filter-findingcriteria.html
      * 
      */
     @JsonIgnore
-    public void setFindingCriteria(Property<FindingCriteria> findingCriteria) {
+    public void setFindingCriteria(Property<FilterFindingCriteria> findingCriteria) {
         this.findingCriteria = findingCriteria;
     }
 
-    public Filter withFindingCriteria(Property<FindingCriteria> findingCriteria) {
+    public Filter withFindingCriteria(Property<FilterFindingCriteria> findingCriteria) {
         this.findingCriteria = findingCriteria;
         return this;
     }

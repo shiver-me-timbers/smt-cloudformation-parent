@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -29,6 +31,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class ResourceResource
     extends aws.Resource
+    implements HasCondition<ResourceResource> , HasDependsOn<ResourceResource>
 {
 
     @JsonProperty("Type")

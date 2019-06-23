@@ -60,23 +60,23 @@ public class Domain {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-domainname")
     private CharSequence domainName;
     /**
-     * EBSOptions
+     * DomainEBSOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html
      * 
      */
     @JsonProperty("EBSOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html")
-    private Property<EBSOptions> eBSOptions;
+    private Property<DomainEBSOptions> eBSOptions;
     /**
-     * ElasticsearchClusterConfig
+     * DomainElasticsearchClusterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html
      * 
      */
     @JsonProperty("ElasticsearchClusterConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html")
-    private Property<ElasticsearchClusterConfig> elasticsearchClusterConfig;
+    private Property<DomainElasticsearchClusterConfig> elasticsearchClusterConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion
      * 
@@ -85,32 +85,32 @@ public class Domain {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-elasticsearchversion")
     private CharSequence elasticsearchVersion;
     /**
-     * EncryptionAtRestOptions
+     * DomainEncryptionAtRestOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html
      * 
      */
     @JsonProperty("EncryptionAtRestOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html")
-    private Property<EncryptionAtRestOptions> encryptionAtRestOptions;
+    private Property<DomainEncryptionAtRestOptions> encryptionAtRestOptions;
     /**
-     * NodeToNodeEncryptionOptions
+     * DomainNodeToNodeEncryptionOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
      * 
      */
     @JsonProperty("NodeToNodeEncryptionOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html")
-    private Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions;
+    private Property<DomainNodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions;
     /**
-     * SnapshotOptions
+     * DomainSnapshotOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
      * 
      */
     @JsonProperty("SnapshotOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html")
-    private Property<SnapshotOptions> snapshotOptions;
+    private Property<DomainSnapshotOptions> snapshotOptions;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags
      * 
@@ -119,14 +119,14 @@ public class Domain {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
-     * VPCOptions
+     * DomainVPCOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html
      * 
      */
     @JsonProperty("VPCOptions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html")
-    private Property<VPCOptions> vPCOptions;
+    private Property<DomainVPCOptions> vPCOptions;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticsearch-domain.html#cfn-elasticsearch-domain-accesspolicies
@@ -198,55 +198,55 @@ public class Domain {
     }
 
     /**
-     * EBSOptions
+     * DomainEBSOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html
      * 
      */
     @JsonIgnore
-    public Property<EBSOptions> getEBSOptions() {
+    public Property<DomainEBSOptions> getEBSOptions() {
         return eBSOptions;
     }
 
     /**
-     * EBSOptions
+     * DomainEBSOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html
      * 
      */
     @JsonIgnore
-    public void setEBSOptions(Property<EBSOptions> eBSOptions) {
+    public void setEBSOptions(Property<DomainEBSOptions> eBSOptions) {
         this.eBSOptions = eBSOptions;
     }
 
-    public Domain withEBSOptions(Property<EBSOptions> eBSOptions) {
+    public Domain withEBSOptions(Property<DomainEBSOptions> eBSOptions) {
         this.eBSOptions = eBSOptions;
         return this;
     }
 
     /**
-     * ElasticsearchClusterConfig
+     * DomainElasticsearchClusterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html
      * 
      */
     @JsonIgnore
-    public Property<ElasticsearchClusterConfig> getElasticsearchClusterConfig() {
+    public Property<DomainElasticsearchClusterConfig> getElasticsearchClusterConfig() {
         return elasticsearchClusterConfig;
     }
 
     /**
-     * ElasticsearchClusterConfig
+     * DomainElasticsearchClusterConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html
      * 
      */
     @JsonIgnore
-    public void setElasticsearchClusterConfig(Property<ElasticsearchClusterConfig> elasticsearchClusterConfig) {
+    public void setElasticsearchClusterConfig(Property<DomainElasticsearchClusterConfig> elasticsearchClusterConfig) {
         this.elasticsearchClusterConfig = elasticsearchClusterConfig;
     }
 
-    public Domain withElasticsearchClusterConfig(Property<ElasticsearchClusterConfig> elasticsearchClusterConfig) {
+    public Domain withElasticsearchClusterConfig(Property<DomainElasticsearchClusterConfig> elasticsearchClusterConfig) {
         this.elasticsearchClusterConfig = elasticsearchClusterConfig;
         return this;
     }
@@ -275,82 +275,82 @@ public class Domain {
     }
 
     /**
-     * EncryptionAtRestOptions
+     * DomainEncryptionAtRestOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html
      * 
      */
     @JsonIgnore
-    public Property<EncryptionAtRestOptions> getEncryptionAtRestOptions() {
+    public Property<DomainEncryptionAtRestOptions> getEncryptionAtRestOptions() {
         return encryptionAtRestOptions;
     }
 
     /**
-     * EncryptionAtRestOptions
+     * DomainEncryptionAtRestOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html
      * 
      */
     @JsonIgnore
-    public void setEncryptionAtRestOptions(Property<EncryptionAtRestOptions> encryptionAtRestOptions) {
+    public void setEncryptionAtRestOptions(Property<DomainEncryptionAtRestOptions> encryptionAtRestOptions) {
         this.encryptionAtRestOptions = encryptionAtRestOptions;
     }
 
-    public Domain withEncryptionAtRestOptions(Property<EncryptionAtRestOptions> encryptionAtRestOptions) {
+    public Domain withEncryptionAtRestOptions(Property<DomainEncryptionAtRestOptions> encryptionAtRestOptions) {
         this.encryptionAtRestOptions = encryptionAtRestOptions;
         return this;
     }
 
     /**
-     * NodeToNodeEncryptionOptions
+     * DomainNodeToNodeEncryptionOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
      * 
      */
     @JsonIgnore
-    public Property<NodeToNodeEncryptionOptions> getNodeToNodeEncryptionOptions() {
+    public Property<DomainNodeToNodeEncryptionOptions> getNodeToNodeEncryptionOptions() {
         return nodeToNodeEncryptionOptions;
     }
 
     /**
-     * NodeToNodeEncryptionOptions
+     * DomainNodeToNodeEncryptionOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-nodetonodeencryptionoptions.html
      * 
      */
     @JsonIgnore
-    public void setNodeToNodeEncryptionOptions(Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
+    public void setNodeToNodeEncryptionOptions(Property<DomainNodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
         this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
     }
 
-    public Domain withNodeToNodeEncryptionOptions(Property<NodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
+    public Domain withNodeToNodeEncryptionOptions(Property<DomainNodeToNodeEncryptionOptions> nodeToNodeEncryptionOptions) {
         this.nodeToNodeEncryptionOptions = nodeToNodeEncryptionOptions;
         return this;
     }
 
     /**
-     * SnapshotOptions
+     * DomainSnapshotOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
      * 
      */
     @JsonIgnore
-    public Property<SnapshotOptions> getSnapshotOptions() {
+    public Property<DomainSnapshotOptions> getSnapshotOptions() {
         return snapshotOptions;
     }
 
     /**
-     * SnapshotOptions
+     * DomainSnapshotOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html
      * 
      */
     @JsonIgnore
-    public void setSnapshotOptions(Property<SnapshotOptions> snapshotOptions) {
+    public void setSnapshotOptions(Property<DomainSnapshotOptions> snapshotOptions) {
         this.snapshotOptions = snapshotOptions;
     }
 
-    public Domain withSnapshotOptions(Property<SnapshotOptions> snapshotOptions) {
+    public Domain withSnapshotOptions(Property<DomainSnapshotOptions> snapshotOptions) {
         this.snapshotOptions = snapshotOptions;
         return this;
     }
@@ -379,28 +379,28 @@ public class Domain {
     }
 
     /**
-     * VPCOptions
+     * DomainVPCOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html
      * 
      */
     @JsonIgnore
-    public Property<VPCOptions> getVPCOptions() {
+    public Property<DomainVPCOptions> getVPCOptions() {
         return vPCOptions;
     }
 
     /**
-     * VPCOptions
+     * DomainVPCOptions
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-vpcoptions.html
      * 
      */
     @JsonIgnore
-    public void setVPCOptions(Property<VPCOptions> vPCOptions) {
+    public void setVPCOptions(Property<DomainVPCOptions> vPCOptions) {
         this.vPCOptions = vPCOptions;
     }
 
-    public Domain withVPCOptions(Property<VPCOptions> vPCOptions) {
+    public Domain withVPCOptions(Property<DomainVPCOptions> vPCOptions) {
         this.vPCOptions = vPCOptions;
         return this;
     }

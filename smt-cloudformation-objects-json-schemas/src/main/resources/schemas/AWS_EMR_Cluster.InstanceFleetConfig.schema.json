@@ -1,25 +1,25 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Cluster.InstanceFleetConfig.schema.json",
-  "title" : "InstanceFleetConfig",
+  "title" : "ClusterInstanceFleetConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.InstanceFleetConfig",
-  "javaInterfaces" : [ "aws.Property<InstanceFleetConfig>" ],
+  "javaType" : "aws.emr.ClusterInstanceFleetConfig",
+  "javaInterfaces" : [ "aws.Property<ClusterInstanceFleetConfig>" ],
   "properties" : {
     "InstanceTypeConfigs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-instancetypeconfigs",
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_EMR_InstanceFleetConfig.InstanceTypeConfig.schema.json",
-        "javaType" : "aws.Property<aws.emr.InstanceTypeConfig>"
+        "$ref" : "AWS_EMR_Cluster.InstanceTypeConfig.schema.json",
+        "javaType" : "aws.Property<aws.emr.ClusterInstanceTypeConfig>"
       }
     },
     "LaunchSpecifications" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-launchspecifications",
       "$ref" : "AWS_EMR_Cluster.InstanceFleetProvisioningSpecifications.schema.json",
-      "javaType" : "aws.Property<aws.emr.InstanceFleetProvisioningSpecifications>"
+      "javaType" : "aws.Property<aws.emr.ClusterInstanceFleetProvisioningSpecifications>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name",

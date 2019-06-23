@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Route53_RecordSet.AliasTarget.schema.json",
-  "title" : "AliasTarget",
+  "title" : "RecordSetAliasTarget",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html",
   "type" : "object",
-  "javaType" : "aws.route53.AliasTarget",
-  "javaInterfaces" : [ "aws.Property<AliasTarget>" ],
+  "javaType" : "aws.route53.RecordSetAliasTarget",
+  "javaInterfaces" : [ "aws.Property<RecordSetAliasTarget>" ],
   "properties" : {
     "DNSName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html#cfn-route53-aliastarget-dnshostname",

@@ -46,59 +46,59 @@ public class DeliveryStream {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamtype")
     private CharSequence deliveryStreamType;
     /**
-     * ElasticsearchDestinationConfiguration
+     * DeliveryStreamElasticsearchDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html
      * 
      */
     @JsonProperty("ElasticsearchDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html")
-    private Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration;
+    private Property<DeliveryStreamElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration;
     /**
-     * ExtendedS3DestinationConfiguration
+     * DeliveryStreamExtendedS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html
      * 
      */
     @JsonProperty("ExtendedS3DestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html")
-    private Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration;
+    private Property<DeliveryStreamExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration;
     /**
-     * KinesisStreamSourceConfiguration
+     * DeliveryStreamKinesisStreamSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html
      * 
      */
     @JsonProperty("KinesisStreamSourceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html")
-    private Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration;
+    private Property<DeliveryStreamKinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration;
     /**
-     * RedshiftDestinationConfiguration
+     * DeliveryStreamRedshiftDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html
      * 
      */
     @JsonProperty("RedshiftDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html")
-    private Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration;
+    private Property<DeliveryStreamRedshiftDestinationConfiguration> redshiftDestinationConfiguration;
     /**
-     * S3DestinationConfiguration
+     * DeliveryStreamS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
     @JsonProperty("S3DestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html")
-    private Property<S3DestinationConfiguration> s3DestinationConfiguration;
+    private Property<DeliveryStreamS3DestinationConfiguration> s3DestinationConfiguration;
     /**
-     * SplunkDestinationConfiguration
+     * DeliveryStreamSplunkDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html
      * 
      */
     @JsonProperty("SplunkDestinationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html")
-    private Property<SplunkDestinationConfiguration> splunkDestinationConfiguration;
+    private Property<DeliveryStreamSplunkDestinationConfiguration> splunkDestinationConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisfirehose-deliverystream.html#cfn-kinesisfirehose-deliverystream-deliverystreamname
@@ -147,163 +147,163 @@ public class DeliveryStream {
     }
 
     /**
-     * ElasticsearchDestinationConfiguration
+     * DeliveryStreamElasticsearchDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ElasticsearchDestinationConfiguration> getElasticsearchDestinationConfiguration() {
+    public Property<DeliveryStreamElasticsearchDestinationConfiguration> getElasticsearchDestinationConfiguration() {
         return elasticsearchDestinationConfiguration;
     }
 
     /**
-     * ElasticsearchDestinationConfiguration
+     * DeliveryStreamElasticsearchDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setElasticsearchDestinationConfiguration(Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
+    public void setElasticsearchDestinationConfiguration(Property<DeliveryStreamElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
         this.elasticsearchDestinationConfiguration = elasticsearchDestinationConfiguration;
     }
 
-    public DeliveryStream withElasticsearchDestinationConfiguration(Property<ElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
+    public DeliveryStream withElasticsearchDestinationConfiguration(Property<DeliveryStreamElasticsearchDestinationConfiguration> elasticsearchDestinationConfiguration) {
         this.elasticsearchDestinationConfiguration = elasticsearchDestinationConfiguration;
         return this;
     }
 
     /**
-     * ExtendedS3DestinationConfiguration
+     * DeliveryStreamExtendedS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ExtendedS3DestinationConfiguration> getExtendedS3DestinationConfiguration() {
+    public Property<DeliveryStreamExtendedS3DestinationConfiguration> getExtendedS3DestinationConfiguration() {
         return extendedS3DestinationConfiguration;
     }
 
     /**
-     * ExtendedS3DestinationConfiguration
+     * DeliveryStreamExtendedS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-extendeds3destinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setExtendedS3DestinationConfiguration(Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
+    public void setExtendedS3DestinationConfiguration(Property<DeliveryStreamExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
         this.extendedS3DestinationConfiguration = extendedS3DestinationConfiguration;
     }
 
-    public DeliveryStream withExtendedS3DestinationConfiguration(Property<ExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
+    public DeliveryStream withExtendedS3DestinationConfiguration(Property<DeliveryStreamExtendedS3DestinationConfiguration> extendedS3DestinationConfiguration) {
         this.extendedS3DestinationConfiguration = extendedS3DestinationConfiguration;
         return this;
     }
 
     /**
-     * KinesisStreamSourceConfiguration
+     * DeliveryStreamKinesisStreamSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<KinesisStreamSourceConfiguration> getKinesisStreamSourceConfiguration() {
+    public Property<DeliveryStreamKinesisStreamSourceConfiguration> getKinesisStreamSourceConfiguration() {
         return kinesisStreamSourceConfiguration;
     }
 
     /**
-     * KinesisStreamSourceConfiguration
+     * DeliveryStreamKinesisStreamSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-kinesisstreamsourceconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setKinesisStreamSourceConfiguration(Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
+    public void setKinesisStreamSourceConfiguration(Property<DeliveryStreamKinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
         this.kinesisStreamSourceConfiguration = kinesisStreamSourceConfiguration;
     }
 
-    public DeliveryStream withKinesisStreamSourceConfiguration(Property<KinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
+    public DeliveryStream withKinesisStreamSourceConfiguration(Property<DeliveryStreamKinesisStreamSourceConfiguration> kinesisStreamSourceConfiguration) {
         this.kinesisStreamSourceConfiguration = kinesisStreamSourceConfiguration;
         return this;
     }
 
     /**
-     * RedshiftDestinationConfiguration
+     * DeliveryStreamRedshiftDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<RedshiftDestinationConfiguration> getRedshiftDestinationConfiguration() {
+    public Property<DeliveryStreamRedshiftDestinationConfiguration> getRedshiftDestinationConfiguration() {
         return redshiftDestinationConfiguration;
     }
 
     /**
-     * RedshiftDestinationConfiguration
+     * DeliveryStreamRedshiftDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-redshiftdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setRedshiftDestinationConfiguration(Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
+    public void setRedshiftDestinationConfiguration(Property<DeliveryStreamRedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
         this.redshiftDestinationConfiguration = redshiftDestinationConfiguration;
     }
 
-    public DeliveryStream withRedshiftDestinationConfiguration(Property<RedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
+    public DeliveryStream withRedshiftDestinationConfiguration(Property<DeliveryStreamRedshiftDestinationConfiguration> redshiftDestinationConfiguration) {
         this.redshiftDestinationConfiguration = redshiftDestinationConfiguration;
         return this;
     }
 
     /**
-     * S3DestinationConfiguration
+     * DeliveryStreamS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<S3DestinationConfiguration> getS3DestinationConfiguration() {
+    public Property<DeliveryStreamS3DestinationConfiguration> getS3DestinationConfiguration() {
         return s3DestinationConfiguration;
     }
 
     /**
-     * S3DestinationConfiguration
+     * DeliveryStreamS3DestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-s3destinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setS3DestinationConfiguration(Property<S3DestinationConfiguration> s3DestinationConfiguration) {
+    public void setS3DestinationConfiguration(Property<DeliveryStreamS3DestinationConfiguration> s3DestinationConfiguration) {
         this.s3DestinationConfiguration = s3DestinationConfiguration;
     }
 
-    public DeliveryStream withS3DestinationConfiguration(Property<S3DestinationConfiguration> s3DestinationConfiguration) {
+    public DeliveryStream withS3DestinationConfiguration(Property<DeliveryStreamS3DestinationConfiguration> s3DestinationConfiguration) {
         this.s3DestinationConfiguration = s3DestinationConfiguration;
         return this;
     }
 
     /**
-     * SplunkDestinationConfiguration
+     * DeliveryStreamSplunkDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<SplunkDestinationConfiguration> getSplunkDestinationConfiguration() {
+    public Property<DeliveryStreamSplunkDestinationConfiguration> getSplunkDestinationConfiguration() {
         return splunkDestinationConfiguration;
     }
 
     /**
-     * SplunkDestinationConfiguration
+     * DeliveryStreamSplunkDestinationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-splunkdestinationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setSplunkDestinationConfiguration(Property<SplunkDestinationConfiguration> splunkDestinationConfiguration) {
+    public void setSplunkDestinationConfiguration(Property<DeliveryStreamSplunkDestinationConfiguration> splunkDestinationConfiguration) {
         this.splunkDestinationConfiguration = splunkDestinationConfiguration;
     }
 
-    public DeliveryStream withSplunkDestinationConfiguration(Property<SplunkDestinationConfiguration> splunkDestinationConfiguration) {
+    public DeliveryStream withSplunkDestinationConfiguration(Property<DeliveryStreamSplunkDestinationConfiguration> splunkDestinationConfiguration) {
         this.splunkDestinationConfiguration = splunkDestinationConfiguration;
         return this;
     }

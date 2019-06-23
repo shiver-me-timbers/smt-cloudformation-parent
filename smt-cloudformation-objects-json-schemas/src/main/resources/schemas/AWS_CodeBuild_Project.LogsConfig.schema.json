@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeBuild_Project.LogsConfig.schema.json",
-  "title" : "LogsConfig",
+  "title" : "ProjectLogsConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.LogsConfig",
-  "javaInterfaces" : [ "aws.Property<LogsConfig>" ],
+  "javaType" : "aws.codebuild.ProjectLogsConfig",
+  "javaInterfaces" : [ "aws.Property<ProjectLogsConfig>" ],
   "properties" : {
     "CloudWatchLogs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-cloudwatchlogs",
       "$ref" : "AWS_CodeBuild_Project.CloudWatchLogsConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.CloudWatchLogsConfig>"
+      "javaType" : "aws.Property<aws.codebuild.ProjectCloudWatchLogsConfig>"
     },
     "S3Logs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html#cfn-codebuild-project-logsconfig-s3logs",
       "$ref" : "AWS_CodeBuild_Project.S3LogsConfig.schema.json",
-      "javaType" : "aws.Property<aws.codebuild.S3LogsConfig>"
+      "javaType" : "aws.Property<aws.codebuild.ProjectS3LogsConfig>"
     }
   }
 }

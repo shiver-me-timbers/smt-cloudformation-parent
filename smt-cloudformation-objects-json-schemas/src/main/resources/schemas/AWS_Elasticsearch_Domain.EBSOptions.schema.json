@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Elasticsearch_Domain.EBSOptions.schema.json",
-  "title" : "EBSOptions",
+  "title" : "DomainEBSOptions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html",
   "type" : "object",
-  "javaType" : "aws.elasticsearch.EBSOptions",
-  "javaInterfaces" : [ "aws.Property<EBSOptions>" ],
+  "javaType" : "aws.elasticsearch.DomainEBSOptions",
+  "javaInterfaces" : [ "aws.Property<DomainEBSOptions>" ],
   "properties" : {
     "EBSEnabled" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled",

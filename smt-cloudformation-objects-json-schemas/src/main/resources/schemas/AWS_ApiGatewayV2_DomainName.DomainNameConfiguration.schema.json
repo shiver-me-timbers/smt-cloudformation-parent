@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json",
-  "title" : "DomainNameConfiguration",
+  "title" : "DomainNameDomainNameConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-domainname-domainnameconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.apigatewayv2.DomainNameConfiguration",
-  "javaInterfaces" : [ "aws.Property<DomainNameConfiguration>" ],
+  "javaType" : "aws.apigatewayv2.DomainNameDomainNameConfiguration",
+  "javaInterfaces" : [ "aws.Property<DomainNameDomainNameConfiguration>" ],
   "properties" : {
     "EndpointType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigatewayv2-domainname-domainnameconfiguration.html#cfn-apigatewayv2-domainname-domainnameconfiguration-endpointtype",

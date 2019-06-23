@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchDestinationConfiguration.schema.json",
-  "title" : "ElasticsearchDestinationConfiguration",
+  "title" : "DeliveryStreamElasticsearchDestinationConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.kinesisfirehose.ElasticsearchDestinationConfiguration",
-  "javaInterfaces" : [ "aws.Property<ElasticsearchDestinationConfiguration>" ],
+  "javaType" : "aws.kinesisfirehose.DeliveryStreamElasticsearchDestinationConfiguration",
+  "javaInterfaces" : [ "aws.Property<DeliveryStreamElasticsearchDestinationConfiguration>" ],
   "properties" : {
     "BufferingHints" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-bufferinghints",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchBufferingHints.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.ElasticsearchBufferingHints>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamElasticsearchBufferingHints>"
     },
     "CloudWatchLoggingOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-cloudwatchloggingoptions",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.CloudWatchLoggingOptions.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.CloudWatchLoggingOptions>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamCloudWatchLoggingOptions>"
     },
     "DomainARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-domainarn",
@@ -35,12 +35,12 @@
     "ProcessingConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-processingconfiguration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ProcessingConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.ProcessingConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamProcessingConfiguration>"
     },
     "RetryOptions" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-retryoptions",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.ElasticsearchRetryOptions.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.ElasticsearchRetryOptions>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamElasticsearchRetryOptions>"
     },
     "RoleARN" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-rolearn",
@@ -55,7 +55,7 @@
     "S3Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-s3configuration",
       "$ref" : "AWS_KinesisFirehose_DeliveryStream.S3DestinationConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.kinesisfirehose.S3DestinationConfiguration>"
+      "javaType" : "aws.Property<aws.kinesisfirehose.DeliveryStreamS3DestinationConfiguration>"
     },
     "TypeName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration.html#cfn-kinesisfirehose-deliverystream-elasticsearchdestinationconfiguration-typename",

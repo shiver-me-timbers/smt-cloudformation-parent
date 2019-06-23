@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_Distribution.Restrictions.schema.json",
-  "title" : "Restrictions",
+  "title" : "DistributionRestrictions",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.Restrictions",
-  "javaInterfaces" : [ "aws.Property<Restrictions>" ],
+  "javaType" : "aws.cloudfront.DistributionRestrictions",
+  "javaInterfaces" : [ "aws.Property<DistributionRestrictions>" ],
   "properties" : {
     "GeoRestriction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-restrictions.html#cfn-cloudfront-distribution-restrictions-georestriction",
       "$ref" : "AWS_CloudFront_Distribution.GeoRestriction.schema.json",
-      "javaType" : "aws.Property<aws.cloudfront.GeoRestriction>"
+      "javaType" : "aws.Property<aws.cloudfront.DistributionGeoRestriction>"
     }
   }
 }

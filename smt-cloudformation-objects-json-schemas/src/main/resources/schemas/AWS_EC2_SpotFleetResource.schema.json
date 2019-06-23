@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SpotFleetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SpotFleetResource>", "aws.HasCondition<SpotFleetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

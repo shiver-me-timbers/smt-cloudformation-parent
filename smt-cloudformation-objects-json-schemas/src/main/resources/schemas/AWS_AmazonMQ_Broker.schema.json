@@ -22,12 +22,12 @@
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-configuration",
       "$ref" : "AWS_AmazonMQ_Broker.ConfigurationId.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.ConfigurationId>"
+      "javaType" : "aws.Property<aws.amazonmq.BrokerConfigurationId>"
     },
     "MaintenanceWindowStartTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-maintenancewindowstarttime",
       "$ref" : "AWS_AmazonMQ_Broker.MaintenanceWindow.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.MaintenanceWindow>"
+      "javaType" : "aws.Property<aws.amazonmq.BrokerMaintenanceWindow>"
     },
     "HostInstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-hostinstancetype",
@@ -43,13 +43,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AmazonMQ_Broker.User.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.User>"
+        "javaType" : "aws.Property<aws.amazonmq.BrokerUser>"
       }
     },
     "Logs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-logs",
       "$ref" : "AWS_AmazonMQ_Broker.LogList.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.LogList>"
+      "javaType" : "aws.Property<aws.amazonmq.BrokerLogList>"
     },
     "SubnetIds" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-broker.html#cfn-amazonmq-broker-subnetids",
@@ -83,7 +83,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AmazonMQ_Broker.TagsEntry.schema.json",
-        "javaType" : "aws.Property<aws.amazonmq.TagsEntry>"
+        "javaType" : "aws.Property<aws.amazonmq.BrokerTagsEntry>"
       }
     }
   }

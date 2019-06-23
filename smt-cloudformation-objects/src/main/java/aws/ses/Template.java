@@ -15,148 +15,60 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * Template
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-template.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "HtmlPart",
-    "TextPart",
-    "TemplateName",
-    "SubjectPart"
+    "Template"
 })
-public class Template implements Property<Template>
-{
+public class Template {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart
+     * TemplateTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html
      * 
      */
-    @JsonProperty("HtmlPart")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart")
-    private CharSequence htmlPart;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart
-     * 
-     */
-    @JsonProperty("TextPart")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart")
-    private CharSequence textPart;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename
-     * 
-     */
-    @JsonProperty("TemplateName")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename")
-    private CharSequence templateName;
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart
-     * 
-     */
-    @JsonProperty("SubjectPart")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart")
-    private CharSequence subjectPart;
+    @JsonProperty("Template")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html")
+    private Property<TemplateTemplate> template;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart
+     * TemplateTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html
      * 
      */
     @JsonIgnore
-    public CharSequence getHtmlPart() {
-        return htmlPart;
+    public Property<TemplateTemplate> getTemplate() {
+        return template;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-htmlpart
+     * TemplateTemplate
+     * <p>
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html
      * 
      */
     @JsonIgnore
-    public void setHtmlPart(CharSequence htmlPart) {
-        this.htmlPart = htmlPart;
+    public void setTemplate(Property<TemplateTemplate> template) {
+        this.template = template;
     }
 
-    public Template withHtmlPart(CharSequence htmlPart) {
-        this.htmlPart = htmlPart;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getTextPart() {
-        return textPart;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-textpart
-     * 
-     */
-    @JsonIgnore
-    public void setTextPart(CharSequence textPart) {
-        this.textPart = textPart;
-    }
-
-    public Template withTextPart(CharSequence textPart) {
-        this.textPart = textPart;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getTemplateName() {
-        return templateName;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-templatename
-     * 
-     */
-    @JsonIgnore
-    public void setTemplateName(CharSequence templateName) {
-        this.templateName = templateName;
-    }
-
-    public Template withTemplateName(CharSequence templateName) {
-        this.templateName = templateName;
-        return this;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart
-     * 
-     */
-    @JsonIgnore
-    public CharSequence getSubjectPart() {
-        return subjectPart;
-    }
-
-    /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-template-template.html#cfn-ses-template-template-subjectpart
-     * 
-     */
-    @JsonIgnore
-    public void setSubjectPart(CharSequence subjectPart) {
-        this.subjectPart = subjectPart;
-    }
-
-    public Template withSubjectPart(CharSequence subjectPart) {
-        this.subjectPart = subjectPart;
+    public Template withTemplate(Property<TemplateTemplate> template) {
+        this.template = template;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("htmlPart", htmlPart).append("textPart", textPart).append("templateName", templateName).append("subjectPart", subjectPart).toString();
+        return new ToStringBuilder(this).append("template", template).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(htmlPart).append(textPart).append(templateName).append(subjectPart).toHashCode();
+        return new HashCodeBuilder().append(template).toHashCode();
     }
 
     @Override
@@ -168,7 +80,7 @@ public class Template implements Property<Template>
             return false;
         }
         Template rhs = ((Template) other);
-        return new EqualsBuilder().append(htmlPart, rhs.htmlPart).append(textPart, rhs.textPart).append(templateName, rhs.templateName).append(subjectPart, rhs.subjectPart).isEquals();
+        return new EqualsBuilder().append(template, rhs.template).isEquals();
     }
 
 }

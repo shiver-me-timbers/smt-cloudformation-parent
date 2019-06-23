@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_FunctionDefinition.Function.schema.json",
-  "title" : "Function",
+  "title" : "FunctionDefinitionFunction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.Function",
-  "javaInterfaces" : [ "aws.Property<Function>" ],
+  "javaType" : "aws.greengrass.FunctionDefinitionFunction",
+  "javaInterfaces" : [ "aws.Property<FunctionDefinitionFunction>" ],
   "properties" : {
     "FunctionArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html#cfn-greengrass-functiondefinition-function-functionarn",
@@ -15,7 +15,7 @@
     "FunctionConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html#cfn-greengrass-functiondefinition-function-functionconfiguration",
       "$ref" : "AWS_Greengrass_FunctionDefinitionVersion.FunctionConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.FunctionConfiguration>"
+      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionFunctionConfiguration>"
     },
     "Id" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-function.html#cfn-greengrass-functiondefinition-function-id",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudfront.StreamingDistributionResource",
-  "javaInterfaces" : [ "aws.HasAttributes<StreamingDistributionAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<StreamingDistributionResource>", "aws.HasCondition<StreamingDistributionResource>", "aws.HasAttributes<StreamingDistributionAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

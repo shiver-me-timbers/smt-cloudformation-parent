@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sqs.QueueResource",
-  "javaInterfaces" : [ "aws.HasAttributes<QueueAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<QueueResource>", "aws.HasCondition<QueueResource>", "aws.HasAttributes<QueueAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

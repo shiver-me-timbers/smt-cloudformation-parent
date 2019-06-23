@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Redshift_ClusterParameterGroup.Parameter.schema.json",
-        "javaType" : "aws.Property<aws.redshift.Parameter>"
+        "javaType" : "aws.Property<aws.redshift.ClusterParameterGroupParameter>"
       }
     },
     "Tags" : {

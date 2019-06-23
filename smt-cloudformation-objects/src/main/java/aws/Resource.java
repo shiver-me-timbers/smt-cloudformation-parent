@@ -32,7 +32,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class Resource
     extends Named
-    implements HasCondition<Resource> , HasDependsOn<Resource> , HasReference
+    implements HasReference
 {
 
     @JsonProperty("Type")

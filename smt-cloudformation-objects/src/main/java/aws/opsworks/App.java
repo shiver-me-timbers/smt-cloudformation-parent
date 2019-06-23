@@ -42,14 +42,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class App {
 
     /**
-     * DataSource
+     * AppDataSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
     @JsonProperty("AppSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html")
-    private Property<Source> appSource;
+    private Property<AppSource> appSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes
      * 
@@ -64,7 +64,7 @@ public class App {
     @JsonProperty("DataSources")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-datasources")
-    private Set<Property<DataSource>> dataSources = new LinkedHashSet<Property<DataSource>>();
+    private Set<Property<AppDataSource>> dataSources = new LinkedHashSet<Property<AppDataSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description
      * 
@@ -92,7 +92,7 @@ public class App {
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-environment")
-    private List<Property<EnvironmentVariable>> environment = new ArrayList<Property<EnvironmentVariable>>();
+    private List<Property<AppEnvironmentVariable>> environment = new ArrayList<Property<AppEnvironmentVariable>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name
      * 
@@ -108,14 +108,14 @@ public class App {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname")
     private CharSequence shortname;
     /**
-     * SslConfiguration
+     * AppSslConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html
      * 
      */
     @JsonProperty("SslConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html")
-    private Property<SslConfiguration> sslConfiguration;
+    private Property<AppSslConfiguration> sslConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid
      * 
@@ -132,28 +132,28 @@ public class App {
     private CharSequence type;
 
     /**
-     * DataSource
+     * AppDataSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
     @JsonIgnore
-    public Property<Source> getAppSource() {
+    public Property<AppSource> getAppSource() {
         return appSource;
     }
 
     /**
-     * DataSource
+     * AppDataSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-datasource.html
      * 
      */
     @JsonIgnore
-    public void setAppSource(Property<Source> appSource) {
+    public void setAppSource(Property<AppSource> appSource) {
         this.appSource = appSource;
     }
 
-    public App withAppSource(Property<Source> appSource) {
+    public App withAppSource(Property<AppSource> appSource) {
         this.appSource = appSource;
         return this;
     }
@@ -186,7 +186,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public Set<Property<DataSource>> getDataSources() {
+    public Set<Property<AppDataSource>> getDataSources() {
         return dataSources;
     }
 
@@ -195,11 +195,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setDataSources(Set<Property<DataSource>> dataSources) {
+    public void setDataSources(Set<Property<AppDataSource>> dataSources) {
         this.dataSources = dataSources;
     }
 
-    public App withDataSources(Set<Property<DataSource>> dataSources) {
+    public App withDataSources(Set<Property<AppDataSource>> dataSources) {
         this.dataSources = dataSources;
         return this;
     }
@@ -278,7 +278,7 @@ public class App {
      * 
      */
     @JsonIgnore
-    public List<Property<EnvironmentVariable>> getEnvironment() {
+    public List<Property<AppEnvironmentVariable>> getEnvironment() {
         return environment;
     }
 
@@ -287,11 +287,11 @@ public class App {
      * 
      */
     @JsonIgnore
-    public void setEnvironment(List<Property<EnvironmentVariable>> environment) {
+    public void setEnvironment(List<Property<AppEnvironmentVariable>> environment) {
         this.environment = environment;
     }
 
-    public App withEnvironment(List<Property<EnvironmentVariable>> environment) {
+    public App withEnvironment(List<Property<AppEnvironmentVariable>> environment) {
         this.environment = environment;
         return this;
     }
@@ -343,28 +343,28 @@ public class App {
     }
 
     /**
-     * SslConfiguration
+     * AppSslConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<SslConfiguration> getSslConfiguration() {
+    public Property<AppSslConfiguration> getSslConfiguration() {
         return sslConfiguration;
     }
 
     /**
-     * SslConfiguration
+     * AppSslConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setSslConfiguration(Property<SslConfiguration> sslConfiguration) {
+    public void setSslConfiguration(Property<AppSslConfiguration> sslConfiguration) {
         this.sslConfiguration = sslConfiguration;
     }
 
-    public App withSslConfiguration(Property<SslConfiguration> sslConfiguration) {
+    public App withSslConfiguration(Property<AppSslConfiguration> sslConfiguration) {
         this.sslConfiguration = sslConfiguration;
         return this;
     }

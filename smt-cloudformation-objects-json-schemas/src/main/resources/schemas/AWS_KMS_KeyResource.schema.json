@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.kms.KeyResource",
-  "javaInterfaces" : [ "aws.HasAttributes<KeyAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<KeyResource>", "aws.HasCondition<KeyResource>", "aws.HasAttributes<KeyAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

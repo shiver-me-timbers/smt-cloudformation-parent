@@ -8,12 +8,13 @@
   "properties" : {
     "UserPoolTags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-userpooltags",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "Policies" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-policies",
       "$ref" : "AWS_Cognito_UserPool.Policies.schema.json",
-      "javaType" : "aws.Property<aws.cognito.Policies>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolPolicies>"
     },
     "MfaConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-mfaconfiguration",
@@ -25,13 +26,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cognito_UserPool.SchemaAttribute.schema.json",
-        "javaType" : "aws.Property<aws.cognito.SchemaAttribute>"
+        "javaType" : "aws.Property<aws.cognito.UserPoolSchemaAttribute>"
       }
     },
     "AdminCreateUserConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-admincreateuserconfig",
       "$ref" : "AWS_Cognito_UserPool.AdminCreateUserConfig.schema.json",
-      "javaType" : "aws.Property<aws.cognito.AdminCreateUserConfig>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolAdminCreateUserConfig>"
     },
     "SmsAuthenticationMessage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsauthenticationmessage",
@@ -51,12 +52,12 @@
     "EmailConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailconfiguration",
       "$ref" : "AWS_Cognito_UserPool.EmailConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.cognito.EmailConfiguration>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolEmailConfiguration>"
     },
     "SmsConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-smsconfiguration",
       "$ref" : "AWS_Cognito_UserPool.SmsConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.cognito.SmsConfiguration>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolSmsConfiguration>"
     },
     "AliasAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-aliasattributes",
@@ -74,7 +75,7 @@
     "LambdaConfig" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-lambdaconfig",
       "$ref" : "AWS_Cognito_UserPool.LambdaConfig.schema.json",
-      "javaType" : "aws.Property<aws.cognito.LambdaConfig>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolLambdaConfig>"
     },
     "UsernameAttributes" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-usernameattributes",
@@ -95,7 +96,7 @@
     "DeviceConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-deviceconfiguration",
       "$ref" : "AWS_Cognito_UserPool.DeviceConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.cognito.DeviceConfiguration>"
+      "javaType" : "aws.Property<aws.cognito.UserPoolDeviceConfiguration>"
     },
     "EmailVerificationMessage" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-emailverificationmessage",

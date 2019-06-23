@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Config_ConfigRule.Scope.schema.json",
-  "title" : "Scope",
+  "title" : "ConfigRuleScope",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html",
   "type" : "object",
-  "javaType" : "aws.config.Scope",
-  "javaInterfaces" : [ "aws.Property<Scope>" ],
+  "javaType" : "aws.config.ConfigRuleScope",
+  "javaInterfaces" : [ "aws.Property<ConfigRuleScope>" ],
   "properties" : {
     "ComplianceResourceId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html#cfn-config-configrule-scope-complianceresourceid",

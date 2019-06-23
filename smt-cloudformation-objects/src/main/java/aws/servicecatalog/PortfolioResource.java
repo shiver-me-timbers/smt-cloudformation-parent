@@ -6,6 +6,8 @@ import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -31,7 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class PortfolioResource
     extends Resource
-    implements HasAttributes<PortfolioAttributes>
+    implements HasAttributes<PortfolioAttributes> , HasCondition<PortfolioResource> , HasDependsOn<PortfolioResource>
 {
 
     @JsonProperty("Type")

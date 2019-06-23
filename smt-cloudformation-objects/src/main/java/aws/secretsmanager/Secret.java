@@ -54,14 +54,14 @@ public class Secret {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html#cfn-secretsmanager-secret-secretstring")
     private CharSequence secretString;
     /**
-     * GenerateSecretString
+     * SecretGenerateSecretString
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html
      * 
      */
     @JsonProperty("GenerateSecretString")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html")
-    private Property<GenerateSecretString> generateSecretString;
+    private Property<SecretGenerateSecretString> generateSecretString;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html#cfn-secretsmanager-secret-tags
      * 
@@ -147,28 +147,28 @@ public class Secret {
     }
 
     /**
-     * GenerateSecretString
+     * SecretGenerateSecretString
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html
      * 
      */
     @JsonIgnore
-    public Property<GenerateSecretString> getGenerateSecretString() {
+    public Property<SecretGenerateSecretString> getGenerateSecretString() {
         return generateSecretString;
     }
 
     /**
-     * GenerateSecretString
+     * SecretGenerateSecretString
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-secretsmanager-secret-generatesecretstring.html
      * 
      */
     @JsonIgnore
-    public void setGenerateSecretString(Property<GenerateSecretString> generateSecretString) {
+    public void setGenerateSecretString(Property<SecretGenerateSecretString> generateSecretString) {
         this.generateSecretString = generateSecretString;
     }
 
-    public Secret withGenerateSecretString(Property<GenerateSecretString> generateSecretString) {
+    public Secret withGenerateSecretString(Property<SecretGenerateSecretString> generateSecretString) {
         this.generateSecretString = generateSecretString;
         return this;
     }

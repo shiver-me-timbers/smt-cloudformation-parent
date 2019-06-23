@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.DBSecurityGroupIngressResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DBSecurityGroupIngressResource>", "aws.HasCondition<DBSecurityGroupIngressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

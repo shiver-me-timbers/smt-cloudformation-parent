@@ -26,7 +26,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CloudTrail_Trail.EventSelector.schema.json",
-        "javaType" : "aws.Property<aws.cloudtrail.EventSelector>"
+        "javaType" : "aws.Property<aws.cloudtrail.TrailEventSelector>"
       }
     },
     "IncludeGlobalServiceEvents" : {

@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DataPipeline_Pipeline.PipelineObject.schema.json",
-  "title" : "PipelineObject",
+  "title" : "PipelinePipelineObject",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html",
   "type" : "object",
-  "javaType" : "aws.datapipeline.PipelineObject",
-  "javaInterfaces" : [ "aws.Property<PipelineObject>" ],
+  "javaType" : "aws.datapipeline.PipelinePipelineObject",
+  "javaInterfaces" : [ "aws.Property<PipelinePipelineObject>" ],
   "properties" : {
     "Fields" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html#cfn-datapipeline-pipeline-pipelineobjects-fields",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_DataPipeline_Pipeline.Field.schema.json",
-        "javaType" : "aws.Property<aws.datapipeline.Field>"
+        "javaType" : "aws.Property<aws.datapipeline.PipelineField>"
       }
     },
     "Id" : {

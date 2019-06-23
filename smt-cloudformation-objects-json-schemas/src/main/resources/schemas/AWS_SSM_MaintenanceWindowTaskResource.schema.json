@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ssm.MaintenanceWindowTaskResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<MaintenanceWindowTaskResource>", "aws.HasCondition<MaintenanceWindowTaskResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

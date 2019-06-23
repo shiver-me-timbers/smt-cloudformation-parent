@@ -37,21 +37,21 @@ public class WebACL {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-metricname")
     private CharSequence metricName;
     /**
-     * Action
+     * WebACLAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html
      * 
      */
     @JsonProperty("DefaultAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html")
-    private Property<Action> defaultAction;
+    private Property<WebACLAction> defaultAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-rules
      * 
      */
     @JsonProperty("Rules")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-rules")
-    private List<Property<Rule>> rules = new ArrayList<Property<Rule>>();
+    private List<Property<WebACLRule>> rules = new ArrayList<Property<WebACLRule>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webacl.html#cfn-wafregional-webacl-name
      * 
@@ -84,28 +84,28 @@ public class WebACL {
     }
 
     /**
-     * Action
+     * WebACLAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html
      * 
      */
     @JsonIgnore
-    public Property<Action> getDefaultAction() {
+    public Property<WebACLAction> getDefaultAction() {
         return defaultAction;
     }
 
     /**
-     * Action
+     * WebACLAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-webacl-action.html
      * 
      */
     @JsonIgnore
-    public void setDefaultAction(Property<Action> defaultAction) {
+    public void setDefaultAction(Property<WebACLAction> defaultAction) {
         this.defaultAction = defaultAction;
     }
 
-    public WebACL withDefaultAction(Property<Action> defaultAction) {
+    public WebACL withDefaultAction(Property<WebACLAction> defaultAction) {
         this.defaultAction = defaultAction;
         return this;
     }
@@ -115,7 +115,7 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public List<Property<Rule>> getRules() {
+    public List<Property<WebACLRule>> getRules() {
         return rules;
     }
 
@@ -124,11 +124,11 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public void setRules(List<Property<Rule>> rules) {
+    public void setRules(List<Property<WebACLRule>> rules) {
         this.rules = rules;
     }
 
-    public WebACL withRules(List<Property<Rule>> rules) {
+    public WebACL withRules(List<Property<WebACLRule>> rules) {
         this.rules = rules;
         return this;
     }

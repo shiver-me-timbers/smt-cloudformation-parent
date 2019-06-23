@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.RequestValidatorResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<RequestValidatorResource>", "aws.HasCondition<RequestValidatorResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

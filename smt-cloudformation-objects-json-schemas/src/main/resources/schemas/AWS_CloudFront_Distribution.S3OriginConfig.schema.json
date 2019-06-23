@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CloudFront_Distribution.S3OriginConfig.schema.json",
-  "title" : "S3OriginConfig",
+  "title" : "DistributionS3OriginConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html",
   "type" : "object",
-  "javaType" : "aws.cloudfront.S3OriginConfig",
-  "javaInterfaces" : [ "aws.Property<S3OriginConfig>" ],
+  "javaType" : "aws.cloudfront.DistributionS3OriginConfig",
+  "javaInterfaces" : [ "aws.Property<DistributionS3OriginConfig>" ],
   "properties" : {
     "OriginAccessIdentity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-s3originconfig.html#cfn-cloudfront-distribution-s3originconfig-originaccessidentity",

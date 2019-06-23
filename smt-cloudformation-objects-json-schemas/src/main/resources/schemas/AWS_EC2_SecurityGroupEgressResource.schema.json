@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SecurityGroupEgressResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SecurityGroupEgressResource>", "aws.HasCondition<SecurityGroupEgressResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

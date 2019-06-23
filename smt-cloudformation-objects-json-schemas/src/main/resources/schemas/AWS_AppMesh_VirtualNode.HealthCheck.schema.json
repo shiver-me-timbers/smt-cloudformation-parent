@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualNode.HealthCheck.schema.json",
-  "title" : "HealthCheck",
+  "title" : "VirtualNodeHealthCheck",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.HealthCheck",
-  "javaInterfaces" : [ "aws.Property<HealthCheck>" ],
+  "javaType" : "aws.appmesh.VirtualNodeHealthCheck",
+  "javaInterfaces" : [ "aws.Property<VirtualNodeHealthCheck>" ],
   "properties" : {
     "Path" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualnode-healthcheck.html#cfn-appmesh-virtualnode-healthcheck-path",

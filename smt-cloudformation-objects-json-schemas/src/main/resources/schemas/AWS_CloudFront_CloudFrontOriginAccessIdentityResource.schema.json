@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.cloudfront.CloudFrontOriginAccessIdentityResource",
-  "javaInterfaces" : [ "aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<CloudFrontOriginAccessIdentityResource>", "aws.HasCondition<CloudFrontOriginAccessIdentityResource>", "aws.HasAttributes<CloudFrontOriginAccessIdentityAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -43,14 +43,14 @@ public class Application {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-runtimeenvironment")
     private CharSequence runtimeEnvironment;
     /**
-     * FlinkApplicationConfiguration
+     * ApplicationFlinkApplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html
      * 
      */
     @JsonProperty("ApplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html")
-    private Property<ApplicationConfiguration> applicationConfiguration;
+    private Property<ApplicationApplicationConfiguration> applicationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-application.html#cfn-kinesisanalyticsv2-application-applicationdescription
      * 
@@ -113,28 +113,28 @@ public class Application {
     }
 
     /**
-     * FlinkApplicationConfiguration
+     * ApplicationFlinkApplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ApplicationConfiguration> getApplicationConfiguration() {
+    public Property<ApplicationApplicationConfiguration> getApplicationConfiguration() {
         return applicationConfiguration;
     }
 
     /**
-     * FlinkApplicationConfiguration
+     * ApplicationFlinkApplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setApplicationConfiguration(Property<ApplicationConfiguration> applicationConfiguration) {
+    public void setApplicationConfiguration(Property<ApplicationApplicationConfiguration> applicationConfiguration) {
         this.applicationConfiguration = applicationConfiguration;
     }
 
-    public Application withApplicationConfiguration(Property<ApplicationConfiguration> applicationConfiguration) {
+    public Application withApplicationConfiguration(Property<ApplicationApplicationConfiguration> applicationConfiguration) {
         this.applicationConfiguration = applicationConfiguration;
         return this;
     }

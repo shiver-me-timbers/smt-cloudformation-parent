@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualRouter.VirtualRouterListener.schema.json",
-  "title" : "VirtualRouterListener",
+  "title" : "VirtualRouterVirtualRouterListener",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualRouterListener",
-  "javaInterfaces" : [ "aws.Property<VirtualRouterListener>" ],
+  "javaType" : "aws.appmesh.VirtualRouterVirtualRouterListener",
+  "javaInterfaces" : [ "aws.Property<VirtualRouterVirtualRouterListener>" ],
   "properties" : {
     "PortMapping" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualrouter-virtualrouterlistener.html#cfn-appmesh-virtualrouter-virtualrouterlistener-portmapping",
       "$ref" : "AWS_AppMesh_VirtualRouter.PortMapping.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.PortMapping>"
+      "javaType" : "aws.Property<aws.appmesh.VirtualRouterPortMapping>"
     }
   }
 }

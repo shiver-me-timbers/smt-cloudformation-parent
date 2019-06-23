@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.InternetGatewayResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InternetGatewayResource>", "aws.HasCondition<InternetGatewayResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

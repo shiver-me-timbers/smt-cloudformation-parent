@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ApplicationAutoScaling_ScalableTarget.ScheduledAction.schema.json",
-  "title" : "ScheduledAction",
+  "title" : "ScalableTargetScheduledAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html",
   "type" : "object",
-  "javaType" : "aws.applicationautoscaling.ScheduledAction",
-  "javaInterfaces" : [ "aws.Property<ScheduledAction>" ],
+  "javaType" : "aws.applicationautoscaling.ScalableTargetScheduledAction",
+  "javaInterfaces" : [ "aws.Property<ScalableTargetScheduledAction>" ],
   "properties" : {
     "EndTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-endtime",
@@ -14,7 +14,7 @@
     "ScalableTargetAction" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-scalabletargetaction",
       "$ref" : "AWS_ApplicationAutoScaling_ScalableTarget.ScalableTargetAction.schema.json",
-      "javaType" : "aws.Property<aws.applicationautoscaling.ScalableTargetAction>"
+      "javaType" : "aws.Property<aws.applicationautoscaling.ScalableTargetScalableTargetAction>"
     },
     "Schedule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalabletarget-scheduledaction.html#cfn-applicationautoscaling-scalabletarget-scheduledaction-schedule",

@@ -4,7 +4,6 @@ package aws.waf;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.Property;
-import aws.wafregional.ByteMatchTuple;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -36,7 +35,7 @@ public class ByteMatchSet {
     @JsonProperty("ByteMatchTuples")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-bytematchtuples")
-    private Set<Property<ByteMatchTuple>> byteMatchTuples = new LinkedHashSet<Property<ByteMatchTuple>>();
+    private Set<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples = new LinkedHashSet<Property<ByteMatchSetByteMatchTuple>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-bytematchset.html#cfn-waf-bytematchset-name
      * 
@@ -50,7 +49,7 @@ public class ByteMatchSet {
      * 
      */
     @JsonIgnore
-    public Set<Property<ByteMatchTuple>> getByteMatchTuples() {
+    public Set<Property<ByteMatchSetByteMatchTuple>> getByteMatchTuples() {
         return byteMatchTuples;
     }
 
@@ -59,11 +58,11 @@ public class ByteMatchSet {
      * 
      */
     @JsonIgnore
-    public void setByteMatchTuples(Set<Property<ByteMatchTuple>> byteMatchTuples) {
+    public void setByteMatchTuples(Set<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
     }
 
-    public ByteMatchSet withByteMatchTuples(Set<Property<ByteMatchTuple>> byteMatchTuples) {
+    public ByteMatchSet withByteMatchTuples(Set<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
         return this;
     }

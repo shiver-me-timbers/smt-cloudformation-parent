@@ -50,7 +50,7 @@ public class ClusterParameterGroup {
      */
     @JsonProperty("Parameters")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-parameters")
-    private List<Property<Parameter>> parameters = new ArrayList<Property<Parameter>>();
+    private List<Property<ClusterParameterGroupParameter>> parameters = new ArrayList<Property<ClusterParameterGroupParameter>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clusterparametergroup.html#cfn-redshift-clusterparametergroup-tags
      * 
@@ -110,7 +110,7 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public List<Property<Parameter>> getParameters() {
+    public List<Property<ClusterParameterGroupParameter>> getParameters() {
         return parameters;
     }
 
@@ -119,11 +119,11 @@ public class ClusterParameterGroup {
      * 
      */
     @JsonIgnore
-    public void setParameters(List<Property<Parameter>> parameters) {
+    public void setParameters(List<Property<ClusterParameterGroupParameter>> parameters) {
         this.parameters = parameters;
     }
 
-    public ClusterParameterGroup withParameters(List<Property<Parameter>> parameters) {
+    public ClusterParameterGroup withParameters(List<Property<ClusterParameterGroupParameter>> parameters) {
         this.parameters = parameters;
         return this;
     }

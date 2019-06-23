@@ -38,7 +38,7 @@ public class EnvironmentEC2 {
      */
     @JsonProperty("Repositories")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-repositories")
-    private List<Property<Repository>> repositories = new ArrayList<Property<Repository>>();
+    private List<Property<EnvironmentEC2Repository>> repositories = new ArrayList<Property<EnvironmentEC2Repository>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-ownerarn
      * 
@@ -87,7 +87,7 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public List<Property<Repository>> getRepositories() {
+    public List<Property<EnvironmentEC2Repository>> getRepositories() {
         return repositories;
     }
 
@@ -96,11 +96,11 @@ public class EnvironmentEC2 {
      * 
      */
     @JsonIgnore
-    public void setRepositories(List<Property<Repository>> repositories) {
+    public void setRepositories(List<Property<EnvironmentEC2Repository>> repositories) {
         this.repositories = repositories;
     }
 
-    public EnvironmentEC2 withRepositories(List<Property<Repository>> repositories) {
+    public EnvironmentEC2 withRepositories(List<Property<EnvironmentEC2Repository>> repositories) {
         this.repositories = repositories;
         return this;
     }

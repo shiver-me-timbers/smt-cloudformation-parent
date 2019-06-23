@@ -33,7 +33,7 @@ public class ByteMatchSet {
      */
     @JsonProperty("ByteMatchTuples")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-bytematchtuples")
-    private List<Property<ByteMatchTuple>> byteMatchTuples = new ArrayList<Property<ByteMatchTuple>>();
+    private List<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples = new ArrayList<Property<ByteMatchSetByteMatchTuple>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-name
      * 
@@ -47,7 +47,7 @@ public class ByteMatchSet {
      * 
      */
     @JsonIgnore
-    public List<Property<ByteMatchTuple>> getByteMatchTuples() {
+    public List<Property<ByteMatchSetByteMatchTuple>> getByteMatchTuples() {
         return byteMatchTuples;
     }
 
@@ -56,11 +56,11 @@ public class ByteMatchSet {
      * 
      */
     @JsonIgnore
-    public void setByteMatchTuples(List<Property<ByteMatchTuple>> byteMatchTuples) {
+    public void setByteMatchTuples(List<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
     }
 
-    public ByteMatchSet withByteMatchTuples(List<Property<ByteMatchTuple>> byteMatchTuples) {
+    public ByteMatchSet withByteMatchTuples(List<Property<ByteMatchSetByteMatchTuple>> byteMatchTuples) {
         this.byteMatchTuples = byteMatchTuples;
         return this;
     }

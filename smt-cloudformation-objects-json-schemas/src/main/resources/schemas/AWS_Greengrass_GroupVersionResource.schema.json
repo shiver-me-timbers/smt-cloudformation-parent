@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.greengrass.GroupVersionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<GroupVersionResource>", "aws.HasCondition<GroupVersionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

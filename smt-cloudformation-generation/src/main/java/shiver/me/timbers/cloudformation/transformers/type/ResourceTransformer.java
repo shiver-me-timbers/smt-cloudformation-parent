@@ -5,13 +5,15 @@ import shiver.me.timbers.cloudformation.ResourceType;
 import shiver.me.timbers.cloudformation.files.FileNames;
 import shiver.me.timbers.cloudformation.types.JavaTypes;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 import static java.lang.String.format;
 import static java.util.AbstractMap.SimpleEntry;
+import static java.util.Arrays.asList;
 import static java.util.Collections.emptyMap;
-import static java.util.Collections.singletonList;
 import static java.util.Collections.singletonMap;
 import static java.util.Map.Entry;
 
@@ -28,6 +30,7 @@ public class ResourceTransformer implements TypeTransformer {
         this.metaDataApplier = metaDataApplier;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public Entry<String, Map<String, Object>> transform(Entry<String, ? extends CloudformationType> type) {
         final CloudformationType cloudformationType = type.getValue();
@@ -40,10 +43,16 @@ public class ResourceTransformer implements TypeTransformer {
             metaDataApplier.apply(fileNames.parse(typeName + RESOURCE), resourceClassName, documentation, schema);
             schema.put("extends", singletonMap("$ref", "Resource.schema.json"));
             schema.put("javaType", format("%s.%s", packageName, resourceClassName));
+            schema.put(
+                "javaInterfaces",
+                new ArrayList<>(asList(
+                    format("aws.HasDependsOn<%s>", resourceClassName),
+                    format("aws.HasCondition<%s>", resourceClassName)
+                ))
+            );
             if (((ResourceType) cloudformationType).getAttributes() != null) {
-                schema.put(
-                    "javaInterfaces",
-                    singletonList(format("aws.HasAttributes<%sAttributes>", javaTypes.extractClassName(typeName)))
+                ((List<String>) schema.get("javaInterfaces")).add(
+                    format("aws.HasAttributes<%sAttributes>", javaTypes.extractClassName(typeName))
                 );
             }
             schema.put("properties", new LinkedHashMap<String, Object>() {{

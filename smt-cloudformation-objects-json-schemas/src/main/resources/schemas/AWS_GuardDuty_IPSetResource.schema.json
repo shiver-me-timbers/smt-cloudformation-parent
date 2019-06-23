@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.guardduty.IPSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<IPSetResource>", "aws.HasCondition<IPSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

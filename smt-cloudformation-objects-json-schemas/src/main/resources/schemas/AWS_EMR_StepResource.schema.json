@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.emr.StepResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<StepResource>", "aws.HasCondition<StepResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

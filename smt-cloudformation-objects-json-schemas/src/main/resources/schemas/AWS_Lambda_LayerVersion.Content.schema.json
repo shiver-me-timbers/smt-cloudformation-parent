@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Lambda_LayerVersion.Content.schema.json",
-  "title" : "Content",
+  "title" : "LayerVersionContent",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html",
   "type" : "object",
-  "javaType" : "aws.lambda.Content",
-  "javaInterfaces" : [ "aws.Property<Content>" ],
+  "javaType" : "aws.lambda.LayerVersionContent",
+  "javaInterfaces" : [ "aws.Property<LayerVersionContent>" ],
   "properties" : {
     "S3ObjectVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html#cfn-lambda-layerversion-content-s3objectversion",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplateOverrides.schema.json",
-  "title" : "LaunchTemplateOverrides",
+  "title" : "AutoScalingGroupLaunchTemplateOverrides",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.LaunchTemplateOverrides",
-  "javaInterfaces" : [ "aws.Property<LaunchTemplateOverrides>" ],
+  "javaType" : "aws.autoscaling.AutoScalingGroupLaunchTemplateOverrides",
+  "javaInterfaces" : [ "aws.Property<AutoScalingGroupLaunchTemplateOverrides>" ],
   "properties" : {
     "InstanceType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-mixedinstancespolicy-launchtemplateoverrides.html#cfn-autoscaling-autoscalinggroup-launchtemplateoverrides-instancetype",

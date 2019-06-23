@@ -12,7 +12,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_RDS_DBSecurityGroup.Ingress.schema.json",
-        "javaType" : "aws.Property<aws.rds.Ingress>"
+        "javaType" : "aws.Property<aws.rds.DBSecurityGroupIngress>"
       }
     },
     "EC2VpcId" : {

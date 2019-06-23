@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.stepfunctions.ActivityResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ActivityAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ActivityResource>", "aws.HasCondition<ActivityResource>", "aws.HasAttributes<ActivityAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

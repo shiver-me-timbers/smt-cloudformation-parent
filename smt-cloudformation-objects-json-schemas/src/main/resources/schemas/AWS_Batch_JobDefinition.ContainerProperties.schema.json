@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Batch_JobDefinition.ContainerProperties.schema.json",
-  "title" : "ContainerProperties",
+  "title" : "JobDefinitionContainerProperties",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html",
   "type" : "object",
-  "javaType" : "aws.batch.ContainerProperties",
-  "javaInterfaces" : [ "aws.Property<ContainerProperties>" ],
+  "javaType" : "aws.batch.JobDefinitionContainerProperties",
+  "javaInterfaces" : [ "aws.Property<JobDefinitionContainerProperties>" ],
   "properties" : {
     "User" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user",
@@ -43,7 +43,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json",
-        "javaType" : "aws.Property<aws.batch.ResourceRequirement>"
+        "javaType" : "aws.Property<aws.batch.JobDefinitionResourceRequirement>"
       }
     },
     "MountPoints" : {
@@ -51,7 +51,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.MountPoints.schema.json",
-        "javaType" : "aws.Property<aws.batch.MountPoints>"
+        "javaType" : "aws.Property<aws.batch.JobDefinitionMountPoints>"
       }
     },
     "Volumes" : {
@@ -59,7 +59,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Volumes.schema.json",
-        "javaType" : "aws.Property<aws.batch.Volumes>"
+        "javaType" : "aws.Property<aws.batch.JobDefinitionVolumes>"
       }
     },
     "Command" : {
@@ -75,7 +75,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Environment.schema.json",
-        "javaType" : "aws.Property<aws.batch.Environment>"
+        "javaType" : "aws.Property<aws.batch.JobDefinitionEnvironment>"
       }
     },
     "Ulimits" : {
@@ -83,7 +83,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Batch_JobDefinition.Ulimit.schema.json",
-        "javaType" : "aws.Property<aws.batch.Ulimit>"
+        "javaType" : "aws.Property<aws.batch.JobDefinitionUlimit>"
       }
     },
     "InstanceType" : {

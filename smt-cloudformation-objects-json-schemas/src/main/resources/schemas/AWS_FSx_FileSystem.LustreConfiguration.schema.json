@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_FSx_FileSystem.LustreConfiguration.schema.json",
-  "title" : "LustreConfiguration",
+  "title" : "FileSystemLustreConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.fsx.LustreConfiguration",
-  "javaInterfaces" : [ "aws.Property<LustreConfiguration>" ],
+  "javaType" : "aws.fsx.FileSystemLustreConfiguration",
+  "javaInterfaces" : [ "aws.Property<FileSystemLustreConfiguration>" ],
   "properties" : {
     "ImportPath" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-lustreconfiguration.html#cfn-fsx-filesystem-lustreconfiguration-importpath",

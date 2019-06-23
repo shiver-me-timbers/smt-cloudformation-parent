@@ -19,14 +19,14 @@
     "ApprovalRules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-approvalrules",
       "$ref" : "AWS_SSM_PatchBaseline.RuleGroup.schema.json",
-      "javaType" : "aws.Property<aws.ssm.RuleGroup>"
+      "javaType" : "aws.Property<aws.ssm.PatchBaselineRuleGroup>"
     },
     "Sources" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-sources",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_PatchBaseline.PatchSource.schema.json",
-        "javaType" : "aws.Property<aws.ssm.PatchSource>"
+        "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchSource>"
       }
     },
     "Name" : {
@@ -75,7 +75,7 @@
     "GlobalFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-globalfilters",
       "$ref" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json",
-      "javaType" : "aws.Property<aws.ssm.PatchFilterGroup>"
+      "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchFilterGroup>"
     },
     "Tags" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-patchbaseline.html#cfn-ssm-patchbaseline-tags",

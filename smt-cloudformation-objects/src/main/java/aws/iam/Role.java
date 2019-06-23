@@ -36,12 +36,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Role {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("AssumeRolePolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument")
-    private Object assumeRolePolicyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument assumeRolePolicyDocument;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-managepolicyarns
      * 
@@ -77,7 +79,7 @@ public class Role {
      */
     @JsonProperty("Policies")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-policies")
-    private List<Property<Policy>> policies = new ArrayList<Property<Policy>>();
+    private List<Property<RolePolicy>> policies = new ArrayList<Property<RolePolicy>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-rolename
      * 
@@ -87,24 +89,28 @@ public class Role {
     private CharSequence roleName;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public Object getAssumeRolePolicyDocument() {
+    public PolicyDocument getAssumeRolePolicyDocument() {
         return assumeRolePolicyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-assumerolepolicydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setAssumeRolePolicyDocument(Object assumeRolePolicyDocument) {
+    public void setAssumeRolePolicyDocument(PolicyDocument assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
     }
 
-    public Role withAssumeRolePolicyDocument(Object assumeRolePolicyDocument) {
+    public Role withAssumeRolePolicyDocument(PolicyDocument assumeRolePolicyDocument) {
         this.assumeRolePolicyDocument = assumeRolePolicyDocument;
         return this;
     }
@@ -206,7 +212,7 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public List<Property<Policy>> getPolicies() {
+    public List<Property<RolePolicy>> getPolicies() {
         return policies;
     }
 
@@ -215,11 +221,11 @@ public class Role {
      * 
      */
     @JsonIgnore
-    public void setPolicies(List<Property<Policy>> policies) {
+    public void setPolicies(List<Property<RolePolicy>> policies) {
         this.policies = policies;
     }
 
-    public Role withPolicies(List<Property<Policy>> policies) {
+    public Role withPolicies(List<Property<RolePolicy>> policies) {
         this.policies = policies;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.VPNConnectionRouteResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<VPNConnectionRouteResource>", "aws.HasCondition<VPNConnectionRouteResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

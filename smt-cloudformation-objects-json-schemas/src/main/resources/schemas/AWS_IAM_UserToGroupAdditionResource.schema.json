@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iam.UserToGroupAdditionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<UserToGroupAdditionResource>", "aws.HasCondition<UserToGroupAdditionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

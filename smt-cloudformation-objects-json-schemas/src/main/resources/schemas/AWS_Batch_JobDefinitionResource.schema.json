@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.batch.JobDefinitionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<JobDefinitionResource>", "aws.HasCondition<JobDefinitionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

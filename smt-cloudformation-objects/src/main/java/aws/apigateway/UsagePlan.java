@@ -38,7 +38,7 @@ public class UsagePlan {
     @JsonProperty("ApiStages")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-apistages")
-    private Set<Property<ApiStage>> apiStages = new LinkedHashSet<Property<ApiStage>>();
+    private Set<Property<UsagePlanApiStage>> apiStages = new LinkedHashSet<Property<UsagePlanApiStage>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description
      * 
@@ -47,23 +47,23 @@ public class UsagePlan {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-description")
     private CharSequence description;
     /**
-     * QuotaSettings
+     * UsagePlanQuotaSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html
      * 
      */
     @JsonProperty("Quota")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html")
-    private Property<QuotaSettings> quota;
+    private Property<UsagePlanQuotaSettings> quota;
     /**
-     * ThrottleSettings
+     * UsagePlanThrottleSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
      * 
      */
     @JsonProperty("Throttle")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html")
-    private Property<ThrottleSettings> throttle;
+    private Property<UsagePlanThrottleSettings> throttle;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-usageplan.html#cfn-apigateway-usageplan-usageplanname
      * 
@@ -77,7 +77,7 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public Set<Property<ApiStage>> getApiStages() {
+    public Set<Property<UsagePlanApiStage>> getApiStages() {
         return apiStages;
     }
 
@@ -86,11 +86,11 @@ public class UsagePlan {
      * 
      */
     @JsonIgnore
-    public void setApiStages(Set<Property<ApiStage>> apiStages) {
+    public void setApiStages(Set<Property<UsagePlanApiStage>> apiStages) {
         this.apiStages = apiStages;
     }
 
-    public UsagePlan withApiStages(Set<Property<ApiStage>> apiStages) {
+    public UsagePlan withApiStages(Set<Property<UsagePlanApiStage>> apiStages) {
         this.apiStages = apiStages;
         return this;
     }
@@ -119,55 +119,55 @@ public class UsagePlan {
     }
 
     /**
-     * QuotaSettings
+     * UsagePlanQuotaSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html
      * 
      */
     @JsonIgnore
-    public Property<QuotaSettings> getQuota() {
+    public Property<UsagePlanQuotaSettings> getQuota() {
         return quota;
     }
 
     /**
-     * QuotaSettings
+     * UsagePlanQuotaSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-quotasettings.html
      * 
      */
     @JsonIgnore
-    public void setQuota(Property<QuotaSettings> quota) {
+    public void setQuota(Property<UsagePlanQuotaSettings> quota) {
         this.quota = quota;
     }
 
-    public UsagePlan withQuota(Property<QuotaSettings> quota) {
+    public UsagePlan withQuota(Property<UsagePlanQuotaSettings> quota) {
         this.quota = quota;
         return this;
     }
 
     /**
-     * ThrottleSettings
+     * UsagePlanThrottleSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
      * 
      */
     @JsonIgnore
-    public Property<ThrottleSettings> getThrottle() {
+    public Property<UsagePlanThrottleSettings> getThrottle() {
         return throttle;
     }
 
     /**
-     * ThrottleSettings
+     * UsagePlanThrottleSettings
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-usageplan-throttlesettings.html
      * 
      */
     @JsonIgnore
-    public void setThrottle(Property<ThrottleSettings> throttle) {
+    public void setThrottle(Property<UsagePlanThrottleSettings> throttle) {
         this.throttle = throttle;
     }
 
-    public UsagePlan withThrottle(Property<ThrottleSettings> throttle) {
+    public UsagePlan withThrottle(Property<UsagePlanThrottleSettings> throttle) {
         this.throttle = throttle;
         return this;
     }

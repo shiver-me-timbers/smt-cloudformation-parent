@@ -62,14 +62,14 @@ public class RestApi {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-body")
     private Object body;
     /**
-     * S3Location
+     * RestApiS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html
      * 
      */
     @JsonProperty("BodyS3Location")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html")
-    private Property<S3Location> bodyS3Location;
+    private Property<RestApiS3Location> bodyS3Location;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-clonefrom
      * 
@@ -85,14 +85,14 @@ public class RestApi {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-description")
     private CharSequence description;
     /**
-     * EndpointConfiguration
+     * RestApiEndpointConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html
      * 
      */
     @JsonProperty("EndpointConfiguration")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html")
-    private Property<EndpointConfiguration> endpointConfiguration;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html")
+    private Property<RestApiEndpointConfiguration> endpointConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-restapi.html#cfn-apigateway-restapi-failonwarnings
      * 
@@ -199,28 +199,28 @@ public class RestApi {
     }
 
     /**
-     * S3Location
+     * RestApiS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html
      * 
      */
     @JsonIgnore
-    public Property<S3Location> getBodyS3Location() {
+    public Property<RestApiS3Location> getBodyS3Location() {
         return bodyS3Location;
     }
 
     /**
-     * S3Location
+     * RestApiS3Location
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-s3location.html
      * 
      */
     @JsonIgnore
-    public void setBodyS3Location(Property<S3Location> bodyS3Location) {
+    public void setBodyS3Location(Property<RestApiS3Location> bodyS3Location) {
         this.bodyS3Location = bodyS3Location;
     }
 
-    public RestApi withBodyS3Location(Property<S3Location> bodyS3Location) {
+    public RestApi withBodyS3Location(Property<RestApiS3Location> bodyS3Location) {
         this.bodyS3Location = bodyS3Location;
         return this;
     }
@@ -272,28 +272,28 @@ public class RestApi {
     }
 
     /**
-     * EndpointConfiguration
+     * RestApiEndpointConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<EndpointConfiguration> getEndpointConfiguration() {
+    public Property<RestApiEndpointConfiguration> getEndpointConfiguration() {
         return endpointConfiguration;
     }
 
     /**
-     * EndpointConfiguration
+     * RestApiEndpointConfiguration
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-domainname-endpointconfiguration.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apigateway-restapi-endpointconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
+    public void setEndpointConfiguration(Property<RestApiEndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
     }
 
-    public RestApi withEndpointConfiguration(Property<EndpointConfiguration> endpointConfiguration) {
+    public RestApi withEndpointConfiguration(Property<RestApiEndpointConfiguration> endpointConfiguration) {
         this.endpointConfiguration = endpointConfiguration;
         return this;
     }

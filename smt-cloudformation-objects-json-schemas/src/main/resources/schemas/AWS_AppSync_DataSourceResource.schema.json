@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.DataSourceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DataSourceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DataSourceResource>", "aws.HasCondition<DataSourceResource>", "aws.HasAttributes<DataSourceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.route53resolver.ResolverEndpointResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ResolverEndpointAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ResolverEndpointResource>", "aws.HasCondition<ResolverEndpointResource>", "aws.HasAttributes<ResolverEndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

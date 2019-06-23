@@ -55,32 +55,32 @@ public class DataSource {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn")
     private CharSequence serviceRoleArn;
     /**
-     * HttpConfig
+     * DataSourceHttpConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html
      * 
      */
     @JsonProperty("HttpConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html")
-    private Property<HttpConfig> httpConfig;
+    private Property<DataSourceHttpConfig> httpConfig;
     /**
-     * RelationalDatabaseConfig
+     * DataSourceRelationalDatabaseConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
      * 
      */
     @JsonProperty("RelationalDatabaseConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html")
-    private Property<RelationalDatabaseConfig> relationalDatabaseConfig;
+    private Property<DataSourceRelationalDatabaseConfig> relationalDatabaseConfig;
     /**
-     * LambdaConfig
+     * DataSourceLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
      * 
      */
     @JsonProperty("LambdaConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html")
-    private Property<LambdaConfig> lambdaConfig;
+    private Property<DataSourceLambdaConfig> lambdaConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid
      * 
@@ -96,23 +96,23 @@ public class DataSource {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name")
     private CharSequence name;
     /**
-     * DynamoDBConfig
+     * DataSourceDynamoDBConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html
      * 
      */
     @JsonProperty("DynamoDBConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html")
-    private Property<DynamoDBConfig> dynamoDBConfig;
+    private Property<DataSourceDynamoDBConfig> dynamoDBConfig;
     /**
-     * ElasticsearchConfig
+     * DataSourceElasticsearchConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html
      * 
      */
     @JsonProperty("ElasticsearchConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html")
-    private Property<ElasticsearchConfig> elasticsearchConfig;
+    private Property<DataSourceElasticsearchConfig> elasticsearchConfig;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type
@@ -184,82 +184,82 @@ public class DataSource {
     }
 
     /**
-     * HttpConfig
+     * DataSourceHttpConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html
      * 
      */
     @JsonIgnore
-    public Property<HttpConfig> getHttpConfig() {
+    public Property<DataSourceHttpConfig> getHttpConfig() {
         return httpConfig;
     }
 
     /**
-     * HttpConfig
+     * DataSourceHttpConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-httpconfig.html
      * 
      */
     @JsonIgnore
-    public void setHttpConfig(Property<HttpConfig> httpConfig) {
+    public void setHttpConfig(Property<DataSourceHttpConfig> httpConfig) {
         this.httpConfig = httpConfig;
     }
 
-    public DataSource withHttpConfig(Property<HttpConfig> httpConfig) {
+    public DataSource withHttpConfig(Property<DataSourceHttpConfig> httpConfig) {
         this.httpConfig = httpConfig;
         return this;
     }
 
     /**
-     * RelationalDatabaseConfig
+     * DataSourceRelationalDatabaseConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
      * 
      */
     @JsonIgnore
-    public Property<RelationalDatabaseConfig> getRelationalDatabaseConfig() {
+    public Property<DataSourceRelationalDatabaseConfig> getRelationalDatabaseConfig() {
         return relationalDatabaseConfig;
     }
 
     /**
-     * RelationalDatabaseConfig
+     * DataSourceRelationalDatabaseConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-relationaldatabaseconfig.html
      * 
      */
     @JsonIgnore
-    public void setRelationalDatabaseConfig(Property<RelationalDatabaseConfig> relationalDatabaseConfig) {
+    public void setRelationalDatabaseConfig(Property<DataSourceRelationalDatabaseConfig> relationalDatabaseConfig) {
         this.relationalDatabaseConfig = relationalDatabaseConfig;
     }
 
-    public DataSource withRelationalDatabaseConfig(Property<RelationalDatabaseConfig> relationalDatabaseConfig) {
+    public DataSource withRelationalDatabaseConfig(Property<DataSourceRelationalDatabaseConfig> relationalDatabaseConfig) {
         this.relationalDatabaseConfig = relationalDatabaseConfig;
         return this;
     }
 
     /**
-     * LambdaConfig
+     * DataSourceLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LambdaConfig> getLambdaConfig() {
+    public Property<DataSourceLambdaConfig> getLambdaConfig() {
         return lambdaConfig;
     }
 
     /**
-     * LambdaConfig
+     * DataSourceLambdaConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-lambdaconfig.html
      * 
      */
     @JsonIgnore
-    public void setLambdaConfig(Property<LambdaConfig> lambdaConfig) {
+    public void setLambdaConfig(Property<DataSourceLambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
     }
 
-    public DataSource withLambdaConfig(Property<LambdaConfig> lambdaConfig) {
+    public DataSource withLambdaConfig(Property<DataSourceLambdaConfig> lambdaConfig) {
         this.lambdaConfig = lambdaConfig;
         return this;
     }
@@ -311,55 +311,55 @@ public class DataSource {
     }
 
     /**
-     * DynamoDBConfig
+     * DataSourceDynamoDBConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html
      * 
      */
     @JsonIgnore
-    public Property<DynamoDBConfig> getDynamoDBConfig() {
+    public Property<DataSourceDynamoDBConfig> getDynamoDBConfig() {
         return dynamoDBConfig;
     }
 
     /**
-     * DynamoDBConfig
+     * DataSourceDynamoDBConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-dynamodbconfig.html
      * 
      */
     @JsonIgnore
-    public void setDynamoDBConfig(Property<DynamoDBConfig> dynamoDBConfig) {
+    public void setDynamoDBConfig(Property<DataSourceDynamoDBConfig> dynamoDBConfig) {
         this.dynamoDBConfig = dynamoDBConfig;
     }
 
-    public DataSource withDynamoDBConfig(Property<DynamoDBConfig> dynamoDBConfig) {
+    public DataSource withDynamoDBConfig(Property<DataSourceDynamoDBConfig> dynamoDBConfig) {
         this.dynamoDBConfig = dynamoDBConfig;
         return this;
     }
 
     /**
-     * ElasticsearchConfig
+     * DataSourceElasticsearchConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html
      * 
      */
     @JsonIgnore
-    public Property<ElasticsearchConfig> getElasticsearchConfig() {
+    public Property<DataSourceElasticsearchConfig> getElasticsearchConfig() {
         return elasticsearchConfig;
     }
 
     /**
-     * ElasticsearchConfig
+     * DataSourceElasticsearchConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-datasource-elasticsearchconfig.html
      * 
      */
     @JsonIgnore
-    public void setElasticsearchConfig(Property<ElasticsearchConfig> elasticsearchConfig) {
+    public void setElasticsearchConfig(Property<DataSourceElasticsearchConfig> elasticsearchConfig) {
         this.elasticsearchConfig = elasticsearchConfig;
     }
 
-    public DataSource withElasticsearchConfig(Property<ElasticsearchConfig> elasticsearchConfig) {
+    public DataSource withElasticsearchConfig(Property<DataSourceElasticsearchConfig> elasticsearchConfig) {
         this.elasticsearchConfig = elasticsearchConfig;
         return this;
     }

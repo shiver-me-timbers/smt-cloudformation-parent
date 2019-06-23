@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Crawler.SchemaChangePolicy.schema.json",
-  "title" : "SchemaChangePolicy",
+  "title" : "CrawlerSchemaChangePolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html",
   "type" : "object",
-  "javaType" : "aws.glue.SchemaChangePolicy",
-  "javaInterfaces" : [ "aws.Property<SchemaChangePolicy>" ],
+  "javaType" : "aws.glue.CrawlerSchemaChangePolicy",
+  "javaInterfaces" : [ "aws.Property<CrawlerSchemaChangePolicy>" ],
   "properties" : {
     "UpdateBehavior" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior",

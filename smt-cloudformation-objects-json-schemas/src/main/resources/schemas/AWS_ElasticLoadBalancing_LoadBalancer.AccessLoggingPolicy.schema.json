@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticLoadBalancing_LoadBalancer.AccessLoggingPolicy.schema.json",
-  "title" : "AccessLoggingPolicy",
+  "title" : "LoadBalancerAccessLoggingPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancing.AccessLoggingPolicy",
-  "javaInterfaces" : [ "aws.Property<AccessLoggingPolicy>" ],
+  "javaType" : "aws.elasticloadbalancing.LoadBalancerAccessLoggingPolicy",
+  "javaInterfaces" : [ "aws.Property<LoadBalancerAccessLoggingPolicy>" ],
   "properties" : {
     "EmitInterval" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html#cfn-elb-accessloggingpolicy-emitinterval",

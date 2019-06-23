@@ -74,23 +74,23 @@ public class ScalingPolicy {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-servicenamespace")
     private CharSequence serviceNamespace;
     /**
-     * StepScalingPolicyConfiguration
+     * ScalingPolicyStepScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html
      * 
      */
     @JsonProperty("StepScalingPolicyConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html")
-    private Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration;
+    private Property<ScalingPolicyStepScalingPolicyConfiguration> stepScalingPolicyConfiguration;
     /**
-     * TargetTrackingScalingPolicyConfiguration
+     * ScalingPolicyTargetTrackingScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html
      * 
      */
     @JsonProperty("TargetTrackingScalingPolicyConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html")
-    private Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration;
+    private Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-applicationautoscaling-scalingpolicy.html#cfn-applicationautoscaling-scalingpolicy-policyname
@@ -231,55 +231,55 @@ public class ScalingPolicy {
     }
 
     /**
-     * StepScalingPolicyConfiguration
+     * ScalingPolicyStepScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<StepScalingPolicyConfiguration> getStepScalingPolicyConfiguration() {
+    public Property<ScalingPolicyStepScalingPolicyConfiguration> getStepScalingPolicyConfiguration() {
         return stepScalingPolicyConfiguration;
     }
 
     /**
-     * StepScalingPolicyConfiguration
+     * ScalingPolicyStepScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-stepscalingpolicyconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setStepScalingPolicyConfiguration(Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
+    public void setStepScalingPolicyConfiguration(Property<ScalingPolicyStepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
         this.stepScalingPolicyConfiguration = stepScalingPolicyConfiguration;
     }
 
-    public ScalingPolicy withStepScalingPolicyConfiguration(Property<StepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
+    public ScalingPolicy withStepScalingPolicyConfiguration(Property<ScalingPolicyStepScalingPolicyConfiguration> stepScalingPolicyConfiguration) {
         this.stepScalingPolicyConfiguration = stepScalingPolicyConfiguration;
         return this;
     }
 
     /**
-     * TargetTrackingScalingPolicyConfiguration
+     * ScalingPolicyTargetTrackingScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<TargetTrackingScalingPolicyConfiguration> getTargetTrackingScalingPolicyConfiguration() {
+    public Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration> getTargetTrackingScalingPolicyConfiguration() {
         return targetTrackingScalingPolicyConfiguration;
     }
 
     /**
-     * TargetTrackingScalingPolicyConfiguration
+     * ScalingPolicyTargetTrackingScalingPolicyConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-applicationautoscaling-scalingpolicy-targettrackingscalingpolicyconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setTargetTrackingScalingPolicyConfiguration(Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
+    public void setTargetTrackingScalingPolicyConfiguration(Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
         this.targetTrackingScalingPolicyConfiguration = targetTrackingScalingPolicyConfiguration;
     }
 
-    public ScalingPolicy withTargetTrackingScalingPolicyConfiguration(Property<TargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
+    public ScalingPolicy withTargetTrackingScalingPolicyConfiguration(Property<ScalingPolicyTargetTrackingScalingPolicyConfiguration> targetTrackingScalingPolicyConfiguration) {
         this.targetTrackingScalingPolicyConfiguration = targetTrackingScalingPolicyConfiguration;
         return this;
     }

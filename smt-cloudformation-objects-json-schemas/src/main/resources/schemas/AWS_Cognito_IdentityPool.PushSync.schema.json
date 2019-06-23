@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Cognito_IdentityPool.PushSync.schema.json",
-  "title" : "PushSync",
+  "title" : "IdentityPoolPushSync",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html",
   "type" : "object",
-  "javaType" : "aws.cognito.PushSync",
-  "javaInterfaces" : [ "aws.Property<PushSync>" ],
+  "javaType" : "aws.cognito.IdentityPoolPushSync",
+  "javaInterfaces" : [ "aws.Property<IdentityPoolPushSync>" ],
   "properties" : {
     "ApplicationArns" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-pushsync.html#cfn-cognito-identitypool-pushsync-applicationarns",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeBuild_Project.SourceAuth.schema.json",
-  "title" : "SourceAuth",
+  "title" : "ProjectSourceAuth",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html",
   "type" : "object",
-  "javaType" : "aws.codebuild.SourceAuth",
-  "javaInterfaces" : [ "aws.Property<SourceAuth>" ],
+  "javaType" : "aws.codebuild.ProjectSourceAuth",
+  "javaInterfaces" : [ "aws.Property<ProjectSourceAuth>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-sourceauth.html#cfn-codebuild-project-sourceauth-type",

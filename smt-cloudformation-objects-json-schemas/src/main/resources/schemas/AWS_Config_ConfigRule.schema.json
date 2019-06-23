@@ -18,7 +18,8 @@
     },
     "InputParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-inputparameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "MaximumExecutionFrequency" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency",
@@ -28,12 +29,12 @@
     "Scope" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-scope",
       "$ref" : "AWS_Config_ConfigRule.Scope.schema.json",
-      "javaType" : "aws.Property<aws.config.Scope>"
+      "javaType" : "aws.Property<aws.config.ConfigRuleScope>"
     },
     "Source" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-source",
-      "$ref" : "AWS_Config_ConfigurationAggregator.OrganizationAggregationSource.schema.json",
-      "javaType" : "aws.Property<aws.config.Source>"
+      "$ref" : "AWS_Config_ConfigRule.Source.schema.json",
+      "javaType" : "aws.Property<aws.config.ConfigRuleSource>"
     }
   }
 }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.lambda.LayerVersionPermissionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<LayerVersionPermissionResource>", "aws.HasCondition<LayerVersionPermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

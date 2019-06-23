@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.rds.OptionGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<OptionGroupResource>", "aws.HasCondition<OptionGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

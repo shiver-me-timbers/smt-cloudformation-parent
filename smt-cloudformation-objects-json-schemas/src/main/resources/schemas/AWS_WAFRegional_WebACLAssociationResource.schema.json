@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.wafregional.WebACLAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<WebACLAssociationResource>", "aws.HasCondition<WebACLAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

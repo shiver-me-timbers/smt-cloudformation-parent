@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_S3_Bucket.LifecycleConfiguration.schema.json",
-  "title" : "LifecycleConfiguration",
+  "title" : "BucketLifecycleConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html",
   "type" : "object",
-  "javaType" : "aws.s3.LifecycleConfiguration",
-  "javaInterfaces" : [ "aws.Property<LifecycleConfiguration>" ],
+  "javaType" : "aws.s3.BucketLifecycleConfiguration",
+  "javaInterfaces" : [ "aws.Property<BucketLifecycleConfiguration>" ],
   "properties" : {
     "Rules" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html#cfn-s3-bucket-lifecycleconfig-rules",
@@ -13,7 +13,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_S3_Bucket.CorsRule.schema.json",
-        "javaType" : "aws.Property<aws.s3.Rule>"
+        "javaType" : "aws.Property<aws.s3.BucketRule>"
       }
     }
   }

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.SubnetNetworkAclAssociationResource",
-  "javaInterfaces" : [ "aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<SubnetNetworkAclAssociationResource>", "aws.HasCondition<SubnetNetworkAclAssociationResource>", "aws.HasAttributes<SubnetNetworkAclAssociationAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

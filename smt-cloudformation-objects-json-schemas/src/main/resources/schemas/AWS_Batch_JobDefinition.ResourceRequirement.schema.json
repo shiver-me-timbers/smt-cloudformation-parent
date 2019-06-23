@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Batch_JobDefinition.ResourceRequirement.schema.json",
-  "title" : "ResourceRequirement",
+  "title" : "JobDefinitionResourceRequirement",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-resourcerequirement.html",
   "type" : "object",
-  "javaType" : "aws.batch.ResourceRequirement",
-  "javaInterfaces" : [ "aws.Property<ResourceRequirement>" ],
+  "javaType" : "aws.batch.JobDefinitionResourceRequirement",
+  "javaInterfaces" : [ "aws.Property<JobDefinitionResourceRequirement>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-resourcerequirement.html#cfn-batch-jobdefinition-resourcerequirement-type",

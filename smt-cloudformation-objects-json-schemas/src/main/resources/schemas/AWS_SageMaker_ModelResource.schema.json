@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sagemaker.ModelResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ModelAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ModelResource>", "aws.HasCondition<ModelResource>", "aws.HasAttributes<ModelAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

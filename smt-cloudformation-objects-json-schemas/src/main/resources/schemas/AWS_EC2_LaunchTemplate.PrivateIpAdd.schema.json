@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_LaunchTemplate.PrivateIpAdd.schema.json",
-  "title" : "PrivateIpAdd",
+  "title" : "LaunchTemplatePrivateIpAdd",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html",
   "type" : "object",
-  "javaType" : "aws.ec2.PrivateIpAdd",
-  "javaInterfaces" : [ "aws.Property<PrivateIpAdd>" ],
+  "javaType" : "aws.ec2.LaunchTemplatePrivateIpAdd",
+  "javaInterfaces" : [ "aws.Property<LaunchTemplatePrivateIpAdd>" ],
   "properties" : {
     "PrivateIpAddress" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-privateipadd.html#cfn-ec2-launchtemplate-privateipadd-privateipaddress",

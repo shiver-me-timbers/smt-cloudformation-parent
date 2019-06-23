@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SageMaker_NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleHook.schema.json",
-  "title" : "NotebookInstanceLifecycleHook",
+  "title" : "NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.html",
   "type" : "object",
-  "javaType" : "aws.sagemaker.NotebookInstanceLifecycleHook",
-  "javaInterfaces" : [ "aws.Property<NotebookInstanceLifecycleHook>" ],
+  "javaType" : "aws.sagemaker.NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook",
+  "javaInterfaces" : [ "aws.Property<NotebookInstanceLifecycleConfigNotebookInstanceLifecycleHook>" ],
   "properties" : {
     "Content" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook-content",

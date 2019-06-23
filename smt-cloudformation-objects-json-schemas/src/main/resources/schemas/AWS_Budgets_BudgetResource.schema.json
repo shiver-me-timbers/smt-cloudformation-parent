@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.budgets.BudgetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<BudgetResource>", "aws.HasCondition<BudgetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

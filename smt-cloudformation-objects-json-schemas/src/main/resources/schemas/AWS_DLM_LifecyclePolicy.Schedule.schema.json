@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_DLM_LifecyclePolicy.Schedule.schema.json",
-  "title" : "Schedule",
+  "title" : "LifecyclePolicySchedule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html",
   "type" : "object",
-  "javaType" : "aws.dlm.Schedule",
-  "javaInterfaces" : [ "aws.Property<Schedule>" ],
+  "javaType" : "aws.dlm.LifecyclePolicySchedule",
+  "javaInterfaces" : [ "aws.Property<LifecyclePolicySchedule>" ],
   "properties" : {
     "TagsToAdd" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-tagstoadd",
@@ -18,12 +18,12 @@
     "CreateRule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-createrule",
       "$ref" : "AWS_DLM_LifecyclePolicy.CreateRule.schema.json",
-      "javaType" : "aws.Property<aws.dlm.CreateRule>"
+      "javaType" : "aws.Property<aws.dlm.LifecyclePolicyCreateRule>"
     },
     "RetainRule" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-retainrule",
       "$ref" : "AWS_DLM_LifecyclePolicy.RetainRule.schema.json",
-      "javaType" : "aws.Property<aws.dlm.RetainRule>"
+      "javaType" : "aws.Property<aws.dlm.LifecyclePolicyRetainRule>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dlm-lifecyclepolicy-schedule.html#cfn-dlm-lifecyclepolicy-schedule-name",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalyticsV2_ApplicationOutput.DestinationSchema.schema.json",
-  "title" : "DestinationSchema",
+  "title" : "ApplicationOutputDestinationSchema",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-destinationschema.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalyticsv2.DestinationSchema",
-  "javaInterfaces" : [ "aws.Property<DestinationSchema>" ],
+  "javaType" : "aws.kinesisanalyticsv2.ApplicationOutputDestinationSchema",
+  "javaInterfaces" : [ "aws.Property<ApplicationOutputDestinationSchema>" ],
   "properties" : {
     "RecordFormatType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalyticsv2-applicationoutput-destinationschema.html#cfn-kinesisanalyticsv2-applicationoutput-destinationschema-recordformattype",

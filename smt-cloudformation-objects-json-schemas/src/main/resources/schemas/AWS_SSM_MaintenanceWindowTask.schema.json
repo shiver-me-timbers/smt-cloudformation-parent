@@ -35,7 +35,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_MaintenanceWindowTask.Target.schema.json",
-        "javaType" : "aws.Property<aws.ssm.Target>"
+        "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskTarget>"
       }
     },
     "Name" : {
@@ -51,7 +51,7 @@
     "TaskInvocationParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskinvocationparameters",
       "$ref" : "AWS_SSM_MaintenanceWindowTask.TaskInvocationParameters.schema.json",
-      "javaType" : "aws.Property<aws.ssm.TaskInvocationParameters>"
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskTaskInvocationParameters>"
     },
     "WindowId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-windowid",
@@ -60,7 +60,8 @@
     },
     "TaskParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-taskparameters",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "TaskType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-tasktype",
@@ -70,7 +71,7 @@
     "LoggingInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-maintenancewindowtask.html#cfn-ssm-maintenancewindowtask-logginginfo",
       "$ref" : "AWS_SSM_MaintenanceWindowTask.LoggingInfo.schema.json",
-      "javaType" : "aws.Property<aws.ssm.LoggingInfo>"
+      "javaType" : "aws.Property<aws.ssm.MaintenanceWindowTaskLoggingInfo>"
     }
   }
 }

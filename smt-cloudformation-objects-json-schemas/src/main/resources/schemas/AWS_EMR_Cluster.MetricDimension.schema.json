@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Cluster.MetricDimension.schema.json",
-  "title" : "MetricDimension",
+  "title" : "ClusterMetricDimension",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-metricdimension.html",
   "type" : "object",
-  "javaType" : "aws.emr.MetricDimension",
-  "javaInterfaces" : [ "aws.Property<MetricDimension>" ],
+  "javaType" : "aws.emr.ClusterMetricDimension",
+  "javaInterfaces" : [ "aws.Property<ClusterMetricDimension>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-metricdimension.html#cfn-elasticmapreduce-cluster-metricdimension-key",

@@ -33,7 +33,7 @@ public class SizeConstraintSet {
      */
     @JsonProperty("SizeConstraints")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-sizeconstraints")
-    private List<Property<SizeConstraint>> sizeConstraints = new ArrayList<Property<SizeConstraint>>();
+    private List<Property<SizeConstraintSetSizeConstraint>> sizeConstraints = new ArrayList<Property<SizeConstraintSetSizeConstraint>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-sizeconstraintset.html#cfn-wafregional-sizeconstraintset-name
      * 
@@ -47,7 +47,7 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public List<Property<SizeConstraint>> getSizeConstraints() {
+    public List<Property<SizeConstraintSetSizeConstraint>> getSizeConstraints() {
         return sizeConstraints;
     }
 
@@ -56,11 +56,11 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public void setSizeConstraints(List<Property<SizeConstraint>> sizeConstraints) {
+    public void setSizeConstraints(List<Property<SizeConstraintSetSizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
     }
 
-    public SizeConstraintSet withSizeConstraints(List<Property<SizeConstraint>> sizeConstraints) {
+    public SizeConstraintSet withSizeConstraints(List<Property<SizeConstraintSetSizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
         return this;
     }

@@ -33,14 +33,14 @@ public class LaunchTemplate {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename")
     private CharSequence launchTemplateName;
     /**
-     * LaunchTemplateData
+     * LaunchTemplateLaunchTemplateData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
     @JsonProperty("LaunchTemplateData")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html")
-    private Property<LaunchTemplateData> launchTemplateData;
+    private Property<LaunchTemplateLaunchTemplateData> launchTemplateData;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-launchtemplate.html#cfn-ec2-launchtemplate-launchtemplatename
@@ -66,28 +66,28 @@ public class LaunchTemplate {
     }
 
     /**
-     * LaunchTemplateData
+     * LaunchTemplateLaunchTemplateData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
     @JsonIgnore
-    public Property<LaunchTemplateData> getLaunchTemplateData() {
+    public Property<LaunchTemplateLaunchTemplateData> getLaunchTemplateData() {
         return launchTemplateData;
     }
 
     /**
-     * LaunchTemplateData
+     * LaunchTemplateLaunchTemplateData
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata.html
      * 
      */
     @JsonIgnore
-    public void setLaunchTemplateData(Property<LaunchTemplateData> launchTemplateData) {
+    public void setLaunchTemplateData(Property<LaunchTemplateLaunchTemplateData> launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
     }
 
-    public LaunchTemplate withLaunchTemplateData(Property<LaunchTemplateData> launchTemplateData) {
+    public LaunchTemplate withLaunchTemplateData(Property<LaunchTemplateLaunchTemplateData> launchTemplateData) {
         this.launchTemplateData = launchTemplateData;
         return this;
     }

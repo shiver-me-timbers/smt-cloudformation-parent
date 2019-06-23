@@ -59,7 +59,7 @@ public class ConfigurationTemplate {
      */
     @JsonProperty("OptionSettings")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-optionsettings")
-    private List<Property<ConfigurationOptionSetting>> optionSettings = new ArrayList<Property<ConfigurationOptionSetting>>();
+    private List<Property<ConfigurationTemplateConfigurationOptionSetting>> optionSettings = new ArrayList<Property<ConfigurationTemplateConfigurationOptionSetting>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-platformarn
      * 
@@ -75,14 +75,14 @@ public class ConfigurationTemplate {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-solutionstackname")
     private CharSequence solutionStackName;
     /**
-     * SourceConfiguration
+     * ConfigurationTemplateSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html
      * 
      */
     @JsonProperty("SourceConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html")
-    private Property<SourceConfiguration> sourceConfiguration;
+    private Property<ConfigurationTemplateSourceConfiguration> sourceConfiguration;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticbeanstalk-configurationtemplate.html#cfn-elasticbeanstalk-configurationtemplate-applicationname
@@ -158,7 +158,7 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public List<Property<ConfigurationOptionSetting>> getOptionSettings() {
+    public List<Property<ConfigurationTemplateConfigurationOptionSetting>> getOptionSettings() {
         return optionSettings;
     }
 
@@ -167,11 +167,11 @@ public class ConfigurationTemplate {
      * 
      */
     @JsonIgnore
-    public void setOptionSettings(List<Property<ConfigurationOptionSetting>> optionSettings) {
+    public void setOptionSettings(List<Property<ConfigurationTemplateConfigurationOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
     }
 
-    public ConfigurationTemplate withOptionSettings(List<Property<ConfigurationOptionSetting>> optionSettings) {
+    public ConfigurationTemplate withOptionSettings(List<Property<ConfigurationTemplateConfigurationOptionSetting>> optionSettings) {
         this.optionSettings = optionSettings;
         return this;
     }
@@ -223,28 +223,28 @@ public class ConfigurationTemplate {
     }
 
     /**
-     * SourceConfiguration
+     * ConfigurationTemplateSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<SourceConfiguration> getSourceConfiguration() {
+    public Property<ConfigurationTemplateSourceConfiguration> getSourceConfiguration() {
         return sourceConfiguration;
     }
 
     /**
-     * SourceConfiguration
+     * ConfigurationTemplateSourceConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-configurationtemplate-sourceconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setSourceConfiguration(Property<SourceConfiguration> sourceConfiguration) {
+    public void setSourceConfiguration(Property<ConfigurationTemplateSourceConfiguration> sourceConfiguration) {
         this.sourceConfiguration = sourceConfiguration;
     }
 
-    public ConfigurationTemplate withSourceConfiguration(Property<SourceConfiguration> sourceConfiguration) {
+    public ConfigurationTemplate withSourceConfiguration(Property<ConfigurationTemplateSourceConfiguration> sourceConfiguration) {
         this.sourceConfiguration = sourceConfiguration;
         return this;
     }

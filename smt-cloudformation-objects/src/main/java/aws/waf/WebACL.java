@@ -31,14 +31,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class WebACL {
 
     /**
-     * WafAction
+     * WebACLWafAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
     @JsonProperty("DefaultAction")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html")
-    private Property<WafAction> defaultAction;
+    private Property<WebACLWafAction> defaultAction;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-metricname
      * 
@@ -60,31 +60,31 @@ public class WebACL {
     @JsonProperty("Rules")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-webacl.html#cfn-waf-webacl-rules")
-    private Set<Property<ActivatedRule>> rules = new LinkedHashSet<Property<ActivatedRule>>();
+    private Set<Property<WebACLActivatedRule>> rules = new LinkedHashSet<Property<WebACLActivatedRule>>();
 
     /**
-     * WafAction
+     * WebACLWafAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
     @JsonIgnore
-    public Property<WafAction> getDefaultAction() {
+    public Property<WebACLWafAction> getDefaultAction() {
         return defaultAction;
     }
 
     /**
-     * WafAction
+     * WebACLWafAction
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html
      * 
      */
     @JsonIgnore
-    public void setDefaultAction(Property<WafAction> defaultAction) {
+    public void setDefaultAction(Property<WebACLWafAction> defaultAction) {
         this.defaultAction = defaultAction;
     }
 
-    public WebACL withDefaultAction(Property<WafAction> defaultAction) {
+    public WebACL withDefaultAction(Property<WebACLWafAction> defaultAction) {
         this.defaultAction = defaultAction;
         return this;
     }
@@ -140,7 +140,7 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public Set<Property<ActivatedRule>> getRules() {
+    public Set<Property<WebACLActivatedRule>> getRules() {
         return rules;
     }
 
@@ -149,11 +149,11 @@ public class WebACL {
      * 
      */
     @JsonIgnore
-    public void setRules(Set<Property<ActivatedRule>> rules) {
+    public void setRules(Set<Property<WebACLActivatedRule>> rules) {
         this.rules = rules;
     }
 
-    public WebACL withRules(Set<Property<ActivatedRule>> rules) {
+    public WebACL withRules(Set<Property<WebACLActivatedRule>> rules) {
         this.rules = rules;
         return this;
     }

@@ -17,55 +17,85 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * ResourceDefinitionVersion
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
-    "Resources"
+    "Resources",
+    "ResourceDefinitionId"
 })
-public class ResourceDefinitionVersion implements Property<ResourceDefinitionVersion>
-{
+public class ResourceDefinitionVersion {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resources
      * 
      */
     @JsonProperty("Resources")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources")
-    private List<Property<ResourceInstance>> resources = new ArrayList<Property<ResourceInstance>>();
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resources")
+    private List<Property<ResourceDefinitionVersionResourceInstance>> resources = new ArrayList<Property<ResourceDefinitionVersionResourceInstance>>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resourcedefinitionid
+     * 
+     */
+    @JsonProperty("ResourceDefinitionId")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resourcedefinitionid")
+    private CharSequence resourceDefinitionId;
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resources
      * 
      */
     @JsonIgnore
-    public List<Property<ResourceInstance>> getResources() {
+    public List<Property<ResourceDefinitionVersionResourceInstance>> getResources() {
         return resources;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-resourcedefinition-resourcedefinitionversion.html#cfn-greengrass-resourcedefinition-resourcedefinitionversion-resources
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resources
      * 
      */
     @JsonIgnore
-    public void setResources(List<Property<ResourceInstance>> resources) {
+    public void setResources(List<Property<ResourceDefinitionVersionResourceInstance>> resources) {
         this.resources = resources;
     }
 
-    public ResourceDefinitionVersion withResources(List<Property<ResourceInstance>> resources) {
+    public ResourceDefinitionVersion withResources(List<Property<ResourceDefinitionVersionResourceInstance>> resources) {
         this.resources = resources;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resourcedefinitionid
+     * 
+     */
+    @JsonIgnore
+    public CharSequence getResourceDefinitionId() {
+        return resourceDefinitionId;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-resourcedefinitionversion.html#cfn-greengrass-resourcedefinitionversion-resourcedefinitionid
+     * 
+     */
+    @JsonIgnore
+    public void setResourceDefinitionId(CharSequence resourceDefinitionId) {
+        this.resourceDefinitionId = resourceDefinitionId;
+    }
+
+    public ResourceDefinitionVersion withResourceDefinitionId(CharSequence resourceDefinitionId) {
+        this.resourceDefinitionId = resourceDefinitionId;
         return this;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("resources", resources).toString();
+        return new ToStringBuilder(this).append("resources", resources).append("resourceDefinitionId", resourceDefinitionId).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(resources).toHashCode();
+        return new HashCodeBuilder().append(resourceDefinitionId).append(resources).toHashCode();
     }
 
     @Override
@@ -77,7 +107,7 @@ public class ResourceDefinitionVersion implements Property<ResourceDefinitionVer
             return false;
         }
         ResourceDefinitionVersion rhs = ((ResourceDefinitionVersion) other);
-        return new EqualsBuilder().append(resources, rhs.resources).isEquals();
+        return new EqualsBuilder().append(resourceDefinitionId, rhs.resourceDefinitionId).append(resources, rhs.resources).isEquals();
     }
 
 }

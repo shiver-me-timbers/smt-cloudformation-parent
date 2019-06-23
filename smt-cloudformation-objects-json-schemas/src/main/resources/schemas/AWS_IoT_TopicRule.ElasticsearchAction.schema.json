@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoT_TopicRule.ElasticsearchAction.schema.json",
-  "title" : "ElasticsearchAction",
+  "title" : "TopicRuleElasticsearchAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.ElasticsearchAction",
-  "javaInterfaces" : [ "aws.Property<ElasticsearchAction>" ],
+  "javaType" : "aws.iot.TopicRuleElasticsearchAction",
+  "javaInterfaces" : [ "aws.Property<TopicRuleElasticsearchAction>" ],
   "properties" : {
     "Endpoint" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-elasticsearchaction.html#cfn-iot-topicrule-elasticsearchaction-endpoint",

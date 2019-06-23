@@ -57,14 +57,14 @@ public class Crawler {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-description")
     private CharSequence description;
     /**
-     * SchemaChangePolicy
+     * CrawlerSchemaChangePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html
      * 
      */
     @JsonProperty("SchemaChangePolicy")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html")
-    private Property<SchemaChangePolicy> schemaChangePolicy;
+    private Property<CrawlerSchemaChangePolicy> schemaChangePolicy;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration
      * 
@@ -73,14 +73,14 @@ public class Crawler {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-configuration")
     private CharSequence configuration;
     /**
-     * Schedule
+     * CrawlerSchedule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html
      * 
      */
     @JsonProperty("Schedule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html")
-    private Property<Schedule> schedule;
+    private Property<CrawlerSchedule> schedule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename
      * 
@@ -89,14 +89,14 @@ public class Crawler {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-databasename")
     private CharSequence databaseName;
     /**
-     * Targets
+     * CrawlerTargets
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html
      * 
      */
     @JsonProperty("Targets")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html")
-    private Property<Targets> targets;
+    private Property<CrawlerTargets> targets;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-crawler.html#cfn-glue-crawler-tableprefix
      * 
@@ -182,28 +182,28 @@ public class Crawler {
     }
 
     /**
-     * SchemaChangePolicy
+     * CrawlerSchemaChangePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html
      * 
      */
     @JsonIgnore
-    public Property<SchemaChangePolicy> getSchemaChangePolicy() {
+    public Property<CrawlerSchemaChangePolicy> getSchemaChangePolicy() {
         return schemaChangePolicy;
     }
 
     /**
-     * SchemaChangePolicy
+     * CrawlerSchemaChangePolicy
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html
      * 
      */
     @JsonIgnore
-    public void setSchemaChangePolicy(Property<SchemaChangePolicy> schemaChangePolicy) {
+    public void setSchemaChangePolicy(Property<CrawlerSchemaChangePolicy> schemaChangePolicy) {
         this.schemaChangePolicy = schemaChangePolicy;
     }
 
-    public Crawler withSchemaChangePolicy(Property<SchemaChangePolicy> schemaChangePolicy) {
+    public Crawler withSchemaChangePolicy(Property<CrawlerSchemaChangePolicy> schemaChangePolicy) {
         this.schemaChangePolicy = schemaChangePolicy;
         return this;
     }
@@ -232,28 +232,28 @@ public class Crawler {
     }
 
     /**
-     * Schedule
+     * CrawlerSchedule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html
      * 
      */
     @JsonIgnore
-    public Property<Schedule> getSchedule() {
+    public Property<CrawlerSchedule> getSchedule() {
         return schedule;
     }
 
     /**
-     * Schedule
+     * CrawlerSchedule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schedule.html
      * 
      */
     @JsonIgnore
-    public void setSchedule(Property<Schedule> schedule) {
+    public void setSchedule(Property<CrawlerSchedule> schedule) {
         this.schedule = schedule;
     }
 
-    public Crawler withSchedule(Property<Schedule> schedule) {
+    public Crawler withSchedule(Property<CrawlerSchedule> schedule) {
         this.schedule = schedule;
         return this;
     }
@@ -282,28 +282,28 @@ public class Crawler {
     }
 
     /**
-     * Targets
+     * CrawlerTargets
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html
      * 
      */
     @JsonIgnore
-    public Property<Targets> getTargets() {
+    public Property<CrawlerTargets> getTargets() {
         return targets;
     }
 
     /**
-     * Targets
+     * CrawlerTargets
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html
      * 
      */
     @JsonIgnore
-    public void setTargets(Property<Targets> targets) {
+    public void setTargets(Property<CrawlerTargets> targets) {
         this.targets = targets;
     }
 
-    public Crawler withTargets(Property<Targets> targets) {
+    public Crawler withTargets(Property<CrawlerTargets> targets) {
         this.targets = targets;
         return this;
     }

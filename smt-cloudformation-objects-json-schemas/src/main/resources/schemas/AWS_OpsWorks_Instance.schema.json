@@ -37,7 +37,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_OpsWorks_Instance.BlockDeviceMapping.schema.json",
-        "javaType" : "aws.Property<aws.opsworks.BlockDeviceMapping>"
+        "javaType" : "aws.Property<aws.opsworks.InstanceBlockDeviceMapping>"
       }
     },
     "EbsOptimized" : {
@@ -108,7 +108,7 @@
     "TimeBasedAutoScaling" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-timebasedautoscaling",
       "$ref" : "AWS_OpsWorks_Instance.TimeBasedAutoScaling.schema.json",
-      "javaType" : "aws.Property<aws.opsworks.TimeBasedAutoScaling>"
+      "javaType" : "aws.Property<aws.opsworks.InstanceTimeBasedAutoScaling>"
     },
     "VirtualizationType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-instance.html#cfn-opsworks-instance-virtualizationtype",

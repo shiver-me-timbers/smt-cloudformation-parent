@@ -33,14 +33,14 @@ public class ApplicationOutput {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname")
     private CharSequence applicationName;
     /**
-     * KinesisFirehoseOutput
+     * ApplicationOutputKinesisFirehoseOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html
      * 
      */
     @JsonProperty("Output")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html")
-    private Property<Output> output;
+    private Property<ApplicationOutputOutput> output;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalytics-applicationoutput.html#cfn-kinesisanalytics-applicationoutput-applicationname
@@ -66,28 +66,28 @@ public class ApplicationOutput {
     }
 
     /**
-     * KinesisFirehoseOutput
+     * ApplicationOutputKinesisFirehoseOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html
      * 
      */
     @JsonIgnore
-    public Property<Output> getOutput() {
+    public Property<ApplicationOutputOutput> getOutput() {
         return output;
     }
 
     /**
-     * KinesisFirehoseOutput
+     * ApplicationOutputKinesisFirehoseOutput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-kinesisfirehoseoutput.html
      * 
      */
     @JsonIgnore
-    public void setOutput(Property<Output> output) {
+    public void setOutput(Property<ApplicationOutputOutput> output) {
         this.output = output;
     }
 
-    public ApplicationOutput withOutput(Property<Output> output) {
+    public ApplicationOutput withOutput(Property<ApplicationOutputOutput> output) {
         this.output = output;
         return this;
     }

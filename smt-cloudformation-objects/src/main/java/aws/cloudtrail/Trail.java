@@ -70,7 +70,7 @@ public class Trail {
     @JsonProperty("EventSelectors")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-eventselectors")
-    private Set<Property<EventSelector>> eventSelectors = new LinkedHashSet<Property<EventSelector>>();
+    private Set<Property<TrailEventSelector>> eventSelectors = new LinkedHashSet<Property<TrailEventSelector>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents
      * 
@@ -209,7 +209,7 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public Set<Property<EventSelector>> getEventSelectors() {
+    public Set<Property<TrailEventSelector>> getEventSelectors() {
         return eventSelectors;
     }
 
@@ -218,11 +218,11 @@ public class Trail {
      * 
      */
     @JsonIgnore
-    public void setEventSelectors(Set<Property<EventSelector>> eventSelectors) {
+    public void setEventSelectors(Set<Property<TrailEventSelector>> eventSelectors) {
         this.eventSelectors = eventSelectors;
     }
 
-    public Trail withEventSelectors(Set<Property<EventSelector>> eventSelectors) {
+    public Trail withEventSelectors(Set<Property<TrailEventSelector>> eventSelectors) {
         this.eventSelectors = eventSelectors;
         return this;
     }

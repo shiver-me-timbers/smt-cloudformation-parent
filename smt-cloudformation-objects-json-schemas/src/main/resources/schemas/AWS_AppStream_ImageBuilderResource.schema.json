@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appstream.ImageBuilderResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ImageBuilderAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ImageBuilderResource>", "aws.HasCondition<ImageBuilderResource>", "aws.HasAttributes<ImageBuilderAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

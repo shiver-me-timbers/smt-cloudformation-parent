@@ -9,7 +9,7 @@
     "ApplicationSettings" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-applicationsettings",
       "$ref" : "AWS_AppStream_Stack.ApplicationSettings.schema.json",
-      "javaType" : "aws.Property<aws.appstream.ApplicationSettings>"
+      "javaType" : "aws.Property<aws.appstream.StackApplicationSettings>"
     },
     "Description" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-stack.html#cfn-appstream-stack-description",
@@ -21,7 +21,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppStream_Stack.StorageConnector.schema.json",
-        "javaType" : "aws.Property<aws.appstream.StorageConnector>"
+        "javaType" : "aws.Property<aws.appstream.StackStorageConnector>"
       }
     },
     "DeleteStorageConnectors" : {
@@ -33,7 +33,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_AppStream_Stack.UserSetting.schema.json",
-        "javaType" : "aws.Property<aws.appstream.UserSetting>"
+        "javaType" : "aws.Property<aws.appstream.StackUserSetting>"
       }
     },
     "AttributesToDelete" : {

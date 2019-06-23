@@ -50,14 +50,14 @@ public class ComputeEnvironment {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname")
     private CharSequence computeEnvironmentName;
     /**
-     * ComputeResources
+     * ComputeEnvironmentComputeResources
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html
      * 
      */
     @JsonProperty("ComputeResources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html")
-    private Property<ComputeResources> computeResources;
+    private Property<ComputeEnvironmentComputeResources> computeResources;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state
      * 
@@ -136,28 +136,28 @@ public class ComputeEnvironment {
     }
 
     /**
-     * ComputeResources
+     * ComputeEnvironmentComputeResources
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html
      * 
      */
     @JsonIgnore
-    public Property<ComputeResources> getComputeResources() {
+    public Property<ComputeEnvironmentComputeResources> getComputeResources() {
         return computeResources;
     }
 
     /**
-     * ComputeResources
+     * ComputeEnvironmentComputeResources
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-computeenvironment-computeresources.html
      * 
      */
     @JsonIgnore
-    public void setComputeResources(Property<ComputeResources> computeResources) {
+    public void setComputeResources(Property<ComputeEnvironmentComputeResources> computeResources) {
         this.computeResources = computeResources;
     }
 
-    public ComputeEnvironment withComputeResources(Property<ComputeResources> computeResources) {
+    public ComputeEnvironment withComputeResources(Property<ComputeEnvironmentComputeResources> computeResources) {
         this.computeResources = computeResources;
         return this;
     }

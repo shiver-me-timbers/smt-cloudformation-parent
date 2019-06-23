@@ -14,7 +14,7 @@
     "ReferenceDataSource" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesisanalyticsv2-applicationreferencedatasource.html#cfn-kinesisanalyticsv2-applicationreferencedatasource-referencedatasource",
       "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.ReferenceDataSource.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ReferenceDataSource>"
+      "javaType" : "aws.Property<aws.kinesisanalyticsv2.ApplicationReferenceDataSourceReferenceDataSource>"
     }
   }
 }

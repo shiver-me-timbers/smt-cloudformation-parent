@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ses.ConfigurationSetEventDestinationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationSetEventDestinationResource>", "aws.HasCondition<ConfigurationSetEventDestinationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

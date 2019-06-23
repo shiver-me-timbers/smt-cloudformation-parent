@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticBeanstalk_Application.MaxCountRule.schema.json",
-  "title" : "MaxCountRule",
+  "title" : "ApplicationMaxCountRule",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html",
   "type" : "object",
-  "javaType" : "aws.elasticbeanstalk.MaxCountRule",
-  "javaInterfaces" : [ "aws.Property<MaxCountRule>" ],
+  "javaType" : "aws.elasticbeanstalk.ApplicationMaxCountRule",
+  "javaInterfaces" : [ "aws.Property<ApplicationMaxCountRule>" ],
   "properties" : {
     "DeleteSourceFromS3" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticbeanstalk-application-maxcountrule.html#cfn-elasticbeanstalk-application-maxcountrule-deletesourcefroms3",

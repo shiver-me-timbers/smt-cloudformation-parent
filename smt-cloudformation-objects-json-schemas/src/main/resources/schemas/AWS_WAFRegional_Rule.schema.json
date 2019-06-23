@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_WAFRegional_Rule.Predicate.schema.json",
-        "javaType" : "aws.Property<aws.wafregional.Predicate>"
+        "javaType" : "aws.Property<aws.wafregional.RulePredicate>"
       }
     },
     "Name" : {

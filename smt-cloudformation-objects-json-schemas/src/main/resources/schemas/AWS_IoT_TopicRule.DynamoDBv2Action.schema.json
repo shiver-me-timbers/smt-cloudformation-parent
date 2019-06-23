@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoT_TopicRule.DynamoDBv2Action.schema.json",
-  "title" : "DynamoDBv2Action",
+  "title" : "TopicRuleDynamoDBv2Action",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html",
   "type" : "object",
-  "javaType" : "aws.iot.DynamoDBv2Action",
-  "javaInterfaces" : [ "aws.Property<DynamoDBv2Action>" ],
+  "javaType" : "aws.iot.TopicRuleDynamoDBv2Action",
+  "javaInterfaces" : [ "aws.Property<TopicRuleDynamoDBv2Action>" ],
   "properties" : {
     "PutItem" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-putitem",
       "$ref" : "AWS_IoT_TopicRule.PutItemInput.schema.json",
-      "javaType" : "aws.Property<aws.iot.PutItemInput>"
+      "javaType" : "aws.Property<aws.iot.TopicRulePutItemInput>"
     },
     "RoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbv2action.html#cfn-iot-topicrule-dynamodbv2action-rolearn",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_CodeDeploy_DeploymentConfig.MinimumHealthyHosts.schema.json",
-  "title" : "MinimumHealthyHosts",
+  "title" : "DeploymentConfigMinimumHealthyHosts",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html",
   "type" : "object",
-  "javaType" : "aws.codedeploy.MinimumHealthyHosts",
-  "javaInterfaces" : [ "aws.Property<MinimumHealthyHosts>" ],
+  "javaType" : "aws.codedeploy.DeploymentConfigMinimumHealthyHosts",
+  "javaInterfaces" : [ "aws.Property<DeploymentConfigMinimumHealthyHosts>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html#cfn-codedeploy-deploymentconfig-minimumhealthyhosts-type",

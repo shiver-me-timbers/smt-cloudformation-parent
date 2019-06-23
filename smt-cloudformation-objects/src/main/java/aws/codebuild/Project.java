@@ -51,21 +51,21 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description")
     private CharSequence description;
     /**
-     * VpcConfig
+     * ProjectVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html
      * 
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html")
-    private Property<VpcConfig> vpcConfig;
+    private Property<ProjectVpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources
      * 
      */
     @JsonProperty("SecondarySources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondarysources")
-    private List<Property<aws.codebuild.Source>> secondarySources = new ArrayList<Property<aws.codebuild.Source>>();
+    private List<Property<aws.codebuild.ProjectSource>> secondarySources = new ArrayList<Property<aws.codebuild.ProjectSource>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey
      * 
@@ -74,30 +74,30 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-encryptionkey")
     private CharSequence encryptionKey;
     /**
-     * ProjectTriggers
+     * ProjectProjectTriggers
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html
      * 
      */
     @JsonProperty("Triggers")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html")
-    private Property<ProjectTriggers> triggers;
+    private Property<ProjectProjectTriggers> triggers;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts
      * 
      */
     @JsonProperty("SecondaryArtifacts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-secondaryartifacts")
-    private List<Property<aws.codebuild.Artifacts>> secondaryArtifacts = new ArrayList<Property<aws.codebuild.Artifacts>>();
+    private List<Property<aws.codebuild.ProjectArtifacts>> secondaryArtifacts = new ArrayList<Property<aws.codebuild.ProjectArtifacts>>();
     /**
-     * Source
+     * ProjectSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html
      * 
      */
     @JsonProperty("Source")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html")
-    private Property<aws.codebuild.Source> source;
+    private Property<aws.codebuild.ProjectSource> source;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name
      * 
@@ -106,14 +106,14 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-name")
     private CharSequence name;
     /**
-     * Artifacts
+     * ProjectArtifacts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html
      * 
      */
     @JsonProperty("Artifacts")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html")
-    private Property<aws.codebuild.Artifacts> artifacts;
+    private Property<aws.codebuild.ProjectArtifacts> artifacts;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled
      * 
@@ -122,14 +122,14 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-badgeenabled")
     private Boolean badgeEnabled;
     /**
-     * LogsConfig
+     * ProjectLogsConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html
      * 
      */
     @JsonProperty("LogsConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html")
-    private Property<LogsConfig> logsConfig;
+    private Property<ProjectLogsConfig> logsConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-servicerole
      * 
@@ -145,14 +145,14 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-queuedtimeoutinminutes")
     private Integer queuedTimeoutInMinutes;
     /**
-     * Environment
+     * ProjectEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
      * 
      */
     @JsonProperty("Environment")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html")
-    private Property<Environment> environment;
+    private Property<ProjectEnvironment> environment;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-tags
      * 
@@ -168,14 +168,14 @@ public class Project {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-timeoutinminutes")
     private Integer timeoutInMinutes;
     /**
-     * ProjectCache
+     * ProjectProjectCache
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html
      * 
      */
     @JsonProperty("Cache")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html")
-    private Property<ProjectCache> cache;
+    private Property<ProjectProjectCache> cache;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codebuild-project.html#cfn-codebuild-project-description
@@ -201,28 +201,28 @@ public class Project {
     }
 
     /**
-     * VpcConfig
+     * ProjectVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VpcConfig> getVpcConfig() {
+    public Property<ProjectVpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
     /**
-     * VpcConfig
+     * ProjectVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
+    public void setVpcConfig(Property<ProjectVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public Project withVpcConfig(Property<VpcConfig> vpcConfig) {
+    public Project withVpcConfig(Property<ProjectVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -232,7 +232,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public List<Property<aws.codebuild.Source>> getSecondarySources() {
+    public List<Property<aws.codebuild.ProjectSource>> getSecondarySources() {
         return secondarySources;
     }
 
@@ -241,11 +241,11 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setSecondarySources(List<Property<aws.codebuild.Source>> secondarySources) {
+    public void setSecondarySources(List<Property<aws.codebuild.ProjectSource>> secondarySources) {
         this.secondarySources = secondarySources;
     }
 
-    public Project withSecondarySources(List<Property<aws.codebuild.Source>> secondarySources) {
+    public Project withSecondarySources(List<Property<aws.codebuild.ProjectSource>> secondarySources) {
         this.secondarySources = secondarySources;
         return this;
     }
@@ -274,28 +274,28 @@ public class Project {
     }
 
     /**
-     * ProjectTriggers
+     * ProjectProjectTriggers
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html
      * 
      */
     @JsonIgnore
-    public Property<ProjectTriggers> getTriggers() {
+    public Property<ProjectProjectTriggers> getTriggers() {
         return triggers;
     }
 
     /**
-     * ProjectTriggers
+     * ProjectProjectTriggers
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html
      * 
      */
     @JsonIgnore
-    public void setTriggers(Property<ProjectTriggers> triggers) {
+    public void setTriggers(Property<ProjectProjectTriggers> triggers) {
         this.triggers = triggers;
     }
 
-    public Project withTriggers(Property<ProjectTriggers> triggers) {
+    public Project withTriggers(Property<ProjectProjectTriggers> triggers) {
         this.triggers = triggers;
         return this;
     }
@@ -305,7 +305,7 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public List<Property<aws.codebuild.Artifacts>> getSecondaryArtifacts() {
+    public List<Property<aws.codebuild.ProjectArtifacts>> getSecondaryArtifacts() {
         return secondaryArtifacts;
     }
 
@@ -314,38 +314,38 @@ public class Project {
      * 
      */
     @JsonIgnore
-    public void setSecondaryArtifacts(List<Property<aws.codebuild.Artifacts>> secondaryArtifacts) {
+    public void setSecondaryArtifacts(List<Property<aws.codebuild.ProjectArtifacts>> secondaryArtifacts) {
         this.secondaryArtifacts = secondaryArtifacts;
     }
 
-    public Project withSecondaryArtifacts(List<Property<aws.codebuild.Artifacts>> secondaryArtifacts) {
+    public Project withSecondaryArtifacts(List<Property<aws.codebuild.ProjectArtifacts>> secondaryArtifacts) {
         this.secondaryArtifacts = secondaryArtifacts;
         return this;
     }
 
     /**
-     * Source
+     * ProjectSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html
      * 
      */
     @JsonIgnore
-    public Property<aws.codebuild.Source> getSource() {
+    public Property<aws.codebuild.ProjectSource> getSource() {
         return source;
     }
 
     /**
-     * Source
+     * ProjectSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-source.html
      * 
      */
     @JsonIgnore
-    public void setSource(Property<aws.codebuild.Source> source) {
+    public void setSource(Property<aws.codebuild.ProjectSource> source) {
         this.source = source;
     }
 
-    public Project withSource(Property<aws.codebuild.Source> source) {
+    public Project withSource(Property<aws.codebuild.ProjectSource> source) {
         this.source = source;
         return this;
     }
@@ -374,28 +374,28 @@ public class Project {
     }
 
     /**
-     * Artifacts
+     * ProjectArtifacts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html
      * 
      */
     @JsonIgnore
-    public Property<aws.codebuild.Artifacts> getArtifacts() {
+    public Property<aws.codebuild.ProjectArtifacts> getArtifacts() {
         return artifacts;
     }
 
     /**
-     * Artifacts
+     * ProjectArtifacts
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-artifacts.html
      * 
      */
     @JsonIgnore
-    public void setArtifacts(Property<aws.codebuild.Artifacts> artifacts) {
+    public void setArtifacts(Property<aws.codebuild.ProjectArtifacts> artifacts) {
         this.artifacts = artifacts;
     }
 
-    public Project withArtifacts(Property<aws.codebuild.Artifacts> artifacts) {
+    public Project withArtifacts(Property<aws.codebuild.ProjectArtifacts> artifacts) {
         this.artifacts = artifacts;
         return this;
     }
@@ -424,28 +424,28 @@ public class Project {
     }
 
     /**
-     * LogsConfig
+     * ProjectLogsConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LogsConfig> getLogsConfig() {
+    public Property<ProjectLogsConfig> getLogsConfig() {
         return logsConfig;
     }
 
     /**
-     * LogsConfig
+     * ProjectLogsConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-logsconfig.html
      * 
      */
     @JsonIgnore
-    public void setLogsConfig(Property<LogsConfig> logsConfig) {
+    public void setLogsConfig(Property<ProjectLogsConfig> logsConfig) {
         this.logsConfig = logsConfig;
     }
 
-    public Project withLogsConfig(Property<LogsConfig> logsConfig) {
+    public Project withLogsConfig(Property<ProjectLogsConfig> logsConfig) {
         this.logsConfig = logsConfig;
         return this;
     }
@@ -497,28 +497,28 @@ public class Project {
     }
 
     /**
-     * Environment
+     * ProjectEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
      * 
      */
     @JsonIgnore
-    public Property<Environment> getEnvironment() {
+    public Property<ProjectEnvironment> getEnvironment() {
         return environment;
     }
 
     /**
-     * Environment
+     * ProjectEnvironment
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-environment.html
      * 
      */
     @JsonIgnore
-    public void setEnvironment(Property<Environment> environment) {
+    public void setEnvironment(Property<ProjectEnvironment> environment) {
         this.environment = environment;
     }
 
-    public Project withEnvironment(Property<Environment> environment) {
+    public Project withEnvironment(Property<ProjectEnvironment> environment) {
         this.environment = environment;
         return this;
     }
@@ -570,28 +570,28 @@ public class Project {
     }
 
     /**
-     * ProjectCache
+     * ProjectProjectCache
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html
      * 
      */
     @JsonIgnore
-    public Property<ProjectCache> getCache() {
+    public Property<ProjectProjectCache> getCache() {
         return cache;
     }
 
     /**
-     * ProjectCache
+     * ProjectProjectCache
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projectcache.html
      * 
      */
     @JsonIgnore
-    public void setCache(Property<ProjectCache> cache) {
+    public void setCache(Property<ProjectProjectCache> cache) {
         this.cache = cache;
     }
 
-    public Project withCache(Property<ProjectCache> cache) {
+    public Project withCache(Property<ProjectProjectCache> cache) {
         this.cache = cache;
         return this;
     }

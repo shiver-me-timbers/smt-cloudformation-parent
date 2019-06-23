@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codepipeline.PipelineResource",
-  "javaInterfaces" : [ "aws.HasAttributes<PipelineAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<PipelineResource>", "aws.HasCondition<PipelineResource>", "aws.HasAttributes<PipelineAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

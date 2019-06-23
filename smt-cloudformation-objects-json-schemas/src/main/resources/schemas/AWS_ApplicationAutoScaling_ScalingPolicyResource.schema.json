@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.applicationautoscaling.ScalingPolicyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ScalingPolicyResource>", "aws.HasCondition<ScalingPolicyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

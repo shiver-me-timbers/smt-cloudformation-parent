@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_Route.TagRef.schema.json",
-  "title" : "TagRef",
+  "title" : "RouteTagRef",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tagref.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.TagRef",
-  "javaInterfaces" : [ "aws.Property<TagRef>" ],
+  "javaType" : "aws.appmesh.RouteTagRef",
+  "javaInterfaces" : [ "aws.Property<RouteTagRef>" ],
   "properties" : {
     "Value" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-route-tagref.html#cfn-appmesh-route-tagref-value",

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Greengrass_FunctionDefinition.FunctionConfiguration.schema.json",
-  "title" : "FunctionConfiguration",
+  "title" : "FunctionDefinitionFunctionConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.greengrass.FunctionConfiguration",
-  "javaInterfaces" : [ "aws.Property<FunctionConfiguration>" ],
+  "javaType" : "aws.greengrass.FunctionDefinitionFunctionConfiguration",
+  "javaInterfaces" : [ "aws.Property<FunctionDefinitionFunctionConfiguration>" ],
   "properties" : {
     "MemorySize" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-memorysize",
@@ -32,7 +32,7 @@
     "Environment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-environment",
       "$ref" : "AWS_Greengrass_FunctionDefinition.Environment.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.Environment>"
+      "javaType" : "aws.Property<aws.greengrass.FunctionDefinitionEnvironment>"
     },
     "Executable" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-functiondefinition-functionconfiguration.html#cfn-greengrass-functiondefinition-functionconfiguration-executable",

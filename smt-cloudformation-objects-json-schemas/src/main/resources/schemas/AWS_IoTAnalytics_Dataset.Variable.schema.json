@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoTAnalytics_Dataset.Variable.schema.json",
-  "title" : "Variable",
+  "title" : "DatasetVariable",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html",
   "type" : "object",
-  "javaType" : "aws.iotanalytics.Variable",
-  "javaInterfaces" : [ "aws.Property<Variable>" ],
+  "javaType" : "aws.iotanalytics.DatasetVariable",
+  "javaInterfaces" : [ "aws.Property<DatasetVariable>" ],
   "properties" : {
     "DatasetContentVersionValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-datasetcontentversionvalue",
       "$ref" : "AWS_IoTAnalytics_Dataset.DatasetContentVersionValue.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.DatasetContentVersionValue>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetDatasetContentVersionValue>"
     },
     "DoubleValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-doublevalue",
@@ -19,7 +19,7 @@
     "OutputFileUriValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-outputfileurivalue",
       "$ref" : "AWS_IoTAnalytics_Dataset.OutputFileUriValue.schema.json",
-      "javaType" : "aws.Property<aws.iotanalytics.OutputFileUriValue>"
+      "javaType" : "aws.Property<aws.iotanalytics.DatasetOutputFileUriValue>"
     },
     "VariableName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iotanalytics-dataset-variable.html#cfn-iotanalytics-dataset-variable-variablename",

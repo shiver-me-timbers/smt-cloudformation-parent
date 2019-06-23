@@ -26,14 +26,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class SubscriptionDefinition {
 
     /**
-     * SubscriptionDefinitionVersion
+     * SubscriptionDefinitionSubscriptionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html")
-    private Property<SubscriptionDefinitionVersion> initialVersion;
+    private Property<SubscriptionDefinitionSubscriptionDefinitionVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-subscriptiondefinition.html#cfn-greengrass-subscriptiondefinition-name
      * 
@@ -43,28 +43,28 @@ public class SubscriptionDefinition {
     private CharSequence name;
 
     /**
-     * SubscriptionDefinitionVersion
+     * SubscriptionDefinitionSubscriptionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html
      * 
      */
     @JsonIgnore
-    public Property<SubscriptionDefinitionVersion> getInitialVersion() {
+    public Property<SubscriptionDefinitionSubscriptionDefinitionVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * SubscriptionDefinitionVersion
+     * SubscriptionDefinitionSubscriptionDefinitionVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-subscriptiondefinition-subscriptiondefinitionversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<SubscriptionDefinitionVersion> initialVersion) {
+    public void setInitialVersion(Property<SubscriptionDefinitionSubscriptionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public SubscriptionDefinition withInitialVersion(Property<SubscriptionDefinitionVersion> initialVersion) {
+    public SubscriptionDefinition withInitialVersion(Property<SubscriptionDefinitionSubscriptionDefinitionVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.waf.SizeConstraintSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<SizeConstraintSetResource>", "aws.HasCondition<SizeConstraintSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

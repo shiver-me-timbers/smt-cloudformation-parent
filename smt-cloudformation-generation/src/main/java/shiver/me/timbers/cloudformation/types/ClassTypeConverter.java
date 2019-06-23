@@ -20,20 +20,25 @@ public class ClassTypeConverter {
         this.javaTypes = javaTypes;
     }
 
-    public String toJavType(String resourceName, String type) {
+    public String toJavaType(String resourceName, String type) {
         final String typeName = nameFinder.find(resourceName, type);
-        return toJavTypeFromTypeName(typeName, type);
+        return toJavaTypeFromTypeName(typeName, resourceName, type);
     }
 
     public Map<String, String> toTypeMap(String resourceName, String type) {
         final Map<String, String> typeMape = new HashMap<>();
         final String typeName = nameFinder.find(resourceName, type);
         typeMape.put("$ref", fileNames.parse(typeName));
-        typeMape.put("javaType", toJavTypeFromTypeName(typeName, type));
+        typeMape.put("javaType", toJavaTypeFromTypeName(typeName, resourceName, type));
         return typeMape;
     }
 
-    private String toJavTypeFromTypeName(String typeName, String type) {
-        return format("%s<%s.%s>", Property.class.getName(), javaTypes.parsePackage(typeName), type);
+    private String toJavaTypeFromTypeName(String typeName, String resourceName, String type) {
+        return format(
+            "%s<%s.%s>",
+            Property.class.getName(),
+            javaTypes.parsePackage(typeName),
+            "Tag".equals(type) ? type : javaTypes.extractResourceClassName(resourceName) + type
+        );
     }
 }

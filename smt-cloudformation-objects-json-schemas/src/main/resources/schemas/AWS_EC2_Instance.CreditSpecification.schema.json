@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_Instance.CreditSpecification.schema.json",
-  "title" : "CreditSpecification",
+  "title" : "InstanceCreditSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html",
   "type" : "object",
-  "javaType" : "aws.ec2.CreditSpecification",
-  "javaInterfaces" : [ "aws.Property<CreditSpecification>" ],
+  "javaType" : "aws.ec2.InstanceCreditSpecification",
+  "javaInterfaces" : [ "aws.Property<InstanceCreditSpecification>" ],
   "properties" : {
     "CPUCredits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-creditspecification.html#cfn-ec2-instance-creditspecification-cpucredits",

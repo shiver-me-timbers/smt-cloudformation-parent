@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualService.VirtualServiceSpec.schema.json",
-  "title" : "VirtualServiceSpec",
+  "title" : "VirtualServiceVirtualServiceSpec",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualServiceSpec",
-  "javaInterfaces" : [ "aws.Property<VirtualServiceSpec>" ],
+  "javaType" : "aws.appmesh.VirtualServiceVirtualServiceSpec",
+  "javaInterfaces" : [ "aws.Property<VirtualServiceVirtualServiceSpec>" ],
   "properties" : {
     "Provider" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualservicespec.html#cfn-appmesh-virtualservice-virtualservicespec-provider",
       "$ref" : "AWS_AppMesh_VirtualService.VirtualServiceProvider.schema.json",
-      "javaType" : "aws.Property<aws.appmesh.VirtualServiceProvider>"
+      "javaType" : "aws.Property<aws.appmesh.VirtualServiceVirtualServiceProvider>"
     }
   }
 }

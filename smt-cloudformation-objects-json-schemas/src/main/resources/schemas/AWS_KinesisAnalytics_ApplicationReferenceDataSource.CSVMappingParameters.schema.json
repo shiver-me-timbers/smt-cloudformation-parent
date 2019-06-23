@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.CSVMappingParameters.schema.json",
-  "title" : "CSVMappingParameters",
+  "title" : "ApplicationReferenceDataSourceCSVMappingParameters",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-csvmappingparameters.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.CSVMappingParameters",
-  "javaInterfaces" : [ "aws.Property<CSVMappingParameters>" ],
+  "javaType" : "aws.kinesisanalytics.ApplicationReferenceDataSourceCSVMappingParameters",
+  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceCSVMappingParameters>" ],
   "properties" : {
     "RecordRowDelimiter" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-csvmappingparameters.html#cfn-kinesisanalytics-applicationreferencedatasource-csvmappingparameters-recordrowdelimiter",

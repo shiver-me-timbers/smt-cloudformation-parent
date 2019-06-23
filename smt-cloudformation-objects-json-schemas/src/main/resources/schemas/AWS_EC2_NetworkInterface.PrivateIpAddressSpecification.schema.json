@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_NetworkInterface.PrivateIpAddressSpecification.schema.json",
-  "title" : "PrivateIpAddressSpecification",
+  "title" : "NetworkInterfacePrivateIpAddressSpecification",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-privateipspec.html",
   "type" : "object",
-  "javaType" : "aws.ec2.PrivateIpAddressSpecification",
-  "javaInterfaces" : [ "aws.Property<PrivateIpAddressSpecification>" ],
+  "javaType" : "aws.ec2.NetworkInterfacePrivateIpAddressSpecification",
+  "javaInterfaces" : [ "aws.Property<NetworkInterfacePrivateIpAddressSpecification>" ],
   "properties" : {
     "Primary" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-privateipspec.html#cfn-ec2-networkinterface-privateipspecification-primary",

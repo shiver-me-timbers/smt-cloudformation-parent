@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codepipeline.CustomActionTypeResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<CustomActionTypeResource>", "aws.HasCondition<CustomActionTypeResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

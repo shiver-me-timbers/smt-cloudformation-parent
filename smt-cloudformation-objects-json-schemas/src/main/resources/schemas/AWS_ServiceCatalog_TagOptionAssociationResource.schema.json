@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.servicecatalog.TagOptionAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<TagOptionAssociationResource>", "aws.HasCondition<TagOptionAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

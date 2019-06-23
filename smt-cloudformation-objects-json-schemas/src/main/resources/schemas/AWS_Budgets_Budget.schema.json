@@ -11,13 +11,13 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Budgets_Budget.NotificationWithSubscribers.schema.json",
-        "javaType" : "aws.Property<aws.budgets.NotificationWithSubscribers>"
+        "javaType" : "aws.Property<aws.budgets.BudgetNotificationWithSubscribers>"
       }
     },
     "Budget" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-budgets-budget.html#cfn-budgets-budget-budget",
       "$ref" : "AWS_Budgets_Budget.BudgetData.schema.json",
-      "javaType" : "aws.Property<aws.budgets.BudgetData>"
+      "javaType" : "aws.Property<aws.budgets.BudgetBudgetData>"
     }
   }
 }

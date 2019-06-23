@@ -27,14 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Group {
 
     /**
-     * GroupVersion
+     * GroupGroupVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html
      * 
      */
     @JsonProperty("InitialVersion")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html")
-    private Property<GroupVersion> initialVersion;
+    private Property<GroupGroupVersion> initialVersion;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-group.html#cfn-greengrass-group-rolearn
      * 
@@ -51,28 +51,28 @@ public class Group {
     private CharSequence name;
 
     /**
-     * GroupVersion
+     * GroupGroupVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html
      * 
      */
     @JsonIgnore
-    public Property<GroupVersion> getInitialVersion() {
+    public Property<GroupGroupVersion> getInitialVersion() {
         return initialVersion;
     }
 
     /**
-     * GroupVersion
+     * GroupGroupVersion
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-greengrass-group-groupversion.html
      * 
      */
     @JsonIgnore
-    public void setInitialVersion(Property<GroupVersion> initialVersion) {
+    public void setInitialVersion(Property<GroupGroupVersion> initialVersion) {
         this.initialVersion = initialVersion;
     }
 
-    public Group withInitialVersion(Property<GroupVersion> initialVersion) {
+    public Group withInitialVersion(Property<GroupGroupVersion> initialVersion) {
         this.initialVersion = initialVersion;
         return this;
     }

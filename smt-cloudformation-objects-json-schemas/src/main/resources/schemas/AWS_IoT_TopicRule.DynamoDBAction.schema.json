@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_IoT_TopicRule.DynamoDBAction.schema.json",
-  "title" : "DynamoDBAction",
+  "title" : "TopicRuleDynamoDBAction",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html",
   "type" : "object",
-  "javaType" : "aws.iot.DynamoDBAction",
-  "javaInterfaces" : [ "aws.Property<DynamoDBAction>" ],
+  "javaType" : "aws.iot.TopicRuleDynamoDBAction",
+  "javaInterfaces" : [ "aws.Property<TopicRuleDynamoDBAction>" ],
   "properties" : {
     "HashKeyField" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-dynamodbaction.html#cfn-iot-topicrule-dynamodbaction-hashkeyfield",

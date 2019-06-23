@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.PlacementGroupResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PlacementGroupResource>", "aws.HasCondition<PlacementGroupResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

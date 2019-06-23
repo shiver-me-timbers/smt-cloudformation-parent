@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Lambda_Function.Code.schema.json",
-  "title" : "Code",
+  "title" : "FunctionCode",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html",
   "type" : "object",
-  "javaType" : "aws.lambda.Code",
-  "javaInterfaces" : [ "aws.Property<Code>" ],
+  "javaType" : "aws.lambda.FunctionCode",
+  "javaInterfaces" : [ "aws.Property<FunctionCode>" ],
   "properties" : {
     "S3Bucket" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket",

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.glue.DatabaseResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DatabaseResource>", "aws.HasCondition<DatabaseResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

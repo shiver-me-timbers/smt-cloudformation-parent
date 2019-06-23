@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ec2.FlowLogResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<FlowLogResource>", "aws.HasCondition<FlowLogResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

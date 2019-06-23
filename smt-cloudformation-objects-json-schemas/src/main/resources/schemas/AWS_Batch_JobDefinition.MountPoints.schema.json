@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Batch_JobDefinition.MountPoints.schema.json",
-  "title" : "MountPoints",
+  "title" : "JobDefinitionMountPoints",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html",
   "type" : "object",
-  "javaType" : "aws.batch.MountPoints",
-  "javaInterfaces" : [ "aws.Property<MountPoints>" ],
+  "javaType" : "aws.batch.JobDefinitionMountPoints",
+  "javaInterfaces" : [ "aws.Property<JobDefinitionMountPoints>" ],
   "properties" : {
     "ReadOnly" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-mountpoints.html#cfn-batch-jobdefinition-mountpoints-readonly",

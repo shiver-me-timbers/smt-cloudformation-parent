@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Greengrass_DeviceDefinitionVersion.Device.schema.json",
-        "javaType" : "aws.Property<aws.greengrass.Device>"
+        "javaType" : "aws.Property<aws.greengrass.DeviceDefinitionVersionDevice>"
       }
     }
   }

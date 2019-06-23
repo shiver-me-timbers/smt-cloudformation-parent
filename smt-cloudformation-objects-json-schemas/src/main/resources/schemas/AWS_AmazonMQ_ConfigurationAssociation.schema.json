@@ -13,8 +13,8 @@
     },
     "Configuration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configurationassociation.html#cfn-amazonmq-configurationassociation-configuration",
-      "$ref" : "AWS_AmazonMQ_Broker.ConfigurationId.schema.json",
-      "javaType" : "aws.Property<aws.amazonmq.ConfigurationId>"
+      "$ref" : "AWS_AmazonMQ_ConfigurationAssociation.ConfigurationId.schema.json",
+      "javaType" : "aws.Property<aws.amazonmq.ConfigurationAssociationConfigurationId>"
     }
   }
 }

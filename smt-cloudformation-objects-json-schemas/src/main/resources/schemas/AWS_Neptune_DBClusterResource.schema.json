@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.neptune.DBClusterResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DBClusterAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DBClusterResource>", "aws.HasCondition<DBClusterResource>", "aws.HasAttributes<DBClusterAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

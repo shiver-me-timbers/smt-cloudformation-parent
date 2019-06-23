@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.lambda.PermissionResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PermissionResource>", "aws.HasCondition<PermissionResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -33,23 +33,23 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class SimulationApplication {
 
     /**
-     * RenderingEngine
+     * SimulationApplicationRenderingEngine
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-renderingengine.html
      * 
      */
     @JsonProperty("RenderingEngine")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-renderingengine.html")
-    private Property<RenderingEngine> renderingEngine;
+    private Property<SimulationApplicationRenderingEngine> renderingEngine;
     /**
-     * SimulationSoftwareSuite
+     * SimulationApplicationSimulationSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html
      * 
      */
     @JsonProperty("SimulationSoftwareSuite")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html")
-    private Property<SimulationSoftwareSuite> simulationSoftwareSuite;
+    private Property<SimulationApplicationSimulationSoftwareSuite> simulationSoftwareSuite;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-currentrevisionid
      * 
@@ -58,21 +58,21 @@ public class SimulationApplication {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-currentrevisionid")
     private CharSequence currentRevisionId;
     /**
-     * RobotSoftwareSuite
+     * SimulationApplicationRobotSoftwareSuite
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html
      * 
      */
     @JsonProperty("RobotSoftwareSuite")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html")
-    private Property<RobotSoftwareSuite> robotSoftwareSuite;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html")
+    private Property<SimulationApplicationRobotSoftwareSuite> robotSoftwareSuite;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-sources
      * 
      */
     @JsonProperty("Sources")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-sources")
-    private List<Property<SourceConfig>> sources = new ArrayList<Property<SourceConfig>>();
+    private List<Property<SimulationApplicationSourceConfig>> sources = new ArrayList<Property<SimulationApplicationSourceConfig>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-robomaker-simulationapplication.html#cfn-robomaker-simulationapplication-tags
      * 
@@ -89,55 +89,55 @@ public class SimulationApplication {
     private CharSequence name;
 
     /**
-     * RenderingEngine
+     * SimulationApplicationRenderingEngine
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-renderingengine.html
      * 
      */
     @JsonIgnore
-    public Property<RenderingEngine> getRenderingEngine() {
+    public Property<SimulationApplicationRenderingEngine> getRenderingEngine() {
         return renderingEngine;
     }
 
     /**
-     * RenderingEngine
+     * SimulationApplicationRenderingEngine
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-renderingengine.html
      * 
      */
     @JsonIgnore
-    public void setRenderingEngine(Property<RenderingEngine> renderingEngine) {
+    public void setRenderingEngine(Property<SimulationApplicationRenderingEngine> renderingEngine) {
         this.renderingEngine = renderingEngine;
     }
 
-    public SimulationApplication withRenderingEngine(Property<RenderingEngine> renderingEngine) {
+    public SimulationApplication withRenderingEngine(Property<SimulationApplicationRenderingEngine> renderingEngine) {
         this.renderingEngine = renderingEngine;
         return this;
     }
 
     /**
-     * SimulationSoftwareSuite
+     * SimulationApplicationSimulationSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public Property<SimulationSoftwareSuite> getSimulationSoftwareSuite() {
+    public Property<SimulationApplicationSimulationSoftwareSuite> getSimulationSoftwareSuite() {
         return simulationSoftwareSuite;
     }
 
     /**
-     * SimulationSoftwareSuite
+     * SimulationApplicationSimulationSoftwareSuite
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-simulationsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public void setSimulationSoftwareSuite(Property<SimulationSoftwareSuite> simulationSoftwareSuite) {
+    public void setSimulationSoftwareSuite(Property<SimulationApplicationSimulationSoftwareSuite> simulationSoftwareSuite) {
         this.simulationSoftwareSuite = simulationSoftwareSuite;
     }
 
-    public SimulationApplication withSimulationSoftwareSuite(Property<SimulationSoftwareSuite> simulationSoftwareSuite) {
+    public SimulationApplication withSimulationSoftwareSuite(Property<SimulationApplicationSimulationSoftwareSuite> simulationSoftwareSuite) {
         this.simulationSoftwareSuite = simulationSoftwareSuite;
         return this;
     }
@@ -166,28 +166,28 @@ public class SimulationApplication {
     }
 
     /**
-     * RobotSoftwareSuite
+     * SimulationApplicationRobotSoftwareSuite
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public Property<RobotSoftwareSuite> getRobotSoftwareSuite() {
+    public Property<SimulationApplicationRobotSoftwareSuite> getRobotSoftwareSuite() {
         return robotSoftwareSuite;
     }
 
     /**
-     * RobotSoftwareSuite
+     * SimulationApplicationRobotSoftwareSuite
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-robotapplication-robotsoftwaresuite.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-robomaker-simulationapplication-robotsoftwaresuite.html
      * 
      */
     @JsonIgnore
-    public void setRobotSoftwareSuite(Property<RobotSoftwareSuite> robotSoftwareSuite) {
+    public void setRobotSoftwareSuite(Property<SimulationApplicationRobotSoftwareSuite> robotSoftwareSuite) {
         this.robotSoftwareSuite = robotSoftwareSuite;
     }
 
-    public SimulationApplication withRobotSoftwareSuite(Property<RobotSoftwareSuite> robotSoftwareSuite) {
+    public SimulationApplication withRobotSoftwareSuite(Property<SimulationApplicationRobotSoftwareSuite> robotSoftwareSuite) {
         this.robotSoftwareSuite = robotSoftwareSuite;
         return this;
     }
@@ -197,7 +197,7 @@ public class SimulationApplication {
      * 
      */
     @JsonIgnore
-    public List<Property<SourceConfig>> getSources() {
+    public List<Property<SimulationApplicationSourceConfig>> getSources() {
         return sources;
     }
 
@@ -206,11 +206,11 @@ public class SimulationApplication {
      * 
      */
     @JsonIgnore
-    public void setSources(List<Property<SourceConfig>> sources) {
+    public void setSources(List<Property<SimulationApplicationSourceConfig>> sources) {
         this.sources = sources;
     }
 
-    public SimulationApplication withSources(List<Property<SourceConfig>> sources) {
+    public SimulationApplication withSources(List<Property<SimulationApplicationSourceConfig>> sources) {
         this.sources = sources;
         return this;
     }

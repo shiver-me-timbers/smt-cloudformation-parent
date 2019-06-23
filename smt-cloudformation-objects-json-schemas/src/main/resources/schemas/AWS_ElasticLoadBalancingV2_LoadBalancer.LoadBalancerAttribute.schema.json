@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ElasticLoadBalancingV2_LoadBalancer.LoadBalancerAttribute.schema.json",
-  "title" : "LoadBalancerAttribute",
+  "title" : "LoadBalancerLoadBalancerAttribute",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattributes.html",
   "type" : "object",
-  "javaType" : "aws.elasticloadbalancingv2.LoadBalancerAttribute",
-  "javaInterfaces" : [ "aws.Property<LoadBalancerAttribute>" ],
+  "javaType" : "aws.elasticloadbalancingv2.LoadBalancerLoadBalancerAttribute",
+  "javaInterfaces" : [ "aws.Property<LoadBalancerLoadBalancerAttribute>" ],
   "properties" : {
     "Key" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticloadbalancingv2-loadbalancer-loadbalancerattributes.html#cfn-elasticloadbalancingv2-loadbalancer-loadbalancerattributes-key",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.codecommit.RepositoryResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RepositoryAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RepositoryResource>", "aws.HasCondition<RepositoryResource>", "aws.HasAttributes<RepositoryAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

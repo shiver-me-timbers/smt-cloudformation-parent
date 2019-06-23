@@ -27,14 +27,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Table {
 
     /**
-     * TableInput
+     * TableTableInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
     @JsonProperty("TableInput")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html")
-    private Property<TableInput> tableInput;
+    private Property<TableTableInput> tableInput;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-table.html#cfn-glue-table-databasename
      * 
@@ -51,28 +51,28 @@ public class Table {
     private CharSequence catalogId;
 
     /**
-     * TableInput
+     * TableTableInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
     @JsonIgnore
-    public Property<TableInput> getTableInput() {
+    public Property<TableTableInput> getTableInput() {
         return tableInput;
     }
 
     /**
-     * TableInput
+     * TableTableInput
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-table-tableinput.html
      * 
      */
     @JsonIgnore
-    public void setTableInput(Property<TableInput> tableInput) {
+    public void setTableInput(Property<TableTableInput> tableInput) {
         this.tableInput = tableInput;
     }
 
-    public Table withTableInput(Property<TableInput> tableInput) {
+    public Table withTableInput(Property<TableTableInput> tableInput) {
         this.tableInput = tableInput;
         return this;
     }

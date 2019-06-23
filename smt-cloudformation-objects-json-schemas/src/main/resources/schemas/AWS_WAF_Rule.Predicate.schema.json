@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_WAF_Rule.Predicate.schema.json",
-  "title" : "Predicate",
+  "title" : "RulePredicate",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html",
   "type" : "object",
-  "javaType" : "aws.waf.Predicate",
-  "javaInterfaces" : [ "aws.Property<Predicate>" ],
+  "javaType" : "aws.waf.RulePredicate",
+  "javaInterfaces" : [ "aws.Property<RulePredicate>" ],
   "properties" : {
     "DataId" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html#cfn-waf-rule-predicates-dataid",

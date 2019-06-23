@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Crawler.S3Target.schema.json",
-  "title" : "S3Target",
+  "title" : "CrawlerS3Target",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html",
   "type" : "object",
-  "javaType" : "aws.glue.S3Target",
-  "javaInterfaces" : [ "aws.Property<S3Target>" ],
+  "javaType" : "aws.glue.CrawlerS3Target",
+  "javaInterfaces" : [ "aws.Property<CrawlerS3Target>" ],
   "properties" : {
     "Path" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-s3target.html#cfn-glue-crawler-s3target-path",

@@ -9,7 +9,7 @@
     "AlarmConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-alarmconfiguration",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.AlarmConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.AlarmConfiguration>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupAlarmConfiguration>"
     },
     "ApplicationName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-applicationname",
@@ -19,7 +19,7 @@
     "AutoRollbackConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autorollbackconfiguration",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.AutoRollbackConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.AutoRollbackConfiguration>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupAutoRollbackConfiguration>"
     },
     "AutoScalingGroups" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-autoscalinggroups",
@@ -33,7 +33,7 @@
     "Deployment" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deployment",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.Deployment.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.Deployment>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupDeployment>"
     },
     "DeploymentConfigName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentconfigname",
@@ -48,7 +48,7 @@
     "DeploymentStyle" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-deploymentstyle",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.DeploymentStyle.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.DeploymentStyle>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupDeploymentStyle>"
     },
     "Ec2TagFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagfilters",
@@ -56,18 +56,18 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.EC2TagFilter.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.EC2TagFilter>"
+        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupEC2TagFilter>"
       }
     },
     "Ec2TagSet" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-ec2tagset",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.EC2TagSet.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.EC2TagSet>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupEC2TagSet>"
     },
     "LoadBalancerInfo" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-loadbalancerinfo",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.LoadBalancerInfo.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.LoadBalancerInfo>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupLoadBalancerInfo>"
     },
     "OnPremisesInstanceTagFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisesinstancetagfilters",
@@ -75,13 +75,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.TagFilter.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.TagFilter>"
+        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupTagFilter>"
       }
     },
     "OnPremisesTagSet" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-onpremisestagset",
       "$ref" : "AWS_CodeDeploy_DeploymentGroup.OnPremisesTagSet.schema.json",
-      "javaType" : "aws.Property<aws.codedeploy.OnPremisesTagSet>"
+      "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupOnPremisesTagSet>"
     },
     "ServiceRoleArn" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentgroup.html#cfn-codedeploy-deploymentgroup-servicerolearn",
@@ -94,7 +94,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_CodeDeploy_DeploymentGroup.TriggerConfig.schema.json",
-        "javaType" : "aws.Property<aws.codedeploy.TriggerConfig>"
+        "javaType" : "aws.Property<aws.codedeploy.DeploymentGroupTriggerConfig>"
       }
     }
   }

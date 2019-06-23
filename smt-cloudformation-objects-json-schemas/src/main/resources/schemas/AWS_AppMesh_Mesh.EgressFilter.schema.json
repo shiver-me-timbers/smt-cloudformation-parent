@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_Mesh.EgressFilter.schema.json",
-  "title" : "EgressFilter",
+  "title" : "MeshEgressFilter",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-egressfilter.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.EgressFilter",
-  "javaInterfaces" : [ "aws.Property<EgressFilter>" ],
+  "javaType" : "aws.appmesh.MeshEgressFilter",
+  "javaInterfaces" : [ "aws.Property<MeshEgressFilter>" ],
   "properties" : {
     "Type" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-mesh-egressfilter.html#cfn-appmesh-mesh-egressfilter-type",

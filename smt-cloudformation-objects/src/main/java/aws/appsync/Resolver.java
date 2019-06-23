@@ -48,14 +48,14 @@ public class Resolver {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-typename")
     private CharSequence typeName;
     /**
-     * PipelineConfig
+     * ResolverPipelineConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
      * 
      */
     @JsonProperty("PipelineConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html")
-    private Property<PipelineConfig> pipelineConfig;
+    private Property<ResolverPipelineConfig> pipelineConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-resolver.html#cfn-appsync-resolver-datasourcename
      * 
@@ -153,28 +153,28 @@ public class Resolver {
     }
 
     /**
-     * PipelineConfig
+     * ResolverPipelineConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
      * 
      */
     @JsonIgnore
-    public Property<PipelineConfig> getPipelineConfig() {
+    public Property<ResolverPipelineConfig> getPipelineConfig() {
         return pipelineConfig;
     }
 
     /**
-     * PipelineConfig
+     * ResolverPipelineConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appsync-resolver-pipelineconfig.html
      * 
      */
     @JsonIgnore
-    public void setPipelineConfig(Property<PipelineConfig> pipelineConfig) {
+    public void setPipelineConfig(Property<ResolverPipelineConfig> pipelineConfig) {
         this.pipelineConfig = pipelineConfig;
     }
 
-    public Resolver withPipelineConfig(Property<PipelineConfig> pipelineConfig) {
+    public Resolver withPipelineConfig(Property<ResolverPipelineConfig> pipelineConfig) {
         this.pipelineConfig = pipelineConfig;
         return this;
     }

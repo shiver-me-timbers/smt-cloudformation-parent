@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.wafregional.ByteMatchSetResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ByteMatchSetResource>", "aws.HasCondition<ByteMatchSetResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.s3.BucketResource",
-  "javaInterfaces" : [ "aws.HasAttributes<BucketAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<BucketResource>", "aws.HasCondition<BucketResource>", "aws.HasAttributes<BucketAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

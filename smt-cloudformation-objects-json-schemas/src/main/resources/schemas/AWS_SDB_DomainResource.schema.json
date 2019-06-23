@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.sdb.DomainResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<DomainResource>", "aws.HasCondition<DomainResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

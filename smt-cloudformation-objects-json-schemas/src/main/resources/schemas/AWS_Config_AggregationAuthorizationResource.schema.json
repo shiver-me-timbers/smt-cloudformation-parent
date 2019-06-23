@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.config.AggregationAuthorizationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AggregationAuthorizationResource>", "aws.HasCondition<AggregationAuthorizationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -47,14 +47,14 @@ public class NetworkAclEntry {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-egress")
     private Boolean egress;
     /**
-     * Icmp
+     * NetworkAclEntryIcmp
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html
      * 
      */
     @JsonProperty("Icmp")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html")
-    private Property<Icmp> icmp;
+    private Property<NetworkAclEntryIcmp> icmp;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-ipv6cidrblock
      * 
@@ -70,14 +70,14 @@ public class NetworkAclEntry {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-networkaclid")
     private CharSequence networkAclId;
     /**
-     * PortRange
+     * NetworkAclEntryPortRange
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html
      * 
      */
     @JsonProperty("PortRange")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html")
-    private Property<PortRange> portRange;
+    private Property<NetworkAclEntryPortRange> portRange;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl-entry.html#cfn-ec2-networkaclentry-protocol
      * 
@@ -147,28 +147,28 @@ public class NetworkAclEntry {
     }
 
     /**
-     * Icmp
+     * NetworkAclEntryIcmp
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html
      * 
      */
     @JsonIgnore
-    public Property<Icmp> getIcmp() {
+    public Property<NetworkAclEntryIcmp> getIcmp() {
         return icmp;
     }
 
     /**
-     * Icmp
+     * NetworkAclEntryIcmp
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-icmp.html
      * 
      */
     @JsonIgnore
-    public void setIcmp(Property<Icmp> icmp) {
+    public void setIcmp(Property<NetworkAclEntryIcmp> icmp) {
         this.icmp = icmp;
     }
 
-    public NetworkAclEntry withIcmp(Property<Icmp> icmp) {
+    public NetworkAclEntry withIcmp(Property<NetworkAclEntryIcmp> icmp) {
         this.icmp = icmp;
         return this;
     }
@@ -220,28 +220,28 @@ public class NetworkAclEntry {
     }
 
     /**
-     * PortRange
+     * NetworkAclEntryPortRange
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html
      * 
      */
     @JsonIgnore
-    public Property<PortRange> getPortRange() {
+    public Property<NetworkAclEntryPortRange> getPortRange() {
         return portRange;
     }
 
     /**
-     * PortRange
+     * NetworkAclEntryPortRange
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-networkaclentry-portrange.html
      * 
      */
     @JsonIgnore
-    public void setPortRange(Property<PortRange> portRange) {
+    public void setPortRange(Property<NetworkAclEntryPortRange> portRange) {
         this.portRange = portRange;
     }
 
-    public NetworkAclEntry withPortRange(Property<PortRange> portRange) {
+    public NetworkAclEntry withPortRange(Property<NetworkAclEntryPortRange> portRange) {
         this.portRange = portRange;
         return this;
     }

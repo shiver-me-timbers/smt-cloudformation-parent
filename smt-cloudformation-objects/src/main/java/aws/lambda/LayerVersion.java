@@ -59,14 +59,14 @@ public class LayerVersion {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html#cfn-lambda-layerversion-layername")
     private CharSequence layerName;
     /**
-     * Content
+     * LayerVersionContent
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html
      * 
      */
     @JsonProperty("Content")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html")
-    private Property<Content> content;
+    private Property<LayerVersionContent> content;
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-layerversion.html#cfn-lambda-layerversion-compatibleruntimes
@@ -161,28 +161,28 @@ public class LayerVersion {
     }
 
     /**
-     * Content
+     * LayerVersionContent
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html
      * 
      */
     @JsonIgnore
-    public Property<Content> getContent() {
+    public Property<LayerVersionContent> getContent() {
         return content;
     }
 
     /**
-     * Content
+     * LayerVersionContent
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-layerversion-content.html
      * 
      */
     @JsonIgnore
-    public void setContent(Property<Content> content) {
+    public void setContent(Property<LayerVersionContent> content) {
         this.content = content;
     }
 
-    public LayerVersion withContent(Property<Content> content) {
+    public LayerVersion withContent(Property<LayerVersionContent> content) {
         this.content = content;
         return this;
     }

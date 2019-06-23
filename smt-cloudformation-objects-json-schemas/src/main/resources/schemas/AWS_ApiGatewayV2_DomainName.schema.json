@@ -16,7 +16,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_ApiGatewayV2_DomainName.DomainNameConfiguration.schema.json",
-        "javaType" : "aws.Property<aws.apigatewayv2.DomainNameConfiguration>"
+        "javaType" : "aws.Property<aws.apigatewayv2.DomainNameDomainNameConfiguration>"
       }
     }
   }

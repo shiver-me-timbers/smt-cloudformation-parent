@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_FSx_FileSystem.WindowsConfiguration.schema.json",
-  "title" : "WindowsConfiguration",
+  "title" : "FileSystemWindowsConfiguration",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html",
   "type" : "object",
-  "javaType" : "aws.fsx.WindowsConfiguration",
-  "javaInterfaces" : [ "aws.Property<WindowsConfiguration>" ],
+  "javaType" : "aws.fsx.FileSystemWindowsConfiguration",
+  "javaInterfaces" : [ "aws.Property<FileSystemWindowsConfiguration>" ],
   "properties" : {
     "WeeklyMaintenanceStartTime" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-fsx-filesystem-windowsconfiguration.html#cfn-fsx-filesystem-windowsconfiguration-weeklymaintenancestarttime",

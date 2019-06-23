@@ -65,7 +65,7 @@ public class Configuration {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-tags")
-    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
+    private List<Property<ConfigurationTagsEntry>> tags = new ArrayList<Property<ConfigurationTagsEntry>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-amazonmq-configuration.html#cfn-amazonmq-configuration-name
      * 
@@ -171,7 +171,7 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public List<Property<TagsEntry>> getTags() {
+    public List<Property<ConfigurationTagsEntry>> getTags() {
         return tags;
     }
 
@@ -180,11 +180,11 @@ public class Configuration {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagsEntry>> tags) {
+    public void setTags(List<Property<ConfigurationTagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public Configuration withTags(List<Property<TagsEntry>> tags) {
+    public Configuration withTags(List<Property<ConfigurationTagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

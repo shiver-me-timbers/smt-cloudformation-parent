@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.dms.EndpointResource",
-  "javaInterfaces" : [ "aws.HasAttributes<EndpointAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<EndpointResource>", "aws.HasCondition<EndpointResource>", "aws.HasAttributes<EndpointAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.RestApiResource",
-  "javaInterfaces" : [ "aws.HasAttributes<RestApiAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<RestApiResource>", "aws.HasCondition<RestApiResource>", "aws.HasAttributes<RestApiAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

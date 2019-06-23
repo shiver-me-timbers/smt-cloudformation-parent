@@ -1,16 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.RecordFormat.schema.json",
-  "title" : "RecordFormat",
+  "title" : "ApplicationReferenceDataSourceRecordFormat",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-recordformat.html",
   "type" : "object",
-  "javaType" : "aws.kinesisanalytics.RecordFormat",
-  "javaInterfaces" : [ "aws.Property<RecordFormat>" ],
+  "javaType" : "aws.kinesisanalytics.ApplicationReferenceDataSourceRecordFormat",
+  "javaInterfaces" : [ "aws.Property<ApplicationReferenceDataSourceRecordFormat>" ],
   "properties" : {
     "MappingParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-recordformat.html#cfn-kinesisanalytics-applicationreferencedatasource-recordformat-mappingparameters",
-      "$ref" : "AWS_KinesisAnalyticsV2_ApplicationReferenceDataSource.JSONMappingParameters.schema.json",
-      "javaType" : "aws.Property<aws.kinesisanalyticsv2.MappingParameters>"
+      "$ref" : "AWS_KinesisAnalytics_ApplicationReferenceDataSource.CSVMappingParameters.schema.json",
+      "javaType" : "aws.Property<aws.kinesisanalytics.ApplicationReferenceDataSourceMappingParameters>"
     },
     "RecordFormatType" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationreferencedatasource-recordformat.html#cfn-kinesisanalytics-applicationreferencedatasource-recordformat-recordformattype",

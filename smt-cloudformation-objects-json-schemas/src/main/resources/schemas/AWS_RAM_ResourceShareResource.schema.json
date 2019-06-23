@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ram.ResourceShareResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ResourceShareAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ResourceShareResource>", "aws.HasCondition<ResourceShareResource>", "aws.HasAttributes<ResourceShareAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

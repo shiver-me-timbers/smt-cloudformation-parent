@@ -56,7 +56,7 @@ public class StateMachine {
      */
     @JsonProperty("Tags")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-tags")
-    private List<Property<TagsEntry>> tags = new ArrayList<Property<TagsEntry>>();
+    private List<Property<StateMachineTagsEntry>> tags = new ArrayList<Property<StateMachineTagsEntry>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html#cfn-stepfunctions-statemachine-definitionstring
@@ -132,7 +132,7 @@ public class StateMachine {
      * 
      */
     @JsonIgnore
-    public List<Property<TagsEntry>> getTags() {
+    public List<Property<StateMachineTagsEntry>> getTags() {
         return tags;
     }
 
@@ -141,11 +141,11 @@ public class StateMachine {
      * 
      */
     @JsonIgnore
-    public void setTags(List<Property<TagsEntry>> tags) {
+    public void setTags(List<Property<StateMachineTagsEntry>> tags) {
         this.tags = tags;
     }
 
-    public StateMachine withTags(List<Property<TagsEntry>> tags) {
+    public StateMachine withTags(List<Property<StateMachineTagsEntry>> tags) {
         this.tags = tags;
         return this;
     }

@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appstream.StackFleetAssociationResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<StackFleetAssociationResource>", "aws.HasCondition<StackFleetAssociationResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

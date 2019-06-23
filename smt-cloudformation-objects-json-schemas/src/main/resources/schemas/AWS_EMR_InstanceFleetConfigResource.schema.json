@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.emr.InstanceFleetConfigResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InstanceFleetConfigResource>", "aws.HasCondition<InstanceFleetConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

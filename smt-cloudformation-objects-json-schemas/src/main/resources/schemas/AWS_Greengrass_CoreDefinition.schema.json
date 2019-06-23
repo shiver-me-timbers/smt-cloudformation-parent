@@ -9,7 +9,7 @@
     "InitialVersion" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-initialversion",
       "$ref" : "AWS_Greengrass_CoreDefinition.CoreDefinitionVersion.schema.json",
-      "javaType" : "aws.Property<aws.greengrass.CoreDefinitionVersion>"
+      "javaType" : "aws.Property<aws.greengrass.CoreDefinitionCoreDefinitionVersion>"
     },
     "Name" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-greengrass-coredefinition.html#cfn-greengrass-coredefinition-name",

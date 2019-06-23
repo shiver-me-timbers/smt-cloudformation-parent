@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Logs_MetricFilter.MetricTransformation.schema.json",
-  "title" : "MetricTransformation",
+  "title" : "MetricFilterMetricTransformation",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html",
   "type" : "object",
-  "javaType" : "aws.logs.MetricTransformation",
-  "javaInterfaces" : [ "aws.Property<MetricTransformation>" ],
+  "javaType" : "aws.logs.MetricFilterMetricTransformation",
+  "javaInterfaces" : [ "aws.Property<MetricFilterMetricTransformation>" ],
   "properties" : {
     "DefaultValue" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html#cfn-cwl-metricfilter-metrictransformation-defaultvalue",

@@ -34,14 +34,14 @@ public class ReceiptRule {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-after")
     private CharSequence after;
     /**
-     * Rule
+     * ReceiptRuleRule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html
      * 
      */
     @JsonProperty("Rule")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html")
-    private Property<Rule> rule;
+    private Property<ReceiptRuleRule> rule;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptrule.html#cfn-ses-receiptrule-rulesetname
      * 
@@ -74,28 +74,28 @@ public class ReceiptRule {
     }
 
     /**
-     * Rule
+     * ReceiptRuleRule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html
      * 
      */
     @JsonIgnore
-    public Property<Rule> getRule() {
+    public Property<ReceiptRuleRule> getRule() {
         return rule;
     }
 
     /**
-     * Rule
+     * ReceiptRuleRule
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ses-receiptrule-rule.html
      * 
      */
     @JsonIgnore
-    public void setRule(Property<Rule> rule) {
+    public void setRule(Property<ReceiptRuleRule> rule) {
         this.rule = rule;
     }
 
-    public ReceiptRule withRule(Property<Rule> rule) {
+    public ReceiptRule withRule(Property<ReceiptRuleRule> rule) {
         this.rule = rule;
         return this;
     }

@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_SSM_PatchBaseline.PatchFilterGroup.schema.json",
-  "title" : "PatchFilterGroup",
+  "title" : "PatchBaselinePatchFilterGroup",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html",
   "type" : "object",
-  "javaType" : "aws.ssm.PatchFilterGroup",
-  "javaInterfaces" : [ "aws.Property<PatchFilterGroup>" ],
+  "javaType" : "aws.ssm.PatchBaselinePatchFilterGroup",
+  "javaInterfaces" : [ "aws.Property<PatchBaselinePatchFilterGroup>" ],
   "properties" : {
     "PatchFilters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ssm-patchbaseline-patchfiltergroup.html#cfn-ssm-patchbaseline-patchfiltergroup-patchfilters",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_SSM_PatchBaseline.PatchFilter.schema.json",
-        "javaType" : "aws.Property<aws.ssm.PatchFilter>"
+        "javaType" : "aws.Property<aws.ssm.PatchBaselinePatchFilter>"
       }
     }
   }

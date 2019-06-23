@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.config.ConfigurationRecorderResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<ConfigurationRecorderResource>", "aws.HasCondition<ConfigurationRecorderResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

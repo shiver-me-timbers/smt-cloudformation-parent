@@ -28,45 +28,45 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class ScalingPlan {
 
     /**
-     * ApplicationSource
+     * ScalingPlanApplicationSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html
      * 
      */
     @JsonProperty("ApplicationSource")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html")
-    private Property<ApplicationSource> applicationSource;
+    private Property<ScalingPlanApplicationSource> applicationSource;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-scalinginstructions
      * 
      */
     @JsonProperty("ScalingInstructions")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-autoscalingplans-scalingplan.html#cfn-autoscalingplans-scalingplan-scalinginstructions")
-    private List<Property<ScalingInstruction>> scalingInstructions = new ArrayList<Property<ScalingInstruction>>();
+    private List<Property<ScalingPlanScalingInstruction>> scalingInstructions = new ArrayList<Property<ScalingPlanScalingInstruction>>();
 
     /**
-     * ApplicationSource
+     * ScalingPlanApplicationSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html
      * 
      */
     @JsonIgnore
-    public Property<ApplicationSource> getApplicationSource() {
+    public Property<ScalingPlanApplicationSource> getApplicationSource() {
         return applicationSource;
     }
 
     /**
-     * ApplicationSource
+     * ScalingPlanApplicationSource
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscalingplans-scalingplan-applicationsource.html
      * 
      */
     @JsonIgnore
-    public void setApplicationSource(Property<ApplicationSource> applicationSource) {
+    public void setApplicationSource(Property<ScalingPlanApplicationSource> applicationSource) {
         this.applicationSource = applicationSource;
     }
 
-    public ScalingPlan withApplicationSource(Property<ApplicationSource> applicationSource) {
+    public ScalingPlan withApplicationSource(Property<ScalingPlanApplicationSource> applicationSource) {
         this.applicationSource = applicationSource;
         return this;
     }
@@ -76,7 +76,7 @@ public class ScalingPlan {
      * 
      */
     @JsonIgnore
-    public List<Property<ScalingInstruction>> getScalingInstructions() {
+    public List<Property<ScalingPlanScalingInstruction>> getScalingInstructions() {
         return scalingInstructions;
     }
 
@@ -85,11 +85,11 @@ public class ScalingPlan {
      * 
      */
     @JsonIgnore
-    public void setScalingInstructions(List<Property<ScalingInstruction>> scalingInstructions) {
+    public void setScalingInstructions(List<Property<ScalingPlanScalingInstruction>> scalingInstructions) {
         this.scalingInstructions = scalingInstructions;
     }
 
-    public ScalingPlan withScalingInstructions(List<Property<ScalingInstruction>> scalingInstructions) {
+    public ScalingPlan withScalingInstructions(List<Property<ScalingPlanScalingInstruction>> scalingInstructions) {
         this.scalingInstructions = scalingInstructions;
         return this;
     }

@@ -6,6 +6,8 @@ import java.util.Map;
 import aws.CreationPolicy;
 import aws.DeletionPolicy;
 import aws.HasAttributes;
+import aws.HasCondition;
+import aws.HasDependsOn;
 import aws.Resource;
 import aws.UpdatePolicy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -31,7 +33,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 })
 public class CloudFrontOriginAccessIdentityResource
     extends Resource
-    implements HasAttributes<CloudFrontOriginAccessIdentityAttributes>
+    implements HasAttributes<CloudFrontOriginAccessIdentityAttributes> , HasCondition<CloudFrontOriginAccessIdentityResource> , HasDependsOn<CloudFrontOriginAccessIdentityResource>
 {
 
     @JsonProperty("Type")

@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EC2_SpotFleet.BlockDeviceMapping.schema.json",
-  "title" : "BlockDeviceMapping",
+  "title" : "SpotFleetBlockDeviceMapping",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings.html",
   "type" : "object",
-  "javaType" : "aws.ec2.BlockDeviceMapping",
-  "javaInterfaces" : [ "aws.Property<BlockDeviceMapping>" ],
+  "javaType" : "aws.ec2.SpotFleetBlockDeviceMapping",
+  "javaInterfaces" : [ "aws.Property<SpotFleetBlockDeviceMapping>" ],
   "properties" : {
     "DeviceName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings.html#cfn-ec2-spotfleet-blockdevicemapping-devicename",
@@ -15,7 +15,7 @@
     "Ebs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings.html#cfn-ec2-spotfleet-blockdevicemapping-ebs",
       "$ref" : "AWS_EC2_SpotFleet.EbsBlockDevice.schema.json",
-      "javaType" : "aws.Property<aws.ec2.EbsBlockDevice>"
+      "javaType" : "aws.Property<aws.ec2.SpotFleetEbsBlockDevice>"
     },
     "NoDevice" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings.html#cfn-ec2-spotfleet-blockdevicemapping-nodevice",

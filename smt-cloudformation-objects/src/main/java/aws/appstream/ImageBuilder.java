@@ -52,14 +52,14 @@ public class ImageBuilder {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-description")
     private CharSequence description;
     /**
-     * VpcConfig
+     * ImageBuilderVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
      * 
      */
     @JsonProperty("VpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html")
-    private Property<VpcConfig> vpcConfig;
+    private Property<ImageBuilderVpcConfig> vpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-enabledefaultinternetaccess
      * 
@@ -75,14 +75,14 @@ public class ImageBuilder {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-displayname")
     private CharSequence displayName;
     /**
-     * DomainJoinInfo
+     * ImageBuilderDomainJoinInfo
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html
      * 
      */
     @JsonProperty("DomainJoinInfo")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html")
-    private Property<DomainJoinInfo> domainJoinInfo;
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html")
+    private Property<ImageBuilderDomainJoinInfo> domainJoinInfo;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appstream-imagebuilder.html#cfn-appstream-imagebuilder-appstreamagentversion
      * 
@@ -166,28 +166,28 @@ public class ImageBuilder {
     }
 
     /**
-     * VpcConfig
+     * ImageBuilderVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VpcConfig> getVpcConfig() {
+    public Property<ImageBuilderVpcConfig> getVpcConfig() {
         return vpcConfig;
     }
 
     /**
-     * VpcConfig
+     * ImageBuilderVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-vpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setVpcConfig(Property<VpcConfig> vpcConfig) {
+    public void setVpcConfig(Property<ImageBuilderVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
     }
 
-    public ImageBuilder withVpcConfig(Property<VpcConfig> vpcConfig) {
+    public ImageBuilder withVpcConfig(Property<ImageBuilderVpcConfig> vpcConfig) {
         this.vpcConfig = vpcConfig;
         return this;
     }
@@ -239,28 +239,28 @@ public class ImageBuilder {
     }
 
     /**
-     * DomainJoinInfo
+     * ImageBuilderDomainJoinInfo
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html
      * 
      */
     @JsonIgnore
-    public Property<DomainJoinInfo> getDomainJoinInfo() {
+    public Property<ImageBuilderDomainJoinInfo> getDomainJoinInfo() {
         return domainJoinInfo;
     }
 
     /**
-     * DomainJoinInfo
+     * ImageBuilderDomainJoinInfo
      * <p>
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-fleet-domainjoininfo.html
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appstream-imagebuilder-domainjoininfo.html
      * 
      */
     @JsonIgnore
-    public void setDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
+    public void setDomainJoinInfo(Property<ImageBuilderDomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
     }
 
-    public ImageBuilder withDomainJoinInfo(Property<DomainJoinInfo> domainJoinInfo) {
+    public ImageBuilder withDomainJoinInfo(Property<ImageBuilderDomainJoinInfo> domainJoinInfo) {
         this.domainJoinInfo = domainJoinInfo;
         return this;
     }

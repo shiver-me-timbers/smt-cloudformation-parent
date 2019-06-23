@@ -1,18 +1,18 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_Glue_Crawler.Targets.schema.json",
-  "title" : "Targets",
+  "title" : "CrawlerTargets",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html",
   "type" : "object",
-  "javaType" : "aws.glue.Targets",
-  "javaInterfaces" : [ "aws.Property<Targets>" ],
+  "javaType" : "aws.glue.CrawlerTargets",
+  "javaInterfaces" : [ "aws.Property<CrawlerTargets>" ],
   "properties" : {
     "S3Targets" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-targets.html#cfn-glue-crawler-targets-s3targets",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Crawler.S3Target.schema.json",
-        "javaType" : "aws.Property<aws.glue.S3Target>"
+        "javaType" : "aws.Property<aws.glue.CrawlerS3Target>"
       }
     },
     "JdbcTargets" : {
@@ -20,7 +20,7 @@
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Glue_Crawler.JdbcTarget.schema.json",
-        "javaType" : "aws.Property<aws.glue.JdbcTarget>"
+        "javaType" : "aws.Property<aws.glue.CrawlerJdbcTarget>"
       }
     }
   }

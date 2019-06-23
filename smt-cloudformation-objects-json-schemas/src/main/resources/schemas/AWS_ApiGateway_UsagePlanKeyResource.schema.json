@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.UsagePlanKeyResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<UsagePlanKeyResource>", "aws.HasCondition<UsagePlanKeyResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

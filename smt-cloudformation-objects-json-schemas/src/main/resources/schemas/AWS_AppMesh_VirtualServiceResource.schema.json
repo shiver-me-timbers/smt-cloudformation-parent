@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appmesh.VirtualServiceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<VirtualServiceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<VirtualServiceResource>", "aws.HasCondition<VirtualServiceResource>", "aws.HasAttributes<VirtualServiceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

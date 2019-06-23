@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.emr.InstanceGroupConfigResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<InstanceGroupConfigResource>", "aws.HasCondition<InstanceGroupConfigResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

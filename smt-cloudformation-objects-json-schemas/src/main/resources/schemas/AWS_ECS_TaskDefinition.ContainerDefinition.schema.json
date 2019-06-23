@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_ECS_TaskDefinition.ContainerDefinition.schema.json",
-  "title" : "ContainerDefinition",
+  "title" : "TaskDefinitionContainerDefinition",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html",
   "type" : "object",
-  "javaType" : "aws.ecs.ContainerDefinition",
-  "javaInterfaces" : [ "aws.Property<ContainerDefinition>" ],
+  "javaType" : "aws.ecs.TaskDefinitionContainerDefinition",
+  "javaInterfaces" : [ "aws.Property<TaskDefinitionContainerDefinition>" ],
   "properties" : {
     "Command" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-command",
@@ -71,7 +71,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.KeyValuePair.schema.json",
-        "javaType" : "aws.Property<aws.ecs.KeyValuePair>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionKeyValuePair>"
       }
     },
     "Essential" : {
@@ -84,13 +84,13 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.HostEntry.schema.json",
-        "javaType" : "aws.Property<aws.ecs.HostEntry>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionHostEntry>"
       }
     },
     "HealthCheck" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-healthcheck",
       "$ref" : "AWS_ECS_TaskDefinition.HealthCheck.schema.json",
-      "javaType" : "aws.Property<aws.ecs.HealthCheck>"
+      "javaType" : "aws.Property<aws.ecs.TaskDefinitionHealthCheck>"
     },
     "Hostname" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-hostname",
@@ -114,12 +114,12 @@
     "LinuxParameters" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-linuxparameters",
       "$ref" : "AWS_ECS_TaskDefinition.LinuxParameters.schema.json",
-      "javaType" : "aws.Property<aws.ecs.LinuxParameters>"
+      "javaType" : "aws.Property<aws.ecs.TaskDefinitionLinuxParameters>"
     },
     "LogConfiguration" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-logconfiguration",
       "$ref" : "AWS_ECS_TaskDefinition.LogConfiguration.schema.json",
-      "javaType" : "aws.Property<aws.ecs.LogConfiguration>"
+      "javaType" : "aws.Property<aws.ecs.TaskDefinitionLogConfiguration>"
     },
     "Memory" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-memory",
@@ -135,7 +135,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.MountPoint.schema.json",
-        "javaType" : "aws.Property<aws.ecs.MountPoint>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionMountPoint>"
       }
     },
     "Name" : {
@@ -149,7 +149,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.PortMapping.schema.json",
-        "javaType" : "aws.Property<aws.ecs.PortMapping>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionPortMapping>"
       }
     },
     "Privileged" : {
@@ -163,7 +163,7 @@
     "RepositoryCredentials" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-repositorycredentials",
       "$ref" : "AWS_ECS_TaskDefinition.RepositoryCredentials.schema.json",
-      "javaType" : "aws.Property<aws.ecs.RepositoryCredentials>"
+      "javaType" : "aws.Property<aws.ecs.TaskDefinitionRepositoryCredentials>"
     },
     "Ulimits" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html#cfn-ecs-taskdefinition-containerdefinition-ulimits",
@@ -171,7 +171,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.Ulimit.schema.json",
-        "javaType" : "aws.Property<aws.ecs.Ulimit>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionUlimit>"
       }
     },
     "User" : {
@@ -185,7 +185,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_ECS_TaskDefinition.VolumeFrom.schema.json",
-        "javaType" : "aws.Property<aws.ecs.VolumeFrom>"
+        "javaType" : "aws.Property<aws.ecs.TaskDefinitionVolumeFrom>"
       }
     },
     "WorkingDirectory" : {

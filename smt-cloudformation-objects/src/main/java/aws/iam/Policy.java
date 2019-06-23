@@ -1,7 +1,8 @@
 
 package aws.iam;
 
-import aws.Property;
+import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -15,57 +16,109 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 /**
  * Policy
  * <p>
- * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html
+ * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html
  * 
  */
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonPropertyOrder({
+    "Groups",
     "PolicyDocument",
-    "PolicyName"
+    "PolicyName",
+    "Roles",
+    "Users"
 })
-public class Policy implements Property<Policy>
-{
+public class Policy {
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-groups
+     * 
+     */
+    @JsonProperty("Groups")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-groups")
+    private List<CharSequence> groups = new ArrayList<CharSequence>();
+    /**
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonProperty("PolicyDocument")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument")
-    private Object policyDocument;
+    @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html")
+    private PolicyDocument policyDocument;
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policyname
      * 
      */
     @JsonProperty("PolicyName")
-    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policyname")
     private CharSequence policyName;
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-roles
+     * 
+     */
+    @JsonProperty("Roles")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-roles")
+    private List<CharSequence> roles = new ArrayList<CharSequence>();
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-users
+     * 
+     */
+    @JsonProperty("Users")
+    @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-users")
+    private List<CharSequence> users = new ArrayList<CharSequence>();
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-groups
      * 
      */
     @JsonIgnore
-    public Object getPolicyDocument() {
+    public List<CharSequence> getGroups() {
+        return groups;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-groups
+     * 
+     */
+    @JsonIgnore
+    public void setGroups(List<CharSequence> groups) {
+        this.groups = groups;
+    }
+
+    public Policy withGroups(List<CharSequence> groups) {
+        this.groups = groups;
+        return this;
+    }
+
+    /**
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
+     * 
+     */
+    @JsonIgnore
+    public PolicyDocument getPolicyDocument() {
         return policyDocument;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policydocument
+     * Resource
+     * <p>
+     * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
      * 
      */
     @JsonIgnore
-    public void setPolicyDocument(Object policyDocument) {
+    public void setPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
     }
 
-    public Policy withPolicyDocument(Object policyDocument) {
+    public Policy withPolicyDocument(PolicyDocument policyDocument) {
         this.policyDocument = policyDocument;
         return this;
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policyname
      * 
      */
     @JsonIgnore
@@ -74,7 +127,7 @@ public class Policy implements Property<Policy>
     }
 
     /**
-     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html#cfn-iam-policies-policyname
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-policyname
      * 
      */
     @JsonIgnore
@@ -87,14 +140,60 @@ public class Policy implements Property<Policy>
         return this;
     }
 
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-roles
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getRoles() {
+        return roles;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-roles
+     * 
+     */
+    @JsonIgnore
+    public void setRoles(List<CharSequence> roles) {
+        this.roles = roles;
+    }
+
+    public Policy withRoles(List<CharSequence> roles) {
+        this.roles = roles;
+        return this;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-users
+     * 
+     */
+    @JsonIgnore
+    public List<CharSequence> getUsers() {
+        return users;
+    }
+
+    /**
+     * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-policy.html#cfn-iam-policy-users
+     * 
+     */
+    @JsonIgnore
+    public void setUsers(List<CharSequence> users) {
+        this.users = users;
+    }
+
+    public Policy withUsers(List<CharSequence> users) {
+        this.users = users;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("policyDocument", policyDocument).append("policyName", policyName).toString();
+        return new ToStringBuilder(this).append("groups", groups).append("policyDocument", policyDocument).append("policyName", policyName).append("roles", roles).append("users", users).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(policyDocument).append(policyName).toHashCode();
+        return new HashCodeBuilder().append(policyDocument).append(groups).append(policyName).append(users).append(roles).toHashCode();
     }
 
     @Override
@@ -106,7 +205,7 @@ public class Policy implements Property<Policy>
             return false;
         }
         Policy rhs = ((Policy) other);
-        return new EqualsBuilder().append(policyDocument, rhs.policyDocument).append(policyName, rhs.policyName).isEquals();
+        return new EqualsBuilder().append(policyDocument, rhs.policyDocument).append(groups, rhs.groups).append(policyName, rhs.policyName).append(users, rhs.users).append(roles, rhs.roles).isEquals();
     }
 
 }

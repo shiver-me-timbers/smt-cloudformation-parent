@@ -59,7 +59,7 @@ public class ResolverRule {
      */
     @JsonProperty("TargetIps")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-targetips")
-    private List<Property<TargetAddress>> targetIps = new ArrayList<Property<TargetAddress>>();
+    private List<Property<ResolverRuleTargetAddress>> targetIps = new ArrayList<Property<ResolverRuleTargetAddress>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53resolver-resolverrule.html#cfn-route53resolver-resolverrule-tags
      * 
@@ -149,7 +149,7 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public List<Property<TargetAddress>> getTargetIps() {
+    public List<Property<ResolverRuleTargetAddress>> getTargetIps() {
         return targetIps;
     }
 
@@ -158,11 +158,11 @@ public class ResolverRule {
      * 
      */
     @JsonIgnore
-    public void setTargetIps(List<Property<TargetAddress>> targetIps) {
+    public void setTargetIps(List<Property<ResolverRuleTargetAddress>> targetIps) {
         this.targetIps = targetIps;
     }
 
-    public ResolverRule withTargetIps(List<Property<TargetAddress>> targetIps) {
+    public ResolverRule withTargetIps(List<Property<ResolverRuleTargetAddress>> targetIps) {
         this.targetIps = targetIps;
         return this;
     }

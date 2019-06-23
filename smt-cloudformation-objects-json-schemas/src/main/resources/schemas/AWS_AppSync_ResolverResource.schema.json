@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.appsync.ResolverResource",
-  "javaInterfaces" : [ "aws.HasAttributes<ResolverAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<ResolverResource>", "aws.HasCondition<ResolverResource>", "aws.HasAttributes<ResolverAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

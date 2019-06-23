@@ -1,21 +1,21 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_AutoScalingGroup.MixedInstancesPolicy.schema.json",
-  "title" : "MixedInstancesPolicy",
+  "title" : "AutoScalingGroupMixedInstancesPolicy",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.MixedInstancesPolicy",
-  "javaInterfaces" : [ "aws.Property<MixedInstancesPolicy>" ],
+  "javaType" : "aws.autoscaling.AutoScalingGroupMixedInstancesPolicy",
+  "javaInterfaces" : [ "aws.Property<AutoScalingGroupMixedInstancesPolicy>" ],
   "properties" : {
     "InstancesDistribution" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html#cfn-as-mixedinstancespolicy-instancesdistribution",
       "$ref" : "AWS_AutoScaling_AutoScalingGroup.InstancesDistribution.schema.json",
-      "javaType" : "aws.Property<aws.autoscaling.InstancesDistribution>"
+      "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupInstancesDistribution>"
     },
     "LaunchTemplate" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-as-group-mixedinstancespolicy.html#cfn-as-mixedinstancespolicy-launchtemplate",
       "$ref" : "AWS_AutoScaling_AutoScalingGroup.LaunchTemplate.schema.json",
-      "javaType" : "aws.Property<aws.autoscaling.LaunchTemplate>"
+      "javaType" : "aws.Property<aws.autoscaling.AutoScalingGroupLaunchTemplate>"
     }
   }
 }

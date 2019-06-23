@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AppMesh_VirtualService.VirtualRouterServiceProvider.schema.json",
-  "title" : "VirtualRouterServiceProvider",
+  "title" : "VirtualServiceVirtualRouterServiceProvider",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualrouterserviceprovider.html",
   "type" : "object",
-  "javaType" : "aws.appmesh.VirtualRouterServiceProvider",
-  "javaInterfaces" : [ "aws.Property<VirtualRouterServiceProvider>" ],
+  "javaType" : "aws.appmesh.VirtualServiceVirtualRouterServiceProvider",
+  "javaInterfaces" : [ "aws.Property<VirtualServiceVirtualRouterServiceProvider>" ],
   "properties" : {
     "VirtualRouterName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-appmesh-virtualservice-virtualrouterserviceprovider.html#cfn-appmesh-virtualservice-virtualrouterserviceprovider-virtualroutername",

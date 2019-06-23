@@ -11,8 +11,8 @@
       "type" : "array",
       "uniqueItems" : true,
       "items" : {
-        "$ref" : "AWS_WAFRegional_ByteMatchSet.ByteMatchTuple.schema.json",
-        "javaType" : "aws.Property<aws.wafregional.ByteMatchTuple>"
+        "$ref" : "AWS_WAF_ByteMatchSet.ByteMatchTuple.schema.json",
+        "javaType" : "aws.Property<aws.waf.ByteMatchSetByteMatchTuple>"
       }
     },
     "Name" : {

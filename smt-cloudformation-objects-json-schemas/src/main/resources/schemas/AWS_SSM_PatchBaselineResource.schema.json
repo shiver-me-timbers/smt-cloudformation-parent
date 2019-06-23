@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.ssm.PatchBaselineResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<PatchBaselineResource>", "aws.HasCondition<PatchBaselineResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

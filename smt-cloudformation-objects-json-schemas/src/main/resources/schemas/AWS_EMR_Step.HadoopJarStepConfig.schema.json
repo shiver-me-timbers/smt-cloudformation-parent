@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_EMR_Step.HadoopJarStepConfig.schema.json",
-  "title" : "HadoopJarStepConfig",
+  "title" : "StepHadoopJarStepConfig",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html",
   "type" : "object",
-  "javaType" : "aws.emr.HadoopJarStepConfig",
-  "javaInterfaces" : [ "aws.Property<HadoopJarStepConfig>" ],
+  "javaType" : "aws.emr.StepHadoopJarStepConfig",
+  "javaInterfaces" : [ "aws.Property<StepHadoopJarStepConfig>" ],
   "properties" : {
     "Args" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html#cfn-elasticmapreduce-step-hadoopjarstepconfig-args",
@@ -32,7 +32,7 @@
       "uniqueItems" : true,
       "items" : {
         "$ref" : "AWS_EMR_Step.KeyValue.schema.json",
-        "javaType" : "aws.Property<aws.emr.KeyValue>"
+        "javaType" : "aws.Property<aws.emr.StepKeyValue>"
       }
     }
   }

@@ -46,14 +46,14 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 public class Bucket {
 
     /**
-     * AccelerateConfiguration
+     * BucketAccelerateConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html
      * 
      */
     @JsonProperty("AccelerateConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html")
-    private Property<AccelerateConfiguration> accelerateConfiguration;
+    private Property<BucketAccelerateConfiguration> accelerateConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-accesscontrol
      * 
@@ -68,16 +68,16 @@ public class Bucket {
     @JsonProperty("AnalyticsConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-analyticsconfigurations")
-    private Set<Property<AnalyticsConfiguration>> analyticsConfigurations = new LinkedHashSet<Property<AnalyticsConfiguration>>();
+    private Set<Property<BucketAnalyticsConfiguration>> analyticsConfigurations = new LinkedHashSet<Property<BucketAnalyticsConfiguration>>();
     /**
-     * BucketEncryption
+     * BucketBucketEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html
      * 
      */
     @JsonProperty("BucketEncryption")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html")
-    private Property<BucketEncryption> bucketEncryption;
+    private Property<BucketBucketEncryption> bucketEncryption;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name
      * 
@@ -86,14 +86,14 @@ public class Bucket {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-name")
     private CharSequence bucketName;
     /**
-     * CorsConfiguration
+     * BucketCorsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html
      * 
      */
     @JsonProperty("CorsConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html")
-    private Property<CorsConfiguration> corsConfiguration;
+    private Property<BucketCorsConfiguration> corsConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations
      * 
@@ -101,25 +101,25 @@ public class Bucket {
     @JsonProperty("InventoryConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-inventoryconfigurations")
-    private Set<Property<InventoryConfiguration>> inventoryConfigurations = new LinkedHashSet<Property<InventoryConfiguration>>();
+    private Set<Property<BucketInventoryConfiguration>> inventoryConfigurations = new LinkedHashSet<Property<BucketInventoryConfiguration>>();
     /**
-     * LifecycleConfiguration
+     * BucketLifecycleConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html
      * 
      */
     @JsonProperty("LifecycleConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html")
-    private Property<LifecycleConfiguration> lifecycleConfiguration;
+    private Property<BucketLifecycleConfiguration> lifecycleConfiguration;
     /**
-     * LoggingConfiguration
+     * BucketLoggingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html
      * 
      */
     @JsonProperty("LoggingConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html")
-    private Property<LoggingConfiguration> loggingConfiguration;
+    private Property<BucketLoggingConfiguration> loggingConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations
      * 
@@ -127,34 +127,34 @@ public class Bucket {
     @JsonProperty("MetricsConfigurations")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-metricsconfigurations")
-    private Set<Property<MetricsConfiguration>> metricsConfigurations = new LinkedHashSet<Property<MetricsConfiguration>>();
+    private Set<Property<BucketMetricsConfiguration>> metricsConfigurations = new LinkedHashSet<Property<BucketMetricsConfiguration>>();
     /**
-     * NotificationConfiguration
+     * BucketNotificationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html
      * 
      */
     @JsonProperty("NotificationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html")
-    private Property<NotificationConfiguration> notificationConfiguration;
+    private Property<BucketNotificationConfiguration> notificationConfiguration;
     /**
-     * PublicAccessBlockConfiguration
+     * BucketPublicAccessBlockConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html
      * 
      */
     @JsonProperty("PublicAccessBlockConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html")
-    private Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration;
+    private Property<BucketPublicAccessBlockConfiguration> publicAccessBlockConfiguration;
     /**
-     * ReplicationConfiguration
+     * BucketReplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html
      * 
      */
     @JsonProperty("ReplicationConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html")
-    private Property<ReplicationConfiguration> replicationConfiguration;
+    private Property<BucketReplicationConfiguration> replicationConfiguration;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags
      * 
@@ -163,47 +163,47 @@ public class Bucket {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#cfn-s3-bucket-tags")
     private List<Property<Tag>> tags = new ArrayList<Property<Tag>>();
     /**
-     * VersioningConfiguration
+     * BucketVersioningConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html
      * 
      */
     @JsonProperty("VersioningConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html")
-    private Property<VersioningConfiguration> versioningConfiguration;
+    private Property<BucketVersioningConfiguration> versioningConfiguration;
     /**
-     * WebsiteConfiguration
+     * BucketWebsiteConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html
      * 
      */
     @JsonProperty("WebsiteConfiguration")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html")
-    private Property<WebsiteConfiguration> websiteConfiguration;
+    private Property<BucketWebsiteConfiguration> websiteConfiguration;
 
     /**
-     * AccelerateConfiguration
+     * BucketAccelerateConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<AccelerateConfiguration> getAccelerateConfiguration() {
+    public Property<BucketAccelerateConfiguration> getAccelerateConfiguration() {
         return accelerateConfiguration;
     }
 
     /**
-     * AccelerateConfiguration
+     * BucketAccelerateConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-accelerateconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setAccelerateConfiguration(Property<AccelerateConfiguration> accelerateConfiguration) {
+    public void setAccelerateConfiguration(Property<BucketAccelerateConfiguration> accelerateConfiguration) {
         this.accelerateConfiguration = accelerateConfiguration;
     }
 
-    public Bucket withAccelerateConfiguration(Property<AccelerateConfiguration> accelerateConfiguration) {
+    public Bucket withAccelerateConfiguration(Property<BucketAccelerateConfiguration> accelerateConfiguration) {
         this.accelerateConfiguration = accelerateConfiguration;
         return this;
     }
@@ -236,7 +236,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<Property<AnalyticsConfiguration>> getAnalyticsConfigurations() {
+    public Set<Property<BucketAnalyticsConfiguration>> getAnalyticsConfigurations() {
         return analyticsConfigurations;
     }
 
@@ -245,38 +245,38 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setAnalyticsConfigurations(Set<Property<AnalyticsConfiguration>> analyticsConfigurations) {
+    public void setAnalyticsConfigurations(Set<Property<BucketAnalyticsConfiguration>> analyticsConfigurations) {
         this.analyticsConfigurations = analyticsConfigurations;
     }
 
-    public Bucket withAnalyticsConfigurations(Set<Property<AnalyticsConfiguration>> analyticsConfigurations) {
+    public Bucket withAnalyticsConfigurations(Set<Property<BucketAnalyticsConfiguration>> analyticsConfigurations) {
         this.analyticsConfigurations = analyticsConfigurations;
         return this;
     }
 
     /**
-     * BucketEncryption
+     * BucketBucketEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html
      * 
      */
     @JsonIgnore
-    public Property<BucketEncryption> getBucketEncryption() {
+    public Property<BucketBucketEncryption> getBucketEncryption() {
         return bucketEncryption;
     }
 
     /**
-     * BucketEncryption
+     * BucketBucketEncryption
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-bucketencryption.html
      * 
      */
     @JsonIgnore
-    public void setBucketEncryption(Property<BucketEncryption> bucketEncryption) {
+    public void setBucketEncryption(Property<BucketBucketEncryption> bucketEncryption) {
         this.bucketEncryption = bucketEncryption;
     }
 
-    public Bucket withBucketEncryption(Property<BucketEncryption> bucketEncryption) {
+    public Bucket withBucketEncryption(Property<BucketBucketEncryption> bucketEncryption) {
         this.bucketEncryption = bucketEncryption;
         return this;
     }
@@ -305,28 +305,28 @@ public class Bucket {
     }
 
     /**
-     * CorsConfiguration
+     * BucketCorsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html
      * 
      */
     @JsonIgnore
-    public Property<CorsConfiguration> getCorsConfiguration() {
+    public Property<BucketCorsConfiguration> getCorsConfiguration() {
         return corsConfiguration;
     }
 
     /**
-     * CorsConfiguration
+     * BucketCorsConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html
      * 
      */
     @JsonIgnore
-    public void setCorsConfiguration(Property<CorsConfiguration> corsConfiguration) {
+    public void setCorsConfiguration(Property<BucketCorsConfiguration> corsConfiguration) {
         this.corsConfiguration = corsConfiguration;
     }
 
-    public Bucket withCorsConfiguration(Property<CorsConfiguration> corsConfiguration) {
+    public Bucket withCorsConfiguration(Property<BucketCorsConfiguration> corsConfiguration) {
         this.corsConfiguration = corsConfiguration;
         return this;
     }
@@ -336,7 +336,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<Property<InventoryConfiguration>> getInventoryConfigurations() {
+    public Set<Property<BucketInventoryConfiguration>> getInventoryConfigurations() {
         return inventoryConfigurations;
     }
 
@@ -345,65 +345,65 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setInventoryConfigurations(Set<Property<InventoryConfiguration>> inventoryConfigurations) {
+    public void setInventoryConfigurations(Set<Property<BucketInventoryConfiguration>> inventoryConfigurations) {
         this.inventoryConfigurations = inventoryConfigurations;
     }
 
-    public Bucket withInventoryConfigurations(Set<Property<InventoryConfiguration>> inventoryConfigurations) {
+    public Bucket withInventoryConfigurations(Set<Property<BucketInventoryConfiguration>> inventoryConfigurations) {
         this.inventoryConfigurations = inventoryConfigurations;
         return this;
     }
 
     /**
-     * LifecycleConfiguration
+     * BucketLifecycleConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LifecycleConfiguration> getLifecycleConfiguration() {
+    public Property<BucketLifecycleConfiguration> getLifecycleConfiguration() {
         return lifecycleConfiguration;
     }
 
     /**
-     * LifecycleConfiguration
+     * BucketLifecycleConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html
      * 
      */
     @JsonIgnore
-    public void setLifecycleConfiguration(Property<LifecycleConfiguration> lifecycleConfiguration) {
+    public void setLifecycleConfiguration(Property<BucketLifecycleConfiguration> lifecycleConfiguration) {
         this.lifecycleConfiguration = lifecycleConfiguration;
     }
 
-    public Bucket withLifecycleConfiguration(Property<LifecycleConfiguration> lifecycleConfiguration) {
+    public Bucket withLifecycleConfiguration(Property<BucketLifecycleConfiguration> lifecycleConfiguration) {
         this.lifecycleConfiguration = lifecycleConfiguration;
         return this;
     }
 
     /**
-     * LoggingConfiguration
+     * BucketLoggingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html
      * 
      */
     @JsonIgnore
-    public Property<LoggingConfiguration> getLoggingConfiguration() {
+    public Property<BucketLoggingConfiguration> getLoggingConfiguration() {
         return loggingConfiguration;
     }
 
     /**
-     * LoggingConfiguration
+     * BucketLoggingConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html
      * 
      */
     @JsonIgnore
-    public void setLoggingConfiguration(Property<LoggingConfiguration> loggingConfiguration) {
+    public void setLoggingConfiguration(Property<BucketLoggingConfiguration> loggingConfiguration) {
         this.loggingConfiguration = loggingConfiguration;
     }
 
-    public Bucket withLoggingConfiguration(Property<LoggingConfiguration> loggingConfiguration) {
+    public Bucket withLoggingConfiguration(Property<BucketLoggingConfiguration> loggingConfiguration) {
         this.loggingConfiguration = loggingConfiguration;
         return this;
     }
@@ -413,7 +413,7 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public Set<Property<MetricsConfiguration>> getMetricsConfigurations() {
+    public Set<Property<BucketMetricsConfiguration>> getMetricsConfigurations() {
         return metricsConfigurations;
     }
 
@@ -422,92 +422,92 @@ public class Bucket {
      * 
      */
     @JsonIgnore
-    public void setMetricsConfigurations(Set<Property<MetricsConfiguration>> metricsConfigurations) {
+    public void setMetricsConfigurations(Set<Property<BucketMetricsConfiguration>> metricsConfigurations) {
         this.metricsConfigurations = metricsConfigurations;
     }
 
-    public Bucket withMetricsConfigurations(Set<Property<MetricsConfiguration>> metricsConfigurations) {
+    public Bucket withMetricsConfigurations(Set<Property<BucketMetricsConfiguration>> metricsConfigurations) {
         this.metricsConfigurations = metricsConfigurations;
         return this;
     }
 
     /**
-     * NotificationConfiguration
+     * BucketNotificationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html
      * 
      */
     @JsonIgnore
-    public Property<NotificationConfiguration> getNotificationConfiguration() {
+    public Property<BucketNotificationConfiguration> getNotificationConfiguration() {
         return notificationConfiguration;
     }
 
     /**
-     * NotificationConfiguration
+     * BucketNotificationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html
      * 
      */
     @JsonIgnore
-    public void setNotificationConfiguration(Property<NotificationConfiguration> notificationConfiguration) {
+    public void setNotificationConfiguration(Property<BucketNotificationConfiguration> notificationConfiguration) {
         this.notificationConfiguration = notificationConfiguration;
     }
 
-    public Bucket withNotificationConfiguration(Property<NotificationConfiguration> notificationConfiguration) {
+    public Bucket withNotificationConfiguration(Property<BucketNotificationConfiguration> notificationConfiguration) {
         this.notificationConfiguration = notificationConfiguration;
         return this;
     }
 
     /**
-     * PublicAccessBlockConfiguration
+     * BucketPublicAccessBlockConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<PublicAccessBlockConfiguration> getPublicAccessBlockConfiguration() {
+    public Property<BucketPublicAccessBlockConfiguration> getPublicAccessBlockConfiguration() {
         return publicAccessBlockConfiguration;
     }
 
     /**
-     * PublicAccessBlockConfiguration
+     * BucketPublicAccessBlockConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-publicaccessblockconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setPublicAccessBlockConfiguration(Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
+    public void setPublicAccessBlockConfiguration(Property<BucketPublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
         this.publicAccessBlockConfiguration = publicAccessBlockConfiguration;
     }
 
-    public Bucket withPublicAccessBlockConfiguration(Property<PublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
+    public Bucket withPublicAccessBlockConfiguration(Property<BucketPublicAccessBlockConfiguration> publicAccessBlockConfiguration) {
         this.publicAccessBlockConfiguration = publicAccessBlockConfiguration;
         return this;
     }
 
     /**
-     * ReplicationConfiguration
+     * BucketReplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<ReplicationConfiguration> getReplicationConfiguration() {
+    public Property<BucketReplicationConfiguration> getReplicationConfiguration() {
         return replicationConfiguration;
     }
 
     /**
-     * ReplicationConfiguration
+     * BucketReplicationConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setReplicationConfiguration(Property<ReplicationConfiguration> replicationConfiguration) {
+    public void setReplicationConfiguration(Property<BucketReplicationConfiguration> replicationConfiguration) {
         this.replicationConfiguration = replicationConfiguration;
     }
 
-    public Bucket withReplicationConfiguration(Property<ReplicationConfiguration> replicationConfiguration) {
+    public Bucket withReplicationConfiguration(Property<BucketReplicationConfiguration> replicationConfiguration) {
         this.replicationConfiguration = replicationConfiguration;
         return this;
     }
@@ -536,55 +536,55 @@ public class Bucket {
     }
 
     /**
-     * VersioningConfiguration
+     * BucketVersioningConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html
      * 
      */
     @JsonIgnore
-    public Property<VersioningConfiguration> getVersioningConfiguration() {
+    public Property<BucketVersioningConfiguration> getVersioningConfiguration() {
         return versioningConfiguration;
     }
 
     /**
-     * VersioningConfiguration
+     * BucketVersioningConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html
      * 
      */
     @JsonIgnore
-    public void setVersioningConfiguration(Property<VersioningConfiguration> versioningConfiguration) {
+    public void setVersioningConfiguration(Property<BucketVersioningConfiguration> versioningConfiguration) {
         this.versioningConfiguration = versioningConfiguration;
     }
 
-    public Bucket withVersioningConfiguration(Property<VersioningConfiguration> versioningConfiguration) {
+    public Bucket withVersioningConfiguration(Property<BucketVersioningConfiguration> versioningConfiguration) {
         this.versioningConfiguration = versioningConfiguration;
         return this;
     }
 
     /**
-     * WebsiteConfiguration
+     * BucketWebsiteConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html
      * 
      */
     @JsonIgnore
-    public Property<WebsiteConfiguration> getWebsiteConfiguration() {
+    public Property<BucketWebsiteConfiguration> getWebsiteConfiguration() {
         return websiteConfiguration;
     }
 
     /**
-     * WebsiteConfiguration
+     * BucketWebsiteConfiguration
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html
      * 
      */
     @JsonIgnore
-    public void setWebsiteConfiguration(Property<WebsiteConfiguration> websiteConfiguration) {
+    public void setWebsiteConfiguration(Property<BucketWebsiteConfiguration> websiteConfiguration) {
         this.websiteConfiguration = websiteConfiguration;
     }
 
-    public Bucket withWebsiteConfiguration(Property<WebsiteConfiguration> websiteConfiguration) {
+    public Bucket withWebsiteConfiguration(Property<BucketWebsiteConfiguration> websiteConfiguration) {
         this.websiteConfiguration = websiteConfiguration;
         return this;
     }

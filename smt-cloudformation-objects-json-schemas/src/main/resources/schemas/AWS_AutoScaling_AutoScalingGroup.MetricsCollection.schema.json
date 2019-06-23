@@ -1,11 +1,11 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "AWS_AutoScaling_AutoScalingGroup.MetricsCollection.schema.json",
-  "title" : "MetricsCollection",
+  "title" : "AutoScalingGroupMetricsCollection",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html",
   "type" : "object",
-  "javaType" : "aws.autoscaling.MetricsCollection",
-  "javaInterfaces" : [ "aws.Property<MetricsCollection>" ],
+  "javaType" : "aws.autoscaling.AutoScalingGroupMetricsCollection",
+  "javaInterfaces" : [ "aws.Property<AutoScalingGroupMetricsCollection>" ],
   "properties" : {
     "Granularity" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html#cfn-as-metricscollection-granularity",

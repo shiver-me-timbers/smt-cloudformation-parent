@@ -42,14 +42,14 @@ public class Cluster {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-rolearn")
     private CharSequence roleArn;
     /**
-     * ResourcesVpcConfig
+     * ClusterResourcesVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html
      * 
      */
     @JsonProperty("ResourcesVpcConfig")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html")
-    private Property<ResourcesVpcConfig> resourcesVpcConfig;
+    private Property<ClusterResourcesVpcConfig> resourcesVpcConfig;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name
      * 
@@ -105,28 +105,28 @@ public class Cluster {
     }
 
     /**
-     * ResourcesVpcConfig
+     * ClusterResourcesVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html
      * 
      */
     @JsonIgnore
-    public Property<ResourcesVpcConfig> getResourcesVpcConfig() {
+    public Property<ClusterResourcesVpcConfig> getResourcesVpcConfig() {
         return resourcesVpcConfig;
     }
 
     /**
-     * ResourcesVpcConfig
+     * ClusterResourcesVpcConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-eks-cluster-resourcesvpcconfig.html
      * 
      */
     @JsonIgnore
-    public void setResourcesVpcConfig(Property<ResourcesVpcConfig> resourcesVpcConfig) {
+    public void setResourcesVpcConfig(Property<ClusterResourcesVpcConfig> resourcesVpcConfig) {
         this.resourcesVpcConfig = resourcesVpcConfig;
     }
 
-    public Cluster withResourcesVpcConfig(Property<ResourcesVpcConfig> resourcesVpcConfig) {
+    public Cluster withResourcesVpcConfig(Property<ClusterResourcesVpcConfig> resourcesVpcConfig) {
         this.resourcesVpcConfig = resourcesVpcConfig;
         return this;
     }

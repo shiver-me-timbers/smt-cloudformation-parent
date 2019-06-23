@@ -4,7 +4,6 @@ package aws.waf;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import aws.Property;
-import aws.wafregional.SizeConstraint;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -43,7 +42,7 @@ public class SizeConstraintSet {
     @JsonProperty("SizeConstraints")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-sizeconstraints")
-    private Set<Property<SizeConstraint>> sizeConstraints = new LinkedHashSet<Property<SizeConstraint>>();
+    private Set<Property<SizeConstraintSetSizeConstraint>> sizeConstraints = new LinkedHashSet<Property<SizeConstraintSetSizeConstraint>>();
 
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sizeconstraintset.html#cfn-waf-sizeconstraintset-name
@@ -73,7 +72,7 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public Set<Property<SizeConstraint>> getSizeConstraints() {
+    public Set<Property<SizeConstraintSetSizeConstraint>> getSizeConstraints() {
         return sizeConstraints;
     }
 
@@ -82,11 +81,11 @@ public class SizeConstraintSet {
      * 
      */
     @JsonIgnore
-    public void setSizeConstraints(Set<Property<SizeConstraint>> sizeConstraints) {
+    public void setSizeConstraints(Set<Property<SizeConstraintSetSizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
     }
 
-    public SizeConstraintSet withSizeConstraints(Set<Property<SizeConstraint>> sizeConstraints) {
+    public SizeConstraintSet withSizeConstraints(Set<Property<SizeConstraintSetSizeConstraint>> sizeConstraints) {
         this.sizeConstraints = sizeConstraints;
         return this;
     }

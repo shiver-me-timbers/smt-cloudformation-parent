@@ -8,6 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.apigateway.AccountResource",
+  "javaInterfaces" : [ "aws.HasDependsOn<AccountResource>", "aws.HasCondition<AccountResource>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

@@ -1,15 +1,16 @@
 {
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "$id" : "Alexa_ASK_Skill.Overrides.schema.json",
-  "title" : "Overrides",
+  "title" : "SkillOverrides",
   "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html",
   "type" : "object",
-  "javaType" : "alexa.ask.Overrides",
-  "javaInterfaces" : [ "aws.Property<Overrides>" ],
+  "javaType" : "alexa.ask.SkillOverrides",
+  "javaInterfaces" : [ "aws.Property<SkillOverrides>" ],
   "properties" : {
     "Manifest" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ask-skill-overrides.html#cfn-ask-skill-overrides-manifest",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     }
   }
 }

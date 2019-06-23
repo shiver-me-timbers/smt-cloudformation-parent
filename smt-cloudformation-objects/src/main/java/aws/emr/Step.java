@@ -35,14 +35,14 @@ public class Step {
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-actiononfailure")
     private CharSequence actionOnFailure;
     /**
-     * HadoopJarStepConfig
+     * StepHadoopJarStepConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html
      * 
      */
     @JsonProperty("HadoopJarStep")
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html")
-    private Property<HadoopJarStepConfig> hadoopJarStep;
+    private Property<StepHadoopJarStepConfig> hadoopJarStep;
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-emr-step.html#cfn-elasticmapreduce-step-jobflowid
      * 
@@ -82,28 +82,28 @@ public class Step {
     }
 
     /**
-     * HadoopJarStepConfig
+     * StepHadoopJarStepConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html
      * 
      */
     @JsonIgnore
-    public Property<HadoopJarStepConfig> getHadoopJarStep() {
+    public Property<StepHadoopJarStepConfig> getHadoopJarStep() {
         return hadoopJarStep;
     }
 
     /**
-     * HadoopJarStepConfig
+     * StepHadoopJarStepConfig
      * <p>
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-step-hadoopjarstepconfig.html
      * 
      */
     @JsonIgnore
-    public void setHadoopJarStep(Property<HadoopJarStepConfig> hadoopJarStep) {
+    public void setHadoopJarStep(Property<StepHadoopJarStepConfig> hadoopJarStep) {
         this.hadoopJarStep = hadoopJarStep;
     }
 
-    public Step withHadoopJarStep(Property<HadoopJarStepConfig> hadoopJarStep) {
+    public Step withHadoopJarStep(Property<StepHadoopJarStepConfig> hadoopJarStep) {
         this.hadoopJarStep = hadoopJarStep;
         return this;
     }

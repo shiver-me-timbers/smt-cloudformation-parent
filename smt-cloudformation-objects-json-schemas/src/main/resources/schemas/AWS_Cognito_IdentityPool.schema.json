@@ -9,19 +9,20 @@
     "PushSync" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-pushsync",
       "$ref" : "AWS_Cognito_IdentityPool.PushSync.schema.json",
-      "javaType" : "aws.Property<aws.cognito.PushSync>"
+      "javaType" : "aws.Property<aws.cognito.IdentityPoolPushSync>"
     },
     "CognitoIdentityProviders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoidentityproviders",
       "type" : "array",
       "items" : {
         "$ref" : "AWS_Cognito_IdentityPool.CognitoIdentityProvider.schema.json",
-        "javaType" : "aws.Property<aws.cognito.CognitoIdentityProvider>"
+        "javaType" : "aws.Property<aws.cognito.IdentityPoolCognitoIdentityProvider>"
       }
     },
     "CognitoEvents" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitoevents",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "DeveloperProviderName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-developerprovidername",
@@ -31,7 +32,7 @@
     "CognitoStreams" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-cognitostreams",
       "$ref" : "AWS_Cognito_IdentityPool.CognitoStreams.schema.json",
-      "javaType" : "aws.Property<aws.cognito.CognitoStreams>"
+      "javaType" : "aws.Property<aws.cognito.IdentityPoolCognitoStreams>"
     },
     "IdentityPoolName" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-identitypoolname",
@@ -44,7 +45,8 @@
     },
     "SupportedLoginProviders" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-supportedloginproviders",
-      "type" : "any"
+      "type" : "object",
+      "javaType" : "java.lang.Object"
     },
     "SamlProviderARNs" : {
       "description" : "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-identitypool.html#cfn-cognito-identitypool-samlproviderarns",

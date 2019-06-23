@@ -8,7 +8,7 @@
     "$ref" : "Resource.schema.json"
   },
   "javaType" : "aws.iot1click.DeviceResource",
-  "javaInterfaces" : [ "aws.HasAttributes<DeviceAttributes>" ],
+  "javaInterfaces" : [ "aws.HasDependsOn<DeviceResource>", "aws.HasCondition<DeviceResource>", "aws.HasAttributes<DeviceAttributes>" ],
   "properties" : {
     "Type" : {
       "type" : "string",

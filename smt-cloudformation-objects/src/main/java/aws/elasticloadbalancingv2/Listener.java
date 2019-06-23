@@ -39,7 +39,7 @@ public class Listener {
     @JsonProperty("Certificates")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-certificates")
-    private Set<Property<Certificate>> certificates = new LinkedHashSet<Property<Certificate>>();
+    private Set<Property<ListenerCertificate>> certificates = new LinkedHashSet<Property<ListenerCertificate>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions
      * 
@@ -47,7 +47,7 @@ public class Listener {
     @JsonProperty("DefaultActions")
     @JsonDeserialize(as = java.util.LinkedHashSet.class)
     @JsonPropertyDescription("http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-defaultactions")
-    private Set<Property<Action>> defaultActions = new LinkedHashSet<Property<Action>>();
+    private Set<Property<ListenerAction>> defaultActions = new LinkedHashSet<Property<ListenerAction>>();
     /**
      * http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
      * 
@@ -82,7 +82,7 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public Set<Property<Certificate>> getCertificates() {
+    public Set<Property<ListenerCertificate>> getCertificates() {
         return certificates;
     }
 
@@ -91,11 +91,11 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public void setCertificates(Set<Property<Certificate>> certificates) {
+    public void setCertificates(Set<Property<ListenerCertificate>> certificates) {
         this.certificates = certificates;
     }
 
-    public Listener withCertificates(Set<Property<Certificate>> certificates) {
+    public Listener withCertificates(Set<Property<ListenerCertificate>> certificates) {
         this.certificates = certificates;
         return this;
     }
@@ -105,7 +105,7 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public Set<Property<Action>> getDefaultActions() {
+    public Set<Property<ListenerAction>> getDefaultActions() {
         return defaultActions;
     }
 
@@ -114,11 +114,11 @@ public class Listener {
      * 
      */
     @JsonIgnore
-    public void setDefaultActions(Set<Property<Action>> defaultActions) {
+    public void setDefaultActions(Set<Property<ListenerAction>> defaultActions) {
         this.defaultActions = defaultActions;
     }
 
-    public Listener withDefaultActions(Set<Property<Action>> defaultActions) {
+    public Listener withDefaultActions(Set<Property<ListenerAction>> defaultActions) {
         this.defaultActions = defaultActions;
         return this;
     }
