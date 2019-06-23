@@ -25,7 +25,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
     "Id",
     "Statement"
 })
-public class PolicyDocument {
+public class PolicyDocument implements HasStatements<PolicyDocument, Statement>
+{
 
     /**
      * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html
@@ -47,7 +48,7 @@ public class PolicyDocument {
      */
     @JsonProperty("Statement")
     @JsonPropertyDescription("https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html")
-    private List<Statement> statement = new ArrayList<Statement>();
+    private List<aws.iam.Statement> statement = new ArrayList<aws.iam.Statement>();
 
     /**
      * https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html
@@ -100,7 +101,7 @@ public class PolicyDocument {
      * 
      */
     @JsonIgnore
-    public List<Statement> getStatement() {
+    public List<aws.iam.Statement> getStatement() {
         return statement;
     }
 
@@ -109,11 +110,11 @@ public class PolicyDocument {
      * 
      */
     @JsonIgnore
-    public void setStatement(List<Statement> statement) {
+    public void setStatement(List<aws.iam.Statement> statement) {
         this.statement = statement;
     }
 
-    public PolicyDocument withStatement(List<Statement> statement) {
+    public PolicyDocument withStatement(List<aws.iam.Statement> statement) {
         this.statement = statement;
         return this;
     }
