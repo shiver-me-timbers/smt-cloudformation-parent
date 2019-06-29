@@ -29,7 +29,7 @@ public class Output
     @JsonProperty("Description")
     private String description;
     @JsonProperty("Value")
-    private String value;
+    private CharSequence value;
     @JsonProperty("Export")
     private Export export;
 
@@ -64,16 +64,16 @@ public class Output
     }
 
     @JsonIgnore
-    public String getValue() {
+    public CharSequence getValue() {
         return value;
     }
 
     @JsonIgnore
-    public void setValue(String value) {
+    public void setValue(CharSequence value) {
         this.value = value;
     }
 
-    public Output withValue(String value) {
+    public Output withValue(CharSequence value) {
         this.value = value;
         return this;
     }

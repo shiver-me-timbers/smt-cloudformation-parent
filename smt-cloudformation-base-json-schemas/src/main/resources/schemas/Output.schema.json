@@ -13,7 +13,8 @@
       "type": "string"
     },
     "Value": {
-      "type": "string"
+      "type": "string",
+      "javaType": "CharSequence"
     },
     "Export": {
       "$ref": "#/definitions/Export"
